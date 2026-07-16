@@ -1,23 +1,569 @@
 [
   {
-    "Agency": "BioSphere Healthcare",
+    "Agency": "Federal Government",
     "Contractor": "Tracked Contractor",
     "Amount": "TBD (Local Pipeline)",
-    "Project": "Jane Doe Resigns from BioSphere Healthcare Board Following Regulatory Sanctions",
-    "Source": "Financial Times News"
+    "Project": "Procurement Officer- NASCP - career.nascp.gov.ng",
+    "Source": "career.nascp.gov.ng"
   },
   {
-    "Agency": "Vertex Financials",
+    "Agency": "Federal Government",
     "Contractor": "Tracked Contractor",
     "Amount": "TBD (Local Pipeline)",
-    "Project": "Sarah Jenkins Resigns from Vertex Financials Board Following Regulatory Sanctions",
-    "Source": "Bloomberg Business"
+    "Project": "Procurement and Supply Chain Management Training Course - Nobleprog Nigeria",
+    "Source": "Nobleprog Nigeria"
   },
   {
-    "Agency": "Summit Holdings",
+    "Agency": "Federal Government",
     "Contractor": "Tracked Contractor",
     "Amount": "TBD (Local Pipeline)",
-    "Project": "Jane Doe Resigns from Summit Holdings Board Following Regulatory Sanctions",
-    "Source": "Bloomberg Business"
+    "Project": "award contract images - Ebonyi E-procurement",
+    "Source": "Ebonyi E-procurement"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "INSTRUCTIONS TO TENDER - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Procurement and Construction - thomaschase.com.ng",
+    "Source": "thomaschase.com.ng"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PUBLIC PROCUREMENT ACT 2007 F - Nigerian Content Development & Monitoring Board",
+    "Source": "Nigerian Content Development & Monitoring Board"
+  },
+  {
+    "Agency": "eBid Nigeria",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "GERMAN COOPERATION- INVITATION TO TENDER FOR PROCUREMENT AND DISTRIBUTION OF ELECTRICITY NETWORK POLES AND ACCESSORIES \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Supply Chain Management",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Recruitment of Global Fund RSSH Technical Specialist (Procurement and Supply Chain Management) - NACA Nigeria",
+    "Source": "NACA Nigeria"
+  },
+  {
+    "Agency": "NATIONAL SENIOR CITIZENS CENTRE",
+    "Contractor": "ABUJA-INVITATION FOR TENDER",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NATIONAL SENIOR CITIZENS CENTRE, WUSE II, ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST FOR PROJECT AND SERVICES UNDER 2025 CAPITAL BUDGET OF THE AGENCY - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "CHEVRON NIGERIA LIMITED-INVITATION TO TENDER FOR PROVISION OF IT HARDWARE INFRASTRUCTURE PROCUREMENT",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "CHEVRON NIGERIA LIMITED-INVITATION TO TENDER FOR PROVISION OF IT HARDWARE INFRASTRUCTURE PROCUREMENT AND INSTALLATION SERVICES - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "FEDERAL MEDICAL CENTRE",
+    "Contractor": "KEFFI",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "FEDERAL MEDICAL CENTRE, KEFFI, NASARAWA STATE- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "MICHAEL IMODU NATIONAL INSTITUTE FOR LABOUR",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "MICHAEL IMODU NATIONAL INSTITUTE FOR LABOUR STUDIES (MINILS)-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "WALK-IN COLD ROOMS",
+    "Contractor": "COLD BOXES",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "IMPACT PROJECT OFFICE ABUJA-INVITATION TO TENDER FOR PROCUREMENT AND INSTALLATION OF COLD CHAIN EQUIPMENT (WALK-IN COLD ROOMS, WALK-IN FREEZER ROOMS, COLD BOXES, INCINERATORS AND OTHER CCES) TO STR - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "The Importance of Procurement and Logistics",
+    "Contractor": "AIML Group",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "The Importance of Procurement and Logistics \u2013 AIML Group - Advanced International Merchants Limited",
+    "Source": "Advanced International Merchants Limited"
+  },
+  {
+    "Agency": "National Agency For Science And Engineering Infrastructure",
+    "Contractor": "EOI",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "National Agency For Science And Engineering Infrastructure (NASENI)- Invitation To Tender And Expression Of Interest (EOI) For 2025 Capital Projects (15 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "CIVIL DEFENCE CORPS",
+    "Contractor": "EOI",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NIGERIA SECURITY AND CIVIL DEFENCE CORPS, ABUJA- INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) (TECHNICAL AND FINANCIAL) FOR 2025 PROJECTS \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Technical/Financial Bids",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Invitation to tender and Technical/Financial Bids - coren.gov.ng",
+    "Source": "coren.gov.ng"
+  },
+  {
+    "Agency": "LMS",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NIGERIA DIGITAL IDENTIFICATION FOR DEVELOPMENT PROJECT- REQUEST FOR BIDS FOR PROCUREMENT AND CUSTOMIZATION OF A LEARNING MANAGEMENT SOLUTION (LMS). \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "NATIONAL IDENTITY MANAGEMENT COMMISSION-",
+    "Contractor": "CERT & SOC SOLUTIONS",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NATIONAL IDENTITY MANAGEMENT COMMISSION- REQUEST FOR BIDS FOR PROCUREMENT AND IMPLEMENTATION OF ID CERT & SOC SOLUTIONS, INFRASTRUCTURE AND SERVICES \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "UNIVERSITY OF MAIDUGURI TEACHING HOSPITAL",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "UNIVERSITY OF MAIDUGURI TEACHING HOSPITAL, MAIDUGURI- INVITATION FOR TENDER FOR CONSTRUCTION WORKS, SUPPLIES/INSTALLATIONS OF GOODS AND SERVICES \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Nigeria Agricultural Quarantine Service",
+    "Contractor": "EOI",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Nigeria Agricultural Quarantine Service (NAQS)- Invitation To Tender And Expression Of Interest (EOI) For Projects Execution (12 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "NIGER",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NIGER DELTA BASIN DEVELOPMENT AUTHORITY-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "EoI",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "HUSSAINI ADAMU, FEDERAL POLYTECHNIC. KAZAURE, JIGAWA STATE-PREQUALIFICATION, INVITATION TO TENDER AND EXPRESSION OF INTEREST (EoI) CONSULTANCY SERVICES FOR THE YEAR 2025 CAPITAL APPROPRIATION PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "NATIONAL AGRICULTURAL LAND DEVELOPMENT AUTHORITY",
+    "Contractor": "ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NATIONAL AGRICULTURAL LAND DEVELOPMENT AUTHORITY (NALDA), ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST (EOI) - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "FEDERAL UNIVERSITY OF AGRICULTURE",
+    "Contractor": "ADAMAWA STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "FEDERAL UNIVERSITY OF AGRICULTURE, MUBI, ADAMAWA STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR 2025 CAPITAL PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "YOLA-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "UPPER BENUE RIVER BASIN DEVELOPMENT AUTHORITY, YOLA-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "UNSOLICITED PPP PROCUREMENT GUIDE\u00a0\u00a0Infrastructure Concession Regulatory Commission",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "UNSOLICITED PPP PROCUREMENT GUIDE - Infrastructure Concession Regulatory Commission",
+    "Source": "Infrastructure Concession Regulatory Commission"
+  },
+  {
+    "Agency": "PROJECTS DEVELOPMENT INSTITUTE",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PROJECTS DEVELOPMENT INSTITUTE (PRODA), ENUGU- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "THE STATE COUNCIL ON PUBLIC",
+    "Contractor": "Kogi State Bureau of Public Procurement",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "A LAW REPEALING AND RE-ENACTING THE KOGI STATE PUBLIC PROCUREMENT LAW, 2014 ESTABLISHING THE STATE COUNCIL ON PUBLIC PROCUREMENT - Kogi State Bureau of Public Procurement",
+    "Source": "Kogi State Bureau of Public Procurement"
+  },
+  {
+    "Agency": "DAVID UMAHI",
+    "Contractor": "FEDERAL UNIVERSITY TEACHING HOSPITAL",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "DAVID UMAHI FEDERAL UNIVERSITY TEACHING HOSPITAL, EBONYI STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "FEDERAL CAPITAL TERRITORY ADMINISTRATION",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "FEDERAL CAPITAL TERRITORY ADMINISTRATION (FCTA), ABUJA- INVITATION TO TENDER AND REQUEST FOR EXPRESSION OF INTEREST FOR THE SUPPLY OF GOODS, WORKS AND SERVICES FOR THE SECRETARIATS, DEPARTMENT S AND - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Bureau of Public Procurement\u00a0\u00a0Bureau of Public Procurement",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Bureau of Public Procurement - Bureau of Public Procurement",
+    "Source": "Bureau of Public Procurement"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "ABOUT ANAMBRA STATE BUREAU OF PUBLIC PROCUREMENT - Anambra State e-Procurement Portal",
+    "Source": "Anambra State e-Procurement Portal"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PRINCIPLES AND PRACTICES OF PUBLIC PROCUREMENT A PAPER PRESENTED BY AFORLAYAN KEHINDE WAHEED B.SC, MBA,MNIM, FCAI ASSISTANT COMMISSIONER (PROCUREMENT UNIT) ON WORKSHOP ON ACADEMIC INTEGRITY FOR - Independent Corrupt Practices and Other Related Offences Commission",
+    "Source": "Independent Corrupt Practices and Other Related Offences Commission"
+  },
+  {
+    "Agency": "NIGER",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NIGER DELTA BASIN DEVELOPMENT AUTHORITY- INVITATION TO TENDER AND EXPRESSION OF INTEREST - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NLNG- Invitation To Tender For Engineering, Procurement, And Construction Contract For Restoration Of Train 1 Main Cryogenic Heat Exchanger (MCHE) To Full Production Capacity - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Fairtex Nigeria Ltd",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Fairtex PROCUREMENT AND DELIVERY OF TRELLEBORG FLOATING MAIN LINE EXPORT HOSES AND ACCESSORIES FOR OKONO TERMINAL | Projects - Fairtex Nigeria Ltd",
+    "Source": "Fairtex Nigeria Ltd"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PROCUREMENT MANUAL - Anambra State e-Procurement Portal",
+    "Source": "Anambra State e-Procurement Portal"
+  },
+  {
+    "Agency": "Nigeria Civil Aviation Authority",
+    "Contractor": "NCAA",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Nigeria Civil Aviation Authority (NCAA)- Invitation For Pre-Qualification, Tender And Expression Of Interest Under NCAA 2026 IGR Budget (24 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PROCUREMENT AND CONTRACT MANAGEMENT - gifmis.gov.ng",
+    "Source": "gifmis.gov.ng"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Hydrocarbon Pollution Remediation Project (HYPREP)- Invitation To Tender And Invitation For Pre-Qualification For Projects Execution (Corrigendum) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "EOI",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "OGUN \u2013OSHUN RIVER BASIN DEVELOPMENT AUTHORITY- INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR PROJECTS UNDER THE FY2024 APPROPRIATION \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Secondary Education Commission",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "National Senior Secondary Education Commission (NSSEC)- Invitation To Tender And Expression Of Interest For Execution Of 2025 Appropriation Of The Commission (26 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "EOI",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "MARYAM BABANGIDA NATIONAL CENTRE FOR WOMEN DEVELOPMENT (MBNCWD)-INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR THE EXECUTION OF 2025 APPROPRIATION ACT - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "FEDERAL AIRPORTS AUTHORITY OF NIGERIA- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR PROCUREMENTS UNDER FAAN 2024 IGR BUDGET (WORKS",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "FEDERAL AIRPORTS AUTHORITY OF NIGERIA- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR PROCUREMENTS UNDER FAAN 2024 IGR BUDGET (WORKS) \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Damagix Engineering Procurement and Construction",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Damagix Engineering Procurement and Construction - damagixepc.com.ng",
+    "Source": "damagixepc.com.ng"
+  },
+  {
+    "Agency": "Ojo Local Government",
+    "Contractor": "Lagos State- Invitation For Tender And Expression Of Interest For Projects Execution",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Ojo Local Government, Lagos State- Invitation For Tender And Expression Of Interest For Projects Execution (15 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "FEDERAL UNIVERSITY OF HEALTH SCIENCES",
+    "Contractor": "OTUKPO-INVITATION TO TENDER",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "FEDERAL UNIVERSITY OF HEALTH SCIENCES, OTUKPO-INVITATION TO TENDER AND EXPRESSION OF INTEREST - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "Procurement & Supply",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Procurement & Supply - bnltd.com.ng",
+    "Source": "bnltd.com.ng"
+  },
+  {
+    "Agency": "NATIONAL HYDROELECTRIC POWER PRODUCING AREAS DEVELOPMENT COMMISSION",
+    "Contractor": "N-HYPPADEC)-INVITATION",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NATIONAL HYDROELECTRIC POWER PRODUCING AREAS DEVELOPMENT COMMISSION (N-HYPPADEC)-INVITATION FOR PRE-QUALIFICATION, TENDER AND EXPRESSION OF INTEREST FOR IMPLEMENTATION OF 2026/2027 CAPITAL BUDGET - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "FEDERAL TEACHING HOSPITAL",
+    "Contractor": "BIRNIN KEBBI- INVITATION TO PREQUALIFICATION/TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS \u2013 eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "FEDERAL TEACHING HOSPITAL, BIRNIN KEBBI- INVITATION TO PREQUALIFICATION/TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS \u2013 eBid Nigeria - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "EOI",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "OPTOMETRISTS AND DISPENSING OPTICIANS REGISTRATION BOARD OF NIGERIA-INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR THE EXECUTION OF 2025 APPROPRIATION ACT - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "University Of Port Harcourt Teaching",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "University Of Port Harcourt Teaching Hospital- Invitation To Tender And Expression Of Interest For Projects Execution (14 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Energy Commission Of Nigeria",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Energy Commission Of Nigeria (ECN)- Invitation To Tender And Expression Of Interest For Projects Execution (88 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "NCDMB",
+    "Contractor": "ICPC Team",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NCDMB, ICPC Team up for Excellence and Transparencyin Procurement and Human Resources Processes - Nigerian Content Development & Monitoring Board",
+    "Source": "Nigerian Content Development & Monitoring Board"
+  },
+  {
+    "Agency": "EOI",
+    "Contractor": "eBid Nigeria",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "SOKOTO RIMA RIVER BASIN DEVELOPMENT AUTHORITY-INVITATION TO TENDER, AND EXPRESSION OF INTEREST (EOI) - eBid Nigeria",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Abuja-FCT-",
+    "Contractor": "Forklift/Accessories And Office Items For Lagos Hub",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Impact Project, Abuja-FCT- Request For Bids For Procurement And Installation Of Walk-In-Cold Room And Dry Stores Equipment; Forklift/Accessories And Office Items For Lagos Hub - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Federal University Of Agriculture Mubi- Invitation",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Federal University Of Agriculture Mubi- Invitation To Tender And Expression Of Interest For 2025 Capital Projects (12 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Federal Ministry Of Information And Culture",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Federal Ministry Of Information And Culture (FMIC)- Re: Invitation To Tender And Submission Of Expression Of Interest (Corrigendum) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "EOI",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) - LNRBDA",
+    "Source": "LNRBDA"
+  },
+  {
+    "Agency": "Port Harcourt Water Corporation",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Port Harcourt Water Corporation (PHWC)- Invitation For Bids For Procurement And Installation Of ICT Tools, Equipment And Networking Systems - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PROCUREMENT AND SUPPLY - lazioenergy.com.ng",
+    "Source": "lazioenergy.com.ng"
+  },
+  {
+    "Agency": "EOI",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Lower Benue River Basin Development Authority- Invitation To Tender And Expression Of Interest (EOI) For Year 2025 Capital Projects (108 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "KWAMI",
+    "Contractor": "DUKKU",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "PROCUREMENT AND INSTALLATION OF SOLAR STREET LIGHTS AT KWAMI, DUKKU, FUNAKAYE, NAFADA AND YAMALTU DEBA (NAFADA TOWN) | Dueprocess - Gombe State Public Procurement Bureau",
+    "Source": "Gombe State Public Procurement Bureau"
+  },
+  {
+    "Agency": "Construction Project Management",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Engineering, Procurement, and Construction (EPC) services, & as well as expert Construction Project Management - seatechenergy.com.ng",
+    "Source": "seatechenergy.com.ng"
+  },
+  {
+    "Agency": "Project Management System",
+    "Contractor": "Benue State Public Procurement Commission",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "All Tenders - Benue State Public Procurement and Project Management System - Benue State Public Procurement Commission",
+    "Source": "Benue State Public Procurement Commission"
+  },
+  {
+    "Agency": "The Dynamics Of Fraud And Corruption In Public Procurement",
+    "Contractor": "Federal Ministry of Information and National Orientation",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "The Dynamics Of Fraud And Corruption In Public Procurement In Nigeria - Federal Ministry of Information and National Orientation",
+    "Source": "Federal Ministry of Information and National Orientation"
+  },
+  {
+    "Agency": "the Niger Delta Development Commission",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NDDC digitises contract letters to curb fraud, EFCC trouble for directors",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "MILANO",
+    "Contractor": "Club",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Antionette Payne signs for Inter",
+    "Source": "Inter.it"
+  },
+  {
+    "Agency": "Super Eagles",
+    "Contractor": "Rangers International Football Club",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Moses Simon alleges tribalism during Rangers, club denies",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Nigeria",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Fredrick dreams EPL debut after new Brentford deal",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Super Eagles",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Rangers reject Simon\u2019s claims of ethnic bias",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Enugu Rangers",
+    "Contractor": "Super Eagles",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "\u2018We are not a tribal club\u2019 \u2014 Enugu Rangers reject Moses Simon\u2019s discrimination claim.",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Super Eagles",
+    "Contractor": "Brentford",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "S/Eagles defender Benjamin Fredrick signs new Brentford contract, promoted to first team",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "The Nigeria Immigration Service",
+    "Contractor": "NIS",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "US travelers to now submit Nigeria visa applications at embassy, third-party scrapped",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "LAS VEGAS The Aces",
+    "Contractor": "Development Player",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Aces sign Ta'Niya Latson to Development Player contract",
+    "Source": "Thesportingtribune.com"
+  },
+  {
+    "Agency": "Tuchel",
+    "Contractor": "Seaman",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "World Cup 2026: UK government backs calls for Fifa to investigate Argentina over Falklands banner; Tuchel takes blame amid criticism of tactics \u2013 live",
+    "Source": "The Guardian"
+  },
+  {
+    "Agency": "MacIntyre",
+    "Contractor": "McIlroy",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "The Open 2026: DeChambeau and Scheffler make strong starts on day one at Birkdale \u2013 live",
+    "Source": "The Guardian"
+  },
+  {
+    "Agency": "Brook",
+    "Contractor": "the Virat Kohli",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "England v India: second men\u2019s one-day cricket international \u2013 live",
+    "Source": "The Guardian"
+  },
+  {
+    "Agency": "RevGreen",
+    "Contractor": "Luzhniki",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "World Cup reader Q&A: Nick Ames answers your questions now - live",
+    "Source": "The Guardian"
+  },
+  {
+    "Agency": "Labour",
+    "Contractor": "Foreign Office",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Sadiq Khan given seat in Lords, as Starmer creates 26 new peers days before he leaves No 10 \u2013 UK politics live",
+    "Source": "The Guardian"
   }
 ]

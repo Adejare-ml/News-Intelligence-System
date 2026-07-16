@@ -1,335 +1,455 @@
 {
   "nodes": [
     {
-      "id": 7673414192530044862,
-      "label": "Summit Holdings",
+      "id": 7978262332403864897,
+      "label": "Generic Cutting",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": -9200663185308679803,
-      "label": "the Environmental Protection Agency",
+      "id": -719989665904713336,
+      "label": "GUIDELINES",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 6296577639459788161,
-      "label": "AeroSpace International",
+      "id": 1640360252760989403,
+      "label": "National Library of Nigeria",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 3968188436995329443,
-      "label": "Nova Energy Corp",
+      "id": -2591703900117988492,
+      "label": "Generic Magnetic Snake",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": -5724622898079375768,
-      "label": "AeroSpace International's",
+      "id": 816627581432690123,
+      "label": "Jumia Nigeria",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 3377546200664775005,
-      "label": "Nova Energy Corp's",
+      "id": -4765859644790930979,
+      "label": "Kebbi State Investment Promotion Agency",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 1429171308322216287,
-      "label": "Apex Technology Group",
-      "type": "company",
-      "risk": "High"
-    },
-    {
-      "id": -8849713487562799418,
-      "label": "Apex Technology Group's",
+      "id": -8587393505098550045,
+      "label": "The State House",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": -7345909494637425640,
-      "label": "SEC",
-      "type": "company",
-      "risk": "High"
-    },
-    {
-      "id": -1784284835076360640,
-      "label": "BioSphere Healthcare",
-      "type": "company",
-      "risk": "High"
-    },
-    {
-      "id": 8614384108261873648,
-      "label": "BioSphere Healthcare's",
+      "id": -8223037661402291456,
+      "label": "The Guardian Nigeria News",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 8848944950359004537,
-      "label": "Summit Holdings's",
+      "id": 5761291059901759725,
+      "label": "REVISED GUIDELINE ON",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 5491213015022292445,
-      "label": "Vertex Financials",
+      "id": 6783130194912836443,
+      "label": "Ekiti State Education Trust Fund Law",
       "type": "company",
-      "risk": "High"
+      "risk": "Low"
     },
     {
-      "id": 6735918218525836275,
-      "label": "Nova Energy Corp.",
+      "id": 374483417552140820,
+      "label": "Ekiti State Government",
       "type": "company",
-      "risk": "High"
+      "risk": "Low"
     },
     {
-      "id": -1504180582858070501,
-      "label": "The Federal Government of Nigeria",
+      "id": -8989443879619947632,
+      "label": "Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 7944057180364162815,
+      "label": "Kwara State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 1291361686018995986,
+      "label": "NNPC",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 5763377892957090976,
+      "label": "Premium Times Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -9013340052116999753,
+      "label": "Corporate Affairs Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": 6232670100117531127,
-      "label": "the Public Service Commission",
+      "id": -3093342562015737785,
+      "label": "APPOINTMENT TO BOARD",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": -950180754344919709,
-      "label": "The Securities and Exchange Commission",
+      "id": -2719393456948147611,
+      "label": "National Pension Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": 5183689793248866368,
-      "label": "the Securities and Exchange Commission",
+      "id": 517856814706977128,
+      "label": "Generic Original Cheese Board",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": 1812582189524133859,
-      "label": "The Department of Justice",
+      "id": -200450033885530274,
+      "label": "Generic Bamboo Chopping Board",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": 5236586549251704194,
-      "label": "the Department of Justice",
+      "id": -5481254374749086469,
+      "label": "Generic Multifunction Collapsible Chopping Board",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": 6390745558940008481,
-      "label": "the Federal Trade Commission",
+      "id": -2397518521286508209,
+      "label": "NLN Board",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": 3964952404288460492,
-      "label": "Michael Nduka",
+      "id": 2899344881114495174,
+      "label": "Ladder Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 7724447667615601516,
+      "label": "Generic Apple-Shaped Plastic Cutting Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 2259364108415636224,
+      "label": "BOARD",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -4631037458590222568,
+      "label": "Generic Multifunction Convertible Chopping Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 5430044097550258987,
+      "label": "Windows Server",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": 8290971865799308946,
-      "label": "Michael Nduka's",
+      "id": 1059064866082150341,
+      "label": "Tinubu Reconstitution",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": -1221378885678352907,
-      "label": "John Doe",
+      "id": -3681380904774852674,
+      "label": "tte",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": -7764328222112881524,
-      "label": "John Doe's",
+      "id": 9097888469066414405,
+      "label": "Benue State Urban Development Board",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -1448317587064645223,
+      "label": "Eunoia Law",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": -1509122438888775052,
-      "label": "Alice Vance",
+      "id": 8010695901441690532,
+      "label": "Generic Kitchen",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": -3700392257797462406,
-      "label": "Alice Vance's",
+      "id": -3806977475577508100,
+      "label": "Tinubu Amends Niger",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": -6353301006741247966,
-      "label": "Robert Chen",
+      "id": 8280947891722468020,
+      "label": "Delta Development Commission Board",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 8507217722503083055,
+      "label": "Bankole Akeem Adewale",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": 4899573898874935480,
-      "label": "Robert Chen's",
+      "id": 4715520442715481096,
+      "label": "Generic Large Pastry Bamboo Chopping/ Kneading Board &",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -5133244405956536344,
+      "label": "Patricia",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": -7713951231450635754,
-      "label": "Jane Doe",
-      "type": "person",
+      "id": -7608988045407779655,
+      "label": "BC",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": -5947119599575849757,
-      "label": "Sarah Jenkins",
-      "type": "person",
+      "id": -6012720006127517619,
+      "label": "Federal Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
-      "id": -6168278051258890065,
-      "label": "Sarah Jenkins's",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 910753274023341184,
-      "label": "Helena Vance",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -4351455734803042384,
+      "id": 7255384127408120945,
       "label": "Tracked Contractor",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -7007080774706652521,
+      "label": "eBid Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -6636646900378976051,
+      "label": "Supply Chain Management",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -3347961533433279883,
+      "label": "NATIONAL SENIOR CITIZENS CENTRE",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -1827547199222112414,
+      "label": "ABUJA-INVITATION FOR TENDER",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 846797554860108540,
+      "label": "CHEVRON NIGERIA LIMITED-INVITATION TO TENDER FOR PROVISION OF IT HARDWARE INFRASTRUCTURE PROCUREMENT",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -8681847041315640334,
+      "label": "FEDERAL MEDICAL CENTRE",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -5799225008638709809,
+      "label": "KEFFI",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 4843481096138595332,
+      "label": "MICHAEL IMODU NATIONAL INSTITUTE FOR LABOUR",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -462774090077492875,
+      "label": "WALK-IN COLD ROOMS",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -7518193083630269163,
+      "label": "COLD BOXES",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 2848795776657101763,
+      "label": "The Importance of Procurement and Logistics",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 1124584441770404654,
+      "label": "AIML Group",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -5669313496191867126,
+      "label": "National Agency For Science And Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 8693935357968725681,
+      "label": "EOI",
       "type": "company",
       "risk": "Low"
     }
   ],
   "edges": [
     {
-      "id": -7613821146920213337,
-      "from": 3964952404288460492,
-      "to": 7673414192530044862,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -5101084777926972742,
-      "from": 8290971865799308946,
-      "to": 7673414192530044862,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -6310787620622102171,
-      "from": -1221378885678352907,
-      "to": -1504180582858070501,
-      "label": "Appointed as Permanent Secretary"
-    },
-    {
-      "id": 7175056601369408160,
-      "from": -7764328222112881524,
-      "to": -1504180582858070501,
-      "label": "Appointed as Permanent Secretary"
-    },
-    {
-      "id": -5483737494190530635,
-      "from": -1509122438888775052,
-      "to": -1504180582858070501,
-      "label": "Appointed as Permanent Secretary"
-    },
-    {
-      "id": 320704420821127816,
-      "from": -3700392257797462406,
-      "to": -1504180582858070501,
-      "label": "Appointed as Permanent Secretary"
-    },
-    {
-      "id": 4022359449693240990,
-      "from": -6353301006741247966,
-      "to": 6296577639459788161,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -4441337124674971349,
-      "from": 4899573898874935480,
-      "to": 6296577639459788161,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -1955611899040561963,
-      "from": -7713951231450635754,
-      "to": -1784284835076360640,
+      "id": 8781941496073086820,
+      "from": 816627581432690123,
+      "to": 7978262332403864897,
       "label": "Appointed as Officer"
     },
     {
-      "id": 8933861334087009046,
-      "from": -5947119599575849757,
-      "to": 7673414192530044862,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -4236205199611352009,
-      "from": -6168278051258890065,
-      "to": 7673414192530044862,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -6629070085073802746,
-      "from": -5947119599575849757,
-      "to": 5491213015022292445,
+      "id": 1067299856627558639,
+      "from": 816627581432690123,
+      "to": 517856814706977128,
       "label": "Appointed as Officer"
     },
     {
-      "id": -6445612764501794096,
-      "from": -7713951231450635754,
-      "to": 7673414192530044862,
+      "id": 1524593805208159985,
+      "from": 816627581432690123,
+      "to": -5481254374749086469,
       "label": "Appointed as Officer"
     },
     {
-      "id": -2422027756777932035,
-      "from": -5947119599575849757,
-      "to": -1504180582858070501,
-      "label": "Appointed as Permanent Secretary"
+      "id": 1073248803476294349,
+      "from": 816627581432690123,
+      "to": 7724447667615601516,
+      "label": "Appointed as Officer"
     },
     {
-      "id": -4422021069277662572,
-      "from": -6168278051258890065,
-      "to": -1504180582858070501,
-      "label": "Appointed as Permanent Secretary"
+      "id": 9040124155285459974,
+      "from": 816627581432690123,
+      "to": -200450033885530274,
+      "label": "Appointed as Officer"
     },
     {
-      "id": -2912576606792581870,
-      "from": -5947119599575849757,
-      "to": 1429171308322216287,
+      "id": -8762006397097693755,
+      "from": 816627581432690123,
+      "to": -4631037458590222568,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": 7117341716642728638,
+      "from": 1059064866082150341,
+      "to": -8587393505098550045,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": 2091400859752403324,
+      "from": -3681380904774852674,
+      "to": 9097888469066414405,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": -6610980341981732140,
+      "from": -3806977475577508100,
+      "to": 8280947891722468020,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": 1643236014455792767,
+      "from": 816627581432690123,
+      "to": 4715520442715481096,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": -4334536556950363527,
+      "from": -5133244405956536344,
+      "to": -7608988045407779655,
       "label": "Appointed as CEO"
     },
     {
-      "id": 8070951370525023141,
-      "from": -6168278051258890065,
-      "to": 1429171308322216287,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": 2981735866830615677,
-      "from": 910753274023341184,
-      "to": 7673414192530044862,
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": -6151675455448046165,
-      "from": -4351455734803042384,
-      "to": -1784284835076360640,
+      "id": 1220610980933583315,
+      "from": 7255384127408120945,
+      "to": -6012720006127517619,
       "label": "Contract Awardee"
     },
     {
-      "id": 5106152934749608726,
-      "from": -4351455734803042384,
-      "to": 5491213015022292445,
+      "id": 8210348883891334048,
+      "from": 7255384127408120945,
+      "to": -7007080774706652521,
       "label": "Contract Awardee"
     },
     {
-      "id": 2632860788235404330,
-      "from": -4351455734803042384,
-      "to": 7673414192530044862,
+      "id": -7376196156775949853,
+      "from": 7255384127408120945,
+      "to": -6636646900378976051,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": -1515569443856770230,
+      "from": -1827547199222112414,
+      "to": -3347961533433279883,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": 2170271721797242904,
+      "from": 7255384127408120945,
+      "to": 846797554860108540,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": -5469667877260725134,
+      "from": -5799225008638709809,
+      "to": -8681847041315640334,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": -1562778208119764764,
+      "from": 7255384127408120945,
+      "to": 4843481096138595332,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": -6668409946842111375,
+      "from": -7518193083630269163,
+      "to": -462774090077492875,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": 8510319394054120957,
+      "from": 1124584441770404654,
+      "to": 2848795776657101763,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": 633699288345888673,
+      "from": 8693935357968725681,
+      "to": -5669313496191867126,
       "label": "Contract Awardee"
     }
   ]
