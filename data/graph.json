@@ -1,0 +1,336 @@
+{
+  "nodes": [
+    {
+      "id": 7673414192530044862,
+      "label": "Summit Holdings",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -9200663185308679803,
+      "label": "the Environmental Protection Agency",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 6296577639459788161,
+      "label": "AeroSpace International",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 3968188436995329443,
+      "label": "Nova Energy Corp",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -5724622898079375768,
+      "label": "AeroSpace International's",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 3377546200664775005,
+      "label": "Nova Energy Corp's",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 1429171308322216287,
+      "label": "Apex Technology Group",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": -8849713487562799418,
+      "label": "Apex Technology Group's",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -7345909494637425640,
+      "label": "SEC",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": -1784284835076360640,
+      "label": "BioSphere Healthcare",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": 8614384108261873648,
+      "label": "BioSphere Healthcare's",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 8848944950359004537,
+      "label": "Summit Holdings's",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 5491213015022292445,
+      "label": "Vertex Financials",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": 6735918218525836275,
+      "label": "Nova Energy Corp.",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": -1504180582858070501,
+      "label": "The Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 6232670100117531127,
+      "label": "the Public Service Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -950180754344919709,
+      "label": "The Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 5183689793248866368,
+      "label": "the Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 1812582189524133859,
+      "label": "The Department of Justice",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 5236586549251704194,
+      "label": "the Department of Justice",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 6390745558940008481,
+      "label": "the Federal Trade Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 3964952404288460492,
+      "label": "Michael Nduka",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 8290971865799308946,
+      "label": "Michael Nduka's",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -1221378885678352907,
+      "label": "John Doe",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -7764328222112881524,
+      "label": "John Doe's",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -1509122438888775052,
+      "label": "Alice Vance",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -3700392257797462406,
+      "label": "Alice Vance's",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -6353301006741247966,
+      "label": "Robert Chen",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 4899573898874935480,
+      "label": "Robert Chen's",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -7713951231450635754,
+      "label": "Jane Doe",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -5947119599575849757,
+      "label": "Sarah Jenkins",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -6168278051258890065,
+      "label": "Sarah Jenkins's",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 910753274023341184,
+      "label": "Helena Vance",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -4351455734803042384,
+      "label": "Tracked Contractor",
+      "type": "company",
+      "risk": "Low"
+    }
+  ],
+  "edges": [
+    {
+      "id": -7613821146920213337,
+      "from": 3964952404288460492,
+      "to": 7673414192530044862,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -5101084777926972742,
+      "from": 8290971865799308946,
+      "to": 7673414192530044862,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -6310787620622102171,
+      "from": -1221378885678352907,
+      "to": -1504180582858070501,
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": 7175056601369408160,
+      "from": -7764328222112881524,
+      "to": -1504180582858070501,
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": -5483737494190530635,
+      "from": -1509122438888775052,
+      "to": -1504180582858070501,
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": 320704420821127816,
+      "from": -3700392257797462406,
+      "to": -1504180582858070501,
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": 4022359449693240990,
+      "from": -6353301006741247966,
+      "to": 6296577639459788161,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -4441337124674971349,
+      "from": 4899573898874935480,
+      "to": 6296577639459788161,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -1955611899040561963,
+      "from": -7713951231450635754,
+      "to": -1784284835076360640,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": 8933861334087009046,
+      "from": -5947119599575849757,
+      "to": 7673414192530044862,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -4236205199611352009,
+      "from": -6168278051258890065,
+      "to": 7673414192530044862,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -6629070085073802746,
+      "from": -5947119599575849757,
+      "to": 5491213015022292445,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": -6445612764501794096,
+      "from": -7713951231450635754,
+      "to": 7673414192530044862,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": -2422027756777932035,
+      "from": -5947119599575849757,
+      "to": -1504180582858070501,
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": -4422021069277662572,
+      "from": -6168278051258890065,
+      "to": -1504180582858070501,
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": -2912576606792581870,
+      "from": -5947119599575849757,
+      "to": 1429171308322216287,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": 8070951370525023141,
+      "from": -6168278051258890065,
+      "to": 1429171308322216287,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": 2981735866830615677,
+      "from": 910753274023341184,
+      "to": 7673414192530044862,
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": -6151675455448046165,
+      "from": -4351455734803042384,
+      "to": -1784284835076360640,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": 5106152934749608726,
+      "from": -4351455734803042384,
+      "to": 5491213015022292445,
+      "label": "Contract Awardee"
+    },
+    {
+      "id": 2632860788235404330,
+      "from": -4351455734803042384,
+      "to": 7673414192530044862,
+      "label": "Contract Awardee"
+    }
+  ]
+}

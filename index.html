@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA // AI News Intelligence System</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Chart.js and Vis.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <div class="container">
+        <!-- Header -->
+        <header class="dashboard-header glass">
+            <div class="logo-area">
+                <div class="logo-orb"></div>
+                <div class="logo-text">
+                    <h1>AURA</h1>
+                    <span>NEWS INTELLIGENCE SYSTEM</span>
+                </div>
+            </div>
+            
+            <div class="system-status">
+                <div class="status-item">
+                    <span class="pulse green"></span>
+                    <span>Ingestion: Active</span>
+                </div>
+                <div class="status-item">
+                    <span class="pulse purple"></span>
+                    <span>NLP Pipeline: Online</span>
+                </div>
+                <button id="view-reports-btn" class="btn btn-secondary">
+                    <i data-lucide="file-text"></i> Daily Reports
+                </button>
+                <button id="trigger-ingest-btn" class="btn btn-primary">
+                    <i data-lucide="refresh-cw"></i> Ingest Now
+                </button>
+            </div>
+        </header>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-grid">
+            <div class="stat-card glass">
+                <div class="stat-icon purple-glow"><i data-lucide="newspaper"></i></div>
+                <div class="stat-info">
+                    <h3 id="stat-articles">0</h3>
+                    <p>Total Articles</p>
+                </div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-icon blue-glow"><i data-lucide="users"></i></div>
+                <div class="stat-info">
+                    <h3 id="stat-entities">0</h3>
+                    <p>Resolved Entities</p>
+                </div>
+            </div>
+            <div class="stat-card glass">
+                <div class="stat-icon green-glow"><i data-lucide="git-branch"></i></div>
+                <div class="stat-info">
+                    <h3 id="stat-events">0</h3>
+                    <p>Detected Events</p>
+                </div>
+            </div>
+            <div class="stat-card glass alert-glow" id="stat-alerts-card">
+                <div class="stat-icon red-glow"><i data-lucide="alert-triangle"></i></div>
+                <div class="stat-info">
+                    <h3 id="stat-alerts">0</h3>
+                    <p>Critical Alerts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Workspace Grid -->
+        <main class="workspace-grid">
+            <!-- Left Panel: Feed and Search -->
+            <section class="workspace-panel glass feed-panel">
+                <div class="panel-header">
+                    <h2>Intelligence Feed</h2>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Search keyword or semantic query...">
+                        <button id="search-btn"><i data-lucide="search"></i></button>
+                    </div>
+                </div>
+                <div class="search-options">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="search-type-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span id="search-label">Standard Keyword</span>
+                </div>
+                
+                <div class="feed-filters">
+                    <button class="filter-btn active" data-category="">All</button>
+                    <button class="filter-btn" data-category="Government">Government</button>
+                    <button class="filter-btn" data-category="Company">Company</button>
+                    <button class="filter-btn" data-category="Legal">Legal</button>
+                </div>
+
+                <div id="articles-list" class="articles-list">
+                    <!-- Loaded dynamically -->
+                    <div class="loading-placeholder">
+                        <div class="spinner"></div>
+                        <p>Aggregating news streams...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Graph and Insights -->
+            <div class="insights-column">
+                <!-- Knowledge Graph -->
+                <section class="workspace-panel glass graph-panel">
+                    <div class="panel-header">
+                        <h2>Knowledge Graph</h2>
+                        <span class="subtitle">Entity relationships maps</span>
+                    </div>
+                    <div id="network-container" class="network-container">
+                        <!-- Loaded dynamically via Vis.js -->
+                    </div>
+                </section>
+
+                <div class="split-insights">
+                    <!-- Alerts and watchlists -->
+                    <section class="workspace-panel glass alerts-panel">
+                        <div class="panel-header">
+                            <h2>Critical Alerts</h2>
+                        </div>
+                        <div id="alerts-list" class="alerts-list">
+                            <!-- Loaded dynamically -->
+                        </div>
+                    </section>
+
+                    <!-- NLP Charts -->
+                    <section class="workspace-panel glass chart-panel">
+                        <div class="panel-header">
+                            <h2>Risk & Category Mix</h2>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="mix-chart"></canvas>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Article Detail Modal -->
+    <div id="detail-modal" class="modal-overlay">
+        <div class="modal-content glass">
+            <div class="modal-header">
+                <span id="modal-category" class="badge">Government</span>
+                <button class="close-modal-btn" id="close-modal"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body">
+                <h2 id="modal-title">Federal Government appoints Jane Doe as Permanent Secretary</h2>
+                <div class="modal-metadata">
+                    <span id="modal-source"><i data-lucide="globe"></i> Reuters</span>
+                    <span id="modal-date"><i data-lucide="calendar"></i> 2026-07-15</span>
+                    <span id="modal-importance" class="importance-rating">Importance: 94</span>
+                    <span id="modal-sentiment" class="sentiment-badge">Neutral</span>
+                    <span id="modal-risk" class="risk-badge critical">Critical Risk</span>
+                </div>
+                
+                <hr class="modal-divider">
+
+                <div class="summary-tabs">
+                    <button class="tab-btn active" data-tab="executive">Executive</button>
+                    <button class="tab-btn" data-tab="detailed">Detailed Analysis</button>
+                    <button class="tab-btn" data-tab="timeline">Timeline</button>
+                </div>
+
+                <div class="tab-content" id="tab-executive">
+                    <p id="modal-summary-executive">Jane Doe has been appointed Permanent Secretary by the Federal Government.</p>
+                </div>
+                <div class="tab-content hidden" id="tab-detailed">
+                    <p id="modal-summary-detailed">Detailed analysis summary goes here...</p>
+                </div>
+                <div class="tab-content hidden" id="tab-timeline">
+                    <p id="modal-summary-timeline">Timeline breakdown goes here...</p>
+                </div>
+
+                <hr class="modal-divider">
+
+                <h3>Extracted Entities</h3>
+                <div class="entities-tags" id="modal-entities">
+                    <!-- Entities generated -->
+                </div>
+                
+                <div class="modal-actions">
+                    <a id="modal-source-link" href="#" target="_blank" class="btn btn-secondary">
+                        <i data-lucide="external-link"></i> View Original Article
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Daily Reports Reader Modal -->
+    <div id="reports-modal" class="modal-overlay">
+        <div class="modal-content glass reports-modal-content">
+            <div class="modal-header">
+                <h2>PSC & Company Intelligence Reports</h2>
+                <button class="close-modal-btn" id="close-reports-modal"><i data-lucide="x"></i></button>
+            </div>
+            <div class="reports-split-view">
+                <!-- Sidebar report list -->
+                <div class="reports-sidebar">
+                    <h3>Report Archives</h3>
+                    <div id="reports-archive-list" class="reports-archive-list">
+                        <!-- Loaded dynamically -->
+                    </div>
+                </div>
+                <!-- Main reader content -->
+                <div class="reports-viewer">
+                    <div class="reports-viewer-actions">
+                        <button id="compile-report-btn" class="btn btn-secondary btn-sm">
+                            <i data-lucide="plus-circle"></i> Compile New Report
+                        </button>
+                    </div>
+                    <div id="report-md-content" class="report-md-content">
+                        <!-- Parsed markdown loaded dynamically -->
+                        <div class="loading-placeholder">
+                            <p>Select a report to view or trigger compilation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
