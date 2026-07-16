@@ -1,6 +1,6 @@
 # PSC & Company Daily Intelligence Report
 
-**Generated on:** 2026-07-16 17:23:14 (UTC+1)
+**Generated on:** 2026-07-16 18:29:26 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
@@ -1207,17 +1207,23 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** All Tenders - Benue State Public Procurement and Project Management System  Benue State Public Procurement Commission
 
-### Economic and Financial Crime Commission - EFCC - EFCC
-- **Source:** EFCC | [Original Link](https://news.google.com/rss/articles/CBMiN0FVX3lxTE9iaHhRMUJ3UmZId2t0aE9HeVFrcHFsanU0VHlkSEFwNk5VYklEZUVtUW05SjJMcXM?oc=5)
+### Economic and Financial Crime Commission - EFCC - Economic and Financial Crime Commission
+- **Source:** Economic and Financial Crime Commission | [Original Link](https://news.google.com/rss/articles/CBMiN0FVX3lxTE9iaHhRMUJ3UmZId2t0aE9HeVFrcHFsanU0VHlkSEFwNk5VYklEZUVtUW05SjJMcXM?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Economic and Financial Crime Commission - EFCC  EFCC
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Economic and Financial Crime Commission - EFCC  Economic and Financial Crime Commission
 
 ### UPDATED: Fake Agency Scandal: Police arrest Adeyemi - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSmJ0YXFnTEVBeV9rSXBLcFVEaUlaRnlkRWVZR1FlVHBuakVMRGpRVjVyVm1pVkR2cy12bzhFVU0yVExtaV9GSUdZYnYxcDRldVVzaW1DbEp2WVoyTE04SE9GNFg0alp3MHE4c3d1UEV4d0JUQng0NHF2MEJUdUpQR0o5Nnh6MDU1V0xHSXRkMENtTkQ1NVJrM2JfT1JteWRSNVpJdFVnT3ZsZw?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 34/100 (Low)
 - **Brief summary:** UPDATED: Fake Agency Scandal: Police arrest Adeyemi  Premium Times Nigeria
+
+### BREAKING: Court orders final forfeiture of N4.6bn jewelry, N4.3bn exotic cars, cash recovered from Aisha Achimugu - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi_AFBVV95cUxOblVHeURTZnEtbVU1QkRKQmI3NHlXQUJEM195VzN0Vk9kbDZkdU1OTHp1STNnU0dmTWFKUVR6Mk1FXzlRbTFRdkM0TWgzd2x4MlNTQ0pCZmQ3dXdWd1hlSVZSSnVRZzF6TDdvS05wY0k1N3VGTEl2RmNjRnJiMU5QLUJIamRsbDFaNHJJcE9RV0hsaUxMeUozdmd4QXE5YnVPQ0VFaHQ5ZWFrelJ2UzV2b1VjWWZGZV9FcW1FTklnY0RfTFdSQ1VCRDZGTXplQVBveWFocTdLWTNtUjZOMW5oamRKc01MODJzOUNQNHA5cGF5d3VoMjZvbF9tdEY?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 38/100 (Low)
+- **Brief summary:** BREAKING: Court orders final forfeiture of N4.6bn jewelry, N4.3bn exotic cars, cash recovered from Aisha Achimugu  Premium Times Nigeria
 
 ### TAX REVENUE AND ECONOMIC DEVELOPMENT IN NIGERIA - International Journal of Accounting, Management and Economic Review
 - **Source:** International Journal of Accounting, Management and Economic Review | [Original Link](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBwTGFDVjRNenloRVUzR2d6RXdhejM2N0FpTm9teFp4UWUwU2pKNHFRam9PdXV1Yi1TNnVpU19KLTdubjNzZHBmVGZhYkdxVjlvcG96d1ZGbWFEZFRUdzE4el9QSmhKdw?oc=5)
@@ -1272,6 +1278,12 @@
 - **Classification:** Government (Policy)
 - **Risk Score:** 50/100 (Low)
 - **Brief summary:** WORK WITH US  Federal Ministry of Budget and Economic Planning
+
+### Paternity Fraud and the Upsurge In DNA Testing, By Dakuku Peterside - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQk1GRHdmYVlrdzAyMVZlcWl3Szd4bEpaYWs1RHd6Nmd3T0FyT2hPX2wyWm9YdEU0RDlmbGs3SDRkNi1KcjdRQ096WWNWRS1JT2J1Q0lIbkQtbDl4UEdrVE9Ka0E5dU9Gd3NVSDU1enJXZ1V0Ylc3UUlXN3lCeFB5VXpfcmhjOWdpLUo1NXFkRDZOVkNDQzBEYTFWSF96NkJtMTVMc3hlODdCOGFnbElEcHQxTUoxdlU1?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 30/100 (Critical)
+- **Brief summary:** Paternity Fraud and the Upsurge In DNA Testing, By Dakuku Peterside  Premium Times Nigeria
 
 ### "Government Revenue and Expenditure in 1965" by Research Department - CBN Digital Commons
 - **Source:** CBN Digital Commons | [Original Link](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5xbTlfVUYtSnVzUmdIYWN3TWExWEZaVS04ZVBkU1VOMUNOUDNUU1JIMU5jeVppTGFvRzc3VUhvU3pVcm9yMU5pWXY4WXBsS0U?oc=5)
@@ -1387,11 +1399,11 @@
 - **Risk Score:** 28/100 (Critical)
 - **Brief summary:** Internal control, fraud and Internal Audit Services in Nigeria  PML Advisory
 
-### Our Departments - Anambra State Government Website
-- **Source:** Anambra State Government Website | [Original Link](https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxRFRXclcyYzRWTk83MFRDenc0NmhIYWdEX2E3ZGFad3dhcnRzdFIwZUNyOGFlb2UteC01Tzdaa2xKM3hteW5NdzIyTmdrZWZnVjJoc3FDa1ZRYkJFZVE?oc=5)
+### Our Departments - mbep.anambrastate.gov.ng
+- **Source:** mbep.anambrastate.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMiXkFVX3lxTFAxRFRXclcyYzRWTk83MFRDenc0NmhIYWdEX2E3ZGFad3dhcnRzdFIwZUNyOGFlb2UteC01Tzdaa2xKM3hteW5NdzIyTmdrZWZnVjJoc3FDa1ZRYkJFZVE?oc=5)
 - **Classification:** Government (Policy)
 - **Risk Score:** 36/100 (Low)
-- **Brief summary:** Our Departments  Anambra State Government Website
+- **Brief summary:** Our Departments  mbep.anambrastate.gov.ng
 
 ### Nigeria, Russia deepen Strategic Alliance as FG opens door for Tech, Trade and Free Scholarship opportunities - Federal Ministry of Budget and Economic Planning
 - **Source:** Federal Ministry of Budget and Economic Planning | [Original Link](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOODZnZjY3Um5ONUdqeTl3WEpiVkhLcVpMOXBEdGlaLTViblZxUjJYM0R3cWx0eHBra3dyTDRjenlCZTROQ0ZBaEQzazFMbXBJRjlRSWhsYkR0Sko4TklBYWgzVmlvRG53R1plOGRpZ0xpYW5HandjdGV1OXZSQTVRbkVBTWdmNUFXTjNwRWliQ2ZKbTBGR19fM0VBbmJ3Si1uUUY2blctb3Rxd3hsNVpTYzd2ZUtSZGMwNTByclZKNktrU3N0S240UVQzOHlQUmVZWGRzN2ZfSWptdnRzRk1nV0hLdGYzeXVs?oc=5)
@@ -1603,12 +1615,6 @@
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** Budget Performance  Benue state Budget and Economic Planning Commission
 
-### About Us - Anambra State Government Website
-- **Source:** Anambra State Government Website | [Original Link](https://news.google.com/rss/articles/CBMiVkFVX3lxTFBhVktSS2F5Z2VBeGZ1UFFwT1owUVpIbVVBVW1LVHBleE80WWY3LUE5RlktNmhDemxRa1VTMHdoRnFpU182YVhIT0xBU0RQU2ZlLU9hV293?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** About Us  Anambra State Government Website
-
 ### Education – Ministry of Budget and Planning - mbp.en.gov.ng
 - **Source:** mbp.en.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMiR0FVX3lxTE53VXRHOXlkZXdDZjg1N3hYTFNhZW5MVWVWQThOX2F0YVBLSzNyOGtsc29sVTNIVjNzdTNkRm85c01qbXJtMVB3?oc=5)
 - **Classification:** Government (Policy)
@@ -1675,11 +1681,11 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Lawmakers Slam ‘Abysmal’ Intelligence Budget for 2026, Citing Security Disconnect  NALTF
 
-### Sign in | Welcome to - Anambra State Government Website
-- **Source:** Anambra State Government Website | [Original Link](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5EdVA2QUozaEtuU2J4blpvWGx5ZDJrcURmbjY2UHlsLVhjM25MSWROV1E1X0dtQnF2NFNqaDR0ZzJwZjlkNktBSHlqcEZYOFpz?oc=5)
+### Sign in | Welcome to - mbep.anambrastate.gov.ng
+- **Source:** mbep.anambrastate.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5EdVA2QUozaEtuU2J4blpvWGx5ZDJrcURmbjY2UHlsLVhjM25MSWROV1E1X0dtQnF2NFNqaDR0ZzJwZjlkNktBSHlqcEZYOFpz?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Sign in | Welcome to  Anambra State Government Website
+- **Risk Score:** 24/100 (Low)
+- **Brief summary:** Sign in | Welcome to  mbep.anambrastate.gov.ng
 
 ### Fraud and Scam Disclaimer - Cornerstone Insurance Plc
 - **Source:** Cornerstone Insurance Plc | [Original Link](https://news.google.com/rss/articles/CBMifEFVX3lxTE1CeHMzMlU2bV9wci1oV2lUSXJwTHl3MUNOYXpTN0tDb2RGeE9TWDBNZHJPSUs3X2pmNWMwT19selctTDJ6RlR4QU9fcEdMTGdwWkFveThaR3NQb09obVhFQ0ZoTjc5UTJ1VV9Qem9MMUJ6MkhZZDF3eXZMVXQ?oc=5)
@@ -1800,12 +1806,6 @@
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** RELATIONSHIP BETWEEN QUALITY OF AUDIT AND PERFORMANCE OF COOPERATIVE SOCIETIES IN ODO OTIN LOCAL GOVERNMENT AREA OF OSUN STATE, NIGERIA | UNIZIK JOURNAL OF ENTREPRENEURSHIP (ENTREP)  unizikentrepjournal.com.ng
-
-### Likke Iheaka Model Customary Court – Ministry of Budget and Planning - mbp.en.gov.ng
-- **Source:** mbp.en.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMid0FVX3lxTE9Qa0dIWUdLMHpSQUxtcHREdERmM3ZJTS15M1IxbG5Sb05KcU5BM3dkdDJkOW9LYXJ6Ml9MNXZTY1I0dzdRMk1OTkgweS1kaWEzaEZMckdReXlsMFpuNE1BTWhYNXI1YjJybjVHTUE3WmljRDNlRDU0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Likke Iheaka Model Customary Court – Ministry of Budget and Planning  mbp.en.gov.ng
 
 ### Shettima launches Niger Delta Agricultural Development, Investment Fund - Vanguard News
 - **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMW1QTzYxRFBGei0tcUVrMGpLOVU1ZjdDdkk4UVRXRXo1Slp2dnAycnRXM0tZa2k5Qkt4OFRtUFNUcDBDdmhkcE4xcWZSaWNzRjZnUkdSMWVJZnNGakdscGJfOXBhVE5yZ2ZNZXhMUk5DVnVPTVhobWhkS2lZZGpsLTczNGRZQk9ZVDV0OTNZaW5JTjhSb0hkSG9uQWlBY3hLdDQ2RVd6WGZVUzjSAbABQVVfeXFMT0xETFRFV0F1VVRVc0NSMFFDSGFmY1BUM2tHM2xyWFBIMlpSal9Rc2NmajFQWV90SDY0Nm1maFZHQUZUb05COENpR25vUDhZWnZKcGdGOXNZRnY0bm5kRmxfV0kzQlFMS1ZLeTFzLTVfakM5VGF0Wkx0WTBkdEt1NFlwbjMxb091RHFJQi01bnhHeV9wVmtWYm1hMV9IdjU5d3NhUHZTQl9fdXNEVW1kb0o?oc=5)
@@ -2071,12 +2071,6 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** ("EPSRA") II to maximise access to electricity services, by promoting and facilitating consumer connections to distrib  Nigerian Electricity Regulatory Commission (NERC)
 
-### GoAML Registration - Nigerian Financial Intelligence Unit
-- **Source:** Nigerian Financial Intelligence Unit | [Original Link](https://news.google.com/rss/articles/CBMiT0FVX3lxTE80aWl1ZVRwRHBNTzdaR09oSUp5X014WlZSSVlPTldhb1Y2eTJSZkJSR1RLUlFRR0x3MUxWM2JxSnJDQmVNM3VmUzVUMkM0N2c?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** GoAML Registration  Nigerian Financial Intelligence Unit
-
 ### NIGERIAN ELECTRICITY REGULATORY COMMISSION - Nigerian Electricity Regulatory Commission (NERC)
 - **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYVGF2aHkxSTFQZ2cyX25Sa2RyOEJVdDNxbWJQUDJyVkZLbW1VOV91TEtTeXp5T1hvVG9tN1lzd0czTkZ3WjlUNVdwSzFkQQ?oc=5)
 - **Classification:** General (Other)
@@ -2100,6 +2094,12 @@
 - **Classification:** General (Other)
 - **Risk Score:** 31/100 (Low)
 - **Brief summary:** I S ORDER NO: NERC/2025/071 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE DELINEATION OF ASSETS AND LIABILI  Nigerian Electricity Regulatory Commission (NERC)
+
+### Untitled - Nigerian Electricity Regulatory Commission (NERC)
+- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQVmNWRkp2bjhkQ3BDYnN2elUwc2U1VlpOaHYtU3pJc0tkV2pqRWdvSXRuNUlNZjg2SjJtaFlmM0ZKV21kNV9VT2pJaG9EZjVKdDk5RzU1MHQtZ2RIUzhjRU90QWZOaXhVaWVXYUJMUnBSVG5mc3BGMW0zM1JNXzBEOGdsYnRhaFlIX204SWpNVm56bEdiMEI0SndqWm16RUJ3UGxRcW90d0tnX1ltT05DNU1TdzVKVUdOcVhGRG5wa3c3SFJPVTR5RGhzOGZTUkV4YkdIVg?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Untitled  Nigerian Electricity Regulatory Commission (NERC)
 
 ### National Center for Artificial Intelligence and Robotics - National Information Technology Development Agency (NITDA)
 - **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiQEFVX3lxTE1ySkE4WGlkNWxYdHVHZGo4eHlqSmtsUUpVX3NkSkhhY2xybWxoejV4VlVzVm5vRTl4T3VzYXpzcHE?oc=5)
@@ -2376,6 +2376,13 @@
 - **Classification:** Person (Other)
 - **Risk Score:** 40/100 (Low)
 - **Brief summary:** ANALYSIS: Nigeria’s 2020 tax outlook and the tasks before new FIRS Chairman  Premium Times Nigeria
+
+### FG offers Shell $11.50 per barrel tax credit to unlock $20bn Bonga Deepwater project
+- **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/fg-offers-shell-11-50-per-barrel-tax-credit-to-unlock-20bn-bonga-deepwater-project/)
+- **Classification:** Government (Policy)
+- **Risk Score:** 55/100 (Low)
+- **Brief summary:** Udeme Akpan with Agency Report
+The Federal Government has approved an enhanced production-linked tax credit of $11.50 per barrel for Shell Plc and its partners in a move aimed at unlocking the long-… [+3840 chars]
 
 ### 50,000 Police Constable Recruitment: PSC releases names of successful applicants
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/50000-police-constable-recruitment-psc-releases-names-of-successful-applicants/)
@@ -2762,17 +2769,17 @@ Magaji Mato is a Senior Advocate of Nigeria, SAN. In this interview, Mato examin
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** The Niger Delta Power Holding Company has commenced the rehabilitation of the 225-megawatt Gbarain Power Plant in Bayelsa State, more than five years after a fire destroyed a critical component of th… [+4406 chars]
 
-### EFCC arraigns firm’s GMD over alleged $600,000 fraud
-- **Source:** The Punch | [Original Link](https://punchng.com/efcc-arraigns-firms-gmd-over-alleged-600000-fraud/)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** The Enugu Zonal Directorate of the Economic and Financial Crimes Commission has arraigned the Group Managing Director of Brass Engineering and Construction Nigeria Limited, Egwuche Gladys, for allege… [+3161 chars]
-
 ### Ooni backs Tinubu, says economic reforms yielding results
 - **Source:** The Punch | [Original Link](https://punchng.com/ooni-backs-tinubu-says-economic-reforms-yielding-results/)
 - **Classification:** General (Other)
 - **Risk Score:** 25/100 (Low)
 - **Brief summary:** The Ooni of Ife, Oba Adeyeye Ogunwusi, has backed President Bola Tinubus economic reforms, saying they brought about changes the country had never experienced before. He cited developments in the ca… [+3305 chars]
+
+### EFCC arraigns firm’s GMD over alleged $600,000 fraud
+- **Source:** The Punch | [Original Link](https://punchng.com/efcc-arraigns-firms-gmd-over-alleged-600000-fraud/)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** The Enugu Zonal Directorate of the Economic and Financial Crimes Commission has arraigned the Group Managing Director of Brass Engineering and Construction Nigeria Limited, Egwuche Gladys, for allege… [+3161 chars]
 
 ### ‘We are not a tribal club’ — Enugu Rangers reject Moses Simon’s discrimination claim.
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/we-are-not-a-tribal-club-enugu-rangers-reject-moses-simons-discrimination-claim/)
@@ -2978,218 +2985,212 @@ In a bid to assist the Federal Government and security agencies in tackling issu
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** Nigerian entrepreneurship has never been more ambitious. Across sectors including financial technology, software development, professional services, manufacturing and e-commerce, Nigerian businesses… [+6020 chars]
 
-### Why African Entrepreneurs Are Building Global Businesses Earlier Than Ever Before
-- **Source:** The Punch | [Original Link](https://punchng.com/why-african-entrepreneurs-are-building-global-businesses-earlier-than-ever-before/)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Africa’s entrepreneurial economy is undergoing one of the most significant transformations in its history. Across Nigeria and many other African nations, founders are no longer building businesses s… [+6498 chars]
+### Leavitt defends Trump’s fixation on lost 2020 election ahead of president’s primetime address – live
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/live/2026/jul/16/donald-trump-darline-graham-bukele-blanche-iran-ice-2020-election-speech-latest-news-updates)
+- **Classification:** Government (Appointment)
+- **Risk Score:** 76/100 (Critical)
+- **Brief summary:** In response to a question about three men who have been killed by ICE in the past week, Leavitt confimed that Immigration and Customs Enforcement (ICE) would continue vehicle stops, despite a back and forth between Donald Trump and the Department of Homeland Security (DHS) on the practice. The press secretary said that DHS has issued “verbal guidance has been given to all field offices across the country”.
 
-### World Cup 2026: UK government backs calls for Fifa to investigate Argentina over Falklands banner; Tuchel takes blame amid criticism of tactics – live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/live/2026/jul/16/world-cup-2026-argentina-break-england-hearts-and-head-for-final-with-spain-live)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (High)
-- **Brief summary:** Righto, that’s it from us for today. Thanks all for your company and comments; we’ll see you again tomorrow and, in the meantime: One to ponder: how do we see England moving on from here?
-
-### The Open 2026: DeChambeau and Scheffler make strong starts on day one at Birkdale – live
+### The Open 2026: Rory McIlroy toils, Suber takes clubhouse lead on day one at Birkdale – live
 - **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/live/2026/jul/16/the-open-2026-golf-updates-from-day-one-at-royal-birkdale-live)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 52/100 (Medium)
-- **Brief summary:** … and with that, I’ll hand you back over to Matt Cooper. See you tomorrow.
-
-### Local hero Tommy Fleetwood treads familiar ground at Royal Birkdale
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jul/16/local-hero-tommy-fleetwood-royal-birkdale-southport-open)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 41/100 (Low)
-- **Brief summary:** There were three ways to get to play Royal Birkdale back when Tommy Fleetwood was a kid growing up in Southport. One was to stump up hundreds in visitors’ green fees, another was to get invited as the guest of a friendly member, and the last was to be proposed, seconded and vetted and pay a few thousands in dues to become a member yourself.
+- **Brief summary:** Yikes. Rory McIlroy has stopped missing short putts and now Shane Lowry has taken up the (very much unwanted) baton.
 
 ### England v India: second men’s one-day cricket international – live
 - **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/live/2026/jul/16/england-v-india-second-mens-one-day-cricket-international-live)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 44/100 (High)
-- **Brief summary:** 9th over: England 42-2 (Root 16, Brook 16) Relief for England as Bumrah is put back on the shelf after four overs, 1-17. The tall figure of Gurnoor Brar is his replacement.
+- **Brief summary:** 23rd over: England 117-4 (Root 48, Buttler 15) Bumrah is back for over number seven – Gill wants the breakthrough. Zips one past Root’s outside edge – the keeper likes it but Bumrah isn’t convinced enough for Gill to review.
 
-### Former pardon attorney slams Todd Blanche nomination for AG: ‘Do not degrade our justice system further’ – live 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/live/2026/jul/16/donald-trump-darline-graham-bukele-blanche-iran-ice-2020-election-speech-latest-news-updates)
-- **Classification:** Government (Appointment)
-- **Risk Score:** 76/100 (Critical)
-- **Brief summary:** The Trump administration is reviving a rule that could deny green cards to immigrants who use public benefits that could include food stamps, Medicaid, and even housing assistance. The policy, known as “public charge”, appeared today in the Federal Register and will be formally published on 20 July, the Associated Press reports.
-
-### World Cup reader Q&A: Nick Ames answers your questions now - live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/live/2026/jul/16/world-cup-reader-qa-post-your-questions-for-nick-ames-now)
+### White House says Donald Trump will attend World Cup final
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/16/donald-trump-attending-world-cup-final)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 44/100 (Low)
-- **Brief summary:** Thanks for all your questions! They call New York the city that never sleeps and I certainly spent most of my night being tormented by recurring images of marauding Argentina full-backs and leaping centre-forwards.
+- **Brief summary:** Donald Trump will attend Sunday’s World Cup final between Spain and Argentina, White House press secretary Karoline Leavitt said Thursday. “We look forward ⁠to the final match on Sunday, and I know ‌the president ‌looks forward to attending,” Leavitt said.
 
-### Thinktanks should rethink their funding models | Letters
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/2026/jul/16/thinktanks-should-rethink-their-funding-models)
-- **Classification:** General (Other)
-- **Risk Score:** 41/100 (Low)
-- **Brief summary:** Polly Toynbee laments the decline in funding of various (mostly centre-left) thinktanks because the Aberdeen Group terminated its Financial Fairness Trust (This thinktank exposed fat cats and obscenely high pay. Guess what has happened to it?, 10 July).
-
-### A World Cup that England could actually win | Brief letters
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/16/a-world-cup-that-england-could-actually-win)
-- **Classification:** General (Other)
-- **Risk Score:** 41/100 (Low)
-- **Brief summary:** I recommend the immediate launch of a new World Cup competition, the Hindsight Trophy. Given the vast number of England TV experts and fans who know afterwards what should have happened, the trophy should be ours permanently.
-
-### At least one dead as life-threatening flash floods and storms hit central Texas
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2026/jul/16/texas-flooding-emergency-latest)
-- **Classification:** Government (Policy)
-- **Risk Score:** 61/100 (Low)
-- **Brief summary:** At least one person has died during rescue operations as “life threatening” flooding takes hold in south-central Texas, where up to 20in of rain have already fallen in some areas – just one year after the same region endured catastrophic flooding that killed more than 100 people. Flash flood emergencies were issued on Thursday for parts of Kerr and Uvalde counties, where emergency crews performed water rescues, as well as areas around the Guadalupe River and the Pedernales River, according to morning updates from the National Weather Service (NWS).
-
-### Iran reports fresh strikes near Qeshm Island and accuses US over ‘barbaric’ hospital attack – as it happened
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/live/2026/jul/16/iran-us-donald-trump-war-strait-hormuz-oil-israel-lebanon-latest-news-updates)
-- **Classification:** Government (Policy)
-- **Risk Score:** 76/100 (High)
-- **Brief summary:** We’re pausing our live coverage now, here is a summary of the day’s main developments: Iranian news agencies have reported that the United States has launched strikes around Iran’s Gulf island of Qeshm near the strait of Hormuz, as renewed hostilities flared between Washington and Tehran. Fars news agency reported an “American missile strike in the vicinity of Qeshm”, citing local authorities, while Tasnim news agency said one of its correspondents reported locations around Qeshm “were struck by projectiles from the American enemy”.
-
-### Claudia Winkleman quits her chatshow after seven episodes
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/tv-and-radio/2026/jul/16/the-claudia-winkleman-show-quits-chatshow-too-nervous)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** When the BBC revealed that Claudia Winkleman was to be given her own chatshow, she deployed her trademark self-deprecation to note that it “might be excruciating”. Yet after just one series, it is the presenter – rather than the audience or guests – that has found the show to be too much of an ordeal.
-
-### Sadiq Khan given seat in Lords, as Starmer creates 26 new peers days before he leaves No 10 – UK politics live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/live/2026/jul/16/keir-starmer-andy-burnham-labour-farage-badenoch-widdecombe-latest-news-updates)
-- **Classification:** Government (Appointment)
-- **Risk Score:** 80/100 (Critical)
-- **Brief summary:** Sadiq Khan has been given a peerage by Keir Starmer just days before the prime minister stands down, potentially opening the door to one of Labour’s most high-profile mayors joining Andy Burnham’s cabinet in future. Andy Burnham is “too in hock to vested interests” to offer real change, Zack Polanski has said as the Greens launched a pushback against the incoming prime minister, portraying him as cautious and weak on such areas as wealth taxes, Gaza and rent controls.
-
-### Tell us: have you been affected by the spread of wildfire smoke in the US and Canada?
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/16/tell-us-how-have-you-been-affected-by-the-spread-of-wildfire-smoke-in-the-us-and-canada)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** The smoke from more than 100 active wildfires northern Ontario has spread to cities across the north-east US, including New York. Environment Canada issued health warnings on Wednesday after the sky over Toronto turned yellow with smoke and was ranked the worst in the world, according to IQAir.
-
-### ‘Part of the fun’: Mateo Pulcini feels fans’ love despite risky Fernández celebration
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jul/16/mateo-pulcini-enzo-fernandez-argentina-world-cup-celebration-2026-the-open-golf)
+### Largest landlord in the US accused of civil rights violations
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2026/jul/16/greystar-landlord-civil-rights-violations)
 - **Classification:** Legal (Other)
+- **Risk Score:** 39/100 (High)
+- **Brief summary:** Greystar, the largest owner and manager of apartments in the US, systematically flouts local laws designed to make housing affordable to the poor, according to civil rights complaints filed with authorities in six states and the District of Columbia. The complaints – filed this week with government agencies in California, Hawaii, Maryland, Michigan, New Jersey, Virginia and Washington DC – accuse Greystar of 114 violations of state and DC fair housing laws.
+
+### ‘Disorderly’ intruder removed from NBC’s Today show after security breach
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/tv-and-radio/2026/jul/16/nbc-today-show-racial-slur-craig-melvin)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 52/100 (High)
+- **Brief summary:** A man was arrested after breaking on to the set of NBC’s Today show on Thursday morning and allegedly hurling a racial slur at a host. NYPD officers at New York’s midtown north precinct responded to a report of a disorderly person at the show’s 30 Rockefeller Center studios shortly after 9am.
+
+### General Mills recalls 736,000 Pillsbury rolls over glass contamination fears
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2026/jul/16/pillsbury-general-mills-frozen-bread-rolls-recall)
+- **Classification:** Company (Earnings)
 - **Risk Score:** 44/100 (Low)
-- **Brief summary:** After making one of the longest putts of the first day, a snaking 40-footer at the last, the only Argentinian in this year’s Open field embarked on a decidedly risky celebration. First Mateo Pulcini raised his hand in the air.
+- **Brief summary:** General Mills is recalling nearly 736,000 Pillsbury bread rolls over concerns they could contain glass, according to a notice issued by the US Food and Drug Administration earlier this week. The recall covers two frozen bread roll products: 3,080 cases of Hard Roll Dough, with 180 rolls in each case, totaling 554,400 rolls, and 1,260 cases of Kaiser Roll Dough, with 144 rolls per case, totaling 181,440 rolls.
 
-### US intensifies attacks on Iran as Tehran hits back at Gulf states
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/16/us-intensifies-attacks-on-iran-as-tehran-hits-back-at-gulf-states)
-- **Classification:** Person (Other)
-- **Risk Score:** 44/100 (High)
-- **Brief summary:** The US has intensified its attacks on Iran, hitting targets near Tehran and striking a ship it accused of trying to break its blockade, while Iran retaliated by firing missiles and drones at US allies in the region. Six consecutive days of back-and-forth attacks threaten to pull the region back into a total war and cast serious doubt about an interim deal reached last month meant to achieve a permanent peace.
-
-### Burnham’s ‘black box’ plans for cabinet send Westminster into hysteria
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/2026/jul/16/burnhams-black-box-plans-for-cabinet-send-westminster-into-hysteria)
+### ‘Bizarre choice’: business and Labour puzzle over Shabana Mahmood as future chancellor
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/2026/jul/16/shabana-mahmood-future-chancellor)
 - **Classification:** Government (Appointment)
 - **Risk Score:** 68/100 (Low)
-- **Brief summary:** As Labour MPs filed out of Portcullis House on the last day before parliament rose – and Andy Burnham ascends – one said they were struggling with a metaphor for how concentrated Burnham’s power had become. Flailing for something that did not sound insulting, he gave up and likened Burnham’s absolute control to North Korea’s Kim dynasty.
+- **Brief summary:** Andy Burnham last month promised the UK he would bring “good growth in every postcode and hope in every heart” when he is installed as prime minister. Britain’s industry leaders also have a hope in their hearts: that Burnham will install a pro-business chancellor.
 
-### What does an air purifier do and can it help with wildfire smoke?
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/wellness/article/2026/jul/16/air-purifiers-what-to-know)
+### Earth-like exoplanet could have life-supporting water on its surface
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/science/2026/jul/16/atmosphere-lhs-1140b-exoplanet-could-water-scientists)
 - **Classification:** Company (Earnings)
-- **Risk Score:** 40/100 (Medium)
-- **Brief summary:** With smoke from wildfires in Canada and Minnesota spreading across the US, more than 20 states have issued air quality alerts. Local leaders urged people to stay inside as “unhealthy” air quality levels affected the US midwest and north-east.
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** The search for life outside our solar system has taken another twist as researchers revealed they have discovered an atmosphere around an Earth-like planet 49 light years away that could have liquid water on its surface. Atmospheres have previously been found around gas giant exoplanets as well as “sub-Neptunes”.
 
-### Former boss of Italian motorways sentenced to 12 years over Genoa bridge tragedy
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/16/genoa-bridge-tragedy-former-italian-motorways-boss-sentenced-12-years)
-- **Classification:** Legal (Other)
-- **Risk Score:** 60/100 (Low)
-- **Brief summary:** Thirty-two people, including the former chief executive of Italy’s motorway operator, have been convicted over the 2018 collapse of a Genoa bridge in which 43 people died. In a hushed courtroom on Thursday in the north-western Italian city, Giovanni Castellucci, a former boss of Autostrade per l’Italia, was sentenced to 12 years in prison, the highest in the case.
-
-### I’ve spent years testing air purifiers – these three are the best to detox the air in your home
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/thefilter-us/2026/jul/16/air-purifiers)
-- **Classification:** General (Other)
-- **Risk Score:** 42/100 (Medium)
-- **Brief summary:** If you live in affected parts on the US, climate change is making wildfire season more intense, adding more ozone at ground level. That means air quality is not a factor to overlook when it comes to your health at home.
-
-### England had Lionel Messi under control … until one decisive and subtle shift
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/16/england-appeared-to-have-lionel-messi-under-control-until-the-crucial-moments)
+### Tuchel ‘100%’ invested in leading England at Euro 2028 despite semi-final failure
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/16/thomas-tuchel-england-2026-world-cup-semi-final-argentina-euro-2028)
 - **Classification:** Company (Earnings)
-- **Risk Score:** 39/100 (Low)
-- **Brief summary:** Thomas Tuchel will have prepared for every eventuality before England’s match with Argentina. He will have considered how his team could prosper in attack while remaining solid in defence.
+- **Risk Score:** 47/100 (Low)
+- **Brief summary:** Thomas Tuchel says he is “100%” committed to leading England at Euro 2028 and finding the “extra level” for glory that eluded his team at the World Cup. The manager is under fire for the manner of Wednesday’s 2-1 semi-final defeat in Atlanta.
 
-### Inquest reopened into death of 14-year-old boy after ‘TikTok blackout challenge’
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/media/2026/jul/16/inquest-death-jools-sweeney-tiktok-blackout-challenge-social-media)
-- **Classification:** Legal (Other)
-- **Risk Score:** 49/100 (High)
-- **Brief summary:** The inquest into the death of a 14-year-old boy, whose mother believes he died after a TikTok challenge gone wrong, is to be reopened in a landmark ruling by the high court. Jools Sweeney, a schoolboy from Gloucestershire, died in April 2022.
-
-### Mafia law gives Italian families right to break free from life of crime
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/16/italy-mafia-law-families-break-free-crime-new-identities)
-- **Classification:** General (Other)
+### England defend Henry Pollock after he makes gestures to Argentina fans
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jul/16/henry-pollock-england-argentina-team-borthwick-rugby-union)
+- **Classification:** Company (Earnings)
 - **Risk Score:** 52/100 (Low)
-- **Brief summary:** Children and young adults raised in mafia families will be given a chance to break away from organised crime under new legislation in Italy that aims to stop the intergenerational recruitment of gangsters. In an unprecedented effort to sever the family chain, the Italian state will offer children aged under 25 and other close relatives of mafia bosses a chance to start over: a new home in another city, a new school and, if necessary, a new identity.
+- **Brief summary:** England have defended Henry Pollock after the young forward was caught on video making dismissive gestures towards Argentina fans on the streets of Buenos Aires before the football World Cup semi-final. England’s head coach, Steve Borthwick, insisted the Northampton flanker was just being “good natured” but has again opted not to start the 21-year-old against the Pumas on Saturday.
 
-### La Liberazione di Ruggiero dall’Isola di Alcina review – 17th-century rarity is fun when it forgets to be earnest
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/music/2026/jul/16/la-liberazione-di-ruggiero-dallisola-di-alcina-review-17th-century-rarity-is-fun-when-it-forgets-to-be-earnest)
+### Trump-backed Senate candidate is linked to white nationalist influencer – his son-in-law
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2026/jul/16/senate-trump-mike-collins-white-nationalism)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** The Republican Senate nominee in Georgia, Mike Collins, who has been plagued by a string of controversies in his time in public office, has close ties with a white nationalist influencer – his son-in-law, David Alan Scheer II – it has transpired. A trucking executive and one-time “Freedom caucus” conservative endorsed by Donald Trump, Collins has been the GOP representative for Georgia’s 10th congressional district since 2023.
+
+### Amnesty UK self-reports to watchdog after calling JK Rowling women’s centre ‘anti-rights’
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/society/2026/jul/16/amnesty-uk-self-reports-to-watchdog-calling-women-centre-anti-rights)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 45/100 (High)
+- **Brief summary:** Amnesty International UK has referred itself to the charity regulator over a report it published that described a sexual violence support centre founded by JK Rowling as “anti-rights”. The UK branch of the global human rights charity listed Beira’s Place in Edinburgh among more than 100 organisations it said were part of an anti-rights movement.
+
+### Tim Merlier surges to Tour de France 2026 hat-trick on stage 12 but crash hits sprinters
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jul/16/tim-merlier-tour-de-france-2026-hat-trick-stage-12-crash-hits-sprinters-cycling)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** The likely final sprint stage of this year’s Tour de France was won by Tim Merlier, of the Soudal Quick-Step team, who added victory on the banks of the Saône to his wins in Bordeaux and Bergerac. In what has been a Tour of rare opportunity for both sprinters and breakaways, the final hour of racing was manic in its intensity and peppered with constant but futile attacks, until the riverside finish came into view.
+
+### Dan Brown gets fast start at Open but may not make fag end of tournament
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jul/16/dan-brown-gets-fast-start-at-open-but-may-not-make-fag-end-of-tournament)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 37/100 (Low)
+- **Brief summary:** It is quite something to challenge at the Open and simultaneously represent a potential fire hazard. Dan Brown’s propensity to smoke on the golf course is a throwback – Ben Hogan and Arnold Palmer enjoyed a puff mid-round – yet not particularly notable in ordinary circumstances.
+
+### The Guardian view on England’s World Cup disappointment: a tale of the not wholly unexpected | Editorial
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/commentisfree/2026/jul/16/the-guardian-view-on-englands-world-cup-disappointment-a-tale-of-the-not-wholly-unexpected)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 47/100 (Medium)
+- **Brief summary:** Historically, English football-supporting culture has had a well-known darker side. But in recent decades, as the England men’s team’s trophy drought has continued, some of its unofficial anthems have acquired an endearingly melancholy quality.
+
+### Kalshi to offer betting on drug trial results and FDA regulatory decisions
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/technology/2026/jul/16/kalshi-betting-drug-trial-results)
+- **Classification:** Legal (Other)
+- **Risk Score:** 56/100 (High)
+- **Brief summary:** Kalshi is expanding its wagers to include bets on drug trial results and is considering offering contracts on flight delays, as prediction market platforms continue to rapidly gain popularity and offer opportunities to bet on virtually anything. The betting platform said the expansion into clinical trials and FDA regulatory decisions will help surface information on drug trials that otherwise goes unreported.
+
+### ‘A masterpiece in every way’: The Odyssey earns near universal acclaim as full reviews published
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/film/2026/jul/16/the-odyssey-earns-near-universal-acclaim-as-full-reviews-published)
 - **Classification:** Person (Other)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** There is magic in the air at this year’s Buxton festival – and it’s not just the hops from the local brewery. Wizards, sorceresses and fairies curse and charm their way through a trio of operas from three different centuries.
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** Christopher Nolan’s $250m Imax blockbuster version of Homer’s epic poem the Odyssey looks set to be among the director’s best-received of his career, and could be a frontrunner for next year’s best picture Oscar. The Guardian’s Peter Bradshaw was among the vast majority of critics who awarded it five stars, calling it a film “with thrilling ambition, boldness, seriousness, generosity and flair.
 
-### Tour de France 2026: Merlier completes hat-trick on stage 12 as big crash mars sprint – live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/live/2026/jul/16/tour-de-france-2026-stage-12-live-updates)
+### A priority for the next chancellor: boost the London stock market
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/business/nils-pratley-on-finance/2026/jul/16/london-stock-market-takeovers)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 44/100 (Low)
-- **Brief summary:** Right, that’s it from me. Jeremy Whittle’s report will be up shortly.
+- **Brief summary:** Another day, another takeover bid for a UK-listed company. In fact, Thursday saw three in one gulp.
 
-### Move over Soccerey Bally: how Striker the dog became a 1994 World Cup hero
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/16/striker-the-dog-mascot-origin-story)
+### Keir Starmer makes Sadiq Khan a peer in the House of Lords
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/2026/jul/16/keir-starmer-makes-sadiq-khan-a-peer-in-the-house-of-lords)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 52/100 (Medium)
+- **Brief summary:** Sadiq Khan has been handed a peerage by Keir Starmer just days before the prime minister stands down, potentially opening the door to one of Labour’s most high-profile mayors joining Andy Burnham’s cabinet in future. The London mayor has long been tipped for the House of Lords, with Starmer said to have been keen to put him there immediately after the May local elections in an attempt to shore up Labour’s progressive flank.
+
+### Long-term solutions to the Prison Service crisis | Letters
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/society/2026/jul/16/long-term-solutions-to-the-prison-service-crisis)
+- **Classification:** Government (Policy)
+- **Risk Score:** 76/100 (Low)
+- **Brief summary:** The independent review of prisons led by Amber Rudd is right to confront the drugs, violence, overcrowding and deteriorating conditions affecting our prisons (Drugs, drones and heat: Amber Rudd and David Lammy begin search for answers to prisons crisis. 12 July).
+
+### As a frontline worker, my anger over the Tories’ handling of Covid has not abated | Letter
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/uk-news/2026/jul/16/as-a-frontline-worker-my-anger-over-the-tories-handling-of-covid-has-not-abated)
+- **Classification:** General (Other)
+- **Risk Score:** 39/100 (Low)
+- **Brief summary:** I am a midwife who still feels extreme anger about the way the pandemic was handled (Johnson government wasted £10bn on PPE, Covid inquiry finds, 14 July). I remember being fitted for a FFP3 mask and then being told there weren’t enough to go around and given a basic paper mask instead.
+
+### Liz Truss wheels out a series of C-list ghouls for drab London CPAC event | John Crace
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/2026/jul/16/liz-truss-london-cpac-event)
+- **Classification:** Government (Appointment)
+- **Risk Score:** 76/100 (Low)
+- **Brief summary:** Liz Truss has given us all so much in recent years. A mini-budget.
+
+### Recalling the joys of learning languages | Letters
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/education/2026/jul/16/recalling-the-joys-of-learning-languages)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 34/100 (Low)
+- **Brief summary:** How refreshing to read Rhiannon Lucy Cosslett’s piece on the advantages and fun of learning languages (At last, a proper excuse for monoglots to learn another language: it helps keep your brain young, 12 July). I first heard something similar to the expression she mentions from my future French father-in-law when he opened a very good bordeaux with the comment “C’est le bon dieu en culotte de velours”.
+
+### Marinakis, seafood and ‘sweet honey’ of Europe led Glasner to join Nottingham Forest
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/16/oliver-glasner-says-marinakis-ambition-convinced-him-to-take-nottingham-forest-job)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 44/100 (Low)
-- **Brief summary:** Deep within a dark warehouse in Hillsborough, North Carolina, there sits a severed head. Encased in plastic, perfectly preserved and seemingly begging to be reanimated, it belongs to an American soccer legend.
+- **Brief summary:** Oliver Glasner said he wants to bring back the “sweet honey” of European football to Nottingham Forest and suggested the club’s owner, Evangelos Marinakis, may be one of few people more ambitious than him. Glasner revealed talks with Marinakis over a seafood platter in Athens convinced him to become Forest’s fifth head coach in less than 12 months, the Austrian signing a three-year contract after a fruitful two years at Crystal Palace.
 
-### Even HP resellers thought the price of toner and ink was too high – so HP India facilitated an illegal cartel
-- **Source:** theregister | [Original Link](https://www.theregister.com/legal/2026/07/16/even-hp-resellers-thought-the-price-of-toner-and-ink-was-too-high-so-hp-india-facilitated-an-illegal-cartel/5272244)
+### ECOWAS at a Crossroads: Democracy, Credibility and Institutional Reform
+- **Source:** theabujainquirer | [Original Link](https://theabujainquirer.com/2026/07/16/ecowas-at-a-crossroads-democracy-credibility-and-institutional-reform/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### IOM and UNHCR Deeply Concerned by Reports of Maritime Incidents off Myanmar Coast; Over 500 Feared Dead
-- **Source:** reliefweb | [Original Link](https://reliefweb.int/report/myanmar/iom-and-unhcr-deeply-concerned-reports-maritime-incidents-myanmar-coast-over-500-feared-dead)
+### Osun police rescue hostage, foil ransom, arrest suspected cultists
+- **Source:** sunnewsonline | [Original Link](https://thesun.ng/osun-police-rescue-hostage-foil-ransom-arrest-suspected-cultists/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Nigerian Newspapers: Top Stories For Today (16/07/26)
-- **Source:** independentng | [Original Link](https://independent.ng/nigerian-newspapers-top-stories-for-today-16-07-26/)
+### NCPWD donates devices to children with disabilities in Abuja
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337540/ncpwd-donates-devices-to-children-with-disabilities-in-abuja.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Palestinian envoy praises India’s ‘significant’ new projects amid Gaza humanitarian crisis
-- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/palestinian-envoy-praises-indias-significant-new-projects-amid-gaza-humanitarian-crisis/)
+### NBTE boss blames Nigerias engineering woes on lack of experience
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337538/nbte-boss-blames-nigerias-engineering-woes-on-lack-of-experience.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Tinubu Confirms Attendance At 81st UNGA, To Address World Leaders, Meet Trump
-- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/tinubu-confirms-attendance-at-81st-unga-to-address-world-leaders-meet-trump-2/)
+### Navy commissions 35,000-litre solar-powered borehole for Niger residents
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337542/navy-commissions-35000litre-solarpowered-borehole-for-niger-residents.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Renewed Hope Ambassadors, media team inspect landmark projects in Imo
-- **Source:** pmnewsnigeria | [Original Link](https://pmnewsnigeria.com/2026/07/16/renewed-hope-ambassadors-media-team-inspect-landmark-projects-in-imo/)
+### Cross-border firewood trade depleting Nigerian forests Zulum
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337543/crossborder-firewood-trade-depleting-nigerian-forests-zulum.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### F-I-R-E-W-O-R-K-S!
-- **Source:** sunnewsonline | [Original Link](https://thesun.ng/f-i-r-e-w-o-r-k-s/)
+### Insecurity: Katsina traditional leaders to begin monthly meeting
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337539/insecurity-katsina-traditional-leaders-to-begin-monthly-meeting.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Launch ceremony of third edition of Hong Kong Fashion Fest Held on July 9
-- **Source:** theinfostride | [Original Link](https://www.theinfostride.com/launch-ceremony-of-third-edition-of-hong-kong-fashion-fest-held-on-july-9/)
+### Abbas: State police must comply with prescribed standards
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337536/abbas-state-police-must-comply-with-prescribed-standards.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Manufacturers Face Credit Squeeze Amid N1trn Fund Delays
-- **Source:** independentng | [Original Link](https://independent.ng/manufacturers-face-credit-squeeze-amid-n1trn-fund-delays/)
+### FG concludes evacuation of Nigerians from S/Africa
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337544/fg-concludes-evacuation-of-nigerians-from-safrica.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Uzodimma Meets Tinubu, Reveals Details Of Discussion
-- **Source:** naijanews | [Original Link](https://www.naijanews.com/2026/07/16/uzodimma-meets-tinubu-reveals-discussion/)
+### Nigerian economy on steady growth, Tinubu tells Deloitte
+- **Source:** latestnigeriannews | [Original Link](https://www.latestnigeriannews.com/p/337541/nigerian-economy-on-steady-growth-tinubu-tells-deloitte.html)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
