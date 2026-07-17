@@ -1,2219 +1,893 @@
 # PSC & Company Daily Intelligence Report
 
-**Generated on:** 2026-07-17 09:30:15 (UTC+1)
+**Generated on:** 2026-07-17 11:01:11 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 525
-- **High Risk Signals:** 63
-- **Appointments Logged:** 4
-- **Procurement Awards:** 82
+- **Total Articles Processed:** 386
+- **High Risk Signals:** 19
+- **Appointments Logged:** 1
+- **Procurement Awards:** 18
 
 ---
 
 ## Key Developments
 
-### IIS Windows Server - JOINT ADMISSIONS AND MATRICULATION BOARD
-- **Source:** JOINT ADMISSIONS AND MATRICULATION BOARD | [Original Link](https://news.google.com/rss/articles/CBMiQ0FVX3lxTE95bkJJczQteXZCNWx3RW50Zmxad0VpX2FFNFhKYVhRdHppLUR3TjVmUWhyTlhBOF9paHJjdUh4Z2VsZTA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 27/100 (Low)
-- **Brief summary:** IIS Windows Server  JOINT ADMISSIONS AND MATRICULATION BOARD
-
-### Corporate Affairs Commission - Corporate Affairs Commission
-- **Source:** Corporate Affairs Commission | [Original Link](https://news.google.com/rss/articles/CBMiR0FVX3lxTE52N01zR0prQ3BuUGhBVFNYV043VnVFZFFSc1hzYmtUVmxqUWVtX1gtb0l3MFpKbnhYQlVnZE4xSkhQZFpkdWFn?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Corporate Affairs Commission  Corporate Affairs Commission
-
-### Magnetic glass dry erase board at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMia0FVX3lxTFA2SnpqNENoR3pjQWxYRndrR0hPOThZUG5ZM2N1LTJqUU5xSzRaR25hM0NSbGVTVTlsYVNhUUM4bmctdVRiME94MGRIV056R1dldWZpQzBOeEVXb0tOOEpCS0ZTTXd1RXktdnZv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Magnetic glass dry erase board at Best Prices Online  Jumia Nigeria
-
-### Swifty Sharp Bamboo Chopping Board And Movable Rolling Pin - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxQLWZDS0Facm85VTlvRGdhbVdJTlY4Mm44WVJFNDdvOWN6a0dTd0dCWkg4cEIyOW9SLVViRm92SmVhNkQ2YVhRM01PSzRnQjU4aW5hMnhzVkhEOFd1dnhRSjhOZWdPQjhnQXlFNjV4UGRhalplNXVwZmFQaVAtU3I4cU5TRkcwaTRDeWFiUlhPRTV2alAzWDV4SlhNV1AxQU0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Swifty Sharp Bamboo Chopping Board And Movable Rolling Pin  Jumia Nigeria
-
-### Stainless steel cutting board at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiakFVX3lxTE5YeGR4Vjc0NUloTmRqa3B5eFB6TF94TjMyQS02dVQyR05paExOTEl4c3JUcmtFUEY0SkpzZnJYYlJUMWk5alpWTkFVMDVhTFQ2M1BSUXBxT0ZWSmFmaTBpQU82RlBReFNwYXc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Stainless steel cutting board at Best Prices Online  Jumia Nigeria
-
-### Generic Cutting board and a rolling pin. - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxNN3pMeEtLeGlkRTNqYXFSN3lnckR6X3U2dmtsM3JMOWstR1BfdUJYUW5KbkFhbnN2RUl4UGVhQnlOencxdkp6RVZDaUlab0JiSzlpdzlKUkVaek9nanZ2SWhORnRMdk5XS2NqMVE4QWhfdmk2WTBJenJOdTZEcU5MckV0UWNzTms?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Cutting board and a rolling pin. Jumia Nigeria
-
-### Carving Boards in Nigeria - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiUkFVX3lxTFB0WU9LbDF2T0M2cTYxUzhCWE1GaU9rSUpLZDBTelpZc2hwaW1SeVRnV3F2RERHZFVtazBHdGVoZFNKdkF0ZUR1dHVCS1RwbGU2X0E?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Carving Boards in Nigeria  Jumia Nigeria
-
-### GUIDELINES FOR APPOINTMENT TO BOARD AND TOP MANAGEMENT POSITIONS OF PFA S AND PFC - National Pension Commission
-- **Source:** National Pension Commission | [Original Link](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWlJ6OEVvX0dXU2hhSmZ4ai1iaHpCUGl3MWs0NmcyakNJUkprdGdMbnRybEpWLUcxUXI3VjZ4MlFlbV81b1lFVnQ0Z2NUU2ZDcDczT3VkMk56RFVINl8yQzg0RGRoMzhrTVg4YWltc3lockxWTW5TQk5uejFsZGh0bEJrMHIzUjhpSmRieHo3aEJQck41UXUxTTBmUTNXVDBSak1rREJoWjczT01LOHQ4UlZKWVZDME5yN3Y5cU5HNUxNTWV5MGxKaEtoeVdzU0NHQmc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** GUIDELINES FOR APPOINTMENT TO BOARD AND TOP MANAGEMENT POSITIONS OF PFA S AND PFC  National Pension Commission
-
-### Generic Original Cheese Board - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMieEFVX3lxTFBlY01QN2ZrbG04RlhhR3drbDItWUNKaVdTM2RiSFJtOUgtNDBiZC1UZThKNk1jc0lTcHd4LUZEOFNOc2JSbDgyM25GWnBqU3ktV3U4N201Tzk2ZVloSTlUM1BiRlZYMGZHMnUzU2FzNXVPRmcxNlJmOA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Original Cheese Board  Jumia Nigeria
-
-### Generic Bamboo Chopping Board And Movable Rolling Pin - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxORnBzU1BpTUhQbVVNMGNtNV9tYW5pcG41M1hoME94MDJfSldfeXFGMmNkY1FuR2Y1Q0JTeXRYUE5TRVYxN3h3YkRGQVdtQWxhcnVGVW1LMTNkN0ZtXzE5OVltejJhNzc1VEQwenYyMS1jbTRjc003ZGF1YjAzVzJONmVnSTJPc2xOV092VzV1SDVMOTlhcVNV?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Generic Bamboo Chopping Board And Movable Rolling Pin  Jumia Nigeria
-
-### CEO FOUNDERS: A 10-POINT CHECKLIST FOR SELLING YOUR BUSINESS - Acuity Partners
-- **Source:** Acuity Partners | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxPWVRLMkxJaEdOUHR2TllNTlZYVjgxQkNKNWh4a2FDZ21YNmNZd1hCNnNSb3ZTSXl3bGwtR0ZGZ0VHVERiVHRUMnNLWktlWUp4WE53RlNJSlNBOWFIcFJuLUVrc0RWNjlUSHBhYVRZeW12U3lKaGotb2Zjek1FMnFKZGRCVWZYa2U4OFV2c00wUlpwYU5E?oc=5)
+### UAC reshuffles board, appoints investment director to UPDC - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWEtCX3RtVU85dXA5MVNtQ09MU0E3bjdneUJ3dk10NVA2TTRrRXV2Nm1GbkI1UWdfTWd3c0VoYUl3Z29kZnM4U3E4RldBN1lEQTlqTjYtRVRvOU5Vb082UWEyYW90R3dzMnJibnBBNzB5dVBWMDM0X2VmY0hKakxWZjdrT0VZR3N5UGMyS0tCaUl0WXJTVkkwU3d3TlJXVjM5OXA1U19FcFhaR05CZUY1dVFfSGlqUFY0NHZLdll0dDk?oc=5)
 - **Classification:** Person (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** CEO FOUNDERS: A 10-POINT CHECKLIST FOR SELLING YOUR BUSINESS  Acuity Partners
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** UAC reshuffles board, appoints investment director to UPDC  Premium Times Nigeria
 
-### Generic Multifunction Collapsible Chopping Board And - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQTlTQ19BcGREVWNJMFBURTFjM2cydmtJN0ZXNUZBaFNTbkhlMDNHYkhaX0ttUTlkbTJDREdyZmo5T3VzSnJDZ1ZYNDZwWWs2MjRSMDFlUGFmTVBibWJnZExwcFNoY1pCLU1PbER5dGd4MlhwdUNHa0p6NXlXbjFjRG9naXM5dmVhX2JlNEdtcWg1clg0RGxsQU40dXFveXJfUEQwcUlqVXU?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Multifunction Collapsible Chopping Board And  Jumia Nigeria
-
-### Oxo grips cutting board small at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiakFVX3lxTFB3VDJQeURqOVlGdzZEWThCVUFoRFJ5bF9JQ1FnTkFTcFBMYTdIcDVjRTRaZUExSTBmR2FjNzNZVnFTYVNZQnhFNWtuY3ZnTzRzVE1tdWE2NGRNRUpNeHBvbjNLalFlbzFUU2c?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Oxo grips cutting board small at Best Prices Online  Jumia Nigeria
-
-### NLN Board - National Library of Nigeria (NLN)
-- **Source:** National Library of Nigeria (NLN) | [Original Link](https://news.google.com/rss/articles/CBMiQkFVX3lxTFBsT1N2VlV5cTF4dXQ2TmtxelJ6QVo3QVF0Ym5PN1VCT2t0Y0xEWlhKUTdmbmVrRWZwQTdJS0N3UXloUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NLN Board  National Library of Nigeria (NLN)
-
-### Generic Magnetic Snake And Ladder Board And Scrable 2 In 1 - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxORXhBWkpfaG5wY3V0QlN5dDk2Z2ZFQThXdU1nbUhWZWZSQ2VaZHFqS0xWQy12OUVXcHltSkotZVdKajZReGkxX2RKeENyV3JfOU1XS1BIMmEzVjlxc1BzYXNQQ0ZRMG5EMEh4ZF9uMGpuc01yRDdVVm44Um5XUFRLbXZ0a2l3V3NjMWlkXzMzYldOZGpBZFU3QVI1V25fQWxab3hxdnk5QQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Generic Magnetic Snake And Ladder Board And Scrable 2 In 1  Jumia Nigeria
-
-### Collapsible cutting board at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBUYldESmc0QkNxSjNXVXVsYlJkUzhrMFJYemdFeU0yckpqeUtnMjFGOHpoalpZN0pNODNKUFp4UG55SDF4MUZPd0VmYkI4cXhHalFTWW14XzdOcVRaeU1qT3lGdnQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Collapsible cutting board at Best Prices Online  Jumia Nigeria
-
-### Generic Apple-Shaped Plastic Cutting Board And Knife Set - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxPZWxmNEU2Y1loUmstSkxrZGxzYW5zQWhwZGN6RFBYM0p1UUNjOW40a3M4R1h0V3Ezd1VtS1p3Y1pTU2pDaGluSGVwb1VxNkpOZDVRWWQyM1ZWQ3A5T0toNlcyT3l3LTlNdFp5YVlaRU5zeUs4dVpCMUN6bE1YaktMb2x6ZHFnN0J4UFpNM19VRS1iNm5HcWJfWk9EUzF5cTItdGNyRl9uaw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Apple-Shaped Plastic Cutting Board And Knife Set  Jumia Nigeria
-
-### Chopping board set brown at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1LcW1IV1NHWXdVVktZM2ZIamlNTElUSVQtVklvYTRPWW1aSEhnYWRuMXFRSDVVc05lQmZiNUwxbTdFNU43aEVnWlJNWlBRRlhIb2JkNWYzR214TDRTTUY4cDZ2WQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Chopping board set brown at Best Prices Online  Jumia Nigeria
-
-### Red board at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiT0FVX3lxTE5zNkdVd19xaTA0VG5qNHQ5UjI4UFFuclUxWEJfd09rYzBzemtRT0xDWTN6eVRJeHFWUjQzalRuaDhkYzVMeGZlUWp3cXk1dGc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Red board at Best Prices Online  Jumia Nigeria
-
-### Generic 3-Layer Stainless Steel Luxury Dish Rack with - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixAFBVV95cUxQOUFGSm5IYm5Say1XeE5xNEwtMmtwZS1reVJnVExCSGNFOVROX1ItWGJYbHU0Z2ZxWEFwbUVPVWZkR2s0dFlSelNteWJWSmVmbExRbWlGeGZXOTRheTRBNE1TYXVLcGhKemp0eHpMODdVdUl3MC1uMVdfX2dxQ21zSXlXZW5aTHVrLXduX1lDMm9naFJxVnJQQ0RYWmh6Um5OZW13V0NMbUQwb3hfWjlQZE9naEpqNkRvbjVxQmcxSlFuTlp4?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Generic 3-Layer Stainless Steel Luxury Dish Rack with  Jumia Nigeria
-
-### Generic Bamboo Chopping Board And Wooden Spoon Set. - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxQc085Z2JNdl8zdzd5Y2RSbXNHaUhGeXFnZVdKMWJmSFVpa1o1QXZEa0lYc1FleHBDZmF2bGZPdS1LTVdMNHJINTczMVl0aWZSNU1fcEJBUnFCQk9iVFRCM0ZKU1NvdkRkMFNSUW9GaG5sU0g0S1B0blFpdnNEYUd4ODd6d3c4R1d6RHg2R3RmckgyTjNkcFE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Bamboo Chopping Board And Wooden Spoon Set. Jumia Nigeria
-
-### THE BOARD AND MANAGEMENT - Kebbi State Investment Promotion Agency
-- **Source:** Kebbi State Investment Promotion Agency | [Original Link](https://news.google.com/rss/articles/CBMibkFVX3lxTFB3Nmp6S0tSa0dTYlM2X2ZFTW1CUEpxTHh6T21BTmdkNEFuZFk4ZlNON25FMENjdFp2MHRPbFlfdnNlbllLSzZYck8yeUtNamVXQWFpZURJVTI0VGlfQTQ5N3FJMlZhZTlXVU5qQkxB?oc=5)
+### PFIPC: Police arraign Adeyemi tomorrow as pressure mounts on Senate, ICPC - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxNcFRsd3NEMGoxOERWc0FLd0M0VzMyNVh5QUhyYzAzbE1DQzV3dXhqZWp2MWFFTzJXcVFFUFFEZDU4anlzbTRSZFREcHRZTFdCWTIyZFNTa3dvVEs0dC0zYXBOYnk4QTlfQXZKeE5ST21oNXlkNkJCUXRnaG5kMmRfNlMwR1kxMGFfckVUWlhDNHg1M2d2YjJjdF91Z1NWZw?oc=5)
 - **Classification:** Government (Policy)
-- **Risk Score:** 40/100 (Low)
-- **Brief summary:** THE BOARD AND MANAGEMENT  Kebbi State Investment Promotion Agency
-
-### GUIDELINES FOR APPOINTMENT TO BOARD AND TOP MANAGEMENT POSITIONS OF PFAS AND PFCS - National Pension Commission
-- **Source:** National Pension Commission | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxQdlBwV1E4WEExVXFUNXhmSklmVXF1eTVmVWZabmJZUnZIR2RFdE4zSHZUMnJuME1GS0k3V0NsWjQxN3hzSVF2QlNMWDZHTlNkdkNXbTg1VkYyNlNlOGVRN084eWxPN3VIT3lqTS1OSmhVdzJUaHd4S2J2SXZfakV6eXdsRVpEelRHMVVwOWpBRmJMb3R3UjBZcFRvU2VhU05uVWJKTnRJZzJMZUV0Zjk4?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** GUIDELINES FOR APPOINTMENT TO BOARD AND TOP MANAGEMENT POSITIONS OF PFAS AND PFCS  National Pension Commission
-
-### Generic Magnetic Snake And Ladder Board And Scrable 2 In 1 - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxNc2pvWFZGWEo1M1gtMklGbnNrR3U3a3BqZjBqQTNpNS1rUjY1bkhrVW80YTh0STZkSWpyTXFUdXVoS3FhODhMVlYwRGJtbGJOblM3dlJ6WDdfYW9pUVVzel9wM3pPUV9URnozd1d2UkRJMG9ULVpVN2JoR1BzRGFkS1NLWWJIVWVkMlVFLVBoLTkzY0N1V2o2Q3U0VXFBYmgzVVJWOHFvUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Generic Magnetic Snake And Ladder Board And Scrable 2 In 1  Jumia Nigeria
-
-### Smart board for kids desk at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE94aHQwWlhhXzFaLTNUSUN3QjFZZXRyQ0pTVDVrZ1lBWGdnczBfemJfSjBoRjZFMWNiVFFJb3pjOE5VYlpLYS02SHhvSHNBQ0ZtaDI0VGFGeFlzRFJYeGlxMU9jZ3I?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Smart board for kids desk at Best Prices Online  Jumia Nigeria
-
-### Ft by4 white board at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9GYUVIbG44ckVoVm5rNUhIUnpEV1FtN011MW5EQVRTeVpxVDY4QXd3SzNObDg3Ym1lWWJwUWVXNHRqRGk2WWdEMV84cnM2dmhmU1ZHSEw3d2ZQMms?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Ft by4 white board at Best Prices Online  Jumia Nigeria
-
-### Drawing board and T-Square - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxQNjd5eUNNQ0s1d1F2V3RSNzBTdUo5a3g2LUxrMjhjRWJBV1RpY0RXdmhBNTNtQWdqb1djUjRhdHJKcGlhMVY4Nm5tVFJMM0JDcDFDOFIta0stLW9mX1o1eVJlZ2VfaXBzZnA3cVZkSmZJcWxkcHBHZWNYdklidjdSOExaNXo?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Drawing board and T-Square  Jumia Nigeria
-
-### Generic Multifunction Convertible Chopping Board And Bowl-1 - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT01VVkJFTUExeWc3a2JZTkVHZnI1Y1FEdENTYTFVSzV5S3I5RTRaeWc4Y3Q0azJ1YXBmT2ZqcFVMYVlwTWhsbi0yUDFoX2Y2VUE4YXNTalBIQWlKMHM2aExZMHpaMXV2a2xHd0RLemlidEtwZWdjUUp4QlNNMklCTzVJSWsxM3NEbkotR3RXQU42aFg0bjFUbFFPLUt0M2FBT0hrYll3OE8?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Multifunction Convertible Chopping Board And Bowl-1  Jumia Nigeria
-
-### White board to hang on wall at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9MLWZqMDM1YXl5eWEwRzVLaE9aSU9pb1dQcDY5NmxpU0VBWnE3Y3d4UXZVallQdk5IMmhid0FXMndPTmk0ellJZ1l0bFl3NTBYQXJpM3dXR2Rib0JKeUhITy01UFlGcGM?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** White board to hang on wall at Best Prices Online  Jumia Nigeria
-
-### Magnetic bulletin board at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiYkFVX3lxTE05cW82cmZOM1RIUjNZdVVuLW5SdVlGS2pzRjFyRVNNWU5nTGtOaEFPXzk1SFhuY1pDVUcwbVpUek50OWUzQXdWOWN5RWpDMFFjOWFUTWYzT1NzSjVfdmhCZm5R?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Magnetic bulletin board at Best Prices Online  Jumia Nigeria
-
-### REVISED GUIDELINES ON APPOINTMENTS TO BOARD AND SENIOR MANAGEMENT POSITIONS OF LICENSED PENSION FUND OPERATORS - National Pension Commission
-- **Source:** National Pension Commission | [Original Link](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLXR0a01ON2dsdm1PS1JlX0NrVUt1cW1oeVdNb2s3MzVqM1RxTUp3b2tBdlRCb29iVWNJZWRQS3dKSDJlZjc4eWR1S0V4VnphQXlWb1JxVmVGbXhQVDNEd0NZWC00YVNCb2VTN1FremV1ZjQ4NjFlVnpnZ1RYMGdRU0kxVjBXaDF2S3RUNjlLUzRVQjF1LUVpYTdrdTJHWFZRMUI5V2VpVnhXM0I0NFQxUWx3X3Z4N0Z3NlpYVEpmVG03VXBwNzlfbDNFOVFLRGNySDJoaF8zdw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** REVISED GUIDELINES ON APPOINTMENTS TO BOARD AND SENIOR MANAGEMENT POSITIONS OF LICENSED PENSION FUND OPERATORS  National Pension Commission
-
-### President Tinubu Reconstitution of NELMCO Board and Amended Structure - The State House, Abuja
-- **Source:** The State House, Abuja | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxQbkZlTk9pS25JWjdvQm1RUjZDSm1ja2ZHMGxHcEVGUGxaRV9NaDRfUm12NDlCeG1keFNsaFlidGdEYVBwMzZFTjRQMU8xMjBXY1A4U2xOeldsXzFMT1pHdFBzMzYyVGVKNFAyYlFaaWhjdjYyM0hhM3BCbVVRWHhIMTh4SEhicGRIS1ZNOC1SNFBabXNUSDFiZVBkSGQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** President Tinubu Reconstitution of NELMCO Board and Amended Structure  The State House, Abuja
-
-### President Tinubu Appoints New Board and Management of the Federal Roads Maintenance Agency (FERMA) - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxPM1Z3NlFTd0d3QlZTRlAycThJa0gtOWM5R3E2bTM1TV9pT2ZKakNqdHlSNlRGU1A5Rl9kYVNjaUd6cnVuLWU3Z3I4UERGYm1HNW11TEFYakhGOWZHS01USUUyQzVmUU9pWHZlNG9TRVE1bnJjSUxpMHdyazBqa3BzY1NlVDI4NzQ2X1N6X1Z6cVQ1SEExdVhsMElaSkxJd3Nzel9vY2FnVW8zaVNaaGI1TXF1RGRKbGI1eVE?oc=5)
-- **Classification:** Government (Appointment)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** President Tinubu Appoints New Board and Management of the Federal Roads Maintenance Agency (FERMA)  Federal Ministry of Information and National Orientation
-
-### White board wall mounted at Best Prices Online - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiY0FVX3lxTE11eUNDSnhKd3kyS3hYMWpicHNudkdtekxzMGR1alo2MHUtYUR6eWRSUWRYNUw1cWNmdWU4dzZZNWFxekZnT2ZCUzZfcVBDVi03cEV1Q1NRR3dOb0N1UmJxQ1htbw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** White board wall mounted at Best Prices Online  Jumia Nigeria
-
-### Corporate Social Responsibility - Nigerian Content Development & Monitoring Board
-- **Source:** Nigerian Content Development & Monitoring Board | [Original Link](https://news.google.com/rss/articles/CBMiPkFVX3lxTE1YSTFxNXd0NDktY0xjRUFnWUJrcHVBM0RDVVNIWmFPNWd1S0RVdjRjRUdNUkczeFV4bmpTcURR?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Corporate Social Responsibility  Nigerian Content Development & Monitoring Board
-
-### Medical Rehabilitation Therapists (Registration) Board of Nigeria - Enabling Law - Decree #38.1, September 30th, 1988 - Medical Rehabilitation Therapists (Registration) Board of Nigeria (MRTB)
-- **Source:** Medical Rehabilitation Therapists (Registration) Board of Nigeria (MRTB) | [Original Link](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1DUVU0ZnE4UXc5U1RLOTVPWWJ6blJTNlFiSXlvazJKTERwY1d5aFRvRnl6Y1ZBbnFsUXdFUEJ6ZlJ0NmFYdUszTVQxMFdzY25IQTJzS0VPUDg0a0g3enlF?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Medical Rehabilitation Therapists (Registration) Board of Nigeria - Enabling Law - Decree #38.1, September 30th, 1988  Medical Rehabilitation Therapists (Registration) Board of Nigeria (MRTB)
-
-### Gazer tte - Benue State Urban Development Board
-- **Source:** Benue State Urban Development Board | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxNVGp2Q3loNUxyREk2WTFhRmdDZC1qM0U1MjFhR1pVckVhNjdQc0psUElJQzFvWHQ3cXhUTV9kX0FiZzlyRWtMZjdKQ3IxenczMkwzRFcybnhoOXEyWml0VTE0OTFXU245ZDVwdG9VeUVac0VTWnJCM0xwMXV1Vk15bWRhQmJPbnY5Zk53WHE2RExna010MFRKcHhRYkQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Gazer tte  Benue State Urban Development Board
-
-### CG Series: The Board Chair - Eunoia Law
-- **Source:** Eunoia Law | [Original Link](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLaVZSaHhrU1JadjBFS0k4UzM3bEM4V0VjTGFqZFNHaWNQYnpRU1NpQklTNzNmd3ZhQkNhMnlNRks5OXNrY1NTYWREaVpOdkxPNjVwYzNXVEpWT0d1SThzRw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** CG Series: The Board Chair  Eunoia Law
-
-### President Buhari Appoints Board and Management of NNPC Limited - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipAFBVV95cUxOOXd4M2Rxc2NCTHdDb0JLMXJ4RGU3dEdVaVZla2MtMkNKX2ZaWWIwLTNpdndtdjlkekplb1hVSHBBQmF5cEo2ejl3eWZ0TTUxeS10QVZfR0hrVjg1bVdSUnltdGpCX2xaZU15c2I2Z2dRZlNXZk45bU5HbDUwSUpxaXZmUml0Z3NCX2RBd3dlSUFmNmV0N3ZmQ1RMQnExMlpIQzdPWA?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** President Buhari Appoints Board and Management of NNPC Limited  The Guardian Nigeria News
-
-### Generic Kitchen countertop utensil drying rack - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitAJBVV95cUxNNWx6d1VSeDJjSzdlZGkteFc4dGhxNF9NWFN5MnJNWTBpYkl0NklXMnBIVWpCSXNKWVFaTlYzN3h2T1Z5bUJhNFE2cEoxYkViWEFwX09ITVVSa1ZTMWZVWWJIdW9oWnBiV016ejcySng5dFFXbVFrTWFTclIxUEZxZVJ6QzdDcFFMd3RvejduNktDd01SekNFMGZyeHhSZEdfMU5NNXJIdVJpQk5rNkhKWVBsS2FNRUtzWWdPNUpNd0d3dVVwYjFmV2F2VGdjdTlBWXFrZG1ub1ZfWEpSTFc0el9aa1BDQTZyb3NYT1Vab1FIX1cwYnV4Yzg1Y2Zid3NTdjA1N1M5TkNOSzY0Q0kySG9NYloxcVJQZFp3U2VTWlY4ZEJDcDZIcDFwY0o4Z09rTmY3UA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 27/100 (Low)
-- **Brief summary:** Generic Kitchen countertop utensil drying rack  Jumia Nigeria
-
-### REVISED GUIDELINE ON CORPORATE GOVERNANCE FOR LICENSED PENSION FUND OPERATORS SEPTEMBER 2025 - National Pension Commission
-- **Source:** National Pension Commission | [Original Link](https://news.google.com/rss/articles/CBMixAFBVV95cUxQQ1h1MVdwTTdSdVp6UUJNX1hpTGEwRVpXcndPd2w3ZUZFakFleUh0NHpkZDR0RU9nTmY4MkcyWXl0bFU5dDQyQzhVMXI3TGNLSDVnRFZNdnNkeEw2UDFrRFoxM0N3Nk1vQXI1TEFDdmN5ZXJtMEVTZFljSWtVMy15ajU0dkFRT0RWcmZvX1BILWlRaXBwX2FmLWNsWjRia0FCN1FEdzM4bGVqMUZuUHN2aHBmaGtSS2EtTXhyQnczald0c1lS?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** REVISED GUIDELINE ON CORPORATE GOVERNANCE FOR LICENSED PENSION FUND OPERATORS SEPTEMBER 2025  National Pension Commission
-
-### President Tinubu Amends Niger Delta Development Commission Board and Management Nomination List - The State House, Abuja
-- **Source:** The State House, Abuja | [Original Link](https://news.google.com/rss/articles/CBMivwFBVV95cUxOTFY4cE5IcWFDVEU2NmMwMllDcEtIZzV3Z0dkd0FkNC1kMnZZcFhzNTNCZzFsRldWZExIdWpxMnVjdUpMcWpJQ0NVeVBnRHg0RXpvR2liVl9GX01ScmZEUTBfeHY4SWx2dEM4UzFMc3JOOFdxdVZFN1lyRy1pVlVOVU1kVUJZb3AxaVAzbi1BaWpwcW5qZlc4OXJkbHYwQ2Z2REZqeEluTjJUQXJBVjlORDMwaEdHQ0R5c19nX2FhOA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** President Tinubu Amends Niger Delta Development Commission Board and Management Nomination List  The State House, Abuja
-
-### Ekiti State Education Trust Fund Law - Ekiti State Government
-- **Source:** Ekiti State Government | [Original Link](https://news.google.com/rss/articles/CBMib0FVX3lxTE5sM0dlLWl3dWpYeUZrYUVVREVaQURMSkpjRUxrdnlGamx4b3FXaTRiMUlhSjRuM3k5UXBJTnZiYXJ3bkVMUVAwcjBZT1duNm5NYWhVQ0Y5bk5WN0NHU0lWa1QtNXg1YXZ5N01BWmxNQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Ekiti State Education Trust Fund Law  Ekiti State Government
-
-### CEO and thers visit to the Government - Kwara State Government
-- **Source:** Kwara State Government | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxQWVk0RkZ0WWIxaEpDSVJUMHFYbzhZd3BhZV9keHdlQzlXQ29HR2dCSGxGdU1QZG1McjVtQ1d1WWFEbFVNQy1IejVicG9DcDA3UDl4bExxaWRneGJlYXVfbzUwY2EzRkpWdmVzemdzSjFIUWRMWVN0dVAzaEhPdU5jc3dHcWJ0SmZnenc1Sg?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 40/100 (Low)
-- **Brief summary:** CEO and thers visit to the Government  Kwara State Government
-
-### Tinubu appoints new NNPC board, management - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxPX1FjVC05V3RhSFd2dFlQcGVkdkpaREdCdmM1ZFYtZGhqRUhtZTBTb3hkNUFSc3c2ZGR3RjVIUEM2NnkwTWwzQ2psZWs3VG1Wb3pkR0VqZWhtQjhKNTBfQWJyc1RHcERoTkFpQ0VGZnNGcmRZdWotVmlucEVkWmlvQUdFZ0FpdUNVb1dzN0VqWWVOQXRxZU1hd3VtMlM4UmRm?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Tinubu appoints new NNPC board, management  Premium Times Nigeria
-
-### TOP 15 COURSES THAT CEOS TAKE - FORDAX
-- **Source:** FORDAX | [Original Link](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9Ud2t0Z3dIbmVoblAyeThVNjFzNTRoNjFuT2Q5QWNTVnRwUzAxRjMtaF9GR0JYMW9Jb3ZBbjZOZDg4SHg4ZmIwSTk5bGo4cmVQOVRIWmFBZXphY1hzUHl0dWJR?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** TOP 15 COURSES THAT CEOS TAKE  FORDAX
-
-### MEDICAL REHABILITATION THERAPISTS (REGISTRATION, ETC.) ACT - Medical Rehabilitation Therapists (Registration) Board of Nigeria (MRTB)
-- **Source:** Medical Rehabilitation Therapists (Registration) Board of Nigeria (MRTB) | [Original Link](https://news.google.com/rss/articles/CBMiggFBVV95cUxOalN1NEdiRldVRXVhLUF4RnFoNkdIQ3NKUUlqUzFGRUVneDhEZ0prQVBiLURES0FGZ01XdXVqSHdYdE11SVNrWHJGNlR2OHpEMjZGeFZIVUJZWk5VdFAyazVpUUpMUnBKRG94REhDc2ZBUU5DX2dRQ1dELW1IV2doWFFn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** MEDICAL REHABILITATION THERAPISTS (REGISTRATION, ETC.) ACT  Medical Rehabilitation Therapists (Registration) Board of Nigeria (MRTB)
-
-### Mr. Bankole Akeem Adewale -VS- Oyo State Universal Basic Education Board & ORS - nicnadr.gov.ng
-- **Source:** nicnadr.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMia0FVX3lxTFBVUjdPT2VMTzhORjdKWkhVNWdWc1dkbl9KbHh4cXNhdUxDbmR0LUxCTGdaS1F6aThDc0Y1ekhlQ1drT0lwNTJxbFBVVGV2b2NUNHVEMVFQX0VUN3hmWHJTSWFkb2pSeXlhQTJZ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Mr. Bankole Akeem Adewale -VS- Oyo State Universal Basic Education Board & ORS  nicnadr.gov.ng
-
-### Digabi Cutting Play Food Toys For Kids, Pretend Play - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1wJBVV95cUxQTUVrdkdlM0VjY0M0dFRrUGs2SEt4cjdvN2hDdlo2RlhqNHlyX0NpQmRDZmxOVVdCbWtMRmRYTDg1UDdVY1U3YnBFakdXU05BQ19UNDIteXdhX1VlNGNrVjh4V2oxMzlacmlSRDFBbnZ6eEFsYUZtSnRLZ1M1MU5yNjdpR1pGeFFoS0NNUUFnVGJQeERmV0tXb0JaT3o5ZlRCLXpjYU1NSVpQdmpUVWExWHBMakZsemtRc1pDQU1sVGg3a3d0TlJrYUltVVF4R2p6UmhhdTFEVS1Gb012cTVFNGdUNXNmR0EzeVdGbDdlbG10M1lJczlkSXhwcjZNLVRLSXJwQzBZNzZuU01INDhKbnQwS0huSm9qRUFWNVpMNnNwajVEcnMtLXA5b0ZTQ201U0gzVUpBTlc5MzFpMUQ4ZzFzOTBuSGN3OU8yUHE2dk1kc0l6M2tn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Digabi Cutting Play Food Toys For Kids, Pretend Play  Jumia Nigeria
-
-### NICN - JUDGMENT - nicnadr.gov.ng
-- **Source:** nicnadr.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVHdIdTNWUG1qRXpTRk9HWWJxSWoyQ19FRWh3WkhxSFU0R1R4dXMtdHZBaC1rM0cyWF9ldkYzaGVjUnh6YkpzNTF3blNubVdxSm1HMzQ3QWpKb2FGbW9Fc3NheVlxZG5xUUV1UmRGd1FyNlU1cTQwRmdoQVJ5NlFUTHloNVViaC1CN0ZPZFV6TldXd015dklvV2ZPbVptakozT0xMaHNkZGNaNlBTNXp0TDI3LWpsZkFKOUZTNXdiZi1jU1ExcGxJMS11SE45TU80RmlORFV6NGpPbHpabS1jbDA4WFFVQjQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** NICN - JUDGMENT  nicnadr.gov.ng
-
-### Generic Large Pastry Bamboo Chopping/ Kneading Board & - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitgFBVV95cUxNNXo4czlsRnliLWFLa2M2S2pJSHJNbGJhZzZuNnB5ei1qOVZJT0cwcDQ1cGVDVERaWU5UZDhjYXg1R0ROYnZ5NWRJajlfRGZocGZzUmNmd0dydEFia0ZweEdwRDluNG5POEFSQTQ0MzVFS3hWOUJheGtZQ2tEVVpqVHZiT2pSYXlFc2NjaHROSTJUV05hbmU2NWZJUjhjclktRmF4Vmx2Z1M2VF90MGtKR1ItUGNpUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Generic Large Pastry Bamboo Chopping/ Kneading Board &  Jumia Nigeria
-
-### GOVERNOR MBAH APPROVES BOARD AND POLITICAL APPOINTMENTS - dailynewsngr.com.ng
-- **Source:** dailynewsngr.com.ng | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxQYnE2UXNEYmR5bVNWR0RucHpQZDRQRFhRM2h4N3pDTnVjSzloRFh6QTFrOUljSFNkVUhoUGZzY2ptZmF5bWtPSXU3QjViQkVxdnUxcUtSbUNnb3d3RTdxdmpucUI1TDhza3RSb0dFSkl2bExPSTBzNDRTaFI2YjIzc1ZOT25kN2FDdnNfRmVfckRaVVdR?oc=5)
-- **Classification:** Government (Appointment)
-- **Risk Score:** 55/100 (Low)
-- **Brief summary:** GOVERNOR MBAH APPROVES BOARD AND POLITICAL APPOINTMENTS  dailynewsngr.com.ng
-
-### GUIDELINES FOR APPOINTMENT TO BOARD AND TOP MANAGEMENT POSITIONS OF PFAS AND PFCS - National Pension Commission
-- **Source:** National Pension Commission | [Original Link](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVWE2amZWYmFCU1B1NFdGRHZHNzBLY09ZVkdKbGhHZElwR1RIR3h6WlJBbF91WXNXU3dXSTlHT1JacTh3SWNUNzZ3ZnNpZW96bjIxU3NEU290RFNMVUlpbW43WnhMYzF0UjUwcXRHT1BzS0oyVVRsVm41M0NwUHRHeEtvVzhJVWJiRWpITkYzczFvenRGanFwOHVfN0lydzJQNHVPNnJYT0d3Ynk1MXdkVHJxcWwzVXR2Vy1MRDhic2FyQnVTNXgwM1FFQ19ERWFnVC1Cem1RS3g1UUVlWTZv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** GUIDELINES FOR APPOINTMENT TO BOARD AND TOP MANAGEMENT POSITIONS OF PFAS AND PFCS  National Pension Commission
-
-### CIRCULAR ON CORPORATE GOVERNANCE FOR PENSION FUND OPERATORS - National Pension Commission
-- **Source:** National Pension Commission | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxOZktPcF9LRkFBTXloWTdQRnF6R0V0NkhBRTRhSHNyUTU1UUFGbU9pVlVxNGVWSVlMbFFHY0t0c0JlclhVa3I1V2xvWm9paU1uUjB6THl3Nm05bGpVWmNaUF9Od2xQQjAwVGpJV3otRFJVN3lOX3QwLWxxdnVWTEs1N0V4LUpuWEkyWVRvR3BBa1otcGpxbHlabDJIUzdFY1NnenRIUlg3NV9YVjh2NDlRNw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** CIRCULAR ON CORPORATE GOVERNANCE FOR PENSION FUND OPERATORS  National Pension Commission
-
-### Generic 8 in 1 Family Fun Board Games Set – Chess, Ludo - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi5wFBVV95cUxPT0dDM1MtVzdQdXBZWVBrYXZJYUFSS3JtMGs1anZSYjZKLVM4QjFUenJJTldWb1VxcXA5T2tod0doM3VONnZHaGdkeTJTZV95Wm9KNldsYVNKTUtjX0lqa2cxRVhxbW85ZmZBY05SVVp0U0pWbnJQd0ducEZ3SE8wVTlrYmtNN3NpZWFyX2xtckpfZUdOc2hxOTdrZHZLWkc3UEpOckt1S2hROFU0c0NUY1NkYVFJZXdDeGM5LWRYOWZhZTI2UnNuV2k0dElJZFNJbXpBQkhqMk5hbXF2SXRmNXgzLW1VT00?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Generic 8 in 1 Family Fun Board Games Set – Chess, Ludo  Jumia Nigeria
-
-### 2-Day Board and Management Retreat held in Calabar - Independent Corrupt Practices and Other Related Offences Commission
-- **Source:** Independent Corrupt Practices and Other Related Offences Commission | [Original Link](https://news.google.com/rss/articles/CBMiigFBVV95cUxOQVp4NGgwdy05Rk1JRWdfYzYtNXZodG9LekhPUWhGdEVuekpldmdnanRoLWFXTVR4aHJKalViUVljNjNRUjBzdUt2c1hpeEpqeXNVNGJmWTZfVUI5aFhMV0dQdVR6MXdjYi1TOUZNTFlZc01BQ21mMlVyZk9CbXpiRktTMzREMGNadXc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** 2-Day Board and Management Retreat held in Calabar  Independent Corrupt Practices and Other Related Offences Commission
-
-### NASS Journal-National HB 40-December 19, 2023 - ir.nilds.gov.ng
-- **Source:** ir.nilds.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMipANBVV95cUxPdHhTTV9YME5QVWVVZi1uNi0tc0xBQnE0Z2xaOXBXdFplVzBPSlBYZUZ6Rk11REdYYkxJdURpbjBfaS1aaE5SUUxmelJJRDFZZmtmUDVHdUpBb29wWlZCNGl4dVkxdW9PTGdPcktZb1BrMEJWMnpuYm5DVm1GVlNVM2dCVTEyNnUzbW5yZDdCYVlOMWx0LWhmTjFFS1AzNXhGSEZIZXBTcjk0akoySjRmR3BPYlE4bkdCWWpuSFZvMjJlc29XV3JwX3hHcTNBRjIwSlU3VzBaS01hb1Iyc041OHhwVk5Tem05RmNqdm9mOHBsOTVXbnYtdjVfU3pxVkwwNDRfUzVyRWZicUF6YXZBTkY1aEU3RGo0OV9LWFR0c2QxWjdBYnl2VlBaM1RqV1d4QlpQNk1XLWRlcFBxclhDeERkM2pnaWQwamp4d2tvaDJsN0RmeFVCN2lkSndEaHQzZldKN0xHOW5EOHU5V3hQMHhMVUJLYlJlb084dFQ3NHhNSndQY3dzQVZNNGhSTm1TbUxwVzhYN1hXWm5nN1dYckFoS2o?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** NASS Journal-National HB 40-December 19, 2023  ir.nilds.gov.ng
-
-### What if employees recruited the CEO, and not the other way round? - Great Place to Work
-- **Source:** Great Place to Work | [Original Link](https://news.google.com/rss/articles/CBMie0FVX3lxTFAtMDBjNGJ1YkZrLWUwY0E1ZTU0Q3hLMVFGS3lIU1hWVFNHU3YwTjJpcFhDZndOQ0s0R2xYYmFJRG84QXZuV1RwQVZkVm9RMi1La2NVZm5TZVBUM25qamZaRktraWtNSVFGSFJDR0EyN2Y3ME5EenhhVmtwMA?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** What if employees recruited the CEO, and not the other way round? Great Place to Work
-
-### Untitled - Niger State Open Government Partnership
-- **Source:** Niger State Open Government Partnership | [Original Link](https://news.google.com/rss/articles/CBMitgFBVV95cUxOeVhCdGpqdEo2RzhVc095OXp6MV81U09rdHgwMEJ1bldFMFdEV2hNd003WmlmNXNscVU0MWh3Vzl1TU1VcF9yRUl5eVlETW1FWTNiUUZFTjh6aDhCcllVWjA0a2lKOExLWjlxUXd1ZTkxd2VUX1g2c0FWMnBjcVAtRUJZOXJZVFcyclJ5b0QyaWd4dTV3ei1EUm9qOGpjdXk4ejkwQ2R5VmlVczJEYTRxRGEtMnFYdw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Untitled  Niger State Open Government Partnership
-
-### Generic White Board 2FT X 2FT With 1 Pack Of 12 White Board - Jumia Nigeria
-- **Source:** Jumia Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxNQlVhMGZ5REVkM1BqOHpMZmRtVG10aXd2ZFNvZGtJYWJrWks0WXplOVlxR2gxQWNTSzV3RURjcnY1b1h3TGd3UEpESkdzdmxBVG9xVlA1WHNSV1kxWkV2LUtPcE9UTU9OdU1Tc3pza0hYWG1YWG1wNnZMSmx1cTBOTERmNEFYREVvMU9ldW5FSEpLU21NMmZjWjZBSDMyLW96ZXgtTzV2REs2bEpaeDNBUm41amdnWTRuYnc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** Generic White Board 2FT X 2FT With 1 Pack Of 12 White Board  Jumia Nigeria
-
-### Untitled - Energy Commission of Nigeria
-- **Source:** Energy Commission of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ0d4S3JpM3JlUkFrbDZCejAzRXBobVRudFJhZnd5c3U2T0xKYm1BTnVCbkxnMUZ2MFlMOU4zTWktM1dKU2psdXEtMmp0UF9UU1U2UllZYXpKejhKbVFMZmpham5QVTRWRUNaczFUVmEzQW8tR1VuSkZzTnJsUExKUA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Untitled  Energy Commission of Nigeria
-
-### BOARD CHARACTERISTICS AND CORPORATE SOCIAL RESPONSIBILITY OF LISTED OIL AND GAS COMPANIES IN NIGERIA - Gusau Journal of Accounting and Finance
-- **Source:** Gusau Journal of Accounting and Finance | [Original Link](https://news.google.com/rss/articles/CBMib0FVX3lxTE1EbDFkMEJxSjZfTklFSThOY3VMZ0VtUWtnMXItejcxdUpISEJscXA1VEtwWmllNGdOb3RsWlFjNDZfQWtHQ2RySnlsV1g3QkN3cVNQY1ZNeGVjeTlwSGtzU0lGZV9OcXI3bDFXd3A2dw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** BOARD CHARACTERISTICS AND CORPORATE SOCIAL RESPONSIBILITY OF LISTED OIL AND GAS COMPANIES IN NIGERIA  Gusau Journal of Accounting and Finance
-
-### Steam & Go - All-in-One Garment Steamer and Iron, Nigeria - Ubuy Nigeria
-- **Source:** Ubuy Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQci1EYTFVekRfcFg2QTZJaWNNM3hFR0VWMjFXdVdBWHhNMHVjOEVGdG9FNldqNlZ1RFEtUFN1YVBsclExeERpaXlJV2s3VWlMdk5GMndQNWpfa3Y1SWNXcmRGT1p2cE5FLVRoVkJkQWZQUzFMSnVlbE9GcU1Cb0lZMmtQRlYwUmVKQ3U5RG9mcGRqUVFaMFFIZEhKVFAzMVdCYXlwSFlwcS1hSWNJb0NWamYzbDk1T2JidDRReDJlMkJmcHEySHlnRHEwLVRxTjd1dVVoZXM2MA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Steam & Go - All-in-One Garment Steamer and Iron, Nigeria  Ubuy Nigeria
-
-### Nigeria: President Tinubu Amends Niger Delta Development Commission Board and Management Nomination List - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWDQ3SkFZLXBkdTczQ01kMF9sUTFvcmJwNWwtXzdCTEFaVl9ZTVZpYWpGNzFyekJwVHBjU0N2bGFRTUt1UVN6MGdvVF9pNF9aMC1pOE8wQ0I4RERFc1Q3UmMxdmNvM2RCRFhqck4tUGxkS3MzWkQwSzZESWN3M09NOG1LTFk3ZXN5LVBhRU5RSXZVak91R3BRNmFic09vU1BYcHphSHZoWEN0UHFrM2N3d2VZUGpOX0d4S2JEOXZ5ZnA3QTJkYTg1OF9oRGJyNW4yMjBCUVRiWU5zTms?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** Nigeria: President Tinubu Amends Niger Delta Development Commission Board and Management Nomination List  The Guardian Nigeria News
-
-### NATIONAL INFORMATION TECHNOLOGY DEVELOPMENT AGENCY ACT 2007 - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxPSGxrelV3Xy1VTXNtSFhuRVBsVTN1bnpiSm1zR2NRTEI2b0hWYUt1a2RVdDJEN1JtSXRKXzM3eEdqZFhRZElTaXZiUWt1aHdxNWUwX0hLVkNzbDhfd19YNVlyTzVoeld3Zk9Dd2JTbm40QW5JZURhY0xORzNHUXBPTE1OX1FTaUE?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 55/100 (Low)
-- **Brief summary:** NATIONAL INFORMATION TECHNOLOGY DEVELOPMENT AGENCY ACT 2007  National Information Technology Development Agency (NITDA)
-
-### Tinubu constitutes new board for NDDC - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxOUVB6NWZuWEhFY0I3emJ5cjg4Z3hVdmFvVC10dkozcWlZQm9qZXpkeEVnUU5hSFRoajZXWm1HdEVSTFIycjZpLUc5eFVybUFzR1hhTWl5RXVCWC0xVy1URFdjc3JFaXM2X0c0bmVVUlhENm9JdGxDdDQ2Q1I3eGQ4ZnN5OW1KM0owNFJXSENQNThTdjl6R3lUcTNvSGNxME9EWjBNOEdhUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Tinubu constitutes new board for NDDC  Premium Times Nigeria
-
-### DRAFT CODE OF CORPORATE GOVERNANCE FOR DIRECTORS OF MARKET PARTICIPANTS IN THE NIGERIAN ELECTRICITY SUPPLY INDUSTRY 1. INTRODU - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVTl0a0pFNE9TWEVvMXI4ZU9hR24zSi1EMVpoVXRTQ19WMmdva1FWdzQ1VXZ2OUJWYkZ4emFkeFJBeVhFaWlSQXFCN2JRUHNtWEVLSHdyWkpzTE9abjFFa0xXVUJrVjMxWkFWeFdFM0VHTGthTDRJQXhWWmFCWER6NFIxbnFhSTItOUtHODBNdEw2OWh5S3ItQ1phV0pLZTcyRjNFdUR5dmcxeVU1eHFDaVZiTUYyU01RV3BCWV9MWVNxb1hhNDMtVw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** DRAFT CODE OF CORPORATE GOVERNANCE FOR DIRECTORS OF MARKET PARTICIPANTS IN THE NIGERIAN ELECTRICITY SUPPLY INDUSTRY 1. INTRODU  Nigerian Electricity Regulatory Commission (NERC)
-
-### BC: Man of The Moment – Patricia’s CEO and Founder, Hanu Fejiro Agbodjie - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxNc0JEdkMtMjhzbHYyaVpFNnpRaHFOUUFXU05IUjhwMnNydVR1Qms2ZU1PQ0thN3FmUDFZbi1VajNTNDZWVHBXTVpKcHBPbmo3SV9xVFIwQVdnaFlqV2FmWkpFVjI3VnJiZGRlY3pWNk44MVZud004VU5PSUdMXy1xdEVIY3dMRkhqclpGZHp5dWJydw?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** BC: Man of The Moment – Patricia’s CEO and Founder, Hanu Fejiro Agbodjie  Punch Newspapers
-
-### Nigerian Shippers’ Council CEO And FRSC Lagos Commander Advocate For Stronger Collaboration To Enhance Road Safety - Nigerian Shippers Council
-- **Source:** Nigerian Shippers Council | [Original Link](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPaXV4U0RWVEdYSWh1MzJuWjU1OFdkSTZPTFZKd2N3aWhNWFZRWTNFemtUN2tleWJIdmNBMDE4TXZ5TXdTTGpGemFObnFiSGZPdU1vNExJakpMNWgzazVLTERyMG5ZTzI0aUhXY2N4aE9vSUMyU2dYa3FzRzlva1NBYnNWYnZUVHc0REVaV3JFcG5BWTgzd09iNkQ2SWkxMGx1bkdoY1J4Q01LUldCUExLVUFvajhaZVBpU0lxd1hTR1hrYmhxcFlSNnhnenhodG1uQ3NoVmVoWDhmSDFwa2c?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 40/100 (Low)
-- **Brief summary:** Nigerian Shippers’ Council CEO And FRSC Lagos Commander Advocate For Stronger Collaboration To Enhance Road Safety  Nigerian Shippers Council
-
-### SEC Corporate Governance Guideline and Revised FORM 01 - Securities and Exchange Commission, Nigeria
-- **Source:** Securities and Exchange Commission, Nigeria | [Original Link](https://news.google.com/rss/articles/CBMisgFBVV95cUxQdG5OamFPdVZRakhlNDNCM2E4UXl4MTUxZUQxdWktYWljelZLVGI4VG9OajduWUtyRWlGUkdFLTZJSEZlUmtZRFFySTRlN05uS0xkaUFuc19iaFhTeU95RVl2bk9UOXBweXVDeXpJTHFIUzREamZDX2N1UkRkRUp0MS12eGpUbnRyTG5CTlVXSWhHY3k1ajNSRnM2U0VITDRhRzV4YXlyX3QzR1hHZzVXSzNB?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** SEC Corporate Governance Guideline and Revised FORM 01  Securities and Exchange Commission, Nigeria
-
-### FederalRepublicofNigeria OfficialGazette - media.premiumtimesng.com
-- **Source:** media.premiumtimesng.com | [Original Link](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNT1ZFR3cySE95MDZoejZQLXJoZTM3aW40UFRkSkMxcnRndXdtSnh1X3FYeWZuV19VZ1NxUklXWE03SG9iSVVLODhIc1l0NGU1YlBqTV9HeG9JbVpRWThyaF9GQ2lkWk5iQ1IwekJwNXBnTngtcEZqOGtDd3B3dl8wc1hCOFVZV3dqSGJCMUxNbXdYMUxVWklBcjZQdURjQXluNGpnWTlZbUdyS2hjTXpXRmQ5ZEh1NXpFcC1jb0dDMkNKMzFxcW1SQnQzTGdhX08temUxUw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** FederalRepublicofNigeria OfficialGazette  media.premiumtimesng.com
-
-### A BILL FOR AN ACT TO ESTABLISH THE NIGERIAN BUILDING AND ROAD RESEARCH INSTITUTE (NBRRI) TO BUILD CAPACITY, CONDUCT INTEGRATED - National Assembly of Nigeria
-- **Source:** National Assembly of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9MaDFISG5NRUFRSGsxZmxycHpIc3d5WU5pb19TR0VUSHVGZWpjSkxoeGV0YVkzRUNLT1U2UWVYX2hkVU53Nl9FXzFrUnBmV0l0TG5HTG03N3FhcnNrblRnQXNR?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** A BILL FOR AN ACT TO ESTABLISH THE NIGERIAN BUILDING AND ROAD RESEARCH INSTITUTE (NBRRI) TO BUILD CAPACITY, CONDUCT INTEGRATED  National Assembly of Nigeria
-
-### ‘Frequent changes in NDDC board responsible for challenges in project execution, delivery’ - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxNeklEODNUZk52TUJubmVraWlSYVZuTEN4cG91dzN1NmlRZktPeU1sUWF1NW5iMjhWbV9FSkFRR0tSa2xqM3JiX3k0cXpldFVuYk9jVUVtSFZlVUlLd2o0ZHJqRXpxaW5Ub1VjR3pzT3RDY25ZcWFrWjJsTnlzYjlDOWZiQVpHdXVPSXd4R2IxUG80amxSVnNYM2VpbkdWdFdGbHNweFVrV0Y1THZUemxHbWg0aw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** ‘Frequent changes in NDDC board responsible for challenges in project execution, delivery’  The Guardian Nigeria News
-
-### THE NIGERIAN CODE OF CORPORATE GOVERNANCE, 2018 PRINCIPLE 7 – Independent Non-Executive Directors - DCSL Corporate Services Limited
-- **Source:** DCSL Corporate Services Limited | [Original Link](https://news.google.com/rss/articles/CBMivAFBVV95cUxNcGl6RVFvX1ExR1pTQkpJellkSEQ5cGl2eF94ZmktUl9MNHlhblAxcmpnSnBuaGh0WWl5NmRMeGp2V0NNYXBlQ2tuMno5XzJad1B4QWdpS2s3QzFaamtRMVFqSEEySEZ1LUNUZURKakFQczJzZHVPaFN4MWp5TXdEZlZXQWZLNnlaYnFEM3NYMkp4R2s3ZWg5Tk8xcnZsZnNiMWJlWUJtT1paQWJRYTdqcVhLLWhaTE4tT2NMYw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** THE NIGERIAN CODE OF CORPORATE GOVERNANCE, 2018 PRINCIPLE 7 – Independent Non-Executive Directors  DCSL Corporate Services Limited
-
-### NIGER STATE URBAN DEVELOPMENT BOARD BUILDING REGULATIONS 2023 - Niger State Open Government Partnership
-- **Source:** Niger State Open Government Partnership | [Original Link](https://news.google.com/rss/articles/CBMitgFBVV95cUxPajQwdU94TE5GZ2JrMmZmYVJQc2lqX09xZkNaa184RkJRMThnS0RlSzJCcXozS216Sm04RHpqX2s0ZEFBTXktUmNNcnR0X1NtUkxHQ2ZuNXZuQ1JPMzQ2YTQtd01lYU1rVVNWSmFoNExXYnZ2ajRHUzc2UGk1TXV1SnZqZ1FfRl90WG11WVcwOGZIdmFSUDkwOGZZdW9VTTFkdmlOUjFMeWtHaG5sckoxTm85N1hXZw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGER STATE URBAN DEVELOPMENT BOARD BUILDING REGULATIONS 2023  Niger State Open Government Partnership
-
-### 13 x 18 cm. (2) - Adamawa State Government
-- **Source:** Adamawa State Government | [Original Link](https://news.google.com/rss/articles/CBMifEFVX3lxTE5vNmVvRnhlRG1tdEMwQWRwUk5xX3dXa3pJdGdjRkUya25hN1BOVzVKeDJwX0tLa0sza0ZiT2hVQXN4clNGVkVlb0tnazhHNDhSME5tUFh2TTViWGMwZzE0cU96Q0J3NmxST1RTU0lTbXM2X2VsTkY2U1Q4SEo?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** 13 x 18 cm. (2)  Adamawa State Government
-
-### How we kept Zuckerberg’s visit a secret — CcHUB CEO, Tijani - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMidkFVX3lxTFBWOFdpX19tSGR4Q3pMMWJia2d0UnQxNERnX01XdnNKa1FRVG1UbHJzM0dnam9zS1RrczNHSzJlZk9QekloQlFKYXBNcWNaZmJMdWtGRC03RGJRVkNsaldhbVNJQ2tlVGZlZWVSMXdVdDc0SmIwd0E?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 39/100 (Low)
-- **Brief summary:** How we kept Zuckerberg’s visit a secret — CcHUB CEO, Tijani  Punch Newspapers
-
-### Jigawa Due Process & Project Monitoring Bureau:: - dueprocess.jg.gov.ng
-- **Source:** dueprocess.jg.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMiXEFVX3lxTE9CRkRJbmxNRWdQV0R6Yi1iWlhmYThvdFAxeTZlLUstMGJkczBmRVJMRF9ZS2U4akdFYU0xd3dGQmNKRkZHMUloblpZcm9ieFNQUFZRS1dSVDRaZjVF?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Jigawa Due Process & Project Monitoring Bureau::  dueprocess.jg.gov.ng
-
-### Collapsible Chopping Board and Strainer Sieve - Nenisa BizWorld
-- **Source:** Nenisa BizWorld | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxOTUNxc3RMOFg5V1BpU2E1NGxWZ3BiS2IwcG16Qm5FS0F2ZXhWR2hRZDdFYjVBV0gzNnZTNDBGRHR3N2lveUVkbUVhTVRCUXdfdmRRM2pLc29sV1NPeEtOOGppUGprdWFmc1U3MWhQQ2ZYb0h5OFBiZkFPd0h6djBYYjFtSWRWMC1jWGZjdQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 29/100 (Low)
-- **Brief summary:** Collapsible Chopping Board and Strainer Sieve  Nenisa BizWorld
-
-### Transfer Board and Slide Board for transferring, Nigeria | Ubuy - Ubuy Nigeria
-- **Source:** Ubuy Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivgFBVV95cUxPMzNMR25FR1NuUWhmYTVkb3pPcGFQNmNSaU4tUm1HYVMtcmQyTjMySWU2UFpVWmxuX015SGN2alJkWi05c2VQRzgxUVh5MmZjaGJ1OUozbUxUVzVCT0U0dThYejRsWlI3UXZSVXI5a1hibjlQZWFCVDJlTUcxc2NET2VzMHNSVWdFTTR3VjZzUUlscVdtZmpxOEQ2WnpKRjVKaE5mVVZlTlJqWjFvbXBpem1wSHVuQlZkSWhfLTFn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Transfer Board and Slide Board for transferring, Nigeria | Ubuy  Ubuy Nigeria
-
-### CFO as a service. - Numero Business Solutions
-- **Source:** Numero Business Solutions | [Original Link](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1iNlJlUEZzamZsTk40QWUtcjNFMEhLMmdVb0xyYTJIYkcwaG1GOUVnT29wOXBvT25LSGpWZk5qQW1tLXZ3VVJreDB3ejhHb0tmeGIxekJGaExxVXJy?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** CFO as a service. Numero Business Solutions
-
-### LAWS OF THE FEDERATION OF NIGERIA - ferma.gov.ng
-- **Source:** ferma.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMibkFVX3lxTE9DQVdsMDY1WDFnd1BlazlLODVYaWVCTG5VV1hrcFhrTUIxd2RCRkU3Q1B6SzFpcHRvaFo1ZkhpX1lnam0tczJBNVNBVzlYUlU4NWxTR3NWOEItNGM3ajRpM1d1YzhxMlczbTJDTjVR?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** LAWS OF THE FEDERATION OF NIGERIA  ferma.gov.ng
-
-### SMART Board Interactive Whiteboard M700 - touchboard.com.ng
-- **Source:** touchboard.com.ng | [Original Link](https://news.google.com/rss/articles/CBMif0FVX3lxTE95d1VIM2w5UF9mU3JyZlZGb1dISmlpd21GdmVNb0pyeDhMbGJGWlZVenRlZlRES3lnNDl3UmNEOUQ4QVY0QzlnbmxlSElfcXVzdGNhbDFjZjlrclVDNHprWk9Rc29DSG9WSnJFZWh2VU5fZnhDLU5iVzdUWmMyLUk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** SMART Board Interactive Whiteboard M700  touchboard.com.ng
-
-### SERVICE CHARTER - NFVCB | National Film And Video Censors Board - National Film and Video Censors Board
-- **Source:** National Film and Video Censors Board | [Original Link](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPYUk3WEpBQ1VTWnE1OWlLclFHOEh4VW4zd09Hd3pjV2h2dEt2V0NxQ2NSSHpVVEE1QV90Wk9NTUtLOEtVZGJfeW5KaEdUVUNRY2dB?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** SERVICE CHARTER - NFVCB | National Film And Video Censors Board  National Film and Video Censors Board
-
-### HOW TO CONNECT AN INVERTER TO A DISTRIBUTION BOARD (THE RIGHT WAY) - mercurydirect.com.ng
-- **Source:** mercurydirect.com.ng | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxQa21FQU1mZmJ4bEVROVRNdXNVN05CLTdLMGdCaHZ4X0RFMzFTWXJCaDh5cDlibVVOOU1YZ05xeDdkY3RPS25menc0Z0ZVNjNhOVpGZjZSWkZTTk5NYjExSTNLSGtyam5xNkU2LVZ2TlFGRFVxc3FvYzZhd0tsWmpweTlpd3Q0eGM?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** HOW TO CONNECT AN INVERTER TO A DISTRIBUTION BOARD (THE RIGHT WAY)  mercurydirect.com.ng
-
-### Lost items from baggage after KLM flight - KLM NG
-- **Source:** KLM NG | [Original Link](https://news.google.com/rss/articles/CBMia0FVX3lxTE1xSFAzSzdyUVVZRkhOTkJSemxSQ2tHMTF0TTloeXVGcDBtZ09fQkoxeEtGUnE0QWtqSm5TbFRKcXNJdkRwcDhWVFJnNVpkM2EwdkZHY2FtYThHQm1mRVd1aTA4UmxqX2ZOYVY0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Lost items from baggage after KLM flight  KLM NG
-
-### Untitled - Imo State Government
-- **Source:** Imo State Government | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxNOVV0bkdNY1JVcHh0OGlIYlZCMlVXMWZLMUVHMS1IWEZWMm5CemFSdFVjd3NjRWRmczh6ZUR1cnVhd0tkTmFqRW0wbXVVd2pySUl6aElDR3ZhQ0VFemJiUXVsaXkzOWJQWllRWHF4VzVmTk9hOGRfaEhsTlFsejJ6bkZCektTcEotcWxrVWtfeFpvaVE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Untitled  Imo State Government
-
-### Board upholds Sanda as CEO despite EKEDC chair’s stance - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxNNmROc1cyMEF4TUxlbjVVSEVWbTJDbkkxYUMzcnpWemVTTmpqbUFZa0VGd1pvMGxVcTMwMjRibUVhZzhjTnYxVVZHakhsVWRTdDlNZHRlcTdCTHR5R3AzOGN2VHNCcUxkOWtrUnJJMk11Q1lLN0pYblBiVXNxbENReTFtbFJRWVU?oc=5)
-- **Classification:** Person (Other)
 - **Risk Score:** 43/100 (Low)
-- **Brief summary:** Board upholds Sanda as CEO despite EKEDC chair’s stance  The Guardian Nigeria News
+- **Brief summary:** PFIPC: Police arraign Adeyemi tomorrow as pressure mounts on Senate, ICPC  The Guardian Nigeria News
 
-### Jaiz Bank changes board, management - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMiZkFVX3lxTE82ci13b3cyRFZBMXRhRzRkQW55X2kxYzA3bExlTmNEWkYxMlJsenAxRUZSOGFzRnhGaWlqaDJYZ1NvbmNucG1TZmxvZF96MjFwZmNPMjdkUWFtX2NQVzRuNXJzTDlkUQ?oc=5)
+### AEW 2026: How Africa’s Oil Chiefs Could Reshape the Continent’s Energy Economy - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxPWG1FNktzRmFhZ3BScTd1aVM1blRod21ITm5mSlBnUVhYQm44SmRJNDhNRnBZbXRqb3EzdndpOGxCMEtXZF9IV3o4RTRfOUFxMEF5RmRycTh6N3pJak5hUk5VQmFuaHQ2WFc0bFdKS1NOcWREX2lrZjhQOG4tdUZXWTJWXzByS3pvbU45RGEwT2RNSWFtbkNNQWVyUUdGMXk1OUgzV0dB?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Jaiz Bank changes board, management  Punch Newspapers
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** AEW 2026: How Africa’s Oil Chiefs Could Reshape the Continent’s Energy Economy  The Guardian Nigeria News
 
-### StewMac Body Board and Guitar Repair Vise 11821 360 Nigeria - Ubuy Nigeria
-- **Source:** Ubuy Nigeria | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxQcmE2ckFMZGpsZndSLUF6U0VkVHBndnhTZGV6ZjRkdUgzZFM4OV9yaUZhOTY3eWl2dmtBYzdfaTNxRmdWcmlhNVJ3Rk9DZkZ5Q25xODBKUG5KMEdTWFVPS3pVa04wa1R3WlQ4Slh0YXNoeVVQdm16RWRGM21NMTNDYTJpUUpudWhJRTV5dg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** StewMac Body Board and Guitar Repair Vise 11821 360 Nigeria  Ubuy Nigeria
-
-### Industrial Court orders Benue Govt, Local Govt Pension Board to pay retiree Becky Iorember N9.9m gratuity, pension - nicnadr.gov.ng
-- **Source:** nicnadr.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMEktc0xQWE91c2JXTkxrUjMwZExHa0ZrbzVoOFpqejh6b0kteUNrdDY2T082R2pJZkdQa0tGUGkxRVJXeFMtenFfTV9zdUhPbDJtX2otdllrUS1ZS2ludmNxeEsxcDgtdzdPMkg0M0pfdVpyblhWZ19nWVA1RHlPdmRmSkwyVDJVdTl0dE5UcTluTTRTX0tNNHlEekFXOVRobDFhRlZPNjFTNHh1ejlqMXo3blRFcjQ3Yk9CaUFfZzVURU1pYkRhMktiS0tVT1NSQ2RMZkc0cEJfLXcxZUE?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 39/100 (Low)
-- **Brief summary:** Industrial Court orders Benue Govt, Local Govt Pension Board to pay retiree Becky Iorember N9.9m gratuity, pension  nicnadr.gov.ng
-
-### Nigeria Social Insurance Trust Fund Management Board -VS- Sonabel Medical Centre - nicnadr.gov.ng
-- **Source:** nicnadr.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMiakFVX3lxTE5pVTZQRWd4U2xHYUlTajJzeF80bFo4MlllZWl5Y1dma0d1UGdRNWFUbmQ1SHJHOEJ1NGplWUJyMHZKdFNwNHBvQ2FLbk9GcXYybHJlX3hmdDVJbnV2SnRjc3ZVdEdTZXJ2U0E?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Nigeria Social Insurance Trust Fund Management Board -VS- Sonabel Medical Centre  nicnadr.gov.ng
-
-### FBN Holdings appoints Seni Adetu, others as board members - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiigFBVV95cUxNckR0QjVJWk8xZTN4VktWVmxtMTdTZ2gteXFRY1lJVEtCOU1KblRsQkhyQXFqV0tlTUtRdW1EQXBTRW92TmRqMS1iRVhPRFRTZG10d182OTNFZFBEb1d2Mkk2bGx0X0s3bDkyR0tBQW5xeGg2Vkt6QlZXTmR4SkZCcFpaRmN1NVJudnc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** FBN Holdings appoints Seni Adetu, others as board members  The Guardian Nigeria News
-
-### CAP. F5 LAWS OF THE FEDERATION Nigeria 2004 - Nigeria Trade Information Portal
-- **Source:** Nigeria Trade Information Portal | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxOTnVZY0xydmpfUG1qc1dYcTBHNE5DMmI3TXR1eVhsemZsNkdPMXhBZXlKTHJwUUwyRkd6OUhyNGhDOHlEMkppRFBIRDBPWE14d1lFZWRKeDRzUk9tZXlSU3JoaDl3Q1pjbVJXNFJaVUFnSUh0MzVqYmdGR0RrVlBlNGF0blVNRkxXN29BWERCSUdsZTZk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** CAP. F5 LAWS OF THE FEDERATION Nigeria 2004  Nigeria Trade Information Portal
-
-### KEBBI STATE OF NIGERIA - Kebbi State Government
-- **Source:** Kebbi State Government | [Original Link](https://news.google.com/rss/articles/CBMicEFVX3lxTE4yMHVDYVpBZHhFaFpLR0k3ejF6V3ljTW9EZWV3VzF3R2RuSGxOaVQ2ZERnTTcwODVHQUJEbDI0cHRpMnBOR1lvdXpPa1pyMEtpTXk5cTdzbk9nZmlRdG45QmJ2YnZLMlZuMUJUWGV5LWM?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** KEBBI STATE OF NIGERIA  Kebbi State Government
-
-### Aiyedatiwa dissolves board, management of OSRC - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxQSjRjeFg1YW1Jd0VNeWw2LVowNzBmZ2pGYzE4b0lyUVplMF9zaVlid0N2YVBrVTV4akVkMW1uMF9NaFZPNGM4bmd4Ul8td1VnZnBXbHBPQUlWbFdWTDMzTFc5YjFQRjNUeERoRmZiM0NUeHNfT3o0d0I3QUxuREx4UE91bnVzUTFqT1ZNVlBheGNPcjAwR3lZN0JERmlPTzhiREt4LXV0VGZsZDRoZGc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Aiyedatiwa dissolves board, management of OSRC  Premium Times Nigeria
-
-### C:\ADEX\ADENIJI\ACT 2\Nigerian - NiMet
-- **Source:** NiMet | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxPVWIyVWhfUlBjd0tHQTd5NExFM2VSUE9nYk9XMHlPd0VBdTBfMDlFakFKZG1DYUc4azVDQ2xkcWdnRUFhR0JxSVVzNlh2TzVtTXJSNm9HQUZZN0tBZjNHZHp2YVljNXVIdEZnMXN2WVF5WDh4YlJSMVZaYXZsNGs5QkNyYnFqUDBVY1RwbzhfQ2FEUnVZSDE0X1Z1SkNaV2FhcEFF?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** C:\ADEX\ADENIJI\ACT 2\Nigerian  NiMet
-
-### Untitled - Nigerian Content Development & Monitoring Board
-- **Source:** Nigerian Content Development & Monitoring Board | [Original Link](https://news.google.com/rss/articles/CBMic0FVX3lxTE9OVC1laUtLbjJvVXhVWlVqNGpDUFFGLVI0VHc5Y19ObnZoVU5abzBTRFJfMVNBdHYxNFVyZzFPWDRPRXV2N0ZPbXNDR01kRVU0Z1JLSDBBQ0hUMkJkVlBfRWo1T1pjU1QxU0FYbjI5dk9ndm8?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Untitled  Nigerian Content Development & Monitoring Board
-
-### SSDC chairman demands transparency, accountability from board - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYXpIZHRVV3B1Tmt1V0F5QU5YSzNiVUE1Vnp6Z3p5ZEVMOUl3VHVKYkl1bG10a3pEVlQ2SWFLcnFVWFZqOE5OUUVGM0tpajRKQVBGV3lFYWNrc25VUWJEdk0wd0p2SmJiTXl2WXpjNUVSemMwNVJWVGhaUlR0SlVFcVFIUkdXUlZh?oc=5)
+### UBA Business Series enlists Abaga, Chowdeck CEO, Egunjobi to speaks on innovation, African startups - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4gFBVV95cUxNbER1akpvajBmX2c0ejZIekYyMm8ySVN5RE9nNWp4Vy01V09ZclVNbkxYNGhkNTBhUGJUcG5faVRVYWN0Q3ZPWmdiQlZIcTNnMjBlRmhnVURhanZFXzhFUFNCRVdrTnk4QmYtTFhqWmU4WVo0ellKY2tEaHV1UHprZHZjSXRBWDRZYnlDNk9GYnE4VUlYNFdsUmxMdUg0MkZoTXdFUTRDVG40LWx6MGJKQU53X0VpZWJjSlVhQksxVEpWNXVjcWFvTXFxa0hYWjF6YzVuWDVCVDVBZVhlb3ZVbmlR?oc=5)
 - **Classification:** Person (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** SSDC chairman demands transparency, accountability from board  Punch Newspapers
+- **Risk Score:** 45/100 (Low)
+- **Brief summary:** UBA Business Series enlists Abaga, Chowdeck CEO, Egunjobi to speaks on innovation, African startups  Premium Times Nigeria
 
-### Education - Health Records Officers Registration Board of Nigeria (HRORBN)
-- **Source:** Health Records Officers Registration Board of Nigeria (HRORBN) | [Original Link](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1fQUJPd1ZTNU5QaEVZYV8yaGRCOGVod0s1ejN0QkdCX1NFSW1yTzNNbEtfU1BNbUxPNVJzSmlZZlEybVltRVo1WmRJcndLV3BmZ1pCZw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Education  Health Records Officers Registration Board of Nigeria (HRORBN)
-
-### NIGERIA DATA PROTECTION REGULATION 2019 - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxNN0x2SFhRNlZGSzlrbGlybzlFNHlTY1cxNml0dHJ5ZjYxOUV5Nng5Y2xyQnVNdnhFMmM0dnFKSUF5UEJNLTVMMnN6dUx3S0ZQSlVKTXpua0Z1OE15TktkQi12VUlyRHFxa3ZiRFpMSHk0Uzg4X0x4c0F3TEhaOEVDTzh1bjlwNEQ5ZlpzM0xB?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** NIGERIA DATA PROTECTION REGULATION 2019  National Information Technology Development Agency (NITDA)
-
-### Procurement Officer- NASCP - career.nascp.gov.ng
-- **Source:** career.nascp.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMid0FVX3lxTE9NYnhQSmZkTFotM1E5YW1YN2lPQUVCWUpudEw1V0lEMnFITTdHUElfSHpSbXBiX0RDRUtzZjBwdnBEZUFqd1dsRlhHVHlqb2llTVlCMlRZRlJsWTl0TU15VjhvMzRhVVJFaUdOSkdFNWZYOEFkQmJZ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Procurement Officer- NASCP  career.nascp.gov.ng
-
-### Procurement and Supply Chain Management Training Course - Nobleprog Nigeria
-- **Source:** Nobleprog Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiWEFVX3lxTE43dXg4Q0NZZjYxNUZVU2h0TlJKSkFnRTRQTnlhai1qUERHNEhERFRFVUtNRGJwbU9wTGZDX0pNYlBqZ3RVbHQxRVc3SWktZmUtVTl1NEhrSmE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Procurement and Supply Chain Management Training Course  Nobleprog Nigeria
-
-### Regulation and Supervision of Financial Institutions - the Nigerian Experience - CBN Digital Commons
-- **Source:** CBN Digital Commons | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTE5DU3RyMkFmcGo3X2RlR19faDM2M1hRVlRfQWFxU256a0dkZ2lRd3dkalZtMXBmdXFMMFNkLXp3cnlWZTBvUkVIT2RFR2ZSSzZUZDlhWlE4YW1mR2dHQVhYc1hWTWU0SlVMMVBMS1U2cU5adnBX?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Regulation and Supervision of Financial Institutions - the Nigerian Experience  CBN Digital Commons
-
-### "Institutional framework for the regulation and supervision of the fina" by Mordi N. Charles - CBN Digital Commons
-- **Source:** CBN Digital Commons | [Original Link](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5aeTZ6cHRPSGtFT21CaWJHQmwtQmVzWk0tMXd2bkswZUZDVjVhRnUwTWxUWnFONTdVRm9UQ1FueTZRREtDQTl0TUhoVE1HaVBWRXU4U1FR?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** "Institutional framework for the regulation and supervision of the fina" by Mordi N. Charles  CBN Digital Commons
-
-### LEGAL SERVICES (Regulatory Compliance and Enforcement) - Nigeria Civil Aviation Authority
-- **Source:** Nigeria Civil Aviation Authority | [Original Link](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZ1I0c3UyYmlIUW1DdTIyaGlTMEN0bjhhUi0xSTZTUHhwWXY4WGVkcTFTdHpkelhJMHQ5WlhYRjNiU2QtR1pFaEx0cEI0eHlibWdBZzlJUG1kelVlV3c2RnBkVmF2QWVVaU9mOU1lUG5XcU1NSks3RnZ2SEhFNXBlUkF0eERtdXQ3bWVieERsUUNVU3NfRnVadEZMQTNhbzdwTnhmYjA3WUdmRm8tTE5yTURvWHZma2xYcjQw?oc=5)
+### Alleged ₦36m fraud: Court adjourns Blessing CEO’s trial - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizAFBVV95cUxPZ0lxblNrZGRrVk84LUNTNG4xbmdWOEFOX0R1bVhjRk1malFpT2w3aXZvMXN3cThjSkJMNDJPVnkxZWVfdXd4NlREd3ZqUmo2SFRPSVI2UGxyZEVzNzE2Y3VzV3J0NnNRZnhXYjRuRFdTVm15d2laQ01IRHNwRFc3cUpPRm1ab0k5d2t0S0lZQklxcjBkNDFCWFg0dE5KQVBRdVFoRmJXMFJqRlM5U1hNZUo3bThPNjBtZEoxanBOOHl1UzlLeDNOUnVVODc?oc=5)
 - **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** LEGAL SERVICES (Regulatory Compliance and Enforcement)  Nigeria Civil Aviation Authority
+- **Risk Score:** 46/100 (Critical)
+- **Brief summary:** Alleged ₦36m fraud: Court adjourns Blessing CEO’s trial  Premium Times Nigeria
 
-### award contract images - Ebonyi E-procurement
-- **Source:** Ebonyi E-procurement | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHFfV2pxQmVkWVFQdEpzZlNqbFJFR21WbEpsN1pVb2RxeGswVDFocjRYOXVXZU5TeDM3ZGZ6SlNzaDZBeXo5QVhxc3NWVlNSZDhVS2FWNUoySlV4OHlKbUs2cERybXlXVkFia3lRZHFmdG1wUVgySk1xeG1hTVh1Slhtb3RMTVVBSEhIS0pn?oc=5)
+### NIWA to upgrade waterways infrastructure, phase out rickety boats - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxQZ0tKRkx0SEk5Z3NvVk5qekpIQ1JkRDlYRzFXYkh2aGtXX3lXdnNTME5fOHdjWmJvR2ZrbzNFZEVJcTlFNVVEd1FCOXluZDB2SHl1cHZSdjBzVHVmbFl5anMtWVRQNlRfUl91Z0ZtVFM0UUh1ZF9mTXo0dGpITjU5MXZfX256REY3TXlZeUNyQUE1TTFnRUtPOFRNbzVPNmlYRW5WOGczbw?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** award contract images  Ebonyi E-procurement
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** NIWA to upgrade waterways infrastructure, phase out rickety boats  The Guardian Nigeria News
 
-### Regulatory Compliance - LEGAL EMPERORS
-- **Source:** LEGAL EMPERORS | [Original Link](https://news.google.com/rss/articles/CBMiZkFVX3lxTE56ZjRYeEhjaDljVkFBZWRnZHIyczI0VWdFZzBuVU45V1VQYzNxbndDbmQ1Ql9lTF9hak5SVWZaRHlLY0Z3OExBUzA0UGR2cVZhX2otVlM5ckJDaUdXdFlKRUNya1hGdw?oc=5)
+### Cardoso credits reforms for over 1200% jump in net FX reserves - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxQVmFJeGNVc05jbEhLRFQwc085RmNtcWZibkhxVUxmTDVJeDN2TXhNWWx6TEI2ZkpJNHNlS2VkdWl3LXFmcXdQN0lyU3VuWXBYdFdZRDNKUEhsTHFrNEFSUE80YTFyYUlxdzR4U0oxVnVtYmtETlA1N1dkQTB4WVFEY0VINWt4LTY1TUVNTTMzY1N2VlB6QTExbkVpZzNFdGN4Y1E?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Cardoso credits reforms for over 1200% jump in net FX reserves  The Guardian Nigeria News
+
+### Africa’s oil chiefs set Cape Town agenda for refining, trade, energy financing - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxOWkZkb0ZoM25jZ0hjVHQ2ZndyT2JKZ3piTTRsX1Vna3NzNVVHcjBGaHhrMWkwZXEtNThtMTJLTlpNcnZ3Y2VTcUxVRmVTMTZoN3VTMlV2dGdfS1hUMnBNdFp5MTREcjRtUk8zdWRwZDN6b3YyREhQZlhoRGt5dUl1alNaRGt1ajFPQmRvUVpJbEE5WTFuWkFXbG1GRjM1N2RKR1ZKVGZ3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Africa’s oil chiefs set Cape Town agenda for refining, trade, energy financing  The Guardian Nigeria News
+
+### EFCC arraigns ex-Skye Bank chair Tunde Ayeni for third time in N15.6bn fraud trial - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcUtSQUU4VldnY3dXWkFYZUEtQVlBUUNCQ2s3ZGZmU01MaU1NajJXZWJQWjRHbGpaSUFnRVB0eHRkcm1PRW5Lb2dRMGplNUlkM3ViUVY4OVJwdm9XSlhRemVzWVZPaGt5bDJkbTJ1bjhlUEtaeW40MjVZZ3RLRFpVTjFCVWtGTVlQYW1BUFlRQUFiWEo3Ukt6Q09JbHVoWEFKS2ZnZDdpbGQ1bU9FRlNYVFMzalBNWU5HeGlBWXNER1pLME94WlBfNkxVWGREQVVPWmhVZDBB?oc=5)
 - **Classification:** Legal (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Regulatory Compliance  LEGAL EMPERORS
-
-### TRANSPARENCY, COMPLIANCE AND SUSTAINABILITY OF CONTRIBUTORY PENSION SCHEME IN NIGERIA - Gusau Journal of Accounting and Finance
-- **Source:** Gusau Journal of Accounting and Finance | [Original Link](https://news.google.com/rss/articles/CBMib0FVX3lxTFBuNktUVXo1ZFlvZnpjWGQtRTVUMmJMaUVsVjBUdmVPY3M5QW1DUktkWTJhU2xGbmU4TmVKRnBkUXRxakt1VFdmQ09CWGdJWXJmemc2WkloRm9rdFk4SUpTelppTjliaUg1N2FFZGptOA?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** TRANSPARENCY, COMPLIANCE AND SUSTAINABILITY OF CONTRIBUTORY PENSION SCHEME IN NIGERIA  Gusau Journal of Accounting and Finance
-
-### INSTRUCTIONS TO TENDER - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ01vX254Y3JjTERGel9tQVJnMXlqcE16M2pMQk1XTnpzNTNTZE9OQU11Wlk2MXNkc0tCMXdJazFfRlJhcWFWN3JMXzNia2ZpUlhkRW15LVZFbjF1UWtsSG5zUTk3RG9kWnc0R1RGZm12MnlYVnFaY0ZQdnNZVlJqQnN0WURReldCeEhvb0tadUpjQmFhcUY0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** INSTRUCTIONS TO TENDER  etenders.com.ng
-
-### Procurement and Construction - thomaschase.com.ng
-- **Source:** thomaschase.com.ng | [Original Link](https://news.google.com/rss/articles/CBMid0FVX3lxTFBYTFhFdzJZTnJHa3BWelBXZ25Hb0JSeFhUUFpfOHBSZ0ZFSER4bkp0U01fR1Y1cXV0R2djcnYxODU0QUNSbkM4bk5RdEhvbHVDVlpMRkx4STVQRnRNV2VzaWMxeW5jS2NrRHZGSWNKeFRsQUV3YUNJ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Procurement and Construction  thomaschase.com.ng
-
-### Press Briefing on NAFDAC’S Regulation and Control of Sub-Standard Falsified Medicines: - NAFDAC
-- **Source:** NAFDAC | [Original Link](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMHF2ay15bDRKb0xKU05wOTlWc2xYbjU0STAwa0draU9qc3p2WHZTc2xvY0JUbDR0ekt0bUl4aXNtam5EUTFqczBVUUVpdjZ4Z2t4RGhkWlJfU2wwTnFIZnFlN3MxZEsyRktGM1NYVjhRU0NMOXV4ZUZTbWdiSDRSWHRFd3RmYUtuQmI1V3JCR09KWklWQ0NwYVpJUFBNSlNuLW1nZ2lJYzBWdTA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** Press Briefing on NAFDAC’S Regulation and Control of Sub-Standard Falsified Medicines:  NAFDAC
-
-### PUBLIC PROCUREMENT ACT 2007 F - Nigerian Content Development & Monitoring Board
-- **Source:** Nigerian Content Development & Monitoring Board | [Original Link](https://news.google.com/rss/articles/CBMieEFVX3lxTE1NbzRXd2syQkFkdGxleDdIM3lCc3RuSzczWHRGQnhTanRCVmYyYlhudWVmVkk0cUR0b0syYXNSTU11R19Sd2VkS0dKUWRwNG5tdVkyam9YNWZtdWRPNHhfa1UtTmdBVGhmQUFFaDVmVURUN3RZWWFKMA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** PUBLIC PROCUREMENT ACT 2007 F  Nigerian Content Development & Monitoring Board
-
-### Certified Cryptocurrency Compliance Specialist (3CS) Course - A&D Forensics
-- **Source:** A&D Forensics | [Original Link](https://news.google.com/rss/articles/CBMiS0FVX3lxTE91YklLb1F3SDJ2S2pjQlc4VDJ1dmx4NnNPcEZXckFHaThLZjJyaXAxd21NS05fTUdSa0hHWDdtZC15WjFWcXdKNG1DWQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Certified Cryptocurrency Compliance Specialist (3CS) Course  A&D Forensics
-
-### Statutory Functions of Inspectorate and Compliance Monitoring - ogun state environmental protection agency
-- **Source:** ogun state environmental protection agency | [Original Link](https://news.google.com/rss/articles/CBMicEFVX3lxTE1rd1lXN3ctZURjR3VadEVtc0lUMzEzMmRZbVNUWjhDbFVreDBfRnZYbG1peEZLb3hldlNQV0hsM19TUGEtYnE2dFNVekpmaHZMcnRhekdjdmxLT1Q4bDR2MkFpcng4NWN3XzhTVHFLWEQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Statutory Functions of Inspectorate and Compliance Monitoring  ogun state environmental protection agency
-
-### Online AI Regulation and Compliance Training - Nobleprog Nigeria
-- **Source:** Nobleprog Nigeria | [Original Link](https://news.google.com/rss/articles/CBMifkFVX3lxTE42QW96M1N5cV9wOGtCWmkzdVpvV2VtYW1KWHhUVFM2Tnd3WUJ5UXZZTFp1WUNPVlJ4bUpiYlplbUZUZlJUVXN0aEtPWGJoQ1NnYzV1UVJMSHozQW1PZWpfcVhmX2lmM3VWX1JCb2lRWlh4Qk9OelU4Ql9fZWRMUQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Online AI Regulation and Compliance Training  Nobleprog Nigeria
-
-### Regulation and Compliance - Adamawa State Government
-- **Source:** Adamawa State Government | [Original Link](https://news.google.com/rss/articles/CBMiekFVX3lxTE0tS3BnRk5GTkpHWF9lSWV4dWtKV0FXRnA4VXZJVzRKTVJOTGpabVlySjZfaDhveFVaTENPNUlxbWh6el83NXVCTkhxN3FvbWMwM0d2YlhIQzhnWm9JVXFCYlc1dFZPUWpVekxsVWZmT1hzaUY1NnNJak9R?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Regulation and Compliance  Adamawa State Government
-
-### GERMAN COOPERATION- INVITATION TO TENDER FOR PROCUREMENT AND DISTRIBUTION OF ELECTRICITY NETWORK POLES AND ACCESSORIES – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOMTYxTHExaUUxd3A2M1dVSjBTME9KQXB1STlaVnE2ck8zOW14aVFJMjg4RDl4aGNTU2d0Q0xYOGUwUzFJY29qZzlQdElUdHpkSXd5YlEwRU1rOTMxMHUzR1RwTHpESXNSV1BDN0drU3RRQ1BJVXJ2X29rV1phbzAzUjNaTVZkbzZXeXhIRzZHem1BRWtuMEs3Vnh2STRvZzJfcWVfMFR3cDc2MmZnemxXV3NkdS1WUlR4NnlMTmtoWHZ4SExDaUNqaGlMTXA3QmtraUNKTw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** GERMAN COOPERATION- INVITATION TO TENDER FOR PROCUREMENT AND DISTRIBUTION OF ELECTRICITY NETWORK POLES AND ACCESSORIES – eBid Nigeria  eBid Nigeria
-
-### Compliance and Ethics - Ensure Corporate Compliance and Ethics, Code of Conduct, and Whistleblowing - bicadvisory.com.ng
-- **Source:** bicadvisory.com.ng | [Original Link](https://news.google.com/rss/articles/CBMicEFVX3lxTFA0WS1XSE5vbTVLWTkwTDVsNHJ3WS1xR1M5SzRMRldwVFFaNXF4bnFUdFRkNXczZklvbU9mbG1DRUJMYjlJNnBGYmpxSGxBdThob1ozZmRsTXp1cmE1WkxOamdZZ01Hd3FSYjYxWGVrTlY?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Compliance and Ethics - Ensure Corporate Compliance and Ethics, Code of Conduct, and Whistleblowing  bicadvisory.com.ng
-
-### AML-CFT-CPF Compliance and KYC Management for Financial Institutions - NIBSS
-- **Source:** NIBSS | [Original Link](https://news.google.com/rss/articles/CBMitAFBVV95cUxPZGx4ZlQ2bkNZdVgxVUw3WlRkaVZsc2dRak1uNEZPUHZralgteUZTS2hTTHB3d3pnb1h1UjRQWU5VQkRySFNLVGxwVmVsbFFXdl8zRE0tUEZJNmlteVdGcWQ5YnBObllBaGtCZnlWaXJiZ2lYWG44N2Y2bFl4NjlpTEN2Nl9wU2swVWo5ZjRxSkF1MUNlYXhQRTgxQl9EQzVlTlZsSWZVVFd2OGFIS1FvUERzUTU?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** AML-CFT-CPF Compliance and KYC Management for Financial Institutions  NIBSS
-
-### An Appraisal of the Effectiveness of Regulatory Compliance and Enforcement Mechanisms in Environmental Law - Omaplex Law Firm
-- **Source:** Omaplex Law Firm | [Original Link](https://news.google.com/rss/articles/CBMiygFBVV95cUxOdHFkRW5nLVNKekZtbW5VTy1RMWJ1WUt6bTdPQmE5WU5vbWtRZWZSems4QUhsNUlIMmVvdHp1Q1ZCdi1qWlctZkx2ZkN2enpXbGk3SGloSHZ5a2RGbW90VHZKcmR6VEdkODAyZXlUNERqUjRKc1JFSTVVNWZvU0lzTzhpUFhYZlZNNTl2Y042NEtlemxjMk5iM3ZRQnR0bEtwWXdwQkVnSzl5d0ZwbGg4X2pBX3dRdHZNSk1vbTVvY0U1ZGRSZk9rUkNB?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** An Appraisal of the Effectiveness of Regulatory Compliance and Enforcement Mechanisms in Environmental Law  Omaplex Law Firm
-
-### "Rationale for financial system regulation and supervision: a global pe" by Victor Ekpu - CBN Digital Commons
-- **Source:** CBN Digital Commons | [Original Link](https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2ZFZrdTNaeGRRMmltUms1R0RZaEYyTFVERjUxUnZpTXVqWl9iTTFBRElTdjFVNWxpWWotaXpiNUJXV2REaWFIMEdid3ZrVUlSRlppeFh3?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** "Rationale for financial system regulation and supervision: a global pe" by Victor Ekpu  CBN Digital Commons
-
-### Recruitment of Global Fund RSSH Technical Specialist (Procurement and Supply Chain Management) - NACA Nigeria
-- **Source:** NACA Nigeria | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ0xfYjVYQUtrd2FSZGIwWTZ3ZVVqOVUxY2dib2YwSUdOT3FlYVlYWmRzaWVPRWp1aEZQOVEyazZLSWZFcFZpRjVwUEpjQ3l1bGhSQWw5Z05wR3lwald3T2VHWF9nd21xMGY3TFVNZEkzb19vTlp4eVB4QUZLcXA4LWxXMVlKU1hTbmZ6eTd3bnU0SzdrMU54NWVCQUpDMnc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Recruitment of Global Fund RSSH Technical Specialist (Procurement and Supply Chain Management)  NACA Nigeria
-
-### Legal Framework for Energy Mix in Nigeria: Regulation and Challenges - The Gravitas Review of Business & Property Law
-- **Source:** The Gravitas Review of Business & Property Law | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxQLXFfWXJlNmZ3ZWlhNlNnNndpanJ0SE9IRzB2Nl9fVkpyY01QOVpLand5Z21KTmFaWG56ZXBwcFJSNDBwRk9vb0UwSlZsU3pFbUxVZVF2M3B4QWNDQUg2aFRmSElQRWhvZGhfQjl5Wk8zbXZZVXNFVlJsSTJzVll6RVJMWmtHSEk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Legal Framework for Energy Mix in Nigeria: Regulation and Challenges  The Gravitas Review of Business & Property Law
-
-### NATIONAL SENIOR CITIZENS CENTRE, WUSE II, ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST FOR PROJECT AND SERVICES UNDER 2025 CAPITAL BUDGET OF THE AGENCY - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMikgJBVV95cUxPWFlFQTBWdWM4QmdwQ21HWXE4Slh4ODl3bDVIOFhIem81VXNiMHEyeDZ1bi1zVHBFRG80bko2Vko4bkxlZHJnQkROSVB6Q3Z3Q21XZ2NtOUExR09xN255ODBrWmpycWNSRHJaczF0U1lEWXBnTG16SnZGcWFxblJpdTBHbGppQW5aWXh0YW9acDM3X1RTaktUbW41aW0tdC1Rbk1QYnhickgyaFBXRDNaMnZGVXJuQldxVFhUTlRMZV9KQjB0b1pzeWtYeVZ0UVNpWGdGbmZILURTMHZXU3F4clhEbG5VVWUxVFpwMHdqb2ozOHpuMXZOSFZueXBORVVDRjBfa2tVSm4xenp2QmFLaHZ3?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 56/100 (Low)
-- **Brief summary:** NATIONAL SENIOR CITIZENS CENTRE, WUSE II, ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST FOR PROJECT AND SERVICES UNDER 2025 CAPITAL BUDGET OF THE AGENCY  etenders.com.ng
-
-### NATIONAL IDENTITY MANAGEMENT COMMISSION- REQUEST FOR BIDS FOR PROCUREMENT AND IMPLEMENTATION OF ID CERT & SOC SOLUTIONS, INFRASTRUCTURE AND SERVICES EMPLOYER: PROJECT IMPLEMENTATION UNIT (PIU) OF T - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuwJBVV95cUxOM3VtMzZhV2cwZnFXaW55OEo3M29RbzkwU0x1TUt5SnNTZ2kyYWQwcVdRS29nRWExeWUxaFYzYUVWbG1hS1B5aWdqR1pSd3lOZzJjQzZLak1yMm0wSnRTSUdCMTBieGd3dnpCcmc4QjA2N0RncGVlVzdhM080MGJmVmVNNWM0aE5DMkJNY0VkQ1pHc3k2dXAzT3U1VFRjSkJqTTFIVlh3V3FHRU5qNkhfczM1dUpuSjVRdlFtLW5XY3A0MUU5U0NTUy05N196eUdHaUZ1VEgtV3Y3Zm5mcThadng0NXVhXzFDOXA5NUdodWlLN3FkSmtYOTdGa09iTjhhOXRfOWs2TmJSdDJ0RDhUbHdGcWhRV1ZyR0FtaEN4eDRwUG9vYm5jLXAyNXgxS05IcmF5bUxxOUQwLU0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** NATIONAL IDENTITY MANAGEMENT COMMISSION- REQUEST FOR BIDS FOR PROCUREMENT AND IMPLEMENTATION OF ID CERT & SOC SOLUTIONS, INFRASTRUCTURE AND SERVICES EMPLOYER: PROJECT IMPLEMENTATION UNIT (PIU) OF T  eBid Nigeria
-
-### CHEVRON NIGERIA LIMITED-INVITATION TO TENDER FOR PROVISION OF IT HARDWARE INFRASTRUCTURE PROCUREMENT AND INSTALLATION SERVICES - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi5gFBVV95cUxOaXZFcy1pNzkyb3BIejlla2hKWXNGQXBiN0txYjRlNUZOMGEzZDctZmxhRTRnbjlwUlZSN0psMFFVRzQ4OVdGTE5NYnhHdDRQZk11NkJCdndRMUpYdUV2a1VFMDB0Y2w5S09XX25sa05pcVF2VTk3bHJPZmtkWWhLZ3hYc0liZ18tai1pUTBpaHFqVnRlR3FWNWFhMWVORVVraGhTajV0UmNqMFl5UVBTTXFwMmM1QjBTU3BfZjg2UDVrRnBINHRxM3dZZy1WRTVTQlQtWmZ3aHN6cW90M21WNEltVjFRQQ?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** CHEVRON NIGERIA LIMITED-INVITATION TO TENDER FOR PROVISION OF IT HARDWARE INFRASTRUCTURE PROCUREMENT AND INSTALLATION SERVICES  etenders.com.ng
-
-### FEDERAL MEDICAL CENTRE, KEFFI, NASARAWA STATE- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNlFhSVBCUnFsZUJEbVBobkxGQW5hVGhLa29ZYVo5aENWckZUbThyM1BXTkluMTcxdV9yVnpZUDgwcVlZLUFGanoxV1hLS3JWWTAtTXNKWFRnU3hYYndERXcySXMyUHVpZUdpUkdVWjNPNmI1Z1dSVTJPeWFvdzVDaEgwWTFtTklNbmdPWHpzTmFSOEJmYjh1Q1pua1BWMTc0UkhQYmVfSXc4QUE5bDdOeHJxeUE5LUJHeFV6NDJHR3NnYVJmWExQeHFITDBFczlLTXlzOEFvMFhGQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** FEDERAL MEDICAL CENTRE, KEFFI, NASARAWA STATE- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria  eBid Nigeria
-
-### NIGERIA DATA PROTECTION REGULATION 2019: IMPLEMENTATION FRAMEWORK - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZ0owWUludzlxdEJ2dXZOR3ZTQTUtTnpXaTZabkZsbXpaX3Mwak1XXzZwY0hWRk1fWFExQ1VzMTRBdzZRd2xkSFZmN2FWM2FoWVdlNG15ODhLTU12SktIV25TLTFGWEU5ODR6TEI1US1zOWQwTTFvekptTVpQQ0ZxSHMzd3ZiM3c1?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** NIGERIA DATA PROTECTION REGULATION 2019: IMPLEMENTATION FRAMEWORK  National Information Technology Development Agency (NITDA)
-
-### MICHAEL IMODU NATIONAL INSTITUTE FOR LABOUR STUDIES (MINILS)-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi8wFBVV95cUxPQlJZbzNEYThYWmozdE9VV3dXUUFkSXNUQWlpamlWaGh3bG5CcWRTWVBybEkyeTNxT1ZmZ3J6d3RsakJ0U3dVa1hnblV3bmljc21weG80RkJxMWpVOVhXZlEyNFhYNGRaY2U5Q3M5aE51TnZwajhYUWFabUkzY0J3aTdtV0ZLdXpWMThqeWowemVycHpFRS1CbExqMkNfZ3J3SVM0enZUdWlaZlBQZjV5MnhZQWI2YkFwZV9QX3BKeG50T3VzeGt3d015UE95bXZ4TFRLWkNxa1BjUE1MMVJweUxacE04V0hJam9OLW9Ocm5Tc1E?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** MICHAEL IMODU NATIONAL INSTITUTE FOR LABOUR STUDIES (MINILS)-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS  etenders.com.ng
-
-### IMPACT PROJECT OFFICE ABUJA-INVITATION TO TENDER FOR PROCUREMENT AND INSTALLATION OF COLD CHAIN EQUIPMENT (WALK-IN COLD ROOMS, WALK-IN FREEZER ROOMS, COLD BOXES, INCINERATORS AND OTHER CCES) TO STR - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiwgJBVV95cUxNZVppVGRWT01uQWxOVG92T0pGOVc2Y21BQVhfZmNfcXlBMW5zNlc4TEc0Smd0WGV5dTdBYjh2eHFDMjdCLW43N3VydjNsQ0JmTmxRQnBzZTFXLU9LNmtMeVdqLU5hcXduNVZlVkNPeXAwbWxOdkVEYjNXT2t3YU54UWJuSnFtc2FXOGtkSm05eXZYRXNEMjhFdlJhLS1TRExLbHFlNGpKY0F6TFlDVlBvSG9fZ1ljR2xxSlZZSzM0SEpqdDBmc3NudTlRMEg4Y2tMZGF5QmlsSHNLemxlbHZkR3JVaUJQcmVfdU1hUzIyS2pNdmlEckZ6cHVrMk1ORzBTMnlFSnJaam9JRjRLMjRiWWVNV2pmbEI0RWtLVmIwaXJnNnNvVW5QMDFkM1h1c3NEQjVIOVZRZDlmOElqQzlrRF9R?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** IMPACT PROJECT OFFICE ABUJA-INVITATION TO TENDER FOR PROCUREMENT AND INSTALLATION OF COLD CHAIN EQUIPMENT (WALK-IN COLD ROOMS, WALK-IN FREEZER ROOMS, COLD BOXES, INCINERATORS AND OTHER CCES) TO STR  etenders.com.ng
-
-### Lagos seals Coca-Cola, FrieslandCampina, Guinness over non-compliance - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMivgFBVV95cUxPcG5mZWlrN3BkNXh5QVpKcl8wb2FaY1hqQ0NOV2h3WWRFZXgwcUI5LTQ3d3lUeDN2NnJWaGgxamh0c2JSZHFROUdOZEpHVG1YUEtSX3plVjB2VHczeXlXZUpaN2xtc2NRZ2ZJd2ZkNGlrU1NIeVBnYk5XR3NPdUJwUzZaZllNcmQtZXdITi1tVFh2eFVqN2VJaEZsNGx4X3ZkbGlibXlzcVFoLU1oMUkzWWpYR0dWRTZBYklxVFZ3?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** Lagos seals Coca-Cola, FrieslandCampina, Guinness over non-compliance  The Guardian Nigeria News
-
-### The Importance of Procurement and Logistics – AIML Group - Advanced International Merchants Limited
-- **Source:** Advanced International Merchants Limited | [Original Link](https://news.google.com/rss/articles/CBMickFVX3lxTE51Z1NHSVFoMnlkMUVNZFIzSXpvRVIxMTdDT0hoTl9uaGZkMkQ3RlJZLWVoNXpTQVU3akx4MG9LN05pS3d5YnliSngzRzhRX2pBN1RoeS1rV19DYm5fbVVWbTgwSnd3ZmdqSVpxeUM1cFhuZw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** The Importance of Procurement and Logistics – AIML Group  Advanced International Merchants Limited
-
-### National Agency For Science And Engineering Infrastructure (NASENI)- Invitation To Tender And Expression Of Interest (EOI) For 2025 Capital Projects (15 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMingJBVV95cUxQQTRXS0M5QWMwM2hwTU9KVklqNk1qYi0xZFV2N0JOdHFISmNJcDg2enRiQzJnNzV0UlU5a05SLVBHOXFXWDFPSHhtX1BPaV9HMTBJaU1URFNBM2drTWp0Yng3NGkxNVIzS2tvQVpsdmQzYVQ5R180YVJvTnVfTVZrcWdQRTViejlFVy01VFZGMUxHYmowSHlyRmUxTTJrVE1fanJDM24tci1naXdDSUlOcUFHazRBUGc5OExzMGdrT0JEUEpFcVJQVmphWlZ2MXFxRHFNMGNvaFRhd1p2Q0hFUDdrbC1TVjViaGpkMjRkZjZHXzhfbXdJSVZOdGVZODQzOXRtb0h0b2s1c1U4YVFVRE95OGljWk04bUljai13?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** National Agency For Science And Engineering Infrastructure (NASENI)- Invitation To Tender And Expression Of Interest (EOI) For 2025 Capital Projects (15 Lots)  Nigeria Business Information
-
-### NIGERIA SECURITY AND CIVIL DEFENCE CORPS, ABUJA- INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) (TECHNICAL AND FINANCIAL) FOR 2025 PROJECTS – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTXcyeVZiSVVsLTVQbnNnUm1qV2xwLVhEdnJsaWdOT3RZc0xXckNTVVVVWm8xQUFxM0VYdWFSUkhQOEZER20yM2s3Yml6Mndoc2tWVlh6c0kzLVoybnZQakc1dm1qRHV0TjFVTkRSWDBoMk1GWFZ5LUxSdklZcl9tV0M0VTl0YWtwMjEtT2N3STNOSUZvTmw1TGttTmo0djZDUkowM0ttb2ROZkIyTE4xU29hV05SX0hHamxDWjl0Q2RsNXlYcGdaQzdmV0M0c3JadHZHcGw4TDgzZjhhY0tnZTlPdmk1TW14Y2w2R3ZIVzNUN0E?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** NIGERIA SECURITY AND CIVIL DEFENCE CORPS, ABUJA- INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) (TECHNICAL AND FINANCIAL) FOR 2025 PROJECTS – eBid Nigeria  eBid Nigeria
-
-### Invitation to tender and Technical/Financial Bids - coren.gov.ng
-- **Source:** coren.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxNNzNhYlVKVGppc0RfcUtrVlNCcm5KZWZPdnM4eVpEdDRwOHRyZVdQcWUyVU8tTmppekJ0OUVfRnFNNEdtbW1fVXZOS1hsTDRrMFpsV1VlSVpXSDlBanBSUWVNNTVTcTdLeUFWdEc3NW8zZWczX2R6ekstTzZLNVBmMHNRd1U0Tms?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Invitation to tender and Technical/Financial Bids  coren.gov.ng
-
-### NIGERIA DIGITAL IDENTIFICATION FOR DEVELOPMENT PROJECT- REQUEST FOR BIDS FOR PROCUREMENT AND CUSTOMIZATION OF A LEARNING MANAGEMENT SOLUTION (LMS). – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi9wFBVV95cUxOMUdrZzVzbFd0TUVrdC1OOUZ2SlVlbnBTUjFndE9MdTIwaGRfWkl4OHVNWGM5ZjhTVjlmeXUzaDJ6bTlsazZjS04tR2JEc29LRk5qdW1iUjNOSkRtb0U2LXFMTFIzaU9Hb0xwV0JGLUtrOVItcnRGSXVUU1luRGpwNXVHUENPV0RfMTM5RGJqa0ZCZVR1bnFod2VtdjM0T05LMzNoWFVQVmNES3lKLWN5N3RQZmpIQUxVbndXWl9oUlNjXzlXMUhTVzJrUjFuYlZkNEpOdDBKelJhanlfeDNiQmtyeFhwNE1nZFAwZUp6dHBwUjFRMzdj?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIA DIGITAL IDENTIFICATION FOR DEVELOPMENT PROJECT- REQUEST FOR BIDS FOR PROCUREMENT AND CUSTOMIZATION OF A LEARNING MANAGEMENT SOLUTION (LMS). – eBid Nigeria  eBid Nigeria
-
-### "Banking Regulation and Risk Management: An Assessment of the BASEL Mar" by Emmanuel M. Abolo - CBN Digital Commons
-- **Source:** CBN Digital Commons | [Original Link](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pdVY1bDdEWFh4VHQ0MjcyTHRDdElEXzN4dnEwTi10WURaOGN1RU9Eak81TjJEZFhwY3Y5VHA5b01UMUxhWWZzc0xqSzdVeDdv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** "Banking Regulation and Risk Management: An Assessment of the BASEL Mar" by Emmanuel M. Abolo  CBN Digital Commons
-
-### NATIONAL IDENTITY MANAGEMENT COMMISSION- REQUEST FOR BIDS FOR PROCUREMENT AND IMPLEMENTATION OF ID CERT & SOC SOLUTIONS, INFRASTRUCTURE AND SERVICES – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi-AFBVV95cUxPRUNoWUJjR1FNNlZVOXZxdVR3enJ4ZURpcnpnTjIzVjc3VFc3cXBWWmUzMW1GUHE5YkdNRDRIQWFWOU50b2xIZEVfYTlCcGZ2SW9jSjkzUGdSbHRoVVN1bWVubFRmLXhzclZCVm5fTERZc2NkZ05wZ1kxTjhadlRKeFJ5WDFFdkdvb01kVGwtQWp1aHJlUEN6Sk9YeWtyeU0yd2NoeE5DSFFUcXBhc0kweVBuZ1VMZUxXQmhFd2k3NTBtVk15WnMwODdwY01YNU9DV1NZcTk0SkpYdVI3b09XUTZlUnBmM3Z4QnA5REo1S0xyY1ZBUnM2Zw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** NATIONAL IDENTITY MANAGEMENT COMMISSION- REQUEST FOR BIDS FOR PROCUREMENT AND IMPLEMENTATION OF ID CERT & SOC SOLUTIONS, INFRASTRUCTURE AND SERVICES – eBid Nigeria  eBid Nigeria
-
-### UNIVERSITY OF MAIDUGURI TEACHING HOSPITAL, MAIDUGURI- INVITATION FOR TENDER FOR CONSTRUCTION WORKS, SUPPLIES/INSTALLATIONS OF GOODS AND SERVICES – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi9AFBVV95cUxPUkpaVkRJUUZvVTZXOXB4djJOWmwxdXBEaGJCN2VIMnB3TWhhb3RxMVFBeTRuWEpiMkwyMnJRX2xNblFiZnhqODdjZER4V2luZktncnJPM1A3NEN4alBqY0doRDFYN284V2JpMGNYak5vR2lfdkhYcl9xWk1vb2I3d2kxc29XUENJQzlsVGdnRm16aEkwZjIteXpmbWNmYUZaTTZoZjNuYTFXTHpmRTJNM0V0X1czaXlDZHluaERmSF8tTkM0Y3RSY0x3YncxUGpYNUVXNFFfMDVjRWlWT2FCLUdFTTB5SktoZ1B5LUs3bnJKaGlH?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** UNIVERSITY OF MAIDUGURI TEACHING HOSPITAL, MAIDUGURI- INVITATION FOR TENDER FOR CONSTRUCTION WORKS, SUPPLIES/INSTALLATIONS OF GOODS AND SERVICES – eBid Nigeria  eBid Nigeria
-
-### Guidelines for Nigerian Content Equipment Certification (NCEC) Initiative - Nigerian Content Development & Monitoring Board
-- **Source:** Nigerian Content Development & Monitoring Board | [Original Link](https://news.google.com/rss/articles/CBMiakFVX3lxTE5GUXFwVnVVQmtLcW5UdE9SNVZZTC0tLUVKUTVIeGNnaXVNTEhteldOc2xJaGFWZ1N2Z1I5Q1gweFRPal90a2V1TGprbHc5OC0zNDJ4T3hmWFJ5NUFITWNxdXBkWUlIS0d4MHc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Guidelines for Nigerian Content Equipment Certification (NCEC) Initiative  Nigerian Content Development & Monitoring Board
-
-### Nigeria Agricultural Quarantine Service (NAQS)- Invitation To Tender And Expression Of Interest (EOI) For Projects Execution (12 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMi_gFBVV95cUxPX3Z5X2xodHlVOS1xM0wwdWh0Z05tRXNfNXhLbWZQNGIxVHVpR2lLTVE3QTVONUktNXBLS09KTGtXb3cxU3JDcDF4alcyZk8xZnVfbTZkUFZFa05TQTU5Umt4blpfSjNSam5BaEZ3WjhzYWxhckdtSHBjdi1NSG5fNmJXWlZpM3l5SVZjNE4xSkxHdUR3RWg4R3l2TW9KdDlxQVR4bHFGeFV5R0dHOUJ4bUxYUFZXdlhLeXEyVVlrVTdyTWI5VTVoZC1IaGlXUFpaTTBzYURGSU02X2dTTGp4dFdVaFNQS2JNUW5zRFlsNXJGaEZ3a3VXb3FHLU4yUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Nigeria Agricultural Quarantine Service (NAQS)- Invitation To Tender And Expression Of Interest (EOI) For Projects Execution (12 Lots)  Nigeria Business Information
-
-### NIGER DELTA BASIN DEVELOPMENT AUTHORITY-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPLVp0X0hTN3Z3MWJTTXdSdkVKT3NMelBKdTBNa0xhTm1QWURZNjhiczJORG1GYmdQZjAzWFMtQU9GYmU2RWVDejZDNUJaMk83Y3NfdVN2REVzNEVvMzQ0N2xsd0dBcFN0d0NuNjNqVE1Ub3hyaVgxamhwQ1FOLWlMcGtYeTktMGhrZDdVN2czUHVkOHlOLU9Id0NLU0JDVmI4bHpYY2NoV3Znb09IODlCeUhweE0wNlYtT2FGNERzZFJJOEVrZEtRTjE2Y1pfaTN1azRQSDNHdTYzQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** NIGER DELTA BASIN DEVELOPMENT AUTHORITY-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS  etenders.com.ng
-
-### HUSSAINI ADAMU, FEDERAL POLYTECHNIC. KAZAURE, JIGAWA STATE-PREQUALIFICATION, INVITATION TO TENDER AND EXPRESSION OF INTEREST (EoI) CONSULTANCY SERVICES FOR THE YEAR 2025 CAPITAL APPROPRIATION PROJECTS - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiwAJBVV95cUxPY1o2SDYxa0hzcEJXcmVwSnFtZlZONkpHRUxucFFnT3BSQURPZ3lFakcyN3Ewa0pmYVFjWTNsXzNEWFVzSExqUGFMWnJTeEc2MDlkclFSaEdJSFpjTE1tMTNWOFpFeXo4dXFsR21DMUNjbGtreDI5cTU0MTkzVVZHZFI5SG44aFd6U196TVZTWWxLYkEtb3BQa2xMVUtvRzVscmtrdEVtSVlmSmQxWV9ZcFlZdm1INUtrelN0LS1ld1loV0RlTDBzakwzZy1VTHRRUGNyR3N4Sm9UdHQ5V3pGZjNwTDBYekJ1S0pnQmVDWFJzMlNEMlhXRjdFYXpoV2MyTUQyY2J5QkNoRG94c2lneVBnWU0xcmwzaHFMWnJqNXIwZXlhb2hhOURiazVpWVhZbi1WS3BYUmk3MWFkVkdHTg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 29/100 (Low)
-- **Brief summary:** HUSSAINI ADAMU, FEDERAL POLYTECHNIC. KAZAURE, JIGAWA STATE-PREQUALIFICATION, INVITATION TO TENDER AND EXPRESSION OF INTEREST (EoI) CONSULTANCY SERVICES FOR THE YEAR 2025 CAPITAL APPROPRIATION PROJECTS  etenders.com.ng
-
-### NATIONAL AGRICULTURAL LAND DEVELOPMENT AUTHORITY (NALDA), ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST (EOI) - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNUm9ieEkxc0JQZTM3dG8yUDNXOFpKQ1ZOcUJRRUc3WDRzOU9WUWY5cTdJMlNPZVNaOUllTkVRbno0bE5qSmRkeFptM1VJQ3N6REdWN0JkeEZBTHB1V0NGSVdyR2FRckhaLWlTeFZ0dWZMbDMwTXhDcXBSczlyc3BaSFFrdnhhM2xCdXd4R29NZkVjOU9wSWYxVVZkUDJCR1IzYkp6Z0NpeFhxOTRyN3gyTmlSdTRsamZWYjQ4ZjhpX1BiRDA2OU1jclVUZGdFZmI3WFhpVg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** NATIONAL AGRICULTURAL LAND DEVELOPMENT AUTHORITY (NALDA), ABUJA-INVITATION FOR TENDER AND EXPRESSION OF INTEREST (EOI)  etenders.com.ng
-
-### FEDERAL UNIVERSITY OF AGRICULTURE, MUBI, ADAMAWA STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR 2025 CAPITAL PROJECTS - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbFpOODlTd19NdXVNeHc5UkNCWHJNZ1ZwS1JzVWhyNHJHS2pVOUctb241bkhSa21uTV9ORi04Y1pLazF2ZW9MZEZsTUVlU0djMldIbjYwWVJsVEFMZ2ctNG1jQ3JsY2pOMW5LaWFEZl9oVlluVk1OTFVhd3JYNW5waGVfVmF5RHE1bG1DR0J6b2VMVGExZ3VQd2VoTHlpX0hjVUlZdC01dERHOXNvd2FXcUhOQV9ycG5CLUFMRUl0TlNrLWNjb0FNZ1BsMkxqd09fakk5MEhXdFhjbFVRRUE1bTFoZTNudw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FEDERAL UNIVERSITY OF AGRICULTURE, MUBI, ADAMAWA STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR 2025 CAPITAL PROJECTS  etenders.com.ng
-
-### ‘Managing reputational risk, compliance and governance’ - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxNNTVjSUN5a2V4aHdRdGRqdW5UZHphQXhkR2J3ZkxKWTJYTGRLWndZNWpzWmo4ZGVTZjFMcmlIQnNucW5XYXBXVnlyLUlGcmUxRWpETFJTLWVkNkw2WHRIWXpwRGtITUtWLUV0U1RfeXRHdlljQWFwbHFOaGczWTB5LVlvcnJfNTlhZ1hmSEcxYzl0Q2RoRlE?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** ‘Managing reputational risk, compliance and governance’  The Guardian Nigeria News
-
-### UPPER BENUE RIVER BASIN DEVELOPMENT AUTHORITY, YOLA-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeC1BWDNvZlFmNElCNlRaNGh1djZxSkNWYVRVbE1LOUZTOXdRSG16dWF6MDY1SWRkMEVoQVdySGIwQXJOM3FNVGhlWWc1SGVhT1ZSOTRSaUYxNi13blNNQTIzWm1jSlplOEQtcjhTbVIzLXg3UkJhMVUtWnNfRVJpSk5zNDB5STcwVnVJOVI2OTRYQXU1aTNZQUNDXzJXOE1yR0pCMGYtS1NFVHlyemUzZ3JuVTNvYlJRRmRNb2haTlBSZDdZTV9uckhyNjRoUFVWay1rZ1o5a3gzeDgxZ3cydVpPdTBBTjlK?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** UPPER BENUE RIVER BASIN DEVELOPMENT AUTHORITY, YOLA-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS  etenders.com.ng
-
-### UNSOLICITED PPP PROCUREMENT GUIDE - Infrastructure Concession Regulatory Commission
-- **Source:** Infrastructure Concession Regulatory Commission | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxNWUx3V3UwUjlZVWVMMFlmTXlTZ2F2YmVCM0tpb0EzME1PUDVuT1lxZEFCZ19qR1BGQndPLWU3eGQ4MmNmQ0owOVRXX05zUUNRZHZ2QllVUUkwVVJyNG1WNDdGQmhIV05sWW9vM3p6eS10bmVnT1Rtc1dtTjJUc3g5RVhEN2VBWkRHNnl3enpydkhpZw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** UNSOLICITED PPP PROCUREMENT GUIDE  Infrastructure Concession Regulatory Commission
-
-### PROJECTS DEVELOPMENT INSTITUTE (PRODA), ENUGU- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeDA4dVA4UHJVbXo4UmtwZHFKLURkb1ZueFZEdlpwWmJBeWFDNTB1SG5EN1BrVllJMXlDWDdVeDVoOEpHUjkzYzlmU1dDLXA0WS1NckZIVUJOMG5VVjRrVk5DcXI3YlF0Q1hEb1J0YnRkUzVkdktXemVtcUY5YUJoY25IVnU3elhWcmxGOU5tOVNyZ2FvWVJMY3ZIbFMxNXhUNERkRl90WFVhSWk4RGF2TE10YVJ5MDdhdFU1b0x2V3dabWk2X0lCUUI3QmRyUEtKT0RRYzNxU1Q?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** PROJECTS DEVELOPMENT INSTITUTE (PRODA), ENUGU- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria  eBid Nigeria
-
-### A LAW REPEALING AND RE-ENACTING THE KOGI STATE PUBLIC PROCUREMENT LAW, 2014 ESTABLISHING THE STATE COUNCIL ON PUBLIC PROCUREMENT - Kogi State Bureau of Public Procurement
-- **Source:** Kogi State Bureau of Public Procurement | [Original Link](https://news.google.com/rss/articles/CBMid0FVX3lxTFA5WnpMNXdVRHVGWFhXMHBNQ3ZPd2lEeTZPdk5WQ2MtNWN3aFA5c2lQU2V6OU5OWGxubEwzazNFeVQtQ3VxckFPMzliNFVWcUgyZ3h3ai1rNjJ1aUd1ZWhfOVZnYVI1dnpKbnQ1QzFoQjZuUTlsbDZz?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** A LAW REPEALING AND RE-ENACTING THE KOGI STATE PUBLIC PROCUREMENT LAW, 2014 ESTABLISHING THE STATE COUNCIL ON PUBLIC PROCUREMENT  Kogi State Bureau of Public Procurement
-
-### DAVID UMAHI FEDERAL UNIVERSITY TEACHING HOSPITAL, EBONYI STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMi9wFBVV95cUxQT3hpT3JlX1JnbHl3QXVXMlhRZ0dBbHcwVkNJUUI2MnZWZ1ItUDlVbjJoTlJfY0JOaUNMYWhnSVFFbHUwZFI3TExtR01MdWNjc19CTEJuWV9NTjJIc3cwV1dmdW45eEl1VHhQdnZKZGFZelBFVkk1Z3VRT1hqVGtYb2pQekVGWHQ4WFJxVElGQXNqNjZSZ25CMXZzNUM5T0ZsYlZtRlFJWnNqc0ZJNGVJTUZXeFFRTmRqZ2RqQ3FMdkJYRHRjdTZQazd3ZVlDLVpQRmQxYTZ6MmVXLWRia3V3OUtJM3kwT3NXOTViRnN1T0RrdnJvTkZN?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** DAVID UMAHI FEDERAL UNIVERSITY TEACHING HOSPITAL, EBONYI STATE-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS  etenders.com.ng
-
-### FEDERAL CAPITAL TERRITORY ADMINISTRATION (FCTA), ABUJA- INVITATION TO TENDER AND REQUEST FOR EXPRESSION OF INTEREST FOR THE SUPPLY OF GOODS, WORKS AND SERVICES FOR THE SECRETARIATS, DEPARTMENT S AND - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuwJBVV95cUxOZ01JOFFxT2NPR1ZYallwdnhiTnB5VUhuLXB2M1ZnTWRGajBjU09vbjl6czY1NjN5ZWdweHZtQ3FTWC12MHNrQXZ0ZzZvT2hpLXRNeDhqRTIyT24yLS1GQkJYMDNKd1Z5ZG1VQjMzSnRzVTlpV0p2dmtQRTN1MXJFTDB2X1UxLXM1ZWlRVVNLQzF5M3hfbHAyQ1ZYbWtvak53MUhZME15clZxLUVwUUdXVGxkWDI4cVpaemFVZXRwanhXV21oNTZfR0gxOTVJYnV0VUNacndBQkx2RWRIZGczTEh1aEd1NWloSzdlb3VWLU5YVlZsVXZYNWxUeThlV0d6SDBVdkJLZEp6ekk0RkNuM2pxWTJTR3I2N0s1YmxsUnRpb1d1cFV0R2psTU9wUFhRVVRhakhLQzBRNGs?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** FEDERAL CAPITAL TERRITORY ADMINISTRATION (FCTA), ABUJA- INVITATION TO TENDER AND REQUEST FOR EXPRESSION OF INTEREST FOR THE SUPPLY OF GOODS, WORKS AND SERVICES FOR THE SECRETARIATS, DEPARTMENT S AND  eBid Nigeria
-
-### Bureau of Public Procurement - Bureau of Public Procurement
-- **Source:** Bureau of Public Procurement | [Original Link](https://news.google.com/rss/articles/CBMiNkFVX3lxTFBLYmxrSjJTYW04dC1tUkpQLXpTWFhYOUdSeTlOU1FTa0tJVXZiNDhRUkFNenVrQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Bureau of Public Procurement  Bureau of Public Procurement
-
-### ABOUT ANAMBRA STATE BUREAU OF PUBLIC PROCUREMENT - Anambra State e-Procurement Portal
-- **Source:** Anambra State e-Procurement Portal | [Original Link](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9rTGhURlhwS0FpbDd3cHlabzM3cWdlUi05ZUpEQnJWcVZxYUNHRVlPRFl1OVU1RDJ3cXJJNkFfS3poZmxNWktlYkNMRUNuS1lTbFE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** ABOUT ANAMBRA STATE BUREAU OF PUBLIC PROCUREMENT  Anambra State e-Procurement Portal
-
-### PRINCIPLES AND PRACTICES OF PUBLIC PROCUREMENT A PAPER PRESENTED BY AFORLAYAN KEHINDE WAHEED B.SC, MBA,MNIM, FCAI ASSISTANT COMMISSIONER (PROCUREMENT UNIT) ON WORKSHOP ON ACADEMIC INTEGRITY FOR - Independent Corrupt Practices and Other Related Offences Commission
-- **Source:** Independent Corrupt Practices and Other Related Offences Commission | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxPTTExNGx3N0hyTFlwVU9taHB6bHVseW5hSDhXNEZSbTVtY09JYnZuYmtnQmZZbFpMcURMZFpYd1M2bHliazFXMzh3NWZBcGRJQjA3dU1MMV9KY0loTjBrdVpNUW1YMEhrMHVxd2pxVkZQakcyOGNFM1NDZnRfQ2V4TXNyUkpWeGdMdGZqVkVjenlYVDZU?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 27/100 (Low)
-- **Brief summary:** PRINCIPLES AND PRACTICES OF PUBLIC PROCUREMENT A PAPER PRESENTED BY AFORLAYAN KEHINDE WAHEED B.SC, MBA,MNIM, FCAI ASSISTANT COMMISSIONER (PROCUREMENT UNIT) ON WORKSHOP ON ACADEMIC INTEGRITY FOR  Independent Corrupt Practices and Other Related Offences Commission
-
-### NIGER DELTA BASIN DEVELOPMENT AUTHORITY- INVITATION TO TENDER AND EXPRESSION OF INTEREST - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxNRmprYm5fVkJidW5FTE44WTRmeVNNMTk4dEk4eW5nWUx2NEo2RDRjOXhQbC1RRGE4WWp3d0EwVTdibG9wZFZXeXFVV3IxSVp4MWVGdFlEOV9pYS1SX1UtSlBRLWh5OGp0bkJrdWw2Mk1mYnFSRFBZQ2dsaF9aNkNZYkpBT3lnTmJsbkRCQkFkdlJLdkZfeXM3d3plcmhMMlZWLUtSazV4X29JeEZoWV9B?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGER DELTA BASIN DEVELOPMENT AUTHORITY- INVITATION TO TENDER AND EXPRESSION OF INTEREST  eBid Nigeria
-
-### Halal Certification Authority Director of Compliance and Regulations, Alhaji AbdulAzeez Ajala and Operations manager Mr Soliu Abdulraheem presenting the #HalalCertificate to the Management and staff members of Quantum Packaging Nigeria Limited #Hal - halalcert.com.ng
-- **Source:** halalcert.com.ng | [Original Link](https://news.google.com/rss/articles/CBMizAJBVV95cUxOOG8zQ3NiazZDUWEzbFFtemxlQUZ5dE9uN21ONWw3TlhFZWhKNzI0VUpuVmhPejV5Q3AyTDN3WXdMdW1zdTJYa2VzY1Z0WWhMQ1JSd09ZcFprS3gwd215WWs5RnFpN3lMVHhsRFhZdHhaeVZoNFJzeUxGZVVXZzM4d25HekltYlF3d2Z0RUQza2xfYktzSzNaQUdaNFJuMFlvMUpBd0pLa1JreEZpTDNEcGk4SzhJU3EtQmRZbHJ1TllYQk1zODc0MjdOeHY1bGRDMFNhYkk1TTR2bDB3cDlqcm1YeFlCUGktMWJUYVRoRGVjSE13RjVpdXBkOTY1anlvVW50Q0FxMjFNMWx2UWdEbmg3aFU0ZHRQdlFuNVhpdm5LSmJ0TWt0Z3FSVUZWN0s2cHFUQ3ZKUlFGZTBkVWpKSTZtU0VuOXF0OVNrZQ?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 34/100 (Low)
-- **Brief summary:** Halal Certification Authority Director of Compliance and Regulations, Alhaji AbdulAzeez Ajala and Operations manager Mr Soliu Abdulraheem presenting the #HalalCertificate to the Management and staff members of Quantum Packaging Nigeria Limited #Hal  halalcert.com.ng
-
-### NLNG- Invitation To Tender For Engineering, Procurement, And Construction Contract For Restoration Of Train 1 Main Cryogenic Heat Exchanger (MCHE) To Full Production Capacity - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMitgJBVV95cUxOSWpLemw1SG1Mc0MzNm94WXMwZWJ0Qm9uelRaTkdMRV8zdElINXpiczNNNjJ2R0lGeXZMdjBBNTZrUlh4cEFfODBmWjg3bFViNTMtVXJLRXJ0Uk03MWQxb241MzdXQTBnQUwyeG9PZDNIZTEzT3NSWGNzeWJOcm1YUl80WnY1TGpEd05RNnU3eURQSk0zVHFvUzg2MVZ2MGVScWV3Y2h3NlVzeUZWeTZqTlByLUlPbm9aRXNqLVJmZUZnOUJ3T2RpcXJuSjIxM2xyZzVDcGpBSmxXYzktSkhGaUtIc0NyMGRrNjNQYXZzVGg2ZWpfRHVldmtDa25BQTRRNWNvT1NLMms0dVUwU19KY090REp5Tnl5VTJBWGdtc19sTG9LbWJOSFFQV3ViUjRYNl9DRk1n?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** NLNG- Invitation To Tender For Engineering, Procurement, And Construction Contract For Restoration Of Train 1 Main Cryogenic Heat Exchanger (MCHE) To Full Production Capacity  Nigeria Business Information
-
-### Fairtex PROCUREMENT AND DELIVERY OF TRELLEBORG FLOATING MAIN LINE EXPORT HOSES AND ACCESSORIES FOR OKONO TERMINAL | Projects - Fairtex Nigeria Ltd
-- **Source:** Fairtex Nigeria Ltd | [Original Link](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNFhNcHVWanN1M0gxN0lQaDQyQ3JyMGV6SVlTTVpKTFRnY0djNGRrY2tzV0d4Tmg5cVMxWEVhVUxYRURXZzltZFRnMnF4aVQyTTJnXzBWSFRYcWVEWmFRNkFaeWRxcm83ZHdOR0dJLUVtRi1BQ1VZYy1SVmtHejhvU0ZVdENqMGwxVnFOOEhISGVHLU9wbkktSEZKSmg3NUFVQmVzVWRfLW5nSlNmYXBiT0J2NkJnc1ltMU9ERTNBaXlmSXd3cVBRVnRKeVUyRHdXalQxRUdn?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Fairtex PROCUREMENT AND DELIVERY OF TRELLEBORG FLOATING MAIN LINE EXPORT HOSES AND ACCESSORIES FOR OKONO TERMINAL | Projects  Fairtex Nigeria Ltd
-
-### NNRA KWARA OPERATIONAL OFFICE CONDUCTS COMPLIANCE AND PRE-AUTHORIZATION INSPECTION - Nigerian Nuclear Regulatory Authority
-- **Source:** Nigerian Nuclear Regulatory Authority | [Original Link](https://news.google.com/rss/articles/CBMisgFBVV95cUxQZGRPcXZEVFRmaVRIV0o2RWRIVWFnNGlSTnFHcWVhVk9CVE4tQjVUakFUOU5HcnpsVG1Idk9paEYwNE5CdjRYaExfaFlZaGYtbjNVSGEtdk4tQnJaZ2tVYmtVTUoxam1GTmMwSnJ2STFNOGVTN013bnBFbHl5VUFCTzFVTkRLa0xGeHZDQXo2NElpYmJXUnRjUU9UNFRIWUhzUXlrREplZTVhUmJKVHZiY0NB?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** NNRA KWARA OPERATIONAL OFFICE CONDUCTS COMPLIANCE AND PRE-AUTHORIZATION INSPECTION  Nigerian Nuclear Regulatory Authority
-
-### Quality Assurance Compliance and Monitoring Report - National Board for Technical Education (NBTE)
-- **Source:** National Board for Technical Education (NBTE) | [Original Link](https://news.google.com/rss/articles/CBMifEFVX3lxTFBJQmhjVmRIVUEzQzVlNTR0S2M3UjgyVExIN2xJSmxCU1Q5Ukc0amFrT0x3VWVNQjRZdldrV1pFdlJVQkVra1pCWTZGc0htY0tRUmlwaDNuNTUzYmtnMTZvNmtEZXJQYnNNN1RSclk4Sms5cGJSVUVUYXB0Zjg?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Quality Assurance Compliance and Monitoring Report  National Board for Technical Education (NBTE)
-
-### PROCUREMENT MANUAL - Anambra State e-Procurement Portal
-- **Source:** Anambra State e-Procurement Portal | [Original Link](https://news.google.com/rss/articles/CBMiekFVX3lxTE5BVHhtMlJxZVZNNkY0X0s4Wmk3UHZxUFNaNklpYmw5UW9xNTlsVmxoMjdBSWptQ0FtbjZoTXZPUWRXcmtkdU0wOUZLWmg0Rng4aDNNQUJyMFl1RGw5X01nc0lxNHBIMWtRcjFNaFNGRVNqcGlfRy1fOGhn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** PROCUREMENT MANUAL  Anambra State e-Procurement Portal
-
-### PROCUREMENT AND CONTRACT MANAGEMENT - gifmis.gov.ng
-- **Source:** gifmis.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMifkFVX3lxTE56YVBrZWFnMlBhdVF4eW9KcjdpbWdhUDh5ckRuMy0tbUE1bTdmRFZoYWFLT2RKbVJteHhuZnR5dFYzTXFjbHBTMUR4SlFIMnFOWk14UzY4UERaYUs3M3UyamxoMlgyeXZZM2c0VzlTWE5rRHpfd3hLeGh1cjdQZw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** PROCUREMENT AND CONTRACT MANAGEMENT  gifmis.gov.ng
-
-### Innovation vs. Compliance: Finding the Right Balance | - depl.com.ng
-- **Source:** depl.com.ng | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxNYmZyU3dZUlNXS041Zjd4cVB3TnQtZ0tyQmV1enVETUZLOHU5M3g3alo0b0tZZjBvRWRQNGNfQmpqc0dyQ2Nfbnp5TmZmTkRXWFA4cm9OOUI0RVM2M1kwcC1OUFZVOEh4QUFvbVY3RjlnQktZaEIxT2duV29EbnJ0MnlUMmRnR3BqZzVTQUFR?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Innovation vs. Compliance: Finding the Right Balance |  depl.com.ng
-
-### Hydrocarbon Pollution Remediation Project (HYPREP)- Invitation To Tender And Invitation For Pre-Qualification For Projects Execution (Corrigendum) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMikAJBVV95cUxNV3pZUFRiWUphMUNYT1I1Qk50YlRTdTFZTXJfbjRhc1BnR2FpNGNDNjVJbTIxOEFMNENtMURjZ1pBdXlvQnBab2tjWDVjQjg3WVBhMWpzdjdGdmxELTZfa3FBMzUxSFA0YjA3cUhRZXV2cHpSdUt2RVVYVVdmWEdWR2FTQm1oYjUxSzFTRXgxNjNhZTFlTTNQRF8tOE5VVFN4bTZ2V1FZbWd4dVhjRmxFOVhIOEZPbC1qV09ucGJodHVZRWRya2tWN1JCQ1kwTmRKbUFxejdjWnZfQWZ1cDBMa0pDYlY1Mlg5aEFKQkpveTd2NlFOeFhrclJBZGlqX3dXMVY2eTRaRnl2QjhDanJ0eg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Hydrocarbon Pollution Remediation Project (HYPREP)- Invitation To Tender And Invitation For Pre-Qualification For Projects Execution (Corrigendum)  Nigeria Business Information
-
-### DAVID UMAHI FEDERAL UNIVERSITY TEACHING HOSPITAL, EBONYI STATE- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiQ0FVX3lxTFA5WVRBMEVRRUU0TDZJdmg5V3A3SFVHRUFyWmpQT1hwSkh0MjByQlJQenFkWmprN2JuWW8xVm84NjNueXM?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** DAVID UMAHI FEDERAL UNIVERSITY TEACHING HOSPITAL, EBONYI STATE- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria  eBid Nigeria
-
-### OGUN –OSHUN RIVER BASIN DEVELOPMENT AUTHORITY- INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR PROJECTS UNDER THE FY2024 APPROPRIATION – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi8wFBVV95cUxOMDdsVnBiZXBrWkJELXhtRDdiU29KR0tZNmllX2N0MmNhNUVDZXdud01pZ1dJaEVBZGppZkw1a25zVkM5Wl8tMEFLN2dvaVAwNzBybWZTS3h2bW9sanNkUFN0dWwtTkx4a0JZc01ZNGpaTVBDaHp6R0NoMXR0MUozNVNVSDJZNG5Bb0VCWkY0NV9VUjJZWFVETzByQktoZVcwdXlsOGxGZEFiVWpzV1RoRmo3WF9NQl95TXJtX0trR3VlVkpmWUxtSGQxZnhoWGlwUzFlc0p1TVFHZ3hBR2tpMDg4YVdNNHJIeFlQMEpGX3FWNTg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** OGUN –OSHUN RIVER BASIN DEVELOPMENT AUTHORITY- INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR PROJECTS UNDER THE FY2024 APPROPRIATION – eBid Nigeria  eBid Nigeria
-
-### National Senior Citizens Centre (NSCC)- Invitation For Tender And Expression Of Interest For Project And Services Under 2025 Capital Budget Of The Agency (11 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMipwJBVV95cUxQM1ZBcVptM0F1Q1AxbFVCS3VscnBGNEN3OVRlTXBEV2tXalZYNkdjNUlrMHo0c053cDdpRU5rWXNYajFfSkMxcm5hSzNCN0tLT3FPNV9venZXSnd1VW5QbFlPQ0dlRDh2eTRQUFpObkZvZlFPbHo0UEtOcTRIdzg1QjZBM1V4QTV5cldWTURBU0M4UFdoQTFNanRoNHlsOENLaUZtdU51cm5JSzF4VGZyOHl3aVFvRzhtMXJDZll0Z3lBbGZZWXQweGRWZWxkVllkeWxKckZZRzdTVGxqZnNaa0U4U3A0UldqTlBfZWk0QURhZ21fTncyLWhYcGJtaThzWjU1NlBCemdhNmEwRVBwLUtRWjNuRkJjc0x6MlVYQ25sT1duVXYw?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** National Senior Citizens Centre (NSCC)- Invitation For Tender And Expression Of Interest For Project And Services Under 2025 Capital Budget Of The Agency (11 Lots)  Nigeria Business Information
-
-### National Senior Secondary Education Commission (NSSEC)- Invitation To Tender And Expression Of Interest For Execution Of 2025 Appropriation Of The Commission (26 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMirAJBVV95cUxOS0UzVzdXMTdhOE1TWmtwWGlwSk1LUWdsWkp4MUZRYVRPNGRoR2ZWb0FIWW5KNGs3T3g5NklsVE5GTHBKLTZhelpyM3ItSVJ5UEtyaF84U2Ixd2pHcnlSa0RaT0xGSk5sQTJYbEVXNlRDRDRuTE1nV1VHdnA5amduWkhTQ2ZMX2FpWk1WLW9nTmt2TXlpc2ttdnZyY0NOdGFoZTNEbnhZM1NubElnelhvUnZTZ2hHSTZPaWtFLVBfNWgtVDN2Q0hNeWhBalk0ejg2Ul9kMDB2akFuS0NzZ0QyTmZIWVFvcUU3NXlDTm9yMjI1c3BWeFIzZ0g0ZFFhc3BjYkNjZE5QSGNXM1ZuX3BYMDNMUVUwRDc1dzJGY2ltckZNbFY2TFBkRkZ4R3g?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** National Senior Secondary Education Commission (NSSEC)- Invitation To Tender And Expression Of Interest For Execution Of 2025 Appropriation Of The Commission (26 Lots)  Nigeria Business Information
-
-### MARYAM BABANGIDA NATIONAL CENTRE FOR WOMEN DEVELOPMENT (MBNCWD)-INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR THE EXECUTION OF 2025 APPROPRIATION ACT - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMijwJBVV95cUxQTWtrU1JqYzV1Y1h1aG4wU1R5YmhrVHlCajVBSGhOdk1RU3l4SmpFMTFYR2Y0YWF0VXNXd1JJODhNa29vcl9wbHJmeU5CN2l1c05vLUVrdXZvMmMzR0xIUXZSaU1FYURKdVdWM2p4TXIydVVoSlExcXNEc1FIRUhpQUZ5MkZVVERzcllSRmRCUXNTOEdQWllXUTFxeGd6X3ZFN2oyOEdpczNkYTZ3SVA5VXNIcU1DT0t2TFpYdWowZ0QyRmlqbVlmM1kwX1BsNTBZU19qOWYxRGdnNXhZSFVXaTNHU3hZUEUwSUhrZDZqVHVLQ19FUHRDT0hoRjJsN1N1STgxVmVDSGlZS2t0cmw0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** MARYAM BABANGIDA NATIONAL CENTRE FOR WOMEN DEVELOPMENT (MBNCWD)-INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR THE EXECUTION OF 2025 APPROPRIATION ACT  etenders.com.ng
-
-### Untitled - Ebonyi State Government
-- **Source:** Ebonyi State Government | [Original Link](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSXl1LUVYUFFhTFFtTklTZWZId0hNakFwVWhQUDFEcUtDQm5EeUh3UllqeEt0Y3hnR1lBOEhTemdhM3QyWkJsOUFFLS1IWmdnMlYzZ0U1MFYycEpSMkFjM0pJZXVpck1FNlVlYmsteUhOaDZrR2M3dVZyaUc0ay1teHV4aXQwUkVBZEsyMDExNGxta2ZSUzhsaTRDWlo3N2F0d0R0QzZkbzhlVHNwc3FRc0RHTE5rZl9pN3J5XzdhMzlPbmhDcTNwMElqalVxQVRKQjRKVExpbVNkQjZaOXNjWjFn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Untitled  Ebonyi State Government
-
-### The Effect of Compliance and Non-Compliance with CAMA, 2020 - Omaplex Law Firm
-- **Source:** Omaplex Law Firm | [Original Link](https://news.google.com/rss/articles/CBMiigFBVV95cUxNN2Ywclg5OHdkckhwOTgwT3h6QTVtZkJuaUhzcjc3RjRZcW5zR1Z5Zm9ybDhaZmFuRVhORkxzMFFPaGhNWEdDLXUwaENZaGQ5b09yXzUxUjdZa3VXZFVTMkQ3TDZUcUVScnpoZ05oV3V5YlhGYlZKbDJfMjRKX2Z5amx2cDdIemdHaXc?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** The Effect of Compliance and Non-Compliance with CAMA, 2020  Omaplex Law Firm
-
-### FEDERAL AIRPORTS AUTHORITY OF NIGERIA- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR PROCUREMENTS UNDER FAAN 2024 IGR BUDGET (WORKS) – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi7AFBVV95cUxQaWt0T0RleG5uQU9sTzA2UElCVUpvTzY3c1l5M3NXc29SVS0zNEI3Vm5hRGQ3d2pzeENBYmZzNmZVcWdINWhzMGl4RnNnb282NVRwcktGTFFnTnJHVGE2dWtiN1FXYlkxTHpyNFZIN2hLb2pXUFREMTV3eF9UR3E1NnRlVWt4aks1eHdtSDNGNDU1ZERidGhtN3BlRVN3N2lEeGFacE5PVmdDS1pYaExxMnh1cUowVExWZlNuazIyaWlIRERKbWR5dWNvb0pRb3RHSWpkdXlFYmFiT0ZzQWswaFRBTkZVYXRUcXFPMA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FEDERAL AIRPORTS AUTHORITY OF NIGERIA- INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR PROCUREMENTS UNDER FAAN 2024 IGR BUDGET (WORKS) – eBid Nigeria  eBid Nigeria
-
-### Damagix Engineering Procurement and Construction - damagixepc.com.ng
-- **Source:** damagixepc.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiakFVX3lxTE1vNUtiRzIwX0V3MEYtMlVyOG9sOGpBal91QkR2ZHlZRk16N011RnZmQmRZaGkyc21WMW4td3QtdTVQU1JjWGthTWNQYTgyUjNFSWhXRXlkNGZSQkl4OXNHM0lfd08xSE43Vmc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Damagix Engineering Procurement and Construction  damagixepc.com.ng
-
-### Ojo Local Government, Lagos State- Invitation For Tender And Expression Of Interest For Projects Execution (15 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNmlzeDFoNmwyVTQyTnJNU2JGYjlkOHdPMlRmaFNrVjFWb0NXMmdJMFR6WEx6SE9IYXVvZG1OZ254b3VBVzlIUWNGZFFUdHZSYWxub2puR1hBZkpzUGJ6X0ttcndmUU9wT01QM1h2VHo2S1l2dVRpZWQ1VFczMXIwVGR2ZGVnS1lrZnNuM0d4ZXRYd1BBc05qbUFpTjhicWh2MzRVaGNWTExXbzVvYjF5OXh6S3FuMnE3U1VrZGIzZmZqMXBIdnVWbGFBeFNwUWdHVEJBMWpWRWpTeE9qQUswcXhha1ktTVlkR3c?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Ojo Local Government, Lagos State- Invitation For Tender And Expression Of Interest For Projects Execution (15 Lots)  Nigeria Business Information
-
-### QUALITY ASSURANCE COMPLIANCE AND MONITORING REPORT - National Board for Technical Education (NBTE)
-- **Source:** National Board for Technical Education (NBTE) | [Original Link](https://news.google.com/rss/articles/CBMipAFBVV95cUxNX2dHZ3BiUXVnTHRDSk81UTFWNENvSF9oeHBTTjV1SzJxTmVrX3NkNU5WNkl6aDhwMkZoWW5KTk4xNnptUHJyNmZiWGFQYncwLXB1U1B5elNHZzdvbjZSdVA1TkhlcDRzbzYxUWNCTFZGWk9GcFpwZjk0REczcFAtRlh2cHpHcHJEVVMxbkNXcWV5S1kySXlvR1E4dThWdkFoNmFTdw?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** QUALITY ASSURANCE COMPLIANCE AND MONITORING REPORT  National Board for Technical Education (NBTE)
-
-### FEDERAL UNIVERSITY OF HEALTH SCIENCES, OTUKPO-INVITATION TO TENDER AND EXPRESSION OF INTEREST - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiuAFBVV95cUxObk9BN0NSRHpmVWdxODdTM3BON3lTMUtEQ2NDTUhOcWRsNHU0WFdUTF9adFRNU0JFaHBKenhrN0lkM0I3UkUxdmczT1BrUDB4YXJnNU43SmUxdnV0RDRjTW5LOU5KM2g0YTRDMjZFSEtWcFRQMjdEdUhBQ1dnNGxXU20ta1RFMG9WeUtmalVhWlJ3YjJqNjk3M0hUUXJMSkdEUHpIYkpYMUVweXBUM3M4M1J1UmlPenpL?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FEDERAL UNIVERSITY OF HEALTH SCIENCES, OTUKPO-INVITATION TO TENDER AND EXPRESSION OF INTEREST  etenders.com.ng
-
-### Untitled - Niger State Open Government Partnership
-- **Source:** Niger State Open Government Partnership | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxOOUV5V2ZkYjZaQm9ZM2ZhLWNxMldHLWF0ZlpnVENJWWc5aG51SjZvSHpzMEc4ZlpiS1JVbVRBSktCWWhXZ3lmU0xCbTRmM1htZE1hR0RQU21SNDNxVE0zeHJSV3plNElnV05mYjluUXdIblV6WUhXYWowOTlmT2x2enFYaFh3N1lST2lZUE93QzdVbkZ4cHd2Wg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Untitled  Niger State Open Government Partnership
-
-### Procurement & Supply - bnltd.com.ng
-- **Source:** bnltd.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBDN2JUVU1MLVNHdHhKMGFCdG9CUVh2RHR3aWk1Z3lTcjNBLUtvY25Obl81WHNRN0phMmMzdUswOW42anNaYWlvRDR4WlhxRUlRd3c?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Procurement & Supply  bnltd.com.ng
-
-### FEDERAL TEACHING HOSPITAL, BIRNIN KEBBI- INVITATION TO PREQUALIFICATION/TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNc1VUVWtPcGQzRW5lV3JrdUdtdEk4WnZMQzlxR1Vld2Vsazl2V2IxY2tBNVZWSlowZ0Q0Y2l3b0ljY04wWk96Yk1DNnlLNDVnNENHWFI0c0paa05lZnRRZ3Q5cjZ5UHlzbThKSHhUd3c2SWw3bXFEaE9yNC1URVlNN19BbGhNYjFLQzB5RHJNTk84SmhxdDZIcHl5ZTZ1TGJUX0hIbHJRMm9qQmVCZ2QzWU4wVTZrLUN4TlFaY3RiZU1NZjhrdGc2R1FISmdtOWtUb1ozNnl5YnFiSGRYbU9CNkxMNU9aNkxZeFE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** FEDERAL TEACHING HOSPITAL, BIRNIN KEBBI- INVITATION TO PREQUALIFICATION/TENDER AND EXPRESSION OF INTEREST FOR THE EXECUTION OF PROJECTS – eBid Nigeria  eBid Nigeria
-
-### OPTOMETRISTS AND DISPENSING OPTICIANS REGISTRATION BOARD OF NIGERIA-INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR THE EXECUTION OF 2025 APPROPRIATION ACT - etenders.com.ng
-- **Source:** etenders.com.ng | [Original Link](https://news.google.com/rss/articles/CBMilwJBVV95cUxPaFhKYjRSQlpJZXVvWHotUGUyMnFVM3pSRUozM0tnQzdTUW1uQVlSLTQxbGhzLTZtLVZ4ZS1Oak9lNG43NDQxOC1NYWtDWFJCQVNrd2JUSVRmbnd2M0VySkhrWFg0VTJrbmp3NndXd09tdlJOVmphcjV5R3hUSEI2VHhfazFvQnZwS0p5dXVINjBlSHY2eE1OVU96ZUY1Z1M0VEowRXVMQ2puSWJfZEk2YS1zankzbDNVdlNPX2YxOFFNd0hwcjBiUDRiU0hDVFVXazFzVlpGWW51S080N0pYNFNqaXBLWEhBUUxseDNjbTdWczZDRnc1cnc0dzF2NF85OEZGcl9VMjBJQkItWTVQX2lyakE0cHc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** OPTOMETRISTS AND DISPENSING OPTICIANS REGISTRATION BOARD OF NIGERIA-INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) FOR THE EXECUTION OF 2025 APPROPRIATION ACT  etenders.com.ng
-
-### University Of Port Harcourt Teaching Hospital- Invitation To Tender And Expression Of Interest For Projects Execution (14 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMi-gFBVV95cUxOcUVtLTlpc3NSUW1wdk9yTUY4X2l3OG1LRkpxWV9aQzdDZVBKREdka29yZDdKN1NYOVdvRmhIYlE1RFRJMDBLbG9WYTdNWVpGRXRZX3FVUTB4X2h5TUhBcFdxZmRJOS1wN1VxdkxTQVNJUHJqenRzOWU2bm5yMDJuSzE3MUhCUVlEV1l1MmxKME9qVmM1c3dhSmNRb2tyd0t3U2ZucFNkbGVfdldYZlREc19jS1dHNXUtVVJMWENEUEZoel81N1BPaW9xLXZRQ0lPVGpjM3BHb1g5QnNFaUNrZU4zOGdBUUM1eTNoTHNyb3VpaUpVNHRSZE9B?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 34/100 (Low)
-- **Brief summary:** University Of Port Harcourt Teaching Hospital- Invitation To Tender And Expression Of Interest For Projects Execution (14 Lots)  Nigeria Business Information
-
-### Energy Commission Of Nigeria (ECN)- Invitation To Tender And Expression Of Interest For Projects Execution (88 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMi6AFBVV95cUxNR0YwYXVzRGFtTlk1cEptQ25XQUtDb2lUNUlPbzg1MDVveUR4aEk5TUJ0RE9xRHRWUFFtY3NpLVplZmRaSUFvWWdmYS1ZLUFKVXlUeDAza2xrdTRiZ1QyRjJrNy00UE5KOVBsOVR4cEo3bk80NWozbDlzRGRoMnU1eTNuMjY1ZExZSG1kZWJMai11dUdVWUZvc3ZBQjRIaTgwVFFUR19vOUVEQlE0OEZFV3RGbHBMdVE5NjZUR25jWDJ4SUxjVlYtYk5NeWpRejdWM1B1eGNwbGFkdWpwZXY3bndkMVN1eHBn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Energy Commission Of Nigeria (ECN)- Invitation To Tender And Expression Of Interest For Projects Execution (88 Lots)  Nigeria Business Information
-
-### NCDMB, ICPC Team up for Excellence and Transparencyin Procurement and Human Resources Processes - Nigerian Content Development & Monitoring Board
-- **Source:** Nigerian Content Development & Monitoring Board | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxPMGhEZ3BNX1FwbWpfaHVDem82OTc1dko3NjhLTFp5M1EtVFFySlptNGFOdVhod1Nkbmozem9FTnZnTUw5cjE0cV9UTjJyTlJhTGp1RGJ3aWVza2JtMkpfNUlsTVJHUW81dzNyWDNWc3ctMnRvSzBlbDRwVmFSVFFjRUJOMm9QQU9iRXBUTXVPamNkQno0R1E4XzF1Q3FHV2JzbVowYVpiaXNfYnliNlVZZS1FSHVxZmM?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** NCDMB, ICPC Team up for Excellence and Transparencyin Procurement and Human Resources Processes  Nigerian Content Development & Monitoring Board
-
-### DAMAGIX EPC - damagixepc.com.ng
-- **Source:** damagixepc.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiP0FVX3lxTE80Z1F0cldoMFdicmFUS2Uwa29qbVhzMG51NG9vVHJvS3hmSThrbmwxVHAwQWlfN0lmT2xqc3dwdw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** DAMAGIX EPC  damagixepc.com.ng
-
-### SOKOTO RIMA RIVER BASIN DEVELOPMENT AUTHORITY-INVITATION TO TENDER, AND EXPRESSION OF INTEREST (EOI) - eBid Nigeria
-- **Source:** eBid Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizwFBVV95cUxONDR5NU54YThsUXdKWkJJWEZKbGZHY20yRTRZMExKMTlRY1V2cndXeDBzanZrRHFidlVDYlZHYWxBTVFwTU5NejZzdU9qSGVqLU40SlpoSXItaU9rdC1rWHRORkxGQjdlNURiQlk2bVVfLU9FdzB4UkxKWHFESzZ1SFlxaXpXenZNbHc0MjRhYTU4bVhVODdKU2txWlRjSUhtdzdfSEhiNG9SR2hwejlkOW5tekg1aEFkSFUxUTE1Tm1FdHdyQ0VsazN6WDJCaDA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** SOKOTO RIMA RIVER BASIN DEVELOPMENT AUTHORITY-INVITATION TO TENDER, AND EXPRESSION OF INTEREST (EOI)  eBid Nigeria
-
-### Sunbridge Consulting | Financial Systems, Compliance, and Growth - sunbridgeconsulting.com.ng
-- **Source:** sunbridgeconsulting.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiS0FVX3lxTFBkcE1nTGtKYWp4MkVCNHlORmFQOVpPTUlfaF9RWE9tSm9QSndYZWZJUUhMeFVxU0Faa3J2ODFkMEhRNEt1R0d6VGk3TQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Sunbridge Consulting | Financial Systems, Compliance, and Growth  sunbridgeconsulting.com.ng
-
-### Impact Project, Abuja-FCT- Request For Bids For Procurement And Installation Of Walk-In-Cold Room And Dry Stores Equipment; Forklift/Accessories And Office Items For Lagos Hub - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMiugJBVV95cUxOTmZ4TGY5cUZldmtLN1U0aFRZT0xVQmwyZVp4eENPemxWMEc4THNSVGZlZFk2QUloR1FYTW94eDQ1cmVEZFkzWG14UE5XWndVRTVwWWJmZjAtV2xXMVE5MUZrS0tiTGN2SkdvWXpmUUNPMFRDaVY4VG1UbTRpWGtrVS13ZnBBd1hNbWdobVg2amZ4WjI4a1NLcjFCRVJ2QnBwSVZZcWVmcHZWN2hvdlJMU2N4S0RtSDhvUDZ3bDJqTmNCckk5Q1dyYVJ0alluXzRsUHg1UDhZQnpkZTJidW9oVE5Idm5qNzlQcENKNy1hMC1DTVVSaFlyQzB6ZGJNYVd1cjhoS1dLd1ctcU9NWkRmMnRDcHpKeS0zSlhtMnJLZEVyNl9wVEFZeFRWbFFOaTYtWlZQT0xKeUdvdw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Impact Project, Abuja-FCT- Request For Bids For Procurement And Installation Of Walk-In-Cold Room And Dry Stores Equipment; Forklift/Accessories And Office Items For Lagos Hub  Nigeria Business Information
-
-### Federal University Of Agriculture Mubi- Invitation To Tender And Expression Of Interest For 2025 Capital Projects (12 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNUE1UTFrYjUweGlYNEUxOG1xS3NnVDJrSVowNVd0SDlWQXJDbU9IR1BuRGRwVFhPcTRZUnlHblRjenBOZ1NlUUc2SFV2WWRDZGdkVkVseldGMk5wbV9pRVpDS2JFUjhaenoyMzFhWVg2RncyRkd0WC1iS2o2UHpaT05QWF9ibE90YnZIVG05WFo5S21IeEIwT3l4SGlEYmdmT1dNYXpXWlBuWXVaMEs3cUZkWlRLSTgxdjFDZW4tbXZTeGVHVEZvQnFFQ0FRZVJjT2Q3a1pobEZRUTkwcHdrbmlCYnFFV25qblZBRGczWmxMT0NQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Federal University Of Agriculture Mubi- Invitation To Tender And Expression Of Interest For 2025 Capital Projects (12 Lots)  Nigeria Business Information
-
-### Federal Ministry Of Information And Culture (FMIC)- Re: Invitation To Tender And Submission Of Expression Of Interest (Corrigendum) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMi-wFBVV95cUxPd3o0dEFxeUNianBtZzc4X3VaM3pQMGljWVllWnctSGlaUms4bEhsbVFZbjc3dHY3aXQtTVFfVWVNV0tWLVhqeGJMRG1HM3FObkk5bGh6NnUtbkotcndTZFVmM2d1MGxfYS1MRHhGcGpfa2UtcDA0ZUdLMHVKNVBtamxJVVhSNFRLcVFESDVoMnRiV0JhWFBZWl9HTmpOUWgtVjVkUzhwa3RSMG1taDVHcXlKcFdLRkMwdWFsMHNId1RISmJ5TVVzTGpBclRsbUs2aFRXdWptM2pSNkFzNlZyTWhkbEJ1MWd0UVhCSTBPbTlhSy1PTWYzU3RmOA?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 50/100 (Low)
-- **Brief summary:** Federal Ministry Of Information And Culture (FMIC)- Re: Invitation To Tender And Submission Of Expression Of Interest (Corrigendum)  Nigeria Business Information
-
-### INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI) - LNRBDA
-- **Source:** LNRBDA | [Original Link](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OdGgtcDBpNlV5T0dEMlZCMjNFZ2hObXkwTE9Fdy02aW84U0FORWgyNl93OG5fNDdabGhEU0VZakxrY2hVUmI2cDc1TC1IeVpVRUxueGRrSXplMXRI?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** INVITATION TO TENDER AND EXPRESSION OF INTEREST (EOI)  LNRBDA
-
-### Port Harcourt Water Corporation (PHWC)- Invitation For Bids For Procurement And Installation Of ICT Tools, Equipment And Networking Systems - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMiiAJBVV95cUxPdFJhcmV0TkE1b0Q4VzFNR1c2ckduUWI0S1hHakEyVk4xUjZJYWdtNndJR1pwTExCekZrYjBvdUdQUkU3cHdLUEJaWjRmdzdPMnZySEFMam8yZHVqbllaekRzUTU1UlBNYzNhNVJadTk0X3JmeUdrYUsxbU1hdVF3MGpOLUtDaTVya2RzTTNaUzFBQ2loZEdsT0pyS3VjUFpSNGF4SEhuMlZJTmp0Q0hJZWtnWUZ5R1lwdXRudFllUmcwNFhtdTFUX0cyS2FQZW0zdWtHbDdoMERUUnVrSUstTjk2VVhsVkhnM0s0eFNLcTgyZ29NZV9ScjVrT2dndlZ0RGJtY2ZHakc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 34/100 (Low)
-- **Brief summary:** Port Harcourt Water Corporation (PHWC)- Invitation For Bids For Procurement And Installation Of ICT Tools, Equipment And Networking Systems  Nigeria Business Information
-
-### PROCUREMENT AND SUPPLY - lazioenergy.com.ng
-- **Source:** lazioenergy.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiakFVX3lxTFBoZlhYcGtKU29YX3Nua3dqYjRSVUFLY1lhY0RaVFBORTVRb05xSUxtZkJURXA4UjRTZzNsNmd3OFlRNU5Vcmw4Ukpub24yQnljdm9qMjFOS285OFNOZWFBUEpxaWtDR244RHc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** PROCUREMENT AND SUPPLY  lazioenergy.com.ng
-
-### Lower Benue River Basin Development Authority- Invitation To Tender And Expression Of Interest (EOI) For Year 2025 Capital Projects (108 Lots) - Nigeria Business Information
-- **Source:** Nigeria Business Information | [Original Link](https://news.google.com/rss/articles/CBMiiwJBVV95cUxOdkljTGU1WERyRHV4ZEpOSENqREx5dl9DWjBSUXJJN0dwTTloeUlVME9BSFpfTnpRWGZKeUhScWNCeHhnU3lHV2FNVGhTOE43eVZXUkc5anRlYl9rSlVWZEFKbmJNVEhTWXVQcTRZSllQdVRTX1czcnpVVklZSUdvN1ozaXc4MEg2Ui0xbmRtb29hdHlOSkpvSzh2eWdrakVSZTI1M3MtdUk2cGRLemRVc0lvQW51akNQaUNCS012aHJPb2JmazJfODdDckdDSFZuQ3VGLU8zZHZ2WjhfZlBWMDljc25lRHl5VGNYa0xIWlg1dXZtamU3OTVTRnZ5MjJyZFRjTVQySDJwd1k?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Lower Benue River Basin Development Authority- Invitation To Tender And Expression Of Interest (EOI) For Year 2025 Capital Projects (108 Lots)  Nigeria Business Information
-
-### PROCUREMENT AND INSTALLATION OF SOLAR STREET LIGHTS AT KWAMI, DUKKU, FUNAKAYE, NAFADA AND YAMALTU DEBA (NAFADA TOWN) | Dueprocess - Gombe State Public Procurement Bureau
-- **Source:** Gombe State Public Procurement Bureau | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTE9Ub1BVd0J1TnJYd25rSlhSOTFNd2s4VTV5R0JQZXFCZU9MWVA2MVAtYVlUOFRVWWVRdVJzQmhOZ3F5RWlxVC01MlQwdFdVMG1aa0VGY1JuSEQxMmNaWUN1S0g4OXNydDZoOXlKOXRhZDJObzNq?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 37/100 (Low)
-- **Brief summary:** PROCUREMENT AND INSTALLATION OF SOLAR STREET LIGHTS AT KWAMI, DUKKU, FUNAKAYE, NAFADA AND YAMALTU DEBA (NAFADA TOWN) | Dueprocess  Gombe State Public Procurement Bureau
-
-### View of Securing Controlled Substances with Automated Compliance and Audit Trail Systems in Research Laboratories: A Nigerian Perspective - ijrti.com.ng
-- **Source:** ijrti.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1SdVk5ZW1CQ3NXX2tOMUJUR1F6YjdHUHhsZXR0cGthU0ZyUW01SGxyRDlNOU5VbjZVMENpYThOMldtcElma2NqTFlUTV9memgwUDNQWnYtLUozNURITzY2MHZOSlQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** View of Securing Controlled Substances with Automated Compliance and Audit Trail Systems in Research Laboratories: A Nigerian Perspective  ijrti.com.ng
-
-### Departmental Directors - Central Bank of Nigeria
-- **Source:** Central Bank of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiY0FVX3lxTE9VSnFkUmxCekpBUEdfR3BicTR3QjNmSzBWY0JlZDlELTBwaFJhQ1QzZ0VpbHQzOVpFQlhETHNxMXd3OXBFNzZKcnRXNENXaE1VYlZXdzR0WUNLZDBWMlFPSkxmOA?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 38/100 (Low)
-- **Brief summary:** Departmental Directors  Central Bank of Nigeria
-
-### Engineering, Procurement, and Construction (EPC) services, & as well as expert Construction Project Management - seatechenergy.com.ng
-- **Source:** seatechenergy.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiUEFVX3lxTE5ISFpXOGRIaEt1RDFYYm5CcU12NklWbmNaTGg1OTNnUkppaUdhYWlOQ0JLdVY1ek12TmRhSlZsVUIxTHdxUUJYdVNvbXl4WUJK?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Engineering, Procurement, and Construction (EPC) services, & as well as expert Construction Project Management  seatechenergy.com.ng
-
-### UPDATED: Fake Agency Scandal: Police arrest Adeyemi - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSmJ0YXFnTEVBeV9rSXBLcFVEaUlaRnlkRWVZR1FlVHBuakVMRGpRVjVyVm1pVkR2cy12bzhFVU0yVExtaV9GSUdZYnYxcDRldVVzaW1DbEp2WVoyTE04SE9GNFg0alp3MHE4c3d1UEV4d0JUQng0NHF2MEJUdUpQR0o5Nnh6MDU1V0xHSXRkMENtTkQ1NVJrM2JfT1JteWRSNVpJdFVnT3ZsZw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 34/100 (Low)
-- **Brief summary:** UPDATED: Fake Agency Scandal: Police arrest Adeyemi  Premium Times Nigeria
-
-### UPDATED: Court orders final forfeiture of N4.6bn jewellery, N4.3bn exotic cars, cash recovered from Achimugu - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZF9TTHZaVkNOeXlEY3VZRFFVcm9zdll0RmJGTDBKWDI1MHE2NmpRazZEVlRWSi10a1MyWV9nam13alVHMFVWdE9paHlwTzRPemxrLWFhT2ZlcWFSV09wd0c5cUhGNE5aOEhCQmQyaVNUSTEtXzhWWHlwRS1CcVJzekRHTmw5SXNQVm9nTUN4Tjd3SEk4VEdkRkVTTGJwUHJyQ2RhSWd1TzdZMkc5YjFJVGZUaFI2ZzR0Y1J2ZkQ5M05xeHhMY09wckxKTWdMemF3c3JocVRRdWFWTlVPc3ZsVTdFdThXSTJLdW1tREhlUk5qMFdmTUE?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** UPDATED: Court orders final forfeiture of N4.6bn jewellery, N4.3bn exotic cars, cash recovered from Achimugu  Premium Times Nigeria
-
-### Why we rejected autopsy on Mary Habila despite controversial death — Family - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxNcnlqWHNBOFhQaWdJbkFYMUJaX21uV2wzZXJ4MFUxNHlKNVdIMHNUX1kxZkdYWUZ4X0cyaUd1R2tWalJ3eUo5SFRtZzYweWZVTU9QclZJSXN1RVJrV1I2NmpaNWF2Qm42MWpoQTZPcVk5eTN0WjRoWjZSSmhYdTZsNjd3cUlXSHVMYkZodUpJZTdOejNhQXFxWnRWcy1OTmhuTVpqVnQ0TlllWjlVdndDMHBmT1VTbEYzV1JuSDNzTkUzZnVFZ05iTV9VTQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Why we rejected autopsy on Mary Habila despite controversial death — Family  Premium Times Nigeria
-
-### Ogunde’s message on bribery and corruption - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTFBLbkRXWTFOVnlmNnpwTkZ0eC1NSlZHSEpSV19rbVc5ZmdtTDJ0QjU2c2lDWVBkVmRGWWhVNjFrVWZZM0dzcE5iS2YyWFR1QW4tVXRsMzBaaFVPai1VZ2t6cXFBekxMVERiTXl5ZlpfeXp5d0JO?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** Ogunde’s message on bribery and corruption  The Guardian Nigeria News
-
-### Federal Ministry of Budget and Economic Planning Archives - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMif0FVX3lxTE1pZU80TXZwRl9ZY0I0bDF0dHhwOGJJTHltY29ZakNhRHEzelIwbkFoX0F2aTAtZjdDbnQxVVQxYzB5SkRNQTJOem9FYzB5NEc5TXlZV0EwX2dVeTRYbUNaclJVUGgxV3BfLUhtTGY3dHZJMXhDRmRReXliMVNSb0E?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Federal Ministry of Budget and Economic Planning Archives  Federal Ministry of Information and National Orientation
-
-### Audit and Accounts - AOM Professional Services
-- **Source:** AOM Professional Services | [Original Link](https://news.google.com/rss/articles/CBMiXkFVX3lxTE5zYWhpdzJiekhkSmU5X0R5RmczRzgyYVVub2plSFdUOW5tdHFRQ3FIaVRBeXVib3hHZndodEdIVzl0V19CZ0RwVHNhZTIwVlZZWFI4a0dJb1hMZXl3eHc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Audit and Accounts  AOM Professional Services
-
-### Paternity Fraud and the Upsurge In DNA Testing, By Dakuku Peterside - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQk1GRHdmYVlrdzAyMVZlcWl3Szd4bEpaYWs1RHd6Nmd3T0FyT2hPX2wyWm9YdEU0RDlmbGs3SDRkNi1KcjdRQ096WWNWRS1JT2J1Q0lIbkQtbDl4UEdrVE9Ka0E5dU9Gd3NVSDU1enJXZ1V0Ylc3UUlXN3lCeFB5VXpfcmhjOWdpLUo1NXFkRDZOVkNDQzBEYTFWSF96NkJtMTVMc3hlODdCOGFnbElEcHQxTUoxdlU1?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Critical)
-- **Brief summary:** Paternity Fraud and the Upsurge In DNA Testing, By Dakuku Peterside  Premium Times Nigeria
-
-### Ugwuanyi not in hiding, not probed for fraud, says group - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxNYjhTWHMtSk5GdFZyT29wV2xLSC1YS3VzWUJZei1fTHI4OUE1UW1jNEFDWWtRRWp4MzJjbWNtNHFrTGdNS1ByZW5Ha1JzWkhIU19za3E2WGNiTDBnYTFfcmRRUXRVRzVLY3BJbmtfaXJIeWZjc20zZzVrTXEzNW1nZ1FmcmZnaEk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Ugwuanyi not in hiding, not probed for fraud, says group  The Guardian Nigeria News
-
-### Condolence Message From Kogi Ministry of Finance, Budget and Economic Planning - Kogi State Government
-- **Source:** Kogi State Government | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxPTTFJUlhtLWJyX2FRU2k4S200TXFiSzN3RDRDWHpKbkVFZ1NWYzdHZGZpMGxodk85THpSMVJ6ZGpJZkZ2R1BiMzBEUS1vX2dwNGNXdW5FSFcwdU1ya1g5X2sxVl9uWVFNWjhzYlJ1WVF3OVdJLXAtaE1LUUd3MS1TWDNqS3pfMEVHTmJ5YjlQU205VjRWVDNrLXd6QzlzMS1fRjgyVWRR?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 55/100 (Low)
-- **Brief summary:** Condolence Message From Kogi Ministry of Finance, Budget and Economic Planning  Kogi State Government
-
-### Former Minister of Budget and National Planning advocate for renaming of the Ministry. - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxNT0RDdGx3LXpRRDlid0dWaG13d09wdUdGM0h1SThRRHBzMHdERFlYUFFCa0F4dXktb1lqT0tyaC0zTjdJOGI4TzVITVptLTljb0UyOVpacFpYZ09YZlpEOERMTzdib2V6Qy1YYzYwcDJCb3hpOG5tLW5ZOFQ0dXAzTFRhczRZZkJkamtmRDF2OXgwVEE?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 55/100 (Low)
-- **Brief summary:** Former Minister of Budget and National Planning advocate for renaming of the Ministry. Federal Ministry of Information and National Orientation
-
-### The Dynamics Of Fraud And Corruption In Public Procurement In Nigeria - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxPYUFRNEVOODVMUFNLU2RjMGU2SjZ2YlZ3bjVoR0lCQzRFb2ItZTZZMW1mQ01xZHBBbGxrcGdxMzRIcTA3WFRCbExYSEpyRVhWeVRqdDFvUk5PTkVDTEExY1FEUXBHbTRMaDU3T2JuVnkzLVdnb3dxRTVKSThDWUVYSUxXMjEtQ3VaS3B6YWhDOTlmV253ZWc?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Critical)
-- **Brief summary:** The Dynamics Of Fraud And Corruption In Public Procurement In Nigeria  Federal Ministry of Information and National Orientation
-
-### Federal Civil Service Commences Strategic Retreat on Personnel Audit and Skills Gap Analysis - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMitAFBVV95cUxPODNGYUZyb0tCQXpvWDZUd3lBdXhTOU5xT1NmakdxYTJpTXpjTXZYNi1WYUNfY0ZnLV9jNExNQ09nOFlrUmpSeWN0dkdVTUhFWDc5cTE4WGx6cXpEekM2R3dWVlpjNTV4c1R6SUYwNklqUU4xZDlPdE5nZW14TnRCS2U2LVBYSFk2OHRwSGVfb0dVYkRxSlBkUDljWHE3Z0pWMllScko3SklpdW4zcEFxQnNPeHM?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Federal Civil Service Commences Strategic Retreat on Personnel Audit and Skills Gap Analysis  Federal Ministry of Information and National Orientation
-
-### Distinguishing between FG revenue and federation account - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxNVDV1bTdnVE9KSXpBLWdjMlIxd0tKVmJfWUtVN283MWNCUE1VX1hyY3hjRkozazI3dC1jNzdrUVVlQjhkOGVST0tqcTdYdFZjSXVnTFVQYnl0alJ1QjNRZ213aUlreTJTZUN4WU5mcXFGdThDZUZXWXQ1VmFHOXJnRHBqdUNla3NQeklwdU9OdEhFMUlwa2RELUpxSTg?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Distinguishing between FG revenue and federation account  The Guardian Nigeria News
-
-### Osun workers reject proposed staff audit - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMibkFVX3lxTE55OHVlUTVWSDg5U2NKcUhHUXhyNjNFMjBwQVBrOS1PbDVYRUhXWTNYSzJBaFUyc2ZMWHctUjFHY1ZGN08tUHQ5UkFQV3Y5dEI1RjZRdDZvdVNLNGZ2dlN4c3ZoRWRTYnBMYWZSQjhn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Osun workers reject proposed staff audit  Punch Newspapers
-
-### Binance: Rep Okafor denies $140m bribery allegation - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMigAFBVV95cUxNa1hDN0psWk5OUmtNaHFUaS1MLTk0UGxDVl9oek42emhjczdqNHpLMjNuNGRBd2RKZm0ybUI4YU9hUy1MWTFrUUVSZzhRdjFWQzlCUjdRZFVaWXJZajFONmdYMFV2bWxCMm9yRU1tSUh4aTJxaWFsb3hLTHF1VUEyMw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Binance: Rep Okafor denies $140m bribery allegation  The Guardian Nigeria News
-
-### Aviation Ministry Set To Begin Personnel Audit And Skills Gap Analysis Project To Boost Efficiency - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMivAFBVV95cUxNV3FKMzNWS1M2V3pJT0tSb0NacFZXSTZyXzUyeHJPYTZSY0piVmNPc2hGbDEtMVc0WkVWT2dmYnZqNzVIRUJabFVZVVJTaThWRkxHRzNTUFJTRlNVdjVEQlBZYXRoOVN5UmE0eVZ5czJfbE53dUsyVGwxRFRXdHNBTm9HazljbWNTallWbmhlYThmaTc3bEFuaGNWZDJ1SFQ3MmUzME1CeTNHdTBRZ3YwZlRhcVRRNTVwVDh6UQ?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Aviation Ministry Set To Begin Personnel Audit And Skills Gap Analysis Project To Boost Efficiency  Federal Ministry of Information and National Orientation
-
-### ICPC and IMBLN Inaugurate Joint Task Committee to Tackle Fraud and Corruption in Nigeria’s Real Estate Sector - Independent Corrupt Practices and Other Related Offences Commission
-- **Source:** Independent Corrupt Practices and Other Related Offences Commission | [Original Link](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU2tXelNqVG1ibU1heUtjUnR6VGtmRHVSQUJHMTM1TlYtTGowLS1FTG1maW5QNHFFSmJaUVNCdHFjc1V0cDNqUXozRzZqN2RkWEF1RW1WbHVhdGF1LXY3T1EyQVVCUjJpaTFwUm9ucHE2Y2hJaGtBUE9nSG9OMTQzV25oOHdZWkJWTHVES0g5ZFFfemNVV3dhTC15TzYyVF9LY1RtZlJuajNJX0NnRGRKajNxU0EyTzUxR3pjcUsyeXJ5cUthaEl0VQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** ICPC and IMBLN Inaugurate Joint Task Committee to Tackle Fraud and Corruption in Nigeria’s Real Estate Sector  Independent Corrupt Practices and Other Related Offences Commission
-
-### BUDGET AND ECONOMIC PLANNING Archives - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9ON2t4R2JQR1dYVW1ORWtJZVNGSmdoMENXd2pqWDU2ME96dUJPdVBBb0dBWGF5dU5uV3ZzU01kSjZYNDMzNWtUdHpORTJvUTBEczBlZUZ5YzBZeUUyd3c3bE1LR2c?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** BUDGET AND ECONOMIC PLANNING Archives  Federal Ministry of Information and National Orientation
-
-### Audit & Internal Control - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBiVGhXVFotNXRScFc1TUd5cXNzaGZSM0JhVVhNY05tMGNWamNkbzFKaXpSR2Fja2NEdkZnZlM4SEtjSDRlUjkxd2ZYVzh5Q3dPREFtdW9iVW1ZR0tzNDl2VFJQVVp3QQ?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Audit & Internal Control  National Information Technology Development Agency (NITDA)
-
-### Lawmakers Slam ‘Abysmal’ Intelligence Budget for 2026, Citing Security Disconnect - NALTF
-- **Source:** NALTF | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxQNXdpUnVWVjIyZk54Nmo1YzZ0UEFxeHpUX253MjN3SlpBaW9LbndoUDFjUHpKSGwxUUNKWVc0bXpZMTBXWndUb0FxWkRpZENsS3JqMWJsQ015bGs0OHhGS204SWExc1RLdHVYeGQ2MVNxdU5GbHVId3lmUlRCZTc5R0E4YXJReDI1RWMyeWFibi1fV09sNFhXVmNnTjE0QkRCNXc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Lawmakers Slam ‘Abysmal’ Intelligence Budget for 2026, Citing Security Disconnect  NALTF
-
-### Ex-Bauchi SSG Kashim named in EFCC’s fraud charges denies allegations - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizAFBVV95cUxOWEV5NWFNR1FIa3cxTTNLQ19odWxwcEVIb181bDlENUs1ZGoxU0E1QnE5eERhLXU5T3hLb096OGRpZkRqMjdKUXR5SnB1MGQzTWFnR09CenBaS1NWbVNZUVFMbjRDc19CTDQ2Si1RRVZTNmJUSVBWc3luUDVfaklBOEZqajluSVlIdVpiODhqQkpmV1hKSGxJeU1NUzJmZi1PNUNBS2tldDhnZXhGUFdCZW5DelRDcHNSNjN4UVJSN3NOdDNFY1AzNEljeWY?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Critical)
-- **Brief summary:** Ex-Bauchi SSG Kashim named in EFCC’s fraud charges denies allegations  Premium Times Nigeria
-
-### Fedeal Ministry of Finance Budget and National Planning Archives - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUXFOYnRDa3dESkFGSi1zMm12Zm9TV1NzNGU5NnFsVWtyRVFCOURGU0w4VW4yVUtuVWhpcmVVc2doOHBQZGhWdnQ2SWJhY1JQR0d5UFB4bHFHTXhET3dna0Q5ZmJya0h4cWNweXZQdzhRdGJRWTdSRi02QU4xU0FLUElCNDlDaWg5?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Fedeal Ministry of Finance Budget and National Planning Archives  Federal Ministry of Information and National Orientation
-
-### EFCC arraigns some of 792 alleged internet fraud suspects arrested in Lagos - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizAFBVV95cUxNOTVEa3N6WWNUUDg0Y3FrZHZvcUZIUkJocU1RMkFfN1lQanBteUxyaE1JRFd0RmpPdTc5bzlyVWxHeG5JaEZNSDFaRWp4bU14WlM4ejFiMFkxNnFlRV9haWo1N00xYnY2NHdUZm5qYVphSDY0Y0FJZm1XZUhDYTBXd2xiREVPRm9mRHQ3VlRCU0Qtc05fQ0x3M005WmFscmtIMVdiNk1lMVlZbzktaFk0eWtPalRpS0F0R0NTTmwyVnItTmQ4aDJBRFFlZ2k?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 36/100 (Critical)
-- **Brief summary:** EFCC arraigns some of 792 alleged internet fraud suspects arrested in Lagos  Premium Times Nigeria
-
-### Unregistered audit firms will cease to operate from April, FRC warns - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxORGkyX1M2dzdQcFd1QVlDQlpicElDRHBtZWdXM3VLaXdEWUdtaFlUWm9lUkw3R2t0QThTTW5tc0Noa1Fsbmk0TGllVHpybVp4bENEamlBNXYyR3RKUnJ2MlBWSXlGdHB4R0ZCWUVTT25GTC0wQzA5ZDRNQTBYVmczMm40R3psczdmWEExSWRmMUZDakVWeEpQMWdVcUdmby1KakxSZ3VPa21Tdw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Unregistered audit firms will cease to operate from April, FRC warns  The Guardian Nigeria News
-
-### Shun Bribery and Corruption to Ensure Good Governance in Nigeria – ICPC Tells INEC Officers - Independent Corrupt Practices and Other Related Offences Commission
-- **Source:** Independent Corrupt Practices and Other Related Offences Commission | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxQcWJvQlZsNDJOb3hjWmpOa3lUcVJ0dUN0Y0l5SE9BR3l1R1pHWTl3Rlk0STFNeXEwYnUtWm1idmpMdG1pY2w5TGQ2SkRqcENnQzlza3hiWVNZM3FZRUtlV3pwcEg0aGgtdHVOYlVRWUdESmZxQVdkVzBGbnYtdDZRbXFyQ291S3pWcWFuY0JucXQwb1FkMzlGN1BYYjFfcC1ndElDal9GNmxVTWJkYkxv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** Shun Bribery and Corruption to Ensure Good Governance in Nigeria – ICPC Tells INEC Officers  Independent Corrupt Practices and Other Related Offences Commission
-
-### OPENING REMARKS BY THE HON. COMMISSIONER FOR BUDGET AND PLANNING, HON. P.Z. MAIWADA, ON THE OCCASION OF CITIZENS ENGAGEMENT ON Y - Kogi State Government
-- **Source:** Kogi State Government | [Original Link](https://news.google.com/rss/articles/CBMivAFBVV95cUxNRmRYZXNRQVhyMFhUYm5ZMjFYTk5TeXZDbHhUaDgwdkw3QVk1M2xILW5ZX0FXYTF0bkxMX2MtM2hHREJTbGtPcnAtOVFpZjB1M2Z0VHZoS3htS1lKVmtCWGw5Ri1CWHlGOXZ2TEZXWW5waERzYWY1WEx3bWlza3RkREpId3JscFRMTkJmcGVaNzJVSkZydGl0Z2ZQWkFOWHZtck1iWEh5VzA2V1BROHJuQXhXOGViWUNBTGVleg?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 42/100 (Low)
-- **Brief summary:** OPENING REMARKS BY THE HON. COMMISSIONER FOR BUDGET AND PLANNING, HON.
-
-### LASU sacks two lecturers for abuse, fraud, and student mistreatment - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxQZWdBQ1FqcUNLLUZ4Q21mdldMVms5aG1RZ0Y2WGFWZEQ0aGUxcGVmdTNpOGc4MHZPLUdPbTEzamdYeGgxX1FzX211U1hSX1l3RHFMYjU4b1A5RVNwQUNmZHVaOVh4WURZUXcydHg3QmxiT2dZRnBieEU5amZTOUw0RjkyQUhyZEhXX2ZOelR5VkhGRjFFeWVjdDRzUzM?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** LASU sacks two lecturers for abuse, fraud, and student mistreatment  The Guardian Nigeria News
-
-### U.S.-based expert advances AI research to tackle healthcare fraud and cyber threats - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMivgFBVV95cUxOUVlmNjRVWlJYWnl6ZnlpcTAyMGtBY3FOR0hZblFsdjNRWFd6cDh4cXRxOXNXRTFwajFoekFqamZUMldESTJocnF3RUYzM1JVNTlibDFLUDFZTUNENXBYWXloVjdGTU1WWENJX0hNYl9JTHRpVG9zc2xpX2RUczNpaUFsbWhvcC1zMHJybmFUMld3U2V3UXplQ244REVlS0dNbkNpcVhOSnhrR0xJVjQtckRwbTNCRUJLQm5wR0pn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** U.S.-based expert advances AI research to tackle healthcare fraud and cyber threats  The Guardian Nigeria News
-
-### Highlight of 2025 revenue and expenditure estimates as presented by Governor Abba Kabir Yusuf at the floor of the state house of Assembly presided by speaker, Rt. hon. Jibril Ismail Falgore - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMixAJBVV95cUxPRjhjM0JDVmQtdnZMNV9Ka3BmNWdrcU5ZQmxHcUw0dDlsS3lTVnk0WTEyd2haUFd4bUpWek41bjJOMkdJY054RFdBOWVic1huRllGUDFpbnVSZGdoRUVZVndDNGVKWkVHT2J0amVNaEd0T2NjejBpQTZ3ajE4c1RibjVWWVVWLUpsb2RSdElZVEd3eHE4RE9YOFpDeks4ZzVZUHNidVNpNTYyR2QwSjNZMml6SVN4aGJNRDBNSFplUFNSUEdfcFhsNVFMQXlvcGt5d0hGcHlacTRqZGttTlA5NmRRNXFndlhtOG9PUUZacnBZMC0wVUYtQXpscWJpMVVhT1hxNmlzd29WZWJSNklLS2ZmUGxiV2ppUk1SSnFCc29zb1NwZnhVZjBjN2daOG94Z3BQOG5FNlNhYVNELUo3S0h4dTQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Highlight of 2025 revenue and expenditure estimates as presented by Governor Abba Kabir Yusuf at the floor of the state house of Assembly presided by speaker, Rt. hon.
-
-### N25.7bn fraud: How Nigerian banker, Francis Atuche, begged for mercy after conviction - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMnNIcHltank5QzRpNFR2UDRsc0Vmc2RqYmp3TjRvTzZuN2JJZlFZdUhWRVNnODhBR01Cdy1qeUpJeHV3UFV4YlhYcHdwQk5QNHNpLVJLc1daeDU0ZXhPZ09xYzhKS051bmRHWVFHa1o2VFZvY3F4TkRxSTVBa0N1Q2dFVGtlUXR5c3lRaHVVckFsUW5QWWhieHNjYzI0ZlQ3WnBSRWJuaWNxb0pJNGlvM2phSF9JXzc2S2hqTXpXdVV6Nmd3SVl4UHJmVnhhZldVX3hoWFVR?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** N25.7bn fraud: How Nigerian banker, Francis Atuche, begged for mercy after conviction  Premium Times Nigeria
-
-### 40-year-old Nigerian arrested for $10m pandemic unemployment fraud in US - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxONGwxOVZxUEE0dW45aUx0aEEzdGdQT3ZFSUd5bWI3a3U1R2hRZUd5WTk4WFJpM3lTTzExSDA2alUxVEVzVVJ3V2JLaFNhUVpnVEhPdGdzQ05YVVQ5Zzc3bDRHaHZGWF9COU8tQWN6NWFUWnBTM01rQ3dja25RZzVWUERVN0xBaFdNYzZDY3FiVEo3a2xJVEZmaXpaS0E0SWM4clptb09QcV9DU085UHNIWg?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 34/100 (Critical)
-- **Brief summary:** 40-year-old Nigerian arrested for $10m pandemic unemployment fraud in US  The Guardian Nigeria News
-
-### Reps Probe Legality and ₦1.3bn Budget Allocation of Controversial ‘PFIPC’ - NALTF
-- **Source:** NALTF | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxPLVdGbV9MdnVZN0NjRkJYUkNMdTQ2aGpoeHhGc29UVXJOSkhCOWl5Y1QtYTFtc1piTnZzQmRkbDhNLWlSQ1RvVEVUOUk3NkVJc1IwbVNzOWs5dUVoZk9TUXNPS0g1cldmNkxoZUZSTTRwZFdGd3hSdDJCZmM4TGNNeTlJYUUwa0E1YjhxZEdlYnB2TFM5NGd0eUhVNnIwNTNKZWFF?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Reps Probe Legality and ₦1.3bn Budget Allocation of Controversial ‘PFIPC’  NALTF
-
-### FIRS, Lagos State collaborate on tax audit, information exchange - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxPVTZhM2lPX3FSVkR2MVFhNGhYNzV5NDh6cllxa21hXzJmZlN6R2g1YjVPakdwOHRNS0l1YmVFbVdmUnVwcHcwcVdnbUg5NGJJM0FNc2tFaFBnNGVITWFnOHJKalktYTR6YWJnS3Z0Y1ZJUGdyb1NmNHc4YUZiR0xkNFdJRkdxRi1kcWlNUUkySW9qUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FIRS, Lagos State collaborate on tax audit, information exchange  The Guardian Nigeria News
-
-### Internal Audit - Interior.gov.ng
-- **Source:** Interior.gov.ng | [Original Link](https://news.google.com/rss/articles/CBMiUEFVX3lxTE1iVXRNZk1DSHhjeUZsRkJoVHV5MUFpemhfT3ZOMWpWekhUTFh6ZnhlcmpKazJuRlE0bEw5X3pGSXd3b2llZ1FFNEhRYmRhQ0lv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Internal Audit  Interior.gov.ng
-
-### Fraud, cyberattacks threaten Nigeria’s identity — NANS - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMie0FVX3lxTE9uNWpCSlhXTVRaY0E1TGFuQ1RZVjFFM1M4UG5LR2lCTUx4cEpJRUNwQ2dhaFhPUXE1WFJfeTF6V3Q4TW5oSjBWdU1sNkYtYlNwNE1ManZFSEdtdUFDd1Vpbm5zYnMzSkp4N2hKSnhhUE1BMElaNS16TG5JWQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Critical)
-- **Brief summary:** Fraud, cyberattacks threaten Nigeria’s identity — NANS  Punch Newspapers
-
-### US govt ramps up $20m fraud charges against Air Peace CEO Onyema - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivAFBVV95cUxOUjVGN1E2TjJJZ3hXRkRDQTNvSDhhdFJuZ1hwaWJkWUdUaTc4UG1QVXJ3U0lTbkFvblhBWXFmNU4zWGJ2TVhGbUl4eUNEOVhpd0xRUWVJWGdnVW5mYnVYQko4cElpWW51RGtHZlVlUDFlSC00akZGYzQwVUhQdXZ1elJMOUZURUNNaUxSQ3ZqOU1HcTdGdWk0Z1pRM2REQUtYc2pXVjZwMG5wVFJNRkI4QlNIbEJ6QkZVb0xrZQ?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 40/100 (Critical)
-- **Brief summary:** US govt ramps up $20m fraud charges against Air Peace CEO Onyema  Premium Times Nigeria
-
-### Kogi State Deepens Citizen Engagement in 2026 Budget Formulation - Kogi State Government
-- **Source:** Kogi State Government | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxPR01NMUpzRGR5RFkwV1JqQTZQaXlHZVNXOU9DaUtsRDBCMW1mTFc2c2ZNNTdnMTJfQWlBOS1meDUzZ3pLS1MySUVrNmNVWVBEWlFZV0c4U2YydDFpdkk3MU0ySXJRR1hhVkhiREVDQ0dxWmJNclpOVGJvYVpNUHFwckpSTFBOYnhnWGFidGVzdlZ4TEQxTTBj?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Kogi State Deepens Citizen Engagement in 2026 Budget Formulation  Kogi State Government
-
-### Workplace bribery: Reps weigh seven-year jail for offenders - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxPU0dyTUtVRzMyN1FfVFRWVUlVWDRhVl9YeEg2dXFEeFVKcktHb1VrRDFaY0s3TWNLWkVLUU00TkU5ak1tTTdNTTdqbVhhZlVYV2puN0hfQTcxbm9na1ZmeDg3NktKN0NLaGE1TDFCWTVqMkM4UElETG9KMVBwOFZBNEVtRnRudUhOcUlmMQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Workplace bribery: Reps weigh seven-year jail for offenders  The Guardian Nigeria News
-
-### About 80 Nigerians charged for massive fraud, money laundering in America - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiygFBVV95cUxQcV91RUtYRndnMi12V241bUJzMFBJRTc1ZndPSnhWYXJNczh4cWk2RnFPOElWcFlVbWl6VTBYNzBRR0VDSVhTaG1ST0lTNENHUHVfU1N4WndmSWl1M2k4anhBamNEMWkweTlEa1JWS0RNRnNFZlRqalNuNGRibGdrQXJid0NibFJEc1ljcDRhb3dzcDhQVEpmSk5hWmdiUFZXUjhFbTFZMU9Rdl8zZk5kNy1DLWhvMU93NkpvOFZsQk83UGxVT1E3N3lB?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** About 80 Nigerians charged for massive fraud, money laundering in America  Premium Times Nigeria
-
-### Tinubu orders audit in federal civil service over perceived personnel, skills gap - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbnlkNC1zOF8xcGZkcmNtQ0Rzb0JFcXBHeTZoSkF6SXBJU0dfRzhnZlJmZkcwU1lsSjExb2hYZzhfQlhRVEJIaU5SUG9QQXozTDA1V0U5U2t2cmtYTk9GVjB5X1ZTTjVuZHEteVk2bmZaQlBIV3dRNUpsS1FubFJVY2p4eW5OOUtYOUt2T01kd0sxZG0wMFdENzJ1cjVRRjNYQnZURElreHFaZw?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Tinubu orders audit in federal civil service over perceived personnel, skills gap  The Guardian Nigeria News
-
-### IT Audit and Assurance Services - itaudit.com.ng
-- **Source:** itaudit.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiO0FVX3lxTFBBQ2YyRzkyWUhBc0lKX1VlMkpZQlhUYXBsUGpxVlk5N1E2VS05VXNjY3Z1T2JQZk5FR09r?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** IT Audit and Assurance Services  itaudit.com.ng
-
-### Bagudu charges MDAs, GOEs on 2025 revenue target - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxPLUxkZWJFOS15QjNDbXdGa05mMTZYbkJSMW9ZTmFqRnlZektYUzAwbWxyV3ZyckQ0TUdPVWthNEgxc1R6UERxMk91SjZZXzR4d1JGWWF0SkpOUFY4Y1otYXNyS2gyQWZlazZ5WEllYnZ0bFJZTUd3bnRUVE9BTUVkTGhMbU9IQkJUSE9jbkx5UjFWVFBqNlVZSHNDYw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Bagudu charges MDAs, GOEs on 2025 revenue target  The Guardian Nigeria News
-
-### Advisory, Audit, and Tax - jead.com.ng
-- **Source:** jead.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiXEFVX3lxTE81TW1pX2RfU0I0UXJTemxSeUF0Mk1PSUZlVWpYV0I1V1JpRUZzZS11UlZFdEQ4U2ptdzlDVmgxbmJQcFloSU1jbEl3eVM5SEFkZ0x1Nkx1cXVlX3d4?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Advisory, Audit, and Tax  jead.com.ng
-
-### National Assembly | Federal Republic of Nigeria - National Assembly of Nigeria
-- **Source:** National Assembly of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiS0FVX3lxTE5oR211cVlYUWtwMFdoQ3NZTmMwYzhJNmdkaW55RGQxSlBNdnQwMS10ZVYzOXl5TUtMcDhDanlBdHltc01sNDVkbS1PSQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** National Assembly | Federal Republic of Nigeria  National Assembly of Nigeria
-
-### US court sentences Nigerian to 90 months for 1.2m wire fraud - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdERKMVJhT0FIbnRua2ZDY19pelN4ZmVKMDNLdkZpNVdmWk5nRm5KZ1QzZmVMbndhOVRocENvaVUxRk0zNURndVFVMVlxNzBFODFjWGRCQTRnSnhtYjZ3Y3BIczlTbFpmOXlBR091Vlc0VURxbUp5aXJpcDl4WlYyd0g3aXN3QXZ4?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 32/100 (Critical)
-- **Brief summary:** US court sentences Nigerian to 90 months for 1.2m wire fraud  Punch Newspapers
-
-### FG misses 2025 revenue target by N30trn – Finance Minister - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxPbEtLcmV1R1RLUUJUdzh3dUhxOEVveUpmbDF3bTFieW5CM2JGVWJfbkw5elNHUFZxUTNzOE5QdVNNX0RXOFhLUFpuOGdqYTVCcUtDTmRFZ0hhQ002eHpVYjZHWDRHZlcxRUw5cTI0NHdZVkxKa2lyZThQVnkzUWwtLWZacU5DRU5XQ2hkVGVWUzluQTRkZjgtNnR0TjBldjM2MnhReWRVZWJSNHRaVkhVT3FLSQ?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FG misses 2025 revenue target by N30trn – Finance Minister  Premium Times Nigeria
-
-### Police extradite wanted cyber fraud suspect to U.S. - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxOel85UDBocE5DS0NDU1hVeHVRNzVuWGF3czFZLVlXSHdHdFRIb2ZiLTBfQWtUVTQ5OUJzb3ZzQUQ2RVExU0NBR2UxWXdJeUlSeDlxZHdjb0xFU0RNd080VUtDcm5sYWd5bWZ5a1JBemRsRUdjUzlYZUJvZlY4WEJMOUc3R01IdDlEcXAzZzAyb1lfXzhC?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Police extradite wanted cyber fraud suspect to U.S. The Guardian Nigeria News
-
-### Budget padding: Buhari removes 22 top directors from budget office - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixAFBVV95cUxOOFpkRVdqbUlsM2wtM1JVQ3ZjQlZ2azBoRkZlZFp0ZHlsSmRER3NLODJ0TnR0eHZjWFdNUmNZcUlaZmZ6ZTQtQzZEa3VPNXJ2R01XRWtNR1pSR25vSWZIWFc4dlg4UTVzblkyVDlCQ184R05GXzJvbnZTNmJkNk5fdW1RWlNjTS1oWUpuR2dnSVV4VUt5NjRPcnlZQ2hHaXhQeEpWQUFyNmhhcVo4MDJXemxGd2xFdEQ1dmJFMUhNWWZnOUZC?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Budget padding: Buhari removes 22 top directors from budget office  Premium Times Nigeria
-
-### Fraud: Nigerian jailed 142 months, fined $188.9k in US - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxQU3NCRXRoamdWV3NGWDhaNmxCYVJJaV83NEU5Nk5INTlSWEdFTzVRZkt6U0lEemZycmNoNHBDNnBseTcwSGVITUVOUlhldTljVTJyTjdDeDNEZmZyTmduQzE3R1c2OFkzVVB2Y1BPWnk2WXB5M3lndkJBbE5Qak96ZTA2d3N3elo2Wm9mZmRJSXljMzBSTmc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Fraud: Nigerian jailed 142 months, fined $188.9k in US  The Guardian Nigeria News
-
-### Man jailed 21 months for N50m fraud - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMigAFBVV95cUxOT1FvYWU3MGVOdENueUVQV2VmTE9PUUN4LTV3cDBlUElLOGJCSWNEY0JkNTI4YXg1LVFnMXNYclBfVmhMaFJfQVpkZVF1ZVJMcm1DWHl2aHNvbWhxLWJ6YldNX3R5NFdTUFAzUVVUeTJhbjBwdGlIS182b2NRaTZXcw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** Man jailed 21 months for N50m fraud  The Guardian Nigeria News
-
-### INTERVIEW: How Tinubu’s policies will transform Nigeria – Minister Bagudu - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWFBuRnI5R0xSOGIxWFVteUplTnlabDVrNWpjYlpob3dCckZPdmVsV3pTaExxakVXOTNsRUxOWVJuSk9SOWd5akowWkdpek5JbDgwRUNlUHBVVTIzbzJBWWpINVlqQk1TZFo1alZqOElWdWV3MU5BWk9xS25hMERqOGhXQzRTMHMwV3dMdS1lR3RyU0NuUkdWeWZUTHRQbnhGSTVobDd4TlhPd1kyTklld2tmNm4xYVNq?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 53/100 (Low)
-- **Brief summary:** INTERVIEW: How Tinubu’s policies will transform Nigeria – Minister Bagudu  Premium Times Nigeria
-
-### Govt. experts seek steady evaluation of managers to check e-fraud - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxNYVAwb2pPV0NXcXRhNzhCeFhwTDBuZzV0QkU5Z2JxT2dUWFpLdWlWaHdqbVA3UkRzYUxOenJmOEJ2QUtEb1AzbkhqTDRURng4cTQ0N3VZb0sybzNlRTJDRnk3TGpodThJQ19yeUkzVGVYUkozb3FRSldVQWVoQ21hWjlsWkhpNUhHMkV3dU1NUld0RENlalBVVEVtckZWc2xvRG45VXpn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Govt. experts seek steady evaluation of managers to check e-fraud  The Guardian Nigeria News
-
-### Senate raises customs’ 2025 revenue target to ₦10 trillion - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxNVDZrOWxDRzNTVm4wYTZsWkpvN0FmbHlrdUk5Qm5UMlhyVEpFWHZqVDFIOG5FaTRfWjMycXdrVGNFNmxZcGdUbnQ4enRwdldORFdDdUhta3BzUENQT0g1Z0xweGJhUklqQ2JvUkx5eEhtbXdEZFljTUVWVnZ4MmNtblZVUHpraFNfcVNBNWZqWTdkd3V3SnVlVUxXaklDZzZoYXhSdjhXb2xtQjE1?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Senate raises customs’ 2025 revenue target to ₦10 trillion  The Guardian Nigeria News
-
-### UN agency queries staff over alleged $150 fraud - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9sanZhcm9hUjdBUWxjNDhkdXp6ZHp3WmZKYjFHX0JTaFc4Y2hHLWpGeTZSSEJmYXZ1VnN6Zy1OdGp5a2E2cU9kXy04Tjl6M0pLUzJHWWd4V3RQLUpYeUVFbVN2Ml8?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 40/100 (Critical)
-- **Brief summary:** UN agency queries staff over alleged $150 fraud  Premium Times Nigeria
-
-### NDIC, agencies make progress in bank fraud investigations - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMigwFBVV95cUxQUXdKdEY5Z1NPdHNPOVB4WjFWQ1JESHR3T1VTc1BoaFlyVUU2cHFWN1NOemV6dWx0Y3pFOHN0SmhUS0xvYS0wejNvTzI0S2NEV1kxelZRbk1WaFdvVUEtZkhpZE1lUW53ckNtak9zdDNnOGtDdlRXanZtM1BZaXRUR1kwQQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** NDIC, agencies make progress in bank fraud investigations  Punch Newspapers
-
-### Procurement fraud drives 90% of Nigeria’s corruption — EFCC chair - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxPVk0yUmtGWkZLUTN5eC02TU5tckx6UDZ4UERjQ2g3bVd2dkJaRjZjNm5sSGY4emNiZkN5TnJIZUlWRUd0Y3hVVklhdmN4NE52dHNGRU8tdXZjbmNIUVpwdTlFaUhUY2xyZHRRUGlhUVk5ak5jU2NEYkxCNkNqNkdBY2ViNlNYOTZiMENUZUpnaDQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** Procurement fraud drives 90% of Nigeria’s corruption — EFCC chair  The Guardian Nigeria News
-
-### Protest erupts in Bolivia over presidential election fraud allegations - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxPb01DMkk2RjdpRHdHeWNNRzFBaV9mS0hUQlU3dWxPVWlKR0ZVY3FUaG9NZWUyVUJvY2czQXNoWWhtX0tkR0xtY1NBVlYwTGpJeUtQd1hYZmVfX1pkUGZkRWI0azkwell5ZGVqRXltREQzaGhQczExZXk4SmJCZ1lsN3VGbHRTVGdxcTQ0WmlGMFE1eGw3RlE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Critical)
-- **Brief summary:** Protest erupts in Bolivia over presidential election fraud allegations  Punch Newspapers
-
-### Nigeria needs strong institutional capacity for development – Bagudu - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxPVUlRSEVkbWN3alJ0eEJiOXJTMWZzd2o4YXBCWlhvMklQWVUtcThiVmZ3WHZ5eWtnY3VlLUkwcFRmZjFFUHFRWjlnVEROdjNJTzRyVDRLd0R2blFyMnNCVVVKb2VjN0FnRmF3NmN2SXIzckRaZ2pWYUdfV0NqWENsQWpaaDJSdGVrMjJOVVVLdmp1b1NJMDVv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Nigeria needs strong institutional capacity for development – Bagudu  The Guardian Nigeria News
-
-### BREAKING: FG proposes N2.2tn supplementary budget - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMieEFVX3lxTFBHZ3ctRktSeURkZ3VOYmE4aFNMamlCMlJFb2I2MWFkX0FseXVhcWNVaHhPVDhLdVgzLUVKdXZpY1Nua3R2VlJfNlcxRGFMcTZ6TzFic2lyT05pYTI1QVo1M3d2TmFqNXhyb0dzMnRGT2FmRmpnMGFHTQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** BREAKING: FG proposes N2.2tn supplementary budget  Punch Newspapers
-
-### 96% of digital payment users at risk of cyber fraud, says Visa report - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMitgFBVV95cUxQNWprMzEwY2ROQUgwV1JudGM2aVRTZG5TeXdlbjczSW5OdTkwRmJTZklCRDVaelhtdXdwYWlXdWRHSzNMSFVIdTg4Z0xiVm1zZ2pGSF9BRXVETUZqaXFWelNpT1FaSGxDbFE0Y3BPdzdfTjl1RjdZZC1YVlU1aUNKZzhvS2otSkc3OUdjRnZtRWRMaHlfSVhOQTExM3hfUGlEeEpTNlNER1JILW1TUmhtLVRucEE2dw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** 96% of digital payment users at risk of cyber fraud, says Visa report  The Guardian Nigeria News
-
-### Kogi State Government Engages Stakeholders on 2025 Budget Formulation - Kogi State Government
-- **Source:** Kogi State Government | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxQbDlHaDNUSDR5UHRLa3ZMQS02bzhwNHZhSnlra0h3Vm0yWGpVRjJRT0xoRFI1OHhDRVRCM1RiVWdyRHpvekxjUXdyRVVYNC1XWThYODhsTjQ0eVR0N2J4NFhLVlo3T3hIOXNZRDR2VExJSW1aclRERmpVVWIxMTVXYmgxbEtwRFVpcFg5RmJpTnoycDIyQmZPN2loOA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Kogi State Government Engages Stakeholders on 2025 Budget Formulation  Kogi State Government
-
-### Strategic Revenue Growth Initiatives: Kogi Targets ₦6 Billion Monthly IGR to Fund Salaries and Economic Growth - Kogi State Government
-- **Source:** Kogi State Government | [Original Link](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNblRpamlHSndXSFphR0hGX1FxTS1MQmJVRi1Kb0paNTdtUTZoZ1FDLWUtWm14M294V19yWGlPY3I0UWVtaHgwR1oxLWcxdEh5WGk1Q0dweGJvQ19Qd0NaMHNjVmRaRWloQUFjekFxc1ZPM3ZoLTloTDd6ZHNPRkppT1g4QzVVTTdrc2xIbWZBNUFaZjhPWkZ5bWhhbGJxQlVRX0FmdjR4TWZEYktpZ1V0QnRIZkgyVDdBcFBQaHhaRVFEMmVBdktKQm4xbWpYaEZaQTc4MUd0Q0Z4X1k?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Strategic Revenue Growth Initiatives: Kogi Targets ₦6 Billion Monthly IGR to Fund Salaries and Economic Growth  Kogi State Government
-
-### AU Conference Tasks EITI on Glencore’s Bribery Scandal in Nigeria, 5 Others - Independent Corrupt Practices and Other Related Offences Commission
-- **Source:** Independent Corrupt Practices and Other Related Offences Commission | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxQdHFoemI1UmlXOFN0cklXdjVvSnNvUHBsdGtiU0VuYTBWVktKeG82UzJ6NjVBXzNVNTQtajFTYkdTdlBFdnllR2FEWUx3ejYyaWM4LWgzOUUtY3JVS1o5cUhaczRYMVQwOWQ1SkgteFRzOXFyVzFobDZ1aFVZSGpxbjY3NEl3aEFuRkN5c1AwV1ZHVlhDXzVfYzNn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** AU Conference Tasks EITI on Glencore’s Bribery Scandal in Nigeria, 5 Others  Independent Corrupt Practices and Other Related Offences Commission
-
-### SEC, EFCC raises concern over rising digital assets fraud - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxPdjF5bERRa2hkZkFCTlRnbnZfVnF5UWlZTkMxdGNhdXVpZzdUVEpZQzlvUVNHSk5rTmZ3eFVWQU1DbHVDV3VEbzFqN242Ri1rUDRCT0pqd09malRHRmhTS0lFTTdaNWQwR2RIcVNoak1lcjhvNFhNXzE2ZlNkMkNISmR3Zk5ZVENWaHd2VEMyenZMdjQwLXpVc2FPTQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Critical)
-- **Brief summary:** SEC, EFCC raises concern over rising digital assets fraud  The Guardian Nigeria News
-
-### ICPC to arraign El-Rufai over fraud, money laundering in Kaduna Tuesday - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxQUWtrSGxSVlozUGVWU24zOWFwX3BUalAzT21OMURHTHoyQXR3dVJ1bkd5OTItUy1ZOE0yeW5RMmk1RmFLRVQ0T3BGaVdYYWpKSWZMcnlIVy1aaU91V0NzQWZENWxma3lRZzZ0NHpqUmQ4dnRiTTFFbE1QcGRQQUI4VFh4MDlqN0doM0JCQkt5Y0xQRlQ4Znc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** ICPC to arraign El-Rufai over fraud, money laundering in Kaduna Tuesday  Punch Newspapers
-
-### NASS okays N1.504tr Nigerian Army budget - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTE5VaUVPaHZzOG9OeWVxUXBBTzdiYmx1S3NTekZ3eVNUV21QU1hLd0pCcmJIdFh2WGtTYnNwVHRGeFZ6NlJEdVQtbGZRY2pIdGlHZVZLUUlDTU5YSmlLTzFsX1l6eF9pZGlTekk4WHlOek9IQjIz?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NASS okays N1.504tr Nigerian Army budget  The Guardian Nigeria News
-
-### FG eyes livestock sector as critical driver of economic growth - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxOcVp4Sl9TLW4xMXlEQmRqenpaN3dLaVN0RmxJTGdDNmVvelJKemNVeTFDc3lSdU1VUmg4N2F3RmJqS0hPSmdwZ1pST3ZWOHJJNW5Jd3oxNEx6ekhpRHdFTGYyVEpaQmJ5dmgxazV5VDI1SUFsc0VyVWUwZ09ZOVhFUTg4T2ZFTkdDdVgyZE9rdzZOdw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FG eyes livestock sector as critical driver of economic growth  The Guardian Nigeria News
-
-### BPP unveils new plan to eliminate procurement fraud in govt contracts - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTdHVmJaOTZoN2RiQ0dVaWR1WXpUMzBQUUVBWllWSERnVkhDWUxqRUJXNG4ycjlaSHpkMlFBS211QWtaOGFVRVVPTTRFZ3R4R2pzX2U4QW44aTBocDJyOS12MVFIYVg3T0ROTVlLN3RpdjhzSE5MQjYxQjBhdERPaVQ4TzFzU0xvUWwzQzJ6eDhOUDlSX1BxTTZQckNOQWw2R1laVC03Wm5SbFVXd0xhTDAzUnQ3bkFrYjNaX1p0VVFoTGVT?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** BPP unveils new plan to eliminate procurement fraud in govt contracts  Premium Times Nigeria
-
-### FRSC warns motorists against bribery, urges payment of fines to banks - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxORy1ZTDN4VUpKcTVlMFA0VlhISk5wUzZTTVZGSnN0QkV6TFBxRlBuZ3FlRHJYVHVpY2dQN1VxcDJNQzJpdlVzWHJDYy1tRTI4QVBPRHMyREpzT09SRmp4a1dmSDlfajBGVWNnSm5YTlNFS1J2ellLc2Q2QWlZTjJjX3ZxVlVPdUxlM2VKZzBLQy02MnZtWjk2Mzc2TDdHcUhaSC1JbkUxVEZCRlhZ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** FRSC warns motorists against bribery, urges payment of fines to banks  The Guardian Nigeria News
-
-### Gov Kefas warns against Retirement Age fraud in Taraba Civil Service - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxQMS1MelBsR1NUYUR5bGMwVWZldEc1ekc1eks5VTFkOTNJRjdPYnB1VUtTNjRnaUVZOWF5YUhKaHFhWFBkeERvZGI1MU1QSXdGcDJHUmxoOHhfYktlNU1NbkREanBPWF95Z3cyVXU5YWtpbmdMblUzbGR6WVlycllGNXMtSGhQM1Blc3hpVmdwQkV2cDdL?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 54/100 (Critical)
-- **Brief summary:** Gov Kefas warns against Retirement Age fraud in Taraba Civil Service  Federal Ministry of Information and National Orientation
-
-### U.S. government charges Air Peace founder Onyema with $20 million fraud - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixgFBVV95cUxNU2ZPSk5MVmMtZEF1VkthNmxJUG1Yb0tLUW9LZTJIYnpsMVdOb2REaHJsdlhIQVcyQXdUU01ESnduLUI0QU5ZQXF0cU80TDlMNllxR3lnVEZLUlR0a0RIbWdyTFpzU0RhWVhZUjdBVFRjY3BweG9IdFUza2lyWHZaZGo5eUVZMW5TTHA4UzJiNTk4djhmcUxUTWhaRi1IOTRGT0JCS3Fzb3VLd1JZa3p1bFdOeHZxTUROaTRMVTJCcktWN3VUR1E?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Critical)
-- **Brief summary:** U.S. government charges Air Peace founder Onyema with $20 million fraud  Premium Times Nigeria
-
-### Awujale Stool: Ogun police summon Ijebu-Ode chief in bribery investigation - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxNaWY4Ym82Vk9JUVVxTUhHMjZDZzNQWUU3X2tCTW1mVEg4VW54MGxvUWlXeS01T0hzRnE4TUE5cUhMdUJrLWN4ODhUYlZLUjFzWHVwOHJieHpES2kzTVEteUhWNHU0cnVLZV9fUDRVN3JscklWaTBzR3VoSE42aEVwRldSMXp1UHc2cnR0Qi1xT0VwclQzUmNMLUVxTVU1QjB6R1R6cU1oLTVFSFdvd0NpTkY2SjR3VTRKRVRrUTQ0TTNCazFwNE5tN2lfVQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** Awujale Stool: Ogun police summon Ijebu-Ode chief in bribery investigation  Premium Times Nigeria
-
-### Analyzing the Efficacy of Non-Oil Revenue Mobilization Strategies in Reducing Income Inequality and Poverty in Nigeria - Nigerian Journal of Sustainability Research
-- **Source:** Nigerian Journal of Sustainability Research | [Original Link](https://news.google.com/rss/articles/CBMiX0FVX3lxTE9kNFF5SGxoMDdScEs3cDZzVnplVEVSR09sWjJ4QUY0X2VmRTZJcDlfaHlLS0hYRU9OZnFnTzViUG9vRWRlWVlGOVFzTm9mQlhGZHRGeXcxb1BWWmNWaDhr?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Analyzing the Efficacy of Non-Oil Revenue Mobilization Strategies in Reducing Income Inequality and Poverty in Nigeria  Nigerian Journal of Sustainability Research
-
-### Kano court adjourns Ganduje’s bribery, misappropriation case till November 20 - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxQZmx2THEzWDVOWlRRdnd3Y1JWRm1lUGplSmFGR3FOMXo5WE01OGlkZHVEdUpwenNHZDRGQlcxejB0RVhRaUpoS19FVUpiV1hmOWtPMUc1MmtZbUhNOE13VmZxZ3p2RUVxMjBmR0hxaVRFSUZKak5IQXZkcWhpYjBBY1FMdkFoMVk3YUpSMmF3WXhVb001WWxmUWpyZF8?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 34/100 (Critical)
-- **Brief summary:** Kano court adjourns Ganduje’s bribery, misappropriation case till November 20  Punch Newspapers
-
-### House of Representatives Committee on Finance Demands Increased Revenue Transparency from MDAs During 2026 Budget Defense - NALTF
-- **Source:** NALTF | [Original Link](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNGVnVlNlUDZkSzJzYXRhWldwLXhmckdqcEdpMndOWHVJS2U2cm5UeG8wcmN5NWVFLVI0WFc4TEJFVHY5eVdzZTdpbmhBeUhjQVpuRW5iTjR1aDhrTTlINmZNZHhtVEp0NC1YazBaa3JzWm1LQlpBN2c4TGo5MFdUUnh1dnJEVklVYXg3WkVYZlFDSkc4elZxeU05RUpDM3NFRTJmdzQ3MG5xbmwtNFJoelBYLV9SOEZqcEZ3ajZPcUl5eFY5QndTS3h2bW5MTDYyU3JjT0dZUTlFR0E?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** House of Representatives Committee on Finance Demands Increased Revenue Transparency from MDAs During 2026 Budget Defense  NALTF
-
-### Despite evidence, Akwa Ibom govt denies receiving N653.6 billion revenue - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixwFBVV95cUxNS2hyMmgzdDhQbFNkd3NTNU1tTUNBc21XMVlCdi1VcExBZzBWSWlTeXZENXZfZnYwYWs3Z2NWeDloajN6SDRSbnBpeERuZmpEaFF5X0JTbEZWNGROQnlNbE1uNUlCWWF5YzdzQTFYd2IzWXF1dWJnUGxpZHJDdnpHYnd3ZEIzQ3R5cTl3SHhENlg2dFhvajZOT3d2RjJYRGQ1cUdlT3hfcUtBQ0tWbjc5NzVUT1g3M012QTlCRENCbnVhT20yT0lz?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Despite evidence, Akwa Ibom govt denies receiving N653.6 billion revenue  Premium Times Nigeria
-
-### EFCC arraigns MD for N144m Hajj pilgrims fraud in Gombe - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxPanBvVE5obnYwdlY1YWxOTTNmOTVTdjlLMGNaMEpsdkd3MlZFamR0Wnc1eDhmNmVQeXgzQ3JHM2s4QnduLWlHbDBFSk51MGZfMjRSaGdSTU9ueGZyOG1XQWhKcnhfY1h5ZW9mcjV1QUw3TWtMb18zcUU4QTlGbkxqVWFOeHNpeENNX2hXYlItTVlWbExqemVFNGVEUnlFN1E?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Critical)
-- **Brief summary:** EFCC arraigns MD for N144m Hajj pilgrims fraud in Gombe  The Guardian Nigeria News
-
-### P’Harcourt Customs generate N731bn revenue in 2025 - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMiekFVX3lxTE9rREZVSVU2YW8zXzA4MDdkWjJDcG9wZWpaRUktX3Foa2paUEhkVzZudjBVR1FHMzdBOWZWeHZCRXV5RHdCcjdGUVNCMVp6ZjNEMExtVWUzY3V1SHRtWkpYV3luNFJHQlNMZG1Pelc4NndiY0dtcVVSeDFR?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 34/100 (Low)
-- **Brief summary:** P’Harcourt Customs generate N731bn revenue in 2025  Punch Newspapers
-
-### Nigeria to tackle identity fraud under new visa application policy - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxPVHlGSHIyZ1RFd1ItTmxmS3VkVlVhdlNyTlFXcTF1emFwZmVON3hzMC1WMkhIY0lpUXBEakNaYnpOdEU0NDlsZEdjZTdfaXBLQ29semxqb29vTjBzVllaSU5MQUFCQVNobGhiclVWZDRJdThhVHdxTng0Sld3X3A0LU9XdmEycERPLVFJbGNrMjlDY2tFdm4w?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Nigeria to tackle identity fraud under new visa application policy  The Guardian Nigeria News
-
-### EFCC arraigns Chinese man for alleged bribery, N301 million fraud - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixwFBVV95cUxNOTd4d09oMzJwSUJLU2FzRGE4cXdpV2tFWGsxYWtUa3FfMXJoMThSeUYtRVpPUHdiUkdmMWJXY0xucWpuSjdPbzJLXzZYVlpWS0M4Qk9saEllaVN3dHBUem5hRk5hU1ZiRE5keWlucDFKbVYybmY2THFsUUZSb1V4Sm5LZkZjdDhtZjB3NlpzNjJ0S3JYdGNjS0lkS3FrVVlkTjAzWWIzX1owU2c2MnY2eXRPRVpzWVYtRmRuc25YR3ZJdEx0WWVV?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** EFCC arraigns Chinese man for alleged bribery, N301 million fraud  Premium Times Nigeria
-
-### US-based Nigerian faces 52 years jail, deportation for fraud - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxOVWpuREM1OXhOU1ZOVzZkSW9uZkVrYWczRE01R2VOWmhXdVhhS3daa1JwdnUwc2E1ZHlDUnlTUW1laDZUdTZqcnVDbXQ5d2FWUGtScTdmRWZZSFVRMTYzaE0yamo3OUlLVmh2SXpuMDlBOUdhMjBzaWdzM2t0ckNTVFhsYWs2OFE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Critical)
-- **Brief summary:** US-based Nigerian faces 52 years jail, deportation for fraud  Punch Newspapers
-
-### FAAC Shares N2.300 Trillion May 2026 Revenue To Federal, State And Local Governments - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaTF1SDlwaFY3NU9fWmJnZk94M1Vsa083dWZCOW1NSGpDYWNqWmlSX0JTT0tTYW50cUU0SVJhS2J5T0hhSFVCYmJVUmd0R2taSW5BTm9tTFB2dTlDR1ZxTXJGMEZKcW1ESXUxd3RYTHdVbm5oYmRzX0R2Z1Frc1pFQ1QtckFzNW1EbjRWNkxoODBqVVA1enQwc1VONW1NOHZUVEdJaHdscmk?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FAAC Shares N2.300 Trillion May 2026 Revenue To Federal, State And Local Governments  Federal Ministry of Information and National Orientation
-
-### Nigerian court jails American businessman for theft, $1.2 million visa fraud - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxORjhXRWp6YzQwX3QzRW1JSkszZHBIQ0U4Y1RtS1RVZjJOc1lJdXhVaUV6elhOVXl6UzlFUWpoX3U3cGtta1Y4TUYxR2xwOUhTUHZ5N2ZOWkxjWlhvRVZob1dBd1poQk1vZTY3RHZOWDd4NjRCN0JFRzFFUWZjeUVST01MdjZZRU1aUnBzbXg3LTJqY2tmNVJwVEV5d0oxWWZRM3puT0p3WElNclZXNERidS1iVWE3WlNKY2poeTNGV20wMVlVU3o5VkF5UQ?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 34/100 (Critical)
-- **Brief summary:** Nigerian court jails American businessman for theft, $1.2 million visa fraud  Premium Times Nigeria
-
-### Ganduje loses bid to quash $413,000, N1.8bn bribery charges - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMigwFBVV95cUxNYTc0Wm9ya2VrYTByN2tKVkhNd3JRQVB0MWJrcGphWlJFLU00Yk8xcGc5SFlSMEg3b0N6TUhYakxkQjNSeGpPY2JWck1lNDBWeWNfSTFBblNTa2JtZ3dHS0xib09kanB5WHhWOExER0JmNFBkZ0lmQ2JxUG85d2xfT3NCMA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Ganduje loses bid to quash $413,000, N1.8bn bribery charges  Punch Newspapers
-
-### Katsina unveils 2026 budget, prioritises security, growth, welfare - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxPT2N0aFhuVEQxcVhFbHl6eUo5WEVyQ3hKdUhqRk5kdjA4QVc0QXRQbnNuRm5HZVpFZzduRHBJMU1ybjlJQXliU1U2Q1VPOFhSVEkyeVpFcm1JdERIY19xLWRDUGR1NTIxOE04VnFpQXQ4RktXRXdhS05xS08xYjZQR3luZmFaaTN3bnNXRw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Katsina unveils 2026 budget, prioritises security, growth, welfare  Punch Newspapers
-
-### NCC Unveils Platform to Combat Telecom-Related Fraud - Voice of Nigeria
-- **Source:** Voice of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMifEFVX3lxTE1Ua0M4eDBXcUFab1doeTM1WTJjVVRzdlFUc3JnelJ3SzVKRW5PT3lkamxRUFpnRTV6OEZPOHRaWUpoVGhHemZFZUYyNk9lWmNDbGxteWpPdjVHWEFYOTk4X0RpTzg3WlZLUHI2Q0xwZURHWUdVT2tmdFd2bzQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** NCC Unveils Platform to Combat Telecom-Related Fraud  Voice of Nigeria
-
-### Nigerian govt extradites suspect to U.S. over alleged $148,000 fraud case - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixgFBVV95cUxQRGp6SmlpMGtaQWJIdDR1Yk5YdXBrWU1lTFhEWHdQM25rWXl0V1cwY1MyNVQ0ZHdNWG5kZDN5djZjRkFHaTBNWnNWREQ3ZVpKTy1UVTlBSTJRcGVxcmM1cEZ3YkVaX0JvZDRDbVF3RzVTVERXeXM3bTNsZ1pQVmtjNVVObkxsaEkwWUgzdmtuQ1RVcXBFYWtRVFlYa0lCVjJQQURZcnBsdnhOTFdJVFNtX2o2ZTFBOGU4V3h1VzNTc1VpX2lFOXc?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Nigerian govt extradites suspect to U.S. over alleged $148,000 fraud case  Premium Times Nigeria
-
-### EFCC arraigns three NRC directors over alleged N2.04b fraud - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxPX3pMdlpoLWU1Z0JDYlZvOHQzY2hyT1VXdWFQVlVGT3J4dHl6ZFM2TXRrSjdxYkJyMFl6aDhlbmhGeDI4RWtZZnBySVJOTnBZekdETGNQSE1nVEdCRDVGTnkxYWI5WFpaN2U4TFpVa2U0SFFWN1pwYnltcWdFbTBLVHZidmc5cEpPQmpCbXF3?oc=5)
-- **Classification:** Person (Other)
 - **Risk Score:** 33/100 (Critical)
-- **Brief summary:** EFCC arraigns three NRC directors over alleged N2.04b fraud  The Guardian Nigeria News
+- **Brief summary:** EFCC arraigns ex-Skye Bank chair Tunde Ayeni for third time in N15.6bn fraud trial  Premium Times Nigeria
 
-### Court defers ruling on Ganduje’s alleged bribery, misappropriation case - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxNOXZQNFQ4YnBSWlN3dllrUFV3ZVJ5c29jVkY2bkcyaHpGRi1EMk5FblAyV0dERzBPNlRoekljQURUMU9aZkVIV2lOMjU4WjI2WUk4akdXVEM3QlNad2E5OHhfeF9icDQzeG5FVUlSMVNpcGRZcXNpaC1LLXl6cEpoaHF5OWlKZXBsTExNc3k3dnNiU1dP?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 34/100 (Critical)
-- **Brief summary:** Court defers ruling on Ganduje’s alleged bribery, misappropriation case  Punch Newspapers
-
-### CPPE raises concerns about oil, revenue projections - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxNbGI4RW9YaF9lT05fdi1GV1U1cWlvWjFmX1NuckxMMHpvellNRFBYVGxWN2VsXzQ5MVI2VkdnZWEyY3RfU2dEc0h4c3R6QWdUd0ZuMHVCTEJFRllOMjZxTG5CbjU4TkhYNkEyNVlPQjNzRHh4YmdEbGZ4Nm03LUVkcE80R3F0Y3kyTjVkMW10dzhiUUhEcUpod0ctVmZhMGp0VEltME94SFY3OXRBVjVnY0NKbGhNQ3M?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** CPPE raises concerns about oil, revenue projections  Premium Times Nigeria
-
-### Oyo hits 80% 2025 budget revenue, plans N5.4B recovery. - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMifkFVX3lxTE5ja21oUW1UQXZmZGdHUnAwTDkyNTVPLUVmcXY5cmVTaFlmRHNnRFdnSHBHZ1dMUlJKU1pyaV9jV2pEd2pjVG5yajVPSDZ2Z25XTUJteFNMSDg4LTFwQW95bDRXY1pLRmVmZFVkWkVNUEducU1DdTlvTmJGc0wtdw?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Oyo hits 80% 2025 budget revenue, plans N5.4B recovery. Punch Newspapers
-
-### 2027: INEC considers full system audit to prevent repeat of 2023 IReV glitch - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNjJ6S2pDMzFLMDVVdDRaNUxmaUNaR1VJY1ZRc3pKN0dQWjhwVkVLd3hrSldPSnUtdk1melRhR3hhbXA5cGYtZXFyMTljR1ZtVXNVTEZfelVEUXNVc2ROVzF5dDMzYk9WVnF2YTkwQnpTNEJtQkJ6UDBIM0lubmZYbGRjNHNfSGEtY0FlcHRvWjFxXzlyVnBYaWhtNVhKMGxQWnM2Z3hmekU?oc=5)
+### ITF, NBTE end mandate dispute, adopt new framework for skill development - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxQc3dxRTJKa0E0QVpCOHh4VnV3eUxvYlpEemdLbGpMQTJjQ2JOMk8yYXY0b2VlTmQ4ckEzbFUxdWd4Y0FzaElIZ01nUVdxcW82Zm9DVDVTT3pHVzNTUzlKZlMtc041S2YwMHhucmZpcXhSem4zMzctM2tVZzZKSXNiOUJaeHlNd1FvY25nTXM0Y3d1c2YtVXVFX0w2LTZzdzdoTlFv?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** 2027: INEC considers full system audit to prevent repeat of 2023 IReV glitch  The Guardian Nigeria News
+- **Risk Score:** 31/100 (Medium)
+- **Brief summary:** ITF, NBTE end mandate dispute, adopt new framework for skill development  The Guardian Nigeria News
 
-### FEC approves 2026–2028 MTEF, targets N34.3trn revenue in 2026 - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxOMHc0b0R5blNfRWZPUll6N2RrUGVfdEhwZDRuNEFCV1lZUlVJY2pUeUozWnJ0R2todXB0clZyc3F0N29ybm9nTlplNWNlQ2hzMVhYY2NmNExhUUVScmpyMWIzRGoyRkVpNVM2OElZTnpPYWt4akJVQUg3UW1fMWpTanlqeW4zRk9pUEwySm9HVUowNHF4aDFpa2hUN21sYWxCZ3M0bHRheU9XLVdFZUlrT3J0VUxzOG1Qcnc?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** FEC approves 2026–2028 MTEF, targets N34.3trn revenue in 2026  Premium Times Nigeria
-
-### Kogi Government Launches Anti-Internet Fraud Campaign, Calls for Clubs in Schools - Kogi State Government
-- **Source:** Kogi State Government | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNb0lyRWtiVWFjX2dvVmdDSDQ2c0N0Vl94Z1UwQ0FkS25qMjBoMkdjNmFVSXkzSUNMbUtOMVRJLWttTWNMaFVpWFNCaU11WXp4Y2FpdGFaVFdLOFZhbUh4YmhBQTZkbDFCWThDS3BvWG1VakVsSXpFakdUUThDZUZyR1R0Unl0Wk44MUJEbnZpSG96R1FUSjZrVnpnWERqNTNWWHcwS0hVMVd6Zw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Critical)
-- **Brief summary:** Kogi Government Launches Anti-Internet Fraud Campaign, Calls for Clubs in Schools  Kogi State Government
-
-### EFCC arraigns magistrate for alleged bribery - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxQX1NYNXp2RXZiWnNzVE9KR3F2RDBTTWpiMUZlN3cwZ21lWlQ4RmRfV0lFd2llRV9Cc0trZWp1R1VlbmRaZHVZSkNsMlhwamtnUVdDc2NaQ292cndKSmVkNmN2a1lBLVlLcFFHSmlYWVpzdXduUUNMRjVVRVpGWXpFTGlkUmNuZHBfbzVVRmIzY1hCazlZZWNCcVdKVmZHd1RzcExj?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Critical)
-- **Brief summary:** EFCC arraigns magistrate for alleged bribery  Premium Times Nigeria
-
-### Experts back penalty waiver to unlock tax compliance, boost govt revenue - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiREFVX3lxTE9HSTNhb3p3YnNmNm1iQXc1MG1Dd3J1NUNwQ0RDOURCR25tUGo1U2ktVWZpYXFLSUgwcG1lclM5dFNZcEpF?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Experts back penalty waiver to unlock tax compliance, boost govt revenue  The Guardian Nigeria News
-
-### US court jails suspended Ogun governor’s aide, Abidemi Rufai, five years for fraud - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi0wFBVV95cUxNeTZyZHppU25GNFpkRFkxVnkyYTUxdHNqQlJ5RHlaODVsOXFQQ2MxYU16Qk1vVmNOcm5BcTJfaVB4YTRqbWdRVkctNU1QU05LUnFRLXBVS2dsc3hldkQwOVJ3SW5VQlFlZWw5emFvdVlPZ3ExTlNieVREajNBRVlkYWZKS0p0TklxUzRzWjVOQzNzaVMxblpHNjB2STJyZDd6LVhNMkRiQXBTdWhiWkdkdlRreTRISEpNblpkSG5rQ3JkVWZUR2R2N0k4OUVxMElwLTVv?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 37/100 (Critical)
-- **Brief summary:** US court jails suspended Ogun governor’s aide, Abidemi Rufai, five years for fraud  Premium Times Nigeria
-
-### National Assembly Joint Committee Rejects "Inadequate" 2026 Air Force Budget; Demands Surge in Security Funding - NALTF
-- **Source:** NALTF | [Original Link](https://news.google.com/rss/articles/CBMiygFBVV95cUxQYy1VeHA4OTR5cGZuNVBBRF8xR3BhZ05yNFFOMWRIYjJpelNNWW5hcFNHRkQ2OEROUTVtRjdCMUZBdEtlTGIxcHFZRnRzcGtYZEZ3blRVNjdOT1JYSWxqWlVIVnQ3THFQaDN0QWJhUHl3bTRYeUlVRlRfSDAzeG4zcE9lSW1HMGVVbng1MXJoZHJuY0dlWDdwUEVDQ3hjWHczd2VlcTNReGJ3aHBLQnlSZm9TQlJ4N0YyV2pEb1QtR3JEU0E5ZWhBdHh3?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** National Assembly Joint Committee Rejects "Inadequate" 2026 Air Force Budget; Demands Surge in Security Funding  NALTF
-
-### Invitation to Tender for the Consultancy Services for the Development of Audit and Accounting Manuals - National Identity Management Commission (NIMC)
-- **Source:** National Identity Management Commission (NIMC) | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxOaFdOWF8yWXpoa09qTUpMdEdKTzZvZ0RzOHNsSXlfVUVHN09pYmVWVXlfV09KM1VEeWEzbmRDNFlzSTBUdUgyWGNNc285NGZqWjlnMmRVVlhsS0N4d2RxRUdhU2FDYng5cHp5ckZPLW9XRWJWZmZROGZBUjEzMHhQTkpnYnA3YjdCUjFTVHR6ZTU4eVN1Qkw1SGQ3dU5hZXpsdlJvZHNOUXhOSVFpVEE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Invitation to Tender for the Consultancy Services for the Development of Audit and Accounting Manuals  National Identity Management Commission (NIMC)
-
-### Government Network Infrastructure Baseline and Audit Guideline for Federal Public Institutions - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMibkFVX3lxTE5xbFZnbEp2a0ltQnN1UG1zZUo3dTJtb25nOHVyek94ZjhiYmN0Z3dEeFF5YUgxS3UyNDJudFJhRUZxMjZpcmFhdEZhWUJhM3lreW9ENVBhdE1ENmxpbS1kandvd2p6N3NoeW5tZkhR?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Government Network Infrastructure Baseline and Audit Guideline for Federal Public Institutions  National Information Technology Development Agency (NITDA)
-
-### Shettima launches Niger Delta Agricultural Development, Investment Fund - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQMW1QTzYxRFBGei0tcUVrMGpLOVU1ZjdDdkk4UVRXRXo1Slp2dnAycnRXM0tZa2k5Qkt4OFRtUFNUcDBDdmhkcE4xcWZSaWNzRjZnUkdSMWVJZnNGakdscGJfOXBhVE5yZ2ZNZXhMUk5DVnVPTVhobWhkS2lZZGpsLTczNGRZQk9ZVDV0OTNZaW5JTjhSb0hkSG9uQWlBY3hLdDQ2RVd6WGZVUzjSAbABQVVfeXFMT0xETFRFV0F1VVRVc0NSMFFDSGFmY1BUM2tHM2xyWFBIMlpSal9Rc2NmajFQWV90SDY0Nm1maFZHQUZUb05COENpR25vUDhZWnZKcGdGOXNZRnY0bm5kRmxfV0kzQlFMS1ZLeTFzLTVfakM5VGF0Wkx0WTBkdEt1NFlwbjMxb091RHFJQi01bnhHeV9wVmtWYm1hMV9IdjU5d3NhUHZTQl9fdXNEVW1kb0o?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Shettima launches Niger Delta Agricultural Development, Investment Fund  Vanguard News
-
-### Dollar to Naira exchange rate today, July 15, 2026 - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxQdHJkaUpaSlRCZzFxUU9jVjJ6anAxVFh2TVV4NzhrekczM3NWWV9rRFRXSWd4VHpmTmYtOUlJZ29COUlsZnZfN1JUcW1CQ1hTRXF6eWU4TzBBZFJ5Qmx4MkJiVGgwejYwN2I5NWVtenN4aklLVjZJczZReC1sdjY1ck5OTWU5ZnhRUlMyQVFR0gGTAUFVX3lxTE81TDRzZk9KQWIyZnd5bTgtQ3ZaNzVIcVFJUEtrbWYxaXVLRGxROW9uei1iNXFYaXZzeU9HNXdWV2EtM2ZsNnhoWENBVmpSdjZfcVVZcDdkRU5WVmhQS3ZFUUExT3EyZ1BCd3JmU2lsQXY5YlI5bmotYmYzVUlkVGNJaG9OZUVOeGlSZTJhYkhnUkZxdw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Dollar to Naira exchange rate today, July 15, 2026  Vanguard News
-
-### Mary Habila: Ask Umahi to step aside – Atiku tells Tinubu - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxPcHRiSnQydFZUT3BuWFNmSkc5RlJHYWxfajEwSUtyYkJZOWt6U2FSd21oTWlDTVJxbEk3N2VCT2dRZzZsblNtOFl5cUE3MnhvRHJQaENUUWEyaENIT0YyQVJHOXZkUl8tQWFEeElMM2V2anNRa3Jfc1JXeFRGV2YxamlKRlo2OFR4UGdVWXNnS1RGalg3M3fSAZsBQVVfeXFMTVhTN3hfMXBzcS16MWpDVEV5OG1PN1B6VDlnUmhUbEJvMkxJV1FtY3Q4clpjVHRmcFNhazRsR1l1LUdwNHBmSElwaXJ1MEZZTE9ycG90UnNMSFlTMllaMXNodXpZYlJfdkgyNGZOWFFkcGtMaXFuVzIwLThycmVoSVBPYTBmRV9jbm0yNEc1aHdyQ1ctNURaanQzZk0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Mary Habila: Ask Umahi to step aside – Atiku tells Tinubu  Vanguard News
-
-### Mary Habila told boyfriend she had nosebleed night before death — Umahi - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNDNIV3JPc0hULWtQZmRvUXBHVVptVmRqMHdvdDBINjVrQTVoTUVNOWI2aGtMU2ZpRmZNUi04ZHdjYXVreHVPNW9vRXVrLXpXRTM5T1JDTkNkaHo5TmRIX2xqZFRCSjA2REFGXzVTWGxta096SGVjcUZpOF8wS2o0UUVCclNkUEZGRWxtZWprLUN5R2wxSGE4SEpCb1lNUGJsZ0xISHpxNXBDd9IB9AJBVV95cUxQaV9DV1dDTWE2THdNVWJBWUo4YkpLM2pWN1FGQzNCN0JLQXZRY282V3N4cWVDVkdVWFh2NEJMb25GVkV3dGt1LVNLYWtmVXhsdjc0ZFRFdmdDNFc5cldBNDFZLUctWmwwTDlIUWN2RldJSHpjT3ZLZ1hELVdlRlVYcm5qa2kzcE1xVXFSbU1Ec1VacFhNQ1JiTDdHV19nVjR1Q192N3BXRnVDbFVLUk1LN0lTT1BpYkVhOTgwNmxYZW41UE9jMzhtYjJlR1pTYWRWRHNIR3R2aldUVV8walFkZ3dLS2ZOVGZBZEVTM3hBZzBHY1hHaGdRbnhrd0p0V2RBVVR3bmxTYXJvcTFXRWlNRHBEMWpGTHRyV0t0NFRfZkFqMVQ1bVo1bVJsSXp0ZXJRZ0xCQ0U3NExFZU1QS2hCUlJqc0Q5VkRlak5XRjVlUlZsSU56Wm1jX3ExZnViRGJianc2OFlqOHFRTDB2b0V2X1pzOEs?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Mary Habila told boyfriend she had nosebleed night before death — Umahi  Vanguard News
-
-### Nigerian Catholic priest dies after being told to leave US over expiring visa - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMitAFBVV95cUxNZVdYeW1YanFJa1B2bW5PZ1pKNTdnUi1yQjZ5YTVqR2RlcElWYW02NEN6dm95cUE0S0FiclJ1V0c3VTY1RXhKa2NYN2tIcmZjNjJnTEZxRFVFb1k1cmw1ZW84MVJRWl9KN3haZWQxSU5fZHhHWU9keWhaZXN3Y2RycUVsMHZxZEYybTlIY1B2aHd4d0F1N1VBMk1RaXRVcUc0WWwyXzgxU0hxUTNDZUp0OVFpZnjSAboBQVVfeXFMUEZpb0ZkcHJ5ak84SmgwZE9qbWUzSkI1am1NRjh6eXRMT0FFY2hnWFJWVU1RVno2bHN6aVBtMGRxRmhWdzdJeUZGTmt4dERmbU4zYUZESWs3UFgxYm0tRUxLN0hSWl9YNjlLNU0xSnRRM2s3VjlxUTlxYkkyaTMweGk5eFI1U21lOTN0NE1PZ2p2c1NNd1BzV3N0WG9hc2piZVZ0YzUtT1p2czJkWkVpZkFmMFlwa2VwSHdB?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Nigerian Catholic priest dies after being told to leave US over expiring visa  Vanguard News
-
-### Four kidnapped during NECO exams ‎rescued – Kogi govt - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxNUTRxYlBKcEVQQi1GX3lueVcwcGJwdi1vZlo5SE9nd1pLeEdnM01nOEJob2hrdTRXcVhLYmFkclZ5UlB2UlNBVWVyTDB3Nl9WMXRBMmkwdTNVOEpVaEtOOGNBX1lMcUxma1lCNkQxTk9FMGQtdjV5QUhmWldXc1lfcWFzVHJNc0JMeVRyTUxwbF8tUmQ5eG8xanJwLUbSAaIBQVVfeXFMTkNPMHZlQkZhNXgwbVJEdjV0amFsa1hPZ1dSdnEzeG1nV3VjVFhHWmJMTC14WjRqczdsdTFTdUEyeWx4aFYxamlLcnp6Z2ZrX3FyQmZVUm55UHM3Tks3R0NqUGJLSDZ5b3JkR2V4Ui1keHFtQjB4enFiS1I2SkpUaWFPVXJ3dUVkeGVlb05HblExdHlsdDhid0YwVTl4LURSbU53?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Four kidnapped during NECO exams ‎rescued – Kogi govt  Vanguard News
-
-### ASUU, NITDA and integrity of UTAS payment platform - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxOa2JVeHdBQnFuTUhHY0ZuNmhaN3ByTGIwbTF1dEFyREVvR3dKN1JjSkFDNEh5U1JCdHFWeW55NUtXOGVFLVRqX2FZamFxRTZMam9uRWZZYTNjVGlocENyUjdORmlwalhVOHVRQ013OUF0M2VPRmJNbGpDX3VuT3BTZUZLRmw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** ASUU, NITDA and integrity of UTAS payment platform  The Guardian Nigeria News
-
-### Buhari, NDDC and the danger of executive recklessness - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZmtQZ2hxVVFlb2NoSDV1WWZqSk5IVm9WLWVxUW9iQXo3TnRGbmhhY1ZTZ1hUcGozbVhMWWIzZ096aUJpWGRDZGwteTg3YUlqVy1yS2ZhcDJBWnhIUEloSGgxMTMwMVJnVFhfVnRIclpFSmtNZlgxc3ZTbWVBNE14TWhma1p4U0hN?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Buhari, NDDC and the danger of executive recklessness  The Guardian Nigeria News
-
-### DISCLAIMER! BEWARE OF FAKE NDDC RECRUITMENT PORTAL - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aeUZKWkRuZ1dfZ0h6QUxCWUlaOWFpZWoxZms3VVFPWWZrZnpCVmRHb0lxbWhPWlY3dHVLMnBNNktPTWxTRkd4TlQzTGg4OXBvaEI4MGt2bWQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** DISCLAIMER! BEWARE OF FAKE NDDC RECRUITMENT PORTAL  NDDC - Official Website
-
-### DISCLAIMER: BEWARE OF FAKE NDDC RECRUITMENT PORTALS - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiV0FVX3lxTFB6bi1KOWdqbFpQOXBHM1ZaUXJEbW1SdTgwYnI2T3RTTHdWWXJreTIzaW1SOURTTkNJNkZNZ2dBQnBkZmhpUDgxWmRQa3ZSMUdGRnlUbDZQNA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** DISCLAIMER: BEWARE OF FAKE NDDC RECRUITMENT PORTALS  NDDC - Official Website
-
-### Transfer of Regulatory Oversight of the Electricity Market in Edo State to ESERC - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUFRJeTFrVWRZSW1tU1JlT3p3RnV5WXBIRnZ3V0dIOWFXWHUwU2RGY2E1R2dIenVOWUxVR0lnMDJXZU9Kckw3SFk0Mm54YTFKVXZaZzg5RjIzSDc3MUh1Vm02RmFaRVN2elBtVUx5eTRTQTJPWUxaVkpMbkwxa3NHSklxS2NENFdJRTB6SWJDTlBlR05HY1lfS1BITWpEX3V6azJ6eVFadWdUYkk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Transfer of Regulatory Oversight of the Electricity Market in Edo State to ESERC  Nigerian Electricity Regulatory Commission (NERC)
-
-### O~. ORDER NO: NERC/2024/45 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE ESTABLISHMENT OF THE INDEPENDENT S - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVTdpdDJMUnlUQ3VLSEVuYzU0U3J2WV9PY1FUR2lfQUtEbWFKZDZTVnFpQThlaFcxMElENUFKR2pEUzVIQzV5QU1BWVQ4RWFHc2dxY2x5UkphaVlaaWhoM1Izc0FwdUFhaERPSmNaNjNNMkZWMGhqZkd0dUFwRVZaaXlEbkxiSVhnTkVURlVuZUZoQTE2a0d6YXJHZ21qMTUxOXV4cHJfcGNnVmlkV1R5RHpDVlBXRjRzTnl6ZFo5WlU?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** O~. ORDER NO: NERC/2024/45 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE ESTABLISHMENT OF THE INDEPENDENT S  Nigerian Electricity Regulatory Commission (NERC)
-
-### ORDER/NERC/2025/014 - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMif0FVX3lxTFBlMDFDZE5Sa0NrREEyYnJROFpyUnJuVHc5WkpVa1BVdGRWUUJvNHdhRTR3YWVqaFhuV3NDS1ZJN3JnWXlxWF8tY2FQV0VwYmgtN2NJVGx2QVFMMlo3QnlzRFN0aVhQTC0wNnRYdzZ2aFJTVjZ5QVpDUDRpYXZ5NGs?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** ORDER/NERC/2025/014  Nigerian Electricity Regulatory Commission (NERC)
-
-### NIGERIAN ELECTRICITY REGULATORY COMMISSION - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiY0FVX3lxTE1kVzhNbTBFME4zWEVla1NtbDBXNDNVX000RDBMdm52WGg5aXpIYnN1Qnh0cGZrU0dDSkpxRDNKdDBMSlAzMGJtV3YyWVZBeXlZYnJEN2JqNnMtZ0ItT2xOU3VoUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIAN ELECTRICITY REGULATORY COMMISSION  Nigerian Electricity Regulatory Commission (NERC)
-
-### ORDER NO: NERC/2025/001 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE TRANSFER OF REGULATORY OVERSIGHT OF T - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbDNSLTRma0lMZlNBOVlJSG1yTkgtQnhfdVNvSE1DOUNfaDctZzZFVXVRaHlES0xBaDBTc2ZzRGpCRGhtSnlnSG9tQXIxWEx3ZS05N0k4Qk5mTHlwMi1WUVpMejVEbkZaWGtzMkFiUlpOczJhSlRPRzl3MllGeGoxeWdMak1yNWVWT0xQc1lrYXhHdHpYQk5tMnFCQllNdl8xTktMNnRvN2NEendtX2NOYXNodUlHUnY5eWU3ZEFHaTZYcXE0RXc1Tg?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** ORDER NO: NERC/2025/001 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE TRANSFER OF REGULATORY OVERSIGHT OF T  Nigerian Electricity Regulatory Commission (NERC)
-
-### Akwa Ibom, NDDC and the Appointment of an Acting Managing Director, By Ibanga Isine - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxQR3hZQzJ1OEs1SElWck5QcVBMRjNXLVNWcHJTLVVsTV9NQWpKMzFkYjRRZ0g0S0Z5WjhUMlRtc19vLUZucndTRmszMmhkYWNvdGdCRkdkWGFrWnJrR1c2MF9vQXBlTWRkdkFEdTUxSTdQYjhvTzFCVWRUVlJLVjhuVldnYkJTbVpfcmRMYlNyeFBibnV2VEh4T19IQVpucGdmR2hyX3BpNTlEVElZU2dSQQ?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 42/100 (Low)
-- **Brief summary:** Akwa Ibom, NDDC and the Appointment of an Acting Managing Director, By Ibanga Isine  Premium Times Nigeria
-
-### ORDER NO: NERC/2024/1 13 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE TRANSFER OF REGULATORY OVERSIGHT OF - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUXR1VXV0NUFIODB0bnBTSkxqMmE5THhDZ3ZSN2lFMWhZb1NCamNfNTVQc1M0RktZZVVtMU54eFhDcVRObjY3VVlwYTZyV3RWNmxOQUFyOC1BU0ZocUJBeEdMUllpYmwzdDlqaWRyRlV2Xy10TGxzdFhBUE95VDNkZW0zc09ZS2JsT3VicG1lLXhsakpzTXVLbndxeFJ5ajM2aWdj?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** ORDER NO: NERC/2024/1 13 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE TRANSFER OF REGULATORY OVERSIGHT OF  Nigerian Electricity Regulatory Commission (NERC)
-
-### NIMASA and TASAC Advance Regional Maritime Cooperation with New Partnership - Nigerian Maritime Administration and Safety Agency (NIMASA)
-- **Source:** Nigerian Maritime Administration and Safety Agency (NIMASA) | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxPMTdMQjdVdWVha0k1OGY5bVdUOUY0Y1p6OV9nTHlhNkVMQi1vN0tTUE5lYUMzRF9ndXhYMmNOR0NFSjlfZUh2QkNxS2s2VjJMVWtXNGpRUlVxbXFqOVp1b19ELTJXN29rMHhhNUd2aVhSQXN6Q0QwZnJhNWZtZGRiRWNBVjlEdzVmd1Z6OERvRVFWbWdSRGx2blFQS2ktdDg?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 38/100 (Low)
-- **Brief summary:** NIMASA and TASAC Advance Regional Maritime Cooperation with New Partnership  Nigerian Maritime Administration and Safety Agency (NIMASA)
-
-### Transfer of Regulatory Oversight of the Electricity Market in Plateau State to PSERC - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxQeG5kSW1FS3hsdWtEN2I2ZFhBaEdaX0hXNmQtZzhrc1Y4em5jTmpFZXRXQ1l0X1RqSzdFUWdKWmNWQ3VVNkhtdW0xOGpDYVBoT0VLazVVa3FJSUpDSmFlaG9YYi1RRzNBX1dyMThLLVhkYzlpcGd6NG5LWklGdlNxRE5ZSkV4ZDVVYm1XRHBOaS1HaXdadkNRMGI4MkdKQWRaS3FZdEJKdG1vUGlBcWtkMA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** Transfer of Regulatory Oversight of the Electricity Market in Plateau State to PSERC  Nigerian Electricity Regulatory Commission (NERC)
-
-### NIGERIAN ELECTRICITY REGULATORY COMMISSION - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMidkFVX3lxTE4tbXJ0R3RRaVhSNXp4U3dEVVNiM3h6bGZHWlNuTmRzV2pUMUtIRV90OTRJYjlpcnVpSEZicU15R1BZRWR1MF9EeDhLLVZzS1dtODg1ZmxWTXFfc3dCQnV5TFpiM2U1ZWlsa0NuRkhiSnAyRGp5eUE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIAN ELECTRICITY REGULATORY COMMISSION  Nigerian Electricity Regulatory Commission (NERC)
-
-### NDDC and sustainable development in Niger Delta - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiggFBVV95cUxPUjZLT0I1MTlnNG4ySEJVNVphZTFRa1FjYldGWkFic3lKeW5BVUJ1S2VlZHlGV2UzWFJqYllrYmZyTTlsLWdJMGpuRE03OVo4NUFOekg0TE40MTlJcHN6ZWVmTDcyS1QyVm9WWGl1WjRBTGgySXAyM29USmlTNDZxb3pn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** NDDC and sustainable development in Niger Delta  The Guardian Nigeria News
-
-### NNPC secures $5bn funding from Afreximbank for Nigeria’s oil industry - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWWZlcVJjZVR6TFFDUDZSQUlGb3JIMXpDbHIyYzhxY1pMUXdBOWdOZzdmaXdsenR5NmozSnhiRjJtSnZ2aFNJZkVCYkFkcjA4akkzUGZ3RU9kOTR4cTZIcWFvcm1HSTI1UFl0OEMzYUs3SHBiQWFmOHVpTVViQ3p2X29nWDFTR21PMHhaZmlqeDF4VlBpLXVDeFJ1X01BMlUyV1FCWXpsMmNpbnVwd201eWRYZ1laMnJlQzMw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** NNPC secures $5bn funding from Afreximbank for Nigeria’s oil industry  Premium Times Nigeria
-
-### ORDER/NERC/2025/050 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION IN THE MAilER OF MAY 2025 SUPPLEMENTARY ORDER TO THE M - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTE1Od1p4Q2NVLWFCeEpiWV8wUmxnYjlDTExrOENxTE5GNXpCbDhRSTlWZDJBR2lEX1c0TDViZDQwemZ4NWJEbWZCQ1NLMEMxNk56UjBXdElPVkFwa3JaTjIzakJPSWpLWnVQZmdSWjAtbS1FVV85?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** ORDER/NERC/2025/050 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION IN THE MAilER OF MAY 2025 SUPPLEMENTARY ORDER TO THE M  Nigerian Electricity Regulatory Commission (NERC)
-
-### Port Tariffs - Nigerian Ports Authority
-- **Source:** Nigerian Ports Authority | [Original Link](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5kUDBxYkEtaHdHdGJqbzk3bzNjM0NnTzh2azM0MS1UU2s5SlJTU1JrZWZLSnlVTnhGQ3JlZEJMUVRjTG01djJOUEFkN3BjTDlMZ0dVNw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Port Tariffs  Nigerian Ports Authority
-
-### Shell Nigeria Students Scholarship Schemes - Shell Nigeria
-- **Source:** Shell Nigeria | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxPLXJkSThNbmE3bHk5X2Yza2lIR0c0YlVZV2VoOEZmNl9vU2R0Z3VvNk00amxTQkl1S0wxV2NIUU9sRzZaQzVfeGJKTGQ5b1JpcWhacENiZENCZWlsTmlTc0gzazJJUC0tcjhkbkN0c1VGdjhIeDZ0QjZfU2ZiNkpJU281UUxBZ0kyQmx3SkRYbndacjV6?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Shell Nigeria Students Scholarship Schemes  Shell Nigeria
-
-### FCCPC, ICPC, EFCC, NITDA, NHRC and CBN to jointly Investigate Rights Violations in Money-Lending Industry. - Federal Competition & Consumer Protection Commission
-- **Source:** Federal Competition & Consumer Protection Commission | [Original Link](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPMGhpZFdvUDNCZmQzSndXRUxvcTZDLW1oUDFWUjFpaldpMk9LajZBYUpDU01QbEVHVThTUzdFU3c5N29JSXE1d3VMc0k4N3hObEw1VHl4Z3BNQnk2ek5PMFB4eFNwaU5ZcXEzZUdULVBmdHRhbTlJYnZVZUlOdnRPTnM4WUFUcEQ4Zmd1WWRWMjNqaEJHZEU5cHYxdHZLS3NSVXF4UHY2SFN6YS13ckpaRVg1Xzd6QWg4ZzluOFJuRkk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** FCCPC, ICPC, EFCC, NITDA, NHRC and CBN to jointly Investigate Rights Violations in Money-Lending Industry. Federal Competition & Consumer Protection Commission
-
-### Transfer of Regulatory Oversight of the Electricity Market in Bayelsa State to BYERA - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxPTmpjeE5pUnAzVTJtcURsMExyenJ1dzgyRkJ3V01PWTY5NFRtcFNDVlFvYzBpLTRhdU1EblVfU3pFTmloTUJxN19WVUVaSkRMcTVqRVBESUNzX1o2elhjdHZZV1dlbkI2eGhXZWo4ZEZkZWJyUkRjeW1OekljbzZjS3VReXBwaTE2V0tjWF9LM3BzTWFWeU41SzZ3cFpTOElWMndTSzBUS05EVHFCMVhreQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Transfer of Regulatory Oversight of the Electricity Market in Bayelsa State to BYERA  Nigerian Electricity Regulatory Commission (NERC)
-
-### Smart Money Talks: How the CBN and OPay Are Equipping Nigeria's Youth for the Financial Future at Global Money Week 2026 - Nigerian Journal of Sustainability Research
-- **Source:** Nigerian Journal of Sustainability Research | [Original Link](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBtZlN1M25sLXYya3ZIMXNUT0p5MmVvVGhTNVdIaDNOVjN3bVJuZ2JuSUY4OEhsdjNtY2NZVzctRXVQYy1BQXhwUUN4ZVVxdW8tRmFPdWpjRzU1T2ZLc3VCMWJHNUlaQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Smart Money Talks: How the CBN and OPay Are Equipping Nigeria's Youth for the Financial Future at Global Money Week 2026  Nigerian Journal of Sustainability Research
-
-### NITDA, Ministry of Youth, and NYSC Launch Initiative to Boost Digital Literacy Among Nigerian Youth - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcUt2d2dZbFM1UGxSM3M0WjhaX3dGRUxzRjNZdk4wZlJabHlFOTZNcGlmNGc4cGpXUEJNSDhyMUNTcTdxbEd0SnYteDV5YThXT0RUMzBYWTNZWnVwWlhUZlhieXoxelA3d25wd0V2Y0hvVHVDTFhIbExKeHlfX1RYVWl5dmZJWmpNdWJuQWVnSVNZelNzVzAtaGp2S3BGQzctLWh4M19GbWVUTS1PYW9rcHRsWUZGc1JfWWJEQ3RGZjBBZw?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 60/100 (Low)
-- **Brief summary:** NITDA, Ministry of Youth, and NYSC Launch Initiative to Boost Digital Literacy Among Nigerian Youth  National Information Technology Development Agency (NITDA)
-
-### f~’tf. ~ - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMigwFBVV95cUxPR0NVREhaTDBWU0NXNnk1bHRVb0g0UmpUUmlkQzRjZXlfQU13U0hMTFJBdjlYSkRWQjNoclpPTkdSQTdQX3BkeFNVV1d2aHcwWUx4OUNvOWNjaWZmRGhneFZXdDMwRy1oS0UxbnZTYl9FeWVzVHdTWElGMlZ6UnpNRTVmMA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** f~’tf. ~  Nigerian Electricity Regulatory Commission (NERC)
-
-### EDITORIAL: The 2016 Budget, the Naira, the CBN, and National Priorities - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitAFBVV95cUxQNVBDajV1SWtUMG4yM0NsZlJRdzJrZ203cFQ4M2JwTDVSWFpZd0xZendsal9tLUJvTHVfaUFhWHdZck4xRUVJRkxabzRVNVAwN1JmelpubXpsZHBKdTM5Qkloakx2dzRDQWJiUXdFZnQycC1VQThKLV90WWdVVjkwTkJtUUFtc0VNYnRaM2w1czl6YWdJQzFCNURQcUZzRy1FYncxclhHYUVaNVlWWHk5eDQ3OVA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** EDITORIAL: The 2016 Budget, the Naira, the CBN, and National Priorities  Premium Times Nigeria
-
-### NPA AND UK BORDER FORCE AGREE ON PORT SECURITY AND TRADE FACILITATION - Nigerian Ports Authority
-- **Source:** Nigerian Ports Authority | [Original Link](https://news.google.com/rss/articles/CBMihgFBVV95cUxNLTFwLTFKd1c3YUx6d1o2ME95b2tVcUVPSEpFNzh4WWhaNjZHQVBmM0VKeDJBU1RNTDQ4VFNoNl9vZHozcnVwNWFKekpVRXFJMGZVdmFrVXNJRkR1WURiWTJZVkZXMm5SOEI1SDFmRDlHd1Z1YWVrRk9PUEJHVDRLX214OUp2QQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NPA AND UK BORDER FORCE AGREE ON PORT SECURITY AND TRADE FACILITATION  Nigerian Ports Authority
-
-### NITDA, NYSC Deepen Collaboration to Advance National Digital Literacy Drive - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxQRnp1Z3RzTThiM3JCa2g2Tkw0ek1fc29Fa2xlbWJOcklibWx1RV9oREkyQzNPa3dJaGE4VE9Ka2ZDOW5PMGZ3UVdnRVRxMEtKYmpvaW1RTFZZMXRlNDBsSklicnp4eEJfR0xWLWtoUTFfVzRvODJ0TURSOFc4TWtGdjYydmJ5YmtkY1E5d010c1VoWDBPV09hQ3MwdnRiQ1VjWXJv?oc=5)
+### Senate rejects motion to review contract award process in National Assembly. - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizgFBVV95cUxNRnNYTEpvZ2RGSlc5V0cxYTJZZkdWSUhveFJhY1h2SkhrVWM5UXhITXpEeXNfMEo1MVBuNUwwR0x4OFNBV2c4cFNQT00tLVRGcDR5OGpDNHNCTHFTWFRvU0hzUXh0TmtMaERSR0VYeFJWNjJNRFRBNkx5TzJMQVpKTkVmelozUV8yajRnXzhxbkdsY2JjaElYWFRwN0NwWC1HRnFOVElQU1BGSEFMOGNxTVJCUVFXUWRxWkluM1o1Qjlqbi1IYURnUG9iM09jZw?oc=5)
 - **Classification:** Government (Policy)
 - **Risk Score:** 55/100 (Low)
-- **Brief summary:** NITDA, NYSC Deepen Collaboration to Advance National Digital Literacy Drive  National Information Technology Development Agency (NITDA)
+- **Brief summary:** Senate rejects motion to review contract award process in National Assembly. Premium Times Nigeria
 
-### Welcome to the Trade Monitoring System (TRMS) - Trade Monitoring System
-- **Source:** Trade Monitoring System | [Original Link](https://news.google.com/rss/articles/CBMiRkFVX3lxTE9OQkhYN2hncmFmUWM5bUNCajNSTXhQcFgzdFNKM0pSV3VzOFNVZDZfYWJKRVRIZlE3RXFlZDFUOUtnWm9IVFE?oc=5)
+### Airtel Africa to connect 5,000 schools to free Internet by 2027 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxQM3Z0VUg3MnlsTUQxWldCWEdGVTNzU01EYV8xWGVkWmpBNG1DNVJlV3lYNVc4YW84cXhJcm9kN3kxREI0eWh4NllWQmNORHhOaGZyMDhGUU5TTUR6VXdBQW1tYWxNTDB5ckZrMnIxUk9oU3k4TmY0QVRyXzRmRmJ5ZUM1TURSN1JIVi1rLW5SUVd1SzdCTWJjT0lEUl84ZHdt?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** Welcome to the Trade Monitoring System (TRMS)  Trade Monitoring System
+- **Brief summary:** Airtel Africa to connect 5,000 schools to free Internet by 2027  The Guardian Nigeria News
 
-### NITDA SET TO LAUNCH DIGITAL TRUSTMARK SEAL TO STRENGTHEN ONLINE SAFETY, CONFIDENCE - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxQTHpuaFlOOGplYnQ2eWVJZ25yV2hfeDB6Z3I0a09zTW4zcjRrWC1UeHhxWUQwM2I3VFJkWGdfSGdBMFlCNFZXeVFCbnE2eHlScEVwSldVMnpPS0Q1SkdZdkF2UVdsb0RXRDg1LVhUNkVycXZzdnR1ZS1ES1Y4MlJHNllaYVRZWVNhaVRpNW9fR0xDMTVrVWYtelJMM1dObWZwZEsxbGp4NUJfV0I3?oc=5)
+### Niger govt bans graduation ceremonies in private schools - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxQNjlJdGlpRjV2QUNnT0xFNkZkQlU1bE85dURIQkY5aWstSnM3QjdmcFdMZHJ4Mlo1Q2JrYTNDaC1PT194bEt0ZEs1RkswTHBCU2k2ZmloZDFzQTRQTGlPdkZGRVN2TVFFalJBS2pjNV9SZFV0b2s4b2hJREV6bmVuaUFwbFZfcUJBM25ZTzAyMlZvSS02?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Niger govt bans graduation ceremonies in private schools  The Guardian Nigeria News
+
+### Pharmacists seek united action to curb drug abuse in varsities - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxPdEVqZnFLeC1MTTc4UjV1aktjUE5wYm1ubjNaamVUT280X1QzV3A1dkh4YmE3TnY4dk9aUjZydzhJd25hTHV6TUJEcGhIYzVveGpaOEhXWHZqbmEtX1FuMUxkNVIydkF3blRYSlZNUVZRbklld3o0bW1QNWJvU1hxT1gzU01tTFFrUDNMekVDVGhmUXNWVFJEU0hrQzQ5WGZM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Pharmacists seek united action to curb drug abuse in varsities  The Guardian Nigeria News
+
+### Yusuf receives BusinessDay Governor of the Year Award on investment readiness state - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxQRW1Qc0tvc0M5S3VIenk5LXdsQkJqWlNwMkd4Y3c4UlRKQ1VSTVBjYXJ2RDVySVhMbm13alE4TTZaMWR1NlVrUXRvWWJWVHAxTG01YzZfRmZCU1ZwVEVFVVRGQjJHZkp5SHVuRWRaUUlFOHpKazJxUlBGYVlTdUpETUIxUC1UM2hVQ1o5UG11OHU2cXBLU0ZXOEh3NG1nYmx3ZDI2UkdEQzdncmprSkE?oc=5)
 - **Classification:** Government (Policy)
 - **Risk Score:** 52/100 (Low)
-- **Brief summary:** NITDA SET TO LAUNCH DIGITAL TRUSTMARK SEAL TO STRENGTHEN ONLINE SAFETY, CONFIDENCE  National Information Technology Development Agency (NITDA)
+- **Brief summary:** Yusuf receives BusinessDay Governor of the Year Award on investment readiness state  The Guardian Nigeria News
 
-### Onyekakeyah: NNPC and Jonathan’s self audit - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiigFBVV95cUxQcUFLNVVjSndqd2w5Z0dhckNseUlhajJFSjBsTkRvT2FwcHdoWjVNRGpZcDVGWjFxYzZnQ2RCMFVZLTcwcWsxcTZobUk5bnF3WHI4QkpseGY4WDM2N2hPc1NMYmVpWG9OZUE1SDY3V1FOVEwzeU1rNlpLTXROa1BPaHZIdXlQd1RZVmc?oc=5)
+### FG seeks stronger digital infrastructure to tackle cybercrime - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxPeEgyb0VZdmI5QlNlQU5SUEd3UFA5RTdJeTFzLTFSMm9GaTZUSUhyejR6NzlmQlFNSElvNjVLV0E0Z2N6WWtaZmcwOEhuYUNoNElubFdad0I1ejNiYWMyY24yU19pYnIxWUhiY0Q3OFB2enJhb2JpZTQwV2FhZ0Y0RTZrNy1oa0VIa21SaGN0RXk?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FG seeks stronger digital infrastructure to tackle cybercrime  The Guardian Nigeria News
+
+### Financial reporting and genetically modified organism disclosures - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPT3NvX1RCeHFleERiaWhGQmNwZ1hzckNEOWd0X0lkNGQ5d0JoZWtPdVVpUHlDVlhuR2plTUlERklDNlVrb3h3WFhiVFJKWG1PdXpqdFcyUjRjR3ZqY1ZMWkdVLXJjcUxsZXZZall1cFRhYS14RVlhTHl0Mll3cU00cGJwdWRTR284NzNVSjVKNkMxamN0d2hlUmtXU19HVkVnMC1DaVpJR1E?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Financial reporting and genetically modified organism disclosures  The Guardian Nigeria News
+
+### The North-West Development Commission’s troubling first steps, By Yusuf Hassan Wada - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizAFBVV95cUxNdWxxVGE2TjdmSUNqc0xjNl9PamYyYUM1WEVaRElneVhFMk1jenQ0OFVyNGZtUzhiZGNYdGV4bGZMLVdmZFN0ZVk4RDRIR2dOSlozNUpxRjFuYkxiaHhHN2NSOWtXOVhybXVFREZyc2dvOU9DbVpRWGppUFo2VkVNcGYtejBmaWROdTdlZVJPNC1wV0lhbDl6ZjA3ZVI1UmJKZW1DVi0xb3lqUEUwem1NaU51cHhHRktXM2htSy14UXJKdnBTbDRzcjdHd1Q?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 30/100 (Low)
-- **Brief summary:** Onyekakeyah: NNPC and Jonathan’s self audit  The Guardian Nigeria News
+- **Brief summary:** The North-West Development Commission’s troubling first steps, By Yusuf Hassan Wada  Premium Times Nigeria
 
-### UPDATED: Dangote tells NNPC, oil marketers to stop importing petrol, says refinery has enough - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4AFBVV95cUxQMndfXzgzRlV3QWdVMkVyS1JpSnBlcWJIS21xRUw5WUVNcG1qVzhNOWQ4U1dpdDVraVNoSnE4Y0hMU1FLc1FLaG1haEdZRUczR2YyVzRpZGZWajA0S3hFejA4enVXQmZ5dzYxVTJYRm52c3VSbVp1RXZxYkJnQ3VKb2tiZ1B0eld0VklWVjU4RUg0aXpqMWV6VHFHeDNQMlRjZHh0WGdrM01la3hiT0xCNEpXdnJ4eWlHTTU3SzVpMWxOM2dOdEpZLUVmOHRZOUREZ1Zlb0d6M0Y4QkRGQlFuMQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** UPDATED: Dangote tells NNPC, oil marketers to stop importing petrol, says refinery has enough  Premium Times Nigeria
-
-### Nigeria Cloud Computing Policy - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTE13NkwxcUFycEozRE9oWEJhWGI4NEFLc2M0WnV6bXRiOUpXclJ1T0JxSkRxdUgtZDN6NDRTMUhTcWdkbnExX1VJRUoxakxxSVVYa2lNdTlYaVR2TUctWlhCV1RaZTVLSWZpTkU4aWNIaDB1WFp1?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Nigeria Cloud Computing Policy  National Information Technology Development Agency (NITDA)
-
-### b. The Electricity Act 2023 - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiggFBVV95cUxQNEpUWlE3dlNWNkdieG5iTmVLZkxmLXdseHFjTHQwYjF3ZjQtNDRSUkdrb184dS1xT2JKeDFWai1fMEdpUXBBVk1BaUF1ZXk5bTUtZTZfM3YtYkdxLW04V2xXeDZnNVNJc1JZZXN0RlVpdjNZVTA4cVF5aWlzLXpOeFJR?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** b. The Electricity Act 2023  Nigerian Electricity Regulatory Commission (NERC)
-
-### DISCLAIMER: BEWARE OF FAKE NDDC YOUTH EMPOWERMENT SCHEME - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiWEFVX3lxTE4yNVdWSGVVUG1JQVp1cnpzSi1BbVFOTVVLQ1lqdGxZVktwTWh3LUlEMWEtd1NSbDNWYXY2QnpJeE1HcnktM2JIZkNCQWhONV9fcTBnS1FoeXk?oc=5)
+### Hisbah bans movie downloads on phones in Kano - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxQQS0yX2JCSHJlVmNBekM0X0Q5c1BRdlp5RUhrMWJTWTlQaGpyTXdmbVlTZ1JGVlRRcmprWjlWTXY1Mll6dTVWTWpNQTBpUHI4UFVPUGtGVnpGdENJeXVyVnlWQmtKcktWTTQyWUttMG55WnRQaFRjOW5Gc2ZCTUhtMEpoZ1owdmJ5djFwaVpDcmFPYXVXdWpGRGJDcURIb2NKM0U2QlJRR3NEOXVaN0VHRVNDMFRUbEk?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** DISCLAIMER: BEWARE OF FAKE NDDC YOUTH EMPOWERMENT SCHEME  NDDC - Official Website
+- **Brief summary:** Hisbah bans movie downloads on phones in Kano  Premium Times Nigeria
 
-### Data breach: NITDA to probe Lagos State Internal Revenue Service, data controllers - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNY01qVWE0SW5YX2JOX2V5bXJaa3ZFTlFONWtFYVN2U2dfelNZYlVaNXV1UGpOSnhsVGpSUHFVLVhsTUEya3pFS212UkRNU1NNc2s4di1NYURzN2VsenRycTdNZ1dYeDVSTS1Fb0hPbGpHbEdHUHh1Z09weU5UMVFOTmFrTUlRMlZNOFBIMlctS0tTcDh1QU5MZVNEdnRvazlDNHZ4c08wWGlzcVRHa3B6NFJBY1dOWTNXZF94alZDX1VheVlGRTNidkpPMGxPVDBzazJJd2ZjVWdMVXU1?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Data breach: NITDA to probe Lagos State Internal Revenue Service, data controllers  Premium Times Nigeria
+### FG aligns NABTE, ITF mandates to drive Tinubu’s industrialisation Agenda - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxOWU8tSms2RFBQYkZSRHczX0xmVk04aTFBOWJHT3F3aVo1bUNzanJsVHc5azRuVnFvQWxpSlBVOGlLcFd4THUzSnh3VV83WHZLSl9ybHE4d3dsd0VBaFdnZ0x4NkNqdHd6Njg1UG00Y1U2dkhoMElydUp3Q3JvMk80RFlJM2NpNlpyX21xNnd2aS1lSHRoWVowR0ZwOGFiX0RlbFR0aTE1Zlh6TWpyQ2c?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** FG aligns NABTE, ITF mandates to drive Tinubu’s industrialisation Agenda  The Guardian Nigeria News
 
-### Bureau of Public Enterprise – Enterprise Privatisation in Nigeria - Bureau of Public Enterprise
-- **Source:** Bureau of Public Enterprise | [Original Link](https://news.google.com/rss/articles/CBMiO0FVX3lxTE1Ta2JuVHNzWmI0RkVlODlUWkdXbHJfTVFjLTFBN3IzU1BEb0FTSkt0dGNIMm9qNnJxQjh3?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Bureau of Public Enterprise – Enterprise Privatisation in Nigeria  Bureau of Public Enterprise
-
-### FROM BLUEPRINTS TO BYTES: NITDA DG: EMBRACE BIM, AI, AND BLOCKCHAIN TO BUILD A NEW NIGERIA - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxNbUtUbXQtbHlKc2QxV3d0NnFySGk2LXRXUzlzTExiRVZIQVVBU09ydjAwQXVrb3dBZWYyZ29lLVN5UENTelk3S2FJa0gzTlMxVU9EZHk0M1NwVUtVM1hsY3dBSHB5amZwM0xQaUp4NkE3UTl1OVdvQnd4dHJIc2JvZVVtMDBwMFNLcFRhZlBySENWYUg5amdHbms4UEhGNjJwek8zcGtibm45U0dXSjJhc2VCSQ?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 58/100 (Low)
-- **Brief summary:** FROM BLUEPRINTS TO BYTES: NITDA DG: EMBRACE BIM, AI, AND BLOCKCHAIN TO BUILD A NEW NIGERIA  National Information Technology Development Agency (NITDA)
-
-### ("EPSRA") II to maximise access to electricity services, by promoting and facilitating consumer connections to distrib - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTVAwSGJSVmFxMzJOeGxCWmMtaHJGRHdiQm0ybmZQUWhMdzFfUENkSW1mMDhnZmg1SUhleGZCLWpTdGtGelREb1RVS1ZZd2F2am9wNzhuUnljc1NWQUpLcnBsOXAzbnBoLVdhU2s2SHZTSFcyR2QzQTFDOHFDbW1oNnczb3NrZzdGX3B2UmtuTGpBOWZCclVsZ2wxMUM4M0VyS0JPSjF1aUtUbjl2ZFJlNXpSeldDdXZYeS1IU2MwcWVxOFhQOHh6V0lyVGV5bkJIOTlNOWU3S09aRDZ1eE44V2FycGpwb1d0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** ("EPSRA") II to maximise access to electricity services, by promoting and facilitating consumer connections to distrib  Nigerian Electricity Regulatory Commission (NERC)
-
-### NIGERIAN ELECTRICITY REGULATORY COMMISSION - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYVGF2aHkxSTFQZ2cyX25Sa2RyOEJVdDNxbWJQUDJyVkZLbW1VOV91TEtTeXp5T1hvVG9tN1lzd0czTkZ3WjlUNVdwSzFkQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIAN ELECTRICITY REGULATORY COMMISSION  Nigerian Electricity Regulatory Commission (NERC)
-
-### I:. 4, ORDER NO: NERC/2025/070 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE DELINEATION OF ASSETS AND LIAB - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTFZLZkwxa2VWUGhYVjd5MHFwN25ZR0hvdVF6Y1NfQ1kyQVJaUGhWdHlfVzVjZndGOWlxZzQ1ajlIc2d6SDRhOG9IUzVoOThRTWJsRlpzRVE4ZUp6TVhBOHI5cWFKQzJLMFFOdzBiVDlaUmtCTFoycEllYXFzZ0NSSGQwLVY2ZDJ6?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** I:. 4, ORDER NO: NERC/2025/070 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE DELINEATION OF ASSETS AND LIAB  Nigerian Electricity Regulatory Commission (NERC)
-
-### FAAN to transform domestic air travel with V-Pass facial recognition system - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxOb2pQUW5yM25fZDhMTTVqQTFRSnlGdXFoNnBDNHFDdkhUUnJEZExraDBtLXg1WmlGaFp4NTBjLXpaQ0RZV3NhQnJoaGF2c1JndzlVUTc3bVdTWHFZX1VKcEUzMnRiUnZHcUdYcUw2NUJ0Y2I3NXI0QlVxVk1GeHNxdTVKeENCeFhXNWZ2SHVFcHhOS0ktRmJsTWl6eVlFa0M1MDFr?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FAAN to transform domestic air travel with V-Pass facial recognition system  The Guardian Nigeria News
-
-### I S ORDER NO: NERC/2025/071 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE DELINEATION OF ASSETS AND LIABILI - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ0FWYlV2bDlac2hHcHotanYzbXNNVnU4RnVyM001NVJJS2k5THFYR1hwWXhUR05LWllBWXI5S1ZBQTZ4WDhHXzJvQk5rcmRCOXRubEVDa1Y4MVhhMjF3ajNkQXlleDN4SWppa3lSSWRqVHlPX0h4aVd0a1V2WVVxbXpEYlVNdXQ4?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** I S ORDER NO: NERC/2025/071 BEFORE THE NIGERIAN ELECTRICITY REGULATORY COMMISSION ORDER ON THE DELINEATION OF ASSETS AND LIABILI  Nigerian Electricity Regulatory Commission (NERC)
-
-### National Center for Artificial Intelligence and Robotics - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiQEFVX3lxTE1ySkE4WGlkNWxYdHVHZGo4eHlqSmtsUUpVX3NkSkhhY2xybWxoejV4VlVzVm5vRTl4T3VzYXpzcHE?oc=5)
+### Senate passes bill for Federal Medical Laboratory Varsity in Jos - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzBqRVVyVlcwM3VpelVtY3otT3NiMF9IVlZ3LVVBaWtsUE1hNk1TTTd5aTdJbTBFdl9BTXZSWTlFWW10RmlzWl9kVEZHUC00YTFGWkZ5Tkx1U01ZdWVzT0xabHRhSi1BUEdIM1JMbTF6Uks3ZjM3R2dhZ2lDcGJCR2ZVcmxSbElIOUt3V1NpeWd0NHIzTEpSZkgtWQ?oc=5)
 - **Classification:** Government (Policy)
 - **Risk Score:** 55/100 (Low)
-- **Brief summary:** National Center for Artificial Intelligence and Robotics  National Information Technology Development Agency (NITDA)
+- **Brief summary:** Senate passes bill for Federal Medical Laboratory Varsity in Jos  The Guardian Nigeria News
 
-### FIRS, judiciary strengthen collaboration on emerging tax laws - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaTVuWTFCRURUSWdkZWlxWnk1Z2trU1VLb2RvTnNiLXkyZGthbzh1VkpYVk9RUm1oZnFvMHh5bmUzdFJiZWM3TGdNR3FYczJjejF5dnBWLVFRVXFMcXhNaWxOT1pXMTJqMkkwajZCdzV5S3lZY0tfb3hXVXZjVG1zSk1GcFFSMk15?oc=5)
+### The PFIPC scandal and burden of public trust - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQN0YycjVfU2EtTXM5N3E4YnNtaVBzSjRrQ2pZM1JrcWw0ZUhyT05TYl9aTjNNYkM0RFBBWm0tQ1dQaVR6U3BWcU1nZGpOYnVNTk5uUHMxdUZ3aUNsZDBLWjYxWl8teTZfTm5aNTMxRzROWnZvN09VS0stV2syRWZJdlFfX3UxSkNMSWhJ?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** FIRS, judiciary strengthen collaboration on emerging tax laws  Punch Newspapers
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** The PFIPC scandal and burden of public trust  The Guardian Nigeria News
 
-### Presidency explains movement of FAAN, CBN dept to Lagos, refutes plan to move Nigeria's capital - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZUlaN0stb2lSNU8xVVBlVEUtMnIzaWFvUUNvd1Y3MFlDWkRkVk9TUFlmY3h4OXpLS2ZxdjB4cmZBWFpEQk9lNmRCLU9SaGlPNmNtT2hobTU0Y1pEUXVMM1F5cFRldG83UW5IaTVhSlEtWnB4TWgwbFJGMDlpVm1ydGRpOHZ3NldSZVUwVEFqNjFZRDV2WlpYUlFCaDREaEx4WmZ4dTExNlgyZXNKbGY0WHpUSng3M3cwVndwRThjbEYtU2NZWjh3OFZFR1hyb1JNSVk3cXd6TWRiNFdRV09nYm9OSQ?oc=5)
+### Talent readiness, infrastructure gap as bane of competitiveness - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxOeHlaQThEZVp4Q3EyUmNhSEJlemtrQ0VOOUpDVWtKbGZBcGxfVlB2U2FJVlFVdlJzZUkzNWJ0c2FlRTdiRnRKWmliS1VlR0IwWVZ1c25MT1Z3RVowd3VfZEZiVmRETlhfRFprVDdvZ0xuZkdzMlpBQ05XYVpZNk5nRDZmSHB3Vjk5d2RreTkxUTJoTXJWeVhXVk5fZGQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Talent readiness, infrastructure gap as bane of competitiveness  The Guardian Nigeria News
+
+### That president’s projection to attract $20b FDI in 2026 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxPeUdlU2Q1Mi1Yd2hFclN1TWV6V2doOVkzSlBwb09uaFpWaGVwUDhFSV96V05odzVXRzlpTEJDT1dkVzRNeGxKSndwOUppTXdwbm5fTjZtQmt6cUVLUUhscXRmT1FxMVlYTFlEc0t3bVV0d3VUZ29hLWUxNjhhV3ZUM0Z3MTcyR2RkVklLbmlYX2J2UlhQTXZJ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** That president’s projection to attract $20b FDI in 2026  The Guardian Nigeria News
+
+### Education ministry, NBS begin fresh out-of-school children survey - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxQaDRMNkpmbkg0a3pfTVFmeVJQZ0ktWmtoZC1Fajd4dXVCX2pQeVo3S0pBTWxmazVXeFQ3X0dKd3RMSzcxQzZJQTMwZVlvMkpJX2stdVBYdUVYZGpNZGZFUWxGekswaGNteE8xa01LMHNCN1U2NWVibmloSVNEdHU0UTZiUTNXT1MwX1VIMWhuYWRqY1Fi?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 52/100 (Low)
+- **Brief summary:** Education ministry, NBS begin fresh out-of-school children survey  The Guardian Nigeria News
+
+### 2027: PDP aspirant, APC trade words over alleged political intimidation - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxPSXgtS2QyLUZhS1pyNHQ4bE9ZMFlEcm9XWUlRQ3RyamIzM3M4Y2pQUWd4anpkU0VtNTJMbU5jMFpGM09sX2YxSk9sTS05Q0tXUkZFZkNocXNYVTExWDNvVlRjYUpqOTFKbk1hUFY5TUtDRzhlV1lSNjhEZ1NtQVVkUnNTMVZWQndwaS1yWTFNcU5Ldlllekx1TzBXcw?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 31/100 (Low)
-- **Brief summary:** Presidency explains movement of FAAN, CBN dept to Lagos, refutes plan to move Nigeria's capital  Premium Times Nigeria
+- **Brief summary:** 2027: PDP aspirant, APC trade words over alleged political intimidation  The Guardian Nigeria News
 
-### FIRS And Zaccheus The Tax Collector - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMickFVX3lxTE5PQklUX2IxMk45cVVTT1dGd0lVRFpSNzNCZDBZODQ5RENvT0paTkRRWnBlbTZHejNzUTUwWjBVbk5YbTM2THlpaUhfbEEyTXQxU19zT1N3aE16R3ROeFFBQ1YxSHBndDhLdG1ZNmtLMVJxUQ?oc=5)
+### PFIPC Scandal: Adeniyi Adeyemi fails to appear in Court - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxQSkxQcmQwRGFrMzYyN3pjYkxBMWtUTmZ2MU5ZNFZjY3Q5d01ZbEYtM0JhNmcwS0Y2dVIyaWVIX3lwLVp0UjJqNkJ5cWNOcTlfY1d0c0ZHVVBsTmxESTdkVkhfcHFidGJxQmVJVDRYUU9FUHlKeHhRcXFsTHFPMkxTZWJYSG5mWkxYelZySW1IQUFoUQ?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** PFIPC Scandal: Adeniyi Adeyemi fails to appear in Court  The Guardian Nigeria News
+
+### City Boy Movement inaugurates NWC, targets 10 million votes for Tinubu - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxQNEdBMHZTMEVrelBmQ19FT3drUW5UQkQ3TXlQQVZQYzlmVUNTYW82SEJGU1RqM2hMbGJrb3BZUVRRUkt6MTVackxPdnRBN0ZLSnBpcjU0YTRwUjZSWW03U214ZHZ4WWY2M1JqUXdRa1pvOWpNeWNIeUtpV3haNHVncW8xS0dQT29jTzk1M0F6TERXaFY2RUhvSnZ1RQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** City Boy Movement inaugurates NWC, targets 10 million votes for Tinubu  The Guardian Nigeria News
+
+### PFIPC Saga: Gbajabiamila files ₦15bn defamation suit against Adeyemi - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUzlVbGdObWFaRzUybGNWUUNwX2lXZ2pydzJtR1Nra2NPblpZOGFGNUJ6bm9HMUhVeWNocDJEVk85bUZUVlBGdURsam16QjZJVTBtM1BLMFZnQlE5S2tMQUI4YUNXTnVaRV8ySG4xRUx1VVdzdjI5Q1dHT3NiU21LS2VGVnB3YnRUUmtnT29KWVdnV2ticndjNWhGanpzOUFEek9PUHhVcU8?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** FIRS And Zaccheus The Tax Collector  The Guardian Nigeria News
+- **Brief summary:** PFIPC Saga: Gbajabiamila files ₦15bn defamation suit against Adeyemi  The Guardian Nigeria News
 
-### Impostors Hack NDDC Chairman’s Media Accounts - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiWEFVX3lxTE85Tk5CVlYtVUl6S0xfaHIyUkNCWmpySnd3NFlaeUg1Smw4NnZwWHA3WDhOb3hSOGdpbEhDcFNRY1R2dUJuLXZBY29xNE5UaWp4a0F0R21ldlQ?oc=5)
-- **Classification:** Person (Other)
+### EKSU confirms receipt of N3.16b NELFUND student loan disbursementr - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxOZW56b1BfVlRZRkViVjM0dk5zd0RkRXVQT25WclJDQjctTmVVOXM0eV9sZnFyNEV6dm10Q0MwMVhwV2k5cGE0Uk0yc3dxRGE0bTVnSUpRa3lWbjYxZk5RRmtDY1ZRSUpVVC1vXzRqU184LXRIWWtXQVprZ05BT01uci1BSUJoUTdQbXlCbnFtWDNTdUI0dmZQbkJoYTVIUQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** EKSU confirms receipt of N3.16b NELFUND student loan disbursementr  The Guardian Nigeria News
+
+### Former Guardian Life Editor Njideka Agbo lands IABC Africa role - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxOU3NjU3FQXzNyVE11ajV2aDMyb3hYSUZ1NnBQSFI5eGRfUm9EVHNJYmVUVHpOOFF2RTYyU3NrZ0JCN3JBRWYwTXhOVUc5dHEwNkZ2aGszYWo2S1I1bmRpdGdhYWMybjNwS3U0bzNWWjFvaVBMSGs4Z2pVclhiLUIyRHNXNXVNRU8tNHFHdi03TFRDUkk?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 30/100 (Low)
+- **Brief summary:** Former Guardian Life Editor Njideka Agbo lands IABC Africa role  The Guardian Nigeria News
+
+### Group demands probe, accountability in ‘fake agency’ scandal - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNcTBSSUtTdnlLNHZVbHFJLTRoM25SZkVSMEpVRzd5YVhjX1dZbngxZnlZZ0RuR2lZN2VWUU1XTmltMnAtZlgwb2xFSDdBY01HZEJWbXVlR0FMU054bjFwNHRvcExFTk5IN2dRQ1FzYUZXdWJmc0JXc1hoU1F4Wk80UzI2ODROdERpbzMw?oc=5)
+- **Classification:** Government (Policy)
 - **Risk Score:** 38/100 (Low)
-- **Brief summary:** Impostors Hack NDDC Chairman’s Media Accounts  NDDC - Official Website
+- **Brief summary:** Group demands probe, accountability in ‘fake agency’ scandal  The Guardian Nigeria News
 
-### NDDC, IFAD LIFE-ND Project Boosts Food Security - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBDeHNON1NUeFEtMDZjQ2lGVUNXMm9KWWhkaklocUwxV3hmYllPX0hGTjhLSERySWpuc0c4ZFVOa1dLbTVBOTZMbFJ5N095ajA4NldZ?oc=5)
+### PenCom targets better retirement benefits for Police, says CPS exit unnecessary - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxPN3FpblAxVUNGYWlGREZRdFExY25nenY2allGaHZOSHc3VTdsWmpILWFiRFNRcnBuc0NCa3hxeWE0cmdaQzBjQ1gyRmpIMTlJYVZXQVNlUl9TM3lXSHduaTZFWnZRM1JjUjYyMHpLSUNnUFJsY2I4aVE5dTlTaWU0Wk5YbHowSGlKZWlFenBGZUVLZENxbWdMaGtNMnRpb3NOVFhVWXdpSQ?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NDDC, IFAD LIFE-ND Project Boosts Food Security  NDDC - Official Website
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** PenCom targets better retirement benefits for Police, says CPS exit unnecessary  The Guardian Nigeria News
 
-### NIMASA GETS NEW MARITIME GUARD COMMANDER - Nigerian Maritime Administration and Safety Agency (NIMASA)
-- **Source:** Nigerian Maritime Administration and Safety Agency (NIMASA) | [Original Link](https://news.google.com/rss/articles/CBMicEFVX3lxTE9uQkJnb1p1SzAxX0syN2FIZFVPNU1NRlY2eFVOUTRvLVlkY1RocnVsZ1NBMDU5Wko1Y1RQQmIzSGNpM3RRV2wyVmhzSm9WYnpwRUxJU2pZMnh3bTNxZEVIcC1VeGs4OUM1Z0REVy1pdXI?oc=5)
+### Gbajabiamila slams N15b suit on Adeyemi as group demands probe of PFIPC scandal - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbFczSWdlSFF0OVJwMzh3b1J2ZFBpdzVTdFhiVE1HZ1ZnUTdkZzcyazAySjZCZWhVaXY5OTFFWGRnY19sZ1ZWaWlPYmZ3aVBWUHRiYWtLWmJfajg0TUp3Y2YzeUxaSi1ZYWRhQkhtVHdnWWU4Sk9JeHVBZFo5ZkZzamdUcEptb3NlQWt1UFNWd1JCTUJwVHVwZkhqcXlwdFNnUXdzUDR2M3k?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Gbajabiamila slams N15b suit on Adeyemi as group demands probe of PFIPC scandal  The Guardian Nigeria News
+
+### 'fake agency' scandal Archives - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiV0FVX3lxTFBiUEJKSnJlQ3MzQ0NPUENkbGc5dERSU1RjQ2pTOV92aFlQenFocmE2N1FMdVFJa3RGdmoyZ1E5Z25vOGxSc3FTaTJSWm5OMVdUODdjLUM5UQ?oc=5)
 - **Classification:** Government (Policy)
 - **Risk Score:** 40/100 (Low)
-- **Brief summary:** NIMASA GETS NEW MARITIME GUARD COMMANDER  Nigerian Maritime Administration and Safety Agency (NIMASA)
+- **Brief summary:** 'fake agency' scandal Archives  The Guardian Nigeria News
 
-### ORD:ER/NERC/2025/05 1 BEFORE THE NIGERIAN ELECTRICITY REGULATORYCOMMISSION IN THE MAUERQF MAY 2025 SUPPLEMENTARY ORDER TO THE MU - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMidkFVX3lxTE1kSlhMdnFWNE1lN0VON1RULWJRMlJRTlBpRzB0VGZqcUk3VnNac0dCbzgwMzdTYnRNaWFxdENoUzdaWTFmUVY4ZWVfT21yWVlqdWVRTDBTajJrVUxUbHpxYUt3bG1ENzRzQVdvQmo3dEJjWlN3M3c?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** ORD:ER/NERC/2025/05 1 BEFORE THE NIGERIAN ELECTRICITY REGULATORYCOMMISSION IN THE MAUERQF MAY 2025 SUPPLEMENTARY ORDER TO THE MU  Nigerian Electricity Regulatory Commission (NERC)
-
-### Untitled - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMieEFVX3lxTE5qUHV4VDg1YndJVml0THduNmpVaDk3UjQwOC1nNGhwaC1YTEU0SlRZSkJZTXhtV2lFYW5ja2lCZEhRbXJKbUVlazVWOUtlaFI3em1DaTNVSHk1N213a2ktSUZNd0Y5UzBleE5MYXc1X2lpMjU1VGotWA?oc=5)
+### Niger’s exit from ICC: A dangerous retreat from justice - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxObmdYS3V5RW5VeEk5UFJnNFpKZ3dnMGYyY1R0My00Y0RicmVwU3VDN0VnMllsY292UDl0czJ3anBpN3YzSEt1VS04RXVmb0FfVkk3dGwwSXo1N2NsLXBPQjlzWWxiMnd1bnFnaV9KWERScHEzTXpBbWFqZV9KUU1rQU55dUZVNTRWTTd5dUF5NkwtNUNTOHVz?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** Untitled  Nigerian Electricity Regulatory Commission (NERC)
+- **Brief summary:** Niger’s exit from ICC: A dangerous retreat from justice  The Guardian Nigeria News
 
-### Mohammed Bello-Koko, NPA and the parable of the Fruitful tree - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxPMkNQMUNnV29hLTFMSHNKN3RjUnBRSG1GTFNaS01PdG1yazJ3MktVTVNjVEk4QUxoNlliTEc4VUhzMGdvT0NDMmZfSlRla2RQZG1nbGRTT1ZGRTZFMGFwcGJSN3BKWHlkcFkzU2pTZmxVR0h4Ul9kYzJLS3pOQkJ0VU9Gd2ZZaU8wdW5yai1wd1VBcm1OZnlIQzZqQVJIQdIBowFBVV95cUxOdkJxcF9aRFZpZmFqYnU2TmI1dV9lSVNsTTNUbXNLV1lXeEYxX2YxUm9zQ1VRVDQ4UDA4MjBtbDFxZmRzUTFVSjItX3ZvNUZRX0l6ZFlBVVl6OXo0TjBYV2gySDY2ZF9JeTg3R2ZGNVVRdFBnWnJaeEpucHFVU3Q5TXdIMjNSWjFTR1ZxNVB0cEUxM0lvbkRLS2RKNVNTWnVWWDRJ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Mohammed Bello-Koko, NPA and the parable of the Fruitful tree  Vanguard News
-
-### Standing Facilities and Liquidity Management in Nigeria: Progress so Far and Challenges Under an IT Environment - CBN Digital Commons
-- **Source:** CBN Digital Commons | [Original Link](https://news.google.com/rss/articles/CBMidEFVX3lxTE5XMHJ6YW1UM2N6VTFfdm1YakZhYk9lWlZOSkZNeUJPTk56YXJUbW5aWEFJQnR0WnMwYlJXWkFHSm81WjhXbzBRa0tZNnl3blFaeFJxbEJkVUdraWtqLXpQRHRxRmkyWUtTenNXcjBTV2RCczB5?oc=5)
+### UBA series: Local nuance, real data redefining Nigerian tech innovation - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxQRDE4dXp6ck53bnlpVGRfeDBvbXJnRzdzRGVkcE14RWUzN3BNclkzaVF4ZHVCakF1YmlmOUM5UEdvOGpxOEkyX2pRcVZvVmVocHNXdmpLb1RJYUwwck9vUE10Q1h4cFBlZWRHQWJTNU1CS1Rnd242OE4xLWRlZUV2VUNBdGhsUzV4QWhyR1JkU0YyZC1ZWmNPdVZqMzFzTFg2ZXlCcFVBUnhWaXZ0?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** Standing Facilities and Liquidity Management in Nigeria: Progress so Far and Challenges Under an IT Environment  CBN Digital Commons
+- **Brief summary:** UBA series: Local nuance, real data redefining Nigerian tech innovation  The Guardian Nigeria News
 
-### Court nullifies CBN’s takeover of Union Bank, says regulator acted beyond powers - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOazViVG9mYzFzQ2VNVUFVM1hGNDRCNlZXbm92UzNDR09CZENDTUVxWjNUcF9aTDlfZHVaZm52ZUd4dDB5dmVZaHMyMG15WUJPYU1JWldhaFQ3bWd1MWNEbUYwODRWNVpGR2NiblItOVRHM25sMWtWYko0UTZKaDI4T1BKbGN3TXdkNlkwd0c1WlBqbTJsb2QzejZHcHgtMG4xYW93Mm1seXZsb1lMY1ZKV1Y1dXhqMlJKakdlbzI3cW9PZ0lkbzZ5ZHlWUFNLdi04MXZXN1pzUFlHU0dt?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 39/100 (Low)
-- **Brief summary:** Court nullifies CBN’s takeover of Union Bank, says regulator acted beyond powers  Premium Times Nigeria
-
-### CBN launches diaspora BVN platform to boost remittances - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivgFBVV95cUxPcXgtXzN4c2RHbkNaSUZuWF9lXzZvTXdDb1k1Sno2MVlSY0VFc0ppUDI1cjM5Tkc0QVNkWmpwSGh4d3daeDhqaUhCTFBsLUd1RW11U1hPb2RSNW5MSVUwX2EwekNFQ1BaUXhIN0JCaUFrMFJnWUNseGY2Rk1ZU0J4WGdvX0dhamxseGhfcjNReVlMNGNESF9IaHB1Q1l5SlNZczRxeEFXeTl3LXRaVC1tSWU1RkhZa1h0TW5Dc1N3?oc=5)
+### Jide Kosoko defends Tinubu, urges Nigerians to give him more time - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxNQUxlYmdsWnRHQWctQklXMFo1ZUpRSFVOdHpzRl9ma2tZcWtCcXNvR2Z2a3paV2gtSTNTT2JDWGMyLVpZUEg1NFpGM1ljbVlRSWpfcEZCejRYYXBpUTExOGxCb3I2UEY0TmtQejhCNURTR1VXUlB0Mm04YkNyNkZ3WXRCemZDeUpCYl8yREJOX2pZVElX?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** CBN launches diaspora BVN platform to boost remittances  Premium Times Nigeria
+- **Risk Score:** 29/100 (Low)
+- **Brief summary:** Jide Kosoko defends Tinubu, urges Nigerians to give him more time  The Guardian Nigeria News
 
-### Management Team - FAAN
-- **Source:** FAAN | [Original Link](https://news.google.com/rss/articles/CBMiTEFVX3lxTFBWUlRpSENDck9kTTBNTE9SX1Roai1USGoyYm14UFVOQU84TjhFUENyU0lvQkc0cU1RM2Jtekkxcm5iWGZfN0p3djJaMVY?oc=5)
+### World leaders convene at House of Lords for Global Sustainability Summit, awards in Uk - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxPeF9sN21pcUlIZTU0T0xBZ21IU1VXWlAtay0yeUNHZ3dNQVhvOHhodmRKUklSVmVQWE55alBoSWxuUmpzeHBoZWZsbHliaHZBcHJleDJ2YXhySUJBZVRtTWNXNVY2TmhZUEhBOVl3VXhneFVRemJDVThqZ3ltRkRycEp6M2JvRXpsQk5jVGRoYjZKWXgtVjBvSjFDZEMwLTdnOGlRWWhyTGVUMmlkMi1NTg?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Management Team  FAAN
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** World leaders convene at House of Lords for Global Sustainability Summit, awards in Uk  The Guardian Nigeria News
 
-### Supreme Court upholds conviction, jail time of former BPE boss - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxQeGpfLURwMHZhNWtGU2VuUi1BOVZ5aGdzSTg0WGM0dy1tZTZCUDJEM0ZsYVRtb3lGUmFUb0NQc1NobU43eDRrQkwzSVMyd1hmQl9nYnhvQlhFZzBiQkFlU25xaVNNeEpfZEtpMkhUVDIzaUF4ZkN0VWdUUEVVaEZRQzltZWtsT19FekhnbkgxLXhYMGduT3ZOMmRndUdTSE5xZS1MZjl5LUFlUV9keDd6ZGpVazNBbXdtVVE?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 39/100 (High)
-- **Brief summary:** Supreme Court upholds conviction, jail time of former BPE boss  Premium Times Nigeria
-
-### NITDA, NISO EXPLORE PARTNERSHIP TO STRENGTHEN DIGITAL TRANSFORMATION IN NIGERIA’S POWER INDUSTRY - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMivgFBVV95cUxQYTdTTjc1dWxQQ1c3OXhjUWhYZk5ET19pZ2dIT3ZWUF9kRmtBU05KdnZwcWdwa1VqNlphQmxSYzIwMnV2SDVPOWNCT0cycGs2S0Y2RHBoYnVOaVF6NWxQbW5jZjg4WVpxTHhheXhtd0JNX2xYdHV0OGhneW43NUk4ZDVIS3l5MnBBam0yd2Ricko4eG04NE9uSnFxTG9yT3NEZGJBZDAtcEVDRm9jLWNnSmZnekQwWUZpTUNsNE1n?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 55/100 (Low)
-- **Brief summary:** NITDA, NISO EXPLORE PARTNERSHIP TO STRENGTHEN DIGITAL TRANSFORMATION IN NIGERIA’S POWER INDUSTRY  National Information Technology Development Agency (NITDA)
-
-### Untitled - Central Bank of Nigeria
-- **Source:** Central Bank of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSzVicmozTWtiVnBiUWJlaVRlTFlWZlh5QldCY1JJME9LVGczZlpiMlE5V1pvRlhjeUtIZUg5cXhqQlRvOUdObWpuZVYybjN2a1A3MU1lVUxuM0ZoODVhRUhtVF92dnE3Q2hWUGV6QnptaTN5U3JTWUs4VlB1cXhQRERPMGlOQnQteWFDdW5QZFVjN25wb3p0N01FTzFVaEd5MHEtQ3pwUWZZZ2c1SE01S2RiZFBUSFpnV1hvRmt4cjVkSmM3dnBJOTlBLVNQVE5OZFlxSlQ5Nk1wME1EMXc?oc=5)
+### Former Aso Villa chaplain, William Okoye, is dead, CAN mourns - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxNM3JXbC12UUEtZXJvRDBmX2tDcU9KUWE5bS1KOXM4NG5DM0hja3NqWjVCaUcyb0xMRXVTMERHNWI4VXZzRE84a3ppUGllRFIxVUViM3AzcHhNbkN3RWpJUWw3d3F3R3RtNVJvY2FSYk5uNms1cTZpVG92bTQ1cG00ZXhfLWdvM3BOWVcwWkVJbUhyeFFZM1cxaU9TX0lzZDZXLUF4UzR4VHlBTk1yQ0JLNW1iYlJUTVk?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Untitled  Central Bank of Nigeria
+- **Risk Score:** 29/100 (Low)
+- **Brief summary:** Former Aso Villa chaplain, William Okoye, is dead, CAN mourns  Premium Times Nigeria
 
-### Official Website - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiV0FVX3lxTE1kRGM0aExFUEZncGc4bmE5MlpTSC1saFVkX01qUW52emJOZy1xaFN5RFVXd0hUQmVnWGRiRnRaT1h2ZUpEMFRNN2xKRW1TYTJLbW1NZlZoYw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Official Website  NDDC - Official Website
-
-### NNPC, SEEPCO seal pact to unlock 1.2TCF gas from OML 143 - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPekd5VEhCanV2eVNySzRJeTNKWmktWkRKS25nRG5jbU9fOW5Xb1M2UlhkMk9HUzZrZ1JtWGxjdGhrcVNmXzI4dVh6N2hkckpmYjdza1pUMm5ZWDRWalFSOUFpV21zd1A4dkdiTXZpRHlLRzA5QW9HQm80TUpDQTFrWGFPeERZQlY3?oc=5)
+### FG urged to leverage UTM FLNG project for indigenous shipping devt - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMivwFBVV95cUxNN0dTcTFpRW51cVRtamtOZXdwTU05ZnhmOUJzUmw4SG1qeEQwWHB4Z010clF6X05zWmhuMG9rTGJURGhReFAyNTI1cmN5N2hTSlZUVUtQLUo4empCZTVUY25CUGJ3UDBkb09yUWttdmZQT0RTbnZobWVmOGlPQU96cXVjb3JJeWhoTGtkUFBUak5PaWFVcGttLVI5SG1MTk1KQ0k2U2JyMGNoSmRoWVNSc0trQlNHdzA4eGVNTE0wSQ?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 31/100 (Low)
-- **Brief summary:** NNPC, SEEPCO seal pact to unlock 1.2TCF gas from OML 143  The Guardian Nigeria News
+- **Brief summary:** FG urged to leverage UTM FLNG project for indigenous shipping devt  The Guardian Nigeria News
 
-### FAQs - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiPkFVX3lxTE4xaTFSZmd6bWJpZzJVVURMMllndmVqTk5tWjVfemJ2X1ZfajFCZDJlUkF4QXh0ZjBCWGJjWDVn?oc=5)
+### Tinubu assures new roads to last 50 to 100 years - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMif0FVX3lxTE96WkNORl83ME83Ny1hS3RReDQ3OXQ3MHhPXzJMNTkxbUlmQkxaNkNfQ3lfNnhEZzVUY3BKblByOE1ncEs4R2ZkQ1NqTzJTRGlYa1BXT3dNaVdOUFdzTm0tbU5nUXYxSlZxU0VCWWdzRDlrZkxOQ3RXRFQyUkJTQTg?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Tinubu assures new roads to last 50 to 100 years  The Guardian Nigeria News
+
+### Abubakar Kabir Bichi awards ₦25.8m postgraduate scholarships to 122 constituents - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiuwFBVV95cUxORGdFeXk2dkZZaG0wdkhSRmdDZERRZWFINVFuVndEMnY3WEJ2ejBYbE16Vy0xLXRKYjNhRXNNZWJrS0I0eWlJUUxmSDhjSXNCTkRqRExHeDdNT3ZVR180YkxLelF5U2RIdGgxeUZrY1ZmX19yNS1PMFNUV1E0aXJCVGVVRHpmVW1BZXZmS0RzMzRmbFU4YnNQbG9OTjhvU00wX1V5dUZDTDFldlNrOFhldDFraE9GdW1oaS1N?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Abubakar Kabir Bichi awards ₦25.8m postgraduate scholarships to 122 constituents  The Guardian Nigeria News
+
+### Hunger: Nigeria needs more committed investment in agriculture — BUA’s Rabiu | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxPc2pFZUVwMWdoNEY3bXZMRWhRN2ZGRHlBdWRrVnhkenpHemxtc21jSk5yVnQtSG15MTlHOTRWakRGZkh2Z1U2RC1WNXJZWlRoVi1YUWloZ2VMVHJuVERaNUR1S29rdDQ5YnVyUHB5V3NULThWaDJ5enlmYXlkRE9sVGx0MFEzWjV3SjB0TW5CeVl3NGVtUzZGdE01ZzVjV1J4STV2SlJR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Hunger: Nigeria needs more committed investment in agriculture — BUA’s Rabiu |  theeagleonline.com.ng
+
+### ‘NIMC Act will advance digital identity ecosystems’, says FG - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxONXEzcTZvU0lwM1NFdlVHd0xGMUVKdGxzQlhtNHdEaHhmMXk5VmxadnFaSmlfaTdSNVE2c0VyUXJNb3NxTFZRWUxPNDllRjZBUHNZaElLTVVvbjhjOUNSOFZkU2hkWDBqT1VZcVRDWUlpWjRqcUJPY1VYUS1lQUViTzFoV0dja1NEMldr?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘NIMC Act will advance digital identity ecosystems’, says FG  The Guardian Nigeria News
+
+### How AAAU is bridging the ageing manpower in the aviation industry - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxOdEgzS25hVWtXUWoyb3ZWMlVwQk1iMDQ0WEdVSjBDZkhNY0kyc3ZjUlpqUG5nYWNDcnprNjBybFFnMUthQVdSSGxDdlNkbERUaVJ0bW5iSHA1T2NrMjcwRFRrdmt4Snpja0VyZ0RCc1lNVlFYdnJhaTh2S2tJZS1lZWFMc09GYXNRMF9MM3JUQ254QklqekE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** How AAAU is bridging the ageing manpower in the aviation industry  The Guardian Nigeria News
+
+### Uganda, Kenya, South Africa qualify for World Schools Team Chess Championship Grand Final - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMitAFBVV95cUxPRzBqcVBMZEVlMFlmLURkTUJ0ZVlPQlNieG56VW1FX0hJaWNQQWtzNnY5ODZPSHhJUzVQVnRzY0F2clRFR1lvdnNzbDd4NXo1TG5wbkx3YjdIbS1LRWZmV1lMS01GYjVIM3dOZ2dOT2ZYSWVBWm5tazBMN0xRYTZ0VTBMZ3ljdUZadjNKTnczb1JTVl92anhVeGNGbDF3Y1g1VXJnekJkaGhMYlJqQm9PeUotbUg?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Uganda, Kenya, South Africa qualify for World Schools Team Chess Championship Grand Final  The Guardian Nigeria News
+
+### Enugu govt, foundation reunite mother, child separated in road accident - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxOdkZLNXBVcXR6Ty1NY1hCRnR4SXk0S0Zsb2gtSTF1akx4NlBwS3NLYTJUQ01OQl9FTG9Gem5sc1N0X25VbkJvWXRoelVtMndKQmtBOXZtNjVBYnQyTGN5WVBBdU5uVmFOU2doSTB5M2VFbklvcFJoQllUeFBKWU44aGN1MF9SWERyRDdwb1JXUVFXNHNBN2pEaV9pWXhtWjhlaF9wNjZuS1R1ZG5JdEE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Enugu govt, foundation reunite mother, child separated in road accident  The Guardian Nigeria News
+
+### 2ND ANNIVERSARY: Egbo Lists Infrastructure, Security, Healthcare Gains - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxPWEJOa09EMXVSWGVPVEYzNVdqTlFyOUlJby1RVjllU0IzQ2ljMjRjaGFuYkREektPdm5nNWZ1cHZ0SzlkTjJWUWFLQmRreE5IbjFIR3hRdVNJODAwVEZ0SjhQOGp1SjNIYXAydFdycnZCdER6M2FTNmdWTWdCUlFQajBuZklkYTFrbWNUMU1HVkJtWFp3Y1pjeQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** 2ND ANNIVERSARY: Egbo Lists Infrastructure, Security, Healthcare Gains  The Guardian Nigeria News
+
+### WCS unveils platform to boost wildlife conservation monitoring - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxPV0Jjc1VZMWM3b0pNRzkzbnNuakUyaHJuc0toY3BSWk9jTVB4TnJUUF9GUkR2dS1tOVBYdnNHRnFMM3FtVWJRcDN4Yldma2o3WkswRVNjeEdqUGMxSUo3QlNBclZtMmFKcURvaHJRclhJN3dUYzdSeGN2Qk9OajE5RlRQb2h0djU5Vk9NQlR1UkNvajlHNkVGbndiT0piU3RkNFNxcXJpY29LNWZfR1lxag?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** WCS unveils platform to boost wildlife conservation monitoring  The Guardian Nigeria News
+
+### MTN Foundation, MUSON graduate new music scholars - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxNWklKUmNoQ05ZejNOMHFRajNUa2dsSHBReFo4MnFnS3hFcFkyMmk2ak1ObjJ5ZzVpTnVySUQxa0VCSzZkOEFIczBDN1A3bHdtM2xycDg2ZzBla01yc2VzSnMwdjVzaFBfckl6WDNkamNwT2xleUthRVpDV2U0bHZLX0s3NnphcDA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** MTN Foundation, MUSON graduate new music scholars  The Guardian Nigeria News
+
+### 2027: Kwankwaso loses ally as Senator Hanga signals defection to APC - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxObXZYc3Y5WkZ1bEh0eXM0MVgtUjhSQzktd3ROMmxaX2lmUHl6SkhGVzRxV0ZPZlZreGlzR3VQUExyZ3VkdUxsOEpHbXQweEhPZjU4ZGhPLXBJYWhfRWZ3U0t2TGRZanRxX1ZxVnB4bm1DaHBVRTRnb2xXd1ZJZjVLX3Y1U2JlSVpnNTFVTDREeHFVTWJNcjRIYWFsSFJZdw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 30/100 (Low)
+- **Brief summary:** 2027: Kwankwaso loses ally as Senator Hanga signals defection to APC  The Guardian Nigeria News
+
+### Hajj 2027: Lagos begins sale of forms for rites, announces payment deadline | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxOdDlFVk81NmtZMWxuLXpfbG5MX195elc1QnZFTGZGM3dxS29nRVQzTV9vYXFVakRuem5PQjdjVFBjaGFlWXF5alR1amJ4eFJJOGhCVl83djA0MVphekEwTzNEb1VyWXZyUHp2RTdiQ09MaDVBeXVEZXlfXzlxSDhvM0VmNDhva0ZpTjFsQ1FSdWJFelVaZFVQdzY0YVlDS29IV1ZlWDhlaw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 33/100 (Low)
+- **Brief summary:** Hajj 2027: Lagos begins sale of forms for rites, announces payment deadline |  theeagleonline.com.ng
+
+### Nigeria’s FATF compliance under scrutiny - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxPVDlmal9nU01iR09DYlBVZl9XS2E1d050SnNKUnF4bFQtSzJ1VExBdExVNnVKUnpVLWREVzJVd0Vva0dEX0pHc2I4LVRPMGtjMVhfb09ycHJVcEN5RWM3OERKazlWY3pkUnduVFBGRXFJejVWQUt1aDBLcU5MR2NmbHh6NkU?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Nigeria’s FATF compliance under scrutiny  The Guardian Nigeria News
+
+### Siyanbola pushes for Africa to invest in its energy workforce - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxPMGhnR2VNb014YXdHbU5SbVloWmNzbUxaeWhiYl9OZTFCX2U1YnVqWmw3RzFkTGl1QktRSURfU0lyaDhYaWV4cjg4SDBoa0NWR01CSWNWcllYVDRpVEg3YUFPeFItSzlEMUZsR3hacGFpUk1hRTViX2tXVHlNR3ZRamlCdUxEektHTExVMy1JMXk?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Siyanbola pushes for Africa to invest in its energy workforce  The Guardian Nigeria News
+
+### Kaduna govt reaffirms commitment to tackling malnutrition - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxQSF80dkRxc2tmUGJraEpFSFl5dXB3TXMtZkJPX2JsaV9xNlBfRDFOR3JsOFRHaDhnMGRteEd2ckRXaXhQMmFRRnlka3hCWDB1LUdTNlEwZTlJSUtzdThzYTUxaEFVZTJ6cm1abEdVSVAwVU1kT2Q1ZGxjbVAwSW5Qckc0dm9Ldm9RdndjSjdvQTdGSVBJalRGU0VCNEFKSjNmUXZReldPR3Rac20tcmc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Kaduna govt reaffirms commitment to tackling malnutrition  Premium Times Nigeria
+
+### Shettima launches $500m Niger Delta agriculture fund, says food security key to Tinubu's agenda - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxOZDdqWGZxR2NETmVHQWQxdzE5VUJUNUs1eDlTZXp6ZlNIV2pmTGdYQ2NpTEhDbFhpTGtCNXBRVjdxb053Mm5jeENRY3BrLVpKVDFvQUJpTFRlTkZVNWVSTmVGczY4NmN2U1R6czNKQUJmUFhEU3NNa2h3YW9vRm5wMGZmcHU1M2FWc1BmaXB3QWhXNHNSNGhlV05Qd05oS2pURC13REt2aWRTRzZpdmZldGJwNTliNGtKV2c?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** Shettima launches $500m Niger Delta agriculture fund, says food security key to Tinubu's agenda  The Guardian Nigeria News
+
+### Paucity of funds dumps Nigeria out of African Table Tennis Championships - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxPVUNXYVNDNGc0RVBPVHZKTGoybk1scmtUTDJnOVJMWHkxV3o3V1dUSERzdUdEVWdsMDE0VWp0VFZ1UFVuWUtkczlPWXZCRjhHNXBCdUp2akVjU01BNHNMRlZOc2JCSXBHdUpXVFZVbjhleWYyWlJfaUZ6LS1tV0x1dW8zcFlXOEtoM0xBbW1yWXp3eldGUjltTzNXMzd4M1Nk?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Paucity of funds dumps Nigeria out of African Table Tennis Championships  The Guardian Nigeria News
+
+### Insecurity: Babcock varsity partners New Horizons to deploy drone technology - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxOcUNCblFxcUFkSTk3QTE4MVFBSTJ6aDFsVkhrQXlGdDN5OFFtazZXdGJ5VFVoUUJyWDJUbGZJSnMzclRnMUZHSm5JRU44NHYtVzdhM3hVTUpMcF9kRkRZMDRfV2VGWmpwZUdjSjZrTlBpbjM5N1NKM0JaSHdBT08wc0o1b2FaMGtaaE9BTzB5eWtDcS1MZktkakt4aGRmWFpheV9n?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Insecurity: Babcock varsity partners New Horizons to deploy drone technology  The Guardian Nigeria News
+
+### ‘Strong laws, regulatory reforms key to achieving net-zero emissions’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxNMTF5OHJlbEZGUUt1M29pc1RnYWFqWjgwZ1Y3YU83eTFtOWh0NDktMFVHMW56dDAzNGlPc1liR2lOVHEweVBWUFFjM1ROVndpanJMY1lIV1V4U1c2OFFMMXNxQnl6NWZhaHVoZ0g5RnlPU201YmEyTzZjY2RLYTZCWUpRYU5tTlVjRHlaWm1zRm5oTXBTMmJZ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘Strong laws, regulatory reforms key to achieving net-zero emissions’  The Guardian Nigeria News
+
+### FRSC begins enforcement drive to boost road safety compliance in Rivers - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxQUEdxRlBNZHhId1FPd1RRdl83cWItNmZ2cG1tdEo2Yks4ODhfZ3NpTWpxT20tMGhTQ1IwRk5MczZFbGZCa2FZc1FvWWRWN0VROWZNZDB2VjhTNFVOOGZyckdpWVNKdDlBY3Y4MFhQNWlFZFFRZ2VfWnFoUXVnbmVwUEpObXFVNXhQWkI3ZVgyTWJEUlBlZFRTVmdGZlRIdjViNXgwUFhZb1NPSWJzelNLTQ?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** FRSC begins enforcement drive to boost road safety compliance in Rivers  The Guardian Nigeria News
+
+### Soludo’s aide appointed to IASP’s conference steering committee - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxPMXZleGs3bGxocnhpYWYzUk9Fbmk4LTVSS1pSMkZIbGRqOUhlY2R1SVJHaFFmb0NMbV9JeU1VWERXcF9tRE9UUTBXRXUzU01OSS16RU1nZmE2VmJXcE5aSFBCQnA5MTQ5OHR1dzluSEJSX3hZOEI0UFFjX2RJSXR5V280SkM5Z1l2SlZSNEtyRHU?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Soludo’s aide appointed to IASP’s conference steering committee  The Guardian Nigeria News
+
+### Kefas health programme hits milestone as Taraba enrols 128,000 vulnerable persons - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTWVaTC16MlZXbVE1ZGQ0Z3NtZDNRNFhNa1FLSUJmUk53UUtFOTRSWjlMUWY4WWJQbzA5alhpRGtkR3JXZGxnbEhaWU1OVWNfZVR0ZkluM3hfdURXYmdWZmVfMnlDRkxrT0RNVUk3aDhJVHU3RFhvOG9pZTRUdU94MjQzOV9vamRSTy0wWXVPRWx0cVFrcWc5QWowOXF3U0U0bS1qNGktbTEwQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Kefas health programme hits milestone as Taraba enrols 128,000 vulnerable persons  The Guardian Nigeria News
+
+### PETROAN seeks activation of state refineries - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiekFVX3lxTFAxcm4tM0lYV1N1cVVWdnN5VmVsbWYtQTBScFhZMHVEay1lU0E4RWpVcEI4UTBzN040QnN2SEUwdlVULUZUUHItZjFBbUNQekRsSUY3WXpwblVWWFVSRHdLRTljOTI3TnlpLVc5cEhFd0sxSnhCTEQ3NXBR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** PETROAN seeks activation of state refineries  The Guardian Nigeria News
+
+### BOI to channel 70% of €85m EIB facility to drive Nigeria’s cocoa, dairy sectors - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi2gFBVV95cUxOdVVQZXlhb1NNdmxoT0lIT3g0QU12WmJqVXNrX29BbndZc01Sck1rSllvQ0dpQW5xSnpXd2cwbnlQZVF2WnFUSG9RX01DU19kNXZTY1J3VzBOU0pwMWljQm0xdEZTc0I3ZHkyXzBPbmlDYTExM3Q3SXp5V0dQZWtwUGc3ZlF2OHM2S3pxM2NMeVV1TUJIN19PUzdMWlJROXBMc0ZLWTF5NkRlODRCd1RwanBWLTlJTzRUNjRrQUJWVm1IRXdTdGZZcmJXTXdzVnVfVmFLZnNOdFhFUQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** BOI to channel 70% of €85m EIB facility to drive Nigeria’s cocoa, dairy sectors  Premium Times Nigeria
+
+### HURMA Calls for Peace, Due Process in Abule-Eko Ijede, Ikorodu Chieftaincy Matter - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMkJrLW1NVlU2WUh6WVZaTVNQV2NFdEcyeENxZl94X3pySzJONU1IcUZzWHpwcjN6T1dNMkJyQnBtX3BVU3RWQXFmQVNhODZUZW9GRkFjSEhMcWpKcktvUGNmRnR3R25hYUQ0VjVBTkpSZEJRZFlDZktlYUtYTFg2VUdWWkpPbU1laU9DNVMyWTM2OWdvRE9QNG9YR1lVTDhXMm5qcEF5clZjUUwyWEprTTBiR2xtUTVGczRJ?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** HURMA Calls for Peace, Due Process in Abule-Eko Ijede, Ikorodu Chieftaincy Matter  The Guardian Nigeria News
+
+### Tinubu rules out raw cocoa export as Nigeria, 3 others target 75% of global market - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPd3p5enNwek9OSzdnVzRNNWFXQ1VTYml4bFE1Wmp5VzBDRHdEaTY4bUpISjhMcE5fQl9iUTNZUW5FWmI2MHFyZk5XT2VsUU92eGxBUEQyTUl3SDFQUWtweVNUYXRhblI2OFVsamZGS2g1WUFxZEtXRXdDd01fa1lJTXdReGRDeklXaDk4M1NUdVFjeVpLYVA2cUJYbVVCTlJpcnlBemJ2eHMyUQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Tinubu rules out raw cocoa export as Nigeria, 3 others target 75% of global market  The Guardian Nigeria News
+
+### PFIPC: Calls grow for Senate, Gbajabiamila probe as police arrest Adeyemi - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxOOTJIbXRIRnhLUk1JQkx2c1E0eWMyWXhPT1dqUWt0d2JCTmVucGhKbHhIWFE4aGxjUVhHVDhzTzY5M25KOWNxT2JGZ2I3SGhYY3B0cVVRejQ2QXMwaXZaanFEMlJyVXFyX1d3eWM1N09WQkpvWXZ1TUsyWmxsVkhOWTVOay0td1U3bWUteElxczVYaEN3U1ZBRld3RzUxQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 39/100 (Low)
+- **Brief summary:** PFIPC: Calls grow for Senate, Gbajabiamila probe as police arrest Adeyemi  The Guardian Nigeria News
+
+### Foundation trains teachers, equips schools to strengthen basic learning - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxPYS10cl81UENERnM2bnRlSVpSMm1yRFEzUFFrTF9aeDFET3pzcWY1XzFaRjZPdjF0NXVQM2c0RllVSWtJbWhELXlndzNrM3otSjVUTDF3THY4TndYUWlHRFpOTmZ6WnpqWjRjUHBHSmhyQUFFNE1JRlhnV3VrTEl0UEJKaVFxZzN3NkNtZ1lYcEpHRVdqOVBYaWlnZWZyc1kzRFlJ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Foundation trains teachers, equips schools to strengthen basic learning  The Guardian Nigeria News
+
+### Solutions to mitigate the political abuse of state police, by Bashir Are - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxOXy1JejByMC1UNUFRR1VpUUFMY09JOVFkQXVXeThERlZEQ0NxRzZmREhLU0hxZlJNUGFLWDhTb0Rhb012R094aF9tUE1sRkdNT1BSc0ZuSEhmTkQwYmdhOTc0RXVIN293WFpKQllrZHJJcHdIYTlabGhpNWdxU3BhNzlKM2JOTk40aFFXSlVXbXhfd0J0Mmxjcms5a2J4THlpSHc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Solutions to mitigate the political abuse of state police, by Bashir Are  The Guardian Nigeria News
+
+### Is Religious Freedom Protected in Nigeria? - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMie0FVX3lxTE9icGlqWDBOVUt6S003SVZMc3IxNnMwRVlaV2Z4YXJGRFRtWXZUMENvTENBMVVRTGZKa0RNcTd2cjBLUm1DMDFyRXdjQks0eW9RdDBiYWxIaFhNNGV4S2RrdVBNQkE0WVplMWRPUzZzSWpvLUt0M3V2TGpzRQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Is Religious Freedom Protected in Nigeria? The Guardian Nigeria News
+
+### Mixed reactions trail Appeal Court ruling restoring INEC timetable - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxQbTdkU3M5UlRXc0g3R2V5YTdHVzNtTWNmT1ZkbmFITGJSNzgyR2hIQUtjbTVLUEJYSGRpUmszUTY3VUs5ZHRDeXVLSmxfa2JFTHAzZDRnX1hYM1pWR2txQ0ZYel9OUFBSOHV0eFEta3E3NXNlMzIxUmZUSFRBcnR3em9rMUY4eTlyUGg1RVZUSkFuTkpGOVpwbUhmTzA?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 39/100 (Low)
+- **Brief summary:** Mixed reactions trail Appeal Court ruling restoring INEC timetable  The Guardian Nigeria News
+
+### AIG reaffirms Force CID’s commitment to stronger security collaboration with Lagos - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMivgFBVV95cUxPZHMyTWRwdlBGYUNLMFVNRHpDLWd1dkZkTDlDNWpSMTFoVTIxck5pNnF2SE1BQktvV3RWRmlWblBpYm5ZbG5oaEdvaE8xdWlmcDVLblE0cmRNNjhCWW85OUt2enpQaWxOVkhwcVVpMW5pUGZad3BEazBFQ3lzOGppNHlyZGU3Ni1wZ2paa2hrVXJzYUxUS090OFVWeWxnVTI2WjZ0UmRJRFF3RzQzbGttbWh1eUhfc0NSbGZkMFZR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** AIG reaffirms Force CID’s commitment to stronger security collaboration with Lagos  The Guardian Nigeria News
+
+### National Assembly proposes fiscal autonomy for state police - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxPVUJsQnBEbHhPb0l3YTkwdC1waWo5cnh5VlVqZzY1VHYwMTRvT2xwYmwyWlV3emhNSGlzdUZJTWZoTGRyY203VUhMX2wwXzZVWTcyRzY0WTE5NFQ5U1JnR0lYNERUY3ZNRXFFUTdtQTg3WDdiZlZ2MFBBQk93YThMN0Q3NEVSRi1RWkpud3V1ZWo?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** National Assembly proposes fiscal autonomy for state police  The Guardian Nigeria News
+
+### Ifeyinwa Nonye Okoye Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5oVTdMQ1E0bEJBSVZyQ0VYSjQ4NHc0bkJSd3dpajVXUzd4WkowYUwxY0hSTHduZmI0SW1MZ3RodkhFUzN6N1poZW9KT2JxZHBNY0JxMUg3Wm1rZzR2eE9nd2pGYXh2QQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Ifeyinwa Nonye Okoye Archives  Premium Times Nigeria
+
+### FG advocates local cocoa processing to end raw bean export - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRlNKUU5jWVd6RVd5STBicXp6dnFNUGcybzRxbjBCNUlXRDBlQ0dwQzVLdE16eEVsRTZpeXZ0SWRTSTJYLWx1TmZraDRSYldoaHVQUGhEdEVRMFhyUEFwWlAzN2lWSlVhYVF3NzhKcFdxT0xNVTBFd2F2a2Y3SUlVeGVkdzNBSlc4OG1JdXA0eWpCUVQyeG8zRFdrSW5obWhoOV84cGc4UmlQeHMzLXYzZXZLQmljRHlrSW1BMXpRd05rUQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FG advocates local cocoa processing to end raw bean export  Premium Times Nigeria
+
+### Okoro Blessing Nkiruka Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xSnN1cWxjSkNTSzhadVNTTkxsZ3d3ZEQ5NklSckJKTXJ5bXpZTFZDQW9JcjB1ZVd2WWowc2d5bHlEblpSY0Q3YmZrTmZHSU4yXzBFMXVjUDAtMFl2M280cEtOS01tdWhu?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Okoro Blessing Nkiruka Archives  Premium Times Nigeria
+
+### Disc Jockeys (DJs) Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiYEFVX3lxTE9idldocFBZTXE0dzY3QldNUzctd1lrenh4OXFnUDEzT1RSOVlUWkhRLTVKaGw5SkR4UV8xODE3SnBxZmdwYkkwdjg5N0JyQnEtU2JnY3hfS0xrVVRWdWVvcA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Disc Jockeys (DJs) Archives  Premium Times Nigeria
+
+### off Kuboye Road Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5MNEJHZlFsZUhoU0VwczRXYVpFY0RRMEFuS0t3MDdBMVhqRWR0SHpPdUJmQlAzWDNQekJLTGlFWGxEVVo3S3I4b2c2VEJWNGJ2bllPbTFhZWtiRnQxMkZz?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** off Kuboye Road Archives  Premium Times Nigeria
+
+### FG recommits to peace, religious tolerance, national cohesion - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxNbVB0b1R4QWgwWGw2cmNFZklwN2xzRlNIMFY1NFB2MlM4OVBpaElaaDVZYUQwMjk5Sno5YmtVbWdTWnp3ZFI1RDhuUGpuTzQ5c2JuUGZwVlRwcF9XQzRidUpqYWpEVWJoQmIwMEl5Q3dnVVVGUUI3RzFOakJzbzg3cjFfTWNianVQSjlCb2Z3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FG recommits to peace, religious tolerance, national cohesion  The Guardian Nigeria News
+
+### Nigeria excluded in Germany, other visa-free entry schemes - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWVcwOXhLd3N0ek5ITjgtYkJhYkpQSGk2WGQ5VVJiYWthdkUzZU5zeEVLZVRuZ1ZBdWZaa2YyOHYtckxyMTdVeXBoTGN5V2VhdHp4cXFtUTR2b3YwWUlvc1Y2cFh0YmVta0NWRm0tb0tpRUtxdTltWkVhUS01NGU5ZEhhV3VjUkNPSk9F?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Nigeria excluded in Germany, other visa-free entry schemes  The Guardian Nigeria News
+
+### Ayoko wins continental award - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMib0FVX3lxTE1TaEpFTXlUampZNktQV29Ld1Ffd200aU1UNVFwRFl3UU5qa0F6NnY3NjRsTkhwUnh1b1I2RUYzVGRjLUNHZFktaURINkUzRE9BWmR0aE9QX3I0SVdNdmx3OUt3dGhZN2Z1aVd2TXpKSQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Ayoko wins continental award  The Guardian Nigeria News
+
+### Argentina vs Austria Forecast Brings Betting Focus to Midfield Control - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivwFBVV95cUxOOXB5N3k2WmVUZnJUZnJzRlhkd3Q4MS1SSWZlWXU0bFM5akhYaUFIM2JXLWc4ZHhJUmFHX0Y2aFJxeTd4UEVIem5zVWtjdV8wbzExay10YU56OC0wRjZYX2xUZzVkOG90S2o0ekJBb2J3TzFGTmVqOEQyTG0tRjY2Q2QxUnNwbi1RcVlXd1pGWlk0NG5VTzB6bjRMYktYWnJxTDJlWE1vVHJpeldhV25GeG9XNWVyWTNiaE44SXFqNA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Argentina vs Austria Forecast Brings Betting Focus to Midfield Control  Premium Times Nigeria
+
+### How Benue Model Reimagines Education as Nigeria’s Strongest Security strategy - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVF9KdGpZUzFNUnVVNVRHN21XRDB6YnRUcnNmZnhpMllfdnExUHk0LXJvem1LYy14eS1jeVVQNWtlVGlEcHItMVBnTWNtTHU0a1hFWjgtMW1ZWVBPcWpXeE1vb1BwMk1scEdXMjBXUDRCUEhOeTJSX2VOZzBScFNHbDVJTlhPVi03ODlvQ0xIc3JzLS1TVnk2c0dsZWN4YjB5UWFVTnZVako?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** How Benue Model Reimagines Education as Nigeria’s Strongest Security strategy  The Guardian Nigeria News
+
+### Gov Ododo urged to rescue Okene Secondary Schools from total collapse, extinction - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxOMHI1VE5UbGRVUjZTOVpBQlU0cWRnN1U5SmdfMnJqMEIwbXhNQWxzMWFwcjQxY3FfQVFxWFBsMThhX1JITzdrc2FGY3B1TGQ1Mm1sdjNmdG0wQ1VReDRJT1NqUmlId09XeGJoeEg5SHBOUlJxblFTbGdHRndxZmpDUW5NbFF2TGtPbWM3dTJXZlQzbmhfbUdIV2pkdkhSYUZZLUFuXzRlallDV3BKcER2dQ?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 29/100 (Low)
+- **Brief summary:** Gov Ododo urged to rescue Okene Secondary Schools from total collapse, extinction  The Guardian Nigeria News
+
+### Four NECO candidates, principal abducted from exam hall in Kogi - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipAFBVV95cUxPVHZDcWY4M2JSTmpBOGJrQ3FJaGFmZldrZnVhWmZ2aUtNWTRvVGFTNm8yX0lKY1poQWNjR3Vvdm5FZXpfVUVaaS1VU1RlR0NKd0JwdWhLVjYxWVQ0akU1NXJ2ajZDMl9iMDJkS2NkTGNpaUpmY0hJVVEwbzJYcUQ0RW4ySDloemM1WlFrTkhGbmxHRF9RTDJCY3JmZ3ZyN0dBQVpqeA?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Four NECO candidates, principal abducted from exam hall in Kogi  The Guardian Nigeria News
+
+### Omidiran accepts historic SWAN role, says sports can drive Nigeria’s GDP - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZWluMVVKaFhiem1kWUdrZkU0cmlKR3hQbWJfZ194RHBsYS1PNy1oenVWWTZWazRrdzVNRzRteXhudjZ0TVJvejBkR1BaNjhPVE1NVm5Fd3dJa3pKNWdWUXAyYUg0WEo3N21GMTJzV21kRW04VHltbXpkWmRsUDVzZjRoLUhxNlZrMVd0LWJYTVN3T1ZqNElyNHkyQXg0bXYyanhvTDYxTWY2aDhxNkNNbXZETC1wbUZIdjNQWW4xWnVueUdxLXpxcHRJem1ydDdBcVNsM0tYRQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Omidiran accepts historic SWAN role, says sports can drive Nigeria’s GDP  Premium Times Nigeria
+
+### “We thought it was AI” — Akpabio taunts Oshiomhole over viral private jet massage video - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRWRxUmQtdkZHcEx4enlxWWJDQldJTGFEWjJabjZFU3JoX3dUU1JxRHI5WC1ZSmljTEk5akg2MjhBU3V1YXR0Yk9GY2RWbkZkbVpoM0UyX0VuVGVzVG5BRzBSd0VoUk1ZNlZJZkxHTkJreXNQdUxIYTJxOW53ODNITWlWM0R0Y2JPNVJPSjZLOVpMMHk2X3NscGl3RnEwNm02aG5JckFBNXlNUnZkYzI1X095VmtRX1EwWXlOR0VIajVxUXFlNzZjUFkxSnZmZzI2aFFHLWxKYTVzVElaVEVESWxKUmhTVU9wMmc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** “We thought it was AI” — Akpabio taunts Oshiomhole over viral private jet massage video  Premium Times Nigeria
+
+### betPawa named headline sponsor for Big Brother Naija Season 11 - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOYzZqenhZdk9IU1pjNkpvaVJLb296ZmJKRDdzaFZHRi04c1dKdElITEtiUElOam9zdXVqQWlSTU5IbDJRQmhCT2JDTTlzODRLODVORGxWMFhneWgxMWhCd0JyQUJFcDk0Tm52eDNsamREN0w3ajk3T2VGbmFTSThXWFBRUUhqWGdiRDktbGlyZHYzSUZVREltbXVuak1wOUdNczZvazhfNHBDelFWVE5ESEJyRmtFZW9tVzBR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** betPawa named headline sponsor for Big Brother Naija Season 11  Premium Times Nigeria
+
+### BBNaija Season 11: 10 things to know ahead of July premiere - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOemZCOUxLRXk2WkVhYzF4VnFmQUpndUI2V3JLekJTSkU1OXo5N3czd2FXb3VCUUdvb0FqNy1tSmNUeDNyc1dYa0ZzNDNuQkhGSWlmeVBLX1BRalo1VXg5RmVLc0xmVHZBTlZsUmE0MThPNHo1S2ZkLUg1Tmg4TEY4UmFIbDF3TXRzeFVsXzF0c3ROOFNHcDA5aE1pdjVtUnNPckJqS192dFhVYnlzYURJOTZSaTh1d1ctbXFWWEloNWRQWmVHX3Bhcw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** BBNaija Season 11: 10 things to know ahead of July premiere  Premium Times Nigeria
+
+### Yinka Quadri inducted as LASTMA special marshal - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxONG51U19YSjQ0SFZ4OXF6RU83YjRWbnZDMUxjZjR2eE9iZEYxSDAwbEpITjRXRWVHdS10d0pyUlRWcmttYnZCdEp6VERYVzFwV3FhcUVSRWlvNWw5Y1hRdm9Nc1RuRFUtT21RVklWN2EzQllQWk8yV1Z5Z01WdGswNExramhfejRRcGJyWFlhaDZhdm5XX3cwNWNBOG5VRVlxemlfZ3BnbnowXzlwandjLTE2TVBRWVJDbVE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 30/100 (Low)
+- **Brief summary:** Yinka Quadri inducted as LASTMA special marshal  Premium Times Nigeria
+
+### Mathesis Analytics secures investment to scale AI-powered credit infrastructure across Nigeria - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQU0JRaXRKV3N2Um9JQjZzbnlDc1lmZ2l5ODFtamFIUl9ucXFCRS1ZeGhOU2Z4VVdwZWlrVkFuOHFRVWFRWUxfWlRQSHpvUVB4ejhBaTEzdkZPandVa1JXS2VmZzNseHBSTVhFQllWTVoyXy1RRGVmT2VOcGl5ODA0eHA5cERDd05KeGFDbHBLeUFmYVB6WWhicTFLN3YwWTZucmtQRTBIWXJoamJSczhyeEJHazkzN2UzTFhiZk5ES1VCUXc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Mathesis Analytics secures investment to scale AI-powered credit infrastructure across Nigeria  theeagleonline.com.ng
+
+### Husband of Nkiru Sylvanus threatens legal action over viral ‘unwell’ video - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNM1o0QnBmb21yajNoUGxFd1dOak5wMjBOLWlfNURraGQtRm1jOG5YTk9GWTFpMHlEamo2RFItdllvSjBvTk04V3owVmRMcmxyOTVvbjBRN3V1UGpoVVI2SkJha0c2VVM4SUZiUDZrZmRQenBLcy1BLWpHYVhIbC1KOUpvNzIySXFIT3FWRUczS3hramYtVTNzU0sycFNpN01jbm1HOG5qcURNWWdzWXQ4VjlwMWRFNGVoSG15emhPamFYSFFXbG1BZ2JhWDJ6TUN1SE02MEx2bExwRlE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Husband of Nkiru Sylvanus threatens legal action over viral ‘unwell’ video  Premium Times Nigeria
+
+### GLG unveils 2026 PR Power List, honours 50 communications professionals - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMmNIRnIwYThuWlZ5TjRkSHkxbU9HTHNqblZ2VWFZTEQ0MTJOdmoyNFdMNEl4Ti1zQWowUzlfZERkM0VKLVBmZ0JKOU1KNGdiVTh2Z0plTGRjNFdiaEhnTFpfeUZvUVlRRXZCQ3kyeklpZFJiYzRSTlJGZ3Q3dnFUNjV2UG42b1c4MFpIWk1oQ2tSb0FEbE9fd2FwOVRKeTdBYy1TNXlwUUwwalVMODhrTzJZUWhCNEVRVXFlM2xIYU0yUWd6QjBTdFpYUnVhbF9CVDJMSHVyOXI?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** GLG unveils 2026 PR Power List, honours 50 communications professionals  Premium Times Nigeria
+
+### Nigeria launches food procurement guidelines to tackle unhealthy diets, improve nutrition - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi5AFBVV95cUxNb1VwWUlhRHNfMjNkbFo4NkNVSk52NHhudThUelF2cnhWUW42ejdfcmk5Z2NmdFp1Wnl2V3p6VmJWbU41Q2FXWXB2eXpIVnBhWjlUR1AxbW9vMlVkaloyZE1nQ1JfWVFxZ2l2WEs2RktIZ0NSaUFNS2NJaHNIeFBKNVVVTGI1SzVZdU1NQzEtOV9uUVhrTWd1cG1aaGs1b0xTSGpEYmZoNXVmeC1haVNKemJZSUFHWFJ0MUFSa0h1cWNWNWl4VE1PczE2Ym53dGNsLWk3aEl0TEdBWmhTVWNnYWdLRlY?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Nigeria launches food procurement guidelines to tackle unhealthy diets, improve nutrition  Premium Times Nigeria
+
+### CSR, Ogun urge industries to strengthen environmental compliance - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxOMWo5b3JJRjRXUWZURE5scWdSVkRKZ0pjNGt2UWdEOFlTeXlHcjRqUjZ0QTl6QVMzOWRLb2g0NEVvZkxBVDNPMGVBajhqazRoYlZpNS0xTlpKTWNKNVFSTnVMVm1vaXhuanAzV3c2VzBHYjVUVTJpNVhUX2ItUVh3VVFfVzdjOUZsekZRS1Z2QklteEU?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** CSR, Ogun urge industries to strengthen environmental compliance  The Guardian Nigeria News
+
+### OGEPA urges industries to strengthen environmental compliance, CSR - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxOUU9GV0hxTk1MdU9DbTZiN195OE5zcE9raHVRV3VBY2ZnRkZYNzBWS25felV6Qi12X1ROdnp4LVB2UlJDeDNoWld4N3JmRkFQMWxRY2VOaEo5b1oxcjBLenpOSnRZZkctbjhPcktITVd5ejM2MlJWQVdLVXZyTDJ4b1ZZVmVMa09iWnB6Y2daZXpWRS1QdlE?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** OGEPA urges industries to strengthen environmental compliance, CSR  The Guardian Nigeria News
+
+### Firm to improve wholesale trade, logistics with e-commerce platform - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxNSElVWk1nWlZuRXp1a3NYRTYwSXJXYmdpOHd1ME45OWQzMjVDbEhOQUF1TU9SWG03RVVzdU9wZVd4Y0hxWEFzUlpyeWFmZ0h1WUI4aVRiSXItZEwwOHA4Yk5UVDNRV0dkYWwxbC1UTFBUM1pINmlDS29Sc3VKSWFWTk5QSTRRTWY2VXBrbklRU0lVVTA2TnFV?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Firm to improve wholesale trade, logistics with e-commerce platform  The Guardian Nigeria News
+
+### FG unveils national food procurement framework for Correctional Centres, NYSC, others - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxPdm9LRnVFYlVBVXRNenUtUUllSjJBbXU3QW4zMHFKaXhjVm85bThTT2V4RlRuZVpDRm10TEtrcnNpX0E3MXdUVG54WDQ5MzlmbzNZd2FlUW5MTUpIb1cyZG9QQUg3SmZRb191RlF5eXNzVmtndzY1SkhpMUF6aXJvSUF3XzEwSTZ1Zm1PZVVDM0lWY0MyU0VrWXBCYjdway01NzFLeVZVVVRHY2ZxZXc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** FG unveils national food procurement framework for Correctional Centres, NYSC, others  The Guardian Nigeria News
+
+### NRS: e-Invoicing to boost tax compliance, curb revenue leakages - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWZ0RE5sVGNMa25Sai1XLW5XVjZ5LWk3a2piOHRnWHozTDA0WGtKS0luZTJEdGRHMlVfcnRHTzZOY0hTREhuM3F1Zk5RNWpRYlc3b0E4LVFJYlRoMFM0Mk95MXVoY1JGQy1zNVhQTmJyellPWHpDcUNRTEY4bVZHcTdfV2oxTzVmWkpvdnNGLTdHZl9kdG80VVRQX0RUc0FJUkE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** NRS: e-Invoicing to boost tax compliance, curb revenue leakages  The Guardian Nigeria News
+
+### FG unveils national food procurement framework for NYSC, others - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxONlJhV0tsWVZoTm5FM20ta1drMW1pOWNLZG5NSnVGZnJWWjMyUXlHNDE5Rm00V1ljQlU1NVIwMmRtUWpId1F0ZW10c2xLeEJXQXU5LTJCUkNBNDAxejVuMmhZdlZnTk9fZVlCRHRiMWlWcFoxYjlDa2xQclJxcmNFYWJnOFFZbjlhSkFtcHMtLU9yQmpndjctYWpFZVBjYUtYN2o4?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** FG unveils national food procurement framework for NYSC, others  The Guardian Nigeria News
+
+### Youth Assembly urges FG to enforce fair pricing as petrol costs decline - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxNcHFwQlhRek4yTXotc0N3cTlScThwcFNNWTNjNUpmTWJBRFlNZkpHc2lZdWJySXNMTEduNXNlR0poalRSbXdBUEVEN1VQWlU1dUpkVjAxZEVMMU01Rnl2RGYzWXI1a2pOWEY1WHFid1NlR2NHajFBZF90THlBRTRHWGR5MzNHS09kLWttNTJwQkRoaVpTY291Tkg3aG16QQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Youth Assembly urges FG to enforce fair pricing as petrol costs decline  The Guardian Nigeria News
+
+### Ebonyi govt to inspect mining sites warns against non compliance - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxQSFBPUGJRdUdYV1dsZ09DdWtYb2I4TnllSi0wUjJvcGJxOEd3Zkt1S2ZlVkxPRThHUGoyX0xVVU9sRmZ4aXhVNHE3eEh0X3FoNHBPX1RGTk1RNmthbmkyY3VnTnhtRlBDb0xEbDJ3QXlpRmd3TFJ5SFdTdnRyWG5mU3Y3VGpHQXl3UmN6WEhFOXNuVVY0?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Ebonyi govt to inspect mining sites warns against non compliance  The Guardian Nigeria News
+
+### ACAEBIN pushes coordinated ecosystem to drive Nigeria’s open banking success - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQm5UWHAzT080Y2tranRCeHd6RDkzd0JiZ1l0WXN6ekU0bk9WUG8xbmI1VV9LZE5zZGhpc0hod1FRN094RTc1d3FaRjVsMU01azhsSWFjQU9NTUxZMlF3TkVXeXlEYTNrOGpxX0FQU3NETlB2cTRieTdPeHJWVnFuNXQ3dFBlOFdQVEJzMHhWQXV5MjhURXVROGV5a3lDUkFXRVE4MndXckJfcEhRWXl5T21hMmlzaE5nM1ltNGFIcG8?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ACAEBIN pushes coordinated ecosystem to drive Nigeria’s open banking success  The Guardian Nigeria News
+
+### Battle for regulation may cripple power reforms, NERC warns - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxQVVF1NGVrMHJzWFh0aDFTTUR0WFJ1dHNSOTBlZ1RUcEEtTnA3eFNxNk5rbVRRZFJKVkxKb3haWkNaQk8xSkFYTjRULWFNa1o3R3Q4bVVhRERyRWwwRFNMTVl0ZWdiUXJKNXZQdGc3WXpDQlFaQlhXNno3WUVUclJQeHFZRWRwVTJjeUVNNw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Battle for regulation may cripple power reforms, NERC warns  The Guardian Nigeria News
+
+### Airlines warned against non-compliance with ICAO standards - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxPOFlPTjdweVpOSFBxODd2Vk5RLTJjQ05fczVMLW1XV2dVMVprRUpwZEpHUWlfUjVzdHM5NFdqa0FSX25uQjlKdEt4TDJqZkVRNlJsakxGSU1PbVJ1b0ZqRHphNEZaOHlhU0xDSVBIWkx2VzlWSUFwTTZqd2ZPQmZ2ekFKT2tZS2RpM0dlWGZNcWhMb0ZpWkhaMFZ5TjBjZw?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Airlines warned against non-compliance with ICAO standards  The Guardian Nigeria News
+
+### DisCos protest NERC’s new CapEx revenue directive - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMif0FVX3lxTE15SkxDYW5TU3pGa193dFg3a2FmNUY2eUtYNTJral9SWXVwWFJEZDlRVXNDWFVPakhwTnN5eXlTZXNPdXN3VExpb3dHRzdRRHE5ZFZFa25CdTVvbG5ROGZtQkRta1R2TVNIY3BDQ2NraUZ0eTRJNWRLLWtHdGg0LUU?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 33/100 (Low)
+- **Brief summary:** DisCos protest NERC’s new CapEx revenue directive  The Guardian Nigeria News
+
+### CBN tightens noose on FX dealers, caps weekly purchases at $150,000 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ3JrVVdzVjlFSkNwdm9XdWh4OE9GNU82c0U3ei1Hb0t1ZWtkQXFDSjZSam5RcW5uekoyeW45ZEl4OEEzbXRfNTBVdDNVc1dlXzVKbFdTeFZNVTFOdk84R09rY0lqX09DMTAtTzNHQ211UUV0QUZYcklSel9kZDI2VEdZb29RQWNsS3ZmUW9ZYi01Mkg5RkhjOWFBa3lObTZzeDZfT3dR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** CBN tightens noose on FX dealers, caps weekly purchases at $150,000  The Guardian Nigeria News
+
+### Certification gap threatens MSMEs’ access to contracts, AfCFTA opportunities - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxQMmRWMko5ak1vN1Atc3h5b3ZtTjBnZjJJRkFBMkZ3TC1LN29vUTlhRlhCTmhUa1N0TkVPRzU1eTkwbm1RbDRDMmJmamJwV3MxQ1c5cHhFbTMwazhLN05pR1pVbmMzUDZCSWJpSkxiZDNoTlNFOFN1bmZzOTBzeWZNTnhaaklIcmtXempFR2lCMklLUnhhbUV2aE9tOVptUjJGd1ktZUEzNS1aOVJkUnZ5clVUbw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Certification gap threatens MSMEs’ access to contracts, AfCFTA opportunities  The Guardian Nigeria News
+
+### ‘Laboratory data should drive health policies, planning’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxNOHdRZVJpbDdqcFl3UWd0V2dQRDhiYVNMeDNKT3daU0Q2WlZjTnNwQUdGcHp1dEhtRXg4ZFcwNVNVc05TaU1VNWZFVGJmZXRQcjZkUWF4bFQ5MHV6WjRDTFozREhDTkVPYVlWRHN0SU9MRkV1OGR4VWtlNFc3R3ZPTkl6N1luN3lYdVQxbUJOblB0NVl4?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘Laboratory data should drive health policies, planning’  The Guardian Nigeria News
+
+### Nigeria leaves e-waste recycling to hustlers, misses out on $89b income - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxPWWdhQU1LY0lRQlZ2Z0hjdUpTdld3R3VPcDFoSzRzNHFKS2lNSkFiUldlM1JrYVBnYWZBZlZNQnZxX3ZtaVV6b0Z2a0lRaVJKbVJKNjQxd1YzRUl5UThhbEhzem5seTE2MkxQaThlQ2VENkNyaVNBZnpQNzhQbHlsNkFSSlJENnVWSnlhYmdKNFM5MG43M1B4U0xyd3BtR3Az?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Nigeria leaves e-waste recycling to hustlers, misses out on $89b income  The Guardian Nigeria News
+
+### SPIN hinges business sustainability on good governance - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxOSFU4NDd3NXgxU2Q1RUkyMGg3MmgyUjFrNFBZTkFvZ1FnWHNkd1AtNTI0c18wbjN5WldWRWdKU1FJZGtUQXNFTWVPOGpyVnJyeUN4Yk1fM1I3YWFLQjJSWFlFX0RYU0FnWkRyOGI4T2NYZWtrRzZnQWdhUWNMaEpLTklFWWUxcVdEOWllTDJLRTE5dw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** SPIN hinges business sustainability on good governance  The Guardian Nigeria News
+
+### ‘Delay in NPERA Bill passage may undermine port reforms’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxOMTB5dm1NVVU2LVYwX3l6WTQzb0dLTUV3bWZiUllQQVJCNGFDczhIbTRCWU1Xc1JDV282ZC04QTJMb28takpBaG5OeWpFQ1RaekIyY1A5TXRXdzJqamNreW96eC1ieFRMbnpsbGFTZ1dETXVmNmF5SGJVZExIQm0xSGlRckFDR0tGTnlfNGxyLUtDY3JpdTdqRXFuNnpIU1FOWTQzN2pFWjZoTXBVT2Z3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** ‘Delay in NPERA Bill passage may undermine port reforms’  The Guardian Nigeria News
+
+### FCC reads riot act to MDAs over illegal recruitment - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMigwFBVV95cUxNakM4WDlseGU0cGRDcVFqdkJjTDEzTExSNDhLbGgzallfR0h1WjhRdXZ0aVdUcUZwVmxzQUY0MzdhWEItUmRSUHp4YVV3Xzc1MG4xMzZ1TENaVVRjR2JpSmlBVVN3UXp2VlZFVFNWMTBYeVB0eG1fdjNJUDF3R2lIN2hKYw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FCC reads riot act to MDAs over illegal recruitment  The Guardian Nigeria News
+
+### Oyedele seeks stronger regional cooperation on taxation - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxOVWZ5OGZKdTRMQndXTmdOQkdTNG05bTl2aUV5TTlBNkwxSlJKamduOW9WQ3kxYnR5SklmdDBsOGRKaWpyRFJmS21laEtweVZFNnNGS0s1Q1lTdUxISlBBdkFUeFppVzJMV1NMZmV3MEtIckxJamlmNEpXZER0QmpBYWlQUnhXaTVobUhnN2dhRUFBWnZ0d20wZ2l3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Oyedele seeks stronger regional cooperation on taxation  The Guardian Nigeria News
+
+### NFIU to establish Nigeria branch of global women’s anti-money laundering network - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPbnhyUFBGZjlOaF9razdLOTE2LVgyQ2RVVFJYN2tVRDlkeWt2Rjl4V2hBUk0wb2xWcjNPekw2OV9McGFtTVhUNFZPdF9ITkVxYUlmYkphTWNzdGpTVFpJbHRSLXozQkVBUzMwNmZRSEUwOGZ4Y3k3bTFKSmpEUXZ5aTg0MkxOS3FJVWhZcHoyV0tUVGxubHk1ZTB0X2lvUjNCY1l6b3h4MS1jZzA3aHJhVS03TmtuSkxwaENtMVlvZTcxeE44WFRoeG81TmFpVlYtcEJ6NEJMSXpLX0ZtRlE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Critical)
+- **Brief summary:** NFIU to establish Nigeria branch of global women’s anti-money laundering network  Premium Times Nigeria
+
+### Big tech, AI and the future of Nigerian Journalism, By Shuaib S. Agaka - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiugFBVV95cUxPRDlSTVE5c2trN1hzZE5WSWx0VUZkLXdNUDkzZmZ2STRwanJEdVJmWkN0YUU5VktESFVrOUdrQi1vUm56TndnNDVjZTJINEtNWktGZVozWUxFa3B2cmF5TmNHMUVoYWI0TE12UjVvY0JHeTR4MnM2cDRBbUhKVmJrR3RMS0NjVkVkNTloS3hLN2NjbmR1aEMtU3hUcUNWUVhqYVVVclZqOURHRGVCNXJHVllVUVpxX0dzOVE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 30/100 (Low)
+- **Brief summary:** Big tech, AI and the future of Nigerian Journalism, By Shuaib S. Agaka  Premium Times Nigeria
+
+### ‘SEC reforms will stimulate inclusive market, deeper investor confidence’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinAFBVV95cUxQODJBc055anBOY3Vobi1jUl9sdWU2ckFaQlZsNGRnUGNBZElManREWU41YUFVamdmMjgtSVRfSl9MYUpXaHE0aVMtcFY1MXpjWkNaM2tsdVpuWkdmUGFBNGppcVZYTjFER18zUWdXXzIxNGx5YTNNcDYzMEx4QXQ3dlFtVkthMHVJSm10eHAtUmpVY19JZU1vUGhVM2o?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** ‘SEC reforms will stimulate inclusive market, deeper investor confidence’  The Guardian Nigeria News
+
+### LASG arrests 12 over illegal waste disposal, steps up enforcement - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxOMnRHc2J1S0piVHBJUXhxQnNzWno0ZHZQU0otZHdZT2ExZXZzVTI0VmdTUnJaTlg1cVR5ZmNRbkE1bGdmNjJ6WTFOV1dmcHFSakJURUZ2SHgtR0xlTDEwSno2UG1PNGpPWEJ5ZmZ1ckp1YjkyWVJ2dkdndWZBeDh3REpGbGl5UG52MEg3dDE2N05ubTRmT1NxTzNvczAwMkF4VEd2ajYyWQ?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** LASG arrests 12 over illegal waste disposal, steps up enforcement  The Guardian Nigeria News
+
+### Casino Trends: Regulations and what players should know - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcm5yQ1VZenJRdTlPLUp0T2lZQUhSSWgteldtS3EyZkV5blNQNXlteWJsLTU0bElkUjdKR3RvTUw5OW1MWWRFczZ3TEJZXzJ3aTNNOTVvTThvSExqc2t1cFpzeU02UUhoalRKYnRreXN4R09mM21Ia3M3eTgtZldNUlVNS0prSXo1N0VuamRKVG9TOWdsT0Y4RUROcEY1dHF5UHZ0dkQ0WU14Zw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Casino Trends: Regulations and what players should know  Premium Times Nigeria
+
+### Much ado about ticket, cargo service charge in air transport - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxQNERKV0lXS1FMMXlRZ0ZvTnktbGFrbEcxb1pobkNyS3UxRldMeEFGb0twY01ERjRqSmNBeEx4SUVPLVB5Tzl0LTI4MGJzZS1lc01LM1hzTHVVdmpvNEwxQ21NLWpGX245dDZDSHdOdS1NVUJtOUc3LTVlZjM5M3dhaG85LW16VnZINnNGbUNFN2FmMHhoNi01N0l0UXFkUkxJN3o5S3h0M01xSjlXV0ctbGtoRFhkZkE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Much ado about ticket, cargo service charge in air transport  The Guardian Nigeria News
+
+### Senate committee chair links NGX performance to reforms - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxNOHRRSXFwalFvdHNzWnF0ZUdjNF9qSUNRckNuU2RhdVdSbTlmUWRBXzIyU2U4YUxXTjV3Z2E0dEx5ajJ3LVpud3d0SGxhcjc1QjEzX054Rm5PV1E1dFFMOGRsaTdQaWdCY2Z5cVFERVMwOHFZMUZ5R3Vrc2Rxa2tpXzVkMEd6eC0zeVRfR0tfZUZ1dmJJTXVXMlNB?oc=5)
 - **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** FAQs  National Information Technology Development Agency (NITDA)
+- **Risk Score:** 43/100 (Low)
+- **Brief summary:** Senate committee chair links NGX performance to reforms  The Guardian Nigeria News
+
+### Policing framework for legal, operational, financial reform for national security - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxPel9LUWR3bmpJVl9KVFJWRzhWdVJCTzk2NUFYM3RYbDExMzNQSElKZFMtTmJDNkNXa216Yl95Ym5IYk1aaE51M3A5Y19jbnllMDUyUXdfbTNHUTNwR1pEQy11S29uSEVEcUJyYWlycXRPSHZFeXREYVdHRjlIdWY2RHBMVXd2Q044OVc2TTNGZnJHSGFnQXRfVllvREVNYjkxUHhXbmllNHZYcVM4?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Policing framework for legal, operational, financial reform for national security  The Guardian Nigeria News
+
+### Senate approves ₦100,000 fines for major traffic offences - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxOOVhvd3pFNndtaWNHb3RFcDFsZk4zTFVNN3p5SGQzTDZkUjN1bFVpNjdfZU9EZktEN0s1N3JiRG1WQXR0VS1tZTFvVWtnamFVbzAtaWZiV2xVNy1kNDF1MEwyNlJFbDE5b0htSWVqTHlCZmU2b3NrSUZjZENFU2FvRmpoT0RqZDU1Ti1kclJsWkVoSldoN1Rfel94bng3ZWs?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 40/100 (Medium)
+- **Brief summary:** Senate approves ₦100,000 fines for major traffic offences  The Guardian Nigeria News
+
+### Gombe-Led ADC gives Atiku seven days ultimatum to apologise - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxOTEtHWHZ2Y0RKVTNCVEdGS3lMOXdVSnE4TEdaS1RWSDV1TXNGdjhHU1o3WVZxYVRYS0JpRlpzVWJic0pjakJjSFhNaGFycDJKb3g0MmtnWVJqWlU5NjFPNUYxUS1vWXlnWEZNeDR4YjNPbzM2ODJYUFc0TnNUaVQ2VGlabEUtaGF0dVl4c1pn?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Gombe-Led ADC gives Atiku seven days ultimatum to apologise  The Guardian Nigeria News
+
+### Trump limits visa duration for students, journalists, others - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxQbnF5bXlyMFpkREpVdjJTSWx3eUE4NUxpUTBoOS1JTjRUWG1WWUI3TjRCQkxJTGQ1Q3d4VWd3RWNWS2JLLWFVWFFOOUExQzhJajR0S3ZxQmFXeU8xOHloa3pnZmMwd2ZrbFZYbXpYMFpZT1FwNk9faS11bldMN1hSQWRGeHpxOWk1S3hBbw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Trump limits visa duration for students, journalists, others  The Guardian Nigeria News
+
+### Oriire Kidnapping: UN doesn’t intervene in such – Jimoh Ibrahim tells Makinde - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxQM3dUVTF3SnppT2dlSVpLNFZWTmpvc3FzRW5yTlpZRE9nWjQ3VWpYQXY3b093NFpKRWlqVU50aUc5Y2Z1Z3F5cEx0OGtjcGtQUWxCeHdoNl92T1EtSlpRV1RZdHhQdXlFeE9sZWhROHpGWDhaOXc4TnpIZ3R1N3BMNFVlVzBPb1Z5M05IQ0JjeUFDTzJ5MmxYdF9BTXFlaC04?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** Oriire Kidnapping: UN doesn’t intervene in such – Jimoh Ibrahim tells Makinde  The Guardian Nigeria News
+
+### BUA Foods plans major expansion to support Nigeria’s economic growth, food security - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQzNrdEtES3YtUnF4OV91VnNVVHJ5c1RKdnpVVHU2ZHhCYWJmdnJVVWU5bl9Ua2FpNHlFTm1IaTR0RUVNT2hhT1Z5QXZjTWdHWkJKb21KU0FVSllkTGRObFk5MTQ3bGViaUtjbENvYl9GRXhMcE5waWtyY3MzaUx2UXdwNm94cjQ3QmtPZnhGdTBXdGdHS0ctRHN1bDRvT3E1b0NUSXczb1VpRHY4QWZyRkRodTdkMTVjeFZsSXRaS1FTTW12N3c3MzBrN3dIeDZIdGEyM055eUFSb0g5aC01Sw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** BUA Foods plans major expansion to support Nigeria’s economic growth, food security  Premium Times Nigeria
+
+### Experts urge young lawyers to develop skills beyond legal practice - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxQZjNhTHlLc0w1amYtbUFETWhnajFVNFBjWG5NVlkwSktGcHV0bmMtNXVnSjUzWFNNVkRuZ2JtLW1EYl9NSEFKUTJCZUVxdGQ3YjRKS01GM1JsVzA2LWRqZ3haTDJDNkNYUUIwTW5pZkRqa3otS09wRFJDRGlpdUUwTl9JX0tieWJha1BDdXJoMEREaGVrMllv?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Experts urge young lawyers to develop skills beyond legal practice  The Guardian Nigeria News
+
+### Rivers warns schools against costly graduation parties - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxQa29sd0RkcERzRTNOOXhPSTlMOXZtRF9jTTJmOWpIY19UOTBRcE1WYlZpdUtrMHpoR1ZSaHhPRjdMcmh5eDM4dXVneWpvNlRpRXdod1VTUWFxdFpqRDRqaE8wN0c4OHh3S29qYzdhWi1tcFNxUWhaYjQyZG13N1Z5MWRHZEd6blRQTjkwV1Zn?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Rivers warns schools against costly graduation parties  The Guardian Nigeria News
+
+### Drop 2027 bid over BCDA leadership crisis, Atiku tells Tinubu - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxNWWhqMGF0cjhoTTEwWVlTTlg4cVVfTWhqaEN6anFmUFY2cDVPWjlsZlNHZEk5QTZvNUgwMWNtSXQtampwQmpBVTBnSUxuekZKTDg1aTN2Y1F1TUNHa1FiZ1p4TGhwdGdjM08wUlhwNUdQMWlQV01CTmVIMHEzMWYxMzEtMS0ycTNBM0NOSU1sMHZpSjFz?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** Drop 2027 bid over BCDA leadership crisis, Atiku tells Tinubu  The Guardian Nigeria News
+
+### The fertiliser crisis that did not quite arrive - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxNTFpmVnZDVmFNM2c1QzhBXzUyX1A2V056Ym1CZGZFd19WcVI1OHhwSS12dU1hRTlPaURMRUM3TjVaWExrSWFmNHlSNDVYY3RRMW9MV09rVUFZRFNydFN4STB3YnRGbDVnYXlzeVJkdThuZ2VkVTFOclVKT0VPQUlEbXBZNmpZSWsteUkwU0RGS0w?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** The fertiliser crisis that did not quite arrive  The Guardian Nigeria News
+
+### Pension assets rise by N10.7 trillion in 24 months - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxNNnlYVGxDM1g1azBfN2Zpcy1PdmtvbVhBZmg4YnpoV0pQRnM2VFVGQUJvYVNKRm5pS25NNkhtbFFlRExEUjRHdUozbDFORUZFV21aSWJFVlFpSFRvNGFpWGJvak1fYjVCc0N1MjFBRnpDdklkLWVFcU5SSGRPY3c0a2x2cWFqd2M4MUJIRE5EMF9JODA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Pension assets rise by N10.7 trillion in 24 months  The Guardian Nigeria News
+
+### Hajj 2027: NAHCON targets digital, transparent operations with new reform agenda - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQk81MjRFMmZlcG5HdkllOFdhZ084SFRNSW9MeFc5NXdhZkZyZG0yRWRyU0xlS2VOcUlNTUEtc1dtV1hxbjlOUnJpTXRnSWNURkR3S0RoLVltTXFhbzVCZkxGWjVCQ25qVlI2WjgyYkMwakpmOEU4TDVya09BZHZ5QjViaUJYaGRpVkhoSktUV0pQaElzZlBHck5fekVYaERzX0RTYUpodUNoMjhHXzN5T0dDVnRBNWNGbXlrWjRjc1NoaFdwajBZR05RR3hDM0NKM1E?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Hajj 2027: NAHCON targets digital, transparent operations with new reform agenda  Premium Times Nigeria
+
+### How Tinubu is rebuilding South-east to heal wounds of civil war – Soludo - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixgFBVV95cUxQWk9KemV0UF91ZzdaMVFINkk2TW54WG1wWWdvYkVvbWhjaDhDb2pEdHdMdTViZWdGTU13UjZSWFplUTkxSEllQmtja0dKY3RDTEJxTWJIME9UUkFLakNQQTlMS0ozTzA1YmMxVFpycmd2Rkp6bE9HMjdhbi04QTdMb0p2SDlTOHRBRXRYMlNBakY4OThnNzVuM2djanhwdVRZZDY3TGUtcktGRGtPOC1lN3BWOXNVVTBDb2c2Yi1QUlpSeDJXWGc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** How Tinubu is rebuilding South-east to heal wounds of civil war – Soludo  Premium Times Nigeria
+
+### Appeal Court reinstates INEC’s 2027 election timetable - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxObWh5V3hYakVyNmF5Ym45MjBsc0Ixa1FscVRVVUljRm1EQXMxRmc2YWE4ZHJRUy1JYm5GX1dZMENPS2hubWdLRWtTeGhiRENGVUVBSmRybWlpT0Q2ckkyUFJnN0wwZ2gwbDV6NWdLcXlmMWx4YmZiVHRlV0ZzQXJJZTQtYmh5R0hrT1VxRmoyQ1o?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 39/100 (Low)
+- **Brief summary:** Appeal Court reinstates INEC’s 2027 election timetable  The Guardian Nigeria News
+
+### CBN issues operational guidelines for BDCs' forex purchases from banks, introduces tracking portal - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZTFzeHNpai1VMDFXNndCVXJHM2tna01BOHpLQW9fUXN2cjdfSExYOHBNb1hkd2ZpMjl5OGxlaFh6Z2hQRU9BZGNxdWdOZTJqaV9zWmY5NWlxZXRSMm1SRHJSVjJwSEJaaHhRUnBpdnhnWGFYUWlKRGRfaWI2RnZyYWlzZzBFSTlldW9pU1VhVGN3bXJ3OTBCS1Njam9iNnpaZGp2ZEt6Z2ZfUFV5U1R1NlNobEdMR21xdVVEc0traWRzSmxER1hHOXVVVVBGYnV3UHB0WVlZQ0ZnNmdyZW5BYzE5b1QwR2F3QWNZX1k0NHUyMFhM?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** CBN issues operational guidelines for BDCs' forex purchases from banks, introduces tracking portal  Premium Times Nigeria
+
+### Cybersecurity: The new capital of modern banking, By Shuaib S. Agaka - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxPOXp1ODJLd1VTOHlIZ0hNelZ4R3RDOElfdkhjYlJpQkNoZ0VnUzNrLW9PMF9lZ1ExUXJ2bGtMb0ZjWU5UZ0dpNENLZUZlX1ZwcDZQMlJtdmtWOUZvVzRRdG5oZ18wR2RENjczaG5QT3MwbmE0V1JUWWpINTg1cnhabHFQUUZ6MGd3eUdrQlF0eWdtRXVYTjA0dkl1NHYtcnQtYlpCMHI3WlR2VjM1SGdJQ2hFOV9fN1U?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Cybersecurity: The new capital of modern banking, By Shuaib S. Agaka  Premium Times Nigeria
+
+### Policy confusion stifling tourism investment in Nigeria, says FLAN - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxQR1FVTTJWeDM1eGkyRHRQY0w3QjZ1QnozOGpVaVI5Tk16bWJhTzVzZlMxSjB0eDZOVVdCdG5TTVNxNVNUc1JBb1Q3T2JNekNxTE1IZmJKSzVFZWhlVWFENUlvYnlsbzFKUEwtcEZNUFNDMWdySXNDUThic1hvNlEyMW9tMFJqU2gwczFPUzB1Rk15c1NIMGc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Policy confusion stifling tourism investment in Nigeria, says FLAN  The Guardian Nigeria News
+
+### ‘Nigeria’s GDP to hit N530 trillion in Q4’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxOajBnb3RUQ3p5X0l5cXpkVU9qbVhXREZfVEQ5T2VvdHNzeG5pTVhVWjdrYmdnZ3Nzck5Jc213M1E3Tjc2Z2dzNzhIcngtMmY4c1M0Q1gwZVRRM05wMFNjQjE3a1E0WHNlUEhIV3NHY1YxN1ptNnY4empBS3JyelRoMk9pNXE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘Nigeria’s GDP to hit N530 trillion in Q4’  The Guardian Nigeria News
+
+### Senate Passes Bill Proposing ₦50,000 Fine for Preaching, Hawking in Commercial Buses - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxNSmwwNVdSdy1EM0VUYTJ6WGE1Q2hpNlZiUHhRMk43RGlLZHNYclloTzdqQ3JGTTRjZjExT1BreXJyNTFYWEVZSEp1eG5kNDRUM3lpcGo2cWFpOGpNWGNBR21rUzlhSVRrRE1FaDdzbE04d0VaWVNHRk5EaWc3U3hOeWpYaExLT2U4dEE0N1hPbGZtRzl3dnNrc0xzMmRCS2FZSV9wLXVwQjFwWGpTekZLblNTejY3YUU?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 44/100 (Medium)
+- **Brief summary:** Senate Passes Bill Proposing ₦50,000 Fine for Preaching, Hawking in Commercial Buses  The Guardian Nigeria News
+
+### CAC begins sixth batch of company strike-off, targets 100,000 companies - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPX25HTU1JaEg4S3JTUDlMVXo0OGRUaXVuU0hxMlg3TldPTHdMaGdoZzlzZEV1Q05mVWYzTE02ZWtBSWlINkFJRG5UTThzdUNfMnRjUGQ5aEF4TmExVmhFdnlPMi01VlZZRUZqTTJSSmJlY1Zwam51RGdXOVd2NmFaQnJGc0Vtai1JcXZ2Vm1kdmk1VFRjeFl4VFVaeHpIem0tWlJVUExwWmdTbng0UDQ0amV6RmhZZng3Z1ZlZXZxczQtZEZ0ek9PYUVEbnF2WFFT?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** CAC begins sixth batch of company strike-off, targets 100,000 companies  Premium Times Nigeria
+
+### Gbajabiamila files N15bn defamation suit against alleged fake agency DG Adeyemi - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTHhCbWNFOXZFNWdhTXRCbUJrdzNxN3dSaU5tek1hOFZyZk5IbkxGV29PR1F5QzJIYVVZRVFCWk1XLVNPdmJ5Qy1WZmttYmRNQm1ZMV9SM05XV21CbUdQQm9vM01LdmNYV2lXQVJ4elllZU5oN2kweDZIcE5Sd3hFUUFpdUctVXB1MVl5aE9jNlVYUVRrRWFwekVDelhnY1EtZVNkQ01CS0MzQlRkdVFwME1rdEpNemFKUFdSZC0yRFBEd0tUUHhCUk9qRy1fMThaN3c?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 40/100 (Low)
+- **Brief summary:** Gbajabiamila files N15bn defamation suit against alleged fake agency DG Adeyemi  Premium Times Nigeria
+
+### Court dissolves APC's chapters in UK, foreign countries, orders disclosure of donations from abroad - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUEdzM2NuSnQ3SEFCN3cxdTJLSVZldk5mcl8wT0JyMWwtLTZUNmI0dFpscnB4NjBRYTFzM3lmYkt2aV9qazVZdl81aC1VOHhGV2ExTkw3dXFEeG1DeEtiTVlqdGY4dHQzQUpZcGhnQ091dGRPRVY5ekRpX2pkeHJsX09tdENFS3FCMC02MnBHdy01cmphM25nSWVac0NUQmcwbWhVd2E0dEhKQnVSS3dEMERrdVpmSHZzbjNCRUFFdU1wTlF5S2p5cmJSTkRHay1rcEhoUlZQaUZZQU4zNkRCbVNUQjU4b3ZD?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** Court dissolves APC's chapters in UK, foreign countries, orders disclosure of donations from abroad  Premium Times Nigeria
+
+### Bode George warns against ‘weaponisation’ of institutions - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZHJzVTJhMzlyMTdWdUF6dUtfb2ozNnRVSDRyZ09jSHdzTFlWNm5DNklOOXU2RlQtdVVleS1Ga2lOa0t0N3ZWR0h2SEFYaUMwN294cFZtbll5c0FQcE9sdzRkcnJuXzVucTRaSTFtb2MyUnZwVWFRbXdDd1hsMVBCVk1MZDl2QUpt?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Bode George warns against ‘weaponisation’ of institutions  The Guardian Nigeria News
+
+### BOI to channel 70% of €85m EIB facility to drive Nigeria's cocoa, dairy sectors | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS2phaHdvVVNadlJIUEdHRHBZMEMyYTc3U2ZyUThZTmdzcHhkbVZJUnNNMjZhSFNjMzliYkdiWndXSW1ianJHODdQWVFVckxCaUxZaXBKRDM4V3RHSHVWTm9OcnNWU3o5TExpV3hWY2psc0w5QzRDdjZUUDdjWDd1TUpVQnJINTRoc0xfY3JwOHR2bnhiOHRUUWpFdFFKTFhELUVGNG1OSW9nQWs?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** BOI to channel 70% of €85m EIB facility to drive Nigeria's cocoa, dairy sectors |  theeagleonline.com.ng
 
 ### FAAN to Introduce facial recognition system for domestic passengers - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYlRndDN5cHN1VkVyMEhjeFZoaWNWRFBRTF9IWmV4SUxmS0RlZmFfcVJoQXJTSWU5M0VGRGxLa3dPaW5renBjRy1MQTNwZktjLXhXeFRiZVdXaWt1LS1RTE9OMUxmRFJrdGQ5OENRTUd3eHBpOERBbDVhc0Y4UVJNUUVSTmtJYmUwYUkydHJ0aS1qOG5qS3JHLVZGdi1WQ0g0THF5WE1xdjFGbHkyckVubkhIWVpuZWJIWkVpLVZBRHZFUQ?oc=5)
@@ -2221,161 +895,785 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** FAAN to Introduce facial recognition system for domestic passengers  The Guardian Nigeria News
 
-### Untitled - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxQenFUR0NuLURzS2lqWXVwc21nR2tRX2xGQ3RVcktNSlh0bnhEYk0zcVVvaXdVRmNCSnBCNFdod1hHN0lkZy1XN3dCVWhPYXNycFRPSnNZUUk2em5OWU9qVE5XM1Qyb1VmRHE4THJWTmMtaS0yQk55YlhyYjltODRJUkY2c1h6NmlXVWlyNEhJMkhrZTJudnpzUG1KdHdkdHdrYWc?oc=5)
+### NUPRC’s reforms and opportunities for Nigeria’s upstream oil sector - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxQdVh4Z2RxNmQ2dlE2N2JHeERkWm9yM2JySFNMVVRZb2pmWkJ6WkhMRHU0MDRXQU9LN3phSG10dEhtUWNaWXJ2QUF1WTJmYXFZcFZEZkdCaVhvM2FzWDlILUlPREM3Y2RBb0N5Q0NEUWpBcktMVW05bk1BOWZqQ3NyVXJPZFdhaGdNOG85N0JkUEtNRVlzMFBzWA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** NUPRC’s reforms and opportunities for Nigeria’s upstream oil sector  The Guardian Nigeria News
+
+### Five mid-cap stocks deliver nearly 60% returns to investors in seven months - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVlZOemNDNFY0ai1CRnkxTExjZzNMOFAwQ29NLTR6V3RqaUxudTF5SC1jZC1vVVRFTHlSeElSbWZyZ2dwX1BwRERYaEhLNWJlbFJ1ZkUxLUNBQ05ZRHNGb0RNR2p4bEpVa2ZDQUcwa3NMb1NtZ1JqZUdLM3g2SnB1YUNsaEF5dGtsZnprXy1zUURjV196ODlMcElfVGhzaW9lZFY3S0ozWmhUMlRWMjJWcmF3dw?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Five mid-cap stocks deliver nearly 60% returns to investors in seven months  The Guardian Nigeria News
+
+### Lake Chad receding, poses environmental, food crisis, says Minister - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxPTTZpMERZYnJvSUJieEU0Q1BjVjlwSjI5QmI2TGJMMGZOUWVqdjdnbjhIRmQtU2o1dXJOVGl4aEYzck1HT1RfN1NLUVJScldHS3VPbmpoTGZHUFg2Nk96aHdHNmJNcEptamN3dGRfTDBvYm95aGtIb1RiNThPT0hWTWUybm9TRWdhRzNVZ1QyMG5rZ3BF?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 50/100 (Low)
+- **Brief summary:** Lake Chad receding, poses environmental, food crisis, says Minister  The Guardian Nigeria News
+
+### ₦210tn Unreconciled Figure Archives - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMia0FVX3lxTE0zZ1dBV1BSclpkUEx0V2owT2RRckVBVjZDOHVTUkxnQkpCZUFHVjE1U0ZGTXJwNGZzNHk2aVJ1cFBNT0RoY20ybTR6SUJUSnZ3dWZ0SGhpQ204RFZodXNxMzZwd0duQ2QtaHFr?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ₦210tn Unreconciled Figure Archives  The Guardian Nigeria News
+
+### Poor energy supply threatens Nigeria’s food security, says BoA - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijwFBVV95cUxQaVZVY0ZKS2FybG9BRjNkUXhoekQ2U1VqTm41RU9XRmFpWkI0TzZtUmxHNE1uZFFYMTJuaFBJdmZ0NVBld3VvSGh0cDFJaTFhNVNLOTJzS295SjNmUGUwTk1iSEQxbktfZXNFeEFPY2l4NldCV2JTbUd4NWF1bDJUU0N2d3lzbFhwU3hKanA1Yw?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** Untitled  Nigerian Electricity Regulatory Commission (NERC)
+- **Brief summary:** Poor energy supply threatens Nigeria’s food security, says BoA  The Guardian Nigeria News
 
-### FGC Order - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxOWTFYQ3lBeXhEbEszOGNMcjViT0FMWGphZkNjSFVOY25aY200cm92MzU0d3lYQ3FSd3VhX3NSM19zWjBEU2g4OG1DNl9vMWlIckdiODVCYmxiaG5hNlFwV09KcXVWeW5JOTlDTzkxUDBWNWZjamx2OThnTHVJeTBFdlNJRUpoczUzeVE0MWhxUGI4bFB4TkNSMjA2TQ?oc=5)
+### Insecurity: Police apprehends suspected bandit in military uniform in Kano - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxPYWZ6UXpDb3BXeTNuUE5HTFYzcGRwMXNqZjhXbzN6aDA3STdETHdVZzAtVWZuQ0JoU3JPMy1SQks5MDNWMFZpY205VFVoMURTSDNKYVdBUkxKd0dRU3NDbzVNZF9ldkJDTFVBOUg2T1QyQmdMcHlJdjNaQ0hhTXVnM3M2Zm1hS242RkFkRjlsUDAxX1gxMi1BMjlIV3lDTXN0VXVMMlpqM0dpTmNITlN3TDhHYw?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** FGC Order  Nigerian Electricity Regulatory Commission (NERC)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Insecurity: Police apprehends suspected bandit in military uniform in Kano  The Guardian Nigeria News
 
-### Cyber Security - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CaXVaXzVqLWdocms3eGFqeGI1ejYtc3JlV184YUNqYzFackhudzFmMjhMZGdoLXlMRFR2RzRpTzZNeDdBWVhROEJacUV0SHBYc0hOUmh2SXoySHc?oc=5)
+### Weather forecast predicts daily rain for the next 10 days - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVXJITms3aTk0SVFsYzBLRHZJWEpuYnYyRnY2bEZiNzhaZkoyb0xKci1FYVRMNnJKblhTTVhPa2hpY1NMS2t5bUVZODVfZG1HU3BRUDhDOEk2SVIxRUhHYjd5VExuMGJrRy0yYm5FdzlXTHhtNE43aFRDWFplYzBZQTc5VUJQRHJRNFNr?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Weather forecast predicts daily rain for the next 10 days  The Guardian Nigeria News
+
+### Edo pays N800m counterpart funding to control erosion - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihgFBVV95cUxQVHpHRkNua044V1I2X0F2MC1KLTdxLW5uX0x0d0I4eUh0NTZvX3VCVU0wNXlsZWI4aE1JdkRudU45RHY1Z3lNZ2dFckh2b0FzZ2xpY1VrZkhJSVZBdldVV25sd3ViOU9Ub3ZTRk1GMUNUZnN0U1hnVF90cTF2X3M0QmJBamo4UQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Edo pays N800m counterpart funding to control erosion  The Guardian Nigeria News
+
+### ‘Nigeria must move beyond energy reforms to implementation’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxQMVRES01ybTl5Q2ZQeXBKOTZxd1hWWW0zUkNLOVNYUGtuQXB1SjJ2LURUVnlxeWxic2tnMjZqem54UERlVnczTHh5THZoTG9obTM2TUtxM1J0YzVYV2dTOVhSZGJwN1BWdmRUamUwTjh1TVRxczRYc2UtV2l6QXZ0RXBsaUN5TldpWm5NRGN3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘Nigeria must move beyond energy reforms to implementation’  The Guardian Nigeria News
+
+### Tinubu celebrates Osoba at 87, hails ex-Governor as ‘brother in purpose’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxPVUVfT2w0OEN5MS1kYjRqdlhUeWY3SVQzZGZhM3lCcXdzN2lnTTU5Vi1YRThQU3BmUHZobGhfM0J3Z1lsNTJVWWdxd216MjNNenAxeGhzUWFoTTRJVXJEZVhWTzJ2NHNSZWJHc2E1M1lCZUxxSmExTmtWVkhKNDJBLU91RS1zdkppM1BRcEFqdVQ2YjFOZ1FzSmVhaw?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 52/100 (Low)
+- **Brief summary:** Tinubu celebrates Osoba at 87, hails ex-Governor as ‘brother in purpose’  The Guardian Nigeria News
+
+### Education Ministry, NBS begin fresh survey of out-of-school children - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxOcHE3c19jSnd6WWJIUktTVGNlcGlPZnYwX2JZWlVsdHpCZGxWVlRCc1BGckFUSWJFbi1LbzlzcUoxaVZrU3ZVTDhfVDdiQTBJQ3RWMmRNUE9qa0FXeXM2cFI4T2FIQXNMV0R4TUl6LUlUZ0ZNU2pSNzJfMExVMkZBckpSR2RuRFhPS01SYXdoblpVRjJmQjgtSg?oc=5)
 - **Classification:** Government (Policy)
 - **Risk Score:** 55/100 (Low)
-- **Brief summary:** Cyber Security  National Information Technology Development Agency (NITDA)
+- **Brief summary:** Education Ministry, NBS begin fresh survey of out-of-school children  The Guardian Nigeria News
 
-### NIGERIAN ELECTRICITY REGULATORY COMMISSION GUIDELINES ON COMMERCIAL FRAMEWORK FOR INTERCONNECTED MINI-GRIDS DECEMBER2025 - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxOMzVkOHpDaTVKNFlyeFhTVzFiVS1MSWhUR1RGQjZTZklmRHlhWXllR2Noa0NLdkZtSGx6U2NqM3U2UGtYZTEwT1ZDV2ROY01aeE9xaWdXZkd3MERFbHF5b18wZy1lZWNXOWRZdlVGMDF5eEc1Y1hEZFdxNWF1YjM4dW9HYURaTERmdXoyTlRFcHotNTBsTGo3SA?oc=5)
+### Tinubu to address UN General Assembly in September – Nigeria’s UN envoy - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxPV3JzVmozc2VVVVBRSFRabGhOV09BZEFTaUVoRUw1aE9vNEJHXzA3MEhDOXpxTEw0YjlzdlJMejFqTzM1Q0RsN2JBQktkTk94bEtWeHZaVW1JUzdycGc3LW9WVHhMVUE0QmZacnpMZWxrdGxhc0M0dTNKa1RfbU0xLUhYZFBLMTNzbm00c0M2M05vemQ3WGJpMEhB?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** Tinubu to address UN General Assembly in September – Nigeria’s UN envoy  The Guardian Nigeria News
+
+### Prioritise benefits of retired Police officers, Okiro charges FG - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxObmJ3Um43Nmh0ZFlOUVN6QkptSkpmY1ZCSThVaHoyUFBhTkl5SXdVeXZjSWFic1A1aWtKMTBTRFlZOHhfQ3FkYnA1X1dOSXZ6dDYzQmh4QWFfc3NKMy1aM1VPOURLWjJibmhyaF9rNkRXc09VWnU0U1lydjd3WTkteVM0LW40dzkyUUJpWS1xbHJJOW8?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIAN ELECTRICITY REGULATORY COMMISSION GUIDELINES ON COMMERCIAL FRAMEWORK FOR INTERCONNECTED MINI-GRIDS DECEMBER2025  Nigerian Electricity Regulatory Commission (NERC)
+- **Brief summary:** Prioritise benefits of retired Police officers, Okiro charges FG  The Guardian Nigeria News
 
-### NIGERIAN ELECTRICITY REGULATORY COMMISSION - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMiN0FVX3lxTFA0b0dMaDA5ZjB2MXFTbVFnRmc3bDM4aGw2LVozSmRWMzQxTlRSLUx2V055dHJlYjA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIAN ELECTRICITY REGULATORY COMMISSION  Nigerian Electricity Regulatory Commission (NERC)
-
-### FIRS kicks as Northern elders condemn tax data deal with France - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxOT2VRZkNoTUtiSnR0bFFfVkZJaVJjR0FweFhEbzV0OFlKMW1vLVJzTE1YcjlWWi1pYmg0cExobWMyMW5ONENwaDFwWmpGY3NVNTJiQy1jWU0wSW83X2JLMVZwam95d2xFZTlVSWY0eHZmZmg1Nlk5VjRTSHJzTzI0ZW5EcjU3cDJ4VGVZRmN3dGZpRFE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** FIRS kicks as Northern elders condemn tax data deal with France  The Guardian Nigeria News
-
-### CBN threatens sanctions over refusal of ₦100 banknotes - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxNekZpSUNsdFRfOWM5Z2lEbUxrd0FHWW1kVkdXYk9UMmZZTU1qTTJVZjktYUVsYTJxVFNUeVVaSWhoR3pDZVFYQ1dzejl2ajZhSFBzQWgtczYyMWx2LUdka2kyY2NkNldnSmVNYTFxbmxib1dzZkJEODdYMXlpS2ZoWmE1Tjdjb3JSaHJ2MHNVazVaZw?oc=5)
-- **Classification:** Legal (Other)
-- **Risk Score:** 28/100 (High)
-- **Brief summary:** CBN threatens sanctions over refusal of ₦100 banknotes  The Guardian Nigeria News
-
-### FEC vs. NEC: Examining tax reform bills and FIRS’s Zacch Adedeji’s explanation - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxQaTBmdXlhMHlDZ2pnRC0wdFotbEVkSjZGS2pwOGF1YTlPNlJDMy0wU0RiVGJLbVVKaE83QktlWDJ3LU1lSExtQ3FnMXdZUGlZR19RNDlYTkFRQV8yVHBvb1UwY1hlWm5xSmJNOVVyT29pTUtKRTEtRk9lZEg2cGRsMG1USVhXQWd6UFdGV2F4Z05DR0NiTDd0cEpmV1haTUxXamF2VDBR?oc=5)
+### UNIBEN, NIS deepen partnership to advance sports education - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWDNFbTgxcVZYYkZHNmZFTDVqU3hNRzRUNUdwSkw4SnRlSkRNdmQ4V2kyLUM0b2VaeTR6eEtWZjNZbkxlTGNDc1FKYWdKUVV6NWVLX01Bb1Q1bmFveXhNbGt6UGZVTjZac3N4Y3ZscHhpUU16V3hld3B2OHZNUkR0MXFtdXVPLVVVQXVN?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 31/100 (Low)
-- **Brief summary:** FEC vs. NEC: Examining tax reform bills and FIRS’s Zacch Adedeji’s explanation  The Guardian Nigeria News
+- **Brief summary:** UNIBEN, NIS deepen partnership to advance sports education  The Guardian Nigeria News
 
-### NNPC and the Future of Nigeria: A Citizen's Perspective - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1RYjFHMm9uYXhSRXhMY3NMZ3Azc3lWaFV0ZDJhTkJYLUFDekpGWlY5WkxVMlNtVnl6amRpMEgyNDItWnNaMTcwaDJ6MWFuMUl6SzN2NnY5ZTJPR3VwRHFIaQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** NNPC and the Future of Nigeria: A Citizen's Perspective  Punch Newspapers
-
-### NIGERIAN PORTS AUTHORITY - Nigerian Ports Authority
-- **Source:** Nigerian Ports Authority | [Original Link](https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1WMmZITFItbDhIeFFoZGtwR0oySV9EWGNfOWxjdmdfQlI5MHVtTWdXaF9RdFAyRWc4OW1EQ3A0dWJjdWM?oc=5)
+### LAUTECH hospital discharges 31 rescued Oriire pupils - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxPaVJaZzRYYU5GM3h5eTgwYVhjNktXUUpJNk5ISmtqZlJmUUMweXhwZml2Q1cyS09MYXMtSWNqMlJMQlJjRWQ2clhoNnViUXNTSmxnNW44ZkRPQUFqanRzNWxvakJIZ0xINEVuTWgwazluSmxhWVZZNUJLanlUWEJ5cjlmLWs?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** NIGERIAN PORTS AUTHORITY  Nigerian Ports Authority
+- **Brief summary:** LAUTECH hospital discharges 31 rescued Oriire pupils  The Guardian Nigeria News
 
-### Home | Central Bank of Nigeria - Central Bank of Nigeria
-- **Source:** Central Bank of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiO0FVX3lxTE1ETFZsUTNzOGRNU2VTdFAyUTBPMUY1NGVFVmRyczVCaTBjcm1yRE1VZ3Q3V3o4RnFRR0tN?oc=5)
+### Gov Abiodun celebrates Osoba at 87, hails legacy of service - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxPNTBxdFpQdFpITk1GbUdPaGlOVHNWdW1IYUZaOU1QM0dmVmo3Ml9QczMtYm1kSFI4MXRuS0Nfc1hQSkMyd21PREhpUUlIYkxTMFVlTzVLWWJYeEkwZ3J5MjV4Y1ZWVTJYb0N4bTkySzBkZUZuUkVpVV93QjRiWVNOdXFwREI3akpNLVJxMw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 29/100 (Low)
+- **Brief summary:** Gov Abiodun celebrates Osoba at 87, hails legacy of service  The Guardian Nigeria News
+
+### FAAC shares N2.55tn June revenue to FG, States, LGs - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMigAFBVV95cUxNTjVRZ3g4ZTE2SkF5Slh2YnVsR2ZxelJCLWFsN3I1YUJnVmMtbkdrNGNkY3V6T1ctMkR5RVlOUVR1T0tSWEdlZndMS09fekdxSmlMZV9YMmgwODYtWWp2VUtmejcxQloyTU5NcHdRQ0ZiSlNnbzF2WlRteXZ0QjhURQ?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** FAAC shares N2.55tn June revenue to FG, States, LGs  The Guardian Nigeria News
+
+### 2027: INEC considers full system audit to prevent repeat of 2023 IReV glitch - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNjJ6S2pDMzFLMDVVdDRaNUxmaUNaR1VJY1ZRc3pKN0dQWjhwVkVLd3hrSldPSnUtdk1melRhR3hhbXA5cGYtZXFyMTljR1ZtVXNVTEZfelVEUXNVc2ROVzF5dDMzYk9WVnF2YTkwQnpTNEJtQkJ6UDBIM0lubmZYbGRjNHNfSGEtY0FlcHRvWjFxXzlyVnBYaWhtNVhKMGxQWnM2Z3hmekU?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** Home | Central Bank of Nigeria  Central Bank of Nigeria
+- **Brief summary:** 2027: INEC considers full system audit to prevent repeat of 2023 IReV glitch  The Guardian Nigeria News
 
-### FAAN Staff, two others in EFCC net over alleged money laundry - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxNWFEweG9CVzdybV8xM2xheFNZY0s4VE94bEx4ajlrTHdzUG94NmU2OVByV05ESzhUd2FRUmxaak1yaHlTZ3JSNGVyMEJsLTQ2Ul9jRzk5SThkU2tRajhfNUpVTG5HVTRZWUJDOFl4WjV0amdBZUxSZVZXTzl3N0FJeUJMQW5qX2daRmFJbXd1cnAzVjV6d3E5c05pRWIzUWtPRkE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** FAAN Staff, two others in EFCC net over alleged money laundry  The Guardian Nigeria News
+### Reps direct Accountant-General to disclose CBN, NNPC revenue debts, probe MDA fund withdrawals - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNUltNE5sY0VHNm5DaEpoV1B4TGdPclNUVi0wZnpnblZYRUhjQVJid1ExX2Z1Z3ZHX3JHSTBKVC1hbDNYWUlORUs3cFYtRDZqX3lxYjlKdTQ5eVBQMzVfWmpJZ2VfbUN4dHVZNHFOQ24zVXBZeU1RTE5heUx3Z1M4VTJvYV9WWDFpbXMtRDQwcEt6NUwxNE9XeWc2OUdDUXFjOHJ4T2tsVktSRzBWbGpQMjAtaWk4SWszVkREalFRQ3FULWZWdnF2cUxqM3pOV1k5aUFxR0t6WDEyVHNOT2RGdGMwdw?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 33/100 (Low)
+- **Brief summary:** Reps direct Accountant-General to disclose CBN, NNPC revenue debts, probe MDA fund withdrawals  Premium Times Nigeria
 
-### BPE-MOFI: Reforms, Privatisation, and Commercialisation Rights and Authority - Punch Newspapers
-- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxPUzJfNDZLNTgza0lKX2JzUWFuVGp6bWJ4aFNodGktLWNTTF9jZnJ6XzJkZWRfamVJNmY3aDdvbWM5QlFwMlVNdTRvWEx2NEk2WXZPNHJ2Rk1mYU1GRHBEYXZ4aUl6bWN6TDBEd3NMXzlCSXN1N3pZRVFVSDRPT3JzX3hzUXd2YlNNZ2NDMTU4NHFUWEF1dWtvM2NR?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** BPE-MOFI: Reforms, Privatisation, and Commercialisation Rights and Authority  Punch Newspapers
-
-### CBN and importance of development financing - Vanguard News
-- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxPc05PRnd6R2dVVDQ4RGh4cjI1eWRLSDVJUzdhY2E0emRpTTF6eDN5Tm9rLU1hT0xyVk5wTE12MGVkUThyeUlDUGRhOFgtY3RsXzdTSlAyT0FZMTEza09xV1VvMmtfSEoxYk94cTFSQVZEZFAzdFkxN05MYUV1Vy1veWxqLWFBZWPSAYwBQVVfeXFMUFNZQXhWNzVoSThfTU9EcnNvcFNEYWd4VE10aVd5a1BpaGMySkdOdFJmUjlyX0p3Si0zcWZoVjZyMS1oQlF0U2duY29QTldmZjhJbndWbkxVSGxiTjVTZTluY3RZY3NRdzgxckh5eXRWX2VSNWhReWdOWk1rSHgyZkNNTTRvSThlUWRFRG0?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** CBN and importance of development financing  Vanguard News
-
-### Scanned Document - Nigerian Electricity Regulatory Commission (NERC)
-- **Source:** Nigerian Electricity Regulatory Commission (NERC) | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxNeEZRWXljUW92Sllxa3JxanlxT0NQUHY0Nlp3RkZJMDdpcUFENU91dkpCMDhyZWZnTXVSaHJFR0JjS1JPOHhvTUYtbEdScGJyckZqaTNoVl80RVlrb2hqaUI5eFlGY25KMmQ3cmtRc3RNZDlmNThyUzBPblBhVS1UZENPSmpuZmw4V2NTZjhpS1IwY0Fza0k3WUFKakdxU0otOWlOM0JSWQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Scanned Document  Nigerian Electricity Regulatory Commission (NERC)
-
-### Collaborative Research Projects With Relevant Agencies - Central Bank of Nigeria
-- **Source:** Central Bank of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BSUJBTWQ1ekU2NENaQXJ6OEtpeGd5RWFZVFZEeExVUmhrdGFCSTVhZG5hNmhObUMyZ2xDdWdYbGVfM0xoZ3RYckhpVEE0QXVZZVJ4ZmRCS282YTNSSVE?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Collaborative Research Projects With Relevant Agencies  Central Bank of Nigeria
-
-### Of Dangote Refinery and NNPC brawl - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMicEFVX3lxTFA0b043QnNSa3VLblQ2WXlRVnZwVXd2dTloX0lFSjQta2p0anppRUJldXpYSHkzd2xlUXY3ZnZCSGVheUxYbG5rc0ZxOEdvRV9ZMmtMYnhEQ1ljZjRlR1lwTjc4RjdBOTVMcEszVFRjbGY?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Of Dangote Refinery and NNPC brawl  The Guardian Nigeria News
-
-### Complaints Management - Central Bank of Nigeria
-- **Source:** Central Bank of Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiXEFVX3lxTE44WDc3UVRHX2ZIUzJnWkVfeVJfc2lTc0J3dVNJNUtIcThLNkRaSG5VSS1aUm5yREI4aW4wc3ItXzE2ZWJ2YnZ6VkgtTDRoMW5Vdk5kWWlHemlKMUZX?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Complaints Management  Central Bank of Nigeria
-
-### NIMASA Archives - Federal Ministry of Information and National Orientation
-- **Source:** Federal Ministry of Information and National Orientation | [Original Link](https://news.google.com/rss/articles/CBMiR0FVX3lxTE04NFdvd3hreGZReGJnMTM2bWUwWmI1LXdRQndzNlJWYTVrM2VGWXV1ckthSk1mc2d3SC1tWl82bU1IZkw5NWU0?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** NIMASA Archives  Federal Ministry of Information and National Orientation
-
-### Departments - National Information Technology Development Agency (NITDA)
-- **Source:** National Information Technology Development Agency (NITDA) | [Original Link](https://news.google.com/rss/articles/CBMiV0FVX3lxTFBzVEtXR2pEeFo5UlFpQ0ozYXJ4dEdPVTE1N3Bob3I3WGZEY0lmQUtQOE55SmpTYU4tQjZqNThFbG1tdGlOU1cwdnhTbjZnVDlvdEdrZnJtcw?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Departments  National Information Technology Development Agency (NITDA)
-
-### FIRS boss votes Edo high on potentials - Edo State Internal Revenue Service
-- **Source:** Edo State Internal Revenue Service | [Original Link](https://news.google.com/rss/articles/CBMia0FVX3lxTFBnMGxhSWZpRFpwb1M5aFluSmRMcEM4dk5GRDY2V0pBcnIzRkhlWG83RmFYY2ttM2Fnclh3S3pDV1NLMlRycTJwRW9ydGV3cUtDRE5FY0Q3OHlsSTlLTjBLbHM0cy1IbDJXOXdF?oc=5)
+### Reps demand details of ₦34tn import duty waivers, query Customs revenue records - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSWVTRXRoYmk0aUFNSmpYb1VNZGhTcnZSc3l0cVYyMnp3VlY5RHpZU0tvcjRRSFVUMUFUN0R3X2kyZjhycmg4Z1o3MEtwV21kbUVqd0tCX3J0cnZOdDc2V2VNRzh5THdhNHZaRnlhejFOaUpGaC1Rc3ZVNGdaX3VadlY4dVhVak5lSkhSYnNyNW1KQndla2VYSG1nOUhsZ0NyS3p2WlNrbUs3Uk9MUnAzelJRdm9fY3oxZ0Z6akUycExLRXNqLXhJTndkcVNmX0wzSnI3SUk5bkxBRkE?oc=5)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** FIRS boss votes Edo high on potentials  Edo State Internal Revenue Service
+- **Brief summary:** Reps demand details of ₦34tn import duty waivers, query Customs revenue records  Premium Times Nigeria
 
-### MODULAR FLOATING DOCK: NIMASA TAKES OVER CONTINENTAL SHIPYARD. - Nigerian Maritime Administration and Safety Agency (NIMASA)
-- **Source:** Nigerian Maritime Administration and Safety Agency (NIMASA) | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQaE8zMm1WdXo1bXRJaW5ORVF3dmhWdUFLSDk3SXNyQ1k1VzI4ZEkybzJFbXFaNGdCdGJfOWF4ZGU1RC1CWTJLQU1lNVdtRHhrRk5vOXpYQXV3YzYyalpVWGo0RDczQjdMZDVwbkhFVkYxREtNQkdMZXJtWENiTHBDVWhmODRjSnpnanU4?oc=5)
-- **Classification:** Government (Policy)
-- **Risk Score:** 43/100 (Low)
-- **Brief summary:** MODULAR FLOATING DOCK: NIMASA TAKES OVER CONTINENTAL SHIPYARD. Nigerian Maritime Administration and Safety Agency (NIMASA)
-
-### STATUS UPDATE: Investigation into possible Violations of Privacy and other Rights in the Online Money Lending Industry by the Joint Task Force (FCCPC, NITDA AND ICPC) - Federal Competition & Consumer Protection Commission
-- **Source:** Federal Competition & Consumer Protection Commission | [Original Link](https://news.google.com/rss/articles/CBMikgJBVV95cUxNTTlmUXVscDVOd0NrdVpJWUJONkxzM29IUGZPN3RKRm51SDlyWlhBLVdyS0NGU0FabW1FVVk3RFRSVWVhUGc3TTIySUpaNm1JWHo5a1dWNzZ1NGxfT2F3QjBjelI0al9UTV9XbFpyTFBBOFZDMldOWDFrSjlmdDVtNXE1b3h3eGdkVk55eERpdjdWdFYyLVZwVXNlUDR4d3lQQkhtbkxLbG55dzhNUm5uY01OUmJVNno5ZklCd21nbUNqSkt0RnctYk1WTHhMN0F4RFJvbzRNWWdieFNvMTd3eGdwbEdETV9NX3FTcVp0R0ZaMHV2QmZUZ0duRTBURlRCd1IzRHdiZzA1dXpRdEItSk1B?oc=5)
+### Achimugu: Court orders forfeiture of N4.6 billion jewellery, N4.3b cars, others - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipAFBVV95cUxPSHF4dWlfd3dpUzlSbnQ1aGdLLUVFbXhfTk5SeFVTTm9SVm5KMGY4NkVFYVZaYWNnVGpKNXNMRW1rSV9hdWFlcnFpaVpHdGktSW1kZlRWLW4yNzVSY2ZxMl82UThLN245dlM0ZVdMT2hHbG0xTURwNTVINTBDTkliWkNJMGY0bUZ1MmlZeC1GZHExTXVabWZUUWN2SW8ycGpKNnk3MQ?oc=5)
 - **Classification:** Legal (Other)
-- **Risk Score:** 36/100 (High)
-- **Brief summary:** STATUS UPDATE: Investigation into possible Violations of Privacy and other Rights in the Online Money Lending Industry by the Joint Task Force (FCCPC, NITDA AND ICPC)  Federal Competition & Consumer Protection Commission
+- **Risk Score:** 34/100 (Low)
+- **Brief summary:** Achimugu: Court orders forfeiture of N4.6 billion jewellery, N4.3b cars, others  The Guardian Nigeria News
 
-### SEC collaborates with CBN, EFCC against fraudulent digital wallets - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxPb2E3Sk40MlNndzZjRUtKWmRBbWRBdktFMjV2dmF1UkN1cjEyTTJTak0yOVI5cmpiWTBJemNpZGF4Y3AtWVBZM04tM0swRS01cW1EZTFPb1U0eW5ubHRDcGNUNTBPeWRyRFJhRmhzRVFxakNEZFM5bUhqRHJVdWFGVWJkQXNyZWpJUU5iMVlKanhVdHotQTVXaWJyZHB2QVdrMDZ3eVpyZw?oc=5)
+### Again, Tinubu defends administration’s economic reforms - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihgFBVV95cUxNN2N2R1F6dGc1YjI1NWtyT2kyQkRXZGhaeE9xZDhmNlp0RlA2TjYtN1BORVJneEFiZGdYNElyQlFweXE0a0ZnVVduaWtFN2JOaVI5bElJdDUybWdKY2NEUUVGTmtKNnpab3hZRWdpTUhOTzMtT1dIZ1kxb3BwbnlkcGM0YTRKQQ?oc=5)
 - **Classification:** General (Other)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** SEC collaborates with CBN, EFCC against fraudulent digital wallets  The Guardian Nigeria News
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Again, Tinubu defends administration’s economic reforms  The Guardian Nigeria News
 
-### ANALYSIS: Nigeria’s 2020 tax outlook and the tasks before new FIRS Chairman - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxOZUpTalJ4ZWcxTU4ySXNQcU5jVnZKcWJFVk9rRHpYTWlJRjJFSGlxOFhiV2FjbUZhRHlWdDc3R05CaERLNWQ2djY5YzJCR2VIVy1wMDVjNHJEUFVrTUM4OW5TbDd1MjZyYUpwamdnQ1EtVGU3UTd0cDZkZlBGa3RQcUdobnd4bGtJcU5xeHI0T0xZYlRTbXdvSy1QZlVDdEV2dHQzeFJkWEUtQTQ1OTVCeE9ULUZQMVRDMTNRbnAxZ01xRUtkWUtBRWNjTQ?oc=5)
-- **Classification:** Person (Other)
-- **Risk Score:** 40/100 (Low)
-- **Brief summary:** ANALYSIS: Nigeria’s 2020 tax outlook and the tasks before new FIRS Chairman  Premium Times Nigeria
+### Natasha urges NAFDAC to reduce dependence on imported medicines - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxORnhaV01FUFpmUE1oVWJfQkRfY0tmVEdZbnVqMmpFZTVLMEotZHBWb0R4TDRyN3h4MFVSZV9FSkF1aVJPNnc4b0MxSjlweEYyQW9DZ0UtaEZZQzZieFNjblhBMTdZdVBaV3BOb3RRTk03N3BEX0J3VHhfUmdSS3pVeUpTcVVaRDBIelNZXzJhdnRCNDQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Natasha urges NAFDAC to reduce dependence on imported medicines  The Guardian Nigeria News
 
-### Navy Chief Commissions 9 NDDC Projects in Bayelsa - NDDC - Official Website
-- **Source:** NDDC - Official Website | [Original Link](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kdW1vSWo5bm41QTQyVmgwQk5uVlJsc2lwdmViMm0wZnE2Zy1XRU9Ec1dRWVhxczlWV2JJd1Znd2VKR3BfYzhsMVFNWS05U082VVkwcTNxNFg?oc=5)
+### Court orders final forfeiture of over 40 properties Linked to Ex-AGF Malami - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWFkxREduSk9sbUstRnI4VmNhOVhQMlRGVTBjc2VablczLW9xNHVsZEY0c2pJdVNyWTBhU0ZtejBURFZVU3l2a2pFMlRWa29vUmRZVmJUTnF6Q1Q3dWVmR3RTRVIyZmZ5ZGhGYzhDVWxiUVJMMi10S2JsS01zOWh1ZWNULXV6WV9QSnJWNnliWlJmNFlySXN0Qk1VQVNrRmg1bFJSZllqT0g?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 38/100 (Low)
+- **Brief summary:** Court orders final forfeiture of over 40 properties Linked to Ex-AGF Malami  The Guardian Nigeria News
+
+### Urhobo, Isoko Elites to honour Lagos Deputy Chief of Staff Sam Egube - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxNQWJxUm5ILVd0X1pFTUxxWHZFZ01xQnE3RGhRMkJRSUZmbmltdUVJZDgzb0t4TTFhdDMtb3pTRGdjc3pCYlh5cVJhdnE5dTRxTDJ5aV8xUE9UNERINU1aeDhfLWVXTnJjMk52SWN1R2MxbnE2MnNnR1BGakpDZmJ5N0NHWEtOWnhnc0tLYUZvYTVKdVluZTB3MA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** Urhobo, Isoko Elites to honour Lagos Deputy Chief of Staff Sam Egube  The Guardian Nigeria News
+
+### Police uncover syndicate linked to N1b vehicle fraud in Lagos | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxPX1J5TjBmSDA2amZsZXdCTDB0TXoxSG1aQWl1enVKZHVnRUl0NnVQMkVCWlZGcjhta21sajNyYmtzWGZCY243cG5KUXE4OGluaUlWckZNU3d2LTZwUzdxSUxVanNMQm45TExfNGlxVXRmQ18tY2IzMmhZV092VGQtVUxROWNOQzR0Q0ttRmU0SFFzQ29uZlZZ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 24/100 (Critical)
+- **Brief summary:** Police uncover syndicate linked to N1b vehicle fraud in Lagos |  theeagleonline.com.ng
+
+### New Uniport VC assumes office, warns against cultism, misconduct - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxNaWhqeV9zeTdTUGFSaDFBR0QtTzY0WFdTVHIxTTBkQk9PMEpQLTBTMnJ0TzAtUzF0XzB3SUhTZ2dBU1dvbUVvQ2dYSi02bEFWbmxZeVBsbEVJSmd1RHBJOEhLZFM0Q2pGZmdfRlc1dVpoSXFRQ1RwbXFhYWxXd2ZZZ1RUek54Rll6Qm5qVGtxdkNTZw?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** New Uniport VC assumes office, warns against cultism, misconduct  The Guardian Nigeria News
+
+### Tinubu defends judges’ housing scheme as Wike seeks approval for owner-occupier policy - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxQLWoxSlNVU3ZDZWNLajZmMHprVkZaZXN0QUhYTnZ4cEQwYTM5aWtya0pSakYxanN1Nlo0cmpZWi1CVG1uNHZfWGhxcVpwUkNYNzktTzlTcUN5aWN6N0llY1pkRXU2SHVqRHpDN3NOc0I3T3oxdTV4V3MxR0lpckNpaXFIbFpJWEdraHhwdlBtcXZvUFQ1VHVpZk1DR2t3b3NfbmVnbjRXbWRxbExNMU1jNg?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Tinubu defends judges’ housing scheme as Wike seeks approval for owner-occupier policy  The Guardian Nigeria News
+
+### Statutory revenue rises by N1.05trn as FG, states, LGCs share N2.55trn - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxPRzlPVkdLWk9MYnZGb2k0QTUtUVpBb21LWWtvQm9rbkFmZ1FPdWJOVEhmUHpoSEd4U3ZfTDZ0dTZ5UmxncjR0dmtxSWVYeW1lTmZLYnp5SGdQOUhfalppUUs1OUx1MUJ5X3pZbE9obWgtVS1HT29QUlp1VWNlRm1MV0tyYTRSbjhHenRGMWNuZkJHcXctMl9pVEpn?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Statutory revenue rises by N1.05trn as FG, states, LGCs share N2.55trn  The Guardian Nigeria News
+
+### Reps panel demands beneficiaries of ₦34tn Customs waivers, fault revenue reporting - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMitgFBVV95cUxQalYtUUpoZldhZS0yTkh3YzREbnJITlZ5YUpJWnB0b3JDZWl5QXd6RlNoTkJwR3NpWjNreTFBWEJVQ0NmVHlVVkRqZE9ucEV0SU1URFVaOGJscVNxdml4N2ljU2kyZmpHZ3NNazZmTHJJNUVjbjRSYkJlN29jbDBFekh5WElJVGgtOVFRcDZZWHN1SUxaOXFyWUN2M3Y5Z09uYVRJWXhWS0xGQ3pHejc4YzMxU1MzUQ?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Reps panel demands beneficiaries of ₦34tn Customs waivers, fault revenue reporting  The Guardian Nigeria News
+
+### Fake PFIPC DG Adeniyi Adeyemi arrested - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMifEFVX3lxTE5fRFRwVTE2YUlGNjl3S000Mmo1ckxsRVZ2VzlTdXJCUWNpU3lWeko1ZkdiaDQ1VVVMb3dHVWdpdzZ3OWIxbmMtS2J1WnU0V0x0SW5vaGw5Y3ItSGhVLWNPLThFUWtXUVYycWZCcW94STRJUnpXZGxQSGo1MHY?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 34/100 (Low)
+- **Brief summary:** Fake PFIPC DG Adeniyi Adeyemi arrested  The Guardian Nigeria News
+
+### PFIPC scandal: Atiku alleges cover-up, seeks independent investigation - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxNRU1JcFVITVJXVngxZ3dtdHA1TkJRc0RISHBWUzJ5Z1JvWXRqVFU2YkROS1pDUkdYUEoxMEFHZEdZaUd4ZnBTVm5uTnc3VGxYWnJxazBjbGV5c0ZUVnhYNUY0enJwanFLUzM3ZkxyeXZ6WUVGNTExRXpyY0xnRnR4UGQwalo3aXZlaGdOUkxhZFZiYUp2M2otcTVR?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 28/100 (High)
+- **Brief summary:** PFIPC scandal: Atiku alleges cover-up, seeks independent investigation  The Guardian Nigeria News
+
+### FG, UN seek alternative funding for execution of SDGs - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxPeHo2Q011M3FHRktfVFctY2FEUnMzRlBqSThhRUJ4a0lRQWkwamcyMjVNNUR6MnFVYUpXNVJLV2ptWDFCWERtaXJWd0hKeUg5d1RPZmc0UE5kTEthRDIxM0tNVFE2VU1mWTU2MmZjdzg4eG5MSEM3M2t4S3htQWtoaXAwbno?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** FG, UN seek alternative funding for execution of SDGs  The Guardian Nigeria News
+
+### The boiling waters of Bille - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kRkpzXzc1QVhkcTZPMExlN3JpR2R2ZHpSV0xJdFMwNzdjbEgtTVdXb3NHOEZQeHN2UGk5YUJ0dHN2a29Id2EyNTVhT0ZnOEJGUVJaX3pCOVZ4TW85REFEY0xkOWNUbjg?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** Navy Chief Commissions 9 NDDC Projects in Bayelsa  NDDC - Official Website
+- **Brief summary:** The boiling waters of Bille  The Guardian Nigeria News
+
+### Senate tightens grip on MDAs …as ₦34tn duty waiver probe exposes revenue gaps - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxPRmVGQmhJVlRFdjVXTmdrRVk0dTNlZ0k4aXlENGVsa1d0UTNNQWFDdTBwN2dxRzVLVjFRSUZFNlBoeDZSZENsTVFTN0x3TlhQaVVyVXRoT29ORURocW0tWXZtNXAtRmVscEVqT0VZTXA0d0x2cTRUTzNYNDZqLW9tUVU4VGUwWFVfZ3YyeUVrdFhUTGNXb3M1TWtWazFRNnpvQWFLLUFYMnVmdjA5Znhz?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Senate tightens grip on MDAs …as ₦34tn duty waiver probe exposes revenue gaps  The Guardian Nigeria News
+
+### Reps query OAGF over deductions from MDAs’ statutory funds - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeFBQUFNaWHlCdkVTVnZ2V0p2UElOOW13RU1ua3ZKQ0hvWTFHN0VrMU44NEVvX3JzaVNrRTRCVjZJOWVrY2F1QkJJNkJZQ3lTMDhwQkhjV0p0ZUlyNm1iOGRlQ1VOYTJTUUdiWjB2QklYVlkwX2xIalppV1V6SlFjelBVVXZOb2RhSEp3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Reps query OAGF over deductions from MDAs’ statutory funds  The Guardian Nigeria News
+
+### Reps query OAGF over alleged unauthorised deductions from MDAs’ statutory funds - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ0xqS1hXMTJOSWVQUk01bzNQOVZHLTIya2EyMnFYRkxySGFfUl9fbThYTXFwQ01mR3c3TENZZUNUbWpXank2TERZOTBiZnYxSzljZkgzOXBIZ1lBT01NbGVmdmpGOWFMR2xwMUxvRUlVNEU5TWRXQjVuVlpzekZEZVl2MnlvVURaZVpiaERDdzdPSDE3S0dUU3EzN3NxVkozNDBxM25lUQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Reps query OAGF over alleged unauthorised deductions from MDAs’ statutory funds  The Guardian Nigeria News
+
+### Again, Senate rejects PFIPC probe as Atiku slams FG over N6.44b W’Cup budget - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxNbXRHMUhCS0pKYVdoUEJnZGhySjhsYnYyRHlMUjVkZ2NPWjJaRDZMYmhSbDRRUEJxcFdFTjRZSE5WZXFGUWNFc2N5RERhUVdFTFpsd1BTdTBaTTNYR3hEdzhnNXRVU0Uxb0tKOF9lRjlwZTBtczlWVXJDWVpsdmZMc3N3T09JZ1B5dHF6eGJHTDlRc3pmelVvcks3ZkhZSzd1M3c?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 48/100 (Low)
+- **Brief summary:** Again, Senate rejects PFIPC probe as Atiku slams FG over N6.44b W’Cup budget  The Guardian Nigeria News
+
+### UPDATED: Fake Agency Scandal: Police arrest Adeyemi - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSmJ0YXFnTEVBeV9rSXBLcFVEaUlaRnlkRWVZR1FlVHBuakVMRGpRVjVyVm1pVkR2cy12bzhFVU0yVExtaV9GSUdZYnYxcDRldVVzaW1DbEp2WVoyTE04SE9GNFg0alp3MHE4c3d1UEV4d0JUQng0NHF2MEJUdUpQR0o5Nnh6MDU1V0xHSXRkMENtTkQ1NVJrM2JfT1JteWRSNVpJdFVnT3ZsZw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 34/100 (Low)
+- **Brief summary:** UPDATED: Fake Agency Scandal: Police arrest Adeyemi  Premium Times Nigeria
+
+### Delta raises IGR by 138% to over ₦200bn - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMifEFVX3lxTE1TeHRMUmdVMnRUc1B6Y3JGakp2bnNDYWZZQUFZbTNkdmpPVXhjRHdidW1VTFUtWl81alJadWNBQ0RDbFZmMTFPcFZMZ2x0SHJ2Q3pQRE52Z2IzU0c2TTlZZ2YyMTUtNG9KSzlWVDVaYmtjU0JDUUhYaS02a3U?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Delta raises IGR by 138% to over ₦200bn  The Guardian Nigeria News
+
+### Permanent Secretary of the Planning and Budget Commission Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMilwFBVV95cUxQaXFSekgzNUpNMWdlUFlIWHM4THh4VFhSM0ZkUnJubXl6VmJuZ2NWVVl0aWQ1d1R6RlFVejNFeG9PZU9QN0tqbHp0aFB2YUZka1U0SlhhWllmdWJ0QjVzYlB3cV9DVTFOT2hrR1hTNU40LTFyWVBDek1jN1l2VGFOYTFabDBrVm1mbXB3aFJMZUhCUlpQNVdJ?oc=5)
+- **Classification:** Person (Other)
+- **Risk Score:** 40/100 (Low)
+- **Brief summary:** Permanent Secretary of the Planning and Budget Commission Archives  Premium Times Nigeria
+
+### Stakeholders seek improved health financing to reduce maternal deaths - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcVRSbEZUX1lUckRhSjFuOFY5WkE2Qldka2JkVWt1Tm9nUDlHYXlXdUVpSVlGSU1tZzN4dXJDNXlyOHM2a2VIc3BDV0F0TlFrRUxGTm5tMUlYYVhPWUFzTkhBM29kYWJsSGdJLU5ZeTFuMm9EWVlzVEZCNGZuNzg4dEhBLWg1NDNEenM4QktVQ04tYThHZG5ZRmlWbVAwY1dzRlRkLU0wbzIwQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Stakeholders seek improved health financing to reduce maternal deaths  The Guardian Nigeria News
+
+### UPDATED: Judge orders Adeyemi’s arrest in fake agency trial - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxQWm9GcE5JUVgwaHU4azl1V2stZXpHZ25PS1RmWDQ3S0lVTlNfdmxRaFZLV0Q0OFBGV3VfdjdFUmQ5LWhyRU5aOEFWX1diMGpDUWRZOVgzZktNcVBqSHl0NE9RTXVXY293VUNidFU2ZUREbmtyM2dTc2xUbEh1TTVFN2c0MjBRakk4UDFtNkVyQjYyYnBSNlJiQmdNWEdncWlfYW1KZ1VPeXhZNlhkSlNlbVkwUWFJS3c?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 34/100 (Low)
+- **Brief summary:** UPDATED: Judge orders Adeyemi’s arrest in fake agency trial  Premium Times Nigeria
+
+### N2.9bn monthly allocation to NCDC grossly inadequate, senate tells FG - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxNLVRINzZwOEJiY0RaU2dFZ3VFQW1GOUNqLVZFYjZiT1B1cnRVY3otcW03U2xocTExREp6LTRudk5CUUgxdS1HSzV5dkVUY1hWcmNFdkFBelVqVXRFZFBMQzRHRTV2TmRKcXVCMGdLN3VtbTRjVkJFUWJfUmV2dnZmdUZoV0F1dFJVZ18zZ1dWb3lyblRtdmNIYy1B?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 45/100 (Low)
+- **Brief summary:** N2.9bn monthly allocation to NCDC grossly inadequate, senate tells FG  The Guardian Nigeria News
+
+### UPDATED: Court orders final forfeiture of N4.6bn jewellery, N4.3bn exotic cars, cash recovered from Achimugu - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi9gFBVV95cUxPZF9TTHZaVkNOeXlEY3VZRFFVcm9zdll0RmJGTDBKWDI1MHE2NmpRazZEVlRWSi10a1MyWV9nam13alVHMFVWdE9paHlwTzRPemxrLWFhT2ZlcWFSV09wd0c5cUhGNE5aOEhCQmQyaVNUSTEtXzhWWHlwRS1CcVJzekRHTmw5SXNQVm9nTUN4Tjd3SEk4VEdkRkVTTGJwUHJyQ2RhSWd1TzdZMkc5YjFJVGZUaFI2ZzR0Y1J2ZkQ5M05xeHhMY09wckxKTWdMemF3c3JocVRRdWFWTlVPc3ZsVTdFdThXSTJLdW1tREhlUk5qMFdmTUE?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** UPDATED: Court orders final forfeiture of N4.6bn jewellery, N4.3bn exotic cars, cash recovered from Achimugu  Premium Times Nigeria
+
+### South Sudan Opens New Push for Oil Investment as Juba Targets Production Recovery - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiS0FVX3lxTFA2VDFkQ0RKQXdTZDRqWFk0NVNNcUNmZWNGcngtQUJ3NHhDRTZGalpIVUpCQzlWTGRiWXBLa2dGY0xsSURmaW5neDZJRQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** South Sudan Opens New Push for Oil Investment as Juba Targets Production Recovery  The Guardian Nigeria News
+
+### Court postpones final arguments in 11-year-old fraud trial of ex-Gov. Suswam till September - Premium Times Nigeria - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNRGpQbGsySWIwa0diRGNGcVB5bWpBUWZhSE9SenExTTJ6T2VWbWVhSm0yemM0aUk4YTNoVnptMm1Pb2xibVc1dUd0TzlWZ3lVV0ZMN01acm5INGYzNlVmRFhWUFlSYnRpcnVNUkZUbEpOdnZ3UmtTRmUzdGFDRHFmbFc3X05aeDQtRlg1RFJpMHgwU0FnWXhVbHBQR0xkZEpJMnNhcGR2S2ZKMGFHazRwRmtja2Jkc2JaOXRQQXd6anloOWF0NkJzOFRJYW5valRBOUdwekM4Mm9MNGpwZURLZQ?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Critical)
+- **Brief summary:** Court postpones final arguments in 11-year-old fraud trial of ex-Gov. Suswam till September - Premium Times Nigeria  Premium Times Nigeria
+
+### FG arrests two suspects in Osun illegal mining crackdown - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiigFBVV95cUxPZW5OblZoREJzS0NwZjJNLW5hVmJkQjhTYXVOQ0lyRVVWNGVaN2szRFhLTW1Ma0NWVkRmNzVsUlZQSW1mNlZjam9iY2JJVXlNR21jdGJQdlMxU1NZYXNoUFJpTjZvSDVWVmVFUlRiV3V6VUxEVDNuc0xPTk95V1NZaXIxNVp0RjN2aWc?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** FG arrests two suspects in Osun illegal mining crackdown  The Guardian Nigeria News
+
+### Civil Service Reforms: Why Adegoroye’s Prescription Misses the 𝙼𝚊𝚛𝚔 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWjJFazNuMXRETVhfRWs3UUZnbjNJOWdIMTVNSUVmbm5PZEY3MmdXX0ZFZXZPQXhTU2VZRTEyWE9pMDlQUy01cXVaQmFWSldpTG5Sc2hwcm1SVWpBTzlhbWJaNS1mTDZ5Y1pDX2pxYlB4cWJPLWlpbnR6QlhOd0J3ZC1wVmdKM3FBYzF6dGdzaUM1cGxtdkZSS3o1U1U0X0dpSGlOa01HV0J2bXdhRERvN0JwNU1IQnlEbk8xWWo5OEJXSkQ5SW5NZlRWNTRXUlkxOHJxOA?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 40/100 (Low)
+- **Brief summary:** Civil Service Reforms: Why Adegoroye’s Prescription Misses the 𝙼𝚊𝚛𝚔  The Guardian Nigeria News
+
+### Buhari Was Not a Northern Leader, He Governed Every Part of Nigeria Equally — Gowon - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaG1CWDY1dU5UOGVyNVVMSURHNzE3Ymd1a3hFaFljTkd0TGhJZnkxQV9XNzdrYk4zZ2RhN3ZHUEVidUxNRVpVVXNIaEhzMkM4bXNPb0FDZDZjTFA5WTJ5OHM1ckJBQUQxY1JsUlFnQTVKNkxRbzBUZGZqX3FTdVJkWmpvcksxZTZyX2NjQlRJS3A2TWxtTjZfa0FjaVI1TmdIUUVUYjVyMjA3UQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Buhari Was Not a Northern Leader, He Governed Every Part of Nigeria Equally — Gowon  The Guardian Nigeria News
+
+### NCC sets rules for fair competition in mobile network market - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxOS0FhQi1kNUpsWXJlSGV4cVRsME1kZ25LaVpCYm9SdlE0c3AwaGwteHM2Yi1pdjQ0eFBtY1V5TnhTRTFiOGJpRVNGdUFNRE50bkRRTC1NVGdHTDdSeDlUSzJMei10UkN4bmF6TXg2M0xGN2FNVmpfS3hrMUtJaEVuWEpzcFNjZF9tbWdhdzRYa1ZpdUx5Qk1GVE1zNUdQT0VwN3NN?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** NCC sets rules for fair competition in mobile network market  The Guardian Nigeria News
+
+### Tinubu unveils $3bn social protection, human capital programmes - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikAFBVV95cUxNV2UxYzBGejdjbmpoNkhWNmQ5b25vbWNzbHVTaUJaVjlvSjNyeFpQMy1HbnV2VnVrenl2X1pXbUgwU1lXZHVTNHpBcWtGVVRWNW02NjdOdzg4VFdZcFZPSFQ5QTA0Z0dWX0dNUDN5eDlPVVdfMHRYMFpkQUw2SllCQmxoZUNNTEVKemdrZjNsLXo?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Tinubu unveils $3bn social protection, human capital programmes  The Guardian Nigeria News
+
+### EFCC hands over house, SUV, other forfeited assets to Australian romance scam victim - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNUliS01JbktOQ3N1MnFrSXVjUnZuY19jdHhQbzdNOFFfeFV6emxlM1gzNkkyRUowcS1KbW4ycWlPZzhzemdGcGNWOVpwMm93OFdlaUNzREZOT2JKTXU3OVc0MzNUQzZRcDA3QWJsVGt5Y0VsTzJyYU5ZN0tlUGQ4RW1vZ2prWVZYTkxBY2NRU0RVNUs0THh4YWFEVzFXc21vOFdaTTRhdzFGcTZGVUZaZ21XdkV6aWd3TXhUZ2d5Y0dKVk1ERlNGWGQ0RjRqSV9VdnppNXZR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** EFCC hands over house, SUV, other forfeited assets to Australian romance scam victim  Premium Times Nigeria
+
+### Senate affirms SSB Tax Bill will control NCDs, generate funds for health sector - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxOemJRWjBxQ0ZPS002U2wzMmkyc0NlUjBkMXBkMGlTRGIyN2U5NlphR19LNDdiY1QxelEzRTFVZkxFdGZYc21XUWtxcENkb1B4Uno4ZDhjam5fNm1GZzhNaHhTMUFPUWRtdWRFUFNBOVFRT1d5Y1lLOGVMbWR6SU5CTHFUaWtXSEp0TnlGYXkyc1R6UHFoWlQyb1p4bmVMWVZncm9XNl9aUQ?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 40/100 (Low)
+- **Brief summary:** Senate affirms SSB Tax Bill will control NCDs, generate funds for health sector  The Guardian Nigeria News
+
+### PFIPC Saga: Adeniyi Adeyemi flown to Abuja in private jet - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxPLS1BS1FjVVloUkpBZXUzcGZEVGFnelB2X18xcVRGTjdwbjRRaTJTbnZJbVFTdjBpRWJNczVYa0hvWFExVEJfTGR3ZWptZmlwUVJqWkxFQjNhX3ZwSDVLTG5kQlNCaVQyTjRVUE5xSy10cHNmS1FFRU16aDdNMjJuODZMVHdsa0JIbkFGbkwxVGFWXzVC?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** PFIPC Saga: Adeniyi Adeyemi flown to Abuja in private jet  The Guardian Nigeria News
+
+### Foundation warns against diversion of Almajiri education funds - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxOdVowT1NfdUo4Sy1NYXRqMTFnb0lmbTc1M2t3SFBpSW8yeUpTNHVHSVRjQllKdEx3eTVzVlBVX2ZKRWRhMDRoZjF1UmNCTVJ4QXFHVGJGOXZ1OUh1cTZJcWFLM3VLMjBxaTQ0QXA1eW5MVkVqb2dOcDNuOWdZNHRiV2kyeXdkOVpJSXQyQ09RRUpxQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Foundation warns against diversion of Almajiri education funds  The Guardian Nigeria News
+
+### Farmers seek transparent distribution of farm inputs in Ebonyi - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixAFBVV95cUxOMHBzTDhGQzdCVDFzRUgzaDN6NW9BNWZvT01mTFEyYW9wdG54WUZtbDQ5UlY4NkhSMTBxYUFXQWQ5UmJORlZlY2JNOFUyWGx2c21CZU12bDZSQkFHekw5NmMydzYxMFJvbkU3T09feXBtT2xNNXlvMGNyY2w5dC15U25XSFhtVFg3dTBsNUVnRmp3aDdISVJOTkRpay1aRHhlVGQ5WExBbEctb2tveWg2ZExRd3Q4TXJtek9zMC00Z2ctWG1l?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Farmers seek transparent distribution of farm inputs in Ebonyi  Premium Times Nigeria
+
+### NSCDC reports 671 arrests in anti-illegal mining drive - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihwFBVV95cUxOWjFhV2VxSG00UnVLNldhbVV0ZnhveUQ2dWFVdlR5TW9Va1dxQWVnZjc2dW5KcjZpR0RQaTRiZXdHWGQ0MDlyZW1KcjBPN2FRSU9VaFQzVU42c3lJSEE4dVhIRmdyREpGSjJSVFU5RmJQXzlEeXFQRmRVcjFvUko1QkRyOGY2Yk0?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** NSCDC reports 671 arrests in anti-illegal mining drive  The Guardian Nigeria News
+
+### FAAN to transform domestic air travel with V-Pass facial recognition system - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxOb2pQUW5yM25fZDhMTTVqQTFRSnlGdXFoNnBDNHFDdkhUUnJEZExraDBtLXg1WmlGaFp4NTBjLXpaQ0RZV3NhQnJoaGF2c1JndzlVUTc3bVdTWHFZX1VKcEUzMnRiUnZHcUdYcUw2NUJ0Y2I3NXI0QlVxVk1GeHNxdTVKeENCeFhXNWZ2SHVFcHhOS0ktRmJsTWl6eVlFa0M1MDFr?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FAAN to transform domestic air travel with V-Pass facial recognition system  The Guardian Nigeria News
+
+### Apapa Bulk Terminal invests in driving culture of excellence in Nigeria’s maritime sector - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMixgFBVV95cUxNbnhoWWNMLTNfZ0FWdWdtUUQ3dGlfMm84YUtSeXozbG0yS3l0UHc2MktPb0lKUnJUT3U4MVRBbUxLZDc5Y0dmbm1QWXFFdGFfaTdXREcxVXppUlhYdGcyc0RiS1VYUjBPZ1loTXJjZXpfVmxfaUIyN1Jod0x2RTdPQUpPNUJVWkhUNjBpM2liOFNaX1V6YzR2aU16QVRRLS05SHVWVm9XeVZ1ZEdsYzduYm1LTmNHcXZPeXBFQkFFQ3hBU2ZUeGc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Apapa Bulk Terminal invests in driving culture of excellence in Nigeria’s maritime sector  The Guardian Nigeria News
+
+### Wema Bank warns customers over fake apps targeting banking details - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMizAFBVV95cUxQTzAxUW9SNjhXRzAtN1JjVkZyUkpKRnVma21sREtKd0RJNHhlQmpZaHdDcHBiUXptMWN2aWE3RmIySFlYbWZST3I5S2hfZ29mN2ZUeFduamFPdVRwOVVuMDZBVFJ5RlNyaEVNTWR4UGRUVHpiY2lkcmhyZ0VBTkg5Tm9DMTRVU0ZydE9QWTBwa2tiUXBKQzE4bGVjU1RjbEdvZUFWMWtzQmZWdzQwUF92dUhndVFMZTRkVlJRbTJ6UUpvRENYdGlQMjllR2I?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Wema Bank warns customers over fake apps targeting banking details  Premium Times Nigeria
+
+### Tinubu, the young turks and fresh thinking - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxNZS1wSy1FYWhuVkRIdnVCOEtMcmZZdzBmUGdVMzZOLTVuVTdHbkctd0UydmJYd096cmZpd3VUcXM4OWFtcnZvcGRRN1doM2tzMHNBd1FKMGNWTmZ4V09DOEdUdDM3d3RFb1NNRVB0Y3M4WF9MTVVFbmFNdFhwanpUM1l1MmY?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Tinubu, the young turks and fresh thinking  The Guardian Nigeria News
+
+### FAAN set to transform domestic air travel with V-Pass facial recognition system - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNk9QaGF0UmhhdWJOWHVvb0h4eFRwZnVOVC1GcDNsOEZQTFBNMk5oM09uSE53dFk3WEtWQ3NpU2FleTI1Q2hRS00yN2ZpZl96a1prZzRFaEo4NlZQdW9VbDZ5OVRmUktjUUYxWXpxOS1JQTJYZ2VLUDVBaVF5Wlk2VHRwQjc0WDF3QU15SlVWNVNaOVpVZGQtLXVXamIxdTYzSnVTem9TaU1YTV9xS1d1Qm53akcyUUdJMEdaaWJjVEcwaGxwbjNOTGdQcGQ4SnZralZGXzdQX2xoTEg2WWc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FAAN set to transform domestic air travel with V-Pass facial recognition system  Premium Times Nigeria
+
+### ‘FMBN delivers over 9,000 housing units in two years’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxQSU5felRpSW5Kb05ZdXEtNHRxdWhrMUpYdXpKNGRQOE04OGtvX3hSdlY5XzZmLWw5NUlPdXRLck4yY0d1R05naGpabjJvN0E1WkJQVVZHSlcxcjI3ZEFxaW1jMzR2MWVzcFVqbUJTN2FnNExOWW85cGgwZHEtbWVtdXpobE0?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘FMBN delivers over 9,000 housing units in two years’  The Guardian Nigeria News
+
+### US strikes civilian infrastructure in southern Iran - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxOMDJUUzNDMkZhd1pRU2gybHJweXhfYVNWeGdvNTd2WWNCT1QzdlFyM1lQV013X0RUUVd2am5ZdlRhV2pQcWpjME1TR29wQ3htTkpBdW9iOG8yYmZnSXQwSnZtWFd6OXpHMlNaU3JWeDVIOWppUWpNX2VYQVNGTmZpaUVXX2ZzbDBPenMyX0pVaFZQM2tTVTNfWkllRW53V0pRRi1HVHVhci1iU1NDUDZJX3g3aHZtTHM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** US strikes civilian infrastructure in southern Iran  Premium Times Nigeria
+
+### Olayinka Quadri Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiX0FVX3lxTE9aNDZjcjlPcjNjbDdKUDRZa09QRXFEdHdiSnJVcDJFaV93UGxWSEVJd1BwQVRRb1padUllQkwyRUFJTHpJbVFmMDloS3hvOURERmY0TzQ4OFFKd0lra3hN?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Olayinka Quadri Archives  Premium Times Nigeria
+
+### Nigerian Publishers Association (NPA) Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiekFVX3lxTE5iYnlqYU45djloVmdMSjFORHpMN1RpNWRhaGxZWmRYV0hKTXowV1luVXFleTQ3eGxUN0hENWRwSXFnb2RKcGVGOXQtT0FSSElfVVY2X182c1lqNDN3M3cydVhkdHhfSEt5R243Q1duNndWRHIxNGNkYjVn?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Nigerian Publishers Association (NPA) Archives  Premium Times Nigeria
+
+### JohnPaul Ochi Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1uUV82SlFFNDBCQllLMDBiZDQ0SF9ZU05aNk1vUXZNQUlBa3pzY1UydHJkSzMyMEdpYkpWUmlFd3B0cHI1aF9rMVphLU1sTlNkdmt4Vkt2ZTMxNThy?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** JohnPaul Ochi Archives  Premium Times Nigeria
+
+### Area of Ebonyi Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qRFVxQUdCb05SZkdwY2VHSUhfRkcxYi1yeWZmbDlYQ2NXb3VrSllwN1Z0NGFaV2Z0TDVpRG14VnF4LWFCS3NRc3BSdjlod2JOOVR3MW91dHNaeGxUVWc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Area of Ebonyi Archives  Premium Times Nigeria
+
+### Nigerian State House of Assembly Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMidkFVX3lxTE5SM2d3SWdjRFNtaERmakpSRG1HREhHR3k4MTRQSkx4a2JGR1VsZXNrVXl6Nk1Fb2w4UEtOdjg3YnQxX2ZYcHVaNWFXLVdZRHN6UjBMUnJLQVJRTGhnNDF2eGVsT0NoaWpwWkhKYlc5cVdKT0dNZ0E?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Nigerian State House of Assembly Archives  Premium Times Nigeria
+
+### NBA election Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmQUhvUjhRdVY0TDRPR2NvbmhKX0xncEFKY3ZkRE9hSTczWkUtYjYwR29TLXg1dWstdUZ4UHNfU0hxaXNlSlgtT1B3UHNxRGVUOXQyNG9ZcXRncGM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** NBA election Archives  Premium Times Nigeria
+
+### Argentina's Vice-President Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMibEFVX3lxTE00djB2b3Y1R0Fuc21CUnpBQURYV3ZlRUJPZVFLU0xMcEZxSWVpQXM4bDZmS09ZVXBGLVpaRTk3MWpBb2lQUG5WVGFveFBkbVY0OTd1T0FBbUloS3BYYkpWQ3ZSbDRTMk8wSDdmeg?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Argentina's Vice-President Archives  Premium Times Nigeria
+
+### US House passes bill to cut foreign aid to Nigeria - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxNeDU4QVhqZkhoMFcxNVRWVVlQTXktVGhOUXVFWW05YndVS2pHYmhOcGk4bjY5eUktMTJMQTNhRTZOUVpzdEJMWW9RSnNhQnZsX0pTLXNwRkRRQVhMVDZtMk1FZUtnQ291MndSZ2t2U1NFVnJ5dzlvWmFOTnFqMW1KZnRxeDVlbmd1SkpwX1JnbzdHNmZHam9mZ3VYclNRb2pIamlj?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** US House passes bill to cut foreign aid to Nigeria  Premium Times Nigeria
+
+### SV 07 Elversberg's Francis Onyeka Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMidkFVX3lxTFBEcFFzSE1jRmEtZVZET3otVWItdFNtYmx5enB5c3FHTHpRcWw3SEhFYUxfTlFvY3JkSUJRYjJrdk9BWURTb2VyX3B6Qms2UVZpRnlQbTFNLVlOTmtDWEk1LWRzSTRZZl9WeWVycnB0MXZKU2NSUmc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** SV 07 Elversberg's Francis Onyeka Archives  Premium Times Nigeria
+
+### Swedish Allsvenskan Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tQXByRk55NE9wVnV4eWtZOElSX1FuRm5ya29lZkNCLWNkbWg5NkFROWhkY0lUZ2pGaW0tX20tbW1OWjBXam41Q201dzhJOWVXSDRibjYwR0VTNGNsanVkVHlDNHo?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Swedish Allsvenskan Archives  Premium Times Nigeria
+
+### rebuilding South-east Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hRUN1eXNmazBLUkR2QU9vcWEtUlpOWDBmZjhqT0x3V2F2Q2lybVoxaWJoaXlQV0RoSU0wZ2lBYjJaRUd3bERJNWlCYV84LVBJZjl1Rk1sRmR1dVNoaUd4OFJRd3hSYlU?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** rebuilding South-east Archives  Premium Times Nigeria
+
+### Abducted Kogi principal, NECO official, students rescued - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivAFBVV95cUxNdnNhWWRtT0RsbmZjNjlMcmM0VFFncVZ0MHFWbEYzRTdwSW9SR0lMTmtUZHlLWlNuM3doUTdwM3pYbzZ2V194NnBCUGhtclpRajBhVWxRY1NlWUZSVnZ3a2pYUHR0UDd0SE5NcEVKQVZvU19LUkhvaTBRbVdDYVhkckxscUJydkFqZHVjRkg1WnlZN1RSbkR1bGtrQm5WblNXdDRsRG1pcWkxWVQtYm9kNVpONUhKYndxdy1qeg?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Abducted Kogi principal, NECO official, students rescued  Premium Times Nigeria
+
+### global fuel price Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiYkFVX3lxTE0yUWhoR2h2ck5mbEtoT050NFlVQ0NoelNMQ2c1VHFhT1BPdm55c0pOMldLVHB6ZDN4clJzVVZlN2htbGpCQ0JBeHRncmYtbDhObE96Vy1WcjM4Vm1YZ3ZPdHVn?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** global fuel price Archives  Premium Times Nigeria
+
+### Why we rejected autopsy on Mary Habila despite controversial death — Family - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxNcnlqWHNBOFhQaWdJbkFYMUJaX21uV2wzZXJ4MFUxNHlKNVdIMHNUX1kxZkdYWUZ4X0cyaUd1R2tWalJ3eUo5SFRtZzYweWZVTU9QclZJSXN1RVJrV1I2NmpaNWF2Qm42MWpoQTZPcVk5eTN0WjRoWjZSSmhYdTZsNjd3cUlXSHVMYkZodUpJZTdOejNhQXFxWnRWcy1OTmhuTVpqVnQ0TlllWjlVdndDMHBmT1VTbEYzV1JuSDNzTkUzZnVFZ05iTV9VTQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 25/100 (Low)
+- **Brief summary:** Why we rejected autopsy on Mary Habila despite controversial death — Family  Premium Times Nigeria
+
+### disaster prevention Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fYWRHVWRpWXR1MU9pMmJZVGs2cXFDdlMySldFWFFBR04zRjVCNHY1RllRY2ZScUVjOU5LNE5wWVk5Wmg2TXZLN0p1WlJDek1kQkJBaG1HT1BhLUtNNm1kVEdmWmI?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** disaster prevention Archives  Premium Times Nigeria
+
+### extreme weather Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wRUdRcGppUDUyM0ozbzc2ZGNaYk5ZZW13TlBxUXRKalFMUVZIaVBUNmRiLXlmY1BnZzdpcmpvME0zc1dDdmtJenFwZy00VDVXb29LbGI4d1lIUFU0ekpv?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** extreme weather Archives  Premium Times Nigeria
+
+### Persons with Significant Control (PSC) Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMie0FVX3lxTE12WXJMZGs3TldCZjJvWVI5cnpzS3psWlUzenR0bVdkVjFNMEZkclBZeGhONUVLcENMMWtUT3BwZzYyTVlFSHNLMUZIUXFXcTRkMmFyOTl6eU93S29wdkFmTFk3NE0wT2pUWnJmRmZCbUxOOFo4LWlkaVNWOA?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 40/100 (Low)
+- **Brief summary:** Persons with Significant Control (PSC) Archives  Premium Times Nigeria
+
+### fOgun State Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZMGhOMENqSnhsS1NWZWNva0VfRG55bEhzcGtrblczR0lMS1FoT1pMc25oSk5JRjBYTTQxR2l1eFBkYkRsTWpHelNvX19LbkM5Ui1Wa1QtQUtrZw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** fOgun State Archives  Premium Times Nigeria
+
+### Reps demand details of CBN, NNPCL’s unremitted operating surplus - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxNbDN2Z0RxOExpb092TWJVRnllU09DaWNpMTBxdFBmQjZncWJoU1duRGhoWUx1a3B5SVk0NmRwOWo2S05XODVLLUd5OFp3RVJzWk53TTJWN1c0VUVIMzc1QzZMNXBIQ3NMWENsT1VaNW0tWTdJQUgxWGRPbEtNLTA2cWVZUHR6b2NNYXhOeWJWZzZuU1lJNHNselREWUZrN0FW0gGmAUFVX3lxTE5jWTJBQUhfSzRfSHJBd1h0eHVpRXE4clExQUdId3FlXzlCOV9SZGI4UHlpXzlTcWxLTV91U25lbjJudGFqSnJwM1BYWHphS3g3T1lnWFZ6TXRObnM3Ujd1OWoyeE5jSUhiS29HUkI5MWRYUTdRZ0wzdWVTTzB6TTRkNm9RcVFUOFZGa2FDVU90MG5wVzVIMEoxeHR5eDlSY0stVnZYT0E?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Reps demand details of CBN, NNPCL’s unremitted operating surplus  Vanguard News
+
+### Oil firms, NCF target coastal erosion, biodiversity loss in Bayelsa with 500,000 trees - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirgFBVV95cUxPcTNUS0QwcXRGbl9wcGtfNXpfbFlqb0pTbUR1clVQb3NOakVhcnFmeTgyLWx0Z2JwbTEtOHRGalpveU5PbTNWbnBXT1NGQkhTckVZRmhtSFhkUjRxbnkwbkI3YlJPbEpmbnhZZXRJd3ViU1NlYmszTW9KSm9pS1dBYXg1dDJLcTZFQ1EtRXVEN21MakVoN29yaFFqZUJWUHNsZ2pFWnZoY3V6SE1USEE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Oil firms, NCF target coastal erosion, biodiversity loss in Bayelsa with 500,000 trees  The Guardian Nigeria News
+
+### 81 new metrics deployed to track digital economy performance - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxPbERYZmVUZDVYSExoV2VMbl8xR2tqTktMajV6SlJvdUx6YnJGQ0h3cmhRU2xmU0ZaQTRNLXFVb1BBOXlxUndwNFRjblJqOWZzYUtHSnM3WDRraUhuWm5nVWtqb3c0bWZQc092ZFhOTDZCaUtVOWdKSTZWSUZ2cXVkQzN2SHpuT1lEX0xmcXZBRnhpMVh3dUo2UXZLZ3plaFFN?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** 81 new metrics deployed to track digital economy performance  The Guardian Nigeria News
+
+### UNDP urges whole-of-government push to investment grade status for Nigeria - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxOc1Y3WmhFYXozQmo2Rjd5Y2twNGRQTWMwQU9aX0hJbUVHZXAtSVBiX3lpbTNfN29BU19sVHNVdE41aUJPcGRQWmFDMlhSY01IczYyV3o1aTRtTlM3MWcyNDNtYlAzQ1VDU1E3UnVWTHFlWU03RFNuTzNoX3dUOEJpYmVvUWNrYnlPenVrZ05RU1h1Z2ZNTC1ydy16OEtuSzFjc0c0dHZrNkJpWDZtcHVwTUEzQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** UNDP urges whole-of-government push to investment grade status for Nigeria  The Guardian Nigeria News
+
+### Senate gives NNPC external auditors one week to explain ₦210tn unreconciled figures - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMixwFBVV95cUxORi1Ja21XWXc4UjdmRkk1NnZ2R1l5N0hqaTlDNG05SXVFWDExckdHZGV0Nm9GZVk4MEFOMURJNUtBNWp0WlFKUlBWZDB1SzJvUHdlZXdsNlBHcXZ5bG94d0RTdFdma0oyUi1KcHl5dHl5dW4wRk4xU2J6UHV0STBSenZ1bWs5U2xKd2w5Ry1Rekd0S3p0MkdYd0FTV0doLWhNVERxTnhRbVFlQ2dWeUtkcWtZemJHY1RocE1qYTFjSzVKX2dBSmFN0gHMAUFVX3lxTE5zNmRqdnc3NGxQYVREajR0cmdReGZyR3dURFFlSzdDQzNFMkhOV1FrNFcyWGtHUGc4akZyYmdra3FFbXJzeDBfY2xMVUMzM1ExWTF1eno1bzNJSGZRRFVNakVlNzVYYjJtdm5ZcDZoUGxNZ2s2WEMwLXZDbE9FbnRpV3RVX0xsdkJZTW9PZnZIMXByT1IzN1JTRUFFdkh2RXVva0gySHRYTWdpUTgxTTNaQ3paUURsU2tMeDIyRmVPUmRWMEpYaXJrN3l6ZQ?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 43/100 (Low)
+- **Brief summary:** Senate gives NNPC external auditors one week to explain ₦210tn unreconciled figures  Vanguard News
+
+### Economy exits contraction but households remain pessimistic — CBN - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxORFFYeGxHbGw4NWNJUENBak0zN21PT3dwOGR1RTE0enRsOE5QX3V2WFA4QklqTnFhS3oxN3ppWTBIdEYyZTRrcXItVjJJMjQyQ1VFMHlsUFgtVjRmZ3BIUDktdFUxcWZ4eDcwdkdmRWJkdzdOU2Z5Y1p4Z0JqeTdJUDJWUXFkdFlUVHlrSkh4bmlrRXZIYzNTUTRCX0NZTXdoaVHSAacBQVVfeXFMTVBNZXpXZ2d6WnUyVG5yN0c1V3BUeHFhMGRRTVhMVVRUV3B4QThhVWJ4X2JpZU9UcUc5aUJzeWV0cXlRejhzN1RMaDhpZUl6RFNlYmprMkEtTEd1Nm1EeU9CSlRKd1RCODFxTWNXQkU2cE5QWVN1SkVObGl1Y25DZWpaVHBMaEpmT3lMdHFPM1VQdDdHYjU1TGpxMUxIYTZERUlkWHhHVnc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Economy exits contraction but households remain pessimistic — CBN  Vanguard News
+
+### No N210trn missing from NNPC accounts, ex-NAPIMS GM tells senate committee - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxNSG84MjBFTU5DMHB3ZjVMdFN3SzJTWmJ5SF83Smg3dXROZW5UbVI5dDR0U2lkaW94Z1Z2SzBUem1XeHViTXRGYXV0RUphWEVoeVpHWHp4d3VQXzYtU3FLQ3NlOUk4dnEzT2VqbmNOQmlOTmNqc0xDQVdvUDJnNE54WEJETGhHV3VkZkx0WW9zMlNKMHo3UTJKbl9zU3psVF82ZDVtQjV6NFFJcjZXMHk40gG0AUFVX3lxTE03QzB1RlF6Q0gxdXhLSkFOQmlDVTZQVU9DaUhCRWVYOTFxSlR6RXlielZOWHRPanB6TDBCay1yMUNMVTVPOUxEcE5IX2hLcUl2T0c1QThTZ2lpdmRrSFhJVGEwLU9JVXhnc2dieTdydkxkZzE1U21PNmpHNEJoVmdtcjNxTmRBMVNaam9wM21wX3hvbzVZcEdZNE9FMTFmSHhNQ3FuSHQ3MmJJZk5ucVYxWlBvbw?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 43/100 (Low)
+- **Brief summary:** No N210trn missing from NNPC accounts, ex-NAPIMS GM tells senate committee  Vanguard News
+
+### CBN directs BDCs to sell unutilized FX to NFEM - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRmxnV3NmM3lDaF8yeWo2OGswZVR3LUNZRElkUG90Rzhwd2xWQ0J3Tm1yTmp2STE1R3RjZ2NhT0FzUGF5RnhESGpKNFZ6NGRmVm9tNGpDdW9tUmlLWXcwTDdWUDQyODFTdjZobXl1a1hkY3J3SlQ1LVBpZGtVM2xCWVpPNVp5VEs1a01F0gGQAUFVX3lxTE1wQ3BLcWJncTdGNVNrbXgyQmJXN3A1Z196TG5PYVBhNnpRNUJVbXdVZHRkM3JPaWVPdmprVGV1d2RzYi1Jal9FeE4xandoeHNFUkxaRXVLRm16OVYyQWhaZVI5Nm41Y1gySEpLNUhNdHpES05Xc2d0YjkyX19UTVN5bmZCR3l5SG9vQVdRRnBMVQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** CBN directs BDCs to sell unutilized FX to NFEM  Vanguard News
+
+### CBN cautioned against premature easing amid fresh energy pressure - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxOZDBzbjBFazJBa0NabjB3bE9lS29EbGYxMHdyV2VhVVMyRGJUcTNGQUIxSWUxQngxMTZjcmVnNm85VlRKeWQ3c1hrU05XSmlSVzkzN0EwNXNxOHgxSTZnSG92TEtVRmZLSTBYdWR3OGsyaXRNbVpUaGZXeXJsNTJiX0x1X1hVN0VJWEZsbm5oSXdLTGtPdV92Zy1fMkNhM24wZGROdUM2dw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** CBN cautioned against premature easing amid fresh energy pressure  The Guardian Nigeria News
+
+### CBN mandates BDCs to sell unutilised FX to NFEM within 24hrs - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxPSlF5emN5WmdrS0xnOXBocjlUUEpvMnVyeHgyMUU2RHFtMk1tWXI3a1ZhWkxQX25DS2U4ZjRYUW02S240aDUtV2dYanZsUFkxYU84U1hzQXE1NDMtN01kLS1Sa3BSWnBYMk5YN3M2eXkwQVZtMU5pbnFaR3NRU1VJOV8tdTRWMnphd1o0Vl9hRkhKZU1GOW90WjBBb2dPUdIBowFBVV95cUxOYVFnYTVlQms5RlFxWGp5VUFoNjdCX0Q2cnp4TlVBQmY2T21hajUwcGdGajFVUE1DQTcwQVBkQ1RvLTlyNTJSZXFXNGdIMU9lSTUzbHI1aGdDUFhTbEVGMFJDYjRieHpudlFheUo5N2NyMi1Vcnk5SHFGZ0FBdjBIdHA4bXN2dVF0RDZqT0lOU21tb1RVcnJ5X2tPc0txUWh2MGlJ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 33/100 (Low)
+- **Brief summary:** CBN mandates BDCs to sell unutilised FX to NFEM within 24hrs  Vanguard News
+
+### MPC: Experts split on CBN’s interest rate move - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxPV1ZTblNpLXZCOW4xT2VaYTczZmM2UDlFaVRoVjBxYlN1eFNyemxnRXViZEg0XzQzbjZXYURzOHA1S1l5ZlhqTEdWbmZhSlF4REdpX0lYNWJ5dkRZV2NhMVVOaE1Fb2N5VkQtSEFzWWc1Q1c1b2JEM3BRaW9yX3dEN1gxU1Y1ZFlXTi1zbExkLW1MMDNUMzJrWE9JSHBMRkNjZlY5d0UySkF5ako5VHlz?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** MPC: Experts split on CBN’s interest rate move  Premium Times Nigeria
+
+### On the defamatory attack on CBN Deputy Governor, by Omolola Johnson | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxPZS1nODhkcXZHbDhDNnpqNXI5NFRDZkpMSVBuc29VMUFldW1Ldk5qVWdldzYxOVU3cUIwejF6REpRLVAtMzJxdHJOUWEzc1BzV2didGJhVmQ5M2pualhneFlMdUs4Z3VpekxiR0MzcnFib1UyMVlOYk1rb09sMGY3WGFOWldBQU9IZlMtYTN1TVZUVjZuTGdlNWtxMTRzZw?oc=5)
+- **Classification:** Government (Policy)
+- **Risk Score:** 52/100 (Low)
+- **Brief summary:** On the defamatory attack on CBN Deputy Governor, by Omolola Johnson |  theeagleonline.com.ng
+
+### Let accountability prevail in probe of NNPCL’s N210tr shortfall - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxOb3dUOGZjMFAySkYyekd3Q0ZYclBDejJJcVIydFltbGdYQ2ctbnMzYVlCMWE5VGdBcHlESXJBTnUwcVItSGVuQlFhcU4wamtUakVHTWJ6aXdYS2hIbmZJd0tXV194QjUwWW9ZdjFzMTJldXZ4REFZNm5EcWxFY2Y2bkttdlczZjRzX1NyN2pDb3lQN2J5VXhicFBCZFZrbWZCeEVB?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Let accountability prevail in probe of NNPCL’s N210tr shortfall  The Guardian Nigeria News
+
+### World Cup 2026 winners to receive historic first championship rings - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxNb292cUhoR3hhLVlqSFZuQTYwTWpDbHUtQ1N4R1B2TEYtdzl2LTNJV09LLV9NWWgyS0dIR3BNMFpsOF8yQnlNRmFYYXlMbzNvTWdFWm9ETmVsY2JJV0dKQlJuQXVZWThELTBKalFfMUJPZGtwZ1JoRFJRV1Z2SFJrVWdDU25LSHBzek1EeGJYaVVKQmNSd2hleWNQdmNMQVlNRTZwRWRsa9IBrAFBVV95cUxPMDJseGlXUHdGVlliMm9razB5bWUwdlpVcHczVHJncEtwV2VLQU5kY0tjTThqcmM0a2diU1NsUzhqRjBnWmdBdFpwbGxjaDl1X2I0STVJbjNCME9jRTFNLVRZUjY3cnA1Q25DSmlYM1lqNFNsQ3JROUMxSVVkeVdEVEh2VVBjYW81eUYyTEtoSC1OZTROR2NEZlhpcE9kRkdpMGhuWURqcUwtZmFM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** World Cup 2026 winners to receive historic first championship rings  Vanguard News
+
+### Nigeria reducing oil dependence, says Shettima, unveils $500m N/Delta agric fund - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxOWGVudXc0NGJud2Q2M3paenltTndaRHZyNXN3cFlQVTlfU0xzWF9XN2ZWZXhPdVdpWkFudTR3ZFZVRHdWUjRzc1pvZVI5YVRZcmpyalFSVFM3aWJBd3YxMEZJVUNEMTc4NnUzTDJvVUszRzk3aEg5NTRzbEJZeHJ2LTFWSlpsSzVTZkJMQ2g5LUwtQnV0VVl5a3cyekszOTFKSkZkVmt3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Nigeria reducing oil dependence, says Shettima, unveils $500m N/Delta agric fund  The Guardian Nigeria News
+
+### Business confidence weakens as rising costs weigh on firms’ operations - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxPV2YzNnZBalFxd2MwMEZnbkhELUxMVktEQjhadzZmaVVxQndmZmFhR0I4SUVNYklWUzc3MlZnOGpMaWJOSGhUSjdkT05uTlU2STlfMDFfRFVnbWI1YWtvZWJMeUlPMFdQS0lVV2hyajZNSEswMlp4M3NZU2FLTERNS3A0OXFJMVU5SU5Gb0kwcjRlQWhTTFJ6Q0prZFdPUDZldFdSSjhvQTA2N0NE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Business confidence weakens as rising costs weigh on firms’ operations  The Guardian Nigeria News
+
+### NBA Polls: Badejo-Okusanya woos lawyers, pledges inclusive, members-first Bar - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxOM2pid3NSSWZsSVlMOWNZdzg1SGt1bzJGZFhMWndUdjhQVWoxV29YbjJuUzJUcmRtUFRRZmZaT1F0UWVXRXY2NS15RW91WHpyNC00c2NibUhJVXBqelZwRWJVZDR4VXhkVE9rOHd6aWsxb1lMcl95T2JBdWVpZXktUUV4b0oyZG5TcGJNWV8yUFZUNTJsd01Md1ozWUgzWXhrbnF4d2hQY1BIUF9Ja0RkcdIBtgFBVV95cUxNSHVOTjJtWE42U3VfdEQ3V2RTR0lQVjEzTVlqWEFtZUJrRUFKZEFGR19wd055UWtKeVJNMjE1cDJaRk1KY1VHRWNJdnFZRnhJUHoyTWFyREg3X253bmVfNUdYU0FQMlExMjVQdlpSaFRzcktmYmJFSVpBWTBKMFo0N2VHUnJUWXZEaVRxTi1ZSTJ5MHlXNWFfbDNkTXBHRUp0eU1HQ0FQMUJnMkk3eHBBRFpfTVpYZw?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** NBA Polls: Badejo-Okusanya woos lawyers, pledges inclusive, members-first Bar  Vanguard News
+
+### State police funding must be first-line charge, Bamidele says - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxQNjRFdmZ0b2JuZGZuazdyRjZoQ0xDa0lCdUlLcEdDNmhYb1FRblVDVmZoWUxUX0Vrcm96TmR3bDNfYjdhRVJGTV9WNV9pbFh0OW9GQmtWRXNJeFNNMi1ya1A4MF9TcTVETHplenAwWlUtVXc2MGJWZVZwcWpUdm43Mm4xUU1GOXVld3Rvd2FFYjdOaFF0dWlLOWg0MEVBZ9IBowFBVV95cUxQRDFGZ09BczZzcWNZRnREV3hXakg3ZkVKek00eDNIN3RCOXhlVFlkN0JybzJoU1UwS1dVWk1jZU5zSnRVSlBPNFZ3MndNYkl2RUx2RnhfbzlKb0lvWjdncDl0MVpmSWpaYzNWY0JwQzlqYWtZOVI0Zk9NM0N6V0hlU0RHVjRvcDRhNjdDT2dndzJOMjRpbHA0dkotZVdKMy1CZDd3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** State police funding must be first-line charge, Bamidele says  Vanguard News
+
+### Fire outbreak kills at least 28 in Bangkok bar, injures 25 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxPR1U4S1Z1TkoxMUNSWmNSVkNVc2pSNUZRYVRmUkpXMkNzQUgxZEVRaU5ycE82RnRGMzNyNW9BN05mTkl0cFQ3UHhmSzR3UFlFSlFsSm1CWGhiaWpFNkIxaVBMQ2l0TEJJVEp6UnF0S3g3ME9oZVRTZDh2YUxOdWVvRWlGaFpLcHRYa1g5aXAxOTRPYmc?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Fire outbreak kills at least 28 in Bangkok bar, injures 25  The Guardian Nigeria News
+
+### World Cup: Spain beat France to reach first final in 16 years - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaWVKcnQyTjVENVNxVnpDSDdRMVA5SEI2UHlvOUFpZHlEUmZhOXZkTm0waVROMEZlTVA0b3lySVotVlBnX1QzNUJaVDlzSHJCWUV3X0hCcDBQTTlBdVFzblZ2Vkk1NzFzd1oyc0dnX29ZNzMtTzFBWGRHekZSTzUtemY2bnV3bEVrQ2k2UXY1WUJVRF9FNEFXZEhUdlRMWm5hbm5IaG4zZmRfcnZwZ0RKai1RRjZoZDJp?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** World Cup: Spain beat France to reach first final in 16 years  Premium Times Nigeria
+
+### Negative sentiments resume as capitalisation dips by N1.32tr - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxQWWtuRVJfeE41MVN5NTBicExlMFdGNmx4MzdsdTI4QWFLVlJZRWZfUjVDWHJLbVR6NkFQM0dTWmpfd0EzQUJvNUtWMHB4ZjlISVpZYklHQ3l4a0NGeXRqSkRTRXVfbjROSGhuZGo0RWhXSUpoYnJKRFNLNlFsVm4xTlcxWUIzUGtIT0xmYjBhNW9UUlUtRVBEdnhMNWJmRnBF?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Negative sentiments resume as capitalisation dips by N1.32tr  The Guardian Nigeria News
+
+### First Lady to World Bank: Investing in early childhood development critical to sharpening children’s focus - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMi2AFBVV95cUxQZFNXNlhFTWR6Wkk3ZUxCTlYtN2l1ZktRTXp1SkZVdGdWcF9KdlFRYWpOaTlNdHA0WldQVzlLQWZBVkZ4Y2hPQ0FtNWVycXQyby14Rmg5U3dVRzVzX2lmdGhhQmV1MXZjMHVlM0dvdzFkdnA3d1RJajBhOE5udlpGY0M1SExpeU5yTnR0UlBBby1idEVQMDYwaTltUUphSTI3RGRNTk9JclRfWm9EbVdqNUFORm5rcHd6ZWlHVU1VWEpPLXFSZEZiRkhqbjlPWFRCcjBoOGItNkPSAd4BQVVfeXFMT3A1MXpfZE9jYVlodTBpQm52NUdISVZxcjBOanRGVXBLNGxMOTRJSWRsWUV4b1JZSFpxRENPd2tYVkNCUjNiYnB1QVJ0Q0F2RkQxbEpNUloyTUtZZzRxMkNUSjNrQ1FtMGZfdFdxU2cxWHR6anQ0WTEwSmI2amxXS0NzYW0tUjI0Q3BoRDZwWm1SXzgzekdONW5PSkt1aXlWa0J0cFZOeHdiUDJiSzZ4Tk5zaDU2eTM3Y2RxWHVFSzNRSUVCeTI5a3lQLXVjbDFhQWtDMjV1SGJEdG13Z0NR?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** First Lady to World Bank: Investing in early childhood development critical to sharpening children’s focus  Vanguard News
+
+### Sultan declares July 16 as first day of Safar 1448AH after moon sighting review - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxQT2REbGg2bi1MQVR3X0RfM3lpcGtQV1pxSnoyUHE5WmQ5andsR2JBWTR2ZnkxVk9CU0pFRlVpSF9BbEdpZkdQdmNsQ3U3cDRiT29OTWd5UG9qNnhKMXE2dXptRGxQakpVSW13QWV2X2UwVHlMUXZ2aGV3OE8tUlpmUFJCWUx5cUwyeWN4ME1NeUUxVXNxWXkwZnZfQ3RzSnF5VDl5Umlzdmo4MDVmdDFrMkg3bmczZXPSAbwBQVVfeXFMT0d1YUQ4ZE5SdW5yUHZCRjVCTkQwcGIxQVpURkYwenhsS2JYUVJXbzh6azNBQmNDZ3Bra3o1YmpXdDNjQ2tHZUJ1WlFKQWxkWERvbUY4MzFXOXM3amwxaHJoTUJQRzU0SEtteEt3TlplOWZ2VG91ZUtsVkFVVDFqeGtnWFp1MWVhYkJMZHRSb3pUSTV4RmowMHljX0FkOXV5R3F6M2Z1X0U3TDhBTExUN1RITEZCZ0tVbzJ0dTE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 25/100 (Low)
+- **Brief summary:** Sultan declares July 16 as first day of Safar 1448AH after moon sighting review  Vanguard News
+
+### Messi faces his ‘heir’ Yamal in incredible first meeting - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeVFfcFRCUGJOLXJWTTZYN19XYldHNkxZR2R0QUxHUWh3dmRGZWpwQWhsNDFEaHVBOUF1WGNZdkJFZGd0cVZyWmxRdTlET1VuenROQTJSU1dyZ3JNRDBLTmFhaVhJbmZUdEx1MXZOMlQ5dlNsQ2hVMUQzWURWUDV3WU9qQ2RDc3lK?oc=5)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 29/100 (Low)
+- **Brief summary:** Messi faces his ‘heir’ Yamal in incredible first meeting  The Guardian Nigeria News
+
+### NEMA receives seventh batch of 305 Nigerians from South Africa - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxPQkZ6QWM2eHNMMEhXSkUxS2syTTdsc0pyZmRxVl83emhzUTU4dlotWkZJNWFYQm15UGNqYU1pTmgwMjdWWEtsMDlTV2lOV1l3LVZfbzRUYmFLY2Z2SlZPSXhNS3RrbDJGNDR3TTRJcFdMOWltRzhaTGFuSVptR0J1ZmJFV3FiMXFNd2RZRm1IYUhnUQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** NEMA receives seventh batch of 305 Nigerians from South Africa  The Guardian Nigeria News
+
+### France v Spain: Why first semi-final may be decided by control, not flair - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxNNHJDLVc2ZVM3VktSSXFCRmxsRTdjczBCQXd5S1NWeXhoQTc0bFNmMFFFN2xXaFZ5ZzItd1RiTW5ReENuRUJKcWdxZlpXUU5IemFJZ0xBYnNpRHFIZExiWEVaZkF0dGhPYVdOV0F3QWhJTXpDNzUyVGYxRkI3ZWtsaFUyYWlydUkyWFU4bmNFZndvbWZvSUoyemxRRm9ZbWM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** France v Spain: Why first semi-final may be decided by control, not flair  The Guardian Nigeria News
+
+### Bamidele: State Police funding must be first-line charge | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMijwFBVV95cUxOSW9QN0txTExXVEY5czc2RWl4aWxRdFhmSl96X2pIZG9vekM3Y01sVWlOMzZ3THVYaG1RS2ZIS3VPT1FQX1BwNTdGeTRBWlhvbkdHdUlBTUJwYWp2VHlsUkI4UFFBRzViWFBRY0hsalppVEh4eEhDclY3a2xkTEIxcS10UUNXRjZkR0ZUTzhhOA?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 24/100 (Low)
+- **Brief summary:** Bamidele: State Police funding must be first-line charge |  theeagleonline.com.ng
+
+### Professor Christian Harrison makes history as First Black Chair of British Academy of Management - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMizgFBVV95cUxPVmZiX0VvendfQlI3eTJwYlhLMDlYT3BRelR4c2NCaWZNOUMtWWpSUzNDbWpHMnNhS0ZQeEtDaDd4dnhCX2UzcHlYdmF6eTFzcUMxS1hUa2FZSzlMVVNremNhU0RTcGs1aEpKbzFNNkxiSTg1TFRUX2hBUTVEQ2xuTDE2YTJmbjVIOEVkMlVqQkpwNzF4U0xVOU9FZU80UzUwc05qb252a191aXJreUo3bldHWUhDN291SXVFVHRyV0JUdnFrdnVjbUJhd01KUdIB0wFBVV95cUxNbkUyZTJQc1B3N2NOalY0OHNDbENiRmR2S1BRNjg5S3FSYnJzWnF5QXpnNkFBaFI5aE5aczFvQ1Y5d1pReTJ6U1RwMlR0X3RaNnh4SE5LZUZqMDVUcl8wc0FBa2pkN0owSng5aFJqOHRsM3pQWkp2dlVZSS01UmRMRm1fWVYxVXgwNWhOVFJidlpydWx2VFY4OUlGRzlwWnNaMWJPUE9iOXJPZW5CVVJXalQ5Ui1sRkxucWNEak9yRDJjcVMtRENnZW4xN3d1a0VMMUpV?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 30/100 (Low)
+- **Brief summary:** Professor Christian Harrison makes history as First Black Chair of British Academy of Management  Vanguard News
+
+### FG evacuates another batch from South Africa, brings count to 1,490 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilgFBVV95cUxNM19YREZCaVhBenZTaFI5N19xeUpuMGl4RVVKMkxXb2NhaWcyX2ZCQjF4TUJYLThJdWhISHY5U3VSNEo2a0xrTXQ5QU9LMUJMSEwydFBiR2JaUEs4N1BfVWQ4N1o3ZTlTczlHaVE1Y3lWOXRFOFp4MWd3SWdCLVRIUlZzRkhDa3ppd3p6bzNLRkRjSFRkQlE?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** FG evacuates another batch from South Africa, brings count to 1,490  The Guardian Nigeria News
+
+### Xenophobia: FG evacuates 1,490 Nigerians from South Africa in five phases - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxOdWRqS1duaHdFN0JZVGV1MVFVblZMMmFveWszU0llWE1USjV2ZkxIeXJveXUxRlZZUjJuX21aaVRLMlBNbm0zMFhNajlvc3FyV2l2dUVnN3RtNUJkbE9OeWR3c292dHdiNlJnS3Y5YkI3SFFGSVBlR25rOHZLQkh4OXVEbjNpTnJQbDQxR21lNWVhb1hHbnhBMEtsSTdOZw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Xenophobia: FG evacuates 1,490 Nigerians from South Africa in five phases  The Guardian Nigeria News
+
+### Direct shipments from Northern Europe to arrive Lekki in 15 days - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxPRmFTVERPLVJONXJDWXJGQVAzUWlKU0dwM1dKaDVLcVBGdnhNR29CcDNXekxxWXUyU3N4d1BPT0I2MkNaVlBoQzN0WkNHc3hIdUVncUx5SUh6Y1BlMVZURTdaY3A1Z3V0ZjBMN0pHc19LSTQwRkJHcFFzbFBQX1RiM0pKaEIybXBCbTA2ald2QTRBd2RhMFp4WkhfZ0laQ2R2U2sxLS1R?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Direct shipments from Northern Europe to arrive Lekki in 15 days  The Guardian Nigeria News
+
+### Mathesis raises funding to improve lending for unscored Nigerians - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMipAFBVV95cUxQVjRWSDV0TnVkdkRCYTU2YTdiY1BBbjJCN0dMaS1QLW84dS1jTU9EZTJaeHF5dWFfeURJaENFOE5aS1FRR21uNTZ2X3VQR3V5NWxubUVMNUs2T1NUV2pGamc2bXhNeXlMV2JrTnZrVnFqV294UGxUSS16akFaTTNKM1NRd1ltWDVMbU9LOTFTUE4tTTZLcXd2aXhaNjEzZ0pkcVZFUdIBqgFBVV95cUxOU2gzWTd2akxCMlZEX3hYdnNOWkU1blJqZ0JsRXpJcGZHMk9iWG5ZU1BwUnRHeHFFVVFHbVVDR185Tl9jeGwycURPa2hoa2JzRFBYVzRuQlRuZjR3VlBxekhzOUU5QmxCMGg5VXY3QkJzRDd3N2p0b3gyRElFUWFJT3lYYm9NcjlSTDNLWmRfdnh3ZUFvaTVienVKRWRLU3IyREQ1NElERlVoQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 24/100 (Low)
+- **Brief summary:** Mathesis raises funding to improve lending for unscored Nigerians  Vanguard News
+
+### Argentina stun England to reach World Cup final - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRGhfOHNKamdiMHRfN3Q1eUU5QTItRGRGU0ZaTl9sd2pxUlF2cm96TmZMTllYcEM4MmliUDZXcW5oQTdlVklVZmd6TGQ1bnV0WVhnV3ZyZ3NraTRUWlRfajFfRE1PdzB4QXI1ZlZMTnZodXdSTUNDdFQ5UWptSVM0ZW51ZWhrTFczaVRr?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Argentina stun England to reach World Cup final  The Guardian Nigeria News
+
+### Akon speaks on signing Wizkid as his first Nigerian artist + Video | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxNVlhrc0xYZGJ1MG1QN1ZIYm9YNHlaR2pVZTJZN3lKVFVvQkw0bmgtZUs2a3ZaSXNtUmoxdTg0YUU3Vk9PM0l1QWhFMjQ0NjRxMm5hVHJtODhuVGJfMzBhRlZaSlp3RDJvZFQ4eEpFekJ1ODJvUkJYRFpFclUweDdfTTFZWmZ3eGxNanVhZWZXOXNHaGlVR0JkR2lEVQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Akon speaks on signing Wizkid as his first Nigerian artist + Video |  theeagleonline.com.ng
+
+### Court convicts two of impersonating EFCC officers, sets date for sentencing - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxQa3hMcUNyWFhMSHo0dE5UU214enNGVzktdTBsX1dDNWF4WEVvdHREX21nWlFBLTNlOFd6T2FJWmxvNm5uTzJWcjRLVjhSVnFlNDd1bjVrSzRhaUZFVmgxTG8wcW1XSjlCdzE1dDBGejM4NW9FVGlHS2I0cFpJYXBUbzE2UlVWRHljOUFEcU9UZlVDQnFDMVR4alY1SkRwblU3aDY5R2VBRjU0WjJkRTVTQVl3ajZFdVJtRU9ybTJObXRZY09WV1hjUFZ0TQ?oc=5)
+- **Classification:** Legal (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** Court convicts two of impersonating EFCC officers, sets date for sentencing  Premium Times Nigeria
+
+### What should healing look like for the survivors of kidnapping in Oyo state? - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxNdEE0RVI1cGJJTGhlQU12QkktNE9tcGdVc3JsVnp6UDU2d3ZNU29DS2VTWWRGd1BhVjQxR0dPNVpWanlwSHp2UHZDTE8tR2JKMkNhYm9qcEg5eHVGb2V6bllXR1ozSWRfV3g5YTBrY1UzOG1EUWRHdExqZHF5YjV2aGJjZWV0cEwxQkJnRzlnSWlPWm5YSHNPbEpQMzRuOHJ4T3M3dVFn?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** What should healing look like for the survivors of kidnapping in Oyo state? The Guardian Nigeria News
+
+### Dangote refinery’s dollar pricing: What it means for fuel prices, naira - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxOMTloTnhiVTZFRTdQYmpVN1ZvcjcxRmxDOHRZLXNfWFFjR0t0cEU0YWRUZ19WNFpmRHlTYkx3bXp5V1drYTctTHMxWGlpMTRVSmZPT0d3NXdKWGxxMTlfZ0cydUJabWJfNFY2bllxcUV5VkdweEFyd3pwNXNMSkhaZ3h1VGFoUzVnaUtrcWpnVFRmbm1FazhVaTNn?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Dangote refinery’s dollar pricing: What it means for fuel prices, naira  The Guardian Nigeria News
+
+### Abiodun Hails Wife’s Compassion, Selfless Service as She Clocks 60 - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMinwFBVV95cUxPRV9qTnJ3cVdOMUQ1OThXczZnUUJ1cmZOaHFXWHFNTTh1RF8xaGRYSjdZRlBGNDdIenBXX2h2V1NBa0JZaGNUbS1MNDA3cnRaQkFZV3BpRDR1OGFKWHhRV0wxYlRGZkZWcUQyU2FMN2RxQkd3VkU3WnhhczJKZ0pCNXhPV3lEaU5ySk1ndWxkMFl5T19hM3U2SExNNlhZanM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Abiodun Hails Wife’s Compassion, Selfless Service as She Clocks 60  The Guardian Nigeria News
+
+### Tinubu Launches Multi-Billion-Dollar Abuja City Walk, Woos Investors - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMUdDazZWTnVRb2YzTXJjV0kxYlU5dS1CSERlRkthV2N3a1BhODFfTmVxbUZNX0JWSmotNDNlcHFIOW1XMFFVVDJmZXBjNll6ZG5GSDRMRmNUWW9LLTdxQnRtRW1qOWhLZUdhSFVkN2V3Nk1UYWlCZHB4Q0plREZvVXhRdnJKMGFmcjhIVjVnRzg2d3FRUEM3OENUd3pnZ1dZTXk3N21XNVY5dw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** Tinubu Launches Multi-Billion-Dollar Abuja City Walk, Woos Investors  The Guardian Nigeria News
+
+### Flood: Lagos community laments abandoned drainage, seeks repair - Punch Newspapers
+- **Source:** Punch Newspapers | [Original Link](https://news.google.com/rss/articles/CBMimAFBVV95cUxNQUxpWHJRQ0tSUm5ocWNoQUwxZnRoVFNIT1BmY2FJWFVoMzlLWWZva3g3bzZrSWlPd0J2S19IVmpMdFo0ekRMTVliTElnX2J6WG9BLXNHM21yR1lQeXJPR05ZMkRMZnNBclV3WkVEODJBdmx0cFF0SlhXcFZtcDJXWUVzLXJFSldHdVpOT2Q0b25idV9UWFdncw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 24/100 (Low)
+- **Brief summary:** Flood: Lagos community laments abandoned drainage, seeks repair  Punch Newspapers
+
+### US House backs amendment to withhold aid to Nigeria over ‘Christian persecution’ - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMitgFBVV95cUxORDNHdVBINVhMVFZ3cDZBSElVWnRPbVVyZERTRjVDUzZwU3Jma2hwVy00T2VURF8zdUZZR2VFOGRpMExVaGh3eWFPVTNnbVFPYkdhZDJUeXp5dVRROWlkM0pkdXEySi1EMngwRkhhOERTRjNOY3NEbWJkNTVRalEwWFlRaUxUU3pVX0lTRWVwcGpBZFZJTW1CbmhOc1pHMkhieVJMRjhzWFRZWF81TERyNnhBR0sxd9IBuwFBVV95cUxPQjJNSjJsODBuNjhWY2puaWNoNHRyMVlUZndQSTZYSlExMDgwOXdYemVsdTNZOW9lWFhtT2JIelVQMXViMndRUm14V3ZaT1Z4WWxjVU8ydmZZazZsT21LdHJZQWZfb1ZlbVpYcmhSczMwUjNHaWJkZU5rOXJGdGg5LTZIWlo1VlFVRHJQSlg1Ync4UWxGQ25RaHVvUzVXS1hCNE8wWTFiWVpiSm1BdG5jZmFuRkw4ZGlnT2E4?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** US House backs amendment to withhold aid to Nigeria over ‘Christian persecution’  Vanguard News
+
+### 12 players train in Casablanca as Falcons intensify preparations for 2026 AWCON - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMlFxeVZFTGV5Q0xWc3o3WHNHdlEyVjBHc1dlTC1HM2xNR0FjZ3h0ckR6NGl1RHVvNHgtT0txWk5HdUw5MlFnVFJ3a1BDekVfUjB5OTdLU25KU1dMSnJJU0NKcy1pWTNWVDllWV90RXgxcmMxTGM3THFTalRVVmNPcTRvaGFXRUY5TnBERXVCVldaOU9zdXpsYmdBdEY0bmJTVnE4Q1lPYVVOZw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** 12 players train in Casablanca as Falcons intensify preparations for 2026 AWCON  The Guardian Nigeria News
+
+### Safar 1448AH: Sultan declares Thursday as first day after moon sighting review | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxPTk1SY2FNWkFHUFhCSmlna2ZXZ2QzcUk5aDY1NWJnVW5vV250QVRIbThUSVBlbW5YNkh3MW9vZjZacjZnM0psN0tsN2dsQ3lLR0lCMnpkcVBkcUxFMjlHcTh6eVJFMUltLWFGX1pocTdKWl9kTGlOazUtQmRaeHZwanFTLTNfWHRiV3dpQzFIek5Nc2dhS2c4M0RKOEZMeEhmVko1aU5fWUNlYTdN?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 25/100 (Low)
+- **Brief summary:** Safar 1448AH: Sultan declares Thursday as first day after moon sighting review |  theeagleonline.com.ng
+
+### Executing ideas: When organisations forget what matters most - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxNMlZTLXJLLVFGeFhwX09VTUR2bTRMaGZuQlhFMzFjQ2J2QndTVW83Uk1RQVlvLWlPYkdBNTZna04zSVN4SHhWYjEtbE5jT1p4bXRZeGx3cUJ5alZReHpDcnAyZU1XZ01KMHloOTdlZmZmSDlMaEpSWU40NE5vZ2dwWWlmS01iOXlFYndBQURzUFY2dG1VWlJYYUVtUjIxX01X?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Executing ideas: When organisations forget what matters most  The Guardian Nigeria News
+
+### 2027: Renewed Hope Ambassadors inaugurate ward coordinators in Lagos Island - Vanguard News
+- **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMisAFBVV95cUxOa3Y0NUNWNExKeHJzZkl6YkJCOFg2R1N0dXNObTRKM19iSTRIdUlONjVzWk9zQmtDbEtWeFU0empXcmdlVm9UZG9Ba0dLQUhmbldwTlRBTEI3b3FQbHFOaGQtbDJWcVdtdml4MVd3YzJ5MjNyVjktNFhrX3hNTXRXMHBiNU9kNWhzMUJZbkdCd3pxOG1xLXJIcVlJLWZWbFlTd2xZc3poY2VFbWFEOFREeNIBtgFBVV95cUxOMWtQczctYklxdXB0ZVRKS0dUazg5ajJoSFRYVS1IVFloOTJCcDk1X3o0YTB3QTRlVVB4YWZHb0hpTlYycXJYLWhMLXFxUUd4VU9VY3J0QjZxMHR6WFN1LTZVM2dYNXFIaUI5WjktRHl0dlhpaU1FMWg0ZWxfNzVNTC02OHlhSkxINEdaY3FkV3NpOXl4SzgyMXgwT0pLcHVjaHQ5RjREbW4wSnQ1Mi12Q1BaWGFQdw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 24/100 (Low)
+- **Brief summary:** 2027: Renewed Hope Ambassadors inaugurate ward coordinators in Lagos Island  Vanguard News
+
+### Headline inflation stagnates at 15.9% as rising energy prices trigger fresh concern - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMirAFBVV95cUxNbHFEbkY1TGhuejhkYmE5bEwzMGdHLXpyYjBYN2pjRU5Pd0diWlVCQ1ZpTF9mWVlCN3hQWnViODBlTGd1ZHNrMVZDSl9wbktjemRLOGp6SDc1OTRNSXJNMlNxRVV2eVdhc19oYnV6VG9RWmpQckgxejJjM2lKQXZlZGpzWXFyZ3VwU3otc0NzMWx0ZjdVOGdxQWdXZS1uT3NRSS1uSkdxYm5HZ1Vw?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** Headline inflation stagnates at 15.9% as rising energy prices trigger fresh concern  The Guardian Nigeria News
+
+### 50 Women embrace resilience, hope at Inner Peace conference - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSm1OTng3dG5EeU1nY0JVbXlQdHpXNHhOb29zU0x3bkQzZVZLQWlWYm5TczQwS3JVOTJPR19wbXJyeFg4YlAtX3hNMU5YSi04MmM0LTk5U0drV1dqUU5PVUV2My1TZjUtQVpkbDhwNzNUdzJoOE85QWFKR0wzZnhWMG1CX3hGNVRteDdwOQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** 50 Women embrace resilience, hope at Inner Peace conference  The Guardian Nigeria News
 
 ### Stock market experts optimistic on H2’26 but warn investors
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/stock-market-experts-optimistic-on-h226-but-warn-investors/)
@@ -2488,12 +1786,6 @@ The Police Service Commission (PSC) has released the names of successful applica
 - **Brief summary:** By Ikechukwu Nnochiri
 ABUJA The Federal High Court in Abuja on Wednesday ordered the final forfeiture of 48 properties linked to the immediate past Attorney-General of the Federation and Minister of… [+7764 chars]
 
-### KU Medical Center Academic Leader Named Provost at Kansas City University
-- **Source:** PRNewswire | [Original Link](https://www.prnewswire.com/news-releases/ku-medical-center-academic-leader-named-provost-at-kansas-city-university-302825988.html)
-- **Classification:** General (Other)
-- **Risk Score:** 37/100 (Low)
-- **Brief summary:** KANSAS CITY, Mo., July 15, 2026 /PRNewswire/ -- Kansas City University (KCU) and the University of Kansas Medical Center announce the appointment of Abiodun E. Akinwuntan, PhD, MBA, MPH, MIH, as prov… [+5124 chars]
-
 ### Why Stanley Nwabali returns to Chippa United after five-month absence – Agent
 - **Source:** The Punch | [Original Link](https://punchng.com/why-stanley-nwabali-returns-to-chippa-united-after-five-month-absence-agent/)
 - **Classification:** General (Other)
@@ -2557,12 +1849,6 @@ Six days after he was remanded in prison custody, a High Court of the Federal Ca
 The biggest threat is no…
 By Julianne Geiger - Jul 14, 2026, 12:30 PM CDTAfrica's biggest refinery has started pricing fuel in U.S. dollars because Nigeria can't… [+2013 chars]
 
-### Buffalo Bills star Larry Ogunjobi asks $15.9M for newly constructed Miami home
-- **Source:** New York Post | [Original Link](https://nypost.com/2026/07/14/real-estate/buffalo-bills-star-larry-ogunjobi-lists-miami-home-for-15-9-million/)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Larry Ogunjobi is used to knocking quarterbacks off their feet on Sundays. Now, the Buffalo Bills defensive tackle is hoping to floor buyers with his Miami compound.
-
 ### Why I signed Wizkid in 2008 — Akon
 - **Source:** The Punch | [Original Link](https://punchng.com/?p=2190408)
 - **Classification:** General (Other)
@@ -2581,12 +1867,6 @@ By Julianne Geiger - Jul 14, 2026, 12:30 PM CDTAfrica's biggest refinery has sta
 - **Risk Score:** 40/100 (Low)
 - **Brief summary:** The Managing Director of the Niger Delta Development Commission, Dr Samuel Ogbuku, says the commission is committed to complying with the provisions of the Public Procurement Act in project delivery.… [+3432 chars]
 
-### Indian solar companies turn to Africa as Gujarat-based Navitas Solar enters EPC market with Zambia project
-- **Source:** BusinessLine | [Original Link](https://www.thehindubusinessline.com/news/indian-solar-companies-turn-to-africa-as-gujarat-based-navitas-solar-enters-epc-market-with-zambia-project/article71220858.ece)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Africa is emerging as the next frontier for Indian renewable energy companies seeking growth beyond the domestic market, with Surat-based Navitas Solar becoming the latest player to move from supplyi… [+4158 chars]
-
 ### Reps demand details of CBN, NNPCL’s unremitted operating surplus
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/reps-demand-details-of-cbn-nnpcls-unremitted-operating-surplus/)
 - **Classification:** General (Other)
@@ -2601,25 +1881,6 @@ The House of Representatives Public Accounts Committee (PAC) has directed the Of
 - **Risk Score:** 24/100 (Medium)
 - **Brief summary:** Adeniyi Adeyemi has said his withdrawal from public view was due to alleged threats to his life, denying suggestions that he was hiding from law enforcement agencies amid controversy over the dispute… [+2293 chars]
 
-### Maeda repeats strong desire to play in Premier League - gossip
-- **Source:** BBC News | [Original Link](https://www.bbc.com/sport/articles/c79y9dgdz8do?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** Daizen Maeda has reiterated his strong desire to play in the Premier League amid speculation about the 28-year-old Japan forward's future with Celtic. (Pivot)
-Nottingham Forest have submitted the fi… [+1007 chars]
-
-### Chermiti claims no plans to leave Rangers - gossip
-- **Source:** BBC News | [Original Link](https://www.bbc.com/sport/football/articles/cd0m1pjdk4vo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D)
-- **Classification:** General (Other)
-- **Risk Score:** 35/100 (Low)
-- **Brief summary:** Youssef Chermiti says he has no intention of leaving Rangers, but Celtic's Daizen Maeda repeats his ambition to play in England's Premier League as Heart of Midlothian are told one of their targets i… [+2738 chars]
-
-### Chermiti claims no plans to leave Rangers - gossip
-- **Source:** BBC News | [Original Link](https://www.bbc.co.uk/sport/football/articles/cd0m1pjdk4vo)
-- **Classification:** General (Other)
-- **Risk Score:** 35/100 (Low)
-- **Brief summary:** Youssef Chermiti says he has no intention of leaving Rangers, but Celtic's Daizen Maeda repeats his ambition to play in England's Premier League as Heart of Midlothian are told one of their targets i… [+1695 chars]
-
 ### Simon backs Chelle to continue as Eagles coach
 - **Source:** The Punch | [Original Link](https://punchng.com/simon-backs-chelle-to-continue-as-eagles-coach/)
 - **Classification:** General (Other)
@@ -2633,12 +1894,6 @@ Nottingham Forest have submitted the fi… [+1007 chars]
 - **Brief summary:** Adeyemi writes open letter to Tinubu
 By Ebunoluwa Sessou
 A police interim investigation report has revealed how operatives uncovered an alleged forgery and impersonation syndicate built around a fi… [+8764 chars]
-
-### Shuffle Board: J.Crew and Tory Burch Establish Brand Roles, While Fashion by Informa Names a VP
-- **Source:** WWD | [Original Link](http://wwd.com/sourcing-journal/industry-news/shuffle-board-jcrew-tory-burch-on-holding-diginex-xy-retail-fashion-by-informa-1239065008/)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** The latest HR moves made by leading textile and apparel companies. J.Crew Group—the parent company of J.Crew and Madewell—has tapped Dyson’s former global president of beauty, Kathleen Van Nest Pier… [+6887 chars]
 
 ### I borrowed N400m to secure PFIPC appointment – ‘Fake’ DG Adeyemi
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/i-borrowed-n400m-to-secure-pfipc-appointment-fake-dg-adeyemi/)
@@ -2746,12 +2001,6 @@ Oil cartels, independent petroleum marketers, tanker owners, drivers, transport
 - **Brief summary:** By STEVEN OKON
 Tantita Security Services Nigeria Ltd (TSSNL)s operations in safeguarding national infrastructure, especially oil pipelines, are strategic for the Niger Delta region and the national… [+12388 chars]
 
-### Tottenham Hotspur Are Hoping To Land This Talented Playmaker: Good Option For De Zerbi?
-- **Source:** The4thofficial.net | [Original Link](https://the4thofficial.net/2026/07/tottenham-hotspur-are-hoping-to-land-this-talented-playmaker/)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 29/100 (Low)
-- **Brief summary:** In a recent report, Record revealed that Tottenham Hotspur are hoping to land Sporting CP attacker Francisco Trincao. It has been mentioned that Spurs are eyeing a move to secure the services of the … [+2001 chars]
-
 ### 3% NIMASA levy should fund trucks, barges for indigenous operators
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/3-nimasa-levy-should-fund-trucks-barges-for-indigenous-operators/)
 - **Classification:** Government (Policy)
@@ -2765,18 +2014,6 @@ The Federal Government has been urged to direct the Nigerian Maritime Administra
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** By Bunmi Sofola
 ONE bitter pill weve all had to swallow is the fact that 419 operators are not only here to stay, their success within Nigeria and abroad has become a nightmare. A few months ago, J… [+6137 chars]
-
-### Secures Long-Term Service Agreement for ANOH Gas Plant
-- **Source:** Biztoc.com | [Original Link](https://biztoc.com/x/96e73b17d177ed4b)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** Baker Hughes Company (NASDAQ:BKR) is one of the best stocks to invest in under $100. On June 23, Baker Hughes announced a significant long-term service agreement with ANOH Gas Processing Company/AGPC… [+148 chars]
-
-### Baker Hughes (BKR) Secures Long-Term Service Agreement for ANOH Gas Plant
-- **Source:** Yahoo Entertainment | [Original Link](https://finance.yahoo.com/energy/articles/baker-hughes-bkr-secures-long-155952946.html)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 33/100 (Low)
-- **Brief summary:** Baker Hughes Company (NASDAQ:BKR) is one of the best stocks to invest in under $100. On June 23, Baker Hughes announced a significant long-term service agreement with ANOH Gas Processing Company/AGPC… [+1746 chars]
 
 ### Court bars non-specialist police lawyers from civil cases
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/court-bars-non-specialist-police-lawyers-from-civil-cases/)
@@ -2897,33 +2134,6 @@ He revealed that he survived on garri and water for months while chasing his dre
 - **Risk Score:** 38/100 (Low)
 - **Brief summary:** The Federal High Court in Abuja on Friday adjourned judgment in the forfeiture suit filed by the EFCC against 57 properties linked to former Minister of Justice,  Abubakar Malami, until July 15. The… [+2467 chars]
 
-### Papua New Guinea has a population of roughly 10 million people and 840 living languages — more than any other country on Earth, a number greater than all the languages spoken across every nation in Europe combined
-- **Source:** Space Daily | [Original Link](https://spacedaily.com/d-papua-new-guinea-has-a-population-of-roughly-10-million-people-and-840-living-languages-more-than-any-other-country-on-earth-a-number-greater-than-all-the-languages-spoken-across-every-nati/)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** In parts of the Papua New Guinea highlands, two villages within a day’s walk of each other can speak languages as far apart as English and Japanese. Cross a ridge, and the words change entirely.
-
-### Renew Capital Narrows 500+ African Companies to 15 Embedded Finance Investment Candidates
-- **Source:** Thechronicle.com.gh | [Original Link](https://thechronicle.com.gh/renew-capital-narrows-500-african-companies-to-15-embedded-finance-investment-candidates/)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Renew Capital (http://RenewCapital.com/) has selected 15 companies from more than 500 applicants across 48 African countries to advance through its inaugural Renew Venture Lab: EmFi Series. The size… [+2085 chars]
-
-### STARTRADER Breaks Ground on Basketball Court Revamp Benefiting around 20,000 Students in Davao City, Philippines
-- **Source:** PRNewswire | [Original Link](https://www.prnewswire.com/news-releases/startrader-breaks-ground-on-basketball-court-revamp-benefiting-around-20-000-students-in-davao-city-philippines-302822649.html)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** The project marks STARCARES' latest CSR investment in accessible sports infrastructure for schools and communities. DAVAO CITY, Philippines, July 10, 2026 /PRNewswire/ -- STARTRADER has officially l… [+2495 chars]
-
-### STARTRADER Breaks Ground on Davao Basketball Court Revamp in the Philippines, Benefiting Around 20,000 People
-- **Source:** GlobeNewswire | [Original Link](https://www.globenewswire.com/news-release/2026/07/10/3325334/0/en/STARTRADER-Breaks-Ground-on-Davao-Basketball-Court-Revamp-in-the-Philippines-Benefiting-Around-20-000-People.html)
-- **Classification:** General (Other)
-- **Risk Score:** 31/100 (Low)
-- **Brief summary:** DAVAO CITY, Philippines, July 10, 2026 (GLOBE NEWSWIRE) --
-The project marks STARCARES' latest CSR investment in accessible sports infrastructure for schools and communities
-STARTRADER
-has offic… [+2855 chars]
-
 ### Nigeria solid minerals exports hit ₦354bn in 2025 – Shinkafi
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/nigeria-solid-minerals-exports-hit-₦354bn-in-2025-shinkafi/)
 - **Classification:** General (Other)
@@ -2950,18 +2160,6 @@ Abuja: The Economic and Financial Crimes Commission on Thursday, arraigned the l
 - **Risk Score:** 30/100 (Low)
 - **Brief summary:** The Nigeria Immigration Service (NIS) has terminated its contract with its third-party visa processing partner in the United States, forcing applicants to now submit their paperwork directly to Niger… [+1124 chars]
 
-### Low-Cost Solutions to Maternal Mortality Already Exist
-- **Source:** Project Syndicate | [Original Link](https://www.project-syndicate.org/commentary/increase-funding-for-proven-simple-solutions-to-maternal-mortality-by-ifeanyi-m-nsofor-2026-07)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** SILVER SPRINGIn early June, Melinda French Gates pledged $215 million to improve womens health globally, with a focus on underfunded areas such as maternal care in Africa. The announcement comes at a… [+5518 chars]
-
-### Can Bitcoin Be Banned? What History Says About Government Restrictions
-- **Source:** Bitcoinfoundation.org | [Original Link](https://bitcoinfoundation.org/news/regulation/can-bitcoin-be-banned-what-history-says-about-government-restrictions/)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** The question if Bitcoin can be banned arises any time governments announce new crypto prohibitions, a Bitcoin crackdown, or enhanced Bitcoin regulations. The concern is that a government may be able … [+19276 chars]
-
 ### Miyetti Allah president docked over alleged $2.63m money laundering, terrorism financing
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/miyetti-allah-president-docked-over-alleged-2-63m-money-laundering-terrorism-financing/)
 - **Classification:** Legal (Other)
@@ -2974,230 +2172,194 @@ Abuja: The Economic and Financial Crimes Commission on Thursday, arraigned the l
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** ExxonMobil, alongside its partners, is set to invest $1bn in on-block operations at the Usan Infill Project within Oil Mining Lease 138 offshore Nigeria. The project is expected to add 40,000 barrel… [+2067 chars]
 
-### Aces sign Ta'Niya Latson to Development Player contract
-- **Source:** Thesportingtribune.com | [Original Link](https://www.thesportingtribune.com/2026/07/08/aces-sign-taniya-latson-to-development-player-contract)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** LAS VEGAS The Aces continued their midseason roster reshuffle on Wednesday, signing 2026 WNBA Draft second-round pick TaNiya Latson to a Development Player contract. Latson, a former South Carolina … [+1598 chars]
-
 ### Is Tinubu Nigeria’s saviour? Some genuinely think so! By Olu Fasan
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/is-tinubu-nigerias-saviour-some-genuinely-think-so-by-olu-fasan/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** Recently, two weeks ago to be precise, I found myself in an ambush, facing something akin to a Spanish Inquisition. I had attended the wedding of a friends daughter in London.
 
-### Dangote’s Next Move Could Create the World’s Largest Refinery
-- **Source:** Yahoo Entertainment | [Original Link](https://finance.yahoo.com/energy/articles/dangote-next-move-could-create-230000978.html)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Dangote's 700,000 b/d Lekki refinery has been running at full capacity over the past two months, pushing product exports to Europe to record levels and overtaking traditional suppliers from the Gulf … [+7811 chars]
-
-### ‘Greatest director out there’: Nolan fans fly into London to see The Odyssey at BFI Imax
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/film/2026/jul/17/the-odyssey-bfi-imax-christopher-nolan-fans-london)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Odysseus made his name by embarking on a perilous journey from Troy to Ithaca, plus a few unplanned diversions courtesy of the gods. But this is nothing on Christian Campbell, who last night travelled more than 4,000 miles to see the Greek king’s epic fable on the big screen.
-
-### The Open 2026: day two golf updates from Royal Birkdale – live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/live/2026/jul/17/the-open-2026-day-two-updates-from-birkdale-live)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Medium)
-- **Brief summary:** Jackson Suber gets moving in the right direction again! After that miserable sequence towards the back end of the front nine, the overnight leader warms that misbehaving putter at long last.
-
-### World Cup 2026: Spain v Argentina countdown, Trump to attend final, England news – live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/live/2026/jul/17/world-cup-2026-spain-v-argentina-countdown-trump-to-attend-final-england-news-live)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Medium)
-- **Brief summary:** When I became a teenager, foosball made way for girlfriends, wine, cigarettes and a job in a casino. Then I met a British woman and we got married.
-
-### Global tech stocks fall as chip sell-off deepens; mortgage rates rise amid renewed Middle East tensions - business live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/business/live/2026/jul/17/global-tech-stocks-fall-chip-sell-off-burberry-sales-boost-economy-latest-news)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** European stocks are still falling this morning, with the Stoxx Europe 50 – which tracks the biggest 50 companies on the continent – now down by about 1%. The biggest faller is the chip manufacturing equipment specialist ASML, down 4.6%.
-
-### Andrew Motion: ‘Wilfred Owen became a kind of sacred text for me’
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/books/2026/jul/17/andrew-motion-wilfred-owen-became-a-kind-of-sacred-text-for-me)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** My earliest reading memory My parents were country people who thought that looking after or chasing animals was more fun than reading: my father used to say that he’d read half a book in his life (The Lonely Skier by Hammond Innes), and while my mother got through three or four novels a year, she didn’t expect me to do anything equivalent. But I do remember enjoying something my grandmother gave me – My Father’s Dragon by Ruth Stiles Gannett.
-
-### ‘Adversarial clothing’: are garments designed to confuse facial recognition systems about to go mainstream? 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/fashion/2026/jul/17/adversarial-clothing-are-garments-designed-to-confuse-facial-recognition-systems-about-to-go-mainstream)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** As facial recognition technology is rolled out across Britain’s public spaces, a new generation of designers say privacy could be the next big fashion trend. Companies have started incorporating “adversarial patterns” in their garments – carefully designed arrangements of shapes, colours and repeated motifs said to exploit weaknesses in some computer vision systems.
-
-### Do natural deodorants actually work? I put 18 to the test – here are my favourites
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/thefilter/2026/jul/17/best-natural-deodorants-tested-uk)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** Like many people, I’m becoming more concerned about sustainability and the ingredients in my personal care products. Natural deodorants have become more appealing, especially with refillable options becoming more common.
-
-### ‘It’s a spiritual experience’: docuseries goes behind the spectacular chaos of Burning Man
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/tv-and-radio/2026/jul/17/hbo-burning-man-series)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 56/100 (Low)
-- **Brief summary:** In 1986, a group of starving artists seeking release amid a devastating economic downturn built an oversized wooden stick figure, hauled it on to a San Francisco beach and set it ablaze as police officers and passersby looked on in disbelief. Forty years later, Burning Man is the festival to end all festivals – a sprawling spectacle of music, art and self-expression that draws tens of thousands to the Nevada desert every summer for community, catharsis and spiritual connection.
-
-### Burnham to say his government will be ‘unashamedly Labour’ in first speech as party leader – UK politics live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/politics/live/2026/jul/17/andy-burnham-labour-leader-speech-latest-news-updates)
+### Furore in Nigeria over fake federal agency set up in government HQ
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/09/bola-tinubu-under-pressure-fake-nigerian-government-agency-political-storm)
 - **Classification:** Government (Appointment)
-- **Risk Score:** 68/100 (High)
-- **Brief summary:** Anyone who thinks that Andy Burnham as PM will be just like Keir Starmer only with better communication skills is “absolutely deluded”, Steve Rotheram told the Today programme this morning. Rotheram, the Liverpool city region mayor, is a close friend and ally of Burnham.
+- **Risk Score:** 76/100 (Critical)
+- **Brief summary:** A fictitious federal entity that was allocated 1.3bn naira (£700,000) in Nigeria’s 2026 budget has precipitated a political storm in Africa’s largest democracy in the run-up to a general election set for January. The fake agency came to light last October when Femi Gbajabiamila, the president’s chief of staff, wrote to the police alleging that his signature, along with official seals and reference numbers, had been forged by Adeniyi Adeyemi Matthew, who was claiming to have been appointed by the presidency to head the presidential foreign intervention promotion council (PFIPC).
 
-### US strikes on Iran reportedly hit airport and bridges – Middle East crisis live
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/live/2026/jul/17/us-iran-war-strait-of-hormuz-donald-trump-israel-lebanon-latest-news-updates)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** Iran’s Islamic Revolutionary Guard Corps (IRGC) has issued a statement to state media claiming to have “targeted American fighter jets and tankers stationed in Jordan”. The statement says the attack involved “several ballistic missiles and numerous drones” and resulted in “the destruction of several American tankers and fighter jets and serious damage to many more of them”.
+### Nigeria says army has killed 300 bandits in north-western state of Zamfara
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/11/nigeria-army-kills-bandits-north-western-state-zamfara)
+- **Classification:** General (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** Nigerian soldiers killed more than 300 members of kidnapping and cattle bandit gangs in the north-western state of Zamfara this week, according to a government official. Government troops targeted the gangs in Gummi district in a two-day operation that “led to the elimination of more than 300 terrorists”, Zamfara’s information commissioner, Mahmud Muhammad Dantawasa, said in a statement.
 
-### More than 200 countries endorse Infantino for fourth Fifa term despite Balogun scandal
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/17/gianni-infantino-fifa-reelection-more-than-200-countries-endorse-despite-balogun-scandal)
+### How rampant violence made Nigeria an insecurity hotspot in the Sahel – mapped
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/ng-interactive/2026/may/19/how-rampant-violence-nigeria-insecurity-hotspot-sahel-mapped)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 39/100 (Low)
-- **Brief summary:** Gianni Infantino has the formal endorsement of more than 200 countries for re-election as Fifa’s president despite the climate of unrest that has swirled since the scandal surrounding Folarin Balogun’s reprieve from suspension. The Guardian understands only a handful of Fifa’s 211 member associations are still to send letters of support for Infantino, who is on course to be voted into a fourth term by a landslide at its congress in March.
+- **Brief summary:** Data from Acled and the Global Terrorism Index shows that after a few years of improvement, insecurity in Nigeria has worsened. With general elections less than a year away, the crisis has come under increasing scrutiny – both abroad and at home.
 
-### Weather tracker: Thunderstorms strike across Europe amid record heatwave
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/environment/2026/jul/17/weather-tracker-thunderstorms-strike-across-europe-amid-record-heatwave)
+### Bandits in north-west Nigeria abduct villagers they invited to discuss peace talks 
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jun/08/bandits-in-north-west-nigeria-abduct-villagers-they-invited-to-discuss-peace-talks)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** Armed bandits in north-west Nigeria abducted dozens of villagers whom they invited to a meeting about potential peace negotiations, authorities and residents said on Monday, highlighting the region’s worsening security. According to local police, 39 people were seized on Sunday during a meeting in the forest near Magamin Diddi village in the Maradun municipality of north-west Zamfara state.
+
+### Clarissa review – Sophie Okonedo mesmeric as Virginia Woolf’s Mrs Dalloway decamps to Nigeria 
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/film/2026/may/16/clarissa-review-virginia-woolf-mrs-dalloway-nigeria)
 - **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Hailstones the size of golf balls have been seen in French villages as, on top of the exceptional European heatwave, thunderstorms have struck across parts of Europe. While thunderstorms are typical during and after a period of extreme heat, the storms across countries such as France, Germany and Poland have been particularly severe, bringing flooding, strong winds and heavy showers with large balls of hail.
+- **Risk Score:** 41/100 (Low)
+- **Brief summary:** Virginia Woolf seems to be having a moment in the movies. Soon, we will see Tina Gharavi’s new version of Woolf’s comic novel Night and Day; and now, Nigerian film-making brothers Arie and Chuko Esiri have brought to Cannes their interpretation of Woolf’s Mrs Dalloway, a seductively mysterious, languorous, melancholy drama with commanding performances and a great musical score.
 
-### How can we better support families to make healthier food choices?
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/making-healthy-choices-easier-for-families-with-tesco/2026/jul/17/how-to-help-families-make-healthier-food-choices)
-- **Classification:** Person (Other)
-- **Risk Score:** 56/100 (Low)
-- **Brief summary:** The urgent need to support British families to eat healthily was drawn into sharp focus earlier this year when The World Obesity Atlas 2026 reported that we have about twice the number of overweight and obese children as France and Italy, with a record rate of 3.8 million children with a high BMI. In a timely move, Tesco brought together a panel of leading health charities, nutritionists and food suppliers for a roundtable to discuss how to make a difference to families.
-
-### NSW woman arrested over movements of Dezi Freeman – as it happened
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/australia-news/live/2026/jul/17/australia-news-live-telstra-mobile-outage-parliament-inquiry-royal-commission-antisemitism-ai-anthony-albanese-labor-liberals-coalition-politics-ntwnfb)
-- **Classification:** Government (Appointment)
-- **Risk Score:** 80/100 (Critical)
-- **Brief summary:** What we learned today, Friday 17 July And that’s a wrap on our live coverage for today. Before we go, let’s recap today’s top headlines: Telstra’s bosses were grilled during a parliamentary inquiry over a nationwide outage that affected triple zero calls and businesses, disrupted payment systems and stopped trains in two states.
-
-### Moira Deeming disendorsed as Victorian Liberal party candidate for upcoming state election 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/australia-news/2026/jul/17/moira-deeming-victorian-liberal-party-disendorsement-decision-ntwnfb)
-- **Classification:** Legal (Other)
+### Nigeria takes its place on world stage in quest to become regional superpower
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/news/2026/mar/26/nigeria-regional-superpower-uk-reparative-justice-trade-economic-ties)
+- **Classification:** General (Other)
 - **Risk Score:** 52/100 (Low)
-- **Brief summary:** Victorian Liberal MP Moira Deeming has been disendorsed ahead of the upcoming state election, despite dropping an eleventh-hour legal challenge against her own party. The state party called a meeting for Friday afternoon where they voted to remove the MP as a candidate for the November election.
+- **Brief summary:** “There are chapters in our shared history that I know have left some painful marks,” King Charles said during a state banquet to welcome the Nigerian president, Bola Tinubu, to the UK, in a year in which the monarch is expected to come under renewed pressure to make a formal apology for transatlantic slavery and colonialism. But while demands grow from African and Caribbean nations for the UK to further reparative justice, Nigeria and the UK are looking to the future of global trade.
 
-### The Dink to Wicked Little Letters: the seven best films to watch on TV this week
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/tv-and-radio/2026/jul/17/the-dink-to-wicked-little-letters-the-seven-best-films-to-watch-on-tv-this-week)
+### At least 23 people killed in suspected suicide attacks in north-eastern Nigeria
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/mar/17/bombings-north-eastern-nigeria-maiduguri)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 49/100 (Low)
-- **Brief summary:** Pick of the week The Dink There is plenty of comic potential to be found in has-been sports pros still living off former glories. In Josh Greenbaum’s amiable comedy, that figure is Dusty “the Hammer” Boyd (New Girl’s Jake Johnson), a tennis prodigy who failed to make the grade and is now reduced to coaching nine-year-olds at his father’s country club.
+- **Brief summary:** At least 23 people have been killed and more than 100 others injured in multiple suspected suicide bombings in the north-eastern Nigerian city of Maiduguri, shattering its reputation as a relative oasis of calm in recent years as a long-running insurgency was pushed to the rural hinterlands. Authorities said the explosions went off at the post office and market areas, as well as the entrance to the University of Maiduguri teaching hospital, on Monday evening during iftar, the breaking of fast in the month of Ramadan.
 
-### Norma Winstone and NDR Radio Orchestra: A Timeless Place review | John Fordham's jazz album of the month
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/music/2026/jul/17/norma-winstone-and-ndr-radio-orchestra-a-timeless-place-review)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Medium)
-- **Brief summary:** When Norma Winstone, the peerless English vocalist and lyricist, reached 80 in 2021 – still in entrancing voice – a cascade of tributes included one from ECM Records boss Manfred Eicher, legendary master of doing more with less in new music: “She hears things differently, and tells us about them in her own quiet way.” Winstone’s confiding storytelling could have struggled in a noisy world, but landmark albums, the accolades of peers and fans and an MBE have confirmed its soft power across 60 years. So does the release of A Timeless Place, a long-archived 1990 radio broadcast with Winstone fronting Hanover’s NDR Radio Orchestra.
+### Anthony Joshua discharged from hospital in Nigeria after car crash
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jan/01/anthony-joshua-released-from-hospital-in-nigeria-car-crash-boxing)
+- **Classification:** General (Other)
+- **Risk Score:** 36/100 (Low)
+- **Brief summary:** The British boxer Anthony Joshua has been discharged from hospital, Nigerian authorities said on Wednesday night. The two-time former heavyweight champion and 2012 Olympic gold medallist was a passenger in a car accident near Lagos on Monday which killed two of his close associates and team members.
 
-### Trump makes unverified claims of China ‘election meddling’ as critics fear ploy to challenge midterm results
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2026/jul/16/trump-tv-address-thursday)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Donald Trump accused China of interfering with the 2020 election in a primetime televised address that laid bare his continuing obsession with his defeat to Joe Biden, but which opponents warned was a smokescreen for him to meddle in the forthcoming congressional midterms. In a 25-minute speech on Thursday that had been hyped by Trump himself, the US president cast extraordinary doubts on the integrity of the US electoral process, saying it was “catastrophically” short of standards of fairness and trust, and vulnerable to trespassing by foreign powers.
-
-### Loathe: A Stranger to You review
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/music/2026/jul/17/loathe-a-stranger-to-you-review)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** Loathe took six years to make this fourth album, explaining they wanted to make it very special. Accordingly, A Stranger to You ventures far from the Liverpudlians’ metalcore origins to create an odyssey of mixed and colliding genres.
-
-### ‘I don’t think I’ll ever retire’: the workers struggling to save for old age
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/money/2026/jul/17/workers-pensions-retirement-savings-money)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 41/100 (Low)
-- **Brief summary:** “I am 35 and have essentially nothing saved for my future, which is a huge concern.” Sarah* works in library services in Oxford – full-time at one library and part-time at another. She has saved £5,000 into her pension.
-
-### Heartstopper Forever review – sanitized sex scenes won’t let the Netflix lovebirds grow up
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/film/2026/jul/17/heartstopper-forever-movie-review)
-- **Classification:** Legal (Other)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** If it were up to Kit Connor, Heartstopper would have ended quite differently. “If I’d had my way, I would have had Nick and Charlie cheating on each other and doing all those stupid things,” he recently told the Guardian.
-
-### ‘At times I felt I’d bitten off more than I could chew’: Christopher Nolan on sweeping the Oscars, making The Odyssey – and getting a puppy
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/film/ng-interactive/2026/jul/17/christopher-nolan-interview-oscars-the-odyssey)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** ‘I’m in that moment of sheer terror,” says Christopher Nolan, sitting in a suite at the Corinthia hotel in London, in a slightly rumpled suit, next to a pot of tea. Outside, crowds jostle, hoping to catch a glimpse of one of the stars within – Matt Damon, Tom Holland, Lupita Nyong’o.
-
-### Castlevania: Belmont’s Curse - Konami classic rises again from Paris sewers and Joan of Arc is a boss
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/games/2026/jul/17/castlevania-belmonts-curse-komani-classic-paris-joan-of-arc-is-a-boss)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 41/100 (Low)
-- **Brief summary:** Since the last Castlevania game hit the shelves (2014’s Castlevania: Lords of Shadow 2), Konami’s dormant series has unexpectedly spawned a hit genre. With an entire generation raised on “metroidvanias” – a portmanteau of Metroid and Castlevania – millions of players have only ever seen the games inspired by Konami’s seminal games.
-
-### USA v Uzbekistan match foreshadows chess battle for Olympiad top prize
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jul/17/usa-v-uzbekistan-match-foreshadows-chess-battle-for-olympiad-top-prize)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 52/100 (Medium)
-- **Brief summary:** The USA and Uzbekistan are among the world’s current four best chess teams, along with India and China, so the announcement that the pair will meet at Miami on 27-28 July in an all-play-all rapid and blitz Scheveningen format is sure to create interest as a guide to what may happen when the 200-nation classical Olympiad takes place in Samarkand, Uzbekistan, from 15-27 September. Full details of the forthcoming matchare here.
-
-### Pitbull concert forces historic Champions League qualifier in Lithuania to move
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jul/17/historic-champions-league-qualifier-moved-pitbull-concert-ilithuania-fk-kauno-zalgiris)
+### Gunshots at 9am. Then they rounded up the children: how Chibok-style school abductions are spreading in Nigeria
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/global-development/2026/jun/05/children-how-chibok-style-school-abductions-spreading-nigeria)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 44/100 (Low)
-- **Brief summary:** Lithuania’s best team will probably be forced to play a historic Champions League qualifier later this month away from home after renting their stadium out for a show by the US rapper Pitbull. On Tuesday night, the Toplyga champions, FK Kauno Zalgiris, beat Kosovo’s champions, Dritam 3-2, and 4-3 on aggregate, to book their place in the Champions League second qualifying round, in the process securing around €1.7m in prize money.
+- **Brief summary:** Sitting on a wooden bench under the tree near her home, Aduke Balogun’s gaze is fixed on the road. Her eyes are red from crying and a lack of sleep.
 
-### Army Chief Reaffirms Commitment To Human Capital Development
-- **Source:** leadership | [Original Link](https://leadership.ng/army-chief-reaffirms-commitment-to-human-capital-development/)
+### ‘The world’s memory’: why Nigeria is burying its history under a mountain in Svalbard
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/global-development/2026/mar/17/arctic-world-archive-nigeria-history-culture-svalbard)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** A decommissioned coalmine near the north pole is the last place you’d expect to find Indigenous stories from rural Nigeria, but deep below the Arctic permafrost of Svalbard a storage unit contains a cache of cultural and literary records from the West African country. The Arctic World Archive (AWA) is a data storage unit where organisations and individuals can deposit records kept on specialist digitised film called Piql that lasts up to 2,000 years.
+
+### Trump supporters hail US strikes in Nigeria as ‘amazing Christmas present’
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2025/dec/26/trump-supporters-nigeria-airstrikes)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Medium)
+- **Brief summary:** The US’s Christmas Day strikes against Islamic State targets in Nigeria have been met with praise by Donald Trump supporters who for months had been agitating for the president to respond forcefully to the killings of Christians in the country. “I can’t think of a better way to celebrate Christmas than by avenging the death of Christians through the justified mass killing of Islamic terrorists,” the far-right political activist Laura Loomer posted on X.
+
+### Gunmen kill more than 160 people in attacks on two west Nigeria villages
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/feb/04/gunmen-west-nigeria-attack-red-cross)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** More than 160 people have been killed in two villages in western Nigeria in the country’s deadliest armed assaults this year, as communities reel from repeated and widespread acts of violence perpetrated by jihadists and other armed groups. The death toll from Tuesday’s attacks in Woro and Nuku in Kwara state stood at 162 on Wednesday afternoon, according to Mohammed Omar Bio, a member of parliament representing the area.
+
+### Why is Donald Trump threatening military intervention in Nigeria?
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2025/nov/03/why-is-donald-trump-threatening-military-intervention-in-nigeria)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** Donald Trump has threatened to launch a “guns-a-blazing” US military intervention in Nigeria, claiming that the west African country’s government has failed to prevent attacks on Christians. Here’s what we know so far about the unfolding situation.
+
+### Anthony Joshua’s driver charged with dangerous driving after fatal crash in Nigeria
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jan/02/anthony-joshuas-driver-charged-with-dangerous-driving-after-fatal-crash-in-nigeria)
+- **Classification:** General (Other)
+- **Risk Score:** 49/100 (Low)
+- **Brief summary:** Nigerian police have charged Anthony Joshua’s driver with causing death by dangerous driving after a fatal crash that killed two people. Adeniyi Mobolaji Kayode, 46, was also charged with driving without a valid driving licence and “driving without due care and attention, causing bodily harm and damage to property”.
+
+### Uganda 1-3 Nigeria: Africa Cup of Nations 2025 – as it happened
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/live/2025/dec/30/uganda-v-nigeria-africa-cup-of-nations-2025-live)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (High)
+- **Brief summary:** That’s all from me. Congratulations to Nigeria, who were very professional here, even with so many changes to their XI.
+
+### US carries out strikes on Nigeria targeting Islamic State militants, Trump says
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2025/dec/25/us-carries-out-airstrikes-against-islamic-state-terrorist-scum-in-nigeria-trump-says)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 42/100 (Low)
+- **Brief summary:** Donald Trump has said the US carried out airstrikes against Islamic State militants in north-west Nigeria on Thursday, after spending weeks decrying the group for targeting Christians. The president said in a post on his Truth Social platform: “Tonight, at my direction as Commander in Chief, the United States launched a powerful and deadly strike against ISIS Terrorist Scum in Northwest Nigeria, who have been targeting and viciously killing, primarily, innocent Christians, at levels not seen for many years, and even Centuries!
+
+### ‘The optics are terrible’: wedding guest list in spotlight as violence grips swathes of Nigeria 
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/feb/24/the-optics-are-terrible-wedding-guest-list-in-spotlight-as-violence-grips-swathes-of-nigeria)
+- **Classification:** Government (Policy)
+- **Risk Score:** 76/100 (Low)
+- **Brief summary:** It has been described as Nigeria’s wedding of the year – and it is only February. This month, five sons and five daughters of the junior defence minister Bello Matawalle married their spouses in an opulent six-day celebration in Abuja.
+
+### Morocco book place in home Afcon final as Bounou denies Nigeria in shootout
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jan/14/africa-cup-of-nations-final-nigeria-morocco-semi-final-report)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 41/100 (Low)
+- **Brief summary:** Morocco advanced to the Africa Cup of Nations final on penalties, beating Nigeria 4-2 in the final shootout after their semi-final ended goalless after extra time. Yassine Bounou saved two spot kicks for the tournament hosts, keeping out Samuel Chukwueze and Bruno Onyemaechi’s efforts.
+
+### England captain Maro Itoje absent from training camp to attend mother’s funeral in Nigeria
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jan/26/england-captain-maro-itoje-absent-from-training-camp-to-attend-mothers-funeral-in-nigeria)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 47/100 (Low)
+- **Brief summary:** England will kick off their Six Nations training camp in Spain this week without their captain, Maro Itoje, who has travelled to Nigeria for his mother’s funeral. Itoje was absent from the official Six Nations championship launch in Edinburgh on Monday and is not expected to join his squad until Wednesday evening.
+
+### Jihadist violence in Nigeria and DRC rose sharply last year even as global deaths from terror fell
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/mar/19/jihadist-violence-nigeria-drc-terrorism-index)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** Jihadist violence rose sharply in Nigeria and Democratic Republic of Congo last year, even as global deaths from terrorism dropped to their lowest level in a decade, according to a new report. Nigeria recorded the largest increase in terrorism deaths globally in 2025, with fatalities rising by 46% from 513 in 2024 to 750, placing it fourth in the Global Terrorism Index, behind Pakistan, Burkina Faso and Niger.
+
+### US warns of more Nigeria strikes as Abuja talks of ‘joint ongoing operations’
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2025/dec/26/us-warns-of-more-nigeria-strikes-as-abuja-talks-of-joint-ongoing-operations)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Medium)
+- **Brief summary:** The US defence secretary, Pete Hegseth, has warned of new strikes against Islamic State targets in north-western Nigeria, hours after the US military took action against militant camps in what Donald Trump has characterised as efforts to stop the killing of Christians. Hegseth wrote on X: “The president was clear last month: the killing of innocent Christians in Nigeria (and elsewhere) must end.
+
+### Algeria 0-2 Nigeria: Africa Cup of Nations 2025 quarter-final – as it happened
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/live/2026/jan/10/algeria-v-nigeria-africa-cup-of-nations-2025-quarter-final-live)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (High)
+- **Brief summary:** The match report is in. That’s all from me today.
+
+### Nigeria head coach Justine Madugu: ‘As Africans, we love expressing ourselves’
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2025/nov/06/nigeria-head-coach-justine-madugu-interview-moving-the-goalposts)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** At 61, most top-level head coaches have nostalgic moments as they reflect on the high points of their topsy-turvy careers. But for Justine Madugu, who made the 2025 Ballon d’Or shortlist for women’s team coach of the year after dramatically leading the Super Falcons to a record 10th Women’s Africa Cup of Nations title in Morocco in July, his managerial odyssey is only beginning.
+
+### Two weeks on, questions linger over targeting and impact of US airstrikes in Nigeria 
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jan/08/questions-targeting-impact-us-airstrikes-in-nigeria)
+- **Classification:** Company (Earnings)
+- **Risk Score:** 44/100 (Low)
+- **Brief summary:** Two weeks after the US carried out Christmas Day airstrikes in north-west Nigeria on what it described as Islamic State fighters, questions remain over the specific group that was targeted and the operation’s impact. In the aftermath of the strikes, Donald Trump said in a post on his Truth Social platform that “ISIS Terrorist Scum in Northwest Nigeria, who have been targeting and viciously killing, primarily, innocent Christians” were hit with “numerous perfect strikes”.
+
+### Anthony Joshua’s camp confirm two of his close friends died in Nigeria car crash
+- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2025/dec/29/anthony-joshua-injured-car-crash-nigeria)
+- **Classification:** Government (Policy)
+- **Risk Score:** 80/100 (High)
+- **Brief summary:** The British heavyweight boxer Anthony Joshua has issued a statement after he was injured in a car crash in Nigeria on Monday morning which killed two of his close friends. The former world heavyweight boxing champion was taken to an undisclosed hospital after his car hit a stationary vehicle at about 11am on the Lagos-Ibadan Expressway, the Ogun state police commissioner, Lanre Ogunlowo, said.
+
+### 2027: Group Alleges Plot By APC Chieftains To Concede Benue To Opposition Parties
+- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/2027-group-alleges-plot-by-apc-chieftains-to-concede-benue-to-opposition-parties/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### oPt: Education Under Threat in the West Bank - July 2026
-- **Source:** reliefweb | [Original Link](https://reliefweb.int/report/occupied-palestinian-territory/education-under-threat-west-bank-july-2026)
+### Nigerian govt mobilises N7.6bn for child nutrition – Shettima
+- **Source:** dailynigerian | [Original Link](https://dailynigerian.com/nigerian-govt-mobilises-n7-6bn-for-child-nutrition-shettima/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Kris Jenner Mourns Death Of Mother Mary Jo ‘MJ’ Shannon At 91
-- **Source:** leadership | [Original Link](https://leadership.ng/kris-jenner-mourns-death-of-mother-mary-jo-mj-shannon-at-91/)
+### French MPs Approve Assisted Dying Bill Amid Strict Conditions After Years of Debate
+- **Source:** leadership | [Original Link](https://leadership.ng/french-mps-approve-assisted-dying-bill-amid-strict-conditions-after-years-of-debate/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### CBN Issues Fresh Operational Guidelines For BDCs, Introduces Electronic FX Purchase Portal
-- **Source:** independentng | [Original Link](https://independent.ng/cbn-issues-fresh-operational-guidelines-for-bdcs-introduces-electronic-fx-purchase-portal/)
+### Delta Youths Petitions National Assembly Over Alleged Fraud In NDDC internship Programme
+- **Source:** leadership | [Original Link](https://leadership.ng/delta-youths-petitions-national-assembly-over-alleged-fraud-in-nddc-internship-programme/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### PSC Releases Names Of 50,000 Successful Police Constable Recruits
-- **Source:** leadership | [Original Link](https://leadership.ng/psc-releases-names-of-50000-successful-police-constable-recruits/)
+### Spanish taxis warned they will be stopped from entering Gibraltar as border removed
+- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/spanish-taxis-warned-they-will-be-stopped-from-entering-gibraltar-as-border-removed/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### ‘227,’ ‘Sanford And Son’ Star Hal Williams Dies At 91
-- **Source:** leadership | [Original Link](https://leadership.ng/227-sanford-and-son-star-hal-williams-dies-at-91/)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** ONLY AVAILABLE IN PAID PLANS
-
-### UN finds looted gold, gum arabic bankrolling Sudan war
-- **Source:** dailypost | [Original Link](https://dailypost.ng/2026/07/16/un-finds-looted-gold-gum-arabic-bankrolling-sudan-war/)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** ONLY AVAILABLE IN PAID PLANS
-
-### Former Miss Universe Nigeria Chidimma Adetshina takes deportation fight to South African court
-- **Source:** legit | [Original Link](https://www.legit.ng/entertainment/celebrities/1719782-former-universe-nigeria-chidimma-adetshina-takes-deportation-fight-south-african-court/)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** ONLY AVAILABLE IN PAID PLANS
-
-### US Limits Length Of Visas For Students, Journalists
-- **Source:** channelstv | [Original Link](https://www.channelstv.com/2026/07/16/us-limits-length-of-visas-for-students-journalists/)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** ONLY AVAILABLE IN PAID PLANS
-
-### Police rescue kidnap victim, recover ₦2.2m ransom in Osun
-- **Source:** nigeriannewsdirect | [Original Link](https://nigeriannewsdirect.com/police-rescue-kidnap-victim-recover-%E2%82%A62-2m-ransom-in-osun/)
+### Babcock University Forges Stronger Academic Bond With South Africa’s Venda University
+- **Source:** independentng | [Original Link](https://independent.ng/babcock-university-forges-stronger-academic-bond-with-south-africas-venda-university/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
