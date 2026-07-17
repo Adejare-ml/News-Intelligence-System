@@ -1,13 +1,13 @@
 # PSC & Company Daily Intelligence Report
 
-**Generated on:** 2026-07-17 11:01:11 (UTC+1)
+**Generated on:** 2026-07-17 11:37:36 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 386
-- **High Risk Signals:** 19
+- **Total Articles Processed:** 352
+- **High Risk Signals:** 15
 - **Appointments Logged:** 1
-- **Procurement Awards:** 18
+- **Procurement Awards:** 13
 
 ---
 
@@ -247,12 +247,6 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** World leaders convene at House of Lords for Global Sustainability Summit, awards in Uk  The Guardian Nigeria News
 
-### Former Aso Villa chaplain, William Okoye, is dead, CAN mourns - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxNM3JXbC12UUEtZXJvRDBmX2tDcU9KUWE5bS1KOXM4NG5DM0hja3NqWjVCaUcyb0xMRXVTMERHNWI4VXZzRE84a3ppUGllRFIxVUViM3AzcHhNbkN3RWpJUWw3d3F3R3RtNVJvY2FSYk5uNms1cTZpVG92bTQ1cG00ZXhfLWdvM3BOWVcwWkVJbUhyeFFZM1cxaU9TX0lzZDZXLUF4UzR4VHlBTk1yQ0JLNW1iYlJUTVk?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 29/100 (Low)
-- **Brief summary:** Former Aso Villa chaplain, William Okoye, is dead, CAN mourns  Premium Times Nigeria
-
 ### FG urged to leverage UTM FLNG project for indigenous shipping devt - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMivwFBVV95cUxNN0dTcTFpRW51cVRtamtOZXdwTU05ZnhmOUJzUmw4SG1qeEQwWHB4Z010clF6X05zWmhuMG9rTGJURGhReFAyNTI1cmN5N2hTSlZUVUtQLUo4empCZTVUY25CUGJ3UDBkb09yUWttdmZQT0RTbnZobWVmOGlPQU96cXVjb3JJeWhoTGtkUFBUak5PaWFVcGttLVI5SG1MTk1KQ0k2U2JyMGNoSmRoWVNSc0trQlNHdzA4eGVNTE0wSQ?oc=5)
 - **Classification:** General (Other)
@@ -415,17 +409,17 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Tinubu rules out raw cocoa export as Nigeria, 3 others target 75% of global market  The Guardian Nigeria News
 
-### PFIPC: Calls grow for Senate, Gbajabiamila probe as police arrest Adeyemi - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxOOTJIbXRIRnhLUk1JQkx2c1E0eWMyWXhPT1dqUWt0d2JCTmVucGhKbHhIWFE4aGxjUVhHVDhzTzY5M25KOWNxT2JGZ2I3SGhYY3B0cVVRejQ2QXMwaXZaanFEMlJyVXFyX1d3eWM1N09WQkpvWXZ1TUsyWmxsVkhOWTVOay0td1U3bWUteElxczVYaEN3U1ZBRld3RzUxQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 39/100 (Low)
-- **Brief summary:** PFIPC: Calls grow for Senate, Gbajabiamila probe as police arrest Adeyemi  The Guardian Nigeria News
-
 ### Foundation trains teachers, equips schools to strengthen basic learning - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiowFBVV95cUxPYS10cl81UENERnM2bnRlSVpSMm1yRFEzUFFrTF9aeDFET3pzcWY1XzFaRjZPdjF0NXVQM2c0RllVSWtJbWhELXlndzNrM3otSjVUTDF3THY4TndYUWlHRFpOTmZ6WnpqWjRjUHBHSmhyQUFFNE1JRlhnV3VrTEl0UEJKaVFxZzN3NkNtZ1lYcEpHRVdqOVBYaWlnZWZyc1kzRFlJ?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Foundation trains teachers, equips schools to strengthen basic learning  The Guardian Nigeria News
+
+### PFIPC: Calls grow for Senate, Gbajabiamila probe as police arrest Adeyemi - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMingFBVV95cUxOOTJIbXRIRnhLUk1JQkx2c1E0eWMyWXhPT1dqUWt0d2JCTmVucGhKbHhIWFE4aGxjUVhHVDhzTzY5M25KOWNxT2JGZ2I3SGhYY3B0cVVRejQ2QXMwaXZaanFEMlJyVXFyX1d3eWM1N09WQkpvWXZ1TUsyWmxsVkhOWTVOay0td1U3bWUteElxczVYaEN3U1ZBRld3RzUxQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 39/100 (Low)
+- **Brief summary:** PFIPC: Calls grow for Senate, Gbajabiamila probe as police arrest Adeyemi  The Guardian Nigeria News
 
 ### Solutions to mitigate the political abuse of state police, by Bashir Are - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiogFBVV95cUxOXy1JejByMC1UNUFRR1VpUUFMY09JOVFkQXVXeThERlZEQ0NxRzZmREhLU0hxZlJNUGFLWDhTb0Rhb012R094aF9tUE1sRkdNT1BSc0ZuSEhmTkQwYmdhOTc0RXVIN293WFpKQllrZHJJcHdIYTlabGhpNWdxU3BhNzlKM2JOTk40aFFXSlVXbXhfd0J0Mmxjcms5a2J4THlpSHc?oc=5)
@@ -463,12 +457,6 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** Ifeyinwa Nonye Okoye Archives  Premium Times Nigeria
 
-### FG advocates local cocoa processing to end raw bean export - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRlNKUU5jWVd6RVd5STBicXp6dnFNUGcybzRxbjBCNUlXRDBlQ0dwQzVLdE16eEVsRTZpeXZ0SWRTSTJYLWx1TmZraDRSYldoaHVQUGhEdEVRMFhyUEFwWlAzN2lWSlVhYVF3NzhKcFdxT0xNVTBFd2F2a2Y3SUlVeGVkdzNBSlc4OG1JdXA0eWpCUVQyeG8zRFdrSW5obWhoOV84cGc4UmlQeHMzLXYzZXZLQmljRHlrSW1BMXpRd05rUQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** FG advocates local cocoa processing to end raw bean export  Premium Times Nigeria
-
 ### Okoro Blessing Nkiruka Archives - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9xSnN1cWxjSkNTSzhadVNTTkxsZ3d3ZEQ5NklSckJKTXJ5bXpZTFZDQW9JcjB1ZVd2WWowc2d5bHlEblpSY0Q3YmZrTmZHSU4yXzBFMXVjUDAtMFl2M280cEtOS01tdWhu?oc=5)
 - **Classification:** General (Other)
@@ -505,12 +493,6 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Ayoko wins continental award  The Guardian Nigeria News
 
-### Argentina vs Austria Forecast Brings Betting Focus to Midfield Control - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivwFBVV95cUxOOXB5N3k2WmVUZnJUZnJzRlhkd3Q4MS1SSWZlWXU0bFM5akhYaUFIM2JXLWc4ZHhJUmFHX0Y2aFJxeTd4UEVIem5zVWtjdV8wbzExay10YU56OC0wRjZYX2xUZzVkOG90S2o0ekJBb2J3TzFGTmVqOEQyTG0tRjY2Q2QxUnNwbi1RcVlXd1pGWlk0NG5VTzB6bjRMYktYWnJxTDJlWE1vVHJpeldhV25GeG9XNWVyWTNiaE44SXFqNA?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** Argentina vs Austria Forecast Brings Betting Focus to Midfield Control  Premium Times Nigeria
-
 ### How Benue Model Reimagines Education as Nigeria’s Strongest Security strategy - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVF9KdGpZUzFNUnVVNVRHN21XRDB6YnRUcnNmZnhpMllfdnExUHk0LXJvem1LYy14eS1jeVVQNWtlVGlEcHItMVBnTWNtTHU0a1hFWjgtMW1ZWVBPcWpXeE1vb1BwMk1scEdXMjBXUDRCUEhOeTJSX2VOZzBScFNHbDVJTlhPVi03ODlvQ0xIc3JzLS1TVnk2c0dsZWN4YjB5UWFVTnZVako?oc=5)
 - **Classification:** General (Other)
@@ -522,12 +504,6 @@
 - **Classification:** Company (Earnings)
 - **Risk Score:** 29/100 (Low)
 - **Brief summary:** Gov Ododo urged to rescue Okene Secondary Schools from total collapse, extinction  The Guardian Nigeria News
-
-### Four NECO candidates, principal abducted from exam hall in Kogi - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipAFBVV95cUxPVHZDcWY4M2JSTmpBOGJrQ3FJaGFmZldrZnVhWmZ2aUtNWTRvVGFTNm8yX0lKY1poQWNjR3Vvdm5FZXpfVUVaaS1VU1RlR0NKd0JwdWhLVjYxWVQ0akU1NXJ2ajZDMl9iMDJkS2NkTGNpaUpmY0hJVVEwbzJYcUQ0RW4ySDloemM1WlFrTkhGbmxHRF9RTDJCY3JmZ3ZyN0dBQVpqeA?oc=5)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Four NECO candidates, principal abducted from exam hall in Kogi  The Guardian Nigeria News
 
 ### Omidiran accepts historic SWAN role, says sports can drive Nigeria’s GDP - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZWluMVVKaFhiem1kWUdrZkU0cmlKR3hQbWJfZ194RHBsYS1PNy1oenVWWTZWazRrdzVNRzRteXhudjZ0TVJvejBkR1BaNjhPVE1NVm5Fd3dJa3pKNWdWUXAyYUg0WEo3N21GMTJzV21kRW04VHltbXpkWmRsUDVzZjRoLUhxNlZrMVd0LWJYTVN3T1ZqNElyNHkyQXg0bXYyanhvTDYxTWY2aDhxNkNNbXZETC1wbUZIdjNQWW4xWnVueUdxLXpxcHRJem1ydDdBcVNsM0tYRQ?oc=5)
@@ -769,12 +745,6 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Trump limits visa duration for students, journalists, others  The Guardian Nigeria News
 
-### Oriire Kidnapping: UN doesn’t intervene in such – Jimoh Ibrahim tells Makinde - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxQM3dUVTF3SnppT2dlSVpLNFZWTmpvc3FzRW5yTlpZRE9nWjQ3VWpYQXY3b093NFpKRWlqVU50aUc5Y2Z1Z3F5cEx0OGtjcGtQUWxCeHdoNl92T1EtSlpRV1RZdHhQdXlFeE9sZWhROHpGWDhaOXc4TnpIZ3R1N3BMNFVlVzBPb1Z5M05IQ0JjeUFDTzJ5MmxYdF9BTXFlaC04?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Oriire Kidnapping: UN doesn’t intervene in such – Jimoh Ibrahim tells Makinde  The Guardian Nigeria News
-
 ### BUA Foods plans major expansion to support Nigeria’s economic growth, food security - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOQzNrdEtES3YtUnF4OV91VnNVVHJ5c1RKdnpVVHU2ZHhCYWJmdnJVVWU5bl9Ua2FpNHlFTm1IaTR0RUVNT2hhT1Z5QXZjTWdHWkJKb21KU0FVSllkTGRObFk5MTQ3bGViaUtjbENvYl9GRXhMcE5waWtyY3MzaUx2UXdwNm94cjQ3QmtPZnhGdTBXdGdHS0ctRHN1bDRvT3E1b0NUSXczb1VpRHY4QWZyRkRodTdkMTVjeFZsSXRaS1FTTW12N3c3MzBrN3dIeDZIdGEyM055eUFSb0g5aC01Sw?oc=5)
 - **Classification:** General (Other)
@@ -792,6 +762,12 @@
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Rivers warns schools against costly graduation parties  The Guardian Nigeria News
+
+### CBN mandates BDCs to offload unused forex within 24 hours | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxNRVhkYXhaSDB0bDZjLWF2cWJFRWw5YnBkSmN3LUgxSEhQRVhOZVFPTFd2djE0OVpzR2ZwTi1HMi1VTzFWaFdCWG14c05RWUZ2em5ZM2pBY3NEaGFtVW83Sjhrc094LVRPcEExeEtoYmFyQ01idVBQSU1teWxaUGRvZ2l4MVJGS2xmNEdMUFdUcWdRQQ?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** CBN mandates BDCs to offload unused forex within 24 hours |  theeagleonline.com.ng
 
 ### Drop 2027 bid over BCDA leadership crisis, Atiku tells Tinubu - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMilAFBVV95cUxNWWhqMGF0cjhoTTEwWVlTTlg4cVVfTWhqaEN6anFmUFY2cDVPWjlsZlNHZEk5QTZvNUgwMWNtSXQtampwQmpBVTBnSUxuekZKTDg1aTN2Y1F1TUNHa1FiZ1p4TGhwdGdjM08wUlhwNUdQMWlQV01CTmVIMHEzMWYxMzEtMS0ycTNBM0NOSU1sMHZpSjFz?oc=5)
@@ -877,12 +853,6 @@
 - **Risk Score:** 36/100 (Low)
 - **Brief summary:** Court dissolves APC's chapters in UK, foreign countries, orders disclosure of donations from abroad  Premium Times Nigeria
 
-### Bode George warns against ‘weaponisation’ of institutions - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZHJzVTJhMzlyMTdWdUF6dUtfb2ozNnRVSDRyZ09jSHdzTFlWNm5DNklOOXU2RlQtdVVleS1Ga2lOa0t0N3ZWR0h2SEFYaUMwN294cFZtbll5c0FQcE9sdzRkcnJuXzVucTRaSTFtb2MyUnZwVWFRbXdDd1hsMVBCVk1MZDl2QUpt?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Bode George warns against ‘weaponisation’ of institutions  The Guardian Nigeria News
-
 ### BOI to channel 70% of €85m EIB facility to drive Nigeria's cocoa, dairy sectors | - theeagleonline.com.ng
 - **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS2phaHdvVVNadlJIUEdHRHBZMEMyYTc3U2ZyUThZTmdzcHhkbVZJUnNNMjZhSFNjMzliYkdiWndXSW1ianJHODdQWVFVckxCaUxZaXBKRDM4V3RHSHVWTm9OcnNWU3o5TExpV3hWY2psc0w5QzRDdjZUUDdjWDd1TUpVQnJINTRoc0xfY3JwOHR2bnhiOHRUUWpFdFFKTFhELUVGNG1OSW9nQWs?oc=5)
 - **Classification:** General (Other)
@@ -925,17 +895,11 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** Poor energy supply threatens Nigeria’s food security, says BoA  The Guardian Nigeria News
 
-### Insecurity: Police apprehends suspected bandit in military uniform in Kano - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiswFBVV95cUxPYWZ6UXpDb3BXeTNuUE5HTFYzcGRwMXNqZjhXbzN6aDA3STdETHdVZzAtVWZuQ0JoU3JPMy1SQks5MDNWMFZpY205VFVoMURTSDNKYVdBUkxKd0dRU3NDbzVNZF9ldkJDTFVBOUg2T1QyQmdMcHlJdjNaQ0hhTXVnM3M2Zm1hS242RkFkRjlsUDAxX1gxMi1BMjlIV3lDTXN0VXVMMlpqM0dpTmNITlN3TDhHYw?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Insecurity: Police apprehends suspected bandit in military uniform in Kano  The Guardian Nigeria News
-
-### Weather forecast predicts daily rain for the next 10 days - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVXJITms3aTk0SVFsYzBLRHZJWEpuYnYyRnY2bEZiNzhaZkoyb0xKci1FYVRMNnJKblhTTVhPa2hpY1NMS2t5bUVZODVfZG1HU3BRUDhDOEk2SVIxRUhHYjd5VExuMGJrRy0yYm5FdzlXTHhtNE43aFRDWFplYzBZQTc5VUJQRHJRNFNr?oc=5)
+### Headline inflation drops amid rising food prices - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMif0FVX3lxTE1tYWY3bXkyS3Jqck4za0JmcEk1WDZkUnBsc0lmcGt3Y0RlYjM2SHVVTWtFQXdDdlU0dE1jc2RoWlFlV09TM09pWm1aRHZjeW9UVTlKdHdxdGx4UHFIMENDR1pjTHVuQUF2alhneXlGZWNvWE5uWFdDc3JsazlQQzg?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** Weather forecast predicts daily rain for the next 10 days  The Guardian Nigeria News
+- **Brief summary:** Headline inflation drops amid rising food prices  The Guardian Nigeria News
 
 ### Edo pays N800m counterpart funding to control erosion - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihgFBVV95cUxQVHpHRkNua044V1I2X0F2MC1KLTdxLW5uX0x0d0I4eUh0NTZvX3VCVU0wNXlsZWI4aE1JdkRudU45RHY1Z3lNZ2dFckh2b0FzZ2xpY1VrZkhJSVZBdldVV25sd3ViOU9Ub3ZTRk1GMUNUZnN0U1hnVF90cTF2X3M0QmJBamo4UQ?oc=5)
@@ -943,11 +907,11 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Edo pays N800m counterpart funding to control erosion  The Guardian Nigeria News
 
-### ‘Nigeria must move beyond energy reforms to implementation’ - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxQMVRES01ybTl5Q2ZQeXBKOTZxd1hWWW0zUkNLOVNYUGtuQXB1SjJ2LURUVnlxeWxic2tnMjZqem54UERlVnczTHh5THZoTG9obTM2TUtxM1J0YzVYV2dTOVhSZGJwN1BWdmRUamUwTjh1TVRxczRYc2UtV2l6QXZ0RXBsaUN5TldpWm5NRGN3?oc=5)
+### Weather forecast predicts daily rain for the next 10 days - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVXJITms3aTk0SVFsYzBLRHZJWEpuYnYyRnY2bEZiNzhaZkoyb0xKci1FYVRMNnJKblhTTVhPa2hpY1NMS2t5bUVZODVfZG1HU3BRUDhDOEk2SVIxRUhHYjd5VExuMGJrRy0yYm5FdzlXTHhtNE43aFRDWFplYzBZQTc5VUJQRHJRNFNr?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** ‘Nigeria must move beyond energy reforms to implementation’  The Guardian Nigeria News
+- **Brief summary:** Weather forecast predicts daily rain for the next 10 days  The Guardian Nigeria News
 
 ### Tinubu celebrates Osoba at 87, hails ex-Governor as ‘brother in purpose’ - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimwFBVV95cUxPVUVfT2w0OEN5MS1kYjRqdlhUeWY3SVQzZGZhM3lCcXdzN2lnTTU5Vi1YRThQU3BmUHZobGhfM0J3Z1lsNTJVWWdxd216MjNNenAxeGhzUWFoTTRJVXJEZVhWTzJ2NHNSZWJHc2E1M1lCZUxxSmExTmtWVkhKNDJBLU91RS1zdkppM1BRcEFqdVQ2YjFOZ1FzSmVhaw?oc=5)
@@ -967,29 +931,23 @@
 - **Risk Score:** 32/100 (Low)
 - **Brief summary:** Tinubu to address UN General Assembly in September – Nigeria’s UN envoy  The Guardian Nigeria News
 
-### Prioritise benefits of retired Police officers, Okiro charges FG - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxObmJ3Um43Nmh0ZFlOUVN6QkptSkpmY1ZCSThVaHoyUFBhTkl5SXdVeXZjSWFic1A1aWtKMTBTRFlZOHhfQ3FkYnA1X1dOSXZ6dDYzQmh4QWFfc3NKMy1aM1VPOURLWjJibmhyaF9rNkRXc09VWnU0U1lydjd3WTkteVM0LW40dzkyUUJpWS1xbHJJOW8?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Prioritise benefits of retired Police officers, Okiro charges FG  The Guardian Nigeria News
-
 ### UNIBEN, NIS deepen partnership to advance sports education - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWDNFbTgxcVZYYkZHNmZFTDVqU3hNRzRUNUdwSkw4SnRlSkRNdmQ4V2kyLUM0b2VaeTR6eEtWZjNZbkxlTGNDc1FKYWdKUVV6NWVLX01Bb1Q1bmFveXhNbGt6UGZVTjZac3N4Y3ZscHhpUU16V3hld3B2OHZNUkR0MXFtdXVPLVVVQXVN?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 31/100 (Low)
 - **Brief summary:** UNIBEN, NIS deepen partnership to advance sports education  The Guardian Nigeria News
 
-### LAUTECH hospital discharges 31 rescued Oriire pupils - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMihAFBVV95cUxPaVJaZzRYYU5GM3h5eTgwYVhjNktXUUpJNk5ISmtqZlJmUUMweXhwZml2Q1cyS09MYXMtSWNqMlJMQlJjRWQ2clhoNnViUXNTSmxnNW44ZkRPQUFqanRzNWxvakJIZ0xINEVuTWgwazluSmxhWVZZNUJLanlUWEJ5cjlmLWs?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** LAUTECH hospital discharges 31 rescued Oriire pupils  The Guardian Nigeria News
-
 ### Gov Abiodun celebrates Osoba at 87, hails legacy of service - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxPNTBxdFpQdFpITk1GbUdPaGlOVHNWdW1IYUZaOU1QM0dmVmo3Ml9QczMtYm1kSFI4MXRuS0Nfc1hQSkMyd21PREhpUUlIYkxTMFVlTzVLWWJYeEkwZ3J5MjV4Y1ZWVTJYb0N4bTkySzBkZUZuUkVpVV93QjRiWVNOdXFwREI3akpNLVJxMw?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 29/100 (Low)
 - **Brief summary:** Gov Abiodun celebrates Osoba at 87, hails legacy of service  The Guardian Nigeria News
+
+### US announces visa rule changes for Nigerians, others | - theeagleonline.com.ng
+- **Source:** theeagleonline.com.ng | [Original Link](https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ0NrWEJWd0JyQnlDek9SbVRTZnFEUVVWYnFFdEJPZ0t5eWlpelNGaWxUeS0tNVdxYXY2TjlTcjhQOXpaQ3dzU1NkVFE3cjlyajZ1UGozZ1FkTkF3MVVISm5Fd0lnVkhpczdCTmQyaXJUU1NndGk3ZDY2YzFLalVyQWhpVGtaU3JlUXB4OEZ3d0M3eDhFUld0Nk51TTJHeFF5akg3MnRJNzlnSmhRWlZV?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 32/100 (Low)
+- **Brief summary:** US announces visa rule changes for Nigerians, others |  theeagleonline.com.ng
 
 ### FAAC shares N2.55tn June revenue to FG, States, LGs - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMigAFBVV95cUxNTjVRZ3g4ZTE2SkF5Slh2YnVsR2ZxelJCLWFsN3I1YUJnVmMtbkdrNGNkY3V6T1ctMkR5RVlOUVR1T0tSWEdlZndMS09fekdxSmlMZV9YMmgwODYtWWp2VUtmejcxQloyTU5NcHdRQ0ZiSlNnbzF2WlRteXZ0QjhURQ?oc=5)
@@ -1141,11 +1099,11 @@
 - **Risk Score:** 40/100 (Low)
 - **Brief summary:** Permanent Secretary of the Planning and Budget Commission Archives  Premium Times Nigeria
 
-### Stakeholders seek improved health financing to reduce maternal deaths - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcVRSbEZUX1lUckRhSjFuOFY5WkE2Qldka2JkVWt1Tm9nUDlHYXlXdUVpSVlGSU1tZzN4dXJDNXlyOHM2a2VIc3BDV0F0TlFrRUxGTm5tMUlYYVhPWUFzTkhBM29kYWJsSGdJLU5ZeTFuMm9EWVlzVEZCNGZuNzg4dEhBLWg1NDNEenM4QktVQ04tYThHZG5ZRmlWbVAwY1dzRlRkLU0wbzIwQQ?oc=5)
-- **Classification:** General (Other)
+### revenue records Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiX0FVX3lxTFBmSkZrQ0tUYk5id0FLcnk4eEZxUnVtblhWYy1tYXpEdE9Ra2pHNDVQYThQQVV3cXdPa1QzMVhiRHhzUFlUbHdFTS0wR2c2c005UWN2dlNHMllnRlVLV0tR?oc=5)
+- **Classification:** Company (Earnings)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** Stakeholders seek improved health financing to reduce maternal deaths  The Guardian Nigeria News
+- **Brief summary:** revenue records Archives  Premium Times Nigeria
 
 ### UPDATED: Judge orders Adeyemi’s arrest in fake agency trial - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMitwFBVV95cUxQWm9GcE5JUVgwaHU4azl1V2stZXpHZ25PS1RmWDQ3S0lVTlNfdmxRaFZLV0Q0OFBGV3VfdjdFUmQ5LWhyRU5aOEFWX1diMGpDUWRZOVgzZktNcVBqSHl0NE9RTXVXY293VUNidFU2ZUREbmtyM2dTc2xUbEh1TTVFN2c0MjBRakk4UDFtNkVyQjYyYnBSNlJiQmdNWEdncWlfYW1KZ1VPeXhZNlhkSlNlbVkwUWFJS3c?oc=5)
@@ -1225,12 +1183,6 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** PFIPC Saga: Adeniyi Adeyemi flown to Abuja in private jet  The Guardian Nigeria News
 
-### Foundation warns against diversion of Almajiri education funds - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikgFBVV95cUxOdVowT1NfdUo4Sy1NYXRqMTFnb0lmbTc1M2t3SFBpSW8yeUpTNHVHSVRjQllKdEx3eTVzVlBVX2ZKRWRhMDRoZjF1UmNCTVJ4QXFHVGJGOXZ1OUh1cTZJcWFLM3VLMjBxaTQ0QXA1eW5MVkVqb2dOcDNuOWdZNHRiV2kyeXdkOVpJSXQyQ09RRUpxQQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Foundation warns against diversion of Almajiri education funds  The Guardian Nigeria News
-
 ### Farmers seek transparent distribution of farm inputs in Ebonyi - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMixAFBVV95cUxOMHBzTDhGQzdCVDFzRUgzaDN6NW9BNWZvT01mTFEyYW9wdG54WUZtbDQ5UlY4NkhSMTBxYUFXQWQ5UmJORlZlY2JNOFUyWGx2c21CZU12bDZSQkFHekw5NmMydzYxMFJvbkU3T09feXBtT2xNNXlvMGNyY2w5dC15U25XSFhtVFg3dTBsNUVnRmp3aDdISVJOTkRpay1aRHhlVGQ5WExBbEctb2tveWg2ZExRd3Q4TXJtek9zMC00Z2ctWG1l?oc=5)
 - **Classification:** General (Other)
@@ -1303,6 +1255,12 @@
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** JohnPaul Ochi Archives  Premium Times Nigeria
 
+### trendsetters Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiW0FVX3lxTE5uZVlGQUtUcU9Dd3dkaEwxZUxKLU03MmFTYzFhN0RDbG40OWVWYk9OQV9JX2hGX1l6QTE4ZGNkUTZFcUhDMDlYaDAyZFR1WWtfa21pTzdXb0Jncjg?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** trendsetters Archives  Premium Times Nigeria
+
 ### Area of Ebonyi Archives - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qRFVxQUdCb05SZkdwY2VHSUhfRkcxYi1yeWZmbDlYQ2NXb3VrSllwN1Z0NGFaV2Z0TDVpRG14VnF4LWFCS3NRc3BSdjlod2JOOVR3MW91dHNaeGxUVWc?oc=5)
 - **Classification:** General (Other)
@@ -1351,23 +1309,17 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** rebuilding South-east Archives  Premium Times Nigeria
 
-### Abducted Kogi principal, NECO official, students rescued - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMivAFBVV95cUxNdnNhWWRtT0RsbmZjNjlMcmM0VFFncVZ0MHFWbEYzRTdwSW9SR0lMTmtUZHlLWlNuM3doUTdwM3pYbzZ2V194NnBCUGhtclpRajBhVWxRY1NlWUZSVnZ3a2pYUHR0UDd0SE5NcEVKQVZvU19LUkhvaTBRbVdDYVhkckxscUJydkFqZHVjRkg1WnlZN1RSbkR1bGtrQm5WblNXdDRsRG1pcWkxWVQtYm9kNVpONUhKYndxdy1qeg?oc=5)
-- **Classification:** Company (Earnings)
+### baby Lamine Yamal Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiYkFVX3lxTE1lWTRTZEw2cVhBMWd0cWN2MDNZTVdmQ1hYZkVxN0N3Y1JHOVBNRjgxekxxOU1Ib2Vvc1Jhc1hJUTJaMmF3WENxMUlqSjhkeDFoRnVWVW9VWG5xZjRIUGstanpB?oc=5)
+- **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
-- **Brief summary:** Abducted Kogi principal, NECO official, students rescued  Premium Times Nigeria
+- **Brief summary:** baby Lamine Yamal Archives  Premium Times Nigeria
 
 ### global fuel price Archives - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiYkFVX3lxTE0yUWhoR2h2ck5mbEtoT050NFlVQ0NoelNMQ2c1VHFhT1BPdm55c0pOMldLVHB6ZDN4clJzVVZlN2htbGpCQ0JBeHRncmYtbDhObE96Vy1WcjM4Vm1YZ3ZPdHVn?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** global fuel price Archives  Premium Times Nigeria
-
-### Why we rejected autopsy on Mary Habila despite controversial death — Family - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiywFBVV95cUxNcnlqWHNBOFhQaWdJbkFYMUJaX21uV2wzZXJ4MFUxNHlKNVdIMHNUX1kxZkdYWUZ4X0cyaUd1R2tWalJ3eUo5SFRtZzYweWZVTU9QclZJSXN1RVJrV1I2NmpaNWF2Qm42MWpoQTZPcVk5eTN0WjRoWjZSSmhYdTZsNjd3cUlXSHVMYkZodUpJZTdOejNhQXFxWnRWcy1OTmhuTVpqVnQ0TlllWjlVdndDMHBmT1VTbEYzV1JuSDNzTkUzZnVFZ05iTV9VTQ?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 25/100 (Low)
-- **Brief summary:** Why we rejected autopsy on Mary Habila despite controversial death — Family  Premium Times Nigeria
 
 ### disaster prevention Archives - Premium Times Nigeria
 - **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1fYWRHVWRpWXR1MU9pMmJZVGs2cXFDdlMySldFWFFBR04zRjVCNHY1RllRY2ZScUVjOU5LNE5wWVk5Wmg2TXZLN0p1WlJDek1kQkJBaG1HT1BhLUtNNm1kVEdmWmI?oc=5)
@@ -1387,11 +1339,11 @@
 - **Risk Score:** 40/100 (Low)
 - **Brief summary:** Persons with Significant Control (PSC) Archives  Premium Times Nigeria
 
-### fOgun State Archives - Premium Times Nigeria
-- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBZMGhOMENqSnhsS1NWZWNva0VfRG55bEhzcGtrblczR0lMS1FoT1pMc25oSk5JRjBYTTQxR2l1eFBkYkRsTWpHelNvX19LbkM5Ui1Wa1QtQUtrZw?oc=5)
+### political momentum Archives - Premium Times Nigeria
+- **Source:** Premium Times Nigeria | [Original Link](https://news.google.com/rss/articles/CBMiY0FVX3lxTE5xZVprdHBUM2Z4NHlpTjN0QzZFTDVtMXNrYVVLQWdtZDFHazNVT1B0VlZDYTZySENaRV91T2RvYlN4QnBHOF9WNVBWSWpVWWVHR0NyT3RfLUd4LXFmemVTd25UQQ?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 26/100 (Low)
-- **Brief summary:** fOgun State Archives  Premium Times Nigeria
+- **Brief summary:** political momentum Archives  Premium Times Nigeria
 
 ### Reps demand details of CBN, NNPCL’s unremitted operating surplus - Vanguard News
 - **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMioAFBVV95cUxNbDN2Z0RxOExpb092TWJVRnllU09DaWNpMTBxdFBmQjZncWJoU1duRGhoWUx1a3B5SVk0NmRwOWo2S05XODVLLUd5OFp3RVJzWk53TTJWN1c0VUVIMzc1QzZMNXBIQ3NMWENsT1VaNW0tWTdJQUgxWGRPbEtNLTA2cWVZUHR6b2NNYXhOeWJWZzZuU1lJNHNselREWUZrN0FW0gGmAUFVX3lxTE5jWTJBQUhfSzRfSHJBd1h0eHVpRXE4clExQUdId3FlXzlCOV9SZGI4UHlpXzlTcWxLTV91U25lbjJudGFqSnJwM1BYWHphS3g3T1lnWFZ6TXRObnM3Ujd1OWoyeE5jSUhiS29HUkI5MWRYUTdRZ0wzdWVTTzB6TTRkNm9RcVFUOFZGa2FDVU90MG5wVzVIMEoxeHR5eDlSY0stVnZYT0E?oc=5)
@@ -1470,6 +1422,12 @@
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** Let accountability prevail in probe of NNPCL’s N210tr shortfall  The Guardian Nigeria News
+
+### ‘Nigeria must move beyond energy reforms to implementation’ - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijgFBVV95cUxQMVRES01ybTl5Q2ZQeXBKOTZxd1hWWW0zUkNLOVNYUGtuQXB1SjJ2LURUVnlxeWxic2tnMjZqem54UERlVnczTHh5THZoTG9obTM2TUtxM1J0YzVYV2dTOVhSZGJwN1BWdmRUamUwTjh1TVRxczRYc2UtV2l6QXZ0RXBsaUN5TldpWm5NRGN3?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 26/100 (Low)
+- **Brief summary:** ‘Nigeria must move beyond energy reforms to implementation’  The Guardian Nigeria News
 
 ### World Cup 2026 winners to receive historic first championship rings - Vanguard News
 - **Source:** Vanguard News | [Original Link](https://news.google.com/rss/articles/CBMipwFBVV95cUxNb292cUhoR3hhLVlqSFZuQTYwTWpDbHUtQ1N4R1B2TEYtdzl2LTNJV09LLV9NWWgyS0dIR3BNMFpsOF8yQnlNRmFYYXlMbzNvTWdFWm9ETmVsY2JJV0dKQlJuQXVZWThELTBKalFfMUJPZGtwZ1JoRFJRV1Z2SFJrVWdDU25LSHBzek1EeGJYaVVKQmNSd2hleWNQdmNMQVlNRTZwRWRsa9IBrAFBVV95cUxPMDJseGlXUHdGVlliMm9razB5bWUwdlpVcHczVHJncEtwV2VLQU5kY0tjTThqcmM0a2diU1NsUzhqRjBnWmdBdFpwbGxjaDl1X2I0STVJbjNCME9jRTFNLVRZUjY3cnA1Q25DSmlYM1lqNFNsQ3JROUMxSVVkeVdEVEh2VVBjYW81eUYyTEtoSC1OZTROR2NEZlhpcE9kRkdpMGhuWURqcUwtZmFM?oc=5)
@@ -1603,12 +1561,6 @@
 - **Risk Score:** 36/100 (Low)
 - **Brief summary:** Court convicts two of impersonating EFCC officers, sets date for sentencing  Premium Times Nigeria
 
-### What should healing look like for the survivors of kidnapping in Oyo state? - The Guardian Nigeria News
-- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMipgFBVV95cUxNdEE0RVI1cGJJTGhlQU12QkktNE9tcGdVc3JsVnp6UDU2d3ZNU29DS2VTWWRGd1BhVjQxR0dPNVpWanlwSHp2UHZDTE8tR2JKMkNhYm9qcEg5eHVGb2V6bllXR1ozSWRfV3g5YTBrY1UzOG1EUWRHdExqZHF5YjV2aGJjZWV0cEwxQkJnRzlnSWlPWm5YSHNPbEpQMzRuOHJ4T3M3dVFn?oc=5)
-- **Classification:** General (Other)
-- **Risk Score:** 26/100 (Low)
-- **Brief summary:** What should healing look like for the survivors of kidnapping in Oyo state? The Guardian Nigeria News
-
 ### Dangote refinery’s dollar pricing: What it means for fuel prices, naira - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMimgFBVV95cUxOMTloTnhiVTZFRTdQYmpVN1ZvcjcxRmxDOHRZLXNfWFFjR0t0cEU0YWRUZ19WNFpmRHlTYkx3bXp5V1drYTctTHMxWGlpMTRVSmZPT0d3NXdKWGxxMTlfZ0cydUJabWJfNFY2bllxcUV5VkdweEFyd3pwNXNMSkhaZ3h1VGFoUzVnaUtrcWpnVFRmbm1FazhVaTNn?oc=5)
 - **Classification:** General (Other)
@@ -1669,11 +1621,23 @@
 - **Risk Score:** 26/100 (Low)
 - **Brief summary:** Headline inflation stagnates at 15.9% as rising energy prices trigger fresh concern  The Guardian Nigeria News
 
+### WRAHP pushes for mental health, end to stigmatisation - The Guardian Nigeria News
+- **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMikwFBVV95cUxPMXl0bHFIZzFQY3dpM01uRXI3cXByd0syTkZ5eHBwcDgwc0pfOVJ0a004YU90WXJ4YjhzTkdocm5xNFA0emxNUU12QkNIYWJhZERfN1ZLdGVDZmhiNWc3R2lLRHI3M1NYNE9aZmRUMU40Wk16Sy1ROFVmUFRQc08xam9nOTR5aTI1eGNCTjlCSUxKMXM?oc=5)
+- **Classification:** General (Other)
+- **Risk Score:** 28/100 (Low)
+- **Brief summary:** WRAHP pushes for mental health, end to stigmatisation  The Guardian Nigeria News
+
 ### 50 Women embrace resilience, hope at Inner Peace conference - The Guardian Nigeria News
 - **Source:** The Guardian Nigeria News | [Original Link](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSm1OTng3dG5EeU1nY0JVbXlQdHpXNHhOb29zU0x3bkQzZVZLQWlWYm5TczQwS3JVOTJPR19wbXJyeFg4YlAtX3hNMU5YSi04MmM0LTk5U0drV1dqUU5PVUV2My1TZjUtQVpkbDhwNzNUdzJoOE85QWFKR0wzZnhWMG1CX3hGNVRteDdwOQ?oc=5)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** 50 Women embrace resilience, hope at Inner Peace conference  The Guardian Nigeria News
+
+### Naira abuse: Randy Peter, Mama Pee return to EFCC for probe — Lawyer
+- **Source:** The Punch | [Original Link](https://punchng.com/naira-abuse-randy-peter-mama-pee-return-to-efcc-for-probe-lawyer/)
+- **Classification:** General (Other)
+- **Risk Score:** 31/100 (Low)
+- **Brief summary:** Activists Peter Akah and Precious Oruche, popularly known as Peter for Nigeria and Mama Pee, will return to the Economic and Financial Crimes Commission on Thursday. This is to continue an investiga… [+2263 chars]
 
 ### Stock market experts optimistic on H2’26 but warn investors
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/stock-market-experts-optimistic-on-h226-but-warn-investors/)
@@ -1805,12 +1769,6 @@ Six days after he was remanded in prison custody, a High Court of the Federal Ca
 - **Risk Score:** 32/100 (High)
 - **Brief summary:** Fulham have reached an agreement on personal terms with Super Eagles defender Chibuike Nwaiwu but must still convince Trabzonspor to sanction the move after the Turkish club rejected two bids for the… [+1568 chars]
 
-### Braga snaps up Inter Lagos teen
-- **Source:** The Punch | [Original Link](https://punchng.com/braga-snaps-up-inter-lagos-teen/)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Portuguese top-flight club SC Braga have completed the signing of highly rated Nigerian teenage defender Adebisi Olamikun from Nigeria Premier Football League side Inter Lagos, PUNCH Sports Extra rep… [+1213 chars]
-
 ### Marketers, others reject Dangote fuel pricing in dollars
 - **Source:** The Punch | [Original Link](https://punchng.com/marketers-others-reject-dangote-fuel-pricing-in-dollars/)
 - **Classification:** General (Other)
@@ -1823,23 +1781,11 @@ Six days after he was remanded in prison custody, a High Court of the Federal Ca
 - **Risk Score:** 30/100 (Low)
 - **Brief summary:** The President of the African Finance Corporation, Samaila Zubairu, and the Lagos Business School have urged African business leaders to embrace strong corporate governance and build Pan-African netwo… [+4565 chars]
 
-### Oyo abduction: Senate, SGF fault Makinde’s UN probe demand
-- **Source:** The Punch | [Original Link](https://punchng.com/oyo-abduction-senate-sgf-fault-makindes-un-probe-demand/)
-- **Classification:** Government (Policy)
-- **Risk Score:** 55/100 (High)
-- **Brief summary:** The Senate on Tuesday cautioned Oyo State Governor, Seyi Makinde, over his call for a United Nations-led investigation into the abduction and rescue of 39 pupils and six teachers in the state, warnin… [+15969 chars]
-
 ### Reps probe CBN, NNPC over unpaid govt revenues
 - **Source:** The Punch | [Original Link](https://punchng.com/reps-probe-cbn-nnpc-over-unpaid-govt-revenues/)
 - **Classification:** General (Other)
 - **Risk Score:** 28/100 (High)
 - **Brief summary:** The House of Representatives Public Accounts Committee on Tuesday stepped up its investigation into revenue remittances by federal agencies, directing the Office of the Accountant-General of the Fede… [+8359 chars]
-
-### Oyo APC slams Makinde over call for UN probe into school pupils’ rescue
-- **Source:** The Punch | [Original Link](https://punchng.com/oyo-apc-slams-makinde-over-call-for-un-probe-into-school-pupils-rescue/)
-- **Classification:** Government (Policy)
-- **Risk Score:** 54/100 (Low)
-- **Brief summary:** The Oyo State chapter of the All Progressives Congress, on Tuesday, condemned Governor Seyi Makinde’s call on the United Nations to investigate the circumstances surrounding the killings, abductions … [+2721 chars]
 
 ### Dangote's Dollar Shift Reveals Nigeria's Bigger Oil Problem
 - **Source:** OilPrice.com | [Original Link](https://oilprice.com/Latest-Energy-News/World-News/Dangotes-Dollar-Shift-Reveals-Nigerias-Bigger-Oil-Problem.html)
@@ -2028,12 +1974,6 @@ The National Industrial Court sitting in Abuja has barred police officers who ar
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** MILANO -FC Internazionale Milano is pleased to announce the signing of Antionette Oyedupe "Toni" Payne. The Nigerian forward, born in 1995, has signed a contract with the Club until 30 June 2028.
 
-### Moses Simon alleges tribalism during Rangers, club denies
-- **Source:** The Punch | [Original Link](https://punchng.com/moses-simon-alleges-tribalism-during-rangers-club-denies/)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Super Eagles winger Moses Simon has alleged that he was denied a professional contract by Rangers International Football Club years ago because of his tribe. The Enugu-based club has denied the alle… [+2898 chars]
-
 ### Rot in judiciary: It’s now a common talk that politicians ‘own’ some judges — Mato
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/rot-in-judiciary-its-now-a-common-talk-that-politicians-own-some-judges-mato/)
 - **Classification:** General (Other)
@@ -2097,13 +2037,6 @@ Enugu Rangers have strongly denied allegations by Super Eagles winger Moses Simo
 - **Brief summary:** By Adegboyega Adeleye
 Super Eagles defender Benjamin Fredrick has signed a new four-year contract with Brentford after being promoted to the Premier League club’s first-team squad ahead of the 2026/… [+2258 chars]
 
-### I survived on Garri, sold tomatoes, fish, S’Eagles’ Moses Simon shares struggles
-- **Source:** The Punch | [Original Link](https://punchng.com/i-survived-on-garri-sold-tomatoes-fish-seagles-moses-simon-shares-struggles/)
-- **Classification:** General (Other)
-- **Risk Score:** 28/100 (Low)
-- **Brief summary:** Super Eagles winger Moses Simon has opened up on the hardships he endured before becoming a professional footballer
-He revealed that he survived on garri and water for months while chasing his dream… [+2730 chars]
-
 ### Tinubu’s economic changes unprecedented in Nigeria’s history — Ooni
 - **Source:** The Punch | [Original Link](https://punchng.com/tinubus-economic-changes-unprecedented-in-nigerias-history-ooni/)
 - **Classification:** General (Other)
@@ -2121,12 +2054,6 @@ He revealed that he survived on garri and water for months while chasing his dre
 - **Classification:** General (Other)
 - **Risk Score:** 25/100 (Low)
 - **Brief summary:** Head coach Andrews said: Were delighted that Benji has signed a new deal and is going to be part of the group this season, because we see a lot of potential in him and where we can bring his game to.… [+4070 chars]
-
-### Forget the Goals, It’s the Face: Why Maduka Okoye is the Soccer Star We Didn’t Know We Needed
-- **Source:** The Root | [Original Link](https://www.theroot.com/forget-the-goals-it-s-the-face-why-maduka-okoye-is-th-2000115489)
-- **Classification:** General (Other)
-- **Risk Score:** 30/100 (Low)
-- **Brief summary:** International soccer star Maduka Okoye’s World Cup run with Team Nigeria may be over, but this insanely handsome man is still the talk of the timelines after an appearance at Paris Fashion Week (we s… [+3045 chars]
 
 ### Again, court adjourns judgment in forfeiture case against Malami’s properties
 - **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/again-court-adjourns-judgment-in-forfeiture-case-against-malamis-properties/)
@@ -2172,65 +2099,11 @@ Abuja: The Economic and Financial Crimes Commission on Thursday, arraigned the l
 - **Risk Score:** 28/100 (Low)
 - **Brief summary:** ExxonMobil, alongside its partners, is set to invest $1bn in on-block operations at the Usan Infill Project within Oil Mining Lease 138 offshore Nigeria. The project is expected to add 40,000 barrel… [+2067 chars]
 
-### Is Tinubu Nigeria’s saviour? Some genuinely think so! By Olu Fasan
-- **Source:** Vanguard | [Original Link](https://www.vanguardngr.com/2026/07/is-tinubu-nigerias-saviour-some-genuinely-think-so-by-olu-fasan/)
-- **Classification:** General (Other)
-- **Risk Score:** 24/100 (Low)
-- **Brief summary:** Recently, two weeks ago to be precise, I found myself in an ambush, facing something akin to a Spanish Inquisition. I had attended the wedding of a friends daughter in London.
-
 ### Furore in Nigeria over fake federal agency set up in government HQ
 - **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/09/bola-tinubu-under-pressure-fake-nigerian-government-agency-political-storm)
 - **Classification:** Government (Appointment)
 - **Risk Score:** 76/100 (Critical)
 - **Brief summary:** A fictitious federal entity that was allocated 1.3bn naira (£700,000) in Nigeria’s 2026 budget has precipitated a political storm in Africa’s largest democracy in the run-up to a general election set for January. The fake agency came to light last October when Femi Gbajabiamila, the president’s chief of staff, wrote to the police alleging that his signature, along with official seals and reference numbers, had been forged by Adeniyi Adeyemi Matthew, who was claiming to have been appointed by the presidency to head the presidential foreign intervention promotion council (PFIPC).
-
-### Nigeria says army has killed 300 bandits in north-western state of Zamfara
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jul/11/nigeria-army-kills-bandits-north-western-state-zamfara)
-- **Classification:** General (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** Nigerian soldiers killed more than 300 members of kidnapping and cattle bandit gangs in the north-western state of Zamfara this week, according to a government official. Government troops targeted the gangs in Gummi district in a two-day operation that “led to the elimination of more than 300 terrorists”, Zamfara’s information commissioner, Mahmud Muhammad Dantawasa, said in a statement.
-
-### How rampant violence made Nigeria an insecurity hotspot in the Sahel – mapped
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/ng-interactive/2026/may/19/how-rampant-violence-nigeria-insecurity-hotspot-sahel-mapped)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 39/100 (Low)
-- **Brief summary:** Data from Acled and the Global Terrorism Index shows that after a few years of improvement, insecurity in Nigeria has worsened. With general elections less than a year away, the crisis has come under increasing scrutiny – both abroad and at home.
-
-### Bandits in north-west Nigeria abduct villagers they invited to discuss peace talks 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jun/08/bandits-in-north-west-nigeria-abduct-villagers-they-invited-to-discuss-peace-talks)
-- **Classification:** General (Other)
-- **Risk Score:** 32/100 (Low)
-- **Brief summary:** Armed bandits in north-west Nigeria abducted dozens of villagers whom they invited to a meeting about potential peace negotiations, authorities and residents said on Monday, highlighting the region’s worsening security. According to local police, 39 people were seized on Sunday during a meeting in the forest near Magamin Diddi village in the Maradun municipality of north-west Zamfara state.
-
-### Clarissa review – Sophie Okonedo mesmeric as Virginia Woolf’s Mrs Dalloway decamps to Nigeria 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/film/2026/may/16/clarissa-review-virginia-woolf-mrs-dalloway-nigeria)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 41/100 (Low)
-- **Brief summary:** Virginia Woolf seems to be having a moment in the movies. Soon, we will see Tina Gharavi’s new version of Woolf’s comic novel Night and Day; and now, Nigerian film-making brothers Arie and Chuko Esiri have brought to Cannes their interpretation of Woolf’s Mrs Dalloway, a seductively mysterious, languorous, melancholy drama with commanding performances and a great musical score.
-
-### Nigeria takes its place on world stage in quest to become regional superpower
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/news/2026/mar/26/nigeria-regional-superpower-uk-reparative-justice-trade-economic-ties)
-- **Classification:** General (Other)
-- **Risk Score:** 52/100 (Low)
-- **Brief summary:** “There are chapters in our shared history that I know have left some painful marks,” King Charles said during a state banquet to welcome the Nigerian president, Bola Tinubu, to the UK, in a year in which the monarch is expected to come under renewed pressure to make a formal apology for transatlantic slavery and colonialism. But while demands grow from African and Caribbean nations for the UK to further reparative justice, Nigeria and the UK are looking to the future of global trade.
-
-### At least 23 people killed in suspected suicide attacks in north-eastern Nigeria
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/mar/17/bombings-north-eastern-nigeria-maiduguri)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 49/100 (Low)
-- **Brief summary:** At least 23 people have been killed and more than 100 others injured in multiple suspected suicide bombings in the north-eastern Nigerian city of Maiduguri, shattering its reputation as a relative oasis of calm in recent years as a long-running insurgency was pushed to the rural hinterlands. Authorities said the explosions went off at the post office and market areas, as well as the entrance to the University of Maiduguri teaching hospital, on Monday evening during iftar, the breaking of fast in the month of Ramadan.
-
-### Anthony Joshua discharged from hospital in Nigeria after car crash
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jan/01/anthony-joshua-released-from-hospital-in-nigeria-car-crash-boxing)
-- **Classification:** General (Other)
-- **Risk Score:** 36/100 (Low)
-- **Brief summary:** The British boxer Anthony Joshua has been discharged from hospital, Nigerian authorities said on Wednesday night. The two-time former heavyweight champion and 2012 Olympic gold medallist was a passenger in a car accident near Lagos on Monday which killed two of his close associates and team members.
-
-### Gunshots at 9am. Then they rounded up the children: how Chibok-style school abductions are spreading in Nigeria
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/global-development/2026/jun/05/children-how-chibok-style-school-abductions-spreading-nigeria)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** Sitting on a wooden bench under the tree near her home, Aduke Balogun’s gaze is fixed on the road. Her eyes are red from crying and a lack of sleep.
 
 ### ‘The world’s memory’: why Nigeria is burying its history under a mountain in Svalbard
 - **Source:** The Guardian | [Original Link](https://www.theguardian.com/global-development/2026/mar/17/arctic-world-archive-nigeria-history-culture-svalbard)
@@ -2238,128 +2111,50 @@ Abuja: The Economic and Financial Crimes Commission on Thursday, arraigned the l
 - **Risk Score:** 44/100 (Low)
 - **Brief summary:** A decommissioned coalmine near the north pole is the last place you’d expect to find Indigenous stories from rural Nigeria, but deep below the Arctic permafrost of Svalbard a storage unit contains a cache of cultural and literary records from the West African country. The Arctic World Archive (AWA) is a data storage unit where organisations and individuals can deposit records kept on specialist digitised film called Piql that lasts up to 2,000 years.
 
-### Trump supporters hail US strikes in Nigeria as ‘amazing Christmas present’
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2025/dec/26/trump-supporters-nigeria-airstrikes)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Medium)
-- **Brief summary:** The US’s Christmas Day strikes against Islamic State targets in Nigeria have been met with praise by Donald Trump supporters who for months had been agitating for the president to respond forcefully to the killings of Christians in the country. “I can’t think of a better way to celebrate Christmas than by avenging the death of Christians through the justified mass killing of Islamic terrorists,” the far-right political activist Laura Loomer posted on X.
-
-### Gunmen kill more than 160 people in attacks on two west Nigeria villages
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/feb/04/gunmen-west-nigeria-attack-red-cross)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** More than 160 people have been killed in two villages in western Nigeria in the country’s deadliest armed assaults this year, as communities reel from repeated and widespread acts of violence perpetrated by jihadists and other armed groups. The death toll from Tuesday’s attacks in Woro and Nuku in Kwara state stood at 162 on Wednesday afternoon, according to Mohammed Omar Bio, a member of parliament representing the area.
-
-### Why is Donald Trump threatening military intervention in Nigeria?
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2025/nov/03/why-is-donald-trump-threatening-military-intervention-in-nigeria)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** Donald Trump has threatened to launch a “guns-a-blazing” US military intervention in Nigeria, claiming that the west African country’s government has failed to prevent attacks on Christians. Here’s what we know so far about the unfolding situation.
-
-### Anthony Joshua’s driver charged with dangerous driving after fatal crash in Nigeria
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jan/02/anthony-joshuas-driver-charged-with-dangerous-driving-after-fatal-crash-in-nigeria)
-- **Classification:** General (Other)
-- **Risk Score:** 49/100 (Low)
-- **Brief summary:** Nigerian police have charged Anthony Joshua’s driver with causing death by dangerous driving after a fatal crash that killed two people. Adeniyi Mobolaji Kayode, 46, was also charged with driving without a valid driving licence and “driving without due care and attention, causing bodily harm and damage to property”.
-
-### Uganda 1-3 Nigeria: Africa Cup of Nations 2025 – as it happened
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/live/2025/dec/30/uganda-v-nigeria-africa-cup-of-nations-2025-live)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (High)
-- **Brief summary:** That’s all from me. Congratulations to Nigeria, who were very professional here, even with so many changes to their XI.
-
-### US carries out strikes on Nigeria targeting Islamic State militants, Trump says
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/us-news/2025/dec/25/us-carries-out-airstrikes-against-islamic-state-terrorist-scum-in-nigeria-trump-says)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 42/100 (Low)
-- **Brief summary:** Donald Trump has said the US carried out airstrikes against Islamic State militants in north-west Nigeria on Thursday, after spending weeks decrying the group for targeting Christians. The president said in a post on his Truth Social platform: “Tonight, at my direction as Commander in Chief, the United States launched a powerful and deadly strike against ISIS Terrorist Scum in Northwest Nigeria, who have been targeting and viciously killing, primarily, innocent Christians, at levels not seen for many years, and even Centuries!
-
-### ‘The optics are terrible’: wedding guest list in spotlight as violence grips swathes of Nigeria 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/feb/24/the-optics-are-terrible-wedding-guest-list-in-spotlight-as-violence-grips-swathes-of-nigeria)
-- **Classification:** Government (Policy)
-- **Risk Score:** 76/100 (Low)
-- **Brief summary:** It has been described as Nigeria’s wedding of the year – and it is only February. This month, five sons and five daughters of the junior defence minister Bello Matawalle married their spouses in an opulent six-day celebration in Abuja.
-
 ### Morocco book place in home Afcon final as Bounou denies Nigeria in shootout
 - **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2026/jan/14/africa-cup-of-nations-final-nigeria-morocco-semi-final-report)
 - **Classification:** Company (Earnings)
 - **Risk Score:** 41/100 (Low)
 - **Brief summary:** Morocco advanced to the Africa Cup of Nations final on penalties, beating Nigeria 4-2 in the final shootout after their semi-final ended goalless after extra time. Yassine Bounou saved two spot kicks for the tournament hosts, keeping out Samuel Chukwueze and Bruno Onyemaechi’s efforts.
 
-### England captain Maro Itoje absent from training camp to attend mother’s funeral in Nigeria
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2026/jan/26/england-captain-maro-itoje-absent-from-training-camp-to-attend-mothers-funeral-in-nigeria)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 47/100 (Low)
-- **Brief summary:** England will kick off their Six Nations training camp in Spain this week without their captain, Maro Itoje, who has travelled to Nigeria for his mother’s funeral. Itoje was absent from the official Six Nations championship launch in Edinburgh on Monday and is not expected to join his squad until Wednesday evening.
-
-### Jihadist violence in Nigeria and DRC rose sharply last year even as global deaths from terror fell
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/mar/19/jihadist-violence-nigeria-drc-terrorism-index)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** Jihadist violence rose sharply in Nigeria and Democratic Republic of Congo last year, even as global deaths from terrorism dropped to their lowest level in a decade, according to a new report. Nigeria recorded the largest increase in terrorism deaths globally in 2025, with fatalities rising by 46% from 513 in 2024 to 750, placing it fourth in the Global Terrorism Index, behind Pakistan, Burkina Faso and Niger.
-
-### US warns of more Nigeria strikes as Abuja talks of ‘joint ongoing operations’
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2025/dec/26/us-warns-of-more-nigeria-strikes-as-abuja-talks-of-joint-ongoing-operations)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Medium)
-- **Brief summary:** The US defence secretary, Pete Hegseth, has warned of new strikes against Islamic State targets in north-western Nigeria, hours after the US military took action against militant camps in what Donald Trump has characterised as efforts to stop the killing of Christians. Hegseth wrote on X: “The president was clear last month: the killing of innocent Christians in Nigeria (and elsewhere) must end.
-
-### Algeria 0-2 Nigeria: Africa Cup of Nations 2025 quarter-final – as it happened
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/live/2026/jan/10/algeria-v-nigeria-africa-cup-of-nations-2025-quarter-final-live)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (High)
-- **Brief summary:** The match report is in. That’s all from me today.
-
-### Nigeria head coach Justine Madugu: ‘As Africans, we love expressing ourselves’
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/football/2025/nov/06/nigeria-head-coach-justine-madugu-interview-moving-the-goalposts)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** At 61, most top-level head coaches have nostalgic moments as they reflect on the high points of their topsy-turvy careers. But for Justine Madugu, who made the 2025 Ballon d’Or shortlist for women’s team coach of the year after dramatically leading the Super Falcons to a record 10th Women’s Africa Cup of Nations title in Morocco in July, his managerial odyssey is only beginning.
-
-### Two weeks on, questions linger over targeting and impact of US airstrikes in Nigeria 
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/world/2026/jan/08/questions-targeting-impact-us-airstrikes-in-nigeria)
-- **Classification:** Company (Earnings)
-- **Risk Score:** 44/100 (Low)
-- **Brief summary:** Two weeks after the US carried out Christmas Day airstrikes in north-west Nigeria on what it described as Islamic State fighters, questions remain over the specific group that was targeted and the operation’s impact. In the aftermath of the strikes, Donald Trump said in a post on his Truth Social platform that “ISIS Terrorist Scum in Northwest Nigeria, who have been targeting and viciously killing, primarily, innocent Christians” were hit with “numerous perfect strikes”.
-
-### Anthony Joshua’s camp confirm two of his close friends died in Nigeria car crash
-- **Source:** The Guardian | [Original Link](https://www.theguardian.com/sport/2025/dec/29/anthony-joshua-injured-car-crash-nigeria)
-- **Classification:** Government (Policy)
-- **Risk Score:** 80/100 (High)
-- **Brief summary:** The British heavyweight boxer Anthony Joshua has issued a statement after he was injured in a car crash in Nigeria on Monday morning which killed two of his close friends. The former world heavyweight boxing champion was taken to an undisclosed hospital after his car hit a stationary vehicle at about 11am on the Lagos-Ibadan Expressway, the Ogun state police commissioner, Lanre Ogunlowo, said.
-
-### 2027: Group Alleges Plot By APC Chieftains To Concede Benue To Opposition Parties
-- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/2027-group-alleges-plot-by-apc-chieftains-to-concede-benue-to-opposition-parties/)
+### Tinubu commissions Abuja City Walk project
+- **Source:** nigeriannewsdirect | [Original Link](https://nigeriannewsdirect.com/tinubu-commissions-abuja-city-walk-project/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Nigerian govt mobilises N7.6bn for child nutrition – Shettima
-- **Source:** dailynigerian | [Original Link](https://dailynigerian.com/nigerian-govt-mobilises-n7-6bn-for-child-nutrition-shettima/)
+### Exclusive-Iran tells Houthis to close Red Sea gateway if US hits power network, sources say
+- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/exclusive-iran-tells-houthis-to-close-red-sea-gateway-if-us-hits-power-network-sources-say/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### French MPs Approve Assisted Dying Bill Amid Strict Conditions After Years of Debate
-- **Source:** leadership | [Original Link](https://leadership.ng/french-mps-approve-assisted-dying-bill-amid-strict-conditions-after-years-of-debate/)
+### US Air Force F-33 fighter jet declares emergency over UAE 'after Iran attack'
+- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/us-air-force-f-33-fighter-jet-declares-emergency-over-uae-after-iran-attack/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Delta Youths Petitions National Assembly Over Alleged Fraud In NDDC internship Programme
-- **Source:** leadership | [Original Link](https://leadership.ng/delta-youths-petitions-national-assembly-over-alleged-fraud-in-nddc-internship-programme/)
+### The ‘Osondi Owendi’ World Cup
+- **Source:** sunnewsonline | [Original Link](https://thesun.ng/the-osondi-owendi-world-cup/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Spanish taxis warned they will be stopped from entering Gibraltar as border removed
-- **Source:** naijaonpoint_ng | [Original Link](https://naijaonpoint.com.ng/spanish-taxis-warned-they-will-be-stopped-from-entering-gibraltar-as-border-removed/)
+### Tinubu Launches $3.05bn World Bank-Backed Programmes To Fight Poverty
+- **Source:** leadership | [Original Link](https://leadership.ng/tinubu-launches-3-05bn-world-bank-backed-programmes-to-fight-poverty/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
 
-### Babcock University Forges Stronger Academic Bond With South Africa’s Venda University
-- **Source:** independentng | [Original Link](https://independent.ng/babcock-university-forges-stronger-academic-bond-with-south-africas-venda-university/)
+### Kaduna’s debt rethink in turbulent economy
+- **Source:** sunnewsonline | [Original Link](https://thesun.ng/kadunas-debt-rethink-in-turbulent-economy/)
+- **Classification:** General (Other)
+- **Risk Score:** 24/100 (Low)
+- **Brief summary:** ONLY AVAILABLE IN PAID PLANS
+
+### PFIPC Scandal: Gbajabiamila Sues Alleged Fake DG For N15bn Over Bribery Claim
+- **Source:** leadership | [Original Link](https://leadership.ng/pfipc-scandal-gbajabiamila-sues-alleged-fake-dg-for-n15bn-over-bribery-claim/)
 - **Classification:** General (Other)
 - **Risk Score:** 24/100 (Low)
 - **Brief summary:** ONLY AVAILABLE IN PAID PLANS
