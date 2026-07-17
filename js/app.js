@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const tabExec = document.getElementById("modal-summary-executive");
     const tabDetailed = document.getElementById("modal-summary-detailed");
     const tabTimeline = document.getElementById("modal-summary-timeline");
+
+    const tabExecWrapper = document.getElementById("tab-executive");
+    const tabDetailedWrapper = document.getElementById("tab-detailed");
+    const tabTimelineWrapper = document.getElementById("tab-timeline");
     let currentArticleData = null;
 
     // Initialize Lucide Icons
@@ -73,9 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
             risk_score: score,
             risk_level: art.risk_level || level,
             sentiment: art.sentiment || "Neutral",
-            summary_executive: art.Summary || art.summary_executive || art.summary || "",
-            summary_detailed: art.summary_detailed || art.Summary || art.summary_executive || "",
-            summary_timeline: art.summary_timeline || art.Summary || art.summary_executive || "",
+            summary_executive: art.Summary || art.summary_executive || art.summary || art.Title || art.title || "No summary available.",
+            summary_detailed: art.summary_detailed || art.Summary || art.summary_executive || art.Title || art.title || "No detailed summary available.",
+            summary_timeline: art.summary_timeline || art.Summary || art.summary_executive || "No timeline summary available.",
             published_at: art.Time || art.published_at || new Date().toISOString()
         };
     }
@@ -492,7 +496,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tabBtns.forEach(btn => btn.classList.remove("active"));
         tabBtns[0].classList.add("active");
         document.querySelectorAll(".tab-content").forEach(content => content.classList.add("hidden"));
-        tabExec.classList.remove("hidden");
+        tabExecWrapper.classList.remove("hidden");
 
         // Fetch related entities (mock parse for display)
         renderModalEntities(art);
@@ -557,9 +561,9 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelectorAll(".tab-content").forEach(content => content.classList.add("hidden"));
             
             const tabId = btn.getAttribute("data-tab");
-            if (tabId === "executive") tabExec.classList.remove("hidden");
-            else if (tabId === "detailed") tabDetailed.classList.remove("hidden");
-            else if (tabId === "timeline") tabTimeline.classList.remove("hidden");
+            if (tabId === "executive") tabExecWrapper.classList.remove("hidden");
+            else if (tabId === "detailed") tabDetailedWrapper.classList.remove("hidden");
+            else if (tabId === "timeline") tabTimelineWrapper.classList.remove("hidden");
         });
     });
 
@@ -601,25 +605,44 @@ document.addEventListener("DOMContentLoaded", () => {
         const icon = triggerIngestBtn.querySelector("i");
         if (icon) icon.classList.add("spin");
         
-        try {
-            const res = await fetch(`${API_BASE}/news/trigger-ingest`, { method: "POST" });
-            const data = await res.json();
+        // Add a pulsing effect to the button itself
+        triggerIngestBtn.style.animation = "activePulse 1.5s infinite";
+
+        if (isGitHubPages) {
+            // Simulated delay for loading effect
+            await new Promise(r => setTimeout(r, 800));
             
-            alert("Background news collection enqueued successfully. Wait a few moments then refresh!");
-            
-            // Reload stats and feed after 3 seconds
-            setTimeout(() => {
-                loadDashboardStats();
-                loadNewsFeed("", currentCategory);
-                loadAnalyticsAndGraph();
-                
-                triggerIngestBtn.disabled = false;
-                if (icon) icon.classList.remove("spin");
-            }, 3000);
-        } catch (err) {
-            console.error("Failed to trigger ingestion:", err);
+            triggerIngestBtn.style.animation = "";
             triggerIngestBtn.disabled = false;
             if (icon) icon.classList.remove("spin");
+            
+            // Show custom informational modal for GitHub Pages
+            alert("Cloud Deployment Detected!\n\nBecause this dashboard is hosted serverlessly on GitHub Pages, the intelligence scrapers run securely on a fixed cloud schedule (8 AM, 2 PM, 7 PM).\n\nTo trigger an immediate data ingestion manually, please visit your GitHub Repository -> Actions Tab -> Run Workflow.");
+            window.open("https://github.com/Adejare-ml/News-Intelligence-System/actions", "_blank");
+        } else {
+            try {
+                const res = await fetch(`${API_BASE}/news/trigger-ingest`, { method: "POST" });
+                const data = await res.json();
+                
+                alert("Local background news collection enqueued successfully. Wait a few moments then refresh!");
+                
+                // Reload stats and feed after 3 seconds
+                setTimeout(() => {
+                    loadDashboardStats();
+                    loadNewsFeed("", currentCategory);
+                    loadAnalyticsAndGraph();
+                    
+                    triggerIngestBtn.style.animation = "";
+                    triggerIngestBtn.disabled = false;
+                    if (icon) icon.classList.remove("spin");
+                }, 3000);
+            } catch (err) {
+                console.error("Failed to trigger ingestion:", err);
+                alert("Failed to connect to local ingestion server.");
+                triggerIngestBtn.style.animation = "";
+                triggerIngestBtn.disabled = false;
+                if (icon) icon.classList.remove("spin");
+            }
         }
     });
 
