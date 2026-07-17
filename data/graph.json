@@ -1,575 +1,425 @@
 {
   "nodes": [
     {
-      "id": 348978557337132730,
-      "label": "UPDC\u00a0\u00a0Premium Times Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": 5284740576381075494,
-      "label": "Senate",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
-      "id": -72121456181954938,
-      "label": "ICPC",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
-      "id": 3718952386486361437,
-      "label": "The Guardian Nigeria News",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": -8533104796448210461,
+      "id": -437186948197703102,
       "label": "AEW",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 4547251560605128152,
+      "id": 4945038122215741435,
       "label": "the Continent\u2019s Energy Economy",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": -729323456748968769,
-      "label": "UBA Business Series",
+      "id": -2416292596106897107,
+      "label": "The Guardian Nigeria News",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 3465491210146764263,
-      "label": "Chowdeck",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": -4309379150785865914,
-      "label": "Egunjobi",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": 5878957519857931409,
-      "label": "Premium Times Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": -1135072832680845478,
+      "id": 3346648627034131421,
       "label": "NIWA",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": -6135090020138984044,
+      "id": -930394135976004442,
       "label": "FX",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 3732125623665190702,
+      "id": 8355426670060352362,
       "label": "EFCC",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 1786549552873652685,
+      "id": -4201494638567197748,
       "label": "ex-Skye Bank",
       "type": "company",
       "risk": "Critical"
     },
     {
-      "id": -8640818249860596816,
+      "id": -7984951980616962105,
       "label": "Tunde Ayeni",
       "type": "company",
       "risk": "Critical"
     },
     {
-      "id": 3153508027989446128,
-      "label": "The North-West Development Commission\u2019s",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -5936590934707169004,
-      "label": "Federal Medical Laboratory Varsity",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -8335178352068252346,
-      "label": "Education Ministry",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -6734691903628263325,
-      "label": "the Planning and Budget Commission Archives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -398644236537702309,
-      "label": "the Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 7025867685139468712,
-      "label": "The Police Service Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 4743344633850400031,
-      "label": "Abuja The Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -4260732626046511373,
-      "label": "The Federal Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -8703828536394967093,
-      "label": "ABUJA The Federal High Court",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -8002555682339861235,
-      "label": "a High Court of the Federal Capital Territory",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -7346290086154321024,
-      "label": "the Niger Delta Development Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 8220171049749115566,
-      "label": "The Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -9096120070739765604,
-      "label": "Yusuf Hassan Wada",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 8659335881578527587,
-      "label": "N3.16b NELFUND",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 6575584090202563058,
-      "label": "Njideka Agbo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -7595655451364186801,
-      "label": "Guardian Life",
+      "id": -2655375682971637765,
+      "label": "Premium Times Nigeria",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 7448422102791837460,
-      "label": "Jide Kosoko",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 7982026406663077711,
-      "label": "Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 4541530879394499405,
-      "label": "Abubakar Kabir Bichi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -5192781476228464900,
-      "label": "Hanga",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -550541223701379178,
-      "label": "APC",
+      "id": -1254672632521369084,
+      "label": "ITF",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": -1448727467696953178,
-      "label": "Hajj 2027:",
-      "type": "person",
-      "risk": "Low"
+      "id": -3670595721539496361,
+      "label": "NBTE",
+      "type": "company",
+      "risk": "Medium"
     },
     {
-      "id": 9109447418933491308,
-      "label": "Shettima",
+      "id": 9132809878044752531,
+      "label": "Senate",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 6819297603976112894,
-      "label": "Kefas",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 8312527884382174688,
-      "label": "Bashir Are",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -198455717970464635,
-      "label": "Disc Jockeys",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -6590689543372863441,
-      "label": "Gov Ododo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -1586563634440453723,
-      "label": "Okene Secondary Schools",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -6536704100257067011,
-      "label": "Yinka Quadri",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": -2214487666855064328,
-      "label": "LASTMA",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": 6642317409451056514,
-      "label": "Shuaib S. Agaka",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 6256234883491994058,
-      "label": "AI",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": -6527271953317024747,
-      "label": "Atiku",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": 1327936940954169678,
-      "label": "BCDA",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": 854481101962153622,
+      "id": -8919011712609635019,
       "label": "National Assembly",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 3181680232054740797,
-      "label": "Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 7549156202223512799,
-      "label": "FG",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 7815278543355481768,
-      "label": "NYSC",
+      "id": -6873370654376928635,
+      "label": "BusinessDay",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": 3762465348354589357,
+      "id": 9191898345946341871,
+      "label": "FG",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -1309314102632375272,
+      "label": "The North-West Development Commission\u2019s",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -5799196063668178735,
+      "label": "Federal Medical Laboratory Varsity",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -3031347271937180334,
+      "label": "Education Ministry",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -6678356085332552617,
+      "label": "the Planning and Budget Commission Archives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -2349849745762459832,
+      "label": "The Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": 1532759490961115196,
+      "label": "the Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -4489757016722107851,
+      "label": "The Police Service Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -7842434669036185334,
+      "label": "Abuja The Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -6885393137773418236,
+      "label": "The Federal Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -3512907574865532013,
+      "label": "ABUJA The Federal High Court",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": -5713752855008808211,
+      "label": "Yusuf Hassan Wada",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -7819108518198942709,
+      "label": "N3.16b NELFUND",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -7947180660103653196,
+      "label": "Jide Kosoko",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 148402940428017059,
+      "label": "Tinubu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -3270763477112262421,
+      "label": "Hanga",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 7783631323779686387,
+      "label": "APC",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -3870251847412886396,
+      "label": "Shettima",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 133550232286604686,
+      "label": "Disc Jockeys",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -8251543833386776054,
+      "label": "Gov Ododo",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 3307422486893234069,
+      "label": "Okene Secondary Schools",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -1804980198849818149,
+      "label": "Yinka Quadri",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 275469628669812966,
+      "label": "LASTMA",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": 622822438926135709,
+      "label": "Shuaib S. Agaka",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 8308337091221131638,
+      "label": "AI",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -5124471665708559580,
+      "label": "Atiku",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -7688367299389192015,
+      "label": "BCDA",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -9133549549277520747,
+      "label": "Hajj 2027:",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -3847582654627550468,
+      "label": "Bill Proposing",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -3643236447974695111,
+      "label": "BoA",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -1557436143900945469,
+      "label": "UN General Assembly",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": -7769781276815649235,
+      "label": "Gov Abiodun",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": -5558406193346434841,
+      "label": "Osoba",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": 5336484324335051279,
       "label": "AfCFTA",
       "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 6401495557246784580,
-      "label": "CBN",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -8158998283950962017,
-      "label": "Vanguard News",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": -8670908118215901136,
-      "label": "Tracked Contractor",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": 7627799403475991748,
-      "label": "MILANO",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 8738666833275567566,
-      "label": "Club",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": 2988052966437252537,
-      "label": "Super Eagles",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -6214031502378751899,
-      "label": "Enugu Rangers",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": -8923370809187466109,
-      "label": "Brentford",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": -1709309045147700676,
-      "label": "The Nigeria Immigration Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": 6970222791117183301,
-      "label": "NIS",
-      "type": "company",
       "risk": "Low"
     }
   ],
   "edges": [
     {
-      "id": -4356136958999879943,
-      "from": -9096120070739765604,
-      "to": 3153508027989446128,
+      "id": 4305430207827965269,
+      "from": -5713752855008808211,
+      "to": -1309314102632375272,
       "label": "Appointed as Officer"
     },
     {
-      "id": -1178781692011380652,
-      "from": 8659335881578527587,
-      "to": 3718952386486361437,
+      "id": 4846591839371055866,
+      "from": -7819108518198942709,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 6076653262454198072,
-      "from": 6575584090202563058,
-      "to": -7595655451364186801,
+      "id": 2005501996927892478,
+      "from": -7947180660103653196,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 2848829126316350596,
-      "from": 7448422102791837460,
-      "to": 3718952386486361437,
+      "id": 8734248610209923084,
+      "from": 148402940428017059,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 5003928143479661492,
-      "from": 7982026406663077711,
-      "to": 3718952386486361437,
+      "id": -6929146243379084457,
+      "from": -3270763477112262421,
+      "to": 7783631323779686387,
       "label": "Appointed as Officer"
     },
     {
-      "id": 9058041435190628198,
-      "from": 4541530879394499405,
-      "to": 3718952386486361437,
+      "id": 263439345722334265,
+      "from": 148402940428017059,
+      "to": -3870251847412886396,
       "label": "Appointed as Officer"
     },
     {
-      "id": 1290994023418995184,
-      "from": -5192781476228464900,
-      "to": -550541223701379178,
+      "id": -8827692882203273874,
+      "from": 133550232286604686,
+      "to": -2655375682971637765,
       "label": "Appointed as Officer"
     },
     {
-      "id": 3784971955035614778,
-      "from": 7982026406663077711,
-      "to": 9109447418933491308,
+      "id": 3257981999225969956,
+      "from": -8251543833386776054,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 5426853810767579953,
-      "from": 6819297603976112894,
-      "to": 3718952386486361437,
+      "id": -1080185271503268915,
+      "from": 3307422486893234069,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 6917682214453303697,
-      "from": 8312527884382174688,
-      "to": 3718952386486361437,
+      "id": -1189012536051113583,
+      "from": -1804980198849818149,
+      "to": 275469628669812966,
       "label": "Appointed as Officer"
     },
     {
-      "id": 5663507706509358455,
-      "from": -198455717970464635,
-      "to": 5878957519857931409,
+      "id": -4402677739690448375,
+      "from": 622822438926135709,
+      "to": 8308337091221131638,
       "label": "Appointed as Officer"
     },
     {
-      "id": -6288585045401810793,
-      "from": -6590689543372863441,
-      "to": 3718952386486361437,
+      "id": 8773515352327106626,
+      "from": -5124471665708559580,
+      "to": -7688367299389192015,
       "label": "Appointed as Officer"
     },
     {
-      "id": 1424968777830729069,
-      "from": -1586563634440453723,
-      "to": 3718952386486361437,
+      "id": 1688723408261413004,
+      "from": 148402940428017059,
+      "to": -7688367299389192015,
       "label": "Appointed as Officer"
     },
     {
-      "id": 7555245728528988964,
-      "from": -6536704100257067011,
-      "to": -2214487666855064328,
+      "id": 5411869038663127021,
+      "from": -9133549549277520747,
+      "to": -2655375682971637765,
       "label": "Appointed as Officer"
     },
     {
-      "id": 7442876135345494008,
-      "from": 6642317409451056514,
-      "to": 6256234883491994058,
+      "id": 1258589226887108359,
+      "from": 148402940428017059,
+      "to": -2655375682971637765,
       "label": "Appointed as Officer"
     },
     {
-      "id": 2667889335070627682,
-      "from": -6527271953317024747,
-      "to": 1327936940954169678,
+      "id": -4591233978607912173,
+      "from": -3847582654627550468,
+      "to": 9132809878044752531,
       "label": "Appointed as Officer"
     },
     {
-      "id": -3671306599514299518,
-      "from": 7982026406663077711,
-      "to": 1327936940954169678,
+      "id": 4826147679341130466,
+      "from": -3643236447974695111,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 6096385631837230597,
-      "from": -1448727467696953178,
-      "to": 5878957519857931409,
+      "id": 4362249723023496249,
+      "from": 148402940428017059,
+      "to": -1557436143900945469,
       "label": "Appointed as Officer"
     },
     {
-      "id": 7372739219104972560,
-      "from": 7982026406663077711,
-      "to": 5878957519857931409,
+      "id": 5894798742992971600,
+      "from": -7769781276815649235,
+      "to": -2416292596106897107,
       "label": "Appointed as Officer"
     },
     {
-      "id": 6878854602813381720,
-      "from": 854481101962153622,
-      "to": 5284740576381075494,
+      "id": 8242323975521246810,
+      "from": -5558406193346434841,
+      "to": -2416292596106897107,
+      "label": "Appointed as Officer"
+    },
+    {
+      "id": 4320993040836167508,
+      "from": -8919011712609635019,
+      "to": 9132809878044752531,
       "label": "Contract Awardee"
     },
     {
-      "id": -5916904687615426178,
-      "from": 5878957519857931409,
-      "to": 3181680232054740797,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": 6915274665141307841,
-      "from": 7815278543355481768,
-      "to": 7549156202223512799,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": 3829370237094917877,
-      "from": 3718952386486361437,
-      "to": 3762465348354589357,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": -10564845328192387,
-      "from": -8158998283950962017,
-      "to": 6401495557246784580,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": 8246413802183552811,
-      "from": -8670908118215901136,
-      "to": -7346290086154321024,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": -8776742230824131983,
-      "from": 8738666833275567566,
-      "to": 7627799403475991748,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": -5711515122001376857,
-      "from": -8670908118215901136,
-      "to": 3181680232054740797,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": -6811881017467694124,
-      "from": -8670908118215901136,
-      "to": 2988052966437252537,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": -1688341475374415895,
-      "from": 2988052966437252537,
-      "to": -6214031502378751899,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": -3732697890214690186,
-      "from": -8923370809187466109,
-      "to": 2988052966437252537,
-      "label": "Contract Awardee"
-    },
-    {
-      "id": 5405838395635295186,
-      "from": 6970222791117183301,
-      "to": -1709309045147700676,
+      "id": 2819689550718529219,
+      "from": -2416292596106897107,
+      "to": 5336484324335051279,
       "label": "Contract Awardee"
     }
   ]
