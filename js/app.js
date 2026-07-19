@@ -429,11 +429,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const options = {
             physics: {
-                stabilization: true,
+                stabilization: false,
                 barnesHut: {
-                    gravitationalConstant: -1500,
-                    springLength: 95
-                }
+                    gravitationalConstant: -2000,
+                    centralGravity: 0.1,
+                    springLength: 120,
+                    springConstant: 0.04,
+                    damping: 0.09,
+                    avoidOverlap: 0.1
+                },
+                maxVelocity: 50,
+                minVelocity: 0.1,
+                timestep: 0.4
             },
             interaction: {
                 hover: true,
@@ -442,6 +449,19 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         network = new vis.Network(container, data, options);
+        
+        // Add a gentle orbiting camera effect
+        let angle = 0;
+        setInterval(() => {
+            if (network) {
+                angle += 0.002;
+                network.moveTo({
+                    position: { x: Math.cos(angle) * 30, y: Math.sin(angle) * 30 },
+                    scale: network.getScale(), // Keep user's zoom level
+                    animation: { duration: 50, easingFunction: "linear" }
+                });
+            }
+        }, 50);
 
         // Click interaction: filter feed by clicked entity!
         network.on("click", (params) => {
