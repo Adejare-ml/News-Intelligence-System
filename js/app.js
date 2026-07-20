@@ -741,11 +741,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     const content = await res.text();
                     reportMdContent.innerHTML = parseMarkdown(content);
                 } else {
-                    // Extract date string from report filename e.g. report_20260716.md -> 2026-07-16
-                    const dateClean = filename.replace("report_", "").replace(".md", "");
-                    const targetDate = `${dateClean.slice(0,4)}-${dateClean.slice(4,6)}-${dateClean.slice(6,8)}`;
-                    
-                    const match = allReports.find(r => r.Date === targetDate || r.filename === filename);
+                    // filename here is actually the Generated timestamp ID
+                    const match = allReports.find(r => r.Generated === filename);
                     if (match && match.Content) {
                         reportMdContent.innerHTML = parseMarkdown(match.Content);
                     } else {
@@ -781,10 +778,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 // Map the sheets daily reports rows to standard list structure
                 files = allReports.map(r => {
+                    const generatedStr = r.Generated || `${r.Date} 12:00`;
                     const dateFormatted = (r.Date || "").replace(/-/g, "");
+                    const timeFormatted = generatedStr.split(" ")[1] ? generatedStr.split(" ")[1].replace(/:/g, "") : "120000";
                     return {
-                        filename: `report_${dateFormatted}.md`,
-                        created_at: `${r.Date} ${r.Generated ? r.Generated.split(" ")[1] : "12:00"}`
+                        filename: r.Generated || `report_${dateFormatted}.md`, // Pass the exact Generated ID
+                        display_name: `report_${dateFormatted}_${timeFormatted}.md`,
+                        created_at: generatedStr
                     };
                 });
                 // Sort newest first
@@ -816,7 +816,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.className = "report-archive-item";
                 item.innerHTML = `
                     <span class="date">${f.created_at}</span>
-                    <span class="title">${f.filename}</span>
+                    <span class="title">${f.display_name || f.filename}</span>
                 `;
                 item.addEventListener("click", () => {
                     document.querySelectorAll(".report-archive-item").forEach(item => item.classList.remove("active"));
