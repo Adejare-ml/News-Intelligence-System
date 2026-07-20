@@ -1,50 +1,35 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-19 23:04:27 (UTC+1)
+**Generated on:** 2026-07-20 09:36:26 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 23
+- **Total Articles Processed:** 14
 - **High Risk Signals:** 1
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
-## Executive Summary Report: Daily Intelligence Brief
+## Executive Summary Report
 
-**Date:** October 26, 2023
+**Date:** Today
 
 ### Key Developments
 
-*   **Oil & Gas Sector:** The Nigerian Content Development and Monitoring Board (NCDMB) and Renaissance have commenced a 12-month oil and gas readiness training program for 300 Nigerians, aimed at enhancing local capacity.
-*   **Government Policy & Regulation:**
-    *   The Federal Government announced plans to digitise the mining sector to improve oversight and track operators.
-    *   The Nigerian Midstream and Downstream Petroleum Regulatory Authority (NMDPRA) shut down two filling stations in Ogun State for under-dispensing.
-    *   Ogun State is implementing a new security doctrine, "Operation Kosaye," to enhance security efforts.
-*   **Economic & International Cooperation:**
-    *   Nigeria and other African countries adopted the Abuja Declaration, a framework designed to boost cocoa value addition across the continent.
-    *   Discussions highlight the importance of regional cooperation for Africa's digital future and call for greater investment and collaboration to unlock various economic sectors.
-    *   Concerns persist regarding Nigerians not yet benefiting from higher crude prices.
-*   **Social & Legal Issues:**
-    *   Stakeholders in Imo State are advocating for a stronger response to sexual harassment in tertiary institutions.
-    *   A court has jailed a 'prophet' who defrauded church members of N136 million.
-    *   A Nigerian was arrested in India in connection with romance scams and drug trafficking.
-    *   A Lagos three-storey building fire resulted in two firefighters being hospitalised.
-    *   Reports spotlight four women currently steering Nigeria's top legal institutions.
-    *   The Soun of Ogbomoso has cancelled the 2026 Egungun festival citing security concerns.
-    *   A Nigerian nurse was honoured with a bravery award in the UK for saving a patient during a fire.
-    *   A commentary piece by Festus Adedayo discusses how "sex threatens the Nigerian State," referencing political figures like Akpabio, Oshiomhole, and Umahi.
+*   **Fuel Price Surge:** Petrol prices have escalated to N1,230 nationwide, largely attributed to the Dangote Petroleum Refinery's decision to sell petrol to marketers in US dollars, exacerbated by ongoing international crises impacting crude oil markets. (The Punch)
+*   **Crude Price Benefits Lag:** Despite higher global crude prices, Nigerians have yet to realize tangible benefits, prompting concerns from industry experts regarding local economic impact. (The Punch)
+*   **Microfinance Sector Growth:** Alert Microfinance Bank has demonstrated significant growth, with its total assets reaching N50 billion, highlighting increasing credit demand within Nigeria's financial landscape. (The Punch)
+*   **Non-Interest Finance Expansion:** Nigeria's non-interest finance industry is projected to reach N5.77 trillion by 2025, indicating substantial growth in this specialized financial sector. (Blueprint)
+*   **Electricity Market Harmony:** The Nigerian Electricity Regulatory Commission (NERC) has endorsed the minister's appeal for enhanced harmony and collaboration within the electricity market to improve sector efficiency. (Blueprint)
+*   **Local Government Funds Diversion:** A political figure has alleged widespread diversion of Local Government funds by state governors, vowing to ensure full council autonomy if elected. (Vanguard)
 
 ### High Risk Alerts
 
-*   **LASODA Bribery Allegations:** The Lagos State Office for Disability Affairs (LASODA) is facing serious bribery allegations, reportedly causing suffering for children with disabilities. This situation warrants close monitoring due to its critical impact on vulnerable populations and the integrity of a state agency.
-    *   **Risk Level:** Critical
-    *   **Affected Organization:** Lagos State Office for Disability Affairs (LASODA)
+*   **Public Health Disruption due to Flooding:** Flooding in the Ibeju-Lekki Local Government Area of Lagos has severely disrupted routine immunisation services, preventing babies from accessing critical health centres and posing a significant public health risk. (The Punch)
 
 ### Procurement & Board Changes
 
-*   **Procurement:** No new significant procurement activities were explicitly identified in today's news records.
-*   **Board Changes:** No explicit board changes or high-level appointments within Nigerian companies, MDAs, or regulatory bodies were reported in the reviewed intelligence.
+*   No new procurement contracts or significant board-level appointments/resignations involving Nigerian companies, MDAs, or regulatory bodies were reported in today's news records.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
