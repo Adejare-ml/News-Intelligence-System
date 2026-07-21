@@ -1,38 +1,42 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-21 15:15:19 (UTC+1)
+**Generated on:** 2026-07-21 18:23:13 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 33
-- **High Risk Signals:** 1
+- **Total Articles Processed:** 27
+- **High Risk Signals:** 3
 - **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Procurement Awards:** 1
 
 ---
 
-# Executive Summary Report: Nigerian Business & Government News - 21st July, 2026
+## Executive Summary Report: Nigeria Intelligence Briefing
 
-## Key Developments
+**Date:** July 26, 2024
 
-*   **Legislative Action on NAICOM**: The Senate has passed a bill aimed at renaming the National Insurance Commission (NAICOM), indicating potential structural or identity changes for the regulatory body. (Premium Times Nigeria)
-*   **Monetary Policy Stability**: The Central Bank of Nigeria (CBN) has announced its decision to retain the interest rate and the Monetary Policy Rate (MPR) at 26.5%, signaling a continuity in current monetary policy. (Premium Times Nigeria, Vanguard News)
-*   **Fiscal Transparency Initiative**: The Revenue Mobilisation Allocation and Fiscal Commission (RMAFC) is planning to launch a real-time digital revenue monitoring dashboard, an initiative aimed at enhancing government revenue oversight. (The Guardian Nigeria News)
-*   **International Financial Cooperation**: The Federal Government (FG) and the Nigeria Deposit Insurance Corporation (NDIC) are actively seeking stronger cross-border cooperation to bolster and safeguard Africa's financial systems. (The Guardian Nigeria News)
-*   **Major Regional Energy Project**: The Economic Community of West African States (ECOWAS) has formally signed an Intergovernmental Agreement for the construction of the $25 billion Nigeria-Morocco Gas Pipeline, marking a significant advancement for this landmark regional energy infrastructure project. (tekedia)
-*   **Pension Sector Consolidation**: Reports indicate that pension firms are considering mergers and acquisitions as their total assets have surpassed N31 trillion, suggesting a potential restructuring within the industry. (sunnewsonline)
-*   **Company Financial Performance**: The Central Securities Clearing System (CSCS) has paid its first mid-year dividend of N1 per share, reflecting a positive financial outcome for the period. (Punch Newspapers)
-*   **Legal Scrutiny on Regulatory Powers**: A lawyer has raised queries regarding the legal basis for the Federal Competition & Consumer Protection Commission's (FCCPC) DEON approvals, following a court affirmation of the Nigerian Communications Commission's (NCC) exclusive licensing powers. (The Guardian Nigeria News)
+This report provides a summary of key developments, high-risk alerts, and procurement-related information concerning Nigerian companies, MDAs, and regulatory bodies, compiled from today's news records.
 
-## High Risk Alerts
+---
 
-*   **Fuel Supply Disruption at Dangote Refinery**: The Independent Petroleum Marketers Association of Nigeria (IPMAN) has temporarily suspended the loading of petrol from the Dangote Refinery. This decision, attributed to price uncertainty, poses a high risk of potential fuel supply disruptions and market instability. (Vanguard)
+### Key Developments
 
-## Procurement & Board Changes
+*   **Infrastructure Projects:** West African leaders, through the Economic Community of West African States (ECOWAS), have officially signed the Intergovernmental Agreement for the implementation of the ambitious $25 billion Nigeria-Morocco Gas Pipeline project. This significant step advances the large-scale infrastructure initiative.
+*   **Monetary Policy:** The Central Bank of Nigeria (CBN) has announced its decision to retain the benchmark interest rate at 26.5%. Furthermore, the CBN has set a strategic target to achieve a single-digit inflation rate by 2027.
+*   **Government Financial Actions:** The Federal Government (FG) has successfully settled N333 billion in outstanding debt owed to Generation Companies (GenCos) and has issued its first bond coupon payment.
+*   **Economic Reserves:** Nigeria's external reserves have reportedly increased to $52.5 billion, a level sufficient to cover 11 months of imports.
+*   **Trade Facilitation & Anti-Corruption:** The Presidential Enabling Business Environment Council (PEBEC) has launched a new one-stop digital platform designed to enhance efficiency and combat racketeering activities at Nigerian ports.
 
-*   **Procurement**: No specific procurement activities were reported.
-*   **Board Changes/Appointments**:
-    *   President Tinubu has announced 26 new appointments, signaling a significant reshuffle and new leadership within various government structures. (The State House, Abuja)
-    *   A Nigerian representative has been appointed to the global board of the Resource Justice Network, enhancing international representation. (Premium Times Nigeria)
+### High Risk Alerts
+
+*   **Alleged Procurement Fraud:** The Human Rights Network (HRN) has formally petitioned the Economic and Financial Crimes Commission (EFCC) regarding alleged multi-million Naira procurement fraud at the National Institute for Cultural Orientation, Training and Management (NICTM). (Risk Level: Critical)
+*   **Ongoing Fraud Trial Stalled:** A N1.35 billion fraud trial continues to face delays, with proceedings stalled again due to the absence of the lead lawyer for the accused, Lamido. (Risk Level: Critical)
+*   **Land Fraud Allegation:** A judge has issued an order for the EFCC to produce an estate agent in court concerning allegations of land fraud. (Risk Level: Critical)
+*   **Concerns over "Phantom Agency":** A House of Representatives panel has summoned high-profile individuals, including Nuhu Ribadu and Emeka Odumegwu-Ojukwu, to address the existence of a purported "phantom federal agency," raising questions about potential governance irregularities. (Risk Level: Low, but with significant potential implications if allegations are substantiated)
+
+### Procurement & Board Changes
+
+*   **Procurement Fraud Allegation:** An allegation of several million Naira procurement fraud at the National Institute for Cultural Orientation, Training and Management (NICTM) has been lodged with the EFCC by the HRN, prompting an investigation. Specific contract details and parties involved in the alleged fraud are under review.
+*   **Board Changes:** No specific board appointments, resignations, or significant changes within the leadership structures of Nigerian companies, MDAs, or regulatory bodies were reported in the available news records for today.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
