@@ -1,0 +1,61 @@
+name: AI News Intelligence Scheduler
+
+on:
+  schedule:
+    # 8:00 AM, 2:00 PM, and 7:00 PM Nigeria Time (UTC+1)
+    - cron: "0 7 * * *"   # 8:00 AM Nigeria Time (7:00 AM UTC)
+    - cron: "0 13 * * *"  # 2:00 PM Nigeria Time (1:00 PM UTC)
+    - cron: "0 17 * * *"  # 6:00 PM Nigeria Time (5:00 PM UTC)
+    - cron: "0 22 * * *"  # 22:pm PM Nigeria Time (22:00 PM UTC)
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m spacy download en_core_web_sm
+
+      - name: Run Crawler Pipeline
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          NEWSAPI_KEY_2: ${{ secrets.NEWSAPI_KEY_2 }}
+          NEWSDATA_KEY: ${{ secrets.NEWSDATA_KEY }}
+          GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: |
+          python run_pipeline.py
+
+      - name: Commit and Push Data Updates to Main
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automated AURA database updates [skip ci]"
+          file_pattern: "backend/app/static/data/*"
+
+      - name: Deploy static folder to gh-pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: backend/app/static
+          branch: gh-pages

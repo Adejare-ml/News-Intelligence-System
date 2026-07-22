@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# Databases
+backend/app/db/excel_db.xlsx
+tests/test_excel_db.xlsx
+
+# Local config & IDE
+.idea/
+.vscode/
+.cursor/
+.env
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+gh_log*.txt
+
+# Docker
+.docker/
