@@ -1,52 +1,59 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-22 09:36:34 (UTC+1)
+**Generated on:** 2026-07-22 15:17:33 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 56
-- **High Risk Signals:** 4
-- **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Total Articles Processed:** 43
+- **High Risk Signals:** 2
+- **Appointments Logged:** 1
+- **Procurement Awards:** 1
 
 ---
 
-# Executive Summary: Nigerian News Briefing
+## Executive Summary Report: Nigerian News Intelligence - Today's Digest
 
-This report summarizes key news developments from today's records involving Nigerian companies, MDAs, and regulatory bodies, highlighting significant events, high-risk alerts, and any identified procurement or board changes.
+**Date:** July 22, 2026
 
-## Key Developments
+This report provides a concise overview of key developments, high-risk alerts, and procurement/board changes impacting Nigerian companies, MDAs, and regulatory bodies, compiled from today's news records.
 
-**Government & Policy Initiatives:**
-*   **Farm Input Distribution:** Mbah flagged off the distribution of farm inputs to 63,000 farmers, indicating a focus on agricultural support.
-*   **Regulatory & Legislative Changes:** The Senate renamed NAICOM, cleared Yuguda for AMCON, and is moving to strengthen NAFDAC. Lokpobiri emphasized regulatory certainty to attract oil investment.
-*   **State-Level Initiatives:** The Ogun State government tasked industries on safety and unveiled a resilience agenda. The Lagos State Government (LASG) is seeking Assembly approval for infrastructure financing and a N200 billion development bond.
-*   **Economic Strategy:** Shettima is clearing the path for a $500 million AGROW rollout and linking a $1 trillion economy target to stronger corporate governance.
-*   **Anti-Corruption & Accountability:** Reps called for an audit of seized and recovered assets since 1999. PEBEC is tightening measures against port racketeers through digital platforms and business courts.
-*   **Monetary Policy:** The Central Bank of Nigeria (CBN) pegged its interest rate at 26.5%, citing Middle East tensions and inflation fears.
-*   **Energy Sector:** The Federal Government (FG) is seeking investors as NNPC's $3 billion North oil exploration lags, four years after a one billion barrels frontier basins discovery. A major African Atlantic pipeline project received significant backing.
-*   **Trade & Maritime:** Customs revived Nigeria-Benin export trade, moving N1 billion non-oil cargo. NIMASA reviewed ship-port security protocols and plans to establish a joint framework on data sharing with NSIB.
+---
 
-**Economic & Company Performance:**
-*   **Debt Management:** The FG settled N333 billion GenCos debt and paid its first bond coupon. Separately, Yoruba Ronu faulted Oyedele’s N80 trillion debt claims. FGN bonds attracted N1.74 trillion, recording a 45% oversubscription.
-*   **Financial Services:** Afreximbank approved a $200 million facility for Nigeria’s Shoreline Power. OPay is noted for powering millions of financial decisions daily. Temi Popoola of Nigerian Exchange Group asserted Nigeria's potential to drive Africa’s largest exchange.
-*   **Corporate Earnings:** Unilever Nigeria raised its interim dividend fourfold amidst a slight increase in half-year profit.
-*   **Power Sector:** A firm is targeting Nigeria’s power deficit with off-grid solutions, driven by grid failures and high diesel costs.
-*   **Economic Risks:** Stakeholders warned that Nigeria is losing billions to illicit financial flows, and drug trafficking through ports threatens Nigeria's trade reputation and economy. Experts are pushing for tougher credit checks to prevent CVFF failure.
-*   **Legal Enforcement:** A court jailed 12 individuals for naira abuse.
+### Key Developments
 
-## High Risk Alerts
+*   **Digital Education Initiative:** Edo State has reaffirmed its commitment to digital education, marking the debut of the E-DON Initiative at FCE Ekiadolor.
+*   **Oil & Gas Sector:**
+    *   Host communities of Halkin E&P Atala have commended the NUPRC for its implementation of the Petroleum Industry Act (PIA).
+    *   Police operations in Adamawa led to the arrest of seven suspects and the recovery of 285 vandalized NNPC pipelines, highlighting ongoing security challenges in the oil sector.
+    *   31 winners have emerged in the 2025 licensing round, aiming to boost Nigeria's oil and gas output plan.
+    *   Dangote Refinery has announced its decision to sell fuel in dollars, a move that has raised concerns within the economy.
+*   **Government & Regulatory Actions:**
+    *   Ebonyi State plans to establish a special task force to enforce compliance among mining companies.
+    *   Kaduna State government is undertaking infrastructure development, constructing airport-style bus terminals.
+    *   The Federal Government (FG) has received the final report for the $500 million World Bank-backed AGROW programme, signaling progress in agricultural development initiatives.
+    *   Nigeria Customs Service emphasized the link between revenue growth, border security, and public trust.
+    *   The House of Representatives is moving to document xenophobic losses and seek compensation for affected Nigerians.
+    *   COREN has urged UNN graduates to adhere to engineering profession regulations, emphasizing professional standards.
+*   **Business & Finance:**
+    *   CREDICORP has launched its C.L.I.C.K.D. Scheme in collaboration with the FG\u2019s 3MTT Programme, indicating new ventures in economic empowerment.
+    *   Femi Otedola has increased his stake in First HoldCo to 21.96% through a significant N77.6 billion share purchase.
+    *   GAAGA World is actively building infrastructure to support Africa\u2019s creative economy.
+*   **MDA Scrutiny:** Political figure Atiku Abubakar has called for a joint summon of the Office of the Accountant-General of the Federation (OAGF) and the Central Bank of Nigeria (CBN) Governor over conflicting PFIPC accounts.
+*   **Regulatory Body Scrutiny:** An NDC guber candidate has condemned the alleged indiscriminate sealing of business premises by the Kwara State Internal Revenue Service (KW-IRS).
 
-*   **Parliamentary Disobedience by MDAs:** A House of Representatives panel threatened sanctions against several MDAs for ignoring summons related to a "Fake Agency Probe". This highlights potential accountability and governance issues within public institutions.
-*   **Fraud & Misappropriation:** Reports of "Ghost workers" and IPPIS fraud, along with lessons from a N941 million forfeiture, underscore critical financial management and corruption risks within government systems.
-*   **Legal Action Against Individuals/Entities:** The EFCC was ordered by a court to arrest an Abuja realtor for skipping a hearing in a land fraud trial, indicating ongoing efforts to combat financial crimes and prosecute offenders.
-*   **Allegations against Public Officials:** The Comptroller-General of the Nigeria Immigration Service, Kemi Nandap, was publicly linked to an alleged visa fraud investigation, though the EFCC later dismissed these reports, creating a reputational risk incident.
+---
 
-## Procurement & Board Changes
+### High Risk Alerts
 
-*   **Regulatory Body Renaming & Appointments:** The Senate's renaming of NAICOM and the clearance of Yuguda for AMCON signal significant structural and leadership adjustments within key regulatory bodies. Yuguda's clearance implies an upcoming appointment to a leadership position within AMCON.
-*   **Public Office Chairmanship:** Public discourse emerged regarding the chairmanship of the Rural Electrification Agency (REA), specifically involving Ayo Fayose, suggesting a high-profile potential appointment.
+*   **Corruption Perception on National Budget:** Timi Frank has criticized President Tinubu, asserting that the proposed 2026 budget deepens the perception of corruption. This statement, carrying a "Critical" risk level in the assessment, underscores potential reputational and governance concerns related to fiscal management.
+*   **Illegal Mining & Revenue Loss:** Despite executive orders, illegal mining continues to deprive Taraba State of billions of naira annually. This sustained financial leakage poses a significant economic risk to the state.
+*   **Regulatory Probe of High-Ranking Official:** The EFCC has cleared the Comptroller-General of the Nigeria Immigration Service, Kemi Nandap, following a visa fraud probe. While cleared, the initial probe itself was categorized with a "High" risk level, highlighting the serious nature of allegations involving senior public officials and the scrutiny by anti-graft bodies.
 
-No specific procurement contracts or deals with explicit details were identified in the raw data provided; the 'procurement' field was consistently null across all records.
+---
+
+### Procurement & Board Changes
+
+*   **Board Appointment, Rural Electrification Agency (REA):** Former Ekiti State Governor Ayo Fayose has been appointed as the chairman of the Rural Electrification Agency (REA) board. His brother, Isaac Fayose, has publicly advised him to reject the appointment.
+*   **Reported Procurement - Legal Case:** During an alleged defamation trial, `The Guardian Nigeria News` was identified as the agency in a `procurement` entry, with `Tracked Contractor` as the contractor and the amount listed as `TBD (Local Pipeline)`. The project was associated with the "Alleged Defamation Trial:Court rejects sowore\u2019s bid to tender uncertified documents" article.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
