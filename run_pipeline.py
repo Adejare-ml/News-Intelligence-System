@@ -289,6 +289,12 @@ def export_static_json_database():
     agencies = db.get_agencies()
     procurement = db.get_procurement()
     reports = db.get_daily_reports()
+    # Normalize empty string keys to "Content" for legacy report rows
+    for r in reports:
+        if "" in r:
+            val = r.pop("")
+            if not r.get("Content"):
+                r["Content"] = val
     psc_records = db.get_significant_control()
 
     # Sort chronological (newest first)

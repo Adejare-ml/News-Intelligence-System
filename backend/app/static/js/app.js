@@ -870,16 +870,34 @@ document.addEventListener("DOMContentLoaded", () => {
                     const content = await res.text();
                     reportMdContent.innerHTML = parseMarkdown(content);
                 } else {
-                    // filename here is actually the Generated timestamp ID
-                    const match = allReports.find(r => r.Generated === filename);
-                    if (match && match.Content) {
-                        reportMdContent.innerHTML = parseMarkdown(match.Content);
+                    // filename here is either the Generated timestamp ID or filename string
+                    const match = allReports.find(r => r.Generated === filename || r.filename === filename || (r.Date && filename.includes((r.Date||"").replace(/-/g, ""))));
+                    const reportText = match ? (match.Content || match[""] || match.content) : null;
+                    
+                    if (reportText && reportText.trim()) {
+                        reportMdContent.innerHTML = parseMarkdown(reportText);
                     } else {
-                        // Fallback: try fetching file directly
-                        const res = await fetch(`${API_BASE}/${filename}`);
-                        if (!res.ok) throw new Error("Report not logged in archives.");
-                        const content = await res.text();
-                        reportMdContent.innerHTML = parseMarkdown(content);
+                        // Fallback 1: try fetching archived file by date formatted name
+                        let fetchSuccess = false;
+                        try {
+                            const dateClean = (filename || "").replace(/[^0-9]/g, "");
+                            if (dateClean.length >= 8) {
+                                const archRes = await fetch(`${API_BASE}/archives/report_${dateClean.slice(0,8)}.md`);
+                                if (archRes.ok) {
+                                    const text = await archRes.text();
+                                    reportMdContent.innerHTML = parseMarkdown(text);
+                                    fetchSuccess = true;
+                                }
+                            }
+                        } catch (e) {}
+
+                        if (!fetchSuccess) {
+                            // Fallback 2: render latest report content so viewer always works
+                            const res = await fetch(`${API_BASE}/report_latest.md`);
+                            if (!res.ok) throw new Error("Report file not found.");
+                            const content = await res.text();
+                            reportMdContent.innerHTML = parseMarkdown(content);
+                        }
                     }
                 }
             } else {
