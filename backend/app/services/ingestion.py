@@ -393,5 +393,45 @@ class NewsIngestionService:
             if pub_date >= limit_date:
                 time_filtered.append(art)
                 
-        logger.info(f"Filtered {len(all_articles)} raw entries to {len(nigerian_filtered)} strictly Nigerian, and down to {len(time_filtered)} within the last 48 hours.")
-        return time_filtered
+        # 5. Fuzzy Title Deduplication
+        distinct_articles = cls.fuzzy_deduplicate_articles(time_filtered)
+        
+        logger.info(f"Filtered {len(all_articles)} raw entries to {len(nigerian_filtered)} strictly Nigerian, {len(time_filtered)} within 48h, and {len(distinct_articles)} distinct stories.")
+        return distinct_articles
+
+    @staticmethod
+    def fuzzy_deduplicate_articles(articles: List[Dict[str, Any]], similarity_threshold: float = 0.70) -> List[Dict[str, Any]]:
+        """Deduplicates articles based on title similarity ratio using difflib and token set overlap."""
+        from difflib import SequenceMatcher
+        deduped = []
+        
+        for art in articles:
+            title = (art.get("title") or "").strip().lower()
+            if not title:
+                continue
+                
+            is_dup = False
+            title_words = set(re.findall(r'\w+', title))
+            
+            for existing in deduped:
+                ex_title = (existing.get("title") or "").strip().lower()
+                ex_words = set(re.findall(r'\w+', ex_title))
+                
+                # Check 1: SequenceMatcher ratio
+                ratio = SequenceMatcher(None, title, ex_title).ratio()
+                
+                # Check 2: Jaccard word set overlap
+                overlap = 0.0
+                if title_words and ex_words:
+                    overlap = len(title_words & ex_words) / len(title_words | ex_words)
+                    
+                if ratio >= similarity_threshold or overlap >= 0.65:
+                    is_dup = True
+                    break
+                    
+            if not is_dup:
+                deduped.append(art)
+                
+        logger.info(f"Fuzzy Deduplication: Reduced {len(articles)} candidate items to {len(deduped)} distinct stories.")
+        return deduped
+

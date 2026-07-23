@@ -111,7 +111,7 @@ class LLMService:
                 base_url += '/v1'
                 
             api_key = settings.OLLAMA_API_KEY or "ollama"
-            client = OpenAI(base_url=base_url, api_key=api_key)
+            client = OpenAI(base_url=base_url, api_key=api_key, timeout=3.0)
             
             safe_title = title.replace("<", "").replace(">", "")
             safe_text = text.replace("<", "").replace(">", "")
@@ -127,8 +127,10 @@ class LLMService:
             )
             
             raw_content = response.choices[0].message.content
-            data = json.loads(raw_content)
-            return cls._validate_llm_output(data)
+            data = cls._extract_json_block(raw_content)
+            if data:
+                return cls._validate_llm_output(data)
+            return None
         except Exception as e:
             logger.error(f"Ollama API execution error: {e}")
             return None
@@ -166,12 +168,37 @@ class LLMService:
                 )
             
             raw_content = response.choices[0].message.content
-            # Cleanup markdown formatting if model didn't respect format
-            raw_content = raw_content.replace('```json', '').replace('```', '').strip()
-            data = json.loads(raw_content)
-            return cls._validate_llm_output(data)
+            data = cls._extract_json_block(raw_content)
+            if data:
+                return cls._validate_llm_output(data)
+            return None
         except Exception as e:
             logger.error(f"NVIDIA API execution error: {e}")
+            return None
+
+    @staticmethod
+    def _extract_json_block(text_content: str) -> Dict[str, Any]:
+        """Extracts and parses JSON object from LLM response text using regex, handling markdown blocks."""
+        if not text_content:
+            return None
+        import re
+        cleaned = text_content.strip()
+        if "```" in cleaned:
+            match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", cleaned, re.DOTALL)
+            if match:
+                cleaned = match.group(1)
+            else:
+                cleaned = cleaned.replace("```json", "").replace("```", "").strip()
+                
+        if not cleaned.startswith("{"):
+            match = re.search(r"(\{.*\})", cleaned, re.DOTALL)
+            if match:
+                cleaned = match.group(1)
+                
+        try:
+            return json.loads(cleaned)
+        except Exception as e:
+            logger.warning(f"Failed to parse extracted JSON block: {e}")
             return None
 
     @classmethod

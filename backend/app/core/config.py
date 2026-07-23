@@ -1,8 +1,9 @@
 import os
-from pydantic_settings import BaseSettings
 from typing import Optional
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_file=".env", case_sensitive=True, extra="ignore")
     PROJECT_NAME: str = "AI-Powered News Intelligence System"
     API_V1_STR: str = "/api/v1"
     
@@ -39,9 +40,5 @@ class Settings(BaseSettings):
     
     # Embedding Model Name
     EMBEDDING_MODEL_NAME: str = "all-MiniLM-L6-v2"
-    
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
 
 settings = Settings()

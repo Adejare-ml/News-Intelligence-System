@@ -19,6 +19,21 @@ SHEETS_CONFIG = {
     "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Content"]
 }
 
+def retry_google_sheets_op(func, max_retries: int = 3, initial_delay: float = 2.0):
+    """Executes a Google Sheets operation with exponential backoff retry logic."""
+    import time
+    delay = initial_delay
+    for attempt in range(1, max_retries + 1):
+        try:
+            return func()
+        except Exception as e:
+            if attempt == max_retries:
+                logger.error(f"Google Sheets operation failed after {max_retries} attempts: {e}")
+                raise e
+            logger.warning(f"Google Sheets API call failed (attempt {attempt}/{max_retries}): {e}. Retrying in {delay}s...")
+            time.sleep(delay)
+            delay *= 2
+
 class SheetsDatabase:
     def __init__(self):
         self.use_local = True
@@ -162,15 +177,17 @@ class SheetsDatabase:
                 logger.error(f"Error writing to local sheet '{sheet_name}': {e}")
         else:
             try:
-                ws = self.spreadsheet.worksheet(sheet_name)
-                # Map lists or dict values to string representation
-                stringified_values = []
-                for val in row_values:
-                    if isinstance(val, (dict, list)):
-                        stringified_values.append(json.dumps(val))
-                    else:
-                        stringified_values.append(str(val))
-                ws.append_row(stringified_values)
+                def _do_append():
+                    ws = self.spreadsheet.worksheet(sheet_name)
+                    stringified_values = []
+                    for val in row_values:
+                        if isinstance(val, (dict, list)):
+                            stringified_values.append(json.dumps(val))
+                        else:
+                            stringified_values.append(str(val))
+                    ws.append_row(stringified_values)
+
+                retry_google_sheets_op(_do_append)
             except Exception as e:
                 logger.error(f"Error appending to Google Sheet '{sheet_name}': {e}")
 

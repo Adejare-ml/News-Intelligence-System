@@ -273,6 +273,11 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         "Content": md
     })
 
+def make_node_id(text: str) -> str:
+    """Returns a deterministic string ID for graph nodes."""
+    import hashlib
+    return hashlib.md5((text or "").strip().lower().encode("utf-8")).hexdigest()[:12]
+
 def export_static_json_database():
     """Generates the static JSON files read by index.html / app.js."""
     logger.info("Exporting static JSON telemetry files to static assets path...")
@@ -284,6 +289,7 @@ def export_static_json_database():
     agencies = db.get_agencies()
     procurement = db.get_procurement()
     reports = db.get_daily_reports()
+    psc_records = db.get_significant_control()
 
     # Sort chronological (newest first)
     articles_sorted = list(reversed(articles))[:60]
@@ -300,42 +306,45 @@ def export_static_json_database():
         
     with open(os.path.join(DATA_DIR, "procurement.json"), "w", encoding="utf-8") as f:
         json.dump(procurement, f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
+        json.dump(psc_records, f, default=str, indent=2)
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
         json.dump(reports, f, default=str, indent=2)
 
-    # 3. Generate Knowledge Graph nodes and edges
+    # 3. Generate Knowledge Graph nodes and edges (Deterministic IDs)
     nodes = []
     edges = []
     node_keys = set()
     edge_keys = set()
     
     # Generate nodes from companies
-    for row in companies[:15]:
+    for row in companies[:20]:
         name = row.get("Company", "").strip()
         if name and name not in node_keys:
             node_keys.add(name)
             nodes.append({
-                "id": hash(name),
+                "id": make_node_id(name),
                 "label": name,
                 "type": "company",
                 "risk": row.get("Risk Level", "Low")
             })
             
     # Generate nodes from agencies
-    for row in agencies[:15]:
+    for row in agencies[:20]:
         name = row.get("Agency", "").strip()
         if name and name not in node_keys:
             node_keys.add(name)
             nodes.append({
-                "id": hash(name),
+                "id": make_node_id(name),
                 "label": name,
                 "type": "agency",
                 "risk": "Low"
             })
             
     # Generate nodes and edges from People changes
-    for row in people[:20]:
+    for row in people[:25]:
         person_name = row.get("Name", "").strip()
         org_name = row.get("Organization", "").strip()
         pos = row.get("Position", "Executive")
@@ -344,7 +353,7 @@ def export_static_json_database():
             if person_name not in node_keys:
                 node_keys.add(person_name)
                 nodes.append({
-                    "id": hash(person_name),
+                    "id": make_node_id(person_name),
                     "label": person_name,
                     "type": "person",
                     "risk": "Low"
@@ -355,7 +364,7 @@ def export_static_json_database():
                 if org_name not in node_keys:
                     node_keys.add(org_name)
                     nodes.append({
-                        "id": hash(org_name),
+                        "id": make_node_id(org_name),
                         "label": org_name,
                         "type": "company",
                         "risk": "Low"
@@ -365,34 +374,69 @@ def export_static_json_database():
                 if edge_key not in edge_keys:
                     edge_keys.add(edge_key)
                     edges.append({
-                        "id": hash(edge_key),
-                        "from": hash(person_name),
-                        "to": hash(org_name),
+                        "id": make_node_id(edge_key),
+                        "from": make_node_id(person_name),
+                        "to": make_node_id(org_name),
                         "label": f"Appointed as {pos}"
                     })
 
+    # Generate nodes & edges from Persons with Significant Control (PSC)
+    for row in psc_records[:20]:
+        person_name = row.get("Person Name", "").strip()
+        comp_name = row.get("Company", "").strip()
+        ctrl = row.get("Nature of Control", "Significant Control")
+        pct = row.get("Percentage", "")
+        
+        if person_name and comp_name:
+            if person_name not in node_keys:
+                node_keys.add(person_name)
+                nodes.append({
+                    "id": make_node_id(person_name),
+                    "label": person_name,
+                    "type": "psc",
+                    "risk": "High"
+                })
+            if comp_name not in node_keys:
+                node_keys.add(comp_name)
+                nodes.append({
+                    "id": make_node_id(comp_name),
+                    "label": comp_name,
+                    "type": "company",
+                    "risk": "Medium"
+                })
+                
+            edge_key = f"{person_name}-{comp_name}-psc"
+            if edge_key not in edge_keys:
+                edge_keys.add(edge_key)
+                lbl = f"PSC: {pct}" if pct else ctrl
+                edges.append({
+                    "id": make_node_id(edge_key),
+                    "from": make_node_id(person_name),
+                    "to": make_node_id(comp_name),
+                    "label": lbl
+                })
+
     # Generate edges from Procurement
-    for row in procurement[:15]:
+    for row in procurement[:20]:
         agency = row.get("Agency", "").strip()
         contractor = row.get("Contractor", "").strip()
         proj = row.get("Project", "Contract").strip()
         
         if agency and contractor:
-            # Ensure both exist as nodes
             if agency not in node_keys:
                 node_keys.add(agency)
-                nodes.append({"id": hash(agency), "label": agency, "type": "agency", "risk": "Low"})
+                nodes.append({"id": make_node_id(agency), "label": agency, "type": "agency", "risk": "Low"})
             if contractor not in node_keys:
                 node_keys.add(contractor)
-                nodes.append({"id": hash(contractor), "label": contractor, "type": "company", "risk": "Low"})
+                nodes.append({"id": make_node_id(contractor), "label": contractor, "type": "company", "risk": "Low"})
                 
             edge_key = f"{contractor}-{agency}-contract"
             if edge_key not in edge_keys:
                 edge_keys.add(edge_key)
                 edges.append({
-                    "id": hash(edge_key),
-                    "from": hash(contractor),
-                    "to": hash(agency),
+                    "id": make_node_id(edge_key),
+                    "from": make_node_id(contractor),
+                    "to": make_node_id(agency),
                     "label": "Contract Awardee"
                 })
 
