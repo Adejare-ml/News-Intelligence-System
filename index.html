@@ -39,8 +39,14 @@
                     <span class="pulse purple"></span>
                     <span>NLP Pipeline: Online</span>
                 </div>
+                <button id="view-psc-btn" class="btn btn-secondary">
+                    <i data-lucide="shield-alert"></i> PSC Disclosure
+                </button>
                 <button id="view-reports-btn" class="btn btn-secondary">
                     <i data-lucide="file-text"></i> Daily Reports
+                </button>
+                <button id="export-csv-btn" class="btn btn-secondary">
+                    <i data-lucide="download"></i> Export CSV
                 </button>
                 <button id="trigger-ingest-btn" class="btn btn-primary">
                     <i data-lucide="refresh-cw"></i> Ingest Now
@@ -104,6 +110,12 @@
                     <button class="filter-btn" data-category="Government">Government</button>
                     <button class="filter-btn" data-category="Company">Company</button>
                     <button class="filter-btn" data-category="Legal">Legal</button>
+                    <span style="margin: 0 4px; color: rgba(255,255,255,0.2);">|</span>
+                    <button class="filter-risk-btn active" data-risk="">Risk: All</button>
+                    <button class="filter-risk-btn" data-risk="Critical">Critical</button>
+                    <button class="filter-risk-btn" data-risk="High">High</button>
+                    <button class="filter-risk-btn" data-risk="Medium">Medium</button>
+                    <button class="filter-risk-btn" data-risk="Low">Low</button>
                 </div>
 
                 <div id="articles-list" class="articles-list">
@@ -232,6 +244,22 @@
                             <p>Select a report to view or trigger compilation.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    <!-- Persons with Significant Control (PSC) Modal -->
+    <div id="psc-modal" class="modal-overlay">
+        <div class="modal-content glass reports-modal-content" style="max-width: 900px;">
+            <div class="modal-header">
+                <h2>Persons with Significant Control (PSC) Transparency</h2>
+                <button class="close-modal-btn" id="close-psc-modal"><i data-lucide="x"></i></button>
+            </div>
+            <div style="padding: 20px; overflow-y: auto; max-height: 70vh;">
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">
+                    Tracked beneficial owners owning >25% shares, holding >25% voting rights, or controlling board appointments across Nigerian counterparties.
+                </p>
+                <div id="psc-table-container">
+                    <div class="loading-placeholder"><p>Loading PSC Records...</p></div>
                 </div>
             </div>
         </div>

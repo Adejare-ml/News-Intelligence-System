@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // State Variables
     let currentCategory = "";
+    let currentRisk = "";
     let isSemanticSearch = false;
     let mixChart = null;
     let network = null;
@@ -190,6 +191,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (category) {
                     articles = articles.filter(a => a.category.toLowerCase() === category.toLowerCase());
                 }
+                if (currentRisk) {
+                    articles = articles.filter(a => (a.risk_level || "").toLowerCase() === currentRisk.toLowerCase());
+                }
                 if (query) {
                     const q = query.toLowerCase();
                     articles = articles.filter(a => a.title.toLowerCase().includes(q) || a.summary_executive.toLowerCase().includes(q));
@@ -374,6 +378,9 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (node.type === "agency") {
                 color = "#f472b6"; // Pink
                 shape = "triangle";
+            } else if (node.type === "psc") {
+                color = "#ef4444"; // Red for PSC / Beneficial Owner
+                shape = "diamond";
             }
 
             nodes.push({
@@ -618,6 +625,128 @@ document.addEventListener("DOMContentLoaded", () => {
             loadNewsFeed(query, currentCategory);
         }
     });
+
+    // Risk level filter buttons
+    const riskBtns = document.querySelectorAll(".filter-risk-btn");
+    riskBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            riskBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            currentRisk = btn.getAttribute("data-risk") || "";
+            loadNewsFeed(searchInput.value, currentCategory);
+        });
+    });
+
+    // Export CSV Handler
+    const exportCsvBtn = document.getElementById("export-csv-btn");
+    if (exportCsvBtn) {
+        exportCsvBtn.addEventListener("click", exportIntelligenceCSV);
+    }
+
+    function exportIntelligenceCSV() {
+        if (!allArticles || allArticles.length === 0) {
+            alert("No articles loaded yet to export.");
+            return;
+        }
+
+        const headers = ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Level", "Risk Score", "Summary"];
+        const rows = allArticles.map(a => [
+            a.id || "",
+            `"${(a.published_at || "").replace(/"/g, '""')}"`,
+            `"${(a.title || "").replace(/"/g, '""')}"`,
+            `"${(a.source || "").replace(/"/g, '""')}"`,
+            `"${(a.url || "").replace(/"/g, '""')}"`,
+            `"${(a.category || "").replace(/"/g, '""')}"`,
+            `"${(a.risk_level || "").replace(/"/g, '""')}"`,
+            a.risk_score || 0,
+            `"${(a.summary_executive || "").replace(/"/g, '""')}"`
+        ]);
+
+        const csvContent = "data:text/csv;charset=utf-8," 
+            + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", `aura_intelligence_export_${new Date().toISOString().slice(0,10)}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    // PSC Disclosure Modal Handlers
+    const viewPscBtn = document.getElementById("view-psc-btn");
+    const pscModal = document.getElementById("psc-modal");
+    const closePscModalBtn = document.getElementById("close-psc-modal");
+    const pscTableContainer = document.getElementById("psc-table-container");
+
+    if (viewPscBtn && pscModal) {
+        viewPscBtn.addEventListener("click", async () => {
+            pscModal.classList.add("active");
+            await loadPSCRecords();
+        });
+    }
+
+    if (closePscModalBtn && pscModal) {
+        closePscModalBtn.addEventListener("click", () => {
+            pscModal.classList.remove("active");
+        });
+        pscModal.addEventListener("click", (e) => {
+            if (e.target === pscModal) pscModal.classList.remove("active");
+        });
+    }
+
+    async function loadPSCRecords() {
+        if (!pscTableContainer) return;
+        pscTableContainer.innerHTML = `
+            <div class="loading-placeholder">
+                <div class="spinner"></div>
+                <p>Loading PSC Records from Database...</p>
+            </div>
+        `;
+        try {
+            const res = await fetch(`${API_BASE}/significant_control.json`);
+            if (!res.ok) throw new Error("PSC data file not found.");
+            const pscData = await res.json();
+            
+            if (!pscData || pscData.length === 0) {
+                pscTableContainer.innerHTML = `<p style="padding:15px; color:var(--text-muted);">No Persons with Significant Control (PSC) entries recorded yet.</p>`;
+                return;
+            }
+
+            let html = `
+                <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left; color:#e5e7eb;">
+                    <thead>
+                        <tr style="border-bottom:1px solid rgba(255,255,255,0.1); color:var(--text-muted);">
+                            <th style="padding:10px;">Person Name</th>
+                            <th style="padding:10px;">Company</th>
+                            <th style="padding:10px;">Nature of Control</th>
+                            <th style="padding:10px;">Percentage</th>
+                            <th style="padding:10px;">Change Type</th>
+                            <th style="padding:10px;">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            pscData.forEach(r => {
+                html += `
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                        <td style="padding:10px; font-weight:600; color:#38bdf8;">${r["Person Name"] || "N/A"}</td>
+                        <td style="padding:10px; color:#a78bfa;">${r["Company"] || "N/A"}</td>
+                        <td style="padding:10px;">${r["Nature of Control"] || "N/A"}</td>
+                        <td style="padding:10px; color:#f472b6;">${r["Percentage"] || "N/A"}</td>
+                        <td style="padding:10px;"><span class="badge" style="background:rgba(239,68,68,0.2); color:#ef4444;">${r["Change Type"] || "Disclosed"}</span></td>
+                        <td style="padding:10px; color:var(--text-muted);">${r["Date"] || ""}</td>
+                    </tr>
+                `;
+            });
+            html += `</tbody></table>`;
+            pscTableContainer.innerHTML = html;
+        } catch (err) {
+            console.error("Error loading PSC records:", err);
+            pscTableContainer.innerHTML = `<p style="padding:15px; color:var(--text-muted);">Failed to load PSC records.</p>`;
+        }
+    }
 
     // Ingest trigger
     triggerIngestBtn.addEventListener("click", async () => {
