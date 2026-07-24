@@ -954,3 +954,52 @@ input:checked + .slider:before {
     text-decoration: underline;
 }
 
+/* Graph Control Overlay Toolbar */
+.graph-toolbar {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 10;
+}
+
+.graph-btn {
+    background: rgba(17, 20, 32, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e5e7eb;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all 0.2s ease;
+}
+
+.graph-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    transform: scale(1.08);
+    box-shadow: 0 0 12px var(--primary-glow);
+}
+
+.graph-btn.active {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+}
+
+/* Custom Table Row Hover */
+.psc-table-row {
+    transition: background 0.2s ease;
+}
+
+.psc-table-row:hover {
+    background: rgba(139, 92, 246, 0.12) !important;
+}
+
