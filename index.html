@@ -105,17 +105,22 @@
                     <span id="search-label">Standard Keyword</span>
                 </div>
                 
-                <div class="feed-filters">
-                    <button class="filter-btn active" data-category="">All</button>
-                    <button class="filter-btn" data-category="Government">Government</button>
-                    <button class="filter-btn" data-category="Company">Company</button>
-                    <button class="filter-btn" data-category="Legal">Legal</button>
-                    <span style="margin: 0 4px; color: rgba(255,255,255,0.2);">|</span>
-                    <button class="filter-risk-btn active" data-risk="">Risk: All</button>
-                    <button class="filter-risk-btn" data-risk="Critical">Critical</button>
-                    <button class="filter-risk-btn" data-risk="High">High</button>
-                    <button class="filter-risk-btn" data-risk="Medium">Medium</button>
-                    <button class="filter-risk-btn" data-risk="Low">Low</button>
+                <div class="feed-filters-container">
+                    <div class="feed-filters-row">
+                        <span class="filter-label">Category:</span>
+                        <button class="filter-btn active" data-category="">All</button>
+                        <button class="filter-btn" data-category="Government">Government</button>
+                        <button class="filter-btn" data-category="Company">Company</button>
+                        <button class="filter-btn" data-category="Legal">Legal</button>
+                    </div>
+                    <div class="feed-filters-row">
+                        <span class="filter-label">Risk:</span>
+                        <button class="filter-risk-btn active" data-risk="">All</button>
+                        <button class="filter-risk-btn" data-risk="Critical">Critical</button>
+                        <button class="filter-risk-btn" data-risk="High">High</button>
+                        <button class="filter-risk-btn" data-risk="Medium">Medium</button>
+                        <button class="filter-risk-btn" data-risk="Low">Low</button>
+                    </div>
                 </div>
 
                 <div id="articles-list" class="articles-list">
