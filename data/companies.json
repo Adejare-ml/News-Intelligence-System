@@ -15,8 +15,8 @@
   },
   {
     "Company": "The Guardian Nigeria News",
-    "Mention Count": 491,
-    "Last Seen": "2026-07-24 18:24",
+    "Mention Count": 501,
+    "Last Seen": "2026-07-24 22:12",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -50,8 +50,8 @@
   },
   {
     "Company": "PDP",
-    "Mention Count": 4,
-    "Last Seen": "2026-07-24 9:24",
+    "Mention Count": 5,
+    "Last Seen": "2026-07-24 22:11",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -71,8 +71,8 @@
   },
   {
     "Company": "Premium Times Nigeria",
-    "Mention Count": 228,
-    "Last Seen": "2026-07-24 18:24",
+    "Mention Count": 230,
+    "Last Seen": "2026-07-24 22:11",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -3333,10 +3333,10 @@
   },
   {
     "Company": "Obasanjo",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-22 15:11",
+    "Mention Count": 2,
+    "Last Seen": "2026-07-24 22:11",
     "Industry": "General",
-    "Risk Level": "Low"
+    "Risk Level": "Critical"
   },
   {
     "Company": "KolaDaisi",
@@ -4163,5 +4163,33 @@
     "Last Seen": "2026-07-24 18:24",
     "Industry": "General",
     "Risk Level": "Low"
+  },
+  {
+    "Company": "London Stock Exchange",
+    "Mention Count": 1,
+    "Last Seen": "2026-07-24 22:10",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "Mining Marshals",
+    "Mention Count": 1,
+    "Last Seen": "2026-07-24 22:11",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "NPC",
+    "Mention Count": 1,
+    "Last Seen": "2026-07-24 22:12",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "N20 million",
+    "Mention Count": 1,
+    "Last Seen": "2026-07-24 22:13",
+    "Industry": "General",
+    "Risk Level": "Critical"
   }
 ]
