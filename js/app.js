@@ -448,9 +448,15 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        if (typeof vis === "undefined" || !vis.Network) {
+            console.error("Vis.js network library not loaded.");
+            container.innerHTML = `<div class="loading-placeholder"><p style="font-size:12px; color:var(--text-muted); padding:30px; text-align:center;">Network visualization library loading...</p></div>`;
+            return;
+        }
+
         const data = {
-            nodes: new vis.DataSet(nodes),
-            edges: new vis.DataSet(edges)
+            nodes: (typeof vis.DataSet !== "undefined") ? new vis.DataSet(nodes) : nodes,
+            edges: (typeof vis.DataSet !== "undefined") ? new vis.DataSet(edges) : edges
         };
 
         const options = {
@@ -516,10 +522,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Click interaction: filter feed by clicked entity!
         network.on("click", (params) => {
-            if (params.nodes.length > 0) {
+            if (params.nodes && params.nodes.length > 0) {
                 const nodeId = params.nodes[0];
-                const clickedNode = data.nodes.get(nodeId);
-                if (clickedNode) {
+                const clickedNode = nodes.find(n => n.id === nodeId);
+                if (clickedNode && clickedNode.label) {
                     searchInput.value = clickedNode.label;
                     loadNewsFeed(clickedNode.label);
                 }
