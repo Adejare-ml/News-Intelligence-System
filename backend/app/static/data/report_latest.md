@@ -1,51 +1,59 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-24 15:06:16 (UTC+1)
+**Generated on:** 2026-07-24 18:26:13 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 22
-- **High Risk Signals:** 2
+- **Total Articles Processed:** 21
+- **High Risk Signals:** 0
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
-# Executive Summary: Nigerian Intelligence Briefing - July 24, 2026
+### Executive Summary Report: Nigerian News Update
 
-## Key Developments
+**Date:** July 24, 2026
 
-*   **Government & Regulatory Action:**
-    *   Lagos State has released its admission list for model colleges, indicating progress in the education sector.
-    *   Discussions are ongoing among tax ombuds and experts advocating for a fairer and more transparent tax system to enhance compliance.
-    *   President Tinubu has rejected the amendment bill for the Chartered Institute of Purchasing and Supply Management of Nigeria (CIPSMN), signaling a stance on regulatory changes.
-    *   The Kogi State tax agency has launched a statewide sensitisation campaign for new tax laws, aiming to improve compliance and understanding.
-    *   The Nigerian Hajj Commission (NAHCON) is urged not to retreat on reforms, highlighting ongoing efforts for transparency and efficiency.
-    *   Germany's Foreign Minister, Johann Wadephul, has visited Lagos, signaling Germany's interest in seeking energy and trading partners in Africa, potentially opening new avenues for Nigerian businesses.
-*   **Economic & Industry:**
-    *   Dangote Refinery is reportedly raising Africa's largest private capital in preparation for its Initial Public Offering (IPO), indicating significant financial activity in the private sector.
-    *   The Africa Trade Gateway has facilitated its first energy sector cross-border transaction in Southern Africa, valued at $5.3 million, showcasing regional trade growth.
-    *   Discussions at AEW 2026 highlight Africa's potential to leverage its gas wealth for industrial power, pointing to future energy sector development.
-    *   Concerns persist regarding the volatility of tomato and pepper prices in Nigeria, despite government interventions, underscoring challenges in the agricultural supply chain.
-    *   Former US President Trump's tariffs have been imposed on Nigeria and 59 other countries over forced labour claims, which could impact international trade relations.
-*   **Infrastructure & Public Works:**
-    *   The Niger Delta Development Commission (NDDC) reports completing 600km of roads within three years, marking significant progress in regional infrastructure.
-    *   Governor Adeleke has unveiled the first phase of a 3.5km dual carriageway in Ila, enhancing local infrastructure.
-*   **Local Governance:**
-    *   A group has issued a warning to the Ekiti State government against interfering with the Aramoko kingship process, indicating local governance and traditional authority disputes.
+**Overview:**
+Today's intelligence report provides a concise summary of key developments across Nigerian companies, government Ministries, Departments, and Agencies (MDAs), and regulatory bodies. The focus areas include aviation sector updates, government policies, financial performance, infrastructure advancements, and critical international trade relations.
 
-## High Risk Alerts
+---
 
-*   **Alleged Fraud Cases:**
-    *   **Blessing CEO Property Fraud:** Blessing CEO has been granted N20 million bail in an alleged N69.15 million property fraud case. This matter is categorised as a **Critical** risk due to the substantial amount involved and the nature of the allegations.
-    *   **N500m Land Fraud Trial:** A trial is underway concerning N500 million land fraud, where an Abuja realtor was reportedly unable to produce title documents for plots sold. This is classified as a **Critical** risk dueishing the significant financial value and legal implications.
-*   **Illegal Mining Conviction:**
-    *   **Kwara State Illegal Mining:** The Federal High Court in Ilorin, Kwara State, has convicted and sentenced two individuals and imposed a fine on a company for engaging in illegal mining activities. This represents a **Medium** risk event, highlighting regulatory enforcement against illicit operations.
+### Key Developments
 
-## Procurement & Board Changes
+**Aviation & Transportation:**
+*   **Enugu Air Runway Excursion:** The CEO of Enugu Air clarified that a recent incident at Benin Airport was a runway excursion, not a crash or emergency landing, while expressing support for a thorough probe. This incident led to the **Benin Airport runway closure**, disrupting operations for airlines like United Nigeria and Air Peace.
+*   **International Air Agreements:** Keyamo has directed the conclusion of the Nigeria-Belgium Bilateral Air Services Agreement (BASA), coinciding with Etihad Airways' return to Nigeria, signaling potential growth in international air travel.
+*   **Infrastructure Development:** The House of Representatives has called for the expedited completion of an alternative road linking Abuja, Keffi, and Karu, aimed at easing traffic congestion and enhancing connectivity.
 
-*   **Appointments:**
-    *   Olapegba has been appointed as the new Vice-Chancellor of the University of Ibadan (UI), marking a significant leadership change in the academic institution.
-*   *No specific procurement contracts or additional board changes were detailed in today's reports.*
+**Government & Regulatory Affairs:**
+*   **Public Finance Transparency:** The Budget Office affirmed that no public funds were expended on PEAC/PFIPC despite NASS appropriation, indicating adherence to fiscal discipline.
+*   **Educational Policy:** The University of Calabar (UNICAL) has suspended admissions into its Medicine, Dentistry, and Medical Laboratory Science (MLS) programs.
+*   **Union & Governance Dispute:** Osun ALGON has declared the suspension of NURTW activities as unconstitutional, challenging the state government's decision.
+*   **Legal Sector Appointments:** The Legal Practitioners' Privileges Committee (LPPC), a key Nigerian regulatory body, has conferred the rank of Senior Advocate of Nigeria (SAN) on 68 Nigerian lawyers.
+*   **Digital Economy Regulation:** The Nigerian Senate is advancing a bill that mandates social media firms to establish physical offices within Nigeria, a move with significant implications for foreign technology companies operating in the country.
+*   **Security Update:** Police in Abuja successfully apprehended four suspects allegedly involved in robbing drivers in the capital city.
+
+**Financial Sector Performance:**
+*   **Sterling Bank NPLs:** Sterling Bank has demonstrated consistent financial stability by maintaining its Non-Performing Loan (NPL) ratio below the Central Bank of Nigeria's (CBN) threshold for the past decade.
+
+**Infrastructure & Technology:**
+*   **Digital Infrastructure Launch:** Dignitaries, including Tijani and Abiodun, are slated to attend the launch of Nigeria's First 10Gbps Smart Campus Network, marking a step forward in digital infrastructure.
+
+---
+
+### High Risk Alerts
+
+*   **US Tariffs on Nigerian Imports:** The United States has imposed a 12.5% tariff on imports from Nigeria and 80 other countries, citing concerns over forced labor rules. This development carries a significant economic risk, potentially impacting Nigerian export revenues and trade relations, despite being categorized as "Low" by the initial risk assessment. This requires close monitoring due to its broad economic implications.
+
+---
+
+### Procurement & Board Changes
+
+*   **Board Inauguration:** INGENITA Energies has inaugurated the board for PML 66 HCDT, pledging transparency in its operations. This marks the establishment of a new governance structure for the entity.
+*   **Procurement Activities:** No specific procurement-related news or significant contract awards were reported in today's intelligence brief.
+
+---
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
