@@ -16,6 +16,7 @@ api_router = APIRouter(dependencies=[Depends(get_current_user)])
 # CRAWLER RUN TRIGGER
 # ==========================================
 
+@api_router.post("/news/trigger-ingest")
 @api_router.post("/run-news")
 @limiter.limit("2/minute")
 def run_news_pipeline(request: Request, seed: bool = False):
@@ -26,6 +27,7 @@ def run_news_pipeline(request: Request, seed: bool = False):
     except Exception as e:
         logger.error(f"Pipeline execution trigger failed: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Pipeline execution failed: {str(e)}")
+
 
 # ==========================================
 # NEWS FEED ENDPOINTS
@@ -98,6 +100,14 @@ def get_procurement_news():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@api_router.get("/significant_control.json")
+def get_significant_control():
+    """Returns Persons with Significant Control (PSC) records."""
+    try:
+        return db.get_significant_control()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 # ==========================================
 # DAILY INTELLIGENCE DIGESTS
 # ==========================================
@@ -117,6 +127,21 @@ def get_reports():
         # Newest first
         formatted.sort(key=lambda x: x["created_at"], reverse=True)
         return formatted
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@api_router.post("/reports/trigger")
+def trigger_report_compilation():
+    """Compiles a new daily report."""
+    try:
+        from run_pipeline import compile_daily_report
+        # Just pass recent articles for the report
+        articles = db.get_articles()
+        recent = articles[-30:] if len(articles) > 30 else articles
+        # Convert to expected format for compile_daily_report
+        records = [{"analysis": a} for a in recent]
+        compile_daily_report(records)
+        return {"status": "success", "message": "Report compiled successfully."}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

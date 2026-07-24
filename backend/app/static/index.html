@@ -93,8 +93,8 @@
                 <div class="panel-header">
                     <h2>Intelligence Feed</h2>
                     <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Search keyword or semantic query...">
-                        <button id="search-btn"><i data-lucide="search"></i></button>
+                        <input type="text" id="search-input" placeholder="Search keyword or semantic query..." aria-label="Search input">
+                        <button id="search-btn" aria-label="Search"><i data-lucide="search"></i></button>
                     </div>
                 </div>
                 <div class="search-options">
@@ -135,10 +135,10 @@
                         <span class="subtitle">Entity relationships map</span>
                     </div>
                     <div class="graph-toolbar">
-                        <button id="graph-zoom-in" class="graph-btn" title="Zoom In"><i data-lucide="zoom-in"></i></button>
-                        <button id="graph-zoom-out" class="graph-btn" title="Zoom Out"><i data-lucide="zoom-out"></i></button>
-                        <button id="graph-fit" class="graph-btn" title="Reset View"><i data-lucide="maximize-2"></i></button>
-                        <button id="graph-physics-toggle" class="graph-btn" title="Pause/Play Motion"><i data-lucide="pause"></i></button>
+                        <button id="graph-zoom-in" class="graph-btn" title="Zoom In" aria-label="Zoom In"><i data-lucide="zoom-in"></i></button>
+                        <button id="graph-zoom-out" class="graph-btn" title="Zoom Out" aria-label="Zoom Out"><i data-lucide="zoom-out"></i></button>
+                        <button id="graph-fit" class="graph-btn" title="Reset View" aria-label="Reset View"><i data-lucide="maximize-2"></i></button>
+                        <button id="graph-physics-toggle" class="graph-btn" title="Pause/Play Motion" aria-label="Pause or Play Motion"><i data-lucide="pause"></i></button>
                     </div>
                     <div id="network-container" class="network-container">
                         <!-- Loaded dynamically via Vis.js -->
@@ -175,7 +175,7 @@
         <div class="modal-content glass">
             <div class="modal-header">
                 <span id="modal-category" class="badge">Government</span>
-                <button class="close-modal-btn" id="close-modal"><i data-lucide="x"></i></button>
+                <button class="close-modal-btn" id="close-modal" aria-label="Close Article Modal"><i data-lucide="x"></i></button>
             </div>
             <div class="modal-body">
                 <h2 id="modal-title">Federal Government appoints Jane Doe as Permanent Secretary</h2>
@@ -226,7 +226,7 @@
         <div class="modal-content glass reports-modal-content">
             <div class="modal-header">
                 <h2>PSC & Company Intelligence Reports</h2>
-                <button class="close-modal-btn" id="close-reports-modal"><i data-lucide="x"></i></button>
+                <button class="close-modal-btn" id="close-reports-modal" aria-label="Close Reports Modal"><i data-lucide="x"></i></button>
             </div>
             <div class="reports-split-view">
                 <!-- Sidebar report list -->
@@ -261,7 +261,7 @@
         <div class="modal-content glass reports-modal-content" style="max-width: 900px;">
             <div class="modal-header">
                 <h2>Persons with Significant Control (PSC) Transparency</h2>
-                <button class="close-modal-btn" id="close-psc-modal"><i data-lucide="x"></i></button>
+                <button class="close-modal-btn" id="close-psc-modal" aria-label="Close PSC Modal"><i data-lucide="x"></i></button>
             </div>
             <div style="padding: 20px; overflow-y: auto; max-height: 75vh;">
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; gap:10px;">
@@ -269,7 +269,7 @@
                         Tracked beneficial owners owning >25% shares, holding >25% voting rights, or controlling board appointments across Nigerian counterparties.
                     </p>
                     <div class="search-box" style="width:260px;">
-                        <input type="text" id="psc-search-input" placeholder="Search person or company...">
+                        <input type="text" id="psc-search-input" placeholder="Search person or company..." aria-label="Search PSC">
                     </div>
                 </div>
                 <div id="psc-table-container">
