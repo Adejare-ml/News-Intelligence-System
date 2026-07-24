@@ -633,6 +633,17 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === modal) closeModal();
     });
 
+    // Global keyboard navigation
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            closeModal();
+            const pscModal = document.getElementById("psc-modal");
+            if (pscModal) pscModal.classList.remove("active");
+            const reportsModal = document.getElementById("reports-modal");
+            if (reportsModal) reportsModal.classList.remove("active");
+        }
+    });
+
     // Category filter buttons
     const filterBtns = document.querySelectorAll(".filter-btn");
     filterBtns.forEach(btn => {

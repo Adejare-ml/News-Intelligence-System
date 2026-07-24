@@ -23,6 +23,12 @@
     padding: 0;
 }
 
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    transition: outline-offset 0.2s ease;
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
@@ -156,15 +162,22 @@ body {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 20px;
+    min-height: 44px;
+    min-width: 44px;
     border-radius: 8px;
     font-family: var(--font-body);
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     border: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:active {
+    transform: scale(0.97);
 }
 
 .btn-primary {
@@ -293,6 +306,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     width: 220px;
+    min-height: 44px;
     transition: all 0.3s ease;
 }
 
@@ -317,7 +331,17 @@ body {
     border: none;
     color: var(--text-muted);
     padding: 8px 10px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.search-box button:hover {
+    color: var(--primary);
 }
 
 .search-options {
@@ -386,12 +410,16 @@ input:checked + .slider:before {
 .filter-btn {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-color);
-    padding: 6px 12px;
-    border-radius: 20px;
+    padding: 6px 16px;
+    min-height: 44px;
+    border-radius: 22px;
     color: var(--text-muted);
     font-size: 12px;
     cursor: pointer;
     transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter-btn:hover, .filter-btn.active {
@@ -426,7 +454,8 @@ input:checked + .slider:before {
     border-radius: 12px;
     padding: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    min-height: 44px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .article-card:hover {
@@ -641,7 +670,18 @@ input:checked + .slider:before {
     border: none;
     color: var(--text-muted);
     cursor: pointer;
-    transition: color 0.2s ease;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.close-modal-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .close-modal-btn:hover {
@@ -695,9 +735,13 @@ input:checked + .slider:before {
     font-weight: 600;
     cursor: pointer;
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    min-height: 44px;
     position: relative;
     transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tab-btn:hover, .tab-btn.active {
@@ -969,15 +1013,15 @@ input:checked + .slider:before {
     background: rgba(17, 20, 32, 0.85);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: #e5e7eb;
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     backdrop-filter: blur(8px);
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .graph-btn:hover {
