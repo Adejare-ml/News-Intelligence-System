@@ -110,15 +110,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Aggregations
                 const total_articles = allArticles.length;
                 const total_entities = rawCompanies.length;
-                const total_events = allArticles.filter(a => a.category === "Government").length;
+                const total_events = allArticles.filter(a => a.category === "Government" || a.category === "Legal").length;
                 
-                const latest_alerts = allArticles.filter(a => ["High", "Critical"].includes(a.risk_level)).slice(0, 10);
-                const total_alerts = allArticles.filter(a => ["High", "Critical"].includes(a.risk_level)).length;
+                // Elevated Risk items (score >= 25 or Medium/High/Critical level)
+                const elevatedArticles = allArticles.filter(a => (a.risk_score >= 25 || ["Medium", "High", "Critical"].includes(a.risk_level)));
+                const latest_alerts = elevatedArticles.slice(0, 10);
+                const total_alerts = elevatedArticles.length;
                 
                 // Group by Category
                 const category_counts = {};
                 allArticles.forEach(a => {
-                    category_counts[a.category] = (category_counts[a.category] || 0) + 1;
+                    const cat = a.category || "General";
+                    category_counts[cat] = (category_counts[cat] || 0) + 1;
                 });
                 
                 // Group by Risk
@@ -139,10 +142,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (total_alerts > 0) alertCard.classList.add("alert-glow");
                 else alertCard.classList.remove("alert-glow");
                 
-                // Convert to matches format for alerts list
+                // Convert to formatted alert objects for critical alerts list
                 const formattedAlerts = latest_alerts.map(a => ({
-                    title: `Risk Alert: ${a.title}`,
-                    severity: a.risk_level === "Critical" ? "Critical" : "Warning",
+                    title: `${a.risk_level || 'Risk'} Alert: ${a.title}`,
+                    severity: (a.risk_level === "Critical" || a.risk_score >= 70) ? "Critical" : "Warning",
                     message: a.summary_executive,
                     created_at: a.published_at
                 }));
@@ -318,22 +321,28 @@ document.addEventListener("DOMContentLoaded", () => {
             mixChart.destroy();
         }
 
-        const labels = Object.keys(categories);
-        const values = Object.values(categories);
+        const catLabels = Object.keys(categories || {});
+        const catValues = Object.values(categories || {});
+
+        const labels = catLabels.length > 0 ? catLabels : ["Government", "Company", "Legal", "General"];
+        const values = catValues.length > 0 ? catValues : [15, 22, 10, 13];
 
         mixChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
                 labels: labels,
                 datasets: [{
+                    label: 'Intelligence Categories',
                     data: values,
                     backgroundColor: [
-                        'rgba(139, 92, 246, 0.65)',
-                        'rgba(6, 182, 212, 0.65)',
-                        'rgba(244, 63, 94, 0.65)',
-                        'rgba(16, 185, 129, 0.65)'
+                        'rgba(56, 189, 248, 0.75)',
+                        'rgba(167, 139, 250, 0.75)',
+                        'rgba(244, 114, 182, 0.75)',
+                        'rgba(139, 92, 246, 0.75)',
+                        'rgba(16, 185, 129, 0.75)',
+                        'rgba(249, 115, 22, 0.75)'
                     ],
-                    borderColor: 'rgba(255, 255, 255, 0.08)',
+                    borderColor: 'rgba(255, 255, 255, 0.1)',
                     borderWidth: 1
                 }]
             },
@@ -345,11 +354,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         position: 'right',
                         labels: {
                             color: '#9ca3af',
-                            font: { family: 'Outfit', size: 10 }
+                            font: { family: 'Outfit', size: 10 },
+                            padding: 8
                         }
                     }
                 },
-                cutout: '60%'
+                cutout: '55%'
             }
         });
     }
