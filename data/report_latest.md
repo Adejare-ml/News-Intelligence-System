@@ -1,60 +1,51 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-24 09:32:26 (UTC+1)
+**Generated on:** 2026-07-24 15:06:16 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 66
-- **High Risk Signals:** 4
+- **Total Articles Processed:** 22
+- **High Risk Signals:** 2
 - **Appointments Logged:** 0
-- **Procurement Awards:** 3
+- **Procurement Awards:** 0
 
 ---
 
-## Executive Summary Report: Nigerian News Briefing - Today
+# Executive Summary: Nigerian Intelligence Briefing - July 24, 2026
 
-This report summarizes key developments, high-risk alerts, and notable procurement and board changes concerning Nigerian companies, Ministries, Departments, and Agencies (MDAs), and regulatory bodies.
+## Key Developments
 
-### Key Developments
+*   **Government & Regulatory Action:**
+    *   Lagos State has released its admission list for model colleges, indicating progress in the education sector.
+    *   Discussions are ongoing among tax ombuds and experts advocating for a fairer and more transparent tax system to enhance compliance.
+    *   President Tinubu has rejected the amendment bill for the Chartered Institute of Purchasing and Supply Management of Nigeria (CIPSMN), signaling a stance on regulatory changes.
+    *   The Kogi State tax agency has launched a statewide sensitisation campaign for new tax laws, aiming to improve compliance and understanding.
+    *   The Nigerian Hajj Commission (NAHCON) is urged not to retreat on reforms, highlighting ongoing efforts for transparency and efficiency.
+    *   Germany's Foreign Minister, Johann Wadephul, has visited Lagos, signaling Germany's interest in seeking energy and trading partners in Africa, potentially opening new avenues for Nigerian businesses.
+*   **Economic & Industry:**
+    *   Dangote Refinery is reportedly raising Africa's largest private capital in preparation for its Initial Public Offering (IPO), indicating significant financial activity in the private sector.
+    *   The Africa Trade Gateway has facilitated its first energy sector cross-border transaction in Southern Africa, valued at $5.3 million, showcasing regional trade growth.
+    *   Discussions at AEW 2026 highlight Africa's potential to leverage its gas wealth for industrial power, pointing to future energy sector development.
+    *   Concerns persist regarding the volatility of tomato and pepper prices in Nigeria, despite government interventions, underscoring challenges in the agricultural supply chain.
+    *   Former US President Trump's tariffs have been imposed on Nigeria and 59 other countries over forced labour claims, which could impact international trade relations.
+*   **Infrastructure & Public Works:**
+    *   The Niger Delta Development Commission (NDDC) reports completing 600km of roads within three years, marking significant progress in regional infrastructure.
+    *   Governor Adeleke has unveiled the first phase of a 3.5km dual carriageway in Ila, enhancing local infrastructure.
+*   **Local Governance:**
+    *   A group has issued a warning to the Ekiti State government against interfering with the Aramoko kingship process, indicating local governance and traditional authority disputes.
 
-*   **Economic & Financial:**
-    *   Nigeria's money supply increased by N4 trillion in June, reaching N133.25 trillion, despite tight monetary policy.
-    *   Lagos Assembly approved a N200bn bond and FAAC financing scheme.
-    *   The Federal Government (FG) is pushing for digital and harmonized tax systems, emphasizing trust.
-    *   Nigeria is targeting a zero-tariff policy to reduce its trade imbalance with China.
-    *   IMF urged Nigeria and other African governments to improve data transparency and productivity.
-*   **Government & Regulatory Actions:**
-    *   Shettima led Governors to Benin Republic to explore new investment avenues for Nigeria's textile industry.
-    *   The Senate is advancing digital sovereignty through an AI academy and proposed social media bills, aiming to compel platforms like Facebook and TikTok to open offices in Nigeria. HURIWA has protested this bill.
-    *   NIMASA unveiled a real-time vessel monitoring platform to enhance maritime safety.
-    *   NAFDAC is working to lift international restrictions on Nigerian beans.
-    *   The FG unveiled a 10-year agrifood strategy.
-    *   NCDMB, in partnership with a firm, trained 200 Northeast Youths in renewable energy and electrified six primary healthcare centers.
-    *   CAF confirmed Nigeria as the host of its November General Assembly.
-*   **Company Performance & Industry News:**
-    *   Airtel Africa's customer growth drove Q1 revenue to $1.85 billion.
-    *   Zenith Bank Plc was recognized as Africa's Best Bank and Nigeria's Best Bank at the 2026 Euromoney Awards for Excellence.
-    *   First HoldCo shares climbed 10% following Otedola's share purchase.
-    *   ASKY expanded its fleet with an additional B737 MAX 8 aircraft.
-    *   Moniepoint disbursed $700m, boosting MSME growth through first-time credit.
-    *   EFCC handed over N108m recovered from employees to a company.
-    *   NNPCL's N7.1tn financial transparency is being questioned by Vanguard News.
+## High Risk Alerts
 
-### High Risk Alerts
+*   **Alleged Fraud Cases:**
+    *   **Blessing CEO Property Fraud:** Blessing CEO has been granted N20 million bail in an alleged N69.15 million property fraud case. This matter is categorised as a **Critical** risk due to the substantial amount involved and the nature of the allegations.
+    *   **N500m Land Fraud Trial:** A trial is underway concerning N500 million land fraud, where an Abuja realtor was reportedly unable to produce title documents for plots sold. This is classified as a **Critical** risk dueishing the significant financial value and legal implications.
+*   **Illegal Mining Conviction:**
+    *   **Kwara State Illegal Mining:** The Federal High Court in Ilorin, Kwara State, has convicted and sentenced two individuals and imposed a fine on a company for engaging in illegal mining activities. This represents a **Medium** risk event, highlighting regulatory enforcement against illicit operations.
 
-*   **Legal & Fraud:**
-    *   A Lagos court granted Blessing CEO N20m bail in a N69m fraud case, highlighting ongoing legal challenges.
-    *   A US-based Nigerian faces a potential 30-year jail term over a $300,000 fraud.
-    *   The National Safety Investigation Bureau (NSIB) initiated an investigation into an Enugu Air runway excursion incident in Benin.
-    *   A court is set to rule on the admissibility of disputed documents in the "Oak Homes" ongoing trial.
-    *   A man was convicted for sexually assaulting a teenager in Cross River state.
+## Procurement & Board Changes
 
-### Procurement & Board Changes
-
-*   **Leadership Appointments/Elections:**
-    *   Tinubu’s aide emerged as the ADVAN President after the association elected its new exco at the AGM.
-*   **Contractual/Personnel Movements:**
-    *   Kelechi Iheanacho revealed his motivation for choosing Bursaspor over Celtic, indicating a player transfer decision.
-    *   Taiwo Awoniyi is likely to remain in England beyond his current contract expiry to qualify for a British passport, impacting Nottingham Forest's future roster.
+*   **Appointments:**
+    *   Olapegba has been appointed as the new Vice-Chancellor of the University of Ibadan (UI), marking a significant leadership change in the academic institution.
+*   *No specific procurement contracts or additional board changes were detailed in today's reports.*
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
