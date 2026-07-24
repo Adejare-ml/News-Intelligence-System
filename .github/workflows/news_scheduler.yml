@@ -8,6 +8,12 @@ on:
     - cron: "0 17 * * *"  # 6:00 PM Nigeria Time (5:00 PM UTC)
     - cron: "0 21 * * *"  # 10:00 PM Nigeria Time (9:00 PM UTC)
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/app/static/**'
+      - 'run_pipeline.py'
 
 permissions:
   contents: write
