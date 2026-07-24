@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let network = null;
     let allArticles = [];
     let allReports = [];
+    let allPscRecords = [];
 
     // DOM Elements
     const articlesList = document.getElementById("articles-list");
@@ -456,6 +457,39 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         network = new vis.Network(container, data, options);
+
+        // Setup Graph Toolbar Buttons
+        const zoomInBtn = document.getElementById("graph-zoom-in");
+        const zoomOutBtn = document.getElementById("graph-zoom-out");
+        const fitBtn = document.getElementById("graph-fit");
+        const physicsBtn = document.getElementById("graph-physics-toggle");
+        let physicsEnabled = true;
+
+        if (zoomInBtn) {
+            zoomInBtn.onclick = () => {
+                if (network) network.moveTo({ scale: network.getScale() * 1.25, animation: { duration: 300 } });
+            };
+        }
+        if (zoomOutBtn) {
+            zoomOutBtn.onclick = () => {
+                if (network) network.moveTo({ scale: network.getScale() * 0.75, animation: { duration: 300 } });
+            };
+        }
+        if (fitBtn) {
+            fitBtn.onclick = () => {
+                if (network) network.fit({ animation: { duration: 500 } });
+            };
+        }
+        if (physicsBtn) {
+            physicsBtn.onclick = () => {
+                if (!network) return;
+                physicsEnabled = !physicsEnabled;
+                network.setOptions({ physics: { enabled: physicsEnabled } });
+                physicsBtn.classList.toggle("active", !physicsEnabled);
+                physicsBtn.innerHTML = physicsEnabled ? `<i data-lucide="pause"></i>` : `<i data-lucide="play"></i>`;
+                if (window.lucide) window.lucide.createIcons();
+            };
+        }
         
         // Add a gentle orbiting camera effect
         let angle = 0;
@@ -696,6 +730,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    const pscSearchInput = document.getElementById("psc-search-input");
+    if (pscSearchInput) {
+        pscSearchInput.addEventListener("input", (e) => {
+            const query = (e.target.value || "").toLowerCase();
+            renderPSCTableRows(query);
+        });
+    }
+
     async function loadPSCRecords() {
         if (!pscTableContainer) return;
         pscTableContainer.innerHTML = `
@@ -707,45 +749,58 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const res = await fetch(`${API_BASE}/significant_control.json`);
             if (!res.ok) throw new Error("PSC data file not found.");
-            const pscData = await res.json();
-            
-            if (!pscData || pscData.length === 0) {
-                pscTableContainer.innerHTML = `<p style="padding:15px; color:var(--text-muted);">No Persons with Significant Control (PSC) entries recorded yet.</p>`;
-                return;
-            }
-
-            let html = `
-                <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left; color:#e5e7eb;">
-                    <thead>
-                        <tr style="border-bottom:1px solid rgba(255,255,255,0.1); color:var(--text-muted);">
-                            <th style="padding:10px;">Person Name</th>
-                            <th style="padding:10px;">Company</th>
-                            <th style="padding:10px;">Nature of Control</th>
-                            <th style="padding:10px;">Percentage</th>
-                            <th style="padding:10px;">Change Type</th>
-                            <th style="padding:10px;">Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-            pscData.forEach(r => {
-                html += `
-                    <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                        <td style="padding:10px; font-weight:600; color:#38bdf8;">${r["Person Name"] || "N/A"}</td>
-                        <td style="padding:10px; color:#a78bfa;">${r["Company"] || "N/A"}</td>
-                        <td style="padding:10px;">${r["Nature of Control"] || "N/A"}</td>
-                        <td style="padding:10px; color:#f472b6;">${r["Percentage"] || "N/A"}</td>
-                        <td style="padding:10px;"><span class="badge" style="background:rgba(239,68,68,0.2); color:#ef4444;">${r["Change Type"] || "Disclosed"}</span></td>
-                        <td style="padding:10px; color:var(--text-muted);">${r["Date"] || ""}</td>
-                    </tr>
-                `;
-            });
-            html += `</tbody></table>`;
-            pscTableContainer.innerHTML = html;
+            allPscRecords = await res.json();
+            renderPSCTableRows("");
         } catch (err) {
             console.error("Error loading PSC records:", err);
             pscTableContainer.innerHTML = `<p style="padding:15px; color:var(--text-muted);">Failed to load PSC records.</p>`;
         }
+    }
+
+    function renderPSCTableRows(query = "") {
+        if (!pscTableContainer) return;
+        let pscData = allPscRecords;
+        if (query) {
+            pscData = pscData.filter(r => 
+                (r["Person Name"] || "").toLowerCase().includes(query) ||
+                (r["Company"] || "").toLowerCase().includes(query) ||
+                (r["Nature of Control"] || "").toLowerCase().includes(query)
+            );
+        }
+
+        if (!pscData || pscData.length === 0) {
+            pscTableContainer.innerHTML = `<p style="padding:15px; color:var(--text-muted);">No matching Persons with Significant Control (PSC) entries found.</p>`;
+            return;
+        }
+
+        let html = `
+            <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left; color:#e5e7eb;">
+                <thead>
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.1); color:var(--text-muted);">
+                        <th style="padding:10px;">Person Name</th>
+                        <th style="padding:10px;">Company</th>
+                        <th style="padding:10px;">Nature of Control</th>
+                        <th style="padding:10px;">Percentage</th>
+                        <th style="padding:10px;">Change Type</th>
+                        <th style="padding:10px;">Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        pscData.forEach(r => {
+            html += `
+                <tr class="psc-table-row" style="border-bottom:1px solid rgba(255,255,255,0.05);">
+                    <td style="padding:10px; font-weight:600; color:#38bdf8;">${r["Person Name"] || "N/A"}</td>
+                    <td style="padding:10px; color:#a78bfa;">${r["Company"] || "N/A"}</td>
+                    <td style="padding:10px;">${r["Nature of Control"] || "N/A"}</td>
+                    <td style="padding:10px; color:#f472b6;">${r["Percentage"] || "N/A"}</td>
+                    <td style="padding:10px;"><span class="badge" style="background:rgba(239,68,68,0.2); color:#ef4444;">${r["Change Type"] || "Disclosed"}</span></td>
+                    <td style="padding:10px; color:var(--text-muted);">${r["Date"] || ""}</td>
+                </tr>
+            `;
+        });
+        html += `</tbody></table>`;
+        pscTableContainer.innerHTML = html;
     }
 
     // Ingest trigger
@@ -820,6 +875,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const reportMdContent = document.getElementById("report-md-content");
     const compileReportBtn = document.getElementById("compile-report-btn");
 
+    const copyReportBtn = document.getElementById("copy-report-btn");
+    if (copyReportBtn) {
+        copyReportBtn.addEventListener("click", () => {
+            const contentText = reportMdContent.innerText || reportMdContent.textContent;
+            if (!contentText) return;
+            navigator.clipboard.writeText(contentText).then(() => {
+                const orig = copyReportBtn.innerHTML;
+                copyReportBtn.innerHTML = `<i data-lucide="check"></i> Copied!`;
+                if (window.lucide) window.lucide.createIcons();
+                setTimeout(() => {
+                    copyReportBtn.innerHTML = orig;
+                    if (window.lucide) window.lucide.createIcons();
+                }, 2000);
+            });
+        });
+    }
+
     function parseMarkdown(md) {
         if (!md) return "";
         let html = md;
@@ -827,6 +899,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Escape HTML
         html = html.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
         
+        // Blockquotes
+        html = html.replace(/^&gt;\s?(.*$)/gim, '<blockquote style="border-left:3px solid var(--primary); padding-left:12px; margin:10px 0; color:var(--text-muted); font-style:italic;">$1</blockquote>');
+
         // Headers
         html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
         html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
@@ -839,10 +914,10 @@ document.addEventListener("DOMContentLoaded", () => {
         html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
         
-        // Bullet list items (matches "- Item")
-        html = html.replace(/^\- (.*$)/gim, '<li>$1</li>');
+        // Bullet list items (matches "- Item" or "* Item")
+        html = html.replace(/^[\-\*]\s+(.*$)/gim, '<li>$1</li>');
         
-        // Wrap adjacent list items in a ul (basic heuristic)
+        // Wrap adjacent list items in a ul
         html = html.replace(/(<li>.*<\/li>)/sg, '<ul>$1</ul>');
         
         // Links

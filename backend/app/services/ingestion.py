@@ -2,6 +2,7 @@ import feedparser
 import requests
 import random
 import re
+import html
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
 from backend.app.core.config import settings
@@ -145,12 +146,15 @@ class NewsIngestionService:
                         continue
                     urls_processed.add(entry.link)
                     
+                    clean_title = html.unescape(entry.title) if hasattr(entry, 'title') and entry.title else ""
+                    clean_summary = html.unescape(entry.summary) if hasattr(entry, 'summary') and entry.summary else clean_title
+                    
                     articles.append({
-                        "title": entry.title,
+                        "title": clean_title,
                         "url": entry.link,
                         "source": entry.source.title if hasattr(entry, 'source') else "Google News",
                         "published_at": entry.published if hasattr(entry, 'published') else datetime.now().isoformat(),
-                        "raw_text": entry.summary if hasattr(entry, 'summary') else entry.title,
+                        "raw_text": clean_summary,
                         "is_rss": True
                     })
             except Exception as e:

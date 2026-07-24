@@ -129,11 +129,16 @@
 
             <!-- Right Panel: Graph and Insights -->
             <div class="insights-column">
-                <!-- Knowledge Graph -->
-                <section class="workspace-panel glass graph-panel">
+                <section class="workspace-panel glass graph-panel" style="position: relative;">
                     <div class="panel-header">
                         <h2>Knowledge Graph</h2>
-                        <span class="subtitle">Entity relationships maps</span>
+                        <span class="subtitle">Entity relationships map</span>
+                    </div>
+                    <div class="graph-toolbar">
+                        <button id="graph-zoom-in" class="graph-btn" title="Zoom In"><i data-lucide="zoom-in"></i></button>
+                        <button id="graph-zoom-out" class="graph-btn" title="Zoom Out"><i data-lucide="zoom-out"></i></button>
+                        <button id="graph-fit" class="graph-btn" title="Reset View"><i data-lucide="maximize-2"></i></button>
+                        <button id="graph-physics-toggle" class="graph-btn" title="Pause/Play Motion"><i data-lucide="pause"></i></button>
                     </div>
                     <div id="network-container" class="network-container">
                         <!-- Loaded dynamically via Vis.js -->
@@ -234,6 +239,9 @@
                 <!-- Main reader content -->
                 <div class="reports-viewer">
                     <div class="reports-viewer-actions">
+                        <button id="copy-report-btn" class="btn btn-secondary btn-sm">
+                            <i data-lucide="copy"></i> Copy Report
+                        </button>
                         <button id="compile-report-btn" class="btn btn-secondary btn-sm">
                             <i data-lucide="plus-circle"></i> Compile New Report
                         </button>
@@ -247,6 +255,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <!-- Persons with Significant Control (PSC) Modal -->
     <div id="psc-modal" class="modal-overlay">
         <div class="modal-content glass reports-modal-content" style="max-width: 900px;">
@@ -254,10 +263,15 @@
                 <h2>Persons with Significant Control (PSC) Transparency</h2>
                 <button class="close-modal-btn" id="close-psc-modal"><i data-lucide="x"></i></button>
             </div>
-            <div style="padding: 20px; overflow-y: auto; max-height: 70vh;">
-                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 15px;">
-                    Tracked beneficial owners owning >25% shares, holding >25% voting rights, or controlling board appointments across Nigerian counterparties.
-                </p>
+            <div style="padding: 20px; overflow-y: auto; max-height: 75vh;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; gap:10px;">
+                    <p style="font-size: 13px; color: var(--text-muted); flex:1;">
+                        Tracked beneficial owners owning >25% shares, holding >25% voting rights, or controlling board appointments across Nigerian counterparties.
+                    </p>
+                    <div class="search-box" style="width:260px;">
+                        <input type="text" id="psc-search-input" placeholder="Search person or company...">
+                    </div>
+                </div>
                 <div id="psc-table-container">
                     <div class="loading-placeholder"><p>Loading PSC Records...</p></div>
                 </div>

@@ -1,411 +1,213 @@
 {
   "nodes": [
     {
-      "id": "0e60dec2ca8c",
-      "label": "AEW",
+      "id": "b50e588dd477",
+      "label": "Summit Holdings",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "b67f2b4317a4",
-      "label": "the Continent\u2019s Energy Economy",
+      "id": "a432b12eb939",
+      "label": "the Environmental Protection Agency",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": "de180e80c2a8",
+      "label": "AeroSpace International",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "d9f35f90b14e",
-      "label": "The Guardian Nigeria News",
+      "id": "4aa9408bf177",
+      "label": "Nova Energy Corp",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": "d6126344fc80",
+      "label": "AeroSpace International's",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "884943f2ad4d",
-      "label": "NIWA",
+      "id": "c3b12190ecfd",
+      "label": "Nova Energy Corp's",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "c3f9558d681b",
-      "label": "FX",
+      "id": "2126a9994a4b",
+      "label": "Apex Technology Group",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "05087274f45e",
-      "label": "Senate",
+      "id": "1c5fc9ed3397",
+      "label": "Apex Technology Group's",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "3e36d6268180",
-      "label": "NBS",
+      "id": "74459ca3cf85",
+      "label": "SEC",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": "666990c2b60b",
+      "label": "BioSphere Healthcare",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "452af0ea3b15",
-      "label": "PDP",
+      "id": "fc5942ce59ef",
+      "label": "BioSphere Healthcare's",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "cbdeaeb2cf5b",
-      "label": "APC",
+      "id": "9dc9cca35fbc",
+      "label": "Summit Holdings's",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "57bd7dd91f82",
-      "label": "BBNaija Season 11",
+      "id": "1e5b03afeb99",
+      "label": "Vertex Financials",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": "3a4208917c73",
+      "label": "Nova Energy Corp.",
+      "type": "company",
+      "risk": "High"
+    },
+    {
+      "id": "e5047961eacc",
+      "label": "Vertex Financials's",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "a685a83332f1",
-      "label": "Premium Times Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e194c74ceda2",
-      "label": "LASTMA",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1be980e2be8b",
-      "label": "Osoba",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "c5fa19fc4c08",
-      "label": "UN General Assembly",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0674272bac07",
-      "label": "UN",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "17a6f96ab604",
-      "label": "UNIBEN",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "584ae3a6ab89",
-      "label": "NIS",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5ffd81c0f812",
-      "label": "Archives\u00a0\u00a0Premium Times Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "db21251f6981",
-      "label": "Advanced Histopathology Laboratory Limited Archives",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2ca63cddd54f",
-      "label": "House",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "deb7d1ffdc6d",
-      "label": "Federal Medical Laboratory Varsity",
+      "id": "8d1c90ad918e",
+      "label": "The Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "1bdf0065fccb",
-      "label": "Education Ministry",
+      "id": "f87ff7c67323",
+      "label": "the Public Service Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "ad846cd10b74",
-      "label": "Customs",
+      "id": "49b1686ab865",
+      "label": "The Securities and Exchange Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "8580350f87e8",
-      "label": "EFCC",
+      "id": "49b1686ab865",
+      "label": "the Securities and Exchange Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
+      "id": "7a9db75f146c",
+      "label": "The Department of Justice",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "354d82c07bfe",
-      "label": "The North-West Development Commission\u2019s",
+      "id": "7a9db75f146c",
+      "label": "the Department of Justice",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "2b7ad1bf498e",
-      "label": "the Planning and Budget Commission Archives",
+      "id": "a7d7dcb89623",
+      "label": "the Federal Trade Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "d70636348f06",
-      "label": "the Federal Capital Territory",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b77bc5b4592a",
-      "label": "The Police Service Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c52595cb5cee",
-      "label": "Abuja The Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d8054d9654e5",
-      "label": "The Federal Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7e5504a852b7",
-      "label": "The Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7e5504a852b7",
-      "label": "the Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8d56fea02b25",
-      "label": "Gov Ododo",
+      "id": "73e1d0f8a1b3",
+      "label": "Michael Nduka",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "49d7de186ba5",
-      "label": "Okene Secondary Schools",
+      "id": "9852a215b907",
+      "label": "Michael Nduka's",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "2f61f6ff675a",
-      "label": "Yinka Quadri",
+      "id": "320b8e6bef45",
+      "label": "John Doe",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "81dcb233ede4",
-      "label": "Tinubu",
+      "id": "545aed88e320",
+      "label": "John Doe's",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "2c7928dd114f",
-      "label": "Tinubu Launches Multi-Billion-Dollar",
+      "id": "f4532d311c94",
+      "label": "Alice Vance",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "d385d1ccc307",
-      "label": "Tunde Ayeni",
+      "id": "cba387b703f1",
+      "label": "Alice Vance's",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "c75de9075423",
-      "label": "Skye Bank",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "9cbba6639876",
-      "label": "Yusuf Hassan Wada",
+      "id": "6d5846d7bdbe",
+      "label": "Robert Chen",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "08d97a6c9a2b",
-      "label": "N3.16b NELFUND",
+      "id": "23669ea2d840",
+      "label": "Robert Chen's",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "a1517b817ecb",
-      "label": "Shettima",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ed521605451c",
-      "label": "Shuaib S. Agaka",
+      "id": "991bab3fde1b",
+      "label": "Jane Doe",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "4921c0e2d1f6",
-      "label": "AI",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "3111f5884e6f",
-      "label": "Atiku",
+      "id": "2c0c8fdab339",
+      "label": "Sarah Jenkins",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "078c4e73146b",
-      "label": "BCDA",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "b332006c798f",
-      "label": "Bill Proposing",
+      "id": "9dcec0a530b2",
+      "label": "Sarah Jenkins's",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "172036a24a83",
-      "label": "Isoko Elites",
+      "id": "2f5bae5e5d84",
+      "label": "Helena Vance",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "93e60ad6e3ea",
-      "label": "Urhobo",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "8040556c37d1",
-      "label": "Sam Egube",
+      "id": "beef1a27f0ad",
+      "label": "Helena Vance's",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "342c87f7690a",
-      "label": "Suswam",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c71876b6b69d",
-      "label": "Chidimma Adetshina",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f04dfd78ae59",
-      "label": "Makoko",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "73ae52ef0672",
-      "label": "Mary Habila Archives",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "d98451df3e86",
-      "label": "Mrs Adenike Okebu Archives",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "974787534a67",
-      "label": "Osinbajo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "d00ebc44df33",
-      "label": "Fire Station",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0c68c2daa033",
-      "label": "BPP",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "498d3c6bfa03",
-      "label": "SON",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "4a0ee20e37da",
-      "label": "AfCFTA",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4f5fa988c861",
-      "label": "Bursaspor",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1d01384154bc",
-      "label": "Celtic",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "9fbc0e0e0d5f",
-      "label": "Nigerian Institute For Oil Palm Research (NIFOR)- Invitation To Tender",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "31e09536105c",
-      "label": "EOI",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "15cf8388eb7d",
-      "label": "Super Eagles",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "baf57ed9ddaf",
-      "label": "NIQS",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e2d0c54dad9b",
-      "label": "HRN",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -413,235 +215,181 @@
       "label": "Tracked Contractor",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "88a964c94776",
-      "label": "Nottingham Forest",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "546f22a5cf44",
-      "label": "Super E",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "bc67d7140c7b",
-      "label": "the Federal High Court",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
     {
-      "id": "cd57a1672d29",
-      "from": "8d56fea02b25",
-      "to": "d9f35f90b14e",
+      "id": "af8cb7ed4d1f",
+      "from": "73e1d0f8a1b3",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": "6b66210cce43",
+      "from": "9852a215b907",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": "aabe215fdf50",
+      "from": "320b8e6bef45",
+      "to": "8d1c90ad918e",
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": "616c2c8b998d",
+      "from": "545aed88e320",
+      "to": "8d1c90ad918e",
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": "6150476c1c43",
+      "from": "f4532d311c94",
+      "to": "8d1c90ad918e",
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": "2bcdc287df3a",
+      "from": "cba387b703f1",
+      "to": "8d1c90ad918e",
+      "label": "Appointed as Permanent Secretary"
+    },
+    {
+      "id": "58bb74bcb2bb",
+      "from": "6d5846d7bdbe",
+      "to": "de180e80c2a8",
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": "6ffc67b49a42",
+      "from": "23669ea2d840",
+      "to": "de180e80c2a8",
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": "0da115f45f02",
+      "from": "991bab3fde1b",
+      "to": "666990c2b60b",
       "label": "Appointed as Officer"
     },
     {
-      "id": "3e00bb624715",
-      "from": "49d7de186ba5",
-      "to": "d9f35f90b14e",
+      "id": "97bb8b516ee4",
+      "from": "2c0c8fdab339",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": "d931148bd430",
+      "from": "9dcec0a530b2",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
+    },
+    {
+      "id": "50bf3f123543",
+      "from": "2c0c8fdab339",
+      "to": "1e5b03afeb99",
       "label": "Appointed as Officer"
     },
     {
-      "id": "63bd1397e142",
-      "from": "2f61f6ff675a",
-      "to": "e194c74ceda2",
+      "id": "08825ca813ff",
+      "from": "991bab3fde1b",
+      "to": "b50e588dd477",
       "label": "Appointed as Officer"
     },
     {
-      "id": "7d98afbf12da",
-      "from": "81dcb233ede4",
-      "to": "c5fa19fc4c08",
-      "label": "Appointed as Officer"
+      "id": "61220b46c969",
+      "from": "2c0c8fdab339",
+      "to": "8d1c90ad918e",
+      "label": "Appointed as Permanent Secretary"
     },
     {
-      "id": "a2d6432b84ce",
-      "from": "2c7928dd114f",
-      "to": "d9f35f90b14e",
-      "label": "Appointed as Officer"
+      "id": "c653fef636d9",
+      "from": "9dcec0a530b2",
+      "to": "8d1c90ad918e",
+      "label": "Appointed as Permanent Secretary"
     },
     {
-      "id": "06391ff1337b",
-      "from": "d385d1ccc307",
-      "to": "c75de9075423",
-      "label": "Appointed as ex-Skye Bank chair"
+      "id": "9b6042d1739c",
+      "from": "2c0c8fdab339",
+      "to": "2126a9994a4b",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "5389661c3762",
-      "from": "9cbba6639876",
-      "to": "354d82c07bfe",
-      "label": "Appointed as Officer"
+      "id": "b92ba86257f9",
+      "from": "9dcec0a530b2",
+      "to": "2126a9994a4b",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "6ad82f7bff00",
-      "from": "08d97a6c9a2b",
-      "to": "d9f35f90b14e",
-      "label": "Appointed as Officer"
+      "id": "14e69895a350",
+      "from": "2f5bae5e5d84",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "3fd3a70f6bec",
-      "from": "81dcb233ede4",
-      "to": "a1517b817ecb",
-      "label": "Appointed as Officer"
+      "id": "7d104ff5010a",
+      "from": "beef1a27f0ad",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "cc9a5b27216a",
-      "from": "81dcb233ede4",
-      "to": "d9f35f90b14e",
-      "label": "Appointed as Officer"
+      "id": "29ce63c9d703",
+      "from": "6d5846d7bdbe",
+      "to": "4aa9408bf177",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "6e9a1ef237d0",
-      "from": "ed521605451c",
-      "to": "4921c0e2d1f6",
-      "label": "Appointed as Officer"
+      "id": "43d112824167",
+      "from": "23669ea2d840",
+      "to": "4aa9408bf177",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "5a102315833d",
-      "from": "3111f5884e6f",
-      "to": "078c4e73146b",
-      "label": "Appointed as Officer"
+      "id": "374e20a95b2d",
+      "from": "320b8e6bef45",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "0d7686bc0d55",
-      "from": "81dcb233ede4",
-      "to": "078c4e73146b",
-      "label": "Appointed as Officer"
+      "id": "b0bf39574411",
+      "from": "545aed88e320",
+      "to": "b50e588dd477",
+      "label": "Appointed as CEO"
     },
     {
-      "id": "96c489efcfc7",
-      "from": "81dcb233ede4",
-      "to": "a685a83332f1",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "aca5ac286baa",
-      "from": "b332006c798f",
-      "to": "05087274f45e",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "18d3135489b1",
-      "from": "172036a24a83",
-      "to": "93e60ad6e3ea",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "94b53b3e6ca0",
-      "from": "8040556c37d1",
-      "to": "93e60ad6e3ea",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "832add1563d2",
-      "from": "342c87f7690a",
-      "to": "a685a83332f1",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "23afa80d6bda",
-      "from": "c71876b6b69d",
-      "to": "d9f35f90b14e",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "a155621f449d",
-      "from": "f04dfd78ae59",
-      "to": "5ffd81c0f812",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "ff4522a30914",
-      "from": "73ae52ef0672",
-      "to": "a685a83332f1",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "29465b2ec8e5",
-      "from": "d98451df3e86",
-      "to": "a685a83332f1",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "3df290fd8f7e",
-      "from": "974787534a67",
-      "to": "d00ebc44df33",
-      "label": "Appointed as Officer"
-    },
-    {
-      "id": "2f75d17a49f0",
-      "from": "498d3c6bfa03",
-      "to": "0c68c2daa033",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "fd24cdd4035c",
-      "from": "d9f35f90b14e",
-      "to": "4a0ee20e37da",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a1be5e2df283",
-      "from": "1d01384154bc",
-      "to": "4f5fa988c861",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "5a6352669243",
-      "from": "4f5fa988c861",
-      "to": "1d01384154bc",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a336d7226054",
-      "from": "31e09536105c",
-      "to": "9fbc0e0e0d5f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "fc8326cd1735",
-      "from": "1d01384154bc",
-      "to": "15cf8388eb7d",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a17e0a08a6ee",
-      "from": "0c68c2daa033",
-      "to": "baf57ed9ddaf",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a8e567034262",
-      "from": "8580350f87e8",
-      "to": "e2d0c54dad9b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "5c93d72cae88",
+      "id": "903054c2bf1c",
       "from": "73d117483b2b",
-      "to": "d9f35f90b14e",
+      "to": "666990c2b60b",
       "label": "Contract Awardee"
     },
     {
-      "id": "ff32ac407063",
+      "id": "8356ae5cb40a",
       "from": "73d117483b2b",
-      "to": "1d01384154bc",
+      "to": "1e5b03afeb99",
       "label": "Contract Awardee"
     },
     {
-      "id": "00603966bdfc",
-      "from": "546f22a5cf44",
-      "to": "88a964c94776",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "97048f5ea836",
+      "id": "5924697832f0",
       "from": "73d117483b2b",
-      "to": "bc67d7140c7b",
+      "to": "b50e588dd477",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "586282df8ebb",
+      "from": "73d117483b2b",
+      "to": "de180e80c2a8",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "63ef04aae36c",
+      "from": "73d117483b2b",
+      "to": "2126a9994a4b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "5d784a57ea67",
+      "from": "73d117483b2b",
+      "to": "4aa9408bf177",
       "label": "Contract Awardee"
     }
   ]

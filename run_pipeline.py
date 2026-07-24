@@ -97,8 +97,19 @@ def run_pipeline(seed: bool = False):
         
         # Relevance filter check (strictly keep corporate, policy, and procurement news)
         if not analysis.get("relevant", True):
-            logger.info(f"Skipping non-relevant news item: '{title}'")
-            # Wait to avoid LLM quota exhaustion (Strictly <20 RPM, 3.5s sleep = ~17 RPM)
+            logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
+            db.add_article({
+                "ID": "",
+                "Time": item.get("published_at") or datetime.now().isoformat(),
+                "Title": title,
+                "Source": source,
+                "URL": url,
+                "Category": "Non-Relevant",
+                "Risk Score": 0,
+                "Summary": title,
+                "Status": "Filtered"
+            })
+            existing_urls.add(url)
             import time
             time.sleep(3.5)
             continue
@@ -297,8 +308,8 @@ def export_static_json_database():
                 r["Content"] = val
     psc_records = db.get_significant_control()
 
-    # Sort chronological (newest first)
-    articles_sorted = list(reversed(articles))[:60]
+    # Sort chronological (newest first, excluding non-relevant filtered articles)
+    articles_sorted = [a for a in reversed(articles) if a.get("Status") != "Filtered"][:60]
     
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
