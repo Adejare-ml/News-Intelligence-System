@@ -362,11 +362,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("network-container");
         if (!container || !graphData) return;
 
+        const rawNodes = (graphData.nodes || (graphData.graph && graphData.graph.nodes)) || [];
+        const rawEdges = (graphData.edges || (graphData.graph && graphData.graph.edges)) || [];
+
+        if (!rawNodes || rawNodes.length === 0) {
+            container.innerHTML = `<div class="loading-placeholder"><p style="font-size:12px; color:var(--text-muted); padding:30px; text-align:center;">No entity relationship nodes available.</p></div>`;
+            return;
+        }
+
         const nodes = [];
         const edges = [];
         
         // Setup Nodes
-        graphData.nodes.forEach(node => {
+        rawNodes.forEach(node => {
             let color = "#8b5cf6"; // Default primary
             let shape = "dot";
             
@@ -386,7 +394,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             nodes.push({
                 id: node.id,
-                label: node.label,
+                label: node.label || node.name || "Entity",
                 color: {
                     background: color,
                     border: 'rgba(255,255,255,0.15)',
@@ -406,12 +414,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Setup Edges
-        graphData.edges.forEach(edge => {
+        rawEdges.forEach(edge => {
             edges.push({
-                id: edge.id,
+                id: edge.id || `${edge.from}-${edge.to}`,
                 from: edge.from,
                 to: edge.to,
-                label: edge.label,
+                label: edge.label || "",
                 arrows: 'to',
                 color: {
                     color: 'rgba(255, 255, 255, 0.15)',
@@ -437,7 +445,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const options = {
             physics: {
-                stabilization: false,
+                stabilization: {
+                    enabled: true,
+                    iterations: 150
+                },
                 barnesHut: {
                     gravitationalConstant: -2000,
                     centralGravity: 0.1,
@@ -456,6 +467,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         };
 
+        // Clear previous network container content
+        container.innerHTML = "";
         network = new vis.Network(container, data, options);
 
         // Setup Graph Toolbar Buttons
@@ -490,19 +503,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (window.lucide) window.lucide.createIcons();
             };
         }
-        
-        // Add a gentle orbiting camera effect
-        let angle = 0;
-        setInterval(() => {
-            if (network) {
-                angle += 0.002;
-                network.moveTo({
-                    position: { x: Math.cos(angle) * 30, y: Math.sin(angle) * 30 },
-                    scale: network.getScale(), // Keep user's zoom level
-                    animation: { duration: 50, easingFunction: "linear" }
-                });
-            }
-        }, 50);
 
         // Click interaction: filter feed by clicked entity!
         network.on("click", (params) => {
