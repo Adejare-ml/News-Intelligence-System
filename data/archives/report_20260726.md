@@ -1,37 +1,51 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-26 18:07:30 (UTC+1)
+**Generated on:** 2026-07-26 23:57:55 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 15
+- **Total Articles Processed:** 28
 - **High Risk Signals:** 0
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
-**Executive Summary Report: Nigerian Corporate & Regulatory Intelligence**
+# Executive Summary Report: Nigerian News Highlights - July 26, 2026
 
-**Date:** July 26, 2026
+## Key Developments
 
-**Key Developments**
+**Corporate Performance & Awards:**
+*   **NGX Group** reported a record First-Half 2026 performance, indicating strong financial health.
+*   **TechRegard** received the Fast Rising Tech Newspaper award.
+*   **UBA** swept top honors at the 2026 Euromoney Awards, recognized as Nigeria's Best ESG and Retail Bank.
+*   **Federal Poly, Nekede** won the SkillUp Imo Contest.
 
-*   **Education Sector Initiatives:** The Universal Basic Education Commission (UBEC) and the Lagos State Universal Basic Education Board (LASUBEB) have jointly distributed teaching and learning materials to primary schools across Lagos. This initiative aims to enhance educational resources in the state.
-*   **Economic Competitiveness Concerns:** The National Skills Development Council (NSDC) has raised concerns that high production costs are significantly hindering the competitiveness of Nigerian factories. This highlights ongoing challenges for the manufacturing sector.
-*   **Energy Sector Policy Debate:** Experts are advocating for a reform of Nigeria's 34-year-old Environmental Impact Assessment (EIA) Law, arguing that its current framework is inadequate for the nation's energy transition goals. This suggests potential upcoming policy changes in environmental and energy regulations.
-*   **E-Hailing Sector Dispute:** The Amalgamated Union of App-Based Transport Workers of Nigeria (AUATON) has publicly criticized a 'Certified Courtist' over remarks concerning e-hailing drivers, indicating ongoing tensions and legal discourse within the ride-hailing industry.
-*   **Economic Resilience Dialogue:** Central Bank Governor, Olayemi Cardoso, and Ngozi Okonjo-Iweala are scheduled to lead discussions in Abuja focusing on strategies for bolstering Africa's economic resilience. This high-level dialogue could provide insights into future economic policies.
-*   **Digital Transformation & Policy Reform:** DOA (Duale, Ovia & Alex Adedipe), through its Managing Partner Adeleke Alex-Adedipe, is actively promoting Nigeria's digital future via Project BRIDGE and broader policy reforms. This underscores efforts to advance the country's digital infrastructure and regulatory framework.
-*   **Leadership Development in Abia:** An academy in Abia State has partnered with Pan-Atlantic University to develop and train young leaders, signaling investment in human capital and future leadership.
-*   **Tax Law Implementation in Kogi:** The Kogi State Internal Revenue Service (KGIRS) has commenced a statewide sensitization program on new tax laws in Kogi Central. This indicates active enforcement and communication of tax policy changes, which could impact businesses and individuals in the region.
+**Infrastructure & Development:**
+*   The **Federal Government (FG)** has resumed repair work on the Lagos-Ibadan Expressway, which may lead to traffic disruptions.
+*   Experts are inspecting Lagos materials testing laboratories as part of efforts to curb building collapses in the state.
+*   **Lagos State Government** was commended for its "Eko Smart" initiative.
 
-**High Risk Alerts**
+**Economic & Sectoral News:**
+*   There's a call for Nigeria to prioritize Artificial Intelligence (AI) to avoid being left behind in the global tech landscape.
+*   A firm is backing gas-powered generators as a solution to Nigeria's persistent power deficit.
+*   The **TETFund Secretary** urged Nigeria to reduce its reliance on importing 80% of building materials.
+*   The **Organisation for Technology Advancement of Computer Communication in West Africa (OTACCWA)** warned that Nigeria may face rice and tomato scarcity in three months.
 
-No high-risk alerts were identified in today's intelligence brief. All analyzed events were categorized with a "Low" risk level.
+**Political & Regulatory:**
+*   The **Independent National Electoral Commission (INEC)** concluded its Continuous Voter Registration (CVR) today, urging all eligible Nigerians to register.
+*   Discussions continue regarding past political figures and their influence on current policies, with **Atiku** claiming **Tinubu's** latest power idea mirrors his 21-year-old blueprint.
 
-**Procurement & Board Changes**
+## High Risk Alerts
 
-No significant procurement activities or executive board changes were reported in today's news records.
+*   **Labour Dispute & Operational Shutdown:** Labour unions have shut down the **FUTA Teaching Hospital** due to the non-implementation of an agreement, potentially impacting healthcare services. (Risk Score: 36, Risk Level: Low)
+*   **Legal Action Against National Corporation:** The **Socio-Economic Rights and Accountability Project (SERAP)** is suing the **Nigerian National Petroleum Company Limited (NNPCL)** over its alleged failure to account for ₦211 trillion in oil money, raising concerns about transparency and accountability. (Risk Score: 36, Risk Level: Low)
+*   **Regulatory Enforcement:** Cross River State authorities arrested 40 environmental offenders and dismantled illegal structures, signaling increased enforcement which could affect businesses operating without proper permits or adhering to environmental regulations. (Risk Score: 43, Risk Level: Low)
+*   **Supply Chain Vulnerability:** A warning from **OTACCWA** indicates potential rice and tomato scarcity in Nigeria within three months, highlighting risks to food security and potential inflationary pressures. (Risk Score: 30, Risk Level: Low)
+*   **Law Enforcement Action:** The **National Drug Law Enforcement Agency (NDLEA)** seized N10 billion worth of drugs and arrested a cocaine kingpin in Lagos raids, demonstrating ongoing efforts against illicit trade. (Risk Score: 30, Risk Level: Low)
+
+## Procurement & Board Changes
+
+No specific procurement contracts or significant board appointments/departures for Nigerian companies or MDAs were identified in today's news records.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
