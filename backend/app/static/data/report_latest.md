@@ -1,38 +1,44 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-26 09:16:22 (UTC+1)
+**Generated on:** 2026-07-26 14:47:14 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 17
-- **High Risk Signals:** 2
+- **Total Articles Processed:** 29
+- **High Risk Signals:** 0
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
-### Executive Summary Report: Nigerian News Intelligence - [Date of Report Generation - e.g., July 26, 2024]
+# Executive Summary Report: Nigerian News Brief
 
-This report summarizes today's key developments and high-risk alerts involving Nigerian companies, MDAs, and regulatory bodies, providing an executive overview of critical events and potential impacts.
+## Date: July 26, 2024
 
-#### Key Developments
+## Key Developments
 
-*   **Anti-Corruption Body Scrutiny:** The Independent Corrupt Practices and Other Related Offences Commission (ICPC) is implicated in an alleged extortion case involving its chairman, highlighting concerns over integrity within regulatory bodies.
-*   **Law Enforcement Misconduct:** Four officers of the Ondo Police Command have been arrested for alleged ethnic slurs and unprofessional conduct, prompting concerns about law enforcement discipline and public trust.
-*   **Infrastructure & Political Dispute:** A political dispute has emerged in Osun State, with the APC and Accord parties bickering over a reportedly faulty N20 billion Lameco flyover, raising questions about project quality and public funds.
-*   **International Leadership Role:** Nigeria has been elected as the conference chair for the African Telecommunications Union (ATU), signaling an enhanced role in regional telecommunications governance.
-*   **Judiciary Independence:** Amid the ongoing Peoples Democratic Party (PDP) crisis, former Deputy National Chairman Bode George has urged the National Judicial Council (NJC) to safeguard the independence of the judiciary.
-*   **Political Landscape Shift:** The former Local Government Chairman of Oyo, Oladeji, has defected from the All Progressives Congress (APC) to the Action Peoples Party (APM), indicating shifts in local political alignments.
-*   **Political Discourse:** Commentary from Joe Igbokwe dismissing Atiku Abubakar's presidential ambition, citing former President Obasanjo's alleged remarks on trustworthiness, reflects ongoing political debates.
-*   **Regional Governance Stability:** The Enugu National Development Coalition (NDC) has passed a vote of confidence in its State Executive Council, emphasizing internal stability and warning against destabilization efforts.
+*   **Economic & Investment:**
+    *   DAGFA reports that economic reforms spearheaded by Tinubu have led to a 41% increase in foreign investment.
+    *   The Centre for the Promotion of Private Enterprise (CPPE) informed the Federal Government and exporters that a U.S. 12.5% tariff on Nigeria is projected to have limited economic impact.
+    *   Former Vice President Atiku Abubakar criticized President Tinubu's administration for continued domestic borrowing despite a reported \u20a67.98 trillion oil windfall.
+    *   The AA party voiced concerns over economic hardship and accused the Independent National Electoral Commission (INEC) of disregarding court judgments.
+    *   A GEF-SGP project has launched a new platform aimed at enhancing support for Nigerian Micro, Small, and Medium Enterprises (MSMEs).
+*   **Regulatory & Governance:**
+    *   The Nigeria Police Force clarified that the Inspector-General of Police did not issue a 'shoot-on-sight' order in Benue State, debunking earlier reports.
+    *   Amidst the PDP crisis, Chief Bode George, a former Deputy National Chairman of the party, emphasized the need for the National Judicial Council (NJC) to safeguard the independence and integrity of the judiciary.
+    *   Cross River State authorities are targeting illegal drainage structures as part of a strategy to mitigate widespread flooding.
+*   **Business & Technology:**
+    *   Nenemarket Nigeria, a prominent classifieds platform, has launched an automated image resizing tool designed to enhance listing quality and user experience.
+    *   Etihad Airways has resumed flights to Nigeria, following a directive from Keyamo to finalize the Nigeria-Belgium Bilateral Air Services Agreement (BASA).
+*   **Political:**
+    *   The All Progressives Congress (APC) has advised workers in Osun State to reject an alleged N20,000 'Greek gift' from Adeleke, ahead of the 2026 gubernatorial elections.
 
-#### High Risk Alerts
+## High Risk Alerts
 
-*   **Alleged Share Fraud:** Reports from Premium Times Nigeria indicate alleged share fraud incidents, suggesting potential vulnerabilities in capital markets or corporate governance structures. (Risk Level: Critical)
-*   **Persistent Cyber Threats:** While digital fraud losses have reportedly decreased in Nigeria, the underlying report simultaneously highlights a rise in cyber threats, indicating a persistent and evolving risk environment for digital transactions and infrastructure. (Risk Level: Critical)
+No high-risk alerts were identified in today's news records. All analyzed events registered a 'Low' risk level.
 
-#### Procurement & Board Changes
+## Procurement & Board Changes
 
-*   No significant procurement activities or executive board changes involving Nigerian companies, MDAs, or regulatory bodies were identified in today's news records.
+No direct procurement activities or specific board changes (such as appointments, resignations, or elections within corporate or regulatory bodies) were explicitly reported in the provided news records. Mentions of individuals like Bode George primarily related to their past official capacities or current commentary on political and judicial matters, rather than immediate leadership transitions.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler.*
