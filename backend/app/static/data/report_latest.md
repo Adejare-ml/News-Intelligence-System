@@ -1,56 +1,8 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-27 10:51:24 (UTC+1)
-**Run Window:** Daily Crawler Exec
+**Generated on:** 2026-07-27 15:53:07 (UTC+1)
 
 ## Summary Statistics
-- **Total Articles Processed:** 54
-- **High Risk Signals:** 2
-- **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- Total Processed: 24
 
 ---
-
-# Executive Summary Report - Nigerian News Analysis
-
-## Key Developments
-
-*   **Financial & Investment:**
-    *   **AMCON** has initiated the divestment of **NTEL**, actively seeking strategic investors.
-    *   An underwriter successfully raised N16.2 billion, signaling progress towards recapitalization completion in the insurance sector.
-    *   Nigerian pharmaceutical companies listed on the Nigerian Exchange reported a significant 46.5% increase in combined finance costs during Q1 2026, primarily due to high interest rates.
-    *   Microfinance Banks (MfBs) are seeking further government intervention to boost their lending capacities.
-    *   Concerns have been raised regarding digital loan applications reportedly charging over 300% interest, prompting calls for **CBN** intervention.
-    *   Global geopolitical tensions are noted to be influencing the **CBN's** monetary policy, with reports suggesting a retreat from previous industry funding interventions.
-*   **Energy Sector:**
-    *   The electricity subsidy has surged to N1.78 trillion, while the national gas debt is approaching N1 trillion.
-    *   Stakeholders are advocating for a review of the **NUPRC** 2025 licensing round.
-*   **Regulatory & Governance:**
-    *   An editorial criticized **NNPCL's** alleged "reckless disregard" for Senate oversight functions.
-    *   **SERAP** has initiated legal action to compel **NNPC** to account for an alleged N211 trillion.
-    *   The **LIRS** implemented a lockdown in Computer Village, resulting in shop closures for a second week.
-    *   The **Budget Office** has clarified **PFIPC's** appropriation, while **BMO** denied former President Buhari's link to a scandal.
-    *   **EFCC's** massive recovery efforts have been applauded, though noted as "not enough" by observers.
-*   **Infrastructure & Development:**
-    *   The Federal Government (FG) has resumed repair work on the Lagos-Ibadan Expressway, which is expected to cause traffic congestion.
-    *   Experts are conducting inspections of Lagos materials testing laboratories to mitigate building collapses.
-    *   Discussions are underway to chart paths for sustainable construction and innovative financing models.
-*   **Education:**
-    *   **Wigwe University** has publicly denied reports of a mass staff sack.
-    *   **Kogi Polytechnic** has suspended seven lecturers following allegations.
-    *   A report indicated that 35 unaccredited health institutions in Kano are producing unqualified personnel.
-*   **Public Finance & Policy:**
-    *   An analysis points to "overlapping budgets" and a "weak budgeting culture" contributing to graft, poverty, and ghost allocations.
-    *   The Oyo judiciary is renewing its efforts to secure payment of judges' entitlements.
-    *   Political figure Peter Obi has vowed to reduce the presidential fleet and cut government spending.
-
-## High Risk Alerts
-
-*   **Legal/Corporate Governance (Insurance):** The House of Representatives is investigating an alleged "illegal" dismissal of an employee by an insurance firm. This could indicate potential violations of labor laws or corporate governance failures within the firm.
-*   **Political/Corruption (Governance):** An opinion piece titled "APC change in 2014 turns to scandalgate in 2026" suggests potential for ongoing political instability and revelations of corruption, raising concerns about governmental integrity and public trust.
-
-## Procurement & Board Changes
-
-*   No specific procurement activities or significant board appointments/departures for Nigerian companies, MDAs, or regulatory bodies were explicitly reported in today's news records.
-
----
-*Report compiled cloud-based by AURA Intelligence Scheduler.*
+*No significant alerts triggered in this run window (Gemini generation failed).*
