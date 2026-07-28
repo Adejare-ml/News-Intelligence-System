@@ -431,6 +431,12 @@
       "label": "the Federal High Court",
       "type": "agency",
       "risk": "Low"
+    },
+    {
+      "id": "f20dee31767c",
+      "label": "Federal Government",
+      "type": "agency",
+      "risk": "Low"
     }
   ],
   "edges": [
@@ -642,6 +648,12 @@
       "id": "97048f5ea836",
       "from": "73d117483b2b",
       "to": "bc67d7140c7b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "7f1c2520f536",
+      "from": "73d117483b2b",
+      "to": "f20dee31767c",
       "label": "Contract Awardee"
     }
   ]
