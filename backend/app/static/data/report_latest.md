@@ -1,8 +1,8 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-29 15:26:56 (UTC+1)
+**Generated on:** 2026-07-29 18:15:14 (UTC+1)
 
 ## Summary Statistics
-- Total Processed: 86
+- Total Processed: 23
 
 ---
 *No significant alerts triggered in this run window (Gemini generation failed).*
