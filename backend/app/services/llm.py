@@ -79,6 +79,44 @@ class LLMService:
         return cls._run_local_fallback(title, text)
 
     @classmethod
+    def generate_daily_report(cls, raw_data_string: str) -> str:
+        """Generates markdown executive report with provider fallback cascade: Gemini -> NVIDIA -> Ollama -> OpenAI."""
+        
+        # 1. Primary: Gemini API
+        if settings.GEMINI_API_KEY:
+            logger.info("Attempting report generation using Gemini API...")
+            md = cls.generate_daily_report_gemini(raw_data_string)
+            if md:
+                return md
+            logger.warning("Gemini API rate limited or failed. Falling back to NVIDIA API...")
+
+        # 2. Fallback 1: NVIDIA API (Llama 3.1 70B / DeepSeek)
+        if settings.NVIDIA_API_KEY:
+            logger.info("Attempting report generation using NVIDIA API...")
+            md = cls._generate_report_nvidia(raw_data_string)
+            if md:
+                return md
+            logger.warning("NVIDIA API failed. Falling back to Ollama API...")
+
+        # 3. Fallback 2: Ollama API
+        if settings.OLLAMA_API_KEY or settings.OLLAMA_HOST:
+            logger.info("Attempting report generation using Ollama API...")
+            md = cls._generate_report_ollama(raw_data_string)
+            if md:
+                return md
+            logger.warning("Ollama API failed. Falling back to OpenAI API...")
+
+        # 4. Fallback 3: OpenAI API
+        if settings.OPENAI_API_KEY:
+            logger.info("Attempting report generation using OpenAI API...")
+            md = cls._generate_report_openai(raw_data_string)
+            if md:
+                return md
+
+        logger.warning("All LLM report APIs failed or unavailable. Falling back to deterministic report generator.")
+        return ""
+
+    @classmethod
     def generate_daily_report_gemini(cls, raw_data_string: str) -> str:
         """Uses Gemini explicitly to generate a cohesive Markdown report from raw records."""
         try:
@@ -99,6 +137,86 @@ class LLMService:
             return response.text.strip()
         except Exception as e:
             logger.error(f"Gemini API execution error: {e}")
+            return ""
+
+    @classmethod
+    def _generate_report_nvidia(cls, raw_data_string: str) -> str:
+        """Generates executive markdown report using NVIDIA API."""
+        try:
+            from openai import OpenAI
+            client = OpenAI(
+                base_url="https://integrate.api.nvidia.com/v1",
+                api_key=settings.NVIDIA_API_KEY
+            )
+            prompt = (
+                "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
+                f"Raw Data:\n{raw_data_string}\n\n"
+                "Generate a professional, well-structured executive Markdown summary report. "
+                "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
+                "Output only clean, raw markdown text without wrapping backticks."
+            )
+            response = client.chat.completions.create(
+                model="meta/llama-3.1-70b-instruct",
+                messages=[
+                    {"role": "user", "content": prompt}
+                ]
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            logger.error(f"NVIDIA API report generation error: {e}")
+            return ""
+
+    @classmethod
+    def _generate_report_ollama(cls, raw_data_string: str) -> str:
+        """Generates executive markdown report using Ollama API."""
+        try:
+            from openai import OpenAI
+            base_url = settings.OLLAMA_HOST.rstrip('/')
+            if not base_url.endswith('/v1'):
+                base_url += '/v1'
+            api_key = settings.OLLAMA_API_KEY or "ollama"
+            client = OpenAI(base_url=base_url, api_key=api_key, timeout=15.0)
+            
+            prompt = (
+                "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
+                f"Raw Data:\n{raw_data_string}\n\n"
+                "Generate a professional, well-structured executive Markdown summary report. "
+                "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
+                "Output only clean, raw markdown text without wrapping backticks."
+            )
+            response = client.chat.completions.create(
+                model=settings.OLLAMA_MODEL,
+                messages=[
+                    {"role": "user", "content": prompt}
+                ]
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            logger.error(f"Ollama API report generation error: {e}")
+            return ""
+
+    @classmethod
+    def _generate_report_openai(cls, raw_data_string: str) -> str:
+        """Generates executive markdown report using OpenAI API."""
+        try:
+            from openai import OpenAI
+            client = OpenAI(api_key=settings.OPENAI_API_KEY)
+            prompt = (
+                "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
+                f"Raw Data:\n{raw_data_string}\n\n"
+                "Generate a professional, well-structured executive Markdown summary report. "
+                "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
+                "Output only clean, raw markdown text without wrapping backticks."
+            )
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "user", "content": prompt}
+                ]
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            logger.error(f"OpenAI API report generation error: {e}")
             return ""
 
     @classmethod

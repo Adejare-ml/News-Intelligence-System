@@ -223,11 +223,11 @@ def compile_daily_report(records: List[Dict[str, Any]]):
     appointments_count = sum(1 for r in records if r["analysis"].get("event_type") == "Appointment")
     procurement_count = sum(1 for r in records if r["analysis"].get("event_type") == "Procurement" or r["analysis"].get("procurement"))
     
-    # 1. Format Markdown Report using Gemini
-    logger.info("Calling Gemini API to compile rich markdown summary report...")
-    # Convert records to JSON string for Gemini
+    logger.info("Calling LLM API (Gemini -> NVIDIA -> Ollama -> OpenAI) to compile rich markdown summary report...")
+    # Convert records to JSON string for LLM
     raw_json_str = json.dumps(records, default=str)
-    generated_md = LLMService.generate_daily_report_gemini(raw_json_str)
+    
+    generated_md = LLMService.generate_daily_report(raw_json_str)
     
     if generated_md:
         md = f"""# PSC & Company Daily Intelligence Report
