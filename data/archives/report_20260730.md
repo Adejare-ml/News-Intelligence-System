@@ -1,33 +1,35 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-30 15:25:13 (UTC+1)
+**Generated on:** 2026-07-30 18:25:26 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 45
-- **High Risk Signals:** 0
+- **Total Articles Processed:** 30
+- **High Risk Signals:** 3
 - **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Procurement Awards:** 1
 
 ---
 
 ### Key Developments
 
-*   **AIG Jimoh vows impartial enforcement of the law against crime - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Okonjo-Iweala seeks adoption of strategic communication to drive economic reforms - The Guardian Nigeria News**: Key corporate update recorded.
-*   **‘Poor succession plans threaten Nigerian businesses’ - Punch Newspapers**: Key corporate update recorded.
-*   **US to stop routine visa processing at Abuja embassy, 24 other African missions - Punch Newspapers**: Key corporate update recorded.
-*   **Hoodlums kill Lagos dispatch rider for resisting extortion - Punch Newspapers**: Key corporate update recorded.
-*   **Nigeria must deepen reforms to unlock opportunities – Okonjo-Iweala - Punch Newspapers**: Key corporate update recorded.
-*   **2026 FIBA World Cup Qualifying Tournament: Archives - The Guardian Nigeria News**: Key corporate update recorded.
-*   **US walks out on France at UN meeting over human rights remark - Premium Times Nigeria**: Key corporate update recorded.
+*   **MeCure Plc ends co-CEO leadership structure, appoints new CEO, executive director - Premium Times Nigeria**: Key corporate update recorded.
+*   **NEDC unveils investment plan for accelerated regional transformation - The Guardian Nigeria News**: Key corporate update recorded.
+*   **What Ishaq Oloyede’s tenure says about JAMB, By Azu Ishiekwene - Premium Times Nigeria**: Key corporate update recorded.
+*   **Customs boosts June revenue by 35% to N19.4b, intercepts N809.7m expired vape products - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Nigeria recorded 245 civic space violations in 2025 – WSCIJ report - Premium Times Nigeria**: Key corporate update recorded.
+*   **Seplat posts 430% surge in half-year profit, declares special dividends - Premium Times Nigeria**: Key corporate update recorded.
+*   **US ends routine visa processing at Abuja embassy - Punch Newspapers**: Key corporate update recorded.
+*   **NAA alleges ex-official is impersonating president, backs EFCC e-auction - The Guardian Nigeria News**: Key corporate update recorded.
 
 ### High Risk Alerts
 
-*   *No critical risk threshold breaches recorded in this run window.*
+*   **EFCC Chairman cautions public officials against graft, fraud - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Contract fraud most prevalent corruption in public sector – EFCC boss - Punch Newspapers**: Elevated risk indicator detected.
+*   **Court remands four over $5.29m fraud in Lagos - Punch Newspapers**: Elevated risk indicator detected.
 
 ### Procurement & Board Changes
 
-*   *No new public procurement or executive board changes logged in this window.*
+*   **Procurement**: Contract fraud most prevalent corruption in public sector – EFCC boss - Punch Newspapers
 
 ---
 *Report compiled by AURA Intelligence Scheduler.*
