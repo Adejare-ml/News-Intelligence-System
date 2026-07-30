@@ -1,10 +1,10 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-30 18:25:26 (UTC+1)
+**Generated on:** 2026-07-30 23:58:54 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 30
-- **High Risk Signals:** 3
+- **Total Articles Processed:** 25
+- **High Risk Signals:** 0
 - **Appointments Logged:** 0
 - **Procurement Awards:** 1
 
@@ -12,24 +12,22 @@
 
 ### Key Developments
 
-*   **MeCure Plc ends co-CEO leadership structure, appoints new CEO, executive director - Premium Times Nigeria**: Key corporate update recorded.
-*   **NEDC unveils investment plan for accelerated regional transformation - The Guardian Nigeria News**: Key corporate update recorded.
-*   **What Ishaq Oloyede’s tenure says about JAMB, By Azu Ishiekwene - Premium Times Nigeria**: Key corporate update recorded.
-*   **Customs boosts June revenue by 35% to N19.4b, intercepts N809.7m expired vape products - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Nigeria recorded 245 civic space violations in 2025 – WSCIJ report - Premium Times Nigeria**: Key corporate update recorded.
-*   **Seplat posts 430% surge in half-year profit, declares special dividends - Premium Times Nigeria**: Key corporate update recorded.
-*   **US ends routine visa processing at Abuja embassy - Punch Newspapers**: Key corporate update recorded.
-*   **NAA alleges ex-official is impersonating president, backs EFCC e-auction - The Guardian Nigeria News**: Key corporate update recorded.
+*   **MTN records ₦707.5b profit in H1, declares ₦26 interim dividend - The Guardian Nigeria News**: Key corporate update recorded.
+*   **FCCPC, LASCOPA Join Forces to Tackle Unfair Trade Practices in Lagos - The Guardian Nigeria News**: Key corporate update recorded.
+*   **First Lady seeks Saudi Arabia’s help to reform Almajiri education - Punch Newspapers**: Key corporate update recorded.
+*   **Asaba jet crew remains in SSS custody over security breach – Keyamo - Premium Times Nigeria**: Key corporate update recorded.
+*   **Align interventions with Nigeria’s devt priorities, FG charges UN agency - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Atiku challenges Tinubu to disclose details of ₦15.13bn SUV procurement - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Senate probes oil sector, summons agencies, firms over NEITI audit findings - The Guardian Nigeria News**: Key corporate update recorded.
+*   **GRIP eyes 2027 as INEC conducts final verification for registration - The Guardian Nigeria News**: Key corporate update recorded.
 
 ### High Risk Alerts
 
-*   **EFCC Chairman cautions public officials against graft, fraud - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **Contract fraud most prevalent corruption in public sector – EFCC boss - Punch Newspapers**: Elevated risk indicator detected.
-*   **Court remands four over $5.29m fraud in Lagos - Punch Newspapers**: Elevated risk indicator detected.
+*   *No critical risk threshold breaches recorded in this run window.*
 
 ### Procurement & Board Changes
 
-*   **Procurement**: Contract fraud most prevalent corruption in public sector – EFCC boss - Punch Newspapers
+*   **Procurement**: Atiku challenges Tinubu to disclose details of ₦15.13bn SUV procurement - The Guardian Nigeria News
 
 ---
 *Report compiled by AURA Intelligence Scheduler.*
