@@ -349,6 +349,90 @@
       "risk": "Low"
     },
     {
+      "id": "da10009b9b53",
+      "label": "Alhaji Aliko Dangote",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "194a3caf5ef0",
+      "label": "Dangote Cement Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "8b4d6c678535",
+      "label": "Abdul Samad Rabiu",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "aa60e2a5d6c8",
+      "label": "BUA Foods Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "d9289d25b570",
+      "label": "Jubril Adewale Tinubu",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "4ce236c57734",
+      "label": "Oando Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "6617740c0c1a",
+      "label": "Femi Otedola",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "f101dbe3fd6a",
+      "label": "Geregu Power Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "85ea07465d1b",
+      "label": "Jim Ovia",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "b52b514b8b5a",
+      "label": "Zenith Bank Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "1b45367ee273",
+      "label": "Tony O. Elumelu",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "f5be7663cdb3",
+      "label": "United Bank for Africa (UBA) Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "f6c44ca7989b",
+      "label": "Aigboje Aig-Imoukhuede",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "172469be05d6",
+      "label": "Access Holdings Plc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "0c68c2daa033",
       "label": "BPP",
       "type": "agency",
@@ -577,6 +661,48 @@
       "from": "974787534a67",
       "to": "d00ebc44df33",
       "label": "Appointed as Officer"
+    },
+    {
+      "id": "a00a3f899ae7",
+      "from": "da10009b9b53",
+      "to": "194a3caf5ef0",
+      "label": "PSC: 85.8%"
+    },
+    {
+      "id": "d1189def3948",
+      "from": "8b4d6c678535",
+      "to": "aa60e2a5d6c8",
+      "label": "PSC: 89.0%"
+    },
+    {
+      "id": "dcd8f62f665d",
+      "from": "d9289d25b570",
+      "to": "4ce236c57734",
+      "label": "PSC: 66.7%"
+    },
+    {
+      "id": "77f74d23f68f",
+      "from": "6617740c0c1a",
+      "to": "f101dbe3fd6a",
+      "label": "PSC: 78.6%"
+    },
+    {
+      "id": "5d556d51dd53",
+      "from": "85ea07465d1b",
+      "to": "b52b514b8b5a",
+      "label": "PSC: 16.2%"
+    },
+    {
+      "id": "da3764a5dbad",
+      "from": "1b45367ee273",
+      "to": "f5be7663cdb3",
+      "label": "PSC: 24.5%"
+    },
+    {
+      "id": "d3ecbf9e224a",
+      "from": "f6c44ca7989b",
+      "to": "172469be05d6",
+      "label": "PSC: 12.4%"
     },
     {
       "id": "2f75d17a49f0",
