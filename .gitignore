@@ -1,29 +1,48 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-.pytest_cache/
-.venv/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
 venv/
+env/
 ENV/
+.venv
 
-# Databases
-backend/app/db/excel_db.xlsx
-tests/test_excel_db.xlsx
+# Jupyter Notebooks
+.ipynb_checkpoints
 
-# Local config & IDE
-.idea/
+# IDEs
 .vscode/
-.cursor/
+.idea/
+
+# Environment variables
 .env
+.env.local
 
-# System
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-gh_log*.txt
-
-# Docker
-.docker/
+# ML Models & Data dumps (store large models on HuggingFace)
+*.h5
+*.pkl
+*.onnx
+*.pth
