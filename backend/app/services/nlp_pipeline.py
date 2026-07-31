@@ -25,6 +25,13 @@ except Exception as e:
     logger.error(f"Could not load SentenceTransformer model: {e}")
     embedding_model = None
 
+try:
+    from transformers import pipeline as hf_pipeline
+    classifier_pipeline = hf_pipeline("zero-shot-classification", model="valhalla/distilbart-mnli-12-3")
+except Exception as e:
+    logger.warning(f"Could not load Hugging Face zero-shot-classification pipeline: {e}. Falling back to rule-based classification.")
+    classifier_pipeline = None
+
 # Vocab lists for Rule-Based Classification
 TITLES_VOCAB = [
     "CEO", "Chief Executive Officer", "Chairman", "Managing Director", "Director",
@@ -244,9 +251,18 @@ class NLPPipelineService:
 
     @staticmethod
     def classify_risk(text: str) -> str:
-        """Classifies risk level (Low, Medium, High, Critical) based on keyword matching."""
+        """Classifies risk level (Low, Medium, High, Critical) using Hugging Face zero-shot classification or keyword fallback."""
         if not text:
             return "Low"
+
+        if classifier_pipeline:
+            try:
+                candidate_labels = ["Critical risk", "High risk", "Medium risk", "Low risk"]
+                res = classifier_pipeline(text[:1000], candidate_labels)
+                top_label = res["labels"][0]
+                return top_label.replace(" risk", "")
+            except Exception as err:
+                logger.warning(f"HF classification error in classify_risk: {err}. Using fallback.")
             
         text_lower = text.lower()
         
@@ -302,9 +318,24 @@ class NLPPipelineService:
 
     @staticmethod
     def detect_category(text: str) -> str:
-        """Classifies the main category of the news (Government, Company, Person, Legal, General)."""
+        """Classifies the main category of the news (Government, Company, Person, Legal, General) using HF zero-shot or keyword fallback."""
         if not text:
             return "General"
+
+        if classifier_pipeline:
+            try:
+                candidate_labels = ["Government policy and state affairs", "Company business and finance", "Legal proceedings and court cases", "Individual person news"]
+                res = classifier_pipeline(text[:1000], candidate_labels)
+                top_label = res["labels"][0]
+                mapping = {
+                    "Government policy and state affairs": "Government",
+                    "Company business and finance": "Company",
+                    "Legal proceedings and court cases": "Legal",
+                    "Individual person news": "Person"
+                }
+                return mapping.get(top_label, "General")
+            except Exception as err:
+                logger.warning(f"HF classification error in detect_category: {err}. Using fallback.")
             
         text_lower = text.lower()
         
