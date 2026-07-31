@@ -1,36 +1,35 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-07-31 09:52:46 (UTC+1)
+**Generated on:** 2026-07-31 15:30:57 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 45
-- **High Risk Signals:** 4
+- **Total Articles Processed:** 32
+- **High Risk Signals:** 3
 - **Appointments Logged:** 0
-- **Procurement Awards:** 1
+- **Procurement Awards:** 0
 
 ---
 
 ### Key Developments
 
-*   **HURIWA accuses Reps’ panel of prejudging PFIPC probe - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Dattijo commissions remodelled Shuni Central Jumu’at Mosque in Sokoto - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Kano partners AATF to adopt drought resistance maize - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Customs intercepts N809.6m expired vape in Lagos - Punch Newspapers**: Key corporate update recorded.
-*   **‘Aviation requires responsible management, not govt bailouts’ - The Guardian Nigeria News**: Key corporate update recorded.
-*   **The strategic imperative of global business summits on Africa - The Guardian Nigeria News**: Key corporate update recorded.
-*   **A culture of dread: Nigeria’s post-cosmopolitanism, By Jibrin Ibrahim - Premium Times Nigeria**: Key corporate update recorded.
-*   **Nigeria's capital market Archives - Premium Times Nigeria**: Key corporate update recorded.
+*   **PDP: Turaki group submits Jonathan’s name, others to INEC, appeals court judgment - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Cadbury Nigeria sees 8% rise in H1 revenue, lower profit - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Dominion varsity VC backs field experience, practical learning - The Guardian Nigeria News**: Key corporate update recorded.
+*   **First HoldCo to pay 60% of annual profit as dividends - Premium Times Nigeria**: Key corporate update recorded.
+*   **Smart Green School initiative Archives - Premium Times Nigeria**: Key corporate update recorded.
+*   **Xenophobia: Boycott calls trail Tyla’s Lagos concert - The Guardian Nigeria News**: Key corporate update recorded.
+*   **How I almost jumped off the balcony — Davido - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Why AI governance should begin with engineers, not regulators - The Guardian Nigeria News**: Key corporate update recorded.
 
 ### High Risk Alerts
 
-*   **Contract fraud most prevalent corruption in public sector, says EFCC boss - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **Banks flag 13,117 BVNs for fraud as consumer credit falls to N3.8 trillion - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **EFCC arraigns Abuja bizman over alleged N15m fraud - Punch Newspapers**: Elevated risk indicator detected.
+*   **No regrets over Mmesoma sanction, Oloyede declares as Aina takes charge of JAMB - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Group petitions EFCC, seeks Speaker, deputy's probe over alleged N70bn OSOPADEC budget fraud - Premium Times Nigeria**: Elevated risk indicator detected.
 *   **EFCC recovers additional ₦42 million for businessman in ₦175.4 million cement fraud case - Premium Times Nigeria**: Elevated risk indicator detected.
 
 ### Procurement & Board Changes
 
-*   **Procurement**: Contract fraud most prevalent corruption in public sector, says EFCC boss - The Guardian Nigeria News
+*   *No new public procurement or executive board changes logged in this window.*
 
 ---
 *Report compiled by AURA Intelligence Scheduler.*
