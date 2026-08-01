@@ -1,10 +1,10 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-08-01 00:00:06 (UTC+1)
+**Generated on:** 2026-08-01 09:14:33 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 28
-- **High Risk Signals:** 14
+- **Total Articles Processed:** 39
+- **High Risk Signals:** 19
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
@@ -12,31 +12,36 @@
 
 ### Key Developments
 
-*   **Makinde unveils APM campaign council, moves to consolidate 2027 bid - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Hamas, Israel give conditions for accepting Trump’s disarmament agreement - Premium Times Nigeria**: Key corporate update recorded.
-*   **Huawei, NCEE launch AI drive to transform teacher education - The Guardian Nigeria News**: Key corporate update recorded.
-*   **IGP deploys CP Etaifo to oversee Osun polls - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Omega University Gets NUC Licence To Begin Academic Programmes - The Guardian Nigeria News**: Key corporate update recorded.
-*   **2027 Poll: Turaki-led PDP faction submits ex-President Jonathan’s name, others to INEC - Premium Times Nigeria**: Key corporate update recorded.
-*   **Nnenna Okoye advocates skincare made for African conditions - The Guardian Nigeria News**: Key corporate update recorded.
-*   **100% of Zero is Zero: What NLNG teaches us about the Bonga SW tax incentive - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Faze, others perform as CEO of Law Automobile clocks 40 - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Nigeria’s ambassador to U.S., Kayode Are joins ECD Board - The Guardian Nigeria News**: Key corporate update recorded.
+*   **US Mission hails Nigerian doctor over kidney care innovation - Punch Newspapers**: Key corporate update recorded.
+*   **MUSWEN commends Oloyede on service record at JAMB - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Broadcast content across borders - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Entries open for 2026 mPulse Spelling Bee competition - The Guardian Nigeria News**: Key corporate update recorded.
+*   **DNN selected for EU-ECOWAS technical support on fact-checking - The Guardian Nigeria News**: Key corporate update recorded.
+*   **NAHCON seeks phased implementation of saudi’s new hajj model - The Guardian Nigeria News**: Key corporate update recorded.
 
 ### High Risk Alerts
 
-*   **FG invests $500m on live-saving vaccines, vaccinates 75m children in 20-years – GAVI CEO - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **Segun Aina assumes office as JAMB Registrar, warns against exam malpractice - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **Okonjo-Iweala, Chidoka, Adeniyi laud insights, depth, range of Nwabuikwu’s new book - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **2027: Female politicians face rising online attacks, Centre warns - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **CJN bars lawyers from using ‘Barrister’ as title - Premium Times Nigeria**: Elevated risk indicator detected.
-*   **Senate Grills Finance Minister Over Safe Schools Funds - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **Celebrating foreign education: The hypocrisy of contemporary Nigerian leadership - Vanguard News**: Elevated risk indicator detected.
-*   **Leadership tussle rocks Nigerian Auctioneers Association**: Elevated risk indicator detected.
-*   **Evening recap: Tinubu dissolves property privatisation c’ttee, police release Osun SSG, other top stories**: Elevated risk indicator detected.
-*   **CBN slashes one-year T-bill yield as subscriptions hit N3.62 trillion**: Elevated risk indicator detected.
-*   **NBA constitutes 40-member committee for 2026 annual conference**: Elevated risk indicator detected.
-*   **Civil Society, Youth Groups Drive Push For NYSC Reforms**: Elevated risk indicator detected.
-*   **NNPCL releases financial statement, declares N535bn profit after tax from N4.4tn revenue**: Elevated risk indicator detected.
-*   **Tinubu seeks Saudi Arabia’s support for out of school children in Nigeria**: Elevated risk indicator detected.
+*   **Transfer of baton at JAMB: Oloyede’s legacy and challenges before Segun Aina - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **CAC under fire over alleged duplicate trustee registration - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Solution to Nigeria’s energy problem lies with citizens – FG - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Aradel’s half-year profit grows far less than revenue as galloping costs bite - Premium Times Nigeria**: Elevated risk indicator detected.
+*   **Supreme Court bans use Of ‘Barrister’ title in official correspondence - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Lagos police nab man over alleged N15.4m gold fraud | - theeagleonline.com.ng**: Elevated risk indicator detected.
+*   **Insights on Federal High Court (pre-election) practice directions (amendment), 2026, By Wahab Shittu - Premium Times Nigeria**: Elevated risk indicator detected.
+*   **Lagos’ N3.8b palace FG projects under scrutiny over dead monarch, vague budget entries - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **BUA targets two million-tonne raw materials imports with $85m port expansion - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Two Chinese jailed for illegal mining in Lagos | - theeagleonline.com.ng**: Elevated risk indicator detected.
+*   **Two Chinese nationals bag 50 years jail terms for illegal export of Nigeria’s minerals - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Bwacha backs Tinubu’s position on ‘bridges to nowhere’ - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **NITDA enforces new quality, security standards for government software - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Electric spark razes two shops in Ibadan, fire service saves 18 others - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Abuja @50: What happened to Wike’s promise? - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Otedola acquires additional N222bn FirstHoldco shares, now controls 26% - Vanguard News**: Elevated risk indicator detected.
+*   **Billy gas leak: Reps condemn NUPRC, NOSDRA inaction**: Elevated risk indicator detected.
+*   **Anambra, MAN to unveil industrial energy solutions in South‑East**: Elevated risk indicator detected.
+*   **Efforts ongoing to rescue over 100 kidnap victims in Kwara north community – Police**: Elevated risk indicator detected.
 
 ### Procurement & Board Changes
 
