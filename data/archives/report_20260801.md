@@ -1,10 +1,10 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-08-01 18:08:59 (UTC+1)
+**Generated on:** 2026-08-01 23:52:38 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 25
-- **High Risk Signals:** 15
+- **Total Articles Processed:** 16
+- **High Risk Signals:** 8
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
@@ -12,32 +12,25 @@
 
 ### Key Developments
 
-*   **Zamfara trains 42 officials on civil, mechanical engineering, building environment - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Omole tasks FG, Ondo on grassroots sports funding as ‘Akogun’ Cup uncovers new talents - The Guardian Nigeria News**: Key corporate update recorded.
-*   **Oyo monarchs hail Tinubu’s no-ransom policy - The Guardian Nigeria News**: Key corporate update recorded.
-*   **VFD Group posts twofold jump in half-year profit amid higher investment income - Premium Times Nigeria**: Key corporate update recorded.
-*   **Maresca ‘happy’ after first Man City game despite Inter shootout defeat - Vanguard News**: Key corporate update recorded.
-*   **Jang at 80: Nenadi Usman rallies politicians to shun hate, put Nigeria first - The Guardian Nigeria News**: Key corporate update recorded.
-*   **FirstBank supports Prideland Trilogy via First@Arts initiative - Vanguard News**: Key corporate update recorded.
-*   **First Lady, Remi Tinubu, celebrates Ilorin’s world class hospital now approaching completion - Vanguard News**: Key corporate update recorded.
+*   **Capacity training for women, youth on tomato, okra production in Ogun - The Guardian Nigeria News**: Key corporate update recorded.
+*   **New visita beckons at Enugu NMA - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Presco invests $200m in Ondo’s agro-project - The Guardian Nigeria News**: Key corporate update recorded.
+*   **The Ogori: Indigenous timekeeping, economic order and the new year, By Petra Akinti Onyegbule - Premium Times Nigeria**: Key corporate update recorded.
+*   **VFS Global Upgrades Lagos Visa Services with New Centre - Punch Newspapers**: Key corporate update recorded.
+*   **100% of zero is zero: What NLNG teaches us about Bonga SW tax incentive - The Guardian Nigeria News**: Key corporate update recorded.
+*   **UN council holds first straw poll to choose next Sec. Gen. - The Guardian Nigeria News**: Key corporate update recorded.
+*   **Meet Nigeria’s Ekeng-Itua, first world’s black woman Ph.D holder In Cybernetics - Vanguard News**: Key corporate update recorded.
 
 ### High Risk Alerts
 
-*   **PDP: Turaki Faction submits candidates’ names to INEC manually, appeals court judgment - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **₦7.13tr Energy Security Spending: Coalition demands NNPCL explanation - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **cement fraud case Archives - Premium Times Nigeria**: Elevated risk indicator detected.
-*   **Arewa Forum urges FG to accelerate digital governance reforms - The Guardian Nigeria News**: Elevated risk indicator detected.
-*   **CAF Congress: Five-man team inspects Nigeria’s facilities | - theeagleonline.com.ng**: Elevated risk indicator detected.
-*   **10-man Tottenham Hotspur beat Chelsea 2-1 for Alonso’s first defeat - Punch Newspapers**: Elevated risk indicator detected.
-*   **Onwuzurike seeks to end Nigeria’s 32-year 200m drought - Punch Newspapers**: Elevated risk indicator detected.
-*   **Blocs pétroliers au Nigeria : la NNPC et Tony Elumelu recalés au profit de sociétés plus confidentielles**: Elevated risk indicator detected.
-*   **Russian strikes on Kyiv kill nine, injure 28**: Elevated risk indicator detected.
-*   **Remi Tinubu Donates Nine Buses To APC Youth Wing**: Elevated risk indicator detected.
-*   **2027 election: Balami takes Obidient leaders, structure to Seyi Tinubu, promises 12 million votes**: Elevated risk indicator detected.
-*   **Transfer: Eintracht Frankfurt agree deal with Club Brugge for Onyedika**: Elevated risk indicator detected.
-*   **NESREA, ACReSAL Battle Climate Threats In Taraba**: Elevated risk indicator detected.
-*   **Nigeria’s AI Research Boom Signals a New Era of Scientific Innovation**: Elevated risk indicator detected.
-*   **Top 10 island destinations for 2026 — Expedia**: Elevated risk indicator detected.
+*   **The fake DG saga holds a mirror to all of us, By Akin Fadeyi - Premium Times Nigeria**: Elevated risk indicator detected.
+*   **Bagudu advocates private sector investment to advance food system transformation - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Tinubu tasks govs on critical infrastructure to stem insecurity - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Bridges To Nowhere: Bwacha seconds Tinubu’s motion against governors - The Guardian Nigeria News**: Elevated risk indicator detected.
+*   **Sinach wins ₦5 billion ‘Way Maker’ copyright battle as court dismisses producer’s suit - Premium Times Nigeria**: Elevated risk indicator detected.
+*   **Evening recap: CJN bans ‘Barrister’ title, police uncover fake, diplomatic number plate syndicate, other top stories**: Elevated risk indicator detected.
+*   **IG deploys new CP in Osun ahead of poll**: Elevated risk indicator detected.
+*   **Iheanacho Bids Farewell To Celtic In Social Media Post**: Elevated risk indicator detected.
 
 ### Procurement & Board Changes
 
