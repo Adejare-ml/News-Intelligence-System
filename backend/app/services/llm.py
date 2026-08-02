@@ -12,6 +12,11 @@ logger = logging.getLogger(__name__)
 DEFAULT_NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
 DEFAULT_NVIDIA_MODEL_FALLBACK = "meta/llama-3.1-8b-instruct"
 
+# Rolling alias that tracks Google's current flash model. Pinned model names
+# (e.g. gemini-2.5-flash) get retired for new users and start returning 404;
+# override with GEMINI_MODEL if a specific pinned version is needed.
+DEFAULT_GEMINI_MODEL = "gemini-flash-latest"
+
 # Ollama cloud's OpenAI-compatible endpoint, used when only an API key is set.
 OLLAMA_CLOUD_HOST = "https://ollama.com"
 
@@ -183,7 +188,7 @@ class LLMService:
             import google.generativeai as genai
             genai.configure(api_key=settings.GEMINI_API_KEY)
             
-            model = genai.GenerativeModel('gemini-2.5-flash')
+            model = genai.GenerativeModel(settings.GEMINI_MODEL or DEFAULT_GEMINI_MODEL)
             prompt = f"You are a Senior Intelligence Analyst. Here is the raw JSON data of today's news records involving Nigerian companies, MDAs, and regulatory bodies.\n\nRaw Data:\n{raw_data_string}\n\nPlease generate a highly professional, well-structured executive Markdown summary report. Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. Do NOT wrap in ```markdown blocks, just output the raw markdown text."
             
             response = model.generate_content(
