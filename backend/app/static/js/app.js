@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Determine dynamic serverless database configuration
-    const isGitHubPages = window.location.hostname.includes("github.io") || window.location.protocol === "file:";
+    // ?static=1 forces serverless/static data mode for local previews without the FastAPI backend
+    const isGitHubPages = window.location.hostname.includes("github.io") || window.location.protocol === "file:" || window.location.search.includes("static=1");
     const API_BASE = isGitHubPages ? "data" : "/api/v1";
 
     // State Variables
     let currentCategory = "";
     let currentRisk = "";
+    let currentSort = "newest";
     let isSemanticSearch = false;
     let mixChart = null;
     let network = null;
@@ -61,6 +63,31 @@ document.addEventListener("DOMContentLoaded", () => {
     // NORMALIZATION UTILITY
     // ==========================================
 
+    // Escape article-sourced strings before innerHTML interpolation (RSS titles
+    // and summaries are untrusted upstream content).
+    function esc(str) {
+        return String(str == null ? "" : str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
+    function timeAgo(dateStr) {
+        if (!dateStr) return "Recent";
+        const then = new Date(dateStr).getTime();
+        if (isNaN(then)) return "Recent";
+        const mins = Math.floor((Date.now() - then) / 60000);
+        if (mins < 1) return "Just now";
+        if (mins < 60) return `${mins}m ago`;
+        const hours = Math.floor(mins / 60);
+        if (hours < 24) return `${hours}h ago`;
+        const days = Math.floor(hours / 24);
+        if (days < 7) return `${days}d ago`;
+        return new Date(dateStr).toLocaleDateString();
+    }
+
     function normalizeArticle(art) {
         if (!art) return null;
         const score = art["Risk Score"] !== undefined ? parseInt(art["Risk Score"]) : (art.risk_score || 10);
@@ -82,7 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
             summary_executive: art.Summary || art.summary_executive || art.summary || art.Title || art.title || "No summary available.",
             summary_detailed: art.summary_detailed || art.Summary || art.summary_executive || art.Title || art.title || "No detailed summary available.",
             summary_timeline: art.summary_timeline || art.Summary || art.summary_executive || "No timeline summary available.",
-            published_at: art.Time || art.published_at || new Date().toISOString()
+            published_at: art.Time || art.published_at || new Date().toISOString(),
+            engine: art.Engine || art.engine || ""
         };
     }
 
@@ -213,6 +241,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const data = await res.json();
                 articles = query ? data.map(item => normalizeArticle(item.article)) : data.map(normalizeArticle);
             }
+            if (currentSort === "risk") {
+                articles = [...articles].sort((a, b) => (b.risk_score || 0) - (a.risk_score || 0));
+            }
             renderNewsFeed(articles);
         } catch (err) {
             console.error("Error loading news feed:", err);
@@ -295,39 +326,78 @@ document.addEventListener("DOMContentLoaded", () => {
         }, stepTime);
     }
 
+    function updateFeedCount(count) {
+        const feedCount = document.getElementById("feed-count");
+        if (!feedCount) return;
+        const filters = [];
+        if (currentCategory) filters.push(currentCategory);
+        if (currentRisk) filters.push(`${currentRisk} risk`);
+        if (searchInput.value.trim()) filters.push(`"${searchInput.value.trim()}"`);
+        const suffix = filters.length ? ` · ${filters.join(" · ")}` : "";
+        feedCount.textContent = `${count} record${count === 1 ? "" : "s"}${suffix}`;
+    }
+
     function renderNewsFeed(articles) {
+        updateFeedCount(articles ? articles.length : 0);
+
         if (!articles || articles.length === 0) {
-            articlesList.innerHTML = `<div class="loading-placeholder"><p>No intelligence records found.</p></div>`;
+            articlesList.innerHTML = `
+                <div class="loading-placeholder empty-state">
+                    <p>No intelligence records match the current filters.</p>
+                    <button id="clear-filters-btn" class="btn btn-secondary btn-sm">Clear filters</button>
+                </div>`;
+            const clearBtn = document.getElementById("clear-filters-btn");
+            if (clearBtn) clearBtn.addEventListener("click", resetFeedFilters);
             return;
         }
 
         articlesList.innerHTML = "";
-        articles.forEach(art => {
+        articles.forEach((art, idx) => {
             const card = document.createElement("div");
             card.className = "article-card";
-            
-            const pubDate = art.published_at ? new Date(art.published_at).toLocaleDateString() : "Recent";
-            const catClass = art.category ? art.category.toLowerCase() : "general";
+            card.style.setProperty("--stagger", Math.min(idx, 12));
+            card.setAttribute("role", "button");
+            card.setAttribute("tabindex", "0");
+
+            const catClass = art.category ? art.category.toLowerCase().replace(/[^a-z-]/g, "") : "general";
             const riskClass = art.risk_level ? art.risk_level.toLowerCase() : "low";
+            const engineChip = art.engine
+                ? `<span class="engine-chip" title="Analyzed by ${esc(art.engine)}">${esc(art.engine)}</span>`
+                : "";
 
             card.innerHTML = `
                 <div class="article-card-header">
-                    <span class="badge ${catClass}">${art.category || "General"}</span>
-                    <span>${pubDate}</span>
+                    <span class="badge ${catClass}">${esc(art.category || "General")}</span>
+                    <span title="${esc(art.published_at)}">${esc(timeAgo(art.published_at))}</span>
                 </div>
-                <h4>${art.title}</h4>
+                <h4>${esc(art.title)}</h4>
                 <div class="article-card-footer">
-                    <span>${art.source}</span>
-                    <span>
+                    <span class="source-label">${esc(art.source)}${engineChip}</span>
+                    <span class="risk-label" title="Risk score ${esc(art.risk_score)}/100">
                         <span class="risk-dot ${riskClass}"></span>
-                        Risk: ${art.risk_level || "Low"}
+                        ${esc(art.risk_level || "Low")} · ${esc(art.risk_score)}
                     </span>
                 </div>
             `;
 
             card.addEventListener("click", () => openArticleModal(art));
+            card.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    openArticleModal(art);
+                }
+            });
             articlesList.appendChild(card);
         });
+    }
+
+    function resetFeedFilters() {
+        currentCategory = "";
+        currentRisk = "";
+        searchInput.value = "";
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.toggle("active", !b.getAttribute("data-category")));
+        document.querySelectorAll(".filter-risk-btn").forEach(b => b.classList.toggle("active", !b.getAttribute("data-risk")));
+        loadNewsFeed();
     }
 
     function renderAlertsList(alerts) {
@@ -346,10 +416,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             item.innerHTML = `
                 <div class="alert-item-header">
-                    <span>${alert.title}</span>
-                    <span style="font-size:10px; color:var(--text-muted);">${dateStr}</span>
+                    <span>${esc(alert.title)}</span>
+                    <span style="font-size:10px; color:var(--text-muted);">${esc(dateStr)}</span>
                 </div>
-                <p style="margin-top:2px;">${alert.message}</p>
+                <p style="margin-top:2px;">${esc(alert.message)}</p>
             `;
             alertsList.appendChild(item);
         });
@@ -425,39 +495,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const nodes = [];
         const edges = [];
-        
-        // Setup Nodes
-        rawNodes.forEach(node => {
-            let color = "#8b5cf6"; // Default primary
-            let shape = "dot";
-            
-            if (node.type === "person") {
-                color = "#38bdf8"; // Light Blue
-                shape = "dot";
-            } else if (node.type === "company") {
-                color = "#a78bfa"; // Violet
-                shape = "square";
-            } else if (node.type === "agency") {
-                color = "#f472b6"; // Pink
-                shape = "triangle";
-            } else if (node.type === "psc") {
-                color = "#ef4444"; // Red for PSC / Beneficial Owner
-                shape = "diamond";
+
+        // Connection counts drive node size so hub entities stand out
+        const rawNodeIds = new Set(rawNodes.map(n => n.id));
+        const degree = {};
+        rawEdges.forEach(e => {
+            if (e.from && e.to && rawNodeIds.has(e.from) && rawNodeIds.has(e.to)) {
+                degree[e.from] = (degree[e.from] || 0) + 1;
+                degree[e.to] = (degree[e.to] || 0) + 1;
             }
+        });
+
+        const TYPE_META = {
+            person:  { color: "#38bdf8", shape: "dot",      label: "Person" },
+            company: { color: "#a78bfa", shape: "square",   label: "Company" },
+            agency:  { color: "#f472b6", shape: "triangle", label: "Agency" },
+            psc:     { color: "#ef4444", shape: "diamond",  label: "PSC / Beneficial Owner" }
+        };
+
+        // Setup Nodes (dedupe by id: exported data can contain case-variant
+        // duplicates that hash to the same id, which crashes vis.DataSet)
+        const seenNodeIds = new Set();
+        rawNodes.forEach(node => {
+            if (!node.id || seenNodeIds.has(node.id)) return;
+            seenNodeIds.add(node.id);
+            const meta = TYPE_META[node.type] || { color: "#8b5cf6", shape: "dot", label: "Entity" };
+            const links = degree[node.id] || 0;
+            const name = node.label || node.name || "Entity";
 
             nodes.push({
                 id: node.id,
-                label: node.label || node.name || "Entity",
+                label: name,
+                title: `${name}\n${meta.label} · Risk: ${node.risk || "Low"} · ${links} link${links === 1 ? "" : "s"}`,
                 color: {
-                    background: color,
+                    background: meta.color,
                     border: 'rgba(255,255,255,0.15)',
                     highlight: {
                         background: '#06b6d4',
                         border: '#fff'
                     }
                 },
-                shape: shape,
-                size: 16,
+                shape: meta.shape,
+                size: 12 + Math.min(links * 3, 16),
                 font: {
                     color: '#e5e7eb',
                     size: 11,
@@ -466,10 +545,14 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // Setup Edges
+        // Setup Edges (deduped by id for the same reason as nodes)
+        const seenEdgeIds = new Set();
         rawEdges.forEach(edge => {
+            const edgeId = edge.id || `${edge.from}-${edge.to}`;
+            if (seenEdgeIds.has(edgeId)) return;
+            seenEdgeIds.add(edgeId);
             edges.push({
-                id: edge.id || `${edge.from}-${edge.to}`,
+                id: edgeId,
                 from: edge.from,
                 to: edge.to,
                 label: edge.label || "",
@@ -533,6 +616,12 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = "";
         network = new vis.Network(container, data, options);
 
+        // Panel subtitle doubles as a live entity/link counter
+        const graphStats = document.getElementById("graph-stats");
+        if (graphStats) {
+            graphStats.textContent = `${nodes.length} entities · ${validEdges.length} links — click a node to filter the feed`;
+        }
+
         // Setup Graph Toolbar Buttons
         const zoomInBtn = document.getElementById("graph-zoom-in");
         const zoomOutBtn = document.getElementById("graph-zoom-out");
@@ -566,14 +655,44 @@ document.addEventListener("DOMContentLoaded", () => {
             };
         }
 
-        // Click interaction: filter feed by clicked entity!
+        // Neighborhood highlight: dim everything not connected to the clicked node
+        const canUpdateNodes = typeof vis.DataSet !== "undefined";
+
+        function highlightNeighborhood(nodeId) {
+            if (!canUpdateNodes) return;
+            const neighbors = new Set(network.getConnectedNodes(nodeId));
+            neighbors.add(nodeId);
+            data.nodes.update(nodes.map(n => neighbors.has(n.id)
+                ? { id: n.id, color: n.color, font: { color: '#e5e7eb' } }
+                : {
+                    id: n.id,
+                    color: { background: 'rgba(75, 85, 99, 0.18)', border: 'rgba(255,255,255,0.04)' },
+                    font: { color: 'rgba(156, 163, 175, 0.3)' }
+                }
+            ));
+        }
+
+        function resetHighlight() {
+            if (!canUpdateNodes) return;
+            data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: '#e5e7eb' } })));
+        }
+
+        // Click interaction: spotlight the neighborhood and filter feed by entity;
+        // clicking empty space restores the graph and the full feed.
         network.on("click", (params) => {
             if (params.nodes && params.nodes.length > 0) {
                 const nodeId = params.nodes[0];
+                highlightNeighborhood(nodeId);
                 const clickedNode = nodes.find(n => n.id === nodeId);
                 if (clickedNode && clickedNode.label) {
                     searchInput.value = clickedNode.label;
                     loadNewsFeed(clickedNode.label);
+                }
+            } else {
+                resetHighlight();
+                if (searchInput.value) {
+                    searchInput.value = "";
+                    loadNewsFeed("", currentCategory);
                 }
             }
         });
@@ -607,6 +726,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const cat = art.category ? art.category.toLowerCase() : "general";
         modalCategory.className = `badge ${cat}`;
         modalCategory.innerText = art.category || "General";
+
+        // AI Engine provenance chip
+        const modalEngine = document.getElementById("modal-engine");
+        if (modalEngine) {
+            if (art.engine) {
+                modalEngine.style.display = "";
+                modalEngine.innerText = `Engine: ${art.engine}`;
+            } else {
+                modalEngine.style.display = "none";
+            }
+        }
 
         modalSourceLink.href = art.url;
 
@@ -732,6 +862,24 @@ document.addEventListener("DOMContentLoaded", () => {
             loadNewsFeed(query, currentCategory);
         }
     });
+
+    // Live search: debounced so the feed filters as you type without thrashing
+    let searchDebounce = null;
+    searchInput.addEventListener("input", () => {
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(() => {
+            loadNewsFeed(searchInput.value.trim(), currentCategory);
+        }, 300);
+    });
+
+    // Feed sort selector
+    const feedSortSelect = document.getElementById("feed-sort");
+    if (feedSortSelect) {
+        feedSortSelect.addEventListener("change", () => {
+            currentSort = feedSortSelect.value;
+            loadNewsFeed(searchInput.value.trim(), currentCategory);
+        });
+    }
 
     // Risk level filter buttons
     const riskBtns = document.querySelectorAll(".filter-risk-btn");
@@ -878,12 +1026,12 @@ document.addEventListener("DOMContentLoaded", () => {
         pscData.forEach(r => {
             html += `
                 <tr class="psc-table-row" style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                    <td style="padding:10px; font-weight:600; color:#38bdf8;">${r["Person Name"] || "N/A"}</td>
-                    <td style="padding:10px; color:#a78bfa;">${r["Company"] || "N/A"}</td>
-                    <td style="padding:10px;">${r["Nature of Control"] || "N/A"}</td>
-                    <td style="padding:10px; color:#f472b6;">${r["Percentage"] || "N/A"}</td>
-                    <td style="padding:10px;"><span class="badge" style="background:rgba(239,68,68,0.2); color:#ef4444;">${r["Change Type"] || "Disclosed"}</span></td>
-                    <td style="padding:10px; color:var(--text-muted);">${r["Date"] || ""}</td>
+                    <td style="padding:10px; font-weight:600; color:#38bdf8;">${esc(r["Person Name"] || "N/A")}</td>
+                    <td style="padding:10px; color:#a78bfa;">${esc(r["Company"] || "N/A")}</td>
+                    <td style="padding:10px;">${esc(r["Nature of Control"] || "N/A")}</td>
+                    <td style="padding:10px; color:#f472b6;">${esc(r["Percentage"] || "N/A")}</td>
+                    <td style="padding:10px;"><span class="badge" style="background:rgba(239,68,68,0.2); color:#ef4444;">${esc(r["Change Type"] || "Disclosed")}</span></td>
+                    <td style="padding:10px; color:var(--text-muted);">${esc(r["Date"] || "")}</td>
                 </tr>
             `;
         });
