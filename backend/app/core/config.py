@@ -33,10 +33,20 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = None
     
     # Advanced Intelligence
-    OLLAMA_HOST: str = "http://host.docker.internal:11434"
+    # OLLAMA_HOST intentionally has no default: the cascade only attempts Ollama
+    # when the host or API key is explicitly configured (env or .env).
+    OLLAMA_HOST: Optional[str] = None
     OLLAMA_MODEL: str = "gemma4:31b-cloud"
     OLLAMA_API_KEY: Optional[str] = None
     NVIDIA_API_KEY: Optional[str] = None
+    # NVIDIA NIM model IDs must use vendor/model format; blank env values fall
+    # back to the defaults resolved in llm.py.
+    NVIDIA_MODEL: Optional[str] = None
+    NVIDIA_MODEL_FALLBACK: Optional[str] = None
+
+    # Pipeline behavior
+    SEED_DEMO_PSC: bool = False
+    ALLOW_HEURISTIC_FALLBACK: bool = False
     
     # Embedding Model Name
     EMBEDDING_MODEL_NAME: str = "all-MiniLM-L6-v2"
