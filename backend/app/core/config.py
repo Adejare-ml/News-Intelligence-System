@@ -30,6 +30,8 @@ class Settings(BaseSettings):
     
     # LLM Settings
     GEMINI_API_KEY: Optional[str] = None
+    # Blank env values fall back to the default resolved in llm.py.
+    GEMINI_MODEL: Optional[str] = None
     OPENAI_API_KEY: Optional[str] = None
     
     # Advanced Intelligence
