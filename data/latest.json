@@ -1,5 +1,17 @@
 [
   {
+    "ID": 2292,
+    "Time": "2026-08-02 07:27:54",
+    "Title": "Nigeria\u2019s Anichebe set to buy England football club",
+    "Source": "dailypost",
+    "URL": "https://dailypost.ng/2026/08/02/nigerias-anichebe-set-to-buy-england-football-club/",
+    "Category": "Company",
+    "Risk Score": 40,
+    "Summary": "Nigerian national Anichebe is reportedly pursuing the acquisition of a football club in England. The transaction suggests a potential change in ownership and corporate control of the sports entity.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 2285,
     "Time": "2026-08-02 06:00:40",
     "Title": "\u2018Don\u2019t politicise insecurity\u2019 \u2014 Gov Radda tells Katsina residents",
@@ -646,17 +658,6 @@
     "Category": "Person",
     "Risk Score": 24,
     "Summary": "ONLY AVAILABLE IN PAID PLANS",
-    "Status": "Unread"
-  },
-  {
-    "ID": 2225,
-    "Time": "2026-07-31T18:21:37Z",
-    "Title": "IG deploys new CP in Osun ahead of poll",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/ig-deploys-new-cp-in-osun-ahead-of-poll/",
-    "Category": "Government",
-    "Risk Score": 52,
-    "Summary": "The Inspector-General of Police, Olatunji Disu, has deployed Erale Samuel Etaifo to Osun State as Commissioner of Police to oversee the security architecture for the forthcoming governorship election\u2026 [+2560 chars]",
     "Status": "Unread"
   }
 ]
