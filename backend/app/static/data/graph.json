@@ -521,6 +521,18 @@
       "label": "Federal Government",
       "type": "agency",
       "risk": "Low"
+    },
+    {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
+      "type": "company",
+      "risk": "Low"
     }
   ],
   "edges": [
@@ -792,6 +804,12 @@
       "id": "a8960a641026",
       "from": "d9f35f90b14e",
       "to": "8580350f87e8",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "ab9042ebec62",
+      "from": "8aeb2e3bdb2c",
+      "to": "c25544734c7e",
       "label": "Contract Awardee"
     }
   ]

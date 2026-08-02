@@ -6336,10 +6336,10 @@
   },
   {
     "Company": "Nigerian National Petroleum Company",
-    "Mention Count": 1,
-    "Last Seen": "2026-08-01 18:07",
+    "Mention Count": 2,
+    "Last Seen": "2026-08-02 23:52",
     "Industry": "General",
-    "Risk Level": "Critical"
+    "Risk Level": "Low"
   },
   {
     "Company": "SSK",
@@ -6473,5 +6473,12 @@
     "Last Seen": "2026-08-02 18:06",
     "Industry": "General",
     "Risk Level": "Critical"
+  },
+  {
+    "Company": "Nigerian National Petroleum Company Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-02 23:52",
+    "Industry": "General",
+    "Risk Level": "Medium"
   }
 ]
