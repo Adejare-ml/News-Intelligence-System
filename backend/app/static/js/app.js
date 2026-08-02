@@ -90,6 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
         return new Date(dateStr).toLocaleDateString();
     }
 
+    // Only allow http(s) destinations for feed-supplied URLs — a malicious
+    // feed entry must not be able to plant a javascript:/data: link
+    function safeUrl(url) {
+        const u = String(url == null ? "" : url).trim();
+        return /^https?:\/\//i.test(u) ? u : "#";
+    }
+
     // Strip feed-scraper truncation artifacts like "... [+1951 chars]"
     function cleanSummary(text) {
         return String(text == null ? "" : text)
@@ -845,7 +852,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        modalSourceLink.href = art.url;
+        modalSourceLink.href = safeUrl(art.url);
 
         // Render Tabs
         tabExec.innerText = art.summary_executive || "No summary available.";
@@ -1077,17 +1084,25 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        // Quote-escape and neutralize spreadsheet formula injection: a title
+        // like "=HYPERLINK(...)" must not execute when the CSV opens in Excel
+        const csvField = (val) => {
+            let s = String(val == null ? "" : val);
+            if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
+            return `"${s.replace(/"/g, '""')}"`;
+        };
+
         const headers = ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Level", "Risk Score", "Summary"];
         const rows = allArticles.map(a => [
             a.id || "",
-            `"${(a.published_at || "").replace(/"/g, '""')}"`,
-            `"${(a.title || "").replace(/"/g, '""')}"`,
-            `"${(a.source || "").replace(/"/g, '""')}"`,
-            `"${(a.url || "").replace(/"/g, '""')}"`,
-            `"${(a.category || "").replace(/"/g, '""')}"`,
-            `"${(a.risk_level || "").replace(/"/g, '""')}"`,
+            csvField(a.published_at),
+            csvField(a.title),
+            csvField(a.source),
+            csvField(a.url),
+            csvField(a.category),
+            csvField(a.risk_level),
             a.risk_score || 0,
-            `"${(a.summary_executive || "").replace(/"/g, '""')}"`
+            csvField(a.summary_executive)
         ]);
 
         const csvContent = "data:text/csv;charset=utf-8," 
@@ -1344,8 +1359,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Wrap adjacent list items in a ul
         html = html.replace(/(<li>.*<\/li>)/sg, '<ul>$1</ul>');
         
-        // Links
-        html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="report-link">$1</a>');
+        // Links — scheme-checked so LLM-generated report content cannot plant
+        // javascript:/data: hrefs (prompt-injection -> stored XSS chain)
+        html = html.replace(/\[(.*?)\]\((.*?)\)/g, (m, text, url) =>
+            `<a href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer" class="report-link">${text}</a>`);
         
         // Double line breaks for paragraphs, single for line breaks
         html = html.replace(/\n\n/g, '<p></p>');

@@ -47,6 +47,18 @@ async def add_security_headers(request, call_next):
     response = await call_next(request)
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; "
+        "script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline'; "
+        "style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; "
+        "font-src https://fonts.gstatic.com; "
+        "img-src 'self' data:; "
+        "connect-src 'self'; "
+        "frame-ancestors 'none'"
+    )
     return response
 
 # Include Router
@@ -65,19 +77,23 @@ def init_db():
         Base.metadata.create_all(bind=engine)
         db.commit()
         
-        # Check if users are empty
+        # Check if users are empty. Admin seeding requires an explicit
+        # ADMIN_SEED_PASSWORD; we never ship or log default credentials.
         if db.query(User).count() == 0:
-            logger.info("Seeding default admin user...")
-            admin = User(
-                email="admin@newsintel.com",
-                hashed_password=get_password_hash("adminpassword"),
-                full_name="System Administrator",
-                role="admin",
-                is_active=True
-            )
-            db.add(admin)
-            db.commit()
-            logger.info("Admin user created (User: admin@newsintel.com, Pass: adminpassword)")
+            if settings.ADMIN_SEED_PASSWORD:
+                logger.info("Seeding admin user from ADMIN_SEED_EMAIL/ADMIN_SEED_PASSWORD...")
+                admin = User(
+                    email=settings.ADMIN_SEED_EMAIL,
+                    hashed_password=get_password_hash(settings.ADMIN_SEED_PASSWORD),
+                    full_name="System Administrator",
+                    role="admin",
+                    is_active=True
+                )
+                db.add(admin)
+                db.commit()
+                logger.info(f"Admin user created: {settings.ADMIN_SEED_EMAIL}")
+            else:
+                logger.warning("No users exist and ADMIN_SEED_PASSWORD is not set - skipping admin seeding.")
             
         # Check if articles are empty, seed mock news
         if db.query(Article).count() == 0:
@@ -95,6 +111,13 @@ def init_db():
 
 @app.on_event("startup")
 def startup_event():
+    # Fail fast rather than run the API with a forgeable auth boundary.
+    if not settings.JWT_SECRET:
+        raise RuntimeError(
+            "JWT_SECRET is not set. Refusing to start the API: without a "
+            "unique secret, anyone could forge authentication tokens. "
+            "Set JWT_SECRET in the environment or .env file."
+        )
     init_db()
 
 # Mount Frontend static files

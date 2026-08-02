@@ -20,7 +20,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy static folder to gh-pages branch
-        uses: JamesIves/github-pages-deploy-action@v4
+        # Pinned to a commit SHA so a moved tag cannot inject code into a
+        # workflow that holds a contents:write token
+        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
         with:
           folder: backend/app/static
           branch: gh-pages

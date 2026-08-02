@@ -140,7 +140,11 @@ class NewsIngestionService:
         for q in queries:
             url = f"https://news.google.com/rss/search?q={requests.utils.quote(q)}&hl=en-NG&gl=NG&ceid=NG:en"
             try:
-                feed = feedparser.parse(url)
+                # Fetch with an explicit timeout: feedparser's own URL fetching
+                # has none, so one hanging feed would stall the whole pipeline
+                resp = requests.get(url, timeout=15, headers={"User-Agent": "AURA-NewsIntel/1.0"})
+                resp.raise_for_status()
+                feed = feedparser.parse(resp.content)
                 for entry in feed.entries:
                     if entry.link in urls_processed:
                         continue
