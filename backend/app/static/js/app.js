@@ -46,13 +46,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Modal Summary Tabs
     const tabBtns = document.querySelectorAll(".tab-btn");
     const tabExec = document.getElementById("modal-summary-executive");
-    const tabDetailed = document.getElementById("modal-summary-detailed");
-    const tabTimeline = document.getElementById("modal-summary-timeline");
 
     const tabExecWrapper = document.getElementById("tab-executive");
     const tabDetailedWrapper = document.getElementById("tab-detailed");
     const tabTimelineWrapper = document.getElementById("tab-timeline");
     let currentArticleData = null;
+
+    // Known entities from the knowledge graph, used for real entity matching
+    // in the article modal (replaces the old hardcoded sample-name matching)
+    let knownEntities = [];
 
     // Initialize Lucide Icons
     if (window.lucide) {
@@ -88,6 +90,18 @@ document.addEventListener("DOMContentLoaded", () => {
         return new Date(dateStr).toLocaleDateString();
     }
 
+    // Strip feed-scraper truncation artifacts like "... [+1951 chars]"
+    function cleanSummary(text) {
+        return String(text == null ? "" : text)
+            .replace(/\s*\[\+\d+\s*chars?\]\s*$/i, "…")
+            .replace(/&#\d+;|&[a-z]+;/gi, m => {
+                const el = document.createElement("textarea");
+                el.innerHTML = m;
+                return el.value;
+            })
+            .trim();
+    }
+
     function normalizeArticle(art) {
         if (!art) return null;
         const score = art["Risk Score"] !== undefined ? parseInt(art["Risk Score"]) : (art.risk_score || 10);
@@ -106,9 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
             risk_score: score,
             risk_level: art.risk_level || level,
             sentiment: art.sentiment || "Neutral",
-            summary_executive: art.Summary || art.summary_executive || art.summary || art.Title || art.title || "No summary available.",
-            summary_detailed: art.summary_detailed || art.Summary || art.summary_executive || art.Title || art.title || "No detailed summary available.",
-            summary_timeline: art.summary_timeline || art.Summary || art.summary_executive || "No timeline summary available.",
+            summary_executive: cleanSummary(art.Summary || art.summary_executive || art.summary || art.Title || art.title) || "No summary available.",
             published_at: art.Time || art.published_at || new Date().toISOString(),
             engine: art.Engine || art.engine || ""
         };
@@ -175,7 +187,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     title: `${a.risk_level || 'Risk'} Alert: ${a.title}`,
                     severity: (a.risk_level === "Critical" || a.risk_score >= 70) ? "Critical" : "Warning",
                     message: a.summary_executive,
-                    created_at: a.published_at
+                    created_at: a.published_at,
+                    article: a
                 }));
                 
                 renderAlertsList(formattedAlerts);
@@ -200,6 +213,26 @@ document.addEventListener("DOMContentLoaded", () => {
         } catch (err) {
             console.error("Error loading dashboard stats:", err);
         }
+    }
+
+    // Term-overlap relevance score for concept search: title hits weigh 3x,
+    // summary hits 1x; risk words map onto the article's actual risk level
+    function conceptScore(article, query) {
+        const tokens = query.toLowerCase().split(/[^a-z0-9']+/).filter(t => t.length > 2);
+        if (tokens.length === 0) return 0;
+        const title = article.title.toLowerCase();
+        const summary = article.summary_executive.toLowerCase();
+        const riskWords = { critical: "Critical", high: "High", medium: "Medium", low: "Low", risk: "" };
+        let score = 0;
+        tokens.forEach(t => {
+            if (t in riskWords) {
+                if (riskWords[t] && article.risk_level === riskWords[t]) score += 2;
+                return;
+            }
+            if (title.includes(t)) score += 3;
+            else if (summary.includes(t)) score += 1;
+        });
+        return score;
     }
 
     async function loadNewsFeed(query = "", category = "") {
@@ -227,8 +260,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     articles = articles.filter(a => (a.risk_level || "").toLowerCase() === currentRisk.toLowerCase());
                 }
                 if (query) {
-                    const q = query.toLowerCase();
-                    articles = articles.filter(a => a.title.toLowerCase().includes(q) || a.summary_executive.toLowerCase().includes(q));
+                    if (isSemanticSearch) {
+                        // Concept mode: score every article by term overlap so
+                        // multi-word queries rank by relevance instead of
+                        // requiring an exact phrase match
+                        articles = articles
+                            .map(a => ({ a, score: conceptScore(a, query) }))
+                            .filter(x => x.score > 0)
+                            .sort((x, y) => y.score - x.score)
+                            .map(x => x.a);
+                    } else {
+                        const q = query.toLowerCase();
+                        articles = articles.filter(a => a.title.toLowerCase().includes(q) || a.summary_executive.toLowerCase().includes(q));
+                    }
                 }
             } else {
                 // API mode
@@ -274,7 +318,9 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (data && (data.nodes || (data.graph && data.graph.nodes))) {
-                buildKnowledgeGraph(data.graph || data);
+                const graph = data.graph || data;
+                knownEntities = graph.nodes || [];
+                buildKnowledgeGraph(graph);
             } else {
                 buildKnowledgeGraph(getFallbackGraphData());
             }
@@ -413,14 +459,29 @@ document.addEventListener("DOMContentLoaded", () => {
             item.className = `alert-item ${severityClass}`;
 
             const dateStr = new Date(alert.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            const message = cleanSummary(alert.message);
 
             item.innerHTML = `
                 <div class="alert-item-header">
                     <span>${esc(alert.title)}</span>
                     <span style="font-size:10px; color:var(--text-muted);">${esc(dateStr)}</span>
                 </div>
-                <p style="margin-top:2px;">${esc(alert.message)}</p>
+                <p style="margin-top:2px;">${esc(message)}</p>
             `;
+
+            // Alerts sourced from articles open the full detail modal
+            if (alert.article) {
+                item.classList.add("clickable");
+                item.setAttribute("role", "button");
+                item.setAttribute("tabindex", "0");
+                item.addEventListener("click", () => openArticleModal(alert.article));
+                item.addEventListener("keydown", (e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        openArticleModal(alert.article);
+                    }
+                });
+            }
             alertsList.appendChild(item);
         });
     }
@@ -436,28 +497,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const catLabels = Object.keys(categories || {});
         const catValues = Object.values(categories || {});
-
         const labels = catLabels.length > 0 ? catLabels : ["Government", "Company", "Legal", "General"];
         const values = catValues.length > 0 ? catValues : [15, 22, 10, 13];
+
+        // Inner ring: risk levels in severity order with semantic colors
+        const RISK_ORDER = ["Low", "Medium", "High", "Critical"];
+        const RISK_COLORS = {
+            Low: 'rgba(16, 185, 129, 0.7)',
+            Medium: 'rgba(249, 115, 22, 0.7)',
+            High: 'rgba(244, 63, 94, 0.7)',
+            Critical: 'rgba(190, 18, 60, 0.85)'
+        };
+        const riskLabels = RISK_ORDER.filter(l => (risks || {})[l] > 0);
+        const riskValues = riskLabels.map(l => risks[l]);
+
+        const datasets = [{
+            label: 'Category',
+            customLabels: labels,
+            data: values,
+            backgroundColor: [
+                'rgba(56, 189, 248, 0.75)',
+                'rgba(167, 139, 250, 0.75)',
+                'rgba(244, 114, 182, 0.75)',
+                'rgba(139, 92, 246, 0.75)',
+                'rgba(16, 185, 129, 0.75)',
+                'rgba(249, 115, 22, 0.75)'
+            ],
+            borderColor: 'rgba(255, 255, 255, 0.1)',
+            borderWidth: 1
+        }];
+
+        if (riskLabels.length > 0) {
+            datasets.push({
+                label: 'Risk',
+                customLabels: riskLabels,
+                data: riskValues,
+                backgroundColor: riskLabels.map(l => RISK_COLORS[l]),
+                borderColor: 'rgba(255, 255, 255, 0.1)',
+                borderWidth: 1
+            });
+        }
 
         mixChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
                 labels: labels,
-                datasets: [{
-                    label: 'Intelligence Categories',
-                    data: values,
-                    backgroundColor: [
-                        'rgba(56, 189, 248, 0.75)',
-                        'rgba(167, 139, 250, 0.75)',
-                        'rgba(244, 114, 182, 0.75)',
-                        'rgba(139, 92, 246, 0.75)',
-                        'rgba(16, 185, 129, 0.75)',
-                        'rgba(249, 115, 22, 0.75)'
-                    ],
-                    borderColor: 'rgba(255, 255, 255, 0.1)',
-                    borderWidth: 1
-                }]
+                datasets: datasets
             },
             options: {
                 responsive: true,
@@ -468,11 +553,33 @@ document.addEventListener("DOMContentLoaded", () => {
                         labels: {
                             color: '#9ca3af',
                             font: { family: 'Outfit', size: 10 },
-                            padding: 8
+                            padding: 8,
+                            // Merge both rings into one legend: categories then risks
+                            generateLabels: (chart) => {
+                                const items = [];
+                                chart.data.datasets.forEach((ds, di) => {
+                                    (ds.customLabels || []).forEach((lbl, i) => {
+                                        items.push({
+                                            text: di === 0 ? lbl : `${lbl} risk`,
+                                            fillStyle: ds.backgroundColor[i % ds.backgroundColor.length],
+                                            strokeStyle: 'rgba(255,255,255,0.1)',
+                                            fontColor: '#9ca3af',
+                                            datasetIndex: di,
+                                            index: i
+                                        });
+                                    });
+                                });
+                                return items;
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: (c) => `${c.dataset.label}: ${c.dataset.customLabels[c.dataIndex]} — ${c.raw}`
                         }
                     }
                 },
-                cutout: '55%'
+                cutout: '40%'
             }
         });
     }
@@ -742,8 +849,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Render Tabs
         tabExec.innerText = art.summary_executive || "No summary available.";
-        tabDetailed.innerText = art.summary_detailed || "No detailed summary available.";
-        tabTimeline.innerText = art.summary_timeline || "No timeline summary available.";
+        renderDetailsTab(art);
+        renderRelatedTab(art);
 
         // Reset tabs UI
         tabBtns.forEach(btn => btn.classList.remove("active"));
@@ -761,39 +868,105 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Match the article's text against real entities from the knowledge graph
+    function matchArticleEntities(art) {
+        const haystack = `${art.title} ${art.summary_executive}`.toLowerCase();
+        const matches = [];
+        const seen = new Set();
+        knownEntities.forEach(node => {
+            const name = (node.label || "").trim();
+            if (name.length < 4) return;
+            const key = name.toLowerCase();
+            if (seen.has(key)) return;
+            if (haystack.includes(key)) {
+                seen.add(key);
+                matches.push({ name, type: node.type || "company" });
+            }
+        });
+        return matches.slice(0, 10);
+    }
+
     function renderModalEntities(art) {
         modalEntities.innerHTML = "";
-        
-        // Standard entity extraction representation in UI
-        const categories = ["person", "company", "agency"];
-        const samples = {
-            "person": ["Jane Doe", "Sarah Jenkins", "Robert Chen", "Alice Vance", "Michael Nduka"],
-            "company": ["Apex Technology Group", "Vertex Financials", "Nova Energy Corp", "BioSphere Healthcare", "Summit Holdings"],
-            "agency": ["Public Service Commission", "Federal Trade Commission", "Department of Justice", "Securities and Exchange Commission"]
-        };
+        const matches = matchArticleEntities(art);
 
-        // Populate matches in text
-        let found = false;
-        categories.forEach(type => {
-            samples[type].forEach(name => {
-                if (art.cleaned_text && art.cleaned_text.includes(name)) {
-                    found = true;
-                    const tag = document.createElement("div");
-                    tag.className = `entity-tag ${type}`;
-                    
-                    let icon = "user";
-                    if (type === "company") icon = "briefcase";
-                    else if (type === "agency") icon = "landmark";
-                    
-                    tag.innerHTML = `<i data-lucide="${icon}"></i> ${name}`;
-                    modalEntities.appendChild(tag);
-                }
-            });
-        });
-
-        if (!found) {
-            modalEntities.innerHTML = `<span style="font-size:12px; color:var(--text-muted);">No key entities resolved in text.</span>`;
+        if (matches.length === 0) {
+            modalEntities.innerHTML = `<span style="font-size:12px; color:var(--text-muted);">No tracked entities matched in this article. Entities appear here once they exist in the knowledge graph.</span>`;
+            return;
         }
+
+        const ICONS = { person: "user", psc: "shield-alert", company: "briefcase", agency: "landmark" };
+        matches.forEach(m => {
+            const tag = document.createElement("button");
+            tag.type = "button";
+            tag.className = `entity-tag ${m.type}`;
+            tag.title = `Filter the feed by ${m.name}`;
+            tag.innerHTML = `<i data-lucide="${ICONS[m.type] || "briefcase"}"></i> ${esc(m.name)}`;
+            tag.addEventListener("click", () => {
+                closeModal();
+                searchInput.value = m.name;
+                loadNewsFeed(m.name, currentCategory);
+            });
+            modalEntities.appendChild(tag);
+        });
+    }
+
+    function renderDetailsTab(art) {
+        const host = art.url && art.url !== "#" ? (() => { try { return new URL(art.url).hostname; } catch (e) { return art.url; } })() : "—";
+        const published = art.published_at ? new Date(art.published_at).toLocaleString() : "Unknown";
+        tabDetailedWrapper.innerHTML = `
+            <p class="details-summary">${esc(art.summary_executive)}</p>
+            <div class="facts-grid">
+                <div class="fact"><span class="fact-label">Category</span><span>${esc(art.category || "Other")}</span></div>
+                <div class="fact"><span class="fact-label">Risk</span><span>${esc(art.risk_level)} — ${esc(art.risk_score)}/100</span></div>
+                <div class="fact"><span class="fact-label">Source</span><span>${esc(art.source)}</span></div>
+                <div class="fact"><span class="fact-label">Domain</span><span>${esc(host)}</span></div>
+                <div class="fact"><span class="fact-label">Published</span><span>${esc(published)}</span></div>
+                <div class="fact"><span class="fact-label">AI Engine</span><span>${esc(art.engine || "n/a")}</span></div>
+            </div>
+        `;
+    }
+
+    function renderRelatedTab(art) {
+        // Rank other articles by shared meaningful title tokens and entities
+        const stop = new Set(["the", "and", "for", "with", "from", "over", "into", "amid", "after", "nigeria", "nigerian", "news", "guardian", "premium", "times", "punch", "vanguard", "dailypost"]);
+        const tokens = new Set(
+            `${art.title} ${art.summary_executive}`.toLowerCase().split(/[^a-z0-9']+/)
+                .filter(t => t.length > 3 && !stop.has(t))
+        );
+        const entityNames = matchArticleEntities(art).map(m => m.name.toLowerCase());
+
+        const scored = allArticles
+            .filter(a => a && a.url !== art.url)
+            .map(a => {
+                const text = `${a.title} ${a.summary_executive}`.toLowerCase();
+                let score = 0;
+                tokens.forEach(t => { if (text.includes(t)) score += 1; });
+                entityNames.forEach(n => { if (text.includes(n)) score += 4; });
+                if (a.category === art.category) score += 1;
+                return { a, score };
+            })
+            .filter(x => x.score >= 3)
+            .sort((x, y) => y.score - x.score)
+            .slice(0, 5);
+
+        if (scored.length === 0) {
+            tabTimelineWrapper.innerHTML = `<p class="details-summary" style="color:var(--text-muted);">No related intelligence records found for this story yet.</p>`;
+            return;
+        }
+
+        tabTimelineWrapper.innerHTML = "";
+        scored.forEach(({ a }) => {
+            const item = document.createElement("button");
+            item.type = "button";
+            item.className = "related-item";
+            item.innerHTML = `
+                <span class="related-title">${esc(a.title)}</span>
+                <span class="related-meta">${esc(a.source)} · ${esc(timeAgo(a.published_at))} · <span class="risk-dot ${esc((a.risk_level || "low").toLowerCase())}"></span>${esc(a.risk_level)}</span>
+            `;
+            item.addEventListener("click", () => openArticleModal(a));
+            tabTimelineWrapper.appendChild(item);
+        });
     }
 
     function closeModal() {
@@ -1097,6 +1270,10 @@ document.addEventListener("DOMContentLoaded", () => {
             searchLabel.innerText = "Standard Keyword";
             searchLabel.style.color = "var(--text-muted)";
             searchInput.placeholder = "Search keyword or semantic query...";
+        }
+        // Re-run the active query under the newly selected mode
+        if (searchInput.value.trim()) {
+            loadNewsFeed(searchInput.value.trim(), currentCategory);
         }
     });
 
