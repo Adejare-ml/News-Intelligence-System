@@ -658,6 +658,105 @@ input:checked + .slider:before {
     color: var(--text-muted);
 }
 
+/* Clickable alert items open the article modal */
+.alert-item.clickable {
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.alert-item.clickable:hover,
+.alert-item.clickable:focus-visible {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateX(2px);
+}
+
+/* Modal Details tab */
+.details-summary {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 13px;
+    color: var(--text-primary);
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.fact-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--text-muted);
+}
+
+/* Modal Related tab */
+.related-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    text-align: left;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.related-item:hover,
+.related-item:focus-visible {
+    background: rgba(139, 92, 246, 0.08);
+    border-color: rgba(139, 92, 246, 0.35);
+}
+
+.related-title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.related-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Entity tags are now interactive buttons */
+button.entity-tag {
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+button.entity-tag:hover,
+button.entity-tag:focus-visible {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+}
+
 /* Insights Column */
 .insights-column {
     display: flex;
@@ -988,6 +1087,7 @@ div.vis-tooltip {
 .entity-tag.person { border-color: rgba(56, 189, 248, 0.3); color: #38bdf8; }
 .entity-tag.company { border-color: rgba(167, 139, 250, 0.3); color: #a78bfa; }
 .entity-tag.agency { border-color: rgba(244, 114, 182, 0.3); color: #f472b6; }
+.entity-tag.psc { border-color: rgba(239, 68, 68, 0.35); color: #ef4444; }
 
 .modal-actions {
     margin-top: 30px;
