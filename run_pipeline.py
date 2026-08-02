@@ -9,8 +9,9 @@ from typing import List, Dict, Any
 # Adjust sys.path to find backend module
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+from backend.app.core.config import settings
 from backend.app.services.ingestion import NewsIngestionService
-from backend.app.services.llm import LLMService
+from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.db.excel_db import db
 
 # Setup Logging
@@ -25,11 +26,19 @@ logger = logging.getLogger("run_pipeline")
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
 
+# Abort the run after this many articles in a row fail the whole LLM cascade:
+# at that point the providers are down and continuing would only burn quota.
+MAX_CONSECUTIVE_LLM_FAILURES = 3
+
 def main():
     parser = argparse.ArgumentParser(description="AI News Intelligence Serverless Pipeline")
     parser.add_argument("--seed", action="store_true", help="Seed the database with high-fidelity mock events")
     args = parser.parse_args()
-    run_pipeline(args.seed)
+    try:
+        run_pipeline(args.seed)
+    except LLMCascadeError as e:
+        logger.error(f"Pipeline failed: {e}")
+        sys.exit(1)
 
 def run_pipeline(seed: bool = False):
     logger.info("Initializing serverless pipeline run...")
@@ -76,25 +85,42 @@ def run_pipeline(seed: bool = False):
         
     candidates = new_candidates
     
+    cascade_failures = 0
+    consecutive_failures = 0
+
     for item in candidates:
         url = item.get("url")
         title = item.get("title")
         source = item.get("source")
-        
+
         # Deduplication check
         if url in existing_urls:
             continue
-            
+
         logger.info(f"Analyzing: '{title}' ({source})")
         text = item.get("raw_text") or title
-        
+
         # Clean text basic HTML strips
         from backend.app.services.nlp_pipeline import NLPPipelineService
         cleaned_text = NLPPipelineService.clean_html(text)
-        
-        # Run AI LLM Extraction
-        analysis = LLMService.analyze_article(title, cleaned_text)
-        
+
+        # Run AI LLM Extraction. A cascade failure skips the article entirely
+        # (no junk row, URL left uncached so a later healthy run retries it).
+        try:
+            analysis = LLMService.analyze_article(title, cleaned_text)
+        except LLMCascadeError as e:
+            cascade_failures += 1
+            consecutive_failures += 1
+            logger.error(f"LLM cascade failed for '{title}': {e}")
+            if consecutive_failures >= MAX_CONSECUTIVE_LLM_FAILURES:
+                logger.error(
+                    f"{MAX_CONSECUTIVE_LLM_FAILURES} consecutive LLM cascade failures - "
+                    "providers appear to be down. Aborting article loop."
+                )
+                break
+            continue
+        consecutive_failures = 0
+
         # Relevance filter check (strictly keep corporate, policy, and procurement news)
         if not analysis.get("relevant", True):
             logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
@@ -107,13 +133,14 @@ def run_pipeline(seed: bool = False):
                 "Category": "Non-Relevant",
                 "Risk Score": 0,
                 "Summary": title,
-                "Status": "Filtered"
+                "Status": "Filtered",
+                "Engine": analysis.get("engine", "")
             })
             existing_urls.add(url)
             import time
             time.sleep(3.5)
             continue
-            
+
         # Write Article to Database
         db_article = {
             "ID": "", # Auto incremented inside ExcelDatabase
@@ -124,7 +151,8 @@ def run_pipeline(seed: bool = False):
             "Category": analysis.get("category", "Other"),
             "Risk Score": int(analysis.get("risk_score", 10)),
             "Summary": analysis.get("summary") or title,
-            "Status": "Unread"
+            "Status": "Unread",
+            "Engine": analysis.get("engine", "")
         }
         
         added = db.add_article(db_article)
@@ -206,12 +234,29 @@ def run_pipeline(seed: bool = False):
 
     logger.info(f"Pipeline run completed. Processed {new_articles_count} new news items.")
 
+    # Fail red when the LLM cascade was broken for the whole run: nothing was
+    # published, and the workflow should surface the outage instead of going green.
+    if cascade_failures > 0 and new_articles_count == 0:
+        raise LLMCascadeError(
+            f"All {cascade_failures} analyzed articles failed the LLM provider cascade. "
+            "No junk was published; fix the provider keys and re-run."
+        )
+
     # 3. Compile and Write Daily Report Row
     if new_articles_count > 0 or seed:
         compile_daily_report(run_records)
 
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
     export_static_json_database()
+
+    # Partial cascade failures: real articles were published above, but the run
+    # still fails red so the degraded provider chain gets noticed.
+    if cascade_failures > 0:
+        raise LLMCascadeError(
+            f"{cascade_failures} article(s) failed the LLM provider cascade this run "
+            f"({new_articles_count} succeeded). Failing the run so the outage is visible."
+        )
+
     return {"status": "success", "processed": new_articles_count}
 
 def compile_daily_report(records: List[Dict[str, Any]]):
@@ -226,9 +271,16 @@ def compile_daily_report(records: List[Dict[str, Any]]):
     logger.info("Calling LLM API (Gemini -> NVIDIA -> Ollama -> OpenAI) to compile rich markdown summary report...")
     # Convert records to JSON string for LLM
     raw_json_str = json.dumps(records, default=str)
-    
-    generated_md = LLMService.generate_daily_report(raw_json_str)
-    
+
+    try:
+        generated_md, report_engine = LLMService.generate_daily_report(raw_json_str)
+    except LLMCascadeError:
+        if not settings.ALLOW_HEURISTIC_FALLBACK:
+            # Fail red: no templated junk report is written or published.
+            raise
+        logger.warning("All report providers failed. ALLOW_HEURISTIC_FALLBACK is on; writing deterministic rule-based report.")
+        generated_md, report_engine = "", "rule-based"
+
     if generated_md:
         md = f"""# PSC & Company Daily Intelligence Report
 **Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC+1)
@@ -245,7 +297,7 @@ def compile_daily_report(records: List[Dict[str, Any]]):
 {generated_md}
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler.*"""
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: {report_engine}).*"""
     else:
         # Fallback to deterministic rule-based executive summary report if Gemini API is offline/rate-limited
         high_risk_items = [r for r in records if r.get("analysis", {}).get("risk_level") in ["High", "Critical"]]
@@ -305,7 +357,7 @@ def compile_daily_report(records: List[Dict[str, Any]]):
 {chr(10).join(proc_lines)}
 
 ---
-*Report compiled by AURA Intelligence Scheduler.*"""
+*Report compiled by AURA Intelligence Scheduler (engine: rule-based).*"""
 
     # Save latest static markdown file
     md_path = os.path.join(DATA_DIR, "report_latest.md")
@@ -355,7 +407,10 @@ def export_static_json_database():
             if not r.get("Content"):
                 r["Content"] = val
     psc_records = db.get_significant_control()
-    if not psc_records:
+    # Demo PSC rows are strictly opt-in (SEED_DEMO_PSC=true). By default an
+    # empty Significant Control tab stays empty instead of being re-seeded
+    # with placeholder billionaire disclosures.
+    if not psc_records and settings.SEED_DEMO_PSC:
         default_psc_records = [
             { "Person Name": "Alhaji Aliko Dangote", "Company": "Dangote Cement Plc", "Nature of Control": "Direct ownership of >25% shares and voting rights", "Percentage": "85.8%", "Change Type": "Disclosed", "Date": "2026-01-15" },
             { "Person Name": "Abdul Samad Rabiu", "Company": "BUA Foods Plc", "Nature of Control": "Direct ownership of >25% shares & board appointments", "Percentage": "89.0%", "Change Type": "Disclosed", "Date": "2026-02-10" },

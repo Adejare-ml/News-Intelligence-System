@@ -7,6 +7,23 @@ from backend.app.services.nlp_pipeline import NLPPipelineService
 
 logger = logging.getLogger(__name__)
 
+# Valid NVIDIA NIM model IDs (vendor/model format). Overridable via
+# NVIDIA_MODEL / NVIDIA_MODEL_FALLBACK; blank env values resolve to these.
+DEFAULT_NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
+DEFAULT_NVIDIA_MODEL_FALLBACK = "meta/llama-3.1-8b-instruct"
+
+# Ollama cloud's OpenAI-compatible endpoint, used when only an API key is set.
+OLLAMA_CLOUD_HOST = "https://ollama.com"
+
+
+class LLMCascadeError(RuntimeError):
+    """Raised when every configured LLM provider fails and heuristic fallback is disabled.
+
+    The pipeline treats this as fatal so a broken provider chain fails the run
+    (red in GitHub Actions) instead of silently publishing low-quality output.
+    """
+
+
 # Prompt for the LLM Analyst
 SYSTEM_PROMPT = """
 You are an expert AI Intelligence Analyst specializing in corporate ownership transparency: company changes and Persons with Significant Control (PSC) — i.e. beneficial owners, in the CAC/Companies House sense: individuals who own >25% of shares, hold >25% of voting rights, have the right to appoint or remove a majority of directors, or otherwise exercise significant influence or control over a company. Secondary areas: Ministries, Departments and Agencies (MDAs) and public procurement, tracked for their relevance to corporate counterparties.
@@ -57,53 +74,88 @@ Rules for Extraction:
 
 class LLMService:
     @classmethod
+    def _ollama_configured(cls) -> bool:
+        """Ollama is only attempted when its host or API key is explicitly set."""
+        return bool(settings.OLLAMA_API_KEY or settings.OLLAMA_HOST)
+
+    @classmethod
+    def _ollama_base_url(cls) -> str:
+        host = (settings.OLLAMA_HOST or "").strip() or OLLAMA_CLOUD_HOST
+        base_url = host.rstrip('/')
+        if not base_url.endswith('/v1'):
+            base_url += '/v1'
+        return base_url
+
+    @classmethod
     def analyze_article(cls, title: str, text: str) -> Dict[str, Any]:
-        """Runs Ollama extraction, falls back to NVIDIA, then local heuristics."""
-        
-        # 1. Main Extract: Ollama API
-        if settings.OLLAMA_API_KEY or settings.OLLAMA_HOST:
+        """Runs Ollama extraction, falls back to NVIDIA, then local heuristics (opt-in).
+
+        Raises LLMCascadeError when every configured provider fails and
+        ALLOW_HEURISTIC_FALLBACK is off, so callers fail red instead of
+        publishing heuristic junk.
+        """
+
+        # 1. Main Extract: Ollama API (skipped entirely when not configured)
+        if cls._ollama_configured():
             logger.info("Analyzing article using Ollama API...")
             result = cls._run_ollama(title, text)
             if result:
+                result["engine"] = "ollama"
                 return result
-                
+
         # 2. Load-Shedding Backup: NVIDIA API
         if settings.NVIDIA_API_KEY:
             logger.info("Ollama failed or unavailable. Falling back to NVIDIA API...")
             result = cls._run_nvidia(title, text)
             if result:
+                result["engine"] = "nvidia"
                 return result
-                
-        # 3. Local spaCy Heuristics Fallback
-        logger.info("No LLM keys configured (or API failed). Falling back to local NLP heuristics.")
-        return cls._run_local_fallback(title, text)
+
+        # 3. Local spaCy Heuristics Fallback (opt-in only)
+        if settings.ALLOW_HEURISTIC_FALLBACK:
+            logger.warning("All LLM providers failed or unconfigured. ALLOW_HEURISTIC_FALLBACK is on; using local NLP heuristics.")
+            result = cls._run_local_fallback(title, text)
+            result["engine"] = "local-heuristics"
+            return result
+
+        raise LLMCascadeError(
+            "All configured LLM providers failed for article analysis "
+            "(Ollama configured: %s, NVIDIA configured: %s). "
+            "Set ALLOW_HEURISTIC_FALLBACK=true to permit degraded local extraction."
+            % (cls._ollama_configured(), bool(settings.NVIDIA_API_KEY))
+        )
 
     @classmethod
-    def generate_daily_report(cls, raw_data_string: str) -> str:
-        """Generates markdown executive report with provider fallback cascade: Gemini -> NVIDIA -> Ollama -> OpenAI."""
-        
+    def generate_daily_report(cls, raw_data_string: str) -> tuple:
+        """Generates markdown executive report with provider fallback cascade: Gemini -> NVIDIA -> Ollama -> OpenAI.
+
+        Returns (markdown, engine_name). Raises LLMCascadeError when every
+        configured provider fails so the pipeline fails red instead of
+        publishing a templated fallback report.
+        """
+
         # 1. Primary: Gemini API
         if settings.GEMINI_API_KEY:
             logger.info("Attempting report generation using Gemini API...")
             md = cls.generate_daily_report_gemini(raw_data_string)
             if md:
-                return md
+                return md, "gemini"
             logger.warning("Gemini API rate limited or failed. Falling back to NVIDIA API...")
 
-        # 2. Fallback 1: NVIDIA API (Llama 3.1 70B / DeepSeek)
+        # 2. Fallback 1: NVIDIA API
         if settings.NVIDIA_API_KEY:
             logger.info("Attempting report generation using NVIDIA API...")
             md = cls._generate_report_nvidia(raw_data_string)
             if md:
-                return md
+                return md, "nvidia"
             logger.warning("NVIDIA API failed. Falling back to Ollama API...")
 
-        # 3. Fallback 2: Ollama API
-        if settings.OLLAMA_API_KEY or settings.OLLAMA_HOST:
+        # 3. Fallback 2: Ollama API (skipped entirely when not configured)
+        if cls._ollama_configured():
             logger.info("Attempting report generation using Ollama API...")
             md = cls._generate_report_ollama(raw_data_string)
             if md:
-                return md
+                return md, "ollama"
             logger.warning("Ollama API failed. Falling back to OpenAI API...")
 
         # 4. Fallback 3: OpenAI API
@@ -111,10 +163,14 @@ class LLMService:
             logger.info("Attempting report generation using OpenAI API...")
             md = cls._generate_report_openai(raw_data_string)
             if md:
-                return md
+                return md, "openai"
 
-        logger.warning("All LLM report APIs failed or unavailable. Falling back to deterministic report generator.")
-        return ""
+        raise LLMCascadeError(
+            "All configured LLM report providers failed or none are configured "
+            "(Gemini: %s, NVIDIA: %s, Ollama: %s, OpenAI: %s)."
+            % (bool(settings.GEMINI_API_KEY), bool(settings.NVIDIA_API_KEY),
+               cls._ollama_configured(), bool(settings.OPENAI_API_KEY))
+        )
 
     @classmethod
     def generate_daily_report_gemini(cls, raw_data_string: str) -> str:
@@ -155,12 +211,23 @@ class LLMService:
                 "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
                 "Output only clean, raw markdown text without wrapping backticks."
             )
-            response = client.chat.completions.create(
-                model="meta/llama-3.1-70b-instruct",
-                messages=[
-                    {"role": "user", "content": prompt}
-                ]
-            )
+            primary = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
+            fallback = settings.NVIDIA_MODEL_FALLBACK or DEFAULT_NVIDIA_MODEL_FALLBACK
+            try:
+                response = client.chat.completions.create(
+                    model=primary,
+                    messages=[
+                        {"role": "user", "content": prompt}
+                    ]
+                )
+            except Exception as inner_e:
+                logger.warning(f"NVIDIA report model '{primary}' failed, retrying with '{fallback}'. Error: {inner_e}")
+                response = client.chat.completions.create(
+                    model=fallback,
+                    messages=[
+                        {"role": "user", "content": prompt}
+                    ]
+                )
             return response.choices[0].message.content.strip()
         except Exception as e:
             logger.error(f"NVIDIA API report generation error: {e}")
@@ -171,11 +238,8 @@ class LLMService:
         """Generates executive markdown report using Ollama API."""
         try:
             from openai import OpenAI
-            base_url = settings.OLLAMA_HOST.rstrip('/')
-            if not base_url.endswith('/v1'):
-                base_url += '/v1'
             api_key = settings.OLLAMA_API_KEY or "ollama"
-            client = OpenAI(base_url=base_url, api_key=api_key, timeout=15.0)
+            client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=15.0)
             
             prompt = (
                 "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
@@ -224,12 +288,8 @@ class LLMService:
         """Runs Ollama extraction via OpenAI compatible endpoints."""
         try:
             from openai import OpenAI
-            base_url = settings.OLLAMA_HOST.rstrip('/')
-            if not base_url.endswith('/v1'):
-                base_url += '/v1'
-                
             api_key = settings.OLLAMA_API_KEY or "ollama"
-            client = OpenAI(base_url=base_url, api_key=api_key, timeout=3.0)
+            client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=3.0)
             
             safe_title = title.replace("<", "").replace(">", "")
             safe_text = text.replace("<", "").replace(">", "")
@@ -255,30 +315,32 @@ class LLMService:
 
     @classmethod
     def _run_nvidia(cls, title: str, text: str) -> Dict[str, Any]:
-        """Runs the NVIDIA API (DeepSeek/Gemma) as a load-shedding backup."""
+        """Runs the NVIDIA NIM API as a load-shedding backup."""
         try:
             from openai import OpenAI
             client = OpenAI(
                 base_url="https://integrate.api.nvidia.com/v1",
                 api_key=settings.NVIDIA_API_KEY
             )
-            
+
             safe_title = title.replace("<", "").replace(">", "")
             safe_text = text.replace("<", "").replace(">", "")
             prompt = f"Analyze the following article wrapped in <article> tags:\n\n<article>\nTitle: {safe_title}\nText:\n{safe_text}\n</article>"
-            
+
+            primary = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
+            fallback = settings.NVIDIA_MODEL_FALLBACK or DEFAULT_NVIDIA_MODEL_FALLBACK
             try:
                 response = client.chat.completions.create(
-                    model="deepseek-v4-pro",
+                    model=primary,
                     messages=[
                         {"role": "system", "content": SYSTEM_PROMPT},
                         {"role": "user", "content": prompt}
                     ]
                 )
             except Exception as inner_e:
-                logger.warning(f"Failed with Deepseek, trying gemma. Error: {inner_e}")
+                logger.warning(f"NVIDIA model '{primary}' failed, retrying with '{fallback}'. Error: {inner_e}")
                 response = client.chat.completions.create(
-                    model="gemma-4-31b-it",
+                    model=fallback,
                     messages=[
                         {"role": "system", "content": SYSTEM_PROMPT},
                         {"role": "user", "content": prompt}

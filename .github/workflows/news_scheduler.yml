@@ -43,6 +43,9 @@ jobs:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+          NVIDIA_MODEL_FALLBACK: ${{ vars.NVIDIA_MODEL_FALLBACK }}
+          SEED_DEMO_PSC: ${{ vars.SEED_DEMO_PSC || 'false' }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: |

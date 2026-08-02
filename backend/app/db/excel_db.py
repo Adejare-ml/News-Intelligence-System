@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 # Constants for sheets/tabs
 SHEETS_CONFIG = {
-    "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status"],
+    "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine"],
     "Companies": ["Company", "Mention Count", "Last Seen", "Industry", "Risk Level"],
     "People": ["Name", "Position", "Organization", "Event", "Date"],
     "Government Agencies": ["Agency", "Event", "Article", "Date"],
