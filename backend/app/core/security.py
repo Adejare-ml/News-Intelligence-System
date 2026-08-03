@@ -61,8 +61,17 @@ def get_current_user(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Could not validate credentials.",
         )
-        
-    user = db.query(User).filter(User.id == int(user_id)).first()
+
+    # A non-numeric sub claim is a malformed token, not a server error
+    try:
+        user_id_int = int(user_id)
+    except (TypeError, ValueError):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Could not validate credentials.",
+        )
+
+    user = db.query(User).filter(User.id == user_id_int).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found.")
     if not user.is_active:

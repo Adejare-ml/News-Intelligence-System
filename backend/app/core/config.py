@@ -8,9 +8,16 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
     
     # Security
-    JWT_SECRET: str = "supersecretjwtkeyfornewsinventorysystem123!"
+    # No default on purpose: a public default secret lets anyone forge admin
+    # tokens. The API refuses to start without one (see main.py); the
+    # serverless pipeline never touches JWT and is unaffected.
+    JWT_SECRET: Optional[str] = None
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7 # 1 week
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 # 24 hours
+    # Admin user is only seeded when this is explicitly set (no hardcoded
+    # default credentials, nothing logged).
+    ADMIN_SEED_EMAIL: str = "admin@newsintel.com"
+    ADMIN_SEED_PASSWORD: Optional[str] = None
     
     # Databases & Caching
     DATABASE_URL: str = "postgresql://postgres:postgrespassword@localhost:5432/news_intel"

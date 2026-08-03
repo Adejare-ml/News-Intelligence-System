@@ -10,7 +10,8 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB:-news_intel}
     ports:
-      - "5432:5432"
+      # Bound to loopback: the database must not be reachable from the network
+      - "127.0.0.1:5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -24,7 +25,8 @@ services:
     container_name: news_intel_redis
     restart: always
     ports:
-      - "6379:6379"
+      # Bound to loopback: Redis has no auth and must not be network-reachable
+      - "127.0.0.1:6379:6379"
     healthcheck:
       test: ["CMD", "redis-cli", "ping"]
       interval: 5s
