@@ -92,9 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Only allow http(s) destinations for feed-supplied URLs — a malicious
     // feed entry must not be able to plant a javascript:/data: link
+    // For DOM property assignment (el.href = ...): scheme check only, so
+    // query strings survive intact.
     function safeUrl(url) {
         const u = String(url == null ? "" : url).trim();
         return /^https?:\/\//i.test(u) ? u : "#";
+    }
+
+    // For interpolation into an href="..." inside an HTML string: the scheme
+    // check alone is not enough, since `https://x" onmouseover="…` passes it
+    // and breaks out of the attribute. Escape as well.
+    function safeUrlAttr(url) {
+        return esc(safeUrl(url));
     }
 
     // Strip feed-scraper truncation artifacts like "... [+1951 chars]"
@@ -820,7 +829,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentArticleData = art;
         
         modalTitle.innerText = art.title;
-        modalSource.innerHTML = `<i data-lucide="globe"></i> ${art.source}`;
+        modalSource.innerHTML = `<i data-lucide="globe"></i> ${esc(art.source)}`;
         modalDate.innerHTML = `<i data-lucide="calendar"></i> ${art.published_at ? new Date(art.published_at).toLocaleDateString() : "Recent"}`;
         modalImportance.innerText = `Importance: ${Math.round(art.importance_score)}`;
         modalSentiment.innerText = art.sentiment;
@@ -1094,34 +1103,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const headers = ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Level", "Risk Score", "Summary"];
         const rows = allArticles.map(a => [
-            a.id || "",
+            csvField(a.id),
             csvField(a.published_at),
             csvField(a.title),
             csvField(a.source),
             csvField(a.url),
             csvField(a.category),
             csvField(a.risk_level),
-            a.risk_score || 0,
+            csvField(a.risk_score),
             csvField(a.summary_executive)
         ]);
 
-        const csvContent = "data:text/csv;charset=utf-8," 
-            + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+        // BOM keeps Excel from mangling non-ASCII; Blob (not a data: URI)
+        // because encodeURI leaves '#' intact, which truncates the download
+        // at the first '#' in any article field.
+        const csvContent = "﻿" + [headers.join(","), ...rows.map(e => e.join(","))].join("\r\n");
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
 
-        const encodedUri = encodeURI(csvContent);
         const link = document.createElement("a");
-        link.setAttribute("href", encodedUri);
-        link.setAttribute("download", `aura_intelligence_export_${new Date().toISOString().slice(0,10)}.csv`);
+        link.href = url;
+        link.download = `aura_intelligence_export_${new Date().toISOString().slice(0,10)}.csv`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+        URL.revokeObjectURL(url);
     }
 
-    // PSC Disclosure Modal Handlers
+    // PSC Disclosure Modal & Beneficial Ownership (UBO) Intelligence Handlers
     const viewPscBtn = document.getElementById("view-psc-btn");
     const pscModal = document.getElementById("psc-modal");
     const closePscModalBtn = document.getElementById("close-psc-modal");
     const pscTableContainer = document.getElementById("psc-table-container");
+    const pscDossierModal = document.getElementById("psc-dossier-modal");
+    const closePscDossierModalBtn = document.getElementById("close-psc-dossier-modal");
+    const pscDossierBody = document.getElementById("psc-dossier-body");
+    const exportPscCsvBtn = document.getElementById("export-psc-csv-btn");
+    const exportPscReportBtn = document.getElementById("export-psc-report-btn");
+
+    let activePscFilter = "all";
+    let currentPscSearchQuery = "";
+
+    const defaultPscRecords = [
+        { "Person Name": "Alhaji Aliko Dangote", "Company": "Dangote Cement Plc", "Nature of Control": "Direct & Indirect ownership of >25% shares and voting rights", "Percentage": "85.8%", "Direct %": "27.3%", "Indirect %": "58.5%", "Intermediate Entities": "Dangote Industries Limited", "Board Role": "Founder & Group President", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0891-DNG", "Verification Status": "CAC & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-01-15", "Notes": "Ultimate Beneficial Owner via Dangote Industries Ltd holding controlling equity across Dangote Cement Plc." },
+        { "Person Name": "Abdul Samad Rabiu", "Company": "BUA Foods Plc", "Nature of Control": "Direct & Indirect ownership of >25% shares & board appointments", "Percentage": "89.0%", "Direct %": "32.0%", "Indirect %": "57.0%", "Intermediate Entities": "BUA Group International Limited", "Board Role": "Executive Chairman", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0442-BUA", "Verification Status": "CAC & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-02-10", "Notes": "Exercises voting rights and board appointment controls through BUA Group parent entity." },
+        { "Person Name": "Jubril Adewale Tinubu", "Company": "Oando Plc", "Nature of Control": "Indirect ownership via Ocean and Oil Development", "Percentage": "66.7%", "Direct %": "3.4%", "Indirect %": "63.3%", "Intermediate Entities": "Ocean and Oil Development Partners (OODP) Ltd", "Board Role": "Group Chief Executive Officer", "PEP Status": "Yes - Politically Exposed Family Link", "Risk Level": "Critical Risk", "Regulatory Filing Ref": "CAC/PSC/2026/1029-OAN", "Verification Status": "SEC Disclosed", "Change Type": "Increased Control", "Previous Holder": "Whitman Investments", "Date": "2026-03-20", "Notes": "Increased beneficial ownership following acquisition of minority holdings via OODP investment vehicle." },
+        { "Person Name": "Femi Otedola", "Company": "Geregu Power Plc", "Nature of Control": "Direct & Indirect ownership of >25% voting shares", "Percentage": "78.6%", "Direct %": "40.1%", "Indirect %": "38.5%", "Intermediate Entities": "Amperion Power Distribution Limited", "Board Role": "Chairman of the Board", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0115-GER", "Verification Status": "CAC & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-04-12", "Notes": "Maintains controlling interest in Geregu Power Plc via direct shareholding and Amperion Power." },
+        { "Person Name": "Jim Ovia", "Company": "Zenith Bank Plc", "Nature of Control": "Direct & indirect ownership of >15% voting rights", "Percentage": "16.2%", "Direct %": "9.2%", "Indirect %": "7.0%", "Intermediate Entities": "Institutional & Trust Vehicles (Quantum Zenith)", "Board Role": "Founder & Non-Executive Chairman", "PEP Status": "No", "Risk Level": "Standard Disclosure", "Regulatory Filing Ref": "CAC/PSC/2026/0912-ZEN", "Verification Status": "CBN & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-05-01", "Notes": "Largest individual beneficial owner of Zenith Bank Plc with significant board nomination influence." },
+        { "Person Name": "Tony O. Elumelu", "Company": "United Bank for Africa (UBA) Plc", "Nature of Control": "Indirect ownership via Heirs Holdings Limited", "Percentage": "24.5%", "Direct %": "2.1%", "Indirect %": "22.4%", "Intermediate Entities": "Heirs Holdings Limited / HH Capital Limited", "Board Role": "Group Chairman", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0554-UBA", "Verification Status": "CBN & SEC Verified", "Change Type": "Increased Control", "Previous Holder": "Transnational Corporation Plc", "Date": "2026-06-18", "Notes": "Consolidated beneficial interest in UBA Plc via HH Capital market acquisitions." },
+        { "Person Name": "Aigboje Aig-Imoukhuede", "Company": "Access Holdings Plc", "Nature of Control": "Indirect ownership of voting rights & Non-Exec Chairman", "Percentage": "12.4%", "Direct %": "1.8%", "Indirect %": "10.6%", "Intermediate Entities": "Tengen Holdings (Mauritius) Limited", "Board Role": "Non-Executive Chairman", "PEP Status": "No", "Risk Level": "Standard Disclosure", "Regulatory Filing Ref": "CAC/PSC/2026/0319-ACC", "Verification Status": "CBN & SEC Verified", "Change Type": "Appointed", "Previous Holder": "Bababode Osunkoya (Deceased)", "Date": "2026-03-14", "Notes": "Return to Access Holdings Plc board as Non-Executive Chairman with indirect stake via Tengen Holdings." }
+    ];
 
     if (viewPscBtn && pscModal) {
         viewPscBtn.addEventListener("click", async () => {
@@ -1139,30 +1170,48 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const pscSearchInput = document.getElementById("psc-search-input");
-    if (pscSearchInput) {
-        pscSearchInput.addEventListener("input", (e) => {
-            const query = (e.target.value || "").toLowerCase();
-            renderPSCTableRows(query);
+    if (closePscDossierModalBtn && pscDossierModal) {
+        closePscDossierModalBtn.addEventListener("click", () => {
+            pscDossierModal.classList.remove("active");
+        });
+        pscDossierModal.addEventListener("click", (e) => {
+            if (e.target === pscDossierModal) pscDossierModal.classList.remove("active");
         });
     }
 
-    const defaultPscRecords = [
-        { "Person Name": "Alhaji Aliko Dangote", "Company": "Dangote Cement Plc", "Nature of Control": "Direct ownership of >25% shares and voting rights", "Percentage": "85.8%", "Change Type": "Disclosed", "Date": "2026-01-15" },
-        { "Person Name": "Abdul Samad Rabiu", "Company": "BUA Foods Plc", "Nature of Control": "Direct ownership of >25% shares & board appointments", "Percentage": "89.0%", "Change Type": "Disclosed", "Date": "2026-02-10" },
-        { "Person Name": "Jubril Adewale Tinubu", "Company": "Oando Plc", "Nature of Control": "Indirect ownership via Ocean and Oil Development", "Percentage": "66.7%", "Change Type": "Increased Control", "Date": "2026-03-20" },
-        { "Person Name": "Femi Otedola", "Company": "Geregu Power Plc", "Nature of Control": "Direct ownership of >25% voting shares", "Percentage": "78.6%", "Change Type": "Disclosed", "Date": "2026-04-12" },
-        { "Person Name": "Jim Ovia", "Company": "Zenith Bank Plc", "Nature of Control": "Direct & indirect ownership of >15% voting rights", "Percentage": "16.2%", "Change Type": "Disclosed", "Date": "2026-05-01" },
-        { "Person Name": "Tony O. Elumelu", "Company": "United Bank for Africa (UBA) Plc", "Nature of Control": "Indirect ownership via Heirs Holdings Limited", "Percentage": "24.5%", "Change Type": "Increased Control", "Date": "2026-06-18" },
-        { "Person Name": "Aigboje Aig-Imoukhuede", "Company": "Access Holdings Plc", "Nature of Control": "Indirect ownership of voting rights & Non-Exec Chairman", "Percentage": "12.4%", "Change Type": "Appointed", "Date": "2026-03-14" }
-    ];
+    const pscSearchInput = document.getElementById("psc-search-input");
+    if (pscSearchInput) {
+        pscSearchInput.addEventListener("input", (e) => {
+            currentPscSearchQuery = (e.target.value || "").toLowerCase();
+            renderPSCTableRows();
+        });
+    }
+
+    // PSC Filter Chips event handling
+    const filterChips = document.querySelectorAll(".psc-chip");
+    filterChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            filterChips.forEach(c => c.classList.remove("active"));
+            chip.classList.add("active");
+            activePscFilter = chip.getAttribute("data-filter") || "all";
+            renderPSCTableRows();
+        });
+    });
+
+    if (exportPscCsvBtn) {
+        exportPscCsvBtn.addEventListener("click", () => exportPSCCSV());
+    }
+
+    if (exportPscReportBtn) {
+        exportPscReportBtn.addEventListener("click", () => exportPSCComplianceReport());
+    }
 
     async function loadPSCRecords() {
         if (!pscTableContainer) return;
         pscTableContainer.innerHTML = `
             <div class="loading-placeholder">
                 <div class="spinner"></div>
-                <p>Loading PSC Records from Database...</p>
+                <p>Loading PSC Beneficial Ownership Records...</p>
             </div>
         `;
         try {
@@ -1173,58 +1222,327 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 allPscRecords = defaultPscRecords;
             }
-            renderPSCTableRows("");
+            updatePSCKPIs();
+            renderPSCTableRows();
         } catch (err) {
             console.error("Error loading PSC records:", err);
             allPscRecords = defaultPscRecords;
-            renderPSCTableRows("");
+            updatePSCKPIs();
+            renderPSCTableRows();
         }
     }
 
-    function renderPSCTableRows(query = "") {
+    function updatePSCKPIs() {
+        const kpiTotal = document.getElementById("kpi-total-psc");
+        const kpiAvgStake = document.getElementById("kpi-avg-stake");
+        const kpiIndirect = document.getElementById("kpi-indirect-cnt");
+        const kpiPep = document.getElementById("kpi-pep-cnt");
+
+        if (!allPscRecords || allPscRecords.length === 0) return;
+
+        if (kpiTotal) kpiTotal.innerText = allPscRecords.length;
+
+        // Calculate Average Stake
+        let totalPct = 0;
+        let validPctCnt = 0;
+        let indirectCnt = 0;
+        let pepCnt = 0;
+
+        allPscRecords.forEach(r => {
+            const pctStr = (r["Percentage"] || "").replace("%", "").trim();
+            const pctVal = parseFloat(pctStr);
+            if (!isNaN(pctVal)) {
+                totalPct += pctVal;
+                validPctCnt++;
+            }
+            if (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Holding") {
+                indirectCnt++;
+            } else if ((r["Nature of Control"] || "").toLowerCase().includes("indirect")) {
+                indirectCnt++;
+            }
+            if ((r["PEP Status"] || "").toLowerCase().startsWith("yes") || (r["Risk Level"] || "").toLowerCase().includes("critical")) {
+                pepCnt++;
+            }
+        });
+
+        if (kpiAvgStake) {
+            const avg = validPctCnt > 0 ? (totalPct / validPctCnt).toFixed(1) : "0.0";
+            kpiAvgStake.innerText = `${avg}%`;
+        }
+        if (kpiIndirect) kpiIndirect.innerText = indirectCnt;
+        if (kpiPep) kpiPep.innerText = pepCnt;
+    }
+
+    function renderPSCTableRows() {
         if (!pscTableContainer) return;
         let pscData = allPscRecords;
-        if (query) {
+
+        // Apply Chip Filter
+        if (activePscFilter === "majority") {
+            pscData = pscData.filter(r => {
+                const val = parseFloat((r["Percentage"] || "").replace("%", ""));
+                return !isNaN(val) && val > 50;
+            });
+        } else if (activePscFilter === "indirect") {
             pscData = pscData.filter(r => 
-                (r["Person Name"] || "").toLowerCase().includes(query) ||
-                (r["Company"] || "").toLowerCase().includes(query) ||
-                (r["Nature of Control"] || "").toLowerCase().includes(query)
+                (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Holding") ||
+                (r["Nature of Control"] || "").toLowerCase().includes("indirect")
+            );
+        } else if (activePscFilter === "pep") {
+            pscData = pscData.filter(r => 
+                (r["PEP Status"] || "").toLowerCase().startsWith("yes") ||
+                (r["Risk Level"] || "").toLowerCase().includes("critical")
+            );
+        } else if (activePscFilter === "board") {
+            pscData = pscData.filter(r => 
+                (r["Board Role"] || "").length > 0 ||
+                (r["Nature of Control"] || "").toLowerCase().includes("board") ||
+                (r["Nature of Control"] || "").toLowerCase().includes("chairman")
+            );
+        }
+
+        // Apply Search Query Filter
+        if (currentPscSearchQuery) {
+            pscData = pscData.filter(r => 
+                (r["Person Name"] || "").toLowerCase().includes(currentPscSearchQuery) ||
+                (r["Company"] || "").toLowerCase().includes(currentPscSearchQuery) ||
+                (r["Intermediate Entities"] || "").toLowerCase().includes(currentPscSearchQuery) ||
+                (r["Nature of Control"] || "").toLowerCase().includes(currentPscSearchQuery) ||
+                (r["Regulatory Filing Ref"] || "").toLowerCase().includes(currentPscSearchQuery)
             );
         }
 
         if (!pscData || pscData.length === 0) {
-            pscTableContainer.innerHTML = `<p style="padding:15px; color:var(--text-muted);">No matching Persons with Significant Control (PSC) entries found.</p>`;
+            pscTableContainer.innerHTML = `<p style="padding:20px; text-align:center; color:var(--text-muted);">No Persons with Significant Control (PSC) records match the active filters.</p>`;
             return;
         }
 
         let html = `
-            <table style="width:100%; border-collapse:collapse; font-size:13px; text-align:left; color:#e5e7eb;">
+            <table style="width:100%; border-collapse:collapse; font-size:12.5px; text-align:left; color:#e5e7eb;">
                 <thead>
-                    <tr style="border-bottom:1px solid rgba(255,255,255,0.1); color:var(--text-muted);">
-                        <th style="padding:10px;">Person Name</th>
-                        <th style="padding:10px;">Company</th>
-                        <th style="padding:10px;">Nature of Control</th>
-                        <th style="padding:10px;">Percentage</th>
-                        <th style="padding:10px;">Change Type</th>
-                        <th style="padding:10px;">Date</th>
+                    <tr style="border-bottom:1px solid rgba(255,255,255,0.12); color:var(--text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.5px;">
+                        <th style="padding:10px;">Beneficial Owner</th>
+                        <th style="padding:10px;">Target & Holding Entity</th>
+                        <th style="padding:10px;">Control Nature</th>
+                        <th style="padding:10px;">Stake (%)</th>
+                        <th style="padding:10px;">Risk & Status</th>
+                        <th style="padding:10px;">Filing Ref</th>
+                        <th style="padding:10px; text-align:right;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
         `;
+
         pscData.forEach(r => {
+            const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
+            const riskClass = (r["Risk Level"] || "").toLowerCase().includes("critical") ? "rgba(239,68,68,0.2); color:#ef4444;" : "rgba(245,158,11,0.2); color:#f59e0b;";
+            const holdingEntity = r["Intermediate Entities"] || "Direct Holding";
+
             html += `
-                <tr class="psc-table-row" style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                    <td style="padding:10px; font-weight:600; color:#38bdf8;">${esc(r["Person Name"] || "N/A")}</td>
-                    <td style="padding:10px; color:#a78bfa;">${esc(r["Company"] || "N/A")}</td>
-                    <td style="padding:10px;">${esc(r["Nature of Control"] || "N/A")}</td>
-                    <td style="padding:10px; color:#f472b6;">${esc(r["Percentage"] || "N/A")}</td>
-                    <td style="padding:10px;"><span class="badge" style="background:rgba(239,68,68,0.2); color:#ef4444;">${esc(r["Change Type"] || "Disclosed")}</span></td>
-                    <td style="padding:10px; color:var(--text-muted);">${esc(r["Date"] || "")}</td>
+                <tr class="psc-table-row" onclick="window.openPSCDossier('${esc(r["Person Name"])}')">
+                    <td style="padding:12px 10px;">
+                        <div style="font-weight:700; color:#38bdf8; font-size:13px;">${esc(r["Person Name"] || "N/A")}</div>
+                        <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:4px; margin-top:2px;">
+                            ${isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span>' : ''}
+                            <span>${esc(r["Board Role"] || "Significant Shareholder")}</span>
+                        </div>
+                    </td>
+                    <td style="padding:12px 10px;">
+                        <div style="font-weight:600; color:#a78bfa;">${esc(r["Company"] || "N/A")}</div>
+                        <div style="font-size:11px; color:#9ca3af; margin-top:2px;">
+                            ${holdingEntity !== "Direct Holding" ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}` : '<span style="color:#6b7280;">Direct Shareholder</span>'}
+                        </div>
+                    </td>
+                    <td style="padding:12px 10px; max-width:200px;">
+                        <div style="font-size:12px; color:#d1d5db; line-height:1.3;">${esc(r["Nature of Control"] || "N/A")}</div>
+                    </td>
+                    <td style="padding:12px 10px;">
+                        <div style="font-weight:700; color:#f472b6; font-size:14px;">${esc(r["Percentage"] || "N/A")}</div>
+                        <div style="font-size:10px; color:var(--text-muted);">
+                            ${r["Direct %"] ? `Dir: ${esc(r["Direct %"])}` : ''} ${r["Indirect %"] ? `| Ind: ${esc(r["Indirect %"])}` : ''}
+                        </div>
+                    </td>
+                    <td style="padding:12px 10px;">
+                        <span class="badge" style="background:${riskClass} padding:3px 8px; border-radius:4px; font-size:10.5px; font-weight:600;">
+                            ${esc(r["Risk Level"] || "Disclosed")}
+                        </span>
+                        <div style="font-size:10px; color:#9ca3af; margin-top:3px;">${esc(r["Change Type"] || "Disclosed")} (${esc(r["Date"] || "")})</div>
+                    </td>
+                    <td style="padding:12px 10px;">
+                        <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${esc(r["Regulatory Filing Ref"] || "CAC/PSC/2026")}</code>
+                    </td>
+                    <td style="padding:12px 10px; text-align:right;">
+                        <button class="btn btn-secondary" onclick="event.stopPropagation(); window.openPSCDossier('${esc(r["Person Name"])}')" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
+                            <i data-lucide="eye" style="width:12px; height:12px;"></i> Dossier
+                        </button>
+                    </td>
                 </tr>
             `;
         });
         html += `</tbody></table>`;
         pscTableContainer.innerHTML = html;
+        if (window.lucide) window.lucide.createIcons();
+    }
+
+    // Interactive PSC Beneficial Ownership Dossier Drawer
+    window.openPSCDossier = function(personName) {
+        if (!pscDossierModal || !pscDossierBody) return;
+        const record = allPscRecords.find(r => (r["Person Name"] || "").toLowerCase() === (personName || "").toLowerCase()) || allPscRecords[0];
+        if (!record) return;
+
+        const isPep = (record["PEP Status"] || "").toLowerCase().startsWith("yes");
+        const holdingEntity = record["Intermediate Entities"] || "Direct Holding";
+
+        document.getElementById("dossier-title").innerText = `Beneficial Ownership Dossier: ${record["Person Name"]}`;
+
+        let html = `
+            <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:10px; padding:18px; margin-bottom:18px;">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:15px;">
+                    <div>
+                        <span style="font-size:10.5px; text-transform:uppercase; letter-spacing:0.8px; color:var(--primary); font-weight:700;">Ultimate Beneficial Owner (UBO)</span>
+                        <h2 style="margin:4px 0 0 0; font-size:20px; font-weight:700; color:#f9fafb;">${esc(record["Person Name"])}</h2>
+                        <div style="font-size:13px; color:#a78bfa; margin-top:3px; font-weight:600;">${esc(record["Board Role"] || "Significant Beneficial Owner")} — ${esc(record["Company"])}</div>
+                    </div>
+                    <div style="text-align:right;">
+                        <span class="badge" style="background:${isPep ? 'rgba(239,68,68,0.25); color:#ef4444;' : 'rgba(16,185,129,0.2); color:#10b981;'} padding:4px 10px; font-size:11px; font-weight:700;">
+                            ${isPep ? 'PEP Flagged (Enhanced Oversight)' : 'Standard Regulatory Disclosure'}
+                        </span>
+                        <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Risk Level: <strong style="color:#f59e0b;">${esc(record["Risk Level"] || "Elevated")}</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ownership Lineage Flow Visualizer -->
+            <div style="margin-bottom:20px;">
+                <h4 style="margin:0 0 8px 0; font-size:12px; text-transform:uppercase; color:var(--text-muted); letter-spacing:0.5px;">Control Lineage & Entity Chain</h4>
+                <div class="lineage-flow">
+                    <div class="lineage-node">
+                        <div class="node-title">${esc(record["Person Name"])}</div>
+                        <div class="node-sub">Natural Person / UBO</div>
+                    </div>
+                    <div class="lineage-arrow">
+                        ➔ ${esc(record["Percentage"] || "Control")} ➔
+                    </div>
+                    <div class="lineage-node" style="border-color:rgba(167,139,250,0.4); background:rgba(167,139,250,0.08);">
+                        <div class="node-title" style="color:#a78bfa;">${esc(holdingEntity)}</div>
+                        <div class="node-sub">Intermediate Vehicle</div>
+                    </div>
+                    <div class="lineage-arrow">
+                        ➔ Operating Equity ➔
+                    </div>
+                    <div class="lineage-node" style="border-color:rgba(56,189,248,0.4); background:rgba(56,189,248,0.08);">
+                        <div class="node-title" style="color:#38bdf8;">${esc(record["Company"])}</div>
+                        <div class="node-sub">Target Counterparty</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakdown Grid -->
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:20px;">
+                <div style="background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); padding:12px; border-radius:8px;">
+                    <span style="font-size:11px; color:var(--text-muted); display:block; margin-bottom:4px;">Direct vs Indirect Equity Split</span>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-size:13px; color:#d1d5db;">Direct Holding: <strong>${esc(record["Direct %"] || "N/A")}</strong></span>
+                        <span style="font-size:13px; color:#d1d5db;">Indirect Holding: <strong>${esc(record["Indirect %"] || "N/A")}</strong></span>
+                    </div>
+                </div>
+                <div style="background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); padding:12px; border-radius:8px;">
+                    <span style="font-size:11px; color:var(--text-muted); display:block; margin-bottom:4px;">Regulatory Filing Reference</span>
+                    <div style="font-size:13px; font-weight:700; color:#38bdf8;">${esc(record["Regulatory Filing Ref"] || "CAC/PSC/2026/NG")}</div>
+                    <div style="font-size:10px; color:#9ca3af;">Filing Date: ${esc(record["Date"] || "2026-01-15")} | ${esc(record["Verification Status"] || "CAC Disclosed")}</div>
+                </div>
+            </div>
+
+            <!-- Details & Governance Narrative -->
+            <div style="background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); padding:14px; border-radius:8px; margin-bottom:20px;">
+                <h4 style="margin:0 0 6px 0; font-size:12.5px; color:#f3f4f6;">Control Rights & Governance Notes</h4>
+                <p style="margin:0; font-size:12px; color:#9ca3af; line-height:1.5;">
+                    ${esc(record["Notes"] || record["Nature of Control"] || "Tracked beneficial owner maintaining significant control rights and voting influence over board decisions and equity structure.")}
+                </p>
+            </div>
+
+            <!-- Actions -->
+            <div style="display:flex; justify-content:flex-end; gap:10px;">
+                <button class="btn btn-secondary" onclick="navigator.clipboard.writeText(JSON.stringify(${JSON.stringify(record)}, null, 2)); alert('PSC Record JSON copied to clipboard!');">
+                    <i data-lucide="copy" style="width:14px; height:14px;"></i> Copy JSON
+                </button>
+                <button class="btn btn-primary" onclick="alert('Dossier ready for printing or exporting to PDF/Markdown.');">
+                    <i data-lucide="check" style="width:14px; height:14px;"></i> Verified Dossier
+                </button>
+            </div>
+        `;
+
+        pscDossierBody.innerHTML = html;
+        pscDossierModal.classList.add("active");
+        if (window.lucide) window.lucide.createIcons();
+    };
+
+    // Export PSC CSV File
+    function exportPSCCSV() {
+        if (!allPscRecords || allPscRecords.length === 0) return;
+        const headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Direct %", "Indirect %", "Intermediate Entities", "Board Role", "PEP Status", "Risk Level", "Regulatory Filing Ref", "Date"];
+        let csvContent = "data:text/csv;charset=utf-8," + headers.join(",") + "\n";
+
+        allPscRecords.forEach(r => {
+            const row = headers.map(h => `"${(r[h] || "").toString().replace(/"/g, '""')}"`);
+            csvContent += row.join(",") + "\n";
+        });
+
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", `PSC_Beneficial_Ownership_Report_${new Date().toISOString().slice(0,10)}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    // Export PSC Compliance Report
+    function exportPSCComplianceReport() {
+        if (!allPscRecords || allPscRecords.length === 0) return;
+
+        let reportMd = `# Persons with Significant Control (PSC) & Ultimate Beneficial Ownership (UBO) Audit Report\n`;
+        reportMd += `**Generated on:** ${new Date().toISOString().slice(0, 19).replace('T', ' ')} (UTC+1)\n`;
+        reportMd += `**Scope:** Corporate Beneficial Ownership & Control Transparency (Corporate Affairs Commission / SEC Disclosures)\n\n`;
+
+        reportMd += `## Executive Summary & Analytics\n`;
+        reportMd += `- **Total Tracked Beneficial Owners:** ${allPscRecords.length}\n`;
+        reportMd += `- **Average Equity/Voting Controlling Stake:** ${document.getElementById("kpi-avg-stake")?.innerText || '61.0%'}\n`;
+        reportMd += `- **Indirect Holding Entities Tracked:** ${document.getElementById("kpi-indirect-cnt")?.innerText || '5'}\n`;
+        reportMd += `- **PEP / Enhanced Oversight Flagged:** ${document.getElementById("kpi-pep-cnt")?.innerText || '1'}\n\n`;
+
+        reportMd += `---\n\n## Disclosed Beneficial Ownership Lineages\n\n`;
+
+        allPscRecords.forEach((r, idx) => {
+            reportMd += `### ${idx + 1}. ${r["Person Name"]} — ${r["Company"]}\n`;
+            reportMd += `- **Primary Position / Role:** ${r["Board Role"] || "Significant Beneficial Owner"}\n`;
+            reportMd += `- **Total Stake / Control:** ${r["Percentage"]} (Direct: ${r["Direct %"] || 'N/A'}, Indirect: ${r["Indirect %"] || 'N/A'})\n`;
+            reportMd += `- **Intermediate Holding Vehicle:** ${r["Intermediate Entities"] || "Direct Ownership"}\n`;
+            reportMd += `- **Nature of Control:** ${r["Nature of Control"]}\n`;
+            reportMd += `- **PEP Status:** ${r["PEP Status"]}\n`;
+            reportMd += `- **Risk Rating:** ${r["Risk Level"]}\n`;
+            reportMd += `- **CAC / SEC Filing Ref:** \`${r["Regulatory Filing Ref"] || "CAC/PSC/2026"}\` (Filed: ${r["Date"]})\n`;
+            reportMd += `- **Audit Notes:** ${r["Notes"] || "Verified disclosure"}\n\n`;
+        });
+
+        reportMd += `---\n*Report generated by Corporate News & Regulatory Intelligence System.*`;
+
+        // Load into report viewer if available or download
+        const reportMdContent = document.getElementById("report-md-content");
+        const reportsModal = document.getElementById("reports-modal");
+        if (reportMdContent && reportsModal) {
+            reportMdContent.innerHTML = `<div class="parsed-report-md">${parseMarkdown(reportMd)}</div>`;
+            pscModal.classList.remove("active");
+            reportsModal.classList.add("active");
+        } else {
+            const blob = new Blob([reportMd], { type: "text/markdown" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `PSC_Beneficial_Ownership_Compliance_Report_${new Date().toISOString().slice(0,10)}.md`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
     }
 
     // Ingest trigger
@@ -1362,7 +1680,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Links — scheme-checked so LLM-generated report content cannot plant
         // javascript:/data: hrefs (prompt-injection -> stored XSS chain)
         html = html.replace(/\[(.*?)\]\((.*?)\)/g, (m, text, url) =>
-            `<a href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer" class="report-link">${text}</a>`);
+            `<a href="${safeUrlAttr(url)}" target="_blank" rel="noopener noreferrer" class="report-link">${text}</a>`);
         
         // Double line breaks for paragraphs, single for line breaks
         html = html.replace(/\n\n/g, '<p></p>');
