@@ -113,27 +113,138 @@ def parse_feed_date(date_str: str) -> datetime:
         
     return datetime.now()
 
+# Whole-title matches only. Substring matching would be wrong here: "register"
+# alone is chrome, but "PSC register" and "beneficial ownership register" are
+# exactly what this pipeline exists to find.
+_NAV_STUB_TITLES = {
+    "home", "homepage", "account login", "login", "log in", "sign in", "sign up",
+    "contact us", "contact", "about us", "about", "privacy policy", "terms",
+    "terms of use", "terms and conditions", "faq", "faqs", "help", "support",
+    "search", "search results", "portal", "dashboard", "downloads", "download",
+    "register", "registration", "services", "our services", "news", "latest news",
+    "media centre", "media center", "press releases", "gallery", "sitemap",
+}
+
+
+def _normalise_title(value: Any) -> str:
+    return " ".join(str(value or "").replace("\xa0", " ").split()).strip().lower()
+
+
+def is_navigation_stub(title: Any, source: Any = None) -> bool:
+    """True when a feed entry is site chrome rather than a story.
+
+    Two signals, both conservative:
+
+    * The title is nothing but the publication's own name. Google News renders
+      a homepage as "Corporate Affairs Commission - Corporate Affairs Commission".
+    * The whole title is a navigation label.
+    """
+    clean = _normalise_title(title)
+    if not clean:
+        return True
+
+    if clean in _NAV_STUB_TITLES:
+        return True
+
+    src = _normalise_title(source)
+    if src:
+        # "Corporate Affairs Commission - Corporate Affairs Commission"
+        stripped = clean
+        for sep in (" - ", " | ", " – ", " — "):
+            if stripped.endswith(sep + src):
+                stripped = stripped[: -(len(sep) + len(src))].strip()
+                break
+        if stripped == src or clean == src:
+            return True
+        if stripped in _NAV_STUB_TITLES:
+            return True
+        # "NAICOM Home - NAICOM" -> strip the trailing source, then the leading
+        # one, leaving the bare navigation label.
+        if stripped.startswith(src + " ") and stripped[len(src) + 1:] in _NAV_STUB_TITLES:
+            return True
+
+    return False
+
+
 class NewsIngestionService:
+    # Publications the pipeline trusts for Nigerian corporate reporting.
+    SITE_FILTER = (
+        "site:gov.ng OR site:com.ng OR site:premiumtimesng.com OR site:punchng.com "
+        "OR site:guardian.ng OR site:vanguardngr.com OR site:thecable.ng "
+        "OR site:leadership.ng OR site:thisdaylive.com OR site:businessday.ng "
+        "OR site:nairametrics.com OR site:proshare.co"
+    )
+
+    # Search topics, ordered by how central they are to the product.
+    #
+    # The first query used to read:
+    #     ("Public Sector Company" OR "PSC Nigeria" OR Parastatal OR ... )
+    # which searched for *public sector companies*. In this product PSC means
+    # **Persons with Significant Control** — beneficial owners under CAMA 2020.
+    # The pipeline was therefore trawling for parastatal news and, unsurprisingly,
+    # never surfaced a single ownership disclosure: every daily brief reported
+    # "no PSC or beneficial ownership disclosures present in the dataset".
+    #
+    # Beneficial ownership and corporate governance now lead, and the public
+    # sector queries are retained further down as the secondary interest they
+    # were always meant to be.
+    SEARCH_TOPICS = {
+        "beneficial_ownership": (
+            '"persons with significant control" OR "person with significant control" '
+            'OR "beneficial owner" OR "beneficial ownership" OR "ultimate beneficial owner" '
+            'OR "significant control" OR "beneficial interest"'
+        ),
+        "corporate_registry": (
+            '"Corporate Affairs Commission" OR "CAC Nigeria" OR CAMA '
+            'OR "companies register" OR "annual return" OR "PSC register" '
+            'OR "beneficial ownership register" OR "company filing"'
+        ),
+        "shareholding_change": (
+            '"majority stake" OR "controlling interest" OR "acquires stake" '
+            'OR "substantial shareholding" OR "share acquisition" OR "equity stake" '
+            'OR shareholding OR divestment OR "share transfer"'
+        ),
+        "corporate_governance": (
+            '"corporate governance" OR "board of directors" OR "annual general meeting" '
+            'OR "board appointment" OR "director resigns" OR "chairman appointed" '
+            'OR "company secretary" OR "code of corporate governance" OR "board reshuffle"'
+        ),
+        "market_regulators": (
+            '"Securities and Exchange Commission" OR "Nigerian Exchange" OR NGX '
+            'OR "Financial Reporting Council" OR CBN OR NAICOM OR PENCOM '
+            'OR "regulatory filing" OR "listing rules"'
+        ),
+        "mergers_acquisitions": (
+            'merger OR acquisition OR takeover OR "scheme of arrangement" '
+            'OR "business combination" OR "corporate restructuring" OR delisting'
+        ),
+        "procurement": (
+            'Tender OR Procurement OR "Contract Award" OR "Bid Opening" '
+            'OR "due diligence" OR compliance'
+        ),
+        "investigations": (
+            'Audit OR Fraud OR "EFCC investigation" OR "ICPC investigation" '
+            'OR bribery OR "asset forfeiture" OR "money laundering"'
+        ),
+        "public_sector": (
+            'NNPC OR NIMASA OR NPA OR FAAN OR NITDA OR FIRS OR NERC OR BPE OR NDDC'
+        ),
+    }
+
+    @classmethod
+    def build_queries(cls, query: str = None) -> List[str]:
+        """Site-scoped Google News queries, one per search topic."""
+        if query:
+            return [f"{query} ({cls.SITE_FILTER})"]
+        return [f"({terms}) ({cls.SITE_FILTER})" for terms in cls.SEARCH_TOPICS.values()]
+
     @staticmethod
     def fetch_google_news_rss(query: str = None) -> List[Dict[str, Any]]:
         """Fetches and parses articles from Google News RSS feed, targeting Nigerian PSCs, companies, and agencies."""
         logger.info("Fetching articles from Google News RSS...")
-        
-        # Site operators provided in prompt
-        site_filter = "site:gov.ng OR site:com.ng OR site:premiumtimesng.com OR site:punchng.com OR site:guardian.ng OR site:vanguardngr.com OR site:thecable.ng OR site:leadership.ng OR site:thisdaylive.com OR site:businessday.ng"
-        
-        queries = []
-        if query:
-            queries = [f"{query} ({site_filter})"]
-        else:
-            # Structuring queries matching Categories 1-9 to fetch in batches
-            queries = [
-                f'("Public Sector Company" OR "PSC Nigeria" OR Parastatal OR "Government Agency" OR CEO OR Board) ({site_filter})',
-                f'(Tender OR Procurement OR "Contract Award" OR "Bid Opening" OR regulation OR compliance) ({site_filter})',
-                f'(Budget OR Revenue OR Audit OR Fraud OR "EFCC investigation" OR "ICPC investigation" OR bribery) ({site_filter})',
-                f'(NNPC OR NIMASA OR NPA OR FAAN OR NITDA OR CBN OR FIRS OR NERC OR BPE OR NDDC) ({site_filter})'
-            ]
-            
+
+        queries = NewsIngestionService.build_queries(query)
+
         articles = []
         urls_processed = set()
         
@@ -363,6 +474,17 @@ class NewsIngestionService:
             all_articles.extend(mock_articles)
             
         # Post-ingestion strict Nigeria filter
+        # Drop site chrome before anything else. Scoping searches to gov.ng and
+        # com.ng surfaces regulator *homepages* as if they were stories --
+        # "Corporate Affairs Commission - Corporate Affairs Commission",
+        # "Account Login", "NAICOM Home" -- and every one of them passes the
+        # Nigerian check on its .ng URL, then costs an LLM call to conclude it
+        # is not news.
+        stubs = [a for a in all_articles if is_navigation_stub(a.get("title"), a.get("source"))]
+        if stubs:
+            logger.info(f"Discarded {len(stubs)} navigation/homepage entries before analysis.")
+        all_articles = [a for a in all_articles if not is_navigation_stub(a.get("title"), a.get("source"))]
+
         nigerian_filtered = []
         for art in all_articles:
             title_lower = (art.get("title") or "").lower()
