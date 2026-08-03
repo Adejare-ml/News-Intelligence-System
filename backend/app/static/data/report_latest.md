@@ -1,38 +1,40 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-08-03 10:54:40 (UTC+1)
+**Generated on:** 2026-08-03 15:40:11 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 15
-- **High Risk Signals:** 4
-- **Appointments Logged:** 2
+- **Total Articles Processed:** 10
+- **High Risk Signals:** 0
+- **Appointments Logged:** 4
 - **Procurement Awards:** 0
 
 ---
 
 ### Key Developments
 
-* **Fintech & Banking Milestones**: **FirstHoldCo** became Nigeria's first banking stock to attain a market capitalization of N6 trillion. Concurrently, the **Central Bank of Nigeria (CBN)** reported an 81% surge in mobile money transactions to N372 trillion and unveiled five strategic growth initiatives for the fintech sector.
-* **Capital & Corporate Investment**: The **Nigerian Content Development and Monitoring Board (NCDMB)** and the **Bank of Industry (BOI)** jointly launched a $100 million equity fund aimed at supporting eligible local industrial entities. Meanwhile, **MTN Nigeria** cleared its outstanding foreign exchange debt obligations, unlocking a new capital investment phase.
-* **Corporate Earnings & Regulatory Summits**: **HBM Nigeria** posted a 31% increase in revenue and a 57% rise in profit for H1 2026. On the regulatory front, the **Financial Reporting Council (FRC) of Nigeria** announced an audit summit focusing on Artificial Intelligence and financial reporting integrity.
+* **Public Sector Procurement Policy**: The Federal Government of Nigeria has prohibited ministries from awarding contracts without secured funding to prevent the accumulation of abandoned projects across the country.
+* **Financial & Insurance Sector Capitalization**: The National Insurance Commission (NAICOM) concluded a recapitalization exercise for 43 insurance companies to enforce minimum regulatory capital thresholds.
+* **Taxation Regulation**: The Nigeria Revenue Service (NRS) issued updated regulatory guidelines governing the taxation of virtual assets.
+* **Macroeconomic Revenue**: Federal crude oil export earnings reached N24 trillion over a six-month period.
+* **State Economic Governance**: The Benue State Government unveiled its economic transformation roadmap and inaugurated its advisory council.
+* **Corporate Alliances & Performance**: Payaza partnered with Lebara Nigeria to expand digital payment infrastructure; Axxela logged 10 million Lost Time Injury (LTI)-free man-hours and achieved dual credit rating milestones.
 
 ### High Risk Alerts
 
-* **Alleged Coup Funding & Political Corruption**: Investigative reports allege that former Governor Sylva illegally raised and diverted funds to bankroll a coup attempt, representing severe political exposure and money laundering risks.
-* **N70 Billion Budget Forgery at OSOPADEC**: Formal petitions have been submitted urging the **Economic and Financial Crimes Commission (EFCC)** to investigate an alleged N70 billion budget forgery scheme within the **Ondo State Oil Producing Areas Development Commission (OSOPADEC)**.
-* **Terrorism Financing Asset Freezes**: Financial regulators and security authorities have initiated targeted freezes on bank accounts linked to identified terrorism financiers.
-* **Institutional Fraud & Regulatory Validation**: Legal filings on behalf of an individual named Adeyemi detail allegations that key federal agencies facilitated and validated a fake investment/corporate certificate (PFIPC).
-* **Insurance Sector Liquidation Risk**: While 43 insurance companies successfully met mandatory capital thresholds, 10 insurers failed the recapitalization hurdle and face imminent liquidation.
+There are no high-risk alerts or critical compliance red flags identified in the provided dataset; all reported events currently represent low risk scores (0–20).
 
 ### Beneficial Ownership & PSC Disclosures
 
-No persons with significant control (PSC) or beneficial ownership disclosures were reported in the provided intelligence dataset.
+There are no Persons with Significant Control (PSC) or beneficial ownership disclosures present in the provided dataset.
 
 ### Procurement & Board Changes
 
-* **Odu’a Investment Chairman Inauguration**: **Odu’a Investment** officially inaugurated **Kasali** as its new Chairman. The board has set a strategic objective to scale corporate assets to N1 trillion by 2030.
-* **NPCA Nominee Unveiling**: The **Nigerian Police Complaint Agency (NPCA)** announced its inaugural list of nominees for key internal leadership positions.
-* **Procurement Notices**: No specific public procurement tenders or contract awards were recorded in this reporting period.
+* **Procurement Governance**: The Federal Government issued a binding directive barring Ministries, Departments, and Agencies (MDAs) from issuing unfunded procurement contracts.
+* **Institutional & Leadership Appointments**:
+  * **University of Lagos (UNILAG)**: Professor Oyewunmi was appointed Dean of the Faculty of Law, succeeding Professor Sanni following his resignation.
+  * **Benue State Economic Advisory Council**: Okigbo was appointed as a member of the newly formed council.
+  * **International Crisis Group**: Comfort Ero was appointed as Head of the organization.
+  * **All Progressives Congress (APC)**: Endorsed Ali Isa as the party's gubernatorial running mate for Borno State ahead of the 2027 elections.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
