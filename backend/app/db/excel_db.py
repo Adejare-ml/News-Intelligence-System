@@ -27,6 +27,33 @@ SHEETS_CONFIG = {
     "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Content"]
 }
 
+def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, Any]:
+    """Works out how to bring an existing header row up to the target schema.
+
+    Rows are remapped by column *name*, never by position: new columns get
+    inserted mid-schema (Board Role lands at index 3, ahead of Percentage), so
+    copying positionally would silently shift every value one column left.
+    """
+    existing = [str(c).strip() for c in existing]
+    added = [c for c in target if c not in existing]
+    removed = [c for c in existing if c and c not in target]
+    index_of = {name: i for i, name in enumerate(existing)}
+
+    def remap(row: List[Any]) -> List[Any]:
+        out = []
+        for col in target:
+            i = index_of.get(col)
+            out.append(row[i] if i is not None and i < len(row) else "")
+        return out
+
+    return {
+        "needs_migration": existing != target,
+        "added": added,
+        "removed": removed,
+        "remap": remap,
+    }
+
+
 def retry_google_sheets_op(func, max_retries: int = 3, initial_delay: float = 2.0):
     """Executes a Google Sheets operation with exponential backoff retry logic."""
     import time
@@ -120,8 +147,54 @@ class SheetsDatabase:
                         ws = self.spreadsheet.add_worksheet(title=sheet_name, rows="100", cols=str(len(columns)))
                         ws.append_row(columns)
                         logger.info(f"Created Google Sheet tab: '{sheet_name}'")
+                    else:
+                        self._migrate_worksheet_headers(worksheets[sheet_name], sheet_name, columns)
             except Exception as e:
                 logger.error(f"Failed to initialize Google Sheets tabs: {e}")
+
+    def _migrate_worksheet_headers(self, ws, sheet_name: str, columns: List[str]):
+        """Brings an existing tab up to the current schema, preserving its rows.
+
+        Without this, a schema change means rows are appended positionally
+        against a stale header and every value lands under the wrong column.
+        """
+        try:
+            values = ws.get_all_values()
+            existing_header = values[0] if values else []
+
+            # Blank tab: just write the header
+            if not existing_header or not any(h.strip() for h in existing_header):
+                ws.update(values=[columns], range_name="A1")
+                logger.info(f"Wrote header row for empty tab '{sheet_name}'")
+                return
+
+            plan = plan_header_migration(existing_header, columns)
+            if not plan["needs_migration"]:
+                return
+
+            logger.info(
+                f"Migrating tab '{sheet_name}': +{plan['added']} -{plan['removed']}"
+            )
+
+            data_rows = values[1:]
+            migrated = [plan["remap"](r) for r in data_rows]
+
+            if ws.col_count < len(columns):
+                ws.add_cols(len(columns) - ws.col_count)
+
+            def _do_migrate():
+                ws.clear()
+                ws.update(values=[columns] + migrated, range_name="A1")
+
+            retry_google_sheets_op(_do_migrate)
+            self._cache.pop(sheet_name, None)
+            logger.info(
+                f"Migrated '{sheet_name}' to {len(columns)} columns, "
+                f"{len(migrated)} rows preserved"
+            )
+        except Exception as e:
+            # A failed migration must not take the whole run down
+            logger.error(f"Header migration failed for '{sheet_name}': {e}")
 
     # ==========================================
     # GENERIC READING & WRITING HELPERS
