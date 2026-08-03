@@ -72,6 +72,9 @@ jobs:
 
       - name: Deploy static folder to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
+        with:
+          folder: backend/app/static
+          branch: gh-pages
 
       # A red run is only useful if someone sees it. The 2026-07-30 outage ran
       # for days unnoticed. Reuses a single open issue so repeated failures
@@ -108,6 +111,3 @@ jobs:
               --label pipeline-failure \
               --body "$BODY"
           fi
-        with:
-          folder: backend/app/static
-          branch: gh-pages
