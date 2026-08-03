@@ -707,9 +707,13 @@ main { display: flex; flex-direction: column; gap: 64px; }
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--hairline);
-    flex: 0 0 auto;
-    min-width: 104px;
-    max-width: 180px;
+    /* Share the row and wrap long entity names rather than each node sizing
+       to its own content: fixed-width nodes pushed a three-step chain past the
+       card edge, so the operating company was clipped on every card that had
+       an intermediate vehicle. */
+    flex: 1 1 0;
+    min-width: 88px;
+    overflow-wrap: anywhere;
 }
 
 .chain-title { font-size: 11.5px; font-weight: 600; color: #e2e8f0; line-height: 1.3; }

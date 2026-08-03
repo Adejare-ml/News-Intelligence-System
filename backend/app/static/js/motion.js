@@ -41,20 +41,62 @@
             return null;
         }
 
+        var pending = [];
+
+        function reveal(el) {
+            el.classList.add("is-revealed");
+            var i = pending.indexOf(el);
+            if (i !== -1) pending.splice(i, 1);
+            observer.unobserve(el);
+        }
+
         var observer = new global.IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (!entry.isIntersecting) return;
-                entry.target.classList.add("is-revealed");
                 // One-shot: re-animating on every scroll-by is the single most
                 // common way this pattern becomes annoying.
-                observer.unobserve(entry.target);
+                reveal(entry.target);
             });
         }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
 
         var nodes = scope.querySelectorAll("[data-reveal]");
         for (var i = 0; i < nodes.length; i++) {
+            pending.push(nodes[i]);
             observer.observe(nodes[i]);
         }
+
+        /**
+         * Safety sweep: reveal anything already at or above the fold.
+         *
+         * IntersectionObserver only delivers an entry when the intersection
+         * *changes*. A jump-scroll — a deep link, find-in-page, a restored
+         * scroll position, or a programmatic scrollTo — can move an element
+         * from "below the viewport" to "above the viewport" without it ever
+         * being intersecting on a sampled frame. No entry fires, and the
+         * element stays at opacity 0 permanently. That is a content-hiding
+         * failure, not a missed animation, so it needs its own guard.
+         */
+        var sweepQueued = false;
+        function sweep() {
+            sweepQueued = false;
+            var limit = global.innerHeight * 0.92;
+            for (var i = pending.length - 1; i >= 0; i--) {
+                if (pending[i].getBoundingClientRect().top <= limit) reveal(pending[i]);
+            }
+            if (!pending.length) {
+                global.removeEventListener("scroll", queueSweep);
+                global.removeEventListener("resize", queueSweep);
+            }
+        }
+        function queueSweep() {
+            if (sweepQueued) return;
+            sweepQueued = true;
+            global.requestAnimationFrame(sweep);
+        }
+
+        global.addEventListener("scroll", queueSweep, { passive: true });
+        global.addEventListener("resize", queueSweep);
+        queueSweep();
 
         var groups = scope.querySelectorAll("[data-reveal-stagger]");
         for (var g = 0; g < groups.length; g++) {

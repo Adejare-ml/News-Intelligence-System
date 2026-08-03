@@ -119,6 +119,34 @@ document.addEventListener("DOMContentLoaded", () => {
             .trim();
     }
 
+    /**
+     * Collapse near-duplicate stories by normalized title.
+     *
+     * Strips the trailing " - Publication Name" that Google News RSS appends,
+     * punctuation and casing, so the same story arriving from two feeds
+     * resolves to one key. The highest-risk copy wins, since that is the one a
+     * reader should see. This is a display-layer guard; proper near-duplicate
+     * clustering belongs in the pipeline.
+     */
+    function dedupeByTitle(articles) {
+        const seen = new Map();
+        (articles || []).forEach(a => {
+            if (!a) return;
+            const key = String(a.title || "")
+                .replace(/\s+[-–—|]\s+[^-–—|]{2,40}$/, "")
+                .toLowerCase()
+                .replace(/[^a-z0-9 ]/g, "")
+                .replace(/\s+/g, " ")
+                .trim();
+            if (!key) return;
+            const existing = seen.get(key);
+            if (!existing || (a.risk_score || 0) > (existing.risk_score || 0)) {
+                seen.set(key, a);
+            }
+        });
+        return [...seen.values()];
+    }
+
     function normalizeArticle(art) {
         if (!art) return null;
         const score = art["Risk Score"] !== undefined ? parseInt(art["Risk Score"]) : (art.risk_score || 10);
@@ -171,7 +199,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 // Elevated Risk items (score >= 25 or Medium/High/Critical level)
                 const elevatedArticles = allArticles.filter(a => (a.risk_score >= 25 || ["Medium", "High", "Critical"].includes(a.risk_level)));
-                const latest_alerts = elevatedArticles.slice(0, 10);
+                // The same story is frequently ingested from several feeds and
+                // analyzed more than once, producing near-identical records
+                // with different ids and slightly different LLM summaries. That
+                // is invisible in a long feed but glaring in a ten-item alert
+                // band, where it showed the same headline four times. Collapse
+                // on a normalized title, keeping the highest-scoring copy.
+                const latest_alerts = dedupeByTitle(elevatedArticles).slice(0, 10);
                 const total_alerts = elevatedArticles.length;
                 
                 // Group by Category
