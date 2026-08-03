@@ -12,6 +12,14 @@ on:
 permissions:
   contents: write
 
+# Serialize Pages deploys so two overlapping pushes cannot race on gh-pages.
+# Deliberately a different group from the scheduler: sharing one would let a
+# docs deploy supersede a queued ingestion run and silently skip a cycle.
+# Here the newest deploy wins, so cancelling an in-progress one is safe.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

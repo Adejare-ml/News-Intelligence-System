@@ -12,6 +12,15 @@ on:
 permissions:
   contents: write
 
+# Serialize runs: two overlapping runs both commit to main, and the slower one
+# is rejected as non-fast-forward (a manual trigger near a cron slot did exactly
+# this on run 30806786258). cancel-in-progress stays false because a cancelled
+# run would abandon articles mid-analysis after their LLM quota was already
+# spent, and the Sheets writes are not transactional.
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
