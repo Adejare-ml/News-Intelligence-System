@@ -21,6 +21,34 @@ DEFAULT_GEMINI_MODEL = "gemini-flash-latest"
 OLLAMA_CLOUD_HOST = "https://ollama.com"
 
 
+def build_report_prompt(raw_data_string: str) -> str:
+    """Single source of truth for the executive report prompt.
+
+    Shared by every provider in the cascade so the report reads the same
+    regardless of which engine produced it.
+    """
+    return (
+        "You are a Senior Intelligence Analyst specializing in Nigerian corporate "
+        "transparency, beneficial ownership (PSC) disclosures, and MDAs.\n"
+        f"Raw Data:\n{raw_data_string}\n\n"
+        "Generate a professional, well-structured executive Markdown summary report "
+        "with these sections:\n"
+        "### Key Developments\n"
+        "### High Risk Alerts\n"
+        "### Beneficial Ownership & PSC Disclosures\n"
+        "   For this section, report any person with significant control identified in "
+        "the data. For each, state the holder, the company, the stated percentage, and "
+        "whether control is direct or indirect - naming the intermediate holding vehicle "
+        "where one is used. Flag any PEP (politically exposed person) status and any "
+        "disclosure whose regulatory filing is still pending, since concealed or "
+        "unfiled control is the core corruption risk signal. If the data contains no "
+        "PSC disclosures, say so plainly in one line - do not invent holders, "
+        "percentages, or filing references.\n"
+        "### Procurement & Board Changes\n\n"
+        "Output only clean, raw markdown text without wrapping backticks."
+    )
+
+
 class LLMCascadeError(RuntimeError):
     """Raised when every configured LLM provider fails and heuristic fallback is disabled.
 
@@ -50,14 +78,21 @@ Your task is to analyze the provided article title and text, and return a clean,
      {"name": "Person Name", "position": "Job Title/Role", "organization": "Associated Organization", "event": "appointment" | "resignation" | "other"}
   ],
   "significant_control": [
-     {
-       "name": "Person Name",
-       "organization": "Associated Company",
-       "nature_of_control": "e.g. Ownership of shares 25-50%, Ownership of shares >50%, Voting rights >25%, Right to appoint or remove directors, Significant influence or control",
-       "percentage": "e.g. 30%, or null if not stated",
-       "change_type": "gained" | "lost" | "updated" | "disclosed",
-       "previous_holder": "Name of prior PSC if replaced, or null"
-     }
+      {
+        "name": "Person Name",
+        "organization": "Associated Company",
+        "nature_of_control": "e.g. Ownership of shares 25-50%, Ownership of shares >50%, Voting rights >25%, Right to appoint or remove directors, Significant influence or control",
+        "board_role": "Board or executive title held at the company (e.g. Executive Chairman, Group CEO), or null if the person holds no board position",
+        "percentage": "e.g. 30%, or null if not stated",
+        "direct_percentage": "Direct ownership % or null",
+        "indirect_percentage": "Indirect ownership % or null",
+        "intermediate_entities": "Intermediate holding company or investment vehicle (e.g. Heirs Holdings Ltd) or null",
+        "change_type": "gained" | "lost" | "updated" | "disclosed",
+        "previous_holder": "Name of prior PSC if replaced, or null",
+        "pep_status": "Yes" | "No" | "Former Official",
+        "risk_level": "Critical" | "Elevated" | "Standard",
+        "regulatory_filing_ref": "Regulatory filing ref number (e.g. CAC/PSC/2026/0891 or SEC disclosure) or null"
+      }
   ],
   "procurement": {
      "agency": "Awarding Agency Name",
@@ -189,7 +224,7 @@ class LLMService:
             genai.configure(api_key=settings.GEMINI_API_KEY)
             
             model = genai.GenerativeModel(settings.GEMINI_MODEL or DEFAULT_GEMINI_MODEL)
-            prompt = f"You are a Senior Intelligence Analyst. Here is the raw JSON data of today's news records involving Nigerian companies, MDAs, and regulatory bodies.\n\nRaw Data:\n{raw_data_string}\n\nPlease generate a highly professional, well-structured executive Markdown summary report. Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. Do NOT wrap in ```markdown blocks, just output the raw markdown text."
+            prompt = build_report_prompt(raw_data_string)
             
             response = model.generate_content(
                 prompt,
@@ -209,13 +244,7 @@ class LLMService:
                 base_url="https://integrate.api.nvidia.com/v1",
                 api_key=settings.NVIDIA_API_KEY
             )
-            prompt = (
-                "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
-                f"Raw Data:\n{raw_data_string}\n\n"
-                "Generate a professional, well-structured executive Markdown summary report. "
-                "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
-                "Output only clean, raw markdown text without wrapping backticks."
-            )
+            prompt = build_report_prompt(raw_data_string)
             primary = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
             fallback = settings.NVIDIA_MODEL_FALLBACK or DEFAULT_NVIDIA_MODEL_FALLBACK
             try:
@@ -246,13 +275,7 @@ class LLMService:
             api_key = settings.OLLAMA_API_KEY or "ollama"
             client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=15.0)
             
-            prompt = (
-                "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
-                f"Raw Data:\n{raw_data_string}\n\n"
-                "Generate a professional, well-structured executive Markdown summary report. "
-                "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
-                "Output only clean, raw markdown text without wrapping backticks."
-            )
+            prompt = build_report_prompt(raw_data_string)
             response = client.chat.completions.create(
                 model=settings.OLLAMA_MODEL,
                 messages=[
@@ -270,13 +293,7 @@ class LLMService:
         try:
             from openai import OpenAI
             client = OpenAI(api_key=settings.OPENAI_API_KEY)
-            prompt = (
-                "You are a Senior Intelligence Analyst specializing in Nigerian corporate transparency, PSC disclosures, and MDAs.\n"
-                f"Raw Data:\n{raw_data_string}\n\n"
-                "Generate a professional, well-structured executive Markdown summary report. "
-                "Include sections for 'Key Developments', 'High Risk Alerts', and 'Procurement & Board Changes'. "
-                "Output only clean, raw markdown text without wrapping backticks."
-            )
+            prompt = build_report_prompt(raw_data_string)
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
