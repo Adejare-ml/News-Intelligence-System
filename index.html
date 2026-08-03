@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GitHub Pages cannot set response headers, so the policy is declared
+         here; this is the only CSP protecting the primary deployment.
+         (frame-ancestors is header-only and intentionally omitted.) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>AURA // AI News Intelligence System</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,16 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css?v=3.0">
-    <!-- Chart.js and Vis.js CDN with fallback -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"></script>
-    <script>
-        if (typeof vis === 'undefined') {
-            document.write('<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"><\/script>');
-        }
-    </script>
+    <!-- Charting & graph libraries: version-pinned with Subresource Integrity
+         so a compromised or hijacked CDN release cannot execute here -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
+            integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js"
+            integrity="sha384-yxKDWWf0wwdUj/gPeuL11czrnKFQROnLgY8ll7En9NYoXibgg3C6NK/UDHNtUgWJ"
+            crossorigin="anonymous"></script>
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@1.28.0/dist/umd/lucide.min.js"
+            integrity="sha384-VrnzGPiSyQxm3mI2VhlssyR85zugSHtxMkgO42qV3wUAbNk1oRdZkCWjXKOhuVu6"
+            crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="glow-bg"></div>
@@ -237,7 +244,7 @@
                 </div>
                 
                 <div class="modal-actions">
-                    <a id="modal-source-link" href="#" target="_blank" class="btn btn-secondary">
+                    <a id="modal-source-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                         <i data-lucide="external-link"></i> View Original Article
                     </a>
                 </div>
@@ -282,23 +289,86 @@
     </div>
     <!-- Persons with Significant Control (PSC) Modal -->
     <div id="psc-modal" class="modal-overlay">
-        <div class="modal-content glass reports-modal-content" style="max-width: 900px;">
-            <div class="modal-header">
-                <h2>Persons with Significant Control (PSC) Transparency</h2>
-                <button class="close-modal-btn" id="close-psc-modal" aria-label="Close PSC Modal"><i data-lucide="x"></i></button>
-            </div>
-            <div style="padding: 20px; overflow-y: auto; max-height: 75vh;">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; gap:10px;">
-                    <p style="font-size: 13px; color: var(--text-muted); flex:1;">
-                        Tracked beneficial owners owning >25% shares, holding >25% voting rights, or controlling board appointments across Nigerian counterparties.
-                    </p>
-                    <div class="search-box" style="width:260px;">
-                        <input type="text" id="psc-search-input" placeholder="Search person or company..." aria-label="Search PSC">
+        <div class="modal-content glass reports-modal-content" style="max-width: 1050px;">
+            <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 15px;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div style="width:36px; height:36px; border-radius:8px; background:rgba(239,68,68,0.15); display:flex; align-items:center; justify-content:center; color:#ef4444;">
+                        <i data-lucide="shield-alert" style="width:20px; height:20px;"></i>
+                    </div>
+                    <div>
+                        <h2 style="margin:0; font-size:18px; font-weight:700; color:#f9fafb;">Persons with Significant Control (PSC) Transparency</h2>
+                        <span style="font-size:12px; color:var(--text-muted);">Ultimate Beneficial Ownership (UBO), Control Lineage & Regulatory Disclosures</span>
                     </div>
                 </div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <button class="btn btn-secondary" id="export-psc-csv-btn" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:6px;">
+                        <i data-lucide="download" style="width:14px; height:14px;"></i> Export CSV
+                    </button>
+                    <button class="btn btn-secondary" id="export-psc-report-btn" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:6px;">
+                        <i data-lucide="file-text" style="width:14px; height:14px;"></i> Compliance Brief
+                    </button>
+                    <button class="close-modal-btn" id="close-psc-modal" aria-label="Close PSC Modal"><i data-lucide="x"></i></button>
+                </div>
+            </div>
+            <div style="padding: 20px; overflow-y: auto; max-height: 78vh;">
+                <!-- Executive Analytics Summary Cards -->
+                <div class="psc-kpi-bar" id="psc-kpi-bar">
+                    <div class="psc-kpi-card">
+                        <span class="kpi-label">Tracked PSCs</span>
+                        <div class="kpi-value" id="kpi-total-psc">7</div>
+                        <span class="kpi-subtext">Beneficial Owners</span>
+                    </div>
+                    <div class="psc-kpi-card">
+                        <span class="kpi-label">Avg Controlling Stake</span>
+                        <div class="kpi-value" id="kpi-avg-stake">61.0%</div>
+                        <span class="kpi-subtext">Equity & Voting Share</span>
+                    </div>
+                    <div class="psc-kpi-card">
+                        <span class="kpi-label">Indirect Holdings</span>
+                        <div class="kpi-value" id="kpi-indirect-cnt">5</div>
+                        <span class="kpi-subtext">Via Investment Vehicles</span>
+                    </div>
+                    <div class="psc-kpi-card highlight-risk">
+                        <span class="kpi-label">PEP / Critical Flagged</span>
+                        <div class="kpi-value" id="kpi-pep-cnt">1</div>
+                        <span class="kpi-subtext">Enhanced Due Diligence</span>
+                    </div>
+                </div>
+
+                <!-- Filter Controls & Search -->
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; gap:12px; flex-wrap:wrap;">
+                    <div class="psc-filter-chips" id="psc-filter-chips">
+                        <button class="psc-chip active" data-filter="all">All Records</button>
+                        <button class="psc-chip" data-filter="majority">Majority Stake (>50%)</button>
+                        <button class="psc-chip" data-filter="indirect">Indirect Vehicle</button>
+                        <button class="psc-chip" data-filter="pep">PEP / Risk Flagged</button>
+                        <button class="psc-chip" data-filter="board">Board Executives</button>
+                    </div>
+                    <div class="search-box" style="width:260px;">
+                        <input type="text" id="psc-search-input" placeholder="Search person, company, holding..." aria-label="Search PSC">
+                    </div>
+                </div>
+
+                <!-- Main PSC Table Container -->
                 <div id="psc-table-container">
                     <div class="loading-placeholder"><p>Loading PSC Records...</p></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PSC Deep-Dive / UBO Dossier Modal Drawer -->
+    <div id="psc-dossier-modal" class="modal-overlay" style="z-index: 1100;">
+        <div class="modal-content glass" style="max-width: 750px; border-left: 4px solid var(--primary);">
+            <div class="modal-header">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <i data-lucide="file-search" style="color:var(--primary); width:20px; height:20px;"></i>
+                    <h3 id="dossier-title" style="margin:0; font-size:16px; font-weight:700;">Beneficial Ownership Dossier</h3>
+                </div>
+                <button class="close-modal-btn" id="close-psc-dossier-modal" aria-label="Close Dossier"><i data-lucide="x"></i></button>
+            </div>
+            <div id="psc-dossier-body" style="padding: 20px; overflow-y: auto; max-height: 75vh;">
+                <!-- Dynamically populated dossier content -->
             </div>
         </div>
     </div>
