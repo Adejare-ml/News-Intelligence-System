@@ -1514,3 +1514,93 @@ div.vis-tooltip {
     .psc-demo-banner { border-color: #999; color: #333; }
     .btn, .close-modal-btn, .graph-toolbar { display: none !important; }
 }
+
+/* ==========================================================
+   RESPONSIVE — the header's button row is 728px wide and did
+   not wrap, forcing the whole document to 936px and side-
+   scrolling every page on a phone.
+   ========================================================== */
+
+@media (max-width: 900px) {
+    .container { padding: 12px; gap: 14px; }
+
+    .dashboard-header {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .system-status {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Live-status pills are decorative next to the actions */
+    .system-status .status-item { font-size: 12px; }
+
+    .system-status .btn {
+        flex: 1 1 auto;
+        min-width: 140px;
+        justify-content: center;
+    }
+
+    .workspace-panel { padding: 16px; }
+
+    .panel-header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-box,
+    .search-box:focus-within { width: 100%; }
+
+    .feed-filters-row { flex-wrap: wrap; }
+
+    .feed-meta-row {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .split-insights { grid-template-columns: 1fr; }
+
+    .stats-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+
+    /* Wide content scrolls inside its own container, never the page */
+    #psc-table-container,
+    .psc-kpi-bar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #psc-table-container table { min-width: 780px; }
+
+    .modal-content {
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px);
+        margin: 12px;
+    }
+
+    .reports-split-view { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .logo-text h1 { font-size: 20px; }
+
+    .system-status .btn {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+
+    .stat-card { padding: 14px; gap: 12px; }
+
+    .stat-info h3 { font-size: 22px; }
+
+    .graph-legend {
+        position: static;
+        margin-top: 10px;
+        justify-content: center;
+    }
+}

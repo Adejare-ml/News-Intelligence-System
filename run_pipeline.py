@@ -30,6 +30,31 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "
 # at that point the providers are down and continuing would only burn quota.
 MAX_CONSECUTIVE_LLM_FAILURES = 3
 
+# Publications are the source of an article, not participants in it. Models
+# still surface them as organizations often enough to pollute the knowledge
+# graph, so they are dropped defensively as well as discouraged in the prompt.
+NEWS_OUTLET_MARKERS = (
+    "guardian", "premium times", "punch", "vanguard", "daily post", "dailypost",
+    "thisday", "this day", "nairametrics", "channels tv", "channels television",
+    "leadership newspaper", "the nation", "businessday", "business day", "tribune",
+    "sahara reporters", "peoples gazette", "the cable", "thecable", "legit.ng",
+    "reuters", "bloomberg", "associated press", "al jazeera", "bbc", "cnn",
+)
+
+# Navigation furniture scraped from article pages.
+NON_ENTITY_TERMS = {
+    "archives", "archive", "home", "newsletter", "advertisement", "sponsored",
+    "read more", "subscribe", "latest news", "breaking news", "news",
+}
+
+
+def is_publication_or_furniture(name: str) -> bool:
+    """True when an extracted organization is really the publication or page chrome."""
+    cleaned = " ".join((name or "").replace("\xa0", " ").split()).lower()
+    if not cleaned or cleaned in NON_ENTITY_TERMS:
+        return True
+    return any(marker in cleaned for marker in NEWS_OUTLET_MARKERS)
+
 def main():
     parser = argparse.ArgumentParser(description="AI News Intelligence Serverless Pipeline")
     parser.add_argument("--seed", action="store_true", help="Seed the database with high-fidelity mock events")
@@ -176,7 +201,12 @@ def run_pipeline(seed: bool = False):
         for org in analysis.get("organizations", []):
             name = org.get("name")
             org_type = org.get("type", "company")
-            
+
+            # Drop the reporting publication and page furniture
+            if is_publication_or_furniture(name):
+                logger.info(f"Skipping non-entity organization: '{name}'")
+                continue
+
             if org_type == "company":
                 db.add_company({
                     "Company": name,
