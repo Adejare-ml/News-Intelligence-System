@@ -2,10 +2,10 @@
 
 **Repo:** `Adejare-ml/News-Intelligence-System` · **Date:** 2026-08-03
 **Working dir:** `C:\Users\adelu\OneDrive\Documents\news intelligence`
-**Current branch:** `main` at `274178e`, synced with origin · **no open PRs**
-**Working tree:** clean except untracked `.claude/`, `HANDOFF.md`, and `backend/app/db/excel_db.xlsx` (local test artifact)
+**Current branch:** `main` at `2be20e8`, synced with origin · **no open PRs**
+**Working tree:** clean except untracked `.claude/` (local launch config) and `backend/app/db/excel_db.xlsx` (local test artifact)
 
-**PRs merged this session:** #10 (cascade fail-red), #11 (openai/httpx root cause), #12 (feed + graph), #13 (Gemini model), #14 (modal/alerts/chart/search), #15 (security alerts), #16 (hardening), #17 (PSC depth), #18 (workflow concurrency).
+**PRs merged this session:** #10 (cascade fail-red), #11 (openai/httpx root cause), #12 (feed + graph), #13 (Gemini model), #14 (modal/alerts/chart/search), #15 (security alerts), #16 (hardening), #17 (PSC depth), #18 (workflow concurrency), #19 (this handoff), #20 (README rewrite).
 
 ---
 
@@ -37,6 +37,8 @@ Verification throughout used a local static server (`.claude/launch.json`, `pyth
 
 **Production verification (run `30806786258`, and the concurrent cron run `30806572937`).** A manual run was triggered on the PSC merge to prove the two remaining unknowns. Both were confirmed in the published `backend/app/static/data/report_latest.md`: the footer reads `*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*`, proving the `gemini-flash-latest` alias from PR #13 resolves and Gemini has reclaimed primary position in the cascade; and the new section renders as `### Beneficial Ownership & PSC Disclosures` followed by "No persons with significant control (PSC) or beneficial ownership disclosures were reported in the provided intelligence dataset." That empty-but-honest output is the designed behaviour, since the prompt instructs the model to say so plainly rather than invent holders, percentages, or filing references. The full cascade is therefore verified live: Gemini for reports, Ollama for article analysis, NVIDIA proven as working fallback.
 
+**PR #20 (merged, `2be20e8`) — README rewritten to Option A.** The README documented a FastAPI + PostgreSQL + pgvector + Celery + Redis service, none of which produces the live dashboard. Option A was chosen: the serverless design (Actions cron → `run_pipeline.py` → Google Sheets → static JSON → GitHub Pages) is now presented as the real architecture, with a stated rationale for why a cron runner and a spreadsheet suit four short bursts a day better than a live service. The rewrite documents the LLM cascade order and the fail-red behaviour including why silent degradation was removed; adds a data-model section noting that column order in `SHEETS_CONFIG` is authoritative because rows append positionally; replaces a configuration table that had listed `DATABASE_URL`/`REDIS_URL` as required while omitting every LLM and Sheets variable actually read; and demotes the Docker/API stack to a clearly-labelled optional section stating plainly that no login endpoint exists. Badges dropped PostgreSQL/Docker as headline technologies in favour of Actions and Pages, and link the live dashboard at `https://adejare-ml.github.io/News-Intelligence-System/`. Claims were verified rather than asserted: all referenced paths exist, the documented preview command was executed and returned HTTP 200 for `index.html` and `data/latest.json`, and the test count, Python version, cron times and config defaults were read from source. The project is now described specifically as tracking Nigerian corporate ownership transparency rather than generic news intelligence — a deliberate narrowing that matches the system prompt and PSC schema, flagged to the user as reversible.
+
 **PR #18 (merged, `274178e`) — workflow concurrency.** Run `30806786258` went red with `error: failed to push some refs`. The cause was a race, not a pipeline fault: the cron run `30806572937` started 10:41:42 and the manual run started 10:44:58; both completed their pipeline steps successfully, the cron run pushed `fff7069` at 10:55:04, and the manual run's push 33 seconds later was rejected as non-fast-forward from a now-stale checkout. Only the second run's commit and its gh-pages deploy were lost; no data was lost because both runs wrote to Google Sheets and the JSON exports regenerate from the sheet each run. `news_scheduler.yml` gained `concurrency: {group: news-pipeline, cancel-in-progress: false}` — cancellation is deliberately off because killing a run mid-analysis abandons articles whose LLM quota was already spent and the Sheets writes are not transactional. `deploy_pages.yml` gained a separate `concurrency: {group: pages-deploy, cancel-in-progress: true}`; both workflows write the `gh-pages` branch, but the groups were kept distinct because GitHub keeps only one pending run per group, so a shared group would let a docs deploy supersede a queued ingestion run and silently skip a collection cycle.
 
 ---
@@ -50,7 +52,7 @@ Verification throughout used a local static server (`.claude/launch.json`, `pyth
   - Delete junk rows from 2026-07-30 onward in the Articles tab; add `Engine` as a header in the next empty column (column J).
   - Delete the 7 seeded rows in the Significant Control tab (they no longer regenerate unless `SEED_DEMO_PSC=true`). This is now a prerequisite for the header replacement described above, not just a cleanup preference.
   - Decide the Ollama secrets: point `OLLAMA_HOST`/`OLLAMA_API_KEY` at the real account or delete both. Note: the green run proved `OLLAMA_API_KEY` currently works.
-  - Choose the README story — Option A: present the serverless architecture (Actions + Sheets + Pages + LLM cascade) as the real design and demote Docker/Postgres to optional; Option B: make the Docker path real by wiring routes to Postgres and adding a login route.
+  - ~~Choose the README story.~~ **Done** — Option A was chosen and shipped in PR #20.
 - **No login endpoint exists.** `tokenUrl` in `backend/app/core/security.py` points at `/auth/login`, which was never implemented, so tokens cannot be legitimately obtained in Docker/API mode.
 - **`backend/app/db/excel_db.xlsx`** is an untracked local test artifact; adding it to `.gitignore` was offered and not done.
 - Repo description, topics, and MIT license were verified correct — that checklist item is complete.
@@ -66,5 +68,4 @@ Verification throughout used a local static server (`.claude/launch.json`, `pyth
 4. Watch the next scheduled run (07:00 / 13:00 / 17:00 / 23:00 UTC) — it is the first under the new concurrency group and the first that can write enriched PSC fields. Confirm it goes green and that the `Significant Control` tab receives correctly aligned columns.
 5. Decide how to persist `Timeline` (JSON-encoded column vs. a separate sheet tab) before adding it to `SHEETS_CONFIG`.
 6. Decide the Ollama secrets: point `OLLAMA_HOST`/`OLLAMA_API_KEY` at the real account or delete both. Note the green run proved `OLLAMA_API_KEY` currently works.
-7. Choose the README story (Option A serverless-as-real vs. Option B make Docker real).
-8. Before any further code changes, run `python -m pytest tests/ -q` (expect 32 passing) and verify the frontend locally via the preview server at `http://localhost:8017/index.html?static=1`.
+7. Before any further code changes, run `python -m pytest tests/ -q` (expect 32 passing) and verify the frontend locally via the preview server at `http://localhost:8017/index.html?static=1`.
