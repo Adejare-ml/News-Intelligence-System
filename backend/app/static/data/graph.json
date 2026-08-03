@@ -533,6 +533,18 @@
       "label": "Bank of Industry",
       "type": "company",
       "risk": "Low"
+    },
+    {
+      "id": "8a7b7af09965",
+      "label": "Ebonyi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
     }
   ],
   "edges": [
@@ -810,6 +822,12 @@
       "id": "ab9042ebec62",
       "from": "8aeb2e3bdb2c",
       "to": "c25544734c7e",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "443f6e5e7f92",
+      "from": "334c4a4c42fd",
+      "to": "8a7b7af09965",
       "label": "Contract Awardee"
     }
   ]
