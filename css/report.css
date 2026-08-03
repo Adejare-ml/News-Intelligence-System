@@ -970,3 +970,94 @@ main { display: flex; flex-direction: column; gap: 64px; }
 .motion-paused .alert-siren {
     animation: none !important;
 }
+
+
+/* ==========================================================================
+   Secondary motion.
+
+   Everything here is gated behind prefers-reduced-motion and the header's
+   pause control, and none of it animates layout properties -- transform and
+   opacity only, so each effect stays on the compositor.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+    /* Staggered entrances. app.js and psc-report.js already set --stagger on
+       each card; this is what finally uses it. */
+    .register-card,
+    .alert-band .alert-item {
+        animation: cardRise 520ms var(--ease-out) backwards;
+        animation-delay: calc(var(--stagger, 0) * 45ms);
+    }
+
+    @keyframes cardRise {
+        from { opacity: 0; transform: translateY(10px) scale(0.995); }
+        to   { opacity: 1; transform: none; }
+    }
+
+    /* Disclosure bands wipe in from their accent rule, so the eye is led from
+       the colour key to the count. */
+    .band-bar { transform-origin: 50% 0; animation: barGrow 700ms var(--ease-out) backwards; }
+    .band:nth-child(2) .band-bar { animation-delay: 60ms; }
+    .band:nth-child(3) .band-bar { animation-delay: 120ms; }
+    .band:nth-child(4) .band-bar { animation-delay: 180ms; }
+    .band:nth-child(5) .band-bar { animation-delay: 240ms; }
+
+    @keyframes barGrow {
+        from { transform: scaleY(0); }
+        to   { transform: scaleY(1); }
+    }
+
+    /* The eyebrow dot breathes, matching the ingestion pulse in the header. */
+    .eyebrow-dot { animation: dotBreathe 3.2s ease-in-out infinite; }
+
+    @keyframes dotBreathe {
+        0%, 100% { opacity: 0.55; transform: scale(0.85); }
+        50%      { opacity: 1;    transform: scale(1.15); }
+    }
+
+    /* Nav underline grows from the centre on hover. */
+    .nav-link { position: relative; }
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 14px; right: 14px; bottom: 4px;
+        height: 1px;
+        background: var(--secondary);
+        transform: scaleX(0);
+        transition: transform var(--dur) var(--ease-out);
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus-visible::after { transform: scaleX(1); }
+
+    /* Cards lift a little further and the flags settle a beat later. */
+    .register-card:hover { transform: translateY(-3px); }
+    .flag { transition: border-color var(--dur) var(--ease-out), background var(--dur) var(--ease-out); }
+    .register-card:hover .flag { border-color: rgba(244, 63, 94, 0.34); }
+
+    /* KPI hover: the number leads, the label follows. */
+    .kpi-value { transition: transform var(--dur) var(--ease-out); }
+    .kpi:hover .kpi-value { transform: translateY(-1px) scale(1.02); }
+
+    /* Chain steps arrive left to right, tracing the direction of control. */
+    .rc-chain .chain-node {
+        animation: chainStep 460ms var(--ease-out) backwards;
+    }
+    .rc-chain .chain-node:nth-child(3) { animation-delay: 90ms; }
+    .rc-chain .chain-node:nth-child(5) { animation-delay: 180ms; }
+
+    @keyframes chainStep {
+        from { opacity: 0; transform: translateX(-6px); }
+        to   { opacity: 1; transform: none; }
+    }
+
+    html { scroll-behavior: smooth; }
+}
+
+/* The header pause control stops the continuous loops. One-shot entrances are
+   left alone: they have already finished by the time anyone reaches for it,
+   and cancelling them mid-flight would leave cards stranded. */
+.motion-paused .eyebrow-dot { animation: none; opacity: 0.85; }
+.motion-paused html { scroll-behavior: auto; }
