@@ -9,12 +9,11 @@ from typing import List, Dict, Any
 # Adjust sys.path to find backend module
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from backend.app.core.config import settings
-from backend.app.services.ingestion import NewsIngestionService
-from backend.app.services.llm import LLMService, LLMCascadeError
-from backend.app.db.excel_db import db
-
-# Setup Logging
+# Configure logging BEFORE importing anything that logs at import time.
+# backend.app.db.excel_db constructs SheetsDatabase() at module level, so its
+# connection status, schema migrations and any errors are emitted during the
+# import below. Configuring afterwards silently discarded all of it — a failed
+# sheet migration looked identical to a successful one.
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -23,6 +22,11 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger("run_pipeline")
+
+from backend.app.core.config import settings
+from backend.app.services.ingestion import NewsIngestionService
+from backend.app.services.llm import LLMService, LLMCascadeError
+from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
 
