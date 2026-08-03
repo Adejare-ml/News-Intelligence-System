@@ -119,6 +119,34 @@ document.addEventListener("DOMContentLoaded", () => {
             .trim();
     }
 
+    /**
+     * Collapse near-duplicate stories by normalized title.
+     *
+     * Strips the trailing " - Publication Name" that Google News RSS appends,
+     * punctuation and casing, so the same story arriving from two feeds
+     * resolves to one key. The highest-risk copy wins, since that is the one a
+     * reader should see. This is a display-layer guard; proper near-duplicate
+     * clustering belongs in the pipeline.
+     */
+    function dedupeByTitle(articles) {
+        const seen = new Map();
+        (articles || []).forEach(a => {
+            if (!a) return;
+            const key = String(a.title || "")
+                .replace(/\s+[-–—|]\s+[^-–—|]{2,40}$/, "")
+                .toLowerCase()
+                .replace(/[^a-z0-9 ]/g, "")
+                .replace(/\s+/g, " ")
+                .trim();
+            if (!key) return;
+            const existing = seen.get(key);
+            if (!existing || (a.risk_score || 0) > (existing.risk_score || 0)) {
+                seen.set(key, a);
+            }
+        });
+        return [...seen.values()];
+    }
+
     function normalizeArticle(art) {
         if (!art) return null;
         const score = art["Risk Score"] !== undefined ? parseInt(art["Risk Score"]) : (art.risk_score || 10);
@@ -171,7 +199,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 // Elevated Risk items (score >= 25 or Medium/High/Critical level)
                 const elevatedArticles = allArticles.filter(a => (a.risk_score >= 25 || ["Medium", "High", "Critical"].includes(a.risk_level)));
-                const latest_alerts = elevatedArticles.slice(0, 10);
+                // The same story is frequently ingested from several feeds and
+                // analyzed more than once, producing near-identical records
+                // with different ids and slightly different LLM summaries. That
+                // is invisible in a long feed but glaring in a ten-item alert
+                // band, where it showed the same headline four times. Collapse
+                // on a normalized title, keeping the highest-scoring copy.
+                const latest_alerts = dedupeByTitle(elevatedArticles).slice(0, 10);
                 const total_alerts = elevatedArticles.length;
                 
                 // Group by Category
@@ -232,6 +266,92 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    /**
+     * Trace a query across every dataset, not just the article feed.
+     *
+     * The point of the concept mode is to answer "what do we know about X",
+     * and the answer lives in four places: the article feed, the knowledge
+     * graph, the PSC register and the entity tables. Searching only the feed
+     * meant a query for a company with a disclosed beneficial owner returned
+     * news stories and silently omitted the ownership record — the single
+     * most important thing the system holds about it.
+     */
+    function buildTrace(query) {
+        const q = String(query || "").trim().toLowerCase();
+        if (q.length < 3) return null;
+
+        const rows = [];
+
+        const entityHits = knownEntities.filter(n =>
+            String(n.label || "").toLowerCase().includes(q)).slice(0, 4);
+        entityHits.forEach(n => rows.push({
+            kind: n.type === "psc" ? "Beneficial owner" : (n.type || "entity"),
+            label: n.label,
+            note: `tracked in the knowledge graph · risk ${n.risk || "Low"}`,
+            action: n.label
+        }));
+
+        // The register is loaded at boot by psc-report.js; allPscRecords is
+        // only populated once the modal has been opened, so prefer whichever
+        // is actually populated.
+        const register = (allPscRecords && allPscRecords.length)
+            ? allPscRecords
+            : ((window.AuraReport && window.AuraReport.state.records) || []);
+
+        register.forEach(r => {
+            const hay = `${r["Person Name"] || ""} ${r.Company || ""} ${r["Intermediate Entities"] || ""}`.toLowerCase();
+            if (!hay.includes(q)) return;
+            const pct = r.Percentage ? ` · ${r.Percentage}` : "";
+            rows.push({
+                kind: "PSC register",
+                label: `${r["Person Name"] || "Undisclosed"} → ${r.Company || "Undisclosed"}`,
+                note: `${r["Nature of Control"] || "nature not disclosed"}${pct}`,
+                action: r["Person Name"]
+            });
+        });
+
+        const articleHits = (allArticles || []).filter(a =>
+            `${a.title} ${a.summary_executive}`.toLowerCase().includes(q));
+        if (articleHits.length) {
+            const elevated = articleHits.filter(a => (a.risk_score || 0) >= 50).length;
+            rows.push({
+                kind: "Coverage",
+                label: `${articleHits.length} article${articleHits.length === 1 ? "" : "s"} mention this`,
+                note: elevated
+                    ? `${elevated} scored at elevated risk or above`
+                    : "none scored above the elevated-risk threshold"
+            });
+        }
+
+        return rows.length ? rows.slice(0, 8) : null;
+    }
+
+    function renderTrace(query) {
+        const panel = document.getElementById("trace-panel");
+        if (!panel) return;
+
+        const rows = isSemanticSearch ? buildTrace(query) : null;
+        if (!rows) { panel.hidden = true; panel.innerHTML = ""; return; }
+
+        panel.hidden = false;
+        panel.innerHTML = `<h4>What we hold on &ldquo;${esc(query)}&rdquo;</h4>`
+            + rows.map(r => `
+                <div class="trace-row">
+                    <span class="trace-kind">${esc(r.kind)}</span>
+                    <span class="trace-value">${r.action
+                        ? `<button type="button" data-trace="${esc(r.action)}">${esc(r.label)}</button>`
+                        : esc(r.label)} — ${esc(r.note)}</span>
+                </div>`).join("");
+
+        panel.querySelectorAll("[data-trace]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const term = btn.getAttribute("data-trace");
+                searchInput.value = term;
+                loadNewsFeed(term, currentCategory);
+            });
+        });
+    }
+
     // Term-overlap relevance score for concept search: title hits weigh 3x,
     // summary hits 1x; risk words map onto the article's actual risk level
     function conceptScore(article, query) {
@@ -253,12 +373,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function loadNewsFeed(query = "", category = "") {
-        articlesList.innerHTML = `
-            <div class="loading-placeholder">
-                <div class="spinner"></div>
-                <p>Analyzing intelligence nodes...</p>
-            </div>
-        `;
+        // Only show the spinner when there is nothing on screen yet. In static
+        // mode the filter is a synchronous array pass, so painting a spinner
+        // on every keystroke produced a flash of empty state between each
+        // character rather than a live-filtering feed.
+        if (!articlesList.querySelector(".article-card")) {
+            articlesList.innerHTML = `
+                <div class="loading-placeholder">
+                    <div class="spinner"></div>
+                    <p>Analyzing intelligence nodes...</p>
+                </div>
+            `;
+        }
         try {
             let articles = [];
             if (isGitHubPages) {
@@ -306,6 +432,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 articles = [...articles].sort((a, b) => (b.risk_score || 0) - (a.risk_score || 0));
             }
             renderNewsFeed(articles);
+            renderTrace(query);
         } catch (err) {
             console.error("Error loading news feed:", err);
             articlesList.innerHTML = `<p class="error-message">Failed to load news streams.</p>`;
@@ -372,21 +499,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // COMPONENT RENDERING HELPERS
     // ==========================================
 
+    // Count-up is delegated to motion.js, which drives it from
+    // requestAnimationFrame against elapsed time.
+    //
+    // The previous implementation computed its step from `duration / target`
+    // inside a setInterval. For target 0 that is a division by zero, and the
+    // loop's exit test (`current >= target`) never fired because `current`
+    // started at 0 and incremented by `Math.ceil(0 / 30) || 1`, so a zero
+    // counter span left a timer running for the life of the page. It also
+    // honours prefers-reduced-motion, which the old version did not.
     function animateCounter(el, target) {
         if (!el) return;
-        let current = 0;
-        const duration = 1000; // 1s
-        const stepTime = Math.abs(Math.floor(duration / target)) || 30;
-        
-        const timer = setInterval(() => {
-            current += Math.ceil(target / 30) || 1;
-            if (current >= target) {
-                el.innerText = target;
-                clearInterval(timer);
-            } else {
-                el.innerText = current;
-            }
-        }, stepTime);
+        const value = Number(target);
+        if (!isFinite(value)) { el.textContent = "0"; return; }
+        if (window.AuraMotion) window.AuraMotion.countUp(el, value);
+        else el.textContent = String(value);
     }
 
     function updateFeedCount(count) {
@@ -433,7 +560,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <span class="badge ${catClass}">${esc(art.category || "General")}</span>
                     <span title="${esc(art.published_at)}">${esc(timeAgo(art.published_at))}</span>
                 </div>
-                <h4>${esc(art.title)}</h4>
+                <h3>${esc(art.title)}</h3>
                 <div class="article-card-footer">
                     <span class="source-label">${esc(art.source)}${engineChip}</span>
                     <span class="risk-label" title="Risk score ${esc(art.risk_score)}/100">
@@ -464,26 +591,58 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderAlertsList(alerts) {
+        const bandCount = document.getElementById("alert-band-count");
+
         if (!alerts || alerts.length === 0) {
-            alertsList.innerHTML = `<p style="font-size:12px; color:var(--text-muted); text-align:center; padding: 20px;">No risk thresholds breached.</p>`;
+            alertsList.innerHTML = `<p class="empty-note">No risk thresholds breached in the current window.</p>`;
+            if (bandCount) bandCount.textContent = "Nothing above threshold";
             return;
         }
 
-        alertsList.innerHTML = "";
-        alerts.forEach(alert => {
-            const item = document.createElement("div");
-            const severityClass = alert.severity ? alert.severity.toLowerCase() : "info";
-            item.className = `alert-item ${severityClass}`;
+        // Rank by severity then score. The panel previously rendered whatever
+        // order the feed happened to be in, which buried the worst item.
+        const ranked = [...alerts].sort((a, b) => {
+            const sev = x => (String(x.severity).toLowerCase() === "critical" ? 1 : 0);
+            if (sev(a) !== sev(b)) return sev(b) - sev(a);
+            return ((b.article && b.article.risk_score) || 0) - ((a.article && a.article.risk_score) || 0);
+        });
 
-            const dateStr = new Date(alert.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-            const message = cleanSummary(alert.message);
+        const criticals = ranked.filter(a => String(a.severity).toLowerCase() === "critical").length;
+        if (bandCount) {
+            bandCount.textContent = criticals
+                ? `${criticals} critical · ${ranked.length} elevated`
+                : `${ranked.length} elevated`;
+        }
+
+        alertsList.innerHTML = "";
+        ranked.forEach((alert, idx) => {
+            const item = document.createElement("div");
+            const severity = String(alert.severity || "info").toLowerCase();
+            item.className = `alert-item ${severity}`;
+            item.style.setProperty("--stagger", Math.min(idx, 8));
+
+            const when = new Date(alert.created_at);
+            const dateStr = isNaN(when.getTime())
+                ? "Recent"
+                : when.toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+
+            const article = alert.article || {};
+            // Strip the "Critical Alert: " prefix the caller adds: the severity
+            // now has its own label, so repeating it in the title is noise.
+            const title = String(alert.title || "").replace(/^\s*\w+\s+Alert:\s*/i, "");
+            const score = article.risk_score !== undefined ? `${article.risk_score}/100` : "";
 
             item.innerHTML = `
-                <div class="alert-item-header">
-                    <span>${esc(alert.title)}</span>
-                    <span style="font-size:10px; color:var(--text-muted);">${esc(dateStr)}</span>
-                </div>
-                <p style="margin-top:2px;">${esc(message)}</p>
+                <span class="alert-severity">
+                    ${severity === "critical" ? "&#9632; Critical" : "&#9650; Elevated"}
+                </span>
+                <span class="alert-title">${esc(title)}</span>
+                <p class="alert-body">${esc(cleanSummary(alert.message))}</p>
+                <span class="alert-meta">
+                    <span>${esc(article.source || "Unknown source")}</span>
+                    <span>${esc(dateStr)}</span>
+                    ${score ? `<span>Risk ${esc(score)}</span>` : ""}
+                </span>
             `;
 
             // Alerts sourced from articles open the full detail modal
@@ -736,7 +895,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         };
 
-        // Clear previous network container content
+        // Destroy the previous instance before replacing it. Overwriting the
+        // variable left the old network's canvas, physics loop and resize
+        // listeners alive, so every rebuild leaked one.
+        if (network && typeof network.destroy === "function") {
+            try { network.destroy(); } catch (e) { /* already gone */ }
+        }
         container.innerHTML = "";
         network = new vis.Network(container, data, options);
 
@@ -744,6 +908,76 @@ document.addEventListener("DOMContentLoaded", () => {
         const graphStats = document.getElementById("graph-stats");
         if (graphStats) {
             graphStats.textContent = `${nodes.length} entities · ${validEdges.length} links — click a node to filter the feed`;
+        }
+
+        // ------------------------------------------------------------------
+        // Continuous drift.
+        //
+        // The graph used to stabilise and then sit perfectly still, which made
+        // a live intelligence map look like a screenshot. Rather than pushing
+        // the nodes around — which fights the physics solver, invalidates the
+        // layout the user is reading, and makes clicking a moving target — the
+        // *viewport* orbits: a slow circular pan around the graph's centre.
+        // The relative positions never change, so the map stays readable and
+        // every node stays exactly where the user last saw it relative to its
+        // neighbours.
+        // ------------------------------------------------------------------
+        const driftMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let driftFrame = null;
+        let driftAngle = 0;
+        let driftPaused = false;
+        let driftOnScreen = true;
+        let driftBase = null;
+
+        function driftShouldRun() {
+            return !driftMotion.matches && !driftPaused && driftOnScreen && !document.hidden;
+        }
+
+        function driftStep() {
+            if (!network || !driftShouldRun()) { driftFrame = null; return; }
+            driftAngle += 0.0022;
+            if (!driftBase) driftBase = network.getViewPosition();
+            // A radius of a few dozen units reads as breathing, not travel.
+            const radius = 26;
+            network.moveTo({
+                position: {
+                    x: driftBase.x + Math.cos(driftAngle) * radius,
+                    y: driftBase.y + Math.sin(driftAngle) * radius * 0.55
+                },
+                animation: false
+            });
+            driftFrame = requestAnimationFrame(driftStep);
+        }
+
+        function driftSync() {
+            if (driftShouldRun()) {
+                if (!driftFrame) driftFrame = requestAnimationFrame(driftStep);
+            } else if (driftFrame) {
+                cancelAnimationFrame(driftFrame);
+                driftFrame = null;
+            }
+        }
+
+        // Start only once the solver has settled, otherwise the pan fights the
+        // stabilisation and the whole thing judders.
+        network.once("stabilized", () => {
+            network.fit({ animation: { duration: 400 } });
+            setTimeout(() => { driftBase = network.getViewPosition(); driftSync(); }, 450);
+        });
+
+        // Dragging or zooming re-bases the orbit so the view does not snap back.
+        network.on("dragEnd", () => { driftBase = network.getViewPosition(); });
+        network.on("zoom", () => { driftBase = network.getViewPosition(); });
+
+        if (typeof driftMotion.addEventListener === "function") {
+            driftMotion.addEventListener("change", driftSync);
+        }
+        document.addEventListener("visibilitychange", driftSync);
+        if (typeof IntersectionObserver === "function") {
+            new IntersectionObserver((entries) => {
+                driftOnScreen = entries[0].isIntersecting;
+                driftSync();
+            }, { threshold: 0.05 }).observe(container);
         }
 
         // Setup Graph Toolbar Buttons
@@ -773,11 +1007,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!network) return;
                 physicsEnabled = !physicsEnabled;
                 network.setOptions({ physics: { enabled: physicsEnabled } });
+                // The same control stops the orbit, so one press genuinely
+                // stills the panel (WCAG 2.2.2) rather than freezing the
+                // simulation while the viewport keeps moving.
+                driftPaused = !physicsEnabled;
+                driftSync();
                 physicsBtn.classList.toggle("active", !physicsEnabled);
+                physicsBtn.setAttribute("aria-pressed", String(!physicsEnabled));
                 physicsBtn.innerHTML = physicsEnabled ? `<i data-lucide="pause"></i>` : `<i data-lucide="play"></i>`;
                 if (window.lucide) window.lucide.createIcons();
             };
         }
+
+        // The global motion toggle in the header also governs the graph.
+        document.addEventListener("aura:motion", (e) => {
+            driftPaused = !!(e.detail && e.detail.paused);
+            driftSync();
+        });
 
         // Neighborhood highlight: dim everything not connected to the clicked node
         const canUpdateNodes = typeof vis.DataSet !== "undefined";
@@ -1077,15 +1323,17 @@ document.addEventListener("DOMContentLoaded", () => {
         modalObserver.observe(m, { attributes: true, attributeFilter: ["class"] })
     );
 
-    // Global keyboard navigation
+    // Global keyboard navigation.
+    //
+    // Escape closes the topmost dialog only, so dismissing the PSC dossier
+    // returns you to the register behind it instead of closing everything at
+    // once. The dossier was previously not closable by keyboard at all.
     document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-            closeModal();
-            const pscModal = document.getElementById("psc-modal");
-            if (pscModal) pscModal.classList.remove("active");
-            const reportsModal = document.getElementById("reports-modal");
-            if (reportsModal) reportsModal.classList.remove("active");
-        }
+        if (e.key !== "Escape") return;
+        const topmost = topmostOpenModal();
+        if (!topmost) return;
+        if (topmost.id === "detail-modal") closeModal();
+        else topmost.classList.remove("active");
     });
 
     // Category filter buttons
@@ -1211,216 +1459,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPscSearchQuery = "";
     let pscViewMode = "table"; // "table" or "map"
 
-    const defaultPscRecords = [
-        {
-            "Person Name": "Alhaji Aliko Dangote",
-            "Company": "Dangote Cement Plc",
-            "Nature of Control": "Direct & Indirect ownership of >25% shares and voting rights",
-            "Percentage": "85.8%",
-            "Direct %": "27.3%",
-            "Indirect %": "58.5%",
-            "Voting Rights %": "85.8%",
-            "Control Tier": "Tier 1: Dominant Majority (>75%)",
-            "Intermediate Entities": "Dangote Industries Limited",
-            "Board Role": "Founder & Group President",
-            "PEP Status": "No",
-            "Risk Level": "Elevated Control",
-            "Red Flags": ["Cross-Entity Portfolio", "High Concentration"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0891-DNG",
-            "Verification Status": "CAC & SEC Verified",
-            "Change Type": "Disclosed",
-            "Previous Holder": "",
-            "Date": "2026-01-15",
-            "Timeline": [
-                { "date": "2024-03-10", "event": "Initial CAMA 2020 PSC Beneficial Ownership Registration Filed with CAC" },
-                { "date": "2025-06-14", "event": "Consolidated Indirect Shareholding via Dangote Industries Limited (58.5%)" },
-                { "date": "2026-01-15", "event": "Annual Regulatory Re-Verification Confirmed by SEC Nigeria" }
-            ],
-            "Notes": "Ultimate Beneficial Owner via Dangote Industries Ltd holding controlling equity across Dangote Cement Plc & Dangote Sugar."
-        },
-        {
-            "Person Name": "Abdul Samad Rabiu",
-            "Company": "BUA Foods Plc",
-            "Nature of Control": "Direct & Indirect ownership of >25% shares & board appointments",
-            "Percentage": "89.0%",
-            "Direct %": "32.0%",
-            "Indirect %": "57.0%",
-            "Voting Rights %": "89.0%",
-            "Control Tier": "Tier 1: Dominant Majority (>75%)",
-            "Intermediate Entities": "BUA Group International Limited",
-            "Board Role": "Executive Chairman",
-            "PEP Status": "No",
-            "Risk Level": "Elevated Control",
-            "Red Flags": ["High Concentration", "Cross-Entity Portfolio"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0442-BUA",
-            "Verification Status": "CAC & SEC Verified",
-            "Change Type": "Disclosed",
-            "Previous Holder": "",
-            "Date": "2026-02-10",
-            "Timeline": [
-                { "date": "2023-11-05", "event": "BUA Foods Listing Beneficial Ownership Disclosure Filed" },
-                { "date": "2025-09-20", "event": "Board Nomination Privilege Ratified under BUA Group Charter" },
-                { "date": "2026-02-10", "event": "Updated PSC Return Filed following Group Equity Restructuring" }
-            ],
-            "Notes": "Exercises voting rights and board appointment controls through BUA Group parent entity."
-        },
-        {
-            "Person Name": "Jubril Adewale Tinubu",
-            "Company": "Oando Plc",
-            "Nature of Control": "Indirect ownership via Ocean and Oil Development",
-            "Percentage": "66.7%",
-            "Direct %": "3.4%",
-            "Indirect %": "63.3%",
-            "Voting Rights %": "74.5%",
-            "Control Tier": "Tier 2: Substantial Control (25%-75%)",
-            "Intermediate Entities": "Ocean and Oil Development Partners (OODP) Ltd",
-            "Board Role": "Group Chief Executive Officer",
-            "PEP Status": "Yes - Politically Exposed Family Link",
-            "Risk Level": "Critical Risk",
-            "Red Flags": ["PEP Proximity Alert", "Voting Discrepancy", "Rapid Stake Jump"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/1029-OAN",
-            "Verification Status": "SEC Disclosed",
-            "Change Type": "Increased Control",
-            "Previous Holder": "Whitman Investments",
-            "Date": "2026-03-20",
-            "Timeline": [
-                { "date": "2024-08-12", "event": "OODP Investment Vehicle Stake Expansion Approved by SEC" },
-                { "date": "2025-11-18", "event": "Acquired Minority Holdings from Whitman Investments (+14.2%)" },
-                { "date": "2026-03-20", "event": "Enhanced Due Diligence Audit Triggered due to PEP Proximity & Control Threshold" }
-            ],
-            "Notes": "Increased beneficial ownership following acquisition of minority holdings via OODP investment vehicle."
-        },
-        {
-            "Person Name": "Femi Otedola",
-            "Company": "Geregu Power Plc",
-            "Nature of Control": "Direct & Indirect ownership of >25% voting shares",
-            "Percentage": "78.6%",
-            "Direct %": "40.1%",
-            "Indirect %": "38.5%",
-            "Voting Rights %": "78.6%",
-            "Control Tier": "Tier 1: Dominant Majority (>75%)",
-            "Intermediate Entities": "Amperion Power Distribution Limited",
-            "Board Role": "Chairman of the Board",
-            "PEP Status": "No",
-            "Risk Level": "Elevated Control",
-            "Red Flags": ["Cross-Entity Portfolio", "Multi-Company Control"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0115-GER",
-            "Verification Status": "CAC & SEC Verified",
-            "Change Type": "Disclosed",
-            "Previous Holder": "",
-            "Date": "2026-04-12",
-            "Timeline": [
-                { "date": "2022-10-05", "event": "Geregu Power Listing Beneficial Ownership Registration" },
-                { "date": "2024-05-19", "event": "Amperion Power Indirect Holding Consolidation" },
-                { "date": "2026-04-12", "event": "Cross-Holdings Disclosure in First HoldCo (21.96%) and Geregu Power (78.6%)" }
-            ],
-            "Notes": "Maintains controlling interest in Geregu Power Plc via direct shareholding and Amperion Power; also holds major stake in First HoldCo."
-        },
-        {
-            "Person Name": "Femi Otedola",
-            "Company": "First HoldCo Plc (FBN Holdings)",
-            "Nature of Control": "Direct & Indirect major voting shareholding",
-            "Percentage": "21.96%",
-            "Direct %": "9.4%",
-            "Indirect %": "12.56%",
-            "Voting Rights %": "21.96%",
-            "Control Tier": "Tier 3: Significant Influence (5%-25%)",
-            "Intermediate Entities": "Calverton Centre Limited / Amperion Power",
-            "Board Role": "Group Chairman",
-            "PEP Status": "No",
-            "Risk Level": "Elevated Control",
-            "Red Flags": ["Cross-Entity Portfolio", "Rapid Stake Jump"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0118-FBN",
-            "Verification Status": "CBN & SEC Verified",
-            "Change Type": "Increased Control",
-            "Previous Holder": "Tunde Hassan-Odukale",
-            "Date": "2026-07-22",
-            "Timeline": [
-                { "date": "2023-12-15", "event": "Initial Strategic Stake Purchase in First HoldCo (5.07%)" },
-                { "date": "2025-04-10", "event": "Appointed Group Chairman of First HoldCo Board" },
-                { "date": "2026-07-22", "event": "Acquired N77.6 Billion Additional Shares, Raising Total Beneficial Stake to 21.96%" }
-            ],
-            "Notes": "Largest single beneficial shareholder of First HoldCo Plc following N77.6B open-market acquisition."
-        },
-        {
-            "Person Name": "Jim Ovia",
-            "Company": "Zenith Bank Plc",
-            "Nature of Control": "Direct & indirect ownership of >15% voting rights",
-            "Percentage": "16.2%",
-            "Direct %": "9.2%",
-            "Indirect %": "7.0%",
-            "Voting Rights %": "16.2%",
-            "Control Tier": "Tier 3: Significant Influence (5%-25%)",
-            "Intermediate Entities": "Institutional & Trust Vehicles (Quantum Zenith)",
-            "Board Role": "Founder & Non-Executive Chairman",
-            "PEP Status": "No",
-            "Risk Level": "Standard Disclosure",
-            "Red Flags": [],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0912-ZEN",
-            "Verification Status": "CBN & SEC Verified",
-            "Change Type": "Disclosed",
-            "Previous Holder": "",
-            "Date": "2026-05-01",
-            "Timeline": [
-                { "date": "2021-02-14", "event": "Zenith Bank CAMA 2020 Beneficial Ownership Filing" },
-                { "date": "2024-08-01", "event": "Quantum Zenith Institutional Trust Allocation Update" },
-                { "date": "2026-05-01", "event": "Annual CBN Beneficial Ownership Audit Clearance" }
-            ],
-            "Notes": "Largest individual beneficial owner of Zenith Bank Plc with significant board nomination influence."
-        },
-        {
-            "Person Name": "Tony O. Elumelu",
-            "Company": "United Bank for Africa (UBA) Plc",
-            "Nature of Control": "Indirect ownership via Heirs Holdings Limited",
-            "Percentage": "24.5%",
-            "Direct %": "2.1%",
-            "Indirect %": "22.4%",
-            "Voting Rights %": "24.5%",
-            "Control Tier": "Tier 3: Significant Influence (5%-25%)",
-            "Intermediate Entities": "Heirs Holdings Limited / HH Capital Limited",
-            "Board Role": "Group Chairman",
-            "PEP Status": "No",
-            "Risk Level": "Elevated Control",
-            "Red Flags": ["Cross-Entity Portfolio"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0554-UBA",
-            "Verification Status": "CBN & SEC Verified",
-            "Change Type": "Increased Control",
-            "Previous Holder": "Transnational Corporation Plc",
-            "Date": "2026-06-18",
-            "Timeline": [
-                { "date": "2022-04-18", "event": "Heirs Holdings Consolidated PSC Registration Filed" },
-                { "date": "2025-01-25", "event": "HH Capital Strategic Market Purchase (+3.8%)" },
-                { "date": "2026-06-18", "event": "Beneficial Interest Increased to 24.5% across UBA Group" }
-            ],
-            "Notes": "Consolidated beneficial interest in UBA Plc via HH Capital market acquisitions; also controls Transcorp Group."
-        },
-        {
-            "Person Name": "Aigboje Aig-Imoukhuede",
-            "Company": "Access Holdings Plc",
-            "Nature of Control": "Indirect ownership of voting rights & Non-Exec Chairman",
-            "Percentage": "12.4%",
-            "Direct %": "1.8%",
-            "Indirect %": "10.6%",
-            "Voting Rights %": "12.4%",
-            "Control Tier": "Tier 3: Significant Influence (5%-25%)",
-            "Intermediate Entities": "Tengen Holdings (Mauritius) Limited",
-            "Board Role": "Non-Executive Chairman",
-            "PEP Status": "No",
-            "Risk Level": "Standard Disclosure",
-            "Red Flags": ["Complex Offshore Vehicle"],
-            "Regulatory Filing Ref": "CAC/PSC/2026/0319-ACC",
-            "Verification Status": "CBN & SEC Verified",
-            "Change Type": "Appointed",
-            "Previous Holder": "Bababode Osunkoya (Deceased)",
-            "Date": "2026-03-14",
-            "Timeline": [
-                { "date": "2023-09-12", "event": "Tengen Holdings Mauritius Offshore Structure Disclosure" },
-                { "date": "2026-03-14", "event": "Return to Access Holdings Plc board as Non-Executive Chairman" },
-                { "date": "2026-06-02", "event": "CBN Regulatory Approval Confirmed for Chairman Role" }
-            ],
-            "Notes": "Return to Access Holdings Plc board as Non-Executive Chairman with indirect stake via Tengen Holdings."
-        }
-    ];
+    // The illustrative PSC set lives in data/significant_control.json and is
+    // generated from DEMO_PSC_RECORDS in run_pipeline.py. A second copy used to
+    // live here, and the two drifted: the client copy carried extra invented
+    // claims -- including a PEP classification -- against named real people.
+    // There is now exactly one source of truth, and every seeded row is marked
+    // with Source="seed" so it can never be presented as extracted intelligence.
 
     if (viewPscBtn && pscModal) {
         viewPscBtn.addEventListener("click", async () => {
@@ -1549,19 +1593,19 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         try {
             const res = await fetch(`${API_BASE}/significant_control.json`);
-            if (res.ok) {
-                const fetched = await res.json();
-                usingDemoPsc = !(fetched && fetched.length > 0);
-                allPscRecords = usingDemoPsc ? defaultPscRecords : fetched;
-            } else {
-                usingDemoPsc = true;
-                allPscRecords = defaultPscRecords;
-            }
+            allPscRecords = res.ok ? (await res.json()) : [];
         } catch (err) {
             console.error("Error loading PSC records:", err);
-            usingDemoPsc = true;
-            allPscRecords = defaultPscRecords;
+            allPscRecords = [];
         }
+        if (!Array.isArray(allPscRecords)) allPscRecords = [];
+
+        // Key the disclosure off the records themselves, not off "is the list
+        // empty". The old test was `!(fetched && fetched.length > 0)`, which is
+        // false whenever seeded rows are present — so a list made entirely of
+        // sample records rendered with no banner at all, as verified
+        // intelligence. Any seeded row now forces the notice.
+        usingDemoPsc = allPscRecords.some(r => String(r && r.Source).toLowerCase() === "seed");
 
         const demoBanner = document.getElementById("psc-demo-banner");
         if (demoBanner) demoBanner.hidden = !usingDemoPsc;
@@ -1607,7 +1651,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         if (kpiIndirect) kpiIndirect.innerText = indirectCnt;
         if (kpiRedflag) kpiRedflag.innerText = redflagCnt;
-        if (kpiCama) kpiCama.innerText = "94.2%";
+        // Was hardcoded to "94.2%" and then written into a downloadable
+        // audit brief as a verified figure. Now derived: the share of
+        // records that actually cite a regulatory filing reference.
+        if (kpiCama) {
+            const withRef = allPscRecords.filter(r => String(r["Regulatory Filing Ref"] || "").trim()).length;
+            kpiCama.innerText = allPscRecords.length
+                ? `${Math.round((withRef / allPscRecords.length) * 100)}%`
+                : "n/a";
+        }
     }
 
     function getFilteredPSCData() {
@@ -1620,6 +1672,12 @@ document.addEventListener("DOMContentLoaded", () => {
             pscData = pscData.filter(r => {
                 const val = parseFloat((r["Percentage"] || "").replace("%", ""));
                 return !isNaN(val) && val >= 75;
+            });
+        } else if (activePscFilter === "nigeriaband") {
+            // The band that exists only under the Nigerian 5% threshold.
+            pscData = pscData.filter(r => {
+                const val = parseFloat((r["Percentage"] || "").replace("%", ""));
+                return !isNaN(val) && val >= 5 && val < 25;
             });
         } else if (activePscFilter === "indirect") {
             pscData = pscData.filter(r => 
@@ -1708,7 +1766,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${flags.length > 0 ? flags.map(f => `<span class="badge" style="background:rgba(239,68,68,0.18); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:10px; padding:2px 6px; margin:2px 2px 2px 0; display:inline-block;">🚩 ${esc(f)}</span>`).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
                     </td>
                     <td style="padding:12px 10px;">
-                        <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${esc(r["Regulatory Filing Ref"] || "CAC/PSC/2026")}</code>
+                        <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${r["Regulatory Filing Ref"] ? esc(r["Regulatory Filing Ref"]) : "<span style=\"color:var(--text-muted);\">Not disclosed</span>"}</code>
                     </td>
                     <td style="padding:12px 10px; text-align:right;">
                         <button class="btn btn-secondary psc-dossier-btn" data-psc-index="${allPscRecords.indexOf(r)}" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
@@ -1805,13 +1863,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 const yC = 60 + cIndex * (380 / Math.max(1, cArray.length - 1));
 
                 svgHtml += `<line x1="${xP+40}" y1="${yP}" x2="${xH-60}" y2="${yH}" stroke="${isRed ? '#ef4444' : '#38bdf8'}" stroke-width="1.8" stroke-dasharray="${isRed ? '4,4' : 'none'}" marker-end="${isRed ? 'url(#arrowhead-red)' : 'url(#arrowhead)'}" opacity="0.8"/>`;
-                svgHtml += `<text x="${(xP+xH)/2}" y="${(yP+yH)/2 - 5}" font-size="10" fill="#9ca3af" text-anchor="middle">${r["Percentage"] || ""}</text>`;
+                svgHtml += `<text x="${(xP+xH)/2}" y="${(yP+yH)/2 - 5}" font-size="10" fill="#9ca3af" text-anchor="middle">${esc(r["Percentage"] || "")}</text>`;
 
                 svgHtml += `<line x1="${xH+60}" y1="${yH}" x2="${xC-60}" y2="${yC}" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrowhead)" opacity="0.8"/>`;
             } else {
                 const yC = 60 + cIndex * (380 / Math.max(1, cArray.length - 1));
                 svgHtml += `<line x1="${xP+40}" y1="${yP}" x2="${xC-60}" y2="${yC}" stroke="${isRed ? '#ef4444' : '#38bdf8'}" stroke-width="1.8" marker-end="${isRed ? 'url(#arrowhead-red)' : 'url(#arrowhead)'}" opacity="0.8"/>`;
-                svgHtml += `<text x="${(xP+xC)/2}" y="${(yP+yC)/2 - 5}" font-size="10" fill="#9ca3af" text-anchor="middle">Direct ${r["Percentage"] || ""}</text>`;
+                svgHtml += `<text x="${(xP+xC)/2}" y="${(yP+yC)/2 - 5}" font-size="10" fill="#9ca3af" text-anchor="middle">Direct ${esc(r["Percentage"] || "")}</text>`;
             }
         });
 
@@ -1824,7 +1882,7 @@ document.addEventListener("DOMContentLoaded", () => {
             svgHtml += `
                 <g style="cursor:pointer;" data-psc-name="${esc(p.name)}">
                     <circle cx="${xP}" cy="${y}" r="22" fill="${isRed ? 'rgba(239,68,68,0.25)' : 'rgba(56,189,248,0.25)'}" stroke="${isRed ? '#ef4444' : '#38bdf8'}" stroke-width="2"/>
-                    <text x="${xP}" y="${y+4}" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">${p.name.charAt(0)}</text>
+                    <text x="${xP}" y="${y+4}" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">${esc(p.name.charAt(0))}</text>
                     <text x="${xP}" y="${y+36}" font-size="11" fill="#38bdf8" font-weight="600" text-anchor="middle">${esc(p.name)}</text>
                 </g>
             `;
@@ -1967,8 +2025,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div style="background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); padding:12px; border-radius:8px;">
                     <span style="font-size:11px; color:var(--text-muted); display:block; margin-bottom:4px;">Regulatory Filing Reference</span>
-                    <div style="font-size:13px; font-weight:700; color:#38bdf8;">${esc(record["Regulatory Filing Ref"] || "CAC/PSC/2026/NG")}</div>
-                    <div style="font-size:10px; color:#9ca3af;">Filing Date: ${esc(record["Date"] || "2026-01-15")} | ${esc(record["Verification Status"] || "CAC Disclosed")}</div>
+                    <div style="font-size:13px; font-weight:700; color:#38bdf8;">${record["Regulatory Filing Ref"] ? esc(record["Regulatory Filing Ref"]) : "Not disclosed"}</div>
+                    <div style="font-size:10px; color:#9ca3af;">Filing date: ${record["Date"] ? esc(record["Date"]) : "not disclosed"} | ${record["Verification Status"] ? esc(record["Verification Status"]) : "unverified"}</div>
                 </div>
             </div>
         `;
@@ -2032,23 +2090,43 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // Export PSC CSV File
+    //
+    // Built from a Blob rather than a data: URI. encodeURI leaves "#" intact,
+    // so any record containing one truncated the download at that character —
+    // the main intelligence export was already fixed for this, but the PSC
+    // export, which matters more, still had the bug. Fields beginning with
+    // =, +, - or @ are prefixed so a spreadsheet treats them as text.
     function exportPSCCSV() {
         if (!allPscRecords || allPscRecords.length === 0) return;
-        const headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Direct %", "Indirect %", "Voting Rights %", "Control Tier", "Intermediate Entities", "Board Role", "PEP Status", "Risk Level", "Regulatory Filing Ref", "Date"];
-        let csvContent = "data:text/csv;charset=utf-8," + headers.join(",") + "\n";
 
-        allPscRecords.forEach(r => {
-            const row = headers.map(h => `"${(r[h] || "").toString().replace(/"/g, '""')}"`);
-            csvContent += row.join(",") + "\n";
-        });
+        const headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Share Band",
+            "Direct %", "Indirect %", "Voting Rights %", "Intermediate Entities", "Board Role",
+            "PEP Status", "Risk Level", "Regulatory Filing Ref", "Date", "Source"];
 
-        const encodedUri = encodeURI(csvContent);
+        const csvField = (val) => {
+            let s = String(val == null ? "" : val);
+            if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
+            return `"${s.replace(/"/g, '""')}"`;
+        };
+
+        const rows = allPscRecords.map(r => headers.map(h => csvField(r[h])).join(","));
+
+        // A demo export must never leave the app looking like a compliance
+        // artefact, so the warning travels with the file and the filename.
+        const notice = usingDemoPsc
+            ? `"NOT FOR COMPLIANCE USE - contains illustrative seed records"\r\n`
+            : "";
+        const csvContent = "﻿" + notice + headers.map(csvField).join(",") + "\r\n" + rows.join("\r\n");
+
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
-        link.setAttribute("href", encodedUri);
-        link.setAttribute("download", `PSC_CAM2020_Beneficial_Ownership_Report_${new Date().toISOString().slice(0,10)}.csv`);
+        link.href = url;
+        link.download = `${usingDemoPsc ? "DEMO_" : ""}PSC_CAMA2020_Beneficial_Ownership_${new Date().toISOString().slice(0,10)}.csv`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+        URL.revokeObjectURL(url);
     }
 
     // Export PSC Compliance Report
@@ -2056,6 +2134,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!allPscRecords || allPscRecords.length === 0) return;
 
         let reportMd = `# Persons with Significant Control (PSC) & CAMA 2020 UBO Audit Brief\n`;
+        // A brief built from seed rows must say so on its face. Without this
+        // the demo data left the app as an authoritative-looking document.
+        if (usingDemoPsc) {
+            reportMd += `\n> **NOT FOR COMPLIANCE USE.** This brief contains illustrative seed records, `;
+            reportMd += `not intelligence extracted from reporting.\n\n`;
+        }
         reportMd += `**Generated on:** ${new Date().toISOString().slice(0, 19).replace('T', ' ')} (UTC+1)\n`;
         reportMd += `**Regulatory Framework:** Companies and Allied Matters Act (CAMA 2020) & FATF Beneficial Ownership Transparency Standards\n\n`;
 
@@ -2064,7 +2148,7 @@ document.addEventListener("DOMContentLoaded", () => {
         reportMd += `- **Average Controlling Equity:** ${document.getElementById("kpi-avg-stake")?.innerText || '56.1%'}\n`;
         reportMd += `- **Indirect Holding Entities Tracked:** ${document.getElementById("kpi-indirect-cnt")?.innerText || '7'}\n`;
         reportMd += `- **Red Flag Anomalies Detected:** ${document.getElementById("kpi-redflag-cnt")?.innerText || '4'}\n`;
-        reportMd += `- **CAMA 2020 Compliance Status:** Verified (94.2% Compliant)\n\n`;
+        reportMd += `- **Records citing a regulatory filing reference:** ${document.getElementById("kpi-cama-status")?.innerText || "n/a"}\n\n`;
 
         reportMd += `---\n\n## Disclosed Beneficial Ownership Lineages & Anomaly Matrix\n\n`;
 
@@ -2079,7 +2163,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reportMd += `- **PEP Status:** ${r["PEP Status"]}\n`;
             reportMd += `- **Risk Level:** ${r["Risk Level"]}\n`;
             reportMd += `- **Anomalies / Red Flags:** ${flags.length > 0 ? flags.join(', ') : 'Clean Disclosure'}\n`;
-            reportMd += `- **CAC / SEC Regulatory Ref:** \`${r["Regulatory Filing Ref"] || "CAC/PSC/2026"}\` (Date: ${r["Date"]})\n`;
+            reportMd += `- **CAC / SEC regulatory ref:** ${r["Regulatory Filing Ref"] ? "`" + r["Regulatory Filing Ref"] + "`" : "not disclosed"} (date: ${r["Date"] || "not disclosed"})\n`;
             reportMd += `- **Audit Notes:** ${r["Notes"] || "Verified disclosure"}\n\n`;
         });
 
@@ -2153,13 +2237,16 @@ document.addEventListener("DOMContentLoaded", () => {
     searchTypeToggle.addEventListener("change", (e) => {
         isSemanticSearch = e.target.checked;
         if (isSemanticSearch) {
-            searchLabel.innerText = "Semantic Similarity (AI)";
-            searchLabel.style.color = "var(--primary)";
-            searchInput.placeholder = "Enter concept (e.g. 'high risk mergers')...";
+            // Called "Semantic Similarity (AI)" before. It is a weighted
+            // term-overlap score with no model behind it, and claiming
+            // otherwise on a transparency product is the wrong trade.
+            searchLabel.innerText = "Entity trace";
+            searchLabel.style.color = "var(--secondary)";
+            searchInput.placeholder = "Trace an entity across articles, owners and the register…";
         } else {
-            searchLabel.innerText = "Standard Keyword";
+            searchLabel.innerText = "Keyword match";
             searchLabel.style.color = "var(--text-muted)";
-            searchInput.placeholder = "Search keyword or semantic query...";
+            searchInput.placeholder = "Search keyword, entity or concept…";
         }
         // Re-run the active query under the newly selected mode
         if (searchInput.value.trim()) {
@@ -2195,56 +2282,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function parseMarkdown(md) {
-        if (!md) return "";
-        let html = md;
-
-        // Auto-sanitize legacy fallback messages from older runs
-        if (html.includes("Gemini generation failed") || html.includes("No significant alerts triggered in this run window")) {
-            html = html.replace(
-                /\*?No significant alerts triggered in this run window \(Gemini generation failed\)\.\*?/gi,
-                "### Key Developments & Market Signals\n\n*   **Economic & Fiscal Oversight**: President Bola Tinubu announced that Nigeria's economy has overcome its 'darkest tunnel' and is now operating stably.\n*   **Risk & Counterparty Signals**: Financial compliance experts warn of rising risk indicators, demanding enhanced vigilance across institutions.\n*   **Procurement & Governance**: Corporate governance, executive disclosures, and public procurement tracking actively monitored."
-            ).replace(
-                /\(Gemini generation failed\)/gi,
-                "(Automated Executive Summary)"
-            );
-        }
-        
-        // Escape HTML
-        html = html.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-        
-        // Blockquotes
-        html = html.replace(/^&gt;\s?(.*$)/gim, '<blockquote style="border-left:3px solid var(--primary); padding-left:12px; margin:10px 0; color:var(--text-muted); font-style:italic;">$1</blockquote>');
-
-        // Headers
-        html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
-        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
-        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-        
-        // Dividers
-        html = html.replace(/^---$/gim, '<hr class="report-divider">');
-        
-        // Bold & Italics
-        html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-        html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
-        
-        // Bullet list items (matches "- Item" or "* Item")
-        html = html.replace(/^[\-\*]\s+(.*$)/gim, '<li>$1</li>');
-        
-        // Wrap adjacent list items in a ul
-        html = html.replace(/(<li>.*<\/li>)/sg, '<ul>$1</ul>');
-        
-        // Links — scheme-checked so LLM-generated report content cannot plant
-        // javascript:/data: hrefs (prompt-injection -> stored XSS chain)
-        html = html.replace(/\[(.*?)\]\((.*?)\)/g, (m, text, url) =>
-            `<a href="${safeUrlAttr(url)}" target="_blank" rel="noopener noreferrer" class="report-link">${text}</a>`);
-        
-        // Double line breaks for paragraphs, single for line breaks
-        html = html.replace(/\n\n/g, '<p></p>');
-        html = html.replace(/\n/g, '<br>');
-        
-        return html;
-    }
+    // Report markdown rendering lives in js/report-markdown.js so it can be
+    // unit-tested without booting the whole dashboard. See tests/frontend/.
+    const parseMarkdown = window.AuraReportMarkdown.parseMarkdown;
+    const renderInline = window.AuraReportMarkdown.renderInline;
 
     async function loadReportContent(filename = "latest") {
         reportMdContent.innerHTML = `
@@ -2283,11 +2324,20 @@ document.addEventListener("DOMContentLoaded", () => {
                         } catch (e) {}
 
                         if (!fetchSuccess) {
-                            // Fallback 2: render latest report content so viewer always works
-                            const res = await fetch(`${API_BASE}/report_latest.md`);
-                            if (!res.ok) throw new Error("Report file not found.");
-                            const content = await res.text();
-                            reportMdContent.innerHTML = parseMarkdown(content);
+                            // Deliberately NOT falling back to report_latest.md.
+                            //
+                            // 71 of the 72 archive rows carry an empty Content
+                            // column, and only 15 archive files exist, so the
+                            // old fallback silently rendered *today's* brief
+                            // under a historical date. On an intelligence
+                            // product, showing the wrong document with no
+                            // indication is worse than showing none.
+                            reportMdContent.innerHTML = `
+                                <div class="empty-note">
+                                    <p><strong>This edition is not available.</strong></p>
+                                    <p>Its text was not captured when it was generated. Editions
+                                    published from this point on are archived in full.</p>
+                                </div>`;
                         }
                     }
                 }
@@ -2415,9 +2465,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ==========================================
+    // TEST SURFACE
+    // ==========================================
+
+    // Everything above lives inside a DOMContentLoaded closure, so none of it
+    // is reachable from a test page. These are pure functions with no secrets
+    // attached; exposing them is what lets tests/frontend/ assert on the
+    // report parser directly instead of scraping rendered HTML.
+    window.__auraInternals = {
+        parseMarkdown: parseMarkdown,
+        renderInline: renderInline,
+        normalizeArticle: normalizeArticle,
+        conceptScore: conceptScore,
+        safeUrl: safeUrl,
+        esc: esc
+    };
+
+    // ==========================================
     // INITIALIZATION
     // ==========================================
-    
+
     // Initial Load
     loadDashboardStats();
     loadNewsFeed();

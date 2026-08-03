@@ -6,7 +6,10 @@
     <!-- GitHub Pages cannot set response headers, so the policy is declared
          here; this is the only CSP protecting the primary deployment.
          (frame-ancestors is header-only and intentionally omitted.) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'">
+    <!-- font-src carries 'self' as well as gstatic: without it, self-hosting a
+         font file is blocked, which rules out the only non-render-blocking
+         font path available on a host that cannot set response headers. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>AURA // AI News Intelligence System</title>
     <!-- Fonts -->
@@ -14,7 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=3.2">
+    <link rel="stylesheet" href="css/styles.css?v=4.4">
+    <link rel="stylesheet" href="css/report.css?v=4.4">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
@@ -29,33 +33,47 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="glow-bg"></div>
-    
+    <!-- Animated pixel field. Painted at ~200px wide and upscaled, so the
+         motion costs almost nothing. aria-hidden: it carries no information. -->
+    <canvas id="backdrop-canvas" class="backdrop-canvas" aria-hidden="true"></canvas>
+    <div class="glow-bg" aria-hidden="true"></div>
+    <div class="scroll-rail" id="scroll-rail" aria-hidden="true"><span></span></div>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+
     <div class="container">
         <!-- Header -->
         <header class="dashboard-header glass">
             <div class="logo-area">
                 <div class="logo-orb"></div>
+                <!-- A brand mark, not a heading: the page's single <h1> is the
+                     hero headline, and three competing <h1>s broke the
+                     heading order screen readers navigate by. -->
                 <div class="logo-text">
-                    <h1>AURA</h1>
-                    <span>NEWS INTELLIGENCE SYSTEM</span>
+                    <span class="logo-word">AURA</span>
+                    <span>BENEFICIAL OWNERSHIP INTELLIGENCE</span>
                 </div>
             </div>
-            
+
+            <nav class="section-nav" aria-label="Sections">
+                <a href="#brief" class="nav-link">Brief</a>
+                <a href="#register" class="nav-link">PSC Register</a>
+                <a href="#workspace" class="nav-link">Feed</a>
+                <a href="#network" class="nav-link">Network</a>
+            </nav>
+
             <div class="system-status">
                 <div class="status-item">
                     <span class="pulse green"></span>
                     <span>Ingestion: Active</span>
                 </div>
-                <div class="status-item">
-                    <span class="pulse purple"></span>
-                    <span>NLP Pipeline: Online</span>
-                </div>
-                <button id="view-psc-btn" class="btn btn-secondary">
-                    <i data-lucide="shield-alert"></i> PSC Disclosure
-                </button>
-                <button id="view-reports-btn" class="btn btn-secondary">
-                    <i data-lucide="file-text"></i> Daily Reports
+                <!-- WCAG 2.2.2: content that moves for more than five seconds
+                     needs a visible pause control. prefers-reduced-motion is
+                     not a substitute, because it is an OS-level setting the
+                     user may not want to change globally. -->
+                <button id="motion-toggle" class="btn btn-icon" aria-pressed="false"
+                        title="Pause background motion" aria-label="Pause background motion">
+                    <i data-lucide="pause"></i>
                 </button>
                 <button id="export-csv-btn" class="btn btn-secondary">
                     <i data-lucide="download"></i> Export CSV
@@ -66,46 +84,159 @@
             </div>
         </header>
 
-        <!-- Stats Counter Section -->
-        <section class="stats-grid">
-            <div class="stat-card glass">
-                <div class="stat-icon purple-glow"><i data-lucide="newspaper"></i></div>
-                <div class="stat-info">
-                    <h3 id="stat-articles">0</h3>
-                    <p>Total Articles</p>
+        <main id="main">
+        <!-- ==========================================================
+             HERO — the site's primary purpose is the PSC brief, so the
+             brief's headline and verdict lead the page. Everything else
+             is supporting evidence.
+             ========================================================== -->
+        <section class="hero" id="top">
+            <div class="hero-copy">
+                <span class="eyebrow" data-reveal>
+                    <span class="eyebrow-dot"></span>
+                    Persons with Significant Control · Nigeria · CAMA 2020
+                </span>
+                <h1 class="hero-headline" id="hero-headline" data-reveal>
+                    Who really controls Nigeria&rsquo;s companies
+                </h1>
+                <p class="hero-lede" id="hero-lede" data-reveal>
+                    Reading the news four times a day and turning it into a structured register of
+                    beneficial owners, board changes and procurement awards.
+                </p>
+                <div class="hero-meta" id="hero-meta" data-reveal></div>
+                <div class="hero-actions" data-reveal>
+                    <a href="#brief" class="btn btn-primary"><i data-lucide="file-text"></i> Read today&rsquo;s brief</a>
+                    <a href="#register" class="btn btn-secondary"><i data-lucide="shield-alert"></i> Open the PSC register</a>
+                </div>
+                <div class="hero-kpis" id="hero-kpis" data-reveal-stagger></div>
+            </div>
+
+            <figure class="hero-globe" data-reveal>
+                <!-- Not decoration: the arcs run from Lagos and Abuja to the
+                     secrecy jurisdictions that turn up in ownership chains. -->
+                <canvas id="globe-canvas" role="img"
+                        aria-label="Rotating globe tracing ownership chains from Lagos and Abuja to offshore secrecy jurisdictions"></canvas>
+                <figcaption id="globe-caption">
+                    <strong>Offshore exposure.</strong>
+                    <span id="globe-caption-detail">Control routes leaving Nigeria for secrecy jurisdictions.</span>
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- CRITICAL ALERTS — full-bleed band, ranked by severity -->
+        <section class="alert-band" id="alerts" data-reveal>
+            <div class="alert-band-head">
+                <h2><span class="alert-siren" aria-hidden="true"></span> Critical alerts</h2>
+                <span class="alert-band-count" id="alert-band-count" aria-live="polite"></span>
+            </div>
+            <div id="alerts-list" class="alerts-list"></div>
+        </section>
+
+        <!-- ==========================================================
+             THE BRIEF — promoted out of a modal onto the page itself.
+             In a dialog it was un-linkable, un-printable and invisible
+             to search engines, which are fatal properties for the thing
+             that IS the product.
+             ========================================================== -->
+        <section class="brief-section" id="brief" data-reveal>
+            <div class="section-head">
+                <div>
+                    <span class="section-kicker">01 — Daily intelligence brief</span>
+                    <h2>Executive brief</h2>
+                </div>
+                <div class="section-actions">
+                    <label class="archive-picker">
+                        <span>Edition</span>
+                        <select id="brief-archive-select" aria-label="Choose a report edition"></select>
+                    </label>
+                    <button id="brief-copy-btn" class="btn btn-secondary btn-sm">
+                        <i data-lucide="copy"></i> Copy
+                    </button>
+                    <button id="brief-print-btn" class="btn btn-secondary btn-sm">
+                        <i data-lucide="printer"></i> Print
+                    </button>
+                    <button id="view-reports-btn" class="btn btn-secondary btn-sm">
+                        <i data-lucide="library"></i> All editions
+                    </button>
                 </div>
             </div>
-            <div class="stat-card glass">
-                <div class="stat-icon blue-glow"><i data-lucide="users"></i></div>
-                <div class="stat-info">
-                    <h3 id="stat-entities">0</h3>
-                    <p>Resolved Entities</p>
-                </div>
-            </div>
-            <div class="stat-card glass">
-                <div class="stat-icon green-glow"><i data-lucide="git-branch"></i></div>
-                <div class="stat-info">
-                    <h3 id="stat-events">0</h3>
-                    <p>Detected Events</p>
-                </div>
-            </div>
-            <div class="stat-card glass alert-glow" id="stat-alerts-card">
-                <div class="stat-icon red-glow"><i data-lucide="alert-triangle"></i></div>
-                <div class="stat-info">
-                    <h3 id="stat-alerts">0</h3>
-                    <p>Critical Alerts</p>
-                </div>
+
+            <div class="brief-layout">
+                <aside class="brief-toc" aria-label="Brief contents">
+                    <h3>Contents</h3>
+                    <ol id="brief-toc-list"></ol>
+                </aside>
+                <article class="brief-body" id="brief-body">
+                    <div class="loading-placeholder"><div class="spinner"></div><p>Loading the latest brief…</p></div>
+                </article>
             </div>
         </section>
 
+        <!-- ==========================================================
+             PSC REGISTER — inline, with the Nigerian 5% band scheme
+             ========================================================== -->
+        <section class="register-section" id="register" data-reveal>
+            <div class="section-head">
+                <div>
+                    <span class="section-kicker">02 — Statutory register</span>
+                    <h2>Persons with Significant Control</h2>
+                </div>
+                <div class="section-actions">
+                    <button id="view-psc-btn" class="btn btn-secondary btn-sm">
+                        <i data-lucide="maximize-2"></i> Full panel
+                    </button>
+                    <button id="register-csv-btn" class="btn btn-secondary btn-sm">
+                        <i data-lucide="download"></i> Export CSV
+                    </button>
+                </div>
+            </div>
+
+            <div id="register-demo-banner" class="psc-demo-banner" hidden>
+                <i data-lucide="flask-conical"></i>
+                <span><strong>Illustrative data.</strong> These rows are seeded examples used to
+                demonstrate the register. They are <strong>not</strong> extracted intelligence and
+                must not be used for compliance.</span>
+            </div>
+
+            <div class="register-kpis" id="register-kpis" data-reveal-stagger></div>
+
+            <!-- The threshold that makes this product different: Nigeria
+                 discloses from 5%, the UK and FATF from 25%. -->
+            <div class="band-scale" id="band-scale" aria-label="CAMA 2020 disclosure bands"></div>
+
+            <div class="register-controls">
+                <div class="register-filters" id="register-filters"></div>
+                <div class="search-box register-search">
+                    <input type="text" id="register-search" placeholder="Search holder, company or vehicle…"
+                           aria-label="Search the PSC register">
+                    <button type="button" aria-label="Search"><i data-lucide="search"></i></button>
+                </div>
+            </div>
+
+            <div id="register-list" class="register-list"></div>
+        </section>
+
         <!-- Main Workspace Grid -->
-        <main class="workspace-grid">
+        <section class="section-head standalone" id="workspace" data-reveal>
+            <div>
+                <span class="section-kicker">03 — Evidence base</span>
+                <h2>Source intelligence</h2>
+            </div>
+            <div class="pipeline-stats" data-reveal-stagger>
+                <div class="pipe-stat"><span id="stat-articles">0</span><small>Articles</small></div>
+                <div class="pipe-stat"><span id="stat-entities">0</span><small>Entities</small></div>
+                <div class="pipe-stat"><span id="stat-events">0</span><small>Events</small></div>
+                <div class="pipe-stat alert" id="stat-alerts-card"><span id="stat-alerts">0</span><small>Elevated</small></div>
+            </div>
+        </section>
+
+        <div class="workspace-grid">
             <!-- Left Panel: Feed and Search -->
-            <section class="workspace-panel glass feed-panel">
+            <section class="workspace-panel glass feed-panel" data-reveal>
                 <div class="panel-header">
                     <h2>Intelligence Feed</h2>
                     <div class="search-box">
-                        <input type="text" id="search-input" placeholder="Search keyword or semantic query..." aria-label="Search input">
+                        <input type="text" id="search-input" placeholder="Search keyword, entity or concept…" aria-label="Search input">
                         <button id="search-btn" aria-label="Search"><i data-lucide="search"></i></button>
                     </div>
                 </div>
@@ -114,9 +245,12 @@
                         <input type="checkbox" id="search-type-toggle">
                         <span class="slider"></span>
                     </label>
-                    <span id="search-label">Standard Keyword</span>
+                    <span id="search-label">Keyword match</span>
+                    <span class="search-hint" id="search-hint">Switch on to trace an entity across articles, owners and the register</span>
                 </div>
-                
+
+                <div id="trace-panel" class="trace-panel" hidden></div>
+
                 <div class="feed-filters-container">
                     <div class="feed-filters-row">
                         <span class="filter-label">Category:</span>
@@ -157,12 +291,15 @@
 
             <!-- Right Panel: Graph and Insights -->
             <div class="insights-column">
-                <section class="workspace-panel glass graph-panel" style="position: relative;">
+                <section class="workspace-panel glass graph-panel" id="network" data-reveal>
                     <div class="panel-header">
                         <h2>Knowledge Graph</h2>
                         <span class="subtitle" id="graph-stats">Entity relationships map</span>
                     </div>
-                    <div class="graph-legend" aria-hidden="true">
+                    <!-- Not aria-hidden: the legend is the only thing that
+                         explains what the node shapes and colours mean, and
+                         hiding it left screen-reader users with no key at all. -->
+                    <div class="graph-legend">
                         <span class="legend-item"><span class="legend-swatch person"></span>Person</span>
                         <span class="legend-item"><span class="legend-swatch company"></span>Company</span>
                         <span class="legend-item"><span class="legend-swatch agency"></span>Agency</span>
@@ -180,27 +317,37 @@
                 </section>
 
                 <div class="split-insights">
-                    <!-- Alerts and watchlists -->
-                    <section class="workspace-panel glass alerts-panel">
+                    <!-- NLP Charts. The alerts panel that used to sit here has
+                         moved to the full-width band above the brief: burying
+                         critical alerts in a quarter-width box beneath the fold
+                         was the opposite of the emphasis they need. -->
+                    <section class="workspace-panel glass chart-panel" data-reveal>
                         <div class="panel-header">
-                            <h2>Critical Alerts</h2>
-                        </div>
-                        <div id="alerts-list" class="alerts-list">
-                            <!-- Loaded dynamically -->
-                        </div>
-                    </section>
-
-                    <!-- NLP Charts -->
-                    <section class="workspace-panel glass chart-panel">
-                        <div class="panel-header">
-                            <h2>Risk & Category Mix</h2>
+                            <h2>Risk &amp; Category Mix</h2>
                         </div>
                         <div class="chart-container">
                             <canvas id="mix-chart"></canvas>
                         </div>
+                        <!-- Charts are invisible to assistive tech, so the same
+                             numbers are also exposed as text. -->
+                        <p class="chart-summary sr-only" id="mix-chart-summary"></p>
                     </section>
                 </div>
             </div>
+        </div><!-- /.workspace-grid -->
+
+        <footer class="site-footer" data-reveal>
+            <p>
+                AURA reads Nigerian business and regulatory reporting four times a day and turns it
+                into a structured beneficial-ownership register. Records are extracted by a language
+                model from news reporting and are <strong>not</strong> a substitute for the statutory
+                CAC register.
+            </p>
+            <p class="footer-legal">
+                Names may be shared by more than one person or company. A record here is evidence of
+                reporting, not a finding of wrongdoing.
+            </p>
+        </footer>
         </main>
     </div>
 
@@ -330,28 +477,28 @@
                 <div class="psc-kpi-bar" id="psc-kpi-bar">
                     <div class="psc-kpi-card">
                         <span class="kpi-label">Tracked Beneficial Owners</span>
-                        <div class="kpi-value" id="kpi-total-psc">8</div>
+                        <div class="kpi-value" id="kpi-total-psc">&mdash;</div>
                         <span class="kpi-subtext">CAMA 2020 Registered</span>
                     </div>
                     <div class="psc-kpi-card">
                         <span class="kpi-label">Avg Controlling Equity</span>
-                        <div class="kpi-value" id="kpi-avg-stake">56.1%</div>
+                        <div class="kpi-value" id="kpi-avg-stake">&mdash;</div>
                         <span class="kpi-subtext">Direct & Indirect Shares</span>
                     </div>
                     <div class="psc-kpi-card">
                         <span class="kpi-label">Indirect Vehicle Chains</span>
-                        <div class="kpi-value" id="kpi-indirect-cnt">7</div>
+                        <div class="kpi-value" id="kpi-indirect-cnt">&mdash;</div>
                         <span class="kpi-subtext">Holding & Trust Entities</span>
                     </div>
                     <div class="psc-kpi-card highlight-risk">
                         <span class="kpi-label">Red Flag Alerts</span>
-                        <div class="kpi-value" id="kpi-redflag-cnt" style="color:#ef4444;">4</div>
+                        <div class="kpi-value" id="kpi-redflag-cnt" style="color:#ef4444;">&mdash;</div>
                         <span class="kpi-subtext">Voting & PEP Anomalies</span>
                     </div>
                     <div class="psc-kpi-card" style="border-left:3px solid #10b981;">
-                        <span class="kpi-label">CAMA 2020 Compliance</span>
-                        <div class="kpi-value" id="kpi-cama-status" style="color:#10b981; font-size:18px;">94.2%</div>
-                        <span class="kpi-subtext">Verified Filings</span>
+                        <span class="kpi-label">Cite a filing reference</span>
+                        <div class="kpi-value" id="kpi-cama-status" style="color:#10b981; font-size:18px;">&mdash;</div>
+                        <span class="kpi-subtext">Share of records with a CAC/SEC ref</span>
                     </div>
                 </div>
 
@@ -360,7 +507,11 @@
                     <div class="psc-filter-chips" id="psc-filter-chips">
                         <button class="psc-chip active" data-filter="all">All Disclosures</button>
                         <button class="psc-chip" data-filter="redflags" style="border-color:rgba(239,68,68,0.4); color:#ef4444;">🚩 Red Flag Alerts</button>
-                        <button class="psc-chip" data-filter="tier1">Tier 1 (>75%)</button>
+                        <!-- "Tier 1 (>75%)" was UK-shaped framing. Nigeria's
+                             statutory threshold is 5% (CAMA 2020 s.868), so the
+                             bands are labelled by their actual range. -->
+                        <button class="psc-chip" data-filter="tier1">75% and above</button>
+                        <button class="psc-chip" data-filter="nigeriaband">5–25% (Nigeria only)</button>
                         <button class="psc-chip" data-filter="indirect">Indirect Vehicle</button>
                         <button class="psc-chip" data-filter="pep">PEP Proximity</button>
                         <button class="psc-chip" data-filter="cross">Cross-Holdings</button>
@@ -399,6 +550,16 @@
         </div>
     </div>
 
-    <script src="js/app.js?v=3.2"></script>
+    <!-- Local modules, all served from 'self': no CSP surface and no SRI
+         needed. Order matters — app.js and psc-report.js consume the globals
+         the earlier files define. -->
+    <script src="js/motion.js?v=4.4"></script>
+    <script src="js/backdrop.js?v=4.4"></script>
+    <script src="js/globe-data.js?v=4.4"></script>
+    <script src="js/globe.js?v=4.4"></script>
+    <script src="js/psc-core.js?v=4.4"></script>
+    <script src="js/report-markdown.js?v=4.4"></script>
+    <script src="js/app.js?v=4.4"></script>
+    <script src="js/psc-report.js?v=4.4"></script>
 </body>
 </html>
