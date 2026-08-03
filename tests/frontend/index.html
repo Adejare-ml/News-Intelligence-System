@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AURA frontend tests</title>
+<style>
+  body { background:#0d0f16; color:#e5e7eb; font:14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; padding:24px; }
+  h1 { font-size:16px; letter-spacing:.08em; text-transform:uppercase; color:#9ca3af; }
+  pre { white-space:pre-wrap; padding:16px; border-radius:10px; border:1px solid rgba(255,255,255,.1); }
+  pre.pass { background:rgba(16,185,129,.08); border-color:rgba(16,185,129,.4); color:#6ee7b7; }
+  pre.fail { background:rgba(244,63,94,.08); border-color:rgba(244,63,94,.4); color:#fda4af; }
+</style>
+</head>
+<body>
+<h1>AURA frontend tests</h1>
+<pre id="out">running…</pre>
+
+<!-- Modules under test, loaded from the shipping directory. -->
+<script src="../../backend/app/static/js/psc-core.js"></script>
+<script src="../../backend/app/static/js/report-markdown.js"></script>
+
+<script src="runner.js"></script>
+<script src="psc-core.test.js"></script>
+</body>
+</html>

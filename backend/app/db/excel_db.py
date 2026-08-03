@@ -18,13 +18,19 @@ SHEETS_CONFIG = {
     # Enriched beneficial-ownership schema. _append_row filters strictly to
     # these columns, so every field run_pipeline.py writes must appear here or
     # it is silently discarded between the LLM and the sheet.
+    # "Voting Rights %" and "Share Band" support the CAMA 2020 band scheme
+    # (Nigeria discloses from 5%, not the UK/FATF 25%); "Source" separates
+    # extracted records from seeded demo rows so the dashboard can label them
+    # honestly instead of inferring it from whether the list is empty.
     "Significant Control": [
         "Person Name", "Company", "Nature of Control", "Board Role", "Percentage",
-        "Direct %", "Indirect %", "Intermediate Entities",
+        "Direct %", "Indirect %", "Voting Rights %", "Share Band", "Intermediate Entities",
         "PEP Status", "Risk Level", "Regulatory Filing Ref",
-        "Verification Status", "Change Type", "Previous Holder", "Date"
+        "Verification Status", "Change Type", "Previous Holder", "Date", "Source"
     ],
-    "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Content"]
+    # "Archive File" resolves an edition to its exact archived markdown file.
+    # Added after runs 2-4 of each day were found to overwrite run 1's archive.
+    "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Archive File", "Content"]
 }
 
 def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, Any]:

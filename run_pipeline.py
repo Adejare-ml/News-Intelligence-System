@@ -59,6 +59,53 @@ def is_publication_or_furniture(name: str) -> bool:
         return True
     return any(marker in cleaned for marker in NEWS_OUTLET_MARKERS)
 
+
+# Nigerian PSC disclosure bands.
+#
+# CAMA 2020 s.868, read with the CAC Persons with Significant Control
+# Regulations 2022, sets the Nigerian threshold at **5%** of shares or voting
+# rights -- not the 25% used by the UK PSC register and the FATF standard.
+# A 6% holder is a statutory PSC in Nigeria and invisible to a UK-calibrated
+# tool, so the 5-25% band is tracked as a first-class category.
+SHARE_BANDS = (
+    (75.0, "BAND_75_100"),
+    (50.0, "BAND_50_75"),
+    (25.0, "BAND_25_50"),
+    (5.0, "BAND_5_25"),
+)
+
+
+def share_band(percentage: Any) -> str:
+    """Map a percentage (number, or a string like '28.5%') onto a CAMA band.
+
+    Returns "" when no figure was disclosed, so the UI can say "not disclosed"
+    rather than implying a band that was never reported.
+    """
+    if percentage is None:
+        return ""
+    try:
+        value = float(str(percentage).replace("%", "").strip())
+    except (TypeError, ValueError):
+        return ""
+    for floor, name in SHARE_BANDS:
+        if value >= floor:
+            return name
+    return "BELOW_THRESHOLD"
+
+
+# Illustrative PSC rows used only when SEED_DEMO_PSC=true.
+# Every entity here is invented. Each row carries Source="seed" so the
+# dashboard can label it as illustrative rather than extracted.
+DEMO_PSC_RECORDS: List[Dict[str, Any]] = [
+    { "Person Name": "Adaeze N. Okonkwo", "Company": "Harmattan Energy Plc", "Nature of Control": "Ownership of shares (75% to 100%)", "Percentage": "81.4%", "Direct %": "22.9%", "Indirect %": "58.5%", "Voting Rights %": "81.4%", "Share Band": "BAND_75_100", "Intermediate Entities": "Harmattan Industries Limited", "Board Role": "Founder & Group President", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0891-HRM", "Verification Status": "Filed with CAC", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-01-15", "Source": "seed", "Notes": "Controls the operating company through a single intermediate holding vehicle." },
+    { "Person Name": "Bashir Umar-Sadiq", "Company": "Kaduna Agro Holdings Plc", "Nature of Control": "Ownership of shares (50% to 75%) and right to appoint a majority of directors", "Percentage": "63.2%", "Direct %": "11.0%", "Indirect %": "52.2%", "Voting Rights %": "88.0%", "Share Band": "BAND_50_75", "Intermediate Entities": "Meridian Trust (Mauritius) Limited", "Board Role": "Executive Chairman", "PEP Status": "No", "Risk Level": "Critical Risk", "Regulatory Filing Ref": "CAC/PSC/2026/0442-KAH", "Verification Status": "Filed with CAC", "Change Type": "Increased Control", "Previous Holder": "Sahel Nominees Limited", "Date": "2026-02-10", "Source": "seed", "Notes": "Voting rights materially exceed the equity stake, and control routes through an offshore vehicle." },
+    { "Person Name": "Chinelo Adaora Eze", "Company": "Lekki Terminal Logistics Plc", "Nature of Control": "Exercises significant influence or control", "Percentage": "6.8%", "Direct %": "6.8%", "Indirect %": "0.0%", "Voting Rights %": "6.8%", "Share Band": "BAND_5_25", "Intermediate Entities": "Direct Holding", "Board Role": "Non-Executive Director", "PEP Status": "Yes - Politically exposed person", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/1029-LTL", "Verification Status": "Filed with CAC", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-03-20", "Source": "seed", "Notes": "Below the 25% FATF threshold but a statutory PSC under CAMA 2020 s.868, which sets the Nigerian threshold at 5%." },
+    { "Person Name": "Tunde Balogun", "Company": "Sahel Microfinance Bank Plc", "Nature of Control": "Ownership of shares (5% to 25%)", "Percentage": "4.7%", "Direct %": "4.7%", "Indirect %": "0.0%", "Voting Rights %": "4.7%", "Share Band": "BELOW_THRESHOLD", "Intermediate Entities": "Direct Holding", "Board Role": "Shareholder", "PEP Status": "No", "Risk Level": "Standard Disclosure", "Regulatory Filing Ref": "", "Verification Status": "Self-reported", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-05-01", "Source": "seed", "Notes": "One of several holdings parked just below the 5% disclosure threshold." },
+    { "Person Name": "Halima Yusuf-Bello", "Company": "Sahel Microfinance Bank Plc", "Nature of Control": "Ownership of shares (5% to 25%)", "Percentage": "4.9%", "Direct %": "4.9%", "Indirect %": "0.0%", "Voting Rights %": "4.9%", "Share Band": "BELOW_THRESHOLD", "Intermediate Entities": "Direct Holding", "Board Role": "Shareholder", "PEP Status": "No", "Risk Level": "Standard Disclosure", "Regulatory Filing Ref": "", "Verification Status": "Self-reported", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-05-01", "Source": "seed", "Notes": "Second sub-threshold holding in the same company; see the sub-threshold structuring rule." },
+    { "Person Name": "Adaeze N. Okonkwo", "Company": "Lekki Terminal Logistics Plc", "Nature of Control": "Ownership of shares (25% to 50%)", "Percentage": "28.5%", "Direct %": "4.0%", "Indirect %": "24.5%", "Voting Rights %": "28.5%", "Share Band": "BAND_25_50", "Intermediate Entities": "Harmattan Industries Limited", "Board Role": "Non-Executive Director", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0554-LTL", "Verification Status": "Filed with CAC", "Change Type": "Increased Control", "Previous Holder": "Zamfara Nominees Limited", "Date": "2026-06-18", "Source": "seed", "Notes": "Second disclosed holding for the same person, giving a cross-entity portfolio." }
+]
+
+
 def main():
     parser = argparse.ArgumentParser(description="AI News Intelligence Serverless Pipeline")
     parser.add_argument("--seed", action="store_true", help="Seed the database with high-fidelity mock events")
@@ -245,23 +292,35 @@ def run_pipeline(seed: bool = False):
             })
             
         # Write Significant Control (PSC)
+        #
+        # `psc.get(key, default)` was wrong here: the extraction schema tells
+        # the model to emit null for anything it cannot find, so the key is
+        # present with a None value and the default never fires. That wrote
+        # None into the sheet and let the dashboard fall back to inventing a
+        # plausible-looking filing reference. `.get(key) or default` collapses
+        # both the missing-key and explicit-null cases onto the default.
         for psc in analysis.get("significant_control", []):
             db.add_significant_control({
-                "Person Name": psc.get("name"),
-                "Company": psc.get("organization", "N/A"),
-                "Nature of Control": psc.get("nature_of_control", "N/A"),
+                "Person Name": psc.get("name") or "",
+                "Company": psc.get("organization") or "",
+                "Nature of Control": psc.get("nature_of_control") or "",
                 "Board Role": psc.get("board_role") or "",
-                "Percentage": psc.get("percentage", "N/A"),
-                "Direct %": psc.get("direct_percentage", "N/A"),
-                "Indirect %": psc.get("indirect_percentage", "N/A"),
-                "Intermediate Entities": psc.get("intermediate_entities", "Direct Holding"),
-                "PEP Status": psc.get("pep_status", "No"),
-                "Risk Level": psc.get("risk_level", "Standard"),
-                "Regulatory Filing Ref": psc.get("regulatory_filing_ref", "Pending Filing"),
-                "Verification Status": "Disclosed",
-                "Change Type": psc.get("change_type", "disclosed"),
-                "Previous Holder": psc.get("previous_holder", "N/A"),
-                "Date": datetime.now().strftime("%Y-%m-%d")
+                "Percentage": psc.get("percentage") or "",
+                "Direct %": psc.get("direct_percentage") or "",
+                "Indirect %": psc.get("indirect_percentage") or "",
+                "Voting Rights %": psc.get("voting_rights_percentage") or "",
+                "Share Band": share_band(psc.get("percentage")),
+                "Intermediate Entities": psc.get("intermediate_entities") or "Direct Holding",
+                "PEP Status": psc.get("pep_status") or "Not assessed",
+                "Risk Level": psc.get("risk_level") or "Standard",
+                "Regulatory Filing Ref": psc.get("regulatory_filing_ref") or "",
+                "Verification Status": "Extracted from news reporting",
+                "Change Type": psc.get("change_type") or "disclosed",
+                "Previous Holder": psc.get("previous_holder") or "",
+                "Date": datetime.now().strftime("%Y-%m-%d"),
+                # Distinguishes real extractions from seeded demo rows so the
+                # dashboard can label them honestly.
+                "Source": "extracted"
             })
             
         articles_processed += 1
@@ -407,10 +466,15 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         f.write(md)
     logger.info(f"Wrote latest report markdown to {md_path}")
     
-    # Save timestamped archive markdown file
+    # Save timestamped archive markdown file.
+    #
+    # The name carries the time, not just the date. The scheduler runs four
+    # times a day and the old date-only name meant runs 2-4 silently
+    # overwrote run 1, so all four archive rows for a given day resolved to
+    # whichever report happened to be written last.
     archive_dir = os.path.join(DATA_DIR, "archives")
     os.makedirs(archive_dir, exist_ok=True)
-    archive_name = f"report_{now.strftime('%Y%m%d')}.md"
+    archive_name = f"report_{now.strftime('%Y%m%d_%H%M%S')}.md"
     archive_path = os.path.join(archive_dir, archive_name)
     with open(archive_path, "w", encoding="utf-8") as f:
         f.write(md)
@@ -423,6 +487,9 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         "Appointments": appointments_count,
         "Procurement": procurement_count,
         "Generated": now.strftime("%Y-%m-%d %H:%M:%S"),
+        # The exact archive filename, so a reader can resolve an edition to
+        # its document instead of guessing from the date.
+        "Archive File": archive_name,
         "Content": md
     })
 
@@ -451,17 +518,21 @@ def export_static_json_database():
     psc_records = db.get_significant_control()
     # Demo PSC rows are strictly opt-in (SEED_DEMO_PSC=true). By default an
     # empty Significant Control tab stays empty instead of being re-seeded
-    # with placeholder billionaire disclosures.
+    # with placeholder disclosures.
+    #
+    # Every seeded row carries Source="seed". The dashboard keys its
+    # "illustrative data" banner off that field rather than off "is the list
+    # empty", because a seeded list is non-empty and the old check therefore
+    # never fired -- publishing sample records as though they were extracted
+    # intelligence.
+    #
+    # The entities below are invented. An earlier version of this seed used
+    # real named individuals with invented ownership percentages, invented CAC
+    # filing references and, in one case, an invented PEP classification. That
+    # is defamatory in a compliance product and must never come back: if you
+    # need richer demo data, extend these fictional entities.
     if not psc_records and settings.SEED_DEMO_PSC:
-        default_psc_records = [
-            { "Person Name": "Alhaji Aliko Dangote", "Company": "Dangote Cement Plc", "Nature of Control": "Direct & Indirect ownership of >25% shares and voting rights", "Percentage": "85.8%", "Direct %": "27.3%", "Indirect %": "58.5%", "Intermediate Entities": "Dangote Industries Limited", "Board Role": "Founder & Group President", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0891-DNG", "Verification Status": "CAC & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-01-15", "Notes": "Ultimate Beneficial Owner via Dangote Industries Ltd holding controlling equity across Dangote Cement Plc." },
-            { "Person Name": "Abdul Samad Rabiu", "Company": "BUA Foods Plc", "Nature of Control": "Direct & Indirect ownership of >25% shares & board appointments", "Percentage": "89.0%", "Direct %": "32.0%", "Indirect %": "57.0%", "Intermediate Entities": "BUA Group International Limited", "Board Role": "Executive Chairman", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0442-BUA", "Verification Status": "CAC & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-02-10", "Notes": "Exercises voting rights and board appointment controls through BUA Group parent entity." },
-            { "Person Name": "Jubril Adewale Tinubu", "Company": "Oando Plc", "Nature of Control": "Indirect ownership via Ocean and Oil Development", "Percentage": "66.7%", "Direct %": "3.4%", "Indirect %": "63.3%", "Intermediate Entities": "Ocean and Oil Development Partners (OODP) Ltd", "Board Role": "Group Chief Executive Officer", "PEP Status": "Yes - Politically Exposed Family Link", "Risk Level": "Critical Risk", "Regulatory Filing Ref": "CAC/PSC/2026/1029-OAN", "Verification Status": "SEC Disclosed", "Change Type": "Increased Control", "Previous Holder": "Whitman Investments", "Date": "2026-03-20", "Notes": "Increased beneficial ownership following acquisition of minority holdings via OODP investment vehicle." },
-            { "Person Name": "Femi Otedola", "Company": "Geregu Power Plc", "Nature of Control": "Direct & Indirect ownership of >25% voting shares", "Percentage": "78.6%", "Direct %": "40.1%", "Indirect %": "38.5%", "Intermediate Entities": "Amperion Power Distribution Limited", "Board Role": "Chairman of the Board", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0115-GER", "Verification Status": "CAC & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-04-12", "Notes": "Maintains controlling interest in Geregu Power Plc via direct shareholding and Amperion Power." },
-            { "Person Name": "Jim Ovia", "Company": "Zenith Bank Plc", "Nature of Control": "Direct & indirect ownership of >15% voting rights", "Percentage": "16.2%", "Direct %": "9.2%", "Indirect %": "7.0%", "Intermediate Entities": "Institutional & Trust Vehicles (Quantum Zenith)", "Board Role": "Founder & Non-Executive Chairman", "PEP Status": "No", "Risk Level": "Standard Disclosure", "Regulatory Filing Ref": "CAC/PSC/2026/0912-ZEN", "Verification Status": "CBN & SEC Verified", "Change Type": "Disclosed", "Previous Holder": "", "Date": "2026-05-01", "Notes": "Largest individual beneficial owner of Zenith Bank Plc with significant board nomination influence." },
-            { "Person Name": "Tony O. Elumelu", "Company": "United Bank for Africa (UBA) Plc", "Nature of Control": "Indirect ownership via Heirs Holdings Limited", "Percentage": "24.5%", "Direct %": "2.1%", "Indirect %": "22.4%", "Intermediate Entities": "Heirs Holdings Limited / HH Capital Limited", "Board Role": "Group Chairman", "PEP Status": "No", "Risk Level": "Elevated Control", "Regulatory Filing Ref": "CAC/PSC/2026/0554-UBA", "Verification Status": "CBN & SEC Verified", "Change Type": "Increased Control", "Previous Holder": "Transnational Corporation Plc", "Date": "2026-06-18", "Notes": "Consolidated beneficial interest in UBA Plc via HH Capital market acquisitions." },
-            { "Person Name": "Aigboje Aig-Imoukhuede", "Company": "Access Holdings Plc", "Nature of Control": "Indirect ownership of voting rights & Non-Exec Chairman", "Percentage": "12.4%", "Direct %": "1.8%", "Indirect %": "10.6%", "Intermediate Entities": "Tengen Holdings (Mauritius) Limited", "Board Role": "Non-Executive Chairman", "PEP Status": "No", "Risk Level": "Standard Disclosure", "Regulatory Filing Ref": "CAC/PSC/2026/0319-ACC", "Verification Status": "CBN & SEC Verified", "Change Type": "Appointed", "Previous Holder": "Bababode Osunkoya (Deceased)", "Date": "2026-03-14", "Notes": "Return to Access Holdings Plc board as Non-Executive Chairman with indirect stake via Tengen Holdings." }
-        ]
+        default_psc_records = DEMO_PSC_RECORDS
         psc_records = default_psc_records
         for r in default_psc_records:
             try:
