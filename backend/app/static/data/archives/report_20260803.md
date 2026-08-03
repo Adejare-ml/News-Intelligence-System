@@ -1,40 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-08-03 15:40:11 (UTC+1)
+**Generated on:** 2026-08-03 19:00:32 (UTC+1)
 **Run Window:** Daily Crawler Exec
 
 ## Summary Statistics
-- **Total Articles Processed:** 10
+- **Total Articles Processed:** 5
 - **High Risk Signals:** 0
-- **Appointments Logged:** 4
-- **Procurement Awards:** 0
+- **Appointments Logged:** 0
+- **Procurement Awards:** 1
 
 ---
 
 ### Key Developments
 
-* **Public Sector Procurement Policy**: The Federal Government of Nigeria has prohibited ministries from awarding contracts without secured funding to prevent the accumulation of abandoned projects across the country.
-* **Financial & Insurance Sector Capitalization**: The National Insurance Commission (NAICOM) concluded a recapitalization exercise for 43 insurance companies to enforce minimum regulatory capital thresholds.
-* **Taxation Regulation**: The Nigeria Revenue Service (NRS) issued updated regulatory guidelines governing the taxation of virtual assets.
-* **Macroeconomic Revenue**: Federal crude oil export earnings reached N24 trillion over a six-month period.
-* **State Economic Governance**: The Benue State Government unveiled its economic transformation roadmap and inaugurated its advisory council.
-* **Corporate Alliances & Performance**: Payaza partnered with Lebara Nigeria to expand digital payment infrastructure; Axxela logged 10 million Lost Time Injury (LTI)-free man-hours and achieved dual credit rating milestones.
+* **State Security Reform:** The Nigerian Presidency has launched nationwide consultations to establish a legal framework for decentralizing security through State Police forces.
+* **Education Sector Strategy:** The Joint Admissions and Matriculation Board (JAMB) has announced a five-year strategic roadmap aimed at organizational transformation and operational reform.
+* **Corporate Performance:** Fidson Healthcare Plc, Nigeria’s largest pharmaceutical firm, paid out N3.6 billion in dividends to shareholders following strong financial returns.
 
 ### High Risk Alerts
 
-There are no high-risk alerts or critical compliance red flags identified in the provided dataset; all reported events currently represent low risk scores (0–20).
+* **MDA Audit Boycott & Oversight Evasion (Risk Score: 50 | Medium Risk):** The Senate Public Accounts Committee has threatened sanctions against key Ministries, Departments, and Agencies (MDAs)—including the Central Bank of Nigeria (CBN), the Nigerian Upstream Petroleum Regulatory Commission (NUPRC), and the Niger Delta Development Commission (NDDC)—for repeatedly failing to appear for legislative audit reviews. This failure to account for public funds presents significant fiscal transparency and operational integrity risks across high-revenue sectors.
 
 ### Beneficial Ownership & PSC Disclosures
 
-There are no Persons with Significant Control (PSC) or beneficial ownership disclosures present in the provided dataset.
+The provided data contains no Person with Significant Control (PSC) or beneficial ownership disclosures.
 
 ### Procurement & Board Changes
 
-* **Procurement Governance**: The Federal Government issued a binding directive barring Ministries, Departments, and Agencies (MDAs) from issuing unfunded procurement contracts.
-* **Institutional & Leadership Appointments**:
-  * **University of Lagos (UNILAG)**: Professor Oyewunmi was appointed Dean of the Faculty of Law, succeeding Professor Sanni following his resignation.
-  * **Benue State Economic Advisory Council**: Okigbo was appointed as a member of the newly formed council.
-  * **International Crisis Group**: Comfort Ero was appointed as Head of the organization.
-  * **All Progressives Congress (APC)**: Endorsed Ali Isa as the party's gubernatorial running mate for Borno State ahead of the 2027 elections.
+* **Infrastructure Procurement:** Governor Nwifuru of Ebonyi State has awarded a public contract for the establishment of a new cement factory in Abakaliki. Specific contractor details, procurement framework parameters, and final financial considerations remain unverified in public filings.
+* **Board & Executive Changes:** No corporate or MDA board structure adjustments were recorded in this period.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
