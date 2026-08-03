@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=3.1">
+    <link rel="stylesheet" href="css/styles.css?v=3.2">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
@@ -205,7 +205,7 @@
     </div>
 
     <!-- Article Detail Modal -->
-    <div id="detail-modal" class="modal-overlay">
+    <div id="detail-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-content glass">
             <div class="modal-header">
                 <span id="modal-category" class="badge">Government</span>
@@ -253,7 +253,7 @@
     </div>
 
     <!-- Daily Reports Reader Modal -->
-    <div id="reports-modal" class="modal-overlay">
+    <div id="reports-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="PSC and Company Intelligence Reports">
         <div class="modal-content glass reports-modal-content">
             <div class="modal-header">
                 <h2>PSC & Company Intelligence Reports</h2>
@@ -288,7 +288,7 @@
         </div>
     </div>
     <!-- Persons with Significant Control (PSC) Modal -->
-    <div id="psc-modal" class="modal-overlay">
+    <div id="psc-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Persons with Significant Control transparency">
         <div class="modal-content glass reports-modal-content" style="max-width: 1100px;">
             <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 15px;">
                 <div style="display:flex; align-items:center; gap:10px;">
@@ -384,7 +384,7 @@
     </div>
 
     <!-- PSC Deep-Dive / UBO Dossier Modal Drawer -->
-    <div id="psc-dossier-modal" class="modal-overlay" style="z-index: 1100;">
+    <div id="psc-dossier-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="dossier-title" style="z-index: 1100;">
         <div class="modal-content glass" style="max-width: 800px; border-left: 4px solid var(--primary);">
             <div class="modal-header">
                 <div style="display:flex; align-items:center; gap:8px;">
@@ -399,6 +399,6 @@
         </div>
     </div>
 
-    <script src="js/app.js?v=3.1"></script>
+    <script src="js/app.js?v=3.2"></script>
 </body>
 </html>

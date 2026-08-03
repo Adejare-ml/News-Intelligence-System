@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: write   # the failure step files/updates a pipeline-failure issue
 
 # Serialize runs: two overlapping runs both commit to main, and the slower one
 # is rejected as non-fast-forward (a manual trigger near a cron slot did exactly
@@ -71,6 +72,42 @@ jobs:
 
       - name: Deploy static folder to gh-pages branch
         uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
+
+      # A red run is only useful if someone sees it. The 2026-07-30 outage ran
+      # for days unnoticed. Reuses a single open issue so repeated failures
+      # comment rather than spam new issues.
+      - name: Raise an issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          # Idempotent: gh issue create fails if the label does not exist yet
+          gh label create pipeline-failure --color B60205 \
+            --description "Automated scheduler run failed" 2>/dev/null || true
+
+          EXISTING=$(gh issue list --label pipeline-failure --state open \
+            --json number --jq '.[0].number // empty')
+          BODY="The scheduled pipeline failed.
+
+          **Run:** $RUN_URL
+          **Commit:** \`${{ github.sha }}\`
+          **Trigger:** ${{ github.event_name }}
+
+          Check the \`Run Crawler Pipeline\` step first. A \`LLMCascadeError\` means every
+          configured LLM provider failed and nothing was published — that is the guard
+          working, not data loss. A push rejection instead means the data was generated
+          but a concurrent run committed first."
+
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "$BODY"
+          else
+            gh issue create \
+              --title "Pipeline failure: scheduled run did not complete" \
+              --label pipeline-failure \
+              --body "$BODY"
+          fi
         with:
           folder: backend/app/static
           branch: gh-pages

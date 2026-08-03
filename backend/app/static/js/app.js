@@ -1015,6 +1015,68 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === modal) closeModal();
     });
 
+    // Focus trap: without this, tabbing inside an open modal walks into the
+    // page behind it, which strands keyboard and screen-reader users.
+    const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+    function topmostOpenModal() {
+        const open = [...document.querySelectorAll('.modal-overlay.active')];
+        if (open.length === 0) return null;
+        // Highest stacking context wins (the PSC dossier sits above the PSC list)
+        return open.sort((a, b) =>
+            (parseInt(getComputedStyle(a).zIndex, 10) || 0) - (parseInt(getComputedStyle(b).zIndex, 10) || 0)
+        ).pop();
+    }
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key !== "Tab") return;
+        const modal = topmostOpenModal();
+        if (!modal) return;
+
+        const items = [...modal.querySelectorAll(FOCUSABLE)]
+            .filter(el => el.offsetParent !== null || el === document.activeElement);
+        if (items.length === 0) return;
+
+        const first = items[0];
+        const last = items[items.length - 1];
+
+        if (!modal.contains(document.activeElement)) {
+            e.preventDefault();
+            first.focus();
+            return;
+        }
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    });
+
+    // Move focus into a modal when it opens, and restore it on close
+    let lastFocusedBeforeModal = null;
+    const modalObserver = new MutationObserver((mutations) => {
+        mutations.forEach(m => {
+            if (m.attributeName !== "class") return;
+            const el = m.target;
+            if (!el.classList.contains("modal-overlay")) return;
+            if (el.classList.contains("active")) {
+                lastFocusedBeforeModal = lastFocusedBeforeModal || document.activeElement;
+                const target = el.querySelector(FOCUSABLE);
+                if (target) setTimeout(() => target.focus(), 50);
+            } else if (!document.querySelector(".modal-overlay.active")) {
+                if (lastFocusedBeforeModal && lastFocusedBeforeModal.focus) {
+                    lastFocusedBeforeModal.focus();
+                }
+                lastFocusedBeforeModal = null;
+            }
+        });
+    });
+    document.querySelectorAll(".modal-overlay").forEach(m =>
+        modalObserver.observe(m, { attributes: true, attributeFilter: ["class"] })
+    );
+
     // Global keyboard navigation
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
