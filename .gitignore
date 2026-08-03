@@ -23,3 +23,10 @@ env/
 *.pkl
 *.onnx
 *.pth
+
+# Local Excel database fallback, written when no Google Sheets credentials
+# are configured. Run artefact, not source.
+backend/app/db/excel_db.xlsx
+
+# Claude Code local settings (launch.json is shared; settings.local.json is not)
+.claude/settings.local.json

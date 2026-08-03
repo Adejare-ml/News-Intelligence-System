@@ -1,0 +1,968 @@
+/* ==========================================================================
+   AURA v4 — report-first layout.
+
+   Loaded after styles.css. The site's product is the PSC brief and register,
+   so those take the page's strongest positions and the most typographic care;
+   everything below the register is supporting evidence and stays quieter.
+   ========================================================================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link {
+    position: absolute;
+    left: 12px;
+    top: -60px;
+    z-index: 200;
+    padding: 10px 18px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    font-weight: 600;
+    text-decoration: none;
+    transition: top var(--dur) var(--ease-out);
+}
+
+.skip-link:focus { top: 0; }
+
+/* Scroll progress rail, driven by a --scroll-progress custom property that
+   motion.js updates once per animation frame. */
+.scroll-rail {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    z-index: 150;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.scroll-rail span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(var(--scroll-progress, 0));
+    transform-origin: 0 50%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+/* ---------- Header ---------- */
+
+.dashboard-header {
+    position: sticky;
+    top: 8px;
+    z-index: 120;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.section-nav {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.nav-link {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+}
+
+.nav-link:hover, .nav-link:focus-visible {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-icon {
+    padding: 0;
+    width: 44px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--hairline);
+    color: var(--text-muted);
+}
+
+.btn-icon:hover { color: #fff; background: rgba(255, 255, 255, 0.1); }
+.btn-icon[aria-pressed="true"] { color: var(--secondary); border-color: rgba(6, 182, 212, 0.4); }
+
+/* ---------- Reveal choreography ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+    [data-reveal] {
+        opacity: 0;
+        transform: translateY(14px);
+        transition:
+            opacity 620ms var(--ease-out) var(--reveal-delay, 0ms),
+            transform 620ms var(--ease-out) var(--reveal-delay, 0ms);
+    }
+
+    [data-reveal].is-revealed {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Without this guard, a browser that never fires the observer would leave the
+   content permanently invisible. Reduced-motion users get everything at once. */
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+}
+
+/* ---------- Section furniture ---------- */
+
+main { display: flex; flex-direction: column; gap: 64px; }
+
+.section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+
+.section-head.standalone { margin-bottom: 0; }
+
+.section-kicker {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 6px;
+}
+
+.section-head h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.section-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+.archive-picker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.archive-picker select {
+    background: var(--surface-3);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 12px;
+    padding: 8px 10px;
+    min-height: 36px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 48px;
+    align-items: center;
+    padding: 32px 0 8px;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 7px 14px;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: var(--surface-3);
+}
+
+.eyebrow-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--secondary);
+    box-shadow: 0 0 8px var(--secondary);
+}
+
+.hero-headline {
+    font-family: var(--font-heading);
+    font-size: clamp(34px, 5.4vw, 62px);
+    line-height: 1.03;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 20px 0 18px;
+    text-wrap: balance;
+}
+
+.hero-lede {
+    font-size: clamp(15px, 1.4vw, 18px);
+    line-height: 1.65;
+    color: #cbd5e1;
+    max-width: 54ch;
+}
+
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 20px 0 26px;
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.hero-meta i { width: 13px; height: 13px; }
+.hero-meta .meta-warn { color: #fdba74; }
+
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 34px; }
+.hero-actions .btn { text-decoration: none; }
+
+.hero-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.kpi {
+    padding: 16px;
+    border-radius: var(--radius);
+    background: var(--surface-1);
+    border: 1px solid var(--hairline);
+    border-top: 1px solid var(--hairline-strong);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: border-color var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
+}
+
+.kpi:hover { border-color: var(--hairline-strong); transform: translateY(-2px); }
+
+.kpi-value {
+    font-family: var(--font-heading);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+    /* Tabular figures stop the count-up animation reflowing the card. */
+    font-variant-numeric: tabular-nums;
+}
+
+.kpi-label { font-size: 12px; font-weight: 600; color: #e2e8f0; }
+.kpi-note { font-size: 11px; color: var(--text-muted); line-height: 1.4; }
+
+.kpi-danger .kpi-value { color: var(--band-critical); }
+.kpi-ok .kpi-value { color: var(--success); }
+.kpi-nigeria .kpi-value { color: var(--band-nigeria); }
+
+/* Globe */
+
+.hero-globe {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+#globe-canvas {
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 1;
+    display: block;
+}
+
+.hero-globe figcaption {
+    font-size: 12px;
+    line-height: 1.55;
+    color: var(--text-muted);
+    text-align: center;
+    max-width: 44ch;
+}
+
+.hero-globe figcaption strong { color: #e2e8f0; }
+
+/* ---------- Critical alerts band ---------- */
+
+.alert-band {
+    padding: 26px 28px;
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(180deg, rgba(244, 63, 94, 0.09), rgba(244, 63, 94, 0.02)),
+        var(--surface-1);
+    border: 1px solid rgba(244, 63, 94, 0.28);
+    /* A left rule carries severity without washing the whole panel in colour. */
+    border-left: 3px solid var(--danger);
+}
+
+.alert-band-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.alert-band-head h2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-heading);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.alert-siren {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--danger);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .alert-siren { animation: sirenPulse 2.4s var(--ease-out) infinite; }
+    @keyframes sirenPulse {
+        0%   { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.5); }
+        70%  { box-shadow: 0 0 0 12px rgba(244, 63, 94, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
+    }
+}
+
+.motion-paused .alert-siren { animation: none; }
+
+.alert-band-count {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.alert-band .alerts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 12px;
+    max-height: none;
+    overflow: visible;
+}
+
+/* Severity is carried by a rule, a text label and rank order, never by colour
+   alone (WCAG 1.4.1). */
+.alert-item {
+    position: relative;
+    padding: 14px 16px 14px 18px;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    border: 1px solid var(--hairline);
+    border-left: 3px solid var(--band-muted);
+    font-size: 13px;
+    gap: 6px;
+}
+
+.alert-item.critical { border-left-color: var(--danger); background: rgba(244, 63, 94, 0.07); }
+.alert-item.warning  { border-left-color: var(--warning); background: rgba(249, 115, 22, 0.05); }
+
+.alert-severity {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.alert-item.critical .alert-severity { color: #fda4af; }
+.alert-item.warning .alert-severity { color: #fdba74; }
+
+.alert-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #f8fafc;
+}
+
+.alert-body { color: #cbd5e1; line-height: 1.5; font-size: 12.5px; }
+
+.alert-meta {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* ---------- Executive brief ---------- */
+
+.brief-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.brief-toc {
+    position: sticky;
+    top: 92px;
+    padding: 18px;
+    border-radius: var(--radius);
+    background: var(--surface-3);
+    border: 1px solid var(--hairline);
+}
+
+.brief-toc h3 {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+#brief-toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+#brief-toc-list .toc-h3 { padding-left: 12px; }
+
+#brief-toc-list a {
+    display: block;
+    padding: 6px 8px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+
+#brief-toc-list a:hover { color: #fff; }
+#brief-toc-list a.is-current { color: #fff; border-left-color: var(--secondary); }
+#brief-toc-list .toc-empty { font-size: 12px; color: var(--text-muted); padding: 6px 8px; }
+
+.brief-body {
+    padding: 34px 38px;
+    border-radius: var(--radius-lg);
+    background: var(--surface-1);
+    border: 1px solid var(--hairline);
+    /* Opaque surface, deliberately: body text must never sit directly on the
+       moving canvas, or its contrast becomes a function of the frame. */
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    /* ~65-75 characters is the readable measure for long-form text. */
+    max-width: 74ch;
+    font-size: 15.5px;
+    line-height: 1.72;
+    color: #d7dce5;
+}
+
+.brief-body h1 {
+    font-family: var(--font-heading);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #f8fafc;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+}
+
+.brief-body h2 {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 34px 0 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--hairline);
+    scroll-margin-top: 96px;
+}
+
+.brief-body h3 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 26px 0 10px;
+    scroll-margin-top: 96px;
+}
+
+.brief-body p { margin-bottom: 15px; }
+.brief-body strong { color: #fff; font-weight: 600; }
+.brief-body ul, .brief-body ol { margin: 0 0 18px; padding-left: 20px; }
+.brief-body li { margin-bottom: 8px; }
+.brief-body li.md-l1 { margin-left: 20px; list-style-type: circle; }
+.brief-body li.md-l2 { margin-left: 40px; list-style-type: square; }
+
+.brief-body blockquote {
+    border-left: 3px solid var(--primary);
+    padding: 4px 0 4px 14px;
+    margin: 14px 0;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.brief-body code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.88em;
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.35);
+    color: var(--band-nigeria);
+}
+
+.section-flash { animation: sectionFlash 1.2s var(--ease-out); }
+
+@keyframes sectionFlash {
+    0%   { background: rgba(6, 182, 212, 0.16); }
+    100% { background: transparent; }
+}
+
+.empty-note {
+    padding: 26px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* ---------- PSC register ---------- */
+
+.register-kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.register-kpis .kpi-value { font-size: 25px; }
+
+.band-scale {
+    padding: 22px 24px;
+    border-radius: var(--radius);
+    background: var(--surface-3);
+    border: 1px solid var(--hairline);
+    margin-bottom: 22px;
+}
+
+.band-scale-head h3 {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.band-scale-head p {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 78ch;
+    margin-bottom: 16px;
+}
+
+.band-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+.band {
+    position: relative;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    background: var(--surface-2);
+    border: 1px solid var(--hairline);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.band-bar { position: absolute; inset: 0 auto 0 0; width: 3px; }
+.band-critical .band-bar { background: var(--band-critical); }
+.band-high .band-bar     { background: var(--band-high); }
+.band-elevated .band-bar { background: var(--band-elevated); }
+.band-nigeria .band-bar  { background: var(--band-nigeria); }
+.band-muted .band-bar    { background: var(--band-muted); }
+
+.band-label { font-size: 12px; font-weight: 600; color: #e2e8f0; }
+.band-count { font-family: var(--font-heading); font-size: 21px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.band-empty { opacity: 0.45; }
+
+.band-tag {
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--band-nigeria);
+}
+
+.register-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.register-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.register-search { width: min(300px, 100%); }
+
+.register-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 16px;
+}
+
+.register-card {
+    padding: 20px 22px;
+    border-radius: var(--radius);
+    background: var(--surface-1);
+    border: 1px solid var(--hairline);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Grid and flex items default to min-width:auto, so a card cannot shrink
+       below its widest child's min-content. The control-chain strip is three
+       108px nodes plus arrows, which pinned every card at ~450px and pushed
+       the whole page into horizontal scroll on a 375px phone. */
+    min-width: 0;
+    transition: border-color var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
+}
+
+.register-card:hover { border-color: var(--hairline-strong); transform: translateY(-2px); }
+.register-card.has-flags { border-left: 3px solid var(--danger); }
+
+.rc-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; min-width: 0; }
+.rc-head > div { min-width: 0; }
+.rc-name { font-family: var(--font-heading); font-size: 17px; font-weight: 700; line-height: 1.25; overflow-wrap: anywhere; }
+.rc-role { font-size: 12px; color: var(--text-muted); margin-top: 3px; line-height: 1.45; }
+.rc-stake { text-align: right; flex-shrink: 0; }
+.rc-pct { display: block; font-family: var(--font-heading); font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.rc-band {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: 1px solid currentColor;
+}
+
+.rc-band.band-critical { color: var(--band-critical); }
+.rc-band.band-high     { color: var(--band-high); }
+.rc-band.band-elevated { color: var(--band-elevated); }
+.rc-band.band-nigeria  { color: var(--band-nigeria); }
+.rc-band.band-muted    { color: var(--band-muted); }
+
+.rc-seed {
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fdba74;
+}
+
+/* Control chain: person -> vehicle -> company.
+   The chain is the one genuinely wide element on the card, so it scrolls
+   inside its own box rather than widening the page. min-width:0 is what
+   actually lets it shrink; overflow-x alone does not. */
+.rc-chain {
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    background: var(--surface-3);
+    border: 1px solid var(--hairline);
+    min-width: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+.chain-node {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--hairline);
+    flex: 0 0 auto;
+    min-width: 104px;
+    max-width: 180px;
+}
+
+.chain-title { font-size: 11.5px; font-weight: 600; color: #e2e8f0; line-height: 1.3; }
+.chain-sub { font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+
+.chain-person  { border-color: rgba(56, 189, 248, 0.35); }
+.chain-vehicle { border-color: rgba(167, 139, 250, 0.35); }
+.chain-company { border-color: rgba(244, 114, 182, 0.35); }
+
+.chain-arrow {
+    align-self: center;
+    flex: 0 0 14px;
+    height: 1px;
+    background: var(--hairline-strong);
+    position: relative;
+}
+
+.chain-arrow::after {
+    content: "";
+    position: absolute;
+    right: -1px; top: -3px;
+    border-left: 5px solid var(--hairline-strong);
+    border-top: 3.5px solid transparent;
+    border-bottom: 3.5px solid transparent;
+}
+
+.rc-nature { font-size: 12.5px; line-height: 1.55; color: #cbd5e1; }
+
+.flag-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+.flag {
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    background: rgba(244, 63, 94, 0.06);
+    border: 1px solid rgba(244, 63, 94, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.flag-medium { background: rgba(249, 115, 22, 0.05); border-color: rgba(249, 115, 22, 0.2); }
+
+.flag-title { font-size: 12px; font-weight: 700; color: #fda4af; }
+.flag-medium .flag-title { color: #fdba74; }
+.flag-detail { font-size: 11.5px; line-height: 1.5; color: #cbd5e1; }
+
+.flag-clean {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--success);
+}
+
+.flag-clean i { width: 14px; height: 14px; }
+
+.rc-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--hairline);
+    flex-wrap: wrap;
+}
+
+.rc-filing {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--band-nigeria);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.rc-filing i { width: 13px; height: 13px; }
+.rc-filing .muted { color: var(--text-muted); font-family: var(--font-body); }
+
+/* ---------- Pipeline stats ---------- */
+
+.pipeline-stats { display: flex; gap: 10px; flex-wrap: wrap; }
+
+.pipe-stat {
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    background: var(--surface-3);
+    border: 1px solid var(--hairline);
+    display: flex;
+    flex-direction: column;
+    min-width: 82px;
+}
+
+.pipe-stat span {
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.pipe-stat small { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+.pipe-stat.alert { border-color: rgba(244, 63, 94, 0.3); }
+.pipe-stat.alert span { color: var(--band-critical); }
+
+/* ---------- Search trace ---------- */
+
+.search-hint { font-size: 11px; color: var(--text-muted); }
+
+.trace-panel {
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    border-radius: var(--radius-sm);
+    background: rgba(6, 182, 212, 0.06);
+    border: 1px solid rgba(6, 182, 212, 0.24);
+    font-size: 12.5px;
+    line-height: 1.55;
+}
+
+.trace-panel[hidden] { display: none; }
+.trace-panel h4 { font-size: 12px; font-weight: 700; color: var(--secondary); margin-bottom: 8px; letter-spacing: 0.04em; }
+.trace-row { display: flex; gap: 8px; padding: 5px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.trace-row:first-of-type { border-top: 0; }
+
+.trace-kind {
+    flex: 0 0 84px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding-top: 2px;
+}
+
+.trace-value { color: #dbeafe; }
+
+.trace-value button {
+    background: none; border: 0; padding: 0;
+    color: var(--secondary);
+    font: inherit;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    padding: 28px 0 12px;
+    border-top: 1px solid var(--hairline);
+    color: var(--text-muted);
+    font-size: 12.5px;
+    line-height: 1.65;
+    max-width: 80ch;
+}
+
+.site-footer p + p { margin-top: 8px; }
+.footer-legal { font-size: 11.5px; opacity: 0.8; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1100px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; }
+    .hero-globe { order: -1; }
+    #globe-canvas { max-width: 380px; }
+    .brief-layout { grid-template-columns: 1fr; gap: 22px; }
+    .brief-toc { position: static; }
+    #brief-toc-list { flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 900px) {
+    main { gap: 44px; }
+    .dashboard-header { position: static; }
+    .section-nav { order: 3; width: 100%; overflow-x: auto; margin-left: 0; }
+    .brief-body { padding: 22px 20px; font-size: 15px; }
+    .register-list { grid-template-columns: 1fr; }
+    .alert-band { padding: 20px 18px; }
+    .alert-band .alerts-list { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .hero-headline { font-size: 32px; }
+    .hero-kpis { grid-template-columns: 1fr 1fr; }
+    .rc-head { flex-direction: column; gap: 8px; }
+    .rc-stake { text-align: left; }
+}
+
+/* ---------- Print: the export button must produce a document ---------- */
+
+@page { margin: 18mm; }
+
+@media print {
+    .backdrop-canvas, .glow-bg, .scroll-rail, .hero-globe,
+    .dashboard-header, .section-nav, .section-actions,
+    .register-controls, .workspace-grid, .skip-link,
+    .modal-overlay, .hero-actions { display: none !important; }
+
+    body { background: #fff !important; color: #111 !important; }
+    main { gap: 22px; }
+
+    .brief-body, .register-card, .band, .kpi, .alert-band {
+        background: #fff !important;
+        border-color: #ccc !important;
+        color: #111 !important;
+        backdrop-filter: none !important;
+        break-inside: avoid;
+    }
+
+    .brief-body h1, .brief-body h2, .brief-body h3,
+    .rc-name, .section-head h2, .kpi-value, .hero-headline { color: #000 !important; }
+
+    .brief-body { max-width: none; }
+    .brief-body h2 { break-after: avoid; }
+
+    [data-reveal] { opacity: 1 !important; transform: none !important; }
+
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+}
+
+/* ==========================================================================
+   Global motion policy.
+
+   styles.css declares six animations and only one of them was guarded, so a
+   reduced-motion user still got a pulsing logo orb, two pulsing status dots
+   and a sliding modal. These rules cover every decorative loop in one place,
+   and the same switch responds to the header's pause button, which is what
+   makes that control genuinely conform to WCAG 2.2.2 rather than only
+   stopping the canvases.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .logo-orb,
+    .pulse.green,
+    .pulse.purple,
+    .alert-siren,
+    .article-card {
+        animation: none !important;
+    }
+
+    .modal-content { animation: none !important; }
+
+    /* The spinner survives: it reports that work is in progress, which is
+       information rather than decoration. It is slowed rather than stopped. */
+    .spinner { animation-duration: 2.4s !important; }
+
+    * {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Header pause button. Stops decorative loops without touching the spinner. */
+.motion-paused .logo-orb,
+.motion-paused .pulse.green,
+.motion-paused .pulse.purple,
+.motion-paused .alert-siren {
+    animation: none !important;
+}

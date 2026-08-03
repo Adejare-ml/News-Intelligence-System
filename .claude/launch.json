@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "aura-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8017", "--directory", "backend/app/static"],
+      "port": 8017
+    },
+    {
+      "name": "aura-tests",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8018"],
+      "port": 8018
+    }
+  ]
+}
