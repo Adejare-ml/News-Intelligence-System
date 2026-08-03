@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=3.1">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
@@ -289,7 +289,7 @@
     </div>
     <!-- Persons with Significant Control (PSC) Modal -->
     <div id="psc-modal" class="modal-overlay">
-        <div class="modal-content glass reports-modal-content" style="max-width: 1050px;">
+        <div class="modal-content glass reports-modal-content" style="max-width: 1100px;">
             <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 15px;">
                 <div style="display:flex; align-items:center; gap:10px;">
                     <div style="width:36px; height:36px; border-radius:8px; background:rgba(239,68,68,0.15); display:flex; align-items:center; justify-content:center; color:#ef4444;">
@@ -297,10 +297,20 @@
                     </div>
                     <div>
                         <h2 style="margin:0; font-size:18px; font-weight:700; color:#f9fafb;">Persons with Significant Control (PSC) Transparency</h2>
-                        <span style="font-size:12px; color:var(--text-muted);">Ultimate Beneficial Ownership (UBO), Control Lineage & Regulatory Disclosures</span>
+                        <span style="font-size:12px; color:var(--text-muted);">CAM 2020 Statutory UBO Register, Anomaly Detection & Cross-Entity Lineage Map</span>
                     </div>
                 </div>
                 <div style="display:flex; align-items:center; gap:8px;">
+                    <!-- View Mode Switcher -->
+                    <div class="view-mode-toggle" style="display:flex; background:rgba(0,0,0,0.3); padding:3px; border-radius:6px; border:1px solid rgba(255,255,255,0.1); margin-right:8px;">
+                        <button class="view-mode-btn active" id="psc-view-table-btn" style="padding:4px 10px; font-size:11px; border:none; background:var(--primary); color:#0f172a; border-radius:4px; font-weight:700; cursor:pointer;">
+                            <i data-lucide="table" style="width:12px; height:12px; display:inline;"></i> Table View
+                        </button>
+                        <button class="view-mode-btn" id="psc-view-map-btn" style="padding:4px 10px; font-size:11px; border:none; background:transparent; color:#d1d5db; border-radius:4px; font-weight:600; cursor:pointer;">
+                            <i data-lucide="share-2" style="width:12px; height:12px; display:inline;"></i> Network Map
+                        </button>
+                    </div>
+
                     <button class="btn btn-secondary" id="export-psc-csv-btn" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:6px;">
                         <i data-lucide="download" style="width:14px; height:14px;"></i> Export CSV
                     </button>
@@ -311,47 +321,63 @@
                 </div>
             </div>
             <div style="padding: 20px; overflow-y: auto; max-height: 78vh;">
+                <div id="psc-demo-banner" class="psc-demo-banner" hidden>
+                    <i data-lucide="flask-conical"></i>
+                    <span><strong>Illustrative demo data.</strong> No PSC disclosures have been extracted from live articles yet, so sample records are shown to demonstrate the panel. These are <strong>not</strong> live intelligence and are excluded from compliance use.</span>
+                </div>
+
                 <!-- Executive Analytics Summary Cards -->
                 <div class="psc-kpi-bar" id="psc-kpi-bar">
                     <div class="psc-kpi-card">
-                        <span class="kpi-label">Tracked PSCs</span>
-                        <div class="kpi-value" id="kpi-total-psc">7</div>
-                        <span class="kpi-subtext">Beneficial Owners</span>
+                        <span class="kpi-label">Tracked Beneficial Owners</span>
+                        <div class="kpi-value" id="kpi-total-psc">8</div>
+                        <span class="kpi-subtext">CAMA 2020 Registered</span>
                     </div>
                     <div class="psc-kpi-card">
-                        <span class="kpi-label">Avg Controlling Stake</span>
-                        <div class="kpi-value" id="kpi-avg-stake">61.0%</div>
-                        <span class="kpi-subtext">Equity & Voting Share</span>
+                        <span class="kpi-label">Avg Controlling Equity</span>
+                        <div class="kpi-value" id="kpi-avg-stake">56.1%</div>
+                        <span class="kpi-subtext">Direct & Indirect Shares</span>
                     </div>
                     <div class="psc-kpi-card">
-                        <span class="kpi-label">Indirect Holdings</span>
-                        <div class="kpi-value" id="kpi-indirect-cnt">5</div>
-                        <span class="kpi-subtext">Via Investment Vehicles</span>
+                        <span class="kpi-label">Indirect Vehicle Chains</span>
+                        <div class="kpi-value" id="kpi-indirect-cnt">7</div>
+                        <span class="kpi-subtext">Holding & Trust Entities</span>
                     </div>
                     <div class="psc-kpi-card highlight-risk">
-                        <span class="kpi-label">PEP / Critical Flagged</span>
-                        <div class="kpi-value" id="kpi-pep-cnt">1</div>
-                        <span class="kpi-subtext">Enhanced Due Diligence</span>
+                        <span class="kpi-label">Red Flag Alerts</span>
+                        <div class="kpi-value" id="kpi-redflag-cnt" style="color:#ef4444;">4</div>
+                        <span class="kpi-subtext">Voting & PEP Anomalies</span>
+                    </div>
+                    <div class="psc-kpi-card" style="border-left:3px solid #10b981;">
+                        <span class="kpi-label">CAMA 2020 Compliance</span>
+                        <div class="kpi-value" id="kpi-cama-status" style="color:#10b981; font-size:18px;">94.2%</div>
+                        <span class="kpi-subtext">Verified Filings</span>
                     </div>
                 </div>
 
                 <!-- Filter Controls & Search -->
                 <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; gap:12px; flex-wrap:wrap;">
                     <div class="psc-filter-chips" id="psc-filter-chips">
-                        <button class="psc-chip active" data-filter="all">All Records</button>
-                        <button class="psc-chip" data-filter="majority">Majority Stake (>50%)</button>
+                        <button class="psc-chip active" data-filter="all">All Disclosures</button>
+                        <button class="psc-chip" data-filter="redflags" style="border-color:rgba(239,68,68,0.4); color:#ef4444;">🚩 Red Flag Alerts</button>
+                        <button class="psc-chip" data-filter="tier1">Tier 1 (>75%)</button>
                         <button class="psc-chip" data-filter="indirect">Indirect Vehicle</button>
-                        <button class="psc-chip" data-filter="pep">PEP / Risk Flagged</button>
-                        <button class="psc-chip" data-filter="board">Board Executives</button>
+                        <button class="psc-chip" data-filter="pep">PEP Proximity</button>
+                        <button class="psc-chip" data-filter="cross">Cross-Holdings</button>
                     </div>
                     <div class="search-box" style="width:260px;">
                         <input type="text" id="psc-search-input" placeholder="Search person, company, holding..." aria-label="Search PSC">
                     </div>
                 </div>
 
-                <!-- Main PSC Table Container -->
+                <!-- View 1: Main PSC Table Container -->
                 <div id="psc-table-container">
                     <div class="loading-placeholder"><p>Loading PSC Records...</p></div>
+                </div>
+
+                <!-- View 2: Interactive UBO Network Map Container -->
+                <div id="psc-network-graph-container" style="display:none; width:100%; height:480px; background:rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.08); border-radius:10px; position:relative; overflow:hidden;">
+                    <!-- SVG Interactive Network Map rendered by JS -->
                 </div>
             </div>
         </div>
@@ -359,7 +385,7 @@
 
     <!-- PSC Deep-Dive / UBO Dossier Modal Drawer -->
     <div id="psc-dossier-modal" class="modal-overlay" style="z-index: 1100;">
-        <div class="modal-content glass" style="max-width: 750px; border-left: 4px solid var(--primary);">
+        <div class="modal-content glass" style="max-width: 800px; border-left: 4px solid var(--primary);">
             <div class="modal-header">
                 <div style="display:flex; align-items:center; gap:8px;">
                     <i data-lucide="file-search" style="color:var(--primary); width:20px; height:20px;"></i>
@@ -367,12 +393,12 @@
                 </div>
                 <button class="close-modal-btn" id="close-psc-dossier-modal" aria-label="Close Dossier"><i data-lucide="x"></i></button>
             </div>
-            <div id="psc-dossier-body" style="padding: 20px; overflow-y: auto; max-height: 75vh;">
+            <div id="psc-dossier-body" style="padding: 20px; overflow-y: auto; max-height: 78vh;">
                 <!-- Dynamically populated dossier content -->
             </div>
         </div>
     </div>
 
-    <script src="js/app.js?v=3.0"></script>
+    <script src="js/app.js?v=3.1"></script>
 </body>
 </html>
