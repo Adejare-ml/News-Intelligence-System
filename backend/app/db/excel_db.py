@@ -15,7 +15,15 @@ SHEETS_CONFIG = {
     "People": ["Name", "Position", "Organization", "Event", "Date"],
     "Government Agencies": ["Agency", "Event", "Article", "Date"],
     "Procurement": ["Agency", "Contractor", "Amount", "Project", "Source"],
-    "Significant Control": ["Person Name", "Company", "Nature of Control", "Percentage", "Change Type", "Previous Holder", "Date"],
+    # Enriched beneficial-ownership schema. _append_row filters strictly to
+    # these columns, so every field run_pipeline.py writes must appear here or
+    # it is silently discarded between the LLM and the sheet.
+    "Significant Control": [
+        "Person Name", "Company", "Nature of Control", "Board Role", "Percentage",
+        "Direct %", "Indirect %", "Intermediate Entities",
+        "PEP Status", "Risk Level", "Regulatory Filing Ref",
+        "Verification Status", "Change Type", "Previous Holder", "Date"
+    ],
     "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Content"]
 }
 
