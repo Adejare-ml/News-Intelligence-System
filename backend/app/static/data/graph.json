@@ -8,7 +8,7 @@
     },
     {
       "id": "b67f2b4317a4",
-      "label": "the Continent\u2019s Energy Economy",
+      "label": "the Continent’s Energy Economy",
       "type": "company",
       "risk": "Low"
     },
@@ -55,12 +55,6 @@
       "risk": "Critical"
     },
     {
-      "id": "57bd7dd91f82",
-      "label": "BBNaija Season 11",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a685a83332f1",
       "label": "Premium Times Nigeria",
       "type": "company",
@@ -104,7 +98,7 @@
     },
     {
       "id": "5ffd81c0f812",
-      "label": "Archives\u00a0\u00a0Premium Times Nigeria",
+      "label": "Archives  Premium Times Nigeria",
       "type": "company",
       "risk": "Critical"
     },
@@ -152,7 +146,7 @@
     },
     {
       "id": "354d82c07bfe",
-      "label": "The North-West Development Commission\u2019s",
+      "label": "The North-West Development Commission’s",
       "type": "agency",
       "risk": "Low"
     },
@@ -475,12 +469,6 @@
       "risk": "Low"
     },
     {
-      "id": "15cf8388eb7d",
-      "label": "Super Eagles",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "baf57ed9ddaf",
       "label": "NIQS",
       "type": "agency",
@@ -756,12 +744,6 @@
       "id": "a336d7226054",
       "from": "31e09536105c",
       "to": "9fbc0e0e0d5f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "fc8326cd1735",
-      "from": "1d01384154bc",
-      "to": "15cf8388eb7d",
       "label": "Contract Awardee"
     },
     {
