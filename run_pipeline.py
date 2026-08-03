@@ -26,6 +26,7 @@ logger = logging.getLogger("run_pipeline")
 from backend.app.core.config import settings
 from backend.app.services.ingestion import NewsIngestionService
 from backend.app.services.llm import LLMService, LLMCascadeError
+from backend.app.services import relevance
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -197,9 +198,25 @@ def run_pipeline(seed: bool = False):
             continue
         consecutive_failures = 0
 
-        # Relevance filter check (strictly keep corporate, policy, and procurement news)
-        if not analysis.get("relevant", True):
-            logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
+        # Relevance filter check (strictly keep corporate, policy, and procurement news).
+        #
+        # Two changes from the original single-boolean check:
+        #
+        # 1. The default is now False. `analysis.get("relevant", True)` meant a
+        #    response missing the key was published — a filter that fails open.
+        # 2. A deterministic topic guard runs behind the model. The model is
+        #    told to reject sport and celebrity stories and mostly does, but
+        #    when it does not, the result is a football transfer published at
+        #    risk 40 under category "Company". The guard overrides it.
+        off_topic = relevance.off_topic_reason(title, analysis.get("summary_executive"))
+        if not analysis.get("relevant", False) or off_topic:
+            if off_topic:
+                logger.info(
+                    f"Topic guard rejected '{title}' as {off_topic.topic} "
+                    f"(matched: {', '.join(off_topic.matched)})"
+                )
+            else:
+                logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
             db.add_article({
                 "ID": "",
                 "Time": item.get("published_at") or datetime.now().isoformat(),
@@ -541,15 +558,56 @@ def export_static_json_database():
                 pass
 
     # Sort chronological (newest first, excluding non-relevant filtered articles)
-    articles_sorted = [a for a in reversed(articles) if a.get("Status") != "Filtered"][:60]
-    
+    #
+    # The topic guard is re-applied here, not just at ingestion, because the
+    # database still holds records written before the LLM cascade was enforced
+    # — every row with an empty Engine column. Those never passed any relevance
+    # check, and among them were a football transfer, a match report and a
+    # celebrity wedding, all carrying real risk scores. Filtering on export is
+    # non-destructive: the rows stay in the sheet as the audit record, they
+    # just stop being published as intelligence.
+    published = []
+    suppressed = []
+    for a in reversed(articles):
+        if a.get("Status") == "Filtered":
+            continue
+        reason = relevance.off_topic_reason(a.get("Title"), a.get("Summary"))
+        if reason:
+            suppressed.append((a.get("Title"), reason))
+            continue
+        published.append(a)
+        if len(published) >= 60:
+            break
+
+    if suppressed:
+        logger.warning(
+            f"Topic guard suppressed {len(suppressed)} stored article(s) from the "
+            "published feed (they remain in the database):"
+        )
+        for stored_title, reason in suppressed[:20]:
+            logger.warning(f"  [{reason.topic}] {stored_title}")
+
+    articles_sorted = published
+
+    # Entities extracted from those same articles are filtered too. The company
+    # table had accumulated "Premier League", "Serie A", "BBNaija" and
+    # "FIFA World Cup" as tracked corporate entities, and they flowed into the
+    # knowledge graph as company and agency nodes.
+    companies = [c for c in companies if not relevance.is_off_topic(c.get("Company"))]
+    agencies = [a for a in agencies if not relevance.is_off_topic(a.get("Agency"))]
+    people = [
+        p for p in people
+        if not relevance.is_off_topic(p.get("Organization"))
+        and not relevance.is_off_topic(p.get("Name"))
+    ]
+
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
         json.dump(articles_sorted, f, default=str, indent=2)
-        
+
     with open(os.path.join(DATA_DIR, "companies.json"), "w", encoding="utf-8") as f:
         json.dump(companies, f, default=str, indent=2)
-        
+
     with open(os.path.join(DATA_DIR, "people.json"), "w", encoding="utf-8") as f:
         json.dump(people, f, default=str, indent=2)
         

@@ -4,6 +4,7 @@ import logging
 from typing import Dict, Any, List
 from backend.app.core.config import settings
 from backend.app.services.nlp_pipeline import NLPPipelineService
+from backend.app.services import relevance
 
 logger = logging.getLogger(__name__)
 
@@ -408,15 +409,20 @@ class LLMService:
     def _run_local_fallback(cls, title: str, text: str) -> Dict[str, Any]:
         """Adapts the output of the local spaCy & rule-based pipeline to match the schema."""
         try:
-            # Relevance Heuristic Check
+            # Relevance Heuristic Check.
+            #
+            # The violence/crime terms stay local to this fallback. The sport
+            # and entertainment decision is delegated to the shared guard so
+            # this path and the main pipeline cannot drift apart — the local
+            # list matched bare substrings, so "football" also caught
+            # "footballer's holding company" and "death" caught "deathbed".
             text_lower = (text or title).lower()
-            non_relevant_keywords = [
-                "bandit", "abduct", "kidnap", "airstrike", "bombing", "terrorist", 
-                "wedding", "football", "actors", "movie review", "theatre", "boko haram", 
-                "insurgency", "killing", "clash", "soccer", "death", "mourn"
+            violence_keywords = [
+                "bandit", "abduct", "kidnap", "airstrike", "bombing", "terrorist",
+                "boko haram", "insurgency", "killing", "clash", "mourn",
             ]
-            is_relevant = True
-            if any(kw in text_lower for kw in non_relevant_keywords):
+            is_relevant = not any(kw in text_lower for kw in violence_keywords)
+            if is_relevant and relevance.is_off_topic(title, text):
                 is_relevant = False
 
             entities = NLPPipelineService.extract_named_entities(text or title)
