@@ -551,6 +551,12 @@
       "label": "GIZ Nigeria & ECOWAS",
       "type": "agency",
       "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
     }
   ],
   "edges": [
@@ -840,6 +846,12 @@
       "id": "2982c0deb9ea",
       "from": "334c4a4c42fd",
       "to": "d2ef98443ec4",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "28b1db6062df",
+      "from": "334c4a4c42fd",
+      "to": "9aef00190386",
       "label": "Contract Awardee"
     }
   ]
