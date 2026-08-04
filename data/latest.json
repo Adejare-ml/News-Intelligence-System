@@ -1,5 +1,77 @@
 [
   {
+    "ID": 2444,
+    "Time": "2026-08-02T19:55:13Z",
+    "Title": "NESG appoints NLNG boss to board",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/nesg-appoints-nlng-boss-to-board/",
+    "Category": "Company",
+    "Risk Score": 15,
+    "Summary": "The Nigerian Economic Summit Group (NESG) has appointed Adeleye Falade, the Managing Director and CEO of Nigeria LNG Limited, to its Board of Directors. This move is intended to strengthen the group's leadership and strategic direction.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2443,
+    "Time": "2026-08-02T23:24:04Z",
+    "Title": "100% of zero: NLNG and the Bonga SW tax incentive",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/100-of-zero-nlng-and-the-bonga-sw-tax-incentive/",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The Federal Government of Nigeria has reportedly agreed to an $11.5-per-barrel tax incentive to facilitate the $20 billion Bonga South West project. The move is intended to attract investment from Shell and ensure the project proceeds.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2442,
+    "Time": "2026-08-02T23:24:04Z",
+    "Title": "SERAP tasks Tinubu to probe N6.79bn police funds allegations",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/serap-tasks-tinubu-to-probe-n6-79bn-police-funds-allegations/",
+    "Category": "Government",
+    "Risk Score": 75,
+    "Summary": "SERAP has urged President Bola Tinubu to investigate the alleged diversion and misappropriation of over N6.79 billion in public funds intended for the Nigerian Police Force.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2440,
+    "Time": "2026-08-02T23:52:13Z",
+    "Title": "FG weighs dollar swap for Dangote petrol proceeds",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/fg-weighs-dollar-swap-for-dangote-petrol-proceeds/",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "The Federal Government of Nigeria is considering a dollar swap arrangement to facilitate the payment of proceeds from the Dangote Petroleum Refinery. The refinery is facing foreign exchange shortages, and the government's intervention aims to alleviate this issue.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 2433,
+    "Time": "Mon, 03 Aug 2026 11:38:59 GMT",
+    "Title": "GIZ NIGERIA & ECOWAS-INVITATION TO TENDER FOR PROCUREMENT OF IT EQUIPMENT - etenders.com.ng",
+    "Source": "etenders.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQLUtjT1BadzV4ajNMTE1ETzRabEdNd3pHZkJtc1JLdW4yMGJnbFZ0VDQwY2w2cUtQR1lVNE03LUE2eXJUVDQ2TW9aTGJSSWlfSjZwdGQ0cU95dFhQVGpkMTVzSEhtWHRSUy05XzVuMXJOeWI1WUhGYk9JTXhkck54N2VMd09OYnBVWGZ0VHpDMzBYZlo2b1BSMFg4Rm8?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "GIZ Nigeria and ECOWAS have issued an invitation to tender for the procurement of IT equipment.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2422,
+    "Time": "Sun, 02 Aug 2026 23:03:23 GMT",
+    "Title": "Naicom Announces Successful Completion Of The Insurance Sector Recapitalization Exercise, Heralding A New Era Of Insurance In Nigeria - naicom.gov.ng",
+    "Source": "naicom.gov.ng",
+    "URL": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1SamoteVNkV01La3RtODExdlVUS1hFR3MtWFBlZFdhLTV5LVNhckFoXzBPeHJfeElzMHdXYnJ0eVprbk16V25xSkRnZERBNTk3QTNZQ29nSWs2bUFuaURhMS1zcnV4RHBrd2ZodHlwbW5OeFMwaU52ZWE2RHI?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The National Insurance Commission (NAICOM) has announced the successful completion of the insurance sector recapitalization exercise in Nigeria. This regulatory action aims to strengthen the capital base of insurance companies to ensure industry stability.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 2410,
     "Time": "Mon, 03 Aug 2026 16:01:11 GMT",
     "Title": "Presidency moves to build legal framework for State Police, opens nationwide consultation - The Guardian Nigeria News",
@@ -98,7 +170,7 @@
   {
     "ID": 2386,
     "Time": "Mon, 03 Aug 2026 14:17:13 GMT",
-    "Title": "Meet Nigeria’s Comfort Ero, first black woman to head international crisis group - Vanguard News",
+    "Title": "Meet Nigeria\u2019s Comfort Ero, first black woman to head international crisis group - Vanguard News",
     "Source": "Vanguard News",
     "URL": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYmd1ZE9Fc3pWdWMtTTJEdENVdU1xU0JtWk1yU05IbFhYZ0UxQ0otRVo5X1Q4U1pzb3RvVHp1empnVm9FaHh0ZGhuQzFwa2o0LWVvQXNDVjdlYkZHM09NVllDN1Z4V1gtOHU3RU5jazF0ODIxQXFoaHZSYTZNMllXeVdSMEhGa2o1VHp4RHJJV2QwNVFFTk55N3djXzFtQ0FFRkVvOFpNTjhVc2FTcE1BbmJtdXlOUdIBuwFBVV95cUxPZ0VsbHJhU1pnZnBsdmtYd3lPV2ZScGdKWld5cE9SSGcyVzBXeHhEdHktX1g4SjUteml4NVhzejVna1pueFpnWVpmcFJVS0w2T3I0MExHUk55N0NSZ2xsN0ZPWGRyWnc5T2E1bE5oZjFBZzZJOERVSDdOdlN3QXFPYkVDZHVrV0JfTFN2UkVrUnFGZHNYZnRfejUzNWJGbm1OU1FaZmhxNHpCMTNnUndORURNY1pWbVlnUHo4?oc=5",
     "Category": "Other",
@@ -206,7 +278,7 @@
   {
     "ID": 2351,
     "Time": "Mon, 03 Aug 2026 10:35:24 GMT",
-    "Title": "FirstHoldCo becomes Nigeria’s First N6tn banking stock - The Guardian Nigeria News",
+    "Title": "FirstHoldCo becomes Nigeria\u2019s First N6tn banking stock - The Guardian Nigeria News",
     "Source": "The Guardian Nigeria News",
     "URL": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSHZpNTh3VGRUbDZDLVJVcVBwUUl5TmI3cEZtb0RQYnRMancyNjcyZVdtaVlQZmQyM1NKY2RUMlVKU216c0lXc0puX2dCVWJld0ViWFVSSDdudEU0djM1SWFhWUlBNGZSNVBENXhYM0hnVy00NVpXcXVqUVNSaEFtWHU2dkk1Y2FyRWhNeExCQU5HenlzLW9Zenp2WHIyd3VmcXJ1bkZCVlZ2dWs?oc=5",
     "Category": "Company",
@@ -230,7 +302,7 @@
   {
     "ID": 2351,
     "Time": "Mon, 03 Aug 2026 10:35:24 GMT",
-    "Title": "FirstHoldCo becomes Nigeria’s First N6tn banking stock - The Guardian Nigeria News",
+    "Title": "FirstHoldCo becomes Nigeria\u2019s First N6tn banking stock - The Guardian Nigeria News",
     "Source": "The Guardian Nigeria News",
     "URL": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSHZpNTh3VGRUbDZDLVJVcVBwUUl5TmI3cEZtb0RQYnRMancyNjcyZVdtaVlQZmQyM1NKY2RUMlVKU216c0lXc0puX2dCVWJld0ViWFVSSDdudEU0djM1SWFhWUlBNGZSNVBENXhYM0hnVy00NVpXcXVqUVNSaEFtWHU2dkk1Y2FyRWhNeExCQU5HenlzLW9Zenp2WHIyd3VmcXJ1bkZCVlZ2dWs?oc=5",
     "Category": "Company",
@@ -242,7 +314,7 @@
   {
     "ID": 2348,
     "Time": "Mon, 03 Aug 2026 01:37:55 GMT",
-    "Title": "Mobile money transactions surge 81% to N372tn – CBN report - Punch Newspapers",
+    "Title": "Mobile money transactions surge 81% to N372tn \u2013 CBN report - Punch Newspapers",
     "Source": "Punch Newspapers",
     "URL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV0RkcXlHSWZMVFlrMVVaNWFZSjV0NWFuMzlGSVVQM3Jtdk1ueVY3OE45MXJrdDhNV19Pank3cUg4N3lNZGFHU041WFR1N3c2bVN6bDBFNzJGRmZ6bnZoeGR3ZVQzTGRJbkZnVlZmc2hSbks2T3ppVHV1VlV1UDdXUnZn?oc=5",
     "Category": "Government",
@@ -278,7 +350,7 @@
   {
     "ID": 2348,
     "Time": "Mon, 03 Aug 2026 01:37:55 GMT",
-    "Title": "Mobile money transactions surge 81% to N372tn – CBN report - Punch Newspapers",
+    "Title": "Mobile money transactions surge 81% to N372tn \u2013 CBN report - Punch Newspapers",
     "Source": "Punch Newspapers",
     "URL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV0RkcXlHSWZMVFlrMVVaNWFZSjV0NWFuMzlGSVVQM3Jtdk1ueVY3OE45MXJrdDhNV19Pank3cUg4N3lNZGFHU041WFR1N3c2bVN6bDBFNzJGRmZ6bnZoeGR3ZVQzTGRJbkZnVlZmc2hSbks2T3ppVHV1VlV1UDdXUnZn?oc=5",
     "Category": "Government",
@@ -314,7 +386,7 @@
   {
     "ID": 2341,
     "Time": "Mon, 03 Aug 2026 06:37:27 GMT",
-    "Title": "Adeyemi’s lawyers detail roles of key federal agencies validating fake PFIPC - Premium Times Nigeria",
+    "Title": "Adeyemi\u2019s lawyers detail roles of key federal agencies validating fake PFIPC - Premium Times Nigeria",
     "Source": "Premium Times Nigeria",
     "URL": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMkJPXzJoeFdfMTNKZng5MVdWTjVqLVMtelBoWnM4cW9YSlFKMEZpZ1FrNnp5N05hdVBqb3BXVVFwY3hsRWxsczdzRjVHMDdzaURrU25iandjWXBGbzJuQV9jRTJ1dVNrbFdhbGRiNXpSdVliWFZfbDI4ZGltaHYwMU5ZUGZzUERJRHFVUGk5a1BTSkYzVVJYVm1waS1SUms1TkhtTWZVaW52Tno0aEVTWktTeFhld0U2eDAxVlpnM1FaNGp3OWpWZUF5a1M?oc=5",
     "Category": "Legal",
@@ -338,7 +410,7 @@
   {
     "ID": 2341,
     "Time": "Mon, 03 Aug 2026 06:37:27 GMT",
-    "Title": "Adeyemi’s lawyers detail roles of key federal agencies validating fake PFIPC - Premium Times Nigeria",
+    "Title": "Adeyemi\u2019s lawyers detail roles of key federal agencies validating fake PFIPC - Premium Times Nigeria",
     "Source": "Premium Times Nigeria",
     "URL": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMkJPXzJoeFdfMTNKZng5MVdWTjVqLVMtelBoWnM4cW9YSlFKMEZpZ1FrNnp5N05hdVBqb3BXVVFwY3hsRWxsczdzRjVHMDdzaURrU25iandjWXBGbzJuQV9jRTJ1dVNrbFdhbGRiNXpSdVliWFZfbDI4ZGltaHYwMU5ZUGZzUERJRHFVUGk5a1BTSkYzVVJYVm1waS1SUms1TkhtTWZVaW52Tno0aEVTWktTeFhld0U2eDAxVlpnM1FaNGp3OWpWZUF5a1M?oc=5",
     "Category": "Legal",
@@ -506,7 +578,7 @@
   {
     "ID": 2315,
     "Time": "Mon, 03 Aug 2026 04:00:00 GMT",
-    "Title": "Odu’a Investment inaugurates Kasali as Chairman, targets N1tr assets by 2030 - The Guardian Nigeria News",
+    "Title": "Odu\u2019a Investment inaugurates Kasali as Chairman, targets N1tr assets by 2030 - The Guardian Nigeria News",
     "Source": "The Guardian Nigeria News",
     "URL": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOajRTdXF1cVgwNXc1dXd6bmdzUmNic1lvTmJsTWVvWVNRN0RCcldOS2tpMHl2RGRjWjR2Ui1qbjk3RDBiMWE1a09iSnZ0bkhlOXBmM3FBUUVDQWlsMW9aUmFUaUVtemVEVnViSzJtTEMxanhwTzJWc2xSd19zMXZEWUxQMHhfWFNCa2FqOVUxZ0hEbmcwUGFGZ0NTQjFDaEpEbEE?oc=5",
     "Category": "Company",
@@ -542,7 +614,7 @@
   {
     "ID": 2297,
     "Time": "Sun, 02 Aug 2026 20:57:06 GMT",
-    "Title": "NCDMB, BOI inaugurate c’ttee for $100m Nigerian Content Equity Fund - Premium Times Nigeria",
+    "Title": "NCDMB, BOI inaugurate c\u2019ttee for $100m Nigerian Content Equity Fund - Premium Times Nigeria",
     "Source": "Premium Times Nigeria",
     "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTFMzZ3VZWW56SVk1OVBrekRRaDl2ekZMdndKRjhsalVXTUlDTkRZYmZ6UjNYYWtFWVR6dmtxbmhEMDNHZXRjYzJid28yRmtDbHhzOTFMdG1pQU5xMEJRSVpsVU1aNVhfUENlRk1rUVRWdkd0bTJwX3FCbmxOQVFhUF9YOG45NXc1eGJta3JJeUFxMVdibUVrbjY1dU56WDNIcEduY0k1bEJtMlBwS0FZSlJmZjVQdm8?oc=5",
     "Category": "Government",
@@ -554,7 +626,7 @@
   {
     "ID": 2285,
     "Time": "2026-08-02 06:00:40",
-    "Title": "‘Don’t politicise insecurity’ — Gov Radda tells Katsina residents",
+    "Title": "\u2018Don\u2019t politicise insecurity\u2019 \u2014 Gov Radda tells Katsina residents",
     "Source": "dailypost",
     "URL": "https://dailypost.ng/2026/08/02/dont-politicise-insecurity-gov-radda-tells-katsina-residents/",
     "Category": "Person",
@@ -578,7 +650,7 @@
   {
     "ID": 2283,
     "Time": "2026-08-02 06:03:05",
-    "Title": "Nnamdi Kanu: Ifeanyi Ejiofor reappointed by expelled group – IPOB",
+    "Title": "Nnamdi Kanu: Ifeanyi Ejiofor reappointed by expelled group \u2013 IPOB",
     "Source": "dailypost",
     "URL": "https://dailypost.ng/2026/08/02/nnamdi-kanu-ifeanyi-ejiofor-reappointed-by-expelled-group-ipob/",
     "Category": "Person",
@@ -595,19 +667,19 @@
     "URL": "https://www.vanguardngr.com/2026/08/gwamna-petitions-igp-seeks-interpol-probe-over-alleged-fake-news-campaign/",
     "Category": "Government",
     "Risk Score": 56,
-    "Summary": "The All Progressives Congress (APC) governorship candidate in Gombe State, Dr. Jamilu Isyaku Gwamna, has petitioned the Inspector-General of Police (IGP) over an alleged campaign of cyberbullying, cr… [+1951 chars]",
+    "Summary": "The All Progressives Congress (APC) governorship candidate in Gombe State, Dr. Jamilu Isyaku Gwamna, has petitioned the Inspector-General of Police (IGP) over an alleged campaign of cyberbullying, cr\u2026 [+1951 chars]",
     "Status": "Unread",
     "Engine": ""
   },
   {
     "ID": 2279,
     "Time": "Sat, 01 Aug 2026 05:01:00 GMT",
-    "Title": "Sanwo-Olu commissions Nigeria’s first integrated energy hub - The Guardian Nigeria News",
+    "Title": "Sanwo-Olu commissions Nigeria\u2019s first integrated energy hub - The Guardian Nigeria News",
     "Source": "The Guardian Nigeria News",
     "URL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUFB0ajZpMFNzNTE3Z1ZWamtFZ21UWXdEYVJBYnRGOHRsVFlsZHBSYUVrOVZUQTVNQTlvaVRKay0ydUQ5UmM1LWNxQ3VtOURFb0pxdHFvXzhieWFYbnZWZldnXzRVNFBDdW9jRjdBR2tmTkZNNUxmQjZoemo1dDQwNTZtVFZONm9JUE5ucGMxSQ?oc=5",
     "Category": "Government",
     "Risk Score": 38,
-    "Summary": "Sanwo-Olu commissions Nigeria’s first integrated energy hub  The Guardian Nigeria News",
+    "Summary": "Sanwo-Olu commissions Nigeria\u2019s first integrated energy hub\u00a0\u00a0The Guardian Nigeria News",
     "Status": "Unread",
     "Engine": ""
   },
@@ -619,7 +691,7 @@
     "URL": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQazlJdXBPcU1nX2RhU2N4bTRjcXZQVE9ZY3NhdGczZ2xqZjZvdmJPUU4xcWR5WWJkaWJ2YUJqSDkyek5uelpYWTFRdnhQTTdDTHVqZ0ZRVUFQdFlYSGRETW90SGZEcFAtM0JQY2JBanNZNVhsbmlHU3dpUk1IR3FuZTVVRGxaZXF0QkFVU0hDR3laY3R6VGhyQV9VWlRSTnlGQThUQU5FZnEydDBVRTN4U21MbThHbTZzWUpMVTdOWGJYdw?oc=5",
     "Category": "Person",
     "Risk Score": 26,
-    "Summary": "FAAN says smoke, not fire, caused emergency at Lagos airport  premiumtimesng.com",
+    "Summary": "FAAN says smoke, not fire, caused emergency at Lagos airport\u00a0\u00a0premiumtimesng.com",
     "Status": "Unread",
     "Engine": ""
   },
@@ -631,7 +703,7 @@
     "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbi1DazFfaGJTb1NJU20zbzQwd21mN212UU1YSmRBTzNsVld1TnlpOEZhVjdSVnQ5LXZoOE5FSHZBZDlyQldDY0QtLVhPWFY5MXdJcmR1NUo4a09TekxpZ2E4Ui01VE01U0FTcU9wLWx4Z3pxcUVRYWNGMkVqVXBkOXYzTGlNeUdzdzlCUGJSYklDbjFtcjBLNld3?oc=5",
     "Category": "Person",
     "Risk Score": 24,
-    "Summary": "Rainy season: Lagos residents battle floods, traffic, rising transport costs  Punch Newspapers",
+    "Summary": "Rainy season: Lagos residents battle floods, traffic, rising transport costs\u00a0\u00a0Punch Newspapers",
     "Status": "Unread",
     "Engine": ""
   },
@@ -643,43 +715,7 @@
     "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYkprbjJCV2ozZmFxZlFYWXl3SFczWWdXdGFpeGdFNXNwaFU2b3J3cGwxQkZ2VHQza2hEOVdVT0hVZjJNQUg5R21tZHpES2RyMFprNUthaGE5aF9QQVBmdVRtMVhrR0FoUEhIVW5yQ1VMc0dmWWRzcUctY2s5VnVMSWF3dXFJbU1fdXY2MzNaRzM?oc=5",
     "Category": "Government",
     "Risk Score": 40,
-    "Summary": "Cross River unveils US$1.075bn historic PPP investment package  The Guardian Nigeria News",
-    "Status": "Unread",
-    "Engine": ""
-  },
-  {
-    "ID": 2275,
-    "Time": "Sun, 02 Aug 2026 15:22:36 GMT",
-    "Title": "Nigerians should separate budget corruption from alleged padding – Bwacha - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM3Z2NXVISlF5TlhocDhNRm1HUnFpdDR3MTYxYXQtaXBZX09pcVlGQzFCUXRlX1g5S0FzR0ZaUkNEZ1ZuUVFqUGNKZk9YY1ZXN3BQbVZxNExoVVBuUWxFdkR5bU1nWmRQVUtzUnBodnFKVDItck9TeG16d0wxeVU4VVh2bzEwbGhHemhqSThKeXhHVk9xOS1hMjJqWkhtQQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 38,
-    "Summary": "Nigerians should separate budget corruption from alleged padding – Bwacha  The Guardian Nigeria News",
-    "Status": "Unread",
-    "Engine": ""
-  },
-  {
-    "ID": 2274,
-    "Time": "Sun, 02 Aug 2026 15:02:50 GMT",
-    "Title": "Lagos seals shops over illegal waste disposal in Yaba, Tejuosho | - theeagleonline.com.ng",
-    "Source": "theeagleonline.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcnNFWEpqRFd1X0k2a0tYX3dfTkRVQ1NxaFBaU2lKYzlxOEZMcUNVS1dSeENxSkZ3WEJadGtXaTkweHJubzlZNXBzMGdIWExBLXh6NENxMC1JSk5rWnBNR3dOc2phMExPdmpwd2pXZno0ZWs5RW91dEd4RUlzX05PU1p5SkFQT3dzSm5ZT1ZIZ0t3eDBMbmZsMA?oc=5",
-    "Category": "Legal",
-    "Risk Score": 25,
-    "Summary": "Lagos seals shops over illegal waste disposal in Yaba, Tejuosho |  theeagleonline.com.ng",
-    "Status": "Unread",
-    "Engine": ""
-  },
-  {
-    "ID": 2273,
-    "Time": "Sun, 02 Aug 2026 16:47:31 GMT",
-    "Title": "Lekki Port, NDLEA deepen alliance to tighten maritime security, secure trade - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV3d0QUh3c0JHSWtSZ1RGRkZMN21MNUh0bm5MY2MtTWp2SGVTVzlqdS00LUFHV2luU0wxRjluUjFhVkk3MjhlNnd4ZjE4d1lDX3Q5eXFZdDMtc1VTZk1LNlZPUkpjeXlOSXp2dXlwVE9CSXdCUDQwaEIxRmtCRXM4NU5LU3o2N2lsQ2F6QXJZbXYxanhGdENQVXc2OUN4bFJtUGNRcTlGRng3Y1Bway14Q2JoaUR0ZVROWFNuc0ZWOA?oc=5",
-    "Category": "Government",
-    "Risk Score": 40,
-    "Summary": "Lekki Port, NDLEA deepen alliance to tighten maritime security, secure trade  The Guardian Nigeria News",
+    "Summary": "Cross River unveils US$1.075bn historic PPP investment package\u00a0\u00a0The Guardian Nigeria News",
     "Status": "Unread",
     "Engine": ""
   }
