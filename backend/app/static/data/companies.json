@@ -2451,10 +2451,10 @@
   },
   {
     "Company": "First HoldCo",
-    "Mention Count": 9,
-    "Last Seen": "2026-07-31 15:26",
+    "Mention Count": 10,
+    "Last Seen": "2026-08-05 09:37",
     "Industry": "General",
-    "Risk Level": "Low"
+    "Risk Level": "High"
   },
   {
     "Company": "N7.13",
@@ -6232,7 +6232,7 @@
   {
     "Company": "Nigerian National Petroleum Company",
     "Mention Count": 4,
-    "Last Seen": "2026-08-05 00:10",
+    "Last Seen": "2026-08-05 0:10",
     "Industry": "General",
     "Risk Level": "Medium"
   },
@@ -6506,6 +6506,20 @@
     "Company": "Bergmans",
     "Mention Count": 1,
     "Last Seen": "2026-08-04 15:29",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "MDU Capital",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-05 09:35",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "Association of Major Automotive Traders",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-05 09:35",
     "Industry": "General",
     "Risk Level": "Low"
   }

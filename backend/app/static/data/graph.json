@@ -433,6 +433,12 @@
       "risk": "Medium"
     },
     {
+      "id": "c0f6baef22e7",
+      "label": "First HoldCo",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "0c68c2daa033",
       "label": "BPP",
       "type": "agency",
@@ -739,6 +745,12 @@
       "from": "f6c44ca7989b",
       "to": "172469be05d6",
       "label": "PSC: 12.4%"
+    },
+    {
+      "id": "0cd3b636ebc8",
+      "from": "6617740c0c1a",
+      "to": "c0f6baef22e7",
+      "label": "Significant influence or control"
     },
     {
       "id": "2f75d17a49f0",
