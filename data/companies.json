@@ -6231,10 +6231,10 @@
   },
   {
     "Company": "Nigerian National Petroleum Company",
-    "Mention Count": 4,
-    "Last Seen": "2026-08-05 0:10",
+    "Mention Count": 5,
+    "Last Seen": "2026-08-06 00:05",
     "Industry": "General",
-    "Risk Level": "Medium"
+    "Risk Level": "High"
   },
   {
     "Company": "SSK",
@@ -6529,5 +6529,26 @@
     "Last Seen": "2026-08-05 15:15",
     "Industry": "General",
     "Risk Level": "Medium"
+  },
+  {
+    "Company": "Nigeria Reinsurance",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-06 00:04",
+    "Industry": "General",
+    "Risk Level": "High"
+  },
+  {
+    "Company": "Presidential Foreign Investment Promotion Council (PFIPC)",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-06 00:06",
+    "Industry": "General",
+    "Risk Level": "High"
+  },
+  {
+    "Company": "Nigerian Association of Chambers of Commerce, Industry, Mines and Agriculture",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-06 00:06",
+    "Industry": "General",
+    "Risk Level": "Low"
   }
 ]
