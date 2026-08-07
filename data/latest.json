@@ -1,5 +1,65 @@
 [
   {
+    "ID": 2848,
+    "Time": "2026-08-07 05:50:00",
+    "Title": "How Nigeria spent N1.16trn on petrol in 2021, says RMAFC",
+    "Source": "tribuneonlineng",
+    "URL": "https://tribuneonlineng.com/how-nigeria-spent-n1-16trn-on-petrol-in-2021-says-rmafc/",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The Revenue Mobilization Allocation and Fiscal Commission (RMAFC) reports that the Nigerian government spent N1.16 trillion on petrol subsidies in 2021.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2841,
+    "Time": "2026-08-06T16:21:15Z",
+    "Title": "PSC hands over 50,000 newly recruited constables to police for training",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/psc-hands-over-50000-newly-recruited-constables-to-police-for-training/",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "The Police Service Commission (PSC) has handed over 50,000 newly recruited police constables to the Nigeria Police Force for their formal training.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2839,
+    "Time": "2026-08-06T17:10:34Z",
+    "Title": "Osun Account Freeze: Gov Adeleke drags EFCC to court, demands N2bn damages",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/osun-account-freeze-gov-adeleke-drags-efcc-to-court-demands-n2bn-damages/",
+    "Category": "Legal",
+    "Risk Score": 40,
+    "Summary": "Governor Ademola Adeleke of Osun State has filed a N2 billion lawsuit against the Economic and Financial Crimes Commission (EFCC) following the freeze of state government accounts. The suit alleges that the EFCC's actions were unlawful and disrupted state administration.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2833,
+    "Time": "Fri, 07 Aug 2026 15:46:46 GMT",
+    "Title": "Defending Public Purse: Why EFCC was right to freeze Osun State accounts - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeHJtNnphOHNMZkdqamMtWjE2dlotQ2FNX3pPQmN1aFVPTXFZZ1JNMTZ6Zk1faURiLWQySGZyUkpBeDY1MlpUWGpTa1Q2NlhIV3o3UGViZmIxdVM1OUdBd0JCZnRGbFJnbnRKUlN4OGZfT1FtYWRndDhBVzdUbHlvaWJabllIV3NQR3hZRGFad04xUkpHaUNjQ29xbUxRUExJeFE?oc=5",
+    "Category": "Legal",
+    "Risk Score": 65,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has frozen the accounts of Osun State as part of an investigation into the management of public funds.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2832,
+    "Time": "Fri, 07 Aug 2026 12:40:18 GMT",
+    "Title": "Accord Party demands EFCC chair\u2019s resignation over Osun account freeze - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMEc4ZmZGZUxFZVcycXYzZC01M2NqOXZCVk5lUzhpVGIzOWc3MFZDX2dGSE90YUwxNWREYlhYMTRSYUhHRHpTU1VVajc3WUU0OUdsV0l1bzJYdUxHZURfUGFzT2FGNzRMVzhOdjhFSG13ZGY5NDhNOGR5Wm9MNklhRlpJUzRIdDR2Nml5NXNjVVZBVm5m?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Accord Party has called for the resignation of the EFCC Chairman following the freezing of accounts belonging to the Osun State government.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 2816,
     "Time": "Fri, 07 Aug 2026 13:46:22 GMT",
     "Title": "Otedola acquires additional 138 million First HoldCo shares worth \u20a618.1 billion - Premium Times Nigeria",
@@ -656,66 +716,6 @@
     "Category": "Government",
     "Risk Score": 10,
     "Summary": "The Nigerian Ports Authority (NPA) has cleared 1,500 trucks from the Apapa ports and increased the proportion of cargo moved via barges to 30%.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2662,
-    "Time": "Wed, 05 Aug 2026 23:36:25 GMT",
-    "Title": "NBA faults EFCC as Osun account freeze sparks row - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5HTy0waE1YUmNSdFM5cVNxSlJDa1BTTUVqVUpLRHA1MVhHVDdrZDMwUlpSNHpLb1RDUTd3Smp0NnJVaTZZTXp0LXFURERyeElLUkpPOFpQTHVNbm9ERGpSREpzWmhXTEhXZ3Y4Ny1uYWlQWXI0S0tFMkpR?oc=5",
-    "Category": "Legal",
-    "Risk Score": 40,
-    "Summary": "The Nigerian Bar Association (NBA) has criticized the Economic and Financial Crimes Commission (EFCC) following the freezing of accounts belonging to the Osun State government.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2661,
-    "Time": "Thu, 06 Aug 2026 09:00:50 GMT",
-    "Title": "Osun rejects EFCC\u2019s N11bn fraud claim, alleges political motivation - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZVhHMFRLRjNqVktEcEZWSE0wZmxPdFBJTFFvc1prVm1XalIyWWc4UGxyRS1IT1pUNEVjSHRiQkZPbGVfcWtzS0lrS3hYYXNmWUQ4MVlUMVhtaWs5SjVweGIzNC02cXNXRnB4azBZMGhMRzVuNnRjc0Z1Qk5tTy1tT1lmSDExdVJkejlXbDlfZ3hxQ0ZuTXBtdUw1RzdfSzMyN0NvaS1vX052cDhhU0ZIOThaUUgtcjUwRXc5WDQ0a18?oc=5",
-    "Category": "Legal",
-    "Risk Score": 65,
-    "Summary": "The Osun State government has rejected allegations from the Economic and Financial Crimes Commission (EFCC) regarding an N11 billion fraud claim, asserting that the accusations are politically motivated.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2660,
-    "Time": "Thu, 06 Aug 2026 04:00:00 GMT",
-    "Title": "Why Nigeria\u2019s 2025 licensing round signals new era for energy industry - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOX2dydDVVbHJnRVRoUHd3QXNjcFBTcHg0R2ZrbGNqMHkwYTlBbmk1SnRXWEhsV3lZWXZKajVLX2xMNUU4SmxOdmgyLUREeTE1ajRzNlY1WXE1ZzFRY0YzQV9wUHFzVDZjSFNmYVIteTMwcF9RUV9XT2dfUm5uWDhFWHFQbUZCSFNBeDhjalUtdFl0VnBwbGRqWEIyb0x5ejA?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigerian government is initiating a 2025 licensing round for the energy industry, signaling a strategic shift in the sector's operational framework. This move is expected to open new opportunities for energy companies to acquire exploration and production licenses.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2657,
-    "Time": "Thu, 06 Aug 2026 03:49:39 GMT",
-    "Title": "Reps, NDIC seek stronger financial safety net as NAICOM revokes Nigeria Reinsurance\u2019s licence - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOb1hFMi1uNi1lMENPbEZ1UnktSHlFQ3VJN1RuY3VQeHlhc2cyekJYaW12UDlQY3lFLXpzY0VUZ1hOTlpYMnE1MkV5STdXbXlSYTJTNkxIcGI0bnV2eXBjZndMTVlqQktZZ2RDSE1LZjFWeGItTlduUWFsaVp1MVJ4WUxiV3luSkV6MGREOHBQRU00UkRvSU53bHVESmF4VW1wZkhGcUxfajZWWHpNZ0JWSi1zcVEyZVB5?oc=5",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "The National Insurance Commission (NAICOM) has revoked the license of Nigeria Reinsurance. In response, the House of Representatives and the Nigeria Deposit Insurance Corporation (NDIC) are seeking to establish a stronger financial safety net.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2656,
-    "Time": "Wed, 05 Aug 2026 20:42:00 GMT",
-    "Title": "Tinubu\u2019s reforms fuel record half-year earnings for listed companies \u2013 Presidency - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQbVgzaW4tcEJYeUxPNTI5S3hiSEU3NUtOQUR6ZVg2YjJWWFVVV2hSal9weG1nTFBZUHhrZE9kdmd6SDF0VTNLUVFrUTJnUFNKOUNqWnRhbUNYb3VHMk10RFkxZkNHdmZTbjI2YncwcDVlcWtXaHpoUnBrbFZJYy02Zy1zbmxUTTNDLVM5ZkgzYWlna3g3WFpBQUtwRlRmMEE2ektFYnA1NA?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Presidency reports that economic reforms under President Tinubu have contributed to record half-year earnings for companies listed on the stock exchange.",
     "Status": "Unread",
     "Engine": "ollama"
   }
