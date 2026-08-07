@@ -3242,10 +3242,10 @@
   },
   {
     "Company": "Nigerian Exchange Group",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-22 09:34",
+    "Mention Count": 2,
+    "Last Seen": "2026-08-07 23:43",
     "Industry": "General",
-    "Risk Level": "Low"
+    "Risk Level": "Medium"
   },
   {
     "Company": "the Edo Specialist Hospital",
@@ -6231,8 +6231,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company",
-    "Mention Count": 6,
-    "Last Seen": "2026-08-06 15:14",
+    "Mention Count": 7,
+    "Last Seen": "2026-08-07 23:43",
     "Industry": "General",
     "Risk Level": "Medium"
   },
@@ -6604,6 +6604,13 @@
     "Company": "SEEPCO",
     "Mention Count": 1,
     "Last Seen": "2026-08-07 13:34",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "Dana Air",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-07 23:40",
     "Industry": "General",
     "Risk Level": "Low"
   }
