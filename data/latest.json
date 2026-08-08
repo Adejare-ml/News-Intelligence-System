@@ -1,5 +1,41 @@
 [
   {
+    "ID": 2951,
+    "Time": "2026-08-07T08:22:11Z",
+    "Title": "NDLEA, pharmacists strengthen partnership against drug abuse in Edo",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/ndlea-pharmacists-strengthen-partnership-against-drug-abuse-in-edo/",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "The National Drug Law Enforcement Agency (NDLEA) Edo State Command and the local pharmaceutical community have strengthened their partnership to combat drug abuse and illicit substance trafficking in the state.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2949,
+    "Time": "2026-08-07T09:30:21Z",
+    "Title": "Osun account freeze: EFCC boss faces public fury, as Tinubu reverses order",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/osun-account-freeze-efcc-boss-faces-public-fury-as-tinubu-reverses-order/",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "President Bola Tinubu directed the EFCC to reverse the freezing of an Osun State Government account. The action has sparked political controversy regarding the independence of anti-corruption agencies.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2946,
+    "Time": "Sat, 08 Aug 2026 08:24:27 GMT",
+    "Title": "Osun account: Law mandates EFCC to serve court order \u2013 State counsel - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbTVfV2ZHelM1RVZXVThTRDN4eFB2UGRJRTNNZ0dROVZmTFFFTnByb0tPNTZzeXRmaVJZWnlWb1EweWEybkFSUmNwUXd0aV9qUXJTRmdQV3hMZmkwVk5VZTBWZlJaQXByZGo5Z1hYZ3pLRnpKckNNanlVS3JTLVJwY1JBWmUtY1R1SndYX09tYmVHcm9WcVBqRWpFUGs2d21NOHJKTtIBqgFBVV95cUxOVjN0MFoyTkRUQnM4WnRQUDRMVl9lWGVfVGhjSVJDVDc0bzN3Ukp5S0piOFVLOVZUWHoxR3VxUlE4X2MwckNJdVo0ZHBqOVFfX0F0aFhrNGZmRUFKd2JpRGtKREgwYVVRX0YzMnhJNnM4alBQWE8xaGdFRmttdWVYSTE0YmtjS2R6YzA5RlBRY1VoY2lkVDAxbzAtMVZqaGE5eTRreUFLZFNKdw?oc=5",
+    "Category": "Legal",
+    "Risk Score": 30,
+    "Summary": "The Osun State government's legal counsel asserts that the EFCC must follow legal mandates by serving a formal court order to access or freeze state accounts.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 2927,
     "Time": "2026-08-06T23:51:36Z",
     "Title": "Gazelle refinancing frees crude, extends Nigeria\u2019s repayment schedule",
@@ -680,42 +716,6 @@
     "Category": "Other",
     "Risk Score": 10,
     "Summary": "The Nigerians in Diaspora Commission (NiDCOM) has commended the first Nigerian neurosurgeon to be appointed as a medical director in the United States.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2742,
-    "Time": "Thu, 06 Aug 2026 21:56:42 GMT",
-    "Title": "Fake Agency Probe: State House denies authorising council creation, FRSC admits number plate issuance - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQTFN4RTVPbjV1WWY3Ymh2NkdDRW4xd2Rad0RTRlJ3bUlnRExJLXBxbWIwRkZ2LWljdUhjWFY0TjJzdTBEdW1ZVHRrUGFQSkplc3BLTHRXUWd6NVpKRU44OVM0ZUxHZ3VGdlBydGxab1h1YktiZjVnb0NZMEptM1NLSFgxNlNMaGZqemJFU1RyaEhJQnRjTTluYmlMZDgzRl9ibnhmWkZDOTh5TmFzd1loa18tRGE1N3dNU01fQS1tcHhVZl9SVmE2dGdCMGpNT2x3V2ZoMFdIcW9zLXRkTGVVMFV0cXR4ZDRWTEZ3VUp3?oc=5",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "The State House has denied authorizing the creation of certain councils as part of a probe into fake agencies. Meanwhile, the Federal Road Safety Corps (FRSC) has admitted to the issuance of number plates involved in the investigation.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2739,
-    "Time": "Thu, 06 Aug 2026 15:27:37 GMT",
-    "Title": "UPDATED: Tinubu directs EFCC to lift freeze order on Osun govt\u2019s account - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPU3NONXdpbU9YT2lmekFlT2RZLWNVbFFiSVA5cUpGLXlhXzRIblAtNTJPdUNRUG45WkJxNm1oSnp2VXRQYmVUU19FektIZG9jeDJWZy1sUDNBNF8zNFYtLS1MZGdIYlRIZE9jOWUxc0JWeE1Pb1hNSHpYVWVjUDZEaFR3WjEwN0J2cDluRmlvdWs1SFB2d2hPVXR0VmsxVWtBVVhpODBlRUdQLTh5bjFpXy02M2FmdTdNSnF6WFhWdFZ6eTdrbVJlaHJPMW12ZVE?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "President Bola Tinubu has directed the Economic and Financial Crimes Commission (EFCC) to lift a freeze order on the accounts of the Osun State Government.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2738,
-    "Time": "Thu, 06 Aug 2026 16:33:50 GMT",
-    "Title": "Ondo Assembly Crisis: Lawmakers suspend planned speaker\u2019s removal, probe legislature\u2019s finances as APC intervenes - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNSFJ6QlhUakxmZzJLY2lqMWlMNDlLZkpDbVYzZ2pIYmo1S21tRVVwOXhocHhIZ3hwX3NubkRqb0ZpU1BEQnFILUE0UmVtazlZRGtyOW5McVJZYmhHRldSdWNHSFN3ZklheHBuWTV6azFYRHJqbERlTlNKbzRlNkVJT0NZVzRlZzRvemJvWlJ1TWt2NzFxOEJoUVhXNkJFb3gzSDkySERYaHFkNkN2ZmxhazVaMFNGS0I1dHczZmFUUVp6TlQxaDl6RHFMOTR0a1cxZ0tablYxQ0RwV2xrQVJZRjlwWXJaUjVqQkJtem02d3pleGxYZWVXNG1Zb0ZOVENHWXI0?oc=5",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "Members of the Ondo State House of Assembly have suspended the planned removal of the Speaker and initiated a probe into the legislature's finances following intervention by the APC.",
     "Status": "Unread",
     "Engine": "ollama"
   }
