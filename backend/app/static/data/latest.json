@@ -1,5 +1,41 @@
 [
   {
+    "ID": 2971,
+    "Time": "2026-08-08 05:26:28",
+    "Title": "Tinubu\u2019s EFCC directive over Osun govt\u2019s account sparks fresh questions over agency\u2019s independence",
+    "Source": "vanguardngr",
+    "URL": "https://www.vanguardngr.com/2026/08/tinubus-efcc-directive-over-osun-govts-account-sparks-fresh-questions-over-agencys-independence/",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "President Tinubu has reportedly issued a directive to the EFCC regarding the accounts of the Osun State government. This action has raised concerns regarding the independence of the anti-corruption agency.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2963,
+    "Time": "Fri, 07 Aug 2026 00:19:45 GMT",
+    "Title": "Osun: We can freeze accounts for 72 hours without court order \u2014 EFCC - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOU2JyaTA4bmpsb3Bwa0lLdnl2Z2JNaWcwZFgwTllQQWpWV0lVQVlQMnNvYWppZFVOTzhsaTdya1lRSlpBR0xxc2ZOakp1OTBQVnk4UlZnSnp3Q1Z3LUEybFphSXZJNEY4clpUUHFBWGV6aFFfVG9uLS1NRTBSUmphZEIydGtKWU5FeEJhc1hTOA?oc=5",
+    "Category": "Legal",
+    "Risk Score": 40,
+    "Summary": "The EFCC has asserted its authority to freeze bank accounts for a period of 72 hours without a prior court order during investigations in Osun State.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 2961,
+    "Time": "Sat, 08 Aug 2026 16:25:45 GMT",
+    "Title": "Obudu Ranch Concession will transform Obanliku, create jobs, boost tourism \u2014 Otu - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTlBBZng2UnVnclRjSHFnNWxfeVU0YUtKMUw2R21FRzh6cHZDdkJIbzhHbm9tSER2Mk00THdISHVYT0FrOWhlWG9peWYwTS0ySHVaV0V0OEd2akJIcDJ5V0NfTjZmamRLczdVbUQxQm5KazhtbDRDRmhjdkY5TG1XYm8yY3IwWmJLU1hHRnVvUmNtdHBSQUhqSS1PeW4wRlZtcnNpRA?oc=5",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The government has announced a concession for the Obudu Ranch, aimed at boosting tourism and creating jobs in the Obanliku region.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 2951,
     "Time": "2026-08-07T08:22:11Z",
     "Title": "NDLEA, pharmacists strengthen partnership against drug abuse in Edo",
@@ -680,42 +716,6 @@
     "Category": "Government",
     "Risk Score": 15,
     "Summary": "The Police Service Commission (PSC) has approved the deployment of eight Commissioners of Police to various state commands. Additionally, AIG Auwal Mohammed has been appointed as the new Commandant of the Police Academy.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2749,
-    "Time": "Thu, 06 Aug 2026 13:22:55 GMT",
-    "Title": "FCMB commits \u20a620bn to finance Nigeria\u2019s healthcare businesses - Vanguard News",
-    "Source": "Vanguard News",
-    "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbThhdE1FQ3RjbjY4SWN5N0JRYWcwTngxX3JYd3pleGVjUm02QWthU2trTUZWdlhQYWNBZmtRdldHdkxnLWZtcTFRSVJpcEpDd0ZJUEFfd19oa0lDT0dOc2xqcWpLZ2Z2ckRpX1JScXUyOC1JTUNES1FpODlsdDExRzFLWnh4bjREc2FDOTN2TnI4ejhmd0ZUVmRMS1MtaTE5ZzNJcEhYVC3SAa4BQVVfeXFMUGN5cldwejllQXVuSllPNExmd1ZZMTJRdXF3ZWFjeWF2cXpPLWZ6SjVfZVhLTFRIZXdLZ0lyZWNBZzJzOU1xd1ZjdDE5WFlmVnMxWTB4UzlSSVgzbzlKYnVPQ1RsRFRqaDJyWWpCdnZodUo1NHBhS3RseEx0N0QzYVFGRVFrZHNPd3V6OGs1ZGRpNXBkNkZwZGZjQzlxdGxKSXN3UEJabmFtVGZKaGhn?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "First City Monument Bank (FCMB) has committed \u20a620 billion to provide financing for healthcare businesses in Nigeria.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2748,
-    "Time": "Thu, 06 Aug 2026 20:00:00 GMT",
-    "Title": "Osun drags EFCC to court, seeks N2bn damages over freeze on state account - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPR25Ya0lTUFJWcEhmeHpuV0N6U1FtSmVfemU1Rm5PaXR2Q2hFdVN1dF8wS3k0UHVWLWU4VlAtaHZJdXlhOVBLT2o4YWVic2oxUXhKdTg0OE9hWk41NGMwLWFTZXN2MWpyUkhneE5Na0pOUFUtTnVDQWp3cUlSY3g2Wmd1TlJoeXJXSDA4endfcFczXzRWTEZzNHdUZU44LVk?oc=5",
-    "Category": "Legal",
-    "Risk Score": 40,
-    "Summary": "The Osun State Government has initiated legal action against the Economic and Financial Crimes Commission (EFCC), seeking N2 billion in damages. The lawsuit follows the EFCC's decision to freeze the state's government accounts.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2744,
-    "Time": "Thu, 06 Aug 2026 15:55:47 GMT",
-    "Title": "NiDCOM hails first Nigerian neurosurgeon on US medical director appointment - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPd0pZYV9JTVRuOGpjTk9ncHRlSmFFQlJpalB1cVZscGRJNUdhVEVnVVpueVNGLWhIdjRJUlNYQ3JGMGtKUTh2Vk82WlRQSzZBYTJWWER5YXFUcWlpaVVHRXpQOFlFaXJIMUJHUlp0ZUd5aF9hSXFWV0ZEdV81YU5zTVJrV2I4UHdjc2hsaWRUeHhmcWV6T3BhcHh2YzY?oc=5",
-    "Category": "Other",
-    "Risk Score": 10,
-    "Summary": "The Nigerians in Diaspora Commission (NiDCOM) has commended the first Nigerian neurosurgeon to be appointed as a medical director in the United States.",
     "Status": "Unread",
     "Engine": "ollama"
   }
