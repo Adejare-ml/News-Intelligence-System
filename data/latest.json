@@ -1,5 +1,53 @@
 [
   {
+    "ID": 3051,
+    "Time": "2026-08-08T23:18:30Z",
+    "Title": "Osun 2026: Between politics and law, by Tonnie Iredia",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/osun-2026-between-politics-and-law-by-tonnie-iredia/",
+    "Category": "Legal",
+    "Risk Score": 65,
+    "Summary": "The article discusses a legal and political conflict between the Osun State Government and the Economic and Financial Crimes Commission (EFCC) regarding financial investigations. The rift highlights tensions between state executive power and federal anti-corruption agencies.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3048,
+    "Time": "2026-08-08T23:35:05Z",
+    "Title": "ICPC: A verdict against one man, silence for the system",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/icpc-a-verdict-against-one-man-silence-for-the-system/",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "The article critiques the Independent Corrupt Practices and Other Related Offences Commission (ICPC) for focusing on individual convictions while failing to address systemic corruption within the Presidential Foreign Intervention Promotion Council. It highlights a perceived lack of institutional accountability and transparency in government procurement and foreign intervention processes.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3042,
+    "Time": "Sun, 09 Aug 2026 16:19:00 GMT",
+    "Title": "Expert wants FAAN to remit 5% of airport earnings to aviation safety agencies - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQU3ZTTWVZc1BiZ2tMSDRsQkxJcUR3bEZoWmJaMENKTHBZdG9XTVlpUG9qT1dhNGozOEo5cmdnNG9PM0JyY0dlTGhZSzE3bjhDdHQtb24xN0JVZDdFTUVMb0lzRThWZVMxaGEwX1M0YW1MRkRoaXRpZGpuc2E0WVNsRDJuNTRsS19kLUFnN0dDbXk4cVI1cmI2cHNEdUY4eEZ0VmVBdg?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "An industry expert has proposed that the Federal Airports Authority of Nigeria (FAAN) remit 5% of its airport earnings to aviation safety agencies to enhance safety standards.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3037,
+    "Time": "Sun, 09 Aug 2026 18:43:43 GMT",
+    "Title": "FG unveils guards to protect Lagos-Calabar coastal highway - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcWxPRE5MaUQ0QW8tM0JJSVdtUEdfQWl3Yzl2MDdMSnJxdjJXaFVvU05PMmpleFFZVWFlaVhyNmo4LWdzWEJQYTE4emZEbTBjanNvWnQ1U0h3Mi1WcjVVcDhsZXlMUmhsZng4UERxYmhaa195Q1RzazRiZjYweHZfcEZSTTVsdw?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Federal Government of Nigeria has unveiled security guards to protect the Lagos-Calabar coastal highway project.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 3027,
     "Time": "Sun, 09 Aug 2026 17:20:06 GMT",
     "Title": "PANDEF hails Tinubu over 15-Year gas deal for Nigeria\u2019s first floating LNG - guardian.ng",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Accord Party has called for the resignation of the EFCC Chairman following the freezing of accounts belonging to the Osun State government.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2816,
-    "Time": "Fri, 07 Aug 2026 13:46:22 GMT",
-    "Title": "Otedola acquires additional 138 million First HoldCo shares worth \u20a618.1 billion - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONWFSdWUxaU8yUTFIU3c3aEpxNHh0blBWck9wd1lJbl95MkJMMHVmYUdGcVVURjFvOHUtY1ZFQkhXS2h0MUt0MWlYVDhJb3RoeHdpVUx4WS0xMU1hNXBLemg1aXBJWVdvbnZYMWw3RU4tQ1BFRWhwM2JIZjQ5clhJQUl6RkoySTVHS3hTM3NOV05xSTRlc1hOVmVNMDM5N2lESl93M25rb1FnRzFQZmlfakJVRG1HYWFYUjBpMlV0Q1pGODRaYWhKb3JQTEozR211cFJnRzc5ZHEyZ1ctZXpZQWY4ZGc4aW1D?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Femi Otedola, a prominent businessman, has acquired an additional 138 million shares of First HoldCo, valued at \u20a618.1 billion. This move increases his stake in the company, further solidifying his position as a major shareholder.",
-    "Status": "Unread",
-    "Engine": "nvidia"
-  },
-  {
-    "ID": 2813,
-    "Time": "2026-08-07 01:32:50",
-    "Title": "SEC seeks beneficiaries\u2019 improved awareness for unclaimed dividends, dormant assets",
-    "Source": "sunnewsonline",
-    "URL": "https://thesun.ng/sec-seeks-beneficiaries-improved-awareness-for-unclaimed-dividends-dormant-assets/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Securities and Exchange Commission (SEC) is advocating for increased awareness among beneficiaries regarding unclaimed dividends and dormant assets. The initiative aims to improve the recovery of these assets by investors.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2811,
-    "Time": "2026-08-06T12:51:08Z",
-    "Title": "EFCC action against Osun threatens democracy, says Makinde",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/efcc-action-against-osun-threatens-democracy-says-makinde/",
-    "Category": "Government",
-    "Risk Score": 40,
-    "Summary": "Governor Seyi Makinde of Oyo State has criticized the Federal Government for allegedly using the Economic and Financial Crimes Commission (EFCC) to target opposition-controlled states, specifically citing recent actions in Osun State.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2810,
-    "Time": "2026-08-06T12:58:10Z",
-    "Title": "Osun Election: Obi raises concern over EFCC account freeze, warns against political intimidation",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/osun-election-obi-raises-concern-over-efcc-account-freeze-warns-against-political-intimidation/",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "Peter Obi expressed concern over the EFCC freezing the bank accounts of the Osun State Government. The action is framed as potential political intimidation amidst election activities.",
     "Status": "Unread",
     "Engine": "ollama"
   }
