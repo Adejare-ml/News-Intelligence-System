@@ -1787,10 +1787,13 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (activePscFilter === "pep") {
             pscData = pscData.filter(r => (r["PEP Status"] || "").toLowerCase().startsWith("yes"));
         } else if (activePscFilter === "cross") {
-            pscData = pscData.filter(r => {
-                const name = (r["Person Name"] || "").toLowerCase();
-                return allPscRecords.filter(x => (x["Person Name"] || "").toLowerCase() === name).length > 1;
-            });
+            // Distinct companies, via the same engine the red-flag rule uses.
+            // Counting rows put people here who hold nothing across entities:
+            // the register carries the same disclosure twice whenever two
+            // articles report it, and two rows against one company is not a
+            // cross-holding.
+            if (!pscFlagContext) pscFlagContext = window.AuraPSC.buildContext(allPscRecords);
+            pscData = pscData.filter(r => window.AuraPSC.companiesFor(r, pscFlagContext).length > 1);
         }
 
         // Apply Search Query Filter
