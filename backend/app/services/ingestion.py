@@ -4,7 +4,7 @@ import random
 import re
 import html
 from datetime import datetime, timedelta
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from backend.app.core.config import settings
 import logging
 
@@ -80,12 +80,27 @@ MOCK_NEWS_TEMPLATES = [
     }
 ]
 
-def parse_feed_date(date_str: str) -> datetime:
-    """Helper to parse feed publication date string into a datetime object."""
+def parse_feed_date(date_str: str) -> Optional[datetime]:
+    """
+    Parse a feed publication date, or return None when it cannot be established.
+
+    This used to fall back to datetime.now() on every failure, which made an
+    article of unknown age indistinguishable from one published this minute.
+    The consequence was not cosmetic: the only caller is the 48-hour freshness
+    gate, and now() is always inside a window ending at now(), so every article
+    with a missing or unrecognised date passed the filter unconditionally and
+    then sorted to the top of a feed ordered newest-first. An undated story was
+    presented as breaking news.
+
+    None means "not known". Callers decide what to do about that; they must not
+    be handed a fabricated timestamp that reads as fact.
+    """
     if not date_str:
-        return datetime.now()
-    
-    date_clean = date_str.replace("Z", "").strip()
+        return None
+
+    date_clean = str(date_str).replace("Z", "").strip()
+    if not date_clean:
+        return None
     
     formats = [
         "%Y-%m-%dT%H:%M:%S",
@@ -110,8 +125,8 @@ def parse_feed_date(date_str: str) -> datetime:
         return parsedate_to_datetime(date_str).replace(tzinfo=None)
     except Exception:
         pass
-        
-    return datetime.now()
+
+    return None
 
 # Whole-title matches only. Substring matching would be wrong here: "register"
 # alone is chrome, but "PSC register" and "beneficial ownership register" are
@@ -268,7 +283,10 @@ class NewsIngestionService:
                         "title": clean_title,
                         "url": entry.link,
                         "source": entry.source.title if hasattr(entry, 'source') else "Google News",
-                        "published_at": entry.published if hasattr(entry, 'published') else datetime.now().isoformat(),
+                        # Empty, not now(): an entry that omits a date has an
+                        # unknown one, and the 48h filter excludes and logs it
+                        # rather than treating this moment as its publication.
+                        "published_at": entry.published if hasattr(entry, 'published') else "",
                         "raw_text": clean_summary,
                         "is_rss": True
                     })
@@ -516,13 +534,34 @@ class NewsIngestionService:
                 nigerian_filtered.append(art)
                 
         # 4. Limit to last 48 hours
+        #
+        # An article whose date cannot be established is excluded rather than
+        # admitted: this filter's whole claim is "published within 48 hours",
+        # and that cannot be asserted about a date we could not read. The old
+        # fallback to now() made every such article pass, then float to the top
+        # of a newest-first feed.
+        #
+        # Excluded ones are counted and logged, because dropping coverage
+        # silently would only move the dishonesty rather than remove it. A
+        # rising count here means a feed changed its date format.
         limit_date = datetime.now() - timedelta(hours=48)
         time_filtered = []
+        undated = 0
         for art in nigerian_filtered:
             pub_date = parse_feed_date(art.get("published_at"))
+            if pub_date is None:
+                undated += 1
+                continue
             if pub_date >= limit_date:
                 time_filtered.append(art)
-                
+
+        if undated:
+            logger.warning(
+                "Excluded %d article(s) with an unreadable publication date from the 48h window; "
+                "if this is climbing, a source changed its date format.", undated
+            )
+
+
         # 5. Fuzzy Title Deduplication
         distinct_articles = cls.fuzzy_deduplicate_articles(time_filtered)
         
