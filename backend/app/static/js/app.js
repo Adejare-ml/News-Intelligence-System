@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadDashboardStats() {
         try {
+            clearDashboardStatsFailure();
             if (isGitHubPages) {
                 // Fetch datasets in parallel for serverless dashboard aggregation
                 const [artRes, compRes, repRes] = await Promise.all([
@@ -184,7 +185,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     fetch(`${API_BASE}/companies.json`),
                     fetch(`${API_BASE}/reports.json`)
                 ]);
-                
+
+                // Check the status before parsing, so a 404 or a 503 is
+                // reported as itself. Calling .json() straight through turned
+                // every server error into "Unexpected token" from whatever the
+                // error page happened to contain, which names the wrong fault.
+                [["latest.json", artRes], ["companies.json", compRes], ["reports.json", repRes]]
+                    .forEach(([name, res]) => {
+                        if (!res.ok) throw new Error(`${name}: ${res.status} ${res.statusText}`.trim());
+                    });
+
                 const rawArticles = await artRes.json();
                 const rawCompanies = await compRes.json();
                 const rawReports = await repRes.json();
@@ -247,6 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 // API Mode
                 const res = await fetch(`${API_BASE}/dashboard`);
+                if (!res.ok) throw new Error(`dashboard: ${res.status} ${res.statusText}`.trim());
                 const data = await res.json();
                 
                 animateCounter(statArticles, data.total_articles);
@@ -263,7 +274,53 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } catch (err) {
             console.error("Error loading dashboard stats:", err);
+            setDashboardStatsFailed(err);
         }
+    }
+
+    /**
+     * Say that the counters are unknown, rather than letting them read zero.
+     *
+     * The four counters are hardcoded to 0 in index.html, so a failed fetch
+     * used to leave the page asserting "0 Articles · 0 Entities · 0 Events ·
+     * 0 Elevated" while the catch below only wrote to the console. That is a
+     * confident claim that the system is empty, made at the exact moment
+     * nothing is known -- the same conflation the PSC panel had, except a
+     * literal zero is worse than a blank because it looks computed.
+     */
+    function setDashboardStatsFailed(err) {
+        [statArticles, statEntities, statEvents, statAlerts].forEach(el => {
+            if (el) el.textContent = "—";
+        });
+
+        const alertCard = document.getElementById("stat-alerts-card");
+        if (alertCard) alertCard.classList.remove("alert-glow");
+
+        const host = document.getElementById("pipeline-stats");
+        if (!host || !host.parentNode) return;
+
+        let note = document.getElementById("stats-load-error");
+        if (!note) {
+            note = document.createElement("p");
+            note.id = "stats-load-error";
+            note.className = "error-message";
+            note.style.cssText = "margin:10px 0 0 0; font-size:12.5px; color:#ef4444; display:flex; align-items:center; gap:10px; flex-wrap:wrap;";
+            host.parentNode.insertBefore(note, host.nextSibling);
+        }
+        note.innerHTML = `<span>Could not load the intelligence datasets, so these counts are unknown${err && err.message ? ` (${esc(err.message)})` : ""}.</span>`;
+
+        const retry = document.createElement("button");
+        retry.className = "btn btn-secondary";
+        retry.style.cssText = "padding:4px 12px; font-size:11.5px;";
+        retry.textContent = "Retry";
+        retry.addEventListener("click", () => loadDashboardStats());
+        note.appendChild(retry);
+    }
+
+    /** Drop the failure note once a load succeeds. */
+    function clearDashboardStatsFailure() {
+        const note = document.getElementById("stats-load-error");
+        if (note && note.parentNode) note.parentNode.removeChild(note);
     }
 
     /**
@@ -665,6 +722,17 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderMixChart(categories, risks) {
         const ctx = document.getElementById("mix-chart");
         if (!ctx) return;
+
+        // Chart.js comes from a CDN, so it is genuinely absent whenever an ad
+        // blocker, an offline machine or a restricted network drops it. Without
+        // this guard the ReferenceError propagates out of loadDashboardStats
+        // into its catch, and a page whose data loaded perfectly well reports
+        // that it could not load the datasets. renderGraph already guards its
+        // own library this way.
+        if (typeof Chart === "undefined") {
+            console.error("Chart.js library not loaded; skipping the mix chart.");
+            return;
+        }
 
         // Destroy previous instance
         if (mixChart) {
@@ -1459,6 +1527,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPscSearchQuery = "";
     let pscViewMode = "table"; // "table" or "map"
 
+    // Why the register tracks a load state rather than just a list: an empty
+    // array is ambiguous. It can mean the fetch failed, or that the register
+    // loaded and holds nothing, or that the active filter excluded everything
+    // -- three different facts that previously rendered as the same sentence,
+    // "No PSC disclosures match the selected filters". A failed fetch was
+    // therefore reported to the analyst as a filter result, and the KPI strip
+    // kept its placeholder dashes with nothing to say why. On a beneficial
+    // ownership tool that reads as "we looked and found no one in control",
+    // which is the opposite of "we could not look".
+    let pscLoadState = "idle"; // "idle" | "loading" | "ready" | "error"
+    let pscLoadError = "";
+
     // The illustrative PSC set lives in data/significant_control.json and is
     // generated from DEMO_PSC_RECORDS in run_pipeline.py. A second copy used to
     // live here, and the two drifted: the client copy carried extra invented
@@ -1533,8 +1613,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // PSC Filter Chips event handling
-    const filterChips = document.querySelectorAll(".psc-chip");
+    // PSC Filter Chips event handling.
+    //
+    // Scoped to this modal's own chip row rather than every ".psc-chip" on the
+    // page. The PSC Register section (psc-report.js) renders a second chip set
+    // with the same class and an overlapping data-filter namespace -- "all",
+    // "indirect" and "pep" mean something in both, "flagged"/"nigeria" only
+    // there. A document-wide query bound this handler to those chips too, so
+    // filtering the register could retarget the modal's table, and clicking
+    // either set stripped the "active" class off the other -- leaving a list
+    // filtered by a chip that no longer looked selected.
+    const pscFilterChipRow = document.getElementById("psc-filter-chips");
+    const filterChips = pscFilterChipRow
+        ? pscFilterChipRow.querySelectorAll(".psc-chip")
+        : [];
     filterChips.forEach(chip => {
         chip.addEventListener("click", () => {
             filterChips.forEach(c => c.classList.remove("active"));
@@ -1553,34 +1645,32 @@ document.addEventListener("DOMContentLoaded", () => {
         exportPscReportBtn.addEventListener("click", () => exportPSCComplianceReport());
     }
 
-    // Helper: Calculate Red Flags for a record
+    /**
+     * Red flags for one record, from the single engine in psc-core.js.
+     *
+     * This used to be a second implementation of those rules, and the two had
+     * drifted: it flagged a voting gap above 15 points where the engine uses
+     * 20, measured that gap against "Direct %" alone so an interest held partly
+     * through a vehicle looked like a discrepancy that was not there, matched
+     * three offshore substrings against the engine's twenty jurisdictions, and
+     * had no equivalent of the sub-threshold structuring, nominee, recent
+     * change of control or unquantified interest rules at all.
+     *
+     * The consequence was that this modal and the PSC Register gave different
+     * answers to "is this person flagged?" for the same row -- including the
+     * Red Flag Alerts KPI, which feeds the downloadable compliance brief. On a
+     * beneficial ownership tool two answers is worse than either.
+     *
+     * Returns the engine's objects ({id, severity, title, detail}), sorted
+     * high severity first. psc-report.js already consumes it this way.
+     */
+    let pscFlagContext = null;
     function getRecordRedFlags(r) {
-        let flags = r["Red Flags"] ? [...r["Red Flags"]] : [];
-
-        const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
-        if (isPep && !flags.includes("PEP Proximity Alert")) {
-            flags.push("PEP Proximity Alert");
-        }
-
-        const directVal = parseFloat((r["Direct %"] || "0").replace("%", ""));
-        const votingVal = parseFloat((r["Voting Rights %"] || r["Percentage"] || "0").replace("%", ""));
-        if (!isNaN(directVal) && !isNaN(votingVal) && (votingVal - directVal) > 15) {
-            if (!flags.includes("Voting Discrepancy")) flags.push("Voting Discrepancy");
-        }
-
-        const holding = (r["Intermediate Entities"] || "").toLowerCase();
-        if ((holding.includes("mauritius") || holding.includes("trust") || holding.includes("offshore")) && !flags.includes("Complex Offshore Vehicle")) {
-            flags.push("Complex Offshore Vehicle");
-        }
-
-        // Check if person holds stakes in multiple companies
-        const personName = (r["Person Name"] || "").toLowerCase();
-        const matches = allPscRecords.filter(x => (x["Person Name"] || "").toLowerCase() === personName);
-        if (matches.length > 1 && !flags.includes("Cross-Entity Portfolio")) {
-            flags.push("Cross-Entity Portfolio");
-        }
-
-        return flags;
+        // Indexed once per load rather than per row: the old version filtered
+        // the whole register inside a function called for every record, which
+        // is the O(n^2) that buildContext exists to avoid.
+        if (!pscFlagContext) pscFlagContext = window.AuraPSC.buildContext(allPscRecords);
+        return window.AuraPSC.redFlagsFor(r, pscFlagContext);
     }
 
     async function loadPSCRecords() {
@@ -1591,14 +1681,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>Loading PSC Beneficial Ownership & Anomaly Records...</p>
             </div>
         `;
+        pscLoadState = "loading";
+        pscLoadError = "";
         try {
             const res = await fetch(`${API_BASE}/significant_control.json`);
-            allPscRecords = res.ok ? (await res.json()) : [];
+            if (!res.ok) throw new Error(`${res.status} ${res.statusText}`.trim());
+            const payload = await res.json();
+            if (!Array.isArray(payload)) throw new Error("register is not a list of records");
+            allPscRecords = payload;
+            pscLoadState = "ready";
         } catch (err) {
             console.error("Error loading PSC records:", err);
             allPscRecords = [];
+            pscLoadState = "error";
+            pscLoadError = (err && err.message) || String(err);
         }
-        if (!Array.isArray(allPscRecords)) allPscRecords = [];
+        // The flag index is derived from the register, so it dies with it.
+        pscFlagContext = null;
 
         // Key the disclosure off the records themselves, not off "is the list
         // empty". The old test was `!(fetched && fetched.length > 0)`, which is
@@ -1622,43 +1721,44 @@ document.addEventListener("DOMContentLoaded", () => {
         const kpiRedflag = document.getElementById("kpi-redflag-cnt");
         const kpiCama = document.getElementById("kpi-cama-status");
 
-        if (!allPscRecords || allPscRecords.length === 0) return;
-
-        if (kpiTotal) kpiTotal.innerText = allPscRecords.length;
-
-        let totalPct = 0;
-        let validPctCnt = 0;
-        let indirectCnt = 0;
-        let redflagCnt = 0;
-
-        allPscRecords.forEach(r => {
-            const pctStr = (r["Percentage"] || "").replace("%", "").trim();
-            const pctVal = parseFloat(pctStr);
-            if (!isNaN(pctVal)) {
-                totalPct += pctVal;
-                validPctCnt++;
-            }
-            if (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Holding" && r["Intermediate Entities"] !== "Direct Shareholder") {
-                indirectCnt++;
-            }
-            const flags = getRecordRedFlags(r);
-            if (flags.length > 0) redflagCnt++;
-        });
-
-        if (kpiAvgStake) {
-            const avg = validPctCnt > 0 ? (totalPct / validPctCnt).toFixed(1) : "0.0";
-            kpiAvgStake.innerText = `${avg}%`;
+        // A failed load leaves the dashes in place, because the honest answer
+        // is "unknown" -- the table alongside says why. A register that loaded
+        // and is genuinely empty reports zeroes, because that is a fact we
+        // know. Returning early on both was what let a broken fetch sit under
+        // a KPI strip that looked merely unpopulated.
+        const cells = [kpiTotal, kpiAvgStake, kpiIndirect, kpiRedflag, kpiCama];
+        if (pscLoadState === "error") {
+            cells.forEach(c => { if (c) c.innerText = "—"; });
+            return;
         }
-        if (kpiIndirect) kpiIndirect.innerText = indirectCnt;
-        if (kpiRedflag) kpiRedflag.innerText = redflagCnt;
+        if (!allPscRecords || allPscRecords.length === 0) {
+            if (kpiTotal) kpiTotal.innerText = "0";
+            if (kpiAvgStake) kpiAvgStake.innerText = "n/a";
+            if (kpiIndirect) kpiIndirect.innerText = "0";
+            if (kpiRedflag) kpiRedflag.innerText = "0";
+            if (kpiCama) kpiCama.innerText = "n/a";
+            return;
+        }
+
+        // One set of figures for the whole app. These were computed inline
+        // here, again in the compliance brief, and a third time in the PSC
+        // Register, with the "held via a vehicle" test differing between them:
+        // this one asked whether the field was one of two exact strings, so
+        // "Direct" or "N/A" counted as an intermediate vehicle. summarise()
+        // uses isDirectHolding, which the register already relies on.
+        const summary = window.AuraPSC.summarise(allPscRecords);
+
+        if (kpiTotal) kpiTotal.innerText = summary.total;
+        if (kpiAvgStake) kpiAvgStake.innerText = summary.meanStake === null ? "n/a" : `${summary.meanStake.toFixed(1)}%`;
+        if (kpiIndirect) kpiIndirect.innerText = summary.indirectCount;
+        if (kpiRedflag) kpiRedflag.innerText = summary.flaggedCount;
         // Was hardcoded to "94.2%" and then written into a downloadable
         // audit brief as a verified figure. Now derived: the share of
         // records that actually cite a regulatory filing reference.
         if (kpiCama) {
-            const withRef = allPscRecords.filter(r => String(r["Regulatory Filing Ref"] || "").trim()).length;
-            kpiCama.innerText = allPscRecords.length
-                ? `${Math.round((withRef / allPscRecords.length) * 100)}%`
-                : "n/a";
+            kpiCama.innerText = summary.disclosureRate === null
+                ? "n/a"
+                : `${Math.round(summary.disclosureRate * 100)}%`;
         }
     }
 
@@ -1706,12 +1806,106 @@ document.addEventListener("DOMContentLoaded", () => {
         return pscData;
     }
 
+    /**
+     * One red-flag badge, coloured by the engine's severity.
+     *
+     * The rules already rank themselves high/medium and arrive sorted, but the
+     * UI painted every badge the same red, so a nominee arrangement looked as
+     * urgent as voting rights exceeding equity. `title` carries the finding and
+     * `detail` explains it, which is what the tooltip is for.
+     */
+    function pscFlagBadge(flag) {
+        const high = flag.severity === "high";
+        const tone = high
+            ? "background:rgba(239,68,68,0.18); color:#ef4444; border:1px solid rgba(239,68,68,0.3);"
+            : "background:rgba(245,158,11,0.15); color:#fbbf24; border:1px solid rgba(245,158,11,0.3);";
+        return `<span class="badge" title="${esc(flag.detail || "")}" style="${tone} font-size:10px; padding:2px 6px; margin:2px 2px 2px 0; display:inline-block;">${high ? "🚩" : "⚑"} ${esc(flag.title)}</span>`;
+    }
+
+    /**
+     * Label of this modal's active chip, for naming the filter that emptied
+     * the view. Scoped to the modal's row, not the page: the PSC Register
+     * renders its own ".psc-chip.active" and would otherwise supply the name.
+     */
+    function activePscFilterLabel() {
+        const chip = pscFilterChipRow && pscFilterChipRow.querySelector(".psc-chip.active");
+        return chip ? chip.innerText.trim() : "the selected filters";
+    }
+
+    /**
+     * Why a PSC view is empty, as markup. Distinguishes a register that could
+     * not be fetched from one that is genuinely empty from one whose rows were
+     * all excluded by the active chip or search -- and offers the action that
+     * fits each: retry the load, or clear the filter that hid everything.
+     */
+    function pscEmptyStateHTML() {
+        const state = window.AuraPSC.emptyStateFor({
+            loadState: pscLoadState,
+            error: pscLoadError,
+            totalRecords: (allPscRecords || []).length,
+            filterId: activePscFilter,
+            filterLabel: activePscFilterLabel(),
+            query: currentPscSearchQuery
+        });
+
+        const wrap = (body) => `<div style="padding:28px 25px; text-align:center; color:var(--text-muted); line-height:1.6;">${body}</div>`;
+
+        if (state.kind === "load-error") {
+            return wrap(`
+                <div style="color:#ef4444; font-weight:700; margin-bottom:6px;">The PSC register could not be loaded.</div>
+                <div style="font-size:12.5px;">Nothing is being shown because the data did not arrive&nbsp;&mdash; not because no one holds significant control.</div>
+                ${state.reason ? `<div style="font-size:11.5px; margin-top:8px; color:#9ca3af;">Reason: ${esc(state.reason)}</div>` : ""}
+                <button class="btn btn-secondary" id="psc-retry-btn" style="margin-top:14px; padding:6px 14px; font-size:12px;">Retry</button>
+            `);
+        }
+
+        if (state.kind === "register-empty") {
+            return wrap(`
+                <div style="font-weight:600; color:#d1d5db; margin-bottom:6px;">No PSC disclosures have been recorded yet.</div>
+                <div style="font-size:12.5px;">The register loaded successfully and is empty. Rows appear here once the pipeline extracts a person with significant control.</div>
+            `);
+        }
+
+        const bits = [];
+        if (state.filterLabel) bits.push(`the <strong style="color:#d1d5db;">${esc(state.filterLabel)}</strong> filter`);
+        if (state.query) bits.push(`the search &ldquo;<strong style="color:#d1d5db;">${esc(state.query)}</strong>&rdquo;`);
+        const because = bits.length ? bits.join(" and ") : "the selected filters";
+
+        return wrap(`
+            <div style="font-weight:600; color:#d1d5db; margin-bottom:6px;">No disclosures match ${because}.</div>
+            <div style="font-size:12.5px;">${state.total} disclosure${state.total === 1 ? " is" : "s are"} loaded; ${state.total === 1 ? "it does" : "none of them"} match.</div>
+            <button class="btn btn-secondary" id="psc-clear-filters-btn" style="margin-top:14px; padding:6px 14px; font-size:12px;">Clear filters</button>
+        `);
+    }
+
+    /** Wire whichever action the empty state offered. */
+    function bindPscEmptyStateActions(container) {
+        const retry = container.querySelector("#psc-retry-btn");
+        if (retry) retry.addEventListener("click", () => loadPSCRecords());
+
+        const clear = container.querySelector("#psc-clear-filters-btn");
+        if (clear) {
+            clear.addEventListener("click", () => {
+                activePscFilter = "all";
+                currentPscSearchQuery = "";
+                if (pscSearchInput) pscSearchInput.value = "";
+                // This modal's chips only -- see the note on pscFilterChipRow.
+                filterChips.forEach(c => {
+                    c.classList.toggle("active", c.getAttribute("data-filter") === "all");
+                });
+                if (pscViewMode === "table") renderPSCTableRows();
+                else renderPSCNetworkGraph();
+            });
+        }
+    }
+
     function renderPSCTableRows() {
         if (!pscTableContainer) return;
         const pscData = getFilteredPSCData();
 
         if (!pscData || pscData.length === 0) {
-            pscTableContainer.innerHTML = `<p style="padding:25px; text-align:center; color:var(--text-muted);">No Persons with Significant Control (PSC) disclosures match the selected filters.</p>`;
+            pscTableContainer.innerHTML = pscEmptyStateHTML();
+            bindPscEmptyStateActions(pscTableContainer);
             return;
         }
 
@@ -1763,7 +1957,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </td>
                     <td style="padding:12px 10px;">
-                        ${flags.length > 0 ? flags.map(f => `<span class="badge" style="background:rgba(239,68,68,0.18); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:10px; padding:2px 6px; margin:2px 2px 2px 0; display:inline-block;">🚩 ${esc(f)}</span>`).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
+                        ${flags.length > 0 ? flags.map(f => pscFlagBadge(f)).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
                     </td>
                     <td style="padding:12px 10px;">
                         <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${r["Regulatory Filing Ref"] ? esc(r["Regulatory Filing Ref"]) : "<span style=\"color:var(--text-muted);\">Not disclosed</span>"}</code>
@@ -1808,7 +2002,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const pscData = getFilteredPSCData();
 
         if (!pscData || pscData.length === 0) {
-            pscNetworkGraphContainer.innerHTML = `<p style="padding:30px; text-align:center; color:var(--text-muted);">No Beneficial Ownership nodes match current map filters.</p>`;
+            pscNetworkGraphContainer.innerHTML = pscEmptyStateHTML();
+            bindPscEmptyStateActions(pscNetworkGraphContainer);
             return;
         }
 
@@ -1966,7 +2161,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span>🚩 Active Compliance Anomalies & Red Flags Detected (${flags.length})</span>
                     </div>
                     <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:6px;">
-                        ${flags.map(f => `<span style="font-size:11px; background:rgba(239,68,68,0.2); color:#fca5a5; padding:3px 8px; border-radius:4px; font-weight:600;">• ${esc(f)}</span>`).join('')}
+                        ${flags.map(f => `<span title="${esc(f.detail || "")}" style="font-size:11px; background:${f.severity === "high" ? "rgba(239,68,68,0.2); color:#fca5a5;" : "rgba(245,158,11,0.18); color:#fcd34d;"} padding:3px 8px; border-radius:4px; font-weight:600;">• ${esc(f.title)}</span>`).join('')}
                     </div>
                 </div>
             `;
@@ -2096,8 +2291,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // the main intelligence export was already fixed for this, but the PSC
     // export, which matters more, still had the bug. Fields beginning with
     // =, +, - or @ are prefixed so a spreadsheet treats them as text.
+    /**
+     * Refuse to build an export from a register that is empty or never loaded,
+     * and say which it was. Both cases used to return silently, so the button
+     * appeared broken -- and a brief built from a failed load would assert a
+     * clean register, which is the most damaging thing this tool could claim.
+     */
+    function pscExportGuard(what) {
+        if (pscLoadState === "error") {
+            alert(`Cannot build the ${what}: the PSC register did not load`
+                + (pscLoadError ? ` (${pscLoadError})` : "")
+                + ".\n\nAn export made now would understate the register rather than reflect it. Retry the load first.");
+            return false;
+        }
+        if (!allPscRecords || allPscRecords.length === 0) {
+            alert(`Nothing to put in the ${what}: the PSC register loaded and holds no disclosures yet.`);
+            return false;
+        }
+        return true;
+    }
+
     function exportPSCCSV() {
-        if (!allPscRecords || allPscRecords.length === 0) return;
+        if (!pscExportGuard("CSV export")) return;
 
         const headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Share Band",
             "Direct %", "Indirect %", "Voting Rights %", "Intermediate Entities", "Board Role",
@@ -2131,7 +2346,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Export PSC Compliance Report
     function exportPSCComplianceReport() {
-        if (!allPscRecords || allPscRecords.length === 0) return;
+        if (!pscExportGuard("compliance brief")) return;
 
         let reportMd = `# Persons with Significant Control (PSC) & CAMA 2020 UBO Audit Brief\n`;
         // A brief built from seed rows must say so on its face. Without this
@@ -2145,10 +2360,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         reportMd += `## Executive Summary & Risk Indicators\n`;
         reportMd += `- **Total Registered Beneficial Owners:** ${allPscRecords.length}\n`;
-        reportMd += `- **Average Controlling Equity:** ${document.getElementById("kpi-avg-stake")?.innerText || '56.1%'}\n`;
-        reportMd += `- **Indirect Holding Entities Tracked:** ${document.getElementById("kpi-indirect-cnt")?.innerText || '7'}\n`;
-        reportMd += `- **Red Flag Anomalies Detected:** ${document.getElementById("kpi-redflag-cnt")?.innerText || '4'}\n`;
-        reportMd += `- **Records citing a regulatory filing reference:** ${document.getElementById("kpi-cama-status")?.innerText || "n/a"}\n\n`;
+        // Derived, not scraped. These lines used to read the KPI strip out of
+        // the DOM with hardcoded fallbacks -- '56.1%', '7', '4' -- so a renamed
+        // or missing element would put figures computed from nothing into a
+        // downloadable audit document. That is the same defect this project
+        // already removed once, when a hardcoded "CAMA 2020 Compliance: 94.2%"
+        // was replaced by the derived disclosureRate. An undisclosed figure now
+        // says so instead of inventing one.
+        const summary = window.AuraPSC.summarise(allPscRecords);
+        const pct = (v) => (v === null || v === undefined ? "not disclosed" : `${v.toFixed(1)}%`);
+
+        reportMd += `- **Average Controlling Equity:** ${pct(summary.meanStake)}\n`;
+        reportMd += `- **Indirect Holding Entities Tracked:** ${summary.indirectCount}\n`;
+        reportMd += `- **Red Flag Anomalies Detected:** ${summary.flaggedCount} (${summary.highSeverityCount} high severity)\n`;
+        reportMd += `- **Records citing a regulatory filing reference:** ${summary.disclosureRate === null ? "not disclosed" : `${Math.round(summary.disclosureRate * 100)}%`}\n\n`;
 
         reportMd += `---\n\n## Disclosed Beneficial Ownership Lineages & Anomaly Matrix\n\n`;
 
@@ -2162,7 +2387,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reportMd += `- **Nature of Control:** ${r["Nature of Control"]}\n`;
             reportMd += `- **PEP Status:** ${r["PEP Status"]}\n`;
             reportMd += `- **Risk Level:** ${r["Risk Level"]}\n`;
-            reportMd += `- **Anomalies / Red Flags:** ${flags.length > 0 ? flags.join(', ') : 'Clean Disclosure'}\n`;
+            reportMd += `- **Anomalies / Red Flags:** ${flags.length > 0 ? flags.map(f => f.title).join(', ') : 'Clean Disclosure'}\n`;
             reportMd += `- **CAC / SEC regulatory ref:** ${r["Regulatory Filing Ref"] ? "`" + r["Regulatory Filing Ref"] + "`" : "not disclosed"} (date: ${r["Date"] || "not disclosed"})\n`;
             reportMd += `- **Audit Notes:** ${r["Notes"] || "Verified disclosure"}\n\n`;
         });

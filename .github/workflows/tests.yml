@@ -1,0 +1,66 @@
+name: Tests
+
+# The repository had 188 assertions and nothing that ran them. The only other
+# workflows deploy (push to main) and ingest (cron), so a pull request got no
+# checks at all and a regression could only be caught by hand.
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# A superseded run tells you nothing, so cancel it rather than pay for it.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        # The production dependency set, so the suite runs against what the
+        # pipeline actually imports. pytest is installed separately rather than
+        # added to requirements.txt, which is the runtime list shipped to the
+        # scheduler and has no business carrying a test dependency.
+        #
+        # The spacy model download that news_scheduler.yml performs is
+        # deliberately absent: no test needs it, and it is a slow step.
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run pytest
+        run: pytest -q
+
+  frontend:
+    name: Frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # No install step: the runner is plain Node with no dependencies, and the
+      # dashboard has no build. See tests/frontend/run.js.
+      - name: Run frontend suite
+        run: node tests/frontend/run.js

@@ -356,7 +356,42 @@
         };
     }
 
+    /**
+     * Why a PSC view has nothing to show.
+     *
+     * An empty list is ambiguous: the register may have failed to load, or
+     * loaded and be genuinely empty, or hold records that the active filter
+     * excluded. Those are three different claims about beneficial ownership,
+     * and collapsing them into one message let a failed fetch read as "no one
+     * holds significant control" — the most misleading thing this tool can
+     * say. The decision lives here, with the other rules, so it can be tested
+     * directly rather than inferred from rendered HTML.
+     *
+     * Returns {kind, action, ...}: kind is "load-error" | "register-empty" |
+     * "filtered-out", action is the affordance that resolves it.
+     */
+    function emptyStateFor(input) {
+        var s = input || {};
+        if (s.loadState === "error") {
+            return { kind: "load-error", action: "retry", reason: s.error || "" };
+        }
+        var total = s.totalRecords || 0;
+        if (!total) {
+            return { kind: "register-empty", action: null };
+        }
+        return {
+            kind: "filtered-out",
+            action: "clear",
+            total: total,
+            // Only name a filter that is actually narrowing the view. "all"
+            // plus a search should blame the search alone.
+            filterLabel: s.filterId && s.filterId !== "all" ? (s.filterLabel || "") : "",
+            query: s.query || ""
+        };
+    }
+
     global.AuraPSC = {
+        emptyStateFor: emptyStateFor,
         BANDS: BANDS,
         BAND_BY_ID: BAND_BY_ID,
         SECRECY_JURISDICTIONS: SECRECY_JURISDICTIONS,
