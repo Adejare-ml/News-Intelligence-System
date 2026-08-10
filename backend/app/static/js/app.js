@@ -177,6 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function loadDashboardStats() {
         try {
+            clearDashboardStatsFailure();
             if (isGitHubPages) {
                 // Fetch datasets in parallel for serverless dashboard aggregation
                 const [artRes, compRes, repRes] = await Promise.all([
@@ -184,7 +185,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     fetch(`${API_BASE}/companies.json`),
                     fetch(`${API_BASE}/reports.json`)
                 ]);
-                
+
+                // Check the status before parsing, so a 404 or a 503 is
+                // reported as itself. Calling .json() straight through turned
+                // every server error into "Unexpected token" from whatever the
+                // error page happened to contain, which names the wrong fault.
+                [["latest.json", artRes], ["companies.json", compRes], ["reports.json", repRes]]
+                    .forEach(([name, res]) => {
+                        if (!res.ok) throw new Error(`${name}: ${res.status} ${res.statusText}`.trim());
+                    });
+
                 const rawArticles = await artRes.json();
                 const rawCompanies = await compRes.json();
                 const rawReports = await repRes.json();
@@ -247,6 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 // API Mode
                 const res = await fetch(`${API_BASE}/dashboard`);
+                if (!res.ok) throw new Error(`dashboard: ${res.status} ${res.statusText}`.trim());
                 const data = await res.json();
                 
                 animateCounter(statArticles, data.total_articles);
@@ -263,7 +274,53 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } catch (err) {
             console.error("Error loading dashboard stats:", err);
+            setDashboardStatsFailed(err);
         }
+    }
+
+    /**
+     * Say that the counters are unknown, rather than letting them read zero.
+     *
+     * The four counters are hardcoded to 0 in index.html, so a failed fetch
+     * used to leave the page asserting "0 Articles · 0 Entities · 0 Events ·
+     * 0 Elevated" while the catch below only wrote to the console. That is a
+     * confident claim that the system is empty, made at the exact moment
+     * nothing is known -- the same conflation the PSC panel had, except a
+     * literal zero is worse than a blank because it looks computed.
+     */
+    function setDashboardStatsFailed(err) {
+        [statArticles, statEntities, statEvents, statAlerts].forEach(el => {
+            if (el) el.textContent = "—";
+        });
+
+        const alertCard = document.getElementById("stat-alerts-card");
+        if (alertCard) alertCard.classList.remove("alert-glow");
+
+        const host = document.getElementById("pipeline-stats");
+        if (!host || !host.parentNode) return;
+
+        let note = document.getElementById("stats-load-error");
+        if (!note) {
+            note = document.createElement("p");
+            note.id = "stats-load-error";
+            note.className = "error-message";
+            note.style.cssText = "margin:10px 0 0 0; font-size:12.5px; color:#ef4444; display:flex; align-items:center; gap:10px; flex-wrap:wrap;";
+            host.parentNode.insertBefore(note, host.nextSibling);
+        }
+        note.innerHTML = `<span>Could not load the intelligence datasets, so these counts are unknown${err && err.message ? ` (${esc(err.message)})` : ""}.</span>`;
+
+        const retry = document.createElement("button");
+        retry.className = "btn btn-secondary";
+        retry.style.cssText = "padding:4px 12px; font-size:11.5px;";
+        retry.textContent = "Retry";
+        retry.addEventListener("click", () => loadDashboardStats());
+        note.appendChild(retry);
+    }
+
+    /** Drop the failure note once a load succeeds. */
+    function clearDashboardStatsFailure() {
+        const note = document.getElementById("stats-load-error");
+        if (note && note.parentNode) note.parentNode.removeChild(note);
     }
 
     /**
@@ -665,6 +722,17 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderMixChart(categories, risks) {
         const ctx = document.getElementById("mix-chart");
         if (!ctx) return;
+
+        // Chart.js comes from a CDN, so it is genuinely absent whenever an ad
+        // blocker, an offline machine or a restricted network drops it. Without
+        // this guard the ReferenceError propagates out of loadDashboardStats
+        // into its catch, and a page whose data loaded perfectly well reports
+        // that it could not load the datasets. renderGraph already guards its
+        // own library this way.
+        if (typeof Chart === "undefined") {
+            console.error("Chart.js library not loaded; skipping the mix chart.");
+            return;
+        }
 
         // Destroy previous instance
         if (mixChart) {
