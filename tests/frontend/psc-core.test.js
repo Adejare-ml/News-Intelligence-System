@@ -220,6 +220,68 @@
         });
     });
 
+    T.describe("Red-flag rules the dashboard used to answer differently", function () {
+        // app.js carried a second implementation of these rules that had
+        // drifted from the engine. Each case below is one way the two
+        // disagreed about the same record.
+
+        T.it("measures the voting gap against direct AND indirect equity", function () {
+            // 4% held directly, 24.5% through a vehicle, 28.5% of the votes:
+            // the holder votes exactly what they own, so there is no anomaly.
+            // The old dashboard rule compared votes against the direct stake
+            // only (28.5 - 4 = 24.5 > 15) and reported a discrepancy.
+            var rec = {
+                "Person Name": "A", Company: "C",
+                "Direct %": "4.0%", "Indirect %": "24.5%", "Voting Rights %": "28.5%"
+            };
+            var flags = P.redFlagsFor(rec, P.buildContext([rec]));
+            T.notOk(flags.some(function (f) { return f.id === "R3_VOTING_MISMATCH"; }),
+                "control that tracks ownership is not a red flag");
+        });
+
+        T.it("does not flag a gap between 15 and 20 points", function () {
+            var rec = {
+                "Person Name": "A", Company: "C",
+                "Direct %": "10%", "Indirect %": "0%", "Voting Rights %": "28%"
+            };
+            var flags = P.redFlagsFor(rec, P.buildContext([rec]));
+            T.notOk(flags.some(function (f) { return f.id === "R3_VOTING_MISMATCH"; }),
+                "the threshold is 20 points, not the dashboard's old 15");
+        });
+
+        T.it("recognises secrecy jurisdictions beyond the three it used to match", function () {
+            ["Tengen Holdings (Cayman) Limited", "Lekki BVI Partners", "Sahel Seychelles Ltd"]
+                .forEach(function (vehicle) {
+                    var rec = { "Person Name": "A", Company: "C", "Intermediate Entities": vehicle };
+                    var flags = P.redFlagsFor(rec, P.buildContext([rec]));
+                    T.ok(flags.some(function (f) { return f.id === "R7_SECRECY_VEHICLE"; }),
+                        vehicle + " must raise a secrecy-vehicle flag");
+                });
+        });
+
+        T.it("still carries the rules the dashboard had no equivalent of", function () {
+            var nominee = { "Person Name": "A", Company: "C", "Intermediate Entities": "Sahel Nominees Limited" };
+            T.ok(P.redFlagsFor(nominee, P.buildContext([nominee])).some(function (f) { return f.id === "R4_NOMINEE"; }));
+
+            var unquantified = { "Person Name": "B", Company: "D" };
+            T.ok(P.redFlagsFor(unquantified, P.buildContext([unquantified])).some(function (f) { return f.id === "R6_UNKNOWN_OWNER"; }));
+        });
+
+        T.it("returns ranked objects, not bare strings", function () {
+            var rec = {
+                "Person Name": "A", Company: "C",
+                "PEP Status": "Yes - Politically exposed person",
+                "Intermediate Entities": "Meridian Trust (Mauritius) Limited"
+            };
+            var flags = P.redFlagsFor(rec, P.buildContext([rec]));
+            T.ok(flags.length >= 2);
+            T.eq(flags[0].severity, "high", "high severity must sort first");
+            flags.forEach(function (f) {
+                T.ok(f.id && f.title && f.detail, "every flag carries id, title and detail");
+            });
+        });
+    });
+
     T.describe("Empty-state attribution", function () {
         T.it("reports a failed load as a failed load, never as a filter result", function () {
             var s = P.emptyStateFor({ loadState: "error", error: "404 Not Found", totalRecords: 0 });

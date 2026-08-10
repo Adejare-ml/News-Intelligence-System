@@ -1577,34 +1577,32 @@ document.addEventListener("DOMContentLoaded", () => {
         exportPscReportBtn.addEventListener("click", () => exportPSCComplianceReport());
     }
 
-    // Helper: Calculate Red Flags for a record
+    /**
+     * Red flags for one record, from the single engine in psc-core.js.
+     *
+     * This used to be a second implementation of those rules, and the two had
+     * drifted: it flagged a voting gap above 15 points where the engine uses
+     * 20, measured that gap against "Direct %" alone so an interest held partly
+     * through a vehicle looked like a discrepancy that was not there, matched
+     * three offshore substrings against the engine's twenty jurisdictions, and
+     * had no equivalent of the sub-threshold structuring, nominee, recent
+     * change of control or unquantified interest rules at all.
+     *
+     * The consequence was that this modal and the PSC Register gave different
+     * answers to "is this person flagged?" for the same row -- including the
+     * Red Flag Alerts KPI, which feeds the downloadable compliance brief. On a
+     * beneficial ownership tool two answers is worse than either.
+     *
+     * Returns the engine's objects ({id, severity, title, detail}), sorted
+     * high severity first. psc-report.js already consumes it this way.
+     */
+    let pscFlagContext = null;
     function getRecordRedFlags(r) {
-        let flags = r["Red Flags"] ? [...r["Red Flags"]] : [];
-
-        const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
-        if (isPep && !flags.includes("PEP Proximity Alert")) {
-            flags.push("PEP Proximity Alert");
-        }
-
-        const directVal = parseFloat((r["Direct %"] || "0").replace("%", ""));
-        const votingVal = parseFloat((r["Voting Rights %"] || r["Percentage"] || "0").replace("%", ""));
-        if (!isNaN(directVal) && !isNaN(votingVal) && (votingVal - directVal) > 15) {
-            if (!flags.includes("Voting Discrepancy")) flags.push("Voting Discrepancy");
-        }
-
-        const holding = (r["Intermediate Entities"] || "").toLowerCase();
-        if ((holding.includes("mauritius") || holding.includes("trust") || holding.includes("offshore")) && !flags.includes("Complex Offshore Vehicle")) {
-            flags.push("Complex Offshore Vehicle");
-        }
-
-        // Check if person holds stakes in multiple companies
-        const personName = (r["Person Name"] || "").toLowerCase();
-        const matches = allPscRecords.filter(x => (x["Person Name"] || "").toLowerCase() === personName);
-        if (matches.length > 1 && !flags.includes("Cross-Entity Portfolio")) {
-            flags.push("Cross-Entity Portfolio");
-        }
-
-        return flags;
+        // Indexed once per load rather than per row: the old version filtered
+        // the whole register inside a function called for every record, which
+        // is the O(n^2) that buildContext exists to avoid.
+        if (!pscFlagContext) pscFlagContext = window.AuraPSC.buildContext(allPscRecords);
+        return window.AuraPSC.redFlagsFor(r, pscFlagContext);
     }
 
     async function loadPSCRecords() {
@@ -1630,6 +1628,8 @@ document.addEventListener("DOMContentLoaded", () => {
             pscLoadState = "error";
             pscLoadError = (err && err.message) || String(err);
         }
+        // The flag index is derived from the register, so it dies with it.
+        pscFlagContext = null;
 
         // Key the disclosure off the records themselves, not off "is the list
         // empty". The old test was `!(fetched && fetched.length > 0)`, which is
@@ -1672,41 +1672,25 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        if (kpiTotal) kpiTotal.innerText = allPscRecords.length;
+        // One set of figures for the whole app. These were computed inline
+        // here, again in the compliance brief, and a third time in the PSC
+        // Register, with the "held via a vehicle" test differing between them:
+        // this one asked whether the field was one of two exact strings, so
+        // "Direct" or "N/A" counted as an intermediate vehicle. summarise()
+        // uses isDirectHolding, which the register already relies on.
+        const summary = window.AuraPSC.summarise(allPscRecords);
 
-        let totalPct = 0;
-        let validPctCnt = 0;
-        let indirectCnt = 0;
-        let redflagCnt = 0;
-
-        allPscRecords.forEach(r => {
-            const pctStr = (r["Percentage"] || "").replace("%", "").trim();
-            const pctVal = parseFloat(pctStr);
-            if (!isNaN(pctVal)) {
-                totalPct += pctVal;
-                validPctCnt++;
-            }
-            if (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Holding" && r["Intermediate Entities"] !== "Direct Shareholder") {
-                indirectCnt++;
-            }
-            const flags = getRecordRedFlags(r);
-            if (flags.length > 0) redflagCnt++;
-        });
-
-        if (kpiAvgStake) {
-            const avg = validPctCnt > 0 ? (totalPct / validPctCnt).toFixed(1) : "0.0";
-            kpiAvgStake.innerText = `${avg}%`;
-        }
-        if (kpiIndirect) kpiIndirect.innerText = indirectCnt;
-        if (kpiRedflag) kpiRedflag.innerText = redflagCnt;
+        if (kpiTotal) kpiTotal.innerText = summary.total;
+        if (kpiAvgStake) kpiAvgStake.innerText = summary.meanStake === null ? "n/a" : `${summary.meanStake.toFixed(1)}%`;
+        if (kpiIndirect) kpiIndirect.innerText = summary.indirectCount;
+        if (kpiRedflag) kpiRedflag.innerText = summary.flaggedCount;
         // Was hardcoded to "94.2%" and then written into a downloadable
         // audit brief as a verified figure. Now derived: the share of
         // records that actually cite a regulatory filing reference.
         if (kpiCama) {
-            const withRef = allPscRecords.filter(r => String(r["Regulatory Filing Ref"] || "").trim()).length;
-            kpiCama.innerText = allPscRecords.length
-                ? `${Math.round((withRef / allPscRecords.length) * 100)}%`
-                : "n/a";
+            kpiCama.innerText = summary.disclosureRate === null
+                ? "n/a"
+                : `${Math.round(summary.disclosureRate * 100)}%`;
         }
     }
 
@@ -1752,6 +1736,22 @@ document.addEventListener("DOMContentLoaded", () => {
             );
         }
         return pscData;
+    }
+
+    /**
+     * One red-flag badge, coloured by the engine's severity.
+     *
+     * The rules already rank themselves high/medium and arrive sorted, but the
+     * UI painted every badge the same red, so a nominee arrangement looked as
+     * urgent as voting rights exceeding equity. `title` carries the finding and
+     * `detail` explains it, which is what the tooltip is for.
+     */
+    function pscFlagBadge(flag) {
+        const high = flag.severity === "high";
+        const tone = high
+            ? "background:rgba(239,68,68,0.18); color:#ef4444; border:1px solid rgba(239,68,68,0.3);"
+            : "background:rgba(245,158,11,0.15); color:#fbbf24; border:1px solid rgba(245,158,11,0.3);";
+        return `<span class="badge" title="${esc(flag.detail || "")}" style="${tone} font-size:10px; padding:2px 6px; margin:2px 2px 2px 0; display:inline-block;">${high ? "🚩" : "⚑"} ${esc(flag.title)}</span>`;
     }
 
     /**
@@ -1889,7 +1889,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </td>
                     <td style="padding:12px 10px;">
-                        ${flags.length > 0 ? flags.map(f => `<span class="badge" style="background:rgba(239,68,68,0.18); color:#ef4444; border:1px solid rgba(239,68,68,0.3); font-size:10px; padding:2px 6px; margin:2px 2px 2px 0; display:inline-block;">🚩 ${esc(f)}</span>`).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
+                        ${flags.length > 0 ? flags.map(f => pscFlagBadge(f)).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
                     </td>
                     <td style="padding:12px 10px;">
                         <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${r["Regulatory Filing Ref"] ? esc(r["Regulatory Filing Ref"]) : "<span style=\"color:var(--text-muted);\">Not disclosed</span>"}</code>
@@ -2093,7 +2093,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span>🚩 Active Compliance Anomalies & Red Flags Detected (${flags.length})</span>
                     </div>
                     <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:6px;">
-                        ${flags.map(f => `<span style="font-size:11px; background:rgba(239,68,68,0.2); color:#fca5a5; padding:3px 8px; border-radius:4px; font-weight:600;">• ${esc(f)}</span>`).join('')}
+                        ${flags.map(f => `<span title="${esc(f.detail || "")}" style="font-size:11px; background:${f.severity === "high" ? "rgba(239,68,68,0.2); color:#fca5a5;" : "rgba(245,158,11,0.18); color:#fcd34d;"} padding:3px 8px; border-radius:4px; font-weight:600;">• ${esc(f.title)}</span>`).join('')}
                     </div>
                 </div>
             `;
@@ -2292,10 +2292,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         reportMd += `## Executive Summary & Risk Indicators\n`;
         reportMd += `- **Total Registered Beneficial Owners:** ${allPscRecords.length}\n`;
-        reportMd += `- **Average Controlling Equity:** ${document.getElementById("kpi-avg-stake")?.innerText || '56.1%'}\n`;
-        reportMd += `- **Indirect Holding Entities Tracked:** ${document.getElementById("kpi-indirect-cnt")?.innerText || '7'}\n`;
-        reportMd += `- **Red Flag Anomalies Detected:** ${document.getElementById("kpi-redflag-cnt")?.innerText || '4'}\n`;
-        reportMd += `- **Records citing a regulatory filing reference:** ${document.getElementById("kpi-cama-status")?.innerText || "n/a"}\n\n`;
+        // Derived, not scraped. These lines used to read the KPI strip out of
+        // the DOM with hardcoded fallbacks -- '56.1%', '7', '4' -- so a renamed
+        // or missing element would put figures computed from nothing into a
+        // downloadable audit document. That is the same defect this project
+        // already removed once, when a hardcoded "CAMA 2020 Compliance: 94.2%"
+        // was replaced by the derived disclosureRate. An undisclosed figure now
+        // says so instead of inventing one.
+        const summary = window.AuraPSC.summarise(allPscRecords);
+        const pct = (v) => (v === null || v === undefined ? "not disclosed" : `${v.toFixed(1)}%`);
+
+        reportMd += `- **Average Controlling Equity:** ${pct(summary.meanStake)}\n`;
+        reportMd += `- **Indirect Holding Entities Tracked:** ${summary.indirectCount}\n`;
+        reportMd += `- **Red Flag Anomalies Detected:** ${summary.flaggedCount} (${summary.highSeverityCount} high severity)\n`;
+        reportMd += `- **Records citing a regulatory filing reference:** ${summary.disclosureRate === null ? "not disclosed" : `${Math.round(summary.disclosureRate * 100)}%`}\n\n`;
 
         reportMd += `---\n\n## Disclosed Beneficial Ownership Lineages & Anomaly Matrix\n\n`;
 
@@ -2309,7 +2319,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reportMd += `- **Nature of Control:** ${r["Nature of Control"]}\n`;
             reportMd += `- **PEP Status:** ${r["PEP Status"]}\n`;
             reportMd += `- **Risk Level:** ${r["Risk Level"]}\n`;
-            reportMd += `- **Anomalies / Red Flags:** ${flags.length > 0 ? flags.join(', ') : 'Clean Disclosure'}\n`;
+            reportMd += `- **Anomalies / Red Flags:** ${flags.length > 0 ? flags.map(f => f.title).join(', ') : 'Clean Disclosure'}\n`;
             reportMd += `- **CAC / SEC regulatory ref:** ${r["Regulatory Filing Ref"] ? "`" + r["Regulatory Filing Ref"] + "`" : "not disclosed"} (date: ${r["Date"] || "not disclosed"})\n`;
             reportMd += `- **Audit Notes:** ${r["Notes"] || "Verified disclosure"}\n\n`;
         });
