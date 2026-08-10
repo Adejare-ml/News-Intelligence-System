@@ -79,35 +79,63 @@ jobs:
       # A red run is only useful if someone sees it. The 2026-07-30 outage ran
       # for days unnoticed. Reuses a single open issue so repeated failures
       # comment rather than spam new issues.
-      - name: Raise an issue on failure
-        if: failure()
+      #
+      # cancelled() is in the condition because failure() alone does not cover
+      # it: GitHub skips `if: failure()` steps when a job is cancelled, running
+      # only always() and cancelled(). Run 31125860045 was cancelled 15 minutes
+      # in on 2026-08-06 and filed nothing, which is the worst case to stay
+      # quiet about -- see the concurrency note above. A cancelled run is the
+      # one outcome that can leave partial state, so it is the one that most
+      # needs to be seen.
+      - name: Raise an issue when the run does not complete
+        if: failure() || cancelled()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          OUTCOME: ${{ job.status }}
         run: |
           set -euo pipefail
           # Idempotent: gh issue create fails if the label does not exist yet
           gh label create pipeline-failure --color B60205 \
-            --description "Automated scheduler run failed" 2>/dev/null || true
+            --description "Automated scheduler run failed or was cancelled" 2>/dev/null || true
+
+          # A cancellation is not a failure and needs the opposite advice. A
+          # failure means a step raised and the guards held; a cancellation
+          # means the job was stopped part-way with no error at all, so the
+          # question is what was already written, not what went wrong.
+          if [ "$OUTCOME" = "cancelled" ]; then
+            HEADLINE="The scheduled pipeline was cancelled before it finished."
+            ADVICE="Nothing raised an error -- the job was stopped part-way, so treat this as
+          possible partial state rather than a clean abort. Articles may have been analysed,
+          spending their LLM quota, without their rows being written, and the Sheets writes are
+          not transactional. Compare the Sheets tabs and \`backend/app/static/data/\` against the
+          run timestamp before re-running, so a half-written cycle is not silently doubled.
+
+          If nobody cancelled this by hand, it was most likely the runner being reclaimed."
+          else
+            HEADLINE="The scheduled pipeline failed."
+            ADVICE="Check the \`Run Crawler Pipeline\` step first. A \`LLMCascadeError\` means every
+          configured LLM provider failed and nothing was published — that is the guard
+          working, not data loss. A push rejection instead means the data was generated
+          but a concurrent run committed first."
+          fi
 
           EXISTING=$(gh issue list --label pipeline-failure --state open \
             --json number --jq '.[0].number // empty')
-          BODY="The scheduled pipeline failed.
+          BODY="$HEADLINE
 
           **Run:** $RUN_URL
           **Commit:** \`${{ github.sha }}\`
           **Trigger:** ${{ github.event_name }}
+          **Outcome:** \`$OUTCOME\`
 
-          Check the \`Run Crawler Pipeline\` step first. A \`LLMCascadeError\` means every
-          configured LLM provider failed and nothing was published — that is the guard
-          working, not data loss. A push rejection instead means the data was generated
-          but a concurrent run committed first."
+          $ADVICE"
 
           if [ -n "$EXISTING" ]; then
             gh issue comment "$EXISTING" --body "$BODY"
           else
             gh issue create \
-              --title "Pipeline failure: scheduled run did not complete" \
+              --title "Pipeline alert: scheduled run did not complete" \
               --label pipeline-failure \
               --body "$BODY"
           fi
