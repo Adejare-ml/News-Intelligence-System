@@ -1,5 +1,29 @@
 [
   {
+    "ID": 3151,
+    "Time": "2026-08-10 05:50:46",
+    "Title": "Revealed: Why rice crashed amid new import waiver by the FG",
+    "Source": "legit",
+    "URL": "https://www.legit.ng/business-economy/industry/1724118-no-n60k-rice-prices-crash-50kg-bag-sells-n48000-local-millers-count-losses/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Federal Government has introduced a new import waiver for rice, which has reportedly led to a crash in market prices.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3143,
+    "Time": "Mon, 10 Aug 2026 16:50:51 GMT",
+    "Title": "Tinubu must account for $20bn Chagoury deals, says Atiku - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNM2ZJc2tGODFpNzJvZnk4dnBJeXloWUk4YjFTS1pPSjM0VnNYSDZ1SjFyYWJwZHdGX2F2Yy0zbVYzcmxhdWtiN2hsT0gzdWVyTW50dGU0akxoYy1XNnVKU1lUWUxnb1g1YkEyX3lzc1pIVXVWem5ybWhJSXU1Uzl3MTV1cXloeDA?oc=5",
+    "Category": "Government",
+    "Risk Score": 75,
+    "Summary": "Atiku Abubakar has called for accountability regarding alleged $20 billion deals between President Bola Tinubu and the Chagoury family/businesses.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 3120,
     "Time": "2026-08-10 03:15:54",
     "Title": "Lagos signs MoU with NURTW, RTEAN to start Bus Industry Transition Programme",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 75,
     "Summary": "The ICPC has submitted an interim report to President Tinubu regarding the PFIPC probe, revealing the existence of two additional fake agencies used for fraudulent purposes.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2866,
-    "Time": "Fri, 07 Aug 2026 17:40:53 GMT",
-    "Title": "IGP explains appointment of CP for Osun governorship election - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSnZfYmNLVnNFTU9kbWtSQ2NONm55WmZXb0V6RkIzY21qWU4wb2VlNHFCWVJnMHJDZnFuZkZtRXVzUnd1WmpuS2hsQXQ5c1l1SjF6ZEJoWFFWWTlXWUkwSVVDOUwyVUNmYTkxNjZwTEVqVExkVmFPdlRQcDdKbXBhM0xobUJkNFZpZmlzQnRSZUctRWVjaEhRT3hSU3JzYmNQUnRieGp1NEh2WjhTV19ET3k4RS1WcGVCYXc?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Inspector General of Police (IGP) has provided clarification regarding the appointment of a Commissioner of Police (CP) to oversee the Osun governorship election.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 2862,
-    "Time": "Fri, 07 Aug 2026 08:46:27 GMT",
-    "Title": "Lagos health sector needs 40,000 doctors, N100bn to strengthen \u2013 Sanwo-Olu - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPblJrSnQ0VThhVXlyUjhsRkI0dS1hU3RSdWplbzI1ZjQyV3JtX2N2YjZhNl9MaXU2cUUtYWlHQzdLUC15dGdYWGc4UkZuV1NQc0VhYjdlRTBYem5GamYzTk1HNDEzTllUeHhqeXR6QnlQUkVMZDZpNWUtdk5BUUdmcWFwLVhHVU9fUEFDZ1FhY194VGxKT1p4ZF9OYkxxRlBWQ01IVHBVRlpuYVZvbFhpbGFUd2lQTzhnbWYyMVBIYmlrem9aNHc?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "Governor Babajide Sanwo-Olu has stated that the Lagos State health sector requires an additional 40,000 doctors and an investment of N100 billion to strengthen its infrastructure and services.",
     "Status": "Unread",
     "Engine": "ollama"
   }
