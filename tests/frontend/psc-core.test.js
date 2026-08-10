@@ -220,5 +220,62 @@
         });
     });
 
+    T.describe("Empty-state attribution", function () {
+        T.it("reports a failed load as a failed load, never as a filter result", function () {
+            var s = P.emptyStateFor({ loadState: "error", error: "404 Not Found", totalRecords: 0 });
+            T.eq(s.kind, "load-error", "a broken fetch must not read as 'no one is in control'");
+            T.eq(s.action, "retry");
+            T.eq(s.reason, "404 Not Found");
+        });
+
+        T.it("prefers the load error even when a filter is also active", function () {
+            var s = P.emptyStateFor({
+                loadState: "error", error: "boom", totalRecords: 0,
+                filterId: "cross", filterLabel: "Cross-Holdings", query: "otedola"
+            });
+            T.eq(s.kind, "load-error", "the filter cannot be blamed for data that never arrived");
+        });
+
+        T.it("distinguishes a register that loaded and is genuinely empty", function () {
+            var s = P.emptyStateFor({ loadState: "ready", totalRecords: 0 });
+            T.eq(s.kind, "register-empty");
+            T.eq(s.action, null, "there is nothing for the analyst to retry or clear");
+        });
+
+        T.it("attributes an emptied view to the filter that emptied it", function () {
+            var s = P.emptyStateFor({
+                loadState: "ready", totalRecords: 10,
+                filterId: "pep", filterLabel: "PEP Proximity"
+            });
+            T.eq(s.kind, "filtered-out");
+            T.eq(s.action, "clear");
+            T.eq(s.total, 10, "the count of loaded records proves the data is there");
+            T.eq(s.filterLabel, "PEP Proximity");
+        });
+
+        T.it("blames the search alone when no chip is narrowing the view", function () {
+            var s = P.emptyStateFor({
+                loadState: "ready", totalRecords: 10,
+                filterId: "all", filterLabel: "All Disclosures", query: "zzzz"
+            });
+            T.eq(s.filterLabel, "", "'All Disclosures' excludes nothing and must not be named");
+            T.eq(s.query, "zzzz");
+        });
+
+        T.it("names both when a chip and a search are each narrowing", function () {
+            var s = P.emptyStateFor({
+                loadState: "ready", totalRecords: 10,
+                filterId: "cross", filterLabel: "Cross-Holdings", query: "zzzz"
+            });
+            T.eq(s.filterLabel, "Cross-Holdings");
+            T.eq(s.query, "zzzz");
+        });
+
+        T.it("treats a missing input object as an empty register, not an error", function () {
+            T.eq(P.emptyStateFor().kind, "register-empty");
+            T.eq(P.emptyStateFor({}).kind, "register-empty");
+        });
+    });
+
     T.report();
 })();

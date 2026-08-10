@@ -1459,6 +1459,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentPscSearchQuery = "";
     let pscViewMode = "table"; // "table" or "map"
 
+    // Why the register tracks a load state rather than just a list: an empty
+    // array is ambiguous. It can mean the fetch failed, or that the register
+    // loaded and holds nothing, or that the active filter excluded everything
+    // -- three different facts that previously rendered as the same sentence,
+    // "No PSC disclosures match the selected filters". A failed fetch was
+    // therefore reported to the analyst as a filter result, and the KPI strip
+    // kept its placeholder dashes with nothing to say why. On a beneficial
+    // ownership tool that reads as "we looked and found no one in control",
+    // which is the opposite of "we could not look".
+    let pscLoadState = "idle"; // "idle" | "loading" | "ready" | "error"
+    let pscLoadError = "";
+
     // The illustrative PSC set lives in data/significant_control.json and is
     // generated from DEMO_PSC_RECORDS in run_pipeline.py. A second copy used to
     // live here, and the two drifted: the client copy carried extra invented
@@ -1533,8 +1545,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // PSC Filter Chips event handling
-    const filterChips = document.querySelectorAll(".psc-chip");
+    // PSC Filter Chips event handling.
+    //
+    // Scoped to this modal's own chip row rather than every ".psc-chip" on the
+    // page. The PSC Register section (psc-report.js) renders a second chip set
+    // with the same class and an overlapping data-filter namespace -- "all",
+    // "indirect" and "pep" mean something in both, "flagged"/"nigeria" only
+    // there. A document-wide query bound this handler to those chips too, so
+    // filtering the register could retarget the modal's table, and clicking
+    // either set stripped the "active" class off the other -- leaving a list
+    // filtered by a chip that no longer looked selected.
+    const pscFilterChipRow = document.getElementById("psc-filter-chips");
+    const filterChips = pscFilterChipRow
+        ? pscFilterChipRow.querySelectorAll(".psc-chip")
+        : [];
     filterChips.forEach(chip => {
         chip.addEventListener("click", () => {
             filterChips.forEach(c => c.classList.remove("active"));
@@ -1591,14 +1615,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>Loading PSC Beneficial Ownership & Anomaly Records...</p>
             </div>
         `;
+        pscLoadState = "loading";
+        pscLoadError = "";
         try {
             const res = await fetch(`${API_BASE}/significant_control.json`);
-            allPscRecords = res.ok ? (await res.json()) : [];
+            if (!res.ok) throw new Error(`${res.status} ${res.statusText}`.trim());
+            const payload = await res.json();
+            if (!Array.isArray(payload)) throw new Error("register is not a list of records");
+            allPscRecords = payload;
+            pscLoadState = "ready";
         } catch (err) {
             console.error("Error loading PSC records:", err);
             allPscRecords = [];
+            pscLoadState = "error";
+            pscLoadError = (err && err.message) || String(err);
         }
-        if (!Array.isArray(allPscRecords)) allPscRecords = [];
 
         // Key the disclosure off the records themselves, not off "is the list
         // empty". The old test was `!(fetched && fetched.length > 0)`, which is
@@ -1622,7 +1653,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const kpiRedflag = document.getElementById("kpi-redflag-cnt");
         const kpiCama = document.getElementById("kpi-cama-status");
 
-        if (!allPscRecords || allPscRecords.length === 0) return;
+        // A failed load leaves the dashes in place, because the honest answer
+        // is "unknown" -- the table alongside says why. A register that loaded
+        // and is genuinely empty reports zeroes, because that is a fact we
+        // know. Returning early on both was what let a broken fetch sit under
+        // a KPI strip that looked merely unpopulated.
+        const cells = [kpiTotal, kpiAvgStake, kpiIndirect, kpiRedflag, kpiCama];
+        if (pscLoadState === "error") {
+            cells.forEach(c => { if (c) c.innerText = "—"; });
+            return;
+        }
+        if (!allPscRecords || allPscRecords.length === 0) {
+            if (kpiTotal) kpiTotal.innerText = "0";
+            if (kpiAvgStake) kpiAvgStake.innerText = "n/a";
+            if (kpiIndirect) kpiIndirect.innerText = "0";
+            if (kpiRedflag) kpiRedflag.innerText = "0";
+            if (kpiCama) kpiCama.innerText = "n/a";
+            return;
+        }
 
         if (kpiTotal) kpiTotal.innerText = allPscRecords.length;
 
@@ -1706,12 +1754,90 @@ document.addEventListener("DOMContentLoaded", () => {
         return pscData;
     }
 
+    /**
+     * Label of this modal's active chip, for naming the filter that emptied
+     * the view. Scoped to the modal's row, not the page: the PSC Register
+     * renders its own ".psc-chip.active" and would otherwise supply the name.
+     */
+    function activePscFilterLabel() {
+        const chip = pscFilterChipRow && pscFilterChipRow.querySelector(".psc-chip.active");
+        return chip ? chip.innerText.trim() : "the selected filters";
+    }
+
+    /**
+     * Why a PSC view is empty, as markup. Distinguishes a register that could
+     * not be fetched from one that is genuinely empty from one whose rows were
+     * all excluded by the active chip or search -- and offers the action that
+     * fits each: retry the load, or clear the filter that hid everything.
+     */
+    function pscEmptyStateHTML() {
+        const state = window.AuraPSC.emptyStateFor({
+            loadState: pscLoadState,
+            error: pscLoadError,
+            totalRecords: (allPscRecords || []).length,
+            filterId: activePscFilter,
+            filterLabel: activePscFilterLabel(),
+            query: currentPscSearchQuery
+        });
+
+        const wrap = (body) => `<div style="padding:28px 25px; text-align:center; color:var(--text-muted); line-height:1.6;">${body}</div>`;
+
+        if (state.kind === "load-error") {
+            return wrap(`
+                <div style="color:#ef4444; font-weight:700; margin-bottom:6px;">The PSC register could not be loaded.</div>
+                <div style="font-size:12.5px;">Nothing is being shown because the data did not arrive&nbsp;&mdash; not because no one holds significant control.</div>
+                ${state.reason ? `<div style="font-size:11.5px; margin-top:8px; color:#9ca3af;">Reason: ${esc(state.reason)}</div>` : ""}
+                <button class="btn btn-secondary" id="psc-retry-btn" style="margin-top:14px; padding:6px 14px; font-size:12px;">Retry</button>
+            `);
+        }
+
+        if (state.kind === "register-empty") {
+            return wrap(`
+                <div style="font-weight:600; color:#d1d5db; margin-bottom:6px;">No PSC disclosures have been recorded yet.</div>
+                <div style="font-size:12.5px;">The register loaded successfully and is empty. Rows appear here once the pipeline extracts a person with significant control.</div>
+            `);
+        }
+
+        const bits = [];
+        if (state.filterLabel) bits.push(`the <strong style="color:#d1d5db;">${esc(state.filterLabel)}</strong> filter`);
+        if (state.query) bits.push(`the search &ldquo;<strong style="color:#d1d5db;">${esc(state.query)}</strong>&rdquo;`);
+        const because = bits.length ? bits.join(" and ") : "the selected filters";
+
+        return wrap(`
+            <div style="font-weight:600; color:#d1d5db; margin-bottom:6px;">No disclosures match ${because}.</div>
+            <div style="font-size:12.5px;">${state.total} disclosure${state.total === 1 ? " is" : "s are"} loaded; ${state.total === 1 ? "it does" : "none of them"} match.</div>
+            <button class="btn btn-secondary" id="psc-clear-filters-btn" style="margin-top:14px; padding:6px 14px; font-size:12px;">Clear filters</button>
+        `);
+    }
+
+    /** Wire whichever action the empty state offered. */
+    function bindPscEmptyStateActions(container) {
+        const retry = container.querySelector("#psc-retry-btn");
+        if (retry) retry.addEventListener("click", () => loadPSCRecords());
+
+        const clear = container.querySelector("#psc-clear-filters-btn");
+        if (clear) {
+            clear.addEventListener("click", () => {
+                activePscFilter = "all";
+                currentPscSearchQuery = "";
+                if (pscSearchInput) pscSearchInput.value = "";
+                // This modal's chips only -- see the note on pscFilterChipRow.
+                filterChips.forEach(c => {
+                    c.classList.toggle("active", c.getAttribute("data-filter") === "all");
+                });
+                if (pscViewMode === "table") renderPSCTableRows();
+                else renderPSCNetworkGraph();
+            });
+        }
+    }
+
     function renderPSCTableRows() {
         if (!pscTableContainer) return;
         const pscData = getFilteredPSCData();
 
         if (!pscData || pscData.length === 0) {
-            pscTableContainer.innerHTML = `<p style="padding:25px; text-align:center; color:var(--text-muted);">No Persons with Significant Control (PSC) disclosures match the selected filters.</p>`;
+            pscTableContainer.innerHTML = pscEmptyStateHTML();
+            bindPscEmptyStateActions(pscTableContainer);
             return;
         }
 
@@ -1808,7 +1934,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const pscData = getFilteredPSCData();
 
         if (!pscData || pscData.length === 0) {
-            pscNetworkGraphContainer.innerHTML = `<p style="padding:30px; text-align:center; color:var(--text-muted);">No Beneficial Ownership nodes match current map filters.</p>`;
+            pscNetworkGraphContainer.innerHTML = pscEmptyStateHTML();
+            bindPscEmptyStateActions(pscNetworkGraphContainer);
             return;
         }
 
@@ -2096,8 +2223,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // the main intelligence export was already fixed for this, but the PSC
     // export, which matters more, still had the bug. Fields beginning with
     // =, +, - or @ are prefixed so a spreadsheet treats them as text.
+    /**
+     * Refuse to build an export from a register that is empty or never loaded,
+     * and say which it was. Both cases used to return silently, so the button
+     * appeared broken -- and a brief built from a failed load would assert a
+     * clean register, which is the most damaging thing this tool could claim.
+     */
+    function pscExportGuard(what) {
+        if (pscLoadState === "error") {
+            alert(`Cannot build the ${what}: the PSC register did not load`
+                + (pscLoadError ? ` (${pscLoadError})` : "")
+                + ".\n\nAn export made now would understate the register rather than reflect it. Retry the load first.");
+            return false;
+        }
+        if (!allPscRecords || allPscRecords.length === 0) {
+            alert(`Nothing to put in the ${what}: the PSC register loaded and holds no disclosures yet.`);
+            return false;
+        }
+        return true;
+    }
+
     function exportPSCCSV() {
-        if (!allPscRecords || allPscRecords.length === 0) return;
+        if (!pscExportGuard("CSV export")) return;
 
         const headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Share Band",
             "Direct %", "Indirect %", "Voting Rights %", "Intermediate Entities", "Board Role",
@@ -2131,7 +2278,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Export PSC Compliance Report
     function exportPSCComplianceReport() {
-        if (!allPscRecords || allPscRecords.length === 0) return;
+        if (!pscExportGuard("compliance brief")) return;
 
         let reportMd = `# Persons with Significant Control (PSC) & CAMA 2020 UBO Audit Brief\n`;
         // A brief built from seed rows must say so on its face. Without this
