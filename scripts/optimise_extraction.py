@@ -40,8 +40,22 @@ DEFAULT_GOLD = os.path.join(os.path.dirname(__file__), "..", "evals", "extractio
 
 
 def load_gold(path):
-    """Read the gold set as DSPy examples keyed on the extractor's inputs."""
+    """
+    Read the gold set, keeping only records a person has signed off.
+
+    `verified_by` is the whole point. scripts/draft_gold.py writes scaffolding
+    pre-filled from the corpus and, where available, hints taken from previous
+    model output -- and a draft that nobody corrected is not a label. Optimising
+    against uncorrected drafts would teach GEPA to reproduce today's behaviour,
+    mistakes included, while reporting a rising score for doing it. A number
+    that looks rigorous and measures nothing is worse than no number.
+
+    Drafts are therefore skipped here rather than merely discouraged in the
+    documentation. Fields beginning with "_" (the archive hints) are dropped
+    too: they are labelling aids, not part of the expected extraction.
+    """
     examples = []
+    skipped = 0
     with open(path, "r", encoding="utf-8") as fh:
         for line_no, line in enumerate(fh, 1):
             line = line.strip()
@@ -51,10 +65,16 @@ def load_gold(path):
                 record = json.loads(line)
             except json.JSONDecodeError as exc:
                 raise SystemExit(f"{path}:{line_no}: invalid JSON ({exc})")
+
+            if not str(record.get("verified_by") or "").strip():
+                skipped += 1
+                continue
+
+            record = {k: v for k, v in record.items() if not k.startswith("_")}
             examples.append(
                 dspy.Example(**record).with_inputs("title", "article_text")
             )
-    return examples
+    return examples, skipped
 
 
 def split(examples, val_fraction=0.3, seed=0):
@@ -90,16 +110,22 @@ def main():
             "label some articles first (see evals/README.md)."
         )
 
-    examples = load_gold(args.gold)
+    examples, skipped = load_gold(args.gold)
+    if skipped:
+        print(f"skipped {skipped} unverified draft(s) -- set verified_by to include them")
+
     # Below this, a win on the validation split is noise rather than evidence.
     if len(examples) < 10:
+        detail = (f" ({skipped} unverified draft(s) were skipped)" if skipped else "")
         raise SystemExit(
-            f"Only {len(examples)} gold examples. Refusing to run: a validation "
-            "split this small cannot distinguish a better prompt from a lucky one."
+            f"Only {len(examples)} verified gold examples{detail}. Refusing to run: a "
+            "validation split this small cannot distinguish a better prompt from a "
+            "lucky one."
         )
 
     trainset, valset = split(examples, args.val_fraction)
-    print(f"gold={len(examples)} train={len(trainset)} val={len(valset)}")
+    print(f"verified={len(examples)} unverified={skipped} "
+          f"train={len(trainset)} val={len(valset)}")
 
     from backend.app.services.llm import LLMService
     LLMService._configure_dspy()

@@ -40,6 +40,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # Before spending any tokens. A label that breaks the rules the metric
+      # enforces does not just score badly -- it teaches GEPA to break them, and
+      # the mistake ends up in the prompt behind the PSC register. Also fails
+      # when too few records have been signed off, so a file of uncorrected
+      # drafts stops the run here rather than producing a meaningless score.
+      - name: Validate the gold set
+        run: python scripts/validate_gold.py --require-verified 10
+
       - name: Run GEPA
         id: gepa
         env:

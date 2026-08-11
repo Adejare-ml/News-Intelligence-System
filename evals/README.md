@@ -23,6 +23,37 @@ Two things now feed this directory:
   `backend/app/static/data/latest.json`. Expect partial success — paywalls and
   rotated URLs will lose some.
 
+## The loop
+
+```bash
+# 1. Recover what inputs can still be fetched. Run this locally -- it needs
+#    outbound access to the news sites, which CI sandboxes generally deny.
+python scripts/backfill_eval_corpus.py
+
+# 2. Turn corpus inputs into blank records to fill in. Safe to re-run as the
+#    pipeline captures more; it appends only what is new and never touches a
+#    record you have already verified.
+python scripts/draft_gold.py
+
+# 3. Read each article, correct the fields, set verified_by.
+
+# 4. Check your labels against the rules the metric enforces.
+python scripts/validate_gold.py
+```
+
+**A draft is not a label.** `draft_gold.py` writes `verified_by: null` on every
+record and `scripts/optimise_extraction.py` skips those, so nothing you have not
+personally signed off can reach the optimiser. That is enforced in code, not
+just asked for here: optimising against uncorrected drafts would teach GEPA to
+reproduce the current behaviour, mistakes included, while reporting an improving
+score for doing it.
+
+Where a corpus URL matches the published archive, the previous pipeline's
+category, risk score and summary appear under `_archive_hint`. They are context,
+never the answer — the loader drops any field starting with `_`. They sit beside
+the blank rather than inside it on purpose: a pre-filled plausible answer gets
+approved rather than checked.
+
 ## Labelling
 
 `extraction_gold.jsonl`, one JSON object per line:
