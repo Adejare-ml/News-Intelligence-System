@@ -204,12 +204,17 @@
         {
             id: "R12_CROSS_ENTITY",
             run: function (record, ctx) {
-                var holdings = ctx.byPerson[personKey(record)] || [];
-                if (holdings.length < 2) return null;
+                // Distinct companies, not rows. Counting rows overstated the
+                // portfolio whenever the register held the same disclosure
+                // twice -- and it does, because the pipeline appends a row per
+                // extraction. One holder with four rows across two companies
+                // was reported as controlling four.
+                var companies = companiesFor(record, ctx);
+                if (companies.length < 2) return null;
                 return {
                     severity: "medium",
                     title: "Cross-entity portfolio",
-                    detail: "Holds significant control in " + holdings.length + " tracked companies, so "
+                    detail: "Holds significant control in " + companies.length + " tracked companies, so "
                         + "influence is understated by any single row."
                 };
             }
@@ -228,6 +233,27 @@
             }
         }
     ];
+
+    /**
+     * The distinct tracked companies one person holds control in.
+     *
+     * A person's rows are not their companies. The register can carry the same
+     * disclosure more than once -- the pipeline appends a row per extraction,
+     * so a disclosure reported by two articles lands twice -- and a genuine
+     * holder can also appear twice against one company as their stake changes.
+     * Anything reasoning about a *portfolio* has to count companies, or it
+     * inflates a compliance finding with duplicate paperwork.
+     */
+    function companiesFor(record, context) {
+        var ctx = context || buildContext([record]);
+        var holdings = ctx.byPerson[personKey(record)] || [];
+        var seen = {};
+        holdings.forEach(function (r) {
+            var c = companyKey(r);
+            if (c) seen[c] = true;
+        });
+        return Object.keys(seen);
+    }
 
     /** Index records once so per-record rules do not rescan the whole table. */
     function buildContext(records) {
@@ -399,6 +425,7 @@
         classifyBand: classifyBand,
         bandFor: bandFor,
         buildContext: buildContext,
+        companiesFor: companiesFor,
         redFlagsFor: redFlagsFor,
         annotate: annotate,
         controlChain: controlChain,
