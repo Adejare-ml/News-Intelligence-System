@@ -11,6 +11,11 @@ import logging
 logger = logging.getLogger(__name__)
 
 # Mock Data Templates to seed a highly interactive, rich knowledge database
+# The byline on every generated article. Deliberately not a real masthead, and
+# deliberately self-describing, because it is what the Source column shows in
+# the dashboard, the article modal and the CSV export.
+SYNTHETIC_SOURCE = "AURA SAMPLE (synthetic, not real reporting)"
+
 MOCK_COMPANIES = [
     "Apex Technology Group", "Vertex Financials", "Nova Energy Corp", 
     "AeroSpace International", "BioSphere Healthcare", "Summit Holdings"
@@ -450,14 +455,26 @@ class NewsIngestionService:
             # Random date
             pub_date = base_date - timedelta(days=random.randint(0, 10), hours=random.randint(0, 23))
             
-            # Sources
-            src = random.choice(["Reuters Intelligence", "Bloomberg Business", "Financial Times News", "Wall Street Journal"])
-            
-            # Create a unique-looking URL
+            # These used to be attributed to Reuters, Bloomberg, the Financial
+            # Times and the Wall Street Journal, with URLs on those newspapers'
+            # own domains. Invented stories carrying a real masthead is not a
+            # thing to generate under any circumstances, demo or not, and the
+            # byline survived into the sheet and the executive brief with
+            # nothing marking it as synthetic.
+            #
+            # The name now says what the row is everywhere Source is displayed,
+            # which is the cheapest durable marker: it travels into the feed,
+            # the article modal and the CSV export without any of them needing
+            # to know about seeding.
+            src = SYNTHETIC_SOURCE
+
+            # .invalid is reserved by RFC 2606 and can never resolve, so a
+            # generated link cannot be mistaken for a citation or accidentally
+            # followed to somebody's real article.
             slug = headline.lower().replace(" ", "-").replace("$", "").replace(".", "")
             slug = re.sub(r'[^a-z0-9\-]', '', slug)
-            url = f"https://www.{src.lower().replace(' ', '')}.com/articles/{pub_date.strftime('%Y/%m/%d')}/{slug}"
-            
+            url = f"https://sample.example.invalid/{pub_date.strftime('%Y/%m/%d')}/{slug}"
+
             articles.append({
                 "title": headline,
                 "url": url,
@@ -465,6 +482,7 @@ class NewsIngestionService:
                 "published_at": pub_date.isoformat(),
                 "raw_text": text,
                 "is_rss": False,
+                "is_synthetic": True,
                 "mock_category": template["category"],
                 "mock_event_type": template["event_type"]
             })
@@ -486,10 +504,30 @@ class NewsIngestionService:
         all_articles.extend(cls.fetch_guardian_news())
         all_articles.extend(cls.fetch_newsdata_io())
         
-        # 3. If we don't have enough articles or for demo seed support, add mock news
+        # 3. Padding a thin cycle with invented articles is opt-in.
+        #
+        # This used to fire unconditionally below ten articles -- which is
+        # precisely when the fetchers are struggling: a rate-limited API, an
+        # expired key, a degraded network. On exactly those days 25 fabricated
+        # stories were analysed, written to the sheet, counted in the KPIs and
+        # folded into the executive brief.
+        #
+        # A quiet news day, or a broken fetcher, is a fact the brief should
+        # reflect. Padding it is the system asserting something it does not
+        # know. Same reasoning as SEED_DEMO_PSC, and the same default.
         if len(all_articles) < 10:
-            mock_articles = cls.generate_mock_news(25)
-            all_articles.extend(mock_articles)
+            if settings.SEED_DEMO_ARTICLES:
+                logger.warning(
+                    "Only %d real article(s) collected; SEED_DEMO_ARTICLES is on, so "
+                    "adding synthetic samples marked '%s'.", len(all_articles), SYNTHETIC_SOURCE
+                )
+                all_articles.extend(cls.generate_mock_news(25))
+            else:
+                logger.warning(
+                    "Only %d real article(s) collected this cycle. Continuing with what "
+                    "is real rather than padding. Check the source adapters and API keys "
+                    "if this persists.", len(all_articles)
+                )
             
         # Post-ingestion strict Nigeria filter
         # Drop site chrome before anything else. Scoping searches to gov.ng and
