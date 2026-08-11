@@ -140,6 +140,17 @@ class LLMService:
         publishing heuristic junk.
         """
 
+        # 0. Typed DSPy program, when opted into. It runs ahead of the prose
+        # prompt because its output is parsed and validated rather than scraped
+        # out of free text, but it is only ever an addition to this cascade:
+        # any failure falls through to the paths below, so turning it on cannot
+        # take extraction down.
+        if settings.USE_DSPY_EXTRACTION:
+            result = cls._run_dspy(title, text)
+            if result:
+                result["engine"] = f"dspy-{settings.DSPY_PROVIDER}"
+                return result
+
         # 1. Main Extract: Ollama API (skipped entirely when not configured)
         if cls._ollama_configured():
             logger.info("Analyzing article using Ollama API...")
@@ -169,6 +180,48 @@ class LLMService:
             "Set ALLOW_HEURISTIC_FALLBACK=true to permit degraded local extraction."
             % (cls._ollama_configured(), bool(settings.NVIDIA_API_KEY))
         )
+
+    # Cached so the artifact is read and the program built once per process
+    # rather than once per article.
+    _dspy_program = None
+
+    @classmethod
+    def _configure_dspy(cls):
+        """Point DSPy at whichever provider this environment already has keys for."""
+        import dspy
+
+        provider = (settings.DSPY_PROVIDER or "ollama").strip().lower()
+        if provider == "nvidia":
+            if not settings.NVIDIA_API_KEY:
+                raise RuntimeError("DSPY_PROVIDER=nvidia but NVIDIA_API_KEY is unset")
+            model = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
+            lm = dspy.LM(f"openai/{model}", api_base=NVIDIA_BASE_URL,
+                         api_key=settings.NVIDIA_API_KEY)
+        else:
+            if not cls._ollama_configured():
+                raise RuntimeError("DSPY_PROVIDER=ollama but Ollama is not configured")
+            # Reuses the base-URL normalisation the rest of the cascade uses, so
+            # the two cannot disagree about what the host is.
+            lm = dspy.LM(f"openai/{settings.OLLAMA_MODEL}",
+                         api_base=cls._ollama_base_url(),
+                         api_key=settings.OLLAMA_API_KEY or "ollama")
+        dspy.configure(lm=lm)
+
+    @classmethod
+    def _run_dspy(cls, title: str, text: str) -> Dict[str, Any]:
+        """Typed extraction. Returns None on any failure so the cascade continues."""
+        try:
+            from backend.app.services.dspy_extract import load_extractor, prediction_to_dict
+
+            if cls._dspy_program is None:
+                cls._configure_dspy()
+                cls._dspy_program = load_extractor()
+
+            prediction = cls._dspy_program(title=title, article_text=text)
+            return cls._validate_llm_output(prediction_to_dict(prediction))
+        except Exception as e:
+            logger.warning("DSPy extraction failed (%s); falling through to the prompt cascade.", e)
+            return None
 
     @classmethod
     def generate_daily_report(cls, raw_data_string: str) -> tuple:
