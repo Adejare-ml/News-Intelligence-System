@@ -21,6 +21,10 @@ on:
         description: "Reject an extraction shorter than this as a paywall or consent wall"
         required: false
         default: "400"
+      max_chars:
+        description: "Reject an extraction longer than this as not-one-article"
+        required: false
+        default: "60000"
 
 concurrency:
   group: corpus-backfill
@@ -56,6 +60,7 @@ jobs:
           python scripts/backfill_eval_corpus.py \
             --limit "${{ github.event.inputs.limit || '60' }}" \
             --min-chars "${{ github.event.inputs.min_chars || '400' }}" \
+            --max-chars "${{ github.event.inputs.max_chars || '60000' }}" \
             | tee backfill.log
 
       # A run that recovers nothing should not open an empty PR. The script
@@ -99,7 +104,18 @@ jobs:
       # this commit carries the full text of other people's journalism, which is
       # a call for a human to make rather than a job; and a PR gives somewhere
       # to see how much was actually recovered before it lands.
+      #
+      # continue-on-error because opening the PR needs "Allow GitHub Actions to
+      # create and approve pull requests" (Settings > Actions > General), which
+      # is off by default and was off here on the first run. The action pushes
+      # the branch *before* it tries to open the PR, so when the permission is
+      # missing the corpus is already safely on the remote and only the
+      # convenience step failed. Failing the whole job at that point would
+      # report a successful fetch as a failure and invite someone to re-run it,
+      # re-fetching every article for nothing.
       - name: Open a pull request with the corpus
+        id: pr
+        continue-on-error: true
         if: steps.recovered.outputs.recovered != '0'
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         with:
@@ -112,3 +128,14 @@ jobs:
           body-path: pr_body.md
           draft: true
           delete-branch: true
+
+      # The branch is what matters; the PR is convenience. Say plainly which
+      # one happened, so a green run is never mistaken for "a PR is waiting".
+      - name: Report where the corpus ended up
+        if: steps.recovered.outputs.recovered != '0'
+        run: |
+          if [ "${{ steps.pr.outcome }}" = "success" ]; then
+            echo "::notice::Opened a pull request with ${{ steps.recovered.outputs.recovered }} article(s)."
+          else
+            echo "::warning::Could not open a pull request -- GitHub Actions is not permitted to create them in this repository (Settings > Actions > General > Workflow permissions). The corpus is pushed and safe on the branch 'evals/corpus-backfill'; open a PR from it by hand, or enable that setting and re-run."
+          fi
