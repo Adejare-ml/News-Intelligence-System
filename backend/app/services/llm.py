@@ -20,6 +20,9 @@ DEFAULT_GEMINI_MODEL = "gemini-flash-latest"
 
 # Ollama cloud's OpenAI-compatible endpoint, used when only an API key is set.
 OLLAMA_CLOUD_HOST = "https://ollama.com"
+# Was repeated at each NVIDIA call site; named here so the DSPy client and the
+# existing OpenAI clients cannot end up pointed at different endpoints.
+NVIDIA_BASE_URL = "https://integrate.api.nvidia.com/v1"
 
 
 def build_report_prompt(raw_data_string: str) -> str:
@@ -243,7 +246,7 @@ class LLMService:
         try:
             from openai import OpenAI
             client = OpenAI(
-                base_url="https://integrate.api.nvidia.com/v1",
+                base_url=NVIDIA_BASE_URL,
                 api_key=settings.NVIDIA_API_KEY
             )
             prompt = build_report_prompt(raw_data_string)
@@ -343,7 +346,7 @@ class LLMService:
         try:
             from openai import OpenAI
             client = OpenAI(
-                base_url="https://integrate.api.nvidia.com/v1",
+                base_url=NVIDIA_BASE_URL,
                 api_key=settings.NVIDIA_API_KEY
             )
 
