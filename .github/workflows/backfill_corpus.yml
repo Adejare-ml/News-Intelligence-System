@@ -1,0 +1,114 @@
+name: Backfill eval corpus
+
+# Manual only. This is a one-off bootstrap for the extraction gold set, not
+# something that should run on a schedule: the ongoing supply of extractor
+# inputs comes from run_pipeline.capture_eval_input, which samples articles as
+# they are analysed.
+#
+# It exists because the backfill cannot run everywhere. Sandboxed environments
+# commonly sit behind an egress policy that refuses the news hosts outright --
+# an attempt from one such environment recovered 0 of 60, every URL rejected
+# with "gateway answered 403 to CONNECT". A GitHub runner has ordinary outbound
+# access, so the fetch works here.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many archived URLs to attempt"
+        required: false
+        default: "60"
+      min_chars:
+        description: "Reject an extraction shorter than this as a paywall or consent wall"
+        required: false
+        default: "400"
+
+concurrency:
+  group: corpus-backfill
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # Only what the fetcher actually imports. Installing the full
+      # requirements.txt here would pull torch and the CUDA wheels for a job
+      # that does nothing but fetch HTML and parse it.
+      - name: Install fetch dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Run the backfill
+        run: |
+          python scripts/backfill_eval_corpus.py \
+            --limit "${{ github.event.inputs.limit || '60' }}" \
+            --min-chars "${{ github.event.inputs.min_chars || '400' }}" \
+            | tee backfill.log
+
+      # A run that recovers nothing should not open an empty PR. The script
+      # reports honestly rather than failing, so the count is the signal.
+      - name: Check whether anything was recovered
+        id: recovered
+        run: |
+          if [ ! -s evals/corpus/backfill.jsonl ]; then
+            echo "recovered=0" >> "$GITHUB_OUTPUT"
+            echo "Nothing recovered -- every URL was unreachable. Not opening a PR."
+          else
+            COUNT=$(wc -l < evals/corpus/backfill.jsonl)
+            echo "recovered=$COUNT" >> "$GITHUB_OUTPUT"
+            echo "Recovered $COUNT article(s)."
+          fi
+
+      - name: Summarise for the pull request body
+        if: steps.recovered.outputs.recovered != '0'
+        run: |
+          {
+            echo "Recovered **${{ steps.recovered.outputs.recovered }}** article bodies for the extraction gold set."
+            echo
+            echo "These are **inputs only** -- unlabelled. Next steps are in \`evals/README.md\`:"
+            echo "\`scripts/draft_gold.py\` turns them into blank records, and nothing reaches"
+            echo "the optimiser until each one has \`verified_by\` set by a person."
+            echo
+            echo "Expect a partial recovery. Google News entries are redirect links rather than"
+            echo "publisher URLs and often resolve to a consent interstitial, and anything"
+            echo "shorter than the min-chars threshold is rejected as a probable paywall."
+            echo
+            echo "<details><summary>Fetch log</summary>"
+            echo
+            echo '```'
+            tail -80 backfill.log
+            echo '```'
+            echo
+            echo "</details>"
+          } > pr_body.md
+
+      # Proposed, not pushed to main. Two reasons: the repository is public and
+      # this commit carries the full text of other people's journalism, which is
+      # a call for a human to make rather than a job; and a PR gives somewhere
+      # to see how much was actually recovered before it lands.
+      - name: Open a pull request with the corpus
+        if: steps.recovered.outputs.recovered != '0'
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: evals/corpus-backfill
+          base: main
+          add-paths: evals/corpus/
+          commit-message: "Add backfilled eval corpus (${{ steps.recovered.outputs.recovered }} articles)"
+          title: "Eval corpus: ${{ steps.recovered.outputs.recovered }} backfilled article bodies"
+          body-path: pr_body.md
+          draft: true
+          delete-branch: true
