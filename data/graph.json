@@ -439,6 +439,12 @@
       "risk": "Medium"
     },
     {
+      "id": "c23cf0c11158",
+      "label": "FirstHoldCo",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "0c68c2daa033",
       "label": "BPP",
       "type": "agency",
@@ -750,6 +756,12 @@
       "id": "0cd3b636ebc8",
       "from": "6617740c0c1a",
       "to": "c0f6baef22e7",
+      "label": "Significant influence or control"
+    },
+    {
+      "id": "ee173444ce0d",
+      "from": "6617740c0c1a",
+      "to": "c23cf0c11158",
       "label": "Significant influence or control"
     },
     {
