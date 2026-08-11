@@ -193,3 +193,37 @@ def off_topic_reason(title: Any, summary: Any = None) -> OffTopicReason | None:
 def is_off_topic(title: Any, summary: Any = None) -> bool:
     """True when the article is about sport or celebrity entertainment."""
     return off_topic_reason(title, summary) is not None
+
+
+# ---------------------------------------------------------------------------
+# Publication and page-furniture guard
+# ---------------------------------------------------------------------------
+#
+# Moved here from run_pipeline so it can be used without importing the LLM and
+# spaCy stack. It is the same kind of deterministic guard as the topic check
+# above, and the extraction metric in evals/ needs it to score "listed the
+# newspaper as a party to the story" -- a check that has to run in tests with no
+# network and no models. run_pipeline re-exports it, so existing imports and
+# tests/test_entity_filter.py are unaffected.
+
+NEWS_OUTLET_MARKERS = (
+    "guardian", "premium times", "punch", "vanguard", "daily post", "dailypost",
+    "thisday", "this day", "nairametrics", "channels tv", "channels television",
+    "leadership newspaper", "the nation", "businessday", "business day", "tribune",
+    "sahara reporters", "peoples gazette", "the cable", "thecable", "legit.ng",
+    "reuters", "bloomberg", "associated press", "al jazeera", "bbc", "cnn",
+)
+
+# Navigation furniture scraped from article pages.
+NON_ENTITY_TERMS = {
+    "archives", "archive", "home", "newsletter", "advertisement", "sponsored",
+    "read more", "subscribe", "latest news", "breaking news", "news",
+}
+
+
+def is_publication_or_furniture(name: Any) -> bool:
+    """True when an extracted organization is really the publication or page chrome."""
+    cleaned = " ".join(str(name or "").replace("\xa0", " ").split()).lower()
+    if not cleaned or cleaned in NON_ENTITY_TERMS:
+        return True
+    return any(marker in cleaned for marker in NEWS_OUTLET_MARKERS)

@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import random
 import logging
 import argparse
 from datetime import datetime, timedelta
@@ -38,27 +39,15 @@ MAX_CONSECUTIVE_LLM_FAILURES = 3
 # Publications are the source of an article, not participants in it. Models
 # still surface them as organizations often enough to pollute the knowledge
 # graph, so they are dropped defensively as well as discouraged in the prompt.
-NEWS_OUTLET_MARKERS = (
-    "guardian", "premium times", "punch", "vanguard", "daily post", "dailypost",
-    "thisday", "this day", "nairametrics", "channels tv", "channels television",
-    "leadership newspaper", "the nation", "businessday", "business day", "tribune",
-    "sahara reporters", "peoples gazette", "the cable", "thecable", "legit.ng",
-    "reuters", "bloomberg", "associated press", "al jazeera", "bbc", "cnn",
+# The publication / page-furniture guard lives in services.relevance with the
+# other deterministic guards, so it can be reused without importing this module
+# and its LLM and spaCy dependencies. Re-exported here because callers and
+# tests/test_entity_filter.py import it from run_pipeline.
+from backend.app.services.relevance import (  # noqa: E402  (re-export)
+    NEWS_OUTLET_MARKERS,
+    NON_ENTITY_TERMS,
+    is_publication_or_furniture,
 )
-
-# Navigation furniture scraped from article pages.
-NON_ENTITY_TERMS = {
-    "archives", "archive", "home", "newsletter", "advertisement", "sponsored",
-    "read more", "subscribe", "latest news", "breaking news", "news",
-}
-
-
-def is_publication_or_furniture(name: str) -> bool:
-    """True when an extracted organization is really the publication or page chrome."""
-    cleaned = " ".join((name or "").replace("\xa0", " ").split()).lower()
-    if not cleaned or cleaned in NON_ENTITY_TERMS:
-        return True
-    return any(marker in cleaned for marker in NEWS_OUTLET_MARKERS)
 
 
 # Nigerian PSC disclosure bands.
@@ -74,6 +63,39 @@ SHARE_BANDS = (
     (25.0, "BAND_25_50"),
     (5.0, "BAND_5_25"),
 )
+
+
+EVAL_CORPUS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "evals", "corpus")
+# One in this many analysed articles is kept as a candidate for labelling.
+EVAL_CAPTURE_RATE = int(os.environ.get("EVAL_CAPTURE_RATE", "10"))
+
+
+def capture_eval_input(title: str, article_text: str, url: str, source: str) -> None:
+    """
+    Append a sampled extractor input to the eval corpus.
+
+    Best-effort by design: this exists to make a gold set buildable, and losing
+    a sample matters far less than failing an ingestion run over it. Any error
+    is logged and swallowed.
+    """
+    if EVAL_CAPTURE_RATE <= 0:
+        return
+    try:
+        if random.randint(1, EVAL_CAPTURE_RATE) != 1:
+            return
+        os.makedirs(EVAL_CORPUS_DIR, exist_ok=True)
+        path = os.path.join(EVAL_CORPUS_DIR, f"{datetime.now().strftime('%Y%m')}.jsonl")
+        record = {
+            "title": title,
+            "article_text": article_text,
+            "url": url,
+            "source": source,
+            "captured_at": datetime.now().isoformat(timespec="seconds"),
+        }
+        with open(path, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.debug("Could not capture eval input for '%s': %s", title, exc)
 
 
 def share_band(percentage: Any) -> str:
@@ -180,6 +202,13 @@ def run_pipeline(seed: bool = False):
         # Clean text basic HTML strips
         from backend.app.services.nlp_pipeline import NLPPipelineService
         cleaned_text = NLPPipelineService.clean_html(text)
+
+        # Keep a sample of the extractor's *inputs*. Everything written to the
+        # sheet is model output -- Title, Summary, Category -- so there was no
+        # way to build a labelled set from the archive: the article body, which
+        # is the input the extractor is judged on, was discarded after analysis.
+        # Sampled rather than exhaustive because this is committed to the repo.
+        capture_eval_input(title, cleaned_text, url, source)
 
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
