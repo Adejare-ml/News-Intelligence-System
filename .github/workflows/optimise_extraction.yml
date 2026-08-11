@@ -1,0 +1,83 @@
+name: Optimise extraction prompt (GEPA)
+
+# Weekly, not per-cycle. GEPA spends many LLM calls per candidate instruction,
+# so it has no business anywhere near the four-times-daily ingestion run.
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Mondays, 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      max_metric_calls:
+        description: "Budget in metric calls (lower = cheaper, use a small number for a dry run)"
+        required: false
+        default: "150"
+
+# Its own group. Sharing one with news-pipeline would let an optimisation run
+# block or be blocked by ingestion, which is the job that actually matters.
+concurrency:
+  group: extraction-optimisation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  optimise:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run GEPA
+        id: gepa
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+          DSPY_PROVIDER: ${{ vars.DSPY_PROVIDER || 'ollama' }}
+          GEPA_REFLECTION_MODEL: ${{ vars.GEPA_REFLECTION_MODEL }}
+        run: |
+          python scripts/optimise_extraction.py \
+            --max-metric-calls "${{ github.event.inputs.max_metric_calls || '150' }}" \
+            --summary-out gepa_summary.md
+
+      - name: Check whether the artifact actually changed
+        id: changed
+        run: |
+          if git diff --quiet -- backend/app/services/prompts/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No improvement over the incumbent; nothing to propose."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Deliberately a PR and never a direct push. This file is the instruction
+      # given to the extractor that the PSC register is built from; a change to
+      # it is as reviewable as a change to the code that consumes it. An
+      # optimiser scoring well on a metric is evidence, not authority.
+      - name: Open a pull request with the new prompt
+        if: steps.changed.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gepa/extraction-prompt
+          base: main
+          add-paths: backend/app/services/prompts/
+          commit-message: "Update GEPA-optimised extraction prompt"
+          title: "Update GEPA-optimised extraction prompt"
+          body-path: gepa_summary.md
+          draft: true
+          delete-branch: true
