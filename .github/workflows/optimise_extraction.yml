@@ -29,13 +29,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Nothing to optimise is a normal state, not a failure.
+      #
+      # The gold set is built by hand and does not exist yet, so without this
+      # the weekly schedule would go red every Monday until somebody finishes
+      # labelling. A workflow that cries wolf on a timer is worse than no
+      # workflow: it trains people to ignore a red run, which is the exact
+      # failure the alerting on news_scheduler.yml exists to prevent.
+      #
+      # The distinction kept here is between "there is nothing to do" and
+      # "something is wrong". Only the second is a failure.
+      - name: Is there a gold set yet?
+        id: gold
+        run: |
+          if [ ! -s evals/extraction_gold.jsonl ]; then
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No gold set yet -- nothing to optimise. See evals/README.md."
+          else
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Setup Python
+        if: steps.gold.outputs.present == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: "pip"
 
+      # Gated too: without a gold set this job does nothing, and installing
+      # requirements.txt to do nothing means downloading torch and the CUDA
+      # wheels every Monday for no reason.
       - name: Install dependencies
+        if: steps.gold.outputs.present == 'true'
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -45,11 +70,16 @@ jobs:
       # the mistake ends up in the prompt behind the PSC register. Also fails
       # when too few records have been signed off, so a file of uncorrected
       # drafts stops the run here rather than producing a meaningless score.
+      #
+      # This one IS allowed to fail: once a gold set exists, a broken one is a
+      # real problem.
       - name: Validate the gold set
+        if: steps.gold.outputs.present == 'true'
         run: python scripts/validate_gold.py --require-verified 10
 
       - name: Run GEPA
         id: gepa
+        if: steps.gold.outputs.present == 'true'
         env:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
@@ -64,6 +94,7 @@ jobs:
 
       - name: Check whether the artifact actually changed
         id: changed
+        if: steps.gold.outputs.present == 'true'
         run: |
           if git diff --quiet -- backend/app/services/prompts/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
