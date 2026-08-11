@@ -6406,10 +6406,10 @@
   },
   {
     "Company": "FirstHoldCo",
-    "Mention Count": 1,
-    "Last Seen": "2026-08-03 10:52",
+    "Mention Count": 2,
+    "Last Seen": "2026-08-11 14:27",
     "Industry": "General",
-    "Risk Level": "Low"
+    "Risk Level": "Medium"
   },
   {
     "Company": "FirstHoldCo",
@@ -6679,8 +6679,8 @@
   },
   {
     "Company": "Kaduna Electricity Distribution Company",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-11 08:10",
+    "Mention Count": 3,
+    "Last Seen": "2026-08-11 14:26",
     "Industry": "General",
     "Risk Level": "High"
   },
@@ -6723,6 +6723,20 @@
     "Company": "Dangote Group",
     "Mention Count": 1,
     "Last Seen": "2026-08-11 08:13",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "US-Africa Trade Commission",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-11 14:22",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "Manufacturers Association of Nigeria",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-11 14:26",
     "Industry": "General",
     "Risk Level": "Low"
   }
