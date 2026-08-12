@@ -1,5 +1,53 @@
 [
   {
+    "ID": 3361,
+    "Time": "2026-08-12 05:52:10",
+    "Title": "NITDA signs MoUs with Fireflies AI, Goose FL to expand Nigeria\u2019s digital footprint",
+    "Source": "nairametrics",
+    "URL": "https://nairametrics.com/2026/08/12/nitda-signs-mous-with-fireflies-ai-goose-fl-to-expand-nigerias-digital-footprint/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The National Information Technology Development Agency (NITDA) has signed Memoranda of Understanding (MoUs) with Fireflies AI and Goose FL to expand Nigeria's digital footprint.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 3354,
+    "Time": "Wed, 12 Aug 2026 17:45:25 GMT",
+    "Title": "NEITI report: EFCC recovers N115bn for NDDC, clears 19 oil firms - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxObkE4QWw3bWk0RUs4WmFxTjdLbWhYR1E4VGtJN1NrYXpicXBvZlJmU3hhb3g4QU9FN3k5bEVNZXh5d01PbmxqTXRsVXhsVXRyZnlrWFgzeF9wLUFfUkJadUg2alJzbTViVFNxdS1WWEVNcnNyVkRHNnBwT2JDU0plYzVFeFRiZHE4OHpxVENJZk9BY3NkT21YeWNfSG44NVVD0gGmAUFVX3lxTE5aSFo5clVZMFhDbS1DbzZsZjVxbU5PYk9EcHVpXzRXaHBwMW9mYXR0WGZHaDdySm9RREMtQUhPLVNzbkNlcHYtV19uQUhCZS1GV0pYY014OHNCYktoRjctX2lQUXVRNWFRd1FGYU95MnVIcktBUDItM0NrVHgzT2EyZmE3VVlVeXBFSlBCZUNnZzhYUE52YUlIVHQ0TGJuVF9KZXJ0Ymc?oc=5",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has recovered N115 billion for the Niger Delta Development Commission (NDDC) based on a report by the Nigeria Extractive Industries Transparency Initiative (NEITI). The EFCC also cleared 19 oil firms of any wrongdoing.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 3349,
+    "Time": "Wed, 12 Aug 2026 17:17:20 GMT",
+    "Title": "JonahCapital writes FCT minister, EFCC, disowns arbitral proceedings against FG | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdXFzVXlsU050b014N1FlaHB1Q01VUTQzNEVOT3RzdlB5bEpQS2hXWlBHWUFkaTl6ZkdPT2JxSC05bTRqTFdfT2pvcnhfX2ZSRUpCaUZiRUc1dGNZMXhSSWhFT09zeW5wREFoUm90a05GRXJGQmdxWWFGR2NmLUJVSnRsNndsNmMzSDRLZkl5RVJhYldNZUhKbWxSOXFNU0NFRzhoZHpJTUYybzlT?oc=5",
+    "Category": "Legal",
+    "Risk Score": 45,
+    "Summary": "JonahCapital has formally written to the FCT Minister and the EFCC to disown arbitral proceedings initiated against the Federal Government of Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3348,
+    "Time": "Wed, 12 Aug 2026 15:09:52 GMT",
+    "Title": "Birth registration: NPC, UNICEF join forces to give legal identity to every Nigerian child | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMjlwMXVLNkQyTUk0Nm1hRXlvYmlWOEN4ZHFvcE5DbVBxbldKakFtOFJsZ0x4ZmgwX0FOdnB4dC1sUGdrZlozMjVPbk94bGh4QmU3UTZpQXh5ZG1icjNseVhNang2Y1R4VEtWdDYzUVNuM1R0ZmRVR1ZRVnVZdWNHam0tVW5ZcVdnWU9PLXlMbHQ1V0J5dTF6Rk9xZy1pNXNPNlhqdkhzZlVRZzM5VUVzTEJfZ1JHTUc0N0Fn?oc=5",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The National Population Commission (NPC) and UNICEF have partnered to improve birth registration processes in Nigeria. The initiative aims to ensure every Nigerian child is provided with a legal identity.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 3344,
     "Time": "2026-08-11T08:23:58Z",
     "Title": "US-Africa Trade Commission appoints Aremu as Nigeria Country Director",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 15,
     "Summary": "The Federal Government of Nigeria has disbursed N11.58 billion in social security allowances to 178,342 households in Jigawa State.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3106,
-    "Time": "Mon, 10 Aug 2026 11:25:23 GMT",
-    "Title": "IPC: Arogundade assumes IFEX leadership roles - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9FT0NUUjJjZGVObmV0NkZhcUdNd1FOcTR0YS03ZnNSSjFJUDg1TS1QVXhKUXNmY2hNOUhONTViNGVlVnBFeGhMWndQSnFxQ256em9xV0RJdDBPV0hEN1pPVUdaQjBjdmZvS0pTUFowUU51akFCMnIxMndR?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Arogundade has assumed leadership roles within IFEX.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3103,
-    "Time": "Mon, 10 Aug 2026 11:30:52 GMT",
-    "Title": "Planbetr appoints U.S.-based lead engineer Temitope Olajide as Volunteer Chief Facilitator,AI Education Advisor - vanguardngr.com",
-    "Source": "vanguardngr.com",
-    "URL": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPZmJqMGttQUNiOXJOdWRVZjk0aEoyek9FdHFpQWlMZDFhZUgtVEMyNHdmeDJfRkRCbnNEWlMxNnlsZUlvSWp6X3hzd3Z0S2VMWlNiRHBxMVVrenhyS29LTUJSM20xUEpwdTd0cnRTckM1VUw4MU16X25tWUFQT09GelZTV1lyQ1dGRVZuZlJQelNlbTJ0Q2xNZV9XQ2JHR0Uzbm9zVlVvRVlFMzFBS3pFenFIek02dklTbDlaR0NaTFFDajRxaDJaaTB6Z3ZUVnRzdzd4VXBSRk4zbzhGc2JB0gHkAUFVX3lxTFBIczZCSlhlV2VzMFFDWjRkZ2d3d2NwWGJLMGxoVmxSQXJ5WFdKT2dmV2w4R2hQdHYwTGVkc09hVDhwVloxRWgyeHlQQzd5cXlYZ3pvNGNidTNJeWxOMWp1SmVwNmVvNUJZRm45SmlrRUJFVU4taTRQbkV4aXl3ZXNhUTA5VXlSV0lkdktMZWZOV2xnc3pSb1dMV2JCeWNVbUlNS3hSZ2s0LXlJYXVhQ1pFc3I2RGZBcmxiZUFlY29aZE53X2piRjJrdDBoTHQ5a3liUmlUSFRSWlZUZlFzVFBvcEN4OQ?oc=5",
-    "Category": "Company",
-    "Risk Score": 15,
-    "Summary": "Planbetr has appointed Temitope Olajide, a U.S.-based lead engineer, to the roles of Volunteer Chief Facilitator and AI Education Advisor.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3102,
-    "Time": "Mon, 10 Aug 2026 10:20:52 GMT",
-    "Title": "Nigerian newspapers review: Only 6 banks pay N1.27trn dividends despite huge profits - vanguardngr.com",
-    "Source": "vanguardngr.com",
-    "URL": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUGlZbUdPYWE2dHNrX0FqMFNrMXp3UlR2YUZfTlpJc1VrYUdrcWlMdWZ0b01ZZ1g1aVQ4ZDNIODhDY2EtSmI4VHlZdlZqc0xXdFVmM3NZTkFvN1BOell2WGI5elcyNFVxR1pUVWlQSzk4enNlai1LVkliQW5lSlRsd3NpcktRSjBhTXF0SDFBbjdzQkNmdTdBM3dNanFQNk1ybUdrOEFHMmtuSW5CeEhIYk5VWjZhQU9NaTZ3N9IBwgFBVV95cUxOc1RNRXVGV01SXzE4V0ZVdWd6bkFtOGdwOU1uT0ZlWDVfWGpHeWZ6eFBhMjN4SHh6cDN6ZnVub1cxRWQ0TjFfNkhHZ1YxRmdLWW0yLTl5dU9jeklwSXc4Y3RmRzBvVEFrSHF2OE9ESkd4Tk9mNHI1VE95bUt4QzAzczU4RUoyZm9sTE5NZFY2ZWpxVFNSUXdYd3owTXBlMXFoRk5WN3F1eWRyeXJhQWtVNFRyNUw1RWpwR3Y5LVkyaEs0UQ?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Reports indicate that six Nigerian banks have paid dividends totaling N1.27 trillion, following a period of significant profit generation.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3093,
-    "Time": "Mon, 10 Aug 2026 12:48:41 GMT",
-    "Title": "NERC dissolves Kaduna DisCo board, moves to replace core investor - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONVVORnhZMkJCd1dVdk05R0N6djhnemVLbXhrdVhkeGh2NGxQY21YTFVZdDdMaEVvQkFESG1VSTNMR2M4bGtmX3lfb1RnUFdfcURWYmdjT1h3NldTZWwta3VUMnA5RndKQWVjdVVjMzBiTmFMdlJIWHNGOHVZUGtPa2E0REdIM2s2Mmg2S3ZmQjZrVW1xSkN3RjM1UUVCdUk?oc=5",
-    "Category": "Company",
-    "Risk Score": 85,
-    "Summary": "The Nigerian Electricity Regulatory Commission (NERC) has dissolved the board of Kaduna Electricity Distribution Company (Kaduna DisCo) and is taking steps to replace the core investor.",
     "Status": "Unread",
     "Engine": "ollama"
   }
