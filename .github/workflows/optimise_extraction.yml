@@ -107,7 +107,14 @@ jobs:
       # given to the extractor that the PSC register is built from; a change to
       # it is as reviewable as a change to the code that consumes it. An
       # optimiser scoring well on a metric is evidence, not authority.
+      # continue-on-error for the same reason as the backfill workflow: opening
+      # a PR needs "Allow GitHub Actions to create and approve pull requests",
+      # which is off by default. The branch is pushed before the PR attempt, so
+      # a missing permission must not turn a successful optimisation into a red
+      # run that invites somebody to spend the token budget again.
       - name: Open a pull request with the new prompt
+        id: pr
+        continue-on-error: true
         if: steps.changed.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         with:
@@ -120,3 +127,12 @@ jobs:
           body-path: gepa_summary.md
           draft: true
           delete-branch: true
+
+      - name: Report where the prompt ended up
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          if [ "${{ steps.pr.outcome }}" = "success" ]; then
+            echo "::notice::Opened a pull request with the improved prompt."
+          else
+            echo "::warning::Could not open a pull request -- GitHub Actions is not permitted to create them in this repository (Settings > Actions > General > Workflow permissions). The prompt is pushed on branch 'gepa/extraction-prompt'; open a PR from it by hand. Do not merge it without reading the score table."
+          fi
