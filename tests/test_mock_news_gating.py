@@ -10,6 +10,7 @@ newspapers' own domains. Nothing marked them as synthetic, so they were
 analysed, stored, counted in the KPIs and folded into the executive brief
 indistinguishably from real reporting.
 """
+from datetime import datetime, timedelta
 from urllib.parse import urlparse
 
 import pytest
@@ -70,9 +71,13 @@ class TestProductionGating:
     @pytest.fixture
     def thin_fetchers(self, monkeypatch):
         """Every adapter returns almost nothing, as in a real outage."""
+        # Relative to now, not a fixed date: collect_all's 48h freshness gate
+        # would otherwise start silently dropping these as the fixture ages,
+        # leaving every assertion below running against a degenerate list.
+        recent = (datetime.now() - timedelta(hours=2)).isoformat()
         real = [{"title": f"Real story {i}", "url": f"https://real.test/{i}",
                  "source": "Punch", "raw_text": "Dangote Cement Plc announced a "
-                 "change of ownership in Lagos today.", "published_at": "2026-08-11T10:00:00"}
+                 "change of ownership in Lagos today.", "published_at": recent}
                 for i in range(3)]
         monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss",
                             classmethod(lambda cls: list(real)))
@@ -100,6 +105,36 @@ class TestProductionGating:
         assert "Check the source adapters and API keys" in caplog.text
 
     def test_opting_in_restores_the_demo_behaviour(self, thin_fetchers, monkeypatch, caplog):
+        """
+        This tests the wiring -- that SEED_DEMO_ARTICLES=true makes collect_all
+        call generate_mock_news and let its output through -- not whether a
+        randomly generated article happens to survive collect_all's Nigeria and
+        48h filters. That was the bug: real generate_mock_news() output was
+        flaky against those filters (only ~2 of 6 templates mention Nigeria at
+        all, and pub dates spread over 10 days vs. a 48h window), so this test
+        failed about one run in four despite the gating logic being correct.
+        generate_mock_news's own output shape (no real outlet, .invalid URLs,
+        is_synthetic=True) is already exhaustively covered by
+        TestNoFalseAttribution above; stubbing it here isolates what this test
+        is actually responsible for.
+        """
+        now_iso = datetime.now().isoformat()
+
+        def fake_generate_mock_news(cls, count):
+            return [{
+                "title": f"Synthetic Nigeria story {i}",
+                "url": f"https://sample.example.invalid/{i}",
+                "source": SYNTHETIC_SOURCE,
+                "published_at": now_iso,
+                "raw_text": "Synthetic content mentioning Nigeria and Lagos.",
+                "is_rss": False,
+                "is_synthetic": True,
+                "mock_category": "Government",
+                "mock_event_type": "Appointment",
+            } for i in range(count)]
+
+        monkeypatch.setattr(NewsIngestionService, "generate_mock_news",
+                            classmethod(fake_generate_mock_news))
         monkeypatch.setattr(settings, "SEED_DEMO_ARTICLES", True)
         with caplog.at_level("WARNING"):
             result = NewsIngestionService.collect_all()
