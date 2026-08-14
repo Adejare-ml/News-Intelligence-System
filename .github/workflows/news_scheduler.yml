@@ -57,6 +57,7 @@ jobs:
           NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
           NVIDIA_MODEL_FALLBACK: ${{ vars.NVIDIA_MODEL_FALLBACK }}
           SEED_DEMO_PSC: ${{ vars.SEED_DEMO_PSC || 'false' }}
+          SEED_DEMO_ARTICLES: ${{ vars.SEED_DEMO_ARTICLES || 'false' }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: |
