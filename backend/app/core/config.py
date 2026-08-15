@@ -55,7 +55,30 @@ class Settings(BaseSettings):
 
     # Pipeline behavior
     SEED_DEMO_PSC: bool = False
+    # Whether a thin ingestion cycle may be padded with synthetic articles.
+    # Off by default: this used to fire automatically whenever fewer than ten
+    # real articles were collected, i.e. exactly when the fetchers were failing,
+    # putting invented stories into the register and the brief. run_pipeline's
+    # explicit --seed mode is unaffected.
+    SEED_DEMO_ARTICLES: bool = False
     ALLOW_HEURISTIC_FALLBACK: bool = False
+
+    # DSPy extraction.
+    #
+    # Off by default: the typed program is a change to the step every downstream
+    # product is built from, so it is opted into per environment rather than
+    # switched on for everyone by a merge. When on, it runs ahead of the existing
+    # cascade and falls through to it on any failure.
+    USE_DSPY_EXTRACTION: bool = False
+    # Which configured provider DSPy targets. Both are reached over their
+    # OpenAI-compatible endpoints.
+    DSPY_PROVIDER: str = "ollama"  # "ollama" | "nvidia"
+
+    # GEPA optimisation, used only by scripts/optimise_extraction.py -- never by
+    # the scheduled pipeline. GEPA's cost is many LLM calls per candidate, so the
+    # budget is explicit rather than discovered on a bill.
+    GEPA_MAX_METRIC_CALLS: int = 150
+    GEPA_REFLECTION_MODEL: Optional[str] = None
     
     # Embedding Model Name
     EMBEDDING_MODEL_NAME: str = "all-MiniLM-L6-v2"

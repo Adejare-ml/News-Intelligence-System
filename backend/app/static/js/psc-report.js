@@ -57,7 +57,10 @@
         var globeCanvas = el("globe-canvas");
         var globe = null;
         if (globeCanvas && global.AuraGlobe) {
-            globe = global.AuraGlobe.mount(globeCanvas, { speed: 0.085, tilt: 18 });
+            // ~25s per revolution. It was 0.085 rad/s, which is a full turn
+            // every 74 seconds -- technically spinning, but slow enough that
+            // the globe reads as a static image.
+            globe = global.AuraGlobe.mount(globeCanvas, { speed: 0.25, tilt: 18 });
             if (globe) {
                 handles.push({
                     pause: function (p) { if (globe.isPaused() !== p) globe.toggle(); }

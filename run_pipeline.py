@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import random
 import logging
 import argparse
 from datetime import datetime, timedelta
@@ -26,6 +27,7 @@ logger = logging.getLogger("run_pipeline")
 from backend.app.core.config import settings
 from backend.app.services.ingestion import NewsIngestionService
 from backend.app.services.llm import LLMService, LLMCascadeError
+from backend.app.services import relevance
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -37,27 +39,15 @@ MAX_CONSECUTIVE_LLM_FAILURES = 3
 # Publications are the source of an article, not participants in it. Models
 # still surface them as organizations often enough to pollute the knowledge
 # graph, so they are dropped defensively as well as discouraged in the prompt.
-NEWS_OUTLET_MARKERS = (
-    "guardian", "premium times", "punch", "vanguard", "daily post", "dailypost",
-    "thisday", "this day", "nairametrics", "channels tv", "channels television",
-    "leadership newspaper", "the nation", "businessday", "business day", "tribune",
-    "sahara reporters", "peoples gazette", "the cable", "thecable", "legit.ng",
-    "reuters", "bloomberg", "associated press", "al jazeera", "bbc", "cnn",
+# The publication / page-furniture guard lives in services.relevance with the
+# other deterministic guards, so it can be reused without importing this module
+# and its LLM and spaCy dependencies. Re-exported here because callers and
+# tests/test_entity_filter.py import it from run_pipeline.
+from backend.app.services.relevance import (  # noqa: E402  (re-export)
+    NEWS_OUTLET_MARKERS,
+    NON_ENTITY_TERMS,
+    is_publication_or_furniture,
 )
-
-# Navigation furniture scraped from article pages.
-NON_ENTITY_TERMS = {
-    "archives", "archive", "home", "newsletter", "advertisement", "sponsored",
-    "read more", "subscribe", "latest news", "breaking news", "news",
-}
-
-
-def is_publication_or_furniture(name: str) -> bool:
-    """True when an extracted organization is really the publication or page chrome."""
-    cleaned = " ".join((name or "").replace("\xa0", " ").split()).lower()
-    if not cleaned or cleaned in NON_ENTITY_TERMS:
-        return True
-    return any(marker in cleaned for marker in NEWS_OUTLET_MARKERS)
 
 
 # Nigerian PSC disclosure bands.
@@ -73,6 +63,39 @@ SHARE_BANDS = (
     (25.0, "BAND_25_50"),
     (5.0, "BAND_5_25"),
 )
+
+
+EVAL_CORPUS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "evals", "corpus")
+# One in this many analysed articles is kept as a candidate for labelling.
+EVAL_CAPTURE_RATE = int(os.environ.get("EVAL_CAPTURE_RATE", "10"))
+
+
+def capture_eval_input(title: str, article_text: str, url: str, source: str) -> None:
+    """
+    Append a sampled extractor input to the eval corpus.
+
+    Best-effort by design: this exists to make a gold set buildable, and losing
+    a sample matters far less than failing an ingestion run over it. Any error
+    is logged and swallowed.
+    """
+    if EVAL_CAPTURE_RATE <= 0:
+        return
+    try:
+        if random.randint(1, EVAL_CAPTURE_RATE) != 1:
+            return
+        os.makedirs(EVAL_CORPUS_DIR, exist_ok=True)
+        path = os.path.join(EVAL_CORPUS_DIR, f"{datetime.now().strftime('%Y%m')}.jsonl")
+        record = {
+            "title": title,
+            "article_text": article_text,
+            "url": url,
+            "source": source,
+            "captured_at": datetime.now().isoformat(timespec="seconds"),
+        }
+        with open(path, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.debug("Could not capture eval input for '%s': %s", title, exc)
 
 
 def share_band(percentage: Any) -> str:
@@ -148,14 +171,25 @@ def run_pipeline(seed: bool = False):
     # --- REDUNDANCY BUFFER ---
     new_candidates = [item for item in candidates if item.get("url") not in existing_urls]
     if not new_candidates:
-        logger.info("Redundancy Buffer: No new articles found. Skipping LLM execution to save quota.")
+        if not candidates:
+            # Nothing was fetched at all -- this is an outage, not a quiet
+            # day. collect_all() already logged why at WARNING; this is about
+            # what the durable Daily Reports record says happened. Since
+            # production padding became opt-in, a total fetcher outage lands
+            # here instead of being masked by 25 synthetic articles, so this
+            # branch must not describe it as "no significant change".
+            logger.warning("No candidate articles were fetched this cycle -- recording it as an outage.")
+            generated_message = "No articles were fetched this cycle. Check the source adapters and API keys."
+        else:
+            logger.info("Redundancy Buffer: No new articles found. Skipping LLM execution to save quota.")
+            generated_message = "No significant change. Script was run at this specific time."
         db._append_row("Daily Reports", {
             "Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "Total Articles": 0,
             "High Risk": 0,
             "Appointments": 0,
             "Procurement": 0,
-            "Generated": "No significant change. Script was run at this specific time."
+            "Generated": generated_message
         })
         return
         
@@ -180,6 +214,13 @@ def run_pipeline(seed: bool = False):
         from backend.app.services.nlp_pipeline import NLPPipelineService
         cleaned_text = NLPPipelineService.clean_html(text)
 
+        # Keep a sample of the extractor's *inputs*. Everything written to the
+        # sheet is model output -- Title, Summary, Category -- so there was no
+        # way to build a labelled set from the archive: the article body, which
+        # is the input the extractor is judged on, was discarded after analysis.
+        # Sampled rather than exhaustive because this is committed to the repo.
+        capture_eval_input(title, cleaned_text, url, source)
+
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
         try:
@@ -197,9 +238,25 @@ def run_pipeline(seed: bool = False):
             continue
         consecutive_failures = 0
 
-        # Relevance filter check (strictly keep corporate, policy, and procurement news)
-        if not analysis.get("relevant", True):
-            logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
+        # Relevance filter check (strictly keep corporate, policy, and procurement news).
+        #
+        # Two changes from the original single-boolean check:
+        #
+        # 1. The default is now False. `analysis.get("relevant", True)` meant a
+        #    response missing the key was published — a filter that fails open.
+        # 2. A deterministic topic guard runs behind the model. The model is
+        #    told to reject sport and celebrity stories and mostly does, but
+        #    when it does not, the result is a football transfer published at
+        #    risk 40 under category "Company". The guard overrides it.
+        off_topic = relevance.off_topic_reason(title, analysis.get("summary_executive"))
+        if not analysis.get("relevant", False) or off_topic:
+            if off_topic:
+                logger.info(
+                    f"Topic guard rejected '{title}' as {off_topic.topic} "
+                    f"(matched: {', '.join(off_topic.matched)})"
+                )
+            else:
+                logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
             db.add_article({
                 "ID": "",
                 "Time": item.get("published_at") or datetime.now().isoformat(),
@@ -541,15 +598,56 @@ def export_static_json_database():
                 pass
 
     # Sort chronological (newest first, excluding non-relevant filtered articles)
-    articles_sorted = [a for a in reversed(articles) if a.get("Status") != "Filtered"][:60]
-    
+    #
+    # The topic guard is re-applied here, not just at ingestion, because the
+    # database still holds records written before the LLM cascade was enforced
+    # — every row with an empty Engine column. Those never passed any relevance
+    # check, and among them were a football transfer, a match report and a
+    # celebrity wedding, all carrying real risk scores. Filtering on export is
+    # non-destructive: the rows stay in the sheet as the audit record, they
+    # just stop being published as intelligence.
+    published = []
+    suppressed = []
+    for a in reversed(articles):
+        if a.get("Status") == "Filtered":
+            continue
+        reason = relevance.off_topic_reason(a.get("Title"), a.get("Summary"))
+        if reason:
+            suppressed.append((a.get("Title"), reason))
+            continue
+        published.append(a)
+        if len(published) >= 60:
+            break
+
+    if suppressed:
+        logger.warning(
+            f"Topic guard suppressed {len(suppressed)} stored article(s) from the "
+            "published feed (they remain in the database):"
+        )
+        for stored_title, reason in suppressed[:20]:
+            logger.warning(f"  [{reason.topic}] {stored_title}")
+
+    articles_sorted = published
+
+    # Entities extracted from those same articles are filtered too. The company
+    # table had accumulated "Premier League", "Serie A", "BBNaija" and
+    # "FIFA World Cup" as tracked corporate entities, and they flowed into the
+    # knowledge graph as company and agency nodes.
+    companies = [c for c in companies if not relevance.is_off_topic(c.get("Company"))]
+    agencies = [a for a in agencies if not relevance.is_off_topic(a.get("Agency"))]
+    people = [
+        p for p in people
+        if not relevance.is_off_topic(p.get("Organization"))
+        and not relevance.is_off_topic(p.get("Name"))
+    ]
+
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
         json.dump(articles_sorted, f, default=str, indent=2)
-        
+
     with open(os.path.join(DATA_DIR, "companies.json"), "w", encoding="utf-8") as f:
         json.dump(companies, f, default=str, indent=2)
-        
+
     with open(os.path.join(DATA_DIR, "people.json"), "w", encoding="utf-8") as f:
         json.dump(people, f, default=str, indent=2)
         
