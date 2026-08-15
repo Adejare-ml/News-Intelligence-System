@@ -55,12 +55,6 @@
       "risk": "Critical"
     },
     {
-      "id": "57bd7dd91f82",
-      "label": "BBNaija Season 11",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a685a83332f1",
       "label": "Premium Times Nigeria",
       "type": "company",
@@ -117,6 +111,12 @@
     {
       "id": "2ca63cddd54f",
       "label": "House",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "8452a010d232",
+      "label": "UBA Business Series",
       "type": "company",
       "risk": "Low"
     },
@@ -433,6 +433,18 @@
       "risk": "Medium"
     },
     {
+      "id": "c0f6baef22e7",
+      "label": "First HoldCo",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "c23cf0c11158",
+      "label": "FirstHoldCo",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "0c68c2daa033",
       "label": "BPP",
       "type": "agency",
@@ -544,6 +556,18 @@
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "d2ef98443ec4",
+      "label": "GIZ Nigeria & ECOWAS",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
       "risk": "Low"
     }
   ],
@@ -729,6 +753,18 @@
       "label": "PSC: 12.4%"
     },
     {
+      "id": "0cd3b636ebc8",
+      "from": "6617740c0c1a",
+      "to": "c0f6baef22e7",
+      "label": "Significant influence or control"
+    },
+    {
+      "id": "ee173444ce0d",
+      "from": "6617740c0c1a",
+      "to": "c23cf0c11158",
+      "label": "Significant influence or control"
+    },
+    {
       "id": "2f75d17a49f0",
       "from": "498d3c6bfa03",
       "to": "0c68c2daa033",
@@ -828,6 +864,18 @@
       "id": "443f6e5e7f92",
       "from": "334c4a4c42fd",
       "to": "8a7b7af09965",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "2982c0deb9ea",
+      "from": "334c4a4c42fd",
+      "to": "d2ef98443ec4",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "28b1db6062df",
+      "from": "334c4a4c42fd",
+      "to": "9aef00190386",
       "label": "Contract Awardee"
     }
   ]
