@@ -1,5 +1,41 @@
 [
   {
+    "ID": 3630,
+    "Time": "Sat, 15 Aug 2026 03:54:00 GMT",
+    "Title": "Energy consultants retract call for Ojulari\u2019s removal - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWXd1aWNvbUVxT0JPZTN3UzBhVzJRa3A1cVFMV004NzNWSWg2bE50TjVRbThOZHgtZS1iY1Nfc1Y3Qm80a2x5eUdzZy14X254eXJFSmdmcC01WFRnTEtTT1hNVUdWdzY2Ty0tSTVfWm1EVXdVV0RzTVVWcGNjd01OX0RSME5sZHM?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Energy consultants have retracted a previous demand for the removal of Ojulari from his position.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3629,
+    "Time": "Sat, 15 Aug 2026 12:42:36 GMT",
+    "Title": "Zamfara HSMB inspects Gusau General Hospital for full automation - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUXBaSFowN1JLVzlUY2x1MDg5V1BSWEVuTXlVOGlVYWNaSVR6OHNfSkJNT3g1R0wydElhZWl3aHFqOVUwaTd6V3JlRzZHd1RuX29Ga2kwamtOS3hzZ2ZRM3RTamMyaERCR1cwMEpLQWwxYWIzLUJfWUVfV0tVUnJkSXNMLXFFRmhpV2VsdTJRX09XV2ZU?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Zamfara Health Services Management Board (HSMB) conducted an inspection of Gusau General Hospital to facilitate full automation of its services.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3627,
+    "Time": "Sat, 15 Aug 2026 11:51:00 GMT",
+    "Title": "Apapa customs records N323b revenue in July, credits reforms, forex stability - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUTJXU0xXQV9SX1lraGtWUHFnVmJDaU5sTGQwY2pmZHUxUU1GbE5MN0YwNFZiSU9hSDJMWXhidlZVeUlTYWxtdWY1cElBanBjdTBDWU1uSVVpWXdUeGVGazAyVS1KX0ZfVHNGOFJUTkNRSVdGZnV6QXBhYnVaNnJPdi1wZzg5TUdMLW8ybnJ3U1pSVzNVVEI4ODZvRkhpdW5NRnRz?oc=5",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The Apapa customs command recorded a revenue of N323 billion for the month of July, attributing the performance to policy reforms and foreign exchange stability.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 3612,
     "Time": "Sat, 15 Aug 2026 09:41:06 GMT",
     "Title": "EFCC arraigns man for N56.5 million Hajj fraud - Premium Times Nigeria",
@@ -682,41 +718,5 @@
     "Summary": "The National Office For Technology Acquisition And Promotion (NOTAP) invites pre-qualification, tender, and expression of interest for its 2026 constituency and zonal intervention projects.",
     "Status": "Unread",
     "Engine": "nvidia"
-  },
-  {
-    "ID": 3417,
-    "Time": "2026-08-12 20:15:03",
-    "Title": "Appeal Court affirms Prof Gombe as national leader of SDP",
-    "Source": "naijaonpoint_ng",
-    "URL": "https://naijaonpoint.com.ng/appeal-court-affirms-prof-gombe-as-national-leader-of-sdp/",
-    "Category": "Legal",
-    "Risk Score": 20,
-    "Summary": "The Appeal Court has affirmed Prof Gombe as the national leader of the Social Democratic Party (SDP).",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3411,
-    "Time": "2026-08-12T00:53:45Z",
-    "Title": "Tinubu unveils framework to unlock $50bn offshore investment",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/tinubu-unveils-framework-to-unlock-50bn-offshore-investment/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "President Bola Tinubu has approved a new regulatory framework for foreign investments in Nigeria's deep offshore oil and gas fields. The reforms aim to attract $50 billion in investment by simplifying the investment process for foreign companies.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3403,
-    "Time": "Thu, 13 Aug 2026 03:22:19 GMT",
-    "Title": "Caverton group reduces Q2 loss, grows revenue by 41% - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQQ3hieG1IQ3pRd0pDaFNNcmQwNzVsRHdGczBhemcyZFJzNFdOYk94MTVxdXNHdjN5c1hJVW4wR19ZTmliUUxodE9MNnJrZzh3Qm03Q3NFYWpZZGh1OHhMTDhUS3ZUTE9TdGs3M0VVb3NxQzdEeVFvUUh6bmNlN3lQUHBKeElHWWRGMGpXQUhrT3BQRTQ?oc=5",
-    "Category": "Company",
-    "Risk Score": 10,
-    "Summary": "Caverton Group reports a 41% increase in revenue for the second quarter, alongside a reduction in overall losses.",
-    "Status": "Unread",
-    "Engine": "ollama"
   }
 ]
