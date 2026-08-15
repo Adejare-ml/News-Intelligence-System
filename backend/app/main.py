@@ -110,14 +110,23 @@ def init_db():
             else:
                 logger.warning("No users exist and ADMIN_SEED_PASSWORD is not set - skipping admin seeding.")
             
-        # Check if articles are empty, seed mock news
+        # Check if articles are empty, seed mock news. Same gate as
+        # collect_all() in ingestion.py: seeding synthetic articles is an
+        # explicit opt-in, not something that happens just because a fresh
+        # database happens to be empty.
         if db.query(Article).count() == 0:
-            logger.info("Seeding initial mock articles for intelligence dashboard...")
-            # We bypass celery delay and run synchronously during setup to ensure dashboard loads correctly
-            mock_articles = NewsIngestionService.generate_mock_news(30)
-            for art in mock_articles:
-                process_article_task(art)
-            logger.info("Database successfully seeded with mock intelligence data.")
+            if settings.SEED_DEMO_ARTICLES:
+                logger.info("Seeding initial mock articles for intelligence dashboard...")
+                # We bypass celery delay and run synchronously during setup to ensure dashboard loads correctly
+                mock_articles = NewsIngestionService.generate_mock_news(30)
+                for art in mock_articles:
+                    process_article_task(art)
+                logger.info("Database successfully seeded with mock intelligence data.")
+            else:
+                logger.info(
+                    "No articles in the database and SEED_DEMO_ARTICLES is off -- "
+                    "leaving it empty rather than seeding synthetic data."
+                )
             
     except Exception as e:
         logger.error(f"Error during database initialization: {e}", exc_info=True)

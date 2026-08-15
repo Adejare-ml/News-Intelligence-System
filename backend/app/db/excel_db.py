@@ -394,8 +394,40 @@ class SheetsDatabase:
     def get_significant_control(self) -> List[Dict[str, Any]]:
         return self._read_sheet("Significant Control")
 
+    # The fields that identify a disclosure rather than describe it. Two rows
+    # agreeing on all of these are the same disclosure reported twice, not two
+    # findings: the pipeline appends a row per extraction, so one disclosure
+    # picked up from two articles in the same cycle landed twice. The register
+    # carried an exact duplicate pair from 2026-08-05 for this reason, and the
+    # cross-entity red flag then counted rows and reported a holder as
+    # controlling four companies when it was two.
+    #
+    # Date is part of the key deliberately. The same holding reported again a
+    # week later is a fresh sighting worth keeping; the same holding reported
+    # twice in one day is bookkeeping.
+    _PSC_IDENTITY = ("Person Name", "Company", "Nature of Control", "Percentage", "Date")
+
+    @staticmethod
+    def _psc_key(psc: Dict[str, Any]) -> tuple:
+        return tuple(str(psc.get(f) or "").strip().lower() for f in SheetsDatabase._PSC_IDENTITY)
+
     def add_significant_control(self, psc: Dict[str, Any]):
         psc["Date"] = psc.get("Date") or datetime.now().strftime("%Y-%m-%d")
+
+        # Reads come from the in-memory cache, which _append_row keeps current,
+        # so this also catches duplicates written earlier in the same run --
+        # which is where the observed pair came from. If the read fails the
+        # cache is empty and the row is written: a duplicate is recoverable, a
+        # dropped disclosure is not.
+        key = self._psc_key(psc)
+        for existing in self.get_significant_control():
+            if self._psc_key(existing) == key:
+                logger.info(
+                    "Skipping duplicate significant-control row for %s / %s on %s",
+                    psc.get("Person Name"), psc.get("Company"), psc.get("Date"),
+                )
+                return
+
         self._append_row("Significant Control", psc)
 
     def get_daily_reports(self) -> List[Dict[str, Any]]:

@@ -282,6 +282,71 @@
         });
     });
 
+    T.describe("Cross-entity portfolio counts companies, not rows", function () {
+        // The register appends a row per extraction, so the same disclosure
+        // lands twice whenever two articles report it. Anything reasoning
+        // about a portfolio has to collapse that.
+
+        // The real shape of the live register on 2026-08-10: four rows for one
+        // holder, two of them byte-identical, across two companies.
+        var LIVE_SHAPE = [
+            { "Person Name": "Femi Otedola", Company: "Geregu Power Plc" },
+            { "Person Name": "Femi Otedola", Company: "First HoldCo" },
+            { "Person Name": "Femi Otedola", Company: "First HoldCo" },
+            { "Person Name": "Femi Otedola", Company: "First HoldCo" }
+        ];
+
+        T.it("reports the number of companies, not the number of rows", function () {
+            var ctx = P.buildContext(LIVE_SHAPE);
+            T.eq(P.companiesFor(LIVE_SHAPE[0], ctx).length, 2, "four rows, two companies");
+            var flag = P.redFlagsFor(LIVE_SHAPE[0], ctx)
+                .filter(function (f) { return f.id === "R12_CROSS_ENTITY"; })[0];
+            T.ok(flag, "two companies is still a cross-entity portfolio");
+            T.contains(flag.detail, "in 2 tracked companies");
+            T.excludes(flag.detail, "in 4 tracked companies", "row count must not reach the badge");
+        });
+
+        T.it("does not flag duplicate rows against a single company", function () {
+            var dupes = [
+                { "Person Name": "A", Company: "Solo Plc" },
+                { "Person Name": "A", Company: "Solo Plc" }
+            ];
+            var ctx = P.buildContext(dupes);
+            T.eq(P.companiesFor(dupes[0], ctx).length, 1);
+            T.notOk(P.redFlagsFor(dupes[0], ctx).some(function (f) { return f.id === "R12_CROSS_ENTITY"; }),
+                "the same company twice is paperwork, not a cross-holding");
+        });
+
+        T.it("matches company names regardless of case and surrounding space", function () {
+            var recs = [
+                { "Person Name": "A", Company: "Zenith Bank Plc" },
+                { "Person Name": "A", Company: "  zenith bank plc  " }
+            ];
+            T.eq(P.companiesFor(recs[0], P.buildContext(recs)).length, 1);
+        });
+
+        T.it("ignores rows with no company rather than counting them", function () {
+            var recs = [
+                { "Person Name": "A", Company: "Real Plc" },
+                { "Person Name": "A", Company: "" },
+                { "Person Name": "A" }
+            ];
+            T.eq(P.companiesFor(recs[0], P.buildContext(recs)).length, 1);
+        });
+
+        T.it("still flags a genuine multi-company holder", function () {
+            var recs = [
+                { "Person Name": "A", Company: "One Plc" },
+                { "Person Name": "A", Company: "Two Plc" },
+                { "Person Name": "A", Company: "Three Plc" }
+            ];
+            var flag = P.redFlagsFor(recs[0], P.buildContext(recs))
+                .filter(function (f) { return f.id === "R12_CROSS_ENTITY"; })[0];
+            T.ok(flag);
+            T.contains(flag.detail, "in 3 tracked companies");
+        });
+    });
+
     T.describe("Empty-state attribution", function () {
         T.it("reports a failed load as a failed load, never as a filter result", function () {
             var s = P.emptyStateFor({ loadState: "error", error: "404 Not Found", totalRecords: 0 });

@@ -4,21 +4,29 @@ import random
 import re
 import html
 from datetime import datetime, timedelta
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from backend.app.core.config import settings
 import logging
 
 logger = logging.getLogger(__name__)
 
 # Mock Data Templates to seed a highly interactive, rich knowledge database
+# The byline on every generated article. Deliberately not a real masthead, and
+# deliberately self-describing, because it is what the Source column shows in
+# the dashboard, the article modal and the CSV export.
+SYNTHETIC_SOURCE = "AURA SAMPLE (synthetic, not real reporting)"
+
 MOCK_COMPANIES = [
     "Apex Technology Group", "Vertex Financials", "Nova Energy Corp", 
     "AeroSpace International", "BioSphere Healthcare", "Summit Holdings"
 ]
+# Fictional, deliberately -- the masthead fix above is pointless if a
+# generated story instead asserts a fabricated investigation or sanction
+# against a real regulator. None of these are real bodies.
 MOCK_AGENCIES = [
-    "Public Service Commission", "Federal Trade Commission", 
-    "Department of Justice", "Securities and Exchange Commission",
-    "Environmental Protection Agency"
+    "Bureau of Civil Appointments", "National Standards and Trade Bureau",
+    "Office of Public Integrity", "National Markets Oversight Authority",
+    "National Environmental Compliance Bureau"
 ]
 MOCK_PEOPLE = [
     "Sarah Jenkins", "Robert Chen", "Alice Vance", 
@@ -36,7 +44,7 @@ MOCK_NEWS_TEMPLATES = [
         "event_type": "Appointment",
         "risk_level": "Low",
         "sentiment": "Neutral",
-        "template_text": "The Federal Government of Nigeria today announced the appointment of {person} as the new Permanent Secretary of the {agency}. The appointment, which takes immediate effect, was confirmed in a statement signed by the Chairman of the Public Service Commission. {person} succeeds the outgoing secretary who retired last month. Stakeholders have expressed optimism that {person}'s wealth of experience will drive efficiency in the {agency}."
+        "template_text": "The Federal Government of Nigeria today announced the appointment of {person} as the new Permanent Secretary of the {agency}. The appointment, which takes immediate effect, was confirmed in a statement signed by the Chairman of the Bureau of Civil Appointments. {person} succeeds the outgoing secretary who retired last month. Stakeholders have expressed optimism that {person}'s wealth of experience will drive efficiency in the {agency}."
     },
     {
         "headline": "{company} board names {person} as new Chief Executive Officer",
@@ -47,12 +55,12 @@ MOCK_NEWS_TEMPLATES = [
         "template_text": "The board of directors of {company} has officially announced the appointment of {person} as the company's new Chief Executive Officer (CEO). {person}, who previously served as Managing Director at a rival firm, will assume the role on the first of next month. The board expressed absolute confidence in {person}'s capability to steer the company through its next phase of global expansion and technological transformation."
     },
     {
-        "headline": "SEC Launches Investigation into {company} over Compliance Issues",
+        "headline": "NMOA Launches Investigation into {company} over Compliance Issues",
         "category": "Legal",
         "event_type": "Investigation",
         "risk_level": "High",
         "sentiment": "Negative",
-        "template_text": "The Securities and Exchange Commission (SEC) has initiated a formal investigation into the financial reporting standards of {company}. According to sources close to the regulatory body, the inquiry centers on potential compliance issues and accounting discrepancies flagged during an external audit. Shares of {company} fell by 4.5% following the announcement, as investors await a formal statement from the board."
+        "template_text": "The National Markets Oversight Authority (NMOA) has initiated a formal investigation into the financial reporting standards of {company}. According to sources close to the regulatory body, the inquiry centers on potential compliance issues and accounting discrepancies flagged during an external audit. Shares of {company} fell by 4.5% following the announcement, as investors await a formal statement from the board."
     },
     {
         "headline": "{company} Announces Successful Acquisition of {company_target} for $2.4B",
@@ -80,12 +88,27 @@ MOCK_NEWS_TEMPLATES = [
     }
 ]
 
-def parse_feed_date(date_str: str) -> datetime:
-    """Helper to parse feed publication date string into a datetime object."""
+def parse_feed_date(date_str: str) -> Optional[datetime]:
+    """
+    Parse a feed publication date, or return None when it cannot be established.
+
+    This used to fall back to datetime.now() on every failure, which made an
+    article of unknown age indistinguishable from one published this minute.
+    The consequence was not cosmetic: the only caller is the 48-hour freshness
+    gate, and now() is always inside a window ending at now(), so every article
+    with a missing or unrecognised date passed the filter unconditionally and
+    then sorted to the top of a feed ordered newest-first. An undated story was
+    presented as breaking news.
+
+    None means "not known". Callers decide what to do about that; they must not
+    be handed a fabricated timestamp that reads as fact.
+    """
     if not date_str:
-        return datetime.now()
-    
-    date_clean = date_str.replace("Z", "").strip()
+        return None
+
+    date_clean = str(date_str).replace("Z", "").strip()
+    if not date_clean:
+        return None
     
     formats = [
         "%Y-%m-%dT%H:%M:%S",
@@ -110,8 +133,8 @@ def parse_feed_date(date_str: str) -> datetime:
         return parsedate_to_datetime(date_str).replace(tzinfo=None)
     except Exception:
         pass
-        
-    return datetime.now()
+
+    return None
 
 # Whole-title matches only. Substring matching would be wrong here: "register"
 # alone is chrome, but "PSC register" and "beneficial ownership register" are
@@ -268,7 +291,10 @@ class NewsIngestionService:
                         "title": clean_title,
                         "url": entry.link,
                         "source": entry.source.title if hasattr(entry, 'source') else "Google News",
-                        "published_at": entry.published if hasattr(entry, 'published') else datetime.now().isoformat(),
+                        # Empty, not now(): an entry that omits a date has an
+                        # unknown one, and the 48h filter excludes and logs it
+                        # rather than treating this moment as its publication.
+                        "published_at": entry.published if hasattr(entry, 'published') else "",
                         "raw_text": clean_summary,
                         "is_rss": True
                     })
@@ -432,14 +458,26 @@ class NewsIngestionService:
             # Random date
             pub_date = base_date - timedelta(days=random.randint(0, 10), hours=random.randint(0, 23))
             
-            # Sources
-            src = random.choice(["Reuters Intelligence", "Bloomberg Business", "Financial Times News", "Wall Street Journal"])
-            
-            # Create a unique-looking URL
+            # These used to be attributed to Reuters, Bloomberg, the Financial
+            # Times and the Wall Street Journal, with URLs on those newspapers'
+            # own domains. Invented stories carrying a real masthead is not a
+            # thing to generate under any circumstances, demo or not, and the
+            # byline survived into the sheet and the executive brief with
+            # nothing marking it as synthetic.
+            #
+            # The name now says what the row is everywhere Source is displayed,
+            # which is the cheapest durable marker: it travels into the feed,
+            # the article modal and the CSV export without any of them needing
+            # to know about seeding.
+            src = SYNTHETIC_SOURCE
+
+            # .invalid is reserved by RFC 2606 and can never resolve, so a
+            # generated link cannot be mistaken for a citation or accidentally
+            # followed to somebody's real article.
             slug = headline.lower().replace(" ", "-").replace("$", "").replace(".", "")
             slug = re.sub(r'[^a-z0-9\-]', '', slug)
-            url = f"https://www.{src.lower().replace(' ', '')}.com/articles/{pub_date.strftime('%Y/%m/%d')}/{slug}"
-            
+            url = f"https://sample.example.invalid/{pub_date.strftime('%Y/%m/%d')}/{slug}"
+
             articles.append({
                 "title": headline,
                 "url": url,
@@ -447,6 +485,7 @@ class NewsIngestionService:
                 "published_at": pub_date.isoformat(),
                 "raw_text": text,
                 "is_rss": False,
+                "is_synthetic": True,
                 "mock_category": template["category"],
                 "mock_event_type": template["event_type"]
             })
@@ -468,10 +507,30 @@ class NewsIngestionService:
         all_articles.extend(cls.fetch_guardian_news())
         all_articles.extend(cls.fetch_newsdata_io())
         
-        # 3. If we don't have enough articles or for demo seed support, add mock news
+        # 3. Padding a thin cycle with invented articles is opt-in.
+        #
+        # This used to fire unconditionally below ten articles -- which is
+        # precisely when the fetchers are struggling: a rate-limited API, an
+        # expired key, a degraded network. On exactly those days 25 fabricated
+        # stories were analysed, written to the sheet, counted in the KPIs and
+        # folded into the executive brief.
+        #
+        # A quiet news day, or a broken fetcher, is a fact the brief should
+        # reflect. Padding it is the system asserting something it does not
+        # know. Same reasoning as SEED_DEMO_PSC, and the same default.
         if len(all_articles) < 10:
-            mock_articles = cls.generate_mock_news(25)
-            all_articles.extend(mock_articles)
+            if settings.SEED_DEMO_ARTICLES:
+                logger.warning(
+                    "Only %d real article(s) collected; SEED_DEMO_ARTICLES is on, so "
+                    "adding synthetic samples marked '%s'.", len(all_articles), SYNTHETIC_SOURCE
+                )
+                all_articles.extend(cls.generate_mock_news(25))
+            else:
+                logger.warning(
+                    "Only %d real article(s) collected this cycle. Continuing with what "
+                    "is real rather than padding. Check the source adapters and API keys "
+                    "if this persists.", len(all_articles)
+                )
             
         # Post-ingestion strict Nigeria filter
         # Drop site chrome before anything else. Scoping searches to gov.ng and
@@ -508,7 +567,11 @@ class NewsIngestionService:
                 "nnpc" in title_lower or "nnpc" in text_lower or
                 "efcc" in title_lower or "efcc" in text_lower or
                 "cbn" in title_lower or "cbn" in text_lower or
-                "firs" in title_lower or "firs" in text_lower or
+                # Word-boundary, not substring: "firs" as a bare substring
+                # matches "first", "firstly", "First HoldCo" -- anything
+                # containing the English word "first" would otherwise pass
+                # as a Nigeria match via the FIRS acronym.
+                re.search(r"\bfirs\b", title_lower) or re.search(r"\bfirs\b", text_lower) or
                 "nimasa" in title_lower or "nimasa" in text_lower or
                 "fgn" in title_lower or "fgn" in text_lower
             )
@@ -516,13 +579,34 @@ class NewsIngestionService:
                 nigerian_filtered.append(art)
                 
         # 4. Limit to last 48 hours
+        #
+        # An article whose date cannot be established is excluded rather than
+        # admitted: this filter's whole claim is "published within 48 hours",
+        # and that cannot be asserted about a date we could not read. The old
+        # fallback to now() made every such article pass, then float to the top
+        # of a newest-first feed.
+        #
+        # Excluded ones are counted and logged, because dropping coverage
+        # silently would only move the dishonesty rather than remove it. A
+        # rising count here means a feed changed its date format.
         limit_date = datetime.now() - timedelta(hours=48)
         time_filtered = []
+        undated = 0
         for art in nigerian_filtered:
             pub_date = parse_feed_date(art.get("published_at"))
+            if pub_date is None:
+                undated += 1
+                continue
             if pub_date >= limit_date:
                 time_filtered.append(art)
-                
+
+        if undated:
+            logger.warning(
+                "Excluded %d article(s) with an unreadable publication date from the 48h window; "
+                "if this is climbing, a source changed its date format.", undated
+            )
+
+
         # 5. Fuzzy Title Deduplication
         distinct_articles = cls.fuzzy_deduplicate_articles(time_filtered)
         

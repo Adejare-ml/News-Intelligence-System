@@ -1,0 +1,138 @@
+name: Optimise extraction prompt (GEPA)
+
+# Weekly, not per-cycle. GEPA spends many LLM calls per candidate instruction,
+# so it has no business anywhere near the four-times-daily ingestion run.
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Mondays, 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      max_metric_calls:
+        description: "Budget in metric calls (lower = cheaper, use a small number for a dry run)"
+        required: false
+        default: "150"
+
+# Its own group. Sharing one with news-pipeline would let an optimisation run
+# block or be blocked by ingestion, which is the job that actually matters.
+concurrency:
+  group: extraction-optimisation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  optimise:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Nothing to optimise is a normal state, not a failure.
+      #
+      # The gold set is built by hand and does not exist yet, so without this
+      # the weekly schedule would go red every Monday until somebody finishes
+      # labelling. A workflow that cries wolf on a timer is worse than no
+      # workflow: it trains people to ignore a red run, which is the exact
+      # failure the alerting on news_scheduler.yml exists to prevent.
+      #
+      # The distinction kept here is between "there is nothing to do" and
+      # "something is wrong". Only the second is a failure.
+      - name: Is there a gold set yet?
+        id: gold
+        run: |
+          if [ ! -s evals/extraction_gold.jsonl ]; then
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No gold set yet -- nothing to optimise. See evals/README.md."
+          else
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Python
+        if: steps.gold.outputs.present == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # Gated too: without a gold set this job does nothing, and installing
+      # requirements.txt to do nothing means downloading torch and the CUDA
+      # wheels every Monday for no reason.
+      - name: Install dependencies
+        if: steps.gold.outputs.present == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Before spending any tokens. A label that breaks the rules the metric
+      # enforces does not just score badly -- it teaches GEPA to break them, and
+      # the mistake ends up in the prompt behind the PSC register. Also fails
+      # when too few records have been signed off, so a file of uncorrected
+      # drafts stops the run here rather than producing a meaningless score.
+      #
+      # This one IS allowed to fail: once a gold set exists, a broken one is a
+      # real problem.
+      - name: Validate the gold set
+        if: steps.gold.outputs.present == 'true'
+        run: python scripts/validate_gold.py --require-verified 10
+
+      - name: Run GEPA
+        id: gepa
+        if: steps.gold.outputs.present == 'true'
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+          DSPY_PROVIDER: ${{ vars.DSPY_PROVIDER || 'ollama' }}
+          GEPA_REFLECTION_MODEL: ${{ vars.GEPA_REFLECTION_MODEL }}
+        run: |
+          python scripts/optimise_extraction.py \
+            --max-metric-calls "${{ github.event.inputs.max_metric_calls || '150' }}" \
+            --summary-out gepa_summary.md
+
+      - name: Check whether the artifact actually changed
+        id: changed
+        if: steps.gold.outputs.present == 'true'
+        run: |
+          if git diff --quiet -- backend/app/services/prompts/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No improvement over the incumbent; nothing to propose."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Deliberately a PR and never a direct push. This file is the instruction
+      # given to the extractor that the PSC register is built from; a change to
+      # it is as reviewable as a change to the code that consumes it. An
+      # optimiser scoring well on a metric is evidence, not authority.
+      # continue-on-error for the same reason as the backfill workflow: opening
+      # a PR needs "Allow GitHub Actions to create and approve pull requests",
+      # which is off by default. The branch is pushed before the PR attempt, so
+      # a missing permission must not turn a successful optimisation into a red
+      # run that invites somebody to spend the token budget again.
+      - name: Open a pull request with the new prompt
+        id: pr
+        continue-on-error: true
+        if: steps.changed.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gepa/extraction-prompt
+          base: main
+          add-paths: backend/app/services/prompts/
+          commit-message: "Update GEPA-optimised extraction prompt"
+          title: "Update GEPA-optimised extraction prompt"
+          body-path: gepa_summary.md
+          draft: true
+          delete-branch: true
+
+      - name: Report where the prompt ended up
+        if: steps.changed.outputs.changed == 'true'
+        run: |
+          if [ "${{ steps.pr.outcome }}" = "success" ]; then
+            echo "::notice::Opened a pull request with the improved prompt."
+          else
+            echo "::warning::Could not open a pull request -- GitHub Actions is not permitted to create them in this repository (Settings > Actions > General > Workflow permissions). The prompt is pushed on branch 'gepa/extraction-prompt'; open a PR from it by hand. Do not merge it without reading the score table."
+          fi
