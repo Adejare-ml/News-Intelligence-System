@@ -171,14 +171,25 @@ def run_pipeline(seed: bool = False):
     # --- REDUNDANCY BUFFER ---
     new_candidates = [item for item in candidates if item.get("url") not in existing_urls]
     if not new_candidates:
-        logger.info("Redundancy Buffer: No new articles found. Skipping LLM execution to save quota.")
+        if not candidates:
+            # Nothing was fetched at all -- this is an outage, not a quiet
+            # day. collect_all() already logged why at WARNING; this is about
+            # what the durable Daily Reports record says happened. Since
+            # production padding became opt-in, a total fetcher outage lands
+            # here instead of being masked by 25 synthetic articles, so this
+            # branch must not describe it as "no significant change".
+            logger.warning("No candidate articles were fetched this cycle -- recording it as an outage.")
+            generated_message = "No articles were fetched this cycle. Check the source adapters and API keys."
+        else:
+            logger.info("Redundancy Buffer: No new articles found. Skipping LLM execution to save quota.")
+            generated_message = "No significant change. Script was run at this specific time."
         db._append_row("Daily Reports", {
             "Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "Total Articles": 0,
             "High Risk": 0,
             "Appointments": 0,
             "Procurement": 0,
-            "Generated": "No significant change. Script was run at this specific time."
+            "Generated": generated_message
         })
         return
         
