@@ -40,6 +40,20 @@
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
     --dur-fast: 160ms;
     --dur: 260ms;
+
+    /* Spacing scale. New components (router views, DataTable, dossiers,
+       search palette, alerts) use these instead of ad hoc pixel values.
+       Existing markup is left alone unless a later slice is already
+       rewriting that exact template -- retrofitting the whole stylesheet
+       is unbounded scope with no functional payoff. */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
 }
 
 * {
