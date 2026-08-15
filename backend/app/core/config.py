@@ -55,6 +55,12 @@ class Settings(BaseSettings):
 
     # Pipeline behavior
     SEED_DEMO_PSC: bool = False
+    # Whether a thin ingestion cycle may be padded with synthetic articles.
+    # Off by default: this used to fire automatically whenever fewer than ten
+    # real articles were collected, i.e. exactly when the fetchers were failing,
+    # putting invented stories into the register and the brief. run_pipeline's
+    # explicit --seed mode is unaffected.
+    SEED_DEMO_ARTICLES: bool = False
     ALLOW_HEURISTIC_FALLBACK: bool = False
 
     # DSPy extraction.

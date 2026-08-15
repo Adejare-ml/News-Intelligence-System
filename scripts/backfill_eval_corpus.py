@@ -26,12 +26,35 @@ UA = "Mozilla/5.0 (compatible; AURA-eval-backfill/1.0)"
 
 
 def extract_text(html: str) -> str:
+    """
+    Article text from a page, without the quadratic duplication.
+
+    Unclosed <p> tags are extremely common in WordPress-generated markup, and
+    html.parser responds by *nesting* them rather than closing them as the HTML5
+    spec says. find_all("p") then returns the outer paragraph, which contains
+    every following one, and the one after that, and so on -- so each get_text()
+    re-emits all its descendants and the body grows with the square of the
+    paragraph count.
+
+    That is not theoretical. The first real backfill produced a 510,502-character
+    "article" from one Punch story: 78 paragraphs, each one the article text
+    starting a sentence later than the last, 94% similar to its neighbour.
+
+    Taking only paragraphs that are not inside another paragraph yields the full
+    text exactly once. On well-formed markup, where paragraphs are siblings,
+    every one qualifies and the behaviour is unchanged.
+    """
     from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "nav", "header", "footer", "aside", "form"]):
         tag.decompose()
-    paragraphs = [p.get_text(" ", strip=True) for p in soup.find_all("p")]
+
+    paragraphs = [
+        p.get_text(" ", strip=True)
+        for p in soup.find_all("p")
+        if p.find_parent("p") is None
+    ]
     return "\n".join(p for p in paragraphs if len(p) > 40)
 
 
@@ -42,6 +65,11 @@ def main():
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--min-chars", type=int, default=400,
                         help="Below this the fetch probably hit a paywall or consent wall")
+    parser.add_argument("--max-chars", type=int, default=60000,
+                        help="Above this the extraction is almost certainly not one article. "
+                             "Real stories run 2k-20k; the first backfill produced a 510k "
+                             "body from nested <p> tags. Kept as a guard against the next "
+                             "parser pathology, which will look different.")
     parser.add_argument("--delay", type=float, default=1.5)
     args = parser.parse_args()
 
@@ -69,6 +97,14 @@ def main():
 
             if len(text) < args.min_chars:
                 print(f"  too short, likely a wall: {url} ({len(text)} chars)")
+                failed += 1
+                continue
+
+            if len(text) > args.max_chars:
+                # Loud rather than silent: a body this size means the extractor
+                # swept in something it should not have, and a gold label built
+                # on it would be labelling the wrong text.
+                print(f"  IMPLAUSIBLY LONG, not one article: {url} ({len(text)} chars) -- skipped")
                 failed += 1
                 continue
 
