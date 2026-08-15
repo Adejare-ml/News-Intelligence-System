@@ -117,6 +117,7 @@ Secrets and variables are read from the environment (GitHub Actions secrets in C
 | `NEWSAPI_KEY`, `NEWSDATA_KEY`, `GUARDIAN_API_KEY` | News source keys; RSS works without any | No |
 | `GEMINI_MODEL`, `NVIDIA_MODEL`, `NVIDIA_MODEL_FALLBACK` | Pin specific models; sensible defaults otherwise | No |
 | `SEED_DEMO_PSC` | Seed illustrative PSC rows when empty (default `false`) | No |
+| `SEED_DEMO_ARTICLES` | Pad a thin ingestion cycle (<10 real articles) with synthetic ones, clearly marked, instead of leaving it as-is (default `false`) | No |
 | `ALLOW_HEURISTIC_FALLBACK` | Permit degraded local extraction (default `false`) | No |
 
 Model ids are configurable because pinned names get retired — `gemini-2.5-flash` was withdrawn mid-flight and returned 404 until the default became the `gemini-flash-latest` rolling alias.

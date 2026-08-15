@@ -10,6 +10,16 @@ from backend.app.core.limiter import limiter
 
 logger = logging.getLogger(__name__)
 
+# Every handler below re-raises HTTPException ahead of its generic handler.
+# Without that, `except Exception` swallows the deliberate 404s -- starlette's
+# HTTPException is an ordinary Exception subclass -- and re-raised them as 500s
+# carrying "404: Report for date ... not found." as the detail. A client could
+# not tell a missing report from a broken backend.
+#
+# The generic branch no longer returns str(e) either. That put raw internal
+# exception text on the wire, which for a database or credentials failure is
+# whatever the driver chose to put in the message.
+
 api_router = APIRouter(dependencies=[Depends(get_current_user)])
 
 # ==========================================
@@ -24,9 +34,11 @@ def run_news_pipeline(request: Request, seed: bool = False):
     try:
         result = run_pipeline(seed=seed)
         return result
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Pipeline execution trigger failed: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail=f"Pipeline execution failed: {str(e)}")
+        raise HTTPException(status_code=500, detail="Pipeline execution failed.")
 
 
 # ==========================================
@@ -40,8 +52,11 @@ def get_latest_news():
         articles = db.get_articles()
         # Return newest first
         return list(reversed(articles))
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/news")
 def list_news(category: Optional[str] = None):
@@ -69,8 +84,11 @@ def list_news(category: Optional[str] = None):
             normalized = [a for a in normalized if a["category"].lower() == category.lower()]
             
         return list(reversed(normalized))
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 # ==========================================
 # TRACKED ENTITIES
@@ -81,32 +99,44 @@ def get_companies():
     """Lists company profiles with mention metrics and operational risk levels."""
     try:
         return db.get_companies()
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/people")
 def get_people():
     """Lists executive appointments, resignations, and career changes."""
     try:
         return db.get_people()
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/procurement")
 def get_procurement_news():
     """Lists government procurement tenders and contract awards."""
     try:
         return db.get_procurement()
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/significant_control.json")
 def get_significant_control():
     """Returns Persons with Significant Control (PSC) records."""
     try:
         return db.get_significant_control()
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 # ==========================================
 # DAILY INTELLIGENCE DIGESTS
@@ -127,8 +157,11 @@ def get_reports():
         # Newest first
         formatted.sort(key=lambda x: x["created_at"], reverse=True)
         return formatted
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.post("/reports/trigger")
 def trigger_report_compilation():
@@ -142,8 +175,11 @@ def trigger_report_compilation():
         records = [{"analysis": a} for a in recent]
         compile_daily_report(records)
         return {"status": "success", "message": "Report compiled successfully."}
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/reports/latest")
 def get_latest_report():
@@ -161,8 +197,11 @@ def get_latest_report():
         # Get newest row content
         latest = reports[-1]
         return {"content": latest.get("Content", "# Daily Report\n\nNo developments compiled.")}
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/reports/{filename}")
 def get_specific_report(filename: str):
@@ -178,8 +217,11 @@ def get_specific_report(filename: str):
             return {"content": match.get("Content", "")}
             
         raise HTTPException(status_code=404, detail=f"Report for date {target_date} not found.")
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 # ==========================================
 # SYSTEM COMPATIBILITY ENDPOINTS
@@ -237,8 +279,11 @@ def get_dashboard_stats():
             "category_counts": category_counts,
             "latest_alerts": latest_alerts
         }
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 @api_router.get("/analytics")
 def get_analytics():
@@ -250,8 +295,11 @@ def get_analytics():
             with open(static_graph, "r", encoding="utf-8") as f:
                 return json.load(f)
         return {"nodes": [], "edges": []}
+    except HTTPException:
+        raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.exception("Unhandled error in %s", __name__)
+        raise HTTPException(status_code=500, detail="Internal server error.")
 
 # ==========================================
 # SYSTEM HEALTH
