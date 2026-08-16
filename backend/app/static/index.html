@@ -85,6 +85,11 @@
         </header>
 
         <main id="main">
+        <!-- Route outlet: page-like views (entity dossiers, the PSC
+             register page, investigations) render in here when a later
+             slice registers them with AuraRouter. Inert until then;
+             section-scroll routes never touch it. -->
+        <div data-route-outlet hidden></div>
         <!-- ==========================================================
              HERO — the site's primary purpose is the PSC brief, so the
              brief's headline and verdict lead the page. Everything else
@@ -558,7 +563,9 @@
     <script src="js/globe-data.js?v=4.5"></script>
     <script src="js/globe.js?v=4.5"></script>
     <script src="js/psc-core.js?v=4.5"></script>
+    <script src="js/entity-key.js?v=4.5"></script>
     <script src="js/report-markdown.js?v=4.5"></script>
+    <script src="js/router.js?v=4.5"></script>
     <script src="js/app.js?v=4.5"></script>
     <script src="js/psc-report.js?v=4.5"></script>
 </body>

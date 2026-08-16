@@ -27,9 +27,13 @@ const JS_DIR = path.join(__dirname, "..", "..", "backend", "app", "static", "js"
 // the tests that consume both. Keep the two lists in step.
 const FILES = [
     path.join(JS_DIR, "psc-core.js"),
+    path.join(JS_DIR, "entity-key.js"),
     path.join(JS_DIR, "report-markdown.js"),
+    path.join(JS_DIR, "router.js"),
     path.join(__dirname, "runner.js"),
-    path.join(__dirname, "psc-core.test.js")
+    path.join(__dirname, "psc-core.test.js"),
+    path.join(__dirname, "entity-key.test.js"),
+    path.join(__dirname, "router.test.js")
 ];
 
 const sandbox = {
