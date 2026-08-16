@@ -1,5 +1,29 @@
 [
   {
+    "ID": 3722,
+    "Time": "2026-08-16 11:18:00",
+    "Title": "How to apply as FG reopens access to free CAC registration for N250,000 businesses",
+    "Source": "legit",
+    "URL": "https://www.legit.ng/business-economy/economy/1725429-fg-reopens-free-cac-registration-250000-businesses-reveals-how-nigerians-apply/",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "The Federal Government has reopened access to free CAC registration for businesses with N250,000. This policy aims to support small businesses and entrepreneurs. The registration process is now available for eligible businesses.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 3714,
+    "Time": "2026-08-15T17:37:29Z",
+    "Title": "RMAFC concludes revenue formula, judicial pay review",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/rmafc-concludes-revenue-formula-judicial-pay-review/",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "The Revenue Mobilisation Allocation and Fiscal Commission has completed the review of Nigeria's Revenue Allocation Formula, paving the way for a new framework for sharing revenues among the Federal, state, and local governments.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
     "ID": 3675,
     "Time": "Sun, 16 Aug 2026 08:41:00 GMT",
     "Title": "RMAFC completes work on new revenue allocation formula - The Guardian Nigeria News",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Nigerian National Petroleum Company (NNPC) states that a new deep offshore incentive order is expected to accelerate investment and production growth in the oil and gas sector.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3443,
-    "Time": "Thu, 13 Aug 2026 17:23:10 GMT",
-    "Title": "NRS virtual asset tax rules could reshape Nigeria\u2019s crypto market, PwC warns - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSU9iSXlrQkswMjB6TlFJQ2RUeEpSbVVtY01GV3Fncnp4UEpScHVDQ1FaQldrNUhzTC1KVDkzWmFGOTJkYjNGWTFvQno2MEkzVTBVdU5WRnVnX2NROGlqTVNISE02OUhSdmtjQW5UbUxkT0xuQXF3N3Rhcko3Q0VXamx2VjNfaU9fRGdHTlVZNVF2NmhlQmpCb3RXbllCcnBPN1E?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "PwC has warned that new virtual asset tax rules introduced by the Nigerian government could significantly reshape the country's cryptocurrency market.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3441,
-    "Time": "Thu, 13 Aug 2026 15:11:25 GMT",
-    "Title": "Plateau approves Poverty Reduction Ministry, others - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZG1keF8xVGtQeUNPTzZFWHR6RVc0aUR3T2dTdFBRZVZMYV9xZ1ZCbVowYkdyb2ZONmpWYVdYdnI1V0hxNXB3NlVuWExOXzNieWlYUUdnTVJKOHVTdHFKUDRaZVZlUGcyZnVpMi01aFV2T1hXVjR2d0hDQ182Szh6T3ln?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Plateau State government has approved the creation of a Ministry of Poverty Reduction along with other new ministries to restructure its administrative framework.",
     "Status": "Unread",
     "Engine": "ollama"
   }
