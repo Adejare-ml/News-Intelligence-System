@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import threading
 import pandas as pd
 from typing import List, Dict, Any
 from datetime import datetime
@@ -81,6 +82,29 @@ class SheetsDatabase:
         self.client = None
         self.spreadsheet = None
         self._cache = {}
+        # One instance of this class is shared by every FastAPI request
+        # (sync handlers run concurrently in Starlette's threadpool) and by
+        # the pipeline. The local-Excel write path is read-whole-sheet ->
+        # concat -> rewrite-whole-workbook, so two unsynchronized writers
+        # each read the same file, each append their own row, and whichever
+        # rewrite lands last silently erases the other's -- a lost update
+        # with no error anywhere. Interleaved read/write can also hand a
+        # reader a half-written workbook, which _read_sheet's broad except
+        # turns into "no data" for every view until restart. The same
+        # applies to _cache, a plain dict mutated from multiple threads.
+        #
+        # Re-entrant because the compound operations (add_article's
+        # dedup + next-ID + append, add_company's find-or-update,
+        # add_significant_control's dedup + append) must hold the lock
+        # across their whole read-modify-write -- locking only the inner
+        # helpers would still let two add_article calls interleave between
+        # the ID computation and the append and mint duplicate IDs.
+        #
+        # Scope: in-process threads only. Two separate *processes* sharing
+        # one xlsx (e.g. multiple uvicorn workers) still race; that needs a
+        # file lock and is out of scope here since nothing deploys this
+        # multi-process today.
+        self._lock = threading.RLock()
         self.local_path = os.path.join(os.path.dirname(__file__), "excel_db.xlsx")
         
         # Make parent directories if they don't exist
@@ -208,75 +232,76 @@ class SheetsDatabase:
     
     def _read_sheet(self, sheet_name: str) -> List[Dict[str, Any]]:
         """Reads all rows from a sheet as a list of dicts. Uses memory cache to prevent rate limits."""
-        if sheet_name in self._cache:
-            return self._cache[sheet_name]
-            
-        if self.use_local:
-            try:
-                if not os.path.exists(self.local_path):
+        with self._lock:
+            if sheet_name in self._cache:
+                return self._cache[sheet_name]
+
+            if self.use_local:
+                try:
+                    if not os.path.exists(self.local_path):
+                        return []
+                    df = pd.read_excel(self.local_path, sheet_name=sheet_name)
+                    # Fill NaN values with empty string
+                    df = df.fillna("")
+                    records = df.to_dict(orient="records")
+                    self._cache[sheet_name] = records
+                    return records
+                except Exception as e:
+                    logger.error(f"Error reading local sheet '{sheet_name}': {e}")
                     return []
-                df = pd.read_excel(self.local_path, sheet_name=sheet_name)
-                # Fill NaN values with empty string
-                df = df.fillna("")
-                records = df.to_dict(orient="records")
-                self._cache[sheet_name] = records
-                return records
-            except Exception as e:
-                logger.error(f"Error reading local sheet '{sheet_name}': {e}")
-                return []
-        else:
-            try:
-                ws = self.spreadsheet.worksheet(sheet_name)
-                records = ws.get_all_records()
-                self._cache[sheet_name] = records
-                return records
-            except Exception as e:
-                logger.error(f"Error reading Google Sheet '{sheet_name}': {e}")
-                return []
+            else:
+                try:
+                    ws = self.spreadsheet.worksheet(sheet_name)
+                    records = ws.get_all_records()
+                    self._cache[sheet_name] = records
+                    return records
+                except Exception as e:
+                    logger.error(f"Error reading Google Sheet '{sheet_name}': {e}")
+                    return []
 
     def _append_row(self, sheet_name: str, row_data: Dict[str, Any]):
         """Appends a single row matching columns to the specified sheet."""
-        columns = SHEETS_CONFIG[sheet_name]
-        row_values = [row_data.get(col, "") for col in columns]
-        
-        # Update cache immediately
-        if sheet_name in self._cache:
-            # We add a dict mapping columns to row values so the cache stays accurate
-            self._cache[sheet_name].append(dict(zip(columns, row_values)))
-            
+        with self._lock:
+            columns = SHEETS_CONFIG[sheet_name]
+            row_values = [row_data.get(col, "") for col in columns]
 
-        if self.use_local:
-            try:
-                df_existing = pd.DataFrame(columns=columns)
-                if os.path.exists(self.local_path):
-                    try:
-                        df_existing = pd.read_excel(self.local_path, sheet_name=sheet_name)
-                    except Exception:
-                        pass
-                
-                df_new = pd.DataFrame([row_values], columns=columns)
-                df_combined = pd.concat([df_existing, df_new], ignore_index=True)
-                
-                # Write back maintaining other sheets
-                with pd.ExcelWriter(self.local_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
-                    df_combined.to_excel(writer, sheet_name=sheet_name, index=False)
-            except Exception as e:
-                logger.error(f"Error writing to local sheet '{sheet_name}': {e}")
-        else:
-            try:
-                def _do_append():
-                    ws = self.spreadsheet.worksheet(sheet_name)
-                    stringified_values = []
-                    for val in row_values:
-                        if isinstance(val, (dict, list)):
-                            stringified_values.append(json.dumps(val))
-                        else:
-                            stringified_values.append(str(val))
-                    ws.append_row(stringified_values)
+            # Update cache immediately
+            if sheet_name in self._cache:
+                # We add a dict mapping columns to row values so the cache stays accurate
+                self._cache[sheet_name].append(dict(zip(columns, row_values)))
 
-                retry_google_sheets_op(_do_append)
-            except Exception as e:
-                logger.error(f"Error appending to Google Sheet '{sheet_name}': {e}")
+            if self.use_local:
+                try:
+                    df_existing = pd.DataFrame(columns=columns)
+                    if os.path.exists(self.local_path):
+                        try:
+                            df_existing = pd.read_excel(self.local_path, sheet_name=sheet_name)
+                        except Exception:
+                            pass
+
+                    df_new = pd.DataFrame([row_values], columns=columns)
+                    df_combined = pd.concat([df_existing, df_new], ignore_index=True)
+
+                    # Write back maintaining other sheets
+                    with pd.ExcelWriter(self.local_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
+                        df_combined.to_excel(writer, sheet_name=sheet_name, index=False)
+                except Exception as e:
+                    logger.error(f"Error writing to local sheet '{sheet_name}': {e}")
+            else:
+                try:
+                    def _do_append():
+                        ws = self.spreadsheet.worksheet(sheet_name)
+                        stringified_values = []
+                        for val in row_values:
+                            if isinstance(val, (dict, list)):
+                                stringified_values.append(json.dumps(val))
+                            else:
+                                stringified_values.append(str(val))
+                        ws.append_row(stringified_values)
+
+                    retry_google_sheets_op(_do_append)
+                except Exception as e:
+                    logger.error(f"Error appending to Google Sheet '{sheet_name}': {e}")
 
     # ==========================================
     # DATA INTERFACES
@@ -285,36 +310,67 @@ class SheetsDatabase:
     def get_articles(self) -> List[Dict[str, Any]]:
         return self._read_sheet("Articles")
 
+    @staticmethod
+    def _as_int_id(value: Any) -> int:
+        """Parse a stored ID that may have been float-typed by pandas.
+
+        An integer column picks up float64 the moment any cell in it is
+        blank (NaN), after which every ID reads back as e.g. 5.0 --
+        and str(5.0).isdigit() is False, which the old code used as its
+        filter. Every existing ID silently failed the check, the max()
+        pool came back empty, and the auto-increment restarted at 1,
+        colliding with rows already in the register. Returns 0 for
+        anything that is not a whole number.
+        """
+        try:
+            f = float(str(value).strip())
+            return int(f) if f.is_integer() else 0
+        except (TypeError, ValueError):
+            return 0
+
     def add_article(self, article: Dict[str, Any]) -> bool:
         """Adds an article if URL doesn't exist. Returns True if successfully added."""
-        articles = self.get_articles()
-        url = article.get("URL", "")
-        
-        # Deduplication check
-        if any(row.get("URL") == url for row in articles):
-            logger.info(f"Article URL already exists in database, skipping: {url}")
-            return False
-            
-        # Assign auto increment ID
-        next_id = 1
-        if articles:
-            ids = [int(r.get("ID")) for r in articles if str(r.get("ID")).isdigit()]
-            if ids:
-                next_id = max(ids) + 1
-        
-        article["ID"] = next_id
-        article["Time"] = article.get("Time") or datetime.now().isoformat()
-        article["Status"] = article.get("Status") or "Unread"
-        
-        self._append_row("Articles", article)
-        logger.info(f"Saved new article to database: ID {next_id}")
-        return True
+        # The whole dedup -> next-ID -> append sequence holds the lock:
+        # two concurrent calls interleaving between the ID computation and
+        # the append would otherwise both read the same max and mint the
+        # same ID, or both pass the URL dedup and write the row twice.
+        with self._lock:
+            articles = self.get_articles()
+            url = article.get("URL", "")
+
+            # Deduplication check
+            if any(row.get("URL") == url for row in articles):
+                logger.info(f"Article URL already exists in database, skipping: {url}")
+                return False
+
+            # Assign auto increment ID
+            next_id = 1
+            if articles:
+                ids = [self._as_int_id(r.get("ID")) for r in articles]
+                ids = [i for i in ids if i > 0]
+                if ids:
+                    next_id = max(ids) + 1
+
+            article["ID"] = next_id
+            article["Time"] = article.get("Time") or datetime.now().isoformat()
+            article["Status"] = article.get("Status") or "Unread"
+
+            self._append_row("Articles", article)
+            logger.info(f"Saved new article to database: ID {next_id}")
+            return True
 
     def get_companies(self) -> List[Dict[str, Any]]:
         return self._read_sheet("Companies")
 
     def add_company(self, company: Dict[str, Any]):
         """Adds a company or updates its mention count and last seen date."""
+        # Held across the find-or-update: the local branch rewrites the whole
+        # Companies sheet from its in-memory copy, so an unsynchronized
+        # concurrent append would be erased by this rewrite (lost update).
+        with self._lock:
+            self._add_company_locked(company)
+
+    def _add_company_locked(self, company: Dict[str, Any]):
         companies = self.get_companies()
         name = company.get("Company", "").strip()
         if not name:
@@ -412,23 +468,26 @@ class SheetsDatabase:
         return tuple(str(psc.get(f) or "").strip().lower() for f in SheetsDatabase._PSC_IDENTITY)
 
     def add_significant_control(self, psc: Dict[str, Any]):
-        psc["Date"] = psc.get("Date") or datetime.now().strftime("%Y-%m-%d")
+        # Lock held across dedup-check + append so two concurrent calls
+        # carrying the same disclosure cannot both pass the check.
+        with self._lock:
+            psc["Date"] = psc.get("Date") or datetime.now().strftime("%Y-%m-%d")
 
-        # Reads come from the in-memory cache, which _append_row keeps current,
-        # so this also catches duplicates written earlier in the same run --
-        # which is where the observed pair came from. If the read fails the
-        # cache is empty and the row is written: a duplicate is recoverable, a
-        # dropped disclosure is not.
-        key = self._psc_key(psc)
-        for existing in self.get_significant_control():
-            if self._psc_key(existing) == key:
-                logger.info(
-                    "Skipping duplicate significant-control row for %s / %s on %s",
-                    psc.get("Person Name"), psc.get("Company"), psc.get("Date"),
-                )
-                return
+            # Reads come from the in-memory cache, which _append_row keeps current,
+            # so this also catches duplicates written earlier in the same run --
+            # which is where the observed pair came from. If the read fails the
+            # cache is empty and the row is written: a duplicate is recoverable, a
+            # dropped disclosure is not.
+            key = self._psc_key(psc)
+            for existing in self.get_significant_control():
+                if self._psc_key(existing) == key:
+                    logger.info(
+                        "Skipping duplicate significant-control row for %s / %s on %s",
+                        psc.get("Person Name"), psc.get("Company"), psc.get("Date"),
+                    )
+                    return
 
-        self._append_row("Significant Control", psc)
+            self._append_row("Significant Control", psc)
 
     def get_daily_reports(self) -> List[Dict[str, Any]]:
         return self._read_sheet("Daily Reports")
