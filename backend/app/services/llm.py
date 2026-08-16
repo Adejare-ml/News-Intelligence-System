@@ -563,7 +563,17 @@ class LLMService:
     def _validate_llm_output(cls, data: Dict[str, Any]) -> Dict[str, Any]:
         """Guarantees the dict returned contains all required columns to avoid key errors."""
         schema_defaults = {
-            "relevant": True,
+            # False, not True. Every cascade branch routes its parsed JSON
+            # through here before run_pipeline sees it, so this default -- not
+            # run_pipeline's own `.get("relevant", False)` -- is the one that
+            # actually decides what happens to a truncated or partial model
+            # response that omits the key. It was True, which quietly published
+            # any such response as relevant and made the fail-closed fix at the
+            # call site dead code: by the time it ran, the key always existed.
+            # A model that did not answer the relevance question has not
+            # answered it; the article is skipped and retried by a later run,
+            # same as any other cascade failure.
+            "relevant": False,
             "category": "Other",
             "event_type": "Other",
             "risk_score": 10,
