@@ -1,5 +1,53 @@
 [
   {
+    "ID": 3795,
+    "Time": "2026-08-17 11:25:36",
+    "Title": "Nestoil Pays $60m to Creditor Banks as EFCC-Led Repayment Plan Begins",
+    "Source": "thewillnews",
+    "URL": "https://thewillnews.com/nestoil-pays-60m-to-creditor-banks-as-efcc-led-repayment-plan-begins/",
+    "Category": "Legal",
+    "Risk Score": 45,
+    "Summary": "Nestoil has begun a repayment plan overseen by the EFCC, making an initial payment of $60 million to creditor banks.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3790,
+    "Time": "2026-08-16T18:21:13Z",
+    "Title": "Benin-Onitsha Road concessioned, not neglected, says Umahi",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/benin-onitsha-road-concessioned-not-neglected-says-umahi/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "Minister of Works David Umahi clarified that the Benin-Onitsha Road has been concessioned to a private partner rather than neglected. The Federal Government is currently engaging the concessionaire to ensure the project's progress alongside other South-East infrastructure works.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3786,
+    "Time": "Mon, 17 Aug 2026 20:43:25 GMT",
+    "Title": "Court nullifies PENGASSAN Chevron elections, orders fresh poll under ministry supervision - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZ2FfS0NkN0ZmWXRSWXRqM1cyUjhLVnlwTEdDcUlWY012YWJWLTJXbEphaW1nY1Rlakh6c2dKcE11WDlURHk5c1NTYnNxeUtwT2duUWdVYTFBQkVyaWYyX2RSa1c4Q3hVSk4tcE13ODlxakplQ2VmQmwzaTNQQ0dCX0Jzb0ktTDRNSjM3bS1JREFPNTBTRFdNSUZRTTFvSExfT3VaV0dENGc2UnByS25VZUZVc0M?oc=5",
+    "Category": "Legal",
+    "Risk Score": 30,
+    "Summary": "A court has nullified the PENGASSAN elections at Chevron and ordered a fresh election to be conducted under the supervision of the relevant ministry.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 3785,
+    "Time": "Mon, 17 Aug 2026 20:32:25 GMT",
+    "Title": "Otedola raises First HoldCo stake to 27.49% with fresh N20.7 billion share purchase - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVUpTUkdUdDhWclBCQ0hBaDFuSE9VTWxzWjVMM2Jwa0NzYWlPMW5wSmtMWHhwQUFTNkpRMEJXUV9USHJlSGV3aEhINnVoeG1PRGJHdy15Y2ZBX01hQjdvb2ktOW55R0ZZR3N3ZFktemJpaDRZM1RLZG9GR2RJdThseXRSbGJpZmg3UVFRd05iNXQtemdjYVQ0a2QyZjg2a1ZCVXR2YlFZTlpnMmxGTHpQTUo4M2t6WlFlYi1XWlhtZVl2THVFbzBnb1c2MVl0cXo3SnhJT2I2Unc1SmY4dTB6YmxR?oc=5",
+    "Category": "Company",
+    "Risk Score": 40,
+    "Summary": "Femi Otedola has increased his shareholding in First HoldCo to 27.49% following an additional investment of N20.7 billion.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 3779,
     "Time": "Mon, 17 Aug 2026 15:40:14 GMT",
     "Title": "Geregu Power appoints new acting CEO - Premium Times Nigeria",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 40,
     "Summary": "The Nigerian electricity market is facing threats due to policy uncertainty and unfunded subsidies, potentially destabilizing the sector's financial viability.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3488,
-    "Time": "Wed, 12 Aug 2026 17:07:51 GMT",
-    "Title": "CBN relaxes borrowing rules for banks trading FX, government securities - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQczRXbWtvY0JyUEVHczF4Y0VaREsyRW5vdWZMUHRGYmFDUkdQVzlNT3JXalVVZHZ2R192c0JZY0h1dFBSdzdzNEJBN05Xb2ROdUFxOFJlN2d0Q3dSQ3JCV2Q2Vl9Ja04tdUstQXhpOXF6dlVIRHplWURqamFMV0VXX3JlbmQxUzU5Ry1WQXpJZ3AwMXRRVnc?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Central Bank of Nigeria (CBN) has relaxed borrowing regulations for commercial banks engaged in the trading of foreign exchange and government securities.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3485,
-    "Time": "Fri, 14 Aug 2026 03:06:52 GMT",
-    "Title": "ICPC recovers N24b from ghost workers, over 900 accounts forfeited - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMXdkUHBFVzY3ZDNVUy1ILXV2ZkQwQlMtc2dTckQwOHFIcEZsRXhHWENOLXVTb2U4UDF2MlpkVFBsLUF3YW9CTWdQY2ZTTVRuT3VuUDJQcWVQbEFZNG1GeHpNNzJGMFJhNFYzOE1uS1VURXdCRThJMnR5ZVAzX1NJTWpYUlJKUllGUXVWcDdTRVNhcVYtVlE?oc=5",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "The Independent Corrupt Practices and Other Related Offences Commission (ICPC) has recovered N24 billion from ghost workers. This action involved the forfeiture of over 900 accounts.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3484,
-    "Time": "Fri, 14 Aug 2026 03:43:17 GMT",
-    "Title": "How UBEC reform, funding may reshape future of education - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZnNfcjlRWUtoUi1uRGFEZ2lhSGtxdzF6bXBSVW1ucVZVRDdRNHJKb2txLWtsOW95emZGU0dIRVZmN21pcmFTbFpTZ19aaVZoQnU0NXlMWkJhMXE4ald2V05CM1k4QkVFeG9ZeWVSZ3ZvTVF3SUljNWdlUzFtclowMmdxNU1TWlczNkNGWW1aNA?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "The article discusses potential reforms and funding changes for the Universal Basic Education Commission (UBEC) and their projected impact on the education sector.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3479,
-    "Time": "2026-08-13 11:46:10",
-    "Title": "Presidency reacts as US flags Nigeria\u2019s fiscal transparency gaps",
-    "Source": "nairametrics",
-    "URL": "https://nairametrics.com/2026/08/13/presidency-reacts-as-us-flags-nigerias-fiscal-transparency-gaps/",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "The Presidency has responded to reports from the United States highlighting gaps in Nigeria's fiscal transparency. The issue pertains to governmental financial disclosures and transparency standards.",
     "Status": "Unread",
     "Engine": "ollama"
   }
