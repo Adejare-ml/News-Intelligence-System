@@ -3,7 +3,7 @@ uvicorn[standard]==0.52.0
 sqlalchemy==2.0.31
 alembic==1.13.1
 psycopg2-binary==2.9.9
-pgvector==0.3.1
+pgvector==0.5.0
 celery==5.4.0
 redis==8.1.0
 pydantic==2.7.4
