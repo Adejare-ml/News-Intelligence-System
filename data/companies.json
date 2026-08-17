@@ -2451,10 +2451,10 @@
   },
   {
     "Company": "First HoldCo",
-    "Mention Count": 13,
-    "Last Seen": "2026-08-07 14:10",
+    "Mention Count": 14,
+    "Last Seen": "2026-08-17 23:28",
     "Industry": "General",
-    "Risk Level": "Low"
+    "Risk Level": "Medium"
   },
   {
     "Company": "N7.13",
@@ -6900,5 +6900,26 @@
     "Last Seen": "2026-08-17 17:37",
     "Industry": "General",
     "Risk Level": "Low"
+  },
+  {
+    "Company": "Chevron",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-17 23:28",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "PENGASSAN",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-17 23:28",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "Nestoil",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-17 23:29",
+    "Industry": "General",
+    "Risk Level": "Medium"
   }
 ]
