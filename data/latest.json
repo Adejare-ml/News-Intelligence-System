@@ -1,5 +1,29 @@
 [
   {
+    "ID": 3779,
+    "Time": "Mon, 17 Aug 2026 15:40:14 GMT",
+    "Title": "Geregu Power appoints new acting CEO - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcFZaVEpaWEpua0JzMTlab0RyWXd6NmtzZk4zN3doRm5ZZjJvUnFjc3lTcWc2aU5QWWpRTm5VdFNkaHptLTRHcUU0cUtJaXlGUWNkSkZ5TmFDeF9GbWhRd3hHUVpEWHVILUlSeGltdzYweXFxYzVyOVNHTmxBWXlFdnZObUJUQXM0VnFiZ1lXbGdENUNJMVBDYnRn?oc=5",
+    "Category": "Company",
+    "Risk Score": 0,
+    "Summary": "Geregu Power has appointed a new acting CEO. The company made the announcement recently.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 3775,
+    "Time": "Mon, 17 Aug 2026 15:09:04 GMT",
+    "Title": "Keyamo asks IATA to replace Osubi Airport code - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaWRTNzIzdmdZeWFQVXl4cGJKeUg5dGFUdmk5TVBaQ2xScm51NUVmeGZUdExnanF3OUtDNDRfVXJXNzEwYjcxajdtSThnNDU2dVNvMW9NQUc3ZnUtbHY5Y0pDUEFtcDcwSVA1QjBGdE9XYUFzS0lzU1JMaExPcTh6b2gtNEt6OXpOU2ltSmd0N0p3TUR6X1Nia1VnOFdha1Q2eXlFVWhR?oc=5",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "Minister of Aviation, Festus Keyamo, has requested the International Air Transport Association (IATA) to replace the airport code for Osubi Airport.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 3759,
     "Time": "2026-08-16T07:54:44Z",
     "Title": "#OsunDecides2026: Probe vote-buying, violence, SERAP urges INEC, EFCC, ICPC",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 45,
     "Summary": "The Presidency has responded to reports from the United States highlighting gaps in Nigeria's fiscal transparency. The issue pertains to governmental financial disclosures and transparency standards.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3477,
-    "Time": "2026-08-13 11:46:28",
-    "Title": "NAHCON Approves 5 Airlines for 2027 Hajj Airlift",
-    "Source": "leadership",
-    "URL": "https://leadership.ng/nahcon-approves-5-airlines-for-2027-hajj-airlift/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The National Hajj Commission of Nigeria (NAHCON) has approved five airlines to handle the 2027 Hajj airlift operations.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3472,
-    "Time": "2026-08-12T23:23:43Z",
-    "Title": "Scrapping JSS-SSS separation is a start",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/scrapping-jss-sss-separation-is-a-start/",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Federal Ministry of Education has decided to phase out the policy that separates junior secondary schools from senior secondary schools to streamline the education system.",
     "Status": "Unread",
     "Engine": "ollama"
   }
