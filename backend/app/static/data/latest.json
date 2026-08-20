@@ -1,5 +1,41 @@
 [
   {
+    "ID": 4042,
+    "Time": "2026-08-19T17:12:59Z",
+    "Title": "Nigeria targets 3m bpd, $50bn investment, 215tcf gas",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/nigeria-targets-3m-bpd-50bn-investment-215tcf-gas/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Government of Nigeria has unveiled a strategic plan to increase oil production to 3 million barrels per day and attract $50 billion in investment. The initiative focuses on unlocking 215 trillion cubic feet of natural gas reserves to boost economic growth.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4036,
+    "Time": "Thu, 20 Aug 2026 10:58:17 GMT",
+    "Title": "No blanket ban on Uber, Bolt at Nigerian airports \u2013 FAAN - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMEdtaktuTkFNV2RORDFDMjd3eWh1LXdvSXBPd0Z4N0U0X1FaRmJMZGotQkZ5UWk4c2wtMVQ4SWxzeFNtcElMdV9PZFR3OWNiZ18xdDRzdkhZVFdGSnNjX08tVksxSGhNUGR1RnNpMFZyNkpXaDhxdUpGZERmR2hIdXFIZ3JXM25uNDJJRnhaOTBDVTFJV2tSMUxyWUE1MmdCTjhxN01iWlZVWUpzcG5JX3IxTGs5bHdWZW5V?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Airports Authority of Nigeria (FAAN) has clarified that there is no blanket ban on ride-hailing services such as Uber and Bolt operating at Nigerian airports.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4032,
+    "Time": "Wed, 19 Aug 2026 20:00:00 GMT",
+    "Title": "FEC approves N610bn works projects, PPP poncessions - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYmJqLWtaRExWOEFFWjI3UnRXdVduVmRIcjBOejkyOVZUT3hHQTY0d1hDYVM5U3VRcmV4WlBtT0swMDQtMXVWZWc3UVZWWW81cFlqZ2pMSXcybXRmQzZkWW1XMndXV2dwTGpZalB4cmFlOGdaV1pjUjcxRWU0NDRDZjN3?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Federal Executive Council (FEC) has approved works projects totaling N610 billion, alongside various Public-Private Partnership (PPP) concessions.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4021,
     "Time": "2026-08-20 01:39:48",
     "Title": "Segment expansion: ABC Transport secures Abia govt\u2019s approval for \u2018City Transit Inn\u2019 in Aba",
@@ -682,41 +718,5 @@
     "Summary": "HBM Nigeria's profit increased by 57% to N208 billion. The company's financial performance has shown significant improvement.",
     "Status": "Unread",
     "Engine": "nvidia"
-  },
-  {
-    "ID": 3824,
-    "Time": "Tue, 18 Aug 2026 13:17:11 GMT",
-    "Title": "Julius Berger delivers 19.79km road, seven bridges in Rivers - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMmpZTjR5aFlDMVJBY0dCcmZqMG5URldENlBWX2JNUkgwYnF5em1ZOGM3X05pdk9BNF9HYnN5WFY1SUZqRXpkb0pia0VRTkFwNTVaeHMwTXJIR0pJWkVpUURGRGlQalAwaHcwVWZqQWRCWTVkRjlJQ29xeTU5QlpiV2hiMXRKcXRleFFzVnRR?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "Julius Berger has completed the delivery of a 19.79km road project and seven bridges in Rivers State.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3819,
-    "Time": "2026-08-17 19:33:16",
-    "Title": "Evening recap: Edo Speaker resigns, over 200 KASU lecturers quit, other top stories",
-    "Source": "punchng",
-    "URL": "https://punchng.com/evening-recap-edo-speaker-resigns-over-200-kasu-lecturers-quit-other-top-stories/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Speaker of the Edo State House of Assembly has resigned from his position. Additionally, over 200 lecturers from Kaduna State University (KASU) have reportedly quit.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3817,
-    "Time": "2026-08-16T23:39:24Z",
-    "Title": "Pipeline security crucial to Nigeria\u2019s $50bn offshore target",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/pipeline-security-crucial-to-nigerias-50bn-offshore-target/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "Nigeria is pursuing a $50 billion offshore investment target to boost its oil and gas sector. The success of this initiative is contingent upon policy reforms and the ability to secure pipelines and maintain stability in the Niger Delta region.",
-    "Status": "Unread",
-    "Engine": "ollama"
   }
 ]
