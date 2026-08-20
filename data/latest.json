@@ -1,5 +1,53 @@
 [
   {
+    "ID": 4021,
+    "Time": "2026-08-20 01:39:48",
+    "Title": "Segment expansion: ABC Transport secures Abia govt\u2019s approval for \u2018City Transit Inn\u2019 in Aba",
+    "Source": "sunnewsonline",
+    "URL": "https://thesun.ng/segment-expansion-abc-transport-secures-abia-govts-approval-for-city-transit-inn-in-aba/",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "ABC Transport has secured approval from the Abia State government to establish a 'City Transit Inn' in Aba, as part of its segment expansion. The project aims to enhance transportation services in the state. The approval is seen as a significant step towards the development of the transportation sector in Abia.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 4018,
+    "Time": "2026-08-19T08:30:00Z",
+    "Title": "Nigeria hopes for solid sovereign AI ecosystem, as OADC, Analytics Intelligence seal cloud solutions deal",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/nigeria-hopes-for-solid-sovereign-ai-ecosystem-as-oadc-analytics-intelligence-seal-cloud-solutions-deal/",
+    "Category": "Company",
+    "Risk Score": 0,
+    "Summary": "OADC and Analytics Intelligence have signed a cloud solutions deal to support AI adoption in Nigeria, with a focus on data privacy and security.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 4006,
+    "Time": "Thu, 20 Aug 2026 13:37:07 GMT",
+    "Title": "Zamfara trains 42 Offic\u00edals on effective procurement, financial management - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcldsX3M2NENvNVFxLVRjY1F4VmxVaG5OMldmNURjSW5sYmF0MDcxM0JLc0w0NzViNVpiWUdiblFFRG9Cd2RJSjRJUzBYZzRKMWlTLS1DMU90OWtHbzBlRWU4dEtINmhXem5JVEsyV2tiQ2paM19DVDRLd2VzMlBEVVhHN243TjluUFc4bXpPb25lVG84OXVNN0tCY2ZzQW1P?oc=5",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "Zamfara state government trains 42 officials on effective procurement and financial management.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 4003,
+    "Time": "Thu, 20 Aug 2026 11:47:45 GMT",
+    "Title": "Capt. Wisdom takes charge as Enugu Air Operations Director - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcER1NmZ4X3U2RDdNVU5WMG4yQ182VW5zWFJhU2pnWHd5cEZ3UzdHbmllcTRabGVjU002QmJ0Q0ZoTEtMLS1rNkFDbXMtaEpsaUd3R0prNzg4a1NTOEdLWWdidVp6bmRwUnNrMGpYZTNLbUs3VlRaeEJMRU5mdDlUaGpyXzZSM2daaU83YVJnWlJMSWRfU2c?oc=5",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "Capt. Wisdom has taken charge as the Director of Air Operations in Enugu. This appointment is a routine change in leadership within the government agency.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
     "ID": 4000,
     "Time": "2026-08-19 19:36:31",
     "Title": "Nigeria saved N15trn from petrol subsidy removal Finance Minister",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "Nigeria is pursuing a $50 billion offshore investment target to boost its oil and gas sector. The success of this initiative is contingent upon policy reforms and the ability to secure pipelines and maintain stability in the Niger Delta region.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3816,
-    "Time": "2026-08-17T00:23:36Z",
-    "Title": "Refiners eye $329m savings from proposed crude swap",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/?p=2216999",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Local refineries, including Dangote Petroleum Refinery, are evaluating a proposed crude swap arrangement that could result in cost savings of up to $328.8 million. The arrangement aims to optimize the procurement of crude oil for domestic refining.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3815,
-    "Time": "2026-08-17T00:23:37Z",
-    "Title": "NSDC targets $1bn investment to cut sugar imports",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/nsdc-targets-1bn-investment-to-cut-sugar-imports/",
-    "Category": "Government",
-    "Risk Score": 35,
-    "Summary": "The National Sugar Development Council (NSDC) is pursuing a $1 billion engineering, procurement, and construction-plus-finance agreement with SINOMACH to enhance Nigeria's sugar industry and reduce import dependency.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3814,
-    "Time": "2026-08-17T00:23:37Z",
-    "Title": "FG offers 70:30 profit oil split for new fields",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/fg-offers-7030-profit-oil-split-for-new-fields/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Federal Government has introduced a new fiscal incentive for deep offshore oil and gas projects, implementing a 70:30 profit-oil sharing ratio in favor of the government for qualifying developments.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3811,
-    "Time": "2026-08-17T00:54:12Z",
-    "Title": "Tinubu bets on PH, Warri refineries despite Obasanjo\u2019s doubts",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/tinubu-bets-on-ph-warri-refineries-despite-obasanjos-doubts/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "President Bola Tinubu expressed confidence in the viability of the state-owned Port Harcourt, Warri, and Kaduna refineries, contradicting views held by former President Olusegun Obasanjo regarding their potential for recovery.",
     "Status": "Unread",
     "Engine": "ollama"
   }
