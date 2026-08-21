@@ -445,6 +445,18 @@
       "risk": "Medium"
     },
     {
+      "id": "eb5a8434f1bd",
+      "label": "Tony Elumelu",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "5bc53f66db9d",
+      "label": "Seplat",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "0c68c2daa033",
       "label": "BPP",
       "type": "agency",
@@ -763,6 +775,12 @@
       "from": "6617740c0c1a",
       "to": "c23cf0c11158",
       "label": "Significant influence or control"
+    },
+    {
+      "id": "b2eae1d0c424",
+      "from": "eb5a8434f1bd",
+      "to": "5bc53f66db9d",
+      "label": "Ownership of shares"
     },
     {
       "id": "2f75d17a49f0",
