@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4106,
+    "Time": "2026-08-21 01:33:39",
+    "Title": "Elumelu\u2019s Seplat investment doubles to over $1bn",
+    "Source": "punchng",
+    "URL": "https://punchng.com/elumelus-seplat-investment-doubles-to-over-1bn/",
+    "Category": "Company",
+    "Risk Score": 0,
+    "Summary": "Tony Elumelu's investment in Seplat has more than doubled to over $1 billion.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 4090,
+    "Time": "Fri, 21 Aug 2026 12:42:02 GMT",
+    "Title": "Guinness Nigeria declares N265b revenue; profit jumps 53% to N25.3b | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUGREcW9YR2RWZFp4eG92OTlMZHBzbkxhVzJLS2ljcXZlRWg2QWJwX1NDemxwS2NvOTFXZkZEbTNaS1hJVklxOFdCUFVHMk5pcEt3eURUUlFhZG1XLTg0SG1WNVlETXdST1A5TkZ4WDFGZUpDUDFXZUxkcEswS0VCV2Jad1FvUDVQSGM1T0VTWHFNdkpPNGtvYjR5WVc?oc=5",
+    "Category": "Company",
+    "Risk Score": 0,
+    "Summary": "Guinness Nigeria has announced its financial results, declaring a revenue of N265 billion and a profit of N25.3 billion, representing a 53% increase in profit. The company's financial performance indicates a significant improvement in its operations.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
     "ID": 4076,
     "Time": "Wed, 19 Aug 2026 23:42:42 GMT",
     "Title": "Tinubu moves EFCC recoveries, N242bn unclaimed dividends to NELFUND - Punch Newspapers",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 15,
     "Summary": "Senator Henry Seriake Dickson, representing Bayelsa West and National Leader of the NDC, has appointed Steve Nwosu and several others as aides.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3874,
-    "Time": "2026-08-17T22:08:56Z",
-    "Title": "Tinubu\u2019s reforms push FAAC allocations above N2trn monthly \u2013 Oyedele",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/tinubus-reforms-push-faac-allocations-above-n2trn-monthly-oyedele/",
-    "Category": "Government",
-    "Risk Score": 0,
-    "Summary": "The Federal Government's economic reforms have led to an increase in the monthly Federal Allocation to over N2 trillion, according to the Minister of Finance, Prof. Taiwo Oyedele. This increase is attributed to the reforms implemented by the government.",
-    "Status": "Unread",
-    "Engine": "nvidia"
-  },
-  {
-    "ID": 3868,
-    "Time": "Tue, 18 Aug 2026 22:24:32 GMT",
-    "Title": "Corruption Allegation: Edo assembly inaugurates panel to probe ex-speaker - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZmdKdlUzM2RER3JJdE5vajBzQm9ONHdrcUFwMVpLLVR2Z1pKSW1zaGUyT1FFeXBYQXNCM0dUNzFHS1FvV2RSdFRrbk02OThaUXIyMU94TmlWQnlkcF9LaXI4MDh4R25GMkEtNUhjT2QzUDJtQzZ6eTFVbGs1Vjl0Q0NVSnlFbk53S3g3eTF5RllrN1A5eUpqVWdGMVV1VFhYQllndmV4OUZDTEdtNGtNTE5rOXNlQWVxZnJkcEpoOGFxcjRxR2hEbA?oc=5",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "The Edo State House of Assembly has inaugurated a panel to investigate corruption allegations against a former speaker of the assembly.",
     "Status": "Unread",
     "Engine": "ollama"
   }
