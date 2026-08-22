@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4172,
+    "Time": "2026-08-22 01:27:00",
+    "Title": "SEC Wants a Live Feed Into Your Crypto Wallet. Nigeria Isn\u2019t Ready for What That Means For Privacy",
+    "Source": "tekedia",
+    "URL": "https://www.tekedia.com/sec-wants-a-live-feed-into-your-crypto-wallet-nigeria-isnt-ready-for-what-that-means-for-privacy/",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The Securities and Exchange Commission (SEC) is proposing a requirement for live feed access to cryptocurrency wallets. This move raises significant concerns regarding user privacy and regulatory oversight of digital assets in Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4170,
+    "Time": "2026-08-21T10:30:00Z",
+    "Title": "Nigeria Eyes $50 Billion Offshore Oil and Gas Investment Boom",
+    "Source": "Yahoo Entertainment",
+    "URL": "https://finance.yahoo.com/energy/articles/nigeria-eyes-50-billion-offshore-103000016.html",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Nigerian Upstream Petroleum Regulatory Commission (NUPRC) is implementing new incentives for offshore oil and gas projects. These measures aim to attract approximately $50 billion in new investments into the country's offshore energy sector.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4160,
     "Time": "2026-08-21 19:22:43",
     "Title": "Oshiomhole Submits MOWAA Ownership Probe Panel Report To Okpebholo",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Nigerian Ports Economic Regulator Agency (NPERA) has officially commenced operations as the economic regulator for Nigerian ports.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3907,
-    "Time": "2026-08-17T23:53:01Z",
-    "Title": "Accounting for recovered assets",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/accounting-for-recovered-assets/",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "The House of Representatives has resolved to investigate all seized, forfeited, recovered, and repatriated assets managed by government institutions since the return to democratic rule. This probe aims to ensure transparency and accountability in the management of recovered assets by various state agencies.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3903,
-    "Time": "Wed, 19 Aug 2026 03:51:23 GMT",
-    "Title": "US lifts 12-year entry restriction on Nigerian vessels - Vanguard News",
-    "Source": "Vanguard News",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVHZmLVhPS2k0ekV1V1dqNGNJZklwY2R5ZkJDZ2gzTTFrMGhBZGkyelVSUGJMZGtjcGN3RS1DRENJSEkxQnJlazI0ZXhXNE5lVHV5UlF2SlBhOXk1dnRub2xPTUZWbDdCTjl6eW1ETnJGYzZSM2Jjd3gzeWZrMGh6bGxuN3IyLTFJRFJzMjk5MVdyYVZ0MlHSAZsBQVVfeXFMTTE2eXBIdDNhdXRxNkV3NUZub1laUi1NbVBLWVVZaWZZcTd1ZW9NaURfYndORkxqVE1xZG02OHI4REQtX3IzQmpzME80OXM2WmlPdWxEc09mbkJwcllZZl9Sa2FJamJ6bHRXQkNHNm9nOHRWaVBURTBfUnlGS2lpSHJnbDJvNC1YbTVHSEg1SzNidUo2Umd5bkhQb00?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The United States has lifted a 12-year entry restriction on Nigerian vessels, signaling a change in maritime regulatory policy between the two nations.",
     "Status": "Unread",
     "Engine": "ollama"
   }
