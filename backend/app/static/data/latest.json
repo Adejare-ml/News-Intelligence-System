@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4181,
+    "Time": "2026-08-21T13:29:11Z",
+    "Title": "REA, Alpha Morgan Bank seal N50bn deal to fund renewable energy projects",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/rea-alpha-morgan-bank-seal-n50bn-deal-to-fund-renewable-energy-projects/",
+    "Category": "Government",
+    "Risk Score": 25,
+    "Summary": "The Rural Electrification Agency (REA) has partnered with Alpha Morgan Bank in a N50 billion project financing agreement. The deal is aimed at accelerating the deployment of renewable energy projects across rural areas.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4178,
+    "Time": "2026-08-21T14:56:51Z",
+    "Title": "BPP blocks inflated contracts, saves FG N1.4trn in 18 months",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/08/bpp-blocks-inflated-contracts-saves-fg-n1-4trn-in-18-months/",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The Bureau of Public Procurement (BPP) reports saving the Federal Government approximately N1.4 trillion over an 18-month period by identifying and blocking inflated contracts. The agency is implementing price benchmarks to ensure value for money in public procurement processes.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4172,
     "Time": "2026-08-22 01:27:00",
     "Title": "SEC Wants a Live Feed Into Your Crypto Wallet. Nigeria Isn\u2019t Ready for What That Means For Privacy",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The text references tax proposals within a new economic policy involving the Central Bank of Nigeria and legislative hearings.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3924,
-    "Time": "Wed, 19 Aug 2026 11:59:10 GMT",
-    "Title": "Wike bans use of FCT Green Areas as Car Dealership Lots - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPejl1NkgtdUp3U3pZaTE3WHBLc0dleFNiVGMydnpYRTNyZXRYS01ick8yZENRcDRoVXB5dmZaWmI5eTM1WlRUOW9SUlZWdFo3WURDX2pYX2ptNzVhamt5cHI4d0hwT3lpSUUyVVQ2UWFjV3FzMVljOEEzLWdRbTdHcFdpLXVkU25s?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Nyesom Wike, representing the FCT Administration, has banned the use of designated green areas within the Federal Capital Territory as car dealership lots.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3917,
-    "Time": "2026-08-18 19:31:31",
-    "Title": "NPERA Commences Operations As Nigerian Ports Economic Regulator",
-    "Source": "latestnigeriannews",
-    "URL": "https://www.latestnigeriannews.com/p/373611/npera-commences-operations-as-nigerian-ports-economic-regulator.html",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigerian Ports Economic Regulator Agency (NPERA) has officially commenced operations as the economic regulator for Nigerian ports.",
     "Status": "Unread",
     "Engine": "ollama"
   }
