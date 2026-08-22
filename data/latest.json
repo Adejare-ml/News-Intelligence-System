@@ -1,5 +1,41 @@
 [
   {
+    "ID": 4200,
+    "Time": "2026-08-21T23:21:06Z",
+    "Title": "EFCC unfreezes Osun accounts after Tinubu\u2019s order",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/efcc-unfreezes-osun-accounts-after-tinubus-order/",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The EFCC has unfrozen the accounts of the Osun State Government following an order from President Bola Tinubu. The accounts were previously frozen to prevent the alleged diversion of public funds.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4196,
+    "Time": "Sat, 22 Aug 2026 19:40:00 GMT",
+    "Title": "PENGASSAN elects Olabiyi-Agoro as new president - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdXE2ajZ0ZmFzbjNWWjRrLWhDX090aDAzbUY4ZnFOMThDazVGazVLWklEcFcxeUR4dWVDZkYyM1pBUlpXMDc2SUJBY0ktaFA4QUxfVmxTM3RPZ1RRUEFYbEZiZnRNLVRLdXZVOUhwRW1hX1A4VG9Wa1B3Wko2WGNRY0JJbXRQRzRP?oc=5",
+    "Category": "Other",
+    "Risk Score": 10,
+    "Summary": "The Petroleum and Natural Gas Senior Staff Association of Nigeria (PENGASSAN) has elected Olabiyi-Agoro as its new president.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4192,
+    "Time": "Sat, 22 Aug 2026 17:04:19 GMT",
+    "Title": "Gov Lawal hails Senator Yari\u2019s appointment as President Tinubu\u2019s campaign DG - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTFd1a2IwV2lXRlNaSEt4QzU5M3kxTzNFQkk0ZUVtS0JnZ01ZTWZmQ0hnbzhucU51MGhjaVFfZW9QTloyOTUtaFJqcjBUU3haSExDM0xNTF9YVFpadHRMQW54dldPYkFFaVE5U1JDOWFvb2hKWDU2VzVENVJONmhRQ09Cc0E5YW12Q0ExMTFEZHVIQzg5ZmRpdFRpbVFXYXZEQlhkWG1rSnJCRDQ3a01jQ1pwSVBvVXNiRUEzek5EdnNELUpO?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Governor Lawal expressed support for the appointment of Senator Yari as the campaign Director General for President Tinubu.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4181,
     "Time": "2026-08-21T13:29:11Z",
     "Title": "REA, Alpha Morgan Bank seal N50bn deal to fund renewable energy projects",
@@ -680,42 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Federal Government of Nigeria reported spending \u20a630.64 trillion on wages, debt servicing, and infrastructure over a 31-month period, as disclosed by a Minister.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3938,
-    "Time": "Wed, 19 Aug 2026 16:19:26 GMT",
-    "Title": "NBC warns broadcasters, online publishers, others against election disinformation - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbTNXT2Zwb1p4dmo2SnFwMzZUb1FiTFo5WXRfV25nOHVTdHlfSVZKQldyOUR5VHo2dDNrOEMteW1SOW5WalUxVndpZ2JnS0JyQnVkZGRiLXVYLUl6bjNDelBIVTR1MGt3aURJZ0p1M3dWRU1KVUlhd2ItQmZHMVVYNS1wY2gxbDhzQWZGOTZnRFU3SVgxTVBGeHpXVWxOYXBtSHUzLW80dVRoZVlKSG81RExzRQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The National Broadcasting Commission (NBC) has issued a warning to broadcasters and online publishers regarding the dissemination of election disinformation.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3937,
-    "Time": "Wed, 19 Aug 2026 14:34:16 GMT",
-    "Title": "Ekiti approves \u20a63b for construction of new high court office complex - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTFVQRG9vTDU5dnNZUWFyMVJ5MngyazVCbm9YMHNxa0VlUEFsX19IT0dzTzFBSEc0bnVZYjNoOF85bW5HRVROOEw0Ni1CVzZXTlFIY3pQQ0Jlenl6MEZpSTVubERqZFZINEtUNGNGejRVblJQbVZ3LTUwNUl6SXp0ZkJndkdpN2VhdERCUEtLSUJ1N011S1gzUnplb1NTT0xiUG1ocQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Ekiti State Government has approved \u20a63 billion for the construction of a new high court office complex.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3932,
-    "Time": "Mon, 17 Aug 2026 19:29:10 GMT",
-    "Title": "Tax proposals contained in the President's new economic policy. hearings..., ninety-second Congress, first session .../ - Central Bank of Nigeria",
-    "Source": "Central Bank of Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9oM2NNdXZsM0RwMHNzNlNNYUg1NklrekNHaFZZYjRNbW1wa0RNY1BRQ0ZrVjRMOEdGZ1BVTnRUZ3ZwUHB0VGlFdVo4eEM1cndwZVlORDNRNG44dVF5SjdrcV9VMTEzcGRrc21NMjNmamM4U290MjNmWU1leHJ4dw?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The text references tax proposals within a new economic policy involving the Central Bank of Nigeria and legislative hearings.",
     "Status": "Unread",
     "Engine": "ollama"
   }
