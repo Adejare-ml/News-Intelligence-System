@@ -1,5 +1,53 @@
 [
   {
+    "ID": 4266,
+    "Time": "2026-08-23 11:25:37",
+    "Title": "Why Dangote is offering stake to three African countries in new refinery",
+    "Source": "legit",
+    "URL": "https://www.legit.ng/business-economy/energy/1726763-dangote-begins-refinery-construction-offers-east-african-countries-30-stake/",
+    "Category": "Company",
+    "Risk Score": 65,
+    "Summary": "Aliko Dangote is offering equity stakes in the new Dangote refinery to three African countries. This indicates a potential shift in ownership and strategic corporate restructuring to attract sovereign investment.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4265,
+    "Time": "2026-08-22T19:37:49Z",
+    "Title": "PENGASSAN gets new president, vows to fight casualisation",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/pengassan-gets-new-president-vows-to-fight-casualisation/",
+    "Category": "Company",
+    "Risk Score": 10,
+    "Summary": "Bosun Olabiyi-Agoro has been elected as the new President of the Petroleum and Natural Gas Senior Staff Association of Nigeria (PENGASSAN), succeeding Festus Osifo.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4262,
+    "Time": "Sun, 23 Aug 2026 18:09:38 GMT",
+    "Title": "Nwabueze defends Made-in-Nigeria office, posts documents after ICPC \u2018fake agency\u2019 claim - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOM3VQcXJ2SURaQTRjbnhTbm5ZeHRoaS1TVnphblVvcXNremt5T3FGS3FCMnQtTlNyeU1MNTNOMUpxY0hGUWJvX0phLThvNFIybFdKV0pyRWJBYnBEdDZnVDdteHhPb2t1em5KOXlQVVZoM0U3WlhOdWRJLWgwWGRCWGZzblVhSDFIb1lLZ0cxUXk5TE0zY09VYXZiWVpqSmZIU1AwV3lNcUZMc093MEE3ekdNWmNiNmJPM09rZzlMYi1oN05IcGJRWHpKMmJCWWtCX0pMMmI1Wlc?oc=5",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "A dispute has emerged between Nwabueze and the ICPC regarding the legitimacy of a 'Made-in-Nigeria' office. The ICPC has alleged the office is a 'fake agency', while Nwabueze has released documents to defend its authenticity.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4260,
+    "Time": "Sun, 23 Aug 2026 19:41:54 GMT",
+    "Title": "Binance halts transactions with 17 crypto platforms in Nigeria, others - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRVJzZDdZQmZyUjBNcDcza3BjQlc1UTBxTlRuMi1yVWxlSm41YzJYaUxwOEM4clJQYV9qWkFYOGxGSnpqNk9wcEdtbk13aGVrVFhqWnpkaUdyTmNFbUlseFZySENHTDB5MEZyREc2Y19VMW5vS1JwM2tGVk9BeHNUQ1BjZkk1ck40RVJtSm1FdUo4UUd4TWFadlF0TQ?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Binance has suspended transactions with 17 cryptocurrency platforms operating in Nigeria and other regions.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4255,
     "Time": "2026-08-23 05:20:15",
     "Title": "Taraba govt launches Climate Change Policy and Action Plan",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 40,
     "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has ordered the withdrawal of products from circulation due to the use of deceptive labeling.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3973,
-    "Time": "Wed, 19 Aug 2026 20:32:00 GMT",
-    "Title": "BPP Saves N1.5tr from procurement reforms, benchmarking in 18 months - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOQ3ZGYWUzcFh6MGVOWnU3TzFtY1NJMElCaTNQcUtkYTE4UGRTZ3h5ampITzl6UDZQQ3l1MHRkZk01U3I4cVJvSXJFTmd4MThjSlZQUDU3d2lDWXBRTngxaGdrWWFrbWJVNUpvaHJYSnRXVnZFMmRKWmRpOENKc0ZaNXJ5VFRmajJNSTNUc0h0WDNycEpBN0Nudw?oc=5",
-    "Category": "Government",
-    "Risk Score": 0,
-    "Summary": "The Bureau of Public Procurement (BPP) has saved the Nigerian government N1.5 trillion in 18 months through procurement reforms and benchmarking.",
-    "Status": "Unread",
-    "Engine": "nvidia"
-  },
-  {
-    "ID": 3970,
-    "Time": "2026-08-19 11:24:55",
-    "Title": "FCCPC orders recall of products with misleading labels",
-    "Source": "dailypost",
-    "URL": "https://dailypost.ng/2026/08/19/fccpc-orders-recall-of-products-with-misleading-labels/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has ordered a recall of products found to have misleading labels.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3965,
-    "Time": "2026-08-19 11:26:31",
-    "Title": "Wike orders probe of FCT directors over illegal car lots on green areas",
-    "Source": "sunnewsonline",
-    "URL": "https://thesun.ng/wike-orders-probe-of-fct-directors-over-illegal-car-lots-on-green-areas/",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "Minister Nyesom Wike has ordered a probe into directors of the Federal Capital Territory (FCT) administration regarding the illegal establishment of car lots on designated green areas.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3963,
-    "Time": "2026-08-18T17:51:48Z",
-    "Title": "AIR PEACE PICKETING: Due process followed, we owe passengers nothing \u2013 Unions",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/air-peace-picketing-due-process-followed-we-owe-passengers-nothing-unions/",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "Labor unions in the air transport sector have picketed Air Peace, claiming the industrial action is lawful. The unions are disputing operational or labor-related grievances, while the airline maintains its position on passenger and employee obligations.",
     "Status": "Unread",
     "Engine": "ollama"
   }
