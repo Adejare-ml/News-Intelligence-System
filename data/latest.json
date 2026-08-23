@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4217,
+    "Time": "2026-08-21T23:53:23Z",
+    "Title": "Maryam: EFCC bows to pressure",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/maryam-efcc-bows-to-pressure/",
+    "Category": "Legal",
+    "Risk Score": 20,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has withdrawn charges against Maryam Shehu, a student of Bayero University, Kano, following public pressure and backlash.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4216,
+    "Time": "2026-08-22T00:05:12Z",
+    "Title": "FG targets 80% electricity access within five years",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/fg-targets-80-electricity-access-within-five-years/",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "The Federal Government of Nigeria has announced a strategic target to increase electricity access to over 80% within five years. The plan also aims to bridge the gap between installed and available power generation within a three-year timeframe.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4200,
     "Time": "2026-08-21T23:21:06Z",
     "Title": "EFCC unfreezes Osun accounts after Tinubu\u2019s order",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Special Adviser to the President on Power, Dr. Lanre Babalola, has called for the Nigerian electricity sector to move away from its reliance on Federal Government funding. He emphasizes the need for private sector investment and sustainable financing to ensure sector stability.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3943,
-    "Time": "2026-08-18T15:14:52Z",
-    "Title": "NSDC mobilises $1bn investment pipeline for sugar self-sufficiency",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/nsdc-mobilises-1bn-investment-pipeline-for-sugar-self-sufficiency/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The National Sugar Development Council (NSDC) has organized a $1 billion investment pipeline aimed at achieving sugar self-sufficiency in Nigeria. This initiative focuses on accelerating domestic production and strengthening enforcement of industry regulations.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3940,
-    "Time": "Wed, 19 Aug 2026 16:44:47 GMT",
-    "Title": "How FG spent \u20a630.64 trillion on wages, debt, infrastructure in 31 months \u2013 Minister - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNUFFkd3JKTS1DUWZJMEliV3dXMHVMMmhmMVRiMzVIb19valBsdTdqMlA1aDc0NzBVVkZGd0l1dVM4b3ZqUVlDdElxU1RxWGx6bzkycURJaUYtb0Y4ajlzWWR1c0p1NHdBZ0x5cXdKMU1YREFDTHFMaXAxMDNnWmI2RDFSNmxHaVM3bXpZUHdUa3RBdnBSbU1OdllDQnN0N29GcmJ6QWJhNExoakoyYWYxVjBCT0dlRWZiVE4wRUdkOUJkaHhvOXhPVkxDaTdleEVMc1k0blBLc3JUT3RpdFFKcmptd2Q0N2ZI?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Federal Government of Nigeria reported spending \u20a630.64 trillion on wages, debt servicing, and infrastructure over a 31-month period, as disclosed by a Minister.",
     "Status": "Unread",
     "Engine": "ollama"
   }
