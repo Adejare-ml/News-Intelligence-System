@@ -145,6 +145,46 @@ class TestProductionGating:
         assert "SEED_DEMO_ARTICLES is on" in caplog.text
 
 
+class TestThinIsAssessedAfterFiltering:
+    def test_junk_heavy_cycle_is_still_flagged_as_thin(self, monkeypatch, caplog):
+        """
+        The thin-cycle check used to run on the raw fetch count, before the
+        stub/Nigeria/48h/dedup filters that define what is publishable -- so
+        forty junk feed entries masked a cycle that actually yielded two
+        stories, and neither the warning nor the opt-in padding ever fired.
+        """
+        recent = (datetime.now() - timedelta(hours=2)).isoformat()
+        junk = [{"title": f"Global markets update {i}", "url": f"https://elsewhere.test/{i}",
+                 "source": "Wire", "raw_text": "European equities drifted sideways today.",
+                 "published_at": recent}
+                for i in range(40)]
+        # Distinct titles: near-identical ones would be fuzzy-deduplicated
+        # into a single story and undercount the survivors.
+        real = [
+            {"title": "Dangote Cement Plc announces ownership change",
+             "url": "https://real.test/1", "source": "Punch",
+             "raw_text": "Dangote Cement Plc announced a change of ownership "
+             "in Lagos today.", "published_at": recent},
+            {"title": "EFCC opens procurement probe at power ministry",
+             "url": "https://real.test/2", "source": "Punch",
+             "raw_text": "The EFCC in Abuja opened a procurement investigation "
+             "today.", "published_at": recent},
+        ]
+        monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss",
+                            classmethod(lambda cls: junk + real))
+        for name in ("fetch_news_api", "fetch_gnews", "fetch_guardian_news",
+                     "fetch_newsdata_io"):
+            monkeypatch.setattr(NewsIngestionService, name, staticmethod(lambda: []))
+        monkeypatch.setattr(settings, "SEED_DEMO_ARTICLES", False)
+
+        with caplog.at_level("WARNING"):
+            result = NewsIngestionService.collect_all()
+
+        assert len(result) == 2
+        assert "Only 2 publishable article(s)" in caplog.text
+        assert not any(a.get("is_synthetic") for a in result)
+
+
 def test_explicit_seed_mode_still_generates():
     """run_pipeline --seed is a deliberate request and is unaffected."""
     articles = NewsIngestionService.generate_mock_news(5)

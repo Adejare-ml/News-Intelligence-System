@@ -386,7 +386,10 @@ class LLMService:
         try:
             from openai import OpenAI
             api_key = settings.OLLAMA_API_KEY or "ollama"
-            client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=3.0)
+            # 15s to match the report-generation call above: 3s was shorter
+            # than a local model's time-to-first-token, so extraction always
+            # timed out and the cascade skipped Ollama entirely.
+            client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=15.0)
             
             safe_title = title.replace("<", "").replace(">", "")
             safe_text = text.replace("<", "").replace(">", "")
@@ -454,29 +457,66 @@ class LLMService:
             return None
 
     @staticmethod
+    def _balanced_json_slice(text: str) -> str:
+        """Returns the substring from the first '{' to its balanced '}'.
+
+        Depth counting is string-aware (braces inside JSON strings, and
+        escaped quotes inside those strings, don't move the depth), so a
+        summary containing '{' can't truncate the slice. Returns '' when
+        no balanced object exists.
+        """
+        start = text.find("{")
+        if start == -1:
+            return ""
+        depth = 0
+        in_string = False
+        escaped = False
+        for i in range(start, len(text)):
+            ch = text[i]
+            if in_string:
+                if escaped:
+                    escaped = False
+                elif ch == "\\":
+                    escaped = True
+                elif ch == '"':
+                    in_string = False
+            elif ch == '"':
+                in_string = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return text[start:i + 1]
+        return ""
+
+    @staticmethod
     def _extract_json_block(text_content: str) -> Dict[str, Any]:
-        """Extracts and parses JSON object from LLM response text using regex, handling markdown blocks."""
+        """Extracts and parses the JSON object from LLM response text.
+
+        Tries the fenced ```json block first; otherwise falls back to a
+        brace-depth scan of the whole response. The old fallback naively
+        stripped fence markers and then regex-grabbed greedily, so any
+        prose after the closing fence (models love a trailing "Let me
+        know if...") poisoned the parse and dropped the article.
+        """
         if not text_content:
             return None
         import re
-        cleaned = text_content.strip()
-        if "```" in cleaned:
-            match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", cleaned, re.DOTALL)
-            if match:
-                cleaned = match.group(1)
-            else:
-                cleaned = cleaned.replace("```json", "").replace("```", "").strip()
-                
-        if not cleaned.startswith("{"):
-            match = re.search(r"(\{.*\})", cleaned, re.DOTALL)
-            if match:
-                cleaned = match.group(1)
-                
-        try:
-            return json.loads(cleaned)
-        except Exception as e:
-            logger.warning(f"Failed to parse extracted JSON block: {e}")
-            return None
+        candidates = []
+        match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text_content, re.DOTALL)
+        if match:
+            candidates.append(match.group(1))
+        scanned = LLMService._balanced_json_slice(text_content)
+        if scanned and scanned not in candidates:
+            candidates.append(scanned)
+
+        for cleaned in candidates:
+            try:
+                return json.loads(cleaned)
+            except Exception as e:
+                logger.warning(f"Failed to parse extracted JSON block: {e}")
+        return None
 
     @classmethod
     def _run_local_fallback(cls, title: str, text: str) -> Dict[str, Any]:

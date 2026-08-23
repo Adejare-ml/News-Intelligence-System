@@ -206,13 +206,42 @@ def is_off_topic(title: Any, summary: Any = None) -> bool:
 # network and no models. run_pipeline re-exports it, so existing imports and
 # tests/test_entity_filter.py are unaffected.
 
-NEWS_OUTLET_MARKERS = (
-    "guardian", "premium times", "punch", "vanguard", "daily post", "dailypost",
-    "thisday", "this day", "nairametrics", "channels tv", "channels television",
-    "leadership newspaper", "the nation", "businessday", "business day", "tribune",
-    "sahara reporters", "peoples gazette", "the cable", "thecable", "legit.ng",
+# Three matching strengths, because a bare substring test dropped real
+# companies: "tribune" matched "Industrial Tribunal", "the nation" matched
+# "The National Pension Commission", and "guardian" matched "Guardian Life
+# Assurance Plc" -- none of which is a newspaper.
+
+# Domain-style handles: these only ever appear as (part of) an outlet's web
+# name, so plain substring stays correct ("dailypost", "www.thecable.ng").
+DOMAIN_OUTLET_MARKERS = (
+    "dailypost", "thecable", "legit.ng", "nairametrics", "businessday",
+)
+
+# Distinctive outlet names: safe anywhere in the string, but only as whole
+# words ("bbc" must not fire inside an unrelated token).
+DISTINCT_OUTLET_MARKERS = (
+    "premium times", "daily post", "thisday", "channels tv",
+    "channels television", "leadership newspaper", "business day",
+    "sahara reporters", "peoples gazette", "the cable",
     "reuters", "bloomberg", "associated press", "al jazeera", "bbc", "cnn",
 )
+
+# Ordinary words that are outlet names only when the *whole* name is the
+# outlet: the marker plus generic outlet qualifiers. "Punch Newspapers" and
+# "The Guardian Nigeria News" are publications; "Guardian Life Assurance
+# Plc" and "Punch Bowl Ltd"-style names carry non-qualifier words and stay.
+AMBIGUOUS_OUTLET_MARKERS = (
+    "guardian", "punch", "vanguard", "tribune", "the nation", "this day",
+)
+
+_OUTLET_QUALIFIERS = {
+    "the", "nigeria", "nigerian", "news", "newspaper", "newspapers",
+    "online", "ng", "media", "daily", "ltd", "limited",
+}
+
+# Kept as the combined tuple for existing importers (run_pipeline re-exports
+# it; tests iterate it to build fixtures).
+NEWS_OUTLET_MARKERS = DOMAIN_OUTLET_MARKERS + DISTINCT_OUTLET_MARKERS + AMBIGUOUS_OUTLET_MARKERS
 
 # Navigation furniture scraped from article pages.
 NON_ENTITY_TERMS = {
@@ -221,9 +250,43 @@ NON_ENTITY_TERMS = {
 }
 
 
+def _word_bounded(marker: str, cleaned: str) -> bool:
+    return re.search(r"\b" + re.escape(marker) + r"\b", cleaned) is not None
+
+
 def is_publication_or_furniture(name: Any) -> bool:
     """True when an extracted organization is really the publication or page chrome."""
     cleaned = " ".join(str(name or "").replace("\xa0", " ").split()).lower()
     if not cleaned or cleaned in NON_ENTITY_TERMS:
         return True
-    return any(marker in cleaned for marker in NEWS_OUTLET_MARKERS)
+    if any(marker in cleaned for marker in DOMAIN_OUTLET_MARKERS):
+        return True
+    if any(_word_bounded(marker, cleaned) for marker in DISTINCT_OUTLET_MARKERS):
+        return True
+    for marker in AMBIGUOUS_OUTLET_MARKERS:
+        if _word_bounded(marker, cleaned):
+            residue = set(cleaned.split()) - set(marker.split())
+            if residue <= _OUTLET_QUALIFIERS:
+                return True
+    return False
+
+
+def organization_candidates(names: Iterable[Any]) -> list:
+    """Reduces NER organization names to (name, entity_type) pairs worth persisting.
+
+    Lives here (not in the Celery task that uses it) so it can be tested
+    without celery/SQLAlchemy installed. Without this guard the Celery
+    path resolved "Reuters" or "Punch" into the entity directory every 30
+    minutes -- run_pipeline applies the same publication check before
+    writing companies. The company-vs-agency guess mirrors the heuristic
+    previously inlined in tasks.py.
+    """
+    out = []
+    for name in names or []:
+        if is_publication_or_furniture(name):
+            continue
+        ent_type = "agency" if any(
+            kw in str(name).lower() for kw in ["commission", "department", "ministry", "federal"]
+        ) else "company"
+        out.append((name, ent_type))
+    return out

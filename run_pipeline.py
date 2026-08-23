@@ -193,12 +193,15 @@ def run_pipeline(seed: bool = False):
             logger.info("Redundancy Buffer: No new articles found. Skipping LLM execution to save quota.")
             generated_message = "No significant change. Script was run at this specific time."
         db._append_row("Daily Reports", {
-            "Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            # Date-only, like the normal report path writes -- routes.py
+            # matches this column by exact string, and day_totals() keys on
+            # it. The run's time lives in the Generated text.
+            "Date": datetime.now().strftime("%Y-%m-%d"),
             "Total Articles": 0,
             "High Risk": 0,
             "Appointments": 0,
             "Procurement": 0,
-            "Generated": generated_message
+            "Generated": f"{generated_message} ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})"
         })
         return
         
@@ -257,7 +260,10 @@ def run_pipeline(seed: bool = False):
         #    told to reject sport and celebrity stories and mostly does, but
         #    when it does not, the result is a football transfer published at
         #    risk 40 under category "Company". The guard overrides it.
-        off_topic = relevance.off_topic_reason(title, analysis.get("summary_executive"))
+        # "summary" is the key every producer in the cascade actually sets;
+        # "summary_executive" was never set by anything, so the guard was
+        # silently matching against the title alone.
+        off_topic = relevance.off_topic_reason(title, analysis.get("summary"))
         if not analysis.get("relevant", False) or off_topic:
             if off_topic:
                 logger.info(
@@ -266,7 +272,7 @@ def run_pipeline(seed: bool = False):
                 )
             else:
                 logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
-            db.add_article({
+            filtered_saved = db.add_article({
                 "ID": "",
                 "Time": item.get("published_at") or datetime.now().isoformat(),
                 "Title": title,
@@ -278,7 +284,10 @@ def run_pipeline(seed: bool = False):
                 "Status": "Filtered",
                 "Engine": analysis.get("engine", "")
             })
-            existing_urls.add(url)
+            # Only cache the URL when the prevention row actually persisted,
+            # so a failed write is retried instead of silently skipped.
+            if filtered_saved:
+                existing_urls.add(url)
             import time
             time.sleep(3.5)
             continue
