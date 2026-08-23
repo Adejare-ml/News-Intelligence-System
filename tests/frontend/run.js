@@ -30,11 +30,13 @@ const FILES = [
     path.join(JS_DIR, "entity-key.js"),
     path.join(JS_DIR, "report-markdown.js"),
     path.join(JS_DIR, "router.js"),
+    path.join(JS_DIR, "datatable.js"),
     path.join(__dirname, "runner.js"),
     path.join(__dirname, "psc-core.test.js"),
     path.join(__dirname, "entity-key.test.js"),
     path.join(__dirname, "router.test.js"),
-    path.join(__dirname, "report-markdown.test.js")
+    path.join(__dirname, "report-markdown.test.js"),
+    path.join(__dirname, "datatable.test.js")
 ];
 
 const sandbox = {
