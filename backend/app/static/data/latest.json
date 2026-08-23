@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4255,
+    "Time": "2026-08-23 05:20:15",
+    "Title": "Taraba govt launches Climate Change Policy and Action Plan",
+    "Source": "naijaonpoint_ng",
+    "URL": "https://naijaonpoint.com.ng/taraba-govt-launches-climate-change-policy-and-action-plan/",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The Taraba State government has launched a Climate Change Policy and Action Plan to address environmental challenges.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4248,
+    "Time": "Sat, 22 Aug 2026 09:21:48 GMT",
+    "Title": "Meet head of Nigeria\u2019s new \u2018fake\u2019 agency, 20 state coordinators, reps in China, US - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVldfLTZPLXdnR0FILTVXVTNJYVJDeUliNGNIdVJfQ2VzQkx1WDhrRlVNV0dyelJyU2tjWlpDbWpLRWt5b2xSRUx3MFJsYTlMRG9BVzgzVV90dmRkUFFveHFjWEhHZzlzQnhrUWRicHlHSDNJTTI4YXgwSXNLenV3SVJBWlhlVFh3UHZyNUp2dGNCVWpleDZOM2Nud3Judw?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The article reports on the establishment of a new government agency and the appointment of its head, 20 state coordinators, and international representatives in China and the US.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4230,
     "Time": "2026-08-22T12:14:31Z",
     "Title": "FEC approves two new NIGCOMSAT satellites to expand broadband coverage",
@@ -692,30 +716,6 @@
     "Category": "Company",
     "Risk Score": 30,
     "Summary": "Labor unions in the air transport sector have picketed Air Peace, claiming the industrial action is lawful. The unions are disputing operational or labor-related grievances, while the airline maintains its position on passenger and employee obligations.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3962,
-    "Time": "2026-08-18T23:03:00Z",
-    "Title": "Don\u2019t dismiss US 2026 Fiscal Transparency Report, BudgIT tells FG",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/dont-dismiss-us-2026-fiscal-transparency-report-budgit-tells-fg/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "BudgIT, a civic-tech organization, has urged the Nigerian Federal Government to engage with and implement the recommendations of the US 2026 Fiscal Transparency Report. The organization emphasizes the need for greater transparency and accountability in the management of public finances.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3954,
-    "Time": "Wed, 19 Aug 2026 16:28:13 GMT",
-    "Title": "US Coast Guard lifts 12-year condition of entry on vessels from Nigeria - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcUFsNFl5bDRTbnplb2dFODByVVpPa29iNVdJSEZfR1ZTU0xGWHI2QzY1Rk5mOXp5M09ta0pMV1ZXNV9DRjBiZjh3Qk9nVE5rMmIyRFdCcmlXZXlEUF9xelpJT3RYUk9JdG9GelFwblBRMXkzdkk5VUV6Z0w2dmdIbkZRckhKTHNnUkhVMlQtaHRBTXVXWnZNcVdxVGYzMHRfQzVrVEloQWdpRkdTTHRuOW9nOG9uYVotU0Y5MEF2NE51bUh3SHR2SVR2OElqVGNvWkJr?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The US Coast Guard has removed a 12-year condition of entry previously imposed on vessels arriving from Nigeria, signaling a regulatory shift in maritime security requirements.",
     "Status": "Unread",
     "Engine": "ollama"
   }
