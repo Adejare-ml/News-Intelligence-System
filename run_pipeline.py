@@ -25,7 +25,7 @@ logging.basicConfig(
 logger = logging.getLogger("run_pipeline")
 
 from backend.app.core.config import settings
-from backend.app.services.ingestion import NewsIngestionService
+from backend.app.services.ingestion import NewsIngestionService, parse_feed_date
 from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import relevance
 from backend.app.db.excel_db import db
@@ -166,7 +166,16 @@ def run_pipeline(seed: bool = False):
         existing_urls = {row.get("URL") for row in existing_articles if row.get("URL")}
     except Exception as e:
         logger.error(f"Failed to fetch existing articles for deduplication: {e}")
+        existing_articles = []
         existing_urls = set()
+
+    # Articles published by earlier runs today, reduced to what the sheet
+    # retains. The brief compiles over these plus this run's records, so the
+    # front page carries the day's intelligence rather than being overwritten
+    # by whichever run happened to go last -- the 23:00 run used to replace a
+    # rich morning edition with a one-article stub. Snapshot is pre-loop, so
+    # nothing added this run is double-counted.
+    prior_today = published_today(existing_articles)
         
     # --- REDUNDANCY BUFFER ---
     new_candidates = [item for item in candidates if item.get("url") not in existing_urls]
@@ -402,7 +411,7 @@ def run_pipeline(seed: bool = False):
 
     # 3. Compile and Write Daily Report Row
     if new_articles_count > 0 or seed:
-        compile_daily_report(run_records)
+        compile_daily_report(run_records, prior_today)
 
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
     export_static_json_database()
@@ -417,18 +426,128 @@ def run_pipeline(seed: bool = False):
 
     return {"status": "success", "processed": new_articles_count}
 
-def compile_daily_report(records: List[Dict[str, Any]]):
-    """Compiles statistics and writes the daily intelligence summary markdown."""
+def published_today(article_rows: List[Dict[str, Any]], today=None) -> List[Dict[str, Any]]:
+    """Reduce today's already-published Articles rows to report-record shape.
+
+    The sheet keeps Title/Source/URL/Category/Risk Score/Summary but not the
+    full analysis, so these records carry what a brief needs and nothing that
+    would have to be invented. The Time cell arrives in three formats (RFC
+    2822, ISO with Z, plain ISO); parse_feed_date already reads all of them.
+    """
+    today = today or datetime.now().date()
+    reduced = []
+    for row in article_rows or []:
+        stamp = parse_feed_date(row.get("Time"))
+        if stamp is None or stamp.date() != today:
+            continue
+        try:
+            score = float(str(row.get("Risk Score", "")).strip() or 0)
+        except (TypeError, ValueError):
+            score = 0.0
+        reduced.append({
+            "title": row.get("Title"),
+            "source": row.get("Source"),
+            "url": row.get("URL"),
+            "analysis": {
+                "summary": row.get("Summary") or "",
+                "category": row.get("Category") or "",
+                "risk_score": score,
+                # The sheet keeps only the numeric score; >=70 mirrors the
+                # dashboard's own critical-alert threshold (app.js).
+                "risk_level": "High" if score >= 70 else "Standard",
+            },
+        })
+    return reduced
+
+
+def _int_cell(value: Any) -> int:
+    """Sheet cells come back as int, float, or string; NaN/blank count as 0."""
+    try:
+        return int(float(str(value).strip() or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def day_totals(report_rows: List[Dict[str, Any]], today_str: str) -> Dict[str, int]:
+    """Sum today's earlier per-run Daily Reports rows.
+
+    Each run writes a per-run row (that stays per-run -- it is the time
+    series), so the exact day-to-date totals are the sum of today's rows
+    plus the current run. Date is compared on its first 10 chars because a
+    historical branch wrote full timestamps into the Date column.
+    """
+    totals = {"Total Articles": 0, "High Risk": 0, "Appointments": 0, "Procurement": 0}
+    for row in report_rows or []:
+        if str(row.get("Date", "")).strip()[:10] != today_str:
+            continue
+        for key in totals:
+            totals[key] += _int_cell(row.get(key))
+    return totals
+
+
+def report_payload(records: List[Dict[str, Any]], summary_limit: int = 400) -> List[Dict[str, Any]]:
+    """Shape records for the report prompt, truncating long summaries.
+
+    A 60-article day would otherwise serialize every full summary into the
+    prompt; past ~400 chars a summary stops adding signal and starts
+    crowding out other articles' context.
+    """
+    payload = []
+    for r in records or []:
+        analysis = dict(r.get("analysis") or {})
+        summary = analysis.get("summary")
+        if isinstance(summary, str) and len(summary) > summary_limit:
+            analysis["summary"] = summary[:summary_limit].rstrip() + "..."
+        payload.append({
+            "title": r.get("title"),
+            "source": r.get("source"),
+            "url": r.get("url"),
+            "analysis": analysis,
+        })
+    return payload
+
+
+def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None):
+    """Compiles statistics and writes the daily intelligence summary markdown.
+
+    `records` is this run's fully-analysed output; `prior_today` is the
+    reduced form of articles earlier runs published today. The markdown brief
+    and its headline statistics cover the whole day; the Daily Reports row
+    written at the end stays strictly per-run, because day totals are
+    computed by summing those rows.
+    """
     now = datetime.now()
-    
+    prior_today = prior_today or []
+
     total = len(records)
     high_risk_count = sum(1 for r in records if r["analysis"].get("risk_level") in ["High", "Critical"])
     appointments_count = sum(1 for r in records if r["analysis"].get("event_type") == "Appointment")
     procurement_count = sum(1 for r in records if r["analysis"].get("event_type") == "Procurement" or r["analysis"].get("procurement"))
-    
+
+    # Day-to-date = today's earlier per-run rows + this run.
+    try:
+        earlier_rows = db.get_daily_reports()
+    except Exception as exc:
+        logger.error(f"Could not read earlier Daily Reports rows for day totals: {exc}")
+        earlier_rows = []
+    today_str = now.strftime("%Y-%m-%d")
+    day = day_totals(earlier_rows, today_str)
+    runs_today = 1 + sum(1 for row in earlier_rows if str(row.get("Date", "")).strip()[:10] == today_str)
+    day_total = day["Total Articles"] + total
+    day_high = day["High Risk"] + high_risk_count
+    day_appointments = day["Appointments"] + appointments_count
+    day_procurement = day["Procurement"] + procurement_count
+
     logger.info("Calling LLM API (Gemini -> NVIDIA -> Ollama -> OpenAI) to compile rich markdown summary report...")
-    # Convert records to JSON string for LLM
-    raw_json_str = json.dumps(records, default=str)
+    # The model sees the whole day -- this run's full analyses plus the
+    # reduced records of what earlier runs already published -- wrapped with
+    # the date and coverage window the prompt declares authoritative.
+    day_records = records + prior_today
+    raw_json_str = json.dumps({
+        "report_date": today_str,
+        "coverage": f"All articles published on {today_str} up to {now.strftime('%H:%M')} (run {runs_today} of the day)",
+        "articles": report_payload(day_records),
+    }, default=str)
 
     try:
         generated_md, report_engine = LLMService.generate_daily_report(raw_json_str)
@@ -439,27 +558,32 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         logger.warning("All report providers failed. ALLOW_HEURISTIC_FALLBACK is on; writing deterministic rule-based report.")
         generated_md, report_engine = "", "rule-based"
 
-    if generated_md:
-        md = f"""# PSC & Company Daily Intelligence Report
+    # The header reports the day, not the run: this file is the site's front
+    # page, and per-run numbers made the last run of the day (often the
+    # smallest) look like the whole day's coverage.
+    header = f"""# PSC & Company Daily Intelligence Report
 **Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC+1)
-**Run Window:** Daily Crawler Exec
+**Run Window:** {today_str}, all runs to {now.strftime('%H:%M')} (run {runs_today} of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** {total}
-- **High Risk Signals:** {high_risk_count}
-- **Appointments Logged:** {appointments_count}
-- **Procurement Awards:** {procurement_count}
+- **Total Articles Processed:** {day_total}
+- **High Risk Signals:** {day_high}
+- **Appointments Logged:** {day_appointments}
+- **Procurement Awards:** {day_procurement}
 
 ---
+"""
 
+    if generated_md:
+        md = f"""{header}
 {generated_md}
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: {report_engine}).*"""
     else:
         # Fallback to deterministic rule-based executive summary report if Gemini API is offline/rate-limited
-        high_risk_items = [r for r in records if r.get("analysis", {}).get("risk_level") in ["High", "Critical"]]
-        key_items = [r for r in records if r.get("analysis", {}).get("risk_level") not in ["High", "Critical"]][:8]
+        high_risk_items = [r for r in day_records if r.get("analysis", {}).get("risk_level") in ["High", "Critical"]]
+        key_items = [r for r in day_records if r.get("analysis", {}).get("risk_level") not in ["High", "Critical"]][:8]
         appointments = [r for r in records if r.get("analysis", {}).get("event_type") == "Appointment"]
         procurement = [r for r in records if r.get("analysis", {}).get("event_type") == "Procurement" or r.get("analysis", {}).get("procurement")]
         
@@ -490,18 +614,7 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         if not proc_lines:
             proc_lines.append("*   *No new public procurement or executive board changes logged in this window.*")
 
-        md = f"""# PSC & Company Daily Intelligence Report
-**Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC+1)
-**Run Window:** Daily Crawler Exec
-
-## Summary Statistics
-- **Total Articles Processed:** {total}
-- **High Risk Signals:** {high_risk_count}
-- **Appointments Logged:** {appointments_count}
-- **Procurement Awards:** {procurement_count}
-
----
-
+        md = f"""{header}
 ### Key Developments
 
 {chr(10).join(key_dev_lines)}

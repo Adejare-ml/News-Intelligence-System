@@ -35,6 +35,7 @@ const FILES = [
     path.join(__dirname, "psc-core.test.js"),
     path.join(__dirname, "entity-key.test.js"),
     path.join(__dirname, "router.test.js"),
+    path.join(__dirname, "report-markdown.test.js"),
     path.join(__dirname, "datatable.test.js")
 ];
 

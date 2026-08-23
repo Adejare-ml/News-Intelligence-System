@@ -22,7 +22,12 @@
         || global.location.search.indexOf("static=1") !== -1;
     var DATA = isStatic ? "data" : "/api/v1";
 
-    var state = { records: [], summary: null, reports: [], filter: "all", query: "" };
+    // revealedOnce: the entrance animation belongs to the first paint only.
+    // Re-renders (filter clicks, search keystrokes) inject fresh [data-reveal]
+    // cards that no observer is watching -- without this flag they stayed at
+    // opacity 0 forever and filtering blanked the register for every visitor
+    // without prefers-reduced-motion.
+    var state = { records: [], summary: null, reports: [], filter: "all", query: "", revealedOnce: false };
 
     function el(id) { return doc.getElementById(id); }
 
@@ -351,31 +356,48 @@
         return hay.indexOf(state.query) !== -1;
     }
 
+    /**
+     * The register as the reader currently sees it: filter, search and the
+     * worst-first ordering applied. One definition, shared by the list
+     * renderer and both exporters -- exporting `state.records` while the
+     * user is looking at a filtered view silently hands them different data
+     * than the screen shows.
+     */
+    function visibleItems() {
+        if (!state.summary) return [];
+        return state.summary.annotated
+            .filter(function (i) { return matchesFilter(i) && matchesQuery(i); })
+            .slice()
+            // Worst first: a compliance reader wants the exceptions, not an
+            // alphabetical list.
+            .sort(function (a, b) {
+                var ha = a.flags.filter(function (f) { return f.severity === "high"; }).length;
+                var hb = b.flags.filter(function (f) { return f.severity === "high"; }).length;
+                if (ha !== hb) return hb - ha;
+                return b.flags.length - a.flags.length;
+            });
+    }
+
     function renderRegisterList() {
         var host = el("register-list");
         if (!host || !state.summary) return;
 
-        var items = state.summary.annotated.filter(function (i) {
-            return matchesFilter(i) && matchesQuery(i);
-        });
+        var items = visibleItems();
 
         if (!items.length) {
             host.innerHTML = '<p class="empty-note">No control records match this filter.</p>';
             return;
         }
 
-        // Worst first: a compliance reader wants the exceptions, not an
-        // alphabetical list.
-        items = items.slice().sort(function (a, b) {
-            var ha = a.flags.filter(function (f) { return f.severity === "high"; }).length;
-            var hb = b.flags.filter(function (f) { return f.severity === "high"; }).length;
-            if (ha !== hb) return hb - ha;
-            return b.flags.length - a.flags.length;
-        });
-
         host.innerHTML = items.map(function (item, idx) {
             return renderRegisterCard(item, idx);
         }).join("");
+
+        // Re-rendered cards appear in an already-visible region, so they get
+        // no scroll choreography: reveal them immediately. Only the first
+        // paint (before init() wires the IntersectionObserver) leaves them
+        // for initReveals.
+        if (Motion && state.revealedOnce) Motion.revealAll(host);
 
         host.querySelectorAll("[data-dossier]").forEach(function (btn) {
             btn.addEventListener("click", function () {
@@ -487,19 +509,40 @@
                     .slice()
                     .sort(function (a, b) { return String(b.Generated || "").localeCompare(String(a.Generated || "")); })
                     .forEach(function (r) {
-                        // Only offer editions whose text we actually hold.
-                        // Offering the rest and then silently rendering today's
-                        // brief instead is worse than not offering them.
-                        if (!String(r.Content || "").trim()) return;
+                        // Editions are offered when their text is resolvable:
+                        // inline Content, or an Archive File deployed under
+                        // data/archives/ and fetched on selection. Rows with
+                        // neither are skipped -- offering them and silently
+                        // rendering today's brief instead is worse.
                         var label = r.Generated || r.Date || "Edition";
-                        options.push('<option value="' + esc(label) + '">' + esc(label) + "</option>");
+                        var file = String(r["Archive File"] || "").trim();
+                        var value;
+                        if (String(r.Content || "").trim()) {
+                            value = "gen:" + label;
+                        } else if (/^[\w.-]+\.md$/.test(file)) {
+                            // Filename shape is validated so a corrupted sheet
+                            // cell can never turn into a path traversal.
+                            value = "file:" + file;
+                        } else {
+                            return;
+                        }
+                        options.push('<option value="' + esc(value) + '">' + esc(label) + "</option>");
                     });
                 select.innerHTML = options.join("");
 
                 select.addEventListener("change", function () {
                     if (select.value === "latest") { loadBrief(); return; }
+                    if (select.value.indexOf("file:") === 0) {
+                        var file = select.value.slice(5);
+                        fetch(DATA + "/archives/" + encodeURIComponent(file))
+                            .then(function (res) { return res.ok ? res.text() : ""; })
+                            .catch(function () { return ""; })
+                            .then(renderBrief);
+                        return;
+                    }
+                    var wanted = select.value.slice(4); // "gen:" prefix
                     var match = state.reports.filter(function (r) {
-                        return String(r.Generated) === select.value;
+                        return String(r.Generated || r.Date || "Edition") === wanted;
                     })[0];
                     renderBrief(match ? match.Content : "");
                 });
@@ -512,14 +555,30 @@
             copy.addEventListener("click", function () {
                 var body = el("brief-body");
                 if (!body) return;
-                global.navigator.clipboard.writeText(body.innerText).then(function () {
+                function flash(html) {
                     var original = copy.innerHTML;
-                    copy.innerHTML = '<i data-lucide="check"></i> Copied';
+                    copy.innerHTML = html;
                     if (global.lucide) global.lucide.createIcons();
                     setTimeout(function () {
                         copy.innerHTML = original;
                         if (global.lucide) global.lucide.createIcons();
                     }, 1800);
+                }
+                // clipboard.writeText rejects on file://, any non-secure
+                // context, or a denied permission -- previously an unhandled
+                // rejection and a button that never reacted. The fallback
+                // selects the brief so a manual Ctrl+C still works.
+                global.navigator.clipboard.writeText(body.innerText).then(function () {
+                    flash('<i data-lucide="check"></i> Copied');
+                }).catch(function () {
+                    flash('<i data-lucide="x"></i> Copy failed — text selected');
+                    try {
+                        var range = doc.createRange();
+                        range.selectNodeContents(body);
+                        var sel = global.getSelection();
+                        sel.removeAllRanges();
+                        sel.addRange(range);
+                    } catch (e) { /* selection unavailable: the label is the signal */ }
                 });
             });
         }
@@ -551,7 +610,12 @@
      * with =, +, - or @ are prefixed so a spreadsheet does not execute them.
      */
     function exportRegisterCsv() {
-        if (!state.records.length) return;
+        // What you see is what you export: the same filtered, searched,
+        // worst-first set the list is showing. Exporting the full register
+        // while a "Red flags" filter is active silently handed the reader
+        // rows the screen never showed.
+        var items = visibleItems();
+        if (!items.length) return;
 
         var headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Share Band",
             "Direct %", "Indirect %", "Voting Rights %", "Intermediate Entities", "Board Role",
@@ -563,11 +627,10 @@
             return '"' + s.replace(/"/g, '""') + '"';
         }
 
-        var ctx = PSC.buildContext(state.records);
-        var rows = state.records.map(function (r) {
-            var flags = PSC.redFlagsFor(r, ctx).map(function (f) { return f.title; }).join("; ");
+        var rows = items.map(function (item) {
+            var flags = item.flags.map(function (f) { return f.title; }).join("; ");
             return headers.map(function (h) {
-                return field(h === "Red Flags" ? flags : r[h]);
+                return field(h === "Red Flags" ? flags : item.record[h]);
             }).join(",");
         });
 
@@ -576,12 +639,17 @@
             : "";
         var csv = "﻿" + note + headers.map(field).join(",") + "\r\n" + rows.join("\r\n");
 
+        // The filename says which slice of the register this is, so a
+        // "red-flags only" file cannot be mistaken for the whole register.
+        var scope = (state.filter !== "all" ? "_" + state.filter : "")
+            + (state.query ? "_search" : "");
+
         var blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
         var url = URL.createObjectURL(blob);
         var link = doc.createElement("a");
         link.href = url;
         link.download = (state.summary && state.summary.isDemo ? "DEMO_" : "")
-            + "aura_psc_register_" + new Date().toISOString().slice(0, 10) + ".csv";
+            + "aura_psc_register" + scope + "_" + new Date().toISOString().slice(0, 10) + ".csv";
         doc.body.appendChild(link);
         link.click();
         doc.body.removeChild(link);
@@ -599,8 +667,11 @@
             .then(loadBrief)
             .then(loadArchive)
             .then(function () {
-                // Newly injected cards need observing too.
+                // Observe the first paint's cards for the entrance reveal;
+                // every re-render after this point reveals immediately
+                // instead (see renderRegisterList).
                 if (Motion) Motion.initReveals(el("register-list"));
+                state.revealedOnce = true;
             })
             .catch(function (err) { console.error("psc-report.js init failed:", err); });
     }
