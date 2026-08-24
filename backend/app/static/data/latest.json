@@ -1,5 +1,41 @@
 [
   {
+    "ID": 4325,
+    "Time": "2026-08-23T13:35:38Z",
+    "Title": "N25bn First Lady\u2019s gifts, TETFund funds pooled to revive abandoned National Library \u2013 Alausa",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/n25bn-first-ladys-gifts-tetfund-funds-pooled-to-revive-abandoned-national-library-alausa/",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "The Federal Government has allocated N25 billion to revive the abandoned National Library, combining funds from the First Lady's birthday gifts and the Tertiary Education Trust Fund. This move aims to complete the long-abandoned project.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 4317,
+    "Time": "Mon, 24 Aug 2026 11:23:07 GMT",
+    "Title": "Fidelity Bank gets extension to publish H1 2026 audited results - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMWVHTndDOU9yN0VWUGo1SXZxbnI0TTJkTUNnRzFRMGtFeXFyZ09iandMTDgwVWxoYWw1ODVpcW9uazlScnM5LTVPV0E2d2ozejFVc2M1VHFxZDZnZ3ZaUllfaV9vbzY5Mnl0Z0g3WWlvOGt3TlZGREl6eWFEOVg4ell2TkR5UURKVldWRm5RMXc2ZFVQYTdiUUxsb3o0c2tRd1dZYUppcXJyNHBiTF9xUUhMYkVXME02WFF0dmhR?oc=5",
+    "Category": "Company",
+    "Risk Score": 0,
+    "Summary": "Fidelity Bank has been granted an extension to publish its H1 2026 audited results. The bank will now have more time to finalize and release its financial statements for the first half of the year.",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
+    "ID": 4311,
+    "Time": "Sun, 23 Aug 2026 21:04:37 GMT",
+    "Title": "President Tinubu Renews the Tenure of DG NTA, MD NAN - Voice of Nigeria",
+    "Source": "Voice of Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5SdzZrQzRoRm1QeUxnT3ZpZm9MWWZXQ3FURWJWdl92LUp5RXY4aGRSZlVkenNPZkpTOGppXzVqUjU3ckdITkczLTlFLVd4SlhWcThSMWE4QjRMME9TR2k5VUs1MnV3TktScDBYOGRlOGZ6WmRMc25kb1EyWQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 0,
+    "Summary": "President Tinubu has renewed the tenure of the Director-General of the Nigerian Television Authority (NTA) and the Managing Director of the News Agency of Nigeria (NAN).",
+    "Status": "Unread",
+    "Engine": "nvidia"
+  },
+  {
     "ID": 4275,
     "Time": "Mon, 24 Aug 2026 02:15:00 GMT",
     "Title": "Five Firms Drive Nigeria's $120m Non-Oil Export Haul - Punch Newspapers",
@@ -680,42 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Nigeria Ports Economic Regulatory Agency (NPERA) has formally commenced operations. The agency is tasked with the economic regulation of Nigerian ports to enhance transparency and efficiency in port operations.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3984,
-    "Time": "Thu, 20 Aug 2026 03:24:42 GMT",
-    "Title": "Criticism trails FAAN\u2019s ban on e-hailing services at airports - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNYUFRbDRFNkY2WUhyNTdSSGtxNEZpclpuMDBUMG5mcm1XOVV3aWFxMlN2amhIeEFCemt3bFF6aWdtcUEtNmV1SERLWHNMb1N2bm9lMkNsQlphcGlubGdCRTRLWG12ZVF2OGhYN3R4Z3RRRFpoejlMRU12WHRSVmJ0LXNvdDNKNnN2TzVER29Xa1d3RmlkWFhraTVETjEwdzNY?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Federal Airports Authority of Nigeria (FAAN) has implemented a ban on e-hailing services operating within airport premises, leading to public and industry criticism.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3977,
-    "Time": "Thu, 20 Aug 2026 03:24:29 GMT",
-    "Title": "Bayelsa opens electricity market with first distribution licence - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNlIwdXR6TE54bFplSDRoSGtCRlIwMWZGX0MzRUhJMktNQmNiaHBDVU9IbHB2bkROYndyUFQtaE0zTWhyd21pNGNLenlPUnZmQ01xWVBKeG1FQ2pCR1p0aGdCUm5Uc25CWnpJc0FEM0ZkOFVWVU90d1liM0xfZVdKbGxCcEtFWDZzZl85TXpxdzRzZVRLTnRkc2JkNzVtRzVyeFZxU2JB?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Bayelsa State has officially opened its electricity market by issuing its first distribution licence, signaling a move toward decentralized power management.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3976,
-    "Time": "Wed, 19 Aug 2026 04:26:00 GMT",
-    "Title": "NPERA will not rival NPA as port landlord, board chairman clarifies - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZFNLV1pzbTAyTE5CYmRBY1VVa0kybGhEMGg2TmVxNnJFMDQtaTBORkx6T0tJeVlvQXlNZjNoZEFuOXBuc3UxMzNkclRvMGZseDVrQ2ZBLW1BeEI4cjRPT3BIT19ROUpsWE8yX0xGTmpWOFlKMDlDczJ6LVdfOTk5ajRKTUdZSXlSZDBITDA1NTlLM1J3ZDhUNE9SdFZ5U2FyZEZfZnpVRS0?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The board chairman of the Nigerian Ports Efficiency Reform Agency (NPERA) clarified that the agency does not intend to compete with the Nigerian Ports Authority (NPA) in its capacity as the port landlord.",
     "Status": "Unread",
     "Engine": "ollama"
   }
