@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4355,
+    "Time": "2026-08-24 05:29:20",
+    "Title": "Guinness Nigeria Rules Out Delisting As Balance Sheet Strengthens, Profit Soars",
+    "Source": "independentng",
+    "URL": "https://independent.ng/guinness-nigeria-rules-out-delisting-as-balance-sheet-strengthens-profit-soars/",
+    "Category": "Company",
+    "Risk Score": 10,
+    "Summary": "Guinness Nigeria has dismissed rumors regarding its potential delisting from the stock exchange. The company reports strengthening of its balance sheet and a significant increase in profits.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4346,
+    "Time": "Mon, 24 Aug 2026 15:57:52 GMT",
+    "Title": "NNPC, OML 118 partners seal Bonga South-West deal - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbUs1d3dsMG5TMWhCN0tBeUJYVE9wQy1YRGU3VzJCYjZ6NHRjeVo0VWFYdjJiTVAwQkNpNFJ3by16ZV9vSzlDTG9hQ0VVZE1rSmlUSFZiT0pROE9ZNFBUcWotcGtxZ3V3YmVJOGxlMGVhSjAyMFItd2RFWmdhc0J3NVVOajJla3dFMHNZN2ZR0gGTAUFVX3lxTE5PTU9sMHluOTBkbDkzZ0VmT3VmSk1WaVlZSzI0eV9hSmJUcjdtVWVtM0s1dzNkUndUazJXTGhMa3RxZS1hZXJwYzN5WW1JRHdzNkpkZWdqMDdjUU1IazhBMUY5RXFmSm5ORWhRbjJCNVFfOF9YTU9jVjhURmdCMko0MVNPT1EzaWNkdVZ4YjgtQUZzdw?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "NNPC and partners in Oil Mining Lease (OML) 118 have reached an agreement regarding the Bonga South-West project.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4325,
     "Time": "2026-08-23T13:35:38Z",
     "Title": "N25bn First Lady\u2019s gifts, TETFund funds pooled to revive abandoned National Library \u2013 Alausa",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 65,
     "Summary": "Former lawmaker Babafemi Ojudu has challenged the Federal Government over the sudden downgrading of the Akure-Ado Ekiti road project from a dual carriageway to a refurbished single carriageway. The move raises concerns regarding procurement transparency and project specification changes.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3992,
-    "Time": "2026-08-19T05:54:01Z",
-    "Title": "Don\u2019t dismiss US 2026 Fiscal Transparency Report, BudgIT tells FG",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/dont-dismiss-us-2026-fiscal-transparency-report-budgit-tells-fg-2/",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "BudgIT has urged the Federal Government of Nigeria to address the findings of the US 2026 Fiscal Transparency Report. The organization emphasizes the need for improved accountability and transparency in the management of public finances.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 3991,
-    "Time": "2026-08-19T06:40:59Z",
-    "Title": "NPERA commences operations as port economic regulator",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/08/npera-commences-operations-as-port-economic-regulator/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigeria Ports Economic Regulatory Agency (NPERA) has formally commenced operations. The agency is tasked with the economic regulation of Nigerian ports to enhance transparency and efficiency in port operations.",
     "Status": "Unread",
     "Engine": "ollama"
   }
