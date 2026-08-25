@@ -1,5 +1,17 @@
 [
   {
+    "ID": 4466,
+    "Time": "2026-08-25 11:26:34",
+    "Title": "FG ratifies framework to build Nigeria\u2019s digitised, modern addressing system",
+    "Source": "nigeriannewsdirect",
+    "URL": "https://nigeriannewsdirect.com/fg-ratifies-framework-to-build-nigerias-digitised-modern-addressing-system/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Government has ratified a framework to establish a digitized, modern addressing system for Nigeria. The initiative aims to modernize national spatial data and addressing infrastructure.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4450,
     "Time": "2026-08-25 05:31:30",
     "Title": "FG Targets $782m Cloud Infrastructure Market In New National Digital Cloud Policy",
@@ -704,18 +716,6 @@
     "Category": "Government",
     "Risk Score": 40,
     "Summary": "The Nigerian Safety Investigation Bureau (NSIB) released a report detailing the causes of an aircraft overrun involving Enugu Air, citing broken tower equipment and inoperative autobrakes.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4155,
-    "Time": "2026-08-20T23:37:14Z",
-    "Title": "Rivers inauguration: Infrastructure improves lives, expands opportunities, says Shettima",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/rivers-inauguration-infrastructure-improves-lives-expands-opportunities-says-shettima/",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "Vice President Kashim Shettima inaugurated the 33.5-kilometre Elele-Egbeda-Omok road project in Rivers State. The project is framed as a critical infrastructure development to enhance economic opportunities and improve local livelihoods.",
     "Status": "Unread",
     "Engine": "ollama"
   }
