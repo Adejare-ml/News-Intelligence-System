@@ -1,5 +1,17 @@
 [
   {
+    "ID": 4509,
+    "Time": "2026-08-26 01:44:34",
+    "Title": "Tank farms, dirty ship water polluting Lagos waterways \u2013NIWA",
+    "Source": "sunnewsonline",
+    "URL": "https://thesun.ng/tank-farms-dirty-ship-water-polluting-lagos-waterways-niwa/",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The National Inland Waterways Authority (NIWA) has raised alarms regarding the pollution of Lagos waterways caused by tank farms and the discharge of dirty water from ships.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4490,
     "Time": "2026-08-24T23:35:46Z",
     "Title": "Oyo protests Makinde snub as FG launches Ibadan-Ijebu road reconstruction",
@@ -704,18 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "FCT Minister Nyesom Wike has ordered a crackdown on car dealers illegally operating within designated green areas of Abuja.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4217,
-    "Time": "2026-08-21T23:53:23Z",
-    "Title": "Maryam: EFCC bows to pressure",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/maryam-efcc-bows-to-pressure/",
-    "Category": "Legal",
-    "Risk Score": 20,
-    "Summary": "The Economic and Financial Crimes Commission (EFCC) has withdrawn charges against Maryam Shehu, a student of Bayero University, Kano, following public pressure and backlash.",
     "Status": "Unread",
     "Engine": "ollama"
   }
