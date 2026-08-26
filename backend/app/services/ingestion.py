@@ -507,31 +507,6 @@ class NewsIngestionService:
         all_articles.extend(cls.fetch_guardian_news())
         all_articles.extend(cls.fetch_newsdata_io())
         
-        # 3. Padding a thin cycle with invented articles is opt-in.
-        #
-        # This used to fire unconditionally below ten articles -- which is
-        # precisely when the fetchers are struggling: a rate-limited API, an
-        # expired key, a degraded network. On exactly those days 25 fabricated
-        # stories were analysed, written to the sheet, counted in the KPIs and
-        # folded into the executive brief.
-        #
-        # A quiet news day, or a broken fetcher, is a fact the brief should
-        # reflect. Padding it is the system asserting something it does not
-        # know. Same reasoning as SEED_DEMO_PSC, and the same default.
-        if len(all_articles) < 10:
-            if settings.SEED_DEMO_ARTICLES:
-                logger.warning(
-                    "Only %d real article(s) collected; SEED_DEMO_ARTICLES is on, so "
-                    "adding synthetic samples marked '%s'.", len(all_articles), SYNTHETIC_SOURCE
-                )
-                all_articles.extend(cls.generate_mock_news(25))
-            else:
-                logger.warning(
-                    "Only %d real article(s) collected this cycle. Continuing with what "
-                    "is real rather than padding. Check the source adapters and API keys "
-                    "if this persists.", len(all_articles)
-                )
-            
         # Post-ingestion strict Nigeria filter
         # Drop site chrome before anything else. Scoping searches to gov.ng and
         # com.ng surfaces regulator *homepages* as if they were stories --
@@ -609,8 +584,39 @@ class NewsIngestionService:
 
         # 5. Fuzzy Title Deduplication
         distinct_articles = cls.fuzzy_deduplicate_articles(time_filtered)
-        
+
         logger.info(f"Filtered {len(all_articles)} raw entries to {len(nigerian_filtered)} strictly Nigerian, {len(time_filtered)} within 48h, and {len(distinct_articles)} distinct stories.")
+
+        # 6. Padding a thin cycle with invented articles is opt-in.
+        #
+        # This used to fire unconditionally below ten articles -- which is
+        # precisely when the fetchers are struggling: a rate-limited API, an
+        # expired key, a degraded network. On exactly those days 25 fabricated
+        # stories were analysed, written to the sheet, counted in the KPIs and
+        # folded into the executive brief.
+        #
+        # A quiet news day, or a broken fetcher, is a fact the brief should
+        # reflect. Padding it is the system asserting something it does not
+        # know. Same reasoning as SEED_DEMO_PSC, and the same default.
+        #
+        # Assessed *after* the stub/Nigeria/48h/dedup filters: "thin" means
+        # few publishable stories, and 40 raw-but-junk feed entries used to
+        # mask a cycle that actually yielded two. Synthetic articles append
+        # here too -- they are already marked, and putting them through the
+        # filters above would only prune the padding they exist to provide.
+        if len(distinct_articles) < 10:
+            if settings.SEED_DEMO_ARTICLES:
+                logger.warning(
+                    "Only %d publishable article(s) after filtering; SEED_DEMO_ARTICLES is on, "
+                    "so adding synthetic samples marked '%s'.", len(distinct_articles), SYNTHETIC_SOURCE
+                )
+                distinct_articles = distinct_articles + cls.generate_mock_news(25)
+            else:
+                logger.warning(
+                    "Only %d publishable article(s) after filtering this cycle. Continuing with "
+                    "what is real rather than padding. Check the source adapters and API keys "
+                    "if this persists.", len(distinct_articles)
+                )
         return distinct_articles
 
     @staticmethod
