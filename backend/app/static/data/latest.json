@@ -1,5 +1,65 @@
 [
   {
+    "ID": 4608,
+    "Time": "2026-08-26T18:05:46Z",
+    "Title": "Umahi orders concessionaire to quit Benin-Asaba road over poor work",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/umahi-orders-concessionaire-to-quit-benin-asaba-road-over-poor-work/",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "The Minister of Works, David Umahi, has demanded that the concessionaire for the Benin-Asaba road project exit the contract due to poor performance. The Ministry of Works is seeking the formal termination of the agreement over substandard work.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4607,
+    "Time": "Wed, 26 Aug 2026 15:58:00 GMT",
+    "Title": "Take capital market disputes to tribunal, IST tells lawyers - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdlNfODJhTy1IOXVJRU5IVlg5MTdjRUtZc2hDT0wweHZFS29Wc0c4OFkwOEM1THBPcWIxUERvcDNFd0RCY3dTM2ZDcjRHOFdkQ3ZBLUxfeHYtVllzQV9uR29QOGw5QUN1SFN1d0k0dlhoMjFXYnFiWjRrR0RwQUxMZGg5a3ZiUV9TQ1U1TQ?oc=5",
+    "Category": "Legal",
+    "Risk Score": 15,
+    "Summary": "The Investment and Securities Tribunal (IST) has advised legal practitioners to direct capital market disputes to the tribunal for resolution.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4601,
+    "Time": "Thu, 27 Aug 2026 09:46:37 GMT",
+    "Title": "Bolt cleared to resume airport operations after FAAN talks - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeTJkTU1rS0Q2Wk5ZeHluRjJUeUFaSUJSYmpmZ0NNZnd4N2ltM0Y5T2Juc1dSNzU1a1pQV2lGNDZXVFlWeWUtdTJnTVhlMVZrdVpTZ0sxa2RkZTZmMnV6bjFyRjdaTnNiamZET28zVVprUzZZcVBiMkpWMkRvd2tzV0JhTW1nSVMzSVQ0czNTSk9XTWw3Y3A5alpfRFhGTEgxeHdjOEJsMmVLTDZ5Qzdjb3dxX3l0QQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Bolt has been cleared to resume its ride-hailing operations at the airport following discussions with the Federal Airports Authority of Nigeria (FAAN).",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4600,
+    "Time": "Thu, 27 Aug 2026 14:09:48 GMT",
+    "Title": "EFCC Arraigns Man Over N13.6m Property Fraud in Oyo - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UaTV2ZDBsekRiOEZTVk54Tmg0NkZUTUE5VU1zYTlMZVZlaHZwaS0yUHk0VFZ4VmFsYW9YSTUta21PUEZoS3BqU184R19HTWZWQV93WFJYa3RQUy1GREtEdTJHWVR2dnFoSEYyUXl3akFydjdrdWp3NEVUem0?oc=5",
+    "Category": "Legal",
+    "Risk Score": 40,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has arraigned an individual in Oyo State in connection with an alleged property fraud totaling N13.6 million.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4599,
+    "Time": "Thu, 27 Aug 2026 20:02:13 GMT",
+    "Title": "Uba Sani approves \u20a6810m for 4,050 Kaduna vocational training graduates - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMnU2ajZnLUFmSUF0aGxUMVJLNFRhSGR0RFJMM250bW1RdzZFRFBBM0lEWWVZU3k0bkhaVG1UVmZ1UDhEdGN6YWJWell6UFRGZFNTNmdpU0sxWEtkZjY0VHpBN3NsQWJzdWljR1U0clFua0YzakxWYk95cG9CODhSaTdvbkZqbGEwZi1mSFFDWjhuZkxmQmJkeFFhTjVSaWU1a2Z2TzdCZHVXMnBKZTJLdTNSWTAwdU1OM3o2QXZPcWxXc19EQVluVQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Governor Uba Sani has approved the disbursement of \u20a6810 million intended for 4,050 graduates of vocational training programs in Kaduna State.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4593,
     "Time": "2026-08-26T12:53:00Z",
     "Title": "MTN closes in on IHS Towers buyout, eyes further fintech growth",
@@ -658,65 +718,5 @@
     "Summary": "The Nigerian Ports Authority (NPA) has released power equipment belonging to the Niger Delta Power Holding Company (NDPHC) that was stuck at the port, clearing a bottleneck. The equipment is expected to support power generation in the country.",
     "Status": "Unread",
     "Engine": "nvidia"
-  },
-  {
-    "ID": 4402,
-    "Time": "2026-08-24 19:39:31",
-    "Title": "MTN Nigeria emerges as key driver of Groups first half 2026 growth",
-    "Source": "latestnigeriannews",
-    "URL": "https://www.latestnigeriannews.com/p/379977/mtn-nigeria-emerges-as-key-driver-of-groups-first-half-2026-growth.html",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "MTN Nigeria is reported as a primary driver of the group's growth for the first half of 2026. Full details are unavailable due to a paywall.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4400,
-    "Time": "2026-08-23T23:51:14Z",
-    "Title": "UBA strengthens workforce with 374 graduate inductees",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/uba-strengthens-workforce-with-374-graduate-inductees/",
-    "Category": "Company",
-    "Risk Score": 10,
-    "Summary": "United Bank for Africa (UBA) has inducted 374 young professionals into its workforce following the completion of Cohort 21 of its Graduate Management Accelerator Program.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4391,
-    "Time": "Mon, 24 Aug 2026 00:51:13 GMT",
-    "Title": "CBN Urged to Expand Oversight of Fintech, Cloud Risks - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5yODk4Y1VQdGloT0FiRDlySG5wZVJXVHkxM1JPRTBVNnFSZURQZHZqTmdZb0RtU3d2NFBaOFNaVmFWaVcxWnd4T3ZBbHB4Rkg3Qlc4OHNEcFNvdTJLdE5Rc2E5Q0Z3UTZ6QjYwWHhmeE81NnM2TDZBZ2YtZlQ0Zw?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Stakeholders have urged the Central Bank of Nigeria (CBN) to expand its regulatory oversight to better address risks associated with fintech companies and cloud computing services.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4390,
-    "Time": "Tue, 25 Aug 2026 07:29:48 GMT",
-    "Title": "Fake Agency Scandal: ICPC clears Gbajabiamila, gives reasons - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbUdra3JtaXJ3ZkdNT3dYMGhhaS1aVFAyS2hxSW04QlFYS1E0QkNadE5ETVZadk52TGNvaUVVMHNLdURibjNRd3I4bkdET1VNbnpwZUVtcDliQ09FTmdZQzloYXFEdVBZV3U3UVBwdHR2ZWZuZ2pwNV93c1cyUWFrem50U3RSOWdob19od0IyUDdSWEdfams0Q1c0MEZDczlWR2txdnp4RmpMZm9NOXFFclozbUVBS2c?oc=5",
-    "Category": "Legal",
-    "Risk Score": 40,
-    "Summary": "The Independent Corrupt Practices and Other Related Offences Commission (ICPC) has cleared Gbajabiamila following an investigation into a scandal involving a fake agency.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4389,
-    "Time": "Tue, 25 Aug 2026 03:50:58 GMT",
-    "Title": "Customs, WCO Deepen Anti-Corruption Measures in Nigeria - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeWpXVERhMVQ0R0Z2VGNNRzhib1JSMnVEVWxjVFpJeVZRYUxDaDVZd3NvUzJoQkd3NzlPQl8xcTZDWmhTeTR3RVZvNE90Y3dHbEtFQ0dRYkhiNzM2dzNuXzcwZm9KLVlZcC1BTExzRXg3eHhRN3c0bnR6TmFPaWZkWQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigeria Customs Service and the World Customs Organization are collaborating to strengthen anti-corruption measures and enhance regulatory compliance within Nigeria.",
-    "Status": "Unread",
-    "Engine": "ollama"
   }
 ]
