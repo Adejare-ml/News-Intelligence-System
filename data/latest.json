@@ -1,5 +1,53 @@
 [
   {
+    "ID": 4621,
+    "Time": "2026-08-27 13:19:51",
+    "Title": "Digital tax compliance: Afri Invoice opens strategic investment round in Nigeria",
+    "Source": "sunnewsonline",
+    "URL": "https://thesun.ng/digital-tax-compliance-afri-invoice-opens-strategic-investment-round-in-nigeria/",
+    "Category": "Company",
+    "Risk Score": 40,
+    "Summary": "Afri Invoice has opened a strategic investment round in Nigeria to support its digital tax compliance operations. This indicates a potential change in shareholding and ownership structure as new investors enter the company.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4617,
+    "Time": "2026-08-27T00:09:12Z",
+    "Title": "REA unveils asset manager for solar projects",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/rea-unveils-asset-manager-for-solar-projects/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Rural Electrification Agency (REA) has launched the Renewable Asset Management Company to oversee the sustainability and management of publicly funded solar energy assets within universities and teaching hospitals.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4616,
+    "Time": "2026-08-27T00:18:55Z",
+    "Title": "Power firm recovers billions worth of equipment from ports",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/power-firm-recovers-billions-worth-of-equipment-from-ports/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Niger Delta Power Holding Company Limited has recovered abandoned power equipment valued at billions of naira from several Nigerian seaports. The recovery follows a strategic intervention to reclaim critical infrastructure for power generation.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4611,
+    "Time": "Thu, 27 Aug 2026 23:17:24 GMT",
+    "Title": "Isa, Wunti get Energy Journalists\u2019 backing as Nigeria rejoins World Energy Council - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbDJYcUhJOTE3XzBjSGtSRFlIR1JOTFg0VXV2MnpZQ0pDbDdVSDJPUGQ5dnFBNC1LcnJoVDlRSTFLTzhvZ2l1LVp6T1QzVno5THJXWDJrU1JicEgtNldqZ0Z5bTBDREhoZFI4cENhUHFEdkhuS2RzZlZZeS0xTEdnV3JUM1hOdXg2QmdYczF4SzIzQ0Y4eURZMlRKaXdBR1FCc3NYcEoyVTlLd28wRWNhWEU1SklrY056RTNfamZfMlFHQndNWGJHaXdMRG4?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Nigeria has officially rejoined the World Energy Council. The development has received backing from energy journalists, specifically mentioning individuals named Isa and Wunti.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4608,
     "Time": "2026-08-26T18:05:46Z",
     "Title": "Umahi orders concessionaire to quit Benin-Asaba road over poor work",
@@ -670,53 +718,5 @@
     "Summary": "The Centre for Democracy and Human Rights (CDHR) has called for an investigation into the existence and operations of fake government agencies.",
     "Status": "Unread",
     "Engine": "ollama"
-  },
-  {
-    "ID": 4428,
-    "Time": "Tue, 25 Aug 2026 17:31:36 GMT",
-    "Title": "2026: Reps members raise conflict-of-interest concerns over Tinubu\u2019s campaign council - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTXkzN1JKV2pfNmpoWWZzd0pDQ0Vvelhmay1Xd2F5bVU3M08yTnEwMEdPQTR3bTlTQllOWWctcWw1elkwSDJIQXgydUNHeFNOcmFDVkxvT2lnZHpMemJYWk5BZVNwR1lMbGx4blhZQ2I0VUNBcEJEVS1JUW12Q2lURVJXS052S0VQTmlYQTlNYnlrN3pBNXVaRGh5dFNKMVBtVzU4SkgtN3pZQ1ZvTUlHek5vNUlVZ2xzODlBdElXQ0dfZ3VPMENaQXdRalJYdnJIT3pzWHpOUQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "Members of the House of Representatives have raised concerns regarding potential conflicts of interest stemming from the composition of President Tinubu's campaign council.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4419,
-    "Time": "Tue, 25 Aug 2026 00:59:31 GMT",
-    "Title": "Firm unveils SEC-approved $150m climate fund in Nigeria - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoM09UTGlJNjZIcTNjamw0YzROQ0J1bnN3T2hiUGVRM195eG5VdktNRE1QUWdBaHFHQWVLZXVGZWNRMnVad1J1ZDRJeFBYN21mQkppWGlNTUZtUFVTeHFleGdsRzBLRkFudXYwX0N4b2VlUQ?oc=5",
-    "Category": "Company",
-    "Risk Score": 0,
-    "Summary": "A firm has launched a $150m climate fund in Nigeria, which has been approved by the Securities and Exchange Commission (SEC).",
-    "Status": "Unread",
-    "Engine": "nvidia"
-  },
-  {
-    "ID": 4417,
-    "Time": "Tue, 25 Aug 2026 12:44:57 GMT",
-    "Title": "Pronalytics authorised as NRS system integrator for Nigeria\u2019s e-invoicing - Vanguard News",
-    "Source": "Vanguard News",
-    "URL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX0l2TVFYTEtOdEl3c0lXX0V2d3FaZ2drT20xVkVFc21jLV91LU1RODBqaDFMTWxpVnVCaXdhYzBHZXdhQlVpWnpxY29ST2xPRUJBaGwxX0JPRkl2WXhrNFRiWHNfdUhSbDItTVh6SWdSbUxuX0xLdWFLVC1FR1ZSUm1FRWJxbVpTX2YyTjZTVGJaV21ia2pKR2tuZG5aTlpHcmh0Vll3V2pXSjBMRUHSAbMBQVVfeXFMTkluUFdCdFBQVUwxZjRYREhaUndQQXZUWkdYUG5KZF9kdFZnUTBTUUV2Z1JDTVZINlk4b09Ma2lZR01KUm13dWk5Qk5KYU1uRnplVlp4elhzWnlOSFlDT1RFOF9Ha1pYRmlyV2VBdVhMVjJReHJQQUtfY0E0LXNTVld4RkdBZlUxcnNNcGozQ0RZSmNwaWN5OG1JXzJvQmp2VXoyTnp0U0dIdmRIU1BMdmxhTVU?oc=5",
-    "Category": "Company",
-    "Risk Score": 0,
-    "Summary": "Pronalytics has been authorized as a Nigeria Revenue Service (NRS) system integrator for the country's e-invoicing system. This move is expected to enhance tax compliance and revenue collection in Nigeria.",
-    "Status": "Unread",
-    "Engine": "nvidia"
-  },
-  {
-    "ID": 4414,
-    "Time": "Tue, 25 Aug 2026 11:44:00 GMT",
-    "Title": "NPA clears Port bottleneck, releases NDPHC power equipment - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQmdVV0cwdk9FNEV0QWtsbWZYWlB6REtPNDdMWkpCWnJQTkJDTmdnVERmcWtxYTRHSjY2ckNfX2hpUkFoandjWS1kdXBfOWRXYUtDdTlxenY4S3g1SmJDQThBN09wZHJSMUNBX0VRa1AtODloVVBYUHFDQ2I2YUgzVjBjVFZ4UzJLQVA4VjgwU09fS1BweDBtNFc4V0dPRDVUaVNaVGNra0g?oc=5",
-    "Category": "Government",
-    "Risk Score": 0,
-    "Summary": "The Nigerian Ports Authority (NPA) has released power equipment belonging to the Niger Delta Power Holding Company (NDPHC) that was stuck at the port, clearing a bottleneck. The equipment is expected to support power generation in the country.",
-    "Status": "Unread",
-    "Engine": "nvidia"
   }
 ]
