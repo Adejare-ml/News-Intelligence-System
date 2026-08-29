@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4730,
+    "Time": "2026-08-28T01:51:44Z",
+    "Title": "MAN urges Lagos to harmonise tax code",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/man-urges-lagos-to-harmonise-tax-code/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Manufacturers Association of Nigeria (MAN) has called on the Lagos State Government to publish a harmonised tax code. The objective is to align state taxation with new federal tax laws to reduce multiple taxation and improve the ease of doing business for manufacturers.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4729,
+    "Time": "Sat, 29 Aug 2026 03:26:13 GMT",
+    "Title": "FirstBank, MREIF open affordable home loan scheme to Nigerians - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ21jc0c5dWNvbWxIUXNFYlp6TVZZamRqQXk5YWJfV0RSUG1QLUdKYmtMYklQc0ZnTlEwYXVVVFNSN2liRVNmaDhTbmFERXJQbEc4VHRuOUNYbThMei1OYTBpUjV2Y3dCakRtWjJBNVkwUG42cmN6NnduU1VSNV9iNHhYaDRLbmhOeE54TkVCWEU?oc=5",
+    "Category": "Company",
+    "Risk Score": 10,
+    "Summary": "FirstBank and the Mortgage Refinance Company (MREIF) have launched a joint affordable home loan scheme aimed at increasing housing accessibility for Nigerians.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4714,
     "Time": "2026-08-27T23:36:46Z",
     "Title": "FG begins rehabilitation of 13 police training institutions",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Association of Professional Automotive Owners and Consultants (APAOC) is advocating for the inclusion of industry practitioners within the Oyo State Automotive Agency (OYSAA) to enhance regulatory effectiveness.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4534,
-    "Time": "Thu, 27 Aug 2026 00:19:29 GMT",
-    "Title": "IMF urges deeper fiscal, monetary reforms in Nigeria - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBsQkFHZkRZODRvbElXNzF0VEJvVmRiQVFJd1dtMlBiakFVY2RNUWJ3TUZtaHJQS2J0a0trVVFBN2hxRGdRTWNTckkzaEJzQXUxcnJyclFpM3ZrdEdQUWhwX2ctZzIwMzRUOTg4SjRwZ09ZYkFmRnhxYVZpVUw?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The International Monetary Fund (IMF) has recommended that Nigeria implement more profound fiscal and monetary reforms to stabilize its economy.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4524,
-    "Time": "2026-08-26 07:03:15",
-    "Title": "UBA discloses delay in release of H1\u201926 financial statements",
-    "Source": "vanguardngr",
-    "URL": "https://www.vanguardngr.com/2026/08/uba-discloses-delay-in-release-of-h126-financial-statements/",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "United Bank for Africa (UBA) has announced a delay in the release of its financial statements for the first half of 2026.",
     "Status": "Unread",
     "Engine": "ollama"
   }
