@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4714,
+    "Time": "2026-08-27T23:36:46Z",
+    "Title": "FG begins rehabilitation of 13 police training institutions",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/fg-begins-rehabilitation-of-13-police-training-institutions-2/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Federal Government has awarded contracts for the rehabilitation of 13 police training institutions across Nigeria. Approximately 80 percent of the contractors have already received mobilization funds.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4712,
+    "Time": "2026-08-28T00:30:18Z",
+    "Title": "NIMASA steps up enforcement of cabotage regulations",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/nimasa-steps-up-enforcement-of-cabotage-regulations/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Nigerian Maritime Administration and Safety Agency (NIMASA) is enhancing the enforcement of cabotage regulations to increase indigenous participation in Nigeria's maritime trade. The agency aims to ensure strict compliance with statutory requirements for domestic shipping and vessel registration.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4699,
     "Time": "Thu, 27 Aug 2026 09:35:56 GMT",
     "Title": "After 17 years factory shutdown, Okin Biscuits resumes production in Kwara - Premium Times Nigeria",
@@ -692,30 +716,6 @@
     "Category": "Company",
     "Risk Score": 20,
     "Summary": "United Bank for Africa (UBA) has announced a delay in the release of its financial statements for the first half of 2026.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4520,
-    "Time": "Tue, 25 Aug 2026 04:00:00 GMT",
-    "Title": "Financial autonomy law to address fund management dispute, says Okpebholo - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVFVFMjZUaWVEbTVqaFd2dDJDYWN2VHdWZjZjYnZZWTRvNjVpYTBFcElaNEFyaUZtWWV6ZmlPR05ubWpGME1XWmZSZUY5QjdTMkttVHAwdGZoYV8wSEFYdkt4QzRfTDBUdWZpeHFTY2Z4QS02aGZuNjF0UDVoSWhUdUNfZE9kYXV5aURjLVNuQUhkOW1zckNmcTJPV0xpeTA?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "Senator Okpebholo indicates that a financial autonomy law is intended to resolve disputes regarding the management of funds. The focus is on legislative frameworks for fund administration within government structures.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4519,
-    "Time": "Wed, 26 Aug 2026 16:34:17 GMT",
-    "Title": "2027: Tinubu's Campaign: Why appointments of Adedeji, Coker-Odusote, Yakubu raise concerns - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbkhwa0ZqLWZiQ2IwYkFkaHNWc3F3dXplbHJoTlZEbm4wUzdQYmpxQW5wc0pFNUZzd0ZmaFdJX09uSG50UXBHUkdZWGJNNERYWThEdGJUNWxCVDVnUmNOWTNtUEtJMGxYN3BiZHpxWlFPOXBNVHVEekVBY3VYM0JlZjRGR21vRnUyNFUyOG04elctRFZlLU9pT0lYOG1MenhhYktpX0FFMThLb285WW9Gb3ZtWTdXVmV1TWhzbjFHVFAzUVJDYldYUmVURTEyZmItTVo2NktEdnVVZw?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The article discusses the appointment of Adedeji, Coker-Odusote, and Yakubu to roles within President Tinubu's campaign structure for 2027, noting that these selections have raised certain concerns.",
     "Status": "Unread",
     "Engine": "ollama"
   }
