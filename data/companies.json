@@ -596,10 +596,10 @@
   },
   {
     "Company": "PFIPC",
-    "Mention Count": 9,
-    "Last Seen": "2026-07-31 9:46",
+    "Mention Count": 10,
+    "Last Seen": "2026-08-29 12:58",
     "Industry": "General",
-    "Risk Level": "Low"
+    "Risk Level": "High"
   },
   {
     "Company": "Atiku",
@@ -6225,7 +6225,7 @@
   {
     "Company": "FirstBank",
     "Mention Count": 2,
-    "Last Seen": "2026-08-29 04:07",
+    "Last Seen": "2026-08-29 4:07",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -6736,7 +6736,7 @@
   {
     "Company": "Manufacturers Association of Nigeria",
     "Mention Count": 2,
-    "Last Seen": "2026-08-29 04:07",
+    "Last Seen": "2026-08-29 4:07",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -7248,6 +7248,13 @@
     "Company": "Okin Biscuits",
     "Mention Count": 1,
     "Last Seen": "2026-08-28 22:53",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "Rillet",
+    "Mention Count": 1,
+    "Last Seen": "2026-08-29 13:00",
     "Industry": "General",
     "Risk Level": "Low"
   }
