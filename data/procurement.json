@@ -1,30 +1,611 @@
 [
   {
+    "Agency": "BPP",
+    "Contractor": "SON",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "BPP, SON make quality certification mandatory for federal procurement - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "AfCFTA",
+    "Contractor": "The Guardian Nigeria News",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Certification gap threatens MSMEs\u2019 access to contracts, AfCFTA opportunities - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Bursaspor",
+    "Contractor": "Celtic",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Kelechi Iheanacho joins Turkey side Bursaspor",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Celtic",
+    "Contractor": "Bursaspor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Iheanacho rejects new Celtic deal for Turkey's second tier",
+    "Source": "BBC News"
+  },
+  {
+    "Agency": "Nigerian Institute For Oil Palm Research (NIFOR)- Invitation To Tender",
+    "Contractor": "EOI",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Nigerian Institute For Oil Palm Research (NIFOR)- Invitation To Tender And Expression Of Interest (EOI) For The Execution Of 2026 Approved Capital Projects (7 Lots) - Nigeria Business Information",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Super Eagles",
+    "Contractor": "Celtic",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Iheanacho snubs Celtic return for Turkey move",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "NIQS",
+    "Contractor": "BPP",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NIQS offers BPP cost measurement standards to support procurement reforms - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "HRN",
+    "Contractor": "EFCC",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "HRN petitions EFCC over alleged several million Naira procurement fraud at NICTM | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng"
+  },
+  {
+    "Agency": "The Guardian Nigeria News",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Alleged Defamation Trial:Court rejects sowore\u2019s bid to tender uncertified documents - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Celtic",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Iheanacho reveals motivation for choosing Bursaspor over Celtic",
+    "Source": "BBC News"
+  },
+  {
+    "Agency": "Nottingham Forest",
+    "Contractor": "Super E",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Why Awoniyi won\u2019t leave England",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "the Federal High Court",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Oak Homes: Court to rule on admissibility of disputed documents",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "NIGERIAN LAW REFORM COMMISSION, ABUJA-REQUEST FOR PROPOSALS FOR THE EXECUTION OF PROJECTS - etenders.com.ng",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "EFCC",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Contract fraud most prevalent corruption in public sector \u2013 EFCC boss - Punch Newspapers",
+    "Source": "Punch Newspapers"
+  },
+  {
+    "Agency": "The Guardian Nigeria News",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Atiku challenges Tinubu to disclose details of \u20a615.13bn SUV procurement - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "EFCC",
+    "Contractor": "The Guardian Nigeria News",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Contract fraud most prevalent corruption in public sector, says EFCC boss - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Nigerian Content Development and Monitoring Board",
+    "Contractor": "Bank of Industry",
+    "Amount": "$100 Million",
+    "Project": "Nigerian Content Equity Fund",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "Ebonyi State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Establishment of a new cement factory in Abakaliki",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "GIZ Nigeria & ECOWAS",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Procurement of IT Equipment",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "Lagos State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Standardization of blood screening across public hospitals",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "AfCFTA Secretariat",
+    "Contractor": "Bergmans",
+    "Amount": "None",
+    "Project": "Continental Customs Modernisation Project",
+    "Source": "leadership"
+  },
+  {
+    "Agency": "PFIPC",
+    "Contractor": "None",
+    "Amount": "N400 Million",
+    "Project": "Not specified",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "PFIPC",
+    "Contractor": "Unknown",
+    "Amount": "N400 Million",
+    "Project": "PFIPC contract (subject of fraud probe)",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "Nigerian National Petroleum Company Limited",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Sale of two crude oil cargoes including Cawthorne grade",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Government of Nigeria",
+    "Contractor": "State-owned energy firm",
+    "Amount": "$4.5 Billion",
+    "Project": "Oil-backed arrangement to bolster foreign-exchange reserves and government spending",
+    "Source": "Financial Post"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Reconstruction of the 122-km Kaduna\u2013Birnin Gwari road",
+    "Source": "naijaonpoint_ng"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "N178.116 Billion",
+    "Project": "Reconstruction of the 122.89-kilometre Kaduna (Mando)-Birnin Gwari Road",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Jigawa State Government",
+    "Contractor": "None",
+    "Amount": "\u20a6586.26 million",
+    "Project": "Renovation of facilities at the Maigatari Border Free Zone and the neighbouring Government Guest House in Gumel",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Jigawa State Government",
+    "Contractor": "None",
+    "Amount": "\u20a63.5 Billion",
+    "Project": "Payment of 2027 Hajj deposits for intending pilgrims",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Presidential Foreign Investment Promotion Council (PFIPC)",
+    "Contractor": "None",
+    "Amount": "N400m",
+    "Project": "None",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "PFIPC",
+    "Contractor": "Divine Dopacy Nigeria Limited",
+    "Amount": "N400 Million",
+    "Project": "Unspecified contract subject to corruption probe",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "National Economic Council",
+    "Contractor": "Nigerian National Petroleum Company Limited",
+    "Amount": "$4.5 Billion",
+    "Project": "Oil-backed refinancing loan",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Nigerian National Petroleum Company Limited",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Ajaokuta-Kaduna-Kano (AKK) gas pipeline",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Cross River State Government",
+    "Contractor": "Not Specified",
+    "Amount": "Not Specified",
+    "Project": "Concession of Obudu Ranch to transform Obanliku and boost tourism",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Gombe State Government",
+    "Contractor": "None",
+    "Amount": "N17.4 Billion",
+    "Project": "Construction of roads (N16bn) and installation of solar-powered street lights (N1.4bn)",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "UTM Floating Liquefied Natural Gas project",
+    "Amount": "None",
+    "Project": "15-year gas supply agreement for Floating Liquefied Natural Gas (FLNG) project",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "15-Year gas deal for Nigeria\u2019s first floating LNG",
+    "Source": "guardian.ng"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Lagos-Calabar coastal highway protection",
+    "Source": "Punch Newspapers"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "N11.58 Billion",
+    "Project": "Social security allowances for 178,342 households in Jigawa State",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "ECOWAS",
+    "Contractor": "Nigerian startups",
+    "Amount": "$65,000",
+    "Project": "Startup funding",
+    "Source": "theeagleonline.com.ng"
+  },
+  {
+    "Agency": "National Office for Technology Acquisition and Promotion (NOTAP)",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "2026 Constituency and Zonal Intervention Projects",
+    "Source": "etenders.com.ng"
+  },
+  {
+    "Agency": "Federal Ministry of Works",
+    "Contractor": "None",
+    "Amount": "N41.05 Billion",
+    "Project": "Lagos building project",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "Nigerian Civil Aviation Authority",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Introduction of RFID baggage tracking technology in Nigerian airports",
+    "Source": "Punch Newspapers"
+  },
+  {
+    "Agency": "Oyo State Government",
+    "Contractor": "None",
+    "Amount": "\u20a63 billion",
+    "Project": "Amotekun projects",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "National Office for Technology Acquisition and Promotion (NOTAP)",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "NOTAP 2026 constituency and zonal intervention program",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "National Information Technology Development Agency (NITDA)",
+    "Contractor": "Fireflies AI, Goose FL",
+    "Amount": "None",
+    "Project": "Expanding Nigeria's digital footprint",
+    "Source": "nairametrics"
+  },
+  {
+    "Agency": "Institute for Peace and Conflict Resolution",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "2026 Capital, Zonal Intervention/Constituency Projects",
+    "Source": "eBid Nigeria"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Procurement of 35 linear accelerators for cancer treatment",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "National Office For Technology Acquisition And Promotion (NOTAP)",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "2026 constituency and zonal intervention projects",
+    "Source": "Nigeria Business Information"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Acquisition of 25 new linear accelerators for improved cancer care",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "National Hajj Commission of Nigeria",
+    "Contractor": "Not specified",
+    "Amount": "Not specified",
+    "Project": "2027 Hajj Airlift",
+    "Source": "leadership"
+  },
+  {
+    "Agency": "Gombe State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Remodelling and upgrading of the Gombe Emir's Palace and Gombe Central Mosque",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Zamfara Health Services Management Board",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Full automation of Gusau General Hospital",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Chinese Government/Partners",
+    "Amount": "None",
+    "Project": "Expansion of radiotherapy capacity",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "Federal Ministry of Works",
+    "Contractor": "Undisclosed Concessionaire",
+    "Amount": "None",
+    "Project": "Concession and reconstruction of the Benin-Onitsha Road",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Akwa Ibom State Government",
+    "Contractor": "None",
+    "Amount": "N248.83 Billion",
+    "Project": "Tourism projects",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "National Sugar Development Council",
+    "Contractor": "SINOMACH",
+    "Amount": "$1 Billion",
+    "Project": "Engineering, procurement and construction-plus-finance agreement to cut sugar imports",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Rivers State Government",
+    "Contractor": "Julius Berger",
+    "Amount": "None",
+    "Project": "Construction of 19.79km road and seven bridges",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "UK ports (unspecified entity)",
+    "Amount": "\u00a3746 Million",
+    "Project": "UK ports deal",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Ekiti State Government",
+    "Contractor": "None",
+    "Amount": "\u20a63 Billion",
+    "Project": "Construction of new high court office complex",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Bureau of Public Procurement",
+    "Contractor": "None",
+    "Amount": "N1.5 trillion",
+    "Project": "procurement reforms and benchmarking",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Akure-Ado Ekiti road project (downgraded from dual carriageway to refurbished single carriageway)",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "UK Government (Financing)",
+    "Amount": "\u00a3746 Million",
+    "Project": "Ports financing deal",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Zamfara State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Training of officials on effective procurement and financial management",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Abia State Government",
+    "Contractor": "ABC Transport",
+    "Amount": "None",
+    "Project": "Establishment of 'City Transit Inn' in Aba",
+    "Source": "sunnewsonline"
+  },
+  {
+    "Agency": "Federal Executive Council",
+    "Contractor": "None",
+    "Amount": "N610 Billion",
+    "Project": "Works projects and PPP concessions",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Federal Executive Council",
+    "Contractor": "Bristol City Development",
+    "Amount": "None",
+    "Project": "Direct purchase of 600 units of four-bedroom terrace duplexes at Bristol City Development in Life Camp, Abuja, for members of the Armed Forces",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Nigerian National Petroleum Company",
+    "Contractor": "None",
+    "Amount": "$20 Billion",
+    "Project": "Gas deals to increase oil and gas output",
+    "Source": "Vanguard News"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Construction of the 33.5-kilometre Elele-Egbeda-Omok road",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Rural Electrification Agency",
+    "Contractor": "Alpha Morgan Bank",
+    "Amount": "N50 Billion",
+    "Project": "Project financing to accelerate the deployment of renewable energy projects",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Federal Executive Council",
+    "Contractor": "NIGCOMSAT",
+    "Amount": "None",
+    "Project": "Acquisition and deployment of NIGCOMSAT-2A and NIGCOMSAT-2B high-throughput communication satellites",
+    "Source": "Vanguard"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "N1.5 trillion",
+    "Project": "procurement reforms",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Federal Government",
+    "Contractor": "None",
+    "Amount": "N25 billion",
+    "Project": "Revival of the National Library",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Reconstruction of Ibadan\u2013Ijebu-Ode Road and dualisation of Abeokuta\u2013Ibadan road",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "Nigerian Ports Authority",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Release of NDPHC power equipment",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Nigeria Revenue Service",
+    "Contractor": "Pronalytics",
+    "Amount": "None",
+    "Project": "e-invoicing system integration",
+    "Source": "Vanguard News"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "N297 Billion",
+    "Project": "Reconstruction of the 56.5km Ibadan-Ijebu-Ode Road",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Jigawa State Government",
+    "Contractor": "None",
+    "Amount": "N13.8 Billion",
+    "Project": "Agriculture and education projects",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "National Library of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Completion of the National Library building in Abuja",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Kaduna State Government",
+    "Contractor": "Vocational training graduates",
+    "Amount": "\u20a6810 million",
+    "Project": "Funding/grants for 4,050 vocational training graduates",
+    "Source": "Premium Times Nigeria"
+  },
+  {
+    "Agency": "Ministry of Works",
+    "Contractor": "Unnamed Concessionaire",
+    "Amount": "None",
+    "Project": "Benin-Asaba road concession",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "$500 Million",
+    "Project": "Distributed Electricity Resources Program (DISREP) for the deployment of 668,000 electricity meters",
+    "Source": "The Guardian Nigeria News"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Not specified",
+    "Amount": "Not specified",
+    "Project": "Rehabilitation of 13 police training institutions nationwide",
+    "Source": "The Punch"
+  },
+  {
+    "Agency": "Federal Ministry of Works",
+    "Contractor": "China Civil Engineering Construction Corporation",
+    "Amount": "None",
+    "Project": "Construction/rehabilitation of the Benin-Asaba Road",
+    "Source": "Premium Times Nigeria"
+  },
+  {
     "Agency": "Niger Delta Development Commission",
-    "Contractor": "",
-    "Amount": "",
+    "Contractor": "None",
+    "Amount": "None",
     "Project": "Reconstruction of Warri-Benin Highway",
     "Source": "The Guardian Nigeria News"
   },
   {
     "Agency": "Niger Delta Development Commission",
-    "Contractor": "",
-    "Amount": "",
+    "Contractor": "None",
+    "Amount": "None",
     "Project": "Reconstruction of Warri-Sapele-Benin road",
     "Source": "Premium Times Nigeria"
   },
   {
-    "Agency": "Ministry of Works",
-    "Contractor": "China Civil Engineering Construction Corporation",
-    "Amount": "",
-    "Project": "Construction/Rehabilitation of Benin-Asaba Road",
-    "Source": "Premium Times Nigeria"
-  },
-  {
     "Agency": "Niger Delta Development Commission",
-    "Contractor": "",
-    "Amount": "",
-    "Project": "Reconstruction of 15.4km failed section of the Benin-Sapele Expressway",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Reconstruction of 15.4km failed section on Benin-Sapele Expressway",
     "Source": "The Punch"
   }
 ]
