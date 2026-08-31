@@ -1,5 +1,29 @@
 [
   {
+    "ID": 4909,
+    "Time": "2026-08-31 07:20:21",
+    "Title": "$947m July remittances highest monthly inflow \u2013 CBN",
+    "Source": "naijaonpoint_ng",
+    "URL": "https://naijaonpoint.com.ng/947m-july-remittances-highest-monthly-inflow-cbn/",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The Central Bank of Nigeria (CBN) reports that remittances for July reached $947 million, marking the highest monthly inflow recorded.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4891,
+    "Time": "Mon, 31 Aug 2026 18:10:24 GMT",
+    "Title": "EFCC recovers N1.23t, secures over 10,800 convictions in 34 months | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb29UMUVURDFGd0lCUzB3eVB5dEZsaW9Yb1NNelp3SFV5cEhZS2hUcEJTRnloNXQ4dkMtSmRBbEEwSlk3OU5jNnEwSGFZR29yRE5Zbm9nY1lsd0tocHFYajc0Zjl4bmV0NExVMlZOTVBjcDRqaDY4clRRZGsyT3AydmpveUExOE5ocmRsT0Q2eHU0aVZKZE53V1BpWQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) reports the recovery of N1.23 trillion and the procurement of over 10,800 convictions over a 34-month period.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4890,
     "Time": "2026-08-31 02:43:54",
     "Title": "NIMASA Moves To Save Over $40,000, Bans Foreign Vessels",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "Ministries, Departments, and Agencies (MDAs) have been directed to comply with the 'Nigeria First' policy, which prioritizes local content and domestic procurement.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4621,
-    "Time": "2026-08-27 13:19:51",
-    "Title": "Digital tax compliance: Afri Invoice opens strategic investment round in Nigeria",
-    "Source": "sunnewsonline",
-    "URL": "https://thesun.ng/digital-tax-compliance-afri-invoice-opens-strategic-investment-round-in-nigeria/",
-    "Category": "Company",
-    "Risk Score": 40,
-    "Summary": "Afri Invoice has opened a strategic investment round in Nigeria to support its digital tax compliance operations. This indicates a potential change in shareholding and ownership structure as new investors enter the company.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4617,
-    "Time": "2026-08-27T00:09:12Z",
-    "Title": "REA unveils asset manager for solar projects",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/rea-unveils-asset-manager-for-solar-projects/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Rural Electrification Agency (REA) has launched the Renewable Asset Management Company to oversee the sustainability and management of publicly funded solar energy assets within universities and teaching hospitals.",
     "Status": "Unread",
     "Engine": "ollama"
   }
