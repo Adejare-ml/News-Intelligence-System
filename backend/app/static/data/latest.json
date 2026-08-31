@@ -1,5 +1,17 @@
 [
   {
+    "ID": 4851,
+    "Time": "2026-08-29T23:37:20Z",
+    "Title": "Dangote hikes petrol price three times in eight days",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/dangote-hikes-petrol-price-three-times-in-eight-days/",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Dangote Petroleum Refinery has implemented multiple price increases for Premium Motor Spirit (petrol), raising the gantry price by N65 per litre in the most recent adjustment.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4836,
     "Time": "2026-08-30 07:39:45",
     "Title": "SMEDAN Seeks Scalable Growth, Stronger Coordination In Revised MSME Policy",
@@ -704,18 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Nigerian Maritime Administration and Safety Agency (NIMASA) is taking enforcement actions against violators of the Cabotage law to ensure compliance within the maritime sector.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4585,
-    "Time": "Thu, 27 Aug 2026 10:42:00 GMT",
-    "Title": "Bolt cleared to resume airport operations after FAAN talks - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdXJYQVVoUENMMndGLVVPTmNiS0puSlBOVEFYZ3Y5OUJPRDJpU2xvT2RIaE1QZFRzUDFyX0tTbzNiUHV5Wm1HMXBCSFJkODc5M0RfMXBYdnk4cjJ6aFo1Z1hyZUh2bUNDRnRxRm1lTDVidmhUWVZoMXFhQnJYMTlPczM2VEtrRDRnYWU5Y3RMVFNFcXV3TnRF?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Bolt has been cleared to resume its ride-hailing operations at the airport following discussions with the Federal Airports Authority of Nigeria (FAAN).",
     "Status": "Unread",
     "Engine": "ollama"
   }
