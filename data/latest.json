@@ -1,5 +1,53 @@
 [
   {
+    "ID": 4921,
+    "Time": "2026-08-31T00:00:47Z",
+    "Title": "Nigeria targets 2.5mbpd as oil investment push intensifies",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/nigeria-targets-2-5mbpd-as-oil-investment-push-intensifies/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Nigeria is intensifying efforts to increase crude oil production to 2.5 million barrels per day. This objective is to be achieved through fresh investments, deepwater project developments, field revival, and improved asset security.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4920,
+    "Time": "2026-08-31T00:07:09Z",
+    "Title": "Petrol near N1,400 as Dangote defends price hikes",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/petrol-near-n1400-as-dangote-defends-price-hikes/",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Dangote Petroleum Refinery has defended recent increases in petrol prices, citing the high cost of crude oil procurement and operational timelines. The company is addressing the impact of its pricing strategy on the Nigerian fuel market.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4918,
+    "Time": "Mon, 31 Aug 2026 22:18:26 GMT",
+    "Title": "EFCC \u200b\u200c\u200c\u2060\u200b\u200c\u200d\u2060\u2060\u200c\u200d\u200b\u2060\u200c\u200b\u2060\u200d\u200c\u200c\u200bdismisses over 40 staff for corruption, prosecutes five others | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVnJvby00bHpMV0hJRGlnM0ZQZjhJZmJldHNnRU5LdUFud1FVLUZweFlxUmlQdkZqaWd6T1h1Y3JQYTlXX0JsdXlmYVBVSWREb2F6OHZ5VWZRVllDcS1NY2UzTUo5VGRRZHdyTFYxRDZBcU53bjVjQnRzSWJOYlJVMWppM2EwR2VfYjJaVlVSTHFKSlB2b0VPWGdYaw?oc=5",
+    "Category": "Government",
+    "Risk Score": 60,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has dismissed over 40 staff members due to corruption allegations and is prosecuting five others.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4917,
+    "Time": "Mon, 31 Aug 2026 22:19:23 GMT",
+    "Title": "EFCC \u200b\u200c\u200c\u2060\u200b\u200c\u200d\u2060\u2060\u200c\u200d\u200b\u2060\u200c\u200c\u200c\u200d\u200d\u200c\u200bnow freezing suspicious funds in 72 hours, targets crypto wallets | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY1FWcUxDaWRMZGI4VmpZREVPRjJQS3h1N0FoazloTmZQZHR4SjluUFJFbHB1eU1lZTl1aWRxamJfX2MxdjcycjJTanpBR3BFWXVQb0FSWndmTUxVZ2FQdVB1N0VldmlCZUl4eTRRMzNBcmJmQ1dxUThtUEluN01XY2tHZ05sS1JGR3ZRcXo0UXM?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has implemented a new policy to freeze suspicious funds within 72 hours. The agency is specifically expanding its focus to target cryptocurrency wallets to combat financial crimes.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4909,
     "Time": "2026-08-31 07:20:21",
     "Title": "$947m July remittances highest monthly inflow \u2013 CBN",
@@ -668,54 +716,6 @@
     "Category": "Company",
     "Risk Score": 20,
     "Summary": "Nigerian Enamelware reported a reduction in its losses for the first quarter, narrowing the deficit to N37.5 million.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4629,
-    "Time": "Fri, 28 Aug 2026 03:08:42 GMT",
-    "Title": "FG raises $1.4b for electricity transmission amid vandalism, repayment crisis - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWUtUMmV5QXJ2d3JRd1o4SkFTcUpoQnB1RkNlYzEzUm1ISGlXd1l5cUtJTHRTbXQtQXctdGlPMjJHV21MZXF4emVRY2lBYVNnd1E4NUhjZFFXS1FGSmM4QlIwUXlrc01OMWtnYVhoTWllT0ZjYU1zbE03bUtqTzRZSXNzcnNDMC1KcURqajcyV04yaGMzSGg0ZDVnaTRyQ1doRzJV?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Federal Government of Nigeria has raised $1.4 billion intended for electricity transmission infrastructure. This funding comes amidst ongoing challenges with infrastructure vandalism and repayment crises.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4628,
-    "Time": "Fri, 28 Aug 2026 04:02:00 GMT",
-    "Title": "Fake Agency Scandal: ICPC recommends disciplinary action against 13 officials (Full Names) - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZFFjWk1KdkNnWHVxR2t1OC1fV2tGMGhDb1JtczItTHFtaC1VMVQ5WENCM2NQNFZuaEJSeGZOcHJFRFBoeU52VHB2RzZjSk12LWYzQnBUNTA2aEtFcW5zcVNuVzJHQlRQM05tWk05TnVTNDEzTS13OHUxSjZaWld4ajZKOTJuNWo3SnpSZkw0Qlo4alhEa3F4X2lTMFY5LXc5ZGxkQnM1UEJJbUNYMkc2T0tWb3Z4enNZblcxLWNBXy1JSjFmR0M3eTZWVlQ4NVU1MUcxdUVwemVWX0RsaEE?oc=5",
-    "Category": "Government",
-    "Risk Score": 75,
-    "Summary": "The Independent Corrupt Practices and Other Related Offences Commission (ICPC) has recommended disciplinary action against 13 officials following a scandal involving a fake agency.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4626,
-    "Time": "Fri, 28 Aug 2026 03:28:33 GMT",
-    "Title": "MTN pays N7 trillion in taxes, commits to local content devt - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWDE4d0UtWF95cXIzTDhjWG9jNEZtLW9sNHZTbmM0cjc1OVlpQmQ4elF5am1STlRRamVwMndfeUJNYTJHam45eXR0Y1k1Qi1za0U2NjY5Z19OWjJ2anZpQW9oUzRHb0dXQ0pkZ1d2aEMxUWFBODJmRl9jSFBEMjJTX2RUTkpOVWx3WEZGQVdSZlg2TGIwVm42S2RHRVNiUTg?oc=5",
-    "Category": "Company",
-    "Risk Score": 10,
-    "Summary": "MTN Nigeria has reported a total tax payment of N7 trillion and expressed a commitment to local content development.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4625,
-    "Time": "Fri, 28 Aug 2026 03:28:39 GMT",
-    "Title": "Nigeria First Policy: MDAs tasked on compliance - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAzdGJFaE51RzZDYlhwTUNGbXhMeDNFQnpFT01mWXpWeDZKNmMzRlFzNVBSWFFFQmpwMHlwUVNRQVhLMm9sbE5aWkFoc2lNSnpGMnc2VGd0VlBLNGRjVVlJVTVwYXhWNUVrMklSMWNRczFwVXZ5UzFqalZiRTQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Ministries, Departments, and Agencies (MDAs) have been directed to comply with the 'Nigeria First' policy, which prioritizes local content and domestic procurement.",
     "Status": "Unread",
     "Engine": "ollama"
   }
