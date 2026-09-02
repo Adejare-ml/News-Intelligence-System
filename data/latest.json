@@ -1,5 +1,41 @@
 [
   {
+    "ID": 5005,
+    "Time": "2026-09-01 12:51:24",
+    "Title": "EFCC invites Sylva for questioning over alleged $14.8 million fraud",
+    "Source": "twentyfirstcenturychronicle",
+    "URL": "https://21stcenturychronicle.com/efcc-invites-sylva-for-questioning-over-alleged-14-8-million-fraud/",
+    "Category": "Legal",
+    "Risk Score": 75,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has invited former Governor Seriake Sylva for questioning regarding an alleged fraud involving $14.8 million.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5000,
+    "Time": "2026-08-31T23:53:20Z",
+    "Title": "Public funds moved from LG account into crypto wallets \u2013 EFCC",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/public-funds-moved-from-lg-account-into-crypto-wallets-efcc/",
+    "Category": "Legal",
+    "Risk Score": 85,
+    "Summary": "The EFCC has uncovered a scheme where public funds were diverted from a local government account through a private company into cryptocurrency wallets. The investigation highlights a complex money laundering trail used to siphon public resources.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 4996,
+    "Time": "Tue, 01 Sep 2026 21:41:37 GMT",
+    "Title": "What Nigerian law says about Tinubu\u2019s vacation in Europe, transfer of power to Shettima - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaXBfdXhzUENhRE8wQ29JeFVxY2dtUVRWdHZTNFE3U0dGbUVUdHhTQmRmT1ZLTmxyaElfU3VEMkhuUl90LTh3djBKeURyNkh2bzBqRmJCY0JSOEVkRUJ1UGNmR05qbS0td0NpN0FzbVhtdm1tRkRoQTdZUHJJM1U5aUw1SkJqU085ckpTeWo2VThfZHZYcXlwLWZyb2NQMHB4VlBLT0RMWkNhZHVaX280c1Fva0dtTnVlRHc0a2xmY2RXamhyMGpHTkNqelBScDJzU0tDWTN5SWV6Zw?oc=5",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The article discusses the legal framework regarding the transfer of power to Vice President Shettima during President Tinubu's vacation in Europe.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 4990,
     "Time": "2026-08-31T14:21:11Z",
     "Title": "Why Betta Edu was included in 2027 Tinubu campaign council \u2013 Spokesperson",
@@ -680,42 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "President Tinubu has directed the Niger Delta Development Commission (NDDC) to initiate the reconstruction of the Warri-Benin Highway.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4767,
-    "Time": "Fri, 28 Aug 2026 17:40:41 GMT",
-    "Title": "Benin-Asaba Road: Umahi gives CCECC 14-day deadline as motorists lament gridlock - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQV2pIYlJiQzJVU0l5XzBtX2RoSVNuaTdRT0x1NkJkS0ZVdFZKM1VYa1dfVjJma01fMXhLY01zRkd5U1UtNG01T2dRTHEtTFVXSWM4aWJGZnJYZFkwdEoyZndLVmZNME1PeVk0b0Noa2NzNDQyem5XV2tKYWNIT2o0OTlkaDhHNHdRWjMzTTlwRkhzajgybFQ1YUMzV2JDZUlsbWpCbDJLa2ZkcnhJa0V0WEU1N2dCbTBSTWRsT1N4Yi1BbGNPa0ZqZC1kNE0td3pVZ044MEVXOXZYN1hydXY1VVJGMVRYSEk?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Minister of Works, David Umahi, has issued a 14-day deadline to the China Civil Engineering Construction Corporation (CCECC) to address gridlock and progress on the Benin-Asaba Road project.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4764,
-    "Time": "Fri, 28 Aug 2026 16:54:50 GMT",
-    "Title": "Lagos moves to convert abattoir waste into biogas, fertiliser | - theeagleonline.com.ng",
-    "Source": "theeagleonline.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS3J2TDEwemU4SWY2X3Azd0pBYmVValNpU0lNSndCWUtnR1B3dzI1N2dsYy0wZ1RDSzdfWUNyUUZ3X3RpZkU4SnBNUUNOZFNkR05FNkNmQXdRNGg1SHZSRmVqMzljcHBfdHNqSnI4QzIzSHBCdG5ReGVvT240TEc3QXlVZFVWQWJrQW10djJzMmpDR2hxbkE?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Lagos State Government is initiating a project to convert waste from abattoirs into biogas and fertiliser. This represents a public sector environmental and waste-to-energy policy move.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 4762,
-    "Time": "2026-08-29 00:50:06",
-    "Title": "Accounting AI Startup Rillet Hits $1bn Valuation After Raising $100m",
-    "Source": "naijaonpoint_ng",
-    "URL": "https://naijaonpoint.com.ng/accounting-ai-startup-rillet-hits-1bn-valuation-after-raising-100m/",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "Accounting AI startup Rillet has reached a valuation of $1 billion after successfully raising $100 million in funding.",
     "Status": "Unread",
     "Engine": "ollama"
   }
