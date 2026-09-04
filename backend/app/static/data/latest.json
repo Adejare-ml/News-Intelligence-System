@@ -1,5 +1,65 @@
 [
   {
+    "ID": 5216,
+    "Time": "2026-09-03T13:00:24Z",
+    "Title": "Uber quits major African markets",
+    "Source": "RT",
+    "URL": "https://www.rt.com/africa/645086-uber-quits-nigeria-uganda-markets/",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "US ride-hailing giant Uber has ceased its operations in Nigeria and Uganda, marking a significant exit from two major African markets after over a decade of presence.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5212,
+    "Time": "Fri, 04 Sep 2026 15:56:08 GMT",
+    "Title": "Security expert, Okere, emerges first Nigerian to join WAD board - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNzNlNVNPUm91RzhoWUxlT3FBVUUtQkV6SjAzQXJSZWVSSlNNM2pQRjVlSnc5bjNVa1BfZk9xaFFHaDBxMG5JNlJJUDR2N2d1VE82MFlOQUxkQWhtLXRpNXVGWUNUMGpYU2tyMGRXNGcyS0M3dEhCcEJMX1NHNWNITDJpYWwwWHk0dmpmQ05WU0otb0s4dmRhVVZQSzZlclnSAaYBQVVfeXFMTlBCaFJCMUdyOEFSMTd5eXB0U0ZWOTFaQi1fb1lwTWZDa2cxRWFzREljMTN5TUNfT05HeWU2UWl2cmFjVFVTV25lRDdGRjFRcTVJV1NHUy1PN0NuX2F1WWNpQUh4WTlXQThDMVFSM2MtQm9qRjIzMXoyNUZ0QjI2SUJkSU90X1NUdnlnNlFuSXA5T0hOQ0V3T3F6UDNBSDBGYXJnQkpqQQ?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Security expert Okere has been appointed to the board of WAD, becoming the first Nigerian to do so.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5211,
+    "Time": "Fri, 04 Sep 2026 07:09:13 GMT",
+    "Title": "NNPC profit drops as revenue slips by 29.6% in July - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQkFOZU1FeWFwclhDcW5aN296LTlReXBVUGJrbEdrSWtYZEtwczFiWUJSalpCanctakdWR1IyYnBHbEpHeTQ1WWc3UnZVQ3R4dVBER3NzZGRoVDc1ck5BN3RaUzhXdlB3V0NKVEw2Z0ZJNG9iTk1mUjBVQTY5cjdrZGxGTDIxanBCajZHandpMWjSAZYBQVVfeXFMTU9PZjc1YU1aQmdqRmVYZ1JWbkZ0aG1qd2xXYVpUSEVOcGlHWVcyVjFLSEN6UHc0cEZpUDc3ZVhxYzVMYzgwNmM1UElvZ0U3VklfMWVjTEpiQ3FXcGFZUkdUU0tDdVlVbkVxVHdXa0xoRmdjeTZkT2drdHc0aS1ZelhISmJGM1pxWlRtYnc0LVhmWWgydmd3?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "The Nigerian National Petroleum Company (NNPC) reported a decline in profit following a 29.6% drop in revenue for the month of July.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5210,
+    "Time": "Fri, 04 Sep 2026 13:42:20 GMT",
+    "Title": "Why Uber left Nigeria \u2013 FAAN - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9LNnM1dGpxMGFaVUpFU0dwT1E4TG5xYkRJUUFXSGhaRHhuMHpCUVhqX1VqaHhvNThmWlp5d1Zad2lQd1pKYnJsRDJwTDVkQUxRb3RWdzBGQjlrTURWRlYxYkx1cFdrVGphYkE2clFVcWzSAXZBVV95cUxQbTlDZFlOQWRNNFBQcWlycEpMZ21jTHpHNFdtY21rSGpfanZZMzd6WUQ0c25HYzhRUkwyWHprOWpwODBMemthTjRFZWFva1dfTTFycXM3bGc2UTZ2eFpsN2ZsYThPTlZDZEFIUmpmZUlwQzBjM2R3?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Uber has reportedly exited the Nigerian market, with the Federal Airports Authority of Nigeria (FAAN) providing context or commentary on the departure.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5209,
+    "Time": "Fri, 04 Sep 2026 13:52:11 GMT",
+    "Title": "Eno commissions 6,475km Amanyam\u2013Mbiaso Road, promises more people-oriented projects - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcmN4OEhiVzJEcGdmby02VkxjOTR5Z0Z0ckMyVG1CUjlvZW1wTXZWLWRZbXlpd0xJMkh0LUdyTmJ1emxYYXpUWVgxZE1fdk81R0JLazhCMWhSNk82R1JiQkczQUVBbWpFRHltNUs1dnZsY2RQbXcyWlpaWkZJZE14QXlPYVZMckJyYTRGRUtMWDlNYnd1OFlLNmZPeHcwamZ3OWJOc0U3ck82MzJtX2dFX1VJQ3ZuZkY3Q29pdDhXRkE?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Governor Eno has commissioned the 6.475km Amanyam\u2013Mbiaso Road as part of a series of people-oriented infrastructure projects.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5204,
     "Time": "2026-09-03T05:51:44Z",
     "Title": "Morning recap: States owe N5.3tn debt, INEC fears AI disinformation threat, other top stories",
@@ -656,66 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Securities and Exchange Commission (SEC) of Nigeria has issued proposed rules regarding online foreign exchange (Forex) trading and Contracts for Difference (CFDs). This move aims to regulate the digital trading landscape within the Nigerian financial market.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5031,
-    "Time": "2026-09-01T08:22:34Z",
-    "Title": "Jigawa, Bauchi get $4m solar mini-grid investment",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/jigawa-bauchi-get-4m-solar-mini-grid-investment/",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "All On and Energise Africa have invested $4 million to develop and deploy solar-powered mini-grids across 19 communities in Jigawa and Bauchi states to expand renewable energy access.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5030,
-    "Time": "2026-09-01T10:27:23Z",
-    "Title": "Timipre Sylva Quits APC as EFCC Seeks Him Over $14.86m Case",
-    "Source": "Homeandawaymedia.com",
-    "URL": "https://homeandawaymedia.com/business/efcc-summons-timipre-sylva-over-alleged-14-86m-fraud-as-ex-governor-quits-apc/",
-    "Category": "Legal",
-    "Risk Score": 75,
-    "Summary": "The Economic and Financial Crimes Commission (EFCC) has summoned former Bayelsa State Governor Timipre Sylva in connection with an alleged $14.86 million fraud case. Simultaneously, Sylva has resigned his membership of the All Progressives Congress (APC).",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5024,
-    "Time": "Wed, 02 Sep 2026 02:30:00 GMT",
-    "Title": "Arridex, Sodah partner on borderless manufacturing network - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQa3pIeHUzeXlZUnZXLVI2UHVzMS04djhGNWg1dmhaazJkTVlxYXRjZk5ONGtvZkpaZHN5b0hMbjVoZC1ycDdobnZtdmJKbFdONnFfMEhUX1loWGJkNXBxVUlaRk0zckxUM24yaTZoZGdBUGJQbm5QSmhTSTNTZzBNWTZOMUNMWVYwNWtlMmJ2c0ZFSFNzclZOaUl4RVc?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Arridex and Sodah have entered into a partnership to develop a borderless manufacturing network.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5022,
-    "Time": "Wed, 02 Sep 2026 03:33:20 GMT",
-    "Title": "\u2018Dangote\u2019s vessel acquisition exposes local shipping capacity deficit\u2019 - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYThYQXVNOFpjb2x2alFlWWZMd0NBRVR6cHlFeFdMRG9HSFVOZjdOZXZudnNITFppc2MwVXd5bjlwWkk5Nmd6WlRwaVVjUXYzdlE2Q0J6bHZUQml1OUZfcXhBQjVKbU5ja21sbVBTYmlFMXJmd0F5ejg2NFlZaDl3bzQ5T3BrU3MxamtLcURPNzJNdEV2aGRIYkpBNjZwWkcwT1BsTTFxc19IN2JfUnZhTjJ6R3pvZw?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Dangote Group has acquired shipping vessels, a move that highlights the current deficit in local shipping capacity within Nigeria.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5020,
-    "Time": "Wed, 02 Sep 2026 10:40:03 GMT",
-    "Title": "NNPC reports N3.09tn revenue, N279bn profit in seven months | - theeagleonline.com.ng",
-    "Source": "theeagleonline.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWTdOUUtZLUtucGRvLVltcHBTVHFSUmRmUmlZelYtM250Wlg5cmlFajJGNFhpbnpMUE8tVU5aR3JLc0R1Q1hsazBsR2tDc0NpZWVZR3Q1WTJSVVRPbGJDUUVJT0QxNDdOcVVXS1VlR2lidnY5bHdRY2wwQzV0NjVhVjRRSkpuTlMwR2NPYmR5SEhHVEU?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "The Nigerian National Petroleum Company (NNPC) reported a total revenue of N3.09 trillion and a profit of N279 billion for a seven-month period.",
     "Status": "Unread",
     "Engine": "ollama"
   }
