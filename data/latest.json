@@ -1,5 +1,29 @@
 [
   {
+    "ID": 5303,
+    "Time": "2026-09-04T17:31:00Z",
+    "Title": "SpaceTrade rebrands to simplify crypto, broaden access to digital assets",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/spacetrade-rebrands-to-simplify-crypto-broaden-access-to-digital-assets/",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "SpaceTrade Technologies has rebranded its identity and opened a new headquarters to simplify cryptocurrency access and broaden access to digital assets.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5300,
+    "Time": "Sat, 05 Sep 2026 18:11:49 GMT",
+    "Title": "Sunbeth Global Concepts redeems \u20a625.1bn CP, demonstrating strong liquidity, investor confidence - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQT09RVFMtSldMcFE1VTZ6dVNDYWltcTJKWmJaN0t0MUNNWW1WRmNFRHhjblpjMjJrNTZTN014TGJCa09fM0Z2OWd0cDNfY2l0NTJVTS1FMDZOT3htVUxmdG5PZkRCSkR0YmtFc3JkdWRjM1dCYWpRYzZVUVplUi1fTkttWmFBbzdYZzRIWHdmUldiaGd4MExTVFRPM09uRTYzV3djTUt0QlAwb0J2X2J6OHpvR2tVSGtQX0N5MUp0NUs3UExRRHBWRWxZRTBvSVNsUUU0UWNuN3FONUwyelZmSGZHLURNbjdD?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Sunbeth Global Concepts has successfully redeemed \u20a625.1 billion in Commercial Papers (CP), indicating strong corporate liquidity and investor confidence in the company's financial stability.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5292,
     "Time": "2026-09-04T13:09:09Z",
     "Title": "EFCC given ultimatum to reopen case, prosecute Atiku over alleged financial crimes",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 10,
     "Summary": "The National Emergency Management Agency (NEMA) and the Ogun State Emergency Management Agency (OGSEMA) are strengthening their collaboration to improve disaster response efforts within Ogun State.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5122,
-    "Time": "Thu, 03 Sep 2026 14:44:44 GMT",
-    "Title": "Sanwo-Olu appoints Gbaye LASBCA General Manager - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5MbXBaSzV5S3ZDNXFiaHRRUEhGMjladUk4NHNYQXdWU1RhTXdDeEw0SkthdjRVRkFwd0c0ZkwzZUp4Z2Z1d1dUU0lVZUNFUmlYdFhSWGhrU1Q3QUVrT0ZiQlRub3FJcWgwTDRQUmpPX0FWN3dJemtQZ1FoY3lOZw?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "Governor Sanwo-Olu has appointed Gbaye as the General Manager of the Lagos State Building Control Agency (LASBCA).",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5118,
-    "Time": "2026-09-02 23:54:00",
-    "Title": "Unilever, Nigeria Customs Partner to Combat Counterfeiting, Strengthen Legitimate Trade",
-    "Source": "thisdaylive",
-    "URL": "https://www.thisdaylive.com/2026/09/03/unilever-nigeria-customs-partner-to-combat-counterfeiting-strengthen-legitimate-trade/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Unilever and the Nigeria Customs Service have entered into a partnership aimed at combating the proliferation of counterfeit goods and strengthening legitimate trade within Nigeria.",
     "Status": "Unread",
     "Engine": "ollama"
   }
