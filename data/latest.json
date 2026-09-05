@@ -1,5 +1,41 @@
 [
   {
+    "ID": 5292,
+    "Time": "2026-09-04T13:09:09Z",
+    "Title": "EFCC given ultimatum to reopen case, prosecute Atiku over alleged financial crimes",
+    "Source": "Daily Post Nigeria",
+    "URL": "https://dailypost.ng/2026/09/04/efcc-given-ultimatum-to-reopen-case-prosecute-atiku-over-alleged-financial-crimes/",
+    "Category": "Legal",
+    "Risk Score": 65,
+    "Summary": "Former House of Representatives member Ehiozuwa Agbonayinma has called on the EFCC to reopen and prosecute a case against Atiku Abubakar regarding alleged financial crimes. The demand centers on allegations of financial misconduct and a call for transparency in the prosecution process.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5288,
+    "Time": "Sat, 05 Sep 2026 04:14:00 GMT",
+    "Title": "CBN\u2019s data localisation directive and the future of digital financial sovereignty in Nigeria - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeDN3MVpkTjhqc2lMelF6bThJNXBLRF92ZUg5Qkd2Q2dhdUVkV1JRSUlsX29TaGZOb2JmNVlIVDVVZW5iS25vOXJuTk10TFZMTjRSckN5ZTBValc3ZU9jX0VJNVpUYmVnVkhDdmpqV3lSOF9lN3RMZkNnajY4RGNfejJCVU4ycjZDZG55WFBnUXRESDZoQWI0QkhqYlNLb0pvcDllZDZQQk9BX1dqZEhSbV9jU0pjVDZyVjNhVWx5MXNFdDFSSDNVeWVR?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Central Bank of Nigeria (CBN) has issued a data localisation directive aimed at enhancing digital financial sovereignty. This policy requires financial data to be stored within Nigeria's borders.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5287,
+    "Time": "Thu, 03 Sep 2026 20:00:05 GMT",
+    "Title": "Groups question JBS\u2019 $2.5bn investment plans in Nigeria - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQVo4d2FwdFBlcjA5R0JpckZWZExudmh6TXZBZkw2Vk9PQmpvb0taOWM5LU5pRmhka08tYnQycHAwblFubUJoWG9ELWNYRTZmRUtYRWdNb3d5TVBJMWZlb0NsM2F4Y0xVZ1RtOVZINFdscmFqam8wMGI4N0FsWVpRV0lreFBDZGVBV1dsOTFNTHRMaG5YSm5JMkdjcFlaZ2lyWGRCMC1EQndPclMzM01hSFFTRlBlbVBrb0hN?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Various groups are raising questions regarding the proposed $2.5 billion investment plans in Nigeria by JBS.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5270,
     "Time": "Sat, 05 Sep 2026 00:52:20 GMT",
     "Title": "Airport policies didn\u2019t drive Uber out of Nigeria, says FAAN - Punch Newspapers",
@@ -680,42 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "Unilever and the Nigeria Customs Service have entered into a partnership aimed at combating the proliferation of counterfeit goods and strengthening legitimate trade within Nigeria.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5111,
-    "Time": "2026-09-02T06:34:51Z",
-    "Title": "Kolo Magazine enters Nigeria, targets business and creative sectors",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/kolo-magazine-enters-nigeria-targets-business-and-creative-sectors/",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Kolo Magazine, a Pan-African publication, has officially launched its Nigerian edition. The entity aims to target and connect the business and creative sectors within Nigeria's economy.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5108,
-    "Time": "Wed, 02 Sep 2026 11:45:04 GMT",
-    "Title": "Champion Breweries appoints Malolan Sampath as MD/CEO - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWlc3RWU1a2dOMUF5SF9MakZfV19pd1AzanFzWW9JSXl4N19SOFJISm5qQVNVMXBTWXhKN25CVVdia3FlUDdQZ28xSjFXdUVHV3VLWE82ZDU5MzZDOEZDQ1h5cmFHSkpXajI0a2I5cFpjMnJmYlVvbGdDcEZjbExHN29hcjlUaGVmZXVVYXAxbU95UDdYQnRSRllFcm1KdGlZcTExSzMxdElLVk8zLUhtUkFCX2Ywa2NiNndN?oc=5",
-    "Category": "Company",
-    "Risk Score": 15,
-    "Summary": "Champion Breweries has appointed Malolan Sampath as the company's new Managing Director and Chief Executive Officer.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5106,
-    "Time": "Thu, 03 Sep 2026 10:57:10 GMT",
-    "Title": "Over 20,000 benefit from LagosHOMs through Mortgage and Rent-to-Own schemes - GM/CEO - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOEdYVjBrQzB5YkRaMEU3bE9EYWwyOFlGUzRJb1k0YUdwczhwT0xnXzRSN3JlQm9tLWJycklxNDdNTy0xT2ZJOGpWajc4TmZaenlaaEhnbW1YUjk0OGtXNzVrV1plandVNTQ4bEZ1RExpaTRDcVhad0NvQzAtSXJuSFJSOV9uN0toS2NHZlV1ZmY0Mjlyc00waEhfR0ZNTUV3U0FIdzRRUldoc2M?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The General Manager/CEO of LagosHOMs reports that over 20,000 individuals have benefited from the agency's Mortgage and Rent-to-Own housing schemes.",
     "Status": "Unread",
     "Engine": "ollama"
   }
