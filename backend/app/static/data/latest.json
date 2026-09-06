@@ -1,5 +1,41 @@
 [
   {
+    "ID": 5338,
+    "Time": "2026-09-04T21:03:56Z",
+    "Title": "N117.7m Fraud: Five convicted, jailed seven years in Lagos",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/n117-7m-fraud-five-convicted-jailed-seven-years-in-lagos/",
+    "Category": "Legal",
+    "Risk Score": 45,
+    "Summary": "Five individuals have been convicted and sentenced to seven years in prison for their roles in a N117.7 million fraud case targeting Chi Limited. The judgment was delivered by Justice K.A. Jose of the Lagos State High Court.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5334,
+    "Time": "Sun, 06 Sep 2026 04:58:44 GMT",
+    "Title": "Dangote, E-Terra Technologies to collaborate in tackling Nigeria\u2019s e-waste crisis - Vanguard News",
+    "Source": "Vanguard News",
+    "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPcUExblduQm85b3BiNUU5ZDVQeHpvTEdicXFkZ2RvMEVMVlQwZDRqN0NnNUxRM3lBUng5T2VfazVseHZBOVdwa2tRdmI0RENBeTRZbHhJOHVpbVFiMmxOY245TUJmMTZEeEx0WFE2V3ExM0RVWnNiR2tETDdjRDZ5MGlRNnUyaGZpUjRucnFad3ZKYzFtcnJzOFRBNVhCY3hKYWRXQU00U0RTTXlYMlRoX0RHbEE4akXSAbwBQVVfeXFMUG44WnVjT1NlaVV5cmRtQ0xST2tLVkFWbkE0ekx4aFNhVFdtU3o4SUJ4bExVNDROZjRrN21jcDJCOGxWaVF5cVRKM0RsNFQ2OWJDczdCUWYtck80ODJWTzBKWXMwWWFQWnIzeWNkQ1F1YUhreFNWUTZJa01IRkItbFQ3NzBIajAwYVZEQ0pSOGRTSC1VTmVWLURqdkFUd3lCOXlBa3FtRUtNOG03MXRlSHUyRzFGampER0l1bjQ?oc=5",
+    "Category": "Company",
+    "Risk Score": 15,
+    "Summary": "Dangote and E-Terra Technologies have announced a collaboration aimed at addressing the electronic waste (e-waste) crisis in Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5331,
+    "Time": "Sun, 06 Sep 2026 10:25:12 GMT",
+    "Title": "Illegal Mining: Taraba govt sets up new task force - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONWJvaF9teGRxclBoZjRRem9KN2JOSENGOTN0QzVMdF9YWnVNVWNxcUQxcUlGRDk4RVJvbnoxc0ZNZVZjVm1kQ05Na0ZCSi1SLTk0QVMydEVHcjVlQmtjcWN2c1AtbkdaUWdwZjBPWnBMTnNjUjBOMDc2c05Fc05pU2RQTzY1SEtYUUVfNlVxNlhlTnhvTXlycG9FRDlwa2F1bVU2RUhhaUxuTUFjZlpwUHkxYw?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Taraba State government has established a new task force to combat illegal mining activities within the state.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5324,
     "Time": "2026-09-04T23:36:12Z",
     "Title": "Outcry as fake products flood markets",
@@ -680,42 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Adamawa State Government has approved N2.2 billion for the procurement of fertilizer to support dry-season farming activities.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5136,
-    "Time": "2026-09-02T12:26:45Z",
-    "Title": "Opay considers secondary listing on Nigeria Exchange as it eyes $4B US IPO",
-    "Source": "Crypto Briefing",
-    "URL": "https://cryptobriefing.com/opay-secondary-listing-nigeria-exchange-softbank/",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "Opay Digital Services is exploring a secondary listing on the Nigerian Exchange (NGX) alongside a planned $4 billion Initial Public Offering (IPO) in the United States. The move aims to allow local Nigerian investors to acquire shares in the SoftBank-backed fintech platform.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5133,
-    "Time": "2026-09-02T15:58:18Z",
-    "Title": "Uber shuts down operations in Nigeria effective September 2",
-    "Source": "Crypto Briefing",
-    "URL": "https://cryptobriefing.com/uber-shuts-down-nigeria-operations/",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Uber is shutting down its operations in Nigeria and Uganda as part of a global corporate restructuring effort. This move includes a worldwide reduction of approximately 3,300 jobs.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5132,
-    "Time": "2026-09-02T16:39:29Z",
-    "Title": "Uber to cut 10% of jobs worldwide",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/uber-to-cut-10-of-jobs-worldwide/",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Uber is implementing significant organizational changes, resulting in the layoff of approximately 10% of its global workforce. The move was announced by CEO Dara Khosrowshahi to streamline operations.",
     "Status": "Unread",
     "Engine": "ollama"
   }
