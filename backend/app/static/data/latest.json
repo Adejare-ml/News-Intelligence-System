@@ -1,5 +1,53 @@
 [
   {
+    "ID": 5324,
+    "Time": "2026-09-04T23:36:12Z",
+    "Title": "Outcry as fake products flood markets",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/outcry-as-fake-products-flood-markets/",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The National Agency for Food and Drug Administration and Control (NAFDAC) and the Standards Organisation of Nigeria (SON) are facing public scrutiny due to the proliferation of counterfeit products in Nigerian markets.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5323,
+    "Time": "2026-09-04T23:51:49Z",
+    "Title": "Auditor-General flags N33.75bn transfers to unverified beneficiaries",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/auditor-general-flags-n33-75bn-transfers-to-unverified-beneficiaries/",
+    "Category": "Government",
+    "Risk Score": 85,
+    "Summary": "The Auditor-General has flagged N33.75 billion in cash transfers intended for 3.29 million vulnerable households due to a lack of evidence that the funds reached genuine beneficiaries. The report highlights significant failures in verification and accountability within the Federal Government's disbursement process.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5315,
+    "Time": "Sat, 05 Sep 2026 20:09:22 GMT",
+    "Title": "Reps dissolves ad hoc committees over failure to submit reports - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSG9QSE9QdF94aVRGbWJoeFRDd1RyQlhzWUhseVYydFJxdGVSNFNQU1ZfbTVzOFlMWDJsbGFVTUVtNzhtZFZiS21Pb1NHY0FySnQtb1Zkd2xwc1J5RnZQNzV2ZnRzWFg2VDdsTm54Rl8xaDc1ZGpBeEdQWEUwdjBsY0dtQ2lVbTkzNWdtWWpScEdmLU1GMjRVWmQ4ZXBRVVoyMEZsRlZCRTRqOGJzRm53QjNpN3NGX1h4X2dVdA?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The House of Representatives has dissolved several ad hoc committees due to their failure to submit required reports.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5312,
+    "Time": "Fri, 04 Sep 2026 22:00:00 GMT",
+    "Title": "Space trade rebrands, targets wider access to crypto, digital assets - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTXphLTI0RWRURlVzV0Q4dmlEaEdoRVg5N08zbERDSUZYUDYtMGZGMnVDdnFTSEJuVWx4ZlZlQ0M1UlktNVdfXzBTa0NZVzVZN25pOXVTRHA0X2pRcDZaWjZka0xCYkU3Y0MzSVRtd2lMU0ZQRTdBRlFLaE81YXJvQzdxaHhFUnhKLV8yVUgwOXNUSjBfazhlUGVSOA?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Space Trade has undergone a rebranding process with the objective of expanding user access to cryptocurrencies and digital assets.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5303,
     "Time": "2026-09-04T17:31:00Z",
     "Title": "SpaceTrade rebrands to simplify crypto, broaden access to digital assets",
@@ -668,54 +716,6 @@
     "Category": "Company",
     "Risk Score": 20,
     "Summary": "Uber is implementing significant organizational changes, resulting in the layoff of approximately 10% of its global workforce. The move was announced by CEO Dara Khosrowshahi to streamline operations.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5131,
-    "Time": "Thu, 03 Sep 2026 03:27:00 GMT",
-    "Title": "Supreme Youth Diplomatic Corps opens 2026 Executive appointment across Africa - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPempZVkRyREJUMHJrV2xSaUp0Q0F0TkgwaDVqODlfb0JFeWlxcTd6bXItYjdTT0FIYkZVYWpxWVhva0lUREFRd3pHZFFjc0k5dmljQWNVRER0ajFPWU1YU25hdFE2Zkdub3NnMHo5ME1GeTFfNXVyTTMyS3VBcWRUT3o0eDM0b0ZZenFOakhFdk1QaG1XRTJXMlBhRUtIWjZ4Z1VnRzVn?oc=5",
-    "Category": "Other",
-    "Risk Score": 10,
-    "Summary": "The Supreme Youth Diplomatic Corps has announced the opening of its 2026 Executive appointment process across Africa.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5126,
-    "Time": "Thu, 03 Sep 2026 16:41:26 GMT",
-    "Title": "Cutix Plc\u2019s external auditors resign after six years with company - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLWVzV3dfWUJPN3BOa01Ba3VOSzZobF9xczVRSlBkOW9SVUNNYUhnNzNORUpkU0lpdGpXd2dLeElKeGtMd1U0UDhLWTlVRkxUeThlY0lFSm1QVXVJN3FWN3VzT0pmaThFV2pMMUJuWmlNZldkN0FSWUNrenVQaF9GeW9VUVZnNmlEdzIxWDZBQ05aVVF2cDd5LTZ4SW04U0pITHNyZ1UyeDhabTZCeFpVeHkwY29wNGVacFdNQk5QNzczQ2hhZDI1TEJR?oc=5",
-    "Category": "Company",
-    "Risk Score": 40,
-    "Summary": "The external auditors of Cutix Plc have resigned from their position after serving the company for six years.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5124,
-    "Time": "Thu, 03 Sep 2026 14:10:00 GMT",
-    "Title": "Energy firms invest $4million for expansion of solar mini-grids in Nigerian states - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYm5Ka2tNUTdHVmI2NE5KSTNkUXJvUmtTemVZRW4yVG50akVMUkg5enlQUkZDdHFhZktHT1ZBRkFxSFdrVzIyc3I5Z3lOdnpMWDBQZTE1eWFDbTZuYi1YR2pSLWFzazBIcThBQ2MwNk91VVgtazFuU1pueVQwLW13a0xKTmVnVVEwZHNlc1VHc3c4SlhobFA0eW5rTnZGTDBhZ25kZGJ2MVdmY2RUeFE?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Energy firms have invested $4 million to expand solar mini-grids across various Nigerian states to increase energy access.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5123,
-    "Time": "Thu, 03 Sep 2026 16:36:42 GMT",
-    "Title": "NEMA, OGSEMA Deepen Collaboration on Disaster Response in Ogun - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZk5ubVRGT3FTVGxMMzhiVm1kYWFKVkluSFZRdVotV25GeU4yRFgySnB4WUhlTlFDV1JrWW9GOUtoRmUzNXZ1WXVod3ZsemR3ajdwTXBoX2tpOE9fYW1MNk9lVGRiSElUZ09FRVRTN1BuX21qUlVwVXNjUlc3aEM5VU50UXdNTUJ4MDR3enRqTzVXMkdpZmVkTzZjRl9NN3BHSGE0QjlB?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The National Emergency Management Agency (NEMA) and the Ogun State Emergency Management Agency (OGSEMA) are strengthening their collaboration to improve disaster response efforts within Ogun State.",
     "Status": "Unread",
     "Engine": "ollama"
   }
