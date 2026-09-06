@@ -1,5 +1,53 @@
 [
   {
+    "ID": 5367,
+    "Time": "2026-09-06 06:51:24",
+    "Title": "RCICA Lagos: \u20a6303 Million Assets Uninsured, \u20a67.7m Payments Tied to Regulatory Breaches Under the Leadership Of Wilfred Ikatari",
+    "Source": "secretsreporter",
+    "URL": "https://secretsreporter.com/2026/09/rcica-lagos-%E2%82%A6303-million-assets-uninsured-%E2%82%A67-7m-payments-tied-to-regulatory-breaches-under-the-leadership-of-wilfred-ikatari/",
+    "Category": "Government",
+    "Risk Score": 75,
+    "Summary": "An audit of the RCICA Lagos reveals \u20a6303 million in uninsured assets and \u20a67.7 million in payments linked to regulatory breaches during the leadership of Wilfred Ikatari.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5366,
+    "Time": "2026-09-06 06:52:49",
+    "Title": "LAWMA sacks street sweepers, service provider over indiscriminate waste dumping in Lagos",
+    "Source": "dailypost",
+    "URL": "https://dailypost.ng/2026/09/06/lawma-sacks-street-sweepers-service-provider-over-indiscriminate-waste-dumping-in-lagos/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Lagos State Waste Management Authority (LAWMA) has terminated the contracts of street sweepers and a service provider due to reports of indiscriminate waste dumping.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5365,
+    "Time": "2026-09-06 06:55:53",
+    "Title": "Stolen funds? \u20a676 Billion Paid Out To Non Existing Poor Nigerians By Bola Tinubu Government Through Nigeria\u2019s Cash Transfer Programme",
+    "Source": "secretsreporter",
+    "URL": "https://secretsreporter.com/2026/09/stolen-funds-%E2%82%A676-billion-paid-out-to-non-existing-poor-nigerians-by-bola-tinubu-government-through-nigerias-cash-transfer-programme/",
+    "Category": "Government",
+    "Risk Score": 85,
+    "Summary": "Reports indicate that \u20a676 billion was paid out to non-existent beneficiaries through the Nigerian government's Cash Transfer Programme under the Bola Tinubu administration.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5364,
+    "Time": "Sun, 06 Sep 2026 18:11:55 GMT",
+    "Title": "FCCPC opens probe into Uber Nigeria\u2019s exit over unfulfilled customer services - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVHk4ampWVDZjWUN5VXY3V1NPUU9saFlOc2dPYVY0aXlORnppQVVvT21JeHhlTkpWQTN5ZTFobHppdGVZM3JwcW1nMGt2Q0hVTXBXNTRubFlENWI1VDNHRG15MUF4N1pHaWhsQUdJYlhiRnJhLVBBVHFYVHpPYmplMDhwejItck9ac0JKY2NwRURoSUhid3FzekVTZ0YwMlpac09YLQ?oc=5",
+    "Category": "Legal",
+    "Risk Score": 45,
+    "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has initiated a probe into Uber Nigeria following the company's exit, specifically focusing on unfulfilled customer services.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5353,
     "Time": "2026-09-06 03:51:21",
     "Title": "Dangote Petroleum May Control Almost 30% Of NGX At Listing",
@@ -668,54 +716,6 @@
     "Category": "Company",
     "Risk Score": 30,
     "Summary": "Uber is reported to be exiting the Nigerian market, an event attributed by political aides to the current administration of President Tinubu.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5148,
-    "Time": "Thu, 03 Sep 2026 19:41:07 GMT",
-    "Title": "Tax reforms will end multiple taxation, say Kaduna gov, JRB Executive Secretary - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSENnTXRGSTN4REVyXzNPNWJmczFkUGxVeGlpcDlIc1JGZU44b3ZGalpzRjRka3lteDFYNU1hOEwxdm9mamhRMUpObnFpWDhSeUdLUFIxQ0ZZRDJvM25QWWpNVVk4UWFjdUNBQ0dTems4QXZqS0ZCeVQ1Q1FFWHhqVlZZeVpqS0JUX1AyVjNFTmZmNm1aZ1VxTnVSU0IxUzJ4dWRaLXN4cG5ueDNHaS00NEJrZGtObzBOX3dWR3pQUDhVTE5ERS1kYQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Kaduna State Government and the Joint Revenue Board (JRB) Executive Secretary have stated that ongoing tax reforms are intended to eliminate the issue of multiple taxation.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5147,
-    "Time": "Thu, 03 Sep 2026 18:48:50 GMT",
-    "Title": "FG unveils national environmental regulations framework 2026 - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWW1ackdISHF1eHVKU0VPT2JVTVF2NUtnT3A5akthUWh1TXc2dlV5WThGaUROMHcxNm4wQXB5RGJXenFFdFJpRUUwRW85ekFUcE02cDFaa083X3BPOElweER5c290NEpZWWJFWFMtOTRVaHdiZDVYMHh5RTZpWDVIdy1uZlYzckg5TDNpVWxTaw?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Federal Government of Nigeria has unveiled the National Environmental Regulations Framework 2026. This framework establishes the regulatory guidelines for environmental standards and compliance across the country.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5146,
-    "Time": "Thu, 03 Sep 2026 17:25:30 GMT",
-    "Title": "BPP moves to automate procurement, curb abuses - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS1hzOXgyNVI5Vk1DbXpzanRoa2FkR1lwbFVvM2R2NlBEaUZNb25GMXVkS3hqLWpZUEcyWHdhb05TbTF2YVBIdlFZOWtESnJRUUFESVpXdjY5aTlPMnVKWVJzT0RRRlJOT19HTnpfV1BHSTN5ek81SVhxX1hlekdtVDRMU0gydWVlenQ4bw?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Bureau of Public Procurement (BPP) is implementing a move to automate procurement processes to reduce abuses and increase transparency in public contracting.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5144,
-    "Time": "Thu, 03 Sep 2026 17:34:38 GMT",
-    "Title": "Uber Exit: Nigeria now \u2018graveyard of businesses\u2019 \u2014 ADC | - theeagleonline.com.ng",
-    "Source": "theeagleonline.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPb3RMYzNSd05SN19xbnJWMnIzNVRWa015MUt4ck1DbG80X1UwOVRGQVdvTGlaNE1GZkx2S2pDRUloQkFyMGlSMUh4TE91dUpuWVRHLVdCckdENWRyaUxkZU1JcUg5dGJ3M3NabVB5ek8zQUdHZnBCU18yMGg3TzNRTHFwbTBIX1E?oc=5",
-    "Category": "Company",
-    "Risk Score": 40,
-    "Summary": "Reports on Uber's exit from the Nigerian market, with the African Democratic Congress (ADC) commenting that the country has become a 'graveyard of businesses'.",
     "Status": "Unread",
     "Engine": "ollama"
   }
