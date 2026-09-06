@@ -1,5 +1,29 @@
 [
   {
+    "ID": 5353,
+    "Time": "2026-09-06 03:51:21",
+    "Title": "Dangote Petroleum May Control Almost 30% Of NGX At Listing",
+    "Source": "independentng",
+    "URL": "https://independent.ng/dangote-petroleum-may-control-almost-30-of-ngx-at-listing/",
+    "Category": "Company",
+    "Risk Score": 40,
+    "Summary": "Dangote Petroleum is projected to hold a significant market share of nearly 30% of the Nigerian Exchange (NGX) upon its listing. This potential concentration of market value indicates a major shift in corporate ownership and market influence within the Nigerian equity market.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5347,
+    "Time": "Sun, 06 Sep 2026 13:29:09 GMT",
+    "Title": "Prosecute officials over \u2018missing\u2019 N33.75bn cash transfers, Falana tells EFCC - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQU1lOeFJ5ZmxTSUR3UUI4TFJSeWpiVDE4Q2FlYllZaVlSLWpkNERVdk1kTFB5dW5qNnprVlNiNlpfdUlkUGJxSm92Z3M5NXg5OEI3YnJPRkdqQl80ZENSNmRjdnZCN3BDRzRWVmd4OE5hUk1nVEVZUS1xejFmRnpUUUdOTFRFZE1Ralo1Z3A0a080TDBsRmV2N0kzWQ?oc=5",
+    "Category": "Legal",
+    "Risk Score": 75,
+    "Summary": "Femi Falana has called upon the EFCC to prosecute officials regarding the disappearance of N33.75 billion intended for cash transfers.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5338,
     "Time": "2026-09-04T21:03:56Z",
     "Title": "N117.7m Fraud: Five convicted, jailed seven years in Lagos",
@@ -692,30 +716,6 @@
     "Category": "Company",
     "Risk Score": 40,
     "Summary": "Reports on Uber's exit from the Nigerian market, with the African Democratic Congress (ADC) commenting that the country has become a 'graveyard of businesses'.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5142,
-    "Time": "2026-09-03 04:45:40",
-    "Title": "Powering Nigeria\u2019s Knowledge Economy: TETFund Opens N10bn Research Fund",
-    "Source": "leadership",
-    "URL": "https://leadership.ng/powering-nigerias-knowledge-economy-tetfund-opens-n10bn-research-fund/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Tertiary Education Trust Fund (TETFund) has launched a N10 billion research fund aimed at powering Nigeria's knowledge economy.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5141,
-    "Time": "2026-09-03 04:45:55",
-    "Title": "Dry-season Farming: Adamawa Approves N2.2bn For Fertiliser",
-    "Source": "leadership",
-    "URL": "https://leadership.ng/dry-season-farming-adamawa-approves-n2-2bn-for-fertiliser/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Adamawa State Government has approved N2.2 billion for the procurement of fertilizer to support dry-season farming activities.",
     "Status": "Unread",
     "Engine": "ollama"
   }
