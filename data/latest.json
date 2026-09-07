@@ -1,5 +1,17 @@
 [
   {
+    "ID": 5379,
+    "Time": "2026-09-05T23:51:39Z",
+    "Title": "Olukoyede\u2019s ledger without a witness",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/olukoyedes-ledger-without-a-witness/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The EFCC Chairman, Ola Olukoyede, held a press event in Abuja to discuss agency activities and internal narratives. The report focuses on the conduct and communications of the EFCC leadership.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5367,
     "Time": "2026-09-06 06:51:24",
     "Title": "RCICA Lagos: \u20a6303 Million Assets Uninsured, \u20a67.7m Payments Tied to Regulatory Breaches Under the Leadership Of Wilfred Ikatari",
@@ -704,18 +716,6 @@
     "Category": "Company",
     "Risk Score": 10,
     "Summary": "FTSE Russell has added several Nigerian companies, including Dangote Cement, MTN Nigeria, and First HoldCo, to its Frontier Index Series. This inclusion increases the visibility of these entities to international investors.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5150,
-    "Time": "Wed, 02 Sep 2026 19:29:00 GMT",
-    "Title": "Atiku\u2019s aide blames Tinubu as Uber exits Nigeria - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9TSG1XUFRCUWxleEw3UjBNVlEtMEI0Q05Uek9rOEFLanczaEFSeW1ZR1ZxY3FKTFA0M09uSVVJdEhvaGYxU0J2M2IxOUo3QnZ6bkRqbDZ6dDEtbkJtM2daTGNOaEJTdkIxSDU1VGxad1ZRM3QtQXlwaUxXMGRodw?oc=5",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "Uber is reported to be exiting the Nigerian market, an event attributed by political aides to the current administration of President Tinubu.",
     "Status": "Unread",
     "Engine": "ollama"
   }
