@@ -1,5 +1,29 @@
 [
   {
+    "ID": 5470,
+    "Time": "2026-09-07 08:24:27",
+    "Title": "Plastic waste: FG mandates manufacturers, importers to take responsibility",
+    "Source": "vanguardngr",
+    "URL": "https://www.vanguardngr.com/2026/09/plastic-waste-fg-mandates-manufacturers-importers-to-take-responsibility/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Government has mandated plastic manufacturers and importers to take responsibility for plastic waste management. This policy implements Extended Producer Responsibility (EPR) for the plastics sector.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5458,
+    "Time": "Mon, 07 Sep 2026 18:03:46 GMT",
+    "Title": "Group seeks probe of N14bn Asaba-Onitsha Road contract - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOVmVFdDNRMXZGc0RCY2tfLVE1bmQ3OXpQZk43T3d5SjRCWGZmeVVkUFQta1JfWEk2dzlJUU9JOG5aRG5jTjYtbnJCS2ZOV2tBM2N0TVBkOU5mSTQ3NEVRU1VoRFU1ZWxfU2pTOXdsRzBvSWlPMnIxNjk0TnAtZklsSDZXLVZSVGs?oc=5",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "A group is calling for an investigation into a N14 billion contract awarded for the Asaba-Onitsha Road project.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5452,
     "Time": "2026-09-06T13:17:06Z",
     "Title": "5+5 policy cuts drug imports by 70%, boosts local production \u2014 NAFDAC",
@@ -692,30 +716,6 @@
     "Category": "Company",
     "Risk Score": 30,
     "Summary": "Uber has reportedly exited the Nigerian market, with the Federal Airports Authority of Nigeria (FAAN) providing context or commentary on the departure.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5209,
-    "Time": "Fri, 04 Sep 2026 13:52:11 GMT",
-    "Title": "Eno commissions 6,475km Amanyam\u2013Mbiaso Road, promises more people-oriented projects - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcmN4OEhiVzJEcGdmby02VkxjOTR5Z0Z0ckMyVG1CUjlvZW1wTXZWLWRZbXlpd0xJMkh0LUdyTmJ1emxYYXpUWVgxZE1fdk81R0JLazhCMWhSNk82R1JiQkczQUVBbWpFRHltNUs1dnZsY2RQbXcyWlpaWkZJZE14QXlPYVZMckJyYTRGRUtMWDlNYnd1OFlLNmZPeHcwamZ3OWJOc0U3ck82MzJtX2dFX1VJQ3ZuZkY3Q29pdDhXRkE?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Governor Eno has commissioned the 6.475km Amanyam\u2013Mbiaso Road as part of a series of people-oriented infrastructure projects.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5204,
-    "Time": "2026-09-03T05:51:44Z",
-    "Title": "Morning recap: States owe N5.3tn debt, INEC fears AI disinformation threat, other top stories",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/morning-recap-states-owe-n5-3tn-debt-inec-fears-ai-disinformation-threat-other-top-stories/",
-    "Category": "Government",
-    "Risk Score": 40,
-    "Summary": "Reports indicate that Nigerian state governments have accumulated a debt of N5.3 trillion. Additionally, INEC has expressed concerns regarding the potential for AI-powered disinformation to impact the 2027 elections.",
     "Status": "Unread",
     "Engine": "ollama"
   }
