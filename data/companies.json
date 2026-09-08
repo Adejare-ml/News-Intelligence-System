@@ -6406,10 +6406,10 @@
   },
   {
     "Company": "FirstHoldCo",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-11 14:27",
+    "Mention Count": 4,
+    "Last Seen": "2026-09-08 12:01",
     "Industry": "General",
-    "Risk Level": "Medium"
+    "Risk Level": "Low"
   },
   {
     "Company": "FirstHoldCo",
@@ -6721,8 +6721,8 @@
   },
   {
     "Company": "Dangote Group",
-    "Mention Count": 2,
-    "Last Seen": "2026-09-02 11:58",
+    "Mention Count": 3,
+    "Last Seen": "2026-09-08 12:00",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -7015,10 +7015,10 @@
   },
   {
     "Company": "Uber",
-    "Mention Count": 17,
-    "Last Seen": "2026-09-07 13:18",
+    "Mention Count": 18,
+    "Last Seen": "2026-09-08 12:01",
     "Industry": "General",
-    "Risk Level": "Medium"
+    "Risk Level": "Low"
   },
   {
     "Company": "Bolt",
@@ -7554,8 +7554,8 @@
   },
   {
     "Company": "Dangote",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-06 11:32",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-08 12:01",
     "Industry": "General",
     "Risk Level": "Low"
   },
@@ -7593,5 +7593,19 @@
     "Last Seen": "2026-09-06 18:56",
     "Industry": "General",
     "Risk Level": "Medium"
+  },
+  {
+    "Company": "Ajaokuta Steel Company",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-08 11:59",
+    "Industry": "General",
+    "Risk Level": "Medium"
+  },
+  {
+    "Company": "NUPCO",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-08 12:01",
+    "Industry": "General",
+    "Risk Level": "Low"
   }
 ]
