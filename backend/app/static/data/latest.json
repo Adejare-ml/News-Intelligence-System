@@ -1,5 +1,53 @@
 [
   {
+    "ID": 5559,
+    "Time": "2026-09-08 07:46:34",
+    "Title": "FGN offers 2 savings bonds for subscription at N1,000 per unit",
+    "Source": "quicknews_africa_net",
+    "URL": "https://quicknews-africa.net/fgn-offers-2-savings-bonds-for-subscription-at-n1000-per-unit-2/",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The Federal Government of Nigeria (FGN) has offered two savings bonds for public subscription, priced at N1,000 per unit.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5554,
+    "Time": "Tue, 08 Sep 2026 19:42:51 GMT",
+    "Title": "NITDA calls for unified regulatory framework to boost tech Investment in Africa - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZjhqczQyRXNKSDloN1VmMHE0Nko4UVlCSzZtX0VpeXRpWG0wNzltcEZQQ1VHc282U1VudTNuOWtVOXBkdTZ1MWM3VmZxd2xBUUNCNGVvVVNzQTRodEdud2VqbU1VOEpsYnA2cDdLWHdXM0NYNGI2b2czNGphMzZZcURZM2YxWXRWN3VKUzBlM2FIMWU0RzhtcnZNZGF1QXFEMDczaHpzd3J5RjVYWkFoOFJYeDdRYUFKNlNjMk0zdFExalZ1ZkNBZ1FkWGhXSUNZUTRCVU5na0hUTGVTZmc?oc=5",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "The National Information Technology Development Agency (NITDA) is advocating for a unified regulatory framework across Africa to enhance technology investments on the continent.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5546,
+    "Time": "Tue, 08 Sep 2026 18:14:47 GMT",
+    "Title": "CBN tightens surveillance on banks over terrorism financing - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZGdiazZzRXhaMGVBNzI1Z3ZqWkl1cWtCVjRfalZaT2l6ZnU0dEpTX2FKSG8yUG0wb1pkN1Fob083T19jdGxLRTVtQWl5d2VxTmc5ck1aUHJ0WGQtSTJHRlR2ZVhCTUxTV2xuUWM5RWlUS19yVzBUM0lhZ25LdGlHU3RwYU9lQWc?oc=5",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The Central Bank of Nigeria (CBN) is increasing its surveillance and monitoring of commercial banks to combat the financing of terrorism.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5545,
+    "Time": "Tue, 08 Sep 2026 18:51:42 GMT",
+    "Title": "Governors\u2019 forum inaugurates state procurement DGs, targets leakages - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNa25IaWFNSUtENEFJTG02amRBcXR2b1ZnUFNPRXFOQ0c2MU0yYmd1c2MyTjdUeXg1bUxNLWRUUDZ4WS1TbGZzZmdqWVpsYXlGaUZ3SG1wQ2ZUR2pIS3BFRjhHUlVEQ3YwZFpLMHdfLTJQUE5RM3JiQXVEanVkWWYwYlAtTVNlMzJxRHpMdHBVTHNJeWpxQzZj?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Governors' forum has inaugurated Directors General for state procurement in an effort to reduce financial leakages within state government spending.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5531,
     "Time": "Tue, 08 Sep 2026 13:45:05 GMT",
     "Title": "AGRICULTURAL RESEARCH COUNCIL OF NIGERIA, ABUJA-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE IMPLEMENTATION OF 2026 PROCUREMENT ACTIVITIES - etenders.com.ng",
@@ -668,54 +716,6 @@
     "Category": "Company",
     "Risk Score": 10,
     "Summary": "First City Monument Bank (FCMB) received an award from the Lagos Chapter of the Information Systems Audit and Control Association (ISACA) for its contributions to technology governance, cybersecurity, and risk management.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5243,
-    "Time": "Fri, 04 Sep 2026 21:04:11 GMT",
-    "Title": "N117.7m Fraud: Five convicted, jailed seven years in Lagos - Vanguard News",
-    "Source": "Vanguard News",
-    "URL": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdElBUE5LY2FmQmZfeVBWR1BtcEtuTVJ1SFlDY0YxR2ZYb2I5WFJsVEN0RURoczF1XzlFM2dfbjNYRWc4Y0VKdzFSMDFGVWRfY0ZGU2RsTXdTUFB3U2k2YUV3eEN0NzBBaGgtVWRwdm1nMURQclctSzJYM1AzSExYNnFLYmlENFlYdXRSYnBRUlhhbF9Hdk1CU9IB2AFBVV95cUxNdkx0M2VoR01VbVBWNmJUWUpZbWk0OFpvUTFyeVBUbFh2Mm1TaFdQV2ZZSHltTkhXZkNQWXRGVk9GZlA5M1Z4N05lNlNPa2pNUmZUZFBzNmRTMG5JNDVvMzlWbHpTU2dvSWMxMmIyR1BmZVVLczZhVXMtdF9JejNtRTFWcmlhT3dOZHozRVRfbm50WVRsSWZNSWIxamRxQWhtWE1YTXpJYjZQTklKM0NlLWt0QmozSUY1ejhCVHpqOHp2SlhFX04zT2I5ZzRDVFNncVlDX3h5Yzk?oc=5",
-    "Category": "Legal",
-    "Risk Score": 40,
-    "Summary": "Five individuals have been convicted and sentenced to seven years in prison in Lagos for their involvement in a fraud case totaling N117.7 million.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5239,
-    "Time": "Fri, 04 Sep 2026 15:56:08 GMT",
-    "Title": "Security expert, Okere, emerges first Nigerian to join WAD board - Vanguard News",
-    "Source": "Vanguard News",
-    "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVGJkSHpoaDdPMHhlc1hybVo1dnhWVkNfNDZ0RVlEZk93LVJ1MzdYYWoyVlljUUZnQXhFTFVMVnRlWWowUm44eGdEUXlzUmxIVFJ2T1pXS3Z3VGdkblQwcUFtQ09XUTNlZXZ3Y2V5bVcta1cwak5ZeU5kZngzN3VxM2xOeXppOGhxbHJhY3U2TGVFVnRZcGZFLUFOaDBEenRi0gGmAUFVX3lxTE5QQmhSQjFHcjhBUjE3eXlwdFNGVjkxWkItX29ZcE1mQ2tnMUVhc0RJYzEzeU1DX09OR3llNlFpdnJhY1RVU1duZUQ3RkYxUXE1SVdTR1MtTzdDbl9hdVljaUFIeFk5V0E4QzFRUjNjLUJvakYyMzF6MjVGdEIyNklCZElPdF9TVHZ5ZzZRbklwOU9ITkNFd09xelAzQUgwRmFyZ0JKakE?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "Security expert Okere has been appointed to the board of WAD, marking the first time a Nigerian has joined the organization's board.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5238,
-    "Time": "Fri, 04 Sep 2026 17:54:16 GMT",
-    "Title": "FAAN Not Responsible for Uber's Nigeria Exit \u2013 MD Kuku - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1hUU9kQUFzczRYbVZmc1JnSVlxR1Z3N1ZRQmdVbW04S0dCYW5ETTVZNXFGUENsZDhoSG1sd0xaSTF6ZkpnWVY4OEVBSV9yLXB0MjlocklRRFZVR1ZfUHljN2RSWGRQNHhzS2NXY1owbjhHcHU5UlE?oc=5",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "The Managing Director of the Federal Airports Authority of Nigeria (FAAN), Olumide Kuku, has clarified that FAAN is not responsible for Uber's exit from the Nigerian market.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5237,
-    "Time": "Thu, 03 Sep 2026 18:26:17 GMT",
-    "Title": "Buratai\u2019s company, foreign partners seek to \u2018modernise\u2019 Nigerian Army\u2019s hospitals - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMElLWmhndjNxMFhYLXJmUi1fN2lIVlZfNFRFNnE5OUlZWF9WTzFIVkkteDNCVUJwcDNFNHc1a04tSFhSYzZJMHgwQkRua2xiQU84eGRfOXJ5b1I1RXBkREdpcTY2cHZvZ1ZVX1VQbXJHN2hLR2V4eDNUWTM5QWFYZ1g5UDN2bkNnYlBYbnIwSGQ5MFJZZkFJSktKSmlhNjUzUkdabXAwRTB0eVRpSDZtQkxKRTJmUEpkTWd1eV90TkhrQ1lXUG0xd0h3TVdvdw?oc=5",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "A company associated with Buratai and foreign partners are seeking to modernize hospitals within the Nigerian Army. The event indicates a potential procurement or partnership involving private interests and military healthcare infrastructure.",
     "Status": "Unread",
     "Engine": "ollama"
   }
