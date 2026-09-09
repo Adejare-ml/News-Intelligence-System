@@ -1,5 +1,65 @@
 [
   {
+    "ID": 5579,
+    "Time": "2026-09-07T20:35:53Z",
+    "Title": "CCT seeks National Assembly approval to become anti-corruption court",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/cct-seeks-national-assembly-approval-to-become-anti-corruption-court/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Code of Conduct Tribunal (CCT) has requested approval from the National Assembly to transition into a full-fledged National Anti-Corruption Court. This structural change aims to accelerate the trial of corruption cases and improve the efficiency of the judicial process regarding public officer conduct.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5577,
+    "Time": "2026-09-08T00:52:12Z",
+    "Title": "Court jails BDC operators over unlicensed forex activities",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/court-jails-bdc-operators-over-unlicensed-forex-activities/",
+    "Category": "Legal",
+    "Risk Score": 65,
+    "Summary": "The Federal High Court in Abuja sentenced two Bureau De Change (BDC) operators to five years in prison for conducting foreign exchange transactions without valid licenses from the Central Bank of Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5575,
+    "Time": "Tue, 08 Sep 2026 20:05:00 GMT",
+    "Title": "Iyinoluwa Aboyeji resigns as Learn Africa non-executive director - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWncyd2s4SFRnUHlRS3hzSDFuLUg2WXlpSS12aUVaWFBGOUFsdHFVN0FQblRBd0dNM1pMbmJabHg2QUdUVm1LZVpHdHdwZ3RsLVNkeUgzSVUtZVMxdHNiRnVQQ3VicEJscGxPbUNIbDJ6Nk1fYVNneXAyQnpraFFYckI2RzI4MHRjZVhtejV0SWVBREZYSzNpS1Mta0F0aXZDcEFxMUJKZDhiWnFSYUhhTGFBakZoZzkxMkE5VUxtbGFnRTNqemxYYzd3?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Iyinoluwa Aboyeji has resigned from his position as a non-executive director at Learn Africa.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5570,
+    "Time": "Tue, 08 Sep 2026 23:50:27 GMT",
+    "Title": "Terror funds: CBN tightens monitoring of Nigerian banks - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaHVWU3pCY1FwRDhHLWpxR1MyTzNmVHpfNW4wWExLS0tfQjdZRThUVGxfQjgwakVsSUlvNDVsT3dLRXQ2NmQySy00Y1RVb1RhSmtvTmh2eXpTQUhUZkp0SjhuRmRDM19FMlJadFNUSVBzQ1BrdmFERHFyelVPS3QweTctc1hadWVqTUl0OVBoSHFFNDhCSG1UVGdONUlpTk00aG1KWTBVd1pmc0lJ?oc=5",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The Central Bank of Nigeria (CBN) is increasing its monitoring and oversight of Nigerian banks to better track and prevent the flow of funds used to finance terrorism.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5566,
+    "Time": "Tue, 08 Sep 2026 21:04:33 GMT",
+    "Title": "\u200eStakeholder seeks stronger vetting of government software testing firms \u200e - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRzVtN3Q2VTNOeGhlQlJJMmhaZzlFalZ1Q3dLZEVNTmI5UE5SUW9Qd0JhNTJ4TF9ZQjZ6bkRZVUwyNXE3WTVyUVdaU1BQOVh6SGdnTVltVWZ1QUFHTFJvWVFkdEE1Y3o3NF9rZ3p2SWpFdVpUVXhCMUpvTVpCamIwNW0yV09NcjRQa09xWldOMVF4TFVVUEM2X1Fub3QxbjNUSEpkWjBQZGdCQjd3?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "A stakeholder is advocating for more rigorous vetting processes for firms contracted by the government to perform software testing.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5559,
     "Time": "2026-09-08 07:46:34",
     "Title": "FGN offers 2 savings bonds for subscription at N1,000 per unit",
@@ -656,66 +716,6 @@
     "Category": "Company",
     "Risk Score": 20,
     "Summary": "The Federal Airports Authority of Nigeria (FAAN) discusses the reasons behind Uber's exit from the Nigerian market.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5266,
-    "Time": "Fri, 04 Sep 2026 15:06:22 GMT",
-    "Title": "Dangote Refinery to launch $1.5 billion IPO mid-September \u2013 Report - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMm9JZHdBTTNOOXJmN0RuaWtwbFo1SnVfMGlYSEQyV0Z5bW9MaVctTnRxREtlSzI1aFdrNmwyRlQ3d1JicFBaWDIxZWJ6UHpHUzltUEh6ZEEyMkh4d1NORGdDUDFBOG1nZzZQdHVBam1BRGVmX0NpV0xfbzFMei1sZTJHQ3FWdFBZOEVqTUFiQS1mejJuMUJlS0RTTTUxa01jSVJZLXhTbkRReEtsTnNtdS1DWDVreWRaUGdvMXhQZ3pLN1pDX1lhVg?oc=5",
-    "Category": "Company",
-    "Risk Score": 40,
-    "Summary": "Dangote Refinery is reportedly planning to launch an Initial Public Offering (IPO) valued at $1.5 billion in mid-September. This move indicates a transition toward public ownership and a potential dilution of private shareholding.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5264,
-    "Time": "Fri, 04 Sep 2026 19:41:23 GMT",
-    "Title": "NAFDAC warns against four medicines recalled in Pakistan - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVWdhWEtETk03VXZTcFRobVdZQ3lMUS1aWnAyOFk4UTZrWEZLVVd6aDlZNUczVmFfSHoxSThaNGtwRFpuMkhsQ3FyckVjaW5hWHBxTjlCMzlIU0YxaHBPWTJoUG13RnpXWGxKUEItS1lYZFdldkEwVFVFZV9hZTV0c08tZ0hzZ045cGxmWk5Xc3Job2JlVXJBaU1wSmJTU0NKVnJXS1dDeGJZRXJLWDhaXzFyUQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "NAFDAC has issued a warning to the public regarding four medicines that have been recalled in Pakistan, indicating a regulatory safety action.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5253,
-    "Time": "Sat, 05 Sep 2026 04:15:37 GMT",
-    "Title": "Tax reform has reduced burden on low-income earners \u2013 Revenue Board - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQemdFRFhkVnVKSVV5SDRtYjBWZkE0Q3d3dEl1UU5TcE1QdTA1WEFxSGhyMndDdHdZTDJaSml4VmRpRnU2OVlNOXhLOElsc1VBbDVuMVVzRm5aWUI5YXAyenpvdFNFbUJqNjh2cl9SQU5OVnNuY2ppYjdNTWRjWU1ncXlJQmRscTZMTjljRDJWVnRPcUFBdmc?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Revenue Board reports that recent tax reforms have successfully reduced the financial burden on low-income earners.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5248,
-    "Time": "2026-09-03T23:07:53Z",
-    "Title": "Cut petroleum product imports, CORAN urges govt",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/cut-petroleum-product-imports-coran-urges-govt/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Crude Oil Refinery Owners Association of Nigeria (CORAN) has called on the Federal Government to strengthen the domestic refining industry to reduce reliance on imported petroleum products.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5246,
-    "Time": "2026-09-03T23:50:42Z",
-    "Title": "FCMB gets ISACA award for digital contributions",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/fcmb-gets-isaca-award-for-digital-contributions/",
-    "Category": "Company",
-    "Risk Score": 10,
-    "Summary": "First City Monument Bank (FCMB) received an award from the Lagos Chapter of the Information Systems Audit and Control Association (ISACA) for its contributions to technology governance, cybersecurity, and risk management.",
     "Status": "Unread",
     "Engine": "ollama"
   }
