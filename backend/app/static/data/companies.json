@@ -7015,10 +7015,10 @@
   },
   {
     "Company": "Uber",
-    "Mention Count": 19,
-    "Last Seen": "2026-09-09 12:11",
+    "Mention Count": 20,
+    "Last Seen": "2026-09-10 00:59",
     "Industry": "General",
-    "Risk Level": "Medium"
+    "Risk Level": "Low"
   },
   {
     "Company": "Bolt",
@@ -7621,5 +7621,19 @@
     "Last Seen": "2026-09-09 12:11",
     "Industry": "General",
     "Risk Level": "Medium"
+  },
+  {
+    "Company": "FREEE",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-10 00:58",
+    "Industry": "General",
+    "Risk Level": "Low"
+  },
+  {
+    "Company": "DeSpray",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-10 00:58",
+    "Industry": "General",
+    "Risk Level": "Low"
   }
 ]

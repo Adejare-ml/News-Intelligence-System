@@ -1,5 +1,41 @@
 [
   {
+    "ID": 5658,
+    "Time": "2026-09-09 12:53:04",
+    "Title": "Uber\u2019s $10bn robotaxi bet reshapes global strategy after Nigeria exit",
+    "Source": "businessday",
+    "URL": "https://businessday.ng/technology/article/ubers-10bn-robotaxi-bet-reshapes-global-strategy-after-nigeria-exit/",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Uber is shifting its global strategy toward a $10 billion investment in robotaxis. This strategic pivot follows the company's exit from the Nigerian market.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5651,
+    "Time": "Wed, 09 Sep 2026 20:29:26 GMT",
+    "Title": "FREEE, DeSpray secure Dutch grant for areosol recycling plant \u200e - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSWNwM3NUdklFdGpxV1FjaDJnNWExVlEwMG4wMVU5aGNkMUlXWVpJbVNNWlZ1NXZqaHJCenQyUC0ycllTQ2dSZGRKWE5NZG1TbmZRcVdlbllPaXZKU2lYd25NQ2h5d2dvRHBWdDNZakJQckxvREVRN3lfTUtsbzJkbmZZRVBuemdEM1hBTkJvXzMyVEc1TVJuWnFWejlGQVEtOFFKVkVlUXBzUzZB?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "FREEE and DeSpray have secured a grant from a Dutch entity to establish an aerosol recycling plant.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5647,
+    "Time": "Tue, 08 Sep 2026 20:09:11 GMT",
+    "Title": "Appeal court upholds 10-year jail term for ex-NEXIM Bank MD Orya - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV0Z3eVBubHJDOEF2ajV0TFY1M2VOTGh5Q1lfZGZCZDNvbjZjMVZXckk4Q0RHakdsdGZUTWh0SFc0WjJab2FzQkI2YUFSTnBlNmF1VGNGR2t6VkdHVEJxTl95OE9ldXptMkZXVzI2MGg3cDRZVllINXlBLWc4S3hodjIxZXM5bU5PYjJEQUpxQ2pDSzdweXd2dGtxbjgwOUxteXY4WGlvUm11TXpod1p5ZHRoRDhkM2VxMG9iWjhB?oc=5",
+    "Category": "Legal",
+    "Risk Score": 60,
+    "Summary": "The Appeal Court has upheld a 10-year prison sentence for the former Managing Director of the Nigerian Export-Import (NEXIM) Bank, Orya. The case pertains to legal proceedings regarding his tenure at the bank.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5637,
     "Time": "Wed, 09 Sep 2026 15:24:41 GMT",
     "Title": "FG opens digital academy, selects 16,000 Nigerians for first cohort - Punch Newspapers",
@@ -680,42 +716,6 @@
     "Category": "Legal",
     "Risk Score": 45,
     "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has initiated a probe into Uber Nigeria following the company's exit, specifically focusing on unfulfilled customer services.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5353,
-    "Time": "2026-09-06 03:51:21",
-    "Title": "Dangote Petroleum May Control Almost 30% Of NGX At Listing",
-    "Source": "independentng",
-    "URL": "https://independent.ng/dangote-petroleum-may-control-almost-30-of-ngx-at-listing/",
-    "Category": "Company",
-    "Risk Score": 40,
-    "Summary": "Dangote Petroleum is projected to hold a significant market share of nearly 30% of the Nigerian Exchange (NGX) upon its listing. This potential concentration of market value indicates a major shift in corporate ownership and market influence within the Nigerian equity market.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5347,
-    "Time": "Sun, 06 Sep 2026 13:29:09 GMT",
-    "Title": "Prosecute officials over \u2018missing\u2019 N33.75bn cash transfers, Falana tells EFCC - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQU1lOeFJ5ZmxTSUR3UUI4TFJSeWpiVDE4Q2FlYllZaVlSLWpkNERVdk1kTFB5dW5qNnprVlNiNlpfdUlkUGJxSm92Z3M5NXg5OEI3YnJPRkdqQl80ZENSNmRjdnZCN3BDRzRWVmd4OE5hUk1nVEVZUS1xejFmRnpUUUdOTFRFZE1Ralo1Z3A0a080TDBsRmV2N0kzWQ?oc=5",
-    "Category": "Legal",
-    "Risk Score": 75,
-    "Summary": "Femi Falana has called upon the EFCC to prosecute officials regarding the disappearance of N33.75 billion intended for cash transfers.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5338,
-    "Time": "2026-09-04T21:03:56Z",
-    "Title": "N117.7m Fraud: Five convicted, jailed seven years in Lagos",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/09/n117-7m-fraud-five-convicted-jailed-seven-years-in-lagos/",
-    "Category": "Legal",
-    "Risk Score": 45,
-    "Summary": "Five individuals have been convicted and sentenced to seven years in prison for their roles in a N117.7 million fraud case targeting Chi Limited. The judgment was delivered by Justice K.A. Jose of the Lagos State High Court.",
     "Status": "Unread",
     "Engine": "ollama"
   }
