@@ -1,5 +1,29 @@
 [
   {
+    "ID": 5672,
+    "Time": "2026-09-09T06:35:58Z",
+    "Title": "Appeal Court upholds 490-year jail term for ex-NEXIM bank MD Orya",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/appeal-court-upholds-490-year-jail-term-for-ex-nexim-bank-md-orya/",
+    "Category": "Legal",
+    "Risk Score": 85,
+    "Summary": "The Court of Appeal in Abuja has upheld the conviction and 490-year prison sentence for Robert Orya, the former Managing Director of the Nigeria Export-Import Bank (NEXIM Bank). The ruling relates to the misappropriation of N2.4 billion in bank funds.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5665,
+    "Time": "Wed, 09 Sep 2026 23:31:41 GMT",
+    "Title": "CBN cuts OMO, T-bill rates as liquidity surges - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQNl9GaHNHeGtvejlWU05zUmYweVQ5My1DVDVrcm13Uk40RFpDVFkwZ1drU0wwXzRlcDZORlRKQUZET2VPVXVjZUM0MkRxeDYzYmFrTFhkeWVBYjkwRWFGemxVTGp0TjVZM3FqLWJOVk9xTU5p?oc=5",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "The Central Bank of Nigeria (CBN) has reduced rates for Open Market Operations (OMO) and Treasury bills in response to surging market liquidity.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5658,
     "Time": "2026-09-09 12:53:04",
     "Title": "Uber\u2019s $10bn robotaxi bet reshapes global strategy after Nigeria exit",
@@ -692,30 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Lagos State Waste Management Authority (LAWMA) has terminated the contracts of street sweepers and a service provider due to reports of indiscriminate waste dumping.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5365,
-    "Time": "2026-09-06 06:55:53",
-    "Title": "Stolen funds? \u20a676 Billion Paid Out To Non Existing Poor Nigerians By Bola Tinubu Government Through Nigeria\u2019s Cash Transfer Programme",
-    "Source": "secretsreporter",
-    "URL": "https://secretsreporter.com/2026/09/stolen-funds-%E2%82%A676-billion-paid-out-to-non-existing-poor-nigerians-by-bola-tinubu-government-through-nigerias-cash-transfer-programme/",
-    "Category": "Government",
-    "Risk Score": 85,
-    "Summary": "Reports indicate that \u20a676 billion was paid out to non-existent beneficiaries through the Nigerian government's Cash Transfer Programme under the Bola Tinubu administration.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5364,
-    "Time": "Sun, 06 Sep 2026 18:11:55 GMT",
-    "Title": "FCCPC opens probe into Uber Nigeria\u2019s exit over unfulfilled customer services - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVHk4ampWVDZjWUN5VXY3V1NPUU9saFlOc2dPYVY0aXlORnppQVVvT21JeHhlTkpWQTN5ZTFobHppdGVZM3JwcW1nMGt2Q0hVTXBXNTRubFlENWI1VDNHRG15MUF4N1pHaWhsQUdJYlhiRnJhLVBBVHFYVHpPYmplMDhwejItck9ac0JKY2NwRURoSUhid3FzekVTZ0YwMlpac09YLQ?oc=5",
-    "Category": "Legal",
-    "Risk Score": 45,
-    "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has initiated a probe into Uber Nigeria following the company's exit, specifically focusing on unfulfilled customer services.",
     "Status": "Unread",
     "Engine": "ollama"
   }
