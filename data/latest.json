@@ -1,5 +1,53 @@
 [
   {
+    "ID": 5780,
+    "Time": "2026-09-10T15:00:00Z",
+    "Title": "The Nigerian chief who made millions from Medi-Cal",
+    "Source": "New York Post",
+    "URL": "https://nypost.com/2026/09/10/opinion/the-nigerian-chief-who-made-millions-from-medi-cal/",
+    "Category": "Legal",
+    "Risk Score": 85,
+    "Summary": "An investigation reveals that Chief Nathan Ogbatue allegedly defrauded the US Medi-Cal program of millions of dollars. The funds were reportedly used to finance an opulent lifestyle and the construction of a palace in Abatete, Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5777,
+    "Time": "2026-09-10T16:20:56Z",
+    "Title": "California May Have Been Defrauded by Nigerian Chief for $Millions",
+    "Source": "Moonbattery.com",
+    "URL": "https://moonbattery.com/california-may-have-been-defrauded-by-nigerian-chief-for-millions/",
+    "Category": "Legal",
+    "Risk Score": 75,
+    "Summary": "Allegations have surfaced regarding a potential multimillion-dollar fraud involving a Nigerian national, referred to as 'Chief Nat', and California's Medicaid revenues. The report suggests potential financial irregularities and fraudulent activities impacting state funds.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5775,
+    "Time": "2026-09-10T16:23:26Z",
+    "Title": "NNPC to deploy 70 self-service stations, says model won\u2019t kill jobs",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/nnpc-to-deploy-70-self-service-stations-says-model-wont-kill-jobs/",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "The Nigerian National Petroleum Company Limited (NNPC) plans to deploy 50 to 70 smart, self-service filling stations across Nigeria within six months. The company asserts that this operational shift toward automation will not result in job losses.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5773,
+    "Time": "Fri, 11 Sep 2026 14:16:50 GMT",
+    "Title": "EFCC, FBI probe alleged diversion of funds for US-backed health programmes - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQ2hCRDVvNTVvaXRrQ3Znbl9OeTdTdE13Vk9WYzJXR3lWRWJ4dVc2TnMtZldvQ2RjNDYzazBPN2ZNV3g4QUhKN1BaeVJvdXpYMkd4VC1pQWhlZm5JWVo1YXdhcXZtM095c05lNC1TOExlYlo4OEN1ODl2TGVQM0pjQ2YtU2hCZ1NzU1JtWi1KOXBiaTRWWHdHVGhtaFhhYjc3d2tKcHRPd3EwMDVDc3NXb1ZWbWJELU9nQnp4RHAwZGpoVnFZQVlUa0xR?oc=5",
+    "Category": "Legal",
+    "Risk Score": 75,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) and the FBI are investigating the alleged diversion of funds intended for US-backed health programmes.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5763,
     "Time": "2026-09-11 00:00:08",
     "Title": "Stanbic IBTC\u2019s Role in Dangote Refinery IPO Reinforces Capital Markets Leadership",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Governors' forum has inaugurated Directors General for state procurement in an effort to reduce financial leakages within state government spending.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5531,
-    "Time": "Tue, 08 Sep 2026 13:45:05 GMT",
-    "Title": "AGRICULTURAL RESEARCH COUNCIL OF NIGERIA, ABUJA-INVITATION TO TENDER AND EXPRESSION OF INTEREST FOR THE IMPLEMENTATION OF 2026 PROCUREMENT ACTIVITIES - etenders.com.ng",
-    "Source": "etenders.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPSmhtTnQ5eTNOXzZRS2Jfb3A4cXJoN29jS3pad3RDOWhNbk11NThfNy1QWVkzcmllX0VCalJnT1pCbUpBejV0bDNhY1ZxMlRoMm1XM3poSUtqMGFVSmRVcFlpUlZNNVg3V2ZRcW92X3ZQbkhrckNrY2hpcFN1RzBiWWNnaDlKR0pWUWZXeUlmNUhpSGhxQ2F4N3VzUVVWSExVOXU4bFFOamhja1AyR1RPSHIxbVBqVmh5MW5kTXJHekwxUF9yNWlCd3J2aThYTEZycEtyQTNXSWNRWGZOaHRGUHZsSlVRd1RSV0JRRnREX1BzV2pEaTBtSzg0bVJYdVM2d21N?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Agricultural Research Council of Nigeria (ARCN) has issued an Invitation to Tender and Expression of Interest for the implementation of its 2026 procurement activities.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5530,
-    "Time": "Mon, 07 Sep 2026 13:30:00 GMT",
-    "Title": "INEC unveils new strategy for 2027 elections - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPV0JLN0ZBdjVSR2p1VHEyWC0xNVcyaEs2SjFHdFZiZHdNX004TTdIZTBHV19MTktpYXRjbGFhZ18tVGpnZWhaYWZBd21ZWVY5Z1NDcjJQd2FjbkUzNmxRTFlNWXpPUjhYNGFpYU50RlI2QUlJSjVfTkZubml5NlpUMHpDdnJtelNkcG9yYmJHeEo?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Independent National Electoral Commission (INEC) has announced a new strategic framework and approach for the conduct of the 2027 general elections.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5523,
-    "Time": "2026-09-07T08:01:24Z",
-    "Title": "FG and Umahi\u2019s roads to hell \u2013 2",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/09/fg-and-umahis-roads-to-hell-2/",
-    "Category": "Government",
-    "Risk Score": 40,
-    "Summary": "The article criticizes the Federal Government and Minister David Umahi for the poor management and deteriorating state of Nigerian roads, specifically citing the Benin-Agbor-Asaba highway.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5518,
-    "Time": "Tue, 08 Sep 2026 04:00:00 GMT",
-    "Title": "NUPCO blames FAAN for Uber exit, demands FG intervention - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZm5VOV9ObWlFWVdwX0JPTzlzVUdMTW8yNmpnRHQwVTNENEhwVGRWeFhUbEQ4RXpwR2FJc3JXbkZWNzlTM1RKN3RSLVpNUWpLdlA5QkVlQ0U1LVUzZkxQSXB2b3UyUUJMcU1FUmI3MUFoQkdkSDJLZVQtQmpaM0I4Um8yNmRPNGtjZ21qelJ5ZWxPZHZYYmxia0hB?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "NUPCO has attributed Uber's exit from a specific operational context to actions by the Federal Airports Authority of Nigeria (FAAN) and is calling for Federal Government intervention.",
     "Status": "Unread",
     "Engine": "ollama"
   }
