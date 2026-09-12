@@ -1,5 +1,53 @@
 [
   {
+    "ID": 5872,
+    "Time": "2026-09-12 03:42:57",
+    "Title": "N11.07trn Target: Customs Deploys Post-Clearance Audits To Boost Revenue",
+    "Source": "leadership",
+    "URL": "https://leadership.ng/n11-07trn-target-customs-deploys-post-clearance-audits-to-boost-revenue/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Nigeria Customs Service is deploying post-clearance audits as a strategic measure to boost revenue collection toward a target of N11.07 trillion.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5868,
+    "Time": "2026-09-12 03:47:57",
+    "Title": "22 Years After Liquidation, Federal Govt Pays N18bn To 2,700 Ex-Nigeria Airways Workers",
+    "Source": "leadership",
+    "URL": "https://leadership.ng/22-years-after-liquidation-federal-govt-pays-n18bn-to-2700-ex-nigeria-airways-workers/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Government of Nigeria has paid N18 billion in settlement to approximately 2,700 former employees of the liquidated Nigeria Airways. This payment follows a long-standing liability stemming from the airline's liquidation 22 years ago.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5864,
+    "Time": "2026-09-11T14:09:21Z",
+    "Title": "Bayelsa to deploy 19 doctors, 210 nurses to primary healthcare centres",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/bayelsa-to-deploy-19-doctors-210-nurses-to-primary-healthcare-centres/",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The Bayelsa State Government is deploying a significant number of medical professionals, including doctors, nurses, and pharmacy technicians, to primary healthcare centres across the state to improve healthcare delivery.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5852,
+    "Time": "Sat, 12 Sep 2026 12:56:34 GMT",
+    "Title": "Interior minister orders probe into alleged second passport issued to embattled Abuja realtor - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQT1NreEpNdExhd2d1NFFEVFBqQWNhamlwQ1ZELXViVGdsSmVNZlhNbmdoMlUtZ3ZJQkNZaUpmQ3hrbmViSllNQ29jLXlLaWZ0M2l1ZXRYNXNOX0NWVHU0TmVtcXk0em5rdmxIREtEZGJ4X2NFenRxMmRmTFhxY0FjcEI3SWFMcVhDc2Jyb1hDX2ZjeXp6TWJ6RGEtN1BUSkwxVGpJVUJlSkpqV2lXUkZwbTd5aWxobGhKSFczc3V1cVJ5b0hnT1pfbDE1VXBwZ2RocUZOb0VwZ0MwN2VEWU52am9WTk9xQQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "The Minister of Interior has ordered an investigation into the issuance of a second passport to a realtor based in Abuja. The probe aims to determine the legality of the document issuance process.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5836,
     "Time": "2026-09-11T01:09:15Z",
     "Title": "Recapitalisation: NAICOM dismisses N100bn fraud allegation, denies EFCC detention",
@@ -668,54 +716,6 @@
     "Category": "Government",
     "Risk Score": 65,
     "Summary": "The House of Representatives is investigating the Nigerian National Petroleum Company Limited (NNPCL) and other oil firms regarding an outstanding debt of \u20a6432 billion owed to the Nigerian Midstream and Downstream Petroleum Regulatory Authority (NMDPRA).",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5612,
-    "Time": "Wed, 09 Sep 2026 15:51:43 GMT",
-    "Title": "Audit Reports: Reps panel vows to make NNPC, oil marketers account for \u20a6432bn debt - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWmJWWkhwNUx5WHpzVWo4c3lqbFVjVnd0SU94Q3hIaGZwVjVTXzBCMXpENjFNTVpINXNFd296UVRDb0FiOTQzeklrNzNMV1Z6eGgzU0paXzkyM3c0ZEt1MG9wZ1ozYVlOMFVRVVgyWW1uWjFtMXNxUVN6a1B4ZWMzWHhyOEgwZ2FnXzVWSGpsY3k3MFV5VkRrdnlhTjBPNXpKaE1zNXFMb2N3TnF6WEIzVDQ2V1ZyeUFORTJFaUgzaFNGV0xzbW4xNmt3ODVmMFBrdDJJYjU2RmlNRjVudFE?oc=5",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "A House of Representatives panel is demanding accountability from the NNPC and various oil marketers regarding an outstanding debt totaling \u20a6432 billion identified in audit reports.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5603,
-    "Time": "2026-09-08T00:39:30Z",
-    "Title": "Nigeria imports N1tn steel despite N7.2bn Ajaokuta spend",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/nigeria-imports-n1tn-steel-despite-n7-2bn-ajaokuta-spend/",
-    "Category": "Government",
-    "Risk Score": 65,
-    "Summary": "The Federal Government expended approximately N7.21 billion on the Ajaokuta Steel Company Limited between 2020 and 2025, despite the facility remaining largely dormant. Meanwhile, Nigeria continues to import steel valued at N1 trillion, highlighting significant inefficiency in public expenditure and industrial policy.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5602,
-    "Time": "2026-09-08T03:15:00Z",
-    "Title": "Uber in Afrika in Schwierigkeiten",
-    "Source": "heise online",
-    "URL": "https://www.heise.de/news/Uber-in-Afrika-in-Schwierigkeiten-11444499.html",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) of Nigeria has launched an investigation into the abrupt withdrawal of Uber from the West African market. The probe focuses on the regulatory and consumer implications of the company's exit.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5601,
-    "Time": "2026-09-08T10:29:22Z",
-    "Title": "Not a pin, penny of recovered assets will be mismanaged under my watch \u2014 EFCC boss",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/09/not-a-pin-penny-of-recovered-assets-will-be-mismanaged-under-my-watch-efcc-boss/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "EFCC Chairman Ola Olukoyede has pledged that recovered assets will be managed transparently and without mismanagement under his leadership.",
     "Status": "Unread",
     "Engine": "ollama"
   }
