@@ -1,5 +1,53 @@
 [
   {
+    "ID": 5813,
+    "Time": "2026-09-11 12:57:26",
+    "Title": "FG bans 25% textbooks, sets 70% pass mark for school books",
+    "Source": "vanguardngr",
+    "URL": "https://www.vanguardngr.com/2026/09/fg-bans-25-textbooks-sets-70-pass-mark-for-school-books/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Government has banned 25% of textbooks and implemented a 70% pass mark requirement for school books approval.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5806,
+    "Time": "2026-09-10T23:51:38Z",
+    "Title": "Reps probe NIOMCO-Premium Steel deal, procurement breaches",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/reps-probe-niomco-premium-steel-deal-procurement-breaches/",
+    "Category": "Government",
+    "Risk Score": 75,
+    "Summary": "The House of Representatives Committee on Steel Development is investigating a sub-lease and operation agreement between the National Iron Ore Mining Company (NIOMCO) and Premium Steel. The probe focuses on alleged procurement breaches and irregularities in the deal's execution.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5803,
+    "Time": "Fri, 11 Sep 2026 17:19:05 GMT",
+    "Title": "Nigeria-China Aquatic Products Protocol: A new frontier for economic transformation - premiumtimesng.com",
+    "Source": "premiumtimesng.com",
+    "URL": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdnczcmN3OF9XMkZBYUJLeDZPdEJjSHZiRW9wb2pyemxMb0lBYkZNX0ItdmxvZ25kcERqbEdYaHBYQmVneUx1V3lpakxnY0lLZVVJQmdoanhSb3Z6dEZ0QzRJRXRIUTV4TzcyZHAwTV9HazMzZkJNZ3NrdENTUHI5VWkzb1FIa2xjN0Vsc0NFendkOUZRbVhtbU9KV0Nmdy00R0tzRHhVWEdwd3ZmenY2TVlfcXBHUnpPc01IbUs3R1Nka2M2YXpOQUs3cXhscl9iLTRkYmtB?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Nigeria and China have entered into an Aquatic Products Protocol intended to facilitate trade and economic transformation in the aquaculture sector.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5797,
+    "Time": "Fri, 11 Sep 2026 21:24:57 GMT",
+    "Title": "FG pays 2,700 ex-Nigeria Airways workers N18bn | - theeagleonline.com.ng",
+    "Source": "theeagleonline.com.ng",
+    "URL": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVHU2eVVJYjl1eDBvU2FDa1dVUHRyUnBhN01aUXFzRXF0M0p5X084eHFrdlZRclVYbnR6SkF2eENCMThXcnExV1Q4U0c0djdvdDJjV1R5M1NqNGhEWEZKUnNsME11U1dmQWNNMjJFM29XTWJjWG4xSU1iUWRVblZQbi1n?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Government of Nigeria has paid N18 billion to 2,700 former employees of the defunct Nigeria Airways.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5795,
     "Time": "2026-09-11 07:29:58",
     "Title": "Dangote Group seeks cargo-backed financing to boost Nigeria\u2019s shipping",
@@ -668,54 +716,6 @@
     "Category": "Company",
     "Risk Score": 20,
     "Summary": "Iyinoluwa Aboyeji has resigned from his position as a non-executive director at Learn Africa.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5570,
-    "Time": "Tue, 08 Sep 2026 23:50:27 GMT",
-    "Title": "Terror funds: CBN tightens monitoring of Nigerian banks - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaHVWU3pCY1FwRDhHLWpxR1MyTzNmVHpfNW4wWExLS0tfQjdZRThUVGxfQjgwakVsSUlvNDVsT3dLRXQ2NmQySy00Y1RVb1RhSmtvTmh2eXpTQUhUZkp0SjhuRmRDM19FMlJadFNUSVBzQ1BrdmFERHFyelVPS3QweTctc1hadWVqTUl0OVBoSHFFNDhCSG1UVGdONUlpTk00aG1KWTBVd1pmc0lJ?oc=5",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "The Central Bank of Nigeria (CBN) is increasing its monitoring and oversight of Nigerian banks to better track and prevent the flow of funds used to finance terrorism.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5566,
-    "Time": "Tue, 08 Sep 2026 21:04:33 GMT",
-    "Title": "\u200eStakeholder seeks stronger vetting of government software testing firms \u200e - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRzVtN3Q2VTNOeGhlQlJJMmhaZzlFalZ1Q3dLZEVNTmI5UE5SUW9Qd0JhNTJ4TF9ZQjZ6bkRZVUwyNXE3WTVyUVdaU1BQOVh6SGdnTVltVWZ1QUFHTFJvWVFkdEE1Y3o3NF9rZ3p2SWpFdVpUVXhCMUpvTVpCamIwNW0yV09NcjRQa09xWldOMVF4TFVVUEM2X1Fub3QxbjNUSEpkWjBQZGdCQjd3?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "A stakeholder is advocating for more rigorous vetting processes for firms contracted by the government to perform software testing.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5559,
-    "Time": "2026-09-08 07:46:34",
-    "Title": "FGN offers 2 savings bonds for subscription at N1,000 per unit",
-    "Source": "quicknews_africa_net",
-    "URL": "https://quicknews-africa.net/fgn-offers-2-savings-bonds-for-subscription-at-n1000-per-unit-2/",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Federal Government of Nigeria (FGN) has offered two savings bonds for public subscription, priced at N1,000 per unit.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5554,
-    "Time": "Tue, 08 Sep 2026 19:42:51 GMT",
-    "Title": "NITDA calls for unified regulatory framework to boost tech Investment in Africa - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZjhqczQyRXNKSDloN1VmMHE0Nko4UVlCSzZtX0VpeXRpWG0wNzltcEZQQ1VHc282U1VudTNuOWtVOXBkdTZ1MWM3VmZxd2xBUUNCNGVvVVNzQTRodEdud2VqbU1VOEpsYnA2cDdLWHdXM0NYNGI2b2czNGphMzZZcURZM2YxWXRWN3VKUzBlM2FIMWU0RzhtcnZNZGF1QXFEMDczaHpzd3J5RjVYWkFoOFJYeDdRYUFKNlNjMk0zdFExalZ1ZkNBZ1FkWGhXSUNZUTRCVU5na0hUTGVTZmc?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "The National Information Technology Development Agency (NITDA) is advocating for a unified regulatory framework across Africa to enhance technology investments on the continent.",
     "Status": "Unread",
     "Engine": "ollama"
   }
