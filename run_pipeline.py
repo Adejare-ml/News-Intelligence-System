@@ -67,7 +67,18 @@ SHARE_BANDS = (
 
 EVAL_CORPUS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "evals", "corpus")
 # One in this many analysed articles is kept as a candidate for labelling.
-EVAL_CAPTURE_RATE = int(os.environ.get("EVAL_CAPTURE_RATE", "10"))
+# Guarded: this runs at import time, so a malformed env var used to raise
+# ValueError before anything (including the FastAPI app importing this
+# module) could start.
+try:
+    EVAL_CAPTURE_RATE = int(os.environ.get("EVAL_CAPTURE_RATE", "10"))
+except ValueError:
+    EVAL_CAPTURE_RATE = 10
+
+# Below this, a capture is an RSS blurb rather than an article: unusable as
+# a labelling input (scripts/validate_gold.py enforces the same floor) and a
+# train/serve mismatch against the full bodies the gold set is built from.
+EVAL_MIN_ARTICLE_CHARS = 200
 
 
 def capture_eval_input(title: str, article_text: str, url: str, source: str) -> None:
@@ -81,10 +92,26 @@ def capture_eval_input(title: str, article_text: str, url: str, source: str) -> 
     if EVAL_CAPTURE_RATE <= 0:
         return
     try:
+        # Blurbs are not labellable articles: two months of live capture
+        # produced 245 records of which 82% were under the validator's
+        # 200-char floor, and every gold example so far had to come from
+        # the separately re-fetched backfill instead.
+        if len((article_text or "").strip()) < EVAL_MIN_ARTICLE_CHARS:
+            return
         if random.randint(1, EVAL_CAPTURE_RATE) != 1:
             return
         os.makedirs(EVAL_CORPUS_DIR, exist_ok=True)
         path = os.path.join(EVAL_CORPUS_DIR, f"{datetime.now().strftime('%Y%m')}.jsonl")
+        # One capture per URL per month file; per-candidate sampling had no
+        # memory and banked the same story twice.
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as fh:
+                for line in fh:
+                    try:
+                        if json.loads(line).get("url") == url:
+                            return
+                    except Exception:
+                        continue
         record = {
             "title": title,
             "article_text": article_text,
@@ -229,13 +256,6 @@ def run_pipeline(seed: bool = False):
         from backend.app.services.nlp_pipeline import NLPPipelineService
         cleaned_text = NLPPipelineService.clean_html(text)
 
-        # Keep a sample of the extractor's *inputs*. Everything written to the
-        # sheet is model output -- Title, Summary, Category -- so there was no
-        # way to build a labelled set from the archive: the article body, which
-        # is the input the extractor is judged on, was discarded after analysis.
-        # Sampled rather than exhaustive because this is committed to the repo.
-        capture_eval_input(title, cleaned_text, url, source)
-
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
         try:
@@ -319,6 +339,16 @@ def run_pipeline(seed: bool = False):
             continue
             
         new_articles_count += 1
+
+        # Keep a sample of the extractor's *inputs*. Everything written to the
+        # sheet is model output -- Title, Summary, Category -- so there was no
+        # way to build a labelled set from the archive: the article body, which
+        # is the input the extractor is judged on, was discarded after analysis.
+        # Sampled rather than exhaustive because this is committed to the repo.
+        # Sampled here, after the relevance and topic gates, so sport and
+        # celebrity rejects stop entering the gold-set candidate pool.
+        capture_eval_input(title, cleaned_text, url, source)
+
         run_records.append({
             "title": title,
             "source": source,
@@ -752,6 +782,21 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         f.write(md)
     logger.info(f"Wrote archived report markdown to {archive_path}")
 
+    # Retention: keep the newest 180 editions (~45 days at 4 runs/day).
+    # Nothing pruned these; the directory was 167 files and climbing four a
+    # day, all committed to the repo on every run. Filenames sort
+    # chronologically (report_YYYYMMDD[_HHMMSS].md), and the auto-commit
+    # step picks up deletions under its file pattern.
+    try:
+        editions = sorted(f for f in os.listdir(archive_dir)
+                          if f.startswith("report_") and f.endswith(".md"))
+        for stale in editions[:-180]:
+            os.remove(os.path.join(archive_dir, stale))
+        if len(editions) > 180:
+            logger.info(f"Archive retention removed {len(editions) - 180} edition(s) older than the newest 180.")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Archive retention sweep failed: {exc}")
+
     db.add_daily_report({
         "Date": now.strftime("%Y-%m-%d"),
         "Total Articles": total,
@@ -771,6 +816,68 @@ def make_node_id(text: str) -> str:
     """Returns a deterministic string ID for graph nodes."""
     import hashlib
     return hashlib.md5((text or "").strip().lower().encode("utf-8")).hexdigest()[:12]
+
+
+def slim_report_rows(reports: List[Dict[str, Any]], keep: int = 120) -> List[Dict[str, Any]]:
+    """Rows for reports.json: the newest `keep`, inline markdown stripped
+    where the identical bytes already exist as an archive file.
+
+    The exported file had grown to ~570KB of which 90% was the Content
+    column -- fetched on every dashboard load, growing ~3.4MB/year, while
+    data/archives/ holds the same markdown per edition. Legacy rows that
+    predate the Archive File column keep their inline Content, since it is
+    the only copy.
+    """
+    out = []
+    for row in (reports or [])[-keep:]:
+        r = dict(row)
+        if str(r.get("Archive File", "")).strip():
+            r["Content"] = ""
+        out.append(r)
+    return out
+
+
+def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
+                       count_key: str = None) -> List[Dict[str, Any]]:
+    """Case-insensitive dedupe of exported entity rows.
+
+    The Companies sheet holds e.g. eight copies of one outlet and People
+    734 rows for 627 distinct (name, organization) pairs -- legacy rows
+    written before add_company's find-or-update existed. First occurrence
+    keeps its position; when `count_key` is given the highest count wins,
+    otherwise the latest duplicate (the freshest row) does.
+    """
+    best: Dict[Any, Dict[str, Any]] = {}
+    order: List[Any] = []
+    for row in rows or []:
+        key = tuple(str(row.get(f, "")).strip().lower() for f in key_fields)
+        if not any(key):
+            continue
+        if key not in best:
+            best[key] = row
+            order.append(key)
+        elif count_key:
+            if _int_cell(row.get(count_key)) > _int_cell(best[key].get(count_key)):
+                best[key] = row
+        else:
+            best[key] = row
+    return [best[k] for k in order]
+
+
+def top_rows(rows: List[Dict[str, Any]], n: int, count_key: str = None,
+             date_key: str = None) -> List[Dict[str, Any]]:
+    """The N rows most worth graphing, instead of the first N inserted.
+
+    The graph slices used to take `companies[:20]` etc. over sheets in
+    insertion order -- a fixed window onto the oldest records. Sorts by
+    mention count (when given) then date string (ISO-ish, so lexical works),
+    both descending; stable, so ties keep sheet order.
+    """
+    def sort_key(row):
+        count = _int_cell(row.get(count_key)) if count_key else 0
+        date = str(row.get(date_key, "")) if date_key else ""
+        return (count, date)
+    return sorted(rows or [], key=sort_key, reverse=True)[:n]
 
 def export_static_json_database():
     """Generates the static JSON files read by index.html / app.js."""
@@ -850,13 +957,44 @@ def export_static_json_database():
     # table had accumulated "Premier League", "Serie A", "BBNaija" and
     # "FIFA World Cup" as tracked corporate entities, and they flowed into the
     # knowledge graph as company and agency nodes.
-    companies = [c for c in companies if not relevance.is_off_topic(c.get("Company"))]
-    agencies = [a for a in agencies if not relevance.is_off_topic(a.get("Agency"))]
+    # is_publication_or_furniture runs here as well as at ingestion: the
+    # ~1,100 legacy company rows written before that guard existed still
+    # carry outlets ("The Guardian Nigeria News", literal "Archives" chrome)
+    # and sailed into companies.json and the graph as tracked entities.
+    companies = [
+        c for c in companies
+        if not relevance.is_off_topic(c.get("Company"))
+        and not is_publication_or_furniture(c.get("Company"))
+    ]
+    agencies = [
+        a for a in agencies
+        if not relevance.is_off_topic(a.get("Agency"))
+        and not is_publication_or_furniture(a.get("Agency"))
+    ]
     people = [
         p for p in people
         if not relevance.is_off_topic(p.get("Organization"))
         and not relevance.is_off_topic(p.get("Name"))
+        and not is_publication_or_furniture(p.get("Organization"))
     ]
+    # Procurement and PSC rows feed the same graph and their own exports,
+    # and were never filtered at all.
+    procurement = [
+        row for row in procurement
+        if not relevance.is_off_topic(row.get("Agency"))
+        and not relevance.is_off_topic(row.get("Contractor"))
+        and not is_publication_or_furniture(row.get("Contractor"))
+    ]
+    psc_records = [
+        row for row in psc_records
+        if not is_publication_or_furniture(row.get("Company"))
+        and not is_publication_or_furniture(row.get("Person Name"))
+    ]
+
+    # Legacy duplicate rows collapse at export (the sheet keeps its audit
+    # trail): one row per company, one per (person, organization).
+    companies = dedupe_entity_rows(companies, ["Company"], count_key="Mention Count")
+    people = dedupe_entity_rows(people, ["Name", "Organization"])
 
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or
@@ -904,7 +1042,7 @@ def export_static_json_database():
         json.dump(psc_records, f, default=str, indent=2)
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
-        json.dump(reports, f, default=str, indent=2)
+        json.dump(slim_report_rows(reports), f, default=str, indent=2)
 
     # 3. Generate Knowledge Graph nodes and edges (Deterministic IDs)
     nodes = []
@@ -912,11 +1050,12 @@ def export_static_json_database():
     node_keys = set()
     edge_keys = set()
     
-    # Generate nodes from companies
-    for row in companies[:20]:
+    # Slices are worth-ranked (see top_rows); [:20] over insertion order
+    # was a fixed window onto the oldest sheet rows.
+    for row in top_rows(companies, 20, count_key="Mention Count", date_key="Last Seen"):
         name = row.get("Company", "").strip()
-        if name and name not in node_keys:
-            node_keys.add(name)
+        if name and make_node_id(name) not in node_keys:
+            node_keys.add(make_node_id(name))
             nodes.append({
                 "id": make_node_id(name),
                 "label": name,
@@ -925,10 +1064,10 @@ def export_static_json_database():
             })
             
     # Generate nodes from agencies
-    for row in agencies[:20]:
+    for row in top_rows(agencies, 20, date_key="Date"):
         name = row.get("Agency", "").strip()
-        if name and name not in node_keys:
-            node_keys.add(name)
+        if name and make_node_id(name) not in node_keys:
+            node_keys.add(make_node_id(name))
             nodes.append({
                 "id": make_node_id(name),
                 "label": name,
@@ -937,14 +1076,14 @@ def export_static_json_database():
             })
             
     # Generate nodes and edges from People changes
-    for row in people[:25]:
+    for row in top_rows(people, 25, date_key="Date"):
         person_name = row.get("Name", "").strip()
         org_name = row.get("Organization", "").strip()
         pos = row.get("Position", "Executive")
         
         if person_name:
-            if person_name not in node_keys:
-                node_keys.add(person_name)
+            if make_node_id(person_name) not in node_keys:
+                node_keys.add(make_node_id(person_name))
                 nodes.append({
                     "id": make_node_id(person_name),
                     "label": person_name,
@@ -954,8 +1093,8 @@ def export_static_json_database():
             
             # Connect Person to Organization
             if org_name:
-                if org_name not in node_keys:
-                    node_keys.add(org_name)
+                if make_node_id(org_name) not in node_keys:
+                    node_keys.add(make_node_id(org_name))
                     nodes.append({
                         "id": make_node_id(org_name),
                         "label": org_name,
@@ -964,8 +1103,8 @@ def export_static_json_database():
                     })
                 
                 edge_key = f"{person_name}-{org_name}-works"
-                if edge_key not in edge_keys:
-                    edge_keys.add(edge_key)
+                if make_node_id(edge_key) not in edge_keys:
+                    edge_keys.add(make_node_id(edge_key))
                     edges.append({
                         "id": make_node_id(edge_key),
                         "from": make_node_id(person_name),
@@ -974,23 +1113,23 @@ def export_static_json_database():
                     })
 
     # Generate nodes & edges from Persons with Significant Control (PSC)
-    for row in psc_records[:20]:
+    for row in top_rows(psc_records, 20, date_key="Date"):
         person_name = row.get("Person Name", "").strip()
         comp_name = row.get("Company", "").strip()
         ctrl = row.get("Nature of Control", "Significant Control")
         pct = row.get("Percentage", "")
         
         if person_name and comp_name:
-            if person_name not in node_keys:
-                node_keys.add(person_name)
+            if make_node_id(person_name) not in node_keys:
+                node_keys.add(make_node_id(person_name))
                 nodes.append({
                     "id": make_node_id(person_name),
                     "label": person_name,
                     "type": "psc",
                     "risk": "High"
                 })
-            if comp_name not in node_keys:
-                node_keys.add(comp_name)
+            if make_node_id(comp_name) not in node_keys:
+                node_keys.add(make_node_id(comp_name))
                 nodes.append({
                     "id": make_node_id(comp_name),
                     "label": comp_name,
@@ -999,8 +1138,8 @@ def export_static_json_database():
                 })
                 
             edge_key = f"{person_name}-{comp_name}-psc"
-            if edge_key not in edge_keys:
-                edge_keys.add(edge_key)
+            if make_node_id(edge_key) not in edge_keys:
+                edge_keys.add(make_node_id(edge_key))
                 lbl = f"PSC: {pct}" if pct else ctrl
                 edges.append({
                     "id": make_node_id(edge_key),
@@ -1010,22 +1149,24 @@ def export_static_json_database():
                 })
 
     # Generate edges from Procurement
-    for row in procurement[:20]:
+    # No date column on Procurement; rows append chronologically, so the
+    # newest are at the end.
+    for row in list(reversed(procurement))[:20]:
         agency = row.get("Agency", "").strip()
         contractor = row.get("Contractor", "").strip()
         proj = row.get("Project", "Contract").strip()
         
         if agency and contractor:
-            if agency not in node_keys:
-                node_keys.add(agency)
+            if make_node_id(agency) not in node_keys:
+                node_keys.add(make_node_id(agency))
                 nodes.append({"id": make_node_id(agency), "label": agency, "type": "agency", "risk": "Low"})
-            if contractor not in node_keys:
-                node_keys.add(contractor)
+            if make_node_id(contractor) not in node_keys:
+                node_keys.add(make_node_id(contractor))
                 nodes.append({"id": make_node_id(contractor), "label": contractor, "type": "company", "risk": "Low"})
                 
             edge_key = f"{contractor}-{agency}-contract"
-            if edge_key not in edge_keys:
-                edge_keys.add(edge_key)
+            if make_node_id(edge_key) not in edge_keys:
+                edge_keys.add(make_node_id(edge_key))
                 edges.append({
                     "id": make_node_id(edge_key),
                     "from": make_node_id(contractor),
