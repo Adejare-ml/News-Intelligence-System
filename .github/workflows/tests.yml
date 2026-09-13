@@ -81,6 +81,13 @@ jobs:
       - name: Run frontend suite
         run: node tests/frontend/run.js
 
+      - name: Lint (undefined identifiers only)
+        # One rule, no-undef -- see eslint.config.js. app.js is DOM-bound
+        # and can't run in the headless suite, so a renamed-but-still-
+        # referenced variable once shipped a page that threw on boot with
+        # the suite green. Pinned version; npx caches per runner.
+        run: npx --yes eslint@10.10.0 "backend/app/static/js/**/*.js" "tests/frontend/**/*.js"
+
   cache-buster:
     name: Cache-buster check
     if: github.event_name == 'pull_request'

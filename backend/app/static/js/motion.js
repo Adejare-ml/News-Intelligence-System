@@ -123,6 +123,15 @@
         if (!el) return;
         var value = Number(target) || 0;
 
+        // Cancel any in-flight run on this element first. A retry or an
+        // ingest refresh re-invokes countUp on the same span, and two
+        // uncancelled rAF chains interleave writes -- the counter jitters
+        // between values and settles on whichever chain finishes last.
+        if (el.__countUpFrame) {
+            global.cancelAnimationFrame(el.__countUpFrame);
+            el.__countUpFrame = null;
+        }
+
         if (prefersReduced()) {
             el.textContent = value.toLocaleString();
             return;
@@ -137,11 +146,15 @@
             // easeOutCubic: fast start, settles gently on the final number.
             var eased = 1 - Math.pow(1 - t, 3);
             el.textContent = Math.round(value * eased).toLocaleString();
-            if (t < 1) global.requestAnimationFrame(step);
-            else el.textContent = value.toLocaleString();
+            if (t < 1) {
+                el.__countUpFrame = global.requestAnimationFrame(step);
+            } else {
+                el.textContent = value.toLocaleString();
+                el.__countUpFrame = null;
+            }
         }
 
-        global.requestAnimationFrame(step);
+        el.__countUpFrame = global.requestAnimationFrame(step);
     }
 
     /** Count up only once the element has actually been scrolled into view. */
