@@ -1820,3 +1820,101 @@ div.vis-tooltip {
 .trend-up .trend-delta { color: #34d399; }
 .trend-down { opacity: 0.75; }
 .trend-down .trend-delta { color: #f87171; }
+
+/* =====================================================================
+   Global search palette (Ctrl+K)
+   ===================================================================== */
+.search-palette {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    background: rgba(5, 8, 20, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10vh var(--space-4) var(--space-4);
+}
+.palette-box {
+    width: min(640px, 100%);
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-4);
+    border-radius: 12px;
+}
+#search-palette-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-size: 1rem;
+    background: rgba(10, 15, 35, 0.9);
+    color: inherit;
+    border: 1px solid rgba(103, 232, 249, 0.35);
+    border-radius: 8px;
+}
+.palette-results {
+    list-style: none;
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    overflow-y: auto;
+}
+.palette-group > h3 {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-dim, #94a3b8);
+    margin: var(--space-3) 0 var(--space-1);
+}
+.palette-group > ul { list-style: none; margin: 0; padding: 0; }
+.palette-item {
+    padding: var(--space-2) var(--space-3);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.palette-item.is-selected, .palette-item:hover {
+    background: rgba(103, 232, 249, 0.12);
+}
+.palette-sub, .palette-more, .palette-hint, .dossier-sub {
+    color: var(--text-dim, #94a3b8);
+    font-size: 0.8rem;
+}
+.palette-more { padding: var(--space-1) var(--space-3); list-style: none; }
+.palette-empty { color: var(--text-dim, #94a3b8); padding: var(--space-3); }
+.palette-hint { margin: var(--space-2) 0 0; text-align: right; }
+
+/* =====================================================================
+   Entity dossiers (route outlet pages)
+   ===================================================================== */
+[data-route-outlet] {
+    padding: var(--space-5) 0;
+}
+.dossier-header h1 { margin-bottom: var(--space-1); }
+.dossier-kind {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--accent, #67e8f9);
+}
+.dossier-meta { color: var(--text-dim, #94a3b8); }
+.dossier-panel {
+    margin-top: var(--space-5);
+}
+.dossier-panel h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-2);
+}
+.dossier-panel ul { padding-left: var(--space-4); line-height: 1.7; }
+.dossier-flags { list-style: none; padding-left: 0 !important; }
+.dossier-flags li {
+    display: inline-block;
+    margin: 2px var(--space-1) 0 0;
+    padding: 1px var(--space-2);
+    font-size: 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(244, 114, 182, 0.4);
+}
+.dossier-flags .flag-high { background: rgba(244, 114, 182, 0.15); }
+.dossier-back { margin-top: var(--space-6); }

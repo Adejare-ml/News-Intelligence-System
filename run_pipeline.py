@@ -1063,6 +1063,12 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "procurement.json"), "w", encoding="utf-8") as f:
         json.dump(procurement, f, default=str, indent=2)
 
+    # Agencies were already fetched and filtered for the graph step but
+    # never exported like companies/people -- the agency dossier pages
+    # need them. Same data, already in memory; no new query.
+    with open(os.path.join(DATA_DIR, "agencies.json"), "w", encoding="utf-8") as f:
+        json.dump(agencies, f, default=str, indent=2)
+
     with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
         json.dump(psc_records, f, default=str, indent=2)
         
