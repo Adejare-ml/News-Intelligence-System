@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let isSemanticSearch = false;
     let mixChart = null;
     let network = null;
+    // Teardown hooks for the previous graph build. The drift wiring
+    // registers document-level listeners and an IntersectionObserver per
+    // build; without unhooking them, a rebuild (retry button, ingest
+    // refresh) leaked each set and a stale driftSync closure could start
+    // a second orbit loop fighting the new network over one viewport.
+    const graphCleanup = [];
     let allArticles = [];
     let allReports = [];
     let allPscRecords = [];
@@ -183,27 +189,42 @@ document.addEventListener("DOMContentLoaded", () => {
     // DATA FETCHING & RENDERING
     // ==========================================
 
+    // One shared fetch of latest.json. loadDashboardStats and loadNewsFeed
+    // both start at boot, and each issued its own request before the
+    // other's assignment landed -- the largest payload on the critical
+    // path, downloaded twice. Failure clears the memo so a retry refetches.
+    let latestJsonPromise = null;
+    function fetchLatestJson() {
+        if (!latestJsonPromise) {
+            latestJsonPromise = fetch(`${API_BASE}/latest.json`).then(res => {
+                // Status before parsing, so a 404/503 is reported as itself
+                // rather than as "Unexpected token" from an error page.
+                if (!res.ok) throw new Error(`latest.json: ${res.status} ${res.statusText}`.trim());
+                return res.json();
+            }).catch(err => {
+                latestJsonPromise = null;
+                throw err;
+            });
+        }
+        return latestJsonPromise;
+    }
+
     async function loadDashboardStats() {
         try {
             clearDashboardStatsFailure();
             if (isGitHubPages) {
                 // Fetch datasets in parallel for serverless dashboard aggregation
-                const [artRes, compRes, repRes] = await Promise.all([
-                    fetch(`${API_BASE}/latest.json`),
+                const [rawArticles, compRes, repRes] = await Promise.all([
+                    fetchLatestJson(),
                     fetch(`${API_BASE}/companies.json`),
                     fetch(`${API_BASE}/reports.json`)
                 ]);
 
-                // Check the status before parsing, so a 404 or a 503 is
-                // reported as itself. Calling .json() straight through turned
-                // every server error into "Unexpected token" from whatever the
-                // error page happened to contain, which names the wrong fault.
-                [["latest.json", artRes], ["companies.json", compRes], ["reports.json", repRes]]
+                [["companies.json", compRes], ["reports.json", repRes]]
                     .forEach(([name, res]) => {
                         if (!res.ok) throw new Error(`${name}: ${res.status} ${res.statusText}`.trim());
                     });
 
-                const rawArticles = await artRes.json();
                 const rawCompanies = await compRes.json();
                 const rawReports = await repRes.json();
                 
@@ -455,8 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (isGitHubPages) {
                 // Client-side search and category filtering in serverless mode
                 if (allArticles.length === 0) {
-                    const res = await fetch(`${API_BASE}/latest.json`);
-                    const raw = await res.json();
+                    const raw = await fetchLatestJson();
                     allArticles = raw.map(normalizeArticle);
                 }
                 
@@ -500,7 +520,11 @@ document.addEventListener("DOMContentLoaded", () => {
             renderTrace(query);
         } catch (err) {
             console.error("Error loading news feed:", err);
-            articlesList.innerHTML = `<p class="error-message">Failed to load news streams.</p>`;
+            articlesList.innerHTML = `
+                <p class="error-message">Failed to load news streams (${esc(err.message)}).</p>
+                <button class="btn btn-secondary btn-sm" id="feed-retry-btn">Retry</button>`;
+            const retry = document.getElementById("feed-retry-btn");
+            if (retry) retry.addEventListener("click", () => loadNewsFeed(query, category));
         }
     }
 
@@ -531,33 +555,38 @@ document.addEventListener("DOMContentLoaded", () => {
                 knownEntities = graph.nodes || [];
                 buildKnowledgeGraph(graph);
             } else {
-                buildKnowledgeGraph(getFallbackGraphData());
+                renderGraphUnavailable();
             }
         } catch (err) {
             console.error("Error loading graph analytics:", err);
-            buildKnowledgeGraph(getFallbackGraphData());
+            renderGraphUnavailable();
         }
     }
 
-    function getFallbackGraphData() {
-        return {
-            nodes: [
-                { id: "c1", label: "Apex Technology Group", type: "company", risk: "Medium" },
-                { id: "c2", label: "Vertex Financials", type: "company", risk: "Low" },
-                { id: "c3", label: "AeroSpace International", type: "company", risk: "High" },
-                { id: "p1", label: "Alhaji Ibrahim Musa", type: "psc", risk: "Critical" },
-                { id: "p2", label: "Dr. Chidimma Okeke", type: "person", risk: "Low" },
-                { id: "a1", label: "Bureau of Public Procurement (BPP)", type: "agency", risk: "Medium" },
-                { id: "a2", label: "CAC Transparency Unit", type: "agency", risk: "Low" }
-            ],
-            edges: [
-                { id: "e1", from: "p1", to: "c1", label: "PSC >25% Shares" },
-                { id: "e2", from: "c1", to: "c2", label: "Subsidiary" },
-                { id: "e3", from: "p2", to: "c3", label: "Director" },
-                { id: "e4", from: "a1", to: "c3", label: "Procurement Auditor" },
-                { id: "e5", from: "a2", to: "p1", label: "UBO Disclosure" }
-            ]
-        };
+    /**
+     * Honest empty state for the relationship graph.
+     *
+     * This used to render seven invented people and companies with invented
+     * ownership edges and risk levels -- with the panel subtitle proudly
+     * counting them -- whenever graph.json failed to load. The same defect
+     * this codebase fixed twice elsewhere (seeded PSC rows, demo briefs):
+     * fabricated records must never be presented as extracted intelligence.
+     */
+    function renderGraphUnavailable() {
+        knownEntities = [];
+        const container = document.getElementById("network-container");
+        if (container) {
+            container.innerHTML = `
+                <div class="empty-note" style="padding: 2rem; text-align: center;">
+                    <p><strong>Relationship graph unavailable.</strong></p>
+                    <p>The graph data could not be loaded. It regenerates on the next pipeline run.</p>
+                    <button class="btn btn-secondary btn-sm" id="graph-retry-btn">Retry</button>
+                </div>`;
+            const retry = document.getElementById("graph-retry-btn");
+            if (retry) retry.addEventListener("click", () => loadAnalyticsAndGraph());
+        }
+        const graphStats = document.getElementById("graph-stats");
+        if (graphStats) graphStats.textContent = "No relationship data loaded";
     }
 
     // ==========================================
@@ -749,8 +778,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const catLabels = Object.keys(categories || {});
         const catValues = Object.values(categories || {});
-        const labels = catLabels.length > 0 ? catLabels : ["Government", "Company", "Legal", "General"];
-        const values = catValues.length > 0 ? catValues : [15, 22, 10, 13];
+
+        // Empty data renders as an empty state, not invented numbers: the
+        // old fallback painted a plausible doughnut from literal values
+        // (15/22/10/13) that were derived from nothing.
+        if (catLabels.length === 0) {
+            if (mixChart) { mixChart.destroy(); mixChart = null; }
+            const summary = document.getElementById("mix-chart-summary");
+            if (summary) {
+                summary.classList.remove("sr-only");
+                summary.textContent = "No category data yet — the chart appears after the next pipeline run.";
+            }
+            return;
+        }
+        const labels = catLabels;
+        const values = catValues;
 
         // Inner ring: risk levels in severity order with semantic colors
         const RISK_ORDER = ["Low", "Medium", "High", "Critical"];
@@ -977,6 +1019,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (network && typeof network.destroy === "function") {
             try { network.destroy(); } catch (e) { /* already gone */ }
         }
+        graphCleanup.forEach(fn => { try { fn(); } catch (e) { /* already gone */ } });
+        graphCleanup.length = 0;
         container.innerHTML = "";
         network = new vis.Network(container, data, options);
 
@@ -1047,14 +1091,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (typeof driftMotion.addEventListener === "function") {
             driftMotion.addEventListener("change", driftSync);
+            graphCleanup.push(() => driftMotion.removeEventListener("change", driftSync));
         }
         document.addEventListener("visibilitychange", driftSync);
+        graphCleanup.push(() => document.removeEventListener("visibilitychange", driftSync));
         if (typeof IntersectionObserver === "function") {
-            new IntersectionObserver((entries) => {
+            const driftObserver = new IntersectionObserver((entries) => {
                 driftOnScreen = entries[0].isIntersecting;
                 driftSync();
-            }, { threshold: 0.05 }).observe(container);
+            }, { threshold: 0.05 });
+            driftObserver.observe(container);
+            graphCleanup.push(() => driftObserver.disconnect());
         }
+        graphCleanup.push(() => {
+            if (driftFrame) { cancelAnimationFrame(driftFrame); driftFrame = null; }
+        });
 
         // Setup Graph Toolbar Buttons
         const zoomInBtn = document.getElementById("graph-zoom-in");
@@ -1096,10 +1147,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // The global motion toggle in the header also governs the graph.
-        document.addEventListener("aura:motion", (e) => {
+        const onAuraMotion = (e) => {
             driftPaused = !!(e.detail && e.detail.paused);
             driftSync();
-        });
+        };
+        document.addEventListener("aura:motion", onAuraMotion);
+        graphCleanup.push(() => document.removeEventListener("aura:motion", onAuraMotion));
 
         // Neighborhood highlight: dim everything not connected to the clicked node
         const canUpdateNodes = typeof vis.DataSet !== "undefined";
@@ -1936,6 +1989,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <tbody>
         `;
 
+        // One index map instead of two indexOf scans per rendered row --
+        // this re-renders on every search keystroke, and getRecordRedFlags
+        // was already rewritten once to kill the same O(n^2) shape.
+        const pscIndexOf = new Map(allPscRecords.map((rec, i) => [rec, i]));
         pscData.forEach(r => {
             const flags = getRecordRedFlags(r);
             const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
@@ -1943,7 +2000,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "Tier 2";
 
             html += `
-                <tr class="psc-table-row" data-psc-index="${allPscRecords.indexOf(r)}" tabindex="0" role="button">
+                <tr class="psc-table-row" data-psc-index="${pscIndexOf.get(r)}" tabindex="0" role="button">
                     <td style="padding:12px 10px;">
                         <div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(r["Person Name"] || "N/A")}</div>
                         <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:4px; margin-top:2px;">
@@ -1974,7 +2031,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${r["Regulatory Filing Ref"] ? esc(r["Regulatory Filing Ref"]) : "<span style=\"color:var(--text-muted);\">Not disclosed</span>"}</code>
                     </td>
                     <td style="padding:12px 10px; text-align:right;">
-                        <button class="btn btn-secondary psc-dossier-btn" data-psc-index="${allPscRecords.indexOf(r)}" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
+                        <button class="btn btn-secondary psc-dossier-btn" data-psc-index="${pscIndexOf.get(r)}" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
                             <i data-lucide="eye" style="width:12px; height:12px;"></i> Dossier
                         </button>
                     </td>
@@ -2050,15 +2107,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const hArray = Array.from(holdingsMap.values());
         const cArray = Array.from(companiesMap.values());
 
+        // Ordinal lookups from the Maps that already exist, instead of three
+        // linear findIndex scans per record on every keystroke re-render.
+        const pOrd = new Map(pArray.map((p, i) => [p.name, i]));
+        const hOrd = new Map(hArray.map((h, i) => [h.name, i]));
+        const cOrd = new Map(cArray.map((c, i) => [c.name, i]));
+
         const xP = 140;
         const xH = 500;
         const xC = 850;
 
         pscData.forEach(r => {
-            const pIndex = pArray.findIndex(p => p.name === r["Person Name"]);
+            const pIndex = pOrd.has(r["Person Name"]) ? pOrd.get(r["Person Name"]) : -1;
             const hName = (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Shareholder" && r["Intermediate Entities"] !== "Direct Holding") ? r["Intermediate Entities"] : "Direct";
-            const hIndex = hArray.findIndex(h => h.name === hName);
-            const cIndex = cArray.findIndex(c => c.name === r["Company"]);
+            const hIndex = hOrd.has(hName) ? hOrd.get(hName) : -1;
+            const cIndex = cOrd.has(r["Company"]) ? cOrd.get(r["Company"]) : -1;
 
             const yP = 60 + pIndex * (380 / Math.max(1, pArray.length - 1));
             const flags = getRecordRedFlags(r);
@@ -2422,55 +2485,54 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Ingest trigger
-    triggerIngestBtn.addEventListener("click", async () => {
+    // Ingest trigger. The whole body runs under try/finally so the button
+    // always comes back: any throw between disabling and restoring used to
+    // leave it permanently disabled with a spinning icon and an infinite
+    // pulse animation.
+    if (triggerIngestBtn) triggerIngestBtn.addEventListener("click", async () => {
         triggerIngestBtn.disabled = true;
         const icon = triggerIngestBtn.querySelector("i");
         if (icon) icon.classList.add("spin");
-        
-        // Add a pulsing effect to the button itself
         triggerIngestBtn.style.animation = "activePulse 1.5s infinite";
 
-        if (isGitHubPages) {
-            // Simulated delay for loading effect
-            await new Promise(r => setTimeout(r, 800));
-            
+        const restore = () => {
             triggerIngestBtn.style.animation = "";
             triggerIngestBtn.disabled = false;
             if (icon) icon.classList.remove("spin");
-            
-            // Show custom informational modal for GitHub Pages
-            alert("Cloud Deployment Detected!\n\nBecause this dashboard is hosted serverlessly on GitHub Pages, the intelligence scrapers run securely on a fixed cloud schedule (8 AM, 2 PM, 7 PM).\n\nTo trigger an immediate data ingestion manually, please visit your GitHub Repository -> Actions Tab -> Run Workflow.");
-            window.open("https://github.com/Adejare-ml/News-Intelligence-System/actions", "_blank");
-        } else {
-            try {
+        };
+
+        try {
+            if (isGitHubPages) {
+                // Simulated delay for loading effect
+                await new Promise(r => setTimeout(r, 800));
+                restore();
+                // Show custom informational modal for GitHub Pages
+                alert("Cloud Deployment Detected!\n\nBecause this dashboard is hosted serverlessly on GitHub Pages, the intelligence scrapers run securely on a fixed cloud schedule (8 AM, 2 PM, 6 PM, 11 PM).\n\nTo trigger an immediate data ingestion manually, please visit your GitHub Repository -> Actions Tab -> Run Workflow.");
+                window.open("https://github.com/Adejare-ml/News-Intelligence-System/actions", "_blank");
+            } else {
                 const res = await fetch(`${API_BASE}/news/trigger-ingest`, { method: "POST" });
-                const data = await res.json();
-                
+                // A 404/500 with a JSON body used to fall through to the
+                // success alert.
+                if (!res.ok) throw new Error(`trigger-ingest: ${res.status} ${res.statusText}`);
                 alert("Local background news collection enqueued successfully. Wait a few moments then refresh!");
-                
                 // Reload stats and feed after 3 seconds
                 setTimeout(() => {
                     loadDashboardStats();
                     loadNewsFeed("", currentCategory);
                     loadAnalyticsAndGraph();
-                    
-                    triggerIngestBtn.style.animation = "";
-                    triggerIngestBtn.disabled = false;
-                    if (icon) icon.classList.remove("spin");
+                    restore();
                 }, 3000);
-            } catch (err) {
-                console.error("Failed to trigger ingestion:", err);
-                alert("Failed to connect to local ingestion server.");
-                triggerIngestBtn.style.animation = "";
-                triggerIngestBtn.disabled = false;
-                if (icon) icon.classList.remove("spin");
+                return; // restore happens in the timeout above
             }
+        } catch (err) {
+            console.error("Failed to trigger ingestion:", err);
+            alert("Failed to trigger ingestion: " + err.message);
+            restore();
         }
     });
 
     // Search Toggle
-    searchTypeToggle.addEventListener("change", (e) => {
+    if (searchTypeToggle) searchTypeToggle.addEventListener("change", (e) => {
         isSemanticSearch = e.target.checked;
         if (isSemanticSearch) {
             // Called "Semantic Similarity (AI)" before. It is a weighted
@@ -2657,8 +2719,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const item = document.createElement("div");
                 item.className = "report-archive-item";
                 item.innerHTML = `
-                    <span class="date">${f.created_at}</span>
-                    <span class="title">${f.display_name || f.filename}</span>
+                    <span class="date">${esc(f.created_at)}</span>
+                    <span class="title">${esc(f.display_name || f.filename)}</span>
                 `;
                 item.addEventListener("click", () => {
                     document.querySelectorAll(".report-archive-item").forEach(item => item.classList.remove("active"));
@@ -2687,13 +2749,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Event Bindings
-    viewReportsBtn.addEventListener("click", openReportsModal);
-    closeReportsModalBtn.addEventListener("click", closeReportsModal);
+    if (viewReportsBtn) viewReportsBtn.addEventListener("click", openReportsModal);
+    if (closeReportsModalBtn) closeReportsModalBtn.addEventListener("click", closeReportsModal);
     reportsModal.addEventListener("click", (e) => {
         if (e.target === reportsModal) closeReportsModal();
     });
 
-    compileReportBtn.addEventListener("click", async () => {
+    if (compileReportBtn) compileReportBtn.addEventListener("click", async () => {
         if (isGitHubPages) {
             alert("Report compilation in production runs automatically 3x daily via GitHub Actions. If you need manual compilation, run the pipeline command locally or trigger it from your GitHub Repository Actions tab.");
             return;
@@ -2705,7 +2767,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         try {
             const res = await fetch(`${API_BASE}/reports/trigger`, { method: "POST" });
-            const data = await res.json();
+            // The unconditional success alert used to assert regeneration
+            // on any response, 500s included.
+            if (!res.ok) throw new Error(`reports/trigger: ${res.status} ${res.statusText}`);
             alert(`Report compilation success: report_latest.md has been regenerated!`);
             loadReportsList();
             loadReportContent("latest");
