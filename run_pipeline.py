@@ -1025,6 +1025,31 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "changes.json"), "w", encoding="utf-8") as f:
         json.dump(changes, f, default=str, indent=2)
 
+    # Context signals: weather for the two home ports and term/category
+    # momentum over our own articles (plus a best-effort r/Nigeria social
+    # column). Fetched pipeline-side because the site's CSP pins
+    # connect-src to 'self'. Strictly best-effort -- neither may ever fail
+    # a news run, and a failed weather fetch keeps the previous file
+    # rather than publishing an empty one.
+    try:
+        from backend.app.services.weather import fetch_weather
+        weather = fetch_weather()
+        if weather:
+            with open(os.path.join(DATA_DIR, "weather.json"), "w", encoding="utf-8") as f:
+                json.dump(weather, f, default=str, indent=2)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Weather export skipped: {exc}")
+
+    try:
+        from backend.app.services.trends import compute_trends, fetch_reddit_nigeria
+        trends = compute_trends(articles)
+        trends["social"] = fetch_reddit_nigeria()
+        trends["generated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with open(os.path.join(DATA_DIR, "trends.json"), "w", encoding="utf-8") as f:
+            json.dump(trends, f, default=str, indent=2)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Trends export skipped: {exc}")
+
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
         json.dump(articles_sorted, f, default=str, indent=2)

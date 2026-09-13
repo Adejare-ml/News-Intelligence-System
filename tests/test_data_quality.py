@@ -148,6 +148,12 @@ class TestExportEndToEnd:
         (out_dir / "archives").mkdir()
         monkeypatch.setattr(rp, "db", d)
         monkeypatch.setattr(rp, "DATA_DIR", str(out_dir))
+        # The export's best-effort context-signal fetches must not reach
+        # the network from a test run.
+        import backend.app.services.trends as trends_mod
+        import backend.app.services.weather as weather_mod
+        monkeypatch.setattr(weather_mod, "fetch_weather", lambda *a, **k: None)
+        monkeypatch.setattr(trends_mod, "fetch_reddit_nigeria", lambda *a, **k: [])
         rp.export_static_json_database()
         yield out_dir
         if os.path.exists(TEST_DB_PATH):
