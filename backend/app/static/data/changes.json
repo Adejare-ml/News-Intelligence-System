@@ -1,27 +1,17 @@
 {
-  "new_companies": [
-    "BRG Group",
-    "PXES",
-    "SeABank"
-  ],
+  "new_companies": [],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "Again, Nigerians lose savings to Ponzi scheme",
-      "url": "https://punchng.com/again-nigerians-lose-savings-to-ponzi-scheme/",
-      "risk": 85.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
+    "new_companies": 0,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-13 16:51:54"
+  "generated": "2026-09-13 19:16:02"
 }
