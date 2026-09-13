@@ -193,6 +193,17 @@
             <div class="insight-groups" id="cycle-changes-body"></div>
         </section>
 
+        <!-- Watchlist: entities starred from their dossier pages. State is
+             per-browser localStorage (there is no account system) and the
+             panel says so; hidden while the list is empty. -->
+        <section class="glass insight-panel" id="watchlist-panel" hidden>
+            <div class="panel-header">
+                <h2>Watchlist</h2>
+                <span class="insight-generated">Saved only in this browser</span>
+            </div>
+            <div class="watchlist-body" id="watchlist-body"></div>
+        </section>
+
         <!-- ==========================================================
              THE BRIEF — promoted out of a modal onto the page itself.
              In a dialog it was un-linkable, un-printable and invisible
@@ -655,9 +666,10 @@
     <script src="js/report-markdown.js?v=4.6"></script>
     <script src="js/router.js?v=4.6"></script>
     <script src="js/search.js?v=5.1"></script>
-    <script src="js/dossier.js?v=5.1"></script>
+    <script src="js/dossier.js?v=5.2"></script>
     <script src="js/datatable.js?v=4.6"></script>
     <script src="js/graph-path.js?v=5.2"></script>
+    <script src="js/local-store.js?v=5.2"></script>
     <script src="js/insights.js?v=4.8"></script>
     <script src="js/app.js?v=5.2"></script>
     <script src="js/psc-report.js?v=4.7"></script>

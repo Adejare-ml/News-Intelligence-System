@@ -684,10 +684,19 @@ document.addEventListener("DOMContentLoaded", () => {
         loadNewsFeed();
     }
 
-    function renderAlertsList(alerts) {
-        const bandCount = document.getElementById("alert-band-count");
+    // Slice H: dismissal state. The alerts re-render from this cache when a
+    // dismissal changes, so the caller's data does not need re-fetching.
+    let lastAlertsData = [];
+    let showDismissedAlerts = false;
 
-        if (!alerts || alerts.length === 0) {
+    function renderAlertsList(alerts) {
+        // Zero-arg calls are internal re-renders after a dismissal; any
+        // explicit argument (even an absent latest_alerts) replaces the cache.
+        if (arguments.length > 0) lastAlertsData = alerts || [];
+        const bandCount = document.getElementById("alert-band-count");
+        const LS = window.AuraLocalStore;
+
+        if (!lastAlertsData || lastAlertsData.length === 0) {
             alertsList.innerHTML = `<p class="empty-note">No risk thresholds breached in the current window.</p>`;
             if (bandCount) bandCount.textContent = "Nothing above threshold";
             return;
@@ -695,24 +704,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Rank by severity then score. The panel previously rendered whatever
         // order the feed happened to be in, which buried the worst item.
-        const ranked = [...alerts].sort((a, b) => {
+        const ranked = [...lastAlertsData].sort((a, b) => {
             const sev = x => (String(x.severity).toLowerCase() === "critical" ? 1 : 0);
             if (sev(a) !== sev(b)) return sev(b) - sev(a);
             return ((b.article && b.article.risk_score) || 0) - ((a.article && a.article.risk_score) || 0);
         });
 
-        const criticals = ranked.filter(a => String(a.severity).toLowerCase() === "critical").length;
+        // Split out per-device dismissals; prune ids whose alerts left the
+        // window so the stored set cannot grow forever.
+        let visible = ranked;
+        let dismissed = [];
+        if (LS) {
+            const ids = LS.pruneDismissed(LS.loadDismissed(), ranked);
+            LS.saveDismissed(ids);
+            const parts = LS.splitAlerts(ranked, ids);
+            visible = parts.visible;
+            dismissed = parts.dismissed;
+        }
+
+        const criticals = visible.filter(a => String(a.severity).toLowerCase() === "critical").length;
         if (bandCount) {
-            bandCount.textContent = criticals
-                ? `${criticals} critical · ${ranked.length} elevated`
-                : `${ranked.length} elevated`;
+            bandCount.textContent = visible.length === 0
+                ? `All ${ranked.length} dismissed`
+                : (criticals
+                    ? `${criticals} critical · ${visible.length} elevated`
+                    : `${visible.length} elevated`);
         }
 
         alertsList.innerHTML = "";
-        ranked.forEach((alert, idx) => {
+
+        const setDismissed = (alert, on) => {
+            const id = LS.alertId(alert);
+            const ids = LS.loadDismissed().filter(x => x !== id);
+            if (on) ids.push(id);
+            LS.saveDismissed(ids);
+            renderAlertsList();
+        };
+
+        const renderItem = (alert, idx, isDismissed) => {
             const item = document.createElement("div");
             const severity = String(alert.severity || "info").toLowerCase();
-            item.className = `alert-item ${severity}`;
+            item.className = `alert-item ${severity}${isDismissed ? " dismissed" : ""}`;
             item.style.setProperty("--stagger", Math.min(idx, 8));
 
             const when = new Date(alert.created_at);
@@ -739,6 +771,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 </span>
             `;
 
+            if (LS) {
+                const dismissBtn = document.createElement("button");
+                dismissBtn.type = "button";
+                dismissBtn.className = "alert-dismiss-btn";
+                dismissBtn.textContent = isDismissed ? "Restore" : "✕";
+                dismissBtn.title = isDismissed
+                    ? "Restore this alert"
+                    : "Dismiss this alert (saved only in this browser)";
+                dismissBtn.setAttribute("aria-label", dismissBtn.title);
+                dismissBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    setDismissed(alert, !isDismissed);
+                });
+                item.appendChild(dismissBtn);
+            }
+
             // Alerts sourced from articles open the full detail modal
             if (alert.article) {
                 item.classList.add("clickable");
@@ -753,7 +801,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
             alertsList.appendChild(item);
-        });
+        };
+
+        visible.forEach((alert, idx) => renderItem(alert, idx, false));
+        if (visible.length === 0 && !showDismissedAlerts) {
+            const note = document.createElement("p");
+            note.className = "empty-note";
+            note.textContent = `All ${dismissed.length} current alert${dismissed.length === 1 ? " is" : "s are"} dismissed on this device.`;
+            alertsList.appendChild(note);
+        }
+        if (showDismissedAlerts) {
+            dismissed.forEach((alert, idx) => renderItem(alert, visible.length + idx, true));
+        }
+
+        if (LS && dismissed.length > 0) {
+            const footer = document.createElement("div");
+            footer.className = "alert-dismiss-footer";
+            const toggle = document.createElement("button");
+            toggle.type = "button";
+            toggle.className = "btn btn-secondary alert-dismiss-toggle";
+            toggle.textContent = showDismissedAlerts
+                ? `Hide ${dismissed.length} dismissed`
+                : `${dismissed.length} dismissed — show`;
+            toggle.addEventListener("click", () => {
+                showDismissedAlerts = !showDismissedAlerts;
+                renderAlertsList();
+            });
+            footer.appendChild(toggle);
+            const note = document.createElement("span");
+            note.className = "alert-dismiss-note";
+            note.textContent = "Dismissals are saved only in this browser.";
+            footer.appendChild(note);
+            alertsList.appendChild(footer);
+        }
     }
 
     function renderMixChart(categories, risks) {
@@ -2905,6 +2985,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ==========================================
+    // WATCHLIST PANEL (Slice H)
+    // ==========================================
+
+    // Entities starred from dossier pages. Per-browser localStorage via
+    // AuraLocalStore; the panel header carries the "saved only in this
+    // browser" label, and the panel hides itself while the list is empty.
+    function renderWatchlistPanel() {
+        const panel = document.getElementById("watchlist-panel");
+        const body = document.getElementById("watchlist-body");
+        const LS = window.AuraLocalStore;
+        if (!panel || !body || !LS) return;
+
+        const state = LS.loadState();
+        if (!state.watchlist.length) {
+            panel.hidden = true;
+            body.innerHTML = "";
+            return;
+        }
+
+        panel.hidden = false;
+        body.innerHTML = state.watchlist.map(entry => `
+            <span class="watchlist-entry">
+                <a href="#/${esc(entry.type)}/${esc(entry.slug)}">${esc(entry.label)}</a>
+                <span class="watchlist-kind">${esc(entry.type)}</span>
+                <button type="button" class="watchlist-remove-btn" data-watch-type="${esc(entry.type)}"
+                        data-watch-slug="${esc(entry.slug)}" title="Remove from watchlist"
+                        aria-label="Remove ${esc(entry.label)} from watchlist">✕</button>
+            </span>
+        `).join("");
+
+        body.querySelectorAll(".watchlist-remove-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                LS.saveState(LS.toggleWatch(LS.loadState(), {
+                    type: btn.getAttribute("data-watch-type"),
+                    slug: btn.getAttribute("data-watch-slug")
+                }));
+                renderWatchlistPanel();
+            });
+        });
+    }
+
+    // Dossier pages fire this after a watch toggle.
+    document.addEventListener("aura:watchlist", renderWatchlistPanel);
+
+    // ==========================================
     // TEST SURFACE
     // ==========================================
 
@@ -2929,4 +3054,5 @@ document.addEventListener("DOMContentLoaded", () => {
     loadDashboardStats();
     loadNewsFeed();
     loadAnalyticsAndGraph();
+    renderWatchlistPanel();
 });
