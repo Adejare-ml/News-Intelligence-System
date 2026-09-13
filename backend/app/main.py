@@ -7,7 +7,7 @@ import os
 from backend.app.core.config import settings
 from backend.app.db.session import engine, SessionLocal
 from backend.app.db.base import Base
-from backend.app.api.routes import api_router
+from backend.app.api.routes import api_router, public_router
 from backend.app.models.user import User
 from backend.app.models.article import Article
 from backend.app.core.security import get_password_hash
@@ -76,8 +76,10 @@ async def add_security_headers(request, call_next):
         )
     return response
 
-# Include Router
+# Include Routers: the authenticated API surface, and the two-endpoint
+# unauthenticated surface (login + health) that makes it reachable.
 app.include_router(api_router, prefix=settings.API_V1_STR)
+app.include_router(public_router, prefix=settings.API_V1_STR)
 
 def init_db():
     """Initializes the database, enabling pgvector and generating seed data if empty."""
