@@ -1,0 +1,25 @@
+# Dependency set for the CI test job -- not for deployment.
+#
+# requirements.txt is the runtime list the scheduler installs; using it in CI
+# pulled the sentence-transformers -> torch (~2GB, CUDA wheels) embedding
+# stack plus the dormant Postgres/Celery/API-server stack, none of which any
+# test imports. nlp_pipeline.py, llm.py and excel_db.py already tolerate the
+# optional heavy imports being absent, and the suite is verified green
+# against exactly this list in a clean virtualenv.
+#
+# Keep pins in step with requirements.txt: when a pin changes there, change
+# it here. pytest itself is installed by the workflow, not listed here, for
+# the same reason it is not in requirements.txt.
+fastapi==0.111.0
+pydantic==2.7.4
+pydantic-settings==2.14.2
+feedparser==6.0.11
+beautifulsoup4==4.12.3
+pyjwt==2.13.0
+requests==2.33.0
+numpy==1.26.4
+pandas==2.2.2
+openpyxl==3.1.5
+openai>=1.55.3,<2
+# Typed extraction program and the GEPA optimiser (see requirements.txt).
+dspy==3.3.0
