@@ -22,6 +22,9 @@
 
     var DEG = Math.PI / 180;
 
+    // Paint cadence cap, matching backdrop.js.
+    var FRAME_MS = 1000 / 30;
+
     // Secrecy jurisdictions that recur in Nigerian beneficial-ownership chains.
     // Sourced from the intermediate-entity vehicles the PSC panel already
     // tracks (e.g. Tengen Holdings (Mauritius) Limited on Access Holdings).
@@ -41,6 +44,71 @@
         { label: "Lagos", lat: 6.52, lon: 3.38 },
         { label: "Abuja", lat: 9.06, lon: 7.49 }
     ];
+
+    /**
+     * Jurisdictions the arcs can point at, with the text markers that
+     * identify them inside a PSC record's "Intermediate Entities" cell.
+     * A superset of OFFSHORE_ROUTES: the static list is the fallback
+     * illustration, this catalog is what the live data can select from.
+     * Marker matching is lowercase substring, mirroring psc-core's
+     * R7_SECRECY_VEHICLE rule.
+     */
+    var JURISDICTION_CATALOG = [
+        { label: "Mauritius", lat: -20.35, lon: 57.55, markers: ["mauritius"] },
+        { label: "London", lat: 51.51, lon: -0.13, markers: ["london", "united kingdom"] },
+        { label: "Jersey", lat: 49.21, lon: -2.13, markers: ["jersey"] },
+        { label: "Cayman Islands", lat: 19.31, lon: -81.25, markers: ["cayman"] },
+        { label: "British Virgin Islands", lat: 18.42, lon: -64.64, markers: ["british virgin", "bvi", "tortola"] },
+        { label: "Dubai (DIFC)", lat: 25.20, lon: 55.27, markers: ["dubai", "difc", "united arab emirates"] },
+        { label: "Delaware", lat: 39.16, lon: -75.52, markers: ["delaware"] },
+        { label: "Singapore", lat: 1.35, lon: 103.82, markers: ["singapore"] },
+        { label: "Zurich", lat: 47.37, lon: 8.54, markers: ["zurich", "switzerland", "swiss", "geneva"] },
+        { label: "Panama", lat: 8.98, lon: -79.52, markers: ["panama"] },
+        { label: "Luxembourg", lat: 49.61, lon: 6.13, markers: ["luxembourg"] },
+        { label: "Cyprus", lat: 35.17, lon: 33.36, markers: ["cyprus", "nicosia"] },
+        { label: "Seychelles", lat: -4.68, lon: 55.49, markers: ["seychelles"] },
+        { label: "Bahamas", lat: 25.06, lon: -77.35, markers: ["bahamas", "nassau"] },
+        { label: "Bermuda", lat: 32.30, lon: -64.78, markers: ["bermuda"] },
+        { label: "Isle of Man", lat: 54.15, lon: -4.48, markers: ["isle of man"] },
+        { label: "Guernsey", lat: 49.45, lon: -2.54, markers: ["guernsey"] },
+        { label: "Gibraltar", lat: 36.14, lon: -5.35, markers: ["gibraltar"] }
+    ];
+
+    /**
+     * Derives the arc set from real PSC records: jurisdictions actually
+     * named in "Intermediate Entities", weighted by how many records name
+     * them, worst-offender first. Pure and DOM-free so the headless suite
+     * can pin it. Returns null when nothing matches -- the caller keeps
+     * the static illustration rather than showing an empty globe.
+     */
+    function routesFromRecords(records) {
+        var counts = {};
+        for (var r = 0; r < (records || []).length; r++) {
+            var text = String((records[r] || {})["Intermediate Entities"] || "").toLowerCase();
+            if (!text) continue;
+            for (var c = 0; c < JURISDICTION_CATALOG.length; c++) {
+                var entry = JURISDICTION_CATALOG[c];
+                for (var m = 0; m < entry.markers.length; m++) {
+                    if (text.indexOf(entry.markers[m]) !== -1) {
+                        counts[entry.label] = (counts[entry.label] || 0) + 1;
+                        break;
+                    }
+                }
+            }
+        }
+        var routes = [];
+        for (var i = 0; i < JURISDICTION_CATALOG.length; i++) {
+            var cat = JURISDICTION_CATALOG[i];
+            if (counts[cat.label]) {
+                routes.push({ label: cat.label, lat: cat.lat, lon: cat.lon, weight: counts[cat.label] });
+            }
+        }
+        if (!routes.length) return null;
+        routes.sort(function (a, b) {
+            return b.weight - a.weight || (a.label < b.label ? -1 : 1);
+        });
+        return routes;
+    }
 
     /** Unit vector on the sphere for a geographic coordinate. */
     function toVector(lat, lon) {
@@ -149,19 +217,29 @@
      * ports so the bundle does not all originate from a single point.
      */
     GlobeRenderer.prototype.buildArcs = function () {
+        var routes = (this.options.routes && this.options.routes.length)
+            ? this.options.routes : OFFSHORE_ROUTES;
         var arcs = [];
-        for (var i = 0; i < OFFSHORE_ROUTES.length; i++) {
+        for (var i = 0; i < routes.length; i++) {
             var origin = HOME_PORTS[i % HOME_PORTS.length];
-            var target = OFFSHORE_ROUTES[i];
+            var target = routes[i];
             arcs.push({
                 from: toVector(origin.lat, origin.lon),
                 to: toVector(target.lat, target.lon),
                 label: target.label,
+                weight: target.weight || 1,
                 // Staggered so pulses do not fire in lockstep.
-                phase: i / OFFSHORE_ROUTES.length
+                phase: i / routes.length
             });
         }
         return arcs;
+    };
+
+    /** Swap the arc set after mount (e.g. once real PSC data has loaded). */
+    GlobeRenderer.prototype.setRoutes = function (routes) {
+        this.options.routes = routes;
+        this.arcs = this.buildArcs();
+        this.render();
     };
 
     GlobeRenderer.prototype.resize = function () {
@@ -180,17 +258,15 @@
         this.render();
     };
 
-    /** Rotate about Y (spin), then about X (fixed tilt), then project. */
+    /** Rotate about Y (spin), then about X (fixed tilt), then project.
+     * The four trig values are hoisted into render(): they are constant
+     * within a frame, and this runs per vertex (~4700 dots plus arcs). */
     GlobeRenderer.prototype.project = function (v) {
-        var cosR = Math.cos(this.rotation);
-        var sinR = Math.sin(this.rotation);
-        var x = v.x * cosR + v.z * sinR;
-        var z = -v.x * sinR + v.z * cosR;
+        var x = v.x * this._cosR + v.z * this._sinR;
+        var z = -v.x * this._sinR + v.z * this._cosR;
 
-        var cosT = Math.cos(this.tilt);
-        var sinT = Math.sin(this.tilt);
-        var y = v.y * cosT - z * sinT;
-        var z2 = v.y * sinT + z * cosT;
+        var y = v.y * this._cosT - z * this._sinT;
+        var z2 = v.y * this._sinT + z * this._cosT;
 
         // Mild perspective: the near face reads slightly larger, which is what
         // sells the sphere as a solid rather than a flat disc of dots. Kept
@@ -207,6 +283,10 @@
     GlobeRenderer.prototype.render = function () {
         var ctx = this.ctx;
         if (!ctx || !this.width) return;
+        this._cosR = Math.cos(this.rotation);
+        this._sinR = Math.sin(this.rotation);
+        this._cosT = Math.cos(this.tilt);
+        this._sinT = Math.sin(this.tilt);
         ctx.clearRect(0, 0, this.width, this.height);
 
         this.drawDots(ctx);
@@ -300,7 +380,9 @@
                 else ctx.lineTo(points[i].sx, points[i].sy);
             }
             ctx.strokeStyle = "rgba(244, 114, 182, 0.30)";
-            ctx.lineWidth = 1;
+            // Weight (records naming this jurisdiction) thickens the route,
+            // capped so one dominant vehicle cannot flood the render.
+            ctx.lineWidth = Math.min(2.4, 0.8 + 0.4 * arc.weight);
             ctx.stroke();
 
             // A packet travelling the route. Direction encodes the flow of
@@ -338,18 +420,23 @@
 
     GlobeRenderer.prototype.tick = function (now) {
         if (!this.running) return;
+        this.frame = global.requestAnimationFrame(this.tick.bind(this));
+        // Capped at 30fps like backdrop.js: the slow-spinning dot sphere
+        // reads identically at 30 and 60, at half the paint cost.
+        if (now - this.lastPaint < FRAME_MS) return;
         var dt = this.lastTime ? Math.min((now - this.lastTime) / 1000, 0.05) : 0.016;
         this.lastTime = now;
+        this.lastPaint = now;
         this.elapsed += dt;
         this.rotation += this.speed * dt;
         this.render();
-        this.frame = global.requestAnimationFrame(this.tick.bind(this));
     };
 
     GlobeRenderer.prototype.start = function () {
         if (this.running) return;
         this.running = true;
         this.lastTime = 0;
+        this.lastPaint = 0;
         this.frame = global.requestAnimationFrame(this.tick.bind(this));
     };
 
@@ -398,20 +485,23 @@
             motionQuery.addEventListener("change", sync);
         }
 
+        var observer = null;
         if (typeof global.IntersectionObserver === "function") {
-            new global.IntersectionObserver(function (entries) {
+            observer = new global.IntersectionObserver(function (entries) {
                 onScreen = entries[0].isIntersecting;
                 sync();
-            }, { threshold: 0.01 }).observe(canvas);
+            }, { threshold: 0.01 });
+            observer.observe(canvas);
         }
 
         global.document.addEventListener("visibilitychange", sync);
 
         var resizeTimer = null;
-        global.addEventListener("resize", function () {
+        function onResize() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function () { renderer.resize(); }, 150);
-        });
+        }
+        global.addEventListener("resize", onResize);
 
         sync();
 
@@ -423,9 +513,26 @@
                 sync();
                 return userPaused;
             },
-            routes: OFFSHORE_ROUTES.slice()
+            routes: OFFSHORE_ROUTES.slice(),
+            // Router view swaps must be able to tear the globe down; without
+            // this, every listener and the rAF loop outlive the canvas.
+            destroy: function () {
+                renderer.stop();
+                if (typeof motionQuery.removeEventListener === "function") {
+                    motionQuery.removeEventListener("change", sync);
+                }
+                if (observer) observer.disconnect();
+                global.document.removeEventListener("visibilitychange", sync);
+                global.removeEventListener("resize", onResize);
+                clearTimeout(resizeTimer);
+            }
         };
     }
 
-    global.AuraGlobe = { mount: mount, routes: OFFSHORE_ROUTES.slice(), ports: HOME_PORTS.slice() };
+    global.AuraGlobe = {
+        mount: mount,
+        routes: OFFSHORE_ROUTES.slice(),
+        ports: HOME_PORTS.slice(),
+        routesFromRecords: routesFromRecords
+    };
 })(window);

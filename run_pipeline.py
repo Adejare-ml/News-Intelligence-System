@@ -25,7 +25,7 @@ logging.basicConfig(
 logger = logging.getLogger("run_pipeline")
 
 from backend.app.core.config import settings
-from backend.app.services.ingestion import NewsIngestionService
+from backend.app.services.ingestion import NewsIngestionService, parse_feed_date
 from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import relevance
 from backend.app.db.excel_db import db
@@ -67,7 +67,18 @@ SHARE_BANDS = (
 
 EVAL_CORPUS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "evals", "corpus")
 # One in this many analysed articles is kept as a candidate for labelling.
-EVAL_CAPTURE_RATE = int(os.environ.get("EVAL_CAPTURE_RATE", "10"))
+# Guarded: this runs at import time, so a malformed env var used to raise
+# ValueError before anything (including the FastAPI app importing this
+# module) could start.
+try:
+    EVAL_CAPTURE_RATE = int(os.environ.get("EVAL_CAPTURE_RATE", "10"))
+except ValueError:
+    EVAL_CAPTURE_RATE = 10
+
+# Below this, a capture is an RSS blurb rather than an article: unusable as
+# a labelling input (scripts/validate_gold.py enforces the same floor) and a
+# train/serve mismatch against the full bodies the gold set is built from.
+EVAL_MIN_ARTICLE_CHARS = 200
 
 
 def capture_eval_input(title: str, article_text: str, url: str, source: str) -> None:
@@ -81,10 +92,26 @@ def capture_eval_input(title: str, article_text: str, url: str, source: str) -> 
     if EVAL_CAPTURE_RATE <= 0:
         return
     try:
+        # Blurbs are not labellable articles: two months of live capture
+        # produced 245 records of which 82% were under the validator's
+        # 200-char floor, and every gold example so far had to come from
+        # the separately re-fetched backfill instead.
+        if len((article_text or "").strip()) < EVAL_MIN_ARTICLE_CHARS:
+            return
         if random.randint(1, EVAL_CAPTURE_RATE) != 1:
             return
         os.makedirs(EVAL_CORPUS_DIR, exist_ok=True)
         path = os.path.join(EVAL_CORPUS_DIR, f"{datetime.now().strftime('%Y%m')}.jsonl")
+        # One capture per URL per month file; per-candidate sampling had no
+        # memory and banked the same story twice.
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as fh:
+                for line in fh:
+                    try:
+                        if json.loads(line).get("url") == url:
+                            return
+                    except Exception:
+                        continue
         record = {
             "title": title,
             "article_text": article_text,
@@ -141,6 +168,7 @@ def main():
 
 def run_pipeline(seed: bool = False):
     logger.info("Initializing serverless pipeline run...")
+    run_started = datetime.now()
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # 1. Fetch Candidate Articles
@@ -166,7 +194,16 @@ def run_pipeline(seed: bool = False):
         existing_urls = {row.get("URL") for row in existing_articles if row.get("URL")}
     except Exception as e:
         logger.error(f"Failed to fetch existing articles for deduplication: {e}")
+        existing_articles = []
         existing_urls = set()
+
+    # Articles published by earlier runs today, reduced to what the sheet
+    # retains. The brief compiles over these plus this run's records, so the
+    # front page carries the day's intelligence rather than being overwritten
+    # by whichever run happened to go last -- the 23:00 run used to replace a
+    # rich morning edition with a one-article stub. Snapshot is pre-loop, so
+    # nothing added this run is double-counted.
+    prior_today = published_today(existing_articles)
         
     # --- REDUNDANCY BUFFER ---
     new_candidates = [item for item in candidates if item.get("url") not in existing_urls]
@@ -184,12 +221,17 @@ def run_pipeline(seed: bool = False):
             logger.info("Redundancy Buffer: No new articles found. Skipping LLM execution to save quota.")
             generated_message = "No significant change. Script was run at this specific time."
         db._append_row("Daily Reports", {
-            "Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            # Date-only, like the normal report path writes -- routes.py
+            # matches this column by exact string, and day_totals() keys on
+            # it. The run's time lives in the Generated text.
+            "Date": datetime.now().strftime("%Y-%m-%d"),
             "Total Articles": 0,
             "High Risk": 0,
             "Appointments": 0,
             "Procurement": 0,
-            "Generated": generated_message
+            "Cascade Failures": 0,
+            "Run Seconds": round((datetime.now() - run_started).total_seconds()),
+            "Generated": f"{generated_message} ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})"
         })
         return
         
@@ -213,13 +255,6 @@ def run_pipeline(seed: bool = False):
         # Clean text basic HTML strips
         from backend.app.services.nlp_pipeline import NLPPipelineService
         cleaned_text = NLPPipelineService.clean_html(text)
-
-        # Keep a sample of the extractor's *inputs*. Everything written to the
-        # sheet is model output -- Title, Summary, Category -- so there was no
-        # way to build a labelled set from the archive: the article body, which
-        # is the input the extractor is judged on, was discarded after analysis.
-        # Sampled rather than exhaustive because this is committed to the repo.
-        capture_eval_input(title, cleaned_text, url, source)
 
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
@@ -248,7 +283,10 @@ def run_pipeline(seed: bool = False):
         #    told to reject sport and celebrity stories and mostly does, but
         #    when it does not, the result is a football transfer published at
         #    risk 40 under category "Company". The guard overrides it.
-        off_topic = relevance.off_topic_reason(title, analysis.get("summary_executive"))
+        # "summary" is the key every producer in the cascade actually sets;
+        # "summary_executive" was never set by anything, so the guard was
+        # silently matching against the title alone.
+        off_topic = relevance.off_topic_reason(title, analysis.get("summary"))
         if not analysis.get("relevant", False) or off_topic:
             if off_topic:
                 logger.info(
@@ -257,7 +295,7 @@ def run_pipeline(seed: bool = False):
                 )
             else:
                 logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
-            db.add_article({
+            filtered_saved = db.add_article({
                 "ID": "",
                 "Time": item.get("published_at") or datetime.now().isoformat(),
                 "Title": title,
@@ -269,7 +307,10 @@ def run_pipeline(seed: bool = False):
                 "Status": "Filtered",
                 "Engine": analysis.get("engine", "")
             })
-            existing_urls.add(url)
+            # Only cache the URL when the prevention row actually persisted,
+            # so a failed write is retried instead of silently skipped.
+            if filtered_saved:
+                existing_urls.add(url)
             import time
             time.sleep(3.5)
             continue
@@ -298,6 +339,16 @@ def run_pipeline(seed: bool = False):
             continue
             
         new_articles_count += 1
+
+        # Keep a sample of the extractor's *inputs*. Everything written to the
+        # sheet is model output -- Title, Summary, Category -- so there was no
+        # way to build a labelled set from the archive: the article body, which
+        # is the input the extractor is judged on, was discarded after analysis.
+        # Sampled rather than exhaustive because this is committed to the repo.
+        # Sampled here, after the relevance and topic gates, so sport and
+        # celebrity rejects stop entering the gold-set candidate pool.
+        capture_eval_input(title, cleaned_text, url, source)
+
         run_records.append({
             "title": title,
             "source": source,
@@ -402,7 +453,11 @@ def run_pipeline(seed: bool = False):
 
     # 3. Compile and Write Daily Report Row
     if new_articles_count > 0 or seed:
-        compile_daily_report(run_records)
+        compile_daily_report(
+            run_records, prior_today,
+            cascade_failures=cascade_failures,
+            run_seconds=round((datetime.now() - run_started).total_seconds()),
+        )
 
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
     export_static_json_database()
@@ -417,18 +472,214 @@ def run_pipeline(seed: bool = False):
 
     return {"status": "success", "processed": new_articles_count}
 
-def compile_daily_report(records: List[Dict[str, Any]]):
-    """Compiles statistics and writes the daily intelligence summary markdown."""
+def published_today(article_rows: List[Dict[str, Any]], today=None) -> List[Dict[str, Any]]:
+    """Reduce today's already-published Articles rows to report-record shape.
+
+    The sheet keeps Title/Source/URL/Category/Risk Score/Summary but not the
+    full analysis, so these records carry what a brief needs and nothing that
+    would have to be invented. The Time cell arrives in three formats (RFC
+    2822, ISO with Z, plain ISO); parse_feed_date already reads all of them.
+    """
+    today = today or datetime.now().date()
+    reduced = []
+    for row in article_rows or []:
+        stamp = parse_feed_date(row.get("Time"))
+        if stamp is None or stamp.date() != today:
+            continue
+        try:
+            score = float(str(row.get("Risk Score", "")).strip() or 0)
+        except (TypeError, ValueError):
+            score = 0.0
+        reduced.append({
+            "title": row.get("Title"),
+            "source": row.get("Source"),
+            "url": row.get("URL"),
+            "analysis": {
+                "summary": row.get("Summary") or "",
+                "category": row.get("Category") or "",
+                "risk_score": score,
+                # The sheet keeps only the numeric score; >=70 mirrors the
+                # dashboard's own critical-alert threshold (app.js).
+                "risk_level": "High" if score >= 70 else "Standard",
+            },
+        })
+    return reduced
+
+
+def _int_cell(value: Any) -> int:
+    """Sheet cells come back as int, float, or string; NaN/blank count as 0."""
+    try:
+        return int(float(str(value).strip() or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def day_totals(report_rows: List[Dict[str, Any]], today_str: str) -> Dict[str, int]:
+    """Sum today's earlier per-run Daily Reports rows.
+
+    Each run writes a per-run row (that stays per-run -- it is the time
+    series), so the exact day-to-date totals are the sum of today's rows
+    plus the current run. Date is compared on its first 10 chars because a
+    historical branch wrote full timestamps into the Date column.
+    """
+    totals = {"Total Articles": 0, "High Risk": 0, "Appointments": 0, "Procurement": 0}
+    for row in report_rows or []:
+        if str(row.get("Date", "")).strip()[:10] != today_str:
+            continue
+        for key in totals:
+            totals[key] += _int_cell(row.get(key))
+    return totals
+
+
+def report_payload(records: List[Dict[str, Any]], summary_limit: int = 400) -> List[Dict[str, Any]]:
+    """Shape records for the report prompt, truncating long summaries.
+
+    A 60-article day would otherwise serialize every full summary into the
+    prompt; past ~400 chars a summary stops adding signal and starts
+    crowding out other articles' context.
+    """
+    payload = []
+    for r in records or []:
+        analysis = dict(r.get("analysis") or {})
+        summary = analysis.get("summary")
+        if isinstance(summary, str) and len(summary) > summary_limit:
+            analysis["summary"] = summary[:summary_limit].rstrip() + "..."
+        payload.append({
+            "title": r.get("title"),
+            "source": r.get("source"),
+            "url": r.get("url"),
+            "analysis": analysis,
+        })
+    return payload
+
+
+def _loose_number(value):
+    """Loose numeric parse for sheet cells: '12.5%', '12,5', 40 -> float, else None."""
+    s = str(value if value is not None else "").strip().replace("%", "").replace(",", "")
+    if not s:
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def compute_cycle_changes(prev: Dict[str, Any], curr: Dict[str, Any]) -> Dict[str, Any]:
+    """Pure diff between the previous static-JSON snapshot and this run's.
+
+    `prev`/`curr` carry the exported row lists under "articles", "companies",
+    "people" and "psc"; missing keys and a missing prev (first run, an old
+    deploy) mean empty. Entities key on their name columns, PSC rows on
+    (Person Name, Company), articles on URL. Everything returned is sorted
+    so the payload is deterministic for a given pair of snapshots.
+    """
+    prev = prev or {}
+    curr = curr or {}
+
+    def names(rows, key):
+        return {str(r.get(key, "")).strip() for r in rows or [] if str(r.get(key, "")).strip()}
+
+    new_companies = sorted(names(curr.get("companies"), "Company") - names(prev.get("companies"), "Company"))
+    new_people = sorted(names(curr.get("people"), "Name") - names(prev.get("people"), "Name"))
+
+    def psc_key(row):
+        return (str(row.get("Person Name", "")).strip().lower(),
+                str(row.get("Company", "")).strip().lower())
+
+    def psc_entry(row):
+        return {"person": str(row.get("Person Name", "")).strip(),
+                "company": str(row.get("Company", "")).strip()}
+
+    prev_psc = {psc_key(r): r for r in prev.get("psc") or [] if any(psc_key(r))}
+    curr_psc = {psc_key(r): r for r in curr.get("psc") or [] if any(psc_key(r))}
+
+    psc_added = [psc_entry(r) for k, r in sorted(curr_psc.items()) if k not in prev_psc]
+    psc_removed = [psc_entry(r) for k, r in sorted(prev_psc.items()) if k not in curr_psc]
+    psc_changed = []
+    for k, r in sorted(curr_psc.items()):
+        if k not in prev_psc:
+            continue
+        before = _loose_number(prev_psc[k].get("Percentage"))
+        after = _loose_number(r.get("Percentage"))
+        if before is not None and after is not None and abs(before - after) > 1e-9:
+            entry = psc_entry(r)
+            entry["from"] = before
+            entry["to"] = after
+            psc_changed.append(entry)
+
+    prev_urls = {str(r.get("URL", "")) for r in prev.get("articles") or [] if r.get("URL")}
+    new_high_risk = []
+    for r in curr.get("articles") or []:
+        url = str(r.get("URL", ""))
+        if url and url in prev_urls:
+            continue
+        score = _loose_number(r.get("Risk Score"))
+        # 70 mirrors the dashboard's alert threshold (app.js).
+        if score is not None and score >= 70:
+            new_high_risk.append({"title": str(r.get("Title", "")), "url": url, "risk": score})
+    new_high_risk.sort(key=lambda e: (-e["risk"], e["title"]))
+
+    return {
+        "new_companies": new_companies,
+        "new_people": new_people,
+        "psc_added": psc_added,
+        "psc_removed": psc_removed,
+        "psc_changed": psc_changed,
+        "new_high_risk": new_high_risk,
+        "counts": {
+            "new_companies": len(new_companies),
+            "new_people": len(new_people),
+            "psc_added": len(psc_added),
+            "psc_removed": len(psc_removed),
+            "psc_changed": len(psc_changed),
+            "new_high_risk": len(new_high_risk),
+        },
+    }
+
+
+def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None,
+                         cascade_failures: int = 0, run_seconds: int = None):
+    """Compiles statistics and writes the daily intelligence summary markdown.
+
+    `records` is this run's fully-analysed output; `prior_today` is the
+    reduced form of articles earlier runs published today. The markdown brief
+    and its headline statistics cover the whole day; the Daily Reports row
+    written at the end stays strictly per-run, because day totals are
+    computed by summing those rows. `cascade_failures` and `run_seconds`
+    are persisted on that row as the pipeline-health time series.
+    """
     now = datetime.now()
-    
+    prior_today = prior_today or []
+
     total = len(records)
     high_risk_count = sum(1 for r in records if r["analysis"].get("risk_level") in ["High", "Critical"])
     appointments_count = sum(1 for r in records if r["analysis"].get("event_type") == "Appointment")
     procurement_count = sum(1 for r in records if r["analysis"].get("event_type") == "Procurement" or r["analysis"].get("procurement"))
-    
+
+    # Day-to-date = today's earlier per-run rows + this run.
+    try:
+        earlier_rows = db.get_daily_reports()
+    except Exception as exc:
+        logger.error(f"Could not read earlier Daily Reports rows for day totals: {exc}")
+        earlier_rows = []
+    today_str = now.strftime("%Y-%m-%d")
+    day = day_totals(earlier_rows, today_str)
+    runs_today = 1 + sum(1 for row in earlier_rows if str(row.get("Date", "")).strip()[:10] == today_str)
+    day_total = day["Total Articles"] + total
+    day_high = day["High Risk"] + high_risk_count
+    day_appointments = day["Appointments"] + appointments_count
+    day_procurement = day["Procurement"] + procurement_count
+
     logger.info("Calling LLM API (Gemini -> NVIDIA -> Ollama -> OpenAI) to compile rich markdown summary report...")
-    # Convert records to JSON string for LLM
-    raw_json_str = json.dumps(records, default=str)
+    # The model sees the whole day -- this run's full analyses plus the
+    # reduced records of what earlier runs already published -- wrapped with
+    # the date and coverage window the prompt declares authoritative.
+    day_records = records + prior_today
+    raw_json_str = json.dumps({
+        "report_date": today_str,
+        "coverage": f"All articles published on {today_str} up to {now.strftime('%H:%M')} (run {runs_today} of the day)",
+        "articles": report_payload(day_records),
+    }, default=str)
 
     try:
         generated_md, report_engine = LLMService.generate_daily_report(raw_json_str)
@@ -439,27 +690,32 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         logger.warning("All report providers failed. ALLOW_HEURISTIC_FALLBACK is on; writing deterministic rule-based report.")
         generated_md, report_engine = "", "rule-based"
 
-    if generated_md:
-        md = f"""# PSC & Company Daily Intelligence Report
+    # The header reports the day, not the run: this file is the site's front
+    # page, and per-run numbers made the last run of the day (often the
+    # smallest) look like the whole day's coverage.
+    header = f"""# PSC & Company Daily Intelligence Report
 **Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC+1)
-**Run Window:** Daily Crawler Exec
+**Run Window:** {today_str}, all runs to {now.strftime('%H:%M')} (run {runs_today} of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** {total}
-- **High Risk Signals:** {high_risk_count}
-- **Appointments Logged:** {appointments_count}
-- **Procurement Awards:** {procurement_count}
+- **Total Articles Processed:** {day_total}
+- **High Risk Signals:** {day_high}
+- **Appointments Logged:** {day_appointments}
+- **Procurement Awards:** {day_procurement}
 
 ---
+"""
 
+    if generated_md:
+        md = f"""{header}
 {generated_md}
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: {report_engine}).*"""
     else:
         # Fallback to deterministic rule-based executive summary report if Gemini API is offline/rate-limited
-        high_risk_items = [r for r in records if r.get("analysis", {}).get("risk_level") in ["High", "Critical"]]
-        key_items = [r for r in records if r.get("analysis", {}).get("risk_level") not in ["High", "Critical"]][:8]
+        high_risk_items = [r for r in day_records if r.get("analysis", {}).get("risk_level") in ["High", "Critical"]]
+        key_items = [r for r in day_records if r.get("analysis", {}).get("risk_level") not in ["High", "Critical"]][:8]
         appointments = [r for r in records if r.get("analysis", {}).get("event_type") == "Appointment"]
         procurement = [r for r in records if r.get("analysis", {}).get("event_type") == "Procurement" or r.get("analysis", {}).get("procurement")]
         
@@ -490,18 +746,7 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         if not proc_lines:
             proc_lines.append("*   *No new public procurement or executive board changes logged in this window.*")
 
-        md = f"""# PSC & Company Daily Intelligence Report
-**Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC+1)
-**Run Window:** Daily Crawler Exec
-
-## Summary Statistics
-- **Total Articles Processed:** {total}
-- **High Risk Signals:** {high_risk_count}
-- **Appointments Logged:** {appointments_count}
-- **Procurement Awards:** {procurement_count}
-
----
-
+        md = f"""{header}
 ### Key Developments
 
 {chr(10).join(key_dev_lines)}
@@ -537,12 +782,29 @@ def compile_daily_report(records: List[Dict[str, Any]]):
         f.write(md)
     logger.info(f"Wrote archived report markdown to {archive_path}")
 
+    # Retention: keep the newest 180 editions (~45 days at 4 runs/day).
+    # Nothing pruned these; the directory was 167 files and climbing four a
+    # day, all committed to the repo on every run. Filenames sort
+    # chronologically (report_YYYYMMDD[_HHMMSS].md), and the auto-commit
+    # step picks up deletions under its file pattern.
+    try:
+        editions = sorted(f for f in os.listdir(archive_dir)
+                          if f.startswith("report_") and f.endswith(".md"))
+        for stale in editions[:-180]:
+            os.remove(os.path.join(archive_dir, stale))
+        if len(editions) > 180:
+            logger.info(f"Archive retention removed {len(editions) - 180} edition(s) older than the newest 180.")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Archive retention sweep failed: {exc}")
+
     db.add_daily_report({
         "Date": now.strftime("%Y-%m-%d"),
         "Total Articles": total,
         "High Risk": high_risk_count,
         "Appointments": appointments_count,
         "Procurement": procurement_count,
+        "Cascade Failures": cascade_failures,
+        "Run Seconds": "" if run_seconds is None else run_seconds,
         "Generated": now.strftime("%Y-%m-%d %H:%M:%S"),
         # The exact archive filename, so a reader can resolve an edition to
         # its document instead of guessing from the date.
@@ -554,6 +816,68 @@ def make_node_id(text: str) -> str:
     """Returns a deterministic string ID for graph nodes."""
     import hashlib
     return hashlib.md5((text or "").strip().lower().encode("utf-8")).hexdigest()[:12]
+
+
+def slim_report_rows(reports: List[Dict[str, Any]], keep: int = 120) -> List[Dict[str, Any]]:
+    """Rows for reports.json: the newest `keep`, inline markdown stripped
+    where the identical bytes already exist as an archive file.
+
+    The exported file had grown to ~570KB of which 90% was the Content
+    column -- fetched on every dashboard load, growing ~3.4MB/year, while
+    data/archives/ holds the same markdown per edition. Legacy rows that
+    predate the Archive File column keep their inline Content, since it is
+    the only copy.
+    """
+    out = []
+    for row in (reports or [])[-keep:]:
+        r = dict(row)
+        if str(r.get("Archive File", "")).strip():
+            r["Content"] = ""
+        out.append(r)
+    return out
+
+
+def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
+                       count_key: str = None) -> List[Dict[str, Any]]:
+    """Case-insensitive dedupe of exported entity rows.
+
+    The Companies sheet holds e.g. eight copies of one outlet and People
+    734 rows for 627 distinct (name, organization) pairs -- legacy rows
+    written before add_company's find-or-update existed. First occurrence
+    keeps its position; when `count_key` is given the highest count wins,
+    otherwise the latest duplicate (the freshest row) does.
+    """
+    best: Dict[Any, Dict[str, Any]] = {}
+    order: List[Any] = []
+    for row in rows or []:
+        key = tuple(str(row.get(f, "")).strip().lower() for f in key_fields)
+        if not any(key):
+            continue
+        if key not in best:
+            best[key] = row
+            order.append(key)
+        elif count_key:
+            if _int_cell(row.get(count_key)) > _int_cell(best[key].get(count_key)):
+                best[key] = row
+        else:
+            best[key] = row
+    return [best[k] for k in order]
+
+
+def top_rows(rows: List[Dict[str, Any]], n: int, count_key: str = None,
+             date_key: str = None) -> List[Dict[str, Any]]:
+    """The N rows most worth graphing, instead of the first N inserted.
+
+    The graph slices used to take `companies[:20]` etc. over sheets in
+    insertion order -- a fixed window onto the oldest records. Sorts by
+    mention count (when given) then date string (ISO-ish, so lexical works),
+    both descending; stable, so ties keep sheet order.
+    """
+    def sort_key(row):
+        count = _int_cell(row.get(count_key)) if count_key else 0
+        date = str(row.get(date_key, "")) if date_key else ""
+        return (count, date)
+    return sorted(rows or [], key=sort_key, reverse=True)[:n]
 
 def export_static_json_database():
     """Generates the static JSON files read by index.html / app.js."""
@@ -633,13 +957,73 @@ def export_static_json_database():
     # table had accumulated "Premier League", "Serie A", "BBNaija" and
     # "FIFA World Cup" as tracked corporate entities, and they flowed into the
     # knowledge graph as company and agency nodes.
-    companies = [c for c in companies if not relevance.is_off_topic(c.get("Company"))]
-    agencies = [a for a in agencies if not relevance.is_off_topic(a.get("Agency"))]
+    # is_publication_or_furniture runs here as well as at ingestion: the
+    # ~1,100 legacy company rows written before that guard existed still
+    # carry outlets ("The Guardian Nigeria News", literal "Archives" chrome)
+    # and sailed into companies.json and the graph as tracked entities.
+    companies = [
+        c for c in companies
+        if not relevance.is_off_topic(c.get("Company"))
+        and not is_publication_or_furniture(c.get("Company"))
+    ]
+    agencies = [
+        a for a in agencies
+        if not relevance.is_off_topic(a.get("Agency"))
+        and not is_publication_or_furniture(a.get("Agency"))
+    ]
     people = [
         p for p in people
         if not relevance.is_off_topic(p.get("Organization"))
         and not relevance.is_off_topic(p.get("Name"))
+        and not is_publication_or_furniture(p.get("Organization"))
     ]
+    # Procurement and PSC rows feed the same graph and their own exports,
+    # and were never filtered at all.
+    procurement = [
+        row for row in procurement
+        if not relevance.is_off_topic(row.get("Agency"))
+        and not relevance.is_off_topic(row.get("Contractor"))
+        and not is_publication_or_furniture(row.get("Contractor"))
+    ]
+    psc_records = [
+        row for row in psc_records
+        if not is_publication_or_furniture(row.get("Company"))
+        and not is_publication_or_furniture(row.get("Person Name"))
+    ]
+
+    # Legacy duplicate rows collapse at export (the sheet keeps its audit
+    # trail): one row per company, one per (person, organization).
+    companies = dedupe_entity_rows(companies, ["Company"], count_key="Mention Count")
+    people = dedupe_entity_rows(people, ["Name", "Organization"])
+
+    # "What changed this cycle": diff against the snapshots the previous run
+    # left on disk, before they are overwritten below. A missing or
+    # unreadable file (first run, fresh checkout) diffs as empty, so the
+    # first changes.json simply reports everything as new.
+    def _prev_snapshot(name):
+        try:
+            with open(os.path.join(DATA_DIR, name), encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return []
+
+    changes = compute_cycle_changes(
+        {
+            "articles": _prev_snapshot("latest.json"),
+            "companies": _prev_snapshot("companies.json"),
+            "people": _prev_snapshot("people.json"),
+            "psc": _prev_snapshot("significant_control.json"),
+        },
+        {
+            "articles": articles_sorted,
+            "companies": companies,
+            "people": people,
+            "psc": psc_records,
+        },
+    )
+    changes["generated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(os.path.join(DATA_DIR, "changes.json"), "w", encoding="utf-8") as f:
+        json.dump(changes, f, default=str, indent=2)
 
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
@@ -658,7 +1042,7 @@ def export_static_json_database():
         json.dump(psc_records, f, default=str, indent=2)
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
-        json.dump(reports, f, default=str, indent=2)
+        json.dump(slim_report_rows(reports), f, default=str, indent=2)
 
     # 3. Generate Knowledge Graph nodes and edges (Deterministic IDs)
     nodes = []
@@ -666,11 +1050,12 @@ def export_static_json_database():
     node_keys = set()
     edge_keys = set()
     
-    # Generate nodes from companies
-    for row in companies[:20]:
+    # Slices are worth-ranked (see top_rows); [:20] over insertion order
+    # was a fixed window onto the oldest sheet rows.
+    for row in top_rows(companies, 20, count_key="Mention Count", date_key="Last Seen"):
         name = row.get("Company", "").strip()
-        if name and name not in node_keys:
-            node_keys.add(name)
+        if name and make_node_id(name) not in node_keys:
+            node_keys.add(make_node_id(name))
             nodes.append({
                 "id": make_node_id(name),
                 "label": name,
@@ -679,10 +1064,10 @@ def export_static_json_database():
             })
             
     # Generate nodes from agencies
-    for row in agencies[:20]:
+    for row in top_rows(agencies, 20, date_key="Date"):
         name = row.get("Agency", "").strip()
-        if name and name not in node_keys:
-            node_keys.add(name)
+        if name and make_node_id(name) not in node_keys:
+            node_keys.add(make_node_id(name))
             nodes.append({
                 "id": make_node_id(name),
                 "label": name,
@@ -691,14 +1076,14 @@ def export_static_json_database():
             })
             
     # Generate nodes and edges from People changes
-    for row in people[:25]:
+    for row in top_rows(people, 25, date_key="Date"):
         person_name = row.get("Name", "").strip()
         org_name = row.get("Organization", "").strip()
         pos = row.get("Position", "Executive")
         
         if person_name:
-            if person_name not in node_keys:
-                node_keys.add(person_name)
+            if make_node_id(person_name) not in node_keys:
+                node_keys.add(make_node_id(person_name))
                 nodes.append({
                     "id": make_node_id(person_name),
                     "label": person_name,
@@ -708,8 +1093,8 @@ def export_static_json_database():
             
             # Connect Person to Organization
             if org_name:
-                if org_name not in node_keys:
-                    node_keys.add(org_name)
+                if make_node_id(org_name) not in node_keys:
+                    node_keys.add(make_node_id(org_name))
                     nodes.append({
                         "id": make_node_id(org_name),
                         "label": org_name,
@@ -718,8 +1103,8 @@ def export_static_json_database():
                     })
                 
                 edge_key = f"{person_name}-{org_name}-works"
-                if edge_key not in edge_keys:
-                    edge_keys.add(edge_key)
+                if make_node_id(edge_key) not in edge_keys:
+                    edge_keys.add(make_node_id(edge_key))
                     edges.append({
                         "id": make_node_id(edge_key),
                         "from": make_node_id(person_name),
@@ -728,23 +1113,23 @@ def export_static_json_database():
                     })
 
     # Generate nodes & edges from Persons with Significant Control (PSC)
-    for row in psc_records[:20]:
+    for row in top_rows(psc_records, 20, date_key="Date"):
         person_name = row.get("Person Name", "").strip()
         comp_name = row.get("Company", "").strip()
         ctrl = row.get("Nature of Control", "Significant Control")
         pct = row.get("Percentage", "")
         
         if person_name and comp_name:
-            if person_name not in node_keys:
-                node_keys.add(person_name)
+            if make_node_id(person_name) not in node_keys:
+                node_keys.add(make_node_id(person_name))
                 nodes.append({
                     "id": make_node_id(person_name),
                     "label": person_name,
                     "type": "psc",
                     "risk": "High"
                 })
-            if comp_name not in node_keys:
-                node_keys.add(comp_name)
+            if make_node_id(comp_name) not in node_keys:
+                node_keys.add(make_node_id(comp_name))
                 nodes.append({
                     "id": make_node_id(comp_name),
                     "label": comp_name,
@@ -753,8 +1138,8 @@ def export_static_json_database():
                 })
                 
             edge_key = f"{person_name}-{comp_name}-psc"
-            if edge_key not in edge_keys:
-                edge_keys.add(edge_key)
+            if make_node_id(edge_key) not in edge_keys:
+                edge_keys.add(make_node_id(edge_key))
                 lbl = f"PSC: {pct}" if pct else ctrl
                 edges.append({
                     "id": make_node_id(edge_key),
@@ -764,22 +1149,24 @@ def export_static_json_database():
                 })
 
     # Generate edges from Procurement
-    for row in procurement[:20]:
+    # No date column on Procurement; rows append chronologically, so the
+    # newest are at the end.
+    for row in list(reversed(procurement))[:20]:
         agency = row.get("Agency", "").strip()
         contractor = row.get("Contractor", "").strip()
         proj = row.get("Project", "Contract").strip()
         
         if agency and contractor:
-            if agency not in node_keys:
-                node_keys.add(agency)
+            if make_node_id(agency) not in node_keys:
+                node_keys.add(make_node_id(agency))
                 nodes.append({"id": make_node_id(agency), "label": agency, "type": "agency", "risk": "Low"})
-            if contractor not in node_keys:
-                node_keys.add(contractor)
+            if make_node_id(contractor) not in node_keys:
+                node_keys.add(make_node_id(contractor))
                 nodes.append({"id": make_node_id(contractor), "label": contractor, "type": "company", "risk": "Low"})
                 
             edge_key = f"{contractor}-{agency}-contract"
-            if edge_key not in edge_keys:
-                edge_keys.add(edge_key)
+            if make_node_id(edge_key) not in edge_keys:
+                edge_keys.add(make_node_id(edge_key))
                 edges.append({
                     "id": make_node_id(edge_key),
                     "from": make_node_id(contractor),

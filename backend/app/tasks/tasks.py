@@ -6,6 +6,7 @@ from backend.app.services.entity_resolution import EntityResolutionService
 from backend.app.models.article import Article
 from backend.app.models.event import Event
 from backend.app.models.alert import Alert
+from backend.app.services.relevance import organization_candidates
 from datetime import datetime
 import logging
 
@@ -139,9 +140,7 @@ def process_article_task(art_data: dict):
             ent = EntityResolutionService.resolve_entity(db, p, "person")
             if ent:
                 resolved_entities.append(ent)
-        for o in entities["organizations"]:
-            # Guessing company vs agency based on common acronyms / government keywords
-            ent_type = "agency" if any(kw in o.lower() for kw in ["commission", "department", "ministry", "federal"]) else "company"
+        for o, ent_type in organization_candidates(entities["organizations"]):
             ent = EntityResolutionService.resolve_entity(db, o, ent_type)
             if ent:
                 resolved_entities.append(ent)

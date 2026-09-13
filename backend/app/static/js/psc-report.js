@@ -17,12 +17,36 @@
     var MD = global.AuraReportMarkdown;
     var Motion = global.AuraMotion;
 
-    var isStatic = global.location.hostname.indexOf("github.io") !== -1
-        || global.location.protocol === "file:"
-        || global.location.search.indexOf("static=1") !== -1;
-    var DATA = isStatic ? "data" : "/api/v1";
+    // Static by default, like app.js: only the README's local uvicorn flow
+    // serves /api/v1, so only dev hosts point at it. ?static=1 forces
+    // static mode even there.
+    var devHost = global.location.hostname === "localhost"
+        || global.location.hostname.indexOf("127.") === 0;
+    var DATA = (devHost && global.location.search.indexOf("static=1") === -1)
+        ? "/api/v1" : "data";
 
-    var state = { records: [], summary: null, reports: [], filter: "all", query: "" };
+    // revealedOnce: the entrance animation belongs to the first paint only.
+    // Re-renders (filter clicks, search keystrokes) inject fresh [data-reveal]
+    // cards that no observer is watching -- without this flag they stayed at
+    // opacity 0 forever and filtering blanked the register for every visitor
+    // without prefers-reduced-motion.
+    var state = { records: [], summary: null, reports: [], filter: "all", query: "", revealedOnce: false };
+
+    // The globe mounts before the register data arrives; loadRegister swaps
+    // its illustrative arc set for the jurisdictions the data actually
+    // names, so the handle outlives bootVisuals().
+    var globeHandle = null;
+
+    function updateGlobeCaption(routes, derived) {
+        var detail = el("globe-caption-detail");
+        if (!detail || !routes || !routes.length) return;
+        detail.textContent = routes.length
+            + (derived
+                ? " secrecy jurisdictions named in the current register — including "
+                : " secrecy jurisdictions that recur in Nigerian ownership chains — including ")
+            + routes.slice(0, 3).map(function (r) { return r.label; }).join(", ")
+            + ".";
+    }
 
     function el(id) { return doc.getElementById(id); }
 
@@ -62,16 +86,11 @@
             // the globe reads as a static image.
             globe = global.AuraGlobe.mount(globeCanvas, { speed: 0.25, tilt: 18 });
             if (globe) {
+                globeHandle = globe;
                 handles.push({
                     pause: function (p) { if (globe.isPaused() !== p) globe.toggle(); }
                 });
-                var detail = el("globe-caption-detail");
-                if (detail) {
-                    detail.textContent = globe.routes.length
-                        + " secrecy jurisdictions that recur in Nigerian ownership chains — including "
-                        + globe.routes.slice(0, 3).map(function (r) { return r.label; }).join(", ")
-                        + ".";
-                }
+                updateGlobeCaption(globe.routes, false);
             }
         }
 
@@ -351,31 +370,48 @@
         return hay.indexOf(state.query) !== -1;
     }
 
+    /**
+     * The register as the reader currently sees it: filter, search and the
+     * worst-first ordering applied. One definition, shared by the list
+     * renderer and both exporters -- exporting `state.records` while the
+     * user is looking at a filtered view silently hands them different data
+     * than the screen shows.
+     */
+    function visibleItems() {
+        if (!state.summary) return [];
+        return state.summary.annotated
+            .filter(function (i) { return matchesFilter(i) && matchesQuery(i); })
+            .slice()
+            // Worst first: a compliance reader wants the exceptions, not an
+            // alphabetical list.
+            .sort(function (a, b) {
+                var ha = a.flags.filter(function (f) { return f.severity === "high"; }).length;
+                var hb = b.flags.filter(function (f) { return f.severity === "high"; }).length;
+                if (ha !== hb) return hb - ha;
+                return b.flags.length - a.flags.length;
+            });
+    }
+
     function renderRegisterList() {
         var host = el("register-list");
         if (!host || !state.summary) return;
 
-        var items = state.summary.annotated.filter(function (i) {
-            return matchesFilter(i) && matchesQuery(i);
-        });
+        var items = visibleItems();
 
         if (!items.length) {
             host.innerHTML = '<p class="empty-note">No control records match this filter.</p>';
             return;
         }
 
-        // Worst first: a compliance reader wants the exceptions, not an
-        // alphabetical list.
-        items = items.slice().sort(function (a, b) {
-            var ha = a.flags.filter(function (f) { return f.severity === "high"; }).length;
-            var hb = b.flags.filter(function (f) { return f.severity === "high"; }).length;
-            if (ha !== hb) return hb - ha;
-            return b.flags.length - a.flags.length;
-        });
-
         host.innerHTML = items.map(function (item, idx) {
             return renderRegisterCard(item, idx);
         }).join("");
+
+        // Re-rendered cards appear in an already-visible region, so they get
+        // no scroll choreography: reveal them immediately. Only the first
+        // paint (before init() wires the IntersectionObserver) leaves them
+        // for initReveals.
+        if (Motion && state.revealedOnce) Motion.revealAll(host);
 
         host.querySelectorAll("[data-dossier]").forEach(function (btn) {
             btn.addEventListener("click", function () {
@@ -453,6 +489,18 @@
                 state.records = Array.isArray(records) ? records : [];
                 state.summary = PSC.summarise(state.records);
 
+                // Data-driven arcs: point the globe at the jurisdictions the
+                // register actually names. No match keeps the static
+                // illustration rather than blanking the globe.
+                if (globeHandle && globeHandle.renderer && global.AuraGlobe
+                        && typeof global.AuraGlobe.routesFromRecords === "function") {
+                    var derived = global.AuraGlobe.routesFromRecords(state.records);
+                    if (derived) {
+                        globeHandle.renderer.setRoutes(derived);
+                        updateGlobeCaption(derived, true);
+                    }
+                }
+
                 var banner = el("register-demo-banner");
                 if (banner) banner.hidden = !state.summary.isDemo;
 
@@ -487,19 +535,40 @@
                     .slice()
                     .sort(function (a, b) { return String(b.Generated || "").localeCompare(String(a.Generated || "")); })
                     .forEach(function (r) {
-                        // Only offer editions whose text we actually hold.
-                        // Offering the rest and then silently rendering today's
-                        // brief instead is worse than not offering them.
-                        if (!String(r.Content || "").trim()) return;
+                        // Editions are offered when their text is resolvable:
+                        // inline Content, or an Archive File deployed under
+                        // data/archives/ and fetched on selection. Rows with
+                        // neither are skipped -- offering them and silently
+                        // rendering today's brief instead is worse.
                         var label = r.Generated || r.Date || "Edition";
-                        options.push('<option value="' + esc(label) + '">' + esc(label) + "</option>");
+                        var file = String(r["Archive File"] || "").trim();
+                        var value;
+                        if (String(r.Content || "").trim()) {
+                            value = "gen:" + label;
+                        } else if (/^[\w.-]+\.md$/.test(file)) {
+                            // Filename shape is validated so a corrupted sheet
+                            // cell can never turn into a path traversal.
+                            value = "file:" + file;
+                        } else {
+                            return;
+                        }
+                        options.push('<option value="' + esc(value) + '">' + esc(label) + "</option>");
                     });
                 select.innerHTML = options.join("");
 
                 select.addEventListener("change", function () {
                     if (select.value === "latest") { loadBrief(); return; }
+                    if (select.value.indexOf("file:") === 0) {
+                        var file = select.value.slice(5);
+                        fetch(DATA + "/archives/" + encodeURIComponent(file))
+                            .then(function (res) { return res.ok ? res.text() : ""; })
+                            .catch(function () { return ""; })
+                            .then(renderBrief);
+                        return;
+                    }
+                    var wanted = select.value.slice(4); // "gen:" prefix
                     var match = state.reports.filter(function (r) {
-                        return String(r.Generated) === select.value;
+                        return String(r.Generated || r.Date || "Edition") === wanted;
                     })[0];
                     renderBrief(match ? match.Content : "");
                 });
@@ -512,14 +581,30 @@
             copy.addEventListener("click", function () {
                 var body = el("brief-body");
                 if (!body) return;
-                global.navigator.clipboard.writeText(body.innerText).then(function () {
+                function flash(html) {
                     var original = copy.innerHTML;
-                    copy.innerHTML = '<i data-lucide="check"></i> Copied';
+                    copy.innerHTML = html;
                     if (global.lucide) global.lucide.createIcons();
                     setTimeout(function () {
                         copy.innerHTML = original;
                         if (global.lucide) global.lucide.createIcons();
                     }, 1800);
+                }
+                // clipboard.writeText rejects on file://, any non-secure
+                // context, or a denied permission -- previously an unhandled
+                // rejection and a button that never reacted. The fallback
+                // selects the brief so a manual Ctrl+C still works.
+                global.navigator.clipboard.writeText(body.innerText).then(function () {
+                    flash('<i data-lucide="check"></i> Copied');
+                }).catch(function () {
+                    flash('<i data-lucide="x"></i> Copy failed — text selected');
+                    try {
+                        var range = doc.createRange();
+                        range.selectNodeContents(body);
+                        var sel = global.getSelection();
+                        sel.removeAllRanges();
+                        sel.addRange(range);
+                    } catch (e) { /* selection unavailable: the label is the signal */ }
                 });
             });
         }
@@ -541,6 +626,9 @@
 
         var csv = el("register-csv-btn");
         if (csv) csv.addEventListener("click", exportRegisterCsv);
+
+        var jsonBtn = el("register-json-btn");
+        if (jsonBtn) jsonBtn.addEventListener("click", exportRegisterJson);
     }
 
     /**
@@ -551,7 +639,12 @@
      * with =, +, - or @ are prefixed so a spreadsheet does not execute them.
      */
     function exportRegisterCsv() {
-        if (!state.records.length) return;
+        // What you see is what you export: the same filtered, searched,
+        // worst-first set the list is showing. Exporting the full register
+        // while a "Red flags" filter is active silently handed the reader
+        // rows the screen never showed.
+        var items = visibleItems();
+        if (!items.length) return;
 
         var headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Share Band",
             "Direct %", "Indirect %", "Voting Rights %", "Intermediate Entities", "Board Role",
@@ -563,11 +656,10 @@
             return '"' + s.replace(/"/g, '""') + '"';
         }
 
-        var ctx = PSC.buildContext(state.records);
-        var rows = state.records.map(function (r) {
-            var flags = PSC.redFlagsFor(r, ctx).map(function (f) { return f.title; }).join("; ");
+        var rows = items.map(function (item) {
+            var flags = item.flags.map(function (f) { return f.title; }).join("; ");
             return headers.map(function (h) {
-                return field(h === "Red Flags" ? flags : r[h]);
+                return field(h === "Red Flags" ? flags : item.record[h]);
             }).join(",");
         });
 
@@ -576,12 +668,53 @@
             : "";
         var csv = "﻿" + note + headers.map(field).join(",") + "\r\n" + rows.join("\r\n");
 
-        var blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+        // The filename says which slice of the register this is, so a
+        // "red-flags only" file cannot be mistaken for the whole register.
+        downloadRegisterFile(csv, "text/csv;charset=utf-8;", ".csv");
+    }
+
+    /**
+     * JSON export: the annotated records, not the raw rows. The raw file is
+     * already public at data/significant_control.json -- what this button
+     * adds is the analysis layer (CAMA band, red flags, worst-first order)
+     * for the exact slice on screen.
+     */
+    function exportRegisterJson() {
+        var items = visibleItems();
+        if (!items.length) return;
+
+        var payload = {
+            generated: new Date().toISOString(),
+            demo: !!(state.summary && state.summary.isDemo),
+            scope: { filter: state.filter, query: state.query },
+            count: items.length,
+            records: items.map(function (item) {
+                return {
+                    record: item.record,
+                    band: item.band ? { id: item.band.id, label: item.band.label } : null,
+                    red_flags: item.flags.map(function (f) {
+                        return { id: f.id, title: f.title, severity: f.severity };
+                    })
+                };
+            })
+        };
+        if (payload.demo) {
+            payload.notice = "NOT FOR COMPLIANCE USE - contains illustrative seed records";
+        }
+        downloadRegisterFile(JSON.stringify(payload, null, 2), "application/json", ".json");
+    }
+
+    /** Shared Blob download; the filename says which slice this is. */
+    function downloadRegisterFile(content, mime, ext) {
+        var scope = (state.filter !== "all" ? "_" + state.filter : "")
+            + (state.query ? "_search" : "");
+
+        var blob = new Blob([content], { type: mime });
         var url = URL.createObjectURL(blob);
         var link = doc.createElement("a");
         link.href = url;
         link.download = (state.summary && state.summary.isDemo ? "DEMO_" : "")
-            + "aura_psc_register_" + new Date().toISOString().slice(0, 10) + ".csv";
+            + "aura_psc_register" + scope + "_" + new Date().toISOString().slice(0, 10) + ext;
         doc.body.appendChild(link);
         link.click();
         doc.body.removeChild(link);
@@ -599,8 +732,11 @@
             .then(loadBrief)
             .then(loadArchive)
             .then(function () {
-                // Newly injected cards need observing too.
+                // Observe the first paint's cards for the entrance reveal;
+                // every re-render after this point reveals immediately
+                // instead (see renderRegisterList).
                 if (Motion) Motion.initReveals(el("register-list"));
+                state.revealedOnce = true;
             })
             .catch(function (err) { console.error("psc-report.js init failed:", err); });
     }

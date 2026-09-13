@@ -3,7 +3,7 @@ import requests
 import random
 import re
 import html
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import List, Dict, Any, Optional
 from backend.app.core.config import settings
 import logging
@@ -106,31 +106,49 @@ def parse_feed_date(date_str: str) -> Optional[datetime]:
     if not date_str:
         return None
 
-    date_clean = str(date_str).replace("Z", "").strip()
-    if not date_clean:
+    raw = str(date_str).strip()
+    if not raw:
         return None
-    
+
+    def _to_naive_utc(dt: datetime) -> datetime:
+        # Convert, never truncate: `.replace(tzinfo=None)` on an aware
+        # datetime used to discard the offset, filing a -05:00 article up
+        # to 14 hours off -- wrong side of the 48h freshness gate, wrong
+        # calendar day in the daily brief. A naive datetime is passed
+        # through untouched (we cannot know its zone; assuming local would
+        # shift it on developer machines).
+        if dt.tzinfo is None:
+            return dt
+        return dt.astimezone(timezone.utc).replace(tzinfo=None)
+
+    # ISO-8601 first, offsets included: "2024-01-01T12:00:00+01:00" used to
+    # fall through every branch and the article was dropped as undated.
+    try:
+        return _to_naive_utc(datetime.fromisoformat(re.sub(r"[Zz]$", "+00:00", raw)))
+    except ValueError:
+        pass
+
+    # Trailing-Z strip only -- the old global replace("Z", "") corrupted
+    # timezone abbreviations containing a Z ("NZDT" -> "NDT").
+    date_clean = re.sub(r"Z$", "", raw).strip()
+    if "." in date_clean:
+        date_clean = date_clean.split(".")[0]
+
     formats = [
         "%Y-%m-%dT%H:%M:%S",
         "%Y-%m-%d %H:%M:%S",
-        "%Y-%m-%d %H:%M:%S.%f",
         "%a, %d %b %Y %H:%M:%S %Z",
         "%a, %d %b %Y %H:%M:%S",
-        "%Y-%m-%dT%H:%M:%S.%f"
     ]
-    
-    if "." in date_clean:
-        date_clean = date_clean.split(".")[0]
-        
     for fmt in formats:
         try:
             return datetime.strptime(date_clean, fmt)
         except ValueError:
             continue
-            
+
     try:
         from email.utils import parsedate_to_datetime
-        return parsedate_to_datetime(date_str).replace(tzinfo=None)
+        return _to_naive_utc(parsedate_to_datetime(raw))
     except Exception:
         pass
 
@@ -304,12 +322,26 @@ class NewsIngestionService:
         logger.info(f"Successfully fetched {len(articles)} combined RSS entries.")
         return articles
 
+    # Credential-hygiene note for every adapter below: keys ride in headers
+    # where the provider supports one, and failure logs carry the exception
+    # CLASS and status code only -- never str(e) or a response body. A
+    # requests ConnectionError message embeds the full request URL, query
+    # string included, so logging the exception text used to write the
+    # provider API key into the run log on any transient network failure.
+
     @staticmethod
     def _fetch_from_news_api_with_key(key: str) -> List[Dict[str, Any]]:
         """Helper to call NewsAPI search for Nigerian business headlines."""
         # Querying business topics in Nigeria, matching our target categories
-        url = f"https://newsapi.org/v2/everything?q={requests.utils.quote('Nigeria (PSC OR NNPC OR CEO OR contract OR EFCC OR NIMASA OR parastatal)')}&sortBy=publishedAt&apiKey={key}"
-        r = requests.get(url, timeout=10)
+        r = requests.get(
+            "https://newsapi.org/v2/everything",
+            params={
+                "q": "Nigeria (PSC OR NNPC OR CEO OR contract OR EFCC OR NIMASA OR parastatal)",
+                "sortBy": "publishedAt",
+            },
+            headers={"X-Api-Key": key},
+            timeout=10,
+        )
         if r.status_code == 200:
             data = r.json()
             articles = []
@@ -324,24 +356,24 @@ class NewsIngestionService:
                 })
             return articles
         else:
-            raise requests.HTTPError(f"HTTP {r.status_code}: {r.text}")
+            raise requests.HTTPError(f"HTTP {r.status_code}")
 
     @classmethod
     def fetch_news_api(cls) -> List[Dict[str, Any]]:
         """Fetches articles using NewsAPI with fallback retry logic."""
         if not settings.NEWSAPI_KEY:
             return []
-            
+
         logger.info("Attempting NewsAPI fetch with Key 1...")
         try:
             return cls._fetch_from_news_api_with_key(settings.NEWSAPI_KEY)
         except Exception as e:
-            logger.warning(f"NewsAPI Key 1 failed or rate-limited: {e}. Retrying with Key 2...")
+            logger.warning(f"NewsAPI Key 1 failed or rate-limited ({type(e).__name__}: {e if isinstance(e, requests.HTTPError) else '...'}). Retrying with Key 2...")
             if settings.NEWSAPI_KEY_2:
                 try:
                     return cls._fetch_from_news_api_with_key(settings.NEWSAPI_KEY_2)
                 except Exception as e2:
-                    logger.error(f"NewsAPI Key 2 also failed: {e2}")
+                    logger.error(f"NewsAPI Key 2 also failed ({type(e2).__name__}).")
             else:
                 logger.warning("No NewsAPI Key 2 (fallback) configured.")
         return []
@@ -353,9 +385,13 @@ class NewsIngestionService:
             return []
             
         logger.info("Fetching from GNews...")
-        url = f"https://gnews.io/api/v4/top-headlines?category=business&lang=en&country=ng&apikey={settings.GNEWS_KEY}"
         try:
-            r = requests.get(url, timeout=10)
+            r = requests.get(
+                "https://gnews.io/api/v4/top-headlines",
+                params={"category": "business", "lang": "en", "country": "ng",
+                        "apikey": settings.GNEWS_KEY},
+                timeout=10,
+            )
             if r.status_code == 200:
                 data = r.json()
                 articles = []
@@ -369,8 +405,11 @@ class NewsIngestionService:
                         "is_rss": False
                     })
                 return articles
+            # A silent non-200 read as a quiet news day; an expired key or a
+            # 429 must be visible as the outage it is.
+            logger.error(f"GNews returned HTTP {r.status_code}; contributing no articles this cycle.")
         except Exception as e:
-            logger.error(f"Error fetching GNews: {e}")
+            logger.error(f"Error fetching GNews ({type(e).__name__}).")
         return []
 
     @staticmethod
@@ -380,9 +419,13 @@ class NewsIngestionService:
             return []
 
         logger.info("Fetching from The Guardian Open Platform...")
-        url = f"https://content.guardianapis.com/search?q=Nigeria&api-key={settings.GUARDIAN_API_KEY}&show-fields=bodyText&page-size=25"
         try:
-            r = requests.get(url, timeout=10)
+            r = requests.get(
+                "https://content.guardianapis.com/search",
+                params={"q": "Nigeria", "api-key": settings.GUARDIAN_API_KEY,
+                        "show-fields": "bodyText", "page-size": 25},
+                timeout=10,
+            )
             if r.status_code == 200:
                 data = r.json()
                 results = data.get("response", {}).get("results", [])
@@ -399,8 +442,9 @@ class NewsIngestionService:
                     })
                 logger.info(f"Successfully fetched {len(articles)} articles from The Guardian.")
                 return articles
+            logger.error(f"The Guardian returned HTTP {r.status_code}; contributing no articles this cycle.")
         except Exception as e:
-            logger.error(f"Error fetching from The Guardian: {e}")
+            logger.error(f"Error fetching from The Guardian ({type(e).__name__}).")
         return []
 
     @staticmethod
@@ -410,9 +454,13 @@ class NewsIngestionService:
             return []
 
         logger.info("Fetching from NewsData.io...")
-        url = f"https://newsdata.io/api/1/latest?country=ng&apikey={settings.NEWSDATA_KEY}"
         try:
-            r = requests.get(url, timeout=10)
+            r = requests.get(
+                "https://newsdata.io/api/1/latest",
+                params={"country": "ng"},
+                headers={"X-ACCESS-KEY": settings.NEWSDATA_KEY},
+                timeout=10,
+            )
             if r.status_code == 200:
                 data = r.json()
                 results = data.get("results", [])
@@ -429,8 +477,9 @@ class NewsIngestionService:
                     })
                 logger.info(f"Successfully fetched {len(articles)} articles from NewsData.io.")
                 return articles
+            logger.error(f"NewsData.io returned HTTP {r.status_code}; contributing no articles this cycle.")
         except Exception as e:
-            logger.error(f"Error fetching from NewsData.io: {e}")
+            logger.error(f"Error fetching from NewsData.io ({type(e).__name__}).")
         return []
 
     @classmethod
@@ -507,31 +556,6 @@ class NewsIngestionService:
         all_articles.extend(cls.fetch_guardian_news())
         all_articles.extend(cls.fetch_newsdata_io())
         
-        # 3. Padding a thin cycle with invented articles is opt-in.
-        #
-        # This used to fire unconditionally below ten articles -- which is
-        # precisely when the fetchers are struggling: a rate-limited API, an
-        # expired key, a degraded network. On exactly those days 25 fabricated
-        # stories were analysed, written to the sheet, counted in the KPIs and
-        # folded into the executive brief.
-        #
-        # A quiet news day, or a broken fetcher, is a fact the brief should
-        # reflect. Padding it is the system asserting something it does not
-        # know. Same reasoning as SEED_DEMO_PSC, and the same default.
-        if len(all_articles) < 10:
-            if settings.SEED_DEMO_ARTICLES:
-                logger.warning(
-                    "Only %d real article(s) collected; SEED_DEMO_ARTICLES is on, so "
-                    "adding synthetic samples marked '%s'.", len(all_articles), SYNTHETIC_SOURCE
-                )
-                all_articles.extend(cls.generate_mock_news(25))
-            else:
-                logger.warning(
-                    "Only %d real article(s) collected this cycle. Continuing with what "
-                    "is real rather than padding. Check the source adapters and API keys "
-                    "if this persists.", len(all_articles)
-                )
-            
         # Post-ingestion strict Nigeria filter
         # Drop site chrome before anything else. Scoping searches to gov.ng and
         # com.ng surfaces regulator *homepages* as if they were stories --
@@ -589,7 +613,9 @@ class NewsIngestionService:
         # Excluded ones are counted and logged, because dropping coverage
         # silently would only move the dishonesty rather than remove it. A
         # rising count here means a feed changed its date format.
-        limit_date = datetime.now() - timedelta(hours=48)
+        # UTC, matching what parse_feed_date now returns for offset-carrying
+        # dates. (Identical on the Actions runner, which is UTC already.)
+        limit_date = datetime.utcnow() - timedelta(hours=48)
         time_filtered = []
         undated = 0
         for art in nigerian_filtered:
@@ -609,43 +635,86 @@ class NewsIngestionService:
 
         # 5. Fuzzy Title Deduplication
         distinct_articles = cls.fuzzy_deduplicate_articles(time_filtered)
-        
+
         logger.info(f"Filtered {len(all_articles)} raw entries to {len(nigerian_filtered)} strictly Nigerian, {len(time_filtered)} within 48h, and {len(distinct_articles)} distinct stories.")
+
+        # 6. Padding a thin cycle with invented articles is opt-in.
+        #
+        # This used to fire unconditionally below ten articles -- which is
+        # precisely when the fetchers are struggling: a rate-limited API, an
+        # expired key, a degraded network. On exactly those days 25 fabricated
+        # stories were analysed, written to the sheet, counted in the KPIs and
+        # folded into the executive brief.
+        #
+        # A quiet news day, or a broken fetcher, is a fact the brief should
+        # reflect. Padding it is the system asserting something it does not
+        # know. Same reasoning as SEED_DEMO_PSC, and the same default.
+        #
+        # Assessed *after* the stub/Nigeria/48h/dedup filters: "thin" means
+        # few publishable stories, and 40 raw-but-junk feed entries used to
+        # mask a cycle that actually yielded two. Synthetic articles append
+        # here too -- they are already marked, and putting them through the
+        # filters above would only prune the padding they exist to provide.
+        if len(distinct_articles) < 10:
+            if settings.SEED_DEMO_ARTICLES:
+                logger.warning(
+                    "Only %d publishable article(s) after filtering; SEED_DEMO_ARTICLES is on, "
+                    "so adding synthetic samples marked '%s'.", len(distinct_articles), SYNTHETIC_SOURCE
+                )
+                distinct_articles = distinct_articles + cls.generate_mock_news(25)
+            else:
+                logger.warning(
+                    "Only %d publishable article(s) after filtering this cycle. Continuing with "
+                    "what is real rather than padding. Check the source adapters and API keys "
+                    "if this persists.", len(distinct_articles)
+                )
         return distinct_articles
 
     @staticmethod
-    def fuzzy_deduplicate_articles(articles: List[Dict[str, Any]], similarity_threshold: float = 0.70) -> List[Dict[str, Any]]:
-        """Deduplicates articles based on title similarity ratio using difflib and token set overlap."""
+    def fuzzy_deduplicate_articles(articles: List[Dict[str, Any]],
+                                   ratio_threshold: float = 0.85,
+                                   overlap_threshold: float = 0.80) -> List[Dict[str, Any]]:
+        """Deduplicates articles on title similarity -- BOTH signals must agree.
+
+        The old rule was `ratio >= 0.70 OR jaccard >= 0.65`, which is far too
+        loose for short headlines sharing boilerplate: "Dangote Cement
+        acquires majority stake in BUA" vs "...sells majority stake..."
+        measures ratio 0.90, and "NNPC appoints new CEO" vs "...new CFO"
+        ratio 0.95 -- opposite facts, silently merged, whichever arrived
+        second dropped. Measured on those cases plus true duplicates, the
+        conjunction ratio >= 0.85 AND jaccard >= 0.80 keeps every
+        opposite-meaning pair distinct (their word overlap tops out at 0.75)
+        while still merging reworded and re-attributed copies of the same
+        story. Under-merging costs one redundant LLM call; over-merging
+        deletes coverage, so ties break toward keeping.
+        """
         from difflib import SequenceMatcher
         deduped = []
-        
+
         for art in articles:
             title = (art.get("title") or "").strip().lower()
             if not title:
                 continue
-                
+
             is_dup = False
             title_words = set(re.findall(r'\w+', title))
-            
+
             for existing in deduped:
                 ex_title = (existing.get("title") or "").strip().lower()
                 ex_words = set(re.findall(r'\w+', ex_title))
-                
-                # Check 1: SequenceMatcher ratio
+
                 ratio = SequenceMatcher(None, title, ex_title).ratio()
-                
-                # Check 2: Jaccard word set overlap
                 overlap = 0.0
                 if title_words and ex_words:
                     overlap = len(title_words & ex_words) / len(title_words | ex_words)
-                    
-                if ratio >= similarity_threshold or overlap >= 0.65:
+
+                if ratio >= ratio_threshold and overlap >= overlap_threshold:
                     is_dup = True
                     break
-                    
+
             if not is_dup:
                 deduped.append(art)
-                
+
         logger.info(f"Fuzzy Deduplication: Reduced {len(articles)} candidate items to {len(deduped)} distinct stories.")
         return deduped
 

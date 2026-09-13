@@ -31,7 +31,12 @@ SHEETS_CONFIG = {
     ],
     # "Archive File" resolves an edition to its exact archived markdown file.
     # Added after runs 2-4 of each day were found to overwrite run 1's archive.
-    "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Archive File", "Content"]
+    # "Cascade Failures" and "Run Seconds" persist per-run pipeline health --
+    # both were computed and then dropped on the floor; the dashboard's
+    # health panel needs them as a time series. plan_header_migration brings
+    # existing sheets up to this schema by column name.
+    "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement",
+                      "Cascade Failures", "Run Seconds", "Generated", "Archive File", "Content"]
 }
 
 def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, Any]:
@@ -259,17 +264,20 @@ class SheetsDatabase:
                     logger.error(f"Error reading Google Sheet '{sheet_name}': {e}")
                     return []
 
-    def _append_row(self, sheet_name: str, row_data: Dict[str, Any]):
-        """Appends a single row matching columns to the specified sheet."""
+    def _append_row(self, sheet_name: str, row_data: Dict[str, Any]) -> bool:
+        """Appends a single row matching columns to the specified sheet.
+
+        Returns True only when the row actually reached the backing store.
+        Both failure branches used to swallow their exception after logging,
+        so callers reported success on writes that never happened -- and the
+        cache was updated before the write, making the phantom row visible
+        to every later read in the same process.
+        """
         with self._lock:
             columns = SHEETS_CONFIG[sheet_name]
             row_values = [row_data.get(col, "") for col in columns]
 
-            # Update cache immediately
-            if sheet_name in self._cache:
-                # We add a dict mapping columns to row values so the cache stays accurate
-                self._cache[sheet_name].append(dict(zip(columns, row_values)))
-
+            written = False
             if self.use_local:
                 try:
                     df_existing = pd.DataFrame(columns=columns)
@@ -285,6 +293,7 @@ class SheetsDatabase:
                     # Write back maintaining other sheets
                     with pd.ExcelWriter(self.local_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
                         df_combined.to_excel(writer, sheet_name=sheet_name, index=False)
+                    written = True
                 except Exception as e:
                     logger.error(f"Error writing to local sheet '{sheet_name}': {e}")
             else:
@@ -300,8 +309,15 @@ class SheetsDatabase:
                         ws.append_row(stringified_values)
 
                     retry_google_sheets_op(_do_append)
+                    written = True
                 except Exception as e:
                     logger.error(f"Error appending to Google Sheet '{sheet_name}': {e}")
+
+            # Cache only rows that exist on disk, so a failed write stays
+            # retryable instead of being masked by its own phantom.
+            if written and sheet_name in self._cache:
+                self._cache[sheet_name].append(dict(zip(columns, row_values)))
+            return written
 
     # ==========================================
     # DATA INTERFACES
@@ -355,7 +371,9 @@ class SheetsDatabase:
             article["Time"] = article.get("Time") or datetime.now().isoformat()
             article["Status"] = article.get("Status") or "Unread"
 
-            self._append_row("Articles", article)
+            if not self._append_row("Articles", article):
+                logger.error(f"Failed to persist article, will retry next run: {url}")
+                return False
             logger.info(f"Saved new article to database: ID {next_id}")
             return True
 

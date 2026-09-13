@@ -1678,3 +1678,122 @@ div.vis-tooltip {
         justify-content: center;
     }
 }
+
+/* ==========================================================
+   DataTable (Slice D). New-component styling uses the spacing
+   tokens; wide tables scroll inside their own wrapper so the
+   page body never scrolls horizontally.
+   ========================================================== */
+.aura-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-sm);
+    background: var(--surface-3);
+}
+
+.aura-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.aura-table th,
+.aura-table td {
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    border-bottom: 1px solid var(--hairline);
+    white-space: nowrap;
+}
+
+.aura-table tbody tr:last-child td { border-bottom: none; }
+
+.aura-table tbody tr:hover { background: var(--surface-2); }
+
+.aura-table th {
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+}
+
+.aura-table-sort {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.aura-table-sort:hover,
+.aura-table-sort:focus-visible { color: var(--text-primary); }
+
+.aura-table-sort-mark { font-size: 9px; min-width: 10px; }
+
+.aura-pager {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+}
+
+.aura-pager-status {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+/* =====================================================================
+   Insight panels (what changed this cycle + pipeline health)
+   ===================================================================== */
+.insight-panel {
+    padding: var(--space-5);
+    margin-block: var(--space-5);
+}
+.insight-panel .panel-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+.insight-generated {
+    color: var(--text-dim, #94a3b8);
+    font-size: 0.8rem;
+}
+.insight-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+.insight-group h3 {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 var(--space-2);
+}
+.insight-count {
+    color: var(--accent, #67e8f9);
+    margin-left: var(--space-1);
+}
+.insight-group ul {
+    margin: 0;
+    padding-left: var(--space-4);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.insight-more {
+    list-style: none;
+    color: var(--text-dim, #94a3b8);
+}
+.chart-container-sm {
+    max-height: 220px;
+    margin-top: var(--space-4);
+}

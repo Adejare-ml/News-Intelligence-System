@@ -49,6 +49,23 @@ def build_report_prompt(raw_data_string: str) -> str:
         "PSC disclosures, say so plainly in one line - do not invent holders, "
         "percentages, or filing references.\n"
         "### Procurement & Board Changes\n\n"
+        "Rules:\n"
+        "1. CITE SOURCES. End every bullet that draws on an article with a markdown "
+        "link to that article's 'url' field, in the form ([Source Name](url)). Only "
+        "use URLs that appear verbatim in the data - never construct, guess, or "
+        "shorten one. If a record has no url, cite its source name in plain text.\n"
+        "2. If the data carries 'report_date' and 'coverage' fields, they are "
+        "authoritative: date the report from them and describe the period as that "
+        "day's coverage, not as a single run.\n"
+        "3. Keep each section to at most 6 bullets and roughly 120 words; when there "
+        "is more material, keep the highest-risk items and fold the rest into one "
+        "closing bullet.\n"
+        "4. When a section has nothing to report, say so in one plain sentence and "
+        "phrase each such sentence differently - never repeat boilerplate like "
+        "'No high-risk items were identified in the current reporting cycle' across "
+        "sections or editions.\n"
+        "5. Use headings, bullets, bold and links only. Never emit markdown tables "
+        "(pipe syntax) - the renderer does not support them.\n\n"
         "Output only clean, raw markdown text without wrapping backticks."
     )
 
@@ -170,7 +187,11 @@ class LLMService:
         # 3. Local spaCy Heuristics Fallback (opt-in only)
         if settings.ALLOW_HEURISTIC_FALLBACK:
             logger.warning("All LLM providers failed or unconfigured. ALLOW_HEURISTIC_FALLBACK is on; using local NLP heuristics.")
-            result = cls._run_local_fallback(title, text)
+            # Through the validator like every other branch: the heuristic
+            # dicts miss keys the schema promises (significant_control on
+            # the happy path, relevant on the exception path), and this was
+            # the one cascade branch allowed to skip the guarantee.
+            result = cls._validate_llm_output(cls._run_local_fallback(title, text))
             result["engine"] = "local-heuristics"
             return result
 
@@ -284,9 +305,13 @@ class LLMService:
             model = genai.GenerativeModel(settings.GEMINI_MODEL or DEFAULT_GEMINI_MODEL)
             prompt = build_report_prompt(raw_data_string)
             
+            # Explicit deadline: without it a hung connection holds the
+            # pipeline indefinitely -- the Actions job would burn its
+            # 6-hour default before the cascade ever saw a failure.
             response = model.generate_content(
                 prompt,
-                generation_config={"response_mime_type": "text/plain"}
+                generation_config={"response_mime_type": "text/plain"},
+                request_options={"timeout": 90}
             )
             return response.text.strip()
         except Exception as e:
@@ -298,9 +323,15 @@ class LLMService:
         """Generates executive markdown report using NVIDIA API."""
         try:
             from openai import OpenAI
+            # The SDK's defaults are a 600s read timeout and 2 automatic
+            # retries; combined with the model fallback below that allowed
+            # a single hung or rate-limited endpoint to stall a run for
+            # tens of minutes per article.
             client = OpenAI(
                 base_url=NVIDIA_BASE_URL,
-                api_key=settings.NVIDIA_API_KEY
+                api_key=settings.NVIDIA_API_KEY,
+                timeout=90.0,
+                max_retries=1
             )
             prompt = build_report_prompt(raw_data_string)
             primary = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
@@ -313,7 +344,12 @@ class LLMService:
                     ]
                 )
             except Exception as inner_e:
-                logger.warning(f"NVIDIA report model '{primary}' failed, retrying with '{fallback}'. Error: {inner_e}")
+                # Only a missing/retired model is rescued by trying a
+                # different model name; auth and quota failures would fail
+                # again identically and hide the primary's real error.
+                if not cls._is_model_unavailable(inner_e):
+                    raise
+                logger.warning(f"NVIDIA report model '{primary}' unavailable, retrying with '{fallback}'. Error: {inner_e}")
                 response = client.chat.completions.create(
                     model=fallback,
                     messages=[
@@ -350,7 +386,8 @@ class LLMService:
         """Generates executive markdown report using OpenAI API."""
         try:
             from openai import OpenAI
-            client = OpenAI(api_key=settings.OPENAI_API_KEY)
+            # Explicit deadline; the SDK default is 600s + 2 retries.
+            client = OpenAI(api_key=settings.OPENAI_API_KEY, timeout=90.0, max_retries=1)
             prompt = build_report_prompt(raw_data_string)
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
@@ -369,7 +406,10 @@ class LLMService:
         try:
             from openai import OpenAI
             api_key = settings.OLLAMA_API_KEY or "ollama"
-            client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=3.0)
+            # 15s to match the report-generation call above: 3s was shorter
+            # than a local model's time-to-first-token, so extraction always
+            # timed out and the cascade skipped Ollama entirely.
+            client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=15.0)
             
             safe_title = title.replace("<", "").replace(">", "")
             safe_text = text.replace("<", "").replace(">", "")
@@ -398,9 +438,13 @@ class LLMService:
         """Runs the NVIDIA NIM API as a load-shedding backup."""
         try:
             from openai import OpenAI
+            # See _generate_report_nvidia: explicit deadline instead of the
+            # SDK's 600s default, and one retry instead of two.
             client = OpenAI(
                 base_url=NVIDIA_BASE_URL,
-                api_key=settings.NVIDIA_API_KEY
+                api_key=settings.NVIDIA_API_KEY,
+                timeout=60.0,
+                max_retries=1
             )
 
             safe_title = title.replace("<", "").replace(">", "")
@@ -418,7 +462,9 @@ class LLMService:
                     ]
                 )
             except Exception as inner_e:
-                logger.warning(f"NVIDIA model '{primary}' failed, retrying with '{fallback}'. Error: {inner_e}")
+                if not cls._is_model_unavailable(inner_e):
+                    raise
+                logger.warning(f"NVIDIA model '{primary}' unavailable, retrying with '{fallback}'. Error: {inner_e}")
                 response = client.chat.completions.create(
                     model=fallback,
                     messages=[
@@ -437,29 +483,82 @@ class LLMService:
             return None
 
     @staticmethod
+    def _is_model_unavailable(err: Exception) -> bool:
+        """True when an API error means "this model name doesn't exist here".
+
+        That is the only failure a different model name can fix. Auth (401),
+        quota (429) and network errors fail identically on the fallback
+        model, and retrying them doubled the pressure on a rate-limited
+        endpoint while reporting the fallback's error instead of the real
+        one.
+        """
+        status = getattr(err, "status_code", None)
+        if status == 404:
+            return True
+        text = str(err).lower()
+        return "not found" in text or "no such model" in text or "does not exist" in text
+
+    @staticmethod
+    def _balanced_json_slice(text: str) -> str:
+        """Returns the substring from the first '{' to its balanced '}'.
+
+        Depth counting is string-aware (braces inside JSON strings, and
+        escaped quotes inside those strings, don't move the depth), so a
+        summary containing '{' can't truncate the slice. Returns '' when
+        no balanced object exists.
+        """
+        start = text.find("{")
+        if start == -1:
+            return ""
+        depth = 0
+        in_string = False
+        escaped = False
+        for i in range(start, len(text)):
+            ch = text[i]
+            if in_string:
+                if escaped:
+                    escaped = False
+                elif ch == "\\":
+                    escaped = True
+                elif ch == '"':
+                    in_string = False
+            elif ch == '"':
+                in_string = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    return text[start:i + 1]
+        return ""
+
+    @staticmethod
     def _extract_json_block(text_content: str) -> Dict[str, Any]:
-        """Extracts and parses JSON object from LLM response text using regex, handling markdown blocks."""
+        """Extracts and parses the JSON object from LLM response text.
+
+        Tries the fenced ```json block first; otherwise falls back to a
+        brace-depth scan of the whole response. The old fallback naively
+        stripped fence markers and then regex-grabbed greedily, so any
+        prose after the closing fence (models love a trailing "Let me
+        know if...") poisoned the parse and dropped the article.
+        """
         if not text_content:
             return None
         import re
-        cleaned = text_content.strip()
-        if "```" in cleaned:
-            match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", cleaned, re.DOTALL)
-            if match:
-                cleaned = match.group(1)
-            else:
-                cleaned = cleaned.replace("```json", "").replace("```", "").strip()
-                
-        if not cleaned.startswith("{"):
-            match = re.search(r"(\{.*\})", cleaned, re.DOTALL)
-            if match:
-                cleaned = match.group(1)
-                
-        try:
-            return json.loads(cleaned)
-        except Exception as e:
-            logger.warning(f"Failed to parse extracted JSON block: {e}")
-            return None
+        candidates = []
+        match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text_content, re.DOTALL)
+        if match:
+            candidates.append(match.group(1))
+        scanned = LLMService._balanced_json_slice(text_content)
+        if scanned and scanned not in candidates:
+            candidates.append(scanned)
+
+        for cleaned in candidates:
+            try:
+                return json.loads(cleaned)
+            except Exception as e:
+                logger.warning(f"Failed to parse extracted JSON block: {e}")
+        return None
 
     @classmethod
     def _run_local_fallback(cls, title: str, text: str) -> Dict[str, Any]:
@@ -586,8 +685,22 @@ class LLMService:
             "procurement": None
         }
         
-        # Merge dicts
+        # Merge on "missing OR null", not just missing. The SYSTEM_PROMPT
+        # explicitly tells the model it may set fields to null when
+        # relevant is false, and `data.get(key, default)` at the call sites
+        # returns the None rather than the default when the key is present
+        # -- so "organizations": null used to reach run_pipeline's
+        # `for org in analysis.get("organizations", [])` as None and kill
+        # the whole run with a TypeError, mid-batch, after the article row
+        # was already written. Same null-vs-missing trap the PSC scalar
+        # fields already guard against in run_pipeline.
         for key, val in schema_defaults.items():
-            if key not in data:
+            if data.get(key) is None and val is not None:
                 data[key] = val
+        # The three list fields must actually be lists -- a model that
+        # answers with a string or dict here would crash iteration just
+        # like null did.
+        for key in ("organizations", "people", "significant_control"):
+            if not isinstance(data.get(key), list):
+                data[key] = []
         return data
