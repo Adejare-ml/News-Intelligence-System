@@ -100,6 +100,60 @@
         });
     });
 
+    T.describe("trendsSummary + weatherSummary", function () {
+        T.it("returns null when nothing is worth a panel", function () {
+            T.eq(I.trendsSummary(null), null);
+            T.eq(I.trendsSummary({ rising: [], falling: [], social: [] }), null);
+            T.eq(I.weatherSummary(null), null);
+            T.eq(I.weatherSummary({ cities: [] }), null);
+        });
+
+        T.it("drops social posts that are not canonical reddit permalinks", function () {
+            var s = I.trendsSummary({
+                rising: [{ term: "dangote", recent: 3, change: 2 }],
+                social: [
+                    { title: "ok", score: 5, url: "https://www.reddit.com/r/Nigeria/comments/a/x/" },
+                    { title: "evil", score: 9, url: "https://evil.test/phish" }
+                ]
+            });
+            T.eq(s.social.length, 1);
+            T.contains(s.social[0].url, "reddit.com/r/Nigeria");
+        });
+
+        T.it("weather lines carry city, temperature and description", function () {
+            var w = I.weatherSummary({ cities: [
+                { name: "Lagos", temp_c: 29.4, description: "Rain showers", humidity: 84 }
+            ]});
+            T.contains(w.cities[0].line, "Lagos 29.4°C");
+            T.contains(w.cities[0].line, "Rain showers");
+            T.contains(w.cities[0].line, "84% humidity");
+        });
+    });
+
+    T.describe("renderTrendsHTML", function () {
+        T.it("escapes terms and post titles", function () {
+            var html = I.renderTrendsHTML(I.trendsSummary({
+                rising: [{ term: "<b>evil</b>", recent: 2, change: 2 }],
+                social: [{ title: "<script>x</script>", score: 1,
+                           url: "https://www.reddit.com/r/Nigeria/comments/a/x/" }]
+            }));
+            T.excludes(html, "<b>evil");
+            T.excludes(html, "<script>x");
+            T.contains(html, "&lt;b&gt;");
+        });
+
+        T.it("marks direction on the chips", function () {
+            var html = I.renderTrendsHTML(I.trendsSummary({
+                rising: [{ term: "up", recent: 2, change: 3 }],
+                falling: [{ term: "down", recent: 0, previous: 4, change: -4 }]
+            }));
+            T.contains(html, "trend-up");
+            T.contains(html, "trend-down");
+            T.contains(html, "+3");
+            T.contains(html, "-4");
+        });
+    });
+
     T.describe("globe routesFromRecords", function () {
         T.it("derives weighted routes from Intermediate Entities", function () {
             var routes = G.routesFromRecords([

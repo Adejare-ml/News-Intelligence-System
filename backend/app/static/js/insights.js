@@ -132,6 +132,71 @@
         return html;
     }
 
+    /**
+     * Displayable model for trends.json. Null when there is nothing worth
+     * a panel (no movement and no social posts) so the section stays
+     * hidden rather than rendering empty columns.
+     */
+    function trendsSummary(trends) {
+        if (!trends) return null;
+        var rising = (trends.rising || []).slice(0, 8);
+        var falling = (trends.falling || []).slice(0, 5);
+        var social = (trends.social || []).slice(0, 6).filter(function (p) {
+            return p && typeof p.url === "string"
+                && p.url.indexOf("https://www.reddit.com/r/") === 0;
+        });
+        if (!rising.length && !falling.length && !social.length) return null;
+        return {
+            generated: trends.generated || "",
+            windowDays: trends.window_days || 7,
+            rising: rising,
+            falling: falling,
+            social: social
+        };
+    }
+
+    /** One-line-per-city model for weather.json; null hides the strip. */
+    function weatherSummary(weather) {
+        if (!weather || !weather.cities || !weather.cities.length) return null;
+        return {
+            generated: weather.generated || "",
+            cities: weather.cities.map(function (c) {
+                return {
+                    name: c.name,
+                    line: c.name + " " + c.temp_c + "°C · " + (c.description || "")
+                        + (c.humidity != null ? " · " + c.humidity + "% humidity" : "")
+                };
+            })
+        };
+    }
+
+    /** HTML for the trends panel body. Escaped throughout. */
+    function renderTrendsHTML(summary) {
+        function chip(entry, dir) {
+            return '<li class="trend-chip trend-' + dir + '">' + esc(entry.term)
+                + ' <span class="trend-delta">' + (dir === "up" ? "+" : "") + entry.change
+                + '</span></li>';
+        }
+        var html = "";
+        if (summary.rising.length) {
+            html += '<div class="insight-group"><h3>Rising this week</h3><ul class="trend-list">'
+                + summary.rising.map(function (e) { return chip(e, "up"); }).join("") + "</ul></div>";
+        }
+        if (summary.falling.length) {
+            html += '<div class="insight-group"><h3>Fading</h3><ul class="trend-list">'
+                + summary.falling.map(function (e) { return chip(e, "down"); }).join("") + "</ul></div>";
+        }
+        if (summary.social.length) {
+            html += '<div class="insight-group"><h3>On r/Nigeria</h3><ul>'
+                + summary.social.map(function (p) {
+                    return '<li><a class="report-link" rel="noopener noreferrer" target="_blank" href="'
+                        + esc(p.url) + '">' + esc(p.title) + "</a>"
+                        + ' <span class="insight-count">' + (Number(p.score) || 0) + "▲</span></li>";
+                }).join("") + "</ul></div>";
+        }
+        return html;
+    }
+
     // =====================================================================
     // DOM shell -- everything below no-ops headless.
     // =====================================================================
@@ -161,6 +226,32 @@
                     if (stamp && summary.generated) stamp.textContent = "as of " + summary.generated;
                     changesPanel.hidden = false;
                 });
+        }
+
+        var contextPanel = doc.getElementById("context-panel");
+        if (contextPanel && typeof global.fetch === "function") {
+            Promise.all([
+                global.fetch(DATA + "/trends.json")
+                    .then(function (res) { return res.ok ? res.json() : null; })
+                    .catch(function () { return null; }),
+                global.fetch(DATA + "/weather.json")
+                    .then(function (res) { return res.ok ? res.json() : null; })
+                    .catch(function () { return null; })
+            ]).then(function (results) {
+                var trends = trendsSummary(results[0]);
+                var weather = weatherSummary(results[1]);
+                if (!trends && !weather) return; // stays hidden
+
+                var weatherEl = doc.getElementById("context-weather");
+                if (weatherEl && weather) {
+                    weatherEl.textContent = weather.cities.map(function (c) { return c.line; }).join("  ·  ");
+                }
+                var body = doc.getElementById("context-trends");
+                if (body && trends) {
+                    body.innerHTML = renderTrendsHTML(trends);
+                }
+                contextPanel.hidden = false;
+            });
         }
 
         var healthPanel = doc.getElementById("health-panel");
@@ -244,6 +335,9 @@
         healthSeries: healthSeries,
         engineMix: engineMix,
         renderChangesHTML: renderChangesHTML,
+        trendsSummary: trendsSummary,
+        weatherSummary: weatherSummary,
+        renderTrendsHTML: renderTrendsHTML,
         esc: esc
     };
 

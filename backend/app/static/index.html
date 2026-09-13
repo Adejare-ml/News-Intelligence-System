@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=4.7">
+    <link rel="stylesheet" href="css/styles.css?v=4.8">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -151,6 +151,18 @@
                 <span class="alert-band-count" id="alert-band-count" aria-live="polite"></span>
             </div>
             <div id="alerts-list" class="alerts-list"></div>
+        </section>
+
+        <!-- Context signals: term/category momentum over our own articles,
+             a best-effort r/Nigeria social column, and current conditions
+             in Lagos/Abuja. Rendered from data/trends.json + weather.json
+             by insights.js; hidden until the pipeline has produced them. -->
+        <section class="glass insight-panel" id="context-panel" hidden>
+            <div class="panel-header">
+                <h2>Trending</h2>
+                <span class="insight-generated" id="context-weather"></span>
+            </div>
+            <div class="insight-groups" id="context-trends"></div>
         </section>
 
         <!-- "What changed this cycle": rendered from data/changes.json by
@@ -614,7 +626,7 @@
     <script src="js/report-markdown.js?v=4.6"></script>
     <script src="js/router.js?v=4.6"></script>
     <script src="js/datatable.js?v=4.6"></script>
-    <script src="js/insights.js?v=4.7"></script>
+    <script src="js/insights.js?v=4.8"></script>
     <script src="js/app.js?v=4.9"></script>
     <script src="js/psc-report.js?v=4.7"></script>
 </body>
