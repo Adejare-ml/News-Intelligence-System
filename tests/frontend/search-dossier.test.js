@@ -143,6 +143,19 @@
         T.it("short names do not match every article", function () {
             T.eq(D.articleMentions(DATA.articles, "ab").length, 0);
         });
+
+        T.it("every :slug route resolves to a dossier builder", function () {
+            // Regression: the first shipped bind() registered "company"
+            // while the router matched "company-dossier", so every dossier
+            // link silently fell back to home.
+            R.ROUTES.filter(function (route) {
+                return route.pattern.indexOf(":slug") !== -1;
+            }).forEach(function (route) {
+                T.ok(typeof D.PAGE_VIEWS[route.view] === "function",
+                    "no dossier builder registered for route view '" + route.view + "'");
+            });
+            T.ok(Object.keys(D.PAGE_VIEWS).length >= 3, "the map itself is populated");
+        });
     });
 
     T.report();

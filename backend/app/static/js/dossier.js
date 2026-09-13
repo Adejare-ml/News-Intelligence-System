@@ -294,9 +294,9 @@
             };
         }
 
-        Router.register("company", pageHandler(companyDossier));
-        Router.register("person", pageHandler(personDossier));
-        Router.register("agency", pageHandler(agencyDossier));
+        Object.keys(PAGE_VIEWS).forEach(function (view) {
+            Router.register(view, pageHandler(PAGE_VIEWS[view]));
+        });
 
         // Leaving a dossier for any section-scroll view hides the outlet
         // again, so the page underneath is not stuck behind it.
@@ -309,17 +309,31 @@
         // these handlers existed; re-dispatch now that they do.
         var hash = (global.location && global.location.hash) || "";
         var current = Router.matchRoute(hash);
-        if (current && (current.view === "company" || current.view === "person" || current.view === "agency")) {
+        if (current && PAGE_VIEWS[current.view]) {
             Router.dispatch(hash);
         }
     }
+
+    /**
+     * Router view name -> dossier builder. Keys MUST be the view names the
+     * router's ROUTES table produces: bind() registers exactly these, and
+     * the first shipped version registered "company" while the route
+     * matched as "company-dossier" -- every dossier link fell back to home.
+     * The test suite asserts each :slug route has a builder here.
+     */
+    var PAGE_VIEWS = {
+        "company-dossier": companyDossier,
+        "person-dossier": personDossier,
+        "agency-dossier": agencyDossier
+    };
 
     global.AuraDossier = {
         companyDossier: companyDossier,
         personDossier: personDossier,
         agencyDossier: agencyDossier,
         articleMentions: articleMentions,
-        renderDossierHTML: renderDossierHTML
+        renderDossierHTML: renderDossierHTML,
+        PAGE_VIEWS: PAGE_VIEWS
     };
 
     if (global.document && typeof global.document.addEventListener === "function") {
