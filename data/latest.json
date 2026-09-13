@@ -1,5 +1,29 @@
 [
   {
+    "ID": 5941,
+    "Time": "2026-09-12T10:44:59Z",
+    "Title": "Dangote adjusts petrol price 6.7% to N1,350/litre",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/dangote-adjusts-petrol-price-6-7-to-n1350-litre/",
+    "Category": "Company",
+    "Risk Score": 15,
+    "Summary": "Dangote Petroleum Refinery has adjusted its gantry price for Premium Motor Spirit (PMS), increasing the rate by 6.7% to N1,350 per litre from N1,265.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5939,
+    "Time": "Sat, 12 Sep 2026 05:00:00 GMT",
+    "Title": "Consumers As Shareholders: Inside Dangote Refinery\u2019s N2.15tr IPO - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTXZvYk9lTmNkSzh0cGZqcWJvT3VJYkRPSUFkcWJXd0IxNnFqM3VMdldrSDBSYVVxTDJ5Vy1Mbjl2TWdhdDhMNWR2UmVfQ1diZ3ZJenRXaVVOdlY0T1cwVFVUcFhSRDI1MzRyMGdGRHRMMExFcXpzWl9sUldveFBoUlZFdm8xdFBpY1NlakFTcUdNcUQ3VFBB?oc=5",
+    "Category": "Company",
+    "Risk Score": 40,
+    "Summary": "Dangote Refinery is initiating an Initial Public Offering (IPO) valued at N2.15 trillion, aiming to transition consumers into shareholders.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5920,
     "Time": "2026-09-12 12:42:22",
     "Title": "Saviynt brings 20-year cybersecurity veteran to lead MEA push",
@@ -692,30 +716,6 @@
     "Category": "Legal",
     "Risk Score": 85,
     "Summary": "The Court of Appeal in Abuja has upheld the conviction and 490-year prison sentence for Robert Orya, the former Managing Director of the Nigeria Export-Import Bank (NEXIM Bank). The ruling relates to the misappropriation of N2.4 billion in bank funds.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5665,
-    "Time": "Wed, 09 Sep 2026 23:31:41 GMT",
-    "Title": "CBN cuts OMO, T-bill rates as liquidity surges - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBQNl9GaHNHeGtvejlWU05zUmYweVQ5My1DVDVrcm13Uk40RFpDVFkwZ1drU0wwXzRlcDZORlRKQUZET2VPVXVjZUM0MkRxeDYzYmFrTFhkeWVBYjkwRWFGemxVTGp0TjVZM3FqLWJOVk9xTU5p?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "The Central Bank of Nigeria (CBN) has reduced rates for Open Market Operations (OMO) and Treasury bills in response to surging market liquidity.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5658,
-    "Time": "2026-09-09 12:53:04",
-    "Title": "Uber\u2019s $10bn robotaxi bet reshapes global strategy after Nigeria exit",
-    "Source": "businessday",
-    "URL": "https://businessday.ng/technology/article/ubers-10bn-robotaxi-bet-reshapes-global-strategy-after-nigeria-exit/",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "Uber is shifting its global strategy toward a $10 billion investment in robotaxis. This strategic pivot follows the company's exit from the Nigerian market.",
     "Status": "Unread",
     "Engine": "ollama"
   }
