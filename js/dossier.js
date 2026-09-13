@@ -285,18 +285,58 @@
             try { global.scrollTo(0, 0); } catch (e) { /* headless */ }
         }
 
+        /**
+         * Watch toggle in the dossier header (Slice H). State lives in
+         * AuraLocalStore -- per-browser only, and the note under the
+         * button says so; skipped entirely when the store module is
+         * absent so dossiers keep no hard dependency on it.
+         */
+        function wireWatch(model, slug) {
+            var LS = global.AuraLocalStore;
+            if (!model || !LS) return;
+            var header = outlet.querySelector(".dossier-header");
+            if (!header) return;
+
+            var btn = doc.createElement("button");
+            btn.type = "button";
+            btn.className = "btn btn-secondary dossier-watch-btn";
+            function paint() {
+                var watched = LS.isWatched(LS.loadState(), model.kind, slug);
+                btn.textContent = watched ? "★ Watching" : "☆ Watch";
+                btn.setAttribute("aria-pressed", String(watched));
+            }
+            btn.addEventListener("click", function () {
+                LS.saveState(LS.toggleWatch(LS.loadState(),
+                    { type: model.kind, slug: slug, label: model.name }));
+                paint();
+                // The dashboard's watchlist panel re-reads on this signal.
+                try {
+                    doc.dispatchEvent(new global.CustomEvent("aura:watchlist"));
+                } catch (e) { /* ancient browser: panel refreshes on reload */ }
+            });
+            paint();
+            header.appendChild(btn);
+
+            var note = doc.createElement("p");
+            note.className = "dossier-sub dossier-watch-note";
+            note.textContent = "Watchlist entries are saved only in this browser.";
+            header.appendChild(note);
+        }
+
         function pageHandler(build) {
             return function (params) {
                 show('<div class="dossier"><p class="empty-note">Loading…</p></div>');
                 loadData().then(function (data) {
-                    show(renderDossierHTML(build(params.slug, data)));
+                    var model = build(params.slug, data);
+                    show(renderDossierHTML(model));
+                    wireWatch(model, params.slug);
                 });
             };
         }
 
-        Router.register("company", pageHandler(companyDossier));
-        Router.register("person", pageHandler(personDossier));
-        Router.register("agency", pageHandler(agencyDossier));
+        Object.keys(PAGE_VIEWS).forEach(function (view) {
+            Router.register(view, pageHandler(PAGE_VIEWS[view]));
+        });
 
         // Leaving a dossier for any section-scroll view hides the outlet
         // again, so the page underneath is not stuck behind it.
@@ -309,17 +349,31 @@
         // these handlers existed; re-dispatch now that they do.
         var hash = (global.location && global.location.hash) || "";
         var current = Router.matchRoute(hash);
-        if (current && (current.view === "company" || current.view === "person" || current.view === "agency")) {
+        if (current && PAGE_VIEWS[current.view]) {
             Router.dispatch(hash);
         }
     }
+
+    /**
+     * Router view name -> dossier builder. Keys MUST be the view names the
+     * router's ROUTES table produces: bind() registers exactly these, and
+     * the first shipped version registered "company" while the route
+     * matched as "company-dossier" -- every dossier link fell back to home.
+     * The test suite asserts each :slug route has a builder here.
+     */
+    var PAGE_VIEWS = {
+        "company-dossier": companyDossier,
+        "person-dossier": personDossier,
+        "agency-dossier": agencyDossier
+    };
 
     global.AuraDossier = {
         companyDossier: companyDossier,
         personDossier: personDossier,
         agencyDossier: agencyDossier,
         articleMentions: articleMentions,
-        renderDossierHTML: renderDossierHTML
+        renderDossierHTML: renderDossierHTML,
+        PAGE_VIEWS: PAGE_VIEWS
     };
 
     if (global.document && typeof global.document.addEventListener === "function") {

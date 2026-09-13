@@ -417,6 +417,8 @@
     }
 
     global.AuraPSC = {
+        personKey: personKey,
+        companyKey: companyKey,
         emptyStateFor: emptyStateFor,
         BANDS: BANDS,
         BAND_BY_ID: BAND_BY_ID,
