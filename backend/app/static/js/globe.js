@@ -22,6 +22,9 @@
 
     var DEG = Math.PI / 180;
 
+    // Paint cadence cap, matching backdrop.js.
+    var FRAME_MS = 1000 / 30;
+
     // Secrecy jurisdictions that recur in Nigerian beneficial-ownership chains.
     // Sourced from the intermediate-entity vehicles the PSC panel already
     // tracks (e.g. Tengen Holdings (Mauritius) Limited on Access Holdings).
@@ -180,17 +183,15 @@
         this.render();
     };
 
-    /** Rotate about Y (spin), then about X (fixed tilt), then project. */
+    /** Rotate about Y (spin), then about X (fixed tilt), then project.
+     * The four trig values are hoisted into render(): they are constant
+     * within a frame, and this runs per vertex (~4700 dots plus arcs). */
     GlobeRenderer.prototype.project = function (v) {
-        var cosR = Math.cos(this.rotation);
-        var sinR = Math.sin(this.rotation);
-        var x = v.x * cosR + v.z * sinR;
-        var z = -v.x * sinR + v.z * cosR;
+        var x = v.x * this._cosR + v.z * this._sinR;
+        var z = -v.x * this._sinR + v.z * this._cosR;
 
-        var cosT = Math.cos(this.tilt);
-        var sinT = Math.sin(this.tilt);
-        var y = v.y * cosT - z * sinT;
-        var z2 = v.y * sinT + z * cosT;
+        var y = v.y * this._cosT - z * this._sinT;
+        var z2 = v.y * this._sinT + z * this._cosT;
 
         // Mild perspective: the near face reads slightly larger, which is what
         // sells the sphere as a solid rather than a flat disc of dots. Kept
@@ -207,6 +208,10 @@
     GlobeRenderer.prototype.render = function () {
         var ctx = this.ctx;
         if (!ctx || !this.width) return;
+        this._cosR = Math.cos(this.rotation);
+        this._sinR = Math.sin(this.rotation);
+        this._cosT = Math.cos(this.tilt);
+        this._sinT = Math.sin(this.tilt);
         ctx.clearRect(0, 0, this.width, this.height);
 
         this.drawDots(ctx);
@@ -338,18 +343,23 @@
 
     GlobeRenderer.prototype.tick = function (now) {
         if (!this.running) return;
+        this.frame = global.requestAnimationFrame(this.tick.bind(this));
+        // Capped at 30fps like backdrop.js: the slow-spinning dot sphere
+        // reads identically at 30 and 60, at half the paint cost.
+        if (now - this.lastPaint < FRAME_MS) return;
         var dt = this.lastTime ? Math.min((now - this.lastTime) / 1000, 0.05) : 0.016;
         this.lastTime = now;
+        this.lastPaint = now;
         this.elapsed += dt;
         this.rotation += this.speed * dt;
         this.render();
-        this.frame = global.requestAnimationFrame(this.tick.bind(this));
     };
 
     GlobeRenderer.prototype.start = function () {
         if (this.running) return;
         this.running = true;
         this.lastTime = 0;
+        this.lastPaint = 0;
         this.frame = global.requestAnimationFrame(this.tick.bind(this));
     };
 
@@ -398,20 +408,23 @@
             motionQuery.addEventListener("change", sync);
         }
 
+        var observer = null;
         if (typeof global.IntersectionObserver === "function") {
-            new global.IntersectionObserver(function (entries) {
+            observer = new global.IntersectionObserver(function (entries) {
                 onScreen = entries[0].isIntersecting;
                 sync();
-            }, { threshold: 0.01 }).observe(canvas);
+            }, { threshold: 0.01 });
+            observer.observe(canvas);
         }
 
         global.document.addEventListener("visibilitychange", sync);
 
         var resizeTimer = null;
-        global.addEventListener("resize", function () {
+        function onResize() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function () { renderer.resize(); }, 150);
-        });
+        }
+        global.addEventListener("resize", onResize);
 
         sync();
 
@@ -423,7 +436,19 @@
                 sync();
                 return userPaused;
             },
-            routes: OFFSHORE_ROUTES.slice()
+            routes: OFFSHORE_ROUTES.slice(),
+            // Router view swaps must be able to tear the globe down; without
+            // this, every listener and the rAF loop outlive the canvas.
+            destroy: function () {
+                renderer.stop();
+                if (typeof motionQuery.removeEventListener === "function") {
+                    motionQuery.removeEventListener("change", sync);
+                }
+                if (observer) observer.disconnect();
+                global.document.removeEventListener("visibilitychange", sync);
+                global.removeEventListener("resize", onResize);
+                clearTimeout(resizeTimer);
+            }
         };
     }
 

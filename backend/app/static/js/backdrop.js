@@ -206,16 +206,28 @@
         global.document.addEventListener("visibilitychange", sync);
 
         var resizeTimer = null;
-        global.addEventListener("resize", function () {
+        function onResize() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function () { backdrop.resize(); }, 200);
-        });
+        }
+        global.addEventListener("resize", onResize);
 
         sync();
 
         return {
             backdrop: backdrop,
-            setPaused: function (value) { paused = !!value; sync(); }
+            setPaused: function (value) { paused = !!value; sync(); },
+            // Router view swaps must be able to tear the backdrop down;
+            // without this, the listeners and rAF loop outlive the canvas.
+            destroy: function () {
+                backdrop.stop();
+                if (typeof motionQuery.removeEventListener === "function") {
+                    motionQuery.removeEventListener("change", sync);
+                }
+                global.document.removeEventListener("visibilitychange", sync);
+                global.removeEventListener("resize", onResize);
+                clearTimeout(resizeTimer);
+            }
         };
     }
 
