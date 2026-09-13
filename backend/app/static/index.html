@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=4.8">
+    <link rel="stylesheet" href="css/styles.css?v=4.9">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -56,6 +56,19 @@
     <div class="scroll-rail" id="scroll-rail" aria-hidden="true"><span></span></div>
 
     <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Global search palette (Ctrl+K / Cmd+K). Hidden until opened;
+         index built lazily from the already-published static JSON. -->
+    <div id="search-palette" class="search-palette" role="dialog" aria-modal="true"
+         aria-label="Global search" hidden>
+        <div class="palette-box glass">
+            <input id="search-palette-input" type="search" autocomplete="off"
+                   placeholder="Search companies, people, PSC records, articles…"
+                   aria-label="Search query">
+            <ul id="search-palette-results" class="palette-results" role="listbox"></ul>
+            <p class="palette-hint">↑↓ select · Enter open · Esc close</p>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Header -->
@@ -87,6 +100,10 @@
                      needs a visible pause control. prefers-reduced-motion is
                      not a substitute, because it is an OS-level setting the
                      user may not want to change globally. -->
+                <button id="search-open-btn" class="btn btn-icon"
+                        title="Search (Ctrl+K)" aria-label="Open global search (Control+K)">
+                    <i data-lucide="search"></i>
+                </button>
                 <button id="motion-toggle" class="btn btn-icon" aria-pressed="false"
                         title="Pause background motion" aria-label="Pause background motion">
                     <i data-lucide="pause"></i>
@@ -625,6 +642,8 @@
     <script src="js/entity-key.js?v=4.6"></script>
     <script src="js/report-markdown.js?v=4.6"></script>
     <script src="js/router.js?v=4.6"></script>
+    <script src="js/search.js?v=5.1"></script>
+    <script src="js/dossier.js?v=5.1"></script>
     <script src="js/datatable.js?v=4.6"></script>
     <script src="js/insights.js?v=4.8"></script>
     <script src="js/app.js?v=5.0"></script>
