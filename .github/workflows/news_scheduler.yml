@@ -25,6 +25,10 @@ concurrency:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    # Hard ceiling: a hung LLM provider used to hold the job for the
+    # 6-hour Actions default. Normal runs finish well inside 30 minutes
+    # even with the per-article rate-limit sleeps.
+    timeout-minutes: 90
 
     steps:
       - name: Checkout Code
@@ -77,12 +81,6 @@ jobs:
           # the capture worked and the samples evaporated, which made the claim
           # that a corpus would accumulate on its own quietly false.
           file_pattern: "backend/app/static/data/* evals/corpus/*"
-
-      - name: Deploy static folder to gh-pages branch
-        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
-        with:
-          folder: backend/app/static
-          branch: gh-pages
 
       # A red run is only useful if someone sees it. The 2026-07-30 outage ran
       # for days unnoticed. Reuses a single open issue so repeated failures
@@ -147,3 +145,30 @@ jobs:
               --label pipeline-failure \
               --body "$BODY"
           fi
+
+  deploy-pages:
+    name: Deploy to gh-pages
+    needs: run-pipeline
+    runs-on: ubuntu-latest
+    # Shares the pages-deploy concurrency group with deploy_pages.yml: the
+    # deploy used to run inside run-pipeline under the news-pipeline group,
+    # so a docs push and a scheduler run could push gh-pages concurrently
+    # and race. The data commit lands on main with [skip ci], which is why
+    # deploy_pages.yml cannot cover this path itself. Newest deploy wins,
+    # so cancelling an in-progress one is safe.
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: true
+    steps:
+      - name: Checkout post-commit main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Deploy static folder to gh-pages branch
+        # Pinned to a commit SHA so a moved tag cannot inject code into a
+        # workflow that holds a contents:write token
+        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
+        with:
+          folder: backend/app/static
+          branch: gh-pages
