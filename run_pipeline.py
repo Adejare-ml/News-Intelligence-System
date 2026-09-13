@@ -462,6 +462,18 @@ def run_pipeline(seed: bool = False):
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
     export_static_json_database()
 
+    # 5. Optional high-risk webhook: gated on the ALERT_WEBHOOK_URL secret
+    # and strictly best-effort -- an alerting side channel must never fail
+    # the pipeline it reports on. Only this run's records are considered,
+    # so a standing high-risk story does not re-alert every cycle.
+    if new_articles_count > 0:
+        try:
+            from backend.app.services.feeds import high_risk_alerts, post_alert_webhook
+            post_alert_webhook(os.environ.get("ALERT_WEBHOOK_URL", ""),
+                               high_risk_alerts(run_records))
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning(f"Alert webhook skipped: {exc}")
+
     # Partial cascade failures: real articles were published above, but the run
     # still fails red so the degraded provider chain gets noticed.
     if cascade_failures > 0:
@@ -1074,6 +1086,15 @@ def export_static_json_database():
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
         json.dump(slim_report_rows(reports), f, default=str, indent=2)
+
+    # RSS feed over the same editions -- static, like everything else
+    # GitHub Pages serves. Best-effort: syndication must not fail a run.
+    try:
+        from backend.app.services.feeds import build_rss_feed
+        with open(os.path.join(DATA_DIR, "feed.xml"), "w", encoding="utf-8") as f:
+            f.write(build_rss_feed(reports))
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"RSS feed export skipped: {exc}")
 
     # 3. Generate Knowledge Graph nodes and edges (Deterministic IDs)
     nodes = []
