@@ -25,6 +25,10 @@ concurrency:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    # Hard ceiling: a hung LLM provider used to hold the job for the
+    # 6-hour Actions default. Normal runs finish well inside 30 minutes
+    # even with the per-article rate-limit sleeps.
+    timeout-minutes: 90
 
     steps:
       - name: Checkout Code
