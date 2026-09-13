@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // hosts use it; ?static=1 forces static mode even there.
     const devHost = window.location.hostname === "localhost" || window.location.hostname.startsWith("127.");
     const API_BASE = (devHost && !window.location.search.includes("static=1")) ? "/api/v1" : "data";
+    // Static-mode flag consumed throughout this file. The static-first
+    // rewrite replaced the old host sniff with API_BASE above but left the
+    // seven consumers of this name in place, and the resulting
+    // ReferenceError took down stats, feed and graph on every deployment.
+    const isGitHubPages = API_BASE === "data";
 
     // State Variables
     let currentCategory = "";
