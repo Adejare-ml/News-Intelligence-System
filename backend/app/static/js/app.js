@@ -1831,14 +1831,14 @@ document.addEventListener("DOMContentLoaded", () => {
             pscData = pscData.filter(r => getRecordRedFlags(r).length > 0);
         } else if (activePscFilter === "tier1") {
             pscData = pscData.filter(r => {
-                const val = parseFloat((r["Percentage"] || "").replace("%", ""));
-                return !isNaN(val) && val >= 75;
+                const val = window.AuraPSC.toPercent(r["Percentage"]);
+                return val !== null && val >= 75;
             });
         } else if (activePscFilter === "nigeriaband") {
             // The band that exists only under the Nigerian 5% threshold.
             pscData = pscData.filter(r => {
-                const val = parseFloat((r["Percentage"] || "").replace("%", ""));
-                return !isNaN(val) && val >= 5 && val < 25;
+                const val = window.AuraPSC.toPercent(r["Percentage"]);
+                return val !== null && val >= 5 && val < 25;
             });
         } else if (activePscFilter === "indirect") {
             pscData = pscData.filter(r => 
@@ -1963,105 +1963,149 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    /**
+     * PSC register table columns for AuraDataTable (Slice F). Cell markup is
+     * built here with esc() applied to every data field, so the columns can
+     * declare html: true safely. Sorting: "Percentage" and "_flagCount" sort
+     * numerically through the engine's toPercent, text columns by locale.
+     */
+    const PSC_TABLE_COLUMNS = [
+        {
+            key: "Person Name", label: "Beneficial Owner", html: true,
+            format: (v, r) => {
+                const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
+                return `<div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(v || "N/A")}</div>`
+                    + `<div style="font-size:11px; color:var(--text-muted); margin-top:2px;">`
+                    + (isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span> ' : '')
+                    + `${esc(r["Board Role"] || "Significant Shareholder")}</div>`;
+            }
+        },
+        {
+            key: "Company", label: "Target & Holding Entity", html: true,
+            format: (v, r) => {
+                const holdingEntity = r["Intermediate Entities"] || "Direct Shareholder";
+                const indirect = holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding";
+                return `<div style="font-weight:600; color:#a78bfa;">${esc(v || "N/A")}</div>`
+                    + `<div style="font-size:11px; color:#9ca3af; margin-top:2px;">`
+                    + (indirect
+                        ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}`
+                        : '<span style="color:#6b7280;">Direct Shareholder</span>')
+                    + `</div>`;
+            }
+        },
+        {
+            key: "Nature of Control", label: "Control Tier & Nature", html: true,
+            format: (v, r) => {
+                const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "Tier 2";
+                return `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>`
+                    + `<div style="font-size:11.5px; color:#d1d5db; line-height:1.3;">${esc(v || "N/A")}</div>`;
+            }
+        },
+        {
+            key: "Percentage", label: "Equity Stake", html: true,
+            format: (v, r) => `<div style="font-weight:700; color:#f472b6; font-size:14px;">${esc(v || "N/A")}</div>`
+                + `<div style="font-size:10px; color:var(--text-muted);">`
+                + (r["Direct %"] ? `Dir: ${esc(r["Direct %"])}` : '')
+                + (r["Indirect %"] ? ` | Ind: ${esc(r["Indirect %"])}` : '')
+                + `</div>`
+        },
+        {
+            key: "_flagCount", label: "Anomalies & Red Flags", html: true,
+            format: (v, r) => r._flagsHTML
+        },
+        {
+            key: "Regulatory Filing Ref", label: "Filing Ref", html: true,
+            format: (v) => `<code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">`
+                + (v ? esc(v) : '<span style="color:var(--text-muted);">Not disclosed</span>') + `</code>`
+        },
+        {
+            key: "_action", label: "Action", sortable: false, html: true,
+            format: () => `<button type="button" class="btn btn-secondary psc-dossier-btn" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">`
+                + `<i data-lucide="eye" style="width:12px; height:12px;"></i> Dossier</button>`
+        }
+    ];
+
+    /**
+     * A row activation: person rows navigate to the Slice E dossier page,
+     * which aggregates every holding for that person; a row with no person
+     * name (rare, malformed extraction) falls back to the legacy modal by
+     * exact record index.
+     */
+    function openPscRowDossier(row) {
+        const name = String(row["Person Name"] || "").trim();
+        const EK = window.AuraEntityKey;
+        if (name && EK && typeof EK.slugify === "function") {
+            window.location.hash = "#/person/" + EK.slugify(name);
+            return;
+        }
+        if (typeof row._index === "number") window.openPSCDossier(row._index);
+    }
+
+    /** Re-wire per-render row affordances; row listeners die with the markup. */
+    function wirePscTableRows(pageInfo) {
+        pscTableContainer.querySelectorAll(".aura-table tbody tr").forEach((tr, i) => {
+            const row = pageInfo.rows[i];
+            if (!row) return;
+            tr.classList.add("psc-table-row");
+            tr.tabIndex = 0;
+            tr.setAttribute("role", "button");
+            const open = (e) => {
+                e.stopPropagation();
+                openPscRowDossier(row);
+            };
+            tr.addEventListener("click", open);
+            tr.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    open(e);
+                }
+            });
+        });
+        if (window.lucide) window.lucide.createIcons();
+    }
+
+    // The DataTable controller is bound once and fed rows on every filter
+    // change; binding per render would stack container click listeners --
+    // the exact leak class Package 7 removed elsewhere.
+    let pscTableCtl = null;
+
     function renderPSCTableRows() {
         if (!pscTableContainer) return;
         const pscData = getFilteredPSCData();
 
         if (!pscData || pscData.length === 0) {
+            // Replacing the markup wholesale is safe: the controller's
+            // delegated listener finds no sort/pager targets in here.
             pscTableContainer.innerHTML = pscEmptyStateHTML();
             bindPscEmptyStateActions(pscTableContainer);
             return;
         }
 
-        let html = `
-            <table style="width:100%; border-collapse:collapse; font-size:12.5px; text-align:left; color:#e5e7eb;">
-                <thead>
-                    <tr style="border-bottom:1px solid rgba(255,255,255,0.12); color:var(--text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.5px;">
-                        <th style="padding:10px;">Beneficial Owner</th>
-                        <th style="padding:10px;">Target & Holding Entity</th>
-                        <th style="padding:10px;">Control Tier & Nature</th>
-                        <th style="padding:10px;">Equity Stake</th>
-                        <th style="padding:10px;">Anomalies & Red Flags</th>
-                        <th style="padding:10px;">Filing Ref</th>
-                        <th style="padding:10px; text-align:right;">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-        `;
-
         // One index map instead of two indexOf scans per rendered row --
         // this re-renders on every search keystroke, and getRecordRedFlags
         // was already rewritten once to kill the same O(n^2) shape.
         const pscIndexOf = new Map(allPscRecords.map((rec, i) => [rec, i]));
-        pscData.forEach(r => {
+        const rows = pscData.map(r => {
             const flags = getRecordRedFlags(r);
-            const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
-            const holdingEntity = r["Intermediate Entities"] || "Direct Shareholder";
-            const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "Tier 2";
-
-            html += `
-                <tr class="psc-table-row" data-psc-index="${pscIndexOf.get(r)}" tabindex="0" role="button">
-                    <td style="padding:12px 10px;">
-                        <div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(r["Person Name"] || "N/A")}</div>
-                        <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:4px; margin-top:2px;">
-                            ${isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span>' : ''}
-                            <span>${esc(r["Board Role"] || "Significant Shareholder")}</span>
-                        </div>
-                    </td>
-                    <td style="padding:12px 10px;">
-                        <div style="font-weight:600; color:#a78bfa;">${esc(r["Company"] || "N/A")}</div>
-                        <div style="font-size:11px; color:#9ca3af; margin-top:2px;">
-                            ${holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding" ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}` : '<span style="color:#6b7280;">Direct Shareholder</span>'}
-                        </div>
-                    </td>
-                    <td style="padding:12px 10px; max-width:180px;">
-                        <span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>
-                        <div style="font-size:11.5px; color:#d1d5db; line-height:1.3;">${esc(r["Nature of Control"] || "N/A")}</div>
-                    </td>
-                    <td style="padding:12px 10px;">
-                        <div style="font-weight:700; color:#f472b6; font-size:14px;">${esc(r["Percentage"] || "N/A")}</div>
-                        <div style="font-size:10px; color:var(--text-muted);">
-                            ${r["Direct %"] ? `Dir: ${esc(r["Direct %"])}` : ''} ${r["Indirect %"] ? `| Ind: ${esc(r["Indirect %"])}` : ''}
-                        </div>
-                    </td>
-                    <td style="padding:12px 10px;">
-                        ${flags.length > 0 ? flags.map(f => pscFlagBadge(f)).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
-                    </td>
-                    <td style="padding:12px 10px;">
-                        <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${r["Regulatory Filing Ref"] ? esc(r["Regulatory Filing Ref"]) : "<span style=\"color:var(--text-muted);\">Not disclosed</span>"}</code>
-                    </td>
-                    <td style="padding:12px 10px; text-align:right;">
-                        <button class="btn btn-secondary psc-dossier-btn" data-psc-index="${pscIndexOf.get(r)}" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
-                            <i data-lucide="eye" style="width:12px; height:12px;"></i> Dossier
-                        </button>
-                    </td>
-                </tr>
-            `;
-        });
-        html += `</tbody></table>`;
-        pscTableContainer.innerHTML = html;
-
-        // Bound via listeners, not inline onclick: inline handlers are blocked
-        // by the CSP, and a name interpolated into an onclick string lets an
-        // apostrophe break out of the JS literal. Rows are keyed by index so
-        // that a person who is a PSC of two companies opens the right record.
-        pscTableContainer.querySelectorAll("[data-psc-index]").forEach(el => {
-            const open = (e) => {
-                e.stopPropagation();
-                window.openPSCDossier(parseInt(el.getAttribute("data-psc-index"), 10));
-            };
-            el.addEventListener("click", open);
-            if (el.tagName === "TR") {
-                el.addEventListener("keydown", (e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        open(e);
-                    }
-                });
-            }
+            return Object.assign({}, r, {
+                _index: pscIndexOf.get(r),
+                _flagCount: flags.length,
+                _flagsHTML: flags.length > 0
+                    ? flags.map(f => pscFlagBadge(f)).join('')
+                    : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'
+            });
         });
 
-        if (window.lucide) window.lucide.createIcons();
+        if (pscTableCtl) {
+            pscTableCtl.setRows(rows);
+            return;
+        }
+        pscTableCtl = window.AuraDataTable.bind(pscTableContainer, {
+            rows: rows,
+            columns: PSC_TABLE_COLUMNS,
+            pageSize: 25,
+            onRender: wirePscTableRows
+        });
     }
 
     // Render SVG Interactive UBO Network Map
@@ -2192,14 +2236,19 @@ document.addEventListener("DOMContentLoaded", () => {
     window.openPSCDossier = function(ref) {
         if (!pscDossierModal || !pscDossierBody) return;
 
+        // Identity goes through the engine's personKey (trimmed + folded):
+        // the previous inline .toLowerCase() comparison missed rows whose
+        // extracted name carried stray whitespace.
+        const PSC = window.AuraPSC;
         let record = null;
         let records = [];
         if (typeof ref === "number" && !isNaN(ref)) {
             record = allPscRecords[ref] || null;
-            const name = record ? (record["Person Name"] || "") : "";
-            records = allPscRecords.filter(r => (r["Person Name"] || "").toLowerCase() === name.toLowerCase());
+            const key = record ? PSC.personKey(record) : "";
+            records = key ? allPscRecords.filter(r => PSC.personKey(r) === key) : (record ? [record] : []);
         } else {
-            records = allPscRecords.filter(r => (r["Person Name"] || "").toLowerCase() === String(ref || "").toLowerCase());
+            const key = PSC.personKey({ "Person Name": ref });
+            records = key ? allPscRecords.filter(r => PSC.personKey(r) === key) : [];
             record = records[0] || null;
         }
         if (!record) return;
