@@ -1,5 +1,65 @@
 [
   {
+    "ID": 5971,
+    "Time": "2026-09-13 04:45:04",
+    "Title": "Entrepreneur Nguyen Thi Nga conferred Labor Hero, BRG Group and SeABank awarded First-class Labor Medals",
+    "Source": "naijaonpoint_ng",
+    "URL": "https://naijaonpoint.com.ng/entrepreneur-nguyen-thi-nga-conferred-labor-hero-brg-group-and-seabank-awarded-first-class-labor-medals/",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Entrepreneur Nguyen Thi Nga was conferred the Labor Hero title, while BRG Group and SeABank received First-class Labor Medals for their contributions.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5968,
+    "Time": "2026-09-12T08:05:40Z",
+    "Title": "Again, Nigerians lose savings to Ponzi scheme",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/again-nigerians-lose-savings-to-ponzi-scheme/",
+    "Category": "Legal",
+    "Risk Score": 85,
+    "Summary": "Investors in the online platform PXES have suffered significant financial losses after the entity ceased operations and stopped paying returns. The platform is identified as a Ponzi scheme.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5963,
+    "Time": "Sun, 13 Sep 2026 14:51:12 GMT",
+    "Title": "CPPE warns against return to petrol subsidy, proposes targeted relief - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM215LUlCckRsZV84Qm5ia1VMSUVFVGhEazM0Y0p4VkhuVW5aZWVqcmpaZjZYTUstaWJyQThxRm9RSkFQR1FZcEU0MmV5OTBpeF9GOFJPUDl5Ung1MG9Ta3IzYjhpRUFSNzRJbkdQZTV2NEtYblNZYzRkTkx1YlpyNHVZNFFzelRwQ0V4OFVJLWFEV2NNX3pScnd1ZWwxVE54SEpmZTFIdFVELTd4TjNxYUtzWXJCcEhUOGNPT1BITVlDSUtXTzJuOEF4MDdxWHc?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Centre for Public Expenditure (CPPE) has cautioned the Nigerian government against returning to a general petrol subsidy, instead advocating for the implementation of targeted relief measures.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5958,
+    "Time": "Sun, 13 Sep 2026 15:27:44 GMT",
+    "Title": "NAMA removes CAT III ILS over frequent failures, safety concerns \u2013 Director - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQdW01YnRqOUp6RXUtdTctRFUxcXJqbWtnUkE1dDEySUVfNTJSRG1JNnpFLVg1WFo5OXFuNk1LRG9ZSkw1Vk9HNEJvMUJBTVd5aVlLUEZlZ2otVWt0V0lQOTJIQTJHSXZabk9wV1BJbkdQQlpkbWNjVk1rSURxY1JZd2t4VWxBSE9IcUJpeHVzQ2Zzc0ItSFpXdFJ5UGVSbEt2WGpOQm5YODNUb05YQi1uR3c2aF8ydmJwUWZMUDhOdVViX08yTERDZg?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The Nigerian Airports Management Authority (NAMA) has removed the Category III Instrument Landing System (ILS) due to frequent technical failures and safety concerns.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5953,
+    "Time": "Sun, 13 Sep 2026 07:49:53 GMT",
+    "Title": "Petrol price rises in Abuja as Dangote increases gantry rate - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSm1nTS1pU1J6NGJvMFQ1REN4aDNrMFJoU2M3em9JcnhGMHpqWkdIX0pBM2R1Y0xBdWxzeVJWamZRaWIzOGNBX3NzMGI4MHZsWTg4Smt6TVZqTEJyVnU3Um5VaGxJRGs0dHFTbGxvdTYtWW5yejNZWXhPSHhZekVLWDR1UVljWktr?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Dangote Refinery has increased its gantry rate, leading to a rise in petrol prices in Abuja.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5941,
     "Time": "2026-09-12T10:44:59Z",
     "Title": "Dangote adjusts petrol price 6.7% to N1,350/litre",
@@ -656,66 +716,6 @@
     "Category": "Government",
     "Risk Score": 20,
     "Summary": "The Nigeria Civil Aviation Authority (NCAA) and the National Insurance Commission (NAICOM) have signed a Memorandum of Understanding to enhance aviation insurance oversight. The partnership aims to improve protection for airlines and passengers through strengthened regulatory collaboration.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5687,
-    "Time": "Wed, 09 Sep 2026 17:20:48 GMT",
-    "Title": "MTN Nigeria reaches record 100.9m subscriber base - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5kbVFhQVFWRGgtdTFQanJsY1p3SXRtODVVanFMek4wSlFodVFxZlBuRmdCaU1iTlE0WW1maUx2SkJuRlhKUHlpTHVmM1dXOWR5TGFUYWVHVVd3ODFhbjF5N2RvcVhGenVQTmFKZnEwVnZwZXhNR3lHYmp3?oc=5",
-    "Category": "Company",
-    "Risk Score": 0,
-    "Summary": "MTN Nigeria has reached a record subscriber base of 100.9 million.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5685,
-    "Time": "Thu, 10 Sep 2026 04:12:00 GMT",
-    "Title": "Operator of 40MW VI plant secures power generation licence - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSVdkWDRFS21leXUtM2QzYUlVdUJiaWtZdWpXdEUxbWlDNGxDWnFndkRHNzYwVFJUc0lNdHNhUTNjbUJsNW1odTBNeU4tN29ZbGg4VndVYnVqQVZWRk9vd2FjU01IUWtmYnR5Tm9IN0FyUHN4T0xoRjJZeld6aW1nRkIzckd3N3JrSUVZazBhcjlrbHVVanlXbkcxUE50Zw?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "An operator of a 40MW power plant in Victoria Island (VI) has secured a formal power generation licence.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5683,
-    "Time": "Thu, 10 Sep 2026 13:47:47 GMT",
-    "Title": "Bauchi govt, UNFPA move curtail sexual harassment, GBV in higher institutions - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRWFpdnhKc2hmZEktazZUdEdleGNuN2xaSGJxX2RjNjludjJmRUtBYjAtYVJfNlEwNWpoNmN5SjBfcmdfYS1xODl1Rkd3UUNzdmJXRmxoZXJLSDhwZ092NE4xS0FPSFpPRC1fbDdUcnhCWUpmN0tCbVdpdFRXQndYWFNlQ2xzTDlRNnhfaXNKYVJmaXdpN1g5WmtTREhEMmdpbHdDekNpZ3dHSW9heVVHSDkwLXl1Zw?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Bauchi State Government and the United Nations Population Fund (UNFPA) are collaborating to implement measures to curtail sexual harassment and gender-based violence (GBV) within higher education institutions.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5681,
-    "Time": "Thu, 10 Sep 2026 04:03:00 GMT",
-    "Title": "NCC deploys central device registry to tackle phone theft, illegal imports - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNM0tHcFlOb3V4eVhqYU0wci1IVXc3SmpzTUtoV2hHWVR1ZzJqd2NGSGxmUlNNSFowZ1VLVExTaHI3dWdjcjZ2a3pkcV9KZExkSmxERU5KajlNNnZJWndFRVpSZEx1TXZnM2o2dmJJTGR3eU83aTkxbFFDbWJWc0xBSkh6WWVnaG9OM19Yb096NHgzZzJhbV9KdFhUbUhVOE9y?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigerian Communications Commission (NCC) has deployed a central device registry designed to combat phone theft and the illegal importation of mobile devices.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5672,
-    "Time": "2026-09-09T06:35:58Z",
-    "Title": "Appeal Court upholds 490-year jail term for ex-NEXIM bank MD Orya",
-    "Source": "Vanguard",
-    "URL": "https://www.vanguardngr.com/2026/09/appeal-court-upholds-490-year-jail-term-for-ex-nexim-bank-md-orya/",
-    "Category": "Legal",
-    "Risk Score": 85,
-    "Summary": "The Court of Appeal in Abuja has upheld the conviction and 490-year prison sentence for Robert Orya, the former Managing Director of the Nigeria Export-Import Bank (NEXIM Bank). The ruling relates to the misappropriation of N2.4 billion in bank funds.",
     "Status": "Unread",
     "Engine": "ollama"
   }
