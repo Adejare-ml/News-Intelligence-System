@@ -2541,12 +2541,30 @@ document.addEventListener("DOMContentLoaded", () => {
                     // filename here is either the Generated timestamp ID or filename string
                     const match = allReports.find(r => r.Generated === filename || r.filename === filename || (r.Date && filename.includes((r.Date||"").replace(/-/g, ""))));
                     const reportText = match ? (match.Content || match[""] || match.content) : null;
-                    
-                    if (reportText && reportText.trim()) {
+
+                    // The row's exact Archive File is authoritative:
+                    // reports.json no longer inlines Content for editions
+                    // that have one, and the date-guessed fallback below
+                    // 404s on timestamped filenames (report_YYYYMMDD_HHMMSS).
+                    // Same path-traversal guard as psc-report.js.
+                    let fetchSuccess = false;
+                    const archiveFile = match && /^[\w.-]+\.md$/.test(match["Archive File"] || "")
+                        ? match["Archive File"] : null;
+                    if (archiveFile) {
+                        try {
+                            const archRes = await fetch(`${API_BASE}/archives/${encodeURIComponent(archiveFile)}`);
+                            if (archRes.ok) {
+                                reportMdContent.innerHTML = parseMarkdown(await archRes.text());
+                                fetchSuccess = true;
+                            }
+                        } catch (e) {}
+                    }
+
+                    if (!fetchSuccess && reportText && reportText.trim()) {
                         reportMdContent.innerHTML = parseMarkdown(reportText);
-                    } else {
-                        // Fallback 1: try fetching archived file by date formatted name
-                        let fetchSuccess = false;
+                    } else if (!fetchSuccess) {
+                        // Fallback: try fetching an archived file by its
+                        // date-formatted name (legacy date-only editions).
                         try {
                             const dateClean = (filename || "").replace(/[^0-9]/g, "");
                             if (dateClean.length >= 8) {
