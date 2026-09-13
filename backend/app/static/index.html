@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=4.6">
+    <link rel="stylesheet" href="css/styles.css?v=4.7">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -153,6 +153,17 @@
             <div id="alerts-list" class="alerts-list"></div>
         </section>
 
+        <!-- "What changed this cycle": rendered from data/changes.json by
+             insights.js; stays hidden when the file is absent (old deploys,
+             first run) or the diff is empty. -->
+        <section class="glass insight-panel" id="cycle-changes-panel" hidden>
+            <div class="panel-header">
+                <h2>What changed this cycle</h2>
+                <span class="insight-generated" id="cycle-changes-generated"></span>
+            </div>
+            <div class="insight-groups" id="cycle-changes-body"></div>
+        </section>
+
         <!-- ==========================================================
              THE BRIEF — promoted out of a modal onto the page itself.
              In a dialog it was un-linkable, un-printable and invisible
@@ -208,6 +219,10 @@
                     </button>
                     <button id="register-csv-btn" class="btn btn-secondary btn-sm">
                         <i data-lucide="download"></i> Export CSV
+                    </button>
+                    <button id="register-json-btn" class="btn btn-secondary btn-sm"
+                            title="Annotated JSON: CAMA band and red flags per record">
+                        <i data-lucide="braces"></i> Export JSON
                     </button>
                 </div>
             </div>
@@ -352,6 +367,22 @@
                         <!-- Charts are invisible to assistive tech, so the same
                              numbers are also exposed as text. -->
                         <p class="chart-summary sr-only" id="mix-chart-summary"></p>
+                    </section>
+
+                    <!-- Pipeline health: run volume, high-risk rate and engine
+                         mix from reports.json/latest.json, rendered by
+                         insights.js; hidden until the data exists. -->
+                    <section class="workspace-panel glass chart-panel" id="health-panel" hidden>
+                        <div class="panel-header">
+                            <h2>Pipeline health</h2>
+                        </div>
+                        <p class="chart-summary" id="health-summary"></p>
+                        <div class="chart-container">
+                            <canvas id="health-chart" aria-label="Daily article volume and high-risk rate"></canvas>
+                        </div>
+                        <div class="chart-container chart-container-sm">
+                            <canvas id="engine-chart" aria-label="Extraction engine mix"></canvas>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -577,13 +608,14 @@
     <script src="js/motion.js?v=4.6"></script>
     <script src="js/backdrop.js?v=4.6"></script>
     <script src="js/globe-data.js?v=4.6"></script>
-    <script src="js/globe.js?v=4.6"></script>
+    <script src="js/globe.js?v=4.7"></script>
     <script src="js/psc-core.js?v=4.6"></script>
     <script src="js/entity-key.js?v=4.6"></script>
     <script src="js/report-markdown.js?v=4.6"></script>
     <script src="js/router.js?v=4.6"></script>
     <script src="js/datatable.js?v=4.6"></script>
-    <script src="js/app.js?v=4.6"></script>
-    <script src="js/psc-report.js?v=4.6"></script>
+    <script src="js/insights.js?v=4.7"></script>
+    <script src="js/app.js?v=4.7"></script>
+    <script src="js/psc-report.js?v=4.7"></script>
 </body>
 </html>
