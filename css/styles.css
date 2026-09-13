@@ -62,6 +62,14 @@
     padding: 0;
 }
 
+/* Any author display rule (e.g. .workspace-panel's flex, the search
+   palette's fixed flex overlay) beats the UA's [hidden] { display: none },
+   so hidden panels were rendering. This restores the attribute's contract
+   for every current and future element; JS toggles el.hidden throughout. */
+[hidden] {
+    display: none !important;
+}
+
 :focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
