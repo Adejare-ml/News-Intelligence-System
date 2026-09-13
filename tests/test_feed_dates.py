@@ -18,7 +18,9 @@ from backend.app.services.ingestion import parse_feed_date
     ("2026-08-09T10:00:00", datetime(2026, 8, 9, 10, 0, 0)),
     ("2026-08-09 10:00:00", datetime(2026, 8, 9, 10, 0, 0)),
     ("2026-08-09T10:00:00Z", datetime(2026, 8, 9, 10, 0, 0)),
-    ("2026-08-09T10:00:00.123456", datetime(2026, 8, 9, 10, 0, 0)),
+    # Microseconds survive now that ISO strings parse via fromisoformat;
+    # the old strptime path truncated them at the first ".".
+    ("2026-08-09T10:00:00.123456", datetime(2026, 8, 9, 10, 0, 0, 123456)),
 ])
 def test_recognised_formats_still_parse(value, expected):
     assert parse_feed_date(value) == expected

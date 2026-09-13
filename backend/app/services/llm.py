@@ -187,7 +187,11 @@ class LLMService:
         # 3. Local spaCy Heuristics Fallback (opt-in only)
         if settings.ALLOW_HEURISTIC_FALLBACK:
             logger.warning("All LLM providers failed or unconfigured. ALLOW_HEURISTIC_FALLBACK is on; using local NLP heuristics.")
-            result = cls._run_local_fallback(title, text)
+            # Through the validator like every other branch: the heuristic
+            # dicts miss keys the schema promises (significant_control on
+            # the happy path, relevant on the exception path), and this was
+            # the one cascade branch allowed to skip the guarantee.
+            result = cls._validate_llm_output(cls._run_local_fallback(title, text))
             result["engine"] = "local-heuristics"
             return result
 
@@ -301,9 +305,13 @@ class LLMService:
             model = genai.GenerativeModel(settings.GEMINI_MODEL or DEFAULT_GEMINI_MODEL)
             prompt = build_report_prompt(raw_data_string)
             
+            # Explicit deadline: without it a hung connection holds the
+            # pipeline indefinitely -- the Actions job would burn its
+            # 6-hour default before the cascade ever saw a failure.
             response = model.generate_content(
                 prompt,
-                generation_config={"response_mime_type": "text/plain"}
+                generation_config={"response_mime_type": "text/plain"},
+                request_options={"timeout": 90}
             )
             return response.text.strip()
         except Exception as e:
@@ -315,9 +323,15 @@ class LLMService:
         """Generates executive markdown report using NVIDIA API."""
         try:
             from openai import OpenAI
+            # The SDK's defaults are a 600s read timeout and 2 automatic
+            # retries; combined with the model fallback below that allowed
+            # a single hung or rate-limited endpoint to stall a run for
+            # tens of minutes per article.
             client = OpenAI(
                 base_url=NVIDIA_BASE_URL,
-                api_key=settings.NVIDIA_API_KEY
+                api_key=settings.NVIDIA_API_KEY,
+                timeout=90.0,
+                max_retries=1
             )
             prompt = build_report_prompt(raw_data_string)
             primary = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
@@ -330,7 +344,12 @@ class LLMService:
                     ]
                 )
             except Exception as inner_e:
-                logger.warning(f"NVIDIA report model '{primary}' failed, retrying with '{fallback}'. Error: {inner_e}")
+                # Only a missing/retired model is rescued by trying a
+                # different model name; auth and quota failures would fail
+                # again identically and hide the primary's real error.
+                if not cls._is_model_unavailable(inner_e):
+                    raise
+                logger.warning(f"NVIDIA report model '{primary}' unavailable, retrying with '{fallback}'. Error: {inner_e}")
                 response = client.chat.completions.create(
                     model=fallback,
                     messages=[
@@ -367,7 +386,8 @@ class LLMService:
         """Generates executive markdown report using OpenAI API."""
         try:
             from openai import OpenAI
-            client = OpenAI(api_key=settings.OPENAI_API_KEY)
+            # Explicit deadline; the SDK default is 600s + 2 retries.
+            client = OpenAI(api_key=settings.OPENAI_API_KEY, timeout=90.0, max_retries=1)
             prompt = build_report_prompt(raw_data_string)
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
@@ -418,9 +438,13 @@ class LLMService:
         """Runs the NVIDIA NIM API as a load-shedding backup."""
         try:
             from openai import OpenAI
+            # See _generate_report_nvidia: explicit deadline instead of the
+            # SDK's 600s default, and one retry instead of two.
             client = OpenAI(
                 base_url=NVIDIA_BASE_URL,
-                api_key=settings.NVIDIA_API_KEY
+                api_key=settings.NVIDIA_API_KEY,
+                timeout=60.0,
+                max_retries=1
             )
 
             safe_title = title.replace("<", "").replace(">", "")
@@ -438,7 +462,9 @@ class LLMService:
                     ]
                 )
             except Exception as inner_e:
-                logger.warning(f"NVIDIA model '{primary}' failed, retrying with '{fallback}'. Error: {inner_e}")
+                if not cls._is_model_unavailable(inner_e):
+                    raise
+                logger.warning(f"NVIDIA model '{primary}' unavailable, retrying with '{fallback}'. Error: {inner_e}")
                 response = client.chat.completions.create(
                     model=fallback,
                     messages=[
@@ -455,6 +481,22 @@ class LLMService:
         except Exception as e:
             logger.error(f"NVIDIA API execution error: {e}")
             return None
+
+    @staticmethod
+    def _is_model_unavailable(err: Exception) -> bool:
+        """True when an API error means "this model name doesn't exist here".
+
+        That is the only failure a different model name can fix. Auth (401),
+        quota (429) and network errors fail identically on the fallback
+        model, and retrying them doubled the pressure on a rate-limited
+        endpoint while reporting the fallback's error instead of the real
+        one.
+        """
+        status = getattr(err, "status_code", None)
+        if status == 404:
+            return True
+        text = str(err).lower()
+        return "not found" in text or "no such model" in text or "does not exist" in text
 
     @staticmethod
     def _balanced_json_slice(text: str) -> str:
@@ -643,8 +685,22 @@ class LLMService:
             "procurement": None
         }
         
-        # Merge dicts
+        # Merge on "missing OR null", not just missing. The SYSTEM_PROMPT
+        # explicitly tells the model it may set fields to null when
+        # relevant is false, and `data.get(key, default)` at the call sites
+        # returns the None rather than the default when the key is present
+        # -- so "organizations": null used to reach run_pipeline's
+        # `for org in analysis.get("organizations", [])` as None and kill
+        # the whole run with a TypeError, mid-batch, after the article row
+        # was already written. Same null-vs-missing trap the PSC scalar
+        # fields already guard against in run_pipeline.
         for key, val in schema_defaults.items():
-            if key not in data:
+            if data.get(key) is None and val is not None:
                 data[key] = val
+        # The three list fields must actually be lists -- a model that
+        # answers with a string or dict here would crash iteration just
+        # like null did.
+        for key in ("organizations", "people", "significant_control"):
+            if not isinstance(data.get(key), list):
+                data[key] = []
         return data
