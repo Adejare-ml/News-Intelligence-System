@@ -51,6 +51,11 @@ jobs:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           NEWSAPI_KEY_2: ${{ secrets.NEWSAPI_KEY_2 }}
           NEWSDATA_KEY: ${{ secrets.NEWSDATA_KEY }}
+          # Declared in config and consumed by fetch_gnews(), but never
+          # passed here -- the adapter was a permanent no-op in production
+          # while appearing active in code and docs. Empty secret = still a
+          # clean skip.
+          GNEWS_KEY: ${{ secrets.GNEWS_KEY }}
           GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
