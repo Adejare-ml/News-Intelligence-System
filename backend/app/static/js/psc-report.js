@@ -17,10 +17,13 @@
     var MD = global.AuraReportMarkdown;
     var Motion = global.AuraMotion;
 
-    var isStatic = global.location.hostname.indexOf("github.io") !== -1
-        || global.location.protocol === "file:"
-        || global.location.search.indexOf("static=1") !== -1;
-    var DATA = isStatic ? "data" : "/api/v1";
+    // Static by default, like app.js: only the README's local uvicorn flow
+    // serves /api/v1, so only dev hosts point at it. ?static=1 forces
+    // static mode even there.
+    var devHost = global.location.hostname === "localhost"
+        || global.location.hostname.indexOf("127.") === 0;
+    var DATA = (devHost && global.location.search.indexOf("static=1") === -1)
+        ? "/api/v1" : "data";
 
     // revealedOnce: the entrance animation belongs to the first paint only.
     // Re-renders (filter clicks, search keystrokes) inject fresh [data-reveal]
@@ -28,6 +31,22 @@
     // opacity 0 forever and filtering blanked the register for every visitor
     // without prefers-reduced-motion.
     var state = { records: [], summary: null, reports: [], filter: "all", query: "", revealedOnce: false };
+
+    // The globe mounts before the register data arrives; loadRegister swaps
+    // its illustrative arc set for the jurisdictions the data actually
+    // names, so the handle outlives bootVisuals().
+    var globeHandle = null;
+
+    function updateGlobeCaption(routes, derived) {
+        var detail = el("globe-caption-detail");
+        if (!detail || !routes || !routes.length) return;
+        detail.textContent = routes.length
+            + (derived
+                ? " secrecy jurisdictions named in the current register — including "
+                : " secrecy jurisdictions that recur in Nigerian ownership chains — including ")
+            + routes.slice(0, 3).map(function (r) { return r.label; }).join(", ")
+            + ".";
+    }
 
     function el(id) { return doc.getElementById(id); }
 
@@ -67,16 +86,11 @@
             // the globe reads as a static image.
             globe = global.AuraGlobe.mount(globeCanvas, { speed: 0.25, tilt: 18 });
             if (globe) {
+                globeHandle = globe;
                 handles.push({
                     pause: function (p) { if (globe.isPaused() !== p) globe.toggle(); }
                 });
-                var detail = el("globe-caption-detail");
-                if (detail) {
-                    detail.textContent = globe.routes.length
-                        + " secrecy jurisdictions that recur in Nigerian ownership chains — including "
-                        + globe.routes.slice(0, 3).map(function (r) { return r.label; }).join(", ")
-                        + ".";
-                }
+                updateGlobeCaption(globe.routes, false);
             }
         }
 
@@ -475,6 +489,18 @@
                 state.records = Array.isArray(records) ? records : [];
                 state.summary = PSC.summarise(state.records);
 
+                // Data-driven arcs: point the globe at the jurisdictions the
+                // register actually names. No match keeps the static
+                // illustration rather than blanking the globe.
+                if (globeHandle && globeHandle.renderer && global.AuraGlobe
+                        && typeof global.AuraGlobe.routesFromRecords === "function") {
+                    var derived = global.AuraGlobe.routesFromRecords(state.records);
+                    if (derived) {
+                        globeHandle.renderer.setRoutes(derived);
+                        updateGlobeCaption(derived, true);
+                    }
+                }
+
                 var banner = el("register-demo-banner");
                 if (banner) banner.hidden = !state.summary.isDemo;
 
@@ -600,6 +626,9 @@
 
         var csv = el("register-csv-btn");
         if (csv) csv.addEventListener("click", exportRegisterCsv);
+
+        var jsonBtn = el("register-json-btn");
+        if (jsonBtn) jsonBtn.addEventListener("click", exportRegisterJson);
     }
 
     /**
@@ -641,15 +670,51 @@
 
         // The filename says which slice of the register this is, so a
         // "red-flags only" file cannot be mistaken for the whole register.
+        downloadRegisterFile(csv, "text/csv;charset=utf-8;", ".csv");
+    }
+
+    /**
+     * JSON export: the annotated records, not the raw rows. The raw file is
+     * already public at data/significant_control.json -- what this button
+     * adds is the analysis layer (CAMA band, red flags, worst-first order)
+     * for the exact slice on screen.
+     */
+    function exportRegisterJson() {
+        var items = visibleItems();
+        if (!items.length) return;
+
+        var payload = {
+            generated: new Date().toISOString(),
+            demo: !!(state.summary && state.summary.isDemo),
+            scope: { filter: state.filter, query: state.query },
+            count: items.length,
+            records: items.map(function (item) {
+                return {
+                    record: item.record,
+                    band: item.band ? { id: item.band.id, label: item.band.label } : null,
+                    red_flags: item.flags.map(function (f) {
+                        return { id: f.id, title: f.title, severity: f.severity };
+                    })
+                };
+            })
+        };
+        if (payload.demo) {
+            payload.notice = "NOT FOR COMPLIANCE USE - contains illustrative seed records";
+        }
+        downloadRegisterFile(JSON.stringify(payload, null, 2), "application/json", ".json");
+    }
+
+    /** Shared Blob download; the filename says which slice this is. */
+    function downloadRegisterFile(content, mime, ext) {
         var scope = (state.filter !== "all" ? "_" + state.filter : "")
             + (state.query ? "_search" : "");
 
-        var blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+        var blob = new Blob([content], { type: mime });
         var url = URL.createObjectURL(blob);
         var link = doc.createElement("a");
         link.href = url;
         link.download = (state.summary && state.summary.isDemo ? "DEMO_" : "")
-            + "aura_psc_register" + scope + "_" + new Date().toISOString().slice(0, 10) + ".csv";
+            + "aura_psc_register" + scope + "_" + new Date().toISOString().slice(0, 10) + ext;
         doc.body.appendChild(link);
         link.click();
         doc.body.removeChild(link);

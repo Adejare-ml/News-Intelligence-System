@@ -115,13 +115,18 @@ def main():
         print(f"skipped {skipped} unverified draft(s) -- set verified_by to include them")
 
     # Below this, a win on the validation split is noise rather than evidence.
+    # A clean exit-0 skip, not an error: every current gold row is an
+    # unverified draft (verified_by null), which is the normal state until a
+    # human labels them -- the weekly workflow went red on it every run,
+    # which trains people to ignore a check that will one day mean something.
     if len(examples) < 10:
         detail = (f" ({skipped} unverified draft(s) were skipped)" if skipped else "")
-        raise SystemExit(
-            f"Only {len(examples)} verified gold examples{detail}. Refusing to run: a "
-            "validation split this small cannot distinguish a better prompt from a "
-            "lucky one."
+        print(
+            f"Only {len(examples)} verified gold examples{detail}. Skipping optimisation: "
+            "a validation split this small cannot distinguish a better prompt from a "
+            "lucky one. Label drafts by setting verified_by (see evals/README.md)."
         )
+        raise SystemExit(0)
 
     trainset, valset = split(examples, args.val_fraction)
     print(f"verified={len(examples)} unverified={skipped} "

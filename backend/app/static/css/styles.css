@@ -1748,3 +1748,52 @@ div.vis-tooltip {
     color: var(--text-muted);
     font-size: 13px;
 }
+
+/* =====================================================================
+   Insight panels (what changed this cycle + pipeline health)
+   ===================================================================== */
+.insight-panel {
+    padding: var(--space-5);
+    margin-block: var(--space-5);
+}
+.insight-panel .panel-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+.insight-generated {
+    color: var(--text-dim, #94a3b8);
+    font-size: 0.8rem;
+}
+.insight-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+.insight-group h3 {
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 var(--space-2);
+}
+.insight-count {
+    color: var(--accent, #67e8f9);
+    margin-left: var(--space-1);
+}
+.insight-group ul {
+    margin: 0;
+    padding-left: var(--space-4);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.insight-more {
+    list-style: none;
+    color: var(--text-dim, #94a3b8);
+}
+.chart-container-sm {
+    max-height: 220px;
+    margin-top: var(--space-4);
+}

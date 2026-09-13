@@ -31,7 +31,12 @@ SHEETS_CONFIG = {
     ],
     # "Archive File" resolves an edition to its exact archived markdown file.
     # Added after runs 2-4 of each day were found to overwrite run 1's archive.
-    "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement", "Generated", "Archive File", "Content"]
+    # "Cascade Failures" and "Run Seconds" persist per-run pipeline health --
+    # both were computed and then dropped on the floor; the dashboard's
+    # health panel needs them as a time series. plan_header_migration brings
+    # existing sheets up to this schema by column name.
+    "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement",
+                      "Cascade Failures", "Run Seconds", "Generated", "Archive File", "Content"]
 }
 
 def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, Any]:

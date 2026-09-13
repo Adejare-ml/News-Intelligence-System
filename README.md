@@ -63,7 +63,7 @@ Degraded local extraction still exists for offline development, but only behind 
 - **Beneficial ownership tracking** — PSC disclosures with direct/indirect ownership split, intermediate holding vehicles, PEP status, regulatory filing references, and control lineage
 - **Multi-source aggregation** — Google News RSS plus NewsAPI, GNews, NewsData, and The Guardian
 - **Relevance filtering** — off-topic stories are recorded as `Filtered` rather than published, and their URLs are cached so they are never re-analyzed
-- **Executive reporting** — a daily Markdown brief with Key Developments, High Risk Alerts, Beneficial Ownership & PSC Disclosures, and Procurement & Board Changes, archived per day
+- **Executive reporting** — a daily Markdown brief with Key Developments, High Risk Alerts, Beneficial Ownership & PSC Disclosures, and Procurement & Board Changes, archived per run. Each edition covers the whole calendar day up to the run time (every bullet cites its source article), so the last run of the day publishes the complete daily picture rather than only its own batch
 - **Knowledge graph** — entity relationship map linking people, companies, agencies, and PSC holders
 - **Interactive dashboard** — intelligence feed with live search and risk filtering, PSC transparency panel with per-holder dossiers, and CSV export
 - **Provenance** — every article and report records the engine that generated it
@@ -129,7 +129,7 @@ Google Sheets acts as the database. Each tab maps to a `SHEETS_CONFIG` entry in 
 | Tab | Contents |
 |:---|:---|
 | **Articles** | Analyzed stories with category, risk score, summary, status, engine |
-| **Significant Control** | PSC disclosures — 15 columns covering ownership split, holding vehicles, PEP status, filing refs |
+| **Significant Control** | PSC disclosures — 18 columns covering ownership split, holding vehicles, PEP status, filing refs |
 | **Companies** / **People** / **Government Agencies** | Resolved entities with mention counts |
 | **Procurement** | Contract awards: agency, contractor, amount, project |
 | **Daily Reports** | Run statistics and the full generated report |
@@ -139,8 +139,12 @@ Each run exports these to `backend/app/static/data/*.json` for the dashboard and
 ## 🧪 Testing
 
 ```bash
-pytest tests/ -q     # 32 tests
+pytest -q                    # Python suite (CI installs requirements-ci.txt)
+node tests/frontend/run.js   # frontend suite, no dependencies or build step
 ```
+
+Counts grow with every PR; CI runs both suites on each pull request and
+keeps them blocking, so the badge state is the authoritative number.
 
 ## 📦 Tech Stack
 

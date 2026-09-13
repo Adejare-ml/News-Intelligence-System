@@ -80,3 +80,38 @@ jobs:
       # dashboard has no build. See tests/frontend/run.js.
       - name: Run frontend suite
         run: node tests/frontend/run.js
+
+  cache-buster:
+    name: Cache-buster check
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    # Advisory: index.html's ?v= tokens are the only cache invalidation the
+    # static site has, so shipping a JS/CSS change without bumping one means
+    # returning visitors run the cached old code against the new markup.
+    # A warning is also the right ceiling -- comment-only edits are fine.
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Warn when shipped assets change without a version bump
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          CHANGED=$(git diff --name-only "$BASE...$HEAD" -- \
+            'backend/app/static/js/*.js' 'backend/app/static/css/*.css')
+          if [ -z "$CHANGED" ]; then
+            echo "No shipped JS/CSS changed."
+            exit 0
+          fi
+          if git diff "$BASE...$HEAD" -- backend/app/static/index.html | grep -q '?v='; then
+            echo "Assets changed and index.html touched a ?v= token."
+            exit 0
+          fi
+          echo "::warning file=backend/app/static/index.html::Shipped JS/CSS changed without a ?v= cache-buster bump in index.html; returning visitors will keep the cached old assets."
+          printf 'Changed without a version bump:\n%s\n' "$CHANGED"
+          exit 1
