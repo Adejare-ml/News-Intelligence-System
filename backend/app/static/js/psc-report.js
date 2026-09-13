@@ -17,10 +17,13 @@
     var MD = global.AuraReportMarkdown;
     var Motion = global.AuraMotion;
 
-    var isStatic = global.location.hostname.indexOf("github.io") !== -1
-        || global.location.protocol === "file:"
-        || global.location.search.indexOf("static=1") !== -1;
-    var DATA = isStatic ? "data" : "/api/v1";
+    // Static by default, like app.js: only the README's local uvicorn flow
+    // serves /api/v1, so only dev hosts point at it. ?static=1 forces
+    // static mode even there.
+    var devHost = global.location.hostname === "localhost"
+        || global.location.hostname.indexOf("127.") === 0;
+    var DATA = (devHost && global.location.search.indexOf("static=1") === -1)
+        ? "/api/v1" : "data";
 
     // revealedOnce: the entrance animation belongs to the first paint only.
     // Re-renders (filter clicks, search keystrokes) inject fresh [data-reveal]

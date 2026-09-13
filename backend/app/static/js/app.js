@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Determine dynamic serverless database configuration
-    // ?static=1 forces serverless/static data mode for local previews without the FastAPI backend
-    const isGitHubPages = window.location.hostname.includes("github.io") || window.location.protocol === "file:" || window.location.search.includes("static=1");
-    const API_BASE = isGitHubPages ? "data" : "/api/v1";
+    // Static data is the default: the shipped site is GitHub Pages -- or any
+    // mirror or custom domain -- with no backend, and defaulting the other
+    // way made every non-github.io host 404 against /api/v1. The FastAPI
+    // tree exists only in the README's local uvicorn flow, so only dev
+    // hosts use it; ?static=1 forces static mode even there.
+    const devHost = window.location.hostname === "localhost" || window.location.hostname.startsWith("127.");
+    const API_BASE = (devHost && !window.location.search.includes("static=1")) ? "/api/v1" : "data";
 
     // State Variables
     let currentCategory = "";
