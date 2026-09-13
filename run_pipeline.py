@@ -141,6 +141,7 @@ def main():
 
 def run_pipeline(seed: bool = False):
     logger.info("Initializing serverless pipeline run...")
+    run_started = datetime.now()
     os.makedirs(DATA_DIR, exist_ok=True)
 
     # 1. Fetch Candidate Articles
@@ -201,6 +202,8 @@ def run_pipeline(seed: bool = False):
             "High Risk": 0,
             "Appointments": 0,
             "Procurement": 0,
+            "Cascade Failures": 0,
+            "Run Seconds": round((datetime.now() - run_started).total_seconds()),
             "Generated": f"{generated_message} ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})"
         })
         return
@@ -420,7 +423,11 @@ def run_pipeline(seed: bool = False):
 
     # 3. Compile and Write Daily Report Row
     if new_articles_count > 0 or seed:
-        compile_daily_report(run_records, prior_today)
+        compile_daily_report(
+            run_records, prior_today,
+            cascade_failures=cascade_failures,
+            run_seconds=round((datetime.now() - run_started).total_seconds()),
+        )
 
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
     export_static_json_database()
@@ -516,14 +523,100 @@ def report_payload(records: List[Dict[str, Any]], summary_limit: int = 400) -> L
     return payload
 
 
-def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None):
+def _loose_number(value):
+    """Loose numeric parse for sheet cells: '12.5%', '12,5', 40 -> float, else None."""
+    s = str(value if value is not None else "").strip().replace("%", "").replace(",", "")
+    if not s:
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def compute_cycle_changes(prev: Dict[str, Any], curr: Dict[str, Any]) -> Dict[str, Any]:
+    """Pure diff between the previous static-JSON snapshot and this run's.
+
+    `prev`/`curr` carry the exported row lists under "articles", "companies",
+    "people" and "psc"; missing keys and a missing prev (first run, an old
+    deploy) mean empty. Entities key on their name columns, PSC rows on
+    (Person Name, Company), articles on URL. Everything returned is sorted
+    so the payload is deterministic for a given pair of snapshots.
+    """
+    prev = prev or {}
+    curr = curr or {}
+
+    def names(rows, key):
+        return {str(r.get(key, "")).strip() for r in rows or [] if str(r.get(key, "")).strip()}
+
+    new_companies = sorted(names(curr.get("companies"), "Company") - names(prev.get("companies"), "Company"))
+    new_people = sorted(names(curr.get("people"), "Name") - names(prev.get("people"), "Name"))
+
+    def psc_key(row):
+        return (str(row.get("Person Name", "")).strip().lower(),
+                str(row.get("Company", "")).strip().lower())
+
+    def psc_entry(row):
+        return {"person": str(row.get("Person Name", "")).strip(),
+                "company": str(row.get("Company", "")).strip()}
+
+    prev_psc = {psc_key(r): r for r in prev.get("psc") or [] if any(psc_key(r))}
+    curr_psc = {psc_key(r): r for r in curr.get("psc") or [] if any(psc_key(r))}
+
+    psc_added = [psc_entry(r) for k, r in sorted(curr_psc.items()) if k not in prev_psc]
+    psc_removed = [psc_entry(r) for k, r in sorted(prev_psc.items()) if k not in curr_psc]
+    psc_changed = []
+    for k, r in sorted(curr_psc.items()):
+        if k not in prev_psc:
+            continue
+        before = _loose_number(prev_psc[k].get("Percentage"))
+        after = _loose_number(r.get("Percentage"))
+        if before is not None and after is not None and abs(before - after) > 1e-9:
+            entry = psc_entry(r)
+            entry["from"] = before
+            entry["to"] = after
+            psc_changed.append(entry)
+
+    prev_urls = {str(r.get("URL", "")) for r in prev.get("articles") or [] if r.get("URL")}
+    new_high_risk = []
+    for r in curr.get("articles") or []:
+        url = str(r.get("URL", ""))
+        if url and url in prev_urls:
+            continue
+        score = _loose_number(r.get("Risk Score"))
+        # 70 mirrors the dashboard's alert threshold (app.js).
+        if score is not None and score >= 70:
+            new_high_risk.append({"title": str(r.get("Title", "")), "url": url, "risk": score})
+    new_high_risk.sort(key=lambda e: (-e["risk"], e["title"]))
+
+    return {
+        "new_companies": new_companies,
+        "new_people": new_people,
+        "psc_added": psc_added,
+        "psc_removed": psc_removed,
+        "psc_changed": psc_changed,
+        "new_high_risk": new_high_risk,
+        "counts": {
+            "new_companies": len(new_companies),
+            "new_people": len(new_people),
+            "psc_added": len(psc_added),
+            "psc_removed": len(psc_removed),
+            "psc_changed": len(psc_changed),
+            "new_high_risk": len(new_high_risk),
+        },
+    }
+
+
+def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None,
+                         cascade_failures: int = 0, run_seconds: int = None):
     """Compiles statistics and writes the daily intelligence summary markdown.
 
     `records` is this run's fully-analysed output; `prior_today` is the
     reduced form of articles earlier runs published today. The markdown brief
     and its headline statistics cover the whole day; the Daily Reports row
     written at the end stays strictly per-run, because day totals are
-    computed by summing those rows.
+    computed by summing those rows. `cascade_failures` and `run_seconds`
+    are persisted on that row as the pipeline-health time series.
     """
     now = datetime.now()
     prior_today = prior_today or []
@@ -665,6 +758,8 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         "High Risk": high_risk_count,
         "Appointments": appointments_count,
         "Procurement": procurement_count,
+        "Cascade Failures": cascade_failures,
+        "Run Seconds": "" if run_seconds is None else run_seconds,
         "Generated": now.strftime("%Y-%m-%d %H:%M:%S"),
         # The exact archive filename, so a reader can resolve an edition to
         # its document instead of guessing from the date.
@@ -762,6 +857,35 @@ def export_static_json_database():
         if not relevance.is_off_topic(p.get("Organization"))
         and not relevance.is_off_topic(p.get("Name"))
     ]
+
+    # "What changed this cycle": diff against the snapshots the previous run
+    # left on disk, before they are overwritten below. A missing or
+    # unreadable file (first run, fresh checkout) diffs as empty, so the
+    # first changes.json simply reports everything as new.
+    def _prev_snapshot(name):
+        try:
+            with open(os.path.join(DATA_DIR, name), encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return []
+
+    changes = compute_cycle_changes(
+        {
+            "articles": _prev_snapshot("latest.json"),
+            "companies": _prev_snapshot("companies.json"),
+            "people": _prev_snapshot("people.json"),
+            "psc": _prev_snapshot("significant_control.json"),
+        },
+        {
+            "articles": articles_sorted,
+            "companies": companies,
+            "people": people,
+            "psc": psc_records,
+        },
+    )
+    changes["generated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(os.path.join(DATA_DIR, "changes.json"), "w", encoding="utf-8") as f:
+        json.dump(changes, f, default=str, indent=2)
 
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
