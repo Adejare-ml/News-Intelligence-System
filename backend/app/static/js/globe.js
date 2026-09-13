@@ -45,6 +45,71 @@
         { label: "Abuja", lat: 9.06, lon: 7.49 }
     ];
 
+    /**
+     * Jurisdictions the arcs can point at, with the text markers that
+     * identify them inside a PSC record's "Intermediate Entities" cell.
+     * A superset of OFFSHORE_ROUTES: the static list is the fallback
+     * illustration, this catalog is what the live data can select from.
+     * Marker matching is lowercase substring, mirroring psc-core's
+     * R7_SECRECY_VEHICLE rule.
+     */
+    var JURISDICTION_CATALOG = [
+        { label: "Mauritius", lat: -20.35, lon: 57.55, markers: ["mauritius"] },
+        { label: "London", lat: 51.51, lon: -0.13, markers: ["london", "united kingdom"] },
+        { label: "Jersey", lat: 49.21, lon: -2.13, markers: ["jersey"] },
+        { label: "Cayman Islands", lat: 19.31, lon: -81.25, markers: ["cayman"] },
+        { label: "British Virgin Islands", lat: 18.42, lon: -64.64, markers: ["british virgin", "bvi", "tortola"] },
+        { label: "Dubai (DIFC)", lat: 25.20, lon: 55.27, markers: ["dubai", "difc", "united arab emirates"] },
+        { label: "Delaware", lat: 39.16, lon: -75.52, markers: ["delaware"] },
+        { label: "Singapore", lat: 1.35, lon: 103.82, markers: ["singapore"] },
+        { label: "Zurich", lat: 47.37, lon: 8.54, markers: ["zurich", "switzerland", "swiss", "geneva"] },
+        { label: "Panama", lat: 8.98, lon: -79.52, markers: ["panama"] },
+        { label: "Luxembourg", lat: 49.61, lon: 6.13, markers: ["luxembourg"] },
+        { label: "Cyprus", lat: 35.17, lon: 33.36, markers: ["cyprus", "nicosia"] },
+        { label: "Seychelles", lat: -4.68, lon: 55.49, markers: ["seychelles"] },
+        { label: "Bahamas", lat: 25.06, lon: -77.35, markers: ["bahamas", "nassau"] },
+        { label: "Bermuda", lat: 32.30, lon: -64.78, markers: ["bermuda"] },
+        { label: "Isle of Man", lat: 54.15, lon: -4.48, markers: ["isle of man"] },
+        { label: "Guernsey", lat: 49.45, lon: -2.54, markers: ["guernsey"] },
+        { label: "Gibraltar", lat: 36.14, lon: -5.35, markers: ["gibraltar"] }
+    ];
+
+    /**
+     * Derives the arc set from real PSC records: jurisdictions actually
+     * named in "Intermediate Entities", weighted by how many records name
+     * them, worst-offender first. Pure and DOM-free so the headless suite
+     * can pin it. Returns null when nothing matches -- the caller keeps
+     * the static illustration rather than showing an empty globe.
+     */
+    function routesFromRecords(records) {
+        var counts = {};
+        for (var r = 0; r < (records || []).length; r++) {
+            var text = String((records[r] || {})["Intermediate Entities"] || "").toLowerCase();
+            if (!text) continue;
+            for (var c = 0; c < JURISDICTION_CATALOG.length; c++) {
+                var entry = JURISDICTION_CATALOG[c];
+                for (var m = 0; m < entry.markers.length; m++) {
+                    if (text.indexOf(entry.markers[m]) !== -1) {
+                        counts[entry.label] = (counts[entry.label] || 0) + 1;
+                        break;
+                    }
+                }
+            }
+        }
+        var routes = [];
+        for (var i = 0; i < JURISDICTION_CATALOG.length; i++) {
+            var cat = JURISDICTION_CATALOG[i];
+            if (counts[cat.label]) {
+                routes.push({ label: cat.label, lat: cat.lat, lon: cat.lon, weight: counts[cat.label] });
+            }
+        }
+        if (!routes.length) return null;
+        routes.sort(function (a, b) {
+            return b.weight - a.weight || (a.label < b.label ? -1 : 1);
+        });
+        return routes;
+    }
+
     /** Unit vector on the sphere for a geographic coordinate. */
     function toVector(lat, lon) {
         var phi = lat * DEG;
@@ -152,19 +217,29 @@
      * ports so the bundle does not all originate from a single point.
      */
     GlobeRenderer.prototype.buildArcs = function () {
+        var routes = (this.options.routes && this.options.routes.length)
+            ? this.options.routes : OFFSHORE_ROUTES;
         var arcs = [];
-        for (var i = 0; i < OFFSHORE_ROUTES.length; i++) {
+        for (var i = 0; i < routes.length; i++) {
             var origin = HOME_PORTS[i % HOME_PORTS.length];
-            var target = OFFSHORE_ROUTES[i];
+            var target = routes[i];
             arcs.push({
                 from: toVector(origin.lat, origin.lon),
                 to: toVector(target.lat, target.lon),
                 label: target.label,
+                weight: target.weight || 1,
                 // Staggered so pulses do not fire in lockstep.
-                phase: i / OFFSHORE_ROUTES.length
+                phase: i / routes.length
             });
         }
         return arcs;
+    };
+
+    /** Swap the arc set after mount (e.g. once real PSC data has loaded). */
+    GlobeRenderer.prototype.setRoutes = function (routes) {
+        this.options.routes = routes;
+        this.arcs = this.buildArcs();
+        this.render();
     };
 
     GlobeRenderer.prototype.resize = function () {
@@ -305,7 +380,9 @@
                 else ctx.lineTo(points[i].sx, points[i].sy);
             }
             ctx.strokeStyle = "rgba(244, 114, 182, 0.30)";
-            ctx.lineWidth = 1;
+            // Weight (records naming this jurisdiction) thickens the route,
+            // capped so one dominant vehicle cannot flood the render.
+            ctx.lineWidth = Math.min(2.4, 0.8 + 0.4 * arc.weight);
             ctx.stroke();
 
             // A packet travelling the route. Direction encodes the flow of
@@ -452,5 +529,10 @@
         };
     }
 
-    global.AuraGlobe = { mount: mount, routes: OFFSHORE_ROUTES.slice(), ports: HOME_PORTS.slice() };
+    global.AuraGlobe = {
+        mount: mount,
+        routes: OFFSHORE_ROUTES.slice(),
+        ports: HOME_PORTS.slice(),
+        routesFromRecords: routesFromRecords
+    };
 })(window);
