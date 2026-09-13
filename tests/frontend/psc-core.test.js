@@ -404,5 +404,28 @@
         });
     });
 
+    T.describe("entity identity keys (Slice F export)", function () {
+        T.it("personKey trims and case-folds, so ' Ada OBI ' matches 'ada obi'", function () {
+            T.eq(P.personKey({ "Person Name": "  Ada OBI " }), "ada obi");
+            T.eq(P.personKey({ "Person Name": "ada obi" }), "ada obi");
+            T.eq(P.personKey({}), "");
+            T.eq(P.personKey(null), "");
+        });
+
+        T.it("companyKey does the same for Company", function () {
+            T.eq(P.companyKey({ Company: " Dangote Cement PLC" }), "dangote cement plc");
+            T.eq(P.companyKey({}), "");
+            T.eq(P.companyKey(undefined), "");
+        });
+
+        T.it("keys agree with buildContext's internal grouping", function () {
+            var a = { "Person Name": "Ada Obi ", Company: "X Ltd", Percentage: "30%" };
+            var b = { "Person Name": " ada obi", Company: "Y Ltd", Percentage: "10%" };
+            var ctx = P.buildContext([a, b]);
+            T.eq(ctx.byPerson[P.personKey(a)].length, 2,
+                "both spellings land under one personKey bucket");
+        });
+    });
+
     T.report();
 })();

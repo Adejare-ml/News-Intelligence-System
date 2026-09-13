@@ -684,10 +684,19 @@ document.addEventListener("DOMContentLoaded", () => {
         loadNewsFeed();
     }
 
-    function renderAlertsList(alerts) {
-        const bandCount = document.getElementById("alert-band-count");
+    // Slice H: dismissal state. The alerts re-render from this cache when a
+    // dismissal changes, so the caller's data does not need re-fetching.
+    let lastAlertsData = [];
+    let showDismissedAlerts = false;
 
-        if (!alerts || alerts.length === 0) {
+    function renderAlertsList(alerts) {
+        // Zero-arg calls are internal re-renders after a dismissal; any
+        // explicit argument (even an absent latest_alerts) replaces the cache.
+        if (arguments.length > 0) lastAlertsData = alerts || [];
+        const bandCount = document.getElementById("alert-band-count");
+        const LS = window.AuraLocalStore;
+
+        if (!lastAlertsData || lastAlertsData.length === 0) {
             alertsList.innerHTML = `<p class="empty-note">No risk thresholds breached in the current window.</p>`;
             if (bandCount) bandCount.textContent = "Nothing above threshold";
             return;
@@ -695,24 +704,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Rank by severity then score. The panel previously rendered whatever
         // order the feed happened to be in, which buried the worst item.
-        const ranked = [...alerts].sort((a, b) => {
+        const ranked = [...lastAlertsData].sort((a, b) => {
             const sev = x => (String(x.severity).toLowerCase() === "critical" ? 1 : 0);
             if (sev(a) !== sev(b)) return sev(b) - sev(a);
             return ((b.article && b.article.risk_score) || 0) - ((a.article && a.article.risk_score) || 0);
         });
 
-        const criticals = ranked.filter(a => String(a.severity).toLowerCase() === "critical").length;
+        // Split out per-device dismissals; prune ids whose alerts left the
+        // window so the stored set cannot grow forever.
+        let visible = ranked;
+        let dismissed = [];
+        if (LS) {
+            const ids = LS.pruneDismissed(LS.loadDismissed(), ranked);
+            LS.saveDismissed(ids);
+            const parts = LS.splitAlerts(ranked, ids);
+            visible = parts.visible;
+            dismissed = parts.dismissed;
+        }
+
+        const criticals = visible.filter(a => String(a.severity).toLowerCase() === "critical").length;
         if (bandCount) {
-            bandCount.textContent = criticals
-                ? `${criticals} critical · ${ranked.length} elevated`
-                : `${ranked.length} elevated`;
+            bandCount.textContent = visible.length === 0
+                ? `All ${ranked.length} dismissed`
+                : (criticals
+                    ? `${criticals} critical · ${visible.length} elevated`
+                    : `${visible.length} elevated`);
         }
 
         alertsList.innerHTML = "";
-        ranked.forEach((alert, idx) => {
+
+        const setDismissed = (alert, on) => {
+            const id = LS.alertId(alert);
+            const ids = LS.loadDismissed().filter(x => x !== id);
+            if (on) ids.push(id);
+            LS.saveDismissed(ids);
+            renderAlertsList();
+        };
+
+        const renderItem = (alert, idx, isDismissed) => {
             const item = document.createElement("div");
             const severity = String(alert.severity || "info").toLowerCase();
-            item.className = `alert-item ${severity}`;
+            item.className = `alert-item ${severity}${isDismissed ? " dismissed" : ""}`;
             item.style.setProperty("--stagger", Math.min(idx, 8));
 
             const when = new Date(alert.created_at);
@@ -739,6 +771,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 </span>
             `;
 
+            if (LS) {
+                const dismissBtn = document.createElement("button");
+                dismissBtn.type = "button";
+                dismissBtn.className = "alert-dismiss-btn";
+                dismissBtn.textContent = isDismissed ? "Restore" : "✕";
+                dismissBtn.title = isDismissed
+                    ? "Restore this alert"
+                    : "Dismiss this alert (saved only in this browser)";
+                dismissBtn.setAttribute("aria-label", dismissBtn.title);
+                dismissBtn.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    setDismissed(alert, !isDismissed);
+                });
+                item.appendChild(dismissBtn);
+            }
+
             // Alerts sourced from articles open the full detail modal
             if (alert.article) {
                 item.classList.add("clickable");
@@ -753,7 +801,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
             alertsList.appendChild(item);
-        });
+        };
+
+        visible.forEach((alert, idx) => renderItem(alert, idx, false));
+        if (visible.length === 0 && !showDismissedAlerts) {
+            const note = document.createElement("p");
+            note.className = "empty-note";
+            note.textContent = `All ${dismissed.length} current alert${dismissed.length === 1 ? " is" : "s are"} dismissed on this device.`;
+            alertsList.appendChild(note);
+        }
+        if (showDismissedAlerts) {
+            dismissed.forEach((alert, idx) => renderItem(alert, visible.length + idx, true));
+        }
+
+        if (LS && dismissed.length > 0) {
+            const footer = document.createElement("div");
+            footer.className = "alert-dismiss-footer";
+            const toggle = document.createElement("button");
+            toggle.type = "button";
+            toggle.className = "btn btn-secondary alert-dismiss-toggle";
+            toggle.textContent = showDismissedAlerts
+                ? `Hide ${dismissed.length} dismissed`
+                : `${dismissed.length} dismissed — show`;
+            toggle.addEventListener("click", () => {
+                showDismissedAlerts = !showDismissedAlerts;
+                renderAlertsList();
+            });
+            footer.appendChild(toggle);
+            const note = document.createElement("span");
+            note.className = "alert-dismiss-note";
+            note.textContent = "Dismissals are saved only in this browser.";
+            footer.appendChild(note);
+            alertsList.appendChild(footer);
+        }
     }
 
     function renderMixChart(categories, risks) {
@@ -1174,6 +1254,79 @@ document.addEventListener("DOMContentLoaded", () => {
         function resetHighlight() {
             if (!canUpdateNodes) return;
             data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: '#e5e7eb' } })));
+            // Also restores edges a traced path recoloured.
+            data.edges.update(validEdges.map(e => ({ id: e.id, color: e.color, width: 1 })));
+        }
+
+        // ------------------------------------------------------------------
+        // Shortest-path tracing (Slice G). The compute lives in
+        // graph-path.js; this block owns the selects and the highlight,
+        // reusing the neighborhood-dim styling so a traced chain reads the
+        // same way as a clicked node's spotlight. Handlers are assigned,
+        // not added, so a graph rebuild never stacks listeners.
+        // ------------------------------------------------------------------
+        const pathFrom = document.getElementById("graph-path-from");
+        const pathTo = document.getElementById("graph-path-to");
+        const pathBtn = document.getElementById("graph-path-btn");
+        const pathClearBtn = document.getElementById("graph-path-clear");
+        const pathStatus = document.getElementById("graph-path-status");
+
+        function highlightPath(pathIds) {
+            if (!canUpdateNodes) return;
+            const inPath = new Set(pathIds);
+            data.nodes.update(nodes.map(n => inPath.has(n.id)
+                ? { id: n.id, color: n.color, font: { color: '#e5e7eb' } }
+                : {
+                    id: n.id,
+                    color: { background: 'rgba(75, 85, 99, 0.18)', border: 'rgba(255,255,255,0.04)' },
+                    font: { color: 'rgba(156, 163, 175, 0.3)' }
+                }
+            ));
+            const onPath = new Set(window.AuraGraphPath.pathEdgeIds(pathIds, validEdges));
+            data.edges.update(validEdges.map(e => onPath.has(e.id)
+                ? { id: e.id, color: { color: '#06b6d4', highlight: '#06b6d4' }, width: 2.5 }
+                : { id: e.id, color: e.color, width: 1 }
+            ));
+        }
+
+        function clearTracedPath() {
+            resetHighlight();
+            if (pathStatus) pathStatus.textContent = "";
+            if (pathClearBtn) pathClearBtn.hidden = true;
+        }
+
+        if (pathFrom && pathTo && pathBtn && pathClearBtn && pathStatus && window.AuraGraphPath) {
+            const optionsHtml = nodes.slice()
+                .sort((a, b) => String(a.label).localeCompare(String(b.label)))
+                .map(n => `<option value="${esc(n.id)}">${esc(n.label)}</option>`)
+                .join("");
+            pathFrom.innerHTML = `<option value="">Path from…</option>` + optionsHtml;
+            pathTo.innerHTML = `<option value="">to…</option>` + optionsHtml;
+            pathStatus.textContent = "";
+            pathClearBtn.hidden = true;
+
+            pathBtn.onclick = () => {
+                const fromId = pathFrom.value;
+                const toId = pathTo.value;
+                if (!fromId || !toId) {
+                    pathStatus.textContent = "Pick both entities first.";
+                    return;
+                }
+                const path = window.AuraGraphPath.shortestPath(nodes, validEdges, fromId, toId);
+                if (!path) {
+                    resetHighlight();
+                    pathClearBtn.hidden = true;
+                    pathStatus.textContent = "No connection between these two in the current graph.";
+                    return;
+                }
+                const labelOf = new Map(nodes.map(n => [n.id, n.label]));
+                highlightPath(path);
+                pathClearBtn.hidden = false;
+                pathStatus.textContent = path.length === 1
+                    ? "That is the same entity."
+                    : `${path.length - 1} hop${path.length === 2 ? "" : "s"}: ${path.map(id => labelOf.get(id)).join(" → ")}`;
+            };
+            pathClearBtn.onclick = clearTracedPath;
         }
 
         // Click interaction: spotlight the neighborhood and filter feed by entity;
@@ -1188,7 +1341,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     loadNewsFeed(clickedNode.label);
                 }
             } else {
-                resetHighlight();
+                clearTracedPath();
                 if (searchInput.value) {
                     searchInput.value = "";
                     loadNewsFeed("", currentCategory);
@@ -1831,14 +1984,14 @@ document.addEventListener("DOMContentLoaded", () => {
             pscData = pscData.filter(r => getRecordRedFlags(r).length > 0);
         } else if (activePscFilter === "tier1") {
             pscData = pscData.filter(r => {
-                const val = parseFloat((r["Percentage"] || "").replace("%", ""));
-                return !isNaN(val) && val >= 75;
+                const val = window.AuraPSC.toPercent(r["Percentage"]);
+                return val !== null && val >= 75;
             });
         } else if (activePscFilter === "nigeriaband") {
             // The band that exists only under the Nigerian 5% threshold.
             pscData = pscData.filter(r => {
-                const val = parseFloat((r["Percentage"] || "").replace("%", ""));
-                return !isNaN(val) && val >= 5 && val < 25;
+                const val = window.AuraPSC.toPercent(r["Percentage"]);
+                return val !== null && val >= 5 && val < 25;
             });
         } else if (activePscFilter === "indirect") {
             pscData = pscData.filter(r => 
@@ -1963,105 +2116,149 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    /**
+     * PSC register table columns for AuraDataTable (Slice F). Cell markup is
+     * built here with esc() applied to every data field, so the columns can
+     * declare html: true safely. Sorting: "Percentage" and "_flagCount" sort
+     * numerically through the engine's toPercent, text columns by locale.
+     */
+    const PSC_TABLE_COLUMNS = [
+        {
+            key: "Person Name", label: "Beneficial Owner", html: true,
+            format: (v, r) => {
+                const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
+                return `<div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(v || "N/A")}</div>`
+                    + `<div style="font-size:11px; color:var(--text-muted); margin-top:2px;">`
+                    + (isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span> ' : '')
+                    + `${esc(r["Board Role"] || "Significant Shareholder")}</div>`;
+            }
+        },
+        {
+            key: "Company", label: "Target & Holding Entity", html: true,
+            format: (v, r) => {
+                const holdingEntity = r["Intermediate Entities"] || "Direct Shareholder";
+                const indirect = holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding";
+                return `<div style="font-weight:600; color:#a78bfa;">${esc(v || "N/A")}</div>`
+                    + `<div style="font-size:11px; color:#9ca3af; margin-top:2px;">`
+                    + (indirect
+                        ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}`
+                        : '<span style="color:#6b7280;">Direct Shareholder</span>')
+                    + `</div>`;
+            }
+        },
+        {
+            key: "Nature of Control", label: "Control Tier & Nature", html: true,
+            format: (v, r) => {
+                const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "Tier 2";
+                return `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>`
+                    + `<div style="font-size:11.5px; color:#d1d5db; line-height:1.3;">${esc(v || "N/A")}</div>`;
+            }
+        },
+        {
+            key: "Percentage", label: "Equity Stake", html: true,
+            format: (v, r) => `<div style="font-weight:700; color:#f472b6; font-size:14px;">${esc(v || "N/A")}</div>`
+                + `<div style="font-size:10px; color:var(--text-muted);">`
+                + (r["Direct %"] ? `Dir: ${esc(r["Direct %"])}` : '')
+                + (r["Indirect %"] ? ` | Ind: ${esc(r["Indirect %"])}` : '')
+                + `</div>`
+        },
+        {
+            key: "_flagCount", label: "Anomalies & Red Flags", html: true,
+            format: (v, r) => r._flagsHTML
+        },
+        {
+            key: "Regulatory Filing Ref", label: "Filing Ref", html: true,
+            format: (v) => `<code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">`
+                + (v ? esc(v) : '<span style="color:var(--text-muted);">Not disclosed</span>') + `</code>`
+        },
+        {
+            key: "_action", label: "Action", sortable: false, html: true,
+            format: () => `<button type="button" class="btn btn-secondary psc-dossier-btn" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">`
+                + `<i data-lucide="eye" style="width:12px; height:12px;"></i> Dossier</button>`
+        }
+    ];
+
+    /**
+     * A row activation: person rows navigate to the Slice E dossier page,
+     * which aggregates every holding for that person; a row with no person
+     * name (rare, malformed extraction) falls back to the legacy modal by
+     * exact record index.
+     */
+    function openPscRowDossier(row) {
+        const name = String(row["Person Name"] || "").trim();
+        const EK = window.AuraEntityKey;
+        if (name && EK && typeof EK.slugify === "function") {
+            window.location.hash = "#/person/" + EK.slugify(name);
+            return;
+        }
+        if (typeof row._index === "number") window.openPSCDossier(row._index);
+    }
+
+    /** Re-wire per-render row affordances; row listeners die with the markup. */
+    function wirePscTableRows(pageInfo) {
+        pscTableContainer.querySelectorAll(".aura-table tbody tr").forEach((tr, i) => {
+            const row = pageInfo.rows[i];
+            if (!row) return;
+            tr.classList.add("psc-table-row");
+            tr.tabIndex = 0;
+            tr.setAttribute("role", "button");
+            const open = (e) => {
+                e.stopPropagation();
+                openPscRowDossier(row);
+            };
+            tr.addEventListener("click", open);
+            tr.addEventListener("keydown", (e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    open(e);
+                }
+            });
+        });
+        if (window.lucide) window.lucide.createIcons();
+    }
+
+    // The DataTable controller is bound once and fed rows on every filter
+    // change; binding per render would stack container click listeners --
+    // the exact leak class Package 7 removed elsewhere.
+    let pscTableCtl = null;
+
     function renderPSCTableRows() {
         if (!pscTableContainer) return;
         const pscData = getFilteredPSCData();
 
         if (!pscData || pscData.length === 0) {
+            // Replacing the markup wholesale is safe: the controller's
+            // delegated listener finds no sort/pager targets in here.
             pscTableContainer.innerHTML = pscEmptyStateHTML();
             bindPscEmptyStateActions(pscTableContainer);
             return;
         }
 
-        let html = `
-            <table style="width:100%; border-collapse:collapse; font-size:12.5px; text-align:left; color:#e5e7eb;">
-                <thead>
-                    <tr style="border-bottom:1px solid rgba(255,255,255,0.12); color:var(--text-muted); font-size:11px; text-transform:uppercase; letter-spacing:0.5px;">
-                        <th style="padding:10px;">Beneficial Owner</th>
-                        <th style="padding:10px;">Target & Holding Entity</th>
-                        <th style="padding:10px;">Control Tier & Nature</th>
-                        <th style="padding:10px;">Equity Stake</th>
-                        <th style="padding:10px;">Anomalies & Red Flags</th>
-                        <th style="padding:10px;">Filing Ref</th>
-                        <th style="padding:10px; text-align:right;">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-        `;
-
         // One index map instead of two indexOf scans per rendered row --
         // this re-renders on every search keystroke, and getRecordRedFlags
         // was already rewritten once to kill the same O(n^2) shape.
         const pscIndexOf = new Map(allPscRecords.map((rec, i) => [rec, i]));
-        pscData.forEach(r => {
+        const rows = pscData.map(r => {
             const flags = getRecordRedFlags(r);
-            const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
-            const holdingEntity = r["Intermediate Entities"] || "Direct Shareholder";
-            const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "Tier 2";
-
-            html += `
-                <tr class="psc-table-row" data-psc-index="${pscIndexOf.get(r)}" tabindex="0" role="button">
-                    <td style="padding:12px 10px;">
-                        <div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(r["Person Name"] || "N/A")}</div>
-                        <div style="font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:4px; margin-top:2px;">
-                            ${isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span>' : ''}
-                            <span>${esc(r["Board Role"] || "Significant Shareholder")}</span>
-                        </div>
-                    </td>
-                    <td style="padding:12px 10px;">
-                        <div style="font-weight:600; color:#a78bfa;">${esc(r["Company"] || "N/A")}</div>
-                        <div style="font-size:11px; color:#9ca3af; margin-top:2px;">
-                            ${holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding" ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}` : '<span style="color:#6b7280;">Direct Shareholder</span>'}
-                        </div>
-                    </td>
-                    <td style="padding:12px 10px; max-width:180px;">
-                        <span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>
-                        <div style="font-size:11.5px; color:#d1d5db; line-height:1.3;">${esc(r["Nature of Control"] || "N/A")}</div>
-                    </td>
-                    <td style="padding:12px 10px;">
-                        <div style="font-weight:700; color:#f472b6; font-size:14px;">${esc(r["Percentage"] || "N/A")}</div>
-                        <div style="font-size:10px; color:var(--text-muted);">
-                            ${r["Direct %"] ? `Dir: ${esc(r["Direct %"])}` : ''} ${r["Indirect %"] ? `| Ind: ${esc(r["Indirect %"])}` : ''}
-                        </div>
-                    </td>
-                    <td style="padding:12px 10px;">
-                        ${flags.length > 0 ? flags.map(f => pscFlagBadge(f)).join('') : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'}
-                    </td>
-                    <td style="padding:12px 10px;">
-                        <code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">${r["Regulatory Filing Ref"] ? esc(r["Regulatory Filing Ref"]) : "<span style=\"color:var(--text-muted);\">Not disclosed</span>"}</code>
-                    </td>
-                    <td style="padding:12px 10px; text-align:right;">
-                        <button class="btn btn-secondary psc-dossier-btn" data-psc-index="${pscIndexOf.get(r)}" style="padding:4px 10px; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
-                            <i data-lucide="eye" style="width:12px; height:12px;"></i> Dossier
-                        </button>
-                    </td>
-                </tr>
-            `;
-        });
-        html += `</tbody></table>`;
-        pscTableContainer.innerHTML = html;
-
-        // Bound via listeners, not inline onclick: inline handlers are blocked
-        // by the CSP, and a name interpolated into an onclick string lets an
-        // apostrophe break out of the JS literal. Rows are keyed by index so
-        // that a person who is a PSC of two companies opens the right record.
-        pscTableContainer.querySelectorAll("[data-psc-index]").forEach(el => {
-            const open = (e) => {
-                e.stopPropagation();
-                window.openPSCDossier(parseInt(el.getAttribute("data-psc-index"), 10));
-            };
-            el.addEventListener("click", open);
-            if (el.tagName === "TR") {
-                el.addEventListener("keydown", (e) => {
-                    if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        open(e);
-                    }
-                });
-            }
+            return Object.assign({}, r, {
+                _index: pscIndexOf.get(r),
+                _flagCount: flags.length,
+                _flagsHTML: flags.length > 0
+                    ? flags.map(f => pscFlagBadge(f)).join('')
+                    : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'
+            });
         });
 
-        if (window.lucide) window.lucide.createIcons();
+        if (pscTableCtl) {
+            pscTableCtl.setRows(rows);
+            return;
+        }
+        pscTableCtl = window.AuraDataTable.bind(pscTableContainer, {
+            rows: rows,
+            columns: PSC_TABLE_COLUMNS,
+            pageSize: 25,
+            onRender: wirePscTableRows
+        });
     }
 
     // Render SVG Interactive UBO Network Map
@@ -2192,14 +2389,19 @@ document.addEventListener("DOMContentLoaded", () => {
     window.openPSCDossier = function(ref) {
         if (!pscDossierModal || !pscDossierBody) return;
 
+        // Identity goes through the engine's personKey (trimmed + folded):
+        // the previous inline .toLowerCase() comparison missed rows whose
+        // extracted name carried stray whitespace.
+        const PSC = window.AuraPSC;
         let record = null;
         let records = [];
         if (typeof ref === "number" && !isNaN(ref)) {
             record = allPscRecords[ref] || null;
-            const name = record ? (record["Person Name"] || "") : "";
-            records = allPscRecords.filter(r => (r["Person Name"] || "").toLowerCase() === name.toLowerCase());
+            const key = record ? PSC.personKey(record) : "";
+            records = key ? allPscRecords.filter(r => PSC.personKey(r) === key) : (record ? [record] : []);
         } else {
-            records = allPscRecords.filter(r => (r["Person Name"] || "").toLowerCase() === String(ref || "").toLowerCase());
+            const key = PSC.personKey({ "Person Name": ref });
+            records = key ? allPscRecords.filter(r => PSC.personKey(r) === key) : [];
             record = records[0] || null;
         }
         if (!record) return;
@@ -2783,6 +2985,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // ==========================================
+    // WATCHLIST PANEL (Slice H)
+    // ==========================================
+
+    // Entities starred from dossier pages. Per-browser localStorage via
+    // AuraLocalStore; the panel header carries the "saved only in this
+    // browser" label, and the panel hides itself while the list is empty.
+    function renderWatchlistPanel() {
+        const panel = document.getElementById("watchlist-panel");
+        const body = document.getElementById("watchlist-body");
+        const LS = window.AuraLocalStore;
+        if (!panel || !body || !LS) return;
+
+        const state = LS.loadState();
+        if (!state.watchlist.length) {
+            panel.hidden = true;
+            body.innerHTML = "";
+            return;
+        }
+
+        panel.hidden = false;
+        body.innerHTML = state.watchlist.map(entry => `
+            <span class="watchlist-entry">
+                <a href="#/${esc(entry.type)}/${esc(entry.slug)}">${esc(entry.label)}</a>
+                <span class="watchlist-kind">${esc(entry.type)}</span>
+                <button type="button" class="watchlist-remove-btn" data-watch-type="${esc(entry.type)}"
+                        data-watch-slug="${esc(entry.slug)}" title="Remove from watchlist"
+                        aria-label="Remove ${esc(entry.label)} from watchlist">✕</button>
+            </span>
+        `).join("");
+
+        body.querySelectorAll(".watchlist-remove-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                LS.saveState(LS.toggleWatch(LS.loadState(), {
+                    type: btn.getAttribute("data-watch-type"),
+                    slug: btn.getAttribute("data-watch-slug")
+                }));
+                renderWatchlistPanel();
+            });
+        });
+    }
+
+    // Dossier pages fire this after a watch toggle.
+    document.addEventListener("aura:watchlist", renderWatchlistPanel);
+
+    // ==========================================
     // TEST SURFACE
     // ==========================================
 
@@ -2807,4 +3054,5 @@ document.addEventListener("DOMContentLoaded", () => {
     loadDashboardStats();
     loadNewsFeed();
     loadAnalyticsAndGraph();
+    renderWatchlistPanel();
 });

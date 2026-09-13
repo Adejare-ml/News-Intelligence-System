@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.0">
+    <link rel="stylesheet" href="css/styles.css?v=5.2">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -191,6 +191,17 @@
                 <span class="insight-generated" id="cycle-changes-generated"></span>
             </div>
             <div class="insight-groups" id="cycle-changes-body"></div>
+        </section>
+
+        <!-- Watchlist: entities starred from their dossier pages. State is
+             per-browser localStorage (there is no account system) and the
+             panel says so; hidden while the list is empty. -->
+        <section class="glass insight-panel" id="watchlist-panel" hidden>
+            <div class="panel-header">
+                <h2>Watchlist</h2>
+                <span class="insight-generated">Saved only in this browser</span>
+            </div>
+            <div class="watchlist-body" id="watchlist-body"></div>
         </section>
 
         <!-- ==========================================================
@@ -375,6 +386,18 @@
                         <button id="graph-zoom-out" class="graph-btn" title="Zoom Out" aria-label="Zoom Out"><i data-lucide="zoom-out"></i></button>
                         <button id="graph-fit" class="graph-btn" title="Reset View" aria-label="Reset View"><i data-lucide="maximize-2"></i></button>
                         <button id="graph-physics-toggle" class="graph-btn" title="Pause/Play Motion" aria-label="Pause or Play Motion"><i data-lucide="pause"></i></button>
+                    </div>
+                    <!-- Shortest-path tracing between two entities; the
+                         selects are filled from the loaded graph nodes. -->
+                    <div class="graph-path-bar">
+                        <label class="sr-only" for="graph-path-from">Trace path from</label>
+                        <select id="graph-path-from" class="graph-path-select"><option value="">Path from…</option></select>
+                        <span class="graph-path-arrow" aria-hidden="true">↔</span>
+                        <label class="sr-only" for="graph-path-to">Trace path to</label>
+                        <select id="graph-path-to" class="graph-path-select"><option value="">to…</option></select>
+                        <button id="graph-path-btn" class="btn btn-secondary graph-path-btn" type="button">Trace</button>
+                        <button id="graph-path-clear" class="btn btn-secondary graph-path-btn" type="button" hidden>Clear</button>
+                        <span id="graph-path-status" class="graph-path-status" aria-live="polite"></span>
                     </div>
                     <div id="network-container" class="network-container">
                         <!-- Loaded dynamically via Vis.js -->
@@ -638,15 +661,17 @@
     <script src="js/backdrop.js?v=4.6"></script>
     <script src="js/globe-data.js?v=4.6"></script>
     <script src="js/globe.js?v=4.7"></script>
-    <script src="js/psc-core.js?v=4.6"></script>
+    <script src="js/psc-core.js?v=5.2"></script>
     <script src="js/entity-key.js?v=4.6"></script>
     <script src="js/report-markdown.js?v=4.6"></script>
     <script src="js/router.js?v=4.6"></script>
     <script src="js/search.js?v=5.1"></script>
-    <script src="js/dossier.js?v=5.1"></script>
+    <script src="js/dossier.js?v=5.2"></script>
     <script src="js/datatable.js?v=4.6"></script>
+    <script src="js/graph-path.js?v=5.2"></script>
+    <script src="js/local-store.js?v=5.2"></script>
     <script src="js/insights.js?v=4.8"></script>
-    <script src="js/app.js?v=5.0"></script>
+    <script src="js/app.js?v=5.2"></script>
     <script src="js/psc-report.js?v=4.7"></script>
 </body>
 </html>
