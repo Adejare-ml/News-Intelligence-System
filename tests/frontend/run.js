@@ -35,6 +35,7 @@ const FILES = [
     path.join(JS_DIR, "insights.js"),
     path.join(JS_DIR, "search.js"),
     path.join(JS_DIR, "dossier.js"),
+    path.join(JS_DIR, "graph-path.js"),
     path.join(__dirname, "runner.js"),
     path.join(__dirname, "psc-core.test.js"),
     path.join(__dirname, "entity-key.test.js"),
@@ -42,7 +43,8 @@ const FILES = [
     path.join(__dirname, "report-markdown.test.js"),
     path.join(__dirname, "datatable.test.js"),
     path.join(__dirname, "insights.test.js"),
-    path.join(__dirname, "search-dossier.test.js")
+    path.join(__dirname, "search-dossier.test.js"),
+    path.join(__dirname, "graph-path.test.js")
 ];
 
 const sandbox = {

@@ -1174,6 +1174,79 @@ document.addEventListener("DOMContentLoaded", () => {
         function resetHighlight() {
             if (!canUpdateNodes) return;
             data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: '#e5e7eb' } })));
+            // Also restores edges a traced path recoloured.
+            data.edges.update(validEdges.map(e => ({ id: e.id, color: e.color, width: 1 })));
+        }
+
+        // ------------------------------------------------------------------
+        // Shortest-path tracing (Slice G). The compute lives in
+        // graph-path.js; this block owns the selects and the highlight,
+        // reusing the neighborhood-dim styling so a traced chain reads the
+        // same way as a clicked node's spotlight. Handlers are assigned,
+        // not added, so a graph rebuild never stacks listeners.
+        // ------------------------------------------------------------------
+        const pathFrom = document.getElementById("graph-path-from");
+        const pathTo = document.getElementById("graph-path-to");
+        const pathBtn = document.getElementById("graph-path-btn");
+        const pathClearBtn = document.getElementById("graph-path-clear");
+        const pathStatus = document.getElementById("graph-path-status");
+
+        function highlightPath(pathIds) {
+            if (!canUpdateNodes) return;
+            const inPath = new Set(pathIds);
+            data.nodes.update(nodes.map(n => inPath.has(n.id)
+                ? { id: n.id, color: n.color, font: { color: '#e5e7eb' } }
+                : {
+                    id: n.id,
+                    color: { background: 'rgba(75, 85, 99, 0.18)', border: 'rgba(255,255,255,0.04)' },
+                    font: { color: 'rgba(156, 163, 175, 0.3)' }
+                }
+            ));
+            const onPath = new Set(window.AuraGraphPath.pathEdgeIds(pathIds, validEdges));
+            data.edges.update(validEdges.map(e => onPath.has(e.id)
+                ? { id: e.id, color: { color: '#06b6d4', highlight: '#06b6d4' }, width: 2.5 }
+                : { id: e.id, color: e.color, width: 1 }
+            ));
+        }
+
+        function clearTracedPath() {
+            resetHighlight();
+            if (pathStatus) pathStatus.textContent = "";
+            if (pathClearBtn) pathClearBtn.hidden = true;
+        }
+
+        if (pathFrom && pathTo && pathBtn && pathClearBtn && pathStatus && window.AuraGraphPath) {
+            const optionsHtml = nodes.slice()
+                .sort((a, b) => String(a.label).localeCompare(String(b.label)))
+                .map(n => `<option value="${esc(n.id)}">${esc(n.label)}</option>`)
+                .join("");
+            pathFrom.innerHTML = `<option value="">Path from…</option>` + optionsHtml;
+            pathTo.innerHTML = `<option value="">to…</option>` + optionsHtml;
+            pathStatus.textContent = "";
+            pathClearBtn.hidden = true;
+
+            pathBtn.onclick = () => {
+                const fromId = pathFrom.value;
+                const toId = pathTo.value;
+                if (!fromId || !toId) {
+                    pathStatus.textContent = "Pick both entities first.";
+                    return;
+                }
+                const path = window.AuraGraphPath.shortestPath(nodes, validEdges, fromId, toId);
+                if (!path) {
+                    resetHighlight();
+                    pathClearBtn.hidden = true;
+                    pathStatus.textContent = "No connection between these two in the current graph.";
+                    return;
+                }
+                const labelOf = new Map(nodes.map(n => [n.id, n.label]));
+                highlightPath(path);
+                pathClearBtn.hidden = false;
+                pathStatus.textContent = path.length === 1
+                    ? "That is the same entity."
+                    : `${path.length - 1} hop${path.length === 2 ? "" : "s"}: ${path.map(id => labelOf.get(id)).join(" → ")}`;
+            };
+            pathClearBtn.onclick = clearTracedPath;
         }
 
         // Click interaction: spotlight the neighborhood and filter feed by entity;
@@ -1188,7 +1261,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     loadNewsFeed(clickedNode.label);
                 }
             } else {
-                resetHighlight();
+                clearTracedPath();
                 if (searchInput.value) {
                     searchInput.value = "";
                     loadNewsFeed("", currentCategory);
