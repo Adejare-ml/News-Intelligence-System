@@ -1,5 +1,41 @@
 [
   {
+    "ID": 5920,
+    "Time": "2026-09-12 12:42:22",
+    "Title": "Saviynt brings 20-year cybersecurity veteran to lead MEA push",
+    "Source": "businessday",
+    "URL": "https://businessday.ng/technology/article/saviynt-brings-20-year-cybersecurity-veteran-to-lead-mea-push/",
+    "Category": "Company",
+    "Risk Score": 15,
+    "Summary": "Saviynt has appointed a cybersecurity veteran with 20 years of experience to lead its expansion and operations across the Middle East and Africa (MEA) region.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5916,
+    "Time": "2026-09-11T21:09:36Z",
+    "Title": "EFCC, FBI probe alleged USAID funds diversion",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/efcc-fbi-probe-alleged-usaid-funds-diversion/",
+    "Category": "Legal",
+    "Risk Score": 85,
+    "Summary": "The EFCC and FBI are collaborating to investigate the alleged diversion of funds provided by the United States Agency for International Development (USAID). The probe focuses on financial irregularities and the potential misappropriation of international aid funds within Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
+    "ID": 5901,
+    "Time": "Sat, 12 Sep 2026 08:34:00 GMT",
+    "Title": "Akwa Ibom, Rivers excluded from post-subsidy fiscal assessment because of missing data - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMnJVVFduTUpwUFRTQ1I1dU9VVHlIMms5N2JXLU5iRWRHUF9SOGJTVk9QN1c2T1ZOdGxUaXlNYVAzZXkyd1ZrNHBwbnVFWGhDRWdTd2ktLTdRVTRoeUdGQTFmUlNjaDZkYmYxem5LSFV4NGRuRmFSUG0yUnBnSlN1MVdBQlNCMUM1VUI2WnlRNjFMclRpQlB5UDNEd3YtM0ZZV3o1c0h1bXh4ZlNZYi1sSDl4dEJBU183cnRmTkFMXzhsNTBXN1F0bmNLWE9HMUhScENEOXZJdHN4dw?oc=5",
+    "Category": "Government",
+    "Risk Score": 45,
+    "Summary": "Akwa Ibom and Rivers states were excluded from a post-subsidy fiscal assessment due to a lack of available data. This indicates a failure in financial transparency and reporting for these state governments regarding subsidy-related fiscal impact.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5887,
     "Time": "Sat, 12 Sep 2026 17:37:36 GMT",
     "Title": "Gateway Air ready to airlift Hajj pilgrims \u2014 Gov Abiodun - Premium Times Nigeria",
@@ -680,42 +716,6 @@
     "Category": "Company",
     "Risk Score": 30,
     "Summary": "Uber is shifting its global strategy toward a $10 billion investment in robotaxis. This strategic pivot follows the company's exit from the Nigerian market.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5651,
-    "Time": "Wed, 09 Sep 2026 20:29:26 GMT",
-    "Title": "FREEE, DeSpray secure Dutch grant for areosol recycling plant \u200e - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSWNwM3NUdklFdGpxV1FjaDJnNWExVlEwMG4wMVU5aGNkMUlXWVpJbVNNWlZ1NXZqaHJCenQyUC0ycllTQ2dSZGRKWE5NZG1TbmZRcVdlbllPaXZKU2lYd25NQ2h5d2dvRHBWdDNZakJQckxvREVRN3lfTUtsbzJkbmZZRVBuemdEM1hBTkJvXzMyVEc1TVJuWnFWejlGQVEtOFFKVkVlUXBzUzZB?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "FREEE and DeSpray have secured a grant from a Dutch entity to establish an aerosol recycling plant.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5647,
-    "Time": "Tue, 08 Sep 2026 20:09:11 GMT",
-    "Title": "Appeal court upholds 10-year jail term for ex-NEXIM Bank MD Orya - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV0Z3eVBubHJDOEF2ajV0TFY1M2VOTGh5Q1lfZGZCZDNvbjZjMVZXckk4Q0RHakdsdGZUTWh0SFc0WjJab2FzQkI2YUFSTnBlNmF1VGNGR2t6VkdHVEJxTl95OE9ldXptMkZXVzI2MGg3cDRZVllINXlBLWc4S3hodjIxZXM5bU5PYjJEQUpxQ2pDSzdweXd2dGtxbjgwOUxteXY4WGlvUm11TXpod1p5ZHRoRDhkM2VxMG9iWjhB?oc=5",
-    "Category": "Legal",
-    "Risk Score": 60,
-    "Summary": "The Appeal Court has upheld a 10-year prison sentence for the former Managing Director of the Nigerian Export-Import (NEXIM) Bank, Orya. The case pertains to legal proceedings regarding his tenure at the bank.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5637,
-    "Time": "Wed, 09 Sep 2026 15:24:41 GMT",
-    "Title": "FG opens digital academy, selects 16,000 Nigerians for first cohort - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOM2hHeGJOVFNYRUhMNmV5OEx1Ql9QU2RHRGJRY1dib1U2NFZHOHF2U0pJVDBmWFhRck8zM25LRnpxNWpiU2dqZDBjMnhBZ092QlFoNGRSRTIwcEtvRUFDcWUxaEI0azFLaW82aDNXcjZvbGQ4c0dnSlBmYUpHeDNtWG02WW5BTjZEZ0VTZzBqSQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Federal Government of Nigeria has launched a digital academy and selected an initial cohort of 16,000 Nigerians for training.",
     "Status": "Unread",
     "Engine": "ollama"
   }
