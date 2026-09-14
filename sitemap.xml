@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The dashboard is a single-page app whose views are hash routes, and
+     hash fragments are not distinct URLs to a crawler -- so the honest
+     sitemap is one entry. changefreq matches the four-times-daily
+     pipeline schedule. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://adejare-ml.github.io/News-Intelligence-System/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

@@ -553,6 +553,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data && (data.nodes || (data.graph && data.graph.nodes))) {
                 const graph = data.graph || data;
                 knownEntities = graph.nodes || [];
+                // vis-network (~450KB) loads on demand here instead of
+                // blocking the initial page; the data fetch above already
+                // overlapped most of its download time.
+                await ensureVisLoaded();
                 buildKnowledgeGraph(graph);
             } else {
                 renderGraphUnavailable();
@@ -561,6 +565,37 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error loading graph analytics:", err);
             renderGraphUnavailable();
         }
+    }
+
+    // ==========================================
+    // LAZY vis-network LOADER
+    // ==========================================
+
+    // Same pinned version + SRI hash the <script> tag carried when it
+    // blocked the initial render from <head>. cdnjs is already in the
+    // CSP's script-src, and host-allowlist CSPs permit injected scripts.
+    const VIS_NETWORK_SRC = "https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js";
+    const VIS_NETWORK_INTEGRITY = "sha384-yxKDWWf0wwdUj/gPeuL11czrnKFQROnLgY8ll7En9NYoXibgg3C6NK/UDHNtUgWJ";
+    let visLoadPromise = null;
+
+    function ensureVisLoaded() {
+        if (typeof vis !== "undefined" && vis.Network) return Promise.resolve();
+        if (visLoadPromise) return visLoadPromise;
+        visLoadPromise = new Promise((resolve, reject) => {
+            const script = document.createElement("script");
+            script.src = VIS_NETWORK_SRC;
+            script.integrity = VIS_NETWORK_INTEGRITY;
+            script.crossOrigin = "anonymous";
+            script.onload = () => resolve();
+            script.onerror = () => {
+                // Allow a retry (the graph panel's Retry button re-enters
+                // loadAnalyticsAndGraph) instead of caching the failure.
+                visLoadPromise = null;
+                reject(new Error("vis-network failed to load from the CDN"));
+            };
+            document.head.appendChild(script);
+        });
+        return visLoadPromise;
     }
 
     /**
@@ -1682,7 +1717,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function exportIntelligenceCSV() {
         if (!allArticles || allArticles.length === 0) {
-            alert("No articles loaded yet to export.");
+            showToast("No articles loaded yet to export.", "error");
             return;
         }
 
@@ -2575,13 +2610,13 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     function pscExportGuard(what) {
         if (pscLoadState === "error") {
-            alert(`Cannot build the ${what}: the PSC register did not load`
+            showToast(`Cannot build the ${what}: the PSC register did not load`
                 + (pscLoadError ? ` (${pscLoadError})` : "")
-                + ".\n\nAn export made now would understate the register rather than reflect it. Retry the load first.");
+                + ".\nAn export made now would understate the register rather than reflect it. Retry the load first.", "error");
             return false;
         }
         if (!allPscRecords || allPscRecords.length === 0) {
-            alert(`Nothing to put in the ${what}: the PSC register loaded and holds no disclosures yet.`);
+            showToast(`Nothing to put in the ${what}: the PSC register loaded and holds no disclosures yet.`, "info");
             return false;
         }
         return true;
@@ -2709,14 +2744,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 await new Promise(r => setTimeout(r, 800));
                 restore();
                 // Show custom informational modal for GitHub Pages
-                alert("Cloud Deployment Detected!\n\nBecause this dashboard is hosted serverlessly on GitHub Pages, the intelligence scrapers run securely on a fixed cloud schedule (8 AM, 2 PM, 6 PM, 11 PM).\n\nTo trigger an immediate data ingestion manually, please visit your GitHub Repository -> Actions Tab -> Run Workflow.");
+                showToast("This deployment runs its scrapers on a fixed cloud schedule (8 AM, 2 PM, 6 PM, 11 PM WAT).\nOpening the GitHub Actions tab, where a run can be triggered manually.", "info", 10000);
                 window.open("https://github.com/Adejare-ml/News-Intelligence-System/actions", "_blank");
             } else {
                 const res = await fetch(`${API_BASE}/news/trigger-ingest`, { method: "POST" });
                 // A 404/500 with a JSON body used to fall through to the
                 // success alert.
                 if (!res.ok) throw new Error(`trigger-ingest: ${res.status} ${res.statusText}`);
-                alert("Local background news collection enqueued successfully. Wait a few moments then refresh!");
+                showToast("Background news collection enqueued. The feed refreshes itself in a few seconds.", "success");
                 // Reload stats and feed after 3 seconds
                 setTimeout(() => {
                     loadDashboardStats();
@@ -2728,7 +2763,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         } catch (err) {
             console.error("Failed to trigger ingestion:", err);
-            alert("Failed to trigger ingestion: " + err.message);
+            showToast("Failed to trigger ingestion: " + err.message, "error");
             restore();
         }
     });
@@ -2959,7 +2994,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (compileReportBtn) compileReportBtn.addEventListener("click", async () => {
         if (isGitHubPages) {
-            alert("Report compilation in production runs automatically 3x daily via GitHub Actions. If you need manual compilation, run the pipeline command locally or trigger it from your GitHub Repository Actions tab.");
+            showToast("Report compilation runs automatically on the cloud schedule.\nFor a manual run, trigger the workflow from the repository's Actions tab.", "info", 10000);
             return;
         }
         
@@ -2972,17 +3007,67 @@ document.addEventListener("DOMContentLoaded", () => {
             // The unconditional success alert used to assert regeneration
             // on any response, 500s included.
             if (!res.ok) throw new Error(`reports/trigger: ${res.status} ${res.statusText}`);
-            alert(`Report compilation success: report_latest.md has been regenerated!`);
+            showToast("Report compiled: report_latest.md has been regenerated.", "success");
             loadReportsList();
             loadReportContent("latest");
         } catch (err) {
             console.error("Failed to compile report:", err);
-            alert("Report compile failed.");
+            showToast("Report compile failed.", "error");
         } finally {
             compileReportBtn.disabled = false;
             if (icon) icon.classList.remove("spin");
         }
     });
+
+    // ==========================================
+    // TOASTS
+    // ==========================================
+
+    /**
+     * Non-blocking notice, replacing window.alert(). alert() freezes the
+     * whole page (the graph drift, the charts, every animation) until
+     * dismissed, and browsers style it as a security prompt -- the wrong
+     * register for "export finished". Multi-line messages keep their
+     * breaks via white-space: pre-line.
+     *
+     * tone: "info" | "success" | "error". Errors stay longer because they
+     * carry detail worth reading; every toast is manually dismissable.
+     */
+    function showToast(message, tone = "info", duration = null) {
+        const region = document.getElementById("toast-region");
+        if (!region) {
+            alert(message); // markup missing: degrade to the old behavior
+            return;
+        }
+        const toast = document.createElement("div");
+        toast.className = `toast toast-${tone}`;
+
+        const text = document.createElement("span");
+        text.className = "toast-text";
+        text.textContent = message;
+        toast.appendChild(text);
+
+        const closeBtn = document.createElement("button");
+        closeBtn.type = "button";
+        closeBtn.className = "toast-close";
+        closeBtn.textContent = "✕";
+        closeBtn.setAttribute("aria-label", "Dismiss notice");
+        toast.appendChild(closeBtn);
+
+        let timer = null;
+        const remove = () => {
+            if (timer) clearTimeout(timer);
+            toast.classList.add("toast-leaving");
+            // Matches the CSS transition; remove() directly if it never fires.
+            setTimeout(() => toast.remove(), 300);
+        };
+        closeBtn.addEventListener("click", remove);
+        timer = setTimeout(remove, duration || (tone === "error" ? 10000 : 6000));
+
+        region.appendChild(toast);
+        // Cap the stack so a burst of failures cannot fill the screen.
+        while (region.children.length > 4) region.firstChild.remove();
+    }
 
     // ==========================================
     // WATCHLIST PANEL (Slice H)
