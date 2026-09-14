@@ -679,7 +679,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.setAttribute("tabindex", "0");
 
             const catClass = art.category ? art.category.toLowerCase().replace(/[^a-z-]/g, "") : "general";
-            const riskClass = art.risk_level ? art.risk_level.toLowerCase() : "low";
+            const riskClass = art.risk_level ? art.risk_level.toLowerCase().replace(/[^a-z-]/g, "") : "low";
             const engineChip = art.engine
                 ? `<span class="engine-chip" title="Analyzed by ${esc(art.engine)}">${esc(art.engine)}</span>`
                 : "";
@@ -1228,6 +1228,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const fitBtn = document.getElementById("graph-fit");
         const physicsBtn = document.getElementById("graph-physics-toggle");
         let physicsEnabled = true;
+        // A rebuild (Retry) restarts physics; the button must not keep
+        // showing "play" from a pause pressed on the previous graph.
+        if (physicsBtn) {
+            physicsBtn.classList.remove("active");
+            physicsBtn.setAttribute("aria-pressed", "false");
+            physicsBtn.innerHTML = `<i data-lucide="pause"></i>`;
+            if (window.lucide) window.lucide.createIcons();
+        }
 
         if (zoomInBtn) {
             zoomInBtn.onclick = () => {
@@ -2165,27 +2173,36 @@ document.addEventListener("DOMContentLoaded", () => {
                 return `<div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(v || "N/A")}</div>`
                     + `<div style="font-size:11px; color:var(--text-muted); margin-top:2px;">`
                     + (isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span> ' : '')
-                    + `${esc(r["Board Role"] || "Significant Shareholder")}</div>`;
+                    + `${r["Board Role"] ? esc(r["Board Role"]) : '<span style="color:#6b7280;">Role not disclosed</span>'}</div>`;
             }
         },
         {
             key: "Company", label: "Target & Holding Entity", html: true,
             format: (v, r) => {
-                const holdingEntity = r["Intermediate Entities"] || "Direct Shareholder";
-                const indirect = holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding";
+                // "" means NOT disclosed -- distinct from an explicit
+                // "Direct Holding" filing. Asserting "Direct Shareholder"
+                // here invented a compliance fact for every blank cell.
+                const holdingEntity = r["Intermediate Entities"] || "";
+                const indirect = holdingEntity && holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding";
                 return `<div style="font-weight:600; color:#a78bfa;">${esc(v || "N/A")}</div>`
                     + `<div style="font-size:11px; color:#9ca3af; margin-top:2px;">`
                     + (indirect
                         ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}`
-                        : '<span style="color:#6b7280;">Direct Shareholder</span>')
+                        : (holdingEntity
+                            ? '<span style="color:#6b7280;">Direct holding</span>'
+                            : '<span style="color:#6b7280;">Structure not disclosed</span>'))
                     + `</div>`;
             }
         },
         {
             key: "Nature of Control", label: "Control Tier & Nature", html: true,
             format: (v, r) => {
-                const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "Tier 2";
-                return `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>`
+                // No invented "Tier 2": a blank Control Tier renders as
+                // undisclosed rather than as a classification nobody made.
+                const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "";
+                return (tierText
+                        ? `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>`
+                        : `<span style="font-size:10px; color:#6b7280; display:inline-block; margin-bottom:3px;">Tier not disclosed</span>`)
                     + `<div style="font-size:11.5px; color:#d1d5db; line-height:1.3;">${esc(v || "N/A")}</div>`;
             }
         },
@@ -2443,7 +2460,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const flags = getRecordRedFlags(record);
         const isPep = (record["PEP Status"] || "").toLowerCase().startsWith("yes");
-        const holdingEntity = record["Intermediate Entities"] || "Direct Shareholder";
+        // "" = not disclosed; the lineage diagram below only draws a vehicle
+        // node when one was actually reported.
+        const holdingEntity = record["Intermediate Entities"] || "";
 
         document.getElementById("dossier-title").innerText = `Beneficial Ownership Dossier: ${record["Person Name"]}`;
 
@@ -2453,13 +2472,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div>
                         <span style="font-size:10.5px; text-transform:uppercase; letter-spacing:0.8px; color:var(--primary); font-weight:700;">Ultimate Beneficial Owner (UBO) Profile</span>
                         <h2 style="margin:4px 0 0 0; font-size:20px; font-weight:700; color:#f9fafb;">${esc(record["Person Name"])}</h2>
-                        <div style="font-size:13px; color:#a78bfa; margin-top:3px; font-weight:600;">${esc(record["Board Role"] || "Significant Shareholder")} — ${esc(record["Company"])}</div>
+                        <div style="font-size:13px; color:#a78bfa; margin-top:3px; font-weight:600;">${record["Board Role"] ? esc(record["Board Role"]) : "Role not disclosed"} — ${esc(record["Company"])}</div>
                     </div>
                     <div style="text-align:right;">
                         <span class="badge" style="background:${isPep ? 'rgba(239,68,68,0.25); color:#ef4444;' : 'rgba(16,185,129,0.2); color:#10b981;'} padding:4px 10px; font-size:11px; font-weight:700;">
                             ${isPep ? 'PEP Flagged (Enhanced Oversight)' : 'CAM 2020 Statutory Disclosure'}
                         </span>
-                        <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Risk Level: <strong style="color:#f59e0b;">${esc(record["Risk Level"] || "Elevated")}</strong></div>
+                        <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Risk Level: <strong style="color:#f59e0b;">${esc(record["Risk Level"] || "Not assessed")}</strong></div>
                     </div>
                 </div>
             </div>
@@ -2487,7 +2506,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <div style="background:rgba(0,0,0,0.3); padding:10px; border-radius:6px; border:1px solid rgba(255,255,255,0.08);">
                                 <div style="font-weight:700; color:#f3f4f6; font-size:12px;">${esc(r["Company"])}</div>
                                 <div style="font-size:11px; color:#f472b6; font-weight:700; margin-top:2px;">Controlling Stake: ${esc(r["Percentage"])}</div>
-                                <div style="font-size:10px; color:#9ca3af; margin-top:2px;">Role: ${esc(r["Board Role"] || "Shareholder")}</div>
+                                <div style="font-size:10px; color:#9ca3af; margin-top:2px;">Role: ${esc(r["Board Role"] || "Not disclosed")}</div>
                             </div>
                         `).join('')}
                     </div>
@@ -2506,13 +2525,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="lineage-arrow">
                         ➔ ${esc(record["Percentage"] || "Control")} ➔
                     </div>
+                    ${holdingEntity && holdingEntity !== "Direct Holding" && holdingEntity !== "Direct Shareholder" ? `
                     <div class="lineage-node" style="border-color:rgba(167,139,250,0.4); background:rgba(167,139,250,0.08);">
                         <div class="node-title" style="color:#a78bfa;">${esc(holdingEntity)}</div>
                         <div class="node-sub">Intermediate Vehicle</div>
                     </div>
                     <div class="lineage-arrow">
                         ➔ Operating Equity ➔
-                    </div>
+                    </div>` : ""}
                     <div class="lineage-node" style="border-color:rgba(56,189,248,0.4); background:rgba(56,189,248,0.08);">
                         <div class="node-title" style="color:#38bdf8;">${esc(record["Company"])}</div>
                         <div class="node-sub">Target Counterparty</div>
@@ -2526,7 +2546,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <span style="font-size:12.5px; color:#d1d5db;">Direct: <strong>${esc(record["Direct %"] || "N/A")}</strong></span>
                         <span style="font-size:12.5px; color:#d1d5db;">Indirect: <strong>${esc(record["Indirect %"] || "N/A")}</strong></span>
-                        <span style="font-size:12.5px; color:#f472b6;">Voting: <strong>${esc(record["Voting Rights %"] || record["Percentage"])}</strong></span>
+                        <span style="font-size:12.5px; color:#f472b6;">Voting: <strong>${esc(record["Voting Rights %"] || "Not disclosed")}</strong></span>
                     </div>
                 </div>
                 <div style="background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); padding:12px; border-radius:8px;">
@@ -2557,7 +2577,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div style="background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); padding:14px; border-radius:8px; margin-bottom:20px;">
                 <h4 style="margin:0 0 6px 0; font-size:12.5px; color:#f3f4f6;">Control Rights & Governance Notes</h4>
                 <p style="margin:0; font-size:12px; color:#9ca3af; line-height:1.5;">
-                    ${esc(record["Notes"] || record["Nature of Control"] || "Tracked beneficial owner maintaining significant control rights and voting influence over board decisions and equity structure.")}
+                    ${esc(record["Notes"] || record["Nature of Control"] || "Nature of control not disclosed in the source reporting.")}
                 </p>
             </div>
 
@@ -2622,8 +2642,23 @@ document.addEventListener("DOMContentLoaded", () => {
         return true;
     }
 
+    /**
+     * What the modal is showing right now, plus a filename fragment naming
+     * the scope. Both exports used to dump allPscRecords while the screen
+     * showed a filtered slice -- a "Red flags" export silently contained
+     * every clean row too, with nothing on the file saying so.
+     */
+    function pscExportScope() {
+        const rows = getFilteredPSCData();
+        const bits = [];
+        if (activePscFilter && activePscFilter !== "all") bits.push(activePscFilter);
+        if (currentPscSearchQuery) bits.push("search");
+        return { rows, tag: bits.length ? "_" + bits.join("_") : "" };
+    }
+
     function exportPSCCSV() {
         if (!pscExportGuard("CSV export")) return;
+        const scope = pscExportScope();
 
         const headers = ["Person Name", "Company", "Nature of Control", "Percentage", "Share Band",
             "Direct %", "Indirect %", "Voting Rights %", "Intermediate Entities", "Board Role",
@@ -2635,7 +2670,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return `"${s.replace(/"/g, '""')}"`;
         };
 
-        const rows = allPscRecords.map(r => headers.map(h => csvField(r[h])).join(","));
+        const rows = scope.rows.map(r => headers.map(h => csvField(r[h])).join(","));
 
         // A demo export must never leave the app looking like a compliance
         // artefact, so the warning travels with the file and the filename.
@@ -2648,7 +2683,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = `${usingDemoPsc ? "DEMO_" : ""}PSC_CAMA2020_Beneficial_Ownership_${new Date().toISOString().slice(0,10)}.csv`;
+        link.download = `${usingDemoPsc ? "DEMO_" : ""}PSC_CAMA2020_Beneficial_Ownership${scope.tag}_${new Date().toISOString().slice(0,10)}.csv`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -2658,6 +2693,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Export PSC Compliance Report
     function exportPSCComplianceReport() {
         if (!pscExportGuard("compliance brief")) return;
+        const scope = pscExportScope();
 
         let reportMd = `# Persons with Significant Control (PSC) & CAMA 2020 UBO Audit Brief\n`;
         // A brief built from seed rows must say so on its face. Without this
@@ -2670,7 +2706,8 @@ document.addEventListener("DOMContentLoaded", () => {
         reportMd += `**Regulatory Framework:** Companies and Allied Matters Act (CAMA 2020) & FATF Beneficial Ownership Transparency Standards\n\n`;
 
         reportMd += `## Executive Summary & Risk Indicators\n`;
-        reportMd += `- **Total Registered Beneficial Owners:** ${allPscRecords.length}\n`;
+        reportMd += `- **Total Registered Beneficial Owners:** ${scope.rows.length}`
+            + (scope.tag ? ` (filtered view; register holds ${allPscRecords.length})` : "") + `\n`;
         // Derived, not scraped. These lines used to read the KPI strip out of
         // the DOM with hardcoded fallbacks -- '56.1%', '7', '4' -- so a renamed
         // or missing element would put figures computed from nothing into a
@@ -2678,7 +2715,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // already removed once, when a hardcoded "CAMA 2020 Compliance: 94.2%"
         // was replaced by the derived disclosureRate. An undisclosed figure now
         // says so instead of inventing one.
-        const summary = window.AuraPSC.summarise(allPscRecords);
+        const summary = window.AuraPSC.summarise(scope.rows);
         const pct = (v) => (v === null || v === undefined ? "not disclosed" : `${v.toFixed(1)}%`);
 
         reportMd += `- **Average Controlling Equity:** ${pct(summary.meanStake)}\n`;
@@ -2688,11 +2725,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         reportMd += `---\n\n## Disclosed Beneficial Ownership Lineages & Anomaly Matrix\n\n`;
 
-        allPscRecords.forEach((r, idx) => {
+        scope.rows.forEach((r, idx) => {
             const flags = getRecordRedFlags(r);
             reportMd += `### ${idx + 1}. ${r["Person Name"]} — ${r["Company"]}\n`;
-            reportMd += `- **Control Classification:** ${r["Control Tier"] || "Tier 2"}\n`;
-            reportMd += `- **Primary Role:** ${r["Board Role"] || "Significant Shareholder"}\n`;
+            reportMd += `- **Control Classification:** ${r["Control Tier"] || "Not disclosed"}\n`;
+            reportMd += `- **Primary Role:** ${r["Board Role"] || "Not disclosed"}\n`;
             reportMd += `- **Total Controlling Stake:** ${r["Percentage"]} (Direct: ${r["Direct %"] || 'N/A'}, Indirect: ${r["Indirect %"] || 'N/A'})\n`;
             reportMd += `- **Intermediate Holding Entity:** ${r["Intermediate Entities"] || "Direct Ownership"}\n`;
             reportMd += `- **Nature of Control:** ${r["Nature of Control"]}\n`;
@@ -2700,7 +2737,11 @@ document.addEventListener("DOMContentLoaded", () => {
             reportMd += `- **Risk Level:** ${r["Risk Level"]}\n`;
             reportMd += `- **Anomalies / Red Flags:** ${flags.length > 0 ? flags.map(f => f.title).join(', ') : 'Clean Disclosure'}\n`;
             reportMd += `- **CAC / SEC regulatory ref:** ${r["Regulatory Filing Ref"] ? "`" + r["Regulatory Filing Ref"] + "`" : "not disclosed"} (date: ${r["Date"] || "not disclosed"})\n`;
-            reportMd += `- **Audit Notes:** ${r["Notes"] || "Verified disclosure"}\n\n`;
+            // Never "Verified disclosure": this line goes into a downloadable
+            // CAMA-2020 audit document, and asserting verification for a blank
+            // cell is the most damaging invention this tool could make.
+            reportMd += `- **Audit Notes:** ${r["Notes"] || "None recorded"}\n`;
+            reportMd += `- **Verification Status:** ${r["Verification Status"] || "Not verified"}\n\n`;
         });
 
         reportMd += `---\n*Report generated by Corporate News & Regulatory Intelligence System.*`;
@@ -2716,7 +2757,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
             a.href = url;
-            a.download = `PSC_CAM2020_Compliance_Audit_${new Date().toISOString().slice(0,10)}.md`;
+            a.download = `${usingDemoPsc ? "DEMO_" : ""}PSC_CAM2020_Compliance_Audit${scope.tag}_${new Date().toISOString().slice(0,10)}.md`;
             a.click();
             URL.revokeObjectURL(url);
         }
@@ -2771,6 +2812,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Search Toggle
     if (searchTypeToggle) searchTypeToggle.addEventListener("change", (e) => {
         isSemanticSearch = e.target.checked;
+        // The hint under the toggle previously never updated, so in trace
+        // mode it still read "Switch on to trace an entity…".
+        const searchHint = document.getElementById("search-hint");
         if (isSemanticSearch) {
             // Called "Semantic Similarity (AI)" before. It is a weighted
             // term-overlap score with no model behind it, and claiming
@@ -2778,10 +2822,12 @@ document.addEventListener("DOMContentLoaded", () => {
             searchLabel.innerText = "Entity trace";
             searchLabel.style.color = "var(--secondary)";
             searchInput.placeholder = "Trace an entity across articles, owners and the register…";
+            if (searchHint) searchHint.textContent = "Tracing: results follow the entity across articles, owners and the register";
         } else {
             searchLabel.innerText = "Keyword match";
             searchLabel.style.color = "var(--text-muted)";
             searchInput.placeholder = "Search keyword, entity or concept…";
+            if (searchHint) searchHint.textContent = "Switch on to trace an entity across articles, owners and the register";
         }
         // Re-run the active query under the newly selected mode
         if (searchInput.value.trim()) {

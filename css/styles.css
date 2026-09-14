@@ -2137,3 +2137,12 @@ div.vis-tooltip {
     .toast { animation: none; }
     .toast-leaving { transition: opacity 280ms ease; transform: none; }
 }
+
+/* =====================================================================
+   Route-page mode: while a dossier page occupies the outlet, the
+   dashboard sections underneath are removed from the flow (and from the
+   accessibility tree -- one <h1> per document again).
+   ===================================================================== */
+main[data-route-page] > :not([data-route-outlet]) {
+    display: none !important;
+}

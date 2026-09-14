@@ -174,7 +174,7 @@
     function renderTrendsHTML(summary) {
         function chip(entry, dir) {
             return '<li class="trend-chip trend-' + dir + '">' + esc(entry.term)
-                + ' <span class="trend-delta">' + (dir === "up" ? "+" : "") + entry.change
+                + ' <span class="trend-delta">' + (dir === "up" ? "+" : "") + esc(entry.change)
                 + '</span></li>';
         }
         var html = "";

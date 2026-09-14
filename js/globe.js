@@ -420,7 +420,10 @@
 
     GlobeRenderer.prototype.tick = function (now) {
         if (!this.running) return;
-        this.frame = global.requestAnimationFrame(this.tick.bind(this));
+        // _boundTick is created once (lazily); .bind here allocated a new
+        // function 30 times a second per canvas, forever.
+        this._boundTick = this._boundTick || this.tick.bind(this);
+        this.frame = global.requestAnimationFrame(this._boundTick);
         // Capped at 30fps like backdrop.js: the slow-spinning dot sphere
         // reads identically at 30 and 60, at half the paint cost.
         if (now - this.lastPaint < FRAME_MS) return;
@@ -437,7 +440,8 @@
         this.running = true;
         this.lastTime = 0;
         this.lastPaint = 0;
-        this.frame = global.requestAnimationFrame(this.tick.bind(this));
+        this._boundTick = this._boundTick || this.tick.bind(this);
+        this.frame = global.requestAnimationFrame(this._boundTick);
     };
 
     GlobeRenderer.prototype.stop = function () {

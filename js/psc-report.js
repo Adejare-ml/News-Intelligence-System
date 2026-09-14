@@ -416,10 +416,15 @@
         host.querySelectorAll("[data-dossier]").forEach(function (btn) {
             btn.addEventListener("click", function () {
                 var name = btn.getAttribute("data-dossier");
-                if (global.openPSCDossier) {
-                    var pscModal = el("psc-modal");
-                    if (pscModal) pscModal.classList.add("active");
-                    global.openPSCDossier(name);
+                // Route to the person's dossier page. The old path activated
+                // the PSC modal and called openPSCDossier(name) -- but that
+                // resolves against app.js's allPscRecords, which is only
+                // loaded when the modal's own button is clicked, so on a
+                // fresh page this opened an empty modal stuck on "Loading
+                // PSC Records..." forever.
+                var EK = global.AuraEntityKey;
+                if (name && EK && typeof EK.slugify === "function") {
+                    global.location.hash = "#/person/" + EK.slugify(name);
                 }
             });
         });
