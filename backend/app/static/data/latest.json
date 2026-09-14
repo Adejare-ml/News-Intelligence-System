@@ -1,5 +1,192 @@
 [
   {
+    "ID": 6021,
+    "Time": "2026-09-13T04:03:13Z",
+    "Title": "Lobbying: Fresh storm over dollars spent by Tinubu, Atiku in US",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/lobbying-fresh-storm-over-dollars-spent-by-tinubu-atiku-in-us/",
+    "Category": "Government",
+    "Risk Score": 75,
+    "Summary": "Reports indicate that over $10 million was spent by the political camps of President Bola Ahmed Tinubu and former Vice-President Atiku Abubakar on lobbying efforts in the United States. The expenditure has sparked controversy regarding the use of such significant funds amid Nigeria's current economic challenges.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Corruption",
+    "Risk Level": "High",
+    "Importance": 80,
+    "Entities": "Bola Ahmed Tinubu|Atiku Abubakar",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6020,
+    "Time": "2026-09-13T04:08:51Z",
+    "Title": "\u2018Ghost\u2019 beneficiaries\u00a0beneficiaries of N33/7bn cash transfer",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/ghost-beneficiaries-beneficiaries-of-n33-7bn-cash-transfer/",
+    "Category": "Government",
+    "Risk Score": 85,
+    "Summary": "Reports indicate a massive fraud involving N33.75 billion intended for cash transfers to poor Nigerians. The controversy centers on 'ghost beneficiaries' and systemic failures in the disbursement process, suggesting significant misappropriation of public funds.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Corruption",
+    "Risk Level": "High",
+    "Importance": 90,
+    "Entities": "Federal Government of Nigeria",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6019,
+    "Time": "2026-09-13T04:14:31Z",
+    "Title": "More hardship for Nigerians as petrol, diesel prices rise again",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/more-hardship-for-nigerians-as-petrol-diesel-prices-rise-again/",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Dangote Refinery has notified customers of a 6.7% increase in the prices of petrol and diesel, contributing to rising energy costs for Nigerian consumers.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 60,
+    "Entities": "Dangote Refinery",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6018,
+    "Time": "2026-09-13T08:13:59Z",
+    "Title": "SERAP gives INEC 7 days to account for \u20a6126bn \u2018diverted electoral funds\u2019 or face legal action",
+    "Source": "Vanguard",
+    "URL": "https://www.vanguardngr.com/2026/09/serap-gives-inec-7-days-to-account-for-\u20a6126bn-diverted-electoral-funds-or-face-legal-action/",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "SERAP has demanded that the Independent National Electoral Commission (INEC) account for \u20a6126.46 billion in appropriated public funds. The organization threatens legal action if INEC fails to provide an account of the funds within seven days.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Audit",
+    "Risk Level": "Medium",
+    "Importance": 70,
+    "Entities": "Independent National Electoral Commission|Socio-Economic Rights and Accountability Project",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6017,
+    "Time": "Mon, 14 Sep 2026 06:58:07 GMT",
+    "Title": "Dangote Refinery opens order book for $1.6 billion Africa\u2019s biggest IPO - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdEh5RjB4bTNCeUlTY3dPM3Rua1VtRUg1M3I2VnFtN0RNWEJkOTFyOWJtajMwS0FiQ0FjNzU5b2NQLXo2aEc2RE9CRUVmZkZMQlY4ZUZ1aWN1ZnJaRFdlUGdjaGtWWmZJSGZLNFZkYklRVmF3NmlIcnVhLTFJMkhZMnJzdnozMENYamxDaTlwRURYaUFtbXE5VkpFQy1ZMXRqZ1lYT0QycTdpUkVGM2MxTGhOSU82dHplcmdIdmZNUVV5LWlt?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Dangote Refinery has opened its order book for an Initial Public Offering (IPO) valued at $1.6 billion, marking it as the largest IPO in Africa.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Restructuring",
+    "Risk Level": "Low",
+    "Importance": 95,
+    "Entities": "Dangote Refinery",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6013,
+    "Time": "Mon, 14 Sep 2026 04:00:00 GMT",
+    "Title": "Banks reject shipowners\u2019 $25m CVFF application over failed credit check, cargo guarantee - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQzdNMktIR3V3bHExSUotQThPTWpRWXlIQXVyUXpJR3BtUlVnOVFOeGM3MUhsTWNZOVpHakpiN3FPQlFfVVV2a3hTZjYtTGVnc0ZzUEJGaFpwRlBWMWNZQmtyT0dvazJTenp1MDRnT2x3TkxyTnBzSy1HV2FTcmk0eFBzX19WMjM2WHYyWUNsNGE4emcxVjNqVEdzWldHX0ZhR0E5czczRmtHeER5Yzg1TQ?oc=5",
+    "Category": "Company",
+    "Risk Score": 40,
+    "Summary": "Nigerian banks have rejected a $25 million application from shipowners to access the Cabotage Vessel Financing Fund (CVFF) due to failed credit checks and lack of cargo guarantees.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Medium",
+    "Importance": 50,
+    "Entities": "",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6008,
+    "Time": "Mon, 14 Sep 2026 04:00:00 GMT",
+    "Title": "Oye: Uber\u2019s exit exposes gaps in Nigeria\u2019s transport regulation, consumer choice - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQc2o5Q0F3WmRHNFllSHFnMVFiczcwZ1lvMFV3S2pXVWpUcUN4aEFxWktIS0RwUElWeWRQRFNGMTlJSWVnTFM1ZER2T1F6LUNNVkpkanRxdjV0MjJ4czBEbnVnOG51bWVuSlJYLWRHT3EtM2RHTVYtd01HWmFQYjlwdlFnZERSNTJ6NjgxSFlPLUg4Y25UanA4aUU4dDhKRnQzMGdFNw?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "The article discusses Uber's exit from certain operations or market shifts in Nigeria, highlighting systemic gaps in the country's transport regulation and the impact on consumer choice.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Restructuring",
+    "Risk Level": "Low",
+    "Importance": 50,
+    "Entities": "Uber",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6007,
+    "Time": "Mon, 14 Sep 2026 04:00:00 GMT",
+    "Title": "\u2018Petrol subsidy may cost Nigeria N20tr yearly, cripple nation\u2019s finances\u2019 - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQNWtObl9VU21saGlNUE5ONkl6UkJfOUNRNVB0NXVPdENad3pPcloxeG8zbFliVHF0eUo2VF9PR2RmQVhqUkhRQXJWYnR4RWlsVU1XNzhORHRGc1BaNlpSNUozYTN4bTJIc19xdG5jSXJEN0RyaTBqcEFiUVNoekFmbXdyS1R2ZW5ST1JPQ2NJdUdZMjN1YjFGOXVxbw?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "Reports on the potential fiscal impact of petrol subsidies in Nigeria, estimating a yearly cost of N20 trillion which could severely strain national finances.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 60,
+    "Entities": "",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6006,
+    "Time": "Mon, 14 Sep 2026 07:30:00 GMT",
+    "Title": "US says removal of maritime restrictions on Nigeria will improve shipping operations - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdDI1cGVRV28tT0lqUzY0SVVTNVFqRlVyem9BTE0tSmxEcWl2dFVBdGZDbm1fekI2ZWtSbEhfNmRtNnR6QXVUbk8tNEhwYlR3NFV2TWRnWXd0VDFQWUF6N2hIVEdhbmVudHluSEJRUnVYNFJLeVpyMkRNUUd2Rk1aXzV1TFMtOE8wRzV3cVZPOVk3TXFTUHRfRUxQR1RSVHVVTzJxaHpmcjlVTVBQU21YN0J5UGcxVzRpc1g5NXlZQ01TUjh5RmU2dF9VX3d1eXlyQ3U0NVRtZy1LUQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The United States has indicated that the removal of maritime restrictions on Nigeria is expected to enhance shipping operations. The move signals a regulatory shift in international maritime relations affecting Nigerian trade.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 50,
+    "Entities": "Government of the United States",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6005,
+    "Time": "Mon, 14 Sep 2026 04:00:00 GMT",
+    "Title": "U.S. lifts 12-year security restriction on Nigerian vessels, hails port reforms - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTnpaUHFGbGtlUWJIa2gyUk5oNWpKVlEzWDNUR2Z5YThUMWdEREprVFhhYmEtc0ZZSmJtdk83VW9CZDJfUTdiTTE1TmoxOUp4Rlgxcm9qZWtHcVgtMlh1Szhud1F0V2QtaGdoQmlPbEtJWUt5OHVSOWlvUlBPMHhpUHRnbXVPMGJFVnlSUUJHR3lWQnJFU1pmZ3RSRXdHeW5VNTRTMTNn?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The United States has lifted a 12-year security restriction on Nigerian vessels. This move follows the implementation of port reforms in Nigeria aimed at enhancing maritime security and operational standards.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 60,
+    "Entities": "Nigerian Ports Authority",
+    "Filter Reason": ""
+  },
+  {
+    "ID": 6003,
+    "Time": "Sun, 13 Sep 2026 00:44:32 GMT",
+    "Title": "CBN Issues Approved Guidance on Ultimate Beneficial Ownership of Legal Persons and Legal Arrangements - Proshare",
+    "Source": "Proshare",
+    "URL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQldYNldVRUFYc2VwdUhIeTZuS2RXbURRSHNGVDZXWW9adFpjREhSTWJ0S2pvWmlvZkRRMHFJWUlnZzR0bHYxMEZ2LXZLR19VdGFlc0hRQndsZmNwNEZyWU81aGpMSVYyc0MwdjdqV3E4TVplanpiX2xCU1RGUUp2dDd0NG4tMlBGODJFS2hCa29tOGRMVkEtQ2xrc0lQbUx0elVPMzVGMDZQcnlLcVRSdzlSRVFJTmw5Ty04ekxCbXUwTExzcHNCdzdR?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The Central Bank of Nigeria (CBN) has issued approved guidance regarding the Ultimate Beneficial Ownership (UBO) of legal persons and legal arrangements. This regulatory move is aimed at enhancing transparency and combating financial crimes by clarifying the identification of beneficial owners.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Medium",
+    "Importance": 85,
+    "Entities": "Central Bank of Nigeria",
+    "Filter Reason": ""
+  },
+  {
     "ID": 5994,
     "Time": "2026-09-13T00:18:02Z",
     "Title": "Three banks settle aircraft duties amid Customs crackdown",
@@ -9,7 +196,12 @@
     "Risk Score": 45,
     "Summary": "Three major banks have paid outstanding customs duties on aircraft in their possession following a crackdown by the Nigeria Customs Service. One unnamed bank reportedly paid approximately N3 billion to settle its liabilities.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5971,
@@ -21,7 +213,12 @@
     "Risk Score": 20,
     "Summary": "Entrepreneur Nguyen Thi Nga was conferred the Labor Hero title, while BRG Group and SeABank received First-class Labor Medals for their contributions.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5968,
@@ -33,7 +230,12 @@
     "Risk Score": 85,
     "Summary": "Investors in the online platform PXES have suffered significant financial losses after the entity ceased operations and stopped paying returns. The platform is identified as a Ponzi scheme.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5963,
@@ -45,7 +247,12 @@
     "Risk Score": 20,
     "Summary": "The Centre for Public Expenditure (CPPE) has cautioned the Nigerian government against returning to a general petrol subsidy, instead advocating for the implementation of targeted relief measures.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5958,
@@ -57,7 +264,12 @@
     "Risk Score": 40,
     "Summary": "The Nigerian Airports Management Authority (NAMA) has removed the Category III Instrument Landing System (ILS) due to frequent technical failures and safety concerns.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5953,
@@ -69,7 +281,12 @@
     "Risk Score": 20,
     "Summary": "Dangote Refinery has increased its gantry rate, leading to a rise in petrol prices in Abuja.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5941,
@@ -81,7 +298,12 @@
     "Risk Score": 15,
     "Summary": "Dangote Petroleum Refinery has adjusted its gantry price for Premium Motor Spirit (PMS), increasing the rate by 6.7% to N1,350 per litre from N1,265.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5939,
@@ -93,7 +315,12 @@
     "Risk Score": 40,
     "Summary": "Dangote Refinery is initiating an Initial Public Offering (IPO) valued at N2.15 trillion, aiming to transition consumers into shareholders.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5920,
@@ -105,7 +332,12 @@
     "Risk Score": 15,
     "Summary": "Saviynt has appointed a cybersecurity veteran with 20 years of experience to lead its expansion and operations across the Middle East and Africa (MEA) region.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5916,
@@ -117,7 +349,12 @@
     "Risk Score": 85,
     "Summary": "The EFCC and FBI are collaborating to investigate the alleged diversion of funds provided by the United States Agency for International Development (USAID). The probe focuses on financial irregularities and the potential misappropriation of international aid funds within Nigeria.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5901,
@@ -129,7 +366,12 @@
     "Risk Score": 45,
     "Summary": "Akwa Ibom and Rivers states were excluded from a post-subsidy fiscal assessment due to a lack of available data. This indicates a failure in financial transparency and reporting for these state governments regarding subsidy-related fiscal impact.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5887,
@@ -141,7 +383,12 @@
     "Risk Score": 20,
     "Summary": "Governor Abiodun has announced that Gateway Air is prepared to provide airlift services for Hajj pilgrims.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5880,
@@ -153,7 +400,12 @@
     "Risk Score": 20,
     "Summary": "The Ondo State Government has banned the production and distribution of local alcoholic drinks following a tragedy that resulted in 29 deaths.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5874,
@@ -165,7 +417,12 @@
     "Risk Score": 40,
     "Summary": "A court has ordered the Akwa Ibom state government to pay compensation for a school takeover or risk losing control of the institution. The ruling addresses a dispute over the government's acquisition of private educational property.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5872,
@@ -177,7 +434,12 @@
     "Risk Score": 30,
     "Summary": "The Nigeria Customs Service is deploying post-clearance audits as a strategic measure to boost revenue collection toward a target of N11.07 trillion.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5868,
@@ -189,7 +451,12 @@
     "Risk Score": 20,
     "Summary": "The Federal Government of Nigeria has paid N18 billion in settlement to approximately 2,700 former employees of the liquidated Nigeria Airways. This payment follows a long-standing liability stemming from the airline's liquidation 22 years ago.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5864,
@@ -201,7 +468,12 @@
     "Risk Score": 10,
     "Summary": "The Bayelsa State Government is deploying a significant number of medical professionals, including doctors, nurses, and pharmacy technicians, to primary healthcare centres across the state to improve healthcare delivery.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5852,
@@ -213,7 +485,12 @@
     "Risk Score": 45,
     "Summary": "The Minister of Interior has ordered an investigation into the issuance of a second passport to a realtor based in Abuja. The probe aims to determine the legality of the document issuance process.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5836,
@@ -225,7 +502,12 @@
     "Risk Score": 65,
     "Summary": "The National Insurance Commission (NAICOM) has officially denied allegations of a N100 billion fraud regarding the insurance recapitalisation exercise. The regulator also refuted reports that its Commissioner for Insurance and a Director were detained by the EFCC.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5835,
@@ -237,7 +519,12 @@
     "Risk Score": 85,
     "Summary": "A Nigerian chieftain is accused of defrauding Medicaid of over $36 million. The funds were allegedly used to acquire luxury real estate in California and construct a lavish palace in Abatete, Nigeria.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5834,
@@ -249,7 +536,12 @@
     "Risk Score": 30,
     "Summary": "Uber has ceased its ride-hailing operations in Nigeria and Uganda as of September 2, marking a significant strategic withdrawal from these African markets after 12 years of operation.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5829,
@@ -261,7 +553,12 @@
     "Risk Score": 20,
     "Summary": "The Nigeria Civil Aviation Authority (NCAA) has imposed a fine of N15 million on RwandAir following a passenger complaint regarding baggage.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5825,
@@ -273,7 +570,12 @@
     "Risk Score": 20,
     "Summary": "American University of Nigeria (AUN) President Dwayne Frazier discusses the erroneous employment of a lecturer who was a convicted sodomite.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5823,
@@ -285,7 +587,12 @@
     "Risk Score": 30,
     "Summary": "The Cross River State government has cancelled a previous local government recruitment process described as 'flawed' and approved the creation of 4,000 new jobs.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5818,
@@ -297,7 +604,12 @@
     "Risk Score": 75,
     "Summary": "The report alleges systemic corruption and bureaucratic sabotage within the National Agency for Food and Drug Administration and Control (NAFDAC), suggesting these failures pose a risk to national security.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5816,
@@ -309,7 +621,12 @@
     "Risk Score": 15,
     "Summary": "BudgIT reports that Enugu and Abia states have recorded the fastest revenue growth in Nigeria following the removal of fuel subsidies.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5814,
@@ -321,7 +638,12 @@
     "Risk Score": 20,
     "Summary": "Nigeria has fulfilled its equity commitment regarding a vaccine production initiative. The report indicates a financial or ownership stake has been settled to facilitate local vaccine manufacturing.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5813,
@@ -333,7 +655,12 @@
     "Risk Score": 20,
     "Summary": "The Federal Government has banned 25% of textbooks and implemented a 70% pass mark requirement for school books approval.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5806,
@@ -345,7 +672,12 @@
     "Risk Score": 75,
     "Summary": "The House of Representatives Committee on Steel Development is investigating a sub-lease and operation agreement between the National Iron Ore Mining Company (NIOMCO) and Premium Steel. The probe focuses on alleged procurement breaches and irregularities in the deal's execution.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5803,
@@ -357,7 +689,12 @@
     "Risk Score": 20,
     "Summary": "Nigeria and China have entered into an Aquatic Products Protocol intended to facilitate trade and economic transformation in the aquaculture sector.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5797,
@@ -369,7 +706,12 @@
     "Risk Score": 20,
     "Summary": "The Federal Government of Nigeria has paid N18 billion to 2,700 former employees of the defunct Nigeria Airways.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5795,
@@ -381,7 +723,12 @@
     "Risk Score": 20,
     "Summary": "Dangote Group is seeking cargo-backed financing to enhance its shipping operations within Nigeria.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5792,
@@ -393,7 +740,12 @@
     "Risk Score": 20,
     "Summary": "Governor Uba Sani has appointed new commissioners and aides to support the implementation of government reforms.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5780,
@@ -405,7 +757,12 @@
     "Risk Score": 85,
     "Summary": "An investigation reveals that Chief Nathan Ogbatue allegedly defrauded the US Medi-Cal program of millions of dollars. The funds were reportedly used to finance an opulent lifestyle and the construction of a palace in Abatete, Nigeria.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5777,
@@ -417,7 +774,12 @@
     "Risk Score": 75,
     "Summary": "Allegations have surfaced regarding a potential multimillion-dollar fraud involving a Nigerian national, referred to as 'Chief Nat', and California's Medicaid revenues. The report suggests potential financial irregularities and fraudulent activities impacting state funds.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5775,
@@ -429,7 +791,12 @@
     "Risk Score": 20,
     "Summary": "The Nigerian National Petroleum Company Limited (NNPC) plans to deploy 50 to 70 smart, self-service filling stations across Nigeria within six months. The company asserts that this operational shift toward automation will not result in job losses.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5773,
@@ -441,7 +808,12 @@
     "Risk Score": 75,
     "Summary": "The Economic and Financial Crimes Commission (EFCC) and the FBI are investigating the alleged diversion of funds intended for US-backed health programmes.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5763,
@@ -453,7 +825,12 @@
     "Risk Score": 20,
     "Summary": "Stanbic IBTC is acting as a key participant/advisor in the Initial Public Offering (IPO) of the Dangote Refinery. This indicates a significant capital market transaction for the refinery's corporate structure.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5762,
@@ -465,7 +842,12 @@
     "Risk Score": 20,
     "Summary": "Bosun Olabiyi-Agoro has been elected as the new President of PENGASSAN, the Petroleum and Natural Gas Senior Staff Association of Nigeria. He and a new executive team have taken the oath of office to lead the union.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5761,
@@ -477,7 +859,12 @@
     "Risk Score": 20,
     "Summary": "Uber is implementing a significant corporate restructuring involving the elimination of approximately 3,300 jobs. As part of this shift, the company is limiting fully remote work to roughly 1% of its remaining workforce.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5758,
@@ -489,7 +876,12 @@
     "Risk Score": 20,
     "Summary": "The Nigerian National Petroleum Company (NNPC) plans to upgrade over 900 of its fuel stations by integrating solar energy systems and electric vehicle (EV) charging infrastructure.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5757,
@@ -501,7 +893,12 @@
     "Risk Score": 10,
     "Summary": "The first phase of repairs on the Kara Bridge along the Lagos-Ibadan Expressway has been completed.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5752,
@@ -513,7 +910,12 @@
     "Risk Score": 20,
     "Summary": "The Mushin Local Government Council has sealed a market due to persistent environmental violations.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5751,
@@ -525,7 +927,12 @@
     "Risk Score": 20,
     "Summary": "The Independent National Electoral Commission (INEC) is deploying Artificial Intelligence (AI) technology to identify and detect discrepancies in poll results for the 2027 elections.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5747,
@@ -537,7 +944,12 @@
     "Risk Score": 10,
     "Summary": "Nigeria has commenced the local production of dual-active mosquito nets to improve public health outcomes.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5744,
@@ -549,7 +961,12 @@
     "Risk Score": 20,
     "Summary": "The Nigeria Customs Service is transitioning its operational approach from physical cargo inspections to post-clearance audits to streamline customs processes.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5743,
@@ -561,7 +978,12 @@
     "Risk Score": 30,
     "Summary": "The Nigerian Minister of Power has secured commitments from China for the implementation of power projects. The report indicates a high-level agreement for infrastructure development in the energy sector.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5742,
@@ -573,7 +995,12 @@
     "Risk Score": 15,
     "Summary": "The Nigeria Civil Aviation Authority (NCAA) and the National Insurance Commission (NAICOM) have signed a Memorandum of Understanding (MoU) to enhance the oversight and regulation of aviation insurance in Nigeria.",
     "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   },
   {
     "ID": 5740,
@@ -585,138 +1012,11 @@
     "Risk Score": 15,
     "Summary": "The Nigeria Civil Aviation Authority (NCAA) and the National Insurance Commission (NAICOM) have signed a Memorandum of Understanding (MoU) to enhance the regulation and oversight of aviation insurance.",
     "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5729,
-    "Time": "2026-09-09T22:58:48Z",
-    "Title": "How Did This Nigerian Chief Make Millions From Medicaid?",
-    "Source": "Freerepublic.com",
-    "URL": "https://freerepublic.com/focus/f-news/4394891/posts",
-    "Category": "Legal",
-    "Risk Score": 85,
-    "Summary": "The article investigates the financial gains made by Chief Nathan Ogba through the Medicaid system. It examines potential irregularities and the mechanisms used to secure millions in government funding.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5726,
-    "Time": "2026-09-09T23:53:25Z",
-    "Title": "FirstBank invests N6bn annually against cyber threats",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/firstbank-invests-n6bn-annually-against-cyber-threats/",
-    "Category": "Company",
-    "Risk Score": 10,
-    "Summary": "First Bank of Nigeria invests over N6 billion annually in cybersecurity measures to safeguard its systems against cyber threats. The disclosure was made by the bank's CEO, Mr. Olusegun Alebiosu.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5725,
-    "Time": "2026-09-09T23:53:25Z",
-    "Title": "NCAA, NAICOM sign deal to strengthen aviation insurance",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/ncaa-naicom-sign-deal-to-strengthen-aviation-insurance/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigeria Civil Aviation Authority (NCAA) and the National Insurance Commission (NAICOM) have signed a Memorandum of Understanding. The agreement aims to strengthen aviation insurance oversight and enhance protection for airlines and passengers.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5723,
-    "Time": "Thu, 10 Sep 2026 21:05:13 GMT",
-    "Title": "NNPC to roll out 70 smart fuel stations nationwide | - theeagleonline.com.ng",
-    "Source": "theeagleonline.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRGx1b3N2TlNtTnBGZXhFZG9uYzg1Rzd1cUFhYnA4RUREclppa2x4SlNfMFE1Y25pU2xMalhRQjBSSXhoSEFFSzk4el92U3RPZWo4OWxudW5rcHYySzNXMkdvZ0QxZkduMXhwU3ZBNWhtMGlDNGhQcnM5dzIySFJteWxJLXJDZzg1?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigerian National Petroleum Company (NNPC) intends to deploy 70 smart fuel stations across the country to modernize retail infrastructure.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5722,
-    "Time": "Thu, 10 Sep 2026 23:57:38 GMT",
-    "Title": "NNPC to deploy 70 self-service filling stations nationwide - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSzV0SjNFd2ZhUnQtT1VFWmJFN3JBdDVPN3hPTnpiUXBRREE3UlQxNEx4ZnFqdlB5bWFESG1KVjF0bHM0cDcxdHppLWxadzI5bEZzWFJKUnVTXzM1bmctSnI2YWF5a1ZESjktS2lTWGR1Vm5pOGQ3SFNMZGxaS1BvSFkxZ2ZNQQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "The Nigerian National Petroleum Company (NNPC) plans to deploy 70 self-service filling stations across the country.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5720,
-    "Time": "Thu, 10 Sep 2026 21:41:38 GMT",
-    "Title": "NFIU, patners seek financial intelligence sharing collaboration framework - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSkdVLXM0NmRfd1VLSFBYNW1fcFR4MnYwSEZtSndEaDBCQS00cDF3TzdpRFVXaVhCd1ZfMy1Palg0SVFvSlhTdjV5dmxMYmVqVTNXOWdtbTF3VXRZbjI1dDMtYURESnFQQnI1eTFWQTJ3WHhES2NqNU5WYzNRQUFEOGE1aDZJaWlCcmZoUEM2d1ZpbVhZZmpmaV9vWW1PMzRTQTBaMXlwNkVoNk0yNWE3bTd4Wkw2ZWpQNjFSNGZYQzM4Nm5kcmdheg?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigerian Financial Intelligence Unit (NFIU) is seeking to establish a collaboration framework for the sharing of financial intelligence with its partners.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5717,
-    "Time": "Thu, 10 Sep 2026 21:26:38 GMT",
-    "Title": "Jigawa sets up task force to crack down on substandard private health institutions - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNekVDcnVOR0JDYVZmbkJFSUkzekJVa3V6RTJOQ1d3ekFmblFoOE5TdzVHanZFNW5FS1VvOWZ3SGk3MGgyUFpmS0xIYmhpZmoyejN0ZWVrZzd1ZFFEV3dTNE4wUHJ5ZTdUYkE1OUlsV1ktUTdEalVqbGNCSzFJaUZfaHRJSWVCQ0tkaDN5LVhhUlFvanp6RGxPY3NkN3NsamQ2b2pfVWF6RWFHTGJseUJMSFZlTE9zZ05mOFhYRkotbG5KS01TZ3BKaG9GUDY2c1E?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Jigawa State government has established a task force to identify and crack down on substandard private health institutions operating within the state.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5713,
-    "Time": "Thu, 10 Sep 2026 21:12:50 GMT",
-    "Title": "US delivers military equipment to Nigeria | - theeagleonline.com.ng",
-    "Source": "theeagleonline.com.ng",
-    "URL": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtZk5uWXV6c1hZd3pJTkFyWEJYM0FTTDdRZUNHS1NnMVk1di1Idmpab2xUZEUwVWN2WEo3bEVGX3hDdzZsRDBtRUxYVjNDeTlXR2haYXpwN1pSMHg5ZlJYbmxRSnJBeEdEbHdteFBLVlUyNVNZMEhuczZmTko?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The United States has delivered military equipment to Nigeria. The specific nature of the equipment and the value of the procurement were not detailed in the text.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5700,
-    "Time": "Thu, 10 Sep 2026 04:07:00 GMT",
-    "Title": "CBN tightens grip on banks over terrorism financing risk - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNXzU1TWl4ODNFYkFPNURTMXhjN19XV0pPVjV4VXBWUlY4VmR4V2pVaDhxOUdBQXZKZUJlT1JmdkRxN1ZsYi1nSmt6VEFXVHFRbUdGREh1TmNsWUgzR1psYThiTi11SDJFQVBZYm1lX0NsTk5Vb2dsYTlxZlotVk9TMlZ3eFowd3N1cndpYkF2LUpHRGQ5RjFvMU1yYw?oc=5",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "The Central Bank of Nigeria (CBN) is increasing regulatory oversight and tightening controls over commercial banks to mitigate risks associated with terrorism financing.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5699,
-    "Time": "Thu, 10 Sep 2026 18:08:56 GMT",
-    "Title": "FG strengthens digital compliance drive in tax reform - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcGktLXRXbC1YNVZ6M3RUNkNpVmRsb3Q0cWJ6RzFZZ0wyNWl1SFU4MW1mT2s2dFRQZ0p6TFpROGlRNlVTVU12WHQ4dFVKNS1jWXEwQ1Q1RmZiVGw5Y0toQkdobmcxVG5NMmVPTVZhWGM1XzNUdFFWRVA1bXlsNXJOS3VRdVJPUQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Federal Government of Nigeria is enhancing digital compliance measures as part of its ongoing tax reform initiatives.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5697,
-    "Time": "2026-09-10 04:37:52",
-    "Title": "NERC Orders DisCos To Channel Up To 60% Of Surplus Revenue Into Mandatory Grid Upgrade Fund",
-    "Source": "independentng",
-    "URL": "https://independent.ng/nerc-orders-discos-to-channel-up-to-60-of-surplus-revenue-into-mandatory-grid-upgrade-fund/",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Nigerian Electricity Regulatory Commission (NERC) has directed Distribution Companies (DisCos) to allocate up to 60% of their surplus revenue into a mandatory fund dedicated to grid upgrades.",
-    "Status": "Unread",
-    "Engine": "ollama"
+    "Engine": "ollama",
+    "Event Type": "",
+    "Risk Level": "",
+    "Importance": "",
+    "Entities": "",
+    "Filter Reason": ""
   }
 ]

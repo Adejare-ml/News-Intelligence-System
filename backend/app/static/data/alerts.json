@@ -1,0 +1,29 @@
+{
+  "alerts": [
+    {
+      "date": "2026-09-14",
+      "title": "\u2018Ghost\u2019 beneficiaries\u00a0beneficiaries of N33/7bn cash transfer",
+      "url": "https://www.vanguardngr.com/2026/09/ghost-beneficiaries-beneficiaries-of-n33-7bn-cash-transfer/",
+      "source": "Vanguard",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Federal Government of Nigeria"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "title": "Lobbying: Fresh storm over dollars spent by Tinubu, Atiku in US",
+      "url": "https://www.vanguardngr.com/2026/09/lobbying-fresh-storm-over-dollars-spent-by-tinubu-atiku-in-us/",
+      "source": "Vanguard",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Bola Ahmed Tinubu",
+        "Atiku Abubakar"
+      ]
+    }
+  ],
+  "window_days": 90,
+  "generated": "2026-09-14 11:03:36"
+}

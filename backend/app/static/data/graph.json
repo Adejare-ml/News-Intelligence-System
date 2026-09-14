@@ -25,16 +25,22 @@
       "risk": "Critical"
     },
     {
-      "id": "92553f8122d8",
-      "label": "Uber",
+      "id": "f38bd75574f6",
+      "label": "Nigerian National Petroleum Company Limited",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "d9b2bde3f533",
+      "label": "Uber Nigeria",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
+      "id": "d911eb1cbbc7",
+      "label": "NNPC Limited",
       "type": "company",
-      "risk": "Medium"
+      "risk": "Low"
     },
     {
       "id": "c0f6baef22e7",
@@ -49,12 +55,6 @@
       "risk": "Critical"
     },
     {
-      "id": "6eac15c47af6",
-      "label": "NNPC",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "4921c0e2d1f6",
       "label": "AI",
       "type": "company",
@@ -67,20 +67,14 @@
       "risk": "Low"
     },
     {
-      "id": "f38bd75574f6",
-      "label": "Nigerian National Petroleum Company Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f174114ad69e",
       "label": "Nigeria",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "cbdeaeb2cf5b",
-      "label": "APC",
+      "id": "6b0baabbfd00",
+      "label": "APC Group",
       "type": "company",
       "risk": "Critical"
     },
@@ -109,6 +103,12 @@
       "risk": "Critical"
     },
     {
+      "id": "dce5a31d3181",
+      "label": "MTN Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f2c3b75d7304",
       "label": "Ondo",
       "type": "company",
@@ -121,8 +121,44 @@
       "risk": "Critical"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6c302b827a55",
+      "label": "Government of the United States",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -135,12 +171,6 @@
     {
       "id": "1f51cde9fd6f",
       "label": "Rivers State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -169,8 +199,14 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "c06f2d9a3df8",
+      "label": "National Insurance Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ef6dbf96f94e",
+      "label": "Ondo State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -181,32 +217,8 @@
       "risk": "Low"
     },
     {
-      "id": "2cbc793c6023",
-      "label": "Government of China",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1336530dfec0",
-      "label": "National Iron Ore Mining Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5ca3ae50267",
-      "label": "House of Representatives Committee on Steel Development",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "53b3ee0e5bd3",
-      "label": "BudgIT",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,9 +235,27 @@
       "risk": "Low"
     },
     {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
+      "id": "2cbc793c6023",
+      "label": "Government of China",
       "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a094abf1abe",
+      "label": "Bola Ahmed Tinubu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "325a5c8a1ef5",
+      "label": "Atiku Abubakar",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "37a6259cc0c1",
+      "label": "null",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -337,12 +367,6 @@
       "risk": "Low"
     },
     {
-      "id": "37a6259cc0c1",
-      "label": "null",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "74eb1ae50a3b",
       "label": "Wilfred Ikatari",
       "type": "person",
@@ -388,6 +412,12 @@
       "id": "4f0653978f1b",
       "label": "Prof. Mojisola Adeyeye",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -460,36 +490,6 @@
       "id": "ab45b8425ce6",
       "label": "Seriake Sylva",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6de995445e36",
-      "label": "Timipre Sylva",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "283e1d4aa831",
-      "label": "All Progressives Congress",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "568f4fc5fb3d",
-      "label": "Gbajabiamila",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -607,9 +607,21 @@
       "risk": "Low"
     },
     {
+      "id": "1336530dfec0",
+      "label": "National Iron Ore Mining Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "f5e16be1446b",
       "label": "Premium Steel",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -627,12 +639,6 @@
     {
       "id": "6c0b3f1b5072",
       "label": "Chinese entities (unspecified)",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6c302b827a55",
-      "label": "Government of the United States",
       "type": "company",
       "risk": "Low"
     },
@@ -698,6 +704,18 @@
     }
   ],
   "edges": [
+    {
+      "id": "de3ab25e4012",
+      "from": "5a094abf1abe",
+      "to": "b5da1d8370fd",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "c098f0ce0d9f",
+      "from": "325a5c8a1ef5",
+      "to": "37a6259cc0c1",
+      "label": "Appointed as Former Vice-President"
+    },
     {
       "id": "2b423480bb40",
       "from": "6b8bead22e32",
@@ -835,18 +853,6 @@
       "from": "ab45b8425ce6",
       "to": "217ee6fe71c5",
       "label": "Appointed as Former Governor"
-    },
-    {
-      "id": "2356d1ecfa3e",
-      "from": "6de995445e36",
-      "to": "283e1d4aa831",
-      "label": "Appointed as Former Governor of Bayelsa State"
-    },
-    {
-      "id": "2530203933d9",
-      "from": "568f4fc5fb3d",
-      "to": "1613f8dac921",
-      "label": "Appointed as Not Specified"
     },
     {
       "id": "0cd3b636ebc8",

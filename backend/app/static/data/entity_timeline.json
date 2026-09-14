@@ -1,0 +1,141 @@
+{
+  "entities": [
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "bola ahmed tinubu",
+      "label": "Bola Ahmed Tinubu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "government of the united states",
+      "label": "Government of the United States",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "uber",
+      "label": "Uber",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    }
+  ],
+  "generated": "2026-09-14 11:03:36"
+}
