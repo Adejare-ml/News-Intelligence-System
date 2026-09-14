@@ -82,7 +82,7 @@ jobs:
       # re-downloaded eslint -- the old inline comment claimed "npx caches
       # per runner", which is not true across hosted runners.
       - name: Cache npx eslint
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.npm
           key: npx-eslint-10.10.0-${{ runner.os }}
