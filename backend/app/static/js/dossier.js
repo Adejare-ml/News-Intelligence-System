@@ -279,10 +279,22 @@
             return dataPromise;
         }
 
+        var main = doc.getElementById("main");
+
         function show(html) {
             outlet.innerHTML = html;
             outlet.hidden = false;
+            // Page mode: hide the dashboard sections underneath. Without
+            // this the dossier rendered ON TOP of the still-mounted hero,
+            // brief, register and graph -- with two <h1>s in the document.
+            // CSS: main[data-route-page] > :not([data-route-outlet]).
+            if (main) main.setAttribute("data-route-page", "true");
             try { global.scrollTo(0, 0); } catch (e) { /* headless */ }
+        }
+
+        function leavePageMode() {
+            outlet.hidden = true;
+            if (main) main.removeAttribute("data-route-page");
         }
 
         /**
@@ -323,13 +335,25 @@
             header.appendChild(note);
         }
 
+        // Generation counter: the first dossier visit fetches ~300KB of
+        // datasets, and navigating away mid-load used to re-open the
+        // dossier over the destination when the promise finally settled.
+        var navGeneration = 0;
+
         function pageHandler(build) {
             return function (params) {
+                var generation = ++navGeneration;
                 show('<div class="dossier"><p class="empty-note">Loading…</p></div>');
                 loadData().then(function (data) {
+                    if (generation !== navGeneration) return; // user moved on
                     var model = build(params.slug, data);
                     show(renderDossierHTML(model));
                     wireWatch(model, params.slug);
+                }).catch(function () {
+                    if (generation !== navGeneration) return;
+                    show('<div class="dossier"><p class="empty-note">'
+                        + 'The dossier data could not be loaded. '
+                        + '<a href="#/">Back to the dashboard</a></p></div>');
                 });
             };
         }
@@ -338,11 +362,15 @@
             Router.register(view, pageHandler(PAGE_VIEWS[view]));
         });
 
-        // Leaving a dossier for any section-scroll view hides the outlet
-        // again, so the page underneath is not stuck behind it.
+        // Leaving a dossier for any section-scroll view (or a legacy #anchor)
+        // restores the dashboard and invalidates any in-flight dossier load.
         global.addEventListener("hashchange", function () {
-            var m = Router.matchRoute((global.location && global.location.hash) || "");
-            if (m && Router.SECTION_VIEWS[m.view] !== undefined) outlet.hidden = true;
+            var hash = (global.location && global.location.hash) || "";
+            var m = Router.matchRoute(hash);
+            if (!Router.isRouteHash(hash) || (m && Router.SECTION_VIEWS[m.view] !== undefined)) {
+                navGeneration++;
+                leavePageMode();
+            }
         });
 
         // Deep link: a dossier hash pasted into a fresh tab dispatched before
