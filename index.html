@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.7">
+    <link rel="stylesheet" href="css/styles.css?v=5.8">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -205,6 +205,28 @@
             <div class="watchlist-body" id="watchlist-body"></div>
         </section>
 
+        <!-- Agency activity board: the largest export in the system (874
+             mention rows) ranked by volume with event-type breakdowns.
+             Rendered from data/agencies.json by boards.js. -->
+        <section class="glass insight-panel" id="agency-board-panel" hidden>
+            <div class="panel-header">
+                <h2>Agency activity</h2>
+                <span class="insight-generated" id="agency-board-note"></span>
+            </div>
+            <div class="insight-groups" id="agency-board-body"></div>
+        </section>
+
+        <!-- Appointments & departures: executive churn the pipeline already
+             classifies, grouped by month. Rendered from data/people.json
+             by boards.js. -->
+        <section class="glass insight-panel" id="appointments-panel" hidden>
+            <div class="panel-header">
+                <h2>Appointments &amp; departures</h2>
+                <span class="insight-generated" id="appointments-note"></span>
+            </div>
+            <div class="insight-groups" id="appointments-body"></div>
+        </section>
+
         <!-- Company risk board: which of the ~1000 tracked companies sit
              above Low risk, ranked by severity then mentions. Rendered
              from data/companies.json by insights.js; the file was already
@@ -317,6 +339,21 @@
             <div id="register-list" class="register-list"></div>
         </section>
 
+        <!-- Procurement ledger: every tracked contract on a sortable table,
+             ranked by the pipeline-parsed amounts (null = undisclosed,
+             honestly labelled). Rendered from data/procurement.json by
+             boards.js; hidden until the data loads. -->
+        <section class="register-section" id="procurement" data-reveal hidden>
+            <div class="section-head">
+                <div>
+                    <span class="section-kicker">02b — Money trail</span>
+                    <h2>Procurement ledger</h2>
+                </div>
+                <span class="insight-generated" id="procurement-note"></span>
+            </div>
+            <div id="procurement-table"></div>
+        </section>
+
         <!-- Main Workspace Grid -->
         <section class="section-head standalone" id="workspace" data-reveal>
             <div>
@@ -425,6 +462,17 @@
                         <button id="graph-zoom-out" class="graph-btn" title="Zoom Out" aria-label="Zoom Out"><i data-lucide="zoom-out"></i></button>
                         <button id="graph-fit" class="graph-btn" title="Reset View" aria-label="Reset View"><i data-lucide="maximize-2"></i></button>
                         <button id="graph-physics-toggle" class="graph-btn" title="Pause/Play Motion" aria-label="Pause or Play Motion"><i data-lucide="pause"></i></button>
+                        <button id="graph-png" class="graph-btn" title="Save as PNG" aria-label="Save graph as PNG"><i data-lucide="download"></i></button>
+                    </div>
+                    <!-- Node-type / risk filters: 116 nodes render as a
+                         hairball; hiding the Low-risk majority leaves the
+                         ones that matter. -->
+                    <div class="graph-filter-bar" role="group" aria-label="Graph filters">
+                        <button class="graph-type-btn active" data-node-type="company" aria-pressed="true">Companies</button>
+                        <button class="graph-type-btn active" data-node-type="agency" aria-pressed="true">Agencies</button>
+                        <button class="graph-type-btn active" data-node-type="person" aria-pressed="true">People</button>
+                        <button class="graph-type-btn active" data-node-type="psc" aria-pressed="true">Owners</button>
+                        <button class="graph-type-btn" id="graph-elevated-toggle" aria-pressed="false">Elevated risk only</button>
                     </div>
                     <!-- Shortest-path tracing between two entities; the
                          selects are filled from the loaded graph nodes. -->
@@ -716,8 +764,9 @@
     <script src="js/graph-path.js?v=5.2"></script>
     <script src="js/local-store.js?v=5.2"></script>
     <script src="js/feed-filters.js?v=5.7"></script>
+    <script src="js/boards.js?v=5.8"></script>
     <script src="js/insights.js?v=5.7"></script>
-    <script src="js/app.js?v=5.7"></script>
+    <script src="js/app.js?v=5.8"></script>
     <script src="js/psc-report.js?v=5.6"></script>
 </body>
 </html>
