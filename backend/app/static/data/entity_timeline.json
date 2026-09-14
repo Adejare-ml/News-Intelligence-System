@@ -22,7 +22,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 3,
+      "total_mentions": 4,
       "points": [
         {
           "week": "2026-09-07",
@@ -32,8 +32,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 30.0,
+          "mentions": 3,
+          "avg_risk": 26.7,
           "max_risk": 40
         }
       ]
@@ -86,6 +86,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "king s college",
+      "label": "King's College",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -350,5 +363,5 @@
       ]
     }
   ],
-  "generated": "2026-09-14 18:26:18"
+  "generated": "2026-09-14 20:51:36"
 }

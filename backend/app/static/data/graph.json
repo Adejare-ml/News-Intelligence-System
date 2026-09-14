@@ -211,6 +211,12 @@
       "risk": "Low"
     },
     {
+      "id": "3baa3fea1145",
+      "label": "King's College",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "1f51cde9fd6f",
       "label": "Rivers State Government",
       "type": "agency",
@@ -225,12 +231,6 @@
     {
       "id": "6fb19a1a4558",
       "label": "United States Agency for International Development",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8c75d3b63439",
-      "label": "Nigerian Airports Management Authority",
       "type": "agency",
       "risk": "Low"
     },
