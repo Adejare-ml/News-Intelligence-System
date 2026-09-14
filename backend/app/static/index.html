@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.6">
+    <link rel="stylesheet" href="css/styles.css?v=5.7">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -205,6 +205,18 @@
             <div class="watchlist-body" id="watchlist-body"></div>
         </section>
 
+        <!-- Company risk board: which of the ~1000 tracked companies sit
+             above Low risk, ranked by severity then mentions. Rendered
+             from data/companies.json by insights.js; the file was already
+             fetched on every boot and used for a single integer. -->
+        <section class="glass insight-panel" id="risk-leaderboard-panel" hidden>
+            <div class="panel-header">
+                <h2>Company risk board</h2>
+                <span class="insight-generated" id="risk-leaderboard-note"></span>
+            </div>
+            <div class="insight-groups" id="risk-leaderboard-body"></div>
+        </section>
+
         <!-- Tech & AI headlines: a keyless side vertical rendered from
              data/tech_news.json by insights.js. Reader context only --
              these never enter the Nigerian intelligence pipeline, touch
@@ -361,6 +373,20 @@
                 <div class="feed-meta-row">
                     <span id="feed-count" class="feed-count" aria-live="polite">Loading records…</span>
                     <label class="sort-control">
+                        <span>Window:</span>
+                        <select id="feed-days" aria-label="Filter feed by date window">
+                            <option value="0">All time</option>
+                            <option value="7">Last 7 days</option>
+                            <option value="30">Last 30 days</option>
+                        </select>
+                    </label>
+                    <label class="sort-control">
+                        <span>Source:</span>
+                        <select id="feed-source" aria-label="Filter feed by publisher">
+                            <option value="">All sources</option>
+                        </select>
+                    </label>
+                    <label class="sort-control">
                         <span>Sort:</span>
                         <select id="feed-sort" aria-label="Sort intelligence feed">
                             <option value="newest">Newest first</option>
@@ -477,13 +503,20 @@
             </div>
             <div class="modal-body">
                 <h2 id="modal-title">Federal Government appoints Jane Doe as Permanent Secretary</h2>
+                <!-- Importance and event type are extracted fields and render
+                     only when the pipeline recorded them; the old markup here
+                     showed a hardcoded "Neutral" sentiment and an Importance
+                     chip that duplicated the risk score. -->
                 <div class="modal-metadata">
                     <span id="modal-source"><i data-lucide="globe"></i> Reuters</span>
                     <span id="modal-date"><i data-lucide="calendar"></i> 2026-07-15</span>
-                    <span id="modal-importance" class="importance-rating">Importance: 94</span>
-                    <span id="modal-sentiment" class="sentiment-badge">Neutral</span>
+                    <span id="modal-event-type" class="badge" hidden></span>
+                    <span id="modal-importance" class="importance-rating" hidden></span>
                     <span id="modal-risk" class="risk-badge critical">Critical Risk</span>
                     <span id="modal-engine" class="engine-chip" title="AI engine that analyzed this article"></span>
+                </div>
+                <div class="risk-scale" id="modal-risk-scale" role="img" aria-label="Risk score" hidden>
+                    <span class="risk-scale-fill"></span>
                 </div>
                 
                 <hr class="modal-divider">
@@ -682,8 +715,9 @@
     <script src="js/datatable.js?v=4.6"></script>
     <script src="js/graph-path.js?v=5.2"></script>
     <script src="js/local-store.js?v=5.2"></script>
-    <script src="js/insights.js?v=5.6"></script>
-    <script src="js/app.js?v=5.6"></script>
+    <script src="js/feed-filters.js?v=5.7"></script>
+    <script src="js/insights.js?v=5.7"></script>
+    <script src="js/app.js?v=5.7"></script>
     <script src="js/psc-report.js?v=5.6"></script>
 </body>
 </html>
