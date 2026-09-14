@@ -64,8 +64,11 @@ Degraded local extraction still exists for offline development, but only behind 
 - **Multi-source aggregation** — Google News RSS plus NewsAPI, GNews, NewsData, and The Guardian
 - **Relevance filtering** — off-topic stories are recorded as `Filtered` rather than published, and their URLs are cached so they are never re-analyzed
 - **Executive reporting** — a daily Markdown brief with Key Developments, High Risk Alerts, Beneficial Ownership & PSC Disclosures, and Procurement & Board Changes, archived per run. Each edition covers the whole calendar day up to the run time (every bullet cites its source article), so the last run of the day publishes the complete daily picture rather than only its own batch
-- **Knowledge graph** — entity relationship map linking people, companies, agencies, and PSC holders
-- **Interactive dashboard** — intelligence feed with live search and risk filtering, PSC transparency panel with per-holder dossiers, and CSV export
+- **Knowledge graph** — entity relationship map linking people, companies, agencies, and PSC holders, with shortest-path tracing between any two entities
+- **Global search & dossiers** — a Ctrl+K palette over companies, people, PSC records, articles and procurement; every entity gets a linkable dossier page (`#/company/…`, `#/person/…`, `#/agency/…`)
+- **Interactive dashboard** — intelligence feed with live search and risk filtering, a sortable/paginated PSC register with per-holder dossiers, per-device watchlists and alert dismissal, and CSV export
+- **Context signals** — term/category momentum over the pipeline's own articles, an r/Nigeria social column, and current Lagos/Abuja conditions, all fetched pipeline-side to keep the site's CSP locked to `'self'`
+- **Syndication** — an RSS feed of every brief edition at [`data/feed.xml`](https://adejare-ml.github.io/News-Intelligence-System/data/feed.xml), and an optional high-risk webhook (Slack/Discord-compatible) gated on a repository secret
 - **Provenance** — every article and report records the engine that generated it
 
 ## 🚀 Quick Start
@@ -114,7 +117,8 @@ Secrets and variables are read from the environment (GitHub Actions secrets in C
 | `OPENAI_API_KEY` | Last-resort report fallback | No |
 | `GOOGLE_SERVICE_ACCOUNT_JSON` | Service account JSON for Sheets | No — falls back to local Excel |
 | `SPREADSHEET_ID` | Target spreadsheet id | No — falls back to local Excel |
-| `NEWSAPI_KEY`, `NEWSDATA_KEY`, `GUARDIAN_API_KEY` | News source keys; RSS works without any | No |
+| `NEWSAPI_KEY`, `NEWSDATA_KEY`, `GUARDIAN_API_KEY`, `GNEWS_KEY` | News source keys; RSS works without any | No |
+| `ALERT_WEBHOOK_URL` | Slack/Discord-style webhook that receives each run's high-risk articles | No — unset means no alerts |
 | `GEMINI_MODEL`, `NVIDIA_MODEL`, `NVIDIA_MODEL_FALLBACK` | Pin specific models; sensible defaults otherwise | No |
 | `SEED_DEMO_PSC` | Seed illustrative PSC rows when empty (default `false`) | No |
 | `SEED_DEMO_ARTICLES` | Pad a thin ingestion cycle (<10 real articles) with synthetic ones, clearly marked, instead of leaving it as-is (default `false`) | No |
@@ -134,7 +138,7 @@ Google Sheets acts as the database. Each tab maps to a `SHEETS_CONFIG` entry in 
 | **Procurement** | Contract awards: agency, contractor, amount, project |
 | **Daily Reports** | Run statistics and the full generated report |
 
-Each run exports these to `backend/app/static/data/*.json` for the dashboard and writes `report_latest.md` plus a dated archive.
+Each run exports these to `backend/app/static/data/*.json` for the dashboard and writes `report_latest.md` plus a dated archive, along with `weather.json`/`trends.json` context signals and the `feed.xml` RSS document.
 
 ## 🧪 Testing
 

@@ -2070,3 +2070,70 @@ div.vis-tooltip {
     font-size: 11px;
     color: var(--text-muted);
 }
+
+/* =====================================================================
+   Toasts (Package 13): non-blocking notices replacing alert().
+   ===================================================================== */
+.toast-region {
+    position: fixed;
+    bottom: var(--space-5);
+    right: var(--space-5);
+    z-index: 1300; /* above the search palette's 1200 backdrop */
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    max-width: min(420px, calc(100vw - 2 * var(--space-5)));
+    pointer-events: none; /* clicks pass through the empty region */
+}
+
+.toast {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--surface-1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--hairline-strong);
+    border-left: 3px solid var(--secondary);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-primary);
+    pointer-events: auto;
+    animation: toastIn var(--dur) var(--ease-out);
+}
+
+.toast-success { border-left-color: var(--success); }
+.toast-error { border-left-color: var(--danger); }
+
+.toast-text { white-space: pre-line; }
+
+.toast-close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1;
+    padding: 2px;
+    cursor: pointer;
+}
+.toast-close:hover { color: var(--text-primary); }
+
+.toast-leaving {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 280ms ease, transform 280ms ease;
+}
+
+@keyframes toastIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .toast { animation: none; }
+    .toast-leaving { transition: opacity 280ms ease; transform: none; }
+}
