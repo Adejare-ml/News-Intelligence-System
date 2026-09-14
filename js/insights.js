@@ -197,6 +197,43 @@
         return html;
     }
 
+    /**
+     * Displayable model for tech_news.json (Package 14). Re-validates what
+     * the pipeline wrote -- items need a title and an http(s) URL to render
+     * as links -- and returns null when both sections are empty so the
+     * panel stays hidden.
+     */
+    function techNewsSummary(payload, cap) {
+        if (!payload) return null;
+        cap = cap || 8;
+        function clean(list) {
+            return (list || []).filter(function (item) {
+                return item && item.title
+                    && typeof item.url === "string"
+                    && (item.url.indexOf("https://") === 0 || item.url.indexOf("http://") === 0);
+            }).slice(0, cap);
+        }
+        var ai = clean(payload.ai);
+        var dev = clean(payload.dev);
+        if (!ai.length && !dev.length) return null;
+        return { generated: payload.generated || "", ai: ai, dev: dev };
+    }
+
+    /** HTML for the tech news panel body. Escaped throughout. */
+    function renderTechNewsHTML(summary) {
+        function group(label, items) {
+            if (!items.length) return "";
+            return '<div class="insight-group"><h3>' + esc(label) + "</h3><ul>"
+                + items.map(function (item) {
+                    return '<li><a class="report-link" rel="noopener noreferrer" target="_blank" href="'
+                        + esc(item.url) + '">' + esc(item.title) + "</a>"
+                        + (item.source ? ' <span class="insight-count">' + esc(item.source) + "</span>" : "")
+                        + "</li>";
+                }).join("") + "</ul></div>";
+        }
+        return group("AI industry", summary.ai) + group("Developer world", summary.dev);
+    }
+
     // =====================================================================
     // DOM shell -- everything below no-ops headless.
     // =====================================================================
@@ -252,6 +289,23 @@
                 }
                 contextPanel.hidden = false;
             });
+        }
+
+        var techPanel = doc.getElementById("tech-news-panel");
+        if (techPanel && typeof global.fetch === "function") {
+            global.fetch(DATA + "/tech_news.json")
+                .then(function (res) { return res.ok ? res.json() : null; })
+                .catch(function () { return null; })
+                .then(function (payload) {
+                    var summary = techNewsSummary(payload);
+                    if (!summary) return; // stays hidden
+                    var body = doc.getElementById("tech-news-body");
+                    if (!body) return;
+                    body.innerHTML = renderTechNewsHTML(summary);
+                    var stamp = doc.getElementById("tech-news-generated");
+                    if (stamp && summary.generated) stamp.textContent = "as of " + summary.generated;
+                    techPanel.hidden = false;
+                });
         }
 
         var healthPanel = doc.getElementById("health-panel");
@@ -338,6 +392,8 @@
         trendsSummary: trendsSummary,
         weatherSummary: weatherSummary,
         renderTrendsHTML: renderTrendsHTML,
+        techNewsSummary: techNewsSummary,
+        renderTechNewsHTML: renderTechNewsHTML,
         esc: esc
     };
 
