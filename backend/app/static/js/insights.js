@@ -145,10 +145,32 @@
             return p && typeof p.url === "string"
                 && p.url.indexOf("https://www.reddit.com/r/") === 0;
         });
-        if (!rising.length && !falling.length && !social.length) return null;
+        // The denominator the chips were missing: "ncaa +7" is meaningless
+        // without knowing total volume fell 24%. Both fields have been in
+        // trends.json since the file existed; nothing rendered them.
+        var recent = num(trends.recent_articles);
+        var previous = num(trends.previous_articles);
+        var volume = null;
+        if (recent !== null && previous !== null && (recent || previous)) {
+            volume = {
+                recent: recent,
+                previous: previous,
+                pct: previous > 0 ? Math.round(100 * (recent - previous) / previous) : null
+            };
+        }
+        var categories = (trends.categories || []).map(function (c) {
+            c = c || {};
+            return { category: String(c.category || "").trim(),
+                     recent: num(c.recent) || 0, previous: num(c.previous) || 0 };
+        }).filter(function (c) { return c.category && (c.recent || c.previous); });
+
+        if (!rising.length && !falling.length && !social.length
+            && !volume && !categories.length) return null;
         return {
             generated: trends.generated || "",
             windowDays: trends.window_days || 7,
+            volume: volume,
+            categories: categories,
             rising: rising,
             falling: falling,
             social: social
@@ -178,6 +200,22 @@
                 + '</span></li>';
         }
         var html = "";
+        if (summary.volume) {
+            var v = summary.volume;
+            var delta = v.pct === null ? ""
+                : " (" + (v.pct > 0 ? "+" : "") + v.pct + "%)";
+            html += '<p class="trend-volume">' + esc(v.recent) + " articles this window vs "
+                + esc(v.previous) + " last" + esc(delta) + "</p>";
+        }
+        if (summary.categories && summary.categories.length) {
+            html += '<div class="insight-group"><h3>By category</h3><ul class="trend-cats">'
+                + summary.categories.map(function (c) {
+                    var dir = c.recent > c.previous ? "up" : (c.recent < c.previous ? "down" : "flat");
+                    return '<li class="trend-cat trend-cat-' + dir + '">' + esc(c.category)
+                        + ' <span class="trend-delta">' + esc(c.previous) + " → " + esc(c.recent)
+                        + "</span></li>";
+                }).join("") + "</ul></div>";
+        }
         if (summary.rising.length) {
             html += '<div class="insight-group"><h3>Rising this week</h3><ul class="trend-list">'
                 + summary.rising.map(function (e) { return chip(e, "up"); }).join("") + "</ul></div>";
@@ -217,6 +255,106 @@
         var dev = clean(payload.dev);
         if (!ai.length && !dev.length) return null;
         return { generated: payload.generated || "", ai: ai, dev: dev };
+    }
+
+    var RISK_RANK = { critical: 4, high: 3, elevated: 2, medium: 2, low: 1 };
+
+    /**
+     * Displayable model for the company risk leaderboard. 1009 companies
+     * are downloaded on every cold boot and used for a single integer;
+     * 59 are flagged Critical and nothing on the dashboard says which.
+     * Elevated (non-Low) entities lead, ranked by severity then mentions;
+     * when nothing is elevated the most-mentioned companies stand in.
+     * Null when there are no companies at all (panel stays hidden).
+     */
+    function companyLeaderboard(companies, cap) {
+        cap = cap || 12;
+        var rows = (companies || []).map(function (c) {
+            c = c || {};
+            return {
+                name: String(c.Company || "").trim(),
+                mentions: num(c["Mention Count"]) || 0,
+                risk: String(c["Risk Level"] || "").trim() || "Low",
+                lastSeen: String(c["Last Seen"] || "").trim().slice(0, 10)
+            };
+        }).filter(function (r) { return r.name; });
+        if (!rows.length) return null;
+
+        function rank(r) { return RISK_RANK[r.risk.toLowerCase()] || 1; }
+        var elevated = rows.filter(function (r) { return rank(r) > 1; });
+        var pool = elevated.length ? elevated : rows;
+        pool = pool.slice().sort(function (a, b) {
+            return (rank(b) - rank(a)) || (b.mentions - a.mentions)
+                || (a.name < b.name ? -1 : 1);
+        });
+        return {
+            total: rows.length,
+            elevatedCount: elevated.length,
+            mode: elevated.length ? "elevated" : "top",
+            rows: pool.slice(0, cap)
+        };
+    }
+
+    /** HTML for the leaderboard body; rows link to company dossiers. */
+    function renderLeaderboardHTML(model) {
+        var EK = global.AuraEntityKey;
+        return "<ol class=\"risk-board\">" + model.rows.map(function (r) {
+            var riskClass = r.risk.toLowerCase().replace(/[^a-z-]/g, "");
+            var label = EK && EK.slugify
+                ? '<a class="report-link" href="#/company/' + esc(EK.slugify(r.name)) + '">'
+                    + esc(r.name) + "</a>"
+                : esc(r.name);
+            return '<li><span class="risk-dot ' + esc(riskClass) + '"></span>' + label
+                + ' <span class="insight-count">' + esc(r.risk) + " · "
+                + esc(r.mentions) + " mention" + (r.mentions === 1 ? "" : "s")
+                + (r.lastSeen ? " · seen " + esc(r.lastSeen) : "") + "</span></li>";
+        }).join("") + "</ol>";
+    }
+
+    /**
+     * Cross-reference the localStorage watchlist against changes.json:
+     * which watched entities moved this cycle, and how. Matching is
+     * slugify-equality, which is the correct join: changes.json carries
+     * the exporter's deduped labels -- the same labels dossier slugs (and
+     * therefore watch entries) derive from. Returns { total, updates: {
+     * "type/slug": ["PSC record added", ...] } }; total 0 = quiet cycle.
+     */
+    function watchlistDigest(watchlist, changes) {
+        var EK = global.AuraEntityKey;
+        var updates = {};
+        var total = 0;
+        if (!changes || !EK || !EK.slugify || !(watchlist || []).length) {
+            return { total: 0, updates: updates };
+        }
+        function hit(entry, label) {
+            var key = entry.type + "/" + entry.slug;
+            var list = updates[key] || (updates[key] = []);
+            if (list.indexOf(label) === -1) { list.push(label); total += 1; }
+        }
+        function nameMatches(entry, name) {
+            return EK.slugify(String(name || "")) === entry.slug;
+        }
+        (watchlist || []).forEach(function (entry) {
+            if (!entry || !entry.slug || !entry.type) return;
+            (changes.new_companies || []).forEach(function (name) {
+                if (entry.type === "company" && nameMatches(entry, name)) hit(entry, "newly tracked");
+            });
+            (changes.new_people || []).forEach(function (name) {
+                if (entry.type === "person" && nameMatches(entry, name)) hit(entry, "newly tracked");
+            });
+            (changes.psc_added || []).forEach(function (e) {
+                if (nameMatches(entry, e.person) || nameMatches(entry, e.company)) hit(entry, "PSC record added");
+            });
+            (changes.psc_changed || []).forEach(function (e) {
+                if (nameMatches(entry, e.person) || nameMatches(entry, e.company)) {
+                    hit(entry, "ownership moved " + e.from + "% → " + e.to + "%");
+                }
+            });
+            (changes.psc_removed || []).forEach(function (e) {
+                if (nameMatches(entry, e.person) || nameMatches(entry, e.company)) hit(entry, "PSC record delisted");
+            });
+        });
+        return { total: total, updates: updates };
     }
 
     /** HTML for the tech news panel body. Escaped throughout. */
@@ -297,6 +435,24 @@
                     if (stamp && summary.generated) stamp.textContent = "as of " + summary.generated;
                     techPanel.hidden = false;
                 });
+        }
+
+        var boardPanel = doc.getElementById("risk-leaderboard-panel");
+        if (boardPanel && typeof global.fetch === "function") {
+            D.getList("companies.json").then(function (companies) {
+                var model = companyLeaderboard(companies, 12);
+                if (!model) return; // stays hidden
+                var body = doc.getElementById("risk-leaderboard-body");
+                if (!body) return;
+                body.innerHTML = renderLeaderboardHTML(model);
+                var stamp = doc.getElementById("risk-leaderboard-note");
+                if (stamp) {
+                    stamp.textContent = model.mode === "elevated"
+                        ? model.elevatedCount + " of " + model.total + " tracked companies sit above Low risk"
+                        : "No elevated-risk companies; showing the most mentioned of " + model.total;
+                }
+                boardPanel.hidden = false;
+            });
         }
 
         var healthPanel = doc.getElementById("health-panel");
@@ -381,6 +537,9 @@
         renderTrendsHTML: renderTrendsHTML,
         techNewsSummary: techNewsSummary,
         renderTechNewsHTML: renderTechNewsHTML,
+        companyLeaderboard: companyLeaderboard,
+        renderLeaderboardHTML: renderLeaderboardHTML,
+        watchlistDigest: watchlistDigest,
         esc: esc
     };
 
