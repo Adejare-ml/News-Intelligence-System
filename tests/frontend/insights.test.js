@@ -154,6 +154,50 @@
         });
     });
 
+    T.describe("techNewsSummary + renderTechNewsHTML", function () {
+        var PAYLOAD = {
+            generated: "2026-09-14 07:00:00",
+            ai: [
+                { title: "Anthropic ships a model", url: "https://p.test/a", source: "TechDesk" },
+                { title: "No url — dropped" },
+                { title: "Bad scheme", url: "javascript:alert(1)" }
+            ],
+            dev: [{ title: "HN thread", url: "https://p.test/hn", source: "Hacker News" }]
+        };
+
+        T.it("re-validates items: only titled http(s) links survive", function () {
+            var s = I.techNewsSummary(PAYLOAD);
+            T.eq(s.ai.length, 1);
+            T.eq(s.dev.length, 1);
+            T.eq(s.generated, "2026-09-14 07:00:00");
+        });
+
+        T.it("null when both sections are empty, so the panel stays hidden", function () {
+            T.eq(I.techNewsSummary({ ai: [], dev: [] }), null);
+            T.eq(I.techNewsSummary(null), null);
+            T.eq(I.techNewsSummary({ ai: [{ title: "x", url: "ftp://nope" }] }), null);
+        });
+
+        T.it("caps each section", function () {
+            var many = [];
+            for (var i = 0; i < 20; i++) many.push({ title: "T" + i, url: "https://p.test/" + i });
+            T.eq(I.techNewsSummary({ ai: many, dev: [] }).ai.length, 8);
+        });
+
+        T.it("rendered HTML is escaped and links open safely", function () {
+            var html = I.renderTechNewsHTML(I.techNewsSummary({
+                ai: [{ title: "<script>x</script>", url: "https://p.test/x\" onclick=\"y",
+                       source: "<b>Src</b>" }],
+                dev: []
+            }));
+            T.excludes(html, "<script>x");
+            T.excludes(html, "<b>Src");
+            T.excludes(html, 'onclick="y');
+            T.contains(html, 'rel="noopener noreferrer"');
+            T.contains(html, "AI industry");
+        });
+    });
+
     T.describe("globe routesFromRecords", function () {
         T.it("derives weighted routes from Intermediate Entities", function () {
             var routes = G.routesFromRecords([
