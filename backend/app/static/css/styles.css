@@ -2261,3 +2261,70 @@ main[data-route-page] > :not([data-route-outlet]) {
     text-align: center;
 }
 .watchlist-entry.has-updates a { color: #67e8f9; }
+
+/* ===== Round 5 Package 24: analytical surfaces ===== */
+
+/* Graph node-type / risk filter chips */
+.graph-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin: 0.4rem 0;
+}
+.graph-type-btn {
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    color: var(--text-muted, #9ca3af);
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.graph-type-btn.active {
+    background: rgba(103, 232, 249, 0.15);
+    border-color: rgba(103, 232, 249, 0.5);
+    color: #67e8f9;
+}
+
+/* Agency activity board */
+.agency-board { list-style: none; margin: 0; padding: 0; }
+.agency-board li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4rem;
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.agency-board li:last-child { border-bottom: none; }
+.agency-board .insight-count { margin-left: auto; }
+.event-chips { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.event-chip {
+    padding: 0.05rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.07);
+    color: var(--text-muted, #9ca3af);
+    font-size: 0.7rem;
+}
+.event-chip.event-corruption { background: rgba(244, 63, 94, 0.15); color: #fda4af; }
+.event-chip.event-audit { background: rgba(251, 191, 36, 0.15); color: #fbbf24; }
+.event-chip.event-procurement { background: rgba(103, 232, 249, 0.12); color: #67e8f9; }
+
+/* Appointments & departures */
+.move-list { list-style: none; margin: 0; padding: 0; }
+.move-list li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: baseline;
+    padding: 0.25rem 0;
+    font-size: 0.88rem;
+}
+.move .insight-count { margin-left: auto; }
+.move-role { color: var(--text-muted, #9ca3af); }
+.move-resignation a { color: #fda4af; }
+.move-resignation .insight-count { color: #fda4af; }
+
+/* Procurement ledger section reuses .aura-table; just the note */
+#procurement .insight-generated { align-self: center; }

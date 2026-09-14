@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentDays = 0;      // 0 = all time
     let currentSource = "";
     let isSemanticSearch = false;
+    // Graph filter state (Package 24): rebuilds re-read these.
+    let lastGraphData = null;
+    const activeGraphTypes = new Set(["company", "agency", "person", "psc"]);
+    let graphElevatedOnly = false;
     let mixChart = null;
     let network = null;
     // Teardown hooks for the previous graph build. The drift wiring
@@ -557,6 +561,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data && (data.nodes || (data.graph && data.graph.nodes))) {
                 const graph = data.graph || data;
                 knownEntities = graph.nodes || [];
+                lastGraphData = graph;
                 // vis-network (~450KB) loads on demand here instead of
                 // blocking the initial page; the data fetch above already
                 // overlapped most of its download time.
@@ -1074,11 +1079,35 @@ document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("network-container");
         if (!container || !graphData) return;
 
-        const rawNodes = (graphData.nodes || (graphData.graph && graphData.graph.nodes)) || [];
-        const rawEdges = (graphData.edges || (graphData.graph && graphData.graph.edges)) || [];
+        const allNodes = (graphData.nodes || (graphData.graph && graphData.graph.nodes)) || [];
+        const allEdges = (graphData.edges || (graphData.graph && graphData.graph.edges)) || [];
 
-        if (!rawNodes || rawNodes.length === 0) {
+        if (!allNodes || allNodes.length === 0) {
             container.innerHTML = `<div class="loading-placeholder"><p style="font-size:12px; color:var(--text-muted); padding:30px; text-align:center;">No entity relationship nodes available.</p></div>`;
+            return;
+        }
+
+        // Type / risk filters (Package 24): hiding the Low-risk majority
+        // leaves exactly the nodes that matter. Edges survive only when
+        // both endpoints do.
+        const ELEVATED = new Set(["medium", "high", "critical", "elevated"]);
+        let rawNodes = allNodes.filter(n => activeGraphTypes.has(n.type || "company"));
+        if (graphElevatedOnly) {
+            rawNodes = rawNodes.filter(n => ELEVATED.has(String(n.risk || "").toLowerCase()));
+        }
+        const keptIds = new Set(rawNodes.map(n => n.id));
+        const rawEdges = allEdges.filter(e => keptIds.has(e.from) && keptIds.has(e.to));
+
+        if (rawNodes.length === 0) {
+            if (network && typeof network.destroy === "function") {
+                try { network.destroy(); } catch (e) { /* already gone */ }
+                network = null;
+            }
+            graphCleanup.forEach(fn => { try { fn(); } catch (e) { /* already gone */ } });
+            graphCleanup.length = 0;
+            container.innerHTML = `<div class="loading-placeholder"><p style="font-size:12px; color:var(--text-muted); padding:30px; text-align:center;">No entities match the current graph filters. Re-enable a node type or the Low-risk tier above.</p></div>`;
+            const emptyStats = document.getElementById("graph-stats");
+            if (emptyStats) emptyStats.textContent = "0 entities under the current filters";
             return;
         }
 
@@ -1835,6 +1864,48 @@ document.addEventListener("DOMContentLoaded", () => {
         if ((location.hash || "").indexOf("#/feed") === 0) {
             window.AuraRouter.dispatch(location.hash);
         }
+    }
+
+    // Graph node-type / risk filters + PNG export (Package 24). Wired once
+    // here (not inside buildKnowledgeGraph) so the chips stay live even
+    // when a filter combination empties the graph.
+    document.querySelectorAll(".graph-type-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const t = btn.getAttribute("data-node-type");
+            if (activeGraphTypes.has(t)) activeGraphTypes.delete(t);
+            else activeGraphTypes.add(t);
+            const on = activeGraphTypes.has(t);
+            btn.classList.toggle("active", on);
+            btn.setAttribute("aria-pressed", String(on));
+            if (lastGraphData) buildKnowledgeGraph(lastGraphData);
+        });
+    });
+    const elevatedToggle = document.getElementById("graph-elevated-toggle");
+    if (elevatedToggle) {
+        elevatedToggle.addEventListener("click", () => {
+            graphElevatedOnly = !graphElevatedOnly;
+            elevatedToggle.classList.toggle("active", graphElevatedOnly);
+            elevatedToggle.setAttribute("aria-pressed", String(graphElevatedOnly));
+            if (lastGraphData) buildKnowledgeGraph(lastGraphData);
+        });
+    }
+    const graphPngBtn = document.getElementById("graph-png");
+    if (graphPngBtn) {
+        graphPngBtn.addEventListener("click", () => {
+            // vis renders into a canvas; a PNG of it is what actually gets
+            // pasted into a report.
+            const canvas = document.querySelector("#network-container canvas");
+            if (!canvas || typeof canvas.toDataURL !== "function") {
+                showToast("The graph has not rendered yet.", "info");
+                return;
+            }
+            const link = document.createElement("a");
+            link.href = canvas.toDataURL("image/png");
+            link.download = `aura-graph-${new Date().toISOString().slice(0, 10)}.png`;
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        });
     }
 
     // Export CSV Handler
