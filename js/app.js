@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentCategory = "";
     let currentRisk = "";
     let currentSort = "newest";
+    let currentDays = 0;      // 0 = all time
+    let currentSource = "";
     let isSemanticSearch = false;
     let mixChart = null;
     let network = null;
@@ -52,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalSource = document.getElementById("modal-source");
     const modalDate = document.getElementById("modal-date");
     const modalImportance = document.getElementById("modal-importance");
-    const modalSentiment = document.getElementById("modal-sentiment");
     const modalRisk = document.getElementById("modal-risk");
     const modalCategory = document.getElementById("modal-category");
     const modalSourceLink = document.getElementById("modal-source-link");
@@ -169,16 +170,23 @@ document.addEventListener("DOMContentLoaded", () => {
         else if (score >= 50) level = "High";
         else if (score >= 25) level = "Medium";
         
+        // Honesty rule: importance and event type render only when the
+        // pipeline actually extracted them (rows written after the round-5
+        // Articles enrichment). The old code mirrored the risk score into
+        // an "Importance" chip and hardcoded sentiment "Neutral" -- two
+        // chips that looked like analysis and were not backed by any data.
+        const importanceRaw = parseInt(art["Importance"]);
         return {
             id: art.ID || art.id || "",
             title: art.Title || art.title || "",
             source: art.Source || art.source || "Unknown",
             url: art.URL || art.url || "#",
             category: art.Category || art.category || "Other",
-            importance_score: art["Risk Score"] !== undefined ? parseInt(art["Risk Score"]) : (art.importance_score || 50),
+            importance: isNaN(importanceRaw) ? null : importanceRaw,
+            event_type: art["Event Type"] || art.event_type || "",
+            entities: String(art["Entities"] || "").split("|").map(s => s.trim()).filter(Boolean),
             risk_score: score,
             risk_level: art.risk_level || level,
-            sentiment: art.sentiment || "Neutral",
             summary_executive: cleanSummary(art.Summary || art.summary_executive || art.summary || art.Title || art.title) || "No summary available.",
             published_at: art.Time || art.published_at || new Date().toISOString(),
             engine: art.Engine || art.engine || ""
@@ -475,6 +483,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (currentRisk) {
                     articles = articles.filter(a => (a.risk_level || "").toLowerCase() === currentRisk.toLowerCase());
                 }
+                if (currentSource) {
+                    articles = articles.filter(a => (a.source || "").toLowerCase() === currentSource.toLowerCase());
+                }
+                if (currentDays && window.AuraFeedFilters) {
+                    articles = articles.filter(a => window.AuraFeedFilters.withinDays(a.published_at, currentDays));
+                }
                 if (query) {
                     if (isSemanticSearch) {
                         // Concept mode: score every article by term overlap so
@@ -506,6 +520,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             renderNewsFeed(articles);
             renderTrace(query);
+            populateSourceOptions();
+            mirrorFeedHash(query);
         } catch (err) {
             console.error("Error loading news feed:", err);
             articlesList.innerHTML = `
@@ -639,6 +655,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const filters = [];
         if (currentCategory) filters.push(currentCategory);
         if (currentRisk) filters.push(`${currentRisk} risk`);
+        if (currentSource) filters.push(currentSource);
+        if (currentDays) filters.push(`last ${currentDays} days`);
         if (searchInput.value.trim()) filters.push(`"${searchInput.value.trim()}"`);
         const suffix = filters.length ? ` · ${filters.join(" · ")}` : "";
         feedCount.textContent = `${count} record${count === 1 ? "" : "s"}${suffix}`;
@@ -701,10 +719,77 @@ document.addEventListener("DOMContentLoaded", () => {
     function resetFeedFilters() {
         currentCategory = "";
         currentRisk = "";
+        currentDays = 0;
+        currentSource = "";
         searchInput.value = "";
         document.querySelectorAll(".filter-btn").forEach(b => b.classList.toggle("active", !b.getAttribute("data-category")));
         document.querySelectorAll(".filter-risk-btn").forEach(b => b.classList.toggle("active", !b.getAttribute("data-risk")));
+        const daysSel = document.getElementById("feed-days");
+        if (daysSel) daysSel.value = "0";
+        const sourceSel = document.getElementById("feed-source");
+        if (sourceSel) sourceSel.value = "";
         loadNewsFeed();
+    }
+
+    /**
+     * Mirror the active feed filters into a shareable "#/feed?..." hash
+     * (router-parsable, so pasting the link restores the exact view).
+     * Only touches the hash while it is empty or already ours -- a dossier
+     * route the user navigated to is never clobbered. replaceState avoids
+     * both history spam and a hashchange feedback loop.
+     */
+    function mirrorFeedHash(query) {
+        const FF = window.AuraFeedFilters;
+        if (!FF || !window.history || typeof history.replaceState !== "function") return;
+        const current = location.hash || "";
+        if (current !== "" && current.indexOf("#/feed") !== 0) return;
+        const hash = FF.serialize({
+            days: currentDays, source: currentSource, risk: currentRisk,
+            category: currentCategory, q: (query || "").trim(), sort: currentSort
+        });
+        try {
+            if (hash) {
+                if (current !== hash) history.replaceState(null, "", hash);
+            } else if (current.indexOf("#/feed") === 0) {
+                history.replaceState(null, "", location.pathname + location.search);
+            }
+        } catch (e) { /* sandboxed pages without history access */ }
+    }
+
+    /** Restore filter state from a "#/feed?days=7&src=Punch" deep link. */
+    function applyFeedQuery(query) {
+        const FF = window.AuraFeedFilters;
+        if (!FF) return;
+        const state = FF.parseQuery(query || {});
+        currentDays = state.days;
+        currentSource = state.source;
+        currentRisk = state.risk;
+        currentCategory = state.category;
+        currentSort = state.sort;
+        if (searchInput) searchInput.value = state.q;
+        document.querySelectorAll(".filter-btn").forEach(b =>
+            b.classList.toggle("active", (b.getAttribute("data-category") || "") === currentCategory));
+        document.querySelectorAll(".filter-risk-btn").forEach(b =>
+            b.classList.toggle("active", (b.getAttribute("data-risk") || "") === currentRisk));
+        const daysSel = document.getElementById("feed-days");
+        if (daysSel) daysSel.value = String(currentDays);
+        const sortSel = document.getElementById("feed-sort");
+        if (sortSel) sortSel.value = currentSort;
+        const sourceSel = document.getElementById("feed-source");
+        if (sourceSel) sourceSel.value = currentSource;
+        loadNewsFeed(state.q, currentCategory);
+    }
+
+    /** Fill the source dropdown once articles are in memory. */
+    function populateSourceOptions() {
+        const sourceSel = document.getElementById("feed-source");
+        if (!sourceSel || !window.AuraFeedFilters || sourceSel.options.length > 1) return;
+        const names = window.AuraFeedFilters.sourceOptions(allArticles);
+        if (!names.length) return;
+        sourceSel.innerHTML = '<option value="">All sources</option>'
+            + names.map(n => `<option value="${esc(n)}">${esc(n)}</option>`).join("");
+        sourceSel.value = currentSource;
+        if (sourceSel.value !== currentSource) sourceSel.value = "";
     }
 
     // Slice H: dismissal state. The alerts re-render from this cache when a
@@ -1391,14 +1476,31 @@ document.addEventListener("DOMContentLoaded", () => {
         modalTitle.innerText = art.title;
         modalSource.innerHTML = `<i data-lucide="globe"></i> ${esc(art.source)}`;
         modalDate.innerHTML = `<i data-lucide="calendar"></i> ${art.published_at ? new Date(art.published_at).toLocaleDateString() : "Recent"}`;
-        modalImportance.innerText = `Importance: ${Math.round(art.importance_score)}`;
-        modalSentiment.innerText = art.sentiment;
-        
-        // Sentiment Badge style
-        modalSentiment.className = "sentiment-badge";
-        if (art.sentiment === "Positive") modalSentiment.style.color = "var(--success)";
-        else if (art.sentiment === "Negative") modalSentiment.style.color = "var(--danger)";
-        else modalSentiment.style.color = "var(--text-muted)";
+        // Importance renders only when the extractor scored it (post-round-5
+        // rows); the chip previously echoed the risk score under a second
+        // name. Event type replaces the hardcoded "Neutral" sentiment badge.
+        if (modalImportance) {
+            modalImportance.hidden = art.importance == null;
+            if (art.importance != null) {
+                modalImportance.innerText = `Importance: ${Math.round(art.importance)}/100`;
+            }
+        }
+        const modalEventType = document.getElementById("modal-event-type");
+        if (modalEventType) {
+            modalEventType.hidden = !art.event_type || art.event_type === "Other";
+            modalEventType.innerText = art.event_type || "";
+        }
+        const riskScale = document.getElementById("modal-risk-scale");
+        if (riskScale) {
+            const pct = Math.max(0, Math.min(100, Number(art.risk_score) || 0));
+            riskScale.hidden = false;
+            riskScale.setAttribute("aria-label", `Risk score ${pct} out of 100`);
+            const fill = riskScale.querySelector(".risk-scale-fill");
+            if (fill) {
+                fill.style.width = `${pct}%`;
+                fill.className = `risk-scale-fill ${String(art.risk_level || "low").toLowerCase().replace(/[^a-z-]/g, "")}`;
+            }
+        }
 
         // Risk level class
         const risk = art.risk_level ? art.risk_level.toLowerCase() : "low";
@@ -1704,6 +1806,36 @@ document.addEventListener("DOMContentLoaded", () => {
             loadNewsFeed(searchInput.value, currentCategory);
         });
     });
+
+    // Date-window and source selectors (Package 23)
+    const feedDaysSelect = document.getElementById("feed-days");
+    if (feedDaysSelect) {
+        feedDaysSelect.addEventListener("change", () => {
+            currentDays = parseInt(feedDaysSelect.value, 10) || 0;
+            loadNewsFeed(searchInput.value.trim(), currentCategory);
+        });
+    }
+    const feedSourceSelect = document.getElementById("feed-source");
+    if (feedSourceSelect) {
+        feedSourceSelect.addEventListener("change", () => {
+            currentSource = feedSourceSelect.value;
+            loadNewsFeed(searchInput.value.trim(), currentCategory);
+        });
+    }
+
+    // Take over the router's plain scroll handler for #/feed so deep links
+    // carry filter state; the router dispatched before this registration
+    // (script order), so a feed deep link is re-dispatched once.
+    if (window.AuraRouter) {
+        window.AuraRouter.register("feed", (params, query) => {
+            applyFeedQuery(query);
+            const el = document.getElementById("workspace");
+            if (el && typeof el.scrollIntoView === "function") el.scrollIntoView({ behavior: "smooth" });
+        });
+        if ((location.hash || "").indexOf("#/feed") === 0) {
+            window.AuraRouter.dispatch(location.hash);
+        }
+    }
 
     // Export CSV Handler
     const exportCsvBtn = document.getElementById("export-csv-btn");
@@ -2980,16 +3112,31 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        // Cross-reference against this cycle's changes.json (fetched once at
+        // boot): starring an entity previously did nothing except make a
+        // link. A quiet cycle renders no digest line and no badges.
+        const digest = (window.AuraInsights && window.AuraInsights.watchlistDigest)
+            ? window.AuraInsights.watchlistDigest(state.watchlist, cycleChangesData)
+            : { total: 0, updates: {} };
+
         panel.hidden = false;
-        body.innerHTML = state.watchlist.map(entry => `
-            <span class="watchlist-entry">
-                <a href="#/${esc(entry.type)}/${esc(entry.slug)}">${esc(entry.label)}</a>
+        const digestLine = digest.total > 0
+            ? `<p class="watchlist-digest">${digest.total} update${digest.total === 1 ? "" : "s"} on your watchlist this cycle</p>`
+            : "";
+        body.innerHTML = digestLine + state.watchlist.map(entry => {
+            const hits = digest.updates[`${entry.type}/${entry.slug}`] || [];
+            const badge = hits.length
+                ? `<span class="watch-badge" title="${esc(hits.join("; "))}">${hits.length}</span>`
+                : "";
+            return `
+            <span class="watchlist-entry${hits.length ? " has-updates" : ""}">
+                <a href="#/${esc(entry.type)}/${esc(entry.slug)}">${esc(entry.label)}</a>${badge}
                 <span class="watchlist-kind">${esc(entry.type)}</span>
                 <button type="button" class="watchlist-remove-btn" data-watch-type="${esc(entry.type)}"
                         data-watch-slug="${esc(entry.slug)}" title="Remove from watchlist"
                         aria-label="Remove ${esc(entry.label)} from watchlist">✕</button>
-            </span>
-        `).join("");
+            </span>`;
+        }).join("");
 
         body.querySelectorAll(".watchlist-remove-btn").forEach(btn => {
             btn.addEventListener("click", () => {
@@ -3004,6 +3151,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Dossier pages fire this after a watch toggle.
     document.addEventListener("aura:watchlist", renderWatchlistPanel);
+
+    // This cycle's diff, for the watchlist digest. One shared AuraData
+    // fetch (insights.js reads the same memo); a failed load leaves the
+    // digest quietly absent rather than blocking the panel.
+    let cycleChangesData = null;
+    if (window.AuraData) {
+        window.AuraData.get("changes.json").then(changes => {
+            if (!changes) return;
+            cycleChangesData = changes;
+            renderWatchlistPanel();
+        });
+    }
 
     // ==========================================
     // TEST SURFACE

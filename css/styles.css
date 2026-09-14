@@ -2185,3 +2185,79 @@ main[data-route-page] > :not([data-route-outlet]) {
 
     .dossier-header h1 { font-size: 1.35rem; }
 }
+
+/* ===== Round 5 Package 23: quick wins ===== */
+
+/* Article modal: risk score as a scale, not a bare rank */
+.risk-scale {
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 0.6rem 0 0.2rem;
+    overflow: hidden;
+}
+.risk-scale-fill {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    background: var(--success, #34d399);
+    transition: width 0.3s ease;
+}
+.risk-scale-fill.medium { background: #fbbf24; }
+.risk-scale-fill.high { background: #fb923c; }
+.risk-scale-fill.critical { background: var(--danger, #f43f5e); }
+
+/* Trends: volume headline + per-category deltas */
+.trend-volume {
+    margin: 0 0 0.6rem;
+    color: var(--text-muted, #9ca3af);
+    font-size: 0.85rem;
+}
+.trend-cats { list-style: none; margin: 0; padding: 0; }
+.trend-cats li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.15rem 0;
+    font-size: 0.85rem;
+}
+.trend-cat-up .trend-delta { color: #6ee7b7; }
+.trend-cat-down .trend-delta { color: #fda4af; }
+
+/* Company risk board */
+.risk-board {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: board;
+}
+.risk-board li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.45rem;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.risk-board li:last-child { border-bottom: none; }
+.risk-board .insight-count { margin-left: auto; text-align: right; }
+
+/* Watchlist digest badges */
+.watchlist-digest {
+    width: 100%;
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    color: #6ee7b7;
+}
+.watch-badge {
+    display: inline-block;
+    min-width: 1.1rem;
+    padding: 0 0.25rem;
+    margin-left: 0.3rem;
+    border-radius: 999px;
+    background: rgba(103, 232, 249, 0.18);
+    color: #67e8f9;
+    font-size: 0.72rem;
+    text-align: center;
+}
+.watchlist-entry.has-updates a { color: #67e8f9; }
