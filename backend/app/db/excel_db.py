@@ -11,7 +11,17 @@ logger = logging.getLogger(__name__)
 
 # Constants for sheets/tabs
 SHEETS_CONFIG = {
-    "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine"],
+    # "Event Type", "Risk Level", "Importance" and "Entities" persist LLM
+    # output that was extracted (and paid for) on every article and then
+    # discarded at the write site: event_type survived only as a transient
+    # report counter, importance_score was written nowhere at all, and the
+    # article<->entity linkage existed in no durable form -- the dashboard
+    # substring-matches titles to guess which articles mention an entity.
+    # "Entities" is the canonical org+person names, pipe-joined.
+    # "Filter Reason" records *why* a Filtered row was rejected; before, the
+    # reason lived only in log lines that rotate away with the Actions run.
+    "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine",
+                 "Event Type", "Risk Level", "Importance", "Entities", "Filter Reason"],
     "Companies": ["Company", "Mention Count", "Last Seen", "Industry", "Risk Level"],
     "People": ["Name", "Position", "Organization", "Event", "Date"],
     "Government Agencies": ["Agency", "Event", "Article", "Date"],
@@ -41,9 +51,15 @@ SHEETS_CONFIG = {
     # These existed only in log lines that rotate away with the Actions
     # run, so "1 article today" was indistinguishable from "the filter
     # over-rejected 40" in any durable record.
+    # "Stubs" / "Nigerian" / "Fresh" / "Distinct" complete that funnel with
+    # the remaining collect_all counters (paywall stubs dropped, rows after
+    # the Nigeria filter, rows inside the freshness window, rows after
+    # fuzzy dedupe) -- computed every run in last_collect_stats and, until
+    # now, dropped with the runner.
     "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement",
                       "Cascade Failures", "Run Seconds", "Generated", "Archive File",
-                      "Candidates", "Rejected", "Undated", "Content"]
+                      "Candidates", "Rejected", "Undated",
+                      "Stubs", "Nigerian", "Fresh", "Distinct", "Content"]
 }
 
 def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, Any]:

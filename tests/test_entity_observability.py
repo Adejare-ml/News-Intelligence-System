@@ -115,7 +115,8 @@ class TestHttpGetWithRetry:
 class TestObservability:
     def test_daily_reports_schema_carries_the_funnel(self):
         cols = SHEETS_CONFIG["Daily Reports"]
-        for col in ("Candidates", "Rejected", "Undated"):
+        for col in ("Candidates", "Rejected", "Undated",
+                    "Stubs", "Nigerian", "Fresh", "Distinct"):
             assert col in cols
         assert cols[-1] == "Content", "the big cell stays last"
 
@@ -124,7 +125,8 @@ class TestObservability:
                "Cascade Failures", "Run Seconds", "Generated", "Archive File", "Content"]
         plan = plan_header_migration(old, SHEETS_CONFIG["Daily Reports"])
         assert plan["needs_migration"]
-        assert set(plan["added"]) == {"Candidates", "Rejected", "Undated"}
+        assert set(plan["added"]) == {"Candidates", "Rejected", "Undated",
+                                      "Stubs", "Nigerian", "Fresh", "Distinct"}
         assert plan["removed"] == []
 
     def test_collect_all_records_the_funnel(self, monkeypatch):
