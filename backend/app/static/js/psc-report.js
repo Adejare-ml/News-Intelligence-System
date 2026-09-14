@@ -487,9 +487,12 @@
     // =====================================================================
 
     function loadRegister() {
-        return fetch(DATA + "/significant_control.json")
-            .then(function (res) { return res.ok ? res.json() : []; })
-            .catch(function () { return []; })
+        var listPromise = global.AuraData
+            ? global.AuraData.getList("significant_control.json")
+            : fetch(DATA + "/significant_control.json")
+                .then(function (res) { return res.ok ? res.json() : []; })
+                .catch(function () { return []; });
+        return listPromise
             .then(function (records) {
                 state.records = Array.isArray(records) ? records : [];
                 state.summary = PSC.summarise(state.records);
@@ -530,9 +533,12 @@
     function loadArchive() {
         var select = el("brief-archive-select");
         if (!select) return Promise.resolve();
-        return fetch(DATA + "/reports.json")
-            .then(function (res) { return res.ok ? res.json() : []; })
-            .catch(function () { return []; })
+        var rowsPromise = global.AuraData
+            ? global.AuraData.getList("reports.json")
+            : fetch(DATA + "/reports.json")
+                .then(function (res) { return res.ok ? res.json() : []; })
+                .catch(function () { return []; });
+        return rowsPromise
             .then(function (rows) {
                 state.reports = Array.isArray(rows) ? rows : [];
                 var options = ['<option value="latest">Latest</option>'];
@@ -733,9 +739,7 @@
         }
         bootVisuals();
         wireControls();
-        loadRegister()
-            .then(loadBrief)
-            .then(loadArchive)
+        Promise.all([loadRegister(), loadBrief(), loadArchive()])
             .then(function () {
                 // Observe the first paint's cards for the entrance reveal;
                 // every re-render after this point reveals immediately

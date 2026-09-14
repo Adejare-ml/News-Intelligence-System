@@ -133,14 +133,20 @@
         };
     }
 
-    /** Model for an agency dossier (narrow: procurement + mentions only). */
+    /** Model for an agency dossier: procurement, recorded events, mentions.
+        Falls back to the agencies dataset when there are no contracts --
+        most agencies appear in news events, not in contract awards, and
+        returning null for all of them made #/agency/ routes unreachable. */
     function agencyDossier(slug, data) {
         data = data || {};
         var contracts = (data.procurement || []).filter(function (r) {
             return matches(r.Agency, slug);
         });
-        if (!contracts.length) return null;
-        var name = contracts[0].Agency;
+        var mentions = (data.agencies || []).filter(function (r) {
+            return matches(r.Agency, slug);
+        });
+        if (!contracts.length && !mentions.length) return null;
+        var name = contracts.length ? contracts[0].Agency : mentions[0].Agency;
         return {
             kind: "agency",
             name: name,
@@ -148,6 +154,10 @@
             procurement: contracts.map(function (r) {
                 return { agency: r.Agency || "", contractor: r.Contractor || "",
                          amount: r.Amount || "", project: r.Project || "" };
+            }),
+            appearances: mentions.slice(0, 10).map(function (r) {
+                return { event: r.Event || "", position: "",
+                         organization: r.Article || "", date: r.Date || "" };
             }),
             articles: articleMentions(data.articles, name)
         };
@@ -255,26 +265,19 @@
         var outlet = doc.querySelector("[data-route-outlet]");
         if (!outlet) return;
 
-        var devHost = global.location.hostname === "localhost"
-            || global.location.hostname.indexOf("127.") === 0;
-        var DATA = (devHost && global.location.search.indexOf("static=1") === -1)
-            ? "/api/v1" : "data";
-
         var dataPromise = null;
         function loadData() {
             if (dataPromise) return dataPromise;
-            function grab(name) {
-                return global.fetch(DATA + "/" + name)
-                    .then(function (res) { return res.ok ? res.json() : []; })
-                    .catch(function () { return []; });
-            }
+            // Through AuraData: shares in-flight promises with the search
+            // palette and the dashboard instead of re-downloading ~300KB.
+            var D = global.AuraData;
             dataPromise = Promise.all([
-                grab("companies.json"), grab("people.json"),
-                grab("significant_control.json"), grab("procurement.json"),
-                grab("latest.json")
+                D.getList("companies.json"), D.getList("people.json"),
+                D.getList("significant_control.json"), D.getList("procurement.json"),
+                D.getList("latest.json"), D.getList("agencies.json")
             ]).then(function (r) {
                 return { companies: r[0], people: r[1], psc: r[2],
-                         procurement: r[3], articles: r[4] };
+                         procurement: r[3], articles: r[4], agencies: r[5] };
             });
             return dataPromise;
         }

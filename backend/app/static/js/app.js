@@ -193,20 +193,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // both start at boot, and each issued its own request before the
     // other's assignment landed -- the largest payload on the critical
     // path, downloaded twice. Failure clears the memo so a retry refetches.
-    let latestJsonPromise = null;
     function fetchLatestJson() {
-        if (!latestJsonPromise) {
-            latestJsonPromise = fetch(`${API_BASE}/latest.json`).then(res => {
-                // Status before parsing, so a 404/503 is reported as itself
-                // rather than as "Unexpected token" from an error page.
-                if (!res.ok) throw new Error(`latest.json: ${res.status} ${res.statusText}`.trim());
-                return res.json();
-            }).catch(err => {
-                latestJsonPromise = null;
-                throw err;
-            });
-        }
-        return latestJsonPromise;
+        // AuraData memoises across ALL modules (palette, dossiers,
+        // insights), not just this file; null means the fetch failed and
+        // this caller's contract is to throw so the retry paths engage.
+        return window.AuraData.get("latest.json").then(payload => {
+            if (payload === null) throw new Error("latest.json could not be loaded");
+            return payload;
+        });
     }
 
     async function loadDashboardStats() {
@@ -214,19 +208,13 @@ document.addEventListener("DOMContentLoaded", () => {
             clearDashboardStatsFailure();
             if (isGitHubPages) {
                 // Fetch datasets in parallel for serverless dashboard aggregation
-                const [rawArticles, compRes, repRes] = await Promise.all([
+                const [rawArticles, rawCompanies, rawReports] = await Promise.all([
                     fetchLatestJson(),
-                    fetch(`${API_BASE}/companies.json`),
-                    fetch(`${API_BASE}/reports.json`)
+                    window.AuraData.get("companies.json"),
+                    window.AuraData.get("reports.json")
                 ]);
-
-                [["companies.json", compRes], ["reports.json", repRes]]
-                    .forEach(([name, res]) => {
-                        if (!res.ok) throw new Error(`${name}: ${res.status} ${res.statusText}`.trim());
-                    });
-
-                const rawCompanies = await compRes.json();
-                const rawReports = await repRes.json();
+                if (rawCompanies === null) throw new Error("companies.json could not be loaded");
+                if (rawReports === null) throw new Error("reports.json could not be loaded");
                 
                 allArticles = rawArticles.map(normalizeArticle);
                 allReports = rawReports;
@@ -1771,8 +1759,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const pscModal = document.getElementById("psc-modal");
     const closePscModalBtn = document.getElementById("close-psc-modal");
     const pscTableContainer = document.getElementById("psc-table-container");
-    const pscNetworkGraphContainer = document.getElementById("psc-network-graph-container");
-    const pscViewTableBtn = document.getElementById("psc-view-table-btn");
     const pscViewMapBtn = document.getElementById("psc-view-map-btn");
     const pscDossierModal = document.getElementById("psc-dossier-modal");
     const closePscDossierModalBtn = document.getElementById("close-psc-dossier-modal");
@@ -1782,7 +1768,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let activePscFilter = "all";
     let currentPscSearchQuery = "";
-    let pscViewMode = "table"; // "table" or "map"
 
     // Why the register tracks a load state rather than just a list: an empty
     // array is ambiguous. It can mean the fetch failed, or that the register
@@ -1828,36 +1813,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // View Mode Toggle Handlers
-    if (pscViewTableBtn && pscViewMapBtn) {
-        pscViewTableBtn.addEventListener("click", () => {
-            pscViewMode = "table";
-            pscViewTableBtn.classList.add("active");
-            pscViewTableBtn.style.background = "var(--primary)";
-            pscViewTableBtn.style.color = "#0f172a";
-
-            pscViewMapBtn.classList.remove("active");
-            pscViewMapBtn.style.background = "transparent";
-            pscViewMapBtn.style.color = "#d1d5db";
-
-            if (pscTableContainer) pscTableContainer.style.display = "block";
-            if (pscNetworkGraphContainer) pscNetworkGraphContainer.style.display = "none";
-            renderPSCTableRows();
-        });
-
+    // The old in-modal "Network Map" toggle is gone with the SVG map; the
+    // button (if present in cached markup) closes the modal and scrolls to
+    // the real knowledge graph, which renders the same PSC nodes properly.
+    if (pscViewMapBtn) {
         pscViewMapBtn.addEventListener("click", () => {
-            pscViewMode = "map";
-            pscViewMapBtn.classList.add("active");
-            pscViewMapBtn.style.background = "var(--primary)";
-            pscViewMapBtn.style.color = "#0f172a";
-
-            pscViewTableBtn.classList.remove("active");
-            pscViewTableBtn.style.background = "transparent";
-            pscViewTableBtn.style.color = "#d1d5db";
-
-            if (pscTableContainer) pscTableContainer.style.display = "none";
-            if (pscNetworkGraphContainer) pscNetworkGraphContainer.style.display = "block";
-            renderPSCNetworkGraph();
+            if (pscModal) pscModal.classList.remove("active");
+            window.location.hash = "#network";
         });
     }
 
@@ -1865,8 +1827,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (pscSearchInput) {
         pscSearchInput.addEventListener("input", (e) => {
             currentPscSearchQuery = (e.target.value || "").toLowerCase();
-            if (pscViewMode === "table") renderPSCTableRows();
-            else renderPSCNetworkGraph();
+            renderPSCTableRows();
         });
     }
 
@@ -1889,8 +1850,7 @@ document.addEventListener("DOMContentLoaded", () => {
             filterChips.forEach(c => c.classList.remove("active"));
             chip.classList.add("active");
             activePscFilter = chip.getAttribute("data-filter") || "all";
-            if (pscViewMode === "table") renderPSCTableRows();
-            else renderPSCNetworkGraph();
+            renderPSCTableRows();
         });
     });
 
@@ -2153,8 +2113,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 filterChips.forEach(c => {
                     c.classList.toggle("active", c.getAttribute("data-filter") === "all");
                 });
-                if (pscViewMode === "table") renderPSCTableRows();
-                else renderPSCNetworkGraph();
+                renderPSCTableRows();
             });
         }
     }
@@ -2313,126 +2272,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Render SVG Interactive UBO Network Map
-    function renderPSCNetworkGraph() {
-        if (!pscNetworkGraphContainer) return;
-        const pscData = getFilteredPSCData();
-
-        if (!pscData || pscData.length === 0) {
-            pscNetworkGraphContainer.innerHTML = pscEmptyStateHTML();
-            bindPscEmptyStateActions(pscNetworkGraphContainer);
-            return;
-        }
-
-        let svgHtml = `
-            <svg width="100%" height="100%" viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg" style="background:transparent;">
-                <defs>
-                    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-                        <polygon points="0 0, 8 3, 0 6" fill="#38bdf8" />
-                    </marker>
-                    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-                        <polygon points="0 0, 8 3, 0 6" fill="#ef4444" />
-                    </marker>
-                </defs>
-        `;
-
-        const personsMap = new Map();
-        const holdingsMap = new Map();
-        const companiesMap = new Map();
-
-        pscData.forEach(r => {
-            const pName = r["Person Name"] || "Unknown";
-            const cName = r["Company"] || "Unknown Company";
-            const hName = (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Shareholder" && r["Intermediate Entities"] !== "Direct Holding") ? r["Intermediate Entities"] : "Direct";
-
-            if (!personsMap.has(pName)) personsMap.set(pName, { name: pName, records: [] });
-            personsMap.get(pName).records.push(r);
-
-            if (hName !== "Direct" && !holdingsMap.has(hName)) holdingsMap.set(hName, { name: hName });
-            if (!companiesMap.has(cName)) companiesMap.set(cName, { name: cName });
-        });
-
-        const pArray = Array.from(personsMap.values());
-        const hArray = Array.from(holdingsMap.values());
-        const cArray = Array.from(companiesMap.values());
-
-        // Ordinal lookups from the Maps that already exist, instead of three
-        // linear findIndex scans per record on every keystroke re-render.
-        const pOrd = new Map(pArray.map((p, i) => [p.name, i]));
-        const hOrd = new Map(hArray.map((h, i) => [h.name, i]));
-        const cOrd = new Map(cArray.map((c, i) => [c.name, i]));
-
-        const xP = 140;
-        const xH = 500;
-        const xC = 850;
-
-        pscData.forEach(r => {
-            const pIndex = pOrd.has(r["Person Name"]) ? pOrd.get(r["Person Name"]) : -1;
-            const hName = (r["Intermediate Entities"] && r["Intermediate Entities"] !== "Direct Shareholder" && r["Intermediate Entities"] !== "Direct Holding") ? r["Intermediate Entities"] : "Direct";
-            const hIndex = hOrd.has(hName) ? hOrd.get(hName) : -1;
-            const cIndex = cOrd.has(r["Company"]) ? cOrd.get(r["Company"]) : -1;
-
-            const yP = 60 + pIndex * (380 / Math.max(1, pArray.length - 1));
-            const flags = getRecordRedFlags(r);
-            const isRed = flags.length > 0;
-
-            if (hIndex >= 0) {
-                const yH = 70 + hIndex * (360 / Math.max(1, hArray.length - 1));
-                const yC = 60 + cIndex * (380 / Math.max(1, cArray.length - 1));
-
-                svgHtml += `<line x1="${xP+40}" y1="${yP}" x2="${xH-60}" y2="${yH}" stroke="${isRed ? '#ef4444' : '#38bdf8'}" stroke-width="1.8" stroke-dasharray="${isRed ? '4,4' : 'none'}" marker-end="${isRed ? 'url(#arrowhead-red)' : 'url(#arrowhead)'}" opacity="0.8"/>`;
-                svgHtml += `<text x="${(xP+xH)/2}" y="${(yP+yH)/2 - 5}" font-size="10" fill="#9ca3af" text-anchor="middle">${esc(r["Percentage"] || "")}</text>`;
-
-                svgHtml += `<line x1="${xH+60}" y1="${yH}" x2="${xC-60}" y2="${yC}" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrowhead)" opacity="0.8"/>`;
-            } else {
-                const yC = 60 + cIndex * (380 / Math.max(1, cArray.length - 1));
-                svgHtml += `<line x1="${xP+40}" y1="${yP}" x2="${xC-60}" y2="${yC}" stroke="${isRed ? '#ef4444' : '#38bdf8'}" stroke-width="1.8" marker-end="${isRed ? 'url(#arrowhead-red)' : 'url(#arrowhead)'}" opacity="0.8"/>`;
-                svgHtml += `<text x="${(xP+xC)/2}" y="${(yP+yC)/2 - 5}" font-size="10" fill="#9ca3af" text-anchor="middle">Direct ${esc(r["Percentage"] || "")}</text>`;
-            }
-        });
-
-        pArray.forEach((p, idx) => {
-            const y = 60 + idx * (380 / Math.max(1, pArray.length - 1));
-            const record = p.records[0];
-            const flags = getRecordRedFlags(record);
-            const isRed = flags.length > 0;
-
-            svgHtml += `
-                <g style="cursor:pointer;" data-psc-name="${esc(p.name)}">
-                    <circle cx="${xP}" cy="${y}" r="22" fill="${isRed ? 'rgba(239,68,68,0.25)' : 'rgba(56,189,248,0.25)'}" stroke="${isRed ? '#ef4444' : '#38bdf8'}" stroke-width="2"/>
-                    <text x="${xP}" y="${y+4}" font-size="12" fill="#fff" font-weight="bold" text-anchor="middle">${esc(p.name.charAt(0))}</text>
-                    <text x="${xP}" y="${y+36}" font-size="11" fill="#38bdf8" font-weight="600" text-anchor="middle">${esc(p.name)}</text>
-                </g>
-            `;
-        });
-
-        hArray.forEach((h, idx) => {
-            const y = 70 + idx * (360 / Math.max(1, hArray.length - 1));
-            svgHtml += `
-                <g>
-                    <rect x="${xH-60}" y="${y-16}" width="120" height="32" rx="6" fill="rgba(167,139,250,0.2)" stroke="#a78bfa" stroke-width="1.5"/>
-                    <text x="${xH}" y="${y+4}" font-size="10.5" fill="#e0e7ff" font-weight="600" text-anchor="middle">${esc(h.name.length > 18 ? h.name.slice(0, 16) + '...' : h.name)}</text>
-                </g>
-            `;
-        });
-
-        cArray.forEach((c, idx) => {
-            const y = 60 + idx * (380 / Math.max(1, cArray.length - 1));
-            svgHtml += `
-                <g>
-                    <rect x="${xC-65}" y="${y-18}" width="130" height="36" rx="8" fill="rgba(244,114,182,0.2)" stroke="#f472b6" stroke-width="1.5"/>
-                    <text x="${xC}" y="${y+4}" font-size="11" fill="#fbcfe8" font-weight="bold" text-anchor="middle">${esc(c.name.length > 18 ? c.name.slice(0, 16) + '...' : c.name)}</text>
-                </g>
-            `;
-        });
-
-        svgHtml += `</svg>`;
-        pscNetworkGraphContainer.innerHTML = svgHtml;
-
-        pscNetworkGraphContainer.querySelectorAll("[data-psc-name]").forEach(el => {
-            el.addEventListener("click", () => window.openPSCDossier(el.getAttribute("data-psc-name")));
-        });
-    }
+    // The SVG "UBO Network Map" is retired. It duplicated the vis.js
+    // knowledge graph with none of its physics, zoom, keyboard access or
+    // path tracing; its fixed 460px viewBox already overlapped its own
+    // node labels at 8 distinct holders; and its per-person flags read
+    // only the first record. The modal's map toggle now deep-links to
+    // the #network section instead.
 
     // Interactive PSC Beneficial Ownership Dossier Drawer with Timeline & Portfolio Links
     // Accepts either a record index (from the table, exact — a person can be a

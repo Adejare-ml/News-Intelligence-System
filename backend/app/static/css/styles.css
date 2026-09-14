@@ -2146,3 +2146,42 @@ div.vis-tooltip {
 main[data-route-page] > :not([data-route-outlet]) {
     display: none !important;
 }
+
+/* =====================================================================
+   Small screens: the post-redesign components (DataTable, graph path
+   bar, palette, dossiers, toasts) were all declared after the existing
+   breakpoints and never mentioned inside them.
+   ===================================================================== */
+@media (max-width: 600px) {
+    .aura-pager {
+        flex-wrap: wrap;
+        gap: var(--space-2);
+        justify-content: center;
+    }
+
+    /* Seven columns of nowrap rich cells made each row ~3x viewport
+       width; wrapping keeps the horizontal scroll to what the content
+       genuinely needs. */
+    .aura-table th,
+    .aura-table td { white-space: normal; }
+
+    .graph-path-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .graph-path-select { max-width: none; }
+    .graph-path-arrow { display: none; }
+
+    .search-palette { padding-top: 4vh; }
+
+    .toast-region {
+        left: var(--space-3);
+        right: var(--space-3);
+        bottom: var(--space-3);
+        max-width: none;
+    }
+
+    .watchlist-entry { max-width: 100%; }
+
+    .dossier-header h1 { font-size: 1.35rem; }
+}

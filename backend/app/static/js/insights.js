@@ -240,19 +240,16 @@
 
     function bind() {
         var doc = global.document;
-        if (!doc || typeof doc.querySelector !== "function") return;
+        if (!doc || typeof doc.querySelector !== "function" || !global.AuraData) return;
 
-        // Static-first, matching app.js / psc-report.js.
-        var devHost = global.location.hostname === "localhost"
-            || global.location.hostname.indexOf("127.") === 0;
-        var DATA = (devHost && global.location.search.indexOf("static=1") === -1)
-            ? "/api/v1" : "data";
+        // All dataset reads go through AuraData's shared memo -- this
+        // module alone used to add a third reports.json and a second
+        // latest.json download to every cold boot.
+        var D = global.AuraData;
 
         var changesPanel = doc.getElementById("cycle-changes-panel");
         if (changesPanel && typeof global.fetch === "function") {
-            global.fetch(DATA + "/changes.json")
-                .then(function (res) { return res.ok ? res.json() : null; })
-                .catch(function () { return null; })
+            D.get("changes.json")
                 .then(function (changes) {
                     var summary = changesSummary(changes);
                     if (!summary) return; // stays hidden
@@ -268,12 +265,8 @@
         var contextPanel = doc.getElementById("context-panel");
         if (contextPanel && typeof global.fetch === "function") {
             Promise.all([
-                global.fetch(DATA + "/trends.json")
-                    .then(function (res) { return res.ok ? res.json() : null; })
-                    .catch(function () { return null; }),
-                global.fetch(DATA + "/weather.json")
-                    .then(function (res) { return res.ok ? res.json() : null; })
-                    .catch(function () { return null; })
+                D.get("trends.json"),
+                D.get("weather.json")
             ]).then(function (results) {
                 var trends = trendsSummary(results[0]);
                 var weather = weatherSummary(results[1]);
@@ -293,9 +286,7 @@
 
         var techPanel = doc.getElementById("tech-news-panel");
         if (techPanel && typeof global.fetch === "function") {
-            global.fetch(DATA + "/tech_news.json")
-                .then(function (res) { return res.ok ? res.json() : null; })
-                .catch(function () { return null; })
+            D.get("tech_news.json")
                 .then(function (payload) {
                     var summary = techNewsSummary(payload);
                     if (!summary) return; // stays hidden
@@ -311,12 +302,8 @@
         var healthPanel = doc.getElementById("health-panel");
         if (healthPanel && typeof global.fetch === "function") {
             Promise.all([
-                global.fetch(DATA + "/reports.json")
-                    .then(function (res) { return res.ok ? res.json() : []; })
-                    .catch(function () { return []; }),
-                global.fetch(DATA + "/latest.json")
-                    .then(function (res) { return res.ok ? res.json() : []; })
-                    .catch(function () { return []; })
+                D.getList("reports.json"),
+                D.getList("latest.json")
             ]).then(function (results) {
                 var series = healthSeries(results[0], 30);
                 if (!series.labels.length) return; // stays hidden
