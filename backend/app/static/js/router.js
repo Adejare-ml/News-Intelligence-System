@@ -32,6 +32,7 @@
         { pattern: "#/network",        view: "graph" },
         { pattern: "#/alerts",         view: "alerts" },
         { pattern: "#/investigations", view: "investigations" },
+        { pattern: "#/compare",        view: "compare" },
         { pattern: "#/company/:slug",  view: "company-dossier" },
         { pattern: "#/person/:slug",   view: "person-dossier" },
         { pattern: "#/agency/:slug",   view: "agency-dossier" }

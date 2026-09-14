@@ -8,16 +8,22 @@ completed implementation plan `TIER1_REDESIGN_PLAN.md`.)
 ## Frontend
 
 - **Retire the legacy PSC modal** (`#psc-modal` in index.html + its
-  `renderPSCTableRows`/SVG-map code in app.js). The `#register` section
+  `renderPSCTableRows` code in app.js). The `#register` section
   and the dossier pages now cover almost all of it; the modal's unique
   bits (75%+ / cross-holdings chips, Filing Ref column, compliance-brief
   export) should be folded into `#register` first.
-- **Notes and investigations** (Tier 1 Slice H remainder): per-device
-  notes on entities and a saved-investigation view under `aura:local:v1`.
 - **Graph**: clustering, WebGL rendering, multi-hop pathfinding beyond
-  BFS — all explicitly out of Slice G's scope.
-- **Dossiers**: employment history / org-chart view; Drawer and
-  ConfidenceBadge components from the original plan.
+  BFS — all explicitly out of Slice G's scope. The round-5
+  `cooccurrence.json` export is not yet rendered as a graph overlay.
+- **Dossiers**: org-chart view; Drawer and ConfidenceBadge components
+  from the original plan. (Activity timeline, Markdown export and the
+  compare view shipped in round 5.)
+- **Round-5 analytics not yet surfaced**: `entity_timeline.json`,
+  `risk_movers.json`, `sectors.json`, `psc_timeline.json`,
+  `history.json`, `sources.json` and `alerts.json` are exported by the
+  pipeline but the dashboard panels for movers/sectors/PSC-history and
+  the ledger-backed alert band are still to be built once a few
+  enriched runs have accrued data.
 - **True path-based URLs** — requires a host with rewrites; hash routes
   are the deliberate GitHub Pages answer for now.
 - **Multi-user sync** for watchlists/dismissals — needs an account
@@ -43,6 +49,10 @@ completed implementation plan `TIER1_REDESIGN_PLAN.md`.)
 - **SEARCH_TOPICS as versioned config** — the query list is a class
   attribute; a config file would let deploys tune coverage without a
   code change.
+- **Monthly immutable history shards** (`data/history/YYYY-MM.json`) —
+  deferred from round 5: `history.json` (365-day daily rollup) covers
+  the same need with simpler retention; shards become worth it when a
+  year of history approaches the single-file budget.
 
 ## Evals
 
