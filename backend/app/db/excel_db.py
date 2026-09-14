@@ -22,10 +22,21 @@ SHEETS_CONFIG = {
     # reason lived only in log lines that rotate away with the Actions run.
     "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine",
                  "Event Type", "Risk Level", "Importance", "Entities", "Filter Reason"],
-    "Companies": ["Company", "Mention Count", "Last Seen", "Industry", "Risk Level"],
+    # "First Seen" is set once on insert and never updated -- the sheet had
+    # "Last Seen" only, so no export could say when an entity first appeared.
+    # Appended at the END deliberately: _add_company_locked updates cells by
+    # hardcoded column index (2..5), so inserting mid-schema would shift them.
+    "Companies": ["Company", "Mention Count", "Last Seen", "Industry", "Risk Level", "First Seen"],
     "People": ["Name", "Position", "Organization", "Event", "Date"],
     "Government Agencies": ["Agency", "Event", "Article", "Date"],
-    "Procurement": ["Agency", "Contractor", "Amount", "Project", "Source"],
+    # "Date" was the one entity sheet column set nobody stamped: contract
+    # timing was unrecoverable and the graph slice had to fall back to
+    # "rows append chronologically".
+    "Procurement": ["Agency", "Contractor", "Amount", "Project", "Source", "Date"],
+    # Alerts ledger: one row per high-risk article the run surfaced. The
+    # webhook fire-and-forgot exactly this payload; persisting it gives the
+    # dashboard's alert band history beyond whatever the last run saw.
+    "Alerts": ["Date", "Title", "URL", "Source", "Risk Score", "Risk Level", "Entities"],
     # Enriched beneficial-ownership schema. _append_row filters strictly to
     # these columns, so every field run_pipeline.py writes must appear here or
     # it is silently discarded between the LLM and the sheet.
@@ -508,7 +519,9 @@ class SheetsDatabase:
                 "Mention Count": 1,
                 "Last Seen": now_str,
                 "Industry": company.get("Industry") or "General",
-                "Risk Level": company.get("Risk Level") or "Low"
+                "Risk Level": company.get("Risk Level") or "Low",
+                # Set once here, never touched by the update branch.
+                "First Seen": now_str
             }
             self._append_row("Companies", new_comp)
 
@@ -530,7 +543,26 @@ class SheetsDatabase:
         return self._read_sheet("Procurement")
 
     def add_procurement(self, contract: Dict[str, Any]):
+        contract["Date"] = contract.get("Date") or datetime.now().strftime("%Y-%m-%d")
         self._append_row("Procurement", contract)
+
+    def get_alerts(self) -> List[Dict[str, Any]]:
+        return self._read_sheet("Alerts")
+
+    def add_alert(self, alert: Dict[str, Any]) -> bool:
+        """Appends a high-risk alert, once per URL.
+
+        URL-keyed dedupe (not URL+date): a standing high-risk story must
+        not re-enter the ledger every cycle it stays in the feed, mirroring
+        the webhook's own once-per-run-records rule.
+        """
+        with self._lock:
+            url = str(alert.get("URL", "")).strip()
+            if url and any(str(row.get("URL", "")).strip() == url
+                           for row in self.get_alerts()):
+                return False
+            alert["Date"] = alert.get("Date") or datetime.now().strftime("%Y-%m-%d")
+            return self._append_row("Alerts", alert)
 
     def get_significant_control(self) -> List[Dict[str, Any]]:
         return self._read_sheet("Significant Control")

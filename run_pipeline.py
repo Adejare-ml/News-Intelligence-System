@@ -4,7 +4,6 @@ import json
 import random
 import logging
 import argparse
-import re
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
 
@@ -28,7 +27,7 @@ logger = logging.getLogger("run_pipeline")
 from backend.app.core.config import settings
 from backend.app.services.ingestion import NewsIngestionService, parse_feed_date
 from backend.app.services.llm import LLMService, LLMCascadeError
-from backend.app.services import relevance
+from backend.app.services import analytics, relevance
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -535,6 +534,29 @@ def run_pipeline(seed: bool = False):
             run_seconds=round((datetime.now() - run_started).total_seconds()),
             rejected=rejected_count,
         )
+
+    # 3.5 Persist this run's high-risk alerts to the durable ledger BEFORE
+    # the export runs, so alerts.json carries them this cycle rather than
+    # next. The webhook below fire-and-forgets the same payload; this is
+    # the copy the dashboard's alert band gets history from. Best-effort:
+    # the ledger must never fail the run it records.
+    if new_articles_count > 0:
+        try:
+            from backend.app.services.feeds import high_risk_alerts
+            entities_by_url = {r.get("url"): entity_mentions(r.get("analysis") or {})
+                               for r in run_records}
+            for alert in high_risk_alerts(run_records):
+                db.add_alert({
+                    "Date": datetime.now().strftime("%Y-%m-%d"),
+                    "Title": alert["title"],
+                    "URL": alert["url"],
+                    "Source": alert["source"],
+                    "Risk Score": int(alert["risk_score"]),
+                    "Risk Level": alert["risk_level"],
+                    "Entities": entities_by_url.get(alert["url"], ""),
+                })
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning(f"Alerts ledger write skipped: {exc}")
 
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
     export_static_json_database()
@@ -1069,29 +1091,11 @@ def build_sources(article_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return out
 
 
-# Corporate suffixes and geography that make one entity read as several:
-# "NNPC" / "NNPC Limited" / "NNPC Ltd" were three Companies rows splitting
-# one mention count. Word-boundary, order-insensitive, applied repeatedly
-# so "Unilever Nigeria PLC" folds all the way down to "unilever".
-_ENTITY_NOISE_RE = re.compile(
-    r"\b(plc|ltd|limited|inc|llc|gte|group|holdings?|nigeria|nigerian)\b\.?",
-    re.IGNORECASE,
-)
-
-
-def entity_key(name: Any) -> str:
-    """Normalised identity key for an exported entity name.
-
-    Lowercases, strips corporate suffixes/geography and punctuation, and
-    collapses whitespace -- but never to nothing: a name made entirely of
-    noise words (e.g. the company actually called "Nigeria Ltd") keeps its
-    plain lowercased form rather than colliding with every other one.
-    """
-    raw = str(name or "").strip().lower()
-    stripped = _ENTITY_NOISE_RE.sub(" ", raw)
-    stripped = re.sub(r"[^\w\s]", " ", stripped)
-    stripped = re.sub(r"\s+", " ", stripped).strip()
-    return stripped or re.sub(r"\s+", " ", raw)
+# entity_key moved to backend.app.services.analytics (Package 22) so the
+# derived-analytics functions can share the exact same identity rule;
+# re-imported here because dedupe_entity_rows and half the test suite
+# address it as run_pipeline.entity_key.
+from backend.app.services.analytics import entity_key  # noqa: E402  (re-export)
 
 
 def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
@@ -1354,8 +1358,18 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "people.json"), "w", encoding="utf-8") as f:
         json.dump(people, f, default=str, indent=2)
         
+    # Procurement rows carry their parsed amount at export time (never
+    # stored), so the parser's coverage applies to every historical row,
+    # not just rows written after it shipped. Undisclosed stays null.
+    procurement_out = []
+    for row in procurement:
+        r = dict(row)
+        parsed = analytics.parse_amount(r.get("Amount"))
+        r["Amount Value"] = parsed["value"] if parsed else None
+        r["Amount Currency"] = parsed["currency"] if parsed else None
+        procurement_out.append(r)
     with open(os.path.join(DATA_DIR, "procurement.json"), "w", encoding="utf-8") as f:
-        json.dump(procurement, f, default=str, indent=2)
+        json.dump(procurement_out, f, default=str, indent=2)
 
     # Agencies were already fetched and filtered for the graph step but
     # never exported like companies/people -- the agency dossier pages
@@ -1381,6 +1395,47 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "sources.json"), "w", encoding="utf-8") as f:
         json.dump({"sources": build_sources(articles), "generated": stamp},
                   f, default=str, indent=2)
+
+    # Package 22 analytics: all pure functions over rows already read.
+    # Entity-joined datasets (timeline, co-occurrence, movers) lean on the
+    # Articles Entities column and thicken as enriched runs accrue.
+    with open(os.path.join(DATA_DIR, "entity_timeline.json"), "w", encoding="utf-8") as f:
+        json.dump({"entities": analytics.entity_timeline(articles), "generated": stamp},
+                  f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "cooccurrence.json"), "w", encoding="utf-8") as f:
+        payload = analytics.cooccurrence(articles)
+        payload["generated"] = stamp
+        json.dump(payload, f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "risk_movers.json"), "w", encoding="utf-8") as f:
+        json.dump({"movers": analytics.risk_movers(articles), "window_days": 7,
+                   "generated": stamp}, f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "sectors.json"), "w", encoding="utf-8") as f:
+        json.dump({"sectors": analytics.sector_rollup(companies), "generated": stamp},
+                  f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "psc_timeline.json"), "w", encoding="utf-8") as f:
+        json.dump({"holdings": analytics.psc_timeline(psc_records), "generated": stamp},
+                  f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "procurement_rollup.json"), "w", encoding="utf-8") as f:
+        payload = analytics.procurement_rollup(procurement)
+        payload["generated"] = stamp
+        json.dump(payload, f, default=str, indent=2)
+
+    # The alerts ledger needs one extra tab read (memoised like the rest).
+    # If that read fails, the previous alerts.json stays on disk rather
+    # than being replaced with an empty window.
+    try:
+        alert_rows = db.get_alerts()
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Alerts ledger read failed; keeping previous alerts.json: {exc}")
+    else:
+        with open(os.path.join(DATA_DIR, "alerts.json"), "w", encoding="utf-8") as f:
+            json.dump({"alerts": analytics.recent_alerts(alert_rows), "window_days": 90,
+                       "generated": stamp}, f, default=str, indent=2)
 
     # RSS feed over the same editions -- static, like everything else
     # GitHub Pages serves. Best-effort: syndication must not fail a run.
@@ -1496,9 +1551,11 @@ def export_static_json_database():
                 })
 
     # Generate edges from Procurement
-    # No date column on Procurement; rows append chronologically, so the
-    # newest are at the end.
-    for row in list(reversed(procurement))[:20]:
+    # Newest first by the Date column; legacy rows without a Date fall
+    # back to append-order recency (later row index = newer).
+    _dated = sorted(enumerate(procurement),
+                    key=lambda p: (str(p[1].get("Date", "")), p[0]), reverse=True)
+    for _, row in _dated[:20]:
         agency = row.get("Agency", "").strip()
         contractor = row.get("Contractor", "").strip()
         proj = row.get("Project", "Contract").strip()
