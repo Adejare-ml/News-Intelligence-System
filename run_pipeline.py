@@ -263,12 +263,47 @@ def run_pipeline(seed: bool = False):
         if url in existing_urls:
             continue
 
-        logger.info(f"Analyzing: '{title}' ({source})")
         text = item.get("raw_text") or title
 
         # Clean text basic HTML strips
         from backend.app.services.nlp_pipeline import NLPPipelineService
         cleaned_text = NLPPipelineService.clean_html(text)
+
+        # Deterministic topic guard BEFORE the model, title-only. The same
+        # guard already ran after extraction as a backstop -- but by then
+        # the LLM call, a Sheets row and a 3.5s rate-limit sleep were spent
+        # on an article it was always going to reject, and measured
+        # production data showed ~80% of analysed rows were rejects.
+        # Title-only deliberately: a full body gives a title-grade guard
+        # too much surface to false-match on (a sanctions story quoting a
+        # football club sponsor is still a sanctions story). The post-LLM
+        # check stays and additionally sees the model's summary.
+        pre_off_topic = relevance.off_topic_reason(title)
+        if pre_off_topic:
+            logger.info(
+                f"Topic guard rejected '{title}' pre-LLM as {pre_off_topic.topic} "
+                f"(matched: {', '.join(pre_off_topic.matched)}) -- no extraction call spent."
+            )
+            filtered_saved = db.add_article({
+                "ID": "",
+                "Time": item.get("published_at") or datetime.now().isoformat(),
+                "Title": title,
+                "Source": source,
+                "URL": url,
+                "Category": "Non-Relevant",
+                "Risk Score": 0,
+                "Summary": title,
+                "Status": "Filtered",
+                "Engine": "pre-llm-guard"
+            })
+            if filtered_saved:
+                existing_urls.add(url)
+            # Sheets write pacing only -- no LLM call happened.
+            import time
+            time.sleep(1.0)
+            continue
+
+        logger.info(f"Analyzing: '{title}' ({source})")
 
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
@@ -383,7 +418,10 @@ def run_pipeline(seed: bool = False):
             if org_type == "company":
                 db.add_company({
                     "Company": name,
-                    "Industry": "General",
+                    # Extracted sector when the model saw one; "General" was
+                    # hardcoded here, which made Industry a schema column
+                    # that read "General" on 1009 of 1009 rows.
+                    "Industry": org.get("industry") or "General",
                     "Risk Level": analysis.get("risk_level", "Low")
                 })
             elif org_type == "agency":

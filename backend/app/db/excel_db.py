@@ -66,6 +66,14 @@ def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, A
     }
 
 
+_RISK_ORDER = {"low": 1, "medium": 2, "elevated": 2, "high": 3, "critical": 4}
+
+
+def _risk_rank(value) -> int:
+    """Severity ordinal for Risk Level cells; unknown/blank ranks lowest."""
+    return _RISK_ORDER.get(str(value or "").strip().lower(), 0)
+
+
 def _lenient_int(value, default: int = 0) -> int:
     """Sheet cells arrive as int, float, str or blank ('' via fillna and
     gspread alike); NaN/blank/garbage fall back to `default` instead of
@@ -431,11 +439,26 @@ class SheetsDatabase:
             mention_count = _lenient_int(match.get("Mention Count"), default=1) + 1
             match["Mention Count"] = mention_count
             match["Last Seen"] = now_str
-            if company.get("Industry"):
-                match["Industry"] = company["Industry"]
-            if company.get("Risk Level"):
-                match["Risk Level"] = company["Risk Level"]
-                
+            # Industry: a real sector never regresses to the "General"
+            # placeholder once one has been extracted.
+            incoming_industry = company.get("Industry")
+            industry_changed = bool(
+                incoming_industry and (incoming_industry != "General"
+                                       or not str(match.get("Industry", "")).strip())
+            )
+            if industry_changed:
+                match["Industry"] = incoming_industry
+            # Risk Level: highest-severity aggregate, not last-write-wins.
+            # The old overwrite made a company's risk whatever the most
+            # recent article happened to score -- a Critical sanction story
+            # was erased by the next routine earnings note.
+            incoming_risk = company.get("Risk Level")
+            risk_changed = bool(
+                incoming_risk and _risk_rank(incoming_risk) > _risk_rank(match.get("Risk Level"))
+            )
+            if risk_changed:
+                match["Risk Level"] = incoming_risk
+
             # If Google Sheets, update the cell, otherwise overwrite Excel tab
             if not self.use_local:
                 try:
@@ -443,10 +466,10 @@ class SheetsDatabase:
                     # Rows in sheets are 1-indexed, and header is row 1, so row is match_idx + 2
                     ws.update_cell(match_idx + 2, 2, mention_count)
                     ws.update_cell(match_idx + 2, 3, now_str)
-                    if company.get("Industry"):
-                        ws.update_cell(match_idx + 2, 4, company["Industry"])
-                    if company.get("Risk Level"):
-                        ws.update_cell(match_idx + 2, 5, company["Risk Level"])
+                    if industry_changed:
+                        ws.update_cell(match_idx + 2, 4, match["Industry"])
+                    if risk_changed:
+                        ws.update_cell(match_idx + 2, 5, match["Risk Level"])
                 except Exception as e:
                     logger.error(f"Failed to update Google Sheet cell: {e}")
             else:

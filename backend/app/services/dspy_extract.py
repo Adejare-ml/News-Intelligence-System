@@ -87,6 +87,11 @@ PINNED_RULES = """\
 class Organization(BaseModel):
     name: str = Field(description="Canonical entity name")
     type: Literal["company", "agency"]
+    industry: Optional[str] = Field(
+        default=None,
+        description="Sector of a company (e.g. Banking, Oil & Gas, Cement, "
+                    "Telecoms, Agriculture) when evident from the article, else null"
+    )
 
 
 class Person(BaseModel):
@@ -97,11 +102,17 @@ class Person(BaseModel):
 
 
 class SignificantControl(BaseModel):
-    """A Person with Significant Control, in the CAMA 2020 / CAC sense."""
+    """A Person with Significant Control, in the CAMA 2020 / CAC sense.
+
+    The Nigerian statutory threshold is 5% of shares or voting rights
+    (CAMA 2020 s.868) -- NOT the UK's 25%. A reported 6% holder is a
+    disclosure, not noise.
+    """
     name: str
     organization: str
     nature_of_control: str = Field(
-        description="e.g. Ownership of shares 25-50%, Voting rights >25%, "
+        description="e.g. Ownership of shares 5-25% (Nigerian statutory band), "
+                    "Ownership of shares 25-50%, Voting rights 5% or more, "
                     "Right to appoint or remove directors, Significant influence or control"
     )
     board_role: Optional[str] = Field(
@@ -112,6 +123,11 @@ class SignificantControl(BaseModel):
     )
     direct_percentage: Optional[str] = None
     indirect_percentage: Optional[str] = None
+    voting_rights_percentage: Optional[str] = Field(
+        default=None,
+        description="Voting rights % when stated and it differs from or "
+                    "accompanies the equity figure, else null"
+    )
     intermediate_entities: Optional[str] = Field(
         default=None, description="Intermediate holding company or investment vehicle, or null"
     )
