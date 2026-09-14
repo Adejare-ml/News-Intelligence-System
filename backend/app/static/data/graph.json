@@ -145,6 +145,12 @@
       "risk": "Low"
     },
     {
+      "id": "8e7b2b6f264f",
+      "label": "Revenue Mobilization Allocation and Fiscal Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "2cbc793c6023",
-      "label": "Government of China",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "5a094abf1abe",
       "label": "Bola Ahmed Tinubu",
       "type": "person",
@@ -256,6 +256,12 @@
       "id": "37a6259cc0c1",
       "label": "null",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "649b4afa9b99",
+      "label": "Diezani Alison-Madueke",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -487,12 +493,6 @@
       "risk": "Low"
     },
     {
-      "id": "ab45b8425ce6",
-      "label": "Seriake Sylva",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "6617740c0c1a",
       "label": "Femi Otedola",
       "type": "psc",
@@ -717,6 +717,12 @@
       "label": "Appointed as Former Vice-President"
     },
     {
+      "id": "d87a81d4276c",
+      "from": "649b4afa9b99",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former Minister of Petroleum Resources"
+    },
+    {
       "id": "2b423480bb40",
       "from": "6b8bead22e32",
       "to": "9c7e0688e34e",
@@ -847,12 +853,6 @@
       "from": "e5887b80b73e",
       "to": "b5da1d8370fd",
       "label": "Appointed as Vice President"
-    },
-    {
-      "id": "09c2b8cbb5dd",
-      "from": "ab45b8425ce6",
-      "to": "217ee6fe71c5",
-      "label": "Appointed as Former Governor"
     },
     {
       "id": "0cd3b636ebc8",

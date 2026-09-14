@@ -2,14 +2,14 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 1904,
-      "published": 1235,
-      "filtered": 669,
+      "total": 1906,
+      "published": 1236,
+      "filtered": 670,
       "accept_rate": 65,
-      "avg_risk": 29.2,
+      "avg_risk": 29.3,
       "engines": {
         "unknown": 963,
-        "ollama": 264,
+        "ollama": 265,
         "nvidia": 8
       },
       "last_seen": "2026-09-14"
@@ -30,14 +30,14 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 491,
-      "published": 258,
-      "filtered": 233,
-      "accept_rate": 53,
-      "avg_risk": 27.4,
+      "total": 497,
+      "published": 260,
+      "filtered": 237,
+      "accept_rate": 52,
+      "avg_risk": 27.3,
       "engines": {
         "unknown": 188,
-        "ollama": 66,
+        "ollama": 68,
         "nvidia": 4
       },
       "last_seen": "2026-09-14"
@@ -86,10 +86,10 @@
     },
     {
       "source": "Vanguard",
-      "total": 230,
+      "total": 231,
       "published": 144,
-      "filtered": 86,
-      "accept_rate": 63,
+      "filtered": 87,
+      "accept_rate": 62,
       "avg_risk": 36.6,
       "engines": {
         "unknown": 79,
@@ -127,16 +127,16 @@
     },
     {
       "source": "leadership",
-      "total": 118,
+      "total": 121,
       "published": 42,
-      "filtered": 76,
-      "accept_rate": 36,
+      "filtered": 79,
+      "accept_rate": 35,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 35,
         "ollama": 7
       },
-      "last_seen": "2026-09-13"
+      "last_seen": "2026-09-14"
     },
     {
       "source": "dailypost",
@@ -153,16 +153,16 @@
     },
     {
       "source": "vanguardngr",
-      "total": 109,
+      "total": 110,
       "published": 26,
-      "filtered": 83,
+      "filtered": 84,
       "accept_rate": 24,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 19,
         "ollama": 7
       },
-      "last_seen": "2026-09-13"
+      "last_seen": "2026-09-14"
     },
     {
       "source": "independentng",
@@ -1734,5 +1734,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-14 11:03:36"
+  "generated": "2026-09-14 13:40:15"
 }
