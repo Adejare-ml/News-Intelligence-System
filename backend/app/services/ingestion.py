@@ -541,21 +541,42 @@ class NewsIngestionService:
             
         return articles
 
+    # Wall-clock budget for the fetch phase. Each adapter's HTTP calls carry
+    # their own timeouts, but Google News RSS alone issues a request per
+    # query term -- a degraded network multiplies that into most of the
+    # run's 90-minute ceiling before analysis has even started. Checked
+    # between adapters (a running adapter is never interrupted), so the
+    # worst case is budget + one adapter's own timeouts.
+    COLLECT_BUDGET_SECONDS = 600
+
     @classmethod
     def collect_all(cls) -> List[Dict[str, Any]]:
         """Collects news from all enabled adapters, strictly limited to Nigeria."""
+        import time as _time
+
         all_articles = []
-        
-        # 1. Fetch free Google News RSS (always active)
-        rss_articles = cls.fetch_google_news_rss()
-        all_articles.extend(rss_articles)
-        
-        # 2. Try API key adapters
-        all_articles.extend(cls.fetch_news_api())
-        all_articles.extend(cls.fetch_gnews())
-        all_articles.extend(cls.fetch_guardian_news())
-        all_articles.extend(cls.fetch_newsdata_io())
-        
+
+        # RSS first (always active, no key), then the API-key adapters.
+        adapters = [
+            ("Google News RSS", cls.fetch_google_news_rss),
+            ("NewsAPI", cls.fetch_news_api),
+            ("GNews", cls.fetch_gnews),
+            ("Guardian", cls.fetch_guardian_news),
+            ("Newsdata.io", cls.fetch_newsdata_io),
+        ]
+        started = _time.monotonic()
+        for i, (name, fetch) in enumerate(adapters):
+            elapsed = _time.monotonic() - started
+            if elapsed > cls.COLLECT_BUDGET_SECONDS:
+                skipped = [n for n, _ in adapters[i:]]
+                logger.warning(
+                    "Collection budget (%ss) exhausted after %.0fs; skipping remaining "
+                    "adapter(s): %s. Continuing with the %d article(s) already fetched.",
+                    cls.COLLECT_BUDGET_SECONDS, elapsed, ", ".join(skipped), len(all_articles)
+                )
+                break
+            all_articles.extend(fetch())
+
         # Post-ingestion strict Nigeria filter
         # Drop site chrome before anything else. Scoping searches to gov.ng and
         # com.ng surfaces regulator *homepages* as if they were stories --
