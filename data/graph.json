@@ -121,6 +121,12 @@
       "risk": "Critical"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "5a98eb23f6f5",
       "label": "Akwa Ibom State Government",
       "type": "agency",
@@ -219,12 +225,6 @@
     {
       "id": "c06f2d9a3df8",
       "label": "National Insurance Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4e1a17c37daf",
-      "label": "Ministry of Interior",
       "type": "agency",
       "risk": "Low"
     },

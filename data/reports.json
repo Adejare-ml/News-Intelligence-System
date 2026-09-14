@@ -1,17 +1,5 @@
 [
   {
-    "Date": "2026-08-11",
-    "Total Articles": 4,
-    "High Risk": 0,
-    "Appointments": 0,
-    "Procurement": 1,
-    "Cascade Failures": "",
-    "Run Seconds": "",
-    "Generated": "2026-08-11 23:47:47",
-    "Archive File": "report_20260811_234747.md",
-    "Content": ""
-  },
-  {
     "Date": "2026-08-12",
     "Total Articles": 8,
     "High Risk": 1,
@@ -1437,6 +1425,18 @@
     "Run Seconds": 159,
     "Generated": "2026-09-13 16:51:01",
     "Archive File": "report_20260913_165101.md",
+    "Content": ""
+  },
+  {
+    "Date": "2026-09-14",
+    "Total Articles": 1,
+    "High Risk": 0,
+    "Appointments": 0,
+    "Procurement": 0,
+    "Cascade Failures": 0,
+    "Run Seconds": 99,
+    "Generated": "2026-09-14 00:53:57",
+    "Archive File": "report_20260914_005357.md",
     "Content": ""
   }
 ]

@@ -1,5 +1,17 @@
 [
   {
+    "ID": 5994,
+    "Time": "2026-09-13T00:18:02Z",
+    "Title": "Three banks settle aircraft duties amid Customs crackdown",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/three-banks-settle-aircraft-duties-amid-customs-crackdown/",
+    "Category": "Legal",
+    "Risk Score": 45,
+    "Summary": "Three major banks have paid outstanding customs duties on aircraft in their possession following a crackdown by the Nigeria Customs Service. One unnamed bank reportedly paid approximately N3 billion to settle its liabilities.",
+    "Status": "Unread",
+    "Engine": "ollama"
+  },
+  {
     "ID": 5971,
     "Time": "2026-09-13 04:45:04",
     "Title": "Entrepreneur Nguyen Thi Nga conferred Labor Hero, BRG Group and SeABank awarded First-class Labor Medals",
@@ -704,18 +716,6 @@
     "Category": "Government",
     "Risk Score": 30,
     "Summary": "The Nigerian Electricity Regulatory Commission (NERC) has directed Distribution Companies (DisCos) to allocate up to 60% of their surplus revenue into a mandatory fund dedicated to grid upgrades.",
-    "Status": "Unread",
-    "Engine": "ollama"
-  },
-  {
-    "ID": 5693,
-    "Time": "2026-09-09T13:29:18Z",
-    "Title": "NCAA, NAICOM sign deal to boost aviation insurance",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/ncaa-naicom-sign-deal-to-boost-aviation-insurance/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigeria Civil Aviation Authority (NCAA) and the National Insurance Commission (NAICOM) have signed a Memorandum of Understanding to enhance aviation insurance oversight. The partnership aims to improve protection for airlines and passengers through strengthened regulatory collaboration.",
     "Status": "Unread",
     "Engine": "ollama"
   }
