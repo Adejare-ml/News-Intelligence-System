@@ -36,6 +36,8 @@ const FILES = [
     path.join(JS_DIR, "data.js"),
     path.join(JS_DIR, "search.js"),
     path.join(JS_DIR, "dossier.js"),
+    path.join(JS_DIR, "compare.js"),
+    path.join(JS_DIR, "investigations.js"),
     path.join(JS_DIR, "graph-path.js"),
     path.join(JS_DIR, "local-store.js"),
     path.join(JS_DIR, "feed-filters.js"),
@@ -51,7 +53,8 @@ const FILES = [
     path.join(__dirname, "graph-path.test.js"),
     path.join(__dirname, "local-store.test.js"),
     path.join(__dirname, "feed-filters.test.js"),
-    path.join(__dirname, "boards.test.js")
+    path.join(__dirname, "boards.test.js"),
+    path.join(__dirname, "workspace.test.js")
 ];
 
 const sandbox = {

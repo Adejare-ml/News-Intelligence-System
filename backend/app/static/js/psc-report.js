@@ -640,6 +640,135 @@
 
         var jsonBtn = el("register-json-btn");
         if (jsonBtn) jsonBtn.addEventListener("click", exportRegisterJson);
+
+        wireArchiveSearch();
+    }
+
+    /**
+     * Full-text search across the archived brief editions (Package 25).
+     * ~170 editions of narrative intelligence sat behind a <select> that
+     * pages one edition at a time; "when did we first report on X" was
+     * unanswerable. Editions load lazily on the first search (newest 90,
+     * batches of 8, memoised in state.archiveTexts) so the page never
+     * pays for them up front. The matcher itself is the tested
+     * AuraReportMarkdown.searchEditions.
+     */
+    function wireArchiveSearch() {
+        var input = el("archive-search-input");
+        var btn = el("archive-search-btn");
+        var results = el("archive-search-results");
+        var status = el("archive-search-status");
+        var RM = global.AuraReportMarkdown;
+        if (!input || !btn || !results || !RM || !RM.searchEditions) return;
+        state.archiveTexts = state.archiveTexts || {};
+
+        function editionList() {
+            // Same resolvability rules as the archive <select>: inline
+            // Content, or a shape-validated Archive File (no traversal).
+            return (state.reports || []).slice()
+                .sort(function (a, b) {
+                    return String(b.Generated || "").localeCompare(String(a.Generated || ""));
+                })
+                .slice(0, 90)
+                .map(function (r) {
+                    var label = r.Generated || r.Date || "Edition";
+                    var file = String(r["Archive File"] || "").trim();
+                    if (String(r.Content || "").trim()) {
+                        return { label: label, value: "gen:" + label, file: null,
+                                 inline: String(r.Content) };
+                    }
+                    if (/^[\w.-]+\.md$/.test(file)) {
+                        return { label: label, value: "file:" + file, file: file, inline: null };
+                    }
+                    return null;
+                })
+                .filter(Boolean);
+        }
+
+        function fetchText(edition) {
+            if (edition.inline !== null) return Promise.resolve(edition.inline);
+            if (state.archiveTexts[edition.file] !== undefined) {
+                return Promise.resolve(state.archiveTexts[edition.file]);
+            }
+            return fetch(DATA + "/archives/" + encodeURIComponent(edition.file))
+                .then(function (res) { return res.ok ? res.text() : ""; })
+                .catch(function () { return ""; })
+                .then(function (text) {
+                    state.archiveTexts[edition.file] = text;
+                    return text;
+                });
+        }
+
+        function inBatches(list, size, fn) {
+            var out = [];
+            var index = 0;
+            function next() {
+                if (index >= list.length) return Promise.resolve(out);
+                var batch = list.slice(index, index + size);
+                index += size;
+                return Promise.all(batch.map(fn)).then(function (r) {
+                    out.push.apply(out, r);
+                    return next();
+                });
+            }
+            return next();
+        }
+
+        function run() {
+            var query = input.value.trim();
+            results.innerHTML = "";
+            if (query.length < 3) {
+                if (status) status.textContent = query ? "Type at least 3 characters." : "";
+                return;
+            }
+            var editions = editionList();
+            if (!editions.length) {
+                if (status) status.textContent = "No searchable editions have been published yet.";
+                return;
+            }
+            if (status) status.textContent = "Searching " + editions.length + " editions…";
+            btn.disabled = true;
+            inBatches(editions, 8, function (edition) {
+                return fetchText(edition).then(function (text) {
+                    return { label: edition.label, value: edition.value, text: text };
+                });
+            }).then(function (loaded) {
+                btn.disabled = false;
+                var hits = RM.searchEditions(loaded, query);
+                if (status) {
+                    status.textContent = hits.length
+                        ? hits.length + " edition" + (hits.length === 1 ? "" : "s")
+                            + " mention “" + query + "”"
+                        : "No archived edition mentions “" + query + "”.";
+                }
+                results.innerHTML = hits.slice(0, 12).map(function (h) {
+                    return '<li><button type="button" class="report-link archive-hit" data-edition="'
+                        + esc(h.value) + '">' + esc(h.label) + "</button>"
+                        + ' <span class="insight-count">' + h.count + " hit"
+                        + (h.count === 1 ? "" : "s") + "</span>"
+                        + '<span class="archive-snippet">' + esc(h.snippet) + "</span></li>";
+                }).join("");
+                results.querySelectorAll(".archive-hit").forEach(function (hit) {
+                    hit.addEventListener("click", function () {
+                        var select = el("brief-archive-select");
+                        if (!select) return;
+                        select.value = hit.getAttribute("data-edition");
+                        try {
+                            select.dispatchEvent(new global.Event("change"));
+                        } catch (e) { /* ancient browser: selection still set */ }
+                        var body = el("brief-body");
+                        if (body && typeof body.scrollIntoView === "function") {
+                            body.scrollIntoView({ behavior: "smooth" });
+                        }
+                    });
+                });
+            });
+        }
+
+        btn.addEventListener("click", run);
+        input.addEventListener("keydown", function (ev) {
+            if (ev.key === "Enter") run();
+        });
     }
 
     /**
