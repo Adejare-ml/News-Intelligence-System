@@ -1062,6 +1062,20 @@ def export_static_json_database():
     except Exception as exc:  # pragma: no cover - defensive
         logger.warning(f"Trends export skipped: {exc}")
 
+    # Tech & AI headlines: a keyless, LLM-free side vertical rendered in
+    # its own panel. Best-effort, and an empty result keeps the previous
+    # file rather than blanking the panel over one bad fetch window.
+    try:
+        from backend.app.services.tech_news import build_tech_news
+        tech = build_tech_news()
+        if tech.get("ai") or tech.get("dev"):
+            with open(os.path.join(DATA_DIR, "tech_news.json"), "w", encoding="utf-8") as f:
+                json.dump(tech, f, default=str, indent=2)
+        else:
+            logger.warning("Tech news export skipped: every feed came back empty.")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Tech news export skipped: {exc}")
+
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
         json.dump(articles_sorted, f, default=str, indent=2)
