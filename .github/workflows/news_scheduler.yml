@@ -76,6 +76,11 @@ jobs:
           python run_pipeline.py
 
       - name: Commit and Push Data Updates to Main
+        # Runs on failure too (not on cancel): when the pipeline raises after
+        # writing exports or eval captures, skipping this step used to discard
+        # them with the runner while the Sheets rows they mirror survived --
+        # the repo and the database silently diverged.
+        if: success() || failure()
         # Third-party actions pinned to commit SHAs so a moved tag cannot
         # inject code into a workflow that holds a contents:write token
         uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0

@@ -188,14 +188,20 @@ def run_pipeline(seed: bool = False):
     # Store processed records locally to build report summary
     run_records = []
     
-    # Fetch existing articles once to avoid Google Sheets 429 quota exhaustion
+    # Fetch existing articles once to avoid Google Sheets 429 quota exhaustion.
+    # A failed read now ABORTS the run instead of proceeding with an empty
+    # URL set: continuing meant every candidate looked new, the whole batch
+    # re-spent its LLM quota, and duplicate rows landed with colliding IDs.
+    # _read_sheet retries with backoff before this raise ever reaches us.
     try:
         existing_articles = db.get_articles()
         existing_urls = {row.get("URL") for row in existing_articles if row.get("URL")}
     except Exception as e:
-        logger.error(f"Failed to fetch existing articles for deduplication: {e}")
-        existing_articles = []
-        existing_urls = set()
+        logger.error(
+            f"Could not read the Articles sheet after retries ({e}); aborting the run "
+            "rather than re-analyzing the whole batch as if the database were empty."
+        )
+        raise
 
     # Articles published by earlier runs today, reduced to what the sheet
     # retains. The brief compiles over these plus this run's records, so the
@@ -233,6 +239,14 @@ def run_pipeline(seed: bool = False):
             "Run Seconds": round((datetime.now() - run_started).total_seconds()),
             "Generated": f"{generated_message} ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})"
         })
+        # A quiet cycle still refreshes the exports: weather, trends, tech
+        # news, the feed and changes.json do not depend on new articles,
+        # and returning before this left the dashboard showing yesterday's
+        # weather and a stale "what changed this cycle" diff as current.
+        try:
+            export_static_json_database()
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning(f"Quiet-cycle export failed: {exc}")
         return
         
     candidates = new_candidates
@@ -474,15 +488,23 @@ def run_pipeline(seed: bool = False):
         except Exception as exc:  # pragma: no cover - defensive
             logger.warning(f"Alert webhook skipped: {exc}")
 
-    # Partial cascade failures: real articles were published above, but the run
-    # still fails red so the degraded provider chain gets noticed.
+    # Partial cascade failures no longer fail the run red. Doing so made the
+    # workflow skip its commit and deploy steps, so ONE transient 429 out of
+    # forty articles threw away every export just written, left the site on
+    # yesterday's data, and discarded the eval captures -- while the LLM
+    # quota and the Sheets rows were already spent. Visibility is preserved
+    # elsewhere: the Cascade Failures column on the Daily Reports row and the
+    # dashboard's pipeline-health chart both carry the count, and a TOTAL
+    # cascade outage (nothing published at all) still raises above.
     if cascade_failures > 0:
-        raise LLMCascadeError(
+        logger.warning(
             f"{cascade_failures} article(s) failed the LLM provider cascade this run "
-            f"({new_articles_count} succeeded). Failing the run so the outage is visible."
+            f"({new_articles_count} succeeded). Publishing the successes; the failure "
+            "count is recorded on the Daily Reports row and the health panel."
         )
 
-    return {"status": "success", "processed": new_articles_count}
+    return {"status": "success", "processed": new_articles_count,
+            "cascade_failures": cascade_failures}
 
 def published_today(article_rows: List[Dict[str, Any]], today=None) -> List[Dict[str, Any]]:
     """Reduce today's already-published Articles rows to report-record shape.
@@ -495,6 +517,13 @@ def published_today(article_rows: List[Dict[str, Any]], today=None) -> List[Dict
     today = today or datetime.now().date()
     reduced = []
     for row in article_rows or []:
+        # Rejects are written to the same sheet with Status "Filtered";
+        # the export path already skips them, but this path fed them back
+        # into the day's brief -- and at the observed ~80% reject rate,
+        # most of the "coverage" handed to the report model was junk the
+        # relevance guard had already thrown out.
+        if str(row.get("Status", "")).strip().lower() == "filtered":
+            continue
         stamp = parse_feed_date(row.get("Time"))
         if stamp is None or stamp.date() != today:
             continue

@@ -699,8 +699,21 @@ class LLMService:
                 data[key] = val
         # The three list fields must actually be lists -- a model that
         # answers with a string or dict here would crash iteration just
-        # like null did.
+        # like null did. Elements must be dicts for the same reason: a
+        # fallback 8B model answering `"organizations": ["NNPC", "CBN"]`
+        # made `org.get("name")` raise AttributeError mid-batch.
         for key in ("organizations", "people", "significant_control"):
             if not isinstance(data.get(key), list):
                 data[key] = []
+            else:
+                data[key] = [el for el in data[key] if isinstance(el, dict)]
+        # Numeric fields arrive as "85", "85%", "high" or 85 depending on
+        # the provider; coerce leniently so int() at the write site cannot
+        # raise after the LLM spend.
+        for key, default in (("risk_score", 10), ("importance_score", 50)):
+            try:
+                text = str(data.get(key)).strip().rstrip("%")
+                data[key] = int(float(text))
+            except (TypeError, ValueError):
+                data[key] = default
         return data

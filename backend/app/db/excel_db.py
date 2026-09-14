@@ -66,6 +66,19 @@ def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, A
     }
 
 
+def _lenient_int(value, default: int = 0) -> int:
+    """Sheet cells arrive as int, float, str or blank ('' via fillna and
+    gspread alike); NaN/blank/garbage fall back to `default` instead of
+    raising out of a run mid-batch."""
+    try:
+        text = str(value).strip()
+        if not text:
+            return default
+        return int(float(text))
+    except (TypeError, ValueError):
+        return default
+
+
 def retry_google_sheets_op(func, max_retries: int = 3, initial_delay: float = 2.0):
     """Executes a Google Sheets operation with exponential backoff retry logic."""
     import time
@@ -255,14 +268,20 @@ class SheetsDatabase:
                     logger.error(f"Error reading local sheet '{sheet_name}': {e}")
                     return []
             else:
-                try:
+                # Through the retry helper, and RAISES on final failure.
+                # Returning [] here made a transient 429/503 on the Articles
+                # read look like an empty database: every candidate then
+                # passed URL dedup, the whole batch re-spent its LLM quota,
+                # and the auto-increment restarted at 1 -- duplicate rows
+                # with colliding IDs. An error the caller can see beats a
+                # silently wrong answer it cannot.
+                def _do_read():
                     ws = self.spreadsheet.worksheet(sheet_name)
-                    records = ws.get_all_records()
-                    self._cache[sheet_name] = records
-                    return records
-                except Exception as e:
-                    logger.error(f"Error reading Google Sheet '{sheet_name}': {e}")
-                    return []
+                    return ws.get_all_records()
+
+                records = retry_google_sheets_op(_do_read)
+                self._cache[sheet_name] = records
+                return records
 
     def _append_row(self, sheet_name: str, row_data: Dict[str, Any]) -> bool:
         """Appends a single row matching columns to the specified sheet.
@@ -406,8 +425,10 @@ class SheetsDatabase:
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
         
         if match:
-            # Update values
-            mention_count = int(match.get("Mention Count", 1)) + 1
+            # Update values. Lenient parse: a blank Mention Count cell is
+            # "" (fillna/gspread), not missing, so int("") raised out of the
+            # whole run after the article row was already written.
+            mention_count = _lenient_int(match.get("Mention Count"), default=1) + 1
             match["Mention Count"] = mention_count
             match["Last Seen"] = now_str
             if company.get("Industry"):
