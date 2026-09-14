@@ -80,7 +80,7 @@ class LLMCascadeError(RuntimeError):
 
 # Prompt for the LLM Analyst
 SYSTEM_PROMPT = """
-You are an expert AI Intelligence Analyst specializing in corporate ownership transparency: company changes and Persons with Significant Control (PSC) — i.e. beneficial owners, in the CAC/Companies House sense: individuals who own >25% of shares, hold >25% of voting rights, have the right to appoint or remove a majority of directors, or otherwise exercise significant influence or control over a company. Secondary areas: Ministries, Departments and Agencies (MDAs) and public procurement, tracked for their relevance to corporate counterparties.
+You are an expert AI Intelligence Analyst specializing in corporate ownership transparency in NIGERIA: company changes and Persons with Significant Control (PSC) — i.e. beneficial owners under CAMA 2020 s.868 and the CAC PSC Regulations 2022. The Nigerian disclosure threshold is 5% — NOT the UK's 25%: an individual who owns or controls 5% or more of shares or voting rights, has the right to appoint or remove a majority of directors, or otherwise exercises significant influence or control over a company IS a PSC and must be extracted. A reported 6% or 12% holder is a statutory disclosure, not noise. Secondary areas: Ministries, Departments and Agencies (MDAs) and public procurement, tracked for their relevance to corporate counterparties.
 
 Your task is to analyze the provided article title and text, and return a clean, valid JSON object with the following schema:
 
@@ -93,7 +93,7 @@ Your task is to analyze the provided article title and text, and return a clean,
   "importance_score": 0-100 (integer representing visual importance),
   "summary": "Concise executive brief summary of 2-3 sentences",
   "organizations": [
-     {"name": "Canonical Entity Name", "type": "company" | "agency"}
+     {"name": "Canonical Entity Name", "type": "company" | "agency", "industry": "Sector of a company (e.g. Banking, Oil & Gas, Cement, Telecoms, Agriculture) when evident from the article, else null"}
   ],
   "people": [
      {"name": "Person Name", "position": "Job Title/Role", "organization": "Associated Organization", "event": "appointment" | "resignation" | "other"}
@@ -102,11 +102,12 @@ Your task is to analyze the provided article title and text, and return a clean,
       {
         "name": "Person Name",
         "organization": "Associated Company",
-        "nature_of_control": "e.g. Ownership of shares 25-50%, Ownership of shares >50%, Voting rights >25%, Right to appoint or remove directors, Significant influence or control",
+        "nature_of_control": "e.g. Ownership of shares 5-25% (Nigerian statutory band), Ownership of shares 25-50%, Ownership of shares >50%, Voting rights 5% or more, Right to appoint or remove directors, Significant influence or control",
         "board_role": "Board or executive title held at the company (e.g. Executive Chairman, Group CEO), or null if the person holds no board position",
         "percentage": "e.g. 30%, or null if not stated",
         "direct_percentage": "Direct ownership % or null",
         "indirect_percentage": "Indirect ownership % or null",
+        "voting_rights_percentage": "Voting rights % when stated and it differs from or accompanies the equity figure, or null",
         "intermediate_entities": "Intermediate holding company or investment vehicle (e.g. Heirs Holdings Ltd) or null",
         "change_type": "gained" | "lost" | "updated" | "disclosed",
         "previous_holder": "Name of prior PSC if replaced, or null",
