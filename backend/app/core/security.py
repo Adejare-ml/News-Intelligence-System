@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 from typing import Union, Any
+import bcrypt
 import jwt
 from jwt.exceptions import PyJWTError as JWTError
-from passlib.context import CryptContext
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
@@ -13,8 +13,17 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# Password hashing
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# Password hashing: the bcrypt library directly, not passlib. passlib
+# 1.7.4 (unmaintained since 2020) is incompatible with bcrypt >= 4.1 --
+# its backend probe reads a removed __about__ attribute and its own
+# >72-byte smoketest secret makes modern bcrypt raise ValueError -- so
+# every hash and verify call raised after the bcrypt 5.0 dependency bump.
+# The hash format is unchanged ($2b$, cost 12): every existing stored
+# hash verifies exactly as before.
+_BCRYPT_ROUNDS = 12
+# bcrypt only reads the first 72 bytes of a password; truncate explicitly
+# (as passlib silently did) rather than raise on long passphrases.
+_BCRYPT_MAX_BYTES = 72
 
 oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl=f"{settings.API_V1_STR}/auth/login",
@@ -22,10 +31,20 @@ oauth2_scheme = OAuth2PasswordBearer(
 )
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
-    return pwd_context.verify(plain_password, hashed_password)
+    try:
+        return bcrypt.checkpw(
+            plain_password.encode("utf-8")[:_BCRYPT_MAX_BYTES],
+            hashed_password.encode("utf-8"),
+        )
+    except (TypeError, ValueError):
+        # A malformed stored hash is a failed verification, not a 500.
+        return False
 
 def get_password_hash(password: str) -> str:
-    return pwd_context.hash(password)
+    return bcrypt.hashpw(
+        password.encode("utf-8")[:_BCRYPT_MAX_BYTES],
+        bcrypt.gensalt(rounds=_BCRYPT_ROUNDS),
+    ).decode("utf-8")
 
 def create_access_token(subject: Union[str, Any], expires_delta: timedelta = None) -> str:
     if expires_delta:

@@ -76,6 +76,17 @@ jobs:
         with:
           node-version: "22"
 
+      # There is no lockfile (the dashboard has no npm dependencies), so
+      # setup-node's own cache: option cannot be used; cache the npx
+      # download of the pinned eslint directly. Without this every run
+      # re-downloaded eslint -- the old inline comment claimed "npx caches
+      # per runner", which is not true across hosted runners.
+      - name: Cache npx eslint
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npx-eslint-10.10.0-${{ runner.os }}
+
       # No install step: the runner is plain Node with no dependencies, and the
       # dashboard has no build. See tests/frontend/run.js.
       - name: Run frontend suite
@@ -85,7 +96,7 @@ jobs:
         # One rule, no-undef -- see eslint.config.js. app.js is DOM-bound
         # and can't run in the headless suite, so a renamed-but-still-
         # referenced variable once shipped a page that threw on boot with
-        # the suite green. Pinned version; npx caches per runner.
+        # the suite green.
         run: npx --yes eslint@10.10.0 "backend/app/static/js/**/*.js" "tests/frontend/**/*.js"
 
   cache-buster:

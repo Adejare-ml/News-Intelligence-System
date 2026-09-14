@@ -1,3 +1,11 @@
+> **Status: shipped (all slices A-H), with deviations.** This plan is a
+> historical design document. What shipped differs from the manifest
+> below: the dossier module landed as `dossier.js` (not
+> `entity-dossier.js`), toasts live inside `app.js` (no `toast.js`),
+> `overlay.js` / `empty-state.js` / `psc-ui.js` were never split out, and
+> `insights.js` shipped without being planned here. Work this plan
+> deferred is now tracked in `docs/ROADMAP.md`, not here.
+
 # AURA Tier 1 Redesign — Implementation Plan
 
 ## Context

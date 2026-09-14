@@ -1,3 +1,5 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -24,10 +26,36 @@ from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from backend.app.core.limiter import limiter
 
+# Lifespan, not the deprecated @app.on_event("startup"): this hook carries
+# the load-bearing JWT_SECRET fail-fast check, so it must not be able to
+# disappear silently when a future FastAPI bump drops the old API.
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    # Fail fast rather than run the API with a forgeable auth boundary.
+    # Known placeholder/example values are rejected too: a secret that is
+    # published in this repo is no better than no secret at all.
+    KNOWN_WEAK_SECRETS = {
+        "generate_a_secure_random_string_here",
+        "supersecretjwtkeyfornewsinventorysystem123!",
+        "changeme", "secret", "your_secret_here",
+    }
+    secret = (settings.JWT_SECRET or "").strip()
+    if not secret or secret.lower() in KNOWN_WEAK_SECRETS or len(secret) < 32:
+        raise RuntimeError(
+            "JWT_SECRET is missing, too short (<32 chars), or a known "
+            "placeholder value. Refusing to start the API: anyone could forge "
+            "authentication tokens. Generate one with: "
+            "python -c \"import secrets; print(secrets.token_urlsafe(48))\""
+        )
+    init_db()
+    yield
+
+
 app = FastAPI(
     title=settings.PROJECT_NAME,
     description="Continuously monitors, analyzes, and organizes news from multiple sources.",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan,
 )
 
 app.state.limiter = limiter
@@ -134,26 +162,6 @@ def init_db():
         logger.error(f"Error during database initialization: {e}", exc_info=True)
     finally:
         db.close()
-
-@app.on_event("startup")
-def startup_event():
-    # Fail fast rather than run the API with a forgeable auth boundary.
-    # Known placeholder/example values are rejected too: a secret that is
-    # published in this repo is no better than no secret at all.
-    KNOWN_WEAK_SECRETS = {
-        "generate_a_secure_random_string_here",
-        "supersecretjwtkeyfornewsinventorysystem123!",
-        "changeme", "secret", "your_secret_here",
-    }
-    secret = (settings.JWT_SECRET or "").strip()
-    if not secret or secret.lower() in KNOWN_WEAK_SECRETS or len(secret) < 32:
-        raise RuntimeError(
-            "JWT_SECRET is missing, too short (<32 chars), or a known "
-            "placeholder value. Refusing to start the API: anyone could forge "
-            "authentication tokens. Generate one with: "
-            "python -c \"import secrets; print(secrets.token_urlsafe(48))\""
-        )
-    init_db()
 
 # Mount Frontend static files
 static_dir = os.path.join(os.path.dirname(__file__), "static")
