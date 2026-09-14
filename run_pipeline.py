@@ -245,6 +245,10 @@ def run_pipeline(seed: bool = False):
             "Candidates": NewsIngestionService.last_collect_stats.get("fetched", ""),
             "Rejected": 0,
             "Undated": NewsIngestionService.last_collect_stats.get("undated", ""),
+            "Stubs": NewsIngestionService.last_collect_stats.get("stubs", ""),
+            "Nigerian": NewsIngestionService.last_collect_stats.get("nigerian", ""),
+            "Fresh": NewsIngestionService.last_collect_stats.get("fresh", ""),
+            "Distinct": NewsIngestionService.last_collect_stats.get("distinct", ""),
         })
         # A quiet cycle still refreshes the exports: weather, trends, tech
         # news, the feed and changes.json do not depend on new articles,
@@ -302,7 +306,8 @@ def run_pipeline(seed: bool = False):
                 "Risk Score": 0,
                 "Summary": title,
                 "Status": "Filtered",
-                "Engine": "pre-llm-guard"
+                "Engine": "pre-llm-guard",
+                "Filter Reason": filter_reason(pre_off_topic)
             })
             if filtered_saved:
                 existing_urls.add(url)
@@ -363,7 +368,8 @@ def run_pipeline(seed: bool = False):
                 "Risk Score": 0,
                 "Summary": title,
                 "Status": "Filtered",
-                "Engine": analysis.get("engine", "")
+                "Engine": analysis.get("engine", ""),
+                "Filter Reason": filter_reason(off_topic) if off_topic else "model-irrelevant"
             })
             # Only cache the URL when the prevention row actually persisted,
             # so a failed write is retried instead of silently skipped.
@@ -374,7 +380,11 @@ def run_pipeline(seed: bool = False):
             time.sleep(3.5)
             continue
 
-        # Write Article to Database
+        # Write Article to Database. Event Type, Risk Level, Importance and
+        # Entities were all in `analysis` (extracted and paid for on every
+        # article) and then thrown away here; persisting them is what lets
+        # the dashboard facet the feed and join articles to entities
+        # without substring-guessing.
         db_article = {
             "ID": "", # Auto incremented inside ExcelDatabase
             "Time": item.get("published_at") or datetime.now().isoformat(),
@@ -385,7 +395,11 @@ def run_pipeline(seed: bool = False):
             "Risk Score": int(analysis.get("risk_score", 10)),
             "Summary": analysis.get("summary") or title,
             "Status": "Unread",
-            "Engine": analysis.get("engine", "")
+            "Engine": analysis.get("engine", ""),
+            "Event Type": analysis.get("event_type") or "Other",
+            "Risk Level": analysis.get("risk_level") or "",
+            "Importance": _int_cell(analysis.get("importance_score", 50)),
+            "Entities": entity_mentions(analysis)
         }
         
         added = db.add_article(db_article)
@@ -602,6 +616,43 @@ def _int_cell(value: Any) -> int:
         return int(float(str(value).strip() or 0))
     except (TypeError, ValueError):
         return 0
+
+
+def filter_reason(off_topic) -> str:
+    """Compact durable form of an off-topic verdict for the Filter Reason cell."""
+    if not off_topic:
+        return ""
+    matched = ", ".join(off_topic.matched or [])
+    return f"{off_topic.topic}: {matched}" if matched else str(off_topic.topic)
+
+
+def entity_mentions(analysis: Dict[str, Any]) -> str:
+    """Pipe-joined canonical entity names an analysis attributes to its article.
+
+    This is the only durable article<->entity linkage: the org/person names
+    go to their own sheets without any reference back to the article row.
+    Surface names are kept (not entity_key output) so labels stay readable;
+    consumers normalise with entity_key when joining. Publications and page
+    furniture are excluded the same way the entity sheets exclude them.
+    """
+    names, seen = [], set()
+    for org in analysis.get("organizations") or []:
+        name = str((org or {}).get("name") or "").strip()
+        if not name or is_publication_or_furniture(name):
+            continue
+        key = entity_key(name)
+        if key not in seen:
+            seen.add(key)
+            names.append(name)
+    for person in analysis.get("people") or []:
+        name = str((person or {}).get("name") or "").strip()
+        if not name:
+            continue
+        key = entity_key(name)
+        if key not in seen:
+            seen.add(key)
+            names.append(name)
+    return "|".join(names)
 
 
 def day_totals(report_rows: List[Dict[str, Any]], today_str: str) -> Dict[str, int]:
@@ -903,6 +954,10 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         "Candidates": NewsIngestionService.last_collect_stats.get("fetched", ""),
         "Rejected": "" if rejected is None else rejected,
         "Undated": NewsIngestionService.last_collect_stats.get("undated", ""),
+        "Stubs": NewsIngestionService.last_collect_stats.get("stubs", ""),
+        "Nigerian": NewsIngestionService.last_collect_stats.get("nigerian", ""),
+        "Fresh": NewsIngestionService.last_collect_stats.get("fresh", ""),
+        "Distinct": NewsIngestionService.last_collect_stats.get("distinct", ""),
         "Generated": now.strftime("%Y-%m-%d %H:%M:%S"),
         # The exact archive filename, so a reader can resolve an edition to
         # its document instead of guessing from the date.
@@ -932,6 +987,85 @@ def slim_report_rows(reports: List[Dict[str, Any]], keep: int = 120) -> List[Dic
         if str(r.get("Archive File", "")).strip():
             r["Content"] = ""
         out.append(r)
+    return out
+
+
+def build_history(report_rows: List[Dict[str, Any]], keep_days: int = 365) -> List[Dict[str, Any]]:
+    """Per-day rollup of the Daily Reports tab for history.json.
+
+    The health panel previously re-derived a 30-day view client-side by
+    parsing 120 heavy report rows; this gives it a year in a small payload,
+    and it is the first export to carry the filter funnel (candidates /
+    rejected / undated) that the sheet records but nothing rendered.
+    Dates compare on their first 10 chars because a historical branch wrote
+    full timestamps into the Date column. Pure aggregation over rows the
+    exporter already has in memory -- no extra Sheets read.
+    """
+    days: Dict[str, Dict[str, Any]] = {}
+    for row in report_rows or []:
+        date = str(row.get("Date", "")).strip()[:10]
+        if not date:
+            continue
+        d = days.setdefault(date, {
+            "date": date, "runs": 0, "articles": 0, "high_risk": 0,
+            "appointments": 0, "procurement": 0, "cascade_failures": 0,
+            "candidates": 0, "rejected": 0, "undated": 0, "run_seconds": 0,
+        })
+        d["runs"] += 1
+        d["articles"] += _int_cell(row.get("Total Articles"))
+        d["high_risk"] += _int_cell(row.get("High Risk"))
+        d["appointments"] += _int_cell(row.get("Appointments"))
+        d["procurement"] += _int_cell(row.get("Procurement"))
+        d["cascade_failures"] += _int_cell(row.get("Cascade Failures"))
+        d["candidates"] += _int_cell(row.get("Candidates"))
+        d["rejected"] += _int_cell(row.get("Rejected"))
+        d["undated"] += _int_cell(row.get("Undated"))
+        d["run_seconds"] += _int_cell(row.get("Run Seconds"))
+    return [days[k] for k in sorted(days)][-keep_days:]
+
+
+def build_sources(article_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Per-publisher scorecard over the full Articles history for sources.json.
+
+    The dashboard's engine-mix chart answers "which extractor ran" over the
+    newest 60 articles only; this answers, over the whole corpus, which
+    feeds actually earn their fetches: volume, accept rate (Filtered rows
+    are the rejects), mean risk of what was published, engine mix and the
+    most recent sighting. Aggregation only -- no extra Sheets read.
+    """
+    sources: Dict[str, Dict[str, Any]] = {}
+    for row in article_rows or []:
+        name = str(row.get("Source", "")).strip() or "Unknown"
+        s = sources.setdefault(name, {
+            "source": name, "total": 0, "published": 0, "filtered": 0,
+            "risk_sum": 0, "risk_n": 0, "engines": {}, "last_seen": "",
+        })
+        s["total"] += 1
+        if str(row.get("Status", "")).strip().lower() == "filtered":
+            s["filtered"] += 1
+        else:
+            s["published"] += 1
+            s["risk_sum"] += _int_cell(row.get("Risk Score"))
+            s["risk_n"] += 1
+            engine = str(row.get("Engine", "")).strip() or "unknown"
+            s["engines"][engine] = s["engines"].get(engine, 0) + 1
+        stamp = parse_feed_date(row.get("Time"))
+        if stamp is not None:
+            iso = stamp.strftime("%Y-%m-%d")
+            if iso > s["last_seen"]:
+                s["last_seen"] = iso
+    out = []
+    for s in sorted(sources.values(), key=lambda x: (-x["total"], x["source"])):
+        out.append({
+            "source": s["source"],
+            "total": s["total"],
+            "published": s["published"],
+            "filtered": s["filtered"],
+            "accept_rate": round(100.0 * s["published"] / s["total"]) if s["total"] else 0,
+            "avg_risk": round(s["risk_sum"] / s["risk_n"], 1) if s["risk_n"] else None,
+            "engines": s["engines"],
+            "last_seen": s["last_seen"],
+        })
     return out
 
 
@@ -1234,6 +1368,19 @@ def export_static_json_database():
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
         json.dump(slim_report_rows(reports), f, default=str, indent=2)
+
+    # Derived analytics over rows already in memory (every tab is memoised
+    # per process): zero extra Sheets reads, zero LLM calls. Separate small
+    # files, fetched on demand by the panels that need them, rather than
+    # growing the big per-entity exports every cold boot already pays for.
+    stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(os.path.join(DATA_DIR, "history.json"), "w", encoding="utf-8") as f:
+        json.dump({"days": build_history(reports), "generated": stamp},
+                  f, default=str, indent=2)
+
+    with open(os.path.join(DATA_DIR, "sources.json"), "w", encoding="utf-8") as f:
+        json.dump({"sources": build_sources(articles), "generated": stamp},
+                  f, default=str, indent=2)
 
     # RSS feed over the same editions -- static, like everything else
     # GitHub Pages serves. Best-effort: syndication must not fail a run.
