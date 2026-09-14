@@ -1,6 +1,57 @@
 {
   "entities": [
     {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 16.7,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "total_mentions": 2,
@@ -20,18 +71,44 @@
       ]
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
+      "key": "diezani alison madueke",
+      "label": "Diezani Alison-Madueke",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-09-07",
           "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "avg_risk": 60.0,
+          "max_risk": 60
         },
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "african action congress",
+      "label": "African Action Congress",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
@@ -65,15 +142,28 @@
       ]
     },
     {
-      "key": "diezani alison madueke",
-      "label": "Diezani Alison-Madueke",
+      "key": "centre for the promotion of private enterprise",
+      "label": "Centre for the Promotion of Private Enterprise",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "debt management office",
+      "label": "Debt Management Office",
       "total_mentions": 1,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -117,6 +207,71 @@
       ]
     },
     {
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "national diaspora commission",
+      "label": "National Diaspora Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national union of pensioners",
+      "label": "National Union of Pensioners",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "airways",
+      "label": "Nigeria Airways",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "total_mentions": 1,
@@ -126,6 +281,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -156,6 +324,19 @@
       ]
     },
     {
+      "key": "southwark crown court",
+      "label": "Southwark Crown Court",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        }
+      ]
+    },
+    {
       "key": "uber",
       "label": "Uber",
       "total_mentions": 1,
@@ -169,5 +350,5 @@
       ]
     }
   ],
-  "generated": "2026-09-14 13:40:15"
+  "generated": "2026-09-14 18:26:18"
 }

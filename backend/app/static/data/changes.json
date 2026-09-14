@@ -1,23 +1,21 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "African Action Congress",
+    "Centre for the Promotion of Private Enterprise",
+    "Lagos Chamber of Commerce and Industry"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "U.K.\u2019s acquittal should not halt Diezani\u2019s case, HEDA tells FG - The Guardian Nigeria News",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSk0xSEdnYjcxN0w4S1IzdGdPNVpVbGdycElxdTY1NmVGMkhlbGZwNmRTeVUwVlRYazc4VW1ZMWlSZFhjUmNtYXdJamNBanJ5c3hqYVZTQ1RKLTUway1MUHB6dHQ0c202empkeWd1VVpIUmtwQmxTdVlhUGFWdkstR2NhOHdLalMwcGlURXhR?oc=5",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 3,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-14 13:40:11"
+  "generated": "2026-09-14 18:26:15"
 }

@@ -2,10 +2,10 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 21,
+      "contracts": 22,
       "undisclosed": 13,
       "totals": {
-        "NGN": 2000696000000.0,
+        "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
         "USD": 500000000.0
       }
@@ -440,6 +440,14 @@
       }
     },
     {
+      "name": "Nigeria Airways (Pensioners)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 18000000000.0
+      }
+    },
+    {
       "name": "Vocational training graduates",
       "contracts": 1,
       "undisclosed": 0,
@@ -694,5 +702,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-14 13:40:15"
+  "generated": "2026-09-14 18:26:18"
 }

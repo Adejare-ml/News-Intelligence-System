@@ -6321,9 +6321,9 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 30,
-    "Last Seen": "2026-09-09 17:00",
-    "Industry": "General",
+    "Mention Count": 32,
+    "Last Seen": "2026-09-14 18:21",
+    "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
   },
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 7,
-    "Last Seen": "2026-09-14 11:01",
+    "Mention Count": 9,
+    "Last Seen": "2026-09-14 18:22",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7425,9 +7425,9 @@
   },
   {
     "Company": "Nigeria Airways",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-12 16:02",
-    "Industry": "General",
+    "Mention Count": 4,
+    "Last Seen": "2026-09-14 18:20",
+    "Industry": "Aviation",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7886,5 +7886,29 @@
     "Industry": "Non-Profit/Legal Advocacy",
     "Risk Level": "Medium",
     "First Seen": "2026-09-14 11:01"
+  },
+  {
+    "Company": "African Action Congress",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-14 18:22",
+    "Industry": "Political Party",
+    "Risk Level": "Medium",
+    "First Seen": "2026-09-14 18:22"
+  },
+  {
+    "Company": "Centre for the Promotion of Private Enterprise",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-14 18:23",
+    "Industry": "Policy Research/Consultancy",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-14 18:23"
+  },
+  {
+    "Company": "Lagos Chamber of Commerce and Industry",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-14 18:23",
+    "Industry": "Trade Association",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-14 18:23"
   }
 ]
