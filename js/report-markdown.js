@@ -144,7 +144,44 @@ function parseMarkdown(md, options) {
     return out.join("\n");
 }
 
+    /**
+     * Full-text search over brief editions (Package 25). `editions` is
+     * [{ label, value, text }]; matching is case-insensitive, results are
+     * [{ label, value, count, snippet }] ranked by hit count. Queries
+     * under 3 characters match nothing -- single letters hit every
+     * edition and the result list becomes noise.
+     */
+    function searchEditions(editions, query) {
+        var q = String(query || "").trim().toLowerCase();
+        if (q.length < 3) return [];
+        var out = [];
+        (editions || []).forEach(function (edition) {
+            var text = String((edition || {}).text || "");
+            var low = text.toLowerCase();
+            var count = 0;
+            var first = -1;
+            var idx = low.indexOf(q);
+            while (idx !== -1) {
+                if (first === -1) first = idx;
+                count += 1;
+                idx = low.indexOf(q, idx + q.length);
+            }
+            if (!count) return;
+            var start = Math.max(0, first - 60);
+            var snippet = (start > 0 ? "…" : "")
+                + text.slice(start, first + q.length + 60).replace(/\s+/g, " ").trim() + "…";
+            out.push({ label: edition.label || "", value: edition.value || "",
+                       count: count, snippet: snippet });
+        });
+        out.sort(function (a, b) {
+            return b.count - a.count
+                || String(b.label).localeCompare(String(a.label));
+        });
+        return out;
+    }
+
     global.AuraReportMarkdown = {
+        searchEditions: searchEditions,
         parseMarkdown: parseMarkdown,
         renderInline: renderInline
     };

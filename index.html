@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.8">
+    <link rel="stylesheet" href="css/styles.css?v=5.9">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -200,7 +200,8 @@
         <section class="glass insight-panel" id="watchlist-panel" hidden>
             <div class="panel-header">
                 <h2>Watchlist</h2>
-                <span class="insight-generated">Saved only in this browser</span>
+                <span class="insight-generated">Saved only in this browser ·
+                    <a class="report-link" href="#/investigations">Investigations →</a></span>
             </div>
             <div class="watchlist-body" id="watchlist-body"></div>
         </section>
@@ -279,6 +280,18 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Full-text search across the archived editions: ~170 briefs
+                 sat behind a select that pages one at a time. Editions load
+                 lazily on the first search; results jump to the edition. -->
+            <div class="archive-search">
+                <input type="search" id="archive-search-input" maxlength="80"
+                       placeholder="Search every archived edition… (e.g. an entity name)"
+                       aria-label="Search archived brief editions">
+                <button id="archive-search-btn" class="btn btn-secondary btn-sm" type="button">Search archive</button>
+                <span id="archive-search-status" class="dossier-sub" aria-live="polite"></span>
+            </div>
+            <ul id="archive-search-results" class="archive-search-results"></ul>
 
             <div class="brief-layout">
                 <aside class="brief-toc" aria-label="Brief contents">
@@ -756,10 +769,12 @@
     <script src="js/globe.js?v=5.5"></script>
     <script src="js/psc-core.js?v=5.2"></script>
     <script src="js/entity-key.js?v=4.6"></script>
-    <script src="js/report-markdown.js?v=4.6"></script>
-    <script src="js/router.js?v=4.6"></script>
+    <script src="js/report-markdown.js?v=5.9"></script>
+    <script src="js/router.js?v=5.9"></script>
     <script src="js/search.js?v=5.6"></script>
-    <script src="js/dossier.js?v=5.6"></script>
+    <script src="js/dossier.js?v=5.9"></script>
+    <script src="js/compare.js?v=5.9"></script>
+    <script src="js/investigations.js?v=5.9"></script>
     <script src="js/datatable.js?v=4.6"></script>
     <script src="js/graph-path.js?v=5.2"></script>
     <script src="js/local-store.js?v=5.2"></script>
@@ -767,6 +782,6 @@
     <script src="js/boards.js?v=5.8"></script>
     <script src="js/insights.js?v=5.7"></script>
     <script src="js/app.js?v=5.8"></script>
-    <script src="js/psc-report.js?v=5.6"></script>
+    <script src="js/psc-report.js?v=5.9"></script>
 </body>
 </html>

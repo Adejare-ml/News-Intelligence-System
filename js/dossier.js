@@ -85,7 +85,8 @@
             }),
             procurement: contracts.map(function (r) {
                 return { agency: r.Agency || "", contractor: r.Contractor || "",
-                         amount: r.Amount || "", project: r.Project || "" };
+                         amount: r.Amount || "", project: r.Project || "",
+                         date: String(r.Date || "").slice(0, 10) };
             }),
             articles: articleMentions(data.articles, name)
         };
@@ -153,7 +154,8 @@
             header: null,
             procurement: contracts.map(function (r) {
                 return { agency: r.Agency || "", contractor: r.Contractor || "",
-                         amount: r.Amount || "", project: r.Project || "" };
+                         amount: r.Amount || "", project: r.Project || "",
+                         date: String(r.Date || "").slice(0, 10) };
             }),
             appearances: mentions.slice(0, 10).map(function (r) {
                 return { event: r.Event || "", position: "",
@@ -161,6 +163,117 @@
             }),
             articles: articleMentions(data.articles, name)
         };
+    }
+
+    /**
+     * Every dated fact in a dossier model -> continuous weekly buckets for
+     * the timeline strip: recorded events, article mentions, contracts.
+     * Honesty rule: only real dates bucket; nothing is interpolated, and a
+     * week with no records renders as a gap. PSC control rows carry no
+     * date in the model and contribute nothing.
+     */
+    function dossierTimeline(model, weekCap) {
+        weekCap = weekCap || 26;
+        if (!model) return { weeks: [] };
+        var dates = [];
+        (model.appearances || []).forEach(function (p) { if (p.date) dates.push(String(p.date).slice(0, 10)); });
+        (model.articles || []).forEach(function (a) { if (a.time) dates.push(String(a.time).slice(0, 10)); });
+        (model.procurement || []).forEach(function (p) { if (p.date) dates.push(String(p.date).slice(0, 10)); });
+
+        var buckets = {};
+        dates.forEach(function (d) {
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return;
+            var dt = new Date(d + "T00:00:00Z");
+            if (isNaN(dt.getTime())) return;
+            var monday = new Date(dt.getTime());
+            monday.setUTCDate(dt.getUTCDate() - ((dt.getUTCDay() + 6) % 7));
+            var key = monday.toISOString().slice(0, 10);
+            buckets[key] = (buckets[key] || 0) + 1;
+        });
+        var keys = Object.keys(buckets).sort();
+        if (!keys.length) return { weeks: [] };
+
+        var weeks = [];
+        var cursor = new Date(keys[0] + "T00:00:00Z");
+        var last = new Date(keys[keys.length - 1] + "T00:00:00Z");
+        while (cursor <= last && weeks.length < 520) {
+            var k = cursor.toISOString().slice(0, 10);
+            weeks.push({ week: k, count: buckets[k] || 0 });
+            cursor.setUTCDate(cursor.getUTCDate() + 7);
+        }
+        return { weeks: weeks.slice(-weekCap) };
+    }
+
+    /** Inline-SVG density strip -- no chart library, CSP-safe. */
+    function timelineHTML(timeline) {
+        var weeks = (timeline || {}).weeks || [];
+        if (weeks.length < 2) return ""; // one week is a date, not a timeline
+        var max = 0;
+        weeks.forEach(function (w) { if (w.count > max) max = w.count; });
+        var W = 8, GAP = 2, H = 34;
+        var width = weeks.length * (W + GAP);
+        var bars = weeks.map(function (w, i) {
+            var h = w.count && max ? Math.max(3, Math.round((H - 4) * w.count / max)) : 2;
+            return '<rect x="' + (i * (W + GAP)) + '" y="' + (H - h) + '" width="' + W
+                + '" height="' + h + '" rx="1" class="' + (w.count ? "tl-on" : "tl-off") + '">'
+                + "<title>" + esc(w.week) + ": " + w.count + " record" + (w.count === 1 ? "" : "s")
+                + "</title></rect>";
+        }).join("");
+        return '<section class="dossier-panel dossier-timeline"><h2>Activity timeline</h2>'
+            + '<svg viewBox="0 0 ' + width + " " + H + '" height="' + H
+            + '" role="img" aria-label="Weekly recorded activity from ' + esc(weeks[0].week)
+            + " to " + esc(weeks[weeks.length - 1].week) + '" preserveAspectRatio="xMinYMax meet">'
+            + bars + "</svg>"
+            + '<p class="dossier-sub">' + esc(weeks[0].week) + " → " + esc(weeks[weeks.length - 1].week)
+            + " · weekly density of recorded events, mentions and contracts</p></section>";
+    }
+
+    /**
+     * The dossier model as a Markdown document -- the unit analysts
+     * actually circulate. Mirrors the rendered panels; nothing appears
+     * here that the page would not show.
+     */
+    function dossierMarkdown(model, generatedOn) {
+        if (!model) return "";
+        var lines = ["# " + model.name, "",
+                     "_" + model.kind.toUpperCase() + " dossier · AURA · "
+                     + (generatedOn || new Date().toISOString().slice(0, 10)) + "_", ""];
+        function section(title, items, fmt) {
+            if (!items || !items.length) return;
+            lines.push("## " + title, "");
+            items.forEach(function (item) { lines.push("- " + fmt(item)); });
+            lines.push("");
+        }
+        if (model.header) {
+            var bits = [];
+            Object.keys(model.header).forEach(function (k) {
+                var v = model.header[k];
+                if (v !== null && v !== undefined && String(v).trim() !== "") bits.push(k + ": " + v);
+            });
+            if (bits.length) lines.push(bits.join(" · "), "");
+        }
+        section("Beneficial owners (PSC)", model.owners, function (o) {
+            return o.person + (o.percentage ? " — " + o.percentage : "")
+                + (o.vehicle && o.vehicle !== "Direct Holding" ? " (via " + o.vehicle + ")" : "")
+                + (o.verification ? " — " + o.verification : "");
+        });
+        section("Significant control", model.control, function (c) {
+            return c.company + (c.percentage ? " — " + c.percentage : "")
+                + (c.verification ? " — " + c.verification : "");
+        });
+        section("Recorded events", model.appearances, function (p) {
+            return [p.event, p.position, p.organization, p.date].filter(Boolean).join(" · ");
+        });
+        section("Procurement", model.procurement, function (p) {
+            return [p.project || "Contract", p.contractor, p.agency, p.amount, p.date]
+                .filter(Boolean).join(" · ");
+        });
+        section("Article mentions", model.articles, function (a) {
+            return (a.url ? "[" + a.title + "](" + a.url + ")" : a.title)
+                + (a.source ? " — " + a.source : "") + (a.time ? " · " + a.time : "");
+        });
+        lines.push("---", "_Evidence of reporting, not a finding. Generated from AURA's published data._");
+        return lines.join("\n");
     }
 
     function articleListHTML(articles) {
@@ -211,6 +324,8 @@
             if (bits.length) html += '<p class="dossier-meta">' + bits.join(" · ") + "</p>";
         }
         html += "</header>";
+
+        html += timelineHTML(dossierTimeline(model));
 
         if (model.owners && model.owners.length) {
             html += '<section class="dossier-panel"><h2>Beneficial owners (PSC)</h2><ul>'
@@ -338,6 +453,43 @@
             header.appendChild(note);
         }
 
+        /**
+         * Export (Markdown download) and Compare buttons next to Watch --
+         * the entity level is the unit analysts actually circulate, and
+         * export used to exist only dashboard-wide.
+         */
+        function wireDossierActions(model, slug) {
+            if (!model) return;
+            var header = outlet.querySelector(".dossier-header");
+            if (!header) return;
+
+            var exportBtn = doc.createElement("button");
+            exportBtn.type = "button";
+            exportBtn.className = "btn btn-secondary dossier-watch-btn";
+            exportBtn.textContent = "⬇ Export dossier";
+            exportBtn.addEventListener("click", function () {
+                try {
+                    var blob = new global.Blob([dossierMarkdown(model)],
+                        { type: "text/markdown;charset=utf-8" });
+                    var url = global.URL.createObjectURL(blob);
+                    var link = doc.createElement("a");
+                    link.href = url;
+                    link.download = "aura-dossier-" + slug + ".md";
+                    doc.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    global.setTimeout(function () { global.URL.revokeObjectURL(url); }, 5000);
+                } catch (e) { /* Blob/URL unavailable: nothing to break */ }
+            });
+            header.appendChild(exportBtn);
+
+            var compareLink = doc.createElement("a");
+            compareLink.className = "btn btn-secondary dossier-watch-btn";
+            compareLink.href = "#/compare?a=" + encodeURIComponent(model.kind + "/" + slug);
+            compareLink.textContent = "⇄ Compare";
+            header.appendChild(compareLink);
+        }
+
         // Generation counter: the first dossier visit fetches ~300KB of
         // datasets, and navigating away mid-load used to re-open the
         // dossier over the destination when the promise finally settled.
@@ -352,6 +504,7 @@
                     var model = build(params.slug, data);
                     show(renderDossierHTML(model));
                     wireWatch(model, params.slug);
+                    wireDossierActions(model, params.slug);
                 }).catch(function () {
                     if (generation !== navGeneration) return;
                     show('<div class="dossier"><p class="empty-note">'
@@ -367,12 +520,17 @@
 
         // Leaving a dossier for any section-scroll view (or a legacy #anchor)
         // restores the dashboard and invalidates any in-flight dossier load.
+        // Navigating to ANOTHER module's page view (compare, investigations)
+        // must also invalidate: a dossier fetch that settled after the user
+        // moved to #/compare used to overwrite the compare page.
         global.addEventListener("hashchange", function () {
             var hash = (global.location && global.location.hash) || "";
             var m = Router.matchRoute(hash);
             if (!Router.isRouteHash(hash) || (m && Router.SECTION_VIEWS[m.view] !== undefined)) {
                 navGeneration++;
                 leavePageMode();
+            } else if (m && !PAGE_VIEWS[m.view]) {
+                navGeneration++; // another module owns the outlet now
             }
         });
 
@@ -404,6 +562,9 @@
         agencyDossier: agencyDossier,
         articleMentions: articleMentions,
         renderDossierHTML: renderDossierHTML,
+        dossierTimeline: dossierTimeline,
+        timelineHTML: timelineHTML,
+        dossierMarkdown: dossierMarkdown,
         PAGE_VIEWS: PAGE_VIEWS
     };
 
