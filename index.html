@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.5">
+    <link rel="stylesheet" href="css/styles.css?v=5.6">
     <link rel="stylesheet" href="css/report.css?v=4.6">
     <!-- Charting & graph libraries: version-pinned with Subresource Integrity
          so a compromised or hijacked CDN release cannot execute here -->
@@ -565,15 +565,13 @@
                     </div>
                 </div>
                 <div style="display:flex; align-items:center; gap:8px;">
-                    <!-- View Mode Switcher -->
-                    <div class="view-mode-toggle" style="display:flex; background:rgba(0,0,0,0.3); padding:3px; border-radius:6px; border:1px solid rgba(255,255,255,0.1); margin-right:8px;">
-                        <button class="view-mode-btn active" id="psc-view-table-btn" style="padding:4px 10px; font-size:11px; border:none; background:var(--primary); color:#0f172a; border-radius:4px; font-weight:700; cursor:pointer;">
-                            <i data-lucide="table" style="width:12px; height:12px; display:inline;"></i> Table View
-                        </button>
-                        <button class="view-mode-btn" id="psc-view-map-btn" style="padding:4px 10px; font-size:11px; border:none; background:transparent; color:#d1d5db; border-radius:4px; font-weight:600; cursor:pointer;">
-                            <i data-lucide="share-2" style="width:12px; height:12px; display:inline;"></i> Network Map
-                        </button>
-                    </div>
+                    <!-- The in-modal SVG "Network Map" is retired: the real
+                         knowledge graph renders the same PSC nodes with
+                         physics, zoom, keyboard access and path tracing.
+                         This deep-links there instead. -->
+                    <button class="btn btn-secondary" id="psc-view-map-btn" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:6px;">
+                        <i data-lucide="share-2" style="width:14px; height:14px;"></i> Network graph
+                    </button>
 
                     <button class="btn btn-secondary" id="export-psc-csv-btn" style="padding:6px 12px; font-size:12px; display:flex; align-items:center; gap:6px;">
                         <i data-lucide="download" style="width:14px; height:14px;"></i> Export CSV
@@ -638,14 +636,9 @@
                     </div>
                 </div>
 
-                <!-- View 1: Main PSC Table Container -->
+                <!-- Main PSC Table Container -->
                 <div id="psc-table-container">
                     <div class="loading-placeholder"><p>Loading PSC Records...</p></div>
-                </div>
-
-                <!-- View 2: Interactive UBO Network Map Container -->
-                <div id="psc-network-graph-container" style="display:none; width:100%; height:480px; background:rgba(0,0,0,0.4); border:1px solid rgba(255,255,255,0.08); border-radius:10px; position:relative; overflow:hidden;">
-                    <!-- SVG Interactive Network Map rendered by JS -->
                 </div>
             </div>
         </div>
@@ -675,6 +668,7 @@
     <!-- Local modules, all served from 'self': no CSP surface and no SRI
          needed. Order matters — app.js and psc-report.js consume the globals
          the earlier files define. -->
+    <script src="js/data.js?v=5.6"></script>
     <script src="js/motion.js?v=5.0"></script>
     <script src="js/backdrop.js?v=4.6"></script>
     <script src="js/globe-data.js?v=4.6"></script>
@@ -683,13 +677,13 @@
     <script src="js/entity-key.js?v=4.6"></script>
     <script src="js/report-markdown.js?v=4.6"></script>
     <script src="js/router.js?v=4.6"></script>
-    <script src="js/search.js?v=5.1"></script>
-    <script src="js/dossier.js?v=5.5"></script>
+    <script src="js/search.js?v=5.6"></script>
+    <script src="js/dossier.js?v=5.6"></script>
     <script src="js/datatable.js?v=4.6"></script>
     <script src="js/graph-path.js?v=5.2"></script>
     <script src="js/local-store.js?v=5.2"></script>
-    <script src="js/insights.js?v=5.5"></script>
-    <script src="js/app.js?v=5.5"></script>
-    <script src="js/psc-report.js?v=5.5"></script>
+    <script src="js/insights.js?v=5.6"></script>
+    <script src="js/app.js?v=5.6"></script>
+    <script src="js/psc-report.js?v=5.6"></script>
 </body>
 </html>

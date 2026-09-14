@@ -21,10 +21,11 @@
             .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
     }
 
-    var GROUP_ORDER = ["company", "person", "psc", "article", "procurement"];
+    var GROUP_ORDER = ["company", "person", "agency", "psc", "article", "procurement"];
     var GROUP_LABELS = {
         company: "Companies",
         person: "People",
+        agency: "Agencies",
         psc: "PSC Disclosures",
         article: "Articles",
         procurement: "Procurement"
@@ -65,6 +66,22 @@
                 sub: [row.Position, row.Organization].filter(Boolean).join(" · "),
                 text: (name + " " + (row.Organization || "")).toLowerCase(),
                 nav: { hash: "#/person/" + slugOf(name) }
+            });
+        });
+
+        var seenAgencies = {};
+        (datasets.agencies || []).forEach(function (row) {
+            var name = String(row.Agency || "").trim();
+            if (!name) return;
+            var key = name.toLowerCase();
+            if (seenAgencies[key]) return;
+            seenAgencies[key] = true;
+            entries.push({
+                type: "agency",
+                label: name,
+                sub: row.Event ? String(row.Event) : "Government agency",
+                text: name.toLowerCase(),
+                nav: { hash: "#/agency/" + slugOf(name) }
             });
         });
 
@@ -190,7 +207,8 @@
                 var attrs = nav.href
                     ? 'data-href="' + esc(nav.href) + '"'
                     : 'data-hash="' + esc(nav.hash || "") + '"';
-                var row = '<li class="palette-item" role="option" data-index="' + flatIndex + '" ' + attrs + '>'
+                var row = '<li class="palette-item" role="option" id="palette-opt-' + flatIndex
+                    + '" aria-selected="false" data-index="' + flatIndex + '" ' + attrs + '>'
                     + '<span class="palette-label">' + esc(entry.label) + "</span>"
                     + (entry.sub ? '<span class="palette-sub">' + esc(entry.sub) + "</span>" : "")
                     + "</li>";
@@ -199,7 +217,8 @@
             }).join("");
             var overflow = group.total > group.items.length
                 ? '<li class="palette-more">+' + (group.total - group.items.length) + " more</li>" : "";
-            return '<li class="palette-group"><h3>' + esc(group.label) + "</h3><ul>"
+            return '<li class="palette-group" role="presentation"><h3>' + esc(group.label)
+                + '</h3><ul role="group" aria-label="' + esc(group.label) + '">'
                 + rows + overflow + "</ul></li>";
         }).join("");
     }
@@ -218,11 +237,6 @@
         var openBtn = doc.getElementById("search-open-btn");
         if (!palette || !input || !results) return;
 
-        var devHost = global.location.hostname === "localhost"
-            || global.location.hostname.indexOf("127.") === 0;
-        var DATA = (devHost && global.location.search.indexOf("static=1") === -1)
-            ? "/api/v1" : "data";
-
         var index = null;
         var indexPromise = null;
         var selected = 0;
@@ -230,18 +244,17 @@
 
         function loadIndex() {
             if (indexPromise) return indexPromise;
-            function grab(name) {
-                return global.fetch(DATA + "/" + name)
-                    .then(function (res) { return res.ok ? res.json() : []; })
-                    .catch(function () { return []; });
-            }
+            // Through AuraData: the dossier pages and the entity-count stat
+            // share the same in-flight promises instead of re-downloading.
+            var D = global.AuraData;
             indexPromise = Promise.all([
-                grab("latest.json"), grab("companies.json"), grab("people.json"),
-                grab("significant_control.json"), grab("procurement.json")
+                D.getList("latest.json"), D.getList("companies.json"),
+                D.getList("people.json"), D.getList("significant_control.json"),
+                D.getList("procurement.json"), D.getList("agencies.json")
             ]).then(function (r) {
                 index = buildIndex({
                     articles: r[0], companies: r[1], people: r[2],
-                    psc: r[3], procurement: r[4]
+                    psc: r[3], procurement: r[4], agencies: r[5]
                 });
                 return index;
             });
@@ -254,11 +267,16 @@
 
         function highlight(next) {
             var list = items();
-            if (!list.length) return;
+            if (!list.length) {
+                input.removeAttribute("aria-activedescendant");
+                return;
+            }
             selected = Math.max(0, Math.min(next, list.length - 1));
             for (var i = 0; i < list.length; i++) {
                 list[i].classList.toggle("is-selected", i === selected);
+                list[i].setAttribute("aria-selected", String(i === selected));
             }
+            input.setAttribute("aria-activedescendant", list[selected].id);
             if (typeof list[selected].scrollIntoView === "function") {
                 list[selected].scrollIntoView({ block: "nearest" });
             }
@@ -279,10 +297,16 @@
         function renderQuery() {
             var q = input.value.trim();
             if (!q) {
-                results.innerHTML = '<p class="palette-empty">Type to search companies, people, PSC records, articles…</p>';
+                results.innerHTML = '<p class="palette-empty">Type to search companies, people, agencies, PSC records, articles…</p>';
                 return;
             }
-            var groups = groupResults(searchIndex(index || [], q), 5);
+            if (index === null) {
+                // Telling someone their company "does not exist" while the
+                // index is still downloading is a false answer.
+                results.innerHTML = '<p class="palette-empty">Building the search index…</p>';
+                return;
+            }
+            var groups = groupResults(searchIndex(index, q), 5);
             results.innerHTML = renderResultsHTML(groups);
             selected = 0;
             highlight(0);
@@ -302,6 +326,12 @@
             if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
         }
 
+        // Combobox contract for the listbox the input drives.
+        input.setAttribute("role", "combobox");
+        input.setAttribute("aria-expanded", "true");
+        input.setAttribute("aria-controls", "search-palette-results");
+        input.setAttribute("aria-autocomplete", "list");
+
         doc.addEventListener("keydown", function (e) {
             if ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K")) {
                 e.preventDefault();
@@ -309,6 +339,14 @@
                 return;
             }
             if (palette.hidden) return;
+            if (e.key === "Tab") {
+                // aria-modal promises focus stays inside; the input is the
+                // only focusable control, so trap rather than let Tab walk
+                // into the inert dashboard behind the backdrop.
+                e.preventDefault();
+                input.focus();
+                return;
+            }
             if (e.key === "Escape") { e.preventDefault(); close(); }
             else if (e.key === "ArrowDown") { e.preventDefault(); highlight(selected + 1); }
             else if (e.key === "ArrowUp") { e.preventDefault(); highlight(selected - 1); }
