@@ -45,7 +45,9 @@ class TestSlimReportRows:
 
 
 class TestDedupeEntityRows:
-    def test_company_dedupe_is_case_insensitive_and_keeps_max_count(self):
+    def test_company_dedupe_is_case_insensitive_and_sums_counts(self):
+        # Counts SUM across duplicates since Package 17: the mentions were
+        # all of one entity, so 3 + 9 is the honest total, not max(3, 9).
         rows = [
             {"Company": "The Guardian Nigeria News", "Mention Count": 2},
             {"Company": "EFCC", "Mention Count": 3},
@@ -54,7 +56,7 @@ class TestDedupeEntityRows:
         out = dedupe_entity_rows(rows, ["Company"], count_key="Mention Count")
         assert len(out) == 2
         efcc = [r for r in out if r["Company"].lower() == "efcc"][0]
-        assert efcc["Mention Count"] == 9
+        assert efcc["Mention Count"] == 12
 
     def test_people_dedupe_keys_on_name_and_org_keeping_the_newest(self):
         rows = [
@@ -169,7 +171,8 @@ class TestExportEndToEnd:
         companies = json.loads((exported / "companies.json").read_text())
         efcc = [c for c in companies if "Economic and Financial" in c["Company"]]
         assert len(efcc) == 1
-        assert int(float(str(efcc[0]["Mention Count"]))) == 5
+        # Summed across the two case-variant rows (2 + 5) since Package 17.
+        assert int(float(str(efcc[0]["Mention Count"]))) == 7
 
         graph = json.loads((exported / "graph.json").read_text())
         ids = [n["id"] for n in graph["nodes"]]

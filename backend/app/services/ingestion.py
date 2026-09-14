@@ -171,6 +171,52 @@ def _normalise_title(value: Any) -> str:
     return " ".join(str(value or "").replace("\xa0", " ").split()).strip().lower()
 
 
+def http_get_with_retry(url: str, attempts: int = 3, base_delay: float = 2.0,
+                        **kwargs) -> "requests.Response":
+    """requests.get with jittered exponential backoff.
+
+    Every ingestion adapter had exactly one attempt, so a single 503 on a
+    Google News query dropped that whole topic (e.g. all beneficial-
+    ownership coverage) for the cycle. Retries on connection errors,
+    timeouts and retryable statuses (429/5xx), honouring Retry-After when
+    the server sends one. Never logs URLs or exception text -- a
+    ConnectionError message embeds the full query string, API key
+    included (see the credential-hygiene note below).
+    """
+    import time as _time
+
+    delay = base_delay
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        try:
+            resp = requests.get(url, **kwargs)
+            if resp.status_code in (429, 500, 502, 503, 504) and attempt < attempts:
+                retry_after = resp.headers.get("Retry-After", "")
+                try:
+                    wait = min(float(retry_after), 30.0) if retry_after else delay
+                except ValueError:
+                    wait = delay
+                logger.warning(
+                    "HTTP %s from adapter fetch (attempt %d/%d); retrying in %.1fs.",
+                    resp.status_code, attempt, attempts, wait,
+                )
+                _time.sleep(wait + random.uniform(0, 0.5))
+                delay *= 2
+                continue
+            return resp
+        except (requests.ConnectionError, requests.Timeout) as exc:
+            last_exc = exc
+            if attempt == attempts:
+                raise
+            logger.warning(
+                "Adapter fetch failed with %s (attempt %d/%d); retrying in %.1fs.",
+                type(exc).__name__, attempt, attempts, delay,
+            )
+            _time.sleep(delay + random.uniform(0, 0.5))
+            delay *= 2
+    raise last_exc  # pragma: no cover - loop always returns or raises
+
+
 def is_navigation_stub(title: Any, source: Any = None) -> bool:
     """True when a feed entry is site chrome rather than a story.
 
@@ -270,6 +316,15 @@ class NewsIngestionService:
         "public_sector": (
             'NNPC OR NIMASA OR NPA OR FAAN OR NITDA OR FIRS OR NERC OR BPE OR NDDC'
         ),
+        # Regulators a PSC product cannot afford to miss and none of the
+        # queries above reached: the procurement bureau, deposit insurer,
+        # competition and data-protection authorities, and the upstream/
+        # midstream petroleum and communications regulators, whose actions
+        # name corporate counterparties directly.
+        "sector_regulators": (
+            '"Bureau of Public Procurement" OR NDIC OR FCCPC OR NDPC '
+            'OR NUPRC OR NMDPRA OR "Nigerian Communications Commission"'
+        ),
     }
 
     @classmethod
@@ -294,7 +349,7 @@ class NewsIngestionService:
             try:
                 # Fetch with an explicit timeout: feedparser's own URL fetching
                 # has none, so one hanging feed would stall the whole pipeline
-                resp = requests.get(url, timeout=15, headers={"User-Agent": "AURA-NewsIntel/1.0"})
+                resp = http_get_with_retry(url, timeout=15, headers={"User-Agent": "AURA-NewsIntel/1.0"})
                 resp.raise_for_status()
                 feed = feedparser.parse(resp.content)
                 for entry in feed.entries:
@@ -333,7 +388,7 @@ class NewsIngestionService:
     def _fetch_from_news_api_with_key(key: str) -> List[Dict[str, Any]]:
         """Helper to call NewsAPI search for Nigerian business headlines."""
         # Querying business topics in Nigeria, matching our target categories
-        r = requests.get(
+        r = http_get_with_retry(
             "https://newsapi.org/v2/everything",
             params={
                 "q": "Nigeria (PSC OR NNPC OR CEO OR contract OR EFCC OR NIMASA OR parastatal)",
@@ -386,7 +441,7 @@ class NewsIngestionService:
             
         logger.info("Fetching from GNews...")
         try:
-            r = requests.get(
+            r = http_get_with_retry(
                 "https://gnews.io/api/v4/top-headlines",
                 params={"category": "business", "lang": "en", "country": "ng",
                         "apikey": settings.GNEWS_KEY},
@@ -420,7 +475,7 @@ class NewsIngestionService:
 
         logger.info("Fetching from The Guardian Open Platform...")
         try:
-            r = requests.get(
+            r = http_get_with_retry(
                 "https://content.guardianapis.com/search",
                 params={"q": "Nigeria", "api-key": settings.GUARDIAN_API_KEY,
                         "show-fields": "bodyText", "page-size": 25},
@@ -455,7 +510,7 @@ class NewsIngestionService:
 
         logger.info("Fetching from NewsData.io...")
         try:
-            r = requests.get(
+            r = http_get_with_retry(
                 "https://newsdata.io/api/1/latest",
                 params={"country": "ng"},
                 headers={"X-ACCESS-KEY": settings.NEWSDATA_KEY},
@@ -549,6 +604,10 @@ class NewsIngestionService:
     # worst case is budget + one adapter's own timeouts.
     COLLECT_BUDGET_SECONDS = 600
 
+    # Filter-funnel counts from the most recent collect_all(), for the
+    # Daily Reports row. A dict, refreshed per call; {} before any run.
+    last_collect_stats: Dict[str, int] = {}
+
     @classmethod
     def collect_all(cls) -> List[Dict[str, Any]]:
         """Collects news from all enabled adapters, strictly limited to Nigeria."""
@@ -584,7 +643,9 @@ class NewsIngestionService:
         # "Account Login", "NAICOM Home" -- and every one of them passes the
         # Nigerian check on its .ng URL, then costs an LLM call to conclude it
         # is not news.
+        raw_fetched = len(all_articles)
         stubs = [a for a in all_articles if is_navigation_stub(a.get("title"), a.get("source"))]
+        stub_count = len(stubs)
         if stubs:
             logger.info(f"Discarded {len(stubs)} navigation/homepage entries before analysis.")
         all_articles = [a for a in all_articles if not is_navigation_stub(a.get("title"), a.get("source"))]
@@ -689,6 +750,19 @@ class NewsIngestionService:
                     "what is real rather than padding. Check the source adapters and API keys "
                     "if this persists.", len(distinct_articles)
                 )
+
+        # The filter funnel, kept for the durable Daily Reports row. These
+        # numbers previously existed only in log lines that rotate away
+        # with the Actions run, so "1 article today" was indistinguishable
+        # from "the filter over-rejected 40" in any persistent record.
+        cls.last_collect_stats = {
+            "fetched": raw_fetched,
+            "stubs": stub_count,
+            "nigerian": len(nigerian_filtered),
+            "undated": undated,
+            "fresh": len(time_filtered),
+            "distinct": len(distinct_articles),
+        }
         return distinct_articles
 
     @staticmethod
