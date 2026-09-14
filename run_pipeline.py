@@ -4,6 +4,7 @@ import json
 import random
 import logging
 import argparse
+import re
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
 
@@ -122,7 +123,10 @@ def capture_eval_input(title: str, article_text: str, url: str, source: str) -> 
         with open(path, "a", encoding="utf-8") as fh:
             fh.write(json.dumps(record, ensure_ascii=False) + "\n")
     except Exception as exc:  # pragma: no cover - defensive
-        logger.debug("Could not capture eval input for '%s': %s", title, exc)
+        # warning, not debug: this was the only .debug call in the pipeline
+        # and the INFO-level config swallowed it, so a broken eval capture
+        # was completely silent while the corpus quietly stopped growing.
+        logger.warning("Could not capture eval input for '%s': %s", title, exc)
 
 
 def share_band(percentage: Any) -> str:
@@ -237,7 +241,10 @@ def run_pipeline(seed: bool = False):
             "Procurement": 0,
             "Cascade Failures": 0,
             "Run Seconds": round((datetime.now() - run_started).total_seconds()),
-            "Generated": f"{generated_message} ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})"
+            "Generated": f"{generated_message} ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})",
+            "Candidates": NewsIngestionService.last_collect_stats.get("fetched", ""),
+            "Rejected": 0,
+            "Undated": NewsIngestionService.last_collect_stats.get("undated", ""),
         })
         # A quiet cycle still refreshes the exports: weather, trends, tech
         # news, the feed and changes.json do not depend on new articles,
@@ -253,6 +260,7 @@ def run_pipeline(seed: bool = False):
     
     cascade_failures = 0
     consecutive_failures = 0
+    rejected_count = 0
 
     for item in candidates:
         url = item.get("url")
@@ -298,6 +306,7 @@ def run_pipeline(seed: bool = False):
             })
             if filtered_saved:
                 existing_urls.add(url)
+            rejected_count += 1
             # Sheets write pacing only -- no LLM call happened.
             import time
             time.sleep(1.0)
@@ -360,6 +369,7 @@ def run_pipeline(seed: bool = False):
             # so a failed write is retried instead of silently skipped.
             if filtered_saved:
                 existing_urls.add(url)
+            rejected_count += 1
             import time
             time.sleep(3.5)
             continue
@@ -509,6 +519,7 @@ def run_pipeline(seed: bool = False):
             run_records, prior_today,
             cascade_failures=cascade_failures,
             run_seconds=round((datetime.now() - run_started).total_seconds()),
+            rejected=rejected_count,
         )
 
     # 4. Dump Telemetry Database JSON dumps for Frontend Web Pages
@@ -717,7 +728,8 @@ def compute_cycle_changes(prev: Dict[str, Any], curr: Dict[str, Any]) -> Dict[st
 
 
 def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None,
-                         cascade_failures: int = 0, run_seconds: int = None):
+                         cascade_failures: int = 0, run_seconds: int = None,
+                         rejected: int = None):
     """Compiles statistics and writes the daily intelligence summary markdown.
 
     `records` is this run's fully-analysed output; `prior_today` is the
@@ -884,6 +896,13 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         "Procurement": procurement_count,
         "Cascade Failures": cascade_failures,
         "Run Seconds": "" if run_seconds is None else run_seconds,
+        # The filter funnel: fetched candidates and undated drops come from
+        # collect_all's counters; rejected is this run's Filtered writes
+        # (pre-LLM guard + post-LLM relevance). Blank, not 0, when unknown
+        # (e.g. seed runs that never fetched).
+        "Candidates": NewsIngestionService.last_collect_stats.get("fetched", ""),
+        "Rejected": "" if rejected is None else rejected,
+        "Undated": NewsIngestionService.last_collect_stats.get("undated", ""),
         "Generated": now.strftime("%Y-%m-%d %H:%M:%S"),
         # The exact archive filename, so a reader can resolve an edition to
         # its document instead of guessing from the date.
@@ -916,22 +935,57 @@ def slim_report_rows(reports: List[Dict[str, Any]], keep: int = 120) -> List[Dic
     return out
 
 
+# Corporate suffixes and geography that make one entity read as several:
+# "NNPC" / "NNPC Limited" / "NNPC Ltd" were three Companies rows splitting
+# one mention count. Word-boundary, order-insensitive, applied repeatedly
+# so "Unilever Nigeria PLC" folds all the way down to "unilever".
+_ENTITY_NOISE_RE = re.compile(
+    r"\b(plc|ltd|limited|inc|llc|gte|group|holdings?|nigeria|nigerian)\b\.?",
+    re.IGNORECASE,
+)
+
+
+def entity_key(name: Any) -> str:
+    """Normalised identity key for an exported entity name.
+
+    Lowercases, strips corporate suffixes/geography and punctuation, and
+    collapses whitespace -- but never to nothing: a name made entirely of
+    noise words (e.g. the company actually called "Nigeria Ltd") keeps its
+    plain lowercased form rather than colliding with every other one.
+    """
+    raw = str(name or "").strip().lower()
+    stripped = _ENTITY_NOISE_RE.sub(" ", raw)
+    stripped = re.sub(r"[^\w\s]", " ", stripped)
+    stripped = re.sub(r"\s+", " ", stripped).strip()
+    return stripped or re.sub(r"\s+", " ", raw)
+
+
 def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
                        count_key: str = None) -> List[Dict[str, Any]]:
-    """Case-insensitive dedupe of exported entity rows.
+    """Suffix-normalised dedupe of exported entity rows.
 
     The Companies sheet holds e.g. eight copies of one outlet and People
     734 rows for 627 distinct (name, organization) pairs -- legacy rows
-    written before add_company's find-or-update existed. First occurrence
-    keeps its position; when `count_key` is given the highest count wins,
-    otherwise the latest duplicate (the freshest row) does.
+    written before add_company's find-or-update existed -- plus 25
+    measured suffix-variant groups ("NNPC" / "NNPC Limited" / "NNPC Ltd").
+    First occurrence keeps its position. When `count_key` is given the
+    highest-count row wins, its count becomes the SUM across the group
+    (the mentions were all of one entity), and the longest surface form
+    becomes the label; otherwise the latest duplicate (freshest row) wins.
     """
     best: Dict[Any, Dict[str, Any]] = {}
+    counts: Dict[Any, int] = {}
+    labels: Dict[Any, str] = {}
     order: List[Any] = []
     for row in rows or []:
-        key = tuple(str(row.get(f, "")).strip().lower() for f in key_fields)
+        key = tuple(entity_key(row.get(f)) for f in key_fields)
         if not any(key):
             continue
+        if count_key:
+            counts[key] = counts.get(key, 0) + _int_cell(row.get(count_key))
+            surface = str(row.get(key_fields[0], "")).strip()
+            if len(surface) > len(labels.get(key, "")):
+                labels[key] = surface
         if key not in best:
             best[key] = row
             order.append(key)
@@ -940,7 +994,16 @@ def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
                 best[key] = row
         else:
             best[key] = row
-    return [best[k] for k in order]
+    out = []
+    for k in order:
+        row = best[k]
+        if count_key:
+            row = dict(row)
+            row[count_key] = counts[k]
+            if labels.get(k):
+                row[key_fields[0]] = labels[k]
+        out.append(row)
+    return out
 
 
 def top_rows(rows: List[Dict[str, Any]], n: int, count_key: str = None,
@@ -1071,9 +1134,13 @@ def export_static_json_database():
     ]
 
     # Legacy duplicate rows collapse at export (the sheet keeps its audit
-    # trail): one row per company, one per (person, organization).
+    # trail): one row per company, one per (person, organization). Agencies
+    # too: add_agency is a bare append (one row per article mention), so
+    # the export was shipping 874 rows for 313 distinct names -- 184KB to
+    # the browser and duplicate nodes in the graph and dossiers.
     companies = dedupe_entity_rows(companies, ["Company"], count_key="Mention Count")
     people = dedupe_entity_rows(people, ["Name", "Organization"])
+    agencies = dedupe_entity_rows(agencies, ["Agency"])
 
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or

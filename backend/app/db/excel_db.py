@@ -35,8 +35,15 @@ SHEETS_CONFIG = {
     # both were computed and then dropped on the floor; the dashboard's
     # health panel needs them as a time series. plan_header_migration brings
     # existing sheets up to this schema by column name.
+    # "Candidates" / "Rejected" / "Undated" persist the filter funnel: how
+    # many entries the fetchers returned, how many the relevance guards
+    # rejected this run, and how many were dropped for unreadable dates.
+    # These existed only in log lines that rotate away with the Actions
+    # run, so "1 article today" was indistinguishable from "the filter
+    # over-rejected 40" in any durable record.
     "Daily Reports": ["Date", "Total Articles", "High Risk", "Appointments", "Procurement",
-                      "Cascade Failures", "Run Seconds", "Generated", "Archive File", "Content"]
+                      "Cascade Failures", "Run Seconds", "Generated", "Archive File",
+                      "Candidates", "Rejected", "Undated", "Content"]
 }
 
 def plan_header_migration(existing: List[str], target: List[str]) -> Dict[str, Any]:
