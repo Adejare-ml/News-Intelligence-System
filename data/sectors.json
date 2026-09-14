@@ -1,0 +1,40 @@
+{
+  "sectors": [
+    {
+      "industry": "General",
+      "companies": 983,
+      "mentions": 1726,
+      "risk": {
+        "Low": 863,
+        "Critical": 59,
+        "Medium": 37,
+        "High": 24
+      }
+    },
+    {
+      "industry": "Transport/Ride-hailing",
+      "companies": 1,
+      "mentions": 24,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Oil & Gas",
+      "companies": 1,
+      "mentions": 7,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    }
+  ],
+  "generated": "2026-09-14 11:03:36"
+}

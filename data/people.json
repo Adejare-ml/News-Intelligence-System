@@ -1652,11 +1652,11 @@
     "Date": "2026-07-26"
   },
   {
-    "Name": "Bode George",
+    "Name": "Bode-George",
     "Position": "Officer",
     "Organization": "APM",
     "Event": "other",
-    "Date": "2026-07-26"
+    "Date": "2026-07-27"
   },
   {
     "Name": "Adeleke Alex-Adedipe",
@@ -1692,13 +1692,6 @@
     "Organization": "N/A",
     "Event": "other",
     "Date": "2026-07-26"
-  },
-  {
-    "Name": "Bode-George",
-    "Position": "Officer",
-    "Organization": "APM",
-    "Event": "other",
-    "Date": "2026-07-27"
   },
   {
     "Name": "Max Amuchie",
@@ -3274,5 +3267,19 @@
     "Organization": "American University of Nigeria",
     "Event": "other",
     "Date": "2026-09-12"
+  },
+  {
+    "Name": "Bola Ahmed Tinubu",
+    "Position": "President",
+    "Organization": "Government of Nigeria",
+    "Event": "other",
+    "Date": "2026-09-14"
+  },
+  {
+    "Name": "Atiku Abubakar",
+    "Position": "Former Vice-President",
+    "Organization": "null",
+    "Event": "other",
+    "Date": "2026-09-14"
   }
 ]
