@@ -1,6 +1,25 @@
 {
   "entities": [
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 2,
@@ -46,15 +65,15 @@
       ]
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
+      "key": "diezani alison madueke",
+      "label": "Diezani Alison-Madueke",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-09-07",
+          "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -111,6 +130,19 @@
       ]
     },
     {
+      "key": "revenue mobilization allocation and fiscal commission",
+      "label": "Revenue Mobilization Allocation and Fiscal Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "total_mentions": 1,
@@ -137,5 +169,5 @@
       ]
     }
   ],
-  "generated": "2026-09-14 11:03:36"
+  "generated": "2026-09-14 13:40:15"
 }

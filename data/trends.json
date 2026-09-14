@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 116,
-  "previous_articles": 155,
+  "recent_articles": 117,
+  "previous_articles": 156,
   "rising": [
     {
       "term": "ncaa",
@@ -10,16 +10,34 @@
       "change": 7
     },
     {
+      "term": "newspapers",
+      "recent": 14,
+      "previous": 8,
+      "change": 6
+    },
+    {
+      "term": "punch",
+      "recent": 14,
+      "previous": 8,
+      "change": 6
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 14,
+      "previous": 8,
+      "change": 6
+    },
+    {
       "term": "cbn",
-      "recent": 6,
+      "recent": 7,
       "previous": 1,
-      "change": 5
+      "change": 6
     },
     {
       "term": "banks",
-      "recent": 5,
+      "recent": 6,
       "previous": 0,
-      "change": 5
+      "change": 6
     },
     {
       "term": "naicom",
@@ -32,24 +50,6 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "newspapers",
-      "recent": 12,
-      "previous": 8,
-      "change": 4
-    },
-    {
-      "term": "punch",
-      "recent": 12,
-      "previous": 8,
-      "change": 4
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 12,
-      "previous": 8,
-      "change": 4
     },
     {
       "term": "dangote",
@@ -129,17 +129,17 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 76,
-      "previous": 82
+      "recent": 75,
+      "previous": 83
     },
     {
       "category": "Company",
-      "recent": 27,
+      "recent": 28,
       "previous": 46
     },
     {
       "category": "Legal",
-      "recent": 13,
+      "recent": 14,
       "previous": 25
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-14 11:03:33"
+  "generated": "2026-09-14 13:40:13"
 }
