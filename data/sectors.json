@@ -2,13 +2,22 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 983,
-      "mentions": 1726,
+      "companies": 981,
+      "mentions": 1693,
       "risk": {
-        "Low": 863,
+        "Low": 862,
         "Critical": 59,
-        "Medium": 37,
+        "Medium": 36,
         "High": 24
+      }
+    },
+    {
+      "industry": "Oil & Gas",
+      "companies": 2,
+      "mentions": 41,
+      "risk": {
+        "Medium": 1,
+        "Low": 1
       }
     },
     {
@@ -20,9 +29,9 @@
       }
     },
     {
-      "industry": "Oil & Gas",
+      "industry": "Aviation",
       "companies": 1,
-      "mentions": 7,
+      "mentions": 4,
       "risk": {
         "Low": 1
       }
@@ -34,7 +43,31 @@
       "risk": {
         "Medium": 1
       }
+    },
+    {
+      "industry": "Policy Research/Consultancy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Trade Association",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
     }
   ],
-  "generated": "2026-09-14 13:40:15"
+  "generated": "2026-09-14 18:26:18"
 }

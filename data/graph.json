@@ -19,16 +19,16 @@
       "risk": "Critical"
     },
     {
-      "id": "05087274f45e",
-      "label": "Senate",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
       "id": "f38bd75574f6",
       "label": "Nigerian National Petroleum Company Limited",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "05087274f45e",
+      "label": "Senate",
+      "type": "company",
+      "risk": "Critical"
     },
     {
       "id": "d9b2bde3f533",
@@ -103,6 +103,12 @@
       "risk": "Critical"
     },
     {
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "dce5a31d3181",
       "label": "MTN Nigeria",
       "type": "company",
@@ -115,10 +121,10 @@
       "risk": "Low"
     },
     {
-      "id": "b90d23db92e2",
-      "label": "INEC",
-      "type": "company",
-      "risk": "Critical"
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "4c7e8211e98f",
@@ -129,6 +135,12 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,8 +157,20 @@
       "risk": "Low"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8e7b2b6f264f",
       "label": "Revenue Mobilization Allocation and Fiscal Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "974789639094",
+      "label": "Debt Management Office",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,20 +181,32 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6c302b827a55",
       "label": "Government of the United States",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "1559d76a525c",
+      "label": "National Union of Pensioners",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
+      "id": "751757c460a1",
+      "label": "National Diaspora Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "87659f2acaeb",
+      "label": "Southwark Crown Court",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,51 +235,15 @@
       "risk": "Low"
     },
     {
-      "id": "096e6c3fc7eb",
-      "label": "Centre for Public Expenditure",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ef6dbf96f94e",
-      "label": "Ondo State Government",
-      "type": "agency",
+      "id": "5a094abf1abe",
+      "label": "Bola Ahmed Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7f002a16ab95",
-      "label": "Cross River State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1a2ac1ef306d",
-      "label": "Nigeria Civil Aviation Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a094abf1abe",
-      "label": "Bola Ahmed Tinubu",
-      "type": "person",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -262,6 +262,12 @@
       "id": "649b4afa9b99",
       "label": "Diezani Alison-Madueke",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fcc3d69557a3",
+      "label": "Federal Ministry of Petroleum Resources",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -487,12 +493,6 @@
       "risk": "Low"
     },
     {
-      "id": "e5887b80b73e",
-      "label": "Kashim Shettima",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "6617740c0c1a",
       "label": "Femi Otedola",
       "type": "psc",
@@ -593,6 +593,12 @@
       "label": "Dangote Cement Plc",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "f4ee2fd09975",
+      "label": "Nigeria Airways (Pensioners)",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "7dc08a8ebfaa",
@@ -723,6 +729,12 @@
       "label": "Appointed as Former Minister of Petroleum Resources"
     },
     {
+      "id": "e78407597fbf",
+      "from": "649b4afa9b99",
+      "to": "fcc3d69557a3",
+      "label": "Appointed as Former Minister of Petroleum Resources"
+    },
+    {
       "id": "2b423480bb40",
       "from": "6b8bead22e32",
       "to": "9c7e0688e34e",
@@ -849,12 +861,6 @@
       "label": "Appointed as President"
     },
     {
-      "id": "fba701054bd9",
-      "from": "e5887b80b73e",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as Vice President"
-    },
-    {
       "id": "0cd3b636ebc8",
       "from": "6617740c0c1a",
       "to": "c0f6baef22e7",
@@ -913,6 +919,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "ec91b82a33b9",
+      "from": "f4ee2fd09975",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
     },
     {
       "id": "af6773ef4da1",

@@ -1,6 +1,15 @@
 {
   "movers": [
     {
+      "key": "diezani alison madueke",
+      "label": "Diezani Alison-Madueke",
+      "recent_avg": 67.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 30.0,
@@ -10,15 +19,33 @@
       "previous_mentions": 0
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 30.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "recent_avg": 25.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 4,
+      "previous_mentions": 0
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 16.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-14 13:40:15"
+  "generated": "2026-09-14 18:26:18"
 }
