@@ -33,6 +33,7 @@ const FILES = [
     path.join(JS_DIR, "datatable.js"),
     path.join(JS_DIR, "globe.js"),
     path.join(JS_DIR, "insights.js"),
+    path.join(JS_DIR, "data.js"),
     path.join(JS_DIR, "search.js"),
     path.join(JS_DIR, "dossier.js"),
     path.join(JS_DIR, "graph-path.js"),

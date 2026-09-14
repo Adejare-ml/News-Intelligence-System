@@ -26,6 +26,11 @@
             { Agency: "Bureau of Public Procurement", Contractor: "Access Holdings Plc",
               Amount: "N2bn", Project: "IT overhaul" }
         ],
+        agencies: [
+            { Agency: "EFCC", Event: "Investigation", Article: "EFCC probes X", Date: "2026-09-01" },
+            { Agency: "efcc", Event: "Directive", Article: "Dup casing", Date: "2026-09-02" },
+            { Agency: "NDIC", Event: "Advisory", Article: "NDIC advises Y", Date: "2026-09-03" }
+        ],
         articles: [
             { Title: "Dangote Cement Plc announces expansion", URL: "https://p.test/a",
               Source: "Punch", Summary: "expansion in Kano", Time: "2026-09-01T10:00:00" },
@@ -68,6 +73,24 @@
             var entries = S.buildIndex(DATA);
             var article = entries.filter(function (e) { return e.type === "article"; })[0];
             T.eq(article.nav.href, "https://p.test/a");
+        });
+
+        T.it("agencies are indexed, deduped, and routed to agency dossiers", function () {
+            var entries = S.buildIndex(DATA);
+            var agencies = entries.filter(function (e) { return e.type === "agency"; });
+            T.eq(agencies.length, 2, "case-variant duplicate rows collapse");
+            T.eq(agencies[0].nav.hash, "#/agency/efcc");
+            T.ok(R.matchRoute(agencies[0].nav.hash), "hash resolves against the router");
+            var html = S.renderResultsHTML(S.groupResults(S.searchIndex(entries, "efcc")));
+            T.contains(html, "Agencies");
+        });
+
+        T.it("options carry ids and aria-selected for the combobox contract", function () {
+            var entries = S.buildIndex(DATA);
+            var html = S.renderResultsHTML(S.groupResults(S.searchIndex(entries, "dangote")));
+            T.contains(html, 'id="palette-opt-0"');
+            T.contains(html, 'aria-selected="false"');
+            T.contains(html, 'role="group"');
         });
 
         T.it("groups cap per type and report the overflow", function () {
@@ -125,6 +148,14 @@
             var m = D.agencyDossier("bureau-of-public-procurement", DATA);
             T.eq(m.procurement.length, 1);
             T.eq(D.agencyDossier("nowhere", DATA), null);
+        });
+
+        T.it("an agency with mentions but no contracts still gets a page", function () {
+            var m = D.agencyDossier("efcc", DATA);
+            T.ok(m, "874 of the exported agencies have no contract rows");
+            T.eq(m.procurement.length, 0);
+            T.eq(m.appearances.length, 2);
+            T.eq(m.name, "EFCC");
         });
 
         T.it("rendered dossiers escape data and link mentions safely", function () {
