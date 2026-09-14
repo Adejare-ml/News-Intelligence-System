@@ -1,4 +1,6 @@
-FROM python:3.12-slim
+# 3.11, matching the CI workflows and the README badge — the image ran a
+# version the tests never exercised.
+FROM python:3.11-slim
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \

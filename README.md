@@ -173,9 +173,9 @@ docker-compose up -d    # API at http://localhost:8000, docs at /docs
 
 Know before you build on it:
 
-- **There is no login endpoint.** The API is JWT-gated but `/auth/login` was never implemented, so tokens cannot be obtained through the app. Adding one is the first task if you want this path.
+- **Obtaining a token:** `POST /api/v1/auth/login` with OAuth2 form fields `username` (the email) and `password` returns a JWT (rate-limited to 5/minute). Seed the admin user first by setting `ADMIN_SEED_EMAIL` / `ADMIN_SEED_PASSWORD` — there are no default credentials.
 - `JWT_SECRET` must be set, at least 32 characters, and not a known placeholder — the app fails fast rather than run with a forgeable auth boundary.
-- No admin user is seeded unless `ADMIN_SEED_PASSWORD` is set; there are no default credentials.
+- **Split-brain storage, by design of history:** the API's read endpoints serve the Sheets/Excel database (the same one the pipeline writes), while the Celery tasks in this stack write `Article`/`Event`/`Alert` rows into Postgres that no endpoint currently reads. Treat Postgres as scaffolding for a future migration, not as the API's data source.
 - Postgres and Redis bind to `127.0.0.1` only.
 
 ## 🔐 Security

@@ -12,7 +12,6 @@ beautifulsoup4==4.15.0
 spacy==3.7.5
 sentence-transformers==3.0.1
 pyjwt==2.13.0
-passlib[bcrypt]==1.7.4
 requests==2.33.0
 numpy==1.26.4
 bcrypt==5.0.0
@@ -23,6 +22,9 @@ openpyxl==3.1.5
 google-generativeai==0.5.4
 openai>=1.55.3,<2
 slowapi==0.1.10
+# OAuth2PasswordRequestForm parses form bodies through this; without it the
+# login endpoint 500s at request time. (Surfaced by tests/test_api_routes.py.)
+python-multipart==0.0.9
 # Typed extraction program and the GEPA optimiser. Pinned: dspy.GEPA is marked
 # experimental upstream and may change without warning, and this dependency
 # decides the prompt behind the PSC register.
