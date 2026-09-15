@@ -1058,5 +1058,25 @@
     "Date": "2026-09-14",
     "Amount Value": 18000000000.0,
     "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Nigerian Army",
+    "Contractor": "Unnamed boat contractors",
+    "Amount": "None",
+    "Project": "Boat procurement/supply",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-15",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Nigerian Airspace Management Agency",
+    "Contractor": "None",
+    "Amount": "N7.58 Billion",
+    "Project": "Instrument Landing Systems (ILS) for Lagos and Abuja airports",
+    "Source": "Vanguard",
+    "Date": "2026-09-15",
+    "Amount Value": 7580000000.0,
+    "Amount Currency": "NGN"
   }
 ]

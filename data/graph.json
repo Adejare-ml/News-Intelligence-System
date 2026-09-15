@@ -133,8 +133,20 @@
       "risk": "Low"
     },
     {
+      "id": "c06f2d9a3df8",
+      "label": "National Insurance Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0ba0cb08c8cb",
+      "label": "Nigerian Army",
       "type": "agency",
       "risk": "Low"
     },
@@ -147,6 +159,36 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e5c0e655148a",
+      "label": "Nigerian Civil Aviation Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3933ac79ce03",
+      "label": "Corporate Affairs Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ea931f6d9cdb",
+      "label": "Federal Mortgage Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cf3ed84d35f7",
+      "label": "Code of Conduct Bureau",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bcf9d1e3fc55",
+      "label": "Nigerian Airspace Management Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,45 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "6c302b827a55",
-      "label": "Government of the United States",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "1559d76a525c",
-      "label": "National Union of Pensioners",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "751757c460a1",
-      "label": "National Diaspora Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "87659f2acaeb",
-      "label": "Southwark Crown Court",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3baa3fea1145",
-      "label": "King's College",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1f51cde9fd6f",
-      "label": "Rivers State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6d8852f19447",
-      "label": "Federal Bureau of Investigation",
-      "type": "agency",
+      "id": "e5982307ed9d",
+      "label": "Abdullahi Bello",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -427,6 +439,12 @@
       "risk": "Low"
     },
     {
+      "id": "1f51cde9fd6f",
+      "label": "Rivers State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "4f0653978f1b",
       "label": "Prof. Mojisola Adeyeye",
       "type": "person",
@@ -484,18 +502,6 @@
       "id": "ebe2d81e3981",
       "label": "Not Specified",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e8c816b2230d",
-      "label": "Adeyemi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -601,6 +607,18 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "b1066afb9628",
+      "label": "Unnamed boat contractors",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f4ee2fd09975",
       "label": "Nigeria Airways (Pensioners)",
       "type": "company",
@@ -631,12 +649,6 @@
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
       "type": "agency",
@@ -649,6 +661,12 @@
       "risk": "Low"
     },
     {
+      "id": "6c302b827a55",
+      "label": "Government of the United States",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "47cf1dfd4541",
       "label": "Agricultural Research Council of Nigeria",
       "type": "agency",
@@ -657,12 +675,6 @@
     {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ba0cb08c8cb",
-      "label": "Nigerian Army",
       "type": "agency",
       "risk": "Low"
     },
@@ -695,21 +707,21 @@
       "label": "Adamawa State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "cc4a4d0f3e25",
-      "label": "Anambra State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "49e0a64e1639",
-      "label": "Sliding Towers",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "16d2bb152d27",
+      "from": "e5982307ed9d",
+      "to": "cf3ed84d35f7",
+      "label": "Appointed as Chairman"
+    },
     {
       "id": "de3ab25e4012",
       "from": "5a094abf1abe",
@@ -849,18 +861,6 @@
       "label": "Appointed as Political Appointee"
     },
     {
-      "id": "f87f45eb723f",
-      "from": "e8c816b2230d",
-      "to": "2a77f31e67e8",
-      "label": "Appointed as Not Specified"
-    },
-    {
-      "id": "facd1948e2a4",
-      "from": "1a17418ea885",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as President"
-    },
-    {
       "id": "0cd3b636ebc8",
       "from": "6617740c0c1a",
       "to": "c0f6baef22e7",
@@ -919,6 +919,18 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "ad2aaf1f69f3",
+      "from": "334c4a4c42fd",
+      "to": "bcf9d1e3fc55",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "04f247447b01",
+      "from": "b1066afb9628",
+      "to": "0ba0cb08c8cb",
+      "label": "Contract Awardee"
     },
     {
       "id": "ec91b82a33b9",
@@ -1014,12 +1026,6 @@
       "id": "5bc886ee5387",
       "from": "334c4a4c42fd",
       "to": "4b9df9043c11",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "2c131ba6e8b8",
-      "from": "49e0a64e1639",
-      "to": "cc4a4d0f3e25",
       "label": "Contract Awardee"
     }
   ]

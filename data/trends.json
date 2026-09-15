@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 128,
-  "previous_articles": 151,
+  "recent_articles": 137,
+  "previous_articles": 145,
   "rising": [
     {
       "term": "newspapers",
@@ -22,6 +22,24 @@
       "change": 14
     },
     {
+      "term": "premium",
+      "recent": 32,
+      "previous": 24,
+      "change": 8
+    },
+    {
+      "term": "premium times",
+      "recent": 32,
+      "previous": 24,
+      "change": 8
+    },
+    {
+      "term": "times",
+      "recent": 32,
+      "previous": 24,
+      "change": 8
+    },
+    {
       "term": "cbn",
       "recent": 7,
       "previous": 0,
@@ -34,48 +52,36 @@
       "change": 7
     },
     {
+      "term": "ncaa",
+      "recent": 7,
+      "previous": 1,
+      "change": 6
+    },
+    {
       "term": "banks",
       "recent": 6,
       "previous": 0,
       "change": 6
-    },
-    {
-      "term": "dangote",
-      "recent": 11,
-      "previous": 6,
-      "change": 5
-    },
-    {
-      "term": "ncaa",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "naicom",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "premium",
-      "recent": 31,
-      "previous": 27,
-      "change": 4
     }
   ],
   "falling": [
     {
       "term": "guardian",
-      "recent": 24,
-      "previous": 48,
-      "change": -24
+      "recent": 27,
+      "previous": 46,
+      "change": -19
     },
     {
       "term": "uber",
       "recent": 2,
       "previous": 14,
       "change": -12
+    },
+    {
+      "term": "com",
+      "recent": 6,
+      "previous": 14,
+      "change": -8
     },
     {
       "term": "vanguard",
@@ -96,24 +102,6 @@
       "change": -7
     },
     {
-      "term": "report",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "com",
-      "recent": 7,
-      "previous": 13,
-      "change": -6
-    },
-    {
-      "term": "efcc",
-      "recent": 7,
-      "previous": 12,
-      "change": -5
-    },
-    {
       "term": "financial",
       "recent": 1,
       "previous": 6,
@@ -124,23 +112,35 @@
       "recent": 0,
       "previous": 5,
       "change": -5
+    },
+    {
+      "term": "lagos",
+      "recent": 3,
+      "previous": 7,
+      "change": -4
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 3,
+      "previous": 7,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 82,
-      "previous": 83
+      "recent": 88,
+      "previous": 80
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 46
+      "recent": 31,
+      "previous": 45
     },
     {
       "category": "Legal",
-      "recent": 16,
-      "previous": 20
+      "recent": 18,
+      "previous": 18
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-15 12:33:51"
+  "generated": "2026-09-15 17:33:06"
 }

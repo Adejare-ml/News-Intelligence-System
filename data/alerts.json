@@ -1,6 +1,20 @@
 {
   "alerts": [
     {
+      "date": "2026-09-15",
+      "title": "Petition against NAICOM to EFCC borders on criminal allegations, not civil matters says NICON, Nigeria Re - Cross River State News",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaGVRYUwwQnk3dzhrbmh6XzdKLWY3dml4anRpTk1VcWpVRGdYNmVPU1BRazNXQkdoTGtfeUVITW9OeFdZa2xaSkhxOHcxekNQVUVKSjJrblEwa19fV2daOEtFdnBlaW00RFExOFlwWExxNkFiNDZIZjFySXdXcGpwNDRHUS1IUmZLY0VzbzY2UkRrb19nLTJORnh2SFRJTjR2UnNIRVhsZW4xbDg2NWd3LUlpRjVSeVVpWnlRMUhFUktUc2t0RnZUVnNjQmE3c3FsRjhXUVo1bw?oc=5",
+      "source": "Cross River State News",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": [
+        "National Insurance Commission",
+        "Economic and Financial Crimes Commission",
+        "NICON Insurance",
+        "Nigeria Reinsurance Corporation"
+      ]
+    },
+    {
       "date": "2026-09-14",
       "title": "\u2018Ghost\u2019 beneficiaries\u00a0beneficiaries of N33/7bn cash transfer",
       "url": "https://www.vanguardngr.com/2026/09/ghost-beneficiaries-beneficiaries-of-n33-7bn-cash-transfer/",
@@ -36,5 +50,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-15 12:33:53"
+  "generated": "2026-09-15 17:33:08"
 }
