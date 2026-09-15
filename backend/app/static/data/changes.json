@@ -1,23 +1,17 @@
 {
-  "new_companies": [
-    "NICON Insurance",
-    "Nigeria Reinsurance Corporation",
-    "Presco"
-  ],
-  "new_people": [
-    "Abdullahi Bello"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 1,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-15 17:33:05"
+  "generated": "2026-09-15 20:08:57"
 }
