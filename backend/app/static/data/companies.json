@@ -3098,7 +3098,7 @@
   {
     "Company": "Nigerian Exchange Group",
     "Mention Count": 4,
-    "Last Seen": "2026-09-15 01:19",
+    "Last Seen": "2026-09-15 1:19",
     "Industry": "Financial Services",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -6513,7 +6513,7 @@
   },
   {
     "Company": "Lebara Nigeria",
-    "Mention Count": 1,
+    "Mention Count": 2,
     "Last Seen": "2026-08-03 15:35",
     "Industry": "General",
     "Risk Level": "Low",
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 10,
-    "Last Seen": "2026-09-15 01:19",
+    "Mention Count": 11,
+    "Last Seen": "2026-09-15 12:30",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7425,8 +7425,8 @@
   },
   {
     "Company": "Nigeria Airways",
-    "Mention Count": 4,
-    "Last Seen": "2026-09-14 18:20",
+    "Mention Count": 5,
+    "Last Seen": "2026-09-15 12:28",
     "Industry": "Aviation",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7918,5 +7918,13 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-09-15 01:20"
+  },
+  {
+    "Company": "J.P. Morgan",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-15 12:29",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-15 12:29"
   }
 ]

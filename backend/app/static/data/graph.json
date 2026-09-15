@@ -79,14 +79,14 @@
       "risk": "Critical"
     },
     {
-      "id": "81dcb233ede4",
-      "label": "Tinubu",
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "9ed3f0f5bb2d",
-      "label": "Dangote Refinery",
+      "id": "81dcb233ede4",
+      "label": "Tinubu",
       "type": "company",
       "risk": "Low"
     },
@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -139,8 +145,8 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
       "type": "agency",
       "risk": "Low"
     },
@@ -153,12 +159,6 @@
     {
       "id": "9aef00190386",
       "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
       "type": "agency",
       "risk": "Low"
     },
