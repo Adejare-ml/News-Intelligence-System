@@ -85,6 +85,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "2a77f31e67e8",
       "label": "PFIPC",
       "type": "company",
@@ -103,12 +109,6 @@
       "risk": "Critical"
     },
     {
-      "id": "9ed3f0f5bb2d",
-      "label": "Dangote Refinery",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "dce5a31d3181",
       "label": "MTN Nigeria",
       "type": "company",
@@ -121,6 +121,24 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -129,12 +147,6 @@
     {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -225,12 +237,6 @@
     {
       "id": "6d8852f19447",
       "label": "Federal Bureau of Investigation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6fb19a1a4558",
-      "label": "United States Agency for International Development",
       "type": "agency",
       "risk": "Low"
     },
@@ -622,12 +628,6 @@
       "id": "f5e16be1446b",
       "label": "Premium Steel",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
       "risk": "Low"
     },
     {

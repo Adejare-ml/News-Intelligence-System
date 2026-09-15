@@ -3,7 +3,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 4,
+      "total_mentions": 5,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,8 +13,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 26.7,
+          "mentions": 4,
+          "avg_risk": 27.5,
           "max_risk": 30
         }
       ]
@@ -41,12 +41,12 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 3,
+      "total_mentions": 4,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 16.7,
+          "mentions": 4,
+          "avg_risk": 16.2,
           "max_risk": 20
         }
       ]
@@ -86,6 +86,25 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -168,6 +187,19 @@
       ]
     },
     {
+      "key": "dangote petroleum refinery and petrochemicals",
+      "label": "Dangote Petroleum Refinery and Petrochemicals",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "debt management office",
       "label": "Debt Management Office",
       "total_mentions": 1,
@@ -177,19 +209,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
         }
       ]
     },
@@ -246,6 +265,19 @@
       ]
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national diaspora commission",
       "label": "National Diaspora Commission",
       "total_mentions": 1,
@@ -274,6 +306,19 @@
     {
       "key": "airways",
       "label": "Nigeria Airways",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Group",
       "total_mentions": 1,
       "points": [
         {
@@ -363,5 +408,5 @@
       ]
     }
   ],
-  "generated": "2026-09-14 20:51:36"
+  "generated": "2026-09-15 01:22:15"
 }
