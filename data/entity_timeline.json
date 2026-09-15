@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 7,
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,8 +13,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 6,
-          "avg_risk": 32.5,
+          "mentions": 8,
+          "avg_risk": 30.6,
           "max_risk": 65
         }
       ]
@@ -34,6 +34,19 @@
           "week": "2026-09-14",
           "mentions": 5,
           "avg_risk": 26.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 22.5,
           "max_risk": 30
         }
       ]
@@ -67,19 +80,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
         }
       ]
     },
@@ -278,6 +278,19 @@
       ]
     },
     {
+      "key": "federal ministry of power",
+      "label": "Federal Ministry of Power",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "federal mortgage bank of",
       "label": "Federal Mortgage Bank of Nigeria",
       "total_mentions": 1,
@@ -382,6 +395,19 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 1,
@@ -443,6 +469,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "data protection commission",
+      "label": "Nigeria Data Protection Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -603,5 +642,5 @@
       ]
     }
   ],
-  "generated": "2026-09-15 17:33:08"
+  "generated": "2026-09-15 20:08:59"
 }

@@ -169,6 +169,24 @@
       "risk": "Low"
     },
     {
+      "id": "4d8cb1e72a03",
+      "label": "Nigeria Data Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9b5f79697bc2",
+      "label": "Federal Ministry of Power",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "3933ac79ce03",
       "label": "Corporate Affairs Commission",
       "type": "agency",
@@ -219,24 +237,6 @@
     {
       "id": "8e7b2b6f264f",
       "label": "Revenue Mobilization Allocation and Fiscal Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "974789639094",
-      "label": "Debt Management Office",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -451,12 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "c82cfc524aa9",
       "label": "Haruna",
       "type": "person",
@@ -649,12 +643,6 @@
       "risk": "Low"
     },
     {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "6c0b3f1b5072",
       "label": "Chinese entities (unspecified)",
       "type": "company",
@@ -669,6 +657,12 @@
     {
       "id": "47cf1dfd4541",
       "label": "Agricultural Research Council of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
     },
