@@ -1,6 +1,25 @@
 {
   "entities": [
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 6,
+          "avg_risk": 32.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 6,
@@ -16,25 +35,6 @@
           "mentions": 5,
           "avg_risk": 26.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 26.0,
-          "max_risk": 40
         }
       ]
     },
@@ -67,6 +67,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
         }
       ]
     },
@@ -135,6 +148,19 @@
       ]
     },
     {
+      "key": "abdullahi bello",
+      "label": "Abdullahi Bello",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 1,
@@ -187,12 +213,38 @@
       ]
     },
     {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "centre for the promotion of private enterprise",
       "label": "Centre for the Promotion of Private Enterprise",
       "total_mentions": 1,
       "points": [
         {
           "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "code of conduct bureau",
+      "label": "Code of Conduct Bureau",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -222,6 +274,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "federal mortgage bank of",
+      "label": "Federal Mortgage Bank of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -304,6 +369,19 @@
       ]
     },
     {
+      "key": "nicon insurance",
+      "label": "NICON Insurance",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 1,
@@ -330,6 +408,19 @@
       ]
     },
     {
+      "key": "national insurance commission",
+      "label": "National Insurance Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "national union of pensioners",
       "label": "National Union of Pensioners",
       "total_mentions": 1,
@@ -352,6 +443,58 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "reinsurance corporation",
+      "label": "Nigeria Reinsurance Corporation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "airspace management agency",
+      "label": "Nigerian Airspace Management Agency",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "army",
+      "label": "Nigerian Army",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "civil aviation authority",
+      "label": "Nigerian Civil Aviation Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -391,6 +534,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "presco",
+      "label": "Presco",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -447,5 +603,5 @@
       ]
     }
   ],
-  "generated": "2026-09-15 12:33:53"
+  "generated": "2026-09-15 17:33:08"
 }

@@ -45,6 +45,22 @@
       }
     },
     {
+      "industry": "Insurance",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "High": 2
+      }
+    },
+    {
+      "industry": "Agriculture",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Banking",
       "companies": 1,
       "mentions": 1,
@@ -85,5 +101,5 @@
       }
     }
   ],
-  "generated": "2026-09-15 12:33:53"
+  "generated": "2026-09-15 17:33:08"
 }

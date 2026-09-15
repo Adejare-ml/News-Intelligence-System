@@ -83,6 +83,14 @@
       }
     },
     {
+      "name": "Nigerian Airspace Management Agency",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 7580000000.0
+      }
+    },
+    {
       "name": "Ekiti State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -174,6 +182,12 @@
     },
     {
       "name": "National Office for Technology Acquisition and Promotion (NOTAP)",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Army",
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
@@ -341,12 +355,6 @@
       "totals": {}
     },
     {
-      "name": "Nigerian Army",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "Nigerian Civil Aviation Authority",
       "contracts": 1,
       "undisclosed": 1,
@@ -424,10 +432,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 58,
+      "contracts": 59,
       "undisclosed": 35,
       "totals": {
-        "NGN": 4490162260000.0,
+        "NGN": 4497742260000.0,
         "USD": 20500000000.0
       }
     },
@@ -700,7 +708,13 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
+    },
+    {
+      "name": "Unnamed boat contractors",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
     }
   ],
-  "generated": "2026-09-15 12:33:53"
+  "generated": "2026-09-15 17:33:08"
 }
