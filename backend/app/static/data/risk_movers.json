@@ -10,6 +10,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 50.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 30.0,
@@ -39,22 +48,22 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "recent_avg": 25.0,
+      "recent_avg": 26.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 4,
+      "recent_mentions": 5,
       "previous_mentions": 0
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 16.7,
+      "recent_avg": 16.2,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 3,
+      "recent_mentions": 4,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-14 20:51:36"
+  "generated": "2026-09-15 01:22:15"
 }

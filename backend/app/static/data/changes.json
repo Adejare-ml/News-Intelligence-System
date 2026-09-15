@@ -1,17 +1,19 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Dangote Petroleum Refinery and Petrochemicals"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 1,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-14 20:51:32"
+  "generated": "2026-09-15 01:22:12"
 }

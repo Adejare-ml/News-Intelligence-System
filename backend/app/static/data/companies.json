@@ -3097,9 +3097,9 @@
   },
   {
     "Company": "Nigerian Exchange Group",
-    "Mention Count": 3,
-    "Last Seen": "2026-08-07 23:43",
-    "Industry": "General",
+    "Mention Count": 4,
+    "Last Seen": "2026-09-15 01:19",
+    "Industry": "Financial Services",
     "Risk Level": "Medium",
     "First Seen": ""
   },
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 9,
-    "Last Seen": "2026-09-14 18:22",
+    "Mention Count": 10,
+    "Last Seen": "2026-09-15 01:19",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7910,5 +7910,13 @@
     "Industry": "Trade Association",
     "Risk Level": "Low",
     "First Seen": "2026-09-14 18:23"
+  },
+  {
+    "Company": "Dangote Petroleum Refinery and Petrochemicals",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-15 01:20",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-15 01:20"
   }
 ]

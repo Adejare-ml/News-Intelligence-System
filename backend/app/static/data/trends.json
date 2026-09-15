@@ -1,24 +1,24 @@
 {
   "window_days": 7,
   "recent_articles": 132,
-  "previous_articles": 153,
+  "previous_articles": 154,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 20,
-      "previous": 8,
+      "recent": 21,
+      "previous": 9,
       "change": 12
     },
     {
       "term": "punch",
-      "recent": 20,
-      "previous": 8,
+      "recent": 21,
+      "previous": 9,
       "change": 12
     },
     {
       "term": "punch newspapers",
-      "recent": 20,
-      "previous": 8,
+      "recent": 21,
+      "previous": 9,
       "change": 12
     },
     {
@@ -41,8 +41,8 @@
     },
     {
       "term": "dangote",
-      "recent": 10,
-      "previous": 4,
+      "recent": 11,
+      "previous": 5,
       "change": 6
     },
     {
@@ -52,16 +52,16 @@
       "change": 6
     },
     {
+      "term": "ipo",
+      "recent": 7,
+      "previous": 2,
+      "change": 5
+    },
+    {
       "term": "naicom",
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "premium",
-      "recent": 31,
-      "previous": 27,
-      "change": 4
     }
   ],
   "falling": [
@@ -73,21 +73,21 @@
     },
     {
       "term": "efcc",
-      "recent": 7,
-      "previous": 19,
-      "change": -12
-    },
-    {
-      "term": "com",
-      "recent": 7,
+      "recent": 6,
       "previous": 17,
-      "change": -10
+      "change": -11
     },
     {
       "term": "vanguard",
       "recent": 1,
       "previous": 11,
       "change": -10
+    },
+    {
+      "term": "com",
+      "recent": 7,
+      "previous": 15,
+      "change": -8
     },
     {
       "term": "uber",
@@ -108,22 +108,22 @@
       "change": -7
     },
     {
-      "term": "theeagleonline",
-      "recent": 5,
-      "previous": 11,
-      "change": -6
-    },
-    {
-      "term": "theeagleonline com",
-      "recent": 5,
-      "previous": 11,
-      "change": -6
-    },
-    {
       "term": "financial",
       "recent": 1,
       "previous": 7,
       "change": -6
+    },
+    {
+      "term": "sylva",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
+    },
+    {
+      "term": "exit",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
     }
   ],
   "categories": [
@@ -134,12 +134,12 @@
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 46
+      "recent": 31,
+      "previous": 47
     },
     {
       "category": "Legal",
-      "recent": 17,
+      "recent": 16,
       "previous": 25
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-14 20:51:33"
+  "generated": "2026-09-15 01:22:13"
 }
