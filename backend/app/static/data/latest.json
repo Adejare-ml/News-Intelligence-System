@@ -1,5 +1,22 @@
 [
   {
+    "ID": 6261,
+    "Time": "Wed, 16 Sep 2026 19:13:00 GMT",
+    "Title": "Customs CG hails BAT Nigeria\u2019s compliance, seeks better industry ties - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNS0tQcHZFdlVTRlVCVDZ1SVVxWnVmWDJnUUI0U28xNmlUY3dHQkF1NTZhZ3ZXTDJyeVFmQVZVLWcyTHgwVjRDeHZUbXRjNE5RdElEVHZYZGpOZEZMaVZDa1BfaDNmVkp2Z3NraVVxckFXVnk2U2VYQ3hNWVNUYzU4RExTckc0QTBxUFMyN2tkd2M5dw?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Comptroller General of Customs commended BAT Nigeria for its regulatory compliance and expressed a desire for stronger ties between the agency and the industry.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 30,
+    "Entities": "Nigeria Customs Service|BAT Nigeria",
+    "Filter Reason": ""
+  },
+  {
     "ID": 6258,
     "Time": "Tue, 15 Sep 2026 01:42:53 GMT",
     "Title": "Nigeria, India move to revive $15bn bilateral trade - Punch Newspapers",
@@ -1000,23 +1017,6 @@
     "Risk Level": "Low",
     "Importance": 60,
     "Entities": "Dangote Refinery|Nigerian Exchange Group",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 6087,
-    "Time": "Mon, 14 Sep 2026 23:19:54 GMT",
-    "Title": "NNPC targets 600tcf reserves, raises gas production - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAwb2Z5d2lkV0lJaUpWLW1rSmNyU2JMb2t1MUoyX2NrOGhnem9POC1Qb2ZKSzZram9WVnQ1VG9pTGlUT3BYdXVOc2RqYmlPb3dsZGV4SEh3blJjR3pGWTFFSjJoRkJWekxzRDdjUHRPN1B6ekwyelR4T05ROA?oc=5",
-    "Category": "Government",
-    "Risk Score": 15,
-    "Summary": "The Nigerian National Petroleum Company (NNPC) has announced targets to reach 600tcf of gas reserves and is working to increase overall gas production.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Nigerian National Petroleum Company",
     "Filter Reason": ""
   }
 ]

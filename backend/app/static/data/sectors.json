@@ -134,6 +134,14 @@
       }
     },
     {
+      "industry": "Tobacco",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Trade Association",
       "companies": 1,
       "mentions": 1,
@@ -142,5 +150,5 @@
       }
     }
   ],
-  "generated": "2026-09-16 17:33:28"
+  "generated": "2026-09-16 19:55:45"
 }

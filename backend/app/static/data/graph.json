@@ -151,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "b6e216a813ff",
-      "label": "Government of Oyo State",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0804399f614e",
       "label": "Siminalayi Fubara",
       "type": "person",
@@ -250,6 +250,12 @@
       "id": "0eb499263319",
       "label": "Makinde",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b6e216a813ff",
+      "label": "Government of Oyo State",
+      "type": "company",
       "risk": "Low"
     },
     {
