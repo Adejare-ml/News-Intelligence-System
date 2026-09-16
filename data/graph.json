@@ -121,26 +121,56 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1f51cde9fd6f",
+      "label": "Rivers State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0a83cefc9c61",
+      "label": "Lagos State Consumer Protection Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a947270da0f2",
+      "label": "Ministry of Power",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ac07aa33e674",
+      "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c06f2d9a3df8",
+      "label": "National Insurance Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,33 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8e7b2b6f264f",
-      "label": "Revenue Mobilization Allocation and Fiscal Commission",
-      "type": "agency",
+      "id": "0804399f614e",
+      "label": "Siminalayi Fubara",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -429,18 +435,6 @@
     {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0804399f614e",
-      "label": "Siminalayi Fubara",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1f51cde9fd6f",
-      "label": "Rivers State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -667,12 +661,6 @@
       "risk": "Low"
     },
     {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "83e5dcc0d346",
       "label": "Buratai\u2019s company",
       "type": "company",
@@ -695,15 +683,15 @@
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "4b9df9043c11",
-      "label": "Adamawa State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "eca146ca61aa",
+      "from": "0804399f614e",
+      "to": "1f51cde9fd6f",
+      "label": "Appointed as Governor"
+    },
     {
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
@@ -819,12 +807,6 @@
       "label": "Appointed as Managing Director"
     },
     {
-      "id": "eca146ca61aa",
-      "from": "0804399f614e",
-      "to": "1f51cde9fd6f",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "3366c4447630",
       "from": "4f0653978f1b",
       "to": "e4c5ee83197c",
@@ -915,6 +897,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "ad2aaf1f69f3",
       "from": "334c4a4c42fd",
       "to": "bcf9d1e3fc55",
@@ -975,12 +963,6 @@
       "label": "Contract Awardee"
     },
     {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "f8428f09d5a7",
       "from": "334c4a4c42fd",
       "to": "5a98eb23f6f5",
@@ -1014,12 +996,6 @@
       "id": "78ac084f597e",
       "from": "334c4a4c42fd",
       "to": "653fd7557fc1",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "5bc886ee5387",
-      "from": "334c4a4c42fd",
-      "to": "4b9df9043c11",
       "label": "Contract Awardee"
     }
   ]
