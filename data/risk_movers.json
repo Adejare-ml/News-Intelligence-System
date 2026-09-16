@@ -145,6 +145,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 15.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "presco",
       "label": "Presco",
       "recent_avg": 5.0,
@@ -155,5 +164,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-16 17:33:28"
+  "generated": "2026-09-16 19:55:45"
 }

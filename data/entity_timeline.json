@@ -174,6 +174,19 @@
       ]
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 2,
@@ -313,6 +326,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "bat",
+      "label": "BAT Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -798,19 +824,6 @@
       ]
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "data protection commission",
       "label": "Nigeria Data Protection Commission",
       "total_mentions": 1,
@@ -980,5 +993,5 @@
       ]
     }
   ],
-  "generated": "2026-09-16 17:33:28"
+  "generated": "2026-09-16 19:55:45"
 }

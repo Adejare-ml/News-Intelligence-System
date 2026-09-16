@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 156,
-  "previous_articles": 142,
+  "recent_articles": 157,
+  "previous_articles": 137,
   "rising": [
     {
       "term": "newspapers",
+      "recent": 29,
+      "previous": 13,
+      "change": 16
+    },
+    {
+      "term": "punch",
       "recent": 28,
       "previous": 13,
       "change": 15
     },
     {
-      "term": "punch",
-      "recent": 27,
-      "previous": 13,
-      "change": 14
-    },
-    {
       "term": "punch newspapers",
-      "recent": 27,
+      "recent": 28,
       "previous": 13,
-      "change": 14
+      "change": 15
     },
     {
       "term": "dangote",
@@ -66,22 +66,16 @@
   ],
   "falling": [
     {
-      "term": "guardian",
-      "recent": 34,
-      "previous": 42,
+      "term": "exit",
+      "recent": 2,
+      "previous": 10,
       "change": -8
     },
     {
       "term": "uber",
       "recent": 3,
-      "previous": 11,
-      "change": -8
-    },
-    {
-      "term": "exit",
-      "recent": 2,
       "previous": 10,
-      "change": -8
+      "change": -7
     },
     {
       "term": "faan",
@@ -102,15 +96,15 @@
       "change": -6
     },
     {
-      "term": "first",
-      "recent": 1,
-      "previous": 6,
+      "term": "guardian",
+      "recent": 34,
+      "previous": 39,
       "change": -5
     },
     {
-      "term": "board",
-      "recent": 0,
-      "previous": 5,
+      "term": "first",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     },
     {
@@ -124,18 +118,24 @@
       "recent": 1,
       "previous": 5,
       "change": -4
+    },
+    {
+      "term": "imports",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 103,
-      "previous": 86
+      "recent": 104,
+      "previous": 84
     },
     {
       "category": "Company",
       "recent": 35,
-      "previous": 37
+      "previous": 34
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-16 17:33:26"
+  "generated": "2026-09-16 19:55:43"
 }
