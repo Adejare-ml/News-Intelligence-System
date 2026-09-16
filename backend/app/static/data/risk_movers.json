@@ -12,10 +12,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 35.0,
+      "recent_avg": 34.2,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 4,
+      "recent_mentions": 6,
       "previous_mentions": 0
     },
     {
@@ -64,12 +64,30 @@
       "previous_mentions": 0
     },
     {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "recent_avg": 22.5,
+      "key": "civil aviation authority",
+      "label": "Nigerian Civil Aviation Authority",
+      "recent_avg": 25.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 4,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "recent_avg": 20.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 5,
+      "previous_mentions": 0
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 17.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -80,8 +98,17 @@
       "delta": null,
       "recent_mentions": 5,
       "previous_mentions": 0
+    },
+    {
+      "key": "presco",
+      "label": "Presco",
+      "recent_avg": 5.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-16 01:15:34"
+  "generated": "2026-09-16 12:32:07"
 }

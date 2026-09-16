@@ -38,10 +38,27 @@
     },
     {
       "industry": "Financial Services",
-      "companies": 1,
-      "mentions": 4,
+      "companies": 2,
+      "mentions": 5,
       "risk": {
-        "Medium": 1
+        "Medium": 1,
+        "High": 1
+      }
+    },
+    {
+      "industry": "Agriculture",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Banking",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -53,15 +70,15 @@
       }
     },
     {
-      "industry": "Agriculture",
+      "industry": "Fintech/Banking",
       "companies": 1,
       "mentions": 1,
       "risk": {
-        "Low": 1
+        "Medium": 1
       }
     },
     {
-      "industry": "Banking",
+      "industry": "Labor Union",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -93,6 +110,22 @@
       }
     },
     {
+      "industry": "Shipping",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology/Digital Services",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Trade Association",
       "companies": 1,
       "mentions": 1,
@@ -101,5 +134,5 @@
       }
     }
   ],
-  "generated": "2026-09-16 01:15:34"
+  "generated": "2026-09-16 12:32:07"
 }

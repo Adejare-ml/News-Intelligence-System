@@ -2,51 +2,51 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 1925,
-      "published": 1241,
-      "filtered": 684,
+      "total": 1932,
+      "published": 1242,
+      "filtered": 690,
       "accept_rate": 64,
       "avg_risk": 29.3,
       "engines": {
         "unknown": 963,
-        "ollama": 270,
+        "ollama": 271,
         "nvidia": 8
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1086,
-      "published": 589,
+      "total": 1087,
+      "published": 590,
       "filtered": 497,
       "accept_rate": 54,
       "avg_risk": 30.7,
       "engines": {
         "unknown": 440,
-        "ollama": 145,
+        "ollama": 146,
         "nvidia": 4
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "Punch Newspapers",
-      "total": 533,
-      "published": 274,
-      "filtered": 259,
-      "accept_rate": 51,
-      "avg_risk": 27.0,
+      "total": 552,
+      "published": 277,
+      "filtered": 275,
+      "accept_rate": 50,
+      "avg_risk": 27.1,
       "engines": {
         "unknown": 188,
-        "ollama": 82,
+        "ollama": 85,
         "nvidia": 4
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 403,
+      "total": 406,
       "published": 141,
-      "filtered": 262,
+      "filtered": 265,
       "accept_rate": 35,
       "avg_risk": 27.4,
       "engines": {
@@ -54,19 +54,19 @@
         "ollama": 56,
         "nvidia": 4
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "The Punch",
-      "total": 387,
-      "published": 227,
+      "total": 388,
+      "published": 228,
       "filtered": 160,
       "accept_rate": 59,
-      "avg_risk": 34.1,
+      "avg_risk": 34.0,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 117
+        "ollama": 118
       },
       "last_seen": "2026-09-15"
     },
@@ -86,14 +86,14 @@
     },
     {
       "source": "Vanguard",
-      "total": 239,
-      "published": 148,
+      "total": 240,
+      "published": 149,
       "filtered": 91,
       "accept_rate": 62,
-      "avg_risk": 36.9,
+      "avg_risk": 36.8,
       "engines": {
         "unknown": 79,
-        "ollama": 65,
+        "ollama": 66,
         "nvidia": 4
       },
       "last_seen": "2026-09-15"
@@ -113,9 +113,9 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 138,
+      "total": 140,
       "published": 60,
-      "filtered": 78,
+      "filtered": 80,
       "accept_rate": 43,
       "avg_risk": 23.8,
       "engines": {
@@ -123,7 +123,7 @@
         "ollama": 8,
         "nvidia": 2
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "leadership",
@@ -166,17 +166,17 @@
     },
     {
       "source": "punchng",
-      "total": 85,
-      "published": 22,
+      "total": 88,
+      "published": 25,
       "filtered": 63,
-      "accept_rate": 26,
+      "accept_rate": 28,
       "avg_risk": 21.5,
       "engines": {
         "unknown": 18,
         "nvidia": 2,
-        "ollama": 2
+        "ollama": 5
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "independentng",
@@ -370,16 +370,16 @@
     },
     {
       "source": "Voice of Nigeria",
-      "total": 9,
-      "published": 5,
+      "total": 10,
+      "published": 6,
       "filtered": 4,
-      "accept_rate": 56,
-      "avg_risk": 21.0,
+      "accept_rate": 60,
+      "avg_risk": 19.2,
       "engines": {
         "nvidia": 1,
-        "ollama": 4
+        "ollama": 5
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "nairametrics",
@@ -1066,6 +1066,18 @@
       "avg_risk": null,
       "engines": {},
       "last_seen": "2026-08-11"
+    },
+    {
+      "source": "Blueprint Newspapers",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 10.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-09-16"
     },
     {
       "source": "CBN Digital Commons",
@@ -1794,5 +1806,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-16 01:15:34"
+  "generated": "2026-09-16 12:32:07"
 }
