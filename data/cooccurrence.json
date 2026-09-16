@@ -1,6 +1,35 @@
 {
   "window_days": 90,
-  "nodes": [],
-  "edges": [],
-  "generated": "2026-09-16 12:32:07"
+  "nodes": [
+    {
+      "key": "african action congress",
+      "label": "African Action Congress"
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission"
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government"
+    }
+  ],
+  "edges": [
+    {
+      "a": "african action congress",
+      "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
+      "a": "african action congress",
+      "b": "oyo state government",
+      "weight": 2
+    },
+    {
+      "a": "economic and financial crimes commission",
+      "b": "oyo state government",
+      "weight": 2
+    }
+  ],
+  "generated": "2026-09-16 17:33:28"
 }

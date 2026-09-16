@@ -67,6 +67,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f174114ad69e",
       "label": "Nigeria",
       "type": "company",
@@ -77,12 +83,6 @@
       "label": "APC Group",
       "type": "company",
       "risk": "Critical"
-    },
-    {
-      "id": "9ed3f0f5bb2d",
-      "label": "Dangote Refinery",
-      "type": "company",
-      "risk": "Low"
     },
     {
       "id": "81dcb233ede4",
@@ -133,8 +133,26 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c06f2d9a3df8",
+      "label": "National Insurance Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,8 +163,20 @@
       "risk": "Low"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "60f41a70b07a",
+      "label": "Government of India",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,50 +223,20 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
+      "id": "ee660b17d5a8",
+      "label": "National Automotive Design and Development Council",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
+      "id": "35e7449c5c8b",
+      "label": "Pharmacists Council of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0ba0cb08c8cb",
-      "label": "Nigerian Army",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4d8cb1e72a03",
-      "label": "Nigeria Data Protection Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
+      "id": "b6e216a813ff",
+      "label": "Government of Oyo State",
       "type": "agency",
       "risk": "Low"
     },
@@ -244,6 +244,24 @@
       "id": "0804399f614e",
       "label": "Siminalayi Fubara",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0eb499263319",
+      "label": "Makinde",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "06c8cb034ab7",
+      "label": "Alli",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ad921d604863",
+      "label": "Unknown",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -268,12 +286,6 @@
       "id": "5a094abf1abe",
       "label": "Bola Ahmed Tinubu",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -451,6 +463,12 @@
       "risk": "Low"
     },
     {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "c82cfc524aa9",
       "label": "Haruna",
       "type": "person",
@@ -471,30 +489,6 @@
     {
       "id": "770ce8655f5a",
       "label": "Champion Breweries",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "3340d148b32f",
-      "label": "Gbaye",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f8eba52f3658",
-      "label": "Lagos State Building Control Agency",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "14b385b7a599",
-      "label": "Balami",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ebe2d81e3981",
-      "label": "Not Specified",
       "type": "company",
       "risk": "Low"
     },
@@ -613,6 +607,12 @@
       "risk": "Low"
     },
     {
+      "id": "0ba0cb08c8cb",
+      "label": "Nigerian Army",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b1066afb9628",
       "label": "Unnamed boat contractors",
       "type": "company",
@@ -646,6 +646,18 @@
       "id": "f5e16be1446b",
       "label": "Premium Steel",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9b5f79697bc2",
+      "label": "Federal Ministry of Power",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -685,12 +697,6 @@
       "risk": "Low"
     },
     {
-      "id": "ad921d604863",
-      "label": "Unknown",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "653fd7557fc1",
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
@@ -703,6 +709,18 @@
       "from": "0804399f614e",
       "to": "1f51cde9fd6f",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "5ff2682b60b2",
+      "from": "0eb499263319",
+      "to": "b6e216a813ff",
+      "label": "Appointed as Governor"
+    },
+    {
+      "id": "0606be628d06",
+      "from": "06c8cb034ab7",
+      "to": "ad921d604863",
+      "label": "Appointed as Unknown"
     },
     {
       "id": "599ed5bc3174",
@@ -835,18 +853,6 @@
       "from": "40081a0c7e0f",
       "to": "770ce8655f5a",
       "label": "Appointed as MD/CEO"
-    },
-    {
-      "id": "3176a3c27b76",
-      "from": "3340d148b32f",
-      "to": "f8eba52f3658",
-      "label": "Appointed as General Manager"
-    },
-    {
-      "id": "5db5e89ecf4b",
-      "from": "14b385b7a599",
-      "to": "ebe2d81e3981",
-      "label": "Appointed as Political Appointee"
     },
     {
       "id": "0cd3b636ebc8",

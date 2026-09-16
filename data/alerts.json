@@ -2,6 +2,19 @@
   "alerts": [
     {
       "date": "2026-09-16",
+      "title": "Don\u2019t divert N85b French loan to your campaign, Alli warns Makinde - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRVJ4cWhSeU0ycmdDd3JKMDd4TnJlSHp3cGVLWDFkTTJnZWo2ZkQtdk1WZDNmY3Jabzg5b0dlZTlZeTNMdDRPWUpUamg0aTFRdTB5YlZ3TmMwRHd2UlpySDA1REFoREVna3IyV1F0b1FvRTB2QklVZW9PTWdhTzhxTURSaU5yNkpCTGN5WFZubW9sdUcz?oc=5",
+      "source": "The Guardian Nigeria News",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Government of Oyo State",
+        "Makinde",
+        "Alli"
+      ]
+    },
+    {
+      "date": "2026-09-16",
       "title": "Fitch flags Nigeria\u2019s $5bn TRS over debt, liquidity risks - Punch Newspapers",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOXZ1dVEtb1NiYi1NT0xfeU5kcXF5TUVKUXJZLUV1OFBoVDRIWjQ3bXBuN1FqX1luR0xNNEpwYjRrQU1fSEUzbENScWJUTGxVbGg1dDlXUnRabHNWc3Zacm9Wc2hfU0JYb1Z3dHNsb3I1NE9DV2cwU05LZERpTjRNUg?oc=5",
       "source": "Punch Newspapers",
@@ -62,5 +75,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-16 12:32:07"
+  "generated": "2026-09-16 17:33:28"
 }

@@ -3097,8 +3097,8 @@
   },
   {
     "Company": "Nigerian Exchange Group",
-    "Mention Count": 4,
-    "Last Seen": "2026-09-15 1:19",
+    "Mention Count": 5,
+    "Last Seen": "2026-09-16 17:29",
     "Industry": "Financial Services",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -5073,9 +5073,9 @@
   },
   {
     "Company": "Keystone Bank",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-29 15:14",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-16 17:29",
+    "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -6833,7 +6833,7 @@
   },
   {
     "Company": "Dangote Group",
-    "Mention Count": 6,
+    "Mention Count": 7,
     "Last Seen": "2026-09-11 19:31",
     "Industry": "General",
     "Risk Level": "Low",
@@ -7169,17 +7169,17 @@
   },
   {
     "Company": "Uber Nigeria",
-    "Mention Count": 24,
-    "Last Seen": "2026-09-14 11:00",
-    "Industry": "Transport/Ride-hailing",
+    "Mention Count": 25,
+    "Last Seen": "2026-09-16 17:30",
+    "Industry": "Ride-hailing",
     "Risk Level": "Low",
     "First Seen": ""
   },
   {
     "Company": "Bolt",
-    "Mention Count": 5,
-    "Last Seen": "2026-09-03 11:59",
-    "Industry": "General",
+    "Mention Count": 6,
+    "Last Seen": "2026-09-16 17:30",
+    "Industry": "Ride-hailing",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 11,
-    "Last Seen": "2026-09-15 12:30",
+    "Mention Count": 13,
+    "Last Seen": "2026-09-16 17:30",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7889,9 +7889,9 @@
   },
   {
     "Company": "African Action Congress",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-14 18:22",
-    "Industry": "Political Party",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-16 17:31",
+    "Industry": "Politics",
     "Risk Level": "Medium",
     "First Seen": "2026-09-14 18:22"
   },
@@ -7998,5 +7998,13 @@
     "Industry": "Technology/Digital Services",
     "Risk Level": "Medium",
     "First Seen": "2026-09-16 12:30"
+  },
+  {
+    "Company": "King's College",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-16 17:29",
+    "Industry": "Education",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-16 17:29"
   }
 ]

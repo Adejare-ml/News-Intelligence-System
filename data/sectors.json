@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 980,
-      "mentions": 1691,
+      "companies": 978,
+      "mentions": 1686,
       "risk": {
-        "Low": 862,
+        "Low": 860,
         "Critical": 59,
         "Medium": 35,
         "High": 24
@@ -14,18 +14,27 @@
     {
       "industry": "Oil & Gas",
       "companies": 3,
-      "mentions": 45,
+      "mentions": 47,
       "risk": {
         "Medium": 1,
         "Low": 2
       }
     },
     {
-      "industry": "Transport/Ride-hailing",
-      "companies": 1,
-      "mentions": 24,
+      "industry": "Ride-hailing",
+      "companies": 2,
+      "mentions": 31,
       "risk": {
-        "Low": 1
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Financial Services",
+      "companies": 2,
+      "mentions": 6,
+      "risk": {
+        "Medium": 1,
+        "High": 1
       }
     },
     {
@@ -37,12 +46,11 @@
       }
     },
     {
-      "industry": "Financial Services",
-      "companies": 2,
-      "mentions": 5,
+      "industry": "Banking",
+      "companies": 3,
+      "mentions": 4,
       "risk": {
-        "Medium": 1,
-        "High": 1
+        "Low": 3
       }
     },
     {
@@ -54,19 +62,27 @@
       }
     },
     {
-      "industry": "Banking",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "Low": 2
-      }
-    },
-    {
       "industry": "Insurance",
       "companies": 2,
       "mentions": 2,
       "risk": {
         "High": 2
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Education",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -102,14 +118,6 @@
       }
     },
     {
-      "industry": "Political Party",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Medium": 1
-      }
-    },
-    {
       "industry": "Shipping",
       "companies": 1,
       "mentions": 1,
@@ -134,5 +142,5 @@
       }
     }
   ],
-  "generated": "2026-09-16 12:32:07"
+  "generated": "2026-09-16 17:33:28"
 }
