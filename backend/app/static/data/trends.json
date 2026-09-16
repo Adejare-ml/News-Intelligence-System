@@ -1,25 +1,55 @@
 {
   "window_days": 7,
-  "recent_articles": 147,
+  "recent_articles": 156,
   "previous_articles": 142,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 26,
-      "previous": 11,
+      "recent": 28,
+      "previous": 13,
       "change": 15
     },
     {
       "term": "punch",
-      "recent": 25,
-      "previous": 11,
+      "recent": 27,
+      "previous": 13,
       "change": 14
     },
     {
       "term": "punch newspapers",
-      "recent": 25,
-      "previous": 11,
+      "recent": 27,
+      "previous": 13,
       "change": 14
+    },
+    {
+      "term": "dangote",
+      "recent": 15,
+      "previous": 6,
+      "change": 9
+    },
+    {
+      "term": "ipo",
+      "recent": 11,
+      "previous": 2,
+      "change": 9
+    },
+    {
+      "term": "beneficial",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
+    },
+    {
+      "term": "beneficial ownership",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
+    },
+    {
+      "term": "ownership",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
     },
     {
       "term": "petrol",
@@ -28,60 +58,30 @@
       "change": 7
     },
     {
-      "term": "dangote",
-      "recent": 12,
-      "previous": 6,
-      "change": 6
-    },
-    {
-      "term": "ipo",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
-    },
-    {
-      "term": "beneficial",
-      "recent": 6,
+      "term": "refinery ipo",
+      "recent": 7,
       "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "beneficial ownership",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "naicom",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "ownership",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
+      "change": 7
     }
   ],
   "falling": [
     {
       "term": "guardian",
-      "recent": 25,
-      "previous": 43,
-      "change": -18
+      "recent": 34,
+      "previous": 42,
+      "change": -8
     },
     {
       "term": "uber",
-      "recent": 2,
-      "previous": 14,
-      "change": -12
+      "recent": 3,
+      "previous": 11,
+      "change": -8
     },
     {
       "term": "exit",
       "recent": 2,
-      "previous": 9,
-      "change": -7
+      "previous": 10,
+      "change": -8
     },
     {
       "term": "faan",
@@ -102,9 +102,9 @@
       "change": -6
     },
     {
-      "term": "com",
-      "recent": 7,
-      "previous": 12,
+      "term": "first",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     },
     {
@@ -120,7 +120,7 @@
       "change": -4
     },
     {
-      "term": "financial",
+      "term": "digital",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -129,17 +129,17 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 99,
-      "previous": 83
+      "recent": 103,
+      "previous": 86
     },
     {
       "category": "Company",
-      "recent": 31,
-      "previous": 40
+      "recent": 35,
+      "previous": 37
     },
     {
       "category": "Legal",
-      "recent": 17,
+      "recent": 18,
       "previous": 17
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-16 12:32:04"
+  "generated": "2026-09-16 17:33:26"
 }

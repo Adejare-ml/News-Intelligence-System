@@ -2,51 +2,51 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 1932,
-      "published": 1242,
-      "filtered": 690,
+      "total": 1954,
+      "published": 1251,
+      "filtered": 703,
       "accept_rate": 64,
       "avg_risk": 29.3,
       "engines": {
         "unknown": 963,
-        "ollama": 271,
+        "ollama": 280,
         "nvidia": 8
       },
       "last_seen": "2026-09-16"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1087,
-      "published": 590,
-      "filtered": 497,
+      "total": 1089,
+      "published": 591,
+      "filtered": 498,
       "accept_rate": 54,
       "avg_risk": 30.7,
       "engines": {
         "unknown": 440,
-        "ollama": 146,
+        "ollama": 147,
         "nvidia": 4
       },
       "last_seen": "2026-09-16"
     },
     {
       "source": "Punch Newspapers",
-      "total": 552,
-      "published": 277,
-      "filtered": 275,
+      "total": 560,
+      "published": 281,
+      "filtered": 279,
       "accept_rate": 50,
-      "avg_risk": 27.1,
+      "avg_risk": 27.0,
       "engines": {
         "unknown": 188,
-        "ollama": 85,
+        "ollama": 89,
         "nvidia": 4
       },
       "last_seen": "2026-09-16"
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 406,
+      "total": 407,
       "published": 141,
-      "filtered": 265,
+      "filtered": 266,
       "accept_rate": 35,
       "avg_risk": 27.4,
       "engines": {
@@ -72,9 +72,9 @@
     },
     {
       "source": "Vanguard News",
-      "total": 246,
+      "total": 247,
       "published": 130,
-      "filtered": 116,
+      "filtered": 117,
       "accept_rate": 53,
       "avg_risk": 27.4,
       "engines": {
@@ -82,7 +82,7 @@
         "ollama": 31,
         "nvidia": 5
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "Vanguard",
@@ -127,29 +127,29 @@
     },
     {
       "source": "leadership",
-      "total": 122,
+      "total": 123,
       "published": 43,
-      "filtered": 79,
+      "filtered": 80,
       "accept_rate": 35,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 35,
         "ollama": 8
       },
-      "last_seen": "2026-09-14"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "dailypost",
-      "total": 116,
+      "total": 117,
       "published": 42,
-      "filtered": 74,
+      "filtered": 75,
       "accept_rate": 36,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 40,
         "ollama": 2
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-16"
     },
     {
       "source": "vanguardngr",
@@ -1354,6 +1354,18 @@
       "last_seen": "2026-09-10"
     },
     {
+      "source": "News Agency of Nigeria",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 30.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-09-16"
+    },
+    {
       "source": "Nigeria Civil Aviation Authority. NCAA",
       "total": 1,
       "published": 1,
@@ -1806,5 +1818,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-16 12:32:07"
+  "generated": "2026-09-16 17:33:28"
 }

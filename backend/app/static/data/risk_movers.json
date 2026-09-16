@@ -10,6 +10,33 @@
       "previous_mentions": 0
     },
     {
+      "key": "national insurance commission",
+      "label": "National Insurance Commission",
+      "recent_avg": 42.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "african action congress",
+      "label": "African Action Congress",
+      "recent_avg": 40.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "recent_avg": 40.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 34.2,
@@ -21,25 +48,34 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 30.5,
+      "recent_avg": 31.4,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 10,
-      "previous_mentions": 0
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 11,
       "previous_mentions": 0
     },
     {
       "key": "king s college",
       "label": "King's College",
       "recent_avg": 30.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "uber",
+      "label": "Uber",
+      "recent_avg": 25.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -51,7 +87,7 @@
       "recent_avg": 25.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 6,
+      "recent_mentions": 8,
       "previous_mentions": 0
     },
     {
@@ -75,10 +111,19 @@
     {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
+      "recent_avg": 21.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 6,
+      "previous_mentions": 0
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Group",
       "recent_avg": 20.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 5,
+      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -110,5 +155,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-16 12:32:07"
+  "generated": "2026-09-16 17:33:28"
 }
