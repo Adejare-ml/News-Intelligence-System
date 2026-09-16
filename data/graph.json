@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -133,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "e5c0e655148a",
+      "label": "Nigerian Civil Aviation Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
@@ -141,6 +153,12 @@
     {
       "id": "1f51cde9fd6f",
       "label": "Rivers State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3933ac79ce03",
+      "label": "Corporate Affairs Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -159,6 +177,18 @@
     {
       "id": "ac07aa33e674",
       "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "03beee3f0559",
+      "label": "Niger Delta",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,12 +223,6 @@
       "risk": "Low"
     },
     {
-      "id": "e5c0e655148a",
-      "label": "Nigerian Civil Aviation Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "4d8cb1e72a03",
       "label": "Nigeria Data Protection Commission",
       "type": "agency",
@@ -213,30 +237,6 @@
     {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3933ac79ce03",
-      "label": "Corporate Affairs Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ea931f6d9cdb",
-      "label": "Federal Mortgage Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cf3ed84d35f7",
-      "label": "Code of Conduct Bureau",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bcf9d1e3fc55",
-      "label": "Nigerian Airspace Management Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -256,6 +256,12 @@
       "id": "e5982307ed9d",
       "label": "Abdullahi Bello",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "cf3ed84d35f7",
+      "label": "Code of Conduct Bureau",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -598,6 +604,12 @@
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "bcf9d1e3fc55",
+      "label": "Nigerian Airspace Management Agency",
+      "type": "agency",
       "risk": "Low"
     },
     {

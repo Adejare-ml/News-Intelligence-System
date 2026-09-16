@@ -39,35 +39,9 @@
       ]
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 22.5,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 4,
+      "total_mentions": 6,
       "points": [
         {
           "week": "2026-09-07",
@@ -77,8 +51,34 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 18.3,
+          "mentions": 5,
+          "avg_risk": 24.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
           "max_risk": 20
         }
       ]
@@ -148,6 +148,45 @@
       ]
     },
     {
+      "key": "civil aviation authority",
+      "label": "Nigerian Civil Aviation Authority",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "presco",
+      "label": "Presco",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 5.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "abdullahi bello",
       "label": "Abdullahi Bello",
       "total_mentions": 1,
@@ -200,6 +239,19 @@
       ]
     },
     {
+      "key": "bank of industry",
+      "label": "Bank of Industry",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bola ahmed tinubu",
       "label": "Bola Ahmed Tinubu",
       "total_mentions": 1,
@@ -239,6 +291,19 @@
       ]
     },
     {
+      "key": "chams holdco",
+      "label": "Chams HoldCo",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "code of conduct bureau",
       "label": "Code of Conduct Bureau",
       "total_mentions": 1,
@@ -248,6 +313,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "creditville",
+      "label": "Creditville",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -313,6 +391,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "fitch ratings",
+      "label": "Fitch Ratings",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -408,6 +499,19 @@
       ]
     },
     {
+      "key": "maritime workers union of",
+      "label": "Maritime Workers Union of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ministry of power",
       "label": "Ministry of Power",
       "total_mentions": 1,
@@ -486,6 +590,19 @@
       ]
     },
     {
+      "key": "national pension commission",
+      "label": "National Pension Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national union of pensioners",
       "label": "National Union of Pensioners",
       "total_mentions": 1,
@@ -495,6 +612,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "niger delta",
+      "label": "Niger Delta",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
         }
       ]
     },
@@ -564,19 +694,6 @@
       ]
     },
     {
-      "key": "civil aviation authority",
-      "label": "Nigerian Civil Aviation Authority",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "exchange",
       "label": "Nigerian Exchange Group",
       "total_mentions": 1,
@@ -590,15 +707,15 @@
       ]
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
+      "key": "national shipping line",
+      "label": "Nigerian National Shipping Line",
       "total_mentions": 1,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -629,15 +746,15 @@
       ]
     },
     {
-      "key": "presco",
-      "label": "Presco",
+      "key": "rmb",
+      "label": "RMB",
       "total_mentions": 1,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -720,5 +837,5 @@
       ]
     }
   ],
-  "generated": "2026-09-16 01:15:34"
+  "generated": "2026-09-16 12:32:07"
 }

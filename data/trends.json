@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 142,
-  "previous_articles": 144,
+  "recent_articles": 147,
+  "previous_articles": 142,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 24,
-      "previous": 9,
+      "recent": 26,
+      "previous": 11,
       "change": 15
     },
     {
       "term": "punch",
-      "recent": 24,
-      "previous": 9,
-      "change": 15
+      "recent": 25,
+      "previous": 11,
+      "change": 14
     },
     {
       "term": "punch newspapers",
-      "recent": 24,
-      "previous": 9,
-      "change": 15
+      "recent": 25,
+      "previous": 11,
+      "change": 14
     },
     {
       "term": "petrol",
@@ -34,9 +34,21 @@
       "change": 6
     },
     {
-      "term": "ncaa",
-      "recent": 7,
-      "previous": 1,
+      "term": "ipo",
+      "recent": 8,
+      "previous": 2,
+      "change": 6
+    },
+    {
+      "term": "beneficial",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
+    {
+      "term": "beneficial ownership",
+      "recent": 6,
+      "previous": 0,
       "change": 6
     },
     {
@@ -46,42 +58,24 @@
       "change": 6
     },
     {
-      "term": "ipo",
-      "recent": 8,
-      "previous": 3,
-      "change": 5
-    },
-    {
-      "term": "beneficial",
-      "recent": 5,
+      "term": "ownership",
+      "recent": 6,
       "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "beneficial ownership",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
+      "change": 6
     }
   ],
   "falling": [
     {
       "term": "guardian",
-      "recent": 26,
-      "previous": 45,
-      "change": -19
+      "recent": 25,
+      "previous": 43,
+      "change": -18
     },
     {
       "term": "uber",
       "recent": 2,
       "previous": 14,
       "change": -12
-    },
-    {
-      "term": "com",
-      "recent": 7,
-      "previous": 14,
-      "change": -7
     },
     {
       "term": "exit",
@@ -108,19 +102,25 @@
       "change": -6
     },
     {
+      "term": "com",
+      "recent": 7,
+      "previous": 12,
+      "change": -5
+    },
+    {
       "term": "board",
       "recent": 0,
       "previous": 5,
       "change": -5
     },
     {
-      "term": "financial",
-      "recent": 1,
-      "previous": 5,
+      "term": "court",
+      "recent": 2,
+      "previous": 6,
       "change": -4
     },
     {
-      "term": "imports",
+      "term": "financial",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -129,13 +129,13 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 95,
-      "previous": 80
+      "recent": 99,
+      "previous": 83
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 45
+      "recent": 31,
+      "previous": 40
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-16 01:15:17"
+  "generated": "2026-09-16 12:32:04"
 }
