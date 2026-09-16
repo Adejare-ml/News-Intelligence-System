@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 137,
+  "recent_articles": 142,
   "previous_articles": 144,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 21,
-      "previous": 8,
-      "change": 13
+      "recent": 24,
+      "previous": 9,
+      "change": 15
     },
     {
       "term": "punch",
-      "recent": 21,
-      "previous": 8,
-      "change": 13
+      "recent": 24,
+      "previous": 9,
+      "change": 15
     },
     {
       "term": "punch newspapers",
-      "recent": 21,
-      "previous": 8,
-      "change": 13
+      "recent": 24,
+      "previous": 9,
+      "change": 15
     },
     {
       "term": "petrol",
@@ -52,13 +52,13 @@
       "change": 5
     },
     {
-      "term": "cbn",
-      "recent": 6,
-      "previous": 1,
+      "term": "beneficial",
+      "recent": 5,
+      "previous": 0,
       "change": 5
     },
     {
-      "term": "beneficial",
+      "term": "beneficial ownership",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -68,8 +68,8 @@
     {
       "term": "guardian",
       "recent": 26,
-      "previous": 44,
-      "change": -18
+      "previous": 45,
+      "change": -19
     },
     {
       "term": "uber",
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 89,
-      "previous": 81
+      "recent": 95,
+      "previous": 80
     },
     {
       "category": "Company",
@@ -139,8 +139,8 @@
     },
     {
       "category": "Legal",
-      "recent": 18,
-      "previous": 16
+      "recent": 17,
+      "previous": 17
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-15 20:08:58"
+  "generated": "2026-09-16 01:15:17"
 }

@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,7 +13,7 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 8,
+          "mentions": 9,
           "avg_risk": 30.6,
           "max_risk": 65
         }
@@ -39,6 +39,19 @@
       ]
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
       "total_mentions": 4,
@@ -52,14 +65,20 @@
       ]
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
       "total_mentions": 4,
       "points": [
         {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
           "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 16.2,
+          "mentions": 3,
+          "avg_risk": 18.3,
           "max_risk": 20
         }
       ]
@@ -99,25 +118,6 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -278,6 +278,19 @@
       ]
     },
     {
+      "key": "federal ministry of art culture tourism and the creative economy",
+      "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "federal ministry of power",
       "label": "Federal Ministry of Power",
       "total_mentions": 1,
@@ -356,6 +369,19 @@
       ]
     },
     {
+      "key": "lagos state consumer protection agency",
+      "label": "Lagos State Consumer Protection Agency",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "total_mentions": 1,
@@ -378,6 +404,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ministry of power",
+      "label": "Ministry of Power",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -551,6 +590,19 @@
       ]
     },
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "total_mentions": 1,
@@ -603,6 +655,32 @@
       ]
     },
     {
+      "key": "rivers state government",
+      "label": "Rivers State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "siminalayi fubara",
+      "label": "Siminalayi Fubara",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "total_mentions": 1,
@@ -642,5 +720,5 @@
       ]
     }
   ],
-  "generated": "2026-09-15 20:08:59"
+  "generated": "2026-09-16 01:15:34"
 }
