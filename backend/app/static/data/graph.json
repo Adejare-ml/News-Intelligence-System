@@ -121,14 +121,38 @@
       "risk": "Low"
     },
     {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3933ac79ce03",
+      "label": "Corporate Affairs Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "70f9ffcc70c5",
+      "label": "USAID",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
       "type": "agency",
       "risk": "Low"
     },
@@ -141,12 +165,6 @@
     {
       "id": "c06f2d9a3df8",
       "label": "National Insurance Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,12 +193,6 @@
       "risk": "Low"
     },
     {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "60f41a70b07a",
       "label": "Government of India",
       "type": "agency",
@@ -189,12 +201,6 @@
     {
       "id": "1f51cde9fd6f",
       "label": "Rivers State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3933ac79ce03",
-      "label": "Corporate Affairs Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -235,9 +241,51 @@
       "risk": "Low"
     },
     {
-      "id": "35e7449c5c8b",
-      "label": "Pharmacists Council of Nigeria",
-      "type": "agency",
+      "id": "2388a11cf55e",
+      "label": "Ola Olukoyede",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "1252813a4034",
+      "label": "Sarah Boulos",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ebe2d81e3981",
+      "label": "Not Specified",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "edee81c488aa",
+      "label": "Richard Madiebo",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "48ace6b8e7ff",
+      "label": "Fidelity Bank plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "407e67278933",
+      "label": "Akinshola Samuel Akinde",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "65da5ae7f7a4",
+      "label": "Lifteller",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "3a6cef0b6e44",
+      "label": "Uche Elekwachi",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -415,12 +463,6 @@
       "risk": "Low"
     },
     {
-      "id": "2388a11cf55e",
-      "label": "Ola Olukoyede",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "c1526ad83945",
       "label": "Femi Falana",
       "type": "person",
@@ -451,52 +493,16 @@
       "risk": "Low"
     },
     {
-      "id": "5cdec410ed1e",
-      "label": "Olumide Kuku",
-      "type": "person",
-      "risk": "Low"
+      "id": "77c793dd24f7",
+      "label": "Aliko Dangote",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
+      "id": "01ccce37119e",
+      "label": "Dangote Petroleum Refinery",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "4f0653978f1b",
-      "label": "Prof. Mojisola Adeyeye",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "c82cfc524aa9",
-      "label": "Haruna",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "cc0638a9f334",
-      "label": "Iwemi Academic Platform",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "40081a0c7e0f",
-      "label": "Malolan Sampath",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "770ce8655f5a",
-      "label": "Champion Breweries",
-      "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "6617740c0c1a",
@@ -711,6 +717,36 @@
   ],
   "edges": [
     {
+      "id": "173d8cf4554e",
+      "from": "2388a11cf55e",
+      "to": "0bcaaf453cd3",
+      "label": "Appointed as Chairman"
+    },
+    {
+      "id": "307ee5f14a17",
+      "from": "1252813a4034",
+      "to": "ebe2d81e3981",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "a8a43670e664",
+      "from": "edee81c488aa",
+      "to": "48ace6b8e7ff",
+      "label": "Appointed as General Manager"
+    },
+    {
+      "id": "52bddb08d6f8",
+      "from": "407e67278933",
+      "to": "65da5ae7f7a4",
+      "label": "Appointed as MD/CEO"
+    },
+    {
+      "id": "254c22428cef",
+      "from": "3a6cef0b6e44",
+      "to": "65da5ae7f7a4",
+      "label": "Appointed as Chairman"
+    },
+    {
       "id": "eca146ca61aa",
       "from": "0804399f614e",
       "to": "1f51cde9fd6f",
@@ -813,12 +849,6 @@
       "label": "Appointed as Minister of Works"
     },
     {
-      "id": "173d8cf4554e",
-      "from": "2388a11cf55e",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as Chairman"
-    },
-    {
       "id": "4e5be6eeacf1",
       "from": "c1526ad83945",
       "to": "37a6259cc0c1",
@@ -837,28 +867,10 @@
       "label": "Appointed as Board Member"
     },
     {
-      "id": "36e48d8f5cbd",
-      "from": "5cdec410ed1e",
-      "to": "6843b615b76a",
-      "label": "Appointed as Managing Director"
-    },
-    {
-      "id": "3366c4447630",
-      "from": "4f0653978f1b",
-      "to": "e4c5ee83197c",
-      "label": "Appointed as Director-General"
-    },
-    {
-      "id": "e7d115cb983a",
-      "from": "c82cfc524aa9",
-      "to": "cc0638a9f334",
-      "label": "Appointed as Board Chairman"
-    },
-    {
-      "id": "03071b8d21ed",
-      "from": "40081a0c7e0f",
-      "to": "770ce8655f5a",
-      "label": "Appointed as MD/CEO"
+      "id": "b42222bf292e",
+      "from": "77c793dd24f7",
+      "to": "01ccce37119e",
+      "label": "Significant influence or control"
     },
     {
       "id": "0cd3b636ebc8",

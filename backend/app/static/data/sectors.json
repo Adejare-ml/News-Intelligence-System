@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 978,
-      "mentions": 1686,
+      "companies": 977,
+      "mentions": 1681,
       "risk": {
-        "Low": 860,
+        "Low": 859,
         "Critical": 59,
         "Medium": 35,
         "High": 24
@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 3,
-      "mentions": 47,
+      "companies": 4,
+      "mentions": 54,
       "risk": {
         "Medium": 1,
-        "Low": 2
+        "Low": 3
       }
     },
     {
@@ -47,10 +47,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 3,
-      "mentions": 4,
+      "companies": 4,
+      "mentions": 5,
       "risk": {
-        "Low": 3
+        "Low": 4
       }
     },
     {
@@ -78,6 +78,22 @@
       }
     },
     {
+      "industry": "Venture Capital",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "AI / Interactive Content",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Education",
       "companies": 1,
       "mentions": 1,
@@ -91,6 +107,22 @@
       "mentions": 1,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Fintech/Social Impact",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -150,5 +182,5 @@
       }
     }
   ],
-  "generated": "2026-09-16 19:55:45"
+  "generated": "2026-09-17 01:18:05"
 }

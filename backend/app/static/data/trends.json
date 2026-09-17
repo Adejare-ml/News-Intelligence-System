@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 157,
-  "previous_articles": 137,
+  "recent_articles": 160,
+  "previous_articles": 139,
   "rising": [
     {
       "term": "newspapers",
       "recent": 29,
-      "previous": 13,
-      "change": 16
+      "previous": 14,
+      "change": 15
     },
     {
       "term": "punch",
       "recent": 28,
-      "previous": 13,
-      "change": 15
+      "previous": 14,
+      "change": 14
     },
     {
       "term": "punch newspapers",
       "recent": 28,
-      "previous": 13,
-      "change": 15
+      "previous": 14,
+      "change": 14
     },
     {
       "term": "dangote",
@@ -35,30 +35,30 @@
     },
     {
       "term": "beneficial",
-      "recent": 7,
+      "recent": 8,
       "previous": 0,
-      "change": 7
+      "change": 8
     },
     {
       "term": "beneficial ownership",
-      "recent": 7,
+      "recent": 8,
       "previous": 0,
-      "change": 7
+      "change": 8
     },
     {
       "term": "ownership",
+      "recent": 8,
+      "previous": 0,
+      "change": 8
+    },
+    {
+      "term": "cac",
       "recent": 7,
       "previous": 0,
       "change": 7
     },
     {
       "term": "petrol",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
-    },
-    {
-      "term": "refinery ipo",
       "recent": 7,
       "previous": 0,
       "change": 7
@@ -70,6 +70,12 @@
       "recent": 2,
       "previous": 10,
       "change": -8
+    },
+    {
+      "term": "guardian",
+      "recent": 33,
+      "previous": 40,
+      "change": -7
     },
     {
       "term": "uber",
@@ -96,25 +102,13 @@
       "change": -6
     },
     {
-      "term": "guardian",
-      "recent": 34,
-      "previous": 39,
-      "change": -5
-    },
-    {
-      "term": "first",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
       "term": "court",
       "recent": 2,
       "previous": 6,
       "change": -4
     },
     {
-      "term": "digital",
+      "term": "first",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -124,23 +118,29 @@
       "recent": 1,
       "previous": 5,
       "change": -4
+    },
+    {
+      "term": "uber\u2019s",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 104,
-      "previous": 84
+      "recent": 105,
+      "previous": 83
     },
     {
       "category": "Company",
-      "recent": 35,
-      "previous": 34
+      "recent": 38,
+      "previous": 36
     },
     {
       "category": "Legal",
-      "recent": 18,
-      "previous": 17
+      "recent": 17,
+      "previous": 18
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-16 19:55:43"
+  "generated": "2026-09-17 01:18:02"
 }

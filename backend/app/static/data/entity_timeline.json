@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,9 +13,9 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 10,
-          "avg_risk": 31.5,
-          "max_risk": 65
+          "mentions": 11,
+          "avg_risk": 36.4,
+          "max_risk": 85
         }
       ]
     },
@@ -41,12 +41,12 @@
     {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
-      "total_mentions": 6,
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 6,
-          "avg_risk": 21.7,
+          "mentions": 7,
+          "avg_risk": 22.9,
           "max_risk": 30
         }
       ]
@@ -54,7 +54,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 6,
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-07",
@@ -64,8 +64,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 24.0,
+          "mentions": 6,
+          "avg_risk": 23.3,
           "max_risk": 65
         }
       ]
@@ -112,6 +112,19 @@
           "mentions": 3,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 20
         }
       ]
     },
@@ -213,19 +226,6 @@
       ]
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 2,
@@ -280,6 +280,19 @@
     {
       "key": "abdullahi bello",
       "label": "Abdullahi Bello",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "akinshola samuel akinde",
+      "label": "Akinshola Samuel Akinde",
       "total_mentions": 1,
       "points": [
         {
@@ -421,6 +434,19 @@
       ]
     },
     {
+      "key": "claypond capital",
+      "label": "Claypond Capital",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "code of conduct bureau",
       "label": "Code of Conduct Bureau",
       "total_mentions": 1,
@@ -456,6 +482,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -525,6 +564,19 @@
       ]
     },
     {
+      "key": "fidelity bank",
+      "label": "Fidelity Bank plc",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "fitch ratings",
       "label": "Fitch Ratings",
       "total_mentions": 1,
@@ -534,6 +586,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "flam",
+      "label": "Flam",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -590,6 +655,19 @@
       ]
     },
     {
+      "key": "healthcap africa",
+      "label": "HealthCap Africa",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "total_mentions": 1,
@@ -605,6 +683,19 @@
     {
       "key": "j p morgan",
       "label": "J.P. Morgan",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "jpmorgan",
+      "label": "JPMorgan",
       "total_mentions": 1,
       "points": [
         {
@@ -670,6 +761,19 @@
     {
       "key": "lebara",
       "label": "Lebara",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "lifteller",
+      "label": "Lifteller",
       "total_mentions": 1,
       "points": [
         {
@@ -902,6 +1006,19 @@
       ]
     },
     {
+      "key": "ola olukoyede",
+      "label": "Ola Olukoyede",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "pharmacists council of",
       "label": "Pharmacists Council of Nigeria",
       "total_mentions": 1,
@@ -911,6 +1028,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "qed investors",
+      "label": "QED Investors",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -941,6 +1071,19 @@
       ]
     },
     {
+      "key": "richard madiebo",
+      "label": "Richard Madiebo",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "rivers state government",
       "label": "Rivers State Government",
       "total_mentions": 1,
@@ -950,6 +1093,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "sarah boulos",
+      "label": "Sarah Boulos",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -991,7 +1147,33 @@
           "max_risk": 60
         }
       ]
+    },
+    {
+      "key": "usaid",
+      "label": "USAID",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "uche elekwachi",
+      "label": "Uche Elekwachi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
     }
   ],
-  "generated": "2026-09-16 19:55:45"
+  "generated": "2026-09-17 01:18:05"
 }
