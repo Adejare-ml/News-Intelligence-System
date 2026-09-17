@@ -112,7 +112,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 3,
+      "total_mentions": 4,
       "points": [
         {
           "week": "2026-09-07",
@@ -122,8 +122,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 17.5,
+          "mentions": 3,
+          "avg_risk": 16.7,
           "max_risk": 20
         }
       ]
@@ -746,6 +746,19 @@
       ]
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "hughes",
       "label": "Hughes",
       "total_mentions": 1,
@@ -1032,6 +1045,19 @@
       ]
     },
     {
+      "key": "niger delta development commission",
+      "label": "Niger Delta Development Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "data protection commission",
       "label": "Nigeria Data Protection Commission",
       "total_mentions": 1,
@@ -1240,6 +1266,19 @@
       ]
     },
     {
+      "key": "sanusi",
+      "label": "Sanusi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "sarah boulos",
       "label": "Sarah Boulos",
       "total_mentions": 1,
@@ -1331,5 +1370,5 @@
       ]
     }
   ],
-  "generated": "2026-09-17 17:26:33"
+  "generated": "2026-09-17 20:10:25"
 }

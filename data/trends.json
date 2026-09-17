@@ -1,31 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 167,
-  "previous_articles": 127,
+  "recent_articles": 169,
+  "previous_articles": 122,
   "rising": [
     {
       "term": "newspapers",
+      "recent": 33,
+      "previous": 14,
+      "change": 19
+    },
+    {
+      "term": "punch",
       "recent": 32,
       "previous": 14,
       "change": 18
     },
     {
-      "term": "punch",
-      "recent": 31,
-      "previous": 14,
-      "change": 17
-    },
-    {
       "term": "punch newspapers",
-      "recent": 31,
+      "recent": 32,
       "previous": 14,
-      "change": 17
+      "change": 18
     },
     {
       "term": "dangote",
       "recent": 15,
-      "previous": 6,
-      "change": 9
+      "previous": 5,
+      "change": 10
     },
     {
       "term": "ipo",
@@ -80,23 +80,29 @@
     {
       "term": "uber",
       "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
-      "term": "first",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
-    {
-      "term": "exit",
-      "recent": 2,
       "previous": 7,
       "change": -5
     },
     {
+      "term": "digital",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "first",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
       "term": "court",
+      "recent": 2,
+      "previous": 6,
+      "change": -4
+    },
+    {
+      "term": "exit",
       "recent": 2,
       "previous": 6,
       "change": -4
@@ -118,24 +124,18 @@
       "recent": 0,
       "previous": 4,
       "change": -4
-    },
-    {
-      "term": "aviation",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 116,
-      "previous": 77
+      "recent": 118,
+      "previous": 75
     },
     {
       "category": "Company",
       "recent": 35,
-      "previous": 31
+      "previous": 28
     },
     {
       "category": "Legal",
@@ -144,5 +144,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-17 17:26:32"
+  "generated": "2026-09-17 20:10:16"
 }

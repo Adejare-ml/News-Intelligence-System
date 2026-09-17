@@ -73,15 +73,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
       "key": "uber",
       "label": "Uber",
       "recent_avg": 25.0,
@@ -124,6 +115,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 7,
+      "previous_mentions": 0
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 22.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 4,
       "previous_mentions": 0
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-17 17:26:33"
+  "generated": "2026-09-17 20:10:25"
 }
