@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 170,
-  "previous_articles": 128,
+  "recent_articles": 167,
+  "previous_articles": 127,
   "rising": [
     {
       "term": "newspapers",
@@ -108,41 +108,41 @@
       "change": -4
     },
     {
+      "term": "strengthen",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
+    },
+    {
       "term": "assets",
       "recent": 0,
       "previous": 4,
       "change": -4
     },
     {
-      "term": "transfers",
+      "term": "aviation",
       "recent": 0,
       "previous": 4,
       "change": -4
-    },
-    {
-      "term": "digital",
-      "recent": 2,
-      "previous": 5,
-      "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 117,
-      "previous": 79
+      "recent": 116,
+      "previous": 77
     },
     {
       "category": "Company",
-      "recent": 36,
+      "recent": 35,
       "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 17,
-      "previous": 18
+      "recent": 16,
+      "previous": 19
     }
   ],
   "social": [],
-  "generated": "2026-09-17 15:10:40"
+  "generated": "2026-09-17 17:26:32"
 }
