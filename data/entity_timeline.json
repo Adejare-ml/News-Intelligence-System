@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 12,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,8 +13,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 11,
-          "avg_risk": 36.4,
+          "mentions": 14,
+          "avg_risk": 33.6,
           "max_risk": 85
         }
       ]
@@ -71,6 +71,32 @@
       ]
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 6,
+          "avg_risk": 35.8,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "total_mentions": 5,
@@ -116,15 +142,15 @@
       ]
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
+      "key": "oyo state government",
+      "label": "Oyo State Government",
       "total_mentions": 3,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 3,
-          "avg_risk": 18.3,
-          "max_risk": 20
+          "avg_risk": 41.7,
+          "max_risk": 45
         }
       ]
     },
@@ -138,6 +164,19 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "bat",
+      "label": "BAT Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
         }
       ]
     },
@@ -157,6 +196,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -187,19 +239,6 @@
       ]
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 2,
@@ -222,19 +261,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -291,6 +317,19 @@
       ]
     },
     {
+      "key": "actionaid",
+      "label": "ActionAid",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "akinshola samuel akinde",
       "label": "Akinshola Samuel Akinde",
       "total_mentions": 1,
@@ -339,19 +378,6 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "bat",
-      "label": "BAT Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -430,6 +456,19 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "chartered institute of procurement and supply management of",
+      "label": "Chartered Institute of Procurement and Supply Management of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -577,6 +616,45 @@
       ]
     },
     {
+      "key": "financial action task force",
+      "label": "Financial Action Task Force",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "firstbank",
+      "label": "FirstBank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "fisheries department",
+      "label": "Fisheries Department",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "fitch ratings",
       "label": "Fitch Ratings",
       "total_mentions": 1,
@@ -664,6 +742,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "hughes",
+      "label": "Hughes",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -850,19 +941,6 @@
       ]
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "national automotive design and development council",
       "label": "National Automotive Design and Development Council",
       "total_mentions": 1,
@@ -885,6 +963,32 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national health insurance authority",
+      "label": "National Health Insurance Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "national identity management commission",
+      "label": "National Identity Management Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -980,8 +1084,47 @@
       ]
     },
     {
+      "key": "bar association",
+      "label": "Nigerian Bar Association",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "communications satellite nigcomsat",
+      "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "national shipping line",
       "label": "Nigerian National Shipping Line",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "navy",
+      "label": "Nigerian Navy",
       "total_mentions": 1,
       "points": [
         {
@@ -1173,7 +1316,20 @@
           "max_risk": 20
         }
       ]
+    },
+    {
+      "key": "yakubu gowon university",
+      "label": "Yakubu Gowon University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
     }
   ],
-  "generated": "2026-09-17 01:18:05"
+  "generated": "2026-09-17 15:10:47"
 }

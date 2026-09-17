@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -129,6 +135,24 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c89820f522",
+      "label": "Nigerian Navy",
       "type": "agency",
       "risk": "Low"
     },
@@ -151,6 +175,48 @@
       "risk": "Low"
     },
     {
+      "id": "7a0cefe99056",
+      "label": "Chartered Institute of Procurement and Supply Management of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "95aff86421ed",
+      "label": "Fisheries Department",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5ac1e4450b44",
+      "label": "National Health Insurance Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6add86fa3929",
+      "label": "Financial Action Task Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "95178e3865cd",
+      "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f3acbeea4dea",
+      "label": "Yakubu Gowon University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e79817c87e24",
+      "label": "National Identity Management Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8aeb2e3bdb2c",
       "label": "Bank of Industry",
       "type": "agency",
@@ -169,74 +235,8 @@
       "risk": "Low"
     },
     {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e5c0e655148a",
-      "label": "Nigerian Civil Aviation Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "60f41a70b07a",
-      "label": "Government of India",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1f51cde9fd6f",
-      "label": "Rivers State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0a83cefc9c61",
-      "label": "Lagos State Consumer Protection Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a947270da0f2",
-      "label": "Ministry of Power",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ac07aa33e674",
-      "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "03beee3f0559",
-      "label": "Niger Delta",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ee660b17d5a8",
-      "label": "National Automotive Design and Development Council",
       "type": "agency",
       "risk": "Low"
     },
@@ -292,6 +292,12 @@
       "id": "0804399f614e",
       "label": "Siminalayi Fubara",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "1f51cde9fd6f",
+      "label": "Rivers State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -613,6 +619,12 @@
       "risk": "Low"
     },
     {
+      "id": "697b31d5b595",
+      "label": "Hughes",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "bcf9d1e3fc55",
       "label": "Nigerian Airspace Management Agency",
       "type": "agency",
@@ -700,18 +712,6 @@
       "id": "83e5dcc0d346",
       "label": "Buratai\u2019s company",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "044ec82597eb",
-      "label": "Presidential Foreign Intervention Promotion Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "653fd7557fc1",
-      "label": "Tertiary Education Trust Fund",
-      "type": "agency",
       "risk": "Low"
     }
   ],
@@ -939,6 +939,18 @@
       "label": "Contract Awardee"
     },
     {
+      "id": "47c610d34ffe",
+      "from": "697b31d5b595",
+      "to": "95178e3865cd",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "9aaad96e9617",
+      "from": "334c4a4c42fd",
+      "to": "3a4a88456e84",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "ad2aaf1f69f3",
       "from": "334c4a4c42fd",
       "to": "bcf9d1e3fc55",
@@ -1014,24 +1026,6 @@
       "id": "3191e28c65b2",
       "from": "83e5dcc0d346",
       "to": "0ba0cb08c8cb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "e7fd1b678a33",
-      "from": "ad921d604863",
-      "to": "044ec82597eb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "d2d664656a66",
-      "from": "334c4a4c42fd",
-      "to": "f38bd75574f6",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "78ac084f597e",
-      "from": "334c4a4c42fd",
-      "to": "653fd7557fc1",
       "label": "Contract Awardee"
     }
   ]

@@ -6313,9 +6313,9 @@
   },
   {
     "Company": "FirstBank",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-29 4:07",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-09-17 12:26",
+    "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -6554,7 +6554,7 @@
   {
     "Company": "Dangote Petroleum Refinery",
     "Mention Count": 7,
-    "Last Seen": "2026-09-17 01:15",
+    "Last Seen": "2026-09-17 1:15",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -6649,9 +6649,9 @@
   },
   {
     "Company": "Nigerian Bar Association",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-07 8:14",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-09-17 12:27",
+    "Industry": "Legal",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -8009,8 +8009,8 @@
   },
   {
     "Company": "BAT Nigeria",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-16 19:53",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-17 12:26",
     "Industry": "Tobacco",
     "Risk Level": "Low",
     "First Seen": "2026-09-16 19:53"
@@ -8062,5 +8062,21 @@
     "Industry": "Fintech/Social Impact",
     "Risk Level": "Low",
     "First Seen": "2026-09-17 01:16"
+  },
+  {
+    "Company": "ActionAid",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 15:06",
+    "Industry": "Non-profit/NGO",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 15:06"
+  },
+  {
+    "Company": "Hughes",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 15:08",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 15:08"
   }
 ]

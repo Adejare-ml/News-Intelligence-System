@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 160,
-  "previous_articles": 139,
+  "recent_articles": 170,
+  "previous_articles": 128,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 29,
+      "recent": 32,
       "previous": 14,
-      "change": 15
+      "change": 18
     },
     {
       "term": "punch",
-      "recent": 28,
+      "recent": 31,
       "previous": 14,
-      "change": 14
+      "change": 17
     },
     {
       "term": "punch newspapers",
-      "recent": 28,
+      "recent": 31,
       "previous": 14,
-      "change": 14
+      "change": 17
     },
     {
       "term": "dangote",
@@ -34,6 +34,12 @@
       "change": 9
     },
     {
+      "term": "nigeria\u2019s",
+      "recent": 13,
+      "previous": 5,
+      "change": 8
+    },
+    {
       "term": "beneficial",
       "recent": 8,
       "previous": 0,
@@ -46,43 +52,19 @@
       "change": 8
     },
     {
-      "term": "ownership",
+      "term": "customs",
       "recent": 8,
       "previous": 0,
       "change": 8
     },
     {
-      "term": "cac",
-      "recent": 7,
+      "term": "ownership",
+      "recent": 8,
       "previous": 0,
-      "change": 7
-    },
-    {
-      "term": "petrol",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
+      "change": 8
     }
   ],
   "falling": [
-    {
-      "term": "exit",
-      "recent": 2,
-      "previous": 10,
-      "change": -8
-    },
-    {
-      "term": "guardian",
-      "recent": 33,
-      "previous": 40,
-      "change": -7
-    },
-    {
-      "term": "uber",
-      "recent": 3,
-      "previous": 10,
-      "change": -7
-    },
     {
       "term": "faan",
       "recent": 0,
@@ -96,21 +78,27 @@
       "change": -6
     },
     {
-      "term": "vanguard",
+      "term": "uber",
       "recent": 2,
       "previous": 8,
       "change": -6
     },
     {
+      "term": "first",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
+    },
+    {
+      "term": "exit",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
+    },
+    {
       "term": "court",
       "recent": 2,
       "previous": 6,
-      "change": -4
-    },
-    {
-      "term": "first",
-      "recent": 1,
-      "previous": 5,
       "change": -4
     },
     {
@@ -120,34 +108,41 @@
       "change": -4
     },
     {
-      "term": "uber\u2019s",
-      "recent": 1,
-      "previous": 5,
+      "term": "assets",
+      "recent": 0,
+      "previous": 4,
       "change": -4
+    },
+    {
+      "term": "transfers",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "digital",
+      "recent": 2,
+      "previous": 5,
+      "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 105,
-      "previous": 83
+      "recent": 117,
+      "previous": 79
     },
     {
       "category": "Company",
-      "recent": 38,
-      "previous": 36
+      "recent": 36,
+      "previous": 31
     },
     {
       "category": "Legal",
       "recent": 17,
       "previous": 18
-    },
-    {
-      "category": "Other",
-      "recent": 0,
-      "previous": 2
     }
   ],
   "social": [],
-  "generated": "2026-09-17 01:18:02"
+  "generated": "2026-09-17 15:10:40"
 }

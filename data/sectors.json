@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 977,
-      "mentions": 1681,
+      "companies": 975,
+      "mentions": 1677,
       "risk": {
-        "Low": 859,
+        "Low": 857,
         "Critical": 59,
         "Medium": 35,
         "High": 24
@@ -29,6 +29,14 @@
       }
     },
     {
+      "industry": "Banking",
+      "companies": 5,
+      "mentions": 8,
+      "risk": {
+        "Low": 5
+      }
+    },
+    {
       "industry": "Financial Services",
       "companies": 2,
       "mentions": 6,
@@ -46,11 +54,11 @@
       }
     },
     {
-      "industry": "Banking",
-      "companies": 4,
-      "mentions": 5,
+      "industry": "Legal",
+      "companies": 1,
+      "mentions": 3,
       "risk": {
-        "Low": 4
+        "Low": 1
       }
     },
     {
@@ -75,6 +83,14 @@
       "mentions": 2,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Tobacco",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -142,6 +158,14 @@
       }
     },
     {
+      "industry": "Non-profit/NGO",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Policy Research/Consultancy",
       "companies": 1,
       "mentions": 1,
@@ -166,7 +190,7 @@
       }
     },
     {
-      "industry": "Tobacco",
+      "industry": "Telecoms",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -182,5 +206,5 @@
       }
     }
   ],
-  "generated": "2026-09-17 01:18:05"
+  "generated": "2026-09-17 15:10:47"
 }
