@@ -6553,9 +6553,9 @@
   },
   {
     "Company": "Dangote Petroleum Refinery",
-    "Mention Count": 6,
-    "Last Seen": "2026-09-13 12:33",
-    "Industry": "General",
+    "Mention Count": 7,
+    "Last Seen": "2026-09-17 01:15",
+    "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7248,8 +7248,8 @@
     "First Seen": ""
   },
   {
-    "Company": "Fidelity Bank",
-    "Mention Count": 1,
+    "Company": "Fidelity Bank plc",
+    "Mention Count": 2,
     "Last Seen": "2026-08-24 13:52",
     "Industry": "General",
     "Risk Level": "Low",
@@ -8014,5 +8014,53 @@
     "Industry": "Tobacco",
     "Risk Level": "Low",
     "First Seen": "2026-09-16 19:53"
+  },
+  {
+    "Company": "JPMorgan",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 01:14",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 01:14"
+  },
+  {
+    "Company": "Flam",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 01:15",
+    "Industry": "AI / Interactive Content",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 01:15"
+  },
+  {
+    "Company": "QED Investors",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 01:15",
+    "Industry": "Venture Capital",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 01:15"
+  },
+  {
+    "Company": "Claypond Capital",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 01:15",
+    "Industry": "Venture Capital",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 01:15"
+  },
+  {
+    "Company": "HealthCap Africa",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 01:15",
+    "Industry": "Healthcare Finance",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 01:15"
+  },
+  {
+    "Company": "Lifteller",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-17 01:16",
+    "Industry": "Fintech/Social Impact",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-17 01:16"
   }
 ]

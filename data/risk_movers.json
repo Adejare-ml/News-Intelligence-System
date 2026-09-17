@@ -37,21 +37,21 @@
       "previous_mentions": 0
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 34.2,
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 35.8,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 6,
+      "recent_mentions": 12,
       "previous_mentions": 0
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 31.4,
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 32.1,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 11,
+      "recent_mentions": 7,
       "previous_mentions": 0
     },
     {
@@ -111,10 +111,10 @@
     {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
-      "recent_avg": 21.7,
+      "recent_avg": 22.9,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 6,
+      "recent_mentions": 7,
       "previous_mentions": 0
     },
     {
@@ -129,10 +129,10 @@
     {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 17.5,
+      "recent_avg": 18.3,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
@@ -164,5 +164,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-16 19:55:45"
+  "generated": "2026-09-17 01:18:05"
 }
