@@ -30,9 +30,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 585,
+      "total": 586,
       "published": 286,
-      "filtered": 299,
+      "filtered": 300,
       "accept_rate": 49,
       "avg_risk": 26.8,
       "engines": {
@@ -58,9 +58,9 @@
     },
     {
       "source": "The Punch",
-      "total": 396,
+      "total": 397,
       "published": 235,
-      "filtered": 161,
+      "filtered": 162,
       "accept_rate": 59,
       "avg_risk": 33.9,
       "engines": {
@@ -86,9 +86,9 @@
     },
     {
       "source": "Vanguard",
-      "total": 244,
+      "total": 245,
       "published": 151,
-      "filtered": 93,
+      "filtered": 94,
       "accept_rate": 62,
       "avg_risk": 36.5,
       "engines": {
@@ -140,16 +140,16 @@
     },
     {
       "source": "dailypost",
-      "total": 117,
+      "total": 118,
       "published": 42,
-      "filtered": 75,
+      "filtered": 76,
       "accept_rate": 36,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 40,
         "ollama": 2
       },
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-17"
     },
     {
       "source": "vanguardngr",
@@ -193,9 +193,9 @@
     },
     {
       "source": "legit",
-      "total": 72,
+      "total": 73,
       "published": 19,
-      "filtered": 53,
+      "filtered": 54,
       "accept_rate": 26,
       "avg_risk": 25.0,
       "engines": {
@@ -203,7 +203,7 @@
         "ollama": 3,
         "nvidia": 1
       },
-      "last_seen": "2026-09-16"
+      "last_seen": "2026-09-17"
     },
     {
       "source": "businessday",
@@ -1402,6 +1402,16 @@
       "last_seen": "2026-07-21"
     },
     {
+      "source": "Ontario Federation of Agriculture",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-17"
+    },
+    {
       "source": "PEOPLE",
       "total": 1,
       "published": 0,
@@ -1830,5 +1840,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-17 15:10:47"
+  "generated": "2026-09-17 17:26:33"
 }
