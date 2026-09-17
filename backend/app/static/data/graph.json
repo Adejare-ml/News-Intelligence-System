@@ -133,8 +133,26 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bbdd3227478f",
+      "label": "Niger Delta Development Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "2388a11cf55e",
       "label": "Ola Olukoyede",
       "type": "person",
@@ -285,6 +285,12 @@
     {
       "id": "3a6cef0b6e44",
       "label": "Uche Elekwachi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "d8420ee1c07a",
+      "label": "Sanusi",
       "type": "person",
       "risk": "Low"
     },
@@ -346,6 +352,12 @@
       "id": "5a094abf1abe",
       "label": "Bola Ahmed Tinubu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -483,18 +495,6 @@
     {
       "id": "6ba1a0297fa2",
       "label": "RCICA Lagos",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "8c72d6911abc",
-      "label": "Okere",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c389f0f28ae2",
-      "label": "WAD",
       "type": "company",
       "risk": "Low"
     },
@@ -747,6 +747,12 @@
       "label": "Appointed as Chairman"
     },
     {
+      "id": "1e89a6ec1689",
+      "from": "d8420ee1c07a",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Former Governor"
+    },
+    {
       "id": "eca146ca61aa",
       "from": "0804399f614e",
       "to": "1f51cde9fd6f",
@@ -859,12 +865,6 @@
       "from": "74eb1ae50a3b",
       "to": "6ba1a0297fa2",
       "label": "Appointed as Leader/Executive"
-    },
-    {
-      "id": "14f8b0d75cf6",
-      "from": "8c72d6911abc",
-      "to": "c389f0f28ae2",
-      "label": "Appointed as Board Member"
     },
     {
       "id": "b42222bf292e",
