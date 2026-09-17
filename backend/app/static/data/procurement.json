@@ -1088,5 +1088,35 @@
     "Date": "2026-09-16",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Oyo State Government",
+    "Contractor": "None",
+    "Amount": "N683 Million",
+    "Project": "Procurement of two vehicles",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-17",
+    "Amount Value": 683000000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
+    "Contractor": "Hughes",
+    "Amount": "None",
+    "Project": "Hughes JUPITER Scalable Gateway to support NIGCOMSAT-2A and 2B satellites",
+    "Source": "Financial Post",
+    "Date": "2026-09-17",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "3MW solar hybrid power project at Yakubu Gowon University, Abuja",
+    "Source": "The Punch",
+    "Date": "2026-09-17",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]

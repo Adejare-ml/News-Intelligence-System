@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 23,
-      "undisclosed": 14,
+      "contracts": 24,
+      "undisclosed": 15,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -91,15 +91,15 @@
       }
     },
     {
-      "name": "Ekiti State Government",
-      "contracts": 1,
+      "name": "Oyo State Government",
+      "contracts": 2,
       "undisclosed": 0,
       "totals": {
-        "NGN": 3000000000.0
+        "NGN": 3683000000.0
       }
     },
     {
-      "name": "Oyo State Government",
+      "name": "Ekiti State Government",
       "contracts": 1,
       "undisclosed": 0,
       "totals": {
@@ -361,6 +361,12 @@
       "totals": {}
     },
     {
+      "name": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Nigerian Content Development and Monitoring Board",
       "contracts": 1,
       "undisclosed": 0,
@@ -432,10 +438,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 60,
-      "undisclosed": 36,
+      "contracts": 62,
+      "undisclosed": 37,
       "totals": {
-        "NGN": 4497742260000.0,
+        "NGN": 4498425260000.0,
         "USD": 20500000000.0
       }
     },
@@ -596,6 +602,12 @@
       "totals": {}
     },
     {
+      "name": "Hughes",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Julius Berger",
       "contracts": 1,
       "undisclosed": 1,
@@ -716,5 +728,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-17 01:18:05"
+  "generated": "2026-09-17 15:10:47"
 }

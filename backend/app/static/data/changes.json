@@ -1,41 +1,20 @@
 {
   "new_companies": [
-    "Claypond Capital",
-    "Fidelity Bank plc",
-    "Flam",
-    "HealthCap Africa",
-    "JPMorgan",
-    "Lifteller",
-    "QED Investors"
+    "ActionAid",
+    "Hughes"
   ],
-  "new_people": [
-    "Akinshola Samuel Akinde",
-    "Richard Madiebo",
-    "Sarah Boulos",
-    "Uche Elekwachi"
-  ],
-  "psc_added": [
-    {
-      "person": "Aliko Dangote",
-      "company": "Dangote Petroleum Refinery"
-    }
-  ],
+  "new_people": [],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "Bring LG crypto thieves to justice",
-      "url": "https://punchng.com/bring-lg-crypto-thieves-to-justice/",
-      "risk": 85.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 7,
-    "new_people": 4,
-    "psc_added": 1,
+    "new_companies": 2,
+    "new_people": 0,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-17 01:18:00"
+  "generated": "2026-09-17 15:10:39"
 }
