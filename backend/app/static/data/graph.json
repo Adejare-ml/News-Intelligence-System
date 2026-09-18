@@ -139,8 +139,26 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "283e1d4aa831",
       "label": "All Progressives Congress",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "80ecf1ce1dba",
+      "label": "Small and Medium Enterprises Development Agency of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,18 +205,6 @@
       "risk": "Low"
     },
     {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "e4c89820f522",
       "label": "Nigerian Navy",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "95aff86421ed",
       "label": "Fisheries Department",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5ac1e4450b44",
-      "label": "National Health Insurance Authority",
       "type": "agency",
       "risk": "Low"
     },

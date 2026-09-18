@@ -2,12 +2,12 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 975,
-      "mentions": 1677,
+      "companies": 974,
+      "mentions": 1675,
       "risk": {
         "Low": 857,
         "Critical": 59,
-        "Medium": 35,
+        "Medium": 34,
         "High": 24
       }
     },
@@ -51,6 +51,14 @@
       "mentions": 5,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Fintech",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -110,6 +118,14 @@
       }
     },
     {
+      "industry": "Construction",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Education",
       "companies": 1,
       "mentions": 1,
@@ -135,6 +151,14 @@
     },
     {
       "industry": "Healthcare Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare/Religious",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -206,5 +230,5 @@
       }
     }
   ],
-  "generated": "2026-09-18 01:11:40"
+  "generated": "2026-09-18 12:09:31"
 }

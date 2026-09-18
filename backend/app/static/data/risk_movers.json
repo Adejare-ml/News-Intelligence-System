@@ -10,6 +10,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "federal bureau of investigation",
+      "label": "Federal Bureau of Investigation",
+      "recent_avg": 65.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "national insurance commission",
       "label": "National Insurance Commission",
       "recent_avg": 42.5,
@@ -19,12 +28,12 @@
       "previous_mentions": 0
     },
     {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "recent_avg": 41.7,
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 41.4,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 3,
+      "recent_mentions": 7,
       "previous_mentions": 0
     },
     {
@@ -37,21 +46,21 @@
       "previous_mentions": 0
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 35.8,
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "recent_avg": 36.2,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 6,
+      "recent_mentions": 4,
       "previous_mentions": 0
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 35.3,
+      "recent_avg": 36.1,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 16,
+      "recent_mentions": 18,
       "previous_mentions": 0
     },
     {
@@ -66,10 +75,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 27.8,
+      "recent_avg": 25.8,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 9,
+      "recent_mentions": 12,
       "previous_mentions": 0
     },
     {
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 5,
       "previous_mentions": 0
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 15.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-18 01:11:40"
+  "generated": "2026-09-18 12:09:31"
 }
