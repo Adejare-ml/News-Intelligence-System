@@ -1,5 +1,22 @@
 [
   {
+    "ID": 6456,
+    "Time": "2026-09-17T17:36:46Z",
+    "Title": "EFCC warns POS operators against aiding fraudsters",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/efcc-warns-pos-operators-against-aiding-fraudsters/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) has issued a warning to POS operators across Nigeria to avoid collaborating with fraudsters and money launderers.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 30,
+    "Entities": "Economic and Financial Crimes Commission",
+    "Filter Reason": ""
+  },
+  {
     "ID": 6448,
     "Time": "2026-09-18 04:49:26",
     "Title": "FAAC allocation shrinks to N2.33trn as statutory revenue slump by 34.62%",
@@ -1000,23 +1017,6 @@
     "Risk Level": "Low",
     "Importance": 65,
     "Entities": "Federal Government of Nigeria|JPMorgan",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 6271,
-    "Time": "Wed, 16 Sep 2026 17:09:31 GMT",
-    "Title": "CAC Seeks Unified Beneficial Ownership Database for Nigeria - Real Broadcasting Network",
-    "Source": "Real Broadcasting Network",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSlRYMDRCU29xTmloSWhWWV93Q1o5dm5wOUNqb1VISWRmakdQMW1xVXUtMElvalU0bkFuejZTeTdEb1lrdnpFTmFOY0tfemJaMW5kcHV1T21DOWt6bUxXMk4yRnBld2d0aF9YMGxYX1Bwc1diZ0ltaUVPUHNHQnB3M01ydS10RkFJTWtwTkRuZU9JZFRtVHc?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Corporate Affairs Commission (CAC) is seeking the establishment of a unified beneficial ownership database for Nigeria to enhance transparency in corporate ownership.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 60,
-    "Entities": "Corporate Affairs Commission",
     "Filter Reason": ""
   }
 ]

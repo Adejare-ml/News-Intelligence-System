@@ -1,25 +1,25 @@
 {
   "window_days": 7,
   "recent_articles": 177,
-  "previous_articles": 125,
+  "previous_articles": 122,
   "rising": [
     {
       "term": "newspapers",
       "recent": 34,
-      "previous": 16,
-      "change": 18
+      "previous": 15,
+      "change": 19
     },
     {
       "term": "punch",
       "recent": 33,
-      "previous": 16,
-      "change": 17
+      "previous": 15,
+      "change": 18
     },
     {
       "term": "punch newspapers",
       "recent": 33,
-      "previous": 16,
-      "change": 17
+      "previous": 15,
+      "change": 18
     },
     {
       "term": "ipo",
@@ -78,27 +78,9 @@
       "change": -5
     },
     {
-      "term": "faan",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
       "term": "court",
       "recent": 2,
       "previous": 6,
-      "change": -4
-    },
-    {
-      "term": "exit",
-      "recent": 2,
-      "previous": 6,
-      "change": -4
-    },
-    {
-      "term": "digital",
-      "recent": 1,
-      "previous": 5,
       "change": -4
     },
     {
@@ -120,7 +102,25 @@
       "change": -4
     },
     {
-      "term": "assets",
+      "term": "aviation",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "aviation insurance",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "faan",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "financing",
       "recent": 0,
       "previous": 4,
       "change": -4
@@ -135,14 +135,14 @@
     {
       "category": "Company",
       "recent": 35,
-      "previous": 24
+      "previous": 22
     },
     {
       "category": "Legal",
       "recent": 17,
-      "previous": 20
+      "previous": 19
     }
   ],
   "social": [],
-  "generated": "2026-09-18 16:59:34"
+  "generated": "2026-09-18 19:31:21"
 }
