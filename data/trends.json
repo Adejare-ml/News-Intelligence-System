@@ -1,37 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 169,
-  "previous_articles": 122,
+  "recent_articles": 168,
+  "previous_articles": 127,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 33,
-      "previous": 14,
+      "recent": 34,
+      "previous": 15,
       "change": 19
     },
     {
       "term": "punch",
-      "recent": 32,
-      "previous": 14,
+      "recent": 33,
+      "previous": 15,
       "change": 18
     },
     {
       "term": "punch newspapers",
-      "recent": 32,
-      "previous": 14,
+      "recent": 33,
+      "previous": 15,
       "change": 18
     },
     {
       "term": "dangote",
-      "recent": 15,
-      "previous": 5,
-      "change": 10
-    },
-    {
-      "term": "ipo",
-      "recent": 11,
-      "previous": 2,
-      "change": 9
+      "recent": 14,
+      "previous": 6,
+      "change": 8
     },
     {
       "term": "nigeria\u2019s",
@@ -62,6 +56,12 @@
       "recent": 8,
       "previous": 0,
       "change": 8
+    },
+    {
+      "term": "ipo",
+      "recent": 10,
+      "previous": 3,
+      "change": 7
     }
   ],
   "falling": [
@@ -73,9 +73,9 @@
     },
     {
       "term": "lagos",
-      "recent": 2,
+      "recent": 3,
       "previous": 8,
-      "change": -6
+      "change": -5
     },
     {
       "term": "uber",
@@ -84,15 +84,9 @@
       "change": -5
     },
     {
-      "term": "digital",
+      "term": "financial",
       "recent": 1,
       "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "first",
-      "recent": 0,
-      "previous": 5,
       "change": -5
     },
     {
@@ -108,7 +102,13 @@
       "change": -4
     },
     {
-      "term": "imports",
+      "term": "digital",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
+    },
+    {
+      "term": "fraud",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -129,20 +129,20 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 118,
-      "previous": 75
+      "recent": 117,
+      "previous": 80
     },
     {
       "category": "Company",
-      "recent": 35,
+      "recent": 34,
       "previous": 28
     },
     {
       "category": "Legal",
-      "recent": 16,
+      "recent": 17,
       "previous": 19
     }
   ],
   "social": [],
-  "generated": "2026-09-17 20:10:16"
+  "generated": "2026-09-18 01:11:38"
 }
