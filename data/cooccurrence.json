@@ -18,6 +18,10 @@
       "label": "Economic and Financial Crimes Commission"
     },
     {
+      "key": "federal bureau of investigation",
+      "label": "Federal Bureau of Investigation"
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government"
     }
@@ -40,9 +44,14 @@
     },
     {
       "a": "economic and financial crimes commission",
+      "b": "federal bureau of investigation",
+      "weight": 2
+    },
+    {
+      "a": "economic and financial crimes commission",
       "b": "oyo state government",
       "weight": 2
     }
   ],
-  "generated": "2026-09-18 01:11:40"
+  "generated": "2026-09-18 12:09:31"
 }

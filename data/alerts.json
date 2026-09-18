@@ -1,6 +1,29 @@
 {
   "alerts": [
     {
+      "date": "2026-09-18",
+      "title": "Corruption, Customs\u00a0racketeering, govt infighting frustrating trade with Nigeria \u2014 US Report",
+      "url": "https://www.vanguardngr.com/2026/09/corruption-customs-racketeering-govt-infighting-frustrating-trade-with-nigeria-us-report/",
+      "source": "Vanguard",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Nigeria Customs Service"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Group urges FBI, EFCC to widen donor health funds probe - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5oWDdQUHlKRXVMSW1BbkZtRDdBSDc4d19vZjMxSG5fUmYxbzBDcURrYUhHazhqOTcwd1RzaDdETlFiM0lQS3FQVG5POHExUXBKSU1JNlRfa3J1U3BiTjdBUk10aTVlYkFRQ0tyU1R1a1JRWTFsOU5xYllobGxvcVk?oc=5",
+      "source": "Punch Newspapers",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "Federal Bureau of Investigation"
+      ]
+    },
+    {
       "date": "2026-09-17",
       "title": "Bring LG crypto thieves to justice",
       "url": "https://punchng.com/bring-lg-crypto-thieves-to-justice/",
@@ -87,5 +110,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-18 01:11:40"
+  "generated": "2026-09-18 12:09:31"
 }
