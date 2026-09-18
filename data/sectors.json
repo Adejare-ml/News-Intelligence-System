@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 4,
-      "mentions": 54,
+      "mentions": 55,
       "risk": {
         "Medium": 1,
         "Low": 3
@@ -91,6 +91,22 @@
       "mentions": 2,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Professional Services/Accounting",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Shipping",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -198,14 +214,6 @@
       }
     },
     {
-      "industry": "Shipping",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Technology/Digital Services",
       "companies": 1,
       "mentions": 1,
@@ -230,5 +238,5 @@
       }
     }
   ],
-  "generated": "2026-09-18 12:09:31"
+  "generated": "2026-09-18 16:59:36"
 }

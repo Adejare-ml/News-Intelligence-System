@@ -355,6 +355,12 @@
       "totals": {}
     },
     {
+      "name": "Nigerian Air Force",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Nigerian Civil Aviation Authority",
       "contracts": 1,
       "undisclosed": 1,
@@ -438,8 +444,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 63,
-      "undisclosed": 38,
+      "contracts": 64,
+      "undisclosed": 39,
       "totals": {
         "NGN": 4498425260000.0,
         "USD": 20500000000.0
@@ -728,5 +734,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-18 12:09:31"
+  "generated": "2026-09-18 16:59:36"
 }
