@@ -48,19 +48,10 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 33.3,
+      "recent_avg": 35.3,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 15,
-      "previous_mentions": 0
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 32.1,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 7,
+      "recent_mentions": 16,
       "previous_mentions": 0
     },
     {
@@ -70,6 +61,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 27.8,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 9,
       "previous_mentions": 0
     },
     {
@@ -136,6 +136,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "yakubu gowon university",
+      "label": "Yakubu Gowon University",
+      "recent_avg": 20.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "bat",
       "label": "BAT Nigeria",
       "recent_avg": 17.5,
@@ -163,18 +172,9 @@
       "previous_mentions": 0
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 12.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "presco",
-      "label": "Presco",
-      "recent_avg": 5.0,
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 15.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-17 20:10:25"
+  "generated": "2026-09-18 01:11:40"
 }

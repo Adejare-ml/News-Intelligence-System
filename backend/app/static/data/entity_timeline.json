@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 15,
+      "total_mentions": 16,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,9 +13,28 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 14,
-          "avg_risk": 33.6,
+          "mentions": 15,
+          "avg_risk": 35.7,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 8,
+          "avg_risk": 20.6,
+          "max_risk": 65
         }
       ]
     },
@@ -48,25 +67,6 @@
           "mentions": 7,
           "avg_risk": 22.9,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 6,
-          "avg_risk": 23.3,
-          "max_risk": 65
         }
       ]
     },
@@ -200,6 +200,19 @@
       ]
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 2,
@@ -291,6 +304,19 @@
       ]
     },
     {
+      "key": "yakubu gowon university",
+      "label": "Yakubu Gowon University",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ascsn",
       "label": "ASCSN",
       "total_mentions": 1,
@@ -352,6 +378,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -560,6 +599,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "federal bureau of investigation",
+      "label": "Federal Bureau of Investigation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -824,6 +876,19 @@
       ]
     },
     {
+      "key": "khalil suleiman halilu",
+      "label": "Khalil Suleiman Halilu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "lagos chamber of commerce and industry",
       "label": "Lagos Chamber of Commerce and Industry",
       "total_mentions": 1,
@@ -846,19 +911,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -943,6 +995,19 @@
     {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national agency for science and engineering infrastructure",
+      "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 1,
       "points": [
         {
@@ -1188,6 +1253,19 @@
       ]
     },
     {
+      "key": "pasuma",
+      "label": "Pasuma",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "pharmacists council of",
       "label": "Pharmacists Council of Nigeria",
       "total_mentions": 1,
@@ -1331,6 +1409,19 @@
       ]
     },
     {
+      "key": "toyin abraham",
+      "label": "Toyin Abraham",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "usaid",
       "label": "USAID",
       "total_mentions": 1,
@@ -1355,20 +1446,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "yakubu gowon university",
-      "label": "Yakubu Gowon University",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-09-17 20:10:25"
+  "generated": "2026-09-18 01:11:40"
 }

@@ -121,26 +121,56 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "283e1d4aa831",
+      "label": "All Progressives Congress",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6d8852f19447",
+      "label": "Federal Bureau of Investigation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f3acbeea4dea",
+      "label": "Yakubu Gowon University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "84b6d6cbf896",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,33 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "6add86fa3929",
-      "label": "Financial Action Task Force",
-      "type": "agency",
+      "id": "7249b7ffd3c6",
+      "label": "Khalil Suleiman Halilu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "95178e3865cd",
-      "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
-      "type": "agency",
+      "id": "fefb843eaf49",
+      "label": "Toyin Abraham",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "f3acbeea4dea",
-      "label": "Yakubu Gowon University",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e79817c87e24",
-      "label": "National Identity Management Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
-      "type": "agency",
+      "id": "cbcd2bcef258",
+      "label": "Pasuma",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -469,36 +487,6 @@
       "risk": "Low"
     },
     {
-      "id": "292e5aa14acd",
-      "label": "David Umahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "c1526ad83945",
-      "label": "Femi Falana",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "74eb1ae50a3b",
-      "label": "Wilfred Ikatari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6ba1a0297fa2",
-      "label": "RCICA Lagos",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "77c793dd24f7",
       "label": "Aliko Dangote",
       "type": "psc",
@@ -619,6 +607,12 @@
       "risk": "Low"
     },
     {
+      "id": "95178e3865cd",
+      "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "697b31d5b595",
       "label": "Hughes",
       "type": "company",
@@ -679,6 +673,12 @@
       "risk": "Low"
     },
     {
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
       "type": "agency",
@@ -716,6 +716,24 @@
     }
   ],
   "edges": [
+    {
+      "id": "656dcdee0f3a",
+      "from": "7249b7ffd3c6",
+      "to": "84b6d6cbf896",
+      "label": "Appointed as Executive Vice Chairman and Chief Executive Officer"
+    },
+    {
+      "id": "6e8266345f74",
+      "from": "fefb843eaf49",
+      "to": "283e1d4aa831",
+      "label": "Appointed as Appointee"
+    },
+    {
+      "id": "0548c4cba734",
+      "from": "cbcd2bcef258",
+      "to": "283e1d4aa831",
+      "label": "Appointed as Appointee"
+    },
     {
       "id": "173d8cf4554e",
       "from": "2388a11cf55e",
@@ -847,24 +865,6 @@
       "from": "aefd239cfd28",
       "to": "5d91f826871b",
       "label": "Appointed as Non-executive Director"
-    },
-    {
-      "id": "b268c9e64d5a",
-      "from": "292e5aa14acd",
-      "to": "23d8905a6cbb",
-      "label": "Appointed as Minister of Works"
-    },
-    {
-      "id": "4e5be6eeacf1",
-      "from": "c1526ad83945",
-      "to": "37a6259cc0c1",
-      "label": "Appointed as Legal Practitioner"
-    },
-    {
-      "id": "0d74740f72ea",
-      "from": "74eb1ae50a3b",
-      "to": "6ba1a0297fa2",
-      "label": "Appointed as Leader/Executive"
     },
     {
       "id": "b42222bf292e",
