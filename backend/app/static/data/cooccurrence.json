@@ -6,6 +6,10 @@
       "label": "African Action Congress"
     },
     {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress"
+    },
+    {
       "key": "bat",
       "label": "BAT Nigeria"
     },
@@ -24,6 +28,10 @@
     {
       "key": "oyo state government",
       "label": "Oyo State Government"
+    },
+    {
+      "key": "toyin abraham",
+      "label": "Toyin Abraham"
     }
   ],
   "edges": [
@@ -35,6 +43,11 @@
     {
       "a": "african action congress",
       "b": "oyo state government",
+      "weight": 2
+    },
+    {
+      "a": "all progressives congress",
+      "b": "toyin abraham",
       "weight": 2
     },
     {
@@ -53,5 +66,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-09-18 12:09:31"
+  "generated": "2026-09-18 16:59:36"
 }

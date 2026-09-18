@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -157,8 +163,26 @@
       "risk": "Low"
     },
     {
+      "id": "e29340b992f3",
+      "label": "Federal Ministry of Finance",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "80ecf1ce1dba",
       "label": "Small and Medium Enterprises Development Agency of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bb266503ea3",
+      "label": "Federation Account Allocation Committee",
       "type": "agency",
       "risk": "Low"
     },
@@ -181,14 +205,14 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
+      "id": "5cdf8c992852",
+      "label": "Nigerian Air Force",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,30 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "3933ac79ce03",
-      "label": "Corporate Affairs Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "70f9ffcc70c5",
-      "label": "USAID",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7a0cefe99056",
-      "label": "Chartered Institute of Procurement and Supply Management of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "95aff86421ed",
-      "label": "Fisheries Department",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "7249b7ffd3c6",
       "label": "Khalil Suleiman Halilu",
       "type": "person",
@@ -256,6 +256,18 @@
       "id": "cbcd2bcef258",
       "label": "Pasuma",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3e45c1f8a33f",
+      "label": "Heineken Lokpobiri",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fcc3d69557a3",
+      "label": "Federal Ministry of Petroleum Resources",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -397,12 +409,6 @@
       "risk": "Low"
     },
     {
-      "id": "fcc3d69557a3",
-      "label": "Federal Ministry of Petroleum Resources",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "6b8bead22e32",
       "label": "Dwayne Frazier",
       "type": "person",
@@ -471,18 +477,6 @@
     {
       "id": "f067d5bf97d4",
       "label": "Nigeria Export-Import Bank",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "aefd239cfd28",
-      "label": "Iyinoluwa Aboyeji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "5d91f826871b",
-      "label": "Learn Africa",
       "type": "company",
       "risk": "Low"
     },
@@ -707,12 +701,6 @@
       "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "83e5dcc0d346",
-      "label": "Buratai\u2019s company",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -726,13 +714,19 @@
       "id": "6e8266345f74",
       "from": "fefb843eaf49",
       "to": "283e1d4aa831",
-      "label": "Appointed as Appointee"
+      "label": "Appointed as Campaign Council Member"
     },
     {
       "id": "0548c4cba734",
       "from": "cbcd2bcef258",
       "to": "283e1d4aa831",
       "label": "Appointed as Appointee"
+    },
+    {
+      "id": "adc38c9f0fd4",
+      "from": "3e45c1f8a33f",
+      "to": "fcc3d69557a3",
+      "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
     },
     {
       "id": "173d8cf4554e",
@@ -861,12 +855,6 @@
       "label": "Appointed as Former Managing Director"
     },
     {
-      "id": "811ae3ecc118",
-      "from": "aefd239cfd28",
-      "to": "5d91f826871b",
-      "label": "Appointed as Non-executive Director"
-    },
-    {
       "id": "b42222bf292e",
       "from": "77c793dd24f7",
       "to": "01ccce37119e",
@@ -931,6 +919,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "505cfef1ca5e",
+      "from": "334c4a4c42fd",
+      "to": "5cdf8c992852",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
@@ -1020,12 +1014,6 @@
       "id": "8897356bec22",
       "from": "334c4a4c42fd",
       "to": "387e8dea8fb6",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "3191e28c65b2",
-      "from": "83e5dcc0d346",
-      "to": "0ba0cb08c8cb",
       "label": "Contract Awardee"
     }
   ]

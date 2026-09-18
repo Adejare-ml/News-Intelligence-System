@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 12,
+      "total_mentions": 13,
       "points": [
         {
           "week": "2026-09-07",
@@ -32,8 +32,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 11,
-          "avg_risk": 20.5,
+          "mentions": 12,
+          "avg_risk": 20.0,
           "max_risk": 65
         }
       ]
@@ -84,6 +84,25 @@
       ]
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 5,
@@ -105,25 +124,6 @@
           "week": "2026-09-14",
           "mentions": 5,
           "avg_risk": 17.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 16.7,
           "max_risk": 20
         }
       ]
@@ -168,6 +168,19 @@
       ]
     },
     {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bat",
       "label": "BAT Nigeria",
       "total_mentions": 2,
@@ -177,6 +190,19 @@
           "mentions": 2,
           "avg_risk": 17.5,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
         }
       ]
     },
@@ -213,6 +239,32 @@
       ]
     },
     {
+      "key": "federation account allocation committee",
+      "label": "Federation Account Allocation Committee",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "institute of chartered accountants of",
+      "label": "Institute of Chartered Accountants of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "total_mentions": 2,
@@ -221,6 +273,19 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -291,6 +356,19 @@
       ]
     },
     {
+      "key": "national shipping line",
+      "label": "Nigerian National Shipping Line",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "presco",
       "label": "Presco",
       "total_mentions": 2,
@@ -300,6 +378,19 @@
           "mentions": 2,
           "avg_risk": 5.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "toyin abraham",
+      "label": "Toyin Abraham",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
         }
       ]
     },
@@ -391,19 +482,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -577,19 +655,6 @@
       ]
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "dangote petroleum refinery and petrochemicals",
       "label": "Dangote Petroleum Refinery and Petrochemicals",
       "total_mentions": 1,
@@ -625,6 +690,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "federal ministry of finance",
+      "label": "Federal Ministry of Finance",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -800,6 +878,19 @@
     {
       "key": "healthcap africa",
       "label": "HealthCap Africa",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "heineken lokpobiri",
+      "label": "Heineken Lokpobiri",
       "total_mentions": 1,
       "points": [
         {
@@ -1019,19 +1110,6 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national agency for science and engineering infrastructure",
       "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 1,
@@ -1175,6 +1253,19 @@
       ]
     },
     {
+      "key": "air force",
+      "label": "Nigerian Air Force",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "airspace management agency",
       "label": "Nigerian Airspace Management Agency",
       "total_mentions": 1,
@@ -1223,19 +1314,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national shipping line",
-      "label": "Nigerian National Shipping Line",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1461,19 +1539,6 @@
       ]
     },
     {
-      "key": "toyin abraham",
-      "label": "Toyin Abraham",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "usaid",
       "label": "USAID",
       "total_mentions": 1,
@@ -1500,5 +1565,5 @@
       ]
     }
   ],
-  "generated": "2026-09-18 12:09:31"
+  "generated": "2026-09-18 16:59:36"
 }
