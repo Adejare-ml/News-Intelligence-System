@@ -1,25 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 177,
-  "previous_articles": 122,
+  "recent_articles": 187,
+  "previous_articles": 114,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 34,
-      "previous": 15,
-      "change": 19
+      "recent": 35,
+      "previous": 13,
+      "change": 22
     },
     {
       "term": "punch",
-      "recent": 33,
-      "previous": 15,
-      "change": 18
+      "recent": 34,
+      "previous": 13,
+      "change": 21
     },
     {
       "term": "punch newspapers",
-      "recent": 33,
-      "previous": 15,
-      "change": 18
+      "recent": 34,
+      "previous": 13,
+      "change": 21
+    },
+    {
+      "term": "dangote",
+      "recent": 15,
+      "previous": 6,
+      "change": 9
     },
     {
       "term": "ipo",
@@ -28,9 +34,15 @@
       "change": 9
     },
     {
-      "term": "dangote",
-      "recent": 14,
-      "previous": 6,
+      "term": "urges",
+      "recent": 10,
+      "previous": 1,
+      "change": 9
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 13,
+      "previous": 5,
       "change": 8
     },
     {
@@ -50,33 +62,9 @@
       "recent": 8,
       "previous": 0,
       "change": 8
-    },
-    {
-      "term": "nigeria\u2019s",
-      "recent": 12,
-      "previous": 5,
-      "change": 7
-    },
-    {
-      "term": "customs",
-      "recent": 8,
-      "previous": 1,
-      "change": 7
     }
   ],
   "falling": [
-    {
-      "term": "lagos",
-      "recent": 3,
-      "previous": 8,
-      "change": -5
-    },
-    {
-      "term": "uber",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
     {
       "term": "court",
       "recent": 2,
@@ -90,13 +78,13 @@
       "change": -4
     },
     {
-      "term": "fraud",
+      "term": "strengthen",
       "recent": 1,
       "previous": 5,
       "change": -4
     },
     {
-      "term": "strengthen",
+      "term": "uber",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -114,13 +102,25 @@
       "change": -4
     },
     {
-      "term": "faan",
+      "term": "financing",
       "recent": 0,
       "previous": 4,
       "change": -4
     },
     {
-      "term": "financing",
+      "term": "naicom sign",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "ncaa naicom",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "sign",
       "recent": 0,
       "previous": 4,
       "change": -4
@@ -129,20 +129,20 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 125,
-      "previous": 81
+      "recent": 126,
+      "previous": 77
     },
     {
       "category": "Company",
-      "recent": 35,
-      "previous": 22
+      "recent": 39,
+      "previous": 21
     },
     {
       "category": "Legal",
-      "recent": 17,
-      "previous": 19
+      "recent": 22,
+      "previous": 16
     }
   ],
   "social": [],
-  "generated": "2026-09-18 19:31:21"
+  "generated": "2026-09-19 01:08:30"
 }

@@ -36,6 +36,11 @@
   ],
   "edges": [
     {
+      "a": "economic and financial crimes commission",
+      "b": "federal bureau of investigation",
+      "weight": 3
+    },
+    {
       "a": "african action congress",
       "b": "economic and financial crimes commission",
       "weight": 2
@@ -57,14 +62,9 @@
     },
     {
       "a": "economic and financial crimes commission",
-      "b": "federal bureau of investigation",
-      "weight": 2
-    },
-    {
-      "a": "economic and financial crimes commission",
       "b": "oyo state government",
       "weight": 2
     }
   ],
-  "generated": "2026-09-18 19:31:37"
+  "generated": "2026-09-19 01:08:32"
 }

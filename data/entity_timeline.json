@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 19,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,8 +13,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 18,
-          "avg_risk": 35.6,
+          "mentions": 19,
+          "avg_risk": 36.8,
           "max_risk": 85
         }
       ]
@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 13,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-07",
@@ -32,8 +32,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 12,
-          "avg_risk": 20.0,
+          "mentions": 14,
+          "avg_risk": 23.6,
           "max_risk": 65
         }
       ]
@@ -84,6 +84,19 @@
       ]
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 6,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "total_mentions": 5,
@@ -116,19 +129,6 @@
       ]
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 4,
@@ -137,6 +137,45 @@
           "week": "2026-09-14",
           "mentions": 4,
           "avg_risk": 36.2,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "federal bureau of investigation",
+      "label": "Federal Bureau of Investigation",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 63.3,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 45.0,
           "max_risk": 45
         }
       ]
@@ -194,19 +233,6 @@
       ]
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 2,
@@ -226,19 +252,6 @@
       ]
     },
     {
-      "key": "federal bureau of investigation",
-      "label": "Federal Bureau of Investigation",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "federation account allocation committee",
       "label": "Federation Account Allocation Committee",
       "total_mentions": 2,
@@ -248,6 +261,19 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federation of construction industry",
+      "label": "Federation of Construction Industry",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
         }
       ]
     },
@@ -382,6 +408,19 @@
       ]
     },
     {
+      "key": "sunrise power and transmission company",
+      "label": "Sunrise Power and Transmission Company Limited",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "toyin abraham",
       "label": "Toyin Abraham",
       "total_mentions": 2,
@@ -460,6 +499,19 @@
       ]
     },
     {
+      "key": "african diaspora network",
+      "label": "African Diaspora Network",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "akinshola samuel akinde",
       "label": "Akinshola Samuel Akinde",
       "total_mentions": 1,
@@ -482,6 +534,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "albert",
+      "label": "Albert",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -616,6 +681,19 @@
       ]
     },
     {
+      "key": "coca cola hbc",
+      "label": "Coca-Cola HBC Group",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "code of conduct bureau",
       "label": "Code of Conduct Bureau",
       "total_mentions": 1,
@@ -681,6 +759,19 @@
       ]
     },
     {
+      "key": "federal civil service",
+      "label": "Federal Civil Service",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "federal ministry of art culture tourism and the creative economy",
       "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
       "total_mentions": 1,
@@ -729,19 +820,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federation of construction industry",
-      "label": "Federation of Construction Industry",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -1058,6 +1136,19 @@
       ]
     },
     {
+      "key": "loft keys",
+      "label": "Loft & Keys Ltd",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 1,
@@ -1106,6 +1197,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1305,6 +1409,19 @@
       ]
     },
     {
+      "key": "bottling company",
+      "label": "Nigerian Bottling Company Ltd",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "communications satellite nigcomsat",
       "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
       "total_mentions": 1,
@@ -1359,6 +1476,19 @@
     {
       "key": "pasuma",
       "label": "Pasuma",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "petroleum refining and petrochemicals owners association of",
+      "label": "Petroleum Refining and Petrochemicals Owners Association of Nigeria",
       "total_mentions": 1,
       "points": [
         {
@@ -1539,6 +1669,45 @@
       ]
     },
     {
+      "key": "sunrise energy",
+      "label": "Sunrise Energy",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "sunrise power",
+      "label": "Sunrise Power",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "theodore",
+      "label": "Theodore",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "usaid",
       "label": "USAID",
       "total_mentions": 1,
@@ -1565,5 +1734,5 @@
       ]
     }
   ],
-  "generated": "2026-09-18 19:31:37"
+  "generated": "2026-09-19 01:08:32"
 }

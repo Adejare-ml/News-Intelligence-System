@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 974,
-      "mentions": 1675,
+      "companies": 975,
+      "mentions": 1676,
       "risk": {
-        "Low": 857,
+        "Low": 858,
         "Critical": 59,
         "Medium": 34,
         "High": 24
@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 4,
-      "mentions": 55,
+      "companies": 5,
+      "mentions": 58,
       "risk": {
         "Medium": 1,
-        "Low": 3
+        "Low": 4
       }
     },
     {
@@ -78,11 +78,51 @@
       }
     },
     {
+      "industry": "Beverages",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Construction",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Energy",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Medium": 2
+      }
+    },
+    {
+      "industry": "Energy/Infrastructure",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Insurance",
       "companies": 2,
       "mentions": 2,
       "risk": {
         "High": 2
+      }
+    },
+    {
+      "industry": "Legal/Arbitration",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -131,14 +171,6 @@
       "mentions": 1,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Medium": 1
       }
     },
     {
@@ -214,6 +246,14 @@
       }
     },
     {
+      "industry": "Real Estate",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Technology/Digital Services",
       "companies": 1,
       "mentions": 1,
@@ -238,5 +278,5 @@
       }
     }
   ],
-  "generated": "2026-09-18 19:31:37"
+  "generated": "2026-09-19 01:08:32"
 }

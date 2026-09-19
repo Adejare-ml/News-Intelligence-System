@@ -1138,5 +1138,25 @@
     "Date": "2026-09-18",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Sunrise Power and Transmission Company Limited",
+    "Amount": "$3.38 Billion",
+    "Project": "1,500MW Mambilla Hydroelectric Power Project",
+    "Source": "The Punch",
+    "Date": "2026-09-19",
+    "Amount Value": 3380000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Sunrise Power",
+    "Amount": "$2.35 Billion (Disputed)",
+    "Project": "Mambilla hydropower project",
+    "Source": "Vanguard",
+    "Date": "2026-09-19",
+    "Amount Value": 2350000000.0,
+    "Amount Currency": "USD"
   }
 ]

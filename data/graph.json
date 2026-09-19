@@ -109,14 +109,14 @@
       "risk": "Critical"
     },
     {
-      "id": "dce5a31d3181",
-      "label": "MTN Nigeria",
+      "id": "01ccce37119e",
+      "label": "Dangote Petroleum Refinery",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "f2c3b75d7304",
-      "label": "Ondo",
+      "id": "dce5a31d3181",
+      "label": "MTN Nigeria",
       "type": "company",
       "risk": "Low"
     },
@@ -127,14 +127,32 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "5a08bce2d78d",
+      "label": "Federal Civil Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6d8852f19447",
+      "label": "Federal Bureau of Investigation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d02e4d68632b",
+      "label": "International Chamber of Commerce",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,12 +205,6 @@
       "risk": "Low"
     },
     {
-      "id": "6d8852f19447",
-      "label": "Federal Bureau of Investigation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f3acbeea4dea",
       "label": "Yakubu Gowon University",
       "type": "agency",
@@ -223,21 +235,27 @@
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
+      "id": "56a525aa777f",
+      "label": "Theodore",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "e4c89820f522",
-      "label": "Nigerian Navy",
-      "type": "agency",
+      "id": "26cd16c5d969",
+      "label": "African Diaspora Network",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
+      "id": "6c5bc43b4439",
+      "label": "Albert",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "c9749d310d6c",
+      "label": "Loft & Keys Ltd",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -457,40 +475,10 @@
       "risk": "Low"
     },
     {
-      "id": "456aadaa8189",
-      "label": "Orya",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c145f77311a9",
-      "label": "Nigerian Export-Import Bank",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "4be21d2fad5f",
-      "label": "Robert Orya",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f067d5bf97d4",
-      "label": "Nigeria Export-Import Bank",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "77c793dd24f7",
       "label": "Aliko Dangote",
       "type": "psc",
       "risk": "High"
-    },
-    {
-      "id": "01ccce37119e",
-      "label": "Dangote Petroleum Refinery",
-      "type": "company",
-      "risk": "Medium"
     },
     {
       "id": "6617740c0c1a",
@@ -595,6 +583,18 @@
       "risk": "Medium"
     },
     {
+      "id": "22bc1419bc0f",
+      "label": "Sunrise Power",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ce2f789533a5",
+      "label": "Sunrise Power and Transmission Company Limited",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -695,15 +695,21 @@
       "label": "Agricultural Research Council of Nigeria",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "cc3246c05d31",
+      "from": "56a525aa777f",
+      "to": "26cd16c5d969",
+      "label": "Appointed as Board Member"
+    },
+    {
+      "id": "118c10bd664d",
+      "from": "6c5bc43b4439",
+      "to": "c9749d310d6c",
+      "label": "Appointed as CEO"
+    },
     {
       "id": "656dcdee0f3a",
       "from": "7249b7ffd3c6",
@@ -843,18 +849,6 @@
       "label": "Appointed as Governor"
     },
     {
-      "id": "9284bec17e5e",
-      "from": "456aadaa8189",
-      "to": "c145f77311a9",
-      "label": "Appointed as Managing Director"
-    },
-    {
-      "id": "cc13bea8cbbd",
-      "from": "4be21d2fad5f",
-      "to": "f067d5bf97d4",
-      "label": "Appointed as Former Managing Director"
-    },
-    {
       "id": "b42222bf292e",
       "from": "77c793dd24f7",
       "to": "01ccce37119e",
@@ -919,6 +913,18 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "c5abba81705d",
+      "from": "22bc1419bc0f",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "244d6336fe2c",
+      "from": "ce2f789533a5",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
     },
     {
       "id": "505cfef1ca5e",
@@ -1002,18 +1008,6 @@
       "id": "b54609f82442",
       "from": "334c4a4c42fd",
       "to": "47cf1dfd4541",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "f8428f09d5a7",
-      "from": "334c4a4c42fd",
-      "to": "5a98eb23f6f5",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "8897356bec22",
-      "from": "334c4a4c42fd",
-      "to": "387e8dea8fb6",
       "label": "Contract Awardee"
     }
   ]
