@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 20,
+      "total_mentions": 21,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,8 +13,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 19,
-          "avg_risk": 36.8,
+          "mentions": 20,
+          "avg_risk": 38.2,
           "max_risk": 85
         }
       ]
@@ -86,12 +86,12 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 6,
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 6,
-          "avg_risk": 17.5,
+          "mentions": 7,
+          "avg_risk": 17.9,
           "max_risk": 20
         }
       ]
@@ -129,6 +129,19 @@
       ]
     },
     {
+      "key": "federal bureau of investigation",
+      "label": "Federal Bureau of Investigation",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 63.8,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 4,
@@ -151,19 +164,6 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "federal bureau of investigation",
-      "label": "Federal Bureau of Investigation",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 63.3,
-          "max_risk": 65
         }
       ]
     },
@@ -293,6 +293,19 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "nnpc",
+      "label": "NNPC Limited",
       "total_mentions": 2,
       "points": [
         {
@@ -902,6 +915,19 @@
       ]
     },
     {
+      "key": "good governance initiative",
+      "label": "Good Governance Initiative",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "government of india",
       "label": "Government of India",
       "total_mentions": 1,
@@ -969,6 +995,19 @@
     {
       "key": "heineken lokpobiri",
       "label": "Heineken Lokpobiri",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "hitech",
+      "label": "Hitech",
       "total_mentions": 1,
       "points": [
         {
@@ -1197,19 +1236,6 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1461,6 +1487,19 @@
       ]
     },
     {
+      "key": "opl 245",
+      "label": "OPL 245",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 70.0,
+          "max_risk": 70
+        }
+      ]
+    },
+    {
       "key": "ola olukoyede",
       "label": "Ola Olukoyede",
       "total_mentions": 1,
@@ -1695,6 +1734,19 @@
       ]
     },
     {
+      "key": "tertiary education trust fund",
+      "label": "Tertiary Education Trust Fund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "theodore",
       "label": "Theodore",
       "total_mentions": 1,
@@ -1704,6 +1756,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1734,5 +1799,5 @@
       ]
     }
   ],
-  "generated": "2026-09-19 01:08:32"
+  "generated": "2026-09-19 11:51:19"
 }

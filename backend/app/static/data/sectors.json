@@ -13,11 +13,12 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 5,
-      "mentions": 58,
+      "companies": 7,
+      "mentions": 61,
       "risk": {
         "Medium": 1,
-        "Low": 4
+        "Low": 5,
+        "High": 1
       }
     },
     {
@@ -54,6 +55,15 @@
       }
     },
     {
+      "industry": "Construction",
+      "companies": 2,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 1,
       "mentions": 3,
@@ -83,14 +93,6 @@
       "mentions": 2,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Medium": 1
       }
     },
     {
@@ -171,6 +173,14 @@
       "mentions": 1,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Civil Society",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -278,5 +288,5 @@
       }
     }
   ],
-  "generated": "2026-09-19 01:08:32"
+  "generated": "2026-09-19 11:51:19"
 }

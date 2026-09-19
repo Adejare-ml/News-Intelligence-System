@@ -13,16 +13,16 @@
       "risk": "Low"
     },
     {
-      "id": "8580350f87e8",
-      "label": "EFCC",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
       "id": "f38bd75574f6",
       "label": "Nigerian National Petroleum Company Limited",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "8580350f87e8",
+      "label": "EFCC",
+      "type": "company",
+      "risk": "Critical"
     },
     {
       "id": "05087274f45e",
@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "653fd7557fc1",
+      "label": "Tertiary Education Trust Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "5a08bce2d78d",
       "label": "Federal Civil Service",
       "type": "agency",
@@ -141,6 +147,12 @@
     {
       "id": "6d8852f19447",
       "label": "Federal Bureau of Investigation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6eac15c47af6",
+      "label": "NNPC",
       "type": "agency",
       "risk": "Low"
     },
@@ -225,12 +237,6 @@
     {
       "id": "38b03bbf0068",
       "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bbdd3227478f",
-      "label": "Niger Delta Development Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -583,6 +589,12 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "22bc1419bc0f",
       "label": "Sunrise Power",
       "type": "company",
@@ -591,12 +603,6 @@
     {
       "id": "ce2f789533a5",
       "label": "Sunrise Power and Transmission Company Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
       "type": "company",
       "risk": "Low"
     },
@@ -913,6 +919,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "78ac084f597e",
+      "from": "334c4a4c42fd",
+      "to": "653fd7557fc1",
+      "label": "Contract Awardee"
     },
     {
       "id": "c5abba81705d",
