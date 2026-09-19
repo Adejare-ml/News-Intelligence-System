@@ -1,30 +1,28 @@
 {
   "new_companies": [
-    "African Diaspora Network",
-    "Coca-Cola HBC Group",
-    "International Chamber of Commerce",
-    "Loft & Keys Ltd",
-    "Nigerian Bottling Company Ltd",
-    "Petroleum Refining and Petrochemicals Owners Association of Nigeria",
-    "Sunrise Energy",
-    "Sunrise Power",
-    "Sunrise Power and Transmission Company Limited"
+    "Good Governance Initiative",
+    "Hitech",
+    "OPL 245",
+    "TotalEnergies"
   ],
-  "new_people": [
-    "Albert",
-    "Theodore"
-  ],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Remembering Kweku Amafegha and the saga of OPL 245, By Osmund Agbo - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWGxuMVhXZlJHX1JsdmJCU3J3WnZHYlJGbFo4bEk4SklncTUzSDRKNmxUY0RnU1psWkFUVkFTT1NXUmVnOXQ1ZlVrUmQ3bmM1MkQ3ZFBwSWdxdHZ5UWdqZzFES1F3dU9OdUdsZnhwZXVrSkZ6QVJLWm1IZGNaMlZQamQzdEZ6cUNkM2JudXY5Nm9DLXZqME1ObXpGUzJ3LVVZVE00ZmxmVzBLczkyMjdpZkdsRlkwUkU?oc=5",
+      "risk": 70.0
+    }
+  ],
   "counts": {
-    "new_companies": 9,
-    "new_people": 2,
+    "new_companies": 4,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-09-19 01:08:29"
+  "generated": "2026-09-19 11:51:08"
 }

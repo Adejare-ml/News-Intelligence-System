@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 34,
+    "Mention Count": 35,
     "Last Seen": "2026-09-14 18:21",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
@@ -6554,7 +6554,7 @@
   {
     "Company": "Dangote Petroleum Refinery",
     "Mention Count": 9,
-    "Last Seen": "2026-09-19 01:06",
+    "Last Seen": "2026-09-19 1:06",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -8082,7 +8082,7 @@
   {
     "Company": "Federation of Construction Industry",
     "Mention Count": 2,
-    "Last Seen": "2026-09-19 01:06",
+    "Last Seen": "2026-09-19 1:06",
     "Industry": "Construction",
     "Risk Level": "Medium",
     "First Seen": "2026-09-18 12:06"
@@ -8122,7 +8122,7 @@
   {
     "Company": "Sunrise Power and Transmission Company Limited",
     "Mention Count": 2,
-    "Last Seen": "2026-09-19 01:07",
+    "Last Seen": "2026-09-19 1:07",
     "Industry": "Energy/Infrastructure",
     "Risk Level": "Medium",
     "First Seen": "2026-09-19 01:05"
@@ -8154,7 +8154,7 @@
   {
     "Company": "International Chamber of Commerce",
     "Mention Count": 2,
-    "Last Seen": "2026-09-19 01:07",
+    "Last Seen": "2026-09-19 1:07",
     "Industry": "Legal/Arbitration",
     "Risk Level": "Medium",
     "First Seen": "2026-09-19 01:06"
@@ -8174,5 +8174,37 @@
     "Industry": "Energy",
     "Risk Level": "Medium",
     "First Seen": "2026-09-19 01:07"
+  },
+  {
+    "Company": "OPL 245",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-19 11:47",
+    "Industry": "Oil & Gas",
+    "Risk Level": "High",
+    "First Seen": "2026-09-19 11:47"
+  },
+  {
+    "Company": "Hitech",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-19 11:48",
+    "Industry": "Construction",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-19 11:48"
+  },
+  {
+    "Company": "TotalEnergies",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-19 11:48",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-19 11:48"
+  },
+  {
+    "Company": "Good Governance Initiative",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-19 11:49",
+    "Industry": "Civil Society",
+    "Risk Level": "Medium",
+    "First Seen": "2026-09-19 11:49"
   }
 ]

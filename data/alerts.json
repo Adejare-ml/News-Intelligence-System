@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-09-19",
+      "title": "Remembering Kweku Amafegha and the saga of OPL 245, By Osmund Agbo - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWGxuMVhXZlJHX1JsdmJCU3J3WnZHYlJGbFo4bEk4SklncTUzSDRKNmxUY0RnU1psWkFUVkFTT1NXUmVnOXQ1ZlVrUmQ3bmM1MkQ3ZFBwSWdxdHZ5UWdqZzFES1F3dU9OdUdsZnhwZXVrSkZ6QVJLWm1IZGNaMlZQamQzdEZ6cUNkM2JudXY5Nm9DLXZqME1ObXpGUzJ3LVVZVE00ZmxmVzBLczkyMjdpZkdsRlkwUkU?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "OPL 245"
+      ]
+    },
+    {
       "date": "2026-09-18",
       "title": "Corruption, Customs\u00a0racketeering, govt infighting frustrating trade with Nigeria \u2014 US Report",
       "url": "https://www.vanguardngr.com/2026/09/corruption-customs-racketeering-govt-infighting-frustrating-trade-with-nigeria-us-report/",
@@ -110,5 +121,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-19 01:08:32"
+  "generated": "2026-09-19 11:51:19"
 }

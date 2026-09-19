@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 187,
-  "previous_articles": 114,
+  "recent_articles": 182,
+  "previous_articles": 123,
   "rising": [
     {
       "term": "newspapers",
@@ -22,27 +22,27 @@
       "change": 21
     },
     {
-      "term": "dangote",
-      "recent": 15,
-      "previous": 6,
-      "change": 9
-    },
-    {
-      "term": "ipo",
-      "recent": 11,
-      "previous": 2,
-      "change": 9
+      "term": "guardian",
+      "recent": 39,
+      "previous": 29,
+      "change": 10
     },
     {
       "term": "urges",
-      "recent": 10,
+      "recent": 11,
       "previous": 1,
-      "change": 9
+      "change": 10
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 13,
+      "recent": 14,
       "previous": 5,
+      "change": 9
+    },
+    {
+      "term": "efcc",
+      "recent": 16,
+      "previous": 8,
       "change": 8
     },
     {
@@ -66,15 +66,33 @@
   ],
   "falling": [
     {
+      "term": "premium",
+      "recent": 20,
+      "previous": 25,
+      "change": -5
+    },
+    {
+      "term": "premium times",
+      "recent": 20,
+      "previous": 25,
+      "change": -5
+    },
+    {
+      "term": "times",
+      "recent": 20,
+      "previous": 25,
+      "change": -5
+    },
+    {
+      "term": "ncaa",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
+    },
+    {
       "term": "court",
       "recent": 2,
       "previous": 6,
-      "change": -4
-    },
-    {
-      "term": "financial",
-      "recent": 1,
-      "previous": 5,
       "change": -4
     },
     {
@@ -106,43 +124,25 @@
       "recent": 0,
       "previous": 4,
       "change": -4
-    },
-    {
-      "term": "naicom sign",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
-      "term": "ncaa naicom",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
-      "term": "sign",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 126,
-      "previous": 77
+      "recent": 122,
+      "previous": 83
     },
     {
       "category": "Company",
-      "recent": 39,
-      "previous": 21
+      "recent": 37,
+      "previous": 23
     },
     {
       "category": "Legal",
-      "recent": 22,
-      "previous": 16
+      "recent": 23,
+      "previous": 17
     }
   ],
   "social": [],
-  "generated": "2026-09-19 01:08:30"
+  "generated": "2026-09-19 11:51:10"
 }
