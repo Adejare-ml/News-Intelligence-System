@@ -1,23 +1,19 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Sunrise"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "$500,000 payment to Atiku\u2019s ex-wife raises \u2018significant red flags\u2019 in Mambilla dispute - ICC tribunal - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPek0zdlpoQ3U1OVNRX1V0WkctTjg2c0xXaUt0ZDJqVTYyaVNDaGg2TG1temFNRzVJcU1iRUNYVExIaWdsUENZdV9EcDdBMjBfSTFuejVTaXU4VGp1U29XRzJrZE44bnlPZnRkdWstRC10NHZramRYUGZjRkprQTNhZXVwU0hjT1VsbkJyLUVBdHRkMHkxVUZReFZwWHBjclNtZVg1Y3B0SWJpVGUxQTk3U1pXUUtvanRvZ0Y3V2hHbEdxNkNhNHZuOTdtcjBkN0txM2ZUQUx6Y1BPWnRmRWs2WlQ4Nlk1QQ?oc=5",
-      "risk": 85.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 1,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-19 16:15:37"
+  "generated": "2026-09-19 19:16:38"
 }

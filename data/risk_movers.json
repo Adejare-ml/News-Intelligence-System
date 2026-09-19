@@ -100,6 +100,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 30.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "federation of construction industry",
       "label": "Federation of Construction Industry",
       "recent_avg": 30.0,
@@ -111,10 +120,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 27.7,
+      "recent_avg": 27.2,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 15,
+      "recent_mentions": 16,
       "previous_mentions": 0
     },
     {
@@ -147,10 +156,10 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "recent_avg": 24.4,
+      "recent_avg": 24.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 9,
+      "recent_mentions": 10,
       "previous_mentions": 0
     },
     {
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 7,
       "previous_mentions": 0
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 20.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 5,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-19 16:15:41"
+  "generated": "2026-09-19 19:16:40"
 }

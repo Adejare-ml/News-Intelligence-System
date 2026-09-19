@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 15,
+      "total_mentions": 16,
       "points": [
         {
           "week": "2026-09-07",
@@ -32,8 +32,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 14,
-          "avg_risk": 23.6,
+          "mentions": 15,
+          "avg_risk": 23.3,
           "max_risk": 65
         }
       ]
@@ -41,7 +41,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-07",
@@ -51,9 +51,22 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 8,
-          "avg_risk": 25.0,
+          "mentions": 9,
+          "avg_risk": 24.4,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 8,
+          "avg_risk": 18.1,
+          "max_risk": 20
         }
       ]
     },
@@ -80,19 +93,6 @@
           "mentions": 7,
           "avg_risk": 41.4,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 17.9,
-          "max_risk": 20
         }
       ]
     },
@@ -194,6 +194,19 @@
       ]
     },
     {
+      "key": "exchange",
+      "label": "Nigerian Exchange Group",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 2,
@@ -274,6 +287,19 @@
           "mentions": 2,
           "avg_risk": 30.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 45
         }
       ]
     },
@@ -377,19 +403,6 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 25.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "exchange",
-      "label": "Nigerian Exchange Group",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
           "max_risk": 30
         }
       ]
@@ -954,19 +967,6 @@
       ]
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "government of oyo state",
       "label": "Government of Oyo State",
       "total_mentions": 1,
@@ -1500,6 +1500,19 @@
       ]
     },
     {
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "opl 245",
       "label": "OPL 245",
       "total_mentions": 1,
@@ -1509,6 +1522,19 @@
           "mentions": 1,
           "avg_risk": 70.0,
           "max_risk": 70
+        }
+      ]
+    },
+    {
+      "key": "ojulari",
+      "label": "Ojulari",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1721,6 +1747,19 @@
       ]
     },
     {
+      "key": "sunrise",
+      "label": "Sunrise",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "sunrise energy",
       "label": "Sunrise Energy",
       "total_mentions": 1,
@@ -1812,5 +1851,5 @@
       ]
     }
   ],
-  "generated": "2026-09-19 16:15:41"
+  "generated": "2026-09-19 19:16:40"
 }
