@@ -19,21 +19,21 @@
       "previous_mentions": 0
     },
     {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "recent_avg": 55.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 4,
+      "previous_mentions": 0
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "recent_avg": 45.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "international chamber of commerce",
-      "label": "International Chamber of Commerce",
-      "recent_avg": 45.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
@@ -127,15 +127,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 8,
-      "previous_mentions": 0
-    },
-    {
       "key": "airways",
       "label": "Nigeria Airways",
       "recent_avg": 25.0,
@@ -151,6 +142,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 24.4,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 9,
       "previous_mentions": 0
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-19 11:51:19"
+  "generated": "2026-09-19 16:15:41"
 }

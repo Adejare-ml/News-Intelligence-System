@@ -1,7 +1,7 @@
 {
   "window_days": 7,
   "recent_articles": 182,
-  "previous_articles": 123,
+  "previous_articles": 126,
   "rising": [
     {
       "term": "newspapers",
@@ -23,9 +23,9 @@
     },
     {
       "term": "guardian",
-      "recent": 39,
+      "recent": 40,
       "previous": 29,
-      "change": 10
+      "change": 11
     },
     {
       "term": "urges",
@@ -46,19 +46,19 @@
       "change": 8
     },
     {
+      "term": "ipo",
+      "recent": 11,
+      "previous": 3,
+      "change": 8
+    },
+    {
+      "term": "refinery",
+      "recent": 10,
+      "previous": 2,
+      "change": 8
+    },
+    {
       "term": "beneficial",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
-    },
-    {
-      "term": "beneficial ownership",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
-    },
-    {
-      "term": "ownership",
       "recent": 8,
       "previous": 0,
       "change": 8
@@ -68,26 +68,32 @@
     {
       "term": "premium",
       "recent": 20,
-      "previous": 25,
-      "change": -5
+      "previous": 27,
+      "change": -7
     },
     {
       "term": "premium times",
       "recent": 20,
-      "previous": 25,
-      "change": -5
+      "previous": 27,
+      "change": -7
     },
     {
       "term": "times",
       "recent": 20,
-      "previous": 25,
-      "change": -5
+      "previous": 27,
+      "change": -7
     },
     {
       "term": "ncaa",
       "recent": 2,
       "previous": 7,
       "change": -5
+    },
+    {
+      "term": "probe",
+      "recent": 5,
+      "previous": 9,
+      "change": -4
     },
     {
       "term": "court",
@@ -118,31 +124,25 @@
       "recent": 0,
       "previous": 4,
       "change": -4
-    },
-    {
-      "term": "financing",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 122,
-      "previous": 83
+      "recent": 121,
+      "previous": 85
     },
     {
       "category": "Company",
       "recent": 37,
-      "previous": 23
+      "previous": 24
     },
     {
       "category": "Legal",
-      "recent": 23,
+      "recent": 24,
       "previous": 17
     }
   ],
   "social": [],
-  "generated": "2026-09-19 11:51:10"
+  "generated": "2026-09-19 16:15:38"
 }

@@ -41,7 +41,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 8,
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-07",
@@ -51,8 +51,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 25.7,
+          "mentions": 8,
+          "avg_risk": 25.0,
           "max_risk": 30
         }
       ]
@@ -142,6 +142,19 @@
       ]
     },
     {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 55.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 4,
@@ -164,19 +177,6 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "international chamber of commerce",
-      "label": "International Chamber of Commerce",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -859,6 +859,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "financial reporting council",
+      "label": "Financial Reporting Council",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1799,5 +1812,5 @@
       ]
     }
   ],
-  "generated": "2026-09-19 11:51:19"
+  "generated": "2026-09-19 16:15:41"
 }
