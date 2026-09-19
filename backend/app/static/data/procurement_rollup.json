@@ -2,12 +2,12 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 25,
+      "contracts": 27,
       "undisclosed": 16,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
-        "USD": 500000000.0
+        "USD": 6230000000.0
       }
     },
     {
@@ -688,6 +688,22 @@
       }
     },
     {
+      "name": "Sunrise Power",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 2350000000.0
+      }
+    },
+    {
+      "name": "Sunrise Power and Transmission Company Limited",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 3380000000.0
+      }
+    },
+    {
       "name": "Super E",
       "contracts": 1,
       "undisclosed": 1,
@@ -734,5 +750,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-18 19:31:37"
+  "generated": "2026-09-19 01:08:32"
 }

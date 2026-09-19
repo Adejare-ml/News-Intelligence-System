@@ -1,17 +1,30 @@
 {
-  "new_companies": [],
-  "new_people": [],
+  "new_companies": [
+    "African Diaspora Network",
+    "Coca-Cola HBC Group",
+    "International Chamber of Commerce",
+    "Loft & Keys Ltd",
+    "Nigerian Bottling Company Ltd",
+    "Petroleum Refining and Petrochemicals Owners Association of Nigeria",
+    "Sunrise Energy",
+    "Sunrise Power",
+    "Sunrise Power and Transmission Company Limited"
+  ],
+  "new_people": [
+    "Albert",
+    "Theodore"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
+    "new_companies": 9,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-18 19:31:20"
+  "generated": "2026-09-19 01:08:29"
 }
