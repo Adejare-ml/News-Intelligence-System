@@ -49,6 +49,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "452af0ea3b15",
       "label": "PDP",
       "type": "company",
@@ -57,12 +63,6 @@
     {
       "id": "4921c0e2d1f6",
       "label": "AI",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "9ed3f0f5bb2d",
-      "label": "Dangote Refinery",
       "type": "company",
       "risk": "Low"
     },
@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -129,6 +135,12 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "84b6d6cbf896",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5cdf8c992852",
-      "label": "Nigerian Air Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "56a525aa777f",
       "label": "Theodore",
       "type": "person",
@@ -265,9 +265,21 @@
       "risk": "Low"
     },
     {
+      "id": "9392713dc79b",
+      "label": "Ojulari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "7249b7ffd3c6",
       "label": "Khalil Suleiman Halilu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "84b6d6cbf896",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -409,12 +421,6 @@
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
@@ -465,18 +471,6 @@
     {
       "id": "c30b86e8caa9",
       "label": "First Bank of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f1f131ace5c4",
-      "label": "Uba Sani",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -607,6 +601,12 @@
       "risk": "Low"
     },
     {
+      "id": "5cdf8c992852",
+      "label": "Nigerian Air Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "95178e3865cd",
       "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
       "type": "agency",
@@ -715,6 +715,12 @@
       "from": "6c5bc43b4439",
       "to": "c9749d310d6c",
       "label": "Appointed as CEO"
+    },
+    {
+      "id": "6fe1d5610f89",
+      "from": "9392713dc79b",
+      "to": "f38bd75574f6",
+      "label": "Appointed as Group CEO"
     },
     {
       "id": "656dcdee0f3a",
@@ -847,12 +853,6 @@
       "from": "74b50235d11d",
       "to": "c30b86e8caa9",
       "label": "Appointed as Chief Executive Officer"
-    },
-    {
-      "id": "1d53d5ab75b4",
-      "from": "f1f131ace5c4",
-      "to": "4b3b1b76a8e8",
-      "label": "Appointed as Governor"
     },
     {
       "id": "b42222bf292e",

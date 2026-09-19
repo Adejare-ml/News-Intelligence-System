@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 182,
-  "previous_articles": 126,
+  "recent_articles": 186,
+  "previous_articles": 127,
   "rising": [
     {
       "term": "newspapers",
@@ -23,9 +23,15 @@
     },
     {
       "term": "guardian",
-      "recent": 40,
+      "recent": 41,
       "previous": 29,
-      "change": 11
+      "change": 12
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 15,
+      "previous": 5,
+      "change": 10
     },
     {
       "term": "urges",
@@ -34,9 +40,15 @@
       "change": 10
     },
     {
-      "term": "nigeria\u2019s",
-      "recent": 14,
-      "previous": 5,
+      "term": "ipo",
+      "recent": 12,
+      "previous": 3,
+      "change": 9
+    },
+    {
+      "term": "refinery",
+      "recent": 11,
+      "previous": 2,
       "change": 9
     },
     {
@@ -46,21 +58,9 @@
       "change": 8
     },
     {
-      "term": "ipo",
-      "recent": 11,
-      "previous": 3,
-      "change": 8
-    },
-    {
-      "term": "refinery",
+      "term": "dangote refinery",
       "recent": 10,
       "previous": 2,
-      "change": 8
-    },
-    {
-      "term": "beneficial",
-      "recent": 8,
-      "previous": 0,
       "change": 8
     }
   ],
@@ -68,20 +68,26 @@
     {
       "term": "premium",
       "recent": 20,
-      "previous": 27,
-      "change": -7
+      "previous": 28,
+      "change": -8
     },
     {
       "term": "premium times",
       "recent": 20,
-      "previous": 27,
-      "change": -7
+      "previous": 28,
+      "change": -8
     },
     {
       "term": "times",
       "recent": 20,
-      "previous": 27,
-      "change": -7
+      "previous": 28,
+      "change": -8
+    },
+    {
+      "term": "court",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
     },
     {
       "term": "ncaa",
@@ -93,12 +99,6 @@
       "term": "probe",
       "recent": 5,
       "previous": 9,
-      "change": -4
-    },
-    {
-      "term": "court",
-      "recent": 2,
-      "previous": 6,
       "change": -4
     },
     {
@@ -129,20 +129,20 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 121,
-      "previous": 85
+      "recent": 124,
+      "previous": 86
     },
     {
       "category": "Company",
-      "recent": 37,
-      "previous": 24
+      "recent": 38,
+      "previous": 23
     },
     {
       "category": "Legal",
       "recent": 24,
-      "previous": 17
+      "previous": 18
     }
   ],
   "social": [],
-  "generated": "2026-09-19 16:15:38"
+  "generated": "2026-09-19 19:16:38"
 }
