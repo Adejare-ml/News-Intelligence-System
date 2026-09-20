@@ -1,19 +1,19 @@
 {
-  "new_companies": [
-    "Sunrise"
+  "new_companies": [],
+  "new_people": [
+    "Unnamed Commissioner"
   ],
-  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
+    "new_companies": 0,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-19 19:16:38"
+  "generated": "2026-09-20 00:54:12"
 }

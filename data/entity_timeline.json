@@ -60,12 +60,12 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 8,
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 8,
-          "avg_risk": 18.1,
+          "mentions": 9,
+          "avg_risk": 17.2,
           "max_risk": 20
         }
       ]
@@ -216,6 +216,25 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -447,6 +466,19 @@
       ]
     },
     {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "toyin abraham",
       "label": "Toyin Abraham",
       "total_mentions": 2,
@@ -547,19 +579,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -781,6 +800,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "ebonyi state government",
+      "label": "Ebonyi State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -1240,6 +1272,19 @@
       ]
     },
     {
+      "key": "ndc",
+      "label": "NDC",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "nicon insurance",
       "label": "NICON Insurance",
       "total_mentions": 1,
@@ -1474,6 +1519,19 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "navy",
       "label": "Nigerian Navy",
       "total_mentions": 1,
@@ -1522,6 +1580,19 @@
           "mentions": 1,
           "avg_risk": 70.0,
           "max_risk": 70
+        }
+      ]
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1812,19 +1883,6 @@
       ]
     },
     {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "usaid",
       "label": "USAID",
       "total_mentions": 1,
@@ -1849,7 +1907,20 @@
           "max_risk": 20
         }
       ]
+    },
+    {
+      "key": "unnamed commissioner",
+      "label": "Unnamed Commissioner",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
     }
   ],
-  "generated": "2026-09-19 19:16:40"
+  "generated": "2026-09-20 00:54:15"
 }
