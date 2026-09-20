@@ -28,15 +28,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "diezani alison madueke",
-      "label": "Diezani Alison-Madueke",
-      "recent_avg": 67.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "recent_avg": 63.8,
@@ -91,15 +82,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 41.4,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 7,
-      "previous_mentions": 0
-    },
-    {
       "key": "african action congress",
       "label": "African Action Congress",
       "recent_avg": 40.0,
@@ -127,6 +109,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 37.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 8,
+      "previous_mentions": 0
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "recent_avg": 36.2,
@@ -145,8 +136,8 @@
       "previous_mentions": 0
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
+      "key": "federation of construction industry",
+      "label": "Federation of Construction Industry",
       "recent_avg": 30.0,
       "previous_avg": null,
       "delta": null,
@@ -154,12 +145,12 @@
       "previous_mentions": 0
     },
     {
-      "key": "federation of construction industry",
-      "label": "Federation of Construction Industry",
-      "recent_avg": 30.0,
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 26.7,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "civil aviation authority",
+      "label": "Nigerian Civil Aviation Authority",
+      "recent_avg": 25.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-20 12:05:08"
+  "generated": "2026-09-20 16:45:06"
 }

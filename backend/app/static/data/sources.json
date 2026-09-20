@@ -2,51 +2,51 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2012,
-      "published": 1271,
-      "filtered": 741,
+      "total": 2021,
+      "published": 1272,
+      "filtered": 749,
       "accept_rate": 63,
       "avg_risk": 29.2,
       "engines": {
         "unknown": 963,
-        "ollama": 300,
+        "ollama": 301,
         "nvidia": 8
       },
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1127,
-      "published": 607,
-      "filtered": 520,
+      "total": 1131,
+      "published": 609,
+      "filtered": 522,
       "accept_rate": 54,
       "avg_risk": 30.8,
       "engines": {
         "unknown": 440,
-        "ollama": 163,
+        "ollama": 165,
         "nvidia": 4
       },
       "last_seen": "2026-09-20"
     },
     {
       "source": "Punch Newspapers",
-      "total": 610,
-      "published": 291,
+      "total": 611,
+      "published": 292,
       "filtered": 319,
       "accept_rate": 48,
       "avg_risk": 27.1,
       "engines": {
         "unknown": 188,
-        "ollama": 99,
+        "ollama": 100,
         "nvidia": 4
       },
       "last_seen": "2026-09-20"
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 429,
+      "total": 430,
       "published": 145,
-      "filtered": 284,
+      "filtered": 285,
       "accept_rate": 34,
       "avg_risk": 27.5,
       "engines": {
@@ -86,9 +86,9 @@
     },
     {
       "source": "Vanguard News",
-      "total": 258,
+      "total": 259,
       "published": 135,
-      "filtered": 123,
+      "filtered": 124,
       "accept_rate": 52,
       "avg_risk": 27.4,
       "engines": {
@@ -96,7 +96,7 @@
         "ollama": 36,
         "nvidia": 5
       },
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "naijaonpoint_ng",
@@ -167,29 +167,29 @@
     },
     {
       "source": "vanguardngr",
-      "total": 116,
+      "total": 118,
       "published": 26,
-      "filtered": 90,
+      "filtered": 92,
       "accept_rate": 22,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 19,
         "ollama": 7
       },
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "independentng",
-      "total": 86,
+      "total": 89,
       "published": 28,
-      "filtered": 58,
-      "accept_rate": 33,
+      "filtered": 61,
+      "accept_rate": 31,
       "avg_risk": 24.5,
       "engines": {
         "unknown": 20,
         "ollama": 8
       },
-      "last_seen": "2026-09-18"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "legit",
@@ -847,6 +847,16 @@
       "last_seen": "2026-09-11"
     },
     {
+      "source": "NDIC \u2014 Nigeria Deposit Insurance Corporation",
+      "total": 2,
+      "published": 0,
+      "filtered": 2,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-20"
+    },
+    {
       "source": "Nigeria Business Information",
       "total": 2,
       "published": 2,
@@ -1332,16 +1342,6 @@
         "ollama": 1
       },
       "last_seen": "2026-09-06"
-    },
-    {
-      "source": "NDIC \u2014 Nigeria Deposit Insurance Corporation",
-      "total": 1,
-      "published": 0,
-      "filtered": 1,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-09-20"
     },
     {
       "source": "NESN",
@@ -1860,5 +1860,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-20 12:05:08"
+  "generated": "2026-09-20 16:45:06"
 }
