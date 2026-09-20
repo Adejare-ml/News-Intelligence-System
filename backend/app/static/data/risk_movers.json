@@ -3,10 +3,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 23.3,
+      "recent_avg": 23.1,
       "previous_avg": 85.0,
-      "delta": -61.7,
-      "recent_mentions": 15,
+      "delta": -61.9,
+      "recent_mentions": 16,
       "previous_mentions": 1
     },
     {
@@ -16,6 +16,15 @@
       "previous_avg": 40.0,
       "delta": -25.0,
       "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 38.2,
+      "previous_avg": 30.0,
+      "delta": 8.2,
+      "recent_mentions": 20,
       "previous_mentions": 1
     },
     {
@@ -85,24 +94,6 @@
       "key": "african action congress",
       "label": "African Action Congress",
       "recent_avg": 40.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 37.9,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 21,
-      "previous_mentions": 0
-    },
-    {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "recent_avg": 37.5,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-20 16:45:06"
+  "generated": "2026-09-20 19:21:43"
 }
