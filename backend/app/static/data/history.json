@@ -847,17 +847,17 @@
     },
     {
       "date": "2026-09-20",
-      "runs": 1,
-      "articles": 6,
-      "high_risk": 0,
+      "runs": 2,
+      "articles": 12,
+      "high_risk": 3,
       "appointments": 1,
       "procurement": 1,
       "cascade_failures": 0,
-      "candidates": 1074,
-      "rejected": 13,
+      "candidates": 2138,
+      "rejected": 39,
       "undated": 0,
-      "run_seconds": 134
+      "run_seconds": 320
     }
   ],
-  "generated": "2026-09-20 00:54:15"
+  "generated": "2026-09-20 12:05:08"
 }

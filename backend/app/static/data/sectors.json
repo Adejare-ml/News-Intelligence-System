@@ -38,6 +38,15 @@
       }
     },
     {
+      "industry": "Energy",
+      "companies": 4,
+      "mentions": 7,
+      "risk": {
+        "High": 2,
+        "Medium": 2
+      }
+    },
+    {
       "industry": "Financial Services",
       "companies": 2,
       "mentions": 7,
@@ -61,14 +70,6 @@
       "risk": {
         "Medium": 1,
         "Low": 1
-      }
-    },
-    {
-      "industry": "Energy",
-      "companies": 3,
-      "mentions": 3,
-      "risk": {
-        "Medium": 3
       }
     },
     {
@@ -101,14 +102,6 @@
       "mentions": 2,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Energy/Infrastructure",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Medium": 1
       }
     },
     {
@@ -232,6 +225,14 @@
       }
     },
     {
+      "industry": "Media/Journalism",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
       "mentions": 1,
@@ -288,5 +289,5 @@
       }
     }
   ],
-  "generated": "2026-09-20 00:54:15"
+  "generated": "2026-09-20 12:05:08"
 }

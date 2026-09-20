@@ -34,8 +34,16 @@
       "label": "Federal Bureau of Investigation"
     },
     {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce"
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government"
+    },
+    {
+      "key": "sunrise power",
+      "label": "Sunrise Power"
     },
     {
       "key": "toyin abraham",
@@ -77,7 +85,12 @@
       "a": "economic and financial crimes commission",
       "b": "oyo state government",
       "weight": 2
+    },
+    {
+      "a": "international chamber of commerce",
+      "b": "sunrise power",
+      "weight": 2
     }
   ],
-  "generated": "2026-09-20 00:54:15"
+  "generated": "2026-09-20 12:05:08"
 }

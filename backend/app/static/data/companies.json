@@ -3202,7 +3202,7 @@
   {
     "Company": "NDC",
     "Mention Count": 2,
-    "Last Seen": "2026-09-20 00:52",
+    "Last Seen": "2026-09-20 0:52",
     "Industry": "General",
     "Risk Level": "Low",
     "First Seen": ""
@@ -8121,10 +8121,10 @@
   },
   {
     "Company": "Sunrise Power and Transmission Company Limited",
-    "Mention Count": 2,
-    "Last Seen": "2026-09-19 1:07",
-    "Industry": "Energy/Infrastructure",
-    "Risk Level": "Medium",
+    "Mention Count": 3,
+    "Last Seen": "2026-09-20 12:03",
+    "Industry": "Energy",
+    "Risk Level": "High",
     "First Seen": "2026-09-19 01:05"
   },
   {
@@ -8169,10 +8169,10 @@
   },
   {
     "Company": "Sunrise Power",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-19 01:07",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-20 12:02",
     "Industry": "Energy",
-    "Risk Level": "Medium",
+    "Risk Level": "High",
     "First Seen": "2026-09-19 01:07"
   },
   {
@@ -8194,7 +8194,7 @@
   {
     "Company": "TotalEnergies",
     "Mention Count": 2,
-    "Last Seen": "2026-09-20 00:52",
+    "Last Seen": "2026-09-20 0:52",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-09-19 11:48"
@@ -8214,5 +8214,13 @@
     "Industry": "Energy",
     "Risk Level": "Medium",
     "First Seen": "2026-09-19 19:14"
+  },
+  {
+    "Company": "Centre for Journalism Innovation and Development",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-20 12:02",
+    "Industry": "Media/Journalism",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-20 12:02"
   }
 ]

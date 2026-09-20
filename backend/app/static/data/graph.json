@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "19e301887487",
+      "label": "National Hajj Commission of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "5a98eb23f6f5",
       "label": "Akwa Ibom State Government",
       "type": "agency",
@@ -147,6 +153,30 @@
     {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d02e4d68632b",
+      "label": "International Chamber of Commerce",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3e883c4859e6",
+      "label": "National Human Rights Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fd896534e599",
+      "label": "International Criminal Court (ICC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4318c4c9c3f1",
+      "label": "Nigeria Security and Civil Defence Corps",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,12 +229,6 @@
       "risk": "Low"
     },
     {
-      "id": "d02e4d68632b",
-      "label": "International Chamber of Commerce",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "974b4a4b8b7b",
       "label": "Financial Reporting Council",
       "type": "agency",
@@ -217,33 +241,45 @@
       "risk": "Low"
     },
     {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "283e1d4aa831",
-      "label": "All Progressives Congress",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "86430d64a9dc",
       "label": "Unnamed Commissioner",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f6a881f4b7c5",
+      "label": "Abubakar Malami",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "514496e0e74c",
+      "label": "Muhammadu Buhari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "571dc7e68720",
+      "label": "Adesanya",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ebe2d81e3981",
+      "label": "Not Specified",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "f3f65e2dd7f8",
+      "label": "Leno Adesanya",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ce2f789533a5",
+      "label": "Sunrise Power and Transmission Company Limited",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -295,6 +331,12 @@
       "risk": "Low"
     },
     {
+      "id": "283e1d4aa831",
+      "label": "All Progressives Congress",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "cbcd2bcef258",
       "label": "Pasuma",
       "type": "person",
@@ -322,12 +364,6 @@
       "id": "1252813a4034",
       "label": "Sarah Boulos",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ebe2d81e3981",
-      "label": "Not Specified",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -435,36 +471,6 @@
     {
       "id": "37a6259cc0c1",
       "label": "null",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "649b4afa9b99",
-      "label": "Diezani Alison-Madueke",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6b8bead22e32",
-      "label": "Dwayne Frazier",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9c7e0688e34e",
-      "label": "American University of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2c6ec0b8cc1c",
-      "label": "Bosun Olabiyi-Agoro",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "560e36791e83",
-      "label": "Petroleum and Natural Gas Senior Staff Association of Nigeria",
       "type": "company",
       "risk": "Low"
     },
@@ -589,12 +595,6 @@
       "risk": "Low"
     },
     {
-      "id": "ce2f789533a5",
-      "label": "Sunrise Power and Transmission Company Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "5cdf8c992852",
       "label": "Nigerian Air Force",
       "type": "agency",
@@ -610,6 +610,12 @@
       "id": "697b31d5b595",
       "label": "Hughes",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -685,6 +691,30 @@
       "from": "86430d64a9dc",
       "to": "8a7b7af09965",
       "label": "Appointed as Commissioner"
+    },
+    {
+      "id": "71251a980b0e",
+      "from": "f6a881f4b7c5",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former Attorney General"
+    },
+    {
+      "id": "c70e5e786ee6",
+      "from": "514496e0e74c",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former President"
+    },
+    {
+      "id": "07903aad4386",
+      "from": "571dc7e68720",
+      "to": "ebe2d81e3981",
+      "label": "Appointed as Not Specified"
+    },
+    {
+      "id": "0abff893a2dd",
+      "from": "f3f65e2dd7f8",
+      "to": "ce2f789533a5",
+      "label": "Appointed as Promoter"
     },
     {
       "id": "cc3246c05d31",
@@ -805,30 +835,6 @@
       "from": "325a5c8a1ef5",
       "to": "37a6259cc0c1",
       "label": "Appointed as Former Vice-President"
-    },
-    {
-      "id": "d87a81d4276c",
-      "from": "649b4afa9b99",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Minister of Petroleum Resources"
-    },
-    {
-      "id": "e78407597fbf",
-      "from": "649b4afa9b99",
-      "to": "fcc3d69557a3",
-      "label": "Appointed as Former Minister of Petroleum Resources"
-    },
-    {
-      "id": "2b423480bb40",
-      "from": "6b8bead22e32",
-      "to": "9c7e0688e34e",
-      "label": "Appointed as President"
-    },
-    {
-      "id": "0f0a79cd0435",
-      "from": "2c6ec0b8cc1c",
-      "to": "560e36791e83",
-      "label": "Appointed as President"
     },
     {
       "id": "b42222bf292e",
