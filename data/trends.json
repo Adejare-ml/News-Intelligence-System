@@ -1,25 +1,25 @@
 {
   "window_days": 7,
   "recent_articles": 190,
-  "previous_articles": 127,
+  "previous_articles": 125,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 35,
-      "previous": 13,
-      "change": 22
+      "recent": 34,
+      "previous": 14,
+      "change": 20
     },
     {
       "term": "punch",
-      "recent": 34,
-      "previous": 13,
-      "change": 21
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "punch newspapers",
-      "recent": 34,
-      "previous": 13,
-      "change": 21
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "guardian",
@@ -30,14 +30,20 @@
     {
       "term": "nigeria\u2019s",
       "recent": 15,
-      "previous": 5,
-      "change": 10
+      "previous": 3,
+      "change": 12
     },
     {
       "term": "urges",
       "recent": 11,
       "previous": 1,
       "change": 10
+    },
+    {
+      "term": "efcc",
+      "recent": 16,
+      "previous": 7,
+      "change": 9
     },
     {
       "term": "ipo",
@@ -50,12 +56,6 @@
       "recent": 11,
       "previous": 2,
       "change": 9
-    },
-    {
-      "term": "efcc",
-      "recent": 16,
-      "previous": 8,
-      "change": 8
     },
     {
       "term": "dangote refinery",
@@ -81,12 +81,6 @@
       "term": "probe",
       "recent": 5,
       "previous": 9,
-      "change": -4
-    },
-    {
-      "term": "strengthen",
-      "recent": 1,
-      "previous": 5,
       "change": -4
     },
     {
@@ -124,25 +118,31 @@
       "recent": 0,
       "previous": 4,
       "change": -4
+    },
+    {
+      "term": "naicom",
+      "recent": 2,
+      "previous": 5,
+      "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
       "recent": 128,
-      "previous": 85
+      "previous": 83
     },
     {
       "category": "Company",
-      "recent": 38,
-      "previous": 23
+      "recent": 35,
+      "previous": 24
     },
     {
       "category": "Legal",
-      "recent": 24,
-      "previous": 19
+      "recent": 27,
+      "previous": 18
     }
   ],
   "social": [],
-  "generated": "2026-09-20 00:54:13"
+  "generated": "2026-09-20 12:05:06"
 }

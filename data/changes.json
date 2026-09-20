@@ -1,19 +1,38 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Centre for Journalism Innovation and Development"
+  ],
   "new_people": [
-    "Unnamed Commissioner"
+    "Adesanya",
+    "Leno Adesanya"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "$500,000 payment to Atiku\u2019s ex-wife raises \u2018significant red flags\u2019 in Mambilla dispute - ICC tribunal",
+      "url": "https://www.premiumtimesng.com/news/top-news/910627-500000-payment-to-atikus-ex-wife-raises-significant-red-flags-in-mambilla-dispute-icc-tribunal.html",
+      "risk": 85.0
+    },
+    {
+      "title": "Mambilla: How Malami attempted to deceive Buhari, struck corrupt deals with Adesanya \u2013 ICC Tribunal - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOMm13UGRnQU5nSkh2UzBXNHJSUGljMDcwRENjTm1sZExXYURydThtN2t3V3dDV3kya0VZdkQwMVVacGhYd0FaM01VczdPWVJ2N3RKMjdMWlA1aS1wVkVBYlh2Q29Hb1dDaW9GekJvenQydU1YMTVJb21aaDJnamV1OUVVa0FzMDF1MW9hVHl5WndJdkVlNTV2RjZrZDhYUVZQUkt4VjFpWG1wWE5tTkhyb2dBaGg1UTE5bFNnS2x1blprSlBSRWlFbm5kOUlLSWNUZ0ZubVlGbDE5SUtnRkYySkFaeEdpNHZmWEttX0RVNnhkUTQ?oc=5",
+      "risk": 85.0
+    },
+    {
+      "title": "Atiku denies corruption verdict, but fails to address ICC tribunal\u2019s concerns over $500,000 payment",
+      "url": "https://www.premiumtimesng.com/business/business-news/910757-atiku-denies-corruption-verdict-but-fails-to-address-icc-tribunals-concerns-over-500000-payment.html",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 1,
+    "new_companies": 1,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 3
   },
-  "generated": "2026-09-20 00:54:12"
+  "generated": "2026-09-20 12:05:05"
 }

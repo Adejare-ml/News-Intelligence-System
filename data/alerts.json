@@ -1,6 +1,44 @@
 {
   "alerts": [
     {
+      "date": "2026-09-20",
+      "title": "Mambilla: How Malami attempted to deceive Buhari, struck corrupt deals with Adesanya \u2013 ICC Tribunal - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOMm13UGRnQU5nSkh2UzBXNHJSUGljMDcwRENjTm1sZExXYURydThtN2t3V3dDV3kya0VZdkQwMVVacGhYd0FaM01VczdPWVJ2N3RKMjdMWlA1aS1wVkVBYlh2Q29Hb1dDaW9GekJvenQydU1YMTVJb21aaDJnamV1OUVVa0FzMDF1MW9hVHl5WndJdkVlNTV2RjZrZDhYUVZQUkt4VjFpWG1wWE5tTkhyb2dBaGg1UTE5bFNnS2x1blprSlBSRWlFbm5kOUlLSWNUZ0ZubVlGbDE5SUtnRkYySkFaeEdpNHZmWEttX0RVNnhkUTQ?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "International Criminal Court (ICC)",
+        "Abubakar Malami",
+        "Muhammadu Buhari",
+        "Adesanya"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "title": "$500,000 payment to Atiku\u2019s ex-wife raises \u2018significant red flags\u2019 in Mambilla dispute - ICC tribunal",
+      "url": "https://www.premiumtimesng.com/news/top-news/910627-500000-payment-to-atikus-ex-wife-raises-significant-red-flags-in-mambilla-dispute-icc-tribunal.html",
+      "source": "Premium Times",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Sunrise Power and Transmission Company Limited",
+        "Leno Adesanya"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "title": "Atiku denies corruption verdict, but fails to address ICC tribunal\u2019s concerns over $500,000 payment",
+      "url": "https://www.premiumtimesng.com/business/business-news/910757-atiku-denies-corruption-verdict-but-fails-to-address-icc-tribunals-concerns-over-500000-payment.html",
+      "source": "Premium Times",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Sunrise Power",
+        "International Chamber of Commerce"
+      ]
+    },
+    {
       "date": "2026-09-19",
       "title": "$500,000 payment to Atiku\u2019s ex-wife raises \u2018significant red flags\u2019 in Mambilla dispute - ICC tribunal - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPek0zdlpoQ3U1OVNRX1V0WkctTjg2c0xXaUt0ZDJqVTYyaVNDaGg2TG1temFNRzVJcU1iRUNYVExIaWdsUENZdV9EcDdBMjBfSTFuejVTaXU4VGp1U29XRzJrZE44bnlPZnRkdWstRC10NHZramRYUGZjRkprQTNhZXVwU0hjT1VsbkJyLUVBdHRkMHkxVUZReFZwWHBjclNtZVg1Y3B0SWJpVGUxQTk3U1pXUUtvanRvZ0Y3V2hHbEdxNkNhNHZuOTdtcjBkN0txM2ZUQUx6Y1BPWnRmRWs2WlQ4Nlk1QQ?oc=5",
@@ -132,5 +170,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-20 00:54:15"
+  "generated": "2026-09-20 12:05:08"
 }

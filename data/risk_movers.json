@@ -1,12 +1,30 @@
 {
   "movers": [
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 23.3,
+      "previous_avg": 85.0,
+      "delta": -61.7,
+      "recent_mentions": 15,
+      "previous_mentions": 1
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 15.0,
       "previous_avg": 40.0,
       "delta": -25.0,
       "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 24.4,
+      "previous_avg": 20.0,
+      "delta": 4.4,
+      "recent_mentions": 9,
       "previous_mentions": 1
     },
     {
@@ -28,21 +46,30 @@
       "previous_mentions": 0
     },
     {
-      "key": "international chamber of commerce",
-      "label": "International Chamber of Commerce",
-      "recent_avg": 55.0,
+      "key": "sunrise power",
+      "label": "Sunrise Power",
+      "recent_avg": 60.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 4,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "recent_avg": 59.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 5,
       "previous_mentions": 0
     },
     {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
-      "recent_avg": 45.0,
+      "recent_avg": 58.3,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
@@ -136,15 +163,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 27.2,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 16,
-      "previous_mentions": 0
-    },
-    {
       "key": "uber",
       "label": "Uber",
       "recent_avg": 25.0,
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "civil aviation authority",
-      "label": "Nigerian Civil Aviation Authority",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 24.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 10,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-20 00:54:15"
+  "generated": "2026-09-20 12:05:08"
 }
