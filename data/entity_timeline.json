@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-07",
@@ -32,8 +32,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 15,
-          "avg_risk": 23.3,
+          "mentions": 16,
+          "avg_risk": 23.1,
           "max_risk": 65
         }
       ]
@@ -637,6 +637,19 @@
     {
       "key": "albert",
       "label": "Albert",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "all progressives movement",
+      "label": "All Progressives Movement",
       "total_mentions": 1,
       "points": [
         {
@@ -1753,6 +1766,19 @@
       ]
     },
     {
+      "key": "otti",
+      "label": "Otti",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "pasuma",
       "label": "Pasuma",
       "total_mentions": 1,
@@ -1892,6 +1918,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "seyi makinde",
+      "label": "Seyi Makinde",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -2039,5 +2078,5 @@
       ]
     }
   ],
-  "generated": "2026-09-20 16:45:06"
+  "generated": "2026-09-20 19:21:43"
 }

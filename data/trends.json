@@ -1,37 +1,37 @@
 {
   "window_days": 7,
-  "recent_articles": 190,
-  "previous_articles": 126,
+  "recent_articles": 191,
+  "previous_articles": 125,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 35,
-      "previous": 13,
-      "change": 22
+      "recent": 34,
+      "previous": 14,
+      "change": 20
     },
     {
       "term": "punch",
-      "recent": 34,
-      "previous": 13,
-      "change": 21
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "punch newspapers",
-      "recent": 34,
-      "previous": 13,
-      "change": 21
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "nigeria\u2019s",
       "recent": 16,
-      "previous": 3,
-      "change": 13
+      "previous": 2,
+      "change": 14
     },
     {
       "term": "guardian",
-      "recent": 41,
-      "previous": 30,
-      "change": 11
+      "recent": 42,
+      "previous": 29,
+      "change": 13
     },
     {
       "term": "efcc",
@@ -66,27 +66,15 @@
   ],
   "falling": [
     {
-      "term": "court",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
       "term": "ncaa",
       "recent": 2,
       "previous": 7,
       "change": -5
     },
     {
-      "term": "probe",
-      "recent": 5,
-      "previous": 9,
-      "change": -4
-    },
-    {
-      "term": "uber",
-      "recent": 1,
-      "previous": 5,
+      "term": "court",
+      "recent": 3,
+      "previous": 7,
       "change": -4
     },
     {
@@ -120,7 +108,19 @@
       "change": -4
     },
     {
+      "term": "probe",
+      "recent": 5,
+      "previous": 8,
+      "change": -3
+    },
+    {
       "term": "naicom",
+      "recent": 2,
+      "previous": 5,
+      "change": -3
+    },
+    {
+      "term": "strengthen",
       "recent": 2,
       "previous": 5,
       "change": -3
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 128,
-      "previous": 85
+      "recent": 129,
+      "previous": 84
     },
     {
       "category": "Company",
@@ -144,5 +144,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-20 16:44:59"
+  "generated": "2026-09-20 19:21:41"
 }

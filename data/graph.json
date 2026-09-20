@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8a7b7af09965",
       "label": "Ebonyi State Government",
       "type": "agency",
@@ -205,12 +211,6 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "653fd7557fc1",
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
@@ -279,6 +279,30 @@
     {
       "id": "ce2f789533a5",
       "label": "Sunrise Power and Transmission Company Limited",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "f121c0e97820",
+      "label": "Seyi Makinde",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8e32fb3e3009",
+      "label": "All Progressives Movement",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "3fd6d917dd79",
+      "label": "Otti",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
       "type": "company",
       "risk": "Low"
     },
@@ -463,24 +487,6 @@
       "risk": "Low"
     },
     {
-      "id": "5a094abf1abe",
-      "label": "Bola Ahmed Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "325a5c8a1ef5",
-      "label": "Atiku Abubakar",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "37a6259cc0c1",
-      "label": "null",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "77c793dd24f7",
       "label": "Aliko Dangote",
       "type": "psc",
@@ -587,12 +593,6 @@
       "label": "Dangote Cement Plc",
       "type": "company",
       "risk": "Medium"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
     },
     {
       "id": "22bc1419bc0f",
@@ -723,6 +723,18 @@
       "label": "Appointed as Promoter"
     },
     {
+      "id": "b728b37a3f50",
+      "from": "f121c0e97820",
+      "to": "8e32fb3e3009",
+      "label": "Appointed as Governor"
+    },
+    {
+      "id": "6c0d2e5de652",
+      "from": "3fd6d917dd79",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as None"
+    },
+    {
       "id": "cc3246c05d31",
       "from": "56a525aa777f",
       "to": "26cd16c5d969",
@@ -829,18 +841,6 @@
       "from": "e5982307ed9d",
       "to": "cf3ed84d35f7",
       "label": "Appointed as Chairman"
-    },
-    {
-      "id": "de3ab25e4012",
-      "from": "5a094abf1abe",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as President"
-    },
-    {
-      "id": "c098f0ce0d9f",
-      "from": "325a5c8a1ef5",
-      "to": "37a6259cc0c1",
-      "label": "Appointed as Former Vice-President"
     },
     {
       "id": "b42222bf292e",

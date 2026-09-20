@@ -89,6 +89,14 @@
       }
     },
     {
+      "industry": "Politics",
+      "companies": 2,
+      "mentions": 3,
+      "risk": {
+        "Medium": 2
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 1,
       "mentions": 2,
@@ -114,14 +122,6 @@
     },
     {
       "industry": "Legal/Arbitration",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Politics",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -289,5 +289,5 @@
       }
     }
   ],
-  "generated": "2026-09-20 16:45:06"
+  "generated": "2026-09-20 19:21:43"
 }
