@@ -71,6 +71,19 @@
       ]
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 8,
+          "avg_risk": 37.5,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
       "total_mentions": 7,
@@ -80,19 +93,6 @@
           "mentions": 7,
           "avg_risk": 22.9,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 41.4,
-          "max_risk": 75
         }
       ]
     },
@@ -177,6 +177,19 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 45
         }
       ]
     },
@@ -323,19 +336,6 @@
       ]
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "institute of chartered accountants of",
       "label": "Institute of Chartered Accountants of Nigeria",
       "total_mentions": 2,
@@ -397,6 +397,19 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
         }
       ]
     },
@@ -1428,19 +1441,6 @@
       ]
     },
     {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national health insurance authority",
       "label": "National Health Insurance Authority",
       "total_mentions": 1,
@@ -2039,5 +2039,5 @@
       ]
     }
   ],
-  "generated": "2026-09-20 12:05:08"
+  "generated": "2026-09-20 16:45:06"
 }

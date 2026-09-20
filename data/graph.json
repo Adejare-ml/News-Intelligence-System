@@ -133,8 +133,20 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,12 +211,6 @@
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "653fd7557fc1",
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "974b4a4b8b7b",
       "label": "Financial Reporting Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -400,6 +400,12 @@
       "id": "d8420ee1c07a",
       "label": "Sanusi",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
