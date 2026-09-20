@@ -3,7 +3,7 @@
     {
       "industry": "General",
       "companies": 975,
-      "mentions": 1676,
+      "mentions": 1677,
       "risk": {
         "Low": 858,
         "Critical": 59,
@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 7,
-      "mentions": 64,
+      "mentions": 65,
       "risk": {
         "Medium": 1,
         "Low": 5,
@@ -288,5 +288,5 @@
       }
     }
   ],
-  "generated": "2026-09-19 19:16:40"
+  "generated": "2026-09-20 00:54:15"
 }

@@ -121,6 +121,36 @@
       "risk": "Low"
     },
     {
+      "id": "8a7b7af09965",
+      "label": "Ebonyi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -211,33 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "e29340b992f3",
-      "label": "Federal Ministry of Finance",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "80ecf1ce1dba",
-      "label": "Small and Medium Enterprises Development Agency of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bb266503ea3",
-      "label": "Federation Account Allocation Committee",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f3acbeea4dea",
-      "label": "Yakubu Gowon University",
-      "type": "agency",
+      "id": "86430d64a9dc",
+      "label": "Unnamed Commissioner",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -463,18 +469,6 @@
       "risk": "Low"
     },
     {
-      "id": "74b50235d11d",
-      "label": "Olusegun Alebiosu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c30b86e8caa9",
-      "label": "First Bank of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "77c793dd24f7",
       "label": "Aliko Dangote",
       "type": "psc",
@@ -643,12 +637,6 @@
       "risk": "Low"
     },
     {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "b2907b2dc23c",
       "label": "Gateway Air",
       "type": "company",
@@ -664,12 +652,6 @@
       "id": "f5e16be1446b",
       "label": "Premium Steel",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -695,15 +677,15 @@
       "label": "Government of the United States",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "47cf1dfd4541",
-      "label": "Agricultural Research Council of Nigeria",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "dc8a71f5cad0",
+      "from": "86430d64a9dc",
+      "to": "8a7b7af09965",
+      "label": "Appointed as Commissioner"
+    },
     {
       "id": "cc3246c05d31",
       "from": "56a525aa777f",
@@ -849,12 +831,6 @@
       "label": "Appointed as President"
     },
     {
-      "id": "5ff541ee7732",
-      "from": "74b50235d11d",
-      "to": "c30b86e8caa9",
-      "label": "Appointed as Chief Executive Officer"
-    },
-    {
       "id": "b42222bf292e",
       "from": "77c793dd24f7",
       "to": "01ccce37119e",
@@ -919,6 +895,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "f8428f09d5a7",
+      "from": "334c4a4c42fd",
+      "to": "5a98eb23f6f5",
+      "label": "Contract Awardee"
     },
     {
       "id": "78ac084f597e",
@@ -1014,12 +996,6 @@
       "id": "08e350138fc5",
       "from": "6c302b827a55",
       "to": "b5da1d8370fd",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "b54609f82442",
-      "from": "334c4a4c42fd",
-      "to": "47cf1dfd4541",
       "label": "Contract Awardee"
     }
   ]

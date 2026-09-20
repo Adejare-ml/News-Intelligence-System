@@ -1,6 +1,15 @@
 {
   "movers": [
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 40.0,
+      "delta": -25.0,
+      "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "recent_avg": 67.5,
@@ -79,6 +88,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 21,
+      "previous_mentions": 0
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "recent_avg": 37.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 10,
       "previous_mentions": 0
-    },
-    {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "recent_avg": 23.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "recent_avg": 22.9,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 7,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-19 19:16:40"
+  "generated": "2026-09-20 00:54:15"
 }

@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 186,
+  "recent_articles": 190,
   "previous_articles": 127,
   "rising": [
     {
@@ -66,28 +66,10 @@
   ],
   "falling": [
     {
-      "term": "premium",
-      "recent": 20,
-      "previous": 28,
-      "change": -8
-    },
-    {
-      "term": "premium times",
-      "recent": 20,
-      "previous": 28,
-      "change": -8
-    },
-    {
-      "term": "times",
-      "recent": 20,
-      "previous": 28,
-      "change": -8
-    },
-    {
       "term": "court",
-      "recent": 1,
+      "recent": 2,
       "previous": 7,
-      "change": -6
+      "change": -5
     },
     {
       "term": "ncaa",
@@ -124,13 +106,31 @@
       "recent": 0,
       "previous": 4,
       "change": -4
+    },
+    {
+      "term": "financing",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "naicom sign",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "ncaa naicom",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 124,
-      "previous": 86
+      "recent": 128,
+      "previous": 85
     },
     {
       "category": "Company",
@@ -140,9 +140,9 @@
     {
       "category": "Legal",
       "recent": 24,
-      "previous": 18
+      "previous": 19
     }
   ],
   "social": [],
-  "generated": "2026-09-19 19:16:38"
+  "generated": "2026-09-20 00:54:13"
 }
