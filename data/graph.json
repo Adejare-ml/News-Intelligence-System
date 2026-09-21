@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
       "type": "agency",
@@ -141,6 +147,12 @@
     {
       "id": "e5c0e655148a",
       "label": "Nigerian Civil Aviation Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -165,12 +177,6 @@
     {
       "id": "d02e4d68632b",
       "label": "International Chamber of Commerce",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
       "type": "person",
@@ -249,6 +249,12 @@
     {
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ba64a7d9d940",
+      "label": "David Fagbemi",
       "type": "person",
       "risk": "Low"
     },
@@ -466,12 +472,6 @@
       "id": "ad921d604863",
       "label": "Unknown",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -699,6 +699,12 @@
       "label": "Appointed as Former Vice President"
     },
     {
+      "id": "fc5ead2bfe70",
+      "from": "ba64a7d9d940",
+      "to": "0c2be969618b",
+      "label": "Appointed as Attorney General of the Federation"
+    },
+    {
       "id": "dc8a71f5cad0",
       "from": "86430d64a9dc",
       "to": "8a7b7af09965",
@@ -829,12 +835,6 @@
       "from": "06c8cb034ab7",
       "to": "ad921d604863",
       "label": "Appointed as Unknown"
-    },
-    {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
     },
     {
       "id": "6ef476ba43f6",
