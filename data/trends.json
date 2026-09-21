@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 178,
-  "previous_articles": 137,
+  "recent_articles": 177,
+  "previous_articles": 139,
   "rising": [
     {
       "term": "nigeria\u2019s",
@@ -10,16 +10,16 @@
       "change": 12
     },
     {
+      "term": "guardian",
+      "recent": 40,
+      "previous": 29,
+      "change": 11
+    },
+    {
       "term": "mambilla",
       "recent": 10,
       "previous": 0,
       "change": 10
-    },
-    {
-      "term": "guardian",
-      "recent": 38,
-      "previous": 29,
-      "change": 9
     },
     {
       "term": "newspapers",
@@ -40,16 +40,10 @@
       "change": 8
     },
     {
-      "term": "efcc",
-      "recent": 15,
-      "previous": 7,
-      "change": 8
-    },
-    {
       "term": "seeks",
       "recent": 10,
-      "previous": 3,
-      "change": 7
+      "previous": 2,
+      "change": 8
     },
     {
       "term": "urges",
@@ -59,6 +53,12 @@
     },
     {
       "term": "cac",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
+    },
+    {
+      "term": "icc",
       "recent": 7,
       "previous": 0,
       "change": 7
@@ -130,7 +130,7 @@
     {
       "category": "Government",
       "recent": 120,
-      "previous": 90
+      "previous": 91
     },
     {
       "category": "Company",
@@ -139,10 +139,10 @@
     },
     {
       "category": "Legal",
-      "recent": 28,
-      "previous": 16
+      "recent": 27,
+      "previous": 17
     }
   ],
   "social": [],
-  "generated": "2026-09-21 18:30:00"
+  "generated": "2026-09-21 20:54:10"
 }
