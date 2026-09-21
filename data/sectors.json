@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 7,
-      "mentions": 65,
+      "mentions": 66,
       "risk": {
         "Medium": 1,
         "Low": 5,
@@ -81,6 +81,15 @@
       }
     },
     {
+      "industry": "Insurance",
+      "companies": 3,
+      "mentions": 3,
+      "risk": {
+        "High": 2,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Legal",
       "companies": 1,
       "mentions": 3,
@@ -110,14 +119,6 @@
       "mentions": 2,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Insurance",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "High": 2
       }
     },
     {
@@ -289,5 +290,5 @@
       }
     }
   ],
-  "generated": "2026-09-21 13:36:57"
+  "generated": "2026-09-21 18:30:10"
 }

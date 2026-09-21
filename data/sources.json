@@ -16,28 +16,28 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1138,
-      "published": 612,
-      "filtered": 526,
+      "total": 1143,
+      "published": 614,
+      "filtered": 529,
       "accept_rate": 54,
       "avg_risk": 31.0,
       "engines": {
         "unknown": 440,
-        "ollama": 168,
+        "ollama": 170,
         "nvidia": 4
       },
       "last_seen": "2026-09-21"
     },
     {
       "source": "Punch Newspapers",
-      "total": 623,
-      "published": 295,
-      "filtered": 328,
+      "total": 626,
+      "published": 296,
+      "filtered": 330,
       "accept_rate": 47,
       "avg_risk": 27.0,
       "engines": {
         "unknown": 188,
-        "ollama": 103,
+        "ollama": 104,
         "nvidia": 4
       },
       "last_seen": "2026-09-21"
@@ -58,10 +58,10 @@
     },
     {
       "source": "The Punch",
-      "total": 425,
+      "total": 426,
       "published": 249,
-      "filtered": 176,
-      "accept_rate": 59,
+      "filtered": 177,
+      "accept_rate": 58,
       "avg_risk": 33.7,
       "engines": {
         "unknown": 104,
@@ -127,29 +127,29 @@
     },
     {
       "source": "leadership",
-      "total": 134,
+      "total": 137,
       "published": 46,
-      "filtered": 88,
+      "filtered": 91,
       "accept_rate": 34,
       "avg_risk": 23.4,
       "engines": {
         "unknown": 35,
         "ollama": 11
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "dailypost",
-      "total": 122,
+      "total": 123,
       "published": 42,
-      "filtered": 80,
+      "filtered": 81,
       "accept_rate": 34,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 40,
         "ollama": 2
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "punchng",
@@ -259,15 +259,15 @@
     },
     {
       "source": "premiumtimesng",
-      "total": 24,
+      "total": 25,
       "published": 4,
-      "filtered": 20,
-      "accept_rate": 17,
+      "filtered": 21,
+      "accept_rate": 16,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 4
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "tribuneonlineng",
@@ -1860,5 +1860,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-21 13:36:57"
+  "generated": "2026-09-21 18:30:10"
 }
