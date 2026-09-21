@@ -181,6 +181,12 @@
       "risk": "Low"
     },
     {
+      "id": "a74c4e5d89ef",
+      "label": "All Progressives alliance",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8a7b7af09965",
       "label": "Ebonyi State Government",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "4318c4c9c3f1",
-      "label": "Nigeria Security and Civil Defence Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
       "type": "person",
@@ -255,6 +255,12 @@
     {
       "id": "ba64a7d9d940",
       "label": "David Fagbemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ad921d604863",
+      "label": "Unknown",
       "type": "person",
       "risk": "Low"
     },
@@ -459,18 +465,6 @@
     {
       "id": "b6e216a813ff",
       "label": "Government of Oyo State",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "06c8cb034ab7",
-      "label": "Alli",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ad921d604863",
-      "label": "Unknown",
       "type": "company",
       "risk": "Low"
     },
@@ -705,6 +699,12 @@
       "label": "Appointed as Attorney General of the Federation"
     },
     {
+      "id": "e057d11d6a23",
+      "from": "ad921d604863",
+      "to": "a74c4e5d89ef",
+      "label": "Appointed as Deputy Governorship Candidate"
+    },
+    {
       "id": "dc8a71f5cad0",
       "from": "86430d64a9dc",
       "to": "8a7b7af09965",
@@ -829,12 +829,6 @@
       "from": "0eb499263319",
       "to": "b6e216a813ff",
       "label": "Appointed as Governor"
-    },
-    {
-      "id": "0606be628d06",
-      "from": "06c8cb034ab7",
-      "to": "ad921d604863",
-      "label": "Appointed as Unknown"
     },
     {
       "id": "6ef476ba43f6",

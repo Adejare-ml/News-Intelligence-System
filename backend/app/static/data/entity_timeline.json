@@ -45,6 +45,25 @@
       ]
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 10,
@@ -64,25 +83,6 @@
       ]
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "total_mentions": 8,
@@ -96,22 +96,9 @@
       ]
     },
     {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 22.9,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 6,
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-07",
@@ -121,9 +108,22 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 16.0,
+          "mentions": 6,
+          "avg_risk": 16.7,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 7,
+          "avg_risk": 22.9,
+          "max_risk": 30
         }
       ]
     },
@@ -764,6 +764,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "all progressives alliance",
+      "label": "All Progressives alliance",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2003,6 +2016,19 @@
       ]
     },
     {
+      "key": "sunu assurances",
+      "label": "SUNU Assurances",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "sanusi",
       "label": "Sanusi",
       "total_mentions": 1,
@@ -2146,6 +2172,19 @@
       ]
     },
     {
+      "key": "unknown",
+      "label": "Unknown",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "unnamed commissioner",
       "label": "Unnamed Commissioner",
       "total_mentions": 1,
@@ -2159,5 +2198,5 @@
       ]
     }
   ],
-  "generated": "2026-09-21 13:36:57"
+  "generated": "2026-09-21 18:30:10"
 }

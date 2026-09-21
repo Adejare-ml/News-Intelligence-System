@@ -1,49 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 186,
-  "previous_articles": 128,
+  "recent_articles": 178,
+  "previous_articles": 137,
   "rising": [
-    {
-      "term": "newspapers",
-      "recent": 33,
-      "previous": 17,
-      "change": 16
-    },
-    {
-      "term": "punch",
-      "recent": 32,
-      "previous": 17,
-      "change": 15
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 32,
-      "previous": 17,
-      "change": 15
-    },
-    {
-      "term": "efcc",
-      "recent": 17,
-      "previous": 5,
-      "change": 12
-    },
     {
       "term": "nigeria\u2019s",
       "recent": 15,
       "previous": 3,
       "change": 12
-    },
-    {
-      "term": "urges",
-      "recent": 11,
-      "previous": 0,
-      "change": 11
-    },
-    {
-      "term": "guardian",
-      "recent": 39,
-      "previous": 29,
-      "change": 10
     },
     {
       "term": "mambilla",
@@ -52,7 +16,43 @@
       "change": 10
     },
     {
-      "term": "targets",
+      "term": "guardian",
+      "recent": 38,
+      "previous": 29,
+      "change": 9
+    },
+    {
+      "term": "newspapers",
+      "recent": 30,
+      "previous": 21,
+      "change": 9
+    },
+    {
+      "term": "punch",
+      "recent": 29,
+      "previous": 21,
+      "change": 8
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 29,
+      "previous": 21,
+      "change": 8
+    },
+    {
+      "term": "efcc",
+      "recent": 15,
+      "previous": 7,
+      "change": 8
+    },
+    {
+      "term": "seeks",
+      "recent": 10,
+      "previous": 3,
+      "change": 7
+    },
+    {
+      "term": "urges",
       "recent": 9,
       "previous": 2,
       "change": 7
@@ -66,21 +66,27 @@
   ],
   "falling": [
     {
+      "term": "petrol",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
       "term": "banks",
       "recent": 0,
       "previous": 6,
       "change": -6
     },
     {
+      "term": "boost",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
       "term": "ncaa",
       "recent": 3,
       "previous": 7,
-      "change": -4
-    },
-    {
-      "term": "petrol",
-      "recent": 2,
-      "previous": 6,
       "change": -4
     },
     {
@@ -114,28 +120,22 @@
       "change": -4
     },
     {
-      "term": "cbn",
-      "recent": 4,
-      "previous": 7,
-      "change": -3
-    },
-    {
-      "term": "court",
-      "recent": 3,
-      "previous": 6,
-      "change": -3
+      "term": "relief",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 128,
-      "previous": 82
+      "recent": 120,
+      "previous": 90
     },
     {
       "category": "Company",
       "recent": 30,
-      "previous": 30
+      "previous": 31
     },
     {
       "category": "Legal",
@@ -144,5 +144,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-21 13:36:55"
+  "generated": "2026-09-21 18:30:00"
 }

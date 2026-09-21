@@ -12,29 +12,56 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 15.0,
+      "recent_avg": 16.0,
       "previous_avg": 30.0,
-      "delta": -15.0,
-      "recent_mentions": 4,
+      "delta": -14.0,
+      "recent_mentions": 5,
       "previous_mentions": 2
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 40.5,
-      "previous_avg": 30.0,
-      "delta": 10.5,
-      "recent_mentions": 21,
-      "previous_mentions": 1
+      "recent_avg": 41.7,
+      "previous_avg": 32.5,
+      "delta": 9.2,
+      "recent_mentions": 18,
+      "previous_mentions": 4
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "recent_avg": 32.5,
+      "previous_avg": 40.0,
+      "delta": -7.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 19.4,
+      "previous_avg": 16.7,
+      "delta": 2.7,
+      "recent_mentions": 8,
+      "previous_mentions": 3
     },
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "recent_avg": 22.9,
-      "previous_avg": 26.7,
-      "delta": -3.8,
-      "recent_mentions": 7,
-      "previous_mentions": 3
+      "recent_avg": 23.3,
+      "previous_avg": 25.0,
+      "delta": -1.7,
+      "recent_mentions": 6,
+      "previous_mentions": 4
+    },
+    {
+      "key": "king s college",
+      "label": "King's College",
+      "recent_avg": 30.0,
+      "previous_avg": 30.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "abubakar malami",
@@ -109,39 +136,12 @@
       "previous_mentions": 0
     },
     {
-      "key": "african action congress",
-      "label": "African Action Congress",
-      "recent_avg": 40.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 37.5,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 8,
-      "previous_mentions": 0
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "recent_avg": 36.2,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
-      "previous_mentions": 0
-    },
-    {
-      "key": "king s college",
-      "label": "King's College",
-      "recent_avg": 30.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
@@ -163,15 +163,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "airways",
-      "label": "Nigeria Airways",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "recent_avg": 25.0,
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "recent_avg": 23.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-21 13:36:57"
+  "generated": "2026-09-21 18:30:10"
 }
