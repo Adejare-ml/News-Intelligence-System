@@ -1,6 +1,20 @@
 {
   "alerts": [
     {
+      "date": "2026-09-21",
+      "title": "EXCLUSIVE: EFCC sets up team to investigate Atiku, Malami, others named in ICC ruling on Mambilla deal - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZjVvQ01aOGR6bmhrUVNHaDRyYlEwMzltYWlxS2R2Y1NablZ3aTFLbjNLX3k2SHgwQ1F1eEtDVjNTc01iZjFlMHZZNkQ2ZDFIeVBOOE43QzZkdkpNbEpiYVdDblU4ZUlBNlBlYmdMWVd6aTFXb2Z0STJZNkVreTZDUklhVmFqY0FzTmpnSHM4a2hBbEM3ekhuVlJ3SHdfLWZ3eDdSLWJEZ1YtSjJtVlJmZ1IybHJuclNxN2Q1VElHU1NmN1ZuWkllbHNUM21RY1BmbzVILURDSE0wNExZTE1GX1VEOVNLMnl3STlpQQ?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "International Chamber of Commerce",
+        "Atiku Abubakar",
+        "Abubakar Malami"
+      ]
+    },
+    {
       "date": "2026-09-20",
       "title": "Mambilla: How Malami attempted to deceive Buhari, struck corrupt deals with Adesanya \u2013 ICC Tribunal - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOMm13UGRnQU5nSkh2UzBXNHJSUGljMDcwRENjTm1sZExXYURydThtN2t3V3dDV3kya0VZdkQwMVVacGhYd0FaM01VczdPWVJ2N3RKMjdMWlA1aS1wVkVBYlh2Q29Hb1dDaW9GekJvenQydU1YMTVJb21aaDJnamV1OUVVa0FzMDF1MW9hVHl5WndJdkVlNTV2RjZrZDhYUVZQUkt4VjFpWG1wWE5tTkhyb2dBaGg1UTE5bFNnS2x1blprSlBSRWlFbm5kOUlLSWNUZ0ZubVlGbDE5SUtnRkYySkFaeEdpNHZmWEttX0RVNnhkUTQ?oc=5",
@@ -179,5 +193,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-20 19:21:43"
+  "generated": "2026-09-21 01:00:56"
 }

@@ -1,21 +1,23 @@
 {
-  "new_companies": [
-    "All Progressives Movement"
-  ],
-  "new_people": [
-    "Otti"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "EXCLUSIVE: EFCC sets up team to investigate Atiku, Malami, others named in ICC ruling on Mambilla deal - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZjVvQ01aOGR6bmhrUVNHaDRyYlEwMzltYWlxS2R2Y1NablZ3aTFLbjNLX3k2SHgwQ1F1eEtDVjNTc01iZjFlMHZZNkQ2ZDFIeVBOOE43QzZkdkpNbEpiYVdDblU4ZUlBNlBlYmdMWVd6aTFXb2Z0STJZNkVreTZDUklhVmFqY0FzTmpnSHM4a2hBbEM3ekhuVlJ3SHdfLWZ3eDdSLWJEZ1YtSjJtVlJmZ1IybHJuclNxN2Q1VElHU1NmN1ZuWkllbHNUM21RY1BmbzVILURDSE0wNExZTE1GX1VEOVNLMnl3STlpQQ?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
-    "new_companies": 1,
-    "new_people": 1,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-09-20 19:21:40"
+  "generated": "2026-09-21 01:00:53"
 }
