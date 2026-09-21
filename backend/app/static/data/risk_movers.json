@@ -3,11 +3,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 23.4,
+      "recent_avg": 23.6,
       "previous_avg": 50.0,
-      "delta": -26.6,
-      "recent_mentions": 16,
+      "delta": -26.4,
+      "recent_mentions": 18,
       "previous_mentions": 2
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 44.4,
+      "previous_avg": 28.3,
+      "delta": 16.1,
+      "recent_mentions": 16,
+      "previous_mentions": 6
     },
     {
       "key": "central bank of",
@@ -17,15 +26,6 @@
       "delta": -14.0,
       "recent_mentions": 5,
       "previous_mentions": 2
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 41.7,
-      "previous_avg": 32.5,
-      "delta": 9.2,
-      "recent_mentions": 18,
-      "previous_mentions": 4
     },
     {
       "key": "oyo state government",
@@ -53,15 +53,6 @@
       "delta": -1.7,
       "recent_mentions": 6,
       "previous_mentions": 4
-    },
-    {
-      "key": "king s college",
-      "label": "King's College",
-      "recent_avg": 30.0,
-      "previous_avg": 30.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "abubakar malami",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "recent_avg": 22.9,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 7,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-21 18:30:10"
+  "generated": "2026-09-21 20:54:12"
 }

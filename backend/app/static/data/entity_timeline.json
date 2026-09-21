@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 18,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-07",
@@ -38,9 +38,9 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
         }
       ]
     },
@@ -2198,5 +2198,5 @@
       ]
     }
   ],
-  "generated": "2026-09-21 18:30:10"
+  "generated": "2026-09-21 20:54:12"
 }
