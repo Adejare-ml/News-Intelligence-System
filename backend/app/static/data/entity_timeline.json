@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 17,
+      "total_mentions": 18,
       "points": [
         {
           "week": "2026-09-07",
@@ -35,6 +35,12 @@
           "mentions": 16,
           "avg_risk": 23.1,
           "max_risk": 65
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -957,6 +963,19 @@
       ]
     },
     {
+      "key": "david fagbemi",
+      "label": "David Fagbemi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "debt management office",
       "label": "Debt Management Office",
       "total_mentions": 1,
@@ -1724,6 +1743,19 @@
       ]
     },
     {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "communications satellite nigcomsat",
       "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
       "total_mentions": 1,
@@ -2127,5 +2159,5 @@
       ]
     }
   ],
-  "generated": "2026-09-21 10:53:25"
+  "generated": "2026-09-21 13:36:57"
 }

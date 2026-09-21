@@ -180,16 +180,16 @@
     },
     {
       "source": "independentng",
-      "total": 89,
+      "total": 90,
       "published": 28,
-      "filtered": 61,
+      "filtered": 62,
       "accept_rate": 31,
       "avg_risk": 24.5,
       "engines": {
         "unknown": 20,
         "ollama": 8
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "legit",
@@ -246,16 +246,16 @@
     },
     {
       "source": "thisdaylive",
-      "total": 25,
-      "published": 11,
-      "filtered": 14,
+      "total": 27,
+      "published": 12,
+      "filtered": 15,
       "accept_rate": 44,
-      "avg_risk": 25.9,
+      "avg_risk": 25.4,
       "engines": {
         "unknown": 5,
-        "ollama": 6
+        "ollama": 7
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "premiumtimesng",
@@ -678,6 +678,18 @@
       "last_seen": "2026-09-20"
     },
     {
+      "source": "Nigerian Communications Commission (NCC)",
+      "total": 3,
+      "published": 2,
+      "filtered": 1,
+      "accept_rate": 67,
+      "avg_risk": 30.0,
+      "engines": {
+        "ollama": 2
+      },
+      "last_seen": "2026-09-21"
+    },
+    {
       "source": "Premium Times",
       "total": 3,
       "published": 3,
@@ -880,18 +892,6 @@
         "ollama": 1
       },
       "last_seen": "2026-08-10"
-    },
-    {
-      "source": "Nigerian Communications Commission (NCC)",
-      "total": 2,
-      "published": 1,
-      "filtered": 1,
-      "accept_rate": 50,
-      "avg_risk": 40.0,
-      "engines": {
-        "ollama": 1
-      },
-      "last_seen": "2026-08-19"
     },
     {
       "source": "The Times of India",
@@ -1860,5 +1860,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-21 10:53:25"
+  "generated": "2026-09-21 13:36:57"
 }

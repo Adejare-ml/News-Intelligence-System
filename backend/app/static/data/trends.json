@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 185,
+  "recent_articles": 186,
   "previous_articles": 128,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 34,
-      "previous": 16,
-      "change": 18
+      "recent": 33,
+      "previous": 17,
+      "change": 16
     },
     {
       "term": "punch",
-      "recent": 33,
-      "previous": 16,
-      "change": 17
+      "recent": 32,
+      "previous": 17,
+      "change": 15
     },
     {
       "term": "punch newspapers",
-      "recent": 33,
-      "previous": 16,
-      "change": 17
+      "recent": 32,
+      "previous": 17,
+      "change": 15
     },
     {
       "term": "efcc",
@@ -40,16 +40,16 @@
       "change": 11
     },
     {
+      "term": "guardian",
+      "recent": 39,
+      "previous": 29,
+      "change": 10
+    },
+    {
       "term": "mambilla",
       "recent": 10,
       "previous": 0,
       "change": 10
-    },
-    {
-      "term": "guardian",
-      "recent": 39,
-      "previous": 30,
-      "change": 9
     },
     {
       "term": "targets",
@@ -129,7 +129,7 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 127,
+      "recent": 128,
       "previous": 82
     },
     {
@@ -144,5 +144,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-21 10:53:23"
+  "generated": "2026-09-21 13:36:55"
 }
