@@ -139,6 +139,18 @@
       "risk": "Low"
     },
     {
+      "id": "e5c0e655148a",
+      "label": "Nigerian Civil Aviation Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0b2ac17f47f4",
       "label": "Lagos State Waste Management Authority",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "653fd7557fc1",
-      "label": "Tertiary Education Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a08bce2d78d",
-      "label": "Federal Civil Service",
       "type": "agency",
       "risk": "Low"
     },
@@ -475,6 +475,12 @@
       "risk": "Low"
     },
     {
+      "id": "b64909add6b9",
+      "label": "Sunrise Ltd",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "77c793dd24f7",
       "label": "Aliko Dangote",
       "type": "psc",
@@ -581,6 +587,12 @@
       "label": "Dangote Cement Plc",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "653fd7557fc1",
+      "label": "Tertiary Education Trust Fund",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "22bc1419bc0f",
@@ -823,6 +835,12 @@
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President"
+    },
+    {
+      "id": "6ef476ba43f6",
+      "from": "f3f65e2dd7f8",
+      "to": "b64909add6b9",
+      "label": "Significant influence or control"
     },
     {
       "id": "b42222bf292e",

@@ -213,6 +213,25 @@
       ]
     },
     {
+      "key": "civil aviation authority",
+      "label": "Nigerian Civil Aviation Authority",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "exchange",
       "label": "Nigerian Exchange Group",
       "total_mentions": 3,
@@ -374,6 +393,25 @@
       ]
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "institute of chartered accountants of",
       "label": "Institute of Chartered Accountants of Nigeria",
       "total_mentions": 2,
@@ -491,19 +529,6 @@
       ]
     },
     {
-      "key": "civil aviation authority",
-      "label": "Nigerian Civil Aviation Authority",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "national shipping line",
       "label": "Nigerian National Shipping Line",
       "total_mentions": 2,
@@ -526,6 +551,44 @@
           "mentions": 2,
           "avg_risk": 5.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "sunrise",
+      "label": "Sunrise Ltd",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -1189,19 +1252,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
         }
       ]
     },
@@ -1986,19 +2036,6 @@
       ]
     },
     {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "southwark crown court",
       "label": "Southwark Crown Court",
       "total_mentions": 1,
@@ -2008,19 +2045,6 @@
           "mentions": 1,
           "avg_risk": 60.0,
           "max_risk": 60
-        }
-      ]
-    },
-    {
-      "key": "sunrise",
-      "label": "Sunrise",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -2103,5 +2127,5 @@
       ]
     }
   ],
-  "generated": "2026-09-21 01:00:56"
+  "generated": "2026-09-21 10:53:25"
 }

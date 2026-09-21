@@ -1,23 +1,30 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Sunrise Ltd"
+  ],
   "new_people": [],
-  "psc_added": [],
+  "psc_added": [
+    {
+      "person": "Leno Adesanya",
+      "company": "Sunrise Ltd"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "EXCLUSIVE: EFCC sets up team to investigate Atiku, Malami, others named in ICC ruling on Mambilla deal - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZjVvQ01aOGR6bmhrUVNHaDRyYlEwMzltYWlxS2R2Y1NablZ3aTFLbjNLX3k2SHgwQ1F1eEtDVjNTc01iZjFlMHZZNkQ2ZDFIeVBOOE43QzZkdkpNbEpiYVdDblU4ZUlBNlBlYmdMWVd6aTFXb2Z0STJZNkVreTZDUklhVmFqY0FzTmpnSHM4a2hBbEM3ekhuVlJ3SHdfLWZ3eDdSLWJEZ1YtSjJtVlJmZ1IybHJuclNxN2Q1VElHU1NmN1ZuWkllbHNUM21RY1BmbzVILURDSE0wNExZTE1GX1VEOVNLMnl3STlpQQ?oc=5",
+      "title": "Mambilla: How Leno Adesanya\u2019s Sunrise Ltd framed alleged bribe payments to govt officials as \u201cNigerian Culture\u201d - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNLTF1TWxZaFBrZUtlTTJNWkI2a0dqLW9IQmJGMS00V25xMUZmOHNsSXh3c2JEWEVQY0phNGVMYXhqa19WTDE4TzFPelpvaktGUkQ5OElOMTUyMENTTFdUUzJldXJzektNdGs0TXNMWWxBaXhlT3ZTS2U0d09aM2dyVkwyTVA4N2c1ZkJmZUVvX2dCMzVidFI0T25OWjU4UDFtWGRkQkFQbHpzUHEwcGpBaVpCU3NCaVR2UDgzbmVLNXl0aks1RHItSnQ0NVpBaDJsSFpBSEdiNml5NDFGUjIwSlJlcTlPdi1BNldSOUdnSHlWbm9IWXZV?oc=5",
       "risk": 85.0
     }
   ],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 1,
     "new_people": 0,
-    "psc_added": 0,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 1
   },
-  "generated": "2026-09-21 01:00:53"
+  "generated": "2026-09-21 10:53:22"
 }

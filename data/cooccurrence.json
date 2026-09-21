@@ -34,12 +34,20 @@
       "label": "Federal Bureau of Investigation"
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission"
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce"
     },
     {
       "key": "oyo state government",
       "label": "Oyo State Government"
+    },
+    {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project"
     },
     {
       "key": "sunrise power",
@@ -87,10 +95,15 @@
       "weight": 2
     },
     {
+      "a": "independent national electoral commission",
+      "b": "socio economic rights and accountability project",
+      "weight": 2
+    },
+    {
       "a": "international chamber of commerce",
       "b": "sunrise power",
       "weight": 2
     }
   ],
-  "generated": "2026-09-21 01:00:56"
+  "generated": "2026-09-21 10:53:25"
 }
