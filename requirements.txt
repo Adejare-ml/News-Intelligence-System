@@ -11,7 +11,7 @@ feedparser==6.0.14
 beautifulsoup4==4.15.0
 spacy==3.8.16
 sentence-transformers==3.0.1
-pyjwt==2.13.0
+pyjwt==2.14.0
 requests==2.33.0
 numpy==1.26.4
 bcrypt==5.0.0
