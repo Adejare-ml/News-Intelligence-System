@@ -1,80 +1,86 @@
 {
   "window_days": 7,
-  "recent_articles": 194,
-  "previous_articles": 127,
+  "recent_articles": 185,
+  "previous_articles": 128,
   "rising": [
     {
       "term": "newspapers",
-      "recent": 37,
-      "previous": 14,
-      "change": 23
+      "recent": 34,
+      "previous": 16,
+      "change": 18
     },
     {
       "term": "punch",
-      "recent": 36,
-      "previous": 14,
-      "change": 22
+      "recent": 33,
+      "previous": 16,
+      "change": 17
     },
     {
       "term": "punch newspapers",
-      "recent": 36,
-      "previous": 14,
-      "change": 22
-    },
-    {
-      "term": "guardian",
-      "recent": 43,
-      "previous": 29,
-      "change": 14
-    },
-    {
-      "term": "nigeria\u2019s",
-      "recent": 16,
-      "previous": 2,
-      "change": 14
+      "recent": 33,
+      "previous": 16,
+      "change": 17
     },
     {
       "term": "efcc",
       "recent": 17,
-      "previous": 6,
-      "change": 11
+      "previous": 5,
+      "change": 12
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 15,
+      "previous": 3,
+      "change": 12
     },
     {
       "term": "urges",
       "recent": 11,
-      "previous": 1,
-      "change": 10
+      "previous": 0,
+      "change": 11
     },
     {
       "term": "mambilla",
-      "recent": 9,
+      "recent": 10,
       "previous": 0,
+      "change": 10
+    },
+    {
+      "term": "guardian",
+      "recent": 39,
+      "previous": 30,
       "change": 9
     },
     {
-      "term": "ipo",
-      "recent": 11,
-      "previous": 4,
+      "term": "targets",
+      "recent": 9,
+      "previous": 2,
       "change": 7
     },
     {
-      "term": "refinery",
-      "recent": 10,
-      "previous": 3,
+      "term": "cac",
+      "recent": 7,
+      "previous": 0,
       "change": 7
     }
   ],
   "falling": [
     {
-      "term": "ncaa",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
+      "term": "banks",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
     },
     {
-      "term": "court",
+      "term": "ncaa",
       "recent": 3,
       "previous": 7,
+      "change": -4
+    },
+    {
+      "term": "petrol",
+      "recent": 2,
+      "previous": 6,
       "change": -4
     },
     {
@@ -108,41 +114,35 @@
       "change": -4
     },
     {
-      "term": "probe",
-      "recent": 5,
-      "previous": 8,
+      "term": "cbn",
+      "recent": 4,
+      "previous": 7,
       "change": -3
     },
     {
-      "term": "naicom",
-      "recent": 2,
-      "previous": 5,
-      "change": -3
-    },
-    {
-      "term": "strengthen",
-      "recent": 2,
-      "previous": 5,
+      "term": "court",
+      "recent": 3,
+      "previous": 6,
       "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 132,
-      "previous": 85
+      "recent": 127,
+      "previous": 82
     },
     {
       "category": "Company",
-      "recent": 35,
-      "previous": 25
+      "recent": 30,
+      "previous": 30
     },
     {
       "category": "Legal",
-      "recent": 27,
-      "previous": 17
+      "recent": 28,
+      "previous": 16
     }
   ],
   "social": [],
-  "generated": "2026-09-21 01:00:54"
+  "generated": "2026-09-21 10:53:23"
 }

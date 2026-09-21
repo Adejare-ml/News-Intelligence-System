@@ -40,7 +40,7 @@
     {
       "industry": "Energy",
       "companies": 4,
-      "mentions": 7,
+      "mentions": 8,
       "risk": {
         "High": 2,
         "Medium": 2
@@ -122,6 +122,14 @@
     },
     {
       "industry": "Legal/Arbitration",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -233,14 +241,6 @@
       }
     },
     {
-      "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Medium": 1
-      }
-    },
-    {
       "industry": "Non-profit/NGO",
       "companies": 1,
       "mentions": 1,
@@ -289,5 +289,5 @@
       }
     }
   ],
-  "generated": "2026-09-21 01:00:56"
+  "generated": "2026-09-21 10:53:25"
 }

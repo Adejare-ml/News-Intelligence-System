@@ -12,11 +12,11 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 16.0,
-      "previous_avg": 40.0,
-      "delta": -24.0,
-      "recent_mentions": 5,
-      "previous_mentions": 1
+      "recent_avg": 15.0,
+      "previous_avg": 30.0,
+      "delta": -15.0,
+      "recent_mentions": 4,
+      "previous_mentions": 2
     },
     {
       "key": "economic and financial crimes commission",
@@ -30,11 +30,11 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "recent_avg": 24.4,
-      "previous_avg": 20.0,
-      "delta": 4.4,
-      "recent_mentions": 9,
-      "previous_mentions": 1
+      "recent_avg": 22.9,
+      "previous_avg": 26.7,
+      "delta": -3.8,
+      "recent_mentions": 7,
+      "previous_mentions": 3
     },
     {
       "key": "abubakar malami",
@@ -61,6 +61,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 6,
+      "previous_mentions": 0
+    },
+    {
+      "key": "sunrise",
+      "label": "Sunrise Ltd",
+      "recent_avg": 62.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -154,15 +163,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "uber",
-      "label": "Uber",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "airways",
       "label": "Nigeria Airways",
       "recent_avg": 25.0,
@@ -172,8 +172,8 @@
       "previous_mentions": 0
     },
     {
-      "key": "civil aviation authority",
-      "label": "Nigerian Civil Aviation Authority",
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
       "recent_avg": 25.0,
       "previous_avg": null,
       "delta": null,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-21 01:00:56"
+  "generated": "2026-09-21 10:53:25"
 }
