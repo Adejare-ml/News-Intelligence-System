@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 21,
+      "total_mentions": 22,
       "points": [
         {
           "week": "2026-09-07",
@@ -13,8 +13,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 20,
-          "avg_risk": 38.2,
+          "mentions": 21,
+          "avg_risk": 40.5,
           "max_risk": 85
         }
       ]
@@ -60,13 +60,19 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 9,
           "avg_risk": 17.2,
           "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -99,7 +105,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 5,
+      "total_mentions": 6,
       "points": [
         {
           "week": "2026-09-07",
@@ -109,8 +115,8 @@
         },
         {
           "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 15.0,
+          "mentions": 5,
+          "avg_risk": 16.0,
           "max_risk": 20
         }
       ]
@@ -118,12 +124,12 @@
     {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
-      "total_mentions": 5,
+      "total_mentions": 6,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 59.0,
+          "mentions": 6,
+          "avg_risk": 63.3,
           "max_risk": 85
         }
       ]
@@ -233,6 +239,19 @@
       ]
     },
     {
+      "key": "abubakar malami",
+      "label": "Abubakar Malami",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 2,
@@ -274,6 +293,25 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -410,6 +448,19 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "national health insurance authority",
+      "label": "National Health Insurance Authority",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -570,19 +621,6 @@
       ]
     },
     {
-      "key": "abubakar malami",
-      "label": "Abubakar Malami",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "actionaid",
       "label": "ActionAid",
       "total_mentions": 1,
@@ -667,19 +705,6 @@
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
@@ -1285,6 +1310,19 @@
       ]
     },
     {
+      "key": "lagos state waste management authority",
+      "label": "Lagos State Waste Management Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "lebara",
       "label": "Lebara",
       "total_mentions": 1,
@@ -1450,19 +1488,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national health insurance authority",
-      "label": "National Health Insurance Authority",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -2078,5 +2103,5 @@
       ]
     }
   ],
-  "generated": "2026-09-20 19:21:43"
+  "generated": "2026-09-21 01:00:56"
 }

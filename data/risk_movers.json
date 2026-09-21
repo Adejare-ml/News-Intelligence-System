@@ -3,28 +3,28 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 23.1,
-      "previous_avg": 85.0,
-      "delta": -61.9,
-      "recent_mentions": 16,
-      "previous_mentions": 1
+      "recent_avg": 23.7,
+      "previous_avg": 50.0,
+      "delta": -26.3,
+      "recent_mentions": 15,
+      "previous_mentions": 2
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 15.0,
+      "recent_avg": 16.0,
       "previous_avg": 40.0,
-      "delta": -25.0,
-      "recent_mentions": 4,
+      "delta": -24.0,
+      "recent_mentions": 5,
       "previous_mentions": 1
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 38.2,
+      "recent_avg": 40.5,
       "previous_avg": 30.0,
-      "delta": 8.2,
-      "recent_mentions": 20,
+      "delta": 10.5,
+      "recent_mentions": 21,
       "previous_mentions": 1
     },
     {
@@ -37,6 +37,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "abubakar malami",
+      "label": "Abubakar Malami",
+      "recent_avg": 85.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "recent_avg": 63.8,
@@ -46,21 +55,21 @@
       "previous_mentions": 0
     },
     {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "recent_avg": 63.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 6,
+      "previous_mentions": 0
+    },
+    {
       "key": "sunrise power",
       "label": "Sunrise Power",
       "recent_avg": 60.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "international chamber of commerce",
-      "label": "International Chamber of Commerce",
-      "recent_avg": 59.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 5,
       "previous_mentions": 0
     },
     {
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-20 19:21:43"
+  "generated": "2026-09-21 01:00:56"
 }

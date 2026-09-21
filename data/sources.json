@@ -2,45 +2,45 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2023,
-      "published": 1273,
-      "filtered": 750,
+      "total": 2027,
+      "published": 1274,
+      "filtered": 753,
       "accept_rate": 63,
       "avg_risk": 29.2,
       "engines": {
         "unknown": 963,
-        "ollama": 302,
+        "ollama": 303,
         "nvidia": 8
       },
       "last_seen": "2026-09-20"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1133,
-      "published": 609,
-      "filtered": 524,
+      "total": 1135,
+      "published": 610,
+      "filtered": 525,
       "accept_rate": 54,
-      "avg_risk": 30.8,
+      "avg_risk": 30.9,
       "engines": {
         "unknown": 440,
-        "ollama": 165,
+        "ollama": 166,
         "nvidia": 4
       },
       "last_seen": "2026-09-20"
     },
     {
       "source": "Punch Newspapers",
-      "total": 612,
-      "published": 292,
-      "filtered": 320,
+      "total": 620,
+      "published": 295,
+      "filtered": 325,
       "accept_rate": 48,
-      "avg_risk": 27.1,
+      "avg_risk": 27.0,
       "engines": {
         "unknown": 188,
-        "ollama": 100,
+        "ollama": 103,
         "nvidia": 4
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -58,9 +58,9 @@
     },
     {
       "source": "The Punch",
-      "total": 422,
+      "total": 425,
       "published": 249,
-      "filtered": 173,
+      "filtered": 176,
       "accept_rate": 59,
       "avg_risk": 33.7,
       "engines": {
@@ -68,7 +68,7 @@
         "nvidia": 6,
         "ollama": 139
       },
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "Vanguard",
@@ -127,9 +127,9 @@
     },
     {
       "source": "leadership",
-      "total": 131,
+      "total": 133,
       "published": 46,
-      "filtered": 85,
+      "filtered": 87,
       "accept_rate": 35,
       "avg_risk": 23.4,
       "engines": {
@@ -140,16 +140,16 @@
     },
     {
       "source": "dailypost",
-      "total": 120,
+      "total": 122,
       "published": 42,
-      "filtered": 78,
-      "accept_rate": 35,
+      "filtered": 80,
+      "accept_rate": 34,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 40,
         "ollama": 2
       },
-      "last_seen": "2026-09-18"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "punchng",
@@ -167,9 +167,9 @@
     },
     {
       "source": "vanguardngr",
-      "total": 118,
+      "total": 119,
       "published": 26,
-      "filtered": 92,
+      "filtered": 93,
       "accept_rate": 22,
       "avg_risk": 24.7,
       "engines": {
@@ -207,16 +207,16 @@
     },
     {
       "source": "businessday",
-      "total": 67,
+      "total": 68,
       "published": 19,
-      "filtered": 48,
+      "filtered": 49,
       "accept_rate": 28,
       "avg_risk": 25.1,
       "engines": {
         "unknown": 13,
         "ollama": 6
       },
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-20"
     },
     {
       "source": "latestnigeriannews",
@@ -258,6 +258,18 @@
       "last_seen": "2026-09-20"
     },
     {
+      "source": "premiumtimesng",
+      "total": 24,
+      "published": 4,
+      "filtered": 20,
+      "accept_rate": 17,
+      "avg_risk": 24.0,
+      "engines": {
+        "unknown": 4
+      },
+      "last_seen": "2026-09-20"
+    },
+    {
       "source": "tribuneonlineng",
       "total": 24,
       "published": 6,
@@ -269,18 +281,6 @@
         "ollama": 3
       },
       "last_seen": "2026-09-17"
-    },
-    {
-      "source": "premiumtimesng",
-      "total": 23,
-      "published": 4,
-      "filtered": 19,
-      "accept_rate": 17,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 4
-      },
-      "last_seen": "2026-09-19"
     },
     {
       "source": "tori",
@@ -1860,5 +1860,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-20 19:21:43"
+  "generated": "2026-09-21 01:00:56"
 }
