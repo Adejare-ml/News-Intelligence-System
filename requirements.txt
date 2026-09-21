@@ -17,7 +17,7 @@ numpy==1.26.4
 bcrypt==5.0.0
 gspread==6.1.2
 google-auth==2.56.2
-pandas==2.2.2
+pandas==3.0.5
 openpyxl==3.1.5
 google-generativeai==0.5.4
 openai>=1.55.3,<2
