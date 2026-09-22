@@ -186,3 +186,83 @@ def post_alert_webhook(webhook_url: str, alerts: List[Dict[str, Any]]) -> bool:
     except Exception as exc:
         logger.warning(f"Alert webhook failed: {exc}")
         return False
+
+
+# ---------------------------------------------------------------------------
+# ntfy.sh push notifications
+# ---------------------------------------------------------------------------
+
+MAX_NTFY_ITEMS = 5  # one push per record lands on a phone; cap harder than the webhook
+
+
+def _ascii_header(value: str, fallback: str = "AURA alert") -> str:
+    """HTTP headers are latin-1; a naira sign in a title must not raise."""
+    cleaned = "".join(ch for ch in str(value or "") if 32 <= ord(ch) < 127).strip()
+    return cleaned or fallback
+
+
+def ntfy_payloads(alerts: List[Dict[str, Any]],
+                  cap: int = MAX_NTFY_ITEMS) -> List[Dict[str, Any]]:
+    """One ntfy request per high-risk record: body + headers, pure.
+
+    The full unicode title lives in the body (UTF-8 is fine there); the
+    Title header gets an ASCII-sanitised copy because requests encodes
+    headers as latin-1. Critical maps to ntfy priority 5 (urgent), the
+    rest of the high band to 4.
+    """
+    payloads = []
+    for alert in (alerts or [])[:cap]:
+        level = str(alert.get("risk_level", "")).strip().lower()
+        priority = "5" if level == "critical" else "4"
+        title = str(alert.get("title", "")).strip() or "Untitled"
+        source = str(alert.get("source", "")).strip()
+        score = alert.get("risk_score")
+        body_lines = [title]
+        meta = " · ".join(part for part in (
+            source,
+            f"risk {int(score)}" if isinstance(score, (int, float)) else "",
+            (alert.get("risk_level") or "").strip(),
+        ) if part)
+        if meta:
+            body_lines.append(meta)
+        headers = {
+            "Title": _ascii_header(title),
+            "Priority": priority,
+            "Tags": "rotating_light" if priority == "5" else "warning",
+        }
+        url = str(alert.get("url", "")).strip()
+        if url.startswith("http"):
+            headers["Click"] = url
+        payloads.append({"body": "\n".join(body_lines), "headers": headers})
+    return payloads
+
+
+def post_ntfy_alerts(topic_url: str, alerts: List[Dict[str, Any]]) -> int:
+    """Push this run's high-risk records to an ntfy topic, one per record.
+
+    Same contract as post_alert_webhook: unset topic, nothing to send,
+    and every failure are logged no-ops -- an alerting side channel must
+    never be able to fail the pipeline it reports on. Returns how many
+    pushes were acknowledged.
+    """
+    url = str(topic_url or "").strip()
+    if not url or not alerts:
+        return 0
+    delivered = 0
+    for payload in ntfy_payloads(alerts):
+        try:
+            response = requests.post(
+                url,
+                data=payload["body"].encode("utf-8"),
+                headers=payload["headers"],
+                timeout=WEBHOOK_TIMEOUT_SECONDS,
+            )
+            if response.status_code < 300:
+                delivered += 1
+            else:
+                logger.warning(f"ntfy push returned HTTP {response.status_code}.")
+        except Exception as exc:
+            logger.warning(f"ntfy push failed: {exc}")
+    if delivered:
+        logger.info(f"ntfy delivered {delivered} push(es).")
+    return delivered

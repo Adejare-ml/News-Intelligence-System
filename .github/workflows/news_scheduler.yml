@@ -81,6 +81,10 @@ jobs:
           # Optional: a Slack/Discord-style webhook that receives this
           # run's high-risk articles. Empty secret = clean skip.
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+          # Optional: an ntfy.sh topic URL (e.g. https://ntfy.sh/<private
+          # topic>) for phone push alerts on the same high-risk records.
+          # Empty secret = clean skip. See docs/NOTIFICATIONS.md.
+          NTFY_TOPIC_URL: ${{ secrets.NTFY_TOPIC_URL }}
         run: |
           python run_pipeline.py
 
@@ -104,6 +108,23 @@ jobs:
           # the capture worked and the samples evaporated, which made the claim
           # that a corpus would accumulate on its own quietly false.
           file_pattern: "backend/app/static/data/* evals/corpus/*"
+
+      # Morning email briefing: only after the 07:00 UTC run (08:00 Lagos),
+      # composed from the data files this run just wrote. Opt-in via SMTP
+      # secrets -- the script exits 0 with a log line when they are unset.
+      # continue-on-error because a mail-provider outage must not mark the
+      # pipeline run red or file a pipeline-failure issue; the step's own
+      # log still shows the failure. See docs/NOTIFICATIONS.md for setup.
+      - name: Send the morning email briefing
+        if: github.event.schedule == '0 7 * * *'
+        continue-on-error: true
+        env:
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          SMTP_HOST: ${{ vars.SMTP_HOST }}
+          SMTP_PORT: ${{ vars.SMTP_PORT }}
+        run: python scripts/send_morning_email.py
 
       # A red run is only useful if someone sees it. The 2026-07-30 outage ran
       # for days unnoticed. Reuses a single open issue so repeated failures
