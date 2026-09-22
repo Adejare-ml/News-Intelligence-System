@@ -47,6 +47,11 @@ const browserGlobals = {
 
 module.exports = [
     {
+        // Vendored third-party bundles (chart.js, vis-network) are minified
+        // upstream artifacts, not code this repo authors or lints.
+        ignores: ["backend/app/static/js/vendor/**"],
+    },
+    {
         files: ["backend/app/static/js/**/*.js"],
         languageOptions: {
             ecmaVersion: 2021,

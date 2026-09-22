@@ -76,6 +76,12 @@
     transition: outline-offset 0.2s ease;
 }
 
+html {
+    /* Anchor scrolls and scrollIntoView both respect this, so section tops
+       land below the sticky header instead of underneath it. */
+    scroll-padding-top: 96px;
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-primary);
@@ -145,12 +151,48 @@ body {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-/* Header */
+/* Header. Sticky so navigation survives the scroll to any section -- the
+   page is one long document and the header used to scroll away, leaving
+   deep sections with no way back but scrolling. Opaquer than the shared
+   .glass so content sliding underneath stays legible. */
 .dashboard-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    position: sticky;
+    top: 10px;
+    z-index: 60;
+    background: rgba(13, 15, 24, 0.92);
+}
+
+.section-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: color var(--dur-fast) var(--ease-out),
+                background-color var(--dur-fast) var(--ease-out);
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-link.active {
+    color: var(--text-primary);
+    background: rgba(139, 92, 246, 0.14);
+    border-color: rgba(139, 92, 246, 0.35);
 }
 
 .logo-area {
@@ -1606,11 +1648,22 @@ div.vis-tooltip {
 @media (max-width: 900px) {
     .container { padding: 12px; gap: 14px; }
 
+    html { scroll-padding-top: 12px; }
+
+    /* The wrapped header is too tall to pin; the fixed bottom tab bar is
+       the persistent navigation on phones instead. */
     .dashboard-header {
         flex-wrap: wrap;
         gap: 12px;
         padding: 14px 16px;
+        position: static;
     }
+
+    /* The tab bar covers the header's nav row */
+    .section-nav { display: none; }
+
+    /* Keep the last content clear of the fixed tab bar */
+    body { padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px)); }
 
     .system-status {
         flex-wrap: wrap;
@@ -2420,4 +2473,69 @@ main[data-route-page] > :not([data-route-outlet]) {
 
 @media (max-width: 700px) {
     .compare-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================
+   MOBILE TAB BAR — fixed bottom navigation on phones. Hidden
+   on desktop, where the sticky header's nav covers the job.
+   ========================================================== */
+
+.mobile-tabbar {
+    display: none;
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    z-index: 70;
+    padding: 6px;
+    border-radius: 18px;
+    background: rgba(13, 15, 24, 0.94);
+}
+
+@media (max-width: 900px) {
+    .mobile-tabbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 2px;
+    }
+}
+
+.mobile-tabbar .tab-item {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 7px 4px 6px;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color var(--dur-fast) var(--ease-out),
+                background-color var(--dur-fast) var(--ease-out);
+}
+
+.mobile-tabbar .tab-item svg {
+    width: 20px;
+    height: 20px;
+}
+
+.mobile-tabbar .tab-item.active {
+    color: var(--text-primary);
+    background: rgba(139, 92, 246, 0.16);
+}
+
+/* Inline substitute for a chart whose renderer failed to load */
+.muted-note {
+    color: var(--text-muted);
+    font-size: 13px;
+    padding: var(--space-4);
+    text-align: center;
 }

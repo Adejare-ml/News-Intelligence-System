@@ -477,7 +477,17 @@
                 }
 
                 var Chart = global.Chart;
+                // A canvas with a dead renderer is an empty rectangle that
+                // explains nothing; swap in a note instead.
+                function chartUnavailable(canvas) {
+                    if (!canvas || !canvas.parentNode) return;
+                    var note = doc.createElement("p");
+                    note.className = "muted-note";
+                    note.textContent = "The chart renderer failed to load — reload the page to retry.";
+                    canvas.parentNode.replaceChild(note, canvas);
+                }
                 var volumeCanvas = doc.getElementById("health-chart");
+                if (!Chart) chartUnavailable(volumeCanvas);
                 if (Chart && volumeCanvas) {
                     new Chart(volumeCanvas.getContext("2d"), {
                         data: {
@@ -505,6 +515,7 @@
 
                 var mix = engineMix(results[1]);
                 var engineCanvas = doc.getElementById("engine-chart");
+                if (!Chart) chartUnavailable(engineCanvas);
                 if (Chart && engineCanvas && mix.length) {
                     new Chart(engineCanvas.getContext("2d"), {
                         type: "doughnut",
