@@ -1,28 +1,9 @@
 {
   "entities": [
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 22,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 21,
-          "avg_risk": 40.5,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 21,
+      "total_mentions": 24,
       "points": [
         {
           "week": "2026-09-07",
@@ -38,9 +19,28 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 22.5,
+          "mentions": 7,
+          "avg_risk": 22.9,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "total_mentions": 22,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 21,
+          "avg_risk": 40.5,
+          "max_risk": 85
         }
       ]
     },
@@ -541,6 +541,25 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national shipping line",
       "label": "Nigerian National Shipping Line",
       "total_mentions": 2,
@@ -548,6 +567,25 @@
         {
           "week": "2026-09-14",
           "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -1840,15 +1878,15 @@
       ]
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "key": "content development monitoring board",
+      "label": "Nigerian Content Development & Monitoring Board",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-09-14",
+          "week": "2026-09-21",
           "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1866,12 +1904,12 @@
       ]
     },
     {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
+      "key": "ports processing authority",
+      "label": "Nigerian Ports Processing Authority",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-09-14",
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -2269,5 +2307,5 @@
       ]
     }
   ],
-  "generated": "2026-09-22 01:35:09"
+  "generated": "2026-09-22 12:24:21"
 }

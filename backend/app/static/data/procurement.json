@@ -1188,5 +1188,25 @@
     "Date": "2026-09-21",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+    "Contractor": "None",
+    "Amount": "830,000 tonnes",
+    "Project": "Petrol imports to mitigate global fuel market tightening",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-22",
+    "Amount Value": 830000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "United States Government/Manufacturer",
+    "Amount": "None",
+    "Project": "Procurement of 12 attack helicopters",
+    "Source": "punchng",
+    "Date": "2026-09-22",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]

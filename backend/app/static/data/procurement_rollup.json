@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 28,
-      "undisclosed": 17,
+      "contracts": 29,
+      "undisclosed": 18,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -144,6 +144,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 400000000.0
+      }
+    },
+    {
+      "name": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 830000.0
       }
     },
     {
@@ -444,10 +452,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 67,
+      "contracts": 68,
       "undisclosed": 41,
       "totals": {
-        "NGN": 4615925260000.0,
+        "NGN": 4615926090000.0,
         "USD": 20500000000.0
       }
     },
@@ -738,6 +746,12 @@
       "totals": {}
     },
     {
+      "name": "United States Government/Manufacturer",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Unnamed Concessionaire",
       "contracts": 1,
       "undisclosed": 1,
@@ -750,5 +764,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-22 01:35:09"
+  "generated": "2026-09-22 12:24:21"
 }

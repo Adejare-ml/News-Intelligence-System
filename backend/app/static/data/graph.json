@@ -139,8 +139,26 @@
       "risk": "Low"
     },
     {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "cd72c19626f6",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1872a954bc34",
+      "label": "Nigerian Content Development & Monitoring Board",
       "type": "agency",
       "risk": "Low"
     },
@@ -153,6 +171,12 @@
     {
       "id": "aab42ed8cb86",
       "label": "Bauchi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bc834e20dea3",
+      "label": "Nigerian Ports Processing Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,30 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "8a7b7af09965",
-      "label": "Ebonyi State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
       "type": "person",
@@ -268,6 +268,12 @@
       "id": "86430d64a9dc",
       "label": "Unnamed Commissioner",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8a7b7af09965",
+      "label": "Ebonyi State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -583,6 +589,12 @@
       "risk": "Medium"
     },
     {
+      "id": "497dc3c9a500",
+      "label": "United States Government/Manufacturer",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "5a98eb23f6f5",
       "label": "Akwa Ibom State Government",
       "type": "agency",
@@ -676,18 +688,6 @@
       "id": "23d8905a6cbb",
       "label": "Federal Ministry of Works",
       "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6c0b3f1b5072",
-      "label": "Chinese entities (unspecified)",
-      "type": "company",
       "risk": "Low"
     }
   ],
@@ -915,6 +915,18 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "15decc10e9cb",
+      "from": "497dc3c9a500",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "44f61393e51f",
+      "from": "334c4a4c42fd",
+      "to": "a61e97dc06d8",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
@@ -1002,12 +1014,6 @@
       "id": "817df37bf70a",
       "from": "334c4a4c42fd",
       "to": "23d8905a6cbb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "b4067a0b7e31",
-      "from": "6c0b3f1b5072",
-      "to": "9b5f79697bc2",
       "label": "Contract Awardee"
     }
   ]
