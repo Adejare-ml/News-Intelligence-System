@@ -119,6 +119,8 @@ Secrets and variables are read from the environment (GitHub Actions secrets in C
 | `SPREADSHEET_ID` | Target spreadsheet id | No — falls back to local Excel |
 | `NEWSAPI_KEY`, `NEWSDATA_KEY`, `GUARDIAN_API_KEY`, `GNEWS_KEY` | News source keys; RSS works without any | No |
 | `ALERT_WEBHOOK_URL` | Slack/Discord-style webhook that receives each run's high-risk articles | No — unset means no alerts |
+| `NTFY_TOPIC_URL` | ntfy.sh topic for phone push alerts on the same records ([setup](docs/NOTIFICATIONS.md)) | No — unset means no pushes |
+| `SMTP_USERNAME`, `SMTP_PASSWORD`, `MAIL_TO` | Morning email briefing after the 8AM Lagos run ([setup](docs/NOTIFICATIONS.md)) | No — unset means no email |
 | `GEMINI_MODEL`, `NVIDIA_MODEL`, `NVIDIA_MODEL_FALLBACK` | Pin specific models; sensible defaults otherwise | No |
 | `SEED_DEMO_PSC` | Seed illustrative PSC rows when empty (default `false`) | No |
 | `SEED_DEMO_ARTICLES` | Pad a thin ingestion cycle (<10 real articles) with synthetic ones, clearly marked, instead of leaving it as-is (default `false`) | No |

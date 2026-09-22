@@ -567,9 +567,13 @@ def run_pipeline(seed: bool = False):
     # so a standing high-risk story does not re-alert every cycle.
     if new_articles_count > 0:
         try:
-            from backend.app.services.feeds import high_risk_alerts, post_alert_webhook
-            post_alert_webhook(os.environ.get("ALERT_WEBHOOK_URL", ""),
-                               high_risk_alerts(run_records))
+            from backend.app.services.feeds import (
+                high_risk_alerts, post_alert_webhook, post_ntfy_alerts)
+            run_alerts = high_risk_alerts(run_records)
+            post_alert_webhook(os.environ.get("ALERT_WEBHOOK_URL", ""), run_alerts)
+            # Same best-effort contract, phone-native transport: one push
+            # per record to a private ntfy.sh topic (see docs/NOTIFICATIONS.md).
+            post_ntfy_alerts(os.environ.get("NTFY_TOPIC_URL", ""), run_alerts)
         except Exception as exc:  # pragma: no cover - defensive
             logger.warning(f"Alert webhook skipped: {exc}")
 
