@@ -55,6 +55,14 @@
         return PATHS[name] || "";
     }
 
+    function escAttr(value) {
+        return String(value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
+
     /** Full standalone <svg> element markup for a name ("" if unknown). */
     function svgTag(name, extraClass) {
         var inner = svg(name);
@@ -62,7 +70,7 @@
         var cls = "lucide lucide-" + name + (extraClass ? " " + extraClass : "");
         return '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"' +
             ' viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"' +
-            ' stroke-linecap="round" stroke-linejoin="round" class="' + cls + '"' +
+            ' stroke-linecap="round" stroke-linejoin="round" class="' + escAttr(cls) + '"' +
             ' aria-hidden="true">' + inner + "</svg>";
     }
 
@@ -70,20 +78,41 @@
      * lucide.createIcons()-compatible: replace every <i data-lucide="name">
      * with the equivalent inline <svg>, keeping the element's own classes.
      * Unknown names are left in place (invisible, exactly as before).
+     *
+     * Built with createElementNS/setAttribute rather than an HTML string:
+     * the name and class come off DOM attributes, and attribute-sourced
+     * text must never reach an innerHTML sink (CodeQL js/xss-through-dom
+     * -- setAttribute assigns data, nothing gets reparsed as markup). The
+     * one innerHTML write receives only PATHS[...] registry constants.
      */
     function createIcons() {
         var doc = global.document;
-        if (!doc || typeof doc.querySelectorAll !== "function") return;
+        if (!doc || typeof doc.querySelectorAll !== "function"
+                || typeof doc.createElementNS !== "function") return;
+        var SVG_NS = "http://www.w3.org/2000/svg";
         var nodes = doc.querySelectorAll("[data-lucide]");
         for (var i = 0; i < nodes.length; i++) {
             var el = nodes[i];
             var name = el.getAttribute("data-lucide");
-            var markup = svgTag(name, el.getAttribute("class") || "");
-            if (!markup) continue;
-            var holder = doc.createElement("span");
-            holder.innerHTML = markup;
-            var svgEl = holder.firstChild;
-            if (svgEl && el.parentNode) el.parentNode.replaceChild(svgEl, el);
+            var inner = Object.prototype.hasOwnProperty.call(PATHS, name)
+                ? PATHS[name] : "";
+            if (!inner) continue;
+            var svgEl = doc.createElementNS(SVG_NS, "svg");
+            svgEl.setAttribute("width", "24");
+            svgEl.setAttribute("height", "24");
+            svgEl.setAttribute("viewBox", "0 0 24 24");
+            svgEl.setAttribute("fill", "none");
+            svgEl.setAttribute("stroke", "currentColor");
+            svgEl.setAttribute("stroke-width", "2");
+            svgEl.setAttribute("stroke-linecap", "round");
+            svgEl.setAttribute("stroke-linejoin", "round");
+            svgEl.setAttribute("aria-hidden", "true");
+            var cls = "lucide lucide-" + name;
+            var own = el.getAttribute("class");
+            if (own) cls += " " + own;
+            svgEl.setAttribute("class", cls);
+            svgEl.innerHTML = inner;
+            if (el.parentNode) el.parentNode.replaceChild(svgEl, el);
         }
     }
 
