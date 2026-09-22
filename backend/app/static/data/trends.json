@@ -1,19 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 170,
-  "previous_articles": 149,
+  "recent_articles": 169,
+  "previous_articles": 148,
   "rising": [
     {
       "term": "guardian",
-      "recent": 43,
-      "previous": 27,
-      "change": 16
+      "recent": 44,
+      "previous": 26,
+      "change": 18
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 17,
-      "previous": 3,
-      "change": 14
+      "recent": 16,
+      "previous": 4,
+      "change": 12
     },
     {
       "term": "mambilla",
@@ -34,16 +34,16 @@
       "change": 6
     },
     {
-      "term": "moves",
+      "term": "investment",
       "recent": 6,
       "previous": 0,
       "change": 6
     },
     {
-      "term": "investment",
+      "term": "moves",
       "recent": 6,
-      "previous": 1,
-      "change": 5
+      "previous": 0,
+      "change": 6
     },
     {
       "term": "payment",
@@ -58,19 +58,13 @@
       "change": 5
     },
     {
-      "term": "system",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
+      "term": "customs",
+      "recent": 7,
+      "previous": 3,
+      "change": 4
     }
   ],
   "falling": [
-    {
-      "term": "banks",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
     {
       "term": "dangote",
       "recent": 7,
@@ -96,7 +90,7 @@
       "change": -5
     },
     {
-      "term": "boost",
+      "term": "banks",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -108,9 +102,15 @@
       "change": -5
     },
     {
-      "term": "targets",
-      "recent": 3,
-      "previous": 7,
+      "term": "punch",
+      "recent": 23,
+      "previous": 27,
+      "change": -4
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 23,
+      "previous": 27,
       "change": -4
     },
     {
@@ -120,7 +120,7 @@
       "change": -4
     },
     {
-      "term": "production",
+      "term": "minister",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -129,20 +129,20 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 117,
+      "recent": 114,
       "previous": 100
+    },
+    {
+      "category": "Company",
+      "recent": 28,
+      "previous": 30
     },
     {
       "category": "Legal",
       "recent": 27,
       "previous": 18
-    },
-    {
-      "category": "Company",
-      "recent": 26,
-      "previous": 31
     }
   ],
   "social": [],
-  "generated": "2026-09-22 17:35:12"
+  "generated": "2026-09-22 20:06:32"
 }

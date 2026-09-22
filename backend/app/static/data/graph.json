@@ -91,6 +91,12 @@
       "risk": "Low"
     },
     {
+      "id": "01ccce37119e",
+      "label": "Dangote Petroleum Refinery",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "2a77f31e67e8",
       "label": "PFIPC",
       "type": "company",
@@ -107,12 +113,6 @@
       "label": "NNPCL",
       "type": "company",
       "risk": "Critical"
-    },
-    {
-      "id": "01ccce37119e",
-      "label": "Dangote Petroleum Refinery",
-      "type": "company",
-      "risk": "Low"
     },
     {
       "id": "dce5a31d3181",
@@ -165,6 +165,12 @@
     {
       "id": "1872a954bc34",
       "label": "Nigerian Content Development & Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "95368915b67a",
+      "label": "Bureau of Public Procurement",
       "type": "agency",
       "risk": "Low"
     },
@@ -231,12 +237,6 @@
     {
       "id": "0b2ac17f47f4",
       "label": "Lagos State Waste Management Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5ac1e4450b44",
-      "label": "National Health Insurance Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -473,6 +473,18 @@
       "label": "Rivers State Government",
       "type": "company",
       "risk": "Low"
+    },
+    {
+      "id": "a5e155a532ad",
+      "label": "Sadio Mane\u0301",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "930993bc7654",
+      "label": "Mango Business",
+      "type": "company",
+      "risk": "Medium"
     },
     {
       "id": "b64909add6b9",
@@ -835,6 +847,12 @@
       "from": "0804399f614e",
       "to": "1f51cde9fd6f",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "bacdbeb20944",
+      "from": "a5e155a532ad",
+      "to": "930993bc7654",
+      "label": "Significant influence or control"
     },
     {
       "id": "6ef476ba43f6",

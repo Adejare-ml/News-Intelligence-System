@@ -6553,10 +6553,10 @@
   },
   {
     "Company": "Dangote Petroleum Refinery",
-    "Mention Count": 9,
-    "Last Seen": "2026-09-19 1:06",
+    "Mention Count": 10,
+    "Last Seen": "2026-09-22 20:05",
     "Industry": "Oil & Gas",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -8246,5 +8246,13 @@
     "Industry": "Professional Association",
     "Risk Level": "Low",
     "First Seen": "2026-09-22 01:34"
+  },
+  {
+    "Company": "Mango Business",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-22 20:05",
+    "Industry": "Agriculture",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-22 20:05"
   }
 ]

@@ -160,6 +160,25 @@
       ]
     },
     {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -182,19 +201,6 @@
           "mentions": 4,
           "avg_risk": 36.2,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
         }
       ]
     },
@@ -915,6 +921,19 @@
       ]
     },
     {
+      "key": "bureau of public procurement",
+      "label": "Bureau of Public Procurement",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "centre for journalism innovation and development",
       "label": "Centre for Journalism Innovation and Development",
       "total_mentions": 1,
@@ -1561,6 +1580,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "mango business",
+      "label": "Mango Business",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -2358,5 +2390,5 @@
       ]
     }
   ],
-  "generated": "2026-09-22 17:35:14"
+  "generated": "2026-09-22 20:06:36"
 }
