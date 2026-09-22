@@ -106,6 +106,14 @@
       }
     },
     {
+      "industry": "Professional Services/Accounting",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 1,
       "mentions": 2,
@@ -131,14 +139,6 @@
     },
     {
       "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Professional Services/Accounting",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -298,5 +298,5 @@
       }
     }
   ],
-  "generated": "2026-09-22 12:24:21"
+  "generated": "2026-09-22 17:35:14"
 }

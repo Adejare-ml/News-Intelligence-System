@@ -10,15 +10,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 47.1,
-      "previous_avg": 27.5,
-      "delta": 19.6,
-      "recent_mentions": 14,
-      "previous_mentions": 8
-    },
-    {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 32.5,
@@ -26,6 +17,15 @@
       "delta": 17.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 14.3,
+      "previous_avg": 30.0,
+      "delta": -15.7,
+      "recent_mentions": 7,
+      "previous_mentions": 2
     },
     {
       "key": "exchange",
@@ -37,13 +37,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 16.0,
-      "previous_avg": 30.0,
-      "delta": -14.0,
-      "recent_mentions": 5,
-      "previous_mentions": 2
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 45.8,
+      "previous_avg": 31.7,
+      "delta": 14.1,
+      "recent_mentions": 13,
+      "previous_mentions": 9
     },
     {
       "key": "oyo state government",
@@ -89,6 +89,15 @@
       "delta": -3.0,
       "recent_mentions": 19,
       "previous_mentions": 5
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "recent_avg": 22.0,
+      "previous_avg": 25.0,
+      "delta": -3.0,
+      "recent_mentions": 5,
+      "previous_mentions": 2
     },
     {
       "key": "dangote refinery",
@@ -163,24 +172,15 @@
       "previous_mentions": 0
     },
     {
-      "key": "national insurance commission",
-      "label": "National Insurance Commission",
-      "recent_avg": 42.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "institute of chartered accountants of",
       "label": "Institute of Chartered Accountants of Nigeria",
-      "recent_avg": 42.5,
+      "recent_avg": 35.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-22 12:24:21"
+  "generated": "2026-09-22 17:35:14"
 }

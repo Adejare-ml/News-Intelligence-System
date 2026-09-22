@@ -83,22 +83,9 @@
       ]
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 8,
-          "avg_risk": 37.5,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 7,
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-07",
@@ -111,6 +98,25 @@
           "mentions": 6,
           "avg_risk": 16.7,
           "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 8,
+          "avg_risk": 37.5,
+          "max_risk": 75
         }
       ]
     },
@@ -202,6 +208,25 @@
           "mentions": 3,
           "avg_risk": 26.7,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "institute of chartered accountants of",
+      "label": "Institute of Chartered Accountants of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -433,19 +458,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "institute of chartered accountants of",
-      "label": "Institute of Chartered Accountants of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 45
         }
       ]
     },
@@ -1618,6 +1630,19 @@
       ]
     },
     {
+      "key": "nigcomsat",
+      "label": "NIGCOMSAT",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "national agency for science and engineering infrastructure",
       "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 1,
@@ -1926,6 +1951,19 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "not stated",
+      "label": "Not Stated",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -2281,6 +2319,19 @@
       ]
     },
     {
+      "key": "university of ibadan",
+      "label": "University of Ibadan",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "unknown",
       "label": "Unknown",
       "total_mentions": 1,
@@ -2307,5 +2358,5 @@
       ]
     }
   ],
-  "generated": "2026-09-22 12:24:21"
+  "generated": "2026-09-22 17:35:14"
 }

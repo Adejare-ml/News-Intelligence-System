@@ -1,37 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 169,
-  "previous_articles": 146,
+  "recent_articles": 170,
+  "previous_articles": 149,
   "rising": [
     {
       "term": "guardian",
-      "recent": 41,
+      "recent": 43,
       "previous": 27,
-      "change": 14
+      "change": 16
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 16,
+      "recent": 17,
       "previous": 3,
-      "change": 13
+      "change": 14
     },
     {
       "term": "mambilla",
       "recent": 10,
       "previous": 0,
       "change": 10
-    },
-    {
-      "term": "seeks",
-      "recent": 10,
-      "previous": 2,
-      "change": 8
-    },
-    {
-      "term": "cac",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
     },
     {
       "term": "icc",
@@ -46,22 +34,34 @@
       "change": 6
     },
     {
-      "term": "beneficial",
-      "recent": 7,
-      "previous": 1,
+      "term": "moves",
+      "recent": 6,
+      "previous": 0,
       "change": 6
     },
     {
-      "term": "beneficial ownership",
-      "recent": 7,
+      "term": "investment",
+      "recent": 6,
       "previous": 1,
-      "change": 6
+      "change": 5
     },
     {
-      "term": "ownership",
-      "recent": 7,
+      "term": "payment",
+      "recent": 6,
       "previous": 1,
-      "change": 6
+      "change": 5
+    },
+    {
+      "term": "funding",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "system",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
@@ -87,6 +87,12 @@
       "term": "petrol",
       "recent": 2,
       "previous": 7,
+      "change": -5
+    },
+    {
+      "term": "naicom",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     },
     {
@@ -118,31 +124,25 @@
       "recent": 1,
       "previous": 5,
       "change": -4
-    },
-    {
-      "term": "airways",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 115,
-      "previous": 99
-    },
-    {
-      "category": "Company",
-      "recent": 27,
-      "previous": 30
+      "recent": 117,
+      "previous": 100
     },
     {
       "category": "Legal",
       "recent": 27,
-      "previous": 17
+      "previous": 18
+    },
+    {
+      "category": "Company",
+      "recent": 26,
+      "previous": 31
     }
   ],
   "social": [],
-  "generated": "2026-09-22 12:24:17"
+  "generated": "2026-09-22 17:35:12"
 }
