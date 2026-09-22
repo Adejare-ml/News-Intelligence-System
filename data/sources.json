@@ -2,23 +2,23 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2058,
-      "published": 1278,
-      "filtered": 780,
+      "total": 2067,
+      "published": 1281,
+      "filtered": 786,
       "accept_rate": 62,
       "avg_risk": 29.2,
       "engines": {
         "unknown": 963,
-        "ollama": 307,
+        "ollama": 310,
         "nvidia": 8
       },
       "last_seen": "2026-09-22"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1150,
+      "total": 1151,
       "published": 617,
-      "filtered": 533,
+      "filtered": 534,
       "accept_rate": 54,
       "avg_risk": 31.1,
       "engines": {
@@ -26,35 +26,35 @@
         "ollama": 173,
         "nvidia": 4
       },
-      "last_seen": "2026-09-21"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "Punch Newspapers",
-      "total": 631,
-      "published": 298,
-      "filtered": 333,
+      "total": 637,
+      "published": 299,
+      "filtered": 338,
       "accept_rate": 47,
       "avg_risk": 26.9,
       "engines": {
         "unknown": 188,
-        "ollama": 106,
+        "ollama": 107,
         "nvidia": 4
       },
       "last_seen": "2026-09-22"
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 431,
+      "total": 434,
       "published": 145,
-      "filtered": 286,
-      "accept_rate": 34,
+      "filtered": 289,
+      "accept_rate": 33,
       "avg_risk": 27.5,
       "engines": {
         "unknown": 81,
         "ollama": 60,
         "nvidia": 4
       },
-      "last_seen": "2026-09-21"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "The Punch",
@@ -153,17 +153,17 @@
     },
     {
       "source": "punchng",
-      "total": 119,
-      "published": 30,
-      "filtered": 89,
-      "accept_rate": 25,
-      "avg_risk": 21.9,
+      "total": 121,
+      "published": 31,
+      "filtered": 90,
+      "accept_rate": 26,
+      "avg_risk": 22.2,
       "engines": {
         "unknown": 18,
         "nvidia": 2,
-        "ollama": 10
+        "ollama": 11
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "vanguardngr",
@@ -358,6 +358,18 @@
       "last_seen": "2026-09-20"
     },
     {
+      "source": "converseer",
+      "total": 12,
+      "published": 5,
+      "filtered": 7,
+      "accept_rate": 42,
+      "avg_risk": 24.0,
+      "engines": {
+        "unknown": 5
+      },
+      "last_seen": "2026-09-22"
+    },
+    {
       "source": "dailytrust",
       "total": 12,
       "published": 7,
@@ -368,18 +380,6 @@
         "unknown": 7
       },
       "last_seen": "2026-09-11"
-    },
-    {
-      "source": "converseer",
-      "total": 11,
-      "published": 5,
-      "filtered": 6,
-      "accept_rate": 45,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 5
-      },
-      "last_seen": "2026-08-17"
     },
     {
       "source": "nairametrics",
@@ -557,6 +557,16 @@
       "last_seen": "2026-08-04"
     },
     {
+      "source": "NDIC \u2014 Nigeria Deposit Insurance Corporation",
+      "total": 4,
+      "published": 0,
+      "filtered": 4,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-21"
+    },
+    {
       "source": "PRNewswire",
       "total": 4,
       "published": 4,
@@ -666,16 +676,6 @@
         "unknown": 3
       },
       "last_seen": "2026-07-28"
-    },
-    {
-      "source": "NDIC \u2014 Nigeria Deposit Insurance Corporation",
-      "total": 3,
-      "published": 0,
-      "filtered": 3,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-09-20"
     },
     {
       "source": "Nigerian Communications Commission (NCC)",
@@ -1020,6 +1020,16 @@
         "unknown": 1
       },
       "last_seen": "2026-08-19"
+    },
+    {
+      "source": "pointblanknews",
+      "total": 2,
+      "published": 0,
+      "filtered": 2,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-22"
     },
     {
       "source": "primanews",
@@ -1410,6 +1420,18 @@
       "last_seen": "2026-09-10"
     },
     {
+      "source": "Nigerian Content Development & Monitoring Board",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 10.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-09-22"
+    },
+    {
       "source": "Offshore Technology",
       "total": 1,
       "published": 1,
@@ -1750,16 +1772,6 @@
       "last_seen": "2026-07-17"
     },
     {
-      "source": "pointblanknews",
-      "total": 1,
-      "published": 0,
-      "filtered": 1,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-08-27"
-    },
-    {
       "source": "reliefweb",
       "total": 1,
       "published": 0,
@@ -1870,5 +1882,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-22 01:35:09"
+  "generated": "2026-09-22 12:24:21"
 }
