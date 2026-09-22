@@ -2,24 +2,24 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2072,
-      "published": 1283,
-      "filtered": 789,
+      "total": 2077,
+      "published": 1284,
+      "filtered": 793,
       "accept_rate": 62,
       "avg_risk": 29.2,
       "engines": {
         "unknown": 963,
-        "ollama": 312,
+        "ollama": 313,
         "nvidia": 8
       },
       "last_seen": "2026-09-22"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1155,
+      "total": 1156,
       "published": 618,
-      "filtered": 537,
-      "accept_rate": 54,
+      "filtered": 538,
+      "accept_rate": 53,
       "avg_risk": 31.1,
       "engines": {
         "unknown": 440,
@@ -30,9 +30,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 638,
+      "total": 639,
       "published": 299,
-      "filtered": 339,
+      "filtered": 340,
       "accept_rate": 47,
       "avg_risk": 26.9,
       "engines": {
@@ -44,9 +44,9 @@
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 436,
+      "total": 438,
       "published": 146,
-      "filtered": 290,
+      "filtered": 292,
       "accept_rate": 33,
       "avg_risk": 27.4,
       "engines": {
@@ -113,17 +113,17 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 142,
-      "published": 60,
+      "total": 143,
+      "published": 61,
       "filtered": 82,
-      "accept_rate": 42,
-      "avg_risk": 23.8,
+      "accept_rate": 43,
+      "avg_risk": 24.0,
       "engines": {
         "unknown": 50,
-        "ollama": 8,
+        "ollama": 9,
         "nvidia": 2
       },
-      "last_seen": "2026-09-19"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "leadership",
@@ -193,9 +193,9 @@
     },
     {
       "source": "legit",
-      "total": 81,
+      "total": 82,
       "published": 22,
-      "filtered": 59,
+      "filtered": 60,
       "accept_rate": 27,
       "avg_risk": 24.3,
       "engines": {
@@ -203,7 +203,7 @@
         "ollama": 6,
         "nvidia": 1
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "businessday",
@@ -233,16 +233,16 @@
     },
     {
       "source": "blueprint",
-      "total": 31,
+      "total": 32,
       "published": 12,
-      "filtered": 19,
-      "accept_rate": 39,
+      "filtered": 20,
+      "accept_rate": 38,
       "avg_risk": 27.4,
       "engines": {
         "unknown": 11,
         "ollama": 1
       },
-      "last_seen": "2026-09-15"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "thisdaylive",
@@ -283,6 +283,18 @@
       "last_seen": "2026-09-21"
     },
     {
+      "source": "tori",
+      "total": 25,
+      "published": 3,
+      "filtered": 22,
+      "accept_rate": 12,
+      "avg_risk": 24.0,
+      "engines": {
+        "unknown": 3
+      },
+      "last_seen": "2026-09-22"
+    },
+    {
       "source": "tribuneonlineng",
       "total": 24,
       "published": 6,
@@ -294,18 +306,6 @@
         "ollama": 3
       },
       "last_seen": "2026-09-17"
-    },
-    {
-      "source": "tori",
-      "total": 23,
-      "published": 3,
-      "filtered": 20,
-      "accept_rate": 13,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 3
-      },
-      "last_seen": "2026-09-18"
     },
     {
       "source": "vanguardngr.com",
@@ -641,6 +641,18 @@
       "last_seen": "2026-09-14"
     },
     {
+      "source": "Africasacountry.com",
+      "total": 3,
+      "published": 1,
+      "filtered": 2,
+      "accept_rate": 33,
+      "avg_risk": 65.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-09-21"
+    },
+    {
       "source": "Dailymail.com",
       "total": 3,
       "published": 1,
@@ -772,16 +784,6 @@
         "ollama": 1
       },
       "last_seen": "2026-08-22"
-    },
-    {
-      "source": "Africasacountry.com",
-      "total": 2,
-      "published": 0,
-      "filtered": 2,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-08-05"
     },
     {
       "source": "Bleeding Green Nation",
@@ -1432,6 +1434,16 @@
       "last_seen": "2026-09-22"
     },
     {
+      "source": "Nigerians in Diaspora Commission",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-22"
+    },
+    {
       "source": "Offshore Technology",
       "total": 1,
       "published": 1,
@@ -1882,5 +1894,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-22 17:35:14"
+  "generated": "2026-09-22 20:06:36"
 }

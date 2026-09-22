@@ -19,6 +19,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 48.6,
+      "previous_avg": 31.4,
+      "delta": 17.2,
+      "recent_mentions": 11,
+      "previous_mentions": 11
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 14.3,
@@ -35,15 +44,6 @@
       "delta": -15.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 45.8,
-      "previous_avg": 31.7,
-      "delta": 14.1,
-      "recent_mentions": 13,
-      "previous_mentions": 9
     },
     {
       "key": "oyo state government",
@@ -91,15 +91,6 @@
       "previous_mentions": 5
     },
     {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "recent_avg": 22.0,
-      "previous_avg": 25.0,
-      "delta": -3.0,
-      "recent_mentions": 5,
-      "previous_mentions": 2
-    },
-    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "recent_avg": 22.5,
@@ -116,6 +107,15 @@
       "delta": 2.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "recent_avg": 23.3,
+      "previous_avg": 22.5,
+      "delta": 0.8,
+      "recent_mentions": 3,
+      "previous_mentions": 4
     },
     {
       "key": "abubakar malami",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-22 17:35:14"
+  "generated": "2026-09-22 20:06:36"
 }

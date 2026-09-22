@@ -1,17 +1,24 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Mango Business"
+  ],
   "new_people": [],
-  "psc_added": [],
+  "psc_added": [
+    {
+      "person": "Sadio Mane\u0301",
+      "company": "Mango Business"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 1,
     "new_people": 0,
-    "psc_added": 0,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-22 17:35:11"
+  "generated": "2026-09-22 20:06:32"
 }
