@@ -1,17 +1,25 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Conference of Private Practitioners Employers"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Witness details alleged transfers of Bauchi funds to private company in accountant-general\u2019s trial - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNb0NiNUxKeEpqUjBkVmg2cmhzYmd0VHdVOHJURlAzWWJyQjhVNjQ4N3JJRWlNZENsTjhJNUd4U1ZIOHlCZ094YnFVRVBqZlEzZzVnS0tYNzVuX2hzRS1kMU5YRmNVNmE4TGJHX1pHSFhRODRtQjNGSmZab01HdW96N0U4d3d5OXg0NjM4bGstbkQ4TFZ2NUxjenhWNnIxSzJCbFlmeWJ5QUdyWFNVOTEzMkQza1Y4TXdZWndMWHVXWjk4Skw1Z3JVdnBJOXdPRXRjS29sMk8yLWJZeElCTElFUk9zYVdWN1NUNHc?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 1,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-09-21 20:54:09"
+  "generated": "2026-09-22 01:35:07"
 }

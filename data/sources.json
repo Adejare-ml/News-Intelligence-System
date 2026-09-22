@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2056,
+      "total": 2058,
       "published": 1278,
-      "filtered": 778,
+      "filtered": 780,
       "accept_rate": 62,
       "avg_risk": 29.2,
       "engines": {
@@ -12,35 +12,35 @@
         "ollama": 307,
         "nvidia": 8
       },
-      "last_seen": "2026-09-21"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1143,
-      "published": 614,
-      "filtered": 529,
+      "total": 1150,
+      "published": 617,
+      "filtered": 533,
       "accept_rate": 54,
-      "avg_risk": 31.0,
+      "avg_risk": 31.1,
       "engines": {
         "unknown": 440,
-        "ollama": 170,
+        "ollama": 173,
         "nvidia": 4
       },
       "last_seen": "2026-09-21"
     },
     {
       "source": "Punch Newspapers",
-      "total": 627,
-      "published": 296,
-      "filtered": 331,
+      "total": 631,
+      "published": 298,
+      "filtered": 333,
       "accept_rate": 47,
-      "avg_risk": 27.0,
+      "avg_risk": 26.9,
       "engines": {
         "unknown": 188,
-        "ollama": 104,
+        "ollama": 106,
         "nvidia": 4
       },
-      "last_seen": "2026-09-21"
+      "last_seen": "2026-09-22"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -58,17 +58,17 @@
     },
     {
       "source": "The Punch",
-      "total": 427,
-      "published": 249,
+      "total": 428,
+      "published": 250,
       "filtered": 178,
       "accept_rate": 58,
       "avg_risk": 33.7,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 139
+        "ollama": 140
       },
-      "last_seen": "2026-09-20"
+      "last_seen": "2026-09-21"
     },
     {
       "source": "Vanguard",
@@ -180,14 +180,14 @@
     },
     {
       "source": "independentng",
-      "total": 90,
-      "published": 28,
-      "filtered": 62,
+      "total": 93,
+      "published": 29,
+      "filtered": 64,
       "accept_rate": 31,
-      "avg_risk": 24.5,
+      "avg_risk": 24.3,
       "engines": {
         "unknown": 20,
-        "ollama": 8
+        "ollama": 9
       },
       "last_seen": "2026-09-21"
     },
@@ -1308,6 +1308,16 @@
       "last_seen": "2026-07-16"
     },
     {
+      "source": "Leaders League",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-21"
+    },
+    {
       "source": "MarketBeat",
       "total": 1,
       "published": 1,
@@ -1860,5 +1870,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-21 20:54:12"
+  "generated": "2026-09-22 01:35:09"
 }

@@ -4,10 +4,10 @@
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 23.6,
-      "previous_avg": 50.0,
-      "delta": -26.4,
+      "previous_avg": 40.0,
+      "delta": -16.4,
       "recent_mentions": 18,
-      "previous_mentions": 2
+      "previous_mentions": 3
     },
     {
       "key": "economic and financial crimes commission",
@@ -17,6 +17,15 @@
       "delta": 16.1,
       "recent_mentions": 16,
       "previous_mentions": 6
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Group",
+      "recent_avg": 15.0,
+      "previous_avg": 30.0,
+      "delta": -15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "central bank of",
@@ -37,22 +46,31 @@
       "previous_mentions": 2
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 15.0,
+      "previous_avg": 10.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 19.4,
-      "previous_avg": 16.7,
-      "delta": 2.7,
-      "recent_mentions": 8,
-      "previous_mentions": 3
+      "recent_avg": 21.4,
+      "previous_avg": 17.0,
+      "delta": 4.4,
+      "recent_mentions": 7,
+      "previous_mentions": 5
     },
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "recent_avg": 23.3,
+      "recent_avg": 22.5,
       "previous_avg": 25.0,
-      "delta": -1.7,
-      "recent_mentions": 6,
-      "previous_mentions": 4
+      "delta": -2.5,
+      "recent_mentions": 4,
+      "previous_mentions": 6
     },
     {
       "key": "abubakar malami",
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "recent_avg": 23.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "recent_avg": 22.9,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 7,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-21 20:54:12"
+  "generated": "2026-09-22 01:35:09"
 }
