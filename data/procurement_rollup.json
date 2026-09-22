@@ -305,6 +305,12 @@
       "totals": {}
     },
     {
+      "name": "NIGCOMSAT",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "NIQS",
       "contracts": 1,
       "undisclosed": 1,
@@ -452,8 +458,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 68,
-      "undisclosed": 41,
+      "contracts": 69,
+      "undisclosed": 42,
       "totals": {
         "NGN": 4615926090000.0,
         "USD": 20500000000.0
@@ -764,5 +770,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-22 12:24:21"
+  "generated": "2026-09-22 17:35:14"
 }

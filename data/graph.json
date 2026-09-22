@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -163,6 +169,12 @@
       "risk": "Low"
     },
     {
+      "id": "09b648436789",
+      "label": "NIGCOMSAT",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9b023d5d7736",
       "label": "Office of the Attorney General of the Federation",
       "type": "agency",
@@ -181,14 +193,14 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "f4b56dfe4bcb",
+      "label": "University of Ibadan",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,15 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "d02e4d68632b",
-      "label": "International Chamber of Commerce",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a74c4e5d89ef",
-      "label": "All Progressives alliance",
-      "type": "agency",
+      "id": "bf698d54d6c5",
+      "label": "Not Stated",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -262,6 +268,12 @@
       "id": "ad921d604863",
       "label": "Unknown",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "a74c4e5d89ef",
+      "label": "All Progressives alliance",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -459,18 +471,6 @@
     {
       "id": "1f51cde9fd6f",
       "label": "Rivers State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0eb499263319",
-      "label": "Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b6e216a813ff",
-      "label": "Government of Oyo State",
       "type": "company",
       "risk": "Low"
     },
@@ -683,15 +683,15 @@
       "label": "Premium Steel",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "3734b9c3ff9b",
+      "from": "bf698d54d6c5",
+      "to": "f4b56dfe4bcb",
+      "label": "Appointed as Bursar"
+    },
     {
       "id": "71251a980b0e",
       "from": "f6a881f4b7c5",
@@ -837,12 +837,6 @@
       "label": "Appointed as Governor"
     },
     {
-      "id": "5ff2682b60b2",
-      "from": "0eb499263319",
-      "to": "b6e216a813ff",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "6ef476ba43f6",
       "from": "f3f65e2dd7f8",
       "to": "b64909add6b9",
@@ -913,6 +907,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "2e196c488907",
+      "from": "334c4a4c42fd",
+      "to": "09b648436789",
+      "label": "Contract Awardee"
     },
     {
       "id": "15decc10e9cb",
@@ -1008,12 +1008,6 @@
       "id": "df311b7e567c",
       "from": "334c4a4c42fd",
       "to": "ebba2aef82e9",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "817df37bf70a",
-      "from": "334c4a4c42fd",
-      "to": "23d8905a6cbb",
       "label": "Contract Awardee"
     }
   ]
