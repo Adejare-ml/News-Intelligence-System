@@ -29,13 +29,18 @@
     <!-- Inline SVG favicon: data: is allowed by img-src, and the site ships
          no binary assets. Dark tile, cyan A, matching the dashboard. -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1020'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='700' text-anchor='middle' fill='%2367e8f9'%3EA%3C/text%3E%3C/svg%3E">
+    <!-- Theme: sets data-theme on <html> before the first paint, so a
+         light-theme reader never sees a dark flash. Must precede the
+         stylesheets; the CSP (no 'unsafe-inline' scripts) is why this is
+         an external file rather than the classic inline snippet. -->
+    <script src="js/theme.js?v=6.1"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=6.0">
-    <link rel="stylesheet" href="css/report.css?v=4.6">
+    <link rel="stylesheet" href="css/styles.css?v=6.1">
+    <link rel="stylesheet" href="css/report.css?v=4.7">
     <!-- Charting library, vendored from the exact npm release the old CDN
          tag pinned (byte-identical to the SRI'd chart.umd.min.js). Served
          from 'self': no third-party runtime dependency, and the CSP's
@@ -45,7 +50,7 @@
     <!-- Icons: inline SVG subset of lucide (js/icons.js) with a
          lucide.createIcons()-compatible shim. When the icon CDN was
          unreachable every icon button rendered as an empty square. -->
-    <script src="js/icons.js?v=6.0"></script>
+    <script src="js/icons.js?v=6.1"></script>
 </head>
 <body>
     <!-- Animated pixel field. Painted at ~200px wide and upscaled, so the
@@ -109,6 +114,10 @@
                 <button id="motion-toggle" class="btn btn-icon" aria-pressed="false"
                         title="Pause background motion" aria-label="Pause background motion">
                     <i data-lucide="pause"></i>
+                </button>
+                <button id="theme-toggle" class="btn btn-icon" aria-pressed="false"
+                        title="Switch to light theme" aria-label="Switch to light theme">
+                    <i data-lucide="sun"></i>
                 </button>
                 <button id="export-csv-btn" class="btn btn-secondary">
                     <i data-lucide="download"></i> Export CSV
@@ -239,6 +248,31 @@
                 <span class="insight-generated" id="risk-leaderboard-note"></span>
             </div>
             <div class="insight-groups" id="risk-leaderboard-body"></div>
+        </section>
+
+        <!-- Signals: the round-5 analytics exports (risk movers, sector
+             rollup, source scorecards) that the pipeline computed on
+             every run but the page never showed. Hides until at least
+             one dataset has content. -->
+        <section class="glass insight-panel" id="signals-panel" hidden>
+            <div class="panel-header">
+                <h2>Signals</h2>
+                <span class="insight-generated" id="signals-note"></span>
+            </div>
+            <div class="signals-grid">
+                <div class="signal-col" id="signals-movers" hidden>
+                    <h3>Risk movers</h3>
+                    <div id="signals-movers-body"></div>
+                </div>
+                <div class="signal-col" id="signals-sectors" hidden>
+                    <h3>Sector watch</h3>
+                    <div id="signals-sectors-body"></div>
+                </div>
+                <div class="signal-col" id="signals-sources" hidden>
+                    <h3>Source scorecard</h3>
+                    <div id="signals-sources-body"></div>
+                </div>
+            </div>
         </section>
 
         <!-- Tech & AI headlines: a keyless side vertical rendered from
@@ -803,7 +837,7 @@
     <script src="js/local-store.js?v=5.2"></script>
     <script src="js/feed-filters.js?v=5.7"></script>
     <script src="js/boards.js?v=5.8"></script>
-    <script src="js/insights.js?v=6.0"></script>
+    <script src="js/insights.js?v=6.1"></script>
     <script src="js/app.js?v=6.0"></script>
     <script src="js/psc-report.js?v=5.9"></script>
 </body>
