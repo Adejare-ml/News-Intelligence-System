@@ -30,6 +30,11 @@
     --band-nigeria: #22d3ee;
     --band-muted: #64748b;
 
+    --chrome-bg: rgba(13, 15, 24, 0.92);
+    /* Reading grays that used to be literals in report.css */
+    --text-soft: #cbd5e1;
+    --text-strong: #e2e8f0;
+
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Outfit', sans-serif;
 
@@ -163,7 +168,7 @@ body {
     position: sticky;
     top: 10px;
     z-index: 60;
-    background: rgba(13, 15, 24, 0.92);
+    background: var(--chrome-bg);
 }
 
 .section-nav {
@@ -2489,7 +2494,7 @@ main[data-route-page] > :not([data-route-outlet]) {
     z-index: 70;
     padding: 6px;
     border-radius: 18px;
-    background: rgba(13, 15, 24, 0.94);
+    background: var(--chrome-bg);
 }
 
 @media (max-width: 900px) {
@@ -2538,4 +2543,151 @@ main[data-route-page] > :not([data-route-outlet]) {
     font-size: 13px;
     padding: var(--space-4);
     text-align: center;
+}
+
+/* ==========================================================
+   LIGHT THEME — token overrides only, plus the handful of
+   component rules whose colors were written as literals.
+   js/theme.js sets data-theme on <html> before first paint.
+   ========================================================== */
+
+:root { color-scheme: dark; }
+
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    --bg-dark: #eef0f7;
+    --panel-bg: rgba(255, 255, 255, 0.78);
+    --border-color: rgba(20, 24, 46, 0.10);
+    --text-primary: #171a2b;
+    --text-muted: #5b6172;
+
+    --surface-1: rgba(255, 255, 255, 0.85);
+    --surface-2: rgba(244, 245, 252, 0.85);
+    --surface-3: rgba(233, 235, 246, 0.80);
+    --hairline: rgba(20, 24, 46, 0.09);
+    --hairline-strong: rgba(20, 24, 46, 0.18);
+
+    --chrome-bg: rgba(250, 250, 254, 0.94);
+    --text-soft: #414a5e;
+    --text-strong: #232a40;
+
+    /* Accents darken a step for AA contrast on white */
+    --primary: #7c3aed;
+    --secondary: #0891b2;
+
+    /* Band accents darken a step so they hold contrast on white */
+    --band-critical: #e11d48;
+    --band-high: #ea580c;
+    --band-elevated: #9333ea;
+    --band-nigeria: #0e7490;
+    --band-muted: #64748b;
+}
+
+/* The dark backdrop art fights a light page: fade the pixel field and
+   swap the glow wash for a light one instead of repainting the canvas. */
+:root[data-theme="light"] .backdrop-canvas { opacity: 0.12; }
+:root[data-theme="light"] .glow-bg {
+    background:
+        radial-gradient(120% 80% at 12% 0%, rgba(139, 92, 246, 0.08) 0%, transparent 55%),
+        radial-gradient(90% 70% at 100% 100%, rgba(6, 182, 212, 0.06) 0%, transparent 55%);
+}
+
+/* Literal-color rules that tokens do not reach */
+:root[data-theme="light"] .logo-text .logo-word {
+    background: linear-gradient(135deg, #1e1b4b, #7c3aed);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+:root[data-theme="light"] .nav-link:hover {
+    color: var(--text-primary);
+    background: rgba(20, 24, 46, 0.06);
+}
+:root[data-theme="light"] .glass {
+    box-shadow: 0 8px 32px 0 rgba(30, 34, 60, 0.10);
+}
+
+/* ==========================================================
+   SIGNALS PANEL — risk movers / sector watch / source scorecard
+   ========================================================== */
+
+.signals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-5);
+    margin-top: var(--space-4);
+}
+
+.signal-col h3 {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: var(--space-3);
+}
+
+.signal-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: 0;
+    margin: 0;
+}
+
+.signal-list li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2px var(--space-2);
+    align-items: baseline;
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--hairline);
+}
+
+.signal-label {
+    font-weight: 600;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.signal-meta {
+    grid-column: 1 / -1;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.mover-delta {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 1px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.mover-up { color: var(--band-critical); background: rgba(244, 63, 94, 0.12); }
+.mover-down { color: var(--success); background: rgba(16, 185, 129, 0.12); }
+.mover-new { color: var(--band-nigeria); background: rgba(34, 211, 238, 0.12); }
+
+.sector-list li { grid-template-columns: 1fr; }
+
+.sector-bar {
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--hairline);
+    overflow: hidden;
+}
+
+.sector-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.signal-footnote {
+    margin-top: var(--space-3);
+    color: var(--text-muted);
+    font-size: 12px;
 }
