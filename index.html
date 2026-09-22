@@ -9,7 +9,7 @@
     <!-- font-src carries 'self' as well as gstatic: without it, self-hosting a
          font file is blocked, which rules out the only non-render-blocking
          font path available on a host that cannot set response headers. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>AURA // AI News Intelligence System</title>
     <meta name="description" content="AURA tracks corporate ownership transparency in Nigeria: beneficial owners (PSC), board changes, procurement awards and regulatory actions, extracted from the news four times a day.">
@@ -34,20 +34,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.9">
+    <link rel="stylesheet" href="css/styles.css?v=6.0">
     <link rel="stylesheet" href="css/report.css?v=4.6">
-    <!-- Charting & graph libraries: version-pinned with Subresource Integrity
-         so a compromised or hijacked CDN release cannot execute here -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"
-            integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ"
-            crossorigin="anonymous"></script>
-    <!-- vis-network is NOT loaded here: at ~450KB it was the heaviest
-         render-blocking asset. app.js injects it on demand (same pinned
-         version + SRI hash) when the knowledge graph actually builds. -->
-    <!-- Lucide Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/lucide@1.28.0/dist/umd/lucide.min.js"
-            integrity="sha384-VrnzGPiSyQxm3mI2VhlssyR85zugSHtxMkgO42qV3wUAbNk1oRdZkCWjXKOhuVu6"
-            crossorigin="anonymous"></script>
+    <!-- Charting library, vendored from the exact npm release the old CDN
+         tag pinned (byte-identical to the SRI'd chart.umd.min.js). Served
+         from 'self': no third-party runtime dependency, and the CSP's
+         script-src tightens to 'self'. vis-network (js/vendor/) is still
+         lazy-injected by app.js only when the knowledge graph builds. -->
+    <script src="js/vendor/chart.umd.min.js?v=4.5.1"></script>
+    <!-- Icons: inline SVG subset of lucide (js/icons.js) with a
+         lucide.createIcons()-compatible shim. When the icon CDN was
+         unreachable every icon button rendered as an empty square. -->
+    <script src="js/icons.js?v=6.0"></script>
 </head>
 <body>
     <!-- Animated pixel field. Painted at ~200px wide and upscaled, so the
@@ -85,11 +83,14 @@
                 </div>
             </div>
 
+            <!-- Route hashes rather than bare anchors: the router owns the
+                 hash shape, links become shareable, and the active state
+                 tracks hashchange. Legacy #brief-style anchors still work. -->
             <nav class="section-nav" aria-label="Sections">
-                <a href="#brief" class="nav-link">Brief</a>
-                <a href="#register" class="nav-link">PSC Register</a>
-                <a href="#workspace" class="nav-link">Feed</a>
-                <a href="#network" class="nav-link">Network</a>
+                <a href="#/brief" class="nav-link" data-nav="brief">Brief</a>
+                <a href="#/psc" class="nav-link" data-nav="register">PSC Register</a>
+                <a href="#/feed" class="nav-link" data-nav="workspace">Feed</a>
+                <a href="#/network" class="nav-link" data-nav="network">Network</a>
             </nav>
 
             <div class="system-status">
@@ -759,6 +760,28 @@
          being yanked the way a modal dialog does. -->
     <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
 
+    <!-- Mobile bottom navigation. On phones the header wraps into a tall
+         block and scrolls away, leaving route views with no navigation at
+         all; a fixed tab bar is reachable from anywhere on the page. -->
+    <nav class="mobile-tabbar glass" aria-label="Sections">
+        <a href="#/brief" class="tab-item" data-nav="brief">
+            <i data-lucide="file-text"></i><span>Brief</span>
+        </a>
+        <a href="#/feed" class="tab-item" data-nav="workspace">
+            <i data-lucide="library"></i><span>Feed</span>
+        </a>
+        <a href="#/psc" class="tab-item" data-nav="register">
+            <i data-lucide="shield-alert"></i><span>Register</span>
+        </a>
+        <a href="#/network" class="tab-item" data-nav="network">
+            <i data-lucide="share-2"></i><span>Network</span>
+        </a>
+        <button type="button" class="tab-item" id="tabbar-search-btn"
+                aria-label="Open global search">
+            <i data-lucide="search"></i><span>Search</span>
+        </button>
+    </nav>
+
     <!-- Local modules, all served from 'self': no CSP surface and no SRI
          needed. Order matters — app.js and psc-report.js consume the globals
          the earlier files define. -->
@@ -780,8 +803,8 @@
     <script src="js/local-store.js?v=5.2"></script>
     <script src="js/feed-filters.js?v=5.7"></script>
     <script src="js/boards.js?v=5.8"></script>
-    <script src="js/insights.js?v=5.7"></script>
-    <script src="js/app.js?v=5.8"></script>
+    <script src="js/insights.js?v=6.0"></script>
+    <script src="js/app.js?v=6.0"></script>
     <script src="js/psc-report.js?v=5.9"></script>
 </body>
 </html>
