@@ -482,6 +482,117 @@
         }).join("") + "</ul>";
     }
 
+    /** fx.json -> latest naira rates + day deltas + a USD sparkline. */
+    function fxSummary(fx, sparkDays) {
+        if (!fx || !fx.latest) return null;
+        var history = Array.isArray(fx.history) ? fx.history : [];
+        var rows = [];
+        ["USD", "EUR", "GBP"].forEach(function (currency) {
+            var value = fx.latest[currency];
+            if (typeof value !== "number") return;
+            var series = history.map(function (p) { return p[currency]; })
+                .filter(function (v) { return typeof v === "number"; });
+            var delta = null;
+            if (series.length >= 2 && series[series.length - 2]) {
+                delta = Math.round(1000 * (series[series.length - 1] - series[series.length - 2])
+                    / series[series.length - 2]) / 10;
+            }
+            rows.push({ currency: currency, value: value, delta: delta });
+        });
+        if (!rows.length) return null;
+        var usd = history.map(function (p) { return p.USD; })
+            .filter(function (v) { return typeof v === "number"; })
+            .slice(-(sparkDays || 30));
+        var date = history.length
+            ? String(history[history.length - 1].date || "").slice(0, 10) : "";
+        return { rows: rows, usdSeries: usd, date: date };
+    }
+
+    function sparklineSVG(series, width, height) {
+        if (!series || series.length < 2) return "";
+        var min = Math.min.apply(null, series);
+        var max = Math.max.apply(null, series);
+        var span = (max - min) || 1;
+        var w = width || 120;
+        var hgt = height || 28;
+        var points = series.map(function (v, i) {
+            var x = Math.round(100 * i * w / (series.length - 1)) / 100;
+            var y = Math.round(100 * (hgt - 3 - (hgt - 6) * (v - min) / span)) / 100;
+            return x + "," + y;
+        }).join(" ");
+        return '<svg class="fx-spark" viewBox="0 0 ' + w + " " + hgt + '" width="' + w
+            + '" height="' + hgt + '" aria-label="Naira per US dollar, last '
+            + series.length + ' recorded days" role="img">'
+            + '<polyline fill="none" stroke="currentColor" stroke-width="1.5" points="'
+            + points + '" /></svg>';
+    }
+
+    function renderFxHTML(model) {
+        var html = "<ul class=\"signal-list\">" + model.rows.map(function (r) {
+            var delta = "";
+            if (r.delta !== null) {
+                var cls = r.delta > 0 ? "mover-up" : (r.delta < 0 ? "mover-down" : "mover-new");
+                var sign = r.delta > 0 ? "▲" : (r.delta < 0 ? "▼" : "");
+                delta = '<span class="mover-delta ' + cls + '">' + sign + " "
+                    + Math.abs(r.delta) + "%</span>";
+            }
+            return "<li><span class=\"signal-label\">" + esc(r.currency)
+                + " ₦" + r.value.toLocaleString("en-NG", { minimumFractionDigits: 2 })
+                + "</span>" + delta + "</li>";
+        }).join("") + "</ul>";
+        html += sparklineSVG(model.usdSeries);
+        if (model.date) {
+            html += '<p class="signal-footnote">₦ per unit · as of ' + esc(model.date) + "</p>";
+        }
+        return html;
+    }
+
+    /**
+     * reports.json -> "what AURA logged 30/90 days ago", nearest run day
+     * within ±3 days of each offset. Rows only for offsets the archive
+     * actually covers -- a young corpus shows one line, honestly.
+     */
+    function retrospective(reports, now, offsets) {
+        var byDay = {};
+        (reports || []).forEach(function (row) {
+            var day = String((row || {}).Date == null ? "" : row.Date).trim().slice(0, 10);
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) return;
+            var b = byDay[day] || (byDay[day] = { articles: 0, highRisk: 0, archive: "" });
+            b.articles += num(row["Total Articles"]) || 0;
+            b.highRisk += num(row["High Risk"]) || 0;
+            if (row["Archive File"]) b.archive = String(row["Archive File"]);
+        });
+        var DAY_MS = 86400000;
+        var rows = [];
+        (offsets || [30, 90]).forEach(function (offset) {
+            var best = null;
+            for (var jitter = 0; jitter <= 3 && !best; jitter++) {
+                [offset + jitter, offset - jitter].forEach(function (o) {
+                    if (best) return;
+                    var d = new Date(now.getTime() - o * DAY_MS);
+                    var key = d.toISOString().slice(0, 10);
+                    if (byDay[key]) best = { date: key, data: byDay[key] };
+                });
+            }
+            if (best) {
+                rows.push({ label: offset + " days ago", date: best.date,
+                            articles: best.data.articles, highRisk: best.data.highRisk,
+                            archive: best.data.archive });
+            }
+        });
+        return rows.length ? { rows: rows } : null;
+    }
+
+    function renderRetroHTML(model) {
+        return "<ul class=\"signal-list\">" + model.rows.map(function (r) {
+            return "<li><span class=\"signal-label\">" + esc(r.label)
+                + " · " + esc(r.date) + "</span>"
+                + '<span class="signal-meta">' + r.articles + " articles logged, "
+                + r.highRisk + " high-risk"
+                + "</span></li>";
+        }).join("") + "</ul>";
+    }
+
     // =====================================================================
     // DOM shell -- everything below no-ops headless.
     // =====================================================================
@@ -570,12 +681,16 @@
             Promise.all([
                 D.get("risk_movers.json"),
                 D.get("sectors.json"),
-                D.get("sources.json")
+                D.get("sources.json"),
+                D.get("fx.json"),
+                D.getList("reports.json")
             ]).then(function (results) {
                 var movers = moversSummary(results[0], 6);
                 var sectors = sectorsSummary(results[1], 6);
                 var sources = sourcesSummary(results[2], 6);
-                if (!movers && !sectors && !sources) return; // stays hidden
+                var fx = fxSummary(results[3]);
+                var retro = retrospective(results[4], new Date());
+                if (!movers && !sectors && !sources && !fx && !retro) return; // stays hidden
 
                 function fill(colId, bodyId, html) {
                     var col = doc.getElementById(colId);
@@ -590,6 +705,10 @@
                     sectors && renderSectorsHTML(sectors));
                 fill("signals-sources", "signals-sources-body",
                     sources && renderSourcesHTML(sources));
+                fill("signals-fx", "signals-fx-body",
+                    fx && renderFxHTML(fx));
+                fill("signals-retro", "signals-retro-body",
+                    retro && renderRetroHTML(retro));
                 var note = doc.getElementById("signals-note");
                 if (note && movers) {
                     note.textContent = "movers: last " + movers.windowDays
@@ -701,6 +820,10 @@
         renderSectorsHTML: renderSectorsHTML,
         sourcesSummary: sourcesSummary,
         renderSourcesHTML: renderSourcesHTML,
+        fxSummary: fxSummary,
+        renderFxHTML: renderFxHTML,
+        retrospective: retrospective,
+        renderRetroHTML: renderRetroHTML,
         esc: esc
     };
 

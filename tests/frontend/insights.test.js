@@ -301,5 +301,61 @@
         });
     });
 
+    T.describe("signals: naira fx", function () {
+        var FX = { latest: { USD: 1540.5, EUR: 1661.7, GBP: 1941.3 },
+                   history: [
+                     { date: "2026-09-25", USD: 1500.0, EUR: 1650.0, GBP: 1930.0 },
+                     { date: "2026-09-26", USD: 1530.0, EUR: 1655.0, GBP: 1935.0 },
+                     { date: "2026-09-27", USD: 1540.5, EUR: 1661.7, GBP: 1941.3 }
+                   ] };
+        T.it("rows carry values and day-over-day deltas", function () {
+            var m = I.fxSummary(FX);
+            T.eq(m.rows.length, 3);
+            T.eq(m.rows[0].currency, "USD");
+            T.eq(m.rows[0].delta, 0.7);
+            T.eq(m.date, "2026-09-27");
+            T.eq(m.usdSeries.length, 3);
+        });
+        T.it("renders deltas and an accessible sparkline", function () {
+            var html = I.renderFxHTML(I.fxSummary(FX));
+            T.contains(html, "mover-up");
+            T.contains(html, "aria-label=");
+            T.contains(html, "polyline");
+            T.contains(html, "as of 2026-09-27");
+        });
+        T.it("one recorded day renders values, no delta, no sparkline", function () {
+            var m = I.fxSummary({ latest: { USD: 1540.5 },
+                                  history: [{ date: "2026-09-27", USD: 1540.5 }] });
+            T.eq(m.rows[0].delta, null);
+            T.excludes(I.renderFxHTML(m), "polyline");
+        });
+        T.it("absent file hides the column", function () {
+            T.eq(I.fxSummary(null), null);
+        });
+    });
+
+    T.describe("signals: looking back", function () {
+        var NOW = new Date("2026-09-22T12:00:00Z");
+        var REPORTS = [
+            { Date: "2026-08-23", "Total Articles": 7, "High Risk": 1,
+              "Archive File": "report_a.md" },
+            { Date: "2026-08-23 18:00:00", "Total Articles": 5, "High Risk": 0,
+              "Archive File": "report_b.md" }
+        ];
+        T.it("finds the nearest run day within three days of the offset", function () {
+            var m = I.retrospective(REPORTS, NOW);
+            T.eq(m.rows.length, 1, "young corpus: 30d hits, 90d honestly absent");
+            T.eq(m.rows[0].date, "2026-08-23");
+            T.eq(m.rows[0].articles, 12, "same-day runs sum");
+            var html = I.renderRetroHTML(m);
+            T.contains(html, "30 days ago");
+            T.contains(html, "12 articles logged, 1 high-risk");
+        });
+        T.it("no archive coverage means null, not an empty panel", function () {
+            T.eq(I.retrospective([], NOW), null);
+            T.eq(I.retrospective([{ Date: "garbage" }], NOW), null);
+        });
+    });
+
     T.report();
 })();
