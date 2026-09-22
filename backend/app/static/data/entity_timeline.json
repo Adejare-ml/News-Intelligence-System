@@ -22,7 +22,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 20,
+      "total_mentions": 21,
       "points": [
         {
           "week": "2026-09-07",
@@ -38,8 +38,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 23.3,
+          "mentions": 4,
+          "avg_risk": 22.5,
           "max_risk": 30
         }
       ]
@@ -47,7 +47,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-14",
@@ -57,8 +57,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 25.0,
+          "mentions": 3,
+          "avg_risk": 26.7,
           "max_risk": 30
         }
       ]
@@ -215,6 +215,25 @@
           "mentions": 3,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -427,19 +446,6 @@
           "mentions": 2,
           "avg_risk": 42.5,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -807,6 +813,19 @@
       ]
     },
     {
+      "key": "bauchi state government",
+      "label": "Bauchi State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "bola ahmed tinubu",
       "label": "Bola Ahmed Tinubu",
       "total_mentions": 1,
@@ -930,6 +949,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "conference of private practitioners employers",
+      "label": "Conference of Private Practitioners Employers",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -1281,6 +1313,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
@@ -1665,6 +1710,19 @@
       ]
     },
     {
+      "key": "police force",
+      "label": "Nigeria Police Force",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "reinsurance corporation",
       "label": "Nigeria Reinsurance Corporation",
       "total_mentions": 1,
@@ -1843,6 +1901,19 @@
           "mentions": 1,
           "avg_risk": 70.0,
           "max_risk": 70
+        }
+      ]
+    },
+    {
+      "key": "office of the attorney general of the federation",
+      "label": "Office of the Attorney General of the Federation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -2198,5 +2269,5 @@
       ]
     }
   ],
-  "generated": "2026-09-21 20:54:12"
+  "generated": "2026-09-22 01:35:09"
 }

@@ -121,6 +121,42 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "631735ae7f74",
+      "label": "Nigeria Police Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9b023d5d7736",
+      "label": "Office of the Attorney General of the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "aab42ed8cb86",
+      "label": "Bauchi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -129,12 +165,6 @@
     {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -207,36 +237,6 @@
     {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "19e301887487",
-      "label": "National Hajj Commission of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3e883c4859e6",
-      "label": "National Human Rights Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fd896534e599",
-      "label": "International Criminal Court (ICC)",
       "type": "agency",
       "risk": "Low"
     },
@@ -583,6 +583,12 @@
       "risk": "Medium"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "653fd7557fc1",
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
@@ -640,6 +646,12 @@
       "id": "f4ee2fd09975",
       "label": "Nigeria Airways (Pensioners)",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
