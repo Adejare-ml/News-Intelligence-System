@@ -22,7 +22,7 @@ pandas==3.0.5
 openpyxl==3.1.5
 openai>=1.55.3,<2
 # Typed extraction program and the GEPA optimiser (see requirements.txt).
-dspy==3.3.0
+dspy==3.3.1
 # API-surface tests (tests/test_api_routes.py): the auth boundary was the
 # one part of the codebase with zero coverage. Pins match requirements.txt;
 # httpx is TestClient's transport and is CI-only.

@@ -28,4 +28,4 @@ python-multipart==0.0.32
 # Typed extraction program and the GEPA optimiser. Pinned: dspy.GEPA is marked
 # experimental upstream and may change without warning, and this dependency
 # decides the prompt behind the PSC register.
-dspy==3.3.0
+dspy==3.3.1
