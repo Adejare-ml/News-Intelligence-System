@@ -14,7 +14,7 @@
         "globe", "file-text", "eye", "calendar", "zoom-out", "zoom-in",
         "share-2", "refresh-cw", "plus-circle", "library", "file-search",
         "file-check", "external-link", "database", "corner-down-right",
-        "clock", "braces", "user", "briefcase", "landmark"];
+        "clock", "braces", "user", "briefcase", "landmark", "sun", "moon"];
 
     T.describe("icon registry", function () {
         T.it("every icon the markup uses resolves to real path data", function () {

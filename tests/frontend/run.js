@@ -43,6 +43,7 @@ const FILES = [
     path.join(JS_DIR, "feed-filters.js"),
     path.join(JS_DIR, "boards.js"),
     path.join(JS_DIR, "icons.js"),
+    path.join(JS_DIR, "theme.js"),
     path.join(__dirname, "runner.js"),
     path.join(__dirname, "psc-core.test.js"),
     path.join(__dirname, "entity-key.test.js"),
@@ -56,7 +57,8 @@ const FILES = [
     path.join(__dirname, "feed-filters.test.js"),
     path.join(__dirname, "boards.test.js"),
     path.join(__dirname, "workspace.test.js"),
-    path.join(__dirname, "icons.test.js")
+    path.join(__dirname, "icons.test.js"),
+    path.join(__dirname, "theme.test.js")
 ];
 
 const sandbox = {
