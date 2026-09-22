@@ -82,6 +82,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // ==========================================
+    // ACTIVE NAV — sticky header links + mobile tab bar
+    // ==========================================
+
+    // Route-driven only, deliberately: a scroll-spy was tried and cut
+    // because #workspace (a 60px section head) and #network (the graph
+    // panel beside the feed column) occupy the same scroll offset on
+    // desktop, so geometry keeps picking the wrong one. The route the
+    // reader chose is unambiguous.
+    (function initActiveNav() {
+        const links = document.querySelectorAll("[data-nav]");
+        if (!links.length) return;
+
+        function setActive(sectionId) {
+            links.forEach((l) => {
+                l.classList.toggle("active", l.getAttribute("data-nav") === sectionId);
+            });
+        }
+
+        function sectionForHash(hash) {
+            const R = window.AuraRouter;
+            if (!R || !R.matchRoute(hash)) return null;
+            return R.SECTION_VIEWS[R.matchRoute(hash).view] || null;
+        }
+
+        window.addEventListener("hashchange", () => {
+            const s = sectionForHash(window.location.hash);
+            if (s) setActive(s);
+        });
+
+        const initial = sectionForHash(window.location.hash);
+        if (initial) setActive(initial);
+    })();
+
+    // The mobile tab bar's search tab drives the same palette as the
+    // header button; search.js owns the palette wiring.
+    (function wireTabbarSearch() {
+        const tab = document.getElementById("tabbar-search-btn");
+        const opener = document.getElementById("search-open-btn");
+        if (tab && opener) {
+            tab.addEventListener("click", () => opener.click());
+        }
+    })();
+
+    // ==========================================
     // NORMALIZATION UTILITY
     // ==========================================
 
@@ -580,11 +624,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // LAZY vis-network LOADER
     // ==========================================
 
-    // Same pinned version + SRI hash the <script> tag carried when it
-    // blocked the initial render from <head>. cdnjs is already in the
-    // CSP's script-src, and host-allowlist CSPs permit injected scripts.
-    const VIS_NETWORK_SRC = "https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.9/standalone/umd/vis-network.min.js";
-    const VIS_NETWORK_INTEGRITY = "sha384-yxKDWWf0wwdUj/gPeuL11czrnKFQROnLgY8ll7En9NYoXibgg3C6NK/UDHNtUgWJ";
+    // Vendored (js/vendor/, same 9.1.9 release the CDN tag pinned) and
+    // still lazy: at ~680KB it stays out of the initial render and only
+    // loads when the knowledge graph actually builds. Same-origin, so no
+    // SRI or crossorigin needed and the CSP's script-src stays 'self'.
+    const VIS_NETWORK_SRC = "js/vendor/vis-network.min.js?v=9.1.9";
     let visLoadPromise = null;
 
     function ensureVisLoaded() {
@@ -593,14 +637,12 @@ document.addEventListener("DOMContentLoaded", () => {
         visLoadPromise = new Promise((resolve, reject) => {
             const script = document.createElement("script");
             script.src = VIS_NETWORK_SRC;
-            script.integrity = VIS_NETWORK_INTEGRITY;
-            script.crossOrigin = "anonymous";
             script.onload = () => resolve();
             script.onerror = () => {
                 // Allow a retry (the graph panel's Retry button re-enters
                 // loadAnalyticsAndGraph) instead of caching the failure.
                 visLoadPromise = null;
-                reject(new Error("vis-network failed to load from the CDN"));
+                reject(new Error("vis-network failed to load"));
             };
             document.head.appendChild(script);
         });
@@ -755,8 +797,13 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             if (hash) {
                 if (current !== hash) history.replaceState(null, "", hash);
-            } else if (current.indexOf("#/feed") === 0) {
-                history.replaceState(null, "", location.pathname + location.search);
+            } else if (current.indexOf("#/feed") === 0 && current !== "#/feed") {
+                // All-default filters: normalize "#/feed?..." back to the bare
+                // route. Never strip the fragment itself -- the nav links are
+                // #/ routes now, and erasing the hash right after navigation
+                // clobbered the route (and the nav's active marker) whenever
+                // the filters happened to be defaults.
+                history.replaceState(null, "", "#/feed");
             }
         } catch (e) { /* sandboxed pages without history access */ }
     }
@@ -953,14 +1000,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const ctx = document.getElementById("mix-chart");
         if (!ctx) return;
 
-        // Chart.js comes from a CDN, so it is genuinely absent whenever an ad
-        // blocker, an offline machine or a restricted network drops it. Without
-        // this guard the ReferenceError propagates out of loadDashboardStats
-        // into its catch, and a page whose data loaded perfectly well reports
-        // that it could not load the datasets. renderGraph already guards its
-        // own library this way.
+        // Chart.js is vendored and served from 'self' now, so this only
+        // fires if the script itself failed to arrive -- but a blank panel
+        // that says nothing is the wrong failure mode either way.
         if (typeof Chart === "undefined") {
             console.error("Chart.js library not loaded; skipping the mix chart.");
+            const summary = document.getElementById("mix-chart-summary");
+            if (summary) {
+                summary.classList.remove("sr-only");
+                summary.textContent = "The chart renderer failed to load — reload the page to retry. The numbers behind it are unaffected.";
+            }
             return;
         }
 
