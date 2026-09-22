@@ -29,6 +29,15 @@ jobs:
     # 6-hour Actions default. Normal runs finish well inside 30 minutes
     # even with the per-article rate-limit sleeps.
     timeout-minutes: 90
+    # Exposes the SHA this run actually committed, so deploy-pages can check
+    # that exact commit out instead of a floating `main` ref. Without this,
+    # deploy-pages's checkout of `main` raced the push above closely enough
+    # that it consistently resolved to the *previous* run's commit instead --
+    # verified across three consecutive scheduled runs on 2026-09-22, where
+    # every gh-pages deploy shipped the prior cycle's data. The data was
+    # never lost, but the live site ran up to one cycle (~6h) stale.
+    outputs:
+      data_sha: ${{ steps.autocommit.outputs.commit_hash }}
 
     steps:
       - name: Checkout Code
@@ -81,6 +90,7 @@ jobs:
         # them with the runner while the Sheets rows they mirror survived --
         # the repo and the database silently diverged.
         if: success() || failure()
+        id: autocommit
         # Third-party actions pinned to commit SHAs so a moved tag cannot
         # inject code into a workflow that holds a contents:write token
         uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
@@ -173,10 +183,14 @@ jobs:
       group: pages-deploy
       cancel-in-progress: true
     steps:
-      - name: Checkout post-commit main
+      - name: Checkout the commit run-pipeline just pushed
         uses: actions/checkout@v4
         with:
-          ref: main
+          # Pinned to the exact SHA run-pipeline produced (job output above),
+          # not a floating `main` ref -- see the outputs comment on
+          # run-pipeline for why. Falls back to `main` only if that output is
+          # ever empty (e.g. the commit step didn't run for some reason).
+          ref: ${{ needs.run-pipeline.outputs.data_sha || 'main' }}
 
       - name: Deploy static folder to gh-pages branch
         # Pinned to a commit SHA so a moved tag cannot inject code into a
