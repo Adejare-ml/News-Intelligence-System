@@ -77,6 +77,8 @@ def main() -> int:
         changes=load_json("changes.json"),
         report_stats=report_stats_from_markdown(load_text("report_latest.md")),
         now=datetime.now(),
+        fx=load_json("fx.json"),
+        weekly=load_json("weekly_wrap.json"),
     )
 
     message = MIMEMultipart("alternative")

@@ -1328,6 +1328,27 @@ def export_static_json_database():
     except Exception as exc:  # pragma: no cover - defensive
         logger.warning(f"Weather export skipped: {exc}")
 
+    # Naira FX snapshot (USD/EUR/GBP), same contract as weather: fetched
+    # pipeline-side (CSP pins connect-src to 'self'), one history point
+    # per day with the day's latest run winning, and a failed fetch keeps
+    # the previous file with its honest date rather than an empty one.
+    try:
+        from backend.app.services.fx import fetch_rates, merge_history
+        fx_path = os.path.join(DATA_DIR, "fx.json")
+        existing_fx = None
+        if os.path.exists(fx_path):
+            try:
+                with open(fx_path, encoding="utf-8") as f:
+                    existing_fx = json.load(f)
+            except Exception:
+                existing_fx = None
+        fx = merge_history(existing_fx, fetch_rates(), datetime.now())
+        if fx:
+            with open(fx_path, "w", encoding="utf-8") as f:
+                json.dump(fx, f, default=str, indent=2)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"FX export skipped: {exc}")
+
     try:
         from backend.app.services.trends import compute_trends, fetch_reddit_nigeria
         trends = compute_trends(articles)
@@ -1412,9 +1433,28 @@ def export_static_json_database():
         payload["generated"] = stamp
         json.dump(payload, f, default=str, indent=2)
 
+    movers_payload = {"movers": analytics.risk_movers(articles), "window_days": 7,
+                      "generated": stamp}
     with open(os.path.join(DATA_DIR, "risk_movers.json"), "w", encoding="utf-8") as f:
-        json.dump({"movers": analytics.risk_movers(articles), "window_days": 7,
-                   "generated": stamp}, f, default=str, indent=2)
+        json.dump(movers_payload, f, default=str, indent=2)
+
+    # Weekly wrap: composed on the week's final run (Sunday 23:00 UTC
+    # slot) from rows already in memory -- Daily Reports totals, the
+    # movers export (whose 7-day window IS the week) and dated
+    # procurement. Zero LLM. The file persists until the next Sunday
+    # overwrites it; Monday's morning email links it while fresh.
+    now_utc = datetime.utcnow()
+    if now_utc.weekday() == 6 and now_utc.hour >= 22:
+        try:
+            from backend.app.services.weekly import compose_weekly_wrap
+            wrap = compose_weekly_wrap(reports, movers_payload, procurement_out, now_utc)
+            if wrap:
+                with open(os.path.join(DATA_DIR, "weekly_wrap.md"), "w", encoding="utf-8") as f:
+                    f.write(wrap["markdown"])
+                with open(os.path.join(DATA_DIR, "weekly_wrap.json"), "w", encoding="utf-8") as f:
+                    json.dump(wrap, f, default=str, indent=2)
+        except Exception as exc:  # pragma: no cover - defensive
+            logger.warning(f"Weekly wrap skipped: {exc}")
 
     with open(os.path.join(DATA_DIR, "sectors.json"), "w", encoding="utf-8") as f:
         json.dump({"sectors": analytics.sector_rollup(companies), "generated": stamp},

@@ -98,11 +98,30 @@ def change_lines(changes: Optional[Dict[str, Any]],
     return lines
 
 
+def fx_line(fx: Optional[Dict[str, Any]]) -> str:
+    """'USD ₦1,540.20 · EUR ₦1,662.05 · GBP ₦1,943.10 (2026-09-23)' or ''."""
+    latest = (fx or {}).get("latest") or {}
+    parts = []
+    for currency in ("USD", "EUR", "GBP"):
+        value = latest.get(currency)
+        if isinstance(value, (int, float)):
+            parts.append(f"{currency} ₦{value:,.2f}")
+    if not parts:
+        return ""
+    stamp = ""
+    history = (fx or {}).get("history") or []
+    if history:
+        stamp = str(history[-1].get("date", ""))[:10]
+    return " · ".join(parts) + (f" ({stamp})" if stamp else "")
+
+
 def compose_briefing(weather: Optional[Dict[str, Any]],
                      alerts_payload: Optional[Dict[str, Any]],
                      changes: Optional[Dict[str, Any]],
                      report_stats: Dict[str, str],
                      now: datetime,
+                     fx: Optional[Dict[str, Any]] = None,
+                     weekly: Optional[Dict[str, Any]] = None,
                      site_url: str = "https://adejare-ml.github.io/News-Intelligence-System/",
                      ) -> Dict[str, str]:
     """Build {subject, text, html} for the morning email.
@@ -130,9 +149,13 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
         if len(subject_bits) > 1 else subject_bits[0]
 
     # ---- plain text ----
+    fx_ln = fx_line(fx)
+
     text_parts: List[str] = [f"AURA morning brief — {day}", ""]
     if weather_ls:
         text_parts += ["WEATHER", *["  " + line for line in weather_ls], ""]
+    if fx_ln:
+        text_parts += ["NAIRA RATES", "  " + fx_ln, ""]
     if report_stats:
         text_parts.append("LATEST RUN")
         for label, value in report_stats.items():
@@ -154,6 +177,22 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
         text_parts += ["HIGH-RISK SIGNALS (last 24h)", "  None recorded.", ""]
     if changes_ls:
         text_parts += ["REGISTER CHANGES", *["  " + line for line in changes_ls], ""]
+
+    # Monday bonus: point at the wrap the Sunday-night run just wrote,
+    # but only while it is actually fresh (<36h) -- a stale link would
+    # present last week's edition as news.
+    weekly_url = ""
+    generated = str((weekly or {}).get("generated", ""))
+    if generated:
+        try:
+            age = now - datetime.strptime(generated[:19], "%Y-%m-%d %H:%M:%S")
+            if age < timedelta(hours=36):
+                weekly_url = site_url.rstrip("/") + "/data/weekly_wrap.md"
+                text_parts += [f"WEEKLY WRAP ({weekly.get('week_start')} to "
+                               f"{weekly.get('week_end')})", f"  {weekly_url}", ""]
+        except ValueError:
+            pass
+
     text_parts.append(f"Dashboard: {site_url}")
     text = "\n".join(text_parts)
 
@@ -171,6 +210,9 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
         body.append(section("Weather",
                     "".join(f'<p style="margin:2px 0;">{h(line)}</p>'
                             for line in weather_ls)))
+    if fx_ln:
+        body.append(section("Naira rates",
+                    f'<p style="margin:2px 0;">{h(fx_ln)}</p>'))
     if report_stats:
         rows = "".join(
             f'<tr><td style="padding:2px 12px 2px 0;color:#6b7280;">{h(k)}</td>'
@@ -202,6 +244,11 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
                     '<ul style="margin:4px 0;padding-left:18px;">'
                     + "".join(f'<li style="margin:2px 0;">{h(line)}</li>'
                               for line in changes_ls) + "</ul>"))
+    if weekly_url:
+        body.append(section("Weekly wrap",
+                    f'<p style="margin:2px 0;"><a href="{h(weekly_url)}" '
+                    f'style="color:#4f46e5;">The week of {h(weekly.get("week_start", ""))} '
+                    f'— read the wrap</a></p>'))
     body.append(f'<p style="margin:18px 0 0;"><a href="{h(site_url)}" '
                 f'style="color:#4f46e5;">Open the dashboard</a></p>')
 
