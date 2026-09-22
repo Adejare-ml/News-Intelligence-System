@@ -373,6 +373,116 @@
     }
 
     // =====================================================================
+    // Signals: the round-5 analytics exports that never had panels.
+    // Pure summaries + renderers, wired in bind() like every other panel.
+    // =====================================================================
+
+    /** num() yields null for garbage; counts want a hard 0 instead. */
+    function count(value) {
+        var n = num(value);
+        return n === null ? 0 : Math.round(n);
+    }
+
+    /** risk_movers.json -> rows for the movers column, or null to hide. */
+    function moversSummary(payload, cap) {
+        if (!payload || !Array.isArray(payload.movers) || !payload.movers.length) return null;
+        var rows = payload.movers.slice(0, cap || 6).map(function (m) {
+            return {
+                label: String(m.label || m.key || "").trim(),
+                delta: typeof m.delta === "number" ? m.delta : null,
+                recent: typeof m.recent_avg === "number" ? m.recent_avg : null,
+                mentions: count(m.recent_mentions)
+            };
+        }).filter(function (r) { return r.label; });
+        if (!rows.length) return null;
+        return { rows: rows, windowDays: count(payload.window_days) || 7 };
+    }
+
+    function renderMoversHTML(model) {
+        return "<ol class=\"signal-list\">" + model.rows.map(function (r) {
+            var badge = r.delta === null
+                ? '<span class="mover-delta mover-new">new</span>'
+                : '<span class="mover-delta ' + (r.delta >= 0 ? "mover-up" : "mover-down") + '">'
+                    + (r.delta >= 0 ? "▲" : "▼") + " " + Math.abs(Math.round(r.delta)) + "</span>";
+            return "<li><span class=\"signal-label\">" + esc(r.label) + "</span>"
+                + badge
+                + '<span class="signal-meta">risk ' + (r.recent === null ? "—" : Math.round(r.recent))
+                + " · " + r.mentions + " mention" + (r.mentions === 1 ? "" : "s") + "</span></li>";
+        }).join("") + "</ol>";
+    }
+
+    /** sectors.json -> named sectors + an uncategorized footnote, or null. */
+    function sectorsSummary(payload, cap) {
+        if (!payload || !Array.isArray(payload.sectors)) return null;
+        var named = [];
+        var uncategorized = 0;
+        payload.sectors.forEach(function (s) {
+            var industry = String(s.industry || "").trim();
+            if (!industry) return;
+            if (industry === "General") {
+                uncategorized = count(s.companies);
+                return;
+            }
+            var risk = s.risk || {};
+            named.push({
+                industry: industry,
+                companies: count(s.companies),
+                mentions: count(s.mentions),
+                elevated: count(risk.High) + count(risk.Critical)
+            });
+        });
+        named.sort(function (a, b) { return b.mentions - a.mentions; });
+        named = named.slice(0, cap || 6);
+        if (!named.length) return null;
+        return { rows: named, uncategorized: uncategorized };
+    }
+
+    function renderSectorsHTML(model) {
+        var max = model.rows.reduce(function (m, r) { return Math.max(m, r.mentions); }, 1);
+        var html = "<ul class=\"signal-list sector-list\">" + model.rows.map(function (r) {
+            return "<li><span class=\"signal-label\">" + esc(r.industry) + "</span>"
+                + '<span class="sector-bar"><span style="width:'
+                + Math.max(4, Math.round(100 * r.mentions / max)) + '%"></span></span>'
+                + '<span class="signal-meta">' + r.mentions + " mentions · "
+                + r.companies + (r.companies === 1 ? " company" : " companies")
+                + (r.elevated ? " · <strong>" + r.elevated + " elevated</strong>" : "")
+                + "</span></li>";
+        }).join("") + "</ul>";
+        if (model.uncategorized) {
+            html += '<p class="signal-footnote">' + model.uncategorized
+                + " further companies have no sector assigned yet.</p>";
+        }
+        return html;
+    }
+
+    /** sources.json -> outlet scorecard rows, or null. */
+    function sourcesSummary(payload, cap) {
+        if (!payload || !Array.isArray(payload.sources) || !payload.sources.length) return null;
+        var rows = payload.sources.slice(0, cap || 6).map(function (s) {
+            return {
+                source: String(s.source || "").trim(),
+                total: count(s.total),
+                acceptRate: count(s.accept_rate),
+                avgRisk: typeof s.avg_risk === "number" ? s.avg_risk : null,
+                lastSeen: String(s.last_seen || "")
+            };
+        }).filter(function (r) { return r.source && r.total; });
+        if (!rows.length) return null;
+        return { rows: rows };
+    }
+
+    function renderSourcesHTML(model) {
+        return "<ul class=\"signal-list\">" + model.rows.map(function (r) {
+            return "<li><span class=\"signal-label\">" + esc(r.source) + "</span>"
+                + '<span class="signal-meta">' + r.total + " articles · "
+                + r.acceptRate + "% accepted · avg risk "
+                + (r.avgRisk === null ? "—" : Math.round(r.avgRisk))
+                + (r.lastSeen ? " · seen " + esc(r.lastSeen) : "")
+                + "</span></li>";
+        }).join("") + "</ul>";
+    }
+
+    // =====================================================================
     // DOM shell -- everything below no-ops headless.
     // =====================================================================
 
@@ -452,6 +562,40 @@
                         : "No elevated-risk companies; showing the most mentioned of " + model.total;
                 }
                 boardPanel.hidden = false;
+            });
+        }
+
+        var signalsPanel = doc.getElementById("signals-panel");
+        if (signalsPanel && typeof global.fetch === "function") {
+            Promise.all([
+                D.get("risk_movers.json"),
+                D.get("sectors.json"),
+                D.get("sources.json")
+            ]).then(function (results) {
+                var movers = moversSummary(results[0], 6);
+                var sectors = sectorsSummary(results[1], 6);
+                var sources = sourcesSummary(results[2], 6);
+                if (!movers && !sectors && !sources) return; // stays hidden
+
+                function fill(colId, bodyId, html) {
+                    var col = doc.getElementById(colId);
+                    var body = doc.getElementById(bodyId);
+                    if (!col || !body || !html) return;
+                    body.innerHTML = html;
+                    col.hidden = false;
+                }
+                fill("signals-movers", "signals-movers-body",
+                    movers && renderMoversHTML(movers));
+                fill("signals-sectors", "signals-sectors-body",
+                    sectors && renderSectorsHTML(sectors));
+                fill("signals-sources", "signals-sources-body",
+                    sources && renderSourcesHTML(sources));
+                var note = doc.getElementById("signals-note");
+                if (note && movers) {
+                    note.textContent = "movers: last " + movers.windowDays
+                        + " days vs the " + movers.windowDays + " before";
+                }
+                signalsPanel.hidden = false;
             });
         }
 
@@ -551,6 +695,12 @@
         companyLeaderboard: companyLeaderboard,
         renderLeaderboardHTML: renderLeaderboardHTML,
         watchlistDigest: watchlistDigest,
+        moversSummary: moversSummary,
+        renderMoversHTML: renderMoversHTML,
+        sectorsSummary: sectorsSummary,
+        renderSectorsHTML: renderSectorsHTML,
+        sourcesSummary: sourcesSummary,
+        renderSourcesHTML: renderSourcesHTML,
         esc: esc
     };
 

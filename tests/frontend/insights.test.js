@@ -232,5 +232,74 @@
         });
     });
 
+    T.describe("signals: risk movers", function () {
+        var PAYLOAD = { window_days: 7, movers: [
+            { key: "customs", label: "Nigeria Customs Service", recent_avg: 41.4,
+              previous_avg: 10.0, delta: 31.4, recent_mentions: 7, previous_mentions: 1 },
+            { key: "fresh", label: "Fresh Co", recent_avg: 95.0,
+              previous_avg: null, delta: null, recent_mentions: 2 }
+        ] };
+        T.it("rows keep labels, deltas and the export window", function () {
+            var m = I.moversSummary(PAYLOAD, 6);
+            T.eq(m.rows.length, 2);
+            T.eq(m.rows[0].label, "Nigeria Customs Service");
+            T.eq(m.rows[0].delta, 31.4);
+            T.eq(m.rows[1].delta, null, "new entrants carry null, never invented 0");
+            T.eq(m.windowDays, 7);
+        });
+        T.it("renders direction badges and a new-entrant badge", function () {
+            var html = I.renderMoversHTML(I.moversSummary(PAYLOAD, 6));
+            T.contains(html, "mover-up");
+            T.contains(html, "mover-new");
+            T.contains(html, "7 mentions");
+        });
+        T.it("empty or missing file hides the column", function () {
+            T.eq(I.moversSummary(null), null);
+            T.eq(I.moversSummary({ movers: [] }), null);
+        });
+    });
+
+    T.describe("signals: sectors", function () {
+        var PAYLOAD = { sectors: [
+            { industry: "General", companies: 975, mentions: 1677,
+              risk: { Low: 858, Critical: 59 } },
+            { industry: "Oil & Gas", companies: 7, mentions: 68,
+              risk: { Medium: 2, Low: 4, High: 1 } },
+            { industry: "Banking", companies: 5, mentions: 8, risk: { Low: 5 } }
+        ] };
+        T.it("General becomes an honest footnote, not the biggest bar", function () {
+            var s = I.sectorsSummary(PAYLOAD, 6);
+            T.eq(s.rows.length, 2);
+            T.eq(s.rows[0].industry, "Oil & Gas");
+            T.eq(s.rows[0].elevated, 1);
+            T.eq(s.uncategorized, 975);
+            var html = I.renderSectorsHTML(s);
+            T.contains(html, "975 further companies have no sector assigned yet");
+            T.excludes(html, ">General<");
+        });
+        T.it("only General present means nothing named to chart", function () {
+            T.eq(I.sectorsSummary({ sectors: [PAYLOAD.sectors[0]] }), null);
+        });
+    });
+
+    T.describe("signals: source scorecard", function () {
+        T.it("rows carry totals, accept rate and average risk", function () {
+            var s = I.sourcesSummary({ sources: [
+                { source: "Punch", total: 639, published: 320, filtered: 319,
+                  accept_rate: 50, avg_risk: 31.4, last_seen: "2026-09-22" },
+                { source: "", total: 5 }, { source: "Ghost", total: 0 }
+            ] }, 6);
+            T.eq(s.rows.length, 1, "blank names and zero-article rows drop");
+            var html = I.renderSourcesHTML(s);
+            T.contains(html, "Punch");
+            T.contains(html, "50% accepted");
+            T.contains(html, "avg risk 31");
+        });
+        T.it("hides without data", function () {
+            T.eq(I.sourcesSummary(null), null);
+            T.eq(I.sourcesSummary({ sources: [] }), null);
+        });
+    });
+
     T.report();
 })();
