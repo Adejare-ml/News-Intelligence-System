@@ -43,14 +43,14 @@
       "risk": "Low"
     },
     {
-      "id": "c0f6baef22e7",
-      "label": "First HoldCo",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "9ed3f0f5bb2d",
       "label": "Dangote Refinery",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
+      "id": "c0f6baef22e7",
+      "label": "First HoldCo",
       "type": "company",
       "risk": "Low"
     },
@@ -79,16 +79,16 @@
       "risk": "Low"
     },
     {
-      "id": "6b0baabbfd00",
-      "label": "APC Group",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
       "id": "01ccce37119e",
       "label": "Dangote Petroleum Refinery",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "6b0baabbfd00",
+      "label": "APC Group",
+      "type": "company",
+      "risk": "Critical"
     },
     {
       "id": "81dcb233ede4",
@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
@@ -151,6 +157,24 @@
       "risk": "Low"
     },
     {
+      "id": "ab53ff22bff5",
+      "label": "Edo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "635f6d07426b",
+      "label": "Korea International Cooperation Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "daa2d59a11a5",
+      "label": "African African University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -159,12 +183,6 @@
     {
       "id": "631735ae7f74",
       "label": "Nigeria Police Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,21 +241,39 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
+      "id": "325a5c8a1ef5",
+      "label": "Atiku Abubakar",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
+      "id": "37a6259cc0c1",
+      "label": "null",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "e5c0e655148a",
-      "label": "Nigerian Civil Aviation Authority",
-      "type": "agency",
+      "id": "e6d08bf643b2",
+      "label": "Dr Haydar Daudu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9adc4c161a19",
+      "label": "LemFi",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "5b3edd2f164d",
+      "label": "Chukwu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "112a7950db44",
+      "label": "SUNU Assurances",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -249,12 +285,6 @@
     {
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "325a5c8a1ef5",
-      "label": "Atiku Abubakar",
       "type": "person",
       "risk": "Low"
     },
@@ -421,6 +451,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "1252813a4034",
       "label": "Sarah Boulos",
       "type": "person",
@@ -447,30 +483,6 @@
     {
       "id": "65da5ae7f7a4",
       "label": "Lifteller",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "3a6cef0b6e44",
-      "label": "Uche Elekwachi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "d8420ee1c07a",
-      "label": "Sanusi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0804399f614e",
-      "label": "Siminalayi Fubara",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1f51cde9fd6f",
-      "label": "Rivers State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -683,21 +695,27 @@
       "label": "Gateway Air",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "1336530dfec0",
-      "label": "National Iron Ore Mining Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f5e16be1446b",
-      "label": "Premium Steel",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "c098f0ce0d9f",
+      "from": "325a5c8a1ef5",
+      "to": "37a6259cc0c1",
+      "label": "Appointed as null"
+    },
+    {
+      "id": "e3cceef1a102",
+      "from": "e6d08bf643b2",
+      "to": "9adc4c161a19",
+      "label": "Appointed as Head of Regulatory Affairs and Policy, West Africa"
+    },
+    {
+      "id": "109514f7efad",
+      "from": "5b3edd2f164d",
+      "to": "112a7950db44",
+      "label": "Appointed as Director"
+    },
     {
       "id": "3734b9c3ff9b",
       "from": "bf698d54d6c5",
@@ -831,24 +849,6 @@
       "label": "Appointed as MD/CEO"
     },
     {
-      "id": "254c22428cef",
-      "from": "3a6cef0b6e44",
-      "to": "65da5ae7f7a4",
-      "label": "Appointed as Chairman"
-    },
-    {
-      "id": "1e89a6ec1689",
-      "from": "d8420ee1c07a",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Former Governor"
-    },
-    {
-      "id": "eca146ca61aa",
-      "from": "0804399f614e",
-      "to": "1f51cde9fd6f",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -925,6 +925,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "14315671d3f7",
+      "from": "334c4a4c42fd",
+      "to": "635f6d07426b",
+      "label": "Contract Awardee"
     },
     {
       "id": "5b569ce39252",
@@ -1020,12 +1026,6 @@
       "id": "af6773ef4da1",
       "from": "b2907b2dc23c",
       "to": "7dc08a8ebfaa",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "d19a20dc656e",
-      "from": "f5e16be1446b",
-      "to": "1336530dfec0",
       "label": "Contract Awardee"
     }
   ]

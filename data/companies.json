@@ -6553,8 +6553,8 @@
   },
   {
     "Company": "Dangote Petroleum Refinery",
-    "Mention Count": 11,
-    "Last Seen": "2026-09-23 01:24",
+    "Mention Count": 12,
+    "Last Seen": "2026-09-23 12:35",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -7241,10 +7241,10 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 15,
-    "Last Seen": "2026-09-19 19:14",
+    "Mention Count": 16,
+    "Last Seen": "2026-09-23 12:34",
     "Industry": "Oil & Gas",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -8233,8 +8233,8 @@
   },
   {
     "Company": "SUNU Assurances",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-21 18:27",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-23 12:35",
     "Industry": "Insurance",
     "Risk Level": "Low",
     "First Seen": "2026-09-21 18:27"
@@ -8270,5 +8270,29 @@
     "Industry": "Insurance",
     "Risk Level": "Low",
     "First Seen": "2026-09-23 01:23"
+  },
+  {
+    "Company": "LemFi",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-23 12:34",
+    "Industry": "Fintech",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-23 12:34"
+  },
+  {
+    "Company": "Mutual Benefits",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-23 12:35",
+    "Industry": "Insurance",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-23 12:35"
+  },
+  {
+    "Company": "Agusto & Co.",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-23 12:35",
+    "Industry": "Credit Rating",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-23 12:35"
   }
 ]

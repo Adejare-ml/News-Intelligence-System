@@ -1,14 +1,8 @@
 {
   "window_days": 7,
-  "recent_articles": 163,
-  "previous_articles": 159,
+  "recent_articles": 162,
+  "previous_articles": 165,
   "rising": [
-    {
-      "term": "guardian",
-      "recent": 43,
-      "previous": 26,
-      "change": 17
-    },
     {
       "term": "mambilla",
       "recent": 10,
@@ -18,8 +12,8 @@
     {
       "term": "nigeria\u2019s",
       "recent": 14,
-      "previous": 6,
-      "change": 8
+      "previous": 7,
+      "change": 7
     },
     {
       "term": "icc",
@@ -31,6 +25,12 @@
       "term": "urges",
       "recent": 9,
       "previous": 3,
+      "change": 6
+    },
+    {
+      "term": "report",
+      "recent": 7,
+      "previous": 1,
       "change": 6
     },
     {
@@ -46,53 +46,65 @@
       "change": 6
     },
     {
+      "term": "cbn",
+      "recent": 9,
+      "previous": 4,
+      "change": 5
+    },
+    {
       "term": "payment",
       "recent": 6,
       "previous": 1,
       "change": 5
     },
     {
-      "term": "report",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "cbn",
-      "recent": 9,
-      "previous": 5,
+      "term": "guardian",
+      "recent": 37,
+      "previous": 33,
       "change": 4
     }
   ],
   "falling": [
     {
-      "term": "punch",
-      "recent": 24,
+      "term": "dangote",
+      "recent": 7,
+      "previous": 14,
+      "change": -7
+    },
+    {
+      "term": "naicom",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "newspapers",
+      "recent": 23,
       "previous": 29,
+      "change": -6
+    },
+    {
+      "term": "ipo",
+      "recent": 4,
+      "previous": 10,
+      "change": -6
+    },
+    {
+      "term": "ncaa",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "punch",
+      "recent": 23,
+      "previous": 28,
       "change": -5
     },
     {
       "term": "punch newspapers",
-      "recent": 24,
-      "previous": 29,
-      "change": -5
-    },
-    {
-      "term": "ncaa",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
-      "term": "petrol",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
-      "term": "naicom",
-      "recent": 1,
-      "previous": 6,
+      "recent": 23,
+      "previous": 28,
       "change": -5
     },
     {
@@ -102,35 +114,23 @@
       "change": -5
     },
     {
-      "term": "newspapers",
-      "recent": 25,
-      "previous": 29,
+      "term": "petrol",
+      "recent": 3,
+      "previous": 7,
       "change": -4
     },
     {
-      "term": "dangote",
-      "recent": 8,
-      "previous": 12,
-      "change": -4
-    },
-    {
-      "term": "tinubu",
+      "term": "beneficial",
       "recent": 2,
       "previous": 6,
-      "change": -4
-    },
-    {
-      "term": "minister",
-      "recent": 1,
-      "previous": 5,
       "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 114,
-      "previous": 104
+      "recent": 113,
+      "previous": 107
     },
     {
       "category": "Legal",
@@ -140,9 +140,9 @@
     {
       "category": "Company",
       "recent": 23,
-      "previous": 37
+      "previous": 40
     }
   ],
   "social": [],
-  "generated": "2026-09-23 01:25:06"
+  "generated": "2026-09-23 12:37:07"
 }
