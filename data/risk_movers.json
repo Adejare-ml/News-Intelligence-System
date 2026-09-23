@@ -3,11 +3,11 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "recent_avg": 41.4,
-      "previous_avg": 10.0,
-      "delta": 31.4,
-      "recent_mentions": 7,
-      "previous_mentions": 1
+      "recent_avg": 51.0,
+      "previous_avg": 15.0,
+      "delta": 36.0,
+      "recent_mentions": 5,
+      "previous_mentions": 3
     },
     {
       "key": "government of",
@@ -19,12 +19,21 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 46.4,
+      "previous_avg": 35.8,
+      "delta": 10.6,
+      "recent_mentions": 11,
+      "previous_mentions": 12
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 15.0,
       "previous_avg": 25.0,
       "delta": -10.0,
-      "recent_mentions": 9,
+      "recent_mentions": 10,
       "previous_mentions": 3
     },
     {
@@ -44,15 +53,6 @@
       "delta": -9.2,
       "recent_mentions": 17,
       "previous_mentions": 7
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 45.0,
-      "previous_avg": 35.8,
-      "delta": 9.2,
-      "recent_mentions": 10,
-      "previous_mentions": 12
     },
     {
       "key": "lagos state government",
@@ -107,6 +107,15 @@
       "delta": -3.3,
       "recent_mentions": 2,
       "previous_mentions": 3
+    },
+    {
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "recent_avg": 17.5,
+      "previous_avg": 20.0,
+      "delta": -2.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "abubakar malami",
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "federation of construction industry",
-      "label": "Federation of Construction Industry",
-      "recent_avg": 30.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-23 17:42:56"
+  "generated": "2026-09-23 20:03:52"
 }
