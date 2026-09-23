@@ -79,6 +79,8 @@ def main() -> int:
         now=datetime.now(),
         fx=load_json("fx.json"),
         weekly=load_json("weekly_wrap.json"),
+        markets=load_json("markets.json"),
+        world=load_json("world_now.json"),
     )
 
     message = MIMEMultipart("alternative")

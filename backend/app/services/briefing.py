@@ -115,6 +115,38 @@ def fx_line(fx: Optional[Dict[str, Any]]) -> str:
     return " · ".join(parts) + (f" ({stamp})" if stamp else "")
 
 
+MARKET_LABELS = (("spx", "S&P 500", ""), ("ndx", "Nasdaq 100", ""),
+                 ("brent", "Brent", "$"), ("gold", "Gold", "$"),
+                 ("btc", "BTC", "$"))
+
+
+def markets_line(markets: Optional[Dict[str, Any]]) -> str:
+    """'S&P 500 6,480 · Brent $67.20 · BTC $112,405 (2026-09-23)' or ''."""
+    latest = (markets or {}).get("latest") or {}
+    parts = []
+    for key, label, prefix in MARKET_LABELS:
+        value = latest.get(key)
+        if isinstance(value, (int, float)):
+            parts.append(f"{label} {prefix}{value:,.2f}")
+    if not parts:
+        return ""
+    history = (markets or {}).get("history") or []
+    stamp = str(history[-1].get("date", ""))[:10] if history else ""
+    return " · ".join(parts) + (f" ({stamp})" if stamp else "")
+
+
+def world_lines(world: Optional[Dict[str, Any]], cap: int = 3) -> List[str]:
+    """Top world headlines as 'Title (Source)' lines; [] when absent."""
+    lines = []
+    for item in ((world or {}).get("world") or [])[:cap]:
+        title = str((item or {}).get("title", "")).strip()
+        if not title:
+            continue
+        source = str(item.get("source", "")).strip()
+        lines.append(title + (f" ({source})" if source else ""))
+    return lines
+
+
 def compose_briefing(weather: Optional[Dict[str, Any]],
                      alerts_payload: Optional[Dict[str, Any]],
                      changes: Optional[Dict[str, Any]],
@@ -122,6 +154,8 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
                      now: datetime,
                      fx: Optional[Dict[str, Any]] = None,
                      weekly: Optional[Dict[str, Any]] = None,
+                     markets: Optional[Dict[str, Any]] = None,
+                     world: Optional[Dict[str, Any]] = None,
                      site_url: str = "https://adejare-ml.github.io/News-Intelligence-System/",
                      ) -> Dict[str, str]:
     """Build {subject, text, html} for the morning email.
@@ -156,6 +190,12 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
         text_parts += ["WEATHER", *["  " + line for line in weather_ls], ""]
     if fx_ln:
         text_parts += ["NAIRA RATES", "  " + fx_ln, ""]
+    mkt_ln = markets_line(markets)
+    if mkt_ln:
+        text_parts += ["MARKETS", "  " + mkt_ln, ""]
+    world_ls = world_lines(world)
+    if world_ls:
+        text_parts += ["WORLD", *["  " + line for line in world_ls], ""]
     if report_stats:
         text_parts.append("LATEST RUN")
         for label, value in report_stats.items():
@@ -213,6 +253,14 @@ def compose_briefing(weather: Optional[Dict[str, Any]],
     if fx_ln:
         body.append(section("Naira rates",
                     f'<p style="margin:2px 0;">{h(fx_ln)}</p>'))
+    if mkt_ln:
+        body.append(section("Markets",
+                    f'<p style="margin:2px 0;">{h(mkt_ln)}</p>'))
+    if world_ls:
+        body.append(section("World",
+                    '<ul style="margin:4px 0;padding-left:18px;">'
+                    + "".join(f'<li style="margin:2px 0;">{h(line)}</li>'
+                              for line in world_ls) + "</ul>"))
     if report_stats:
         rows = "".join(
             f'<tr><td style="padding:2px 12px 2px 0;color:#6b7280;">{h(k)}</td>'

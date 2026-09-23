@@ -276,11 +276,27 @@
                     <h3>Naira rates</h3>
                     <div id="signals-fx-body"></div>
                 </div>
+                <div class="signal-col" id="signals-markets" hidden>
+                    <h3>Markets</h3>
+                    <div id="signals-markets-body"></div>
+                </div>
                 <div class="signal-col" id="signals-retro" hidden>
                     <h3>Looking back</h3>
                     <div id="signals-retro-body"></div>
                 </div>
             </div>
+        </section>
+
+        <!-- News center (Package 30): world + culture headlines from
+             keyless Google News RSS, rendered from data/world_now.json.
+             Same contract as the tech vertical: reader context only,
+             zero LLM quota, hidden when the file is absent. -->
+        <section class="glass insight-panel" id="world-now-panel" hidden>
+            <div class="panel-header">
+                <h2>World now</h2>
+                <span class="insight-generated" id="world-now-generated"></span>
+            </div>
+            <div class="insight-groups" id="world-now-body"></div>
         </section>
 
         <!-- Tech & AI headlines: a keyless side vertical rendered from
@@ -293,6 +309,17 @@
                 <span class="insight-generated" id="tech-news-generated"></span>
             </div>
             <div class="insight-groups" id="tech-news-body"></div>
+        </section>
+
+        <!-- AI pulse: Hugging Face trending models + daily papers from
+             the public keyless API (data/ai_pulse.json) — a data-backed
+             answer to "which model is doing best right now". -->
+        <section class="glass insight-panel" id="ai-pulse-panel" hidden>
+            <div class="panel-header">
+                <h2>AI pulse</h2>
+                <span class="insight-generated" id="ai-pulse-generated"></span>
+            </div>
+            <div class="insight-groups" id="ai-pulse-body"></div>
         </section>
 
         <!-- ==========================================================
@@ -845,7 +872,7 @@
     <script src="js/local-store.js?v=5.2"></script>
     <script src="js/feed-filters.js?v=5.7"></script>
     <script src="js/boards.js?v=5.8"></script>
-    <script src="js/insights.js?v=6.2"></script>
+    <script src="js/insights.js?v=6.3"></script>
     <script src="js/app.js?v=6.0"></script>
     <script src="js/psc-report.js?v=5.9"></script>
 </body>
