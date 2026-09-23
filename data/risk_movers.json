@@ -19,21 +19,12 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 48.6,
-      "previous_avg": 31.4,
-      "delta": 17.2,
-      "recent_mentions": 11,
-      "previous_mentions": 11
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 14.3,
+      "recent_avg": 14.4,
       "previous_avg": 30.0,
-      "delta": -15.7,
-      "recent_mentions": 7,
+      "delta": -15.6,
+      "recent_mentions": 9,
       "previous_mentions": 2
     },
     {
@@ -46,6 +37,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 45.0,
+      "previous_avg": 35.8,
+      "delta": 9.2,
+      "recent_mentions": 10,
+      "previous_mentions": 12
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "recent_avg": 32.5,
@@ -53,15 +53,6 @@
       "delta": -7.5,
       "recent_mentions": 2,
       "previous_mentions": 2
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 15.0,
-      "previous_avg": 10.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "national petroleum company",
@@ -73,22 +64,22 @@
       "previous_mentions": 5
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 16.2,
-      "previous_avg": 20.0,
-      "delta": -3.8,
-      "recent_mentions": 4,
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 13.3,
+      "previous_avg": 10.0,
+      "delta": 3.3,
+      "recent_mentions": 3,
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 28.0,
-      "delta": -3.0,
-      "recent_mentions": 19,
-      "previous_mentions": 5
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 15.0,
+      "previous_avg": 18.3,
+      "delta": -3.3,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "dangote refinery",
@@ -106,6 +97,24 @@
       "previous_avg": 20.0,
       "delta": 2.5,
       "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 25.3,
+      "previous_avg": 26.7,
+      "delta": -1.4,
+      "recent_mentions": 18,
+      "previous_mentions": 6
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "recent_avg": 31.2,
+      "previous_avg": 30.0,
+      "delta": 1.2,
+      "recent_mentions": 4,
       "previous_mentions": 1
     },
     {
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "institute of chartered accountants of",
-      "label": "Institute of Chartered Accountants of Nigeria",
-      "recent_avg": 35.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-22 20:06:36"
+  "generated": "2026-09-23 01:25:09"
 }
