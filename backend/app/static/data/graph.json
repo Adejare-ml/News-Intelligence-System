@@ -145,6 +145,12 @@
       "risk": "Low"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "f4b56dfe4bcb",
-      "label": "University of Ibadan",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
@@ -280,6 +280,12 @@
       "id": "bf698d54d6c5",
       "label": "Not Stated",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f4b56dfe4bcb",
+      "label": "University of Ibadan",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -655,12 +661,6 @@
       "risk": "Low"
     },
     {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "bcf9d1e3fc55",
       "label": "Nigerian Airspace Management Agency",
       "type": "agency",
@@ -681,18 +681,6 @@
     {
       "id": "f4ee2fd09975",
       "label": "Nigeria Airways (Pensioners)",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b2907b2dc23c",
-      "label": "Gateway Air",
       "type": "company",
       "risk": "Low"
     }
@@ -927,6 +915,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "9aaad96e9617",
+      "from": "334c4a4c42fd",
+      "to": "3a4a88456e84",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "14315671d3f7",
       "from": "334c4a4c42fd",
       "to": "635f6d07426b",
@@ -999,12 +993,6 @@
       "label": "Contract Awardee"
     },
     {
-      "id": "9aaad96e9617",
-      "from": "334c4a4c42fd",
-      "to": "3a4a88456e84",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "ad2aaf1f69f3",
       "from": "334c4a4c42fd",
       "to": "bcf9d1e3fc55",
@@ -1020,12 +1008,6 @@
       "id": "ec91b82a33b9",
       "from": "f4ee2fd09975",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "af6773ef4da1",
-      "from": "b2907b2dc23c",
-      "to": "7dc08a8ebfaa",
       "label": "Contract Awardee"
     }
   ]

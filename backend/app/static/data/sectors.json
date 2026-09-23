@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 975,
-      "mentions": 1677,
+      "companies": 973,
+      "mentions": 1674,
       "risk": {
-        "Low": 858,
+        "Low": 856,
         "Critical": 59,
         "Medium": 34,
         "High": 24
@@ -82,6 +82,14 @@
       }
     },
     {
+      "industry": "Telecoms",
+      "companies": 3,
+      "mentions": 4,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 2,
       "mentions": 3,
@@ -100,6 +108,14 @@
     },
     {
       "industry": "Legal",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Manufacturing",
       "companies": 1,
       "mentions": 3,
       "risk": {
@@ -128,6 +144,14 @@
       "mentions": 2,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Commerce",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -259,6 +283,14 @@
       }
     },
     {
+      "industry": "Philanthropy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Policy Research/Consultancy",
       "companies": 1,
       "mentions": 1,
@@ -289,23 +321,7 @@
       "risk": {
         "Medium": 1
       }
-    },
-    {
-      "industry": "Telecoms",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Trade Association",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
     }
   ],
-  "generated": "2026-09-23 12:37:13"
+  "generated": "2026-09-23 14:13:15"
 }

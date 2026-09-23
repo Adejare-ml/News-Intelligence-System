@@ -1,30 +1,20 @@
 {
   "new_companies": [
-    "Agusto & Co.",
-    "LemFi",
-    "Mutual Benefits"
+    "Bill & Melinda Gates Foundation",
+    "MTN Group Foundation"
   ],
-  "new_people": [
-    "Chukwu",
-    "Dr Haydar Daudu"
-  ],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "SPECIAL REPORT: Inside five international corruption cases involving Atiku, ex-wife - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYmFMUlUyYTlqbW5lMjZpd3ZOQk1pUHg1N1VxUXFGc3ZyRE55S2kxczQwUi1wMXY1TnJ3TkNSa0wtdWM1NERYV2hJeXRHQkJXYVdYZC1iUElBeml5aW5uVk5VYnFPWTVZNVN0Qk5tRUhyR1ROck82ZFJ3ZFB4ZVcyQnJFcV9GdUJCVjE2T0NWZzZPTUNqSWJrN1BIUDFfYVpVSzFiSzduZmlUSGJ6a0VCZnZUT3lDMUNsX3MzVTdGRXZNLUpqSzdPb0FWWnZ0SVpBM2xQOG5n?oc=5",
-      "risk": 85.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 2,
+    "new_companies": 2,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-23 12:37:06"
+  "generated": "2026-09-23 14:13:09"
 }

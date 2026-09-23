@@ -21,10 +21,10 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 14.4,
+      "recent_avg": 15.0,
       "previous_avg": 30.0,
-      "delta": -15.6,
-      "recent_mentions": 9,
+      "delta": -15.0,
+      "recent_mentions": 10,
       "previous_mentions": 2
     },
     {
@@ -35,15 +35,6 @@
       "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "recent_avg": 30.0,
-      "previous_avg": 20.0,
-      "delta": 10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 5
     },
     {
       "key": "federal government of",
@@ -62,15 +53,6 @@
       "delta": 9.2,
       "recent_mentions": 10,
       "previous_mentions": 12
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "recent_avg": 32.5,
-      "previous_avg": 40.0,
-      "delta": -7.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "lagos state government",
@@ -98,6 +80,15 @@
       "delta": 4.0,
       "recent_mentions": 5,
       "previous_mentions": 1
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "recent_avg": 43.3,
+      "previous_avg": 40.0,
+      "delta": 3.3,
+      "recent_mentions": 3,
+      "previous_mentions": 2
     },
     {
       "key": "maritime administration and safety agency",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "federation of construction industry",
+      "label": "Federation of Construction Industry",
+      "recent_avg": 30.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-23 12:37:13"
+  "generated": "2026-09-23 14:13:15"
 }
