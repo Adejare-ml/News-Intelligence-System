@@ -174,7 +174,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 5,
+      "total_mentions": 6,
       "points": [
         {
           "week": "2026-09-14",
@@ -184,8 +184,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 13.3,
+          "mentions": 4,
+          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -366,6 +366,25 @@
           "mentions": 3,
           "avg_risk": 58.3,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -737,19 +756,6 @@
       ]
     },
     {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "toyin abraham",
       "label": "Toyin Abraham",
       "total_mentions": 2,
@@ -783,6 +789,19 @@
         {
           "week": "2026-09-14",
           "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "amni",
+      "label": "AMNI",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -886,6 +905,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "al hikmah university",
+      "label": "Al-Hikmah University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -1530,6 +1562,19 @@
       ]
     },
     {
+      "key": "ima gas project",
+      "label": "Ima Gas Project",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "total_mentions": 1,
@@ -1647,6 +1692,19 @@
       ]
     },
     {
+      "key": "kwara state government",
+      "label": "Kwara State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "lagos state consumer protection agency",
       "label": "Lagos State Consumer Protection Agency",
       "total_mentions": 1,
@@ -1747,6 +1805,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "magdalene health wellness research technology sport city",
+      "label": "Magdalene Health, Wellness, Research, Technology & Sport City",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2531,6 +2602,19 @@
       ]
     },
     {
+      "key": "teachers council",
+      "label": "Teachers' Council",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "tertiary education trust fund",
       "label": "Tertiary Education Trust Fund",
       "total_mentions": 1,
@@ -2635,5 +2719,5 @@
       ]
     }
   ],
-  "generated": "2026-09-23 14:13:15"
+  "generated": "2026-09-23 17:42:56"
 }

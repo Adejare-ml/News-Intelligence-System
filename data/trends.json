@@ -1,19 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 161,
-  "previous_articles": 167,
+  "recent_articles": 162,
+  "previous_articles": 169,
   "rising": [
     {
       "term": "mambilla",
-      "recent": 10,
+      "recent": 11,
       "previous": 0,
-      "change": 10
-    },
-    {
-      "term": "nigeria\u2019s",
-      "recent": 14,
-      "previous": 7,
-      "change": 7
+      "change": 11
     },
     {
       "term": "icc",
@@ -22,15 +16,27 @@
       "change": 7
     },
     {
-      "term": "report",
+      "term": "investment",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 14,
+      "previous": 8,
+      "change": 6
+    },
+    {
+      "term": "project",
       "recent": 7,
       "previous": 1,
       "change": 6
     },
     {
-      "term": "investment",
-      "recent": 6,
-      "previous": 0,
+      "term": "report",
+      "recent": 7,
+      "previous": 1,
       "change": 6
     },
     {
@@ -56,61 +62,55 @@
       "recent": 31,
       "previous": 26,
       "change": 5
-    },
-    {
-      "term": "cbn",
-      "recent": 9,
-      "previous": 4,
-      "change": 5
     }
   ],
   "falling": [
     {
-      "term": "newspapers",
-      "recent": 23,
-      "previous": 30,
-      "change": -7
-    },
-    {
       "term": "dangote",
-      "recent": 7,
-      "previous": 14,
-      "change": -7
-    },
-    {
-      "term": "punch",
-      "recent": 23,
-      "previous": 29,
-      "change": -6
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 23,
-      "previous": 29,
-      "change": -6
+      "recent": 6,
+      "previous": 15,
+      "change": -9
     },
     {
       "term": "ipo",
-      "recent": 4,
-      "previous": 10,
-      "change": -6
+      "recent": 3,
+      "previous": 11,
+      "change": -8
     },
     {
       "term": "beneficial",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
+      "recent": 0,
+      "previous": 8,
+      "change": -8
     },
     {
       "term": "beneficial ownership",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
+      "recent": 0,
+      "previous": 8,
+      "change": -8
     },
     {
       "term": "ownership",
-      "recent": 1,
+      "recent": 0,
+      "previous": 8,
+      "change": -8
+    },
+    {
+      "term": "cac",
+      "recent": 0,
       "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "newspapers",
+      "recent": 23,
+      "previous": 29,
+      "change": -6
+    },
+    {
+      "term": "targets",
+      "recent": 2,
+      "previous": 8,
       "change": -6
     },
     {
@@ -120,9 +120,9 @@
       "change": -6
     },
     {
-      "term": "cac",
-      "recent": 1,
-      "previous": 6,
+      "term": "punch",
+      "recent": 23,
+      "previous": 28,
       "change": -5
     }
   ],
@@ -130,7 +130,7 @@
     {
       "category": "Government",
       "recent": 111,
-      "previous": 109
+      "previous": 111
     },
     {
       "category": "Legal",
@@ -139,10 +139,10 @@
     },
     {
       "category": "Company",
-      "recent": 24,
+      "recent": 25,
       "previous": 40
     }
   ],
   "social": [],
-  "generated": "2026-09-23 14:13:13"
+  "generated": "2026-09-23 17:42:54"
 }

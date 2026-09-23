@@ -1,92 +1,92 @@
 {
-  "generated": "2026-09-23 14:13:12",
+  "generated": "2026-09-23 17:42:54",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 2925,
+      "likes": 3001,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 1946,
+      "likes": 1979,
       "downloads": 28407
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 1920,
+      "likes": 1930,
       "downloads": 2815979
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1446,
+      "likes": 1488,
       "downloads": 39009
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1340,
+      "likes": 1390,
       "downloads": 350678
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
       "task": "image-text-to-text",
-      "likes": 3649,
+      "likes": 3656,
       "downloads": 570909
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 608,
+      "likes": 614,
       "downloads": 2220609
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16113,
+      "likes": 16119,
       "downloads": 6912469
     }
   ],
   "papers": [
     {
+      "title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
+      "url": "https://huggingface.co/papers/2609.06011",
+      "upvotes": 1
+    },
+    {
       "title": "Embedding Physics Priors in Robot Learning: A Survey",
       "url": "https://huggingface.co/papers/2609.22319",
-      "upvotes": 0
+      "upvotes": 1
     },
     {
       "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
       "url": "https://huggingface.co/papers/2609.26781",
-      "upvotes": 5
+      "upvotes": 7
     },
     {
       "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
       "url": "https://huggingface.co/papers/2609.26550",
-      "upvotes": 2
+      "upvotes": 12
     },
     {
       "title": "LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay",
       "url": "https://huggingface.co/papers/2609.25053",
-      "upvotes": 0
+      "upvotes": 3
     },
     {
       "title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
       "url": "https://huggingface.co/papers/2609.25636",
-      "upvotes": 2
-    },
-    {
-      "title": "Blaming Across the Aisle: Political Contrasting and Blame Attribution in the Danish Parliament",
-      "url": "https://huggingface.co/papers/2609.26346",
       "upvotes": 4
     }
   ]
