@@ -1,24 +1,26 @@
 {
   "new_companies": [
-    "Mango Business"
+    "Prudential Africa Services Limited",
+    "Prudential Zenith Life Insurance Limited"
   ],
   "new_people": [],
-  "psc_added": [
-    {
-      "person": "Sadio Mane\u0301",
-      "company": "Mango Business"
-    }
-  ],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "61 Nigerian officials linked to $271 million US property holdings -Report - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcWFHcFpTT0wydEJPQVhCbHRBYWx5TUhfRnc2V1hLRkU5SnN2WG10RVF2Zi03WVJhb2t1eVVqN2ptVjMyS2I5a2hwbkl0TzVuMFF1b0NEQjQ4SUVfRE5lbE9FbWJ1MlhJbzhPLVBaQnBEU3pDSkVlYjZ3RG02R3RIaW5pS1BINi15UkVRQjlpeGNSdHp5N2pjeVc3NjNDM2RwV1podFU3Sk1BaFAtalhQZll4b09Fak9rZm9qb3JfR1BkM2tPbW9zdg?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
-    "new_companies": 1,
+    "new_companies": 2,
     "new_people": 0,
-    "psc_added": 1,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-09-22 20:06:32"
+  "generated": "2026-09-23 01:25:05"
 }

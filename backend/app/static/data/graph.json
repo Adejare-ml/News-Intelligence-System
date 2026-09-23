@@ -85,16 +85,16 @@
       "risk": "Critical"
     },
     {
-      "id": "81dcb233ede4",
-      "label": "Tinubu",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "01ccce37119e",
       "label": "Dangote Petroleum Refinery",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "81dcb233ede4",
+      "label": "Tinubu",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "2a77f31e67e8",
@@ -127,6 +127,30 @@
       "risk": "Low"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ac79f04a4e30",
+      "label": "Kano State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -135,12 +159,6 @@
     {
       "id": "631735ae7f74",
       "label": "Nigeria Police Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -219,24 +237,6 @@
     {
       "id": "e5c0e655148a",
       "label": "Nigerian Civil Aviation Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0b2ac17f47f4",
-      "label": "Lagos State Waste Management Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -927,6 +927,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "5b569ce39252",
+      "from": "334c4a4c42fd",
+      "to": "6843b615b76a",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "2e196c488907",
       "from": "334c4a4c42fd",
       "to": "09b648436789",
@@ -1020,12 +1026,6 @@
       "id": "d19a20dc656e",
       "from": "f5e16be1446b",
       "to": "1336530dfec0",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "df311b7e567c",
-      "from": "334c4a4c42fd",
-      "to": "ebba2aef82e9",
       "label": "Contract Awardee"
     }
   ]

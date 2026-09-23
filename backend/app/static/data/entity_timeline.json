@@ -64,28 +64,9 @@
       ]
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 24.4,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 9,
+      "total_mentions": 11,
       "points": [
         {
           "week": "2026-09-07",
@@ -101,9 +82,28 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "mentions": 4,
+          "avg_risk": 12.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 24.4,
+          "max_risk": 30
         }
       ]
     },
@@ -147,6 +147,25 @@
       ]
     },
     {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 5,
@@ -160,25 +179,6 @@
       ]
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -188,6 +188,25 @@
           "mentions": 4,
           "avg_risk": 63.8,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -246,25 +265,6 @@
           "mentions": 3,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -1116,6 +1116,19 @@
       ]
     },
     {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "federal civil service",
       "label": "Federal Civil Service",
       "total_mentions": 1,
@@ -1441,6 +1454,19 @@
       ]
     },
     {
+      "key": "kano state government",
+      "label": "Kano State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "keystone bank",
       "label": "Keystone Bank",
       "total_mentions": 1,
@@ -1733,6 +1759,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -2117,6 +2156,32 @@
       ]
     },
     {
+      "key": "prudential africa services",
+      "label": "Prudential Africa Services Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "prudential zenith life insurance",
+      "label": "Prudential Zenith Life Insurance Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "qed investors",
       "label": "QED Investors",
       "total_mentions": 1,
@@ -2390,5 +2455,5 @@
       ]
     }
   ],
-  "generated": "2026-09-22 20:06:36"
+  "generated": "2026-09-23 01:25:09"
 }
