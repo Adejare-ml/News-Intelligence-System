@@ -1349,6 +1349,45 @@ def export_static_json_database():
     except Exception as exc:  # pragma: no cover - defensive
         logger.warning(f"FX export skipped: {exc}")
 
+    # News-center verticals (Package 30): world/culture headlines, market
+    # quotes with daily history, HF trending models + papers. All keyless,
+    # all outside the LLM pipeline, all best-effort; a dead source shrinks
+    # its section rather than failing the run or blanking the previous file.
+    try:
+        from backend.app.services.verticals import build_world_now
+        world = build_world_now()
+        if world.get("world") or world.get("culture"):
+            with open(os.path.join(DATA_DIR, "world_now.json"), "w", encoding="utf-8") as f:
+                json.dump(world, f, default=str, indent=2)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"World-now export skipped: {exc}")
+
+    try:
+        from backend.app.services.verticals import fetch_market_rates, merge_market_history
+        markets_path = os.path.join(DATA_DIR, "markets.json")
+        existing_markets = None
+        if os.path.exists(markets_path):
+            try:
+                with open(markets_path, encoding="utf-8") as f:
+                    existing_markets = json.load(f)
+            except Exception:
+                existing_markets = None
+        markets = merge_market_history(existing_markets, fetch_market_rates(), datetime.now())
+        if markets:
+            with open(markets_path, "w", encoding="utf-8") as f:
+                json.dump(markets, f, default=str, indent=2)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Markets export skipped: {exc}")
+
+    try:
+        from backend.app.services.verticals import build_ai_pulse
+        pulse = build_ai_pulse()
+        if pulse.get("models") or pulse.get("papers"):
+            with open(os.path.join(DATA_DIR, "ai_pulse.json"), "w", encoding="utf-8") as f:
+                json.dump(pulse, f, default=str, indent=2)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"AI-pulse export skipped: {exc}")
+
     try:
         from backend.app.services.trends import compute_trends, fetch_reddit_nigeria
         trends = compute_trends(articles)

@@ -357,5 +357,78 @@
         });
     });
 
+    T.describe("news center: markets", function () {
+        var M = { latest: { spx: 6481.5, brent: 67.25, btc: 112405.33 },
+                  history: [
+                    { date: "2026-09-22", spx: 6450.0, brent: 66.5, btc: 111000 },
+                    { date: "2026-09-23", spx: 6481.5, brent: 67.25, btc: 112405.33 }
+                  ] };
+        T.it("rows carry labels, prefixes and deltas; unknown keys drop", function () {
+            var m = I.marketsSummary(M);
+            T.eq(m.rows.length, 3);
+            T.eq(m.rows[0].label, "S&P 500");
+            T.eq(m.rows[0].delta, 0.5);
+            T.eq(m.rows[1].prefix, "$");
+            T.eq(m.spxSeries.length, 2);
+        });
+        T.it("renders quotes with an S&P sparkline", function () {
+            var html = I.renderMarketsHTML(I.marketsSummary(M));
+            T.contains(html, "S&amp;P 500 6,481.5");
+            T.contains(html, "Bitcoin $112,405.33");
+            T.contains(html, "polyline");
+            T.contains(html, "mover-up");
+        });
+        T.it("absent file hides the column", function () {
+            T.eq(I.marketsSummary(null), null);
+            T.eq(I.marketsSummary({ latest: {} }), null);
+        });
+    });
+
+    T.describe("news center: world now", function () {
+        var W = { generated: "2026-09-23 08:00:00",
+                  world: [{ title: "Ceasefire talks resume", url: "https://x.test/w",
+                            source: "Reuters" },
+                          { title: "", url: "https://x.test/blank" }],
+                  culture: [{ title: "Lagos fashion week lineup", url: "https://x.test/c",
+                              source: "Vogue" }] };
+        T.it("sections clean blanks and render as linked groups", function () {
+            var s = I.worldSummary(W);
+            T.eq(s.world.length, 1);
+            T.eq(s.culture.length, 1);
+            var html = I.renderWorldHTML(s);
+            T.contains(html, "Ceasefire talks resume");
+            T.contains(html, "Culture &amp; fashion");
+            T.contains(html, 'href="https://x.test/c"');
+        });
+        T.it("escapes hostile titles", function () {
+            var s = I.worldSummary({ world: [{ title: "<img src=x>", url: "https://x.test/e" }] });
+            T.excludes(I.renderWorldHTML(s), "<img src=x>");
+        });
+        T.it("empty payload hides the panel", function () {
+            T.eq(I.worldSummary(null), null);
+            T.eq(I.worldSummary({ world: [], culture: [] }), null);
+        });
+    });
+
+    T.describe("news center: ai pulse", function () {
+        var P = { generated: "2026-09-23 08:00:00",
+                  models: [{ id: "Qwen/Qwen3.8-27B", url: "https://huggingface.co/Qwen/Qwen3.8-27B",
+                             task: "image-text-to-text", likes: 16103, downloads: 6912469 }],
+                  papers: [{ title: "Ternary Scaling Laws",
+                             url: "https://huggingface.co/papers/2609.01234", upvotes: 87 }] };
+        T.it("models show compact download/like counts", function () {
+            var html = I.renderAiPulseHTML(I.aiPulseSummary(P));
+            T.contains(html, "Qwen/Qwen3.8-27B");
+            T.contains(html, "6.9M downloads");
+            T.contains(html, "16.1k likes");
+            T.contains(html, "Ternary Scaling Laws");
+            T.contains(html, "▲ 87");
+        });
+        T.it("either section alone justifies the panel; neither hides it", function () {
+            T.ok(I.aiPulseSummary({ models: P.models, papers: [] }), "models alone");
+            T.eq(I.aiPulseSummary({ models: [], papers: [] }), null);
+        });
+    });
+
     T.report();
 })();
