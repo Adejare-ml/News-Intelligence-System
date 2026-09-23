@@ -547,6 +547,142 @@
         return html;
     }
 
+    var MARKET_LABELS = [
+        ["spx", "S&P 500", ""], ["ndx", "Nasdaq 100", ""],
+        ["brent", "Brent", "$"], ["gold", "Gold", "$"], ["btc", "Bitcoin", "$"]
+    ];
+
+    /** markets.json -> quote rows with day deltas + an S&P sparkline. */
+    function marketsSummary(markets, sparkDays) {
+        if (!markets || !markets.latest) return null;
+        var history = Array.isArray(markets.history) ? markets.history : [];
+        var rows = [];
+        MARKET_LABELS.forEach(function (spec) {
+            var key = spec[0];
+            var value = markets.latest[key];
+            if (typeof value !== "number") return;
+            var series = history.map(function (p) { return p[key]; })
+                .filter(function (v) { return typeof v === "number"; });
+            var delta = null;
+            if (series.length >= 2 && series[series.length - 2]) {
+                delta = Math.round(1000 * (series[series.length - 1] - series[series.length - 2])
+                    / series[series.length - 2]) / 10;
+            }
+            rows.push({ key: key, label: spec[1], prefix: spec[2],
+                        value: value, delta: delta });
+        });
+        if (!rows.length) return null;
+        var spx = history.map(function (p) { return p.spx; })
+            .filter(function (v) { return typeof v === "number"; })
+            .slice(-(sparkDays || 30));
+        var date = history.length
+            ? String(history[history.length - 1].date || "").slice(0, 10) : "";
+        return { rows: rows, spxSeries: spx, date: date };
+    }
+
+    function renderMarketsHTML(model) {
+        var html = "<ul class=\"signal-list\">" + model.rows.map(function (r) {
+            var delta = "";
+            if (r.delta !== null) {
+                var cls = r.delta > 0 ? "mover-up" : (r.delta < 0 ? "mover-down" : "mover-new");
+                var sign = r.delta > 0 ? "▲" : (r.delta < 0 ? "▼" : "");
+                delta = '<span class="mover-delta ' + cls + '">' + sign + " "
+                    + Math.abs(r.delta) + "%</span>";
+            }
+            return "<li><span class=\"signal-label\">" + esc(r.label) + " "
+                + esc(r.prefix) + r.value.toLocaleString("en-US", { maximumFractionDigits: 2 })
+                + "</span>" + delta + "</li>";
+        }).join("") + "</ul>";
+        html += sparklineSVG(model.spxSeries);
+        if (model.date) {
+            html += '<p class="signal-footnote">S&amp;P sparkline · as of '
+                + esc(model.date) + "</p>";
+        }
+        return html;
+    }
+
+    /** Shared renderer for headline-list groups (world/culture). */
+    function headlineGroupHTML(label, items) {
+        if (!items || !items.length) return "";
+        return '<div class="insight-group"><h3>' + esc(label) + "</h3><ul>"
+            + items.map(function (item) {
+                return '<li><a class="report-link" rel="noopener noreferrer" target="_blank" href="'
+                    + esc(item.url) + '">' + esc(item.title) + "</a>"
+                    + (item.source ? ' <span class="insight-count">' + esc(item.source) + "</span>" : "")
+                    + "</li>";
+            }).join("") + "</ul></div>";
+    }
+
+    /** world_now.json -> {world, culture, generated} or null. */
+    function worldSummary(payload, cap) {
+        if (!payload) return null;
+        function clean(list) {
+            return (list || []).filter(function (item) {
+                return item && String(item.title || "").trim()
+                    && String(item.url || "").indexOf("http") === 0;
+            }).slice(0, cap || 8);
+        }
+        var world = clean(payload.world);
+        var culture = clean(payload.culture);
+        if (!world.length && !culture.length) return null;
+        return { world: world, culture: culture,
+                 generated: String(payload.generated || "") };
+    }
+
+    function renderWorldHTML(summary) {
+        return headlineGroupHTML("World", summary.world)
+            + headlineGroupHTML("Culture & fashion", summary.culture);
+    }
+
+    /** ai_pulse.json -> {models, papers, generated} or null. */
+    function aiPulseSummary(payload, cap) {
+        if (!payload) return null;
+        var models = (payload.models || []).filter(function (m) {
+            return m && String(m.id || "").trim();
+        }).slice(0, cap || 8);
+        var papers = (payload.papers || []).filter(function (p) {
+            return p && String(p.title || "").trim()
+                && String(p.url || "").indexOf("http") === 0;
+        }).slice(0, cap || 8);
+        if (!models.length && !papers.length) return null;
+        return { models: models, papers: papers,
+                 generated: String(payload.generated || "") };
+    }
+
+    function compactCount(value) {
+        var n = typeof value === "number" ? value : 0;
+        if (n >= 1e6) return (Math.round(n / 1e5) / 10) + "M";
+        if (n >= 1e3) return (Math.round(n / 100) / 10) + "k";
+        return String(n);
+    }
+
+    function renderAiPulseHTML(summary) {
+        var html = "";
+        if (summary.models.length) {
+            html += '<div class="insight-group"><h3>Trending models</h3><ul>'
+                + summary.models.map(function (m) {
+                    var meta = [];
+                    if (m.task) meta.push(m.task);
+                    if (m.downloads) meta.push(compactCount(m.downloads) + " downloads");
+                    if (m.likes) meta.push(compactCount(m.likes) + " likes");
+                    return '<li><a class="report-link" rel="noopener noreferrer" target="_blank" href="'
+                        + esc(m.url) + '">' + esc(m.id) + "</a>"
+                        + (meta.length ? ' <span class="insight-count">' + esc(meta.join(" · ")) + "</span>" : "")
+                        + "</li>";
+                }).join("") + "</ul></div>";
+        }
+        if (summary.papers.length) {
+            html += '<div class="insight-group"><h3>Daily papers</h3><ul>'
+                + summary.papers.map(function (p) {
+                    return '<li><a class="report-link" rel="noopener noreferrer" target="_blank" href="'
+                        + esc(p.url) + '">' + esc(p.title) + "</a>"
+                        + (p.upvotes ? ' <span class="insight-count">▲ ' + p.upvotes + "</span>" : "")
+                        + "</li>";
+                }).join("") + "</ul></div>";
+        }
+        return html;
+    }
+
     /**
      * reports.json -> "what AURA logged 30/90 days ago", nearest run day
      * within ±3 days of each offset. Rows only for offsets the archive
@@ -643,6 +779,36 @@
             });
         }
 
+        var worldPanel = doc.getElementById("world-now-panel");
+        if (worldPanel && typeof global.fetch === "function") {
+            D.get("world_now.json")
+                .then(function (payload) {
+                    var summary = worldSummary(payload);
+                    if (!summary) return; // stays hidden
+                    var body = doc.getElementById("world-now-body");
+                    if (!body) return;
+                    body.innerHTML = renderWorldHTML(summary);
+                    var stamp = doc.getElementById("world-now-generated");
+                    if (stamp && summary.generated) stamp.textContent = "as of " + summary.generated;
+                    worldPanel.hidden = false;
+                });
+        }
+
+        var pulsePanel = doc.getElementById("ai-pulse-panel");
+        if (pulsePanel && typeof global.fetch === "function") {
+            D.get("ai_pulse.json")
+                .then(function (payload) {
+                    var summary = aiPulseSummary(payload);
+                    if (!summary) return; // stays hidden
+                    var body = doc.getElementById("ai-pulse-body");
+                    if (!body) return;
+                    body.innerHTML = renderAiPulseHTML(summary);
+                    var stamp = doc.getElementById("ai-pulse-generated");
+                    if (stamp && summary.generated) stamp.textContent = "as of " + summary.generated;
+                    pulsePanel.hidden = false;
+                });
+        }
+
         var techPanel = doc.getElementById("tech-news-panel");
         if (techPanel && typeof global.fetch === "function") {
             D.get("tech_news.json")
@@ -683,14 +849,16 @@
                 D.get("sectors.json"),
                 D.get("sources.json"),
                 D.get("fx.json"),
-                D.getList("reports.json")
+                D.getList("reports.json"),
+                D.get("markets.json")
             ]).then(function (results) {
                 var movers = moversSummary(results[0], 6);
                 var sectors = sectorsSummary(results[1], 6);
                 var sources = sourcesSummary(results[2], 6);
                 var fx = fxSummary(results[3]);
                 var retro = retrospective(results[4], new Date());
-                if (!movers && !sectors && !sources && !fx && !retro) return; // stays hidden
+                var markets = marketsSummary(results[5]);
+                if (!movers && !sectors && !sources && !fx && !retro && !markets) return; // stays hidden
 
                 function fill(colId, bodyId, html) {
                     var col = doc.getElementById(colId);
@@ -707,6 +875,8 @@
                     sources && renderSourcesHTML(sources));
                 fill("signals-fx", "signals-fx-body",
                     fx && renderFxHTML(fx));
+                fill("signals-markets", "signals-markets-body",
+                    markets && renderMarketsHTML(markets));
                 fill("signals-retro", "signals-retro-body",
                     retro && renderRetroHTML(retro));
                 var note = doc.getElementById("signals-note");
@@ -822,6 +992,12 @@
         renderSourcesHTML: renderSourcesHTML,
         fxSummary: fxSummary,
         renderFxHTML: renderFxHTML,
+        marketsSummary: marketsSummary,
+        renderMarketsHTML: renderMarketsHTML,
+        worldSummary: worldSummary,
+        renderWorldHTML: renderWorldHTML,
+        aiPulseSummary: aiPulseSummary,
+        renderAiPulseHTML: renderAiPulseHTML,
         retrospective: retrospective,
         renderRetroHTML: renderRetroHTML,
         esc: esc
