@@ -28,7 +28,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 22,
+      "total_mentions": 23,
       "points": [
         {
           "week": "2026-09-07",
@@ -41,13 +41,19 @@
           "mentions": 21,
           "avg_risk": 40.5,
           "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 12,
+      "total_mentions": 13,
       "points": [
         {
           "week": "2026-09-07",
@@ -63,8 +69,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 14.0,
+          "mentions": 6,
+          "avg_risk": 14.2,
           "max_risk": 20
         }
       ]
@@ -306,6 +312,25 @@
       ]
     },
     {
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 3,
@@ -533,25 +558,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "lagos chamber of commerce and industry",
-      "label": "Lagos Chamber of Commerce and Industry",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1289,6 +1295,19 @@
       ]
     },
     {
+      "key": "european union",
+      "label": "European Union",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "federal civil service",
       "label": "Federal Civil Service",
       "total_mentions": 1,
@@ -1822,6 +1841,19 @@
       ]
     },
     {
+      "key": "maina",
+      "label": "Maina",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 1,
@@ -2290,6 +2322,19 @@
       ]
     },
     {
+      "key": "nyesom wike",
+      "label": "Nyesom Wike",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        }
+      ]
+    },
+    {
       "key": "opl 245",
       "label": "OPL 245",
       "total_mentions": 1,
@@ -2719,5 +2764,5 @@
       ]
     }
   ],
-  "generated": "2026-09-23 17:42:56"
+  "generated": "2026-09-23 20:03:52"
 }

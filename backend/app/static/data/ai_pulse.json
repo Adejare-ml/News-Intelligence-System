@@ -1,68 +1,68 @@
 {
-  "generated": "2026-09-23 17:42:54",
+  "generated": "2026-09-23 20:03:38",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3001,
+      "likes": 3042,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 1979,
+      "likes": 1994,
       "downloads": 28407
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 1930,
+      "likes": 1942,
       "downloads": 2815979
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1488,
+      "likes": 1522,
       "downloads": 39009
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1390,
+      "likes": 1411,
       "downloads": 350678
-    },
-    {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "task": "image-text-to-text",
-      "likes": 3656,
-      "downloads": 570909
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 614,
+      "likes": 619,
       "downloads": 2220609
     },
     {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
       "task": "image-text-to-text",
-      "likes": 16119,
-      "downloads": 6912469
+      "likes": 3662,
+      "downloads": 570909
+    },
+    {
+      "id": "Altworld/Hemmingway-1",
+      "url": "https://huggingface.co/Altworld/Hemmingway-1",
+      "task": "text-generation",
+      "likes": 568,
+      "downloads": 3787
     }
   ],
   "papers": [
     {
       "title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
       "url": "https://huggingface.co/papers/2609.06011",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Embedding Physics Priors in Robot Learning: A Survey",
@@ -72,12 +72,12 @@
     {
       "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
       "url": "https://huggingface.co/papers/2609.26781",
-      "upvotes": 7
+      "upvotes": 9
     },
     {
       "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
       "url": "https://huggingface.co/papers/2609.26550",
-      "upvotes": 12
+      "upvotes": 16
     },
     {
       "title": "LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay",

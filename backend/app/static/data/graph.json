@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -193,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "478418814097",
+      "label": "European Union",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "09b648436789",
-      "label": "NIGCOMSAT",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9b023d5d7736",
-      "label": "Office of the Attorney General of the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
@@ -273,6 +273,30 @@
     {
       "id": "112a7950db44",
       "label": "SUNU Assurances",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "55bcb5b22e12",
+      "label": "Maina",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "12070a26f21b",
+      "label": "National Housing Fund",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "56a1ac14d764",
+      "label": "Nyesom Wike",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "65c6471e588e",
+      "label": "Federal Ministry of the Federal Capital Territory",
       "type": "company",
       "risk": "Low"
     },
@@ -457,39 +481,9 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "1252813a4034",
       "label": "Sarah Boulos",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "edee81c488aa",
-      "label": "Richard Madiebo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "48ace6b8e7ff",
-      "label": "Fidelity Bank plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "407e67278933",
-      "label": "Akinshola Samuel Akinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "65da5ae7f7a4",
-      "label": "Lifteller",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -619,6 +613,12 @@
       "risk": "Medium"
     },
     {
+      "id": "09b648436789",
+      "label": "NIGCOMSAT",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "497dc3c9a500",
       "label": "United States Government/Manufacturer",
       "type": "company",
@@ -703,6 +703,18 @@
       "from": "5b3edd2f164d",
       "to": "112a7950db44",
       "label": "Appointed as Director"
+    },
+    {
+      "id": "f8f3518fdb01",
+      "from": "55bcb5b22e12",
+      "to": "12070a26f21b",
+      "label": "Appointed as Former Head of National Housing Fund"
+    },
+    {
+      "id": "3d55aef0137e",
+      "from": "56a1ac14d764",
+      "to": "65c6471e588e",
+      "label": "Appointed as Minister"
     },
     {
       "id": "3734b9c3ff9b",
@@ -823,18 +835,6 @@
       "from": "1252813a4034",
       "to": "ebe2d81e3981",
       "label": "Appointed as President"
-    },
-    {
-      "id": "a8a43670e664",
-      "from": "edee81c488aa",
-      "to": "48ace6b8e7ff",
-      "label": "Appointed as General Manager"
-    },
-    {
-      "id": "52bddb08d6f8",
-      "from": "407e67278933",
-      "to": "65da5ae7f7a4",
-      "label": "Appointed as MD/CEO"
     },
     {
       "id": "bacdbeb20944",
