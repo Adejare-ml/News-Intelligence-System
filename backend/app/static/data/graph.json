@@ -181,6 +181,18 @@
       "risk": "Low"
     },
     {
+      "id": "fd51cf046ee8",
+      "label": "Teachers' Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0cfa03e45d4d",
+      "label": "Kwara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "9b023d5d7736",
       "label": "Office of the Attorney General of the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "aab42ed8cb86",
-      "label": "Bauchi State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bc834e20dea3",
-      "label": "Nigerian Ports Processing Authority",
       "type": "agency",
       "risk": "Low"
     },

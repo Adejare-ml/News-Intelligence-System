@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 7,
-      "mentions": 71,
+      "companies": 9,
+      "mentions": 74,
       "risk": {
         "Medium": 3,
-        "Low": 3,
+        "Low": 5,
         "High": 1
       }
     },
@@ -155,6 +155,14 @@
       }
     },
     {
+      "industry": "Education",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Legal/Arbitration",
       "companies": 1,
       "mentions": 2,
@@ -219,14 +227,6 @@
       }
     },
     {
-      "industry": "Education",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Fintech/Banking",
       "companies": 1,
       "mentions": 1,
@@ -236,6 +236,14 @@
     },
     {
       "industry": "Fintech/Social Impact",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare & Technology",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -323,5 +331,5 @@
       }
     }
   ],
-  "generated": "2026-09-23 14:13:15"
+  "generated": "2026-09-23 17:42:56"
 }

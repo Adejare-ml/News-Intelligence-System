@@ -886,17 +886,17 @@
     },
     {
       "date": "2026-09-23",
-      "runs": 3,
-      "articles": 24,
+      "runs": 4,
+      "articles": 30,
       "high_risk": 2,
       "appointments": 3,
       "procurement": 3,
       "cascade_failures": 0,
-      "candidates": 3167,
-      "rejected": 44,
+      "candidates": 4227,
+      "rejected": 58,
       "undated": 0,
-      "run_seconds": 500
+      "run_seconds": 641
     }
   ],
-  "generated": "2026-09-23 14:13:15"
+  "generated": "2026-09-23 17:42:56"
 }
