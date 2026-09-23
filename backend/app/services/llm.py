@@ -10,8 +10,10 @@ logger = logging.getLogger(__name__)
 
 # Valid NVIDIA NIM model IDs (vendor/model format). Overridable via
 # NVIDIA_MODEL / NVIDIA_MODEL_FALLBACK; blank env values resolve to these.
-DEFAULT_NVIDIA_MODEL = "meta/llama-3.1-70b-instruct"
-DEFAULT_NVIDIA_MODEL_FALLBACK = "meta/llama-3.1-8b-instruct"
+# llama-3.1 hit NIM end-of-life on 2026-08-26: every report fallback
+# returned HTTP 410 Gone until this default moved to a live model.
+DEFAULT_NVIDIA_MODEL = "meta/llama-3.3-70b-instruct"
+DEFAULT_NVIDIA_MODEL_FALLBACK = "meta/llama-3.2-3b-instruct"
 
 # Rolling alias that tracks Google's current flash model. Pinned model names
 # (e.g. gemini-2.5-flash) get retired for new users and start returning 404;
