@@ -72,7 +72,10 @@ def build_world_now(cap: int = 10) -> Dict[str, Any]:
 # Stooq symbols -> export keys. ^spx S&P 500, ^ndx Nasdaq 100,
 # cb.f Brent crude, gc.f gold. All keyless CSV.
 STOOQ_SYMBOLS = {"^spx": "spx", "^ndx": "ndx", "cb.f": "brent", "gc.f": "gold"}
-STOOQ_URL = ("https://stooq.com/q/l/?s=" + ",".join(STOOQ_SYMBOLS)
+# The caret in index symbols must be percent-encoded: the raw character
+# made Stooq answer 404 on the first production run (2026-09-23 14:13).
+STOOQ_URL = ("https://stooq.com/q/l/?s="
+             + requests.utils.quote(",".join(STOOQ_SYMBOLS), safe=",.")
              + "&f=sd2t2ohlcv&h&e=csv")
 COINGECKO_URL = ("https://api.coingecko.com/api/v3/simple/price"
                  "?ids=bitcoin&vs_currencies=usd")
