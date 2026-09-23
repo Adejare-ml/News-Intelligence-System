@@ -1228,5 +1228,15 @@
     "Date": "2026-09-23",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Korea International Cooperation Agency",
+    "Contractor": "None",
+    "Amount": "$82.74 million",
+    "Project": "Nigeria portfolio for agriculture and job creation support",
+    "Source": "Vanguard News",
+    "Date": "2026-09-23",
+    "Amount Value": 82740000.0,
+    "Amount Currency": "USD"
   }
 ]

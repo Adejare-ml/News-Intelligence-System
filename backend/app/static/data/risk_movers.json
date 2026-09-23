@@ -28,13 +28,31 @@
       "previous_mentions": 2
     },
     {
-      "key": "exchange",
-      "label": "Nigerian Exchange Group",
-      "recent_avg": 15.0,
-      "previous_avg": 30.0,
-      "delta": -15.0,
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "recent_avg": 85.0,
+      "previous_avg": 75.0,
+      "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "recent_avg": 30.0,
+      "previous_avg": 20.0,
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 22.9,
+      "previous_avg": 32.1,
+      "delta": -9.2,
+      "recent_mentions": 17,
+      "previous_mentions": 7
     },
     {
       "key": "economic and financial crimes commission",
@@ -55,6 +73,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 15.0,
+      "previous_avg": 10.0,
+      "delta": 5.0,
+      "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 21.4,
@@ -64,12 +91,12 @@
       "previous_mentions": 5
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 13.3,
-      "previous_avg": 10.0,
-      "delta": 3.3,
-      "recent_mentions": 3,
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "recent_avg": 34.0,
+      "previous_avg": 30.0,
+      "delta": 4.0,
+      "recent_mentions": 5,
       "previous_mentions": 1
     },
     {
@@ -84,47 +111,11 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "recent_avg": 22.5,
-      "previous_avg": 25.0,
-      "delta": -2.5,
+      "recent_avg": 26.2,
+      "previous_avg": 25.7,
+      "delta": 0.5,
       "recent_mentions": 4,
-      "previous_mentions": 6
-    },
-    {
-      "key": "civil aviation authority",
-      "label": "Nigerian Civil Aviation Authority",
-      "recent_avg": 22.5,
-      "previous_avg": 20.0,
-      "delta": 2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 25.3,
-      "previous_avg": 26.7,
-      "delta": -1.4,
-      "recent_mentions": 18,
-      "previous_mentions": 6
-    },
-    {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "recent_avg": 31.2,
-      "previous_avg": 30.0,
-      "delta": 1.2,
-      "recent_mentions": 4,
-      "previous_mentions": 1
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "recent_avg": 23.3,
-      "previous_avg": 22.5,
-      "delta": 0.8,
-      "recent_mentions": 3,
-      "previous_mentions": 4
+      "previous_mentions": 7
     },
     {
       "key": "abubakar malami",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "institute of chartered accountants of",
+      "label": "Institute of Chartered Accountants of Nigeria",
+      "recent_avg": 35.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-23 01:25:09"
+  "generated": "2026-09-23 12:37:13"
 }

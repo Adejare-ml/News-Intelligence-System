@@ -91,7 +91,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 10,
+      "total_mentions": 11,
       "points": [
         {
           "week": "2026-09-07",
@@ -104,6 +104,12 @@
           "mentions": 9,
           "avg_risk": 24.4,
           "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -134,6 +140,25 @@
       ]
     },
     {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 43.3,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -147,21 +172,21 @@
       ]
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
+      "key": "lagos state government",
+      "label": "Lagos State Government",
       "total_mentions": 5,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
         },
         {
           "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
+          "mentions": 3,
+          "avg_risk": 13.3,
+          "max_risk": 20
         }
       ]
     },
@@ -192,25 +217,6 @@
       ]
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 4,
@@ -220,6 +226,31 @@
           "mentions": 4,
           "avg_risk": 36.2,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -301,6 +332,25 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -372,25 +422,6 @@
       ]
     },
     {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "bat",
       "label": "BAT Nigeria",
       "total_mentions": 2,
@@ -419,6 +450,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 30
         }
       ]
     },
@@ -559,25 +603,6 @@
       ]
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national shipping line",
       "label": "Nigerian National Shipping Line",
       "total_mentions": 2,
@@ -619,6 +644,19 @@
           "mentions": 2,
           "avg_risk": 5.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "sunu assurances",
+      "label": "SUNU Assurances",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -778,6 +816,19 @@
       ]
     },
     {
+      "key": "african african university",
+      "label": "African African University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "african diaspora network",
       "label": "African Diaspora Network",
       "total_mentions": 1,
@@ -787,6 +838,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "agusto co",
+      "label": "Agusto & Co.",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -986,6 +1050,19 @@
       ]
     },
     {
+      "key": "chukwu",
+      "label": "Chukwu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "claypond capital",
       "label": "Claypond Capital",
       "total_mentions": 1,
@@ -1103,6 +1180,19 @@
       ]
     },
     {
+      "key": "dr haydar daudu",
+      "label": "Dr Haydar Daudu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ebonyi state government",
       "label": "Ebonyi State Government",
       "total_mentions": 1,
@@ -1116,15 +1206,15 @@
       ]
     },
     {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
+      "key": "edo state government",
+      "label": "Edo State Government",
       "total_mentions": 1,
       "points": [
         {
           "week": "2026-09-21",
           "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1493,6 +1583,19 @@
       ]
     },
     {
+      "key": "korea international cooperation agency",
+      "label": "Korea International Cooperation Agency",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "kudiwave",
       "label": "KudiWave",
       "total_mentions": 1,
@@ -1551,6 +1654,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "lemfi",
+      "label": "LemFi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -1658,6 +1774,19 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "mutual benefits",
+      "label": "Mutual Benefits",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2260,19 +2389,6 @@
       ]
     },
     {
-      "key": "sunu assurances",
-      "label": "SUNU Assurances",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "sanusi",
       "label": "Sanusi",
       "total_mentions": 1,
@@ -2455,5 +2571,5 @@
       ]
     }
   ],
-  "generated": "2026-09-23 01:25:09"
+  "generated": "2026-09-23 12:37:13"
 }
