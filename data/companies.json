@@ -6849,9 +6849,9 @@
   },
   {
     "Company": "Manufacturers Association of Nigeria",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-29 4:07",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-09-23 14:10",
+    "Industry": "Manufacturing",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7601,9 +7601,9 @@
   },
   {
     "Company": "InDrive",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-03 11:59",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-23 14:11",
+    "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7905,9 +7905,9 @@
   },
   {
     "Company": "Lagos Chamber of Commerce and Industry",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-14 18:23",
-    "Industry": "Trade Association",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-23 14:10",
+    "Industry": "Commerce",
     "Risk Level": "Low",
     "First Seen": "2026-09-14 18:23"
   },
@@ -8294,5 +8294,21 @@
     "Industry": "Credit Rating",
     "Risk Level": "Low",
     "First Seen": "2026-09-23 12:35"
+  },
+  {
+    "Company": "Bill & Melinda Gates Foundation",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-23 14:11",
+    "Industry": "Philanthropy",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-23 14:11"
+  },
+  {
+    "Company": "MTN Group Foundation",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-23 14:11",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-23 14:11"
   }
 ]

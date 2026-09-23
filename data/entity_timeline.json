@@ -45,28 +45,9 @@
       ]
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 12,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-07",
@@ -82,9 +63,28 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 12.5,
+          "mentions": 5,
+          "avg_risk": 14.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 30
         }
       ]
     },
@@ -204,6 +204,25 @@
       ]
     },
     {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 36.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -213,19 +232,6 @@
           "mentions": 4,
           "avg_risk": 63.8,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 36.2,
-          "max_risk": 45
         }
       ]
     },
@@ -508,6 +514,25 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -942,6 +967,19 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "bill melinda gates foundation",
+      "label": "Bill & Melinda Gates Foundation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -1609,19 +1647,6 @@
       ]
     },
     {
-      "key": "lagos chamber of commerce and industry",
-      "label": "Lagos Chamber of Commerce and Industry",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "lagos state consumer protection agency",
       "label": "Lagos State Consumer Protection Agency",
       "total_mentions": 1,
@@ -1713,6 +1738,19 @@
       ]
     },
     {
+      "key": "mtn foundation",
+      "label": "MTN Group Foundation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 1,
@@ -1735,6 +1773,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "manufacturers association of",
+      "label": "Manufacturers Association of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2569,7 +2620,20 @@
           "max_risk": 15
         }
       ]
+    },
+    {
+      "key": "indrive",
+      "label": "inDrive",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
     }
   ],
-  "generated": "2026-09-23 12:37:13"
+  "generated": "2026-09-23 14:13:15"
 }

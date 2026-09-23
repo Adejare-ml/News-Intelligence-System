@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 162,
-  "previous_articles": 165,
+  "recent_articles": 161,
+  "previous_articles": 167,
   "rising": [
     {
       "term": "mambilla",
@@ -22,12 +22,6 @@
       "change": 7
     },
     {
-      "term": "urges",
-      "recent": 9,
-      "previous": 3,
-      "change": 6
-    },
-    {
       "term": "report",
       "recent": 7,
       "previous": 1,
@@ -46,25 +40,37 @@
       "change": 6
     },
     {
+      "term": "premium",
+      "recent": 31,
+      "previous": 26,
+      "change": 5
+    },
+    {
+      "term": "premium times",
+      "recent": 31,
+      "previous": 26,
+      "change": 5
+    },
+    {
+      "term": "times",
+      "recent": 31,
+      "previous": 26,
+      "change": 5
+    },
+    {
       "term": "cbn",
       "recent": 9,
       "previous": 4,
       "change": 5
-    },
-    {
-      "term": "payment",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "guardian",
-      "recent": 37,
-      "previous": 33,
-      "change": 4
     }
   ],
   "falling": [
+    {
+      "term": "newspapers",
+      "recent": 23,
+      "previous": 30,
+      "change": -7
+    },
     {
       "term": "dangote",
       "recent": 7,
@@ -72,13 +78,13 @@
       "change": -7
     },
     {
-      "term": "naicom",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
+      "term": "punch",
+      "recent": 23,
+      "previous": 29,
+      "change": -6
     },
     {
-      "term": "newspapers",
+      "term": "punch newspapers",
       "recent": 23,
       "previous": 29,
       "change": -6
@@ -90,47 +96,41 @@
       "change": -6
     },
     {
-      "term": "ncaa",
+      "term": "beneficial",
       "recent": 1,
       "previous": 7,
       "change": -6
     },
     {
-      "term": "punch",
-      "recent": 23,
-      "previous": 28,
-      "change": -5
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 23,
-      "previous": 28,
-      "change": -5
-    },
-    {
-      "term": "gas",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "petrol",
-      "recent": 3,
+      "term": "beneficial ownership",
+      "recent": 1,
       "previous": 7,
-      "change": -4
+      "change": -6
     },
     {
-      "term": "beneficial",
-      "recent": 2,
+      "term": "ownership",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "naicom",
+      "recent": 0,
       "previous": 6,
-      "change": -4
+      "change": -6
+    },
+    {
+      "term": "cac",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 113,
-      "previous": 107
+      "recent": 111,
+      "previous": 109
     },
     {
       "category": "Legal",
@@ -139,10 +139,10 @@
     },
     {
       "category": "Company",
-      "recent": 23,
+      "recent": 24,
       "previous": 40
     }
   ],
   "social": [],
-  "generated": "2026-09-23 12:37:07"
+  "generated": "2026-09-23 14:13:13"
 }
