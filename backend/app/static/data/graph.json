@@ -37,16 +37,16 @@
       "risk": "Low"
     },
     {
-      "id": "d911eb1cbbc7",
-      "label": "NNPC Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "9ed3f0f5bb2d",
       "label": "Dangote Refinery",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "d911eb1cbbc7",
+      "label": "NNPC Limited",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "c0f6baef22e7",
@@ -121,8 +121,20 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,8 +157,26 @@
       "risk": "Low"
     },
     {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,20 +187,20 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "3a855b071fef",
+      "label": "Nigeria Revenue Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6c302b827a55",
+      "label": "Government of the United States",
       "type": "agency",
       "risk": "Low"
     },
     {
       "id": "ac79f04a4e30",
       "label": "Kano State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,33 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "fd51cf046ee8",
-      "label": "Teachers' Council",
-      "type": "agency",
+      "id": "55bcb5b22e12",
+      "label": "Maina",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "0cfa03e45d4d",
-      "label": "Kwara State Government",
-      "type": "agency",
+      "id": "7d64e12abac8",
+      "label": "Unknown Pension Agency",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "478418814097",
-      "label": "European Union",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "631735ae7f74",
-      "label": "Nigeria Police Force",
-      "type": "agency",
+      "id": "5144dcc43184",
+      "label": "Zacch Adedeji",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -274,12 +292,6 @@
       "id": "112a7950db44",
       "label": "SUNU Assurances",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "55bcb5b22e12",
-      "label": "Maina",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -469,18 +481,6 @@
       "risk": "Low"
     },
     {
-      "id": "2388a11cf55e",
-      "label": "Ola Olukoyede",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1252813a4034",
-      "label": "Sarah Boulos",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -619,12 +619,6 @@
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "653fd7557fc1",
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
@@ -680,6 +674,18 @@
     }
   ],
   "edges": [
+    {
+      "id": "8cd0d9f8c914",
+      "from": "55bcb5b22e12",
+      "to": "7d64e12abac8",
+      "label": "Appointed as Former Pension Boss"
+    },
+    {
+      "id": "d6cb60df31bb",
+      "from": "5144dcc43184",
+      "to": "3a855b071fef",
+      "label": "Appointed as Leadership Role"
+    },
     {
       "id": "c098f0ce0d9f",
       "from": "325a5c8a1ef5",
@@ -817,18 +823,6 @@
       "from": "3e45c1f8a33f",
       "to": "fcc3d69557a3",
       "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
-    },
-    {
-      "id": "173d8cf4554e",
-      "from": "2388a11cf55e",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as Chairman"
-    },
-    {
-      "id": "307ee5f14a17",
-      "from": "1252813a4034",
-      "to": "ebe2d81e3981",
-      "label": "Appointed as President"
     },
     {
       "id": "bacdbeb20944",

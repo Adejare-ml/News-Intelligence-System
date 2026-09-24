@@ -10,8 +10,16 @@
       "label": "All Progressives Congress"
     },
     {
+      "key": "amni",
+      "label": "AMNI"
+    },
+    {
       "key": "bat",
       "label": "BAT Nigeria"
+    },
+    {
+      "key": "bill melinda gates foundation",
+      "label": "Bill & Melinda Gates Foundation"
     },
     {
       "key": "central bank of",
@@ -50,6 +58,18 @@
       "label": "Lagos Chamber of Commerce and Industry"
     },
     {
+      "key": "maina",
+      "label": "Maina"
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority"
+    },
+    {
+      "key": "mtn foundation",
+      "label": "MTN Group Foundation"
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government"
     },
@@ -60,6 +80,10 @@
     {
       "key": "sunrise power",
       "label": "Sunrise Power"
+    },
+    {
+      "key": "totalenergies",
+      "label": "TotalEnergies"
     },
     {
       "key": "toyin abraham",
@@ -88,8 +112,18 @@
       "weight": 2
     },
     {
+      "a": "amni",
+      "b": "totalenergies",
+      "weight": 2
+    },
+    {
       "a": "bat",
       "b": "customs service",
+      "weight": 2
+    },
+    {
+      "a": "bill melinda gates foundation",
+      "b": "mtn foundation",
       "weight": 2
     },
     {
@@ -100,6 +134,16 @@
     {
       "a": "dangote refinery",
       "b": "exchange",
+      "weight": 2
+    },
+    {
+      "a": "dangote refinery",
+      "b": "midstream and downstream petroleum regulatory authority",
+      "weight": 2
+    },
+    {
+      "a": "economic and financial crimes commission",
+      "b": "maina",
       "weight": 2
     },
     {
@@ -118,5 +162,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-09-24 01:20:01"
+  "generated": "2026-09-24 12:36:07"
 }

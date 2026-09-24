@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 971,
-      "mentions": 1661,
+      "companies": 970,
+      "mentions": 1659,
       "risk": {
-        "Low": 855,
+        "Low": 854,
         "Critical": 58,
         "Medium": 34,
         "High": 24
@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 11,
-      "mentions": 90,
+      "mentions": 94,
       "risk": {
         "Critical": 1,
         "Medium": 3,
@@ -67,19 +67,19 @@
       }
     },
     {
+      "industry": "Telecoms",
+      "companies": 3,
+      "mentions": 6,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Aviation",
       "companies": 1,
       "mentions": 5,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Telecoms",
-      "companies": 3,
-      "mentions": 5,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -133,11 +133,27 @@
       }
     },
     {
+      "industry": "Philanthropy",
+      "companies": 2,
+      "mentions": 3,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Politics",
       "companies": 2,
       "mentions": 3,
       "risk": {
         "Medium": 2
+      }
+    },
+    {
+      "industry": "Power/Energy",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -178,14 +194,6 @@
       "mentions": 2,
       "risk": {
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Philanthropy",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "Low": 2
       }
     },
     {
@@ -333,5 +341,5 @@
       }
     }
   ],
-  "generated": "2026-09-24 01:20:01"
+  "generated": "2026-09-24 12:36:07"
 }
