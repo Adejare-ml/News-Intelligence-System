@@ -16,14 +16,14 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1165,
-      "published": 625,
+      "total": 1166,
+      "published": 626,
       "filtered": 540,
       "accept_rate": 54,
       "avg_risk": 31.2,
       "engines": {
         "unknown": 440,
-        "ollama": 181,
+        "ollama": 182,
         "nvidia": 4
       },
       "last_seen": "2026-09-24"
@@ -58,15 +58,15 @@
     },
     {
       "source": "The Punch",
-      "total": 438,
-      "published": 255,
+      "total": 439,
+      "published": 256,
       "filtered": 183,
       "accept_rate": 58,
-      "avg_risk": 33.4,
+      "avg_risk": 33.5,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 145
+        "ollama": 146
       },
       "last_seen": "2026-09-23"
     },
@@ -113,9 +113,9 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 147,
+      "total": 148,
       "published": 61,
-      "filtered": 86,
+      "filtered": 87,
       "accept_rate": 41,
       "avg_risk": 24.0,
       "engines": {
@@ -207,9 +207,9 @@
     },
     {
       "source": "businessday",
-      "total": 69,
+      "total": 70,
       "published": 20,
-      "filtered": 49,
+      "filtered": 50,
       "accept_rate": 29,
       "avg_risk": 27.6,
       "engines": {
@@ -220,16 +220,16 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 43,
+      "total": 44,
       "published": 12,
-      "filtered": 31,
-      "accept_rate": 28,
+      "filtered": 32,
+      "accept_rate": 27,
       "avg_risk": 23.5,
       "engines": {
         "unknown": 8,
         "ollama": 4
       },
-      "last_seen": "2026-09-22"
+      "last_seen": "2026-09-24"
     },
     {
       "source": "blueprint",
@@ -246,16 +246,16 @@
     },
     {
       "source": "punchng.com",
-      "total": 30,
+      "total": 31,
       "published": 11,
-      "filtered": 19,
-      "accept_rate": 37,
+      "filtered": 20,
+      "accept_rate": 35,
       "avg_risk": 21.3,
       "engines": {
         "unknown": 2,
         "ollama": 9
       },
-      "last_seen": "2026-09-23"
+      "last_seen": "2026-09-24"
     },
     {
       "source": "thisdaylive",
@@ -271,6 +271,18 @@
       "last_seen": "2026-09-21"
     },
     {
+      "source": "premiumtimesng",
+      "total": 26,
+      "published": 4,
+      "filtered": 22,
+      "accept_rate": 15,
+      "avg_risk": 24.0,
+      "engines": {
+        "unknown": 4
+      },
+      "last_seen": "2026-09-24"
+    },
+    {
       "source": "tribuneonlineng",
       "total": 26,
       "published": 8,
@@ -282,18 +294,6 @@
         "ollama": 5
       },
       "last_seen": "2026-09-24"
-    },
-    {
-      "source": "premiumtimesng",
-      "total": 25,
-      "published": 4,
-      "filtered": 21,
-      "accept_rate": 16,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 4
-      },
-      "last_seen": "2026-09-21"
     },
     {
       "source": "tori",
@@ -308,6 +308,18 @@
       "last_seen": "2026-09-22"
     },
     {
+      "source": "guardian.ng",
+      "total": 22,
+      "published": 5,
+      "filtered": 17,
+      "accept_rate": 23,
+      "avg_risk": 43.0,
+      "engines": {
+        "ollama": 5
+      },
+      "last_seen": "2026-09-24"
+    },
+    {
       "source": "vanguardngr.com",
       "total": 22,
       "published": 7,
@@ -318,18 +330,6 @@
         "ollama": 7
       },
       "last_seen": "2026-09-23"
-    },
-    {
-      "source": "guardian.ng",
-      "total": 20,
-      "published": 4,
-      "filtered": 16,
-      "accept_rate": 20,
-      "avg_risk": 51.2,
-      "engines": {
-        "ollama": 4
-      },
-      "last_seen": "2026-09-20"
     },
     {
       "source": "Voice of Nigeria",
@@ -1811,6 +1811,16 @@
       "last_seen": "2026-08-02"
     },
     {
+      "source": "ndlea.gov.ng",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-24"
+    },
+    {
       "source": "nigerianobservernews",
       "total": 1,
       "published": 1,
@@ -1933,5 +1943,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-24 17:47:20"
+  "generated": "2026-09-24 20:21:43"
 }

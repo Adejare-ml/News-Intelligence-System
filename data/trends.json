@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 168,
-  "previous_articles": 178,
+  "recent_articles": 169,
+  "previous_articles": 179,
   "rising": [
     {
       "term": "mambilla",
@@ -46,13 +46,13 @@
       "change": 5
     },
     {
-      "term": "investment",
-      "recent": 7,
-      "previous": 2,
+      "term": "battle",
+      "recent": 5,
+      "previous": 0,
       "change": 5
     },
     {
-      "term": "battle",
+      "term": "declares",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -70,12 +70,6 @@
       "recent": 3,
       "previous": 12,
       "change": -9
-    },
-    {
-      "term": "dangote",
-      "recent": 8,
-      "previous": 16,
-      "change": -8
     },
     {
       "term": "targets",
@@ -102,6 +96,12 @@
       "change": -8
     },
     {
+      "term": "dangote",
+      "recent": 9,
+      "previous": 16,
+      "change": -7
+    },
+    {
       "term": "seeks",
       "recent": 3,
       "previous": 10,
@@ -120,26 +120,26 @@
       "change": -7
     },
     {
-      "term": "efcc",
-      "recent": 9,
-      "previous": 15,
+      "term": "minister",
+      "recent": 0,
+      "previous": 6,
       "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 106,
-      "previous": 125
+      "recent": 105,
+      "previous": 126
     },
     {
       "category": "Company",
-      "recent": 32,
+      "recent": 33,
       "previous": 37
     },
     {
       "category": "Legal",
-      "recent": 29,
+      "recent": 30,
       "previous": 16
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-24 17:47:18"
+  "generated": "2026-09-24 20:21:26"
 }

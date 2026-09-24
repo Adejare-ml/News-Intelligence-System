@@ -12,10 +12,10 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 65.0,
+      "recent_avg": 66.0,
       "previous_avg": 31.8,
-      "delta": 33.2,
-      "recent_mentions": 9,
+      "delta": 34.2,
+      "recent_mentions": 10,
       "previous_mentions": 17
     },
     {
@@ -55,15 +55,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 33.3,
-      "previous_avg": 25.0,
-      "delta": 8.3,
-      "recent_mentions": 6,
-      "previous_mentions": 8
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 15.5,
@@ -73,13 +64,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 21.4,
-      "previous_avg": 17.0,
-      "delta": 4.4,
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 31.4,
+      "previous_avg": 25.0,
+      "delta": 6.4,
       "recent_mentions": 7,
-      "previous_mentions": 5
+      "previous_mentions": 8
     },
     {
       "key": "lagos state government",
@@ -91,12 +82,21 @@
       "previous_mentions": 1
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 21.2,
+      "previous_avg": 17.0,
+      "delta": 4.2,
+      "recent_mentions": 8,
+      "previous_mentions": 5
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 25.0,
+      "recent_avg": 24.2,
       "previous_avg": 27.8,
-      "delta": -2.8,
-      "recent_mentions": 17,
+      "delta": -3.6,
+      "recent_mentions": 18,
       "previous_mentions": 9
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-24 17:47:20"
+  "generated": "2026-09-24 20:21:43"
 }

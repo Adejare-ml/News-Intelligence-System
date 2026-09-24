@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-07",
@@ -19,8 +19,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 61.2,
+          "mentions": 5,
+          "avg_risk": 64.0,
           "max_risk": 75
         }
       ]
@@ -28,7 +28,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-07",
@@ -44,9 +44,34 @@
         },
         {
           "week": "2026-09-21",
+          "mentions": 10,
+          "avg_risk": 23.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "total_mentions": 15,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-14",
           "mentions": 9,
           "avg_risk": 24.4,
-          "max_risk": 40
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 36.0,
+          "max_risk": 65
         }
       ]
     },
@@ -76,34 +101,9 @@
       ]
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "total_mentions": 14,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 24.4,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 12,
+      "total_mentions": 13,
       "points": [
         {
           "week": "2026-09-14",
@@ -113,8 +113,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 26.7,
+          "mentions": 4,
+          "avg_risk": 25.0,
           "max_risk": 30
         }
       ]
@@ -1000,6 +1000,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "abdularasheed maina",
+      "label": "Abdularasheed Maina",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -2681,6 +2694,19 @@
       ]
     },
     {
+      "key": "presidential task force on pension reforms",
+      "label": "Presidential Task Force on Pension Reforms",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "prudential africa services",
       "label": "Prudential Africa Services Limited",
       "total_mentions": 1,
@@ -3032,5 +3058,5 @@
       ]
     }
   ],
-  "generated": "2026-09-24 17:47:20"
+  "generated": "2026-09-24 20:21:43"
 }
