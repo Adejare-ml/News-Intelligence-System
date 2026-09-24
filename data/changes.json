@@ -1,23 +1,28 @@
 {
-  "new_companies": [],
-  "new_people": [],
+  "new_companies": [
+    "Ima Gas Field",
+    "TotalEnergies SE"
+  ],
+  "new_people": [
+    "Mudasiru"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "EFCC declares ex-pension boss Maina wanted | - theeagleonline.com.ng",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RYTk1dTFQQzRkYU9FY2cyNW1MQ0c1S3NyWXFNSG9JaU91RnRvNGo1TVgxS1VOM2c1ZDZfb2ozUjBQMVdINHp0U2ZsOTA0V2VGSGtjNjZUMUFVM0tlOVp4a2F2eWhsTjNpRFkzVkFydmpIMzB1MEJobWpfM1lCZw?oc=5",
-      "risk": 70.0
+      "title": "EFCC declares Maina, ex-pension chair wanted",
+      "url": "https://businessday.ng/news/article/efcc-declares-maina-ex-pension-chair-wanted/",
+      "risk": 75.0
     }
   ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
+    "new_companies": 2,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 1
   },
-  "generated": "2026-09-24 12:35:51"
+  "generated": "2026-09-24 17:47:15"
 }

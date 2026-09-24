@@ -2,6 +2,19 @@
   "alerts": [
     {
       "date": "2026-09-24",
+      "title": "EFCC declares Maina, ex-pension chair wanted",
+      "url": "https://businessday.ng/news/article/efcc-declares-maina-ex-pension-chair-wanted/",
+      "source": "businessday",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "National Pension Commission",
+        "Maina"
+      ]
+    },
+    {
+      "date": "2026-09-24",
       "title": "EFCC declares ex-pension boss Maina wanted | - theeagleonline.com.ng",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RYTk1dTFQQzRkYU9FY2cyNW1MQ0c1S3NyWXFNSG9JaU91RnRvNGo1TVgxS1VOM2c1ZDZfb2ozUjBQMVdINHp0U2ZsOTA0V2VGSGtjNjZUMUFVM0tlOVp4a2F2eWhsTjNpRFkzVkFydmpIMzB1MEJobWpfM1lCZw?oc=5",
       "source": "theeagleonline.com.ng",
@@ -247,5 +260,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-24 12:36:07"
+  "generated": "2026-09-24 17:47:20"
 }
