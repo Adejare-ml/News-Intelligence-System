@@ -1,21 +1,23 @@
 {
-  "new_companies": [
-    "Access Bank Kenya",
-    "Gates Foundation",
-    "National Bank of Kenya"
-  ],
+  "new_companies": [],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "EFCC declares ex-pension boss Maina wanted | - theeagleonline.com.ng",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5RYTk1dTFQQzRkYU9FY2cyNW1MQ0c1S3NyWXFNSG9JaU91RnRvNGo1TVgxS1VOM2c1ZDZfb2ozUjBQMVdINHp0U2ZsOTA0V2VGSGtjNjZUMUFVM0tlOVp4a2F2eWhsTjNpRFkzVkFydmpIMzB1MEJobWpfM1lCZw?oc=5",
+      "risk": 70.0
+    }
+  ],
   "counts": {
-    "new_companies": 3,
+    "new_companies": 0,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-09-24 01:19:55"
+  "generated": "2026-09-24 12:35:51"
 }

@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 24,
+      "total_mentions": 25,
       "points": [
         {
           "week": "2026-09-07",
@@ -19,8 +19,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 7,
-          "avg_risk": 22.9,
+          "mentions": 8,
+          "avg_risk": 22.5,
           "max_risk": 30
         }
       ]
@@ -28,7 +28,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 23,
+      "total_mentions": 24,
       "points": [
         {
           "week": "2026-09-07",
@@ -44,9 +44,9 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 70
         }
       ]
     },
@@ -78,7 +78,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 12,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-07",
@@ -94,8 +94,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 55.0,
+          "mentions": 4,
+          "avg_risk": 40.0,
           "max_risk": 65
         }
       ]
@@ -242,6 +242,88 @@
       ]
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 28.3,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar",
       "total_mentions": 3,
@@ -263,19 +345,6 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 45
         }
       ]
     },
@@ -356,6 +425,19 @@
       ]
     },
     {
+      "key": "mtn foundation",
+      "label": "MTN Group Foundation",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 13.3,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 3,
@@ -388,25 +470,6 @@
       ]
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 32.5,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -420,19 +483,13 @@
       ]
     },
     {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 3,
+      "key": "amni",
+      "label": "AMNI",
+      "total_mentions": 2,
       "points": [
         {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
           "week": "2026-09-21",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -465,25 +522,6 @@
       ]
     },
     {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "all progressives congress",
       "label": "All Progressives Congress",
       "total_mentions": 2,
@@ -506,6 +544,19 @@
           "mentions": 2,
           "avg_risk": 17.5,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "bill melinda gates foundation",
+      "label": "Bill & Melinda Gates Foundation",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -587,15 +638,34 @@
       ]
     },
     {
-      "key": "mtn foundation",
-      "label": "MTN Group Foundation",
+      "key": "government of the united states",
+      "label": "Government of the United States",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "maina",
+      "label": "Maina",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-09-21",
           "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
+          "avg_risk": 65.0,
+          "max_risk": 70
         }
       ]
     },
@@ -877,19 +947,6 @@
       ]
     },
     {
-      "key": "amni",
-      "label": "AMNI",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "ascsn",
       "label": "ASCSN",
       "total_mentions": 1,
@@ -1094,19 +1151,6 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "bill melinda gates foundation",
-      "label": "Bill & Melinda Gates Foundation",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -1592,19 +1636,6 @@
       ]
     },
     {
-      "key": "government of the united states",
-      "label": "Government of the United States",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "healthcap africa",
       "label": "HealthCap Africa",
       "total_mentions": 1,
@@ -1917,19 +1948,6 @@
       ]
     },
     {
-      "key": "maina",
-      "label": "Maina",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
-        }
-      ]
-    },
-    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 1,
@@ -2203,6 +2221,19 @@
       ]
     },
     {
+      "key": "niger delta power company",
+      "label": "Niger Delta Power Holding Company",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "data protection commission",
       "label": "Nigeria Data Protection Commission",
       "total_mentions": 1,
@@ -2238,6 +2269,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "revenue service",
+      "label": "Nigeria Revenue Service",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2840,6 +2884,19 @@
       ]
     },
     {
+      "key": "zacch adedeji",
+      "label": "Zacch Adedeji",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "indrive",
       "label": "inDrive",
       "total_mentions": 1,
@@ -2853,5 +2910,5 @@
       ]
     }
   ],
-  "generated": "2026-09-24 01:20:01"
+  "generated": "2026-09-24 12:36:07"
 }

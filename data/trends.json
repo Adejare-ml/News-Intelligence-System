@@ -1,13 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 165,
-  "previous_articles": 173,
+  "recent_articles": 164,
+  "previous_articles": 177,
   "rising": [
     {
       "term": "mambilla",
       "recent": 11,
       "previous": 0,
       "change": 11
+    },
+    {
+      "term": "guardian",
+      "recent": 40,
+      "previous": 32,
+      "change": 8
+    },
+    {
+      "term": "health",
+      "recent": 9,
+      "previous": 2,
+      "change": 7
     },
     {
       "term": "lagos",
@@ -22,71 +34,47 @@
       "change": 7
     },
     {
-      "term": "cbn",
-      "recent": 10,
-      "previous": 4,
-      "change": 6
-    },
-    {
-      "term": "health",
+      "term": "project",
       "recent": 8,
       "previous": 2,
       "change": 6
     },
     {
-      "term": "report",
+      "term": "investment",
       "recent": 7,
       "previous": 1,
       "change": 6
     },
     {
-      "term": "moves",
-      "recent": 6,
+      "term": "cbn",
+      "recent": 9,
+      "previous": 4,
+      "change": 5
+    },
+    {
+      "term": "battle",
+      "recent": 5,
       "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "guardian",
-      "recent": 39,
-      "previous": 34,
       "change": 5
     },
     {
-      "term": "com",
-      "recent": 12,
-      "previous": 7,
-      "change": 5
-    },
-    {
-      "term": "investment",
+      "term": "group",
       "recent": 6,
-      "previous": 1,
-      "change": 5
+      "previous": 2,
+      "change": 4
     }
   ],
   "falling": [
     {
       "term": "seeks",
-      "recent": 1,
+      "recent": 2,
       "previous": 10,
-      "change": -9
-    },
-    {
-      "term": "newspapers",
-      "recent": 24,
-      "previous": 32,
       "change": -8
     },
     {
-      "term": "dangote",
-      "recent": 7,
-      "previous": 15,
-      "change": -8
-    },
-    {
-      "term": "ipo",
-      "recent": 3,
-      "previous": 11,
+      "term": "customs",
+      "recent": 1,
+      "previous": 9,
       "change": -8
     },
     {
@@ -108,15 +96,9 @@
       "change": -8
     },
     {
-      "term": "punch",
-      "recent": 24,
-      "previous": 31,
-      "change": -7
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 24,
-      "previous": 31,
+      "term": "ipo",
+      "recent": 4,
+      "previous": 11,
       "change": -7
     },
     {
@@ -124,25 +106,43 @@
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "dangote",
+      "recent": 9,
+      "previous": 15,
+      "change": -6
+    },
+    {
+      "term": "efcc",
+      "recent": 8,
+      "previous": 14,
+      "change": -6
+    },
+    {
+      "term": "targets",
+      "recent": 2,
+      "previous": 8,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 109,
-      "previous": 117
+      "recent": 105,
+      "previous": 122
     },
     {
       "category": "Company",
-      "recent": 28,
-      "previous": 39
+      "recent": 31,
+      "previous": 37
     },
     {
       "category": "Legal",
       "recent": 28,
-      "previous": 17
+      "previous": 18
     }
   ],
   "social": [],
-  "generated": "2026-09-24 01:19:58"
+  "generated": "2026-09-24 12:35:54"
 }

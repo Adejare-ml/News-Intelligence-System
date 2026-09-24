@@ -10,40 +10,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 53.8,
-      "previous_avg": 21.2,
-      "delta": 32.6,
-      "recent_mentions": 4,
-      "previous_mentions": 4
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 61.2,
+      "previous_avg": 32.5,
+      "delta": 28.7,
+      "recent_mentions": 8,
+      "previous_mentions": 16
     },
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "recent_avg": 32.5,
+      "recent_avg": 28.3,
       "previous_avg": 15.0,
-      "delta": 17.5,
-      "recent_mentions": 2,
+      "delta": 13.3,
+      "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 49.0,
-      "previous_avg": 34.6,
-      "delta": 14.4,
-      "recent_mentions": 10,
-      "previous_mentions": 13
-    },
-    {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 37.5,
-      "previous_avg": 25.0,
-      "delta": 12.5,
-      "recent_mentions": 4,
-      "previous_mentions": 8
     },
     {
       "key": "atiku abubakar",
@@ -55,21 +37,30 @@
       "previous_mentions": 1
     },
     {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 33.3,
+      "previous_avg": 25.0,
+      "delta": 8.3,
+      "recent_mentions": 6,
+      "previous_mentions": 8
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 15.5,
-      "previous_avg": 25.0,
-      "delta": -9.5,
-      "recent_mentions": 11,
-      "previous_mentions": 3
+      "previous_avg": 22.5,
+      "delta": -7.0,
+      "recent_mentions": 10,
+      "previous_mentions": 4
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 23.8,
+      "recent_avg": 23.5,
       "previous_avg": 29.4,
-      "delta": -5.6,
-      "recent_mentions": 16,
+      "delta": -5.9,
+      "recent_mentions": 17,
       "previous_mentions": 8
     },
     {
@@ -109,6 +100,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "recent_avg": 32.5,
+      "previous_avg": 30.0,
+      "delta": 2.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "lagos chamber of commerce and industry",
       "label": "Lagos Chamber of Commerce and Industry",
       "recent_avg": 17.5,
@@ -121,6 +121,15 @@
       "key": "abubakar malami",
       "label": "Abubakar Malami",
       "recent_avg": 85.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "maina",
+      "label": "Maina",
+      "recent_avg": 65.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "institute of chartered accountants of",
-      "label": "Institute of Chartered Accountants of Nigeria",
-      "recent_avg": 35.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-24 01:20:01"
+  "generated": "2026-09-24 12:36:07"
 }
