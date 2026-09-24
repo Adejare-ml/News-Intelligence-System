@@ -157,6 +157,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
@@ -199,44 +205,38 @@
       "risk": "Low"
     },
     {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "44622f42ba94",
+      "label": "Nigeria Hotel and Tourism Employees",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fc891fdac42c",
+      "label": "National Bureau of Statistics",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a179b388706",
+      "label": "Ondo State Civil Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "55730e1fee4a",
+      "label": "Ministry of Petroleum Resources",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ac79f04a4e30",
       "label": "Kano State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ab53ff22bff5",
-      "label": "Edo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "635f6d07426b",
-      "label": "Korea International Cooperation Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "daa2d59a11a5",
-      "label": "African African University",
       "type": "agency",
       "risk": "Low"
     },
@@ -255,6 +255,18 @@
     {
       "id": "5144dcc43184",
       "label": "Zacch Adedeji",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "d00eed82e81b",
+      "label": "Mudasiru",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3e45c1f8a33f",
+      "label": "Heineken Lokpobiri",
       "type": "person",
       "risk": "Low"
     },
@@ -451,36 +463,6 @@
       "risk": "Low"
     },
     {
-      "id": "fefb843eaf49",
-      "label": "Toyin Abraham",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "283e1d4aa831",
-      "label": "All Progressives Congress",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "cbcd2bcef258",
-      "label": "Pasuma",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3e45c1f8a33f",
-      "label": "Heineken Lokpobiri",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "fcc3d69557a3",
-      "label": "Federal Ministry of Petroleum Resources",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -607,6 +589,24 @@
       "risk": "Medium"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "635f6d07426b",
+      "label": "Korea International Cooperation Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "09b648436789",
       "label": "NIGCOMSAT",
       "type": "agency",
@@ -665,12 +665,6 @@
       "label": "Unnamed boat contractors",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "f4ee2fd09975",
-      "label": "Nigeria Airways (Pensioners)",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -685,6 +679,24 @@
       "from": "5144dcc43184",
       "to": "3a855b071fef",
       "label": "Appointed as Leadership Role"
+    },
+    {
+      "id": "9b19f8f64cd8",
+      "from": "d00eed82e81b",
+      "to": "44622f42ba94",
+      "label": "Appointed as National Chairman"
+    },
+    {
+      "id": "9adf159becd1",
+      "from": "3e45c1f8a33f",
+      "to": "55730e1fee4a",
+      "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
+    },
+    {
+      "id": "8e628c8b88fe",
+      "from": "55bcb5b22e12",
+      "to": "b1dce9fc27e0",
+      "label": "Appointed as Former Chairman"
     },
     {
       "id": "c098f0ce0d9f",
@@ -807,24 +819,6 @@
       "label": "Appointed as Executive Vice Chairman and Chief Executive Officer"
     },
     {
-      "id": "6e8266345f74",
-      "from": "fefb843eaf49",
-      "to": "283e1d4aa831",
-      "label": "Appointed as Campaign Council Member"
-    },
-    {
-      "id": "0548c4cba734",
-      "from": "cbcd2bcef258",
-      "to": "283e1d4aa831",
-      "label": "Appointed as Appointee"
-    },
-    {
-      "id": "adc38c9f0fd4",
-      "from": "3e45c1f8a33f",
-      "to": "fcc3d69557a3",
-      "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -903,6 +897,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "9aaad96e9617",
       "from": "334c4a4c42fd",
       "to": "3a4a88456e84",
@@ -936,12 +936,6 @@
       "id": "44f61393e51f",
       "from": "334c4a4c42fd",
       "to": "a61e97dc06d8",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
     {
@@ -990,12 +984,6 @@
       "id": "04f247447b01",
       "from": "b1066afb9628",
       "to": "0ba0cb08c8cb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "ec91b82a33b9",
-      "from": "f4ee2fd09975",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

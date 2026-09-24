@@ -1,64 +1,84 @@
 {
-  "generated": "2026-09-24 12:35:54",
+  "generated": "2026-09-24 17:47:18",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3274,
+      "likes": 3342,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2127,
+      "likes": 2164,
       "downloads": 37618
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 1989,
+      "likes": 2003,
       "downloads": 2991233
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1640,
+      "likes": 1644,
       "downloads": 41923
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1559,
+      "likes": 1592,
       "downloads": 575697
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 652,
+      "likes": 661,
       "downloads": 2858923
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 608,
+      "likes": 618,
       "downloads": 4541
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
       "task": "image-text-to-text",
-      "likes": 3692,
+      "likes": 3705,
       "downloads": 606028
     }
   ],
   "papers": [
+    {
+      "title": "Self-Organizing Agent Teams Learn to Reason Together",
+      "url": "https://huggingface.co/papers/2609.22682",
+      "upvotes": 1
+    },
+    {
+      "title": "The Linear Representation Hypothesis Needs a Group Action",
+      "url": "https://huggingface.co/papers/2609.27158",
+      "upvotes": 1
+    },
+    {
+      "title": "Knowledge Pull Requests for Continual Document Authoring",
+      "url": "https://huggingface.co/papers/2609.26634",
+      "upvotes": 1
+    },
+    {
+      "title": "Capable yet Parsimonious: Extracting and Characterizing Hidden Chain-of-Thought in Frontier Models",
+      "url": "https://huggingface.co/papers/2609.26637",
+      "upvotes": 2
+    },
     {
       "title": "X-Planner: Event-Structured Task Planning for Embodied Intelligence",
       "url": "https://huggingface.co/papers/2609.25187",
@@ -67,27 +87,7 @@
     {
       "title": "Calibration as a First-Class Criterion in LLM Evaluation",
       "url": "https://huggingface.co/papers/2609.26489",
-      "upvotes": 1
-    },
-    {
-      "title": "FLEET: From Logits Entropy to Enhanced Trajectories in Text Generation",
-      "url": "https://huggingface.co/papers/2609.27657",
-      "upvotes": 1
-    },
-    {
-      "title": "GeoPair: Geometry-Preserving Cross-Layer Factorization for Training-Free Transformer Compression",
-      "url": "https://huggingface.co/papers/2609.25963",
-      "upvotes": 9
-    },
-    {
-      "title": "Six Layers Less: Encoder Pruning for Whisper with Label-Free Recovery",
-      "url": "https://huggingface.co/papers/2609.27980",
-      "upvotes": 1
-    },
-    {
-      "title": "Uranus: Building the Next-Generation Simulation Infrastructure for Embodied AI",
-      "url": "https://huggingface.co/papers/2609.24815",
-      "upvotes": 1
+      "upvotes": 2
     }
   ]
 }

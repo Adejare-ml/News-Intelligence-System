@@ -1,34 +1,9 @@
 {
   "entities": [
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "total_mentions": 25,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 16,
-          "avg_risk": 23.1,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 22.5,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 24,
+      "total_mentions": 26,
       "points": [
         {
           "week": "2026-09-07",
@@ -44,9 +19,34 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 65.0,
-          "max_risk": 70
+          "mentions": 4,
+          "avg_risk": 61.2,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "total_mentions": 26,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 16,
+          "avg_risk": 23.1,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 9,
+          "avg_risk": 24.4,
+          "max_risk": 40
         }
       ]
     },
@@ -122,13 +122,38 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "total_mentions": 8,
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 8,
           "avg_risk": 37.5,
           "max_risk": 75
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 6,
+          "avg_risk": 13.3,
+          "max_risk": 20
         }
       ]
     },
@@ -142,25 +167,6 @@
           "mentions": 7,
           "avg_risk": 22.9,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 14.0,
-          "max_risk": 20
         }
       ]
     },
@@ -438,6 +444,19 @@
       ]
     },
     {
+      "key": "maina",
+      "label": "Maina",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 68.3,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 3,
@@ -657,15 +676,21 @@
       ]
     },
     {
-      "key": "maina",
-      "label": "Maina",
+      "key": "heineken lokpobiri",
+      "label": "Heineken Lokpobiri",
       "total_mentions": 2,
       "points": [
         {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
           "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 65.0,
-          "max_risk": 70
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -744,6 +769,25 @@
           "mentions": 2,
           "avg_risk": 42.5,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "national pension commission",
+      "label": "National Pension Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -1649,19 +1693,6 @@
       ]
     },
     {
-      "key": "heineken lokpobiri",
-      "label": "Heineken Lokpobiri",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "hitech",
       "label": "Hitech",
       "total_mentions": 1,
@@ -1697,6 +1728,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "ima gas field",
+      "label": "Ima Gas Field",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2000,6 +2044,19 @@
       ]
     },
     {
+      "key": "ministry of petroleum resources",
+      "label": "Ministry of Petroleum Resources",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ministry of power",
       "label": "Ministry of Power",
       "total_mentions": 1,
@@ -2009,6 +2066,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "mudasiru",
+      "label": "Mudasiru",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -2130,6 +2200,19 @@
       ]
     },
     {
+      "key": "national bureau of statistics",
+      "label": "National Bureau of Statistics",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national diaspora commission",
       "label": "National Diaspora Commission",
       "total_mentions": 1,
@@ -2182,19 +2265,6 @@
       ]
     },
     {
-      "key": "national pension commission",
-      "label": "National Pension Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "national union of pensioners",
       "label": "National Union of Pensioners",
       "total_mentions": 1,
@@ -2240,6 +2310,32 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "hotel and tourism employees",
+      "label": "Nigeria Hotel and Tourism Employees",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "lng",
+      "label": "Nigeria LNG",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -2516,6 +2612,19 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "ondo state civil service",
+      "label": "Ondo State Civil Service",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2819,6 +2928,19 @@
       ]
     },
     {
+      "key": "totalenergies se",
+      "label": "TotalEnergies SE",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "usaid",
       "label": "USAID",
       "total_mentions": 1,
@@ -2910,5 +3032,5 @@
       ]
     }
   ],
-  "generated": "2026-09-24 12:36:07"
+  "generated": "2026-09-24 17:47:20"
 }
