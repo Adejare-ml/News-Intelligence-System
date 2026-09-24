@@ -235,12 +235,6 @@
       "risk": "Low"
     },
     {
-      "id": "ac79f04a4e30",
-      "label": "Kano State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "55bcb5b22e12",
       "label": "Maina",
       "type": "person",
@@ -268,6 +262,18 @@
       "id": "3e45c1f8a33f",
       "label": "Heineken Lokpobiri",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "552d843a0fa2",
+      "label": "Abdularasheed Maina",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "d297cca8ca60",
+      "label": "Presidential Task Force on Pension Reforms",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -448,18 +454,6 @@
       "id": "9392713dc79b",
       "label": "Ojulari",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7249b7ffd3c6",
-      "label": "Khalil Suleiman Halilu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "84b6d6cbf896",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -699,6 +693,12 @@
       "label": "Appointed as Former Chairman"
     },
     {
+      "id": "d0d310abc33f",
+      "from": "552d843a0fa2",
+      "to": "d297cca8ca60",
+      "label": "Appointed as Former Chairman"
+    },
+    {
       "id": "c098f0ce0d9f",
       "from": "325a5c8a1ef5",
       "to": "37a6259cc0c1",
@@ -811,12 +811,6 @@
       "from": "9392713dc79b",
       "to": "f38bd75574f6",
       "label": "Appointed as Group CEO"
-    },
-    {
-      "id": "656dcdee0f3a",
-      "from": "7249b7ffd3c6",
-      "to": "84b6d6cbf896",
-      "label": "Appointed as Executive Vice Chairman and Chief Executive Officer"
     },
     {
       "id": "bacdbeb20944",
