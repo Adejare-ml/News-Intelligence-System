@@ -1,13 +1,22 @@
 {
   "movers": [
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 30.0,
+      "previous_avg": 65.0,
+      "delta": -35.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "recent_avg": 51.0,
-      "previous_avg": 15.0,
-      "delta": 36.0,
-      "recent_mentions": 5,
-      "previous_mentions": 3
+      "recent_avg": 53.8,
+      "previous_avg": 21.2,
+      "delta": 32.6,
+      "recent_mentions": 4,
+      "previous_mentions": 4
     },
     {
       "key": "government of",
@@ -21,20 +30,20 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 46.4,
-      "previous_avg": 35.8,
-      "delta": 10.6,
-      "recent_mentions": 11,
-      "previous_mentions": 12
+      "recent_avg": 49.0,
+      "previous_avg": 34.6,
+      "delta": 14.4,
+      "recent_mentions": 10,
+      "previous_mentions": 13
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 15.0,
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 37.5,
       "previous_avg": 25.0,
-      "delta": -10.0,
-      "recent_mentions": 10,
-      "previous_mentions": 3
+      "delta": 12.5,
+      "recent_mentions": 4,
+      "previous_mentions": 8
     },
     {
       "key": "atiku abubakar",
@@ -46,21 +55,30 @@
       "previous_mentions": 1
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 15.5,
+      "previous_avg": 25.0,
+      "delta": -9.5,
+      "recent_mentions": 11,
+      "previous_mentions": 3
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 22.9,
-      "previous_avg": 32.1,
-      "delta": -9.2,
-      "recent_mentions": 17,
-      "previous_mentions": 7
+      "recent_avg": 23.8,
+      "previous_avg": 29.4,
+      "delta": -5.6,
+      "recent_mentions": 16,
+      "previous_mentions": 8
     },
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "recent_avg": 16.0,
+      "recent_avg": 15.0,
       "previous_avg": 10.0,
-      "delta": 6.0,
-      "recent_mentions": 5,
+      "delta": 5.0,
+      "recent_mentions": 6,
       "previous_mentions": 1
     },
     {
@@ -82,15 +100,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 28.3,
-      "previous_avg": 25.0,
-      "delta": 3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 8
-    },
-    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "recent_avg": 43.3,
@@ -98,15 +107,6 @@
       "delta": 3.3,
       "recent_mentions": 3,
       "previous_mentions": 2
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 15.0,
-      "previous_avg": 18.3,
-      "delta": -3.3,
-      "recent_mentions": 2,
-      "previous_mentions": 3
     },
     {
       "key": "lagos chamber of commerce and industry",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-23 20:03:52"
+  "generated": "2026-09-24 01:20:01"
 }

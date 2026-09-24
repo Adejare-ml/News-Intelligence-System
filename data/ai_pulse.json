@@ -1,64 +1,69 @@
 {
-  "generated": "2026-09-23 20:03:38",
+  "generated": "2026-09-24 01:19:58",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3042,
+      "likes": 3112,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 1994,
+      "likes": 2037,
       "downloads": 28407
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 1942,
+      "likes": 1956,
       "downloads": 2815979
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1522,
+      "likes": 1596,
       "downloads": 39009
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1411,
+      "likes": 1435,
       "downloads": 350678
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 619,
+      "likes": 627,
       "downloads": 2220609
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
       "task": "image-text-to-text",
-      "likes": 3662,
+      "likes": 3668,
       "downloads": 570909
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 568,
+      "likes": 577,
       "downloads": 3787
     }
   ],
   "papers": [
+    {
+      "title": "HARMONY: Hierarchical Agentic Reasoning for MONocular Image-to-Scene Synthesis",
+      "url": "https://huggingface.co/papers/2609.26793",
+      "upvotes": 0
+    },
     {
       "title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
       "url": "https://huggingface.co/papers/2609.06011",
@@ -77,16 +82,11 @@
     {
       "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
       "url": "https://huggingface.co/papers/2609.26550",
-      "upvotes": 16
+      "upvotes": 18
     },
     {
       "title": "LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay",
       "url": "https://huggingface.co/papers/2609.25053",
-      "upvotes": 3
-    },
-    {
-      "title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
-      "url": "https://huggingface.co/papers/2609.25636",
       "upvotes": 4
     }
   ]

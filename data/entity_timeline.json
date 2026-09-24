@@ -53,7 +53,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 13,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-07",
@@ -69,9 +69,34 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 6,
-          "avg_risk": 14.2,
+          "mentions": 7,
+          "avg_risk": 15.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 24.4,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 55.0,
+          "max_risk": 65
         }
       ]
     },
@@ -91,31 +116,6 @@
           "mentions": 3,
           "avg_risk": 26.7,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 24.4,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -142,6 +142,25 @@
           "mentions": 7,
           "avg_risk": 22.9,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 14.0,
+          "max_risk": 20
         }
       ]
     },
@@ -174,25 +193,6 @@
           "mentions": 6,
           "avg_risk": 63.3,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -276,6 +276,31 @@
           "mentions": 3,
           "avg_risk": 26.7,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -504,6 +529,25 @@
       ]
     },
     {
+      "key": "ebonyi state government",
+      "label": "Ebonyi State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "federal airports authority of",
       "label": "Federal Airports Authority of Nigeria",
       "total_mentions": 2,
@@ -543,21 +587,15 @@
       ]
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
+      "key": "mtn foundation",
+      "label": "MTN Group Foundation",
       "total_mentions": 2,
       "points": [
         {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -640,6 +678,25 @@
       ]
     },
     {
+      "key": "niger delta development commission",
+      "label": "Niger Delta Development Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "airways",
       "label": "Nigeria Airways",
       "total_mentions": 2,
@@ -681,6 +738,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -836,6 +912,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "access bank kenya",
+      "label": "Access Bank Kenya",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1269,19 +1358,6 @@
       ]
     },
     {
-      "key": "ebonyi state government",
-      "label": "Ebonyi State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "edo state government",
       "label": "Edo State Government",
       "total_mentions": 1,
@@ -1460,6 +1536,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "gates foundation",
+      "label": "Gates Foundation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1815,19 +1904,6 @@
       ]
     },
     {
-      "key": "mtn foundation",
-      "label": "MTN Group Foundation",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "magdalene health wellness research technology sport city",
       "label": "Magdalene Health, Wellness, Research, Technology & Sport City",
       "total_mentions": 1,
@@ -1984,6 +2060,19 @@
       ]
     },
     {
+      "key": "nnpcl",
+      "label": "NNPCL",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national agency for science and engineering infrastructure",
       "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 1,
@@ -2006,6 +2095,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national bank of kenya",
+      "label": "National Bank of Kenya",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -2097,19 +2199,6 @@
           "mentions": 1,
           "avg_risk": 60.0,
           "max_risk": 60
-        }
-      ]
-    },
-    {
-      "key": "niger delta development commission",
-      "label": "Niger Delta Development Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2361,19 +2450,6 @@
       ]
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "ojulari",
       "label": "Ojulari",
       "total_mentions": 1,
@@ -2582,6 +2658,19 @@
       ]
     },
     {
+      "key": "seplat energy",
+      "label": "Seplat Energy",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "total_mentions": 1,
@@ -2764,5 +2853,5 @@
       ]
     }
   ],
-  "generated": "2026-09-23 20:03:52"
+  "generated": "2026-09-24 01:20:01"
 }
