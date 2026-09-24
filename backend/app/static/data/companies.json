@@ -3313,9 +3313,9 @@
   },
   {
     "Company": "NNPCL",
-    "Mention Count": 10,
-    "Last Seen": "2026-08-01 18:05",
-    "Industry": "General",
+    "Mention Count": 11,
+    "Last Seen": "2026-09-24 01:17",
+    "Industry": "Oil & Gas",
     "Risk Level": "Critical",
     "First Seen": ""
   },
@@ -6865,9 +6865,9 @@
   },
   {
     "Company": "Seplat Energy",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-01 19:49",
-    "Industry": "General",
+    "Mention Count": 4,
+    "Last Seen": "2026-09-24 01:17",
+    "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 16,
-    "Last Seen": "2026-09-23 12:34",
+    "Mention Count": 17,
+    "Last Seen": "2026-09-24 01:19",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -8305,8 +8305,8 @@
   },
   {
     "Company": "MTN Group Foundation",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-23 14:11",
+    "Mention Count": 2,
+    "Last Seen": "2026-09-24 01:19",
     "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": "2026-09-23 14:11"
@@ -8342,5 +8342,29 @@
     "Industry": "Education",
     "Risk Level": "Low",
     "First Seen": "2026-09-23 17:41"
+  },
+  {
+    "Company": "Access Bank Kenya",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-24 01:17",
+    "Industry": "Banking",
+    "Risk Level": "Medium",
+    "First Seen": "2026-09-24 01:17"
+  },
+  {
+    "Company": "National Bank of Kenya",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-24 01:17",
+    "Industry": "Banking",
+    "Risk Level": "Medium",
+    "First Seen": "2026-09-24 01:17"
+  },
+  {
+    "Company": "Gates Foundation",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-24 01:19",
+    "Industry": "Philanthropy",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-24 01:19"
   }
 ]

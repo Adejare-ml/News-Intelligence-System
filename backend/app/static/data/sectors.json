@@ -2,22 +2,23 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 973,
-      "mentions": 1674,
+      "companies": 971,
+      "mentions": 1661,
       "risk": {
-        "Low": 856,
-        "Critical": 59,
+        "Low": 855,
+        "Critical": 58,
         "Medium": 34,
         "High": 24
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 9,
-      "mentions": 74,
+      "companies": 11,
+      "mentions": 90,
       "risk": {
+        "Critical": 1,
         "Medium": 3,
-        "Low": 5,
+        "Low": 6,
         "High": 1
       }
     },
@@ -31,10 +32,11 @@
     },
     {
       "industry": "Banking",
-      "companies": 5,
-      "mentions": 8,
+      "companies": 7,
+      "mentions": 10,
       "risk": {
-        "Low": 5
+        "Low": 5,
+        "Medium": 2
       }
     },
     {
@@ -73,20 +75,20 @@
       }
     },
     {
+      "industry": "Telecoms",
+      "companies": 3,
+      "mentions": 5,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 2,
       "mentions": 4,
       "risk": {
         "Medium": 1,
         "Low": 1
-      }
-    },
-    {
-      "industry": "Telecoms",
-      "companies": 3,
-      "mentions": 4,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -176,6 +178,14 @@
       "mentions": 2,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Philanthropy",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -291,14 +301,6 @@
       }
     },
     {
-      "industry": "Philanthropy",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Policy Research/Consultancy",
       "companies": 1,
       "mentions": 1,
@@ -331,5 +333,5 @@
       }
     }
   ],
-  "generated": "2026-09-23 20:03:52"
+  "generated": "2026-09-24 01:20:01"
 }

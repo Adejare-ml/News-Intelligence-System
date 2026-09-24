@@ -91,6 +91,12 @@
       "risk": "Critical"
     },
     {
+      "id": "de3af1814043",
+      "label": "NNPCL",
+      "type": "company",
+      "risk": "Critical"
+    },
+    {
       "id": "81dcb233ede4",
       "label": "Tinubu",
       "type": "company",
@@ -109,21 +115,9 @@
       "risk": "Medium"
     },
     {
-      "id": "de3af1814043",
-      "label": "NNPCL",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
       "id": "dce5a31d3181",
       "label": "MTN Nigeria",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -133,8 +127,38 @@
       "risk": "Low"
     },
     {
+      "id": "8a7b7af09965",
+      "label": "Ebonyi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bbdd3227478f",
+      "label": "Niger Delta Development Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -213,30 +237,6 @@
     {
       "id": "631735ae7f74",
       "label": "Nigeria Police Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1872a954bc34",
-      "label": "Nigerian Content Development & Monitoring Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "95368915b67a",
-      "label": "Bureau of Public Procurement",
       "type": "agency",
       "risk": "Low"
     },
@@ -340,12 +340,6 @@
       "id": "86430d64a9dc",
       "label": "Unnamed Commissioner",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8a7b7af09965",
-      "label": "Ebonyi State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
