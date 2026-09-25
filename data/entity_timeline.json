@@ -122,7 +122,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 10,
+      "total_mentions": 11,
       "points": [
         {
           "week": "2026-09-14",
@@ -132,8 +132,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 12.5,
+          "mentions": 9,
+          "avg_risk": 12.2,
           "max_risk": 20
         }
       ]
@@ -798,6 +798,19 @@
       ]
     },
     {
+      "key": "national bureau of statistics",
+      "label": "National Bureau of Statistics",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "total_mentions": 2,
@@ -884,6 +897,19 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "electricity regulatory commission",
+      "label": "Nigerian Electricity Regulatory Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 27.5,
+          "max_risk": 45
         }
       ]
     },
@@ -2329,19 +2355,6 @@
       ]
     },
     {
-      "key": "national bureau of statistics",
-      "label": "National Bureau of Statistics",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "national diaspora commission",
       "label": "National Diaspora Commission",
       "total_mentions": 1,
@@ -2624,19 +2637,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "electricity regulatory commission",
-      "label": "Nigerian Electricity Regulatory Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -3200,5 +3200,5 @@
       ]
     }
   ],
-  "generated": "2026-09-25 17:45:33"
+  "generated": "2026-09-25 20:22:06"
 }

@@ -187,6 +187,12 @@
       "risk": "Low"
     },
     {
+      "id": "fc891fdac42c",
+      "label": "National Bureau of Statistics",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "3c66c02431cf",
       "label": "Integrity and Medicare Policy Initiative",
       "type": "agency",
@@ -225,12 +231,6 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
       "type": "agency",
       "risk": "Low"
     },

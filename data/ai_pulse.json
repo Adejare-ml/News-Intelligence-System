@@ -1,25 +1,25 @@
 {
-  "generated": "2026-09-25 17:45:30",
+  "generated": "2026-09-25 20:22:04",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3621,
+      "likes": 3653,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2299,
+      "likes": 2309,
       "downloads": 42469
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1749,
+      "likes": 1762,
       "downloads": 715906
     },
     {
@@ -33,28 +33,28 @@
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 2079,
+      "likes": 2085,
       "downloads": 3109078
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 720,
+      "likes": 728,
       "downloads": 3266380
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 660,
+      "likes": 668,
       "downloads": 4978
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 549,
+      "likes": 551,
       "downloads": 2853
     }
   ],
@@ -72,7 +72,7 @@
     {
       "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
       "url": "https://huggingface.co/papers/2609.29845",
-      "upvotes": 46
+      "upvotes": 53
     },
     {
       "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
