@@ -1,15 +1,6 @@
 {
   "movers": [
     {
-      "key": "international chamber of commerce",
-      "label": "International Chamber of Commerce",
-      "recent_avg": 81.7,
-      "previous_avg": 45.0,
-      "delta": 36.7,
-      "recent_mentions": 3,
-      "previous_mentions": 3
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 30.0,
@@ -17,6 +8,15 @@
       "delta": -35.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "recent_avg": 80.0,
+      "previous_avg": 55.0,
+      "delta": 25.0,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     },
     {
       "key": "customs service",
@@ -91,6 +91,15 @@
       "previous_mentions": 5
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 12.2,
+      "previous_avg": 15.0,
+      "delta": -2.8,
+      "recent_mentions": 9,
+      "previous_mentions": 2
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 20.0,
@@ -107,15 +116,6 @@
       "delta": 2.5,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 12.5,
-      "previous_avg": 15.0,
-      "delta": -2.5,
-      "recent_mentions": 8,
-      "previous_mentions": 2
     },
     {
       "key": "lagos chamber of commerce and industry",
@@ -163,6 +163,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "electricity regulatory commission",
+      "label": "Nigerian Electricity Regulatory Commission",
+      "recent_avg": 27.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "recent_avg": 27.0,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 5,
       "previous_mentions": 0
-    },
-    {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-25 17:45:33"
+  "generated": "2026-09-25 20:22:06"
 }
