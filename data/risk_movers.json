@@ -39,20 +39,11 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 56.9,
+      "recent_avg": 57.8,
       "previous_avg": 37.9,
-      "delta": 19.0,
-      "recent_mentions": 8,
+      "delta": 19.9,
+      "recent_mentions": 9,
       "previous_mentions": 21
-    },
-    {
-      "key": "institute of chartered accountants of",
-      "label": "Institute of Chartered Accountants of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": 45.0,
-      "delta": -15.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "government of",
@@ -82,15 +73,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 16.2,
-      "previous_avg": 22.5,
-      "delta": -6.3,
-      "recent_mentions": 12,
-      "previous_mentions": 4
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 21.4,
@@ -98,6 +80,15 @@
       "delta": -6.3,
       "recent_mentions": 14,
       "previous_mentions": 15
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 16.8,
+      "previous_avg": 20.0,
+      "delta": -3.2,
+      "recent_mentions": 11,
+      "previous_mentions": 5
     },
     {
       "key": "national petroleum company",
@@ -145,15 +136,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "abubakar malami",
-      "label": "Abubakar Malami",
-      "recent_avg": 85.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "maina",
       "label": "Maina",
       "recent_avg": 68.3,
@@ -179,8 +161,26 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 27.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 5,
+      "previous_mentions": 0
+    },
+    {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-25 12:37:09"
+  "generated": "2026-09-25 17:45:33"
 }

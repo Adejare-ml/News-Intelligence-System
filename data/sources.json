@@ -16,9 +16,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1168,
+      "total": 1169,
       "published": 627,
-      "filtered": 541,
+      "filtered": 542,
       "accept_rate": 54,
       "avg_risk": 31.2,
       "engines": {
@@ -26,7 +26,7 @@
         "ollama": 183,
         "nvidia": 4
       },
-      "last_seen": "2026-09-24"
+      "last_seen": "2026-09-25"
     },
     {
       "source": "Punch Newspapers",
@@ -44,9 +44,9 @@
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 457,
+      "total": 459,
       "published": 151,
-      "filtered": 306,
+      "filtered": 308,
       "accept_rate": 33,
       "avg_risk": 27.4,
       "engines": {
@@ -100,16 +100,16 @@
     },
     {
       "source": "naijaonpoint_ng",
-      "total": 173,
+      "total": 174,
       "published": 52,
-      "filtered": 121,
+      "filtered": 122,
       "accept_rate": 30,
       "avg_risk": 23.7,
       "engines": {
         "unknown": 43,
         "ollama": 9
       },
-      "last_seen": "2026-09-24"
+      "last_seen": "2026-09-25"
     },
     {
       "source": "sunnewsonline",
@@ -139,6 +139,19 @@
       "last_seen": "2026-09-23"
     },
     {
+      "source": "dailypost",
+      "total": 134,
+      "published": 42,
+      "filtered": 92,
+      "accept_rate": 31,
+      "avg_risk": 24.7,
+      "engines": {
+        "unknown": 40,
+        "ollama": 2
+      },
+      "last_seen": "2026-09-25"
+    },
+    {
       "source": "punchng",
       "total": 134,
       "published": 34,
@@ -151,19 +164,6 @@
         "ollama": 14
       },
       "last_seen": "2026-09-23"
-    },
-    {
-      "source": "dailypost",
-      "total": 132,
-      "published": 42,
-      "filtered": 90,
-      "accept_rate": 32,
-      "avg_risk": 24.7,
-      "engines": {
-        "unknown": 40,
-        "ollama": 2
-      },
-      "last_seen": "2026-09-24"
     },
     {
       "source": "vanguardngr",
@@ -309,15 +309,15 @@
     },
     {
       "source": "guardian.ng",
-      "total": 22,
-      "published": 5,
+      "total": 23,
+      "published": 6,
       "filtered": 17,
-      "accept_rate": 23,
-      "avg_risk": 43.0,
+      "accept_rate": 26,
+      "avg_risk": 46.7,
       "engines": {
-        "ollama": 5
+        "ollama": 6
       },
-      "last_seen": "2026-09-24"
+      "last_seen": "2026-09-25"
     },
     {
       "source": "vanguardngr.com",
@@ -1943,5 +1943,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-25 12:37:09"
+  "generated": "2026-09-25 17:45:33"
 }

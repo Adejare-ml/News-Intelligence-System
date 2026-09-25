@@ -1,93 +1,93 @@
 {
-  "generated": "2026-09-25 12:37:03",
+  "generated": "2026-09-25 17:45:30",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3540,
+      "likes": 3621,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2263,
+      "likes": 2299,
       "downloads": 42469
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1710,
+      "likes": 1749,
       "downloads": 715906
-    },
-    {
-      "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "task": "text-generation",
-      "likes": 2063,
-      "downloads": 3109078
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1664,
+      "likes": 1684,
       "downloads": 42950
+    },
+    {
+      "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "task": "text-generation",
+      "likes": 2079,
+      "downloads": 3109078
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 707,
+      "likes": 720,
       "downloads": 3266380
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 651,
+      "likes": 660,
       "downloads": 4978
     },
     {
-      "id": "TaichuAI/ZDTaichu5.0-9B",
-      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
-      "task": "image-text-to-text",
-      "likes": 1043,
-      "downloads": 9498
+      "id": "Edge0/Audio8-ASR-Infinite",
+      "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
+      "task": "automatic-speech-recognition",
+      "likes": 549,
+      "downloads": 2853
     }
   ],
   "papers": [
     {
+      "title": "RGBD20K: A Large-Scale Benchmark for RGB-D Semantic Segmentation",
+      "url": "https://huggingface.co/papers/2609.29028",
+      "upvotes": 5
+    },
+    {
+      "title": "AV-GRPO: Modality-Anchored Decoupling Diffusion Reinforcement Learning for Joint Audio-Video Generation",
+      "url": "https://huggingface.co/papers/2609.29816",
+      "upvotes": 2
+    },
+    {
+      "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+      "url": "https://huggingface.co/papers/2609.29845",
+      "upvotes": 46
+    },
+    {
       "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
       "url": "https://huggingface.co/papers/2609.29429",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
       "url": "https://huggingface.co/papers/2609.29362",
-      "upvotes": 9
+      "upvotes": 10
     },
     {
       "title": "Coding Agents for Generalized Task and Motion Planning Problems",
       "url": "https://huggingface.co/papers/2609.30233",
-      "upvotes": 5
-    },
-    {
-      "title": "DeltaWAM: Delta World Action Models for Bimanual Manipulation",
-      "url": "https://huggingface.co/papers/2609.28811",
-      "upvotes": 1
-    },
-    {
-      "title": "Rufus-Air: An Open LLM Post-Training Recipe",
-      "url": "https://huggingface.co/papers/2609.29421",
-      "upvotes": 1
-    },
-    {
-      "title": "Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone",
-      "url": "https://huggingface.co/papers/2609.23087",
-      "upvotes": 2
+      "upvotes": 6
     }
   ]
 }

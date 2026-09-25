@@ -1,5 +1,22 @@
 [
   {
+    "ID": 7050,
+    "Time": "Fri, 25 Sep 2026 14:16:03 GMT",
+    "Title": "EFCC mull probe of Akpagu over alleged UNICAL infractions - guardian.ng",
+    "Source": "guardian.ng",
+    "URL": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNX1piN2FpUjNObWdIX2M2TWZzdk9CSzB6N014Rlphc3hFeWZ0UWZEbjRFMTJLR1VpWExlaDQyUERBc0RoaGdrbThQbWZoWElLMzlzdE5iLUZWMFVNNndpRTNmZUtYSVozeXVZWHhXZ2M2NlJORjRXTGhGV01rai1NMHRBdmtibGt0Z2lN?oc=5",
+    "Category": "Legal",
+    "Risk Score": 65,
+    "Summary": "The Economic and Financial Crimes Commission (EFCC) is considering an investigation into Akpagu regarding alleged infractions at the University of Calabar (UNICAL).",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Corruption",
+    "Risk Level": "Medium",
+    "Importance": 40,
+    "Entities": "Economic and Financial Crimes Commission|University of Calabar|Akpagu",
+    "Filter Reason": ""
+  },
+  {
     "ID": 7046,
     "Time": "2026-09-25 00:22:00",
     "Title": "Mambilla: IMPI seeks review of $500,000 transaction",
@@ -1000,23 +1017,6 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Magdalene Health, Wellness, Research, Technology & Sport City",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 6873,
-    "Time": "Tue, 22 Sep 2026 17:11:46 GMT",
-    "Title": "Teachers\u2019 council develops AI-powered lesson tool for Nigerian schools - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSEhaaEwyU2wxNDNIdHdTVnkzV2xKY1pwaFd1X0NnSzllRkFyWUFXS1RIaVA3cHZIMXFGSnFjX0lEWUdXQ1ptTDhKcTFwUjhXWHZZX2FmLWpZUE1ibVBlR2FTYmNSb3VzT3FVcDFWdUItRlhPOVBlM2xIcGpQY1FpTm93SXlHWWtmWnRSQzJGbzhjaV9R?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Teachers' Council has developed an AI-powered lesson tool designed for use in Nigerian schools to enhance educational delivery.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Other",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Teachers' Council",
     "Filter Reason": ""
   }
 ]

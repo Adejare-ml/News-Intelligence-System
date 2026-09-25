@@ -175,6 +175,12 @@
       "risk": "Low"
     },
     {
+      "id": "8c7f032b56b3",
+      "label": "University of Calabar",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "478418814097",
       "label": "European Union",
       "type": "agency",
@@ -229,12 +235,6 @@
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "2388a11cf55e",
       "label": "Ola Olukoyede",
       "type": "person",
@@ -261,6 +261,12 @@
     {
       "id": "3e45c1f8a33f",
       "label": "Heineken Lokpobiri",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0cff5b917651",
+      "label": "Akpagu",
       "type": "person",
       "risk": "Low"
     },
@@ -445,18 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "f121c0e97820",
-      "label": "Seyi Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8e32fb3e3009",
-      "label": "All Progressives Movement",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -619,6 +613,12 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "653fd7557fc1",
       "label": "Tertiary Education Trust Fund",
       "type": "agency",
@@ -673,6 +673,12 @@
       "from": "3e45c1f8a33f",
       "to": "22ee91f832d4",
       "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
+    },
+    {
+      "id": "b78d546665ef",
+      "from": "0cff5b917651",
+      "to": "8c7f032b56b3",
+      "label": "Appointed as Not Stated"
     },
     {
       "id": "8cd0d9f8c914",
@@ -793,12 +799,6 @@
       "from": "f3f65e2dd7f8",
       "to": "ce2f789533a5",
       "label": "Appointed as Promoter"
-    },
-    {
-      "id": "b728b37a3f50",
-      "from": "f121c0e97820",
-      "to": "8e32fb3e3009",
-      "label": "Appointed as Governor"
     },
     {
       "id": "bacdbeb20944",
