@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 970,
-      "mentions": 1660,
+      "companies": 969,
+      "mentions": 1653,
       "risk": {
-        "Low": 854,
+        "Low": 853,
         "Critical": 58,
         "Medium": 34,
         "High": 24
@@ -37,6 +37,14 @@
       "risk": {
         "Low": 5,
         "Medium": 2
+      }
+    },
+    {
+      "industry": "Conglomerate",
+      "companies": 1,
+      "mentions": 8,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -189,6 +197,14 @@
       }
     },
     {
+      "industry": "Logistics and Ports",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
       "mentions": 2,
@@ -293,14 +309,6 @@
       }
     },
     {
-      "industry": "Logistics and Ports",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -349,5 +357,5 @@
       }
     }
   ],
-  "generated": "2026-09-25 01:22:10"
+  "generated": "2026-09-25 12:37:09"
 }

@@ -28,15 +28,6 @@
       "previous_mentions": 7
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 57.8,
-      "previous_avg": 36.5,
-      "delta": 21.3,
-      "recent_mentions": 9,
-      "previous_mentions": 20
-    },
-    {
       "key": "dangote petroleum refinery",
       "label": "Dangote Petroleum Refinery",
       "recent_avg": 43.3,
@@ -44,6 +35,24 @@
       "delta": 20.0,
       "recent_mentions": 3,
       "previous_mentions": 3
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 56.9,
+      "previous_avg": 37.9,
+      "delta": 19.0,
+      "recent_mentions": 8,
+      "previous_mentions": 21
+    },
+    {
+      "key": "institute of chartered accountants of",
+      "label": "Institute of Chartered Accountants of Nigeria",
+      "recent_avg": 30.0,
+      "previous_avg": 45.0,
+      "delta": -15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "government of",
@@ -55,13 +64,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 21.8,
-      "previous_avg": 29.2,
-      "delta": -7.4,
-      "recent_mentions": 14,
-      "previous_mentions": 13
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 33.3,
+      "previous_avg": 24.4,
+      "delta": 8.9,
+      "recent_mentions": 6,
+      "previous_mentions": 9
     },
     {
       "key": "atiku abubakar",
@@ -75,20 +84,20 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 15.9,
+      "recent_avg": 16.2,
       "previous_avg": 22.5,
-      "delta": -6.6,
-      "recent_mentions": 11,
+      "delta": -6.3,
+      "recent_mentions": 12,
       "previous_mentions": 4
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 31.4,
-      "previous_avg": 25.0,
-      "delta": 6.4,
-      "recent_mentions": 7,
-      "previous_mentions": 8
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 21.4,
+      "previous_avg": 27.7,
+      "delta": -6.3,
+      "recent_mentions": 14,
+      "previous_mentions": 15
     },
     {
       "key": "national petroleum company",
@@ -109,6 +118,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 12.5,
+      "previous_avg": 15.0,
+      "delta": -2.5,
+      "recent_mentions": 8,
+      "previous_mentions": 2
+    },
+    {
       "key": "lagos chamber of commerce and industry",
       "label": "Lagos Chamber of Commerce and Industry",
       "recent_avg": 17.5,
@@ -125,15 +143,6 @@
       "delta": -2.5,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 12.9,
-      "previous_avg": 15.0,
-      "delta": -2.1,
-      "recent_mentions": 7,
-      "previous_mentions": 2
     },
     {
       "key": "abubakar malami",
@@ -163,24 +172,15 @@
       "previous_mentions": 0
     },
     {
-      "key": "institute of chartered accountants of",
-      "label": "Institute of Chartered Accountants of Nigeria",
-      "recent_avg": 35.0,
+      "key": "dp world",
+      "label": "DP World",
+      "recent_avg": 32.5,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 27.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 5,
+      "recent_mentions": 2,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-25 01:22:10"
+  "generated": "2026-09-25 12:37:09"
 }

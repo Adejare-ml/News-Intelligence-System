@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
       "type": "agency",
@@ -153,6 +159,12 @@
     {
       "id": "d9ca93fb64a5",
       "label": "UNICEF",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a5443515f025",
+      "label": "Nigerian Electricity Regulatory Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,8 +199,8 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "be09acc08e52",
+      "label": "Independent Monitoring and Procurement Inspectorate",
       "type": "agency",
       "risk": "Low"
     },
@@ -219,18 +231,6 @@
     {
       "id": "5a98eb23f6f5",
       "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a855b071fef",
-      "label": "Nigeria Revenue Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6c302b827a55",
-      "label": "Government of the United States",
       "type": "agency",
       "risk": "Low"
     },
@@ -280,6 +280,12 @@
       "id": "5144dcc43184",
       "label": "Zacch Adedeji",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3a855b071fef",
+      "label": "Nigeria Revenue Service",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -641,12 +647,6 @@
       "label": "Hughes",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "bcf9d1e3fc55",
-      "label": "Nigerian Airspace Management Agency",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -879,6 +879,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "8e5bf216553a",
+      "from": "334c4a4c42fd",
+      "to": "be09acc08e52",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "c70b2a3f1d73",
       "from": "124923cf0855",
       "to": "7dc08a8ebfaa",
@@ -960,12 +966,6 @@
       "id": "47c610d34ffe",
       "from": "697b31d5b595",
       "to": "95178e3865cd",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "ad2aaf1f69f3",
-      "from": "334c4a4c42fd",
-      "to": "bcf9d1e3fc55",
       "label": "Contract Awardee"
     }
   ]

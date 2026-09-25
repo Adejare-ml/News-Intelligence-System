@@ -1,92 +1,92 @@
 {
-  "generated": "2026-09-25 01:22:07",
+  "generated": "2026-09-25 12:37:03",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3410,
+      "likes": 3540,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2205,
-      "downloads": 37618
-    },
-    {
-      "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
-      "task": "text-generation",
-      "likes": 2040,
-      "downloads": 2991233
+      "likes": 2263,
+      "downloads": 42469
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1635,
-      "downloads": 575697
+      "likes": 1710,
+      "downloads": 715906
+    },
+    {
+      "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
+      "task": "text-generation",
+      "likes": 2063,
+      "downloads": 3109078
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1647,
-      "downloads": 41923
+      "likes": 1664,
+      "downloads": 42950
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 685,
-      "downloads": 2858923
+      "likes": 707,
+      "downloads": 3266380
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 635,
-      "downloads": 4541
+      "likes": 651,
+      "downloads": 4978
     },
     {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "id": "TaichuAI/ZDTaichu5.0-9B",
+      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
       "task": "image-text-to-text",
-      "likes": 3716,
-      "downloads": 606028
+      "likes": 1043,
+      "downloads": 9498
     }
   ],
   "papers": [
     {
-      "title": "Self-Organizing Agent Teams Learn to Reason Together",
-      "url": "https://huggingface.co/papers/2609.22682",
-      "upvotes": 4
-    },
-    {
-      "title": "The Linear Representation Hypothesis Needs a Group Action",
-      "url": "https://huggingface.co/papers/2609.27158",
-      "upvotes": 2
-    },
-    {
-      "title": "Knowledge Pull Requests for Continual Document Authoring",
-      "url": "https://huggingface.co/papers/2609.26634",
-      "upvotes": 2
-    },
-    {
-      "title": "Capable yet Parsimonious: Extracting and Characterizing Hidden Chain-of-Thought in Frontier Models",
-      "url": "https://huggingface.co/papers/2609.26637",
-      "upvotes": 7
-    },
-    {
-      "title": "X-Planner: Event-Structured Task Planning for Embodied Intelligence",
-      "url": "https://huggingface.co/papers/2609.25187",
+      "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+      "url": "https://huggingface.co/papers/2609.29429",
       "upvotes": 1
     },
     {
-      "title": "Calibration as a First-Class Criterion in LLM Evaluation",
-      "url": "https://huggingface.co/papers/2609.26489",
+      "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
+      "url": "https://huggingface.co/papers/2609.29362",
+      "upvotes": 9
+    },
+    {
+      "title": "Coding Agents for Generalized Task and Motion Planning Problems",
+      "url": "https://huggingface.co/papers/2609.30233",
+      "upvotes": 5
+    },
+    {
+      "title": "DeltaWAM: Delta World Action Models for Bimanual Manipulation",
+      "url": "https://huggingface.co/papers/2609.28811",
+      "upvotes": 1
+    },
+    {
+      "title": "Rufus-Air: An Open LLM Post-Training Recipe",
+      "url": "https://huggingface.co/papers/2609.29421",
+      "upvotes": 1
+    },
+    {
+      "title": "Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone",
+      "url": "https://huggingface.co/papers/2609.23087",
       "upvotes": 2
     }
   ]
