@@ -1,43 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 169,
-  "previous_articles": 179,
+  "recent_articles": 163,
+  "previous_articles": 188,
   "rising": [
     {
-      "term": "mambilla",
-      "recent": 11,
-      "previous": 0,
-      "change": 11
-    },
-    {
-      "term": "lagos",
-      "recent": 11,
-      "previous": 2,
+      "term": "guardian",
+      "recent": 42,
+      "previous": 33,
       "change": 9
     },
     {
-      "term": "guardian",
-      "recent": 40,
-      "previous": 33,
+      "term": "lagos",
+      "recent": 10,
+      "previous": 3,
       "change": 7
     },
     {
-      "term": "health",
-      "recent": 9,
-      "previous": 2,
-      "change": 7
+      "term": "premium",
+      "recent": 33,
+      "previous": 27,
+      "change": 6
     },
     {
-      "term": "project",
-      "recent": 9,
-      "previous": 2,
-      "change": 7
+      "term": "premium times",
+      "recent": 33,
+      "previous": 27,
+      "change": 6
     },
     {
-      "term": "icc",
-      "recent": 7,
+      "term": "times",
+      "recent": 33,
+      "previous": 27,
+      "change": 6
+    },
+    {
+      "term": "oil",
+      "recent": 6,
       "previous": 0,
-      "change": 7
+      "change": 6
     },
     {
       "term": "cbn",
@@ -46,9 +46,9 @@
       "change": 5
     },
     {
-      "term": "battle",
-      "recent": 5,
-      "previous": 0,
+      "term": "icc",
+      "recent": 6,
+      "previous": 1,
       "change": 5
     },
     {
@@ -58,18 +58,30 @@
       "change": 5
     },
     {
-      "term": "group",
-      "recent": 6,
-      "previous": 2,
-      "change": 4
+      "term": "first",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
+      "term": "efcc",
+      "recent": 9,
+      "previous": 17,
+      "change": -8
+    },
+    {
+      "term": "dangote",
+      "recent": 8,
+      "previous": 16,
+      "change": -8
+    },
+    {
       "term": "ipo",
       "recent": 3,
-      "previous": 12,
-      "change": -9
+      "previous": 11,
+      "change": -8
     },
     {
       "term": "targets",
@@ -96,9 +108,9 @@
       "change": -8
     },
     {
-      "term": "dangote",
-      "recent": 9,
-      "previous": 16,
+      "term": "newspapers",
+      "recent": 28,
+      "previous": 35,
       "change": -7
     },
     {
@@ -112,35 +124,23 @@
       "recent": 2,
       "previous": 9,
       "change": -7
-    },
-    {
-      "term": "cac",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "minister",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 105,
-      "previous": 126
+      "recent": 107,
+      "previous": 125
     },
     {
       "category": "Company",
-      "recent": 33,
-      "previous": 37
+      "recent": 30,
+      "previous": 40
     },
     {
       "category": "Legal",
-      "recent": 30,
-      "previous": 16
+      "recent": 25,
+      "previous": 23
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-24 20:21:26"
+  "generated": "2026-09-25 01:22:08"
 }

@@ -133,6 +133,60 @@
       "risk": "Low"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d9ca93fb64a5",
+      "label": "UNICEF",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "478418814097",
+      "label": "European Union",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3c66c02431cf",
+      "label": "Integrity and Medicare Policy Initiative",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d7e1eab1a3bb",
+      "label": "Government of Ghana",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "22ee91f832d4",
+      "label": "Ministry of State for Petroleum Resources",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -151,26 +205,8 @@
       "risk": "Low"
     },
     {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,12 +223,6 @@
       "risk": "Low"
     },
     {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "3a855b071fef",
       "label": "Nigeria Revenue Service",
       "type": "agency",
@@ -205,33 +235,33 @@
       "risk": "Low"
     },
     {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
-      "type": "agency",
+      "id": "2388a11cf55e",
+      "label": "Ola Olukoyede",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "44622f42ba94",
-      "label": "Nigeria Hotel and Tourism Employees",
-      "type": "agency",
+      "id": "325a5c8a1ef5",
+      "label": "Atiku Abubakar",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "fc891fdac42c",
-      "label": "National Bureau of Statistics",
-      "type": "agency",
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "5a179b388706",
-      "label": "Ondo State Civil Service",
-      "type": "agency",
+      "id": "58c58351d674",
+      "label": "Olayemi Cardoso",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "55730e1fee4a",
-      "label": "Ministry of Petroleum Resources",
-      "type": "agency",
+      "id": "3e45c1f8a33f",
+      "label": "Heineken Lokpobiri",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -259,9 +289,21 @@
       "risk": "Low"
     },
     {
-      "id": "3e45c1f8a33f",
-      "label": "Heineken Lokpobiri",
-      "type": "person",
+      "id": "44622f42ba94",
+      "label": "Nigeria Hotel and Tourism Employees",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "55730e1fee4a",
+      "label": "Ministry of Petroleum Resources",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -274,12 +316,6 @@
       "id": "d297cca8ca60",
       "label": "Presidential Task Force on Pension Reforms",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "325a5c8a1ef5",
-      "label": "Atiku Abubakar",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -415,48 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "3fd6d917dd79",
-      "label": "Otti",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "56a525aa777f",
-      "label": "Theodore",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "26cd16c5d969",
-      "label": "African Diaspora Network",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6c5bc43b4439",
-      "label": "Albert",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c9749d310d6c",
-      "label": "Loft & Keys Ltd",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "9392713dc79b",
-      "label": "Ojulari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -583,6 +577,12 @@
       "risk": "Medium"
     },
     {
+      "id": "124923cf0855",
+      "label": "DP World",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
       "type": "agency",
@@ -647,21 +647,33 @@
       "label": "Nigerian Airspace Management Agency",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "0ba0cb08c8cb",
-      "label": "Nigerian Army",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b1066afb9628",
-      "label": "Unnamed boat contractors",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "173d8cf4554e",
+      "from": "2388a11cf55e",
+      "to": "0bcaaf453cd3",
+      "label": "Appointed as Chairman"
+    },
+    {
+      "id": "9e2a94a3f3aa",
+      "from": "325a5c8a1ef5",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as None"
+    },
+    {
+      "id": "fd1604102e20",
+      "from": "58c58351d674",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Governor"
+    },
+    {
+      "id": "c9ac5d0835f2",
+      "from": "3e45c1f8a33f",
+      "to": "22ee91f832d4",
+      "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
+    },
     {
       "id": "8cd0d9f8c914",
       "from": "55bcb5b22e12",
@@ -789,30 +801,6 @@
       "label": "Appointed as Governor"
     },
     {
-      "id": "6c0d2e5de652",
-      "from": "3fd6d917dd79",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as None"
-    },
-    {
-      "id": "cc3246c05d31",
-      "from": "56a525aa777f",
-      "to": "26cd16c5d969",
-      "label": "Appointed as Board Member"
-    },
-    {
-      "id": "118c10bd664d",
-      "from": "6c5bc43b4439",
-      "to": "c9749d310d6c",
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": "6fe1d5610f89",
-      "from": "9392713dc79b",
-      "to": "f38bd75574f6",
-      "label": "Appointed as Group CEO"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -889,6 +877,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "c70b2a3f1d73",
+      "from": "124923cf0855",
+      "to": "7dc08a8ebfaa",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
@@ -972,12 +966,6 @@
       "id": "ad2aaf1f69f3",
       "from": "334c4a4c42fd",
       "to": "bcf9d1e3fc55",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "04f247447b01",
-      "from": "b1066afb9628",
-      "to": "0ba0cb08c8cb",
       "label": "Contract Awardee"
     }
   ]

@@ -1,6 +1,15 @@
 {
   "movers": [
     {
+      "key": "international chamber of commerce",
+      "label": "International Chamber of Commerce",
+      "recent_avg": 81.7,
+      "previous_avg": 45.0,
+      "delta": 36.7,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 30.0,
@@ -8,15 +17,6 @@
       "delta": -35.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 66.0,
-      "previous_avg": 31.8,
-      "delta": 34.2,
-      "recent_mentions": 10,
-      "previous_mentions": 17
     },
     {
       "key": "customs service",
@@ -28,39 +28,57 @@
       "previous_mentions": 7
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 28.3,
-      "previous_avg": 15.0,
-      "delta": 13.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 57.8,
+      "previous_avg": 36.5,
+      "delta": 21.3,
+      "recent_mentions": 9,
+      "previous_mentions": 20
     },
     {
       "key": "dangote petroleum refinery",
       "label": "Dangote Petroleum Refinery",
-      "recent_avg": 37.5,
-      "previous_avg": 25.0,
-      "delta": 12.5,
+      "recent_avg": 43.3,
+      "previous_avg": 23.3,
+      "delta": 20.0,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 26.2,
+      "previous_avg": 15.0,
+      "delta": 11.2,
       "recent_mentions": 4,
-      "previous_mentions": 2
+      "previous_mentions": 1
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 21.8,
+      "previous_avg": 29.2,
+      "delta": -7.4,
+      "recent_mentions": 14,
+      "previous_mentions": 13
     },
     {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar",
-      "recent_avg": 85.0,
+      "recent_avg": 81.7,
       "previous_avg": 75.0,
-      "delta": 10.0,
-      "recent_mentions": 2,
+      "delta": 6.7,
+      "recent_mentions": 3,
       "previous_mentions": 1
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 15.5,
+      "recent_avg": 15.9,
       "previous_avg": 22.5,
-      "delta": -7.0,
-      "recent_mentions": 10,
+      "delta": -6.6,
+      "recent_mentions": 11,
       "previous_mentions": 4
     },
     {
@@ -73,31 +91,13 @@
       "previous_mentions": 8
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 14.3,
-      "previous_avg": 10.0,
-      "delta": 4.3,
-      "recent_mentions": 7,
-      "previous_mentions": 1
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 21.2,
-      "previous_avg": 17.0,
-      "delta": 4.2,
+      "recent_avg": 20.0,
+      "previous_avg": 17.5,
+      "delta": 2.5,
       "recent_mentions": 8,
-      "previous_mentions": 5
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 24.2,
-      "previous_avg": 27.8,
-      "delta": -3.6,
-      "recent_mentions": 18,
-      "previous_mentions": 9
+      "previous_mentions": 6
     },
     {
       "key": "akwa ibom state government",
@@ -118,13 +118,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "recent_avg": 42.5,
-      "previous_avg": 41.7,
-      "delta": 0.8,
+      "key": "heineken lokpobiri",
+      "label": "Heineken Lokpobiri",
+      "recent_avg": 17.5,
+      "previous_avg": 20.0,
+      "delta": -2.5,
       "recent_mentions": 2,
-      "previous_mentions": 3
+      "previous_mentions": 1
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 12.9,
+      "previous_avg": 15.0,
+      "delta": -2.1,
+      "recent_mentions": 7,
+      "previous_mentions": 2
     },
     {
       "key": "abubakar malami",
@@ -145,24 +154,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "federal bureau of investigation",
-      "label": "Federal Bureau of Investigation",
-      "recent_avg": 63.8,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
-      "previous_mentions": 0
-    },
-    {
-      "key": "international chamber of commerce",
-      "label": "International Chamber of Commerce",
-      "recent_avg": 63.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 6,
-      "previous_mentions": 0
-    },
-    {
       "key": "sunrise",
       "label": "Sunrise Ltd",
       "recent_avg": 62.5,
@@ -172,15 +163,24 @@
       "previous_mentions": 0
     },
     {
-      "key": "sunrise power",
-      "label": "Sunrise Power",
-      "recent_avg": 60.0,
+      "key": "institute of chartered accountants of",
+      "label": "Institute of Chartered Accountants of Nigeria",
+      "recent_avg": 35.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 27.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 5,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-24 20:21:43"
+  "generated": "2026-09-25 01:22:10"
 }

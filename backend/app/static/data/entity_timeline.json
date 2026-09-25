@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 27,
+      "total_mentions": 29,
       "points": [
         {
           "week": "2026-09-07",
@@ -19,8 +19,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 64.0,
+          "mentions": 7,
+          "avg_risk": 52.9,
           "max_risk": 75
         }
       ]
@@ -51,6 +51,31 @@
       ]
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "total_mentions": 15,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 6,
+          "avg_risk": 16.7,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 15.6,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 15,
@@ -76,34 +101,9 @@
       ]
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "total_mentions": 14,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 6,
-          "avg_risk": 16.7,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 7,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 13,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-14",
@@ -113,9 +113,28 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 25.0,
+          "mentions": 5,
+          "avg_risk": 22.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 7,
+          "avg_risk": 12.9,
+          "max_risk": 20
         }
       ]
     },
@@ -135,25 +154,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 6,
-          "avg_risk": 13.3,
-          "max_risk": 20
         }
       ]
     },
@@ -203,6 +203,25 @@
       ]
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 5,
@@ -212,6 +231,25 @@
           "mentions": 5,
           "avg_risk": 17.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 28.8,
+          "max_risk": 45
         }
       ]
     },
@@ -235,6 +273,31 @@
       ]
     },
     {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -244,44 +307,6 @@
           "mentions": 4,
           "avg_risk": 63.8,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 28.3,
-          "max_risk": 45
         }
       ]
     },
@@ -330,27 +355,21 @@
       ]
     },
     {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
+      "key": "heineken lokpobiri",
+      "label": "Heineken Lokpobiri",
       "total_mentions": 3,
       "points": [
         {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
+          "avg_risk": 20.0,
+          "max_risk": 20
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
         }
       ]
     },
@@ -489,6 +508,25 @@
       ]
     },
     {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -618,6 +656,19 @@
       ]
     },
     {
+      "key": "european union",
+      "label": "European Union",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "federal airports authority of",
       "label": "Federal Airports Authority of Nigeria",
       "total_mentions": 2,
@@ -659,25 +710,6 @@
     {
       "key": "government of the united states",
       "label": "Government of the United States",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "heineken lokpobiri",
-      "label": "Heineken Lokpobiri",
       "total_mentions": 2,
       "points": [
         {
@@ -856,21 +888,21 @@
       ]
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
+      "key": "ola olukoyede",
+      "label": "Ola Olukoyede",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "avg_risk": 85.0,
+          "max_risk": 85
         },
         {
           "week": "2026-09-21",
           "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -896,6 +928,19 @@
           "week": "2026-09-21",
           "mentions": 2,
           "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "seplat energy",
+      "label": "Seplat Energy",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -1394,6 +1439,19 @@
       ]
     },
     {
+      "key": "dp world",
+      "label": "DP World",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "dangote",
       "label": "Dangote",
       "total_mentions": 1,
@@ -1468,19 +1526,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "european union",
-      "label": "European Union",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -1667,6 +1712,19 @@
       ]
     },
     {
+      "key": "government of ghana",
+      "label": "Government of Ghana",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "government of india",
       "label": "Government of India",
       "total_mentions": 1,
@@ -1780,6 +1838,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "integrity and medicare policy initiative",
+      "label": "Integrity and Medicare Policy Initiative",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -2079,6 +2150,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "ministry of state for petroleum resources",
+      "label": "Ministry of State for Petroleum Resources",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2616,15 +2700,15 @@
       ]
     },
     {
-      "key": "ola olukoyede",
-      "label": "Ola Olukoyede",
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-09-14",
+          "week": "2026-09-21",
           "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2837,19 +2921,6 @@
       ]
     },
     {
-      "key": "seplat energy",
-      "label": "Seplat Energy",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "total_mentions": 1,
@@ -2967,6 +3038,19 @@
       ]
     },
     {
+      "key": "unicef",
+      "label": "UNICEF",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "usaid",
       "label": "USAID",
       "total_mentions": 1,
@@ -3058,5 +3142,5 @@
       ]
     }
   ],
-  "generated": "2026-09-24 20:21:43"
+  "generated": "2026-09-25 01:22:10"
 }
