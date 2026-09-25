@@ -912,17 +912,17 @@
     },
     {
       "date": "2026-09-25",
-      "runs": 2,
-      "articles": 20,
+      "runs": 3,
+      "articles": 21,
       "high_risk": 1,
       "appointments": 0,
       "procurement": 3,
       "cascade_failures": 0,
-      "candidates": 2101,
-      "rejected": 29,
+      "candidates": 3150,
+      "rejected": 35,
       "undated": 0,
-      "run_seconds": 414
+      "run_seconds": 467
     }
   ],
-  "generated": "2026-09-25 12:37:09"
+  "generated": "2026-09-25 17:45:33"
 }

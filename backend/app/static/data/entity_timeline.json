@@ -3,7 +3,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 29,
+      "total_mentions": 30,
       "points": [
         {
           "week": "2026-09-07",
@@ -19,8 +19,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 7,
-          "avg_risk": 52.9,
+          "mentions": 8,
+          "avg_risk": 54.4,
           "max_risk": 75
         }
       ]
@@ -1194,6 +1194,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "akpagu",
+      "label": "Akpagu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -3109,6 +3122,19 @@
       ]
     },
     {
+      "key": "university of calabar",
+      "label": "University of Calabar",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "university of ibadan",
       "label": "University of Ibadan",
       "total_mentions": 1,
@@ -3174,5 +3200,5 @@
       ]
     }
   ],
-  "generated": "2026-09-25 12:37:09"
+  "generated": "2026-09-25 17:45:33"
 }
