@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 13,
-      "mentions": 97,
+      "mentions": 98,
       "risk": {
         "Critical": 1,
         "Medium": 3,
@@ -293,6 +293,14 @@
       }
     },
     {
+      "industry": "Logistics and Ports",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -341,5 +349,5 @@
       }
     }
   ],
-  "generated": "2026-09-24 20:21:43"
+  "generated": "2026-09-25 01:22:10"
 }

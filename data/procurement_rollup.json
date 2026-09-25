@@ -201,6 +201,14 @@
       "totals": {}
     },
     {
+      "name": "Ogun State Government",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 7000000000.0
+      }
+    },
+    {
       "name": "The Guardian Nigeria News",
       "contracts": 2,
       "undisclosed": 2,
@@ -433,12 +441,6 @@
       "totals": {}
     },
     {
-      "name": "Ogun State Government",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "Rivers State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -604,6 +606,14 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
+    },
+    {
+      "name": "DP World",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 7000000000.0
+      }
     },
     {
       "name": "EFCC",
@@ -784,5 +794,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-24 20:21:43"
+  "generated": "2026-09-25 01:22:10"
 }
