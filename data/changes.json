@@ -1,27 +1,17 @@
 {
-  "new_companies": [
-    "DP World"
-  ],
-  "new_people": [
-    "Olayemi Cardoso"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "MambillaGate: FG has grounds to probe, prosecute Atiku, says IMPI - The Guardian Nigeria News",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUGw4Z2pIbFJMU2F1V0NuNjNfczlzZUx3ZTIwSFR2eWUwdXdDWTJvYzJNR25rbTRfVG5uU0xqcV82cmJ6LXlJZFBLQ21FYnpTempKWnJlNmdBV3RMQUZXOE05WWswZ3hRaE9Eblc2STY5Ykp5ck8xOGo0WEEtOTFaTmg2V1hOVGtIOVRuQnRaZFBnRXZNZjAxOTdDdldGMzBCZW9FVg?oc=5",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 1,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-25 01:22:04"
+  "generated": "2026-09-25 12:37:00"
 }

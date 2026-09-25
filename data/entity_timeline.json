@@ -28,7 +28,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 27,
+      "total_mentions": 29,
       "points": [
         {
           "week": "2026-09-07",
@@ -44,8 +44,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 10,
-          "avg_risk": 23.0,
+          "mentions": 12,
+          "avg_risk": 21.7,
           "max_risk": 40
         }
       ]
@@ -53,7 +53,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 15,
+      "total_mentions": 16,
       "points": [
         {
           "week": "2026-09-07",
@@ -69,8 +69,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 15.6,
+          "mentions": 9,
+          "avg_risk": 16.1,
           "max_risk": 20
         }
       ]
@@ -122,7 +122,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-14",
@@ -132,8 +132,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 7,
-          "avg_risk": 12.9,
+          "mentions": 8,
+          "avg_risk": 12.5,
           "max_risk": 20
         }
       ]
@@ -311,6 +311,25 @@
       ]
     },
     {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 25.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "totalenergies",
       "label": "TotalEnergies",
       "total_mentions": 4,
@@ -350,6 +369,19 @@
           "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "european union",
+      "label": "European Union",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -508,25 +540,6 @@
       ]
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -618,6 +631,38 @@
       ]
     },
     {
+      "key": "dp world",
+      "label": "DP World",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "dangote",
+      "label": "Dangote Group",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 2,
@@ -652,19 +697,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "european union",
-      "label": "European Union",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
         }
       ]
     },
@@ -1439,32 +1471,6 @@
       ]
     },
     {
-      "key": "dp world",
-      "label": "DP World",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "dangote",
-      "label": "Dangote",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "dangote petroleum refinery and petrochemicals",
       "label": "Dangote Petroleum Refinery and Petrochemicals",
       "total_mentions": 1,
@@ -1838,6 +1844,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "independent monitoring and procurement inspectorate",
+      "label": "Independent Monitoring and Procurement Inspectorate",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -2596,6 +2615,19 @@
       ]
     },
     {
+      "key": "electricity regulatory commission",
+      "label": "Nigerian Electricity Regulatory Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "navy",
       "label": "Nigerian Navy",
       "total_mentions": 1,
@@ -3142,5 +3174,5 @@
       ]
     }
   ],
-  "generated": "2026-09-25 01:22:10"
+  "generated": "2026-09-25 12:37:09"
 }

@@ -175,6 +175,14 @@
       "totals": {}
     },
     {
+      "name": "Ogun State Government",
+      "contracts": 3,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 14000000000.0
+      }
+    },
+    {
       "name": "Celtic",
       "contracts": 2,
       "undisclosed": 2,
@@ -199,14 +207,6 @@
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
-    },
-    {
-      "name": "Ogun State Government",
-      "contracts": 2,
-      "undisclosed": 1,
-      "totals": {
-        "USD": 7000000000.0
-      }
     },
     {
       "name": "The Guardian Nigeria News",
@@ -299,6 +299,14 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
+    },
+    {
+      "name": "Independent Monitoring and Procurement Inspectorate",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 500000.0
+      }
     },
     {
       "name": "Institute for Peace and Conflict Resolution",
@@ -474,11 +482,11 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 73,
+      "contracts": 74,
       "undisclosed": 44,
       "totals": {
         "NGN": 4624426090000.0,
-        "USD": 20582740000.0
+        "USD": 20583240000.0
       }
     },
     {
@@ -526,6 +534,14 @@
       "contracts": 6,
       "undisclosed": 6,
       "totals": {}
+    },
+    {
+      "name": "DP World",
+      "contracts": 2,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 14000000000.0
+      }
     },
     {
       "name": "Not specified",
@@ -606,14 +622,6 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
-    },
-    {
-      "name": "DP World",
-      "contracts": 1,
-      "undisclosed": 0,
-      "totals": {
-        "USD": 7000000000.0
-      }
     },
     {
       "name": "EFCC",
@@ -794,5 +802,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-25 01:22:10"
+  "generated": "2026-09-25 12:37:09"
 }

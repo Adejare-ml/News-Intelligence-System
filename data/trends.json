@@ -1,40 +1,52 @@
 {
   "window_days": 7,
-  "recent_articles": 163,
-  "previous_articles": 188,
+  "recent_articles": 160,
+  "previous_articles": 190,
   "rising": [
     {
       "term": "guardian",
       "recent": 42,
-      "previous": 33,
-      "change": 9
+      "previous": 34,
+      "change": 8
     },
     {
       "term": "lagos",
-      "recent": 10,
+      "recent": 11,
       "previous": 3,
-      "change": 7
+      "change": 8
     },
     {
       "term": "premium",
       "recent": 33,
-      "previous": 27,
-      "change": 6
+      "previous": 26,
+      "change": 7
     },
     {
       "term": "premium times",
       "recent": 33,
-      "previous": 27,
-      "change": 6
+      "previous": 26,
+      "change": 7
     },
     {
       "term": "times",
       "recent": 33,
-      "previous": 27,
-      "change": 6
+      "previous": 26,
+      "change": 7
+    },
+    {
+      "term": "policy",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
     },
     {
       "term": "oil",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
+    {
+      "term": "unveils",
       "recent": 6,
       "previous": 0,
       "change": 6
@@ -50,37 +62,31 @@
       "recent": 6,
       "previous": 1,
       "change": 5
-    },
-    {
-      "term": "declares",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "first",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     }
   ],
   "falling": [
     {
       "term": "efcc",
-      "recent": 9,
-      "previous": 17,
+      "recent": 8,
+      "previous": 18,
+      "change": -10
+    },
+    {
+      "term": "ipo",
+      "recent": 2,
+      "previous": 12,
+      "change": -10
+    },
+    {
+      "term": "newspapers",
+      "recent": 27,
+      "previous": 35,
       "change": -8
     },
     {
       "term": "dangote",
       "recent": 8,
       "previous": 16,
-      "change": -8
-    },
-    {
-      "term": "ipo",
-      "recent": 3,
-      "previous": 11,
       "change": -8
     },
     {
@@ -108,39 +114,33 @@
       "change": -8
     },
     {
-      "term": "newspapers",
-      "recent": 28,
-      "previous": 35,
+      "term": "punch",
+      "recent": 27,
+      "previous": 34,
       "change": -7
     },
     {
-      "term": "seeks",
-      "recent": 3,
-      "previous": 10,
-      "change": -7
-    },
-    {
-      "term": "customs",
-      "recent": 2,
-      "previous": 9,
+      "term": "punch newspapers",
+      "recent": 27,
+      "previous": 34,
       "change": -7
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 107,
-      "previous": 125
+      "recent": 106,
+      "previous": 127
     },
     {
       "category": "Company",
       "recent": 30,
-      "previous": 40
+      "previous": 39
     },
     {
       "category": "Legal",
-      "recent": 25,
-      "previous": 23
+      "recent": 23,
+      "previous": 24
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-25 01:22:08"
+  "generated": "2026-09-25 12:37:03"
 }
