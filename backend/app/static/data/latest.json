@@ -1,5 +1,22 @@
 [
   {
+    "ID": 7111,
+    "Time": "2026-09-26 04:44:53",
+    "Title": "SAN Cautions FG Against Unilateral Revocation Of Benin-Asaba Expressway Concession",
+    "Source": "leadership",
+    "URL": "https://leadership.ng/san-cautions-fg-against-unilateral-revocation-of-benin-asaba-expressway-concession/",
+    "Category": "Legal",
+    "Risk Score": 40,
+    "Summary": "A Senior Advocate of Nigeria (SAN) has cautioned the Federal Government against the unilateral revocation of the Benin-Asaba Expressway concession. The matter concerns a potential regulatory or contractual dispute regarding infrastructure concessions.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Medium",
+    "Importance": 60,
+    "Entities": "Federal Government of Nigeria",
+    "Filter Reason": ""
+  },
+  {
     "ID": 7099,
     "Time": "2026-09-26 00:00:08",
     "Title": "\u201cOver $7bn Initial Investment, 50,000 Direct Jobs Expected\u201d \u2014 Ogun, DP World Sign MoUs For Gateway Deep Seaport, Blue Marine Economic Zone",
@@ -1000,23 +1017,6 @@
     "Risk Level": "Medium",
     "Importance": 70,
     "Entities": "",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 6916,
-    "Time": "Wed, 23 Sep 2026 01:01:16 GMT",
-    "Title": "CBN rate cut puts pressure on fixed income yields - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBiQUpkenIwVFlhLUs3NDR2dGxTUFVrZDRidmFZTnRxZFRRTUtGUGRmdW1XTXRTcnlZSTV2T2RnMXhLejVSRmw4ZV9rOW9hRjNaUlJKRF9DbmtqdDRXSGJLRVUxMWwwM2J3RzBNOTBSN0hSRVkyUTN0Y2t3?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Central Bank of Nigeria (CBN) has implemented a rate cut, which is creating downward pressure on fixed income yields.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 60,
-    "Entities": "Central Bank of Nigeria",
     "Filter Reason": ""
   }
 ]

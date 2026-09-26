@@ -1,6 +1,31 @@
 {
   "entities": [
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "total_mentions": 31,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 16,
+          "avg_risk": 23.1,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 14,
+          "avg_risk": 27.5,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "total_mentions": 30,
@@ -22,31 +47,6 @@
           "mentions": 8,
           "avg_risk": 54.4,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "total_mentions": 30,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 16,
-          "avg_risk": 23.1,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 13,
-          "avg_risk": 26.5,
-          "max_risk": 85
         }
       ]
     },
@@ -3265,5 +3265,5 @@
       ]
     }
   ],
-  "generated": "2026-09-26 12:06:21"
+  "generated": "2026-09-26 16:54:25"
 }
