@@ -1288,5 +1288,15 @@
     "Date": "2026-09-25",
     "Amount Value": 500000.0,
     "Amount Currency": "USD"
+  },
+  {
+    "Agency": "NIGCOMSAT",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Satellite procurement",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-26",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]

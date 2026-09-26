@@ -121,6 +121,36 @@
       "risk": "Low"
     },
     {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a3d984cac84c",
+      "label": "Petroleum Technology Development Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "09b648436789",
+      "label": "NIGCOMSAT",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7367d6073504",
+      "label": "Nigerian Maritime Labour Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -141,12 +171,6 @@
     {
       "id": "9aef00190386",
       "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -207,30 +231,6 @@
     {
       "id": "22ee91f832d4",
       "label": "Ministry of State for Petroleum Resources",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "be09acc08e52",
-      "label": "Independent Monitoring and Procurement Inspectorate",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8a7b7af09965",
-      "label": "Ebonyi State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bbdd3227478f",
-      "label": "Niger Delta Development Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
       "type": "agency",
       "risk": "Low"
     },
@@ -421,6 +421,12 @@
       "risk": "Low"
     },
     {
+      "id": "8a7b7af09965",
+      "label": "Ebonyi State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "514496e0e74c",
       "label": "Muhammadu Buhari",
       "type": "person",
@@ -577,6 +583,12 @@
       "risk": "Medium"
     },
     {
+      "id": "be09acc08e52",
+      "label": "Independent Monitoring and Procurement Inspectorate",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "124923cf0855",
       "label": "DP World",
       "type": "company",
@@ -597,12 +609,6 @@
     {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "09b648436789",
-      "label": "NIGCOMSAT",
       "type": "agency",
       "risk": "Low"
     },
@@ -879,6 +885,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "2e196c488907",
+      "from": "334c4a4c42fd",
+      "to": "09b648436789",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "8e5bf216553a",
       "from": "334c4a4c42fd",
       "to": "be09acc08e52",
@@ -912,12 +924,6 @@
       "id": "5b569ce39252",
       "from": "334c4a4c42fd",
       "to": "6843b615b76a",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "2e196c488907",
-      "from": "334c4a4c42fd",
-      "to": "09b648436789",
       "label": "Contract Awardee"
     },
     {

@@ -197,6 +197,12 @@
       }
     },
     {
+      "name": "NIGCOMSAT",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "National Office for Technology Acquisition and Promotion (NOTAP)",
       "contracts": 2,
       "undisclosed": 2,
@@ -330,12 +336,6 @@
     },
     {
       "name": "Ministry of Works",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
-      "name": "NIGCOMSAT",
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
@@ -482,8 +482,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 74,
-      "undisclosed": 44,
+      "contracts": 75,
+      "undisclosed": 45,
       "totals": {
         "NGN": 4624426090000.0,
         "USD": 20583240000.0
@@ -802,5 +802,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-25 20:22:06"
+  "generated": "2026-09-26 01:22:36"
 }
