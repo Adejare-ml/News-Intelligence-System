@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 152,
+  "recent_articles": 150,
   "previous_articles": 192,
   "rising": [
     {
@@ -14,24 +14,6 @@
       "recent": 6,
       "previous": 0,
       "change": 6
-    },
-    {
-      "term": "premium",
-      "recent": 29,
-      "previous": 24,
-      "change": 5
-    },
-    {
-      "term": "premium times",
-      "recent": 29,
-      "previous": 24,
-      "change": 5
-    },
-    {
-      "term": "times",
-      "recent": 29,
-      "previous": 24,
-      "change": 5
     },
     {
       "term": "rate",
@@ -62,6 +44,24 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "nmdpra",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "ogun",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "policy",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
     }
   ],
   "falling": [
@@ -129,17 +129,17 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 106,
-      "previous": 125
+      "recent": 103,
+      "previous": 126
     },
     {
       "category": "Company",
       "recent": 28,
-      "previous": 39
+      "previous": 38
     },
     {
       "category": "Legal",
-      "recent": 17,
+      "recent": 18,
       "previous": 28
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-26 12:06:18"
+  "generated": "2026-09-26 16:54:23"
 }
