@@ -105,7 +105,7 @@
       "recent_avg": 20.0,
       "previous_avg": 17.5,
       "delta": 2.5,
-      "recent_mentions": 8,
+      "recent_mentions": 9,
       "previous_mentions": 6
     },
     {
@@ -154,6 +154,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "nigcomsat",
+      "label": "NIGCOMSAT",
+      "recent_avg": 45.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "dp world",
       "label": "DP World",
       "recent_avg": 32.5,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 27.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 5,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-25 20:22:06"
+  "generated": "2026-09-26 01:22:36"
 }

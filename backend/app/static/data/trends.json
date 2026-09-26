@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 156,
-  "previous_articles": 193,
+  "recent_articles": 158,
+  "previous_articles": 194,
   "rising": [
     {
       "term": "lagos",
@@ -11,9 +11,9 @@
     },
     {
       "term": "guardian",
-      "recent": 42,
-      "previous": 35,
-      "change": 7
+      "recent": 43,
+      "previous": 37,
+      "change": 6
     },
     {
       "term": "unveils",
@@ -40,6 +40,12 @@
       "change": 5
     },
     {
+      "term": "nnpc",
+      "recent": 10,
+      "previous": 5,
+      "change": 5
+    },
+    {
       "term": "policy",
       "recent": 6,
       "previous": 1,
@@ -56,12 +62,6 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "deal",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     }
   ],
   "falling": [
@@ -70,18 +70,6 @@
       "recent": 2,
       "previous": 12,
       "change": -10
-    },
-    {
-      "term": "newspapers",
-      "recent": 27,
-      "previous": 35,
-      "change": -8
-    },
-    {
-      "term": "efcc",
-      "recent": 9,
-      "previous": 17,
-      "change": -8
     },
     {
       "term": "dangote",
@@ -114,32 +102,44 @@
       "change": -8
     },
     {
-      "term": "punch",
-      "recent": 27,
-      "previous": 34,
+      "term": "newspapers",
+      "recent": 28,
+      "previous": 35,
       "change": -7
     },
     {
-      "term": "punch newspapers",
-      "recent": 27,
-      "previous": 34,
+      "term": "efcc",
+      "recent": 9,
+      "previous": 16,
       "change": -7
+    },
+    {
+      "term": "cac",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "punch",
+      "recent": 28,
+      "previous": 34,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 104,
+      "recent": 108,
       "previous": 128
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 39
+      "recent": 29,
+      "previous": 40
     },
     {
       "category": "Legal",
-      "recent": 21,
+      "recent": 20,
       "previous": 26
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-25 20:22:04"
+  "generated": "2026-09-26 01:22:34"
 }

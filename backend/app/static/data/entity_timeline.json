@@ -103,7 +103,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 14,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-14",
@@ -113,8 +113,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 22.0,
+          "mentions": 6,
+          "avg_risk": 21.7,
           "max_risk": 30
         }
       ]
@@ -203,6 +203,25 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "total_mentions": 5,
@@ -231,25 +250,6 @@
           "mentions": 5,
           "avg_risk": 17.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 28.8,
-          "max_risk": 45
         }
       ]
     },
@@ -755,6 +755,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "nigcomsat",
+      "label": "NIGCOMSAT",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -2290,19 +2303,6 @@
       ]
     },
     {
-      "key": "nigcomsat",
-      "label": "NIGCOMSAT",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "nnpcl",
       "label": "NNPCL",
       "total_mentions": 1,
@@ -2641,6 +2641,32 @@
       ]
     },
     {
+      "key": "content development and monitoring board",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "maritime labour council",
+      "label": "Nigerian Maritime Labour Council",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "navy",
       "label": "Nigerian Navy",
       "total_mentions": 1,
@@ -2803,6 +2829,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "petroleum technology development fund",
+      "label": "Petroleum Technology Development Fund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3200,5 +3239,5 @@
       ]
     }
   ],
-  "generated": "2026-09-25 20:22:06"
+  "generated": "2026-09-26 01:22:36"
 }
