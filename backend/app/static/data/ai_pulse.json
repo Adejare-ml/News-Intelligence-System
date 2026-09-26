@@ -1,60 +1,60 @@
 {
-  "generated": "2026-09-26 16:54:23",
+  "generated": "2026-09-26 19:36:27",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3830,
+      "likes": 3856,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2386,
+      "likes": 2391,
       "downloads": 48361
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1901,
+      "likes": 1914,
       "downloads": 876673
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1721,
+      "likes": 1723,
       "downloads": 43947
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 2121,
+      "likes": 2126,
       "downloads": 3247527
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 766,
+      "likes": 770,
       "downloads": 3641785
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 698,
+      "likes": 705,
       "downloads": 5590
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 757,
+      "likes": 760,
       "downloads": 7859
     }
   ],
@@ -62,7 +62,7 @@
     {
       "title": "Learning to Discover Interesting Mathematics",
       "url": "https://huggingface.co/papers/2609.28603",
-      "upvotes": 7
+      "upvotes": 8
     },
     {
       "title": "RGBD20K: A Large-Scale Benchmark for RGB-D Semantic Segmentation",
@@ -77,12 +77,12 @@
     {
       "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
       "url": "https://huggingface.co/papers/2609.29845",
-      "upvotes": 63
+      "upvotes": 64
     },
     {
       "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
       "url": "https://huggingface.co/papers/2609.29429",
-      "upvotes": 4
+      "upvotes": 5
     },
     {
       "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
