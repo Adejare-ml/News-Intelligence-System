@@ -1,6 +1,31 @@
 {
   "entities": [
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "total_mentions": 31,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 21,
+          "avg_risk": 40.5,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 9,
+          "avg_risk": 51.7,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "total_mentions": 31,
@@ -22,31 +47,6 @@
           "mentions": 14,
           "avg_risk": 27.5,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 30,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 21,
-          "avg_risk": 40.5,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 54.4,
-          "max_risk": 75
         }
       ]
     },
@@ -1467,6 +1467,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "coca cola",
+      "label": "Coca-Cola",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -3265,5 +3278,5 @@
       ]
     }
   ],
-  "generated": "2026-09-26 16:54:25"
+  "generated": "2026-09-26 19:36:30"
 }

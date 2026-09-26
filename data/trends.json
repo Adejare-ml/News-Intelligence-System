@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 150,
-  "previous_articles": 192,
+  "recent_articles": 148,
+  "previous_articles": 194,
   "rising": [
     {
       "term": "lagos",
@@ -58,9 +58,9 @@
       "change": 5
     },
     {
-      "term": "policy",
-      "recent": 6,
-      "previous": 2,
+      "term": "investment",
+      "recent": 8,
+      "previous": 4,
       "change": 4
     }
   ],
@@ -73,12 +73,6 @@
     },
     {
       "term": "refinery ipo",
-      "recent": 1,
-      "previous": 9,
-      "change": -8
-    },
-    {
-      "term": "targets",
       "recent": 1,
       "previous": 9,
       "change": -8
@@ -102,18 +96,6 @@
       "change": -8
     },
     {
-      "term": "newspapers",
-      "recent": 28,
-      "previous": 35,
-      "change": -7
-    },
-    {
-      "term": "efcc",
-      "recent": 9,
-      "previous": 16,
-      "change": -7
-    },
-    {
       "term": "dangote",
       "recent": 8,
       "previous": 15,
@@ -124,17 +106,35 @@
       "recent": 4,
       "previous": 11,
       "change": -7
+    },
+    {
+      "term": "targets",
+      "recent": 2,
+      "previous": 9,
+      "change": -7
+    },
+    {
+      "term": "cac",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "payment",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 103,
-      "previous": 126
+      "recent": 100,
+      "previous": 128
     },
     {
       "category": "Company",
-      "recent": 28,
+      "recent": 29,
       "previous": 38
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-26 16:54:23"
+  "generated": "2026-09-26 19:36:27"
 }

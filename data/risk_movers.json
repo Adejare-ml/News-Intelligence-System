@@ -30,10 +30,10 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 57.8,
+      "recent_avg": 55.0,
       "previous_avg": 37.9,
-      "delta": 19.9,
-      "recent_mentions": 9,
+      "delta": 17.1,
+      "recent_mentions": 10,
       "previous_mentions": 21
     },
     {
@@ -75,11 +75,11 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 21.4,
-      "previous_avg": 16.9,
+      "recent_avg": 21.7,
+      "previous_avg": 17.2,
       "delta": 4.5,
-      "recent_mentions": 7,
-      "previous_mentions": 8
+      "recent_mentions": 6,
+      "previous_mentions": 9
     },
     {
       "key": "central bank of",
@@ -129,11 +129,11 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 26.6,
-      "previous_avg": 27.7,
-      "delta": -1.1,
-      "recent_mentions": 16,
-      "previous_mentions": 15
+      "recent_avg": 27.0,
+      "previous_avg": 27.2,
+      "delta": -0.2,
+      "recent_mentions": 15,
+      "previous_mentions": 16
     },
     {
       "key": "maina",
@@ -142,15 +142,6 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "sunrise",
-      "label": "Sunrise Ltd",
-      "recent_avg": 62.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 25.8,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 6,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-26 16:54:25"
+  "generated": "2026-09-26 19:36:30"
 }

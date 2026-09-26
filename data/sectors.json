@@ -116,6 +116,14 @@
       }
     },
     {
+      "industry": "Beverages",
+      "companies": 3,
+      "mentions": 3,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Business Association",
       "companies": 1,
       "mentions": 3,
@@ -178,14 +186,6 @@
       "mentions": 3,
       "risk": {
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Beverages",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "Low": 2
       }
     },
     {
@@ -365,5 +365,5 @@
       }
     }
   ],
-  "generated": "2026-09-26 16:54:25"
+  "generated": "2026-09-26 19:36:30"
 }
