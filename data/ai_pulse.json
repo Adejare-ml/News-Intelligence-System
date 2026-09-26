@@ -1,83 +1,83 @@
 {
-  "generated": "2026-09-26 01:22:34",
+  "generated": "2026-09-26 12:06:18",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 3689,
+      "likes": 3786,
       "downloads": 0
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2322,
-      "downloads": 42469
+      "likes": 2369,
+      "downloads": 48361
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 1791,
-      "downloads": 715906
+      "likes": 1869,
+      "downloads": 876673
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1685,
-      "downloads": 42950
+      "likes": 1701,
+      "downloads": 43947
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 2090,
-      "downloads": 3109078
+      "likes": 2110,
+      "downloads": 3247527
     },
     {
       "id": "Comfy-Org/Qwen-Image-2.1",
       "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
       "task": "",
-      "likes": 735,
-      "downloads": 3266380
+      "likes": 751,
+      "downloads": 3641785
     },
     {
       "id": "Altworld/Hemmingway-1",
       "url": "https://huggingface.co/Altworld/Hemmingway-1",
       "task": "text-generation",
-      "likes": 676,
-      "downloads": 4978
+      "likes": 687,
+      "downloads": 5590
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 580,
-      "downloads": 2853
+      "likes": 699,
+      "downloads": 7859
     }
   ],
   "papers": [
     {
       "title": "Learning to Discover Interesting Mathematics",
       "url": "https://huggingface.co/papers/2609.28603",
-      "upvotes": 4
+      "upvotes": 6
     },
     {
       "title": "RGBD20K: A Large-Scale Benchmark for RGB-D Semantic Segmentation",
       "url": "https://huggingface.co/papers/2609.29028",
-      "upvotes": 6
+      "upvotes": 7
     },
     {
       "title": "AV-GRPO: Modality-Anchored Decoupling Diffusion Reinforcement Learning for Joint Audio-Video Generation",
       "url": "https://huggingface.co/papers/2609.29816",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
       "url": "https://huggingface.co/papers/2609.29845",
-      "upvotes": 55
+      "upvotes": 60
     },
     {
       "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",

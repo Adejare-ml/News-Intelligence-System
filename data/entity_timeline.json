@@ -28,7 +28,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 29,
+      "total_mentions": 30,
       "points": [
         {
           "week": "2026-09-07",
@@ -44,9 +44,9 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 12,
-          "avg_risk": 21.7,
-          "max_risk": 40
+          "mentions": 13,
+          "avg_risk": 26.5,
+          "max_risk": 85
         }
       ]
     },
@@ -222,6 +222,25 @@
       ]
     },
     {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 26.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "total_mentions": 5,
@@ -298,6 +317,19 @@
       ]
     },
     {
+      "key": "dp world",
+      "label": "DP World",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 30.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -307,25 +339,6 @@
           "mentions": 4,
           "avg_risk": 63.8,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 25.0,
-          "max_risk": 35
         }
       ]
     },
@@ -627,19 +640,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "dp world",
-      "label": "DP World",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 32.5,
-          "max_risk": 35
         }
       ]
     },
@@ -1519,6 +1519,19 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "dangote cement",
+      "label": "Dangote Cement",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2784,6 +2797,19 @@
       ]
     },
     {
+      "key": "olukoyede",
+      "label": "Olukoyede",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "ondo state civil service",
       "label": "Ondo State Civil Service",
       "total_mentions": 1,
@@ -3239,5 +3265,5 @@
       ]
     }
   ],
-  "generated": "2026-09-26 01:22:36"
+  "generated": "2026-09-26 12:06:21"
 }

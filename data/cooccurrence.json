@@ -112,6 +112,11 @@
   ],
   "edges": [
     {
+      "a": "dp world",
+      "b": "ogun state government",
+      "weight": 4
+    },
+    {
       "a": "economic and financial crimes commission",
       "b": "federal bureau of investigation",
       "weight": 4
@@ -167,11 +172,6 @@
       "weight": 2
     },
     {
-      "a": "dp world",
-      "b": "ogun state government",
-      "weight": 2
-    },
-    {
       "a": "economic and financial crimes commission",
       "b": "ola olukoyede",
       "weight": 2
@@ -197,5 +197,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-09-26 01:22:36"
+  "generated": "2026-09-26 12:06:21"
 }

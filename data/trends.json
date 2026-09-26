@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 158,
-  "previous_articles": 194,
+  "recent_articles": 152,
+  "previous_articles": 192,
   "rising": [
     {
       "term": "lagos",
@@ -10,45 +10,27 @@
       "change": 9
     },
     {
-      "term": "guardian",
-      "recent": 43,
-      "previous": 37,
-      "change": 6
-    },
-    {
-      "term": "unveils",
+      "term": "deal",
       "recent": 6,
       "previous": 0,
       "change": 6
     },
     {
       "term": "premium",
-      "recent": 32,
-      "previous": 27,
+      "recent": 29,
+      "previous": 24,
       "change": 5
     },
     {
       "term": "premium times",
-      "recent": 32,
-      "previous": 27,
+      "recent": 29,
+      "previous": 24,
       "change": 5
     },
     {
       "term": "times",
-      "recent": 32,
-      "previous": 27,
-      "change": 5
-    },
-    {
-      "term": "nnpc",
-      "recent": 10,
-      "previous": 5,
-      "change": 5
-    },
-    {
-      "term": "policy",
-      "recent": 6,
-      "previous": 1,
+      "recent": 29,
+      "previous": 24,
       "change": 5
     },
     {
@@ -62,19 +44,37 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "declares",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "first",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "launch",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
       "term": "ipo",
-      "recent": 2,
+      "recent": 1,
       "previous": 12,
-      "change": -10
+      "change": -11
     },
     {
-      "term": "dangote",
-      "recent": 8,
-      "previous": 16,
+      "term": "refinery ipo",
+      "recent": 1,
+      "previous": 9,
       "change": -8
     },
     {
@@ -114,33 +114,33 @@
       "change": -7
     },
     {
-      "term": "cac",
-      "recent": 0,
-      "previous": 7,
+      "term": "dangote",
+      "recent": 8,
+      "previous": 15,
       "change": -7
     },
     {
-      "term": "punch",
-      "recent": 28,
-      "previous": 34,
-      "change": -6
+      "term": "refinery",
+      "recent": 4,
+      "previous": 11,
+      "change": -7
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 108,
-      "previous": 128
+      "recent": 106,
+      "previous": 125
     },
     {
       "category": "Company",
-      "recent": 29,
-      "previous": 40
+      "recent": 28,
+      "previous": 39
     },
     {
       "category": "Legal",
-      "recent": 20,
-      "previous": 26
+      "recent": 17,
+      "previous": 28
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-26 01:22:34"
+  "generated": "2026-09-26 12:06:18"
 }

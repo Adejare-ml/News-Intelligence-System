@@ -1298,5 +1298,25 @@
     "Date": "2026-09-26",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Ogun State Government",
+    "Contractor": "DP World",
+    "Amount": "$7 Billion",
+    "Project": "Port and industrial zone development",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-26",
+    "Amount Value": 7000000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "Ogun State Government",
+    "Contractor": "DP World",
+    "Amount": "$7 Billion",
+    "Project": "Gateway Deep Seaport and Blue Marine Economic Zone",
+    "Source": "naijaonpoint_ng",
+    "Date": "2026-09-26",
+    "Amount Value": 7000000000.0,
+    "Amount Currency": "USD"
   }
 ]
