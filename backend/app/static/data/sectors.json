@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 969,
-      "mentions": 1653,
+      "companies": 968,
+      "mentions": 1652,
       "risk": {
-        "Low": 853,
+        "Low": 852,
         "Critical": 58,
         "Medium": 34,
         "High": 24
@@ -100,6 +100,14 @@
       }
     },
     {
+      "industry": "Logistics and Ports",
+      "companies": 1,
+      "mentions": 4,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 2,
       "mentions": 3,
@@ -181,6 +189,14 @@
       }
     },
     {
+      "industry": "Cement",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Education",
       "companies": 2,
       "mentions": 2,
@@ -194,14 +210,6 @@
       "mentions": 2,
       "risk": {
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Logistics and Ports",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -357,5 +365,5 @@
       }
     }
   ],
-  "generated": "2026-09-26 01:22:36"
+  "generated": "2026-09-26 12:06:21"
 }

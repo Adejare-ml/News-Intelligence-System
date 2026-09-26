@@ -155,6 +155,14 @@
       }
     },
     {
+      "name": "Ogun State Government",
+      "contracts": 5,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 28000000000.0
+      }
+    },
+    {
       "name": "Niger Delta Development Commission",
       "contracts": 3,
       "undisclosed": 3,
@@ -173,14 +181,6 @@
       "contracts": 3,
       "undisclosed": 3,
       "totals": {}
-    },
-    {
-      "name": "Ogun State Government",
-      "contracts": 3,
-      "undisclosed": 1,
-      "totals": {
-        "USD": 14000000000.0
-      }
     },
     {
       "name": "Celtic",
@@ -537,10 +537,10 @@
     },
     {
       "name": "DP World",
-      "contracts": 2,
+      "contracts": 4,
       "undisclosed": 0,
       "totals": {
-        "USD": 14000000000.0
+        "USD": 28000000000.0
       }
     },
     {
@@ -802,5 +802,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-26 01:22:36"
+  "generated": "2026-09-26 12:06:21"
 }

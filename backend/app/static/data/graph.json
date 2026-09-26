@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
@@ -135,6 +141,12 @@
     {
       "id": "a3d984cac84c",
       "label": "Petroleum Technology Development Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,12 +175,6 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
       "type": "agency",
@@ -189,12 +195,6 @@
     {
       "id": "a5443515f025",
       "label": "Nigerian Electricity Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -235,6 +235,18 @@
       "risk": "Low"
     },
     {
+      "id": "ff19dbb82a9e",
+      "label": "Olukoyede",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "2388a11cf55e",
       "label": "Ola Olukoyede",
       "type": "person",
@@ -244,12 +256,6 @@
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -445,18 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "f3f65e2dd7f8",
-      "label": "Leno Adesanya",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ce2f789533a5",
-      "label": "Sunrise Power and Transmission Company Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -467,6 +461,12 @@
       "label": "Mango Business",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "f3f65e2dd7f8",
+      "label": "Leno Adesanya",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "b64909add6b9",
@@ -583,15 +583,15 @@
       "risk": "Medium"
     },
     {
-      "id": "be09acc08e52",
-      "label": "Independent Monitoring and Procurement Inspectorate",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "124923cf0855",
       "label": "DP World",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "be09acc08e52",
+      "label": "Independent Monitoring and Procurement Inspectorate",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -637,25 +637,25 @@
       "risk": "Low"
     },
     {
+      "id": "ce2f789533a5",
+      "label": "Sunrise Power and Transmission Company Limited",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "5cdf8c992852",
       "label": "Nigerian Air Force",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "95178e3865cd",
-      "label": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "697b31d5b595",
-      "label": "Hughes",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "a02eeea3dabb",
+      "from": "ff19dbb82a9e",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as Accuser/Whistleblower"
+    },
     {
       "id": "173d8cf4554e",
       "from": "2388a11cf55e",
@@ -801,12 +801,6 @@
       "label": "Appointed as Not Specified"
     },
     {
-      "id": "0abff893a2dd",
-      "from": "f3f65e2dd7f8",
-      "to": "ce2f789533a5",
-      "label": "Appointed as Promoter"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -885,6 +879,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "c70b2a3f1d73",
+      "from": "124923cf0855",
+      "to": "7dc08a8ebfaa",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "2e196c488907",
       "from": "334c4a4c42fd",
       "to": "09b648436789",
@@ -894,12 +894,6 @@
       "id": "8e5bf216553a",
       "from": "334c4a4c42fd",
       "to": "be09acc08e52",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c70b2a3f1d73",
-      "from": "124923cf0855",
-      "to": "7dc08a8ebfaa",
       "label": "Contract Awardee"
     },
     {
@@ -966,12 +960,6 @@
       "id": "505cfef1ca5e",
       "from": "334c4a4c42fd",
       "to": "5cdf8c992852",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "47c610d34ffe",
-      "from": "697b31d5b595",
-      "to": "95178e3865cd",
       "label": "Contract Awardee"
     }
   ]
