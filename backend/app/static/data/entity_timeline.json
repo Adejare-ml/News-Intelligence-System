@@ -190,6 +190,25 @@
       ]
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -199,6 +218,25 @@
           "mentions": 6,
           "avg_risk": 63.3,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -237,38 +275,6 @@
           "mentions": 5,
           "avg_risk": 26.0,
           "max_risk": 35
-        }
-      ]
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1854,6 +1860,19 @@
       ]
     },
     {
+      "key": "government of the united kingdom",
+      "label": "Government of the United Kingdom",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "healthcap africa",
       "label": "HealthCap Africa",
       "total_mentions": 1,
@@ -3336,5 +3355,5 @@
       ]
     }
   ],
-  "generated": "2026-09-27 12:43:41"
+  "generated": "2026-09-27 17:28:22"
 }

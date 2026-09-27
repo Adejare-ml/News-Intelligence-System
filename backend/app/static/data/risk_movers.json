@@ -37,15 +37,6 @@
       "previous_mentions": 9
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 20.0,
-      "previous_avg": 30.0,
-      "delta": -10.0,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "totalenergies",
       "label": "TotalEnergies",
       "recent_avg": 20.0,
@@ -62,6 +53,15 @@
       "delta": 7.0,
       "recent_mentions": 5,
       "previous_mentions": 1
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 20.0,
+      "previous_avg": 26.7,
+      "delta": -6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 3
     },
     {
       "key": "central bank of",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-27 12:43:41"
+  "generated": "2026-09-27 17:28:22"
 }
