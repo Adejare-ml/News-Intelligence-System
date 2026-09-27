@@ -1,61 +1,61 @@
 {
-  "generated": "2026-09-27 17:28:14",
+  "generated": "2026-09-27 20:02:03",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4046,
+      "likes": 4066,
       "downloads": 0
-    },
-    {
-      "id": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "task": "text-to-image",
-      "likes": 2467,
-      "downloads": 52804
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2038,
+      "likes": 2053,
       "downloads": 964220
+    },
+    {
+      "id": "Qwen/Qwen-Image-2.1",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "task": "text-to-image",
+      "likes": 2475,
+      "downloads": 52804
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1776,
+      "likes": 1780,
       "downloads": 45028
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 973,
+      "likes": 977,
       "downloads": 19434
-    },
-    {
-      "id": "Altworld/Hemmingway-1",
-      "url": "https://huggingface.co/Altworld/Hemmingway-1",
-      "task": "text-generation",
-      "likes": 727,
-      "downloads": 5904
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2-27B-gguf",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf",
       "task": "text-generation",
-      "likes": 2174,
+      "likes": 2181,
       "downloads": 3343748
     },
     {
-      "id": "Comfy-Org/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
-      "task": "",
-      "likes": 796,
-      "downloads": 3987373
+      "id": "Altworld/Hemmingway-1",
+      "url": "https://huggingface.co/Altworld/Hemmingway-1",
+      "task": "text-generation",
+      "likes": 730,
+      "downloads": 5904
+    },
+    {
+      "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "task": "text-generation",
+      "likes": 551,
+      "downloads": 75079
     }
   ],
   "papers": [

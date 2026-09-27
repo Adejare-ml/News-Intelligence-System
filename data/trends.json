@@ -1,13 +1,13 @@
 {
   "window_days": 7,
   "recent_articles": 146,
-  "previous_articles": 192,
+  "previous_articles": 193,
   "rising": [
     {
       "term": "lagos",
       "recent": 13,
-      "previous": 3,
-      "change": 10
+      "previous": 2,
+      "change": 11
     },
     {
       "term": "deal",
@@ -52,13 +52,13 @@
       "change": 5
     },
     {
-      "term": "hits",
+      "term": "launch",
       "recent": 5,
       "previous": 0,
       "change": 5
     },
     {
-      "term": "launch",
+      "term": "ogun",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 97,
-      "previous": 129
+      "recent": 98,
+      "previous": 130
     },
     {
       "category": "Company",
@@ -139,7 +139,7 @@
     },
     {
       "category": "Legal",
-      "recent": 18,
+      "recent": 17,
       "previous": 27
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-27 17:28:15"
+  "generated": "2026-09-27 20:02:03"
 }
