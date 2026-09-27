@@ -1,24 +1,6 @@
 {
   "movers": [
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 30.0,
-      "previous_avg": 65.0,
-      "delta": -35.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 20.0,
-      "previous_avg": 41.4,
-      "delta": -21.4,
-      "recent_mentions": 2,
-      "previous_mentions": 7
-    },
-    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 55.0,
@@ -49,10 +31,10 @@
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "recent_avg": 36.0,
-      "previous_avg": 24.0,
-      "delta": 12.0,
+      "previous_avg": 24.4,
+      "delta": 11.6,
       "recent_mentions": 5,
-      "previous_mentions": 10
+      "previous_mentions": 9
     },
     {
       "key": "government of",
@@ -82,13 +64,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
-      "recent_avg": 81.7,
-      "previous_avg": 75.0,
-      "delta": 6.7,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 20.8,
+      "previous_avg": 15.0,
+      "delta": 5.8,
+      "recent_mentions": 13,
+      "previous_mentions": 4
     },
     {
       "key": "national petroleum company",
@@ -98,6 +80,15 @@
       "delta": 4.5,
       "recent_mentions": 6,
       "previous_mentions": 9
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 27.5,
+      "previous_avg": 23.1,
+      "delta": 4.4,
+      "recent_mentions": 14,
+      "previous_mentions": 16
     },
     {
       "key": "lagos state government",
@@ -127,22 +118,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 16.8,
-      "previous_avg": 15.0,
-      "delta": 1.8,
-      "recent_mentions": 11,
-      "previous_mentions": 4
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 27.0,
-      "previous_avg": 27.2,
-      "delta": -0.2,
-      "recent_mentions": 15,
-      "previous_mentions": 16
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "recent_avg": 81.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
     },
     {
       "key": "maina",
@@ -179,8 +161,26 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "sunu assurances",
+      "label": "SUNU Assurances",
+      "recent_avg": 20.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "recent_avg": 20.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-27 01:15:26"
+  "generated": "2026-09-27 12:43:41"
 }

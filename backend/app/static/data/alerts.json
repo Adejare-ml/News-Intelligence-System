@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-09-27",
+      "title": "SERAP asks CBN to account for allegedly diverted $6.23m, \u20a61.63trn - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPeS0yRi1pRlRuREt5dzJRN3pTd2hkeFlFTjNLSXkzdlhWcTkwaU5NbmhHOUxpcG9uZ3YzbEVqMjBweWM2RDhTaFlFejQwUnRKeHhoeFlMT3A0VkR3aWpkdldTeElqY2huTHhzV08tZ1hnZ2R5SzB5SHhiVHdmRFVROXhvVHhIQ00zQjF6QjZwVE1lOUZwLWdNOFJTMHBDeVRqNXVOaWpBc3BzR2lnVk9YZzlCM21kU2k5M2RneGt1aXNrbHczdm9Z?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Central Bank of Nigeria",
+        "Socio-Economic Rights and Accountability Project"
+      ]
+    },
+    {
       "date": "2026-09-26",
       "title": "75% of govt pilgrimage funds allegedly stolen, Olukoyede alleges - The Guardian Nigeria News",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPN2pMeS1RUzgxY2w2SlNsUThmSDM5SHlKWVVXY2tzcFYxOHI5MGZXN2Z3Q0xEQUY3OWNXa0VUaTQwT3hYMUlCVXIycHNHZjN0UXJIRVExdlRZR19KS0dQYVhwcFlxMlBKNk1Qc3gxckdvR1RUYUNsVEhGWENibDFjWjlvWWVrYUtoeVp5WF9YM1lqUQ?oc=5",
@@ -297,5 +309,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-27 01:15:26"
+  "generated": "2026-09-27 12:43:41"
 }

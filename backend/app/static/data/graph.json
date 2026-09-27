@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "63d7ae84572c",
       "label": "International Energy Agency",
       "type": "agency",
@@ -171,12 +177,6 @@
     {
       "id": "7367d6073504",
       "label": "Nigerian Maritime Labour Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },

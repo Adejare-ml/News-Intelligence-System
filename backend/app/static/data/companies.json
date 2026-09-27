@@ -6554,7 +6554,7 @@
   {
     "Company": "Dangote Petroleum Refinery",
     "Mention Count": 13,
-    "Last Seen": "2026-09-27 01:14",
+    "Last Seen": "2026-09-27 1:14",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -7881,10 +7881,10 @@
   },
   {
     "Company": "Socio-Economic Rights and Accountability Project",
-    "Mention Count": 2,
-    "Last Seen": "2026-09-21 10:50",
-    "Industry": "Non-Profit/Legal Advocacy",
-    "Risk Level": "Medium",
+    "Mention Count": 3,
+    "Last Seen": "2026-09-27 12:42",
+    "Industry": "Legal/Advocacy",
+    "Risk Level": "High",
     "First Seen": "2026-09-14 11:01"
   },
   {
@@ -8406,5 +8406,13 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-09-27 01:14"
+  },
+  {
+    "Company": "University Press",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-27 12:41",
+    "Industry": "Publishing",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-27 12:41"
   }
 ]
