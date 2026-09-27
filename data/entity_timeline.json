@@ -53,7 +53,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 16,
+      "total_mentions": 18,
       "points": [
         {
           "week": "2026-09-07",
@@ -69,9 +69,9 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 9,
-          "avg_risk": 16.1,
-          "max_risk": 20
+          "mentions": 11,
+          "avg_risk": 20.9,
+          "max_risk": 75
         }
       ]
     },
@@ -553,6 +553,31 @@
       ]
     },
     {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -1013,25 +1038,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -3226,6 +3232,19 @@
       ]
     },
     {
+      "key": "university press",
+      "label": "University Press",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "university of calabar",
       "label": "University of Calabar",
       "total_mentions": 1,
@@ -3317,5 +3336,5 @@
       ]
     }
   ],
-  "generated": "2026-09-27 01:15:26"
+  "generated": "2026-09-27 12:43:41"
 }
