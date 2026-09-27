@@ -192,7 +192,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 6,
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
@@ -202,7 +202,7 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 3,
+          "mentions": 4,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -402,6 +402,19 @@
           "mentions": 3,
           "avg_risk": 15.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 30
         }
       ]
     },
@@ -728,19 +741,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 30
         }
       ]
     },
@@ -3355,5 +3355,5 @@
       ]
     }
   ],
-  "generated": "2026-09-27 17:28:22"
+  "generated": "2026-09-27 20:02:07"
 }

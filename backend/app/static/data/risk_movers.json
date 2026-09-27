@@ -4,10 +4,10 @@
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 55.0,
-      "previous_avg": 37.9,
-      "delta": 17.1,
+      "previous_avg": 38.2,
+      "delta": 16.8,
       "recent_mentions": 10,
-      "previous_mentions": 21
+      "previous_mentions": 20
     },
     {
       "key": "ogun state government",
@@ -60,7 +60,7 @@
       "recent_avg": 20.0,
       "previous_avg": 26.7,
       "delta": -6.7,
-      "recent_mentions": 3,
+      "recent_mentions": 4,
       "previous_mentions": 3
     },
     {
@@ -172,8 +172,8 @@
       "previous_mentions": 0
     },
     {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
+      "key": "amni",
+      "label": "AMNI",
       "recent_avg": 20.0,
       "previous_avg": null,
       "delta": null,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-27 17:28:22"
+  "generated": "2026-09-27 20:02:07"
 }

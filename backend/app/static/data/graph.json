@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
@@ -225,12 +231,6 @@
     {
       "id": "478418814097",
       "label": "European Union",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fc891fdac42c",
-      "label": "National Bureau of Statistics",
       "type": "agency",
       "risk": "Low"
     },
@@ -609,12 +609,6 @@
     {
       "id": "635f6d07426b",
       "label": "Korea International Cooperation Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
