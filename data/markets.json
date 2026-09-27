@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-26 19:36:27",
+  "generated": "2026-09-27 01:15:23",
   "sources": "stooq.com (indices, commodities), coingecko.com (BTC)",
   "unit": "index points; USD for brent/gold/btc",
   "latest": {
-    "btc": 84011.0
+    "btc": 84360.0
   },
   "history": [
     {
@@ -21,6 +21,10 @@
     {
       "date": "2026-09-26",
       "btc": 84011.0
+    },
+    {
+      "date": "2026-09-27",
+      "btc": 84360.0
     }
   ]
 }

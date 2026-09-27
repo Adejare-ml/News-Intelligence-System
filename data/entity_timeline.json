@@ -173,7 +173,7 @@
     {
       "key": "dangote petroleum refinery",
       "label": "Dangote Petroleum Refinery",
-      "total_mentions": 6,
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
@@ -183,8 +183,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 43.3,
+          "mentions": 4,
+          "avg_risk": 37.5,
           "max_risk": 65
         }
       ]
@@ -1549,6 +1549,19 @@
       ]
     },
     {
+      "key": "dangote east african refinery",
+      "label": "Dangote East African Refinery",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dangote petroleum refinery and petrochemicals",
       "label": "Dangote Petroleum Refinery and Petrochemicals",
       "total_mentions": 1,
@@ -1961,6 +1974,19 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "international energy agency",
+      "label": "International Energy Agency",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3252,6 +3278,19 @@
       ]
     },
     {
+      "key": "william ruto",
+      "label": "William Ruto",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "zacch adedeji",
       "label": "Zacch Adedeji",
       "total_mentions": 1,
@@ -3278,5 +3317,5 @@
       ]
     }
   ],
-  "generated": "2026-09-26 19:36:30"
+  "generated": "2026-09-27 01:15:26"
 }

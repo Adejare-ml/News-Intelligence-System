@@ -1,19 +1,21 @@
 {
   "new_companies": [
-    "Coca-Cola"
+    "Dangote East African Refinery"
   ],
-  "new_people": [],
+  "new_people": [
+    "William Ruto"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
     "new_companies": 1,
-    "new_people": 0,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-26 19:36:24"
+  "generated": "2026-09-27 01:15:16"
 }
