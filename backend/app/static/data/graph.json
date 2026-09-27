@@ -73,16 +73,16 @@
       "risk": "Low"
     },
     {
-      "id": "f174114ad69e",
-      "label": "Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "01ccce37119e",
       "label": "Dangote Petroleum Refinery",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "f174114ad69e",
+      "label": "Nigeria",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "6b0baabbfd00",
@@ -118,6 +118,12 @@
       "id": "dce5a31d3181",
       "label": "MTN Nigeria",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "63d7ae84572c",
+      "label": "International Energy Agency",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -229,9 +235,15 @@
       "risk": "Low"
     },
     {
-      "id": "22ee91f832d4",
-      "label": "Ministry of State for Petroleum Resources",
-      "type": "agency",
+      "id": "5e49b3d528a0",
+      "label": "William Ruto",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "98778bafe148",
+      "label": "Government of Kenya",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -268,6 +280,12 @@
       "id": "3e45c1f8a33f",
       "label": "Heineken Lokpobiri",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "22ee91f832d4",
+      "label": "Ministry of State for Petroleum Resources",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -436,18 +454,6 @@
       "id": "514496e0e74c",
       "label": "Muhammadu Buhari",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "571dc7e68720",
-      "label": "Adesanya",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ebe2d81e3981",
-      "label": "Not Specified",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -651,6 +657,12 @@
   ],
   "edges": [
     {
+      "id": "e2ec68f58eee",
+      "from": "5e49b3d528a0",
+      "to": "98778bafe148",
+      "label": "Appointed as President"
+    },
+    {
       "id": "a02eeea3dabb",
       "from": "ff19dbb82a9e",
       "to": "334c4a4c42fd",
@@ -793,12 +805,6 @@
       "from": "514496e0e74c",
       "to": "0c2be969618b",
       "label": "Appointed as Former President"
-    },
-    {
-      "id": "07903aad4386",
-      "from": "571dc7e68720",
-      "to": "ebe2d81e3981",
-      "label": "Appointed as Not Specified"
     },
     {
       "id": "bacdbeb20944",

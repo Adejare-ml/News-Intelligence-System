@@ -58,17 +58,17 @@
     },
     {
       "source": "The Punch",
-      "total": 455,
-      "published": 266,
-      "filtered": 189,
+      "total": 459,
+      "published": 267,
+      "filtered": 192,
       "accept_rate": 58,
-      "avg_risk": 33.0,
+      "avg_risk": 32.9,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 156
+        "ollama": 157
       },
-      "last_seen": "2026-09-25"
+      "last_seen": "2026-09-26"
     },
     {
       "source": "Vanguard News",
@@ -127,9 +127,9 @@
     },
     {
       "source": "leadership",
-      "total": 146,
+      "total": 147,
       "published": 47,
-      "filtered": 99,
+      "filtered": 100,
       "accept_rate": 32,
       "avg_risk": 23.7,
       "engines": {
@@ -140,16 +140,16 @@
     },
     {
       "source": "dailypost",
-      "total": 134,
+      "total": 137,
       "published": 42,
-      "filtered": 92,
+      "filtered": 95,
       "accept_rate": 31,
       "avg_risk": 24.7,
       "engines": {
         "unknown": 40,
         "ollama": 2
       },
-      "last_seen": "2026-09-25"
+      "last_seen": "2026-09-26"
     },
     {
       "source": "punchng",
@@ -193,9 +193,9 @@
     },
     {
       "source": "legit",
-      "total": 87,
+      "total": 88,
       "published": 23,
-      "filtered": 64,
+      "filtered": 65,
       "accept_rate": 26,
       "avg_risk": 26.1,
       "engines": {
@@ -457,6 +457,18 @@
       "last_seen": "2026-09-21"
     },
     {
+      "source": "nigerianeye",
+      "total": 6,
+      "published": 1,
+      "filtered": 5,
+      "accept_rate": 17,
+      "avg_risk": 10.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-09-26"
+    },
+    {
       "source": "thenationonlineng",
       "total": 6,
       "published": 2,
@@ -503,18 +515,6 @@
       "avg_risk": null,
       "engines": {},
       "last_seen": "2026-09-21"
-    },
-    {
-      "source": "nigerianeye",
-      "total": 5,
-      "published": 1,
-      "filtered": 4,
-      "accept_rate": 20,
-      "avg_risk": 10.0,
-      "engines": {
-        "ollama": 1
-      },
-      "last_seen": "2026-09-07"
     },
     {
       "source": "politicsnigeria",
@@ -931,6 +931,19 @@
         "nvidia": 1
       },
       "last_seen": "2026-08-11"
+    },
+    {
+      "source": "OilPrice.com",
+      "total": 2,
+      "published": 2,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 22.5,
+      "engines": {
+        "unknown": 1,
+        "ollama": 1
+      },
+      "last_seen": "2026-09-25"
     },
     {
       "source": "The Times of India",
@@ -1513,18 +1526,6 @@
       "last_seen": "2026-09-08"
     },
     {
-      "source": "OilPrice.com",
-      "total": 1,
-      "published": 1,
-      "filtered": 0,
-      "accept_rate": 100,
-      "avg_risk": 30.0,
-      "engines": {
-        "unknown": 1
-      },
-      "last_seen": "2026-07-21"
-    },
-    {
       "source": "Ontario Federation of Agriculture",
       "total": 1,
       "published": 0,
@@ -1963,5 +1964,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-26 19:36:30"
+  "generated": "2026-09-27 01:15:26"
 }

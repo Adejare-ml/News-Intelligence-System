@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 148,
-  "previous_articles": 194,
+  "recent_articles": 147,
+  "previous_articles": 195,
   "rising": [
     {
       "term": "lagos",
@@ -40,13 +40,13 @@
       "change": 5
     },
     {
-      "term": "launch",
+      "term": "hits",
       "recent": 5,
       "previous": 0,
       "change": 5
     },
     {
-      "term": "nmdpra",
+      "term": "launch",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -58,7 +58,7 @@
       "change": 5
     },
     {
-      "term": "investment",
+      "term": "cbn",
       "recent": 8,
       "previous": 4,
       "change": 4
@@ -78,33 +78,21 @@
       "change": -8
     },
     {
-      "term": "beneficial",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "beneficial ownership",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "ownership",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "dangote",
-      "recent": 8,
-      "previous": 15,
+      "term": "premium",
+      "recent": 21,
+      "previous": 28,
       "change": -7
     },
     {
-      "term": "refinery",
-      "recent": 4,
-      "previous": 11,
+      "term": "premium times",
+      "recent": 21,
+      "previous": 28,
+      "change": -7
+    },
+    {
+      "term": "times",
+      "recent": 21,
+      "previous": 28,
       "change": -7
     },
     {
@@ -114,13 +102,25 @@
       "change": -7
     },
     {
+      "term": "beneficial",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "beneficial ownership",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
       "term": "cac",
       "recent": 0,
       "previous": 7,
       "change": -7
     },
     {
-      "term": "payment",
+      "term": "ownership",
       "recent": 0,
       "previous": 7,
       "change": -7
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 100,
-      "previous": 128
+      "recent": 98,
+      "previous": 130
     },
     {
       "category": "Company",
-      "recent": 29,
+      "recent": 30,
       "previous": 38
     },
     {
       "category": "Legal",
       "recent": 18,
-      "previous": 28
+      "previous": 27
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-26 19:36:27"
+  "generated": "2026-09-27 01:15:23"
 }
