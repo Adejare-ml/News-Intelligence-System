@@ -130,6 +130,11 @@
       "weight": 4
     },
     {
+      "a": "central bank of",
+      "b": "socio economic rights and accountability project",
+      "weight": 3
+    },
+    {
       "a": "economic and financial crimes commission",
       "b": "maina",
       "weight": 3
@@ -167,11 +172,6 @@
     {
       "a": "central bank of",
       "b": "lagos chamber of commerce and industry",
-      "weight": 2
-    },
-    {
-      "a": "central bank of",
-      "b": "socio economic rights and accountability project",
       "weight": 2
     },
     {
@@ -215,5 +215,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-09-28 01:33:32"
+  "generated": "2026-09-28 14:59:05"
 }

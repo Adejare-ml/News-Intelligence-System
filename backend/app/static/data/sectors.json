@@ -2,11 +2,11 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 967,
-      "mentions": 1651,
+      "companies": 965,
+      "mentions": 1641,
       "risk": {
-        "Low": 851,
-        "Critical": 58,
+        "Low": 850,
+        "Critical": 57,
         "Medium": 34,
         "High": 24
       }
@@ -28,6 +28,15 @@
       "mentions": 31,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Non-Profit",
+      "companies": 3,
+      "mentions": 13,
+      "risk": {
+        "Critical": 1,
+        "Medium": 2
       }
     },
     {
@@ -91,6 +100,14 @@
       }
     },
     {
+      "industry": "Legal/Advocacy",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 2,
       "mentions": 4,
@@ -105,14 +122,6 @@
       "mentions": 4,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 4,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -373,5 +382,5 @@
       }
     }
   ],
-  "generated": "2026-09-28 01:33:32"
+  "generated": "2026-09-28 14:59:05"
 }

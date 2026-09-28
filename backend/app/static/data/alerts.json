@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-09-28",
+      "title": "SERAP gives CBN seven days to account for allegedly diverted $6.23m election funds, \u20a61.63t other public funds - theeagleonline.com.ng",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQV2ZwWTFBcnhENnRKbDFnbzVTanAxYm8zWkhoUEt3RnZKUW9pZkZOZEdKR25yUmZaS0tTa2JkOU5FUEwwRjlFTnFOa0loTVpHRGxLRUtlOF9TTVdJaDlMekRrbGJjdVZRY0F5aTJ4UkllQnRkTlN6Snc5V0xlc1pZdTR1aHdBc0p5aUY4ckY5YjBaT0tQay1yX0VVME5PSFZ5Q2JUcURWSFFCeHB1S2w4SWZZMTMwcjI4emd0b0NWSGhVUDRVNVh6WG9HSlJqTmNwMTVTbF9Ma0VHM2h3cVBz?oc=5",
+      "source": "theeagleonline.com.ng",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Central Bank of Nigeria",
+        "Socio-Economic Rights and Accountability Project"
+      ]
+    },
+    {
       "date": "2026-09-27",
       "title": "SERAP asks CBN to account for allegedly diverted $6.23m, \u20a61.63trn - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPeS0yRi1pRlRuREt5dzJRN3pTd2hkeFlFTjNLSXkzdlhWcTkwaU5NbmhHOUxpcG9uZ3YzbEVqMjBweWM2RDhTaFlFejQwUnRKeHhoeFlMT3A0VkR3aWpkdldTeElqY2huTHhzV08tZ1hnZ2R5SzB5SHhiVHdmRFVROXhvVHhIQ00zQjF6QjZwVE1lOUZwLWdNOFJTMHBDeVRqNXVOaWpBc3BzR2lnVk9YZzlCM21kU2k5M2RneGt1aXNrbHczdm9Z?oc=5",
@@ -309,5 +321,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-28 01:33:32"
+  "generated": "2026-09-28 14:59:05"
 }

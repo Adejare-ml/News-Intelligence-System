@@ -16,28 +16,42 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1179,
-      "published": 630,
-      "filtered": 549,
+      "total": 1186,
+      "published": 633,
+      "filtered": 553,
       "accept_rate": 53,
       "avg_risk": 31.2,
       "engines": {
         "unknown": 440,
-        "ollama": 186,
+        "ollama": 189,
         "nvidia": 4
       },
-      "last_seen": "2026-09-27"
+      "last_seen": "2026-09-28"
     },
     {
       "source": "Punch Newspapers",
-      "total": 718,
+      "total": 720,
       "published": 325,
-      "filtered": 393,
+      "filtered": 395,
       "accept_rate": 45,
       "avg_risk": 26.7,
       "engines": {
         "unknown": 188,
         "ollama": 133,
+        "nvidia": 4
+      },
+      "last_seen": "2026-09-28"
+    },
+    {
+      "source": "theeagleonline.com.ng",
+      "total": 466,
+      "published": 152,
+      "filtered": 314,
+      "accept_rate": 33,
+      "avg_risk": 27.7,
+      "engines": {
+        "unknown": 81,
+        "ollama": 67,
         "nvidia": 4
       },
       "last_seen": "2026-09-28"
@@ -57,24 +71,10 @@
       "last_seen": "2026-09-27"
     },
     {
-      "source": "theeagleonline.com.ng",
-      "total": 461,
-      "published": 151,
-      "filtered": 310,
-      "accept_rate": 33,
-      "avg_risk": 27.4,
-      "engines": {
-        "unknown": 81,
-        "ollama": 66,
-        "nvidia": 4
-      },
-      "last_seen": "2026-09-27"
-    },
-    {
       "source": "Vanguard News",
-      "total": 267,
+      "total": 268,
       "published": 137,
-      "filtered": 130,
+      "filtered": 131,
       "accept_rate": 51,
       "avg_risk": 27.3,
       "engines": {
@@ -82,7 +82,7 @@
         "ollama": 38,
         "nvidia": 5
       },
-      "last_seen": "2026-09-27"
+      "last_seen": "2026-09-28"
     },
     {
       "source": "Vanguard",
@@ -112,6 +112,19 @@
       "last_seen": "2026-09-27"
     },
     {
+      "source": "leadership",
+      "total": 152,
+      "published": 47,
+      "filtered": 105,
+      "accept_rate": 31,
+      "avg_risk": 23.7,
+      "engines": {
+        "unknown": 35,
+        "ollama": 12
+      },
+      "last_seen": "2026-09-28"
+    },
+    {
       "source": "sunnewsonline",
       "total": 152,
       "published": 61,
@@ -124,19 +137,6 @@
         "nvidia": 2
       },
       "last_seen": "2026-09-27"
-    },
-    {
-      "source": "leadership",
-      "total": 147,
-      "published": 47,
-      "filtered": 100,
-      "accept_rate": 32,
-      "avg_risk": 23.7,
-      "engines": {
-        "unknown": 35,
-        "ollama": 12
-      },
-      "last_seen": "2026-09-26"
     },
     {
       "source": "dailypost",
@@ -270,6 +270,18 @@
       "last_seen": "2026-09-27"
     },
     {
+      "source": "guardian.ng",
+      "total": 29,
+      "published": 9,
+      "filtered": 20,
+      "accept_rate": 31,
+      "avg_risk": 38.9,
+      "engines": {
+        "ollama": 9
+      },
+      "last_seen": "2026-09-28"
+    },
+    {
       "source": "thisdaylive",
       "total": 27,
       "published": 12,
@@ -306,18 +318,6 @@
         "unknown": 3
       },
       "last_seen": "2026-09-22"
-    },
-    {
-      "source": "guardian.ng",
-      "total": 24,
-      "published": 6,
-      "filtered": 18,
-      "accept_rate": 25,
-      "avg_risk": 46.7,
-      "engines": {
-        "ollama": 6
-      },
-      "last_seen": "2026-09-25"
     },
     {
       "source": "vanguardngr.com",
@@ -655,6 +655,16 @@
       "last_seen": "2026-09-08"
     },
     {
+      "source": "guardian",
+      "total": 4,
+      "published": 0,
+      "filtered": 4,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-28"
+    },
+    {
       "source": "newtelegraphng",
       "total": 4,
       "published": 0,
@@ -761,16 +771,6 @@
         "unknown": 1
       },
       "last_seen": "2026-09-25"
-    },
-    {
-      "source": "guardian",
-      "total": 3,
-      "published": 0,
-      "filtered": 3,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-09-27"
     },
     {
       "source": "library.cbn.gov.ng",
@@ -1984,5 +1984,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-28 01:33:32"
+  "generated": "2026-09-28 14:59:05"
 }
