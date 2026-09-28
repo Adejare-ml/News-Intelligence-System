@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 150,
-  "previous_articles": 184,
+  "recent_articles": 154,
+  "previous_articles": 185,
   "rising": [
     {
       "term": "lagos",
@@ -40,6 +40,12 @@
       "change": 5
     },
     {
+      "term": "court",
+      "recent": 9,
+      "previous": 4,
+      "change": 5
+    },
+    {
       "term": "policy",
       "recent": 7,
       "previous": 2,
@@ -56,32 +62,26 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "launch",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     }
   ],
   "falling": [
     {
       "term": "premium",
-      "recent": 21,
-      "previous": 30,
-      "change": -9
+      "recent": 23,
+      "previous": 31,
+      "change": -8
     },
     {
       "term": "premium times",
-      "recent": 21,
-      "previous": 30,
-      "change": -9
+      "recent": 23,
+      "previous": 31,
+      "change": -8
     },
     {
       "term": "times",
-      "recent": 21,
-      "previous": 30,
-      "change": -9
+      "recent": 23,
+      "previous": 31,
+      "change": -8
     },
     {
       "term": "mambilla",
@@ -129,7 +129,7 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 99,
+      "recent": 101,
       "previous": 125
     },
     {
@@ -139,8 +139,8 @@
     },
     {
       "category": "Legal",
-      "recent": 18,
-      "previous": 28
+      "recent": 20,
+      "previous": 29
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-28 20:04:28"
+  "generated": "2026-09-28 22:31:01"
 }

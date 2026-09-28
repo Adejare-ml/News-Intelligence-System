@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 964,
-      "mentions": 1638,
+      "companies": 966,
+      "mentions": 1640,
       "risk": {
-        "Low": 850,
+        "Low": 852,
         "Critical": 57,
         "Medium": 34,
         "High": 23
@@ -109,6 +109,14 @@
       }
     },
     {
+      "industry": "Political Party",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 2,
       "mentions": 4,
@@ -123,14 +131,6 @@
       "mentions": 4,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 1,
-      "mentions": 4,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -240,6 +240,14 @@
     },
     {
       "industry": "Shipping",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -383,14 +391,6 @@
       }
     },
     {
-      "industry": "Technology",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Technology/Digital Services",
       "companies": 1,
       "mentions": 1,
@@ -399,5 +399,5 @@
       }
     }
   ],
-  "generated": "2026-09-28 20:04:33"
+  "generated": "2026-09-28 22:31:09"
 }

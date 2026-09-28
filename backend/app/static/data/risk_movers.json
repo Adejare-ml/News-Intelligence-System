@@ -21,10 +21,10 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 20.0,
+      "recent_avg": 17.5,
       "previous_avg": 40.0,
-      "delta": -20.0,
-      "recent_mentions": 2,
+      "delta": -22.5,
+      "recent_mentions": 4,
       "previous_mentions": 1
     },
     {
@@ -109,6 +109,15 @@
       "previous_mentions": 20
     },
     {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "recent_avg": 20.0,
+      "previous_avg": 15.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar",
       "recent_avg": 80.0,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 4,
       "previous_mentions": 0
-    },
-    {
-      "key": "electricity regulatory commission",
-      "label": "Nigerian Electricity Regulatory Commission",
-      "recent_avg": 27.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-28 20:04:33"
+  "generated": "2026-09-28 22:31:09"
 }
