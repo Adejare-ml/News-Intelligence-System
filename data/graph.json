@@ -259,6 +259,12 @@
       "risk": "Low"
     },
     {
+      "id": "163087c74c5d",
+      "label": "Joash Amupitan",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "5e49b3d528a0",
       "label": "William Ruto",
       "type": "person",
@@ -447,12 +453,6 @@
     {
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ba64a7d9d940",
-      "label": "David Fagbemi",
       "type": "person",
       "risk": "Low"
     },
@@ -657,6 +657,12 @@
       "label": "Appointed as Governor"
     },
     {
+      "id": "8417c9ff8be5",
+      "from": "163087c74c5d",
+      "to": "bf69cb1ec5ea",
+      "label": "Appointed as Chairman"
+    },
+    {
       "id": "e2ec68f58eee",
       "from": "5e49b3d528a0",
       "to": "98778bafe148",
@@ -781,12 +787,6 @@
       "from": "325a5c8a1ef5",
       "to": "0c2be969618b",
       "label": "Appointed as Former Vice President"
-    },
-    {
-      "id": "fc5ead2bfe70",
-      "from": "ba64a7d9d940",
-      "to": "0c2be969618b",
-      "label": "Appointed as Attorney General of the Federation"
     },
     {
       "id": "bacdbeb20944",

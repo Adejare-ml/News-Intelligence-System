@@ -258,6 +258,37 @@
       ]
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -359,6 +390,25 @@
       ]
     },
     {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar",
       "total_mentions": 4,
@@ -406,37 +456,6 @@
           "mentions": 4,
           "avg_risk": 63.8,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -497,25 +516,6 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -865,6 +865,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "meta",
+      "label": "Meta",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2283,6 +2296,19 @@
       ]
     },
     {
+      "key": "joash amupitan",
+      "label": "Joash Amupitan",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "kano state government",
       "label": "Kano State Government",
       "total_mentions": 1,
@@ -2539,19 +2565,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "meta",
-      "label": "Meta",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -3440,6 +3453,19 @@
       ]
     },
     {
+      "key": "spring",
+      "label": "SPRiNG",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "sanusi",
       "label": "Sanusi",
       "total_mentions": 1,
@@ -3563,6 +3589,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "tetra tech",
+      "label": "Tetra Tech",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3739,5 +3778,5 @@
       ]
     }
   ],
-  "generated": "2026-09-28 20:04:33"
+  "generated": "2026-09-28 22:31:09"
 }
