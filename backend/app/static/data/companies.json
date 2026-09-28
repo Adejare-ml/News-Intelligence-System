@@ -6529,9 +6529,9 @@
   },
   {
     "Company": "All Progressives Congress",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-02 11:59",
-    "Industry": "General",
+    "Mention Count": 4,
+    "Last Seen": "2026-09-28 20:01",
+    "Industry": "Political Party",
     "Risk Level": "High",
     "First Seen": ""
   },
@@ -8422,5 +8422,61 @@
     "Industry": "Non-Profit",
     "Risk Level": "Medium",
     "First Seen": "2026-09-28 14:56"
+  },
+  {
+    "Company": "Meta",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:00",
+    "Industry": "Technology",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:00"
+  },
+  {
+    "Company": "Access Bank",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:00",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:00"
+  },
+  {
+    "Company": "NIPCO",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:00",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:00"
+  },
+  {
+    "Company": "Matrix",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:01",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:01"
+  },
+  {
+    "Company": "AA Rano",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:01",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:01"
+  },
+  {
+    "Company": "AYM Shafa",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:01",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:01"
+  },
+  {
+    "Company": "DLM",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 20:02",
+    "Industry": "Financial Services",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-28 20:02"
   }
 ]

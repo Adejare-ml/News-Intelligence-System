@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 31,
-      "undisclosed": 20,
+      "contracts": 32,
+      "undisclosed": 21,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -112,6 +112,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 2200000000.0
+      }
+    },
+    {
+      "name": "Nigerian Education Loan Fund",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1750000000.0
       }
     },
     {
@@ -258,6 +266,12 @@
     },
     {
       "name": "Cross River State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Delta State Government",
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
@@ -488,8 +502,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 77,
-      "undisclosed": 47,
+      "contracts": 79,
+      "undisclosed": 49,
       "totals": {
         "NGN": 4624426090000.0,
         "USD": 20583240000.0
@@ -509,6 +523,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 18000000000.0
+      }
+    },
+    {
+      "name": "Bayero University Kano",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1750000000.0
       }
     },
     {
@@ -808,5 +830,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-28 14:59:05"
+  "generated": "2026-09-28 20:04:33"
 }

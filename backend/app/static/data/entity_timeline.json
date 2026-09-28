@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 32,
+      "total_mentions": 33,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,7 +25,7 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -233,6 +233,31 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -261,25 +286,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 27.0,
-          "max_risk": 45
         }
       ]
     },
@@ -404,6 +410,56 @@
       ]
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "king s college",
+      "label": "King's College",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "totalenergies",
       "label": "TotalEnergies",
       "total_mentions": 4,
@@ -441,6 +497,25 @@
         },
         {
           "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -493,31 +568,6 @@
       ]
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "institute of chartered accountants of",
       "label": "Institute of Chartered Accountants of Nigeria",
       "total_mentions": 3,
@@ -533,19 +583,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "king s college",
-      "label": "King's College",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -591,6 +628,31 @@
           "mentions": 3,
           "avg_risk": 68.3,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "national pension commission",
+      "label": "National Pension Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -675,19 +737,6 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -924,25 +973,6 @@
       ]
     },
     {
-      "key": "national pension commission",
-      "label": "National Pension Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "niger delta development commission",
       "label": "Niger Delta Development Commission",
       "total_mentions": 2,
@@ -971,6 +1001,25 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "army",
+      "label": "Nigerian Army",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1168,6 +1217,19 @@
       ]
     },
     {
+      "key": "aa rano",
+      "label": "AA Rano",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ascsn",
       "label": "ASCSN",
       "total_mentions": 1,
@@ -1177,6 +1239,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "aym shafa",
+      "label": "AYM Shafa",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1203,6 +1278,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "access bank",
+      "label": "Access Bank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -1402,6 +1490,19 @@
       ]
     },
     {
+      "key": "bayero university kano",
+      "label": "Bayero University Kano",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "bola ahmed tinubu",
       "label": "Bola Ahmed Tinubu",
       "total_mentions": 1,
@@ -1597,6 +1698,19 @@
       ]
     },
     {
+      "key": "dlm",
+      "label": "DLM",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "dangote cement",
       "label": "Dangote Cement",
       "total_mentions": 1,
@@ -1662,6 +1776,19 @@
       ]
     },
     {
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "dr haydar daudu",
       "label": "Dr Haydar Daudu",
       "total_mentions": 1,
@@ -1684,6 +1811,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ekiti state government",
+      "label": "Ekiti State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -1866,6 +2006,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "godwin akume",
+      "label": "Godwin Akume",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2377,6 +2530,32 @@
       ]
     },
     {
+      "key": "matrix",
+      "label": "Matrix",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "meta",
+      "label": "Meta",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "ministry of petroleum resources",
       "label": "Ministry of Petroleum Resources",
       "total_mentions": 1,
@@ -2503,6 +2682,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "nipco",
+      "label": "NIPCO",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2767,19 +2959,6 @@
       ]
     },
     {
-      "key": "army",
-      "label": "Nigerian Army",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "bar association",
       "label": "Nigerian Bar Association",
       "total_mentions": 1,
@@ -2854,6 +3033,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "education loan fund",
+      "label": "Nigerian Education Loan Fund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2962,6 +3154,19 @@
       ]
     },
     {
+      "key": "office of the secretary to the government of the federation",
+      "label": "Office of the Secretary to the Government of the Federation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "total_mentions": 1,
@@ -3001,6 +3206,32 @@
       ]
     },
     {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "osun state university",
+      "label": "Osun State University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "otti",
       "label": "Otti",
       "total_mentions": 1,
@@ -3010,6 +3241,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "oyebanji",
+      "label": "Oyebanji",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3495,5 +3739,5 @@
       ]
     }
   ],
-  "generated": "2026-09-28 14:59:05"
+  "generated": "2026-09-28 20:04:33"
 }

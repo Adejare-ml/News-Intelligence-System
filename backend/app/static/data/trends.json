@@ -1,13 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 143,
-  "previous_articles": 187,
+  "recent_articles": 150,
+  "previous_articles": 184,
   "rising": [
     {
       "term": "lagos",
       "recent": 13,
       "previous": 2,
       "change": 11
+    },
+    {
+      "term": "guardian",
+      "recent": 50,
+      "previous": 40,
+      "change": 10
     },
     {
       "term": "rate",
@@ -28,6 +34,12 @@
       "change": 6
     },
     {
+      "term": "com",
+      "recent": 10,
+      "previous": 5,
+      "change": 5
+    },
+    {
       "term": "policy",
       "recent": 7,
       "previous": 2,
@@ -37,12 +49,6 @@
       "term": "deal",
       "recent": 6,
       "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "appoints",
-      "recent": 5,
-      "previous": 0,
       "change": 5
     },
     {
@@ -56,50 +62,26 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "ogun",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     }
   ],
   "falling": [
     {
       "term": "premium",
-      "recent": 20,
+      "recent": 21,
       "previous": 30,
-      "change": -10
+      "change": -9
     },
     {
       "term": "premium times",
-      "recent": 20,
+      "recent": 21,
       "previous": 30,
-      "change": -10
+      "change": -9
     },
     {
       "term": "times",
-      "recent": 20,
+      "recent": 21,
       "previous": 30,
-      "change": -10
-    },
-    {
-      "term": "efcc",
-      "recent": 9,
-      "previous": 17,
-      "change": -8
-    },
-    {
-      "term": "urges",
-      "recent": 4,
-      "previous": 12,
-      "change": -8
-    },
-    {
-      "term": "ipo",
-      "recent": 1,
-      "previous": 9,
-      "change": -8
+      "change": -9
     },
     {
       "term": "mambilla",
@@ -108,7 +90,7 @@
       "change": -7
     },
     {
-      "term": "refinery ipo",
+      "term": "ipo",
       "recent": 1,
       "previous": 8,
       "change": -7
@@ -124,22 +106,40 @@
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "cac",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "icc",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "ownership",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 95,
-      "previous": 129
+      "recent": 99,
+      "previous": 125
     },
     {
       "category": "Company",
-      "recent": 31,
-      "previous": 30
+      "recent": 32,
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 16,
+      "recent": 18,
       "previous": 28
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-28 14:59:04"
+  "generated": "2026-09-28 20:04:28"
 }

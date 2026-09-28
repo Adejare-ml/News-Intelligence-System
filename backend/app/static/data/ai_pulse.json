@@ -1,78 +1,83 @@
 {
-  "generated": "2026-09-28 14:59:03",
+  "generated": "2026-09-28 20:04:28",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4227,
+      "likes": 4277,
       "downloads": 0
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2197,
+      "likes": 2231,
       "downloads": 1062921
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1360,
+      "likes": 1368,
       "downloads": 19963
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2558,
+      "likes": 2576,
       "downloads": 58693
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1790,
+      "likes": 1798,
       "downloads": 45834
-    },
-    {
-      "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
-      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
-      "task": "text-generation",
-      "likes": 571,
-      "downloads": 76518
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 654,
+      "likes": 721,
       "downloads": 27904
+    },
+    {
+      "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "task": "text-generation",
+      "likes": 580,
+      "downloads": 76518
     },
     {
       "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
       "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
       "task": "image-text-to-text",
-      "likes": 535,
+      "likes": 545,
       "downloads": 9994
     }
   ],
   "papers": [
     {
+      "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
+      "url": "https://huggingface.co/papers/2609.26333",
+      "upvotes": 32
+    },
+    {
       "title": "LightMIS: Ultra-Lightweight Medical Image Segmentation Without a Stage-Wise Decoder",
       "url": "https://huggingface.co/papers/2609.28327",
-      "upvotes": 0
+      "upvotes": 2
     },
     {
       "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
       "url": "https://huggingface.co/papers/2609.30192",
-      "upvotes": 3
+      "upvotes": 6
     },
     {
       "title": "Softmax Reparameterization for Output-Head Quantization",
       "url": "https://huggingface.co/papers/2609.31291",
-      "upvotes": 0
+      "upvotes": 2
     },
     {
       "title": "CodeGraph: Open-Taxonomy Knowledge Graph for Source Code with Wikidata Grounding",
@@ -82,11 +87,6 @@
     {
       "title": "MOPD-Router: Rethinking Teacher Routing in Multi-Teacher On-Policy Distillation",
       "url": "https://huggingface.co/papers/2609.30837",
-      "upvotes": 1
-    },
-    {
-      "title": "VLA-Precision: Asymmetric Co-Bootstrapping for Efficient Real-World Online RL of Vision-Language-Action Models",
-      "url": "https://huggingface.co/papers/2609.04355",
       "upvotes": 2
     }
   ]
