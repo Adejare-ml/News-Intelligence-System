@@ -235,6 +235,12 @@
       "risk": "Low"
     },
     {
+      "id": "9392713dc79b",
+      "label": "Ojulari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "5e49b3d528a0",
       "label": "William Ruto",
       "type": "person",
@@ -451,12 +457,6 @@
       "risk": "Low"
     },
     {
-      "id": "514496e0e74c",
-      "label": "Muhammadu Buhari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -651,6 +651,12 @@
   ],
   "edges": [
     {
+      "id": "6fe1d5610f89",
+      "from": "9392713dc79b",
+      "to": "f38bd75574f6",
+      "label": "Appointed as Not Specified"
+    },
+    {
       "id": "e2ec68f58eee",
       "from": "5e49b3d528a0",
       "to": "98778bafe148",
@@ -793,12 +799,6 @@
       "from": "86430d64a9dc",
       "to": "8a7b7af09965",
       "label": "Appointed as Commissioner"
-    },
-    {
-      "id": "c70e5e786ee6",
-      "from": "514496e0e74c",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former President"
     },
     {
       "id": "bacdbeb20944",
