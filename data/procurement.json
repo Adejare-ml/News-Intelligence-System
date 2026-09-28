@@ -1338,5 +1338,35 @@
     "Date": "2026-09-28",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Delta State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Court projects and provision of 15 vehicles for magistrates",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-28",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Nigerian Education Loan Fund",
+    "Contractor": "Bayero University Kano",
+    "Amount": "N1.75 Billion",
+    "Project": "Payment for 14,990 students",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-28",
+    "Amount Value": 1750000000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Yola-Mubi road completion",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-09-28",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]

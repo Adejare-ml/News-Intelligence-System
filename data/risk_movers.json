@@ -1,12 +1,30 @@
 {
   "movers": [
     {
+      "key": "national pension commission",
+      "label": "National Pension Commission",
+      "recent_avg": 47.5,
+      "previous_avg": 10.0,
+      "delta": 37.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "recent_avg": 71.7,
       "previous_avg": 40.0,
       "delta": 31.7,
       "recent_mentions": 3,
+      "previous_mentions": 1
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 20.0,
+      "previous_avg": 40.0,
+      "delta": -20.0,
+      "recent_mentions": 2,
       "previous_mentions": 1
     },
     {
@@ -17,15 +35,6 @@
       "delta": 16.0,
       "recent_mentions": 5,
       "previous_mentions": 1
-    },
-    {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "recent_avg": 37.5,
-      "previous_avg": 23.3,
-      "delta": 14.2,
-      "recent_mentions": 4,
-      "previous_mentions": 3
     },
     {
       "key": "central bank of",
@@ -40,19 +49,10 @@
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "recent_avg": 36.0,
-      "previous_avg": 22.9,
-      "delta": 13.1,
+      "previous_avg": 23.3,
+      "delta": 12.7,
       "recent_mentions": 5,
-      "previous_mentions": 7
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 51.7,
-      "previous_avg": 40.5,
-      "delta": 11.2,
-      "recent_mentions": 9,
-      "previous_mentions": 21
+      "previous_mentions": 6
     },
     {
       "key": "totalenergies",
@@ -73,13 +73,40 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 51.7,
+      "previous_avg": 44.4,
+      "delta": 7.3,
+      "recent_mentions": 9,
+      "previous_mentions": 16
+    },
+    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 27.0,
+      "recent_avg": 25.8,
       "previous_avg": 20.0,
-      "delta": 7.0,
-      "recent_mentions": 5,
+      "delta": 5.8,
+      "recent_mentions": 6,
       "previous_mentions": 1
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "recent_avg": 28.3,
+      "previous_avg": 33.8,
+      "delta": -5.5,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 28.6,
+      "previous_avg": 23.2,
+      "delta": 5.4,
+      "recent_mentions": 11,
+      "previous_mentions": 20
     },
     {
       "key": "atiku abubakar",
@@ -91,21 +118,12 @@
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 27.5,
-      "previous_avg": 23.4,
-      "delta": 4.1,
-      "recent_mentions": 14,
-      "previous_mentions": 16
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 16.7,
+      "recent_avg": 16.0,
       "previous_avg": 20.6,
-      "delta": -3.9,
-      "recent_mentions": 6,
+      "delta": -4.6,
+      "recent_mentions": 5,
       "previous_mentions": 9
     },
     {
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "sunu assurances",
-      "label": "SUNU Assurances",
-      "recent_avg": 20.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "amni",
-      "label": "AMNI",
-      "recent_avg": 20.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-28 14:59:05"
+  "generated": "2026-09-28 20:04:33"
 }

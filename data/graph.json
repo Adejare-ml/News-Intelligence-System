@@ -133,8 +133,26 @@
       "risk": "Low"
     },
     {
+      "id": "0ba0cb08c8cb",
+      "label": "Nigerian Army",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0ea00150bb02",
       "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,8 +163,44 @@
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "dc5d92c70649",
+      "label": "Nigerian Education Loan Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0452a5213a8a",
+      "label": "Bayero University Kano",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b0d23996ef21",
       "label": "Ministry of Works",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3baa3fea1145",
+      "label": "King's College",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,80 +217,44 @@
       "risk": "Low"
     },
     {
+      "id": "e2f88b47055c",
+      "label": "Office of the Secretary to the Government of the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bfc1f02f682e",
+      "label": "Delta State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "416a35a01449",
+      "label": "Osun State University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dbaadc7cfab3",
-      "label": "Government of the United Kingdom",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "63d7ae84572c",
-      "label": "International Energy Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a3d984cac84c",
-      "label": "Petroleum Technology Development Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "09b648436789",
-      "label": "NIGCOMSAT",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7367d6073504",
-      "label": "Nigerian Maritime Labour Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9392713dc79b",
       "label": "Ojulari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "510f806dabf8",
+      "label": "Godwin Akume",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "6ff5775e8631",
+      "label": "Oyebanji",
       "type": "person",
       "risk": "Low"
     },
@@ -268,6 +286,12 @@
       "id": "2388a11cf55e",
       "label": "Ola Olukoyede",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -345,12 +369,6 @@
     {
       "id": "55730e1fee4a",
       "label": "Ministry of Petroleum Resources",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
       "type": "company",
       "risk": "Low"
     },
@@ -436,30 +454,6 @@
       "id": "ba64a7d9d940",
       "label": "David Fagbemi",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ad921d604863",
-      "label": "Unknown",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a74c4e5d89ef",
-      "label": "All Progressives alliance",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "86430d64a9dc",
-      "label": "Unnamed Commissioner",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8a7b7af09965",
-      "label": "Ebonyi State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -595,9 +589,21 @@
       "risk": "Medium"
     },
     {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "124923cf0855",
       "label": "DP World",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "09b648436789",
+      "label": "NIGCOMSAT",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -629,24 +635,6 @@
       "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "653fd7557fc1",
-      "label": "Tertiary Education Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "22bc1419bc0f",
-      "label": "Sunrise Power",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ce2f789533a5",
-      "label": "Sunrise Power and Transmission Company Limited",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -655,6 +643,18 @@
       "from": "9392713dc79b",
       "to": "f38bd75574f6",
       "label": "Appointed as Not Specified"
+    },
+    {
+      "id": "f879a7dde479",
+      "from": "510f806dabf8",
+      "to": "e2f88b47055c",
+      "label": "Appointed as Secretary to the Government of the Federation"
+    },
+    {
+      "id": "b6c8fff20d98",
+      "from": "6ff5775e8631",
+      "to": "a70f31de512b",
+      "label": "Appointed as Governor"
     },
     {
       "id": "e2ec68f58eee",
@@ -789,18 +789,6 @@
       "label": "Appointed as Attorney General of the Federation"
     },
     {
-      "id": "e057d11d6a23",
-      "from": "ad921d604863",
-      "to": "a74c4e5d89ef",
-      "label": "Appointed as Deputy Governorship Candidate"
-    },
-    {
-      "id": "dc8a71f5cad0",
-      "from": "86430d64a9dc",
-      "to": "8a7b7af09965",
-      "label": "Appointed as Commissioner"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -885,6 +873,18 @@
       "label": "Contract Awardee"
     },
     {
+      "id": "fbb24378c9ac",
+      "from": "0452a5213a8a",
+      "to": "dc5d92c70649",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "a680bea90508",
+      "from": "334c4a4c42fd",
+      "to": "bfc1f02f682e",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "98312dbb3d94",
       "from": "334c4a4c42fd",
       "to": "fa6c485df0cf",
@@ -942,24 +942,6 @@
       "id": "f8428f09d5a7",
       "from": "334c4a4c42fd",
       "to": "5a98eb23f6f5",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "78ac084f597e",
-      "from": "334c4a4c42fd",
-      "to": "653fd7557fc1",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c5abba81705d",
-      "from": "22bc1419bc0f",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "244d6336fe2c",
-      "from": "ce2f789533a5",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

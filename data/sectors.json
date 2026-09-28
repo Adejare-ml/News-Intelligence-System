@@ -2,23 +2,23 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 965,
-      "mentions": 1641,
+      "companies": 964,
+      "mentions": 1638,
       "risk": {
         "Low": 850,
         "Critical": 57,
         "Medium": 34,
-        "High": 24
+        "High": 23
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 15,
-      "mentions": 105,
+      "companies": 19,
+      "mentions": 109,
       "risk": {
         "Critical": 1,
         "Medium": 3,
-        "Low": 10,
+        "Low": 14,
         "High": 1
       }
     },
@@ -41,10 +41,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 7,
-      "mentions": 10,
+      "companies": 8,
+      "mentions": 11,
       "risk": {
-        "Low": 5,
+        "Low": 6,
         "Medium": 2
       }
     },
@@ -67,11 +67,12 @@
     },
     {
       "industry": "Financial Services",
-      "companies": 2,
-      "mentions": 7,
+      "companies": 3,
+      "mentions": 8,
       "risk": {
         "Medium": 1,
-        "High": 1
+        "High": 1,
+        "Low": 1
       }
     },
     {
@@ -122,6 +123,14 @@
       "mentions": 4,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 1,
+      "mentions": 4,
+      "risk": {
+        "High": 1
       }
     },
     {
@@ -374,6 +383,14 @@
       }
     },
     {
+      "industry": "Technology",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Technology/Digital Services",
       "companies": 1,
       "mentions": 1,
@@ -382,5 +399,5 @@
       }
     }
   ],
-  "generated": "2026-09-28 14:59:05"
+  "generated": "2026-09-28 20:04:33"
 }

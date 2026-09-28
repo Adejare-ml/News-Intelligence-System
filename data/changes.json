@@ -1,25 +1,27 @@
 {
   "new_companies": [
-    "HEDA"
+    "AA Rano",
+    "AYM Shafa",
+    "Access Bank",
+    "DLM",
+    "Matrix",
+    "Meta",
+    "NIPCO"
   ],
-  "new_people": [],
+  "new_people": [
+    "Godwin Akume"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "SERAP gives CBN seven days to account for allegedly diverted $6.23m election funds, \u20a61.63t other public funds - theeagleonline.com.ng",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQV2ZwWTFBcnhENnRKbDFnbzVTanAxYm8zWkhoUEt3RnZKUW9pZkZOZEdKR25yUmZaS0tTa2JkOU5FUEwwRjlFTnFOa0loTVpHRGxLRUtlOF9TTVdJaDlMekRrbGJjdVZRY0F5aTJ4UkllQnRkTlN6Snc5V0xlc1pZdTR1aHdBc0p5aUY4ckY5YjBaT0tQay1yX0VVME5PSFZ5Q2JUcURWSFFCeHB1S2w4SWZZMTMwcjI4emd0b0NWSGhVUDRVNVh6WG9HSlJqTmNwMTVTbF9Ma0VHM2h3cVBz?oc=5",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
+    "new_companies": 7,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-28 14:59:01"
+  "generated": "2026-09-28 20:04:25"
 }
