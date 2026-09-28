@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 30,
-      "undisclosed": 19,
+      "contracts": 31,
+      "undisclosed": 20,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -335,6 +335,12 @@
       "totals": {}
     },
     {
+      "name": "Lagos State Security Trust Fund",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Ministry of Works",
       "contracts": 1,
       "undisclosed": 1,
@@ -482,8 +488,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 75,
-      "undisclosed": 45,
+      "contracts": 77,
+      "undisclosed": 47,
       "totals": {
         "NGN": 4624426090000.0,
         "USD": 20583240000.0
@@ -802,5 +808,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-28 01:33:32"
+  "generated": "2026-09-28 14:59:05"
 }

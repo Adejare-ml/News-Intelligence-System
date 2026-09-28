@@ -2017,9 +2017,9 @@
   },
   {
     "Company": "SERAP",
-    "Mention Count": 6,
-    "Last Seen": "2026-08-02 14:42",
-    "Industry": "General",
+    "Mention Count": 7,
+    "Last Seen": "2026-09-28 14:56",
+    "Industry": "Non-Profit",
     "Risk Level": "Critical",
     "First Seen": ""
   },
@@ -2353,10 +2353,10 @@
   },
   {
     "Company": "HURIWA",
-    "Mention Count": 4,
-    "Last Seen": "2026-07-31 9:46",
-    "Industry": "General",
-    "Risk Level": "Low",
+    "Mention Count": 5,
+    "Last Seen": "2026-09-28 14:56",
+    "Industry": "Non-Profit",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -7026,7 +7026,7 @@
   {
     "Company": "FIRST E&P",
     "Mention Count": 2,
-    "Last Seen": "2026-09-28 01:30",
+    "Last Seen": "2026-09-28 1:30",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7881,9 +7881,9 @@
   },
   {
     "Company": "Socio-Economic Rights and Accountability Project",
-    "Mention Count": 4,
-    "Last Seen": "2026-09-28 01:30",
-    "Industry": "Non-Profit/Legal Advocacy",
+    "Mention Count": 5,
+    "Last Seen": "2026-09-28 14:55",
+    "Industry": "Legal/Advocacy",
     "Risk Level": "High",
     "First Seen": "2026-09-14 11:01"
   },
@@ -8414,5 +8414,13 @@
     "Industry": "Publishing",
     "Risk Level": "Low",
     "First Seen": "2026-09-27 12:41"
+  },
+  {
+    "Company": "HEDA",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-28 14:56",
+    "Industry": "Non-Profit",
+    "Risk Level": "Medium",
+    "First Seen": "2026-09-28 14:56"
   }
 ]

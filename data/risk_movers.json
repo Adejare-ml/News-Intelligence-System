@@ -3,10 +3,10 @@
     {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 70.0,
+      "recent_avg": 71.7,
       "previous_avg": 40.0,
-      "delta": 30.0,
-      "recent_mentions": 2,
+      "delta": 31.7,
+      "recent_mentions": 3,
       "previous_mentions": 1
     },
     {
@@ -28,13 +28,22 @@
       "previous_mentions": 3
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 29.3,
+      "previous_avg": 16.0,
+      "delta": 13.3,
+      "recent_mentions": 14,
+      "previous_mentions": 5
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "recent_avg": 36.0,
-      "previous_avg": 24.4,
-      "delta": 11.6,
+      "previous_avg": 22.9,
+      "delta": 13.1,
       "recent_mentions": 5,
-      "previous_mentions": 9
+      "previous_mentions": 7
     },
     {
       "key": "economic and financial crimes commission",
@@ -55,13 +64,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 24.6,
-      "previous_avg": 16.7,
-      "delta": 7.9,
-      "recent_mentions": 12,
-      "previous_mentions": 6
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 12.2,
+      "previous_avg": 20.0,
+      "delta": -7.8,
+      "recent_mentions": 9,
+      "previous_mentions": 1
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -71,15 +80,6 @@
       "delta": 7.0,
       "recent_mentions": 5,
       "previous_mentions": 1
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 20.0,
-      "previous_avg": 26.7,
-      "delta": -6.7,
-      "recent_mentions": 4,
-      "previous_mentions": 3
     },
     {
       "key": "atiku abubakar",
@@ -93,38 +93,29 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 28.1,
+      "recent_avg": 27.5,
       "previous_avg": 23.4,
-      "delta": 4.7,
-      "recent_mentions": 13,
+      "delta": 4.1,
+      "recent_mentions": 14,
       "previous_mentions": 16
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 16.7,
-      "previous_avg": 19.5,
-      "delta": -2.8,
+      "previous_avg": 20.6,
+      "delta": -3.9,
       "recent_mentions": 6,
-      "previous_mentions": 11
+      "previous_mentions": 9
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 12.2,
-      "previous_avg": 15.0,
-      "delta": -2.8,
-      "recent_mentions": 9,
-      "previous_mentions": 2
-    },
-    {
-      "key": "lagos chamber of commerce and industry",
-      "label": "Lagos Chamber of Commerce and Industry",
-      "recent_avg": 17.5,
-      "previous_avg": 20.0,
-      "delta": -2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 24.0,
+      "previous_avg": 26.7,
+      "delta": -2.7,
+      "recent_mentions": 5,
+      "previous_mentions": 3
     },
     {
       "key": "heineken lokpobiri",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "amni",
+      "label": "AMNI",
+      "recent_avg": 20.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-28 01:33:32"
+  "generated": "2026-09-28 14:59:05"
 }
