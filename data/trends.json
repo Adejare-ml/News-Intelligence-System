@@ -1,19 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 146,
-  "previous_articles": 193,
+  "recent_articles": 142,
+  "previous_articles": 198,
   "rising": [
     {
       "term": "lagos",
-      "recent": 13,
-      "previous": 2,
-      "change": 11
-    },
-    {
-      "term": "deal",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
+      "recent": 12,
+      "previous": 3,
+      "change": 9
     },
     {
       "term": "rate",
@@ -22,15 +16,21 @@
       "change": 7
     },
     {
-      "term": "cbn",
-      "recent": 10,
-      "previous": 4,
+      "term": "first",
+      "recent": 6,
+      "previous": 0,
       "change": 6
     },
     {
       "term": "policy",
       "recent": 7,
       "previous": 2,
+      "change": 5
+    },
+    {
+      "term": "deal",
+      "recent": 6,
+      "previous": 1,
       "change": 5
     },
     {
@@ -46,12 +46,6 @@
       "change": 5
     },
     {
-      "term": "first",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
       "term": "launch",
       "recent": 5,
       "previous": 0,
@@ -62,37 +56,61 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "investment",
+      "recent": 8,
+      "previous": 4,
+      "change": 4
     }
   ],
   "falling": [
     {
-      "term": "ipo",
-      "recent": 1,
-      "previous": 12,
-      "change": -11
-    },
-    {
       "term": "premium",
-      "recent": 20,
-      "previous": 30,
-      "change": -10
+      "recent": 19,
+      "previous": 31,
+      "change": -12
     },
     {
       "term": "premium times",
-      "recent": 20,
-      "previous": 30,
-      "change": -10
+      "recent": 19,
+      "previous": 31,
+      "change": -12
     },
     {
       "term": "times",
-      "recent": 20,
-      "previous": 30,
+      "recent": 19,
+      "previous": 31,
+      "change": -12
+    },
+    {
+      "term": "ipo",
+      "recent": 1,
+      "previous": 11,
       "change": -10
     },
     {
-      "term": "refinery ipo",
-      "recent": 1,
-      "previous": 9,
+      "term": "newspapers",
+      "recent": 29,
+      "previous": 38,
+      "change": -9
+    },
+    {
+      "term": "punch",
+      "recent": 29,
+      "previous": 37,
+      "change": -8
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 29,
+      "previous": 37,
+      "change": -8
+    },
+    {
+      "term": "efcc",
+      "recent": 9,
+      "previous": 17,
       "change": -8
     },
     {
@@ -102,45 +120,27 @@
       "change": -7
     },
     {
-      "term": "beneficial",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "beneficial ownership",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "cac",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "ownership",
-      "recent": 0,
-      "previous": 7,
+      "term": "refinery ipo",
+      "recent": 1,
+      "previous": 8,
       "change": -7
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 98,
-      "previous": 130
+      "recent": 94,
+      "previous": 135
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 36
+      "recent": 31,
+      "previous": 35
     },
     {
       "category": "Legal",
-      "recent": 17,
-      "previous": 27
+      "recent": 16,
+      "previous": 28
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-27 20:02:03"
+  "generated": "2026-09-28 01:33:29"
 }
