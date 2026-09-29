@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 33,
+      "total_mentions": 34,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,9 +25,9 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 3,
+          "avg_risk": 28.3,
+          "max_risk": 45
         }
       ]
     },
@@ -59,7 +59,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 21,
+      "total_mentions": 23,
       "points": [
         {
           "week": "2026-09-07",
@@ -75,8 +75,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 11,
-          "avg_risk": 20.9,
+          "mentions": 13,
+          "avg_risk": 24.6,
           "max_risk": 75
         },
         {
@@ -340,28 +340,9 @@
       ]
     },
     {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 36.2,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 5,
+      "total_mentions": 6,
       "points": [
         {
           "week": "2026-09-07",
@@ -377,8 +358,8 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 75.0,
+          "mentions": 2,
+          "avg_risk": 70.0,
           "max_risk": 75
         },
         {
@@ -386,6 +367,25 @@
           "mentions": 2,
           "avg_risk": 70.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 36.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -1698,6 +1698,19 @@
       ]
     },
     {
+      "key": "coremars",
+      "label": "Coremars",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "creditville",
       "label": "Creditville",
       "total_mentions": 1,
@@ -2881,6 +2894,19 @@
       ]
     },
     {
+      "key": "inter bank settlement system",
+      "label": "Nigeria Inter-Bank Settlement System Plc",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "lng",
       "label": "Nigeria LNG",
       "total_mentions": 1,
@@ -3778,5 +3804,5 @@
       ]
     }
   ],
-  "generated": "2026-09-28 22:31:09"
+  "generated": "2026-09-29 02:36:29"
 }

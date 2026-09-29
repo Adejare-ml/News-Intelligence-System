@@ -1,19 +1,25 @@
 {
   "window_days": 7,
   "recent_articles": 154,
-  "previous_articles": 185,
+  "previous_articles": 180,
   "rising": [
-    {
-      "term": "lagos",
-      "recent": 13,
-      "previous": 2,
-      "change": 11
-    },
     {
       "term": "guardian",
       "recent": 50,
       "previous": 40,
       "change": 10
+    },
+    {
+      "term": "lagos",
+      "recent": 12,
+      "previous": 3,
+      "change": 9
+    },
+    {
+      "term": "cbn",
+      "recent": 13,
+      "previous": 5,
+      "change": 8
     },
     {
       "term": "rate",
@@ -22,13 +28,13 @@
       "change": 7
     },
     {
-      "term": "cbn",
-      "recent": 11,
-      "previous": 5,
+      "term": "first",
+      "recent": 6,
+      "previous": 0,
       "change": 6
     },
     {
-      "term": "first",
+      "term": "gas",
       "recent": 6,
       "previous": 0,
       "change": 6
@@ -49,12 +55,6 @@
       "term": "policy",
       "recent": 7,
       "previous": 2,
-      "change": 5
-    },
-    {
-      "term": "deal",
-      "recent": 6,
-      "previous": 1,
       "change": 5
     },
     {
@@ -90,12 +90,6 @@
       "change": -7
     },
     {
-      "term": "ipo",
-      "recent": 1,
-      "previous": 8,
-      "change": -7
-    },
-    {
       "term": "beneficial",
       "recent": 0,
       "previous": 7,
@@ -124,18 +118,24 @@
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "seeks",
+      "recent": 4,
+      "previous": 10,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 101,
-      "previous": 125
+      "recent": 102,
+      "previous": 119
     },
     {
       "category": "Company",
-      "recent": 32,
-      "previous": 31
+      "recent": 31,
+      "previous": 32
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-28 22:31:01"
+  "generated": "2026-09-29 02:36:27"
 }

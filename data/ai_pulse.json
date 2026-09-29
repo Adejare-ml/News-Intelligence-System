@@ -1,47 +1,54 @@
 {
-  "generated": "2026-09-28 22:31:00",
+  "generated": "2026-09-29 02:36:26",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4297,
+      "likes": 4317,
       "downloads": 0
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2253,
+      "likes": 2282,
       "downloads": 1062921
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1374,
+      "likes": 1410,
       "downloads": 19963
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2587,
+      "likes": 2594,
       "downloads": 58693
-    },
-    {
-      "id": "XingChen-AGI/Xing4.0-29B-A4B",
-      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "task": "text-generation",
-      "likes": 1799,
-      "downloads": 45834
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 762,
+      "likes": 799,
       "downloads": 27904
+    },
+    {
+      "id": "XingChen-AGI/Xing4.0-29B-A4B",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+      "task": "text-generation",
+      "likes": 1800,
+      "downloads": 45834
+    },
+    {
+      "id": "Contrastive-LM/CLM-v0.1-8B",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "task": "text-ranking",
+      "likes": 483,
+      "downloads": 1271
     },
     {
       "id": "TaichuAI/ZDTaichu5.0-9B",
@@ -49,45 +56,38 @@
       "task": "image-text-to-text",
       "likes": 1705,
       "downloads": 11738
-    },
-    {
-      "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
-      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
-      "task": "image-text-to-text",
-      "likes": 549,
-      "downloads": 9994
     }
   ],
   "papers": [
     {
-      "title": "Not All Ranks Are Equal: Budget-Aware LoRA Merging Across Tasks",
-      "url": "https://huggingface.co/papers/2609.22237",
+      "title": "ControlScope: Workflow Revision and Reliability in LLM Agents",
+      "url": "https://huggingface.co/papers/2609.34313",
       "upvotes": 1
     },
     {
-      "title": "D-JEPA: A Decision-Aligned Latent World Model",
-      "url": "https://huggingface.co/papers/2609.24749",
+      "title": "Program-Verified Self-Evolution for Vision-Language Models",
+      "url": "https://huggingface.co/papers/2609.33855",
+      "upvotes": 5
+    },
+    {
+      "title": "Diffusion Reward Models",
+      "url": "https://huggingface.co/papers/2609.33803",
       "upvotes": 2
     },
     {
-      "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
-      "url": "https://huggingface.co/papers/2609.26333",
-      "upvotes": 42
+      "title": "Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction",
+      "url": "https://huggingface.co/papers/2609.32353",
+      "upvotes": 1
     },
     {
-      "title": "LightMIS: Ultra-Lightweight Medical Image Segmentation Without a Stage-Wise Decoder",
-      "url": "https://huggingface.co/papers/2609.28327",
+      "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
+      "url": "https://huggingface.co/papers/2609.33757",
       "upvotes": 2
     },
     {
-      "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
-      "url": "https://huggingface.co/papers/2609.30192",
-      "upvotes": 6
-    },
-    {
-      "title": "Softmax Reparameterization for Output-Head Quantization",
-      "url": "https://huggingface.co/papers/2609.31291",
-      "upvotes": 2
+      "title": "AdaTutoRank: Learning to Rerank Document Sets via Adaptive Tutoring Optimization for RAG and Deep Research",
+      "url": "https://huggingface.co/papers/2609.32472",
+      "upvotes": 12
     }
   ]
 }
