@@ -1,20 +1,23 @@
 {
   "new_companies": [
-    "Coremars",
-    "Nigeria Inter-Bank Settlement System Plc"
+    "Continental Re",
+    "Mambilla Hydropower Project",
+    "Nigerian Maritime Law Association"
   ],
-  "new_people": [],
+  "new_people": [
+    "Jim Obazee"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 2,
-    "new_people": 0,
+    "new_companies": 3,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-09-29 02:35:53"
+  "generated": "2026-09-29 13:48:44"
 }

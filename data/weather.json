@@ -1,22 +1,22 @@
 {
-  "generated": "2026-09-29 02:35:54",
+  "generated": "2026-09-29 13:48:44",
   "source": "open-meteo.com",
   "cities": [
     {
       "name": "Lagos",
-      "temp_c": 24.7,
-      "humidity": 92,
-      "wind_kmh": 14.2,
-      "code": 53,
-      "description": "Drizzle"
+      "temp_c": 27.5,
+      "humidity": 77,
+      "wind_kmh": 14.6,
+      "code": 51,
+      "description": "Light drizzle"
     },
     {
       "name": "Abuja",
-      "temp_c": 21.9,
-      "humidity": 96,
-      "wind_kmh": 1.8,
-      "code": 51,
-      "description": "Light drizzle"
+      "temp_c": 24.8,
+      "humidity": 83,
+      "wind_kmh": 8.4,
+      "code": 53,
+      "description": "Drizzle"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "window_days": 7,
   "recent_articles": 154,
-  "previous_articles": 180,
+  "previous_articles": 181,
   "rising": [
     {
       "term": "guardian",
-      "recent": 50,
-      "previous": 40,
+      "recent": 53,
+      "previous": 43,
       "change": 10
     },
     {
@@ -16,22 +16,10 @@
       "change": 9
     },
     {
-      "term": "cbn",
-      "recent": 13,
-      "previous": 5,
+      "term": "court",
+      "recent": 11,
+      "previous": 3,
       "change": 8
-    },
-    {
-      "term": "rate",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
-    },
-    {
-      "term": "first",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
     },
     {
       "term": "gas",
@@ -40,21 +28,9 @@
       "change": 6
     },
     {
-      "term": "com",
-      "recent": 10,
-      "previous": 5,
-      "change": 5
-    },
-    {
-      "term": "court",
-      "recent": 9,
-      "previous": 4,
-      "change": 5
-    },
-    {
-      "term": "policy",
-      "recent": 7,
-      "previous": 2,
+      "term": "cbn",
+      "recent": 12,
+      "previous": 7,
       "change": 5
     },
     {
@@ -62,31 +38,37 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "ogun",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "world",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "tinubu",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
+    },
+    {
+      "term": "first",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
     }
   ],
   "falling": [
     {
-      "term": "premium",
-      "recent": 23,
-      "previous": 31,
-      "change": -8
-    },
-    {
-      "term": "premium times",
-      "recent": 23,
-      "previous": 31,
-      "change": -8
-    },
-    {
-      "term": "times",
-      "recent": 23,
-      "previous": 31,
-      "change": -8
-    },
-    {
-      "term": "mambilla",
-      "recent": 3,
-      "previous": 10,
+      "term": "nigeria\u2019s",
+      "recent": 11,
+      "previous": 18,
       "change": -7
     },
     {
@@ -124,6 +106,24 @@
       "recent": 4,
       "previous": 10,
       "change": -6
+    },
+    {
+      "term": "customs",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "moves",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
+    },
+    {
+      "term": "mambilla",
+      "recent": 5,
+      "previous": 10,
+      "change": -5
     }
   ],
   "categories": [
@@ -134,13 +134,13 @@
     },
     {
       "category": "Company",
-      "recent": 31,
-      "previous": 32
+      "recent": 28,
+      "previous": 35
     },
     {
       "category": "Legal",
-      "recent": 20,
-      "previous": 29
+      "recent": 23,
+      "previous": 27
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-29 02:36:27"
+  "generated": "2026-09-29 13:48:47"
 }

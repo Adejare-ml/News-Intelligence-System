@@ -2,6 +2,10 @@
   "window_days": 90,
   "nodes": [
     {
+      "key": "abubakar malami",
+      "label": "Abubakar Malami"
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress"
     },
@@ -68,6 +72,10 @@
     {
       "key": "maina",
       "label": "Maina"
+    },
+    {
+      "key": "mambilla hydropower project",
+      "label": "Mambilla Hydropower Project"
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -138,6 +146,11 @@
       "a": "economic and financial crimes commission",
       "b": "maina",
       "weight": 3
+    },
+    {
+      "a": "abubakar malami",
+      "b": "mambilla hydropower project",
+      "weight": 2
     },
     {
       "a": "african action congress",
@@ -220,5 +233,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-09-29 02:36:29"
+  "generated": "2026-09-29 13:48:49"
 }

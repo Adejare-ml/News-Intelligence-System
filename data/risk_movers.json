@@ -28,6 +28,24 @@
       "previous_mentions": 1
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 35.7,
+      "previous_avg": 15.7,
+      "delta": 20.0,
+      "recent_mentions": 15,
+      "previous_mentions": 7
+    },
+    {
+      "key": "abubakar malami",
+      "label": "Abubakar Malami",
+      "recent_avg": 65.0,
+      "previous_avg": 85.0,
+      "delta": -20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "recent_avg": 26.0,
@@ -35,15 +53,6 @@
       "delta": 16.0,
       "recent_mentions": 5,
       "previous_mentions": 1
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 31.2,
-      "previous_avg": 16.0,
-      "delta": 15.2,
-      "recent_mentions": 16,
-      "previous_mentions": 5
     },
     {
       "key": "dangote refinery",
@@ -73,31 +82,22 @@
       "previous_mentions": 2
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 51.7,
-      "previous_avg": 44.4,
-      "delta": 7.3,
-      "recent_mentions": 9,
-      "previous_mentions": 16
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 27.0,
+      "previous_avg": 20.0,
+      "delta": 7.0,
+      "recent_mentions": 5,
+      "previous_mentions": 2
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": 23.9,
-      "delta": 6.1,
-      "recent_mentions": 11,
+      "recent_avg": 31.0,
+      "previous_avg": 25.0,
+      "delta": 6.0,
+      "recent_mentions": 10,
       "previous_mentions": 19
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 25.8,
-      "previous_avg": 20.0,
-      "delta": 5.8,
-      "recent_mentions": 6,
-      "previous_mentions": 1
     },
     {
       "key": "national petroleum company",
@@ -127,6 +127,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 51.7,
+      "previous_avg": 47.1,
+      "delta": 4.6,
+      "recent_mentions": 9,
+      "previous_mentions": 14
+    },
+    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 12.5,
@@ -145,13 +154,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "recent_avg": 32.5,
-      "previous_avg": 31.0,
-      "delta": 1.5,
+      "key": "mtn foundation",
+      "label": "MTN Group Foundation",
+      "recent_avg": 12.5,
+      "previous_avg": 15.0,
+      "delta": -2.5,
       "recent_mentions": 2,
-      "previous_mentions": 5
+      "previous_mentions": 1
     },
     {
       "key": "maina",
@@ -163,24 +172,15 @@
       "previous_mentions": 0
     },
     {
-      "key": "nigcomsat",
-      "label": "NIGCOMSAT",
-      "recent_avg": 45.0,
+      "key": "mambilla hydropower project",
+      "label": "Mambilla Hydropower Project",
+      "recent_avg": 65.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "dp world",
-      "label": "DP World",
-      "recent_avg": 30.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-29 02:36:29"
+  "generated": "2026-09-29 13:48:49"
 }
