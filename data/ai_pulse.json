@@ -1,53 +1,53 @@
 {
-  "generated": "2026-09-29 18:30:51",
+  "generated": "2026-09-29 21:23:50",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4481,
+      "likes": 4498,
       "downloads": 0
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1479,
+      "likes": 1483,
       "downloads": 23674
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2396,
+      "likes": 2419,
       "downloads": 1152523
-    },
-    {
-      "id": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "task": "text-to-image",
-      "likes": 2645,
-      "downloads": 64362
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 861,
+      "likes": 864,
       "downloads": 30354
+    },
+    {
+      "id": "Qwen/Qwen-Image-2.1",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "task": "text-to-image",
+      "likes": 2652,
+      "downloads": 64362
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 517,
+      "likes": 520,
       "downloads": 1910
     },
     {
       "id": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
       "task": "voice-activity-detection",
-      "likes": 504,
+      "likes": 510,
       "downloads": 30931
     },
     {
@@ -59,6 +59,16 @@
     }
   ],
   "papers": [
+    {
+      "title": "ExpVoyager: Direct Experience Navigation for Dynamic Agent Skill Synthesis",
+      "url": "https://huggingface.co/papers/2609.32630",
+      "upvotes": 8
+    },
+    {
+      "title": "Allspark: Weak to Strong Transfer via Alternating Chain of Thought",
+      "url": "https://huggingface.co/papers/2609.32913",
+      "upvotes": 2
+    },
     {
       "title": "SentZero: An Enhanced Sentence-Centric Vision-Language Pretraining for Multi-Task Zero-Shot Chest X-Ray Analysis",
       "url": "https://huggingface.co/papers/2609.34479",
@@ -77,16 +87,6 @@
     {
       "title": "Reinforcing Agentic Creativity in Scientific Ideation with Night Science",
       "url": "https://huggingface.co/papers/2609.35706",
-      "upvotes": 2
-    },
-    {
-      "title": "Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation",
-      "url": "https://huggingface.co/papers/2609.34722",
-      "upvotes": 2
-    },
-    {
-      "title": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models",
-      "url": "https://huggingface.co/papers/2609.34044",
       "upvotes": 2
     }
   ]
