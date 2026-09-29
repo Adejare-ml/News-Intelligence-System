@@ -120,6 +120,11 @@
   ],
   "edges": [
     {
+      "a": "central bank of",
+      "b": "socio economic rights and accountability project",
+      "weight": 4
+    },
+    {
       "a": "dp world",
       "b": "ogun state government",
       "weight": 4
@@ -128,11 +133,6 @@
       "a": "economic and financial crimes commission",
       "b": "federal bureau of investigation",
       "weight": 4
-    },
-    {
-      "a": "central bank of",
-      "b": "socio economic rights and accountability project",
-      "weight": 3
     },
     {
       "a": "economic and financial crimes commission",
@@ -220,5 +220,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-09-28 22:31:09"
+  "generated": "2026-09-29 02:36:29"
 }
