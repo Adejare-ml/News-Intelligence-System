@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -211,6 +217,12 @@
       "risk": "Low"
     },
     {
+      "id": "000196c3f40d",
+      "label": "United Nations Industrial Development Organization",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0ba0cb08c8cb",
       "label": "Nigerian Army",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "b27f282d6347",
       "label": "Osun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -340,12 +340,6 @@
       "id": "2388a11cf55e",
       "label": "Ola Olukoyede",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "company",
       "risk": "Low"
     },
     {

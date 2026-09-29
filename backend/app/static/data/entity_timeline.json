@@ -34,7 +34,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 31,
+      "total_mentions": 32,
       "points": [
         {
           "week": "2026-09-07",
@@ -53,13 +53,19 @@
           "mentions": 9,
           "avg_risk": 51.7,
           "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 24,
+      "total_mentions": 25,
       "points": [
         {
           "week": "2026-09-07",
@@ -81,8 +87,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 61.2,
+          "mentions": 5,
+          "avg_risk": 53.0,
           "max_risk": 75
         }
       ]
@@ -90,7 +96,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 21,
+      "total_mentions": 23,
       "points": [
         {
           "week": "2026-09-14",
@@ -106,8 +112,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 21.2,
+          "mentions": 6,
+          "avg_risk": 27.5,
           "max_risk": 40
         }
       ]
@@ -2467,6 +2473,19 @@
       ]
     },
     {
+      "key": "johnvents",
+      "label": "Johnvents",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "kano state government",
       "label": "Kano State Government",
       "total_mentions": 1,
@@ -3910,6 +3929,19 @@
       ]
     },
     {
+      "key": "united nations industrial development organization",
+      "label": "United Nations Industrial Development Organization",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "university press",
       "label": "University Press",
       "total_mentions": 1,
@@ -4027,5 +4059,5 @@
       ]
     }
   ],
-  "generated": "2026-09-29 18:30:56"
+  "generated": "2026-09-29 21:23:52"
 }
