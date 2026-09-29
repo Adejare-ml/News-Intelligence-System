@@ -59,7 +59,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 23,
+      "total_mentions": 24,
       "points": [
         {
           "week": "2026-09-07",
@@ -81,8 +81,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 60.0,
+          "mentions": 4,
+          "avg_risk": 61.2,
           "max_risk": 75
         }
       ]
@@ -390,6 +390,25 @@
       ]
     },
     {
+      "key": "abubakar malami",
+      "label": "Abubakar Malami",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "all progressives congress",
       "label": "All Progressives Congress",
       "total_mentions": 4,
@@ -632,6 +651,19 @@
       ]
     },
     {
+      "key": "meta",
+      "label": "Meta",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national pension commission",
       "label": "National Pension Commission",
       "total_mentions": 3,
@@ -711,19 +743,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "abubakar malami",
-      "label": "Abubakar Malami",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 85.0,
-          "max_risk": 85
         }
       ]
     },
@@ -850,6 +869,25 @@
       ]
     },
     {
+      "key": "financial reporting council",
+      "label": "Financial Reporting Council",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "government of the united states",
       "label": "Government of the United States",
       "total_mentions": 2,
@@ -869,15 +907,34 @@
       ]
     },
     {
-      "key": "meta",
-      "label": "Meta",
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "mambilla hydropower project",
+      "label": "Mambilla Hydropower Project",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-09-28",
           "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -1014,6 +1071,25 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "police force",
+      "label": "Nigeria Police Force",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -1698,8 +1774,34 @@
       ]
     },
     {
+      "key": "continental re",
+      "label": "Continental Re",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "coremars",
       "label": "Coremars",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "credit guarantee company",
+      "label": "Credit Guarantee Company",
       "total_mentions": 1,
       "points": [
         {
@@ -1958,19 +2060,6 @@
       ]
     },
     {
-      "key": "financial reporting council",
-      "label": "Financial Reporting Council",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "firstbank",
       "label": "FirstBank",
       "total_mentions": 1,
@@ -2166,19 +2255,6 @@
       ]
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "hughes",
       "label": "Hughes",
       "total_mentions": 1,
@@ -2305,6 +2381,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "jim obazee",
+      "label": "Jim Obazee",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -2816,6 +2905,19 @@
       ]
     },
     {
+      "key": "national industrial court",
+      "label": "National Industrial Court",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
       "total_mentions": 1,
@@ -2920,15 +3022,15 @@
       ]
     },
     {
-      "key": "police force",
-      "label": "Nigeria Police Force",
+      "key": "police academy",
+      "label": "Nigeria Police Academy",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-09-21",
+          "week": "2026-09-28",
           "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3095,6 +3197,19 @@
       "points": [
         {
           "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "maritime law association",
+      "label": "Nigerian Maritime Law Association",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
@@ -3570,6 +3685,19 @@
       ]
     },
     {
+      "key": "sokoto state government",
+      "label": "Sokoto State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "southwark crown court",
       "label": "Southwark Crown Court",
       "total_mentions": 1,
@@ -3778,6 +3906,19 @@
       ]
     },
     {
+      "key": "world bank",
+      "label": "World Bank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "zacch adedeji",
       "label": "Zacch Adedeji",
       "total_mentions": 1,
@@ -3804,5 +3945,5 @@
       ]
     }
   ],
-  "generated": "2026-09-29 02:36:29"
+  "generated": "2026-09-29 13:48:49"
 }

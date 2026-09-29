@@ -133,6 +133,60 @@
       "risk": "Low"
     },
     {
+      "id": "631735ae7f74",
+      "label": "Nigeria Police Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7d0b46bbd4a7",
+      "label": "World Bank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "be82d8024966",
+      "label": "Nigeria Police Academy",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "974b4a4b8b7b",
+      "label": "Financial Reporting Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "71c725d016c7",
+      "label": "Sokoto State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e7f92892ec0b",
+      "label": "Mambilla Hydropower Project",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "443a59309ea9",
+      "label": "Credit Guarantee Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "350d6e0ea7e1",
+      "label": "National Industrial Court",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0ba0cb08c8cb",
       "label": "Nigerian Army",
       "type": "agency",
@@ -187,57 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "b0d23996ef21",
-      "label": "Ministry of Works",
-      "type": "agency",
+      "id": "f6a881f4b7c5",
+      "label": "Abubakar Malami",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "3baa3fea1145",
-      "label": "King's College",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e97bb35dca94",
-      "label": "NCGC",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa6c485df0cf",
-      "label": "Lagos State Security Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e2f88b47055c",
-      "label": "Office of the Secretary to the Government of the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bfc1f02f682e",
-      "label": "Delta State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "416a35a01449",
-      "label": "Osun State University",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
+      "id": "5576e31d022d",
+      "label": "Jim Obazee",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -250,6 +262,12 @@
       "id": "510f806dabf8",
       "label": "Godwin Akume",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e2f88b47055c",
+      "label": "Office of the Secretary to the Government of the Federation",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -379,6 +397,12 @@
       "risk": "Low"
     },
     {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "552d843a0fa2",
       "label": "Abdularasheed Maina",
       "type": "person",
@@ -448,12 +472,6 @@
       "id": "f4b56dfe4bcb",
       "label": "University of Ibadan",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f6a881f4b7c5",
-      "label": "Abubakar Malami",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -589,6 +607,18 @@
       "risk": "Medium"
     },
     {
+      "id": "bfc1f02f682e",
+      "label": "Delta State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6c485df0cf",
+      "label": "Lagos State Security Trust Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
       "type": "agency",
@@ -625,19 +655,31 @@
       "risk": "Low"
     },
     {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "497dc3c9a500",
       "label": "United States Government/Manufacturer",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "71251a980b0e",
+      "from": "f6a881f4b7c5",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former Attorney General"
+    },
+    {
+      "id": "a401d4741eda",
+      "from": "5576e31d022d",
+      "to": "0c2be969618b",
+      "label": "Appointed as Special Investigator"
+    },
     {
       "id": "6fe1d5610f89",
       "from": "9392713dc79b",
@@ -777,18 +819,6 @@
       "label": "Appointed as Bursar"
     },
     {
-      "id": "71251a980b0e",
-      "from": "f6a881f4b7c5",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Attorney General"
-    },
-    {
-      "id": "5a543a8d94aa",
-      "from": "325a5c8a1ef5",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Vice President"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -867,6 +897,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "6c17551ed467",
+      "from": "334c4a4c42fd",
+      "to": "71c725d016c7",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
@@ -936,12 +972,6 @@
       "id": "44f61393e51f",
       "from": "334c4a4c42fd",
       "to": "a61e97dc06d8",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "f8428f09d5a7",
-      "from": "334c4a4c42fd",
-      "to": "5a98eb23f6f5",
       "label": "Contract Awardee"
     }
   ]

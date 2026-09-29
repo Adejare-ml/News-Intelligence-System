@@ -1,93 +1,93 @@
 {
-  "generated": "2026-09-29 02:36:26",
+  "generated": "2026-09-29 13:48:46",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4317,
+      "likes": 4437,
       "downloads": 0
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "task": "text-to-image",
-      "likes": 2282,
-      "downloads": 1062921
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1410,
-      "downloads": 19963
+      "likes": 1464,
+      "downloads": 23674
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "task": "text-to-image",
+      "likes": 2371,
+      "downloads": 1152523
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2594,
-      "downloads": 58693
+      "likes": 2636,
+      "downloads": 64362
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 799,
-      "downloads": 27904
+      "likes": 850,
+      "downloads": 30354
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1800,
-      "downloads": 45834
+      "likes": 1803,
+      "downloads": 46557
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 483,
-      "downloads": 1271
+      "likes": 506,
+      "downloads": 1910
     },
     {
-      "id": "TaichuAI/ZDTaichu5.0-9B",
-      "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B",
-      "task": "image-text-to-text",
-      "likes": 1705,
-      "downloads": 11738
+      "id": "nvidia/Nemotron-3-Diarization",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "task": "voice-activity-detection",
+      "likes": 495,
+      "downloads": 30931
     }
   ],
   "papers": [
     {
-      "title": "ControlScope: Workflow Revision and Reliability in LLM Agents",
-      "url": "https://huggingface.co/papers/2609.34313",
+      "title": "FactorEngram: Factorized N-gram Memory with Basis-Level Gating for Language Models",
+      "url": "https://huggingface.co/papers/2609.35578",
       "upvotes": 1
     },
     {
-      "title": "Program-Verified Self-Evolution for Vision-Language Models",
-      "url": "https://huggingface.co/papers/2609.33855",
-      "upvotes": 5
+      "title": "Hard Vision, Easy Vision: What GPT-6 Astra Reveals Across Computer Vision",
+      "url": "https://huggingface.co/papers/2609.35718",
+      "upvotes": 8
     },
     {
-      "title": "Diffusion Reward Models",
-      "url": "https://huggingface.co/papers/2609.33803",
-      "upvotes": 2
-    },
-    {
-      "title": "Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction",
-      "url": "https://huggingface.co/papers/2609.32353",
+      "title": "DISCO: Distributed Long Context Scaling with Grounding-Reasoning Disaggregation",
+      "url": "https://huggingface.co/papers/2609.33485",
       "upvotes": 1
     },
     {
-      "title": "YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality",
-      "url": "https://huggingface.co/papers/2609.33757",
-      "upvotes": 2
+      "title": "Playing to Par: Reinforcement Learning for Provably Optimal Quadrilateral Block Decompositions",
+      "url": "https://huggingface.co/papers/2609.32146",
+      "upvotes": 0
     },
     {
-      "title": "AdaTutoRank: Learning to Rerank Document Sets via Adaptive Tutoring Optimization for RAG and Deep Research",
-      "url": "https://huggingface.co/papers/2609.32472",
-      "upvotes": 12
+      "title": "G^2PTQ: Improving LLM Post-Training Quantization with Generalized Gradient Compensation",
+      "url": "https://huggingface.co/papers/2609.31009",
+      "upvotes": 1
+    },
+    {
+      "title": "Groupwise Agentic Grading and Advantage Redistribution for Code Agent RL",
+      "url": "https://huggingface.co/papers/2609.32577",
+      "upvotes": 41
     }
   ]
 }

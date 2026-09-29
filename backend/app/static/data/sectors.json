@@ -49,20 +49,20 @@
       }
     },
     {
+      "industry": "Energy",
+      "companies": 5,
+      "mentions": 9,
+      "risk": {
+        "High": 2,
+        "Medium": 3
+      }
+    },
+    {
       "industry": "Conglomerate",
       "companies": 1,
       "mentions": 8,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Energy",
-      "companies": 4,
-      "mentions": 8,
-      "risk": {
-        "High": 2,
-        "Medium": 2
       }
     },
     {
@@ -77,11 +77,11 @@
     },
     {
       "industry": "Insurance",
-      "companies": 6,
-      "mentions": 7,
+      "companies": 7,
+      "mentions": 8,
       "risk": {
         "High": 2,
-        "Low": 4
+        "Low": 5
       }
     },
     {
@@ -215,6 +215,14 @@
       }
     },
     {
+      "industry": "Technology",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Cement",
       "companies": 1,
       "mentions": 2,
@@ -240,14 +248,6 @@
     },
     {
       "industry": "Shipping",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Technology",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -343,6 +343,14 @@
       }
     },
     {
+      "industry": "Legal/Maritime",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -399,5 +407,5 @@
       }
     }
   ],
-  "generated": "2026-09-29 02:36:29"
+  "generated": "2026-09-29 13:48:49"
 }
