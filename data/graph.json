@@ -7,16 +7,16 @@
       "risk": "Critical"
     },
     {
-      "id": "e534e0dfb211",
-      "label": "CBN",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f38bd75574f6",
       "label": "Nigerian National Petroleum Company Limited",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "e534e0dfb211",
+      "label": "CBN",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "8580350f87e8",
@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "bbdd3227478f",
+      "label": "Niger Delta Development Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "631735ae7f74",
       "label": "Nigeria Police Force",
       "type": "agency",
@@ -151,8 +157,20 @@
       "risk": "Low"
     },
     {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "be82d8024966",
       "label": "Nigeria Police Academy",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c89820f522",
+      "label": "Nigerian Navy",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,6 +205,12 @@
       "risk": "Low"
     },
     {
+      "id": "f70c95991c72",
+      "label": "Ogun-Osun River Basin Development Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0ba0cb08c8cb",
       "label": "Nigerian Army",
       "type": "agency",
@@ -217,27 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a70f31de512b",
-      "label": "Ekiti State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dc5d92c70649",
-      "label": "Nigerian Education Loan Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0452a5213a8a",
-      "label": "Bayero University Kano",
-      "type": "agency",
+      "id": "9392713dc79b",
+      "label": "Ojulari",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -247,15 +253,33 @@
       "risk": "Low"
     },
     {
+      "id": "325a5c8a1ef5",
+      "label": "Atiku Abubakar",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "5576e31d022d",
       "label": "Jim Obazee",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "9392713dc79b",
-      "label": "Ojulari",
+      "id": "ee0c248d5e51",
+      "label": "Adeola",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ebe2d81e3981",
+      "label": "Not Specified",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -277,9 +301,21 @@
       "risk": "Low"
     },
     {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "163087c74c5d",
       "label": "Joash Amupitan",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -301,12 +337,6 @@
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "2388a11cf55e",
       "label": "Ola Olukoyede",
       "type": "person",
@@ -316,12 +346,6 @@
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "325a5c8a1ef5",
-      "label": "Atiku Abubakar",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -463,18 +487,6 @@
       "risk": "Low"
     },
     {
-      "id": "bf698d54d6c5",
-      "label": "Not Stated",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f4b56dfe4bcb",
-      "label": "University of Ibadan",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -607,6 +619,30 @@
       "risk": "Medium"
     },
     {
+      "id": "52ff2e9b0415",
+      "label": "NNPC Biofuels",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "88997c363235",
+      "label": "Chinese companies",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "dc5d92c70649",
+      "label": "Nigerian Education Loan Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0452a5213a8a",
+      "label": "Bayero University Kano",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "bfc1f02f682e",
       "label": "Delta State Government",
       "type": "agency",
@@ -669,10 +705,22 @@
   ],
   "edges": [
     {
+      "id": "6ae3ad6f7fb0",
+      "from": "9392713dc79b",
+      "to": "ebba2aef82e9",
+      "label": "Appointed as Official"
+    },
+    {
       "id": "71251a980b0e",
       "from": "f6a881f4b7c5",
       "to": "0c2be969618b",
       "label": "Appointed as Former Attorney General"
+    },
+    {
+      "id": "9e2a94a3f3aa",
+      "from": "325a5c8a1ef5",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as Former Vice President"
     },
     {
       "id": "a401d4741eda",
@@ -681,9 +729,9 @@
       "label": "Appointed as Special Investigator"
     },
     {
-      "id": "6fe1d5610f89",
-      "from": "9392713dc79b",
-      "to": "f38bd75574f6",
+      "id": "fdf26afd0b27",
+      "from": "ee0c248d5e51",
+      "to": "ebe2d81e3981",
       "label": "Appointed as Not Specified"
     },
     {
@@ -721,12 +769,6 @@
       "from": "2388a11cf55e",
       "to": "0bcaaf453cd3",
       "label": "Appointed as Chairman"
-    },
-    {
-      "id": "9e2a94a3f3aa",
-      "from": "325a5c8a1ef5",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as None"
     },
     {
       "id": "fd1604102e20",
@@ -813,12 +855,6 @@
       "label": "Appointed as Minister"
     },
     {
-      "id": "3734b9c3ff9b",
-      "from": "bf698d54d6c5",
-      "to": "f4b56dfe4bcb",
-      "label": "Appointed as Bursar"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -897,6 +933,18 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "8e4bcb3351e0",
+      "from": "52ff2e9b0415",
+      "to": "f70c95991c72",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "3a5a0e0feb7a",
+      "from": "88997c363235",
+      "to": "ebba2aef82e9",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "6c17551ed467",
       "from": "334c4a4c42fd",
       "to": "71c725d016c7",
@@ -966,12 +1014,6 @@
       "id": "15decc10e9cb",
       "from": "497dc3c9a500",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "44f61393e51f",
-      "from": "334c4a4c42fd",
-      "to": "a61e97dc06d8",
       "label": "Contract Awardee"
     }
   ]

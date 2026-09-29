@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 41,
-    "Last Seen": "2026-09-26 1:21",
+    "Mention Count": 43,
+    "Last Seen": "2026-09-29 18:29",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -8385,9 +8385,9 @@
   },
   {
     "Company": "DP World",
-    "Mention Count": 4,
-    "Last Seen": "2026-09-26 12:05",
-    "Industry": "Logistics and Ports",
+    "Mention Count": 5,
+    "Last Seen": "2026-09-29 18:27",
+    "Industry": "Logistics & Port Operations",
     "Risk Level": "Low",
     "First Seen": "2026-09-25 01:19"
   },
@@ -8534,5 +8534,21 @@
     "Industry": "Insurance",
     "Risk Level": "Low",
     "First Seen": "2026-09-29 13:46"
+  },
+  {
+    "Company": "TGI Logistics",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-29 18:27",
+    "Industry": "Logistics",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-29 18:27"
+  },
+  {
+    "Company": "NNPC Biofuels",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-29 18:29",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-29 18:29"
   }
 ]

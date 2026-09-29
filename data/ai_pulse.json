@@ -1,93 +1,93 @@
 {
-  "generated": "2026-09-29 13:48:46",
+  "generated": "2026-09-29 18:30:51",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4437,
+      "likes": 4481,
       "downloads": 0
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1464,
+      "likes": 1479,
       "downloads": 23674
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2371,
+      "likes": 2396,
       "downloads": 1152523
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2636,
+      "likes": 2645,
       "downloads": 64362
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 850,
+      "likes": 861,
       "downloads": 30354
-    },
-    {
-      "id": "XingChen-AGI/Xing4.0-29B-A4B",
-      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "task": "text-generation",
-      "likes": 1803,
-      "downloads": 46557
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 506,
+      "likes": 517,
       "downloads": 1910
     },
     {
       "id": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
       "task": "voice-activity-detection",
-      "likes": 495,
+      "likes": 504,
       "downloads": 30931
+    },
+    {
+      "id": "XingChen-AGI/Xing4.0-29B-A4B",
+      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+      "task": "text-generation",
+      "likes": 1807,
+      "downloads": 46557
     }
   ],
   "papers": [
     {
-      "title": "FactorEngram: Factorized N-gram Memory with Basis-Level Gating for Language Models",
-      "url": "https://huggingface.co/papers/2609.35578",
+      "title": "SentZero: An Enhanced Sentence-Centric Vision-Language Pretraining for Multi-Task Zero-Shot Chest X-Ray Analysis",
+      "url": "https://huggingface.co/papers/2609.34479",
+      "upvotes": 25
+    },
+    {
+      "title": "Who Gets a Token, and What Does It Carry? Unequal Name Support and Concept Access in Large Language Models",
+      "url": "https://huggingface.co/papers/2609.34065",
       "upvotes": 1
     },
     {
-      "title": "Hard Vision, Easy Vision: What GPT-6 Astra Reveals Across Computer Vision",
-      "url": "https://huggingface.co/papers/2609.35718",
-      "upvotes": 8
+      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+      "url": "https://huggingface.co/papers/2609.33325",
+      "upvotes": 106
     },
     {
-      "title": "DISCO: Distributed Long Context Scaling with Grounding-Reasoning Disaggregation",
-      "url": "https://huggingface.co/papers/2609.33485",
-      "upvotes": 1
+      "title": "Reinforcing Agentic Creativity in Scientific Ideation with Night Science",
+      "url": "https://huggingface.co/papers/2609.35706",
+      "upvotes": 2
     },
     {
-      "title": "Playing to Par: Reinforcement Learning for Provably Optimal Quadrilateral Block Decompositions",
-      "url": "https://huggingface.co/papers/2609.32146",
-      "upvotes": 0
+      "title": "Geometry as Address: Routing Attention to Visual Memory for Long-Horizon Camera-Controlled Video Generation",
+      "url": "https://huggingface.co/papers/2609.34722",
+      "upvotes": 2
     },
     {
-      "title": "G^2PTQ: Improving LLM Post-Training Quantization with Generalized Gradient Compensation",
-      "url": "https://huggingface.co/papers/2609.31009",
-      "upvotes": 1
-    },
-    {
-      "title": "Groupwise Agentic Grading and Advantage Redistribution for Code Agent RL",
-      "url": "https://huggingface.co/papers/2609.32577",
-      "upvotes": 41
+      "title": "SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models",
+      "url": "https://huggingface.co/papers/2609.34044",
+      "upvotes": 2
     }
   ]
 }

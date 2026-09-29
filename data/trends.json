@@ -1,12 +1,12 @@
 {
   "window_days": 7,
-  "recent_articles": 154,
+  "recent_articles": 158,
   "previous_articles": 181,
   "rising": [
     {
       "term": "guardian",
-      "recent": 53,
-      "previous": 43,
+      "recent": 54,
+      "previous": 44,
       "change": 10
     },
     {
@@ -17,9 +17,9 @@
     },
     {
       "term": "court",
-      "recent": 11,
-      "previous": 3,
-      "change": 8
+      "recent": 10,
+      "previous": 4,
+      "change": 6
     },
     {
       "term": "gas",
@@ -28,9 +28,15 @@
       "change": 6
     },
     {
-      "term": "cbn",
-      "recent": 12,
-      "previous": 7,
+      "term": "world",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
+    {
+      "term": "tinubu",
+      "recent": 7,
+      "previous": 2,
       "change": 5
     },
     {
@@ -46,13 +52,7 @@
       "change": 5
     },
     {
-      "term": "world",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "tinubu",
+      "term": "oil",
       "recent": 6,
       "previous": 2,
       "change": 4
@@ -72,40 +72,10 @@
       "change": -7
     },
     {
-      "term": "beneficial",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "beneficial ownership",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "cac",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
       "term": "icc",
       "recent": 0,
       "previous": 7,
       "change": -7
-    },
-    {
-      "term": "ownership",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "seeks",
-      "recent": 4,
-      "previous": 10,
-      "change": -6
     },
     {
       "term": "customs",
@@ -114,28 +84,58 @@
       "change": -6
     },
     {
-      "term": "moves",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
-    {
       "term": "mambilla",
       "recent": 5,
       "previous": 10,
       "change": -5
+    },
+    {
+      "term": "ipo",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "moves",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "urges",
+      "recent": 5,
+      "previous": 9,
+      "change": -4
+    },
+    {
+      "term": "seeks",
+      "recent": 4,
+      "previous": 8,
+      "change": -4
+    },
+    {
+      "term": "payment",
+      "recent": 2,
+      "previous": 6,
+      "change": -4
+    },
+    {
+      "term": "refinery ipo",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 102,
-      "previous": 119
+      "recent": 104,
+      "previous": 120
     },
     {
       "category": "Company",
-      "recent": 28,
-      "previous": 35
+      "recent": 30,
+      "previous": 34
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-29 13:48:47"
+  "generated": "2026-09-29 18:30:52"
 }

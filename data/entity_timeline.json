@@ -90,7 +90,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 17,
+      "total_mentions": 21,
       "points": [
         {
           "week": "2026-09-14",
@@ -100,15 +100,15 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 7,
-          "avg_risk": 21.4,
+          "mentions": 8,
+          "avg_risk": 21.2,
           "max_risk": 30
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "mentions": 4,
+          "avg_risk": 21.2,
+          "max_risk": 40
         }
       ]
     },
@@ -371,6 +371,56 @@
       ]
     },
     {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "dp world",
+      "label": "DP World",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 30.0,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 5,
@@ -424,44 +474,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 80.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "dp world",
-      "label": "DP World",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 30.0,
-          "max_risk": 35
         }
       ]
     },
@@ -689,6 +701,31 @@
       ]
     },
     {
+      "key": "niger delta development commission",
+      "label": "Niger Delta Development Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 3,
@@ -717,6 +754,31 @@
           "mentions": 3,
           "avg_risk": 20.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "ojulari",
+      "label": "Ojulari",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1043,25 +1105,6 @@
       ]
     },
     {
-      "key": "niger delta development commission",
-      "label": "Niger Delta Development Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "airways",
       "label": "Nigeria Airways",
       "total_mentions": 2,
@@ -1139,8 +1182,8 @@
       ]
     },
     {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
+      "key": "navy",
+      "label": "Nigerian Navy",
       "total_mentions": 2,
       "points": [
         {
@@ -1158,8 +1201,8 @@
       ]
     },
     {
-      "key": "ojulari",
-      "label": "Ojulari",
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
       "total_mentions": 2,
       "points": [
         {
@@ -1406,6 +1449,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "adeola",
+      "label": "Adeola",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -2814,6 +2870,19 @@
       ]
     },
     {
+      "key": "nnpc biofuels",
+      "label": "NNPC Biofuels",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "nnpcl",
       "label": "NNPCL",
       "total_mentions": 1,
@@ -3217,19 +3286,6 @@
       ]
     },
     {
-      "key": "navy",
-      "label": "Nigerian Navy",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "ports processing authority",
       "label": "Nigerian Ports Processing Authority",
       "total_mentions": 1,
@@ -3317,6 +3373,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ogun osun river basin development authority",
+      "label": "Ogun-Osun River Basin Development Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3724,6 +3793,19 @@
       ]
     },
     {
+      "key": "tgi logistics",
+      "label": "TGI Logistics",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "teachers council",
       "label": "Teachers' Council",
       "total_mentions": 1,
@@ -3945,5 +4027,5 @@
       ]
     }
   ],
-  "generated": "2026-09-29 13:48:49"
+  "generated": "2026-09-29 18:30:56"
 }

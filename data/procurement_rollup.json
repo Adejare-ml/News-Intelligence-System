@@ -179,18 +179,18 @@
       }
     },
     {
+      "name": "Nigerian National Petroleum Company",
+      "contracts": 4,
+      "undisclosed": 3,
+      "totals": {
+        "USD": 20000000000.0
+      }
+    },
+    {
       "name": "Niger Delta Development Commission",
       "contracts": 3,
       "undisclosed": 3,
       "totals": {}
-    },
-    {
-      "name": "Nigerian National Petroleum Company",
-      "contracts": 3,
-      "undisclosed": 2,
-      "totals": {
-        "USD": 20000000000.0
-      }
     },
     {
       "name": "Nigerian National Petroleum Company Limited",
@@ -477,6 +477,14 @@
       "totals": {}
     },
     {
+      "name": "Ogun-Osun River Basin Development Authority",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "EUR": 256000000.0
+      }
+    },
+    {
       "name": "Rivers State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -654,6 +662,12 @@
       "totals": {}
     },
     {
+      "name": "Chinese companies",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Chinese entities (unspecified)",
       "contracts": 1,
       "undisclosed": 1,
@@ -706,6 +720,14 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
+    },
+    {
+      "name": "NNPC Biofuels",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "EUR": 256000000.0
+      }
     },
     {
       "name": "Nigerian National Petroleum Company Limited",
@@ -838,5 +860,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-29 13:48:49"
+  "generated": "2026-09-29 18:30:56"
 }

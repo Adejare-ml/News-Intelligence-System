@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-09-29",
+      "title": "Atiku speaks on PREMIUM TIMES report on international corruption cases involving him, ex-wife - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZHE3NUQ1ODYyN00taUt4Z2xPQVBEUm9zVElvZnhnNVBBenFKQkNwajFZRF9GWVpwSjFhNWZDUkNwTVdfdmF5NlJQR3piQ3NhcFI1RTNDUmpNelJnTEZPR1FIZ3dQNWlBSENGbE9WUjcwYmk5UWxmeVVwQ3R1QWlESm0tcHJ5NWoweWd0TFo3dC1WTUhhLU1DZllEYlItNjZZd2VVMHk3U1RZaDk0ZS1YU3NEX3R1VkQtV09tWGFtSHZ6ZTdMOEtKZ1RKU3RoWUFpNGJUWlhMVDd0WlVoYUV5Wllva2w?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Atiku Abubakar"
+      ]
+    },
+    {
       "date": "2026-09-28",
       "title": "SERAP gives CBN seven days to account for allegedly diverted $6.23m election funds, \u20a61.63t other public funds - theeagleonline.com.ng",
       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQV2ZwWTFBcnhENnRKbDFnbzVTanAxYm8zWkhoUEt3RnZKUW9pZkZOZEdKR25yUmZaS0tTa2JkOU5FUEwwRjlFTnFOa0loTVpHRGxLRUtlOF9TTVdJaDlMekRrbGJjdVZRY0F5aTJ4UkllQnRkTlN6Snc5V0xlc1pZdTR1aHdBc0p5aUY4ckY5YjBaT0tQay1yX0VVME5PSFZ5Q2JUcURWSFFCeHB1S2w4SWZZMTMwcjI4emd0b0NWSGhVUDRVNVh6WG9HSlJqTmNwMTVTbF9Ma0VHM2h3cVBz?oc=5",
@@ -330,5 +341,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-29 13:48:49"
+  "generated": "2026-09-29 18:30:56"
 }
