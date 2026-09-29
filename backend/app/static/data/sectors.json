@@ -13,12 +13,12 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 19,
-      "mentions": 109,
+      "companies": 20,
+      "mentions": 112,
       "risk": {
         "Critical": 1,
         "Medium": 3,
-        "Low": 14,
+        "Low": 15,
         "High": 1
       }
     },
@@ -109,6 +109,14 @@
       }
     },
     {
+      "industry": "Logistics & Port Operations",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Political Party",
       "companies": 1,
       "mentions": 5,
@@ -122,14 +130,6 @@
       "mentions": 4,
       "risk": {
         "Medium": 1,
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Logistics and Ports",
-      "companies": 1,
-      "mentions": 4,
-      "risk": {
         "Low": 1
       }
     },
@@ -351,6 +351,14 @@
       }
     },
     {
+      "industry": "Logistics",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -407,5 +415,5 @@
       }
     }
   ],
-  "generated": "2026-09-29 13:48:49"
+  "generated": "2026-09-29 18:30:56"
 }

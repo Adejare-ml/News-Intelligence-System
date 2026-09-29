@@ -1378,5 +1378,25 @@
     "Date": "2026-09-29",
     "Amount Value": 1590000000.0,
     "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Nigerian National Petroleum Company",
+    "Contractor": "Chinese companies",
+    "Amount": "None",
+    "Project": "Revamping of Nigerian refineries",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-09-29",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Ogun-Osun River Basin Development Authority",
+    "Contractor": "NNPC Biofuels",
+    "Amount": "\u20ac256 million",
+    "Project": "Establishment of a bioethanol plant",
+    "Source": "Punch Newspapers",
+    "Date": "2026-09-29",
+    "Amount Value": 256000000.0,
+    "Amount Currency": "EUR"
   }
 ]
