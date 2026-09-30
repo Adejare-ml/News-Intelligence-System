@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 36,
+      "total_mentions": 39,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 5,
-          "avg_risk": 24.0,
+          "mentions": 8,
+          "avg_risk": 23.8,
           "max_risk": 45
         }
       ]
@@ -34,7 +34,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 32,
+      "total_mentions": 33,
       "points": [
         {
           "week": "2026-09-07",
@@ -56,8 +56,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
+          "mentions": 2,
+          "avg_risk": 30.0,
           "max_risk": 40
         }
       ]
@@ -65,7 +65,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-07",
@@ -87,8 +87,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 6,
-          "avg_risk": 47.5,
+          "mentions": 7,
+          "avg_risk": 43.6,
           "max_risk": 75
         }
       ]
@@ -96,7 +96,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 25,
+      "total_mentions": 26,
       "points": [
         {
           "week": "2026-09-14",
@@ -112,8 +112,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 8,
-          "avg_risk": 28.1,
+          "mentions": 9,
+          "avg_risk": 26.7,
           "max_risk": 40
         }
       ]
@@ -165,7 +165,7 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-14",
@@ -178,6 +178,12 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -484,6 +490,25 @@
       ]
     },
     {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -573,14 +598,26 @@
       ]
     },
     {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
+      "key": "government of the united states",
+      "label": "Government of the United States",
       "total_mentions": 3,
       "points": [
         {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
           "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 18.3,
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
           "max_risk": 30
         }
       ]
@@ -678,6 +715,25 @@
           "mentions": 3,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -956,25 +1012,6 @@
       ]
     },
     {
-      "key": "government of the united states",
-      "label": "Government of the United States",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "total_mentions": 2,
@@ -1042,19 +1079,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
         }
       ]
     },
@@ -1222,6 +1246,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "nyesom wike",
+      "label": "Nyesom Wike",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -2057,6 +2100,19 @@
       ]
     },
     {
+      "key": "federal capital territory administration",
+      "label": "Federal Capital Territory Administration",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "federal civil service",
       "label": "Federal Civil Service",
       "total_mentions": 1,
@@ -2824,6 +2880,19 @@
       ]
     },
     {
+      "key": "moytel",
+      "label": "Moytel",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "mudasiru",
       "label": "Mudasiru",
       "total_mentions": 1,
@@ -2859,6 +2928,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "mu azu",
+      "label": "Mu\u2019azu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3379,19 +3461,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "nyesom wike",
-      "label": "Nyesom Wike",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
         }
       ]
     },
@@ -4046,6 +4115,32 @@
       ]
     },
     {
+      "key": "unnamed liberian university",
+      "label": "Unnamed Liberian University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "unnamed",
+      "label": "Unnamed Nigerian",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "william ruto",
       "label": "William Ruto",
       "total_mentions": 1,
@@ -4098,5 +4193,5 @@
       ]
     }
   ],
-  "generated": "2026-09-30 01:59:03"
+  "generated": "2026-09-30 13:23:40"
 }

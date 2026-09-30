@@ -1418,5 +1418,25 @@
     "Date": "2026-09-30",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "United States Government/Partners",
+    "Amount": "$5 Billion",
+    "Project": "Health deal/healthcare partnership",
+    "Source": "theeagleonline.com.ng",
+    "Date": "2026-09-30",
+    "Amount Value": 5000000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Not Specified",
+    "Amount": "Not Specified",
+    "Project": "Purchase of 12 US attack helicopters",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-09-30",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]
