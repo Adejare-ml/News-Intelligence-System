@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 20,
-      "mentions": 114,
+      "mentions": 115,
       "risk": {
         "Critical": 1,
         "Medium": 3,
@@ -133,6 +133,15 @@
       }
     },
     {
+      "industry": "Construction",
+      "companies": 3,
+      "mentions": 4,
+      "risk": {
+        "Medium": 1,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 2,
       "mentions": 4,
@@ -154,15 +163,6 @@
       "companies": 1,
       "mentions": 3,
       "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 2,
-      "mentions": 3,
-      "risk": {
-        "Medium": 1,
         "Low": 1
       }
     },
@@ -415,5 +415,5 @@
       }
     }
   ],
-  "generated": "2026-09-29 21:23:52"
+  "generated": "2026-09-30 01:59:03"
 }

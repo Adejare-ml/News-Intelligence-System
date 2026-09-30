@@ -1,93 +1,93 @@
 {
-  "generated": "2026-09-29 21:23:50",
+  "generated": "2026-09-30 01:59:01",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4498,
+      "likes": 4516,
       "downloads": 0
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1483,
+      "likes": 1531,
       "downloads": 23674
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2419,
+      "likes": 2442,
       "downloads": 1152523
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 864,
+      "likes": 873,
       "downloads": 30354
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2652,
+      "likes": 2657,
       "downloads": 64362
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 520,
+      "likes": 531,
       "downloads": 1910
     },
     {
       "id": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
       "task": "voice-activity-detection",
-      "likes": 510,
+      "likes": 520,
       "downloads": 30931
     },
     {
       "id": "XingChen-AGI/Xing4.0-29B-A4B",
       "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
       "task": "text-generation",
-      "likes": 1807,
+      "likes": 1808,
       "downloads": 46557
     }
   ],
   "papers": [
     {
-      "title": "ExpVoyager: Direct Experience Navigation for Dynamic Agent Skill Synthesis",
-      "url": "https://huggingface.co/papers/2609.32630",
-      "upvotes": 8
+      "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
+      "url": "https://huggingface.co/papers/2609.34606",
+      "upvotes": 0
     },
     {
-      "title": "Allspark: Weak to Strong Transfer via Alternating Chain of Thought",
-      "url": "https://huggingface.co/papers/2609.32913",
-      "upvotes": 2
+      "title": "Think Before You Score: Thinking Reward Model for Visual Generation",
+      "url": "https://huggingface.co/papers/2609.37372",
+      "upvotes": 3
     },
     {
-      "title": "SentZero: An Enhanced Sentence-Centric Vision-Language Pretraining for Multi-Task Zero-Shot Chest X-Ray Analysis",
-      "url": "https://huggingface.co/papers/2609.34479",
-      "upvotes": 25
-    },
-    {
-      "title": "Who Gets a Token, and What Does It Carry? Unequal Name Support and Concept Access in Large Language Models",
-      "url": "https://huggingface.co/papers/2609.34065",
+      "title": "TGRL: Temperature-Grouped Reinforcement Learning for Efficient Exploration in LLMs",
+      "url": "https://huggingface.co/papers/2609.33589",
       "upvotes": 1
     },
     {
-      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
-      "url": "https://huggingface.co/papers/2609.33325",
-      "upvotes": 106
+      "title": "VideoPhysEdit: Physical Counterfactual Video Editing via Rigid-Body Physical Scene Reconstruction",
+      "url": "https://huggingface.co/papers/2609.35134",
+      "upvotes": 4
     },
     {
-      "title": "Reinforcing Agentic Creativity in Scientific Ideation with Night Science",
-      "url": "https://huggingface.co/papers/2609.35706",
-      "upvotes": 2
+      "title": "Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration",
+      "url": "https://huggingface.co/papers/2609.33586",
+      "upvotes": 1
+    },
+    {
+      "title": "CineSubBench: Evaluating LLMs on Long-Form Narrative and Cultural Understanding from Multilingual Movie Subtitles",
+      "url": "https://huggingface.co/papers/2609.36218",
+      "upvotes": 1
     }
   ]
 }

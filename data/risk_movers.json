@@ -19,6 +19,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 38.2,
+      "previous_avg": 15.0,
+      "delta": 23.2,
+      "recent_mentions": 14,
+      "previous_mentions": 10
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 17.5,
@@ -28,13 +37,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 36.3,
-      "previous_avg": 15.0,
-      "delta": 21.3,
-      "recent_mentions": 15,
-      "previous_mentions": 8
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 30.0,
+      "previous_avg": 10.0,
+      "delta": 20.0,
+      "recent_mentions": 4,
+      "previous_mentions": 2
     },
     {
       "key": "abubakar malami",
@@ -46,12 +55,12 @@
       "previous_mentions": 2
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 26.0,
-      "previous_avg": 10.0,
-      "delta": 16.0,
-      "recent_mentions": 5,
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "recent_avg": 12.5,
+      "previous_avg": 30.0,
+      "delta": -17.5,
+      "recent_mentions": 2,
       "previous_mentions": 1
     },
     {
@@ -82,20 +91,20 @@
       "previous_mentions": 1
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 29.2,
+      "previous_avg": 20.0,
+      "delta": 9.2,
+      "recent_mentions": 6,
+      "previous_mentions": 2
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 24.0,
       "previous_avg": 32.5,
       "delta": -8.5,
-      "recent_mentions": 5,
-      "previous_mentions": 2
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 27.0,
-      "previous_avg": 20.0,
-      "delta": 7.0,
       "recent_mentions": 5,
       "previous_mentions": 2
     },
@@ -111,11 +120,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 31.0,
-      "previous_avg": 25.0,
-      "delta": 6.0,
+      "recent_avg": 28.8,
+      "previous_avg": 22.9,
+      "delta": 5.9,
+      "recent_mentions": 12,
+      "previous_mentions": 17
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 50.5,
+      "previous_avg": 45.0,
+      "delta": 5.5,
       "recent_mentions": 10,
-      "previous_mentions": 19
+      "previous_mentions": 10
     },
     {
       "key": "all progressives congress",
@@ -127,13 +145,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 12.5,
-      "previous_avg": 15.0,
-      "delta": -2.5,
-      "recent_mentions": 8,
-      "previous_mentions": 2
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 24.2,
+      "previous_avg": 21.4,
+      "delta": 2.8,
+      "recent_mentions": 13,
+      "previous_mentions": 7
     },
     {
       "key": "heineken lokpobiri",
@@ -145,31 +163,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "mtn foundation",
-      "label": "MTN Group Foundation",
-      "recent_avg": 12.5,
-      "previous_avg": 15.0,
-      "delta": -2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 50.5,
-      "previous_avg": 48.6,
-      "delta": 1.9,
-      "recent_mentions": 10,
-      "previous_mentions": 11
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 23.2,
-      "previous_avg": 21.4,
-      "delta": 1.8,
-      "recent_mentions": 11,
-      "previous_mentions": 7
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 13.3,
+      "previous_avg": 12.5,
+      "delta": 0.8,
+      "recent_mentions": 6,
+      "previous_mentions": 4
     },
     {
       "key": "niger delta development commission",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-29 21:23:52"
+  "generated": "2026-09-30 01:59:03"
 }

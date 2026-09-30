@@ -121,12 +121,6 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -135,6 +129,42 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e5e05b704829",
+      "label": "Office of the Auditor-General for the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2ac0ab837500",
+      "label": "National Power Training Institute of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -159,12 +189,6 @@
     {
       "id": "7d0b46bbd4a7",
       "label": "World Bank",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
       "type": "agency",
       "risk": "Low"
     },
@@ -213,30 +237,6 @@
     {
       "id": "f70c95991c72",
       "label": "Ogun-Osun River Basin Development Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "000196c3f40d",
-      "label": "United Nations Industrial Development Organization",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ba0cb08c8cb",
-      "label": "Nigerian Army",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b27f282d6347",
-      "label": "Osun State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -613,6 +613,12 @@
       "risk": "Medium"
     },
     {
+      "id": "b712af6560e0",
+      "label": "AG Vision",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "52ff2e9b0415",
       "label": "NNPC Biofuels",
       "type": "company",
@@ -688,12 +694,6 @@
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "497dc3c9a500",
-      "label": "United States Government/Manufacturer",
-      "type": "company",
       "risk": "Low"
     }
   ],
@@ -927,6 +927,18 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "c1b0fe364907",
+      "from": "b712af6560e0",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "8e4bcb3351e0",
       "from": "52ff2e9b0415",
       "to": "f70c95991c72",
@@ -942,12 +954,6 @@
       "id": "6c17551ed467",
       "from": "334c4a4c42fd",
       "to": "71c725d016c7",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
     {
@@ -1002,12 +1008,6 @@
       "id": "5b569ce39252",
       "from": "334c4a4c42fd",
       "to": "6843b615b76a",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "15decc10e9cb",
-      "from": "497dc3c9a500",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

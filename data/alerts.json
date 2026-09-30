@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-09-30",
+      "title": "Court fines 21 companies N30m each over investment fraud",
+      "url": "https://punchng.com/court-fines-21-companies-n30m-each-over-investment-fraud/",
+      "source": "The Punch",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Securities and Exchange Commission"
+      ]
+    },
+    {
       "date": "2026-09-29",
       "title": "Atiku speaks on PREMIUM TIMES report on international corruption cases involving him, ex-wife - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOZHE3NUQ1ODYyN00taUt4Z2xPQVBEUm9zVElvZnhnNVBBenFKQkNwajFZRF9GWVpwSjFhNWZDUkNwTVdfdmF5NlJQR3piQ3NhcFI1RTNDUmpNelJnTEZPR1FIZ3dQNWlBSENGbE9WUjcwYmk5UWxmeVVwQ3R1QWlESm0tcHJ5NWoweWd0TFo3dC1WTUhhLU1DZllEYlItNjZZd2VVMHk3U1RZaDk0ZS1YU3NEX3R1VkQtV09tWGFtSHZ6ZTdMOEtKZ1RKU3RoWUFpNGJUWlhMVDd0WlVoYUV5Wllva2w?oc=5",
@@ -341,5 +352,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-09-29 21:23:52"
+  "generated": "2026-09-30 01:59:03"
 }
