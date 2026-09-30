@@ -1,28 +1,24 @@
 {
   "new_companies": [
-    "Moytel"
+    "CGC Nigeria Limited"
   ],
-  "new_people": [
-    "Mu\u2019azu",
-    "Unnamed Nigerian"
-  ],
-  "psc_added": [],
-  "psc_removed": [],
-  "psc_changed": [],
-  "new_high_risk": [
+  "new_people": [],
+  "psc_added": [
     {
-      "title": "FCT Mininister Wike's son submits American passport in controversial $2.1m land acquisition case - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYVE5dDBxWmJ2ZGtFRmEwTFVPM1IzSGFyY1RkUXd6QUg5MnU1ZkFWM1Vpa2VyWlF2YnVJM2syc0dNekNzQXhLbE5rMHlRalJNSGlKQjY5cUlVbWVvMS00Tjc4QTlITlVraFl0RXhkLUZBUncwMTlXUWx4dy0yVlN1NXQzcXpTZ2o5UFJzZnl5WGdrM0FwTEo3XzhWZDNPLUdCSWhtaVdIUUx0Y01kOHhNSXdiVkFPa1ZCdlRnOHM4NWktbUtWQ0hSSFZobXVHNXM1TnFweVNrajZZY3JtVUJocUQ2QmpYdw?oc=5",
-      "risk": 75.0
+      "person": "Aliko Dangote",
+      "company": "Dangote Refinery"
     }
   ],
+  "psc_removed": [],
+  "psc_changed": [],
+  "new_high_risk": [],
   "counts": {
     "new_companies": 1,
-    "new_people": 2,
-    "psc_added": 0,
+    "new_people": 0,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-09-30 13:23:34"
+  "generated": "2026-09-30 18:21:09"
 }

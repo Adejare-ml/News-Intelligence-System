@@ -13,12 +13,12 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 20,
-      "mentions": 115,
+      "companies": 21,
+      "mentions": 126,
       "risk": {
         "Critical": 1,
         "Medium": 3,
-        "Low": 15,
+        "Low": 16,
         "High": 1
       }
     },
@@ -55,14 +55,6 @@
       "risk": {
         "High": 2,
         "Medium": 3
-      }
-    },
-    {
-      "industry": "Conglomerate",
-      "companies": 1,
-      "mentions": 8,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -109,6 +101,15 @@
       }
     },
     {
+      "industry": "Construction",
+      "companies": 4,
+      "mentions": 5,
+      "risk": {
+        "Medium": 2,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Logistics & Port Operations",
       "companies": 1,
       "mentions": 5,
@@ -130,15 +131,6 @@
       "mentions": 4,
       "risk": {
         "Low": 3
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 3,
-      "mentions": 4,
-      "risk": {
-        "Medium": 1,
-        "Low": 2
       }
     },
     {
@@ -415,5 +407,5 @@
       }
     }
   ],
-  "generated": "2026-09-30 13:23:40"
+  "generated": "2026-09-30 18:21:17"
 }
