@@ -115,8 +115,8 @@
       "risk": "Medium"
     },
     {
-      "id": "dce5a31d3181",
-      "label": "MTN Nigeria",
+      "id": "866686ab0fd6",
+      "label": "Dangote Group",
       "type": "company",
       "risk": "Low"
     },
@@ -187,6 +187,12 @@
       "risk": "Low"
     },
     {
+      "id": "84b6d6cbf896",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "e5e05b704829",
       "label": "Office of the Auditor-General for the Federation",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "e4c89820f522",
-      "label": "Nigerian Navy",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "56a1ac14d764",
       "label": "Nyesom Wike",
       "type": "person",
@@ -259,6 +259,18 @@
       "risk": "Low"
     },
     {
+      "id": "e8c816b2230d",
+      "label": "Adeyemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "9392713dc79b",
       "label": "Ojulari",
       "type": "person",
@@ -274,12 +286,6 @@
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -457,16 +463,10 @@
       "risk": "Low"
     },
     {
-      "id": "e6d08bf643b2",
-      "label": "Dr Haydar Daudu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9adc4c161a19",
-      "label": "LemFi",
-      "type": "company",
-      "risk": "Low"
+      "id": "77c793dd24f7",
+      "label": "Aliko Dangote",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "a5e155a532ad",
@@ -491,12 +491,6 @@
       "label": "Sunrise Ltd",
       "type": "company",
       "risk": "Medium"
-    },
-    {
-      "id": "77c793dd24f7",
-      "label": "Aliko Dangote",
-      "type": "psc",
-      "risk": "High"
     },
     {
       "id": "6617740c0c1a",
@@ -601,6 +595,12 @@
       "risk": "Medium"
     },
     {
+      "id": "e6f87275c6e8",
+      "label": "CGC Nigeria Limited",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "faf65911545b",
       "label": "United States Government/Partners",
       "type": "company",
@@ -683,12 +683,6 @@
       "label": "Independent Monitoring and Procurement Inspectorate",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -709,6 +703,12 @@
       "from": "64ac281e7b58",
       "to": "9ff00c51bfd3",
       "label": "Appointed as Customs Controller, Apapa"
+    },
+    {
+      "id": "78a1b64c4878",
+      "from": "e8c816b2230d",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as Defendant"
     },
     {
       "id": "6ae3ad6f7fb0",
@@ -837,10 +837,10 @@
       "label": "Appointed as null"
     },
     {
-      "id": "e3cceef1a102",
-      "from": "e6d08bf643b2",
-      "to": "9adc4c161a19",
-      "label": "Appointed as Head of Regulatory Affairs and Policy, West Africa"
+      "id": "f5e961dc48f7",
+      "from": "77c793dd24f7",
+      "to": "9ed3f0f5bb2d",
+      "label": "Significant influence or control"
     },
     {
       "id": "bacdbeb20944",
@@ -921,6 +921,24 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "b6c692491b0a",
+      "from": "e6f87275c6e8",
+      "to": "84b6d6cbf896",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "28911e9fe8a3",
+      "from": "334c4a4c42fd",
+      "to": "beb91054dc85",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "9e1d195a523a",
       "from": "ebe2d81e3981",
       "to": "0c2be969618b",
@@ -935,12 +953,6 @@
     {
       "id": "c1b0fe364907",
       "from": "b712af6560e0",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
       "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
@@ -996,12 +1008,6 @@
       "id": "8e5bf216553a",
       "from": "334c4a4c42fd",
       "to": "be09acc08e52",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "9aaad96e9617",
-      "from": "334c4a4c42fd",
-      "to": "3a4a88456e84",
       "label": "Contract Awardee"
     }
   ]

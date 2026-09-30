@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 39,
+      "total_mentions": 41,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 8,
-          "avg_risk": 23.8,
+          "mentions": 10,
+          "avg_risk": 23.0,
           "max_risk": 45
         }
       ]
@@ -65,7 +65,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 27,
+      "total_mentions": 28,
       "points": [
         {
           "week": "2026-09-07",
@@ -87,8 +87,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 7,
-          "avg_risk": 43.6,
+          "mentions": 8,
+          "avg_risk": 40.0,
           "max_risk": 75
         }
       ]
@@ -96,7 +96,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-14",
@@ -112,8 +112,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 9,
-          "avg_risk": 26.7,
+          "mentions": 10,
+          "avg_risk": 26.0,
           "max_risk": 40
         }
       ]
@@ -121,7 +121,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 15,
+      "total_mentions": 16,
       "points": [
         {
           "week": "2026-09-07",
@@ -140,6 +140,12 @@
           "mentions": 5,
           "avg_risk": 36.0,
           "max_risk": 65
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -585,6 +591,31 @@
       ]
     },
     {
+      "key": "dangote",
+      "label": "Dangote Group",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "european union",
       "label": "European Union",
       "total_mentions": 3,
@@ -871,6 +902,19 @@
       ]
     },
     {
+      "key": "adeyemi",
+      "label": "Adeyemi",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 52.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 2,
@@ -910,25 +954,6 @@
       ]
     },
     {
-      "key": "dangote",
-      "label": "Dangote Group",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 2,
@@ -963,6 +988,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federal capital territory administration",
+      "label": "Federal Capital Territory Administration",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 47.5,
+          "max_risk": 75
         }
       ]
     },
@@ -1079,6 +1117,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national agency for science and engineering infrastructure",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -1775,6 +1832,19 @@
       ]
     },
     {
+      "key": "cgc",
+      "label": "CGC Nigeria Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "centre for journalism innovation and development",
       "label": "Centre for Journalism Innovation and Development",
       "total_mentions": 1,
@@ -2096,19 +2166,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -3016,19 +3073,6 @@
       "points": [
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national agency for science and engineering infrastructure",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4193,5 +4237,5 @@
       ]
     }
   ],
-  "generated": "2026-09-30 13:23:40"
+  "generated": "2026-09-30 18:21:17"
 }

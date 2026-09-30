@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 36,
-      "undisclosed": 24,
+      "contracts": 37,
+      "undisclosed": 25,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -80,6 +80,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 12183000000.0
+      }
+    },
+    {
+      "name": "National Agency for Science and Engineering Infrastructure",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 10600000000.0
       }
     },
     {
@@ -311,6 +319,12 @@
       "totals": {}
     },
     {
+      "name": "Federal Capital Territory Administration",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Federal Ministry of Power",
       "contracts": 1,
       "undisclosed": 1,
@@ -518,8 +532,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 81,
-      "undisclosed": 50,
+      "contracts": 83,
+      "undisclosed": 52,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -539,6 +553,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 18000000000.0
+      }
+    },
+    {
+      "name": "CGC Nigeria Limited",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 10600000000.0
       }
     },
     {
@@ -874,5 +896,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-30 13:23:40"
+  "generated": "2026-09-30 18:21:17"
 }

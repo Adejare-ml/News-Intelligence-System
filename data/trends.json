@@ -1,31 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 162,
-  "previous_articles": 170,
+  "recent_articles": 161,
+  "previous_articles": 175,
   "rising": [
     {
       "term": "guardian",
-      "recent": 54,
-      "previous": 36,
-      "change": 18
+      "recent": 52,
+      "previous": 37,
+      "change": 15
     },
     {
       "term": "court",
-      "recent": 13,
+      "recent": 14,
       "previous": 4,
-      "change": 9
-    },
-    {
-      "term": "tinubu",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
-    },
-    {
-      "term": "gas",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
+      "change": 10
     },
     {
       "term": "world",
@@ -40,31 +28,55 @@
       "change": 5
     },
     {
-      "term": "oil",
-      "recent": 7,
-      "previous": 2,
-      "change": 5
-    },
-    {
-      "term": "wanted",
+      "term": "profit",
       "recent": 5,
       "previous": 0,
       "change": 5
     },
     {
-      "term": "newspapers",
-      "recent": 30,
-      "previous": 26,
+      "term": "oil",
+      "recent": 7,
+      "previous": 3,
       "change": 4
     },
     {
-      "term": "punch",
-      "recent": 30,
-      "previous": 26,
+      "term": "tinubu",
+      "recent": 7,
+      "previous": 3,
+      "change": 4
+    },
+    {
+      "term": "targets",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
+    },
+    {
+      "term": "serap",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "firms",
+      "recent": 4,
+      "previous": 0,
       "change": 4
     }
   ],
   "falling": [
+    {
+      "term": "health",
+      "recent": 1,
+      "previous": 9,
+      "change": -8
+    },
+    {
+      "term": "mambilla",
+      "recent": 4,
+      "previous": 11,
+      "change": -7
+    },
     {
       "term": "icc",
       "recent": 0,
@@ -72,22 +84,10 @@
       "change": -7
     },
     {
-      "term": "health",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
       "term": "group",
       "recent": 0,
       "previous": 6,
       "change": -6
-    },
-    {
-      "term": "mambilla",
-      "recent": 5,
-      "previous": 10,
-      "change": -5
     },
     {
       "term": "customs",
@@ -108,39 +108,39 @@
       "change": -5
     },
     {
+      "term": "com",
+      "recent": 8,
+      "previous": 12,
+      "change": -4
+    },
+    {
+      "term": "project",
+      "recent": 4,
+      "previous": 8,
+      "change": -4
+    },
+    {
       "term": "urges",
-      "recent": 5,
-      "previous": 9,
-      "change": -4
-    },
-    {
-      "term": "dangote refinery",
-      "recent": 3,
-      "previous": 7,
-      "change": -4
-    },
-    {
-      "term": "refinery",
-      "recent": 3,
-      "previous": 7,
+      "recent": 4,
+      "previous": 8,
       "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 105,
-      "previous": 116
+      "recent": 103,
+      "previous": 119
     },
     {
       "category": "Company",
       "recent": 28,
-      "previous": 28
+      "previous": 29
     },
     {
       "category": "Legal",
-      "recent": 27,
-      "previous": 26
+      "recent": 28,
+      "previous": 27
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-30 13:23:37"
+  "generated": "2026-09-30 18:21:14"
 }

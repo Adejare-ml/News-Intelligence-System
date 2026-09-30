@@ -1438,5 +1438,35 @@
     "Date": "2026-09-30",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Construction of a new National Control Centre to strengthen grid reliability",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-09-30",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Capital Territory Administration",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Renovation and upgrading of 14 general hospitals and revival of Utako General Hospital",
+    "Source": "The Punch",
+    "Date": "2026-09-30",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "National Agency for Science and Engineering Infrastructure",
+    "Contractor": "CGC Nigeria Limited",
+    "Amount": "N10.6 Billion",
+    "Project": "Infrastructure project (specifics not detailed in excerpt)",
+    "Source": "The Punch",
+    "Date": "2026-09-30",
+    "Amount Value": 10600000000.0,
+    "Amount Currency": "NGN"
   }
 ]
