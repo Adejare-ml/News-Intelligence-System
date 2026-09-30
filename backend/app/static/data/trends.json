@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 161,
-  "previous_articles": 175,
+  "recent_articles": 159,
+  "previous_articles": 176,
   "rising": [
     {
       "term": "guardian",
-      "recent": 52,
-      "previous": 37,
-      "change": 15
+      "recent": 51,
+      "previous": 39,
+      "change": 12
     },
     {
       "term": "court",
@@ -16,16 +16,16 @@
       "change": 10
     },
     {
+      "term": "nnpc",
+      "recent": 14,
+      "previous": 7,
+      "change": 7
+    },
+    {
       "term": "world",
       "recent": 6,
       "previous": 0,
       "change": 6
-    },
-    {
-      "term": "nnpc",
-      "recent": 12,
-      "previous": 7,
-      "change": 5
     },
     {
       "term": "profit",
@@ -52,15 +52,15 @@
       "change": 4
     },
     {
-      "term": "serap",
+      "term": "ogun",
       "recent": 5,
       "previous": 1,
       "change": 4
     },
     {
-      "term": "firms",
-      "recent": 4,
-      "previous": 0,
+      "term": "serap",
+      "recent": 5,
+      "previous": 1,
       "change": 4
     }
   ],
@@ -90,12 +90,6 @@
       "change": -6
     },
     {
-      "term": "customs",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
       "term": "moves",
       "recent": 1,
       "previous": 6,
@@ -108,21 +102,27 @@
       "change": -5
     },
     {
-      "term": "com",
-      "recent": 8,
-      "previous": 12,
-      "change": -4
-    },
-    {
-      "term": "project",
-      "recent": 4,
-      "previous": 8,
-      "change": -4
-    },
-    {
       "term": "urges",
       "recent": 4,
       "previous": 8,
+      "change": -4
+    },
+    {
+      "term": "report",
+      "recent": 3,
+      "previous": 7,
+      "change": -4
+    },
+    {
+      "term": "battle",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
+    },
+    {
+      "term": "corruption",
+      "recent": 1,
+      "previous": 5,
       "change": -4
     }
   ],
@@ -130,17 +130,17 @@
     {
       "category": "Government",
       "recent": 103,
-      "previous": 119
+      "previous": 117
     },
     {
       "category": "Company",
-      "recent": 28,
-      "previous": 29
+      "recent": 27,
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 28,
-      "previous": 27
+      "recent": 27,
+      "previous": 28
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-30 18:21:14"
+  "generated": "2026-09-30 21:22:57"
 }

@@ -63,6 +63,31 @@
       ]
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 29,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 21.2,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 12,
+          "avg_risk": 27.5,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "total_mentions": 28,
@@ -90,31 +115,6 @@
           "mentions": 8,
           "avg_risk": 40.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 27,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 21.2,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 10,
-          "avg_risk": 26.0,
-          "max_risk": 40
         }
       ]
     },
@@ -276,6 +276,31 @@
       ]
     },
     {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 26.0,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "total_mentions": 6,
@@ -335,25 +360,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 26.0,
-          "max_risk": 35
         }
       ]
     },
@@ -3509,6 +3515,19 @@
       ]
     },
     {
+      "key": "oklng",
+      "label": "OKLNG",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "opl 245",
       "label": "OPL 245",
       "total_mentions": 1,
@@ -3557,6 +3576,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ogun state liquefied natural gas",
+      "label": "Ogun State Liquefied Natural Gas",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -4237,5 +4269,5 @@
       ]
     }
   ],
-  "generated": "2026-09-30 18:21:17"
+  "generated": "2026-09-30 21:23:01"
 }

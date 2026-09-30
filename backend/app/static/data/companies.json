@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 47,
-    "Last Seen": "2026-09-30 1:56",
+    "Mention Count": 49,
+    "Last Seen": "2026-09-30 21:20",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -8582,5 +8582,21 @@
     "Industry": "Construction",
     "Risk Level": "Medium",
     "First Seen": "2026-09-30 18:18"
+  },
+  {
+    "Company": "Ogun State Liquefied Natural Gas",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-30 21:19",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-09-30 21:19"
+  },
+  {
+    "Company": "OKLNG",
+    "Mention Count": 1,
+    "Last Seen": "2026-09-30 21:20",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
+    "First Seen": "2026-09-30 21:20"
   }
 ]

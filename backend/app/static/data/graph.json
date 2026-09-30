@@ -175,6 +175,12 @@
       "risk": "Low"
     },
     {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "beb91054dc85",
       "label": "Federal Capital Territory Administration",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "7d0b46bbd4a7",
       "label": "World Bank",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "be82d8024966",
-      "label": "Nigeria Police Academy",
       "type": "agency",
       "risk": "Low"
     },
@@ -657,12 +657,6 @@
     {
       "id": "fa6c485df0cf",
       "label": "Lagos State Security Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
       "type": "agency",
       "risk": "Low"
     },
