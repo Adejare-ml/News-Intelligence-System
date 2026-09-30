@@ -2,12 +2,12 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 34,
-      "undisclosed": 23,
+      "contracts": 36,
+      "undisclosed": 24,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
-        "USD": 6230000000.0
+        "USD": 11230000000.0
       }
     },
     {
@@ -588,6 +588,12 @@
       }
     },
     {
+      "name": "Not Specified",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "Not specified",
       "contracts": 2,
       "undisclosed": 2,
@@ -752,12 +758,6 @@
       }
     },
     {
-      "name": "Not Specified",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "Premium Steel",
       "contracts": 1,
       "undisclosed": 1,
@@ -854,6 +854,14 @@
       "totals": {}
     },
     {
+      "name": "United States Government/Partners",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 5000000000.0
+      }
+    },
+    {
       "name": "Unnamed Concessionaire",
       "contracts": 1,
       "undisclosed": 1,
@@ -866,5 +874,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-30 01:59:03"
+  "generated": "2026-09-30 13:23:40"
 }

@@ -85,19 +85,19 @@
       }
     },
     {
+      "industry": "Telecoms",
+      "companies": 4,
+      "mentions": 7,
+      "risk": {
+        "Low": 4
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
       "mentions": 6,
       "risk": {
         "High": 1
-      }
-    },
-    {
-      "industry": "Telecoms",
-      "companies": 3,
-      "mentions": 6,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -415,5 +415,5 @@
       }
     }
   ],
-  "generated": "2026-09-30 01:59:03"
+  "generated": "2026-09-30 13:23:40"
 }

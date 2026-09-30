@@ -121,6 +121,18 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -145,8 +157,32 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6c302b827a55",
+      "label": "Government of the United States",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,8 +199,8 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "4364a96a5640",
+      "label": "Unnamed Liberian University",
       "type": "agency",
       "risk": "Low"
     },
@@ -205,39 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "974b4a4b8b7b",
-      "label": "Financial Reporting Council",
-      "type": "agency",
+      "id": "56a1ac14d764",
+      "label": "Nyesom Wike",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "71c725d016c7",
-      "label": "Sokoto State Government",
-      "type": "agency",
+      "id": "eb019677d36e",
+      "label": "Unnamed Nigerian",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "e7f92892ec0b",
-      "label": "Mambilla Hydropower Project",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "443a59309ea9",
-      "label": "Credit Guarantee Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "350d6e0ea7e1",
-      "label": "National Industrial Court",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f70c95991c72",
-      "label": "Ogun-Osun River Basin Development Authority",
-      "type": "agency",
+      "id": "64ac281e7b58",
+      "label": "Mu\u2019azu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -451,36 +469,6 @@
       "risk": "Low"
     },
     {
-      "id": "5b3edd2f164d",
-      "label": "Chukwu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "112a7950db44",
-      "label": "SUNU Assurances",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "12070a26f21b",
-      "label": "National Housing Fund",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "56a1ac14d764",
-      "label": "Nyesom Wike",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "65c6471e588e",
-      "label": "Federal Ministry of the Federal Capital Territory",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "a5e155a532ad",
       "label": "Sadio Mane\u0301",
       "type": "psc",
@@ -613,9 +601,21 @@
       "risk": "Medium"
     },
     {
+      "id": "faf65911545b",
+      "label": "United States Government/Partners",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "b712af6560e0",
       "label": "AG Vision",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "f70c95991c72",
+      "label": "Ogun-Osun River Basin Development Authority",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -628,6 +628,12 @@
       "id": "88997c363235",
       "label": "Chinese companies",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "71c725d016c7",
+      "label": "Sokoto State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -683,21 +689,27 @@
       "label": "Oyo State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "635f6d07426b",
-      "label": "Korea International Cooperation Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "4f87337f3e1c",
+      "from": "56a1ac14d764",
+      "to": "beb91054dc85",
+      "label": "Appointed as FCT Minister"
+    },
+    {
+      "id": "4332aec7c912",
+      "from": "eb019677d36e",
+      "to": "4364a96a5640",
+      "label": "Appointed as PR Director"
+    },
+    {
+      "id": "b5a64466321b",
+      "from": "64ac281e7b58",
+      "to": "9ff00c51bfd3",
+      "label": "Appointed as Customs Controller, Apapa"
+    },
     {
       "id": "6ae3ad6f7fb0",
       "from": "9392713dc79b",
@@ -831,24 +843,6 @@
       "label": "Appointed as Head of Regulatory Affairs and Policy, West Africa"
     },
     {
-      "id": "109514f7efad",
-      "from": "5b3edd2f164d",
-      "to": "112a7950db44",
-      "label": "Appointed as Director"
-    },
-    {
-      "id": "f8f3518fdb01",
-      "from": "55bcb5b22e12",
-      "to": "12070a26f21b",
-      "label": "Appointed as Former Head of National Housing Fund"
-    },
-    {
-      "id": "3d55aef0137e",
-      "from": "56a1ac14d764",
-      "to": "65c6471e588e",
-      "label": "Appointed as Minister"
-    },
-    {
       "id": "bacdbeb20944",
       "from": "a5e155a532ad",
       "to": "930993bc7654",
@@ -927,6 +921,18 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "9e1d195a523a",
+      "from": "ebe2d81e3981",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "5cb3ab8554da",
+      "from": "faf65911545b",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "c1b0fe364907",
       "from": "b712af6560e0",
       "to": "0c2be969618b",
@@ -996,18 +1002,6 @@
       "id": "9aaad96e9617",
       "from": "334c4a4c42fd",
       "to": "3a4a88456e84",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "14315671d3f7",
-      "from": "334c4a4c42fd",
-      "to": "635f6d07426b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "5b569ce39252",
-      "from": "334c4a4c42fd",
-      "to": "6843b615b76a",
       "label": "Contract Awardee"
     }
   ]

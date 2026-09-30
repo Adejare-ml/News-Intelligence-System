@@ -1,93 +1,93 @@
 {
-  "generated": "2026-09-30 01:59:01",
+  "generated": "2026-09-30 13:23:37",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4516,
+      "likes": 4591,
       "downloads": 0
     },
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1531,
-      "downloads": 23674
+      "likes": 1570,
+      "downloads": 26749
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2442,
-      "downloads": 1152523
+      "likes": 2496,
+      "downloads": 1232685
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 873,
-      "downloads": 30354
+      "likes": 974,
+      "downloads": 30383
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2657,
-      "downloads": 64362
+      "likes": 2688,
+      "downloads": 70687
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 531,
-      "downloads": 1910
+      "likes": 550,
+      "downloads": 2392
     },
     {
       "id": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
       "task": "voice-activity-detection",
-      "likes": 520,
-      "downloads": 30931
+      "likes": 538,
+      "downloads": 36386
     },
     {
-      "id": "XingChen-AGI/Xing4.0-29B-A4B",
-      "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
-      "task": "text-generation",
-      "likes": 1808,
-      "downloads": 46557
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "task": "image-text-to-text",
+      "likes": 16609,
+      "downloads": 7038259
     }
   ],
   "papers": [
     {
-      "title": "WorldAttention: An Efficient Attention Architecture for Interactive Video World Models",
-      "url": "https://huggingface.co/papers/2609.34606",
-      "upvotes": 0
+      "title": "PMOPD: Task Ordering, Cycling, and Parameter-Update Subspace Protection in Multi-Teacher On-Policy Distillation",
+      "url": "https://huggingface.co/papers/2609.34605",
+      "upvotes": 2
     },
     {
-      "title": "Think Before You Score: Thinking Reward Model for Visual Generation",
-      "url": "https://huggingface.co/papers/2609.37372",
+      "title": "Improved Distributional Diffusion Models",
+      "url": "https://huggingface.co/papers/2609.37147",
       "upvotes": 3
     },
     {
-      "title": "TGRL: Temperature-Grouped Reinforcement Learning for Efficient Exploration in LLMs",
-      "url": "https://huggingface.co/papers/2609.33589",
+      "title": "AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation",
+      "url": "https://huggingface.co/papers/2609.35530",
+      "upvotes": 7
+    },
+    {
+      "title": "Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning",
+      "url": "https://huggingface.co/papers/2608.19669",
       "upvotes": 1
     },
     {
-      "title": "VideoPhysEdit: Physical Counterfactual Video Editing via Rigid-Body Physical Scene Reconstruction",
-      "url": "https://huggingface.co/papers/2609.35134",
-      "upvotes": 4
+      "title": "APM-Bench: Benchmarking Cross-session Persistent Memory for Egocentric Streaming Video Assistants",
+      "url": "https://huggingface.co/papers/2609.37559",
+      "upvotes": 15
     },
     {
-      "title": "Approximating Softmax in Pretrained LLMs: Model Sensitivity and Kernel Acceleration",
-      "url": "https://huggingface.co/papers/2609.33586",
-      "upvotes": 1
-    },
-    {
-      "title": "CineSubBench: Evaluating LLMs on Long-Form Narrative and Cultural Understanding from Multilingual Movie Subtitles",
-      "url": "https://huggingface.co/papers/2609.36218",
-      "upvotes": 1
+      "title": "Reasoning with Image Generation",
+      "url": "https://huggingface.co/papers/2609.16409",
+      "upvotes": 8
     }
   ]
 }
