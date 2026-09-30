@@ -1,19 +1,25 @@
 {
   "new_companies": [
-    "Johnvents"
+    "AG Vision"
   ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Court fines 21 companies N30m each over investment fraud",
+      "url": "https://punchng.com/court-fines-21-companies-n30m-each-over-investment-fraud/",
+      "risk": 75.0
+    }
+  ],
   "counts": {
     "new_companies": 1,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-09-29 21:23:47"
+  "generated": "2026-09-30 01:58:59"
 }

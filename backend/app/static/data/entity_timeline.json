@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 34,
+      "total_mentions": 36,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 28.3,
+          "mentions": 5,
+          "avg_risk": 24.0,
           "max_risk": 45
         }
       ]
@@ -65,7 +65,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 25,
+      "total_mentions": 26,
       "points": [
         {
           "week": "2026-09-07",
@@ -87,8 +87,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 5,
-          "avg_risk": 53.0,
+          "mentions": 6,
+          "avg_risk": 47.5,
           "max_risk": 75
         }
       ]
@@ -96,7 +96,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 23,
+      "total_mentions": 25,
       "points": [
         {
           "week": "2026-09-14",
@@ -112,8 +112,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 6,
-          "avg_risk": 27.5,
+          "mentions": 8,
+          "avg_risk": 28.1,
           "max_risk": 40
         }
       ]
@@ -207,6 +207,31 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
       "total_mentions": 7,
@@ -235,31 +260,6 @@
           "mentions": 4,
           "avg_risk": 37.5,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 27.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1271,6 +1271,19 @@
       ]
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "seplat energy",
       "label": "Seplat Energy",
       "total_mentions": 2,
@@ -1357,6 +1370,19 @@
     {
       "key": "aa rano",
       "label": "AA Rano",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ag vision",
+      "label": "AG Vision",
       "total_mentions": 1,
       "points": [
         {
@@ -3019,6 +3045,19 @@
       ]
     },
     {
+      "key": "national power training institute of",
+      "label": "National Power Training Institute of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "national union of pensioners",
       "label": "National Union of Pensioners",
       "total_mentions": 1,
@@ -3383,6 +3422,19 @@
       ]
     },
     {
+      "key": "office of the auditor general for the federation",
+      "label": "Office of the Auditor-General for the Federation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "office of the secretary to the government of the federation",
       "label": "Office of the Secretary to the Government of the Federation",
       "total_mentions": 1,
@@ -3721,19 +3773,6 @@
       ]
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "total_mentions": 1,
@@ -4059,5 +4098,5 @@
       ]
     }
   ],
-  "generated": "2026-09-29 21:23:52"
+  "generated": "2026-09-30 01:59:03"
 }

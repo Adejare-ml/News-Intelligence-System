@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 32,
-      "undisclosed": 21,
+      "contracts": 34,
+      "undisclosed": 23,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -518,8 +518,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 80,
-      "undisclosed": 49,
+      "contracts": 81,
+      "undisclosed": 50,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -595,6 +595,12 @@
     },
     {
       "name": "ABC Transport",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "AG Vision",
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
@@ -860,5 +866,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-29 21:23:52"
+  "generated": "2026-09-30 01:59:03"
 }

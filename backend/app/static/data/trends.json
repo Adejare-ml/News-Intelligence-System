@@ -1,37 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 164,
-  "previous_articles": 178,
+  "recent_articles": 162,
+  "previous_articles": 174,
   "rising": [
     {
       "term": "guardian",
       "recent": 55,
-      "previous": 44,
-      "change": 11
-    },
-    {
-      "term": "lagos",
-      "recent": 12,
-      "previous": 3,
-      "change": 9
-    },
-    {
-      "term": "punch",
-      "recent": 31,
-      "previous": 25,
-      "change": 6
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 31,
-      "previous": 25,
-      "change": 6
+      "previous": 43,
+      "change": 12
     },
     {
       "term": "court",
-      "recent": 10,
+      "recent": 12,
       "previous": 4,
-      "change": 6
+      "change": 8
     },
     {
       "term": "gas",
@@ -46,9 +28,9 @@
       "change": 6
     },
     {
-      "term": "newspapers",
-      "recent": 31,
-      "previous": 26,
+      "term": "oil",
+      "recent": 7,
+      "previous": 2,
       "change": 5
     },
     {
@@ -62,6 +44,24 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "nnpc",
+      "recent": 11,
+      "previous": 7,
+      "change": 4
+    },
+    {
+      "term": "com",
+      "recent": 10,
+      "previous": 6,
+      "change": 4
+    },
+    {
+      "term": "first",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
     }
   ],
   "falling": [
@@ -76,12 +76,6 @@
       "recent": 1,
       "previous": 7,
       "change": -6
-    },
-    {
-      "term": "nigeria\u2019s",
-      "recent": 12,
-      "previous": 17,
-      "change": -5
     },
     {
       "term": "mambilla",
@@ -102,15 +96,15 @@
       "change": -4
     },
     {
-      "term": "ipo",
+      "term": "payment",
       "recent": 2,
       "previous": 6,
       "change": -4
     },
     {
-      "term": "payment",
-      "recent": 2,
-      "previous": 6,
+      "term": "group",
+      "recent": 1,
+      "previous": 5,
       "change": -4
     },
     {
@@ -124,23 +118,29 @@
       "recent": 0,
       "previous": 4,
       "change": -4
+    },
+    {
+      "term": "donor",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 107,
-      "previous": 117
+      "recent": 105,
+      "previous": 118
     },
     {
       "category": "Company",
-      "recent": 32,
-      "previous": 34
+      "recent": 30,
+      "previous": 30
     },
     {
       "category": "Legal",
-      "recent": 24,
-      "previous": 27
+      "recent": 26,
+      "previous": 26
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-09-29 21:23:50"
+  "generated": "2026-09-30 01:59:01"
 }

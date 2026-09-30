@@ -30,15 +30,29 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 742,
-      "published": 332,
-      "filtered": 410,
+      "total": 752,
+      "published": 336,
+      "filtered": 416,
       "accept_rate": 45,
       "avg_risk": 26.8,
       "engines": {
         "unknown": 188,
-        "ollama": 140,
+        "ollama": 144,
         "nvidia": 4
+      },
+      "last_seen": "2026-09-30"
+    },
+    {
+      "source": "The Punch",
+      "total": 476,
+      "published": 277,
+      "filtered": 199,
+      "accept_rate": 58,
+      "avg_risk": 32.9,
+      "engines": {
+        "unknown": 104,
+        "nvidia": 6,
+        "ollama": 167
       },
       "last_seen": "2026-09-29"
     },
@@ -55,20 +69,6 @@
         "nvidia": 4
       },
       "last_seen": "2026-09-29"
-    },
-    {
-      "source": "The Punch",
-      "total": 469,
-      "published": 272,
-      "filtered": 197,
-      "accept_rate": 58,
-      "avg_risk": 32.7,
-      "engines": {
-        "unknown": 104,
-        "nvidia": 6,
-        "ollama": 162
-      },
-      "last_seen": "2026-09-28"
     },
     {
       "source": "Vanguard News",
@@ -113,16 +113,16 @@
     },
     {
       "source": "leadership",
-      "total": 155,
+      "total": 156,
       "published": 47,
-      "filtered": 108,
+      "filtered": 109,
       "accept_rate": 30,
       "avg_risk": 23.7,
       "engines": {
         "unknown": 35,
         "ollama": 12
       },
-      "last_seen": "2026-09-28"
+      "last_seen": "2026-09-29"
     },
     {
       "source": "sunnewsonline",
@@ -167,9 +167,9 @@
     },
     {
       "source": "vanguardngr",
-      "total": 129,
+      "total": 131,
       "published": 27,
-      "filtered": 102,
+      "filtered": 104,
       "accept_rate": 21,
       "avg_risk": 26.1,
       "engines": {
@@ -259,15 +259,15 @@
     },
     {
       "source": "premiumtimesng",
-      "total": 30,
+      "total": 31,
       "published": 4,
-      "filtered": 26,
+      "filtered": 27,
       "accept_rate": 13,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 4
       },
-      "last_seen": "2026-09-27"
+      "last_seen": "2026-09-29"
     },
     {
       "source": "guardian.ng",
@@ -282,6 +282,19 @@
       "last_seen": "2026-09-28"
     },
     {
+      "source": "tribuneonlineng",
+      "total": 28,
+      "published": 9,
+      "filtered": 19,
+      "accept_rate": 32,
+      "avg_risk": 29.7,
+      "engines": {
+        "unknown": 3,
+        "ollama": 6
+      },
+      "last_seen": "2026-09-29"
+    },
+    {
       "source": "thisdaylive",
       "total": 27,
       "published": 12,
@@ -293,19 +306,6 @@
         "ollama": 7
       },
       "last_seen": "2026-09-21"
-    },
-    {
-      "source": "tribuneonlineng",
-      "total": 27,
-      "published": 9,
-      "filtered": 18,
-      "accept_rate": 33,
-      "avg_risk": 29.7,
-      "engines": {
-        "unknown": 3,
-        "ollama": 6
-      },
-      "last_seen": "2026-09-25"
     },
     {
       "source": "tori",
@@ -346,10 +346,10 @@
     },
     {
       "source": "premiumtimesng.com",
-      "total": 14,
+      "total": 15,
       "published": 6,
-      "filtered": 8,
-      "accept_rate": 43,
+      "filtered": 9,
+      "accept_rate": 40,
       "avg_risk": 32.7,
       "engines": {
         "unknown": 1,
@@ -1984,5 +1984,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-29 21:23:52"
+  "generated": "2026-09-30 01:59:03"
 }
