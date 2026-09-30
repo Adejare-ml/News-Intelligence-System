@@ -30,9 +30,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 758,
+      "total": 759,
       "published": 337,
-      "filtered": 421,
+      "filtered": 422,
       "accept_rate": 44,
       "avg_risk": 26.7,
       "engines": {
@@ -44,9 +44,9 @@
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 486,
+      "total": 487,
       "published": 157,
-      "filtered": 329,
+      "filtered": 330,
       "accept_rate": 32,
       "avg_risk": 27.6,
       "engines": {
@@ -140,9 +140,9 @@
     },
     {
       "source": "dailypost",
-      "total": 145,
+      "total": 146,
       "published": 42,
-      "filtered": 103,
+      "filtered": 104,
       "accept_rate": 29,
       "avg_risk": 24.7,
       "engines": {
@@ -220,16 +220,16 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 48,
+      "total": 49,
       "published": 12,
-      "filtered": 36,
-      "accept_rate": 25,
+      "filtered": 37,
+      "accept_rate": 24,
       "avg_risk": 23.5,
       "engines": {
         "unknown": 8,
         "ollama": 4
       },
-      "last_seen": "2026-09-29"
+      "last_seen": "2026-09-30"
     },
     {
       "source": "blueprint",
@@ -259,25 +259,25 @@
     },
     {
       "source": "premiumtimesng",
-      "total": 31,
+      "total": 32,
       "published": 4,
-      "filtered": 27,
-      "accept_rate": 13,
+      "filtered": 28,
+      "accept_rate": 12,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 4
       },
-      "last_seen": "2026-09-29"
+      "last_seen": "2026-09-30"
     },
     {
       "source": "guardian.ng",
-      "total": 30,
-      "published": 9,
+      "total": 31,
+      "published": 10,
       "filtered": 21,
-      "accept_rate": 30,
-      "avg_risk": 38.9,
+      "accept_rate": 32,
+      "avg_risk": 39.0,
       "engines": {
-        "ollama": 9
+        "ollama": 10
       },
       "last_seen": "2026-09-30"
     },
@@ -332,6 +332,19 @@
       "last_seen": "2026-09-23"
     },
     {
+      "source": "premiumtimesng.com",
+      "total": 19,
+      "published": 7,
+      "filtered": 12,
+      "accept_rate": 37,
+      "avg_risk": 32.3,
+      "engines": {
+        "unknown": 1,
+        "ollama": 6
+      },
+      "last_seen": "2026-09-30"
+    },
+    {
       "source": "Voice of Nigeria",
       "total": 15,
       "published": 9,
@@ -343,19 +356,6 @@
         "ollama": 8
       },
       "last_seen": "2026-09-25"
-    },
-    {
-      "source": "premiumtimesng.com",
-      "total": 15,
-      "published": 6,
-      "filtered": 9,
-      "accept_rate": 40,
-      "avg_risk": 32.7,
-      "engines": {
-        "unknown": 1,
-        "ollama": 5
-      },
-      "last_seen": "2026-09-29"
     },
     {
       "source": "converseer",
@@ -1284,6 +1284,16 @@
       "last_seen": "2026-08-03"
     },
     {
+      "source": "Federal Ministry of Information and National Orientation",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-30"
+    },
+    {
       "source": "Fij.ng",
       "total": 1,
       "published": 1,
@@ -1838,6 +1848,16 @@
       "last_seen": "2026-09-08"
     },
     {
+      "source": "informationng",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-09-30"
+    },
+    {
       "source": "investing_ng",
       "total": 1,
       "published": 1,
@@ -1984,5 +2004,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-09-30 18:21:17"
+  "generated": "2026-09-30 21:23:01"
 }

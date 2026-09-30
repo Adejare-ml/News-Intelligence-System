@@ -10,6 +10,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 25.0,
+      "previous_avg": 51.0,
+      "delta": -26.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 38.2,
@@ -24,7 +33,7 @@
       "recent_avg": 30.0,
       "previous_avg": 10.0,
       "delta": 20.0,
-      "recent_mentions": 4,
+      "recent_mentions": 5,
       "previous_mentions": 2
     },
     {
@@ -35,15 +44,6 @@
       "delta": -20.0,
       "recent_mentions": 2,
       "previous_mentions": 2
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 25.0,
-      "previous_avg": 41.4,
-      "delta": -16.4,
-      "recent_mentions": 2,
-      "previous_mentions": 7
     },
     {
       "key": "independent national electoral commission",
@@ -62,6 +62,15 @@
       "delta": -12.5,
       "recent_mentions": 4,
       "previous_mentions": 4
+    },
+    {
+      "key": "maina",
+      "label": "Maina",
+      "recent_avg": 72.5,
+      "previous_avg": 60.0,
+      "delta": 12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "ojulari",
@@ -91,6 +100,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 43.3,
+      "previous_avg": 51.4,
+      "delta": -8.1,
+      "recent_mentions": 9,
+      "previous_mentions": 11
+    },
+    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 10.0,
@@ -118,13 +136,13 @@
       "previous_mentions": 17
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 45.0,
-      "previous_avg": 47.7,
-      "delta": -2.7,
-      "recent_mentions": 10,
-      "previous_mentions": 11
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 24.7,
+      "previous_avg": 21.4,
+      "delta": 3.3,
+      "recent_mentions": 17,
+      "previous_mentions": 7
     },
     {
       "key": "federal airports authority of",
@@ -145,15 +163,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 23.3,
-      "previous_avg": 21.4,
-      "delta": 1.9,
-      "recent_mentions": 15,
-      "previous_mentions": 7
-    },
-    {
       "key": "niger delta development commission",
       "label": "Niger Delta Development Commission",
       "recent_avg": 20.0,
@@ -163,18 +172,9 @@
       "previous_mentions": 1
     },
     {
-      "key": "maina",
-      "label": "Maina",
-      "recent_avg": 68.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "nyesom wike",
-      "label": "Nyesom Wike",
-      "recent_avg": 67.5,
+      "key": "mambilla hydropower project",
+      "label": "Mambilla Hydropower Project",
+      "recent_avg": 65.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-30 18:21:17"
+  "generated": "2026-09-30 21:23:01"
 }
