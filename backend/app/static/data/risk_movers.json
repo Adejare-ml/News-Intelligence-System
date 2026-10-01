@@ -13,19 +13,19 @@
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 25.0,
-      "previous_avg": 51.0,
-      "delta": -26.0,
+      "previous_avg": 53.8,
+      "delta": -28.8,
       "recent_mentions": 2,
-      "previous_mentions": 5
+      "previous_mentions": 4
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 38.2,
-      "previous_avg": 15.5,
-      "delta": 22.7,
+      "previous_avg": 15.8,
+      "delta": 22.4,
       "recent_mentions": 14,
-      "previous_mentions": 11
+      "previous_mentions": 12
     },
     {
       "key": "ogun state government",
@@ -91,22 +91,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 24.0,
-      "previous_avg": 32.5,
-      "delta": -8.5,
-      "recent_mentions": 5,
-      "previous_mentions": 2
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 43.3,
-      "previous_avg": 51.4,
-      "delta": -8.1,
-      "recent_mentions": 9,
-      "previous_mentions": 11
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 25.6,
+      "previous_avg": 20.0,
+      "delta": 5.6,
+      "recent_mentions": 16,
+      "previous_mentions": 8
     },
     {
       "key": "lagos state government",
@@ -127,22 +118,40 @@
       "previous_mentions": 2
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 25.0,
+      "previous_avg": 28.8,
+      "delta": -3.8,
+      "recent_mentions": 4,
+      "previous_mentions": 4
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 28.3,
+      "delta": -3.3,
+      "recent_mentions": 4,
+      "previous_mentions": 3
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 26.8,
-      "previous_avg": 22.9,
-      "delta": 3.9,
+      "previous_avg": 23.8,
+      "delta": 3.0,
       "recent_mentions": 17,
-      "previous_mentions": 17
+      "previous_mentions": 16
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 24.7,
-      "previous_avg": 21.4,
-      "delta": 3.3,
-      "recent_mentions": 17,
-      "previous_mentions": 7
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 46.2,
+      "previous_avg": 48.8,
+      "delta": -2.6,
+      "recent_mentions": 8,
+      "previous_mentions": 12
     },
     {
       "key": "federal airports authority of",
@@ -154,24 +163,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 26.0,
-      "previous_avg": 28.3,
-      "delta": -2.3,
-      "recent_mentions": 5,
-      "previous_mentions": 3
-    },
-    {
-      "key": "niger delta development commission",
-      "label": "Niger Delta Development Commission",
-      "recent_avg": 20.0,
-      "previous_avg": 20.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "mambilla hydropower project",
       "label": "Mambilla Hydropower Project",
       "recent_avg": 65.0,
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "adeyemi",
+      "label": "Adeyemi",
+      "recent_avg": 48.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-09-30 21:23:01"
+  "generated": "2026-10-01 01:57:53"
 }

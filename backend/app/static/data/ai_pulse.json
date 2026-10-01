@@ -1,93 +1,93 @@
 {
-  "generated": "2026-09-30 21:22:57",
+  "generated": "2026-10-01 01:57:50",
   "models": [
     {
       "id": "Edge0/Audio8-ASR-Infinite",
       "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite",
       "task": "automatic-speech-recognition",
-      "likes": 1808,
+      "likes": 1896,
       "downloads": 26749
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4668,
+      "likes": 4689,
       "downloads": 0
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "task": "text-to-image",
-      "likes": 2554,
-      "downloads": 1232685
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 1079,
+      "likes": 1102,
       "downloads": 30383
     },
     {
-      "id": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2716,
-      "downloads": 70687
+      "likes": 2582,
+      "downloads": 1232685
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 569,
+      "likes": 574,
       "downloads": 2392
+    },
+    {
+      "id": "Qwen/Qwen-Image-2.1",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "task": "text-to-image",
+      "likes": 2721,
+      "downloads": 70687
     },
     {
       "id": "nvidia/Nemotron-3-Diarization",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
       "task": "voice-activity-detection",
-      "likes": 554,
+      "likes": 563,
       "downloads": 36386
     },
     {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "task": "image-text-to-text",
-      "likes": 16647,
-      "downloads": 7038259
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 5730,
+      "downloads": 1602348
     }
   ],
   "papers": [
     {
-      "title": "Fractional State Space Transition for Long Sequence Modeling",
-      "url": "https://huggingface.co/papers/2609.36314",
+      "title": "Memory Is a Derivation: The Distributed-Evidence Paradox in Long-Term Agents",
+      "url": "https://huggingface.co/papers/2609.36130",
       "upvotes": 4
     },
     {
-      "title": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
-      "url": "https://huggingface.co/papers/2609.36322",
-      "upvotes": 73
+      "title": "On the Off-Policy Teacher in On-Policy Distillation",
+      "url": "https://huggingface.co/papers/2609.38360",
+      "upvotes": 5
     },
     {
-      "title": "Org-Agent: Beyond Personal Assistants Towards Organizational Agents",
-      "url": "https://huggingface.co/papers/2609.34392",
-      "upvotes": 3
+      "title": "Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation",
+      "url": "https://huggingface.co/papers/2609.38172",
+      "upvotes": 0
     },
     {
-      "title": "Can Agents Design Libraries for Agents?",
-      "url": "https://huggingface.co/papers/2609.36730",
+      "title": "AgentTell: Behavioural Side-Channel Leakage in Browser-Use Agents",
+      "url": "https://huggingface.co/papers/2609.32915",
+      "upvotes": 0
+    },
+    {
+      "title": "PreviewDiff: Multimodal Critic-Guided Search over Diffusion Latents",
+      "url": "https://huggingface.co/papers/2609.36199",
+      "upvotes": 4
+    },
+    {
+      "title": "What Makes Recurrence Effective in Looped Language Models?",
+      "url": "https://huggingface.co/papers/2609.36636",
       "upvotes": 7
-    },
-    {
-      "title": "Scaling Properties of Same-Family On-Policy Distillation",
-      "url": "https://huggingface.co/papers/2609.32722",
-      "upvotes": 129
-    },
-    {
-      "title": "Learning Dynamics of Continual Learning: A Unified View of Data Attribution, Forgetting, and Plasticity Loss",
-      "url": "https://huggingface.co/papers/2609.33620",
-      "upvotes": 3
     }
   ]
 }

@@ -121,6 +121,18 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -129,12 +141,6 @@
     {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -177,12 +183,6 @@
     {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
       "type": "agency",
       "risk": "Low"
     },
@@ -241,6 +241,30 @@
       "risk": "Low"
     },
     {
+      "id": "f121c0e97820",
+      "label": "Seyi Makinde",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "e8c816b2230d",
+      "label": "Adeyemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "56a1ac14d764",
       "label": "Nyesom Wike",
       "type": "person",
@@ -256,18 +280,6 @@
       "id": "64ac281e7b58",
       "label": "Mu\u2019azu",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "e8c816b2230d",
-      "label": "Adeyemi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -453,12 +465,6 @@
     {
       "id": "d297cca8ca60",
       "label": "Presidential Task Force on Pension Reforms",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "37a6259cc0c1",
-      "label": "null",
       "type": "company",
       "risk": "Low"
     },
@@ -681,6 +687,18 @@
   ],
   "edges": [
     {
+      "id": "63dfe1afb291",
+      "from": "f121c0e97820",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Governor"
+    },
+    {
+      "id": "78a1b64c4878",
+      "from": "e8c816b2230d",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as None"
+    },
+    {
       "id": "4f87337f3e1c",
       "from": "56a1ac14d764",
       "to": "beb91054dc85",
@@ -697,12 +715,6 @@
       "from": "64ac281e7b58",
       "to": "9ff00c51bfd3",
       "label": "Appointed as Customs Controller, Apapa"
-    },
-    {
-      "id": "78a1b64c4878",
-      "from": "e8c816b2230d",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as Defendant"
     },
     {
       "id": "6ae3ad6f7fb0",
@@ -825,12 +837,6 @@
       "label": "Appointed as Former Chairman"
     },
     {
-      "id": "c098f0ce0d9f",
-      "from": "325a5c8a1ef5",
-      "to": "37a6259cc0c1",
-      "label": "Appointed as null"
-    },
-    {
       "id": "f5e961dc48f7",
       "from": "77c793dd24f7",
       "to": "9ed3f0f5bb2d",
@@ -915,15 +921,15 @@
       "label": "PSC: 85.8%"
     },
     {
-      "id": "b6c692491b0a",
-      "from": "e6f87275c6e8",
-      "to": "84b6d6cbf896",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "28911e9fe8a3",
       "from": "334c4a4c42fd",
       "to": "beb91054dc85",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "b6c692491b0a",
+      "from": "e6f87275c6e8",
+      "to": "84b6d6cbf896",
       "label": "Contract Awardee"
     },
     {

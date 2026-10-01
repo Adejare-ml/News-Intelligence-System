@@ -63,34 +63,9 @@
       ]
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 29,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 21.2,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 12,
-          "avg_risk": 27.5,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 28,
+      "total_mentions": 29,
       "points": [
         {
           "week": "2026-09-07",
@@ -112,9 +87,34 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 8,
-          "avg_risk": 40.0,
+          "mentions": 9,
+          "avg_risk": 37.8,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 29,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 21.2,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 12,
+          "avg_risk": 27.5,
+          "max_risk": 40
         }
       ]
     },
@@ -572,6 +572,19 @@
       ]
     },
     {
+      "key": "adeyemi",
+      "label": "Adeyemi",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 48.3,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "total_mentions": 3,
@@ -631,6 +644,19 @@
           "mentions": 3,
           "avg_risk": 15.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federal capital territory administration",
+      "label": "Federal Capital Territory Administration",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 38.3,
+          "max_risk": 75
         }
       ]
     },
@@ -908,19 +934,6 @@
       ]
     },
     {
-      "key": "adeyemi",
-      "label": "Adeyemi",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 52.5,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 2,
@@ -994,19 +1007,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 47.5,
-          "max_risk": 75
         }
       ]
     },
@@ -1398,6 +1398,25 @@
           "week": "2026-09-21",
           "mentions": 2,
           "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "seyi makinde",
+      "label": "Seyi Makinde",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -3918,19 +3937,6 @@
       ]
     },
     {
-      "key": "seyi makinde",
-      "label": "Seyi Makinde",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "siminalayi fubara",
       "label": "Siminalayi Fubara",
       "total_mentions": 1,
@@ -4269,5 +4275,5 @@
       ]
     }
   ],
-  "generated": "2026-09-30 21:23:01"
+  "generated": "2026-10-01 01:57:53"
 }
