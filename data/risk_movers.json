@@ -19,15 +19,6 @@
       "previous_mentions": 11
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 31.2,
-      "previous_avg": 10.0,
-      "delta": 21.2,
-      "recent_mentions": 8,
-      "previous_mentions": 2
-    },
-    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 38.8,
@@ -55,12 +46,30 @@
       "previous_mentions": 1
     },
     {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 32.5,
+      "previous_avg": 18.8,
+      "delta": 13.7,
+      "recent_mentions": 6,
+      "previous_mentions": 4
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 16.7,
       "previous_avg": 30.0,
       "delta": -13.3,
       "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 32.5,
+      "delta": -12.5,
+      "recent_mentions": 2,
       "previous_mentions": 2
     },
     {
@@ -82,15 +91,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
-      "recent_avg": 75.0,
-      "previous_avg": 85.0,
-      "delta": -10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 29.8,
@@ -107,6 +107,15 @@
       "delta": -7.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 27.5,
+      "previous_avg": 22.9,
+      "delta": 4.6,
+      "recent_mentions": 14,
+      "previous_mentions": 17
     },
     {
       "key": "lagos state government",
@@ -136,13 +145,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 26.3,
-      "previous_avg": 25.0,
-      "delta": 1.3,
-      "recent_mentions": 15,
-      "previous_mentions": 17
+      "key": "dp world",
+      "label": "DP World",
+      "recent_avg": 28.3,
+      "previous_avg": 27.5,
+      "delta": 0.8,
+      "recent_mentions": 3,
+      "previous_mentions": 2
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
-      "recent_avg": 45.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-01 18:44:47"
+  "generated": "2026-10-01 21:40:35"
 }

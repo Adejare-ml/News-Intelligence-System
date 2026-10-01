@@ -6777,7 +6777,7 @@
   },
   {
     "Company": "UAC Nigeria PLC",
-    "Mention Count": 1,
+    "Mention Count": 2,
     "Last Seen": "2026-08-10 08:28",
     "Industry": "General",
     "Risk Level": "Low",
@@ -7265,9 +7265,9 @@
   },
   {
     "Company": "Health Facility Network",
-    "Mention Count": 1,
-    "Last Seen": "2026-08-24 23:28",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-01 21:39",
+    "Industry": "Healthcare",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -8622,5 +8622,29 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-10-01 18:41"
+  },
+  {
+    "Company": "PLSI",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-01 21:38",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-01 21:38"
+  },
+  {
+    "Company": "PharmAccess",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-01 21:39",
+    "Industry": "Healthcare",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-01 21:39"
+  },
+  {
+    "Company": "Sunbeth",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-01 21:39",
+    "Industry": "Agriculture",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-01 21:39"
   }
 ]

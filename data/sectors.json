@@ -3,7 +3,7 @@
     {
       "industry": "General",
       "companies": 966,
-      "mentions": 1640,
+      "mentions": 1641,
       "risk": {
         "Low": 852,
         "Critical": 57,
@@ -93,6 +93,15 @@
       }
     },
     {
+      "industry": "Agriculture",
+      "companies": 4,
+      "mentions": 5,
+      "risk": {
+        "Low": 3,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Aviation",
       "companies": 1,
       "mentions": 5,
@@ -126,14 +135,6 @@
       }
     },
     {
-      "industry": "Agriculture",
-      "companies": 3,
-      "mentions": 4,
-      "risk": {
-        "Low": 3
-      }
-    },
-    {
       "industry": "Fintech",
       "companies": 2,
       "mentions": 4,
@@ -156,6 +157,14 @@
       "mentions": 3,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare",
+      "companies": 2,
+      "mentions": 3,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -415,5 +424,5 @@
       }
     }
   ],
-  "generated": "2026-10-01 18:44:47"
+  "generated": "2026-10-01 21:40:35"
 }

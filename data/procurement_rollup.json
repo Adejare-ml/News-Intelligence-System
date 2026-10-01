@@ -28,8 +28,8 @@
     },
     {
       "name": "Akwa Ibom State Government",
-      "contracts": 4,
-      "undisclosed": 1,
+      "contracts": 5,
+      "undisclosed": 2,
       "totals": {
         "NGN": 376630000000.0
       }
@@ -538,8 +538,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 85,
-      "undisclosed": 54,
+      "contracts": 86,
+      "undisclosed": 55,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -916,5 +916,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-01 18:44:47"
+  "generated": "2026-10-01 21:40:35"
 }
