@@ -1478,5 +1478,35 @@
     "Date": "2026-10-01",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Ogun State Government",
+    "Contractor": "NNPCL",
+    "Amount": "$7 Billion",
+    "Project": "Revival of Olokola project and development of port and marine infrastructure",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-10-01",
+    "Amount Value": 7000000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "NIGCOMSAT Ltd",
+    "Contractor": "Thales Alenia Space",
+    "Amount": "None",
+    "Project": "Development and construction of NigComSat-2A geostationary telecommunications satellite",
+    "Source": "The Punch",
+    "Date": "2026-10-01",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Nigerian Maritime Administration and Safety Agency",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Installation of body cameras on enforcement officers during vessel boarding",
+    "Source": "tribuneonlineng",
+    "Date": "2026-10-01",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]

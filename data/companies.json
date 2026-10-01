@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 49,
-    "Last Seen": "2026-09-30 21:20",
+    "Mention Count": 51,
+    "Last Seen": "2026-10-01 14:11",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -8598,5 +8598,21 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": "2026-09-30 21:20"
+  },
+  {
+    "Company": "Ogun State Liquefied Natural Gas (OKLNG)",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-01 14:11",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-01 14:11"
+  },
+  {
+    "Company": "Thales Alenia Space",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-01 14:13",
+    "Industry": "Aerospace & Defense",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-01 14:13"
   }
 ]

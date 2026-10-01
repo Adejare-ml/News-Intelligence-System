@@ -63,6 +63,31 @@
       ]
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 32,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 21.2,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 15,
+          "avg_risk": 31.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "total_mentions": 29,
@@ -90,31 +115,6 @@
           "mentions": 9,
           "avg_risk": 37.8,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 29,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 21.2,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 12,
-          "avg_risk": 27.5,
-          "max_risk": 40
         }
       ]
     },
@@ -169,6 +169,31 @@
       ]
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "total_mentions": 10,
@@ -194,26 +219,26 @@
       ]
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 8,
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 45
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         },
         {
           "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 5,
+          "avg_risk": 26.0,
+          "max_risk": 35
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
+          "mentions": 3,
+          "avg_risk": 33.3,
           "max_risk": 40
         }
       ]
@@ -276,27 +301,27 @@
       ]
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
         },
         {
           "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 26.0,
-          "max_risk": 35
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         },
         {
           "week": "2026-09-28",
           "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -341,25 +366,6 @@
           "mentions": 6,
           "avg_risk": 63.3,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -782,6 +788,25 @@
       ]
     },
     {
+      "key": "nigcomsat",
+      "label": "NIGCOMSAT Ltd",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 3,
@@ -1084,19 +1109,6 @@
           "mentions": 2,
           "avg_risk": 65.0,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "nigcomsat",
-      "label": "NIGCOMSAT",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -3612,6 +3624,19 @@
       ]
     },
     {
+      "key": "ogun state liquefied natural gas oklng",
+      "label": "Ogun State Liquefied Natural Gas (OKLNG)",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "ogun osun river basin development authority",
       "label": "Ogun-Osun River Basin Development Authority",
       "total_mentions": 1,
@@ -4054,6 +4079,19 @@
       ]
     },
     {
+      "key": "thales alenia space",
+      "label": "Thales Alenia Space",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "theodore",
       "label": "Theodore",
       "total_mentions": 1,
@@ -4275,5 +4313,5 @@
       ]
     }
   ],
-  "generated": "2026-10-01 01:57:53"
+  "generated": "2026-10-01 14:15:27"
 }

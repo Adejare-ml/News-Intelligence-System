@@ -180,10 +180,10 @@
     },
     {
       "name": "Ogun State Government",
-      "contracts": 5,
+      "contracts": 6,
       "undisclosed": 1,
       "totals": {
-        "USD": 28000000000.0
+        "USD": 35000000000.0
       }
     },
     {
@@ -240,6 +240,12 @@
     },
     {
       "name": "Nigerian Army",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Maritime Administration and Safety Agency",
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
@@ -383,6 +389,12 @@
       "totals": {}
     },
     {
+      "name": "NIGCOMSAT Ltd",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "NIQS",
       "contracts": 1,
       "undisclosed": 1,
@@ -473,12 +485,6 @@
       "totals": {}
     },
     {
-      "name": "Nigerian Maritime Administration and Safety Agency",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "Nigerian Ports Authority",
       "contracts": 1,
       "undisclosed": 1,
@@ -532,8 +538,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 84,
-      "undisclosed": 53,
+      "contracts": 85,
+      "undisclosed": 54,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -764,6 +770,14 @@
       }
     },
     {
+      "name": "NNPCL",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 7000000000.0
+      }
+    },
+    {
       "name": "Nigerian National Petroleum Company Limited",
       "contracts": 1,
       "undisclosed": 0,
@@ -842,6 +856,12 @@
       "totals": {}
     },
     {
+      "name": "Thales Alenia Space",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "UK Government (Financing)",
       "contracts": 1,
       "undisclosed": 0,
@@ -896,5 +916,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-01 01:57:53"
+  "generated": "2026-10-01 14:15:27"
 }
