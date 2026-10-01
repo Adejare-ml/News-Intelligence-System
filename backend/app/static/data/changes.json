@@ -1,25 +1,28 @@
 {
   "new_companies": [
-    "OGLNG"
+    "PLSI",
+    "PharmAccess",
+    "Sunbeth"
   ],
-  "new_people": [],
-  "psc_added": [],
-  "psc_removed": [],
-  "psc_changed": [],
-  "new_high_risk": [
+  "new_people": [
+    "Omosehin"
+  ],
+  "psc_added": [
     {
-      "title": "Wike\u2019s son denies $2.1m land deal, alleges forgery",
-      "url": "https://punchng.com/wikes-son-denies-2-1m-land-deal-alleges-forgery/",
-      "risk": 75.0
+      "person": "Sunbeth",
+      "company": "Livestock Feeds Business"
     }
   ],
+  "psc_removed": [],
+  "psc_changed": [],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
-    "psc_added": 0,
+    "new_companies": 3,
+    "new_people": 1,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-10-01 18:44:41"
+  "generated": "2026-10-01 21:40:27"
 }

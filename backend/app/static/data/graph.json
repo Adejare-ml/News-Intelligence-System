@@ -151,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
       "type": "agency",
@@ -171,6 +177,18 @@
     {
       "id": "f37de2d93da2",
       "label": "FCT High Court",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "84927e6cf7c4",
+      "label": "Nigerian Institute of Industrial Research",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d10f0fd05d5d",
+      "label": "Nigeria Centre for Disease Control",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "84b6d6cbf896",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e5e05b704829",
-      "label": "Office of the Auditor-General for the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2ac0ab837500",
-      "label": "National Power Training Institute of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
@@ -268,6 +268,12 @@
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "53bc227250d6",
+      "label": "Omosehin",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -463,16 +469,16 @@
       "risk": "Low"
     },
     {
-      "id": "552d843a0fa2",
-      "label": "Abdularasheed Maina",
-      "type": "person",
-      "risk": "Low"
+      "id": "763ad8d1cb39",
+      "label": "Sunbeth",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "d297cca8ca60",
-      "label": "Presidential Task Force on Pension Reforms",
+      "id": "71399a9ad4ea",
+      "label": "Livestock Feeds Business",
       "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "77c793dd24f7",
@@ -613,6 +619,12 @@
       "risk": "Low"
     },
     {
+      "id": "84b6d6cbf896",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "e6f87275c6e8",
       "label": "CGC Nigeria Limited",
       "type": "company",
@@ -677,12 +689,6 @@
       "label": "Lagos State Security Trust Fund",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "124923cf0855",
-      "label": "DP World",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -703,6 +709,12 @@
       "from": "e8c816b2230d",
       "to": "334c4a4c42fd",
       "label": "Appointed as None"
+    },
+    {
+      "id": "d65f09338e60",
+      "from": "53bc227250d6",
+      "to": "84927e6cf7c4",
+      "label": "Appointed as Not specified"
     },
     {
       "id": "4332aec7c912",
@@ -831,10 +843,10 @@
       "label": "Appointed as Former Chairman"
     },
     {
-      "id": "d0d310abc33f",
-      "from": "552d843a0fa2",
-      "to": "d297cca8ca60",
-      "label": "Appointed as Former Chairman"
+      "id": "65d32072e59e",
+      "from": "763ad8d1cb39",
+      "to": "71399a9ad4ea",
+      "label": "PSC: 73.29%"
     },
     {
       "id": "f5e961dc48f7",
@@ -919,6 +931,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "f8428f09d5a7",
+      "from": "334c4a4c42fd",
+      "to": "5a98eb23f6f5",
+      "label": "Contract Awardee"
     },
     {
       "id": "8897356bec22",
@@ -1008,12 +1026,6 @@
       "id": "98312dbb3d94",
       "from": "334c4a4c42fd",
       "to": "fa6c485df0cf",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c70b2a3f1d73",
-      "from": "124923cf0855",
-      "to": "7dc08a8ebfaa",
       "label": "Contract Awardee"
     }
   ]

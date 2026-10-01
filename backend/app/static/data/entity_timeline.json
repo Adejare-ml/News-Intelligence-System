@@ -401,6 +401,37 @@
       ]
     },
     {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar",
       "total_mentions": 5,
@@ -587,31 +618,6 @@
           "mentions": 3,
           "avg_risk": 48.3,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2486,6 +2492,19 @@
       ]
     },
     {
+      "key": "health facility network",
+      "label": "Health Facility Network",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "healthcap africa",
       "label": "HealthCap Africa",
       "total_mentions": 1,
@@ -3279,6 +3298,19 @@
       ]
     },
     {
+      "key": "centre for disease control",
+      "label": "Nigeria Centre for Disease Control",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "data protection commission",
       "label": "Nigeria Data Protection Commission",
       "total_mentions": 1,
@@ -3500,6 +3532,19 @@
       ]
     },
     {
+      "key": "institute of industrial research",
+      "label": "Nigerian Institute of Industrial Research",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "maritime labour council",
       "label": "Nigerian Maritime Labour Council",
       "total_mentions": 1,
@@ -3708,6 +3753,19 @@
       ]
     },
     {
+      "key": "omosehin",
+      "label": "Omosehin",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "ondo state civil service",
       "label": "Ondo State Civil Service",
       "total_mentions": 1,
@@ -3773,6 +3831,19 @@
       ]
     },
     {
+      "key": "plsi",
+      "label": "PLSI",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "pasuma",
       "label": "Pasuma",
       "total_mentions": 1,
@@ -3808,6 +3879,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "pharmaccess",
+      "label": "PharmAccess",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -4046,6 +4130,19 @@
       ]
     },
     {
+      "key": "sunbeth",
+      "label": "Sunbeth",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "sunrise energy",
       "label": "Sunrise Energy",
       "total_mentions": 1,
@@ -4150,6 +4247,19 @@
       ]
     },
     {
+      "key": "uac",
+      "label": "UAC",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "unicef",
       "label": "UNICEF",
       "total_mentions": 1,
@@ -4239,111 +4349,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "unknown",
-      "label": "Unknown",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "unnamed commissioner",
-      "label": "Unnamed Commissioner",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "unnamed liberian university",
-      "label": "Unnamed Liberian University",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "unnamed",
-      "label": "Unnamed Nigerian",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "william ruto",
-      "label": "William Ruto",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "world bank",
-      "label": "World Bank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "zacch adedeji",
-      "label": "Zacch Adedeji",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "indrive",
-      "label": "inDrive",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-01 18:44:47"
+  "generated": "2026-10-01 21:40:35"
 }

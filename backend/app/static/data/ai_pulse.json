@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-01 18:44:44",
+  "generated": "2026-10-01 21:40:31",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4805,
+      "likes": 4839,
       "downloads": 0
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 1194,
+      "likes": 1217,
       "downloads": 31584
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2676,
+      "likes": 2697,
       "downloads": 1303476
-    },
-    {
-      "id": "Contrastive-LM/CLM-v0.1-8B",
-      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "task": "text-ranking",
-      "likes": 613,
-      "downloads": 2720
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2761,
+      "likes": 2780,
       "downloads": 76938
+    },
+    {
+      "id": "Contrastive-LM/CLM-v0.1-8B",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "task": "text-ranking",
+      "likes": 623,
+      "downloads": 2720
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 5821,
+      "likes": 5841,
       "downloads": 1588619
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16707,
+      "likes": 16720,
       "downloads": 6950834
     },
     {
       "id": "SupersonicLabs/Julia-1",
       "url": "https://huggingface.co/SupersonicLabs/Julia-1",
       "task": "text-classification",
-      "likes": 333,
+      "likes": 339,
       "downloads": 2556
     }
   ],
   "papers": [
     {
+      "title": "Training LLM Judges from Language Feedback via Position-Selective Self-Distillation",
+      "url": "https://huggingface.co/papers/2609.38792",
+      "upvotes": 2
+    },
+    {
+      "title": "Aligning One-Step Generative Models with Reward-Weighted Transport Distillation",
+      "url": "https://huggingface.co/papers/2609.30840",
+      "upvotes": 2
+    },
+    {
       "title": "Tacit-TTS: From Autoregressive Decoding to Masked Prediction for Efficient Transcript-Free Voice Cloning",
       "url": "https://huggingface.co/papers/2609.38658",
-      "upvotes": 4
+      "upvotes": 7
     },
     {
       "title": "BiasReducer: Adaptive Bias Mitigation for Reward Models",
       "url": "https://huggingface.co/papers/2609.32720",
-      "upvotes": 10
+      "upvotes": 13
     },
     {
       "title": "BIABench: Evaluating AI agents on real-world bioimage analysis tasks",
       "url": "https://huggingface.co/papers/2609.34274",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "DAGent: Evaluate-then-Grow Planning for Deep Research Agents",
       "url": "https://huggingface.co/papers/2609.39154",
-      "upvotes": 2
-    },
-    {
-      "title": "MILO: Automated Harness Discovery via Orchestrated Multi-Agent Evolution",
-      "url": "https://huggingface.co/papers/2609.38349",
-      "upvotes": 6
-    },
-    {
-      "title": "Prompted Identity Degrades Cooperation in Multi-Agent LLM Systems",
-      "url": "https://huggingface.co/papers/2609.35928",
-      "upvotes": 1
+      "upvotes": 3
     }
   ]
 }
