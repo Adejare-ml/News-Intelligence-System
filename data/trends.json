@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 149,
-  "previous_articles": 177,
+  "recent_articles": 146,
+  "previous_articles": 180,
   "rising": [
     {
       "term": "guardian",
-      "recent": 53,
+      "recent": 52,
       "previous": 40,
-      "change": 13
+      "change": 12
     },
     {
       "term": "court",
@@ -16,15 +16,15 @@
       "change": 9
     },
     {
-      "term": "nnpc",
-      "recent": 15,
-      "previous": 8,
+      "term": "ogun",
+      "recent": 8,
+      "previous": 1,
       "change": 7
     },
     {
-      "term": "ogun",
-      "recent": 7,
-      "previous": 1,
+      "term": "nnpc",
+      "recent": 15,
+      "previous": 9,
       "change": 6
     },
     {
@@ -32,6 +32,12 @@
       "recent": 6,
       "previous": 0,
       "change": 6
+    },
+    {
+      "term": "targets",
+      "recent": 6,
+      "previous": 1,
+      "change": 5
     },
     {
       "term": "profit",
@@ -52,13 +58,7 @@
       "change": 4
     },
     {
-      "term": "targets",
-      "recent": 6,
-      "previous": 2,
-      "change": 4
-    },
-    {
-      "term": "serap",
+      "term": "nnpcl",
       "recent": 5,
       "previous": 1,
       "change": 4
@@ -66,21 +66,51 @@
   ],
   "falling": [
     {
+      "term": "newspapers",
+      "recent": 21,
+      "previous": 31,
+      "change": -10
+    },
+    {
+      "term": "punch",
+      "recent": 21,
+      "previous": 31,
+      "change": -10
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 21,
+      "previous": 31,
+      "change": -10
+    },
+    {
+      "term": "lagos",
+      "recent": 3,
+      "previous": 12,
+      "change": -9
+    },
+    {
+      "term": "efcc",
+      "recent": 4,
+      "previous": 12,
+      "change": -8
+    },
+    {
       "term": "health",
       "recent": 1,
       "previous": 9,
       "change": -8
     },
     {
-      "term": "efcc",
-      "recent": 5,
-      "previous": 12,
-      "change": -7
-    },
-    {
       "term": "mambilla",
       "recent": 4,
       "previous": 11,
+      "change": -7
+    },
+    {
+      "term": "urges",
+      "recent": 2,
+      "previous": 9,
       "change": -7
     },
     {
@@ -90,64 +120,34 @@
       "change": -7
     },
     {
-      "term": "group",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
-    {
       "term": "dangote",
-      "recent": 5,
-      "previous": 10,
-      "change": -5
-    },
-    {
-      "term": "lagos",
-      "recent": 5,
-      "previous": 10,
-      "change": -5
-    },
-    {
-      "term": "investment",
       "recent": 4,
-      "previous": 9,
-      "change": -5
-    },
-    {
-      "term": "project",
-      "recent": 4,
-      "previous": 9,
-      "change": -5
-    },
-    {
-      "term": "urges",
-      "recent": 3,
-      "previous": 8,
-      "change": -5
+      "previous": 10,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 98,
-      "previous": 112
+      "recent": 97,
+      "previous": 113
     },
     {
       "category": "Legal",
       "recent": 25,
-      "previous": 30
+      "previous": 31
     },
     {
       "category": "Company",
-      "recent": 23,
+      "recent": 22,
       "previous": 35
     },
     {
       "category": "Other",
-      "recent": 3,
-      "previous": 0
+      "recent": 2,
+      "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-10-01 14:15:22"
+  "generated": "2026-10-01 18:44:44"
 }

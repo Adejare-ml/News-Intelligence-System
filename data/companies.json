@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 51,
+    "Mention Count": 52,
     "Last Seen": "2026-10-01 14:11",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
@@ -8614,5 +8614,13 @@
     "Industry": "Aerospace & Defense",
     "Risk Level": "Low",
     "First Seen": "2026-10-01 14:13"
+  },
+  {
+    "Company": "OGLNG",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-01 18:41",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-01 18:41"
   }
 ]

@@ -32,6 +32,31 @@
       ]
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 34,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 21.2,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 17,
+          "avg_risk": 31.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "total_mentions": 33,
@@ -59,31 +84,6 @@
           "mentions": 2,
           "avg_risk": 30.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 32,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 21.2,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 15,
-          "avg_risk": 31.0,
-          "max_risk": 65
         }
       ]
     },
@@ -221,7 +221,7 @@
     {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-14",
@@ -237,8 +237,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 33.3,
+          "mentions": 4,
+          "avg_risk": 32.5,
           "max_risk": 40
         }
       ]
@@ -908,6 +908,50 @@
       ]
     },
     {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "nyesom wike",
+      "label": "Nyesom Wike",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "ojulari",
       "label": "Ojulari",
       "total_mentions": 3,
@@ -1302,44 +1346,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "nyesom wike",
-      "label": "Nyesom Wike",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -2190,6 +2196,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "fct high court",
+      "label": "FCT High Court",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -3546,6 +3565,19 @@
       ]
     },
     {
+      "key": "oglng",
+      "label": "OGLNG",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "oklng",
       "label": "OKLNG",
       "total_mentions": 1,
@@ -4313,5 +4345,5 @@
       ]
     }
   ],
-  "generated": "2026-10-01 14:15:27"
+  "generated": "2026-10-01 18:44:47"
 }
