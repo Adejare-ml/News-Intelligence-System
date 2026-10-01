@@ -127,8 +127,38 @@
       "risk": "Low"
     },
     {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "beb91054dc85",
       "label": "Federal Capital Territory Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "be5672593de6",
+      "label": "NIGCOMSAT Ltd",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,12 +187,6 @@
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
       "type": "agency",
@@ -177,12 +201,6 @@
     {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -219,24 +237,6 @@
     {
       "id": "bbdd3227478f",
       "label": "Niger Delta Development Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "631735ae7f74",
-      "label": "Nigeria Police Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7d0b46bbd4a7",
-      "label": "World Bank",
       "type": "agency",
       "risk": "Low"
     },
@@ -601,6 +601,12 @@
       "risk": "Medium"
     },
     {
+      "id": "9fa2cb1cf1f4",
+      "label": "Thales Alenia Space",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "e6f87275c6e8",
       "label": "CGC Nigeria Limited",
       "type": "company",
@@ -670,18 +676,6 @@
       "id": "124923cf0855",
       "label": "DP World",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "09b648436789",
-      "label": "NIGCOMSAT",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "be09acc08e52",
-      "label": "Independent Monitoring and Procurement Inspectorate",
-      "type": "agency",
       "risk": "Low"
     }
   ],
@@ -921,6 +915,24 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "8897356bec22",
+      "from": "334c4a4c42fd",
+      "to": "387e8dea8fb6",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "c0492c0dc6c4",
+      "from": "9fa2cb1cf1f4",
+      "to": "be5672593de6",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "2478dba133f9",
+      "from": "de3af1814043",
+      "to": "7dc08a8ebfaa",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "28911e9fe8a3",
       "from": "334c4a4c42fd",
       "to": "beb91054dc85",
@@ -996,18 +1008,6 @@
       "id": "c70b2a3f1d73",
       "from": "124923cf0855",
       "to": "7dc08a8ebfaa",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "2e196c488907",
-      "from": "334c4a4c42fd",
-      "to": "09b648436789",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "8e5bf216553a",
-      "from": "334c4a4c42fd",
-      "to": "be09acc08e52",
       "label": "Contract Awardee"
     }
   ]

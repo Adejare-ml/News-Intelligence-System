@@ -13,12 +13,12 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 23,
-      "mentions": 130,
+      "companies": 24,
+      "mentions": 133,
       "risk": {
         "Critical": 1,
         "Medium": 4,
-        "Low": 17,
+        "Low": 18,
         "High": 1
       }
     },
@@ -271,6 +271,14 @@
       }
     },
     {
+      "industry": "Aerospace & Defense",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Civil Society",
       "companies": 1,
       "mentions": 1,
@@ -407,5 +415,5 @@
       }
     }
   ],
-  "generated": "2026-10-01 01:57:53"
+  "generated": "2026-10-01 14:15:27"
 }

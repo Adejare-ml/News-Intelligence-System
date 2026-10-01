@@ -10,31 +10,31 @@
       "previous_mentions": 1
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 25.0,
-      "previous_avg": 53.8,
-      "delta": -28.8,
-      "recent_mentions": 2,
-      "previous_mentions": 4
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 38.2,
-      "previous_avg": 15.8,
-      "delta": 22.4,
+      "previous_avg": 15.9,
+      "delta": 22.3,
       "recent_mentions": 14,
-      "previous_mentions": 12
+      "previous_mentions": 11
     },
     {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "recent_avg": 30.0,
+      "recent_avg": 31.4,
       "previous_avg": 10.0,
-      "delta": 20.0,
-      "recent_mentions": 5,
+      "delta": 21.4,
+      "recent_mentions": 7,
       "previous_mentions": 2
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 37.0,
+      "previous_avg": 58.3,
+      "delta": -21.3,
+      "recent_mentions": 5,
+      "previous_mentions": 12
     },
     {
       "key": "abubakar malami",
@@ -55,20 +55,11 @@
       "previous_mentions": 2
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 25.0,
-      "previous_avg": 37.5,
-      "delta": -12.5,
-      "recent_mentions": 4,
-      "previous_mentions": 4
-    },
-    {
-      "key": "maina",
-      "label": "Maina",
-      "recent_avg": 72.5,
-      "previous_avg": 60.0,
-      "delta": 12.5,
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "recent_avg": 20.0,
+      "previous_avg": 10.0,
+      "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
     },
@@ -93,11 +84,29 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 25.6,
+      "recent_avg": 28.7,
       "previous_avg": 20.0,
-      "delta": 5.6,
-      "recent_mentions": 16,
+      "delta": 8.7,
+      "recent_mentions": 19,
       "previous_mentions": 8
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 25.0,
+      "previous_avg": 33.3,
+      "delta": -8.3,
+      "recent_mentions": 2,
+      "previous_mentions": 6
+    },
+    {
+      "key": "nigcomsat",
+      "label": "NIGCOMSAT Ltd",
+      "recent_avg": 37.5,
+      "previous_avg": 45.0,
+      "delta": -7.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "lagos state government",
@@ -109,51 +118,6 @@
       "previous_mentions": 6
     },
     {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 25.0,
-      "previous_avg": 28.8,
-      "delta": -3.8,
-      "recent_mentions": 4,
-      "previous_mentions": 4
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 28.3,
-      "delta": -3.3,
-      "recent_mentions": 4,
-      "previous_mentions": 3
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 26.8,
-      "previous_avg": 23.8,
-      "delta": 3.0,
-      "recent_mentions": 17,
-      "previous_mentions": 16
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 46.2,
-      "previous_avg": 48.8,
-      "delta": -2.6,
-      "recent_mentions": 8,
-      "previous_mentions": 12
-    },
-    {
       "key": "federal airports authority of",
       "label": "Federal Airports Authority of Nigeria",
       "recent_avg": 17.5,
@@ -161,6 +125,33 @@
       "delta": -2.5,
       "recent_mentions": 2,
       "previous_mentions": 2
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 24.0,
+      "previous_avg": 26.2,
+      "delta": -2.2,
+      "recent_mentions": 5,
+      "previous_mentions": 4
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 26.3,
+      "previous_avg": 24.4,
+      "delta": 1.9,
+      "recent_mentions": 15,
+      "previous_mentions": 18
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 26.7,
+      "previous_avg": 27.0,
+      "delta": -0.3,
+      "recent_mentions": 3,
+      "previous_mentions": 5
     },
     {
       "key": "mambilla hydropower project",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission",
+      "recent_avg": 45.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-01 01:57:53"
+  "generated": "2026-10-01 14:15:27"
 }
