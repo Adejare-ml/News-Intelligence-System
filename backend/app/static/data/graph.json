@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
@@ -159,6 +165,12 @@
     {
       "id": "be5672593de6",
       "label": "NIGCOMSAT Ltd",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f37de2d93da2",
+      "label": "FCT High Court",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "4364a96a5640",
-      "label": "Unnamed Liberian University",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bbdd3227478f",
-      "label": "Niger Delta Development Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
@@ -250,6 +250,12 @@
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "56a1ac14d764",
+      "label": "Nyesom Wike",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -265,15 +271,15 @@
       "risk": "Low"
     },
     {
-      "id": "56a1ac14d764",
-      "label": "Nyesom Wike",
+      "id": "eb019677d36e",
+      "label": "Unnamed Nigerian",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "eb019677d36e",
-      "label": "Unnamed Nigerian",
-      "type": "person",
+      "id": "4364a96a5640",
+      "label": "Unnamed Liberian University",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -687,16 +693,16 @@
       "label": "Appointed as Governor"
     },
     {
+      "id": "4f87337f3e1c",
+      "from": "56a1ac14d764",
+      "to": "beb91054dc85",
+      "label": "Appointed as Minister of the Federal Capital Territory"
+    },
+    {
       "id": "78a1b64c4878",
       "from": "e8c816b2230d",
       "to": "334c4a4c42fd",
       "label": "Appointed as None"
-    },
-    {
-      "id": "4f87337f3e1c",
-      "from": "56a1ac14d764",
-      "to": "beb91054dc85",
-      "label": "Appointed as FCT Minister"
     },
     {
       "id": "4332aec7c912",

@@ -16,23 +16,23 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1252,
-      "published": 655,
-      "filtered": 597,
+      "total": 1255,
+      "published": 656,
+      "filtered": 599,
       "accept_rate": 52,
       "avg_risk": 31.3,
       "engines": {
         "unknown": 440,
-        "ollama": 211,
+        "ollama": 212,
         "nvidia": 4
       },
       "last_seen": "2026-10-01"
     },
     {
       "source": "Punch Newspapers",
-      "total": 765,
+      "total": 766,
       "published": 338,
-      "filtered": 427,
+      "filtered": 428,
       "accept_rate": 44,
       "avg_risk": 26.7,
       "engines": {
@@ -44,9 +44,9 @@
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 489,
+      "total": 492,
       "published": 157,
-      "filtered": 332,
+      "filtered": 335,
       "accept_rate": 32,
       "avg_risk": 27.6,
       "engines": {
@@ -58,15 +58,15 @@
     },
     {
       "source": "The Punch",
-      "total": 483,
-      "published": 281,
-      "filtered": 202,
+      "total": 485,
+      "published": 282,
+      "filtered": 203,
       "accept_rate": 58,
-      "avg_risk": 32.9,
+      "avg_risk": 33.1,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 171
+        "ollama": 172
       },
       "last_seen": "2026-09-30"
     },
@@ -167,16 +167,16 @@
     },
     {
       "source": "vanguardngr",
-      "total": 134,
+      "total": 135,
       "published": 27,
-      "filtered": 107,
+      "filtered": 108,
       "accept_rate": 20,
       "avg_risk": 26.1,
       "engines": {
         "unknown": 19,
         "ollama": 8
       },
-      "last_seen": "2026-09-30"
+      "last_seen": "2026-10-01"
     },
     {
       "source": "independentng",
@@ -232,6 +232,18 @@
       "last_seen": "2026-09-30"
     },
     {
+      "source": "guardian.ng",
+      "total": 38,
+      "published": 11,
+      "filtered": 27,
+      "accept_rate": 29,
+      "avg_risk": 37.3,
+      "engines": {
+        "ollama": 11
+      },
+      "last_seen": "2026-10-01"
+    },
+    {
       "source": "blueprint",
       "total": 36,
       "published": 12,
@@ -266,18 +278,6 @@
       "avg_risk": 24.0,
       "engines": {
         "unknown": 4
-      },
-      "last_seen": "2026-09-30"
-    },
-    {
-      "source": "guardian.ng",
-      "total": 31,
-      "published": 10,
-      "filtered": 21,
-      "accept_rate": 32,
-      "avg_risk": 39.0,
-      "engines": {
-        "ollama": 10
       },
       "last_seen": "2026-09-30"
     },
@@ -358,6 +358,19 @@
       "last_seen": "2026-09-25"
     },
     {
+      "source": "dailytrust",
+      "total": 14,
+      "published": 8,
+      "filtered": 6,
+      "accept_rate": 57,
+      "avg_risk": 26.0,
+      "engines": {
+        "unknown": 7,
+        "ollama": 1
+      },
+      "last_seen": "2026-10-01"
+    },
+    {
       "source": "converseer",
       "total": 12,
       "published": 5,
@@ -368,18 +381,6 @@
         "unknown": 5
       },
       "last_seen": "2026-09-22"
-    },
-    {
-      "source": "dailytrust",
-      "total": 12,
-      "published": 7,
-      "filtered": 5,
-      "accept_rate": 58,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 7
-      },
-      "last_seen": "2026-09-11"
     },
     {
       "source": "nairametrics",
@@ -786,6 +787,16 @@
       "last_seen": "2026-09-25"
     },
     {
+      "source": "cyberera_ng",
+      "total": 3,
+      "published": 0,
+      "filtered": 3,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-10-01"
+    },
+    {
       "source": "library.cbn.gov.ng",
       "total": 3,
       "published": 0,
@@ -1045,16 +1056,6 @@
       "avg_risk": null,
       "engines": {},
       "last_seen": "2026-08-23"
-    },
-    {
-      "source": "cyberera_ng",
-      "total": 2,
-      "published": 0,
-      "filtered": 2,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-09-08"
     },
     {
       "source": "eBid Nigeria",
@@ -2004,5 +2005,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-01 14:15:27"
+  "generated": "2026-10-01 18:44:47"
 }
