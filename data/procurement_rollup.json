@@ -213,6 +213,12 @@
       "totals": {}
     },
     {
+      "name": "Federal Capital Territory Administration",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "Government of Nigeria",
       "contracts": 2,
       "undisclosed": 1,
@@ -314,12 +320,6 @@
     },
     {
       "name": "Federal Airports Authority of Nigeria",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
-      "name": "Federal Capital Territory Administration",
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
@@ -532,8 +532,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 83,
-      "undisclosed": 52,
+      "contracts": 84,
+      "undisclosed": 53,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -896,5 +896,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-09-30 21:23:01"
+  "generated": "2026-10-01 01:57:53"
 }
