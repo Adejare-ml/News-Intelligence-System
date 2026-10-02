@@ -10,13 +10,22 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 30.0,
+      "previous_avg": 57.8,
+      "delta": -27.8,
+      "recent_mentions": 3,
+      "previous_mentions": 9
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 39.6,
-      "previous_avg": 16.2,
-      "delta": 23.4,
-      "recent_mentions": 13,
-      "previous_mentions": 12
+      "recent_avg": 38.2,
+      "previous_avg": 16.8,
+      "delta": 21.4,
+      "recent_mentions": 14,
+      "previous_mentions": 11
     },
     {
       "key": "abubakar malami",
@@ -25,16 +34,7 @@
       "previous_avg": 85.0,
       "delta": -20.0,
       "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 38.8,
-      "previous_avg": 56.9,
-      "delta": -18.1,
-      "recent_mentions": 4,
-      "previous_mentions": 8
+      "previous_mentions": 1
     },
     {
       "key": "nyesom wike",
@@ -84,29 +84,29 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 29.8,
+      "recent_avg": 28.9,
       "previous_avg": 20.0,
-      "delta": 9.8,
-      "recent_mentions": 22,
+      "delta": 8.9,
+      "recent_mentions": 23,
       "previous_mentions": 8
-    },
-    {
-      "key": "nigcomsat",
-      "label": "NIGCOMSAT Ltd",
-      "recent_avg": 37.5,
-      "previous_avg": 45.0,
-      "delta": -7.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 28.8,
+      "recent_avg": 27.5,
       "previous_avg": 21.4,
-      "delta": 7.4,
-      "recent_mentions": 13,
+      "delta": 6.1,
+      "recent_mentions": 14,
       "previous_mentions": 14
+    },
+    {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "dp world",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-02 13:38:43"
+  "generated": "2026-10-02 18:16:03"
 }

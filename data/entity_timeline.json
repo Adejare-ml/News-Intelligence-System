@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 42,
+      "total_mentions": 43,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 11,
-          "avg_risk": 22.7,
+          "mentions": 12,
+          "avg_risk": 21.7,
           "max_risk": 45
         }
       ]
@@ -34,7 +34,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 36,
+      "total_mentions": 37,
       "points": [
         {
           "week": "2026-09-14",
@@ -50,8 +50,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 19,
-          "avg_risk": 31.3,
+          "mentions": 20,
+          "avg_risk": 30.2,
           "max_risk": 65
         }
       ]
@@ -90,7 +90,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 29,
+      "total_mentions": 30,
       "points": [
         {
           "week": "2026-09-07",
@@ -112,8 +112,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 9,
-          "avg_risk": 37.8,
+          "mentions": 10,
+          "avg_risk": 36.0,
           "max_risk": 75
         }
       ]
@@ -603,6 +603,31 @@
       ]
     },
     {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "totalenergies",
       "label": "TotalEnergies",
       "total_mentions": 4,
@@ -914,31 +939,6 @@
       ]
     },
     {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "nyesom wike",
       "label": "Nyesom Wike",
       "total_mentions": 3,
@@ -1044,6 +1044,25 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "dangote cement",
+      "label": "Dangote Cement",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -2147,19 +2166,6 @@
       ]
     },
     {
-      "key": "dangote cement",
-      "label": "Dangote Cement",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "dangote east african refinery",
       "label": "Dangote East African Refinery",
       "total_mentions": 1,
@@ -2849,6 +2855,19 @@
       ]
     },
     {
+      "key": "lafarge",
+      "label": "Lafarge",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "lagos state consumer protection agency",
       "label": "Lagos State Consumer Protection Agency",
       "total_mentions": 1,
@@ -3326,6 +3345,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "national library of",
+      "label": "National Library of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -4279,6 +4311,19 @@
       ]
     },
     {
+      "key": "swift",
+      "label": "Swift",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "tgi logistics",
       "label": "TGI Logistics",
       "total_mentions": 1,
@@ -4316,46 +4361,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "tetra tech",
-      "label": "Tetra Tech",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "thales alenia space",
-      "label": "Thales Alenia Space",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "theodore",
-      "label": "Theodore",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-02 13:38:43"
+  "generated": "2026-10-02 18:16:03"
 }
