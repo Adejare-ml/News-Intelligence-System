@@ -1,64 +1,84 @@
 {
-  "generated": "2026-10-02 18:15:59",
+  "generated": "2026-10-02 21:16:11",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4943,
+      "likes": 4983,
       "downloads": 0
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2800,
+      "likes": 2827,
       "downloads": 1376248
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 685,
+      "likes": 751,
       "downloads": 824
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 645,
+      "likes": 660,
       "downloads": 2951
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 5941,
+      "likes": 5971,
       "downloads": 1584129
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2821,
+      "likes": 2830,
       "downloads": 81738
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16773,
+      "likes": 16786,
       "downloads": 6934867
     },
     {
       "id": "SupersonicLabs/Julia-1",
       "url": "https://huggingface.co/SupersonicLabs/Julia-1",
       "task": "text-classification",
-      "likes": 362,
+      "likes": 364,
       "downloads": 2909
     }
   ],
   "papers": [
+    {
+      "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
+      "url": "https://huggingface.co/papers/2609.36435",
+      "upvotes": 0
+    },
+    {
+      "title": "Video Generation Models: A Survey of Post-Training and Alignment",
+      "url": "https://huggingface.co/papers/2610.00812",
+      "upvotes": 8
+    },
+    {
+      "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
+      "url": "https://huggingface.co/papers/2609.36388",
+      "upvotes": 2
+    },
+    {
+      "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
+      "url": "https://huggingface.co/papers/2609.36585",
+      "upvotes": 2
+    },
     {
       "title": "Honeycomb: Constant-Size Scene Memory Representation for Video World Models",
       "url": "https://huggingface.co/papers/2609.37690",
@@ -67,27 +87,7 @@
     {
       "title": "X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization",
       "url": "https://huggingface.co/papers/2609.32993",
-      "upvotes": 2
-    },
-    {
-      "title": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories",
-      "url": "https://huggingface.co/papers/2609.32810",
-      "upvotes": 4
-    },
-    {
-      "title": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
-      "url": "https://huggingface.co/papers/2610.02142",
-      "upvotes": 0
-    },
-    {
-      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
-      "url": "https://huggingface.co/papers/2610.02202",
-      "upvotes": 3
-    },
-    {
-      "title": "On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics",
-      "url": "https://huggingface.co/papers/2609.35259",
-      "upvotes": 15
+      "upvotes": 10
     }
   ]
 }

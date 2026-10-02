@@ -1,5 +1,22 @@
 [
   {
+    "ID": 7685,
+    "Time": "2026-10-01T18:37:12Z",
+    "Title": "2027 Hajj: Nigeria gets 10,000 extra slots, allocation hits 60,000",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/2027-hajj-nigeria-gets-10000-extra-slots-allocation-hits-60000/",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The National Hajj Commission of Nigeria announced that Saudi Arabia has increased Nigeria's 2027 Hajj allocation by 10,000 slots, bringing the total capacity to 60,000 pilgrims.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "National Hajj Commission of Nigeria",
+    "Filter Reason": ""
+  },
+  {
     "ID": 7673,
     "Time": "Wed, 30 Sep 2026 22:06:54 GMT",
     "Title": "How Lafarge tried to \u2018frustrate\u2019 Dangote\u2019s cement expansion in Africa \u2013 Obasanjo - Premium Times Nigeria",
@@ -1000,23 +1017,6 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigeria Customs Service|Mu\u2019azu",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 7435,
-    "Time": "Wed, 30 Sep 2026 02:50:56 GMT",
-    "Title": "Liberian varsity names Nigerian PR director - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMickFVX3lxTE9KMFJGSEpFTU12Nk50U0dfY2ZfWDczYkktRnRtTllNSVNERDJUbmR1UTdDanZ1eFJmSnQ4aS1sOVNnR3o3Q2llVFZiczc2UWdjSE81NU9EYWFRVVhELUk3U1BpVXVQWWdKMHd4T0ZOUk5Cdw?oc=5",
-    "Category": "Other",
-    "Risk Score": 10,
-    "Summary": "A Liberian university has appointed a Nigerian national as its Public Relations Director.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Appointment",
-    "Risk Level": "Low",
-    "Importance": 20,
-    "Entities": "Unnamed Liberian University|Unnamed Nigerian",
     "Filter Reason": ""
   }
 ]

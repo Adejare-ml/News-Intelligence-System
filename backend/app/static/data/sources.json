@@ -30,9 +30,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 781,
+      "total": 784,
       "published": 344,
-      "filtered": 437,
+      "filtered": 440,
       "accept_rate": 44,
       "avg_risk": 26.6,
       "engines": {
@@ -44,9 +44,9 @@
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 497,
+      "total": 498,
       "published": 157,
-      "filtered": 340,
+      "filtered": 341,
       "accept_rate": 32,
       "avg_risk": 27.6,
       "engines": {
@@ -58,23 +58,23 @@
     },
     {
       "source": "The Punch",
-      "total": 489,
-      "published": 283,
+      "total": 490,
+      "published": 284,
       "filtered": 206,
       "accept_rate": 58,
       "avg_risk": 33.0,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 173
+        "ollama": 174
       },
       "last_seen": "2026-10-01"
     },
     {
       "source": "Vanguard News",
-      "total": 279,
+      "total": 280,
       "published": 142,
-      "filtered": 137,
+      "filtered": 138,
       "accept_rate": 51,
       "avg_risk": 27.0,
       "engines": {
@@ -100,16 +100,16 @@
     },
     {
       "source": "naijaonpoint_ng",
-      "total": 182,
+      "total": 183,
       "published": 54,
-      "filtered": 128,
+      "filtered": 129,
       "accept_rate": 30,
       "avg_risk": 23.8,
       "engines": {
         "unknown": 43,
         "ollama": 11
       },
-      "last_seen": "2026-09-30"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "leadership",
@@ -167,16 +167,16 @@
     },
     {
       "source": "vanguardngr",
-      "total": 136,
+      "total": 137,
       "published": 27,
-      "filtered": 109,
+      "filtered": 110,
       "accept_rate": 20,
       "avg_risk": 26.1,
       "engines": {
         "unknown": 19,
         "ollama": 8
       },
-      "last_seen": "2026-10-01"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "independentng",
@@ -333,16 +333,16 @@
     },
     {
       "source": "premiumtimesng.com",
-      "total": 19,
+      "total": 20,
       "published": 7,
-      "filtered": 12,
-      "accept_rate": 37,
+      "filtered": 13,
+      "accept_rate": 35,
       "avg_risk": 32.3,
       "engines": {
         "unknown": 1,
         "ollama": 6
       },
-      "last_seen": "2026-09-30"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "Voice of Nigeria",
@@ -2005,5 +2005,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-02 18:16:03"
+  "generated": "2026-10-02 21:16:13"
 }
