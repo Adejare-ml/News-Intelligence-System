@@ -12,11 +12,11 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 38.2,
-      "previous_avg": 15.9,
-      "delta": 22.3,
-      "recent_mentions": 14,
-      "previous_mentions": 11
+      "recent_avg": 39.6,
+      "previous_avg": 16.2,
+      "delta": 23.4,
+      "recent_mentions": 13,
+      "previous_mentions": 12
     },
     {
       "key": "abubakar malami",
@@ -46,15 +46,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 32.5,
-      "previous_avg": 18.8,
-      "delta": 13.7,
-      "recent_mentions": 6,
-      "previous_mentions": 4
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 16.7,
@@ -73,24 +64,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 30.2,
-      "previous_avg": 20.0,
-      "delta": 10.2,
-      "recent_mentions": 21,
-      "previous_mentions": 8
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "recent_avg": 20.0,
-      "previous_avg": 10.0,
-      "delta": 10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "ojulari",
       "label": "Ojulari",
       "recent_avg": 30.0,
@@ -98,6 +71,24 @@
       "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 32.0,
+      "previous_avg": 22.0,
+      "delta": 10.0,
+      "recent_mentions": 5,
+      "previous_mentions": 5
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 29.8,
+      "previous_avg": 20.0,
+      "delta": 9.8,
+      "recent_mentions": 22,
+      "previous_mentions": 8
     },
     {
       "key": "nigcomsat",
@@ -111,11 +102,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 27.0,
-      "previous_avg": 21.8,
-      "delta": 5.2,
-      "recent_mentions": 15,
+      "recent_avg": 28.8,
+      "previous_avg": 21.4,
+      "delta": 7.4,
+      "recent_mentions": 13,
       "previous_mentions": 14
+    },
+    {
+      "key": "dp world",
+      "label": "DP World",
+      "recent_avg": 25.0,
+      "previous_avg": 30.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -127,30 +127,21 @@
       "previous_mentions": 6
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 23.3,
+      "previous_avg": 26.2,
+      "delta": -2.9,
+      "recent_mentions": 6,
+      "previous_mentions": 4
+    },
+    {
       "key": "federal airports authority of",
       "label": "Federal Airports Authority of Nigeria",
       "recent_avg": 17.5,
       "previous_avg": 20.0,
       "delta": -2.5,
       "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 24.0,
-      "previous_avg": 26.2,
-      "delta": -2.2,
-      "recent_mentions": 5,
-      "previous_mentions": 4
-    },
-    {
-      "key": "dp world",
-      "label": "DP World",
-      "recent_avg": 28.3,
-      "previous_avg": 27.5,
-      "delta": 0.8,
-      "recent_mentions": 3,
       "previous_mentions": 2
     },
     {
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "federal capital territory administration",
+      "label": "Federal Capital Territory Administration",
+      "recent_avg": 33.8,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 4,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-02 02:09:36"
+  "generated": "2026-10-02 13:38:43"
 }

@@ -1,17 +1,26 @@
 {
-  "new_companies": [],
-  "new_people": [],
+  "new_companies": [
+    "AGHAN",
+    "AGORA Fellowship",
+    "Airtel Money",
+    "SAHCO",
+    "XEJet"
+  ],
+  "new_people": [
+    "Matebese",
+    "Rotimi Amaechi"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
+    "new_companies": 5,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-02 02:09:25"
+  "generated": "2026-10-02 13:38:09"
 }

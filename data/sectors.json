@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 25,
-      "mentions": 136,
+      "mentions": 137,
       "risk": {
         "Critical": 1,
         "Medium": 4,
@@ -78,10 +78,19 @@
     },
     {
       "industry": "Telecoms",
-      "companies": 4,
+      "companies": 5,
+      "mentions": 8,
+      "risk": {
+        "Low": 5
+      }
+    },
+    {
+      "industry": "Aviation",
+      "companies": 3,
       "mentions": 7,
       "risk": {
-        "Low": 4
+        "Low": 1,
+        "Medium": 2
       }
     },
     {
@@ -99,14 +108,6 @@
       "risk": {
         "Low": 3,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Aviation",
-      "companies": 1,
-      "mentions": 5,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -288,6 +289,14 @@
       }
     },
     {
+      "industry": "Aviation Services",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Civil Society",
       "companies": 1,
       "mentions": 1,
@@ -422,7 +431,15 @@
       "risk": {
         "Medium": 1
       }
+    },
+    {
+      "industry": "Venture Capital / Education",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
     }
   ],
-  "generated": "2026-10-02 02:09:36"
+  "generated": "2026-10-02 13:38:43"
 }
