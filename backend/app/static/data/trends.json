@@ -1,8 +1,14 @@
 {
   "window_days": 7,
-  "recent_articles": 148,
-  "previous_articles": 168,
+  "recent_articles": 153,
+  "previous_articles": 163,
   "rising": [
+    {
+      "term": "guardian",
+      "recent": 52,
+      "previous": 43,
+      "change": 9
+    },
     {
       "term": "court",
       "recent": 14,
@@ -10,22 +16,16 @@
       "change": 9
     },
     {
-      "term": "guardian",
-      "recent": 52,
-      "previous": 44,
-      "change": 8
-    },
-    {
       "term": "nnpc",
-      "recent": 15,
+      "recent": 16,
       "previous": 9,
-      "change": 6
+      "change": 7
     },
     {
       "term": "targets",
-      "recent": 6,
+      "recent": 8,
       "previous": 1,
-      "change": 5
+      "change": 7
     },
     {
       "term": "profit",
@@ -67,9 +67,21 @@
   "falling": [
     {
       "term": "lagos",
-      "recent": 4,
-      "previous": 11,
-      "change": -7
+      "recent": 3,
+      "previous": 12,
+      "change": -9
+    },
+    {
+      "term": "dangote",
+      "recent": 3,
+      "previous": 9,
+      "change": -6
+    },
+    {
+      "term": "policy",
+      "recent": 2,
+      "previous": 8,
+      "change": -6
     },
     {
       "term": "icc",
@@ -84,62 +96,50 @@
       "change": -6
     },
     {
-      "term": "newspapers",
-      "recent": 22,
-      "previous": 27,
-      "change": -5
-    },
-    {
-      "term": "punch",
-      "recent": 22,
-      "previous": 27,
-      "change": -5
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 22,
-      "previous": 27,
-      "change": -5
-    },
-    {
-      "term": "dangote",
-      "recent": 4,
-      "previous": 9,
-      "change": -5
-    },
-    {
       "term": "mambilla",
       "recent": 3,
       "previous": 8,
       "change": -5
     },
     {
-      "term": "policy",
-      "recent": 2,
-      "previous": 7,
+      "term": "gas",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     },
     {
-      "term": "dangote refinery",
+      "term": "rate",
       "recent": 1,
       "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "unveils",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "declares",
+      "recent": 0,
+      "previous": 5,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 97,
-      "previous": 112
+      "recent": 99,
+      "previous": 108
     },
     {
       "category": "Legal",
-      "recent": 26,
-      "previous": 24
+      "recent": 27,
+      "previous": 23
     },
     {
       "category": "Company",
-      "recent": 23,
+      "recent": 25,
       "previous": 31
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-02 02:09:29"
+  "generated": "2026-10-02 13:38:41"
 }

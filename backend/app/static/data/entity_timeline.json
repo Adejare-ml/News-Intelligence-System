@@ -34,7 +34,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 35,
+      "total_mentions": 36,
       "points": [
         {
           "week": "2026-09-14",
@@ -50,8 +50,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 18,
-          "avg_risk": 31.9,
+          "mentions": 19,
+          "avg_risk": 31.3,
           "max_risk": 65
         }
       ]
@@ -150,28 +150,9 @@
       ]
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 9,
-          "avg_risk": 12.2,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 10,
+      "total_mentions": 11,
       "points": [
         {
           "week": "2026-09-14",
@@ -187,9 +168,28 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 26.7,
+          "mentions": 4,
+          "avg_risk": 25.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 9,
+          "avg_risk": 12.2,
+          "max_risk": 20
         }
       ]
     },
@@ -482,6 +482,25 @@
       ]
     },
     {
+      "key": "king s college",
+      "label": "King's College",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 5,
@@ -571,21 +590,15 @@
       ]
     },
     {
-      "key": "king s college",
-      "label": "King's College",
+      "key": "federal capital territory administration",
+      "label": "Federal Capital Territory Administration",
       "total_mentions": 4,
       "points": [
         {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 4,
+          "avg_risk": 33.8,
+          "max_risk": 75
         }
       ]
     },
@@ -656,19 +669,6 @@
           "mentions": 3,
           "avg_risk": 15.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 38.3,
-          "max_risk": 75
         }
       ]
     },
@@ -1356,6 +1356,25 @@
       ]
     },
     {
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "ola olukoyede",
       "label": "Ola Olukoyede",
       "total_mentions": 2,
@@ -1543,6 +1562,32 @@
       ]
     },
     {
+      "key": "aghan",
+      "label": "AGHAN",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "agora fellowship",
+      "label": "AGORA Fellowship",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ascsn",
       "label": "ASCSN",
       "total_mentions": 1,
@@ -1695,6 +1740,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "airtel money",
+      "label": "Airtel Money",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2713,6 +2771,19 @@
       ]
     },
     {
+      "key": "katsina state government",
+      "label": "Katsina State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "keystone bank",
       "label": "Keystone Bank",
       "total_mentions": 1,
@@ -2943,6 +3014,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "matebese",
+      "label": "Matebese",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -3415,6 +3499,19 @@
       ]
     },
     {
+      "key": "triathlon union",
+      "label": "Nigeria Triathlon Union",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "air force",
       "label": "Nigerian Air Force",
       "total_mentions": 1,
@@ -3584,19 +3681,6 @@
       ]
     },
     {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "not stated",
       "label": "Not Stated",
       "total_mentions": 1,
@@ -3645,6 +3729,19 @@
           "mentions": 1,
           "avg_risk": 70.0,
           "max_risk": 70
+        }
+      ]
+    },
+    {
+      "key": "office of the accountant general of the federation",
+      "label": "Office of the Accountant General of the Federation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -4026,6 +4123,32 @@
       ]
     },
     {
+      "key": "rotimi amaechi",
+      "label": "Rotimi Amaechi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "sahco",
+      "label": "SAHCO",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "serap",
       "label": "SERAP",
       "total_mentions": 1,
@@ -4232,124 +4355,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "totalenergies se",
-      "label": "TotalEnergies SE",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "uac",
-      "label": "UAC",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "unicef",
-      "label": "UNICEF",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "usaid",
-      "label": "USAID",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "uche elekwachi",
-      "label": "Uche Elekwachi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "united nations industrial development organization",
-      "label": "United Nations Industrial Development Organization",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "university press",
-      "label": "University Press",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "university of calabar",
-      "label": "University of Calabar",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "university of ibadan",
-      "label": "University of Ibadan",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-02 02:09:36"
+  "generated": "2026-10-02 13:38:43"
 }

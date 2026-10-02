@@ -121,8 +121,56 @@
       "risk": "Low"
     },
     {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "58e21ffa68da",
+      "label": "Katsina State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3baa3fea1145",
+      "label": "King's College",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bb9ff268bd4c",
+      "label": "Office of the Accountant General of the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "03da7bdd5e4b",
+      "label": "Nigeria Triathlon Union",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2886ba2589fd",
+      "label": "Utako General Hospital",
       "type": "agency",
       "risk": "Low"
     },
@@ -135,12 +183,6 @@
     {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -165,12 +207,6 @@
     {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
       "type": "agency",
       "risk": "Low"
     },
@@ -205,39 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
+      "id": "f73644b51612",
+      "label": "Matebese",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6c302b827a55",
-      "label": "Government of the United States",
-      "type": "agency",
+      "id": "fcf4c05afdc4",
+      "label": "Rotimi Amaechi",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -292,6 +304,12 @@
       "id": "64ac281e7b58",
       "label": "Mu\u2019azu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -391,6 +409,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "58c58351d674",
       "label": "Olayemi Cardoso",
       "type": "person",
@@ -453,18 +477,6 @@
     {
       "id": "44622f42ba94",
       "label": "Nigeria Hotel and Tourism Employees",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "55730e1fee4a",
-      "label": "Ministry of Petroleum Resources",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
       "type": "company",
       "risk": "Low"
     },
@@ -683,15 +695,21 @@
       "label": "Delta State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "fa6c485df0cf",
-      "label": "Lagos State Security Trust Fund",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "c81b27939375",
+      "from": "f73644b51612",
+      "to": "03da7bdd5e4b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "951b688a8e4d",
+      "from": "fcf4c05afdc4",
+      "to": "b5da1d8370fd",
+      "label": "Appointed as Minister"
+    },
     {
       "id": "63dfe1afb291",
       "from": "f121c0e97820",
@@ -831,18 +849,6 @@
       "label": "Appointed as National Chairman"
     },
     {
-      "id": "9adf159becd1",
-      "from": "3e45c1f8a33f",
-      "to": "55730e1fee4a",
-      "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
-    },
-    {
-      "id": "8e628c8b88fe",
-      "from": "55bcb5b22e12",
-      "to": "b1dce9fc27e0",
-      "label": "Appointed as Former Chairman"
-    },
-    {
       "id": "65d32072e59e",
       "from": "763ad8d1cb39",
       "to": "71399a9ad4ea",
@@ -933,6 +939,18 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "28911e9fe8a3",
+      "from": "334c4a4c42fd",
+      "to": "beb91054dc85",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "f8428f09d5a7",
       "from": "334c4a4c42fd",
       "to": "5a98eb23f6f5",
@@ -957,21 +975,9 @@
       "label": "Contract Awardee"
     },
     {
-      "id": "28911e9fe8a3",
-      "from": "334c4a4c42fd",
-      "to": "beb91054dc85",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "b6c692491b0a",
       "from": "e6f87275c6e8",
       "to": "84b6d6cbf896",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
     {
@@ -1020,12 +1026,6 @@
       "id": "a680bea90508",
       "from": "334c4a4c42fd",
       "to": "bfc1f02f682e",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "98312dbb3d94",
-      "from": "334c4a4c42fd",
-      "to": "fa6c485df0cf",
       "label": "Contract Awardee"
     }
   ]

@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 37,
-      "undisclosed": 25,
+      "contracts": 38,
+      "undisclosed": 26,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -195,6 +195,12 @@
       }
     },
     {
+      "name": "Federal Capital Territory Administration",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
       "name": "Niger Delta Development Commission",
       "contracts": 3,
       "undisclosed": 3,
@@ -208,12 +214,6 @@
     },
     {
       "name": "Celtic",
-      "contracts": 2,
-      "undisclosed": 2,
-      "totals": {}
-    },
-    {
-      "name": "Federal Capital Territory Administration",
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
@@ -538,8 +538,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 86,
-      "undisclosed": 55,
+      "contracts": 88,
+      "undisclosed": 57,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -916,5 +916,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-02 02:09:36"
+  "generated": "2026-10-02 13:38:43"
 }

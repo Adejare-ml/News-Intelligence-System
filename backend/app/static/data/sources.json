@@ -2,51 +2,51 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2258,
-      "published": 1346,
-      "filtered": 912,
-      "accept_rate": 60,
+      "total": 2275,
+      "published": 1351,
+      "filtered": 924,
+      "accept_rate": 59,
       "avg_risk": 29.0,
       "engines": {
         "unknown": 963,
-        "ollama": 375,
+        "ollama": 380,
         "nvidia": 8
       },
-      "last_seen": "2026-10-01"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1261,
-      "published": 657,
-      "filtered": 604,
-      "accept_rate": 52,
-      "avg_risk": 31.3,
+      "total": 1293,
+      "published": 662,
+      "filtered": 631,
+      "accept_rate": 51,
+      "avg_risk": 31.2,
       "engines": {
         "unknown": 440,
-        "ollama": 213,
+        "ollama": 218,
         "nvidia": 4
       },
-      "last_seen": "2026-10-01"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "Punch Newspapers",
-      "total": 770,
-      "published": 340,
-      "filtered": 430,
+      "total": 778,
+      "published": 342,
+      "filtered": 436,
       "accept_rate": 44,
-      "avg_risk": 26.7,
+      "avg_risk": 26.6,
       "engines": {
         "unknown": 188,
-        "ollama": 148,
+        "ollama": 150,
         "nvidia": 4
       },
       "last_seen": "2026-10-02"
     },
     {
       "source": "theeagleonline.com.ng",
-      "total": 492,
+      "total": 497,
       "published": 157,
-      "filtered": 335,
+      "filtered": 340,
       "accept_rate": 32,
       "avg_risk": 27.6,
       "engines": {
@@ -54,13 +54,13 @@
         "ollama": 72,
         "nvidia": 4
       },
-      "last_seen": "2026-10-01"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "The Punch",
-      "total": 488,
+      "total": 489,
       "published": 283,
-      "filtered": 205,
+      "filtered": 206,
       "accept_rate": 58,
       "avg_risk": 33.0,
       "engines": {
@@ -296,16 +296,16 @@
     },
     {
       "source": "thisdaylive",
-      "total": 27,
+      "total": 28,
       "published": 12,
-      "filtered": 15,
-      "accept_rate": 44,
+      "filtered": 16,
+      "accept_rate": 43,
       "avg_risk": 25.4,
       "engines": {
         "unknown": 5,
         "ollama": 7
       },
-      "last_seen": "2026-09-21"
+      "last_seen": "2026-10-02"
     },
     {
       "source": "tori",
@@ -2005,5 +2005,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-02 02:09:36"
+  "generated": "2026-10-02 13:38:43"
 }
