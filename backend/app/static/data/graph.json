@@ -127,8 +127,20 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
       "type": "agency",
       "risk": "Low"
     },
@@ -139,8 +151,20 @@
       "risk": "Low"
     },
     {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "beb91054dc85",
       "label": "Federal Capital Territory Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c049605cdfa7",
+      "label": "National Library of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -171,24 +195,6 @@
     {
       "id": "2886ba2589fd",
       "label": "Utako General Hospital",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -231,12 +237,6 @@
     {
       "id": "d10f0fd05d5d",
       "label": "Nigeria Centre for Disease Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
       "type": "agency",
       "risk": "Low"
     },

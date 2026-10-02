@@ -58,6 +58,14 @@
       }
     },
     {
+      "industry": "Telecoms",
+      "companies": 6,
+      "mentions": 9,
+      "risk": {
+        "Low": 6
+      }
+    },
+    {
       "industry": "Financial Services",
       "companies": 3,
       "mentions": 8,
@@ -73,14 +81,6 @@
       "mentions": 8,
       "risk": {
         "High": 2,
-        "Low": 5
-      }
-    },
-    {
-      "industry": "Telecoms",
-      "companies": 5,
-      "mentions": 8,
-      "risk": {
         "Low": 5
       }
     },
@@ -133,6 +133,14 @@
       "mentions": 5,
       "risk": {
         "High": 1
+      }
+    },
+    {
+      "industry": "Cement",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -220,14 +228,6 @@
       "industry": "Technology",
       "companies": 1,
       "mentions": 3,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Cement",
-      "companies": 1,
-      "mentions": 2,
       "risk": {
         "Low": 1
       }
@@ -441,5 +441,5 @@
       }
     }
   ],
-  "generated": "2026-10-02 13:38:43"
+  "generated": "2026-10-02 18:16:03"
 }
