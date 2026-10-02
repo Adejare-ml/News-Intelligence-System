@@ -1,7 +1,7 @@
 {
   "window_days": 7,
   "recent_articles": 148,
-  "previous_articles": 180,
+  "previous_articles": 168,
   "rising": [
     {
       "term": "court",
@@ -66,81 +66,81 @@
   ],
   "falling": [
     {
-      "term": "newspapers",
-      "recent": 21,
-      "previous": 30,
-      "change": -9
-    },
-    {
-      "term": "punch",
-      "recent": 21,
-      "previous": 30,
-      "change": -9
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 21,
-      "previous": 30,
-      "change": -9
-    },
-    {
       "term": "lagos",
-      "recent": 3,
-      "previous": 12,
-      "change": -9
-    },
-    {
-      "term": "efcc",
       "recent": 4,
-      "previous": 12,
-      "change": -8
-    },
-    {
-      "term": "health",
-      "recent": 1,
-      "previous": 9,
-      "change": -8
-    },
-    {
-      "term": "urges",
-      "recent": 2,
-      "previous": 9,
+      "previous": 11,
       "change": -7
-    },
-    {
-      "term": "dangote",
-      "recent": 4,
-      "previous": 10,
-      "change": -6
-    },
-    {
-      "term": "dangote refinery",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
     },
     {
       "term": "icc",
       "recent": 0,
       "previous": 6,
       "change": -6
+    },
+    {
+      "term": "petrol",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
+    },
+    {
+      "term": "newspapers",
+      "recent": 22,
+      "previous": 27,
+      "change": -5
+    },
+    {
+      "term": "punch",
+      "recent": 22,
+      "previous": 27,
+      "change": -5
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 22,
+      "previous": 27,
+      "change": -5
+    },
+    {
+      "term": "dangote",
+      "recent": 4,
+      "previous": 9,
+      "change": -5
+    },
+    {
+      "term": "mambilla",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "policy",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
+    },
+    {
+      "term": "dangote refinery",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 98,
-      "previous": 115
+      "recent": 97,
+      "previous": 112
     },
     {
       "category": "Legal",
-      "recent": 25,
-      "previous": 29
+      "recent": 26,
+      "previous": 24
     },
     {
       "category": "Company",
       "recent": 23,
-      "previous": 35
+      "previous": 31
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-01 21:40:31"
+  "generated": "2026-10-02 02:09:29"
 }
