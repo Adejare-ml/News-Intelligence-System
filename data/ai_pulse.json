@@ -1,92 +1,92 @@
 {
-  "generated": "2026-10-01 21:40:31",
+  "generated": "2026-10-02 02:09:29",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 4839,
+      "likes": 4867,
       "downloads": 0
     },
     {
       "id": "XingChen-AGI/TeleOCR",
       "url": "https://huggingface.co/XingChen-AGI/TeleOCR",
       "task": "image-text-to-text",
-      "likes": 1217,
+      "likes": 1231,
       "downloads": 31584
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2697,
+      "likes": 2714,
       "downloads": 1303476
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2780,
+      "likes": 2793,
       "downloads": 76938
     },
     {
       "id": "Contrastive-LM/CLM-v0.1-8B",
       "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
       "task": "text-ranking",
-      "likes": 623,
+      "likes": 625,
       "downloads": 2720
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 5841,
+      "likes": 5861,
       "downloads": 1588619
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16720,
+      "likes": 16732,
       "downloads": 6950834
     },
     {
-      "id": "SupersonicLabs/Julia-1",
-      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
-      "task": "text-classification",
-      "likes": 339,
-      "downloads": 2556
+      "id": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "task": "image-text-to-text",
+      "likes": 347,
+      "downloads": 18
     }
   ],
   "papers": [
     {
-      "title": "Training LLM Judges from Language Feedback via Position-Selective Self-Distillation",
-      "url": "https://huggingface.co/papers/2609.38792",
+      "title": "GraphForge: Training Working Agents with Graph-Anchored Workspace Synthesis",
+      "url": "https://huggingface.co/papers/2609.38923",
       "upvotes": 2
     },
     {
-      "title": "Aligning One-Step Generative Models with Reward-Weighted Transport Distillation",
-      "url": "https://huggingface.co/papers/2609.30840",
+      "title": "It Takes Workflows to Evolve Better Workflows",
+      "url": "https://huggingface.co/papers/2610.01026",
+      "upvotes": 0
+    },
+    {
+      "title": "AutoDataBench: A Data-centric Testbed for Accelerating Auto Research",
+      "url": "https://huggingface.co/papers/2609.40097",
       "upvotes": 2
     },
     {
-      "title": "Tacit-TTS: From Autoregressive Decoding to Masked Prediction for Efficient Transcript-Free Voice Cloning",
-      "url": "https://huggingface.co/papers/2609.38658",
-      "upvotes": 7
+      "title": "Retrieval-Augmented Skill Optimization via Cross-Harness Adaptation",
+      "url": "https://huggingface.co/papers/2609.38024",
+      "upvotes": 10
     },
     {
-      "title": "BiasReducer: Adaptive Bias Mitigation for Reward Models",
-      "url": "https://huggingface.co/papers/2609.32720",
-      "upvotes": 13
+      "title": "Adaptive Reward Routing: Dynamic Multi-Reward Optimization for Joint Audio-Video Diffusion via Forward-Process RL",
+      "url": "https://huggingface.co/papers/2609.37200",
+      "upvotes": 1
     },
     {
-      "title": "BIABench: Evaluating AI agents on real-world bioimage analysis tasks",
-      "url": "https://huggingface.co/papers/2609.34274",
-      "upvotes": 4
-    },
-    {
-      "title": "DAGent: Evaluate-then-Grow Planning for Deep Research Agents",
-      "url": "https://huggingface.co/papers/2609.39154",
+      "title": "AutoGUIWorld: Image Generators as Visual World Models for GUI Agent",
+      "url": "https://huggingface.co/papers/2610.01215",
       "upvotes": 3
     }
   ]

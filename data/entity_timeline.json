@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 41,
+      "total_mentions": 42,
       "points": [
         {
           "week": "2026-09-07",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 10,
-          "avg_risk": 23.0,
+          "mentions": 11,
+          "avg_risk": 22.7,
           "max_risk": 45
         }
       ]
@@ -34,7 +34,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 34,
+      "total_mentions": 35,
       "points": [
         {
           "week": "2026-09-14",
@@ -50,8 +50,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 17,
-          "avg_risk": 31.5,
+          "mentions": 18,
+          "avg_risk": 31.9,
           "max_risk": 65
         }
       ]
@@ -4351,5 +4351,5 @@
       ]
     }
   ],
-  "generated": "2026-10-01 21:40:35"
+  "generated": "2026-10-02 02:09:36"
 }

@@ -1000,7 +1000,20 @@
       "rejected": 70,
       "undated": 0,
       "run_seconds": 676
+    },
+    {
+      "date": "2026-10-02",
+      "runs": 1,
+      "articles": 3,
+      "high_risk": 0,
+      "appointments": 0,
+      "procurement": 0,
+      "cascade_failures": 0,
+      "candidates": 1081,
+      "rejected": 13,
+      "undated": 0,
+      "run_seconds": 103
     }
   ],
-  "generated": "2026-10-01 21:40:35"
+  "generated": "2026-10-02 02:09:36"
 }
