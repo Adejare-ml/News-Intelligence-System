@@ -157,6 +157,12 @@
       "risk": "Low"
     },
     {
+      "id": "19e301887487",
+      "label": "National Hajj Commission of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "beb91054dc85",
       "label": "Federal Capital Territory Administration",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "84927e6cf7c4",
       "label": "Nigerian Institute of Industrial Research",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d10f0fd05d5d",
-      "label": "Nigeria Centre for Disease Control",
       "type": "agency",
       "risk": "Low"
     },

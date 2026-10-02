@@ -857,6 +857,25 @@
       ]
     },
     {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national pension commission",
       "label": "National Pension Commission",
       "total_mentions": 3,
@@ -1236,19 +1255,6 @@
           "mentions": 2,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
         }
       ]
     },
@@ -4363,5 +4369,5 @@
       ]
     }
   ],
-  "generated": "2026-10-02 18:16:03"
+  "generated": "2026-10-02 21:16:13"
 }
