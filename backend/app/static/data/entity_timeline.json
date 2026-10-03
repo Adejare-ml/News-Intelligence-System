@@ -603,6 +603,25 @@
       ]
     },
     {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "total_mentions": 4,
@@ -847,25 +866,6 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
         },
         {
           "week": "2026-09-28",
@@ -1184,6 +1184,25 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "makinde",
+      "label": "Makinde",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -2666,6 +2685,19 @@
       ]
     },
     {
+      "key": "infracredit",
+      "label": "InfraCredit",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "integrity and medicare policy initiative",
       "label": "Integrity and Medicare Policy Initiative",
       "total_mentions": 1,
@@ -2698,6 +2730,19 @@
       "points": [
         {
           "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "international finance corporation",
+      "label": "International Finance Corporation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
@@ -2987,19 +3032,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "makinde",
-      "label": "Makinde",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -4341,33 +4373,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "teachers council",
-      "label": "Teachers' Council",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "tertiary education trust fund",
-      "label": "Tertiary Education Trust Fund",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-02 21:16:13"
+  "generated": "2026-10-03 01:52:27"
 }

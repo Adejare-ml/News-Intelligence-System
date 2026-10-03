@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 157,
-  "previous_articles": 162,
+  "recent_articles": 154,
+  "previous_articles": 165,
   "rising": [
     {
       "term": "court",
@@ -10,10 +10,10 @@
       "change": 10
     },
     {
-      "term": "nnpc",
-      "recent": 17,
-      "previous": 9,
-      "change": 8
+      "term": "guardian",
+      "recent": 51,
+      "previous": 44,
+      "change": 7
     },
     {
       "term": "targets",
@@ -22,28 +22,34 @@
       "change": 7
     },
     {
+      "term": "premium",
+      "recent": 38,
+      "previous": 32,
+      "change": 6
+    },
+    {
+      "term": "premium times",
+      "recent": 38,
+      "previous": 32,
+      "change": 6
+    },
+    {
+      "term": "times",
+      "recent": 38,
+      "previous": 32,
+      "change": 6
+    },
+    {
+      "term": "nnpc",
+      "recent": 16,
+      "previous": 10,
+      "change": 6
+    },
+    {
       "term": "cbn",
       "recent": 14,
       "previous": 8,
       "change": 6
-    },
-    {
-      "term": "premium",
-      "recent": 37,
-      "previous": 32,
-      "change": 5
-    },
-    {
-      "term": "premium times",
-      "recent": 37,
-      "previous": 32,
-      "change": 5
-    },
-    {
-      "term": "times",
-      "recent": 37,
-      "previous": 32,
-      "change": 5
     },
     {
       "term": "profit",
@@ -56,31 +62,49 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "guardian",
-      "recent": 50,
-      "previous": 46,
-      "change": 4
     }
   ],
   "falling": [
     {
       "term": "lagos",
-      "recent": 4,
-      "previous": 12,
-      "change": -8
+      "recent": 3,
+      "previous": 13,
+      "change": -10
     },
     {
       "term": "dangote",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
+      "recent": 2,
+      "previous": 10,
+      "change": -8
     },
     {
       "term": "efcc",
-      "recent": 3,
-      "previous": 9,
+      "recent": 2,
+      "previous": 10,
+      "change": -8
+    },
+    {
+      "term": "newspapers",
+      "recent": 23,
+      "previous": 30,
+      "change": -7
+    },
+    {
+      "term": "punch",
+      "recent": 23,
+      "previous": 30,
+      "change": -7
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 23,
+      "previous": 30,
+      "change": -7
+    },
+    {
+      "term": "dangote refinery",
+      "recent": 0,
+      "previous": 6,
       "change": -6
     },
     {
@@ -100,37 +124,13 @@
       "recent": 1,
       "previous": 6,
       "change": -5
-    },
-    {
-      "term": "rate",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "unveils",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "alleged",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "declares",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 101,
-      "previous": 109
+      "recent": 99,
+      "previous": 111
     },
     {
       "category": "Company",
@@ -139,15 +139,15 @@
     },
     {
       "category": "Legal",
-      "recent": 27,
-      "previous": 21
+      "recent": 25,
+      "previous": 22
     },
     {
       "category": "Other",
-      "recent": 2,
+      "recent": 3,
       "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-10-02 21:16:11"
+  "generated": "2026-10-03 01:52:23"
 }

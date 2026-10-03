@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "19e301887487",
+      "label": "National Hajj Commission of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -153,12 +159,6 @@
     {
       "id": "fa6306528d39",
       "label": "Nigerian Ports Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "19e301887487",
-      "label": "National Hajj Commission of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -241,6 +241,18 @@
       "risk": "Low"
     },
     {
+      "id": "0eb499263319",
+      "label": "Makinde",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f73644b51612",
       "label": "Matebese",
       "type": "person",
@@ -256,12 +268,6 @@
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -465,18 +471,6 @@
     {
       "id": "3a855b071fef",
       "label": "Nigeria Revenue Service",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "d00eed82e81b",
-      "label": "Mudasiru",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "44622f42ba94",
-      "label": "Nigeria Hotel and Tourism Employees",
       "type": "company",
       "risk": "Low"
     },
@@ -699,6 +693,12 @@
   ],
   "edges": [
     {
+      "id": "bafaa84feaf3",
+      "from": "0eb499263319",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Governor"
+    },
+    {
       "id": "c81b27939375",
       "from": "f73644b51612",
       "to": "03da7bdd5e4b",
@@ -841,12 +841,6 @@
       "from": "5144dcc43184",
       "to": "3a855b071fef",
       "label": "Appointed as Leadership Role"
-    },
-    {
-      "id": "9b19f8f64cd8",
-      "from": "d00eed82e81b",
-      "to": "44622f42ba94",
-      "label": "Appointed as National Chairman"
     },
     {
       "id": "65d32072e59e",

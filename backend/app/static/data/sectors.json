@@ -58,21 +58,21 @@
       }
     },
     {
+      "industry": "Financial Services",
+      "companies": 4,
+      "mentions": 9,
+      "risk": {
+        "Medium": 1,
+        "High": 1,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Telecoms",
       "companies": 6,
       "mentions": 9,
       "risk": {
         "Low": 6
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 3,
-      "mentions": 8,
-      "risk": {
-        "Medium": 1,
-        "High": 1,
-        "Low": 1
       }
     },
     {
@@ -313,6 +313,14 @@
       }
     },
     {
+      "industry": "Development Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Fintech/Banking",
       "companies": 1,
       "mentions": 1,
@@ -441,5 +449,5 @@
       }
     }
   ],
-  "generated": "2026-10-02 21:16:13"
+  "generated": "2026-10-03 01:52:27"
 }
