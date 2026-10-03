@@ -103,6 +103,12 @@
       "risk": "Low"
     },
     {
+      "id": "866686ab0fd6",
+      "label": "Dangote Group",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "2a77f31e67e8",
       "label": "PFIPC",
       "type": "company",
@@ -115,14 +121,50 @@
       "risk": "Medium"
     },
     {
-      "id": "866686ab0fd6",
-      "label": "Dangote Group",
-      "type": "company",
+      "id": "c06f2d9a3df8",
+      "label": "National Insurance Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "22e91132d957",
+      "label": "Presidency",
+      "type": "agency",
       "risk": "Low"
     },
     {
       "id": "19e301887487",
       "label": "National Hajj Commission of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3933ac79ce03",
+      "label": "Corporate Affairs Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2072dc5e7548",
+      "label": "Local Government Councils",
       "type": "agency",
       "risk": "Low"
     },
@@ -141,18 +183,6 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,36 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "be5672593de6",
-      "label": "NIGCOMSAT Ltd",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f37de2d93da2",
-      "label": "FCT High Court",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "84927e6cf7c4",
-      "label": "Nigerian Institute of Industrial Research",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0eb499263319",
       "label": "Makinde",
       "type": "person",
@@ -250,6 +250,30 @@
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "143e0ecdcc8f",
+      "label": "Olumide Akinpelumi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e729c75bc972",
+      "label": "EVA Professionals",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "13d8a800667a",
+      "label": "Afeni",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "2ff28e78e954",
+      "label": "Aliyu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -295,6 +319,12 @@
       "risk": "Low"
     },
     {
+      "id": "84927e6cf7c4",
+      "label": "Nigerian Institute of Industrial Research",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "eb019677d36e",
       "label": "Unnamed Nigerian",
       "type": "person",
@@ -310,12 +340,6 @@
       "id": "64ac281e7b58",
       "label": "Mu\u2019azu",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -435,42 +459,6 @@
     {
       "id": "22ee91f832d4",
       "label": "Ministry of State for Petroleum Resources",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0cff5b917651",
-      "label": "Akpagu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8c7f032b56b3",
-      "label": "University of Calabar",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "55bcb5b22e12",
-      "label": "Maina",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7d64e12abac8",
-      "label": "Unknown Pension Agency",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5144dcc43184",
-      "label": "Zacch Adedeji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a855b071fef",
-      "label": "Nigeria Revenue Service",
       "type": "company",
       "risk": "Low"
     },
@@ -619,9 +607,27 @@
       "risk": "Medium"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "be5672593de6",
+      "label": "NIGCOMSAT Ltd",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9fa2cb1cf1f4",
       "label": "Thales Alenia Space",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -697,6 +703,24 @@
       "from": "0eb499263319",
       "to": "3a4a88456e84",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "7ec06ced63ec",
+      "from": "143e0ecdcc8f",
+      "to": "e729c75bc972",
+      "label": "Appointed as Managing Partner"
+    },
+    {
+      "id": "95964f3387e3",
+      "from": "13d8a800667a",
+      "to": "9ff00c51bfd3",
+      "label": "Appointed as Head of Foreign Operations Unit 'A'"
+    },
+    {
+      "id": "0332ac029c85",
+      "from": "2ff28e78e954",
+      "to": "9ff00c51bfd3",
+      "label": "Appointed as Head of Foreign Operations Unit 'A'"
     },
     {
       "id": "c81b27939375",
@@ -823,24 +847,6 @@
       "from": "3e45c1f8a33f",
       "to": "22ee91f832d4",
       "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
-    },
-    {
-      "id": "b78d546665ef",
-      "from": "0cff5b917651",
-      "to": "8c7f032b56b3",
-      "label": "Appointed as Not Stated"
-    },
-    {
-      "id": "8cd0d9f8c914",
-      "from": "55bcb5b22e12",
-      "to": "7d64e12abac8",
-      "label": "Appointed as Former Pension Boss"
-    },
-    {
-      "id": "d6cb60df31bb",
-      "from": "5144dcc43184",
-      "to": "3a855b071fef",
-      "label": "Appointed as Leadership Role"
     },
     {
       "id": "65d32072e59e",

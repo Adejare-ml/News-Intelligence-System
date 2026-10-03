@@ -13,12 +13,12 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 25,
-      "mentions": 137,
+      "companies": 24,
+      "mentions": 129,
       "risk": {
         "Critical": 1,
         "Medium": 4,
-        "Low": 19,
+        "Low": 18,
         "High": 1
       }
     },
@@ -32,11 +32,11 @@
     },
     {
       "industry": "Banking",
-      "companies": 10,
-      "mentions": 13,
+      "companies": 11,
+      "mentions": 14,
       "risk": {
         "Low": 8,
-        "Medium": 2
+        "Medium": 3
       }
     },
     {
@@ -46,6 +46,14 @@
       "risk": {
         "Critical": 1,
         "Medium": 2
+      }
+    },
+    {
+      "industry": "Conglomerate",
+      "companies": 1,
+      "mentions": 10,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -136,6 +144,14 @@
       }
     },
     {
+      "industry": "Beverages",
+      "companies": 4,
+      "mentions": 4,
+      "risk": {
+        "Low": 4
+      }
+    },
+    {
       "industry": "Cement",
       "companies": 2,
       "mentions": 4,
@@ -150,14 +166,6 @@
       "risk": {
         "Medium": 1,
         "Low": 1
-      }
-    },
-    {
-      "industry": "Beverages",
-      "companies": 3,
-      "mentions": 3,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -417,6 +425,14 @@
       }
     },
     {
+      "industry": "Professional Services",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Publishing",
       "companies": 1,
       "mentions": 1,
@@ -449,5 +465,5 @@
       }
     }
   ],
-  "generated": "2026-10-03 01:52:27"
+  "generated": "2026-10-03 12:18:45"
 }

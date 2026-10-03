@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 54,
+    "Mention Count": 55,
     "Last Seen": "2026-10-02 13:32",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
@@ -6833,10 +6833,10 @@
   },
   {
     "Company": "Dangote Group",
-    "Mention Count": 9,
-    "Last Seen": "2026-09-30 18:16",
-    "Industry": "Oil & Gas",
-    "Risk Level": "Low",
+    "Mention Count": 10,
+    "Last Seen": "2026-10-03 12:17",
+    "Industry": "Conglomerate",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -8718,5 +8718,29 @@
     "Industry": "Development Finance",
     "Risk Level": "Low",
     "First Seen": "2026-10-03 01:50"
+  },
+  {
+    "Company": "EVA Professionals",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-03 12:13",
+    "Industry": "Professional Services",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-03 12:13"
+  },
+  {
+    "Company": "Seven-Up Bottling Company",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-03 12:14",
+    "Industry": "Beverages",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-03 12:14"
+  },
+  {
+    "Company": "Afreximbank",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-03 12:17",
+    "Industry": "Banking",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-03 12:17"
   }
 ]

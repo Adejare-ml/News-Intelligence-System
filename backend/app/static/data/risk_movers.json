@@ -73,6 +73,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "dangote",
+      "label": "Dangote Group",
+      "recent_avg": 32.5,
+      "previous_avg": 20.0,
+      "delta": 12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "ojulari",
       "label": "Ojulari",
       "recent_avg": 30.0,
@@ -80,15 +89,6 @@
       "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 29.3,
-      "previous_avg": 20.0,
-      "delta": 9.3,
-      "recent_mentions": 22,
-      "previous_mentions": 9
     },
     {
       "key": "ogun state government",
@@ -100,13 +100,13 @@
       "previous_mentions": 6
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 27.5,
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 30.0,
       "previous_avg": 21.4,
-      "delta": 6.1,
-      "recent_mentions": 14,
-      "previous_mentions": 14
+      "delta": 8.6,
+      "recent_mentions": 24,
+      "previous_mentions": 7
     },
     {
       "key": "ports authority",
@@ -116,6 +116,15 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 21.7,
+      "previous_avg": 26.6,
+      "delta": -4.9,
+      "recent_mentions": 12,
+      "previous_mentions": 16
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -129,11 +138,11 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "recent_avg": 23.3,
-      "previous_avg": 26.2,
-      "delta": -2.9,
-      "recent_mentions": 6,
-      "previous_mentions": 4
+      "recent_avg": 22.9,
+      "previous_avg": 20.0,
+      "delta": 2.9,
+      "recent_mentions": 7,
+      "previous_mentions": 3
     },
     {
       "key": "federal airports authority of",
@@ -141,6 +150,15 @@
       "recent_avg": 17.5,
       "previous_avg": 20.0,
       "delta": -2.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
       "recent_mentions": 2,
       "previous_mentions": 2
     },
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
-      "recent_avg": 45.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "recent_avg": 33.8,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-03 01:52:27"
+  "generated": "2026-10-03 12:18:45"
 }
