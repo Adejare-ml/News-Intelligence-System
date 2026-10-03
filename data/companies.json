@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 55,
+    "Mention Count": 56,
     "Last Seen": "2026-10-02 13:32",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
@@ -8742,5 +8742,13 @@
     "Industry": "Banking",
     "Risk Level": "Medium",
     "First Seen": "2026-10-03 12:17"
+  },
+  {
+    "Company": "Greenwich Bank",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-03 19:45",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-03 19:45"
   }
 ]

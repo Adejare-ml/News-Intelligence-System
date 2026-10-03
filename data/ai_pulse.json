@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-03 12:18:43",
+  "generated": "2026-10-03 19:46:24",
   "models": [
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5027,
+      "likes": 5067,
       "downloads": 0
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 894,
+      "likes": 955,
       "downloads": 2620
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 2872,
+      "likes": 2911,
       "downloads": 1455921
-    },
-    {
-      "id": "Contrastive-LM/CLM-v0.1-8B",
-      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
-      "task": "text-ranking",
-      "likes": 677,
-      "downloads": 3190
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6047,
+      "likes": 6102,
       "downloads": 1629984
     },
     {
-      "id": "SupersonicLabs/Julia-1",
-      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
-      "task": "text-classification",
-      "likes": 377,
-      "downloads": 3251
+      "id": "Contrastive-LM/CLM-v0.1-8B",
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B",
+      "task": "text-ranking",
+      "likes": 689,
+      "downloads": 3190
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2859,
+      "likes": 2889,
       "downloads": 85895
+    },
+    {
+      "id": "SupersonicLabs/Julia-1",
+      "url": "https://huggingface.co/SupersonicLabs/Julia-1",
+      "task": "text-classification",
+      "likes": 395,
+      "downloads": 3251
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16834,
+      "likes": 16868,
       "downloads": 6895117
     }
   ],
@@ -62,32 +62,32 @@
     {
       "title": "Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration",
       "url": "https://huggingface.co/papers/2609.22753",
-      "upvotes": 1
+      "upvotes": 5
     },
     {
       "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
       "url": "https://huggingface.co/papers/2610.01092",
-      "upvotes": 7
+      "upvotes": 21
     },
     {
       "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
       "url": "https://huggingface.co/papers/2609.36435",
-      "upvotes": 3
+      "upvotes": 6
     },
     {
       "title": "Video Generation Models: A Survey of Post-Training and Alignment",
       "url": "https://huggingface.co/papers/2610.00812",
-      "upvotes": 32
+      "upvotes": 43
     },
     {
       "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
       "url": "https://huggingface.co/papers/2609.36388",
-      "upvotes": 12
+      "upvotes": 40
     },
     {
       "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
       "url": "https://huggingface.co/papers/2609.36585",
-      "upvotes": 56
+      "upvotes": 62
     }
   ]
 }

@@ -127,6 +127,18 @@
       "risk": "Low"
     },
     {
+      "id": "4f3be5c55ea4",
+      "label": "Presidency of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
       "type": "agency",
@@ -135,6 +147,12 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -151,8 +169,20 @@
       "risk": "Low"
     },
     {
+      "id": "1e4acfd46918",
+      "label": "Bank of Agriculture",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "19e301887487",
       "label": "National Hajj Commission of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -165,6 +195,12 @@
     {
       "id": "2072dc5e7548",
       "label": "Local Government Councils",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9e83fbd49a6c",
+      "label": "ActionAid Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -205,42 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "58e21ffa68da",
-      "label": "Katsina State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3baa3fea1145",
-      "label": "King's College",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bb9ff268bd4c",
-      "label": "Office of the Accountant General of the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "03da7bdd5e4b",
-      "label": "Nigeria Triathlon Union",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2886ba2589fd",
-      "label": "Utako General Hospital",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0eb499263319",
       "label": "Makinde",
       "type": "person",
@@ -277,9 +277,21 @@
       "risk": "Low"
     },
     {
+      "id": "b938970b0806",
+      "label": "Unnamed ex-spokesperson",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "f73644b51612",
       "label": "Matebese",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "03da7bdd5e4b",
+      "label": "Nigeria Triathlon Union",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -451,18 +463,6 @@
       "risk": "Low"
     },
     {
-      "id": "3e45c1f8a33f",
-      "label": "Heineken Lokpobiri",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "22ee91f832d4",
-      "label": "Ministry of State for Petroleum Resources",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "763ad8d1cb39",
       "label": "Sunbeth",
       "type": "psc",
@@ -607,8 +607,20 @@
       "risk": "Medium"
     },
     {
+      "id": "a2f42bfa75e2",
+      "label": "Women's Rights Groups",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "5a98eb23f6f5",
       "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -689,12 +701,6 @@
       "label": "Bayero University Kano",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "bfc1f02f682e",
-      "label": "Delta State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -721,6 +727,12 @@
       "from": "2ff28e78e954",
       "to": "9ff00c51bfd3",
       "label": "Appointed as Head of Foreign Operations Unit 'A'"
+    },
+    {
+      "id": "47600cfe7038",
+      "from": "b938970b0806",
+      "to": "7ac5d6bb2121",
+      "label": "Appointed as Unnamed new appointment"
     },
     {
       "id": "c81b27939375",
@@ -843,12 +855,6 @@
       "label": "Appointed as Governor"
     },
     {
-      "id": "c9ac5d0835f2",
-      "from": "3e45c1f8a33f",
-      "to": "22ee91f832d4",
-      "label": "Appointed as Minister of State for Petroleum Resources (Oil)"
-    },
-    {
       "id": "65d32072e59e",
       "from": "763ad8d1cb39",
       "to": "71399a9ad4ea",
@@ -939,6 +945,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "5a207bb7ae7a",
+      "from": "a2f42bfa75e2",
+      "to": "9e83fbd49a6c",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "28911e9fe8a3",
       "from": "334c4a4c42fd",
       "to": "beb91054dc85",
@@ -1020,12 +1032,6 @@
       "id": "fbb24378c9ac",
       "from": "0452a5213a8a",
       "to": "dc5d92c70649",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a680bea90508",
-      "from": "334c4a4c42fd",
-      "to": "bfc1f02f682e",
       "label": "Contract Awardee"
     }
   ]

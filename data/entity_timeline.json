@@ -34,7 +34,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 39,
+      "total_mentions": 40,
       "points": [
         {
           "week": "2026-09-14",
@@ -50,8 +50,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 22,
-          "avg_risk": 30.9,
+          "mentions": 23,
+          "avg_risk": 30.0,
           "max_risk": 65
         }
       ]
@@ -177,7 +177,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-14",
@@ -189,6 +189,12 @@
           "week": "2026-09-21",
           "mentions": 9,
           "avg_risk": 12.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -244,28 +250,9 @@
       ]
     },
     {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 22.9,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 8,
+      "total_mentions": 9,
       "points": [
         {
           "week": "2026-09-14",
@@ -281,9 +268,28 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 30.0,
+          "mentions": 3,
+          "avg_risk": 26.7,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 7,
+          "avg_risk": 22.9,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -1053,6 +1059,25 @@
       ]
     },
     {
+      "key": "actionaid",
+      "label": "ActionAid Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 2,
@@ -1696,6 +1721,19 @@
       ]
     },
     {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "access bank",
       "label": "Access Bank",
       "total_mentions": 1,
@@ -1718,19 +1756,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "actionaid",
-      "label": "ActionAid",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -1939,6 +1964,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "bank of agriculture",
+      "label": "Bank of Agriculture",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -2612,6 +2650,19 @@
       "points": [
         {
           "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "greenwich bank",
+      "label": "Greenwich Bank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4179,6 +4230,19 @@
       ]
     },
     {
+      "key": "presidency of",
+      "label": "Presidency of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "presidential task force on pension reforms",
       "label": "Presidential Task Force on Pension Reforms",
       "total_mentions": 1,
@@ -4333,59 +4397,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "spring",
-      "label": "SPRiNG",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "sanusi",
-      "label": "Sanusi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "sarah boulos",
-      "label": "Sarah Boulos",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "seven up bottling company",
-      "label": "Seven-Up Bottling Company",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-03 12:18:45"
+  "generated": "2026-10-03 19:46:28"
 }
