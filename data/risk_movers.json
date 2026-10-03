@@ -13,10 +13,10 @@
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 30.0,
-      "previous_avg": 57.8,
-      "delta": -27.8,
-      "recent_mentions": 3,
-      "previous_mentions": 9
+      "previous_avg": 55.0,
+      "delta": -25.0,
+      "recent_mentions": 2,
+      "previous_mentions": 10
     },
     {
       "key": "central bank of",
@@ -64,6 +64,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "recent_avg": 12.5,
+      "previous_avg": 25.0,
+      "delta": -12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "ojulari",
       "label": "Ojulari",
       "recent_avg": 30.0,
@@ -73,22 +82,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 32.0,
-      "previous_avg": 22.0,
-      "delta": 10.0,
-      "recent_mentions": 5,
-      "previous_mentions": 5
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 28.9,
+      "recent_avg": 29.3,
       "previous_avg": 20.0,
-      "delta": 8.9,
-      "recent_mentions": 23,
-      "previous_mentions": 8
+      "delta": 9.3,
+      "recent_mentions": 22,
+      "previous_mentions": 9
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 32.5,
+      "previous_avg": 23.3,
+      "delta": 9.2,
+      "recent_mentions": 4,
+      "previous_mentions": 6
     },
     {
       "key": "federal government of",
@@ -107,15 +116,6 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "dp world",
-      "label": "DP World",
-      "recent_avg": 25.0,
-      "previous_avg": 30.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 3
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-02 21:16:13"
+  "generated": "2026-10-03 01:52:27"
 }

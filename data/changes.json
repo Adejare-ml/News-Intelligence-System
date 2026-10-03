@@ -1,17 +1,20 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "InfraCredit",
+    "International Finance Corporation"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 2,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-02 21:16:09"
+  "generated": "2026-10-03 01:52:21"
 }
