@@ -1,61 +1,61 @@
 {
-  "generated": "2026-10-04 13:04:56",
+  "generated": "2026-10-04 17:19:27",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1085,
+      "likes": 1130,
       "downloads": 4214
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5115,
+      "likes": 5130,
       "downloads": 3752
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3007,
+      "likes": 3055,
       "downloads": 1553744
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6205,
+      "likes": 6238,
       "downloads": 1626951
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 394,
+      "likes": 407,
       "downloads": 6372
+    },
+    {
+      "id": "Aleph-Alpha/Kolibri-1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "task": "text-generation",
+      "likes": 353,
+      "downloads": 1135
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16906,
+      "likes": 16912,
       "downloads": 6821761
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2921,
+      "likes": 2929,
       "downloads": 90003
-    },
-    {
-      "id": "Aleph-Alpha/Kolibri-1",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "task": "text-generation",
-      "likes": 323,
-      "downloads": 1135
     }
   ],
   "papers": [
@@ -67,12 +67,12 @@
     {
       "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
       "url": "https://huggingface.co/papers/2610.01092",
-      "upvotes": 21
+      "upvotes": 22
     },
     {
       "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
       "url": "https://huggingface.co/papers/2609.36435",
-      "upvotes": 6
+      "upvotes": 7
     },
     {
       "title": "Video Generation Models: A Survey of Post-Training and Alignment",
@@ -87,7 +87,7 @@
     {
       "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
       "url": "https://huggingface.co/papers/2609.36585",
-      "upvotes": 62
+      "upvotes": 63
     }
   ]
 }

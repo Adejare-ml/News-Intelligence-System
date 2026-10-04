@@ -265,6 +265,12 @@
       "totals": {}
     },
     {
+      "name": "Zamfara State Government",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "Abia State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -531,12 +537,6 @@
       "totals": {}
     },
     {
-      "name": "Zamfara State Government",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "the Federal High Court",
       "contracts": 1,
       "undisclosed": 1,
@@ -546,8 +546,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 88,
-      "undisclosed": 57,
+      "contracts": 89,
+      "undisclosed": 58,
       "totals": {
         "NGN": 4626016090000.0,
         "USD": 20583240000.0
@@ -932,5 +932,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-04 13:05:13"
+  "generated": "2026-10-04 17:19:30"
 }
