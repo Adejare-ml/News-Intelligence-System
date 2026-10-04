@@ -225,6 +225,31 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 4,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "total_mentions": 10,
@@ -245,31 +270,6 @@
           "week": "2026-09-28",
           "mentions": 4,
           "avg_risk": 32.5,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 27.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 26.7,
           "max_risk": 40
         }
       ]
@@ -1484,6 +1484,19 @@
           "mentions": 2,
           "avg_risk": 5.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "presidency",
+      "label": "Presidency",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -4217,19 +4230,6 @@
       ]
     },
     {
-      "key": "presidency",
-      "label": "Presidency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "presidency of",
       "label": "Presidency of Nigeria",
       "total_mentions": 1,
@@ -4399,5 +4399,5 @@
       ]
     }
   ],
-  "generated": "2026-10-03 19:46:28"
+  "generated": "2026-10-04 02:31:36"
 }

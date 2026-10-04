@@ -121,6 +121,18 @@
       "risk": "Medium"
     },
     {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "22e91132d957",
+      "label": "Presidency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "c06f2d9a3df8",
       "label": "National Insurance Commission",
       "type": "agency",
@@ -151,20 +163,8 @@
       "risk": "Low"
     },
     {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "22e91132d957",
-      "label": "Presidency",
       "type": "agency",
       "risk": "Low"
     },

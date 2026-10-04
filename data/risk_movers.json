@@ -55,15 +55,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 32.5,
-      "delta": -12.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "recent_avg": 12.5,
@@ -82,15 +73,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 32.5,
-      "previous_avg": 23.3,
-      "delta": 9.2,
-      "recent_mentions": 4,
-      "previous_mentions": 6
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 29.2,
@@ -98,6 +80,15 @@
       "delta": 7.5,
       "recent_mentions": 25,
       "previous_mentions": 6
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 32.5,
+      "previous_avg": 26.0,
+      "delta": 6.5,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "federal government of",
@@ -138,11 +129,11 @@
     {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 26.7,
-      "previous_avg": 25.8,
-      "delta": 0.9,
-      "recent_mentions": 3,
-      "previous_mentions": 6
+      "recent_avg": 25.0,
+      "previous_avg": 27.0,
+      "delta": -2.0,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "customs service",
@@ -152,6 +143,15 @@
       "delta": 0.0,
       "recent_mentions": 2,
       "previous_mentions": 2
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "mambilla hydropower project",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-03 19:46:28"
+  "generated": "2026-10-04 02:31:36"
 }
