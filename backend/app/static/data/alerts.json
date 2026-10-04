@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-04",
+      "title": "Government, security officials aiding illegal mining \u2013 Taraba governor - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVlpRME1UVXZJNXRwMWw4M3duQXduQmRFSDBaS0pBaHZzTzRSRUdtTGo4RkhaVWd0cjQwVGV2MGY0X2FYSjJ6ajF5cXZaNnFYaUhnVDNSMlhOLVpuXzRXN1psb2FNeFJabllqRXAzbmduMFhFdmQtLWFNOTU0c2VLVXNrUVkxdjVsRGRkOEFlZXJkaE5hUGZOc0R4Y1VkV285UTlNdVA3QlJLREVmMjZ1clRZTVlTdHdCR1J1RUltUEZPZw?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": [
+        "Taraba State Government"
+      ]
+    },
+    {
       "date": "2026-10-01",
       "title": "Wike\u2019s son denies $2.1m land deal, alleges forgery",
       "url": "https://punchng.com/wikes-son-denies-2-1m-land-deal-alleges-forgery/",
@@ -376,5 +387,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-04 02:31:36"
+  "generated": "2026-10-04 13:05:13"
 }

@@ -121,6 +121,12 @@
       "risk": "Medium"
     },
     {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
@@ -129,6 +135,12 @@
     {
       "id": "22e91132d957",
       "label": "Presidency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "737f70b3bdb8",
+      "label": "Taraba State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c049605cdfa7",
-      "label": "National Library of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0eb499263319",
       "label": "Makinde",
       "type": "person",
@@ -310,6 +310,12 @@
       "id": "56a1ac14d764",
       "label": "Nyesom Wike",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
+      "type": "company",
       "risk": "Low"
     },
     {

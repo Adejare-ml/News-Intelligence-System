@@ -1475,6 +1475,19 @@
       ]
     },
     {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "presco",
       "label": "Presco",
       "total_mentions": 2,
@@ -2507,6 +2520,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "fidson",
+      "label": "Fidson",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4100,19 +4126,6 @@
       ]
     },
     {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "osun state university",
       "label": "Osun State University",
       "total_mentions": 1,
@@ -4384,20 +4397,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "serap",
-      "label": "SERAP",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
     }
   ],
-  "generated": "2026-10-04 02:31:36"
+  "generated": "2026-10-04 13:05:13"
 }
