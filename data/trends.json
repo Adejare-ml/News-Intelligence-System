@@ -1,55 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 172,
-  "previous_articles": 148,
+  "recent_articles": 168,
+  "previous_articles": 150,
   "rising": [
     {
       "term": "premium",
-      "recent": 41,
+      "recent": 42,
       "previous": 21,
-      "change": 20
+      "change": 21
     },
     {
       "term": "premium times",
-      "recent": 41,
+      "recent": 42,
       "previous": 21,
-      "change": 20
+      "change": 21
     },
     {
       "term": "times",
-      "recent": 41,
+      "recent": 42,
       "previous": 21,
-      "change": 20
+      "change": 21
     },
     {
       "term": "guardian",
-      "recent": 57,
+      "recent": 56,
       "previous": 40,
-      "change": 17
+      "change": 16
+    },
+    {
+      "term": "court",
+      "recent": 17,
+      "previous": 4,
+      "change": 13
     },
     {
       "term": "nnpc",
       "recent": 18,
       "previous": 6,
       "change": 12
-    },
-    {
-      "term": "court",
-      "recent": 16,
-      "previous": 4,
-      "change": 12
-    },
-    {
-      "term": "cbn",
-      "recent": 14,
-      "previous": 8,
-      "change": 6
-    },
-    {
-      "term": "vanguard",
-      "recent": 7,
-      "previous": 1,
-      "change": 6
     },
     {
       "term": "opens",
@@ -62,26 +50,38 @@
       "recent": 7,
       "previous": 2,
       "change": 5
+    },
+    {
+      "term": "partner",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "profit",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
       "term": "newspapers",
-      "recent": 23,
-      "previous": 31,
-      "change": -8
+      "recent": 21,
+      "previous": 33,
+      "change": -12
     },
     {
       "term": "punch",
-      "recent": 23,
-      "previous": 31,
-      "change": -8
+      "recent": 21,
+      "previous": 33,
+      "change": -12
     },
     {
       "term": "punch newspapers",
-      "recent": 23,
-      "previous": 31,
-      "change": -8
+      "recent": 21,
+      "previous": 33,
+      "change": -12
     },
     {
       "term": "lagos",
@@ -96,6 +96,12 @@
       "change": -8
     },
     {
+      "term": "rate",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
       "term": "dangote",
       "recent": 3,
       "previous": 9,
@@ -108,39 +114,33 @@
       "change": -5
     },
     {
-      "term": "rate",
-      "recent": 1,
-      "previous": 6,
+      "term": "deal",
+      "recent": 2,
+      "previous": 7,
       "change": -5
     },
     {
-      "term": "alleged",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "dangote refinery",
-      "recent": 0,
-      "previous": 5,
+      "term": "policy",
+      "recent": 2,
+      "previous": 7,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 114,
-      "previous": 98
+      "recent": 109,
+      "previous": 100
     },
     {
       "category": "Company",
       "recent": 30,
-      "previous": 30
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 25,
-      "previous": 19
+      "recent": 26,
+      "previous": 18
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-04 02:31:32"
+  "generated": "2026-10-04 13:04:56"
 }

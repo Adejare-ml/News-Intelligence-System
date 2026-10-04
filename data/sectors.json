@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 966,
-      "mentions": 1641,
+      "companies": 965,
+      "mentions": 1640,
       "risk": {
-        "Low": 852,
+        "Low": 851,
         "Critical": 57,
         "Medium": 34,
         "High": 23
@@ -257,6 +257,14 @@
       }
     },
     {
+      "industry": "Pharmaceuticals",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Shipping",
       "companies": 1,
       "mentions": 2,
@@ -465,5 +473,5 @@
       }
     }
   ],
-  "generated": "2026-10-04 02:31:36"
+  "generated": "2026-10-04 13:05:13"
 }
