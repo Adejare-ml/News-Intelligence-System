@@ -294,28 +294,9 @@
       ]
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 37.5,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 7,
+      "total_mentions": 8,
       "points": [
         {
           "week": "2026-09-14",
@@ -331,9 +312,28 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
+          "mentions": 2,
+          "avg_risk": 17.5,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 37.5,
+          "max_risk": 65
         }
       ]
     },
@@ -1033,6 +1033,19 @@
       ]
     },
     {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 36.7,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -1471,19 +1484,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 35.0,
-          "max_risk": 40
         }
       ]
     },
@@ -3879,6 +3879,19 @@
       ]
     },
     {
+      "key": "maritime administration and shipping authority",
+      "label": "Nigerian Maritime Administration and Shipping Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "maritime labour council",
       "label": "Nigerian Maritime Labour Council",
       "total_mentions": 1,
@@ -4384,20 +4397,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "sahco",
-      "label": "SAHCO",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
     }
   ],
-  "generated": "2026-10-04 17:19:30"
+  "generated": "2026-10-04 19:59:04"
 }
