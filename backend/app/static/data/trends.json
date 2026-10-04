@@ -1,31 +1,37 @@
 {
   "window_days": 7,
-  "recent_articles": 168,
-  "previous_articles": 150,
+  "recent_articles": 170,
+  "previous_articles": 149,
   "rising": [
     {
       "term": "premium",
-      "recent": 42,
-      "previous": 21,
-      "change": 21
+      "recent": 44,
+      "previous": 20,
+      "change": 24
     },
     {
       "term": "premium times",
-      "recent": 42,
-      "previous": 21,
-      "change": 21
+      "recent": 44,
+      "previous": 20,
+      "change": 24
     },
     {
       "term": "times",
-      "recent": 42,
-      "previous": 21,
-      "change": 21
+      "recent": 44,
+      "previous": 20,
+      "change": 24
     },
     {
       "term": "guardian",
-      "recent": 56,
-      "previous": 40,
-      "change": 16
+      "recent": 55,
+      "previous": 41,
+      "change": 14
+    },
+    {
+      "term": "nnpc",
+      "recent": 19,
+      "previous": 6,
+      "change": 13
     },
     {
       "term": "court",
@@ -34,16 +40,16 @@
       "change": 13
     },
     {
-      "term": "nnpc",
-      "recent": 18,
-      "previous": 6,
-      "change": 12
-    },
-    {
       "term": "opens",
       "recent": 6,
       "previous": 0,
       "change": 6
+    },
+    {
+      "term": "security",
+      "recent": 7,
+      "previous": 2,
+      "change": 5
     },
     {
       "term": "targets",
@@ -52,15 +58,9 @@
       "change": 5
     },
     {
-      "term": "partner",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "profit",
-      "recent": 5,
-      "previous": 0,
+      "term": "vanguard",
+      "recent": 7,
+      "previous": 2,
       "change": 5
     }
   ],
@@ -68,20 +68,20 @@
     {
       "term": "newspapers",
       "recent": 21,
-      "previous": 33,
-      "change": -12
+      "previous": 32,
+      "change": -11
     },
     {
       "term": "punch",
       "recent": 21,
-      "previous": 33,
-      "change": -12
+      "previous": 32,
+      "change": -11
     },
     {
       "term": "punch newspapers",
       "recent": 21,
-      "previous": 33,
-      "change": -12
+      "previous": 32,
+      "change": -11
     },
     {
       "term": "lagos",
@@ -129,13 +129,13 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 109,
+      "recent": 111,
       "previous": 100
     },
     {
       "category": "Company",
       "recent": 30,
-      "previous": 31
+      "previous": 30
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-04 13:04:56"
+  "generated": "2026-10-04 17:19:27"
 }

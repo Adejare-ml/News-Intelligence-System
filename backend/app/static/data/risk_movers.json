@@ -60,7 +60,7 @@
       "recent_avg": 29.6,
       "previous_avg": 21.4,
       "delta": 8.2,
-      "recent_mentions": 24,
+      "recent_mentions": 25,
       "previous_mentions": 7
     },
     {
@@ -91,15 +91,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 23.3,
-      "previous_avg": 20.0,
-      "delta": 3.3,
-      "recent_mentions": 6,
-      "previous_mentions": 4
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 16.7,
@@ -107,6 +98,15 @@
       "delta": -3.3,
       "recent_mentions": 3,
       "previous_mentions": 1
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 23.3,
+      "previous_avg": 20.0,
+      "delta": 3.3,
+      "recent_mentions": 6,
+      "previous_mentions": 3
     },
     {
       "key": "federal airports authority of",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-04 13:05:13"
+  "generated": "2026-10-04 17:19:30"
 }

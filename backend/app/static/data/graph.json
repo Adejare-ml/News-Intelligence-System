@@ -139,8 +139,20 @@
       "risk": "Low"
     },
     {
+      "id": "de44b55175fc",
+      "label": "Zamfara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "737f70b3bdb8",
       "label": "Taraba State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7442313a4501",
+      "label": "West African Examinations Council",
       "type": "agency",
       "risk": "Low"
     },
@@ -225,18 +237,6 @@
     {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -370,6 +370,12 @@
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -695,18 +701,6 @@
       "label": "Sokoto State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "dc5d92c70649",
-      "label": "Nigerian Education Loan Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0452a5213a8a",
-      "label": "Bayero University Kano",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -951,6 +945,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "c5d665250caa",
+      "from": "334c4a4c42fd",
+      "to": "de44b55175fc",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "5a207bb7ae7a",
       "from": "a2f42bfa75e2",
       "to": "9e83fbd49a6c",
@@ -1032,12 +1032,6 @@
       "id": "6c17551ed467",
       "from": "334c4a4c42fd",
       "to": "71c725d016c7",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "fbb24378c9ac",
-      "from": "0452a5213a8a",
-      "to": "dc5d92c70649",
       "label": "Contract Awardee"
     }
   ]
