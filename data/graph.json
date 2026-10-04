@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "de44b55175fc",
       "label": "Zamfara State Government",
       "type": "agency",
@@ -153,6 +159,12 @@
     {
       "id": "7442313a4501",
       "label": "West African Examinations Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "30ebb482a721",
+      "label": "Nigerian Maritime Administration and Shipping Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -225,18 +237,6 @@
     {
       "id": "9e83fbd49a6c",
       "label": "ActionAid Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -475,6 +475,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "763ad8d1cb39",
       "label": "Sunbeth",
       "type": "psc",
@@ -627,12 +633,6 @@
     {
       "id": "5a98eb23f6f5",
       "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },

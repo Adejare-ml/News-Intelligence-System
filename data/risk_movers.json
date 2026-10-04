@@ -37,6 +37,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 17.5,
+      "previous_avg": 30.0,
+      "delta": -12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 35.0,
@@ -91,6 +100,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 24.0,
+      "previous_avg": 20.0,
+      "delta": 4.0,
+      "recent_mentions": 5,
+      "previous_mentions": 4
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 16.7,
@@ -98,24 +116,6 @@
       "delta": -3.3,
       "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 23.3,
-      "previous_avg": 20.0,
-      "delta": 3.3,
-      "recent_mentions": 6,
-      "previous_mentions": 3
-    },
-    {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "recent_avg": 17.5,
-      "previous_avg": 20.0,
-      "delta": -2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -174,13 +174,13 @@
     {
       "key": "osun state government",
       "label": "Osun State Government",
-      "recent_avg": 35.0,
+      "recent_avg": 36.7,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-04 17:19:30"
+  "generated": "2026-10-04 19:59:04"
 }

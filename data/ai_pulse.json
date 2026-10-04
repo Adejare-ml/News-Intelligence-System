@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-04 17:19:27",
+  "generated": "2026-10-04 19:59:02",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1130,
+      "likes": 1162,
       "downloads": 4214
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5130,
+      "likes": 5144,
       "downloads": 3752
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3055,
+      "likes": 3095,
       "downloads": 1553744
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6238,
+      "likes": 6269,
       "downloads": 1626951
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 407,
+      "likes": 419,
       "downloads": 6372
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 353,
+      "likes": 372,
       "downloads": 1135
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16912,
+      "likes": 16926,
       "downloads": 6821761
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2929,
+      "likes": 2936,
       "downloads": 90003
     }
   ],
@@ -67,7 +67,7 @@
     {
       "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
       "url": "https://huggingface.co/papers/2610.01092",
-      "upvotes": 22
+      "upvotes": 25
     },
     {
       "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
@@ -77,17 +77,17 @@
     {
       "title": "Video Generation Models: A Survey of Post-Training and Alignment",
       "url": "https://huggingface.co/papers/2610.00812",
-      "upvotes": 44
+      "upvotes": 49
     },
     {
       "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
       "url": "https://huggingface.co/papers/2609.36388",
-      "upvotes": 40
+      "upvotes": 44
     },
     {
       "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
       "url": "https://huggingface.co/papers/2609.36585",
-      "upvotes": 63
+      "upvotes": 65
     }
   ]
 }

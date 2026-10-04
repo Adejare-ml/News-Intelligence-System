@@ -1,31 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 170,
+  "recent_articles": 171,
   "previous_articles": 149,
   "rising": [
     {
       "term": "premium",
-      "recent": 44,
+      "recent": 45,
       "previous": 20,
-      "change": 24
+      "change": 25
     },
     {
       "term": "premium times",
-      "recent": 44,
+      "recent": 45,
       "previous": 20,
-      "change": 24
+      "change": 25
     },
     {
       "term": "times",
-      "recent": 44,
+      "recent": 45,
       "previous": 20,
-      "change": 24
+      "change": 25
     },
     {
-      "term": "guardian",
-      "recent": 55,
-      "previous": 41,
-      "change": 14
+      "term": "court",
+      "recent": 18,
+      "previous": 3,
+      "change": 15
     },
     {
       "term": "nnpc",
@@ -34,16 +34,16 @@
       "change": 13
     },
     {
-      "term": "court",
-      "recent": 17,
-      "previous": 4,
-      "change": 13
+      "term": "guardian",
+      "recent": 53,
+      "previous": 41,
+      "change": 12
     },
     {
       "term": "opens",
-      "recent": 6,
+      "recent": 7,
       "previous": 0,
-      "change": 6
+      "change": 7
     },
     {
       "term": "security",
@@ -130,7 +130,7 @@
     {
       "category": "Government",
       "recent": 111,
-      "previous": 100
+      "previous": 101
     },
     {
       "category": "Company",
@@ -139,8 +139,8 @@
     },
     {
       "category": "Legal",
-      "recent": 26,
-      "previous": 18
+      "recent": 27,
+      "previous": 17
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-04 17:19:27"
+  "generated": "2026-10-04 19:59:02"
 }
