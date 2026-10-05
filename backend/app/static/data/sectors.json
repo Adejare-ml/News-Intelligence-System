@@ -14,12 +14,12 @@
     {
       "industry": "Oil & Gas",
       "companies": 24,
-      "mentions": 131,
+      "mentions": 132,
       "risk": {
         "Critical": 1,
-        "Medium": 4,
-        "Low": 18,
-        "High": 1
+        "High": 2,
+        "Medium": 3,
+        "Low": 18
       }
     },
     {
@@ -33,7 +33,7 @@
     {
       "industry": "Banking",
       "companies": 12,
-      "mentions": 15,
+      "mentions": 16,
       "risk": {
         "Low": 9,
         "Medium": 3
@@ -102,6 +102,15 @@
       }
     },
     {
+      "industry": "Construction",
+      "companies": 5,
+      "mentions": 6,
+      "risk": {
+        "Medium": 3,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
       "mentions": 6,
@@ -116,15 +125,6 @@
       "risk": {
         "Low": 3,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 4,
-      "mentions": 5,
-      "risk": {
-        "Medium": 2,
-        "Low": 2
       }
     },
     {
@@ -473,5 +473,5 @@
       }
     }
   ],
-  "generated": "2026-10-04 19:59:04"
+  "generated": "2026-10-05 01:51:06"
 }
