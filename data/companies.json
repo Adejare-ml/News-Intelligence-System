@@ -6321,10 +6321,10 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 57,
-    "Last Seen": "2026-10-02 13:32",
+    "Mention Count": 58,
+    "Last Seen": "2026-10-05 01:47",
     "Industry": "Oil & Gas",
-    "Risk Level": "Medium",
+    "Risk Level": "High",
     "First Seen": ""
   },
   {
@@ -8745,10 +8745,18 @@
   },
   {
     "Company": "Greenwich Bank",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-03 19:45",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-05 01:48",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": "2026-10-03 19:45"
+  },
+  {
+    "Company": "Hitech Construction Company",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-05 01:47",
+    "Industry": "Construction",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-05 01:47"
   }
 ]

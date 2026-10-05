@@ -10,7 +10,7 @@
       "id": "f38bd75574f6",
       "label": "Nigerian National Petroleum Company Limited",
       "type": "company",
-      "risk": "Medium"
+      "risk": "High"
     },
     {
       "id": "e534e0dfb211",
@@ -121,8 +121,44 @@
       "risk": "Medium"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b27f282d6347",
       "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7442313a4501",
+      "label": "West African Examinations Council",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,12 +193,6 @@
       "risk": "Low"
     },
     {
-      "id": "7442313a4501",
-      "label": "West African Examinations Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "30ebb482a721",
       "label": "Nigerian Maritime Administration and Shipping Authority",
       "type": "agency",
@@ -177,12 +207,6 @@
     {
       "id": "4f3be5c55ea4",
       "label": "Presidency of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,27 +241,33 @@
       "risk": "Low"
     },
     {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "3933ac79ce03",
-      "label": "Corporate Affairs Commission",
-      "type": "agency",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "2072dc5e7548",
-      "label": "Local Government Councils",
-      "type": "agency",
+      "id": "e153c1875584",
+      "label": "Dave Umahi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "9e83fbd49a6c",
-      "label": "ActionAid Nigeria",
-      "type": "agency",
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "9f0af401d6d0",
+      "label": "Suleiman Kum",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -280,6 +310,12 @@
       "id": "b938970b0806",
       "label": "Unnamed ex-spokesperson",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -373,12 +409,6 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
@@ -433,12 +463,6 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "5e49b3d528a0",
       "label": "William Ruto",
       "type": "person",
@@ -447,36 +471,6 @@
     {
       "id": "98778bafe148",
       "label": "Government of Kenya",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ff19dbb82a9e",
-      "label": "Olukoyede",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "2388a11cf55e",
-      "label": "Ola Olukoyede",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "58c58351d674",
-      "label": "Olayemi Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
       "type": "company",
       "risk": "Low"
     },
@@ -625,6 +619,18 @@
       "risk": "Medium"
     },
     {
+      "id": "4001ece73e38",
+      "label": "Hitech Construction Company",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "9e83fbd49a6c",
+      "label": "ActionAid Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a2f42bfa75e2",
       "label": "Women's Rights Groups",
       "type": "company",
@@ -704,6 +710,24 @@
     }
   ],
   "edges": [
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "81c12b1ceeb0",
+      "from": "e153c1875584",
+      "to": "23d8905a6cbb",
+      "label": "Appointed as Minister"
+    },
+    {
+      "id": "fcaea2c202a9",
+      "from": "9f0af401d6d0",
+      "to": "7442313a4501",
+      "label": "Appointed as Nigeria Office Head"
+    },
     {
       "id": "bafaa84feaf3",
       "from": "0eb499263319",
@@ -837,24 +861,6 @@
       "label": "Appointed as President"
     },
     {
-      "id": "a02eeea3dabb",
-      "from": "ff19dbb82a9e",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as Accuser/Whistleblower"
-    },
-    {
-      "id": "173d8cf4554e",
-      "from": "2388a11cf55e",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as Chairman"
-    },
-    {
-      "id": "fd1604102e20",
-      "from": "58c58351d674",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "65d32072e59e",
       "from": "763ad8d1cb39",
       "to": "71399a9ad4ea",
@@ -943,6 +949,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "7b5b5c2926f5",
+      "from": "4001ece73e38",
+      "to": "23d8905a6cbb",
+      "label": "Contract Awardee"
     },
     {
       "id": "c5d665250caa",

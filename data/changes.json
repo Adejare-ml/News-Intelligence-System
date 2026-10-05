@@ -1,17 +1,28 @@
 {
-  "new_companies": [],
-  "new_people": [],
+  "new_companies": [
+    "Hitech Construction Company"
+  ],
+  "new_people": [
+    "Dave Umahi",
+    "Suleiman Kum"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "N802bn audit breaches: Reps probe NNPC, INEC - punchng.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBSeGZOSmsyU0J5Um4xUm9rX0ZQaUEwMWpPelltREloZldremQ2LWhrNlhiWUc3WU1qQVViZ2w0RGRMVEs3cVBUeUxvY2dRM2xoMHpLVVlpSjNpbWFmb1NrUUY5SDN1NlFjbTcwNUVNQ1M?oc=5",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
+    "new_companies": 1,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-04 19:58:58"
+  "generated": "2026-10-05 01:51:01"
 }

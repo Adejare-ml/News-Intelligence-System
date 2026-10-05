@@ -1,6 +1,19 @@
 {
   "alerts": [
     {
+      "date": "2026-10-05",
+      "title": "N802bn audit breaches: Reps probe NNPC, INEC - punchng.com",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBSeGZOSmsyU0J5Um4xUm9rX0ZQaUEwMWpPelltREloZldremQ2LWhrNlhiWUc3WU1qQVViZ2w0RGRMVEs3cVBUeUxvY2dRM2xoMHpLVVlpSjNpbWFmb1NrUUY5SDN1NlFjbTcwNUVNQ1M?oc=5",
+      "source": "punchng.com",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Nigerian National Petroleum Company",
+        "Independent National Electoral Commission",
+        "House of Representatives"
+      ]
+    },
+    {
       "date": "2026-10-04",
       "title": "Government, security officials aiding illegal mining \u2013 Taraba governor - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVlpRME1UVXZJNXRwMWw4M3duQXduQmRFSDBaS0pBaHZzTzRSRUdtTGo4RkhaVWd0cjQwVGV2MGY0X2FYSjJ6ajF5cXZaNnFYaUhnVDNSMlhOLVpuXzRXN1psb2FNeFJabllqRXAzbmduMFhFdmQtLWFNOTU0c2VLVXNrUVkxdjVsRGRkOEFlZXJkaE5hUGZOc0R4Y1VkV285UTlNdVA3QlJLREVmMjZ1clRZTVlTdHdCR1J1RUltUEZPZw?oc=5",
@@ -387,5 +400,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-04 19:59:04"
+  "generated": "2026-10-05 01:51:06"
 }

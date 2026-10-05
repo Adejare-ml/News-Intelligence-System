@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-04 19:59:02",
+  "generated": "2026-10-05 01:51:02",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1162,
+      "likes": 1217,
       "downloads": 4214
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5144,
+      "likes": 5165,
       "downloads": 3752
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3095,
+      "likes": 3145,
       "downloads": 1553744
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6269,
+      "likes": 6316,
       "downloads": 1626951
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 419,
+      "likes": 429,
       "downloads": 6372
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 372,
+      "likes": 400,
       "downloads": 1135
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16926,
+      "likes": 16939,
       "downloads": 6821761
     },
     {
       "id": "Qwen/Qwen-Image-2.1",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
       "task": "text-to-image",
-      "likes": 2936,
+      "likes": 2948,
       "downloads": 90003
     }
   ],
@@ -77,17 +77,17 @@
     {
       "title": "Video Generation Models: A Survey of Post-Training and Alignment",
       "url": "https://huggingface.co/papers/2610.00812",
-      "upvotes": 49
+      "upvotes": 55
     },
     {
       "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
       "url": "https://huggingface.co/papers/2609.36388",
-      "upvotes": 44
+      "upvotes": 48
     },
     {
       "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
       "url": "https://huggingface.co/papers/2609.36585",
-      "upvotes": 65
+      "upvotes": 69
     }
   ]
 }

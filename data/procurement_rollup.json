@@ -44,8 +44,8 @@
     },
     {
       "name": "Federal Ministry of Works",
-      "contracts": 4,
-      "undisclosed": 3,
+      "contracts": 5,
+      "undisclosed": 4,
       "totals": {
         "NGN": 41050000000.0
       }
@@ -760,6 +760,12 @@
       "totals": {}
     },
     {
+      "name": "Hitech Construction Company",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Hughes",
       "contracts": 1,
       "undisclosed": 1,
@@ -932,5 +938,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-04 19:59:04"
+  "generated": "2026-10-05 01:51:06"
 }

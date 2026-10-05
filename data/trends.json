@@ -1,37 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 171,
-  "previous_articles": 149,
+  "recent_articles": 172,
+  "previous_articles": 150,
   "rising": [
     {
       "term": "premium",
-      "recent": 45,
+      "recent": 44,
       "previous": 20,
-      "change": 25
+      "change": 24
     },
     {
       "term": "premium times",
-      "recent": 45,
+      "recent": 44,
       "previous": 20,
-      "change": 25
+      "change": 24
     },
     {
       "term": "times",
-      "recent": 45,
+      "recent": 44,
       "previous": 20,
-      "change": 25
+      "change": 24
     },
     {
       "term": "court",
-      "recent": 18,
-      "previous": 3,
-      "change": 15
-    },
-    {
-      "term": "nnpc",
       "recent": 19,
-      "previous": 6,
-      "change": 13
+      "previous": 3,
+      "change": 16
     },
     {
       "term": "guardian",
@@ -40,25 +34,31 @@
       "change": 12
     },
     {
+      "term": "nnpc",
+      "recent": 18,
+      "previous": 6,
+      "change": 12
+    },
+    {
+      "term": "com",
+      "recent": 17,
+      "previous": 9,
+      "change": 8
+    },
+    {
       "term": "opens",
-      "recent": 7,
+      "recent": 8,
       "previous": 0,
-      "change": 7
+      "change": 8
     },
     {
-      "term": "security",
+      "term": "bank",
       "recent": 7,
-      "previous": 2,
-      "change": 5
+      "previous": 1,
+      "change": 6
     },
     {
-      "term": "targets",
-      "recent": 7,
-      "previous": 2,
-      "change": 5
-    },
-    {
-      "term": "vanguard",
+      "term": "punchng",
       "recent": 7,
       "previous": 2,
       "change": 5
@@ -67,33 +67,27 @@
   "falling": [
     {
       "term": "newspapers",
-      "recent": 21,
-      "previous": 32,
+      "recent": 19,
+      "previous": 30,
       "change": -11
     },
     {
       "term": "punch",
-      "recent": 21,
-      "previous": 32,
+      "recent": 19,
+      "previous": 30,
       "change": -11
     },
     {
       "term": "punch newspapers",
-      "recent": 21,
-      "previous": 32,
+      "recent": 19,
+      "previous": 30,
       "change": -11
-    },
-    {
-      "term": "lagos",
-      "recent": 5,
-      "previous": 13,
-      "change": -8
     },
     {
       "term": "efcc",
       "recent": 2,
-      "previous": 10,
-      "change": -8
+      "previous": 9,
+      "change": -7
     },
     {
       "term": "rate",
@@ -108,15 +102,15 @@
       "change": -6
     },
     {
+      "term": "unveils",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
+    },
+    {
       "term": "investment",
       "recent": 3,
       "previous": 8,
-      "change": -5
-    },
-    {
-      "term": "deal",
-      "recent": 2,
-      "previous": 7,
       "change": -5
     },
     {
@@ -124,18 +118,24 @@
       "recent": 2,
       "previous": 7,
       "change": -5
+    },
+    {
+      "term": "first",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 111,
-      "previous": 101
+      "recent": 112,
+      "previous": 100
     },
     {
       "category": "Company",
       "recent": 30,
-      "previous": 30
+      "previous": 32
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-04 19:59:02"
+  "generated": "2026-10-05 01:51:03"
 }
