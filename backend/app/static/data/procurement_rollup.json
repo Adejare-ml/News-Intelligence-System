@@ -222,6 +222,12 @@
       "totals": {}
     },
     {
+      "name": "Zamfara State Government",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
       "name": "Celtic",
       "contracts": 2,
       "undisclosed": 2,
@@ -261,12 +267,6 @@
     },
     {
       "name": "The Guardian Nigeria News",
-      "contracts": 2,
-      "undisclosed": 2,
-      "totals": {}
-    },
-    {
-      "name": "Zamfara State Government",
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
@@ -547,8 +547,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 90,
-      "undisclosed": 58,
+      "contracts": 91,
+      "undisclosed": 59,
       "totals": {
         "NGN": 5099816090000.0,
         "USD": 20583240000.0
@@ -945,5 +945,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-05 15:38:31"
+  "generated": "2026-10-05 23:10:50"
 }

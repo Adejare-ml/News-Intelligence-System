@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 24,
-      "mentions": 135,
+      "mentions": 136,
       "risk": {
         "Critical": 1,
         "High": 2,
@@ -377,6 +377,14 @@
       }
     },
     {
+      "industry": "Hospitality",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Labor Union",
       "companies": 1,
       "mentions": 1,
@@ -441,6 +449,14 @@
       }
     },
     {
+      "industry": "Professional Training and Certification",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Publishing",
       "companies": 1,
       "mentions": 1,
@@ -473,5 +489,5 @@
       }
     }
   ],
-  "generated": "2026-10-05 15:38:31"
+  "generated": "2026-10-05 23:10:50"
 }

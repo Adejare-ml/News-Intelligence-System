@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-05 15:38:28",
+  "generated": "2026-10-05 23:10:47",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1346,
+      "likes": 1457,
       "downloads": 5416
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5207,
+      "likes": 5228,
       "downloads": 11733
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3208,
+      "likes": 3251,
       "downloads": 1638838
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 564,
+      "likes": 618,
       "downloads": 2453
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 6422,
-      "downloads": 1645444
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 478,
+      "likes": 516,
       "downloads": 8075
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 6483,
+      "downloads": 1645444
+    },
+    {
+      "id": "autotrust/JEV-27B-VL",
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "task": "image-text-to-text",
+      "likes": 516,
+      "downloads": 1278569
     },
     {
       "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "task": "text-generation",
-      "likes": 395,
+      "likes": 410,
       "downloads": 18863
-    },
-    {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "task": "image-text-to-text",
-      "likes": 16984,
-      "downloads": 6758884
     }
   ],
   "papers": [
     {
-      "title": "WEFT: Scaling Tool-Use Post-Training for General-Purpose Agents",
-      "url": "https://huggingface.co/papers/2609.36887",
-      "upvotes": 2
+      "title": "WM-VLM: Probing Internal World Models for Interleaved Visual-Textual Reasoning",
+      "url": "https://huggingface.co/papers/2609.34826",
+      "upvotes": 4
     },
     {
-      "title": "Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models",
-      "url": "https://huggingface.co/papers/2609.39820",
+      "title": "Improving Atomic-Fact Recall via Focused Views in Unstructured Knowledge Editing",
+      "url": "https://huggingface.co/papers/2610.02772",
       "upvotes": 1
     },
     {
-      "title": "Language Models that Play Chess and Explain Their Moves",
-      "url": "https://huggingface.co/papers/2610.03695",
+      "title": "Self-Supervised Scaling of Terminal Environments for Scientific Domains",
+      "url": "https://huggingface.co/papers/2610.02710",
       "upvotes": 2
     },
     {
-      "title": "Strike a Chord! Modal Kinetic Typography",
-      "url": "https://huggingface.co/papers/2609.38325",
-      "upvotes": 0
+      "title": "The Extender: A Log-Structured Transformer",
+      "url": "https://huggingface.co/papers/2609.32759",
+      "upvotes": 1
     },
     {
-      "title": "Equal Ranking Quality, Different Decisions: Measuring and Reducing Order Dependence in LLM Scorers",
-      "url": "https://huggingface.co/papers/2608.26762",
-      "upvotes": 2
+      "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
+      "url": "https://huggingface.co/papers/2610.03710",
+      "upvotes": 4
     },
     {
-      "title": "Receiver-Conditioned Latent Communication gives 94% CacheBack",
-      "url": "https://huggingface.co/papers/2609.32046",
-      "upvotes": 0
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "url": "https://huggingface.co/papers/2610.03715",
+      "upvotes": 12
     }
   ]
 }
