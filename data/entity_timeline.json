@@ -1,6 +1,37 @@
 {
   "entities": [
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 47,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 21.2,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 25,
+          "avg_risk": 31.8,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 5,
+          "avg_risk": 41.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "total_mentions": 43,
@@ -28,31 +59,6 @@
           "mentions": 12,
           "avg_risk": 21.7,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 42,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 21.2,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 25,
-          "avg_risk": 31.8,
-          "max_risk": 75
         }
       ]
     },
@@ -388,6 +394,37 @@
       ]
     },
     {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 16.7,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "total_mentions": 6,
@@ -646,6 +683,25 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "total_mentions": 4,
@@ -661,31 +717,6 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -730,6 +761,31 @@
           "week": "2026-09-28",
           "mentions": 3,
           "avg_risk": 48.3,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
           "max_risk": 65
         }
       ]
@@ -900,25 +956,6 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
@@ -1103,6 +1140,25 @@
       ]
     },
     {
+      "key": "west african examinations council",
+      "label": "West African Examinations Council",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "amni",
       "label": "AMNI",
       "total_mentions": 2,
@@ -1170,25 +1226,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -1314,6 +1351,25 @@
       ]
     },
     {
+      "key": "lagos state waste management authority",
+      "label": "Lagos State Waste Management Authority",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 2,
@@ -1399,6 +1455,25 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 12.5,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
           "max_risk": 15
         }
       ]
@@ -1676,19 +1751,6 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "west african examinations council",
-      "label": "West African Examinations Council",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2317,6 +2379,19 @@
       ]
     },
     {
+      "key": "council for the regulation of engineering in",
+      "label": "Council for the Regulation of Engineering in Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "credit guarantee company",
       "label": "Credit Guarantee Company",
       "total_mentions": 1,
@@ -2404,6 +2479,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "david umahi",
+      "label": "David Umahi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -2824,6 +2912,19 @@
       ]
     },
     {
+      "key": "hitech construction",
+      "label": "Hitech Construction",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "hitech construction company",
       "label": "Hitech Construction Company",
       "total_mentions": 1,
@@ -3155,19 +3256,6 @@
       "points": [
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "lagos state waste management authority",
-      "label": "Lagos State Waste Management Authority",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -3604,19 +3692,6 @@
       ]
     },
     {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "national library of",
       "label": "National Library of Nigeria",
       "total_mentions": 1,
@@ -3864,6 +3939,19 @@
       ]
     },
     {
+      "key": "building and road research institute",
+      "label": "Nigerian Building and Road Research Institute",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "total_mentions": 1,
@@ -4094,6 +4182,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ogun state house of assembly",
+      "label": "Ogun State House of Assembly",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -4356,72 +4457,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "prudential zenith life insurance",
-      "label": "Prudential Zenith Life Insurance Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "qed investors",
-      "label": "QED Investors",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "rmb",
-      "label": "RMB",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "redeemed christian church of god",
-      "label": "Redeemed Christian Church of God",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "revenue mobilization allocation and fiscal commission",
-      "label": "Revenue Mobilization Allocation and Fiscal Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-05 01:51:06"
+  "generated": "2026-10-05 15:38:31"
 }

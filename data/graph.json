@@ -139,8 +139,26 @@
       "risk": "Low"
     },
     {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b27f282d6347",
       "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "35ed6439a988",
+      "label": "Ogun State House of Assembly",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,8 +175,32 @@
       "risk": "Low"
     },
     {
+      "id": "0b2ac17f47f4",
+      "label": "Lagos State Waste Management Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7442313a4501",
       "label": "West African Examinations Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bc966b1f3428",
+      "label": "Council for the Regulation of Engineering in Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6b5cd03ba9dc",
+      "label": "Nigerian Building and Road Research Institute",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,45 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
-      "type": "agency",
+      "id": "292e5aa14acd",
+      "label": "David Umahi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "4f3be5c55ea4",
-      "label": "Presidency of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1e4acfd46918",
-      "label": "Bank of Agriculture",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "19e301887487",
-      "label": "National Hajj Commission of Nigeria",
-      "type": "agency",
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -256,12 +268,6 @@
       "id": "e153c1875584",
       "label": "Dave Umahi",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -301,6 +307,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "2ff28e78e954",
       "label": "Aliyu",
       "type": "person",
@@ -334,6 +346,12 @@
       "id": "fcf4c05afdc4",
       "label": "Rotimi Amaechi",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -460,18 +478,6 @@
       "id": "163087c74c5d",
       "label": "Joash Amupitan",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "5e49b3d528a0",
-      "label": "William Ruto",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "98778bafe148",
-      "label": "Government of Kenya",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -619,6 +625,12 @@
       "risk": "Medium"
     },
     {
+      "id": "c15a6abe6f6b",
+      "label": "Hitech Construction",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "4001ece73e38",
       "label": "Hitech Construction Company",
       "type": "company",
@@ -695,21 +707,15 @@
       "label": "NNPC Biofuels",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "88997c363235",
-      "label": "Chinese companies",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "71c725d016c7",
-      "label": "Sokoto State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "b268c9e64d5a",
+      "from": "292e5aa14acd",
+      "to": "23d8905a6cbb",
+      "label": "Appointed as Minister of Works"
+    },
     {
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
@@ -855,12 +861,6 @@
       "label": "Appointed as Chairman"
     },
     {
-      "id": "e2ec68f58eee",
-      "from": "5e49b3d528a0",
-      "to": "98778bafe148",
-      "label": "Appointed as President"
-    },
-    {
       "id": "65d32072e59e",
       "from": "763ad8d1cb39",
       "to": "71399a9ad4ea",
@@ -951,6 +951,18 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "df311b7e567c",
+      "from": "334c4a4c42fd",
+      "to": "ebba2aef82e9",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "472eb2e43ea2",
+      "from": "c15a6abe6f6b",
+      "to": "23d8905a6cbb",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "7b5b5c2926f5",
       "from": "4001ece73e38",
       "to": "23d8905a6cbb",
@@ -1032,18 +1044,6 @@
       "id": "8e4bcb3351e0",
       "from": "52ff2e9b0415",
       "to": "f70c95991c72",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "3a5a0e0feb7a",
-      "from": "88997c363235",
-      "to": "ebba2aef82e9",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "6c17551ed467",
-      "from": "334c4a4c42fd",
-      "to": "71c725d016c7",
       "label": "Contract Awardee"
     }
   ]
