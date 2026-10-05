@@ -27,6 +27,15 @@
       }
     },
     {
+      "name": "Nigerian National Petroleum Company",
+      "contracts": 5,
+      "undisclosed": 3,
+      "totals": {
+        "USD": 20000000000.0,
+        "NGN": 473800000000.0
+      }
+    },
+    {
       "name": "Akwa Ibom State Government",
       "contracts": 5,
       "undisclosed": 2,
@@ -44,8 +53,8 @@
     },
     {
       "name": "Federal Ministry of Works",
-      "contracts": 5,
-      "undisclosed": 4,
+      "contracts": 6,
+      "undisclosed": 5,
       "totals": {
         "NGN": 41050000000.0
       }
@@ -192,14 +201,6 @@
       "undisclosed": 1,
       "totals": {
         "USD": 35000000000.0
-      }
-    },
-    {
-      "name": "Nigerian National Petroleum Company",
-      "contracts": 4,
-      "undisclosed": 3,
-      "totals": {
-        "USD": 20000000000.0
       }
     },
     {
@@ -546,10 +547,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 89,
+      "contracts": 90,
       "undisclosed": 58,
       "totals": {
-        "NGN": 4626016090000.0,
+        "NGN": 5099816090000.0,
         "USD": 20583240000.0
       }
     },
@@ -760,6 +761,12 @@
       "totals": {}
     },
     {
+      "name": "Hitech Construction",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Hitech Construction Company",
       "contracts": 1,
       "undisclosed": 1,
@@ -938,5 +945,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-05 01:51:06"
+  "generated": "2026-10-05 15:38:31"
 }

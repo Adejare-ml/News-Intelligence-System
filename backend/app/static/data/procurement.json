@@ -1568,5 +1568,25 @@
     "Date": "2026-10-05",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Ministry of Works",
+    "Contractor": "Hitech Construction",
+    "Amount": "None",
+    "Project": "Lagos-Calabar coastal highway",
+    "Source": "Punch Newspapers",
+    "Date": "2026-10-05",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Nigerian National Petroleum Company",
+    "Contractor": "None",
+    "Amount": "N473.8 Billion",
+    "Project": "Major gas infrastructure",
+    "Source": "Punch Newspapers",
+    "Date": "2026-10-05",
+    "Amount Value": 473800000000.0,
+    "Amount Currency": "NGN"
   }
 ]

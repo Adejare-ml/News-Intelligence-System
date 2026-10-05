@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-05 01:51:02",
+  "generated": "2026-10-05 15:38:28",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1217,
-      "downloads": 4214
+      "likes": 1346,
+      "downloads": 5416
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5165,
-      "downloads": 3752
+      "likes": 5207,
+      "downloads": 11733
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3145,
-      "downloads": 1553744
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 6316,
-      "downloads": 1626951
-    },
-    {
-      "id": "Cloudflare/clef-flash",
-      "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "task": "image-text-to-text",
-      "likes": 429,
-      "downloads": 6372
+      "likes": 3208,
+      "downloads": 1638838
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 400,
-      "downloads": 1135
+      "likes": 564,
+      "downloads": 2453
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 6422,
+      "downloads": 1645444
+    },
+    {
+      "id": "Cloudflare/clef-flash",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "task": "image-text-to-text",
+      "likes": 478,
+      "downloads": 8075
+    },
+    {
+      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "task": "text-generation",
+      "likes": 395,
+      "downloads": 18863
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 16939,
-      "downloads": 6821761
-    },
-    {
-      "id": "Qwen/Qwen-Image-2.1",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
-      "task": "text-to-image",
-      "likes": 2948,
-      "downloads": 90003
+      "likes": 16984,
+      "downloads": 6758884
     }
   ],
   "papers": [
     {
-      "title": "Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration",
-      "url": "https://huggingface.co/papers/2609.22753",
-      "upvotes": 5
+      "title": "WEFT: Scaling Tool-Use Post-Training for General-Purpose Agents",
+      "url": "https://huggingface.co/papers/2609.36887",
+      "upvotes": 2
     },
     {
-      "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
-      "url": "https://huggingface.co/papers/2610.01092",
-      "upvotes": 25
+      "title": "Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models",
+      "url": "https://huggingface.co/papers/2609.39820",
+      "upvotes": 1
     },
     {
-      "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
-      "url": "https://huggingface.co/papers/2609.36435",
-      "upvotes": 7
+      "title": "Language Models that Play Chess and Explain Their Moves",
+      "url": "https://huggingface.co/papers/2610.03695",
+      "upvotes": 2
     },
     {
-      "title": "Video Generation Models: A Survey of Post-Training and Alignment",
-      "url": "https://huggingface.co/papers/2610.00812",
-      "upvotes": 55
+      "title": "Strike a Chord! Modal Kinetic Typography",
+      "url": "https://huggingface.co/papers/2609.38325",
+      "upvotes": 0
     },
     {
-      "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
-      "url": "https://huggingface.co/papers/2609.36388",
-      "upvotes": 48
+      "title": "Equal Ranking Quality, Different Decisions: Measuring and Reducing Order Dependence in LLM Scorers",
+      "url": "https://huggingface.co/papers/2608.26762",
+      "upvotes": 2
     },
     {
-      "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
-      "url": "https://huggingface.co/papers/2609.36585",
-      "upvotes": 69
+      "title": "Receiver-Conditioned Latent Communication gives 94% CacheBack",
+      "url": "https://huggingface.co/papers/2609.32046",
+      "upvotes": 0
     }
   ]
 }

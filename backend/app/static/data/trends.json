@@ -1,49 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 172,
-  "previous_articles": 150,
+  "recent_articles": 171,
+  "previous_articles": 160,
   "rising": [
     {
       "term": "premium",
-      "recent": 44,
-      "previous": 20,
-      "change": 24
-    },
-    {
-      "term": "premium times",
-      "recent": 44,
-      "previous": 20,
-      "change": 24
-    },
-    {
-      "term": "times",
-      "recent": 44,
-      "previous": 20,
-      "change": 24
-    },
-    {
-      "term": "court",
-      "recent": 19,
-      "previous": 3,
+      "recent": 39,
+      "previous": 23,
       "change": 16
     },
     {
-      "term": "guardian",
-      "recent": 53,
-      "previous": 41,
-      "change": 12
+      "term": "premium times",
+      "recent": 39,
+      "previous": 23,
+      "change": 16
+    },
+    {
+      "term": "times",
+      "recent": 39,
+      "previous": 23,
+      "change": 16
     },
     {
       "term": "nnpc",
-      "recent": 18,
+      "recent": 21,
       "previous": 6,
+      "change": 15
+    },
+    {
+      "term": "court",
+      "recent": 17,
+      "previous": 5,
       "change": 12
     },
     {
       "term": "com",
-      "recent": 17,
-      "previous": 9,
-      "change": 8
+      "recent": 20,
+      "previous": 10,
+      "change": 10
     },
     {
       "term": "opens",
@@ -52,36 +46,42 @@
       "change": 8
     },
     {
-      "term": "bank",
-      "recent": 7,
-      "previous": 1,
+      "term": "guardian",
+      "recent": 53,
+      "previous": 47,
       "change": 6
     },
     {
       "term": "punchng",
-      "recent": 7,
+      "recent": 8,
       "previous": 2,
-      "change": 5
+      "change": 6
+    },
+    {
+      "term": "punchng com",
+      "recent": 8,
+      "previous": 2,
+      "change": 6
     }
   ],
   "falling": [
     {
       "term": "newspapers",
-      "recent": 19,
+      "recent": 22,
       "previous": 30,
-      "change": -11
+      "change": -8
     },
     {
       "term": "punch",
-      "recent": 19,
+      "recent": 22,
       "previous": 30,
-      "change": -11
+      "change": -8
     },
     {
       "term": "punch newspapers",
-      "recent": 19,
+      "recent": 22,
       "previous": 30,
-      "change": -11
+      "change": -8
     },
     {
       "term": "efcc",
@@ -108,9 +108,9 @@
       "change": -6
     },
     {
-      "term": "investment",
-      "recent": 3,
-      "previous": 8,
+      "term": "cbn",
+      "recent": 8,
+      "previous": 13,
       "change": -5
     },
     {
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 112,
-      "previous": 100
+      "recent": 116,
+      "previous": 106
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 32
+      "recent": 28,
+      "previous": 34
     },
     {
       "category": "Legal",
-      "recent": 27,
-      "previous": 17
+      "recent": 24,
+      "previous": 19
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-05 01:51:03"
+  "generated": "2026-10-05 15:38:28"
 }
