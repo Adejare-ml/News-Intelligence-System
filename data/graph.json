@@ -121,6 +121,18 @@
       "risk": "Medium"
     },
     {
+      "id": "33d3c13cc972",
+      "label": "Federal High Court",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -175,6 +187,12 @@
       "risk": "Low"
     },
     {
+      "id": "de44b55175fc",
+      "label": "Zamfara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0b2ac17f47f4",
       "label": "Lagos State Waste Management Authority",
       "type": "agency",
@@ -219,24 +237,6 @@
     {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "de44b55175fc",
-      "label": "Zamfara State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "737f70b3bdb8",
-      "label": "Taraba State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "30ebb482a721",
-      "label": "Nigerian Maritime Administration and Shipping Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -695,18 +695,6 @@
       "label": "AG Vision",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "f70c95991c72",
-      "label": "Ogun-Osun River Basin Development Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "52ff2e9b0415",
-      "label": "NNPC Biofuels",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -951,6 +939,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "c5d665250caa",
+      "from": "334c4a4c42fd",
+      "to": "de44b55175fc",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "df311b7e567c",
       "from": "334c4a4c42fd",
       "to": "ebba2aef82e9",
@@ -966,12 +960,6 @@
       "id": "7b5b5c2926f5",
       "from": "4001ece73e38",
       "to": "23d8905a6cbb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c5d665250caa",
-      "from": "334c4a4c42fd",
-      "to": "de44b55175fc",
       "label": "Contract Awardee"
     },
     {
@@ -1038,12 +1026,6 @@
       "id": "c1b0fe364907",
       "from": "b712af6560e0",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "8e4bcb3351e0",
-      "from": "52ff2e9b0415",
-      "to": "f70c95991c72",
       "label": "Contract Awardee"
     }
   ]

@@ -1,55 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 171,
-  "previous_articles": 160,
+  "recent_articles": 168,
+  "previous_articles": 163,
   "rising": [
-    {
-      "term": "premium",
-      "recent": 39,
-      "previous": 23,
-      "change": 16
-    },
-    {
-      "term": "premium times",
-      "recent": 39,
-      "previous": 23,
-      "change": 16
-    },
-    {
-      "term": "times",
-      "recent": 39,
-      "previous": 23,
-      "change": 16
-    },
     {
       "term": "nnpc",
       "recent": 21,
-      "previous": 6,
-      "change": 15
-    },
-    {
-      "term": "court",
-      "recent": 17,
       "previous": 5,
-      "change": 12
+      "change": 16
     },
     {
       "term": "com",
-      "recent": 20,
+      "recent": 22,
       "previous": 10,
-      "change": 10
+      "change": 12
+    },
+    {
+      "term": "premium",
+      "recent": 34,
+      "previous": 26,
+      "change": 8
+    },
+    {
+      "term": "premium times",
+      "recent": 34,
+      "previous": 26,
+      "change": 8
+    },
+    {
+      "term": "times",
+      "recent": 34,
+      "previous": 26,
+      "change": 8
     },
     {
       "term": "opens",
       "recent": 8,
       "previous": 0,
       "change": 8
-    },
-    {
-      "term": "guardian",
-      "recent": 53,
-      "previous": 47,
-      "change": 6
     },
     {
       "term": "punchng",
@@ -62,33 +50,21 @@
       "recent": 8,
       "previous": 2,
       "change": 6
+    },
+    {
+      "term": "partner",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
+    {
+      "term": "premiumtimesng",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
     }
   ],
   "falling": [
-    {
-      "term": "newspapers",
-      "recent": 22,
-      "previous": 30,
-      "change": -8
-    },
-    {
-      "term": "punch",
-      "recent": 22,
-      "previous": 30,
-      "change": -8
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 22,
-      "previous": 30,
-      "change": -8
-    },
-    {
-      "term": "efcc",
-      "recent": 2,
-      "previous": 9,
-      "change": -7
-    },
     {
       "term": "rate",
       "recent": 0,
@@ -102,15 +78,33 @@
       "change": -6
     },
     {
-      "term": "unveils",
-      "recent": 0,
-      "previous": 6,
+      "term": "efcc",
+      "recent": 3,
+      "previous": 9,
       "change": -6
     },
     {
-      "term": "cbn",
-      "recent": 8,
-      "previous": 13,
+      "term": "newspapers",
+      "recent": 23,
+      "previous": 28,
+      "change": -5
+    },
+    {
+      "term": "punch",
+      "recent": 23,
+      "previous": 28,
+      "change": -5
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 23,
+      "previous": 28,
+      "change": -5
+    },
+    {
+      "term": "investment",
+      "recent": 2,
+      "previous": 7,
       "change": -5
     },
     {
@@ -124,6 +118,12 @@
       "recent": 1,
       "previous": 6,
       "change": -5
+    },
+    {
+      "term": "dangote refinery",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
     }
   ],
   "categories": [
@@ -134,13 +134,13 @@
     },
     {
       "category": "Company",
-      "recent": 28,
-      "previous": 34
+      "recent": 29,
+      "previous": 33
     },
     {
       "category": "Legal",
-      "recent": 24,
-      "previous": 19
+      "recent": 20,
+      "previous": 23
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-05 15:38:28"
+  "generated": "2026-10-05 23:10:47"
 }

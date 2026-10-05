@@ -1,40 +1,31 @@
 {
   "movers": [
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 38.3,
-      "previous_avg": 15.0,
-      "delta": 23.3,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 30.0,
       "previous_avg": 51.7,
       "delta": -21.7,
-      "recent_mentions": 2,
-      "previous_mentions": 9
-    },
-    {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "recent_avg": 48.3,
-      "previous_avg": 30.0,
-      "delta": 18.3,
       "recent_mentions": 3,
-      "previous_mentions": 1
+      "previous_mentions": 9
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 34.1,
-      "previous_avg": 17.1,
+      "recent_avg": 33.7,
+      "previous_avg": 16.7,
       "delta": 17.0,
-      "recent_mentions": 29,
-      "previous_mentions": 7
+      "recent_mentions": 30,
+      "previous_mentions": 6
+    },
+    {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "recent_avg": 46.2,
+      "previous_avg": 30.0,
+      "delta": 16.2,
+      "recent_mentions": 4,
+      "previous_mentions": 1
     },
     {
       "key": "nyesom wike",
@@ -82,22 +73,31 @@
       "previous_mentions": 9
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 19.5,
-      "previous_avg": 28.7,
-      "delta": -9.2,
-      "recent_mentions": 10,
-      "previous_mentions": 15
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 23.8,
+      "recent_avg": 22.2,
       "previous_avg": 31.2,
-      "delta": -7.4,
-      "recent_mentions": 8,
+      "delta": -9.0,
+      "recent_mentions": 9,
       "previous_mentions": 16
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 20.6,
+      "previous_avg": 28.5,
+      "delta": -7.9,
+      "recent_mentions": 8,
+      "previous_mentions": 13
+    },
+    {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "recent_avg": 17.5,
+      "previous_avg": 10.0,
+      "delta": 7.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "ogun state government",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-05 15:38:31"
+  "generated": "2026-10-05 23:10:50"
 }

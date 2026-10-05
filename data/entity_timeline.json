@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 47,
+      "total_mentions": 48,
       "points": [
         {
           "week": "2026-09-14",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 5,
-          "avg_risk": 41.0,
+          "mentions": 6,
+          "avg_risk": 37.5,
           "max_risk": 65
         }
       ]
@@ -65,7 +65,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 33,
+      "total_mentions": 34,
       "points": [
         {
           "week": "2026-09-07",
@@ -90,13 +90,19 @@
           "mentions": 2,
           "avg_risk": 30.0,
           "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 31,
+      "total_mentions": 32,
       "points": [
         {
           "week": "2026-09-07",
@@ -124,7 +130,7 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 10.0,
           "max_risk": 10
         }
@@ -556,6 +562,38 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 3,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 5,
+          "avg_risk": 43.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 5,
@@ -683,25 +721,6 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "total_mentions": 4,
@@ -717,19 +736,6 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 43.8,
-          "max_risk": 65
         }
       ]
     },
@@ -978,6 +984,25 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
         }
       ]
     },
@@ -1460,25 +1485,6 @@
       ]
     },
     {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "airways",
       "label": "Nigeria Airways",
       "total_mentions": 2,
@@ -1764,6 +1770,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "zamfara state government",
+      "label": "Zamfara State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -2609,6 +2634,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "federal high court",
+      "label": "Federal High Court",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -4329,6 +4367,19 @@
       ]
     },
     {
+      "key": "otu",
+      "label": "Otu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "oyebanji",
       "label": "Oyebanji",
       "total_mentions": 1,
@@ -4418,46 +4469,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "presidency of",
-      "label": "Presidency of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "presidential task force on pension reforms",
-      "label": "Presidential Task Force on Pension Reforms",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "prudential africa services",
-      "label": "Prudential Africa Services Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-05 15:38:31"
+  "generated": "2026-10-05 23:10:50"
 }
