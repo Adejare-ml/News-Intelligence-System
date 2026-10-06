@@ -1,12 +1,30 @@
 {
   "window_days": 7,
-  "recent_articles": 168,
-  "previous_articles": 163,
+  "recent_articles": 172,
+  "previous_articles": 165,
   "rising": [
     {
       "term": "nnpc",
-      "recent": 21,
+      "recent": 22,
       "previous": 5,
+      "change": 17
+    },
+    {
+      "term": "premium",
+      "recent": 42,
+      "previous": 26,
+      "change": 16
+    },
+    {
+      "term": "premium times",
+      "recent": 42,
+      "previous": 26,
+      "change": 16
+    },
+    {
+      "term": "times",
+      "recent": 42,
+      "previous": 26,
       "change": 16
     },
     {
@@ -14,30 +32,6 @@
       "recent": 22,
       "previous": 10,
       "change": 12
-    },
-    {
-      "term": "premium",
-      "recent": 34,
-      "previous": 26,
-      "change": 8
-    },
-    {
-      "term": "premium times",
-      "recent": 34,
-      "previous": 26,
-      "change": 8
-    },
-    {
-      "term": "times",
-      "recent": 34,
-      "previous": 26,
-      "change": 8
-    },
-    {
-      "term": "opens",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
     },
     {
       "term": "punchng",
@@ -49,6 +43,12 @@
       "term": "punchng com",
       "recent": 8,
       "previous": 2,
+      "change": 6
+    },
+    {
+      "term": "opens",
+      "recent": 7,
+      "previous": 1,
       "change": 6
     },
     {
@@ -66,15 +66,39 @@
   ],
   "falling": [
     {
+      "term": "newspapers",
+      "recent": 21,
+      "previous": 28,
+      "change": -7
+    },
+    {
+      "term": "punch",
+      "recent": 21,
+      "previous": 28,
+      "change": -7
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 21,
+      "previous": 28,
+      "change": -7
+    },
+    {
+      "term": "investment",
+      "recent": 1,
+      "previous": 8,
+      "change": -7
+    },
+    {
       "term": "rate",
       "recent": 0,
       "previous": 7,
       "change": -7
     },
     {
-      "term": "dangote",
-      "recent": 3,
-      "previous": 9,
+      "term": "nigeria\u2019s",
+      "recent": 8,
+      "previous": 14,
       "change": -6
     },
     {
@@ -82,30 +106,6 @@
       "recent": 3,
       "previous": 9,
       "change": -6
-    },
-    {
-      "term": "newspapers",
-      "recent": 23,
-      "previous": 28,
-      "change": -5
-    },
-    {
-      "term": "punch",
-      "recent": 23,
-      "previous": 28,
-      "change": -5
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 23,
-      "previous": 28,
-      "change": -5
-    },
-    {
-      "term": "investment",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
     },
     {
       "term": "policy",
@@ -120,7 +120,7 @@
       "change": -5
     },
     {
-      "term": "dangote refinery",
+      "term": "declares",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -129,25 +129,25 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 116,
-      "previous": 106
+      "recent": 121,
+      "previous": 108
     },
     {
       "category": "Company",
-      "recent": 29,
-      "previous": 33
+      "recent": 28,
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 20,
-      "previous": 23
+      "recent": 19,
+      "previous": 25
     },
     {
       "category": "Other",
-      "recent": 3,
+      "recent": 4,
       "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-10-05 23:10:47"
+  "generated": "2026-10-06 02:54:16"
 }

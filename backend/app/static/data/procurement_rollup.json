@@ -36,6 +36,14 @@
       }
     },
     {
+      "name": "Nigerian National Petroleum Company Limited",
+      "contracts": 4,
+      "undisclosed": 3,
+      "totals": {
+        "NGN": 473800000000.0
+      }
+    },
+    {
       "name": "Akwa Ibom State Government",
       "contracts": 5,
       "undisclosed": 2,
@@ -65,6 +73,15 @@
       "undisclosed": 1,
       "totals": {
         "NGN": 25000000000.0
+      }
+    },
+    {
+      "name": "Ogun State Government",
+      "contracts": 7,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 35000000000.0,
+        "NGN": 24000000000.0
       }
     },
     {
@@ -196,14 +213,6 @@
       }
     },
     {
-      "name": "Ogun State Government",
-      "contracts": 6,
-      "undisclosed": 1,
-      "totals": {
-        "USD": 35000000000.0
-      }
-    },
-    {
       "name": "Federal Capital Territory Administration",
       "contracts": 3,
       "undisclosed": 3,
@@ -211,12 +220,6 @@
     },
     {
       "name": "Niger Delta Development Commission",
-      "contracts": 3,
-      "undisclosed": 3,
-      "totals": {}
-    },
-    {
-      "name": "Nigerian National Petroleum Company Limited",
       "contracts": 3,
       "undisclosed": 3,
       "totals": {}
@@ -520,6 +523,14 @@
       }
     },
     {
+      "name": "Osun State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 13900000.0
+      }
+    },
+    {
       "name": "Rivers State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -547,11 +558,11 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 91,
+      "contracts": 94,
       "undisclosed": 59,
       "totals": {
-        "NGN": 5099816090000.0,
-        "USD": 20583240000.0
+        "NGN": 5597616090000.0,
+        "USD": 20597140000.0
       }
     },
     {
@@ -945,5 +956,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-05 23:10:50"
+  "generated": "2026-10-06 02:54:19"
 }

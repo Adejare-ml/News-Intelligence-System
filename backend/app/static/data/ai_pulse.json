@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-05 23:10:47",
+  "generated": "2026-10-06 02:54:16",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1457,
+      "likes": 1515,
       "downloads": 5416
-    },
-    {
-      "id": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "task": "text-classification",
-      "likes": 5228,
-      "downloads": 11733
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3251,
+      "likes": 3273,
       "downloads": 1638838
+    },
+    {
+      "id": "convaiinnovations/laya",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "task": "text-classification",
+      "likes": 5244,
+      "downloads": 11733
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 618,
+      "likes": 633,
       "downloads": 2453
+    },
+    {
+      "id": "autotrust/JEV-27B-VL",
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "task": "image-text-to-text",
+      "likes": 654,
+      "downloads": 1278569
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 516,
+      "likes": 536,
       "downloads": 8075
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6483,
+      "likes": 6509,
       "downloads": 1645444
-    },
-    {
-      "id": "autotrust/JEV-27B-VL",
-      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
-      "task": "image-text-to-text",
-      "likes": 516,
-      "downloads": 1278569
     },
     {
       "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "task": "text-generation",
-      "likes": 410,
+      "likes": 419,
       "downloads": 18863
     }
   ],
   "papers": [
     {
-      "title": "WM-VLM: Probing Internal World Models for Interleaved Visual-Textual Reasoning",
-      "url": "https://huggingface.co/papers/2609.34826",
-      "upvotes": 4
+      "title": "PaLoRA: Paced Low-Rank Adaptation for Continual Learning",
+      "url": "https://huggingface.co/papers/2610.04226",
+      "upvotes": 0
     },
     {
-      "title": "Improving Atomic-Fact Recall via Focused Views in Unstructured Knowledge Editing",
-      "url": "https://huggingface.co/papers/2610.02772",
+      "title": "PluginRSI: Recursive Improvement of Agent Harnesses with Reusable Plugins",
+      "url": "https://huggingface.co/papers/2609.32423",
       "upvotes": 1
     },
     {
-      "title": "Self-Supervised Scaling of Terminal Environments for Scientific Domains",
-      "url": "https://huggingface.co/papers/2610.02710",
-      "upvotes": 2
-    },
-    {
-      "title": "The Extender: A Log-Structured Transformer",
-      "url": "https://huggingface.co/papers/2609.32759",
+      "title": "OSWorld-Pro: Process-based Evaluation for Computer Use Agents",
+      "url": "https://huggingface.co/papers/2609.24890",
       "upvotes": 1
     },
     {
-      "title": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
-      "url": "https://huggingface.co/papers/2610.03710",
+      "title": "Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training",
+      "url": "https://huggingface.co/papers/2610.05416",
+      "upvotes": 1
+    },
+    {
+      "title": "Rethinking Long-Video Efficiency: A Joint Allocation Perspective on Frames, Pixels, and Front-End Latency",
+      "url": "https://huggingface.co/papers/2610.04318",
       "upvotes": 4
     },
     {
-      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
-      "url": "https://huggingface.co/papers/2610.03715",
-      "upvotes": 12
+      "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
+      "url": "https://huggingface.co/papers/2610.02840",
+      "upvotes": 19
     }
   ]
 }

@@ -1,20 +1,26 @@
 {
-  "new_companies": [
-    "Otu",
-    "Smartcomply Academy"
+  "new_companies": [],
+  "new_people": [
+    "Ishaku",
+    "Olawepo-Hashim"
   ],
-  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "How Taraba LG \u2018subventions\u2019 were diverted during Gov Ishaku\u2019s tenure \u2013 Witness - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQalhRNUNPbHZiWDd2ZFdETTVla1kxT1hoUmZzRnh0VUhjNGNYUTFQYVAzdHhUbWh6aGdDeDJWYUZZTEZRYTBGbjQ5MkloMU5CeGJMQWstX3hoZTM1YmQ3dkE3MkNXR1BLQmVlMmE1VzZvYXpkdmk2SnltRWFzT0NrTVNTSExESV9zX1djUkJ3NHprWlk3N2RYclE2SDhkVG9UWElTcjF1TzNNRmdVcTVJS3JVZmlKaWkwYnpqaGs5TEZ0cGpPYVVtQ3FR?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
-    "new_companies": 2,
-    "new_people": 0,
+    "new_companies": 0,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-05 23:10:44"
+  "generated": "2026-10-06 02:54:12"
 }

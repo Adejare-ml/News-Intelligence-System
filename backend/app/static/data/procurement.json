@@ -1598,5 +1598,35 @@
     "Date": "2026-10-05",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Ogun State Government",
+    "Contractor": "None",
+    "Amount": "N24 Billion",
+    "Project": "Education infrastructure",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-06",
+    "Amount Value": 24000000000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Osun State Government",
+    "Contractor": "None",
+    "Amount": "$13.9 Million",
+    "Project": "Not specified",
+    "Source": "The Punch",
+    "Date": "2026-10-06",
+    "Amount Value": 13900000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "Nigerian National Petroleum Company Limited",
+    "Contractor": "None",
+    "Amount": "N473.8 Billion",
+    "Project": "Gas infrastructure projects, including the Nigeria-Morocco Gas Pipeline",
+    "Source": "The Punch",
+    "Date": "2026-10-06",
+    "Amount Value": 473800000000.0,
+    "Amount Currency": "NGN"
   }
 ]
