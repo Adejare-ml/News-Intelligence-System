@@ -3857,9 +3857,9 @@
   },
   {
     "Company": "Zenith Bank Plc",
-    "Mention Count": 2,
-    "Last Seen": "2026-07-24 09:31",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-06 21:31",
+    "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7281,7 +7281,7 @@
   },
   {
     "Company": "United Bank for Africa Plc",
-    "Mention Count": 3,
+    "Mention Count": 4,
     "Last Seen": "2026-08-28 6:53",
     "Industry": "General",
     "Risk Level": "Low",
@@ -8433,8 +8433,8 @@
   },
   {
     "Company": "Access Bank",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-28 20:00",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-06 21:31",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": "2026-09-28 20:00"
@@ -8782,5 +8782,21 @@
     "Industry": "Professional Training and Certification",
     "Risk Level": "Low",
     "First Seen": "2026-10-05 23:07"
+  },
+  {
+    "Company": "Lagos Free Zone",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-06 21:30",
+    "Industry": "Industrial Infrastructure",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-06 21:30"
+  },
+  {
+    "Company": "Delta Maritime Group",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-06 21:31",
+    "Industry": "Maritime",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-06 21:31"
   }
 ]

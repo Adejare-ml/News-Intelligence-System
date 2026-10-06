@@ -121,6 +121,12 @@
       "risk": "Medium"
     },
     {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -153,6 +159,12 @@
     {
       "id": "b27f282d6347",
       "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,20 +235,8 @@
       "risk": "Low"
     },
     {
-      "id": "2b6363269b97",
-      "label": "Nigerian Supreme Council for Islamic Affairs",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cbdeaeb2cf5b",
-      "label": "APC",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7c820cd95216",
-      "label": "Hydrocarbon Pollution Remediation Project",
+      "id": "7442313a4501",
+      "label": "West African Examinations Council",
       "type": "agency",
       "risk": "Low"
     },
@@ -334,12 +334,6 @@
       "id": "9f0af401d6d0",
       "label": "Suleiman Kum",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7442313a4501",
-      "label": "West African Examinations Council",
-      "type": "company",
       "risk": "Low"
     },
     {
