@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-06 02:54:16",
+  "generated": "2026-10-06 14:00:21",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1515,
-      "downloads": 5416
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "task": "text-to-image",
-      "likes": 3273,
-      "downloads": 1638838
-    },
-    {
-      "id": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "task": "text-classification",
-      "likes": 5244,
-      "downloads": 11733
-    },
-    {
-      "id": "Aleph-Alpha/Kolibri-1",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "task": "text-generation",
-      "likes": 633,
-      "downloads": 2453
+      "likes": 1599,
+      "downloads": 7255
     },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 654,
-      "downloads": 1278569
+      "likes": 885,
+      "downloads": 1525286
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "task": "text-to-image",
+      "likes": 3365,
+      "downloads": 1721760
+    },
+    {
+      "id": "Aleph-Alpha/Kolibri-1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "task": "text-generation",
+      "likes": 682,
+      "downloads": 4138
+    },
+    {
+      "id": "convaiinnovations/laya",
+      "url": "https://huggingface.co/convaiinnovations/laya",
+      "task": "text-classification",
+      "likes": 5266,
+      "downloads": 20386
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 536,
-      "downloads": 8075
+      "likes": 562,
+      "downloads": 10638
+    },
+    {
+      "id": "autotrust/GEV-26B-Decide",
+      "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
+      "task": "text-classification",
+      "likes": 634,
+      "downloads": 854574
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6509,
-      "downloads": 1645444
-    },
-    {
-      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "task": "text-generation",
-      "likes": 419,
-      "downloads": 18863
+      "likes": 6578,
+      "downloads": 1679035
     }
   ],
   "papers": [
     {
-      "title": "PaLoRA: Paced Low-Rank Adaptation for Continual Learning",
-      "url": "https://huggingface.co/papers/2610.04226",
-      "upvotes": 0
+      "title": "GeoCR: Learning a Generalist Cloud Removal Prior from Heterogeneous Observations",
+      "url": "https://huggingface.co/papers/2609.32510",
+      "upvotes": 2
     },
     {
-      "title": "PluginRSI: Recursive Improvement of Agent Harnesses with Reusable Plugins",
-      "url": "https://huggingface.co/papers/2609.32423",
+      "title": "GeoSET: Generalist Foundation Model for SAR-to-EO Image Translation",
+      "url": "https://huggingface.co/papers/2609.37496",
+      "upvotes": 2
+    },
+    {
+      "title": "HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models",
+      "url": "https://huggingface.co/papers/2610.05739",
+      "upvotes": 2
+    },
+    {
+      "title": "LiFT: Loop Flow Transformers",
+      "url": "https://huggingface.co/papers/2610.05538",
+      "upvotes": 3
+    },
+    {
+      "title": "How to Loop MoE: Flatten the Experts, Untie the Attention",
+      "url": "https://huggingface.co/papers/2609.35751",
+      "upvotes": 3
+    },
+    {
+      "title": "SoK: Semantic Decision Engines in Network Control Loops",
+      "url": "https://huggingface.co/papers/2610.06425",
       "upvotes": 1
-    },
-    {
-      "title": "OSWorld-Pro: Process-based Evaluation for Computer Use Agents",
-      "url": "https://huggingface.co/papers/2609.24890",
-      "upvotes": 1
-    },
-    {
-      "title": "Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training",
-      "url": "https://huggingface.co/papers/2610.05416",
-      "upvotes": 1
-    },
-    {
-      "title": "Rethinking Long-Video Efficiency: A Joint Allocation Perspective on Frames, Pixels, and Front-End Latency",
-      "url": "https://huggingface.co/papers/2610.04318",
-      "upvotes": 4
-    },
-    {
-      "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
-      "url": "https://huggingface.co/papers/2610.02840",
-      "upvotes": 19
     }
   ]
 }
