@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 963,
-      "mentions": 1635,
+      "companies": 962,
+      "mentions": 1634,
       "risk": {
-        "Low": 849,
+        "Low": 848,
         "Critical": 57,
         "Medium": 34,
         "High": 23
@@ -32,10 +32,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 12,
-      "mentions": 16,
+      "companies": 13,
+      "mentions": 20,
       "risk": {
-        "Low": 9,
+        "Low": 10,
         "Medium": 3
       }
     },
@@ -386,6 +386,14 @@
       }
     },
     {
+      "industry": "Industrial Infrastructure",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Labor Union",
       "companies": 1,
       "mentions": 1,
@@ -403,6 +411,14 @@
     },
     {
       "industry": "Logistics",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Maritime",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -490,5 +506,5 @@
       }
     }
   ],
-  "generated": "2026-10-06 18:50:11"
+  "generated": "2026-10-06 21:32:52"
 }

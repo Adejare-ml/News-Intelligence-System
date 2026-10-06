@@ -34,7 +34,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 48,
+      "total_mentions": 49,
       "points": [
         {
           "week": "2026-09-07",
@@ -62,7 +62,7 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 5,
+          "mentions": 6,
           "avg_risk": 20.0,
           "max_risk": 30
         }
@@ -108,7 +108,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 33,
+      "total_mentions": 34,
       "points": [
         {
           "week": "2026-09-07",
@@ -136,8 +136,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 31.7,
+          "mentions": 4,
+          "avg_risk": 26.2,
           "max_risk": 75
         }
       ]
@@ -851,6 +851,25 @@
       ]
     },
     {
+      "key": "west african examinations council",
+      "label": "West African Examinations Council",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 13.3,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "adeyemi",
       "label": "Adeyemi",
       "total_mentions": 3,
@@ -1320,25 +1339,6 @@
       ]
     },
     {
-      "key": "west african examinations council",
-      "label": "West African Examinations Council",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "amni",
       "label": "AMNI",
       "total_mentions": 2,
@@ -1348,6 +1348,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "access bank",
+      "label": "Access Bank",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1697,6 +1716,25 @@
         },
         {
           "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "content development and monitoring board",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -2085,19 +2123,6 @@
       ]
     },
     {
-      "key": "access bank",
-      "label": "Access Bank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "access bank kenya",
       "label": "Access Bank Kenya",
       "total_mentions": 1,
@@ -2380,6 +2405,19 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2718,6 +2756,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "delta maritime",
+      "label": "Delta Maritime Group",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3489,6 +3540,19 @@
       ]
     },
     {
+      "key": "lagos free zone",
+      "label": "Lagos Free Zone",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "lagos state consumer protection agency",
       "label": "Lagos State Consumer Protection Agency",
       "total_mentions": 1,
@@ -4256,19 +4320,6 @@
       ]
     },
     {
-      "key": "content development and monitoring board",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "education loan fund",
       "label": "Nigerian Education Loan Fund",
       "total_mentions": 1,
@@ -4514,46 +4565,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "olawepo hashim",
-      "label": "Olawepo-Hashim",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "olukoyede",
-      "label": "Olukoyede",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
     }
   ],
-  "generated": "2026-10-06 18:50:11"
+  "generated": "2026-10-06 21:32:52"
 }

@@ -30,11 +30,11 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 34.0,
-      "previous_avg": 51.7,
-      "delta": -17.7,
-      "recent_mentions": 5,
-      "previous_mentions": 9
+      "recent_avg": 32.5,
+      "previous_avg": 50.5,
+      "delta": -18.0,
+      "recent_mentions": 4,
+      "previous_mentions": 10
     },
     {
       "key": "house of representatives",
@@ -66,20 +66,11 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 23.3,
-      "previous_avg": 37.5,
-      "delta": -14.2,
+      "recent_avg": 22.2,
+      "previous_avg": 36.3,
+      "delta": -14.1,
       "recent_mentions": 9,
-      "previous_mentions": 14
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 35.7,
-      "previous_avg": 21.5,
-      "delta": 14.2,
-      "recent_mentions": 28,
-      "previous_mentions": 10
+      "previous_mentions": 15
     },
     {
       "key": "dangote",
@@ -98,6 +89,15 @@
       "delta": -12.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 35.4,
+      "previous_avg": 24.6,
+      "delta": 10.8,
+      "recent_mentions": 26,
+      "previous_mentions": 12
     },
     {
       "key": "customs service",
@@ -138,10 +138,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 20.9,
+      "recent_avg": 20.8,
       "previous_avg": 27.3,
-      "delta": -6.4,
-      "recent_mentions": 11,
+      "delta": -6.5,
+      "recent_mentions": 12,
       "previous_mentions": 13
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-06 18:50:11"
+  "generated": "2026-10-06 21:32:52"
 }
