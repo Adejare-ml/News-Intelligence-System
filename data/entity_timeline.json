@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 48,
+      "total_mentions": 49,
       "points": [
         {
           "week": "2026-09-14",
@@ -19,8 +19,8 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 25,
-          "avg_risk": 31.8,
+          "mentions": 26,
+          "avg_risk": 31.7,
           "max_risk": 75
         },
         {
@@ -34,7 +34,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 43,
+      "total_mentions": 45,
       "points": [
         {
           "week": "2026-09-07",
@@ -59,6 +59,12 @@
           "mentions": 12,
           "avg_risk": 21.7,
           "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -139,7 +145,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-07",
@@ -164,6 +170,12 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -243,6 +255,37 @@
       ]
     },
     {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 26.0,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "total_mentions": 10,
@@ -268,31 +311,6 @@
       ]
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 26.0,
-          "max_risk": 35
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
       "total_mentions": 8,
@@ -308,6 +326,43 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 38.3,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -356,37 +411,6 @@
       ]
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 38.3,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -396,6 +420,31 @@
           "mentions": 6,
           "avg_risk": 63.3,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "king s college",
+      "label": "King's College",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -427,6 +476,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 6,
+          "avg_risk": 43.3,
+          "max_risk": 65
         }
       ]
     },
@@ -543,25 +605,6 @@
       ]
     },
     {
-      "key": "king s college",
-      "label": "King's College",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "total_mentions": 5,
@@ -577,19 +620,6 @@
           "mentions": 3,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 5,
-          "avg_risk": 43.0,
-          "max_risk": 65
         }
       ]
     },
@@ -1376,6 +1406,25 @@
       ]
     },
     {
+      "key": "kwara state government",
+      "label": "Kwara State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "lagos state waste management authority",
       "label": "Lagos State Waste Management Authority",
       "total_mentions": 2,
@@ -1735,6 +1784,25 @@
       ]
     },
     {
+      "key": "taraba state government",
+      "label": "Taraba State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "toyin abraham",
       "label": "Toyin Abraham",
       "total_mentions": 2,
@@ -1845,6 +1913,19 @@
       ]
     },
     {
+      "key": "apc",
+      "label": "APC",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ascsn",
       "label": "ASCSN",
       "total_mentions": 1,
@@ -1932,6 +2013,32 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "accord party",
+      "label": "Accord Party",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "adeleke",
+      "label": "Adeleke",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3106,6 +3213,19 @@
       ]
     },
     {
+      "key": "ishaku",
+      "label": "Ishaku",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "j p morgan",
       "label": "J.P. Morgan",
       "total_mentions": 1,
@@ -3245,19 +3365,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "kwara state government",
-      "label": "Kwara State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4120,6 +4227,19 @@
       ]
     },
     {
+      "key": "supreme council for islamic affairs",
+      "label": "Nigerian Supreme Council for Islamic Affairs",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "not stated",
       "label": "Not Stated",
       "total_mentions": 1,
@@ -4276,6 +4396,19 @@
       ]
     },
     {
+      "key": "olawepo hashim",
+      "label": "Olawepo-Hashim",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "total_mentions": 1,
@@ -4378,98 +4511,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "oyebanji",
-      "label": "Oyebanji",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "plsi",
-      "label": "PLSI",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "pasuma",
-      "label": "Pasuma",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "petroleum refining and petrochemicals owners association of",
-      "label": "Petroleum Refining and Petrochemicals Owners Association of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "petroleum technology development fund",
-      "label": "Petroleum Technology Development Fund",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "pharmaccess",
-      "label": "PharmAccess",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "pharmacists council of",
-      "label": "Pharmacists Council of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
     }
   ],
-  "generated": "2026-10-05 23:10:50"
+  "generated": "2026-10-06 02:54:19"
 }

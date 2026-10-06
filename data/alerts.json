@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-10-06",
+      "title": "How Taraba LG \u2018subventions\u2019 were diverted during Gov Ishaku\u2019s tenure \u2013 Witness - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQalhRNUNPbHZiWDd2ZFdETTVla1kxT1hoUmZzRnh0VUhjNGNYUTFQYVAzdHhUbWh6aGdDeDJWYUZZTEZRYTBGbjQ5MkloMU5CeGJMQWstX3hoZTM1YmQ3dkE3MkNXR1BLQmVlMmE1VzZvYXpkdmk2SnltRWFzT0NrTVNTSExESV9zX1djUkJ3NHprWlk3N2RYclE2SDhkVG9UWElTcjF1TzNNRmdVcTVJS3JVZmlKaWkwYnpqaGs5TEZ0cGpPYVVtQ3FR?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Taraba State Government",
+        "Ishaku"
+      ]
+    },
+    {
       "date": "2026-10-05",
       "title": "N802bn audit breaches: Reps probe NNPC, INEC - punchng.com",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBSeGZOSmsyU0J5Um4xUm9rX0ZQaUEwMWpPelltREloZldremQ2LWhrNlhiWUc3WU1qQVViZ2w0RGRMVEs3cVBUeUxvY2dRM2xoMHpLVVlpSjNpbWFmb1NrUUY5SDN1NlFjbTcwNUVNQ1M?oc=5",
@@ -400,5 +412,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-05 23:10:50"
+  "generated": "2026-10-06 02:54:19"
 }

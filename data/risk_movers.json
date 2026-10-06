@@ -1,6 +1,15 @@
 {
   "movers": [
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 47.5,
+      "previous_avg": 17.5,
+      "delta": 30.0,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 30.0,
@@ -10,21 +19,30 @@
       "previous_mentions": 9
     },
     {
+      "key": "king s college",
+      "label": "King's College",
+      "recent_avg": 40.0,
+      "previous_avg": 20.0,
+      "delta": 20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 33.7,
+      "recent_avg": 33.5,
       "previous_avg": 16.7,
-      "delta": 17.0,
-      "recent_mentions": 30,
+      "delta": 16.8,
+      "recent_mentions": 31,
       "previous_mentions": 6
     },
     {
       "key": "osun state government",
       "label": "Osun State Government",
-      "recent_avg": 46.2,
+      "recent_avg": 46.0,
       "previous_avg": 30.0,
-      "delta": 16.2,
-      "recent_mentions": 4,
+      "delta": 16.0,
+      "recent_mentions": 5,
       "previous_mentions": 1
     },
     {
@@ -55,6 +73,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 25.0,
+      "previous_avg": 36.0,
+      "delta": -11.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 20.0,
@@ -67,10 +94,10 @@
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 21.7,
-      "previous_avg": 12.2,
-      "delta": 9.5,
+      "previous_avg": 12.5,
+      "delta": 9.2,
       "recent_mentions": 3,
-      "previous_mentions": 9
+      "previous_mentions": 8
     },
     {
       "key": "central bank of",
@@ -82,13 +109,13 @@
       "previous_mentions": 16
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 20.6,
-      "previous_avg": 28.5,
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 20.0,
+      "previous_avg": 27.9,
       "delta": -7.9,
-      "recent_mentions": 8,
-      "previous_mentions": 13
+      "recent_mentions": 2,
+      "previous_mentions": 7
     },
     {
       "key": "national information technology development agency",
@@ -100,12 +127,21 @@
       "previous_mentions": 1
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 21.1,
+      "previous_avg": 27.3,
+      "delta": -6.2,
+      "recent_mentions": 9,
+      "previous_mentions": 13
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "recent_avg": 32.5,
+      "recent_avg": 30.0,
       "previous_avg": 26.0,
-      "delta": 6.5,
-      "recent_mentions": 4,
+      "delta": 4.0,
+      "recent_mentions": 5,
       "previous_mentions": 5
     },
     {
@@ -127,15 +163,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 26.7,
-      "previous_avg": 25.8,
-      "delta": 0.9,
-      "recent_mentions": 3,
-      "previous_mentions": 6
-    },
-    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "recent_avg": 20.0,
@@ -145,42 +172,15 @@
       "previous_mentions": 1
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 70.0,
+      "key": "taraba state government",
+      "label": "Taraba State Government",
+      "recent_avg": 75.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 55.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "adeyemi",
-      "label": "Adeyemi",
-      "recent_avg": 48.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "recent_avg": 33.8,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-05 23:10:50"
+  "generated": "2026-10-06 02:54:19"
 }
