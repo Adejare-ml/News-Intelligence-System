@@ -1,37 +1,37 @@
 {
   "window_days": 7,
-  "recent_articles": 173,
-  "previous_articles": 163,
+  "recent_articles": 171,
+  "previous_articles": 169,
   "rising": [
     {
       "term": "premium",
-      "recent": 46,
-      "previous": 27,
-      "change": 19
+      "recent": 47,
+      "previous": 29,
+      "change": 18
     },
     {
       "term": "premium times",
-      "recent": 46,
-      "previous": 27,
-      "change": 19
+      "recent": 47,
+      "previous": 29,
+      "change": 18
     },
     {
       "term": "times",
-      "recent": 46,
-      "previous": 27,
-      "change": 19
-    },
-    {
-      "term": "nnpc",
-      "recent": 22,
-      "previous": 5,
-      "change": 17
+      "recent": 47,
+      "previous": 29,
+      "change": 18
     },
     {
       "term": "com",
       "recent": 23,
+      "previous": 8,
+      "change": 15
+    },
+    {
+      "term": "nnpc",
+      "recent": 18,
       "previous": 9,
-      "change": 14
+      "change": 9
     },
     {
       "term": "punchng",
@@ -67,27 +67,27 @@
   "falling": [
     {
       "term": "newspapers",
-      "recent": 21,
-      "previous": 29,
-      "change": -8
+      "recent": 19,
+      "previous": 30,
+      "change": -11
     },
     {
       "term": "punch",
-      "recent": 21,
-      "previous": 29,
-      "change": -8
+      "recent": 19,
+      "previous": 30,
+      "change": -11
     },
     {
       "term": "punch newspapers",
-      "recent": 21,
-      "previous": 29,
-      "change": -8
+      "recent": 19,
+      "previous": 30,
+      "change": -11
     },
     {
       "term": "guardian",
-      "recent": 46,
-      "previous": 53,
-      "change": -7
+      "recent": 45,
+      "previous": 54,
+      "change": -9
     },
     {
       "term": "investment",
@@ -102,10 +102,16 @@
       "change": -6
     },
     {
-      "term": "efcc",
+      "term": "dangote",
       "recent": 3,
       "previous": 9,
       "change": -6
+    },
+    {
+      "term": "world",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
     },
     {
       "term": "declares",
@@ -118,29 +124,23 @@
       "recent": 0,
       "previous": 5,
       "change": -5
-    },
-    {
-      "term": "rate",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 123,
-      "previous": 108
+      "recent": 120,
+      "previous": 112
     },
     {
       "category": "Company",
-      "recent": 27,
-      "previous": 28
+      "recent": 24,
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 19,
-      "previous": 26
+      "recent": 23,
+      "previous": 25
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-06 14:00:21"
+  "generated": "2026-10-06 18:50:05"
 }

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-06 14:00:21",
+  "generated": "2026-10-06 18:50:05",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1599,
+      "likes": 1652,
       "downloads": 7255
     },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 885,
+      "likes": 950,
       "downloads": 1525286
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3365,
+      "likes": 3401,
       "downloads": 1721760
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 682,
+      "likes": 698,
       "downloads": 4138
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5266,
+      "likes": 5276,
       "downloads": 20386
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 562,
+      "likes": 579,
       "downloads": 10638
     },
     {
       "id": "autotrust/GEV-26B-Decide",
       "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
       "task": "text-classification",
-      "likes": 634,
+      "likes": 668,
       "downloads": 854574
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 6578,
+      "likes": 6626,
       "downloads": 1679035
     }
   ],
   "papers": [
     {
-      "title": "GeoCR: Learning a Generalist Cloud Removal Prior from Heterogeneous Observations",
-      "url": "https://huggingface.co/papers/2609.32510",
-      "upvotes": 2
+      "title": "Sharpen Without Search: On-Policy Distillation of Sequence-Level Power Distribution",
+      "url": "https://huggingface.co/papers/2610.06804",
+      "upvotes": 0
     },
     {
-      "title": "GeoSET: Generalist Foundation Model for SAR-to-EO Image Translation",
-      "url": "https://huggingface.co/papers/2609.37496",
-      "upvotes": 2
+      "title": "Labels Override Definitions in Jev-Style Typed Decision Models",
+      "url": "https://huggingface.co/papers/2610.02586",
+      "upvotes": 0
     },
     {
-      "title": "HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models",
-      "url": "https://huggingface.co/papers/2610.05739",
-      "upvotes": 2
-    },
-    {
-      "title": "LiFT: Loop Flow Transformers",
-      "url": "https://huggingface.co/papers/2610.05538",
-      "upvotes": 3
-    },
-    {
-      "title": "How to Loop MoE: Flatten the Experts, Untie the Attention",
-      "url": "https://huggingface.co/papers/2609.35751",
-      "upvotes": 3
-    },
-    {
-      "title": "SoK: Semantic Decision Engines in Network Control Loops",
-      "url": "https://huggingface.co/papers/2610.06425",
+      "title": "Adaptive Fused Prior Transfer for Controllable Generative Image Compression",
+      "url": "https://huggingface.co/papers/2605.16817",
       "upvotes": 1
+    },
+    {
+      "title": "LLM-as-Jev: LLMs Are Already Jev-Style Decision Models -- When and How to Fine-Tune Them",
+      "url": "https://huggingface.co/papers/2610.02076",
+      "upvotes": 1
+    },
+    {
+      "title": "Collaborative Personalized Preference Alignment for LLMs under Data Deficiency",
+      "url": "https://huggingface.co/papers/2610.05898",
+      "upvotes": 1
+    },
+    {
+      "title": "Beyond Semantic Similarity: Performance and Costs of Agentic Retrieval for Complex Tasks",
+      "url": "https://huggingface.co/papers/2610.05750",
+      "upvotes": 3
     }
   ]
 }
