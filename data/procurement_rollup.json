@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 38,
-      "undisclosed": 26,
+      "contracts": 39,
+      "undisclosed": 27,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -944,6 +944,12 @@
       }
     },
     {
+      "name": "Unnamed Chinese construction company",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Unnamed Concessionaire",
       "contracts": 1,
       "undisclosed": 1,
@@ -956,5 +962,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-06 14:00:24"
+  "generated": "2026-10-06 18:50:11"
 }

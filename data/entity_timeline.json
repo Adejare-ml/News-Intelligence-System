@@ -34,7 +34,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 46,
+      "total_mentions": 48,
       "points": [
         {
           "week": "2026-09-07",
@@ -62,16 +62,16 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 18.3,
-          "max_risk": 20
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
         }
       ]
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 34,
+      "total_mentions": 36,
       "points": [
         {
           "week": "2026-09-07",
@@ -99,16 +99,16 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
+          "mentions": 3,
+          "avg_risk": 36.7,
+          "max_risk": 40
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 32,
+      "total_mentions": 33,
       "points": [
         {
           "week": "2026-09-07",
@@ -136,9 +136,9 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "mentions": 3,
+          "avg_risk": 31.7,
+          "max_risk": 75
         }
       ]
     },
@@ -182,7 +182,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 15,
+      "total_mentions": 16,
       "points": [
         {
           "week": "2026-09-14",
@@ -204,7 +204,7 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
         }
@@ -238,7 +238,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-07",
@@ -266,8 +266,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
+          "mentions": 5,
+          "avg_risk": 30.0,
           "max_risk": 75
         }
       ]
@@ -448,6 +448,43 @@
       ]
     },
     {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -526,37 +563,6 @@
           "mentions": 2,
           "avg_risk": 70.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -708,6 +714,31 @@
           "mentions": 2,
           "avg_risk": 32.5,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "diezani alison madueke",
+      "label": "Diezani Alison-Madueke",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1270,6 +1301,25 @@
       ]
     },
     {
+      "key": "taraba state government",
+      "label": "Taraba State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "west african examinations council",
       "label": "West African Examinations Council",
       "total_mentions": 3,
@@ -1398,25 +1448,6 @@
       ]
     },
     {
-      "key": "diezani alison madueke",
-      "label": "Diezani Alison-Madueke",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "ebonyi state government",
       "label": "Ebonyi State Government",
       "total_mentions": 2,
@@ -1500,6 +1531,19 @@
       ]
     },
     {
+      "key": "ishaku",
+      "label": "Ishaku",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 2,
@@ -1528,6 +1572,25 @@
           "mentions": 2,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "ndc",
+      "label": "NDC",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1817,25 +1880,6 @@
           "mentions": 2,
           "avg_risk": 60.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "taraba state government",
-      "label": "Taraba State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
         }
       ]
     },
@@ -2964,6 +3008,19 @@
       ]
     },
     {
+      "key": "godwin emefiele",
+      "label": "Godwin Emefiele",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "good governance initiative",
       "label": "Good Governance Initiative",
       "total_mentions": 1,
@@ -3259,19 +3316,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "ishaku",
-      "label": "Ishaku",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
         }
       ]
     },
@@ -3627,6 +3671,19 @@
       ]
     },
     {
+      "key": "ministry of finance",
+      "label": "Ministry of Finance",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "ministry of petroleum resources",
       "label": "Ministry of Petroleum Resources",
       "total_mentions": 1,
@@ -3753,19 +3810,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ndc",
-      "label": "NDC",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -4509,33 +4553,7 @@
           "max_risk": 85
         }
       ]
-    },
-    {
-      "key": "olumide akinpelumi",
-      "label": "Olumide Akinpelumi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "omosehin",
-      "label": "Omosehin",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-06 14:00:24"
+  "generated": "2026-10-06 18:50:11"
 }

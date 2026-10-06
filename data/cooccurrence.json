@@ -38,6 +38,10 @@
       "label": "Dangote Refinery"
     },
     {
+      "key": "diezani alison madueke",
+      "label": "Diezani Alison-Madueke"
+    },
+    {
       "key": "dp world",
       "label": "DP World"
     },
@@ -54,6 +58,10 @@
       "label": "Federal Bureau of Investigation"
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria"
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives"
     },
@@ -64,6 +72,10 @@
     {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce"
+    },
+    {
+      "key": "ishaku",
+      "label": "Ishaku"
     },
     {
       "key": "lagos chamber of commerce and industry",
@@ -120,6 +132,10 @@
     {
       "key": "sunrise power",
       "label": "Sunrise Power"
+    },
+    {
+      "key": "taraba state government",
+      "label": "Taraba State Government"
     },
     {
       "key": "totalenergies",
@@ -217,6 +233,11 @@
       "weight": 2
     },
     {
+      "a": "diezani alison madueke",
+      "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
       "a": "economic and financial crimes commission",
       "b": "ola olukoyede",
       "weight": 2
@@ -224,6 +245,11 @@
     {
       "a": "economic and financial crimes commission",
       "b": "oyo state government",
+      "weight": 2
+    },
+    {
+      "a": "federal government of",
+      "b": "lagos state government",
       "weight": 2
     },
     {
@@ -247,10 +273,15 @@
       "weight": 2
     },
     {
+      "a": "ishaku",
+      "b": "taraba state government",
+      "weight": 2
+    },
+    {
       "a": "lagos state government",
       "b": "national bureau of statistics",
       "weight": 2
     }
   ],
-  "generated": "2026-10-06 14:00:24"
+  "generated": "2026-10-06 18:50:11"
 }

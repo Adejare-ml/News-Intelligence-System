@@ -121,6 +121,18 @@
       "risk": "Medium"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -169,6 +181,12 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
       "type": "agency",
@@ -177,6 +195,12 @@
     {
       "id": "737f70b3bdb8",
       "label": "Taraba State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "701a11e9aed2",
+      "label": "Ministry of Finance",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,27 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "52b0f620fee8",
-      "label": "Joint Health Sector Unions",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dc77ed2cf37a",
-      "label": "Supreme Court of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "33d3c13cc972",
-      "label": "Federal High Court",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
+      "id": "40ce4ff30275",
+      "label": "Godwin Emefiele",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -249,6 +255,18 @@
     {
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "649b4afa9b99",
+      "label": "Diezani Alison-Madueke",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fcc3d69557a3",
+      "label": "Federal Ministry of Petroleum Resources",
       "type": "company",
       "risk": "Low"
     },
@@ -469,18 +487,6 @@
       "risk": "Low"
     },
     {
-      "id": "325a5c8a1ef5",
-      "label": "Atiku Abubakar",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "5576e31d022d",
-      "label": "Jim Obazee",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "763ad8d1cb39",
       "label": "Sunbeth",
       "type": "psc",
@@ -625,6 +631,12 @@
       "risk": "Medium"
     },
     {
+      "id": "367f8f860c90",
+      "label": "Unnamed Chinese construction company",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "de44b55175fc",
       "label": "Zamfara State Government",
       "type": "agency",
@@ -652,12 +664,6 @@
       "id": "a2f42bfa75e2",
       "label": "Women's Rights Groups",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -689,20 +695,26 @@
       "label": "CGC Nigeria Limited",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "ebe2d81e3981",
-      "label": "Not Specified",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "234af74126a1",
+      "from": "40ce4ff30275",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Former Governor"
+    },
     {
       "id": "63dfe1afb291",
       "from": "f121c0e97820",
       "to": "3a4a88456e84",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "e78407597fbf",
+      "from": "649b4afa9b99",
+      "to": "fcc3d69557a3",
+      "label": "Appointed as Former Minister of Petroleum Resources"
     },
     {
       "id": "85ce3314133d",
@@ -714,7 +726,7 @@
       "id": "d926e4f83416",
       "from": "5476ecdab0f0",
       "to": "737f70b3bdb8",
-      "label": "Appointed as Governor"
+      "label": "Appointed as Former Governor"
     },
     {
       "id": "6bda361957ec",
@@ -837,18 +849,6 @@
       "label": "Appointed as Former Attorney General"
     },
     {
-      "id": "9e2a94a3f3aa",
-      "from": "325a5c8a1ef5",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as Former Vice President"
-    },
-    {
-      "id": "a401d4741eda",
-      "from": "5576e31d022d",
-      "to": "0c2be969618b",
-      "label": "Appointed as Special Investigator"
-    },
-    {
       "id": "65d32072e59e",
       "from": "763ad8d1cb39",
       "to": "71399a9ad4ea",
@@ -939,6 +939,12 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "04244ef0c680",
+      "from": "367f8f860c90",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "d2d664656a66",
       "from": "334c4a4c42fd",
       "to": "f38bd75574f6",
@@ -1026,12 +1032,6 @@
       "id": "b6c692491b0a",
       "from": "e6f87275c6e8",
       "to": "84b6d6cbf896",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "9e1d195a523a",
-      "from": "ebe2d81e3981",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]
