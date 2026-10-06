@@ -3,10 +3,10 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 47.5,
+      "recent_avg": 41.0,
       "previous_avg": 17.5,
-      "delta": 30.0,
-      "recent_mentions": 2,
+      "delta": 23.5,
+      "recent_mentions": 5,
       "previous_mentions": 4
     },
     {
@@ -28,13 +28,31 @@
       "previous_mentions": 1
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 16.9,
+      "previous_avg": 35.7,
+      "delta": -18.8,
+      "recent_mentions": 8,
+      "previous_mentions": 15
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 33.5,
+      "recent_avg": 34.8,
       "previous_avg": 16.7,
-      "delta": 16.8,
-      "recent_mentions": 31,
+      "delta": 18.1,
+      "recent_mentions": 32,
       "previous_mentions": 6
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 47.5,
+      "previous_avg": 65.0,
+      "delta": -17.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "osun state government",
@@ -91,31 +109,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 21.7,
-      "previous_avg": 12.5,
-      "delta": 9.2,
-      "recent_mentions": 3,
-      "previous_mentions": 8
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 22.2,
-      "previous_avg": 31.2,
-      "delta": -9.0,
-      "recent_mentions": 9,
-      "previous_mentions": 16
-    },
-    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "recent_avg": 20.0,
-      "previous_avg": 27.9,
-      "delta": -7.9,
+      "previous_avg": 29.2,
+      "delta": -9.2,
       "recent_mentions": 2,
-      "previous_mentions": 7
+      "previous_mentions": 6
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 12.5,
+      "delta": 7.5,
+      "recent_mentions": 4,
+      "previous_mentions": 8
     },
     {
       "key": "national information technology development agency",
@@ -129,11 +138,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 21.1,
+      "recent_avg": 20.6,
       "previous_avg": 27.3,
-      "delta": -6.2,
+      "delta": -6.7,
       "recent_mentions": 9,
       "previous_mentions": 13
+    },
+    {
+      "key": "kwara state government",
+      "label": "Kwara State Government",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "ogun state government",
@@ -154,15 +172,6 @@
       "previous_mentions": 5
     },
     {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "recent_avg": 16.2,
-      "previous_avg": 20.0,
-      "delta": -3.8,
-      "recent_mentions": 4,
-      "previous_mentions": 1
-    },
-    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "recent_avg": 20.0,
@@ -170,17 +179,8 @@
       "delta": 0.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "taraba state government",
-      "label": "Taraba State Government",
-      "recent_avg": 75.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-06 02:54:19"
+  "generated": "2026-10-06 14:00:24"
 }

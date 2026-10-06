@@ -54,6 +54,10 @@
       "label": "Federal Bureau of Investigation"
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives"
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission"
     },
@@ -223,6 +227,16 @@
       "weight": 2
     },
     {
+      "a": "house of representatives",
+      "b": "independent national electoral commission",
+      "weight": 2
+    },
+    {
+      "a": "independent national electoral commission",
+      "b": "national petroleum company",
+      "weight": 2
+    },
+    {
       "a": "independent national electoral commission",
       "b": "socio economic rights and accountability project",
       "weight": 2
@@ -238,5 +252,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-06 02:54:19"
+  "generated": "2026-10-06 14:00:24"
 }

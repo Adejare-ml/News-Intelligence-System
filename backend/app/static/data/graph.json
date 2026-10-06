@@ -1,16 +1,16 @@
 {
   "nodes": [
     {
-      "id": "3d4044d65abd",
-      "label": "FG",
-      "type": "company",
-      "risk": "Critical"
-    },
-    {
       "id": "f38bd75574f6",
       "label": "Nigerian National Petroleum Company Limited",
       "type": "company",
       "risk": "High"
+    },
+    {
+      "id": "3d4044d65abd",
+      "label": "FG",
+      "type": "company",
+      "risk": "Critical"
     },
     {
       "id": "e534e0dfb211",
@@ -127,8 +127,38 @@
       "risk": "Low"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b27f282d6347",
       "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cf8ea783000f",
+      "label": "National Drug Law Enforcement Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "974789639094",
+      "label": "Debt Management Office",
       "type": "agency",
       "risk": "Low"
     },
@@ -147,6 +177,12 @@
     {
       "id": "737f70b3bdb8",
       "label": "Taraba State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0b2ac17f47f4",
+      "label": "Lagos State Waste Management Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,6 +211,24 @@
       "risk": "Low"
     },
     {
+      "id": "7c820cd95216",
+      "label": "Hydrocarbon Pollution Remediation Project",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "52b0f620fee8",
+      "label": "Joint Health Sector Unions",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "dc77ed2cf37a",
+      "label": "Supreme Court of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "33d3c13cc972",
       "label": "Federal High Court",
       "type": "agency",
@@ -187,57 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
+      "id": "f121c0e97820",
+      "label": "Seyi Makinde",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "35ed6439a988",
-      "label": "Ogun State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "de44b55175fc",
-      "label": "Zamfara State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0b2ac17f47f4",
-      "label": "Lagos State Waste Management Authority",
-      "type": "agency",
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -262,6 +274,18 @@
       "id": "dce44e278bb0",
       "label": "Adeleke",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3816ee965955",
+      "label": "Abba Kyari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "37a6259cc0c1",
+      "label": "null",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -304,12 +328,6 @@
       "id": "0eb499263319",
       "label": "Makinde",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -379,12 +397,6 @@
       "risk": "Low"
     },
     {
-      "id": "f121c0e97820",
-      "label": "Seyi Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "56a1ac14d764",
       "label": "Nyesom Wike",
       "type": "person",
@@ -445,6 +457,12 @@
       "risk": "Low"
     },
     {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f6a881f4b7c5",
       "label": "Abubakar Malami",
       "type": "person",
@@ -460,18 +478,6 @@
       "id": "5576e31d022d",
       "label": "Jim Obazee",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ee0c248d5e51",
-      "label": "Adeola",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ebe2d81e3981",
-      "label": "Not Specified",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -619,6 +625,12 @@
       "risk": "Medium"
     },
     {
+      "id": "de44b55175fc",
+      "label": "Zamfara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "c15a6abe6f6b",
       "label": "Hitech Construction",
       "type": "company",
@@ -677,9 +689,21 @@
       "label": "CGC Nigeria Limited",
       "type": "company",
       "risk": "Low"
+    },
+    {
+      "id": "ebe2d81e3981",
+      "label": "Not Specified",
+      "type": "company",
+      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "63dfe1afb291",
+      "from": "f121c0e97820",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Governor"
+    },
     {
       "id": "85ce3314133d",
       "from": "bf509af25091",
@@ -697,6 +721,12 @@
       "from": "dce44e278bb0",
       "to": "b27f282d6347",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "d791a2d2f55a",
+      "from": "3816ee965955",
+      "to": "37a6259cc0c1",
+      "label": "Appointed as null"
     },
     {
       "id": "b268c9e64d5a",
@@ -765,12 +795,6 @@
       "label": "Appointed as Minister"
     },
     {
-      "id": "63dfe1afb291",
-      "from": "f121c0e97820",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "4f87337f3e1c",
       "from": "56a1ac14d764",
       "to": "beb91054dc85",
@@ -823,12 +847,6 @@
       "from": "5576e31d022d",
       "to": "0c2be969618b",
       "label": "Appointed as Special Investigator"
-    },
-    {
-      "id": "fdf26afd0b27",
-      "from": "ee0c248d5e51",
-      "to": "ebe2d81e3981",
-      "label": "Appointed as Not Specified"
     },
     {
       "id": "65d32072e59e",
