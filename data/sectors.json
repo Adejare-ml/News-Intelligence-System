@@ -322,6 +322,14 @@
       }
     },
     {
+      "industry": "Civil Society/Legal Advocacy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Credit Rating",
       "companies": 1,
       "mentions": 1,
@@ -506,5 +514,5 @@
       }
     }
   ],
-  "generated": "2026-10-07 02:18:08"
+  "generated": "2026-10-07 14:19:01"
 }

@@ -181,6 +181,14 @@
       }
     },
     {
+      "name": "Ministry of Aviation",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 686000000.0
+      }
+    },
+    {
       "name": "Presidential Foreign Intervention Promotion Council",
       "contracts": 1,
       "undisclosed": 0,
@@ -558,10 +566,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 94,
+      "contracts": 95,
       "undisclosed": 59,
       "totals": {
-        "NGN": 5597616090000.0,
+        "NGN": 5598302090000.0,
         "USD": 20597140000.0
       }
     },
@@ -962,5 +970,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-07 02:18:08"
+  "generated": "2026-10-07 14:19:01"
 }
