@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 170,
-  "previous_articles": 174,
+  "recent_articles": 171,
+  "previous_articles": 170,
   "rising": [
     {
       "term": "premium",
-      "recent": 48,
+      "recent": 49,
       "previous": 28,
-      "change": 20
+      "change": 21
     },
     {
       "term": "premium times",
-      "recent": 48,
+      "recent": 49,
       "previous": 28,
-      "change": 20
+      "change": 21
     },
     {
       "term": "times",
-      "recent": 48,
+      "recent": 49,
       "previous": 28,
-      "change": 20
+      "change": 21
     },
     {
       "term": "com",
@@ -28,9 +28,9 @@
       "change": 11
     },
     {
-      "term": "nnpc",
-      "recent": 17,
-      "previous": 10,
+      "term": "lagos",
+      "recent": 16,
+      "previous": 9,
       "change": 7
     },
     {
@@ -46,48 +46,48 @@
       "change": 7
     },
     {
-      "term": "partner",
-      "recent": 6,
-      "previous": 0,
+      "term": "accounts",
+      "recent": 7,
+      "previous": 1,
       "change": 6
     },
     {
       "term": "appoints",
       "recent": 7,
-      "previous": 2,
-      "change": 5
+      "previous": 1,
+      "change": 6
     },
     {
-      "term": "accounts",
-      "recent": 6,
+      "term": "osun",
+      "recent": 7,
       "previous": 1,
-      "change": 5
+      "change": 6
     }
   ],
   "falling": [
     {
       "term": "newspapers",
-      "recent": 18,
-      "previous": 33,
+      "recent": 15,
+      "previous": 30,
       "change": -15
     },
     {
       "term": "punch",
-      "recent": 18,
-      "previous": 33,
+      "recent": 15,
+      "previous": 30,
       "change": -15
     },
     {
       "term": "punch newspapers",
-      "recent": 18,
-      "previous": 33,
+      "recent": 15,
+      "previous": 30,
       "change": -15
     },
     {
       "term": "guardian",
-      "recent": 45,
+      "recent": 46,
       "previous": 55,
-      "change": -10
+      "change": -9
     },
     {
       "term": "nigeria\u2019s",
@@ -114,32 +114,32 @@
       "change": -6
     },
     {
-      "term": "world",
-      "recent": 1,
-      "previous": 6,
+      "term": "cbn",
+      "recent": 7,
+      "previous": 12,
       "change": -5
     },
     {
-      "term": "declares",
-      "recent": 0,
-      "previous": 5,
+      "term": "world",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 121,
-      "previous": 113
+      "recent": 118,
+      "previous": 112
     },
     {
       "category": "Company",
-      "recent": 23,
-      "previous": 34
+      "recent": 26,
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 22,
+      "recent": 23,
       "previous": 26
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-06 21:32:50"
+  "generated": "2026-10-07 02:18:03"
 }

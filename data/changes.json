@@ -1,20 +1,25 @@
 {
   "new_companies": [
-    "Delta Maritime Group",
-    "Lagos Free Zone"
+    "Coleman Technical Industries Limited",
+    "Health Emergency Initiative",
+    "Healthcare Federation of Nigeria",
+    "Medical Intervention Initiative for Healthcare Access",
+    "Roche"
   ],
-  "new_people": [],
+  "new_people": [
+    "Abu Ammar"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 2,
-    "new_people": 0,
+    "new_companies": 5,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-06 21:32:47"
+  "generated": "2026-10-07 02:17:59"
 }
