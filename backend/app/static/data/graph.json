@@ -121,6 +121,24 @@
       "risk": "Medium"
     },
     {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3713e106b87b",
+      "label": "Katsina State Hisbah Corps",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "c25544734c7e",
       "label": "Nigerian Content Development and Monitoring Board",
       "type": "agency",
@@ -157,12 +175,6 @@
       "risk": "Low"
     },
     {
-      "id": "b27f282d6347",
-      "label": "Osun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "217ee6fe71c5",
       "label": "Bayelsa State Government",
       "type": "agency",
@@ -189,12 +201,6 @@
     {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -235,9 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "7442313a4501",
-      "label": "West African Examinations Council",
-      "type": "agency",
+      "id": "e54d28336fd1",
+      "label": "Abu Ammar",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -334,6 +340,12 @@
       "id": "9f0af401d6d0",
       "label": "Suleiman Kum",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7442313a4501",
+      "label": "West African Examinations Council",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -472,12 +484,6 @@
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f6a881f4b7c5",
-      "label": "Abubakar Malami",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -693,6 +699,12 @@
   ],
   "edges": [
     {
+      "id": "0a1af79d57a3",
+      "from": "e54d28336fd1",
+      "to": "3713e106b87b",
+      "label": "Appointed as Boss/Head of Hisbah"
+    },
+    {
       "id": "234af74126a1",
       "from": "40ce4ff30275",
       "to": "4c7e8211e98f",
@@ -835,12 +847,6 @@
       "from": "9392713dc79b",
       "to": "ebba2aef82e9",
       "label": "Appointed as Official"
-    },
-    {
-      "id": "71251a980b0e",
-      "from": "f6a881f4b7c5",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Attorney General"
     },
     {
       "id": "65d32072e59e",

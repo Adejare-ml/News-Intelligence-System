@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-06 21:32:50",
+  "generated": "2026-10-07 02:18:03",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1664,
+      "likes": 1697,
       "downloads": 7255
     },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 969,
+      "likes": 988,
       "downloads": 1525286
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "task": "text-to-image",
-      "likes": 3415,
-      "downloads": 1721760
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 706,
+      "likes": 721,
       "downloads": 4138
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "task": "text-to-image",
+      "likes": 3442,
+      "downloads": 1721760
+    },
+    {
+      "id": "autotrust/GEV-26B-Decide",
+      "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
+      "task": "text-classification",
+      "likes": 716,
+      "downloads": 854574
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 586,
+      "likes": 606,
       "downloads": 10638
     },
     {
       "id": "convaiinnovations/laya",
       "url": "https://huggingface.co/convaiinnovations/laya",
       "task": "text-classification",
-      "likes": 5278,
+      "likes": 5292,
       "downloads": 20386
     },
     {
-      "id": "autotrust/GEV-26B-Decide",
-      "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
-      "task": "text-classification",
-      "likes": 674,
-      "downloads": 854574
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 6652,
-      "downloads": 1679035
+      "id": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "task": "feature-extraction",
+      "likes": 510,
+      "downloads": 364
     }
   ],
   "papers": [
     {
-      "title": "The Numerical Linear Algebra of Large Language Models",
-      "url": "https://huggingface.co/papers/2610.04631",
-      "upvotes": 0
-    },
-    {
-      "title": "Agentic discovery of blood biomarker from distilled private health records",
-      "url": "https://huggingface.co/papers/2610.04749",
+      "title": "Hiding Tool Latency in On-Device Cascaded Voice Agent through Speculative Execution",
+      "url": "https://huggingface.co/papers/2610.07641",
       "upvotes": 1
     },
     {
-      "title": "Closing the Context Gap: Activation Alignment for Tabular In-Context Learning",
-      "url": "https://huggingface.co/papers/2610.06679",
-      "upvotes": 0
-    },
-    {
-      "title": "Sharpen Without Search: On-Policy Distillation of Sequence-Level Power Distribution",
-      "url": "https://huggingface.co/papers/2610.06804",
-      "upvotes": 0
-    },
-    {
-      "title": "Labels Override Definitions in Jev-Style Typed Decision Models",
-      "url": "https://huggingface.co/papers/2610.02586",
-      "upvotes": 0
-    },
-    {
-      "title": "Adaptive Fused Prior Transfer for Controllable Generative Image Compression",
-      "url": "https://huggingface.co/papers/2605.16817",
+      "title": "DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling",
+      "url": "https://huggingface.co/papers/2610.04933",
       "upvotes": 1
+    },
+    {
+      "title": "Making LLMs Say What They Think: Measuring and Improving CoT-Interpretability Alignment",
+      "url": "https://huggingface.co/papers/2609.38972",
+      "upvotes": 2
+    },
+    {
+      "title": "ALIVE: Interaction-Aligned Object Insertion for First-Frame-Guided Video Editing",
+      "url": "https://huggingface.co/papers/2610.08779",
+      "upvotes": 3
+    },
+    {
+      "title": "Harness Engineering for Software Engineering via Modular Executable Dev-Primitives",
+      "url": "https://huggingface.co/papers/2610.07832",
+      "upvotes": 2
+    },
+    {
+      "title": "HiPLEX: Hierarchical Policy Factorization for Full Duplex Speech Language Models",
+      "url": "https://huggingface.co/papers/2610.07727",
+      "upvotes": 0
     }
   ]
 }
