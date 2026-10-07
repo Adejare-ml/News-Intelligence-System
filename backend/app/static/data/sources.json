@@ -2,37 +2,37 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2386,
-      "published": 1381,
-      "filtered": 1005,
+      "total": 2391,
+      "published": 1383,
+      "filtered": 1008,
       "accept_rate": 58,
       "avg_risk": 28.8,
       "engines": {
         "unknown": 963,
-        "ollama": 410,
+        "ollama": 412,
         "nvidia": 8
       },
       "last_seen": "2026-10-07"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1460,
-      "published": 704,
-      "filtered": 756,
+      "total": 1467,
+      "published": 705,
+      "filtered": 762,
       "accept_rate": 48,
       "avg_risk": 31.2,
       "engines": {
         "unknown": 440,
-        "ollama": 260,
+        "ollama": 261,
         "nvidia": 4
       },
       "last_seen": "2026-10-07"
     },
     {
       "source": "Punch Newspapers",
-      "total": 821,
+      "total": 822,
       "published": 352,
-      "filtered": 469,
+      "filtered": 470,
       "accept_rate": 43,
       "avg_risk": 26.5,
       "engines": {
@@ -44,15 +44,15 @@
     },
     {
       "source": "The Punch",
-      "total": 516,
-      "published": 298,
+      "total": 518,
+      "published": 300,
       "filtered": 218,
       "accept_rate": 58,
-      "avg_risk": 32.7,
+      "avg_risk": 32.6,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 188
+        "ollama": 190
       },
       "last_seen": "2026-10-06"
     },
@@ -100,29 +100,29 @@
     },
     {
       "source": "naijaonpoint_ng",
-      "total": 185,
+      "total": 186,
       "published": 55,
-      "filtered": 130,
+      "filtered": 131,
       "accept_rate": 30,
       "avg_risk": 23.5,
       "engines": {
         "unknown": 43,
         "ollama": 12
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "leadership",
-      "total": 167,
+      "total": 169,
       "published": 48,
-      "filtered": 119,
-      "accept_rate": 29,
+      "filtered": 121,
+      "accept_rate": 28,
       "avg_risk": 23.6,
       "engines": {
         "unknown": 35,
         "ollama": 13
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "sunnewsonline",
@@ -167,16 +167,16 @@
     },
     {
       "source": "vanguardngr",
-      "total": 143,
+      "total": 144,
       "published": 27,
-      "filtered": 116,
+      "filtered": 117,
       "accept_rate": 19,
       "avg_risk": 26.1,
       "engines": {
         "unknown": 19,
         "ollama": 8
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "independentng",
@@ -356,6 +356,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "source": "The Eagle Online",
+      "total": 15,
+      "published": 3,
+      "filtered": 12,
+      "accept_rate": 20,
+      "avg_risk": 45.0,
+      "engines": {
+        "ollama": 3
+      },
+      "last_seen": "2026-10-07"
+    },
+    {
       "source": "Voice of Nigeria",
       "total": 15,
       "published": 9,
@@ -394,18 +406,6 @@
         "nvidia": 1
       },
       "last_seen": "2026-10-05"
-    },
-    {
-      "source": "The Eagle Online",
-      "total": 12,
-      "published": 3,
-      "filtered": 9,
-      "accept_rate": 25,
-      "avg_risk": 45.0,
-      "engines": {
-        "ollama": 3
-      },
-      "last_seen": "2026-10-07"
     },
     {
       "source": "converseer",
@@ -1185,6 +1185,16 @@
         "ollama": 1
       },
       "last_seen": "2026-08-31"
+    },
+    {
+      "source": "withinnigeria",
+      "total": 2,
+      "published": 0,
+      "filtered": 2,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-10-07"
     },
     {
       "source": "ABS-CBN",
@@ -2017,16 +2027,6 @@
       "last_seen": "2026-07-26"
     },
     {
-      "source": "withinnigeria",
-      "total": 1,
-      "published": 0,
-      "filtered": 1,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-08-16"
-    },
-    {
       "source": "womenaffairs.benuestate.gov.ng",
       "total": 1,
       "published": 1,
@@ -2061,5 +2061,5 @@
       "last_seen": "2026-10-02"
     }
   ],
-  "generated": "2026-10-07 14:19:01"
+  "generated": "2026-10-07 19:15:21"
 }

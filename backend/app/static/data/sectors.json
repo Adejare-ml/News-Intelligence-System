@@ -2,12 +2,12 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 961,
-      "mentions": 1633,
+      "companies": 960,
+      "mentions": 1632,
       "risk": {
         "Low": 847,
         "Critical": 57,
-        "Medium": 34,
+        "Medium": 33,
         "High": 23
       }
     },
@@ -120,28 +120,28 @@
       }
     },
     {
-      "industry": "Healthcare",
-      "companies": 5,
-      "mentions": 6,
-      "risk": {
-        "Low": 5
-      }
-    },
-    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
-      "mentions": 6,
+      "mentions": 7,
       "risk": {
         "High": 1
       }
     },
     {
       "industry": "Agriculture",
-      "companies": 4,
-      "mentions": 5,
+      "companies": 5,
+      "mentions": 6,
       "risk": {
-        "Low": 3,
+        "Low": 4,
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Healthcare",
+      "companies": 5,
+      "mentions": 6,
+      "risk": {
+        "Low": 5
       }
     },
     {
@@ -255,6 +255,14 @@
       "mentions": 2,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "FinTech",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -442,7 +450,23 @@
       }
     },
     {
+      "industry": "Non-Profit/Development",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Non-profit/NGO",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Personal Care",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -514,5 +538,5 @@
       }
     }
   ],
-  "generated": "2026-10-07 14:19:01"
+  "generated": "2026-10-07 19:15:21"
 }

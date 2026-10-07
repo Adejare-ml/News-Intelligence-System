@@ -1,31 +1,37 @@
 {
   "window_days": 7,
-  "recent_articles": 170,
-  "previous_articles": 170,
+  "recent_articles": 167,
+  "previous_articles": 167,
   "rising": [
     {
       "term": "premium",
-      "recent": 54,
-      "previous": 29,
-      "change": 25
+      "recent": 51,
+      "previous": 32,
+      "change": 19
     },
     {
       "term": "premium times",
-      "recent": 54,
-      "previous": 29,
-      "change": 25
+      "recent": 51,
+      "previous": 32,
+      "change": 19
     },
     {
       "term": "times",
-      "recent": 54,
-      "previous": 29,
-      "change": 25
+      "recent": 51,
+      "previous": 32,
+      "change": 19
+    },
+    {
+      "term": "com",
+      "recent": 17,
+      "previous": 8,
+      "change": 9
     },
     {
       "term": "lagos",
       "recent": 16,
-      "previous": 8,
-      "change": 8
+      "previous": 7,
+      "change": 9
     },
     {
       "term": "punchng",
@@ -56,32 +62,26 @@
       "recent": 7,
       "previous": 1,
       "change": 6
-    },
-    {
-      "term": "partner",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
     }
   ],
   "falling": [
     {
       "term": "newspapers",
       "recent": 14,
-      "previous": 31,
-      "change": -17
+      "previous": 29,
+      "change": -15
     },
     {
       "term": "punch",
       "recent": 14,
-      "previous": 31,
-      "change": -17
+      "previous": 29,
+      "change": -15
     },
     {
       "term": "punch newspapers",
       "recent": 14,
-      "previous": 31,
-      "change": -17
+      "previous": 29,
+      "change": -15
     },
     {
       "term": "nigeria\u2019s",
@@ -92,55 +92,55 @@
     {
       "term": "cbn",
       "recent": 5,
-      "previous": 14,
-      "change": -9
-    },
-    {
-      "term": "efcc",
-      "recent": 4,
-      "previous": 11,
-      "change": -7
-    },
-    {
-      "term": "investment",
-      "recent": 1,
-      "previous": 8,
-      "change": -7
+      "previous": 13,
+      "change": -8
     },
     {
       "term": "guardian",
       "recent": 47,
-      "previous": 53,
+      "previous": 54,
+      "change": -7
+    },
+    {
+      "term": "dangote",
+      "recent": 2,
+      "previous": 8,
       "change": -6
     },
     {
-      "term": "theeagleonline",
+      "term": "efcc",
       "recent": 4,
-      "previous": 10,
-      "change": -6
+      "previous": 9,
+      "change": -5
     },
     {
-      "term": "theeagleonline com",
-      "recent": 4,
-      "previous": 10,
-      "change": -6
+      "term": "investment",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "world",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 120,
-      "previous": 111
+      "recent": 118,
+      "previous": 107
     },
     {
       "category": "Company",
-      "recent": 25,
+      "recent": 26,
       "previous": 29
     },
     {
       "category": "Legal",
-      "recent": 22,
-      "previous": 28
+      "recent": 20,
+      "previous": 29
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-07 14:18:58"
+  "generated": "2026-10-07 19:15:20"
 }
