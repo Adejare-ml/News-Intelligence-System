@@ -211,6 +211,12 @@
       "risk": "Low"
     },
     {
+      "id": "9da30857f532",
+      "label": "ECOWAS Court",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "c25544734c7e",
       "label": "Nigerian Content Development and Monitoring Board",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "9aef00190386",
       "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -467,6 +467,18 @@
       "label": "Nigerian Institute of Industrial Research",
       "type": "company",
       "risk": "Low"
+    },
+    {
+      "id": "539d727618e7",
+      "label": "International Finance Corporation",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "b35a4cc86b40",
+      "label": "Quickmart",
+      "type": "company",
+      "risk": "Medium"
     },
     {
       "id": "763ad8d1cb39",
@@ -835,6 +847,12 @@
       "from": "53bc227250d6",
       "to": "84927e6cf7c4",
       "label": "Appointed as Not specified"
+    },
+    {
+      "id": "990674302105",
+      "from": "539d727618e7",
+      "to": "b35a4cc86b40",
+      "label": "PSC: 6.5%"
     },
     {
       "id": "65d32072e59e",

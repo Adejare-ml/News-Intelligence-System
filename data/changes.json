@@ -1,23 +1,24 @@
 {
   "new_companies": [
-    "Everkind Limited",
-    "Olam Agri",
-    "Sustainable Collective Advocacy for Africa Development Initiative"
+    "Quickmart"
   ],
-  "new_people": [
-    "Oke"
+  "new_people": [],
+  "psc_added": [
+    {
+      "person": "International Finance Corporation",
+      "company": "Quickmart"
+    }
   ],
-  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 1,
-    "psc_added": 0,
+    "new_companies": 1,
+    "new_people": 0,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-07 19:15:17"
+  "generated": "2026-10-07 21:53:42"
 }
