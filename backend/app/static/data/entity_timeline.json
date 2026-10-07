@@ -1612,6 +1612,25 @@
       ]
     },
     {
+      "key": "international finance corporation",
+      "label": "International Finance Corporation",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ishaku",
       "label": "Ishaku",
       "total_mentions": 2,
@@ -2868,6 +2887,19 @@
       ]
     },
     {
+      "key": "ecowas court",
+      "label": "ECOWAS Court",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "eva professionals",
       "label": "EVA Professionals",
       "total_mentions": 1,
@@ -3511,19 +3543,6 @@
       "points": [
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "international finance corporation",
-      "label": "International Finance Corporation",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
@@ -4582,20 +4601,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "maritime labour council",
-      "label": "Nigerian Maritime Labour Council",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-10-07 19:15:21"
+  "generated": "2026-10-07 21:53:48"
 }

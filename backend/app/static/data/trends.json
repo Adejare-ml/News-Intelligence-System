@@ -1,31 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 167,
+  "recent_articles": 165,
   "previous_articles": 167,
   "rising": [
     {
       "term": "premium",
       "recent": 51,
-      "previous": 32,
-      "change": 19
+      "previous": 31,
+      "change": 20
     },
     {
       "term": "premium times",
       "recent": 51,
-      "previous": 32,
-      "change": 19
+      "previous": 31,
+      "change": 20
     },
     {
       "term": "times",
       "recent": 51,
-      "previous": 32,
-      "change": 19
-    },
-    {
-      "term": "com",
-      "recent": 17,
-      "previous": 8,
-      "change": 9
+      "previous": 31,
+      "change": 20
     },
     {
       "term": "lagos",
@@ -46,9 +40,9 @@
       "change": 8
     },
     {
-      "term": "appoints",
-      "recent": 7,
-      "previous": 0,
+      "term": "com",
+      "recent": 16,
+      "previous": 9,
       "change": 7
     },
     {
@@ -61,6 +55,12 @@
       "term": "osun",
       "recent": 7,
       "previous": 1,
+      "change": 6
+    },
+    {
+      "term": "plans",
+      "recent": 6,
+      "previous": 0,
       "change": 6
     }
   ],
@@ -90,16 +90,16 @@
       "change": -11
     },
     {
+      "term": "guardian",
+      "recent": 45,
+      "previous": 54,
+      "change": -9
+    },
+    {
       "term": "cbn",
       "recent": 5,
       "previous": 13,
       "change": -8
-    },
-    {
-      "term": "guardian",
-      "recent": 47,
-      "previous": 54,
-      "change": -7
     },
     {
       "term": "dangote",
@@ -129,13 +129,13 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 118,
+      "recent": 117,
       "previous": 107
     },
     {
       "category": "Company",
       "recent": 26,
-      "previous": 29
+      "previous": 28
     },
     {
       "category": "Legal",
@@ -144,10 +144,10 @@
     },
     {
       "category": "Other",
-      "recent": 3,
-      "previous": 2
+      "recent": 2,
+      "previous": 3
     }
   ],
   "social": [],
-  "generated": "2026-10-07 19:15:20"
+  "generated": "2026-10-07 21:53:45"
 }

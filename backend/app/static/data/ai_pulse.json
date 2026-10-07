@@ -1,64 +1,79 @@
 {
-  "generated": "2026-10-07 19:15:20",
+  "generated": "2026-10-07 21:53:45",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1791,
+      "likes": 1804,
       "downloads": 9513
     },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 1748,
+      "likes": 1862,
       "downloads": 1529210
     },
     {
       "id": "autotrust/GEV-26B-Decide",
       "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
       "task": "text-classification",
-      "likes": 1146,
+      "likes": 1229,
       "downloads": 895867
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 890,
+      "likes": 925,
       "downloads": 7562
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 769,
+      "likes": 774,
       "downloads": 5775
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3546,
+      "likes": 3555,
       "downloads": 1820627
     },
     {
       "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "task": "text-generation",
-      "likes": 614,
+      "likes": 625,
       "downloads": 33633
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 641,
+      "likes": 647,
       "downloads": 15722
     }
   ],
   "papers": [
+    {
+      "title": "Technical Report on the Turba Fertilizer Machine Learning Stack in Morocco",
+      "url": "https://huggingface.co/papers/2610.05949",
+      "upvotes": 1
+    },
+    {
+      "title": "JumpStart Your Policy Learning with Lessons from 160,000 Training Runs",
+      "url": "https://huggingface.co/papers/2609.13730",
+      "upvotes": 0
+    },
+    {
+      "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "url": "https://huggingface.co/papers/2610.02188",
+      "upvotes": 3
+    },
     {
       "title": "DeCoPrune: Efficient KV-Cache Pruning for Autoregressive Video Diffusion via Denoising Consistency",
       "url": "https://huggingface.co/papers/2609.39096",
@@ -73,21 +88,6 @@
       "title": "CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?",
       "url": "https://huggingface.co/papers/2610.07557",
       "upvotes": 52
-    },
-    {
-      "title": "Sherpa: Teaching LLMs to Teach Adaptively",
-      "url": "https://huggingface.co/papers/2610.08778",
-      "upvotes": 6
-    },
-    {
-      "title": "Learning Functional Subspaces for Neural Network Compression",
-      "url": "https://huggingface.co/papers/2609.40127",
-      "upvotes": 3
-    },
-    {
-      "title": "Stepped MoE: Segment-Level Routing with Configurable Inference Complexity",
-      "url": "https://huggingface.co/papers/2610.07348",
-      "upvotes": 2
     }
   ]
 }
