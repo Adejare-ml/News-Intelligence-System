@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "c8a42edc6bc3",
+      "label": "NRS",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "1613f8dac921",
       "label": "House of Representatives",
       "type": "agency",
@@ -141,6 +147,12 @@
     {
       "id": "b27f282d6347",
       "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cf8ea783000f",
-      "label": "National Drug Law Enforcement Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "e54d28336fd1",
       "label": "Abu Ammar",
       "type": "person",
@@ -249,6 +249,12 @@
     {
       "id": "a825104f1c91",
       "label": "Eno",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0079fcb60236",
+      "label": "Oke",
       "type": "person",
       "risk": "Low"
     },
@@ -427,12 +433,6 @@
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "56a1ac14d764",
       "label": "Nyesom Wike",
       "type": "person",
@@ -465,18 +465,6 @@
     {
       "id": "84927e6cf7c4",
       "label": "Nigerian Institute of Industrial Research",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "eb019677d36e",
-      "label": "Unnamed Nigerian",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4364a96a5640",
-      "label": "Unnamed Liberian University",
       "type": "company",
       "risk": "Low"
     },
@@ -717,6 +705,12 @@
       "label": "Appointed as President"
     },
     {
+      "id": "17710214e895",
+      "from": "0079fcb60236",
+      "to": "b5da1d8370fd",
+      "label": "Appointed as Envoy to France"
+    },
+    {
       "id": "234af74126a1",
       "from": "40ce4ff30275",
       "to": "4c7e8211e98f",
@@ -841,12 +835,6 @@
       "from": "53bc227250d6",
       "to": "84927e6cf7c4",
       "label": "Appointed as Not specified"
-    },
-    {
-      "id": "4332aec7c912",
-      "from": "eb019677d36e",
-      "to": "4364a96a5640",
-      "label": "Appointed as PR Director"
     },
     {
       "id": "65d32072e59e",

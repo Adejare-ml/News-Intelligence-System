@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-07 14:18:57",
+  "generated": "2026-10-07 19:15:20",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1761,
+      "likes": 1791,
       "downloads": 9513
     },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 1525,
+      "likes": 1748,
       "downloads": 1529210
     },
     {
       "id": "autotrust/GEV-26B-Decide",
       "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
       "task": "text-classification",
-      "likes": 1016,
+      "likes": 1146,
       "downloads": 895867
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 812,
+      "likes": 890,
       "downloads": 7562
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 757,
+      "likes": 769,
       "downloads": 5775
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3530,
+      "likes": 3546,
       "downloads": 1820627
     },
     {
       "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "task": "text-generation",
-      "likes": 613,
+      "likes": 614,
       "downloads": 33633
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 634,
+      "likes": 641,
       "downloads": 15722
     }
   ],
   "papers": [
     {
-      "title": "Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding",
-      "url": "https://huggingface.co/papers/2610.07342",
+      "title": "DeCoPrune: Efficient KV-Cache Pruning for Autoregressive Video Diffusion via Denoising Consistency",
+      "url": "https://huggingface.co/papers/2609.39096",
       "upvotes": 1
     },
     {
-      "title": "Cross-Lingual Alignment for Decoder-Only Models using MoE Routers",
-      "url": "https://huggingface.co/papers/2610.01921",
-      "upvotes": 0
-    },
-    {
-      "title": "Multilinguality in Hybrid Attention LLMs",
-      "url": "https://huggingface.co/papers/2609.35378",
+      "title": "Sensor-Language-Action Models",
+      "url": "https://huggingface.co/papers/2610.08244",
       "upvotes": 1
     },
     {
-      "title": "S2PD: Serial-to-Parallel Diffusion for Physically and Logically Consistent Video Generation",
-      "url": "https://huggingface.co/papers/2610.06847",
-      "upvotes": 0
+      "title": "CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?",
+      "url": "https://huggingface.co/papers/2610.07557",
+      "upvotes": 52
     },
     {
-      "title": "Do Language Models Need a Trainable Input Embedding Table? Fixed Minimal Token Codes at 1.7B-Class Scale",
-      "url": "https://huggingface.co/papers/2610.04002",
-      "upvotes": 0
+      "title": "Sherpa: Teaching LLMs to Teach Adaptively",
+      "url": "https://huggingface.co/papers/2610.08778",
+      "upvotes": 6
     },
     {
-      "title": "A Safe Action Is Not Enough: Feasible-Future Decoding for Vision-Language-Action Policies",
-      "url": "https://huggingface.co/papers/2610.05166",
+      "title": "Learning Functional Subspaces for Neural Network Compression",
+      "url": "https://huggingface.co/papers/2609.40127",
       "upvotes": 3
+    },
+    {
+      "title": "Stepped MoE: Segment-Level Routing with Configurable Inference Complexity",
+      "url": "https://huggingface.co/papers/2610.07348",
+      "upvotes": 2
     }
   ]
 }
