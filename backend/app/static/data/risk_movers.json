@@ -1,21 +1,12 @@
 {
   "movers": [
     {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "recent_avg": 47.5,
-      "previous_avg": 20.0,
-      "delta": 27.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 37.5,
+      "recent_avg": 38.6,
       "previous_avg": 17.5,
-      "delta": 20.0,
-      "recent_mentions": 6,
+      "delta": 21.1,
+      "recent_mentions": 7,
       "previous_mentions": 4
     },
     {
@@ -24,24 +15,6 @@
       "recent_avg": 40.0,
       "previous_avg": 20.0,
       "delta": 20.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 32.5,
-      "previous_avg": 50.5,
-      "delta": -18.0,
-      "recent_mentions": 4,
-      "previous_mentions": 10
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 47.5,
-      "previous_avg": 65.0,
-      "delta": -17.5,
       "recent_mentions": 2,
       "previous_mentions": 1
     },
@@ -55,21 +28,12 @@
       "previous_mentions": 1
     },
     {
-      "key": "nyesom wike",
-      "label": "Nyesom Wike",
-      "recent_avg": 75.0,
-      "previous_avg": 60.0,
-      "delta": 15.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 22.9,
-      "previous_avg": 37.0,
-      "delta": -14.1,
-      "recent_mentions": 7,
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 37.6,
+      "previous_avg": 23.3,
+      "delta": 14.3,
+      "recent_mentions": 23,
       "previous_mentions": 15
     },
     {
@@ -91,58 +55,67 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 36.0,
-      "previous_avg": 24.2,
-      "delta": 11.8,
-      "recent_mentions": 25,
-      "previous_mentions": 13
+      "key": "adeyemi",
+      "label": "Adeyemi",
+      "recent_avg": 52.5,
+      "previous_avg": 40.0,
+      "delta": 12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 20.0,
-      "previous_avg": 29.2,
-      "delta": -9.2,
-      "recent_mentions": 2,
-      "previous_mentions": 6
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 53.3,
+      "previous_avg": 65.0,
+      "delta": -11.7,
+      "recent_mentions": 3,
+      "previous_mentions": 1
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 35.6,
+      "delta": -10.6,
+      "recent_mentions": 5,
+      "previous_mentions": 16
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 20.8,
-      "previous_avg": 27.3,
-      "delta": -6.5,
-      "recent_mentions": 12,
-      "previous_mentions": 13
+      "recent_avg": 19.0,
+      "previous_avg": 27.7,
+      "delta": -8.7,
+      "recent_mentions": 10,
+      "previous_mentions": 15
     },
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 19.0,
-      "previous_avg": 13.3,
-      "delta": 5.7,
+      "previous_avg": 12.0,
+      "delta": 7.0,
       "recent_mentions": 5,
-      "previous_mentions": 6
-    },
-    {
-      "key": "kwara state government",
-      "label": "Kwara State Government",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "previous_mentions": 5
     },
     {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
-      "recent_avg": 15.0,
+      "recent_avg": 14.0,
       "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 4,
+      "delta": -6.0,
+      "recent_mentions": 5,
       "previous_mentions": 1
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 20.0,
+      "previous_avg": 26.0,
+      "delta": -6.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
     },
     {
       "key": "government of",
@@ -154,12 +127,21 @@
       "previous_mentions": 5
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 43.8,
+      "previous_avg": 47.7,
+      "delta": -3.9,
+      "recent_mentions": 4,
+      "previous_mentions": 11
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "recent_avg": 30.0,
       "previous_avg": 30.0,
       "delta": 0.0,
-      "recent_mentions": 5,
+      "recent_mentions": 6,
       "previous_mentions": 4
     },
     {
@@ -179,8 +161,26 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 55.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "diezani alison madueke",
+      "label": "Diezani Alison-Madueke",
+      "recent_avg": 40.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-07 02:18:08"
+  "generated": "2026-10-07 14:19:01"
 }

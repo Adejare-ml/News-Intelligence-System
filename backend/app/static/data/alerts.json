@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-07",
+      "title": "Aviation ministry paid N686m for control towers, firearms without satisfactory evidence of work, supply \u2014 Audit Report - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPY0FTUkMtSWtvX0lwSEU5UkthdUpnY2Rla3J3OGJiUUJSY3M1Wk5zMXktcDBOQ1FRRU5JM1htUGg2dWxGYVBKdm9sUFpiandEQ2J1Yml0amE1Y1IzS2hKY3lXZ1U0dm1ZMERhXzdla0p6bmRVZmp4V1c0X3htUWFSVzlHblluZ21oNUtNSlhqd21HaFc2LUdTLXVLS1hDeFhMbE4tQldCMUVxdWp6bVdkOXd2U2FZWk8yT1lYWGlScHRDUjNhRUk5THdCcmRKUXNDV1QtZWlFV3cwTkM0WnRvZ3hUTlo4bnVOX0hnSGVDM1dqc0xtMVZNUm0wTnRQTmZySl9NNG1xdHluWk5C?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Ministry of Aviation"
+      ]
+    },
+    {
       "date": "2026-10-06",
       "title": "How Taraba LG \u2018subventions\u2019 were diverted during Gov Ishaku\u2019s tenure \u2013 Witness - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQalhRNUNPbHZiWDd2ZFdETTVla1kxT1hoUmZzRnh0VUhjNGNYUTFQYVAzdHhUbWh6aGdDeDJWYUZZTEZRYTBGbjQ5MkloMU5CeGJMQWstX3hoZTM1YmQ3dkE3MkNXR1BLQmVlMmE1VzZvYXpkdmk2SnltRWFzT0NrTVNTSExESV9zX1djUkJ3NHprWlk3N2RYclE2SDhkVG9UWElTcjF1TzNNRmdVcTVJS3JVZmlKaWkwYnpqaGs5TEZ0cGpPYVVtQ3FR?oc=5",
@@ -450,5 +461,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-07 02:18:08"
+  "generated": "2026-10-07 14:19:01"
 }

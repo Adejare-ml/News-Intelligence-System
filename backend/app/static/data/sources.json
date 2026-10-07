@@ -2,37 +2,37 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2368,
-      "published": 1378,
-      "filtered": 990,
+      "total": 2386,
+      "published": 1381,
+      "filtered": 1005,
       "accept_rate": 58,
-      "avg_risk": 28.9,
+      "avg_risk": 28.8,
       "engines": {
         "unknown": 963,
-        "ollama": 407,
+        "ollama": 410,
         "nvidia": 8
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1441,
-      "published": 696,
-      "filtered": 745,
+      "total": 1460,
+      "published": 704,
+      "filtered": 756,
       "accept_rate": 48,
-      "avg_risk": 31.1,
+      "avg_risk": 31.2,
       "engines": {
         "unknown": 440,
-        "ollama": 252,
+        "ollama": 260,
         "nvidia": 4
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "Punch Newspapers",
-      "total": 818,
+      "total": 821,
       "published": 352,
-      "filtered": 466,
+      "filtered": 469,
       "accept_rate": 43,
       "avg_risk": 26.5,
       "engines": {
@@ -40,7 +40,7 @@
         "ollama": 160,
         "nvidia": 4
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "The Punch",
@@ -72,17 +72,17 @@
     },
     {
       "source": "Vanguard News",
-      "total": 291,
+      "total": 294,
       "published": 145,
-      "filtered": 146,
-      "accept_rate": 50,
+      "filtered": 149,
+      "accept_rate": 49,
       "avg_risk": 27.0,
       "engines": {
         "unknown": 94,
         "ollama": 46,
         "nvidia": 5
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "Vanguard",
@@ -126,31 +126,31 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 159,
+      "total": 164,
       "published": 61,
-      "filtered": 98,
-      "accept_rate": 38,
+      "filtered": 103,
+      "accept_rate": 37,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 50,
         "ollama": 9,
         "nvidia": 2
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "punchng",
-      "total": 154,
+      "total": 156,
       "published": 35,
-      "filtered": 119,
-      "accept_rate": 23,
+      "filtered": 121,
+      "accept_rate": 22,
       "avg_risk": 22.3,
       "engines": {
         "unknown": 18,
         "nvidia": 2,
         "ollama": 15
       },
-      "last_seen": "2026-10-05"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "dailypost",
@@ -296,16 +296,16 @@
     },
     {
       "source": "tribuneonlineng",
-      "total": 32,
+      "total": 33,
       "published": 10,
-      "filtered": 22,
-      "accept_rate": 31,
+      "filtered": 23,
+      "accept_rate": 30,
       "avg_risk": 28.7,
       "engines": {
         "unknown": 3,
         "ollama": 7
       },
-      "last_seen": "2026-10-04"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "thisdaylive",
@@ -396,6 +396,18 @@
       "last_seen": "2026-10-05"
     },
     {
+      "source": "The Eagle Online",
+      "total": 12,
+      "published": 3,
+      "filtered": 9,
+      "accept_rate": 25,
+      "avg_risk": 45.0,
+      "engines": {
+        "ollama": 3
+      },
+      "last_seen": "2026-10-07"
+    },
+    {
       "source": "converseer",
       "total": 12,
       "published": 5,
@@ -406,18 +418,6 @@
         "unknown": 5
       },
       "last_seen": "2026-09-22"
-    },
-    {
-      "source": "The Eagle Online",
-      "total": 9,
-      "published": 2,
-      "filtered": 7,
-      "accept_rate": 22,
-      "avg_risk": 35.0,
-      "engines": {
-        "ollama": 2
-      },
-      "last_seen": "2026-10-06"
     },
     {
       "source": "naijanews",
@@ -1251,6 +1251,16 @@
       "last_seen": "2026-08-21"
     },
     {
+      "source": "Celticshorts.com",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-10-06"
+    },
+    {
       "source": "Courrier International",
       "total": 1,
       "published": 1,
@@ -2051,5 +2061,5 @@
       "last_seen": "2026-10-02"
     }
   ],
-  "generated": "2026-10-07 02:18:08"
+  "generated": "2026-10-07 14:19:01"
 }

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-07 02:18:03",
+  "generated": "2026-10-07 14:18:57",
   "models": [
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1697,
-      "downloads": 7255
+      "likes": 1761,
+      "downloads": 9513
     },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 988,
-      "downloads": 1525286
-    },
-    {
-      "id": "Aleph-Alpha/Kolibri-1",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "task": "text-generation",
-      "likes": 721,
-      "downloads": 4138
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "task": "text-to-image",
-      "likes": 3442,
-      "downloads": 1721760
+      "likes": 1525,
+      "downloads": 1529210
     },
     {
       "id": "autotrust/GEV-26B-Decide",
       "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
       "task": "text-classification",
-      "likes": 716,
-      "downloads": 854574
-    },
-    {
-      "id": "Cloudflare/clef-flash",
-      "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "task": "image-text-to-text",
-      "likes": 606,
-      "downloads": 10638
-    },
-    {
-      "id": "convaiinnovations/laya",
-      "url": "https://huggingface.co/convaiinnovations/laya",
-      "task": "text-classification",
-      "likes": 5292,
-      "downloads": 20386
+      "likes": 1016,
+      "downloads": 895867
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 510,
-      "downloads": 364
+      "likes": 812,
+      "downloads": 7562
+    },
+    {
+      "id": "Aleph-Alpha/Kolibri-1",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+      "task": "text-generation",
+      "likes": 757,
+      "downloads": 5775
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "task": "text-to-image",
+      "likes": 3530,
+      "downloads": 1820627
+    },
+    {
+      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "task": "text-generation",
+      "likes": 613,
+      "downloads": 33633
+    },
+    {
+      "id": "Cloudflare/clef-flash",
+      "url": "https://huggingface.co/Cloudflare/clef-flash",
+      "task": "image-text-to-text",
+      "likes": 634,
+      "downloads": 15722
     }
   ],
   "papers": [
     {
-      "title": "Hiding Tool Latency in On-Device Cascaded Voice Agent through Speculative Execution",
-      "url": "https://huggingface.co/papers/2610.07641",
+      "title": "Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding",
+      "url": "https://huggingface.co/papers/2610.07342",
       "upvotes": 1
     },
     {
-      "title": "DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling",
-      "url": "https://huggingface.co/papers/2610.04933",
-      "upvotes": 1
-    },
-    {
-      "title": "Making LLMs Say What They Think: Measuring and Improving CoT-Interpretability Alignment",
-      "url": "https://huggingface.co/papers/2609.38972",
-      "upvotes": 2
-    },
-    {
-      "title": "ALIVE: Interaction-Aligned Object Insertion for First-Frame-Guided Video Editing",
-      "url": "https://huggingface.co/papers/2610.08779",
-      "upvotes": 3
-    },
-    {
-      "title": "Harness Engineering for Software Engineering via Modular Executable Dev-Primitives",
-      "url": "https://huggingface.co/papers/2610.07832",
-      "upvotes": 2
-    },
-    {
-      "title": "HiPLEX: Hierarchical Policy Factorization for Full Duplex Speech Language Models",
-      "url": "https://huggingface.co/papers/2610.07727",
+      "title": "Cross-Lingual Alignment for Decoder-Only Models using MoE Routers",
+      "url": "https://huggingface.co/papers/2610.01921",
       "upvotes": 0
+    },
+    {
+      "title": "Multilinguality in Hybrid Attention LLMs",
+      "url": "https://huggingface.co/papers/2609.35378",
+      "upvotes": 1
+    },
+    {
+      "title": "S2PD: Serial-to-Parallel Diffusion for Physically and Logically Consistent Video Generation",
+      "url": "https://huggingface.co/papers/2610.06847",
+      "upvotes": 0
+    },
+    {
+      "title": "Do Language Models Need a Trainable Input Embedding Table? Fixed Minimal Token Codes at 1.7B-Class Scale",
+      "url": "https://huggingface.co/papers/2610.04002",
+      "upvotes": 0
+    },
+    {
+      "title": "A Safe Action Is Not Enough: Feasible-Future Decoding for Vision-Language-Action Policies",
+      "url": "https://huggingface.co/papers/2610.05166",
+      "upvotes": 3
     }
   ]
 }
