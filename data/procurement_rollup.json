@@ -245,6 +245,12 @@
       "totals": {}
     },
     {
+      "name": "Federal Airports Authority of Nigeria",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "Government of Nigeria",
       "contracts": 2,
       "undisclosed": 1,
@@ -346,12 +352,6 @@
     },
     {
       "name": "Ebonyi State Government",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
-      "name": "Federal Airports Authority of Nigeria",
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
@@ -566,8 +566,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 95,
-      "undisclosed": 59,
+      "contracts": 96,
+      "undisclosed": 60,
       "totals": {
         "NGN": 5598302090000.0,
         "USD": 20597140000.0
@@ -970,5 +970,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-07 21:53:48"
+  "generated": "2026-10-08 02:40:33"
 }
