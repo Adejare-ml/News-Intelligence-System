@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 165,
-  "previous_articles": 167,
+  "recent_articles": 163,
+  "previous_articles": 165,
   "rising": [
     {
       "term": "premium",
-      "recent": 51,
-      "previous": 31,
-      "change": 20
+      "recent": 50,
+      "previous": 32,
+      "change": 18
     },
     {
       "term": "premium times",
-      "recent": 51,
-      "previous": 31,
-      "change": 20
+      "recent": 50,
+      "previous": 32,
+      "change": 18
     },
     {
       "term": "times",
-      "recent": 51,
-      "previous": 31,
-      "change": 20
+      "recent": 50,
+      "previous": 32,
+      "change": 18
     },
     {
       "term": "lagos",
@@ -52,15 +52,15 @@
       "change": 6
     },
     {
-      "term": "osun",
+      "term": "moves",
       "recent": 7,
       "previous": 1,
       "change": 6
     },
     {
-      "term": "plans",
-      "recent": 6,
-      "previous": 0,
+      "term": "osun",
+      "recent": 7,
+      "previous": 1,
       "change": 6
     }
   ],
@@ -68,20 +68,20 @@
     {
       "term": "newspapers",
       "recent": 14,
-      "previous": 29,
-      "change": -15
+      "previous": 30,
+      "change": -16
     },
     {
       "term": "punch",
       "recent": 14,
-      "previous": 29,
-      "change": -15
+      "previous": 30,
+      "change": -16
     },
     {
       "term": "punch newspapers",
       "recent": 14,
-      "previous": 29,
-      "change": -15
+      "previous": 30,
+      "change": -16
     },
     {
       "term": "nigeria\u2019s",
@@ -90,16 +90,16 @@
       "change": -11
     },
     {
+      "term": "cbn",
+      "recent": 4,
+      "previous": 14,
+      "change": -10
+    },
+    {
       "term": "guardian",
       "recent": 45,
       "previous": 54,
       "change": -9
-    },
-    {
-      "term": "cbn",
-      "recent": 5,
-      "previous": 13,
-      "change": -8
     },
     {
       "term": "dangote",
@@ -108,29 +108,29 @@
       "change": -6
     },
     {
-      "term": "efcc",
-      "recent": 4,
-      "previous": 9,
-      "change": -5
-    },
-    {
-      "term": "investment",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
       "term": "world",
       "recent": 1,
       "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "deal",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
+      "term": "profit",
+      "recent": 0,
+      "previous": 5,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 117,
-      "previous": 107
+      "recent": 116,
+      "previous": 105
     },
     {
       "category": "Company",
@@ -139,7 +139,7 @@
     },
     {
       "category": "Legal",
-      "recent": 20,
+      "recent": 19,
       "previous": 29
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-07 21:53:45"
+  "generated": "2026-10-08 02:40:31"
 }

@@ -121,6 +121,24 @@
       "risk": "Medium"
     },
     {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c5ba63ec1ad8",
+      "label": "National Universities Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "e54d28336fd1",
       "label": "Abu Ammar",
       "type": "person",
@@ -253,6 +253,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "0079fcb60236",
       "label": "Oke",
       "type": "person",
@@ -262,6 +268,12 @@
       "id": "40ce4ff30275",
       "label": "Godwin Emefiele",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -667,12 +679,6 @@
       "risk": "Low"
     },
     {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "be5672593de6",
       "label": "NIGCOMSAT Ltd",
       "type": "agency",
@@ -943,6 +949,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "5b569ce39252",
+      "from": "334c4a4c42fd",
+      "to": "6843b615b76a",
+      "label": "Contract Awardee"
     },
     {
       "id": "c1d603f082d4",

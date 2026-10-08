@@ -31,28 +31,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 37.9,
-      "previous_avg": 24.7,
-      "delta": 13.2,
+      "previous_avg": 25.6,
+      "delta": 12.3,
       "recent_mentions": 21,
-      "previous_mentions": 17
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 17.5,
-      "previous_avg": 30.0,
-      "delta": -12.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 37.0,
-      "delta": -12.0,
-      "recent_mentions": 5,
-      "previous_mentions": 15
+      "previous_mentions": 16
     },
     {
       "key": "house of representatives",
@@ -62,6 +44,24 @@
       "delta": -11.7,
       "recent_mentions": 3,
       "previous_mentions": 1
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 26.2,
+      "previous_avg": 37.0,
+      "delta": -10.8,
+      "recent_mentions": 4,
+      "previous_mentions": 15
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 15.0,
+      "previous_avg": 25.0,
+      "delta": -10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "lagos state government",
@@ -75,11 +75,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 18.8,
-      "previous_avg": 26.8,
-      "delta": -8.0,
-      "recent_mentions": 8,
-      "previous_mentions": 17
+      "recent_avg": 18.6,
+      "previous_avg": 26.4,
+      "delta": -7.8,
+      "recent_mentions": 7,
+      "previous_mentions": 18
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 17.5,
+      "previous_avg": 24.0,
+      "delta": -6.5,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "akwa ibom state government",
@@ -94,28 +103,19 @@
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "recent_avg": 20.0,
-      "previous_avg": 26.0,
-      "delta": -6.0,
+      "previous_avg": 25.0,
+      "delta": -5.0,
       "recent_mentions": 2,
-      "previous_mentions": 5
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 17.5,
-      "previous_avg": 23.3,
-      "delta": -5.8,
-      "recent_mentions": 4,
-      "previous_mentions": 6
+      "previous_mentions": 4
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 43.8,
-      "previous_avg": 43.3,
-      "delta": 0.5,
+      "previous_avg": 46.2,
+      "delta": -2.4,
       "recent_mentions": 4,
-      "previous_mentions": 9
+      "previous_mentions": 8
     },
     {
       "key": "ogun state government",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-07 21:53:48"
+  "generated": "2026-10-08 02:40:33"
 }

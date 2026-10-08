@@ -16,9 +16,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1471,
+      "total": 1473,
       "published": 706,
-      "filtered": 765,
+      "filtered": 767,
       "accept_rate": 48,
       "avg_risk": 31.1,
       "engines": {
@@ -30,23 +30,23 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 822,
-      "published": 352,
-      "filtered": 470,
+      "total": 826,
+      "published": 354,
+      "filtered": 472,
       "accept_rate": 43,
       "avg_risk": 26.5,
       "engines": {
         "unknown": 188,
-        "ollama": 160,
+        "ollama": 162,
         "nvidia": 4
       },
-      "last_seen": "2026-10-07"
+      "last_seen": "2026-10-08"
     },
     {
       "source": "The Punch",
-      "total": 518,
+      "total": 520,
       "published": 300,
-      "filtered": 218,
+      "filtered": 220,
       "accept_rate": 58,
       "avg_risk": 32.6,
       "engines": {
@@ -54,7 +54,7 @@
         "nvidia": 6,
         "ollama": 190
       },
-      "last_seen": "2026-10-06"
+      "last_seen": "2026-10-07"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -72,9 +72,9 @@
     },
     {
       "source": "Vanguard News",
-      "total": 294,
+      "total": 295,
       "published": 145,
-      "filtered": 149,
+      "filtered": 150,
       "accept_rate": 49,
       "avg_risk": 27.0,
       "engines": {
@@ -346,6 +346,18 @@
       "last_seen": "2026-10-06"
     },
     {
+      "source": "guardian",
+      "total": 19,
+      "published": 1,
+      "filtered": 18,
+      "accept_rate": 5,
+      "avg_risk": 10.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-10-07"
+    },
+    {
       "source": "The Eagle Online",
       "total": 17,
       "published": 3,
@@ -356,16 +368,6 @@
         "ollama": 3
       },
       "last_seen": "2026-10-07"
-    },
-    {
-      "source": "guardian",
-      "total": 17,
-      "published": 0,
-      "filtered": 17,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-10-06"
     },
     {
       "source": "Voice of Nigeria",
@@ -2061,5 +2063,5 @@
       "last_seen": "2026-10-02"
     }
   ],
-  "generated": "2026-10-07 21:53:48"
+  "generated": "2026-10-08 02:40:33"
 }

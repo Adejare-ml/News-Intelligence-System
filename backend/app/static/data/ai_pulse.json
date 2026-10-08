@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-07 21:53:45",
+  "generated": "2026-10-08 02:40:31",
   "models": [
-    {
-      "id": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
-      "task": "image-text-to-text",
-      "likes": 1804,
-      "downloads": 9513
-    },
     {
       "id": "autotrust/JEV-27B-VL",
       "url": "https://huggingface.co/autotrust/JEV-27B-VL",
       "task": "image-text-to-text",
-      "likes": 1862,
+      "likes": 2049,
       "downloads": 1529210
+    },
+    {
+      "id": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "task": "image-text-to-text",
+      "likes": 1827,
+      "downloads": 9513
     },
     {
       "id": "autotrust/GEV-26B-Decide",
       "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
       "task": "text-classification",
-      "likes": 1229,
+      "likes": 1365,
       "downloads": 895867
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 925,
+      "likes": 978,
       "downloads": 7562
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 774,
+      "likes": 784,
       "downloads": 5775
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3555,
+      "likes": 3581,
       "downloads": 1820627
-    },
-    {
-      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "task": "text-generation",
-      "likes": 625,
-      "downloads": 33633
     },
     {
       "id": "Cloudflare/clef-flash",
       "url": "https://huggingface.co/Cloudflare/clef-flash",
       "task": "image-text-to-text",
-      "likes": 647,
+      "likes": 662,
       "downloads": 15722
+    },
+    {
+      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "task": "text-generation",
+      "likes": 634,
+      "downloads": 33633
     }
   ],
   "papers": [
     {
-      "title": "Technical Report on the Turba Fertilizer Machine Learning Stack in Morocco",
-      "url": "https://huggingface.co/papers/2610.05949",
-      "upvotes": 1
+      "title": "GRACE: Generation-aware latent compression for efficient video generation",
+      "url": "https://huggingface.co/papers/2610.10524",
+      "upvotes": 21
     },
     {
-      "title": "JumpStart Your Policy Learning with Lessons from 160,000 Training Runs",
-      "url": "https://huggingface.co/papers/2609.13730",
-      "upvotes": 0
+      "title": "VIEScore2: Unified Image Evaluation with Spatially Grounded Explanations",
+      "url": "https://huggingface.co/papers/2610.00994",
+      "upvotes": 15
     },
     {
-      "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
-      "url": "https://huggingface.co/papers/2610.02188",
-      "upvotes": 3
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "url": "https://huggingface.co/papers/2610.10528",
+      "upvotes": 14
     },
     {
-      "title": "DeCoPrune: Efficient KV-Cache Pruning for Autoregressive Video Diffusion via Denoising Consistency",
-      "url": "https://huggingface.co/papers/2609.39096",
-      "upvotes": 1
+      "title": "Inverting Multi-Vector Visual Document Indices",
+      "url": "https://huggingface.co/papers/2610.09920",
+      "upvotes": 14
     },
     {
-      "title": "Sensor-Language-Action Models",
-      "url": "https://huggingface.co/papers/2610.08244",
-      "upvotes": 1
+      "title": "Semifactual Credit-Augmented Policy Optimization",
+      "url": "https://huggingface.co/papers/2609.40360",
+      "upvotes": 14
     },
     {
-      "title": "CheckerBench: Can Long-Horizon Agents Synthesize Static-Analysis Checkers?",
-      "url": "https://huggingface.co/papers/2610.07557",
-      "upvotes": 52
+      "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+      "url": "https://huggingface.co/papers/2610.08621",
+      "upvotes": 18
     }
   ]
 }

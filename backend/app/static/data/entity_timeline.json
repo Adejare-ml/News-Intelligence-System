@@ -360,6 +360,37 @@
       ]
     },
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "total_mentions": 8,
@@ -412,31 +443,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
         }
       ]
     },
@@ -635,6 +641,31 @@
       ]
     },
     {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "total_mentions": 5,
@@ -782,25 +813,6 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 18.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4031,6 +4043,19 @@
       ]
     },
     {
+      "key": "miva open university",
+      "label": "Miva Open University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "moytel",
       "label": "Moytel",
       "total_mentions": 1,
@@ -4300,6 +4325,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "national universities commission",
+      "label": "National Universities Commission",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -4575,33 +4613,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "institute of industrial research",
-      "label": "Nigerian Institute of Industrial Research",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "maritime administration and shipping authority",
-      "label": "Nigerian Maritime Administration and Shipping Authority",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-07 21:53:48"
+  "generated": "2026-10-08 02:40:33"
 }
