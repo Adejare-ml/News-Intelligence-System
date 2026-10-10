@@ -1,31 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 163,
-  "previous_articles": 165,
+  "recent_articles": 155,
+  "previous_articles": 171,
   "rising": [
     {
       "term": "premium",
-      "recent": 50,
-      "previous": 32,
-      "change": 18
+      "recent": 54,
+      "previous": 41,
+      "change": 13
     },
     {
       "term": "premium times",
-      "recent": 50,
-      "previous": 32,
-      "change": 18
+      "recent": 54,
+      "previous": 41,
+      "change": 13
     },
     {
       "term": "times",
-      "recent": 50,
-      "previous": 32,
-      "change": 18
+      "recent": 54,
+      "previous": 41,
+      "change": 13
     },
     {
       "term": "lagos",
+      "recent": 15,
+      "previous": 5,
+      "change": 10
+    },
+    {
+      "term": "petrol",
+      "recent": 10,
+      "previous": 0,
+      "change": 10
+    },
+    {
+      "term": "com",
       "recent": 16,
-      "previous": 7,
-      "change": 9
+      "previous": 8,
+      "change": 8
     },
     {
       "term": "punchng",
@@ -40,114 +52,102 @@
       "change": 8
     },
     {
-      "term": "com",
-      "recent": 16,
-      "previous": 9,
-      "change": 7
-    },
-    {
-      "term": "accounts",
-      "recent": 7,
-      "previous": 1,
+      "term": "inec",
+      "recent": 9,
+      "previous": 3,
       "change": 6
     },
     {
-      "term": "moves",
-      "recent": 7,
-      "previous": 1,
-      "change": 6
-    },
-    {
-      "term": "osun",
-      "recent": 7,
-      "previous": 1,
+      "term": "discount",
+      "recent": 8,
+      "previous": 2,
       "change": 6
     }
   ],
   "falling": [
     {
-      "term": "newspapers",
-      "recent": 14,
-      "previous": 30,
-      "change": -16
-    },
-    {
-      "term": "punch",
-      "recent": 14,
-      "previous": 30,
-      "change": -16
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 14,
-      "previous": 30,
-      "change": -16
+      "term": "guardian",
+      "recent": 35,
+      "previous": 56,
+      "change": -21
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 4,
-      "previous": 15,
-      "change": -11
-    },
-    {
-      "term": "cbn",
-      "recent": 4,
-      "previous": 14,
-      "change": -10
-    },
-    {
-      "term": "guardian",
-      "recent": 45,
-      "previous": 54,
+      "recent": 3,
+      "previous": 12,
       "change": -9
     },
     {
-      "term": "dangote",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
+      "term": "cbn",
+      "recent": 6,
+      "previous": 14,
+      "change": -8
     },
     {
-      "term": "world",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
+      "term": "newspapers",
+      "recent": 16,
+      "previous": 23,
+      "change": -7
     },
     {
-      "term": "deal",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
+      "term": "punch",
+      "recent": 16,
+      "previous": 23,
+      "change": -7
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 16,
+      "previous": 23,
+      "change": -7
     },
     {
       "term": "profit",
       "recent": 0,
       "previous": 5,
       "change": -5
+    },
+    {
+      "term": "revive",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
+      "term": "serap",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
+      "term": "targets",
+      "recent": 3,
+      "previous": 7,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 116,
-      "previous": 105
+      "recent": 115,
+      "previous": 113
     },
     {
       "category": "Company",
-      "recent": 26,
-      "previous": 28
+      "recent": 20,
+      "previous": 30
     },
     {
       "category": "Legal",
       "recent": 19,
-      "previous": 29
+      "previous": 25
     },
     {
       "category": "Other",
-      "recent": 2,
+      "recent": 1,
       "previous": 3
     }
   ],
   "social": [],
-  "generated": "2026-10-08 02:40:31"
+  "generated": "2026-10-10 14:17:55"
 }

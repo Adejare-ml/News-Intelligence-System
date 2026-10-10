@@ -34,7 +34,7 @@
       "id": "d9b2bde3f533",
       "label": "Uber Nigeria",
       "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "9ed3f0f5bb2d",
@@ -121,26 +121,8 @@
       "risk": "Medium"
     },
     {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c5ba63ec1ad8",
-      "label": "National Universities Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
       "type": "agency",
       "risk": "Low"
     },
@@ -151,26 +133,44 @@
       "risk": "Low"
     },
     {
-      "id": "c8a42edc6bc3",
-      "label": "NRS",
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "b27f282d6347",
-      "label": "Osun State Government",
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -181,14 +181,26 @@
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
+      "id": "f20adb0751c7",
+      "label": "National Sugar Development Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ef8ecd1eaec4",
+      "label": "Lagos State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,45 +211,63 @@
       "risk": "Low"
     },
     {
-      "id": "9409708c9d80",
-      "label": "International Monetary Fund",
+      "id": "dc5d92c70649",
+      "label": "Nigerian Education Loan Fund",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "3713e106b87b",
-      "label": "Katsina State Hisbah Corps",
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "68419b78e6b4",
-      "label": "Ministry of Aviation",
+      "id": "059b05a09d95",
+      "label": "Ministry of Communications",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "b5361ef8cee9",
-      "label": "FCT Councils",
+      "id": "f9c9720379c4",
+      "label": "Human Rights Initiative for West Africa",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "d4815163ec2e",
-      "label": "Enugu State House of Assembly",
+      "id": "ece0e9a5ff9f",
+      "label": "Agro-Climatic Resilience in Semi-Arid Landscapes",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "9da30857f532",
-      "label": "ECOWAS Court",
-      "type": "agency",
+      "id": "58c58351d674",
+      "label": "Olayemi Cardoso",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "type": "agency",
+      "id": "0cbedbc12bbd",
+      "label": "Amupitan",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ebe2d81e3981",
+      "label": "Not Specified",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b41cdebed8df",
+      "label": "Anthony Kila",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "bf698d54d6c5",
+      "label": "Not stated",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -247,14 +277,20 @@
       "risk": "Low"
     },
     {
+      "id": "3713e106b87b",
+      "label": "Katsina State Hisbah Corps",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "a825104f1c91",
       "label": "Eno",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -265,15 +301,15 @@
       "risk": "Low"
     },
     {
-      "id": "40ce4ff30275",
-      "label": "Godwin Emefiele",
-      "type": "person",
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "company",
+      "id": "40ce4ff30275",
+      "label": "Godwin Emefiele",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -328,6 +364,12 @@
       "id": "dce44e278bb0",
       "label": "Adeleke",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -435,48 +477,6 @@
     {
       "id": "03da7bdd5e4b",
       "label": "Nigeria Triathlon Union",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "fcf4c05afdc4",
-      "label": "Rotimi Amaechi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "56a1ac14d764",
-      "label": "Nyesom Wike",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e8c816b2230d",
-      "label": "Adeyemi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "53bc227250d6",
-      "label": "Omosehin",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "84927e6cf7c4",
-      "label": "Nigerian Institute of Industrial Research",
       "type": "company",
       "risk": "Low"
     },
@@ -637,6 +637,42 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "408bb48fbb39",
+      "label": "Nigerian Startups",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "2666ed3224ec",
+      "label": "Agro-Climatic Resilience in Semi-Arid Landscapes (ACReSAL)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d7ecacfbe05f",
+      "label": "Plateau State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "6945a7b7c902",
+      "label": "Google and Microsoft",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "68419b78e6b4",
+      "label": "Ministry of Aviation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "367f8f860c90",
       "label": "Unnamed Chinese construction company",
       "type": "company",
@@ -679,31 +715,37 @@
       "risk": "Low"
     },
     {
-      "id": "be5672593de6",
-      "label": "NIGCOMSAT Ltd",
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
       "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9fa2cb1cf1f4",
-      "label": "Thales Alenia Space",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "84b6d6cbf896",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e6f87275c6e8",
-      "label": "CGC Nigeria Limited",
-      "type": "company",
       "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "fd1604102e20",
+      "from": "58c58351d674",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Governor"
+    },
+    {
+      "id": "54a4513f3c3d",
+      "from": "0cbedbc12bbd",
+      "to": "bf69cb1ec5ea",
+      "label": "Appointed as Official"
+    },
+    {
+      "id": "822f45dbfdab",
+      "from": "ebe2d81e3981",
+      "to": "a99d3740770f",
+      "label": "Appointed as Transport Commissioner"
+    },
+    {
+      "id": "0ab39d5a9ac2",
+      "from": "b41cdebed8df",
+      "to": "bf698d54d6c5",
+      "label": "Appointed as Not stated"
+    },
     {
       "id": "0a1af79d57a3",
       "from": "e54d28336fd1",
@@ -831,30 +873,6 @@
       "label": "Appointed as President"
     },
     {
-      "id": "951b688a8e4d",
-      "from": "fcf4c05afdc4",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as Minister"
-    },
-    {
-      "id": "4f87337f3e1c",
-      "from": "56a1ac14d764",
-      "to": "beb91054dc85",
-      "label": "Appointed as Minister of the Federal Capital Territory"
-    },
-    {
-      "id": "78a1b64c4878",
-      "from": "e8c816b2230d",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as None"
-    },
-    {
-      "id": "d65f09338e60",
-      "from": "53bc227250d6",
-      "to": "84927e6cf7c4",
-      "label": "Appointed as Not specified"
-    },
-    {
       "id": "990674302105",
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
@@ -951,9 +969,39 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "2e41a1d9c382",
+      "from": "334c4a4c42fd",
+      "to": "a99d3740770f",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "5b569ce39252",
       "from": "334c4a4c42fd",
       "to": "6843b615b76a",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "1575daf5e671",
+      "from": "408bb48fbb39",
+      "to": "a75518830b0f",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "c9f4bce16b23",
+      "from": "d7ecacfbe05f",
+      "to": "2666ed3224ec",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "03450d2d9a59",
+      "from": "6945a7b7c902",
+      "to": "bf69cb1ec5ea",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "84ebf1d2b817",
+      "from": "334c4a4c42fd",
+      "to": "059b05a09d95",
       "label": "Contract Awardee"
     },
     {
@@ -1026,36 +1074,6 @@
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "f8428f09d5a7",
-      "from": "334c4a4c42fd",
-      "to": "5a98eb23f6f5",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "8897356bec22",
-      "from": "334c4a4c42fd",
-      "to": "387e8dea8fb6",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c0492c0dc6c4",
-      "from": "9fa2cb1cf1f4",
-      "to": "be5672593de6",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "2478dba133f9",
-      "from": "de3af1814043",
-      "to": "7dc08a8ebfaa",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "b6c692491b0a",
-      "from": "e6f87275c6e8",
-      "to": "84b6d6cbf896",
       "label": "Contract Awardee"
     }
   ]

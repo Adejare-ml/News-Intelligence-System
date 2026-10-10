@@ -106,8 +106,16 @@
       "label": "National Bureau of Statistics"
     },
     {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency"
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited"
+    },
+    {
+      "key": "natural resource governance institute",
+      "label": "Natural Resource Governance Institute"
     },
     {
       "key": "ogun state government",
@@ -120,6 +128,10 @@
     {
       "key": "ola olukoyede",
       "label": "Ola Olukoyede"
+    },
+    {
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso"
     },
     {
       "key": "oyo state government",
@@ -136,6 +148,10 @@
     {
       "key": "taraba state government",
       "label": "Taraba State Government"
+    },
+    {
+      "key": "tech revolution africa",
+      "label": "Tech Revolution Africa"
     },
     {
       "key": "totalenergies",
@@ -168,6 +184,11 @@
       "weight": 4
     },
     {
+      "a": "all progressives congress",
+      "b": "independent national electoral commission",
+      "weight": 3
+    },
+    {
       "a": "economic and financial crimes commission",
       "b": "maina",
       "weight": 3
@@ -194,11 +215,6 @@
     },
     {
       "a": "all progressives congress",
-      "b": "independent national electoral commission",
-      "weight": 2
-    },
-    {
-      "a": "all progressives congress",
       "b": "toyin abraham",
       "weight": 2
     },
@@ -220,6 +236,11 @@
     {
       "a": "central bank of",
       "b": "lagos chamber of commerce and industry",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
+      "b": "olayemi cardoso",
       "weight": 2
     },
     {
@@ -281,7 +302,17 @@
       "a": "lagos state government",
       "b": "national bureau of statistics",
       "weight": 2
+    },
+    {
+      "a": "national information technology development agency",
+      "b": "tech revolution africa",
+      "weight": 2
+    },
+    {
+      "a": "national petroleum company",
+      "b": "natural resource governance institute",
+      "weight": 2
     }
   ],
-  "generated": "2026-10-08 02:40:33"
+  "generated": "2026-10-10 14:17:57"
 }
