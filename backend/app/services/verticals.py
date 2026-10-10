@@ -2,7 +2,7 @@
 markets, AI pulse.
 
 Generalizes the tech_news pattern: keyless sources only (Google News
-RSS, Stooq CSV quotes, CoinGecko, the Hugging Face public API), each
+RSS, CoinGecko, the Hugging Face public API), each
 export best-effort per section -- a dead source shrinks its section
 rather than failing the run. Everything here stays outside the main
 pipeline: no LLM cascade, no Sheets writes, no mixing with the Nigerian
@@ -69,38 +69,20 @@ def build_world_now(cap: int = 10) -> Dict[str, Any]:
 # Markets (indices, commodities, bitcoin) with daily history like fx.json
 # ---------------------------------------------------------------------------
 
-# Stooq symbols -> export keys. ^spx S&P 500, ^ndx Nasdaq 100,
-# cb.f Brent crude, gc.f gold. All keyless CSV.
-STOOQ_SYMBOLS = {"^spx": "spx", "^ndx": "ndx", "cb.f": "brent", "gc.f": "gold"}
-# The caret in index symbols must be percent-encoded: the raw character
-# made Stooq answer 404 on the first production run (2026-09-23 14:13).
-STOOQ_URL = ("https://stooq.com/q/l/?s="
-             + requests.utils.quote(",".join(STOOQ_SYMBOLS), safe=",.")
-             + "&f=sd2t2ohlcv&h&e=csv")
+# Indices and commodities came from Stooq's keyless quote CSV until it
+# stopped existing: in 2026 Stooq put data downloads behind API keys and
+# a JavaScript browser check, and the endpoint answered every production
+# run with HTTP 404 (percent-encoded carets included -- see the
+# 2026-10-10 audit). There is no keyless replacement for index and
+# commodity quotes, and this project's verticals are keyless by design,
+# so the markets export is BTC-only for now. Old spx/ndx/brent/gold
+# points remain in markets.json history with their honest dates. To
+# revive the section, add a keyed provider (e.g. Tiingo or Alpha
+# Vantage, both have free tiers) behind a secret and fold its closes
+# into fetch_market_rates() -- merge_market_history and the dashboard
+# panel need no changes, they render whatever keys arrive.
 COINGECKO_URL = ("https://api.coingecko.com/api/v3/simple/price"
                  "?ids=bitcoin&vs_currencies=usd")
-
-
-def parse_stooq_csv(text: str) -> Dict[str, float]:
-    """Stooq quote CSV -> {export_key: close}. 'N/D' cells (market closed,
-    unknown symbol) drop the row; a malformed response yields {}."""
-    out: Dict[str, float] = {}
-    lines = str(text or "").strip().splitlines()
-    for line in lines[1:]:  # header first
-        cells = line.split(",")
-        if len(cells) < 7:
-            continue
-        symbol = cells[0].strip().lower()
-        key = STOOQ_SYMBOLS.get(symbol)
-        if not key:
-            continue
-        try:
-            close = float(cells[6])
-        except (TypeError, ValueError):
-            continue
-        if close > 0:
-            out[key] = round(close, 2)
-    return out
 
 
 def parse_btc(payload: Optional[Dict[str, Any]]) -> Optional[float]:
@@ -114,15 +96,6 @@ def parse_btc(payload: Optional[Dict[str, Any]]) -> Optional[float]:
 def fetch_market_rates() -> Dict[str, float]:
     """Live quotes; whatever sections fail are simply absent."""
     rates: Dict[str, float] = {}
-    try:
-        resp = requests.get(STOOQ_URL, timeout=REQUEST_TIMEOUT_SECONDS,
-                            headers=USER_AGENT)
-        if resp.status_code == 200:
-            rates.update(parse_stooq_csv(resp.text))
-        else:
-            logger.warning(f"Stooq returned HTTP {resp.status_code}.")
-    except Exception as exc:
-        logger.warning(f"Stooq fetch failed: {type(exc).__name__}")
     try:
         resp = requests.get(COINGECKO_URL, timeout=REQUEST_TIMEOUT_SECONDS,
                             headers=USER_AGENT)
@@ -160,8 +133,8 @@ def merge_market_history(existing: Optional[Dict[str, Any]],
     history = history[-MAX_HISTORY_DAYS:]
     return {
         "generated": now.strftime("%Y-%m-%d %H:%M:%S"),
-        "sources": "stooq.com (indices, commodities), coingecko.com (BTC)",
-        "unit": "index points; USD for brent/gold/btc",
+        "sources": "coingecko.com (BTC)",
+        "unit": "USD",
         "latest": dict(rates),
         "history": history,
     }
