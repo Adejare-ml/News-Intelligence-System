@@ -87,9 +87,12 @@ jobs:
           NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
           DSPY_PROVIDER: ${{ vars.DSPY_PROVIDER || 'ollama' }}
           GEPA_REFLECTION_MODEL: ${{ vars.GEPA_REFLECTION_MODEL }}
+          # Via env, not ${{ }} inside run:, so a crafted dispatch input
+          # cannot execute as shell beside the provider keys above.
+          IN_MAX_METRIC_CALLS: ${{ github.event.inputs.max_metric_calls || '150' }}
         run: |
           python scripts/optimise_extraction.py \
-            --max-metric-calls "${{ github.event.inputs.max_metric_calls || '150' }}" \
+            --max-metric-calls "$IN_MAX_METRIC_CALLS" \
             --summary-out gepa_summary.md
 
       - name: Check whether the artifact actually changed
