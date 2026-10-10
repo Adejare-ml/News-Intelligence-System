@@ -273,8 +273,31 @@ class SheetsDatabase:
                 ws.add_cols(len(columns) - ws.col_count)
 
             def _do_migrate():
-                ws.clear()
+                # Write first, trim after. The previous clear()-then-update()
+                # left the tab PERMANENTLY EMPTY whenever the clear succeeded
+                # and the big update then failed past its retries (payload
+                # 400, quota 429): the migrated rows existed only in a local
+                # variable, and the run carried on against the empty tab --
+                # full re-analysis, IDs restarting at 1, history gone.
+                # Overwriting in place means a failure at any point leaves
+                # real data in the tab.
                 ws.update(values=[columns] + migrated, range_name="A1")
+                old_rows = len(values)
+                old_cols = max((len(r) for r in values), default=0)
+                new_rows = len(migrated) + 1
+                new_cols = len(columns)
+                from gspread.utils import rowcol_to_a1
+                leftovers = []
+                if old_rows > new_rows:
+                    leftovers.append("A%d:%s" % (
+                        new_rows + 1,
+                        rowcol_to_a1(old_rows, max(old_cols, new_cols))))
+                if old_cols > new_cols:
+                    leftovers.append("%s:%s" % (
+                        rowcol_to_a1(1, new_cols + 1),
+                        rowcol_to_a1(max(old_rows, new_rows), old_cols)))
+                if leftovers:
+                    ws.batch_clear(leftovers)
 
             retry_google_sheets_op(_do_migrate)
             self._cache.pop(sheet_name, None)
@@ -340,6 +363,16 @@ class SheetsDatabase:
 
             written = False
             if self.use_local:
+                # openpyxl types any string starting with "=" as a live
+                # formula, so a crafted headline ('=HYPERLINK(...)') from a
+                # fetched feed would execute when someone opens the local
+                # xlsx. Prefix-escape the formula trigger characters; the
+                # Sheets path is already safe (append_row writes RAW).
+                row_values = [
+                    "'" + v if isinstance(v, str) and v[:1] in ("=", "+", "-", "@")
+                    else v
+                    for v in row_values
+                ]
                 try:
                     df_existing = pd.DataFrame(columns=columns)
                     if os.path.exists(self.local_path):
@@ -450,7 +483,17 @@ class SheetsDatabase:
             self._add_company_locked(company)
 
     def _add_company_locked(self, company: Dict[str, Any]):
-        companies = self.get_companies()
+        # Same shape as the PSC guard: in Sheets mode a failed read raises,
+        # and the first add_company of the batch would otherwise abort the
+        # whole run after its LLM spend. Falling through with an empty list
+        # inserts a possibly-duplicate row (recoverable) instead.
+        try:
+            companies = self.get_companies()
+        except Exception as exc:
+            logger.warning(
+                f"Companies dedupe read failed ({type(exc).__name__}); "
+                "inserting without find-or-update.")
+            companies = []
         name = company.get("Company", "").strip()
         if not name:
             return
@@ -592,11 +635,21 @@ class SheetsDatabase:
 
             # Reads come from the in-memory cache, which _append_row keeps current,
             # so this also catches duplicates written earlier in the same run --
-            # which is where the observed pair came from. If the read fails the
-            # cache is empty and the row is written: a duplicate is recoverable, a
-            # dropped disclosure is not.
+            # which is where the observed pair came from. The except below is what
+            # makes the next comment true: in Sheets mode _read_sheet RAISES after
+            # retries, and without the guard a transient 503 here aborted the whole
+            # run mid-batch after its LLM spend. If the read fails the row is
+            # written undeduplicated: a duplicate is recoverable, a dropped
+            # disclosure is not.
             key = self._psc_key(psc)
-            for existing in self.get_significant_control():
+            try:
+                existing_rows = self.get_significant_control()
+            except Exception as exc:
+                logger.warning(
+                    f"PSC dedupe read failed ({type(exc).__name__}); "
+                    "writing the row without dedupe.")
+                existing_rows = []
+            for existing in existing_rows:
                 if self._psc_key(existing) == key:
                     logger.info(
                         "Skipping duplicate significant-control row for %s / %s on %s",
