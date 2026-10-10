@@ -73,6 +73,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission",
+      "recent_avg": 40.0,
+      "previous_avg": 45.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 32.4,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "natural resource governance institute",
-      "label": "Natural Resource Governance Institute",
-      "recent_avg": 27.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-10 14:17:57"
+  "generated": "2026-10-10 17:38:08"
 }

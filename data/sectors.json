@@ -68,22 +68,21 @@
       }
     },
     {
-      "industry": "Financial Services",
-      "companies": 4,
-      "mentions": 10,
-      "risk": {
-        "Medium": 1,
-        "High": 1,
-        "Low": 2
-      }
-    },
-    {
       "industry": "Politics",
       "companies": 4,
       "mentions": 10,
       "risk": {
         "Low": 2,
         "Medium": 2
+      }
+    },
+    {
+      "industry": "Financial Services",
+      "companies": 3,
+      "mentions": 8,
+      "risk": {
+        "Medium": 1,
+        "Low": 2
       }
     },
     {
@@ -170,6 +169,15 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 3,
+      "mentions": 5,
+      "risk": {
+        "Medium": 2,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Logistics & Port Operations",
       "companies": 1,
       "mentions": 5,
@@ -202,15 +210,6 @@
       }
     },
     {
-      "industry": "Fintech",
-      "companies": 2,
-      "mentions": 4,
-      "risk": {
-        "Medium": 1,
-        "Low": 1
-      }
-    },
-    {
       "industry": "Manufacturing",
       "companies": 2,
       "mentions": 4,
@@ -224,6 +223,14 @@
       "mentions": 3,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Credit Rating Agency",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "High": 1
       }
     },
     {
@@ -596,5 +603,5 @@
       }
     }
   ],
-  "generated": "2026-10-10 14:17:57"
+  "generated": "2026-10-10 17:38:08"
 }

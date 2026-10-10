@@ -7953,9 +7953,9 @@
   },
   {
     "Company": "Fitch Ratings",
-    "Mention Count": 2,
-    "Last Seen": "2026-10-10 13:59",
-    "Industry": "Financial Services",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-10 17:37",
+    "Industry": "Credit Rating Agency",
     "Risk Level": "High",
     "First Seen": "2026-09-16 12:28"
   },
@@ -8958,5 +8958,13 @@
     "Industry": "Agriculture",
     "Risk Level": "Low",
     "First Seen": "2026-10-10 14:09"
+  },
+  {
+    "Company": "WayvePay",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 17:36",
+    "Industry": "Fintech",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-10 17:36"
   }
 ]
