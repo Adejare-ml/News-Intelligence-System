@@ -1,5 +1,22 @@
 [
   {
+    "ID": 8420,
+    "Time": "2026-10-10 08:29:55",
+    "Title": "RMAFC Charges New Employees To Safeguard Public Revenue, Shun Corruption",
+    "Source": "leadership",
+    "URL": "https://leadership.ng/rmafc-charges-new-employees-to-safeguard-public-revenue-shun-corruption/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Revenue Mobilisation Allocation and Fiscal Commission (RMAFC) has onboarded new employees, charging them to prioritize the safeguarding of public revenue and maintain integrity against corruption.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Appointment",
+    "Risk Level": "Low",
+    "Importance": 30,
+    "Entities": "Revenue Mobilisation Allocation and Fiscal Commission",
+    "Filter Reason": ""
+  },
+  {
     "ID": 8397,
     "Time": "Sat, 10 Oct 2026 16:06:06 GMT",
     "Title": "Nigerian govt speaks on Fitch\u2019s credit rating - Premium Times Nigeria",
@@ -1000,23 +1017,6 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Afri Invoice|NRS",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 8174,
-    "Time": "Wed, 07 Oct 2026 10:58:33 GMT",
-    "Title": "Enugu Assembly dissolves its health committee, gives reasons - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc2FUbVVWZGpObEFpbFlVdnJBaWxqeFlPZW04MkVIajFaNlAxY2w1YjYwSlF2UW95djVFYm1kNGhmQ0U0QUFIcnJyeTh4UDBWZ0ZsbTA0Y2V5MXFEdEdWSVo1R1hQUVdscjdrMWRYd09CQ0JXTXNMUDVDSG00NEVuZTVZRVdjWmY3S0dPRHNaOUs0Z0l0N3NuM2lLbXlxUTBNY2JTOTJ6TURrYnFiRmhfaS1rR1NjZ0M2?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Enugu State House of Assembly has dissolved its health committee. The specific reasons for the dissolution were cited by the Assembly but not detailed in the snippet.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Restructuring",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Enugu State House of Assembly",
     "Filter Reason": ""
   }
 ]
