@@ -3,20 +3,11 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 38.6,
+      "recent_avg": 33.0,
       "previous_avg": 16.7,
-      "delta": 21.9,
-      "recent_mentions": 7,
+      "delta": 16.3,
+      "recent_mentions": 10,
       "previous_mentions": 3
-    },
-    {
-      "key": "king s college",
-      "label": "King's College",
-      "recent_avg": 40.0,
-      "previous_avg": 20.0,
-      "delta": 20.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "osun state government",
@@ -28,13 +19,40 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 37.9,
-      "previous_avg": 25.6,
-      "delta": 12.3,
-      "recent_mentions": 21,
-      "previous_mentions": 16
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 24.2,
+      "previous_avg": 38.2,
+      "delta": -14.0,
+      "recent_mentions": 6,
+      "previous_mentions": 14
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 43.0,
+      "previous_avg": 30.0,
+      "delta": 13.0,
+      "recent_mentions": 5,
+      "previous_mentions": 2
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 32.5,
+      "delta": -12.5,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 13.3,
+      "previous_avg": 25.0,
+      "delta": -11.7,
+      "recent_mentions": 3,
+      "previous_mentions": 2
     },
     {
       "key": "house of representatives",
@@ -46,85 +64,67 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 26.2,
-      "previous_avg": 37.0,
-      "delta": -10.8,
-      "recent_mentions": 4,
-      "previous_mentions": 15
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "recent_avg": 10.0,
+      "previous_avg": 20.0,
+      "delta": -10.0,
+      "recent_mentions": 3,
+      "previous_mentions": 2
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 32.4,
+      "previous_avg": 29.2,
+      "delta": 3.2,
+      "recent_mentions": 21,
+      "previous_mentions": 25
+    },
+    {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
       "recent_avg": 15.0,
-      "previous_avg": 25.0,
-      "delta": -10.0,
+      "previous_avg": 17.5,
+      "delta": -2.5,
       "recent_mentions": 2,
       "previous_mentions": 2
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 19.0,
-      "previous_avg": 10.0,
-      "delta": 9.0,
-      "recent_mentions": 5,
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 27.5,
+      "previous_avg": 25.0,
+      "delta": 2.5,
+      "recent_mentions": 2,
       "previous_mentions": 4
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 18.6,
-      "previous_avg": 26.4,
-      "delta": -7.8,
-      "recent_mentions": 7,
-      "previous_mentions": 18
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 17.5,
-      "previous_avg": 24.0,
-      "delta": -6.5,
-      "recent_mentions": 4,
-      "previous_mentions": 5
-    },
-    {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "recent_avg": 14.0,
-      "previous_avg": 20.0,
-      "delta": -6.0,
-      "recent_mentions": 5,
-      "previous_mentions": 1
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "recent_avg": 20.0,
-      "previous_avg": 25.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 4
+      "previous_avg": 21.7,
+      "delta": -1.7,
+      "recent_mentions": 7,
+      "previous_mentions": 12
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 43.8,
-      "previous_avg": 46.2,
-      "delta": -2.4,
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "recent_avg": 16.7,
+      "previous_avg": 15.0,
+      "delta": 1.7,
+      "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 18.8,
+      "previous_avg": 20.0,
+      "delta": -1.2,
       "recent_mentions": 4,
-      "previous_mentions": 8
-    },
-    {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 30.0,
-      "previous_avg": 30.0,
-      "delta": 0.0,
-      "recent_mentions": 5,
-      "previous_mentions": 5
+      "previous_mentions": 1
     },
     {
       "key": "ishaku",
@@ -163,15 +163,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "recent_avg": 32.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "recent_avg": 30.0,
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "natural resource governance institute",
+      "label": "Natural Resource Governance Institute",
+      "recent_avg": 27.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-08 02:40:33"
+  "generated": "2026-10-10 14:17:57"
 }

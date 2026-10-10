@@ -2,19 +2,19 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 960,
-      "mentions": 1632,
+      "companies": 958,
+      "mentions": 1623,
       "risk": {
-        "Low": 847,
+        "Low": 846,
         "Critical": 57,
-        "Medium": 33,
+        "Medium": 32,
         "High": 23
       }
     },
     {
       "industry": "Oil & Gas",
       "companies": 24,
-      "mentions": 139,
+      "mentions": 150,
       "risk": {
         "Critical": 1,
         "High": 2,
@@ -23,29 +23,30 @@
       }
     },
     {
-      "industry": "Ride-hailing",
-      "companies": 2,
-      "mentions": 31,
+      "industry": "Telecoms",
+      "companies": 6,
+      "mentions": 34,
       "risk": {
-        "Low": 2
+        "Medium": 1,
+        "Low": 5
       }
     },
     {
       "industry": "Banking",
-      "companies": 13,
-      "mentions": 20,
+      "companies": 14,
+      "mentions": 21,
       "risk": {
-        "Low": 10,
+        "Low": 11,
         "Medium": 3
       }
     },
     {
-      "industry": "Non-Profit",
-      "companies": 3,
-      "mentions": 13,
+      "industry": "Aviation",
+      "companies": 4,
+      "mentions": 16,
       "risk": {
-        "Critical": 1,
-        "Medium": 2
+        "Medium": 3,
+        "Low": 1
       }
     },
     {
@@ -54,6 +55,26 @@
       "mentions": 10,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Energy",
+      "companies": 6,
+      "mentions": 10,
+      "risk": {
+        "High": 2,
+        "Medium": 3,
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Financial Services",
+      "companies": 4,
+      "mentions": 10,
+      "risk": {
+        "Medium": 1,
+        "High": 1,
+        "Low": 2
       }
     },
     {
@@ -66,33 +87,6 @@
       }
     },
     {
-      "industry": "Energy",
-      "companies": 5,
-      "mentions": 9,
-      "risk": {
-        "High": 2,
-        "Medium": 3
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 4,
-      "mentions": 9,
-      "risk": {
-        "Medium": 1,
-        "High": 1,
-        "Low": 2
-      }
-    },
-    {
-      "industry": "Telecoms",
-      "companies": 6,
-      "mentions": 9,
-      "risk": {
-        "Low": 6
-      }
-    },
-    {
       "industry": "Insurance",
       "companies": 7,
       "mentions": 8,
@@ -102,12 +96,20 @@
       }
     },
     {
-      "industry": "Aviation",
-      "companies": 3,
+      "industry": "Legal/Non-Profit",
+      "companies": 1,
+      "mentions": 8,
+      "risk": {
+        "Critical": 1
+      }
+    },
+    {
+      "industry": "Agriculture",
+      "companies": 6,
       "mentions": 7,
       "risk": {
-        "Low": 1,
-        "Medium": 2
+        "Low": 5,
+        "Medium": 1
       }
     },
     {
@@ -128,20 +130,43 @@
       }
     },
     {
-      "industry": "Agriculture",
-      "companies": 5,
-      "mentions": 6,
-      "risk": {
-        "Low": 4,
-        "Medium": 1
-      }
-    },
-    {
       "industry": "Healthcare",
       "companies": 5,
       "mentions": 6,
       "risk": {
         "Low": 5
+      }
+    },
+    {
+      "industry": "Non-Profit",
+      "companies": 2,
+      "mentions": 6,
+      "risk": {
+        "Medium": 2
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 1,
+      "mentions": 6,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
+      "industry": "Ride-hailing",
+      "companies": 1,
+      "mentions": 6,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology",
+      "companies": 3,
+      "mentions": 6,
+      "risk": {
+        "Low": 3
       }
     },
     {
@@ -158,14 +183,6 @@
       "mentions": 5,
       "risk": {
         "Low": 3
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 1,
-      "mentions": 5,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -250,14 +267,6 @@
       }
     },
     {
-      "industry": "Technology",
-      "companies": 1,
-      "mentions": 3,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "FinTech",
       "companies": 1,
       "mentions": 2,
@@ -282,7 +291,32 @@
       }
     },
     {
+      "industry": "Real Estate",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Shipping",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology/Venture Capital",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Telecoms/Fintech",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -343,6 +377,14 @@
       "mentions": 1,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Consultancy/Governance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -514,15 +556,15 @@
       }
     },
     {
-      "industry": "Real Estate",
+      "industry": "Retail",
       "companies": 1,
       "mentions": 1,
       "risk": {
-        "Medium": 1
+        "Low": 1
       }
     },
     {
-      "industry": "Retail",
+      "industry": "Sports",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -538,6 +580,14 @@
       }
     },
     {
+      "industry": "Telecoms/Mobility",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Venture Capital / Education",
       "companies": 1,
       "mentions": 1,
@@ -546,5 +596,5 @@
       }
     }
   ],
-  "generated": "2026-10-08 02:40:33"
+  "generated": "2026-10-10 14:17:57"
 }

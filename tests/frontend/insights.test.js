@@ -428,6 +428,12 @@
             T.ok(I.aiPulseSummary({ models: P.models, papers: [] }), "models alone");
             T.eq(I.aiPulseSummary({ models: [], papers: [] }), null);
         });
+        T.it("non-http model URLs are dropped like every other panel", function () {
+            T.eq(I.aiPulseSummary({
+                models: [{ id: "evil/model", url: "javascript:alert(1)" }],
+                papers: [],
+            }), null);
+        });
     });
 
     T.report();

@@ -1,19 +1,41 @@
 {
   "new_companies": [
-    "Miva Open University"
+    "Access Holdings",
+    "Microsoft",
+    "Moove",
+    "Natural Resource Governance Institute",
+    "Nigeria Judo Federation",
+    "Oyo Sugar and Derivatives Industries Limited",
+    "Periwinkle Empire",
+    "Tech Revolution Africa",
+    "Zungeru Hydroelectric Power Plant"
   ],
-  "new_people": [],
+  "new_people": [
+    "Amupitan",
+    "Anthony Kila"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Communications Ministry made \u20a6345.5 million duplicate payment for Abuja ICT Park project - Audit Report - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPdUlQNmF1ZkNIREY0YzUzOWMzTHV4Qm5YbUI3dlhQTi1hUEQ3Yl9BWFpXUFNsakhZQWRkcFdjTzQtSlRnWGZhQjVJYnE3SkxYbVE2Qk1LanFubjY3bjBKZzVJMG1rS1p3UF9TU2JEUWszekpoWEl3VzhibzM4QTA2aUtDdF9lUVlSdGh5OGNIMW8tRU1GaldnZVpMLWt4S1dQNEpFQk04NWpZNkE1ZlV5V3l6aFFjcmgtMl9WUGl1MnNoUGhRaUNQbE1wb1I5OHU3WnR3emhQY1Nid0pjVXJqQlg3bVl1R3N3TS03NWpGc1dGNURtQmh0eW5GcURmSy1KOUprd2F3?oc=5",
+      "risk": 75.0
+    },
+    {
+      "title": "INVESTIGATION: How Anthony Kila falsified all his academic qualifications \u2013 from Bachelor's to Doctorate - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPd01iN1AxTFpWMTJRUW5vSFl5MVE1Q3gtU0txZ2EzYUp6NGVxbUhWanJSMTk5Um5ZU0tFd2h5dl93M3FsX21CcEVhXzZRM2NabDZoa2ZuZWRPeFgxODlmN2xlVkdUYW5NSDZreHFiakJUUWtDd0xJd0UtcjNjYnNTM2NCUnR1UnppOXR1aW5FLU8yUXpPOGY2QThBckl1d3VOUlc2M3lNWmU2aVJHaEo4cGFjNmQ4U3hXaG5Vcm5wWTNDdG5YVE0zUWNiRjhUbjVpb1UtUkRvREg3OXJXd1V1Mm1YcldGSzZzSkFNNGZmWQ?oc=5",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
+    "new_companies": 9,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 2
   },
-  "generated": "2026-10-08 02:40:27"
+  "generated": "2026-10-10 14:17:51"
 }

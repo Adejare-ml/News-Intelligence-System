@@ -141,6 +141,14 @@
       }
     },
     {
+      "name": "National Information Technology Development Agency",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 3000000000.0
+      }
+    },
+    {
       "name": "Adamawa State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -205,6 +213,14 @@
       }
     },
     {
+      "name": "Ministry of Communications",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 345500000.0
+      }
+    },
+    {
       "name": "ActionAid Nigeria",
       "contracts": 1,
       "undisclosed": 0,
@@ -219,6 +235,12 @@
       "totals": {
         "NGN": 830000.0
       }
+    },
+    {
+      "name": "Federal Airports Authority of Nigeria",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
     },
     {
       "name": "Federal Capital Territory Administration",
@@ -240,12 +262,6 @@
     },
     {
       "name": "Celtic",
-      "contracts": 2,
-      "undisclosed": 2,
-      "totals": {}
-    },
-    {
-      "name": "Federal Airports Authority of Nigeria",
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
@@ -307,6 +323,14 @@
       "totals": {}
     },
     {
+      "name": "Agro-Climatic Resilience in Semi-Arid Landscapes (ACReSAL)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 500000000.0
+      }
+    },
+    {
       "name": "Anambra State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -357,6 +381,14 @@
       "totals": {}
     },
     {
+      "name": "Enugu State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 200000000.0
+      }
+    },
+    {
       "name": "Federal Ministry of Power",
       "contracts": 1,
       "undisclosed": 1,
@@ -381,6 +413,12 @@
       "totals": {
         "USD": 500000.0
       }
+    },
+    {
+      "name": "Independent National Electoral Commission",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
     },
     {
       "name": "Institute for Peace and Conflict Resolution",
@@ -566,11 +604,11 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 96,
-      "undisclosed": 60,
+      "contracts": 99,
+      "undisclosed": 61,
       "totals": {
-        "NGN": 5598302090000.0,
-        "USD": 20597140000.0
+        "NGN": 5598647590000.0,
+        "USD": 20797140000.0
       }
     },
     {
@@ -595,6 +633,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 10600000000.0
+      }
+    },
+    {
+      "name": "Nigerian Startups",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 3000000000.0
       }
     },
     {
@@ -774,6 +820,12 @@
       "totals": {}
     },
     {
+      "name": "Google and Microsoft",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Government of the United States",
       "contracts": 1,
       "undisclosed": 1,
@@ -839,6 +891,14 @@
       "undisclosed": 0,
       "totals": {
         "USD": 65000.0
+      }
+    },
+    {
+      "name": "Plateau State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 500000000.0
       }
     },
     {
@@ -970,5 +1030,5 @@
       "totals": {}
     }
   ],
-  "generated": "2026-10-08 02:40:33"
+  "generated": "2026-10-10 14:17:57"
 }

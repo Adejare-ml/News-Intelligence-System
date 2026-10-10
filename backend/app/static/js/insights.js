@@ -638,7 +638,10 @@
     function aiPulseSummary(payload, cap) {
         if (!payload) return null;
         var models = (payload.models || []).filter(function (m) {
-            return m && String(m.id || "").trim();
+            // Same scheme filter as papers/world/tech: esc() stops attribute
+            // breakout but not a javascript: href from a poisoned data file.
+            return m && String(m.id || "").trim()
+                && String(m.url || "").indexOf("http") === 0;
         }).slice(0, cap || 8);
         var papers = (payload.papers || []).filter(function (p) {
             return p && String(p.title || "").trim()

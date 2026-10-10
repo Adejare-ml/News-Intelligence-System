@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-08 02:40:31",
+  "generated": "2026-10-10 14:17:54",
   "models": [
     {
-      "id": "autotrust/JEV-27B-VL",
-      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
-      "task": "image-text-to-text",
-      "likes": 2049,
-      "downloads": 1529210
+      "id": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "task": "feature-extraction",
+      "likes": 1436,
+      "downloads": 45605
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 1827,
-      "downloads": 9513
+      "likes": 1970,
+      "downloads": 13579
     },
     {
-      "id": "autotrust/GEV-26B-Decide",
-      "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
-      "task": "text-classification",
-      "likes": 1365,
-      "downloads": 895867
-    },
-    {
-      "id": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "task": "feature-extraction",
-      "likes": 978,
-      "downloads": 7562
+      "id": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "task": "text-generation",
+      "likes": 895,
+      "downloads": 33664
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 784,
-      "downloads": 5775
+      "likes": 853,
+      "downloads": 10496
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3581,
-      "downloads": 1820627
-    },
-    {
-      "id": "Cloudflare/clef-flash",
-      "url": "https://huggingface.co/Cloudflare/clef-flash",
-      "task": "image-text-to-text",
-      "likes": 662,
-      "downloads": 15722
+      "likes": 3826,
+      "downloads": 2096562
     },
     {
       "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "task": "text-generation",
-      "likes": 634,
-      "downloads": 33633
+      "likes": 678,
+      "downloads": 45199
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 7119,
+      "downloads": 1720888
+    },
+    {
+      "id": "Qwen/Qwen-Image-2.1-Turbo",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "task": "text-to-image",
+      "likes": 399,
+      "downloads": 2138
     }
   ],
   "papers": [
     {
-      "title": "GRACE: Generation-aware latent compression for efficient video generation",
-      "url": "https://huggingface.co/papers/2610.10524",
-      "upvotes": 21
+      "title": "The Lattice of Transition Laws",
+      "url": "https://huggingface.co/papers/2610.11216",
+      "upvotes": 1
     },
     {
-      "title": "VIEScore2: Unified Image Evaluation with Spatially Grounded Explanations",
-      "url": "https://huggingface.co/papers/2610.00994",
-      "upvotes": 15
+      "title": "Behavioral Persistence and Incomplete Functional Transfer of Co-evolved Communication in Evolutionary Robotics",
+      "url": "https://huggingface.co/papers/2609.38527",
+      "upvotes": 0
     },
     {
-      "title": "Long-WAM: Scaling the Context of World-Action Models",
-      "url": "https://huggingface.co/papers/2610.10528",
-      "upvotes": 14
+      "title": "Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
+      "url": "https://huggingface.co/papers/2610.09280",
+      "upvotes": 0
     },
     {
-      "title": "Inverting Multi-Vector Visual Document Indices",
-      "url": "https://huggingface.co/papers/2610.09920",
-      "upvotes": 14
+      "title": "Opera: A Verbal Critic Framework for Long-horizon Coding Agents",
+      "url": "https://huggingface.co/papers/2609.33987",
+      "upvotes": 8
     },
     {
-      "title": "Semifactual Credit-Augmented Policy Optimization",
-      "url": "https://huggingface.co/papers/2609.40360",
-      "upvotes": 14
+      "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
+      "url": "https://huggingface.co/papers/2610.11169",
+      "upvotes": 1
     },
     {
-      "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
-      "url": "https://huggingface.co/papers/2610.08621",
-      "upvotes": 18
+      "title": "Predicting Cable Dynamics with Physical Attention Bias",
+      "url": "https://huggingface.co/papers/2610.11975",
+      "upvotes": 1
     }
   ]
 }

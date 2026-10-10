@@ -14,6 +14,7 @@ from backend.app.services.weekly import (
     week_procurement,
     week_window,
     weekly_totals,
+    wrap_due_week_end,
 )
 
 NOW = datetime(2026, 9, 27, 23, 5, 0)  # a Sunday, after the 22:00 gate
@@ -128,6 +129,43 @@ class TestWeeklyWrap:
 
     def test_idle_week_composes_nothing(self):
         assert compose_weekly_wrap([], MOVERS, [], NOW) is None
+
+    def test_week_end_anchors_the_window_on_a_catchup_run(self):
+        monday = datetime(2026, 9, 28, 2, 40, 0)
+        wrap = compose_weekly_wrap(REPORT_ROWS, MOVERS, PROCUREMENT, monday,
+                                   week_end=NOW)
+        assert wrap["week_start"] == "2026-09-21"
+        assert wrap["week_end"] == "2026-09-27"
+        assert wrap["generated"].startswith("2026-09-28")
+
+
+class TestWrapDueGate:
+    def test_sunday_evening_is_due_morning_is_not(self):
+        assert wrap_due_week_end(None, NOW).strftime("%Y-%m-%d") == "2026-09-27"
+        sunday_morning = datetime(2026, 9, 27, 7, 30, 0)
+        assert wrap_due_week_end(None, sunday_morning) is None
+
+    def test_delayed_cron_lands_monday_and_is_still_due(self):
+        # The exact failure in production: the Sunday 23:00 slot started
+        # after midnight UTC, so the old gate never fired and no wrap
+        # was ever written.
+        monday = datetime(2026, 9, 28, 2, 40, 0)
+        due = wrap_due_week_end(None, monday)
+        assert due.strftime("%Y-%m-%d") == "2026-09-27"
+
+    def test_existing_wrap_for_the_week_suppresses_regeneration(self):
+        existing = {"week_end": "2026-09-27"}
+        monday = datetime(2026, 9, 28, 2, 40, 0)
+        assert wrap_due_week_end(existing, monday) is None
+        # Sunday-evening reruns also keep the already-written wrap.
+        assert wrap_due_week_end(existing, NOW) is None
+        # ...but a stale wrap from a previous week does not suppress.
+        stale = {"week_end": "2026-09-20"}
+        assert wrap_due_week_end(stale, monday).strftime("%Y-%m-%d") == "2026-09-27"
+
+    def test_midweek_catchup_targets_the_previous_sunday(self):
+        thursday = datetime(2026, 10, 1, 13, 15, 0)
+        assert wrap_due_week_end(None, thursday).strftime("%Y-%m-%d") == "2026-09-27"
 
 
 class TestBriefingWeeklyLink:
