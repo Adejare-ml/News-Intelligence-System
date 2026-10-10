@@ -96,7 +96,9 @@ def test_pinned_rules_are_sent_on_every_call(stub_lm):
     program = IntelligenceExtractor()
     program(title="t", article_text="b")
     call = dspy.settings.lm.history[-1]
-    prompt = json.dumps(call)
+    # default=str: dspy 3.4 history entries embed the provider Response
+    # object, which json cannot encode on its own.
+    prompt = json.dumps(call, default=str)
     assert "SECURITY" in prompt
     assert "NEVER estimate" in prompt
     assert "publication reporting the story" in prompt
