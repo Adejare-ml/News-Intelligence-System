@@ -56,11 +56,18 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run the backfill
+        # Inputs pass through env, not ${{ }} inside run: -- expression
+        # expansion happens before the shell parses, so a crafted input
+        # would otherwise execute as shell in a job holding a write token.
+        env:
+          IN_LIMIT: ${{ github.event.inputs.limit || '60' }}
+          IN_MIN_CHARS: ${{ github.event.inputs.min_chars || '400' }}
+          IN_MAX_CHARS: ${{ github.event.inputs.max_chars || '60000' }}
         run: |
           python scripts/backfill_eval_corpus.py \
-            --limit "${{ github.event.inputs.limit || '60' }}" \
-            --min-chars "${{ github.event.inputs.min_chars || '400' }}" \
-            --max-chars "${{ github.event.inputs.max_chars || '60000' }}" \
+            --limit "$IN_LIMIT" \
+            --min-chars "$IN_MIN_CHARS" \
+            --max-chars "$IN_MAX_CHARS" \
             | tee backfill.log
 
       # A run that recovers nothing should not open an empty PR. The script
