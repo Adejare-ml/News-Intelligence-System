@@ -25,6 +25,31 @@ def week_window(now: datetime) -> Dict[str, str]:
     return {"start": start, "end": end}
 
 
+def wrap_due_week_end(existing: Optional[Dict[str, Any]],
+                      now: datetime) -> Optional[datetime]:
+    """The week-ending day a wrap should be generated for right now, or
+    None when the current wrap is already in place.
+
+    From Sunday 20:00 UTC the wrap for the week ending that Sunday is due
+    (the 23:00 cron slot regularly starts late). Any run after that --
+    including Monday and later, if every Sunday-evening run was pushed
+    past midnight or failed -- generates the missed wrap for the week
+    ending the previous Sunday. The old wall-clock gate (Sunday AND
+    hour >= 22) silently skipped the week whenever GitHub's cron delays
+    moved the run across midnight, which is why no wrap ever appeared.
+    """
+    if now.weekday() == 6:  # Sunday
+        if now.hour < 20:
+            return None
+        end = now
+    else:
+        end = now - timedelta(days=now.weekday() + 1)  # previous Sunday
+    end_day = end.strftime("%Y-%m-%d")
+    if existing and str((existing or {}).get("week_end", "")) >= end_day:
+        return None
+    return end
+
+
 def weekly_totals(report_rows: List[Dict[str, Any]],
                   window: Dict[str, str]) -> Dict[str, int]:
     """Sum the per-run Daily Reports counters across the window."""
@@ -71,13 +96,17 @@ def compose_weekly_wrap(report_rows: List[Dict[str, Any]],
                         movers_payload: Optional[Dict[str, Any]],
                         procurement_rows: List[Dict[str, Any]],
                         now: datetime,
-                        movers_cap: int = 8) -> Optional[Dict[str, Any]]:
+                        movers_cap: int = 8,
+                        week_end: Optional[datetime] = None) -> Optional[Dict[str, Any]]:
     """{'week_start', 'week_end', 'generated', 'markdown'} or None.
 
     None when the window holds no runs at all -- a wrap of an idle week
-    would be an empty document pretending to be an edition.
+    would be an empty document pretending to be an edition. week_end
+    anchors the window on a catch-up run (a Monday run composing the
+    wrap for the Sunday the delayed cron missed); the generated stamp
+    stays the real composition time.
     """
-    window = week_window(now)
+    window = week_window(week_end or now)
     totals = weekly_totals(report_rows, window)
     if totals["runs"] == 0:
         return None

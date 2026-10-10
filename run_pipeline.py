@@ -1477,23 +1477,33 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "risk_movers.json"), "w", encoding="utf-8") as f:
         json.dump(movers_payload, f, default=str, indent=2)
 
-    # Weekly wrap: composed on the week's final run (Sunday 23:00 UTC
-    # slot) from rows already in memory -- Daily Reports totals, the
-    # movers export (whose 7-day window IS the week) and dated
-    # procurement. Zero LLM. The file persists until the next Sunday
-    # overwrites it; Monday's morning email links it while fresh.
+    # Weekly wrap: composed from rows already in memory -- Daily Reports
+    # totals, the movers export (whose 7-day window IS the week) and
+    # dated procurement. Zero LLM. Due from Sunday 20:00 UTC; a run on
+    # any later day composes the wrap the delayed Sunday cron missed
+    # (GitHub regularly starts the 23:00 slot after midnight, which the
+    # old Sunday-only wall-clock gate silently skipped). The file
+    # persists until the next week overwrites it; Monday's morning email
+    # links it while fresh.
     now_utc = datetime.utcnow()
-    if now_utc.weekday() == 6 and now_utc.hour >= 22:
-        try:
-            from backend.app.services.weekly import compose_weekly_wrap
-            wrap = compose_weekly_wrap(reports, movers_payload, procurement_out, now_utc)
+    try:
+        from backend.app.services.weekly import compose_weekly_wrap, wrap_due_week_end
+        existing_wrap = None
+        wrap_json_path = os.path.join(DATA_DIR, "weekly_wrap.json")
+        if os.path.exists(wrap_json_path):
+            with open(wrap_json_path, encoding="utf-8") as f:
+                existing_wrap = json.load(f)
+        week_end = wrap_due_week_end(existing_wrap, now_utc)
+        if week_end:
+            wrap = compose_weekly_wrap(reports, movers_payload, procurement_out,
+                                       now_utc, week_end=week_end)
             if wrap:
                 with open(os.path.join(DATA_DIR, "weekly_wrap.md"), "w", encoding="utf-8") as f:
                     f.write(wrap["markdown"])
-                with open(os.path.join(DATA_DIR, "weekly_wrap.json"), "w", encoding="utf-8") as f:
+                with open(wrap_json_path, "w", encoding="utf-8") as f:
                     json.dump(wrap, f, default=str, indent=2)
-        except Exception as exc:  # pragma: no cover - defensive
-            logger.warning(f"Weekly wrap skipped: {exc}")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Weekly wrap skipped: {exc}")
 
     with open(os.path.join(DATA_DIR, "sectors.json"), "w", encoding="utf-8") as f:
         json.dump({"sectors": analytics.sector_rollup(companies), "generated": stamp},
