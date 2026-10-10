@@ -937,6 +937,25 @@
       ]
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "totalenergies",
       "label": "TotalEnergies",
       "total_mentions": 4,
@@ -1021,6 +1040,25 @@
           "week": "2026-09-21",
           "mentions": 3,
           "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "fitch ratings",
+      "label": "Fitch Ratings",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -1374,25 +1412,6 @@
       ]
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "total_mentions": 3,
@@ -1695,25 +1714,6 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "fitch ratings",
-      "label": "Fitch Ratings",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4681,5 +4681,5 @@
       ]
     }
   ],
-  "generated": "2026-10-10 14:17:57"
+  "generated": "2026-10-10 17:38:08"
 }

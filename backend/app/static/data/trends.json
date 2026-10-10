@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 155,
-  "previous_articles": 171,
+  "recent_articles": 156,
+  "previous_articles": 172,
   "rising": [
     {
       "term": "premium",
-      "recent": 54,
+      "recent": 56,
       "previous": 41,
-      "change": 13
+      "change": 15
     },
     {
       "term": "premium times",
-      "recent": 54,
+      "recent": 56,
       "previous": 41,
-      "change": 13
+      "change": 15
     },
     {
       "term": "times",
-      "recent": 54,
+      "recent": 56,
       "previous": 41,
-      "change": 13
+      "change": 15
     },
     {
       "term": "lagos",
@@ -67,9 +67,9 @@
   "falling": [
     {
       "term": "guardian",
-      "recent": 35,
-      "previous": 56,
-      "change": -21
+      "recent": 34,
+      "previous": 57,
+      "change": -23
     },
     {
       "term": "nigeria\u2019s",
@@ -130,7 +130,7 @@
     {
       "category": "Government",
       "recent": 115,
-      "previous": 113
+      "previous": 114
     },
     {
       "category": "Company",
@@ -139,7 +139,7 @@
     },
     {
       "category": "Legal",
-      "recent": 19,
+      "recent": 20,
       "previous": 25
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-10 14:17:55"
+  "generated": "2026-10-10 17:38:06"
 }
