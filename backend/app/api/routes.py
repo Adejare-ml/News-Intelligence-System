@@ -230,24 +230,15 @@ def get_reports():
         logger.exception("Unhandled error in %s", __name__)
         raise HTTPException(status_code=500, detail="Internal server error.")
 
-@api_router.post("/reports/trigger")
-@limiter.limit("2/minute")
-def trigger_report_compilation(request: Request):
-    """Compiles a new daily report."""
-    try:
-        from run_pipeline import compile_daily_report
-        # Just pass recent articles for the report
-        articles = db.get_articles()
-        recent = articles[-30:] if len(articles) > 30 else articles
-        # Convert to expected format for compile_daily_report
-        records = [{"analysis": a} for a in recent]
-        compile_daily_report(records)
-        return {"status": "success", "message": "Report compiled successfully."}
-    except HTTPException:
-        raise
-    except Exception as e:
-        logger.exception("Unhandled error in %s", __name__)
-        raise HTTPException(status_code=500, detail="Internal server error.")
+# POST /reports/trigger was removed in the 2026-10-10 audit: it wrapped raw
+# sheet rows (keys "Title"/"Risk Level") as {"analysis": row} where
+# compile_daily_report expects extraction-shaped analyses, so every call
+# wrote a corrupt Daily Reports row -- re-counting up to 30 already-published
+# articles with zeroed category totals -- and those per-run rows are the time
+# series day_totals(), history.json and the weekly wrap all sum. Re-compiling
+# from published articles is wrong by design (reports are per-run), so the
+# endpoint has no correct form to restore; the scheduler's workflow_dispatch
+# is the supported way to produce a fresh report.
 
 @api_router.get("/reports/latest")
 def get_latest_report():
