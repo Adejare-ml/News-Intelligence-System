@@ -1,4 +1,4 @@
-"""Package 30: the news-center verticals' pure halves — Stooq/CoinGecko
+"""Package 30: the news-center verticals' pure halves — CoinGecko
 parsing, market history folding, HF model/paper parsing — plus the
 briefing's markets and world additions. No network anywhere.
 """
@@ -10,37 +10,9 @@ from backend.app.services.verticals import (
     parse_btc,
     parse_hf_models,
     parse_hf_papers,
-    parse_stooq_csv,
 )
 
 NOW = datetime(2026, 9, 23, 8, 0, 0)
-
-STOOQ_CSV = """Symbol,Date,Time,Open,High,Low,Close,Volume
-^SPX,2026-09-22,22:00:00,6470.1,6495.2,6461.0,6481.5,0
-^NDX,2026-09-22,22:00:00,23800.0,23950.5,23700.2,23901.7,0
-CB.F,2026-09-22,21:59:30,66.8,67.9,66.5,67.25,12345
-GC.F,2026-09-22,21:59:30,2600.0,2615.0,2595.5,2611.4,54321
-"""
-
-
-class TestStooqParsing:
-    def test_close_prices_key_to_export_names(self):
-        rates = parse_stooq_csv(STOOQ_CSV)
-        assert rates == {"spx": 6481.5, "ndx": 23901.7, "brent": 67.25, "gold": 2611.4}
-
-    def test_nd_cells_and_garbage_drop_rows_not_the_batch(self):
-        text = ("Symbol,Date,Time,Open,High,Low,Close,Volume\n"
-                "^SPX,2026-09-22,22:00:00,N/D,N/D,N/D,N/D,0\n"
-                "GC.F,2026-09-22,21:59:30,2600.0,2615.0,2595.5,2611.4,54321\n"
-                "half,a,row\n")
-        assert parse_stooq_csv(text) == {"gold": 2611.4}
-        assert parse_stooq_csv("") == {}
-        assert parse_stooq_csv("<html>proxy error</html>") == {}
-
-    def test_unknown_symbols_ignored(self):
-        text = ("Symbol,Date,Time,Open,High,Low,Close,Volume\n"
-                "AAPL.US,2026-09-22,22:00:00,1,2,0.5,1.5,9\n")
-        assert parse_stooq_csv(text) == {}
 
 
 class TestBtcParsing:
