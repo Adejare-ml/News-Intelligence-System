@@ -2017,9 +2017,9 @@
   },
   {
     "Company": "SERAP",
-    "Mention Count": 7,
-    "Last Seen": "2026-09-28 14:56",
-    "Industry": "Non-Profit",
+    "Mention Count": 8,
+    "Last Seen": "2026-10-10 13:57",
+    "Industry": "Legal/Non-Profit",
     "Risk Level": "Critical",
     "First Seen": ""
   },
@@ -3369,9 +3369,9 @@
   },
   {
     "Company": "Google",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-22 18:16",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-10 13:55",
+    "Industry": "Technology",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -3641,9 +3641,9 @@
   },
   {
     "Company": "Enugu Air",
-    "Mention Count": 8,
-    "Last Seen": "2026-08-22 7:31",
-    "Industry": "General",
+    "Mention Count": 9,
+    "Last Seen": "2026-10-10 13:58",
+    "Industry": "Aviation",
     "Risk Level": "Medium",
     "First Seen": ""
   },
@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 64,
-    "Last Seen": "2026-10-05 23:07",
+    "Mention Count": 75,
+    "Last Seen": "2026-10-10 14:02",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -6529,8 +6529,8 @@
   },
   {
     "Company": "All Progressives Congress",
-    "Mention Count": 5,
-    "Last Seen": "2026-09-28 22:28",
+    "Mention Count": 6,
+    "Last Seen": "2026-10-10 13:55",
     "Industry": "Political Party",
     "Risk Level": "High",
     "First Seen": ""
@@ -7169,10 +7169,10 @@
   },
   {
     "Company": "Uber Nigeria",
-    "Mention Count": 25,
-    "Last Seen": "2026-09-16 17:30",
-    "Industry": "Ride-hailing",
-    "Risk Level": "Low",
+    "Mention Count": 26,
+    "Last Seen": "2026-10-10 14:09",
+    "Industry": "Telecoms",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -7953,8 +7953,8 @@
   },
   {
     "Company": "Fitch Ratings",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-16 12:28",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-10 13:59",
     "Industry": "Financial Services",
     "Risk Level": "High",
     "First Seen": "2026-09-16 12:28"
@@ -8681,9 +8681,9 @@
   },
   {
     "Company": "Airtel Money",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-02 13:35",
-    "Industry": "Telecoms",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-10 14:04",
+    "Industry": "Telecoms/Fintech",
     "Risk Level": "Low",
     "First Seen": "2026-10-02 13:35"
   },
@@ -8886,5 +8886,77 @@
     "Industry": "Education",
     "Risk Level": "Low",
     "First Seen": "2026-10-08 02:39"
+  },
+  {
+    "Company": "Microsoft",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 13:55",
+    "Industry": "Technology",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 13:55"
+  },
+  {
+    "Company": "Tech Revolution Africa",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-10 14:01",
+    "Industry": "Technology/Venture Capital",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 13:55"
+  },
+  {
+    "Company": "Zungeru Hydroelectric Power Plant",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 13:57",
+    "Industry": "Energy",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 13:57"
+  },
+  {
+    "Company": "Access Holdings",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 13:58",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 13:58"
+  },
+  {
+    "Company": "Nigeria Judo Federation",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 14:00",
+    "Industry": "Sports",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 14:00"
+  },
+  {
+    "Company": "Natural Resource Governance Institute",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 14:02",
+    "Industry": "Consultancy/Governance",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 14:02"
+  },
+  {
+    "Company": "Periwinkle Empire",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 14:03",
+    "Industry": "Real Estate",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 14:03"
+  },
+  {
+    "Company": "Moove",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 14:05",
+    "Industry": "Telecoms/Mobility",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-10 14:05"
+  },
+  {
+    "Company": "Oyo Sugar and Derivatives Industries Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-10 14:09",
+    "Industry": "Agriculture",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-10 14:09"
   }
 ]

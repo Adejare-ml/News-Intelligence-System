@@ -1658,5 +1658,65 @@
     "Date": "2026-10-08",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Ministry of Communications",
+    "Contractor": "None",
+    "Amount": "\u20a6345.5 million",
+    "Project": "Abuja ICT Park project",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-10",
+    "Amount Value": 345500000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Independent National Electoral Commission",
+    "Contractor": "Google and Microsoft",
+    "Amount": "None",
+    "Project": "Deployment of cybersecurity tools to block cyberattacks for the 2027 elections",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-10-10",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Agro-Climatic Resilience in Semi-Arid Landscapes (ACReSAL)",
+    "Contractor": "Plateau State Government",
+    "Amount": "$500 Million (Pool)",
+    "Project": "ACReSAL funding boost for landscape resilience",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-10",
+    "Amount Value": 500000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "National Information Technology Development Agency",
+    "Contractor": "Nigerian Startups",
+    "Amount": "\u20a63 Billion",
+    "Project": "Funding pipeline for Nigerian startups through the Digital Nigeria Builders Festival",
+    "Source": "Vanguard News",
+    "Date": "2026-10-10",
+    "Amount Value": 3000000000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Federal Airports Authority of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Deployment of two ambulifts at Lagos airport",
+    "Source": "Punch Newspapers",
+    "Date": "2026-10-10",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Enugu State Government",
+    "Contractor": "None",
+    "Amount": "$200 Million",
+    "Project": "100MW solar power project",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-10",
+    "Amount Value": 200000000.0,
+    "Amount Currency": "USD"
   }
 ]
