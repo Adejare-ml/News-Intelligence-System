@@ -2,37 +2,37 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2442,
-      "published": 1396,
+      "total": 2443,
+      "published": 1397,
       "filtered": 1046,
       "accept_rate": 57,
-      "avg_risk": 28.8,
+      "avg_risk": 28.7,
       "engines": {
         "unknown": 963,
-        "ollama": 425,
+        "ollama": 426,
         "nvidia": 8
       },
       "last_seen": "2026-10-11"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1574,
-      "published": 728,
-      "filtered": 846,
+      "total": 1587,
+      "published": 730,
+      "filtered": 857,
       "accept_rate": 46,
       "avg_risk": 31.1,
       "engines": {
         "unknown": 440,
-        "ollama": 284,
+        "ollama": 286,
         "nvidia": 4
       },
       "last_seen": "2026-10-11"
     },
     {
       "source": "Punch Newspapers",
-      "total": 865,
+      "total": 866,
       "published": 365,
-      "filtered": 500,
+      "filtered": 501,
       "accept_rate": 42,
       "avg_risk": 26.6,
       "engines": {
@@ -72,9 +72,9 @@
     },
     {
       "source": "Vanguard News",
-      "total": 309,
+      "total": 310,
       "published": 151,
-      "filtered": 158,
+      "filtered": 159,
       "accept_rate": 49,
       "avg_risk": 26.8,
       "engines": {
@@ -113,10 +113,10 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 171,
+      "total": 172,
       "published": 61,
-      "filtered": 110,
-      "accept_rate": 36,
+      "filtered": 111,
+      "accept_rate": 35,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 50,
@@ -193,17 +193,17 @@
     },
     {
       "source": "legit",
-      "total": 102,
+      "total": 103,
       "published": 24,
-      "filtered": 78,
-      "accept_rate": 24,
+      "filtered": 79,
+      "accept_rate": 23,
       "avg_risk": 25.4,
       "engines": {
         "unknown": 15,
         "ollama": 8,
         "nvidia": 1
       },
-      "last_seen": "2026-10-10"
+      "last_seen": "2026-10-11"
     },
     {
       "source": "businessday",
@@ -271,15 +271,15 @@
     },
     {
       "source": "premiumtimesng",
-      "total": 34,
+      "total": 35,
       "published": 4,
-      "filtered": 30,
-      "accept_rate": 12,
+      "filtered": 31,
+      "accept_rate": 11,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 4
       },
-      "last_seen": "2026-10-04"
+      "last_seen": "2026-10-11"
     },
     {
       "source": "premiumtimesng.com",
@@ -308,6 +308,18 @@
       "last_seen": "2026-10-07"
     },
     {
+      "source": "The Eagle Online",
+      "total": 30,
+      "published": 6,
+      "filtered": 24,
+      "accept_rate": 20,
+      "avg_risk": 41.7,
+      "engines": {
+        "ollama": 6
+      },
+      "last_seen": "2026-10-11"
+    },
+    {
       "source": "thisdaylive",
       "total": 30,
       "published": 12,
@@ -332,18 +344,6 @@
         "ollama": 1
       },
       "last_seen": "2026-10-07"
-    },
-    {
-      "source": "The Eagle Online",
-      "total": 28,
-      "published": 5,
-      "filtered": 23,
-      "accept_rate": 18,
-      "avg_risk": 35.0,
-      "engines": {
-        "ollama": 5
-      },
-      "last_seen": "2026-10-11"
     },
     {
       "source": "vanguardngr.com",
@@ -470,6 +470,19 @@
       "last_seen": "2026-10-01"
     },
     {
+      "source": "thenationonlineng",
+      "total": 8,
+      "published": 2,
+      "filtered": 6,
+      "accept_rate": 25,
+      "avg_risk": 22.0,
+      "engines": {
+        "unknown": 1,
+        "ollama": 1
+      },
+      "last_seen": "2026-10-11"
+    },
+    {
       "source": "healthwise.punchng.com",
       "total": 7,
       "published": 2,
@@ -494,19 +507,6 @@
         "ollama": 1
       },
       "last_seen": "2026-09-13"
-    },
-    {
-      "source": "thenationonlineng",
-      "total": 7,
-      "published": 2,
-      "filtered": 5,
-      "accept_rate": 29,
-      "avg_risk": 22.0,
-      "engines": {
-        "unknown": 1,
-        "ollama": 1
-      },
-      "last_seen": "2026-09-28"
     },
     {
       "source": "thewillnews",
@@ -2073,5 +2073,5 @@
       "last_seen": "2026-10-02"
     }
   ],
-  "generated": "2026-10-11 17:56:16"
+  "generated": "2026-10-11 20:54:31"
 }

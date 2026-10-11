@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 958,
-      "mentions": 1623,
+      "companies": 957,
+      "mentions": 1620,
       "risk": {
-        "Low": 846,
+        "Low": 845,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,13 +13,13 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 25,
-      "mentions": 154,
+      "companies": 26,
+      "mentions": 158,
       "risk": {
+        "Low": 20,
         "Critical": 1,
         "High": 2,
-        "Medium": 3,
-        "Low": 19
+        "Medium": 3
       }
     },
     {
@@ -129,6 +129,14 @@
       }
     },
     {
+      "industry": "Political Party",
+      "companies": 1,
+      "mentions": 7,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Healthcare",
       "companies": 5,
       "mentions": 6,
@@ -150,14 +158,6 @@
       "mentions": 6,
       "risk": {
         "Medium": 2
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 1,
-      "mentions": 6,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -603,5 +603,5 @@
       }
     }
   ],
-  "generated": "2026-10-11 17:56:16"
+  "generated": "2026-10-11 20:54:31"
 }

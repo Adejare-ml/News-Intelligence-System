@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -145,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "701a11e9aed2",
       "label": "Ministry of Finance",
       "type": "agency",
@@ -153,6 +165,12 @@
     {
       "id": "d9e529ce1f10",
       "label": "National Nutrition Intervention Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9f778a9a1d4e",
+      "label": "SERAP",
       "type": "agency",
       "risk": "Low"
     },
@@ -205,12 +223,6 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "ef8ecd1eaec4",
       "label": "Lagos State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a70f31de512b",
-      "label": "Ekiti State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "95368915b67a",
-      "label": "Bureau of Public Procurement",
       "type": "agency",
       "risk": "Low"
     },
@@ -279,6 +279,12 @@
     {
       "id": "df87bf11b5a1",
       "label": "Taiwo Oyedele",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "22efb00940fe",
+      "label": "Uche Nnaji",
       "type": "person",
       "risk": "Low"
     },
@@ -459,18 +465,6 @@
     {
       "id": "e729c75bc972",
       "label": "EVA Professionals",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "13d8a800667a",
-      "label": "Afeni",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
       "type": "company",
       "risk": "Low"
     },
@@ -753,6 +747,12 @@
       "label": "Appointed as Minister of Finance and Coordinating Minister of Economy"
     },
     {
+      "id": "1f3e042cf30b",
+      "from": "22efb00940fe",
+      "to": "bf69cb1ec5ea",
+      "label": "Appointed as Politician/Public Official"
+    },
+    {
       "id": "fd1604102e20",
       "from": "58c58351d674",
       "to": "4c7e8211e98f",
@@ -865,12 +865,6 @@
       "from": "143e0ecdcc8f",
       "to": "e729c75bc972",
       "label": "Appointed as Managing Partner"
-    },
-    {
-      "id": "95964f3387e3",
-      "from": "13d8a800667a",
-      "to": "9ff00c51bfd3",
-      "label": "Appointed as Head of Foreign Operations Unit 'A'"
     },
     {
       "id": "990674302105",

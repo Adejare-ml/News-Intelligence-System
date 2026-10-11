@@ -21,10 +21,10 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 33.0,
+      "recent_avg": 34.6,
       "previous_avg": 16.7,
-      "delta": 16.3,
-      "recent_mentions": 10,
+      "delta": 17.9,
+      "recent_mentions": 12,
       "previous_mentions": 3
     },
     {
@@ -44,6 +44,15 @@
       "delta": 13.0,
       "recent_mentions": 5,
       "previous_mentions": 2
+    },
+    {
+      "key": "serap",
+      "label": "SERAP",
+      "recent_avg": 52.5,
+      "previous_avg": 40.0,
+      "delta": 12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "ogun state government",
@@ -73,15 +82,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 13.3,
-      "previous_avg": 20.0,
-      "delta": -6.7,
-      "recent_mentions": 3,
-      "previous_mentions": 1
-    },
-    {
       "key": "securities and exchange commission",
       "label": "Securities and Exchange Commission",
       "recent_avg": 40.0,
@@ -100,6 +100,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 12.5,
+      "previous_avg": 17.5,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "west african examinations council",
       "label": "West African Examinations Council",
       "recent_avg": 10.0,
@@ -107,15 +116,6 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 2
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 31.4,
-      "previous_avg": 35.0,
-      "delta": -3.6,
-      "recent_mentions": 7,
-      "previous_mentions": 11
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -136,6 +136,24 @@
       "previous_mentions": 25
     },
     {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "recent_avg": 45.0,
+      "previous_avg": 43.0,
+      "delta": 2.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 36.9,
+      "previous_avg": 35.0,
+      "delta": 1.9,
+      "recent_mentions": 8,
+      "previous_mentions": 11
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 20.0,
@@ -147,11 +165,11 @@
     {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
-      "recent_avg": 16.7,
-      "previous_avg": 15.0,
-      "delta": 1.7,
-      "recent_mentions": 3,
-      "previous_mentions": 2
+      "recent_avg": 15.0,
+      "previous_avg": 16.7,
+      "delta": -1.7,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "lagos state government",
@@ -161,26 +179,8 @@
       "delta": -1.2,
       "recent_mentions": 4,
       "previous_mentions": 1
-    },
-    {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "recent_avg": 43.3,
-      "previous_avg": 43.8,
-      "delta": -0.5,
-      "recent_mentions": 3,
-      "previous_mentions": 4
-    },
-    {
-      "key": "seyi makinde",
-      "label": "Seyi Makinde",
-      "recent_avg": 20.0,
-      "previous_avg": 20.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-11 17:56:16"
+  "generated": "2026-10-11 20:54:31"
 }
