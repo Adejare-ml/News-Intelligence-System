@@ -138,6 +138,10 @@
       "label": "Oyo State Government"
     },
     {
+      "key": "serap",
+      "label": "SERAP"
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project"
     },
@@ -169,6 +173,11 @@
       "weight": 5
     },
     {
+      "a": "all progressives congress",
+      "b": "independent national electoral commission",
+      "weight": 4
+    },
+    {
       "a": "dp world",
       "b": "ogun state government",
       "weight": 4
@@ -182,11 +191,6 @@
       "a": "national petroleum company",
       "b": "ogun state government",
       "weight": 4
-    },
-    {
-      "a": "all progressives congress",
-      "b": "independent national electoral commission",
-      "weight": 3
     },
     {
       "a": "economic and financial crimes commission",
@@ -241,6 +245,11 @@
     {
       "a": "central bank of",
       "b": "olayemi cardoso",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
+      "b": "serap",
       "weight": 2
     },
     {
@@ -314,5 +323,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-11 17:56:16"
+  "generated": "2026-10-11 20:54:31"
 }
