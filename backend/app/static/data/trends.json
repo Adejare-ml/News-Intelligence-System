@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 157,
-  "previous_articles": 172,
+  "recent_articles": 159,
+  "previous_articles": 173,
   "rising": [
     {
       "term": "premium",
-      "recent": 56,
+      "recent": 57,
       "previous": 41,
-      "change": 15
+      "change": 16
     },
     {
       "term": "premium times",
-      "recent": 56,
+      "recent": 57,
       "previous": 41,
-      "change": 15
+      "change": 16
     },
     {
       "term": "times",
-      "recent": 56,
+      "recent": 57,
       "previous": 41,
-      "change": 15
+      "change": 16
     },
     {
       "term": "lagos",
@@ -85,27 +85,21 @@
     },
     {
       "term": "newspapers",
-      "recent": 16,
+      "recent": 17,
       "previous": 23,
-      "change": -7
+      "change": -6
     },
     {
       "term": "punch",
-      "recent": 16,
+      "recent": 17,
       "previous": 23,
-      "change": -7
+      "change": -6
     },
     {
       "term": "punch newspapers",
-      "recent": 16,
+      "recent": 17,
       "previous": 23,
-      "change": -7
-    },
-    {
-      "term": "profit",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
+      "change": -6
     },
     {
       "term": "revive",
@@ -124,23 +118,29 @@
       "recent": 3,
       "previous": 7,
       "change": -4
+    },
+    {
+      "term": "nnpcl",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 116,
+      "recent": 117,
       "previous": 114
     },
     {
       "category": "Company",
-      "recent": 20,
+      "recent": 22,
       "previous": 30
     },
     {
       "category": "Legal",
-      "recent": 20,
-      "previous": 25
+      "recent": 19,
+      "previous": 26
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-10 20:33:51"
+  "generated": "2026-10-11 01:46:32"
 }

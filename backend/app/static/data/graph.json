@@ -121,6 +121,12 @@
       "risk": "Medium"
     },
     {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -235,9 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "f9c9720379c4",
-      "label": "Human Rights Initiative for West Africa",
-      "type": "agency",
+      "id": "d6f0773dc494",
+      "label": "Ifeanyi Okoye",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fe0bc9447e28",
+      "label": "Manufacturers Association of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "6ee06d9aa9e5",
+      "label": "Francis Meshioye",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -454,30 +472,6 @@
       "id": "2ff28e78e954",
       "label": "Aliyu",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b938970b0806",
-      "label": "Unnamed ex-spokesperson",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f73644b51612",
-      "label": "Matebese",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "03da7bdd5e4b",
-      "label": "Nigeria Triathlon Union",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -723,6 +717,18 @@
   ],
   "edges": [
     {
+      "id": "3807715b4180",
+      "from": "d6f0773dc494",
+      "to": "fe0bc9447e28",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "c2b9a577adee",
+      "from": "6ee06d9aa9e5",
+      "to": "fe0bc9447e28",
+      "label": "Appointed as President"
+    },
+    {
       "id": "fd1604102e20",
       "from": "58c58351d674",
       "to": "4c7e8211e98f",
@@ -859,18 +865,6 @@
       "from": "2ff28e78e954",
       "to": "9ff00c51bfd3",
       "label": "Appointed as Head of Foreign Operations Unit 'A'"
-    },
-    {
-      "id": "47600cfe7038",
-      "from": "b938970b0806",
-      "to": "7ac5d6bb2121",
-      "label": "Appointed as Unnamed new appointment"
-    },
-    {
-      "id": "c81b27939375",
-      "from": "f73644b51612",
-      "to": "03da7bdd5e4b",
-      "label": "Appointed as President"
     },
     {
       "id": "990674302105",

@@ -622,6 +622,25 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "all progressives congress",
       "label": "All Progressives Congress",
       "total_mentions": 5,
@@ -718,25 +737,6 @@
           "mentions": 2,
           "avg_risk": 42.5,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -1801,6 +1801,25 @@
       ]
     },
     {
+      "key": "manufacturers association of",
+      "label": "Manufacturers Association of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ndc",
       "label": "NDC",
       "total_mentions": 2,
@@ -2220,6 +2239,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "zenith bank",
+      "label": "Zenith Bank",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3433,6 +3465,19 @@
       ]
     },
     {
+      "key": "francis meshioye",
+      "label": "Francis Meshioye",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "gates foundation",
       "label": "Gates Foundation",
       "total_mentions": 1,
@@ -3706,6 +3751,19 @@
       ]
     },
     {
+      "key": "ifeanyi okoye",
+      "label": "Ifeanyi Okoye",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ima gas field",
       "label": "Ima Gas Field",
       "total_mentions": 1,
@@ -3890,6 +3948,19 @@
     {
       "key": "joint health sector unions",
       "label": "Joint Health Sector Unions",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "juhel",
+      "label": "Juhel Nigeria Limited",
       "total_mentions": 1,
       "points": [
         {
@@ -4157,19 +4228,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "manufacturers association of",
-      "label": "Manufacturers Association of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4627,59 +4685,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "national sugar development council",
-      "label": "National Sugar Development Council",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national union of pensioners",
-      "label": "National Union of Pensioners",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national universities commission",
-      "label": "National Universities Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "niger delta",
-      "label": "Niger Delta",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
-        }
-      ]
     }
   ],
-  "generated": "2026-10-10 20:33:57"
+  "generated": "2026-10-11 01:46:34"
 }
