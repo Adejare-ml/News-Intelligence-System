@@ -3858,7 +3858,7 @@
   {
     "Company": "Zenith Bank Plc",
     "Mention Count": 4,
-    "Last Seen": "2026-10-11 01:44",
+    "Last Seen": "2026-10-11 1:44",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 75,
-    "Last Seen": "2026-10-10 14:02",
+    "Mention Count": 76,
+    "Last Seen": "2026-10-11 13:46",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -6850,7 +6850,7 @@
   {
     "Company": "Manufacturers Association of Nigeria",
     "Mention Count": 4,
-    "Last Seen": "2026-10-11 01:45",
+    "Last Seen": "2026-10-11 1:45",
     "Industry": "Manufacturing",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7881,8 +7881,8 @@
   },
   {
     "Company": "Socio-Economic Rights and Accountability Project",
-    "Mention Count": 7,
-    "Last Seen": "2026-10-07 19:12",
+    "Mention Count": 8,
+    "Last Seen": "2026-10-11 13:46",
     "Industry": "Non-Profit/Legal Advocacy",
     "Risk Level": "High",
     "First Seen": "2026-09-14 11:01"
@@ -8945,9 +8945,9 @@
   },
   {
     "Company": "Moove",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-10 14:05",
-    "Industry": "Telecoms/Mobility",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-11 13:46",
+    "Industry": "Transport/Mobility",
     "Risk Level": "Medium",
     "First Seen": "2026-10-10 14:05"
   },
@@ -8974,5 +8974,13 @@
     "Industry": "Manufacturing",
     "Risk Level": "Low",
     "First Seen": "2026-10-11 01:45"
+  },
+  {
+    "Company": "Petroleum Products Retail Outlets Owners Association of Nigeria",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-11 13:49",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-11 13:49"
   }
 ]

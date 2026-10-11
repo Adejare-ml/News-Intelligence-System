@@ -1,6 +1,24 @@
 {
   "movers": [
     {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "recent_avg": 47.5,
+      "previous_avg": 70.0,
+      "delta": -22.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 30.0,
+      "previous_avg": 10.0,
+      "delta": 20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 33.0,
@@ -10,13 +28,13 @@
       "previous_mentions": 3
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 24.2,
-      "previous_avg": 38.2,
-      "delta": -14.0,
-      "recent_mentions": 6,
-      "previous_mentions": 14
+      "key": "taraba state government",
+      "label": "Taraba State Government",
+      "recent_avg": 80.0,
+      "previous_avg": 65.0,
+      "delta": 15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "economic and financial crimes commission",
@@ -37,15 +55,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 13.3,
-      "previous_avg": 25.0,
-      "delta": -11.7,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 53.3,
@@ -64,13 +73,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "recent_avg": 42.0,
-      "previous_avg": 47.5,
-      "delta": -5.5,
-      "recent_mentions": 5,
-      "previous_mentions": 2
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 13.3,
+      "previous_avg": 20.0,
+      "delta": -6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 1
     },
     {
       "key": "securities and exchange commission",
@@ -82,13 +91,22 @@
       "previous_mentions": 2
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 32.4,
-      "previous_avg": 29.2,
-      "delta": 3.2,
-      "recent_mentions": 21,
-      "previous_mentions": 25
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 31.4,
+      "previous_avg": 35.0,
+      "delta": -3.6,
+      "recent_mentions": 7,
+      "previous_mentions": 11
+    },
+    {
+      "key": "west african examinations council",
+      "label": "West African Examinations Council",
+      "recent_avg": 13.3,
+      "previous_avg": 10.0,
+      "delta": 3.3,
+      "recent_mentions": 3,
+      "previous_mentions": 1
     },
     {
       "key": "federal airports authority of",
@@ -107,6 +125,24 @@
       "delta": 2.5,
       "recent_mentions": 2,
       "previous_mentions": 4
+    },
+    {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "recent_avg": 42.5,
+      "previous_avg": 45.0,
+      "delta": -2.5,
+      "recent_mentions": 4,
+      "previous_mentions": 3
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 31.3,
+      "previous_avg": 29.6,
+      "delta": 1.7,
+      "recent_mentions": 23,
+      "previous_mentions": 24
     },
     {
       "key": "federal government of",
@@ -136,51 +172,15 @@
       "previous_mentions": 1
     },
     {
-      "key": "ishaku",
-      "label": "Ishaku",
-      "recent_avg": 80.0,
-      "previous_avg": null,
-      "delta": null,
+      "key": "seyi makinde",
+      "label": "Seyi Makinde",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
       "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "taraba state government",
-      "label": "Taraba State Government",
-      "recent_avg": 75.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 55.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "diezani alison madueke",
-      "label": "Diezani Alison-Madueke",
-      "recent_avg": 40.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 32.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
-      "previous_mentions": 0
+      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-11 01:46:34"
+  "generated": "2026-10-11 13:50:29"
 }

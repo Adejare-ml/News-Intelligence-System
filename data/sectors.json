@@ -13,13 +13,13 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 24,
-      "mentions": 150,
+      "companies": 25,
+      "mentions": 152,
       "risk": {
         "Critical": 1,
         "High": 2,
         "Medium": 3,
-        "Low": 18
+        "Low": 19
       }
     },
     {
@@ -103,6 +103,14 @@
       }
     },
     {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 1,
+      "mentions": 8,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 6,
       "mentions": 7,
@@ -118,14 +126,6 @@
       "risk": {
         "Medium": 4,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 7,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -336,6 +336,14 @@
       "mentions": 2,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Transport/Mobility",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -587,14 +595,6 @@
       }
     },
     {
-      "industry": "Telecoms/Mobility",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Medium": 1
-      }
-    },
-    {
       "industry": "Venture Capital / Education",
       "companies": 1,
       "mentions": 1,
@@ -603,5 +603,5 @@
       }
     }
   ],
-  "generated": "2026-10-11 01:46:34"
+  "generated": "2026-10-11 13:50:29"
 }
