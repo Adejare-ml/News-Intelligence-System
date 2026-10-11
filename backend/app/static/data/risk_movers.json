@@ -91,6 +91,24 @@
       "previous_mentions": 2
     },
     {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "west african examinations council",
+      "label": "West African Examinations Council",
+      "recent_avg": 10.0,
+      "previous_avg": 15.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 31.4,
@@ -98,24 +116,6 @@
       "delta": -3.6,
       "recent_mentions": 7,
       "previous_mentions": 11
-    },
-    {
-      "key": "west african examinations council",
-      "label": "West African Examinations Council",
-      "recent_avg": 13.3,
-      "previous_avg": 10.0,
-      "delta": 3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
-    },
-    {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "recent_avg": 15.0,
-      "previous_avg": 17.5,
-      "delta": -2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -127,22 +127,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "recent_avg": 42.5,
-      "previous_avg": 45.0,
-      "delta": -2.5,
-      "recent_mentions": 4,
-      "previous_mentions": 3
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 31.3,
+      "recent_avg": 31.7,
       "previous_avg": 29.6,
-      "delta": 1.7,
-      "recent_mentions": 23,
-      "previous_mentions": 24
+      "delta": 2.1,
+      "recent_mentions": 24,
+      "previous_mentions": 25
     },
     {
       "key": "federal government of",
@@ -172,6 +163,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "recent_avg": 43.3,
+      "previous_avg": 43.8,
+      "delta": -0.5,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "recent_avg": 20.0,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-11 13:50:29"
+  "generated": "2026-10-11 17:56:16"
 }

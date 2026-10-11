@@ -1,31 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 164,
-  "previous_articles": 170,
+  "recent_articles": 162,
+  "previous_articles": 172,
   "rising": [
-    {
-      "term": "premium",
-      "recent": 56,
-      "previous": 42,
-      "change": 14
-    },
-    {
-      "term": "premium times",
-      "recent": 56,
-      "previous": 42,
-      "change": 14
-    },
-    {
-      "term": "times",
-      "recent": 56,
-      "previous": 42,
-      "change": 14
-    },
     {
       "term": "petrol",
       "recent": 12,
       "previous": 0,
       "change": 12
+    },
+    {
+      "term": "premium",
+      "recent": 54,
+      "previous": 44,
+      "change": 10
+    },
+    {
+      "term": "premium times",
+      "recent": 54,
+      "previous": 44,
+      "change": 10
+    },
+    {
+      "term": "times",
+      "recent": 54,
+      "previous": 44,
+      "change": 10
     },
     {
       "term": "lagos",
@@ -34,15 +34,15 @@
       "change": 10
     },
     {
+      "term": "discount",
+      "recent": 12,
+      "previous": 2,
+      "change": 10
+    },
+    {
       "term": "com",
       "recent": 16,
       "previous": 8,
-      "change": 8
-    },
-    {
-      "term": "discount",
-      "recent": 10,
-      "previous": 2,
       "change": 8
     },
     {
@@ -68,14 +68,26 @@
     {
       "term": "guardian",
       "recent": 35,
-      "previous": 56,
-      "change": -21
+      "previous": 54,
+      "change": -19
     },
     {
       "term": "nigeria\u2019s",
       "recent": 4,
       "previous": 12,
       "change": -8
+    },
+    {
+      "term": "court",
+      "recent": 14,
+      "previous": 19,
+      "change": -5
+    },
+    {
+      "term": "security",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
     },
     {
       "term": "revive",
@@ -96,6 +108,12 @@
       "change": -4
     },
     {
+      "term": "appoints",
+      "recent": 2,
+      "previous": 6,
+      "change": -4
+    },
+    {
       "term": "partner",
       "recent": 1,
       "previous": 5,
@@ -106,31 +124,13 @@
       "recent": 1,
       "previous": 5,
       "change": -4
-    },
-    {
-      "term": "seek",
-      "recent": 1,
-      "previous": 5,
-      "change": -4
-    },
-    {
-      "term": "accountability",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
-      "term": "expansion",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 123,
-      "previous": 109
+      "recent": 122,
+      "previous": 110
     },
     {
       "category": "Company",
@@ -139,8 +139,8 @@
     },
     {
       "category": "Legal",
-      "recent": 19,
-      "previous": 27
+      "recent": 18,
+      "previous": 28
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-11 13:50:16"
+  "generated": "2026-10-11 17:56:13"
 }
