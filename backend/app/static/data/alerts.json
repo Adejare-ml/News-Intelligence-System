@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-10-11",
+      "title": "SERAP sues CBN over $6.23m election funds, N1.63tn others - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTWd1cHJfVGpzN0tJZ3FhREFjS0RqczhpWnhYMzZlS20xeElENUJmYXQ1ZDBiWTlxZ216cEd3MjVvbEVrU0x4Qy11SC1WQktBU1NYUUJES1V6MXBsWWstdlhpT2FaLWRFZTVWbGxmMTJlM0p4WHRoMjhHclRoZHlkbUhB?oc=5",
+      "source": "Punch Newspapers",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Central Bank of Nigeria",
+        "Socio-Economic Rights and Accountability Project"
+      ]
+    },
+    {
       "date": "2026-10-10",
       "title": "Communications Ministry made \u20a6345.5 million duplicate payment for Abuja ICT Park project - Audit Report - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPdUlQNmF1ZkNIREY0YzUzOWMzTHV4Qm5YbUI3dlhQTi1hUEQ3Yl9BWFpXUFNsakhZQWRkcFdjTzQtSlRnWGZhQjVJYnE3SkxYbVE2Qk1LanFubjY3bjBKZzVJMG1rS1p3UF9TU2JEUWszekpoWEl3VzhibzM4QTA2aUtDdF9lUVlSdGh5OGNIMW8tRU1GaldnZVpMLWt4S1dQNEpFQk04NWpZNkE1ZlV5V3l6aFFjcmgtMl9WUGl1MnNoUGhRaUNQbE1wb1I5OHU3WnR3emhQY1Nid0pjVXJqQlg3bVl1R3N3TS03NWpGc1dGNURtQmh0eW5GcURmSy1KOUprd2F3?oc=5",
@@ -483,5 +495,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-11 01:46:34"
+  "generated": "2026-10-11 13:50:29"
 }

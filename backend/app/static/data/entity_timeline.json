@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 61,
+      "total_mentions": 63,
       "points": [
         {
           "week": "2026-09-14",
@@ -25,8 +25,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 18,
-          "avg_risk": 30.3,
+          "mentions": 20,
+          "avg_risk": 29.2,
           "max_risk": 75
         }
       ]
@@ -108,7 +108,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 36,
+      "total_mentions": 37,
       "points": [
         {
           "week": "2026-09-07",
@@ -136,8 +136,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 6,
-          "avg_risk": 24.2,
+          "mentions": 7,
+          "avg_risk": 31.4,
           "max_risk": 75
         }
       ]
@@ -453,6 +453,43 @@
       ]
     },
     {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 47.5,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "dangote petroleum refinery",
       "label": "Dangote Petroleum Refinery",
       "total_mentions": 7,
@@ -518,43 +555,6 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -741,6 +741,31 @@
       ]
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
       "total_mentions": 5,
@@ -793,6 +818,31 @@
           "week": "2026-09-28",
           "mentions": 2,
           "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
           "max_risk": 65
         }
       ]
@@ -893,31 +943,6 @@
       ]
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "total_mentions": 4,
@@ -952,6 +977,31 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "seyi makinde",
+      "label": "Seyi Makinde",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1002,31 +1052,6 @@
           "week": "2026-09-28",
           "mentions": 3,
           "avg_risk": 48.3,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 65.0,
           "max_risk": 65
         }
       ]
@@ -1412,31 +1437,6 @@
       ]
     },
     {
-      "key": "seyi makinde",
-      "label": "Seyi Makinde",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -1816,6 +1816,32 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ministry of finance",
+      "label": "Ministry of Finance",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 47.5,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "moove",
+      "label": "Moove",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -4323,19 +4349,6 @@
       ]
     },
     {
-      "key": "ministry of finance",
-      "label": "Ministry of Finance",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "ministry of petroleum resources",
       "label": "Ministry of Petroleum Resources",
       "total_mentions": 1,
@@ -4397,19 +4410,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "moove",
-      "label": "Moove",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -4661,6 +4661,19 @@
       ]
     },
     {
+      "key": "national nutrition intervention fund",
+      "label": "National Nutrition Intervention Fund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national power training institute of",
       "label": "National Power Training Institute of Nigeria",
       "total_mentions": 1,
@@ -4672,20 +4685,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "national sports commission",
-      "label": "National Sports Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-11 01:46:34"
+  "generated": "2026-10-11 13:50:29"
 }

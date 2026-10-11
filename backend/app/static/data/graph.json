@@ -121,26 +121,44 @@
       "risk": "Medium"
     },
     {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "701a11e9aed2",
+      "label": "Ministry of Finance",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d9e529ce1f10",
+      "label": "National Nutrition Intervention Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,21 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "dc5d92c70649",
-      "label": "Nigerian Education Loan Fund",
-      "type": "agency",
+      "id": "f121c0e97820",
+      "label": "Seyi Makinde",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
-      "type": "agency",
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "059b05a09d95",
-      "label": "Ministry of Communications",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -255,6 +273,12 @@
     {
       "id": "6ee06d9aa9e5",
       "label": "Francis Meshioye",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "df87bf11b5a1",
+      "label": "Taiwo Oyedele",
       "type": "person",
       "risk": "Low"
     },
@@ -331,18 +355,6 @@
       "risk": "Low"
     },
     {
-      "id": "f121c0e97820",
-      "label": "Seyi Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "649b4afa9b99",
       "label": "Diezani Alison-Madueke",
       "type": "person",
@@ -415,12 +427,6 @@
       "risk": "Low"
     },
     {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "e153c1875584",
       "label": "Dave Umahi",
       "type": "person",
@@ -466,12 +472,6 @@
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2ff28e78e954",
-      "label": "Aliyu",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -637,6 +637,12 @@
       "risk": "Low"
     },
     {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "408bb48fbb39",
       "label": "Nigerian Startups",
       "type": "company",
@@ -661,6 +667,12 @@
       "risk": "Low"
     },
     {
+      "id": "059b05a09d95",
+      "label": "Ministry of Communications",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "68419b78e6b4",
       "label": "Ministry of Aviation",
       "type": "agency",
@@ -675,12 +687,6 @@
     {
       "id": "de44b55175fc",
       "label": "Zamfara State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
       "type": "agency",
       "risk": "Low"
     },
@@ -717,6 +723,18 @@
   ],
   "edges": [
     {
+      "id": "63dfe1afb291",
+      "from": "f121c0e97820",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Governor of Oyo State"
+    },
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
       "id": "3807715b4180",
       "from": "d6f0773dc494",
       "to": "fe0bc9447e28",
@@ -727,6 +745,12 @@
       "from": "6ee06d9aa9e5",
       "to": "fe0bc9447e28",
       "label": "Appointed as President"
+    },
+    {
+      "id": "5834b8f8c844",
+      "from": "df87bf11b5a1",
+      "to": "701a11e9aed2",
+      "label": "Appointed as Minister of Finance and Coordinating Minister of Economy"
     },
     {
       "id": "fd1604102e20",
@@ -783,12 +807,6 @@
       "label": "Appointed as Former Governor"
     },
     {
-      "id": "63dfe1afb291",
-      "from": "f121c0e97820",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "e78407597fbf",
       "from": "649b4afa9b99",
       "to": "fcc3d69557a3",
@@ -825,12 +843,6 @@
       "label": "Appointed as Minister of Works"
     },
     {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
-    },
-    {
       "id": "81c12b1ceeb0",
       "from": "e153c1875584",
       "to": "23d8905a6cbb",
@@ -857,12 +869,6 @@
     {
       "id": "95964f3387e3",
       "from": "13d8a800667a",
-      "to": "9ff00c51bfd3",
-      "label": "Appointed as Head of Foreign Operations Unit 'A'"
-    },
-    {
-      "id": "0332ac029c85",
-      "from": "2ff28e78e954",
       "to": "9ff00c51bfd3",
       "label": "Appointed as Head of Foreign Operations Unit 'A'"
     },
