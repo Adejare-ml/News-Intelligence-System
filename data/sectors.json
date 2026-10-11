@@ -34,7 +34,7 @@
     {
       "industry": "Banking",
       "companies": 14,
-      "mentions": 21,
+      "mentions": 22,
       "risk": {
         "Low": 11,
         "Medium": 3
@@ -137,6 +137,14 @@
       }
     },
     {
+      "industry": "Manufacturing",
+      "companies": 3,
+      "mentions": 6,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Non-Profit",
       "companies": 2,
       "mentions": 6,
@@ -203,14 +211,6 @@
     },
     {
       "industry": "Cement",
-      "companies": 2,
-      "mentions": 4,
-      "risk": {
-        "Low": 2
-      }
-    },
-    {
-      "industry": "Manufacturing",
       "companies": 2,
       "mentions": 4,
       "risk": {
@@ -603,5 +603,5 @@
       }
     }
   ],
-  "generated": "2026-10-10 20:33:57"
+  "generated": "2026-10-11 01:46:34"
 }

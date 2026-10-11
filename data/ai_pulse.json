@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-10 20:33:50",
+  "generated": "2026-10-11 01:46:32",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 1486,
+      "likes": 1520,
       "downloads": 45605
-    },
-    {
-      "id": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
-      "task": "image-text-to-text",
-      "likes": 1981,
-      "downloads": 13579
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 936,
+      "likes": 968,
       "downloads": 33664
+    },
+    {
+      "id": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "task": "image-text-to-text",
+      "likes": 1999,
+      "downloads": 13579
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3857,
+      "likes": 3883,
       "downloads": 2096562
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 858,
+      "likes": 869,
       "downloads": 10496
-    },
-    {
-      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "task": "text-generation",
-      "likes": 679,
-      "downloads": 45199
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7155,
+      "likes": 7184,
       "downloads": 1720888
+    },
+    {
+      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "task": "text-generation",
+      "likes": 686,
+      "downloads": 45199
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 433,
+      "likes": 458,
       "downloads": 2138
     }
   ],
@@ -62,32 +62,32 @@
     {
       "title": "The Lattice of Transition Laws",
       "url": "https://huggingface.co/papers/2610.11216",
-      "upvotes": 1
+      "upvotes": 5
     },
     {
       "title": "Behavioral Persistence and Incomplete Functional Transfer of Co-evolved Communication in Evolutionary Robotics",
       "url": "https://huggingface.co/papers/2609.38527",
-      "upvotes": 0
+      "upvotes": 4
     },
     {
       "title": "Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
       "url": "https://huggingface.co/papers/2610.09280",
-      "upvotes": 0
+      "upvotes": 4
     },
     {
       "title": "Opera: A Verbal Critic Framework for Long-horizon Coding Agents",
       "url": "https://huggingface.co/papers/2609.33987",
-      "upvotes": 10
+      "upvotes": 14
     },
     {
       "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
       "url": "https://huggingface.co/papers/2610.11169",
-      "upvotes": 1
+      "upvotes": 5
     },
     {
       "title": "Predicting Cable Dynamics with Physical Attention Bias",
       "url": "https://huggingface.co/papers/2610.11975",
-      "upvotes": 1
+      "upvotes": 5
     }
   ]
 }

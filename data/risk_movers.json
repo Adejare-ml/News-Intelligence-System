@@ -10,15 +10,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "recent_avg": 45.8,
-      "previous_avg": 30.0,
-      "delta": 15.8,
-      "recent_mentions": 6,
-      "previous_mentions": 1
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 24.2,
@@ -70,6 +61,15 @@
       "previous_avg": 20.0,
       "delta": -10.0,
       "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "recent_avg": 42.0,
+      "previous_avg": 47.5,
+      "delta": -5.5,
+      "recent_mentions": 5,
       "previous_mentions": 2
     },
     {
@@ -174,13 +174,13 @@
     {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 30.0,
+      "recent_avg": 32.5,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 3,
+      "recent_mentions": 4,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-10 20:33:57"
+  "generated": "2026-10-11 01:46:34"
 }

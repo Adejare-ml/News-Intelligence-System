@@ -1,17 +1,22 @@
 {
-  "new_companies": [],
-  "new_people": [],
+  "new_companies": [
+    "Juhel Nigeria Limited"
+  ],
+  "new_people": [
+    "Francis Meshioye",
+    "Ifeanyi Okoye"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
+    "new_companies": 1,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-10 20:33:48"
+  "generated": "2026-10-11 01:46:30"
 }
