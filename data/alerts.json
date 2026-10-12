@@ -13,6 +13,40 @@
       ]
     },
     {
+      "date": "2026-10-12",
+      "title": "$1b released to Ministry for arms procurement \u2013 Buratai - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeDlYbFgtaGxmM29lWjI4X2xtYnk1NmowUHRqTGRKb3VaOVl1dmVWUUJvcElQTkU3V2xrU18zc25tNVpPX3Nza3ltaHdaWDN3Q0hyVndxcmV6MnYyUUVBckRUUnlKR1I3c2ZJNmN0QWh6NWxNeFEyR2p1ajE2NWZjM19heWU?oc=5",
+      "source": "The Guardian Nigeria News",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Ministry of Defence"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "BREAKING: Ex-Nigerian Navy Accounts Director Wanted By EFCC Over AllegedN2bn Fraud Seen Moving Freely In Kaduna",
+      "url": "https://www.latestnigeriannews.com/p/428726/breaking-exnigerian-navy-accounts-director-wanted-by-efcc-over-allegedn2bn-fraud.html",
+      "source": "latestnigeriannews",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "Nigerian Navy"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "EXCLUSIVE: Nigerian Agency NSITF Faces Questions As ICT Staffer Allegedly Hijacks, Shuts Down Compliance Platform Amid N2bn Dispute",
+      "url": "https://www.latestnigeriannews.com/p/428723/exclusive-nigerian-agency-nsitf-faces-questions-as-ict-staffer-allegedly-hijacks.html",
+      "source": "latestnigeriannews",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": [
+        "Nigeria Social Insurance Trust Fund"
+      ]
+    },
+    {
       "date": "2026-10-11",
       "title": "SERAP sues CBN over $6.23m election funds, N1.63tn others - Punch Newspapers",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTWd1cHJfVGpzN0tJZ3FhREFjS0RqczhpWnhYMzZlS20xeElENUJmYXQ1ZDBiWTlxZ216cEd3MjVvbEVrU0x4Qy11SC1WQktBU1NYUUJES1V6MXBsWWstdlhpT2FaLWRFZTVWbGxmMTJlM0p4WHRoMjhHclRoZHlkbUhB?oc=5",
@@ -519,5 +553,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-12 02:16:34"
+  "generated": "2026-10-12 16:34:21"
 }

@@ -1,33 +1,36 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-12 02:14:48 (UTC+1)
-**Run Window:** 2026-10-12, all runs to 02:14 (run 1 of the day)
+**Generated on:** 2026-10-12 16:33:41 (UTC+1)
+**Run Window:** 2026-10-12, all runs to 16:33 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 5
-- **High Risk Signals:** 1
-- **Appointments Logged:** 0
-- **Procurement Awards:** 1
+- **Total Articles Processed:** 28
+- **High Risk Signals:** 4
+- **Appointments Logged:** 2
+- **Procurement Awards:** 4
 
 ---
-
-# Executive Intelligence Report: Nigeria
-**Report Date:** 2026-10-12
-**Coverage:** All articles published on 2026-10-12 up to 02:14
 
 ### Key Developments
-* **CBN Regulatory Stance:** The Central Bank of Nigeria is maintaining its deadline for financial institutions to implement local data storage requirements ([Punch Newspapers](https://news.google.com/rss/articles/CBMiekFVX3lxTE1WRGE1SEc5RGlrRVh6MXFLbFpFZmtTcW5zZmFuWjF3UWRWMzg3NmQwTjE1TEozTGJBYkxEeXNfTGJsWkVVdkQwMEdlT3JtTXZQUEJ5NThTanEweXRrOWNOempCbTFveUdBNTdtUWJ6cTBRaFZlT2xqVExR?oc=5)).
-* **Anti-Corruption Enforcement:** The EFCC successfully secured an eight-year prison sentence for Onatayo Pelumi following money laundering charges involving N132 million ([The Punch](https://punchng.com/man-jailed-eight-years-for-money-laundering/)).
-* **Labor and Legal Disputes:** Abuja Continental has blocked a Trade Union Congress (TUC) meeting, citing a court injunction ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQW1TRnRHLUlCZ2ljalhvWkVWNkw3SlRVMERSWDYyOFdIT3BYQ1ZpSEJySXJjb182V2F2OHRYZ0tVZHNaQUhkdWFHZ29tRll3bEJXRW1sbXBBOFc1X3pPOHNXZnRUWnFwR184cWNRMUZ5THJTMUE0NC1yZDR6ZkJ2U3VQNjRZR1ht?oc=5)).
+* The Federal Government launched a central digital database intended to vet and screen public sector contractors, strengthening pre-award due diligence across federal procurements ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMioAFBVV95cUxOeWRJSE1TX1Q0ZUFDeEI1d0FUWlhGbVBkcVVCTmdxSnkwSmZWY1V6aWhvWUFaTHNQRnJveWZvTHlHOFNlc1FReE5MdFRkRXpPV1hBcmFLRXZmZkJlLUNrMXNGZmlGYldiUTkySUw0TUo2RGNNcjNIRXFXS1dUQnM2U25RYUxkbEU2VzRpTzdPX251WVl0cUhOV3Z6WlpKQThM?oc=5)).
+* A mandatory federal directive was issued ordering all Ministries, Departments, and Agencies (MDAs) to procure exclusively Nigerian-assembled vehicles ([Vanguard News](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNME5nOUNJV0wyVVc0TTNJT3dPMGM3WjdyYWdhajJEVWJjcEJrNHNzZGFmbFJtZUl6UDFjM01ZbG1LRFlOZ0tmYUtHeWhhdWpCNkJ2UExLTUF3T05vQlkwa0ozYWNQbWt6Y3h4eTBHbzZuZk5pek5Wa3RQVnlwYTQ3bTRJYnJFSEQwQjVqZ2ktU1ZTRGdZQWROTF9majQ2YU9OWFYxMElDUHDSAa4BQVVfeXFMUFJvTW5rQW93aWU3TGl1VGltZWZNTFRJZEx4WUhzRFNfT3RTTzhhUmZEU1ZYS1o5Y3ZfUXJGU0ZZYjZzOTdEenVjYUtEUS0yNVBPLTY4aXJrbHV0V1Rwb01CZXdWcUpXbjdtUUc1QkUwcW95OXkwX1hpSERPd0MtTUFCbmdpdnBHdHJzTXQ2enZITUVNRjI0enpKWmsteDNLbHB0OFEzWlVmN1R0Mm5R?oc=5)).
+* TotalEnergies is under investigative scrutiny over the accuracy of its reported "zero routine flaring" commitments in domestic oil operations ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSzhzN1RNS0ZRN0Fpcy05MDZOX3FVa2pURUR2M2xBYkh3dmRoOVJWakhzMUZhSkk1RXZtTXpUZVhscjNGMURoRjZyLS04NUhKbnhxdVpxVXJ5Tk9LVFdXaGNLcExaVFdYczhFMjBOZHBFX0JxUm9mSXM4WEw3RVctTHBldVJTQmhXSjhxWXNtcS1JN3NaNGhWYWJ3MXhfeFA0S3kzZ1lpbmlVVDF1VHlheDIwcnN6bEE0NnpqZHlDblNtRHpJbmZFakN4dFNZclBuSTUwazRn?oc=5)).
+* Other notable updates include institutional warnings on corporate governance from ICSAN, a 30-day compliance window imposed by the NCC on unapproved mobile devices, and transport platform suspensions in Lagos ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilgFBVV95cUxNVHJpbE5kNGVzTW5MRTVsRXN3dDJuSHpYMGIwUEhQdXZ5NTVwcDVWdEh6Mk1wWlNJdjZNa19hRGw4bUhtOUp1cFNGYXplM25WMFZMQTdDV3JXRElGZkpIMklMTFBpNG1MNDk1N0tRMG1NVnhGa0tNdk5fU3BHZElTdHZUYlZmRlhXbk9FNTVmWFpmeDJrNnc?oc=5); [The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilwFBVV95cUxPcFpDVWhXUHA1ZUo4QUViWFdlNXBSRFVwSjF2bDI4X0ttcERaYjlWdk5wNXZoRVpnMm1odXVSNU5LWmRyeVgzLWtsbnN2dGtWOWpaMTFzTGw5d1VrRVVseWN5V2t6ZHhpU3VWQTNPc0ZrZUVaY3pmQTFYZHFkVVBBSi1yWTlWdlVPRzBYa0ppOVk3RFBxNWl3?oc=5); [The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirAFBVV95cUxNbmdBMWdfT2hkcGxjMlFWbnFOWkVFVU82NlJsYzd0ejNCemxkbjZuZjJXQWlyM1FLNHVzUzdQXzJkNkl1d1NTdHYxRTdsbm1NUVJRSEZ0Nm1BQ1pvVko5anJPSTNkTXdqcmVfTkZydGZZR3pUM1ZCNFdvREltMkJIMV9rYm9LWXlDV3VtTmZ4TzhUMXBXcjU3NkhSdmQtQVgzaEFGaWRVM3h3NlEw?oc=5)).
 
 ### High Risk Alerts
-* **CBN Financial Irregularities:** SERAP has initiated legal action against the CBN over unresolved audit queries totaling N1.63 trillion and the management of $6.23 million in election funds ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaU90YTdmYmg0c3I5TE9aVC1fSEUweklVUl9PMUdOT2Zfaktldzhna0Raal9YVXgzQ21aOXk1X3ZmY2p4VnhOcmxOTnR1dVc4NlMzdWJHYVZUS3VtY19WaHZzU1BMaDhCc1g4OXVONHRvcmhma3FXX1ZsWVltRnptSGctVjR4dTQtLTF3?oc=5)).
-* **Election Funding Concerns:** High-level calls have been made for the Independent National Electoral Commission (INEC) to disclose the awarding of ballot paper contracts and appointments for the 2027 cycle to ensure transparency ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimAFBVV95cUxNOFRZYkswV21UNXJ0NVNreXhNZUt2b3hWZlBlQW5VWnQyNmRzZ2pHTXZuVXhzSWlpMVN1SndKRHhhOENyUnU5VnoxME5kQS0xbEJrelhlbUtBTEVUMW02S05mMXZTMWY1QmFBVUU5YS1Nc0lNRFFoOU95QjdlWUxMZnZTZ0ZfdmI2ME5hNjV4OUVmMWdmNjI4Ng?oc=5)).
+* SERAP instituted legal proceedings against the Central Bank of Nigeria concerning $6.23 million in disputed election disbursements and outstanding audit queries valued at N1.63 trillion ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaU90YTdmYmg0c3I5TE9aVC1fSEUweklVUl9PMUdOT2Zfaktldzhna0Raal9YVXgzQ21aOXk1X3ZmY2p4VnhOcmxOTnR1dVc4NlMzdWJHYVZUS3VtY19WaHZzU1BMaDhCc1g4OXVONHRvcmhma3FXX1ZsWVltRnptSGctVjR4dTQtLTF3?oc=5)).
+* A $1 billion capital release to the Ministry of Defence for arms procurement was disclosed by former leadership, raising acute oversight and traceability concerns ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMihAFBVV95cUxPeDlYbFgtaGxmM29lWjI4X2xtYnk1NmowUHRqTGRKb3VaOVl1dmVWUUJvcElQTkU3V2xrU18zc25tNVpPX3Nza3ltaHdaWDN3Q0hyVndxcmV6MnYyUUVBckRUUnlKR1I3c2ZJNmN0QWh6NWxNeFEyR2p1ajE2NWZjM19heWU?oc=5)).
+* An EFCC-wanted former Nigerian Navy Accounts Director tied to a N2 billion financial fraud case was sighted evading custody in Kaduna ([latestnigeriannews](https://www.latestnigeriannews.com/p/428726/breaking-exnigerian-navy-accounts-director-wanted-by-efcc-over-allegedn2bn-fraud.html)).
+* The Nigeria Social Insurance Trust Fund suffered an internal sabotage incident wherein an ICT employee shuttered the statutory compliance portal amid an ongoing N2 billion dispute ([latestnigeriannews](https://www.latestnigeriannews.com/p/428723/exclusive-nigerian-agency-nsitf-faces-questions-as-ict-staffer-allegedly-hijacks.html)).
+* Federal prosecutors substituted existing charges with fresh filings against an individual named Adeyemi regarding an alleged fraudulent agency operation ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMizgFBVV95cUxPQ243VS0zS2o5RU00dG8zTWdTb1lIdWt4MTNCZTctRzhaZUhmQ0ktalRBZHpjSko0Slp6eUZ2eDlBS3NnNWpoNkxTTFpSRjZNWnZDdjFuZUd2MHR6Q3paSFA5b2VGQ1lmSEtwRGVBU2FURzhJbnRRRzF2VW9lbG1lbVRneDJ0MTNIam52NnhGb19iYk5Sa3c1NDF3YkRmakFCQU9xZGxJbnZJM3lYRWphWUZ4cW9WRlowbXphcl9BVm1Xek04czNLT2Z5cEhHQQ?oc=5)).
 
 ### Beneficial Ownership & PSC Disclosures
-No persons with significant control were identified in the provided data.
+The monitored reports contain no beneficial ownership or Person with Significant Control (PSC) disclosures.
 
 ### Procurement & Board Changes
-Demands for public disclosure have been issued regarding INEC's procurement processes for 2027 election ballot contracts ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimAFBVV95cUxNOFRZYkswV21UNXJ0NVNreXhNZUt2b3hWZlBlQW5VWnQyNmRzZ2pHTXZuVXhzSWlpMVN1SndKRHhhOENyUnU5VnoxME5kQS0xbEJrelhlbUtBTEVUMW02S05mMXZTMWY1QmFBVUU5YS1Nc0lNRFFoOU95QjdlWUxMZnZTZ0ZfdmI2ME5hNjV4OUVmMWdmNjI4Ng?oc=5)). No other board or procurement changes were reported.
+* Ondo State entered into a $362 million development agreement with an undisclosed entity to establish a titanium processing facility, presenting material beneficial ownership opacity risks ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMinwFBVV95cUxQYzRGMnNTenJjRDJkd25HRHBMSHRqbWVtYmFFenVEZWhDZmp4dV8wdGYyZ1M4dkhUeXpzbHZXSlhzN1p4YjdGRlFGbDNKZDhxajlUTktUMGdfNFQ1SkZWUU11bU1JS0dvZ2EzUGtzekZDckxpRC1OdXFXMTZnUjBZM0UxZXpPSUhVcnpPaDhKU2U5akZ4R2psS18yY0NtT0k?oc=5)).
+* Minister of Works Dave Umahi publicly defended the Federal Government's contested procurement and execution decisions regarding the Lagos-Calabar coastal highway corridor ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaFQ4T01mTXE3Y2Y4dmVVbXRuTk4tOGkxVTI1U0QwU05qSHUzNktjdFY3NXVFRDdyMGZYdVZQUlNWRVFlZkp0LVhiSTUzM2E3aTdPbkVpY0JZbldoUk5PRFNoeENTTVY2RVJQYXRoQ2FMMVNtZldFbmwxZllMUHR6VktHOGZzLWZOS3Zta2tHTlhYZzRnNndzUGVMalY1TENFdWRXWVluM2wySE8zMHFiaUdxcmhNSGdOQWxUX3U5YlVSQlE?oc=5)).
+* Ibom Air restructured its leadership structure with the appointment of two executive directors and the formal retirement of an outgoing board member ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2AFBVV95cUxObHI2VVhKZkswR2g2S1d2YjdCcGlaRU9IWnoxRjA1WTBHNmxkdHJYYWJBTXFoaHRxWGNCaTVQYzVjSmZCYlZ6UWtvWTEtZzAwSjNuUmdIWlhUNG44WGF2T3VWcy0zYVgzVjBYeWlSMG85VFRZaVhMeTlRaVBucDEzOVdpRGhFejAyYXdlZldFYzZpY3VjVHdCMXNWRUZSRkU2SDZGeWMzNVZ0MnEtbDFUdks5eWFqM1NGMnRIcGJzbDhrMFNhRXd3bHA1T3YzSURpMm9MU3ZoZmY?oc=5)).
+* Oyo State Governor Seyi Makinde appointed a new Chief of Staff directly following the abrupt resignation of predecessor Ogunwuyi ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxQR1NLT1M4TE45RUF4bks3bUI5M21DYmZCWGVOSUtkMG1TaFZkYU9qUWxEWjk2dEF5ZWwtMXdsX2pfemtnV0xwclJ1Wm9qUnIxRXMxR1FOZkxtVkFDM3V5dVJzcGlvRmN1NURHQVlCLW5qS3RjU0xyYzNYcDZjUmtVN3lNWVhRd1lOcFdSYWdvTU1ZQk9xeUx4Z21MZjJGVzhQeUVDRG83Q3FzNEVrLWpBVW9tTmpnYTNfZUhYNzd5MWtkeW9U?oc=5)).
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*

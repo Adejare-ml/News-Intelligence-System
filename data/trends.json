@@ -1,31 +1,31 @@
 {
   "window_days": 7,
-  "recent_articles": 155,
+  "recent_articles": 161,
   "previous_articles": 179,
   "rising": [
+    {
+      "term": "premium",
+      "recent": 61,
+      "previous": 40,
+      "change": 21
+    },
+    {
+      "term": "premium times",
+      "recent": 61,
+      "previous": 40,
+      "change": 21
+    },
+    {
+      "term": "times",
+      "recent": 61,
+      "previous": 40,
+      "change": 21
+    },
     {
       "term": "petrol",
       "recent": 12,
       "previous": 0,
       "change": 12
-    },
-    {
-      "term": "premium",
-      "recent": 55,
-      "previous": 44,
-      "change": 11
-    },
-    {
-      "term": "premium times",
-      "recent": 55,
-      "previous": 44,
-      "change": 11
-    },
-    {
-      "term": "times",
-      "recent": 55,
-      "previous": 44,
-      "change": 11
     },
     {
       "term": "discount",
@@ -58,89 +58,89 @@
       "change": 6
     },
     {
-      "term": "petrol discount",
-      "recent": 5,
-      "previous": 0,
+      "term": "public",
+      "recent": 6,
+      "previous": 1,
       "change": 5
     }
   ],
   "falling": [
     {
-      "term": "guardian",
-      "recent": 35,
-      "previous": 55,
-      "change": -20
+      "term": "com",
+      "recent": 3,
+      "previous": 20,
+      "change": -17
     },
     {
-      "term": "com",
-      "recent": 7,
-      "previous": 17,
-      "change": -10
+      "term": "guardian",
+      "recent": 38,
+      "previous": 54,
+      "change": -16
+    },
+    {
+      "term": "nnpc",
+      "recent": 11,
+      "previous": 22,
+      "change": -11
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 4,
+      "recent": 3,
       "previous": 11,
-      "change": -7
-    },
-    {
-      "term": "opens",
-      "recent": 1,
-      "previous": 8,
-      "change": -7
-    },
-    {
-      "term": "theeagleonline",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
-      "term": "theeagleonline com",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
-      "term": "appoints",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
-    },
-    {
-      "term": "bank",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
+      "change": -8
     },
     {
       "term": "punchng",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
+      "recent": 0,
+      "previous": 8,
+      "change": -8
     },
     {
       "term": "punchng com",
-      "recent": 1,
-      "previous": 7,
+      "recent": 0,
+      "previous": 8,
+      "change": -8
+    },
+    {
+      "term": "opens",
+      "recent": 2,
+      "previous": 8,
       "change": -6
+    },
+    {
+      "term": "project",
+      "recent": 2,
+      "previous": 8,
+      "change": -6
+    },
+    {
+      "term": "partner",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
+    },
+    {
+      "term": "court",
+      "recent": 14,
+      "previous": 19,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 113,
-      "previous": 117
+      "recent": 115,
+      "previous": 120
     },
     {
       "category": "Legal",
-      "recent": 22,
-      "previous": 28
+      "recent": 24,
+      "previous": 26
     },
     {
       "category": "Company",
-      "recent": 19,
-      "previous": 31
+      "recent": 21,
+      "previous": 30
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-12 02:16:28"
+  "generated": "2026-10-12 16:34:17"
 }

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-12 02:16:28",
+  "generated": "2026-10-12 16:34:16",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 1720,
-      "downloads": 98829
+      "likes": 1885,
+      "downloads": 115763
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1098,
-      "downloads": 37647
+      "likes": 1286,
+      "downloads": 46070
     },
     {
-      "id": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
-      "task": "image-text-to-text",
-      "likes": 2028,
-      "downloads": 14351
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 3992,
+      "likes": 4062,
       "downloads": 2188658
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 545,
-      "downloads": 4702
+      "likes": 607,
+      "downloads": 6787
+    },
+    {
+      "id": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "task": "image-text-to-text",
+      "likes": 2074,
+      "downloads": 15064
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7325,
-      "downloads": 1726683
+      "likes": 7414,
+      "downloads": 1719766
     },
     {
-      "id": "Aleph-Alpha/Kolibri-1",
-      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-      "task": "text-generation",
-      "likes": 887,
-      "downloads": 12550
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "task": "image-text-to-text",
+      "likes": 17557,
+      "downloads": 6895303
     },
     {
-      "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
-      "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
+      "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "task": "text-generation",
-      "likes": 691,
-      "downloads": 48389
+      "likes": 357,
+      "downloads": 242329
     }
   ],
   "papers": [
     {
-      "title": "Here the World in Stereo: Learning Dynamic Spatial Correspondence for Immersive Joint Video-Audio Generation",
-      "url": "https://huggingface.co/papers/2609.38748",
-      "upvotes": 6
-    },
-    {
-      "title": "Rethinking Relative Policy Differences Transfer of On-Policy Distillation",
-      "url": "https://huggingface.co/papers/2610.13205",
+      "title": "Video-Conditioned Generative Joint 2D-3D Hand Motion Recovery",
+      "url": "https://huggingface.co/papers/2610.10512",
       "upvotes": 1
     },
     {
-      "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
-      "url": "https://huggingface.co/papers/2610.13021",
+      "title": "Few-Step Generation via Data-Space Iteration",
+      "url": "https://huggingface.co/papers/2610.12102",
       "upvotes": 1
     },
     {
-      "title": "Judging in Latent Space: Efficient Generative Reward Modeling via Semantics-Preserving Compression",
-      "url": "https://huggingface.co/papers/2610.09788",
+      "title": "GATOR: Generative and Agentic 3D Object Reconstruction From Casual Images",
+      "url": "https://huggingface.co/papers/2610.11215",
+      "upvotes": 1
+    },
+    {
+      "title": "Distributionally Robust Mixture-of-Experts Training",
+      "url": "https://huggingface.co/papers/2610.07207",
+      "upvotes": 4
+    },
+    {
+      "title": "One Model to Loop Them All: Elastic Latent Recurrence for Language Models",
+      "url": "https://huggingface.co/papers/2610.12582",
+      "upvotes": 1
+    },
+    {
+      "title": "The Life Cycle of a Massive Activation: Stochastic Birth, Weight-Decay-Driven Growth, and Competitive Consolidation",
+      "url": "https://huggingface.co/papers/2610.00423",
       "upvotes": 2
-    },
-    {
-      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
-      "url": "https://huggingface.co/papers/2610.13912",
-      "upvotes": 10
-    },
-    {
-      "title": "AMLworld-Compact: Importance-Weighted Downsampling for Cost-Effective LLM Evaluation and Error Diagnosis",
-      "url": "https://huggingface.co/papers/2610.13627",
-      "upvotes": 1
     }
   ]
 }

@@ -1718,5 +1718,35 @@
     "Date": "2026-10-10",
     "Amount Value": 200000000.0,
     "Amount Currency": "USD"
+  },
+  {
+    "Agency": "Ministry of Defence",
+    "Contractor": "None",
+    "Amount": "$1 Billion",
+    "Project": "Arms procurement",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-10-12",
+    "Amount Value": 1000000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Lagos-Calabar coastal highway",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-12",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Ondo State Government",
+    "Contractor": "Unspecified Firm",
+    "Amount": "$362 million",
+    "Project": "Construction of the first titanium processing plant",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-10-12",
+    "Amount Value": 362000000.0,
+    "Amount Currency": "USD"
   }
 ]
