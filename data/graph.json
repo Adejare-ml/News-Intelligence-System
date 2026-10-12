@@ -163,6 +163,12 @@
       "risk": "Low"
     },
     {
+      "id": "cab1be53cb3b",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ad5f19190fb7",
       "label": "Nigeria Social Insurance Trust Fund",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "e8c816b2230d",
       "label": "Adeyemi",
       "type": "person",
@@ -261,6 +261,12 @@
     {
       "id": "8cecc5e1e226",
       "label": "Ogunwuyi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ad921d604863",
+      "label": "Unknown",
       "type": "person",
       "risk": "Low"
     },
@@ -729,6 +735,12 @@
       "label": "Appointed as Chief of Staff"
     },
     {
+      "id": "6a0ea56ce923",
+      "from": "ad921d604863",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Chief of Staff"
+    },
+    {
       "id": "63dfe1afb291",
       "from": "f121c0e97820",
       "to": "3a4a88456e84",
@@ -855,12 +867,6 @@
       "label": "Appointed as Minister of Works"
     },
     {
-      "id": "81c12b1ceeb0",
-      "from": "e153c1875584",
-      "to": "23d8905a6cbb",
-      "label": "Appointed as Minister"
-    },
-    {
       "id": "990674302105",
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
@@ -957,15 +963,15 @@
       "label": "PSC: 85.8%"
     },
     {
-      "id": "1a52b80b0b5c",
-      "from": "c31b444adb68",
-      "to": "ef6dbf96f94e",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "1a52b80b0b5c",
+      "from": "c31b444adb68",
+      "to": "ef6dbf96f94e",
       "label": "Contract Awardee"
     },
     {

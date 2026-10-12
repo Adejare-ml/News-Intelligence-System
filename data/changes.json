@@ -1,34 +1,33 @@
 {
   "new_companies": [
-    "Berkshire",
-    "Ibom Air",
-    "Institute of Chartered Secretaries and Administrators of Nigeria"
+    "Aluminum Smelter Company of Nigeria (ALSCON)",
+    "Euracare",
+    "Nigeria Labour Congress",
+    "Nigeria Union of Teachers"
   ],
-  "new_people": [
-    "Ogunwuyi"
-  ],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "$1b released to Ministry for arms procurement \u2013 Buratai - The Guardian Nigeria News",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeDlYbFgtaGxmM29lWjI4X2xtYnk1NmowUHRqTGRKb3VaOVl1dmVWUUJvcElQTkU3V2xrU18zc25tNVpPX3Nza3ltaHdaWDN3Q0hyVndxcmV6MnYyUUVBckRUUnlKR1I3c2ZJNmN0QWh6NWxNeFEyR2p1ajE2NWZjM19heWU?oc=5",
-      "risk": 75.0
+      "title": "EFCC arraigns ALSCON, Russian director on N582.4 million money laundering charges - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNY1B1bnpKdzBBMF95aHBLSHRIdVlUZHUyOEhhdUlWZmFhdExzOVVHLTNuSnY4ZjNaWms4ZUNUZ016QnFSYnFkWEhRREpIM2g4aGdKWDBtdkFwQm1PTFNsQjhnWnFjWFI0b2hJSWRPcFhWbXVlaEE1ckhldmJjUFFSdXZxbzl0X2JaX0VnRU1DZ08yRGxtSVFNY29pZVlFQnFxaG9aclZVekJfa29mSkVxZnFNazROQWVlVGZIdVRHaFctejNJS1pLZzVpRGJTMWM1U2pN?oc=5",
+      "risk": 85.0
     },
     {
-      "title": "BREAKING: Ex-Nigerian Navy Accounts Director Wanted By EFCC Over AllegedN2bn Fraud Seen Moving Freely In Kaduna",
-      "url": "https://www.latestnigeriannews.com/p/428726/breaking-exnigerian-navy-accounts-director-wanted-by-efcc-over-allegedn2bn-fraud.html",
+      "title": "EFCC arraigns firm over money laundering - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtaTdqcnh1eThmWGxjOUxnUkpYTml3SEVsOXhSbF8zNDRyNWkxU0VVWUJXNXZXSTFPUzAzTWEwYnYzd21mcEdnSFZtcnhJNFpfMVdmYWRtblktbWVuT0p3bXFKeEkwSS1wRXNtV2lB?oc=5",
       "risk": 70.0
     }
   ],
   "counts": {
-    "new_companies": 3,
-    "new_people": 1,
+    "new_companies": 4,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 2
   },
-  "generated": "2026-10-12 16:34:14"
+  "generated": "2026-10-12 21:39:02"
 }

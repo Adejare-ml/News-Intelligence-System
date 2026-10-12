@@ -28,15 +28,6 @@
       "previous_mentions": 9
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 50.0,
-      "previous_avg": 30.0,
-      "delta": 20.0,
-      "recent_mentions": 7,
-      "previous_mentions": 2
-    },
-    {
       "key": "national assembly",
       "label": "National Assembly",
       "recent_avg": 30.0,
@@ -44,6 +35,15 @@
       "delta": 20.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 48.0,
+      "previous_avg": 30.0,
+      "delta": 18.0,
+      "recent_mentions": 10,
+      "previous_mentions": 3
     },
     {
       "key": "taraba state government",
@@ -73,21 +73,30 @@
       "previous_mentions": 2
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 26.8,
+      "previous_avg": 19.5,
+      "delta": 7.3,
+      "recent_mentions": 11,
+      "previous_mentions": 11
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 26.5,
-      "previous_avg": 34.0,
-      "delta": -7.5,
-      "recent_mentions": 17,
-      "previous_mentions": 30
+      "recent_avg": 26.9,
+      "previous_avg": 33.5,
+      "delta": -6.6,
+      "recent_mentions": 16,
+      "previous_mentions": 31
     },
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 31.7,
+      "recent_avg": 32.7,
       "previous_avg": 38.3,
-      "delta": -6.6,
-      "recent_mentions": 12,
+      "delta": -5.6,
+      "recent_mentions": 11,
       "previous_mentions": 3
     },
     {
@@ -109,42 +118,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 35.0,
-      "previous_avg": 30.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
-      "recent_mentions": 3,
-      "previous_mentions": 1
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 17.5,
-      "previous_avg": 21.7,
-      "delta": -4.2,
-      "recent_mentions": 4,
-      "previous_mentions": 3
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 23.0,
-      "previous_avg": 19.4,
-      "delta": 3.6,
-      "recent_mentions": 10,
-      "previous_mentions": 9
-    },
-    {
       "key": "lagos state waste management authority",
       "label": "Lagos State Waste Management Authority",
       "recent_avg": 22.5,
@@ -152,6 +125,15 @@
       "delta": 2.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "recent_avg": 20.0,
+      "previous_avg": 17.5,
+      "delta": 2.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "ports authority",
@@ -172,15 +154,33 @@
       "previous_mentions": 3
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 22.0,
+      "previous_avg": 21.7,
+      "delta": 0.3,
+      "recent_mentions": 5,
+      "previous_mentions": 3
+    },
+    {
       "key": "all progressives congress",
       "label": "All Progressives Congress",
       "recent_avg": 20.0,
       "previous_avg": 20.0,
       "delta": 0.0,
       "recent_mentions": 2,
-      "previous_mentions": 2
+      "previous_mentions": 1
+    },
+    {
+      "key": "seyi makinde",
+      "label": "Seyi Makinde",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-12 16:34:21"
+  "generated": "2026-10-12 21:39:07"
 }

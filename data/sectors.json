@@ -137,19 +137,19 @@
       }
     },
     {
+      "industry": "Healthcare",
+      "companies": 6,
+      "mentions": 7,
+      "risk": {
+        "Low": 6
+      }
+    },
+    {
       "industry": "Political Party",
       "companies": 1,
       "mentions": 7,
       "risk": {
         "High": 1
-      }
-    },
-    {
-      "industry": "Healthcare",
-      "companies": 5,
-      "mentions": 6,
-      "risk": {
-        "Low": 5
       }
     },
     {
@@ -215,6 +215,14 @@
       "mentions": 4,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Labor Union",
+      "companies": 4,
+      "mentions": 4,
+      "risk": {
+        "Low": 4
       }
     },
     {
@@ -295,14 +303,6 @@
       "mentions": 2,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Labor Union",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "Low": 2
       }
     },
     {
@@ -507,6 +507,14 @@
       }
     },
     {
+      "industry": "Manufacturing/Mining",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Maritime",
       "companies": 1,
       "mentions": 1,
@@ -611,5 +619,5 @@
       }
     }
   ],
-  "generated": "2026-10-12 16:34:21"
+  "generated": "2026-10-12 21:39:07"
 }

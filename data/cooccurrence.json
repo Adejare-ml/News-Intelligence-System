@@ -122,6 +122,10 @@
       "label": "Ogun State Government"
     },
     {
+      "key": "ogunwuyi",
+      "label": "Ogunwuyi"
+    },
+    {
       "key": "ojulari",
       "label": "Ojulari"
     },
@@ -200,6 +204,11 @@
     {
       "a": "national petroleum company",
       "b": "ojulari",
+      "weight": 3
+    },
+    {
+      "a": "ogunwuyi",
+      "b": "oyo state government",
       "weight": 3
     },
     {
@@ -323,5 +332,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-12 16:34:21"
+  "generated": "2026-10-12 21:39:07"
 }
