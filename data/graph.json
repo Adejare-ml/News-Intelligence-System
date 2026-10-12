@@ -121,6 +121,12 @@
       "risk": "Medium"
     },
     {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -193,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "e29340b992f3",
+      "label": "Federal Ministry of Finance",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "7e48c62c27f0",
       "label": "AUATON",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "36304c0b90e8",
-      "label": "Nigeria Immigration Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d781121cea1c",
-      "label": "Kwara State Ministry of Health",
       "type": "agency",
       "risk": "Low"
     },
