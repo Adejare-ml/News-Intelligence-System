@@ -71,7 +71,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 38,
+      "total_mentions": 40,
       "points": [
         {
           "week": "2026-09-07",
@@ -99,8 +99,14 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 8,
-          "avg_risk": 36.9,
+          "mentions": 9,
+          "avg_risk": 34.4,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 75.0,
           "max_risk": 75
         }
       ]
@@ -108,7 +114,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 38,
+      "total_mentions": 39,
       "points": [
         {
           "week": "2026-09-07",
@@ -136,8 +142,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 5,
-          "avg_risk": 43.0,
+          "mentions": 6,
+          "avg_risk": 46.7,
           "max_risk": 65
         }
       ]
@@ -145,7 +151,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 18,
+      "total_mentions": 19,
       "points": [
         {
           "week": "2026-09-07",
@@ -173,8 +179,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 11,
-          "avg_risk": 30.9,
+          "mentions": 12,
+          "avg_risk": 31.7,
           "max_risk": 75
         }
       ]
@@ -397,6 +403,49 @@
       ]
     },
     {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 47.5,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "total_mentions": 8,
@@ -449,43 +498,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 47.5,
-          "max_risk": 75
         }
       ]
     },
@@ -2434,6 +2446,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "abuja continental",
+      "label": "Abuja Continental",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -4672,20 +4697,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "national power training institute of",
-      "label": "National Power Training Institute of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
     }
   ],
-  "generated": "2026-10-11 20:54:31"
+  "generated": "2026-10-12 02:16:34"
 }

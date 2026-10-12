@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-11 20:54:29",
+  "generated": "2026-10-12 02:16:28",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 1673,
+      "likes": 1720,
       "downloads": 98829
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1059,
+      "likes": 1098,
       "downloads": 37647
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 2025,
+      "likes": 2028,
       "downloads": 14351
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 3970,
+      "likes": 3992,
       "downloads": 2188658
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 531,
+      "likes": 545,
       "downloads": 4702
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7296,
+      "likes": 7325,
       "downloads": 1726683
     },
     {
       "id": "Aleph-Alpha/Kolibri-1",
       "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
       "task": "text-generation",
-      "likes": 886,
+      "likes": 887,
       "downloads": 12550
     },
     {
       "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "url": "https://huggingface.co/Venastine-Research/Xing4.0-29B-A4B-GGUF",
       "task": "text-generation",
-      "likes": 689,
+      "likes": 691,
       "downloads": 48389
     }
   ],
   "papers": [
     {
-      "title": "The Lattice of Transition Laws",
-      "url": "https://huggingface.co/papers/2610.11216",
-      "upvotes": 5
+      "title": "Here the World in Stereo: Learning Dynamic Spatial Correspondence for Immersive Joint Video-Audio Generation",
+      "url": "https://huggingface.co/papers/2609.38748",
+      "upvotes": 6
     },
     {
-      "title": "Behavioral Persistence and Incomplete Functional Transfer of Co-evolved Communication in Evolutionary Robotics",
-      "url": "https://huggingface.co/papers/2609.38527",
-      "upvotes": 4
+      "title": "Rethinking Relative Policy Differences Transfer of On-Policy Distillation",
+      "url": "https://huggingface.co/papers/2610.13205",
+      "upvotes": 1
     },
     {
-      "title": "Evaluating the Transfer of Co-Evolved Communication from 2D to 3D Simulation",
-      "url": "https://huggingface.co/papers/2610.09280",
-      "upvotes": 4
+      "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+      "url": "https://huggingface.co/papers/2610.13021",
+      "upvotes": 1
     },
     {
-      "title": "Opera: A Verbal Critic Framework for Long-horizon Coding Agents",
-      "url": "https://huggingface.co/papers/2609.33987",
-      "upvotes": 14
+      "title": "Judging in Latent Space: Efficient Generative Reward Modeling via Semantics-Preserving Compression",
+      "url": "https://huggingface.co/papers/2610.09788",
+      "upvotes": 2
     },
     {
-      "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
-      "url": "https://huggingface.co/papers/2610.11169",
-      "upvotes": 5
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "url": "https://huggingface.co/papers/2610.13912",
+      "upvotes": 10
     },
     {
-      "title": "Predicting Cable Dynamics with Physical Attention Bias",
-      "url": "https://huggingface.co/papers/2610.11975",
-      "upvotes": 5
+      "title": "AMLworld-Compact: Importance-Weighted Downsampling for Cost-Effective LLM Evaluation and Error Diagnosis",
+      "url": "https://huggingface.co/papers/2610.13627",
+      "upvotes": 1
     }
   ]
 }
