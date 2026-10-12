@@ -1120,17 +1120,17 @@
     },
     {
       "date": "2026-10-12",
-      "runs": 2,
-      "articles": 28,
-      "high_risk": 4,
-      "appointments": 2,
-      "procurement": 4,
+      "runs": 3,
+      "articles": 45,
+      "high_risk": 6,
+      "appointments": 5,
+      "procurement": 5,
       "cascade_failures": 0,
-      "candidates": 2123,
-      "rejected": 47,
+      "candidates": 3190,
+      "rejected": 77,
       "undated": 0,
-      "run_seconds": 545
+      "run_seconds": 857
     }
   ],
-  "generated": "2026-10-12 16:34:21"
+  "generated": "2026-10-12 21:39:07"
 }

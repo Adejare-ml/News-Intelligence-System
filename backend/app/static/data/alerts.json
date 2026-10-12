@@ -2,6 +2,18 @@
   "alerts": [
     {
       "date": "2026-10-12",
+      "title": "EFCC arraigns ALSCON, Russian director on N582.4 million money laundering charges - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNY1B1bnpKdzBBMF95aHBLSHRIdVlUZHUyOEhhdUlWZmFhdExzOVVHLTNuSnY4ZjNaWms4ZUNUZ016QnFSYnFkWEhRREpIM2g4aGdKWDBtdkFwQm1PTFNsQjhnWnFjWFI0b2hJSWRPcFhWbXVlaEE1ckhldmJjUFFSdXZxbzl0X2JaX0VnRU1DZ08yRGxtSVFNY29pZVlFQnFxaG9aclZVekJfa29mSkVxZnFNazROQWVlVGZIdVRHaFctejNJS1pLZzVpRGJTMWM1U2pN?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Aluminum Smelter Company of Nigeria (ALSCON)",
+        "Economic and Financial Crimes Commission (EFCC)"
+      ]
+    },
+    {
+      "date": "2026-10-12",
       "title": "SERAP sues CBN over $6.23m election funds, N1.63tn audit queries - Punch Newspapers",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaU90YTdmYmg0c3I5TE9aVC1fSEUweklVUl9PMUdOT2Zfaktldzhna0Raal9YVXgzQ21aOXk1X3ZmY2p4VnhOcmxOTnR1dVc4NlMzdWJHYVZUS3VtY19WaHZzU1BMaDhCc1g4OXVONHRvcmhma3FXX1ZsWVltRnptSGctVjR4dTQtLTF3?oc=5",
       "source": "Punch Newspapers",
@@ -33,6 +45,17 @@
       "entities": [
         "Economic and Financial Crimes Commission",
         "Nigerian Navy"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "title": "EFCC arraigns firm over money laundering - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtaTdqcnh1eThmWGxjOUxnUkpYTml3SEVsOXhSbF8zNDRyNWkxU0VVWUJXNXZXSTFPUzAzTWEwYnYzd21mcEdnSFZtcnhJNFpfMVdmYWRtblktbWVuT0p3bXFKeEkwSS1wRXNtV2lB?oc=5",
+      "source": "Punch Newspapers",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission"
       ]
     },
     {
@@ -553,5 +576,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-12 16:34:21"
+  "generated": "2026-10-12 21:39:07"
 }

@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 161,
-  "previous_articles": 179,
+  "recent_articles": 167,
+  "previous_articles": 182,
   "rising": [
     {
       "term": "premium",
-      "recent": 61,
-      "previous": 40,
-      "change": 21
+      "recent": 65,
+      "previous": 42,
+      "change": 23
     },
     {
       "term": "premium times",
-      "recent": 61,
-      "previous": 40,
-      "change": 21
+      "recent": 65,
+      "previous": 42,
+      "change": 23
     },
     {
       "term": "times",
-      "recent": 61,
-      "previous": 40,
-      "change": 21
+      "recent": 65,
+      "previous": 42,
+      "change": 23
     },
     {
       "term": "petrol",
@@ -34,10 +34,16 @@
       "change": 10
     },
     {
-      "term": "inec",
-      "recent": 11,
+      "term": "efcc",
+      "recent": 10,
       "previous": 3,
-      "change": 8
+      "change": 7
+    },
+    {
+      "term": "inec",
+      "recent": 10,
+      "previous": 3,
+      "change": 7
     },
     {
       "term": "eagle",
@@ -56,26 +62,20 @@
       "recent": 6,
       "previous": 0,
       "change": 6
-    },
-    {
-      "term": "public",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
     }
   ],
   "falling": [
     {
       "term": "com",
-      "recent": 3,
-      "previous": 20,
-      "change": -17
+      "recent": 1,
+      "previous": 22,
+      "change": -21
     },
     {
       "term": "guardian",
       "recent": 38,
-      "previous": 54,
-      "change": -16
+      "previous": 52,
+      "change": -14
     },
     {
       "term": "nnpc",
@@ -84,9 +84,9 @@
       "change": -11
     },
     {
-      "term": "nigeria\u2019s",
-      "recent": 3,
-      "previous": 11,
+      "term": "project",
+      "recent": 1,
+      "previous": 9,
       "change": -8
     },
     {
@@ -102,52 +102,52 @@
       "change": -8
     },
     {
+      "term": "nigeria\u2019s",
+      "recent": 4,
+      "previous": 11,
+      "change": -7
+    },
+    {
+      "term": "theeagleonline",
+      "recent": 1,
+      "previous": 8,
+      "change": -7
+    },
+    {
+      "term": "theeagleonline com",
+      "recent": 1,
+      "previous": 8,
+      "change": -7
+    },
+    {
       "term": "opens",
       "recent": 2,
       "previous": 8,
       "change": -6
-    },
-    {
-      "term": "project",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
-      "term": "partner",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
-    {
-      "term": "court",
-      "recent": 14,
-      "previous": 19,
-      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 115,
-      "previous": 120
+      "recent": 118,
+      "previous": 124
     },
     {
       "category": "Legal",
-      "recent": 24,
-      "previous": 26
+      "recent": 29,
+      "previous": 24
     },
     {
       "category": "Company",
-      "recent": 21,
+      "recent": 20,
       "previous": 30
     },
     {
       "category": "Other",
-      "recent": 1,
-      "previous": 3
+      "recent": 0,
+      "previous": 4
     }
   ],
   "social": [],
-  "generated": "2026-10-12 16:34:17"
+  "generated": "2026-10-12 21:39:05"
 }

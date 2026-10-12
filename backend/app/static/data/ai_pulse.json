@@ -1,64 +1,79 @@
 {
-  "generated": "2026-10-12 16:34:16",
+  "generated": "2026-10-12 21:39:05",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 1885,
+      "likes": 1919,
       "downloads": 115763
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1286,
+      "likes": 1307,
       "downloads": 46070
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "task": "text-to-image",
-      "likes": 4062,
-      "downloads": 2188658
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 607,
+      "likes": 625,
       "downloads": 6787
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "task": "text-to-image",
+      "likes": 4089,
+      "downloads": 2188658
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 2074,
+      "likes": 2086,
       "downloads": 15064
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7414,
+      "likes": 7465,
       "downloads": 1719766
-    },
-    {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "task": "image-text-to-text",
-      "likes": 17557,
-      "downloads": 6895303
     },
     {
       "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "task": "text-generation",
-      "likes": 357,
+      "likes": 368,
       "downloads": 242329
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "task": "image-text-to-text",
+      "likes": 17572,
+      "downloads": 6895303
     }
   ],
   "papers": [
+    {
+      "title": "Mental-Models for Multi-Agent Systems",
+      "url": "https://huggingface.co/papers/2610.12453",
+      "upvotes": 1
+    },
+    {
+      "title": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
+      "url": "https://huggingface.co/papers/2610.12307",
+      "upvotes": 1
+    },
+    {
+      "title": "Clinician use of language models diverges from how the models are evaluated",
+      "url": "https://huggingface.co/papers/2610.11069",
+      "upvotes": 3
+    },
     {
       "title": "Video-Conditioned Generative Joint 2D-3D Hand Motion Recovery",
       "url": "https://huggingface.co/papers/2610.10512",
@@ -67,27 +82,12 @@
     {
       "title": "Few-Step Generation via Data-Space Iteration",
       "url": "https://huggingface.co/papers/2610.12102",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "GATOR: Generative and Agentic 3D Object Reconstruction From Casual Images",
       "url": "https://huggingface.co/papers/2610.11215",
       "upvotes": 1
-    },
-    {
-      "title": "Distributionally Robust Mixture-of-Experts Training",
-      "url": "https://huggingface.co/papers/2610.07207",
-      "upvotes": 4
-    },
-    {
-      "title": "One Model to Loop Them All: Elastic Latent Recurrence for Language Models",
-      "url": "https://huggingface.co/papers/2610.12582",
-      "upvotes": 1
-    },
-    {
-      "title": "The Life Cycle of a Massive Activation: Stochastic Birth, Weight-Decay-Driven Growth, and Competitive Consolidation",
-      "url": "https://huggingface.co/papers/2610.00423",
-      "upvotes": 2
     }
   ]
 }
