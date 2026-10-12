@@ -1,33 +1,17 @@
 {
-  "new_companies": [
-    "Aluminum Smelter Company of Nigeria (ALSCON)",
-    "Euracare",
-    "Nigeria Labour Congress",
-    "Nigeria Union of Teachers"
-  ],
+  "new_companies": [],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "EFCC arraigns ALSCON, Russian director on N582.4 million money laundering charges - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNY1B1bnpKdzBBMF95aHBLSHRIdVlUZHUyOEhhdUlWZmFhdExzOVVHLTNuSnY4ZjNaWms4ZUNUZ016QnFSYnFkWEhRREpIM2g4aGdKWDBtdkFwQm1PTFNsQjhnWnFjWFI0b2hJSWRPcFhWbXVlaEE1ckhldmJjUFFSdXZxbzl0X2JaX0VnRU1DZ08yRGxtSVFNY29pZVlFQnFxaG9aclZVekJfa29mSkVxZnFNazROQWVlVGZIdVRHaFctejNJS1pLZzVpRGJTMWM1U2pN?oc=5",
-      "risk": 85.0
-    },
-    {
-      "title": "EFCC arraigns firm over money laundering - Punch Newspapers",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtaTdqcnh1eThmWGxjOUxnUkpYTml3SEVsOXhSbF8zNDRyNWkxU0VVWUJXNXZXSTFPUzAzTWEwYnYzd21mcEdnSFZtcnhJNFpfMVdmYWRtblktbWVuT0p3bXFKeEkwSS1wRXNtV2lB?oc=5",
-      "risk": 70.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 4,
+    "new_companies": 0,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 2
+    "new_high_risk": 0
   },
-  "generated": "2026-10-12 21:39:02"
+  "generated": "2026-10-12 23:36:09"
 }

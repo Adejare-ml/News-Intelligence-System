@@ -1,15 +1,6 @@
 {
   "movers": [
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
-      "recent_avg": 40.0,
-      "previous_avg": 75.0,
-      "delta": -35.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 42.5,
@@ -55,13 +46,31 @@
       "previous_mentions": 1
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 32.7,
+      "previous_avg": 47.5,
+      "delta": -14.8,
+      "recent_mentions": 11,
+      "previous_mentions": 2
+    },
+    {
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "recent_avg": 32.5,
+      "previous_avg": 45.0,
+      "delta": -12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "recent_avg": 20.0,
-      "previous_avg": 32.5,
-      "delta": -12.5,
-      "recent_mentions": 3,
-      "previous_mentions": 4
+      "previous_avg": 30.0,
+      "delta": -10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
     },
     {
       "key": "akwa ibom state government",
@@ -73,15 +82,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 26.8,
-      "previous_avg": 19.5,
-      "delta": 7.3,
-      "recent_mentions": 11,
-      "previous_mentions": 11
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 26.9,
@@ -91,13 +91,13 @@
       "previous_mentions": 31
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 32.7,
-      "previous_avg": 38.3,
-      "delta": -5.6,
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 26.8,
+      "previous_avg": 20.5,
+      "delta": 6.3,
       "recent_mentions": 11,
-      "previous_mentions": 3
+      "previous_mentions": 10
     },
     {
       "key": "federal airports authority of",
@@ -163,15 +163,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "recent_avg": 20.0,
-      "previous_avg": 20.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "recent_avg": 20.0,
@@ -179,8 +170,17 @@
       "delta": 0.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "ishaku",
+      "label": "Ishaku",
+      "recent_avg": 80.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-12 21:39:07"
+  "generated": "2026-10-12 23:36:14"
 }

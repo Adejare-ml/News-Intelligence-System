@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2466,
+      "total": 2467,
       "published": 1411,
-      "filtered": 1055,
+      "filtered": 1056,
       "accept_rate": 57,
       "avg_risk": 28.8,
       "engines": {
@@ -16,9 +16,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1646,
+      "total": 1649,
       "published": 747,
-      "filtered": 899,
+      "filtered": 902,
       "accept_rate": 45,
       "avg_risk": 31.1,
       "engines": {
@@ -30,9 +30,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 877,
+      "total": 878,
       "published": 372,
-      "filtered": 505,
+      "filtered": 506,
       "accept_rate": 42,
       "avg_risk": 26.7,
       "engines": {
@@ -44,15 +44,15 @@
     },
     {
       "source": "The Punch",
-      "total": 547,
-      "published": 309,
+      "total": 549,
+      "published": 311,
       "filtered": 238,
-      "accept_rate": 56,
+      "accept_rate": 57,
       "avg_risk": 32.5,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 199
+        "ollama": 201
       },
       "last_seen": "2026-10-11"
     },
@@ -127,22 +127,22 @@
     },
     {
       "source": "leadership",
-      "total": 171,
+      "total": 172,
       "published": 49,
-      "filtered": 122,
-      "accept_rate": 29,
+      "filtered": 123,
+      "accept_rate": 28,
       "avg_risk": 23.6,
       "engines": {
         "unknown": 35,
         "ollama": 14
       },
-      "last_seen": "2026-10-11"
+      "last_seen": "2026-10-12"
     },
     {
       "source": "dailypost",
-      "total": 160,
+      "total": 162,
       "published": 43,
-      "filtered": 117,
+      "filtered": 119,
       "accept_rate": 27,
       "avg_risk": 24.4,
       "engines": {
@@ -220,9 +220,9 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 59,
+      "total": 60,
       "published": 15,
-      "filtered": 44,
+      "filtered": 45,
       "accept_rate": 25,
       "avg_risk": 28.5,
       "engines": {
@@ -359,15 +359,15 @@
     },
     {
       "source": "guardian",
-      "total": 23,
+      "total": 24,
       "published": 1,
-      "filtered": 22,
+      "filtered": 23,
       "accept_rate": 4,
       "avg_risk": 10.0,
       "engines": {
         "ollama": 1
       },
-      "last_seen": "2026-10-11"
+      "last_seen": "2026-10-12"
     },
     {
       "source": "Voice of Nigeria",
@@ -2073,5 +2073,5 @@
       "last_seen": "2026-10-02"
     }
   ],
-  "generated": "2026-10-12 21:39:07"
+  "generated": "2026-10-12 23:36:14"
 }
