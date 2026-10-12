@@ -1,23 +1,26 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Abuja Continental",
+    "Trade Union Congress"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "SERAP sues CBN over failure to account for $6.23m in \u2018missing\u2019 election funds, \u20a61.63trn in other public funds - The Eagle Online",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWGo2STIxSUI3TjZnbWh0dThyaVVja0ZlejdQaFZZdDJ4X2t1bU52VW5BY3djTWZQN25TZDFqSXFQNEstVUwwUFBvMW9KbV90YWQzQURMZFk4UVVKc3VTR0twT1FBbF9PeFgyR2FQOE15c0M0M3kyUEhYU041LUVtN2M0RjduUFRWVzlwWUpDQVBMQk1JRFMtNFRuUzJaNWw4S2c3NnlkTHpxYmc4MkJFUGZDMzJGTm9Ua2dVam1naEdiVDFNSWdIbU02TEpGamsySnRVMERfR3E1RGh2?oc=5",
+      "title": "SERAP sues CBN over $6.23m election funds, N1.63tn audit queries - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaU90YTdmYmg0c3I5TE9aVC1fSEUweklVUl9PMUdOT2Zfaktldzhna0Raal9YVXgzQ21aOXk1X3ZmY2p4VnhOcmxOTnR1dVc4NlMzdWJHYVZUS3VtY19WaHZzU1BMaDhCc1g4OXVONHRvcmhma3FXX1ZsWVltRnptSGctVjR4dTQtLTF3?oc=5",
       "risk": 75.0
     }
   ],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 2,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 1
   },
-  "generated": "2026-10-11 20:54:27"
+  "generated": "2026-10-12 02:16:25"
 }

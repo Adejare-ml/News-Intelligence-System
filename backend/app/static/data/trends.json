@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 161,
-  "previous_articles": 176,
+  "recent_articles": 155,
+  "previous_articles": 179,
   "rising": [
     {
       "term": "petrol",
@@ -12,26 +12,20 @@
     {
       "term": "premium",
       "recent": 55,
-      "previous": 45,
-      "change": 10
+      "previous": 44,
+      "change": 11
     },
     {
       "term": "premium times",
       "recent": 55,
-      "previous": 45,
-      "change": 10
+      "previous": 44,
+      "change": 11
     },
     {
       "term": "times",
       "recent": 55,
-      "previous": 45,
-      "change": 10
-    },
-    {
-      "term": "lagos",
-      "recent": 15,
-      "previous": 5,
-      "change": 10
+      "previous": 44,
+      "change": 11
     },
     {
       "term": "discount",
@@ -46,30 +40,42 @@
       "change": 8
     },
     {
-      "term": "punchng",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
-    },
-    {
-      "term": "punchng com",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
-    },
-    {
       "term": "eagle",
       "recent": 6,
       "previous": 0,
       "change": 6
+    },
+    {
+      "term": "eagle online",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
+    {
+      "term": "online",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
+    {
+      "term": "petrol discount",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
       "term": "guardian",
-      "recent": 34,
+      "recent": 35,
       "previous": 55,
-      "change": -21
+      "change": -20
+    },
+    {
+      "term": "com",
+      "recent": 7,
+      "previous": 17,
+      "change": -10
     },
     {
       "term": "nigeria\u2019s",
@@ -78,10 +84,10 @@
       "change": -7
     },
     {
-      "term": "court",
-      "recent": 14,
-      "previous": 20,
-      "change": -6
+      "term": "opens",
+      "recent": 1,
+      "previous": 8,
+      "change": -7
     },
     {
       "term": "theeagleonline",
@@ -96,51 +102,45 @@
       "change": -6
     },
     {
-      "term": "opens",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
-      "term": "security",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
-      "term": "revive",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "targets",
-      "recent": 3,
-      "previous": 7,
-      "change": -4
-    },
-    {
       "term": "appoints",
-      "recent": 2,
-      "previous": 6,
-      "change": -4
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "bank",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "punchng",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "punchng com",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 120,
-      "previous": 113
-    },
-    {
-      "category": "Company",
-      "recent": 21,
-      "previous": 31
+      "recent": 113,
+      "previous": 117
     },
     {
       "category": "Legal",
+      "recent": 22,
+      "previous": 28
+    },
+    {
+      "category": "Company",
       "recent": 19,
-      "previous": 29
+      "previous": 31
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-11 20:54:29"
+  "generated": "2026-10-12 02:16:28"
 }

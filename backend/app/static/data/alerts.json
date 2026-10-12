@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-10-12",
+      "title": "SERAP sues CBN over $6.23m election funds, N1.63tn audit queries - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaU90YTdmYmg0c3I5TE9aVC1fSEUweklVUl9PMUdOT2Zfaktldzhna0Raal9YVXgzQ21aOXk1X3ZmY2p4VnhOcmxOTnR1dVc4NlMzdWJHYVZUS3VtY19WaHZzU1BMaDhCc1g4OXVONHRvcmhma3FXX1ZsWVltRnptSGctVjR4dTQtLTF3?oc=5",
+      "source": "Punch Newspapers",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Central Bank of Nigeria",
+        "Socio-Economic Rights and Accountability Project"
+      ]
+    },
+    {
       "date": "2026-10-11",
       "title": "SERAP sues CBN over $6.23m election funds, N1.63tn others - Punch Newspapers",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTWd1cHJfVGpzN0tJZ3FhREFjS0RqczhpWnhYMzZlS20xeElENUJmYXQ1ZDBiWTlxZ216cEd3MjVvbEVrU0x4Qy11SC1WQktBU1NYUUJES1V6MXBsWWstdlhpT2FaLWRFZTVWbGxmMTJlM0p4WHRoMjhHclRoZHlkbUhB?oc=5",
@@ -507,5 +519,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-11 20:54:31"
+  "generated": "2026-10-12 02:16:34"
 }

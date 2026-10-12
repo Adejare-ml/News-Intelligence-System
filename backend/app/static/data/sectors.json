@@ -77,6 +77,14 @@
       }
     },
     {
+      "industry": "Legal/NGO",
+      "companies": 1,
+      "mentions": 9,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Financial Services",
       "companies": 3,
       "mentions": 8,
@@ -100,14 +108,6 @@
       "mentions": 8,
       "risk": {
         "Critical": 1
-      }
-    },
-    {
-      "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 8,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -282,11 +282,27 @@
       }
     },
     {
+      "industry": "Hospitality",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Investment/Development Finance",
       "companies": 1,
       "mentions": 2,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Labor Union",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -451,23 +467,7 @@
       }
     },
     {
-      "industry": "Hospitality",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Industrial Infrastructure",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Labor Union",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -603,5 +603,5 @@
       }
     }
   ],
-  "generated": "2026-10-11 20:54:31"
+  "generated": "2026-10-12 02:16:34"
 }
