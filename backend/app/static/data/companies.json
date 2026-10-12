@@ -7177,9 +7177,9 @@
   },
   {
     "Company": "Bolt",
-    "Mention Count": 6,
-    "Last Seen": "2026-09-16 17:30",
-    "Industry": "Ride-hailing",
+    "Mention Count": 7,
+    "Last Seen": "2026-10-12 16:28",
+    "Industry": "Transportation/Ride-hailing",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7601,9 +7601,9 @@
   },
   {
     "Company": "InDrive",
-    "Mention Count": 2,
-    "Last Seen": "2026-09-23 14:11",
-    "Industry": "Telecoms",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-12 16:28",
+    "Industry": "Transportation/Ride-hailing",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7882,7 +7882,7 @@
   {
     "Company": "Socio-Economic Rights and Accountability Project",
     "Mention Count": 9,
-    "Last Seen": "2026-10-12 02:13",
+    "Last Seen": "2026-10-12 2:13",
     "Industry": "Legal/NGO",
     "Risk Level": "High",
     "First Seen": "2026-09-14 11:01"
@@ -8193,10 +8193,10 @@
   },
   {
     "Company": "TotalEnergies",
-    "Mention Count": 4,
-    "Last Seen": "2026-09-24 12:32",
+    "Mention Count": 5,
+    "Last Seen": "2026-10-12 16:29",
     "Industry": "Oil & Gas",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": "2026-09-19 11:48"
   },
   {
@@ -8998,5 +8998,29 @@
     "Industry": "Labor Union",
     "Risk Level": "Low",
     "First Seen": "2026-10-12 02:13"
+  },
+  {
+    "Company": "Institute of Chartered Secretaries and Administrators of Nigeria",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-12 16:29",
+    "Industry": "Professional Services",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-12 16:29"
+  },
+  {
+    "Company": "Berkshire",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-12 16:30",
+    "Industry": "Finance",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-12 16:30"
+  },
+  {
+    "Company": "Ibom Air",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-12 16:32",
+    "Industry": "Aviation",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-12 16:32"
   }
 ]

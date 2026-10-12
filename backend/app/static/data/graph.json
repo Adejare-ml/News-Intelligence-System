@@ -133,8 +133,104 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0ba0cb08c8cb",
+      "label": "Nigerian Army",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ef6dbf96f94e",
+      "label": "Ondo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ad5f19190fb7",
+      "label": "Nigeria Social Insurance Trust Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c89820f522",
+      "label": "Nigerian Navy",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2ce95174205c",
+      "label": "National Agency for Food and Drug Administration and Control (NAFDAC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0b2ac17f47f4",
+      "label": "Lagos State Waste Management Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f2e2861f01ca",
+      "label": "Ministry of Defence",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fd53c33dbbd6",
+      "label": "Lagos State Environmental Protection Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7e48c62c27f0",
+      "label": "AUATON",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "36304c0b90e8",
+      "label": "Nigeria Immigration Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d781121cea1c",
+      "label": "Kwara State Ministry of Health",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,111 +241,33 @@
       "risk": "Low"
     },
     {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "type": "agency",
+      "id": "e8c816b2230d",
+      "label": "Adeyemi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
+      "id": "e153c1875584",
+      "label": "Dave Umahi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "701a11e9aed2",
-      "label": "Ministry of Finance",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d9e529ce1f10",
-      "label": "National Nutrition Intervention Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9f778a9a1d4e",
-      "label": "SERAP",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bf682efac4e",
-      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f20adb0751c7",
-      "label": "National Sugar Development Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ef8ecd1eaec4",
-      "label": "Lagos State House of Assembly",
-      "type": "agency",
+      "id": "8cecc5e1e226",
+      "label": "Ogunwuyi",
+      "type": "person",
       "risk": "Low"
     },
     {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -283,6 +301,12 @@
       "risk": "Low"
     },
     {
+      "id": "701a11e9aed2",
+      "label": "Ministry of Finance",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "22efb00940fe",
       "label": "Uche Nnaji",
       "type": "person",
@@ -304,6 +328,12 @@
       "id": "ebe2d81e3981",
       "label": "Not Specified",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -429,42 +459,6 @@
     {
       "id": "23d8905a6cbb",
       "label": "Federal Ministry of Works",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e153c1875584",
-      "label": "Dave Umahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9f0af401d6d0",
-      "label": "Suleiman Kum",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7442313a4501",
-      "label": "West African Examinations Council",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0eb499263319",
-      "label": "Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "143e0ecdcc8f",
-      "label": "Olumide Akinpelumi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "e729c75bc972",
-      "label": "EVA Professionals",
       "type": "company",
       "risk": "Low"
     },
@@ -625,9 +619,15 @@
       "risk": "Medium"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
+      "id": "c31b444adb68",
+      "label": "Unspecified Firm",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -679,8 +679,20 @@
       "risk": "Low"
     },
     {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "de44b55175fc",
       "label": "Zamfara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
       "type": "agency",
       "risk": "Low"
     },
@@ -695,27 +707,27 @@
       "label": "Hitech Construction Company",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "9e83fbd49a6c",
-      "label": "ActionAid Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a2f42bfa75e2",
-      "label": "Women's Rights Groups",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "78a1b64c4878",
+      "from": "e8c816b2230d",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as None"
+    },
+    {
+      "id": "cc40b609644c",
+      "from": "e153c1875584",
+      "to": "0c2be969618b",
+      "label": "Appointed as Minister of Works"
+    },
+    {
+      "id": "504ad74ec27a",
+      "from": "8cecc5e1e226",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Chief of Staff"
+    },
     {
       "id": "63dfe1afb291",
       "from": "f121c0e97820",
@@ -849,24 +861,6 @@
       "label": "Appointed as Minister"
     },
     {
-      "id": "fcaea2c202a9",
-      "from": "9f0af401d6d0",
-      "to": "7442313a4501",
-      "label": "Appointed as Nigeria Office Head"
-    },
-    {
-      "id": "bafaa84feaf3",
-      "from": "0eb499263319",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "7ec06ced63ec",
-      "from": "143e0ecdcc8f",
-      "to": "e729c75bc972",
-      "label": "Appointed as Managing Partner"
-    },
-    {
       "id": "990674302105",
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
@@ -963,6 +957,24 @@
       "label": "PSC: 85.8%"
     },
     {
+      "id": "1a52b80b0b5c",
+      "from": "c31b444adb68",
+      "to": "ef6dbf96f94e",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "a294d70a03c5",
+      "from": "334c4a4c42fd",
+      "to": "f2e2861f01ca",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "2e41a1d9c382",
       "from": "334c4a4c42fd",
       "to": "a99d3740770f",
@@ -1050,24 +1062,6 @@
       "id": "7b5b5c2926f5",
       "from": "4001ece73e38",
       "to": "23d8905a6cbb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "5a207bb7ae7a",
-      "from": "a2f42bfa75e2",
-      "to": "9e83fbd49a6c",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "28911e9fe8a3",
-      "from": "334c4a4c42fd",
-      "to": "beb91054dc85",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

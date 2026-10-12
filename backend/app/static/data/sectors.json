@@ -14,21 +14,21 @@
     {
       "industry": "Oil & Gas",
       "companies": 26,
-      "mentions": 158,
+      "mentions": 159,
       "risk": {
-        "Low": 20,
+        "Low": 19,
         "Critical": 1,
         "High": 2,
-        "Medium": 3
+        "Medium": 4
       }
     },
     {
       "industry": "Telecoms",
-      "companies": 6,
-      "mentions": 34,
+      "companies": 5,
+      "mentions": 32,
       "risk": {
         "Medium": 1,
-        "Low": 5
+        "Low": 4
       }
     },
     {
@@ -42,11 +42,11 @@
     },
     {
       "industry": "Aviation",
-      "companies": 4,
-      "mentions": 16,
+      "companies": 5,
+      "mentions": 17,
       "risk": {
         "Medium": 3,
-        "Low": 1
+        "Low": 2
       }
     },
     {
@@ -74,6 +74,14 @@
       "risk": {
         "Low": 2,
         "Medium": 2
+      }
+    },
+    {
+      "industry": "Transportation/Ride-hailing",
+      "companies": 2,
+      "mentions": 10,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -158,14 +166,6 @@
       "mentions": 6,
       "risk": {
         "Medium": 2
-      }
-    },
-    {
-      "industry": "Ride-hailing",
-      "companies": 1,
-      "mentions": 6,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -314,6 +314,14 @@
       }
     },
     {
+      "industry": "Professional Services",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Real Estate",
       "companies": 2,
       "mentions": 2,
@@ -420,6 +428,14 @@
     },
     {
       "industry": "Credit Rating",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Finance",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -547,14 +563,6 @@
       }
     },
     {
-      "industry": "Professional Services",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Professional Training and Certification",
       "companies": 1,
       "mentions": 1,
@@ -603,5 +611,5 @@
       }
     }
   ],
-  "generated": "2026-10-12 02:16:34"
+  "generated": "2026-10-12 16:34:21"
 }

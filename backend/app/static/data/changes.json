@@ -1,26 +1,34 @@
 {
   "new_companies": [
-    "Abuja Continental",
-    "Trade Union Congress"
+    "Berkshire",
+    "Ibom Air",
+    "Institute of Chartered Secretaries and Administrators of Nigeria"
   ],
-  "new_people": [],
+  "new_people": [
+    "Ogunwuyi"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "SERAP sues CBN over $6.23m election funds, N1.63tn audit queries - Punch Newspapers",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaU90YTdmYmg0c3I5TE9aVC1fSEUweklVUl9PMUdOT2Zfaktldzhna0Raal9YVXgzQ21aOXk1X3ZmY2p4VnhOcmxOTnR1dVc4NlMzdWJHYVZUS3VtY19WaHZzU1BMaDhCc1g4OXVONHRvcmhma3FXX1ZsWVltRnptSGctVjR4dTQtLTF3?oc=5",
+      "title": "$1b released to Ministry for arms procurement \u2013 Buratai - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeDlYbFgtaGxmM29lWjI4X2xtYnk1NmowUHRqTGRKb3VaOVl1dmVWUUJvcElQTkU3V2xrU18zc25tNVpPX3Nza3ltaHdaWDN3Q0hyVndxcmV6MnYyUUVBckRUUnlKR1I3c2ZJNmN0QWh6NWxNeFEyR2p1ajE2NWZjM19heWU?oc=5",
       "risk": 75.0
+    },
+    {
+      "title": "BREAKING: Ex-Nigerian Navy Accounts Director Wanted By EFCC Over AllegedN2bn Fraud Seen Moving Freely In Kaduna",
+      "url": "https://www.latestnigeriannews.com/p/428726/breaking-exnigerian-navy-accounts-director-wanted-by-efcc-over-allegedn2bn-fraud.html",
+      "risk": 70.0
     }
   ],
   "counts": {
-    "new_companies": 2,
-    "new_people": 0,
+    "new_companies": 3,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 2
   },
-  "generated": "2026-10-12 02:16:25"
+  "generated": "2026-10-12 16:34:14"
 }
