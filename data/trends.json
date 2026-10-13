@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 166,
-  "previous_articles": 183,
+  "recent_articles": 177,
+  "previous_articles": 179,
   "rising": [
     {
       "term": "premium",
-      "recent": 69,
-      "previous": 46,
-      "change": 23
+      "recent": 72,
+      "previous": 48,
+      "change": 24
     },
     {
       "term": "premium times",
-      "recent": 69,
-      "previous": 46,
-      "change": 23
+      "recent": 72,
+      "previous": 48,
+      "change": 24
     },
     {
       "term": "times",
-      "recent": 69,
-      "previous": 46,
-      "change": 23
+      "recent": 72,
+      "previous": 48,
+      "change": 24
     },
     {
       "term": "petrol",
@@ -34,77 +34,47 @@
       "change": 10
     },
     {
-      "term": "eagle",
-      "recent": 6,
-      "previous": 0,
+      "term": "two",
+      "recent": 8,
+      "previous": 1,
+      "change": 7
+    },
+    {
+      "term": "newspapers",
+      "recent": 25,
+      "previous": 19,
       "change": 6
     },
     {
-      "term": "eagle online",
-      "recent": 6,
-      "previous": 0,
+      "term": "punch",
+      "recent": 25,
+      "previous": 19,
       "change": 6
     },
     {
-      "term": "online",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "unveils",
-      "recent": 6,
-      "previous": 0,
+      "term": "punch newspapers",
+      "recent": 25,
+      "previous": 19,
       "change": 6
     },
     {
       "term": "efcc",
-      "recent": 9,
-      "previous": 4,
-      "change": 5
+      "recent": 11,
+      "previous": 5,
+      "change": 6
     }
   ],
   "falling": [
     {
       "term": "com",
       "recent": 0,
-      "previous": 23,
-      "change": -23
-    },
-    {
-      "term": "guardian",
-      "recent": 36,
-      "previous": 47,
-      "change": -11
-    },
-    {
-      "term": "nnpc",
-      "recent": 11,
-      "previous": 21,
-      "change": -10
+      "previous": 22,
+      "change": -22
     },
     {
       "term": "lagos",
-      "recent": 7,
+      "recent": 8,
       "previous": 16,
-      "change": -9
-    },
-    {
-      "term": "theeagleonline",
-      "recent": 0,
-      "previous": 9,
-      "change": -9
-    },
-    {
-      "term": "theeagleonline com",
-      "recent": 0,
-      "previous": 9,
-      "change": -9
-    },
-    {
-      "term": "project",
-      "recent": 1,
-      "previous": 9,
       "change": -8
     },
     {
@@ -120,27 +90,57 @@
       "change": -8
     },
     {
+      "term": "theeagleonline",
+      "recent": 0,
+      "previous": 8,
+      "change": -8
+    },
+    {
+      "term": "theeagleonline com",
+      "recent": 0,
+      "previous": 8,
+      "change": -8
+    },
+    {
+      "term": "guardian",
+      "recent": 38,
+      "previous": 45,
+      "change": -7
+    },
+    {
+      "term": "project",
+      "recent": 2,
+      "previous": 9,
+      "change": -7
+    },
+    {
       "term": "osun",
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "bank",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 120,
-      "previous": 126
+      "recent": 129,
+      "previous": 123
     },
     {
       "category": "Legal",
-      "recent": 27,
-      "previous": 21
+      "recent": 28,
+      "previous": 24
     },
     {
       "category": "Company",
-      "recent": 19,
-      "previous": 32
+      "recent": 20,
+      "previous": 28
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-13 14:53:59"
+  "generated": "2026-10-13 19:50:19"
 }

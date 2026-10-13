@@ -1,6 +1,30 @@
 {
   "alerts": [
     {
+      "date": "2026-10-13",
+      "title": "Alleged N109bn Fraud: Court to rule on admissibility of former accountant general Idris\u2019 statements - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPT0dRTHFvM0EzWk9kQjE1Um1jSGMwNk9rdzZsX3U5Wkd5QlpGNUp5dmRLRWdXbE5OTlNsWk5RTEp6VkRZd3gwMXF6aGkzMVY4bi1Ed1VKU2tVMHdadVRON3J0T0hiZ0tRZGxDdklsMk9NU2tCZXV2dGk2VkgzeWt1TzZwQUpPZEpGM1pEMVFyc2x3cnhCMnpoQmw5OHhVbkI1LVZFVFJfcGhPY1dDNWRUWElBTTZ0THZrbWxYSnI5YjBxTnJuaWFkOWRSY2dDajlvSGo2aU03bzhNNlU3cUdJTHc5Vlg1QlA5MXc?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Office of the Accountant General of the Federation",
+        "Ahmed Idris"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "title": "EFCC arraigns firm over money laundering",
+      "url": "https://punchng.com/efcc-arraigns-firm-over-money-laundering/",
+      "source": "The Punch",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Aluminium Smelter Company of Nigeria (ALSCON) Plc",
+        "Economic and Financial Crimes Commission (EFCC)"
+      ]
+    },
+    {
       "date": "2026-10-12",
       "title": "EFCC arraigns ALSCON, Russian director on N582.4 million money laundering charges - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNY1B1bnpKdzBBMF95aHBLSHRIdVlUZHUyOEhhdUlWZmFhdExzOVVHLTNuSnY4ZjNaWms4ZUNUZ016QnFSYnFkWEhRREpIM2g4aGdKWDBtdkFwQm1PTFNsQjhnWnFjWFI0b2hJSWRPcFhWbXVlaEE1ckhldmJjUFFSdXZxbzl0X2JaX0VnRU1DZ08yRGxtSVFNY29pZVlFQnFxaG9aclZVekJfa29mSkVxZnFNazROQWVlVGZIdVRHaFctejNJS1pLZzVpRGJTMWM1U2pN?oc=5",
@@ -576,5 +600,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-13 14:54:01"
+  "generated": "2026-10-13 19:50:21"
 }

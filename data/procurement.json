@@ -1788,5 +1788,35 @@
     "Date": "2026-10-13",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Yobe State Government",
+    "Amount": "N100 Billion",
+    "Project": "Reimbursement for airport project/expenditures",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-13",
+    "Amount Value": 100000000000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "\u20a615 Trillion",
+    "Project": "Lagos-Calabar Coastal Highway",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-13",
+    "Amount Value": 15000000000000.0,
+    "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Lagos-Calabar Coastal Highway",
+    "Source": "naijanews",
+    "Date": "2026-10-13",
+    "Amount Value": null,
+    "Amount Currency": null
   }
 ]
