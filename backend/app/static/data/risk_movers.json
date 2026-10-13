@@ -37,21 +37,12 @@
       "previous_mentions": 3
     },
     {
-      "key": "taraba state government",
-      "label": "Taraba State Government",
-      "recent_avg": 80.0,
-      "previous_avg": 65.0,
-      "delta": 15.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 32.7,
+      "recent_avg": 33.8,
       "previous_avg": 47.5,
-      "delta": -14.8,
-      "recent_mentions": 11,
+      "delta": -13.7,
+      "recent_mentions": 12,
       "previous_mentions": 2
     },
     {
@@ -82,6 +73,24 @@
       "previous_mentions": 2
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 28.0,
+      "previous_avg": 20.5,
+      "delta": 7.5,
+      "recent_mentions": 10,
+      "previous_mentions": 10
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 27.5,
+      "previous_avg": 20.0,
+      "delta": 7.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 26.9,
@@ -89,15 +98,6 @@
       "delta": -6.6,
       "recent_mentions": 16,
       "previous_mentions": 31
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 26.8,
-      "previous_avg": 20.5,
-      "delta": 6.3,
-      "recent_mentions": 11,
-      "previous_mentions": 10
     },
     {
       "key": "federal airports authority of",
@@ -109,6 +109,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 20.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "recent_avg": 12.5,
@@ -116,6 +125,15 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 2
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 23.8,
+      "previous_avg": 20.0,
+      "delta": 3.8,
+      "recent_mentions": 4,
+      "previous_mentions": 4
     },
     {
       "key": "lagos state waste management authority",
@@ -145,24 +163,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 27.5,
-      "previous_avg": 26.7,
-      "delta": 0.8,
-      "recent_mentions": 2,
-      "previous_mentions": 3
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 22.0,
-      "previous_avg": 21.7,
-      "delta": 0.3,
-      "recent_mentions": 5,
-      "previous_mentions": 3
-    },
-    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "recent_avg": 20.0,
@@ -172,15 +172,15 @@
       "previous_mentions": 1
     },
     {
-      "key": "ishaku",
-      "label": "Ishaku",
-      "recent_avg": 80.0,
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "recent_avg": 56.7,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-12 23:36:14"
+  "generated": "2026-10-13 03:29:56"
 }

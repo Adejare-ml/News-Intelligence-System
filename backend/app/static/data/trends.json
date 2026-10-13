@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 167,
-  "previous_articles": 180,
+  "recent_articles": 164,
+  "previous_articles": 181,
   "rising": [
     {
       "term": "premium",
       "recent": 63,
-      "previous": 41,
-      "change": 22
+      "previous": 42,
+      "change": 21
     },
     {
       "term": "premium times",
       "recent": 63,
-      "previous": 41,
-      "change": 22
+      "previous": 42,
+      "change": 21
     },
     {
       "term": "times",
       "recent": 63,
-      "previous": 41,
-      "change": 22
+      "previous": 42,
+      "change": 21
     },
     {
       "term": "petrol",
@@ -35,14 +35,20 @@
     },
     {
       "term": "inec",
-      "recent": 10,
+      "recent": 11,
       "previous": 2,
-      "change": 8
+      "change": 9
     },
     {
       "term": "efcc",
       "recent": 10,
       "previous": 3,
+      "change": 7
+    },
+    {
+      "term": "two",
+      "recent": 7,
+      "previous": 0,
       "change": 7
     },
     {
@@ -53,12 +59,6 @@
     },
     {
       "term": "eagle online",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "online",
       "recent": 6,
       "previous": 0,
       "change": 6
@@ -102,12 +102,6 @@
       "change": -8
     },
     {
-      "term": "nigeria\u2019s",
-      "recent": 4,
-      "previous": 11,
-      "change": -7
-    },
-    {
       "term": "theeagleonline",
       "recent": 1,
       "previous": 8,
@@ -124,6 +118,12 @@
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "partner",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
     }
   ],
   "categories": [
@@ -135,12 +135,12 @@
     {
       "category": "Legal",
       "recent": 29,
-      "previous": 21
+      "previous": 20
     },
     {
       "category": "Company",
-      "recent": 20,
-      "previous": 30
+      "recent": 17,
+      "previous": 32
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-12 23:36:12"
+  "generated": "2026-10-13 03:29:52"
 }

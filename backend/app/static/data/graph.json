@@ -121,6 +121,36 @@
       "risk": "Medium"
     },
     {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6c302b827a55",
+      "label": "Government of the United States",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9b5f79697bc2",
+      "label": "Federal Ministry of Power",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "43b28be95418",
+      "label": "Borno State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -205,39 +235,15 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "2ce95174205c",
       "label": "National Agency for Food and Drug Administration and Control (NAFDAC)",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0b2ac17f47f4",
-      "label": "Lagos State Waste Management Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f2e2861f01ca",
-      "label": "Ministry of Defence",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fd53c33dbbd6",
-      "label": "Lagos State Environmental Protection Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7e48c62c27f0",
-      "label": "AUATON",
-      "type": "agency",
+      "id": "ac849d0315b2",
+      "label": "Joseph Tegbe",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -385,12 +391,6 @@
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "40ce4ff30275",
       "label": "Godwin Emefiele",
       "type": "person",
@@ -453,18 +453,6 @@
     {
       "id": "37a6259cc0c1",
       "label": "null",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "292e5aa14acd",
-      "label": "David Umahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
       "type": "company",
       "risk": "Low"
     },
@@ -631,6 +619,12 @@
       "risk": "Low"
     },
     {
+      "id": "f2e2861f01ca",
+      "label": "Ministry of Defence",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
@@ -703,19 +697,25 @@
       "risk": "Low"
     },
     {
-      "id": "c15a6abe6f6b",
-      "label": "Hitech Construction",
-      "type": "company",
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4001ece73e38",
-      "label": "Hitech Construction Company",
+      "id": "c15a6abe6f6b",
+      "label": "Hitech Construction",
       "type": "company",
       "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "015e5b99f1cc",
+      "from": "ac849d0315b2",
+      "to": "9b5f79697bc2",
+      "label": "Appointed as Minister of Power"
+    },
     {
       "id": "78a1b64c4878",
       "from": "e8c816b2230d",
@@ -861,12 +861,6 @@
       "label": "Appointed as null"
     },
     {
-      "id": "b268c9e64d5a",
-      "from": "292e5aa14acd",
-      "to": "23d8905a6cbb",
-      "label": "Appointed as Minister of Works"
-    },
-    {
       "id": "990674302105",
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
@@ -961,6 +955,12 @@
       "from": "da10009b9b53",
       "to": "194a3caf5ef0",
       "label": "PSC: 85.8%"
+    },
+    {
+      "id": "8fd0bb17da70",
+      "from": "334c4a4c42fd",
+      "to": "bf69cb1ec5ea",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
@@ -1061,12 +1061,6 @@
     {
       "id": "472eb2e43ea2",
       "from": "c15a6abe6f6b",
-      "to": "23d8905a6cbb",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7b5b5c2926f5",
-      "from": "4001ece73e38",
       "to": "23d8905a6cbb",
       "label": "Contract Awardee"
     }

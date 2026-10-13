@@ -163,7 +163,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 19,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-07",
@@ -191,8 +191,8 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 12,
-          "avg_risk": 31.7,
+          "mentions": 13,
+          "avg_risk": 32.7,
           "max_risk": 75
         }
       ]
@@ -274,7 +274,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 13,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-14",
@@ -299,6 +299,12 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1029,6 +1035,37 @@
       ]
     },
     {
+      "key": "government of the united states",
+      "label": "Government of the United States",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "lagos state waste management authority",
       "label": "Lagos State Waste Management Authority",
       "total_mentions": 4,
@@ -1189,31 +1226,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "government of the united states",
-      "label": "Government of the United States",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -1777,6 +1789,19 @@
       ]
     },
     {
+      "key": "borno state government",
+      "label": "Borno State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "dangote cement",
       "label": "Dangote Cement",
       "total_mentions": 2,
@@ -1881,6 +1906,25 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federal ministry of power",
+      "label": "Federal Ministry of Power",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         },
         {
           "week": "2026-10-05",
@@ -2793,6 +2837,19 @@
       ]
     },
     {
+      "key": "african democratic congress",
+      "label": "African Democratic Congress",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "african diaspora network",
       "label": "African Diaspora Network",
       "total_mentions": 1,
@@ -3062,19 +3119,6 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "borno state government",
-      "label": "Borno State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -3621,19 +3665,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "federal ministry of power",
-      "label": "Federal Ministry of Power",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -4262,6 +4293,19 @@
       ]
     },
     {
+      "key": "joseph tegbe",
+      "label": "Joseph Tegbe",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "juhel",
       "label": "Juhel Nigeria Limited",
       "total_mentions": 1,
@@ -4767,33 +4811,7 @@
           "max_risk": 85
         }
       ]
-    },
-    {
-      "key": "mutual benefits",
-      "label": "Mutual Benefits",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "mu azu",
-      "label": "Mu\u2019azu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-12 23:36:14"
+  "generated": "2026-10-13 03:29:56"
 }

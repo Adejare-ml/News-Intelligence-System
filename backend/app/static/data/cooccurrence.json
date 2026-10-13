@@ -62,6 +62,14 @@
       "label": "Federal Government of Nigeria"
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria"
+    },
+    {
+      "key": "government of the united states",
+      "label": "Government of the United States"
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives"
     },
@@ -292,6 +300,11 @@
       "weight": 2
     },
     {
+      "a": "government of",
+      "b": "government of the united states",
+      "weight": 2
+    },
+    {
       "a": "house of representatives",
       "b": "independent national electoral commission",
       "weight": 2
@@ -332,5 +345,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-12 23:36:14"
+  "generated": "2026-10-13 03:29:56"
 }
