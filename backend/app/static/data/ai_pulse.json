@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-13 14:53:59",
+  "generated": "2026-10-13 19:50:18",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2053,
+      "likes": 2088,
       "downloads": 124930
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1407,
+      "likes": 1478,
       "downloads": 54039
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 683,
+      "likes": 697,
       "downloads": 9665
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4176,
+      "likes": 4192,
       "downloads": 2247929
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7581,
+      "likes": 7610,
       "downloads": 1724548
     },
     {
-      "id": "Cloudflare/clef",
-      "url": "https://huggingface.co/Cloudflare/clef",
+      "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 2131,
-      "downloads": 17173
+      "likes": 446,
+      "downloads": 630
     },
     {
       "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "task": "text-generation",
-      "likes": 398,
+      "likes": 408,
       "downloads": 269829
     },
     {
-      "id": "LiquidAI/d1-3B",
-      "url": "https://huggingface.co/LiquidAI/d1-3B",
+      "id": "Cloudflare/clef",
+      "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 366,
-      "downloads": 13190
+      "likes": 2138,
+      "downloads": 17173
     }
   ],
   "papers": [
     {
-      "title": "Initialization Improves LLM-Driven Discovery",
-      "url": "https://huggingface.co/papers/2610.00707",
-      "upvotes": 3
-    },
-    {
-      "title": "Branching On-Policy Distillation",
-      "url": "https://huggingface.co/papers/2610.13481",
-      "upvotes": 3
-    },
-    {
-      "title": "CrossTimeEdit: A Decade-Spanning Cross-View Dataset and Reward-Guided Editing for Historical Street-View Generation",
-      "url": "https://huggingface.co/papers/2609.36616",
-      "upvotes": 20
-    },
-    {
-      "title": "VIS-Ground: Video Interactive Storytelling with Contextual Grounding",
-      "url": "https://huggingface.co/papers/2610.09326",
-      "upvotes": 64
-    },
-    {
-      "title": "SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code",
-      "url": "https://huggingface.co/papers/2610.09116",
+      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+      "url": "https://huggingface.co/papers/2610.12099",
       "upvotes": 1
     },
     {
-      "title": "Learning More by Training Less: Uncertainty-Guided Progressive Contraction for Efficient Reasoning Post-Training",
-      "url": "https://huggingface.co/papers/2610.12933",
-      "upvotes": 5
+      "title": "Visual Grounding Safety in Vision-Language Models",
+      "url": "https://huggingface.co/papers/2610.05637",
+      "upvotes": 2
+    },
+    {
+      "title": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
+      "url": "https://huggingface.co/papers/2610.02740",
+      "upvotes": 3
+    },
+    {
+      "title": "Evaluating LLM Creativity through Long-Tail Performance",
+      "url": "https://huggingface.co/papers/2610.12998",
+      "upvotes": 3
+    },
+    {
+      "title": "Same Output, Different Gold: Measuring How Reference Choice Moves a Multilingual Benchmark Score",
+      "url": "https://huggingface.co/papers/2610.03825",
+      "upvotes": 2
+    },
+    {
+      "title": "Initialization Improves LLM-Driven Discovery",
+      "url": "https://huggingface.co/papers/2610.00707",
+      "upvotes": 4
     }
   ]
 }

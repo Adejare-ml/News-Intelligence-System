@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 27,
-      "mentions": 162,
+      "companies": 28,
+      "mentions": 168,
       "risk": {
-        "Low": 20,
+        "Low": 21,
         "Critical": 1,
         "High": 2,
         "Medium": 4
@@ -532,6 +532,14 @@
       }
     },
     {
+      "industry": "Mining/Metals",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Development",
       "companies": 1,
       "mentions": 1,
@@ -620,5 +628,5 @@
       }
     }
   ],
-  "generated": "2026-10-13 14:54:01"
+  "generated": "2026-10-13 19:50:21"
 }

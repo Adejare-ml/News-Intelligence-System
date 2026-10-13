@@ -2,10 +2,10 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 42,
-      "undisclosed": 29,
+      "contracts": 45,
+      "undisclosed": 30,
       "totals": {
-        "NGN": 2018696000000.0,
+        "NGN": 17118696000000.0,
         "GBP": 1492000000.0,
         "USD": 31230000000.0
       }
@@ -626,11 +626,19 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 105,
-      "undisclosed": 65,
+      "contracts": 107,
+      "undisclosed": 66,
       "totals": {
-        "NGN": 5598647590000.0,
+        "NGN": 20598647590000.0,
         "USD": 41797140000.0
+      }
+    },
+    {
+      "name": "Yobe State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 100000000000.0
       }
     },
     {
@@ -1060,5 +1068,5 @@
       }
     }
   ],
-  "generated": "2026-10-13 14:54:01"
+  "generated": "2026-10-13 19:50:21"
 }

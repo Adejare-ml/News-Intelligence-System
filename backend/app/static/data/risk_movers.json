@@ -12,10 +12,10 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 46.9,
-      "previous_avg": 16.1,
-      "delta": 30.8,
-      "recent_mentions": 8,
+      "recent_avg": 42.9,
+      "previous_avg": 22.2,
+      "delta": 20.7,
+      "recent_mentions": 7,
       "previous_mentions": 9
     },
     {
@@ -28,40 +28,40 @@
       "previous_mentions": 1
     },
     {
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "recent_avg": 25.0,
+      "previous_avg": 45.0,
+      "delta": -20.0,
+      "recent_mentions": 3,
+      "previous_mentions": 1
+    },
+    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 48.9,
-      "previous_avg": 32.5,
-      "delta": 16.4,
+      "previous_avg": 34.0,
+      "delta": 14.9,
       "recent_mentions": 9,
-      "previous_mentions": 4
-    },
-    {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "recent_avg": 32.5,
-      "previous_avg": 45.0,
-      "delta": -12.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "previous_mentions": 5
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 23.4,
-      "previous_avg": 34.8,
-      "delta": -11.4,
-      "recent_mentions": 16,
-      "previous_mentions": 32
+      "previous_avg": 35.4,
+      "delta": -12.0,
+      "recent_mentions": 19,
+      "previous_mentions": 26
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 30.7,
-      "previous_avg": 20.0,
-      "delta": 10.7,
+      "recent_avg": 31.8,
+      "previous_avg": 20.9,
+      "delta": 10.9,
       "recent_mentions": 14,
-      "previous_mentions": 10
+      "previous_mentions": 11
     },
     {
       "key": "ogun state government",
@@ -73,22 +73,22 @@
       "previous_mentions": 5
     },
     {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "recent_avg": 10.0,
-      "previous_avg": 20.0,
-      "delta": -10.0,
-      "recent_mentions": 3,
-      "previous_mentions": 2
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "recent_avg": 40.0,
+      "previous_avg": 30.0,
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 31.5,
-      "previous_avg": 41.0,
-      "delta": -9.5,
-      "recent_mentions": 10,
-      "previous_mentions": 5
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 38.3,
+      "previous_avg": 47.5,
+      "delta": -9.2,
+      "recent_mentions": 3,
+      "previous_mentions": 2
     },
     {
       "key": "lagos state government",
@@ -136,13 +136,22 @@
       "previous_mentions": 2
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 42.5,
-      "previous_avg": 47.5,
-      "delta": -5.0,
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 15.0,
+      "delta": 5.0,
       "recent_mentions": 2,
-      "previous_mentions": 2
+      "previous_mentions": 4
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 32.8,
+      "previous_avg": 37.5,
+      "delta": -4.7,
+      "recent_mentions": 9,
+      "previous_mentions": 6
     },
     {
       "key": "national information technology development agency",
@@ -154,6 +163,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "recent_avg": 63.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "recent_avg": 56.7,
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "serap",
-      "label": "SERAP",
-      "recent_avg": 52.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "ministry of finance",
-      "label": "Ministry of Finance",
-      "recent_avg": 47.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-13 14:54:01"
+  "generated": "2026-10-13 19:50:21"
 }
