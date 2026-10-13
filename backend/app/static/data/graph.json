@@ -67,16 +67,16 @@
       "risk": "Low"
     },
     {
-      "id": "8e617358cf86",
-      "label": "NBA",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "01ccce37119e",
       "label": "Dangote Petroleum Refinery",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "8e617358cf86",
+      "label": "NBA",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "f174114ad69e",
@@ -121,6 +121,42 @@
       "risk": "Medium"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "631735ae7f74",
+      "label": "Nigeria Police Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
       "type": "agency",
@@ -145,8 +181,26 @@
       "risk": "Low"
     },
     {
+      "id": "5cdf8c992852",
+      "label": "Nigerian Air Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0cfa03e45d4d",
+      "label": "Kwara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "43b28be95418",
       "label": "Borno State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "85e2509b016d",
+      "label": "Nigeria\u2019s greening education institute",
       "type": "agency",
       "risk": "Low"
     },
@@ -159,18 +213,6 @@
     {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,50 +241,44 @@
       "risk": "Low"
     },
     {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "type": "agency",
+      "id": "292e5aa14acd",
+      "label": "David Umahi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "ad5f19190fb7",
-      "label": "Nigeria Social Insurance Trust Fund",
-      "type": "agency",
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
+      "id": "6ff5775e8631",
+      "label": "Oyebanji",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "e4c89820f522",
-      "label": "Nigerian Navy",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e29340b992f3",
-      "label": "Federal Ministry of Finance",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2ce95174205c",
-      "label": "National Agency for Food and Drug Administration and Control (NAFDAC)",
-      "type": "agency",
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
       "id": "ac849d0315b2",
       "label": "Joseph Tegbe",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f0e495aa7259",
+      "label": "Uwem Ite",
       "type": "person",
       "risk": "Low"
     },
@@ -271,6 +307,12 @@
       "risk": "Low"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "ad921d604863",
       "label": "Unknown",
       "type": "person",
@@ -279,12 +321,6 @@
     {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
       "type": "person",
       "risk": "Low"
     },
@@ -417,42 +453,6 @@
     {
       "id": "08e90c29b19a",
       "label": "Accord Party",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5476ecdab0f0",
-      "label": "Ishaku",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "737f70b3bdb8",
-      "label": "Taraba State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "dce44e278bb0",
-      "label": "Adeleke",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b27f282d6347",
-      "label": "Osun State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "3816ee965955",
-      "label": "Abba Kyari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "37a6259cc0c1",
-      "label": "null",
       "type": "company",
       "risk": "Low"
     },
@@ -679,6 +679,12 @@
       "risk": "Low"
     },
     {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
       "type": "agency",
@@ -689,32 +695,38 @@
       "label": "Zamfara State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c15a6abe6f6b",
-      "label": "Hitech Construction",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "b268c9e64d5a",
+      "from": "292e5aa14acd",
+      "to": "23d8905a6cbb",
+      "label": "Appointed as Minister of Works"
+    },
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "b6c8fff20d98",
+      "from": "6ff5775e8631",
+      "to": "a70f31de512b",
+      "label": "Appointed as Governor"
+    },
     {
       "id": "015e5b99f1cc",
       "from": "ac849d0315b2",
       "to": "9b5f79697bc2",
       "label": "Appointed as Minister of Power"
+    },
+    {
+      "id": "52e1c9210472",
+      "from": "f0e495aa7259",
+      "to": "85e2509b016d",
+      "label": "Appointed as Chairman"
     },
     {
       "id": "78a1b64c4878",
@@ -745,12 +757,6 @@
       "from": "f121c0e97820",
       "to": "3a4a88456e84",
       "label": "Appointed as Governor of Oyo State"
-    },
-    {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
     },
     {
       "id": "3807715b4180",
@@ -841,24 +847,6 @@
       "from": "bf509af25091",
       "to": "08e90c29b19a",
       "label": "Appointed as Presidential Candidate"
-    },
-    {
-      "id": "d926e4f83416",
-      "from": "5476ecdab0f0",
-      "to": "737f70b3bdb8",
-      "label": "Appointed as Former Governor"
-    },
-    {
-      "id": "6bda361957ec",
-      "from": "dce44e278bb0",
-      "to": "b27f282d6347",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "d791a2d2f55a",
-      "from": "3816ee965955",
-      "to": "37a6259cc0c1",
-      "label": "Appointed as null"
     },
     {
       "id": "990674302105",
@@ -957,15 +945,21 @@
       "label": "PSC: 85.8%"
     },
     {
-      "id": "8fd0bb17da70",
+      "id": "396ad1b3346f",
       "from": "334c4a4c42fd",
-      "to": "bf69cb1ec5ea",
+      "to": "0cfa03e45d4d",
       "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "8fd0bb17da70",
+      "from": "334c4a4c42fd",
+      "to": "bf69cb1ec5ea",
       "label": "Contract Awardee"
     },
     {
@@ -1050,18 +1044,6 @@
       "id": "c5d665250caa",
       "from": "334c4a4c42fd",
       "to": "de44b55175fc",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "df311b7e567c",
-      "from": "334c4a4c42fd",
-      "to": "ebba2aef82e9",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "472eb2e43ea2",
-      "from": "c15a6abe6f6b",
-      "to": "23d8905a6cbb",
       "label": "Contract Awardee"
     }
   ]

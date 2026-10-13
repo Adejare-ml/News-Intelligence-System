@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 956,
-      "mentions": 1619,
+      "companies": 955,
+      "mentions": 1618,
       "risk": {
-        "Low": 844,
+        "Low": 843,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 26,
-      "mentions": 159,
+      "companies": 27,
+      "mentions": 162,
       "risk": {
-        "Low": 19,
+        "Low": 20,
         "Critical": 1,
         "High": 2,
         "Medium": 4
@@ -50,15 +50,6 @@
       }
     },
     {
-      "industry": "Politics",
-      "companies": 5,
-      "mentions": 12,
-      "risk": {
-        "Low": 2,
-        "Medium": 3
-      }
-    },
-    {
       "industry": "Conglomerate",
       "companies": 1,
       "mentions": 10,
@@ -74,6 +65,24 @@
         "High": 2,
         "Medium": 3,
         "Low": 1
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 2,
+      "mentions": 10,
+      "risk": {
+        "High": 1,
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 4,
+      "mentions": 10,
+      "risk": {
+        "Low": 2,
+        "Medium": 2
       }
     },
     {
@@ -137,19 +146,20 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 4,
+      "mentions": 7,
+      "risk": {
+        "Medium": 3,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Healthcare",
       "companies": 6,
       "mentions": 7,
       "risk": {
         "Low": 6
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 1,
-      "mentions": 7,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -177,12 +187,11 @@
       }
     },
     {
-      "industry": "Fintech",
-      "companies": 3,
+      "industry": "Labor Union",
+      "companies": 5,
       "mentions": 5,
       "risk": {
-        "Medium": 2,
-        "Low": 1
+        "Low": 5
       }
     },
     {
@@ -215,14 +224,6 @@
       "mentions": 4,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Labor Union",
-      "companies": 4,
-      "mentions": 4,
-      "risk": {
-        "Low": 4
       }
     },
     {
@@ -619,5 +620,5 @@
       }
     }
   ],
-  "generated": "2026-10-13 03:29:56"
+  "generated": "2026-10-13 14:54:01"
 }

@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 41,
-      "undisclosed": 28,
+      "contracts": 42,
+      "undisclosed": 29,
       "totals": {
         "NGN": 2018696000000.0,
         "GBP": 1492000000.0,
@@ -435,6 +435,12 @@
       }
     },
     {
+      "name": "Kwara State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Lagos State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -620,8 +626,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 103,
-      "undisclosed": 63,
+      "contracts": 105,
+      "undisclosed": 65,
       "totals": {
         "NGN": 5598647590000.0,
         "USD": 41797140000.0
@@ -1054,5 +1060,5 @@
       }
     }
   ],
-  "generated": "2026-10-13 03:29:56"
+  "generated": "2026-10-13 14:54:01"
 }
