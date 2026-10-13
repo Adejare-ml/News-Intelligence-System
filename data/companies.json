@@ -1273,10 +1273,10 @@
   },
   {
     "Company": "eTranzact",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-18 08:55",
-    "Industry": "General",
-    "Risk Level": "Low",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-13 14:51",
+    "Industry": "Fintech",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -6553,8 +6553,8 @@
   },
   {
     "Company": "Dangote Petroleum Refinery",
-    "Mention Count": 13,
-    "Last Seen": "2026-09-27 1:14",
+    "Mention Count": 14,
+    "Last Seen": "2026-10-13 14:52",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 22,
-    "Last Seen": "2026-10-06 2:49",
+    "Mention Count": 23,
+    "Last Seen": "2026-10-13 14:49",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -7377,9 +7377,9 @@
   },
   {
     "Company": "African Democratic Congress",
-    "Mention Count": 2,
-    "Last Seen": "2026-10-13 03:28",
-    "Industry": "Politics",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-13 14:47",
+    "Industry": "Political Party",
     "Risk Level": "Medium",
     "First Seen": ""
   },
@@ -9054,5 +9054,21 @@
     "Industry": "Labor Union",
     "Risk Level": "Low",
     "First Seen": "2026-10-12 21:35"
+  },
+  {
+    "Company": "Oriental Energy",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-13 14:50",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-13 14:50"
+  },
+  {
+    "Company": "National Union of Food, Beverage and Tobacco Employees",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-13 14:50",
+    "Industry": "Labor Union",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-13 14:50"
   }
 ]

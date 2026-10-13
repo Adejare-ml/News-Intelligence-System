@@ -1,19 +1,22 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "National Union of Food, Beverage and Tobacco Employees",
+    "Oriental Energy"
+  ],
   "new_people": [
-    "Joseph Tegbe"
+    "Uwem Ite"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 2,
     "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-13 03:29:49"
+  "generated": "2026-10-13 14:53:57"
 }

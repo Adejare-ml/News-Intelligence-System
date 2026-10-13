@@ -10,6 +10,10 @@
       "label": "African Action Congress"
     },
     {
+      "key": "african democratic congress",
+      "label": "African Democratic Congress"
+    },
+    {
       "key": "all progressives congress",
       "label": "All Progressives Congress"
     },
@@ -26,6 +30,10 @@
       "label": "Bill & Melinda Gates Foundation"
     },
     {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu"
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria"
     },
@@ -36,6 +44,10 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery"
+    },
+    {
+      "key": "david umahi",
+      "label": "David Umahi"
     },
     {
       "key": "diezani alison madueke",
@@ -235,6 +247,11 @@
       "weight": 2
     },
     {
+      "a": "african democratic congress",
+      "b": "independent national electoral commission",
+      "weight": 2
+    },
+    {
       "a": "all progressives congress",
       "b": "toyin abraham",
       "weight": 2
@@ -252,6 +269,11 @@
     {
       "a": "bill melinda gates foundation",
       "b": "mtn foundation",
+      "weight": 2
+    },
+    {
+      "a": "bola tinubu",
+      "b": "david umahi",
       "weight": 2
     },
     {
@@ -345,5 +367,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-13 03:29:56"
+  "generated": "2026-10-13 14:54:01"
 }
