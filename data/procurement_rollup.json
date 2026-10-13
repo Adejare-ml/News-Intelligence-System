@@ -275,6 +275,12 @@
       }
     },
     {
+      "name": "Independent National Electoral Commission",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "NIGCOMSAT",
       "contracts": 2,
       "undisclosed": 2,
@@ -413,12 +419,6 @@
       "totals": {
         "USD": 500000.0
       }
-    },
-    {
-      "name": "Independent National Electoral Commission",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
     },
     {
       "name": "Institute for Peace and Conflict Resolution",
@@ -620,8 +620,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 102,
-      "undisclosed": 62,
+      "contracts": 103,
+      "undisclosed": 63,
       "totals": {
         "NGN": 5598647590000.0,
         "USD": 41797140000.0
@@ -1054,5 +1054,5 @@
       }
     }
   ],
-  "generated": "2026-10-12 23:36:14"
+  "generated": "2026-10-13 03:29:56"
 }

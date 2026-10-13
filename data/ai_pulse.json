@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-12 23:36:12",
+  "generated": "2026-10-13 03:29:52",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 1930,
+      "likes": 1956,
       "downloads": 115763
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1314,
+      "likes": 1339,
       "downloads": 46070
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 631,
+      "likes": 643,
       "downloads": 6787
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4092,
+      "likes": 4108,
       "downloads": 2188658
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 2089,
+      "likes": 2098,
       "downloads": 15064
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7475,
+      "likes": 7498,
       "downloads": 1719766
     },
     {
       "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "task": "text-generation",
-      "likes": 369,
+      "likes": 378,
       "downloads": 242329
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 17575,
+      "likes": 17581,
       "downloads": 6895303
     }
   ],
   "papers": [
     {
-      "title": "Humanity's Sixth Sense: Benchmarking Intuitive Visual Reasoning in Multimodal Models",
-      "url": "https://huggingface.co/papers/2610.08966",
-      "upvotes": 14
+      "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+      "url": "https://huggingface.co/papers/2610.13166",
+      "upvotes": 21
     },
     {
-      "title": "Mental-Models for Multi-Agent Systems",
-      "url": "https://huggingface.co/papers/2610.12453",
-      "upvotes": 2
-    },
-    {
-      "title": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
-      "url": "https://huggingface.co/papers/2610.12307",
-      "upvotes": 1
-    },
-    {
-      "title": "Clinician use of language models diverges from how the models are evaluated",
-      "url": "https://huggingface.co/papers/2610.11069",
+      "title": "T3lescope: Arbitrary-Resolution High-Fidelity Generative Surface Reconstruction from Images",
+      "url": "https://huggingface.co/papers/2610.03308",
       "upvotes": 3
     },
     {
-      "title": "Video-Conditioned Generative Joint 2D-3D Hand Motion Recovery",
-      "url": "https://huggingface.co/papers/2610.10512",
-      "upvotes": 1
+      "title": "ARCS: Towards Precise Text-to-SQL via Structured Disambiguation",
+      "url": "https://huggingface.co/papers/2610.09396",
+      "upvotes": 2
     },
     {
-      "title": "Few-Step Generation via Data-Space Iteration",
-      "url": "https://huggingface.co/papers/2610.12102",
+      "title": "Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents",
+      "url": "https://huggingface.co/papers/2609.33304",
       "upvotes": 2
+    },
+    {
+      "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
+      "url": "https://huggingface.co/papers/2610.11765",
+      "upvotes": 6
+    },
+    {
+      "title": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+      "url": "https://huggingface.co/papers/2610.13832",
+      "upvotes": 7
     }
   ]
 }

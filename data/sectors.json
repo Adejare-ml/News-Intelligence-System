@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 957,
-      "mentions": 1620,
+      "companies": 956,
+      "mentions": 1619,
       "risk": {
-        "Low": 845,
+        "Low": 844,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -50,6 +50,15 @@
       }
     },
     {
+      "industry": "Politics",
+      "companies": 5,
+      "mentions": 12,
+      "risk": {
+        "Low": 2,
+        "Medium": 3
+      }
+    },
+    {
       "industry": "Conglomerate",
       "companies": 1,
       "mentions": 10,
@@ -65,15 +74,6 @@
         "High": 2,
         "Medium": 3,
         "Low": 1
-      }
-    },
-    {
-      "industry": "Politics",
-      "companies": 4,
-      "mentions": 10,
-      "risk": {
-        "Low": 2,
-        "Medium": 2
       }
     },
     {
@@ -619,5 +619,5 @@
       }
     }
   ],
-  "generated": "2026-10-12 23:36:14"
+  "generated": "2026-10-13 03:29:56"
 }
