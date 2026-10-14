@@ -259,6 +259,14 @@
       }
     },
     {
+      "industry": "Finance",
+      "companies": 2,
+      "mentions": 3,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Legal",
       "companies": 1,
       "mentions": 3,
@@ -437,14 +445,6 @@
     },
     {
       "industry": "Credit Rating",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Finance",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -652,5 +652,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 17:50:02"
+  "generated": "2026-10-14 20:34:49"
 }
