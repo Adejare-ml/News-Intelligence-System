@@ -13,10 +13,10 @@
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 42.9,
-      "previous_avg": 22.2,
-      "delta": 20.7,
+      "previous_avg": 22.9,
+      "delta": 20.0,
       "recent_mentions": 7,
-      "previous_mentions": 9
+      "previous_mentions": 7
     },
     {
       "key": "national assembly",
@@ -40,28 +40,28 @@
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 48.9,
-      "previous_avg": 34.0,
-      "delta": 14.9,
+      "previous_avg": 32.5,
+      "delta": 16.4,
       "recent_mentions": 9,
-      "previous_mentions": 5
+      "previous_mentions": 4
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 23.4,
-      "previous_avg": 35.4,
-      "delta": -12.0,
-      "recent_mentions": 19,
-      "previous_mentions": 26
+      "recent_avg": 22.6,
+      "previous_avg": 36.0,
+      "delta": -13.4,
+      "recent_mentions": 21,
+      "previous_mentions": 25
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 31.8,
-      "previous_avg": 20.9,
-      "delta": 10.9,
-      "recent_mentions": 14,
-      "previous_mentions": 11
+      "recent_avg": 32.7,
+      "previous_avg": 20.8,
+      "delta": 11.9,
+      "recent_mentions": 13,
+      "previous_mentions": 12
     },
     {
       "key": "ogun state government",
@@ -78,7 +78,7 @@
       "recent_avg": 40.0,
       "previous_avg": 30.0,
       "delta": 10.0,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 3
     },
     {
@@ -91,15 +91,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 26.7,
-      "previous_avg": 19.0,
-      "delta": 7.7,
-      "recent_mentions": 3,
-      "previous_mentions": 5
-    },
-    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "recent_avg": 27.5,
@@ -109,13 +100,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 25.0,
+      "previous_avg": 19.0,
+      "delta": 6.0,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "government of",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
+    },
+    {
+      "key": "serap",
+      "label": "SERAP",
+      "recent_avg": 52.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-13 19:50:21"
+  "generated": "2026-10-14 01:46:49"
 }

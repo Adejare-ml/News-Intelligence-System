@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 80,
+    "Mention Count": 81,
     "Last Seen": "2026-10-13 19:45",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
@@ -6553,8 +6553,8 @@
   },
   {
     "Company": "Dangote Petroleum Refinery",
-    "Mention Count": 16,
-    "Last Seen": "2026-10-13 19:47",
+    "Mention Count": 17,
+    "Last Seen": "2026-10-13 21:49",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -9086,5 +9086,13 @@
     "Industry": "Mining/Metals",
     "Risk Level": "High",
     "First Seen": "2026-10-13 19:47"
+  },
+  {
+    "Company": "Palm Oil Producers' Council",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-13 21:48",
+    "Industry": "Agriculture",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-13 21:48"
   }
 ]

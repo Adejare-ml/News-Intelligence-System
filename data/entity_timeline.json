@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 69,
+      "total_mentions": 71,
       "points": [
         {
           "week": "2026-09-14",
@@ -31,8 +31,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 22.5,
+          "mentions": 6,
+          "avg_risk": 20.0,
           "max_risk": 30
         }
       ]
@@ -212,7 +212,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 19,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-14",
@@ -240,8 +240,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 26.7,
+          "mentions": 4,
+          "avg_risk": 25.0,
           "max_risk": 40
         }
       ]
@@ -383,6 +383,31 @@
       ]
     },
     {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 37.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "total_mentions": 11,
@@ -404,31 +429,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 37.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
         }
       ]
     },
@@ -594,6 +594,31 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "total_mentions": 8,
@@ -658,31 +683,6 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -1271,6 +1271,31 @@
       ]
     },
     {
+      "key": "debt management office",
+      "label": "Debt Management Office",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "economic and financial crimes commission efcc",
       "label": "Economic and Financial Crimes Commission (EFCC)",
       "total_mentions": 3,
@@ -1664,6 +1689,19 @@
       ]
     },
     {
+      "key": "office of the national security adviser",
+      "label": "Office of the National Security Adviser",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "ogunwuyi",
       "label": "Ogunwuyi",
       "total_mentions": 3,
@@ -1989,25 +2027,6 @@
       ]
     },
     {
-      "key": "debt management office",
-      "label": "Debt Management Office",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "ebonyi state government",
       "label": "Ebonyi State Government",
       "total_mentions": 2,
@@ -2195,6 +2214,25 @@
           "mentions": 2,
           "avg_risk": 80.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "kano state government",
+      "label": "Kano State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2477,19 +2515,6 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "office of the national security adviser",
-      "label": "Office of the National Security Adviser",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
         }
       ]
     },
@@ -4135,6 +4160,19 @@
       ]
     },
     {
+      "key": "green climate fund",
+      "label": "Green Climate Fund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "heda",
       "label": "HEDA",
       "total_mentions": 1,
@@ -4538,19 +4576,6 @@
       ]
     },
     {
-      "key": "kano state government",
-      "label": "Kano State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "katsina state government",
       "label": "Katsina State Government",
       "total_mentions": 1,
@@ -4900,20 +4925,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "ministry of aviation",
-      "label": "Ministry of Aviation",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
     }
   ],
-  "generated": "2026-10-13 19:50:21"
+  "generated": "2026-10-14 01:46:49"
 }

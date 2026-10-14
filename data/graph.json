@@ -121,6 +121,24 @@
       "risk": "Medium"
     },
     {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "974789639094",
+      "label": "Debt Management Office",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6ec7b4566d36",
+      "label": "Office of the National Security Adviser",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -157,14 +175,20 @@
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
+      "id": "ac79f04a4e30",
+      "label": "Kano State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,30 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "6c302b827a55",
-      "label": "Government of the United States",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5cdf8c992852",
-      "label": "Nigerian Air Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0cfa03e45d4d",
-      "label": "Kwara State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "292e5aa14acd",
       "label": "David Umahi",
       "type": "person",
@@ -274,6 +274,12 @@
       "id": "ac849d0315b2",
       "label": "Joseph Tegbe",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9b5f79697bc2",
+      "label": "Federal Ministry of Power",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -599,6 +605,12 @@
       "label": "Dangote Cement Plc",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "0cfa03e45d4d",
+      "label": "Kwara State Government",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "ef6dbf96f94e",

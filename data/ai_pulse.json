@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-13 19:50:18",
+  "generated": "2026-10-14 01:46:41",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2088,
+      "likes": 2112,
       "downloads": 124930
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1478,
+      "likes": 1521,
       "downloads": 54039
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 697,
+      "likes": 710,
       "downloads": 9665
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4192,
+      "likes": 4207,
       "downloads": 2247929
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7610,
+      "likes": 7648,
       "downloads": 1724548
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 446,
+      "likes": 466,
       "downloads": 630
     },
     {
       "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "task": "text-generation",
-      "likes": 408,
+      "likes": 425,
       "downloads": 269829
     },
     {
       "id": "Cloudflare/clef",
       "url": "https://huggingface.co/Cloudflare/clef",
       "task": "image-text-to-text",
-      "likes": 2138,
+      "likes": 2144,
       "downloads": 17173
     }
   ],
   "papers": [
     {
-      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
-      "url": "https://huggingface.co/papers/2610.12099",
+      "title": "PhyProbe: Rethinking Physical Consistency Evaluation in Generated Videos",
+      "url": "https://huggingface.co/papers/2609.38377",
+      "upvotes": 0
+    },
+    {
+      "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+      "url": "https://huggingface.co/papers/2609.35291",
       "upvotes": 1
     },
     {
-      "title": "Visual Grounding Safety in Vision-Language Models",
-      "url": "https://huggingface.co/papers/2610.05637",
-      "upvotes": 2
-    },
-    {
-      "title": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
-      "url": "https://huggingface.co/papers/2610.02740",
+      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
+      "url": "https://huggingface.co/papers/2610.12417",
       "upvotes": 3
     },
     {
-      "title": "Evaluating LLM Creativity through Long-Tail Performance",
-      "url": "https://huggingface.co/papers/2610.12998",
-      "upvotes": 3
+      "title": "HyperThink: Text-to-Parameter Hypernetworks for Efficient Reasoning",
+      "url": "https://huggingface.co/papers/2610.03039",
+      "upvotes": 0
     },
     {
-      "title": "Same Output, Different Gold: Measuring How Reference Choice Moves a Multilingual Benchmark Score",
-      "url": "https://huggingface.co/papers/2610.03825",
-      "upvotes": 2
+      "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
+      "url": "https://huggingface.co/papers/2609.36642",
+      "upvotes": 25
     },
     {
-      "title": "Initialization Improves LLM-Driven Discovery",
-      "url": "https://huggingface.co/papers/2610.00707",
-      "upvotes": 4
+      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+      "url": "https://huggingface.co/papers/2610.12099",
+      "upvotes": 1
     }
   ]
 }

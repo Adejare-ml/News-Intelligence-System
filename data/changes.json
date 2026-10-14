@@ -1,34 +1,19 @@
 {
   "new_companies": [
-    "Aluminium Smelter Company of Nigeria (ALSCON) Plc",
-    "Pipeline Infrastructure Nigeria Limited"
+    "Palm Oil Producers' Council"
   ],
-  "new_people": [
-    "Ahmed Idris",
-    "Aliko Dangote"
-  ],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "Alleged N109bn Fraud: Court to rule on admissibility of former accountant general Idris\u2019 statements - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPT0dRTHFvM0EzWk9kQjE1Um1jSGMwNk9rdzZsX3U5Wkd5QlpGNUp5dmRLRWdXbE5OTlNsWk5RTEp6VkRZd3gwMXF6aGkzMVY4bi1Ed1VKU2tVMHdadVRON3J0T0hiZ0tRZGxDdklsMk9NU2tCZXV2dGk2VkgzeWt1TzZwQUpPZEpGM1pEMVFyc2x3cnhCMnpoQmw5OHhVbkI1LVZFVFJfcGhPY1dDNWRUWElBTTZ0THZrbWxYSnI5YjBxTnJuaWFkOWRSY2dDajlvSGo2aU03bzhNNlU3cUdJTHc5Vlg1QlA5MXc?oc=5",
-      "risk": 75.0
-    },
-    {
-      "title": "EFCC arraigns firm over money laundering",
-      "url": "https://punchng.com/efcc-arraigns-firm-over-money-laundering/",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 2,
-    "new_people": 2,
+    "new_companies": 1,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 2
+    "new_high_risk": 0
   },
-  "generated": "2026-10-13 19:50:17"
+  "generated": "2026-10-14 01:46:38"
 }
