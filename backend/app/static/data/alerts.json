@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-10-14",
+      "title": "2006 Corruption Report: EFCC reopens case, seeks to prosecute Atiku | - The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXp6SlBSa25WaWlFQUw3RHJXbDhxSng0eTY0SFFXSXpxZ195S3NScjk5MWdmZFpPcTRzdkN6RDktRnduVnZPcEptbTFDT2xaUURyYXkwWVNCd3o2MExoVXZQamhxQk81bF9MeGlLZTJNMGlRQ0RIQm5CWmFzQnk0czhObXFEZi1OU1VSOEJVOVJFWk1BMlU4Z0tCNGY?oc=5",
+      "source": "The Eagle Online",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "Atiku Abubakar"
+      ]
+    },
+    {
       "date": "2026-10-13",
       "title": "Alleged N109bn Fraud: Court to rule on admissibility of former accountant general Idris\u2019 statements - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPT0dRTHFvM0EzWk9kQjE1Um1jSGMwNk9rdzZsX3U5Wkd5QlpGNUp5dmRLRWdXbE5OTlNsWk5RTEp6VkRZd3gwMXF6aGkzMVY4bi1Ed1VKU2tVMHdadVRON3J0T0hiZ0tRZGxDdklsMk9NU2tCZXV2dGk2VkgzeWt1TzZwQUpPZEpGM1pEMVFyc2x3cnhCMnpoQmw5OHhVbkI1LVZFVFJfcGhPY1dDNWRUWElBTTZ0THZrbWxYSnI5YjBxTnJuaWFkOWRSY2dDajlvSGo2aU03bzhNNlU3cUdJTHc5Vlg1QlA5MXc?oc=5",
@@ -600,5 +612,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-14 17:50:02"
 }

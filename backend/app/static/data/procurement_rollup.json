@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 45,
-      "undisclosed": 30,
+      "contracts": 46,
+      "undisclosed": 31,
       "totals": {
         "NGN": 17118696000000.0,
         "GBP": 1492000000.0,
@@ -52,6 +52,14 @@
       }
     },
     {
+      "name": "Yobe State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 100500000000.0
+      }
+    },
+    {
       "name": "Rural Electrification Agency",
       "contracts": 1,
       "undisclosed": 0,
@@ -61,8 +69,8 @@
     },
     {
       "name": "Federal Ministry of Works",
-      "contracts": 6,
-      "undisclosed": 5,
+      "contracts": 7,
+      "undisclosed": 6,
       "totals": {
         "NGN": 41050000000.0
       }
@@ -181,6 +189,14 @@
       }
     },
     {
+      "name": "FCT Judicial Committee",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 866500000.0
+      }
+    },
+    {
       "name": "Kaduna State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -261,6 +277,12 @@
       "totals": {}
     },
     {
+      "name": "Abia State Government",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "Celtic",
       "contracts": 2,
       "undisclosed": 2,
@@ -308,12 +330,6 @@
       "name": "The Guardian Nigeria News",
       "contracts": 2,
       "undisclosed": 2,
-      "totals": {}
-    },
-    {
-      "name": "Abia State Government",
-      "contracts": 1,
-      "undisclosed": 1,
       "totals": {}
     },
     {
@@ -563,6 +579,12 @@
       "totals": {}
     },
     {
+      "name": "Nigerian National Petroleum Company (NNPC) / House of Representatives Committee Recommendation",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Nigerian Ports Authority",
       "contracts": 1,
       "undisclosed": 1,
@@ -626,10 +648,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 107,
-      "undisclosed": 66,
+      "contracts": 112,
+      "undisclosed": 69,
       "totals": {
-        "NGN": 20598647590000.0,
+        "NGN": 20700014090000.0,
         "USD": 41797140000.0
       }
     },
@@ -924,6 +946,12 @@
       }
     },
     {
+      "name": "Pipeline Infrastructure Nigeria Limited",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Plateau State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -1068,5 +1096,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-14 17:50:02"
 }

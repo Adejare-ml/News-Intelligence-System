@@ -1,6 +1,24 @@
 {
   "movers": [
     {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "recent_avg": 75.0,
+      "previous_avg": 20.0,
+      "delta": 55.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "david umahi",
+      "label": "David Umahi",
+      "recent_avg": 25.0,
+      "previous_avg": 65.0,
+      "delta": -40.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "recent_avg": 20.0,
@@ -10,67 +28,58 @@
       "previous_mentions": 2
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 20.0,
+      "previous_avg": 53.3,
+      "delta": -33.3,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 42.9,
-      "previous_avg": 22.9,
-      "delta": 20.0,
+      "previous_avg": 25.0,
+      "delta": 17.9,
       "recent_mentions": 7,
-      "previous_mentions": 7
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 30.0,
-      "previous_avg": 10.0,
-      "delta": 20.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "recent_avg": 25.0,
-      "previous_avg": 45.0,
-      "delta": -20.0,
-      "recent_mentions": 3,
-      "previous_mentions": 1
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 48.9,
-      "previous_avg": 32.5,
-      "delta": 16.4,
-      "recent_mentions": 9,
-      "previous_mentions": 4
+      "previous_mentions": 5
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 22.6,
-      "previous_avg": 36.0,
-      "delta": -13.4,
-      "recent_mentions": 21,
-      "previous_mentions": 25
+      "recent_avg": 23.3,
+      "previous_avg": 37.6,
+      "delta": -14.3,
+      "recent_mentions": 23,
+      "previous_mentions": 23
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 57.9,
+      "previous_avg": 43.8,
+      "delta": 14.1,
+      "recent_mentions": 12,
+      "previous_mentions": 4
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 30.0,
+      "previous_avg": 17.5,
+      "delta": 12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 32.7,
-      "previous_avg": 20.8,
-      "delta": 11.9,
-      "recent_mentions": 13,
-      "previous_mentions": 12
-    },
-    {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 30.0,
-      "delta": -10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 5
+      "recent_avg": 31.0,
+      "previous_avg": 18.9,
+      "delta": 12.1,
+      "recent_mentions": 15,
+      "previous_mentions": 9
     },
     {
       "key": "national agency for food and drug administration and control",
@@ -82,15 +91,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 38.3,
-      "previous_avg": 47.5,
-      "delta": -9.2,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "recent_avg": 27.5,
@@ -98,6 +98,42 @@
       "delta": 7.5,
       "recent_mentions": 2,
       "previous_mentions": 2
+    },
+    {
+      "key": "bureau of public procurement",
+      "label": "Bureau of Public Procurement",
+      "recent_avg": 27.5,
+      "previous_avg": 20.0,
+      "delta": 7.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 31.2,
+      "previous_avg": 38.6,
+      "delta": -7.4,
+      "recent_mentions": 8,
+      "previous_mentions": 7
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 26.7,
+      "previous_avg": 20.0,
+      "delta": 6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 1
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "recent_avg": 13.3,
+      "previous_avg": 20.0,
+      "delta": -6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 1
     },
     {
       "key": "lagos state government",
@@ -109,15 +145,6 @@
       "previous_mentions": 5
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 20.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 4
-    },
-    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "recent_avg": 12.5,
@@ -127,22 +154,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "recent_avg": 27.5,
+      "previous_avg": 32.5,
+      "delta": -5.0,
       "recent_mentions": 2,
-      "previous_mentions": 4
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 32.8,
-      "previous_avg": 37.5,
-      "delta": -4.7,
-      "recent_mentions": 9,
-      "previous_mentions": 6
+      "previous_mentions": 2
     },
     {
       "key": "national information technology development agency",
@@ -154,27 +172,9 @@
       "previous_mentions": 2
     },
     {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "recent_avg": 63.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 56.7,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "serap",
-      "label": "SERAP",
-      "recent_avg": 52.5,
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "recent_avg": 80.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-14 17:50:02"
 }

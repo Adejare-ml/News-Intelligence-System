@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 955,
-      "mentions": 1618,
+      "companies": 954,
+      "mentions": 1615,
       "risk": {
-        "Low": 843,
+        "Low": 842,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,13 +13,13 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 28,
-      "mentions": 170,
+      "companies": 31,
+      "mentions": 182,
       "risk": {
-        "Low": 21,
+        "Medium": 8,
+        "Low": 20,
         "Critical": 1,
-        "High": 2,
-        "Medium": 4
+        "High": 2
       }
     },
     {
@@ -33,10 +33,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 14,
-      "mentions": 22,
+      "companies": 15,
+      "mentions": 23,
       "risk": {
-        "Low": 11,
+        "Low": 12,
         "Medium": 3
       }
     },
@@ -47,6 +47,15 @@
       "risk": {
         "Medium": 3,
         "Low": 2
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 5,
+      "mentions": 11,
+      "risk": {
+        "Low": 2,
+        "Medium": 3
       }
     },
     {
@@ -74,15 +83,6 @@
       "risk": {
         "High": 1,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Politics",
-      "companies": 4,
-      "mentions": 10,
-      "risk": {
-        "Low": 2,
-        "Medium": 2
       }
     },
     {
@@ -120,6 +120,15 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 4,
+      "mentions": 8,
+      "risk": {
+        "Medium": 3,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Insurance",
       "companies": 7,
       "mentions": 8,
@@ -143,15 +152,6 @@
       "risk": {
         "Medium": 4,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 4,
-      "mentions": 7,
-      "risk": {
-        "Medium": 3,
-        "Low": 1
       }
     },
     {
@@ -224,6 +224,14 @@
       "mentions": 4,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Crypto Exchange",
+      "companies": 1,
+      "mentions": 4,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -508,6 +516,14 @@
       }
     },
     {
+      "industry": "Logistics/Energy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Manufacturing/Mining",
       "companies": 1,
       "mentions": 1,
@@ -549,6 +565,14 @@
     },
     {
       "industry": "Non-profit/NGO",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Oil & Gas/Industrial",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -628,5 +652,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-14 17:50:02"
 }
