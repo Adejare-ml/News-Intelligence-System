@@ -1,19 +1,67 @@
 {
   "new_companies": [
-    "Palm Oil Producers' Council"
+    "Allied Peoples Movement",
+    "Conoil",
+    "Dangote Consortium",
+    "KuCoin Nigeria Limited",
+    "Kuda",
+    "Soroman",
+    "Vaaris Energy"
   ],
-  "new_people": [],
-  "psc_added": [],
+  "new_people": [
+    "Bolaji Abdullahi",
+    "Nasir El-Rufai"
+  ],
+  "psc_added": [
+    {
+      "person": "Babs Ogundeyi",
+      "company": "Kuda"
+    },
+    {
+      "person": "Musty Mustapha",
+      "company": "Kuda"
+    },
+    {
+      "person": "Okunbor",
+      "company": "Pipeline Infrastructure Nigeria Limited"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "El-Rufai budgeted $600,000 to settle EFCC officials, investigator reveals | - The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQUIxcmNhMmI0SjdSeUZkN1JyWnl4T1EwOFFKTkp0bzE3Zk91c080M3FCLXRMUnRFQnpTYjRsVlBIVzhfX2Q3N1BrQXlJZlZVWC1kS051ZS10UUJJN05aYXhTZnFWeEZjSE9EOGdyQm1Bd3JVR3dCYnBDTU5qVTUtOVBUZDAzbnhILWpfeWFjZXpvclNkanpBY0x2bXJNcUNLRllr?oc=5",
+      "risk": 85.0
+    },
+    {
+      "title": "El-Rufai earmarked $600,000 for EFCC officials \u2013 Investigator - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNa0JyVmJENXRySWRwMFo1SWQzOXNvX3ZKNS1IRk5ubHZwbVlxc0JCVDZ2Z3VsZXVhdmx6SFRFTE4ybmR2eG1VV21FWmhkdDVpM1pFQlNYNnBhS1EtUUNjZnJaclg5VXgwNkE0UXZBcjc1bXZWdzQ3aTBJcW1tUmt3VW9KUTJRTlNyR04wUnpuZGRyVVc4T1ZLbG1WZ1ZXTXRpNUZBWHRodzhBMTgxc1F4SktfUzI?oc=5",
+      "risk": 85.0
+    },
+    {
+      "title": "2006 Corruption Report: EFCC reopens case, seeks to prosecute Atiku | - The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXp6SlBSa25WaWlFQUw3RHJXbDhxSng0eTY0SFFXSXpxZ195S3NScjk5MWdmZFpPcTRzdkN6RDktRnduVnZPcEptbTFDT2xaUURyYXkwWVNCd3o2MExoVXZQamhxQk81bF9MeGlLZTJNMGlRQ0RIQm5CWmFzQnk0czhObXFEZi1OU1VSOEJVOVJFWk1BMlU4Z0tCNGY?oc=5",
+      "risk": 75.0
+    },
+    {
+      "title": "El-Rufai planned to stifle EFCC investigation with $600,000 bribe, witness tells court - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdmE0LUZPN0dQeUxvaUFZRkFsMW5wMUpPazkyV1BMYk1mV04xbGNNTmN1Z1JSSUo5aFYxdF94N1RmTnJ5aTRubXVhNHJXdHlwNTltQklZMzgtdG8yN3lZVVNnUEJ5alpJdUlqcVNQS3lsajI0dVYxQkdITUo1VlU5dFp2RS1SVmlkSm56ZHJHMHNMTUcyWXpaa3BPS09PN2ZhMDFPYzVfLWJhekxQVG1ZTHlubkl3WlhQOEFia1piZG1XQzBQdFpqXzNKOUlORmdiQTMycDZLWQ?oc=5",
+      "risk": 75.0
+    },
+    {
+      "title": "FCT judicial committee flouted procurement law, financial regulations in N866.5m contract awards - Audit report - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNaDV4UzRheER3dVpSbFpMb0U2WVVWM01XT1VOUkY0eTM0LXF0MmxNc1JyN2dfaFNSWlgxZEc3LWFpZ0x6ZVp6R2N2VmstTDR1T1lnM1JQWjI5UkhSYkpkek50cFQtTWN2VGllLUhhMGc5d3J0b1NXOXVHSnJ0eDNidkswel91eXYwcVpsaDVfM09MZUVYcVFzeUZrYVNwbVRSUjZHaDJpaXRHbUJlSzVwN1VDOVpwMUlfMFVzQlowcnBlRW9oNUtZUGc2RXZDSGZvOVdwM3hsMFlYS2hYUTR3Z3NkMDRYTU5XSmVUVVJJN2NaWXFNdG10dmd3?oc=5",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
-    "psc_added": 0,
+    "new_companies": 7,
+    "new_people": 2,
+    "psc_added": 3,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 5
   },
-  "generated": "2026-10-14 01:46:38"
+  "generated": "2026-10-14 17:49:42"
 }

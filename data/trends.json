@@ -1,49 +1,55 @@
 {
   "window_days": 7,
-  "recent_articles": 185,
-  "previous_articles": 173,
+  "recent_articles": 202,
+  "previous_articles": 171,
   "rising": [
     {
       "term": "premium",
       "recent": 73,
-      "previous": 49,
-      "change": 24
+      "previous": 53,
+      "change": 20
     },
     {
       "term": "premium times",
       "recent": 73,
-      "previous": 49,
-      "change": 24
+      "previous": 53,
+      "change": 20
     },
     {
       "term": "times",
       "recent": 73,
-      "previous": 49,
-      "change": 24
+      "previous": 53,
+      "change": 20
     },
     {
       "term": "newspapers",
-      "recent": 29,
-      "previous": 15,
-      "change": 14
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "punch",
-      "recent": 29,
-      "previous": 15,
-      "change": 14
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "punch newspapers",
-      "recent": 29,
-      "previous": 15,
-      "change": 14
+      "recent": 33,
+      "previous": 14,
+      "change": 19
     },
     {
       "term": "petrol",
-      "recent": 13,
+      "recent": 15,
       "previous": 0,
-      "change": 13
+      "change": 15
+    },
+    {
+      "term": "efcc",
+      "recent": 14,
+      "previous": 4,
+      "change": 10
     },
     {
       "term": "discount",
@@ -54,22 +60,22 @@
     {
       "term": "oil",
       "recent": 12,
-      "previous": 4,
-      "change": 8
-    },
-    {
-      "term": "efcc",
-      "recent": 11,
-      "previous": 4,
-      "change": 7
+      "previous": 3,
+      "change": 9
     }
   ],
   "falling": [
     {
       "term": "com",
       "recent": 0,
-      "previous": 21,
-      "change": -21
+      "previous": 17,
+      "change": -17
+    },
+    {
+      "term": "guardian",
+      "recent": 38,
+      "previous": 47,
+      "change": -9
     },
     {
       "term": "punchng",
@@ -84,27 +90,9 @@
       "change": -8
     },
     {
-      "term": "theeagleonline",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "theeagleonline com",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "guardian",
-      "recent": 39,
-      "previous": 46,
-      "change": -7
-    },
-    {
-      "term": "lagos",
-      "recent": 9,
-      "previous": 16,
+      "term": "court",
+      "recent": 10,
+      "previous": 17,
       "change": -7
     },
     {
@@ -114,40 +102,52 @@
       "change": -7
     },
     {
-      "term": "project",
-      "recent": 3,
-      "previous": 9,
+      "term": "lagos",
+      "recent": 10,
+      "previous": 16,
       "change": -6
     },
     {
-      "term": "bank",
+      "term": "partner",
       "recent": 0,
       "previous": 6,
       "change": -6
+    },
+    {
+      "term": "project",
+      "recent": 4,
+      "previous": 9,
+      "change": -5
+    },
+    {
+      "term": "accounts",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 135,
-      "previous": 118
-    },
-    {
-      "category": "Legal",
-      "recent": 28,
-      "previous": 23
+      "recent": 144,
+      "previous": 120
     },
     {
       "category": "Company",
-      "recent": 22,
+      "recent": 29,
       "previous": 28
+    },
+    {
+      "category": "Legal",
+      "recent": 29,
+      "previous": 20
     },
     {
       "category": "Other",
       "recent": 0,
-      "previous": 4
+      "previous": 3
     }
   ],
   "social": [],
-  "generated": "2026-10-14 01:46:42"
+  "generated": "2026-10-14 17:49:45"
 }

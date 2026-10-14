@@ -22,6 +22,10 @@
       "label": "AMNI"
     },
     {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar"
+    },
+    {
       "key": "bat",
       "label": "BAT Nigeria"
     },
@@ -98,6 +102,10 @@
       "label": "Ishaku"
     },
     {
+      "key": "kucoin",
+      "label": "KuCoin Nigeria Limited"
+    },
+    {
       "key": "lagos chamber of commerce and industry",
       "label": "Lagos Chamber of Commerce and Industry"
     },
@@ -120,6 +128,10 @@
     {
       "key": "mtn foundation",
       "label": "MTN Group Foundation"
+    },
+    {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai"
     },
     {
       "key": "national bureau of statistics",
@@ -160,6 +172,14 @@
     {
       "key": "oyo state government",
       "label": "Oyo State Government"
+    },
+    {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission, Nigeria"
+    },
+    {
+      "key": "securities and exchange commission sec",
+      "label": "Securities and Exchange Commission (SEC) Nigeria"
     },
     {
       "key": "serap",
@@ -262,6 +282,11 @@
       "weight": 2
     },
     {
+      "a": "atiku abubakar",
+      "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
       "a": "bat",
       "b": "customs service",
       "weight": 2
@@ -302,8 +327,18 @@
       "weight": 2
     },
     {
+      "a": "dangote refinery",
+      "b": "national petroleum company",
+      "weight": 2
+    },
+    {
       "a": "diezani alison madueke",
       "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
+      "a": "economic and financial crimes commission",
+      "b": "nasir el rufai",
       "weight": 2
     },
     {
@@ -357,6 +392,16 @@
       "weight": 2
     },
     {
+      "a": "kucoin",
+      "b": "securities and exchange commission",
+      "weight": 2
+    },
+    {
+      "a": "kucoin",
+      "b": "securities and exchange commission sec",
+      "weight": 2
+    },
+    {
       "a": "lagos state government",
       "b": "national bureau of statistics",
       "weight": 2
@@ -370,7 +415,12 @@
       "a": "national petroleum company",
       "b": "natural resource governance institute",
       "weight": 2
+    },
+    {
+      "a": "national petroleum company",
+      "b": "totalenergies",
+      "weight": 2
     }
   ],
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-14 17:50:02"
 }

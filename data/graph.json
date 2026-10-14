@@ -121,38 +121,14 @@
       "risk": "Medium"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "974789639094",
-      "label": "Debt Management Office",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6ec7b4566d36",
-      "label": "Office of the National Security Adviser",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "23cd33f022ff",
+      "label": "Benue State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,26 +139,8 @@
       "risk": "Low"
     },
     {
-      "id": "631735ae7f74",
-      "label": "Nigeria Police Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "b636c60fbd26",
       "label": "Senate of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ac79f04a4e30",
-      "label": "Kano State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,14 +151,32 @@
       "risk": "Low"
     },
     {
+      "id": "11383b8763cc",
+      "label": "Securities and Exchange Commission, Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7d0b46bbd4a7",
+      "label": "World Bank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "id": "02bcb5f5a7b4",
+      "label": "Jigawa State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,26 +187,32 @@
       "risk": "Low"
     },
     {
-      "id": "7f50eb5ca259",
-      "label": "Yobe State Government",
+      "id": "974789639094",
+      "label": "Debt Management Office",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
+      "id": "cc95e4811fd7",
+      "label": "Securities and Exchange Commission (SEC) Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
+      "id": "5a3e00bd4822",
+      "label": "Edo State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -241,15 +223,81 @@
       "risk": "Low"
     },
     {
+      "id": "6ec7b4566d36",
+      "label": "Office of the National Security Adviser",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "63a7eb164bda",
+      "label": "Federal Capital Territory (FCT) Judicial Committee",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1d1a995ea4fb",
+      "label": "African Continental Free Trade Area",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "292e5aa14acd",
       "label": "David Umahi",
       "type": "person",
       "risk": "Low"
     },
     {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
+      "id": "325a5c8a1ef5",
+      "label": "Atiku Abubakar",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ba85b91bf4e0",
+      "label": "Abbas",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "be252fefa816",
+      "label": "Nasir El-Rufai",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "df87bf11b5a1",
+      "label": "Taiwo Oyedele",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3adab9f78930",
+      "label": "Bolaji Abdullahi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b135be2e521d",
+      "label": "African Democratic Congress",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "974787534a67",
+      "label": "Osinbajo",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -319,12 +367,6 @@
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "e153c1875584",
       "label": "Dave Umahi",
       "type": "person",
@@ -373,12 +415,6 @@
       "risk": "Low"
     },
     {
-      "id": "df87bf11b5a1",
-      "label": "Taiwo Oyedele",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "701a11e9aed2",
       "label": "Ministry of Finance",
       "type": "company",
@@ -391,9 +427,21 @@
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "58c58351d674",
       "label": "Olayemi Cardoso",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -415,46 +463,34 @@
       "risk": "Low"
     },
     {
-      "id": "b41cdebed8df",
-      "label": "Anthony Kila",
-      "type": "person",
-      "risk": "Low"
+      "id": "992de97c5755",
+      "label": "Babs Ogundeyi",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "bf698d54d6c5",
-      "label": "Not stated",
+      "id": "a04fa9c8b7c4",
+      "label": "Kuda",
       "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
-      "id": "e54d28336fd1",
-      "label": "Abu Ammar",
-      "type": "person",
-      "risk": "Low"
+      "id": "1805dc0a136a",
+      "label": "Musty Mustapha",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "3713e106b87b",
-      "label": "Katsina State Hisbah Corps",
+      "id": "5cf2fccd8723",
+      "label": "Okunbor",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "9b5549bd0205",
+      "label": "Pipeline Infrastructure Nigeria Limited",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "a825104f1c91",
-      "label": "Eno",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0079fcb60236",
-      "label": "Oke",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "40ce4ff30275",
-      "label": "Godwin Emefiele",
-      "type": "person",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "539d727618e7",
@@ -571,40 +607,22 @@
       "risk": "Medium"
     },
     {
-      "id": "f6c44ca7989b",
-      "label": "Aigboje Aig-Imoukhuede",
-      "type": "psc",
-      "risk": "High"
+      "id": "d3177bcccf13",
+      "label": "Nigerian National Petroleum Company (NNPC) / House of Representatives Committee Recommendation",
+      "type": "agency",
+      "risk": "Low"
     },
     {
-      "id": "172469be05d6",
-      "label": "Access Holdings Plc",
-      "type": "company",
-      "risk": "Medium"
+      "id": "7f50eb5ca259",
+      "label": "Yobe State Government",
+      "type": "agency",
+      "risk": "Low"
     },
     {
-      "id": "8b4d6c678535",
-      "label": "Abdul Samad Rabiu",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "aa60e2a5d6c8",
-      "label": "BUA Foods Plc",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "da10009b9b53",
-      "label": "Alhaji Aliko Dangote",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "194a3caf5ef0",
-      "label": "Dangote Cement Plc",
-      "type": "company",
-      "risk": "Medium"
+      "id": "48ccc0bb95e7",
+      "label": "FCT Judicial Committee",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "0cfa03e45d4d",
@@ -659,30 +677,6 @@
       "label": "Plateau State Government",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "6945a7b7c902",
-      "label": "Google and Microsoft",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "059b05a09d95",
-      "label": "Ministry of Communications",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "68419b78e6b4",
-      "label": "Ministry of Aviation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "367f8f860c90",
-      "label": "Unnamed Chinese construction company",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -691,6 +685,42 @@
       "from": "292e5aa14acd",
       "to": "23d8905a6cbb",
       "label": "Appointed as Minister of Works"
+    },
+    {
+      "id": "9e2a94a3f3aa",
+      "from": "325a5c8a1ef5",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as None"
+    },
+    {
+      "id": "c20033f9be42",
+      "from": "ba85b91bf4e0",
+      "to": "1613f8dac921",
+      "label": "Appointed as Speaker"
+    },
+    {
+      "id": "0786561b838b",
+      "from": "be252fefa816",
+      "to": "4b3b1b76a8e8",
+      "label": "Appointed as Former Governor"
+    },
+    {
+      "id": "9fe82dfb3ce1",
+      "from": "df87bf11b5a1",
+      "to": "0c2be969618b",
+      "label": "Appointed as Minister of Finance and Coordinating Minister of the Economy"
+    },
+    {
+      "id": "7603a9fa0c3a",
+      "from": "3adab9f78930",
+      "to": "b135be2e521d",
+      "label": "Appointed as National Publicity Secretary"
+    },
+    {
+      "id": "88bf65fd391a",
+      "from": "974787534a67",
+      "to": "b5da1d8370fd",
+      "label": "Appointed as Former Vice President"
     },
     {
       "id": "599ed5bc3174",
@@ -801,40 +831,22 @@
       "label": "Appointed as Transport Commissioner"
     },
     {
-      "id": "0ab39d5a9ac2",
-      "from": "b41cdebed8df",
-      "to": "bf698d54d6c5",
-      "label": "Appointed as Not stated"
+      "id": "c71bb559e46f",
+      "from": "992de97c5755",
+      "to": "a04fa9c8b7c4",
+      "label": "Significant influence or control"
     },
     {
-      "id": "0a1af79d57a3",
-      "from": "e54d28336fd1",
-      "to": "3713e106b87b",
-      "label": "Appointed as Boss/Head of Hisbah"
+      "id": "b9ad30833926",
+      "from": "1805dc0a136a",
+      "to": "a04fa9c8b7c4",
+      "label": "Significant influence or control"
     },
     {
-      "id": "2d9fa362c270",
-      "from": "a825104f1c91",
-      "to": "5a98eb23f6f5",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "da3c3ab3ebae",
-      "from": "81dcb233ede4",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
-    },
-    {
-      "id": "17710214e895",
-      "from": "0079fcb60236",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as Envoy to France"
-    },
-    {
-      "id": "234af74126a1",
-      "from": "40ce4ff30275",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Former Governor"
+      "id": "548ef4f08bf9",
+      "from": "5cf2fccd8723",
+      "to": "9b5549bd0205",
+      "label": "Significant influence or control"
     },
     {
       "id": "990674302105",
@@ -915,27 +927,39 @@
       "label": "PSC: 66.7%"
     },
     {
-      "id": "d3ecbf9e224a",
-      "from": "f6c44ca7989b",
-      "to": "172469be05d6",
-      "label": "PSC: 12.4%"
-    },
-    {
-      "id": "d1189def3948",
-      "from": "8b4d6c678535",
-      "to": "aa60e2a5d6c8",
-      "label": "PSC: 89.0%"
-    },
-    {
-      "id": "a00a3f899ae7",
-      "from": "da10009b9b53",
-      "to": "194a3caf5ef0",
-      "label": "PSC: 85.8%"
+      "id": "099c3745b8eb",
+      "from": "9b5549bd0205",
+      "to": "d3177bcccf13",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "0da63ab8c0bc",
+      "from": "334c4a4c42fd",
+      "to": "7ac5d6bb2121",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "ac76052f579e",
+      "from": "334c4a4c42fd",
+      "to": "7f50eb5ca259",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "817df37bf70a",
+      "from": "334c4a4c42fd",
+      "to": "23d8905a6cbb",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "383ea37e9f70",
+      "from": "334c4a4c42fd",
+      "to": "48ccc0bb95e7",
       "label": "Contract Awardee"
     },
     {
@@ -990,36 +1014,6 @@
       "id": "c9f4bce16b23",
       "from": "d7ecacfbe05f",
       "to": "2666ed3224ec",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "03450d2d9a59",
-      "from": "6945a7b7c902",
-      "to": "bf69cb1ec5ea",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "84ebf1d2b817",
-      "from": "334c4a4c42fd",
-      "to": "059b05a09d95",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c1d603f082d4",
-      "from": "334c4a4c42fd",
-      "to": "68419b78e6b4",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "04244ef0c680",
-      "from": "367f8f860c90",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "d2d664656a66",
-      "from": "334c4a4c42fd",
-      "to": "f38bd75574f6",
       "label": "Contract Awardee"
     }
   ]
