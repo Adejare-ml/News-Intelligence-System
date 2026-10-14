@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "23cd33f022ff",
       "label": "Benue State Government",
       "type": "agency",
@@ -205,6 +211,12 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "5a3e00bd4822",
       "label": "Edo State House of Assembly",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "6ec7b4566d36",
       "label": "Office of the National Security Adviser",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "63a7eb164bda",
-      "label": "Federal Capital Territory (FCT) Judicial Committee",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1d1a995ea4fb",
-      "label": "African Continental Free Trade Area",
       "type": "agency",
       "risk": "Low"
     },
@@ -298,6 +298,18 @@
       "id": "974787534a67",
       "label": "Osinbajo",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "423d33ac58c5",
+      "label": "Cardoso",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "6f9832b76212",
+      "label": "Africa Finance Corporation",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -439,27 +451,9 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "0cbedbc12bbd",
       "label": "Amupitan",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ebe2d81e3981",
-      "label": "Not Specified",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -649,6 +643,12 @@
       "risk": "Low"
     },
     {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
@@ -663,18 +663,6 @@
     {
       "id": "408bb48fbb39",
       "label": "Nigerian Startups",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2666ed3224ec",
-      "label": "Agro-Climatic Resilience in Semi-Arid Landscapes (ACReSAL)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d7ecacfbe05f",
-      "label": "Plateau State Government",
       "type": "company",
       "risk": "Low"
     }
@@ -721,6 +709,12 @@
       "from": "974787534a67",
       "to": "b5da1d8370fd",
       "label": "Appointed as Former Vice President"
+    },
+    {
+      "id": "7c66b5e3768e",
+      "from": "423d33ac58c5",
+      "to": "6f9832b76212",
+      "label": "Appointed as Board Chairman"
     },
     {
       "id": "599ed5bc3174",
@@ -825,12 +819,6 @@
       "label": "Appointed as Official"
     },
     {
-      "id": "822f45dbfdab",
-      "from": "ebe2d81e3981",
-      "to": "a99d3740770f",
-      "label": "Appointed as Transport Commissioner"
-    },
-    {
       "id": "c71bb559e46f",
       "from": "992de97c5755",
       "to": "a04fa9c8b7c4",
@@ -927,15 +915,15 @@
       "label": "PSC: 66.7%"
     },
     {
-      "id": "099c3745b8eb",
-      "from": "9b5549bd0205",
-      "to": "d3177bcccf13",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "099c3745b8eb",
+      "from": "9b5549bd0205",
+      "to": "d3177bcccf13",
       "label": "Contract Awardee"
     },
     {
@@ -1008,12 +996,6 @@
       "id": "1575daf5e671",
       "from": "408bb48fbb39",
       "to": "a75518830b0f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c9f4bce16b23",
-      "from": "d7ecacfbe05f",
-      "to": "2666ed3224ec",
       "label": "Contract Awardee"
     }
   ]

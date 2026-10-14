@@ -40,7 +40,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 64,
+      "total_mentions": 65,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 12,
-          "avg_risk": 32.1,
+          "mentions": 13,
+          "avg_risk": 31.2,
           "max_risk": 65
         }
       ]
@@ -83,7 +83,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 49,
+      "total_mentions": 50,
       "points": [
         {
           "week": "2026-09-07",
@@ -117,8 +117,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 10,
-          "avg_risk": 59.0,
+          "mentions": 11,
+          "avg_risk": 56.4,
           "max_risk": 85
         }
       ]
@@ -126,7 +126,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 41,
+      "total_mentions": 42,
       "points": [
         {
           "week": "2026-09-07",
@@ -160,8 +160,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 47.5,
+          "mentions": 3,
+          "avg_risk": 36.7,
           "max_risk": 75
         }
       ]
@@ -439,40 +439,9 @@
       ]
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-07",
@@ -506,9 +475,40 @@
         },
         {
           "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -3240,6 +3240,19 @@
       ]
     },
     {
+      "key": "africa finance corporation",
+      "label": "Africa Finance Corporation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "african african university",
       "label": "African African University",
       "total_mentions": 1,
@@ -3626,6 +3639,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "cardoso",
+      "label": "Cardoso",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -4319,6 +4345,19 @@
       ]
     },
     {
+      "key": "gni",
+      "label": "GNI",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "gates foundation",
       "label": "Gates Foundation",
       "total_mentions": 1,
@@ -4928,46 +4967,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "khalil suleiman halilu",
-      "label": "Khalil Suleiman Halilu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "korea international cooperation agency",
-      "label": "Korea International Cooperation Agency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "kuda",
-      "label": "Kuda",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-14 17:50:02"
+  "generated": "2026-10-14 20:34:49"
 }

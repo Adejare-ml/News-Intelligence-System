@@ -1,43 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 202,
-  "previous_articles": 171,
+  "recent_articles": 207,
+  "previous_articles": 168,
   "rising": [
     {
       "term": "premium",
-      "recent": 73,
-      "previous": 53,
-      "change": 20
+      "recent": 76,
+      "previous": 52,
+      "change": 24
     },
     {
       "term": "premium times",
-      "recent": 73,
-      "previous": 53,
-      "change": 20
+      "recent": 76,
+      "previous": 52,
+      "change": 24
     },
     {
       "term": "times",
-      "recent": 73,
-      "previous": 53,
-      "change": 20
+      "recent": 76,
+      "previous": 52,
+      "change": 24
     },
     {
       "term": "newspapers",
-      "recent": 33,
+      "recent": 34,
       "previous": 14,
-      "change": 19
+      "change": 20
     },
     {
       "term": "punch",
-      "recent": 33,
+      "recent": 34,
       "previous": 14,
-      "change": 19
+      "change": 20
     },
     {
       "term": "punch newspapers",
-      "recent": 33,
+      "recent": 34,
       "previous": 14,
-      "change": 19
+      "change": 20
     },
     {
       "term": "petrol",
@@ -47,9 +47,9 @@
     },
     {
       "term": "efcc",
-      "recent": 14,
+      "recent": 15,
       "previous": 4,
-      "change": 10
+      "change": 11
     },
     {
       "term": "discount",
@@ -72,12 +72,6 @@
       "change": -17
     },
     {
-      "term": "guardian",
-      "recent": 38,
-      "previous": 47,
-      "change": -9
-    },
-    {
       "term": "punchng",
       "recent": 0,
       "previous": 8,
@@ -90,9 +84,9 @@
       "change": -8
     },
     {
-      "term": "court",
-      "recent": 10,
-      "previous": 17,
+      "term": "guardian",
+      "recent": 38,
+      "previous": 45,
       "change": -7
     },
     {
@@ -102,16 +96,16 @@
       "change": -7
     },
     {
-      "term": "lagos",
-      "recent": 10,
-      "previous": 16,
+      "term": "court",
+      "recent": 11,
+      "previous": 17,
       "change": -6
     },
     {
-      "term": "partner",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
+      "term": "lagos",
+      "recent": 11,
+      "previous": 16,
+      "change": -5
     },
     {
       "term": "project",
@@ -124,22 +118,28 @@
       "recent": 2,
       "previous": 7,
       "change": -5
+    },
+    {
+      "term": "ogun",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 144,
-      "previous": 120
+      "recent": 147,
+      "previous": 118
     },
     {
       "category": "Company",
-      "recent": 29,
-      "previous": 28
+      "recent": 30,
+      "previous": 27
     },
     {
       "category": "Legal",
-      "recent": 29,
+      "recent": 30,
       "previous": 20
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-14 17:49:45"
+  "generated": "2026-10-14 20:34:47"
 }

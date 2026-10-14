@@ -1,39 +1,50 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-14 17:49:18 (UTC+1)
-**Run Window:** 2026-10-14, all runs to 17:49 (run 2 of the day)
+**Generated on:** 2026-10-14 20:33:47 (UTC+1)
+**Run Window:** 2026-10-14, all runs to 20:33 (run 3 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 18
+- **Total Articles Processed:** 23
 - **High Risk Signals:** 1
-- **Appointments Logged:** 0
-- **Procurement Awards:** 4
+- **Appointments Logged:** 1
+- **Procurement Awards:** 5
 
 ---
 
-# Executive Intelligence Report: Nigerian Corporate Transparency
-**Report Date:** 2026-10-14
-**Coverage:** All articles published on 2026-10-14 up to 17:49
+# Intelligence Summary: Corporate Transparency, Regulatory Compliance & Governance
+
+**Report Date:** 14 October 2026  
+**Coverage Period:** Daily coverage for 14 October 2026 (up to 20:33)
+
+---
 
 ### Key Developments
-* **Energy Sector Shift:** Shell has signed an agreement to divest its domestic gas business in Nigeria, with Vaaris Energy identified as the buyer ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixgFBVV95cUxOVDQyQWpwMHh5Mk84QjZaYUNmQ0RVajZlU1VZYUdlb1dRbkZLT2VpbUMxTjJIQnp6SFpyZXg3dnJuZ0dvaHFndDR4NEFjcXZxVjBjLU50R3FieVRvTS03a29MSUJlMjhldW5wZVFDZV9QNUVGc3pRci1vbFc2ck05MzFQWURSb080Q0NCVmR4bFhmV2IxT0p2dnZ3N21oVFhhVjZ0MTZUV1JBYl9VakZVZG5GZTZ5QkxIWHRhTkhjTlYybHN4cXc), [punchng](https://punchng.com/shell-signs-deal-to-sell-nigerian-gas-business/)).
-* **Financial Regulation:** KuCoin Nigeria Limited received conditional Approval-in-Principle (AIP) from the SEC to join the Accelerated Regulatory Incubation Program ([The Next Web](https://thenextweb.com/news/kucoin-nigeria-sec-conditional-approval-arip), [Diariobitcoin.com](https://www.diariobitcoin.com/regulacion/exchange-cripto-kucoin-obtiene-aprobacion-condicional-para-operar-en-nigeria/)).
-* **Economic Policy:** The Nigerian government is promoting 65 investment opportunities valued at $78.5 billion to attract foreign capital ([The Eagle Online](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd24tdExUYW91Q2FhMVdhRzNpMGZTNVJaMHBnR3BRQmd0dUdsLUYwcW92bFhQYVFZRnZHM3JQUWlpdkcydHUyYXNELXNIX0l0NXR5UXlQUkZHRE5oSnlPTVlYN09tVWVoVTd4NV96TlMzbjVvVlRVMG1DNnZNNDVGcTd1dEVWaHpGZlBqNXgtTFVZRjlGYWpBQl9vdXZRTHY2Q2pVeERTeGd3dw)).
-* **Governance & AML:** Federal efforts include training 100 officials for an anti-money laundering assessment and discussions by former VP Osinbajo on improving the corporate governance code ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxOMUNaLW5kZzh5YjdQMld4YzRjY05iNjJRMGtKSVRqSUJVLURZU0tfQTcwWXJNcFQ4TGNNTWpmVHVpQV8wYkdyM2hwSzZNMlhlVTJVRFJyZm0yQmZESjlkZ0NtQVBseEYzb0hGU2F6em1MSGVlU0VFTllHWjB6d0FJMHJCQ1R2dS1ZOHVWcjEyVDl6MThpUGpuczVDOFJvZ3hRTzhKRFRKTTBCVkVLZWJGU0ZWbDY2UlZDc1pUUHJydkMyRVlhX3lZ), [Businessday NG](https://news.google.com/rss/articles/CBMiywFBVV95cUxOcjE0bms3blpwNC1uUWxKYWRVLV9lSEFRalRzUjctMk9tVWJ4cGVzVGl5NkJxYnpERGcycFhvOFdLMTZBQUtZX1NFOXB5aXFqaV�ZkJjbDdWcFRYek9rZ1U0MVE2eHREYUdDamdYbzl3Z0xMdGVRbnJPNzVkS2haR3VrNDZCTWs4LUdnLUxGY1M4enlBM2tfUHVOWTZTNUJ4emRMQ0JmS3p5QnUwa3Z5YjA0TU1GbERNbFdmc3ZjV1Fpb1dlano4S1FnTQ?oc=5)).
-* **Other Updates:** Additional developments involve the IMF advising against blanket fuel subsidies and the NCC introducing device verification codes ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSnFpcGpuVlZ0N0dMSU4wMWZ1MGFqM1gzUUpQa21GTFpHM2hDa1VvYnJhcE80UkVuYjdMM2J3TFRiazEycHJ2VlNuTFU2NFkwTG1COTZPdk5vam9xUmRFcHVqSllTZEFGaV81VDBpUXhONGxrTTdaYVBFRkU4dFJSaWsyNDllZm9R), [The Guardian Nigeria News](https://news.google.com/rss/articles/CBMijAFBVV95cUxPdlNySTVmRXNkVUU0Sk9kTF9Ba3JjLW05dDVSN2xieHY2VHJDa3ZQM3VncDF2d2xObkRTTkJfYTVhZmUxU1ZWTVZHbjRkNkphTHFjd0ttX0pzZHpNSXZxM1luVF9xOC1ZV2g0NE9GbF9jeSJCdy1FR1c4SWNyZmhNcW9ic0d5b3NWOHFOQQ)).
 
-### High Risk Alerts
-* **Alleged Public Corruption:** Court witnesses and investigators allege former Governor Nasir El-Rufai budgeted $600,000 to bribe EFCC officials to obstruct investigations ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdmE0LUZPN0dQeUxvaUFZRkFsMW5wMUpPazkyV1BMYk1mV04xbGNNTmN1Z1JSSUo5aFYxdF94N1RmTnJ5aTRubXVhNHJXdHlwNTltSklZMzgtdG8yN3lZVVNnUEJ5alpJdUlqcVNQS3lsajI0dVYxQkdITUo1VlU5dFp2RS1SVmlkSm56ZHJHMHNMTUcyWXpaa3BPS09PN2ZhMDFPYzVfLWJhekxQVG1ZTHlubkl3WlhQOEFia1piZG1XQzBQdFpqXzNKOUlORmdiQTMycDZLW), [Punch Newspapers](https://news.google.com/rss/articles/CBMitAFBVV95cUxNa0JyVmJENXRySWRwMFo1SWQzOXNvX3ZKNS1IRk5ubHZwbVlxc0JCVDZ2Z3VsZXVhdmx6SFRFTE4ybmR2eG1VV21FWmhkdDVpM1pFQlNYNnBhS1EtUUNjZnJaclg5VXgwNkE0UXZBcjc1bXZWdzQ3aTBJcW1tUmt3VW9KUTJRTlNyR04wUnpuZGRyVVc4T1ZLbG1WZ1ZXTXRpNUZBWHRodzhBMTgxc1F4SktfUzI)).
-* **Prosecution Reopening:** The EFCC has reopened a 2006 corruption case specifically seeking to prosecute Atiku Abubakar ([The Eagle Online](https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXp6SlBSa25WaWlFQUw3RHJXbDhxSng0eTY0SFFXSXpxZ195S3NScjk5MWdmZFpPcTRzdkN6RDktRnduVnZPcEptbTFDT2xaUURyYXkwWVNCd3o2MExoVXZQamhxQk81bF9MeGlLZTJNMGlRQ0RIQm5CWmFzQnk0czhObXFEZi1OU1VSOEJVOVJFWk1BMlU4Z0tCNGY)).
-* **Procurement Violations:** An audit report indicates the FCT judicial committee violated financial regulations and procurement laws in awarding contracts worth N866.5 million ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi-gFBVV95cUxNaDV4UzRheER3dVpSbFpMb0U2WVVWM01XT1VOUkY0eTM0LXF0MmxNc1JyN2dfaFNSWlgxZEc3LWFpZ0x6ZVp6R2N2VmstTDR1T1lnM1JQWjI5UkhSYkpkek50cFQtTWN2VGllLUhhMGc5d3J0b1NXOXVHSnJ0eDNidkswel91eXYwcVpsaDVfM09MZUVYcVFzeUZrYVNwbVRSUjZHaDJpaXRHbUJlSzVwN1VDOVpwMUlfMFVzQlowcnBlRW9oNUtZUGc2RXZDSGZvOVdwM3hsMFlYS2hYUTR3Z3NkMDRYTU5XSmVUVVJJN2NaWXFNdG10dmd3)).
-
-### Beneficial Ownership & PSC Disclosures
-* **Holder:** Okunbor; **Company:** Pipeline Infrastructure Nigeria Limited; **Percentage:** Not stated; **Control:** Significant influence or control (Direct); **PEP Status:** No; **Filing Status:** Disclosed ([The Punch](https://punchng.com/reps-panel-clears-pinl-okunbor-of-corruption-allegations-backs-pipeline-contract-extension/)).
-
-### Procurement & Board Changes
-* **Contract Scrutiny:** The Senate has ordered a one-month review of a N100.5 billion refund request concerning the Yobe Airport project ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYjR0YmR4cS00REVpOHBXOVlWa2FJY2tGd000OHpRaUM5LWhLV3VEdGxlM0c4S0lLUlRRUFhCM181RlQxcGxzZ1VmclNqUktsQXh3RzZXV21abjNuWE5HdUZHci1YQlBTMTFyV0oxSzlYU0owVDNWa2ZkbTdwbERfYmZlNm9TVFlnbm82X2o4Vkk4SGNIR3pKaGJ6T2djOXN3WUVaTGJHQ1g)).
-* **Transparency Demands:** The Allied Peoples Movement is demanding full disclosure of costs and procurement records for the Lagos-Calabar Coastal Highway project ([The Punch](https://punchng.com/coastal-highway-apm-campaign-council-demands-full-disclosure-of-contract-details/)).
-* **Contract Extension:** A House Committee has recommended the extension of a pipeline surveillance contract for Pipeline Infrastructure Nigeria Limited after clearing it of corruption ([The Punch](https://punchng.com/reps-panel-clears-pinl-okunbor-of-corruption-allegations-backs-pipeline-contract-extension/)).
-* **Regional Projects:** Governor Otti is accelerating the Abia industrial park project, and the Edo assembly is reviewing a N77.5bn supplementary bill ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWUxBSG5jaTN4OHB2cm1LcWVCdzYtbFJrTkNobjJidk5YcjMtUjdMZnhzZDNqMHh1SmtyZ3RueWVuN1RQMC1jdkp4RFMwcWpzMjBZQnJ5bnRlbnpJX3JSTjdEeXpzbXBuZG4wdnF1LWNDWkxEZmFZekVQRlQ1Snc5LTJjODFKY2ZDMGVnaU5vNkFDTFg2bWUxZktiazM2MWNHamNkcm02ME9NQkFjRHZ6Z1JUWVBnTnlsd3JPTWVZdUIxSkE), [Premium Times Nigeria](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdFNyUjVFS2JqYUw0ZlB0eVctYVd3bHQ0MGVoc1pmSldndTJlWElYSmxFOThQTkFQSU5QamlIM3lRbU41ZUs1SF9ncDlRZ3N1cG5Sdl94M2hUTDZBbEtnNXUtT0UzS00ycXZMMTJ4SWN6YlYwOGVqekdZd0ZqenY0Ukphc3MyM1dpU2YxbXl5NDRMVXlTTHlOY1ZvTnJPQTd3MFhrUmwwdlVfTnl3UG1TbEFHUVZFcDVHZHYxaURaMWVJaFpnZmJCeFZVQktkMG5sRWc)).
+* **Shell Divests Nigerian Domestic Gas Assets:** Shell has entered into a definitive agreement to sell its Nigerian domestic gas business to Vaaris Energy, signaling a key restructuring of corporate control across domestic energy infrastructure ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixgFBVV95cUxOVDQyQ1p3MHh5Mk84QjZaYUNmQ0RVajZlU1VZYUdlb1dRbkZLT2VpbUMxTjJIQnp6SFpyZXg3dnJuZ0dvaHFndDR4NEFjcXZxVjBjLU50R3FieVRvTS03a29MSUJlMjhldW5wZVFDZV9QNUVGc3pRci1vbFc2ck05MzFQWURSb080Q0NCVmR4bFhmV2IxT0p2dnZ3N21oVFhhVjZ0MTZUV1JBYl9VakZVZG5GZTZ5QkxIWHRhTkhjTlYybHN4cXc?oc=5)).
+* **Judicial Affirmation of Anti-Graft Authority:** A court dismissed a challenge brought by the Akwa Ibom State Government questioning the operational mandate of the Economic and Financial Crimes Commission (EFCC), reinforcing federal oversight over state-level financial transactions ([thenationonlineng](https://nationalaccordnewspaper.com/court-dismisses-akwa-ibom-states-suit-challenging-the-powers-of-efcc/)).
+* **National Compliance and AML Preparedness:** The Federal Government concluded anti-money laundering (AML) training for 100 regulatory officials ahead of international evaluation exercises ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxOMUNaLW5kZzh5YjdQMld4YzRjY05iNjJRMGtKSVRqSUJVLURZU0tfQTcwWXJNcFQ4TGNNTWpmVHVpQV8wYkdyM2hwSzZNMlhlVTJVRFJyZm0yQmZESjlkZ0NtQVBseEYzb0hGU2F6em1MSGVlU0VFTllHWjB6d0FJMHJCQ1R2dS1ZOHVWcjEyVDl6MThpUGpuczVDOFJvZ3hRTzhKRFRKTTBCVkVLZWJGU0ZWbDY2UlZDc1pUUHJydkMyRVlhX3lZ?oc=5)).
+* **Foreign Investment and Fiscal Push:** The Federal Government unveiled 65 investment opportunities valued at $78.5 billion alongside corporate tax credit incentives, while the IMF warned against reinstating broad fuel subsidies ([The Eagle Online](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd24tdExUYW91Q2FhMVdhRzNpMGZTNVJaMHBnR3BRQmd0dUdsLUYwcW92bFhQYVFZRnZHM3JQUWlpdkcydHUyYXNELXNIX0l0NXR5UXlQUkZHRE5oSnlPTVlYN09tVWVoVTd4NV96TlMzbjVvVlRVMG1DNnZNNDVGcTd1dEVWaHpGZlBqNXgtTFVZRjlGYWpBQl9vdXZRTHY2Q2pVeERTeGd3dw?oc=5); [Punch Newspapers](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSnFpcGpuVlZ0N0dMSU4wMWZ1MGFqM1gzUUpQa21GTFpHM2hDa1VvYnJhcE80UkVuYjdMM2J3TFRiazEycHJ2VlNuTFU2NFkwTG1COTZPdk5vam9xUmRFcHVqSllTZEFGaV81VDBpUXhONGxrTTdaYVBFRkU4dFJSaWsyNDllZm9R?oc=5)).
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*
+
+### High Risk Alerts
+
+* **Grand Corruption Allegations (Nasir El-Rufai):** Witness testimony and investigators allege former Kaduna State Governor Nasir El-Rufai earmarked a $600,000 bribe intended for EFCC personnel to stifle ongoing regulatory investigations ([The Eagle Online](https://news.google.com/rss/articles/CBMiowFBVV95cUxQQUIxcmNhMmI0SjdSeUZkN1JyWnl4T1EwOFFKTkp0bzE3Zk91c080M3FCLXRMUnRFQnpTYjRsVlBIVzhfX2Q3N1BrQXlJZlZVWC1kS051ZS10UUJJN05aYXhTZnFWeEZjSE9EOGdyQm1Bd3JVR3dCYnBDTU5qVTUtOVBUZDAzbnhILWpfeWFjZXpvclNkanpBY0x2bXJNcUNLRllr?oc=5); [Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdmE0LUZPN0dQeUxvaUFZRkFsMW5wMUpPazkyV1BMYk1mV04xbGNNTmN1Z1JSSUo5aFYxdF94N1RmTnJ5aTRubXVhNHJXdHlwNTltQklZMzgtdG8yN3lZVVNnUEJ5alpJdUlqcVNQS3lsajI0dVYxQkdITUo1VlU5dFp2RS1SVmlkSm56ZHJHMHNMTUcyWXpaa3BPS09PN2ZhMDFPYzVfLWJhekxQVG1ZTHlubkl3WlhQOEFia1piZG1XQzBQdFpqXzNKOUlORmdiQTMycDZLWQ?oc=5)).
+* **Judicial Procurement Non-Compliance:** An official audit found that the FCT Judicial Committee breached procurement statutory frameworks and financial guidelines in awarding contracts totaling ₦866.5 million ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi-gFBVV95cUxNaDV4UzRheER3dVpSbFpMb0U2WVVWM01XT1VOUkY0eTM0LXF0MmxNc1JyN2dfaFNSWlgxZEc3LWFpZ0x6ZVp6R2N2VmstTDR1T1lnM1JQWjI5UkhSYkpkek50cFQtTWN2VGllLUhhMGc5d3J0b1NXOXVHSnJ0eDNidkswel91eXYwcVpsaDVfM09MZUVYcVFzeUZrYVNwbVRSUjZHaDJpaXRHbUJlSzVwN1VDOVpwMUlfMFVzQlowcnBlRW9oNUtZUGc2RXZDSGZvOVdwM3hsMFlYS2hYUTR3Z3NkMDRYTU5XSmVUVVJJN2NaWXFNdG10dmd3?oc=5)).
+* **Reopened High-Level PEP Prosecution:** The EFCC has reopened a legacy 2006 corruption dossier aiming to initiate prosecution against former Vice President Atiku Abubakar ([The Eagle Online](https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXp6SlBSa25WaWlFQUw3RHJXbDhxSng0eTY0SFFXSXpxZ195S3NScjk5MWdmZFpPcTRzdkN6RDktRnduVnZPcEptbTFDT2xaUURyYXkwWVNCd3o2MExoVXZQamhxQk81bF9MeGlLZTJNMGlRQ0RIQm5CWmFzQnk0czhObXFEZi1OU1VSOEJVOVJFWk1BMlU4Z0tCNGY?oc=5)).
+
+---
+
+### Beneficial Ownership & PSC Disclosures
+
+The monitored press intake for this reporting period contains no verifiable person with significant control (PSC) notifications or register filings.
+
+---
+
+### Procurement & Board Changes
+
+* **Primary Healthcare Capital Release:** The Federal Government authorized the release of ₦40.7 billion dedicated to expanding infrastructure and medical coverage across 13,000 primary healthcare facilities nationwide ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi6wFBVV95cUxOZUcxVnFWWTBYZndCZk5oOE1ZLTVrdzc5cVRQbndyRWFVQ0Q4TnFOSUZuQVhuTVFOUklfRnRUVXdTVFFqUThyc0xlZGlvbXU5ZzJUcnpGQnRsUTQ1aHdENFVDaUVNRkQ3TkFwdW9kNEhPRTl0UGphQXd1bXo3UTJKQVA4TlhBV3J4ZzBsRTE1MGREZDJkUHBGZzlEbHluZFFLZWczR1o1dExoLVZVUWF6eTZZdUVyNkluU0MtbTJQb0JpalBLV1dCaW9MRlI3ZzdHY0NPS2ZZbnJ5dExDUVhvcU83blhXVEJCVHlR?oc=5)).
+* **Africa Finance Corporation Leadership:** Africa Finance Corporation (AFC) appointed Central Bank Governor Olayemi Cardoso as Chairman of its Board of Directors ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMijwFBVV95cUxObWQ0eF92dGFKUkRxVFU3dm1oTXJWTFFlbnJVM29QM0o4Qk83dFVicHUteW0wcmJpTGY1TmxiRlZBSTZQZkRzRWNjMHNYUEdBNHpBYnFKeGprSFhpSGpvQ2RLZlU0VVB5bktoSVk5ekloX3FvcEhndDZVZWxrem5BeDZuNy1jRElxbkhna3ZVSQ?oc=5)).
+* **Sub-national Appropriations & Industrial Projects:** The Edo State House of Assembly is debating an ₦77.5 billion supplementary budget, while Abia State pledged expedited execution on its state industrial park ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQdFNyUjVFS2JqYUw0ZlB0eVctYVd3bHQ0MGVoc1pmSldndTJlWElYSmxFOThQTkFQSU5QamlIM3lRbU41ZUs1SF9ncDlRZ3N1cG5Sdl94M2hUTDZBbEtnNXUtT0UzS00ycXZMMTJ4SWN6YlYwOGVqekdZd0ZqenY0Ukphc3MyM1dpU2YxbXl5NDRMVXlTTHlOY1ZvTnJPQTd3MFhrUmwwdlVfNnl3UG1TbEFHUVZFcDVHZHYxaURaMWVJaFpnZmJCeFZVQktkMG5sRWc?oc=5); [Premium Times Nigeria](https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWUxBSG5jaTN4OHB2cm1LcWVCdzYtbFJrTkNobjJidk5YcjMtUjdMZnhzZDNqMHh1SmtyZ3RueWVuN1RQMC1jdkp4RFMwcWpzMjBZQnJ5bnRlbnpJX3JSTjdEeXpzbXBuZG4wdnF1LWNDWkxEZmFZekVQRlQ1Qnc5LTJjODFKY2ZDMGVnaU5vNkFDTFg2bWUxZktiazM2MWNHamNkcm02ME9NQkFjRHZ6Z1JUWVBnTnlsd3JPTWVZdUIxSkE?oc=5)).
+
+---
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*

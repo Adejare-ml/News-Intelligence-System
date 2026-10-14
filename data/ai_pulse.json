@@ -1,68 +1,83 @@
 {
-  "generated": "2026-10-14 17:49:45",
+  "generated": "2026-10-14 20:34:46",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2224,
+      "likes": 2242,
       "downloads": 135175
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1604,
+      "likes": 1618,
       "downloads": 65616
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 758,
+      "likes": 767,
       "downloads": 12704
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4281,
+      "likes": 4290,
       "downloads": 2315771
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 548,
+      "likes": 580,
       "downloads": 4157
     },
     {
       "id": "autotrust/JEV-35B",
       "url": "https://huggingface.co/autotrust/JEV-35B",
       "task": "text-classification",
-      "likes": 714,
+      "likes": 715,
       "downloads": 27970
     },
     {
       "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
       "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
       "task": "text-generation",
-      "likes": 451,
+      "likes": 454,
       "downloads": 311969
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7752,
+      "likes": 7776,
       "downloads": 1823507
     }
   ],
   "papers": [
     {
+      "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
+      "url": "https://huggingface.co/papers/2610.18497",
+      "upvotes": 0
+    },
+    {
+      "title": "Who to Trust in Multi-Robot Systems: Joint Robot and Object Hypothesis Trust Inference via Neural-Symbolic Cross-Validation",
+      "url": "https://huggingface.co/papers/2610.14530",
+      "upvotes": 1
+    },
+    {
+      "title": "Scaling Verifiable Environments for Long-horizon Work Agents",
+      "url": "https://huggingface.co/papers/2610.04906",
+      "upvotes": 1
+    },
+    {
       "title": "Pristine Models",
       "url": "https://huggingface.co/papers/2610.14091",
-      "upvotes": 2
+      "upvotes": 9
     },
     {
       "title": "Privacy-Preserving Intent Fulfilment and Assurance for 6G RAN",
@@ -73,21 +88,6 @@
       "title": "Image Tokenizers Should Be Trained Between Images",
       "url": "https://huggingface.co/papers/2610.16759",
       "upvotes": 0
-    },
-    {
-      "title": "Beyond the Verdict: Agentic Code Judging with Verifiable Feedback",
-      "url": "https://huggingface.co/papers/2610.18760",
-      "upvotes": 1
-    },
-    {
-      "title": "Words to World: Benchmarking LLMs in Interactive Physical Environments",
-      "url": "https://huggingface.co/papers/2610.15228",
-      "upvotes": 0
-    },
-    {
-      "title": "ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models",
-      "url": "https://huggingface.co/papers/2610.18596",
-      "upvotes": 5
     }
   ]
 }

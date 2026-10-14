@@ -2,10 +2,10 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 46,
+      "contracts": 47,
       "undisclosed": 31,
       "totals": {
-        "NGN": 17118696000000.0,
+        "NGN": 17159396000000.0,
         "GBP": 1492000000.0,
         "USD": 31230000000.0
       }
@@ -648,10 +648,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 112,
+      "contracts": 113,
       "undisclosed": 69,
       "totals": {
-        "NGN": 20700014090000.0,
+        "NGN": 20740714090000.0,
         "USD": 41797140000.0
       }
     },
@@ -1096,5 +1096,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 17:50:02"
+  "generated": "2026-10-14 20:34:49"
 }
