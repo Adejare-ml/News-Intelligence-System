@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 28,
-      "mentions": 168,
+      "mentions": 170,
       "risk": {
         "Low": 21,
         "Critical": 1,
@@ -102,6 +102,15 @@
       }
     },
     {
+      "industry": "Agriculture",
+      "companies": 7,
+      "mentions": 8,
+      "risk": {
+        "Low": 6,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Financial Services",
       "companies": 3,
       "mentions": 8,
@@ -125,15 +134,6 @@
       "mentions": 8,
       "risk": {
         "Critical": 1
-      }
-    },
-    {
-      "industry": "Agriculture",
-      "companies": 6,
-      "mentions": 7,
-      "risk": {
-        "Low": 5,
-        "Medium": 1
       }
     },
     {
@@ -628,5 +628,5 @@
       }
     }
   ],
-  "generated": "2026-10-13 19:50:21"
+  "generated": "2026-10-14 01:46:49"
 }
