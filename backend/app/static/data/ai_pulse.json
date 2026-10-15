@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-15 12:32:43",
+  "generated": "2026-10-15 17:39:28",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2332,
+      "likes": 2370,
       "downloads": 144280
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1676,
+      "likes": 1708,
       "downloads": 75253
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 811,
+      "likes": 860,
       "downloads": 15315
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 752,
+      "likes": 779,
       "downloads": 9278
-    },
-    {
-      "id": "autotrust/JEV-35B",
-      "url": "https://huggingface.co/autotrust/JEV-35B",
-      "task": "text-classification",
-      "likes": 906,
-      "downloads": 41837
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4341,
+      "likes": 4365,
       "downloads": 2415278
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7870,
+      "likes": 7904,
       "downloads": 1866657
     },
     {
-      "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
-      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-      "task": "text-generation",
-      "likes": 476,
-      "downloads": 344177
+      "id": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "task": "text-to-speech",
+      "likes": 427,
+      "downloads": 4048
+    },
+    {
+      "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "task": "text-to-image",
+      "likes": 482,
+      "downloads": 296253
     }
   ],
   "papers": [
     {
-      "title": "VASPO: Self-Distillation with Privileged Value Estimation",
-      "url": "https://huggingface.co/papers/2610.20516",
+      "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
+      "url": "https://huggingface.co/papers/2610.14162",
       "upvotes": 1
     },
     {
-      "title": "To Align or Not To Align: Check Your COMPASS Before You Train",
-      "url": "https://huggingface.co/papers/2610.18638",
+      "title": "Cortex: Measurement-Gated Evolution and Pruning of Coding-Agent Skills and Rules",
+      "url": "https://huggingface.co/papers/2610.14216",
       "upvotes": 1
     },
     {
-      "title": "Rethinking Projector Training in Multimodal LLMs",
-      "url": "https://huggingface.co/papers/2610.18598",
+      "title": "History Replays Itself: Unleashing Long-Context Capability in Linear Attention",
+      "url": "https://huggingface.co/papers/2610.15715",
+      "upvotes": 8
+    },
+    {
+      "title": "The Agent Knew: Internal States Forecast Unauthorized Actions and Stop Them, and the Lies That Follow",
+      "url": "https://huggingface.co/papers/2610.17301",
       "upvotes": 1
     },
     {
-      "title": "The Thinking Leakage in Reinforcement Learning for LLMs",
-      "url": "https://huggingface.co/papers/2610.14270",
-      "upvotes": 11
+      "title": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
+      "url": "https://huggingface.co/papers/2610.13623",
+      "upvotes": 9
     },
     {
-      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
-      "url": "https://huggingface.co/papers/2610.17309",
-      "upvotes": 2
-    },
-    {
-      "title": "Rethinking LLM-Guided Visual Question Answering: Does Deeper Knowledge Integration Really Help?",
-      "url": "https://huggingface.co/papers/2610.17079",
-      "upvotes": 1
+      "title": "CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline",
+      "url": "https://huggingface.co/papers/2610.19128",
+      "upvotes": 17
     }
   ]
 }

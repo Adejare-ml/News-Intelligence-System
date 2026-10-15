@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -141,6 +147,18 @@
     {
       "id": "ac79f04a4e30",
       "label": "Kano State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -165,6 +183,12 @@
     {
       "id": "9409708c9d80",
       "label": "International Monetary Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -205,12 +229,6 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "23cd33f022ff",
       "label": "Benue State Government",
       "type": "agency",
@@ -223,26 +241,14 @@
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "11383b8763cc",
-      "label": "Securities and Exchange Commission, Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7d0b46bbd4a7",
-      "label": "World Bank",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "58c58351d674",
+      "label": "Olayemi Cardoso",
       "type": "person",
       "risk": "Low"
     },
@@ -250,12 +256,6 @@
       "id": "be252fefa816",
       "label": "Nasir El-Rufai",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -279,6 +279,12 @@
     {
       "id": "4b80ca311098",
       "label": "Hadi Sirika",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "2d3a7d6c7ac4",
+      "label": "Douye Diri",
       "type": "person",
       "risk": "Low"
     },
@@ -448,24 +454,6 @@
       "id": "6ee06d9aa9e5",
       "label": "Francis Meshioye",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "701a11e9aed2",
-      "label": "Ministry of Finance",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "22efb00940fe",
-      "label": "Uche Nnaji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -661,6 +649,12 @@
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ef6dbf96f94e",
       "label": "Ondo State Government",
       "type": "agency",
@@ -679,6 +673,12 @@
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President"
+    },
+    {
+      "id": "fd1604102e20",
+      "from": "58c58351d674",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Governor"
     },
     {
       "id": "0786561b838b",
@@ -703,6 +703,12 @@
       "from": "4b80ca311098",
       "to": "0c2be969618b",
       "label": "Appointed as Former Minister"
+    },
+    {
+      "id": "445b2fd273b0",
+      "from": "2d3a7d6c7ac4",
+      "to": "217ee6fe71c5",
+      "label": "Appointed as Governor of Bayelsa State"
     },
     {
       "id": "b268c9e64d5a",
@@ -811,18 +817,6 @@
       "from": "6ee06d9aa9e5",
       "to": "fe0bc9447e28",
       "label": "Appointed as President"
-    },
-    {
-      "id": "5834b8f8c844",
-      "from": "df87bf11b5a1",
-      "to": "701a11e9aed2",
-      "label": "Appointed as Minister of Finance and Coordinating Minister of Economy"
-    },
-    {
-      "id": "1f3e042cf30b",
-      "from": "22efb00940fe",
-      "to": "bf69cb1ec5ea",
-      "label": "Appointed as Politician/Public Official"
     },
     {
       "id": "c71bb559e46f",
