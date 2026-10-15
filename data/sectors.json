@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 32,
-      "mentions": 185,
+      "companies": 33,
+      "mentions": 186,
       "risk": {
-        "Medium": 8,
+        "Medium": 9,
         "Low": 21,
         "Critical": 1,
         "High": 2
@@ -43,10 +43,10 @@
     {
       "industry": "Aviation",
       "companies": 6,
-      "mentions": 18,
+      "mentions": 19,
       "risk": {
-        "Medium": 3,
-        "Low": 2,
+        "Medium": 4,
+        "Low": 1,
         "High": 1
       }
     },
@@ -669,5 +669,5 @@
       }
     }
   ],
-  "generated": "2026-10-15 17:39:32"
+  "generated": "2026-10-15 20:18:56"
 }

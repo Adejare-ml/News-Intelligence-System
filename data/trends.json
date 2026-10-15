@@ -1,67 +1,67 @@
 {
   "window_days": 7,
-  "recent_articles": 231,
-  "previous_articles": 157,
+  "recent_articles": 232,
+  "previous_articles": 159,
   "rising": [
     {
       "term": "premium",
-      "recent": 82,
-      "previous": 51,
-      "change": 31
+      "recent": 85,
+      "previous": 49,
+      "change": 36
     },
     {
       "term": "premium times",
-      "recent": 82,
-      "previous": 51,
-      "change": 31
+      "recent": 85,
+      "previous": 49,
+      "change": 36
     },
     {
       "term": "times",
-      "recent": 82,
-      "previous": 51,
-      "change": 31
+      "recent": 85,
+      "previous": 49,
+      "change": 36
     },
     {
       "term": "newspapers",
-      "recent": 38,
-      "previous": 14,
-      "change": 24
+      "recent": 37,
+      "previous": 15,
+      "change": 22
     },
     {
       "term": "punch",
-      "recent": 38,
-      "previous": 14,
-      "change": 24
+      "recent": 37,
+      "previous": 15,
+      "change": 22
     },
     {
       "term": "punch newspapers",
-      "recent": 38,
-      "previous": 14,
-      "change": 24
+      "recent": 37,
+      "previous": 15,
+      "change": 22
     },
     {
       "term": "efcc",
-      "recent": 16,
+      "recent": 18,
       "previous": 4,
-      "change": 12
-    },
-    {
-      "term": "petrol",
-      "recent": 14,
-      "previous": 2,
-      "change": 12
+      "change": 14
     },
     {
       "term": "nigeria\u2019s",
+      "recent": 15,
+      "previous": 3,
+      "change": 12
+    },
+    {
+      "term": "oil",
       "recent": 14,
       "previous": 3,
       "change": 11
     },
     {
-      "term": "oil",
-      "recent": 13,
-      "previous": 3,
-      "change": 10
+      "term": "petrol",
+      "recent": 12,
+      "previous": 4,
+      "change": 8
     }
   ],
   "falling": [
@@ -70,12 +70,6 @@
       "recent": 0,
       "previous": 16,
       "change": -16
-    },
-    {
-      "term": "court",
-      "recent": 10,
-      "previous": 18,
-      "change": -8
     },
     {
       "term": "punchng",
@@ -88,6 +82,12 @@
       "recent": 0,
       "previous": 8,
       "change": -8
+    },
+    {
+      "term": "court",
+      "recent": 11,
+      "previous": 18,
+      "change": -7
     },
     {
       "term": "osun",
@@ -108,6 +108,12 @@
       "change": -5
     },
     {
+      "term": "opens",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
       "term": "teachers",
       "recent": 0,
       "previous": 5,
@@ -118,29 +124,23 @@
       "recent": 2,
       "previous": 6,
       "change": -4
-    },
-    {
-      "term": "bank accounts",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
       "recent": 164,
-      "previous": 112
+      "previous": 113
     },
     {
       "category": "Legal",
-      "recent": 34,
+      "recent": 37,
       "previous": 18
     },
     {
       "category": "Company",
-      "recent": 33,
-      "previous": 25
+      "recent": 31,
+      "previous": 26
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-15 17:39:28"
+  "generated": "2026-10-15 20:18:54"
 }

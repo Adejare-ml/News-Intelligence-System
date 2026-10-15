@@ -40,7 +40,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 66,
+      "total_mentions": 67,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 14,
-          "avg_risk": 30.4,
+          "mentions": 15,
+          "avg_risk": 29.7,
           "max_risk": 65
         }
       ]
@@ -83,7 +83,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 51,
+      "total_mentions": 52,
       "points": [
         {
           "week": "2026-09-07",
@@ -117,8 +117,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 12,
-          "avg_risk": 58.8,
+          "mentions": 13,
+          "avg_risk": 60.0,
           "max_risk": 85
         }
       ]
@@ -126,7 +126,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 45,
+      "total_mentions": 46,
       "points": [
         {
           "week": "2026-09-07",
@@ -160,8 +160,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 6,
-          "avg_risk": 26.7,
+          "mentions": 7,
+          "avg_risk": 24.3,
           "max_risk": 75
         }
       ]
@@ -699,6 +699,25 @@
       ]
     },
     {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 7,
+          "avg_risk": 14.3,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "total_mentions": 7,
@@ -726,25 +745,6 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 6,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1144,6 +1144,19 @@
       ]
     },
     {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 68.8,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -1327,6 +1340,31 @@
       ]
     },
     {
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "pipeline infrastructure",
       "label": "Pipeline Infrastructure Nigeria Limited",
       "total_mentions": 4,
@@ -1443,19 +1481,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 63.3,
-          "max_risk": 85
         }
       ]
     },
@@ -1689,6 +1714,25 @@
       ]
     },
     {
+      "key": "airways",
+      "label": "Nigeria Airways",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "police force",
       "label": "Nigeria Police Force",
       "total_mentions": 3,
@@ -1881,31 +1925,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2363,6 +2382,19 @@
       ]
     },
     {
+      "key": "hadi sirika",
+      "label": "Hadi Sirika",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "house of representatives committee on host communities",
       "label": "House of Representatives Committee on Host Communities",
       "total_mentions": 2,
@@ -2590,19 +2622,6 @@
           "mentions": 2,
           "avg_risk": 27.5,
           "max_risk": 35
-        }
-      ]
-    },
-    {
-      "key": "airways",
-      "label": "Nigeria Airways",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
         }
       ]
     },
@@ -4317,6 +4336,19 @@
       ]
     },
     {
+      "key": "federal ministry of aviation",
+      "label": "Federal Ministry of Aviation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "federal ministry of works",
       "label": "Federal Ministry of Works",
       "total_mentions": 1,
@@ -4625,19 +4657,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "hadi sirika",
-      "label": "Hadi Sirika",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
         }
       ]
     },
@@ -4978,20 +4997,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "joash amupitan",
-      "label": "Joash Amupitan",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-15 17:39:32"
+  "generated": "2026-10-15 20:18:56"
 }

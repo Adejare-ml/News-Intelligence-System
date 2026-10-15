@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-15 17:39:28",
+  "generated": "2026-10-15 20:18:54",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2370,
+      "likes": 2385,
       "downloads": 144280
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1708,
+      "likes": 1720,
       "downloads": 75253
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 860,
+      "likes": 870,
       "downloads": 15315
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 779,
+      "likes": 786,
       "downloads": 9278
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4365,
+      "likes": 4374,
       "downloads": 2415278
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 7904,
-      "downloads": 1866657
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 427,
+      "likes": 453,
       "downloads": 4048
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 7920,
+      "downloads": 1866657
     },
     {
       "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 482,
+      "likes": 485,
       "downloads": 296253
     }
   ],
   "papers": [
     {
+      "title": "Lluna: Collaborative Unimodal Models for Missing-Modality Inference",
+      "url": "https://huggingface.co/papers/2610.20526",
+      "upvotes": 0
+    },
+    {
+      "title": "Looking Complete Is Not Being Grounded: Evaluating LLM Sitreps Against Human-Authored Situation Reports",
+      "url": "https://huggingface.co/papers/2610.18762",
+      "upvotes": 0
+    },
+    {
+      "title": "When Left Is Right? Camera-Motion Understanding beyond Screen",
+      "url": "https://huggingface.co/papers/2610.17242",
+      "upvotes": 2
+    },
+    {
+      "title": "PreciseCoder: Faithful and Generalizable Debugging Beyond Unit-Test Rewards",
+      "url": "https://huggingface.co/papers/2610.18755",
+      "upvotes": 4
+    },
+    {
+      "title": "Drive3R: Block-wise Streaming Geometric Foundation Models for Autonomous Driving",
+      "url": "https://huggingface.co/papers/2610.15112",
+      "upvotes": 1
+    },
+    {
       "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation",
       "url": "https://huggingface.co/papers/2610.14162",
       "upvotes": 1
-    },
-    {
-      "title": "Cortex: Measurement-Gated Evolution and Pruning of Coding-Agent Skills and Rules",
-      "url": "https://huggingface.co/papers/2610.14216",
-      "upvotes": 1
-    },
-    {
-      "title": "History Replays Itself: Unleashing Long-Context Capability in Linear Attention",
-      "url": "https://huggingface.co/papers/2610.15715",
-      "upvotes": 8
-    },
-    {
-      "title": "The Agent Knew: Internal States Forecast Unauthorized Actions and Stop Them, and the Lies That Follow",
-      "url": "https://huggingface.co/papers/2610.17301",
-      "upvotes": 1
-    },
-    {
-      "title": "APEX-Harm: Evaluating Agent Safety in Shared Professional Workspaces",
-      "url": "https://huggingface.co/papers/2610.13623",
-      "upvotes": 9
-    },
-    {
-      "title": "CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline",
-      "url": "https://huggingface.co/papers/2610.19128",
-      "upvotes": 17
     }
   ]
 }
