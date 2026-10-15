@@ -6,6 +6,10 @@
       "label": "Abubakar Malami"
     },
     {
+      "key": "africa finance corporation",
+      "label": "Africa Finance Corporation"
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress"
     },
@@ -40,6 +44,10 @@
     {
       "key": "bola tinubu",
       "label": "Bola Tinubu"
+    },
+    {
+      "key": "cardoso",
+      "label": "Cardoso"
     },
     {
       "key": "central bank of",
@@ -92,6 +100,10 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives"
+    },
+    {
+      "key": "house of representatives committee on host communities",
+      "label": "House of Representatives Committee on Host Communities"
     },
     {
       "key": "independent national electoral commission",
@@ -178,6 +190,10 @@
       "label": "Oyo State Government"
     },
     {
+      "key": "pipeline infrastructure",
+      "label": "Pipeline Infrastructure Nigeria Limited"
+    },
+    {
       "key": "securities and exchange commission",
       "label": "Securities and Exchange Commission, Nigeria"
     },
@@ -246,6 +262,11 @@
       "weight": 3
     },
     {
+      "a": "economic and financial crimes commission",
+      "b": "nasir el rufai",
+      "weight": 3
+    },
+    {
       "a": "national petroleum company",
       "b": "ojulari",
       "weight": 3
@@ -258,6 +279,11 @@
     {
       "a": "abubakar malami",
       "b": "mambilla hydropower project",
+      "weight": 2
+    },
+    {
+      "a": "africa finance corporation",
+      "b": "cardoso",
       "weight": 2
     },
     {
@@ -347,11 +373,6 @@
     },
     {
       "a": "economic and financial crimes commission",
-      "b": "nasir el rufai",
-      "weight": 2
-    },
-    {
-      "a": "economic and financial crimes commission",
       "b": "ola olukoyede",
       "weight": 2
     },
@@ -378,6 +399,11 @@
     {
       "a": "house of representatives",
       "b": "national petroleum company",
+      "weight": 2
+    },
+    {
+      "a": "house of representatives committee on host communities",
+      "b": "pipeline infrastructure",
       "weight": 2
     },
     {
@@ -431,5 +457,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-14 20:34:49"
+  "generated": "2026-10-15 01:24:23"
 }

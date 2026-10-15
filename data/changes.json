@@ -1,21 +1,27 @@
 {
   "new_companies": [
-    "GNI"
+    "Tenaris"
   ],
   "new_people": [
-    "Cardoso"
+    "Segun Kayode"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "El-Rufai earmarked $600,000 for EFCC officials \u2013 Investigator",
+      "url": "https://punchng.com/el-rufai-earmarked-600000-for-efcc-officials-investigator/",
+      "risk": 85.0
+    }
+  ],
   "counts": {
     "new_companies": 1,
     "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-14 20:34:44"
+  "generated": "2026-10-15 01:24:02"
 }

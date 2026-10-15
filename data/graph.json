@@ -127,6 +127,42 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ac79f04a4e30",
+      "label": "Kano State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bba8d9d0344e",
+      "label": "House of Representatives Committee on Host Communities",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ec79cf0c700a",
+      "label": "State Security Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -135,12 +171,6 @@
     {
       "id": "23cd33f022ff",
       "label": "Benue State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,33 +241,39 @@
       "risk": "Low"
     },
     {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "5a3e00bd4822",
-      "label": "Edo State House of Assembly",
-      "type": "agency",
+      "id": "be252fefa816",
+      "label": "Nasir El-Rufai",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
-      "type": "agency",
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "9409708c9d80",
-      "label": "International Monetary Fund",
-      "type": "agency",
+      "id": "423d33ac58c5",
+      "label": "Cardoso",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "6ec7b4566d36",
-      "label": "Office of the National Security Adviser",
-      "type": "agency",
+      "id": "6f9832b76212",
+      "label": "Africa Finance Corporation",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "c9eb8a8dbd99",
+      "label": "Segun Kayode",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -265,18 +301,6 @@
       "risk": "Low"
     },
     {
-      "id": "be252fefa816",
-      "label": "Nasir El-Rufai",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "df87bf11b5a1",
       "label": "Taiwo Oyedele",
       "type": "person",
@@ -297,24 +321,6 @@
     {
       "id": "974787534a67",
       "label": "Osinbajo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "423d33ac58c5",
-      "label": "Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6f9832b76212",
-      "label": "Africa Finance Corporation",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
       "type": "person",
       "risk": "Low"
     },
@@ -447,12 +453,6 @@
     {
       "id": "58c58351d674",
       "label": "Olayemi Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0cbedbc12bbd",
-      "label": "Amupitan",
       "type": "person",
       "risk": "Low"
     },
@@ -601,8 +601,20 @@
       "risk": "Medium"
     },
     {
+      "id": "2be931f076db",
+      "label": "Primary Health Care centers",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "d3177bcccf13",
       "label": "Nigerian National Petroleum Company (NNPC) / House of Representatives Committee Recommendation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -647,27 +659,33 @@
       "label": "Enugu State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "408bb48fbb39",
-      "label": "Nigerian Startups",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "0786561b838b",
+      "from": "be252fefa816",
+      "to": "4b3b1b76a8e8",
+      "label": "Appointed as Former Governor of Kaduna State"
+    },
+    {
+      "id": "7c66b5e3768e",
+      "from": "423d33ac58c5",
+      "to": "6f9832b76212",
+      "label": "Appointed as Board Chairman"
+    },
+    {
+      "id": "5370f65cc0e4",
+      "from": "c9eb8a8dbd99",
+      "to": "ec79cf0c700a",
+      "label": "Appointed as Forensic Investigator"
+    },
     {
       "id": "b268c9e64d5a",
       "from": "292e5aa14acd",
@@ -687,12 +705,6 @@
       "label": "Appointed as Speaker"
     },
     {
-      "id": "0786561b838b",
-      "from": "be252fefa816",
-      "to": "4b3b1b76a8e8",
-      "label": "Appointed as Former Governor"
-    },
-    {
       "id": "9fe82dfb3ce1",
       "from": "df87bf11b5a1",
       "to": "0c2be969618b",
@@ -709,18 +721,6 @@
       "from": "974787534a67",
       "to": "b5da1d8370fd",
       "label": "Appointed as Former Vice President"
-    },
-    {
-      "id": "7c66b5e3768e",
-      "from": "423d33ac58c5",
-      "to": "6f9832b76212",
-      "label": "Appointed as Board Chairman"
-    },
-    {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
     },
     {
       "id": "b6c8fff20d98",
@@ -811,12 +811,6 @@
       "from": "58c58351d674",
       "to": "4c7e8211e98f",
       "label": "Appointed as Governor"
-    },
-    {
-      "id": "54a4513f3c3d",
-      "from": "0cbedbc12bbd",
-      "to": "bf69cb1ec5ea",
-      "label": "Appointed as Official"
     },
     {
       "id": "c71bb559e46f",
@@ -915,6 +909,18 @@
       "label": "PSC: 66.7%"
     },
     {
+      "id": "28c0a7cca224",
+      "from": "9b5549bd0205",
+      "to": "bba8d9d0344e",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "f17f809e54b8",
+      "from": "2be931f076db",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
@@ -984,18 +990,6 @@
       "id": "2e41a1d9c382",
       "from": "334c4a4c42fd",
       "to": "a99d3740770f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "5b569ce39252",
-      "from": "334c4a4c42fd",
-      "to": "6843b615b76a",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "1575daf5e671",
-      "from": "408bb48fbb39",
-      "to": "a75518830b0f",
       "label": "Contract Awardee"
     }
   ]

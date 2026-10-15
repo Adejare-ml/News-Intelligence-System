@@ -2,10 +2,10 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 47,
+      "contracts": 48,
       "undisclosed": 31,
       "totals": {
-        "NGN": 17159396000000.0,
+        "NGN": 17200096000000.0,
         "GBP": 1492000000.0,
         "USD": 31230000000.0
       }
@@ -429,6 +429,12 @@
       "totals": {}
     },
     {
+      "name": "House of Representatives Committee on Host Communities",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Independent Monitoring and Procurement Inspectorate",
       "contracts": 1,
       "undisclosed": 0,
@@ -672,6 +678,14 @@
       }
     },
     {
+      "name": "Primary Health Care centers",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 40700000000.0
+      }
+    },
+    {
       "name": "Nigeria Airways (Pensioners)",
       "contracts": 1,
       "undisclosed": 0,
@@ -757,6 +771,12 @@
     },
     {
       "name": "Not specified",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Pipeline Infrastructure Nigeria Limited",
       "contracts": 2,
       "undisclosed": 2,
       "totals": {}
@@ -946,12 +966,6 @@
       }
     },
     {
-      "name": "Pipeline Infrastructure Nigeria Limited",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "Plateau State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -1096,5 +1110,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 20:34:49"
+  "generated": "2026-10-15 01:24:23"
 }

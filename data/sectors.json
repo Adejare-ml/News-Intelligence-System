@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 31,
-      "mentions": 182,
+      "mentions": 183,
       "risk": {
         "Medium": 8,
         "Low": 20,
@@ -235,6 +235,14 @@
       }
     },
     {
+      "industry": "Finance",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Business Association",
       "companies": 1,
       "mentions": 3,
@@ -256,14 +264,6 @@
       "mentions": 3,
       "risk": {
         "Low": 3
-      }
-    },
-    {
-      "industry": "Finance",
-      "companies": 2,
-      "mentions": 3,
-      "risk": {
-        "Low": 2
       }
     },
     {
@@ -636,6 +636,14 @@
       }
     },
     {
+      "industry": "Steel/Industrial",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Technology/Digital Services",
       "companies": 1,
       "mentions": 1,
@@ -652,5 +660,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 20:34:49"
+  "generated": "2026-10-15 01:24:23"
 }

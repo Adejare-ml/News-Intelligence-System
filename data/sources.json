@@ -2,59 +2,59 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2499,
-      "published": 1421,
-      "filtered": 1078,
+      "total": 2502,
+      "published": 1423,
+      "filtered": 1079,
       "accept_rate": 57,
       "avg_risk": 28.7,
       "engines": {
         "unknown": 963,
-        "ollama": 450,
+        "ollama": 452,
         "nvidia": 8
       },
       "last_seen": "2026-10-14"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1734,
-      "published": 782,
-      "filtered": 952,
+      "total": 1741,
+      "published": 784,
+      "filtered": 957,
       "accept_rate": 45,
-      "avg_risk": 31.1,
+      "avg_risk": 31.0,
       "engines": {
         "unknown": 440,
-        "ollama": 338,
+        "ollama": 340,
         "nvidia": 4
       },
       "last_seen": "2026-10-14"
     },
     {
       "source": "Punch Newspapers",
-      "total": 918,
-      "published": 386,
-      "filtered": 532,
+      "total": 929,
+      "published": 390,
+      "filtered": 539,
       "accept_rate": 42,
-      "avg_risk": 26.6,
+      "avg_risk": 26.7,
       "engines": {
         "unknown": 188,
-        "ollama": 194,
+        "ollama": 198,
         "nvidia": 4
       },
-      "last_seen": "2026-10-14"
+      "last_seen": "2026-10-15"
     },
     {
       "source": "The Punch",
-      "total": 575,
-      "published": 325,
-      "filtered": 250,
+      "total": 578,
+      "published": 327,
+      "filtered": 251,
       "accept_rate": 57,
-      "avg_risk": 32.6,
+      "avg_risk": 32.8,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 215
+        "ollama": 217
       },
-      "last_seen": "2026-10-13"
+      "last_seen": "2026-10-14"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -220,10 +220,10 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 63,
+      "total": 67,
       "published": 15,
-      "filtered": 48,
-      "accept_rate": 24,
+      "filtered": 52,
+      "accept_rate": 22,
       "avg_risk": 28.5,
       "engines": {
         "unknown": 8,
@@ -2124,5 +2124,5 @@
       "last_seen": "2026-10-02"
     }
   ],
-  "generated": "2026-10-14 20:34:49"
+  "generated": "2026-10-15 01:24:23"
 }
