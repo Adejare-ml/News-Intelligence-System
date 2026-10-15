@@ -1,6 +1,20 @@
 {
   "alerts": [
     {
+      "date": "2026-10-15",
+      "title": "El-Rufai earmarked $600,000 for EFCC officials \u2013 Investigator",
+      "url": "https://punchng.com/el-rufai-earmarked-600000-for-efcc-officials-investigator/",
+      "source": "The Punch",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "State Security Service",
+        "Nasir El-Rufai",
+        "Segun Kayode"
+      ]
+    },
+    {
       "date": "2026-10-14",
       "title": "2006 Corruption Report: EFCC reopens case, seeks to prosecute Atiku | - The Eagle Online",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXp6SlBSa25WaWlFQUw3RHJXbDhxSng0eTY0SFFXSXpxZ195S3NScjk5MWdmZFpPcTRzdkN6RDktRnduVnZPcEptbTFDT2xaUURyYXkwWVNCd3o2MExoVXZQamhxQk81bF9MeGlLZTJNMGlRQ0RIQm5CWmFzQnk0czhObXFEZi1OU1VSOEJVOVJFWk1BMlU4Z0tCNGY?oc=5",
@@ -612,5 +626,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-14 20:34:49"
+  "generated": "2026-10-15 01:24:23"
 }
