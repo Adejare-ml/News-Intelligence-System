@@ -35,6 +35,17 @@
     --text-soft: #cbd5e1;
     --text-strong: #e2e8f0;
 
+    /* --accent and --text-dim were used eight times (insight counts, dossier
+       kind line, palette and panel meta) but never defined, so every one of
+       them silently resolved to its hardcoded fallback. Those fallbacks are
+       dark-theme values, and a var() fallback cannot be re-toned per theme:
+       under data-theme="light" the counts rendered #67e8f9 cyan on white
+       (~1.6:1) and the meta text #94a3b8 (~2.5:1), both well under AA. The
+       values here are exactly the old fallbacks, so dark is unchanged; the
+       light block below re-tones them like every other accent. */
+    --accent: #67e8f9;
+    --text-dim: #94a3b8;
+
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Outfit', sans-serif;
 
@@ -2371,18 +2382,30 @@ main[data-route-page] > :not([data-route-outlet]) {
 
 /* Appointments & departures */
 .move-list { list-style: none; margin: 0; padding: 0; }
+/* Each move reads as a block, not a row. The old rule was a wrapping flex
+   line with `margin-left: auto` on the event/date, which pinned that text
+   to the right edge: once a role wrapped -- and "→ General Manager @ Lagos
+   State Building Control Agency" wraps in a four-column grid -- the date
+   landed alone on its own line, flush right, two lines below the name it
+   belonged to. Four columns of that is a zigzag with no reading order.
+   Left-aligning the meta under the name gives the eye one edge per column. */
 .move-list li {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    align-items: baseline;
-    padding: 0.25rem 0;
+    display: block;
+    padding: 0.3rem 0 0.35rem 0.6rem;
+    border-left: 2px solid transparent;
     font-size: 0.88rem;
 }
-.move .insight-count { margin-left: auto; }
+.move-list li + li { margin-top: 0.1rem; }
+.move-list li.move-appointment { border-left-color: rgba(103, 232, 249, 0.45); }
+.move-list li.move-resignation { border-left-color: rgba(253, 164, 175, 0.5); }
+.move .insight-count { display: block; margin-left: 0; margin-top: 0.05rem; }
 .move-role { color: var(--text-muted, #9ca3af); }
 .move-resignation a { color: #fda4af; }
 .move-resignation .insight-count { color: #fda4af; }
+:root[data-theme="light"] .move-list li.move-appointment { border-left-color: rgba(14, 116, 144, 0.45); }
+:root[data-theme="light"] .move-list li.move-resignation { border-left-color: rgba(225, 29, 72, 0.4); }
+:root[data-theme="light"] .move-resignation a,
+:root[data-theme="light"] .move-resignation .insight-count { color: #be123c; }
 
 /* Procurement ledger section reuses .aura-table; just the note */
 #procurement .insight-generated { align-self: center; }
@@ -2571,6 +2594,11 @@ main[data-route-page] > :not([data-route-outlet]) {
     --chrome-bg: rgba(250, 250, 254, 0.94);
     --text-soft: #414a5e;
     --text-strong: #232a40;
+
+    /* Darkened a step for AA on white, matching --band-nigeria and
+       --text-muted rather than inventing two more greys. */
+    --accent: #0e7490;
+    --text-dim: #5b6172;
 
     /* Accents darken a step for AA contrast on white */
     --primary: #7c3aed;
