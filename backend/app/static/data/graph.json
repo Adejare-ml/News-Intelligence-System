@@ -151,6 +151,24 @@
       "risk": "Low"
     },
     {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9409708c9d80",
+      "label": "International Monetary Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bba8d9d0344e",
       "label": "House of Representatives Committee on Host Communities",
       "type": "agency",
@@ -159,6 +177,30 @@
     {
       "id": "ec79cf0c700a",
       "label": "State Security Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2909ef22fc0d",
+      "label": "Lagos Lotteries Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1043e3204234",
+      "label": "Lagos State Electricity Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ba4297c925fc",
+      "label": "Federal Housing Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0125a5da750c",
+      "label": "Nigeria Police Trust Fund",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,48 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "02bcb5f5a7b4",
-      "label": "Jigawa State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "974789639094",
-      "label": "Debt Management Office",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cc95e4811fd7",
-      "label": "Securities and Exchange Commission (SEC) Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -277,9 +277,21 @@
       "risk": "Low"
     },
     {
+      "id": "4b80ca311098",
+      "label": "Hadi Sirika",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "292e5aa14acd",
       "label": "David Umahi",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -322,6 +334,12 @@
       "id": "974787534a67",
       "label": "Osinbajo",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -448,12 +466,6 @@
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "58c58351d674",
-      "label": "Olayemi Cardoso",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -601,6 +613,18 @@
       "risk": "Medium"
     },
     {
+      "id": "5ac7e16e2803",
+      "label": "FHFL",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "413a05d99356",
+      "label": "Nigeria Air",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "2be931f076db",
       "label": "Primary Health Care centers",
       "type": "company",
@@ -647,18 +671,6 @@
       "label": "Unspecified Firm",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "f2e2861f01ca",
-      "label": "Ministry of Defence",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -685,6 +697,12 @@
       "from": "c9eb8a8dbd99",
       "to": "ec79cf0c700a",
       "label": "Appointed as Forensic Investigator"
+    },
+    {
+      "id": "f1edc6c3817b",
+      "from": "4b80ca311098",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former Minister"
     },
     {
       "id": "b268c9e64d5a",
@@ -807,12 +825,6 @@
       "label": "Appointed as Politician/Public Official"
     },
     {
-      "id": "fd1604102e20",
-      "from": "58c58351d674",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "c71bb559e46f",
       "from": "992de97c5755",
       "to": "a04fa9c8b7c4",
@@ -909,6 +921,18 @@
       "label": "PSC: 66.7%"
     },
     {
+      "id": "34888a28806f",
+      "from": "5ac7e16e2803",
+      "to": "0125a5da750c",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "1793b8b93155",
+      "from": "413a05d99356",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "28c0a7cca224",
       "from": "9b5549bd0205",
       "to": "bba8d9d0344e",
@@ -978,18 +1002,6 @@
       "id": "1a52b80b0b5c",
       "from": "c31b444adb68",
       "to": "ef6dbf96f94e",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a294d70a03c5",
-      "from": "334c4a4c42fd",
-      "to": "f2e2861f01ca",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "2e41a1d9c382",
-      "from": "334c4a4c42fd",
-      "to": "a99d3740770f",
       "label": "Contract Awardee"
     }
   ]

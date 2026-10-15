@@ -1,92 +1,92 @@
 {
-  "generated": "2026-10-15 01:24:06",
+  "generated": "2026-10-15 12:32:43",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2264,
-      "downloads": 135175
+      "likes": 2332,
+      "downloads": 144280
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1637,
-      "downloads": 65616
+      "likes": 1676,
+      "downloads": 75253
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 774,
-      "downloads": 12704
+      "likes": 811,
+      "downloads": 15315
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 623,
-      "downloads": 4157
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "task": "text-to-image",
-      "likes": 4308,
-      "downloads": 2315771
+      "likes": 752,
+      "downloads": 9278
     },
     {
       "id": "autotrust/JEV-35B",
       "url": "https://huggingface.co/autotrust/JEV-35B",
       "task": "text-classification",
-      "likes": 722,
-      "downloads": 27970
+      "likes": 906,
+      "downloads": 41837
     },
     {
-      "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
-      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
-      "task": "text-generation",
-      "likes": 458,
-      "downloads": 311969
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "task": "text-to-image",
+      "likes": 4341,
+      "downloads": 2415278
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7795,
-      "downloads": 1823507
+      "likes": 7870,
+      "downloads": 1866657
+    },
+    {
+      "id": "ConwayResearch/Underdog-Saluki-27B-1.0",
+      "url": "https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0",
+      "task": "text-generation",
+      "likes": 476,
+      "downloads": 344177
     }
   ],
   "papers": [
     {
-      "title": "Beyond Perfect Teammates: Multi-Agent Collaboration with Unreliable Colleagues",
-      "url": "https://huggingface.co/papers/2610.16117",
+      "title": "VASPO: Self-Distillation with Privileged Value Estimation",
+      "url": "https://huggingface.co/papers/2610.20516",
       "upvotes": 1
     },
     {
-      "title": "Simplifying and Improving On-Policy Distillation for Few-Step Diffusion",
-      "url": "https://huggingface.co/papers/2610.18472",
+      "title": "To Align or Not To Align: Check Your COMPASS Before You Train",
+      "url": "https://huggingface.co/papers/2610.18638",
       "upvotes": 1
     },
     {
-      "title": "Model-Based Online Decision Making via Generative Trajectory Planning",
-      "url": "https://huggingface.co/papers/2610.18677",
+      "title": "Rethinking Projector Training in Multimodal LLMs",
+      "url": "https://huggingface.co/papers/2610.18598",
+      "upvotes": 1
+    },
+    {
+      "title": "The Thinking Leakage in Reinforcement Learning for LLMs",
+      "url": "https://huggingface.co/papers/2610.14270",
+      "upvotes": 11
+    },
+    {
+      "title": "StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions",
+      "url": "https://huggingface.co/papers/2610.17309",
       "upvotes": 2
     },
     {
-      "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
-      "url": "https://huggingface.co/papers/2610.02638",
-      "upvotes": 0
-    },
-    {
-      "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
-      "url": "https://huggingface.co/papers/2610.18497",
-      "upvotes": 0
-    },
-    {
-      "title": "Who to Trust in Multi-Robot Systems: Joint Robot and Object Hypothesis Trust Inference via Neural-Symbolic Cross-Validation",
-      "url": "https://huggingface.co/papers/2610.14530",
+      "title": "Rethinking LLM-Guided Visual Question Answering: Does Deeper Knowledge Integration Really Help?",
+      "url": "https://huggingface.co/papers/2610.17079",
       "upvotes": 1
     }
   ]

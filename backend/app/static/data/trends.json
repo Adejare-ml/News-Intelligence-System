@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 215,
-  "previous_articles": 164,
+  "recent_articles": 228,
+  "previous_articles": 157,
   "rising": [
     {
       "term": "premium",
-      "recent": 78,
+      "recent": 82,
       "previous": 50,
-      "change": 28
+      "change": 32
     },
     {
       "term": "premium times",
-      "recent": 78,
+      "recent": 82,
       "previous": 50,
-      "change": 28
+      "change": 32
     },
     {
       "term": "times",
-      "recent": 78,
+      "recent": 82,
       "previous": 50,
-      "change": 28
+      "change": 32
     },
     {
       "term": "newspapers",
@@ -41,9 +41,9 @@
     },
     {
       "term": "petrol",
-      "recent": 15,
+      "recent": 16,
       "previous": 0,
-      "change": 15
+      "change": 16
     },
     {
       "term": "efcc",
@@ -58,9 +58,9 @@
       "change": 10
     },
     {
-      "term": "oil",
-      "recent": 12,
-      "previous": 3,
+      "term": "nigeria\u2019s",
+      "recent": 13,
+      "previous": 4,
       "change": 9
     }
   ],
@@ -102,12 +102,6 @@
       "change": -6
     },
     {
-      "term": "guardian",
-      "recent": 40,
-      "previous": 45,
-      "change": -5
-    },
-    {
       "term": "accounts",
       "recent": 2,
       "previous": 7,
@@ -120,27 +114,33 @@
       "change": -5
     },
     {
-      "term": "lagos",
-      "recent": 12,
-      "previous": 16,
+      "term": "bank",
+      "recent": 2,
+      "previous": 6,
+      "change": -4
+    },
+    {
+      "term": "bank accounts",
+      "recent": 0,
+      "previous": 4,
       "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 150,
-      "previous": 117
-    },
-    {
-      "category": "Legal",
-      "recent": 33,
-      "previous": 19
+      "recent": 160,
+      "previous": 112
     },
     {
       "category": "Company",
-      "recent": 32,
-      "previous": 26
+      "recent": 34,
+      "previous": 24
+    },
+    {
+      "category": "Legal",
+      "recent": 34,
+      "previous": 19
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-15 01:24:06"
+  "generated": "2026-10-15 12:32:44"
 }
