@@ -169,6 +169,12 @@
       "risk": "Low"
     },
     {
+      "id": "cab1be53cb3b",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "e4c5ee83197c",
       "label": "National Agency for Food and Drug Administration and Control",
       "type": "agency",
@@ -229,14 +235,8 @@
       "risk": "Low"
     },
     {
-      "id": "23cd33f022ff",
-      "label": "Benue State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
+      "id": "f8d3fab1ad95",
+      "label": "Kaduna State House of Assembly",
       "type": "agency",
       "risk": "Low"
     },
@@ -289,6 +289,24 @@
       "risk": "Low"
     },
     {
+      "id": "8ad929872c06",
+      "label": "Federal Ministry of Aviation",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ee247156c1db",
+      "label": "Yahaya Bello",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "292e5aa14acd",
       "label": "David Umahi",
       "type": "person",
@@ -304,12 +322,6 @@
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -435,24 +447,6 @@
     {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "d6f0773dc494",
-      "label": "Ifeanyi Okoye",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "fe0bc9447e28",
-      "label": "Manufacturers Association of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6ee06d9aa9e5",
-      "label": "Francis Meshioye",
       "type": "person",
       "risk": "Low"
     },
@@ -711,6 +705,18 @@
       "label": "Appointed as Governor of Bayelsa State"
     },
     {
+      "id": "3a7bc85f8491",
+      "from": "4b80ca311098",
+      "to": "8ad929872c06",
+      "label": "Appointed as Former Minister of Aviation"
+    },
+    {
+      "id": "7d6b725626de",
+      "from": "ee247156c1db",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as Former Governor"
+    },
+    {
       "id": "b268c9e64d5a",
       "from": "292e5aa14acd",
       "to": "23d8905a6cbb",
@@ -805,18 +811,6 @@
       "from": "f121c0e97820",
       "to": "3a4a88456e84",
       "label": "Appointed as Governor of Oyo State"
-    },
-    {
-      "id": "3807715b4180",
-      "from": "d6f0773dc494",
-      "to": "fe0bc9447e28",
-      "label": "Appointed as President"
-    },
-    {
-      "id": "c2b9a577adee",
-      "from": "6ee06d9aa9e5",
-      "to": "fe0bc9447e28",
-      "label": "Appointed as President"
     },
     {
       "id": "c71bb559e46f",
@@ -915,6 +909,12 @@
       "label": "PSC: 66.7%"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "34888a28806f",
       "from": "5ac7e16e2803",
       "to": "0125a5da750c",
@@ -935,12 +935,6 @@
     {
       "id": "f17f809e54b8",
       "from": "2be931f076db",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
       "to": "0c2be969618b",
       "label": "Contract Awardee"
     },

@@ -7425,10 +7425,10 @@
   },
   {
     "Company": "Nigeria Airways",
-    "Mention Count": 5,
-    "Last Seen": "2026-09-15 12:28",
+    "Mention Count": 6,
+    "Last Seen": "2026-10-15 20:16",
     "Industry": "Aviation",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -9198,5 +9198,13 @@
     "Industry": "Development Finance",
     "Risk Level": "Low",
     "First Seen": "2026-10-15 12:30"
+  },
+  {
+    "Company": "Malabu Oil",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-15 20:15",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-15 20:15"
   }
 ]
