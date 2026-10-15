@@ -24,7 +24,7 @@
       "recent_avg": 20.0,
       "previous_avg": 53.3,
       "delta": -33.3,
-      "recent_mentions": 3,
+      "recent_mentions": 4,
       "previous_mentions": 3
     },
     {
@@ -40,10 +40,19 @@
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "recent_avg": 30.0,
-      "previous_avg": 14.0,
-      "delta": 16.0,
+      "previous_avg": 12.5,
+      "delta": 17.5,
       "recent_mentions": 2,
-      "previous_mentions": 5
+      "previous_mentions": 4
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 30.0,
+      "previous_avg": 15.0,
+      "delta": 15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "economic and financial crimes commission",
@@ -52,33 +61,6 @@
       "previous_avg": 43.8,
       "delta": 14.1,
       "recent_mentions": 14,
-      "previous_mentions": 4
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": 16.7,
-      "delta": 13.3,
-      "recent_mentions": 2,
-      "previous_mentions": 3
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 23.3,
-      "previous_avg": 36.5,
-      "delta": -13.2,
-      "recent_mentions": 23,
-      "previous_mentions": 17
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 39.4,
-      "previous_avg": 26.2,
-      "delta": 13.2,
-      "recent_mentions": 8,
       "previous_mentions": 4
     },
     {
@@ -91,6 +73,15 @@
       "previous_mentions": 3
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 23.9,
+      "previous_avg": 35.0,
+      "delta": -11.1,
+      "recent_mentions": 22,
+      "previous_mentions": 18
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 29.7,
@@ -98,15 +89,6 @@
       "delta": 11.1,
       "recent_mentions": 17,
       "previous_mentions": 7
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 27.5,
-      "previous_avg": 20.0,
-      "delta": 7.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "bureau of public procurement",
@@ -118,15 +100,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 31.2,
-      "previous_avg": 38.6,
-      "delta": -7.4,
-      "recent_mentions": 8,
-      "previous_mentions": 7
-    },
-    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 26.0,
@@ -134,6 +107,15 @@
       "delta": 7.0,
       "recent_mentions": 5,
       "previous_mentions": 5
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 33.2,
+      "previous_avg": 26.2,
+      "delta": 7.0,
+      "recent_mentions": 11,
+      "previous_mentions": 4
     },
     {
       "key": "dangote refinery",
@@ -156,31 +138,49 @@
     {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 34.0,
+      "recent_avg": 35.0,
       "previous_avg": 30.0,
-      "delta": 4.0,
-      "recent_mentions": 5,
+      "delta": 5.0,
+      "recent_mentions": 6,
       "previous_mentions": 3
     },
     {
       "key": "international monetary fund",
       "label": "International Monetary Fund",
-      "recent_avg": 16.0,
+      "recent_avg": 15.0,
       "previous_avg": 20.0,
-      "delta": -4.0,
-      "recent_mentions": 5,
+      "delta": -5.0,
+      "recent_mentions": 6,
       "previous_mentions": 1
     },
     {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "recent_avg": 20.0,
-      "previous_avg": 17.5,
-      "delta": 2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "recent_avg": 18.3,
+      "previous_avg": 15.0,
+      "delta": 3.3,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 32.9,
+      "previous_avg": 36.2,
+      "delta": -3.3,
+      "recent_mentions": 7,
+      "previous_mentions": 8
+    },
+    {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "recent_avg": 81.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-15 12:32:46"
+  "generated": "2026-10-15 17:39:32"
 }

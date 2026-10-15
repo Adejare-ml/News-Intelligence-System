@@ -126,7 +126,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 42,
+      "total_mentions": 45,
       "points": [
         {
           "week": "2026-09-07",
@@ -160,8 +160,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 36.7,
+          "mentions": 6,
+          "avg_risk": 26.7,
           "max_risk": 75
         }
       ]
@@ -420,6 +420,31 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "total_mentions": 11,
@@ -488,31 +513,6 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 10,
@@ -546,7 +546,7 @@
     {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-14",
@@ -574,9 +574,40 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 17.5,
+          "mentions": 3,
+          "avg_risk": 18.3,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 20.0,
+          "max_risk": 30
         }
       ]
     },
@@ -668,37 +699,6 @@
       ]
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "total_mentions": 7,
@@ -726,6 +726,25 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 6,
+          "avg_risk": 15.0,
+          "max_risk": 20
         }
       ]
     },
@@ -845,25 +864,6 @@
           "mentions": 6,
           "avg_risk": 63.3,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 16.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1885,6 +1885,31 @@
       ]
     },
     {
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "serap",
       "label": "SERAP",
       "total_mentions": 3,
@@ -2078,6 +2103,25 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -2658,25 +2702,6 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3603,19 +3628,6 @@
       ]
     },
     {
-      "key": "bayelsa state government",
-      "label": "Bayelsa State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "bayero university kano",
       "label": "Bayero University Kano",
       "total_mentions": 1,
@@ -4015,6 +4027,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "douye diri",
+      "label": "Douye Diri",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -4966,20 +4991,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "johnvents",
-      "label": "Johnvents",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-15 12:32:46"
+  "generated": "2026-10-15 17:39:32"
 }
