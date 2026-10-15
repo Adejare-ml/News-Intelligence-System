@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 48,
-      "undisclosed": 31,
+      "contracts": 49,
+      "undisclosed": 32,
       "totals": {
         "NGN": 17200096000000.0,
         "GBP": 1492000000.0,
@@ -547,6 +547,12 @@
       }
     },
     {
+      "name": "Nigeria Police Trust Fund",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Nigeria Revenue Service",
       "contracts": 1,
       "undisclosed": 1,
@@ -880,6 +886,12 @@
       "totals": {}
     },
     {
+      "name": "FHFL",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Fireflies AI, Goose FL",
       "contracts": 1,
       "undisclosed": 1,
@@ -948,6 +960,12 @@
       "totals": {
         "USD": 7000000000.0
       }
+    },
+    {
+      "name": "Nigeria Air",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
     },
     {
       "name": "Nigerian National Petroleum Company Limited",
@@ -1110,5 +1128,5 @@
       }
     }
   ],
-  "generated": "2026-10-15 01:24:23"
+  "generated": "2026-10-15 12:32:46"
 }

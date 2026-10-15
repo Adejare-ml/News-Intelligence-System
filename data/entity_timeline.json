@@ -329,7 +329,7 @@
     {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "total_mentions": 13,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-14",
@@ -354,6 +354,12 @@
           "mentions": 3,
           "avg_risk": 20.0,
           "max_risk": 30
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -478,6 +484,31 @@
           "mentions": 2,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
         }
       ]
     },
@@ -668,27 +699,33 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 8,
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 2,
+          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         },
         {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
           "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
         },
         {
           "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 40
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
         }
       ]
     },
@@ -774,37 +811,6 @@
       ]
     },
     {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "federal airports authority of",
       "label": "Federal Airports Authority of Nigeria",
       "total_mentions": 6,
@@ -839,6 +845,25 @@
           "mentions": 6,
           "avg_risk": 63.3,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 16.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1176,25 +1201,6 @@
       ]
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 13.3,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "kucoin",
       "label": "KuCoin Nigeria Limited",
       "total_mentions": 4,
@@ -1229,6 +1235,31 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1513,25 +1544,6 @@
           "week": "2026-10-12",
           "mentions": 2,
           "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lagos chamber of commerce and industry",
-      "label": "Lagos Chamber of Commerce and Industry",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 17.5,
           "max_risk": 20
         }
       ]
@@ -2846,6 +2858,19 @@
       ]
     },
     {
+      "key": "tenaris",
+      "label": "Tenaris",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "toyin abraham",
       "label": "Toyin Abraham",
       "total_mentions": 2,
@@ -3630,6 +3655,19 @@
       ]
     },
     {
+      "key": "bisedge logistics infrastructure",
+      "label": "Bisedge Logistics & Infrastructure",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bola ahmed tinubu",
       "label": "Bola Ahmed Tinubu",
       "total_mentions": 1,
@@ -4059,6 +4097,19 @@
       ]
     },
     {
+      "key": "eko power",
+      "label": "Eko Power",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "eno",
       "label": "Eno",
       "total_mentions": 1,
@@ -4215,6 +4266,19 @@
       ]
     },
     {
+      "key": "federal housing authority",
+      "label": "Federal Housing Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "federal ministry of art culture tourism and the creative economy",
       "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
       "total_mentions": 1,
@@ -4299,6 +4363,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "finnfund",
+      "label": "Finnfund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4523,6 +4600,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "hadi sirika",
+      "label": "Hadi Sirika",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -4889,85 +4979,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "joint health sector unions",
-      "label": "Joint Health Sector Unions",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "joseph tegbe",
-      "label": "Joseph Tegbe",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "juhel",
-      "label": "Juhel Nigeria Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "katsina state government",
-      "label": "Katsina State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "katsina state hisbah corps",
-      "label": "Katsina State Hisbah Corps",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "keystone bank",
-      "label": "Keystone Bank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-15 01:24:23"
+  "generated": "2026-10-15 12:32:46"
 }

@@ -7314,7 +7314,7 @@
   {
     "Company": "Africa Finance Corporation",
     "Mention Count": 3,
-    "Last Seen": "2026-10-15 01:22",
+    "Last Seen": "2026-10-15 1:22",
     "Industry": "Finance",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7905,10 +7905,10 @@
   },
   {
     "Company": "Lagos Chamber of Commerce and Industry",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-23 20:01",
+    "Mention Count": 4,
+    "Last Seen": "2026-10-15 12:28",
     "Industry": "Business Association",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": "2026-09-14 18:23"
   },
   {
@@ -9074,7 +9074,7 @@
   {
     "Company": "Pipeline Infrastructure Nigeria Limited",
     "Mention Count": 4,
-    "Last Seen": "2026-10-15 01:23",
+    "Last Seen": "2026-10-15 1:23",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": "2026-10-13 19:45"
@@ -9161,10 +9161,42 @@
   },
   {
     "Company": "Tenaris",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-15 01:20",
-    "Industry": "Steel/Industrial",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-15 12:27",
+    "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-10-15 01:20"
+  },
+  {
+    "Company": "Eko Power",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-15 12:29",
+    "Industry": "Power/Energy",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-15 12:29"
+  },
+  {
+    "Company": "Nigeria Air",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-15 12:29",
+    "Industry": "Aviation",
+    "Risk Level": "High",
+    "First Seen": "2026-10-15 12:29"
+  },
+  {
+    "Company": "Bisedge Logistics & Infrastructure",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-15 12:30",
+    "Industry": "Logistics & Infrastructure",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-15 12:30"
+  },
+  {
+    "Company": "Finnfund",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-15 12:30",
+    "Industry": "Development Finance",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-15 12:30"
   }
 ]
