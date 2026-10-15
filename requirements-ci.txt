@@ -34,7 +34,7 @@ dspy==3.4.0
 # API-surface tests (tests/test_api_routes.py): the auth boundary was the
 # one part of the codebase with zero coverage. Pins match requirements.txt;
 # httpx is TestClient's transport and is CI-only.
-sqlalchemy==2.0.31
+sqlalchemy==2.1.4
 slowapi==0.1.10
 bcrypt==5.0.0
 httpx==0.28.1
