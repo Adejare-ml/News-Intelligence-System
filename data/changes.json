@@ -1,17 +1,21 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Stallion Group",
+    "United Nigeria Airlines",
+    "skuteczny SAHCO (\u0635\u0627\u0641\u064a / SAHCO PLC)"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 3,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-16 12:11:05"
+  "generated": "2026-10-16 17:16:32"
 }

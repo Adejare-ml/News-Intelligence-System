@@ -37,6 +37,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 15.0,
+      "previous_avg": 40.0,
+      "delta": -25.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "recent_avg": 30.0,
@@ -55,15 +64,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 59.0,
-      "previous_avg": 43.8,
-      "delta": 15.2,
-      "recent_mentions": 15,
-      "previous_mentions": 4
-    },
-    {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 30.0,
@@ -73,13 +73,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 28.9,
-      "previous_avg": 18.8,
-      "delta": 10.1,
-      "recent_mentions": 18,
-      "previous_mentions": 8
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 57.8,
+      "previous_avg": 43.8,
+      "delta": 14.0,
+      "recent_mentions": 16,
+      "previous_mentions": 4
     },
     {
       "key": "ogun state government",
@@ -102,11 +102,20 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 23.6,
-      "previous_avg": 31.4,
-      "delta": -7.8,
-      "recent_mentions": 14,
-      "previous_mentions": 22
+      "recent_avg": 23.8,
+      "previous_avg": 32.9,
+      "delta": -9.1,
+      "recent_mentions": 13,
+      "previous_mentions": 21
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 27.8,
+      "previous_avg": 20.0,
+      "delta": 7.8,
+      "recent_mentions": 20,
+      "previous_mentions": 7
     },
     {
       "key": "upstream petroleum regulatory commission",
@@ -170,17 +179,8 @@
       "delta": 3.3,
       "recent_mentions": 3,
       "previous_mentions": 4
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 32.9,
-      "previous_avg": 34.4,
-      "delta": -1.5,
-      "recent_mentions": 7,
-      "previous_mentions": 9
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-16 12:12:05"
+  "generated": "2026-10-16 17:16:37"
 }

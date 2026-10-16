@@ -121,14 +121,44 @@
       "risk": "Medium"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "1613f8dac921",
       "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "35ed6439a988",
+      "label": "Ogun State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "19e301887487",
+      "label": "National Hajj Commission of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,8 +175,20 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "35e7449c5c8b",
+      "label": "Pharmacists Council of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e79817c87e24",
+      "label": "National Identity Management Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "10681361867d",
+      "label": "Federal University of Technology, Akwa Ibom",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,48 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bba8d9d0344e",
-      "label": "House of Representatives Committee on Host Communities",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ec79cf0c700a",
-      "label": "State Security Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2909ef22fc0d",
-      "label": "Lagos Lotteries Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1043e3204234",
-      "label": "Lagos State Electricity Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ba4297c925fc",
-      "label": "Federal Housing Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0125a5da750c",
-      "label": "Nigeria Police Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "132d7e075c63",
       "label": "Thibaut Boidin",
       "type": "person",
@@ -250,6 +250,12 @@
       "id": "aecb5553d6f9",
       "label": "Nigerian Breweries Plc",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "568f4fc5fb3d",
+      "label": "Gbajabiamila",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -271,6 +277,12 @@
       "risk": "Low"
     },
     {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "423d33ac58c5",
       "label": "Cardoso",
       "type": "person",
@@ -286,6 +298,12 @@
       "id": "c9eb8a8dbd99",
       "label": "Segun Kayode",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ec79cf0c700a",
+      "label": "State Security Service",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -451,12 +469,6 @@
       "risk": "Low"
     },
     {
-      "id": "ad921d604863",
-      "label": "Unknown",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "992de97c5755",
       "label": "Babs Ogundeyi",
       "type": "psc",
@@ -601,6 +613,18 @@
       "risk": "Medium"
     },
     {
+      "id": "4757d2f9d325",
+      "label": "63 biometric agents",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "0125a5da750c",
+      "label": "Nigeria Police Trust Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "5ac7e16e2803",
       "label": "FHFL",
       "type": "company",
@@ -610,6 +634,12 @@
       "id": "413a05d99356",
       "label": "Nigeria Air",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "bba8d9d0344e",
+      "label": "House of Representatives Committee on Host Communities",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -647,18 +677,6 @@
       "label": "Kwara State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "ef6dbf96f94e",
-      "label": "Ondo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c31b444adb68",
-      "label": "Unspecified Firm",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -667,6 +685,12 @@
       "from": "132d7e075c63",
       "to": "aecb5553d6f9",
       "label": "Appointed as Chief Executive Officer"
+    },
+    {
+      "id": "ab11158b4224",
+      "from": "568f4fc5fb3d",
+      "to": "38b03bbf0068",
+      "label": "Appointed as Speaker of the House of Representatives"
     },
     {
       "id": "599ed5bc3174",
@@ -807,12 +831,6 @@
       "label": "Appointed as Chief of Staff"
     },
     {
-      "id": "6a0ea56ce923",
-      "from": "ad921d604863",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Chief of Staff"
-    },
-    {
       "id": "c71bb559e46f",
       "from": "992de97c5755",
       "to": "a04fa9c8b7c4",
@@ -915,6 +933,12 @@
       "label": "Contract Awardee"
     },
     {
+      "id": "8dfb56d07ece",
+      "from": "4757d2f9d325",
+      "to": "e79817c87e24",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "34888a28806f",
       "from": "5ac7e16e2803",
       "to": "0125a5da750c",
@@ -984,12 +1008,6 @@
       "id": "8fd0bb17da70",
       "from": "334c4a4c42fd",
       "to": "bf69cb1ec5ea",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "1a52b80b0b5c",
-      "from": "c31b444adb68",
-      "to": "ef6dbf96f94e",
       "label": "Contract Awardee"
     }
   ]

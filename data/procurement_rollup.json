@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 50,
-      "undisclosed": 32,
+      "contracts": 51,
+      "undisclosed": 33,
       "totals": {
         "NGN": 17215096000000.0,
         "GBP": 1492000000.0,
@@ -515,6 +515,12 @@
       "totals": {}
     },
     {
+      "name": "National Identity Management Commission",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "National Information Technology Development Agency (NITDA)",
       "contracts": 1,
       "undisclosed": 1,
@@ -660,8 +666,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 114,
-      "undisclosed": 69,
+      "contracts": 115,
+      "undisclosed": 70,
       "totals": {
         "NGN": 20755714090000.0,
         "USD": 41797140000.0
@@ -785,6 +791,12 @@
       "name": "Pipeline Infrastructure Nigeria Limited",
       "contracts": 2,
       "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "63 biometric agents",
+      "contracts": 1,
+      "undisclosed": 1,
       "totals": {}
     },
     {
@@ -1128,5 +1140,5 @@
       }
     }
   ],
-  "generated": "2026-10-16 12:12:05"
+  "generated": "2026-10-16 17:16:37"
 }

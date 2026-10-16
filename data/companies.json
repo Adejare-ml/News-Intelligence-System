@@ -473,7 +473,7 @@
   },
   {
     "Company": "NNPC Limited",
-    "Mention Count": 18,
+    "Mention Count": 19,
     "Last Seen": "2026-07-31 23:58",
     "Industry": "General",
     "Risk Level": "Low",
@@ -7281,10 +7281,10 @@
   },
   {
     "Company": "United Bank for Africa Plc",
-    "Mention Count": 4,
-    "Last Seen": "2026-08-28 6:53",
-    "Industry": "General",
-    "Risk Level": "Low",
+    "Mention Count": 5,
+    "Last Seen": "2026-10-16 17:14",
+    "Industry": "Banking",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -9041,9 +9041,9 @@
   },
   {
     "Company": "Nigeria Labour Congress",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-12 21:35",
-    "Industry": "Labor Union",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-16 17:11",
+    "Industry": "Labour Union",
     "Risk Level": "Low",
     "First Seen": "2026-10-12 21:35"
   },
@@ -9214,5 +9214,29 @@
     "Industry": "Beverages",
     "Risk Level": "Low",
     "First Seen": "2026-10-16 01:06"
+  },
+  {
+    "Company": "skuteczny SAHCO (\u0635\u0627\u0641\u064a / SAHCO PLC)",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-16 17:12",
+    "Industry": "Logistics/Aviation",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-16 17:12"
+  },
+  {
+    "Company": "Stallion Group",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-16 17:14",
+    "Industry": "Conglomerate",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-16 17:14"
+  },
+  {
+    "Company": "United Nigeria Airlines",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-16 17:15",
+    "Industry": "Aviation",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-16 17:15"
   }
 ]
