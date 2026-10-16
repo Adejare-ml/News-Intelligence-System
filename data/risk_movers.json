@@ -19,6 +19,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "united bank for africa",
+      "label": "United Bank for Africa",
+      "recent_avg": 45.0,
+      "previous_avg": 10.0,
+      "delta": 35.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 20.0,
@@ -82,15 +91,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 15.0,
-      "previous_avg": 25.0,
-      "delta": -10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 33.5,
@@ -111,10 +111,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 27.8,
+      "recent_avg": 27.9,
       "previous_avg": 20.0,
-      "delta": 7.8,
-      "recent_mentions": 20,
+      "delta": 7.9,
+      "recent_mentions": 21,
       "previous_mentions": 7
     },
     {
@@ -175,12 +175,12 @@
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "recent_avg": 18.3,
-      "previous_avg": 15.0,
-      "delta": 3.3,
+      "previous_avg": 16.7,
+      "delta": 1.6,
       "recent_mentions": 3,
-      "previous_mentions": 4
+      "previous_mentions": 3
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-16 17:16:37"
+  "generated": "2026-10-16 19:54:06"
 }

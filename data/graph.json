@@ -193,6 +193,12 @@
       "risk": "Low"
     },
     {
+      "id": "d06f2a985a0a",
+      "label": "Ministry of Justice",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "e4c5ee83197c",
       "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
       "type": "agency",
       "risk": "Low"
     },

@@ -1,64 +1,84 @@
 {
-  "generated": "2026-10-16 17:16:34",
+  "generated": "2026-10-16 19:54:03",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2493,
+      "likes": 2500,
       "downloads": 151258
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1804,
+      "likes": 1817,
       "downloads": 85612
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 831,
+      "likes": 840,
       "downloads": 17553
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 926,
+      "likes": 934,
       "downloads": 17421
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 533,
+      "likes": 547,
       "downloads": 6158
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4419,
+      "likes": 4424,
       "downloads": 2477554
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8040,
+      "likes": 8061,
       "downloads": 1920611
     },
     {
       "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 509,
+      "likes": 510,
       "downloads": 327786
     }
   ],
   "papers": [
+    {
+      "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
+      "url": "https://huggingface.co/papers/2610.20680",
+      "upvotes": 0
+    },
+    {
+      "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
+      "url": "https://huggingface.co/papers/2610.22280",
+      "upvotes": 2
+    },
+    {
+      "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
+      "url": "https://huggingface.co/papers/2610.15924",
+      "upvotes": 0
+    },
+    {
+      "title": "LeanPRM: Lean-Grounded Process Supervision for Natural Language Proof Verification",
+      "url": "https://huggingface.co/papers/2610.17697",
+      "upvotes": 3
+    },
     {
       "title": "Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR",
       "url": "https://huggingface.co/papers/2610.20461",
@@ -67,27 +87,7 @@
     {
       "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
       "url": "https://huggingface.co/papers/2610.22358",
-      "upvotes": 1
-    },
-    {
-      "title": "Learning to Read Out: Unembedding Dynamics in Language Model Pretraining",
-      "url": "https://huggingface.co/papers/2610.21025",
-      "upvotes": 1
-    },
-    {
-      "title": "Copy-Paste Language Models",
-      "url": "https://huggingface.co/papers/2610.19247",
-      "upvotes": 1
-    },
-    {
-      "title": "Explaining the Roles of Experts in Mixture-of-Experts LLMs for Personalization",
-      "url": "https://huggingface.co/papers/2610.22127",
-      "upvotes": 1
-    },
-    {
-      "title": "PAIR: Bridging Perception and Action in Vision-Language-Action Models",
-      "url": "https://huggingface.co/papers/2610.09016",
-      "upvotes": 1
+      "upvotes": 2
     }
   ]
 }
