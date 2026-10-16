@@ -40,7 +40,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 70,
+      "total_mentions": 71,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 18,
-          "avg_risk": 27.5,
+          "mentions": 19,
+          "avg_risk": 27.6,
           "max_risk": 65
         }
       ]
@@ -2043,6 +2043,25 @@
       ]
     },
     {
+      "key": "united bank for africa",
+      "label": "United Bank for Africa",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "amni",
       "label": "AMNI",
       "total_mentions": 2,
@@ -2926,6 +2945,19 @@
       ]
     },
     {
+      "key": "stallion",
+      "label": "Stallion Group",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "sunrise",
       "label": "Sunrise Ltd",
       "total_mentions": 2,
@@ -3012,25 +3044,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "united bank for africa",
-      "label": "United Bank for Africa",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -5026,20 +5039,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "institute of chartered secretaries and administrators of",
-      "label": "Institute of Chartered Secretaries and Administrators of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-16 17:16:37"
+  "generated": "2026-10-16 19:54:06"
 }

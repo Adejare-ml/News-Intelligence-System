@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 225,
-  "previous_articles": 167,
+  "recent_articles": 227,
+  "previous_articles": 166,
   "rising": [
     {
       "term": "premium",
@@ -23,21 +23,21 @@
     },
     {
       "term": "newspapers",
-      "recent": 32,
+      "recent": 33,
       "previous": 16,
-      "change": 16
+      "change": 17
     },
     {
       "term": "punch",
-      "recent": 32,
+      "recent": 33,
       "previous": 16,
-      "change": 16
+      "change": 17
     },
     {
       "term": "punch newspapers",
-      "recent": 32,
+      "recent": 33,
       "previous": 16,
-      "change": 16
+      "change": 17
     },
     {
       "term": "efcc",
@@ -58,10 +58,10 @@
       "change": 8
     },
     {
-      "term": "eagle",
-      "recent": 11,
-      "previous": 4,
-      "change": 7
+      "term": "warns",
+      "recent": 9,
+      "previous": 1,
+      "change": 8
     }
   ],
   "falling": [
@@ -97,9 +97,9 @@
     },
     {
       "term": "court",
-      "recent": 12,
+      "recent": 13,
       "previous": 18,
-      "change": -6
+      "change": -5
     },
     {
       "term": "accounts",
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 155,
+      "recent": 156,
       "previous": 123
     },
     {
       "category": "Legal",
-      "recent": 39,
+      "recent": 40,
       "previous": 17
     },
     {
       "category": "Company",
       "recent": 31,
-      "previous": 25
+      "previous": 24
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-16 17:16:35"
+  "generated": "2026-10-16 19:54:04"
 }

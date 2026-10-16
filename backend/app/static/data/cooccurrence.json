@@ -214,6 +214,10 @@
       "label": "Socio-Economic Rights and Accountability Project"
     },
     {
+      "key": "stallion",
+      "label": "Stallion Group"
+    },
+    {
       "key": "sunrise power",
       "label": "Sunrise Power"
     },
@@ -232,6 +236,10 @@
     {
       "key": "toyin abraham",
       "label": "Toyin Abraham"
+    },
+    {
+      "key": "united bank for africa",
+      "label": "United Bank for Africa"
     }
   ],
   "edges": [
@@ -464,7 +472,12 @@
       "a": "national petroleum company",
       "b": "totalenergies",
       "weight": 2
+    },
+    {
+      "a": "stallion",
+      "b": "united bank for africa",
+      "weight": 2
     }
   ],
-  "generated": "2026-10-16 17:16:37"
+  "generated": "2026-10-16 19:54:06"
 }
