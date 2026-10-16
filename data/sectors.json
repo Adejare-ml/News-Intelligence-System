@@ -188,6 +188,14 @@
       }
     },
     {
+      "industry": "Beverages",
+      "companies": 5,
+      "mentions": 5,
+      "risk": {
+        "Low": 5
+      }
+    },
+    {
       "industry": "Labor Union",
       "companies": 5,
       "mentions": 5,
@@ -209,14 +217,6 @@
       "mentions": 5,
       "risk": {
         "Low": 3
-      }
-    },
-    {
-      "industry": "Beverages",
-      "companies": 4,
-      "mentions": 4,
-      "risk": {
-        "Low": 4
       }
     },
     {
@@ -669,5 +669,5 @@
       }
     }
   ],
-  "generated": "2026-10-15 20:18:56"
+  "generated": "2026-10-16 01:08:26"
 }

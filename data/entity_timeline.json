@@ -40,7 +40,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 67,
+      "total_mentions": 68,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 15,
-          "avg_risk": 29.7,
+          "mentions": 16,
+          "avg_risk": 28.8,
           "max_risk": 65
         }
       ]
@@ -169,7 +169,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 21,
+      "total_mentions": 22,
       "points": [
         {
           "week": "2026-09-07",
@@ -203,7 +203,7 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -513,6 +513,37 @@
       ]
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 10,
@@ -581,33 +612,21 @@
       ]
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
       "total_mentions": 9,
       "points": [
         {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
           "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         },
         {
           "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 20.0,
-          "max_risk": 30
+          "mentions": 8,
+          "avg_risk": 15.0,
+          "max_risk": 20
         }
       ]
     },
@@ -695,25 +714,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 7,
-          "avg_risk": 14.3,
-          "max_risk": 20
         }
       ]
     },
@@ -4999,5 +4999,5 @@
       ]
     }
   ],
-  "generated": "2026-10-15 20:18:56"
+  "generated": "2026-10-16 01:08:26"
 }

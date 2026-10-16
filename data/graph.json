@@ -121,6 +121,30 @@
       "risk": "Medium"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9409708c9d80",
+      "label": "International Monetary Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -133,12 +157,6 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
       "type": "agency",
@@ -147,12 +165,6 @@
     {
       "id": "ac79f04a4e30",
       "label": "Kano State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -183,12 +195,6 @@
     {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9409708c9d80",
-      "label": "International Monetary Fund",
       "type": "agency",
       "risk": "Low"
     },
@@ -235,9 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "f8d3fab1ad95",
-      "label": "Kaduna State House of Assembly",
-      "type": "agency",
+      "id": "132d7e075c63",
+      "label": "Thibaut Boidin",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "aecb5553d6f9",
+      "label": "Nigerian Breweries Plc",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -445,12 +457,6 @@
       "risk": "Low"
     },
     {
-      "id": "f121c0e97820",
-      "label": "Seyi Makinde",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "992de97c5755",
       "label": "Babs Ogundeyi",
       "type": "psc",
@@ -643,12 +649,6 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "ef6dbf96f94e",
       "label": "Ondo State Government",
       "type": "agency",
@@ -662,6 +662,12 @@
     }
   ],
   "edges": [
+    {
+      "id": "5a66573fe49d",
+      "from": "132d7e075c63",
+      "to": "aecb5553d6f9",
+      "label": "Appointed as Chief Executive Officer"
+    },
     {
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
@@ -805,12 +811,6 @@
       "from": "ad921d604863",
       "to": "3a4a88456e84",
       "label": "Appointed as Chief of Staff"
-    },
-    {
-      "id": "63dfe1afb291",
-      "from": "f121c0e97820",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Governor of Oyo State"
     },
     {
       "id": "c71bb559e46f",
