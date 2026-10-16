@@ -113,9 +113,9 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 177,
+      "total": 179,
       "published": 61,
-      "filtered": 116,
+      "filtered": 118,
       "accept_rate": 34,
       "avg_risk": 24.0,
       "engines": {
@@ -123,7 +123,7 @@
         "ollama": 9,
         "nvidia": 2
       },
-      "last_seen": "2026-10-15"
+      "last_seen": "2026-10-16"
     },
     {
       "source": "leadership",
@@ -153,9 +153,9 @@
     },
     {
       "source": "punchng",
-      "total": 163,
+      "total": 164,
       "published": 37,
-      "filtered": 126,
+      "filtered": 127,
       "accept_rate": 23,
       "avg_risk": 22.8,
       "engines": {
@@ -163,7 +163,7 @@
         "nvidia": 2,
         "ollama": 17
       },
-      "last_seen": "2026-10-15"
+      "last_seen": "2026-10-16"
     },
     {
       "source": "vanguardngr",
@@ -752,6 +752,18 @@
       "last_seen": "2026-09-21"
     },
     {
+      "source": "Al Jazeera English",
+      "total": 3,
+      "published": 1,
+      "filtered": 2,
+      "accept_rate": 33,
+      "avg_risk": 45.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-10-15"
+    },
+    {
       "source": "Dailymail.com",
       "total": 3,
       "published": 1,
@@ -904,18 +916,6 @@
         "ollama": 1
       },
       "last_seen": "2026-08-22"
-    },
-    {
-      "source": "Al Jazeera English",
-      "total": 2,
-      "published": 1,
-      "filtered": 1,
-      "accept_rate": 50,
-      "avg_risk": 45.0,
-      "engines": {
-        "ollama": 1
-      },
-      "last_seen": "2026-09-22"
     },
     {
       "source": "Bleeding Green Nation",
@@ -2134,5 +2134,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-16 01:08:26"
+  "generated": "2026-10-16 12:12:05"
 }
