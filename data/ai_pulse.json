@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-16 01:08:23",
+  "generated": "2026-10-16 12:11:40",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2403,
-      "downloads": 144280
+      "likes": 2462,
+      "downloads": 151258
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1734,
-      "downloads": 75253
+      "likes": 1783,
+      "downloads": 85612
     },
     {
       "id": "Qwen/Qwen-Image-2.1-Turbo",
       "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 880,
-      "downloads": 15315
+      "likes": 911,
+      "downloads": 17421
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 794,
-      "downloads": 9278
-    },
-    {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "task": "text-to-image",
-      "likes": 4388,
-      "downloads": 2415278
+      "likes": 813,
+      "downloads": 17553
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 478,
-      "downloads": 4048
+      "likes": 513,
+      "downloads": 6158
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "task": "text-to-image",
+      "likes": 4412,
+      "downloads": 2477554
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 7954,
-      "downloads": 1866657
+      "likes": 8005,
+      "downloads": 1920611
     },
     {
       "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
       "task": "text-to-image",
-      "likes": 492,
-      "downloads": 296253
+      "likes": 506,
+      "downloads": 327786
     }
   ],
   "papers": [
     {
-      "title": "CoTranslator: Reverse to Forward Chain-of-Thought Translator for Reasoning Distillation",
-      "url": "https://huggingface.co/papers/2610.20828",
-      "upvotes": 0
-    },
-    {
-      "title": "Speculative Sampling in Interactive Video Generation",
-      "url": "https://huggingface.co/papers/2610.20556",
+      "title": "Beyond Policy Rollouts: Embedding-Space Directional Exploration with Anchored Noise for LLM RLVR",
+      "url": "https://huggingface.co/papers/2610.16105",
       "upvotes": 1
     },
     {
-      "title": "FreeSolo: Linear-time Sparse Attention with Zero-Shot Length Extrapolation",
-      "url": "https://huggingface.co/papers/2610.17191",
+      "title": "One Bias Score, Two Factors: How Mitigations Affect Option Bias in Multiple-Choice Evaluation",
+      "url": "https://huggingface.co/papers/2610.20993",
+      "upvotes": 1
+    },
+    {
+      "title": "Gen4P: Video Generators are 4D Perceivers",
+      "url": "https://huggingface.co/papers/2610.22371",
+      "upvotes": 1
+    },
+    {
+      "title": "When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill",
+      "url": "https://huggingface.co/papers/2610.21500",
+      "upvotes": 0
+    },
+    {
+      "title": "Virtual Head Attention",
+      "url": "https://huggingface.co/papers/2610.17959",
       "upvotes": 3
     },
     {
-      "title": "Unlocking Structured Pruning for Reasoning Language Models via Attention-Preserving MLP Trimming",
-      "url": "https://huggingface.co/papers/2610.19121",
-      "upvotes": 0
-    },
-    {
-      "title": "Lluna: Collaborative Unimodal Models for Missing-Modality Inference",
-      "url": "https://huggingface.co/papers/2610.20526",
-      "upvotes": 0
-    },
-    {
-      "title": "Looking Complete Is Not Being Grounded: Evaluating LLM Sitreps Against Human-Authored Situation Reports",
-      "url": "https://huggingface.co/papers/2610.18762",
-      "upvotes": 0
+      "title": "Speech event detector: Timestamped detection of non-verbal vocalizations and background sounds for rich speech transcription",
+      "url": "https://huggingface.co/papers/2610.14232",
+      "upvotes": 1
     }
   ]
 }
