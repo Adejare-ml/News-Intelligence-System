@@ -64,6 +64,15 @@
       "previous_mentions": 3
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 30.0,
+      "previous_avg": 10.0,
+      "delta": 20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "securities and exchange commission",
       "label": "Securities and Exchange Commission, Nigeria",
       "recent_avg": 35.0,
@@ -71,15 +80,6 @@
       "delta": 20.0,
       "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": 15.0,
-      "delta": 15.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "economic and financial crimes commission",
@@ -91,6 +91,15 @@
       "previous_mentions": 5
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 29.5,
+      "previous_avg": 20.0,
+      "delta": 9.5,
+      "recent_mentions": 22,
+      "previous_mentions": 7
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 33.5,
@@ -98,15 +107,6 @@
       "delta": 9.3,
       "recent_mentions": 10,
       "previous_mentions": 6
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 27.9,
-      "previous_avg": 20.0,
-      "delta": 7.9,
-      "recent_mentions": 21,
-      "previous_mentions": 7
     },
     {
       "key": "upstream petroleum regulatory commission",
@@ -121,10 +121,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 25.0,
-      "previous_avg": 32.3,
-      "delta": -7.3,
+      "previous_avg": 32.4,
+      "delta": -7.4,
       "recent_mentions": 13,
-      "previous_mentions": 22
+      "previous_mentions": 21
     },
     {
       "key": "lagos state government",
@@ -154,15 +154,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 8,
-      "previous_mentions": 1
-    },
-    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "recent_avg": 15.0,
@@ -172,15 +163,24 @@
       "previous_mentions": 1
     },
     {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "recent_avg": 18.3,
-      "previous_avg": 16.7,
-      "delta": 1.6,
-      "recent_mentions": 3,
-      "previous_mentions": 3
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "recent_avg": 15.6,
+      "previous_avg": 20.0,
+      "delta": -4.4,
+      "recent_mentions": 9,
+      "previous_mentions": 1
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 35.0,
+      "previous_avg": 31.8,
+      "delta": 3.2,
+      "recent_mentions": 6,
+      "previous_mentions": 11
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-17 01:14:55"
+  "generated": "2026-10-17 11:25:16"
 }

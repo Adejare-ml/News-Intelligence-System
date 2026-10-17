@@ -1,73 +1,73 @@
 {
-  "generated": "2026-10-17 01:14:53",
+  "generated": "2026-10-17 11:25:14",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2513,
-      "downloads": 151258
+      "likes": 2548,
+      "downloads": 158490
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1828,
-      "downloads": 85612
+      "likes": 1858,
+      "downloads": 95870
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 848,
-      "downloads": 17553
+      "likes": 871,
+      "downloads": 36252
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 556,
-      "downloads": 6158
+      "likes": 576,
+      "downloads": 8193
     },
     {
-      "id": "Qwen/Qwen-Image-2.1-Turbo",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-      "task": "text-to-image",
-      "likes": 944,
-      "downloads": 17421
+      "id": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "task": "image-to-image",
+      "likes": 547,
+      "downloads": 224108
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8092,
-      "downloads": 1920611
+      "likes": 8150,
+      "downloads": 1993003
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 4437,
-      "downloads": 2477554
+      "likes": 4462,
+      "downloads": 2571722
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 440,
-      "downloads": 815
+      "likes": 465,
+      "downloads": 1600
     }
   ],
   "papers": [
     {
       "title": "Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models",
       "url": "https://huggingface.co/papers/2610.21185",
-      "upvotes": 3
+      "upvotes": 5
     },
     {
       "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
       "url": "https://huggingface.co/papers/2610.21261",
-      "upvotes": 3
+      "upvotes": 104
     },
     {
       "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
@@ -77,12 +77,12 @@
     {
       "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
       "url": "https://huggingface.co/papers/2610.22280",
-      "upvotes": 4
+      "upvotes": 6
     },
     {
       "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
       "url": "https://huggingface.co/papers/2610.15924",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "LeanPRM: Lean-Grounded Process Supervision for Natural Language Proof Verification",
