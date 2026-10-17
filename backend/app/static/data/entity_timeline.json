@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 73,
+      "total_mentions": 74,
       "points": [
         {
           "week": "2026-09-14",
@@ -31,8 +31,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 8,
-          "avg_risk": 22.5,
+          "mentions": 9,
+          "avg_risk": 23.9,
           "max_risk": 40
         }
       ]
@@ -83,7 +83,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 53,
+      "total_mentions": 54,
       "points": [
         {
           "week": "2026-09-07",
@@ -117,8 +117,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 14,
-          "avg_risk": 58.6,
+          "mentions": 15,
+          "avg_risk": 57.3,
           "max_risk": 85
         }
       ]
@@ -1434,6 +1434,25 @@
       ]
     },
     {
+      "key": "world bank",
+      "label": "World Bank",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "african democratic congress",
       "label": "African Democratic Congress",
       "total_mentions": 3,
@@ -2522,6 +2541,19 @@
       ]
     },
     {
+      "key": "malabu oil and gas",
+      "label": "Malabu Oil and Gas Limited",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 55.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "mambilla hydropower project",
       "label": "Mambilla Hydropower Project",
       "total_mentions": 2,
@@ -3086,25 +3118,6 @@
       ]
     },
     {
-      "key": "world bank",
-      "label": "World Bank",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "yakubu gowon university",
       "label": "Yakubu Gowon University",
       "total_mentions": 2,
@@ -3165,6 +3178,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "aa oil",
+      "label": "AA Oil Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -3754,6 +3780,19 @@
       ]
     },
     {
+      "key": "barau jura barau",
+      "label": "Barau Jura Barau",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "bauchi state government",
       "label": "Bauchi State Government",
       "total_mentions": 1,
@@ -3763,6 +3802,19 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "baxi",
+      "label": "Baxi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -4170,6 +4222,19 @@
       ]
     },
     {
+      "key": "department of state services",
+      "label": "Department of State Services",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "douye diri",
       "label": "Douye Diri",
       "total_mentions": 1,
@@ -4508,6 +4573,19 @@
       ]
     },
     {
+      "key": "federation account",
+      "label": "Federation Account",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "fidelity bank",
       "label": "Fidelity Bank plc",
       "total_mentions": 1,
@@ -4653,6 +4731,19 @@
     {
       "key": "gbajabiamila",
       "label": "Gbajabiamila",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "godswill akpabio",
+      "label": "Godswill Akpabio",
       "total_mentions": 1,
       "points": [
         {
@@ -4948,98 +5039,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "ifeanyi okoye",
-      "label": "Ifeanyi Okoye",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ijaw youth council worldwide",
-      "label": "Ijaw Youth Council Worldwide",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ima gas field",
-      "label": "Ima Gas Field",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ima gas project",
-      "label": "Ima Gas Project",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "independent monitoring and procurement inspectorate",
-      "label": "Independent Monitoring and Procurement Inspectorate",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "infracredit",
-      "label": "InfraCredit",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-10-16 19:54:06"
+  "generated": "2026-10-17 01:14:55"
 }

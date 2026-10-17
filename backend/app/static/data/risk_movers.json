@@ -85,10 +85,10 @@
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 57.8,
-      "previous_avg": 43.8,
-      "delta": 14.0,
+      "previous_avg": 43.0,
+      "delta": 14.8,
       "recent_mentions": 16,
-      "previous_mentions": 4
+      "previous_mentions": 5
     },
     {
       "key": "central bank of",
@@ -98,15 +98,6 @@
       "delta": 9.3,
       "recent_mentions": 10,
       "previous_mentions": 6
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 23.8,
-      "previous_avg": 32.9,
-      "delta": -9.1,
-      "recent_mentions": 13,
-      "previous_mentions": 21
     },
     {
       "key": "federal government of",
@@ -125,6 +116,15 @@
       "delta": 7.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 25.0,
+      "previous_avg": 32.3,
+      "delta": -7.3,
+      "recent_mentions": 13,
+      "previous_mentions": 22
     },
     {
       "key": "lagos state government",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-16 19:54:06"
+  "generated": "2026-10-17 01:14:55"
 }
