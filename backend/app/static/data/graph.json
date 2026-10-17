@@ -631,6 +631,12 @@
       "risk": "Medium"
     },
     {
+      "id": "babe3308606d",
+      "label": "PINL",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "e79817c87e24",
       "label": "National Identity Management Commission",
       "type": "agency",
@@ -949,6 +955,12 @@
       "from": "6617740c0c1a",
       "to": "f101dbe3fd6a",
       "label": "PSC: 78.6%"
+    },
+    {
+      "id": "a8e62f428290",
+      "from": "babe3308606d",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",

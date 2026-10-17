@@ -118,15 +118,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 25.0,
-      "previous_avg": 32.4,
-      "delta": -7.4,
-      "recent_mentions": 13,
-      "previous_mentions": 21
-    },
-    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 26.0,
@@ -143,6 +134,15 @@
       "delta": 6.7,
       "recent_mentions": 3,
       "previous_mentions": 1
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 25.4,
+      "previous_avg": 31.8,
+      "delta": -6.4,
+      "recent_mentions": 12,
+      "previous_mentions": 22
     },
     {
       "key": "national agency for food and drug administration and control",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-17 16:08:01"
+  "generated": "2026-10-17 19:09:15"
 }

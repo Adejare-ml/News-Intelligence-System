@@ -2,8 +2,8 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 52,
-      "undisclosed": 34,
+      "contracts": 53,
+      "undisclosed": 35,
       "totals": {
         "NGN": 17215096000000.0,
         "GBP": 1492000000.0,
@@ -996,6 +996,12 @@
       }
     },
     {
+      "name": "PINL",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Plateau State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -1140,5 +1146,5 @@
       }
     }
   ],
-  "generated": "2026-10-17 16:08:01"
+  "generated": "2026-10-17 19:09:15"
 }
