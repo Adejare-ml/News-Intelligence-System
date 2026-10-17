@@ -724,6 +724,25 @@
       ]
     },
     {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 7,
+          "avg_risk": 14.3,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "total_mentions": 7,
@@ -930,25 +949,6 @@
       ]
     },
     {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 14.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "securities and exchange commission",
       "label": "Securities and Exchange Commission, Nigeria",
       "total_mentions": 6,
@@ -1014,6 +1014,31 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1304,31 +1329,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lagos chamber of commerce and industry",
-      "label": "Lagos Chamber of Commerce and Industry",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -5065,5 +5065,5 @@
       ]
     }
   ],
-  "generated": "2026-10-17 16:08:01"
+  "generated": "2026-10-17 19:09:15"
 }
