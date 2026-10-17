@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-17",
+      "title": "Church suspends archbishop over alleged N2 billion land sale - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPX0tmckg0TjBlUjB2T1VuTWsyZHZnOGNsdHlVX3JqVnlDWHA0WUxONFRKYkRhUkFPZENLal8tM1hoTHl5SVo3XzNXV05jMVltaTk0d0VEQ0M2VVpMZklRSWZTOVJueTVlRk15c0hjdXNQVTBZSUxNYVBwUDd2cFpLRDZwcUI1WDFpTDB5VFd4UGVDSU54RzlEcjVUWllzSGY5YkNLZTVnNUtQUmVpWlZxaVgzQV9DMmRqTXc?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": [
+        "Unnamed Archbishop"
+      ]
+    },
+    {
       "date": "2026-10-15",
       "title": "El-Rufai earmarked $600,000 for EFCC officials \u2013 Investigator",
       "url": "https://punchng.com/el-rufai-earmarked-600000-for-efcc-officials-investigator/",
@@ -673,5 +684,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-17 11:25:16"
+  "generated": "2026-10-17 16:08:01"
 }

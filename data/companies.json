@@ -6521,10 +6521,10 @@
   },
   {
     "Company": "Axxela",
-    "Mention Count": 1,
-    "Last Seen": "2026-08-03 15:35",
-    "Industry": "General",
-    "Risk Level": "Low",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-17 16:07",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -7976,8 +7976,8 @@
     "First Seen": "2026-09-16 12:29"
   },
   {
-    "Company": "RMB",
-    "Mention Count": 1,
+    "Company": "RMB Nigeria",
+    "Mention Count": 2,
     "Last Seen": "2026-09-16 12:29",
     "Industry": "Banking",
     "Risk Level": "Low",
@@ -9286,5 +9286,29 @@
     "Industry": "Technology/Data Security",
     "Risk Level": "Low",
     "First Seen": "2026-10-17 11:21"
+  },
+  {
+    "Company": "RMB Nigeria Asset Management Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-17 16:07",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-17 16:07"
+  },
+  {
+    "Company": "Association of Issuing Houses of Nigeria",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-17 16:07",
+    "Industry": "Financial Services",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-17 16:07"
+  },
+  {
+    "Company": "Helios Investment Partners",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-17 16:07",
+    "Industry": "Private Equity",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-17 16:07"
   }
 ]

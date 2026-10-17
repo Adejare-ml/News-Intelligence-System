@@ -75,11 +75,11 @@
     {
       "key": "securities and exchange commission",
       "label": "Securities and Exchange Commission, Nigeria",
-      "recent_avg": 35.0,
-      "previous_avg": 15.0,
-      "delta": 20.0,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "recent_avg": 20.0,
+      "previous_avg": 40.0,
+      "delta": -20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "economic and financial crimes commission",
@@ -130,10 +130,10 @@
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 26.0,
-      "previous_avg": 19.0,
-      "delta": 7.0,
+      "previous_avg": 18.8,
+      "delta": 7.2,
       "recent_mentions": 5,
-      "previous_mentions": 5
+      "previous_mentions": 4
     },
     {
       "key": "dangote refinery",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-17 11:25:16"
+  "generated": "2026-10-17 16:08:01"
 }
