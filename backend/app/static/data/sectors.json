@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 953,
-      "mentions": 1612,
+      "companies": 952,
+      "mentions": 1611,
       "risk": {
-        "Low": 841,
+        "Low": 840,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 35,
-      "mentions": 190,
+      "companies": 36,
+      "mentions": 192,
       "risk": {
-        "Medium": 11,
+        "Medium": 12,
         "Low": 21,
         "Critical": 1,
         "High": 2
@@ -33,10 +33,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 16,
-      "mentions": 29,
+      "companies": 17,
+      "mentions": 31,
       "risk": {
-        "Low": 12,
+        "Low": 13,
         "Medium": 4
       }
     },
@@ -104,6 +104,15 @@
       }
     },
     {
+      "industry": "Financial Services",
+      "companies": 4,
+      "mentions": 9,
+      "risk": {
+        "Medium": 2,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Legal/NGO",
       "companies": 1,
       "mentions": 9,
@@ -118,15 +127,6 @@
       "risk": {
         "Low": 6,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 3,
-      "mentions": 8,
-      "risk": {
-        "Medium": 1,
-        "Low": 2
       }
     },
     {
@@ -637,6 +637,14 @@
       }
     },
     {
+      "industry": "Private Equity",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Professional Association",
       "companies": 1,
       "mentions": 1,
@@ -701,5 +709,5 @@
       }
     }
   ],
-  "generated": "2026-10-17 11:25:16"
+  "generated": "2026-10-17 16:08:01"
 }

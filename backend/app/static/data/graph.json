@@ -133,8 +133,26 @@
       "risk": "Low"
     },
     {
+      "id": "0ba0cb08c8cb",
+      "label": "Nigerian Army",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7d0b46bbd4a7",
       "label": "World Bank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "42f5df65143b",
+      "label": "Federal Road Safety Corps",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "35e7449c5c8b",
-      "label": "Pharmacists Council of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e79817c87e24",
-      "label": "National Identity Management Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "10e91a46eee3",
       "label": "Godswill Akpabio",
       "type": "person",
@@ -256,6 +256,18 @@
       "id": "177791d52ca2",
       "label": "Oyedele",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "756d4b0b3d43",
+      "label": "Unnamed Archbishop",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "698e510c77d0",
+      "label": "Unnamed Church",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -469,12 +481,6 @@
       "risk": "Low"
     },
     {
-      "id": "77c793dd24f7",
-      "label": "Aliko Dangote",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "06dd8607f181",
       "label": "Aliyu Abubakar",
       "type": "psc",
@@ -539,6 +545,12 @@
       "label": "Livestock Feeds Business",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "77c793dd24f7",
+      "label": "Aliko Dangote",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "a5e155a532ad",
@@ -617,6 +629,12 @@
       "label": "Geregu Power Plc",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "e79817c87e24",
+      "label": "National Identity Management Commission",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "4757d2f9d325",
@@ -703,6 +721,12 @@
       "from": "177791d52ca2",
       "to": "0c2be969618b",
       "label": "Appointed as Government Representative"
+    },
+    {
+      "id": "fa79ffd6dedf",
+      "from": "756d4b0b3d43",
+      "to": "698e510c77d0",
+      "label": "Appointed as Archbishop"
     },
     {
       "id": "5a66573fe49d",
@@ -829,12 +853,6 @@
       "from": "0e6edc756364",
       "to": "bb9ff268bd4c",
       "label": "Appointed as Former Accountant General of the Federation"
-    },
-    {
-      "id": "3609cda17e09",
-      "from": "77c793dd24f7",
-      "to": "01ccce37119e",
-      "label": "Appointed as President and Chief Executive"
     },
     {
       "id": "3023a1a4371e",
