@@ -40,7 +40,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 71,
+      "total_mentions": 72,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 19,
-          "avg_risk": 27.6,
+          "mentions": 20,
+          "avg_risk": 29.5,
           "max_risk": 65
         }
       ]
@@ -329,7 +329,7 @@
     {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "total_mentions": 14,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-14",
@@ -357,7 +357,7 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -544,6 +544,25 @@
       ]
     },
     {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 9,
+          "avg_risk": 15.6,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 10,
@@ -607,25 +626,6 @@
           "week": "2026-10-12",
           "mentions": 3,
           "avg_risk": 18.3,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 8,
-          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -920,6 +920,25 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 14.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1329,25 +1348,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2362,6 +2362,25 @@
       ]
     },
     {
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "federal ministry of finance",
       "label": "Federal Ministry of Finance",
       "total_mentions": 2,
@@ -2723,6 +2742,25 @@
           "mentions": 2,
           "avg_risk": 27.5,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "data protection commission",
+      "label": "Nigeria Data Protection Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3897,6 +3935,19 @@
       ]
     },
     {
+      "key": "cappa",
+      "label": "CAPPA",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "cgc",
       "label": "CGC Nigeria Limited",
       "total_mentions": 1,
@@ -4361,19 +4412,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -5013,33 +5051,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "hydrocarbon pollution remediation project",
-      "label": "Hydrocarbon Pollution Remediation Project",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "ibom air",
-      "label": "Ibom Air",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-17 01:14:55"
+  "generated": "2026-10-17 11:25:16"
 }

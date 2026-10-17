@@ -6322,7 +6322,7 @@
   {
     "Company": "Nigerian National Petroleum Company Limited",
     "Mention Count": 83,
-    "Last Seen": "2026-10-17 01:13",
+    "Last Seen": "2026-10-17 1:13",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -9242,7 +9242,7 @@
   {
     "Company": "Malabu Oil and Gas Limited",
     "Mention Count": 2,
-    "Last Seen": "2026-10-17 01:13",
+    "Last Seen": "2026-10-17 1:13",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": "2026-10-16 19:52"
@@ -9270,5 +9270,21 @@
     "Industry": "Fintech",
     "Risk Level": "Low",
     "First Seen": "2026-10-17 01:14"
+  },
+  {
+    "Company": "CAPPA",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-17 11:21",
+    "Industry": "Non-Profit/Advocacy",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-17 11:21"
+  },
+  {
+    "Company": "SNPERA",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-17 11:21",
+    "Industry": "Technology/Data Security",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-17 11:21"
   }
 ]
