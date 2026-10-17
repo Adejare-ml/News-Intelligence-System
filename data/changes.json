@@ -1,19 +1,29 @@
 {
   "new_companies": [
-    "Malabu Oil and Gas Limited"
+    "AA Oil Limited",
+    "Baxi",
+    "Onafriq"
   ],
-  "new_people": [],
-  "psc_added": [],
+  "new_people": [
+    "Barau Jura Barau",
+    "Godswill Akpabio"
+  ],
+  "psc_added": [
+    {
+      "person": "Aliyu Abubakar",
+      "company": "AA Oil Limited"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
-    "psc_added": 0,
+    "new_companies": 3,
+    "new_people": 2,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-16 19:54:01"
+  "generated": "2026-10-17 01:14:47"
 }

@@ -121,14 +121,38 @@
       "risk": "Medium"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "7d0b46bbd4a7",
+      "label": "World Bank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1d96b08d2977",
+      "label": "Department of State Services",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8e95a32117a9",
+      "label": "Senate of the Federal Republic of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a7ce195e149b",
+      "label": "Federation Account",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,27 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
-      "type": "agency",
+      "id": "10e91a46eee3",
+      "label": "Godswill Akpabio",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
+      "id": "337f5ec18620",
+      "label": "Barau Jura Barau",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -316,6 +328,12 @@
       "id": "2d3a7d6c7ac4",
       "label": "Douye Diri",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -451,22 +469,16 @@
       "risk": "Low"
     },
     {
-      "id": "e153c1875584",
-      "label": "Dave Umahi",
-      "type": "person",
-      "risk": "Low"
+      "id": "06dd8607f181",
+      "label": "Aliyu Abubakar",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "8cecc5e1e226",
-      "label": "Ogunwuyi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
+      "id": "de55ca178512",
+      "label": "AA Oil Limited",
       "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "992de97c5755",
@@ -601,18 +613,6 @@
       "risk": "Medium"
     },
     {
-      "id": "d9289d25b570",
-      "label": "Jubril Adewale Tinubu",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "4ce236c57734",
-      "label": "Oando Plc",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
       "id": "4757d2f9d325",
       "label": "63 biometric agents",
       "type": "company",
@@ -680,6 +680,18 @@
     }
   ],
   "edges": [
+    {
+      "id": "d3525dfdc157",
+      "from": "10e91a46eee3",
+      "to": "8e95a32117a9",
+      "label": "Appointed as Senate President"
+    },
+    {
+      "id": "8c14c0c8ca5d",
+      "from": "337f5ec18620",
+      "to": "8e95a32117a9",
+      "label": "Appointed as Deputy Senate President"
+    },
     {
       "id": "5a66573fe49d",
       "from": "132d7e075c63",
@@ -819,16 +831,10 @@
       "label": "Appointed as None"
     },
     {
-      "id": "cc40b609644c",
-      "from": "e153c1875584",
-      "to": "0c2be969618b",
-      "label": "Appointed as Minister of Works"
-    },
-    {
-      "id": "504ad74ec27a",
-      "from": "8cecc5e1e226",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Chief of Staff"
+      "id": "3023a1a4371e",
+      "from": "06dd8607f181",
+      "to": "de55ca178512",
+      "label": "Significant influence or control"
     },
     {
       "id": "c71bb559e46f",
@@ -919,12 +925,6 @@
       "from": "6617740c0c1a",
       "to": "f101dbe3fd6a",
       "label": "PSC: 78.6%"
-    },
-    {
-      "id": "dcd8f62f665d",
-      "from": "d9289d25b570",
-      "to": "4ce236c57734",
-      "label": "PSC: 66.7%"
     },
     {
       "id": "7ae984c2a8c8",

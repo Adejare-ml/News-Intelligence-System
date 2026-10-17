@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-16 19:54:03",
+  "generated": "2026-10-17 01:14:53",
   "models": [
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2500,
+      "likes": 2513,
       "downloads": 151258
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1817,
+      "likes": 1828,
       "downloads": 85612
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 840,
+      "likes": 848,
       "downloads": 17553
-    },
-    {
-      "id": "Qwen/Qwen-Image-2.1-Turbo",
-      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
-      "task": "text-to-image",
-      "likes": 934,
-      "downloads": 17421
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 547,
+      "likes": 556,
       "downloads": 6158
     },
     {
-      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
-      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "id": "Qwen/Qwen-Image-2.1-Turbo",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
       "task": "text-to-image",
-      "likes": 4424,
-      "downloads": 2477554
+      "likes": 944,
+      "downloads": 17421
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8061,
+      "likes": 8092,
       "downloads": 1920611
     },
     {
-      "id": "AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
-      "url": "https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 510,
-      "downloads": 327786
+      "likes": 4437,
+      "downloads": 2477554
+    },
+    {
+      "id": "meta-models/Muse-Spark-Open-816B-A42B",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "task": "image-text-to-text",
+      "likes": 440,
+      "downloads": 815
     }
   ],
   "papers": [
     {
+      "title": "Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models",
+      "url": "https://huggingface.co/papers/2610.21185",
+      "upvotes": 3
+    },
+    {
+      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+      "url": "https://huggingface.co/papers/2610.21261",
+      "upvotes": 3
+    },
+    {
       "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
       "url": "https://huggingface.co/papers/2610.20680",
-      "upvotes": 0
+      "upvotes": 1
     },
     {
       "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
       "url": "https://huggingface.co/papers/2610.22280",
-      "upvotes": 2
+      "upvotes": 4
     },
     {
       "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
       "url": "https://huggingface.co/papers/2610.15924",
-      "upvotes": 0
+      "upvotes": 2
     },
     {
       "title": "LeanPRM: Lean-Grounded Process Supervision for Natural Language Proof Verification",
       "url": "https://huggingface.co/papers/2610.17697",
-      "upvotes": 3
-    },
-    {
-      "title": "Equal CER, Unequal Damage: Severity-Weighted Character Error Rate for OCR",
-      "url": "https://huggingface.co/papers/2610.20461",
-      "upvotes": 1
-    },
-    {
-      "title": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
-      "url": "https://huggingface.co/papers/2610.22358",
-      "upvotes": 2
+      "upvotes": 4
     }
   ]
 }

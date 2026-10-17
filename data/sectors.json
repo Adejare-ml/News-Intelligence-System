@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 34,
-      "mentions": 187,
+      "companies": 35,
+      "mentions": 190,
       "risk": {
-        "Medium": 10,
+        "Medium": 11,
         "Low": 21,
         "Critical": 1,
         "High": 2
@@ -78,6 +78,15 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 6,
+      "mentions": 10,
+      "risk": {
+        "Medium": 3,
+        "Low": 3
+      }
+    },
+    {
       "industry": "Political Party",
       "companies": 2,
       "mentions": 10,
@@ -118,15 +127,6 @@
       "risk": {
         "Medium": 1,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 4,
-      "mentions": 8,
-      "risk": {
-        "Medium": 3,
-        "Low": 1
       }
     },
     {
@@ -685,5 +685,5 @@
       }
     }
   ],
-  "generated": "2026-10-16 19:54:06"
+  "generated": "2026-10-17 01:14:55"
 }

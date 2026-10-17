@@ -1,49 +1,49 @@
 {
   "window_days": 7,
-  "recent_articles": 227,
-  "previous_articles": 166,
+  "recent_articles": 229,
+  "previous_articles": 167,
   "rising": [
     {
       "term": "premium",
-      "recent": 84,
-      "previous": 54,
-      "change": 30
+      "recent": 86,
+      "previous": 53,
+      "change": 33
     },
     {
       "term": "premium times",
-      "recent": 84,
-      "previous": 54,
-      "change": 30
+      "recent": 86,
+      "previous": 53,
+      "change": 33
     },
     {
       "term": "times",
-      "recent": 84,
-      "previous": 54,
-      "change": 30
+      "recent": 86,
+      "previous": 53,
+      "change": 33
     },
     {
       "term": "newspapers",
-      "recent": 33,
-      "previous": 16,
-      "change": 17
+      "recent": 32,
+      "previous": 18,
+      "change": 14
     },
     {
       "term": "punch",
-      "recent": 33,
-      "previous": 16,
-      "change": 17
+      "recent": 32,
+      "previous": 18,
+      "change": 14
     },
     {
       "term": "punch newspapers",
-      "recent": 33,
-      "previous": 16,
-      "change": 17
+      "recent": 32,
+      "previous": 18,
+      "change": 14
     },
     {
       "term": "efcc",
       "recent": 19,
-      "previous": 4,
-      "change": 15
+      "previous": 5,
+      "change": 14
     },
     {
       "term": "nigeria\u2019s",
@@ -53,14 +53,14 @@
     },
     {
       "term": "tinubu",
-      "recent": 12,
+      "recent": 13,
       "previous": 4,
-      "change": 8
+      "change": 9
     },
     {
-      "term": "warns",
-      "recent": 9,
-      "previous": 1,
+      "term": "oil",
+      "recent": 13,
+      "previous": 5,
       "change": 8
     }
   ],
@@ -74,8 +74,8 @@
     {
       "term": "nnpc",
       "recent": 7,
-      "previous": 15,
-      "change": -8
+      "previous": 16,
+      "change": -9
     },
     {
       "term": "punchng",
@@ -96,12 +96,6 @@
       "change": -7
     },
     {
-      "term": "court",
-      "recent": 13,
-      "previous": 18,
-      "change": -5
-    },
-    {
       "term": "accounts",
       "recent": 2,
       "previous": 7,
@@ -120,22 +114,28 @@
       "change": -5
     },
     {
-      "term": "presidency",
+      "term": "teachers",
       "recent": 0,
       "previous": 5,
       "change": -5
+    },
+    {
+      "term": "court",
+      "recent": 14,
+      "previous": 18,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 156,
+      "recent": 158,
       "previous": 123
     },
     {
       "category": "Legal",
       "recent": 40,
-      "previous": 17
+      "previous": 19
     },
     {
       "category": "Company",
@@ -145,9 +145,9 @@
     {
       "category": "Other",
       "recent": 0,
-      "previous": 2
+      "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-10-16 19:54:04"
+  "generated": "2026-10-17 01:14:53"
 }
