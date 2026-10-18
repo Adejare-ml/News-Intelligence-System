@@ -377,7 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
             note = document.createElement("p");
             note.id = "stats-load-error";
             note.className = "error-message";
-            note.style.cssText = "margin:10px 0 0 0; font-size:12.5px; color:#ef4444; display:flex; align-items:center; gap:10px; flex-wrap:wrap;";
+            note.style.cssText = "margin:10px 0 0 0; font-size:12.5px; color:#ff453a; display:flex; align-items:center; gap:10px; flex-wrap:wrap;";
             host.parentNode.insertBefore(note, host.nextSibling);
         }
         note.innerHTML = `<span>Could not load the intelligence datasets, so these counts are unknown${err && err.message ? ` (${esc(err.message)})` : ""}.</span>`;
@@ -1039,10 +1039,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Inner ring: risk levels in severity order with semantic colors
         const RISK_ORDER = ["Low", "Medium", "High", "Critical"];
         const RISK_COLORS = {
-            Low: 'rgba(16, 185, 129, 0.7)',
-            Medium: 'rgba(249, 115, 22, 0.7)',
-            High: 'rgba(244, 63, 94, 0.7)',
-            Critical: 'rgba(190, 18, 60, 0.85)'
+            Low: 'rgba(48, 209, 88, 0.7)',
+            Medium: 'rgba(255, 159, 10, 0.7)',
+            High: 'rgba(255, 69, 58, 0.7)',
+            Critical: 'rgba(215, 0, 21, 0.85)'
         };
         const riskLabels = RISK_ORDER.filter(l => (risks || {})[l] > 0);
         const riskValues = riskLabels.map(l => risks[l]);
@@ -1052,12 +1052,12 @@ document.addEventListener("DOMContentLoaded", () => {
             customLabels: labels,
             data: values,
             backgroundColor: [
-                'rgba(56, 189, 248, 0.75)',
-                'rgba(167, 139, 250, 0.75)',
-                'rgba(244, 114, 182, 0.75)',
-                'rgba(139, 92, 246, 0.75)',
-                'rgba(16, 185, 129, 0.75)',
-                'rgba(249, 115, 22, 0.75)'
+                'rgba(64, 156, 255, 0.75)',
+                'rgba(125, 122, 255, 0.75)',
+                'rgba(255, 159, 10, 0.75)',
+                'rgba(10, 132, 255, 0.75)',
+                'rgba(48, 209, 88, 0.75)',
+                'rgba(255, 159, 10, 0.75)'
             ],
             borderColor: 'rgba(255, 255, 255, 0.1)',
             borderWidth: 1
@@ -1087,7 +1087,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     legend: {
                         position: 'right',
                         labels: {
-                            color: '#9ca3af',
+                            color: '#98989d',
                             font: { family: 'Outfit', size: 10 },
                             padding: 8,
                             // Merge both rings into one legend: categories then risks
@@ -1099,7 +1099,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                             text: di === 0 ? lbl : `${lbl} risk`,
                                             fillStyle: ds.backgroundColor[i % ds.backgroundColor.length],
                                             strokeStyle: 'rgba(255,255,255,0.1)',
-                                            fontColor: '#9ca3af',
+                                            fontColor: '#98989d',
                                             datasetIndex: di,
                                             index: i
                                         });
@@ -1174,10 +1174,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         const TYPE_META = {
-            person:  { color: "#38bdf8", shape: "dot",      label: "Person" },
-            company: { color: "#a78bfa", shape: "square",   label: "Company" },
-            agency:  { color: "#f472b6", shape: "triangle", label: "Agency" },
-            psc:     { color: "#ef4444", shape: "diamond",  label: "PSC / Beneficial Owner" }
+            person:  { color: "#409cff", shape: "dot",      label: "Person" },
+            company: { color: "#7d7aff", shape: "square",   label: "Company" },
+            agency:  { color: "#ff9f0a", shape: "triangle", label: "Agency" },
+            psc:     { color: "#ff453a", shape: "diamond",  label: "PSC / Beneficial Owner" }
         };
 
         // Setup Nodes (dedupe by id: exported data can contain case-variant
@@ -1186,7 +1186,7 @@ document.addEventListener("DOMContentLoaded", () => {
         rawNodes.forEach(node => {
             if (!node.id || seenNodeIds.has(node.id)) return;
             seenNodeIds.add(node.id);
-            const meta = TYPE_META[node.type] || { color: "#8b5cf6", shape: "dot", label: "Entity" };
+            const meta = TYPE_META[node.type] || { color: "#0a84ff", shape: "dot", label: "Entity" };
             const links = degree[node.id] || 0;
             const name = node.label || node.name || "Entity";
 
@@ -1198,14 +1198,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     background: meta.color,
                     border: 'rgba(255,255,255,0.15)',
                     highlight: {
-                        background: '#06b6d4',
+                        background: '#0a84ff',
                         border: '#fff'
                     }
                 },
                 shape: meta.shape,
                 size: 12 + Math.min(links * 3, 16),
                 font: {
-                    color: '#e5e7eb',
+                    color: '#e8e8ed',
                     size: 11,
                     face: 'Outfit'
                 }
@@ -1226,10 +1226,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 arrows: 'to',
                 color: {
                     color: 'rgba(255, 255, 255, 0.15)',
-                    highlight: '#06b6d4'
+                    highlight: '#0a84ff'
                 },
                 font: {
-                    color: '#9ca3af',
+                    color: '#98989d',
                     size: 8,
                     face: 'Space Grotesk',
                     background: '#090a0f'
@@ -1436,18 +1436,18 @@ document.addEventListener("DOMContentLoaded", () => {
             const neighbors = new Set(network.getConnectedNodes(nodeId));
             neighbors.add(nodeId);
             data.nodes.update(nodes.map(n => neighbors.has(n.id)
-                ? { id: n.id, color: n.color, font: { color: '#e5e7eb' } }
+                ? { id: n.id, color: n.color, font: { color: '#e8e8ed' } }
                 : {
                     id: n.id,
-                    color: { background: 'rgba(75, 85, 99, 0.18)', border: 'rgba(255,255,255,0.04)' },
-                    font: { color: 'rgba(156, 163, 175, 0.3)' }
+                    color: { background: 'rgba(99, 99, 102, 0.18)', border: 'rgba(255,255,255,0.04)' },
+                    font: { color: 'rgba(152, 152, 157, 0.3)' }
                 }
             ));
         }
 
         function resetHighlight() {
             if (!canUpdateNodes) return;
-            data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: '#e5e7eb' } })));
+            data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: '#e8e8ed' } })));
             // Also restores edges a traced path recoloured.
             data.edges.update(validEdges.map(e => ({ id: e.id, color: e.color, width: 1 })));
         }
@@ -1469,16 +1469,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!canUpdateNodes) return;
             const inPath = new Set(pathIds);
             data.nodes.update(nodes.map(n => inPath.has(n.id)
-                ? { id: n.id, color: n.color, font: { color: '#e5e7eb' } }
+                ? { id: n.id, color: n.color, font: { color: '#e8e8ed' } }
                 : {
                     id: n.id,
-                    color: { background: 'rgba(75, 85, 99, 0.18)', border: 'rgba(255,255,255,0.04)' },
-                    font: { color: 'rgba(156, 163, 175, 0.3)' }
+                    color: { background: 'rgba(99, 99, 102, 0.18)', border: 'rgba(255,255,255,0.04)' },
+                    font: { color: 'rgba(152, 152, 157, 0.3)' }
                 }
             ));
             const onPath = new Set(window.AuraGraphPath.pathEdgeIds(pathIds, validEdges));
             data.edges.update(validEdges.map(e => onPath.has(e.id)
-                ? { id: e.id, color: { color: '#06b6d4', highlight: '#06b6d4' }, width: 2.5 }
+                ? { id: e.id, color: { color: '#0a84ff', highlight: '#0a84ff' }, width: 2.5 }
                 : { id: e.id, color: e.color, width: 1 }
             ));
         }
@@ -2289,8 +2289,8 @@ document.addEventListener("DOMContentLoaded", () => {
     function pscFlagBadge(flag) {
         const high = flag.severity === "high";
         const tone = high
-            ? "background:rgba(239,68,68,0.18); color:#ef4444; border:1px solid rgba(239,68,68,0.3);"
-            : "background:rgba(245,158,11,0.15); color:#fbbf24; border:1px solid rgba(245,158,11,0.3);";
+            ? "background:rgba(255,69,58,0.18); color:#ff453a; border:1px solid rgba(255,69,58,0.3);"
+            : "background:rgba(255,159,10,0.15); color:#ffd60a; border:1px solid rgba(255,159,10,0.3);";
         return `<span class="badge" title="${esc(flag.detail || "")}" style="${tone} font-size:10px; padding:2px 6px; margin:2px 2px 2px 0; display:inline-block;">${high ? "🚩" : "⚑"} ${esc(flag.title)}</span>`;
     }
 
@@ -2324,27 +2324,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (state.kind === "load-error") {
             return wrap(`
-                <div style="color:#ef4444; font-weight:700; margin-bottom:6px;">The PSC register could not be loaded.</div>
+                <div style="color:#ff453a; font-weight:700; margin-bottom:6px;">The PSC register could not be loaded.</div>
                 <div style="font-size:12.5px;">Nothing is being shown because the data did not arrive&nbsp;&mdash; not because no one holds significant control.</div>
-                ${state.reason ? `<div style="font-size:11.5px; margin-top:8px; color:#9ca3af;">Reason: ${esc(state.reason)}</div>` : ""}
+                ${state.reason ? `<div style="font-size:11.5px; margin-top:8px; color:#98989d;">Reason: ${esc(state.reason)}</div>` : ""}
                 <button class="btn btn-secondary" id="psc-retry-btn" style="margin-top:14px; padding:6px 14px; font-size:12px;">Retry</button>
             `);
         }
 
         if (state.kind === "register-empty") {
             return wrap(`
-                <div style="font-weight:600; color:#d1d5db; margin-bottom:6px;">No PSC disclosures have been recorded yet.</div>
+                <div style="font-weight:600; color:#c7c7cc; margin-bottom:6px;">No PSC disclosures have been recorded yet.</div>
                 <div style="font-size:12.5px;">The register loaded successfully and is empty. Rows appear here once the pipeline extracts a person with significant control.</div>
             `);
         }
 
         const bits = [];
-        if (state.filterLabel) bits.push(`the <strong style="color:#d1d5db;">${esc(state.filterLabel)}</strong> filter`);
-        if (state.query) bits.push(`the search &ldquo;<strong style="color:#d1d5db;">${esc(state.query)}</strong>&rdquo;`);
+        if (state.filterLabel) bits.push(`the <strong style="color:#c7c7cc;">${esc(state.filterLabel)}</strong> filter`);
+        if (state.query) bits.push(`the search &ldquo;<strong style="color:#c7c7cc;">${esc(state.query)}</strong>&rdquo;`);
         const because = bits.length ? bits.join(" and ") : "the selected filters";
 
         return wrap(`
-            <div style="font-weight:600; color:#d1d5db; margin-bottom:6px;">No disclosures match ${because}.</div>
+            <div style="font-weight:600; color:#c7c7cc; margin-bottom:6px;">No disclosures match ${because}.</div>
             <div style="font-size:12.5px;">${state.total} disclosure${state.total === 1 ? " is" : "s are"} loaded; ${state.total === 1 ? "it does" : "none of them"} match.</div>
             <button class="btn btn-secondary" id="psc-clear-filters-btn" style="margin-top:14px; padding:6px 14px; font-size:12px;">Clear filters</button>
         `);
@@ -2381,10 +2381,10 @@ document.addEventListener("DOMContentLoaded", () => {
             key: "Person Name", label: "Beneficial Owner", html: true,
             format: (v, r) => {
                 const isPep = (r["PEP Status"] || "").toLowerCase().startsWith("yes");
-                return `<div style="font-weight:700; color:#38bdf8; font-size:13.5px;">${esc(v || "N/A")}</div>`
+                return `<div style="font-weight:700; color:#409cff; font-size:13.5px;">${esc(v || "N/A")}</div>`
                     + `<div style="font-size:11px; color:var(--text-muted); margin-top:2px;">`
-                    + (isPep ? '<span style="color:#ef4444; font-weight:700;">• PEP Flagged</span> ' : '')
-                    + `${r["Board Role"] ? esc(r["Board Role"]) : '<span style="color:#6b7280;">Role not disclosed</span>'}</div>`;
+                    + (isPep ? '<span style="color:#ff453a; font-weight:700;">• PEP Flagged</span> ' : '')
+                    + `${r["Board Role"] ? esc(r["Board Role"]) : '<span style="color:#8e8e93;">Role not disclosed</span>'}</div>`;
             }
         },
         {
@@ -2395,13 +2395,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 // here invented a compliance fact for every blank cell.
                 const holdingEntity = r["Intermediate Entities"] || "";
                 const indirect = holdingEntity && holdingEntity !== "Direct Shareholder" && holdingEntity !== "Direct Holding";
-                return `<div style="font-weight:600; color:#a78bfa;">${esc(v || "N/A")}</div>`
-                    + `<div style="font-size:11px; color:#9ca3af; margin-top:2px;">`
+                return `<div style="font-weight:600; color:#7d7aff;">${esc(v || "N/A")}</div>`
+                    + `<div style="font-size:11px; color:#98989d; margin-top:2px;">`
                     + (indirect
                         ? `<i data-lucide="corner-down-right" style="width:10px; height:10px; display:inline;"></i> ${esc(holdingEntity)}`
                         : (holdingEntity
-                            ? '<span style="color:#6b7280;">Direct holding</span>'
-                            : '<span style="color:#6b7280;">Structure not disclosed</span>'))
+                            ? '<span style="color:#8e8e93;">Direct holding</span>'
+                            : '<span style="color:#8e8e93;">Structure not disclosed</span>'))
                     + `</div>`;
             }
         },
@@ -2412,14 +2412,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 // undisclosed rather than as a classification nobody made.
                 const tierText = r["Control Tier"] ? r["Control Tier"].split(":")[0] : "";
                 return (tierText
-                        ? `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38bdf8; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>`
-                        : `<span style="font-size:10px; color:#6b7280; display:inline-block; margin-bottom:3px;">Tier not disclosed</span>`)
-                    + `<div style="font-size:11.5px; color:#d1d5db; line-height:1.3;">${esc(v || "N/A")}</div>`;
+                        ? `<span style="font-size:10px; background:rgba(64,156,255,0.15); color:#409cff; padding:2px 6px; border-radius:3px; font-weight:700; display:inline-block; margin-bottom:3px;">${esc(tierText)}</span>`
+                        : `<span style="font-size:10px; color:#8e8e93; display:inline-block; margin-bottom:3px;">Tier not disclosed</span>`)
+                    + `<div style="font-size:11.5px; color:#c7c7cc; line-height:1.3;">${esc(v || "N/A")}</div>`;
             }
         },
         {
             key: "Percentage", label: "Equity Stake", html: true,
-            format: (v, r) => `<div style="font-weight:700; color:#f472b6; font-size:14px;">${esc(v || "N/A")}</div>`
+            format: (v, r) => `<div style="font-weight:700; color:#ff9f0a; font-size:14px;">${esc(v || "N/A")}</div>`
                 + `<div style="font-size:10px; color:var(--text-muted);">`
                 + (r["Direct %"] ? `Dir: ${esc(r["Direct %"])}` : '')
                 + (r["Indirect %"] ? ` | Ind: ${esc(r["Indirect %"])}` : '')
@@ -2431,7 +2431,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             key: "Regulatory Filing Ref", label: "Filing Ref", html: true,
-            format: (v) => `<code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#38bdf8;">`
+            format: (v) => `<code style="font-size:11px; background:rgba(0,0,0,0.3); padding:2px 6px; border-radius:3px; color:#409cff;">`
                 + (v ? esc(v) : '<span style="color:var(--text-muted);">Not disclosed</span>') + `</code>`
         },
         {
@@ -2508,7 +2508,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 _flagCount: flags.length,
                 _flagsHTML: flags.length > 0
                     ? flags.map(f => pscFlagBadge(f)).join('')
-                    : '<span style="color:#10b981; font-size:11px;">✓ Clean Disclosure</span>'
+                    : '<span style="color:#30d158; font-size:11px;">✓ Clean Disclosure</span>'
             });
         });
 
@@ -2568,14 +2568,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:15px;">
                     <div>
                         <span style="font-size:10.5px; text-transform:uppercase; letter-spacing:0.8px; color:var(--primary); font-weight:700;">Ultimate Beneficial Owner (UBO) Profile</span>
-                        <h2 style="margin:4px 0 0 0; font-size:20px; font-weight:700; color:#f9fafb;">${esc(record["Person Name"])}</h2>
-                        <div style="font-size:13px; color:#a78bfa; margin-top:3px; font-weight:600;">${record["Board Role"] ? esc(record["Board Role"]) : "Role not disclosed"} — ${esc(record["Company"])}</div>
+                        <h2 style="margin:4px 0 0 0; font-size:20px; font-weight:700; color:#f5f5f7;">${esc(record["Person Name"])}</h2>
+                        <div style="font-size:13px; color:#7d7aff; margin-top:3px; font-weight:600;">${record["Board Role"] ? esc(record["Board Role"]) : "Role not disclosed"} — ${esc(record["Company"])}</div>
                     </div>
                     <div style="text-align:right;">
-                        <span class="badge" style="background:${isPep ? 'rgba(239,68,68,0.25); color:#ef4444;' : 'rgba(16,185,129,0.2); color:#10b981;'} padding:4px 10px; font-size:11px; font-weight:700;">
+                        <span class="badge" style="background:${isPep ? 'rgba(255,69,58,0.25); color:#ff453a;' : 'rgba(48,209,88,0.2); color:#30d158;'} padding:4px 10px; font-size:11px; font-weight:700;">
                             ${isPep ? 'PEP Flagged (Enhanced Oversight)' : 'CAM 2020 Statutory Disclosure'}
                         </span>
-                        <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Risk Level: <strong style="color:#f59e0b;">${esc(record["Risk Level"] || "Not assessed")}</strong></div>
+                        <div style="font-size:11px; color:var(--text-muted); margin-top:4px;">Risk Level: <strong style="color:#ff9f0a;">${esc(record["Risk Level"] || "Not assessed")}</strong></div>
                     </div>
                 </div>
             </div>
@@ -2583,12 +2583,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (flags.length > 0) {
             html += `
-                <div style="background:rgba(239,68,68,0.1); border:1px solid rgba(239,68,68,0.3); border-radius:8px; padding:12px 16px; margin-bottom:18px;">
-                    <div style="font-weight:700; color:#ef4444; font-size:12px; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
+                <div style="background:rgba(255,69,58,0.1); border:1px solid rgba(255,69,58,0.3); border-radius:8px; padding:12px 16px; margin-bottom:18px;">
+                    <div style="font-weight:700; color:#ff453a; font-size:12px; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
                         <span>🚩 Active Compliance Anomalies & Red Flags Detected (${flags.length})</span>
                     </div>
                     <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:6px;">
-                        ${flags.map(f => `<span title="${esc(f.detail || "")}" style="font-size:11px; background:${f.severity === "high" ? "rgba(239,68,68,0.2); color:#fca5a5;" : "rgba(245,158,11,0.18); color:#fcd34d;"} padding:3px 8px; border-radius:4px; font-weight:600;">• ${esc(f.title)}</span>`).join('')}
+                        ${flags.map(f => `<span title="${esc(f.detail || "")}" style="font-size:11px; background:${f.severity === "high" ? "rgba(255,69,58,0.2); color:#ff6961;" : "rgba(255,159,10,0.18); color:#ffd60a;"} padding:3px 8px; border-radius:4px; font-weight:600;">• ${esc(f.title)}</span>`).join('')}
                     </div>
                 </div>
             `;
@@ -2596,14 +2596,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (records.length > 1) {
             html += `
-                <div style="background:rgba(56,189,248,0.08); border:1px solid rgba(56,189,248,0.2); border-radius:8px; padding:14px; margin-bottom:18px;">
-                    <h4 style="margin:0 0 8px 0; font-size:12px; color:#38bdf8; text-transform:uppercase; letter-spacing:0.5px;">Multi-Entity Corporate Portfolio (${records.length} Enterprises)</h4>
+                <div style="background:rgba(64,156,255,0.08); border:1px solid rgba(64,156,255,0.2); border-radius:8px; padding:14px; margin-bottom:18px;">
+                    <h4 style="margin:0 0 8px 0; font-size:12px; color:#409cff; text-transform:uppercase; letter-spacing:0.5px;">Multi-Entity Corporate Portfolio (${records.length} Enterprises)</h4>
                     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px;">
                         ${records.map(r => `
                             <div style="background:rgba(0,0,0,0.3); padding:10px; border-radius:6px; border:1px solid rgba(255,255,255,0.08);">
-                                <div style="font-weight:700; color:#f3f4f6; font-size:12px;">${esc(r["Company"])}</div>
-                                <div style="font-size:11px; color:#f472b6; font-weight:700; margin-top:2px;">Controlling Stake: ${esc(r["Percentage"])}</div>
-                                <div style="font-size:10px; color:#9ca3af; margin-top:2px;">Role: ${esc(r["Board Role"] || "Not disclosed")}</div>
+                                <div style="font-weight:700; color:#f5f5f7; font-size:12px;">${esc(r["Company"])}</div>
+                                <div style="font-size:11px; color:#ff9f0a; font-weight:700; margin-top:2px;">Controlling Stake: ${esc(r["Percentage"])}</div>
+                                <div style="font-size:10px; color:#98989d; margin-top:2px;">Role: ${esc(r["Board Role"] || "Not disclosed")}</div>
                             </div>
                         `).join('')}
                     </div>
@@ -2623,15 +2623,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         ➔ ${esc(record["Percentage"] || "Control")} ➔
                     </div>
                     ${holdingEntity && holdingEntity !== "Direct Holding" && holdingEntity !== "Direct Shareholder" ? `
-                    <div class="lineage-node" style="border-color:rgba(167,139,250,0.4); background:rgba(167,139,250,0.08);">
-                        <div class="node-title" style="color:#a78bfa;">${esc(holdingEntity)}</div>
+                    <div class="lineage-node" style="border-color:rgba(125,122,255,0.4); background:rgba(125,122,255,0.08);">
+                        <div class="node-title" style="color:#7d7aff;">${esc(holdingEntity)}</div>
                         <div class="node-sub">Intermediate Vehicle</div>
                     </div>
                     <div class="lineage-arrow">
                         ➔ Operating Equity ➔
                     </div>` : ""}
-                    <div class="lineage-node" style="border-color:rgba(56,189,248,0.4); background:rgba(56,189,248,0.08);">
-                        <div class="node-title" style="color:#38bdf8;">${esc(record["Company"])}</div>
+                    <div class="lineage-node" style="border-color:rgba(64,156,255,0.4); background:rgba(64,156,255,0.08);">
+                        <div class="node-title" style="color:#409cff;">${esc(record["Company"])}</div>
                         <div class="node-sub">Target Counterparty</div>
                     </div>
                 </div>
@@ -2641,15 +2641,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div style="background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); padding:12px; border-radius:8px;">
                     <span style="font-size:11px; color:var(--text-muted); display:block; margin-bottom:4px;">Direct vs Indirect Equity Split</span>
                     <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <span style="font-size:12.5px; color:#d1d5db;">Direct: <strong>${esc(record["Direct %"] || "N/A")}</strong></span>
-                        <span style="font-size:12.5px; color:#d1d5db;">Indirect: <strong>${esc(record["Indirect %"] || "N/A")}</strong></span>
-                        <span style="font-size:12.5px; color:#f472b6;">Voting: <strong>${esc(record["Voting Rights %"] || "Not disclosed")}</strong></span>
+                        <span style="font-size:12.5px; color:#c7c7cc;">Direct: <strong>${esc(record["Direct %"] || "N/A")}</strong></span>
+                        <span style="font-size:12.5px; color:#c7c7cc;">Indirect: <strong>${esc(record["Indirect %"] || "N/A")}</strong></span>
+                        <span style="font-size:12.5px; color:#ff9f0a;">Voting: <strong>${esc(record["Voting Rights %"] || "Not disclosed")}</strong></span>
                     </div>
                 </div>
                 <div style="background:rgba(0,0,0,0.2); border:1px solid rgba(255,255,255,0.06); padding:12px; border-radius:8px;">
                     <span style="font-size:11px; color:var(--text-muted); display:block; margin-bottom:4px;">Regulatory Filing Reference</span>
-                    <div style="font-size:13px; font-weight:700; color:#38bdf8;">${record["Regulatory Filing Ref"] ? esc(record["Regulatory Filing Ref"]) : "Not disclosed"}</div>
-                    <div style="font-size:10px; color:#9ca3af;">Filing date: ${record["Date"] ? esc(record["Date"]) : "not disclosed"} | ${record["Verification Status"] ? esc(record["Verification Status"]) : "unverified"}</div>
+                    <div style="font-size:13px; font-weight:700; color:#409cff;">${record["Regulatory Filing Ref"] ? esc(record["Regulatory Filing Ref"]) : "Not disclosed"}</div>
+                    <div style="font-size:10px; color:#98989d;">Filing date: ${record["Date"] ? esc(record["Date"]) : "not disclosed"} | ${record["Verification Status"] ? esc(record["Verification Status"]) : "unverified"}</div>
                 </div>
             </div>
         `;
@@ -2661,8 +2661,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div style="border-left:2px solid var(--primary); padding-left:12px; margin-left:6px;">
                         ${record["Timeline"].map(t => `
                             <div style="margin-bottom:10px; position:relative;">
-                                <div style="font-size:10.5px; color:#38bdf8; font-weight:700;">${esc(t.date)}</div>
-                                <div style="font-size:11.5px; color:#d1d5db; margin-top:2px;">${esc(t.event)}</div>
+                                <div style="font-size:10.5px; color:#409cff; font-weight:700;">${esc(t.date)}</div>
+                                <div style="font-size:11.5px; color:#c7c7cc; margin-top:2px;">${esc(t.event)}</div>
                             </div>
                         `).join('')}
                     </div>
@@ -2672,8 +2672,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         html += `
             <div style="background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.06); padding:14px; border-radius:8px; margin-bottom:20px;">
-                <h4 style="margin:0 0 6px 0; font-size:12.5px; color:#f3f4f6;">Control Rights & Governance Notes</h4>
-                <p style="margin:0; font-size:12px; color:#9ca3af; line-height:1.5;">
+                <h4 style="margin:0 0 6px 0; font-size:12.5px; color:#f5f5f7;">Control Rights & Governance Notes</h4>
+                <p style="margin:0; font-size:12px; color:#98989d; line-height:1.5;">
                     ${esc(record["Notes"] || record["Nature of Control"] || "Nature of control not disclosed in the source reporting.")}
                 </p>
             </div>

@@ -34,26 +34,29 @@
     // The alpha of the pulsing marker ring and the travelling packet is
     // computed per frame, so those two carry an "r, g, b" triple rather
     // than a finished colour.
+    // Redesign: neutral landmass, one blue accent for the Nigeria focus and
+    // markers, orange only for the offshore arcs it flags -- the same
+    // meaning-carries-color rule as the stylesheet.
     var PALETTES = {
         dark: {
-            sea: "rgba(99, 116, 158, 0.16)",
-            land: "rgba(176, 152, 252, 0.82)",
-            focusFill: "rgba(6, 182, 212, 0.18)",
-            focusStroke: "rgba(103, 232, 249, 0.75)",
-            arc: "rgba(244, 114, 182, 0.30)",
-            packetRGB: "253, 164, 175",
-            markerRGB: "103, 232, 249",
-            markerCore: "rgba(207, 250, 254, 0.95)"
+            sea: "rgba(120, 120, 128, 0.14)",
+            land: "rgba(174, 174, 178, 0.72)",
+            focusFill: "rgba(10, 132, 255, 0.16)",
+            focusStroke: "rgba(64, 156, 255, 0.80)",
+            arc: "rgba(255, 159, 10, 0.30)",
+            packetRGB: "255, 159, 10",
+            markerRGB: "64, 156, 255",
+            markerCore: "rgba(235, 245, 255, 0.95)"
         },
         light: {
-            sea: "rgba(71, 85, 120, 0.22)",
-            land: "rgba(109, 40, 217, 0.72)",
-            focusFill: "rgba(8, 145, 178, 0.16)",
-            focusStroke: "rgba(14, 116, 144, 0.85)",
-            arc: "rgba(190, 24, 93, 0.38)",
-            packetRGB: "190, 24, 93",
-            markerRGB: "14, 116, 144",
-            markerCore: "rgba(8, 47, 73, 0.95)"
+            sea: "rgba(60, 60, 67, 0.20)",
+            land: "rgba(99, 99, 102, 0.65)",
+            focusFill: "rgba(0, 102, 204, 0.14)",
+            focusStroke: "rgba(0, 102, 204, 0.85)",
+            arc: "rgba(201, 52, 0, 0.38)",
+            packetRGB: "201, 52, 0",
+            markerRGB: "0, 102, 204",
+            markerCore: "rgba(28, 28, 30, 0.95)"
         }
     };
 
