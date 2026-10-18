@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "88ddee7fc08f",
       "label": "Gombe State Government",
       "type": "agency",
@@ -201,12 +207,6 @@
     {
       "id": "42f5df65143b",
       "label": "Federal Road Safety Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -487,6 +487,18 @@
       "risk": "Low"
     },
     {
+      "id": "eb5a8434f1bd",
+      "label": "Tony Elumelu",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "507a818f1115",
+      "label": "Afrinvest",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "06dd8607f181",
       "label": "Aliyu Abubakar",
       "type": "psc",
@@ -589,12 +601,6 @@
       "risk": "High"
     },
     {
-      "id": "eb5a8434f1bd",
-      "label": "Tony Elumelu",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
       "id": "5bc53f66db9d",
       "label": "Seplat",
       "type": "company",
@@ -627,12 +633,6 @@
     {
       "id": "b52b514b8b5a",
       "label": "Zenith Bank Plc",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "f101dbe3fd6a",
-      "label": "Geregu Power Plc",
       "type": "company",
       "risk": "Medium"
     },
@@ -861,6 +861,12 @@
       "label": "Appointed as Minister of Power"
     },
     {
+      "id": "5d0107c18b4d",
+      "from": "eb5a8434f1bd",
+      "to": "507a818f1115",
+      "label": "Significant influence or control"
+    },
+    {
       "id": "3023a1a4371e",
       "from": "06dd8607f181",
       "to": "de55ca178512",
@@ -949,12 +955,6 @@
       "from": "85ea07465d1b",
       "to": "b52b514b8b5a",
       "label": "PSC: 16.2%"
-    },
-    {
-      "id": "77f74d23f68f",
-      "from": "6617740c0c1a",
-      "to": "f101dbe3fd6a",
-      "label": "PSC: 78.6%"
     },
     {
       "id": "6b1d699c5d81",

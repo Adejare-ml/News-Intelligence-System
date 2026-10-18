@@ -680,6 +680,25 @@
       ]
     },
     {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 8,
+          "avg_risk": 13.8,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 9,
@@ -720,25 +739,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 7,
-          "avg_risk": 14.3,
-          "max_risk": 20
         }
       ]
     },
@@ -3686,6 +3686,19 @@
       ]
     },
     {
+      "key": "afrinvest",
+      "label": "Afrinvest",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "agro climatic resilience in semi arid landscapes",
       "label": "Agro-Climatic Resilience in Semi-Arid Landscapes",
       "total_mentions": 1,
@@ -5062,20 +5075,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "green climate fund",
-      "label": "Green Climate Fund",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-18 16:20:54"
+  "generated": "2026-10-18 19:19:58"
 }

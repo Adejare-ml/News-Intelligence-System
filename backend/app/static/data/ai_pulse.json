@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-18 16:20:51",
+  "generated": "2026-10-18 19:19:55",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1246,
+      "likes": 1287,
       "downloads": 10233
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2640,
+      "likes": 2650,
       "downloads": 164339
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 963,
+      "likes": 988,
       "downloads": 57935
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1930,
+      "likes": 1936,
       "downloads": 103709
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 671,
+      "likes": 678,
       "downloads": 9620
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 759,
+      "likes": 783,
       "downloads": 338036
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 529,
+      "likes": 536,
       "downloads": 1809
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8322,
+      "likes": 8340,
       "downloads": 2012496
     }
   ],
@@ -62,7 +62,7 @@
     {
       "title": "Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models",
       "url": "https://huggingface.co/papers/2610.21185",
-      "upvotes": 5
+      "upvotes": 6
     },
     {
       "title": "Behavioral Compositionality of Sparse Autoencoder Representations",

@@ -73,6 +73,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 23.1,
+      "previous_avg": 36.9,
+      "delta": -13.8,
+      "recent_mentions": 8,
+      "previous_mentions": 8
+    },
+    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 57.2,
@@ -91,6 +100,15 @@
       "previous_mentions": 8
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 23.9,
+      "previous_avg": 31.7,
+      "delta": -7.8,
+      "recent_mentions": 9,
+      "previous_mentions": 24
+    },
+    {
       "key": "upstream petroleum regulatory commission",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "recent_avg": 27.5,
@@ -107,15 +125,6 @@
       "delta": 7.2,
       "recent_mentions": 5,
       "previous_mentions": 4
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 24.5,
-      "previous_avg": 31.7,
-      "delta": -7.2,
-      "recent_mentions": 10,
-      "previous_mentions": 23
     },
     {
       "key": "independent national electoral commission",
@@ -154,22 +163,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 28.9,
-      "previous_avg": 31.4,
-      "delta": -2.5,
-      "recent_mentions": 9,
-      "previous_mentions": 7
-    },
-    {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "recent_avg": 18.3,
-      "previous_avg": 16.7,
-      "delta": 1.6,
+      "previous_avg": 15.0,
+      "delta": 3.3,
       "recent_mentions": 3,
-      "previous_mentions": 3
+      "previous_mentions": 2
     },
     {
       "key": "national agency for food and drug administration and control",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-18 16:20:54"
+  "generated": "2026-10-18 19:19:58"
 }
