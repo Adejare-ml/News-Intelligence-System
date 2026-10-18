@@ -930,10 +930,10 @@
                             labels: series.labels,
                             datasets: [
                                 { type: "bar", label: "Articles / day", data: series.articles,
-                                  backgroundColor: "rgba(103, 232, 249, 0.35)", yAxisID: "y" },
+                                  backgroundColor: "rgba(64, 156, 255, 0.35)", yAxisID: "y" },
                                 { type: "line", label: "High-risk %", data: series.highRiskRate,
-                                  borderColor: "rgba(244, 114, 182, 0.9)",
-                                  backgroundColor: "rgba(244, 114, 182, 0.9)",
+                                  borderColor: "rgba(255, 159, 10, 0.9)",
+                                  backgroundColor: "rgba(255, 159, 10, 0.9)",
                                   tension: 0.3, pointRadius: 2, yAxisID: "rate" }
                             ]
                         },
@@ -959,9 +959,9 @@
                             labels: mix.map(function (m) { return m.engine; }),
                             datasets: [{
                                 data: mix.map(function (m) { return m.count; }),
-                                backgroundColor: ["rgba(103, 232, 249, 0.7)", "rgba(244, 114, 182, 0.7)",
-                                                  "rgba(167, 139, 250, 0.7)", "rgba(251, 191, 36, 0.7)",
-                                                  "rgba(148, 163, 184, 0.7)"]
+                                backgroundColor: ["rgba(64, 156, 255, 0.7)", "rgba(255, 159, 10, 0.7)",
+                                                  "rgba(125, 122, 255, 0.7)", "rgba(255, 214, 10, 0.7)",
+                                                  "rgba(142, 142, 147, 0.7)"]
                             }]
                         },
                         options: {
