@@ -13,13 +13,22 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 36,
-      "mentions": 192,
+      "companies": 35,
+      "mentions": 190,
       "risk": {
-        "Medium": 12,
+        "Medium": 11,
         "Low": 21,
         "Critical": 1,
         "High": 2
+      }
+    },
+    {
+      "industry": "Banking",
+      "companies": 17,
+      "mentions": 32,
+      "risk": {
+        "Low": 12,
+        "Medium": 5
       }
     },
     {
@@ -32,22 +41,23 @@
       }
     },
     {
-      "industry": "Banking",
-      "companies": 17,
-      "mentions": 31,
-      "risk": {
-        "Low": 13,
-        "Medium": 4
-      }
-    },
-    {
       "industry": "Aviation",
       "companies": 7,
-      "mentions": 20,
+      "mentions": 21,
       "risk": {
         "Medium": 4,
         "Low": 2,
         "High": 1
+      }
+    },
+    {
+      "industry": "Energy",
+      "companies": 7,
+      "mentions": 13,
+      "risk": {
+        "Medium": 4,
+        "High": 2,
+        "Low": 1
       }
     },
     {
@@ -65,16 +75,6 @@
       "risk": {
         "Low": 2,
         "Medium": 3
-      }
-    },
-    {
-      "industry": "Energy",
-      "companies": 6,
-      "mentions": 10,
-      "risk": {
-        "High": 2,
-        "Medium": 3,
-        "Low": 1
       }
     },
     {
@@ -717,5 +717,5 @@
       }
     }
   ],
-  "generated": "2026-10-17 19:09:15"
+  "generated": "2026-10-18 00:48:28"
 }

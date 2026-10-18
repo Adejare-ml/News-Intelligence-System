@@ -127,6 +127,24 @@
       "risk": "Low"
     },
     {
+      "id": "478418814097",
+      "label": "European Union",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1d96b08d2977",
+      "label": "Department of State Services",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "04d993f97b29",
+      "label": "Pension Reform Task Team",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -193,12 +211,6 @@
       "risk": "Low"
     },
     {
-      "id": "1d96b08d2977",
-      "label": "Department of State Services",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "8e95a32117a9",
       "label": "Senate of the Federal Republic of Nigeria",
       "type": "agency",
@@ -229,15 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "35ed6439a988",
-      "label": "Ogun State House of Assembly",
-      "type": "agency",
+      "id": "17530210d4fa",
+      "label": "Abdulrasheed Maina",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "19e301887487",
-      "label": "National Hajj Commission of Nigeria",
-      "type": "agency",
+      "id": "f94328a29154",
+      "label": "Faisal Maina",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -373,12 +391,6 @@
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "292e5aa14acd",
       "label": "David Umahi",
       "type": "person",
@@ -453,30 +465,6 @@
     {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f0e495aa7259",
-      "label": "Uwem Ite",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "85e2509b016d",
-      "label": "Nigeria\u2019s greening education institute",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "0e6edc756364",
-      "label": "Ahmed Idris",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "bb9ff268bd4c",
-      "label": "Office of the Accountant General of the Federation",
       "type": "company",
       "risk": "Low"
     },
@@ -711,6 +699,18 @@
   ],
   "edges": [
     {
+      "id": "773118582206",
+      "from": "17530210d4fa",
+      "to": "04d993f97b29",
+      "label": "Appointed as Former Chairman"
+    },
+    {
+      "id": "004ec5440d8a",
+      "from": "f94328a29154",
+      "to": "334c4a4c42fd",
+      "label": "Appointed as None"
+    },
+    {
       "id": "d3525dfdc157",
       "from": "10e91a46eee3",
       "to": "8e95a32117a9",
@@ -847,18 +847,6 @@
       "from": "ac849d0315b2",
       "to": "9b5f79697bc2",
       "label": "Appointed as Minister of Power"
-    },
-    {
-      "id": "52e1c9210472",
-      "from": "f0e495aa7259",
-      "to": "85e2509b016d",
-      "label": "Appointed as Chairman"
-    },
-    {
-      "id": "5d02ebe3a69d",
-      "from": "0e6edc756364",
-      "to": "bb9ff268bd4c",
-      "label": "Appointed as Former Accountant General of the Federation"
     },
     {
       "id": "3023a1a4371e",
