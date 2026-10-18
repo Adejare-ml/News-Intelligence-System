@@ -1,15 +1,6 @@
 {
   "movers": [
     {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 75.0,
-      "previous_avg": 20.0,
-      "delta": 55.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "david umahi",
       "label": "David Umahi",
       "recent_avg": 25.0,
@@ -37,22 +28,22 @@
       "previous_mentions": 3
     },
     {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 22.5,
-      "previous_avg": 55.0,
-      "delta": -32.5,
-      "recent_mentions": 4,
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "recent_avg": 70.0,
+      "previous_avg": 47.5,
+      "delta": 22.5,
+      "recent_mentions": 2,
       "previous_mentions": 2
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 15.0,
-      "previous_avg": 40.0,
-      "delta": -25.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 23.3,
+      "previous_avg": 43.3,
+      "delta": -20.0,
+      "recent_mentions": 3,
+      "previous_mentions": 3
     },
     {
       "key": "akwa ibom state government",
@@ -100,13 +91,13 @@
       "previous_mentions": 8
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 33.5,
-      "previous_avg": 24.2,
-      "delta": 9.3,
-      "recent_mentions": 10,
-      "previous_mentions": 6
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 39.3,
+      "previous_avg": 31.8,
+      "delta": 7.5,
+      "recent_mentions": 7,
+      "previous_mentions": 11
     },
     {
       "key": "upstream petroleum regulatory commission",
@@ -138,11 +129,11 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 25.4,
-      "previous_avg": 31.8,
-      "delta": -6.4,
-      "recent_mentions": 12,
-      "previous_mentions": 22
+      "recent_avg": 25.9,
+      "previous_avg": 31.3,
+      "delta": -5.4,
+      "recent_mentions": 11,
+      "previous_mentions": 23
     },
     {
       "key": "olayemi cardoso",
@@ -163,13 +154,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 35.0,
-      "previous_avg": 31.8,
-      "delta": 3.2,
-      "recent_mentions": 6,
-      "previous_mentions": 11
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 28.9,
+      "previous_avg": 31.4,
+      "delta": -2.5,
+      "recent_mentions": 9,
+      "previous_mentions": 7
     },
     {
       "key": "ports authority",
@@ -179,8 +170,17 @@
       "delta": 1.6,
       "recent_mentions": 3,
       "previous_mentions": 3
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "recent_avg": 34.0,
+      "previous_avg": 32.5,
+      "delta": 1.5,
+      "recent_mentions": 5,
+      "previous_mentions": 4
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-18 00:48:28"
+  "generated": "2026-10-18 12:00:45"
 }

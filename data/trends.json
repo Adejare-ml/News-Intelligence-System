@@ -1,49 +1,49 @@
 {
   "window_days": 7,
-  "recent_articles": 239,
-  "previous_articles": 166,
+  "recent_articles": 237,
+  "previous_articles": 168,
   "rising": [
     {
       "term": "premium",
-      "recent": 86,
-      "previous": 57,
-      "change": 29
+      "recent": 87,
+      "previous": 56,
+      "change": 31
     },
     {
       "term": "premium times",
-      "recent": 86,
-      "previous": 57,
-      "change": 29
+      "recent": 87,
+      "previous": 56,
+      "change": 31
     },
     {
       "term": "times",
-      "recent": 86,
-      "previous": 57,
-      "change": 29
-    },
-    {
-      "term": "newspapers",
-      "recent": 37,
-      "previous": 18,
-      "change": 19
-    },
-    {
-      "term": "punch",
-      "recent": 37,
-      "previous": 18,
-      "change": 19
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 37,
-      "previous": 18,
-      "change": 19
+      "recent": 87,
+      "previous": 56,
+      "change": 31
     },
     {
       "term": "efcc",
       "recent": 21,
       "previous": 5,
       "change": 16
+    },
+    {
+      "term": "newspapers",
+      "recent": 35,
+      "previous": 20,
+      "change": 15
+    },
+    {
+      "term": "punch",
+      "recent": 35,
+      "previous": 20,
+      "change": 15
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 35,
+      "previous": 20,
+      "change": 15
     },
     {
       "term": "guardian",
@@ -53,15 +53,15 @@
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 14,
+      "recent": 15,
       "previous": 4,
-      "change": 10
+      "change": 11
     },
     {
-      "term": "tinubu",
+      "term": "oil",
       "recent": 13,
-      "previous": 4,
-      "change": 9
+      "previous": 5,
+      "change": 8
     }
   ],
   "falling": [
@@ -73,14 +73,20 @@
     },
     {
       "term": "nnpc",
-      "recent": 6,
-      "previous": 16,
-      "change": -10
+      "recent": 5,
+      "previous": 17,
+      "change": -12
     },
     {
       "term": "petrol",
       "recent": 4,
       "previous": 12,
+      "change": -8
+    },
+    {
+      "term": "discount",
+      "recent": 2,
+      "previous": 10,
       "change": -8
     },
     {
@@ -96,15 +102,9 @@
       "change": -8
     },
     {
-      "term": "discount",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
-    },
-    {
-      "term": "osun",
-      "recent": 0,
-      "previous": 6,
+      "term": "vanguard",
+      "recent": 2,
+      "previous": 8,
       "change": -6
     },
     {
@@ -114,13 +114,13 @@
       "change": -5
     },
     {
-      "term": "petrol discount",
+      "term": "osun",
       "recent": 0,
       "previous": 5,
       "change": -5
     },
     {
-      "term": "teachers",
+      "term": "petrol discount",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 164,
-      "previous": 122
+      "recent": 163,
+      "previous": 125
     },
     {
       "category": "Legal",
-      "recent": 41,
+      "recent": 40,
       "previous": 20
     },
     {
       "category": "Company",
       "recent": 34,
-      "previous": 23
+      "previous": 22
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-18 00:48:21"
+  "generated": "2026-10-18 12:00:42"
 }
