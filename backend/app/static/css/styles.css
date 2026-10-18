@@ -2610,6 +2610,25 @@ main[data-route-page] > :not([data-route-outlet]) {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
 }
 
+/* Light theme: the graph panel's chrome was dark-fixed literals. */
+:root[data-theme="light"] .network-container {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.06);
+}
+:root[data-theme="light"] .graph-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #1d1d1f;
+}
+:root[data-theme="light"] .graph-legend {
+    background: rgba(255, 255, 255, 0.85);
+}
+:root[data-theme="light"] div.vis-tooltip {
+    background: rgba(255, 255, 255, 0.97) !important;
+    color: #1d1d1f !important;
+}
+
+
 /* ==========================================================
    SIGNALS PANEL — risk movers / sector watch / source scorecard
    ========================================================== */
