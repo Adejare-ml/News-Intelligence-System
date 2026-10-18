@@ -1,32 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-14 01:45:57 (UTC+1)
-**Run Window:** 2026-10-14, all runs to 01:45 (run 1 of the day)
+**Generated on:** 2026-10-18 11:59:40 (UTC+1)
+**Run Window:** 2026-10-18, all runs to 11:59 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 4
+- **Total Articles Processed:** 10
 - **High Risk Signals:** 0
 - **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Procurement Awards:** 1
 
 ---
 
-**Intelligence Briefing: Nigerian Corporate Transparency & MDA Operations**  
-**Date:** 14 October 2026 | **Coverage:** Daily coverage for 14 October 2026
+**Executive Intelligence Briefing: Nigerian Corporate Transparency & MDAs**  
+**Report Date:** 18 October 2026  
+**Coverage Window:** Publications on 18 October 2026 up to 11:59
 
 ### Key Developments
-* **National Oil Infrastructure Protection:** The Office of the National Security Adviser (ONSA) has established an operational security framework integrating statutory security agencies with private surveillance contractors, yielding the recovery of 2.4 million barrels of diverted crude oil ([The Punch](https://punchng.com/fg-unveils-oil-security-framework-recovers-2-4m-barrels/)).
-* **Sovereign Debt Issuance Targets:** The Debt Management Office (DMO) intends to raise N5.8 trillion through Federal Government of Nigeria (FGN) domestic bond auctions during the fourth quarter ([Punch Newspapers](https://news.google.com/rss/articles/CBMib0FVX3lxTE5Hb184X3dxN0ZySzF6OVZLZ09idlRjanFJbEhIMVJGZVdkVHhUZ1VkR0RsOTJwbVZYYkVHQW9zZmhMWXFZUVdhSTh5dzFqbHB5VWZOQUYxTjRSS3ZNSl95NE1KZ3dvZTdNMEhqU29SVQ?oc=5)).
-* **State Oil Company Financial Performance:** Nigerian National Petroleum Company Limited (NNPCL) reported a net profit after tax of N431 billion for the month of August ([dailynigerian](https://dailynigerian.com/nnpcl-profit-tax-rises/)).
-* **Downstream Refinery Rehabilitation:** NNPCL is awaiting comprehensive review reports regarding the commercial readiness and rehabilitation of the Port Harcourt and Warri refining facilities ([Punch Newspapers](https://news.google.com/rss/articles/CBMie0FVX3lxTFAxWkI5bXhueWJRMm1JaGJSeUhMU0pLcWJRT3l0VGVZRV94UGViZFJXTVNhNmRtZ1VFeno0LVRsZ3l1QTFEY3hOUl8yd2xEQXZhRW9YalJlSm1leElyZjZUU2NYM3otYTJ3dW43TW5fd1BYSW81VFNEUXRCUQ?oc=5)).
+* **Legal Action Over INEC Electoral Finances:** The Socio-Economic Rights and Accountability Project (SERAP) instituted a lawsuit against the Independent National Electoral Commission (INEC) over an alleged failure to account for ₦126 billion allocated for electoral expenditures ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiywFBVV95cUxQM1pCQ3dZQzYxNkw2cVlPWEIybU1GVFBpNGh4cy1KdzlBMFU5ME1rMmh6MDdXVl9sZUpDZzN2TUR0TDN5NG9Jc2VubDZraUU2cVZSeU9lVWpURUs3YkZHeUlPc2pGY3NRTmpuTExUVnZLOFFnSEt6OVd5Vmd4MWF6MTM1MVZUWkNnRU5oRXNVNXdiWGQ5ZmlyckVlMVZOdld5WEJsbmNRYVFWTXRXQlNTR2xuLTRmRVRtUXNZaGlHZGIwSWxacEtERTRmVQ?oc=5)).
+* **Katsina Renewable Energy Setback:** The prolonged stalling of a key wind farm project in Katsina State illustrates persistent structural and implementation challenges in Nigeria's transition toward commercial-scale renewable energy infrastructure ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbmw5VHVYNGhHQXJwcHBpWmpuTU5qcVZ0TWljUmJuQXB4LWJsaU5lWEU5STZHVVA5bVRxcFhxMnh1enhzdXVEMkJnVjdqYk5CNDNRTk9vT3RVNFJic3J0RV9FQ1Uxb1NzdXBCdG9fZmM3S014ak83aFdJbTFZN2RIdTl3NjBER3dBSXFPM2tVWHlnT2RCQ1dDUHlIRnhnb2ZpUFY2TzJxUkJMeGdqa2VZU3NvSzdVRm5qcDNiQTJlX0x0UzlmNTVpdW05Z2d1LVJFQVFGWmdGc1Fial82UUVJMEJYVnBYOU1ycVR6Vg?oc=5)).
+* **Off-Grid Solar Commissioning in Gombe:** An isolated Gombe State community was connected to a newly installed 1MW solar power facility, ending a 17-year lack of national grid access ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMizAFBVV95cUxPR09jSkZQSXBhREQwcEQ3a0xGYk1POENkdU1sYU9qdmR5TjlMTTdlZndEdXFEcnVETERnQ285MEs4WWl1LWdSVWhBVXN4SDBySUd0ZUZVa2lzZWRsckFFMlBmaVA0LVg0dkNuX3hLRTNxdjBmTjJ5WkpRcldUNzRwa09aM0hrYndEMDMyWlVXbFVZbFFpVWpCZ3QwMDRERGQ1RjZpRmEtd1hvUDNjdkduTldMUEtUUUE2c050QjBrZFRNWXh3VkljQmJKUnQ?oc=5)).
 
 ### High Risk Alerts
-No elevated governance threats, sanctions alerts, or high-level regulatory infractions were observed in today's monitored stream.
+No severe integrity or high-level regulatory non-compliance events met the reporting threshold during this tracking window.
 
 ### Beneficial Ownership & PSC Disclosures
-The monitored reports contain no persons with significant control (PSC) disclosures or corporate beneficial ownership filings.
+The data contains no persons with significant control (PSC) or beneficial ownership disclosures for this period.
 
 ### Procurement & Board Changes
-No public procurement contract awards or federal agency governing board reconfigurations were recorded during this period.
+* **Gombe Solar Project Execution:** The Gombe State Government facilitated the delivery of a 1MW solar power plant installation project; however, transaction details regarding contractor selection and procurement spend were omitted in public reporting ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMizAFBVV95cUxPR09jSkZQSXBhREQwcEQ3a0xGYk1POENkdU1sYU9qdmR5TjlMTTdlZndEdXFEcnVETERnQ285MEs4WWl1LWdSVWhBVXN4SDBySUd0ZUZVa2lzZWRsckFFMlBmaVA0LVg0dkNuX3hLRTNxdjBmTjJ5WkpRcldUNzRwa09aM0hrYndEMDMyWlVXbFVZbFFpVWpCZ3QwMDRERGQ1RjZpRmEtd1hvUDNjdkduTldMUEtUUUE2c050QjBrZFRNWXh3VkljQmJKUnQ?oc=5)).
+* No MDA board reconstitutions, corporate leadership realignments, or director appointments were logged during this cycle.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*

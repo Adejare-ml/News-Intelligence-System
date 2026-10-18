@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 955,
-      "mentions": 1618,
+      "companies": 952,
+      "mentions": 1611,
       "risk": {
-        "Low": 843,
+        "Low": 840,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,13 +13,22 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 28,
-      "mentions": 170,
+      "companies": 35,
+      "mentions": 190,
       "risk": {
+        "Medium": 11,
         "Low": 21,
         "Critical": 1,
-        "High": 2,
-        "Medium": 4
+        "High": 2
+      }
+    },
+    {
+      "industry": "Banking",
+      "companies": 17,
+      "mentions": 32,
+      "risk": {
+        "Low": 12,
+        "Medium": 5
       }
     },
     {
@@ -32,39 +41,57 @@
       }
     },
     {
-      "industry": "Banking",
-      "companies": 14,
-      "mentions": 22,
-      "risk": {
-        "Low": 11,
-        "Medium": 3
-      }
-    },
-    {
       "industry": "Aviation",
-      "companies": 5,
-      "mentions": 17,
+      "companies": 7,
+      "mentions": 21,
       "risk": {
-        "Medium": 3,
-        "Low": 2
-      }
-    },
-    {
-      "industry": "Conglomerate",
-      "companies": 1,
-      "mentions": 10,
-      "risk": {
-        "Medium": 1
+        "Medium": 4,
+        "Low": 2,
+        "High": 1
       }
     },
     {
       "industry": "Energy",
+      "companies": 7,
+      "mentions": 13,
+      "risk": {
+        "Medium": 4,
+        "High": 2,
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Conglomerate",
+      "companies": 2,
+      "mentions": 12,
+      "risk": {
+        "Medium": 2
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 5,
+      "mentions": 11,
+      "risk": {
+        "Low": 2,
+        "Medium": 3
+      }
+    },
+    {
+      "industry": "Fintech",
       "companies": 6,
       "mentions": 10,
       "risk": {
-        "High": 2,
         "Medium": 3,
-        "Low": 1
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 1,
+      "mentions": 10,
+      "risk": {
+        "High": 1
       }
     },
     {
@@ -77,15 +104,6 @@
       }
     },
     {
-      "industry": "Politics",
-      "companies": 4,
-      "mentions": 10,
-      "risk": {
-        "Low": 2,
-        "Medium": 2
-      }
-    },
-    {
       "industry": "Transportation/Ride-hailing",
       "companies": 2,
       "mentions": 10,
@@ -94,11 +112,12 @@
       }
     },
     {
-      "industry": "Legal/NGO",
-      "companies": 1,
+      "industry": "Financial Services",
+      "companies": 4,
       "mentions": 9,
       "risk": {
-        "High": 1
+        "Medium": 2,
+        "Low": 2
       }
     },
     {
@@ -108,15 +127,6 @@
       "risk": {
         "Low": 6,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 3,
-      "mentions": 8,
-      "risk": {
-        "Medium": 1,
-        "Low": 2
       }
     },
     {
@@ -143,15 +153,6 @@
       "risk": {
         "Medium": 4,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 4,
-      "mentions": 7,
-      "risk": {
-        "Medium": 3,
-        "Low": 1
       }
     },
     {
@@ -187,11 +188,19 @@
       }
     },
     {
-      "industry": "Labor Union",
+      "industry": "Beverages",
       "companies": 5,
       "mentions": 5,
       "risk": {
         "Low": 5
+      }
+    },
+    {
+      "industry": "Business Association",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -211,14 +220,6 @@
       }
     },
     {
-      "industry": "Beverages",
-      "companies": 4,
-      "mentions": 4,
-      "risk": {
-        "Low": 4
-      }
-    },
-    {
       "industry": "Cement",
       "companies": 2,
       "mentions": 4,
@@ -227,11 +228,35 @@
       }
     },
     {
-      "industry": "Business Association",
+      "industry": "Crypto Exchange",
       "companies": 1,
-      "mentions": 3,
+      "mentions": 4,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Finance",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Labor Union",
+      "companies": 4,
+      "mentions": 4,
+      "risk": {
+        "Low": 4
+      }
+    },
+    {
+      "industry": "Power/Energy",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -267,14 +292,6 @@
       }
     },
     {
-      "industry": "Power/Energy",
-      "companies": 1,
-      "mentions": 3,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Professional Services/Accounting",
       "companies": 1,
       "mentions": 3,
@@ -300,6 +317,14 @@
     },
     {
       "industry": "Investment/Development Finance",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Labour Union",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -436,7 +461,7 @@
       }
     },
     {
-      "industry": "Finance",
+      "industry": "Development Finance",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -508,6 +533,30 @@
       }
     },
     {
+      "industry": "Logistics & Infrastructure",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Logistics/Aviation",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Logistics/Energy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Manufacturing/Mining",
       "companies": 1,
       "mentions": 1,
@@ -540,6 +589,14 @@
       }
     },
     {
+      "industry": "Non-Profit/Advocacy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Development",
       "companies": 1,
       "mentions": 1,
@@ -549,6 +606,14 @@
     },
     {
       "industry": "Non-profit/NGO",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Oil & Gas/Industrial",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -569,6 +634,14 @@
       "mentions": 1,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Private Equity",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -604,7 +677,23 @@
       }
     },
     {
+      "industry": "Security/Surveillance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Sports",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology/Data Security",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -628,5 +717,5 @@
       }
     }
   ],
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-18 12:00:45"
 }
