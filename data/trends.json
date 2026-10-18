@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 237,
-  "previous_articles": 168,
+  "recent_articles": 238,
+  "previous_articles": 167,
   "rising": [
     {
       "term": "premium",
-      "recent": 87,
-      "previous": 56,
-      "change": 31
+      "recent": 89,
+      "previous": 55,
+      "change": 34
     },
     {
       "term": "premium times",
-      "recent": 87,
-      "previous": 56,
-      "change": 31
+      "recent": 89,
+      "previous": 55,
+      "change": 34
     },
     {
       "term": "times",
-      "recent": 87,
-      "previous": 56,
-      "change": 31
+      "recent": 89,
+      "previous": 55,
+      "change": 34
     },
     {
       "term": "efcc",
@@ -48,14 +48,14 @@
     {
       "term": "guardian",
       "recent": 49,
-      "previous": 36,
-      "change": 13
+      "previous": 37,
+      "change": 12
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 15,
+      "recent": 16,
       "previous": 4,
-      "change": 11
+      "change": 12
     },
     {
       "term": "oil",
@@ -74,19 +74,19 @@
     {
       "term": "nnpc",
       "recent": 5,
-      "previous": 17,
-      "change": -12
+      "previous": 16,
+      "change": -11
+    },
+    {
+      "term": "discount",
+      "recent": 1,
+      "previous": 11,
+      "change": -10
     },
     {
       "term": "petrol",
       "recent": 4,
       "previous": 12,
-      "change": -8
-    },
-    {
-      "term": "discount",
-      "recent": 2,
-      "previous": 10,
       "change": -8
     },
     {
@@ -103,9 +103,15 @@
     },
     {
       "term": "vanguard",
-      "recent": 2,
+      "recent": 1,
       "previous": 8,
-      "change": -6
+      "change": -7
+    },
+    {
+      "term": "inec",
+      "recent": 6,
+      "previous": 11,
+      "change": -5
     },
     {
       "term": "commits",
@@ -118,18 +124,12 @@
       "recent": 0,
       "previous": 5,
       "change": -5
-    },
-    {
-      "term": "petrol discount",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 163,
+      "recent": 164,
       "previous": 125
     },
     {
@@ -140,7 +140,7 @@
     {
       "category": "Company",
       "recent": 34,
-      "previous": 22
+      "previous": 21
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-18 12:00:42"
+  "generated": "2026-10-18 16:20:51"
 }

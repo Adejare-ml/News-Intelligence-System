@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-18 12:00:41",
+  "generated": "2026-10-18 16:20:51",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1190,
+      "likes": 1246,
       "downloads": 10233
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2631,
+      "likes": 2640,
       "downloads": 164339
-    },
-    {
-      "id": "jialinyyzz/humanizer",
-      "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "task": "text-generation",
-      "likes": 1920,
-      "downloads": 103709
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 923,
+      "likes": 963,
       "downloads": 57935
+    },
+    {
+      "id": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "task": "text-generation",
+      "likes": 1930,
+      "downloads": 103709
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 647,
+      "likes": 671,
       "downloads": 9620
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 729,
+      "likes": 759,
       "downloads": 338036
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 524,
+      "likes": 529,
       "downloads": 1809
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8289,
+      "likes": 8322,
       "downloads": 2012496
     }
   ],

@@ -127,6 +127,18 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "02bcb5f5a7b4",
+      "label": "Jigawa State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "88ddee7fc08f",
       "label": "Gombe State Government",
       "type": "agency",
@@ -135,6 +147,12 @@
     {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "701a11e9aed2",
+      "label": "Ministry of Finance",
       "type": "agency",
       "risk": "Low"
     },
@@ -159,12 +177,6 @@
     {
       "id": "8daae58ca874",
       "label": "Government of Katsina State",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "8e95a32117a9",
-      "label": "Senate of the Federal Republic of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a7ce195e149b",
-      "label": "Federation Account",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "17530210d4fa",
       "label": "Abdulrasheed Maina",
       "type": "person",
@@ -262,6 +262,12 @@
       "id": "10e91a46eee3",
       "label": "Godswill Akpabio",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8e95a32117a9",
+      "label": "Senate of the Federal Republic of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -951,6 +957,12 @@
       "label": "PSC: 78.6%"
     },
     {
+      "id": "6b1d699c5d81",
+      "from": "334c4a4c42fd",
+      "to": "02bcb5f5a7b4",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "d3dec1815180",
       "from": "334c4a4c42fd",
       "to": "88ddee7fc08f",
@@ -1026,12 +1038,6 @@
       "id": "383ea37e9f70",
       "from": "334c4a4c42fd",
       "to": "48ccc0bb95e7",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7bf4de3d8073",
-      "from": "7f50eb5ca259",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

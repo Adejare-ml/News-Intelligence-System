@@ -40,7 +40,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 72,
+      "total_mentions": 73,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 20,
-          "avg_risk": 29.5,
+          "mentions": 21,
+          "avg_risk": 29.0,
           "max_risk": 65
         }
       ]
@@ -1694,6 +1694,25 @@
       ]
     },
     {
+      "key": "ministry of finance",
+      "label": "Ministry of Finance",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 47.5,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "nigcomsat",
       "label": "NIGCOMSAT Ltd",
       "total_mentions": 3,
@@ -2598,6 +2617,19 @@
       ]
     },
     {
+      "key": "jigawa state government",
+      "label": "Jigawa State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 2,
@@ -2658,19 +2690,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ministry of finance",
-      "label": "Ministry of Finance",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 47.5,
-          "max_risk": 75
         }
       ]
     },
@@ -5056,20 +5075,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "heda",
-      "label": "HEDA",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
     }
   ],
-  "generated": "2026-10-18 12:00:45"
+  "generated": "2026-10-18 16:20:54"
 }
