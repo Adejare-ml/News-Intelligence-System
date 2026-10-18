@@ -84,20 +84,11 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 30.0,
+      "recent_avg": 29.5,
       "previous_avg": 20.0,
-      "delta": 10.0,
-      "recent_mentions": 21,
+      "delta": 9.5,
+      "recent_mentions": 22,
       "previous_mentions": 8
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 39.3,
-      "previous_avg": 31.8,
-      "delta": 7.5,
-      "recent_mentions": 7,
-      "previous_mentions": 11
     },
     {
       "key": "upstream petroleum regulatory commission",
@@ -118,6 +109,24 @@
       "previous_mentions": 4
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 24.5,
+      "previous_avg": 31.7,
+      "delta": -7.2,
+      "recent_mentions": 10,
+      "previous_mentions": 23
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 39.2,
+      "previous_avg": 32.5,
+      "delta": 6.7,
+      "recent_mentions": 6,
+      "previous_mentions": 12
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "recent_avg": 26.7,
@@ -125,15 +134,6 @@
       "delta": 6.7,
       "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 25.9,
-      "previous_avg": 31.3,
-      "delta": -5.4,
-      "recent_mentions": 11,
-      "previous_mentions": 23
     },
     {
       "key": "olayemi cardoso",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-18 12:00:45"
+  "generated": "2026-10-18 16:20:54"
 }
