@@ -6,7 +6,7 @@ pgvector==0.5.0
 celery==5.4.0
 redis==8.1.0
 pydantic==2.11.10
-pydantic-settings==2.14.2
+pydantic-settings==2.16.0
 feedparser==6.0.14
 beautifulsoup4==4.15.0
 spacy==3.8.16
