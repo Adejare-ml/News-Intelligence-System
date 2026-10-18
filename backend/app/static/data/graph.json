@@ -103,6 +103,12 @@
       "risk": "Low"
     },
     {
+      "id": "1616286eac11",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "type": "company",
+      "risk": "High"
+    },
+    {
       "id": "866686ab0fd6",
       "label": "Dangote Group",
       "type": "company",
@@ -115,14 +121,20 @@
       "risk": "High"
     },
     {
-      "id": "8557900b0864",
-      "label": "FAAN",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "88ddee7fc08f",
+      "label": "Gombe State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -141,6 +153,12 @@
     {
       "id": "04d993f97b29",
       "label": "Pension Reform Task Team",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8daae58ca874",
+      "label": "Government of Katsina State",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "17530210d4fa",
       "label": "Abdulrasheed Maina",
       "type": "person",
@@ -304,6 +304,12 @@
       "id": "568f4fc5fb3d",
       "label": "Gbajabiamila",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -412,6 +418,12 @@
       "id": "ba85b91bf4e0",
       "label": "Abbas",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -689,12 +701,6 @@
       "label": "FCT Judicial Committee",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "0cfa03e45d4d",
-      "label": "Kwara State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -945,6 +951,12 @@
       "label": "PSC: 78.6%"
     },
     {
+      "id": "d3dec1815180",
+      "from": "334c4a4c42fd",
+      "to": "88ddee7fc08f",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "a8e62f428290",
       "from": "babe3308606d",
       "to": "0c2be969618b",
@@ -1020,12 +1032,6 @@
       "id": "7bf4de3d8073",
       "from": "7f50eb5ca259",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "396ad1b3346f",
-      "from": "334c4a4c42fd",
-      "to": "0cfa03e45d4d",
       "label": "Contract Awardee"
     }
   ]

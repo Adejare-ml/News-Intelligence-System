@@ -102,8 +102,8 @@
     },
     {
       "name": "Gombe State Government",
-      "contracts": 2,
-      "undisclosed": 1,
+      "contracts": 3,
+      "undisclosed": 2,
       "totals": {
         "NGN": 17400000000.0
       }
@@ -666,8 +666,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 116,
-      "undisclosed": 71,
+      "contracts": 117,
+      "undisclosed": 72,
       "totals": {
         "NGN": 20755714090000.0,
         "USD": 41797140000.0
@@ -1146,5 +1146,5 @@
       }
     }
   ],
-  "generated": "2026-10-18 00:48:28"
+  "generated": "2026-10-18 12:00:45"
 }

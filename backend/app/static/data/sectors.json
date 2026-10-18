@@ -87,6 +87,14 @@
       }
     },
     {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 1,
+      "mentions": 10,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Political Party",
       "companies": 2,
       "mentions": 10,
@@ -110,14 +118,6 @@
       "risk": {
         "Medium": 2,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Legal/NGO",
-      "companies": 1,
-      "mentions": 9,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -717,5 +717,5 @@
       }
     }
   ],
-  "generated": "2026-10-18 00:48:28"
+  "generated": "2026-10-18 12:00:45"
 }

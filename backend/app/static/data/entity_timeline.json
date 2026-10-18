@@ -169,7 +169,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 23,
+      "total_mentions": 24,
       "points": [
         {
           "week": "2026-09-07",
@@ -203,9 +203,9 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 4,
+          "avg_risk": 31.2,
+          "max_risk": 65
         }
       ]
     },
@@ -637,34 +637,9 @@
       ]
     },
     {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 36.2,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-07",
@@ -698,9 +673,34 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 75.0,
+          "mentions": 2,
+          "avg_risk": 70.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 36.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -4941,6 +4941,19 @@
       ]
     },
     {
+      "key": "gombe state government",
+      "label": "Gombe State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "good governance initiative",
       "label": "Good Governance Initiative",
       "total_mentions": 1,
@@ -4989,6 +5002,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "government of katsina state",
+      "label": "Government of Katsina State",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -5043,33 +5069,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "huriwa",
-      "label": "HURIWA",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "health emergency initiative",
-      "label": "Health Emergency Initiative",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-18 00:48:28"
+  "generated": "2026-10-18 12:00:45"
 }
