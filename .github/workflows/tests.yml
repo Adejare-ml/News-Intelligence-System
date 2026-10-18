@@ -97,11 +97,21 @@ jobs:
         # and can't run in the headless suite, so a renamed-but-still-
         # referenced variable once shipped a page that threw on boot with
         # the suite green.
+        # ignore-scripts: npx resolves eslint's whole transitive tree fresh
+        # from npm (no lockfile in this repo), and install scripts in any of
+        # those packages would execute on the runner -- a supply-chain code
+        # execution point the job does not need. eslint itself runs fine
+        # without lifecycle scripts.
+        env:
+          NPM_CONFIG_IGNORE_SCRIPTS: "true"
         run: npx --yes eslint@10.10.0 "backend/app/static/js/**/*.js" "tests/frontend/**/*.js"
 
   cache-buster:
     name: Cache-buster check
-    if: github.event_name == 'pull_request'
+    # Push runs cover direct commits to main: the psc-core.js slip
+    # (61d506f, found in the 2026-10-10 audit) bypassed this check
+    # precisely because it only ran on pull requests.
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     # Advisory: index.html's ?v= tokens are the only cache invalidation the
     # static site has, so shipping a JS/CSS change without bumping one means
@@ -116,20 +126,44 @@ jobs:
 
       - name: Warn when shipped assets change without a version bump
         env:
-          BASE: ${{ github.event.pull_request.base.sha }}
-          HEAD: ${{ github.event.pull_request.head.sha }}
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
         run: |
           set -euo pipefail
+          # A force-push or branch-create delivers an all-zero `before`.
+          if ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            echo "Base $BASE unavailable; falling back to HEAD^."
+            BASE="$HEAD^"
+          fi
           CHANGED=$(git diff --name-only "$BASE...$HEAD" -- \
             'backend/app/static/js/*.js' 'backend/app/static/css/*.css')
           if [ -z "$CHANGED" ]; then
             echo "No shipped JS/CSS changed."
             exit 0
           fi
-          if git diff "$BASE...$HEAD" -- backend/app/static/index.html | grep -q '?v='; then
-            echo "Assets changed and index.html touched a ?v= token."
+          # Per changed file, and only on added/removed diff lines: the old
+          # single `grep -q '?v='` matched unchanged context lines (every
+          # line of the script block carries ?v=), and one bumped asset
+          # silenced the warning for every other changed asset in the PR.
+          INDEX_DIFF=$(git diff "$BASE...$HEAD" -- backend/app/static/index.html | grep '^[+-]' || true)
+          MISSING=""
+          for f in $CHANGED; do
+            name=$(basename "$f")
+            # An asset index.html never references has no token to bump
+            # (e.g. a file loaded lazily by another script).
+            if ! grep -qF "$name?v=" backend/app/static/index.html; then
+              echo "skip $name (not referenced with ?v= in index.html)"
+              continue
+            fi
+            if printf '%s\n' "$INDEX_DIFF" | grep -qF "$name?v="; then
+              echo "OK $name (token touched)"
+            else
+              MISSING="$MISSING$f"$'\n'
+            fi
+          done
+          if [ -z "$MISSING" ]; then
             exit 0
           fi
           echo "::warning file=backend/app/static/index.html::Shipped JS/CSS changed without a ?v= cache-buster bump in index.html; returning visitors will keep the cached old assets."
-          printf 'Changed without a version bump:\n%s\n' "$CHANGED"
+          printf 'Changed without a version bump:\n%s' "$MISSING"
           exit 1

@@ -402,11 +402,11 @@ def run_pipeline(seed: bool = False):
         }
         
         added = db.add_article(db_article)
-        
-        # Free Tier / Rate Limit Handling (Strictly < 20 RPM)
-        import time
-        time.sleep(3.5)
-        
+
+        # Rate limiting lives in the single 4-second sleep at the bottom of
+        # this loop. A second 3.5s sleep sat here for months claiming to be
+        # the throttle too -- 7.5s per accepted article, ~3 wasted minutes
+        # on a 40-article run, found in the 2026-10-10 audit.
         if not added:
             continue
             
@@ -862,7 +862,7 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
     # page, and per-run numbers made the last run of the day (often the
     # smallest) look like the whole day's coverage.
     header = f"""# PSC & Company Daily Intelligence Report
-**Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC+1)
+**Generated on:** {now.strftime('%Y-%m-%d %H:%M:%S')} (UTC)
 **Run Window:** {today_str}, all runs to {now.strftime('%H:%M')} (run {runs_today} of the day)
 
 ## Summary Statistics
@@ -887,10 +887,16 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         appointments = [r for r in records if r.get("analysis", {}).get("event_type") == "Appointment"]
         procurement = [r for r in records if r.get("analysis", {}).get("event_type") == "Procurement" or r.get("analysis", {}).get("procurement")]
         
+        # This path IS the disaster-recovery edition, and until the
+        # 2026-10-10 audit it read keys no engine ever produced
+        # ("summary_executive", a scalar "person"/"organization"), so an
+        # outage rendered nothing but placeholder boilerplate while the
+        # real summaries sat in memory. The real shape: the summary lives
+        # at analysis["summary"], and appointments are the "people" list.
         key_dev_lines = []
         for item in key_items:
             title = item.get("title", "Corporate Event")
-            summary = item.get("analysis", {}).get("summary_executive") or item.get("summary", "Key corporate update recorded.")
+            summary = item.get("analysis", {}).get("summary") or "Key corporate update recorded."
             key_dev_lines.append(f"*   **{title}**: {summary}")
         if not key_dev_lines:
             key_dev_lines.append("*   *Routine market intelligence signals monitored across counterparties.*")
@@ -898,16 +904,23 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         risk_lines = []
         for item in high_risk_items:
             title = item.get("title", "Risk Alert")
-            summary = item.get("analysis", {}).get("summary_executive") or item.get("summary", "Elevated risk indicator detected.")
+            summary = item.get("analysis", {}).get("summary") or "Elevated risk indicator detected."
             risk_lines.append(f"*   **{title}**: {summary}")
         if not risk_lines:
             risk_lines.append("*   *No critical risk threshold breaches recorded in this run window.*")
 
         proc_lines = []
         for item in appointments:
-            person = item.get("analysis", {}).get("person", "Executive")
-            org = item.get("analysis", {}).get("organization", "Counterparty")
-            proc_lines.append(f"*   **Key Appointment**: {person} logged under {org}.")
+            for mover in (item.get("analysis", {}).get("people") or []):
+                if not isinstance(mover, dict):
+                    continue
+                person = mover.get("name") or "Executive"
+                org = mover.get("organization") or "Counterparty"
+                role = mover.get("position")
+                proc_lines.append(
+                    f"*   **Key Appointment**: {person}"
+                    + (f" ({role})" if role else "")
+                    + f" logged under {org}.")
         for item in procurement:
             title = item.get("title", "Contract Award")
             proc_lines.append(f"*   **Procurement**: {title}")

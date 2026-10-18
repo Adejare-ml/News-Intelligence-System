@@ -657,7 +657,10 @@ class NewsIngestionService:
             url_lower = (art.get("url") or "").lower()
             
             is_nigerian = (
-                ".ng" in url_lower or 
+                # Boundary-anchored: the bare substring ".ng" also matched
+                # .ngo charities and .ngrok tunnels (plus any path containing
+                # ".ng"), letting non-Nigerian stories spend an LLM call.
+                ".ng/" in url_lower or url_lower.endswith(".ng") or
                 "punchng" in url_lower or 
                 "vanguardngr" in url_lower or 
                 "thecable" in url_lower or 

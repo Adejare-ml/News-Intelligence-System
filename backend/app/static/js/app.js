@@ -560,6 +560,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     url = `${API_BASE}/search?q=${encodeURIComponent(query)}&limit=30`;
                 }
                 const res = await fetch(url);
+                // A 500 returns a JSON error object that parses fine and
+                // then dies on data.map, masking the real HTTP status.
+                if (!res.ok) throw new Error(`API responded ${res.status}`);
                 const data = await res.json();
                 articles = query ? data.map(item => normalizeArticle(item.article)) : data.map(normalizeArticle);
             }
@@ -2815,7 +2818,7 @@ document.addEventListener("DOMContentLoaded", () => {
             reportMd += `\n> **NOT FOR COMPLIANCE USE.** This brief contains illustrative seed records, `;
             reportMd += `not intelligence extracted from reporting.\n\n`;
         }
-        reportMd += `**Generated on:** ${new Date().toISOString().slice(0, 19).replace('T', ' ')} (UTC+1)\n`;
+        reportMd += `**Generated on:** ${new Date().toISOString().slice(0, 19).replace('T', ' ')} (UTC)\n`;
         reportMd += `**Regulatory Framework:** Companies and Allied Matters Act (CAMA 2020) & FATF Beneficial Ownership Transparency Standards\n\n`;
 
         reportMd += `## Executive Summary & Risk Indicators\n`;

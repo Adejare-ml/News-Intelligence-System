@@ -216,8 +216,15 @@ def get_reports():
         reports = db.get_daily_reports()
         formatted = []
         for r in reports:
+            # "Archive File" is the per-run report_YYYYMMDD_HHMMSS.md name
+            # the pipeline really wrote. Deriving report_YYYYMMDD.md from
+            # the Date column collapsed all four daily runs onto one
+            # filename, and the lookup below then always served the
+            # earliest edition. Date-derived names remain as a fallback
+            # for rows written before the column existed.
             formatted.append({
-                "filename": f"report_{(r.get('Date') or '').replace('-', '')}.md",
+                "filename": r.get("Archive File")
+                            or f"report_{(r.get('Date') or '').replace('-', '')}.md",
                 "created_at": f"{r.get('Date')} {r.get('Generated', '12:00').split(' ')[-1]}",
                 "content": r.get("Content", "")
             })
@@ -266,15 +273,22 @@ def get_latest_report():
 def get_specific_report(filename: str):
     """Retrieves a specific daily report markdown content."""
     try:
-        # Extract date from report_YYYYMMDD.md -> YYYY-MM-DD
-        date_raw = filename.replace("report_", "").replace(".md", "")
-        target_date = f"{date_raw[0:4]}-{date_raw[4:6]}-{date_raw[6:8]}"
-        
         reports = db.get_daily_reports()
-        match = next((r for r in reports if r.get("Date") == target_date), None)
+
+        # Exact per-run match on the archive filename get_reports() serves.
+        match = next((r for r in reports if r.get("Archive File") == filename), None)
         if match:
             return {"content": match.get("Content", "")}
-            
+
+        # Legacy date-derived names (report_YYYYMMDD.md): serve the LAST
+        # row of that day -- next() returned the first, so any of the
+        # day's entries always came back as the earliest morning edition.
+        date_raw = filename.replace("report_", "").replace(".md", "")[:8]
+        target_date = f"{date_raw[0:4]}-{date_raw[4:6]}-{date_raw[6:8]}"
+        day_rows = [r for r in reports if r.get("Date") == target_date]
+        if day_rows:
+            return {"content": day_rows[-1].get("Content", "")}
+
         raise HTTPException(status_code=404, detail=f"Report for date {target_date} not found.")
     except HTTPException:
         raise

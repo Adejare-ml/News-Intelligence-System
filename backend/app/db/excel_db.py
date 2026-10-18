@@ -330,8 +330,14 @@ class SheetsDatabase:
                     self._cache[sheet_name] = records
                     return records
                 except Exception as e:
+                    # Raise like the Sheets branch below: returning [] made
+                    # a locked or half-written xlsx look like an empty
+                    # database, so URL dedupe passed everything and IDs
+                    # restarted at 1 (the exact failure the Sheets path
+                    # fixed in Package 15). A missing file still reads as
+                    # empty above -- that is a fresh database, not an error.
                     logger.error(f"Error reading local sheet '{sheet_name}': {e}")
-                    return []
+                    raise
             else:
                 # Through the retry helper, and RAISES on final failure.
                 # Returning [] here made a transient 429/503 on the Articles
