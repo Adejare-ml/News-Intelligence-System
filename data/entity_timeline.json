@@ -83,7 +83,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 54,
+      "total_mentions": 57,
       "points": [
         {
           "week": "2026-09-07",
@@ -117,8 +117,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 15,
-          "avg_risk": 57.3,
+          "mentions": 18,
+          "avg_risk": 57.2,
           "max_risk": 85
         }
       ]
@@ -1238,6 +1238,25 @@
       ]
     },
     {
+      "key": "european union",
+      "label": "European Union",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -1547,15 +1566,15 @@
       ]
     },
     {
-      "key": "european union",
-      "label": "European Union",
+      "key": "department of state services",
+      "label": "Department of State Services",
       "total_mentions": 3,
       "points": [
         {
-          "week": "2026-09-21",
+          "week": "2026-10-12",
           "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 20
+          "avg_risk": 56.7,
+          "max_risk": 65
         }
       ]
     },
@@ -1985,6 +2004,25 @@
       ]
     },
     {
+      "key": "rmb",
+      "label": "RMB Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "serap",
       "label": "SERAP",
       "total_mentions": 3,
@@ -2198,6 +2236,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "axxela",
+      "label": "Axxela",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 45
         }
       ]
     },
@@ -2924,6 +2975,19 @@
       ]
     },
     {
+      "key": "pension reform task team",
+      "label": "Pension Reform Task Team",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "pharmacists council of",
       "label": "Pharmacists Council of Nigeria",
       "total_mentions": 2,
@@ -2965,25 +3029,6 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "rmb",
-      "label": "RMB Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -3138,6 +3183,19 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "united airlines",
+      "label": "United Nigeria Airlines",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -3410,6 +3468,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "abdulrasheed maina",
+      "label": "Abdulrasheed Maina",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -3819,19 +3890,6 @@
     {
       "key": "association of issuing houses of",
       "label": "Association of Issuing Houses of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "axxela",
-      "label": "Axxela",
       "total_mentions": 1,
       "points": [
         {
@@ -4324,19 +4382,6 @@
       ]
     },
     {
-      "key": "department of state services",
-      "label": "Department of State Services",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "douye diri",
       "label": "Douye Diri",
       "total_mentions": 1,
@@ -4541,6 +4586,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "faisal maina",
+      "label": "Faisal Maina",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -5011,59 +5069,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "health facility network",
-      "label": "Health Facility Network",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "healthcap africa",
-      "label": "HealthCap Africa",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "healthcare federation of",
-      "label": "Healthcare Federation of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "helios investment partners",
-      "label": "Helios Investment Partners",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
     }
   ],
-  "generated": "2026-10-17 19:09:15"
+  "generated": "2026-10-18 00:48:28"
 }

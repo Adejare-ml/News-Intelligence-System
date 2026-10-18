@@ -1,36 +1,47 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-17 19:07:31 (UTC+1)
-**Run Window:** 2026-10-17, all runs to 19:07 (run 4 of the day)
+**Generated on:** 2026-10-18 00:48:02 (UTC+1)
+**Run Window:** 2026-10-18, all runs to 00:48 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 25
-- **High Risk Signals:** 1
+- **Total Articles Processed:** 7
+- **High Risk Signals:** 0
 - **Appointments Logged:** 0
-- **Procurement Awards:** 2
+- **Procurement Awards:** 0
 
 ---
 
-# Executive Intelligence Report: Nigeria Corporate Transparency
-**Report Date:** 2026-10-17
-**Coverage:** All articles published on 2026-10-17 up to 19:07
+# Nigerian Corporate Governance and Integrity Intelligence Brief
+
+**Report Date:** 18 October 2026  
+**Coverage:** All articles published on 2026-10-18 up to 00:48
+
+---
 
 ### Key Developments
-* **Telecoms Regulation:** The Nigerian Communications Commission (NCC) has launched a consumer awareness campaign urging citizens to verify mobile devices via the *315# code to ensure regulatory compliance and authenticity ([Punch Newspapers](https://news.google.com/rss/articles/CBMihgFBVV95cUxQU1hwQlphU0VnRXU2M2tDUFJ4Q3ZuV2ZzaU9JLU14c0Z0VXREZXRrazhfaE5HZW94VzBJWnB6N2JYTXdXVUF6dkx1OXc4dlk5V1haOXhHdmdjQUtQb2txTTBRX2xnM3pVNDY1T3A1ZVY3TTFPejRyZkNsYjVQVjJtV1R0SmFHQQ?oc=5), [Premium Times Nigeria](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZE8yam1oUDBMRW1hOHFkWjBXbThkRmdnZHZtY1J3d0xVWTZiX3pVUUh1ZDhDT2VwekxfVU9hcngzRTVZSVdfUjJ4U3g2cTJDVWdLSVpOanlkUlhiSkVJZnJuMmd5VGtMMllJN2lObkdrbDhaMG01RF9fQWVjanVYLUdWQU92MlZVWll5X3ZaanBjaDA2VVRycnYyRVFHWUV0dzNiQ2xlRVQ3Nm8?oc=5)).
-* **Infrastructure & Economy:** Ogun State is targeting $17 billion in industrial investments under Governor Abiodun ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMijwFBVV95cUxQQ0lzRDhGZDNOVXIycVVXUkJiZkpYbENsSXEyVW9tU3VzMGVjdTNxV3FFTjBEcG52VHRBSWFnNmhUelhqTjNXakY4R3hhckowLUI4RDV4ckpBc1NYSV9yWXdOS0pIY0I3dWkza3JZZFNvTnpfOTgteWhuUzRXaGpaaDJHajc0ZWZtQWZxSlkzRQ?oc=5)), while the federal government maintains its stance against returning to fuel subsidies or multiple exchange rates ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUlVhdmI4OC13RUdMSTZZWVNpNnJ2MFZYWS1rTUlRRlRVc3R3SVViU2VDMzdYNVFwTU03bHpaSXdXQTFMb0lUMGtnMHhoczJaaTlUQXhmYVNFcmNVREFrRjBxTU05NjJRVEpPNXMyQTJEanJZLXNrUVM3ZXNLRWJreG1xZmF6MXVuc0NocDVuM2ZVNEh1T1pzbURpc25OU2o4OUI3YW5YZWViRk44aWo3UUpKOUVEZ2s4UFh0dVpvZ0pSSjVmMnIyVE5zdV9YWjNlWkxSMDBJdw?oc=5)).
-* **Regulatory Shifts:** The LCCI is pushing for strict AI regulations to prevent job losses ([Punch Newspapers](https://news.google.com/rss/articles/CBMicEFVX3lxTFB1bTdqSDdIYUhYdk5jNlZTa1F0aHlNTVdvMXZObmdzaTlTWFM2SUphMm5uQnBFOEVhQWpYVlN0N1E4eDlYdFBPa09XVngxdUY5RzBrVlBOYmNfaFJGVF9DLWJiel9sb2dfV3VRSmVIVEg?oc=5)), and the NCC has formed a working group for improved internet governance ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWU1Rm1MTkd1Z0F0WmtQNHNNdU0xaUpOSWlrYnRXT2EwN2c5bFdSY2pWZ2xCWmQ1TDlLMUl0dDZlV29VR3lESG1wSmJHdGxwd25wVGFEUi1ub2JHU1Z2VGpPVlRpcFhQS3UtWmhHTlRDdlZHUlptTktvUEQ0bGpWaTZ1blJBajFJcXc?oc=5)).
-* **Other Updates:** Key movements include a partnership between SNPERA and the NDPC on data security ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ0ZaX1JER0NxbmszLW1kXzVtRTZQc1RScGVsWTdPT09EaDlkZ2dZTU1Jem05aUNJQUhwSHlZUE1SS0VqVGlXZFZxdEZFZEdpTW1lLXI4bm5aRkdNNHRVX_JWNHXRTY8VO9dTXO8YyWy8UcVnb_e-ZuuQsNWsNfH5zhhV8w7aK?oc=5)) and Enugu State approving N32 billion for retiree gratuities ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMirwFBVV95cUxONGNuN2gyLVpSN2ZrTGo0Z2J5blRiMnNyeHFlZDBwZ0JDSkRoNDhkVWt3YTZPYlg3UEl4OHZzZ3d1cGdPWVRESlZlV1VOQ3ZtbERqdzktb1ZhRDFQVHV1R2JxWUprZTJGckxsUHFjRThwdEhKVXF4bjhlTDBmTHJYM2RGd3Bfb1hDLV9IU043UWVvMVdtUlRyUXJGREFDMnAwTjRNOGloQTFqdHVTdW13?oc=5)).
 
-### High Risk Alerts
-* **Infrastructure Funds:** Concerns have been raised regarding the potential diversion of resources and funds allocated for the Lagos-Calabar Coastal Road project ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMijwFBVV95cUxPNWg5RjZIY0JTeE1INDdHcENNMi1NMVl0VTdoZ2xVaDRiSWV4RUxwZWxzZTY4dXg5eTZvX2l6d0h6a0JoVUFCMnBuYTd3azZ2MGFFSW5zcDY4WjNMX3Z1WGZWa2J0T3h6dVh3bzE4eDZRcWVDbF8tWFJQV3A1bUhEbnNaS1E2blRsc3RhUUFsdw?oc=5)).
-* **Financial Misconduct:** A church archbishop has been suspended following allegations involving the unauthorized sale of land valued at N2 billion ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiugFBVV95cUxPX0tmckg0TjBlUjB2T1VuTWsyZHZnOGNsdHlVX3JqVnlDWHA0WUxONFRKYkRhUkFPZENLal8tM1hoTHl5SVo3XzNXV05jMVltaTk0d0VEQ0M2VVpMZklRSWZTOVJueTVlRk15c0hjdXNQVTBZSUxNYVBwUDd2cFpLRDZwcUI1WDFpTDB5VFd4UGVDSU54RzlEcjVUWllzSGY5YkNLZTVnNUtQUmVpWlZxaVgzQV9DMmRqTXc?oc=5)).
-* **Privatization Resistance:** Civil society groups (CAPPA) and labor unions are actively opposing the privatization and metering of Lagos State water services ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5wFBVV95cUxORnhBek9SNjVLSng1aUFCVkpFZHA0UlVwNkRrTkZHMWUwcTJrODk3OC02emNScmJWRkp4QnpraDBGSGVYZU16LTh4V19VdDdNLXU4ckczcWNRNG5PUTZmQ2NiWWhyRXRRMUxnajUtcUI3NzNtYzRDU2pvTnhsZlkyaVMzRlFTdTIyQ1NvcXh4c0NXRFYtenNSWE42Y0xRVlpRMER3U1RpTDFUbTlfSTUzQmMtbWhyeVpjZHhXTkwyM2pSRWlOakpJeFpXWGxFc1AyaEdSbU54cDU0bjY0T1BqazB0R1hjZVU?oc=5)).
-
-### Beneficial Ownership & PSC Disclosures
-No persons with significant control were identified in the provided data.
-
-### Procurement & Board Changes
-* **Surveillance Contract:** There are active calls for the Federal Government of Nigeria to extend an existing surveillance contract held by the contractor PINL ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMifkFVX3lxTFB0NEFiN1JtUG8tWlpyU3ZLQ2p1el9uZDRtMkZ4emE2OGVhVXFQV0NpbURubU04WHhla0x3OGxUTUJNeGo3ekZ5akFIQUNqOGJpZkRWX3Mwdml3b3lCUF9Mc21DaW92UW9xbWhFZTlRLUJ6dzVHYXlPQWtSa3ZXUQ?oc=5)).
-* No other procurement activities or board changes were recorded during this period.
+* **Energy Trust Accountability:** Petroleum and energy industry stakeholders are demanding increased transparency and robust accountability mechanisms for host community development trusts established under the Petroleum Industry Act ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNS2JtYmlGUHJuckRhYkx2YTdnbW5QbXhDb0Y1cVFTYUFJTC1GTDVtVl9pYV9fa29TeUZwdGc4ajRpWll6clMyVFdydm5GRWNaTmpXdDVqcElfcVFRRlNnZ0JMZ3FudkFwQWFycVJ6UUE2ZXpKNXVtZUtSekNpRDBOQS1ZSThGS3gtZkZtb2NyWlZWcTNxODRfY2IyTWV2d045b0Q3TVdQZEY?oc=5)).
+* **Major Energy Sector M&A:** RMB Nigeria received the Association of Issuing Houses of Nigeria (AIHN) Deal of the Year award for advising on the US$583 million acquisition of gas and energy company Axxela ([Punch Newspapers](https://news.google.com/rss/articles/CBMitwFBVV95cUxNTWdRUTl4YWdRcEtXenR1SV9JNmhwS2tQdHliaFZIUDI2MDlMRFo2U1NwTHYtWGJ3SUlCdmY0RGxVLUQ1NXVqTkkxU294UENDRzdYd3AxX1YyUjFLNFkydUF6TWh4YWV4TDhpVnNvaVRiUUU1Zk1PZTF1MFFQMmdpNTF1VkF6OFp1bTRLbWs2Y3JEMnhzZHVxbnRDcW81a3otSHA2YmltcVRjVlVOU3E5VGVtWlBvanM?oc=5)).
+* **Aviation Debt Issuance:** United Nigeria Airlines disclosed strategic plans to raise N20 billion in short-term debt via a commercial paper issuance to finance operational requirements ([Punch Newspapers](https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXM5Q0tyTThLaHR0NkZzOUVkVlBKUzJ5TU1fdHFYd2s2SEdGVnQ4ME5aMU1yOUlqejFTYU4xTWJINXlKbXhrdUN6STZENFA3MlVlQTZ4TW13Nm1qenVrbEQ5bDZ0eFZpS281STE5Rk9md3hwZm4ydEZEN0drejFyemxxdGU0UmJzR3c?oc=5)).
+* **International Defence Financing:** The European Union announced a €20 million security grant to the Federal Government to enhance state defence capabilities ([Punch Newspapers](https://news.google.com/rss/articles/CBMigAFBVV95cUxOMWowT1VfNlMyR3JPeGdXeF9SNDBoM2hzR3NjR1NxdlE4Sk9oWmNWNkk4VG0yV3B4dDExTGhYdmRudVRiekVpZ2V3Qmo1VTgyRzBsVUpNOXlGMUFBem95djFROElLckJjSFRQX1doS3Jna1RlZWpFdXVEdzI2OHRYVg?oc=5)).
+* **Abuja Fraud Syndicate Inquiry:** The Economic and Financial Crimes Commission (EFCC) initiated targeted investigations into suspected fraud networks based in Abuja following digital public disclosures ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWUlpUnRHcFlrbGpyYUpOOFVpT3ZpZmlZNk56OE81SGdfbHlZczN2Vlhtd0ZmLXl3Q2FMZnp3eVUtRmFWNTJvN0tJbWhkOGk4ZTRyWHhReHhpWHNKU015R0ZPX0k3VGtGa0JZQ0pQZFQ4VnhjSjJ2empxZzRBRldxU3d3dWhtMUlOekNZ?oc=5)).
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*
+
+### High Risk Alerts
+
+* **Apprehension of Faisal Maina:** The Department of State Services (DSS) intercepted Faisal Maina—son of convicted former Pension Reform Task Team Chairman and Politically Exposed Person (PEP) Abdulrasheed Maina—following his re-entry into Nigeria, transferring him into EFCC custody in connection with money laundering and pension corruption inquiries ([The Punch](https://punchng.com/dss-arrests-fleeing-mainas-son-in-abuja/); [The Punch](https://punchng.com/dss-arrests-mainas-son-after-returning-to-nigeria-hands-him-over-to-efcc/)).
+
+---
+
+### Beneficial Ownership & PSC Disclosures
+
+The monitored data contains no beneficial ownership filings or persons with significant control (PSC) disclosures for this period.
+
+---
+
+### Procurement & Board Changes
+
+No public procurement decisions or corporate governance appointments were registered in this reporting window.
+
+---
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*

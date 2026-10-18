@@ -84,20 +84,20 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 57.8,
-      "previous_avg": 43.0,
-      "delta": 14.8,
-      "recent_mentions": 16,
-      "previous_mentions": 5
+      "recent_avg": 57.2,
+      "previous_avg": 46.7,
+      "delta": 10.5,
+      "recent_mentions": 18,
+      "previous_mentions": 6
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 29.5,
+      "recent_avg": 30.0,
       "previous_avg": 20.0,
-      "delta": 9.5,
-      "recent_mentions": 22,
-      "previous_mentions": 7
+      "delta": 10.0,
+      "recent_mentions": 21,
+      "previous_mentions": 8
     },
     {
       "key": "central bank of",
@@ -145,15 +145,6 @@
       "previous_mentions": 22
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 35.0,
-      "previous_avg": 30.0,
-      "delta": 5.0,
-      "recent_mentions": 6,
-      "previous_mentions": 3
-    },
-    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "recent_avg": 15.0,
@@ -179,8 +170,17 @@
       "delta": 3.2,
       "recent_mentions": 6,
       "previous_mentions": 11
+    },
+    {
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "recent_avg": 18.3,
+      "previous_avg": 16.7,
+      "delta": 1.6,
+      "recent_mentions": 3,
+      "previous_mentions": 3
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-17 19:09:15"
+  "generated": "2026-10-18 00:48:28"
 }

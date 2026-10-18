@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-17 19:09:12",
+  "generated": "2026-10-18 00:48:21",
   "models": [
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "task": "image-text-to-text",
+      "likes": 939,
+      "downloads": 0
+    },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2579,
+      "likes": 2596,
       "downloads": 158490
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1886,
+      "likes": 1898,
       "downloads": 95870
-    },
-    {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "task": "image-text-to-text",
-      "likes": 832,
-      "downloads": 0
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 893,
+      "likes": 902,
       "downloads": 36252
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 609,
+      "likes": 619,
       "downloads": 8193
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 623,
+      "likes": 650,
       "downloads": 224108
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 495,
+      "likes": 503,
       "downloads": 1600
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8191,
+      "likes": 8228,
       "downloads": 1993003
     }
   ],
@@ -67,7 +67,7 @@
     {
       "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
       "url": "https://huggingface.co/papers/2610.21261",
-      "upvotes": 104
+      "upvotes": 105
     },
     {
       "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
@@ -82,7 +82,7 @@
     {
       "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
       "url": "https://huggingface.co/papers/2610.15924",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "LeanPRM: Lean-Grounded Process Supervision for Natural Language Proof Verification",
