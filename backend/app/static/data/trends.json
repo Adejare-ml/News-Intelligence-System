@@ -1,75 +1,93 @@
 {
   "window_days": 7,
-  "recent_articles": 185,
-  "previous_articles": 173,
+  "recent_articles": 237,
+  "previous_articles": 168,
   "rising": [
     {
       "term": "premium",
-      "recent": 73,
-      "previous": 49,
-      "change": 24
+      "recent": 87,
+      "previous": 56,
+      "change": 31
     },
     {
       "term": "premium times",
-      "recent": 73,
-      "previous": 49,
-      "change": 24
+      "recent": 87,
+      "previous": 56,
+      "change": 31
     },
     {
       "term": "times",
-      "recent": 73,
-      "previous": 49,
-      "change": 24
-    },
-    {
-      "term": "newspapers",
-      "recent": 29,
-      "previous": 15,
-      "change": 14
-    },
-    {
-      "term": "punch",
-      "recent": 29,
-      "previous": 15,
-      "change": 14
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 29,
-      "previous": 15,
-      "change": 14
-    },
-    {
-      "term": "petrol",
-      "recent": 13,
-      "previous": 0,
-      "change": 13
-    },
-    {
-      "term": "discount",
-      "recent": 12,
-      "previous": 2,
-      "change": 10
-    },
-    {
-      "term": "oil",
-      "recent": 12,
-      "previous": 4,
-      "change": 8
+      "recent": 87,
+      "previous": 56,
+      "change": 31
     },
     {
       "term": "efcc",
-      "recent": 11,
+      "recent": 21,
+      "previous": 5,
+      "change": 16
+    },
+    {
+      "term": "newspapers",
+      "recent": 35,
+      "previous": 20,
+      "change": 15
+    },
+    {
+      "term": "punch",
+      "recent": 35,
+      "previous": 20,
+      "change": 15
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 35,
+      "previous": 20,
+      "change": 15
+    },
+    {
+      "term": "guardian",
+      "recent": 49,
+      "previous": 36,
+      "change": 13
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 15,
       "previous": 4,
-      "change": 7
+      "change": 11
+    },
+    {
+      "term": "oil",
+      "recent": 13,
+      "previous": 5,
+      "change": 8
     }
   ],
   "falling": [
     {
       "term": "com",
       "recent": 0,
-      "previous": 21,
-      "change": -21
+      "previous": 16,
+      "change": -16
+    },
+    {
+      "term": "nnpc",
+      "recent": 5,
+      "previous": 17,
+      "change": -12
+    },
+    {
+      "term": "petrol",
+      "recent": 4,
+      "previous": 12,
+      "change": -8
+    },
+    {
+      "term": "discount",
+      "recent": 2,
+      "previous": 10,
+      "change": -8
     },
     {
       "term": "punchng",
@@ -84,70 +102,52 @@
       "change": -8
     },
     {
-      "term": "theeagleonline",
-      "recent": 0,
+      "term": "vanguard",
+      "recent": 2,
       "previous": 8,
-      "change": -8
+      "change": -6
     },
     {
-      "term": "theeagleonline com",
+      "term": "commits",
       "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "guardian",
-      "recent": 39,
-      "previous": 46,
-      "change": -7
-    },
-    {
-      "term": "lagos",
-      "recent": 9,
-      "previous": 16,
-      "change": -7
+      "previous": 5,
+      "change": -5
     },
     {
       "term": "osun",
       "recent": 0,
-      "previous": 7,
-      "change": -7
+      "previous": 5,
+      "change": -5
     },
     {
-      "term": "project",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
-    },
-    {
-      "term": "bank",
+      "term": "petrol discount",
       "recent": 0,
-      "previous": 6,
-      "change": -6
+      "previous": 5,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 135,
-      "previous": 118
+      "recent": 163,
+      "previous": 125
     },
     {
       "category": "Legal",
-      "recent": 28,
-      "previous": 23
+      "recent": 40,
+      "previous": 20
     },
     {
       "category": "Company",
-      "recent": 22,
-      "previous": 28
+      "recent": 34,
+      "previous": 22
     },
     {
       "category": "Other",
       "recent": 0,
-      "previous": 4
+      "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-10-14 01:46:42"
+  "generated": "2026-10-18 12:00:42"
 }

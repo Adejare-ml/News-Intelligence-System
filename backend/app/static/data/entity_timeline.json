@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 71,
+      "total_mentions": 74,
       "points": [
         {
           "week": "2026-09-14",
@@ -31,16 +31,16 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 6,
-          "avg_risk": 20.0,
-          "max_risk": 30
+          "mentions": 9,
+          "avg_risk": 23.9,
+          "max_risk": 40
         }
       ]
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 62,
+      "total_mentions": 72,
       "points": [
         {
           "week": "2026-09-07",
@@ -74,8 +74,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 10,
-          "avg_risk": 34.5,
+          "mentions": 20,
+          "avg_risk": 29.5,
           "max_risk": 65
         }
       ]
@@ -83,7 +83,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 45,
+      "total_mentions": 57,
       "points": [
         {
           "week": "2026-09-07",
@@ -117,16 +117,16 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 6,
-          "avg_risk": 45.0,
-          "max_risk": 70
+          "mentions": 18,
+          "avg_risk": 57.2,
+          "max_risk": 85
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 41,
+      "total_mentions": 46,
       "points": [
         {
           "week": "2026-09-07",
@@ -160,8 +160,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 47.5,
+          "mentions": 7,
+          "avg_risk": 24.3,
           "max_risk": 75
         }
       ]
@@ -169,7 +169,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 21,
+      "total_mentions": 24,
       "points": [
         {
           "week": "2026-09-07",
@@ -203,16 +203,16 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 4,
+          "avg_risk": 31.2,
+          "max_risk": 65
         }
       ]
     },
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 20,
+      "total_mentions": 21,
       "points": [
         {
           "week": "2026-09-14",
@@ -240,8 +240,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 25.0,
+          "mentions": 5,
+          "avg_risk": 26.0,
           "max_risk": 40
         }
       ]
@@ -249,7 +249,7 @@
     {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
-      "total_mentions": 18,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-07",
@@ -280,13 +280,19 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
         }
       ]
     },
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 14,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-14",
@@ -314,8 +320,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
+          "mentions": 2,
+          "avg_risk": 30.0,
           "max_risk": 40
         }
       ]
@@ -323,7 +329,7 @@
     {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "total_mentions": 13,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-14",
@@ -348,6 +354,43 @@
           "mentions": 3,
           "avg_risk": 20.0,
           "max_risk": 30
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 8,
+          "avg_risk": 37.5,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -408,26 +451,119 @@
       ]
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
       "total_mentions": 11,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 8,
-          "avg_risk": 37.5,
-          "max_risk": 75
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         },
         {
-          "week": "2026-09-21",
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "akwa ibom state government",
+      "label": "Akwa Ibom State Government",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-07",
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
         },
         {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
           "week": "2026-09-28",
           "mentions": 2,
           "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 3,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 9,
+          "avg_risk": 15.6,
           "max_risk": 20
         }
       ]
@@ -464,21 +600,15 @@
       ]
     },
     {
-      "key": "akwa ibom state government",
-      "label": "Akwa Ibom State Government",
-      "total_mentions": 9,
+      "key": "ports authority",
+      "label": "Nigerian Ports Authority",
+      "total_mentions": 10,
       "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
         {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
+          "avg_risk": 20.0,
+          "max_risk": 20
         },
         {
           "week": "2026-09-21",
@@ -488,53 +618,28 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
+          "mentions": 3,
+          "avg_risk": 16.7,
           "max_risk": 20
         },
         {
           "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 36.2,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
+          "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 20
         }
       ]
     },
     {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-07",
@@ -568,9 +673,34 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 75.0,
+          "mentions": 2,
+          "avg_risk": 70.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 36.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -594,41 +724,10 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
       "total_mentions": 8,
       "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
         {
           "week": "2026-09-21",
           "mentions": 1,
@@ -636,41 +735,29 @@
           "max_risk": 20
         },
         {
-          "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 16.7,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
           "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "mentions": 7,
+          "avg_risk": 14.3,
+          "max_risk": 20
         }
       ]
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
       "total_mentions": 7,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "avg_risk": 20.0,
+          "max_risk": 20
         },
         {
           "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         },
         {
           "week": "2026-10-05",
@@ -680,8 +767,8 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 25.0,
+          "mentions": 3,
+          "avg_risk": 23.3,
           "max_risk": 30
         }
       ]
@@ -727,6 +814,43 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "atiku abubakar",
+      "label": "Atiku Abubakar",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -794,64 +918,83 @@
       ]
     },
     {
-      "key": "atiku abubakar",
-      "label": "Atiku Abubakar",
-      "total_mentions": 5,
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 6,
       "points": [
         {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
           "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-21",
           "mentions": 2,
-          "avg_risk": 80.0,
-          "max_risk": 85
+          "avg_risk": 12.5,
+          "max_risk": 15
         },
         {
           "week": "2026-09-28",
           "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
+          "avg_risk": 10.0,
+          "max_risk": 10
         },
         {
           "week": "2026-10-05",
           "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
+          "avg_risk": 30.0,
+          "max_risk": 40
         },
         {
           "week": "2026-10-12",
           "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission, Nigeria",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -875,27 +1018,52 @@
       ]
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
+      "key": "lagos chamber of commerce and industry",
+      "label": "Lagos Chamber of Commerce and Industry",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
       "total_mentions": 5,
       "points": [
         {
           "week": "2026-09-14",
           "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
         },
         {
-          "week": "2026-09-28",
+          "week": "2026-10-12",
           "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -946,31 +1114,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -1082,6 +1225,38 @@
       ]
     },
     {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 68.8,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "european union",
+      "label": "European Union",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 4,
@@ -1139,6 +1314,19 @@
       ]
     },
     {
+      "key": "kucoin",
+      "label": "KuCoin Nigeria Limited",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 22.5,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "kwara state government",
       "label": "Kwara State Government",
       "total_mentions": 4,
@@ -1189,18 +1377,24 @@
       ]
     },
     {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
+      "key": "army",
+      "label": "Nigerian Army",
       "total_mentions": 4,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         },
         {
           "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
@@ -1208,21 +1402,40 @@
       ]
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
       "total_mentions": 4,
       "points": [
         {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 75
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         },
         {
           "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
           "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 65
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "pipeline infrastructure",
+      "label": "Pipeline Infrastructure Nigeria Limited",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 35.0,
+          "max_risk": 45
         }
       ]
     },
@@ -1271,6 +1484,63 @@
       ]
     },
     {
+      "key": "world bank",
+      "label": "World Bank",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "african democratic congress",
+      "label": "African Democratic Congress",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "david umahi",
+      "label": "David Umahi",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "debt management office",
       "label": "Debt Management Office",
       "total_mentions": 3,
@@ -1296,28 +1566,15 @@
       ]
     },
     {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "key": "department of state services",
+      "label": "Department of State Services",
       "total_mentions": 3,
       "points": [
         {
           "week": "2026-10-12",
           "mentions": 3,
-          "avg_risk": 63.3,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "european union",
-      "label": "European Union",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 20
+          "avg_risk": 56.7,
+          "max_risk": 65
         }
       ]
     },
@@ -1379,20 +1636,20 @@
       ]
     },
     {
-      "key": "lagos chamber of commerce and industry",
-      "label": "Lagos Chamber of Commerce and Industry",
+      "key": "kano state government",
+      "label": "Kano State Government",
       "total_mentions": 3,
       "points": [
         {
-          "week": "2026-09-14",
+          "week": "2026-09-21",
           "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "avg_risk": 10.0,
+          "max_risk": 10
         },
         {
-          "week": "2026-09-21",
+          "week": "2026-10-12",
           "mentions": 2,
-          "avg_risk": 17.5,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -1452,6 +1709,38 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 81.7,
+          "max_risk": 85
         }
       ]
     },
@@ -1525,6 +1814,25 @@
       ]
     },
     {
+      "key": "airways",
+      "label": "Nigeria Airways",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "police force",
       "label": "Nigeria Police Force",
       "total_mentions": 3,
@@ -1550,31 +1858,6 @@
       ]
     },
     {
-      "key": "army",
-      "label": "Nigerian Army",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 3,
@@ -1590,25 +1873,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
         }
       ]
     },
@@ -1740,6 +2004,25 @@
       ]
     },
     {
+      "key": "rmb",
+      "label": "RMB Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "serap",
       "label": "SERAP",
       "total_mentions": 3,
@@ -1755,6 +2038,19 @@
           "mentions": 2,
           "avg_risk": 52.5,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "senate of",
+      "label": "Senate of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 40.0,
+          "max_risk": 65
         }
       ]
     },
@@ -1810,6 +2106,25 @@
       ]
     },
     {
+      "key": "united bank for africa",
+      "label": "United Bank for Africa",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "amni",
       "label": "AMNI",
       "total_mentions": 2,
@@ -1817,6 +2132,25 @@
         {
           "week": "2026-09-21",
           "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -1861,6 +2195,19 @@
       ]
     },
     {
+      "key": "africa finance corporation",
+      "label": "Africa Finance Corporation",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "african action congress",
       "label": "African Action Congress",
       "total_mentions": 2,
@@ -1870,25 +2217,6 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "african democratic congress",
-      "label": "African Democratic Congress",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1912,6 +2240,19 @@
       ]
     },
     {
+      "key": "axxela",
+      "label": "Axxela",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "bat",
       "label": "BAT Nigeria",
       "total_mentions": 2,
@@ -1920,6 +2261,25 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -1970,6 +2330,19 @@
       ]
     },
     {
+      "key": "cardoso",
+      "label": "Cardoso",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dangote cement",
       "label": "Dangote Cement",
       "total_mentions": 2,
@@ -2008,25 +2381,6 @@
       ]
     },
     {
-      "key": "david umahi",
-      "label": "David Umahi",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "ebonyi state government",
       "label": "Ebonyi State Government",
       "total_mentions": 2,
@@ -2061,6 +2415,25 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2167,6 +2540,32 @@
       ]
     },
     {
+      "key": "hadi sirika",
+      "label": "Hadi Sirika",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "house of representatives committee on host communities",
+      "label": "House of Representatives Committee on Host Communities",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "international finance corporation",
       "label": "International Finance Corporation",
       "total_mentions": 2,
@@ -2186,25 +2585,6 @@
       ]
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 0.0,
-          "max_risk": 0
-        }
-      ]
-    },
-    {
       "key": "ishaku",
       "label": "Ishaku",
       "total_mentions": 2,
@@ -2214,25 +2594,6 @@
           "mentions": 2,
           "avg_risk": 80.0,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "kano state government",
-      "label": "Kano State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2252,6 +2613,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "malabu oil and gas",
+      "label": "Malabu Oil and Gas Limited",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 55.0,
+          "max_risk": 65
         }
       ]
     },
@@ -2333,19 +2707,6 @@
       ]
     },
     {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national agency for science and engineering infrastructure",
       "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 2,
@@ -2391,6 +2752,25 @@
       ]
     },
     {
+      "key": "national identity management commission",
+      "label": "National Identity Management Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national universities commission",
       "label": "National Universities Commission",
       "total_mentions": 2,
@@ -2423,14 +2803,33 @@
       ]
     },
     {
-      "key": "airways",
-      "label": "Nigeria Airways",
+      "key": "data protection commission",
+      "label": "Nigeria Data Protection Commission",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "labour congress",
+      "label": "Nigeria Labour Congress",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
           "mentions": 2,
-          "avg_risk": 25.0,
+          "avg_risk": 22.5,
           "max_risk": 30
         }
       ]
@@ -2519,6 +2918,25 @@
       ]
     },
     {
+      "key": "ogun state house of assembly",
+      "label": "Ogun State House of Assembly",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ola olukoyede",
       "label": "Ola Olukoyede",
       "total_mentions": 2,
@@ -2531,25 +2949,6 @@
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -2576,15 +2975,34 @@
       ]
     },
     {
-      "key": "pipeline infrastructure",
-      "label": "Pipeline Infrastructure Nigeria Limited",
+      "key": "pension reform task team",
+      "label": "Pension Reform Task Team",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-10-12",
           "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "pharmacists council of",
+      "label": "Pharmacists Council of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -2628,6 +3046,19 @@
       ]
     },
     {
+      "key": "securities and exchange commission sec",
+      "label": "Securities and Exchange Commission (SEC) Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "seplat energy",
       "label": "Seplat Energy",
       "total_mentions": 2,
@@ -2637,6 +3068,32 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "shell",
+      "label": "Shell",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 52.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "stallion",
+      "label": "Stallion Group",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -2673,6 +3130,25 @@
       ]
     },
     {
+      "key": "taiwo oyedele",
+      "label": "Taiwo Oyedele",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "tech revolution africa",
       "label": "Tech Revolution Africa",
       "total_mentions": 2,
@@ -2686,6 +3162,19 @@
       ]
     },
     {
+      "key": "tenaris",
+      "label": "Tenaris",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "toyin abraham",
       "label": "Toyin Abraham",
       "total_mentions": 2,
@@ -2694,6 +3183,19 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "united airlines",
+      "label": "United Nigeria Airlines",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -2714,6 +3216,25 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "wayvepay",
+      "label": "WayvePay",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2778,6 +3299,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "aa oil",
+      "label": "AA Oil Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -2899,6 +3433,19 @@
       ]
     },
     {
+      "key": "abbas",
+      "label": "Abbas",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "abdularasheed maina",
       "label": "Abdularasheed Maina",
       "total_mentions": 1,
@@ -2925,15 +3472,15 @@
       ]
     },
     {
-      "key": "abia state government",
-      "label": "Abia State Government",
+      "key": "abdulrasheed maina",
+      "label": "Abdulrasheed Maina",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-09-28",
+          "week": "2026-10-12",
           "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -3090,6 +3637,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "african continental free trade area",
+      "label": "African Continental Free Trade Area",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3263,6 +3823,19 @@
       ]
     },
     {
+      "key": "allied peoples movement",
+      "label": "Allied Peoples Movement",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "aluminium smelter company of alscon",
       "label": "Aluminium Smelter Company of Nigeria (ALSCON) Plc",
       "total_mentions": 1,
@@ -3315,6 +3888,19 @@
       ]
     },
     {
+      "key": "association of issuing houses of",
+      "label": "Association of Issuing Houses of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "bank of agriculture",
       "label": "Bank of Agriculture",
       "total_mentions": 1,
@@ -3341,6 +3927,19 @@
       ]
     },
     {
+      "key": "barau jura barau",
+      "label": "Barau Jura Barau",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "bauchi state government",
       "label": "Bauchi State Government",
       "total_mentions": 1,
@@ -3354,15 +3953,15 @@
       ]
     },
     {
-      "key": "bayelsa state government",
-      "label": "Bayelsa State Government",
+      "key": "baxi",
+      "label": "Baxi",
       "total_mentions": 1,
       "points": [
         {
-          "week": "2026-10-05",
+          "week": "2026-10-12",
           "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3380,6 +3979,19 @@
       ]
     },
     {
+      "key": "benue state government",
+      "label": "Benue State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "berkshire",
       "label": "Berkshire",
       "total_mentions": 1,
@@ -3393,6 +4005,19 @@
       ]
     },
     {
+      "key": "bisedge logistics infrastructure",
+      "label": "Bisedge Logistics & Infrastructure",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bola ahmed tinubu",
       "label": "Bola Ahmed Tinubu",
       "total_mentions": 1,
@@ -3402,6 +4027,32 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "bolaji abdullahi",
+      "label": "Bolaji Abdullahi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "cappa",
+      "label": "CAPPA",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3562,6 +4213,19 @@
       ]
     },
     {
+      "key": "conoil",
+      "label": "Conoil",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "continental re",
       "label": "Continental Re",
       "total_mentions": 1,
@@ -3640,6 +4304,19 @@
       ]
     },
     {
+      "key": "dangote consortium",
+      "label": "Dangote Consortium",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "dangote east african refinery",
       "label": "Dangote East African Refinery",
       "total_mentions": 1,
@@ -3705,6 +4382,19 @@
       ]
     },
     {
+      "key": "douye diri",
+      "label": "Douye Diri",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dr haydar daudu",
       "label": "Dr Haydar Daudu",
       "total_mentions": 1,
@@ -3757,6 +4447,19 @@
       ]
     },
     {
+      "key": "edo state house of assembly",
+      "label": "Edo State House of Assembly",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "ekiti state house of assembly",
       "label": "Ekiti State House of Assembly",
       "total_mentions": 1,
@@ -3766,6 +4469,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "eko power",
+      "label": "Eko Power",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3792,19 +4508,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -3887,6 +4590,32 @@
       ]
     },
     {
+      "key": "faisal maina",
+      "label": "Faisal Maina",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "federal capital territory fct judicial committee",
+      "label": "Federal Capital Territory (FCT) Judicial Committee",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "federal civil service",
       "label": "Federal Civil Service",
       "total_mentions": 1,
@@ -3913,6 +4642,19 @@
       ]
     },
     {
+      "key": "federal housing authority",
+      "label": "Federal Housing Authority",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "federal ministry of art culture tourism and the creative economy",
       "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
       "total_mentions": 1,
@@ -3926,6 +4668,32 @@
       ]
     },
     {
+      "key": "federal ministry of aviation",
+      "label": "Federal Ministry of Aviation",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "federal ministry of works",
+      "label": "Federal Ministry of Works",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "federal mortgage bank of",
       "label": "Federal Mortgage Bank of Nigeria",
       "total_mentions": 1,
@@ -3935,6 +4703,45 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federal road safety corps",
+      "label": "Federal Road Safety Corps",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "federal university of technology akwa ibom",
+      "label": "Federal University of Technology, Akwa Ibom",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "federation account",
+      "label": "Federation Account",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -3984,6 +4791,19 @@
       "points": [
         {
           "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "finnfund",
+      "label": "Finnfund",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4043,12 +4863,51 @@
       ]
     },
     {
+      "key": "gni",
+      "label": "GNI",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "gates foundation",
       "label": "Gates Foundation",
       "total_mentions": 1,
       "points": [
         {
           "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "gbajabiamila",
+      "label": "Gbajabiamila",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "godswill akpabio",
+      "label": "Godswill Akpabio",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -4078,6 +4937,19 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "gombe state government",
+      "label": "Gombe State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -4134,6 +5006,19 @@
       ]
     },
     {
+      "key": "government of katsina state",
+      "label": "Government of Katsina State",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "government of oyo state",
       "label": "Government of Oyo State",
       "total_mentions": 1,
@@ -4184,748 +5069,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "huriwa",
-      "label": "HURIWA",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "health emergency initiative",
-      "label": "Health Emergency Initiative",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "health facility network",
-      "label": "Health Facility Network",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "healthcap africa",
-      "label": "HealthCap Africa",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "healthcare federation of",
-      "label": "Healthcare Federation of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "hitech",
-      "label": "Hitech",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "hitech construction",
-      "label": "Hitech Construction",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "hitech construction company",
-      "label": "Hitech Construction Company",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "hughes",
-      "label": "Hughes",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "human rights initiative for west africa",
-      "label": "Human Rights Initiative for West Africa",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "hydrocarbon pollution remediation project",
-      "label": "Hydrocarbon Pollution Remediation Project",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "ibom air",
-      "label": "Ibom Air",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ifeanyi okoye",
-      "label": "Ifeanyi Okoye",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ima gas field",
-      "label": "Ima Gas Field",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "ima gas project",
-      "label": "Ima Gas Project",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "independent monitoring and procurement inspectorate",
-      "label": "Independent Monitoring and Procurement Inspectorate",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "infracredit",
-      "label": "InfraCredit",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "institute of chartered secretaries and administrators of",
-      "label": "Institute of Chartered Secretaries and Administrators of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "integrity and medicare policy initiative",
-      "label": "Integrity and Medicare Policy Initiative",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "international criminal court icc",
-      "label": "International Criminal Court (ICC)",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "international energy agency",
-      "label": "International Energy Agency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "j p morgan",
-      "label": "J.P. Morgan",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "jpmorgan",
-      "label": "JPMorgan",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "jim obazee",
-      "label": "Jim Obazee",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "joash amupitan",
-      "label": "Joash Amupitan",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "johnvents",
-      "label": "Johnvents",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "joint health sector unions",
-      "label": "Joint Health Sector Unions",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "joseph tegbe",
-      "label": "Joseph Tegbe",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "juhel",
-      "label": "Juhel Nigeria Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "katsina state government",
-      "label": "Katsina State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "katsina state hisbah corps",
-      "label": "Katsina State Hisbah Corps",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "keystone bank",
-      "label": "Keystone Bank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "khalil suleiman halilu",
-      "label": "Khalil Suleiman Halilu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "korea international cooperation agency",
-      "label": "Korea International Cooperation Agency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "kudiwave",
-      "label": "KudiWave",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "kwara state ministry of health",
-      "label": "Kwara State Ministry of Health",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "lafarge",
-      "label": "Lafarge",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "lagos free zone",
-      "label": "Lagos Free Zone",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lagos state consumer protection agency",
-      "label": "Lagos State Consumer Protection Agency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lagos state environmental protection agency",
-      "label": "Lagos State Environmental Protection Agency",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lagos state house of assembly",
-      "label": "Lagos State House of Assembly",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "lagos state security trust fund",
-      "label": "Lagos State Security Trust Fund",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "lagos calabar coastal highway project",
-      "label": "Lagos-Calabar Coastal Highway Project",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "lebara",
-      "label": "Lebara",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "lemfi",
-      "label": "LemFi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "leno adesanya",
-      "label": "Leno Adesanya",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "lifteller",
-      "label": "Lifteller",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "local government councils",
-      "label": "Local Government Councils",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "loft keys",
-      "label": "Loft & Keys Ltd",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "magdalene health wellness research technology sport city",
-      "label": "Magdalene Health, Wellness, Research, Technology & Sport City",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "mango business",
-      "label": "Mango Business",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "maritime workers union of",
-      "label": "Maritime Workers Union of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "matebese",
-      "label": "Matebese",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "matrix",
-      "label": "Matrix",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "medical intervention initiative for healthcare access",
-      "label": "Medical Intervention Initiative for Healthcare Access",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "microsoft",
-      "label": "Microsoft",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-14 01:46:49"
+  "generated": "2026-10-18 12:00:45"
 }
