@@ -1088,7 +1088,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         position: 'right',
                         labels: {
                             color: '#98989d',
-                            font: { family: 'Outfit', size: 10 },
+                            font: { family: 'Inter', size: 10 },
                             padding: 8,
                             // Merge both rings into one legend: categories then risks
                             generateLabels: (chart) => {
@@ -1173,6 +1173,22 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
+        // Canvas text/lines cannot use CSS tokens; resolve per build like the
+        // globe does per frame. The graph rebuilds on data and filter
+        // changes, so a mid-session theme switch corrects itself on the
+        // next rebuild (same limitation as the charts).
+        const GRAPH_LIGHT_MODE = document.documentElement.getAttribute("data-theme") === "light";
+        const GRAPH_INK = {
+            label: GRAPH_LIGHT_MODE ? '#1d1d1f' : '#e8e8ed',
+            labelDim: GRAPH_LIGHT_MODE ? 'rgba(60, 60, 67, 0.35)' : 'rgba(152, 152, 157, 0.3)',
+            nodeBorder: GRAPH_LIGHT_MODE ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.15)',
+            nodeDimBg: GRAPH_LIGHT_MODE ? 'rgba(174, 174, 178, 0.30)' : 'rgba(99, 99, 102, 0.18)',
+            nodeDimBorder: GRAPH_LIGHT_MODE ? 'rgba(0,0,0,0.06)' : 'rgba(255,255,255,0.04)',
+            edge: GRAPH_LIGHT_MODE ? 'rgba(0, 0, 0, 0.18)' : 'rgba(255, 255, 255, 0.15)',
+            edgeLabel: GRAPH_LIGHT_MODE ? '#6e6e73' : '#98989d',
+            edgeLabelBg: GRAPH_LIGHT_MODE ? '#f5f5f7' : '#0a0a0b'
+        };
+
         const TYPE_META = {
             person:  { color: "#409cff", shape: "dot",      label: "Person" },
             company: { color: "#7d7aff", shape: "square",   label: "Company" },
@@ -1196,7 +1212,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 title: `${name}\n${meta.label} · Risk: ${node.risk || "Low"} · ${links} link${links === 1 ? "" : "s"}`,
                 color: {
                     background: meta.color,
-                    border: 'rgba(255,255,255,0.15)',
+                    border: GRAPH_INK.nodeBorder,
                     highlight: {
                         background: '#0a84ff',
                         border: '#fff'
@@ -1205,9 +1221,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 shape: meta.shape,
                 size: 12 + Math.min(links * 3, 16),
                 font: {
-                    color: '#e8e8ed',
+                    color: GRAPH_INK.label,
                     size: 11,
-                    face: 'Outfit'
+                    face: 'Inter'
                 }
             });
         });
@@ -1225,14 +1241,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 label: edge.label || "",
                 arrows: 'to',
                 color: {
-                    color: 'rgba(255, 255, 255, 0.15)',
+                    color: GRAPH_INK.edge,
                     highlight: '#0a84ff'
                 },
                 font: {
-                    color: '#98989d',
+                    color: GRAPH_INK.edgeLabel,
                     size: 8,
-                    face: 'Space Grotesk',
-                    background: '#090a0f'
+                    face: 'Inter',
+                    background: GRAPH_INK.edgeLabelBg
                 },
                 smooth: {
                     type: 'curvedCW',
@@ -1436,18 +1452,18 @@ document.addEventListener("DOMContentLoaded", () => {
             const neighbors = new Set(network.getConnectedNodes(nodeId));
             neighbors.add(nodeId);
             data.nodes.update(nodes.map(n => neighbors.has(n.id)
-                ? { id: n.id, color: n.color, font: { color: '#e8e8ed' } }
+                ? { id: n.id, color: n.color, font: { color: GRAPH_INK.label } }
                 : {
                     id: n.id,
-                    color: { background: 'rgba(99, 99, 102, 0.18)', border: 'rgba(255,255,255,0.04)' },
-                    font: { color: 'rgba(152, 152, 157, 0.3)' }
+                    color: { background: GRAPH_INK.nodeDimBg, border: GRAPH_INK.nodeDimBorder },
+                    font: { color: GRAPH_INK.labelDim }
                 }
             ));
         }
 
         function resetHighlight() {
             if (!canUpdateNodes) return;
-            data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: '#e8e8ed' } })));
+            data.nodes.update(nodes.map(n => ({ id: n.id, color: n.color, font: { color: GRAPH_INK.label } })));
             // Also restores edges a traced path recoloured.
             data.edges.update(validEdges.map(e => ({ id: e.id, color: e.color, width: 1 })));
         }
@@ -1469,11 +1485,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!canUpdateNodes) return;
             const inPath = new Set(pathIds);
             data.nodes.update(nodes.map(n => inPath.has(n.id)
-                ? { id: n.id, color: n.color, font: { color: '#e8e8ed' } }
+                ? { id: n.id, color: n.color, font: { color: GRAPH_INK.label } }
                 : {
                     id: n.id,
-                    color: { background: 'rgba(99, 99, 102, 0.18)', border: 'rgba(255,255,255,0.04)' },
-                    font: { color: 'rgba(152, 152, 157, 0.3)' }
+                    color: { background: GRAPH_INK.nodeDimBg, border: GRAPH_INK.nodeDimBorder },
+                    font: { color: GRAPH_INK.labelDim }
                 }
             ));
             const onPath = new Set(window.AuraGraphPath.pathEdgeIds(pathIds, validEdges));
