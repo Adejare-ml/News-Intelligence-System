@@ -25,6 +25,50 @@
     // Paint cadence cap, matching backdrop.js.
     var FRAME_MS = 1000 / 30;
 
+    // Canvas cannot inherit the CSS token system, so the globe carried one
+    // hardcoded dark palette and washed out under data-theme="light": sea
+    // dots at 0.16 alpha and a pale-lilac landmass are invisible on the
+    // #eef0f7 light background. Every other light-theme surface already
+    // darkens its accents a step for contrast on white (see the
+    // :root[data-theme="light"] block in styles.css); these do the same.
+    // The alpha of the pulsing marker ring and the travelling packet is
+    // computed per frame, so those two carry an "r, g, b" triple rather
+    // than a finished colour.
+    var PALETTES = {
+        dark: {
+            sea: "rgba(99, 116, 158, 0.16)",
+            land: "rgba(176, 152, 252, 0.82)",
+            focusFill: "rgba(6, 182, 212, 0.18)",
+            focusStroke: "rgba(103, 232, 249, 0.75)",
+            arc: "rgba(244, 114, 182, 0.30)",
+            packetRGB: "253, 164, 175",
+            markerRGB: "103, 232, 249",
+            markerCore: "rgba(207, 250, 254, 0.95)"
+        },
+        light: {
+            sea: "rgba(71, 85, 120, 0.22)",
+            land: "rgba(109, 40, 217, 0.72)",
+            focusFill: "rgba(8, 145, 178, 0.16)",
+            focusStroke: "rgba(14, 116, 144, 0.85)",
+            arc: "rgba(190, 24, 93, 0.38)",
+            packetRGB: "190, 24, 93",
+            markerRGB: "14, 116, 144",
+            markerCore: "rgba(8, 47, 73, 0.95)"
+        }
+    };
+
+    /**
+     * Resolved per frame rather than cached at mount: the theme toggle only
+     * rewrites data-theme on <html> and dispatches nothing, so one attribute
+     * read is what keeps a mid-session switch from leaving a dark-tuned
+     * globe on a white page. It is a single read against ~4700 dots.
+     */
+    function paletteFor(doc) {
+        var el = doc && doc.documentElement;
+        var theme = el && el.getAttribute ? el.getAttribute("data-theme") : null;
+        return PALETTES[theme] || PALETTES.dark;
+    }
+
     // Secrecy jurisdictions that recur in Nigerian beneficial-ownership chains.
     // Sourced from the intermediate-entity vehicles the PSC panel already
     // tracks (e.g. Tengen Holdings (Mauritius) Limited on Access Holdings).
@@ -151,6 +195,9 @@
         this.data = data;
         this.mask = decodeMask(data);
         this.options = options || {};
+        // render() refreshes this every frame; the default keeps the draw
+        // methods safe to call in any order.
+        this._pal = PALETTES.dark;
 
         this.rotation = this.options.initialRotation || 0;
         this.speed = this.options.speed || 0.055;   // radians per second
@@ -283,6 +330,7 @@
     GlobeRenderer.prototype.render = function () {
         var ctx = this.ctx;
         if (!ctx || !this.width) return;
+        this._pal = paletteFor(global.document);
         this._cosR = Math.cos(this.rotation);
         this._sinR = Math.sin(this.rotation);
         this._cosT = Math.cos(this.tilt);
@@ -304,10 +352,10 @@
         var size = Math.max(1.4, this.radius * 0.0165);
 
         // Sea first, so land always paints over it at shared grid positions.
-        ctx.fillStyle = "rgba(99, 116, 158, 0.16)";
+        ctx.fillStyle = this._pal.sea;
         this.paintDots(ctx, size, false);
 
-        ctx.fillStyle = "rgba(176, 152, 252, 0.82)";
+        ctx.fillStyle = this._pal.land;
         this.paintDots(ctx, size * 1.15, true);
     };
 
@@ -346,9 +394,9 @@
         }
         if (!started) return;
         ctx.closePath();
-        ctx.fillStyle = "rgba(6, 182, 212, 0.18)";
+        ctx.fillStyle = this._pal.focusFill;
         ctx.fill();
-        ctx.strokeStyle = "rgba(103, 232, 249, 0.75)";
+        ctx.strokeStyle = this._pal.focusStroke;
         ctx.lineWidth = 1.2;
         ctx.stroke();
     };
@@ -379,7 +427,7 @@
                 if (!drawing) { ctx.moveTo(points[i].sx, points[i].sy); drawing = true; }
                 else ctx.lineTo(points[i].sx, points[i].sy);
             }
-            ctx.strokeStyle = "rgba(244, 114, 182, 0.30)";
+            ctx.strokeStyle = this._pal.arc;
             // Weight (records naming this jurisdiction) thickens the route,
             // capped so one dominant vehicle cannot flood the render.
             ctx.lineWidth = Math.min(2.4, 0.8 + 0.4 * arc.weight);
@@ -391,7 +439,7 @@
             var head = points[Math.floor(travel * STEPS)];
             if (head && head.z > -0.05) {
                 var glow = 0.55 + 0.45 * Math.sin(travel * Math.PI);
-                ctx.fillStyle = "rgba(253, 164, 175, " + glow.toFixed(3) + ")";
+                ctx.fillStyle = "rgba(" + this._pal.packetRGB + ", " + glow.toFixed(3) + ")";
                 var ps = Math.max(1.6, this.radius * 0.016);
                 ctx.fillRect(head.sx - ps / 2, head.sy - ps / 2, ps, ps);
             }
@@ -408,12 +456,13 @@
             var r = this.radius * (0.028 + 0.018 * pulse);
             ctx.beginPath();
             ctx.arc(p.sx, p.sy, r, 0, Math.PI * 2);
-            ctx.strokeStyle = "rgba(103, 232, 249, " + (0.55 * (1 - pulse) + 0.2).toFixed(3) + ")";
+            ctx.strokeStyle = "rgba(" + this._pal.markerRGB + ", "
+                + (0.55 * (1 - pulse) + 0.2).toFixed(3) + ")";
             ctx.lineWidth = 1.2;
             ctx.stroke();
 
             var core = Math.max(2, this.radius * 0.018);
-            ctx.fillStyle = "rgba(207, 250, 254, 0.95)";
+            ctx.fillStyle = this._pal.markerCore;
             ctx.fillRect(p.sx - core / 2, p.sy - core / 2, core, core);
         }
     };
