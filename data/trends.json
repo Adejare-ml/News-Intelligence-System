@@ -1,25 +1,43 @@
 {
   "window_days": 7,
-  "recent_articles": 238,
-  "previous_articles": 167,
+  "recent_articles": 237,
+  "previous_articles": 164,
   "rising": [
     {
       "term": "premium",
       "recent": 89,
-      "previous": 55,
-      "change": 34
+      "previous": 54,
+      "change": 35
     },
     {
       "term": "premium times",
       "recent": 89,
-      "previous": 55,
-      "change": 34
+      "previous": 54,
+      "change": 35
     },
     {
       "term": "times",
       "recent": 89,
-      "previous": 55,
-      "change": 34
+      "previous": 54,
+      "change": 35
+    },
+    {
+      "term": "newspapers",
+      "recent": 36,
+      "previous": 20,
+      "change": 16
+    },
+    {
+      "term": "punch",
+      "recent": 36,
+      "previous": 20,
+      "change": 16
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 36,
+      "previous": 20,
+      "change": 16
     },
     {
       "term": "efcc",
@@ -28,28 +46,10 @@
       "change": 16
     },
     {
-      "term": "newspapers",
-      "recent": 35,
-      "previous": 20,
-      "change": 15
-    },
-    {
-      "term": "punch",
-      "recent": 35,
-      "previous": 20,
-      "change": 15
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 35,
-      "previous": 20,
-      "change": 15
-    },
-    {
       "term": "guardian",
       "recent": 49,
-      "previous": 37,
-      "change": 12
+      "previous": 36,
+      "change": 13
     },
     {
       "term": "nigeria\u2019s",
@@ -58,9 +58,9 @@
       "change": 12
     },
     {
-      "term": "oil",
-      "recent": 13,
-      "previous": 5,
+      "term": "imf",
+      "recent": 9,
+      "previous": 1,
       "change": 8
     }
   ],
@@ -68,20 +68,20 @@
     {
       "term": "com",
       "recent": 0,
-      "previous": 16,
-      "change": -16
+      "previous": 14,
+      "change": -14
+    },
+    {
+      "term": "discount",
+      "recent": 0,
+      "previous": 12,
+      "change": -12
     },
     {
       "term": "nnpc",
       "recent": 5,
       "previous": 16,
       "change": -11
-    },
-    {
-      "term": "discount",
-      "recent": 1,
-      "previous": 11,
-      "change": -10
     },
     {
       "term": "petrol",
@@ -114,13 +114,13 @@
       "change": -5
     },
     {
-      "term": "commits",
-      "recent": 0,
-      "previous": 5,
+      "term": "fuel",
+      "recent": 3,
+      "previous": 8,
       "change": -5
     },
     {
-      "term": "osun",
+      "term": "commits",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -129,17 +129,17 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 164,
-      "previous": 125
+      "recent": 163,
+      "previous": 123
     },
     {
       "category": "Legal",
-      "recent": 40,
-      "previous": 20
+      "recent": 39,
+      "previous": 19
     },
     {
       "category": "Company",
-      "recent": 34,
+      "recent": 35,
       "previous": 21
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-18 16:20:51"
+  "generated": "2026-10-18 19:19:56"
 }

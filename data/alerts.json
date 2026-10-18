@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-18",
+      "title": "Afrinvest repays undocumented $1 million from Elumelu with interest - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTHZCd0x1Q0hINzNfMVBoOTdFa3I1WjRoZ3EyMDJWQ3o3aEhhdGZHNEpLZHZ2NHB1Zlo1cWtoNmpKZUZONWlzSlpaQklURWM5V09kTUNxVXhZR1MwMHJXckdjc2xETzhxM0h5d05QakN4bUl5Q19fVTV0RmprS0pXRXRyTnM0UTBlbDBVc242b3l6ZThQd3V3TS1FdlVSR25VZDBLNDhEYk1RYU9KR0Vnb1hCZ0k2MG1lSVV1U1luQkx2WGNSMXljRjg2V08?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Afrinvest"
+      ]
+    },
+    {
       "date": "2026-10-17",
       "title": "Church suspends archbishop over alleged N2 billion land sale - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPX0tmckg0TjBlUjB2T1VuTWsyZHZnOGNsdHlVX3JqVnlDWHA0WUxONFRKYkRhUkFPZENLal8tM1hoTHl5SVo3XzNXV05jMVltaTk0d0VEQ0M2VVpMZklRSWZTOVJueTVlRk15c0hjdXNQVTBZSUxNYVBwUDd2cFpLRDZwcUI1WDFpTDB5VFd4UGVDSU54RzlEcjVUWllzSGY5YkNLZTVnNUtQUmVpWlZxaVgzQV9DMmRqTXc?oc=5",
@@ -684,5 +695,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-18 16:20:54"
+  "generated": "2026-10-18 19:19:58"
 }

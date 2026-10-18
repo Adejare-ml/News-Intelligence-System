@@ -78,6 +78,16 @@
       }
     },
     {
+      "industry": "Financial Services",
+      "companies": 5,
+      "mentions": 10,
+      "risk": {
+        "Medium": 2,
+        "Low": 2,
+        "High": 1
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 6,
       "mentions": 10,
@@ -108,15 +118,6 @@
       "companies": 2,
       "mentions": 10,
       "risk": {
-        "Low": 2
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 4,
-      "mentions": 9,
-      "risk": {
-        "Medium": 2,
         "Low": 2
       }
     },
@@ -717,5 +718,5 @@
       }
     }
   ],
-  "generated": "2026-10-18 16:20:54"
+  "generated": "2026-10-18 19:19:58"
 }
