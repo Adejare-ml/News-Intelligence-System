@@ -49,7 +49,7 @@
     width: 100%;
     transform: scaleX(var(--scroll-progress, 0));
     transform-origin: 0 50%;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: var(--primary);
 }
 
 /* ---------- Header ---------- */
@@ -92,7 +92,7 @@
 }
 
 .btn-icon:hover { color: #fff; background: rgba(255, 255, 255, 0.1); }
-.btn-icon[aria-pressed="true"] { color: var(--secondary); border-color: rgba(6, 182, 212, 0.4); }
+.btn-icon[aria-pressed="true"] { color: var(--secondary); border-color: rgba(10, 132, 255, 0.4); }
 
 /* ---------- Reveal choreography ---------- */
 
@@ -202,7 +202,6 @@ main { display: flex; flex-direction: column; gap: 64px; }
     width: 6px; height: 6px;
     border-radius: 50%;
     background: var(--secondary);
-    box-shadow: 0 0 8px var(--secondary);
 }
 
 .hero-headline {
@@ -233,7 +232,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
 
 .hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
 .hero-meta i { width: 13px; height: 13px; }
-.hero-meta .meta-warn { color: #fdba74; }
+.hero-meta .meta-warn { color: #ffb340; }
 
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 34px; }
 .hero-actions .btn { text-decoration: none; }
@@ -307,10 +306,8 @@ main { display: flex; flex-direction: column; gap: 64px; }
 .alert-band {
     padding: 26px 28px;
     border-radius: var(--radius-lg);
-    background:
-        linear-gradient(180deg, rgba(244, 63, 94, 0.09), rgba(244, 63, 94, 0.02)),
-        var(--surface-1);
-    border: 1px solid rgba(244, 63, 94, 0.28);
+    background: rgba(255, 69, 58, 0.06);
+    border: 1px solid rgba(255, 69, 58, 0.28);
     /* A left rule carries severity without washing the whole panel in colour. */
     border-left: 3px solid var(--danger);
 }
@@ -342,9 +339,9 @@ main { display: flex; flex-direction: column; gap: 64px; }
 @media (prefers-reduced-motion: no-preference) {
     .alert-siren { animation: sirenPulse 2.4s var(--ease-out) infinite; }
     @keyframes sirenPulse {
-        0%   { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.5); }
-        70%  { box-shadow: 0 0 0 12px rgba(244, 63, 94, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
+        0%   { box-shadow: 0 0 0 0 rgba(255, 69, 58, 0.5); }
+        70%  { box-shadow: 0 0 0 12px rgba(255, 69, 58, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 69, 58, 0); }
     }
 }
 
@@ -377,8 +374,8 @@ main { display: flex; flex-direction: column; gap: 64px; }
     gap: 6px;
 }
 
-.alert-item.critical { border-left-color: var(--danger); background: rgba(244, 63, 94, 0.07); }
-.alert-item.warning  { border-left-color: var(--warning); background: rgba(249, 115, 22, 0.05); }
+.alert-item.critical { border-left-color: var(--danger); background: rgba(255, 69, 58, 0.07); }
+.alert-item.warning  { border-left-color: var(--warning); background: rgba(255, 159, 10, 0.05); }
 
 .alert-severity {
     display: inline-flex;
@@ -390,14 +387,14 @@ main { display: flex; flex-direction: column; gap: 64px; }
     text-transform: uppercase;
 }
 
-.alert-item.critical .alert-severity { color: #fda4af; }
-.alert-item.warning .alert-severity { color: #fdba74; }
+.alert-item.critical .alert-severity { color: #ff6961; }
+.alert-item.warning .alert-severity { color: #ffb340; }
 
 .alert-title {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.35;
-    color: #f8fafc;
+    color: var(--text-strong);
 }
 
 .alert-body { color: var(--text-soft); line-height: 1.5; font-size: 12.5px; }
@@ -469,7 +466,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
     max-width: 74ch;
     font-size: 15.5px;
     line-height: 1.72;
-    color: #d7dce5;
+    color: var(--text-soft);
 }
 
 .brief-body h1 {
@@ -477,7 +474,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
     font-size: 27px;
     font-weight: 700;
     line-height: 1.2;
-    color: #f8fafc;
+    color: var(--text-strong);
     margin-bottom: 6px;
     letter-spacing: -0.02em;
 }
@@ -486,7 +483,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
     font-family: var(--font-heading);
     font-size: 20px;
     font-weight: 700;
-    color: #f1f5f9;
+    color: var(--text-strong);
     margin: 34px 0 12px;
     padding-top: 20px;
     border-top: 1px solid var(--hairline);
@@ -529,7 +526,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
 .section-flash { animation: sectionFlash 1.2s var(--ease-out); }
 
 @keyframes sectionFlash {
-    0%   { background: rgba(6, 182, 212, 0.16); }
+    0%   { background: rgba(10, 132, 255, 0.16); }
     100% { background: transparent; }
 }
 
@@ -678,7 +675,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: 700;
-    color: #fdba74;
+    color: #ffb340;
 }
 
 /* Control chain: person -> vehicle -> company.
@@ -719,9 +716,9 @@ main { display: flex; flex-direction: column; gap: 64px; }
 .chain-title { font-size: 11.5px; font-weight: 600; color: var(--text-strong); line-height: 1.3; }
 .chain-sub { font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
 
-.chain-person  { border-color: rgba(56, 189, 248, 0.35); }
-.chain-vehicle { border-color: rgba(167, 139, 250, 0.35); }
-.chain-company { border-color: rgba(244, 114, 182, 0.35); }
+.chain-person  { border-color: rgba(64, 156, 255, 0.35); }
+.chain-vehicle { border-color: rgba(125, 122, 255, 0.35); }
+.chain-company { border-color: rgba(255, 159, 10, 0.35); }
 
 .chain-arrow {
     align-self: center;
@@ -747,17 +744,17 @@ main { display: flex; flex-direction: column; gap: 64px; }
 .flag {
     padding: 10px 12px;
     border-radius: var(--radius-sm);
-    background: rgba(244, 63, 94, 0.06);
-    border: 1px solid rgba(244, 63, 94, 0.2);
+    background: rgba(255, 69, 58, 0.06);
+    border: 1px solid rgba(255, 69, 58, 0.2);
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.flag-medium { background: rgba(249, 115, 22, 0.05); border-color: rgba(249, 115, 22, 0.2); }
+.flag-medium { background: rgba(255, 159, 10, 0.05); border-color: rgba(255, 159, 10, 0.2); }
 
-.flag-title { font-size: 12px; font-weight: 700; color: #fda4af; }
-.flag-medium .flag-title { color: #fdba74; }
+.flag-title { font-size: 12px; font-weight: 700; color: #ff6961; }
+.flag-medium .flag-title { color: #ffb340; }
 .flag-detail { font-size: 11.5px; line-height: 1.5; color: var(--text-soft); }
 
 .flag-clean {
@@ -814,7 +811,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
 }
 
 .pipe-stat small { font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
-.pipe-stat.alert { border-color: rgba(244, 63, 94, 0.3); }
+.pipe-stat.alert { border-color: rgba(255, 69, 58, 0.3); }
 .pipe-stat.alert span { color: var(--band-critical); }
 
 /* ---------- Search trace ---------- */
@@ -825,8 +822,8 @@ main { display: flex; flex-direction: column; gap: 64px; }
     margin-bottom: 16px;
     padding: 14px 16px;
     border-radius: var(--radius-sm);
-    background: rgba(6, 182, 212, 0.06);
-    border: 1px solid rgba(6, 182, 212, 0.24);
+    background: rgba(10, 132, 255, 0.06);
+    border: 1px solid rgba(10, 132, 255, 0.24);
     font-size: 12.5px;
     line-height: 1.55;
 }
@@ -1035,7 +1032,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
     /* Cards lift a little further and the flags settle a beat later. */
     .register-card:hover { transform: translateY(-3px); }
     .flag { transition: border-color var(--dur) var(--ease-out), background var(--dur) var(--ease-out); }
-    .register-card:hover .flag { border-color: rgba(244, 63, 94, 0.34); }
+    .register-card:hover .flag { border-color: rgba(255, 69, 58, 0.34); }
 
     /* KPI hover: the number leads, the label follows. */
     .kpi-value { transition: transform var(--dur) var(--ease-out); }
@@ -1061,3 +1058,12 @@ main { display: flex; flex-direction: column; gap: 64px; }
    and cancelling them mid-flight would leave cards stranded. */
 .motion-paused .eyebrow-dot { animation: none; opacity: 0.85; }
 .motion-paused html { scroll-behavior: auto; }
+
+/* Light theme: the warm label colours above are dark-surface tones; darken
+   them a step for contrast on the light alert tint, same rule as every
+   other accent. */
+:root[data-theme="light"] .alert-item.critical .alert-severity { color: #d70015; }
+:root[data-theme="light"] .alert-item.warning .alert-severity { color: #c93400; }
+:root[data-theme="light"] .hero-meta .meta-warn { color: #c93400; }
+:root[data-theme="light"] .psc-demo-banner { color: #8a4a00; }
+:root[data-theme="light"] .psc-demo-banner strong { color: #6e3a00; }

@@ -98,7 +98,7 @@
         for (var b = 0; b < buckets.length; b++) {
             var pts = buckets[b];
             if (!pts.length) continue;
-            ctx.fillStyle = "rgba(148, 163, 214, " + ((b + 1) * 0.02).toFixed(3) + ")";
+            ctx.fillStyle = "rgba(152, 152, 160, " + ((b + 1) * 0.02).toFixed(3) + ")";
             for (var p = 0; p < pts.length; p += 2) {
                 ctx.fillRect(pts[p], pts[p + 1], 1, 1);
             }
@@ -136,14 +136,14 @@
             // A single warm flare in four marks an elevated-risk signal, which
             // keeps the backdrop tied to what the dashboard actually reports.
             ctx.fillStyle = sig.warm
-                ? "rgba(251, 146, 120, " + alpha.toFixed(3) + ")"
-                : "rgba(125, 211, 233, " + alpha.toFixed(3) + ")";
+                ? "rgba(255, 159, 10, " + alpha.toFixed(3) + ")"
+                : "rgba(100, 160, 240, " + alpha.toFixed(3) + ")";
             ctx.fillRect(sig.x, sig.y, 1, 1);
 
             if (intensity > 0.55) {
                 ctx.fillStyle = sig.warm
-                    ? "rgba(251, 146, 120, " + (alpha * 0.32).toFixed(3) + ")"
-                    : "rgba(125, 211, 233, " + (alpha * 0.32).toFixed(3) + ")";
+                    ? "rgba(255, 159, 10, " + (alpha * 0.32).toFixed(3) + ")"
+                    : "rgba(100, 160, 240, " + (alpha * 0.32).toFixed(3) + ")";
                 ctx.fillRect(sig.x - 1, sig.y, 1, 1);
                 ctx.fillRect(sig.x + 1, sig.y, 1, 1);
                 ctx.fillRect(sig.x, sig.y - 1, 1, 1);
