@@ -1,49 +1,32 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-19 14:22:40 (UTC)
-**Run Window:** 2026-10-19, all runs to 14:22 (run 2 of the day)
+**Generated on:** 2026-10-19 18:59:54 (UTC)
+**Run Window:** 2026-10-19, all runs to 18:59 (run 3 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 16
-- **High Risk Signals:** 1
+- **Total Articles Processed:** 21
+- **High Risk Signals:** 2
 - **Appointments Logged:** 1
 - **Procurement Awards:** 1
 
 ---
 
-**Report Date**: 2026‑10‑19  
-**Coverage**: All articles published on 2026‑10‑19 up to 14:22 (run 2 of the day)
+### Key Developments  
+- United Nigeria Airlines completed and handed over a new health centre in Ekiti as part of its corporate social responsibility initiatives. ([The Eagle Online](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPcEJYOHlUR1RVb0w3MU1BamJwOUw0anhlbDFoRDlDcDVoMnZiQWVxdGFISm4tMTJXYW1MSXlITUJ2aHRQOTVMUXFnYWN0bmhNS1o3VTRSZ2lWQ2FSXzJEUUFXcHNsSWlPdnB1Nk9JM2J3cTFCR2ZnVTlxMk5tQ2hlc1htTUdlZDdqR01xSUI3Q2c3RGkyNTJaZENyakM5RHNhS1FLZnJOT2RvZw?oc=5))  
+- Lagos State leveraged Alternative Dispute Resolution to settle 3,000 petitions, slashing potential liability from N1.2 billion to N3 million. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMinAFBVV95cUxORnEySkpqQ18tOTNFV2Q2VG52ZlF3a1Fpb2J4Nzk2aWItT2FFOHhFYm5PTG53emRmSVMwQko2MlZkX1NkRmkwSklPVF85c3I2RFJSMURxLXMtdzlCY1lYVW5pVFFiY2M3Wk5YREdlNDhudm53RmhJakp5SDJVWFg2c3Jvb2FkMGpKTEF4SnBJakNPbElNdmljM3ZJYkw?oc=5))  
+- The House of Representatives launched a probe into NIPCO's gas licences and an NNPC executive amid allegations of money laundering, spotlighting regulatory gaps in the oil and gas sector. ([Punch Newspapers](https://news.google.com/rss/articles/CBMimgFBVV95cUxNblhLem12Ui1mY3pMUzk5UFkzVm1ZdHBUaG5Ra2N4UnotdU9Qa2JBVlJ3ZnBva0pMbGZVdFNuQ1ZxZGRhOW4zTDcyaUYwRElERV94V2tZcUFKcFhiX2dnRnhsSk9xdkR5RG9yeFpGaWdkUVoyYnlucURXU0UxbDhvREtZOU5NSkVXVzZqWXZjeVhJaThUSDJNd3h3?oc=5))  
+- The NNPC confirmed a gas explosion in Rivers State that injured 20 people; residents are demanding a formal investigation. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPY0lKMkt0SVlENnJMZzFfOGlDdndyeWhCdkhLZTZnMWZFMFpENDh3Q1MweWxfcmZDVkZLc3h0NnBSbDRWU1g1RFdUWUxDSldmOTN2QjRzX0Q5Z29ydmp0VUE5YVpzdzB1LVlFVkRXdkx0c0pJN3BaN05BZkpFc1c0SW9LWmEzWUQyVGdFZ20xdlM0MTYzWFU1a3Fkd0Yyd1RxaG9hYXBtZ3p4QmI1bXl0ZldfNm1qdlNKN09YMURDN2ZqWlgzb0czY1R2X2V1NDFIYzZHb1lNdDI2bzBJMjQ4eWxka0xtejU1?oc=5))  
+- Dangote Foundation plans to hand refinery shares to 778,000 women across 15 states, reshaping the ownership structure of the refinery’s assets. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi0wFBVV95cUxObnNfU2JoQVhJNlJsLVc4QW1HVzVrWXp6bWV0dDBnYWdsSWRkbnQ0OVZmb0MwaHp4Z1hkeFJzc0pBYlZZMFNMb2p2empGQWJVQ09TNHZ0djh5TGpsWGtHNmNiVmhvejlrb3VzaDJJZzlsa08wT1NkTHNQMDQwWVFRVG01MHRiLU5EVFZqdWU3U3lISlFMSklqMXRWNUJvX3NaMTlEMmY0ZXhBZ2xLZV9GbzFndklEM2NVREp4QWlVRnJYbmhEal8wSTU5YjRYSmZrWDJr?oc=5))  
 
----
+### High Risk Alerts  
+- The NIPCO gas licence and money‑laundering probe presents a high‑risk scenario, indicating significant potential corruption and regulatory breach. ([Punch Newspapers](https://news.google.com/rss/articles/CBMimgFBVV95cUxNblhLem12Ui1mY3pMUzk5UFkzVm1ZdHBUaG5Ra2N4UnotdU9Qa2JBVlJ3ZnBva0pMbGZVdFNuQ1ZxZGRhOW4zTDcyaUYwRElERV94V2tZcUFKcFhiX2dnRnhsSk9xdkR5RG9yeFpGaWdkUVoyYnlucURXU0UxbDhvREtZOU5NSkVXVzZqWXZjeVhJaThUSDJNd3h3?oc=5))  
+- NAICOM has warned insurers about idle recapitalisation funds, signalling regulatory scrutiny that could impact financial stability. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirwFBVV95cUxONmFBdWtxcVQwWTluaVVfNGF6MmdRTE5XZHVvUzhYRFhHbUZFUXBTaTh3NC1PcERCWVFMTTFTdERZcEhuYzNMSkNwZlZjRk90WGFUb3UxOWtaRUhhbFRFN25LVUsySnVKdlJPN3FLNkJhUjdSeXF2VHR6MDBGN3UyeDBEVGZCeGkzTEhBNW5xR3ZZdnItNGhtV3dFTlAweTNsdFdCaExSRndIWWRYaHR3?oc=5))  
 
-### Key Developments
+### Beneficial Ownership & PSC Disclosures  
+The current coverage contains no disclosed individuals exercising significant control over any entity.  
 
-- **NAICOM warns insurers** that idle recapitalisation funds may attract sanctions. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirwFBVV95cUxONmFBdWtxcVQwWTluaVVfNGF6MmdRTE5XZHVvUzhYRFhHbUZFUXBTaTh3NC1PcERCWVFMTTFTdERZcEhuYzNMSkNwZlZjRk90WGFUb3UxOWtaRUhhbFRFN25LVUsySnVKdlJPN3FLNkJhUjdSeXF2VHR6MDBGN3UyeDBEVGZCeGkzTEhBNW5xR3ZZdnItNGhtV3dFTlAweTNsdFdCaExSRndIWWRYaHR3?oc=5))
-- **SERAP sues INEC** over N126 billion election expenditure. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMigAFBVV95cUxQUzY5Q2hyYkxPYU5EVG9IbnZnaHA2RDZPZ2xvSlowZE9Jbmx2QUNVRW0xY05WaGdNMXVpbVVIRDQ4SXQ2cnZtbEVlZDlVUEh1NUJZdEZ6SXVvN2R6WkxhVXVDMmZCbDVEdmxuUXkxU01RWDJUU3NtcHhRX0o1bkMtZw?oc=5))
-- **FirstBank** seeks stronger ties to boost lending after recapitalisation. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivgFBVV95cUxQcG02dEwzOWg5TWRhN0gyZDZLOGdYdGtMR2stQ2NtNkdLc0huQUJHLXRYdjI3bWx6WUtma3laUnpUeXR2MklrU1VmU2pCaklyRHBUTDhzdkxoWkw5d01acHI0TG1sb2RJR1A0cGk3eUwxTGt5SlRySDlFVE4xcFMzVDl3UFdFbnFDTUsxTXZUWEQtOWF6aDdoMXdfVkp1Nms0emFiYmE5LWlBNElXdUlpVEw5ZDF6RWJXUG9nOTdR?oc=5))
-- **Federal Government** defends debt figures amid high‑interest concerns. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMinwFBVV95cUxPbnQ2WXRhNTBaSkw2WUdQWUF2SUM0aU5vVG1obl9qeW1yS19XMnliaW5fSGxyVTBuR1JsSXdaNGlTUW1qVUdSOUpSNmRYelBTRy1zMERsQlJwUFF6aUhpZ2ZHZTRqVUpDZENycjFPbEZDcUpYVWhJdXUyUlJ6ZU5yZXNZRUl6bzV0SHdKbmVkN1owTnhnekhxXzludXd0Tmc?oc=5))
-- **Nigeria targets $3 billion annual carbon finance** through clean‑energy partnerships. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiogFBVV95cUxNdjR3dGVuanFHT1daQ20wd2dEajdtaVFpcFA0dWFnYWdYc3dKYTVBSm00czd3ckl2Q3lGWkZNU1NtNmxaY2l3di1NYTRhTVYtM0UxQk1vX1UxLWg3cUJWQVlLN2l6UGUyOUMzZGpfeFNob3RSQTJGa3RDbEE1ZUxRUURUUkd6b3VkRnBmMjNWTm4yVVRDYWVPSk5DaGpueGtIQnc?oc=5))
-- **House of Representatives probe** into NIPCO gas licences and an NNPC executive over money‑laundering allegations. ([Punch Newspapers](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5))
-
----
-
-### High‑Risk Alerts
-
-- **Reps probe of NIPCO licences** and **NNPC executive** over money‑laundering claims – high‑risk corruption scrutiny. ([Punch Newspapers](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5))
-- **Ongoing audit demand** for **NNPC receivables of ₦1.12 trillion** – potential governance breach. ([Vanguard News](https://news.google.com/rss/articles/CBMitAFBVV95cUxOOG1McmpDcXBrcG1meTVaZnlDUEF6Mk05M1YwMlN5LUFUUGZ3alpVUGJjZkE5NU1EM3pIem04dGxxUDJha0RCcVV6R05JcUFwNHpQbnRJdlBtS1BvaUtkUElJU1A3OEFxRU5la0trNC1YZ25kWExoSzdkU05RZi1xWGltTUpsWFc3WlpMRlZVUWxHNWZQTUpUUEtvdTliOVJDNkV4YWJIaVlMWWVDTXM0Y0NETFrSAboBQVVfeXFMTVVLQzlqSmYzUjFMUUVEa0lUR0lBR25wOWxtQ1pfeDRNMEk2d2FZT0tlMlAyZlNyLWNhUzZ4SUM4Qkl6SVhPWDBXMmJ5R3d3c0l3SnpWOTFBUHZYZnhfVktjRUZERHpaLUttOUVRTFdtclYwbWNnc0ZlT3I1c3pUa3hjWHNIWWRWRzdjWVJlSnEwdUY0WEU2YVlZNnJzYklCRlpaS3dBMnN1NnpPcVBYUGdHZHlfb09mWVFR?oc=5))
-
----
-
-### Beneficial Ownership & PSC Disclosures
-
-No PSC disclosures or significant‑control holders are reported in the current data set.  
-
----
-
-### Procurement & Board Changes
-
-- **FirstBank** is engaged in strategic partnership talks to lift lending limits post‑recapitalisation—potential procurement activity. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivgFBVV95cUxQcG02dEwzOWg5TWRhN0gyZDZLOGdYdGtMR2stQ2NtNkdLc0huQUJHLXRYdjI3bWx6WUtma3laUnpUeXR2MklrU1VmU2pCaklyRHBUTDhzdkxoWkw5d01acHI0TG1sb2RJR1A0cGk3eUwxTGt5SlRySDlFVE4xcFMzVDl3UFdFbnFDTUsxTXZUWEQtOWF6aDdoMXdfVkp1Nms0emFiYmE5LWlBNElXdUlpVEw5ZDF6RWJXUG9nOTdR?oc=5))
-- **Ekiti State Government** appoints new SSG, CoS, and CPS following Oyo‑state governor’s reshuffle—board changes. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxNWkZfVFh2UFc4Sk5fTzZ4U1kzMUdXQzduYzU5Zy1vUWU0Qm9UR0Z3bGVDc3lJNEdLOTVESl9BdFBmdVhRdF9wZDI0VmFYVGY5bzZibTJ1cmpEak9GNENmdDNuVnBIX2lqMlFlRWVOeUs5aGhtSC1xZ004am5XVHVROUJlVEtBc0VhbHc?oc=5))
-- No additional procurement or board‑change items reported.
+### Procurement & Board Changes  
+- Governor Oyebanji announced his inaugural appointments, re‑appointing the Secretary to the State Government, Chief of Staff, and Chief Press Secretary. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxNWkZfVFh2UFc4Sk5fTzZ4U1kzMUdXQzduYzU5Zy1vUWU0Qm9UR0Z3bGVDc3lJNEdLOTVESl9CdFBmdVhRdF9wZDI0VmFYVGY5bzZibTJ1cmpEak9GNENmdDNuVnBIX2lqMlFlRWVOeUs5aGhtSC1xZ004am5XVHVROUJlVEtBc0VhbHc?oc=5))  
+- No procurement actions were reported during the coverage period.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

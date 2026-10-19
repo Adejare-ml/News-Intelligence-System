@@ -1211,17 +1211,17 @@
     },
     {
       "date": "2026-10-19",
-      "runs": 2,
-      "articles": 16,
-      "high_risk": 1,
+      "runs": 3,
+      "articles": 21,
+      "high_risk": 2,
       "appointments": 1,
       "procurement": 1,
       "cascade_failures": 0,
-      "candidates": 2140,
-      "rejected": 50,
+      "candidates": 3213,
+      "rejected": 69,
       "undated": 0,
-      "run_seconds": 386
+      "run_seconds": 523
     }
   ],
-  "generated": "2026-10-19 14:24:18"
+  "generated": "2026-10-19 19:02:44"
 }

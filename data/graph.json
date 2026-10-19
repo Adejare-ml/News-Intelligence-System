@@ -121,6 +121,12 @@
       "risk": "High"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8aeb2e3bdb2c",
       "label": "Bank of Industry",
       "type": "agency",
@@ -135,6 +141,18 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -219,24 +237,6 @@
     {
       "id": "8daae58ca874",
       "label": "Government of Katsina State",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ba0cb08c8cb",
-      "label": "Nigerian Army",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7d0b46bbd4a7",
-      "label": "World Bank",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
       "type": "agency",
       "risk": "Low"
     },
@@ -328,12 +328,6 @@
       "id": "568f4fc5fb3d",
       "label": "Gbajabiamila",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -442,12 +436,6 @@
       "id": "ba85b91bf4e0",
       "label": "Abbas",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "company",
       "risk": "Low"
     },
     {

@@ -1,67 +1,67 @@
 {
   "window_days": 7,
-  "recent_articles": 222,
-  "previous_articles": 167,
+  "recent_articles": 203,
+  "previous_articles": 183,
   "rising": [
     {
       "term": "premium",
-      "recent": 88,
-      "previous": 59,
-      "change": 29
+      "recent": 79,
+      "previous": 66,
+      "change": 13
     },
     {
       "term": "premium times",
-      "recent": 88,
-      "previous": 59,
-      "change": 29
+      "recent": 79,
+      "previous": 66,
+      "change": 13
     },
     {
       "term": "times",
-      "recent": 88,
-      "previous": 59,
-      "change": 29
-    },
-    {
-      "term": "efcc",
-      "recent": 20,
-      "previous": 6,
-      "change": 14
+      "recent": 79,
+      "previous": 66,
+      "change": 13
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 16,
-      "previous": 4,
-      "change": 12
-    },
-    {
-      "term": "newspapers",
-      "recent": 32,
-      "previous": 22,
+      "recent": 15,
+      "previous": 5,
       "change": 10
-    },
-    {
-      "term": "punch",
-      "recent": 32,
-      "previous": 22,
-      "change": 10
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 32,
-      "previous": 22,
-      "change": 10
-    },
-    {
-      "term": "guardian",
-      "recent": 45,
-      "previous": 37,
-      "change": 8
     },
     {
       "term": "imf",
       "recent": 9,
       "previous": 1,
       "change": 8
+    },
+    {
+      "term": "warns",
+      "recent": 9,
+      "previous": 1,
+      "change": 8
+    },
+    {
+      "term": "newspapers",
+      "recent": 30,
+      "previous": 24,
+      "change": 6
+    },
+    {
+      "term": "punch",
+      "recent": 30,
+      "previous": 24,
+      "change": 6
+    },
+    {
+      "term": "punch newspapers",
+      "recent": 30,
+      "previous": 24,
+      "change": 6
+    },
+    {
+      "term": "probe",
+      "recent": 8,
+      "previous": 2,
+      "change": 6
     }
   ],
   "falling": [
@@ -78,7 +78,19 @@
       "change": -10
     },
     {
+      "term": "court",
+      "recent": 9,
+      "previous": 17,
+      "change": -8
+    },
+    {
       "term": "cbn",
+      "recent": 1,
+      "previous": 9,
+      "change": -8
+    },
+    {
+      "term": "fuel",
       "recent": 1,
       "previous": 9,
       "change": -8
@@ -88,12 +100,6 @@
       "recent": 5,
       "previous": 12,
       "change": -7
-    },
-    {
-      "term": "fuel",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
     },
     {
       "term": "vanguard",
@@ -108,46 +114,35 @@
       "change": -5
     },
     {
-      "term": "teachers",
+      "term": "price",
       "recent": 0,
       "previous": 5,
       "change": -5
     },
     {
-      "term": "nnpc",
-      "recent": 7,
-      "previous": 11,
-      "change": -4
-    },
-    {
-      "term": "funds",
-      "recent": 1,
+      "term": "staff",
+      "recent": 0,
       "previous": 5,
-      "change": -4
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 150,
-      "previous": 122
+      "recent": 141,
+      "previous": 129
     },
     {
       "category": "Company",
-      "recent": 37,
-      "previous": 20
+      "recent": 35,
+      "previous": 22
     },
     {
       "category": "Legal",
-      "recent": 35,
-      "previous": 24
-    },
-    {
-      "category": "Other",
-      "recent": 0,
-      "previous": 1
+      "recent": 27,
+      "previous": 32
     }
   ],
   "social": [],
-  "generated": "2026-10-19 14:24:14"
+  "generated": "2026-10-19 19:02:42"
 }
