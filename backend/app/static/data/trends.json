@@ -1,43 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 237,
+  "recent_articles": 230,
   "previous_articles": 164,
   "rising": [
     {
       "term": "premium",
       "recent": 89,
-      "previous": 54,
-      "change": 35
+      "previous": 55,
+      "change": 34
     },
     {
       "term": "premium times",
       "recent": 89,
-      "previous": 54,
-      "change": 35
+      "previous": 55,
+      "change": 34
     },
     {
       "term": "times",
       "recent": 89,
-      "previous": 54,
-      "change": 35
-    },
-    {
-      "term": "newspapers",
-      "recent": 36,
-      "previous": 20,
-      "change": 16
-    },
-    {
-      "term": "punch",
-      "recent": 36,
-      "previous": 20,
-      "change": 16
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 36,
-      "previous": 20,
-      "change": 16
+      "previous": 55,
+      "change": 34
     },
     {
       "term": "efcc",
@@ -48,29 +30,41 @@
     {
       "term": "guardian",
       "recent": 49,
-      "previous": 36,
-      "change": 13
+      "previous": 35,
+      "change": 14
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 16,
-      "previous": 4,
-      "change": 12
+      "recent": 15,
+      "previous": 5,
+      "change": 10
     },
     {
       "term": "imf",
       "recent": 9,
       "previous": 1,
       "change": 8
+    },
+    {
+      "term": "ncc",
+      "recent": 8,
+      "previous": 0,
+      "change": 8
+    },
+    {
+      "term": "newspapers",
+      "recent": 32,
+      "previous": 25,
+      "change": 7
+    },
+    {
+      "term": "punch",
+      "recent": 32,
+      "previous": 25,
+      "change": 7
     }
   ],
   "falling": [
-    {
-      "term": "com",
-      "recent": 0,
-      "previous": 14,
-      "change": -14
-    },
     {
       "term": "discount",
       "recent": 0,
@@ -78,28 +72,34 @@
       "change": -12
     },
     {
-      "term": "nnpc",
-      "recent": 5,
-      "previous": 16,
-      "change": -11
+      "term": "petrol",
+      "recent": 3,
+      "previous": 13,
+      "change": -10
     },
     {
-      "term": "petrol",
+      "term": "nnpc",
+      "recent": 5,
+      "previous": 14,
+      "change": -9
+    },
+    {
+      "term": "cbn",
+      "recent": 1,
+      "previous": 10,
+      "change": -9
+    },
+    {
+      "term": "inec",
       "recent": 4,
       "previous": 12,
       "change": -8
     },
     {
-      "term": "punchng",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "punchng com",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
+      "term": "fuel",
+      "recent": 2,
+      "previous": 9,
+      "change": -7
     },
     {
       "term": "vanguard",
@@ -108,19 +108,19 @@
       "change": -7
     },
     {
-      "term": "inec",
-      "recent": 6,
-      "previous": 11,
+      "term": "com",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "funds",
+      "recent": 0,
+      "previous": 5,
       "change": -5
     },
     {
-      "term": "fuel",
-      "recent": 3,
-      "previous": 8,
-      "change": -5
-    },
-    {
-      "term": "commits",
+      "term": "petrol discount",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 163,
-      "previous": 123
-    },
-    {
-      "category": "Legal",
-      "recent": 39,
-      "previous": 19
+      "recent": 158,
+      "previous": 120
     },
     {
       "category": "Company",
-      "recent": 35,
+      "recent": 36,
       "previous": 21
+    },
+    {
+      "category": "Legal",
+      "recent": 36,
+      "previous": 22
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-18 19:19:56"
+  "generated": "2026-10-19 01:01:14"
 }

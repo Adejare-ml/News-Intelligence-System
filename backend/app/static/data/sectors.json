@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 952,
-      "mentions": 1611,
+      "companies": 950,
+      "mentions": 1606,
       "risk": {
-        "Low": 840,
+        "Low": 838,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,21 +13,21 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 35,
-      "mentions": 190,
+      "companies": 37,
+      "mentions": 194,
       "risk": {
         "Medium": 11,
-        "Low": 21,
+        "Low": 23,
         "Critical": 1,
         "High": 2
       }
     },
     {
       "industry": "Banking",
-      "companies": 17,
-      "mentions": 32,
+      "companies": 19,
+      "mentions": 37,
       "risk": {
-        "Low": 12,
+        "Low": 14,
         "Medium": 5
       }
     },
@@ -710,6 +710,14 @@
       }
     },
     {
+      "industry": "Technology/Training",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Venture Capital / Education",
       "companies": 1,
       "mentions": 1,
@@ -718,5 +726,5 @@
       }
     }
   ],
-  "generated": "2026-10-18 19:19:58"
+  "generated": "2026-10-19 01:01:16"
 }

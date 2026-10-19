@@ -2285,6 +2285,25 @@
       ]
     },
     {
+      "key": "bank of industry",
+      "label": "Bank of Industry",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bayelsa state government",
       "label": "Bayelsa State Government",
       "total_mentions": 2,
@@ -2837,6 +2856,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "lng",
+      "label": "Nigeria LNG Limited",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3946,19 +3984,6 @@
       ]
     },
     {
-      "key": "bank of industry",
-      "label": "Bank of Industry",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "barau jura barau",
       "label": "Barau Jura Barau",
       "total_mentions": 1,
@@ -4098,6 +4123,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "cita energies",
+      "label": "CITA Energies",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -4570,6 +4608,19 @@
       ]
     },
     {
+      "key": "european investment bank",
+      "label": "European Investment Bank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "everkind",
       "label": "Everkind Limited",
       "total_mentions": 1,
@@ -4843,6 +4894,19 @@
       ]
     },
     {
+      "key": "first city monument bank",
+      "label": "First City Monument Bank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "firstbank",
       "label": "FirstBank",
       "total_mentions": 1,
@@ -5023,59 +5087,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "government of india",
-      "label": "Government of India",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "government of katsina state",
-      "label": "Government of Katsina State",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "government of oyo state",
-      "label": "Government of Oyo State",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "government of the united kingdom",
-      "label": "Government of the United Kingdom",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-18 19:19:58"
+  "generated": "2026-10-19 01:01:16"
 }

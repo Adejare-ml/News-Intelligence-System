@@ -121,6 +121,12 @@
       "risk": "High"
     },
     {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9409708c9d80",
-      "label": "International Monetary Fund",
       "type": "agency",
       "risk": "Low"
     },
@@ -487,6 +487,18 @@
       "risk": "Low"
     },
     {
+      "id": "65c8c8afe47f",
+      "label": "Thomas Ogungbangbe",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "6ef575649788",
+      "label": "CITA Energies",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "eb5a8434f1bd",
       "label": "Tony Elumelu",
       "type": "psc",
@@ -625,16 +637,10 @@
       "risk": "Medium"
     },
     {
-      "id": "85ea07465d1b",
-      "label": "Jim Ovia",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "b52b514b8b5a",
-      "label": "Zenith Bank Plc",
+      "id": "5a0a05b0f09c",
+      "label": "Sapphital",
       "type": "company",
-      "risk": "Medium"
+      "risk": "Low"
     },
     {
       "id": "babe3308606d",
@@ -861,6 +867,12 @@
       "label": "Appointed as Minister of Power"
     },
     {
+      "id": "a5e36b5f552f",
+      "from": "65c8c8afe47f",
+      "to": "6ef575649788",
+      "label": "Significant influence or control"
+    },
+    {
       "id": "5d0107c18b4d",
       "from": "eb5a8434f1bd",
       "to": "507a818f1115",
@@ -951,10 +963,10 @@
       "label": "PSC: 24.5%"
     },
     {
-      "id": "5d556d51dd53",
-      "from": "85ea07465d1b",
-      "to": "b52b514b8b5a",
-      "label": "PSC: 16.2%"
+      "id": "094eb630c81d",
+      "from": "5a0a05b0f09c",
+      "to": "8aeb2e3bdb2c",
+      "label": "Contract Awardee"
     },
     {
       "id": "6b1d699c5d81",

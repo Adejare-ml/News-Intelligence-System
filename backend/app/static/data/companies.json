@@ -6569,9 +6569,9 @@
   },
   {
     "Company": "Nigeria LNG Limited",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-04 00:17",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-19 00:59",
+    "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -6681,9 +6681,9 @@
   },
   {
     "Company": "First City Monument Bank",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-05 0:48",
-    "Industry": "General",
+    "Mention Count": 4,
+    "Last Seen": "2026-10-19 00:59",
+    "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -9326,5 +9326,29 @@
     "Industry": "Financial Services",
     "Risk Level": "High",
     "First Seen": "2026-10-18 19:18"
+  },
+  {
+    "Company": "Sapphital",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-19 00:59",
+    "Industry": "Technology/Training",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-19 00:59"
+  },
+  {
+    "Company": "European Investment Bank",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-19 00:59",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-19 00:59"
+  },
+  {
+    "Company": "CITA Energies",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-19 01:00",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-19 01:00"
   }
 ]
