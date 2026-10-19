@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 78,
+      "total_mentions": 80,
       "points": [
         {
           "week": "2026-09-14",
@@ -37,8 +37,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 47.5,
+          "mentions": 6,
+          "avg_risk": 45.0,
           "max_risk": 85
         }
       ]
@@ -95,7 +95,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 57,
+      "total_mentions": 58,
       "points": [
         {
           "week": "2026-09-07",
@@ -132,6 +132,12 @@
           "mentions": 18,
           "avg_risk": 57.2,
           "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -322,7 +328,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-14",
@@ -356,8 +362,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
+          "mentions": 2,
+          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -1097,6 +1103,37 @@
       ]
     },
     {
+      "key": "lagos state waste management authority",
+      "label": "Lagos State Waste Management Authority",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "national hajj commission of",
       "label": "National Hajj Commission of Nigeria",
       "total_mentions": 5,
@@ -1437,27 +1474,21 @@
       ]
     },
     {
-      "key": "lagos state waste management authority",
-      "label": "Lagos State Waste Management Authority",
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
       "total_mentions": 4,
       "points": [
         {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
-        },
-        {
           "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 81.7,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
           "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1477,6 +1508,31 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "lng",
+      "label": "Nigeria LNG Limited",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
         },
         {
           "week": "2026-10-19",
@@ -1880,19 +1936,6 @@
       ]
     },
     {
-      "key": "nasir el rufai",
-      "label": "Nasir El-Rufai",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 81.7,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "national pension commission",
       "label": "National Pension Commission",
       "total_mentions": 3,
@@ -1958,25 +2001,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "lng",
-      "label": "Nigeria LNG Limited",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -2777,6 +2801,25 @@
       ]
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "international finance corporation",
       "label": "International Finance Corporation",
       "total_mentions": 2,
@@ -3129,6 +3172,25 @@
       ]
     },
     {
+      "key": "office of the attorney general of the federation",
+      "label": "Office of the Attorney General of the Federation",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "ogun state house of assembly",
       "label": "Ogun State House of Assembly",
       "total_mentions": 2,
@@ -3160,6 +3222,25 @@
         },
         {
           "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ondo state government",
+      "label": "Ondo State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3286,6 +3367,25 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "state security service",
+      "label": "State Security Service",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -5131,59 +5231,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "godwin akume",
-      "label": "Godwin Akume",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "godwin emefiele",
-      "label": "Godwin Emefiele",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "gombe state government",
-      "label": "Gombe State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "good governance initiative",
-      "label": "Good Governance Initiative",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
     }
   ],
-  "generated": "2026-10-19 19:02:44"
+  "generated": "2026-10-19 21:29:43"
 }

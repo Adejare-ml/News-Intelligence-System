@@ -1,64 +1,74 @@
 {
-  "generated": "2026-10-19 19:02:42",
+  "generated": "2026-10-19 21:29:40",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1644,
+      "likes": 1664,
       "downloads": 17924
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 1050,
+      "likes": 1058,
       "downloads": 76410
-    },
-    {
-      "id": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "task": "text-to-speech",
-      "likes": 756,
-      "downloads": 11795
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 930,
+      "likes": 948,
       "downloads": 393062
+    },
+    {
+      "id": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "task": "text-to-speech",
+      "likes": 762,
+      "downloads": 11795
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2716,
+      "likes": 2723,
       "downloads": 167750
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1977,
+      "likes": 1982,
       "downloads": 109937
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 576,
+      "likes": 578,
       "downloads": 2109
     },
     {
       "id": "LiquidAI/LFM2.5-24B-A2B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
       "task": "text-generation",
-      "likes": 494,
+      "likes": 499,
       "downloads": 14151
     }
   ],
   "papers": [
+    {
+      "title": "Recognition Is Not Grounding: Benchmarking Multilingual Financial Evidence Extraction",
+      "url": "https://huggingface.co/papers/2610.19432",
+      "upvotes": 0
+    },
+    {
+      "title": "BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking",
+      "url": "https://huggingface.co/papers/2610.07052",
+      "upvotes": 2
+    },
     {
       "title": "DisaggKD: Efficient Knowledge Distillation through Teacher-Student Disaggregation and a Fused Loss",
       "url": "https://huggingface.co/papers/2610.17644",
@@ -78,16 +88,6 @@
       "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
       "url": "https://huggingface.co/papers/2610.22744",
       "upvotes": 14
-    },
-    {
-      "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
-      "url": "https://huggingface.co/papers/2610.22273",
-      "upvotes": 0
-    },
-    {
-      "title": "GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations",
-      "url": "https://huggingface.co/papers/2610.22708",
-      "upvotes": 3
     }
   ]
 }
