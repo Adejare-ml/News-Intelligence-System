@@ -2,57 +2,57 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2572,
-      "published": 1447,
-      "filtered": 1125,
+      "total": 2591,
+      "published": 1453,
+      "filtered": 1138,
       "accept_rate": 56,
-      "avg_risk": 28.7,
+      "avg_risk": 28.6,
       "engines": {
         "unknown": 963,
-        "ollama": 476,
+        "ollama": 482,
         "nvidia": 8
       },
-      "last_seen": "2026-10-18"
+      "last_seen": "2026-10-19"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1869,
-      "published": 819,
-      "filtered": 1050,
-      "accept_rate": 44,
+      "total": 1893,
+      "published": 822,
+      "filtered": 1071,
+      "accept_rate": 43,
       "avg_risk": 31.0,
       "engines": {
         "unknown": 440,
-        "ollama": 375,
+        "ollama": 378,
         "nvidia": 4
       },
-      "last_seen": "2026-10-18"
+      "last_seen": "2026-10-19"
     },
     {
       "source": "Punch Newspapers",
-      "total": 976,
-      "published": 403,
-      "filtered": 573,
+      "total": 978,
+      "published": 404,
+      "filtered": 574,
       "accept_rate": 41,
-      "avg_risk": 26.7,
+      "avg_risk": 26.8,
       "engines": {
         "unknown": 188,
-        "ollama": 211,
+        "ollama": 212,
         "nvidia": 4
       },
       "last_seen": "2026-10-19"
     },
     {
       "source": "The Punch",
-      "total": 605,
-      "published": 341,
+      "total": 606,
+      "published": 342,
       "filtered": 264,
       "accept_rate": 56,
       "avg_risk": 32.8,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 231
+        "ollama": 232
       },
       "last_seen": "2026-10-18"
     },
@@ -72,14 +72,14 @@
     },
     {
       "source": "Vanguard News",
-      "total": 317,
-      "published": 153,
+      "total": 318,
+      "published": 154,
       "filtered": 164,
       "accept_rate": 48,
-      "avg_risk": 26.7,
+      "avg_risk": 27.0,
       "engines": {
         "unknown": 94,
-        "ollama": 54,
+        "ollama": 55,
         "nvidia": 5
       },
       "last_seen": "2026-10-19"
@@ -2134,5 +2134,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-19 01:01:16"
+  "generated": "2026-10-19 14:24:18"
 }

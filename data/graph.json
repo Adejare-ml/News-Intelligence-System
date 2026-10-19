@@ -31,14 +31,14 @@
       "risk": "Critical"
     },
     {
-      "id": "d9b2bde3f533",
-      "label": "Uber Nigeria",
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
       "type": "company",
       "risk": "Medium"
     },
     {
-      "id": "9ed3f0f5bb2d",
-      "label": "Dangote Refinery",
+      "id": "d9b2bde3f533",
+      "label": "Uber Nigeria",
       "type": "company",
       "risk": "Medium"
     },
@@ -91,6 +91,12 @@
       "risk": "Critical"
     },
     {
+      "id": "1616286eac11",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "type": "company",
+      "risk": "High"
+    },
+    {
       "id": "de3af1814043",
       "label": "NNPCL",
       "type": "company",
@@ -101,12 +107,6 @@
       "label": "Tinubu",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "1616286eac11",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "type": "company",
-      "risk": "High"
     },
     {
       "id": "866686ab0fd6",
@@ -127,14 +127,50 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "c06f2d9a3df8",
+      "label": "National Insurance Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f8f7bbd6535e",
+      "label": "Nigerian National Petroleum Company (NNPC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -153,12 +189,6 @@
     {
       "id": "88ddee7fc08f",
       "label": "Gombe State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,33 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "42f5df65143b",
-      "label": "Federal Road Safety Corps",
-      "type": "agency",
+      "id": "f121c0e97820",
+      "label": "Seyi Makinde",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "agency",
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "4d8cb1e72a03",
-      "label": "Nigeria Data Protection Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1e4850ce789a",
-      "label": "Nigerian Safety Investigation Bureau",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
+      "id": "6ff5775e8631",
+      "label": "Oyebanji",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -454,36 +472,6 @@
       "id": "974787534a67",
       "label": "Osinbajo",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6ff5775e8631",
-      "label": "Oyebanji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a70f31de512b",
-      "label": "Ekiti State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ac849d0315b2",
-      "label": "Joseph Tegbe",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -717,6 +705,18 @@
   ],
   "edges": [
     {
+      "id": "63dfe1afb291",
+      "from": "f121c0e97820",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Governor of Oyo State"
+    },
+    {
+      "id": "b6c8fff20d98",
+      "from": "6ff5775e8631",
+      "to": "a70f31de512b",
+      "label": "Appointed as Governor"
+    },
+    {
       "id": "773118582206",
       "from": "17530210d4fa",
       "to": "04d993f97b29",
@@ -853,18 +853,6 @@
       "from": "974787534a67",
       "to": "b5da1d8370fd",
       "label": "Appointed as Former Vice President"
-    },
-    {
-      "id": "b6c8fff20d98",
-      "from": "6ff5775e8631",
-      "to": "a70f31de512b",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "015e5b99f1cc",
-      "from": "ac849d0315b2",
-      "to": "9b5f79697bc2",
-      "label": "Appointed as Minister of Power"
     },
     {
       "id": "a5e36b5f552f",

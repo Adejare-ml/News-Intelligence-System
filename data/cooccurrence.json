@@ -86,6 +86,10 @@
       "label": "Economic and Financial Crimes Commission"
     },
     {
+      "key": "ekiti state government",
+      "label": "Ekiti State Government"
+    },
+    {
       "key": "exchange",
       "label": "Nigerian Exchange Group"
     },
@@ -198,6 +202,10 @@
       "label": "Olayemi Cardoso"
     },
     {
+      "key": "oyebanji",
+      "label": "Oyebanji"
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government"
     },
@@ -285,6 +293,11 @@
       "weight": 4
     },
     {
+      "a": "independent national electoral commission",
+      "b": "socio economic rights and accountability project",
+      "weight": 4
+    },
+    {
       "a": "national petroleum company",
       "b": "ogun state government",
       "weight": 4
@@ -302,11 +315,6 @@
     {
       "a": "economic and financial crimes commission",
       "b": "nasir el rufai",
-      "weight": 3
-    },
-    {
-      "a": "independent national electoral commission",
-      "b": "socio economic rights and accountability project",
       "weight": 3
     },
     {
@@ -440,6 +448,11 @@
       "weight": 2
     },
     {
+      "a": "ekiti state government",
+      "b": "oyebanji",
+      "weight": 2
+    },
+    {
       "a": "federal government of",
       "b": "lagos state government",
       "weight": 2
@@ -515,5 +528,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-19 01:01:16"
+  "generated": "2026-10-19 14:24:18"
 }

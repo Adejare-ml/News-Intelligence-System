@@ -1,26 +1,26 @@
 {
   "new_companies": [
-    "CITA Energies",
-    "European Investment Bank",
-    "Sapphital"
+    "Dangote Foundation",
+    "Unnamed Bank"
   ],
   "new_people": [],
-  "psc_added": [
-    {
-      "person": "Thomas Ogungbangbe",
-      "company": "CITA Energies"
-    }
-  ],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Reps probe NIPCO gas licences, NNPC executive over money laundering claims - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
-    "new_companies": 3,
+    "new_companies": 2,
     "new_people": 0,
-    "psc_added": 1,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-19 01:01:11"
+  "generated": "2026-10-19 14:24:12"
 }

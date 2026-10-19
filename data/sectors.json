@@ -14,20 +14,20 @@
     {
       "industry": "Oil & Gas",
       "companies": 37,
-      "mentions": 194,
+      "mentions": 198,
       "risk": {
         "Medium": 11,
-        "Low": 23,
+        "Low": 22,
         "Critical": 1,
-        "High": 2
+        "High": 3
       }
     },
     {
       "industry": "Banking",
-      "companies": 19,
-      "mentions": 37,
+      "companies": 20,
+      "mentions": 39,
       "risk": {
-        "Low": 14,
+        "Low": 15,
         "Medium": 5
       }
     },
@@ -69,6 +69,14 @@
       }
     },
     {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 1,
+      "mentions": 11,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Politics",
       "companies": 5,
       "mentions": 11,
@@ -94,14 +102,6 @@
       "risk": {
         "Medium": 3,
         "Low": 3
-      }
-    },
-    {
-      "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 10,
-      "risk": {
-        "High": 1
       }
     },
     {
@@ -253,6 +253,15 @@
       }
     },
     {
+      "industry": "Philanthropy",
+      "companies": 3,
+      "mentions": 4,
+      "risk": {
+        "Low": 2,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Power/Energy",
       "companies": 2,
       "mentions": 4,
@@ -282,14 +291,6 @@
       "mentions": 3,
       "risk": {
         "Low": 1
-      }
-    },
-    {
-      "industry": "Philanthropy",
-      "companies": 2,
-      "mentions": 3,
-      "risk": {
-        "Low": 2
       }
     },
     {
@@ -726,5 +727,5 @@
       }
     }
   ],
-  "generated": "2026-10-19 01:01:16"
+  "generated": "2026-10-19 14:24:18"
 }

@@ -6313,16 +6313,16 @@
   },
   {
     "Company": "FirstBank",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-17 12:26",
+    "Mention Count": 4,
+    "Last Seen": "2026-10-19 14:18",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 83,
-    "Last Seen": "2026-10-17 1:13",
+    "Mention Count": 84,
+    "Last Seen": "2026-10-19 14:19",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -6569,8 +6569,8 @@
   },
   {
     "Company": "Nigeria LNG Limited",
-    "Mention Count": 3,
-    "Last Seen": "2026-10-19 00:59",
+    "Mention Count": 4,
+    "Last Seen": "2026-10-19 14:22",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -6682,7 +6682,7 @@
   {
     "Company": "First City Monument Bank",
     "Mention Count": 4,
-    "Last Seen": "2026-10-19 00:59",
+    "Last Seen": "2026-10-19 0:59",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 25,
-    "Last Seen": "2026-10-14 17:46",
+    "Mention Count": 26,
+    "Last Seen": "2026-10-19 14:21",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -7881,8 +7881,8 @@
   },
   {
     "Company": "Socio-Economic Rights and Accountability Project",
-    "Mention Count": 10,
-    "Last Seen": "2026-10-18 11:57",
+    "Mention Count": 11,
+    "Last Seen": "2026-10-19 14:18",
     "Industry": "Non-Profit/Legal Advocacy",
     "Risk Level": "High",
     "First Seen": "2026-09-14 11:01"
@@ -8441,10 +8441,10 @@
   },
   {
     "Company": "NIPCO",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-28 20:00",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-19 14:19",
     "Industry": "Oil & Gas",
-    "Risk Level": "Low",
+    "Risk Level": "High",
     "First Seen": "2026-09-28 20:00"
   },
   {
@@ -9350,5 +9350,21 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-10-19 01:00"
+  },
+  {
+    "Company": "Unnamed Bank",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-19 14:20",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-19 14:20"
+  },
+  {
+    "Company": "Dangote Foundation",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-19 14:21",
+    "Industry": "Philanthropy",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-19 14:21"
   }
 ]
