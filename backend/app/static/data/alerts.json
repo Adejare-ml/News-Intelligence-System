@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-10-19",
+      "title": "Reps probe NIPCO gas licences, NNPC executive over money laundering claims - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5",
+      "source": "Punch Newspapers",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "NIPCO",
+        "Nigerian National Petroleum Company (NNPC)"
+      ]
+    },
+    {
       "date": "2026-10-18",
       "title": "Afrinvest repays undocumented $1 million from Elumelu with interest - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTHZCd0x1Q0hINzNfMVBoOTdFa3I1WjRoZ3EyMDJWQ3o3aEhhdGZHNEpLZHZ2NHB1Zlo1cWtoNmpKZUZONWlzSlpaQklURWM5V09kTUNxVXhZR1MwMHJXckdjc2xETzhxM0h5d05QakN4bUl5Q19fVTV0RmprS0pXRXRyTnM0UTBlbDBVc242b3l6ZThQd3V3TS1FdlVSR25VZDBLNDhEYk1RYU9KR0Vnb1hCZ0k2MG1lSVV1U1luQkx2WGNSMXljRjg2V08?oc=5",
@@ -695,5 +707,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-19 01:01:16"
+  "generated": "2026-10-19 14:24:18"
 }

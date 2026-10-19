@@ -1,33 +1,49 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-19 01:00:43 (UTC)
-**Run Window:** 2026-10-19, all runs to 01:00 (run 1 of the day)
+**Generated on:** 2026-10-19 14:22:40 (UTC)
+**Run Window:** 2026-10-19, all runs to 14:22 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 4
-- **High Risk Signals:** 0
-- **Appointments Logged:** 0
+- **Total Articles Processed:** 16
+- **High Risk Signals:** 1
+- **Appointments Logged:** 1
 - **Procurement Awards:** 1
 
 ---
 
-**Nigerian Corporate Transparency & Beneficial Ownership Intelligence Brief**  
-**Date:** 19 October 2026  
-**Coverage Window:** Articles published on 19 October 2026 up to 01:00  
-
-### Key Developments
-* First City Monument Bank (FCMB) and the European Investment Bank (EIB) finalized an agreement to deploy €85 million in targeted credit financing across Nigeria's agricultural value chain ([Punch Newspapers](https://news.google.com/rss/articles/CBMidkFVX3lxTE0wOVNiS0Y0dmxIa1hHa0NSSTlpdDRhek1hRVJZc1IyMVhWMjZiS1hTaVBhLUxMZkdvdHlZajBYRzJCRXJrQnc4VjZaMGpyVS00c3dnbm9BN29xZHE0SUp6cUlHcFBVLW43RzJTNFFFV1oxOFVVVlE?oc=5)).
-* The Presidency formally refuted claims by Oyo State Governor Seyi Makinde regarding alleged N250 billion per-state dividend distributions from Nigeria LNG Limited (NLNG) ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxOYUVPZ3BVV2dCZUhxMGo2SVo3YnhELURaU1FnRUR0dndlTlpUZ0pBdVVPeDE5cXR1ZVRuVHlWQVBQTUU0Nmc1ekxKSTZHbjB2bnhSWkNNbHR4LWUwTmVWNDlGVTFLYm9DbV9yY2Y2NTZYRVA4Y0d6UmJzYkJ1VGNyWmFEUjdFa1c1QnM5MVMzUnJ3N3RhQ3I1d0tfdnB6UEZFTjVQYUtxSGRwU2lyNGxVdkdFckY2OFZrUFVhZlNUWHdrVlJpdkptRWZuVV94WFlLWU8wanBB?oc=5)).
-* CITA Energies, an indigenous aviation fuel supplier, reported operational expansion reaching an estimated $200 million valuation under the leadership of Chairman Dr. Thomas Ogungbangbe ([The Punch](https://punchng.com/ceo-shares-journey-to-buliding-200m-firm/)).
-
-### High Risk Alerts
-No elevated governance risks or systemic integrity threats emerged from the intelligence processed during this monitoring window.
-
-### Beneficial Ownership & PSC Disclosures
-* **Dr. Thomas Ogungbangbe** was identified exercising significant control as Chairman of **CITA Energies**; however, exact equity ownership percentages, direct versus indirect control mechanisms, and intermediate holding vehicles were omitted, and regulatory PSC filing references remain pending, though he is flagged as a non-PEP ([The Punch](https://punchng.com/ceo-shares-journey-to-buliding-200m-firm/)).
-
-### Procurement & Board Changes
-* The **Bank of Industry (BOI)** partnered with technology training firm **Sapphital** and a federal ministry to commission a vocational skills training scheme for 500 Nigerians, with contract values not publicly stated ([Punch Newspapers](https://news.google.com/rss/articles/CBMikAFBVV95cUxQRnBBQXJNUENwOTZEdTRhVDFxOTU1S0Ixa2xfRVM0QlZma1R0bDByQ1RtWERnQ1VvNUU0V3MxeXVJVGRvOUc2VGJBNGVFVmYteUJDd050VXM2ejltVDh6Z1hhaGk4X1JRM1p1bGR6ellnTkRqcjF3eEt5Q2tDWVZ2MjgzN0Y2eUpOVzYzWk1zWjI?oc=5)).
-* No MDA board reconstitutions or formal corporate directorate changes were reported in this coverage cycle.
+**Report Date**: 2026‑10‑19  
+**Coverage**: All articles published on 2026‑10‑19 up to 14:22 (run 2 of the day)
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
+
+### Key Developments
+
+- **NAICOM warns insurers** that idle recapitalisation funds may attract sanctions. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirwFBVV95cUxONmFBdWtxcVQwWTluaVVfNGF6MmdRTE5XZHVvUzhYRFhHbUZFUXBTaTh3NC1PcERCWVFMTTFTdERZcEhuYzNMSkNwZlZjRk90WGFUb3UxOWtaRUhhbFRFN25LVUsySnVKdlJPN3FLNkJhUjdSeXF2VHR6MDBGN3UyeDBEVGZCeGkzTEhBNW5xR3ZZdnItNGhtV3dFTlAweTNsdFdCaExSRndIWWRYaHR3?oc=5))
+- **SERAP sues INEC** over N126 billion election expenditure. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMigAFBVV95cUxQUzY5Q2hyYkxPYU5EVG9IbnZnaHA2RDZPZ2xvSlowZE9Jbmx2QUNVRW0xY05WaGdNMXVpbVVIRDQ4SXQ2cnZtbEVlZDlVUEh1NUJZdEZ6SXVvN2R6WkxhVXVDMmZCbDVEdmxuUXkxU01RWDJUU3NtcHhRX0o1bkMtZw?oc=5))
+- **FirstBank** seeks stronger ties to boost lending after recapitalisation. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivgFBVV95cUxQcG02dEwzOWg5TWRhN0gyZDZLOGdYdGtMR2stQ2NtNkdLc0huQUJHLXRYdjI3bWx6WUtma3laUnpUeXR2MklrU1VmU2pCaklyRHBUTDhzdkxoWkw5d01acHI0TG1sb2RJR1A0cGk3eUwxTGt5SlRySDlFVE4xcFMzVDl3UFdFbnFDTUsxTXZUWEQtOWF6aDdoMXdfVkp1Nms0emFiYmE5LWlBNElXdUlpVEw5ZDF6RWJXUG9nOTdR?oc=5))
+- **Federal Government** defends debt figures amid high‑interest concerns. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMinwFBVV95cUxPbnQ2WXRhNTBaSkw2WUdQWUF2SUM0aU5vVG1obl9qeW1yS19XMnliaW5fSGxyVTBuR1JsSXdaNGlTUW1qVUdSOUpSNmRYelBTRy1zMERsQlJwUFF6aUhpZ2ZHZTRqVUpDZENycjFPbEZDcUpYVWhJdXUyUlJ6ZU5yZXNZRUl6bzV0SHdKbmVkN1owTnhnekhxXzludXd0Tmc?oc=5))
+- **Nigeria targets $3 billion annual carbon finance** through clean‑energy partnerships. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiogFBVV95cUxNdjR3dGVuanFHT1daQ20wd2dEajdtaVFpcFA0dWFnYWdYc3dKYTVBSm00czd3ckl2Q3lGWkZNU1NtNmxaY2l3di1NYTRhTVYtM0UxQk1vX1UxLWg3cUJWQVlLN2l6UGUyOUMzZGpfeFNob3RSQTJGa3RDbEE1ZUxRUURUUkd6b3VkRnBmMjNWTm4yVVRDYWVPSk5DaGpueGtIQnc?oc=5))
+- **House of Representatives probe** into NIPCO gas licences and an NNPC executive over money‑laundering allegations. ([Punch Newspapers](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5))
+
+---
+
+### High‑Risk Alerts
+
+- **Reps probe of NIPCO licences** and **NNPC executive** over money‑laundering claims – high‑risk corruption scrutiny. ([Punch Newspapers](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5))
+- **Ongoing audit demand** for **NNPC receivables of ₦1.12 trillion** – potential governance breach. ([Vanguard News](https://news.google.com/rss/articles/CBMitAFBVV95cUxOOG1McmpDcXBrcG1meTVaZnlDUEF6Mk05M1YwMlN5LUFUUGZ3alpVUGJjZkE5NU1EM3pIem04dGxxUDJha0RCcVV6R05JcUFwNHpQbnRJdlBtS1BvaUtkUElJU1A3OEFxRU5la0trNC1YZ25kWExoSzdkU05RZi1xWGltTUpsWFc3WlpMRlZVUWxHNWZQTUpUUEtvdTliOVJDNkV4YWJIaVlMWWVDTXM0Y0NETFrSAboBQVVfeXFMTVVLQzlqSmYzUjFMUUVEa0lUR0lBR25wOWxtQ1pfeDRNMEk2d2FZT0tlMlAyZlNyLWNhUzZ4SUM4Qkl6SVhPWDBXMmJ5R3d3c0l3SnpWOTFBUHZYZnhfVktjRUZERHpaLUttOUVRTFdtclYwbWNnc0ZlT3I1c3pUa3hjWHNIWWRWRzdjWVJlSnEwdUY0WEU2YVlZNnJzYklCRlpaS3dBMnN1NnpPcVBYUGdHZHlfb09mWVFR?oc=5))
+
+---
+
+### Beneficial Ownership & PSC Disclosures
+
+No PSC disclosures or significant‑control holders are reported in the current data set.  
+
+---
+
+### Procurement & Board Changes
+
+- **FirstBank** is engaged in strategic partnership talks to lift lending limits post‑recapitalisation—potential procurement activity. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivgFBVV95cUxQcG02dEwzOWg5TWRhN0gyZDZLOGdYdGtMR2stQ2NtNkdLc0huQUJHLXRYdjI3bWx6WUtma3laUnpUeXR2MklrU1VmU2pCaklyRHBUTDhzdkxoWkw5d01acHI0TG1sb2RJR1A0cGk3eUwxTGt5SlRySDlFVE4xcFMzVDl3UFdFbnFDTUsxTXZUWEQtOWF6aDdoMXdfVkp1Nms0emFiYmE5LWlBNElXdUlpVEw5ZDF6RWJXUG9nOTdR?oc=5))
+- **Ekiti State Government** appoints new SSG, CoS, and CPS following Oyo‑state governor’s reshuffle—board changes. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxNWkZfVFh2UFc4Sk5fTzZ4U1kzMUdXQzduYzU5Zy1vUWU0Qm9UR0Z3bGVDc3lJNEdLOTVESl9BdFBmdVhRdF9wZDI0VmFYVGY5bzZibTJ1cmpEak9GNENmdDNuVnBIX2lqMlFlRWVOeUs5aGhtSC1xZ004am5XVHVROUJlVEtBc0VhbHc?oc=5))
+- No additional procurement or board‑change items reported.
+
+---
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

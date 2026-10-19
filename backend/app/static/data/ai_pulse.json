@@ -1,92 +1,92 @@
 {
-  "generated": "2026-10-19 01:01:14",
+  "generated": "2026-10-19 14:24:13",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1338,
-      "downloads": 10233
+      "likes": 1579,
+      "downloads": 17924
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 1008,
-      "downloads": 57935
-    },
-    {
-      "id": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "task": "feature-extraction",
-      "likes": 2662,
-      "downloads": 164339
-    },
-    {
-      "id": "jialinyyzz/humanizer",
-      "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "task": "text-generation",
-      "likes": 1947,
-      "downloads": 103709
+      "likes": 1035,
+      "downloads": 76410
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 694,
-      "downloads": 9620
+      "likes": 736,
+      "downloads": 11795
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 812,
-      "downloads": 338036
+      "likes": 888,
+      "downloads": 393062
+    },
+    {
+      "id": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "task": "feature-extraction",
+      "likes": 2696,
+      "downloads": 167750
+    },
+    {
+      "id": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "task": "text-generation",
+      "likes": 1971,
+      "downloads": 109937
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 546,
-      "downloads": 1809
+      "likes": 568,
+      "downloads": 2109
     },
     {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 8377,
-      "downloads": 2012496
+      "id": "black-forest-labs/flux-3-image-klein",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "task": "image-to-image",
+      "likes": 517,
+      "downloads": 62006
     }
   ],
   "papers": [
     {
-      "title": "Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models",
-      "url": "https://huggingface.co/papers/2610.21185",
-      "upvotes": 6
+      "title": "Relational Learning as World Modeling",
+      "url": "https://huggingface.co/papers/2610.16763",
+      "upvotes": 0
     },
     {
-      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
-      "url": "https://huggingface.co/papers/2610.21261",
-      "upvotes": 106
+      "title": "What It Is, Not What It Says: Securing Agentic Browsing Interactions with Web Semantics",
+      "url": "https://huggingface.co/papers/2610.22697",
+      "upvotes": 0
     },
     {
-      "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
-      "url": "https://huggingface.co/papers/2610.20680",
+      "title": "ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models",
+      "url": "https://huggingface.co/papers/2610.22306",
+      "upvotes": 0
+    },
+    {
+      "title": "AI-Driven Disaster Response and Displacement Monitoring",
+      "url": "https://huggingface.co/papers/2610.21482",
       "upvotes": 1
     },
     {
-      "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
-      "url": "https://huggingface.co/papers/2610.22280",
-      "upvotes": 8
+      "title": "Xiaomi-Lens-0 Technical Report",
+      "url": "https://huggingface.co/papers/2610.23279",
+      "upvotes": 23
     },
     {
-      "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
-      "url": "https://huggingface.co/papers/2610.15924",
-      "upvotes": 4
-    },
-    {
-      "title": "LeanPRM: Lean-Grounded Process Supervision for Natural Language Proof Verification",
-      "url": "https://huggingface.co/papers/2610.17697",
+      "title": "MTEdit: Packed Trajectories Beat Rollouts for Multi-Turn Image Editing",
+      "url": "https://huggingface.co/papers/2610.23751",
       "upvotes": 5
     }
   ]
