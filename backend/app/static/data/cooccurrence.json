@@ -118,6 +118,10 @@
       "label": "House of Representatives Committee on Host Communities"
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission"
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission"
     },
@@ -182,6 +186,10 @@
       "label": "Natural Resource Governance Institute"
     },
     {
+      "key": "office of the attorney general of the federation",
+      "label": "Office of the Attorney General of the Federation"
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government"
     },
@@ -242,6 +250,10 @@
       "label": "Stallion Group"
     },
     {
+      "key": "state security service",
+      "label": "State Security Service"
+    },
+    {
       "key": "sunrise power",
       "label": "Sunrise Power"
     },
@@ -293,6 +305,11 @@
       "weight": 4
     },
     {
+      "a": "economic and financial crimes commission",
+      "b": "nasir el rufai",
+      "weight": 4
+    },
+    {
       "a": "independent national electoral commission",
       "b": "socio economic rights and accountability project",
       "weight": 4
@@ -310,11 +327,6 @@
     {
       "a": "economic and financial crimes commission",
       "b": "maina",
-      "weight": 3
-    },
-    {
-      "a": "economic and financial crimes commission",
-      "b": "nasir el rufai",
       "weight": 3
     },
     {
@@ -453,6 +465,11 @@
       "weight": 2
     },
     {
+      "a": "economic and financial crimes commission",
+      "b": "state security service",
+      "weight": 2
+    },
+    {
       "a": "ekiti state government",
       "b": "oyebanji",
       "weight": 2
@@ -475,6 +492,11 @@
     {
       "a": "house of representatives committee on host communities",
       "b": "pipeline infrastructure",
+      "weight": 2
+    },
+    {
+      "a": "independent corrupt practices and other related offences commission",
+      "b": "office of the attorney general of the federation",
       "weight": 2
     },
     {
@@ -508,6 +530,11 @@
       "weight": 2
     },
     {
+      "a": "nasir el rufai",
+      "b": "state security service",
+      "weight": 2
+    },
+    {
       "a": "national information technology development agency",
       "b": "tech revolution africa",
       "weight": 2
@@ -528,5 +555,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-19 19:02:44"
+  "generated": "2026-10-19 21:29:43"
 }

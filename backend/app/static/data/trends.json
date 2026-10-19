@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 203,
+  "recent_articles": 205,
   "previous_articles": 183,
   "rising": [
     {
       "term": "premium",
-      "recent": 79,
-      "previous": 66,
-      "change": 13
+      "recent": 77,
+      "previous": 67,
+      "change": 10
     },
     {
       "term": "premium times",
-      "recent": 79,
-      "previous": 66,
-      "change": 13
+      "recent": 77,
+      "previous": 67,
+      "change": 10
     },
     {
       "term": "times",
-      "recent": 79,
-      "previous": 66,
-      "change": 13
+      "recent": 77,
+      "previous": 67,
+      "change": 10
     },
     {
       "term": "nigeria\u2019s",
@@ -29,12 +29,6 @@
     },
     {
       "term": "imf",
-      "recent": 9,
-      "previous": 1,
-      "change": 8
-    },
-    {
-      "term": "warns",
       "recent": 9,
       "previous": 1,
       "change": 8
@@ -62,6 +56,12 @@
       "recent": 8,
       "previous": 2,
       "change": 6
+    },
+    {
+      "term": "warns",
+      "recent": 8,
+      "previous": 2,
+      "change": 6
     }
   ],
   "falling": [
@@ -78,12 +78,6 @@
       "change": -10
     },
     {
-      "term": "court",
-      "recent": 9,
-      "previous": 17,
-      "change": -8
-    },
-    {
       "term": "cbn",
       "recent": 1,
       "previous": 9,
@@ -96,16 +90,22 @@
       "change": -8
     },
     {
+      "term": "court",
+      "recent": 10,
+      "previous": 16,
+      "change": -6
+    },
+    {
       "term": "inec",
       "recent": 5,
-      "previous": 12,
-      "change": -7
+      "previous": 11,
+      "change": -6
     },
     {
       "term": "vanguard",
-      "recent": 2,
+      "recent": 3,
       "previous": 8,
-      "change": -6
+      "change": -5
     },
     {
       "term": "petrol discount",
@@ -129,20 +129,20 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 141,
-      "previous": 129
+      "recent": 142,
+      "previous": 130
     },
     {
       "category": "Company",
-      "recent": 35,
+      "recent": 36,
       "previous": 22
     },
     {
       "category": "Legal",
       "recent": 27,
-      "previous": 32
+      "previous": 31
     }
   ],
   "social": [],
-  "generated": "2026-10-19 19:02:42"
+  "generated": "2026-10-19 21:29:41"
 }

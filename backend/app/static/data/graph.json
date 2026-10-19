@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "c06f2d9a3df8",
       "label": "National Insurance Commission",
       "type": "agency",
@@ -157,6 +163,12 @@
       "risk": "Low"
     },
     {
+      "id": "ef6dbf96f94e",
+      "label": "Ondo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
       "type": "agency",
@@ -165,6 +177,12 @@
     {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -181,14 +199,26 @@
       "risk": "Low"
     },
     {
-      "id": "f8f7bbd6535e",
-      "label": "Nigerian National Petroleum Company (NNPC)",
+      "id": "9b023d5d7736",
+      "label": "Office of the Attorney General of the Federation",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "0b2ac17f47f4",
+      "label": "Lagos State Waste Management Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ec79cf0c700a",
+      "label": "State Security Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f8f7bbd6535e",
+      "label": "Nigerian National Petroleum Company (NNPC)",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,36 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "701a11e9aed2",
-      "label": "Ministry of Finance",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "478418814097",
-      "label": "European Union",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1d96b08d2977",
-      "label": "Department of State Services",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "04d993f97b29",
-      "label": "Pension Reform Task Team",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8daae58ca874",
-      "label": "Government of Katsina State",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
@@ -259,9 +259,33 @@
       "risk": "Low"
     },
     {
+      "id": "be252fefa816",
+      "label": "Nasir El-Rufai",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "512a18337770",
+      "label": "LAWMA boss",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "17530210d4fa",
       "label": "Abdulrasheed Maina",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "04d993f97b29",
+      "label": "Pension Reform Task Team",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -349,18 +373,6 @@
       "risk": "Low"
     },
     {
-      "id": "be252fefa816",
-      "label": "Nasir El-Rufai",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "423d33ac58c5",
       "label": "Cardoso",
       "type": "person",
@@ -376,12 +388,6 @@
       "id": "c9eb8a8dbd99",
       "label": "Segun Kayode",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ec79cf0c700a",
-      "label": "State Security Service",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -454,12 +460,6 @@
       "id": "b135be2e521d",
       "label": "African Democratic Congress",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "974787534a67",
-      "label": "Osinbajo",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -613,6 +613,12 @@
       "risk": "Medium"
     },
     {
+      "id": "ff7de7b79a06",
+      "label": "Unnamed tech firm",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "5a0a05b0f09c",
       "label": "Sapphital",
       "type": "company",
@@ -705,6 +711,18 @@
       "label": "Appointed as Governor"
     },
     {
+      "id": "0786561b838b",
+      "from": "be252fefa816",
+      "to": "4b3b1b76a8e8",
+      "label": "Appointed as Former Governor"
+    },
+    {
+      "id": "9bc508d477ef",
+      "from": "512a18337770",
+      "to": "0b2ac17f47f4",
+      "label": "Appointed as Managing Director/CEO"
+    },
+    {
       "id": "773118582206",
       "from": "17530210d4fa",
       "to": "04d993f97b29",
@@ -763,12 +781,6 @@
       "from": "58c58351d674",
       "to": "4c7e8211e98f",
       "label": "Appointed as Governor"
-    },
-    {
-      "id": "0786561b838b",
-      "from": "be252fefa816",
-      "to": "4b3b1b76a8e8",
-      "label": "Appointed as Former Governor of Kaduna State"
     },
     {
       "id": "7c66b5e3768e",
@@ -835,12 +847,6 @@
       "from": "3adab9f78930",
       "to": "b135be2e521d",
       "label": "Appointed as National Publicity Secretary"
-    },
-    {
-      "id": "88bf65fd391a",
-      "from": "974787534a67",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as Former Vice President"
     },
     {
       "id": "a5e36b5f552f",
@@ -937,6 +943,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "1c17064eccb8",
+      "from": "ff7de7b79a06",
+      "to": "ef6dbf96f94e",
+      "label": "Contract Awardee"
     },
     {
       "id": "094eb630c81d",
