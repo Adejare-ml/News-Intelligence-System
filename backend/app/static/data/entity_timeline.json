@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 76,
+      "total_mentions": 78,
       "points": [
         {
           "week": "2026-09-14",
@@ -37,9 +37,9 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
+          "mentions": 4,
+          "avg_risk": 47.5,
+          "max_risk": 85
         }
       ]
     },
@@ -228,6 +228,49 @@
       ]
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "total_mentions": 22,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 9,
+          "avg_risk": 12.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 21.7,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 26.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 21,
@@ -272,43 +315,6 @@
           "week": "2026-10-19",
           "mentions": 1,
           "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "total_mentions": 21,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 9,
-          "avg_risk": 12.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 21.7,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 26.0,
           "max_risk": 40
         }
       ]
@@ -481,6 +487,43 @@
       ]
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "total_mentions": 11,
@@ -593,37 +636,6 @@
           "week": "2026-10-12",
           "mentions": 2,
           "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 20.0,
           "max_risk": 30
         }
       ]
@@ -810,6 +822,43 @@
       ]
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "osun state government",
       "label": "Osun State Government",
       "total_mentions": 7,
@@ -950,37 +999,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -1824,6 +1842,25 @@
       ]
     },
     {
+      "key": "nipco",
+      "label": "NIPCO",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "nnpc",
       "label": "NNPC Limited",
       "total_mentions": 3,
@@ -2257,6 +2294,25 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "united airlines",
+      "label": "United Nigeria Airlines",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2862,25 +2918,6 @@
       ]
     },
     {
-      "key": "nipco",
-      "label": "NIPCO",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "national agency for science and engineering infrastructure",
       "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 2,
@@ -3338,19 +3375,6 @@
           "week": "2026-09-14",
           "mentions": 2,
           "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "united airlines",
-      "label": "United Nigeria Airlines",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -5161,5 +5185,5 @@
       ]
     }
   ],
-  "generated": "2026-10-19 14:24:18"
+  "generated": "2026-10-19 19:02:44"
 }

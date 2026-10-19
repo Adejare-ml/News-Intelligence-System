@@ -318,6 +318,11 @@
       "weight": 3
     },
     {
+      "a": "house of representatives",
+      "b": "national petroleum company",
+      "weight": 3
+    },
+    {
       "a": "national petroleum company",
       "b": "ojulari",
       "weight": 3
@@ -468,11 +473,6 @@
       "weight": 2
     },
     {
-      "a": "house of representatives",
-      "b": "national petroleum company",
-      "weight": 2
-    },
-    {
       "a": "house of representatives committee on host communities",
       "b": "pipeline infrastructure",
       "weight": 2
@@ -528,5 +528,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-19 14:24:18"
+  "generated": "2026-10-19 19:02:44"
 }

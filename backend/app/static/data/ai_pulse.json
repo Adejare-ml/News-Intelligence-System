@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-19 14:24:13",
+  "generated": "2026-10-19 19:02:42",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1579,
+      "likes": 1644,
       "downloads": 17924
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 1035,
+      "likes": 1050,
       "downloads": 76410
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 736,
+      "likes": 756,
       "downloads": 11795
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 888,
+      "likes": 930,
       "downloads": 393062
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2696,
+      "likes": 2716,
       "downloads": 167750
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1971,
+      "likes": 1977,
       "downloads": 109937
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 568,
+      "likes": 576,
       "downloads": 2109
     },
     {
-      "id": "black-forest-labs/flux-3-image-klein",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-      "task": "image-to-image",
-      "likes": 517,
-      "downloads": 62006
+      "id": "LiquidAI/LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+      "task": "text-generation",
+      "likes": 494,
+      "downloads": 14151
     }
   ],
   "papers": [
     {
-      "title": "Relational Learning as World Modeling",
-      "url": "https://huggingface.co/papers/2610.16763",
+      "title": "DisaggKD: Efficient Knowledge Distillation through Teacher-Student Disaggregation and a Fused Loss",
+      "url": "https://huggingface.co/papers/2610.17644",
       "upvotes": 0
     },
     {
-      "title": "What It Is, Not What It Says: Securing Agentic Browsing Interactions with Web Semantics",
-      "url": "https://huggingface.co/papers/2610.22697",
-      "upvotes": 0
-    },
-    {
-      "title": "ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models",
-      "url": "https://huggingface.co/papers/2610.22306",
-      "upvotes": 0
-    },
-    {
-      "title": "AI-Driven Disaster Response and Displacement Monitoring",
-      "url": "https://huggingface.co/papers/2610.21482",
+      "title": "Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards",
+      "url": "https://huggingface.co/papers/2610.22448",
       "upvotes": 1
     },
     {
-      "title": "Xiaomi-Lens-0 Technical Report",
-      "url": "https://huggingface.co/papers/2610.23279",
-      "upvotes": 23
+      "title": "EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications",
+      "url": "https://huggingface.co/papers/2610.16402",
+      "upvotes": 7
     },
     {
-      "title": "MTEdit: Packed Trajectories Beat Rollouts for Multi-Turn Image Editing",
-      "url": "https://huggingface.co/papers/2610.23751",
-      "upvotes": 5
+      "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
+      "url": "https://huggingface.co/papers/2610.22744",
+      "upvotes": 14
+    },
+    {
+      "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
+      "url": "https://huggingface.co/papers/2610.22273",
+      "upvotes": 0
+    },
+    {
+      "title": "GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations",
+      "url": "https://huggingface.co/papers/2610.22708",
+      "upvotes": 3
     }
   ]
 }
