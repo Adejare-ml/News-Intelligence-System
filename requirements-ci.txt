@@ -39,4 +39,4 @@ slowapi==0.1.10
 bcrypt==5.0.0
 httpx==0.28.1
 python-multipart==0.0.32
-pgvector==0.5.0
+pgvector==0.5.1
