@@ -5,7 +5,7 @@ psycopg2-binary==2.9.13
 pgvector==0.5.0
 celery==5.6.3
 redis==8.1.0
-pydantic==2.11.10
+pydantic==2.14.1
 pydantic-settings==2.16.0
 feedparser==6.0.14
 beautifulsoup4==4.15.0
