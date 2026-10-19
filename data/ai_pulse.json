@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-18 19:19:55",
+  "generated": "2026-10-19 01:01:14",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1287,
+      "likes": 1338,
       "downloads": 10233
-    },
-    {
-      "id": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "task": "feature-extraction",
-      "likes": 2650,
-      "downloads": 164339
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 988,
+      "likes": 1008,
       "downloads": 57935
+    },
+    {
+      "id": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "task": "feature-extraction",
+      "likes": 2662,
+      "downloads": 164339
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1936,
+      "likes": 1947,
       "downloads": 103709
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 678,
+      "likes": 694,
       "downloads": 9620
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 783,
+      "likes": 812,
       "downloads": 338036
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 536,
+      "likes": 546,
       "downloads": 1809
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8340,
+      "likes": 8377,
       "downloads": 2012496
     }
   ],
@@ -77,7 +77,7 @@
     {
       "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
       "url": "https://huggingface.co/papers/2610.22280",
-      "upvotes": 7
+      "upvotes": 8
     },
     {
       "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",

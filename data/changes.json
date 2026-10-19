@@ -1,30 +1,26 @@
 {
   "new_companies": [
-    "Afrinvest"
+    "CITA Energies",
+    "European Investment Bank",
+    "Sapphital"
   ],
   "new_people": [],
   "psc_added": [
     {
-      "person": "Tony Elumelu",
-      "company": "Afrinvest"
+      "person": "Thomas Ogungbangbe",
+      "company": "CITA Energies"
     }
   ],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "Afrinvest repays undocumented $1 million from Elumelu with interest - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTHZCd0x1Q0hINzNfMVBoOTdFa3I1WjRoZ3EyMDJWQ3o3aEhhdGZHNEpLZHZ2NHB1Zlo1cWtoNmpKZUZONWlzSlpaQklURWM5V09kTUNxVXhZR1MwMHJXckdjc2xETzhxM0h5d05QakN4bUl5Q19fVTV0RmprS0pXRXRyTnM0UTBlbDBVc242b3l6ZThQd3V3TS1FdlVSR25VZDBLNDhEYk1RYU9KR0Vnb1hCZ0k2MG1lSVV1U1luQkx2WGNSMXljRjg2V08?oc=5",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
+    "new_companies": 3,
     "new_people": 0,
     "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-10-18 19:19:53"
+  "generated": "2026-10-19 01:01:11"
 }

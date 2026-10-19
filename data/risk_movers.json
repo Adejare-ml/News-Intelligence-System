@@ -19,31 +19,31 @@
       "previous_mentions": 1
     },
     {
+      "key": "african democratic congress",
+      "label": "African Democratic Congress",
+      "recent_avg": 17.5,
+      "previous_avg": 45.0,
+      "delta": -27.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 39.5,
+      "delta": -24.5,
+      "recent_mentions": 5,
+      "previous_mentions": 10
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 20.0,
-      "previous_avg": 53.3,
-      "delta": -33.3,
+      "previous_avg": 42.5,
+      "delta": -22.5,
       "recent_mentions": 5,
-      "previous_mentions": 3
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 70.0,
-      "previous_avg": 47.5,
-      "delta": 22.5,
-      "recent_mentions": 2,
       "previous_mentions": 2
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 23.3,
-      "previous_avg": 43.3,
-      "delta": -20.0,
-      "recent_mentions": 3,
-      "previous_mentions": 3
     },
     {
       "key": "akwa ibom state government",
@@ -73,13 +73,22 @@
       "previous_mentions": 2
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 23.1,
-      "previous_avg": 36.9,
-      "delta": -13.8,
-      "recent_mentions": 8,
-      "previous_mentions": 8
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 23.3,
+      "previous_avg": 42.5,
+      "delta": -19.2,
+      "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 26.0,
+      "previous_avg": 15.0,
+      "delta": 11.0,
+      "recent_mentions": 5,
+      "previous_mentions": 2
     },
     {
       "key": "economic and financial crimes commission",
@@ -91,58 +100,31 @@
       "previous_mentions": 6
     },
     {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 30.0,
+      "previous_avg": 20.0,
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 29.5,
-      "previous_avg": 20.0,
-      "delta": 9.5,
-      "recent_mentions": 22,
-      "previous_mentions": 8
+      "recent_avg": 29.0,
+      "previous_avg": 22.2,
+      "delta": 6.8,
+      "recent_mentions": 21,
+      "previous_mentions": 9
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 23.9,
-      "previous_avg": 31.7,
-      "delta": -7.8,
+      "previous_avg": 29.8,
+      "delta": -5.9,
       "recent_mentions": 9,
-      "previous_mentions": 24
-    },
-    {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "recent_avg": 27.5,
-      "previous_avg": 20.0,
-      "delta": 7.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 26.0,
-      "previous_avg": 18.8,
-      "delta": 7.2,
-      "recent_mentions": 5,
-      "previous_mentions": 4
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 39.2,
-      "previous_avg": 32.5,
-      "delta": 6.7,
-      "recent_mentions": 6,
-      "previous_mentions": 12
-    },
-    {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 26.7,
-      "previous_avg": 20.0,
-      "delta": 6.7,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "previous_mentions": 22
     },
     {
       "key": "olayemi cardoso",
@@ -172,15 +154,33 @@
       "previous_mentions": 2
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 31.2,
+      "previous_avg": 32.7,
+      "delta": -1.5,
+      "recent_mentions": 4,
+      "previous_mentions": 13
+    },
+    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "recent_avg": 34.0,
-      "previous_avg": 32.5,
-      "delta": 1.5,
+      "previous_avg": 33.3,
+      "delta": 0.7,
       "recent_mentions": 5,
-      "previous_mentions": 4
+      "previous_mentions": 3
+    },
+    {
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-18 19:19:58"
+  "generated": "2026-10-19 01:01:16"
 }
