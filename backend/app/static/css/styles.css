@@ -2374,6 +2374,9 @@ main[data-route-page] > :not([data-route-outlet]) {
 .move-list li.move-resignation { border-left-color: rgba(255, 105, 97, 0.5); }
 .move .insight-count { display: block; margin-left: 0; margin-top: 0.05rem; }
 .move-role { color: var(--text-muted, #98989d); }
+/* "Unnamed Commissioner": a recorded move with no person to open. Italic
+   rather than link-coloured, so it does not read as a dead link. */
+.move-anon { font-style: italic; color: var(--text-soft, #cbd5e1); }
 .move-resignation a { color: #ff6961; }
 .move-resignation .insight-count { color: #ff6961; }
 :root[data-theme="light"] .move-list li.move-appointment { border-left-color: rgba(14, 116, 144, 0.45); }

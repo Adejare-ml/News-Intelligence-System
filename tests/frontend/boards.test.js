@@ -68,6 +68,54 @@
         T.it("no churn at all hides the panel", function () {
             T.eq(B.appointmentsTimeline([{ Name: "X", Event: "other" }]), null);
         });
+
+        T.it("placeholder names are the absence of a name, not a person", function () {
+            ["Unknown", "unknown", "None", "Not Specified", "NOT STATED",
+             "N/A", "n/a.", "nil", "TBD", "(unknown)", "-", "--", "  ", ""
+            ].forEach(function (n) {
+                T.eq(B.isPlaceholderName(n), true, JSON.stringify(n) + " is a placeholder");
+            });
+            ["Ada Obi", "Nilesh Patel", "Nancy", "Unnamed Commissioner", "Tinubu"
+            ].forEach(function (n) {
+                T.eq(B.isPlaceholderName(n), false, JSON.stringify(n) + " is a name");
+            });
+        });
+
+        T.it("placeholder rows are dropped and do not inflate the count", function () {
+            var m = B.appointmentsTimeline(PEOPLE.concat([
+                { Name: "Unknown", Position: "Speaker", Organization: "Edo Assembly", Event: "resignation", Date: "2026-09-05" },
+                { Name: "Not Specified", Position: "CEO", Organization: "Geregu", Event: "appointment", Date: "2026-09-06" }
+            ]));
+            T.eq(m.total, 4, "count still reflects only real people");
+            var html = B.renderAppointmentsHTML(m);
+            T.excludes(html, "Unknown");
+            T.excludes(html, "Not Specified");
+        });
+
+        T.it("a placeholder Position or Organization drops out of the role", function () {
+            var html = B.renderAppointmentsHTML(B.appointmentsTimeline([
+                { Name: "Sarah Boulos", Position: "President", Organization: "Not Specified",
+                  Event: "appointment", Date: "2026-09-17" },
+                { Name: "Ayo Fayose", Position: "Officer", Organization: "N/A",
+                  Event: "appointment", Date: "2026-07-21" }
+            ]));
+            T.excludes(html, "Not Specified");
+            T.excludes(html, "N/A");
+            T.contains(html, "→ President", "the half we do know survives");
+            T.contains(html, "→ Officer");
+        });
+
+        T.it("'Unnamed X' keeps its move but gets no dossier link", function () {
+            var m = B.appointmentsTimeline([
+                { Name: "Unnamed Commissioner", Position: "Commissioner",
+                  Organization: "Lagos State", Event: "appointment", Date: "2026-09-02" }
+            ]);
+            T.eq(m.total, 1, "a role without a name is still a recorded move");
+            var html = B.renderAppointmentsHTML(m);
+            T.contains(html, "move-anon");
+            T.contains(html, "Unnamed Commissioner");
+            T.excludes(html, "#/person/", "nothing to open, so nothing is linked");
+        });
     });
 
     T.describe("procurement ledger", function () {

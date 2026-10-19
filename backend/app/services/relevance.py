@@ -249,6 +249,36 @@ NON_ENTITY_TERMS = {
     "read more", "subscribe", "latest news", "breaking news", "news",
 }
 
+# What the extractor writes into a Name field when the article never named
+# anyone. These reached the dashboard as people: the appointments board
+# rendered "Unknown left Speaker @ Edo State House of Assembly" and linked
+# it to a person dossier, and the entity directory carried "Not Specified"
+# as a tracked individual. They are the absence of a name, not a name.
+#
+# "Unnamed Commissioner" is deliberately NOT here. It is the same absence,
+# but it carries the role, so the move is still worth recording -- the
+# dashboard renders those without a dossier link instead of dropping them.
+PLACEHOLDER_PERSON_NAMES = {
+    "unknown", "unknowns", "unidentified", "none", "no name", "nobody",
+    "n/a", "na", "nil", "null", "nan", "tbd", "tba", "anonymous", "unnamed",
+    "not specified", "unspecified", "not stated", "not disclosed",
+    "undisclosed", "not available", "not known", "not named",
+    "not mentioned", "not applicable", "not provided", "not reported",
+}
+
+
+def is_placeholder_person(name: Any) -> bool:
+    """True when a Name field holds a "no name was given" marker, not a person.
+
+    Applied at export (``run_pipeline``) rather than at write time, so the
+    sheet keeps its audit trail exactly as the other entity guards here do.
+    """
+    cleaned = " ".join(str(name or "").replace("\xa0", " ").split()).lower()
+    # Strip the punctuation these arrive wrapped in ("(unknown)", "N/A.",
+    # "--"), which also collapses a bare dash or question mark to "".
+    cleaned = re.sub(r"^[^\w]+|[^\w]+$", "", cleaned)
+    return not cleaned or cleaned in PLACEHOLDER_PERSON_NAMES
+
 
 def _word_bounded(marker: str, cleaned: str) -> bool:
     return re.search(r"\b" + re.escape(marker) + r"\b", cleaned) is not None

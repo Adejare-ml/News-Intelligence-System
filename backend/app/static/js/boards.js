@@ -103,6 +103,38 @@
 
     var MOVE_EVENTS = { appointment: 1, reappointment: 1, resignation: 1 };
 
+    /* What the extractor writes into Name when the article named nobody.
+       Mirrors PLACEHOLDER_PERSON_NAMES in backend/app/services/relevance.py,
+       which now drops these at export; this half keeps the board correct
+       against people.json files written before that shipped, the same way
+       psc-core.js re-derives the bands the pipeline already computed. */
+    var PLACEHOLDER_NAMES = {
+        "unknown": 1, "unknowns": 1, "unidentified": 1, "none": 1,
+        "no name": 1, "nobody": 1, "n/a": 1, "na": 1, "nil": 1, "null": 1,
+        "nan": 1, "tbd": 1, "tba": 1, "anonymous": 1, "unnamed": 1,
+        "not specified": 1, "unspecified": 1, "not stated": 1,
+        "not disclosed": 1, "undisclosed": 1, "not available": 1,
+        "not known": 1, "not named": 1, "not mentioned": 1,
+        "not applicable": 1, "not provided": 1, "not reported": 1
+    };
+
+    function normalizeName(name) {
+        return String(name == null ? "" : name)
+            .replace(/ /g, " ").split(/\s+/).join(" ").trim().toLowerCase()
+            .replace(/^[^\w]+|[^\w]+$/g, "");
+    }
+
+    /** True for a Name that is the absence of a name ("Unknown", "N/A", "-"). */
+    function isPlaceholderName(name) {
+        var cleaned = normalizeName(name);
+        return !cleaned || PLACEHOLDER_NAMES[cleaned] === 1;
+    }
+
+    /** True for "Unnamed Commissioner": a real move, but nobody to link to. */
+    function isUnnamedPerson(name) {
+        return /^unnamed\b/.test(normalizeName(name));
+    }
+
     /**
      * people.json -> executive churn grouped by month, newest first.
      * Rows whose Event is anything else ("other": 399 of 468) are not
@@ -117,7 +149,7 @@
             var event = String(row.Event || "").trim().toLowerCase();
             if (!MOVE_EVENTS[event]) continue;
             var name = String(row.Name || "").trim();
-            if (!name) continue;
+            if (!name || isPlaceholderName(name)) continue;
             var date = String(row.Date || "").trim().slice(0, 10);
             var month = date.slice(0, 7);
             if (!/^\d{4}-\d{2}$/.test(month)) month = "undated";
@@ -149,9 +181,19 @@
         return model.months.map(function (m) {
             var items = m.items.map(function (p) {
                 var what = p.event === "resignation" ? "left" : "→";
-                var role = [p.position, p.organization].filter(Boolean).join(" @ ");
+                // The same markers turn up in Position and Organization
+                // ("President @ Not Specified", "Officer @ N/A"). The move
+                // is still real, so drop the empty half, not the row.
+                var role = [p.position, p.organization]
+                    .filter(function (part) { return part && !isPlaceholderName(part); })
+                    .join(" @ ");
+                // "Unnamed Ex-minister" has no dossier to open and slugifies
+                // into one shared bucket, so it renders as plain text.
+                var who = isUnnamedPerson(p.name)
+                    ? '<span class="move-anon">' + esc(p.name) + "</span>"
+                    : entityLink("person", p.name);
                 return '<li class="move move-' + esc(p.event) + '">'
-                    + entityLink("person", p.name)
+                    + who
                     + (role ? ' <span class="move-role">' + esc(what) + " " + esc(role) + "</span>" : "")
                     + '<span class="insight-count">' + esc(p.event) + (p.date ? " · " + esc(p.date) : "") + "</span>"
                     + "</li>";
@@ -316,6 +358,8 @@
         topEvents: topEvents,
         renderAgencyBoardHTML: renderAgencyBoardHTML,
         appointmentsTimeline: appointmentsTimeline,
+        isPlaceholderName: isPlaceholderName,
+        isUnnamedPerson: isUnnamedPerson,
         renderAppointmentsHTML: renderAppointmentsHTML,
         ledgerRows: ledgerRows,
         ledgerColumns: ledgerColumns,

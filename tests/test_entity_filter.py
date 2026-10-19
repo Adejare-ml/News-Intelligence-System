@@ -1,5 +1,5 @@
 import pytest
-from run_pipeline import is_publication_or_furniture
+from run_pipeline import is_placeholder_person, is_publication_or_furniture
 
 
 @pytest.mark.parametrize("name", [
@@ -68,3 +68,68 @@ def test_companies_sharing_words_with_outlets_survive(name):
 ])
 def test_the_actual_outlets_are_still_dropped(name):
     assert is_publication_or_furniture(name) is True
+
+
+# ---------------------------------------------------------------------------
+# Placeholder person names
+#
+# The extractor writes a marker into Name when an article named nobody.
+# Those rows shipped as tracked people: the appointments board rendered
+# "Unknown left Speaker @ Edo State House of Assembly" with a link to a
+# person dossier, and the entity directory listed "Not Specified".
+# Observed in the live people.json: Unknown (4), Not Specified (3),
+# Not Stated (3), None (1).
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize("name", [
+    "Unknown",
+    "unknown",
+    "UNKNOWN",
+    "None",
+    "Not Specified",
+    "Not Stated",
+    "not  stated",          # double space, as scraped
+    "Unknown\xa0",          # nbsp, like the Archives rows above
+    "N/A",
+    "n/a.",
+    "(unknown)",
+    "nil",
+    "TBD",
+    "Anonymous",
+    "Unnamed",
+    "-",
+    "--",
+    "",
+    "   ",
+    None,
+])
+def test_placeholder_person_names_are_dropped(name):
+    assert is_placeholder_person(name) is True
+
+
+@pytest.mark.parametrize("name", [
+    "Ada Obi",
+    "Bola Tinubu",
+    "Timipre Sylva",
+    "Comfort Ero",
+    "Nancy",                # starts with "n", is not "n/a"
+    "Nilesh Patel",         # starts with "nil"
+    "Nana Akufo-Addo",      # starts with "na"
+    "Tinubu",               # a bare surname is a weak name, not a placeholder
+    "Unnamed Commissioner",  # carries the role: kept, rendered without a link
+    "Unnamed Nigerian",
+])
+def test_real_person_names_survive(name):
+    assert is_placeholder_person(name) is False
+
+
+def test_placeholder_guard_runs_over_the_live_shape():
+    """The export filter's three guards compose: only real people survive."""
+    rows = [
+        {"Name": "Ada Obi", "Organization": "Dangote"},
+        {"Name": "Unknown", "Organization": "Edo State House of Assembly"},
+        {"Name": "Not Specified", "Organization": "Geregu Power"},
+        {"Name": "Unnamed Commissioner", "Organization": "Lagos State"},
+    ]
+    kept = [r for r in rows if not is_placeholder_person(r["Name"])]
+    assert [r["Name"] for r in kept] == ["Ada Obi", "Unnamed Commissioner"]
