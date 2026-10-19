@@ -10,7 +10,7 @@
 # Keep pins in step with requirements.txt: when a pin changes there, change
 # it here. pytest itself is installed by the workflow, not listed here, for
 # the same reason it is not in requirements.txt.
-fastapi==0.111.0
+fastapi==0.143.3
 pydantic==2.11.10
 pydantic-settings==2.16.0
 feedparser==6.0.14
