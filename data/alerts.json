@@ -15,12 +15,36 @@
     },
     {
       "date": "2026-10-20",
+      "title": "EFCC, Emefiele differ over evidence in alleged fraudulent $6.23m CBN withdrawal, contract fraud trial - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPM1Q0cGtLRDBmQnVvRGVRcUV1c3VNYzJVMFhvYWlucE13dnRVNV82b1pNdXNUSWF3OFhHMjZGRFU4em1jZ0w3TU5MeXpLZUIyVkNxTXRzeDlkcnlDdGhrcGlub1Vla3VfaTBuT29jblF0SDRGVWdGR3F0cVdpMWxPWGhOcEI1X0tLTlNUSTdXaDVvd2ZJSExRVUxVaXBUWmVoVllrMVdGNUZMZk9Ra2VacW94V3I1ck1MWk5GYkRwRmppcUN6Qy1WOFJMVFBKcjNnNEJ3NzZOUTFoMHZJY3ZudmtTaXlBMW1SeElZ?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission",
+        "Central Bank of Nigeria",
+        "Godwin Emefiele"
+      ]
+    },
+    {
+      "date": "2026-10-20",
       "title": "US court jails Nigerian eight years, orders $10.8m forfeiture - Punch Newspapers",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3BiZnlVZXg4aVJicF9pQUZQbXJybUFLUlY0bTZvbWYxcmdWTTR5LUgxNktwUGhHQUFGZnRfVWlrdkpiR1VFVWpwSE9pTm9nb3p0RVhqOU9WUVNqM3RzS2JOMjlNbjJFTmFXMW1uM3RzX1BvQkVHbXpRUmNLMUlqaS1CNlVXQUU?oc=5",
       "source": "Punch Newspapers",
       "risk_score": 70,
       "risk_level": "High",
       "entities": []
+    },
+    {
+      "date": "2026-10-20",
+      "title": "EFCC arrests Abuja businessman for defrauding Ukrainian investor of $120m | - The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN3c5Z2otWXZUOWtPaXpUdUFiYWh0bEhpSmVmeFFqVFpvQkhDT2FEMVdRVFd4NnJKTE1mdU5FNVp4WVQycTRvU25nY25GNUg5RzBPSm5IdFhMWXpwdGNVODVPTjk2eWgtUzRFSl84N2JVRUhEUTA5SUFSbGlFUkVTcldFQjJ0QkVRVy1JeGROM1llenB5TlJUX2lQSjVGQXQwQ3c0UEhB?oc=5",
+      "source": "The Eagle Online",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission"
+      ]
     },
     {
       "date": "2026-10-20",
@@ -754,5 +778,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-20 17:49:46"
+  "generated": "2026-10-20 20:25:10"
 }

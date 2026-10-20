@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 194,
-  "previous_articles": 194,
+  "recent_articles": 197,
+  "previous_articles": 198,
   "rising": [
     {
       "term": "probe",
@@ -10,19 +10,19 @@
       "change": 7
     },
     {
+      "term": "efcc",
+      "recent": 17,
+      "previous": 11,
+      "change": 6
+    },
+    {
       "term": "imf",
       "recent": 8,
       "previous": 2,
       "change": 6
     },
     {
-      "term": "warns",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
-    },
-    {
-      "term": "ncc",
+      "term": "approves",
       "recent": 7,
       "previous": 1,
       "change": 6
@@ -34,33 +34,33 @@
       "change": 6
     },
     {
-      "term": "guardian",
-      "recent": 44,
-      "previous": 39,
+      "term": "eagle",
+      "recent": 11,
+      "previous": 6,
       "change": 5
     },
     {
-      "term": "bill",
-      "recent": 6,
-      "previous": 1,
+      "term": "eagle online",
+      "recent": 11,
+      "previous": 6,
       "change": 5
     },
     {
-      "term": "business",
-      "recent": 6,
-      "previous": 1,
+      "term": "online",
+      "recent": 11,
+      "previous": 6,
       "change": 5
     },
     {
-      "term": "nlng",
-      "recent": 5,
-      "previous": 0,
+      "term": "warns",
+      "recent": 8,
+      "previous": 3,
       "change": 5
     },
     {
-      "term": "phones",
-      "recent": 5,
-      "previous": 0,
+      "term": "gas",
+      "recent": 7,
+      "previous": 2,
       "change": 5
     }
   ],
@@ -78,33 +78,21 @@
       "change": -9
     },
     {
+      "term": "highway",
+      "recent": 0,
+      "previous": 9,
+      "change": -9
+    },
+    {
       "term": "fuel",
       "recent": 1,
       "previous": 9,
       "change": -8
     },
     {
-      "term": "highway",
-      "recent": 1,
-      "previous": 8,
-      "change": -7
-    },
-    {
       "term": "nnpc",
       "recent": 8,
       "previous": 14,
-      "change": -6
-    },
-    {
-      "term": "vanguard",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
-    },
-    {
-      "term": "cbn",
-      "recent": 2,
-      "previous": 8,
       "change": -6
     },
     {
@@ -114,35 +102,47 @@
       "change": -6
     },
     {
-      "term": "coastal highway",
-      "recent": 0,
-      "previous": 5,
+      "term": "tinubu",
+      "recent": 5,
+      "previous": 10,
       "change": -5
     },
     {
-      "term": "price",
-      "recent": 0,
-      "previous": 5,
+      "term": "two",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "vanguard",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "lagos-calabar",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 135,
-      "previous": 139
+      "recent": 138,
+      "previous": 142
     },
     {
       "category": "Legal",
-      "recent": 30,
-      "previous": 29
+      "recent": 32,
+      "previous": 28
     },
     {
       "category": "Company",
-      "recent": 29,
-      "previous": 26
+      "recent": 27,
+      "previous": 28
     }
   ],
   "social": [],
-  "generated": "2026-10-20 17:49:43"
+  "generated": "2026-10-20 20:24:54"
 }

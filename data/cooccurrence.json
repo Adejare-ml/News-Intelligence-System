@@ -102,6 +102,10 @@
       "label": "Federal Government of Nigeria"
     },
     {
+      "key": "godwin emefiele",
+      "label": "Godwin Emefiele"
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria"
     },
@@ -419,6 +423,11 @@
     },
     {
       "a": "central bank of",
+      "b": "godwin emefiele",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
       "b": "international monetary fund",
       "weight": 2
     },
@@ -573,5 +582,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-20 17:49:46"
+  "generated": "2026-10-20 20:25:10"
 }
