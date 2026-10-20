@@ -1,23 +1,28 @@
 {
-  "new_companies": [
-    "EIB Global",
-    "Nigeria Employers' Association"
-  ],
-  "new_people": [
-    "Hamzat",
-    "Sirika"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "EFCC, Emefiele differ over evidence in alleged fraudulent $6.23m CBN withdrawal, contract fraud trial - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPM1Q0cGtLRDBmQnVvRGVRcUV1c3VNYzJVMFhvYWlucE13dnRVNV82b1pNdXNUSWF3OFhHMjZGRFU4em1jZ0w3TU5MeXpLZUIyVkNxTXRzeDlkcnlDdGhrcGlub1Vla3VfaTBuT29jblF0SDRGVWdGR3F0cVdpMWxPWGhOcEI1X0tLTlNUSTdXaDVvd2ZJSExRVUxVaXBUWmVoVllrMVdGNUZMZk9Ra2VacW94V3I1ck1MWk5GYkRwRmppcUN6Qy1WOFJMVFBKcjNnNEJ3NzZOUTFoMHZJY3ZudmtTaXlBMW1SeElZ?oc=5",
+      "risk": 85.0
+    },
+    {
+      "title": "EFCC arrests Abuja businessman for defrauding Ukrainian investor of $120m | - The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN3c5Z2otWXZUOWtPaXpUdUFiYWh0bEhpSmVmeFFqVFpvQkhDT2FEMVdRVFd4NnJKTE1mdU5FNVp4WVQycTRvU25nY25GNUg5RzBPSm5IdFhMWXpwdGNVODVPTjk2eWgtUzRFSl84N2JVRUhEUTA5SUFSbGlFUkVTcldFQjJ0QkVRVy1JeGROM1llenB5TlJUX2lQSjVGQXQwQ3c0UEhB?oc=5",
+      "risk": 70.0
+    }
+  ],
   "counts": {
-    "new_companies": 2,
-    "new_people": 2,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 2
   },
-  "generated": "2026-10-20 17:49:39"
+  "generated": "2026-10-20 20:24:51"
 }

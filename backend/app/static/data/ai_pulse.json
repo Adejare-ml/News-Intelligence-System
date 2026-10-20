@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-20 17:49:42",
+  "generated": "2026-10-20 20:24:53",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1897,
+      "likes": 1923,
       "downloads": 27737
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1060,
+      "likes": 1072,
       "downloads": 439528
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 813,
+      "likes": 824,
       "downloads": 13495
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 599,
+      "likes": 606,
       "downloads": 2592
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2754,
+      "likes": 2759,
       "downloads": 172474
-    },
-    {
-      "id": "jialinyyzz/humanizer",
-      "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "task": "text-generation",
-      "likes": 2018,
-      "downloads": 115341
     },
     {
       "id": "black-forest-labs/flux-3-image-klein",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
       "task": "image-to-image",
-      "likes": 554,
+      "likes": 558,
       "downloads": 78897
+    },
+    {
+      "id": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "task": "text-generation",
+      "likes": 2022,
+      "downloads": 115341
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 486,
+      "likes": 490,
       "downloads": 4547
     }
   ],
   "papers": [
     {
+      "title": "Vision as Proprioception: Estimating Humanoid Robot Pose from Video",
+      "url": "https://huggingface.co/papers/2610.25288",
+      "upvotes": 0
+    },
+    {
+      "title": "A Language-Informed Loss for Visual Generation",
+      "url": "https://huggingface.co/papers/2610.23653",
+      "upvotes": 2
+    },
+    {
+      "title": "First Passage Attention",
+      "url": "https://huggingface.co/papers/2610.22714",
+      "upvotes": 0
+    },
+    {
+      "title": "Competence-Based Evaluation of Logical Reasoning in Large Language Models",
+      "url": "https://huggingface.co/papers/2610.22894",
+      "upvotes": 0
+    },
+    {
       "title": "Legal Guidance in the Wild: How Users Seek Legal Help in Real-World LLM Conversations",
       "url": "https://huggingface.co/papers/2610.25159",
-      "upvotes": 0
+      "upvotes": 1
     },
     {
       "title": "Predicting Privileged Information Effectiveness for On-Policy Self-Distillation",
       "url": "https://huggingface.co/papers/2610.22512",
-      "upvotes": 1
-    },
-    {
-      "title": "Measuring Mechanistic Uncertainty in Large Language Models via Causal Robustness",
-      "url": "https://huggingface.co/papers/2610.22636",
-      "upvotes": 2
-    },
-    {
-      "title": "StopLoss: Teaching Agents to Predict Failure and Stop Early",
-      "url": "https://huggingface.co/papers/2610.25525",
-      "upvotes": 5
-    },
-    {
-      "title": "Heterogeneous Agentic Coevolution",
-      "url": "https://huggingface.co/papers/2610.16078",
-      "upvotes": 2
-    },
-    {
-      "title": "Any 3D Scene is Worth 1K Tokens: 3D-Grounded Representation for Scene Generation at Scale",
-      "url": "https://huggingface.co/papers/2604.11331",
-      "upvotes": 2
+      "upvotes": 3
     }
   ]
 }

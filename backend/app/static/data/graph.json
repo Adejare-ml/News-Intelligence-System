@@ -91,6 +91,12 @@
       "risk": "Critical"
     },
     {
+      "id": "866686ab0fd6",
+      "label": "Dangote Group",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "1616286eac11",
       "label": "Socio-Economic Rights and Accountability Project",
       "type": "company",
@@ -109,16 +115,22 @@
       "risk": "Low"
     },
     {
-      "id": "866686ab0fd6",
-      "label": "Dangote Group",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
       "id": "2a77f31e67e8",
       "label": "PFIPC",
       "type": "company",
       "risk": "High"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "0bcaaf453cd3",
@@ -151,6 +163,12 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "42f5df65143b",
       "label": "Federal Road Safety Corps",
       "type": "agency",
@@ -159,6 +177,12 @@
     {
       "id": "0634464820c7",
       "label": "Nigerian Correctional Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,6 +223,12 @@
       "risk": "Low"
     },
     {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "aa9abf2767d5",
       "label": "Standards Organisation of Nigeria",
       "type": "agency",
@@ -211,33 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "84b6d6cbf896",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "68419b78e6b4",
-      "label": "Ministry of Aviation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d4815163ec2e",
-      "label": "Enugu State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "36304c0b90e8",
-      "label": "Nigeria Immigration Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "766560d69252",
-      "label": "Lagos Airport",
-      "type": "agency",
+      "id": "40ce4ff30275",
+      "label": "Godwin Emefiele",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -247,15 +253,15 @@
       "risk": "Low"
     },
     {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "18bc77b97b9c",
       "label": "Festus Keyamo",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "68419b78e6b4",
+      "label": "Ministry of Aviation",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -292,6 +298,18 @@
       "id": "9b04990dccef",
       "label": "Hamzat",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "06c8cb034ab7",
+      "label": "Alli",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "37a6259cc0c1",
+      "label": "null",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -409,12 +427,6 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -466,18 +478,6 @@
       "id": "217ee6fe71c5",
       "label": "Bayelsa State Government",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "8ad929872c06",
-      "label": "Federal Ministry of Aviation",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ee247156c1db",
-      "label": "Yahaya Bello",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -631,6 +631,12 @@
       "risk": "Medium"
     },
     {
+      "id": "84b6d6cbf896",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ef6dbf96f94e",
       "label": "Ondo State Government",
       "type": "agency",
@@ -723,10 +729,16 @@
   ],
   "edges": [
     {
+      "id": "234af74126a1",
+      "from": "40ce4ff30275",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Former Governor"
+    },
+    {
       "id": "63dfe1afb291",
       "from": "f121c0e97820",
       "to": "3a4a88456e84",
-      "label": "Appointed as Governor of Oyo State"
+      "label": "Appointed as Governor"
     },
     {
       "id": "74ea085c66a5",
@@ -757,6 +769,12 @@
       "from": "9b04990dccef",
       "to": "9aef00190386",
       "label": "Appointed as Official"
+    },
+    {
+      "id": "1a494aa58ad9",
+      "from": "06c8cb034ab7",
+      "to": "37a6259cc0c1",
+      "label": "Appointed as null"
     },
     {
       "id": "b6c8fff20d98",
@@ -859,18 +877,6 @@
       "from": "2d3a7d6c7ac4",
       "to": "217ee6fe71c5",
       "label": "Appointed as Governor of Bayelsa State"
-    },
-    {
-      "id": "3a7bc85f8491",
-      "from": "4b80ca311098",
-      "to": "8ad929872c06",
-      "label": "Appointed as Former Minister of Aviation"
-    },
-    {
-      "id": "7d6b725626de",
-      "from": "ee247156c1db",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as Former Governor"
     },
     {
       "id": "a5e36b5f552f",
