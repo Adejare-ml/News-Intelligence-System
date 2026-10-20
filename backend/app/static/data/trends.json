@@ -1,31 +1,31 @@
 {
   "window_days": 7,
   "recent_articles": 205,
-  "previous_articles": 183,
+  "previous_articles": 180,
   "rising": [
     {
       "term": "premium",
-      "recent": 77,
-      "previous": 67,
-      "change": 10
+      "recent": 78,
+      "previous": 64,
+      "change": 14
     },
     {
       "term": "premium times",
-      "recent": 77,
-      "previous": 67,
-      "change": 10
+      "recent": 78,
+      "previous": 64,
+      "change": 14
     },
     {
       "term": "times",
-      "recent": 77,
-      "previous": 67,
-      "change": 10
+      "recent": 78,
+      "previous": 64,
+      "change": 14
     },
     {
       "term": "nigeria\u2019s",
-      "recent": 15,
+      "recent": 16,
       "previous": 5,
-      "change": 10
+      "change": 11
     },
     {
       "term": "imf",
@@ -34,22 +34,10 @@
       "change": 8
     },
     {
-      "term": "newspapers",
-      "recent": 30,
-      "previous": 24,
-      "change": 6
-    },
-    {
-      "term": "punch",
-      "recent": 30,
-      "previous": 24,
-      "change": 6
-    },
-    {
-      "term": "punch newspapers",
-      "recent": 30,
-      "previous": 24,
-      "change": 6
+      "term": "contract",
+      "recent": 8,
+      "previous": 0,
+      "change": 8
     },
     {
       "term": "probe",
@@ -62,20 +50,32 @@
       "recent": 8,
       "previous": 2,
       "change": 6
+    },
+    {
+      "term": "ncc",
+      "recent": 7,
+      "previous": 1,
+      "change": 6
+    },
+    {
+      "term": "bill",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
     }
   ],
   "falling": [
     {
       "term": "discount",
-      "recent": 0,
+      "recent": 1,
       "previous": 12,
-      "change": -12
+      "change": -11
     },
     {
       "term": "petrol",
-      "recent": 3,
+      "recent": 4,
       "previous": 13,
-      "change": -10
+      "change": -9
     },
     {
       "term": "cbn",
@@ -102,15 +102,15 @@
       "change": -6
     },
     {
+      "term": "unveils",
+      "recent": 1,
+      "previous": 7,
+      "change": -6
+    },
+    {
       "term": "vanguard",
       "recent": 3,
       "previous": 8,
-      "change": -5
-    },
-    {
-      "term": "petrol discount",
-      "recent": 0,
-      "previous": 5,
       "change": -5
     },
     {
@@ -129,20 +129,20 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 142,
+      "recent": 141,
       "previous": 130
     },
     {
       "category": "Company",
       "recent": 36,
-      "previous": 22
+      "previous": 19
     },
     {
       "category": "Legal",
-      "recent": 27,
+      "recent": 28,
       "previous": 31
     }
   ],
   "social": [],
-  "generated": "2026-10-19 21:29:41"
+  "generated": "2026-10-20 01:42:06"
 }

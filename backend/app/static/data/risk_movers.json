@@ -55,6 +55,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "seyi makinde",
+      "label": "Seyi Makinde",
+      "recent_avg": 37.5,
+      "previous_avg": 20.0,
+      "delta": 17.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "recent_avg": 15.0,
@@ -82,21 +91,21 @@
       "previous_mentions": 1
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 22.5,
-      "previous_avg": 10.0,
-      "delta": 12.5,
-      "recent_mentions": 4,
-      "previous_mentions": 1
-    },
-    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 30.8,
       "previous_avg": 42.5,
       "delta": -11.7,
       "recent_mentions": 6,
+      "previous_mentions": 2
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 16.7,
+      "previous_avg": 25.0,
+      "delta": -8.3,
+      "recent_mentions": 3,
       "previous_mentions": 2
     },
     {
@@ -145,6 +154,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "world bank",
+      "label": "World Bank",
+      "recent_avg": 25.0,
+      "previous_avg": 20.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "international monetary fund",
       "label": "International Monetary Fund",
       "recent_avg": 15.6,
@@ -161,26 +179,8 @@
       "delta": 3.3,
       "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 55.0,
-      "previous_avg": 56.7,
-      "delta": -1.7,
-      "recent_mentions": 2,
-      "previous_mentions": 3
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 21.7,
-      "previous_avg": 22.0,
-      "delta": -0.3,
-      "recent_mentions": 3,
-      "previous_mentions": 5
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-19 21:29:43"
+  "generated": "2026-10-20 01:42:08"
 }

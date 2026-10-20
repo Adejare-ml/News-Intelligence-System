@@ -150,6 +150,10 @@
       "label": "Lagos State Government"
     },
     {
+      "key": "lng",
+      "label": "Nigeria LNG Limited"
+    },
+    {
       "key": "maina",
       "label": "Maina"
     },
@@ -240,6 +244,10 @@
     {
       "key": "serap",
       "label": "SERAP"
+    },
+    {
+      "key": "seyi makinde",
+      "label": "Seyi Makinde"
     },
     {
       "key": "socio economic rights and accountability project",
@@ -530,6 +538,11 @@
       "weight": 2
     },
     {
+      "a": "lng",
+      "b": "seyi makinde",
+      "weight": 2
+    },
+    {
       "a": "nasir el rufai",
       "b": "state security service",
       "weight": 2
@@ -555,5 +568,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-19 21:29:43"
+  "generated": "2026-10-20 01:42:08"
 }

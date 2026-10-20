@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-19 21:29:40",
+  "generated": "2026-10-20 01:42:05",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1664,
+      "likes": 1698,
       "downloads": 17924
     },
     {
       "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
       "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
       "task": "image-text-to-text",
-      "likes": 1058,
+      "likes": 1067,
       "downloads": 76410
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 948,
+      "likes": 971,
       "downloads": 393062
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 762,
+      "likes": 771,
       "downloads": 11795
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2723,
+      "likes": 2727,
       "downloads": 167750
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1982,
+      "likes": 1989,
       "downloads": 109937
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 578,
+      "likes": 580,
       "downloads": 2109
     },
     {
       "id": "LiquidAI/LFM2.5-24B-A2B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
       "task": "text-generation",
-      "likes": 499,
+      "likes": 501,
       "downloads": 14151
     }
   ],
   "papers": [
     {
+      "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
+      "url": "https://huggingface.co/papers/2610.22732",
+      "upvotes": 0
+    },
+    {
+      "title": "Robust Explanatory Analysis for Structured Optimization Networks (REASON) in Learning",
+      "url": "https://huggingface.co/papers/2610.19378",
+      "upvotes": 1
+    },
+    {
       "title": "Recognition Is Not Grounding: Benchmarking Multilingual Financial Evidence Extraction",
       "url": "https://huggingface.co/papers/2610.19432",
-      "upvotes": 0
+      "upvotes": 3
     },
     {
       "title": "BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking",
       "url": "https://huggingface.co/papers/2610.07052",
-      "upvotes": 2
+      "upvotes": 4
     },
     {
       "title": "DisaggKD: Efficient Knowledge Distillation through Teacher-Student Disaggregation and a Fused Loss",
       "url": "https://huggingface.co/papers/2610.17644",
-      "upvotes": 0
+      "upvotes": 2
     },
     {
       "title": "Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards",
       "url": "https://huggingface.co/papers/2610.22448",
-      "upvotes": 1
-    },
-    {
-      "title": "EvoWeb: A Benchmark for Coding Agents on Evolving Web Applications",
-      "url": "https://huggingface.co/papers/2610.16402",
-      "upvotes": 7
-    },
-    {
-      "title": "OmniXRef: A Unified Framework for Multimodal Multi-Reference Video Editing",
-      "url": "https://huggingface.co/papers/2610.22744",
-      "upvotes": 14
+      "upvotes": 3
     }
   ]
 }

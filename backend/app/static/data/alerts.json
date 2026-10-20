@@ -1,6 +1,19 @@
 {
   "alerts": [
     {
+      "date": "2026-10-20",
+      "title": "$6billion Mambilla Power Contract: Ex-governor Liyel Imoke testifies against former power minister Agunloye - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNHhWbWMtdUF6Smd6WUVrNHVUdVdrdklJVllTNGpIaWtJQ2V4dW9XVUhsOUUwTU8yNDBrY2pMZzc3azJESkUzdGxVRDNwRDVLdnpSbmJFdmFvNVdfOXZoeHNxMGN0Vll4YkZhZzBwbDdmamdVQmc3aWN6dHhqVG5zaGhiNnVYeVRwQ0swblY4YXFGM1Jod3JOalNIZFgtT2prZm1oVnJGVlFfT3haVzZmVXRuZ25MdmktMVFxTEkxZ29FazFfWnZsR2ltNmgtNjJlMEtLZVRGeGZ3aVhaX2tWWVREb1kwd1JWdHBNcEhoTGRDdlpk?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Federal Ministry of Power",
+        "Liyel Imoke",
+        "Agunloye"
+      ]
+    },
+    {
       "date": "2026-10-19",
       "title": "Reps probe NIPCO gas licences, NNPC executive over money laundering claims - Punch Newspapers",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPS3BwUEhjMEJjTlBGY1Z1Wl9ZUzBPN1ZLTlVrNGlnU293ZEpYNjhmSkNpUE0xUDV2eFNwMnJkS2tGT21GNnNPZVB5WWlEMXJDejFXMlNLT0RPR2tnSmg1eEp1dHpmQ0dOTjRHOHdGV2NtbFVsNk5EcnlPeW80ZTcyN01FVnU2QXFTSEo5NDNGaWQ5UXByWGJyaXFPdHc4QjRwRGRQaDhGV0MtTjNsWjhEbHNnX0pRUXJCMll3ZGNoY3VLdWpMaW80RjNxdENFSHpl?oc=5",
@@ -720,5 +733,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-19 21:29:43"
+  "generated": "2026-10-20 01:42:08"
 }
