@@ -14,10 +14,10 @@
     {
       "industry": "Oil & Gas",
       "companies": 37,
-      "mentions": 202,
+      "mentions": 203,
       "risk": {
-        "Medium": 11,
-        "Low": 22,
+        "Medium": 12,
+        "Low": 21,
         "Critical": 1,
         "High": 3
       }
@@ -727,5 +727,5 @@
       }
     }
   ],
-  "generated": "2026-10-19 21:29:43"
+  "generated": "2026-10-20 01:42:08"
 }

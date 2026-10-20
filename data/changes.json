@@ -1,19 +1,26 @@
 {
   "new_companies": [],
   "new_people": [
-    "LAWMA boss"
+    "Agunloye",
+    "Liyel Imoke"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "$6billion Mambilla Power Contract: Ex-governor Liyel Imoke testifies against former power minister Agunloye - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNHhWbWMtdUF6Smd6WUVrNHVUdVdrdklJVllTNGpIaWtJQ2V4dW9XVUhsOUUwTU8yNDBrY2pMZzc3azJESkUzdGxVRDNwRDVLdnpSbmJFdmFvNVdfOXZoeHNxMGN0Vll4YkZhZzBwbDdmamdVQmc3aWN6dHhqVG5zaGhiNnVYeVRwQ0swblY4YXFGM1Jod3JOalNIZFgtT2prZm1oVnJGVlFfT3haVzZmVXRuZ25MdmktMVFxTEkxZ29FazFfWnZsR2ltNmgtNjJlMEtLZVRGeGZ3aVhaX2tWWVREb1kwd1JWdHBNcEhoTGRDdlpk?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
     "new_companies": 0,
-    "new_people": 1,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-19 21:29:38"
+  "generated": "2026-10-20 01:42:03"
 }

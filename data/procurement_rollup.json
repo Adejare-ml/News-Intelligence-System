@@ -289,6 +289,14 @@
       "totals": {}
     },
     {
+      "name": "Federal Ministry of Power",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 6000000000.0
+      }
+    },
+    {
       "name": "Government of Nigeria",
       "contracts": 2,
       "undisclosed": 1,
@@ -423,12 +431,6 @@
       "totals": {
         "USD": 200000000.0
       }
-    },
-    {
-      "name": "Federal Ministry of Power",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
     },
     {
       "name": "GIZ Nigeria & ECOWAS",
@@ -672,11 +674,11 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 118,
+      "contracts": 119,
       "undisclosed": 72,
       "totals": {
         "NGN": 20759214090000.0,
-        "USD": 41797140000.0
+        "USD": 47797140000.0
       }
     },
     {
@@ -1164,5 +1166,5 @@
       }
     }
   ],
-  "generated": "2026-10-19 21:29:43"
+  "generated": "2026-10-20 01:42:08"
 }
