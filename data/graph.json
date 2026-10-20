@@ -121,6 +121,12 @@
       "risk": "High"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -129,6 +135,18 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,6 +175,36 @@
       "risk": "Low"
     },
     {
+      "id": "d7ecacfbe05f",
+      "label": "Plateau State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "903358e8b4b2",
+      "label": "Federal Ministry of Health",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "aa9abf2767d5",
+      "label": "Standards Organisation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
       "type": "agency",
@@ -169,6 +217,18 @@
       "risk": "Low"
     },
     {
+      "id": "68419b78e6b4",
+      "label": "Ministry of Aviation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d4815163ec2e",
+      "label": "Enugu State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "36304c0b90e8",
       "label": "Nigeria Immigration Service",
       "type": "agency",
@@ -177,66 +237,6 @@
     {
       "id": "766560d69252",
       "label": "Lagos Airport",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c06f2d9a3df8",
-      "label": "National Insurance Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ef6dbf96f94e",
-      "label": "Ondo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -259,12 +259,6 @@
       "risk": "Low"
     },
     {
-      "id": "68419b78e6b4",
-      "label": "Ministry of Aviation",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "07cdd79cacad",
       "label": "Liyel Imoke",
       "type": "person",
@@ -279,6 +273,24 @@
     {
       "id": "8ddf0d9698a1",
       "label": "Agunloye",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "a1d99afd636d",
+      "label": "Sirika",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ca819a01e636",
+      "label": "Federal Ministry",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "9b04990dccef",
+      "label": "Hamzat",
       "type": "person",
       "risk": "Low"
     },
@@ -397,6 +409,12 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -459,24 +477,6 @@
     {
       "id": "ee247156c1db",
       "label": "Yahaya Bello",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "292e5aa14acd",
-      "label": "David Umahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "325a5c8a1ef5",
-      "label": "Atiku Abubakar",
       "type": "person",
       "risk": "Low"
     },
@@ -631,9 +631,21 @@
       "risk": "Medium"
     },
     {
+      "id": "ef6dbf96f94e",
+      "label": "Ondo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ff7de7b79a06",
       "label": "Unnamed tech firm",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -707,12 +719,6 @@
       "label": "Nigerian National Petroleum Company (NNPC) / House of Representatives Committee Recommendation",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -739,6 +745,18 @@
       "from": "8ddf0d9698a1",
       "to": "9b5f79697bc2",
       "label": "Appointed as Former Power Minister"
+    },
+    {
+      "id": "74a762d58402",
+      "from": "a1d99afd636d",
+      "to": "ca819a01e636",
+      "label": "Appointed as Former Minister"
+    },
+    {
+      "id": "75c71287c204",
+      "from": "9b04990dccef",
+      "to": "9aef00190386",
+      "label": "Appointed as Official"
     },
     {
       "id": "b6c8fff20d98",
@@ -855,18 +873,6 @@
       "label": "Appointed as Former Governor"
     },
     {
-      "id": "b268c9e64d5a",
-      "from": "292e5aa14acd",
-      "to": "23d8905a6cbb",
-      "label": "Appointed as Minister of Works"
-    },
-    {
-      "id": "9e2a94a3f3aa",
-      "from": "325a5c8a1ef5",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as None"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -963,15 +969,15 @@
       "label": "PSC: 24.5%"
     },
     {
-      "id": "66bf53cd5347",
-      "from": "334c4a4c42fd",
-      "to": "84b6d6cbf896",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "c1d603f082d4",
       "from": "334c4a4c42fd",
       "to": "68419b78e6b4",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "66bf53cd5347",
+      "from": "334c4a4c42fd",
+      "to": "84b6d6cbf896",
       "label": "Contract Awardee"
     },
     {
@@ -1050,12 +1056,6 @@
       "id": "099c3745b8eb",
       "from": "9b5549bd0205",
       "to": "d3177bcccf13",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "0da63ab8c0bc",
-      "from": "334c4a4c42fd",
-      "to": "7ac5d6bb2121",
       "label": "Contract Awardee"
     }
   ]
