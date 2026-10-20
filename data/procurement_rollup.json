@@ -118,8 +118,8 @@
     },
     {
       "name": "National Agency for Science and Engineering Infrastructure",
-      "contracts": 1,
-      "undisclosed": 0,
+      "contracts": 2,
+      "undisclosed": 1,
       "totals": {
         "NGN": 10600000000.0
       }
@@ -206,8 +206,8 @@
     },
     {
       "name": "Ministry of Aviation",
-      "contracts": 1,
-      "undisclosed": 0,
+      "contracts": 2,
+      "undisclosed": 1,
       "totals": {
         "NGN": 686000000.0
       }
@@ -674,8 +674,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 119,
-      "undisclosed": 72,
+      "contracts": 121,
+      "undisclosed": 74,
       "totals": {
         "NGN": 20759214090000.0,
         "USD": 47797140000.0
@@ -1166,5 +1166,5 @@
       }
     }
   ],
-  "generated": "2026-10-20 01:42:08"
+  "generated": "2026-10-20 12:35:27"
 }

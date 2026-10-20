@@ -1,46 +1,40 @@
 {
   "window_days": 7,
-  "recent_articles": 205,
-  "previous_articles": 180,
+  "recent_articles": 199,
+  "previous_articles": 188,
   "rising": [
     {
+      "term": "probe",
+      "recent": 10,
+      "previous": 1,
+      "change": 9
+    },
+    {
       "term": "premium",
-      "recent": 78,
-      "previous": 64,
-      "change": 14
+      "recent": 76,
+      "previous": 68,
+      "change": 8
     },
     {
       "term": "premium times",
-      "recent": 78,
-      "previous": 64,
-      "change": 14
+      "recent": 76,
+      "previous": 68,
+      "change": 8
     },
     {
       "term": "times",
-      "recent": 78,
-      "previous": 64,
-      "change": 14
+      "recent": 76,
+      "previous": 68,
+      "change": 8
     },
     {
-      "term": "nigeria\u2019s",
-      "recent": 16,
-      "previous": 5,
-      "change": 11
+      "term": "reps",
+      "recent": 10,
+      "previous": 3,
+      "change": 7
     },
     {
       "term": "imf",
-      "recent": 9,
-      "previous": 1,
-      "change": 8
-    },
-    {
-      "term": "contract",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
-    },
-    {
-      "term": "probe",
       "recent": 8,
       "previous": 2,
       "change": 6
@@ -52,13 +46,19 @@
       "change": 6
     },
     {
+      "term": "contract",
+      "recent": 7,
+      "previous": 1,
+      "change": 6
+    },
+    {
       "term": "ncc",
       "recent": 7,
       "previous": 1,
       "change": 6
     },
     {
-      "term": "bill",
+      "term": "energy",
       "recent": 6,
       "previous": 0,
       "change": 6
@@ -78,27 +78,21 @@
       "change": -9
     },
     {
-      "term": "cbn",
-      "recent": 1,
-      "previous": 9,
-      "change": -8
-    },
-    {
       "term": "fuel",
       "recent": 1,
       "previous": 9,
       "change": -8
     },
     {
-      "term": "court",
-      "recent": 10,
-      "previous": 16,
-      "change": -6
+      "term": "inec",
+      "recent": 4,
+      "previous": 11,
+      "change": -7
     },
     {
-      "term": "inec",
-      "recent": 5,
-      "previous": 11,
+      "term": "cbn",
+      "recent": 2,
+      "previous": 8,
       "change": -6
     },
     {
@@ -108,9 +102,9 @@
       "change": -6
     },
     {
-      "term": "vanguard",
-      "recent": 3,
-      "previous": 8,
+      "term": "highway",
+      "recent": 2,
+      "previous": 7,
       "change": -5
     },
     {
@@ -120,29 +114,35 @@
       "change": -5
     },
     {
-      "term": "staff",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
+      "term": "court",
+      "recent": 11,
+      "previous": 15,
+      "change": -4
+    },
+    {
+      "term": "nnpc",
+      "recent": 9,
+      "previous": 13,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 141,
-      "previous": 130
+      "recent": 138,
+      "previous": 134
     },
     {
       "category": "Company",
-      "recent": 36,
-      "previous": 19
+      "recent": 32,
+      "previous": 24
     },
     {
       "category": "Legal",
-      "recent": 28,
-      "previous": 31
+      "recent": 29,
+      "previous": 30
     }
   ],
   "social": [],
-  "generated": "2026-10-20 01:42:06"
+  "generated": "2026-10-20 12:35:24"
 }

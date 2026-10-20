@@ -121,8 +121,26 @@
       "risk": "High"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "42f5df65143b",
+      "label": "Federal Road Safety Corps",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0634464820c7",
+      "label": "Nigerian Correctional Service",
       "type": "agency",
       "risk": "Low"
     },
@@ -133,8 +151,32 @@
       "risk": "Low"
     },
     {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "84b6d6cbf896",
+      "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "36304c0b90e8",
+      "label": "Nigeria Immigration Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "766560d69252",
+      "label": "Lagos Airport",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,48 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a70f31de512b",
-      "label": "Ekiti State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9b023d5d7736",
-      "label": "Office of the Attorney General of the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0b2ac17f47f4",
-      "label": "Lagos State Waste Management Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ec79cf0c700a",
-      "label": "State Security Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f8f7bbd6535e",
-      "label": "Nigerian National Petroleum Company (NNPC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "02bcb5f5a7b4",
-      "label": "Jigawa State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
@@ -249,6 +249,18 @@
     {
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "18bc77b97b9c",
+      "label": "Festus Keyamo",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "68419b78e6b4",
+      "label": "Ministry of Aviation",
       "type": "company",
       "risk": "Low"
     },
@@ -277,6 +289,12 @@
       "risk": "Low"
     },
     {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "be252fefa816",
       "label": "Nasir El-Rufai",
       "type": "person",
@@ -292,6 +310,12 @@
       "id": "512a18337770",
       "label": "LAWMA boss",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0b2ac17f47f4",
+      "label": "Lagos State Waste Management Authority",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -385,12 +409,6 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "423d33ac58c5",
       "label": "Cardoso",
       "type": "person",
@@ -406,6 +424,12 @@
       "id": "c9eb8a8dbd99",
       "label": "Segun Kayode",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ec79cf0c700a",
+      "label": "State Security Service",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -453,12 +477,6 @@
     {
       "id": "325a5c8a1ef5",
       "label": "Atiku Abubakar",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ba85b91bf4e0",
-      "label": "Abbas",
       "type": "person",
       "risk": "Low"
     },
@@ -625,6 +643,12 @@
       "risk": "Low"
     },
     {
+      "id": "02bcb5f5a7b4",
+      "label": "Jigawa State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "88ddee7fc08f",
       "label": "Gombe State Government",
       "type": "agency",
@@ -689,12 +713,6 @@
       "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "7f50eb5ca259",
-      "label": "Yobe State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -703,6 +721,12 @@
       "from": "f121c0e97820",
       "to": "3a4a88456e84",
       "label": "Appointed as Governor of Oyo State"
+    },
+    {
+      "id": "74ea085c66a5",
+      "from": "18bc77b97b9c",
+      "to": "68419b78e6b4",
+      "label": "Appointed as Minister of Aviation"
     },
     {
       "id": "896a53d24a55",
@@ -843,12 +867,6 @@
       "label": "Appointed as None"
     },
     {
-      "id": "c20033f9be42",
-      "from": "ba85b91bf4e0",
-      "to": "1613f8dac921",
-      "label": "Appointed as Speaker"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -945,6 +963,18 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "66bf53cd5347",
+      "from": "334c4a4c42fd",
+      "to": "84b6d6cbf896",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "c1d603f082d4",
+      "from": "334c4a4c42fd",
+      "to": "68419b78e6b4",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "d2ef7a3bb9d9",
       "from": "334c4a4c42fd",
       "to": "9b5f79697bc2",
@@ -1026,18 +1056,6 @@
       "id": "0da63ab8c0bc",
       "from": "334c4a4c42fd",
       "to": "7ac5d6bb2121",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "ac76052f579e",
-      "from": "334c4a4c42fd",
-      "to": "7f50eb5ca259",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "817df37bf70a",
-      "from": "334c4a4c42fd",
-      "to": "23d8905a6cbb",
       "label": "Contract Awardee"
     }
   ]

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-20 01:42:05",
+  "generated": "2026-10-20 12:35:23",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1698,
-      "downloads": 17924
-    },
-    {
-      "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
-      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
-      "task": "image-text-to-text",
-      "likes": 1067,
-      "downloads": 76410
+      "likes": 1835,
+      "downloads": 27737
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 971,
-      "downloads": 393062
+      "likes": 1031,
+      "downloads": 439528
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 771,
-      "downloads": 11795
+      "likes": 801,
+      "downloads": 13495
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2727,
-      "downloads": 167750
+      "likes": 2741,
+      "downloads": 172474
     },
     {
       "id": "jialinyyzz/humanizer",
       "url": "https://huggingface.co/jialinyyzz/humanizer",
       "task": "text-generation",
-      "likes": 1989,
-      "downloads": 109937
+      "likes": 2013,
+      "downloads": 115341
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 580,
-      "downloads": 2109
+      "likes": 595,
+      "downloads": 2592
+    },
+    {
+      "id": "black-forest-labs/flux-3-image-klein",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "task": "image-to-image",
+      "likes": 545,
+      "downloads": 78897
     },
     {
       "id": "LiquidAI/LFM2.5-24B-A2B",
       "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
       "task": "text-generation",
-      "likes": 501,
-      "downloads": 14151
+      "likes": 509,
+      "downloads": 15410
     }
   ],
   "papers": [
     {
-      "title": "TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents",
-      "url": "https://huggingface.co/papers/2610.22732",
-      "upvotes": 0
-    },
-    {
-      "title": "Robust Explanatory Analysis for Structured Optimization Networks (REASON) in Learning",
-      "url": "https://huggingface.co/papers/2610.19378",
-      "upvotes": 1
-    },
-    {
-      "title": "Recognition Is Not Grounding: Benchmarking Multilingual Financial Evidence Extraction",
-      "url": "https://huggingface.co/papers/2610.19432",
-      "upvotes": 3
-    },
-    {
-      "title": "BRACE: Adapting Whole-Body References for Force and Terrain Aware Humanoid Motion Tracking",
-      "url": "https://huggingface.co/papers/2610.07052",
-      "upvotes": 4
-    },
-    {
-      "title": "DisaggKD: Efficient Knowledge Distillation through Teacher-Student Disaggregation and a Fused Loss",
-      "url": "https://huggingface.co/papers/2610.17644",
+      "title": "N-Gram Memories at Two Bits: Quantizing Lookup Tables in Large Language Models",
+      "url": "https://huggingface.co/papers/2610.21810",
       "upvotes": 2
     },
     {
-      "title": "Lean4AgenticRL: Advancing Agentic RL with Verifiable Multi-level Process Rewards",
-      "url": "https://huggingface.co/papers/2610.22448",
-      "upvotes": 3
+      "title": "Beyond Maliciousness: Static and Runtime Attack-Surface Profiling of Agent Skills",
+      "url": "https://huggingface.co/papers/2610.19264",
+      "upvotes": 1
+    },
+    {
+      "title": "Token-Set Choice Confounds POPE: A Systematic Audit of Yes/No Extraction in VLM Hallucination Evaluation",
+      "url": "https://huggingface.co/papers/2610.25964",
+      "upvotes": 1
+    },
+    {
+      "title": "RealityBench: Simulated Environments to Evaluate a Vision Language Model's Ability to Document Human Physical Work",
+      "url": "https://huggingface.co/papers/2610.14397",
+      "upvotes": 1
+    },
+    {
+      "title": "RoboValue: A Fine-Grained Sim-and-Real Benchmark for Unified Evaluation of Robotic Value Models",
+      "url": "https://huggingface.co/papers/2610.26663",
+      "upvotes": 21
+    },
+    {
+      "title": "Harnessing Textual Refusal Directions for Multimodal Safety",
+      "url": "https://huggingface.co/papers/2606.31876",
+      "upvotes": 9
     }
   ]
 }

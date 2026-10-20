@@ -1,31 +1,13 @@
 {
   "movers": [
     {
-      "key": "united bank for africa",
-      "label": "United Bank for Africa",
-      "recent_avg": 45.0,
-      "previous_avg": 10.0,
-      "delta": 35.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 15.0,
-      "previous_avg": 42.8,
-      "delta": -27.8,
-      "recent_mentions": 5,
-      "previous_mentions": 9
-    },
-    {
-      "key": "african democratic congress",
-      "label": "African Democratic Congress",
       "recent_avg": 17.5,
-      "previous_avg": 45.0,
-      "delta": -27.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "previous_avg": 46.9,
+      "delta": -29.4,
+      "recent_mentions": 6,
+      "previous_mentions": 8
     },
     {
       "key": "economic and financial crimes commission efcc",
@@ -46,22 +28,13 @@
       "previous_mentions": 3
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission, Nigeria",
-      "recent_avg": 20.0,
-      "previous_avg": 40.0,
-      "delta": -20.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "recent_avg": 37.5,
       "previous_avg": 20.0,
       "delta": 17.5,
       "recent_mentions": 2,
-      "previous_mentions": 2
+      "previous_mentions": 1
     },
     {
       "key": "national assembly",
@@ -82,22 +55,31 @@
       "previous_mentions": 11
     },
     {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 33.3,
-      "previous_avg": 20.0,
-      "delta": 13.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 35.0,
+      "previous_avg": 24.2,
+      "delta": 10.8,
+      "recent_mentions": 14,
+      "previous_mentions": 18
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 30.8,
-      "previous_avg": 42.5,
-      "delta": -11.7,
-      "recent_mentions": 6,
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "recent_avg": 15.0,
+      "previous_avg": 25.0,
+      "delta": -10.0,
+      "recent_mentions": 2,
       "previous_mentions": 2
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 37.5,
+      "previous_avg": 29.2,
+      "delta": 8.3,
+      "recent_mentions": 4,
+      "previous_mentions": 12
     },
     {
       "key": "government of",
@@ -106,6 +88,15 @@
       "previous_avg": 25.0,
       "delta": -8.3,
       "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "recent_avg": 17.5,
+      "previous_avg": 10.0,
+      "delta": 7.5,
+      "recent_mentions": 8,
       "previous_mentions": 2
     },
     {
@@ -127,13 +118,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 33.2,
-      "previous_avg": 26.5,
-      "delta": 6.7,
-      "recent_mentions": 14,
-      "previous_mentions": 17
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 25.0,
+      "previous_avg": 20.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "ports authority",
@@ -141,15 +141,6 @@
       "recent_avg": 20.0,
       "previous_avg": 15.0,
       "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
     },
@@ -163,24 +154,33 @@
       "previous_mentions": 1
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "recent_avg": 15.6,
+      "key": "kucoin",
+      "label": "KuCoin Nigeria Limited",
+      "recent_avg": 25.0,
       "previous_avg": 20.0,
-      "delta": -4.4,
-      "recent_mentions": 9,
-      "previous_mentions": 1
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 23.3,
-      "previous_avg": 20.0,
-      "delta": 3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 27.1,
+      "previous_avg": 30.0,
+      "delta": -2.9,
+      "recent_mentions": 14,
+      "previous_mentions": 15
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 22.5,
+      "previous_avg": 25.0,
+      "delta": -2.5,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-20 01:42:08"
+  "generated": "2026-10-20 12:35:27"
 }
