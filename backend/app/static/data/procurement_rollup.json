@@ -206,8 +206,8 @@
     },
     {
       "name": "Ministry of Aviation",
-      "contracts": 2,
-      "undisclosed": 1,
+      "contracts": 3,
+      "undisclosed": 2,
       "totals": {
         "NGN": 686000000.0
       }
@@ -674,8 +674,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 121,
-      "undisclosed": 74,
+      "contracts": 122,
+      "undisclosed": 75,
       "totals": {
         "NGN": 20759214090000.0,
         "USD": 47797140000.0
@@ -1166,5 +1166,5 @@
       }
     }
   ],
-  "generated": "2026-10-20 12:35:27"
+  "generated": "2026-10-20 17:49:46"
 }

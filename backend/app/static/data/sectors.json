@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 21,
-      "mentions": 41,
+      "mentions": 42,
       "risk": {
         "Low": 16,
         "Medium": 5
@@ -431,6 +431,14 @@
       }
     },
     {
+      "industry": "Banking/Development Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Civil Society",
       "companies": 1,
       "mentions": 1,
@@ -464,6 +472,14 @@
     },
     {
       "industry": "Development Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Employer Association",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -727,5 +743,5 @@
       }
     }
   ],
-  "generated": "2026-10-20 12:35:27"
+  "generated": "2026-10-20 17:49:46"
 }
