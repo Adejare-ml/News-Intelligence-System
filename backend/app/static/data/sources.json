@@ -2,57 +2,57 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2599,
-      "published": 1455,
-      "filtered": 1144,
+      "total": 2607,
+      "published": 1457,
+      "filtered": 1150,
       "accept_rate": 56,
       "avg_risk": 28.6,
       "engines": {
         "unknown": 963,
-        "ollama": 484,
+        "ollama": 486,
         "nvidia": 8
       },
-      "last_seen": "2026-10-19"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1910,
-      "published": 827,
-      "filtered": 1083,
+      "total": 1928,
+      "published": 831,
+      "filtered": 1097,
       "accept_rate": 43,
-      "avg_risk": 31.1,
+      "avg_risk": 31.0,
       "engines": {
         "unknown": 440,
-        "ollama": 383,
+        "ollama": 387,
         "nvidia": 4
       },
-      "last_seen": "2026-10-19"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "Punch Newspapers",
-      "total": 981,
-      "published": 405,
-      "filtered": 576,
+      "total": 985,
+      "published": 407,
+      "filtered": 578,
       "accept_rate": 41,
-      "avg_risk": 27.0,
+      "avg_risk": 27.1,
       "engines": {
         "unknown": 188,
-        "ollama": 213,
+        "ollama": 215,
         "nvidia": 4
       },
       "last_seen": "2026-10-20"
     },
     {
       "source": "The Punch",
-      "total": 611,
-      "published": 345,
+      "total": 612,
+      "published": 346,
       "filtered": 266,
-      "accept_rate": 56,
-      "avg_risk": 32.8,
+      "accept_rate": 57,
+      "avg_risk": 32.7,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 235
+        "ollama": 236
       },
       "last_seen": "2026-10-19"
     },
@@ -72,17 +72,17 @@
     },
     {
       "source": "Vanguard News",
-      "total": 320,
-      "published": 155,
-      "filtered": 165,
+      "total": 322,
+      "published": 156,
+      "filtered": 166,
       "accept_rate": 48,
-      "avg_risk": 27.1,
+      "avg_risk": 27.2,
       "engines": {
         "unknown": 94,
-        "ollama": 56,
+        "ollama": 57,
         "nvidia": 5
       },
-      "last_seen": "2026-10-19"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "Vanguard",
@@ -100,16 +100,16 @@
     },
     {
       "source": "naijaonpoint_ng",
-      "total": 195,
+      "total": 196,
       "published": 57,
-      "filtered": 138,
+      "filtered": 139,
       "accept_rate": 29,
       "avg_risk": 24.3,
       "engines": {
         "unknown": 43,
         "ollama": 14
       },
-      "last_seen": "2026-10-16"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "sunnewsonline",
@@ -153,17 +153,17 @@
     },
     {
       "source": "punchng",
-      "total": 166,
-      "published": 37,
-      "filtered": 129,
-      "accept_rate": 22,
-      "avg_risk": 22.8,
+      "total": 168,
+      "published": 38,
+      "filtered": 130,
+      "accept_rate": 23,
+      "avg_risk": 22.7,
       "engines": {
         "unknown": 18,
         "nvidia": 2,
-        "ollama": 17
+        "ollama": 18
       },
-      "last_seen": "2026-10-17"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "vanguardngr",
@@ -384,16 +384,16 @@
     },
     {
       "source": "dailytrust",
-      "total": 15,
+      "total": 16,
       "published": 8,
-      "filtered": 7,
-      "accept_rate": 53,
+      "filtered": 8,
+      "accept_rate": 50,
       "avg_risk": 26.0,
       "engines": {
         "unknown": 7,
         "ollama": 1
       },
-      "last_seen": "2026-10-02"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "nairametrics",
@@ -2134,5 +2134,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-20 01:42:08"
+  "generated": "2026-10-20 12:35:27"
 }

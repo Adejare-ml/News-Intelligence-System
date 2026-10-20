@@ -1,26 +1,25 @@
 {
-  "new_companies": [],
-  "new_people": [
-    "Agunloye",
-    "Liyel Imoke"
+  "new_companies": [
+    "JP Morgan"
   ],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "$6billion Mambilla Power Contract: Ex-governor Liyel Imoke testifies against former power minister Agunloye - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPNHhWbWMtdUF6Smd6WUVrNHVUdVdrdklJVllTNGpIaWtJQ2V4dW9XVUhsOUUwTU8yNDBrY2pMZzc3azJESkUzdGxVRDNwRDVLdnpSbmJFdmFvNVdfOXZoeHNxMGN0Vll4YkZhZzBwbDdmamdVQmc3aWN6dHhqVG5zaGhiNnVYeVRwQ0swblY4YXFGM1Jod3JOalNIZFgtT2prZm1oVnJGVlFfT3haVzZmVXRuZ25MdmktMVFxTEkxZ29FazFfWnZsR2ltNmgtNjJlMEtLZVRGeGZ3aVhaX2tWWVREb1kwd1JWdHBNcEhoTGRDdlpk?oc=5",
-      "risk": 85.0
+      "title": "US court jails Nigerian eight years, orders $10.8m forfeiture - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3BiZnlVZXg4aVJicF9pQUZQbXJybUFLUlY0bTZvbWYxcmdWTTR5LUgxNktwUGhHQUFGZnRfVWlrdkpiR1VFVWpwSE9pTm9nb3p0RVhqOU9WUVNqM3RzS2JOMjlNbjJFTmFXMW1uM3RzX1BvQkVHbXpRUmNLMUlqaS1CNlVXQUU?oc=5",
+      "risk": 70.0
     }
   ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 2,
+    "new_companies": 1,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 1
   },
-  "generated": "2026-10-20 01:42:03"
+  "generated": "2026-10-20 12:35:21"
 }

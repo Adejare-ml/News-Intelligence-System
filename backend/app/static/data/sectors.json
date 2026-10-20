@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 37,
-      "mentions": 203,
+      "mentions": 206,
       "risk": {
         "Medium": 12,
         "Low": 21,
@@ -24,10 +24,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 20,
-      "mentions": 39,
+      "companies": 21,
+      "mentions": 41,
       "risk": {
-        "Low": 15,
+        "Low": 16,
         "Medium": 5
       }
     },
@@ -727,5 +727,5 @@
       }
     }
   ],
-  "generated": "2026-10-20 01:42:08"
+  "generated": "2026-10-20 12:35:27"
 }
