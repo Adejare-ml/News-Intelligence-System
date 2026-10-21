@@ -87,3 +87,11 @@ def test_missing_date_is_stamped_and_still_deduped(db):
     rows = db.get_significant_control()
     assert len(rows) == 1
     assert rows[0]["Date"]
+
+
+def test_export_collapses_identical_rows_but_keeps_history():
+    from run_pipeline import collapse_identical_rows
+    a = {"Person Name": "Ada Obi", "Company": "Acme Ltd", "Date": "2026-08-05", "Percentage": ""}
+    later = dict(a, Date="2026-08-17", Percentage="27.49%")
+    out = collapse_identical_rows([a, dict(a), later])
+    assert out == [a, later]

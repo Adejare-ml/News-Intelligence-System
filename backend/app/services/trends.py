@@ -37,14 +37,46 @@ _STOPWORDS = {
 
 _TOKEN_RE = re.compile(r"[a-z][a-z'’-]{2,}")
 
+# Google News titles end in the publisher's name ("... - Premium Times
+# Nigeria"). Counted as words, the busiest publishers became the top
+# "rising" terms ("premium", "times", "guardian"), so the trailing segment
+# is dropped before counting. Only a short tail is treated as a masthead:
+# a long one is more likely part of the headline itself.
+_PUBLISHER_TAIL_RE = re.compile(r"\s+[-–—|]\s+([^-–—|]+)$")
+_MAX_PUBLISHER_WORDS = 6
 
-def _terms(title: Any) -> set:
+
+def strip_publisher(title: Any, source: Any = None) -> str:
+    """The headline without a trailing ' - Publisher' / ' | Publisher'.
+
+    The tail is removed when it names the row's own Source, or when it is
+    short enough to be a masthead rather than part of the sentence.
+    """
+    text = str(title or "").strip()
+    src_raw = str(source or "").strip()
+    # A source name that itself contains a dash would defeat the regex
+    # below, so an exact trailing source is removed first.
+    for sep in (" - ", " | ", " – ", " — "):
+        if src_raw and text.lower().endswith((sep + src_raw).lower()):
+            return text[:-(len(sep) + len(src_raw))].strip()
+    match = _PUBLISHER_TAIL_RE.search(text)
+    if not match:
+        return text
+    tail = match.group(1).strip()
+    src = str(source or "").strip().lower()
+    names_source = bool(src) and (src in tail.lower() or tail.lower() in src)
+    if names_source or len(tail.split()) <= _MAX_PUBLISHER_WORDS:
+        return text[:match.start()].strip()
+    return text
+
+
+def _terms(title: Any, source: Any = None) -> set:
     """Distinct meaningful unigrams + adjacent bigrams from one title.
 
     A set, so one headline counts a term once however often it repeats it;
     trend counts then mean "articles mentioning X", not "times X was typed".
     """
-    words = _TOKEN_RE.findall(str(title or "").lower())
+    words = _TOKEN_RE.findall(strip_publisher(title, source).lower())
     kept = [w for w in words if w not in _STOPWORDS]
     terms = set(kept)
     for i in range(len(words) - 1):
@@ -86,7 +118,7 @@ def compute_trends(article_rows: List[Dict[str, Any]], now: datetime = None,
             recent_articles += 1
         else:
             previous_articles += 1
-        for term in _terms(row.get("Title")):
+        for term in _terms(row.get("Title"), row.get("Source")):
             terms_bucket[term] = terms_bucket.get(term, 0) + 1
         category = str(row.get("Category", "")).strip()
         if category:

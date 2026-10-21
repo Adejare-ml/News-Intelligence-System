@@ -153,3 +153,32 @@ class TestWeather:
     def test_no_usable_city_means_none_not_empty(self):
         assert build_weather_payload([]) is None
         assert build_weather_payload([{"name": "Lagos", "data": {}}]) is None
+
+
+class TestPublisherSuffix:
+    """Mastheads at the end of Google News titles are not trends."""
+
+    def test_publisher_tail_does_not_trend(self):
+        rows = [
+            {"Time": "2026-09-12T10:00:00", "Status": "Unread", "Category": "Legal",
+             "Title": "EFCC arraigns contractor - Premium Times Nigeria",
+             "Source": "Premium Times Nigeria"},
+            {"Time": "2026-09-11T10:00:00", "Status": "Unread", "Category": "Legal",
+             "Title": "EFCC widens probe | Premium Times Nigeria",
+             "Source": "Premium Times Nigeria"},
+        ]
+        out = compute_trends(rows, now=NOW)
+        terms = [e["term"] for e in out["rising"]]
+        assert "efcc" in terms
+        assert not {"premium", "times", "premium times"} & set(terms)
+
+    def test_long_tail_is_kept_as_headline(self):
+        from backend.app.services.trends import strip_publisher
+        title = "Senate passes bill - a move critics say will raise prices for everyone"
+        assert strip_publisher(title) == title
+
+    def test_tail_naming_source_is_dropped_even_when_long(self):
+        from backend.app.services.trends import strip_publisher
+        src = "The Guardian Nigeria News - Nigeria and World News"
+        title = f"FG lists new airports - {src}"
+        assert strip_publisher(title, src) == "FG lists new airports"

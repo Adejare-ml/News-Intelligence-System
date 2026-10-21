@@ -27,10 +27,14 @@ logger = logging.getLogger("run_pipeline")
 from backend.app.core.config import settings
 from backend.app.services.ingestion import NewsIngestionService, parse_feed_date
 from backend.app.services.llm import LLMService, LLMCascadeError
-from backend.app.services import analytics, relevance
+from backend.app.services import analytics, images as article_images, relevance
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
+
+# Lead images news APIs returned with this run's saved articles (article
+# URL -> image URL), merged into data/article_images.json at export.
+RUN_IMAGES: Dict[str, str] = {}
 
 # Abort the run after this many articles in a row fail the whole LLM cascade:
 # at that point the providers are down and continuing would only burn quota.
@@ -412,7 +416,8 @@ def run_pipeline(seed: bool = False):
         # on a 40-article run, found in the 2026-10-10 audit.
         if not added:
             continue
-            
+
+        article_images.remember(RUN_IMAGES, url, item.get("image"))
         new_articles_count += 1
 
         # Keep a sample of the extractor's *inputs*. Everything written to the
@@ -1164,6 +1169,26 @@ def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
     return out
 
 
+def collapse_identical_rows(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Drop rows that repeat an earlier row field-for-field, keeping order.
+
+    The Significant Control tab still holds an exact duplicate pair written
+    before add_significant_control learned to refuse repeats (see
+    tests/test_psc_dedupe.py). Rows that differ in any field -- a later
+    report of the same holding with a new date or stake -- are kept: they
+    are history, and the site groups them by holding instead.
+    """
+    seen = set()
+    out = []
+    for row in rows or []:
+        key = tuple(sorted((str(k), str(v).strip()) for k, v in (row or {}).items()))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(row)
+    return out
+
+
 def top_rows(rows: List[Dict[str, Any]], n: int, count_key: str = None,
              date_key: str = None) -> List[Dict[str, Any]]:
     """The N rows most worth graphing, instead of the first N inserted.
@@ -1437,6 +1462,23 @@ def export_static_json_database():
     except Exception as exc:  # pragma: no cover - defensive
         logger.warning(f"Tech news export skipped: {exc}")
 
+    # Lead images: API-supplied ones from this run, then a capped og:image
+    # lookup for published rows still missing one. Never fails the export.
+    try:
+        image_cache = article_images.load_cache(DATA_DIR)
+        image_cache.update(RUN_IMAGES)
+        # Copies: the rows are the database layer's memoised dicts, and an
+        # "Image" key must never ride back into a Sheets write.
+        articles_sorted = [dict(a) for a in articles_sorted]
+        fetched = article_images.attach_images(articles_sorted, image_cache)
+        article_images.save_cache(DATA_DIR, image_cache,
+                                  keep_urls=[a.get("URL") for a in articles_sorted])
+        with_image = sum(1 for a in articles_sorted if a.get("Image"))
+        logger.info(f"Article images: {with_image}/{len(articles_sorted)} published rows "
+                    f"have one ({fetched} page lookups this run).")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Article image step skipped: {exc}")
+
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
         json.dump(articles_sorted, f, default=str, indent=2)
@@ -1467,7 +1509,7 @@ def export_static_json_database():
         json.dump(agencies, f, default=str, indent=2)
 
     with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
-        json.dump(psc_records, f, default=str, indent=2)
+        json.dump(collapse_identical_rows(psc_records), f, default=str, indent=2)
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
         json.dump(slim_report_rows(reports), f, default=str, indent=2)
