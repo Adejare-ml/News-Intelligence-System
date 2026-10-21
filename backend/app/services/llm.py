@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import re
 from typing import Dict, Any, List
 from backend.app.core.config import settings
 from backend.app.services.nlp_pipeline import NLPPipelineService
@@ -606,24 +607,56 @@ class LLMService:
                 ent_type = "agency" if any(k in org.lower() for k in ["ministry", "commission", "department", "federal", "board"]) else "company"
                 organizations.append({"name": org, "type": ent_type})
                 
+            # What this loop used to do, and why none of it survived:
+            #
+            # Every person spaCy found was given position "Officer", the
+            # article's *first* organisation, and event "appointment" if the
+            # word "appoint" appeared anywhere in the text. None of those are
+            # findings -- they are the same three values stamped onto every
+            # person in the article, and they reached the dashboard as fact.
+            # The live people.json still carries the residue: 335 of 581 rows
+            # read "Officer", 70 of them "@ N/A", and the appointments board
+            # rendered "Fayose -> Officer @ Tinubu", which is two people and
+            # no relationship. 93% of July's rows, 0% since September, which
+            # is when this path stopped running.
+            #
+            # The keyword guess was also broken on its own terms: `"md" in
+            # text.lower()` is a substring test, so "Ahmed", "Mohammed" and
+            # "amid" all elected someone Managing Director.
+            #
+            # A heuristic that cannot tell which person holds which post, at
+            # which organisation, says so by leaving the field empty. The
+            # schema allows it and every consumer already handles a blank.
+            # text_lower is already bound above, by the relevance check.
+            def _mentions(phrase: str) -> bool:
+                """Word-bounded, so "md" does not match "Ahmed"."""
+                return re.search(r"\b" + re.escape(phrase) + r"\b", text_lower) is not None
+
+            # Only a post the article states outright, and only when it names
+            # exactly one -- two candidates means we cannot say who holds which.
+            _TITLES = {
+                "CEO": ["ceo", "chief executive"],
+                "Managing Director": ["managing director", "md"],
+                "Minister": ["minister"],
+                "Permanent Secretary": ["permanent secretary"],
+            }
+            found = [title_name for title_name, phrases in _TITLES.items()
+                     if any(_mentions(p) for p in phrases)]
+            position = found[0] if len(found) == 1 else ""
+
+            # One organisation in the article is not evidence that it employs
+            # the person; with several it is not even a guess.
+            organization = organizations[0]["name"] if len(organizations) == 1 else ""
+
             people = []
             for person in entities.get("people", []):
-                # Try to guess position from text
-                position = "Officer"
-                if "ceo" in text.lower() or "chief executive" in text.lower():
-                    position = "CEO"
-                elif "managing director" in text.lower() or "md" in text.lower():
-                    position = "Managing Director"
-                elif "minister" in text.lower():
-                    position = "Minister"
-                elif "secretary" in text.lower():
-                    position = "Permanent Secretary"
-                    
                 people.append({
                     "name": person,
                     "position": position,
-                    "organization": organizations[0]["name"] if organizations else "N/A",
-                    "event": "appointment" if "appoint" in (text or title).lower() else "other"
+                    "organization": organization,
+                    # "appoint" somewhere in the article does not make this
+                    # person's mention an appointment.
+                    "event": "other"
                 })
                 
             procurement = None

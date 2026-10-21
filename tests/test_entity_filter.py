@@ -3,6 +3,7 @@ from run_pipeline import (
     is_placeholder_person,
     is_publication_or_furniture,
     is_role_or_org_name,
+    is_unevidenced_officer,
 )
 
 
@@ -199,3 +200,50 @@ def test_role_guard_is_blank_safe():
     """Blankness is the placeholder guard's job, not this one's."""
     for blank in ["", "   ", None]:
         assert is_role_or_org_name(blank) is False
+
+
+# ---------------------------------------------------------------------------
+# The retired heuristic fallback's fingerprint
+#
+# It gave every person it found position "Officer" and the article's first
+# organisation. Neither was a finding, so a row carrying the bare post has
+# an invented Organization too -- "Fayose | Officer | Tinubu" asserts that
+# one politician works for another. 332 rows in the live export carry it,
+# 93% of July and none since September.
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize("position", ["Officer", "officer", "  OFFICER  ", "Officer\xa0"])
+def test_the_bare_officer_fingerprint_is_recognised(position):
+    assert is_unevidenced_officer(position) is True
+
+
+@pytest.mark.parametrize("position", [
+    "Chief Security Officer",     # real posts that merely contain the word
+    "Information Officer",
+    "Chief Executive Officer",
+    "Officers Commanding",
+    "President",
+    "",
+    None,
+])
+def test_real_posts_containing_officer_survive(position):
+    assert is_unevidenced_officer(position) is False
+
+
+def test_the_fingerprint_discards_the_invented_organisation_with_the_post():
+    """Both fields came from the same evidence-free code, so both go."""
+    rows = [
+        {"Name": "Fayose", "Position": "Officer", "Organization": "Tinubu"},
+        {"Name": "Ada Obi", "Position": "Chief Security Officer", "Organization": "Dangote"},
+        {"Name": "Ben Ade", "Position": "President", "Organization": "Not Specified"},
+    ]
+    for row in rows:
+        if is_unevidenced_officer(row["Position"]):
+            row["Position"] = ""
+            row["Organization"] = ""
+        elif is_placeholder_person(row["Organization"]):
+            row["Organization"] = ""
+
+    assert rows[0] == {"Name": "Fayose", "Position": "", "Organization": ""}
+    assert rows[1]["Organization"] == "Dangote", "a real post keeps its organisation"
+    assert rows[2] == {"Name": "Ben Ade", "Position": "President", "Organization": ""}
