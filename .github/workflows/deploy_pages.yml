@@ -1,12 +1,13 @@
-name: Deploy site
+name: Deploy test site
 
-# Builds the Astro site in web/ and publishes two ready-built copies:
-#   gh-pages          the GitHub Pages mirror, under /News-Intelligence-System/
-#   cloudflare-pages  the Cloudflare Pages site (auranews.pages.dev), at the root
-# Cloudflare is pointed at the cloudflare-pages branch with no build command
-# (see docs/CLOUDFLARE.md). Pre-building here, rather than on Cloudflare, is
-# what keeps the live site fresh: the scheduler's data commits carry
-# [skip ci], which Cloudflare's own Git builds also honour.
+# main is the testing branch. Every push to it rebuilds the GitHub Pages
+# copy of the site (https://adejare-ml.github.io/News-Intelligence-System/)
+# so changes can be checked before anyone sees them.
+#
+# Production (auranews.pages.dev, the cloudflare-pages branch) is NOT
+# touched here. It changes only when a version is promoted with the
+# "Promote to production" workflow (promote_production.yml); after that the
+# scheduler keeps production's data fresh using the promoted code.
 on:
   push:
     branches:
@@ -20,7 +21,7 @@ on:
 permissions:
   contents: write
 
-# Serialize deploys so two overlapping pushes cannot race on the branches.
+# Serialize deploys so two overlapping pushes cannot race on gh-pages.
 # Shared with the scheduler's deploy job; the newest deploy wins.
 concurrency:
   group: pages-deploy
@@ -40,13 +41,24 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
 
-      - name: Build both copies
+      # Organisation logos are fetched from each organisation's site; the
+      # cache keeps them until the list in logos.ts changes (missing ones are
+      # retried on every build).
+      - name: Restore logo cache
+        uses: actions/cache@v6
+        with:
+          path: web/public/logos
+          key: logos-${{ hashFiles('web/src/lib/logos.ts') }}
+
+      - name: Build the test site
         working-directory: web
+        env:
+          SITES: github
         run: |
           npm ci --no-audit --no-fund
           ./scripts/build-sites.sh
 
-      - name: Publish the GitHub Pages copy
+      - name: Publish the test site to GitHub Pages
         # Pinned to a commit SHA so a moved tag cannot inject code into a
         # workflow that holds a contents:write token
         uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
@@ -55,15 +67,8 @@ jobs:
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish the Cloudflare copy
-        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
-        with:
-          folder: web/out/cloudflare
-          branch: cloudflare-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
-
   smoke-test:
-    name: Smoke-test the GitHub Pages mirror
+    name: Smoke-test the test site
     needs: deploy
     runs-on: ubuntu-latest
     steps:
@@ -97,32 +102,3 @@ jobs:
           done
           fetch "$BASE/data/feed.xml" feed.xml
           echo "Smoke test passed."
-
-  # Warning-only until the Cloudflare project serves the cloudflare-pages
-  # branch: before that switch the live site is the legacy dashboard and
-  # these checks are expected to miss.
-  smoke-test-cloudflare:
-    name: Smoke-test Cloudflare (advisory)
-    needs: deploy
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - name: Verify the Cloudflare site serves the new build
-        run: |
-          set -uo pipefail
-          BASE="https://auranews.pages.dev"
-          ok=1
-          check() {
-            for i in 1 2 3 4 5 6; do
-              if curl -fsSL --max-time 30 "$BASE$1" -o page && grep -q "$2" page; then echo "OK $1"; return 0; fi
-              sleep 20
-            done
-            echo "::warning::Cloudflare $1 did not serve the new site (missing $2). Is the production branch set to cloudflare-pages?"
-            ok=0
-          }
-          check "/" "data-hero"
-          check "/register/" "data-holding"
-          check "/data/latest.json" "Title"
-          curl -fsSI --max-time 30 "$BASE/" | grep -qi "content-security-policy" \
-            || { echo "::warning::Cloudflare is not sending the CSP from _headers"; ok=0; }
-          [ "$ok" = 1 ]
