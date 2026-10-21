@@ -1,0 +1,148 @@
+"""
+The validation gate between the database and the published site. Cases are
+taken from rows the live export actually shipped.
+"""
+from backend.app.services import register_quality as q
+
+
+def row(**kw):
+    base = {
+        "Person Name": "Femi Otedola", "Company": "First HoldCo", "Percentage": "",
+        "Board Role": "", "Nature of Control": "Ownership of shares",
+        "Source": "extracted", "Date": "2026-08-07", "Intermediate Entities": "Direct Holding",
+        "Regulatory Filing Ref": "",
+    }
+    base.update(kw)
+    return base
+
+
+class TestCanonicalNames:
+    def test_honorific_dropped(self):
+        assert q.canonical_person("Alhaji Aliko Dangote") == q.canonical_person("Aliko Dangote") == "aliko dangote"
+
+    def test_middle_initial_dropped(self):
+        assert q.canonical_person("Tony O. Elumelu") == "tony elumelu"
+
+    def test_accent_folded(self):
+        assert q.canonical_person("Sadio Mané") == "sadio mane"
+
+    def test_two_word_name_keeps_both_words(self):
+        assert q.canonical_person("Okunbor") == "okunbor"
+        assert q.canonical_person("Jim Ovia") == "jim ovia"
+
+    def test_company_variants_share_a_key(self):
+        assert q.canonical_company("Dangote Petroleum Refinery") == q.canonical_company("Dangote Refinery")
+        assert q.canonical_company("FirstHoldCo") == q.canonical_company("First HoldCo")
+
+    def test_company_suffix_dropped(self):
+        assert q.canonical_company("Dangote Cement Plc") == "dangote cement"
+        assert q.canonical_company("United Bank for Africa (UBA) Plc") == "united bank for africa"
+        assert q.canonical_company("AA Oil Limited") == "aa oil"
+
+
+class TestClassify:
+    def test_percentage_is_a_stake(self):
+        assert q.classify_row(row(Percentage="27.49%")) == "stake"
+
+    def test_shares_without_percentage_is_still_a_stake(self):
+        assert q.classify_row(row()) == "stake"
+
+    def test_chairman_without_stake_is_a_role(self):
+        r = row(**{"Board Role": "Chairman", "Nature of Control": "Significant influence or control"})
+        assert q.classify_row(r) == "role"
+
+    def test_bare_influence(self):
+        assert q.classify_row(row(**{"Nature of Control": "Significant influence or control"})) == "influence"
+
+
+class TestQualityFlags:
+    def test_unsourced(self):
+        assert "unsourced" in q.quality_flags(row(Source=""))
+        assert "unsourced" not in q.quality_flags(row())
+
+    def test_sports_figure_is_implausible(self):
+        assert "implausible" in q.quality_flags(row(**{"Person Name": "Sadio Mané", "Company": "Mango Business"}))
+
+    def test_percentage_out_of_range_is_implausible(self):
+        assert "implausible" in q.quality_flags(row(Percentage="140%"))
+
+    def test_ordinary_row_is_plausible(self):
+        assert "implausible" not in q.quality_flags(row(Percentage="27.49%"))
+
+
+class TestAnnotate:
+    def test_adds_fields_and_keeps_every_row(self):
+        rows = [row(), row(**{"Person Name": "Sadio Mané", "Company": "Mango Business"}), row(Source="")]
+        out = q.annotate(rows)
+        assert len(out) == 3
+        assert out[0]["Person Key"] == "femi otedola" and out[0]["Kind"] == "stake"
+        assert out[1]["Quarantined"] is True
+        assert out[2]["Quality"][0] == "unsourced"
+        assert "Person Key" not in rows[0], "input rows must not be mutated"
+
+    def test_null_board_role_blanked(self):
+        assert q.annotate([row(**{"Board Role": "null"})])[0]["Board Role"] == ""
+
+    def test_spelling_variants_of_one_report_collapse(self):
+        a = row(Company="First HoldCo", Date="2026-08-05")
+        b = row(Company="FirstHoldCo", Date="2026-08-05")
+        c = row(Company="First HoldCo", Date="2026-08-11")
+        assert len(q.collapse_same_report(q.annotate([a, b, c]))) == 2
+
+
+class TestProcurement:
+    def p(self, **kw):
+        base = {"Agency": "Ogun State Government", "Contractor": "DP World", "Amount": "$7 Billion",
+                "Project": "", "Source": "", "Date": "2026-09-25",
+                "Amount Value": 7e9, "Amount Currency": "USD"}
+        base.update(kw)
+        return base
+
+    def test_same_award_from_several_outlets_kept_once(self):
+        rows = [self.p(), self.p(Date="2026-09-26"), self.p(Project="Port expansion", Date="2026-09-26")]
+        out = q.dedupe_procurement(rows)
+        assert len(out) == 1
+        assert out[0]["Project"] == "Port expansion", "the fullest row wins"
+
+    def test_unidentified_rows_are_not_merged(self):
+        blank = {"Agency": "Federal Government of Nigeria", "Contractor": "None", "Amount Value": None}
+        assert len(q.dedupe_procurement([blank, dict(blank)])) == 2
+
+    def test_no_amount_merges_only_on_same_date(self):
+        a = self.p(Contractor="Hitech Construction", **{"Amount Value": None, "Date": "2026-10-05"})
+        b = dict(a, Contractor="Hitech Construction Company")
+        c = dict(a, Date="2026-11-01")
+        assert len(q.dedupe_procurement([a, b, c])) == 2
+
+
+URL = "https://news.google.com/rss/articles/abc?oc=5"
+REC = {
+    "url": URL,
+    "title": "FAAN begins earning MMA2 revenue as 20-year dispute with Bi-Courtney ends - Premium Times Nigeria",
+    "source": "Premium Times Nigeria",
+    "analysis": {"summary": "The Federal Airports Authority of Nigeria (FAAN) has begun receiving revenue from the MMA2 terminal. More detail."},
+}
+
+
+class TestBriefHeadlines:
+    def test_invented_name_replaced_by_source_title(self):
+        md = f"### Key Developments\n- **Georgia’s FCAU receives MMA2 revenue** after a dispute. ([Premium Times Nigeria]({URL}))  "
+        out = q.qa_brief_headlines(md, [REC])
+        assert "Georgia" not in out and "FCAU" not in out
+        assert "**FAAN begins earning MMA2 revenue as 20-year dispute with Bi-Courtney ends**." in out
+        assert "Premium Times Nigeria -" not in out
+        assert f"({URL}))" in out
+
+    def test_faithful_headline_untouched(self):
+        md = f"- **FAAN starts earning MMA2 revenue** after the dispute. ([Premium Times Nigeria]({URL}))  "
+        assert q.qa_brief_headlines(md, [REC]) == md
+
+    def test_repeat_in_same_section_dropped(self):
+        line = f"- **FAAN starts earning MMA2 revenue** x. ([P]({URL}))"
+        md = "### A\n" + line + "\n" + line + "\n### B\n" + line
+        assert q.qa_brief_headlines(md, [REC]).count(URL) == 2
+
+    def test_label_bullets_and_unknown_urls_untouched(self):
+        md = (f"- **Procurement**: Georgia awarded a deal. ([P]({URL}))\n"
+              "- **Georgia wins** x. ([P](https://example.com/other))")
+        assert q.qa_brief_headlines(md, [REC]) == md

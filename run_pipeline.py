@@ -28,6 +28,7 @@ from backend.app.core.config import settings
 from backend.app.services.ingestion import NewsIngestionService, parse_feed_date
 from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import analytics, images as article_images, relevance
+from backend.app.services import register_quality
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -883,6 +884,10 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
 """
 
     if generated_md:
+        # The model's headline is checked against its source article: one
+        # naming someone the article never mentions is replaced by the
+        # article's own title, and repeated bullets are dropped.
+        generated_md = register_quality.qa_brief_headlines(generated_md, day_records)
         md = f"""{header}
 {generated_md}
 
@@ -1499,6 +1504,8 @@ def export_static_json_database():
         r["Amount Value"] = parsed["value"] if parsed else None
         r["Amount Currency"] = parsed["currency"] if parsed else None
         procurement_out.append(r)
+    # One row per award: several outlets reporting it wrote several rows.
+    procurement_out = register_quality.dedupe_procurement(procurement_out)
     with open(os.path.join(DATA_DIR, "procurement.json"), "w", encoding="utf-8") as f:
         json.dump(procurement_out, f, default=str, indent=2)
 
@@ -1509,7 +1516,14 @@ def export_static_json_database():
         json.dump(agencies, f, default=str, indent=2)
 
     with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
-        json.dump(collapse_identical_rows(psc_records), f, default=str, indent=2)
+        # Validation gate: canonical keys, claim kind (stake / role /
+        # influence) and quality flags ride along on every row, so the site
+        # groups spelling variants and keeps unsourced or implausible rows
+        # out of its headline numbers. Nothing is dropped but exact repeats.
+        json.dump(
+            register_quality.collapse_same_report(
+                register_quality.annotate(collapse_identical_rows(psc_records))),
+            f, default=str, indent=2)
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
         json.dump(slim_report_rows(reports), f, default=str, indent=2)
