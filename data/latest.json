@@ -1,5 +1,419 @@
 [
   {
+    "ID": 9622,
+    "Time": "2026-10-21 08:28:59",
+    "Title": "FG seeks N20bn to tackle climate change in North West \u2013 Stakeholders",
+    "Source": "businessday",
+    "URL": "https://businessday.ng/news/article/fg-seeks-n20bn-to-tackle-climate-change-in-north-west-stakeholders/",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The Federal Government of Nigeria is seeking N20 billion to address climate change issues in the North West region.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Procurement",
+    "Risk Level": "Low",
+    "Importance": 50,
+    "Entities": "Federal Government of Nigeria",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9617,
+    "Time": "Wed, 21 Oct 2026 09:21:28 GMT",
+    "Title": "89 CSOs demand release of Nigeria\u2019s investment treaty review, warn of risks to public funds - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQOXI0a2J1TXdUdnFKOTM2c091QUpOTDEtb3g5T01rNHpQSzlrNE1qX0Frb1Z6Y19vcml4SDhVX2E2eTVySjZMVUNLR3I1UURnS2lGRm9mVG1WUVFfaDVBcmJkaG9fcXFBX2VOT19rVWQ0c2Nld2hONVRreF91Y2hicEQ2bXpOVkZwcWdFM2ZFZWR6RE5WbG0zY2tSeS1EWGZmZ3VWVkJfVkVVWUlSREtfWTRuSnpWemtaanVKcHRjNFhHWXIwZVQ1T0dfd3hTd0k4d01JaG13OVlkVF94cDFpSTBPeWV2Zkg3M19MMHQ2NG5FRTNn?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "Eighty-nine Civil Society Organizations (CSOs) are demanding the public release of Nigeria's investment treaty review. The group warns that a lack of transparency regarding these treaties poses significant risks to public funds.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Medium",
+    "Importance": 60,
+    "Entities": "",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9616,
+    "Time": "Wed, 21 Oct 2026 14:42:20 GMT",
+    "Title": "Otti flags off reconstruction of two key Aba roads after years of neglect - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQUtXd2dXZXBKSlp5SnI3WFdwNC1HenRkQTZqdHlGWUpJRk1SYlB0bU95bEZVWUlHNUhMZ3B2Qk52TEZyUmk2SVprSFdUYWt1aVlJVmE4eWdzbXFyMzZpdW1OcHl1TG1QeDZ4TkNtTzctWVNpRm43enVuQzZ0bG1fZG5jdjQ3N1RBMkd6bjY5bnl6TDBwdEVvNWhtUWNMelk5N0lCbDBZQlp1OGtHSmNJTjNQUEpSQmVrT2szOGxhT0t2OWdsc3pkR010VUVQaXNObWNV?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Governor Otti has flagged off the reconstruction of two key roads in Aba, Abia State, following years of neglect.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Procurement",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "Abia State Government",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9613,
+    "Time": "Wed, 21 Oct 2026 18:10:19 GMT",
+    "Title": "Ekiti Assembly passes bill to establish state police - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNTVVTTdMZGF4aDB0ZUptN2F4ZDB1NmNFT2JvZktLaVFnV1JfS1h1ZjZCMEEwQTBSZm40Y0pfZ2pxTjZDN2hhX3ZOVDRtT0MySDhZZnN5RTh4ZzlXWE91OVU5alF4TU1KYV9SWGtNN0dsSVFVel9fNUo2RzhNOEdwREdMRXA2aWVWTWc4c29ON0M3UVpMR2dyOHY0RWExV2xaQ3ZDZ2h3Y0FXUWhPLVE?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Ekiti State House of Assembly has passed a bill to establish a state police force.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 50,
+    "Entities": "Ekiti State House of Assembly",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9610,
+    "Time": "Wed, 21 Oct 2026 19:22:01 GMT",
+    "Title": "Petrol imports: Senate rejects NMDPRA figures, summons NNPCL, NEITI - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOSHVTQ19XbGVLY0xmNU9IeE9oT3lyQldRblhkZHNvQzhKQmRzV2hIdXBKQ2x4bEoyT0hJOTBOQkpteUVjTGR1dURuY0J5XzRiZjVxVk9ld3BYYzV6TDVhZ2N1VEJaV2F3RlNUMmdYbFR5RDZDQUZRNm1DNjk3THlLVjZ3T2FfMG11MDZURFhR?oc=5",
+    "Category": "Government",
+    "Risk Score": 65,
+    "Summary": "The Nigerian Senate has rejected petrol import figures provided by the NMDPRA and has summoned NNPCL and NEITI to provide clarification. The move indicates a regulatory conflict and potential discrepancies in fuel import accounting.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Audit",
+    "Risk Level": "Medium",
+    "Importance": 70,
+    "Entities": "Nigerian Midstream and Downstream Petroleum Regulatory Authority|Nigerian National Petroleum Company Limited|Nigeria Extractive Industries Transparency Initiative|Senate of Nigeria",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9609,
+    "Time": "Wed, 21 Oct 2026 20:01:18 GMT",
+    "Title": "Usoro, firm deny violating court ruling, cite gaps in communication - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQMDZTUW8yc29LQVcxalpTTnkzQ0I5UElGenRnclZGOF9jaFVrbnRTaTZhVERsb0FPQzBFMXlhc0ZWN3J1T3R4OHpCNDVyN0QtRF93QjVWaUlPSG9jWXlpamYxSFl4VDhZR2dNcnZqTEpHZ19yT2IydmF3WU43SS1pRjQ0RXU3elUtQzFPU0tvQ1FOYWdsNUE?oc=5",
+    "Category": "Legal",
+    "Risk Score": 30,
+    "Summary": "An individual named Usoro and an unnamed firm are denying allegations of violating a court ruling, attributing the issue to communication gaps.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 20,
+    "Entities": "",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9607,
+    "Time": "Wed, 21 Oct 2026 19:41:03 GMT",
+    "Title": "Reps issue MTN, Airtel, Glo seven-day ultimatum over poor service - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUDN4ZU9NNDBkbDBrUWxubllldHFEWGlvcjdoV3BYVFMzcUo2TTNWMXY1YUdKZ2hJREJ6b21MQWlLd2J6Vmg5WnpmYjdwR0lYMUdQTVNub2dEYy1td1NFV3dQOXlzejZpT1ltNjNXbENITUF1MUFlMzlCdExyQnlLTFRfbzduQ3JRS2E2VG4yZzIwc0R4MjRBRW1GYUQwTk9sZ2JoMVNXODRHNGZSQ01R?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The House of Representatives has issued a seven-day ultimatum to major telecommunications providers MTN, Airtel, and Glo to address poor service quality.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "MTN|Airtel|Glo|House of Representatives",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9606,
+    "Time": "Wed, 21 Oct 2026 04:37:00 GMT",
+    "Title": "OCTAGRAM, ONDIPA sign agreement for 9m scfd CNG facility - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV01lSWw4NUpWdDRXeGFMZGM3MU53NG9meXk1YVBXazM5UmVVbUtuSlBmQldSZHNPS01nOW5mYWN4dzRiTDlRNG9GaTZYMzI3a3dCQ2ItX3BFQVZrLWJDbERPekRscFRQWElZYmtBbHlyZTBYZEtOZExFM2pjU0dJT0NyRnBMSC1wZHJJ?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "Octagram and ONDIPA have signed an agreement for the development of a 9 million standard cubic feet per day (scfd) Compressed Natural Gas (CNG) facility.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Procurement",
+    "Risk Level": "Low",
+    "Importance": 60,
+    "Entities": "Octagram|ONDIPA",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9605,
+    "Time": "Wed, 21 Oct 2026 16:04:46 GMT",
+    "Title": "PRESIDENCY EXPANDS SKILLS ACQUISITION PROGRAMMES TO TACKLE INSECURITY - The State House, Abuja",
+    "Source": "The State House, Abuja",
+    "URL": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSmFleldQT3pKakJHT0dZcXBWdzZoSGh2aEo4Yi1pcWtrVjBnX0dZQjJFXzZwcXIzX0VTbllUSkhqeVNoZUl4YWY2MFR1b0UyemVNRTNNZEFQM0YyN2RDV1R6bzFCQlExWjZXZUg0Ry1aR0ZpZWU5OVNYYXJKRFYwX1o0QnhSTFVpTzRsSnZYbFM4ald6SDhJSmI5V0s?oc=5",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "The Presidency has announced the expansion of skills acquisition programmes aimed at addressing insecurity within Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "The Presidency",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9598,
+    "Time": "2026-10-20T14:10:37Z",
+    "Title": "Kebbi begins construction of 58km road, other projects in three LGAs",
+    "Source": "The Punch",
+    "URL": "https://punchng.com/kebbi-begins-construction-of-58km-road-other-projects-in-three-lgas/",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "Kebbi State Governor Nasir Idris has launched the construction and rehabilitation of various access roads across Birnin Kebbi, Kalgo, and Bunza local government areas to improve agricultural productivity.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Procurement",
+    "Risk Level": "Low",
+    "Importance": 50,
+    "Entities": "Kebbi State Government",
+    "Filter Reason": "",
+    "Image": "https://cdn.punchng.com/wp-content/uploads/2026/09/29004354/Screenshot-2026-09-29-004331_1790639034-1200x630.webp"
+  },
+  {
+    "ID": 9588,
+    "Time": "Wed, 21 Oct 2026 17:10:56 GMT",
+    "Title": "Kano governor renominates commisioner forced to resign for bailing drug suspect - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPbmZWOTRZOG10cURyRnVwWlEzVFpXb0drR2lVUFBXM2V4a2VVNl96eDFoaHFCdGJGcGZQUS1tcHZDNGMta190bFYtOG9RMVRZUnhpTWRNT1dobDYzZi1vV1YzMUdMM1paeG5WR1pmcndUTUc0c2RtSmZhR2MzOGhzc2VIcHduTDlaV0hXLV9BUzZkM2ZQeHNNc3AwWmdIX0kzTmhsZFcxZXZJYUpIaEFoVFU3T1lqZjQ5X19mVlRYVm5TWHA2ekFEYmw5b1lsQnFwRVJB?oc=5",
+    "Category": "Government",
+    "Risk Score": 40,
+    "Summary": "The Governor of Kano State has renominated a commissioner who had previously been forced to resign after bailing a drug suspect.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Appointment",
+    "Risk Level": "Medium",
+    "Importance": 60,
+    "Entities": "Kano State Government|Unnamed Commissioner",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9586,
+    "Time": "Wed, 21 Oct 2026 16:49:16 GMT",
+    "Title": "NIBSS, Transactility\u2019s partnership delivers National Payment Stack - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOV0dua3U2TjRpTm1XN0s2R0NtLU01VTNSWFNRRS0xM1Rmc0NwTHNaQWdFVFJXdm1ab0tLQ20wQ3dFQnQxZlVlVEdMSUN4ZDQxNjRJNVR1VW5tSWRacjVTZExPTWp3VHNVdF9FaWR6RzdrSkUxTHJlZzVNdk13MkU2cVJ2ekJIMndMZkZyZ09GVWdEOVRZZWRkRG9NUFNiekFYSzFtVnlIWTZOT1c2ZGQxQWQwUHB1a281cllKMkk2V21oYmp2alRWYVlB?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "The Nigeria Inter-Bank Settlement System (NIBSS) and Transactility have entered into a partnership to deliver a National Payment Stack.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "Nigeria Inter-Bank Settlement System|Transactility",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9585,
+    "Time": "Wed, 21 Oct 2026 13:11:57 GMT",
+    "Title": "Thor Explorations Ltd supports agricultural enterprise with 10 process plants in Segilola host communities - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWGhSR1JjbWk1dFduT3A0Y1lFRllOc0Z0R0taZi1hR2RXZnhTRGh0YWxBeHFLZmJhcUdOdjNXN3l5a0lNX20zTXJhQ19JVE9LZllDYzczb2tPb21XZjgtM2Y0eGRvVWxhZFFlNDF1X05GZWk1clhCNFBFTXBIdkhmak13VVZIOFRlbzByam9oelR3anBscFVNNFdPWjVWMC1DaWp4OVhEcmZUWTVNN3Z6alJzMnNJUDNhV0dDNUNaUTZmUnVKczI2aDB6ckhwRjFxcjJqdXgtdTVKQm56RGJ4REJVdzNkM1RJckU3QUNxdw?oc=5",
+    "Category": "Company",
+    "Risk Score": 20,
+    "Summary": "Thor Explorations Ltd has provided 10 processing plants to support agricultural enterprises within the host communities of its Segilola project.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "Thor Explorations Ltd",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9584,
+    "Time": "Wed, 21 Oct 2026 12:18:08 GMT",
+    "Title": "Nigeria breaks global barrier as ex-Kebbi First Lady lead global cancer body | - The Eagle Online",
+    "Source": "The Eagle Online",
+    "URL": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUDBzSElRTEpxMzNrTGtDZGlScjBocHhMdWg5RnRXcWllTkN4cm00eV90RHRxOERsWjdrZzFyMHNhb3hSUmV2dmZEUnJKV0pkaERGNkFIR2hWaXFBVFhubWJuTGt4Q2VlcUVnZy1jLW1WQXI1WkdBQlV4R0dtVFNlLV9NMkZUY0RxN21tYWJvLUpRSmxCci1PZDlzQU1DM01tWUpqanBvejJVZGs?oc=5",
+    "Category": "Other",
+    "Risk Score": 10,
+    "Summary": "A former First Lady of Kebbi State has been appointed to lead a global cancer organization, marking a significant leadership achievement for Nigeria.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Appointment",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "Global Cancer Body|Unnamed Ex-Kebbi First Lady",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9582,
+    "Time": "Wed, 21 Oct 2026 13:49:10 GMT",
+    "Title": "NAFDAC raids Lagos factory producing bitters with cough syrup registration number - Punch Newspapers",
+    "Source": "Punch Newspapers",
+    "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQ3pmS1c1ZjJPdXhsUHRBdTFwdE9pbl9SR29LT2FyRFdBQUNKM2c5Y0xDVkthVkRjWkt4UEhCMTJxd2FPV1lJanRVSmROUGZqdHpJT2lUMkNKeWxqSWdOOUkxUi1qQjBRM3prSVdYMWhOZ3Rhak5Ka2F6b3VpYUdBQVJjeW1heWhLaDV6SHgzWktZZjVYNEhKZF9tRWFYX1pMLTNHWg?oc=5",
+    "Category": "Legal",
+    "Risk Score": 60,
+    "Summary": "NAFDAC conducted a raid on a factory in Lagos for producing bitters using a registration number intended for cough syrup, indicating regulatory fraud and product misclassification.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Audit",
+    "Risk Level": "Medium",
+    "Importance": 50,
+    "Entities": "National Agency for Food and Drug Administration and Control (NAFDAC)",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9580,
+    "Time": "Wed, 21 Oct 2026 17:06:49 GMT",
+    "Title": "Alleged N27bn Fraud: I didn't receive payment instructions from ex-governor Ishaku, but his co-accused - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPY3Z5dng2Z1dYYU5jc2poelVueXl4U2hGeElOeHptS0pERFZ4TFZJZGp3c3FJX0pQWTQ3MHAxWm43bUYwTWJWekhrQUtHSDBnNjRacEJ6V3czWWZZbnZQemh2MEFhaGZ4S1ViOUpPMkNBcFcxY0FBNUVwbFZVZjRJQkd4VXU0cTliang2VXZseGt6aXVCYTM3bERKemdzVVRSekktVWVEZDRVelAzTzd4aDNyUV84dVFCR3V3ZzVybDhxX29Kb1g1SERjMTQ0MW9oMGF5RFV2c2twYlFRaF9XejByLTROMy1NSFlVNg?oc=5",
+    "Category": "Legal",
+    "Risk Score": 75,
+    "Summary": "Legal proceedings regarding an alleged N27 billion fraud involving former Governor Ishaku and co-accused individuals. The report focuses on testimony concerning payment instructions and financial misappropriation.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Corruption",
+    "Risk Level": "High",
+    "Importance": 60,
+    "Entities": "Ishaku",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9579,
+    "Time": "Wed, 21 Oct 2026 16:24:08 GMT",
+    "Title": "Lagos State Butchers Association unveils new executive leadership under Ismaila Babalola - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPTFVHdmZJUHhwVEdQbVV2SWlnb0dwcWRRWllwWDFUMVJ2M3VTcDVocmhoMWl5clFOa1hZa1FUVWxDQ21sRXhBbWJQVEg2WlVjYU8wWkNveEVvV3o1OFkyV2tiemt0eElDT1BBVXBlVGRHMHFlZy1KakZjZTNJc2wyT3hscFhGcTJtMGl2ZURsbXVjYlZ4UnNxcXlnNEpUQWx5VU1ReTVmZDM3eFU0RWFXZFM3eWhLX3oxUVZMN09IV3ZPSjRxS3d6U1AtNVZGdW9USGxwS0FOYw?oc=5",
+    "Category": "Other",
+    "Risk Score": 15,
+    "Summary": "The Lagos State Butchers Association has unveiled its new executive leadership, with Ismaila Babalola assuming a leadership role.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Appointment",
+    "Risk Level": "Low",
+    "Importance": 30,
+    "Entities": "Lagos State Butchers Association|Ismaila Babalola",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9578,
+    "Time": "Wed, 21 Oct 2026 16:41:01 GMT",
+    "Title": "Nigeria\u2019s Gaming Gold Rush: FSGRN\u2019s \u20a6150m licence offers a competitive gateway to Africa\u2019s largest population, By Micheal Eja - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPV1FSUklGeGM4aThXX1Z3VWVJNElCaGpVSFFiSFMyMEdMbDZtaHdDbG9way1pNk9SX2ZTRFJqYV82RUhSRG83RFoyWll6T2RYN0M4YlhBZ0NnUUZiZDEtYXJnX1JHN0Q5RVh0RVVrdWt6MGFYMFNlVWVBdFNWRGtIZmg1Q0NKSUtPQmRkT19CWWt6WElFYmNBOXV0NmtJbjFzMXZLUXIySGxVY012YkROeWptN0hsdWhfLUpRY19McDRWVk5vZ0xsNnFFektMcFlZa1FXYk11NGRxN0c1U1lzNTVFNDhXR0FaSUFxX0lnMzM1bld3ajE5V1lpMll2RjNPY2dKMlpPb01GMkVC?oc=5",
+    "Category": "Company",
+    "Risk Score": 30,
+    "Summary": "FSGRN has acquired a gaming licence in Nigeria valued at \u20a6150 million to enter the West African gaming market.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 50,
+    "Entities": "FSGRN",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9577,
+    "Time": "Wed, 21 Oct 2026 13:24:05 GMT",
+    "Title": "FSGRN warns against reintroduction of Federal Lottery Regulation through the back door - Premium Times Nigeria",
+    "Source": "Premium Times Nigeria",
+    "URL": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSXBCMXEtNEhkVldJVFpiU21DcWNTcUFJYmJIYzJUaXdxQU5ES1lHaDR5UUNmcXJ3aEVrdkhJUzhJelhVYVlwSmFtOWd6d2hTcG5kWTIxRHMyM0JTWGtjWEFLenVMVlRMQ1lwYlY0WXllaF9TNUxLRVZaR3dOM1VVby00dFNnWEExVFRQNnZQLUdpTDczUDlsLTlVNGtwMGNxaVhxb2dtQy1yZ1VBczlMbVZBLUduWVNlQnl3N1ZmdzN5R3dsU0xZS1MzYmN2a3RLdGJlZQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 30,
+    "Summary": "The FSGRN has issued a warning against attempts to reintroduce Federal Lottery Regulation through non-transparent channels.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "FSGRN",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9576,
+    "Time": "Wed, 21 Oct 2026 17:31:04 GMT",
+    "Title": "Reps Move to Make Nigeria Drone Manufacturing Hub - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRE1FQTVOeklzbnJFOFFpaGpFVWxwS0FoT2JmblRuT3F6aVlZYjdtOU1VdG9GaDlMWVROM2RxZk1SVU9rMTlJUUdzUUVLaXR6WE5tdXNkTzJpVmxPcTBpaGpkbkxMaW11a0RUTWxwQjBGV0R1ZFVzZVpOZVdRalgzeA?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The House of Representatives is initiating moves to establish Nigeria as a hub for drone manufacturing. This policy shift suggests potential future procurement activities and regulatory frameworks for the aerospace and technology sectors.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "House of Representatives",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9575,
+    "Time": "Wed, 21 Oct 2026 14:01:00 GMT",
+    "Title": "Otu Presents \u20a6987.8bn 2027 Budget To Cross River Assembly - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZUhNcGlZQnVHY2JKT004SnRvTHdPZmJwQWpLYXlaMVB5U3JUcVlzZ0tsd2M1LVVXTEs3LWp2eTkzQjViU1FmYTAwTk14dnI3QU1WUnRCOUM5QXlpZ1RUV3had3FyRnY5b2pZeDRkanhiMVRRQVZrVnJ5eUs0blQ1aF9QcHRKa3BkQmxtZWlEQk0zZ3JVenc?oc=5",
+    "Category": "Government",
+    "Risk Score": 10,
+    "Summary": "Governor Otu has presented the \u20a6987.8 billion budget for the year 2027 to the Cross River State House of Assembly.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 60,
+    "Entities": "Cross River State Assembly",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9574,
+    "Time": "Wed, 21 Oct 2026 17:05:30 GMT",
+    "Title": "Reps give MTN, Airtel, Glo, others seven-day ultimatum over poor network - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGZCTzZLNktmUk5vRFNIOEIwNXlpLVV3a01uNEh4aEZlVWVTaVloNW1LMWZmMzE0dUhoUjJiMk1ZanpRV2czdllFX1ItVkJFalBXejNwcmtBUEFGU2VraXkyU1luOHdTb2Y2VmJHOXJUUlY0SVlQdkNjcmkwRkhSMlhDWFNlcFZfcU1mREhQbDRSbjNEYVZfNGlubw?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The House of Representatives has issued a seven-day ultimatum to major telecommunications providers, including MTN, Airtel, and Glo, to address persistent poor network quality.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "MTN|Airtel|Glo|House of Representatives",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
+    "ID": 9573,
+    "Time": "Wed, 21 Oct 2026 13:19:47 GMT",
+    "Title": "FCC, FAAN move to strengthen Federal character compliance - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeV8zMEdnTkJEQ25UY1A4YXNoRVROR1pBSUoxYzd4LW15ZXNCSzVoV3ZBNDRyQ3hKUzd3ZnZmLVN1S0tWbG94WllhQ3RtX1JZXzl4Qlp4UFh2cF83bDduLW1qMERFSzdqUFBOMkJEQk5WdmFfVmo1eEZ5QzAwQmxLWEh3Tzc1TE9nZDdvMmlUeW5qQ1lYQ2FCbjRwSWlVSk9NRUc0c3ZZQ2tWVWUtSGFMM0tVMA?oc=5",
+    "Category": "Government",
+    "Risk Score": 20,
+    "Summary": "The Federal Character Commission (FCC) and the Federal Airports Authority of Nigeria (FAAN) are collaborating to ensure stricter compliance with federal character principles in recruitment and appointments.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 40,
+    "Entities": "Federal Character Commission|Federal Airports Authority of Nigeria",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
     "ID": 9566,
     "Time": "2026-10-21 00:37:55",
     "Title": "CBN approval still pending as JPMorgan pursues Nigeria banking licence",
@@ -14,7 +428,8 @@
     "Risk Level": "Low",
     "Importance": 60,
     "Entities": "JPMorgan|Central Bank of Nigeria",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": "https://cdn.thesun.ng/wp-content/uploads/2026/10/images-5-14.jpg"
   },
   {
     "ID": 9562,
@@ -31,7 +446,8 @@
     "Risk Level": "Low",
     "Importance": 60,
     "Entities": "Federal Government of Nigeria",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": "https://cdn.punchng.com/wp-content/uploads/2026/09/17094455/WhatsApp-Image-2026-09-17-at-09.31.35_1789634695-1200x630.webp"
   },
   {
     "ID": 9557,
@@ -48,7 +464,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Federal Government of Nigeria",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9556,
@@ -65,7 +482,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigeria Airways",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9551,
@@ -82,7 +500,8 @@
     "Risk Level": "Low",
     "Importance": 50,
     "Entities": "Taraba State House of Assembly",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9547,
@@ -99,7 +518,8 @@
     "Risk Level": "Low",
     "Importance": 60,
     "Entities": "Nigerian Upstream Petroleum Regulatory Commission",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9541,
@@ -116,7 +536,8 @@
     "Risk Level": "Low",
     "Importance": 65,
     "Entities": "Federal Government of Nigeria|Bi-Courtney",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9540,
@@ -133,7 +554,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "House of Representatives Committee on Home Affairs",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9535,
@@ -150,7 +572,8 @@
     "Risk Level": "Low",
     "Importance": 75,
     "Entities": "Federal Airports Authority of Nigeria|Bi-Courtney Aviation Services Limited",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9534,
@@ -167,7 +590,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Federal Government of Nigeria",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9533,
@@ -184,7 +608,8 @@
     "Risk Level": "Low",
     "Importance": 60,
     "Entities": "",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9529,
@@ -201,7 +626,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigeria Airways",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9523,
@@ -218,7 +644,8 @@
     "Risk Level": "Low",
     "Importance": 50,
     "Entities": "",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9521,
@@ -235,7 +662,8 @@
     "Risk Level": "Medium",
     "Importance": 40,
     "Entities": "Economic and Financial Crimes Commission",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9520,
@@ -252,7 +680,8 @@
     "Risk Level": "Low",
     "Importance": 60,
     "Entities": "",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9519,
@@ -269,7 +698,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigeria Customs Service",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9516,
@@ -286,7 +716,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigeria Customs Service",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9513,
@@ -303,7 +734,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "National Agency for Food and Drug Administration and Control|Standards Organisation of Nigeria|Nigeria Employers' Consultative Association",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9512,
@@ -320,7 +752,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigerian Communications Commission",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9503,
@@ -337,7 +770,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": "https://cdn.punchng.com/wp-content/uploads/2026/10/20011142/images-4_1792455102.webp"
   },
   {
     "ID": 9497,
@@ -354,7 +788,8 @@
     "Risk Level": "Low",
     "Importance": 50,
     "Entities": "APC Campaign Council|Betta Edu",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9492,
@@ -371,7 +806,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Osun State Government",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9491,
@@ -388,7 +824,8 @@
     "Risk Level": "Low",
     "Importance": 50,
     "Entities": "United Nigeria",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9490,
@@ -405,7 +842,8 @@
     "Risk Level": "Medium",
     "Importance": 40,
     "Entities": "",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9489,
@@ -422,7 +860,8 @@
     "Risk Level": "High",
     "Importance": 60,
     "Entities": "",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9474,
@@ -439,7 +878,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Enugu State Local Government Councils",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9473,
@@ -456,7 +896,8 @@
     "Risk Level": "Low",
     "Importance": 30,
     "Entities": "National Teachers Institute",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9464,
@@ -473,7 +914,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "National Information Technology Development Agency",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9463,
@@ -490,7 +932,8 @@
     "Risk Level": "Medium",
     "Importance": 50,
     "Entities": "Economic and Financial Crimes Commission",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9462,
@@ -507,7 +950,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "National Assembly",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9461,
@@ -524,7 +968,8 @@
     "Risk Level": "High",
     "Importance": 70,
     "Entities": "Economic and Financial Crimes Commission|Central Bank of Nigeria|Godwin Emefiele",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9460,
@@ -541,7 +986,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigerian Content Development and Monitoring Board",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9459,
@@ -558,7 +1004,8 @@
     "Risk Level": "Medium",
     "Importance": 50,
     "Entities": "Oyo State Government|Seyi Makinde|Alli",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9458,
@@ -575,7 +1022,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigerian Content Development and Monitoring Board|Dangote Group",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9457,
@@ -592,7 +1040,8 @@
     "Risk Level": "Low",
     "Importance": 40,
     "Entities": "Nigeria Customs Service",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9456,
@@ -609,7 +1058,8 @@
     "Risk Level": "High",
     "Importance": 60,
     "Entities": "Economic and Financial Crimes Commission",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   },
   {
     "ID": 9455,
@@ -626,397 +1076,7 @@
     "Risk Level": "Low",
     "Importance": 30,
     "Entities": "House of Representatives",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9448,
-    "Time": "2026-10-19T17:36:20Z",
-    "Title": "FG targets 20 million investors, 250 listed companies by 2036",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/fg-targets-20-million-investors-250-listed-companies-by-2036/",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Federal Government of Nigeria has set a strategic goal to increase retail investors to 20 million and expand the number of listed companies to 250 by 2036. This policy aim is designed to deepen the Nigerian capital market and enhance corporate transparency through increased listings.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 60,
-    "Entities": "Federal Government of Nigeria",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9445,
-    "Time": "Tue, 20 Oct 2026 17:33:37 GMT",
-    "Title": "Plateau revitalises 105 PHCs, upgrades two to cottage hospitals - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSmNIT1N6bVVqS0dUQ3FKZnVlY25iNTVVSV9uNXRRTk5MNC0tZnEwWjlqRHI3U29UQUpBbUhSclBDcUcxREVUVzdua1laMFRETV92aGd2LWlxM19RbUM4Q2Y1bU4yNWZQN18zMEZDenBSc0hRWEJwN1BHWHAyS3lRdDJHZFA1VlItUG1tM3FhR3BlQWg1b3V6dmRfOS1kZnB1WFFJTDBKYnRvTzdzVEFsUjF0SVcwVnAtZjRJ?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Plateau State government has revitalized 105 Primary Health Care centers (PHCs) and upgraded two of them to cottage hospitals to improve healthcare delivery.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Other",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Plateau State Government",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9441,
-    "Time": "Tue, 20 Oct 2026 14:02:58 GMT",
-    "Title": "Enugu Assembly approves creation of state police - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQblZDM2l0c2tORUtJVkZPSEM3RGloZGN6QVRJa003WEI5eEpBMGxnRzYxYTllbXJROUJ0QlNDbnpGNVJxOUhJQ24tRFpWaHFaT1ZoR09LSU84cGh0cXZXcTVmWG1EMEZmdzJZSV9lWlJTQ010VTEyaDFaSHB4aDItcGhSN2djcTl5WjJyLVlDWWRZTEI1a3ItMG9iNDVzU01GRUJzR1UtX3Y?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Enugu State House of Assembly has approved the creation of a state police force to enhance local security.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 50,
-    "Entities": "Enugu State House of Assembly",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9440,
-    "Time": "Tue, 20 Oct 2026 16:29:48 GMT",
-    "Title": "Lagos water corporation revises 1.03% coverage figure, says it serves 1.65 million people - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPaGtBTHdtYVNvZWVkc21kZFlWc1FPSk5OUGdSU2NrV3BYaU5BeTljU3JtV2dnNHdkYnc3MjBrOFpmY0ZQcHlGXzJfZnJkX29IbXZja28wd2o1ZzVjVEtUVGZlOHRrTkI5TWtwVlJYanVyamhrc09kaWFZTzJaSXVKMHQwUFJCZHNCcHlXTnY0YkpwTk92WG84dlhvbFo5Z3ZFWHIxMTVPWnZTbU1XR3J3U2hoSXNTV1YzeXFPc1lxQ0YycVN0RnY2cllCTHcwOWJMM1htd0VzWXlWd2Mz?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "The Lagos Water Corporation has revised its previous coverage figures, stating that it currently serves 1.65 million people.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Other",
-    "Risk Level": "Low",
-    "Importance": 30,
-    "Entities": "Lagos Water Corporation",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9435,
-    "Time": "Tue, 20 Oct 2026 17:41:40 GMT",
-    "Title": "Reps demand higher budgetary allocation to tackle erosion in Bayelsa community - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUlpwUEYtbGtuM2VyYXd4LTJOYmZWajhPdnA4UERsUXVMWjF6NEw2YlpmdjJSVHJOMHAyNXZhcDkyNWUzS0ZkWGl5OHlsVXhMZTVaV2FQOTRhdkRta3YyZGJaM21iS3NjVW91M1ZkeS1rdm5TZS1yOWk5MVh6V2UxVEtrTW1vbEgwTEZ0ZkxvdGNvcmRRU0w3YWEyT0J0cVBqYXZTRHd2QQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Members of the House of Representatives are calling for increased budgetary allocations to address coastal erosion issues within communities in Bayelsa State.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "House of Representatives",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9434,
-    "Time": "Tue, 20 Oct 2026 17:25:03 GMT",
-    "Title": "Keyamo approves design for Lagos airport monorail - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbGpQUkdCMjVhUy1XU2pLQ1NhZHRIbmdJZEdRQXdWVnFvcncwS0FteTA5N29lNHhMRU1BdnB3UHdnYjA2VzBlZXduU3lOQ1FadXdmNUVfVkZNS3Y3NDI2b0VUVUVjOTJGSUl4UDlsaWU3ZmdkNHFjNnREQnN5WFVnT0h4eVduZU05M013R1lIWkh3MTI1WF80bGJVSHpVNjZjcmoteksxU2dPdnlzUFRyVWJBd1FwZw?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Minister of Aviation, Festus Keyamo, has approved the design for a monorail system at the Lagos airport.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Procurement",
-    "Risk Level": "Low",
-    "Importance": 60,
-    "Entities": "Ministry of Aviation|Festus Keyamo",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9431,
-    "Time": "Tue, 20 Oct 2026 16:27:36 GMT",
-    "Title": "Court fines former banker N1m over bank fraud in Lagos - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQQWtzRzl4TkZCRVhMRG9RYjNDckdiT2Z4ZTRGaEF6UlVwNjAzb21aX3ozdjMtZUFzaTNDUkk3UWZITi14YlIwWTRoV054ZnRhZ1lzVElYWmZhaFhtYXNjMDk0THRPTktvUktVbzBLdkVmVDJTYURGaW1ZUjJZcW9SMWt3YzZxOEh5cFMtN2ZiNmdOSDF4cS1obDE5VlFmeXJIZ2t3NXZxSGYyMXRueVU4bw?oc=5",
-    "Category": "Legal",
-    "Risk Score": 40,
-    "Summary": "A court in Lagos has fined a former banker N1 million following a conviction for bank fraud.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Corruption",
-    "Risk Level": "Medium",
-    "Importance": 30,
-    "Entities": "",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9430,
-    "Time": "Tue, 20 Oct 2026 16:10:57 GMT",
-    "Title": "EIB Global, FCMB join forces to support private sector, sustainable agriculture with \u20ac85 million funding - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNWmtWSVRRczRfTGthNHBqd1FNNkRFWm13X2U4Vm9LaDJPRERXd3ZvS3lydDdzTFlkYTg4Qkx3N0E4dWFNY3c3VG05NWxVcFA0X080Vmd6bWNJSE1fZ1lZQ01iRkJGUkpVQXRRdUMwOTMwemhkZDJNb1VzRHVxek9idlFvREl5LXZ5VEZWUWl2dDRZSGhZMGF5ZWFNX0ZZQ2x6enJUX2VnbWMxRkRleXgyR2xuV3BrYlhsN09USU5sNC02MENtSUNHY0lrLUJUTnJ5amdNd0RhQVZGUHVhWFdhRUFWemVNb3RHdTYtVkRXTnBWWnFzcmh5UjhMM3I?oc=5",
-    "Category": "Company",
-    "Risk Score": 20,
-    "Summary": "EIB Global and First City Monument Bank (FCMB) have partnered to provide \u20ac85 million in funding to support the private sector and sustainable agriculture in Nigeria.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Other",
-    "Risk Level": "Low",
-    "Importance": 60,
-    "Entities": "EIB Global|First City Monument Bank",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9429,
-    "Time": "Tue, 20 Oct 2026 12:46:22 GMT",
-    "Title": "Lagos can\u2019t fund Fourth Mainland Bridge alone, says Hamzat - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNa3RGRzk1Y0Z3Z0NlVzdPZHFOSVFucTdKVTYzcndySlJla0poZmVOR0pkQnFfSXpYMlJCODlRUktjS2plaHNmejhmcG9PYUVtUnFaQWtnUmN3WGhNaTVlQUx5cDBRLTU3VjNtRDNHN2UxMjg1N1pvckhIZDZSTDBCa2ZNQQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Lagos State government, represented by Hamzat, has indicated that the state cannot solely fund the construction of the Fourth Mainland Bridge, implying a need for external funding or Public-Private Partnerships (PPP).",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Lagos State Government|Hamzat",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9426,
-    "Time": "Tue, 20 Oct 2026 15:04:30 GMT",
-    "Title": "EFCC witness answers questions on work histories of ex-minister Sirika\u2019s daughter, son-in-law - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPc1Nmb05xZXg1OE5XS2Juc2Q1OFJyci1iNng1Tzl5OWdMX0tIeTFXd1VSSElpamVtTWkwc3E0anNTMjd1bVJwdGtzQmtrelZJOHJYSVQ2Rm93TjFwSWd4LXdBMHhBOVZQUnRockgybzZ1NGNNUC1xT19qX1NXbzBJWE1XX0U5R0loMzZzanliUTlHbk5KRWRNN29BWm93UTY2UkRsN21DMk9kRklfcU1hMUJiSTdHLTJ1ZmJRV2MycFdWekdla0FrSWdZV0JGWk9PV09VeF93akFTSk5qb0tGOXh3?oc=5",
-    "Category": "Legal",
-    "Risk Score": 65,
-    "Summary": "The Economic and Financial Crimes Commission (EFCC) is investigating the work histories of the daughter and son-in-law of former Minister Sirika as part of a broader legal proceeding.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Corruption",
-    "Risk Level": "High",
-    "Importance": 50,
-    "Entities": "Economic and Financial Crimes Commission|Sirika",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9425,
-    "Time": "Tue, 20 Oct 2026 17:27:36 GMT",
-    "Title": "NECA, SON, Health Ministry oppose proposed NAFDAC bill over regulatory overlaps - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdzdlLVBaTC1HbUNUU1F4T0xhTWRuQk0yQkhYbHYzdjJPOWU3Y3dUbnFHbURyU3hfZTBSY3Z0WmVsV012ZVBwVW5xV1NPd2RxOHJ5R2p3ZTZuazUtcXo2UHlmdF9XSmFiMV9hNDhyN0xqQmp5UHdMUmpEMWY4VldBT3RCc1RfeWxwaUx3TnFjbEQ5WnJrbFJXSzJHOEhGRjhIZU8wdHJB?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Nigeria Employers' Association (NECA), Standards Organisation of Nigeria (SON), and the Federal Ministry of Health have expressed opposition to a proposed NAFDAC bill, citing concerns over regulatory overlaps.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Nigeria Employers' Association|Standards Organisation of Nigeria|Federal Ministry of Health|National Agency for Food and Drug Administration and Control",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9424,
-    "Time": "Tue, 20 Oct 2026 14:20:41 GMT",
-    "Title": "INEC, others seek safeguards against AI threats to 2027 elections - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOclVGV2h1YUZ6R01oNzJSU2RlUDB1RUJWcWZzN3JraW8tZGFuMHNLZmtia1lzclpCelhfUXNXblJGMDZmZk1Bb0Z5Z0FJQy0tQlRRSnlHSDFIVC1HVFQ4bF85Q3JsZjg4U1ExdVdiN0xzRjJfTVJRRk8zODQ0blNCdTZEam5NZGhLY1pIM0RmVEFSSW5LUDRlRUpaLXNVY0tVR1k3VVJkRXUycUpZbEZ0aEpKWlVubUpfdk1OOUh3?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Independent National Electoral Commission (INEC) and other stakeholders are seeking safeguards to mitigate the threats posed by Artificial Intelligence (AI) to the 2027 general elections.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Independent National Electoral Commission",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9420,
-    "Time": "2026-10-20 00:29:54",
-    "Title": "NASENI opens Kaduna UAV centre, eyes tech independence",
-    "Source": "punchng",
-    "URL": "https://punchng.com/naseni-opens-kaduna-uav-centre-eyes-tech-independence/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The National Agency for Science and Engineering Infrastructure (NASENI) has opened a Unmanned Aerial Vehicle (UAV) centre in Kaduna to advance technological independence.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Other",
-    "Risk Level": "Low",
-    "Importance": 50,
-    "Entities": "National Agency for Science and Engineering Infrastructure",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9417,
-    "Time": "2026-10-19T11:57:51Z",
-    "Title": "RMB Nigeria Wins Merchant Bank of the Year for Eighth Time, Earns Deal Advisory Excellence Honour",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/rmb-nigeria-wins-merchant-bank-of-the-year-for-eighth-time-earns-deal-advisory-excellence-honour/",
-    "Category": "Company",
-    "Risk Score": 10,
-    "Summary": "RMB Nigeria has been recognized at the 2026 BusinessDay Bank and Other Financial Institutions (BAFI) Awards. The firm won the Merchant Bank of the Year award for the eighth time and received the Deal Advisory Excellence honour.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Earnings",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "RMB Nigeria",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9410,
-    "Time": "Tue, 20 Oct 2026 07:23:23 GMT",
-    "Title": "Uba Sani breaks ground for NASENI Skill Development Centre in Kaduna - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNa1FKSjBPTlZHY0Y5aHZzUkh1VWEySzV3VDNidWZZVDA5TFhaNjZubkd3M3JDYVNWd0pDZ2NtNjZ1czdnNi1EdjR0MGI2MkNSdnJDYkhwVVo2dnBuMkRFM1ZIQkJTZDBZTkRXc0hnQl91NWlEcEZscGthb2ZPUERsb2U5LVlaaE01VnhGUnFwY2RSWTVBSDVia1hHdEhPTHd5SlN0WFhwaThob2NsdG56dmNxMWVaUVpZXzdsNA?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "Governor Uba Sani has performed the groundbreaking ceremony for the NASENI Skill Development Centre located in Kaduna State.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Procurement",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "National Agency for Science and Engineering Infrastructure",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9407,
-    "Time": "Tue, 20 Oct 2026 04:27:17 GMT",
-    "Title": "Tinubu extends tenures of heads of Correctional and Immigration Services - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcF9ma2dScUdmb3RoYWR3cERheHZ2M3RGWFRRTmt4bzdmemN1NFdKNGtPV1lRWWdMVXpwbVlvSXN0cGFIZERpd0hyb3NoV0Z1d28wRDZHbmczS3VQaDNXQm8wc0hrTVJ0RXhPQkhRZDFONUpBOGc1bUR1dnNxUXNCVmVXYXgxRkRaUG1DNU5TYW9EekF5c1BSY1MxcGlqd2Q5b1VaY1h5alB3VTdIQk5pTzNLektjWk85ZzhZczNSaFJ2WHJPRnVMRQ?oc=5",
-    "Category": "Government",
-    "Risk Score": 10,
-    "Summary": "President Tinubu has extended the tenures of the heads of the Nigerian Correctional Service and the Nigeria Immigration Service.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Appointment",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Nigerian Correctional Service|Nigeria Immigration Service",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9406,
-    "Time": "Tue, 20 Oct 2026 11:23:44 GMT",
-    "Title": "JP Morgan to secure Nigerian banking licence after N50 billion deposit with CBN \u2013 Report - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQenM4UHNzMEdjUXYwUFRZdDFNWDlWSm5lR1N5ZktqYWJmODdRZnloUC1LaHI1WE1vX29UeGdWZTBwckQ2eE5VVE1FaTQ2OHU2TmlZeEgyMERoV29wN1JhTFFTajRBWTJLaUMzRHhYNXhLRVB1Qk1fWjlLNUwzRVVBeHRjLW5mMDllcXhJbkNiRG1GajQ3NUlNWGpIXzhha0E5cXQzX3BrR0d2S0NMNGxZQzhyb1o0ZHBrT3hzTmJJenN1YjhmV1FfX0U2TkZwZTBQWmlleEJGdU9rbHBIdGNma3A5aWx5Uk0?oc=5",
-    "Category": "Company",
-    "Risk Score": 30,
-    "Summary": "JP Morgan is reportedly seeking to secure a Nigerian banking licence following a N50 billion deposit with the Central Bank of Nigeria (CBN).",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Other",
-    "Risk Level": "Low",
-    "Importance": 70,
-    "Entities": "JP Morgan|Central Bank of Nigeria",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9404,
-    "Time": "Tue, 20 Oct 2026 04:00:00 GMT",
-    "Title": "Reps to probe NNPCL downstream operations, review PIA - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVmE3TW1jem5lbE9aWjNXTHNCd3pvUE5ha1k2TWNoekRGendvT0I0ek1WSkRBN1hVYnQ1TGUyRGw4R05GckVCY0F2UmJicTdDRTFRVkNfdVZFSTJRbEp1V0sydEFhbjhDZzRIM1hoVU8yTmxiX3h2aEFPUHNSVXJaanctR1I?oc=5",
-    "Category": "Government",
-    "Risk Score": 45,
-    "Summary": "The House of Representatives is set to probe the downstream operations of the Nigerian National Petroleum Company Limited (NNPCL) and review the Petroleum Industry Act (PIA).",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Audit",
-    "Risk Level": "Medium",
-    "Importance": 60,
-    "Entities": "Nigerian National Petroleum Company Limited",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9398,
-    "Time": "Tue, 20 Oct 2026 04:00:00 GMT",
-    "Title": "NIMASA dismisses banks\u2019 cargo guarantee requirement demand for $700m CVFF - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZkNFLTFpUE9ZX1UxTk1JNXVQenh2ZFNzUzNZS3hqTTFmbkVZaHBkLU02ZmNLck02VEZnYmY0VmlVM1ZDZ1FFeWxxdmhFLVVpY3ZmSVNfVF9xaXFKS3hUSlJzMS1hSkJDRklvNG5uVEE5SDRZUnJ2cFg1cU5KWmxabkRyNi1jWG40cExLbDVwdjBVODE3N0c2UjN3MUR3aDBnZC1aLWdNaWNBWWpqZlhJ?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "NIMASA has rejected demands from banks regarding cargo guarantee requirements associated with the $700 million Cabotage Vessel Financing Fund (CVFF).",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 50,
-    "Entities": "Nigerian Maritime Administration and Safety Agency",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9397,
-    "Time": "Tue, 20 Oct 2026 11:26:15 GMT",
-    "Title": "Keyamo approves design for Lagos Airport monorail project - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaXFTT2dwb0xiQ1BFTE9RbTllY0VsZWtPaGVrTnYzbmpZQU9OUV9oVV8xLWxaTEo5bUt3bDJrZmVmTzdBZHBpY1BHSzJWQ1JreEVqMWtLQWNvXzBra2lxQ3hjelA3Z0Zldjd2bFByVzQyeXZ5VzVyMS1UbEFNcnl0OTV3MGI?oc=5",
-    "Category": "Government",
-    "Risk Score": 30,
-    "Summary": "The Minister of Aviation, Festus Keyamo, has approved the design for a monorail project at the Lagos Airport.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Procurement",
-    "Risk Level": "Low",
-    "Importance": 60,
-    "Entities": "Lagos Airport|Festus Keyamo",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9396,
-    "Time": "Tue, 20 Oct 2026 06:08:25 GMT",
-    "Title": "FG targets N750trn stock market with NNPC, NLNG listing - Vanguard News",
-    "Source": "Vanguard News",
-    "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOUtzd2RDTmhOTm5WRkZNU1NPU0pNNDlzdGRTVlNPaDg4d3I1WnJaeEZ1dU5SUm0telVDY1hDcFo4T1VGYWF4aU80REpCUC1vR0NONFd0T0RyNTZBcTkzWjJwaENOUE51X0JFUmV1amJCSVNwZ2I4VUdib1FnOW8wVlJGREliU1k5WFptTFd5UklOaUpIaWfSAZsBQVVfeXFMTmVoOVhRc09valpLT2FBNW5EWFdLLTVKMndMTk9zTE15RUV4ZlJDQUU4RlFWMldMOTBZWG9oME92Y0pTdGVKamhLUTJkeDZoUmhBMWE1SFd4RDFwSzJPSmZzZ1BYaWJQLVBJZDNidzZfQW5nQ2JRNE1tNm9zdlVXcGptY3U3LU1pMGZSdUprMURXZG5HVXFWcFppN2M?oc=5",
-    "Category": "Government",
-    "Risk Score": 40,
-    "Summary": "The Federal Government of Nigeria is targeting a stock market valuation of N750 trillion through the planned listing of the Nigerian National Petroleum Company (NNPC) and Nigeria LNG (NLNG). This move represents a significant corporate restructuring of the nation's primary energy assets.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Restructuring",
-    "Risk Level": "Medium",
-    "Importance": 85,
-    "Entities": "Nigerian National Petroleum Company|Nigeria LNG",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9395,
-    "Time": "Tue, 20 Oct 2026 07:12:11 GMT",
-    "Title": "US court jails Nigerian eight years, orders $10.8m forfeiture - Punch Newspapers",
-    "Source": "Punch Newspapers",
-    "URL": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQd3BiZnlVZXg4aVJicF9pQUZQbXJybUFLUlY0bTZvbWYxcmdWTTR5LUgxNktwUGhHQUFGZnRfVWlrdkpiR1VFVWpwSE9pTm9nb3p0RVhqOU9WUVNqM3RzS2JOMjlNbjJFTmFXMW1uM3RzX1BvQkVHbXpRUmNLMUlqaS1CNlVXQUU?oc=5",
-    "Category": "Legal",
-    "Risk Score": 70,
-    "Summary": "A US court has sentenced a Nigerian national to eight years in prison and ordered the forfeiture of $10.8 million. The case involves significant financial crime and asset seizure.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Corruption",
-    "Risk Level": "High",
-    "Importance": 60,
-    "Entities": "",
-    "Filter Reason": ""
-  },
-  {
-    "ID": 9392,
-    "Time": "Tue, 20 Oct 2026 07:47:55 GMT",
-    "Title": "FRSC orders probe into Otedola bridge tanker inferno - Premium Times Nigeria",
-    "Source": "Premium Times Nigeria",
-    "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWDJsV2p6eXJKN3NZcWJoNnJsRnZ1X1FzQjh0c0d5aGUtSUJOOFhaaS1IZmN4azliSXp6SnFpME9YT0VTb0RMcEpNa3A5NF9LR1Y5SHhsWEdFbW5OdGxyTVVFQ0tQT2tkaFo0clpnRlBka01Db2VFVEdiQzlDVk13OUZNMlQ1dnBaSE9jalJiREVibXNEd2VncHh0cDBOVjRZNWd5SnFjWUtENkllWmV1MjJJNDhScW8?oc=5",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Federal Road Safety Corps (FRSC) has ordered an investigation into a tanker inferno that occurred on the Otedola bridge.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Audit",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Federal Road Safety Corps",
-    "Filter Reason": ""
+    "Filter Reason": "",
+    "Image": ""
   }
 ]

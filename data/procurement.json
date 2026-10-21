@@ -120,6 +120,16 @@
     "Amount Currency": null
   },
   {
+    "Agency": "The Guardian Nigeria News",
+    "Contractor": "Tracked Contractor",
+    "Amount": "TBD (Local Pipeline)",
+    "Project": "Atiku challenges Tinubu to disclose details of \u20a615.13bn SUV procurement - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "Date": "",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
     "Agency": "Nigerian Content Development and Monitoring Board",
     "Contractor": "Bank of Industry",
     "Amount": "$100 Million",
@@ -1938,5 +1948,35 @@
     "Date": "2026-10-20",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Kebbi State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Construction and rehabilitation of 58km of access roads in Birnin Kebbi, Kalgo, and Bunza LGAs",
+    "Source": "The Punch",
+    "Date": "2026-10-21",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Abia State Government",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Reconstruction of two key roads in Aba",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-21",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "N20 Billion",
+    "Project": "Tackle climate change in North West",
+    "Source": "businessday",
+    "Date": "2026-10-21",
+    "Amount Value": 20000000000.0,
+    "Amount Currency": "NGN"
   }
 ]
