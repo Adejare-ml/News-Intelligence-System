@@ -2374,6 +2374,9 @@ main[data-route-page] > :not([data-route-outlet]) {
 .move-list li.move-resignation { border-left-color: rgba(255, 105, 97, 0.5); }
 .move .insight-count { display: block; margin-left: 0; margin-top: 0.05rem; }
 .move-role { color: var(--text-muted, #98989d); }
+/* "Unnamed Commissioner": a recorded move with no person to open. Italic
+   rather than link-coloured, so it does not read as a dead link. */
+.move-anon { font-style: italic; color: var(--text-soft, #cbd5e1); }
 .move-resignation a { color: #ff6961; }
 .move-resignation .insight-count { color: #ff6961; }
 :root[data-theme="light"] .move-list li.move-appointment { border-left-color: rgba(14, 116, 144, 0.45); }
@@ -2722,4 +2725,81 @@ main[data-route-page] > :not([data-route-outlet]) {
     height: 28px;
     margin-top: var(--space-3);
     color: var(--secondary);
+}
+
+/* ===== Back to top ===== */
+/* The dashboard is a ~16,000px scroll; this is the way back to the nav.
+   Created hidden by back-to-top.js and revealed past 1.5 viewports, so it
+   never sits in the tab order while it is invisible. */
+.back-to-top {
+    position: fixed;
+    right: var(--space-5, 24px);
+    bottom: var(--space-5, 24px);
+    z-index: 160;                 /* over panels, under the modal overlay */
+    display: grid;
+    place-items: center;
+    width: 44px;                  /* 44px: the minimum comfortable touch target */
+    height: 44px;
+    /* --chrome-bg on the dark theme is all but the page colour, which left
+       this invisible against the backdrop. A panel surface, a readable
+       border and a drop shadow give it an edge on both themes. */
+    border: 1px solid var(--hairline-strong, rgba(255, 255, 255, 0.14));
+    border-radius: 999px;
+    background: var(--surface-1, rgba(19, 22, 34, 0.72));
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    color: var(--text-primary, #f3f4f6);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity var(--dur, 260ms) var(--ease-out, ease),
+                transform var(--dur, 260ms) var(--ease-out, ease),
+                border-color var(--dur-fast, 160ms) ease;
+}
+.back-to-top[hidden] { display: none; }
+.back-to-top.is-visible { opacity: 1; transform: translateY(0); }
+.back-to-top:hover {
+    border-color: var(--primary, #8b5cf6);
+    color: var(--primary, #8b5cf6);
+}
+:root[data-theme="light"] .back-to-top {
+    box-shadow: 0 6px 20px rgba(20, 24, 46, 0.16);
+}
+.back-to-top:focus-visible {
+    outline: 2px solid var(--secondary, #06b6d4);
+    outline-offset: 2px;
+}
+.back-to-top i, .back-to-top svg { width: 18px; height: 18px; }
+
+/* ===== Loading skeletons ===== */
+/* A spinner says "something is happening"; a skeleton says "a list is
+   coming, and roughly this shape", which is why the list placeholders use
+   these instead. Purely decorative, so aria-hidden at the call site. */
+.skeleton-list { width: 100%; padding: var(--space-4, 16px) 0; }
+.skeleton-line {
+    height: 12px;
+    margin: 0 0 var(--space-3, 12px);
+    border-radius: var(--radius-sm, 8px);
+    background: linear-gradient(
+        90deg,
+        var(--surface-2, rgba(26, 30, 45, 0.62)) 25%,
+        var(--hairline-strong, rgba(255, 255, 255, 0.14)) 37%,
+        var(--surface-2, rgba(26, 30, 45, 0.62)) 63%
+    );
+    background-size: 400% 100%;
+    animation: skeleton-sweep 1.4s ease-in-out infinite;
+}
+.skeleton-line.is-title { height: 16px; width: 42%; }
+.skeleton-line.is-short { width: 68%; }
+.skeleton-line.is-meta  { height: 10px; width: 28%; margin-bottom: var(--space-5, 24px); }
+@keyframes skeleton-sweep {
+    0%   { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    /* Keep the shape, drop the sweep; keep the control, drop the slide. */
+    .skeleton-line { animation: none; }
+    .back-to-top { transition: opacity 120ms linear; transform: none; }
+    .back-to-top.is-visible { transform: none; }
 }

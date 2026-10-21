@@ -103,6 +103,105 @@
 
     var MOVE_EVENTS = { appointment: 1, reappointment: 1, resignation: 1 };
 
+    /* What the extractor writes into Name when the article named nobody.
+       Mirrors PLACEHOLDER_PERSON_NAMES in backend/app/services/relevance.py,
+       which now drops these at export; this half keeps the board correct
+       against people.json files written before that shipped, the same way
+       psc-core.js re-derives the bands the pipeline already computed. */
+    var PLACEHOLDER_NAMES = {
+        "unknown": 1, "unknowns": 1, "unidentified": 1, "none": 1,
+        "no name": 1, "nobody": 1, "n/a": 1, "na": 1, "nil": 1, "null": 1,
+        "nan": 1, "tbd": 1, "tba": 1, "anonymous": 1, "unnamed": 1,
+        "not specified": 1, "unspecified": 1, "not stated": 1,
+        "not disclosed": 1, "undisclosed": 1, "not available": 1,
+        "not known": 1, "not named": 1, "not mentioned": 1,
+        "not applicable": 1, "not provided": 1, "not reported": 1
+    };
+
+    function normalizeName(name) {
+        return String(name == null ? "" : name)
+            .replace(/ /g, " ").split(/\s+/).join(" ").trim().toLowerCase()
+            .replace(/^[^\w]+|[^\w]+$/g, "");
+    }
+
+    /** True for a Name that is the absence of a name ("Unknown", "N/A", "-"). */
+    function isPlaceholderName(name) {
+        var cleaned = normalizeName(name);
+        return !cleaned || PLACEHOLDER_NAMES[cleaned] === 1;
+    }
+
+    /* The other way a Name holds something that is not a person: the post
+       instead of its holder, the post abbreviated with the organisation's
+       initials, or an organisation outright. Mirrors is_role_or_org_name in
+       backend/app/services/relevance.py.
+
+       Precision over recall, deliberately: 43% of this board is a real
+       person named by surname alone ("Cardoso", "Orya"), so every rule here
+       keys on what the name is made of, never on how short it is. */
+    var ROLE_WORDS = ("managing director directors general chief executive officer "
+        + "officers commanding deputy acting interim assistant administrator "
+        + "chairman chairperson chair president vice secretary treasurer registrar "
+        + "provost rector commissioner comptroller controller commandant coordinator "
+        + "manager head boss spokesperson aide representative delegate envoy consul "
+        + "ambassador minister governor senator speaker dean principal supervisor "
+        + "inspector auditor counsel advisor adviser").split(" ");
+    var ORG_WORDS = ("forum association agency commission authority council ministry "
+        + "bureau institute federation union party corps command academy bank plc ltd "
+        + "limited company corporation group committee board department society "
+        + "congress assembly parliament senate tribunal secretariat organisation "
+        + "organization foundation trust university college school hospital church "
+        + "mosque").split(" ");
+    var NAME_FILLER = "and of the for to a an at in on".split(" ");
+    var TITLE_ACRONYMS = "md dg ceo cfo coo cto gmd ed".split(" ");
+
+    function inList(list, token) {
+        for (var i = 0; i < list.length; i++) { if (list[i] === token) return true; }
+        return false;
+    }
+
+    function nameTokens(name, splitHyphens) {
+        var cleaned = String(name == null ? "" : name)
+            .replace(/ /g, " ").split(/\s+/).join(" ").toLowerCase()
+            .replace(/[/,]/g, " ");
+        // Hyphens split only for the all-role rule; the org rule fires on a
+        // single token and "Bank-Olemoh" would hand it one.
+        if (splitHyphens) cleaned = cleaned.replace(/[-‐-―]/g, " ");
+        var out = [];
+        cleaned.split(/\s+/).forEach(function (t) {
+            t = t.replace(/^[^\w]+|[^\w]+$/g, "");
+            if (t) out.push(t);
+        });
+        return out;
+    }
+
+    /** True when a Name holds a job title or an organisation, not a person. */
+    function isRoleOrOrgName(name) {
+        var tokens = nameTokens(name, false);
+        if (!tokens.length) return false;
+
+        var roleTokens = nameTokens(name, true).filter(function (t) {
+            return !inList(NAME_FILLER, t);
+        });
+        var allRole = roleTokens.length > 0 && roleTokens.every(function (t) {
+            return inList(ROLE_WORDS, t);
+        });
+        if (allRole) return true;
+
+        // "MD NAN" / "DG NTA": a post abbreviation then an all-caps acronym.
+        var raw = String(name == null ? "" : name).split(/\s+/).filter(Boolean);
+        if (tokens.length === 2 && raw.length === 2 && inList(TITLE_ACRONYMS, tokens[0])
+            && /^[A-Z]{2,6}$/.test(raw[1].replace(/^[^\w]+|[^\w]+$/g, ""))) {
+            return true;
+        }
+
+        return tokens.some(function (t) { return inList(ORG_WORDS, t); });
+    }
+
+    /** True for "Unnamed Commissioner": a real move, but nobody to link to. */
+    function isUnnamedPerson(name) {
+        return /^unnamed\b/.test(normalizeName(name));
+    }
+
     /**
      * people.json -> executive churn grouped by month, newest first.
      * Rows whose Event is anything else ("other": 399 of 468) are not
@@ -117,7 +216,7 @@
             var event = String(row.Event || "").trim().toLowerCase();
             if (!MOVE_EVENTS[event]) continue;
             var name = String(row.Name || "").trim();
-            if (!name) continue;
+            if (!name || isPlaceholderName(name) || isRoleOrOrgName(name)) continue;
             var date = String(row.Date || "").trim().slice(0, 10);
             var month = date.slice(0, 7);
             if (!/^\d{4}-\d{2}$/.test(month)) month = "undated";
@@ -149,9 +248,19 @@
         return model.months.map(function (m) {
             var items = m.items.map(function (p) {
                 var what = p.event === "resignation" ? "left" : "→";
-                var role = [p.position, p.organization].filter(Boolean).join(" @ ");
+                // The same markers turn up in Position and Organization
+                // ("President @ Not Specified", "Officer @ N/A"). The move
+                // is still real, so drop the empty half, not the row.
+                var role = [p.position, p.organization]
+                    .filter(function (part) { return part && !isPlaceholderName(part); })
+                    .join(" @ ");
+                // "Unnamed Ex-minister" has no dossier to open and slugifies
+                // into one shared bucket, so it renders as plain text.
+                var who = isUnnamedPerson(p.name)
+                    ? '<span class="move-anon">' + esc(p.name) + "</span>"
+                    : entityLink("person", p.name);
                 return '<li class="move move-' + esc(p.event) + '">'
-                    + entityLink("person", p.name)
+                    + who
                     + (role ? ' <span class="move-role">' + esc(what) + " " + esc(role) + "</span>" : "")
                     + '<span class="insight-count">' + esc(p.event) + (p.date ? " · " + esc(p.date) : "") + "</span>"
                     + "</li>";
@@ -316,6 +425,9 @@
         topEvents: topEvents,
         renderAgencyBoardHTML: renderAgencyBoardHTML,
         appointmentsTimeline: appointmentsTimeline,
+        isPlaceholderName: isPlaceholderName,
+        isUnnamedPerson: isUnnamedPerson,
+        isRoleOrOrgName: isRoleOrOrgName,
         renderAppointmentsHTML: renderAppointmentsHTML,
         ledgerRows: ledgerRows,
         ledgerColumns: ledgerColumns,

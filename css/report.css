@@ -901,7 +901,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
 @page { margin: 18mm; }
 
 @media print {
-    .backdrop-canvas, .glow-bg, .scroll-rail, .hero-globe,
+    .backdrop-canvas, .glow-bg, .scroll-rail, .hero-globe, .back-to-top,
     .dashboard-header, .section-nav, .section-actions,
     .register-controls, .workspace-grid, .skip-link,
     .modal-overlay, .hero-actions { display: none !important; }
