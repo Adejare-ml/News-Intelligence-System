@@ -1,0 +1,755 @@
+{
+  "sectors": [
+    {
+      "industry": "General",
+      "companies": 950,
+      "mentions": 1606,
+      "risk": {
+        "Low": 838,
+        "Critical": 57,
+        "Medium": 32,
+        "High": 23
+      }
+    },
+    {
+      "industry": "Oil & Gas",
+      "companies": 37,
+      "mentions": 206,
+      "risk": {
+        "Medium": 12,
+        "Low": 21,
+        "Critical": 1,
+        "High": 3
+      }
+    },
+    {
+      "industry": "Banking",
+      "companies": 21,
+      "mentions": 43,
+      "risk": {
+        "Low": 16,
+        "Medium": 5
+      }
+    },
+    {
+      "industry": "Telecoms",
+      "companies": 5,
+      "mentions": 32,
+      "risk": {
+        "Medium": 1,
+        "Low": 4
+      }
+    },
+    {
+      "industry": "Aviation",
+      "companies": 9,
+      "mentions": 26,
+      "risk": {
+        "Medium": 4,
+        "Low": 4,
+        "High": 1
+      }
+    },
+    {
+      "industry": "Conglomerate",
+      "companies": 2,
+      "mentions": 13,
+      "risk": {
+        "Medium": 2
+      }
+    },
+    {
+      "industry": "Energy",
+      "companies": 7,
+      "mentions": 13,
+      "risk": {
+        "Medium": 4,
+        "High": 2,
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 1,
+      "mentions": 11,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 5,
+      "mentions": 11,
+      "risk": {
+        "Low": 2,
+        "Medium": 3
+      }
+    },
+    {
+      "industry": "Financial Services",
+      "companies": 5,
+      "mentions": 10,
+      "risk": {
+        "Medium": 2,
+        "Low": 2,
+        "High": 1
+      }
+    },
+    {
+      "industry": "Fintech",
+      "companies": 6,
+      "mentions": 10,
+      "risk": {
+        "Medium": 3,
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 2,
+      "mentions": 10,
+      "risk": {
+        "High": 1,
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Transportation/Ride-hailing",
+      "companies": 2,
+      "mentions": 10,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Agriculture",
+      "companies": 7,
+      "mentions": 8,
+      "risk": {
+        "Low": 6,
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Insurance",
+      "companies": 7,
+      "mentions": 8,
+      "risk": {
+        "High": 2,
+        "Low": 5
+      }
+    },
+    {
+      "industry": "Legal/Non-Profit",
+      "companies": 1,
+      "mentions": 8,
+      "risk": {
+        "Critical": 1
+      }
+    },
+    {
+      "industry": "Construction",
+      "companies": 6,
+      "mentions": 7,
+      "risk": {
+        "Medium": 4,
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Healthcare",
+      "companies": 6,
+      "mentions": 7,
+      "risk": {
+        "Low": 6
+      }
+    },
+    {
+      "industry": "Manufacturing",
+      "companies": 3,
+      "mentions": 6,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Non-Profit",
+      "companies": 2,
+      "mentions": 6,
+      "risk": {
+        "Medium": 2
+      }
+    },
+    {
+      "industry": "Technology",
+      "companies": 3,
+      "mentions": 6,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Beverages",
+      "companies": 5,
+      "mentions": 5,
+      "risk": {
+        "Low": 5
+      }
+    },
+    {
+      "industry": "Business Association",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Logistics & Port Operations",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Pharmaceuticals",
+      "companies": 3,
+      "mentions": 5,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Cement",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Crypto Exchange",
+      "companies": 1,
+      "mentions": 4,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Finance",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Labor Union",
+      "companies": 4,
+      "mentions": 4,
+      "risk": {
+        "Low": 4
+      }
+    },
+    {
+      "industry": "Philanthropy",
+      "companies": 3,
+      "mentions": 4,
+      "risk": {
+        "Low": 2,
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Power/Energy",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Credit Rating Agency",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
+      "industry": "Education",
+      "companies": 3,
+      "mentions": 3,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Legal",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Professional Services/Accounting",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Employer Association",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "FinTech",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Hospitality",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Investment/Development Finance",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Labour Union",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Legal/Arbitration",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Professional Services",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "Real Estate",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1,
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Shipping",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology/Venture Capital",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Telecoms/Fintech",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Tobacco",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Transport/Mobility",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Venture Capital",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
+      "industry": "AI / Interactive Content",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Aerospace & Defense",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Aviation Services",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Banking/Development Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Civil Society",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Civil Society/Legal Advocacy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Consultancy/Governance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Credit Rating",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Development Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Fintech/Banking",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Fintech/Social Impact",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare & Technology",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Healthcare/Religious",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Industrial Infrastructure",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Infrastructure/Aviation",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Legal/Maritime",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Logistics",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Logistics & Infrastructure",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Logistics/Aviation",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Logistics/Energy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Manufacturing/Mining",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
+      "industry": "Maritime",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Media/Journalism",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Mining/Metals",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
+      "industry": "Non-Profit/Advocacy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Non-Profit/Development",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Non-profit/NGO",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Oil & Gas/Industrial",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Personal Care",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Policy Research/Consultancy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Private Equity",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Professional Association",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Professional Training and Certification",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Publishing",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Retail",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Security/Surveillance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Sports",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology/Data Security",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Technology/Digital Services",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Technology/Training",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Venture Capital / Education",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    }
+  ],
+  "generated": "2026-10-21 12:50:21"
+}

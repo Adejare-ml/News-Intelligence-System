@@ -1,0 +1,1170 @@
+{
+  "agencies": [
+    {
+      "name": "Federal Government of Nigeria",
+      "contracts": 53,
+      "undisclosed": 35,
+      "totals": {
+        "NGN": 17215096000000.0,
+        "GBP": 1492000000.0,
+        "USD": 31230000000.0
+      }
+    },
+    {
+      "name": "Bureau of Public Procurement",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1500000000000.0
+      }
+    },
+    {
+      "name": "Federal Executive Council",
+      "contracts": 3,
+      "undisclosed": 2,
+      "totals": {
+        "NGN": 610000000000.0
+      }
+    },
+    {
+      "name": "Nigerian National Petroleum Company",
+      "contracts": 5,
+      "undisclosed": 3,
+      "totals": {
+        "USD": 20000000000.0,
+        "NGN": 473800000000.0
+      }
+    },
+    {
+      "name": "Nigerian National Petroleum Company Limited",
+      "contracts": 4,
+      "undisclosed": 3,
+      "totals": {
+        "NGN": 473800000000.0
+      }
+    },
+    {
+      "name": "Akwa Ibom State Government",
+      "contracts": 5,
+      "undisclosed": 2,
+      "totals": {
+        "NGN": 376630000000.0
+      }
+    },
+    {
+      "name": "Yobe State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 100500000000.0
+      }
+    },
+    {
+      "name": "Rural Electrification Agency",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 50000000000.0
+      }
+    },
+    {
+      "name": "Federal Ministry of Works",
+      "contracts": 7,
+      "undisclosed": 6,
+      "totals": {
+        "NGN": 41050000000.0
+      }
+    },
+    {
+      "name": "Federal Government",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "NGN": 25000000000.0
+      }
+    },
+    {
+      "name": "Ogun State Government",
+      "contracts": 7,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 35000000000.0,
+        "NGN": 24000000000.0
+      }
+    },
+    {
+      "name": "Jigawa State Government",
+      "contracts": 4,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 21386260000.0
+      }
+    },
+    {
+      "name": "Gombe State Government",
+      "contracts": 3,
+      "undisclosed": 2,
+      "totals": {
+        "NGN": 17400000000.0
+      }
+    },
+    {
+      "name": "Oyo State Government",
+      "contracts": 3,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 12183000000.0
+      }
+    },
+    {
+      "name": "National Agency for Science and Engineering Infrastructure",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "NGN": 10600000000.0
+      }
+    },
+    {
+      "name": "Tertiary Education Trust Fund",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "NGN": 10000000000.0
+      }
+    },
+    {
+      "name": "Nigerian Airspace Management Agency",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 7580000000.0
+      }
+    },
+    {
+      "name": "Ekiti State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 3000000000.0
+      }
+    },
+    {
+      "name": "National Information Technology Development Agency",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 3000000000.0
+      }
+    },
+    {
+      "name": "Adamawa State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 2200000000.0
+      }
+    },
+    {
+      "name": "Nigerian Education Loan Fund",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1750000000.0
+      }
+    },
+    {
+      "name": "Sokoto State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1590000000.0
+      }
+    },
+    {
+      "name": "PFIPC",
+      "contracts": 3,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1200000000.0
+      }
+    },
+    {
+      "name": "FCT Judicial Committee",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 866500000.0
+      }
+    },
+    {
+      "name": "Kaduna State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 810000000.0
+      }
+    },
+    {
+      "name": "Ministry of Aviation",
+      "contracts": 3,
+      "undisclosed": 2,
+      "totals": {
+        "NGN": 686000000.0
+      }
+    },
+    {
+      "name": "Presidential Foreign Intervention Promotion Council",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 400000000.0
+      }
+    },
+    {
+      "name": "Presidential Foreign Investment Promotion Council (PFIPC)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 400000000.0
+      }
+    },
+    {
+      "name": "Ministry of Communications",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 345500000.0
+      }
+    },
+    {
+      "name": "ActionAid Nigeria",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 20000000.0
+      }
+    },
+    {
+      "name": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 830000.0
+      }
+    },
+    {
+      "name": "Federal Airports Authority of Nigeria",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
+      "name": "Federal Capital Territory Administration",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
+      "name": "Niger Delta Development Commission",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
+      "name": "Zamfara State Government",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
+      "name": "Abia State Government",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Celtic",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Federal Ministry of Power",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 6000000000.0
+      }
+    },
+    {
+      "name": "Government of Nigeria",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 4500000000.0
+      }
+    },
+    {
+      "name": "Independent National Electoral Commission",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "NIGCOMSAT",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "National Office for Technology Acquisition and Promotion (NOTAP)",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Army",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Maritime Administration and Safety Agency",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Ondo State Government",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "USD": 362000000.0
+      }
+    },
+    {
+      "name": "The Guardian Nigeria News",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "AfCFTA Secretariat",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Agricultural Research Council of Nigeria",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Agro-Climatic Resilience in Semi-Arid Landscapes (ACReSAL)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 500000000.0
+      }
+    },
+    {
+      "name": "Anambra State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "BPP",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Bank of Industry",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Bursaspor",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Cross River State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Delta State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "ECOWAS",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 65000.0
+      }
+    },
+    {
+      "name": "EFCC",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Ebonyi State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Enugu State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 200000000.0
+      }
+    },
+    {
+      "name": "GIZ Nigeria & ECOWAS",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "HRN",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "House of Representatives Committee on Host Communities",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Independent Monitoring and Procurement Inspectorate",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 500000.0
+      }
+    },
+    {
+      "name": "Institute for Peace and Conflict Resolution",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Korea International Cooperation Agency",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 82740000.0
+      }
+    },
+    {
+      "name": "Kwara State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Lagos State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Lagos State Security Trust Fund",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Ministry of Defence",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 1000000000.0
+      }
+    },
+    {
+      "name": "Ministry of Works",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "NIGCOMSAT Ltd",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "NIQS",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Economic Council",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 4500000000.0
+      }
+    },
+    {
+      "name": "National Hajj Commission of Nigeria",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Identity Management Commission",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Information Technology Development Agency (NITDA)",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Iron Ore Mining Company",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Library of Nigeria",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Office For Technology Acquisition And Promotion (NOTAP)",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "National Sugar Development Council",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 1000000000.0
+      }
+    },
+    {
+      "name": "Nigeria Police Trust Fund",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigeria Revenue Service",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Air Force",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Civil Aviation Authority",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Communications Satellite Limited (NIGCOMSAT)",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Content Development and Monitoring Board",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 100000000.0
+      }
+    },
+    {
+      "name": "Nigerian Institute For Oil Palm Research (NIFOR)- Invitation To Tender",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian National Petroleum Company (NNPC) / House of Representatives Committee Recommendation",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian Ports Authority",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nottingham Forest",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Ogun-Osun River Basin Development Authority",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "EUR": 256000000.0
+      }
+    },
+    {
+      "name": "Osun State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 13900000.0
+      }
+    },
+    {
+      "name": "Rivers State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "World Public Relations Forum",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Zamfara Health Services Management Board",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "the Federal High Court",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    }
+  ],
+  "contractors": [
+    {
+      "name": "None",
+      "contracts": 122,
+      "undisclosed": 75,
+      "totals": {
+        "NGN": 20759214090000.0,
+        "USD": 47797140000.0
+      }
+    },
+    {
+      "name": "Yobe State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 100000000000.0
+      }
+    },
+    {
+      "name": "Alpha Morgan Bank",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 50000000000.0
+      }
+    },
+    {
+      "name": "Primary Health Care centers",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 40700000000.0
+      }
+    },
+    {
+      "name": "Nigeria Airways (Pensioners)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 18000000000.0
+      }
+    },
+    {
+      "name": "CGC Nigeria Limited",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 10600000000.0
+      }
+    },
+    {
+      "name": "Nigerian Startups",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 3000000000.0
+      }
+    },
+    {
+      "name": "Bayero University Kano",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1750000000.0
+      }
+    },
+    {
+      "name": "Vocational training graduates",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 810000000.0
+      }
+    },
+    {
+      "name": "Unknown",
+      "contracts": 2,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 800000000.0
+      }
+    },
+    {
+      "name": "Divine Dopacy Nigeria Limited",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 400000000.0
+      }
+    },
+    {
+      "name": "Women's Rights Groups",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 20000000.0
+      }
+    },
+    {
+      "name": "Tracked Contractor",
+      "contracts": 6,
+      "undisclosed": 6,
+      "totals": {}
+    },
+    {
+      "name": "DP World",
+      "contracts": 4,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 28000000000.0
+      }
+    },
+    {
+      "name": "Not Specified",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Not specified",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "Pipeline Infrastructure Nigeria Limited",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
+      "name": "63 biometric agents",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "ABC Transport",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "AG Vision",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "AGENTPR\u2122",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "BPP",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Bank of Industry",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 100000000.0
+      }
+    },
+    {
+      "name": "Bergmans",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Bristol City Development",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Buratai\u2019s company",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Bursaspor",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Celtic",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "China Civil Engineering Construction Corporation",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Chinese Government/Partners",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Chinese companies",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Chinese entities (unspecified)",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "EFCC",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "EOI",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "FHFL",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Fireflies AI, Goose FL",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Gateway Air",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Google and Microsoft",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Government of the United States",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Hitech Construction",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Hitech Construction Company",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Hughes",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Julius Berger",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "NIGCOMSAT",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "NNPC Biofuels",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "EUR": 256000000.0
+      }
+    },
+    {
+      "name": "NNPCL",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 7000000000.0
+      }
+    },
+    {
+      "name": "Nigeria Air",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Nigerian National Petroleum Company Limited",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 4500000000.0
+      }
+    },
+    {
+      "name": "Nigerian startups",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 65000.0
+      }
+    },
+    {
+      "name": "PINL",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Plateau State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 500000000.0
+      }
+    },
+    {
+      "name": "Premium Steel",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Pronalytics",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "SINOMACH",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 1000000000.0
+      }
+    },
+    {
+      "name": "SON",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Sapphital",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Sliding Towers",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "State-owned energy firm",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 4500000000.0
+      }
+    },
+    {
+      "name": "Sunrise Power",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 2350000000.0
+      }
+    },
+    {
+      "name": "Sunrise Power and Transmission Company Limited",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 3380000000.0
+      }
+    },
+    {
+      "name": "Super E",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Thales Alenia Space",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "UK Government (Financing)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "GBP": 746000000.0
+      }
+    },
+    {
+      "name": "UK ports (unspecified entity)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "GBP": 746000000.0
+      }
+    },
+    {
+      "name": "UTM Floating Liquefied Natural Gas project",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Undisclosed Concessionaire",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "United States Government/Manufacturer",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "United States Government/Partners",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 5000000000.0
+      }
+    },
+    {
+      "name": "Unnamed Chinese construction company",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Unnamed Concessionaire",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Unnamed boat contractors",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Unnamed tech firm",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Unspecified Firm",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 362000000.0
+      }
+    }
+  ],
+  "generated": "2026-10-21 12:50:21"
+}

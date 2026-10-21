@@ -1,0 +1,14 @@
+{
+  "generated": "2026-10-21 12:50:18",
+  "source": "open-meteo.com",
+  "cities": [
+    {
+      "name": "Lagos",
+      "temp_c": 30.7,
+      "humidity": 66,
+      "wind_kmh": 6.9,
+      "code": 3,
+      "description": "Overcast"
+    }
+  ]
+}
