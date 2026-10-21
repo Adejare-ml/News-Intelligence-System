@@ -105,6 +105,11 @@ describe("brief", () => {
     assert.equal(item.rest, "that may raise prices.");
     assert.deepEqual(item.source, { name: "The Guardian Nigeria News", url: "https://news.example/a" });
   });
+  test("tolerates a doubled closing paren after the source link", () => {
+    const item = parseBrief("### Key Developments\n- **Pledge made** in two waves. ([Punch Newspapers](https://news.example/b)))  ").sections[0].items[0];
+    assert.deepEqual(item.source, { name: "Punch Newspapers", url: "https://news.example/b" });
+    assert.equal(item.rest, "in two waves.");
+  });
   test("recognises quiet items", () => {
     assert.ok(isQuietItem(parseBrief(md).sections[1].items[0]));
   });

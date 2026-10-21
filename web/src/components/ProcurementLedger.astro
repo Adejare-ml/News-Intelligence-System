@@ -1,0 +1,162 @@
+---
+import type { Contract } from "../lib/procurement.ts";
+import { coverage } from "../lib/procurement.ts";
+
+interface Props {
+  contracts: Contract[];
+}
+const { contracts } = Astro.props;
+const withValue = contracts.filter((c) => c.amount !== null).length;
+// A column that is mostly blank is noise, so it only shows when it carries data.
+const showContractor = coverage(contracts, (c) => c.contractor) >= 0.3;
+const showDate = coverage(contracts, (c) => c.date) >= 0.3;
+const first = contracts.slice(0, 25);
+const rest = contracts.slice(25);
+---
+<section class="ledger" id="procurement" aria-labelledby="proc-title">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Money trail</p>
+      <h2 class="h2" id="proc-title" data-split>Public contracts in the news</h2>
+    </div>
+    <p class="meta">{contracts.length} reported awards · {withValue} with a disclosed value</p>
+  </div>
+
+  <div class="table-wrap" data-reveal>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Awarding body</th>
+          {showContractor && <th scope="col">Contractor</th>}
+          <th scope="col">Project</th>
+          <th scope="col" class="num-col">Value</th>
+          {showDate && <th scope="col">Date</th>}
+        </tr>
+      </thead>
+      <tbody>
+        {first.map((c) => (
+          <tr>
+            <td class="agency">{c.agency}</td>
+            {showContractor && <td class:list={{ unknown: !c.contractor }}>{c.contractor || "Not reported"}</td>}
+            <td class="project">{c.project}<span class="src">{c.source}</span></td>
+            <td class:list={["num-col", "num", { unknown: !c.amountLabel }]}>{c.amountLabel || "—"}</td>
+            {showDate && <td class="date">{c.date || "—"}</td>}
+          </tr>
+        ))}
+      </tbody>
+      {rest.length > 0 && (
+        <tbody class="more" hidden data-more>
+          {rest.map((c) => (
+            <tr>
+              <td class="agency">{c.agency}</td>
+              {showContractor && <td class:list={{ unknown: !c.contractor }}>{c.contractor || "Not reported"}</td>}
+              <td class="project">{c.project}<span class="src">{c.source}</span></td>
+              <td class:list={["num-col", "num", { unknown: !c.amountLabel }]}>{c.amountLabel || "—"}</td>
+              {showDate && <td class="date">{c.date || "—"}</td>}
+            </tr>
+          ))}
+        </tbody>
+      )}
+    </table>
+  </div>
+  {rest.length > 0 && (
+    <button class="btn btn-ghost show-more" type="button" data-show-more aria-expanded="false">
+      Show all {contracts.length} awards
+    </button>
+  )}
+  <p class="meta caveat">
+    Values are as reported in the press and are not summed: the same award is often reported more than once.
+  </p>
+</section>
+
+<style>
+  .ledger {
+    padding-top: clamp(56px, 9vw, 112px);
+  }
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 640px;
+  }
+  th {
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line-strong);
+    position: sticky;
+    top: 0;
+    background: var(--surface);
+  }
+  td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    color: var(--text-soft);
+  }
+  tr:last-child td {
+    border-bottom: 0;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    tbody tr:hover td {
+      background: var(--surface-2);
+    }
+  }
+  .agency {
+    font-weight: 600;
+    color: var(--text);
+    min-width: 160px;
+  }
+  .project {
+    max-width: 46ch;
+  }
+  .src {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.74rem;
+    color: var(--faint);
+  }
+  .num-col {
+    text-align: right;
+    white-space: nowrap;
+  }
+  td.num-col {
+    font-size: 1.1rem;
+    color: var(--gold);
+  }
+  .unknown,
+  td.num-col.unknown {
+    color: var(--faint);
+  }
+  .date {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .show-more {
+    margin-top: 16px;
+  }
+  .caveat {
+    margin-top: 12px;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>("[data-show-more]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const more = btn.parentElement?.querySelector<HTMLElement>("[data-more]");
+      if (!more) return;
+      more.hidden = false;
+      btn.remove();
+    });
+  });
+</script>

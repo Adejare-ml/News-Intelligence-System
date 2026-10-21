@@ -1,21 +1,27 @@
-name: Deploy GitHub Pages
+name: Deploy site
 
+# Builds the Astro site in web/ and publishes two ready-built copies:
+#   gh-pages          the GitHub Pages mirror, under /News-Intelligence-System/
+#   cloudflare-pages  the Cloudflare Pages site (auranews.pages.dev), at the root
+# Cloudflare is pointed at the cloudflare-pages branch with no build command
+# (see docs/CLOUDFLARE.md). Pre-building here, rather than on Cloudflare, is
+# what keeps the live site fresh: the scheduler's data commits carry
+# [skip ci], which Cloudflare's own Git builds also honour.
 on:
   push:
     branches:
       - main
     paths:
-      - 'backend/app/static/**'
+      - 'backend/app/static/data/**'
+      - 'web/**'
       - '.github/workflows/deploy_pages.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
 
-# Serialize Pages deploys so two overlapping pushes cannot race on gh-pages.
-# Deliberately a different group from the scheduler: sharing one would let a
-# docs deploy supersede a queued ingestion run and silently skip a cycle.
-# Here the newest deploy wins, so cancelling an in-progress one is safe.
+# Serialize deploys so two overlapping pushes cannot race on the branches.
+# Shared with the scheduler's deploy job; the newest deploy wins.
 concurrency:
   group: pages-deploy
   cancel-in-progress: true
@@ -27,24 +33,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy static folder to gh-pages branch
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build both copies
+        working-directory: web
+        run: |
+          npm ci --no-audit --no-fund
+          ./scripts/build-sites.sh
+
+      - name: Publish the GitHub Pages copy
         # Pinned to a commit SHA so a moved tag cannot inject code into a
         # workflow that holds a contents:write token
         uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
         with:
-          folder: backend/app/static
+          folder: web/out/github
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
 
-  # Nothing verified the deployed site before this: a stale asset or a 404
-  # on a data file shipped silently, and the cache-buster check in tests.yml
-  # is advisory. Best-effort waits cover Pages' CDN propagation delay.
+      - name: Publish the Cloudflare copy
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
+        with:
+          folder: web/out/cloudflare
+          branch: cloudflare-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+
   smoke-test:
-    name: Smoke-test the live site
+    name: Smoke-test the GitHub Pages mirror
     needs: deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Verify the deployed pages and data files respond and parse
+      - name: Verify pages and data files respond and parse
         run: |
           set -euo pipefail
           BASE="https://adejare-ml.github.io/News-Intelligence-System"
@@ -58,23 +81,19 @@ jobs:
             echo "FAILED to fetch $1"; return 1
           }
 
-          fetch "$BASE/index.html" index.html
-          grep -q "search-palette" index.html
-          grep -q "styles.css?v=" index.html
+          fetch "$BASE/" index.html
+          grep -q "data-hero" index.html
+          fetch "$BASE/register/" register.html
+          grep -q "data-holding" register.html
+          fetch "$BASE/brief/" brief.html
+          grep -q "data-toc-section" brief.html
 
-          # The stylesheet the page actually references must be servable.
-          CSS_REF=$(grep -o 'css/styles.css?v=[0-9.]*' index.html | head -1)
-          fetch "$BASE/$CSS_REF" styles.css
-          grep -q "\[hidden\]" styles.css
-
-          # Every dataset the dashboard fetches on load must exist and parse.
+          # The data files stay published at their old URLs (RSS readers, scripts).
           for f in latest.json companies.json people.json procurement.json \
-                   significant_control.json reports.json graph.json agencies.json; do
+                   significant_control.json reports.json; do
             fetch "$BASE/data/$f" "$f"
             python3 -c "import json; json.load(open('$f'))"
             echo "OK data/$f"
           done
-
-          fetch "$BASE/sitemap.xml" sitemap.xml
-          fetch "$BASE/robots.txt" robots.txt
+          fetch "$BASE/data/feed.xml" feed.xml
           echo "Smoke test passed."

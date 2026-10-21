@@ -1,0 +1,121 @@
+---
+import Chain from "./Chain.astro";
+import { href } from "../lib/url.ts";
+import { slugify } from "../lib/entity-key.ts";
+import { describeHolding, type Holding } from "../lib/psc.ts";
+
+interface Props {
+  holding: Holding;
+  index?: number;
+  multiCompany?: boolean;
+}
+const { holding: h, index = 0, multiCompany = false } = Astro.props;
+const fmt = (iso: string) => {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+};
+const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toLowerCase();
+---
+<article
+  class="holding"
+  data-holding
+  data-reveal
+  style={`--i:${Math.min(index, 8)}`}
+  data-search={search}
+  data-stake={h.stake !== null ? "1" : "0"}
+  data-pattern={h.flags.length ? "1" : "0"}
+  data-band={h.band?.id ?? ""}
+  data-multi={multiCompany ? "1" : "0"}
+  data-last={h.lastReported}
+  data-value={h.stake ?? -1}
+>
+  <header>
+    <div>
+      <h3 class="h3"><a href={href(`entity/${slugify(h.person)}/`)}>{h.person}</a></h3>
+      <p class="desc">{describeHolding(h)}</p>
+    </div>
+    <span class:list={["stake", "num", { muted: h.stake === null }]}>{h.stake === null ? "—" : h.stakeLabel}</span>
+  </header>
+
+  <Chain holding={h} size="small" />
+
+  <div class="tags">
+    {h.band && <span class="chip chip-gold">{h.band.label}</span>}
+    {h.flags.map((f) => (
+      <span class:list={["chip", f.severity === "high" ? "chip-crimson" : "chip-royal"]} title={f.detail}>{f.title}</span>
+    ))}
+  </div>
+
+  <footer class="meta">
+    <span>{h.reports.length} {h.reports.length === 1 ? "report" : "reports"} · latest {fmt(h.lastReported)}</span>
+    <a class="company-link" href={href(`entity/${slugify(h.company)}/`)}>{h.company} →</a>
+  </footer>
+</article>
+
+<style>
+  .holding {
+    display: grid;
+    gap: 18px;
+    align-content: start;
+    padding: 22px;
+    border-radius: var(--radius-l);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    transition: border-color var(--dur-ui) ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .holding:hover {
+      border-color: var(--line-strong);
+    }
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: start;
+  }
+  h3 a {
+    background-image: linear-gradient(var(--gold), var(--gold));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms var(--ease-out);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    h3 a:hover {
+      background-size: 100% 1px;
+    }
+  }
+  .desc {
+    margin: 4px 0 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .stake {
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+  .stake.muted {
+    color: var(--faint);
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 24px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  .company-link {
+    color: var(--royal-ink);
+    font-weight: 560;
+  }
+</style>

@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/url.ts";
+---
+<Base title="Page not found · AURA" description="This page does not exist.">
+  <section class="wrap lost">
+    <p class="eyebrow">404 · Off the register</p>
+    <h1 class="h1" data-split>This page has no beneficial owner.</h1>
+    <p class="lede">
+      The link may be from the old dashboard, or the page may have moved. Everything AURA tracks is
+      a click away from the front page.
+    </p>
+    <div class="ctas">
+      <a class="btn btn-primary" href={href("")}>Today’s edition</a>
+      <a class="btn btn-ghost" href={href("register/")}>The register</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lost {
+    min-height: 60vh;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    padding-block: 80px;
+  }
+  .lost .eyebrow {
+    color: var(--gold);
+  }
+  .h1 {
+    max-width: 16ch;
+  }
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+</style>

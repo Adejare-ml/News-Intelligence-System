@@ -1,15 +1,10 @@
 ---
 import Icon from "./Icon.astro";
 import { href, isActive } from "../lib/url.ts";
+import { SECTIONS } from "../lib/nav.ts";
 
 const current = Astro.url.pathname;
-const NAV = [
-  { path: "", label: "Today" },
-  { path: "brief/", label: "Brief" },
-  { path: "register/", label: "Register" },
-  { path: "news/", label: "News" },
-  { path: "how-it-works/", label: "How it works" },
-];
+const NAV = SECTIONS;
 ---
 <header class="site-header" data-header>
   <div class="bar wrap">

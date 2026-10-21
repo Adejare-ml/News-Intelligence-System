@@ -1,0 +1,112 @@
+---
+/**
+ * The CAMA 2020 disclosure bands as one bar, segment widths by holdings in
+ * each band. The 5-25% segment is the one a UK-calibrated tool misses.
+ */
+import { BANDS, type Holding } from "../lib/psc.ts";
+
+interface Props {
+  holdings: Holding[];
+}
+const { holdings } = Astro.props;
+const counts = BANDS.map((b) => ({ band: b, n: holdings.filter((h) => h.band?.id === b.id).length }));
+const undisclosed = holdings.filter((h) => h.band === null).length;
+const total = holdings.length || 1;
+---
+<figure class="scale" data-reveal>
+  <figcaption>
+    <p class="eyebrow">Disclosure bands · CAMA 2020 s.868</p>
+    <p class="note">
+      Nigeria requires disclosure from <strong>5%</strong>, not the 25% used in the UK. Holdings in the
+      5–25% band are the ones international tools miss.
+    </p>
+  </figcaption>
+  <div class="bar" role="img" aria-label={counts.map((c) => `${c.band.label}: ${c.n}`).join(", ") + `, stake not disclosed: ${undisclosed}`}>
+    {counts.map((c, i) => c.n > 0 && (
+      <span class:list={["seg", `tone-${c.band.tone}`]} style={`flex-grow:${c.n}; --i:${i}`}>
+        <span class="seg-n num">{c.n}</span>
+        <span class="seg-l">{c.band.label}</span>
+      </span>
+    ))}
+    {undisclosed > 0 && (
+      <span class="seg tone-none" style={`flex-grow:${undisclosed}; --i:6`}>
+        <span class="seg-n num">{undisclosed}</span>
+        <span class="seg-l">Not disclosed</span>
+      </span>
+    )}
+  </div>
+  <p class="meta foot">{total - undisclosed} of {holdings.length} holdings have a reported stake.</p>
+</figure>
+
+<style>
+  .scale {
+    margin: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .note {
+    margin: 6px 0 0;
+    color: var(--text-soft);
+    max-width: 62ch;
+  }
+  .note strong {
+    color: var(--gold);
+  }
+  .bar {
+    display: flex;
+    gap: 4px;
+    min-height: 74px;
+  }
+  .seg {
+    flex-basis: 0;
+    min-width: 92px;
+    display: grid;
+    align-content: space-between;
+    padding: 12px 14px;
+    border-radius: var(--radius-s);
+    background: var(--surface-2);
+    transform-origin: left;
+  }
+  .seg-n {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .seg-l {
+    font-size: 0.74rem;
+    color: var(--muted);
+  }
+  .tone-critical {
+    background: linear-gradient(160deg, rgba(200, 85, 61, 0.35), var(--surface-2));
+  }
+  .tone-high {
+    background: linear-gradient(160deg, rgba(212, 168, 74, 0.32), var(--surface-2));
+  }
+  .tone-elevated {
+    background: linear-gradient(160deg, rgba(212, 168, 74, 0.18), var(--surface-2));
+  }
+  .tone-nigeria {
+    background: linear-gradient(160deg, rgba(47, 85, 212, 0.4), var(--surface-2));
+    outline: 1px solid color-mix(in srgb, var(--royal-ink) 50%, transparent);
+  }
+  .tone-none {
+    background: repeating-linear-gradient(135deg, var(--surface-2) 0 8px, var(--surface) 8px 16px);
+  }
+  :global(.js) .seg {
+    opacity: 0;
+    transform: scaleX(0.85);
+    transition: opacity 500ms var(--ease-out), transform 600ms var(--ease-out);
+    transition-delay: calc(var(--i) * 60ms + 120ms);
+  }
+  :global(.js) .scale:global(.is-in) .seg {
+    opacity: 1;
+    transform: none;
+  }
+  .foot {
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .bar {
+      flex-wrap: wrap;
+    }
+  }
+</style>

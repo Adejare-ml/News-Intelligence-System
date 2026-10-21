@@ -1,0 +1,207 @@
+---
+/**
+ * Ownership chain: holder -> (vehicle) -> company, with the stake on the
+ * final link. A disclosed stake is a solid gold line; an undisclosed one is
+ * dashed and says so. Draws itself in when an ancestor gains .is-in
+ * (the reveal observer), node by node, link by link.
+ */
+import type { Holding } from "../lib/psc.ts";
+
+interface Props {
+  holding: Holding;
+  size?: "large" | "small";
+}
+const { holding, size = "large" } = Astro.props;
+const known = holding.stake !== null;
+const steps = [
+  { kind: "person", title: holding.person, sub: holding.role || "Reported holder" },
+  ...(holding.vehicle ? [{ kind: "vehicle", title: holding.vehicle, sub: "Holding vehicle" }] : []),
+  { kind: "company", title: holding.company, sub: "Company" },
+];
+---
+<div class:list={["chain", size]} role="img" aria-label={`${holding.person} to ${holding.company}: ${known ? holding.stakeLabel : "stake not disclosed"}`}>
+  {steps.map((s, i) => (
+    <>
+      {i > 0 && (
+        <div class:list={["link-line", { unknown: !known && i === steps.length - 1 }]} style={`--d:${i}`} aria-hidden="true">
+          <span class="bar"></span>
+          {i === steps.length - 1 && (
+            <span class="stake num">{known ? holding.stakeLabel : "Stake not disclosed"}</span>
+          )}
+        </div>
+      )}
+      <div class:list={["node", s.kind]} style={`--d:${i}`} aria-hidden="true">
+        <span class="node-kind">{s.sub}</span>
+        <span class="node-title">{s.title}</span>
+      </div>
+    </>
+  ))}
+</div>
+
+<style>
+  .chain {
+    display: flex;
+    align-items: center;
+  }
+  .node {
+    flex: 0 1 auto;
+    min-width: 0;
+    display: grid;
+    gap: 4px;
+    padding: 18px 22px;
+    border-radius: var(--radius-m);
+    border: 1px solid var(--line-strong);
+    background: var(--bg);
+  }
+  .node.person {
+    border-color: color-mix(in srgb, var(--gold) 55%, transparent);
+  }
+  .node-kind {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .node-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+  }
+  .small .node {
+    padding: 10px 12px;
+    border-radius: var(--radius-s);
+  }
+  .small .node-kind {
+    font-size: 0.6rem;
+  }
+  .small .node-title {
+    font-size: 0.98rem;
+  }
+  .link-line {
+    position: relative;
+    flex: 1 1 120px;
+    min-width: 60px;
+    height: 10px;
+  }
+  .small .link-line {
+    flex-basis: 70px;
+    min-width: 44px;
+  }
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+    background: var(--gold);
+    transform-origin: left center;
+  }
+  .unknown .bar {
+    background: repeating-linear-gradient(90deg, var(--muted) 0 6px, transparent 6px 12px);
+  }
+  .stake {
+    position: absolute;
+    left: 50%;
+    bottom: 14px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+    color: var(--gold);
+  }
+  .small .stake {
+    font-size: 1rem;
+    bottom: 10px;
+  }
+  /* On small chains the dashed line says "not disclosed" on its own. */
+  .small .unknown .stake {
+    display: none;
+  }
+  .unknown .stake {
+    font-family: var(--font-ui);
+    font-size: 0.74rem;
+    color: var(--muted);
+  }
+
+  /* Draw-in, keyed off the nearest revealed ancestor. */
+  :global(.js) .chain .node {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+    transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
+    transition-delay: calc(var(--d) * 340ms + 120ms);
+  }
+  :global(.js) .chain .bar {
+    transform: scaleX(0);
+    transition: transform 520ms var(--ease-in-out);
+    transition-delay: calc(var(--d) * 340ms - 100ms);
+  }
+  :global(.js) .chain .stake {
+    opacity: 0;
+    transition: opacity 500ms ease;
+    transition-delay: calc(var(--d) * 340ms + 240ms);
+  }
+  :global(.js .is-in) .chain .node,
+  :global(.js) .chain:global(.is-in) .node {
+    opacity: 1;
+    transform: none;
+  }
+  :global(.js .is-in) .chain .bar,
+  :global(.js) .chain:global(.is-in) .bar {
+    transform: none;
+  }
+  :global(.js .is-in) .chain .stake,
+  :global(.js) .chain:global(.is-in) .stake {
+    opacity: 1;
+  }
+
+  @media (max-width: 720px) {
+    .chain.large {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .large .link-line {
+      flex: 0 0 56px;
+      height: 56px;
+      width: 10px;
+      min-width: 0;
+      margin-left: 28px;
+    }
+    .large .bar {
+      left: 50%;
+      right: auto;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      height: auto;
+      margin: 0 0 0 -1px;
+      transform-origin: center top;
+    }
+    .large.chain .unknown .bar {
+      background: repeating-linear-gradient(180deg, var(--muted) 0 6px, transparent 6px 12px);
+    }
+    :global(.js) .large .bar {
+      transform: scaleY(0);
+    }
+    :global(.js .is-in) .large .bar,
+    :global(.js) .large:global(.is-in) .bar {
+      transform: none;
+    }
+    .large .stake {
+      left: 28px;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(.js) .chain .node {
+      transform: none;
+    }
+    :global(.js) .chain .bar {
+      transition: none;
+      transform: none;
+    }
+  }
+</style>

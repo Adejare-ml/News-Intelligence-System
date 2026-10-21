@@ -32,7 +32,8 @@ export interface Brief {
   sections: BriefSection[];
 }
 
-const LINK_TAIL = /\s*\(\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)\)\s*$/;
+// The model sometimes doubles the closing paren: "([Punch](url)))".
+const LINK_TAIL = /\s*\(\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)\)+\s*$/;
 
 export function slugHeading(text: string): string {
   return text.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
