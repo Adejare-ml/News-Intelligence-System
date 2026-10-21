@@ -10,7 +10,8 @@ import { toContract, sortContracts, type ProcurementRow } from "../../lib/procur
 
 const holdings = groupHoldings(data.psc());
 const s = summarise(holdings);
-const heldBack = groupHoldings(data.psc(), { heldBack: true });
+const gate = data.registerQuality();
+const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0);
 const companiesPerPerson = new Map<string, Set<string>>();
 for (const h of holdings) {
   const k = h.person.toLowerCase();
@@ -45,13 +46,14 @@ const filters = [
       <div><dt>With a reported stake</dt><dd class="num">{s.withStake}</dd></div>
       <div><dt>Carry a CAC filing reference</dt><dd class="num">{s.filingRefRate === null ? "—" : `${Math.round(s.filingRefRate * 100)}%`}</dd></div>
     </dl>
-    {(s.unsourced > 0 || s.roles > 0) && (
-      <p class="note">{[
-        "The numbers count sourced ownership claims only.",
-        s.unsourced > 0 && `${s.unsourced} ${s.unsourced === 1 ? "record has" : "records have"} no source on file and ${s.unsourced === 1 ? "is" : "are"} labelled.`,
-        s.roles > 0 && `${s.roles} ${s.roles === 1 ? "is a board role" : "are board roles"} with no reported stake.`,
-      ].filter(Boolean).join(" ")}</p>
-    )}
+    <p class="note">{[
+      "The numbers count ownership claims only, not board roles.",
+      s.roles > 0 && `${s.roles} ${s.roles === 1 ? "card is a board role" : "cards are board roles"} with no reported stake.`,
+      withheld > 0 && `${withheld} of ${gate.checked} extracted ${gate.checked === 1 ? "record" : "records"} did not pass the validation gate (${[
+        gate.unsourced && `${gate.unsourced} with no source`,
+        gate.implausible && `${gate.implausible} judged implausible`,
+      ].filter(Boolean).join(", ")}) and ${withheld === 1 ? "is" : "are"} not published.`,
+    ].filter(Boolean).join(" ")}</p>
     {s.isDemo && (
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>
     )}
@@ -87,19 +89,6 @@ const filters = [
     <p class="empty" hidden data-empty>
       Nothing matches. <button type="button" class="link" data-clear>Clear the filters</button>
     </p>
-    {heldBack.length > 0 && (
-      <details class="held-back">
-        <summary>Held back for review ({heldBack.length})</summary>
-        <p>
-          The validation gate keeps these extractions off the register because they look implausible
-          (for example, a sports or entertainment figure recorded as a company holder). They stay in the
-          database for review.
-        </p>
-        <ul>
-          {heldBack.map((h) => <li>{h.person} · {h.company} · {h.lastReported}</li>)}
-        </ul>
-      </details>
-    )}
   </section>
 
   <div class="wrap">
@@ -144,19 +133,6 @@ const filters = [
     max-width: 62ch;
     color: var(--muted);
     font-size: 0.9rem;
-  }
-  .held-back {
-    margin-top: 32px;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-  .held-back summary {
-    cursor: pointer;
-    font-weight: 600;
-    color: var(--text-soft);
-  }
-  .held-back p {
-    max-width: 62ch;
   }
   .demo {
     color: var(--gold);

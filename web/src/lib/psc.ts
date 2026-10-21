@@ -93,6 +93,21 @@ export function isQuarantined(record: PscRecord | null | undefined): boolean {
   return q === true || String(q).toLowerCase() === "true";
 }
 
+/**
+ * The publishing contract: a row reaches a page only if it names a source
+ * and the validation gate did not quarantine it. A "no source" label next
+ * to a named person and a stake would still publish the claim, so such
+ * rows are never shown, only counted (register_quality.json).
+ */
+export function isPublic(record: PscRecord | null | undefined): boolean {
+  if (!record || isQuarantined(record)) return false;
+  return sourceOf(record) !== "";
+}
+
+export function publicRecords(records: PscRecord[]): PscRecord[] {
+  return (records || []).filter(isPublic);
+}
+
 function sourceOf(record: PscRecord): string {
   const s = String(record?.Source ?? "").trim();
   return PLACEHOLDER.has(s.toLowerCase()) ? "" : s;
@@ -306,8 +321,6 @@ export type HoldingKind = "stake" | "role" | "influence";
 export interface Holding {
   /** A stake if any report gives one, else a board role, else influence. */
   kind: HoldingKind;
-  /** No report of it names a source: shown, but kept out of the counts. */
-  unsourced: boolean;
   key: string;
   person: string;
   company: string;
@@ -364,10 +377,9 @@ function displayNames(records: PscRecord[], keyOf: (r: PscRecord) => string, fie
  * five owners. Grouped, it reads as one holding with five reports, and the
  * best stake (most recent disclosed) is the one shown.
  */
-export function groupHoldings(records: PscRecord[], opts: { heldBack?: boolean } = {}): Holding[] {
-  // Quarantined rows are held back from every page; the register lists
-  // them separately (opts.heldBack) so nothing disappears silently.
-  const wanted = (records || []).filter((r) => isQuarantined(r) === Boolean(opts.heldBack));
+export function groupHoldings(records: PscRecord[]): Holding[] {
+  // Only publishable rows become holdings, whoever the caller is.
+  const wanted = publicRecords(records);
   const ctx = buildContext(wanted);
   const personName = displayNames(records, personKey, "Person Name");
   const companyName = displayNames(records, companyKey, "Company");
@@ -409,7 +421,6 @@ export function groupHoldings(records: PscRecord[], opts: { heldBack?: boolean }
     holdings.push({
       key,
       kind: kinds.has("stake") ? "stake" : kinds.has("role") ? "role" : "influence",
-      unsourced: sorted.every((r) => !sourceOf(r)),
       person: personName.get(personKey(latest)) || "Undisclosed holder",
       company: companyName.get(companyKey(latest)) || "Undisclosed company",
       role: pick("Board Role"),
@@ -438,8 +449,6 @@ export function groupHoldings(records: PscRecord[], opts: { heldBack?: boolean }
 export interface RegisterSummary {
   /** Sourced ownership claims: what every headline number counts. */
   holdings: number;
-  /** Holdings with no source on file (shown, labelled, not counted). */
-  unsourced: number;
   /** Board posts with no reported stake (shown, not counted as holdings). */
   roles: number;
   holders: number;
@@ -455,9 +464,9 @@ export interface RegisterSummary {
   isDemo: boolean;
 }
 
-/** The holdings the headline numbers count: sourced, and not a bare board role. */
+/** The holdings the headline numbers count: ownership claims, not bare board roles. */
 export function counted(holdings: Holding[]): Holding[] {
-  return holdings.filter((h) => !h.unsourced && h.kind !== "role");
+  return holdings.filter((h) => h.kind !== "role");
 }
 
 export function summarise(all: Holding[]): RegisterSummary {
@@ -466,8 +475,7 @@ export function summarise(all: Holding[]): RegisterSummary {
   const companies = new Set(holdings.map((h) => h.company.toLowerCase()));
   return {
     holdings: holdings.length,
-    unsourced: all.filter((h) => h.unsourced).length,
-    roles: all.filter((h) => !h.unsourced && h.kind === "role").length,
+    roles: all.filter((h) => h.kind === "role").length,
     holders: holders.size,
     companies: companies.size,
     withStake: holdings.filter((h) => h.stake !== null).length,

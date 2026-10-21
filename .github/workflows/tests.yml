@@ -137,6 +137,12 @@ jobs:
       - name: Build from the committed data
         run: npm run build
 
+      - name: Withheld register rows reach no page
+        # Builds once more with two sentinel rows the validation gate must
+        # keep off the site (no source; quarantined) and fails if either
+        # name renders anywhere. See web/scripts/check-leaks.mjs.
+        run: npm run check:leaks
+
   cache-buster:
     name: Cache-buster check
     # Push runs cover direct commits to main: the psc-core.js slip

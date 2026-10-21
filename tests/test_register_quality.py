@@ -146,3 +146,25 @@ class TestBriefHeadlines:
         md = (f"- **Procurement**: Georgia awarded a deal. ([P]({URL}))\n"
               "- **Georgia wins** x. ([P](https://example.com/other))")
         assert q.qa_brief_headlines(md, [REC]) == md
+
+
+class TestPublicExport:
+    def test_unsourced_and_quarantined_rows_are_not_published(self):
+        rows = q.gate([
+            row(Percentage="27.49%"),
+            row(**{"Person Name": "Jubril Adewale Tinubu", "Company": "Oando Plc", "Percentage": "66.7%", "Source": ""}),
+            row(**{"Person Name": "Sadio Mané", "Company": "Mango Business"}),
+        ])
+        published = q.public_rows(rows)
+        assert [r["Person Name"] for r in published] == ["Femi Otedola"]
+        assert published[0]["Public"] is True
+
+    def test_withheld_summary_counts_without_names(self):
+        rows = q.gate([row(), row(Source="", Date="2026-01-15"), row(**{"Person Name": "Sadio Mané"})])
+        summary = q.withheld_summary(rows)
+        assert summary == {"checked": 3, "published": 1, "unsourced": 1, "implausible": 1}
+        assert "Sadio" not in str(summary)
+
+    def test_unannotated_rows_are_judged_too(self):
+        assert q.is_public(row()) is True
+        assert q.is_public(row(Source="")) is False

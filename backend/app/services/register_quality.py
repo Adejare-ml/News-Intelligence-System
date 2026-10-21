@@ -179,6 +179,39 @@ def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return out
 
 
+def is_public(row: Dict[str, Any]) -> bool:
+    """A row the site may publish: sourced and not quarantined.
+
+    A label is not enough for the rest: "No source on file" next to a named
+    person and a stake still publishes the claim. Withheld rows stay in the
+    database for review; they never reach the static export.
+    """
+    quality = row.get("Quality") or quality_flags(row)
+    quarantined = row.get("Quarantined")
+    if quarantined is None:
+        quarantined = "implausible" in quality
+    return not quarantined and "unsourced" not in quality
+
+
+def public_rows(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """The annotated rows the site may publish, each marked Public."""
+    return [dict(r, Public=True) for r in rows or [] if is_public(r)]
+
+
+def withheld_summary(rows: Iterable[Dict[str, Any]]) -> Dict[str, int]:
+    """Counts only, never names: how many rows the gate kept off the site."""
+    rows = list(rows or [])
+    quarantined = sum(1 for r in rows if not is_public(r) and r.get("Quarantined"))
+    unsourced = sum(1 for r in rows if not is_public(r) and not r.get("Quarantined"))
+    return {"checked": len(rows), "published": len(rows) - quarantined - unsourced,
+            "unsourced": unsourced, "implausible": quarantined}
+
+
+def gate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Annotate and collapse repeats: every row, published or not."""
+    return collapse_same_report(annotate(rows))
+
+
 def collapse_same_report(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Drop a row that repeats an earlier report of the same holding on the
     same date with the same stake and nature (spelling variants included)."""
