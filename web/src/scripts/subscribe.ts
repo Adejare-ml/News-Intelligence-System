@@ -27,8 +27,9 @@ document.querySelectorAll<HTMLFormElement>("form[data-subscribe]").forEach((form
       if (res.status === 404 || res.status === 405) {
         say("Sign-ups open very soon. The brief is already live at the top of this page.", "");
       } else if (res.ok) {
+        const body = (await res.json().catch(() => ({}))) as { message?: string };
         form.classList.add("is-done");
-        say("You’re on the list. Check your inbox to confirm.", "ok");
+        say(body.message || "You’re on the list.", "ok");
         input.value = "";
       } else {
         const body = (await res.json().catch(() => ({}))) as { error?: string };

@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
 import { toStory, relativeTime, type Story } from "../../lib/stories.ts";
+import { imageSrc } from "../../lib/url.ts";
 
 const stories = data.articles().map(toStory).filter((s) => s.title);
 const seen = new Set<string>();
@@ -94,7 +95,7 @@ const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
               <a class="item" href={s.url} target="_blank" rel="noopener noreferrer">
                 <div class:list={["thumb", `tone-${s.cover.tone}`]} aria-hidden="true">
                   <span>{s.cover.glyph}</span>
-                  {s.image && <img src={s.image} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />}
+                  {s.image && <img src={imageSrc(s.image)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />}
                 </div>
                 <div class="text">
                   <p class="kicker">
