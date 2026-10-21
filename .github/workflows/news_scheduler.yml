@@ -218,13 +218,35 @@ jobs:
           # ever empty (e.g. the commit step didn't run for some reason).
           ref: ${{ needs.run-pipeline.outputs.data_sha || 'main' }}
 
-      - name: Deploy static folder to gh-pages branch
+      # The site is built from this run's data: pages are rendered at build
+      # time, so a data refresh is a rebuild. Two copies, as in
+      # deploy_pages.yml: gh-pages (GitHub mirror) and cloudflare-pages.
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build both copies
+        working-directory: web
+        run: |
+          npm ci --no-audit --no-fund
+          ./scripts/build-sites.sh
+
+      - name: Publish the GitHub Pages copy
         # Pinned to a commit SHA so a moved tag cannot inject code into a
         # workflow that holds a contents:write token
         uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
         with:
-          folder: backend/app/static
+          folder: web/out/github
           branch: gh-pages
+
+      - name: Publish the Cloudflare copy
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
+        with:
+          folder: web/out/cloudflare
+          branch: cloudflare-pages
 
       # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
       # the data commit lands with [skip ci], so this path -- the one that
@@ -245,15 +267,11 @@ jobs:
             echo "FAILED to fetch $1"; return 1
           }
 
-          fetch "$BASE/index.html" index.html
-          grep -q "search-palette" index.html
-
-          CSS_REF=$(grep -o 'css/styles.css?v=[0-9.]*' index.html | head -1)
-          fetch "$BASE/$CSS_REF" styles.css
-          grep -q "\[hidden\]" styles.css
+          fetch "$BASE/" index.html
+          grep -q "data-hero" index.html
 
           for f in latest.json companies.json people.json procurement.json \
-                   significant_control.json reports.json graph.json agencies.json; do
+                   significant_control.json reports.json; do
             fetch "$BASE/data/$f" "$f"
             python3 -c "import json; json.load(open('$f'))"
             echo "OK data/$f"

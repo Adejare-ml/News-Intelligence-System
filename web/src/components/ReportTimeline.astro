@@ -1,0 +1,95 @@
+---
+/** Every report of one holding, as marks on a line: gold where a stake was disclosed. */
+import type { Holding } from "../lib/psc.ts";
+
+interface Props {
+  holding: Holding;
+}
+const { holding } = Astro.props;
+const fmt = (iso: string, year = true) => {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return Number.isNaN(d.getTime())
+    ? iso
+    : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", ...(year ? { year: "numeric" } : {}), timeZone: "UTC" });
+};
+const n = holding.reports.length;
+---
+<div class="timeline">
+  <p class="eyebrow">Reported {n} {n === 1 ? "time" : "times"}{holding.firstReported && ` since ${fmt(holding.firstReported)}`}</p>
+  <ol class="marks" style={`--n:${n}`}>
+    {holding.reports.map((r, i) => (
+      <li style={`--i:${i}`} class:list={{ has: r.stake !== null }}>
+        <span class="mark" aria-hidden="true"></span>
+        <span class="when">{fmt(r.date, false)}</span>
+        <span class="what">{r.stake !== null ? `${r.stake}%` : (r.nature || "Control reported")}</span>
+      </li>
+    ))}
+  </ol>
+</div>
+
+<style>
+  .marks {
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(var(--n), minmax(76px, 1fr));
+    position: relative;
+    overflow-x: auto;
+  }
+  .marks::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6px;
+    height: 1px;
+    background: var(--line-strong);
+  }
+  .marks li {
+    position: relative;
+    display: grid;
+    gap: 4px;
+    padding-right: 12px;
+  }
+  .mark {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 2px solid var(--muted);
+    background: var(--surface);
+    margin-bottom: 8px;
+  }
+  .has .mark {
+    border-color: var(--gold);
+    background: var(--gold);
+  }
+  .when {
+    font-size: 0.8rem;
+    color: var(--text-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .what {
+    font-size: 0.74rem;
+    color: var(--muted);
+  }
+  .has .what {
+    color: var(--gold);
+    font-weight: 600;
+  }
+  :global(.js) .marks li {
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
+    transition-delay: calc(0.6s + var(--i) * 70ms);
+  }
+  :global(.js .is-in) .marks li {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(.js) .marks li {
+      transform: none;
+    }
+  }
+</style>

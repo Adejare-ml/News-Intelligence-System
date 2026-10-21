@@ -288,6 +288,9 @@ export interface Holding {
   isSeed: boolean;
 }
 
+/** Values the extractor writes when it has nothing: never shown as data. */
+const PLACEHOLDER = new Set(["null", "none", "n/a", "na", "unknown", "-", "undefined"]);
+
 function dateOf(r: PscRecord): string {
   return String(r.Date ?? "").slice(0, 10);
 }
@@ -307,7 +310,8 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
     const p = personKey(r);
     const c = companyKey(r);
     if (!p && !c) continue;
-    const key = `${p}::${c}`;
+    // "FirstHoldCo" and "First HoldCo" are the same company in the reporting.
+    const key = `${p.replace(/[^a-z0-9]/g, "")}::${c.replace(/[^a-z0-9]/g, "")}`;
     const list = groups.get(key);
     if (list) list.push(r);
     else groups.set(key, [r]);
@@ -323,7 +327,7 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
     const pick = (field: string) => {
       for (let i = sorted.length - 1; i >= 0; i--) {
         const v = String(sorted[i][field] ?? "").trim();
-        if (v) return v;
+        if (v && !PLACEHOLDER.has(v.toLowerCase())) return v;
       }
       return "";
     };

@@ -1,0 +1,27 @@
+---
+import Base from "../../layouts/Base.astro";
+import BriefArticle from "../../components/BriefArticle.astro";
+import EditionList from "../../components/EditionList.astro";
+import { parseBrief } from "../../lib/brief.ts";
+import { listEditions, readEdition, type Edition } from "../../lib/archive.ts";
+import { lagosDate, lagosTime } from "../../lib/edition.ts";
+
+export function getStaticPaths() {
+  return listEditions().map((edition) => ({ params: { edition: edition.slug }, props: { edition } }));
+}
+
+const { edition } = Astro.props as { edition: Edition };
+const brief = parseBrief(readEdition(edition));
+const editions = listEditions();
+---
+<Base
+  title={`Brief of ${lagosDate(edition.date)}, ${lagosTime(edition.date)} · AURA`}
+  description={`AURA's brief as published on ${lagosDate(edition.date)} at ${lagosTime(edition.date)} Lagos time.`}
+>
+  <BriefArticle
+    brief={brief}
+    heading={lagosDate(edition.date)}
+    kicker={`Archived edition · ${lagosTime(edition.date)} Lagos`}
+  />
+  <EditionList editions={editions} current={edition.slug} />
+</Base>

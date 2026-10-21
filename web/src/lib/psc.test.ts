@@ -116,6 +116,17 @@ describe("Holdings grouped from repeated reports", () => {
     assert.ok(s.highSeverity <= s.withPattern);
     assert.equal(s.isDemo, false);
   });
+  test("spacing and punctuation do not split a company", () => {
+    const h = groupHoldings([
+      { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17" },
+      { "Person Name": "Femi Otedola", Company: "FirstHoldCo", Date: "2026-08-11" },
+    ]);
+    assert.equal(h.length, 1);
+  });
+  test("placeholder roles are not shown", () => {
+    const [h] = groupHoldings([{ "Person Name": "Aliko Dangote", Company: "Dangote Refinery", "Board Role": "null" }]);
+    assert.equal(h.role, "");
+  });
   test("empty register", () => {
     const s = summarise(groupHoldings([]));
     assert.equal(s.holdings, 0);

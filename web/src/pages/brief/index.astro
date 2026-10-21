@@ -1,0 +1,30 @@
+---
+import Base from "../../layouts/Base.astro";
+import BriefArticle from "../../components/BriefArticle.astro";
+import EditionList from "../../components/EditionList.astro";
+import Subscribe from "../../components/Subscribe.astro";
+import * as data from "../../lib/data.ts";
+import { parseBrief } from "../../lib/brief.ts";
+import { listEditions } from "../../lib/archive.ts";
+import { lagosDate, editionName } from "../../lib/edition.ts";
+
+const brief = parseBrief(data.briefMarkdown());
+const editions = listEditions();
+const latest = editions[0];
+const when = latest?.date ?? new Date();
+---
+<Base
+  title="The Morning Brief · AURA"
+  description="Today's ownership changes, board moves, contracts and regulatory actions in Nigeria, compiled from the day's reporting."
+>
+  <BriefArticle
+    brief={brief}
+    heading="What moved in Nigerian business today"
+    kicker={`${editionName(when)} · ${lagosDate(when)}`}
+  />
+  <EditionList editions={editions} current={latest?.slug} />
+  <Subscribe />
+</Base>
+<script>
+  import "../../scripts/subscribe.ts";
+</script>

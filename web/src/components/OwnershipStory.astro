@@ -1,5 +1,7 @@
 ---
 import Icon from "./Icon.astro";
+import Chain from "./Chain.astro";
+import ReportTimeline from "./ReportTimeline.astro";
 import { href } from "../lib/url.ts";
 import { slugify } from "../lib/entity-key.ts";
 import type { Holding } from "../lib/psc.ts";
@@ -10,22 +12,6 @@ interface Props {
   others: Holding[];
 }
 const { holding, others } = Astro.props;
-
-const fmt = (iso: string) => {
-  const d = new Date(`${iso}T12:00:00Z`);
-  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
-};
-const fmtShort = (iso: string) => {
-  const d = new Date(`${iso}T12:00:00Z`);
-  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" });
-};
-const known = holding.stake !== null;
-const steps = [
-  { kind: "person", title: holding.person, sub: holding.role || "Reported holder" },
-  ...(holding.vehicle ? [{ kind: "vehicle", title: holding.vehicle, sub: "Holding vehicle" }] : []),
-  { kind: "company", title: holding.company, sub: "Company" },
-];
-const reportCount = holding.reports.length;
 ---
 <section class="section ownership" aria-labelledby="own-title">
   <div class="wrap">
@@ -39,37 +25,8 @@ const reportCount = holding.reports.length;
     </div>
 
     <div class="panel" data-reveal data-chain>
-      <div class="chain" style={`--steps:${steps.length}`}>
-        {steps.map((s, i) => (
-          <>
-            {i > 0 && (
-              <div class:list={["link-line", { unknown: !known && i === steps.length - 1 }]} style={`--d:${i}`}>
-                <span class="bar" aria-hidden="true"></span>
-                {i === steps.length - 1 && (
-                  <span class="stake num">{known ? holding.stakeLabel : "Stake not disclosed"}</span>
-                )}
-              </div>
-            )}
-            <div class:list={["node", s.kind]} style={`--d:${i}`}>
-              <span class="node-kind">{s.sub}</span>
-              <span class="node-title">{s.title}</span>
-            </div>
-          </>
-        ))}
-      </div>
-
-      <div class="timeline">
-        <p class="eyebrow">Reported {reportCount} {reportCount === 1 ? "time" : "times"} since {fmt(holding.firstReported)}</p>
-        <ol class="marks" style={`--n:${reportCount}`}>
-          {holding.reports.map((r, i) => (
-            <li style={`--i:${i}`} class:list={{ has: r.stake !== null }}>
-              <span class="mark" aria-hidden="true"></span>
-              <span class="when">{fmtShort(r.date)}</span>
-              <span class="what">{r.stake !== null ? `${r.stake}%` : (r.nature || "Control reported")}</span>
-            </li>
-          ))}
-        </ol>
-      </div>
+      <Chain holding={holding} />
+      <div class="timeline-wrap"><ReportTimeline holding={holding} /></div>
 
       <div class="foot">
         {holding.band && <span class="chip chip-gold">CAMA band {holding.band.label}</span>}
@@ -113,159 +70,8 @@ const reportCount = holding.reports.length;
     overflow: hidden;
   }
 
-  .chain {
-    display: flex;
-    align-items: center;
-    gap: 0;
-  }
-  .node {
-    flex: 0 1 auto;
-    min-width: 0;
-    display: grid;
-    gap: 4px;
-    padding: 18px 22px;
-    border-radius: var(--radius-m);
-    border: 1px solid var(--line-strong);
-    background: var(--bg);
-  }
-  .node.person {
-    border-color: color-mix(in srgb, var(--gold) 55%, transparent);
-  }
-  .node-kind {
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  .node-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.15rem, 2.2vw, 1.6rem);
-    line-height: 1.1;
-  }
-  .link-line {
-    position: relative;
-    flex: 1 1 120px;
-    min-width: 60px;
-    height: 10px;
-  }
-  .bar {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    height: 2px;
-    margin-top: -1px;
-    background: var(--gold);
-    transform-origin: left center;
-  }
-  .unknown .bar {
-    background: repeating-linear-gradient(90deg, var(--muted) 0 6px, transparent 6px 12px);
-  }
-  .stake {
-    position: absolute;
-    left: 50%;
-    bottom: 14px;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    font-size: clamp(1.1rem, 2vw, 1.45rem);
-    color: var(--gold);
-  }
-  .unknown .stake {
-    font-family: var(--font-ui);
-    font-size: 0.78rem;
-    color: var(--muted);
-  }
-
-  /* Draw-in: nodes rise in sequence, links draw between them. */
-  :global(.js) .panel .node {
-    opacity: 0;
-    transform: translateY(10px) scale(0.97);
-    transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
-    transition-delay: calc(var(--d) * 380ms + 150ms);
-  }
-  :global(.js) .panel .bar {
-    transform: scaleX(0);
-    transition: transform 560ms var(--ease-in-out);
-    transition-delay: calc(var(--d) * 380ms - 120ms);
-  }
-  :global(.js) .panel .stake {
-    opacity: 0;
-    transition: opacity 500ms ease;
-    transition-delay: calc(var(--d) * 380ms + 260ms);
-  }
-  :global(.js) .panel:global(.is-in) .node {
-    opacity: 1;
-    transform: none;
-  }
-  :global(.js) .panel:global(.is-in) .bar {
-    transform: none;
-  }
-  :global(.js) .panel:global(.is-in) .stake {
-    opacity: 1;
-  }
-
-  .timeline {
+  .timeline-wrap {
     margin-top: clamp(32px, 5vw, 52px);
-  }
-  .marks {
-    list-style: none;
-    margin: 18px 0 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(var(--n), minmax(70px, 1fr));
-    position: relative;
-    overflow-x: auto;
-  }
-  .marks::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 6px;
-    height: 1px;
-    background: var(--line-strong);
-  }
-  .marks li {
-    position: relative;
-    display: grid;
-    gap: 4px;
-    padding-right: 12px;
-  }
-  .mark {
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    border: 2px solid var(--muted);
-    background: var(--surface);
-    margin-bottom: 8px;
-  }
-  .has .mark {
-    border-color: var(--gold);
-    background: var(--gold);
-  }
-  .when {
-    font-size: 0.8rem;
-    color: var(--text-soft);
-    font-variant-numeric: tabular-nums;
-  }
-  .what {
-    font-size: 0.74rem;
-    color: var(--muted);
-  }
-  .has .what {
-    color: var(--gold);
-    font-weight: 600;
-  }
-  :global(.js) .panel .marks li {
-    opacity: 0;
-    transform: translateX(-8px);
-    transition: opacity 400ms var(--ease-out), transform 400ms var(--ease-out);
-    transition-delay: calc(0.6s + var(--i) * 70ms);
-  }
-  :global(.js) .panel:global(.is-in) .marks li {
-    opacity: 1;
-    transform: none;
   }
 
   .foot {
@@ -325,54 +131,11 @@ const reportCount = holding.reports.length;
   }
 
   @media (max-width: 720px) {
-    .chain {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .link-line {
-      flex: 0 0 56px;
-      height: 56px;
-      width: 10px;
-      min-width: 0;
-      margin-left: 28px;
-    }
-    .bar {
-      left: 50%;
-      right: auto;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      height: auto;
-      margin: 0 0 0 -1px;
-      transform-origin: center top;
-    }
-    .unknown .bar {
-      background: repeating-linear-gradient(180deg, var(--muted) 0 6px, transparent 6px 12px);
-    }
-    :global(.js) .panel .bar {
-      transform: scaleY(0);
-    }
-    .stake {
-      left: 28px;
-      bottom: auto;
-      top: 50%;
-      transform: translateY(-50%);
-    }
     .others {
       grid-template-columns: 1fr;
     }
     .foot .link {
       margin-left: 0;
-    }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    :global(.js) .panel .node,
-    :global(.js) .panel .marks li {
-      transform: none;
-    }
-    :global(.js) .panel .bar {
-      transition: none;
-      transform: none;
     }
   }
 </style>

@@ -1,0 +1,309 @@
+---
+/**
+ * The brief as a long read: a sticky contents rail, numbered sections,
+ * sources as quiet links, and a gold reading-progress line driven by
+ * scroll position (off the main thread where supported).
+ */
+import Icon from "./Icon.astro";
+import type { Brief } from "../lib/brief.ts";
+import { isQuietItem } from "../lib/brief.ts";
+
+interface Props {
+  brief: Brief;
+  heading: string;
+  kicker: string;
+}
+const { brief, heading, kicker } = Astro.props;
+const sections = brief.sections;
+---
+<div class="progress" aria-hidden="true"></div>
+<article class="brief wrap">
+  <header class="head">
+    <p class="eyebrow kicker">{kicker}</p>
+    <h1 class="h1 title" data-split>{heading}</h1>
+    <p class="meta">
+      {brief.generated && <>Generated {brief.generated}</>}
+      {brief.window && <> · {brief.window}</>}
+    </p>
+    {brief.stats.length > 0 && (
+      <dl class="stats" data-reveal>
+        {brief.stats.map((s) => (
+          <div>
+            <dt>{s.label}</dt>
+            <dd class="num">{s.value}</dd>
+          </div>
+        ))}
+      </dl>
+    )}
+  </header>
+
+  <div class="layout">
+    {sections.length > 1 && (
+      <nav class="toc" aria-label="In this brief">
+        <p class="eyebrow">In this brief</p>
+        <ol>
+          {sections.map((s) => (
+            <li><a href={`#${s.id}`} data-toc-link>{s.title}</a></li>
+          ))}
+        </ol>
+      </nav>
+    )}
+
+    <div class="sections">
+      {sections.map((s, si) => (
+        <section id={s.id} class="section-block" data-toc-section>
+          <h2 class="h2 sec-title" data-reveal>
+            <span class="sec-num num" aria-hidden="true">{String(si + 1).padStart(2, "0")}</span>
+            {s.title}
+          </h2>
+          {s.items.length > 0 && (
+            <ul class="items">
+              {s.items.map((item, i) =>
+                isQuietItem(item) ? (
+                  <li class="quiet" data-reveal style={`--i:${i}`}>{item.rest}</li>
+                ) : (
+                  <li data-reveal style={`--i:${i}`}>
+                    {item.lead ? (
+                      <>
+                        <h3 class="h3">{item.lead}</h3>
+                        {item.rest && <p>{item.rest}</p>}
+                      </>
+                    ) : (
+                      <p set:html={item.html} />
+                    )}
+                    {item.source && (
+                      <a class="source" href={item.source.url} rel="noopener noreferrer" target="_blank">
+                        {item.source.name} <Icon name="arrowUpRight" size={14} />
+                      </a>
+                    )}
+                  </li>
+                ),
+              )}
+            </ul>
+          )}
+          {s.html && <div class="prose" set:html={s.html} />}
+        </section>
+      ))}
+      {sections.length === 0 && (
+        <p class="lede">This edition has no reported developments yet.</p>
+      )}
+      <p class="meta disclaimer">
+        Compiled automatically from news reporting by AURA’s pipeline. Summaries are machine-written;
+        follow the source links for the original reporting.
+      </p>
+    </div>
+  </div>
+</article>
+
+<style>
+  .progress {
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    height: 2px;
+    z-index: 39;
+    background: var(--gold);
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+  @supports (animation-timeline: scroll()) {
+    .progress {
+      animation: read-progress linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+  @keyframes read-progress {
+    to { transform: scaleX(1); }
+  }
+
+  .head {
+    padding-block: clamp(40px, 7vw, 88px) clamp(28px, 4vw, 48px);
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    gap: 16px;
+  }
+  .kicker {
+    color: var(--gold);
+  }
+  .title {
+    max-width: 18ch;
+    font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+    text-wrap: balance;
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 40px;
+    margin: 12px 0 0;
+  }
+  .stats div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .stats dt {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .stats dd {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: clamp(28px, 5vw, 72px);
+    padding-top: clamp(32px, 5vw, 56px);
+  }
+  .toc {
+    position: sticky;
+    top: calc(var(--header-h) + 28px);
+    align-self: start;
+  }
+  .toc ol {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    border-left: 1px solid var(--line);
+  }
+  .toc a {
+    display: block;
+    padding: 7px 0 7px 16px;
+    margin-left: -1px;
+    border-left: 2px solid transparent;
+    font-size: 0.88rem;
+    color: var(--muted);
+    transition: color var(--dur-ui) ease, border-color var(--dur-ui) ease;
+  }
+  .toc a:global(.is-current) {
+    color: var(--text);
+    border-left-color: var(--gold);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .toc a:hover {
+      color: var(--text);
+    }
+  }
+
+  .sections {
+    max-width: 760px;
+  }
+  .section-block {
+    padding-bottom: clamp(32px, 5vw, 56px);
+    scroll-margin-top: calc(var(--header-h) + 24px);
+  }
+  .sec-title {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+    margin-bottom: 20px;
+  }
+  .sec-num {
+    font-size: 0.9rem;
+    color: var(--gold);
+  }
+  .items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .items li {
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+  }
+  .items h3 {
+    font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+    margin-bottom: 6px;
+  }
+  .items p {
+    overflow-wrap: anywhere;
+    margin: 0 0 8px;
+    color: var(--text-soft);
+    font-size: 1.04rem;
+    line-height: 1.65;
+  }
+  .items p :global(strong) {
+    color: var(--text);
+  }
+  .items p :global(a) {
+    color: var(--royal-ink);
+  }
+  .quiet {
+    color: var(--muted);
+    font-style: italic;
+  }
+  .source {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.82rem;
+    font-weight: 560;
+    color: var(--royal-ink);
+  }
+  .prose :global(p) {
+    color: var(--text-soft);
+    line-height: 1.7;
+  }
+  .disclaimer {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 900px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+    .toc {
+      position: static;
+    }
+    .toc ol {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      border: 0;
+    }
+    .toc a {
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      padding: 6px 12px;
+      margin: 0;
+    }
+    .toc a:global(.is-current) {
+      border-color: var(--gold);
+    }
+  }
+  @media print {
+    .progress,
+    .toc {
+      display: none;
+    }
+    .layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Highlight the section being read in the contents rail.
+  const links = new Map<string, HTMLElement>();
+  document.querySelectorAll<HTMLAnchorElement>("[data-toc-link]").forEach((a) => {
+    links.set(a.getAttribute("href")!.slice(1), a);
+  });
+  if (links.size && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          links.forEach((a) => a.classList.remove("is-current"));
+          links.get(e.target.id)?.classList.add("is-current");
+        }
+      },
+      { rootMargin: "-30% 0px -60% 0px" },
+    );
+    document.querySelectorAll("[data-toc-section]").forEach((s) => io.observe(s));
+  }
+</script>

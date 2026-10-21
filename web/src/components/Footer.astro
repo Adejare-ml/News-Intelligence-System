@@ -1,5 +1,6 @@
 ---
 import { href } from "../lib/url.ts";
+import { hasSection } from "../lib/nav.ts";
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
@@ -15,7 +16,7 @@ const year = new Date().getFullYear();
     <nav class="links" aria-label="Footer">
       <a href={href("brief/")}>Morning Brief</a>
       <a href={href("register/")}>Ownership register</a>
-      <a href={href("how-it-works/")}>Methodology</a>
+      {hasSection("how-it-works/") && <a href={href("how-it-works/")}>Methodology</a>}
       <a href={href("data/feed.xml")}>RSS feed</a>
       <button type="button" class="replay" data-replay-intro>Replay intro</button>
     </nav>

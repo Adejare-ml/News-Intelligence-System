@@ -1,0 +1,94 @@
+---
+import { href } from "../lib/url.ts";
+import { byDay, type Edition } from "../lib/archive.ts";
+import { lagosTime } from "../lib/edition.ts";
+
+interface Props {
+  editions: Edition[];
+  current?: string;
+  limitDays?: number;
+}
+const { editions, current, limitDays = 21 } = Astro.props;
+const days = byDay(editions).slice(0, limitDays);
+const dayLabel = (day: string) =>
+  new Date(`${day}T12:00:00Z`).toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+---
+<section class="archive wrap" aria-labelledby="archive-title">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Every edition</p>
+      <h2 class="h2" id="archive-title">The archive</h2>
+    </div>
+    <p class="meta">{editions.length} editions since {editions.at(-1)?.day ?? "the first run"}</p>
+  </div>
+  <ol class="days">
+    {days.map((d, i) => (
+      <li data-reveal style={`--i:${Math.min(i, 10)}`}>
+        <span class="day">{dayLabel(d.day)}</span>
+        <span class="runs">
+          {d.editions.map((e) => (
+            <a
+              href={href(`brief/${e.slug}/`)}
+              aria-current={e.slug === current ? "page" : undefined}
+              title={`Edition of ${e.day} ${lagosTime(e.date)} Lagos`}
+            >
+              {lagosTime(e.date)}
+            </a>
+          ))}
+        </span>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .archive {
+    padding-block: clamp(48px, 8vw, 96px) 0;
+  }
+  .days {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0 32px;
+  }
+  .days li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .day {
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .runs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+  }
+  .runs a {
+    font-size: 0.78rem;
+    font-variant-numeric: tabular-nums;
+    padding: 4px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    color: var(--text-soft);
+    transition: border-color var(--dur-ui) ease, color var(--dur-ui) ease, background-color var(--dur-ui) ease;
+  }
+  .runs a[aria-current="page"] {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #14110a;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .runs a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+  }
+</style>

@@ -1,0 +1,263 @@
+---
+import Base from "../../layouts/Base.astro";
+import Chain from "../../components/Chain.astro";
+import ReportTimeline from "../../components/ReportTimeline.astro";
+import StoryCard from "../../components/StoryCard.astro";
+import Icon from "../../components/Icon.astro";
+import * as data from "../../lib/data.ts";
+import { href } from "../../lib/url.ts";
+import { slugify } from "../../lib/entity-key.ts";
+import { groupHoldings, describeHolding } from "../../lib/psc.ts";
+import { toStory, parseTime } from "../../lib/stories.ts";
+import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
+import { buildEntities, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
+
+export function getStaticPaths() {
+  const entities = buildEntities({
+    holdings: groupHoldings(data.psc()),
+    companies: data.readJson<CompanyRow[]>("companies.json", []),
+    people: data.readJson<PersonMove[]>("people.json", []),
+    articles: data.articles(),
+    contracts: data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract),
+  });
+  return entities.map((entity) => ({ params: { slug: entity.slug }, props: { entity } }));
+}
+
+const { entity: e } = Astro.props as { entity: Entity };
+const isPerson = e.kind === "person";
+const stories = e.articles.map(toStory);
+const latestArticle = stories.map((s) => s.published).filter((d): d is Date => d !== null).sort((a, b) => b.getTime() - a.getTime())[0];
+const now = latestArticle ?? parseTime(e.lastSeen) ?? new Date();
+const fmt = (iso: string) => {
+  const d = new Date(`${String(iso).slice(0, 10)}T12:00:00Z`);
+  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+};
+const summary = e.holdings.length
+  ? isPerson
+    ? `${e.name} ${describeHolding(e.holdings[0])}${e.holdings.length > 1 ? `, and is reported in ${e.holdings.length - 1} more ${e.holdings.length === 2 ? "company" : "companies"}` : ""}.`
+    : `${e.holdings.length} reported ${e.holdings.length === 1 ? "holder" : "holders"} with significant control.`
+  : `Mentioned in ${e.mentions ?? e.articles.length} reports tracked by AURA.`;
+---
+<Base
+  title={`${e.name} · AURA`}
+  description={`${e.name}: reported ownership, related news, board moves and contracts, from AURA's reading of Nigerian business news.`}
+>
+  <section class="wrap head">
+    <a class="back link" href={href("register/")}><span aria-hidden="true">←</span> Register</a>
+    <p class="eyebrow kind">{isPerson ? "Person or holder" : "Company or body"}{e.industry && ` · ${e.industry}`}</p>
+    <h1 class="h1 name" data-split>{e.name}</h1>
+    <p class="lede">{summary}</p>
+    <dl class="facts" data-reveal>
+      {e.mentions !== null && <div><dt>Mentions tracked</dt><dd class="num">{e.mentions}</dd></div>}
+      <div><dt>Holdings</dt><dd class="num">{e.holdings.length}</dd></div>
+      {e.articles.length > 0 && <div><dt>Recent stories</dt><dd class="num">{e.articles.length}</dd></div>}
+      {e.lastSeen && <div><dt>Last seen</dt><dd class="date">{fmt(e.lastSeen)}</dd></div>}
+    </dl>
+  </section>
+
+  {e.holdings.length > 0 && (
+    <section class="wrap block" aria-labelledby="own">
+      <h2 class="h2" id="own" data-split>{isPerson ? "What they’re reported to control" : "Who is reported to control it"}</h2>
+      <div class="holdings">
+        {e.holdings.map((h, i) => (
+          <article class="holding" data-reveal style={`--i:${i}`}>
+            <p class="h-desc">
+              <a href={href(`entity/${slugify(isPerson ? h.company : h.person)}/`)}>{isPerson ? h.company : h.person}</a>
+              {h.band && <span class="chip chip-gold">{h.band.label}</span>}
+              {h.flags.map((f) => <span class:list={["chip", f.severity === "high" ? "chip-crimson" : "chip-royal"]} title={f.detail}>{f.title}</span>)}
+            </p>
+            <Chain holding={h} />
+            <ReportTimeline holding={h} />
+          </article>
+        ))}
+      </div>
+      <p class="meta note">Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.</p>
+    </section>
+  )}
+
+  {stories.length > 0 && (
+    <section class="wrap block" aria-labelledby="news">
+      <h2 class="h2" id="news" data-split>In the news</h2>
+      <div class="stories">
+        {stories.slice(0, 6).map((s, i) => <StoryCard story={s} now={now} size="compact" index={i} />)}
+      </div>
+    </section>
+  )}
+
+  {e.moves.length > 0 && (
+    <section class="wrap block" aria-labelledby="moves">
+      <h2 class="h2" id="moves" data-split>Appointments and departures</h2>
+      <ol class="moves">
+        {e.moves.map((m, i) => (
+          <li data-reveal style={`--i:${i}`}>
+            <span class="m-date">{m.Date ? fmt(m.Date) : "Undated"}</span>
+            <span class="m-text">
+              {isPerson ? <><strong>{m.Position || "Role"}</strong> at {m.Organization}</> : <><strong>{m.Name}</strong>, {m.Position || "role not given"}</>}
+            </span>
+            {m.Event && m.Event !== "other" && <span class="chip">{m.Event}</span>}
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  {e.contracts.length > 0 && (
+    <section class="wrap block" aria-labelledby="contracts">
+      <h2 class="h2" id="contracts" data-split>Contracts in the news</h2>
+      <ul class="contracts">
+        {e.contracts.map((c) => (
+          <li data-reveal>
+            <span class="c-project">{c.project}</span>
+            <span class="meta">{c.agency}{c.contractor && ` → ${c.contractor}`} · {c.source}</span>
+            <span class:list={["num", "c-amount", { muted: !c.amountLabel }]}>{c.amountLabel || "Value not reported"}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {e.holdings.length === 0 && stories.length === 0 && (
+    <section class="wrap block"><p class="lede">AURA has no recent reporting on {e.name} yet.</p></section>
+  )}
+
+  <section class="wrap block">
+    <a class="btn btn-ghost" href={href(`register/?q=${encodeURIComponent(e.name)}`)}>
+      <Icon name="search" size={16} /> Find {e.name} in the register
+    </a>
+  </section>
+</Base>
+
+<style>
+  .head {
+    padding-block: clamp(32px, 6vw, 72px) 24px;
+    display: grid;
+    gap: 16px;
+  }
+  .back {
+    font-size: 0.88rem;
+  }
+  .kind {
+    color: var(--gold);
+  }
+  .name {
+    max-width: 16ch;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 44px;
+    margin: 12px 0 0;
+  }
+  .facts div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .facts dt {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .facts dd {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+  .facts .date {
+    font-size: 1.15rem;
+    padding-top: 10px;
+  }
+  .block {
+    padding-top: clamp(40px, 7vw, 80px);
+  }
+  .block > .h2 {
+    margin-bottom: 24px;
+  }
+  .holdings {
+    display: grid;
+    gap: 18px;
+  }
+  .holding {
+    display: grid;
+    gap: 28px;
+    padding: clamp(20px, 3vw, 36px);
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line);
+    background:
+      radial-gradient(70% 120% at 100% 0%, rgba(212, 168, 74, 0.07), transparent 60%),
+      var(--surface);
+  }
+  .h-desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+  }
+  .h-desc a {
+    font-weight: 600;
+    margin-right: 6px;
+    color: var(--royal-ink);
+  }
+  .note {
+    margin-top: 14px;
+  }
+  .stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 18px;
+  }
+  .moves,
+  .contracts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .moves li {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr) auto;
+    gap: 16px;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .m-date {
+    font-size: 0.84rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .m-text strong {
+    font-weight: 600;
+  }
+  .contracts li {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "p a" "m a";
+    gap: 4px 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .c-project {
+    grid-area: p;
+  }
+  .contracts .meta {
+    grid-area: m;
+  }
+  .c-amount {
+    grid-area: a;
+    align-self: center;
+    color: var(--gold);
+    font-size: 1.2rem;
+  }
+  .c-amount.muted {
+    color: var(--faint);
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+  }
+  @media (max-width: 640px) {
+    .moves li {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+</style>

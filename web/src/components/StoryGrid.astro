@@ -2,6 +2,7 @@
 import StoryCard from "./StoryCard.astro";
 import Icon from "./Icon.astro";
 import { href } from "../lib/url.ts";
+import { hasSection } from "../lib/nav.ts";
 import type { Story } from "../lib/stories.ts";
 
 interface Props {
@@ -20,7 +21,7 @@ const compact = rest.slice(2, 8);
         <p class="eyebrow">Today’s stories</p>
         <h2 class="h2" id="stories-title" data-split>The reporting behind the register</h2>
       </div>
-      <a class="link" href={href("news/")}>All news <Icon name="arrowRight" size={16} /></a>
+      {hasSection("news/") && <a class="link" href={href("news/")}>All news <Icon name="arrowRight" size={16} /></a>}
     </div>
 
     {lead && (
