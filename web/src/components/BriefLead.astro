@@ -1,0 +1,222 @@
+---
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+import type { Brief, BriefItem } from "../lib/brief.ts";
+import { isQuietItem } from "../lib/brief.ts";
+
+interface Props {
+  brief: Brief;
+  dateLabel: string;
+}
+const { brief, dateLabel } = Astro.props;
+
+const key = brief.sections.find((s) => /key developments/i.test(s.title));
+const alerts = brief.sections.find((s) => /high risk/i.test(s.title));
+const ownership = brief.sections.find((s) => /ownership|psc/i.test(s.title));
+
+const lead: BriefItem[] = (key?.items || []).filter((i) => !isQuietItem(i)).slice(0, 4);
+const watch: BriefItem | undefined = (alerts?.items || []).find((i) => !isQuietItem(i));
+const ownershipNote = (ownership?.items || [])[0];
+const stats = brief.stats.slice(0, 4);
+---
+<section class="section brief-lead" id="brief" aria-labelledby="brief-title">
+  <div class="wrap layout">
+    <header class="masthead">
+      <p class="eyebrow">The Morning Brief · {dateLabel}</p>
+      <h2 class="h2" id="brief-title" data-split>What moved in Nigerian business today</h2>
+      <p class="meta gen">Compiled {brief.generated || "today"} from the day’s reporting.</p>
+      {stats.length > 0 && (
+        <dl class="stats" data-reveal>
+          {stats.map((s) => (
+            <div>
+              <dd class="num">{s.value}</dd>
+              <dt>{s.label.replace(/^Total /, "").replace(/ Processed$/, "")}</dt>
+            </div>
+          ))}
+        </dl>
+      )}
+      <a class="link" href={href("brief/")} data-reveal>Read the full brief <Icon name="arrowRight" size={16} /></a>
+    </header>
+
+    <ol class="developments">
+      {lead.map((item, i) => (
+        <li data-reveal style={`--i:${i}`}>
+          <span class="index num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+          <div>
+            <h3 class="h3">{item.lead || item.rest}</h3>
+            {item.lead && item.rest && <p>{item.rest}</p>}
+            {item.source && (
+              <a class="source" href={item.source.url} rel="noopener noreferrer" target="_blank">
+                {item.source.name} <Icon name="arrowUpRight" size={14} />
+              </a>
+            )}
+          </div>
+        </li>
+      ))}
+      {lead.length === 0 && (
+        <li class="quiet" data-reveal>
+          <div>
+            <h3 class="h3">A quiet edition so far.</h3>
+            <p>No key developments have been reported yet today. The next run will update this brief.</p>
+          </div>
+        </li>
+      )}
+    </ol>
+
+    {(watch || ownershipNote) && (
+      <aside class="asides">
+        {watch && (
+          <div class="aside watch" data-reveal>
+            <p class="eyebrow"><Icon name="alert" size={14} /> On the watch list</p>
+            <p class="aside-title">{watch.lead || watch.rest}</p>
+            {watch.lead && <p class="aside-body">{watch.rest}</p>}
+          </div>
+        )}
+        {ownershipNote && (
+          <div class="aside" data-reveal style="--i:1">
+            <p class="eyebrow">Ownership disclosures</p>
+            <p class="aside-body">{ownershipNote.lead ? `${ownershipNote.lead}: ${ownershipNote.rest}` : ownershipNote.rest}</p>
+          </div>
+        )}
+      </aside>
+    )}
+  </div>
+</section>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+    grid-template-areas:
+      "mast list"
+      "mast asides";
+    gap: clamp(28px, 4vw, 64px);
+    align-items: start;
+  }
+  .masthead {
+    grid-area: mast;
+    position: sticky;
+    top: calc(var(--header-h) + 32px);
+    display: grid;
+    gap: 16px;
+  }
+  .masthead .eyebrow {
+    color: var(--gold);
+  }
+  .gen {
+    margin: 0;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 20px;
+    margin: 8px 0 4px;
+    padding: 18px 0;
+    border-block: 1px solid var(--line);
+  }
+  .stats div {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+  }
+  .stats dd {
+    margin: 0;
+    font-size: 1.9rem;
+    line-height: 1;
+  }
+  .stats dt {
+    font-size: 0.76rem;
+    color: var(--muted);
+  }
+
+  .developments {
+    grid-area: list;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+  .developments li {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 8px;
+    padding: 26px 0;
+    border-top: 1px solid var(--line);
+  }
+  .developments li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .index {
+    font-size: 1.05rem;
+    color: var(--gold);
+    padding-top: 4px;
+  }
+  .developments h3 {
+    font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+    margin-bottom: 8px;
+    text-wrap: balance;
+  }
+  .developments p {
+    margin: 0 0 10px;
+    color: var(--text-soft);
+    max-width: 60ch;
+  }
+  .source {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.82rem;
+    font-weight: 560;
+    color: var(--royal-ink);
+  }
+
+  .asides {
+    grid-area: asides;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  .aside {
+    padding: 20px 22px;
+    border-radius: var(--radius-m);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+  .aside .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 10px;
+  }
+  .watch {
+    background: linear-gradient(160deg, var(--crimson-wash), var(--surface) 60%);
+  }
+  .watch .eyebrow {
+    color: var(--crimson);
+  }
+  .aside-title {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    line-height: 1.25;
+    margin: 0 0 6px;
+  }
+  .aside-body {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--text-soft);
+  }
+
+  @media (max-width: 900px) {
+    .layout {
+      grid-template-columns: 1fr;
+      grid-template-areas: "mast" "list" "asides";
+    }
+    .masthead {
+      position: static;
+    }
+    .developments li {
+      grid-template-columns: 40px minmax(0, 1fr);
+    }
+  }
+</style>

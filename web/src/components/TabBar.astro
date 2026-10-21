@@ -1,0 +1,68 @@
+---
+import Icon from "./Icon.astro";
+import { href, isActive } from "../lib/url.ts";
+
+const current = Astro.url.pathname;
+const TABS = [
+  { path: "", label: "Today", icon: "home" },
+  { path: "brief/", label: "Brief", icon: "newspaper" },
+  { path: "register/", label: "Register", icon: "shield" },
+  { path: "news/", label: "News", icon: "layers" },
+  { path: "how-it-works/", label: "How", icon: "cpu" },
+] as const;
+---
+<nav class="tabbar" aria-label="Sections">
+  {TABS.map((t) => (
+    <a href={href(t.path)} aria-current={isActive(current, t.path) ? "page" : undefined}>
+      <Icon name={t.icon} size={22} />
+      <span>{t.label}</span>
+    </a>
+  ))}
+</nav>
+
+<style>
+  .tabbar {
+    display: none;
+  }
+  @media (max-width: 900px) {
+    .tabbar {
+      position: fixed;
+      z-index: 40;
+      left: 12px;
+      right: 12px;
+      bottom: calc(12px + env(safe-area-inset-bottom));
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      height: 62px;
+      padding: 6px;
+      border-radius: 22px;
+      background: var(--surface-glass);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(20px) saturate(170%);
+      -webkit-backdrop-filter: blur(20px) saturate(170%);
+      box-shadow: var(--shadow-2);
+    }
+    .tabbar a {
+      display: grid;
+      place-items: center;
+      align-content: center;
+      gap: 2px;
+      border-radius: 16px;
+      font-size: 0.66rem;
+      font-weight: 600;
+      color: var(--muted);
+      -webkit-tap-highlight-color: transparent;
+      transition: transform var(--dur-press) var(--ease-out), color var(--dur-ui) ease;
+    }
+    .tabbar a:active {
+      transform: scale(0.94);
+    }
+    .tabbar a[aria-current="page"] {
+      color: var(--gold);
+      background: var(--gold-wash);
+    }
+    :global(body) {
+      padding-bottom: calc(88px + env(safe-area-inset-bottom));
+    }
+  }
+</style>

@@ -1,0 +1,71 @@
+---
+import StoryCard from "./StoryCard.astro";
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+import type { Story } from "../lib/stories.ts";
+
+interface Props {
+  stories: Story[];
+  now: Date;
+}
+const { stories, now } = Astro.props;
+const [lead, ...rest] = stories;
+const features = rest.slice(0, 2);
+const compact = rest.slice(2, 8);
+---
+<section class="section stories" aria-labelledby="stories-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Today’s stories</p>
+        <h2 class="h2" id="stories-title" data-split>The reporting behind the register</h2>
+      </div>
+      <a class="link" href={href("news/")}>All news <Icon name="arrowRight" size={16} /></a>
+    </div>
+
+    {lead && (
+      <div class="top">
+        <StoryCard story={lead} now={now} size="lead" />
+        <div class="features">
+          {features.map((s, i) => <StoryCard story={s} now={now} size="feature" index={i + 1} />)}
+        </div>
+      </div>
+    )}
+
+    {compact.length > 0 && (
+      <div class="compact-grid">
+        {compact.map((s, i) => <StoryCard story={s} now={now} size="compact" index={i} />)}
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .top {
+    display: grid;
+    gap: 20px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .compact-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    perspective: 1400px;
+  }
+  @media (max-width: 980px) {
+    .compact-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 640px) {
+    .features,
+    .compact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

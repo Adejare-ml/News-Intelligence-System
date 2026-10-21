@@ -1,0 +1,169 @@
+---
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+---
+<section class="section subscribe" id="subscribe" aria-labelledby="sub-title">
+  <div class="wrap">
+    <div class="card" data-reveal>
+      <div class="copy">
+        <p class="eyebrow">The Morning Brief · 08:00 Lagos</p>
+        <h2 class="h2" id="sub-title" data-split>Wake up knowing who moved what.</h2>
+        <p class="lede">
+          One short email after the 08:00 run: the day’s ownership changes, board moves, contracts and
+          the stories worth your attention. Free, and one click to leave.
+        </p>
+      </div>
+      <form class="form" action={href("api/subscribe")} method="post" data-subscribe novalidate>
+        <label class="sr-only" for="sub-email">Email address</label>
+        <div class="field">
+          <Icon name="mail" size={18} class="field-icon" />
+          <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required />
+          <button class="btn btn-gold" type="submit">
+            <span class="label">Subscribe</span>
+            <Icon name="check" size={18} class="done-icon" />
+          </button>
+        </div>
+        <!-- Honeypot: invisible to people, tempting to bots. -->
+        <input class="hp" type="text" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <p class="status" role="status" aria-live="polite" data-subscribe-status></p>
+        <p class="privacy meta">
+          We store only your email address, to send this brief. It is never shared, and every email has an
+          unsubscribe link.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style>
+  .card {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: clamp(24px, 5vw, 64px);
+    align-items: end;
+    padding: clamp(28px, 5vw, 64px);
+    border-radius: calc(var(--radius-l) + 6px);
+    background:
+      radial-gradient(90% 140% at 100% 100%, rgba(212, 168, 74, 0.16), transparent 60%),
+      radial-gradient(70% 120% at 0% 0%, rgba(47, 85, 212, 0.22), transparent 60%),
+      var(--surface);
+    border: 1px solid var(--line-strong);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(circle at 1px 1px, rgba(237, 230, 216, 0.06) 1px, transparent 1.4px) 0 0 / 14px 14px;
+    mask-image: linear-gradient(120deg, transparent 30%, #000);
+  }
+  .eyebrow {
+    color: var(--gold);
+    margin: 0 0 14px;
+  }
+  .h2 {
+    max-width: 14ch;
+    margin-bottom: 18px;
+  }
+  .lede {
+    margin: 0;
+  }
+
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 6px 6px 16px;
+    border-radius: 999px;
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+    transition: border-color var(--dur-ui) ease, box-shadow var(--dur-ui) ease;
+  }
+  .field:focus-within {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 4px var(--gold-wash);
+  }
+  .field :global(.field-icon) {
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+  input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem;
+    outline: none;
+  }
+  input::placeholder {
+    color: var(--faint);
+  }
+  .btn {
+    flex-shrink: 0;
+    position: relative;
+  }
+  .btn :global(.done-icon) {
+    display: none;
+  }
+  .form:global(.is-done) .btn .label {
+    display: none;
+  }
+  .form:global(.is-done) .btn :global(.done-icon) {
+    display: block;
+  }
+  .form:global(.is-busy) .btn {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  .hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  .status {
+    min-height: 1.4em;
+    margin: 12px 4px 4px;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+  }
+  .status:global(.error) {
+    color: var(--crimson);
+  }
+  .status:global(.ok) {
+    color: var(--gold);
+  }
+  .privacy {
+    margin: 0 4px;
+    max-width: 52ch;
+  }
+  @media (max-width: 860px) {
+    .card {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 420px) {
+    .field {
+      flex-wrap: wrap;
+      border-radius: var(--radius-m);
+      padding: 6px;
+    }
+    .field :global(.field-icon) {
+      display: none;
+    }
+    input[type="email"] {
+      padding-left: 10px;
+    }
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

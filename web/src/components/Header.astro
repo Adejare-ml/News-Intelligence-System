@@ -1,0 +1,188 @@
+---
+import Icon from "./Icon.astro";
+import { href, isActive } from "../lib/url.ts";
+
+const current = Astro.url.pathname;
+const NAV = [
+  { path: "", label: "Today" },
+  { path: "brief/", label: "Brief" },
+  { path: "register/", label: "Register" },
+  { path: "news/", label: "News" },
+  { path: "how-it-works/", label: "How it works" },
+];
+---
+<header class="site-header" data-header>
+  <div class="bar wrap">
+    <a class="brand" href={href("")} aria-label="AURA home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28">
+          <circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-dasharray="1.5 2.6" />
+          <path d="M9.5 23 16 8.5 22.5 23M11.8 18h8.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <span class="word">AURA</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      {NAV.map((item) => (
+        <a href={href(item.path)} aria-current={isActive(current, item.path) ? "page" : undefined}>
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to light theme">
+        <span class="theme-icon theme-dark"><Icon name="sun" /></span>
+        <span class="theme-icon theme-light"><Icon name="moon" /></span>
+      </button>
+      <a class="btn btn-gold subscribe-cta" href={href("#subscribe")}>
+        <Icon name="mail" size={16} />
+        <span>Morning Brief</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: var(--header-h);
+    /* Translucent material: content scrolls underneath and stays legible. */
+    background: color-mix(in srgb, var(--bg) 62%, transparent);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    transition: box-shadow 300ms ease, background-color 300ms ease;
+  }
+  /* Scroll-edge fade instead of a hard border, only once content is underneath. */
+  .site-header::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 -18px 0;
+    height: 18px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 55%, transparent), transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  :global(.is-scrolled) .site-header::after {
+    opacity: 1;
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    .site-header {
+      background: var(--bg);
+      backdrop-filter: none;
+    }
+  }
+
+  .bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  .brand .word {
+    font-family: var(--font-display);
+    font-weight: 620;
+    font-size: 1.2rem;
+    letter-spacing: 0.14em;
+    color: var(--text);
+  }
+  .brand .mark svg {
+    transition: transform 900ms var(--ease-out);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .brand:hover .mark svg {
+      transform: rotate(-24deg);
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 4px;
+    margin-left: 12px;
+  }
+  .nav a {
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 0.92rem;
+    font-weight: 520;
+    color: var(--muted);
+    transition: color var(--dur-ui) ease, background-color var(--dur-ui) ease;
+  }
+  .nav a[aria-current="page"] {
+    color: var(--text);
+  }
+  .nav a[aria-current="page"]::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: var(--gold);
+    view-transition-name: nav-dot;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .nav a:hover {
+      color: var(--text);
+      background: var(--surface-2);
+    }
+  }
+
+  .actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .subscribe-cta {
+    min-height: 38px;
+    padding: 0 16px;
+    font-size: 0.88rem;
+    margin-left: 6px;
+  }
+
+  .theme-icon {
+    display: grid;
+    place-items: center;
+  }
+  .theme-light {
+    display: none;
+  }
+  :global(:root[data-theme="light"]) .theme-light {
+    display: grid;
+  }
+  :global(:root[data-theme="light"]) .theme-dark {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .nav {
+      display: none;
+    }
+  }
+  @media (max-width: 480px) {
+    .subscribe-cta span {
+      display: none;
+    }
+    .subscribe-cta {
+      width: 40px;
+      padding: 0;
+      justify-content: center;
+    }
+  }
+</style>

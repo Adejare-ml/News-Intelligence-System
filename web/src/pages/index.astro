@@ -1,0 +1,81 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import EditionBar from "../components/EditionBar.astro";
+import BriefLead from "../components/BriefLead.astro";
+import StoryGrid from "../components/StoryGrid.astro";
+import OwnershipStory from "../components/OwnershipStory.astro";
+import MarketStrip from "../components/MarketStrip.astro";
+import Subscribe from "../components/Subscribe.astro";
+import * as data from "../lib/data.ts";
+import { parseBrief } from "../lib/brief.ts";
+import { groupHoldings, summarise, type Holding } from "../lib/psc.ts";
+import { rankStories, parseTime } from "../lib/stories.ts";
+import { DEFAULT_ROUTES, routesFromRecords } from "../lib/routes.ts";
+import { nextRunAfter, isStale, lagosTime, lagosDate, editionName } from "../lib/edition.ts";
+
+const articles = data.articles();
+const records = data.psc();
+const brief = parseBrief(data.briefMarkdown());
+const reports = data.reports();
+
+// The edition's clock is the last pipeline run, not the build time, so the
+// page tells the truth about how fresh it is.
+const lastRun = reports
+  .map((r) => parseTime(r.Generated))
+  .filter((d): d is Date => d !== null)
+  .sort((a, b) => b.getTime() - a.getTime())[0] ?? null;
+const now = new Date();
+const editionAt = lastRun ?? now;
+const today = editionAt.toISOString().slice(0, 10);
+const articlesToday = reports
+  .filter((r) => String(r.Date ?? "") === today)
+  .reduce((n, r) => n + (Number(r["Total Articles"]) || 0), 0);
+
+const stories = rankStories(articles, editionAt, 9);
+const storiesToday = articles.filter((a) => {
+  const t = parseTime(a.Time);
+  return t && editionAt.getTime() - t.getTime() < 36e5 * 24;
+}).length;
+
+const holdings = groupHoldings(records);
+const summary = summarise(holdings);
+
+// Story of the day: the richest holding (a disclosed stake, the most reports).
+const storyScore = (h: Holding) => (h.stake !== null ? 10 : 0) + h.reports.length * 2 + h.flags.length;
+const ranked = [...holdings].sort((a, b) => storyScore(b) - storyScore(a));
+const featured = ranked[0];
+const others = ranked.slice(1).filter((h) => h.person !== featured?.person).slice(0, 4);
+
+const dataRoutes = routesFromRecords(records);
+const routes = dataRoutes ?? DEFAULT_ROUTES;
+const next = nextRunAfter(editionAt);
+---
+<Base>
+  <Hero
+    edition={editionName(editionAt)}
+    dateLabel={lagosDate(editionAt)}
+    summary={summary}
+    storiesToday={storiesToday}
+    routes={routes}
+    routesFromData={Boolean(dataRoutes)}
+  />
+  <script type="application/json" id="globe-routes" set:html={JSON.stringify(routes)} />
+  <EditionBar
+    updated={lastRun}
+    next={next}
+    stale={isStale(lastRun, now)}
+    articlesToday={articlesToday}
+    updatedLabel={lastRun ? lagosTime(lastRun) : "unknown"}
+    nextLabel={lagosTime(next)}
+  />
+  <BriefLead brief={brief} dateLabel={lagosDate(editionAt)} />
+  <StoryGrid stories={stories} now={editionAt} />
+  {featured && <OwnershipStory holding={featured} others={others} />}
+  <MarketStrip fx={data.fx()} markets={data.markets()} weather={data.weather()} />
+  <Subscribe />
+</Base>
+
+<script>
+  import "../scripts/home.ts";
+</script>
