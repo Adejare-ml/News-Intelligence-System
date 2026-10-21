@@ -509,9 +509,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // character rather than a live-filtering feed.
         if (!articlesList.querySelector(".article-card")) {
             articlesList.innerHTML = `
-                <div class="loading-placeholder">
-                    <div class="spinner"></div>
-                    <p>Analyzing intelligence nodes...</p>
+                <div class="loading-placeholder" aria-busy="true">
+                    <div class="skeleton-list" aria-hidden="true">
+                        <div class="skeleton-line is-title"></div>
+                        <div class="skeleton-line"></div>
+                        <div class="skeleton-line is-short"></div>
+                        <div class="skeleton-line is-meta"></div>
+                        <div class="skeleton-line is-title"></div>
+                        <div class="skeleton-line"></div>
+                        <div class="skeleton-line is-short"></div>
+                        <div class="skeleton-line is-meta"></div>
+                    </div>
+                    <p class="sr-only">Analyzing intelligence nodes...</p>
                 </div>
             `;
         }
@@ -2164,9 +2173,17 @@ document.addEventListener("DOMContentLoaded", () => {
     async function loadPSCRecords() {
         if (!pscTableContainer) return;
         pscTableContainer.innerHTML = `
-            <div class="loading-placeholder">
-                <div class="spinner"></div>
-                <p>Loading PSC Beneficial Ownership & Anomaly Records...</p>
+            <div class="loading-placeholder" aria-busy="true">
+                <div class="skeleton-list" aria-hidden="true">
+                    <div class="skeleton-line is-title"></div>
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line is-short"></div>
+                    <div class="skeleton-line is-meta"></div>
+                    <div class="skeleton-line is-title"></div>
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line is-short"></div>
+                </div>
+                <p class="sr-only">Loading PSC Beneficial Ownership &amp; Anomaly Records...</p>
             </div>
         `;
         pscLoadState = "loading";
