@@ -500,7 +500,7 @@ main { display: flex; flex-direction: column; gap: 64px; }
 }
 
 .brief-body p { margin-bottom: 15px; }
-.brief-body strong { color: #fff; font-weight: 600; }
+.brief-body strong { color: var(--text-primary); font-weight: 600; }
 .brief-body ul, .brief-body ol { margin: 0 0 18px; padding-left: 20px; }
 .brief-body li { margin-bottom: 8px; }
 .brief-body li.md-l1 { margin-left: 20px; list-style-type: circle; }
