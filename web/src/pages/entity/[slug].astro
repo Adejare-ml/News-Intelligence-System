@@ -11,6 +11,7 @@ import { groupHoldings, describeHolding } from "../../lib/psc.ts";
 import { toStory, parseTime } from "../../lib/stories.ts";
 import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
 import { buildEntities, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
+import { logoFor } from "../../lib/logos.ts";
 
 export function getStaticPaths() {
   const entities = buildEntities({
@@ -37,6 +38,8 @@ const summary = e.holdings.length
     ? `${e.name} ${describeHolding(e.holdings[0])}${e.holdings.length > 1 ? `, and is reported in ${e.holdings.length - 1} more ${e.holdings.length === 2 ? "company" : "companies"}` : ""}.`
     : `${e.holdings.length} reported ${e.holdings.length === 1 ? "holder" : "holders"} with significant control.`
   : `Mentioned in ${e.mentions ?? e.articles.length} reports tracked by AURA.`;
+// Companies and bodies show their own logo when the deploy fetched one.
+const entityLogo = logoFor([e.name]);
 ---
 <Base
   title={`${e.name} · AURA`}
@@ -45,7 +48,12 @@ const summary = e.holdings.length
   <section class="wrap head">
     <a class="back link" href={href("register/")}><span aria-hidden="true">←</span> Register</a>
     <p class="eyebrow kind">{isPerson ? "Person or holder" : "Company or body"}{e.industry && ` · ${e.industry}`}</p>
-    <h1 class="h1 name" data-split>{e.name}</h1>
+    <div class="name-row">
+      {!isPerson && entityLogo && (
+        <span class="entity-logo"><img src={href(entityLogo.path)} alt={`${entityLogo.name} logo`} width="64" height="64" /></span>
+      )}
+      <h1 class="h1 name" data-split>{e.name}</h1>
+    </div>
     <p class="lede">{summary}</p>
     <dl class="facts" data-reveal>
       {e.mentions !== null && <div><dt>Mentions tracked</dt><dd class="num">{e.mentions}</dd></div>}
@@ -128,6 +136,25 @@ const summary = e.holdings.length
 </Base>
 
 <style>
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .entity-logo {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 18px;
+    background: #fff;
+  }
+  .entity-logo img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+  }
   .head {
     padding-block: clamp(32px, 6vw, 72px) 24px;
     display: grid;

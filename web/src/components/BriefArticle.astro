@@ -62,7 +62,7 @@ const sections = brief.sections;
                 isQuietItem(item) ? (
                   <li class="quiet" data-reveal style={`--i:${i}`}>{item.rest}</li>
                 ) : (
-                  <li data-reveal style={`--i:${i}`}>
+                  <li id={`${s.id}-${i + 1}`} class="item" data-reveal style={`--i:${i}`}>
                     {item.lead ? (
                       <>
                         <h3 class="h3">{item.lead}</h3>

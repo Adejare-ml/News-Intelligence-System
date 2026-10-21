@@ -217,10 +217,15 @@ jobs:
           # run-pipeline for why. Falls back to `main` only if that output is
           # ever empty (e.g. the commit step didn't run for some reason).
           ref: ${{ needs.run-pipeline.outputs.data_sha || 'main' }}
+          # Full history so the promoted `production` tag can be built.
+          fetch-depth: 0
 
       # The site is built from this run's data: pages are rendered at build
-      # time, so a data refresh is a rebuild. Two copies, as in
-      # deploy_pages.yml: gh-pages (GitHub mirror) and cloudflare-pages.
+      # time, so a data refresh is a rebuild. Two copies:
+      #   gh-pages          the test site, built from main's code
+      #   cloudflare-pages  production, built from the PROMOTED code (the
+      #                     `production` tag) so untested changes on main
+      #                     never reach users through a data refresh.
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
@@ -228,11 +233,42 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
 
-      - name: Build both copies
+      - name: Restore logo cache
+        uses: actions/cache@v6
+        with:
+          path: web/public/logos
+          key: logos-${{ hashFiles('web/src/lib/logos.ts') }}
+
+      - name: Build the test site
         working-directory: web
+        env:
+          SITES: github
         run: |
           npm ci --no-audit --no-fund
           ./scripts/build-sites.sh
+
+      - name: Build production (promoted code, this run's data)
+        id: production
+        run: |
+          set -euo pipefail
+          git fetch --force origin "refs/tags/production:refs/tags/production" || true
+          if git rev-parse --verify -q "production^{commit}" >/dev/null; then
+            REF=production
+          else
+            # Before the first promotion there is no tag: keep the code that
+            # is live now, read from the last publish to cloudflare-pages
+            # ("Deploying to cloudflare-pages from @ owner/repo@<sha>").
+            git fetch origin cloudflare-pages || true
+            REF=$(git log -1 --format=%s origin/cloudflare-pages 2>/dev/null | grep -oE '[0-9a-f]{40}' | tail -1 || true)
+          fi
+          if [ -n "${REF:-}" ] && git rev-parse --verify -q "${REF}^{commit}" >/dev/null; then
+            bash web/scripts/build-production.sh "$REF"
+            echo "built=true" >> "$GITHUB_OUTPUT"
+            echo "sha=$(git rev-parse "${REF}^{commit}")" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::No promoted version found: production keeps its current build. Run 'Promote to production'."
+            echo "built=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Publish the GitHub Pages copy
         # Pinned to a commit SHA so a moved tag cannot inject code into a
@@ -242,11 +278,15 @@ jobs:
           folder: web/out/github
           branch: gh-pages
 
-      - name: Publish the Cloudflare copy
+      - name: Publish production (cloudflare-pages)
+        if: steps.production.outputs.built == 'true'
         uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
         with:
-          folder: web/out/cloudflare
+          folder: out-production
           branch: cloudflare-pages
+          # Names the production code version (not this data commit), which
+          # the next run reads back if the production tag is missing.
+          commit-message: "Deploying to cloudflare-pages from @ ${{ github.repository }}@${{ steps.production.outputs.sha }} (data refresh)"
 
       # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
       # the data commit lands with [skip ci], so this path -- the one that

@@ -125,13 +125,41 @@
             var html = B.renderAppointmentsHTML(B.appointmentsTimeline([
                 { Name: "Sarah Boulos", Position: "President", Organization: "Not Specified",
                   Event: "appointment", Date: "2026-09-17" },
-                { Name: "Ayo Fayose", Position: "Officer", Organization: "N/A",
+                // Was Position "Officer" here, which this suite used to
+                // assert survived. It no longer does, and deliberately: a
+                // bare "Officer" is the retired fallback's fingerprint, not
+                // a post we know. A real title still carries a placeholder
+                // organisation on its own, which is what this pins.
+                { Name: "Ayo Fayose", Position: "Governor", Organization: "N/A",
                   Event: "appointment", Date: "2026-07-21" }
             ]));
             T.excludes(html, "Not Specified");
             T.excludes(html, "N/A");
             T.contains(html, "→ President", "the half we do know survives");
-            T.contains(html, "→ Officer");
+            T.contains(html, "→ Governor");
+        });
+
+        T.it("the bare 'Officer' fingerprint is told from real posts", function () {
+            ["Officer", "officer", "  OFFICER  "].forEach(function (p) {
+                T.eq(B.isUnevidencedOfficer(p), true, JSON.stringify(p) + " is the fingerprint");
+            });
+            ["Chief Security Officer", "Information Officer", "President", "", null
+            ].forEach(function (p) {
+                T.eq(B.isUnevidencedOfficer(p), false, JSON.stringify(p) + " is a real post");
+            });
+        });
+
+        T.it("the fingerprint takes the invented organisation with it", function () {
+            var html = B.renderAppointmentsHTML(B.appointmentsTimeline([
+                { Name: "Fayose", Position: "Officer", Organization: "Tinubu",
+                  Event: "appointment", Date: "2026-07-21" },
+                { Name: "Ada Obi", Position: "Chief Security Officer", Organization: "Dangote",
+                  Event: "appointment", Date: "2026-07-22" }
+            ]));
+            T.contains(html, "Fayose", "the person and the date are real and stay");
+            T.excludes(html, "@ Tinubu", "one politician does not work for another");
+            T.excludes(html, "→ Officer");
+            T.contains(html, "Chief Security Officer @ Dangote", "a real post keeps its org");
         });
 
         T.it("'Unnamed X' keeps its move but gets no dossier link", function () {

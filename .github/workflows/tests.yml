@@ -134,8 +134,10 @@ jobs:
       - name: Type check
         run: npm run check
 
-      - name: Build from the committed data
-        run: npm run build
+      - name: Build both published copies from the committed data
+        # The same script the deploy runs, so the Cloudflare copy (with its
+        # functions/ folder) is what CI checks, not just a plain build.
+        run: bash scripts/build-sites.sh
 
       - name: Withheld register rows reach no page
         # Builds once more with two sentinel rows the validation gate must

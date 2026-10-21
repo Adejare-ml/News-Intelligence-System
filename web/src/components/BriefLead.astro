@@ -18,6 +18,9 @@ const lead: BriefItem[] = (key?.items || []).filter((i) => !isQuietItem(i)).slic
 const watch: BriefItem | undefined = (alerts?.items || []).find((i) => !isQuietItem(i));
 const ownershipNote = (ownership?.items || [])[0];
 const stats = brief.stats.slice(0, 4);
+// Every item opens at its own place in the full brief, not the top of it.
+const itemLink = (sectionId: string | undefined, item: BriefItem, items: BriefItem[]) =>
+  href(sectionId ? `brief/#${sectionId}-${items.indexOf(item) + 1}` : "brief/");
 ---
 <section class="section brief-lead" id="brief" aria-labelledby="brief-title">
   <div class="wrap layout">
@@ -35,7 +38,7 @@ const stats = brief.stats.slice(0, 4);
           ))}
         </dl>
       )}
-      <a class="link" href={href("brief/")} data-reveal>Read the full brief <Icon name="arrowRight" size={16} /></a>
+      <a class="link" href={href(key ? `brief/#${key.id}` : "brief/")}>Read the full brief <Icon name="arrowRight" size={16} /></a>
     </header>
 
     <ol class="developments">
@@ -43,7 +46,7 @@ const stats = brief.stats.slice(0, 4);
         <li data-reveal style={`--i:${i}`}>
           <span class="index num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
           <div>
-            <h3 class="h3">{item.lead || item.rest}</h3>
+            <h3 class="h3"><a class="item-link" href={itemLink(key?.id, item, key?.items || [])}>{item.lead || item.rest}</a></h3>
             {item.lead && item.rest && <p>{item.rest}</p>}
             {item.source && (
               <a class="source" href={item.source.url} rel="noopener noreferrer" target="_blank">
@@ -68,13 +71,13 @@ const stats = brief.stats.slice(0, 4);
         {watch && (
           <div class="aside watch" data-reveal>
             <p class="eyebrow"><Icon name="alert" size={14} /> On the watch list</p>
-            <p class="aside-title">{watch.lead || watch.rest}</p>
+            <p class="aside-title"><a class="item-link" href={itemLink(alerts?.id, watch, alerts?.items || [])}>{watch.lead || watch.rest}</a></p>
             {watch.lead && <p class="aside-body">{watch.rest}</p>}
           </div>
         )}
         {ownershipNote && (
           <div class="aside" data-reveal style="--i:1">
-            <p class="eyebrow">Ownership disclosures</p>
+            <p class="eyebrow"><a class="item-link" href={href("register/#holdings")}>Ownership disclosures</a></p>
             <p class="aside-body">{ownershipNote.lead ? `${ownershipNote.lead}: ${ownershipNote.rest}` : ownershipNote.rest}</p>
           </div>
         )}

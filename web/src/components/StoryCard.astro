@@ -2,7 +2,8 @@
 import Icon from "./Icon.astro";
 import type { Story } from "../lib/stories.ts";
 import { relativeTime } from "../lib/stories.ts";
-import { imageSrc } from "../lib/url.ts";
+import { imageSrc, href } from "../lib/url.ts";
+import { logoFor } from "../lib/logos.ts";
 
 interface Props {
   story: Story;
@@ -15,21 +16,24 @@ const when = relativeTime(story.published, now);
 const riskChip = story.riskLevel === "Critical" ? "chip-crimson" : story.riskLevel === "High" ? "chip-gold" : "";
 const showRisk = story.riskLevel === "Critical" || story.riskLevel === "High";
 const c = story.cover;
-// Only the lead gets a generated cover; other cards without a publisher
-// image are set in type rather than dressed in a picture of nothing.
-const typeOnly = size !== "lead" && !story.image;
+// A card shows the publisher's photo, else the logo of the organisation the
+// story is about (fetched from its own site at deploy time), else nothing
+// pictorial at all: a typographic card, never generated artwork.
+const logo = logoFor([story.title, story.entities.join(" | ")]);
+const logoBanner = !story.image && logo && size !== "compact";
+const typeOnly = !story.image && !logoBanner;
 ---
-<article class:list={["story", size, { "type-only": typeOnly }, `tone-${c.tone}`]} data-reveal data-tilt style={`--i:${index}`}>
+<article class:list={["story", size, { "type-only": typeOnly, "has-logo": logoBanner }, `tone-${c.tone}`]} data-reveal data-tilt style={`--i:${index}`}>
   <a class="hit" href={story.url} rel="noopener noreferrer" target="_blank" aria-label={`${story.title} (${story.publisher}, opens in a new tab)`}></a>
   {!typeOnly && <div class="media">
-    <div
-      class:list={["cover", `tone-${c.tone}`]}
-      style={`--angle:${c.angle}deg; --seed:${c.seed}`}
-      aria-hidden="true"
-    >
-      <span class="glyph">{c.glyph}</span>
-      <span class="cover-cat">{story.category}</span>
-    </div>
+    {logo ? (
+      <div class="logo-banner" aria-hidden="true">
+        <span class="logo-tile"><img src={href(logo.path)} alt="" width="72" height="72" loading="lazy" decoding="async" /></span>
+        <span class="logo-name">{logo.name}</span>
+      </div>
+    ) : (
+      <div class:list={["cover", `tone-${c.tone}`]} style={`--angle:${c.angle}deg`} aria-hidden="true"></div>
+    )}
     {story.image && (
       <img
         src={imageSrc(story.image)}
@@ -43,6 +47,9 @@ const typeOnly = size !== "lead" && !story.image;
   </div>}
   <div class="body">
     <div class="tags">
+      {typeOnly && logo && (
+        <span class="logo-chip" title={logo.name}><img src={href(logo.path)} alt="" width="20" height="20" loading="lazy" decoding="async" /></span>
+      )}
       <span class="chip">{story.category}</span>
       {showRisk && <span class:list={["chip", riskChip]}><span class="dot"></span>{story.riskLevel} risk</span>}
     </div>
@@ -78,7 +85,7 @@ const typeOnly = size !== "lead" && !story.image;
       border-color: var(--line-strong);
       box-shadow: var(--shadow-2);
     }
-    .story:hover .media img,
+    .story:hover .media > img,
     .story:hover .cover {
       transform: scale(1.035);
     }
@@ -132,7 +139,7 @@ const typeOnly = size !== "lead" && !story.image;
       padding: 18px 20px 20px;
     }
   }
-  .media img,
+  .media > img,
   .cover {
     position: absolute;
     inset: 0;
@@ -140,70 +147,96 @@ const typeOnly = size !== "lead" && !story.image;
     height: 100%;
     transition: transform 900ms var(--ease-out);
   }
-  .media img {
+  .media > img {
     object-fit: cover;
   }
   /* Images arrive with a reveal from the bottom edge. */
-  :global(.js) .media img {
+  :global(.js) .media > img {
     clip-path: inset(100% 0 0 0);
     transition: clip-path 900ms var(--ease-out), transform 900ms var(--ease-out);
   }
-  :global(.js) .media img:global(.is-loaded) {
+  :global(.js) .media > img:global(.is-loaded) {
     clip-path: inset(0 0 0 0);
   }
 
-  /* Generated cover: tone gradient + dot-matrix texture + oversized glyph. */
+  /* Behind a photo (shown if it fails to load): a quiet tone, no artwork. */
   .cover {
     --c1: #1b2440;
     --c2: #0d1120;
-    --ink: rgba(237, 230, 216, 0.9);
-    background:
-      radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.09) 1px, transparent 1.4px) 0 0 / 12px 12px,
-      radial-gradient(80% 90% at 85% 10%, rgba(212, 168, 74, 0.2), transparent 60%),
-      linear-gradient(var(--angle), var(--c1), var(--c2));
-    display: grid;
-    align-items: end;
-    padding: 18px 20px;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(var(--angle), var(--c1), var(--c2));
   }
   .tone-royal {
-    --c1: #2a49b8;
+    --c1: #24325f;
     --c2: #0f1736;
   }
   .tone-gold {
-    --c1: #6d5418;
+    --c1: #3d321a;
     --c2: #17130a;
   }
   .tone-crimson {
-    --c1: #6e2a1d;
+    --c1: #3f2420;
     --c2: #140c0b;
   }
   .tone-ink {
     --c1: #232a40;
     --c2: #0b0d14;
   }
-  .glyph {
+
+  /* The organisation the story is about, by its own logo. */
+  .logo-banner {
     position: absolute;
-    right: -0.04em;
-    bottom: -0.2em;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: clamp(4.5rem, 12vw, 9rem);
-    letter-spacing: -0.04em;
-    line-height: 1;
-    color: transparent;
-    -webkit-text-stroke: 1.2px rgba(237, 230, 216, 0.28);
-    user-select: none;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 12px;
+    background:
+      radial-gradient(70% 80% at 50% 40%, color-mix(in srgb, var(--surface) 70%, var(--royal) 8%), var(--surface-2));
   }
-  .lead .glyph {
-    font-size: clamp(6rem, 16vw, 13rem);
+  .logo-tile {
+    display: grid;
+    place-items: center;
+    width: 112px;
+    height: 112px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
   }
-  .cover-cat {
-    position: relative;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
+  .logo-tile img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+  }
+  .lead .logo-tile {
+    width: 148px;
+    height: 148px;
+    border-radius: 32px;
+  }
+  .lead .logo-tile img {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-name {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(237, 230, 216, 0.75);
+    color: var(--muted);
+  }
+  .logo-chip {
+    display: inline-grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 7px;
+    background: #fff;
+  }
+  .logo-chip img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
   }
 
   .body {
@@ -271,9 +304,6 @@ const typeOnly = size !== "lead" && !story.image;
   .compact .media {
     aspect-ratio: 2 / 1;
   }
-  .compact .glyph {
-    font-size: 4.2rem;
-  }
 
   /* Typographic card: no picture, a toned rule and the headline in the display face. */
   .type-only {
@@ -299,5 +329,17 @@ const typeOnly = size !== "lead" && !story.image;
   }
   .type-only.feature .title {
     font-size: clamp(1.3rem, 2vw, 1.7rem);
+  }
+  /* A lead with no photo and no logo is a full-width headline card. */
+  .lead.type-only {
+    grid-template-columns: 1fr;
+  }
+  .lead.type-only .body {
+    padding: clamp(26px, 4vw, 52px);
+    max-width: 62rem;
+  }
+  .lead.type-only .title {
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    line-height: 1.12;
   }
 </style>

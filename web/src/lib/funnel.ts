@@ -15,6 +15,8 @@ export interface FunnelStep {
   value: number;
   label: string;
   hint: string;
+  /** Where the number comes from (a site path with its anchor). */
+  link: string;
 }
 
 const sum = (xs: number[]) => xs.reduce((n, x) => n + (Number.isFinite(x) ? x : 0), 0);
@@ -26,11 +28,12 @@ export function buildFunnel(input: FunnelInput, since?: string): FunnelStep[] {
   const passed = Number(input.gate.published) || 0;
   const sinceLabel = since ? ` since ${since}` : "";
   const steps: FunnelStep[] = [
-    { value: screened, label: "Articles screened", hint: `Nigerian business news${sinceLabel}` },
-    { value: read, label: "Read by the model", hint: "after the topic guard" },
-    { value: claims, label: "Ownership claims extracted", hint: "a named holder and company" },
+    { value: screened, label: "Articles screened", hint: `Nigerian business news${sinceLabel}`, link: "how-it-works/#record" },
+    { value: read, label: "Read by the model", hint: "after the topic guard", link: "news/" },
+    { value: claims, label: "Ownership claims extracted", hint: "a named holder and company", link: "how-it-works/#gate" },
     {
       value: input.holdings,
+      link: "register/#holdings",
       label: "On the register",
       hint: [
         passed && claims ? `${claims - passed} withheld by the checks` : "",

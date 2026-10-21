@@ -197,6 +197,17 @@
         return tokens.some(function (t) { return inList(ORG_WORDS, t); });
     }
 
+    /* The retired heuristic fallback stamped position "Officer" plus the
+       article's first organisation onto every person it found. Neither was
+       a finding, so where the bare post appears the organisation beside it
+       is invented too -- "Fayose → Officer @ Tinubu" is two people and no
+       relationship. Mirrors is_unevidenced_officer in relevance.py, which
+       strips these at export; this half covers people.json files published
+       before that shipped. Exact match: "Chief Security Officer" is real. */
+    function isUnevidencedOfficer(position) {
+        return normalizeName(position) === "officer";
+    }
+
     /** True for "Unnamed Commissioner": a real move, but nobody to link to. */
     function isUnnamedPerson(name) {
         return /^unnamed\b/.test(normalizeName(name));
@@ -251,7 +262,12 @@
                 // The same markers turn up in Position and Organization
                 // ("President @ Not Specified", "Officer @ N/A"). The move
                 // is still real, so drop the empty half, not the row.
-                var role = [p.position, p.organization]
+                // The fingerprint discards the organisation with the post:
+                // the same evidence-free code wrote both.
+                var parts = isUnevidencedOfficer(p.position)
+                    ? []
+                    : [p.position, p.organization];
+                var role = parts
                     .filter(function (part) { return part && !isPlaceholderName(part); })
                     .join(" @ ");
                 // "Unnamed Ex-minister" has no dossier to open and slugifies
@@ -428,6 +444,7 @@
         isPlaceholderName: isPlaceholderName,
         isUnnamedPerson: isUnnamedPerson,
         isRoleOrOrgName: isRoleOrOrgName,
+        isUnevidencedOfficer: isUnevidencedOfficer,
         renderAppointmentsHTML: renderAppointmentsHTML,
         ledgerRows: ledgerRows,
         ledgerColumns: ledgerColumns,

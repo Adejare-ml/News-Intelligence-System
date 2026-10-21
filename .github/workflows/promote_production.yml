@@ -1,0 +1,114 @@
+name: Promote to production
+
+# Publishes a tested version of the site to production (auranews.pages.dev).
+#
+#   Actions -> "Promote to production" -> Run workflow
+#
+# By default it promotes the current main, which is what the GitHub Pages
+# test site shows. The chosen commit's site code is built with today's data
+# and pushed to the cloudflare-pages branch, which Cloudflare Pages serves,
+# and the `production` tag moves to that commit. From then on the
+# scheduler's four daily data refreshes rebuild production with that same
+# code, so nothing untested reaches production by itself.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Commit, branch or tag to promote (default: main)"
+        required: false
+        default: main
+
+permissions:
+  contents: write
+
+# One promotion at a time, and never cancelled halfway.
+concurrency:
+  group: production-deploy
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.resolve.outputs.sha }}
+    steps:
+      - name: Checkout main (the latest data)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Resolve the version to promote
+        id: resolve
+        env:
+          REF: ${{ inputs.ref }}
+        run: |
+          set -euo pipefail
+          git fetch --tags --force origin
+          SHA=$(git rev-parse --verify "${REF:-main}^{commit}" 2>/dev/null \
+                || git rev-parse --verify "origin/${REF}^{commit}")
+          echo "sha=$SHA" >> "$GITHUB_OUTPUT"
+          echo "Promoting $SHA ($(git log -1 --format=%s "$SHA"))"
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+
+      - name: Restore logo cache
+        uses: actions/cache@v6
+        with:
+          path: web/public/logos
+          key: logos-${{ hashFiles('web/src/lib/logos.ts') }}
+
+      - name: Build production from the promoted code and current data
+        run: bash web/scripts/build-production.sh "${{ steps.resolve.outputs.sha }}"
+
+      - name: Publish to the cloudflare-pages branch
+        # Pinned to a commit SHA so a moved tag cannot inject code into a
+        # workflow that holds a contents:write token
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
+        with:
+          folder: out-production
+          branch: cloudflare-pages
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Names the promoted commit, which the scheduler also reads.
+          commit-message: "Deploying to cloudflare-pages from @ ${{ github.repository }}@${{ steps.resolve.outputs.sha }} (promoted)"
+
+      - name: Mark the promoted version
+        env:
+          SHA: ${{ steps.resolve.outputs.sha }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git tag -f production "$SHA"
+          git push -f origin refs/tags/production
+          echo "### Promoted to production" >> "$GITHUB_STEP_SUMMARY"
+          echo "\`$SHA\` — $(git log -1 --format=%s "$SHA")" >> "$GITHUB_STEP_SUMMARY"
+
+  smoke-test:
+    name: Smoke-test production
+    needs: promote
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify auranews.pages.dev serves the promoted build
+        run: |
+          set -uo pipefail
+          BASE="https://auranews.pages.dev"
+          ok=1
+          check() {
+            # Cloudflare builds the branch first; allow a few minutes.
+            for i in $(seq 1 12); do
+              if curl -fsSL --max-time 30 "$BASE$1" -o page && grep -q "$2" page; then echo "OK $1"; return 0; fi
+              sleep 20
+            done
+            echo "::error::Production $1 did not serve the promoted build (missing $2). Check Cloudflare -> auranews -> Deployments."
+            ok=0
+          }
+          check "/" "data-hero"
+          check "/register/" "data-holding"
+          check "/data/latest.json" "Title"
+          curl -fsSI --max-time 30 "$BASE/" | grep -qi "content-security-policy" \
+            || { echo "::warning::Production is not sending the CSP from _headers"; }
+          [ "$ok" = 1 ]

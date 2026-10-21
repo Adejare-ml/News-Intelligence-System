@@ -73,7 +73,7 @@ const patterns = [
     </p>
   </section>
 
-  <section class="wrap pipeline" aria-labelledby="pipe-title">
+  <section class="wrap pipeline" id="pipeline" aria-labelledby="pipe-title">
     <h2 class="sr-only" id="pipe-title">The pipeline</h2>
     <ol class="stages">
       {stages.map((s, i) => (
@@ -93,7 +93,7 @@ const patterns = [
     </ol>
   </section>
 
-  <section class="wrap numbers" aria-labelledby="num-title">
+  <section class="wrap numbers" id="record" aria-labelledby="num-title">
     <h2 class="h2" id="num-title" data-split>The record so far</h2>
     <dl class="grid" data-reveal>
       <div><dd class="num">{fmt(runs)}</dd><dt>pipeline runs{firstDay && ` since ${new Date(`${firstDay}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`}</dt></div>
@@ -121,7 +121,7 @@ const patterns = [
     </dl>
   </section>
 
-  <section class="wrap split" aria-labelledby="gate-title">
+  <section class="wrap split" id="gate" aria-labelledby="gate-title">
     <div>
       <h2 class="h2" id="gate-title" data-split>The validation gate</h2>
       <p class="lede">
