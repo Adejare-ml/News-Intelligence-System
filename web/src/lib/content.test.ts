@@ -1,7 +1,7 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { slugify, matchesSlug, nameKey } from "./entity-key.ts";
-import { cleanTitle, parseTime, rankStories, toStory, relativeTime, publisherName } from "./stories.ts";
+import { cleanTitle, parseTime, rankStories, toStory, relativeTime, publisherName, isNearDuplicate, storiesInDay } from "./stories.ts";
 import { parseBrief, inlineHtml, isQuietItem } from "./brief.ts";
 import { nextRunAfter, isStale, editionName } from "./edition.ts";
 
@@ -52,6 +52,30 @@ describe("stories", () => {
     ], now, 5);
     assert.equal(ranked[0].title, "Fresh and big");
     assert.equal(ranked.filter((s) => s.title === "Fresh and big").length, 1);
+  });
+  test("a separator left behind by the publisher tail is dropped", () => {
+    assert.equal(cleanTitle("EFCC arrests businessman for $120m | - The Eagle Online", "The Eagle Online").title,
+      "EFCC arrests businessman for $120m");
+  });
+  test("near-duplicate headlines from two outlets count once", () => {
+    assert.ok(isNearDuplicate("FG pays N4.25bn to 600 more former Nigeria Airways workers", "FG pays fresh N4.25bn to 600 ex-Nigeria Airways workers"));
+    assert.ok(isNearDuplicate("Keyamo approves design for Lagos airport monorail", "Keyamo approves design for Lagos Airport monorail project"));
+    assert.ok(!isNearDuplicate("FG, Bi-Courtney end 18-year MMA2 dispute", "FAAN begins earning MMA2 revenue as 20-year dispute with Bi-Courtney ends"));
+    const now = new Date("2026-10-21T12:00:00Z");
+    const ranked = rankStories([
+      { ID: 1, Title: "Keyamo approves design for Lagos airport monorail", Time: "2026-10-21T10:00:00Z" },
+      { ID: 2, Title: "Keyamo approves design for Lagos Airport monorail project", Time: "2026-10-21T09:00:00Z" },
+    ], now);
+    assert.equal(ranked.length, 1);
+  });
+  test("one definition of stories today: distinct stories in the last 24 hours", () => {
+    const at = new Date("2026-10-21T12:00:00Z");
+    assert.equal(storiesInDay([
+      { Title: "Keyamo approves design for Lagos airport monorail", Time: "2026-10-21T10:00:00Z" },
+      { Title: "Keyamo approves design for Lagos Airport monorail project", Time: "2026-10-21T09:00:00Z" },
+      { Title: "Customs targets N11trn revenue", Time: "2026-10-20T13:00:00Z" },
+      { Title: "Old story", Time: "2026-10-19T10:00:00Z" },
+    ], at), 2);
   });
   test("covers are deterministic and risk-toned", () => {
     const a = toStory({ Title: "EFCC arraigns four", Category: "Legal", "Risk Score": 80 });
@@ -110,6 +134,11 @@ describe("brief", () => {
     const item = parseBrief("### Key Developments\n- **Pledge made** in two waves. ([Punch Newspapers](https://news.example/b)))  ").sections[0].items[0];
     assert.deepEqual(item.source, { name: "Punch Newspapers", url: "https://news.example/b" });
     assert.equal(item.rest, "in two waves.");
+  });
+  test("a headline the pipeline restored from the source title reads cleanly", () => {
+    const item = parseBrief("### Key Developments\n- **FAAN begins earning MMA2 revenue**. The authority has begun receiving revenue. ([Premium Times](https://news.example/c))").sections[0].items[0];
+    assert.equal(item.lead, "FAAN begins earning MMA2 revenue");
+    assert.equal(item.rest, "The authority has begun receiving revenue.");
   });
   test("recognises quiet items", () => {
     assert.ok(isQuietItem(parseBrief(md).sections[1].items[0]));

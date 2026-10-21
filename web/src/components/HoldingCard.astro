@@ -24,6 +24,7 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
   data-search={search}
   data-stake={h.stake !== null ? "1" : "0"}
   data-pattern={h.flags.length ? "1" : "0"}
+  data-unsourced={h.unsourced ? "1" : "0"}
   data-band={h.band?.id ?? ""}
   data-multi={multiCompany ? "1" : "0"}
   data-last={h.lastReported}
@@ -41,6 +42,8 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
 
   <div class="tags">
     {h.band && <span class="chip chip-gold">{h.band.label}</span>}
+    {h.kind === "role" && <span class="chip" title="A board post was reported, not a shareholding.">Board role, no stake</span>}
+    {h.unsourced && <span class="chip chip-muted" title="No article or filing is on file for this record. It is shown for reference and left out of the register's counts.">No source on file</span>}
     {h.flags.map((f) => (
       <span class:list={["chip", f.severity === "high" ? "chip-crimson" : "chip-royal"]} title={f.detail}>{f.title}</span>
     ))}

@@ -47,6 +47,13 @@ function save(key: string, value: unknown) {
 }
 
 const read = new Set<string>(store<string[]>(READ_KEY, []));
+// A first visit is not "30 unread": only the latest day's alerts are new to
+// a newcomer, and everything older starts out read.
+if (store<number>(SEEN_KEY, 0) === 0 && read.size === 0 && alerts.length) {
+  const latest = alerts.reduce((d, a) => (a.date > d ? a.date : d), "");
+  for (const a of alerts) if (a.date !== latest) read.add(a.id);
+  save(READ_KEY, [...read]);
+}
 const unread = () => alerts.filter((a) => !read.has(a.id));
 
 function esc(text: string): string {

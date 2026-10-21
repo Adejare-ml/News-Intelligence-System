@@ -137,6 +137,8 @@ const ARC_DRAW = 0.6;
 
 export interface GlobeOptions {
   routes?: Route[];
+  /** Routes are the watch-list, not recorded chains: drawn dim and dashed. */
+  illustrative?: boolean;
   intro?: boolean;
   onIntroProgress?: (p: number) => void;
   onIntroDone?: () => void;
@@ -392,9 +394,12 @@ export class Globe {
           on = true;
         } else ctx.lineTo(p.sx, p.sy);
       }
-      ctx.strokeStyle = `rgba(${this.pal.arc}, ${drawing ? 0.8 : 0.42})`;
-      ctx.lineWidth = Math.min(2.2, 0.9 + 0.35 * arc.weight);
+      const dim = this.opts.illustrative;
+      ctx.strokeStyle = `rgba(${this.pal.arc}, ${drawing ? (dim ? 0.5 : 0.8) : (dim ? 0.22 : 0.42)})`;
+      ctx.lineWidth = dim ? 1 : Math.min(2.2, 0.9 + 0.35 * arc.weight);
+      if (dim) ctx.setLineDash([3, 5]);
       ctx.stroke();
+      if (dim) ctx.setLineDash([]);
 
       const head = pts[pts.length - 1];
       if (drawing && head.z > -0.05) {
@@ -414,6 +419,8 @@ export class Globe {
           ctx.arc(head.sx, head.sy, this.radius * (0.015 + 0.06 * easeOutCubic(k)), 0, Math.PI * 2);
           ctx.stroke();
         }
+        // No packets travel a route nothing has been recorded on.
+        if (this.opts.illustrative) continue;
         const travel = (this.elapsed * 0.16 + arc.phase) % 1;
         const p = pts[Math.min(pts.length - 1, Math.floor(travel * STEPS))];
         if (p && p.z > -0.05) {

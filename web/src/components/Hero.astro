@@ -15,10 +15,10 @@ interface Props {
 const { edition, dateLabel, summary, storiesToday, routes, routesFromData } = Astro.props;
 
 const kpis = [
-  { value: summary.holdings, label: "Holdings tracked", hint: `${summary.holders} people and firms behind them` },
+  { value: summary.holdings, label: "Sourced holdings", hint: `${summary.holders} people and firms behind them` },
   { value: summary.companies, label: "Companies mapped", hint: "From reported ownership" },
   { value: summary.withPattern, label: "Patterns worth checking", hint: `${summary.highSeverity} rated high severity` },
-  { value: storiesToday, label: "Stories read today", hint: "Business and regulatory news" },
+  { value: storiesToday, label: "Stories, last 24 hours", hint: "Distinct business and regulatory stories" },
 ];
 ---
 <section class="hero" data-hero>
@@ -60,17 +60,20 @@ const kpis = [
         <canvas
           class="globe"
           data-globe
+          data-illustrative={routesFromData ? "0" : "1"}
           role="img"
           aria-label={`Globe showing routes from Lagos and Abuja to ${routes.map((r) => r.label).join(", ")}`}
         ></canvas>
         <p class="drag-hint" aria-hidden="true">Drag to spin</p>
       </div>
       <figcaption id="globe-caption">
-        <span class="num routes-count"><span data-route-count>{routes.length}</span> offshore routes</span>
+        <span class="num routes-count">
+          <span>{summary.offshore}</span> of {summary.holdings} holdings route offshore so far
+        </span>
         <span class="caption-text">
           {routesFromData
-            ? "Jurisdictions named in the ownership chains AURA has recorded."
-            : "Where Nigerian ownership chains commonly route: the secrecy jurisdictions AURA watches for."}
+            ? "The lines are the jurisdictions named in the ownership chains AURA has recorded."
+            : `None recorded yet. The dashed lines are the ${routes.length} jurisdictions AURA watches for, not findings.`}
         </span>
       </figcaption>
     </figure>
@@ -308,11 +311,23 @@ const kpis = [
     .hero-grid {
       grid-template-columns: 1fr;
     }
+    /* Phones: the question first, then the globe, then the rest of the copy. */
+    .copy {
+      display: contents;
+    }
+    .hero-grid {
+      gap: 20px;
+    }
+    .edition { order: 0; justify-self: start; }
+    .title { order: 1; }
     .globe-wrap {
-      order: -1;
+      order: 2;
       margin-inline: auto;
       width: min(100%, 440px);
     }
+    .lede { order: 3; margin: 0; }
+    .ctas { order: 4; margin: 0; }
+    .kpis { order: 5; margin: 0; }
     .globe-stage {
       max-width: 440px;
     }

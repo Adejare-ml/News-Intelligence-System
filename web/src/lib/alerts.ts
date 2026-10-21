@@ -50,8 +50,9 @@ export function cleanAlerts(raw: RawAlert[], limit = 30): Alert[] {
       url,
       source: publisherName(publisher || String(a.source || "")),
       score,
-      // The score decides the level here: alerts.json's stored level lags the score.
-      level: riskLevelFor(score),
+      // The pipeline's own level wins, so the inbox agrees with the brief and
+      // the register; the score only decides when no level was stored.
+      level: riskLevelFor(score, a.risk_level),
     });
   }
   return out

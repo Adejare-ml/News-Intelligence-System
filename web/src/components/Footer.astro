@@ -22,7 +22,9 @@ const year = new Date().getFullYear();
     </nav>
   </div>
   <div class="wrap base meta">
-    <span>© {year} AURA · Built by Adejare</span>
+    <span>
+      © {year} AURA · Designed and built by Adejare{hasSection("how-it-works/") && <> · <a href={href("how-it-works/")}>how it was made</a></>}
+    </span>
     <a href="https://github.com/Adejare-ml/News-Intelligence-System" rel="noopener">Source on GitHub</a>
   </div>
 </footer>

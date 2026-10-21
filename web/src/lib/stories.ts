@@ -51,14 +51,17 @@ export function cleanTitle(title: string, source = ""): { title: string; publish
   // Feeds sometimes leave a dangling separator: "... investor of $120m |".
   const text = String(title || "").trim().replace(/\s*[|–—-]+\s*$/, "");
   const src = String(source || "").trim();
+  // "... of $120m | - The Eagle Online": the separator left behind once
+  // the publisher is cut is dropped too.
+  const tidy = (t: string) => t.trim().replace(/\s*[|–—-]+\s*$/, "").trim();
   for (const sep of [" - ", " | ", " – ", " — "]) {
     if (src && text.toLowerCase().endsWith((sep + src).toLowerCase())) {
-      return { title: text.slice(0, -(sep.length + src.length)).trim(), publisher: src };
+      return { title: tidy(text.slice(0, -(sep.length + src.length))), publisher: src };
     }
   }
   const m = text.match(TAIL_RE);
   if (m && m[1].trim().split(/\s+/).length <= 6) {
-    return { title: text.slice(0, m.index).trim(), publisher: m[1].trim() };
+    return { title: tidy(text.slice(0, m.index)), publisher: m[1].trim() };
   }
   return { title: text, publisher: src };
 }
@@ -170,20 +173,52 @@ export function storyScore(s: Story, now: Date): number {
   return s.importance * 0.45 + s.risk * 0.35 + freshness * 30 + imageBonus;
 }
 
-export function rankStories(articles: Article[], now: Date, limit = 9): Story[] {
-  const seen = new Set<string>();
-  const stories: Story[] = [];
-  for (const a of articles || []) {
-    const s = toStory(a);
-    const key = s.title.toLowerCase();
-    if (!s.title || seen.has(key)) continue;
-    seen.add(key);
-    stories.push(s);
+const DUP_STOP = new Set(["the", "a", "an", "of", "in", "on", "for", "to", "and", "as", "at", "by", "with", "is", "its", "from"]);
+
+function titleTokens(title: string): string[] {
+  return title.toLowerCase().normalize("NFKD").replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/).filter((w) => w && !DUP_STOP.has(w));
+}
+
+/**
+ * Two outlets' headlines for one event ("FAAN begins earning MMA2 revenue
+ * as dispute ends" / "FAAN starts earning MMA2 revenue as 20-year dispute
+ * ends"): the same opening words, or mostly the same words.
+ */
+export function isNearDuplicate(a: string, b: string): boolean {
+  const ta = titleTokens(a);
+  const tb = titleTokens(b);
+  if (!ta.length || !tb.length) return false;
+  if (ta.length >= 5 && ta.slice(0, 8).join(" ") === tb.slice(0, 8).join(" ")) return true;
+  const sa = new Set(ta);
+  const sb = new Set(tb);
+  let shared = 0;
+  for (const w of sa) if (sb.has(w)) shared++;
+  return shared / (sa.size + sb.size - shared) >= 0.6;
+}
+
+/** Stories with exact and near-duplicate headlines removed, best first. */
+export function dedupeStories(stories: Story[], now: Date): Story[] {
+  const ranked = [...stories].sort((a, b) => storyScore(b, now) - storyScore(a, now)
+    || (b.published?.getTime() ?? 0) - (a.published?.getTime() ?? 0));
+  const kept: Story[] = [];
+  for (const s of ranked) {
+    if (!s.title) continue;
+    if (kept.some((k) => k.title.toLowerCase() === s.title.toLowerCase() || isNearDuplicate(k.title, s.title))) continue;
+    kept.push(s);
   }
-  return stories
-    .sort((a, b) => storyScore(b, now) - storyScore(a, now)
-      || (b.published?.getTime() ?? 0) - (a.published?.getTime() ?? 0))
-    .slice(0, limit);
+  return kept;
+}
+
+export function rankStories(articles: Article[], now: Date, limit = 9): Story[] {
+  return dedupeStories((articles || []).map(toStory), now).slice(0, limit);
+}
+
+/** The one definition of "stories today": distinct stories in the 24h before `at`. */
+export function storiesInDay(articles: Article[], at: Date): number {
+  const recent = (articles || []).map(toStory).filter((s) =>
+    s.published && at.getTime() - s.published.getTime() < 36e5 * 24 && s.published.getTime() <= at.getTime() + 36e5);
+  return dedupeStories(recent, at).length;
 }
 
 /** "3h ago", "Yesterday", "18 Oct". Reference time is passed in so builds are reproducible. */
