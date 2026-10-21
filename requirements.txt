@@ -1,6 +1,6 @@
-fastapi==0.143.3
+fastapi==0.146.0
 uvicorn[standard]==0.54.0
-sqlalchemy==2.1.4
+sqlalchemy==2.1.5
 psycopg2-binary==2.9.13
 pgvector==0.5.1
 celery==5.6.3
@@ -10,17 +10,17 @@ pydantic-settings==2.16.0
 feedparser==6.0.14
 beautifulsoup4==4.15.0
 spacy==3.8.16
-sentence-transformers==3.0.1
+sentence-transformers==6.1.0
 pyjwt==2.15.1
-requests==2.33.0
-numpy==1.26.4
+requests==2.34.2
+numpy==2.5.4
 bcrypt==5.0.0
 gspread==6.2.1
-google-auth==2.61.0
+google-auth==2.62.0
 pandas==3.0.6
 openpyxl==3.1.5
 google-generativeai==0.8.6
-openai>=1.55.3,<2
+openai>=3.35.1,<4
 slowapi==0.1.10
 # OAuth2PasswordRequestForm parses form bodies through this; without it the
 # login endpoint 500s at request time. (Surfaced by tests/test_api_routes.py.)

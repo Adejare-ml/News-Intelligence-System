@@ -10,17 +10,17 @@
 # Keep pins in step with requirements.txt: when a pin changes there, change
 # it here. pytest itself is installed by the workflow, not listed here, for
 # the same reason it is not in requirements.txt.
-fastapi==0.143.3
+fastapi==0.146.0
 pydantic==2.14.1
 pydantic-settings==2.16.0
 feedparser==6.0.14
 beautifulsoup4==4.15.0
 pyjwt==2.15.1
-requests==2.33.0
-numpy==1.26.4
+requests==2.34.2
+numpy==2.5.4
 pandas==3.0.6
 openpyxl==3.1.5
-openai>=1.55.3,<2
+openai>=3.35.1,<4
 # The Google Sheets client (backend/app/db/excel_db.py, SheetsDatabase) had
 # no real CI coverage: this file never installed it, so tests/test_sheets_auth.py
 # only ever ran against the migration-plan helper, never the actual auth
@@ -28,13 +28,13 @@ openai>=1.55.3,<2
 # meaningless as a result -- every bump needed a manual fresh-venv
 # verification pass instead (see the 2026-09-22 gspread/google-auth merges).
 gspread==6.2.1
-google-auth==2.61.0
+google-auth==2.62.0
 # Typed extraction program and the GEPA optimiser (see requirements.txt).
 dspy==3.4.1
 # API-surface tests (tests/test_api_routes.py): the auth boundary was the
 # one part of the codebase with zero coverage. Pins match requirements.txt;
 # httpx is TestClient's transport and is CI-only.
-sqlalchemy==2.1.4
+sqlalchemy==2.1.5
 slowapi==0.1.10
 bcrypt==5.0.0
 httpx==0.28.1
