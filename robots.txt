@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /img
+
+Sitemap: https://adejare-ml.github.io/News-Intelligence-System/sitemap.xml
