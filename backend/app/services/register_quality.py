@@ -238,31 +238,71 @@ def _filled(row: Dict[str, Any]) -> int:
     return sum(1 for v in row.values() if _clean(v))
 
 
+_UNNAMED_RE = re.compile(
+    r"\b(unknown|unspecified|unnamed|not specified|not disclosed|undisclosed|tracked contractor|tbd)\b", re.I)
+_PROJECT_STOP = {
+    "the", "a", "an", "of", "for", "to", "and", "in", "on", "with", "by", "new",
+    "deal", "contract", "project", "projects", "funding", "programme", "program",
+}
+
+
+def _contractor(row: Dict[str, Any]) -> str:
+    text = _clean(row.get("Contractor"))
+    return "" if not text or _UNNAMED_RE.search(text) else canonical_company(text)
+
+
+def _project_tokens(row: Dict[str, Any]) -> set:
+    return {w for w in _fold(row.get("Project")).split() if w not in _PROJECT_STOP and len(w) > 2}
+
+
+def _same_award(a: Dict[str, Any], b: Dict[str, Any]) -> bool:
+    """Two outlets' rows for one award: the same disclosed value, and either
+    the same project in other words or the same agency, with no two
+    different named contractors."""
+    if a.get("Amount Value") in (None, "") or a.get("Amount Value") != b.get("Amount Value"):
+        return False
+    if (a.get("Amount Currency") or "") != (b.get("Amount Currency") or ""):
+        return False
+    ca, cb = _contractor(a), _contractor(b)
+    if ca and cb and ca != cb:
+        return False
+    ta, tb = _project_tokens(a), _project_tokens(b)
+    overlap = len(ta & tb) / len(ta | tb) if ta and tb else 0.0
+    same_agency = canonical_company(_clean(a.get("Agency"))) == canonical_company(_clean(b.get("Agency")))
+    return overlap >= 0.34 or same_agency
+
+
 def dedupe_procurement(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """One row per award: same agency, contractor and amount, reported by
-    several outlets. Rows with neither a named contractor nor an amount are
-    kept as they are (nothing identifies them as the same award), and an
-    award with no amount only merges with another on the same date."""
+    """One row per award, keeping the fullest report of it.
+
+    Several outlets reporting one award wrote several rows, often with the
+    agency or contractor spelled differently ("Bureau of Public Procurement"
+    / "Federal Government of Nigeria" for the same N1.5trn reforms). Rows
+    with no disclosed value merge only on the same agency, named contractor
+    and date. Rows identifying nothing (no value, no named contractor) are
+    left as they are.
+    """
     rows = list(rows or [])
-    best: Dict[Any, int] = {}
-    order: List[Any] = []
+    kept: List[int] = []
     for i, row in enumerate(rows):
-        contractor = canonical_company(_clean(row.get("Contractor")))
-        amount = row.get("Amount Value")
-        if not contractor and amount in (None, ""):
-            key = ("row", i)
-        else:
-            key = (
-                canonical_company(_clean(row.get("Agency"))),
-                contractor,
-                amount if amount not in (None, "") else str(row.get("Date", ""))[:10],
-            )
-        if key not in best:
-            best[key] = i
-            order.append(key)
-        elif _filled(row) > _filled(rows[best[key]]):
-            best[key] = i
-    return [rows[best[k]] for k in order]
+        match = None
+        for k, j in enumerate(kept):
+            other = rows[j]
+            if row.get("Amount Value") not in (None, ""):
+                if _same_award(row, other):
+                    match = k
+                    break
+            elif other.get("Amount Value") in (None, "") and _contractor(row):
+                if (_contractor(row) == _contractor(other)
+                        and canonical_company(_clean(row.get("Agency"))) == canonical_company(_clean(other.get("Agency")))
+                        and str(row.get("Date", ""))[:10] == str(other.get("Date", ""))[:10]):
+                    match = k
+                    break
+        if match is None:
+            kept.append(i)
+        elif _filled(row) > _filled(rows[kept[match]]):
+            kept[match] = i
+    return [rows[i] for i in kept]
 
 
 # --- brief headline QA -------------------------------------------------------------

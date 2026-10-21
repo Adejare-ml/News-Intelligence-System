@@ -115,6 +115,37 @@ class TestProcurement:
         assert len(q.dedupe_procurement([a, b, c])) == 2
 
 
+class TestProcurementAcrossSpellings:
+    def p(self, **kw):
+        base = {"Agency": "Federal Government of Nigeria", "Contractor": "None", "Amount": "",
+                "Project": "", "Source": "", "Date": "", "Amount Value": 1.5e12, "Amount Currency": "NGN"}
+        base.update(kw)
+        return base
+
+    def test_same_value_and_project_under_another_agency_merges(self):
+        rows = [self.p(Agency="Bureau of Public Procurement", Project="procurement reforms and benchmarking"),
+                self.p(Project="procurement reforms")]
+        assert len(q.dedupe_procurement(rows)) == 1
+
+    def test_same_value_same_agency_different_wording_merges(self):
+        rows = [self.p(**{"Amount Value": 40.7e9, "Project": "Funding for primary healthcare expansion"}),
+                self.p(**{"Amount Value": 40.7e9, "Contractor": "Primary Health Care centers",
+                          "Project": "Boost service delivery to Primary Health Care centers"})]
+        assert len(q.dedupe_procurement(rows)) == 1
+
+    def test_two_named_contractors_never_merge(self):
+        rows = [self.p(Agency="Ogun State Government", Contractor="DP World", Project="Deep seaport",
+                       **{"Amount Value": 7e9, "Amount Currency": "USD"}),
+                self.p(Agency="Ogun State Government", Contractor="NNPCL", Project="Olokola port",
+                       **{"Amount Value": 7e9, "Amount Currency": "USD"})]
+        assert len(q.dedupe_procurement(rows)) == 2
+
+    def test_same_value_unrelated_awards_stay_apart(self):
+        rows = [self.p(Agency="Oyo State Government", Project="Amotekun projects", **{"Amount Value": 3e9}),
+                self.p(Agency="Ekiti State Government", Project="New high court complex", **{"Amount Value": 3e9})]
+        assert len(q.dedupe_procurement(rows)) == 2
+
+
 URL = "https://news.google.com/rss/articles/abc?oc=5"
 REC = {
     "url": URL,

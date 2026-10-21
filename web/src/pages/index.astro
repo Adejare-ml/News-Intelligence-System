@@ -9,7 +9,9 @@ import MarketStrip from "../components/MarketStrip.astro";
 import Subscribe from "../components/Subscribe.astro";
 import * as data from "../lib/data.ts";
 import { parseBrief } from "../lib/brief.ts";
-import { groupHoldings, summarise, type Holding } from "../lib/psc.ts";
+import { groupHoldings, summarise, counted, type Holding } from "../lib/psc.ts";
+import { within, STORY_OF_DAY_DAYS, FRONT_PAGE_DAYS } from "../lib/freshness.ts";
+import { buildFunnel } from "../lib/funnel.ts";
 import { rankStories, parseTime, storiesInDay } from "../lib/stories.ts";
 import { DEFAULT_ROUTES, routesFromRecords } from "../lib/routes.ts";
 import { nextRunAfter, isStale, lagosTime, lagosDate, editionName } from "../lib/edition.ts";
@@ -34,11 +36,32 @@ const storiesToday = storiesInDay(articles, editionAt);
 const holdings = groupHoldings(records);
 const summary = summarise(holdings);
 
-// Story of the day: the richest holding (a disclosed stake, the most reports).
-const storyScore = (h: Holding) => (h.stake !== null ? 10 : 0) + h.reports.length * 2 + h.flags.length;
-const ranked = [...holdings].sort((a, b) => storyScore(b) - storyScore(a));
-const featured = ranked[0];
-const others = ranked.slice(1).filter((h) => h.person !== featured?.person).slice(0, 4);
+// The hero's numbers: the pipeline's yield, not a lone small count.
+const historyDays = data.history().days ?? [];
+const since = historyDays[0]?.date
+  ? new Date(`${historyDays[0].date}T12:00:00Z`).toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" })
+  : undefined;
+const funnel = buildFunnel({
+  sources: data.readJson<{ sources?: { total?: number }[] }>("sources.json", {}).sources ?? [],
+  days: historyDays,
+  gate: data.registerQuality(),
+  holdings: summary.holdings,
+  roles: summary.roles,
+}, since);
+
+// Story of the day: a current ownership claim, never a board role and never
+// a withheld row (data.psc() only returns publishable rows). Recent first:
+// the last 30 days, else the most recent claim there is.
+const claims = counted(holdings);
+const storyScore = (h: Holding) => (h.stake !== null ? 10 : 0) + h.days * 2 + h.flags.length;
+const byStory = (a: Holding, b: Holding) => storyScore(b) - storyScore(a) || b.lastReported.localeCompare(a.lastReported);
+const recentClaims = claims.filter((h) => within(h.lastReported, STORY_OF_DAY_DAYS, editionAt)).sort(byStory);
+const featured = recentClaims[0] ?? [...claims].sort((a, b) => b.lastReported.localeCompare(a.lastReported))[0];
+// The list under it: other current claims, not old records filling space.
+const others = claims
+  .filter((h) => h !== featured && h.person !== featured?.person && within(h.lastReported, FRONT_PAGE_DAYS, editionAt))
+  .sort(byStory)
+  .slice(0, 4);
 
 const dataRoutes = routesFromRecords(records);
 const routes = dataRoutes ?? DEFAULT_ROUTES;
@@ -49,7 +72,7 @@ const next = nextRunAfter(editionAt);
     edition={editionName(editionAt)}
     dateLabel={lagosDate(editionAt)}
     summary={summary}
-    storiesToday={storiesToday}
+    funnel={funnel}
     routes={routes}
     routesFromData={Boolean(dataRoutes)}
   />

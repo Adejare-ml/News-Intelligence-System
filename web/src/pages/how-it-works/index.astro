@@ -17,6 +17,15 @@ const sources = sourcesPayload.sources ?? [];
 const screened = sources.reduce((n, s) => n + (s.total || 0), 0);
 const holdings = summarise(groupHoldings(data.psc()));
 const editions = listEditions().length;
+const gate = data.registerQuality();
+const gateChecks: [string, string][] = [
+  ["One name, one key", "“Alhaji Aliko Dangote” and “Aliko Dangote”, “Dangote Refinery” and “Dangote Petroleum Refinery”: honorifics, initials and company suffixes are folded so one holder is one card."],
+  ["Stake, control or role", "A chairmanship is not a shareholding. Each claim is typed, and board roles are shown as roles, never on the stake bar."],
+  ["No source, not published", "A claim with no article behind it is withheld from every page, not labelled and shown. Only the count is published."],
+  ["Implausible, held back", "A sports or entertainment figure recorded as a company holder, or a stake outside 0–100%, is quarantined for review."],
+  ["Same award, one row", "One contract reported by several outlets, under different spellings, is kept once."],
+  ["Headlines checked against sources", "A brief headline naming someone its source article never mentions is replaced by that article’s own title."],
+];
 
 const repo = resolve(process.cwd(), "..");
 const countLines = (p: string) => (existsSync(p) ? readFileSync(p, "utf-8").split("\n").filter((l) => l.trim()).length : 0);
@@ -110,6 +119,29 @@ const patterns = [
       <div><dd class="num">{fmt(gold)}</dd><dt>hand-verified gold extractions</dt></div>
       <div><dd class="num">{pyTests}</dd><dt>backend test modules, plus the site’s own unit tests</dt></div>
     </dl>
+  </section>
+
+  <section class="wrap split" aria-labelledby="gate-title">
+    <div>
+      <h2 class="h2" id="gate-title" data-split>The validation gate</h2>
+      <p class="lede">
+        Extraction is the easy half. Before anything reaches this site, the register passes a set of
+        checks in <code>register_quality.py</code>; every page reads only what passed, and a build
+        test fails if a withheld record renders anywhere.
+      </p>
+      {gate.checked ? (
+        <dl class="mini" data-reveal>
+          <div><dd class="num">{fmt(gate.checked)}</dd><dt>ownership claims extracted</dt></div>
+          <div><dd class="num">{fmt(gate.published ?? 0)}</dd><dt>passed and published</dt></div>
+          <div><dd class="num">{fmt((gate.unsourced ?? 0) + (gate.implausible ?? 0))}</dd><dt>withheld ({gate.unsourced ?? 0} with no source, {gate.implausible ?? 0} implausible)</dt></div>
+        </dl>
+      ) : null}
+    </div>
+    <ul class="patterns">
+      {gateChecks.map(([t, d], i) => (
+        <li data-reveal style={`--i:${i}`}><strong>{t}</strong><span>{d}</span></li>
+      ))}
+    </ul>
   </section>
 
   <section class="wrap split" aria-labelledby="pat-title">

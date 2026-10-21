@@ -5,15 +5,22 @@ import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
-import { groupHoldings, summarise, counted } from "../../lib/psc.ts";
+import { groupHoldings, summarise, counted, registerOrder } from "../../lib/psc.ts";
+import { within, REGISTER_RECENT_DAYS } from "../../lib/freshness.ts";
 import { toContract, sortContracts, type ProcurementRow } from "../../lib/procurement.ts";
 
-const holdings = groupHoldings(data.psc());
-const s = summarise(holdings);
+// Strongest claims first. Holdings not reported for a while move to
+// "Earlier reports", so old records never crowd out current reporting.
+const all = groupHoldings(data.psc()).sort(registerOrder);
+const now = new Date();
+const holdings = all.filter((h) => within(h.lastReported, REGISTER_RECENT_DAYS, now));
+const earlier = all.filter((h) => !within(h.lastReported, REGISTER_RECENT_DAYS, now));
+const s = summarise(all);
+const shown = summarise(holdings);
 const gate = data.registerQuality();
 const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0);
 const companiesPerPerson = new Map<string, Set<string>>();
-for (const h of holdings) {
+for (const h of all) {
   const k = h.person.toLowerCase();
   if (!companiesPerPerson.has(k)) companiesPerPerson.set(k, new Set());
   companiesPerPerson.get(k)!.add(h.company.toLowerCase());
@@ -22,9 +29,9 @@ const contracts = sortContracts(data.readJson<ProcurementRow[]>("procurement.jso
 
 const filters = [
   { id: "all", label: "All records", count: holdings.length },
-  { id: "stake", label: "Stake disclosed", count: s.withStake },
-  { id: "pattern", label: "Worth checking", count: s.withPattern },
-  { id: "band", label: "5–25% band", count: s.nigeriaBand },
+  { id: "stake", label: "Stake disclosed", count: shown.withStake },
+  { id: "pattern", label: "Worth checking", count: shown.withPattern },
+  { id: "band", label: "5–25% band", count: shown.nigeriaBand },
   { id: "multi", label: "Several companies", count: holdings.filter((h) => (companiesPerPerson.get(h.person.toLowerCase())?.size ?? 0) > 1).length },
 ];
 ---
@@ -36,8 +43,9 @@ const filters = [
     <p class="eyebrow">Persons with significant control</p>
     <h1 class="h1" data-split>The ownership register</h1>
     <p class="lede">
-      Every reported holding of 5% or more in a Nigerian company, grouped from the news reports that
-      mention it. One card per holder and company, however many times it was reported.
+      Who the press reports as owning or controlling Nigerian companies, grouped from the reports
+      that mention it: one card per holder and company. Disclosed stakes come first, then control
+      without a stake, then board roles.
     </p>
     <dl class="kpis" data-reveal>
       <div><dt>Sourced holdings</dt><dd class="num">{s.holdings}</dd></div>
@@ -89,6 +97,14 @@ const filters = [
     <p class="empty" hidden data-empty>
       Nothing matches. <button type="button" class="link" data-clear>Clear the filters</button>
     </p>
+    {earlier.length > 0 && (
+      <details class="earlier">
+        <summary>Earlier reports ({earlier.length}) · not reported in the last {REGISTER_RECENT_DAYS} days</summary>
+        <div class="grid">
+          {earlier.map((h, i) => <HoldingCard holding={h} index={i} />)}
+        </div>
+      </details>
+    )}
   </section>
 
   <div class="wrap">
@@ -133,6 +149,15 @@ const filters = [
     max-width: 62ch;
     color: var(--muted);
     font-size: 0.9rem;
+  }
+  .earlier {
+    margin-top: 32px;
+  }
+  .earlier summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-soft);
+    margin-bottom: 16px;
   }
   .demo {
     color: var(--gold);

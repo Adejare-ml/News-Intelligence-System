@@ -48,7 +48,10 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
   </div>
 
   <footer class="meta">
-    <span>{h.reports.length} {h.reports.length === 1 ? "report" : "reports"} · latest {fmt(h.lastReported)}</span>
+    <span>
+      Reported on {h.days} {h.days === 1 ? "day" : "days"} · latest {fmt(h.lastReported)}
+      {h.sources[0] && <> · <a class="src-link" href={h.sources[0].url} rel="noopener noreferrer" target="_blank">source ↗</a></>}
+    </span>
     <a class="company-link" href={href(`entity/${slugify(h.company)}/`)}>{h.company} →</a>
   </footer>
 </article>

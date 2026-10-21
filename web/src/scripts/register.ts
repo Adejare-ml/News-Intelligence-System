@@ -5,7 +5,7 @@
  * the search box filters without animation, since it fires on every key.
  */
 const grid = document.querySelector<HTMLElement>("[data-grid]");
-const cards = [...document.querySelectorAll<HTMLElement>("[data-holding]")];
+const cards = [...document.querySelectorAll<HTMLElement>("[data-grid] [data-holding]")];
 const buttons = [...document.querySelectorAll<HTMLButtonElement>("[data-filter]")];
 const search = document.querySelector<HTMLInputElement>("[data-register-search]");
 const result = document.querySelector<HTMLElement>("[data-result]");

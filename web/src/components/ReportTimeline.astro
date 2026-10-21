@@ -13,9 +13,12 @@ const fmt = (iso: string, year = true) => {
     : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", ...(year ? { year: "numeric" } : {}), timeZone: "UTC" });
 };
 const n = holding.reports.length;
+const days = holding.days;
 ---
 <div class="timeline">
-  <p class="eyebrow">Reported {n} {n === 1 ? "time" : "times"}{holding.firstReported && ` since ${fmt(holding.firstReported)}`}</p>
+  <p class="eyebrow">
+    Reported on {days} {days === 1 ? "day" : "days"}{holding.firstReported && days > 1 && ` since ${fmt(holding.firstReported)}`}
+  </p>
   <ol class="marks" style={`--n:${n}`}>
     {holding.reports.map((r, i) => (
       <li style={`--i:${i}`} class:list={{ has: r.stake !== null }}>
@@ -25,9 +28,32 @@ const n = holding.reports.length;
       </li>
     ))}
   </ol>
+  {holding.sources.length > 0 && (
+    <ul class="sources">
+      {holding.sources.slice(0, 4).map((s) => (
+        <li>
+          <a href={s.url} rel="noopener noreferrer" target="_blank">{s.title || s.publisher || "Source article"}</a>
+          <span class="meta">{[s.publisher, s.date && fmt(s.date)].filter(Boolean).join(" · ")}</span>
+        </li>
+      ))}
+    </ul>
+  )}
 </div>
 
 <style>
+  .sources {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+  .sources a {
+    color: var(--royal-ink);
+    font-weight: 560;
+    margin-right: 8px;
+  }
   .marks {
     list-style: none;
     margin: 18px 0 0;

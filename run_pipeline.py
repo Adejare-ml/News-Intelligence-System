@@ -512,7 +512,12 @@ def run_pipeline(seed: bool = False):
                 "Date": datetime.now().strftime("%Y-%m-%d"),
                 # Distinguishes real extractions from seeded demo rows so the
                 # dashboard can label them honestly.
-                "Source": "extracted"
+                "Source": "extracted",
+                # The reporting behind the claim, linked from every page
+                # that shows it.
+                "Source URL": url,
+                "Source Title": title,
+                "Publisher": source,
             })
             
         articles_processed += 1

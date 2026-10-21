@@ -10,7 +10,9 @@ const year = new Date().getFullYear();
       <p class="legal">
         Records are extracted by a language model from news reporting. They are <strong>not</strong> the
         statutory CAC register, and a record here is evidence of reporting, not a finding of wrongdoing.
-        Names may be shared by more than one person or company.
+        Names may be shared by more than one person or company. Everything here is machine-extracted
+        and unverified.
+        <a class="correct" href="https://github.com/Adejare-ml/News-Intelligence-System/issues/new?title=Correction%3A%20&labels=correction" rel="noopener">Request a correction or removal</a>.
       </p>
     </div>
     <nav class="links" aria-label="Footer">
@@ -59,6 +61,10 @@ const year = new Date().getFullYear();
   }
   .legal strong {
     color: var(--text-soft);
+  }
+  .legal .correct {
+    color: var(--royal-ink);
+    font-weight: 560;
   }
   .links {
     display: grid;

@@ -332,6 +332,10 @@ export interface Holding {
   nature: string;
   vehicle: string;
   reports: { date: string; stake: number | null; nature: string; source: string }[];
+  /** Distinct days it was reported on: repeated extractions are not repeat reporting. */
+  days: number;
+  /** The articles behind it, where the pipeline recorded them. */
+  sources: { url: string; title: string; publisher: string; date: string }[];
   firstReported: string;
   lastReported: string;
   flags: Flag[];
@@ -344,6 +348,34 @@ const PLACEHOLDER = new Set(["null", "none", "n/a", "na", "unknown", "-", "undef
 
 function dateOf(r: PscRecord): string {
   return String(r.Date ?? "").slice(0, 10);
+}
+
+/** Article links recorded on the rows, newest first, one per URL. */
+function articleSources(rows: PscRecord[]): Holding["sources"] {
+  const seen = new Set<string>();
+  const out: Holding["sources"] = [];
+  for (let i = rows.length - 1; i >= 0; i--) {
+    const r = rows[i];
+    const url = String(r["Source URL"] ?? "").trim();
+    if (!/^https?:\/\//.test(url) || seen.has(url)) continue;
+    seen.add(url);
+    out.push({
+      url,
+      title: String(r["Source Title"] ?? "").trim(),
+      publisher: String(r.Publisher ?? "").trim(),
+      date: dateOf(r),
+    });
+  }
+  return out;
+}
+
+/** Strongest claims first: a disclosed stake, then control, then board roles. */
+export function registerOrder(a: Holding, b: Holding): number {
+  const rank = (h: Holding) => (h.stake !== null ? 0 : h.kind === "stake" ? 1 : h.kind === "influence" ? 2 : 3);
+  return rank(a) - rank(b)
+    || (b.stake ?? 0) - (a.stake ?? 0)
+    || b.days - a.days
+    || b.lastReported.localeCompare(a.lastReported);
 }
 
 /**
@@ -435,6 +467,8 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
         nature: String(r["Nature of Control"] ?? "").trim(),
         source: sourceOf(r),
       })),
+      days: new Set(sorted.map(dateOf).filter(Boolean)).size,
+      sources: articleSources(sorted),
       firstReported: dateOf(sorted[0]),
       lastReported: dateOf(latest),
       flags,

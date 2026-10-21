@@ -39,6 +39,21 @@ export function slugHeading(text: string): string {
   return text.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 }
 
+/**
+ * The pipeline's stat names say what each counts, so they never read as a
+ * second definition of "stories today" (the site's is: distinct stories
+ * published in the last 24 hours).
+ */
+const STAT_LABELS: Record<string, string> = {
+  "total articles processed": "New articles analysed in today’s runs",
+  "high risk signals": "High-risk articles today",
+  "appointments logged": "Board appointments today",
+  "procurement awards": "Contract awards today",
+};
+export function statLabel(label: string): string {
+  return STAT_LABELS[label.toLowerCase()] ?? label;
+}
+
 /** Inline markdown -> HTML, with only http(s) links surviving. */
 export function inlineHtml(md: string): string {
   // The brief is model-written, and marked passes raw HTML straight
@@ -101,7 +116,7 @@ export function parseBrief(md: string): Brief {
     if (!current) continue;
     if (current.title === "Summary Statistics") {
       const stat = line.match(/^\s*-\s+\*\*(.+?):\*\*\s*(.+)$/);
-      if (stat) brief.stats.push({ label: stat[1].trim(), value: stat[2].trim() });
+      if (stat) brief.stats.push({ label: statLabel(stat[1].trim()), value: stat[2].trim() });
       continue;
     }
     if (/^\s*[-*]\s+/.test(line)) {
