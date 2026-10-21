@@ -8,6 +8,8 @@ from typing import List, Dict, Any, Optional
 from backend.app.core.config import settings
 import logging
 
+from backend.app.services.images import clean_image_url, image_from_feed_entry
+
 logger = logging.getLogger(__name__)
 
 # Mock Data Templates to seed a highly interactive, rich knowledge database
@@ -369,6 +371,7 @@ class NewsIngestionService:
                         # rather than treating this moment as its publication.
                         "published_at": entry.published if hasattr(entry, 'published') else "",
                         "raw_text": clean_summary,
+                        "image": image_from_feed_entry(entry),
                         "is_rss": True
                     })
             except Exception as e:
@@ -407,6 +410,7 @@ class NewsIngestionService:
                     "source": item.get("source", {}).get("name", "NewsAPI"),
                     "published_at": item.get("publishedAt"),
                     "raw_text": item.get("content") or item.get("description") or "",
+                    "image": clean_image_url(item.get("urlToImage")),
                     "is_rss": False
                 })
             return articles
@@ -457,6 +461,7 @@ class NewsIngestionService:
                         "source": item.get("source", {}).get("name", "GNews"),
                         "published_at": item.get("publishedAt"),
                         "raw_text": item.get("content") or item.get("description") or "",
+                        "image": clean_image_url(item.get("image")),
                         "is_rss": False
                     })
                 return articles
@@ -478,7 +483,7 @@ class NewsIngestionService:
             r = http_get_with_retry(
                 "https://content.guardianapis.com/search",
                 params={"q": "Nigeria", "api-key": settings.GUARDIAN_API_KEY,
-                        "show-fields": "bodyText", "page-size": 25},
+                        "show-fields": "bodyText,thumbnail", "page-size": 25},
                 timeout=10,
             )
             if r.status_code == 200:
@@ -493,6 +498,7 @@ class NewsIngestionService:
                         "source": "The Guardian",
                         "published_at": item.get("webPublicationDate"),
                         "raw_text": fields.get("bodyText") or item.get("webTitle"),
+                        "image": clean_image_url(fields.get("thumbnail")),
                         "is_rss": False
                     })
                 logger.info(f"Successfully fetched {len(articles)} articles from The Guardian.")
@@ -528,6 +534,7 @@ class NewsIngestionService:
                         "published_at": item.get("pubDate"),
                         # Fallback content to description, then title
                         "raw_text": item.get("content") or item.get("description") or item.get("title"),
+                        "image": clean_image_url(item.get("image_url")),
                         "is_rss": False
                     })
                 logger.info(f"Successfully fetched {len(articles)} articles from NewsData.io.")
