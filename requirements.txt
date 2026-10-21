@@ -1,11 +1,11 @@
-fastapi==0.111.0
-uvicorn[standard]==0.53.0
+fastapi==0.143.3
+uvicorn[standard]==0.54.0
 sqlalchemy==2.1.4
 psycopg2-binary==2.9.13
-pgvector==0.5.0
+pgvector==0.5.1
 celery==5.6.3
 redis==8.1.0
-pydantic==2.11.10
+pydantic==2.14.1
 pydantic-settings==2.16.0
 feedparser==6.0.14
 beautifulsoup4==4.15.0
@@ -28,4 +28,4 @@ python-multipart==0.0.32
 # Typed extraction program and the GEPA optimiser. Pinned: dspy.GEPA is marked
 # experimental upstream and may change without warning, and this dependency
 # decides the prompt behind the PSC register.
-dspy==3.4.0
+dspy==3.4.1
