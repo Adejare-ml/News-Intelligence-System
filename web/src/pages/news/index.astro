@@ -3,7 +3,8 @@ import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
 import { toStory, relativeTime, type Story } from "../../lib/stories.ts";
-import { imageSrc } from "../../lib/url.ts";
+import { imageSrc, href } from "../../lib/url.ts";
+import { logoFor } from "../../lib/logos.ts";
 
 const stories = data.articles().map(toStory).filter((s) => s.title);
 const seen = new Set<string>();
@@ -92,11 +93,20 @@ const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
               data-source={s.publisher}
               data-text={`${s.title} ${s.summary} ${s.entities.join(" ")}`.toLowerCase()}
             >
-              <a class="item" href={s.url} target="_blank" rel="noopener noreferrer">
-                <div class:list={["thumb", `tone-${s.cover.tone}`]} aria-hidden="true">
-                  <span>{s.cover.glyph}</span>
-                  {s.image && <img src={imageSrc(s.image)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />}
-                </div>
+              {(() => {
+                // A photo, else the organisation's logo, else no thumbnail at all.
+                const logo = s.image ? null : logoFor([s.title, s.entities.join(" | ")]);
+                return (
+              <a class:list={["item", { "no-thumb": !s.image && !logo }]} href={s.url} target="_blank" rel="noopener noreferrer">
+                {s.image ? (
+                  <div class="thumb" aria-hidden="true">
+                    <img src={imageSrc(s.image)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />
+                  </div>
+                ) : logo ? (
+                  <div class="thumb logo" aria-hidden="true" title={logo.name}>
+                    <img src={href(logo.path)} alt="" loading="lazy" decoding="async" />
+                  </div>
+                ) : null}
                 <div class="text">
                   <p class="kicker">
                     <span>{s.category}</span>
@@ -110,6 +120,8 @@ const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
                 </div>
                 <Icon name="arrowUpRight" size={18} class="out" />
               </a>
+                );
+              })()}
             </li>
           ))}
         </ol>
@@ -261,16 +273,18 @@ const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
     place-items: center;
     background: linear-gradient(135deg, #232a40, #0b0d14);
   }
-  .thumb span {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(237, 230, 216, 0.4);
+  .thumb.logo {
+    background: #fff;
   }
-  .thumb.tone-royal { background: linear-gradient(135deg, #2a49b8, #0f1736); }
-  .thumb.tone-gold { background: linear-gradient(135deg, #6d5418, #17130a); }
-  .thumb.tone-crimson { background: linear-gradient(135deg, #6e2a1d, #140c0b); }
+  .thumb.logo img {
+    inset: 18%;
+    width: 64%;
+    height: 64%;
+    object-fit: contain;
+  }
+  .item.no-thumb {
+    grid-template-columns: minmax(0, 1fr) 24px;
+  }
   .thumb img {
     position: absolute;
     inset: 0;
@@ -317,6 +331,9 @@ const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
     .item {
       grid-template-columns: 84px minmax(0, 1fr);
       gap: 14px;
+    }
+    .item.no-thumb {
+      grid-template-columns: minmax(0, 1fr);
     }
     .item :global(.out) {
       display: none;

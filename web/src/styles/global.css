@@ -403,16 +403,33 @@ button {
 }
 
 /* ---------- Reveal on scroll (progressive: content is visible without JS) ---------- */
+/* An item reached by its link is marked briefly so the eye finds it. */
+:target.item,
+:target.section-block {
+  animation: target-mark 2.4s var(--ease-out);
+}
+@keyframes target-mark {
+  0%, 30% { box-shadow: inset 3px 0 0 var(--gold); background: var(--gold-wash); }
+  100% { box-shadow: inset 3px 0 0 transparent; background: transparent; }
+}
+
+.item-link {
+  color: inherit;
+}
+@media (hover: hover) and (pointer: fine) {
+  .item-link:hover {
+    color: var(--royal-ink);
+  }
+}
+
+/* Sections settle into place as they arrive, but are never hidden or
+   dimmed: text is readable the moment it is on screen. */
 .js [data-reveal] {
-  opacity: 0;
-  transform: translateY(18px);
-  transition:
-    opacity var(--dur-reveal) var(--ease-out),
-    transform var(--dur-reveal) var(--ease-out);
-  transition-delay: calc(var(--i, 0) * 45ms);
+  transform: translateY(12px);
+  transition: transform var(--dur-reveal) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 35ms);
 }
 .js [data-reveal].is-in {
-  opacity: 1;
   transform: none;
 }
 
@@ -450,7 +467,7 @@ button {
   }
   .js [data-reveal] {
     transform: none;
-    transition: opacity 200ms ease;
+    transition: none;
   }
   .js [data-split] .word {
     clip-path: none;

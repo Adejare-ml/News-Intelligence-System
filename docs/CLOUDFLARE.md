@@ -3,14 +3,27 @@
 The public site is the Astro project in `web/`. GitHub Actions builds it and
 publishes ready-built copies to two branches:
 
-| Branch             | Served by                      | Base path                   |
-|--------------------|--------------------------------|-----------------------------|
-| `cloudflare-pages` | Cloudflare Pages (auranews.pages.dev) | `/`                  |
-| `gh-pages`         | GitHub Pages mirror            | `/News-Intelligence-System/` |
+| Branch             | Role        | Served by                             | Base path                    |
+|--------------------|-------------|---------------------------------------|------------------------------|
+| `gh-pages`         | **Testing** | GitHub Pages                          | `/News-Intelligence-System/` |
+| `cloudflare-pages` | **Production** | Cloudflare Pages (auranews.pages.dev) | `/`                       |
 
-Both are rebuilt after every pipeline run (`news_scheduler.yml`, deploy job)
-and on any push to `main` that touches `web/` or the data
-(`deploy_pages.yml`).
+## Testing and production
+
+- **`main` is the testing branch.** Every push to it that touches `web/` or
+  the data rebuilds only the GitHub Pages test site (`deploy_pages.yml`):
+  https://adejare-ml.github.io/News-Intelligence-System/
+- **Production changes only when you promote a version.** Check the test
+  site, then run **Actions → Promote to production → Run workflow**
+  (`promote_production.yml`). It builds the chosen commit (default: `main`)
+  with the latest data, publishes it to `cloudflare-pages`, moves the
+  `production` tag to that commit, and checks auranews.pages.dev serves it.
+- **Data still refreshes production four times a day.** The scheduler's
+  deploy job rebuilds the test site from `main` and production from the
+  code at the `production` tag (`web/scripts/build-production.sh`), both
+  with that run's data. Untested design changes on `main` never reach
+  users through a data refresh.
+- **Rolling back:** run the promote workflow with an older commit SHA.
 
 ## Why Cloudflare does not build the site itself
 
