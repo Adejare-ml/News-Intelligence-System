@@ -73,12 +73,44 @@ function textOf(record: PscRecord, key: string): string {
   return String(record?.[key] ?? "").toLowerCase();
 }
 
+/**
+ * The pipeline's validation gate exports canonical keys ("Alhaji Aliko
+ * Dangote" and "Aliko Dangote" share one); older rows fall back to the name.
+ */
 export function personKey(record: PscRecord | null | undefined): string {
-  return String(record?.["Person Name"] ?? "").trim().toLowerCase();
+  const canon = String(record?.["Person Key"] ?? "").trim();
+  return canon || String(record?.["Person Name"] ?? "").trim().toLowerCase();
 }
 
 export function companyKey(record: PscRecord | null | undefined): string {
-  return String(record?.Company ?? "").trim().toLowerCase();
+  const canon = String(record?.["Company Key"] ?? "").trim();
+  return canon || String(record?.Company ?? "").trim().toLowerCase();
+}
+
+/** Held back by the gate as implausible (a footballer "controlling" a business). */
+export function isQuarantined(record: PscRecord | null | undefined): boolean {
+  const q = record?.Quarantined;
+  return q === true || String(q).toLowerCase() === "true";
+}
+
+function sourceOf(record: PscRecord): string {
+  const s = String(record?.Source ?? "").trim();
+  return PLACEHOLDER.has(s.toLowerCase()) ? "" : s;
+}
+
+const ROLE_WORDS = /\b(chairman|chairperson|chair|founder|co-?founder|director|ceo|chief executive|managing director|president)\b/i;
+const STAKE_WORDS = /\b(shares?|shareholding|voting|ownership|owns?|equity|stake)\b/i;
+
+/** What a row claims: a stake, a board role, or control with neither. */
+export function kindOf(record: PscRecord): HoldingKind {
+  const stored = String(record?.Kind ?? "").trim();
+  if (stored === "stake" || stored === "role" || stored === "influence") return stored;
+  if (toPercent(record?.Percentage) !== null) return "stake";
+  const nature = String(record?.["Nature of Control"] ?? "");
+  if (STAKE_WORDS.test(nature)) return "stake";
+  const role = String(record?.["Board Role"] ?? "").trim();
+  if ((role && !PLACEHOLDER.has(role.toLowerCase()) && ROLE_WORDS.test(role)) || ROLE_WORDS.test(nature)) return "role";
+  return "influence";
 }
 
 export function isDirectHolding(text: unknown): boolean {
@@ -268,8 +300,14 @@ export function controlChain(record: PscRecord | null | undefined): ChainStep[] 
   return chain;
 }
 
+export type HoldingKind = "stake" | "role" | "influence";
+
 /** One holding (holder x company), built from every report of it. */
 export interface Holding {
+  /** A stake if any report gives one, else a board role, else influence. */
+  kind: HoldingKind;
+  /** No report of it names a source: shown, but kept out of the counts. */
+  unsourced: boolean;
   key: string;
   person: string;
   company: string;
@@ -296,6 +334,29 @@ function dateOf(r: PscRecord): string {
 }
 
 /**
+ * One spelling per canonical key, so "Alhaji Aliko Dangote" and "Aliko
+ * Dangote" share a name and an entity page: the most reported spelling,
+ * the shorter one on a tie.
+ */
+function displayNames(records: PscRecord[], keyOf: (r: PscRecord) => string, field: string): Map<string, string> {
+  const tally = new Map<string, Map<string, number>>();
+  for (const r of records || []) {
+    const key = keyOf(r);
+    const name = String(r[field] ?? "").trim();
+    if (!key || !name) continue;
+    const t = tally.get(key) ?? new Map<string, number>();
+    t.set(name, (t.get(name) ?? 0) + 1);
+    tally.set(key, t);
+  }
+  const out = new Map<string, string>();
+  for (const [key, t] of tally) {
+    const best = [...t.entries()].sort((a, b) => b[1] - a[1] || a[0].length - b[0].length)[0];
+    out.set(key, best[0]);
+  }
+  return out;
+}
+
+/**
  * Collapse the register's one-row-per-report into one entry per holding.
  *
  * The pipeline appends a row each time an article reports a holding, so
@@ -303,10 +364,15 @@ function dateOf(r: PscRecord): string {
  * five owners. Grouped, it reads as one holding with five reports, and the
  * best stake (most recent disclosed) is the one shown.
  */
-export function groupHoldings(records: PscRecord[]): Holding[] {
-  const ctx = buildContext(records);
+export function groupHoldings(records: PscRecord[], opts: { heldBack?: boolean } = {}): Holding[] {
+  // Quarantined rows are held back from every page; the register lists
+  // them separately (opts.heldBack) so nothing disappears silently.
+  const wanted = (records || []).filter((r) => isQuarantined(r) === Boolean(opts.heldBack));
+  const ctx = buildContext(wanted);
+  const personName = displayNames(records, personKey, "Person Name");
+  const companyName = displayNames(records, companyKey, "Company");
   const groups = new Map<string, PscRecord[]>();
-  for (const r of records || []) {
+  for (const r of wanted) {
     const p = personKey(r);
     const c = companyKey(r);
     if (!p && !c) continue;
@@ -339,10 +405,13 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
     const flags = [...seenFlags.values()].sort((a, b) =>
       a.severity === b.severity ? 0 : a.severity === "high" ? -1 : 1);
 
+    const kinds = new Set(sorted.map(kindOf));
     holdings.push({
       key,
-      person: String(latest["Person Name"] ?? "").trim() || "Undisclosed holder",
-      company: String(latest.Company ?? "").trim() || "Undisclosed company",
+      kind: kinds.has("stake") ? "stake" : kinds.has("role") ? "role" : "influence",
+      unsourced: sorted.every((r) => !sourceOf(r)),
+      person: personName.get(personKey(latest)) || "Undisclosed holder",
+      company: companyName.get(companyKey(latest)) || "Undisclosed company",
       role: pick("Board Role"),
       stake,
       stakeLabel: stake === null ? "Stake not disclosed" : `${stake % 1 === 0 ? stake.toFixed(0) : stake.toFixed(2).replace(/0$/, "")}%`,
@@ -353,7 +422,7 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
         date: dateOf(r),
         stake: toPercent(r.Percentage),
         nature: String(r["Nature of Control"] ?? "").trim(),
-        source: String(r.Source ?? "").trim(),
+        source: sourceOf(r),
       })),
       firstReported: dateOf(sorted[0]),
       lastReported: dateOf(latest),
@@ -367,7 +436,12 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
 }
 
 export interface RegisterSummary {
+  /** Sourced ownership claims: what every headline number counts. */
   holdings: number;
+  /** Holdings with no source on file (shown, labelled, not counted). */
+  unsourced: number;
+  /** Board posts with no reported stake (shown, not counted as holdings). */
+  roles: number;
   holders: number;
   companies: number;
   withStake: number;
@@ -381,11 +455,19 @@ export interface RegisterSummary {
   isDemo: boolean;
 }
 
-export function summarise(holdings: Holding[]): RegisterSummary {
+/** The holdings the headline numbers count: sourced, and not a bare board role. */
+export function counted(holdings: Holding[]): Holding[] {
+  return holdings.filter((h) => !h.unsourced && h.kind !== "role");
+}
+
+export function summarise(all: Holding[]): RegisterSummary {
+  const holdings = counted(all);
   const holders = new Set(holdings.map((h) => h.person.toLowerCase()));
   const companies = new Set(holdings.map((h) => h.company.toLowerCase()));
   return {
     holdings: holdings.length,
+    unsourced: all.filter((h) => h.unsourced).length,
+    roles: all.filter((h) => !h.unsourced && h.kind === "role").length,
     holders: holders.size,
     companies: companies.size,
     withStake: holdings.filter((h) => h.stake !== null).length,
@@ -394,13 +476,17 @@ export function summarise(holdings: Holding[]): RegisterSummary {
     nigeriaBand: holdings.filter((h) => h.band?.id === "BAND_5_25").length,
     offshore: holdings.filter((h) => h.flags.some((f) => f.id === "R7_SECRECY_VEHICLE")).length,
     filingRefRate: holdings.length ? holdings.filter((h) => h.hasFilingRef).length / holdings.length : null,
-    isDemo: holdings.some((h) => h.isSeed),
+    isDemo: all.some((h) => h.isSeed),
   };
 }
 
 /** Plain-English one-liner: "owns 27.49% of First HoldCo". */
 export function describeHolding(h: Holding): string {
   if (h.stake !== null) return `owns ${h.stakeLabel} of ${h.company}`;
+  if (h.kind === "role" && h.role) {
+    const role = h.role.toLowerCase();
+    return /founder/.test(role) ? `is a founder of ${h.company}` : `is ${role} of ${h.company}`;
+  }
   const nature = h.nature.toLowerCase();
   if (nature.includes("influence")) return `has significant influence over ${h.company}`;
   if (nature.includes("director")) return `can appoint directors at ${h.company}`;

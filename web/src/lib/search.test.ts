@@ -47,4 +47,8 @@ describe("alerts", () => {
     assert.equal(list[1].source, "Premium Times");
     assert.equal(list[0].level, "Critical");
   });
+  test("the pipeline's stored level wins over the score", () => {
+    const [a] = cleanAlerts([{ date: "2026-10-21", title: "EFCC arraigns four", url: "u", risk_score: 85, risk_level: "High" }]);
+    assert.equal(a.level, "High");
+  });
 });

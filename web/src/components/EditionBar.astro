@@ -5,17 +5,17 @@ interface Props {
   updated: Date | null;
   next: Date;
   stale: boolean;
-  articlesToday: number;
+  storiesToday: number;
   updatedLabel: string;
   nextLabel: string;
 }
-const { updated, next, stale, articlesToday, updatedLabel, nextLabel } = Astro.props;
+const { updated, next, stale, storiesToday, updatedLabel, nextLabel } = Astro.props;
 ---
-<div class:list={["edition-bar", { stale }]} role="status">
+<div class:list={["edition-bar", { stale }]} role="status" data-edition-bar data-updated={updated?.toISOString() ?? ""}>
   <div class="wrap row">
     <span class="item live">
       <span class="beacon" aria-hidden="true"></span>
-      {stale ? "Data may be out of date" : "Live edition"}
+      <span data-live-label>{stale ? "Data may be out of date" : "Live edition"}</span>
     </span>
     <span class="item">
       <Icon name="clock" size={15} />
@@ -24,14 +24,16 @@ const { updated, next, stale, articlesToday, updatedLabel, nextLabel } = Astro.p
     <span class="item">
       Next run <time datetime={next.toISOString()} data-next-run>{nextLabel}</time>
     </span>
-    <span class="item hide-sm">{articlesToday} stories processed today</span>
-    {stale && (
-      <span class="item note">
-        The last scheduled run did not publish. What you see is the most recent edition.
-      </span>
-    )}
+    <span class="item hide-sm">{storiesToday} stories in the last 24 hours</span>
+    <span class="item note" data-stale-note hidden={!stale}>
+      The last scheduled run did not publish. What you see is the most recent edition.
+    </span>
   </div>
 </div>
+
+<script>
+  import "../scripts/edition.ts";
+</script>
 
 <style>
   .edition-bar {

@@ -17,7 +17,15 @@
     "Change Type": "Disclosed",
     "Previous Holder": "",
     "Date": "2026-01-15",
-    "Source": ""
+    "Source": "",
+    "Person Key": "aliko dangote",
+    "Company Key": "dangote cement",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Abdul Samad Rabiu",
@@ -37,7 +45,15 @@
     "Change Type": "Disclosed",
     "Previous Holder": "",
     "Date": "2026-02-10",
-    "Source": ""
+    "Source": "",
+    "Person Key": "abdul samad rabiu",
+    "Company Key": "bua foods",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Jubril Adewale Tinubu",
@@ -57,7 +73,15 @@
     "Change Type": "Increased Control",
     "Previous Holder": "",
     "Date": "2026-03-20",
-    "Source": ""
+    "Source": "",
+    "Person Key": "jubril adewale tinubu",
+    "Company Key": "oando",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Femi Otedola",
@@ -77,7 +101,15 @@
     "Change Type": "Disclosed",
     "Previous Holder": "",
     "Date": "2026-04-12",
-    "Source": ""
+    "Source": "",
+    "Person Key": "femi otedola",
+    "Company Key": "geregu power",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Jim Ovia",
@@ -97,7 +129,15 @@
     "Change Type": "Disclosed",
     "Previous Holder": "",
     "Date": "2026-05-01",
-    "Source": ""
+    "Source": "",
+    "Person Key": "jim ovia",
+    "Company Key": "zenith bank",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Tony O. Elumelu",
@@ -117,7 +157,15 @@
     "Change Type": "Increased Control",
     "Previous Holder": "",
     "Date": "2026-06-18",
-    "Source": ""
+    "Source": "",
+    "Person Key": "tony elumelu",
+    "Company Key": "united bank for africa",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Aigboje Aig-Imoukhuede",
@@ -137,7 +185,15 @@
     "Change Type": "Appointed",
     "Previous Holder": "",
     "Date": "2026-03-14",
-    "Source": ""
+    "Source": "",
+    "Person Key": "aigboje aig imoukhuede",
+    "Company Key": "access",
+    "Kind": "stake",
+    "Quality": [
+      "unsourced",
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Femi Otedola",
@@ -157,27 +213,14 @@
     "Change Type": "gained",
     "Previous Holder": "",
     "Date": "2026-08-05",
-    "Source": "extracted"
-  },
-  {
-    "Person Name": "Femi Otedola",
-    "Company": "First HoldCo",
-    "Nature of Control": "Significant influence or control",
-    "Board Role": "",
-    "Percentage": "",
-    "Direct %": "",
-    "Indirect %": "",
-    "Voting Rights %": "",
-    "Share Band": "",
-    "Intermediate Entities": "Direct Holding",
-    "PEP Status": "No",
-    "Risk Level": "Elevated",
-    "Regulatory Filing Ref": "",
-    "Verification Status": "Extracted from news reporting",
-    "Change Type": "gained",
-    "Previous Holder": "",
-    "Date": "2026-08-05",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "femi otedola",
+    "Company Key": "first holdco",
+    "Kind": "influence",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Femi Otedola",
@@ -197,7 +240,14 @@
     "Change Type": "gained",
     "Previous Holder": "",
     "Date": "2026-08-07",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "femi otedola",
+    "Company Key": "first holdco",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Femi Otedola",
@@ -217,7 +267,14 @@
     "Change Type": "updated",
     "Previous Holder": "",
     "Date": "2026-08-11",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "femi otedola",
+    "Company Key": "first holdco",
+    "Kind": "influence",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Femi Otedola",
@@ -237,7 +294,14 @@
     "Change Type": "updated",
     "Previous Holder": "",
     "Date": "2026-08-17",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "femi otedola",
+    "Company Key": "first holdco",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Tony Elumelu",
@@ -257,7 +321,14 @@
     "Change Type": "updated",
     "Previous Holder": "",
     "Date": "2026-08-21",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "tony elumelu",
+    "Company Key": "seplat",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Femi Otedola",
@@ -277,7 +348,14 @@
     "Change Type": "gained",
     "Previous Holder": "",
     "Date": "2026-08-26",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "femi otedola",
+    "Company Key": "first holdco",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Aliko Dangote",
@@ -297,7 +375,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-09-17",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "aliko dangote",
+    "Company Key": "dangote refinery",
+    "Kind": "role",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Leno Adesanya",
@@ -317,7 +402,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-09-21",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "leno adesanya",
+    "Company Key": "sunrise",
+    "Kind": "influence",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Sadio Mane\u0301",
@@ -337,13 +429,21 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-09-22",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "sadio mane",
+    "Company Key": "mango business",
+    "Kind": "influence",
+    "Quality": [
+      "implausible",
+      "no_filing"
+    ],
+    "Quarantined": true
   },
   {
     "Person Name": "Aliko Dangote",
     "Company": "Dangote Refinery",
     "Nature of Control": "Significant influence or control",
-    "Board Role": "null",
+    "Board Role": "",
     "Percentage": "",
     "Direct %": "",
     "Indirect %": "",
@@ -357,7 +457,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-09-30",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "aliko dangote",
+    "Company Key": "dangote refinery",
+    "Kind": "influence",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Sunbeth",
@@ -377,7 +484,14 @@
     "Change Type": "gained",
     "Previous Holder": "UAC",
     "Date": "2026-10-01",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "sunbeth",
+    "Company Key": "livestock feeds business",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "International Finance Corporation",
@@ -397,7 +511,14 @@
     "Change Type": "gained",
     "Previous Holder": "",
     "Date": "2026-10-07",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "international finance corporation",
+    "Company Key": "quickmart",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Babs Ogundeyi",
@@ -417,7 +538,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-10-14",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "babs ogundeyi",
+    "Company Key": "kuda",
+    "Kind": "role",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Musty Mustapha",
@@ -437,7 +565,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-10-14",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "musty mustapha",
+    "Company Key": "kuda",
+    "Kind": "role",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Okunbor",
@@ -457,7 +592,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-10-14",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "okunbor",
+    "Company Key": "pipeline infrastructure",
+    "Kind": "influence",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Aliyu Abubakar",
@@ -477,7 +619,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-10-17",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "aliyu abubakar",
+    "Company Key": "aa oil",
+    "Kind": "role",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Tony Elumelu",
@@ -497,7 +646,14 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-10-18",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "tony elumelu",
+    "Company Key": "afrinvest",
+    "Kind": "influence",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   },
   {
     "Person Name": "Thomas Ogungbangbe",
@@ -517,6 +673,13 @@
     "Change Type": "disclosed",
     "Previous Holder": "",
     "Date": "2026-10-19",
-    "Source": "extracted"
+    "Source": "extracted",
+    "Person Key": "thomas ogungbangbe",
+    "Company Key": "cita energies",
+    "Kind": "role",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false
   }
 ]

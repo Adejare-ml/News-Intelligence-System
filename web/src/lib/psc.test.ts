@@ -83,7 +83,7 @@ describe("Holdings grouped from repeated reports", () => {
     { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Percentage: "27.49%", "Nature of Control": "Ownership of shares 25-50%" },
     { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-26", Percentage: "", "Nature of Control": "Ownership of shares" },
     { "Person Name": "Babs Ogundeyi", Company: "Kuda", Date: "2026-10-14", Percentage: "" },
-  ];
+  ].map((r) => ({ Source: "extracted", ...r }));
 
   test("one holding per holder and company", () => {
     const h = groupHoldings(reports);
@@ -126,6 +126,41 @@ describe("Holdings grouped from repeated reports", () => {
   test("placeholder roles are not shown", () => {
     const [h] = groupHoldings([{ "Person Name": "Aliko Dangote", Company: "Dangote Refinery", "Board Role": "null" }]);
     assert.equal(h.role, "");
+  });
+  test("canonical keys from the validation gate merge spelling variants", () => {
+    const h = groupHoldings([
+      { "Person Name": "Alhaji Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Petroleum Refinery", "Company Key": "dangote refinery", Date: "2026-09-17", Source: "extracted" },
+      { "Person Name": "Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Refinery", "Company Key": "dangote refinery", Date: "2026-09-30", Source: "extracted" },
+      { "Person Name": "Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Cement", "Company Key": "dangote cement", Date: "2026-01-15", Source: "extracted" },
+    ]);
+    assert.equal(h.length, 2);
+    assert.ok(h.every((x) => x.person === "Aliko Dangote"), "one spelling per holder");
+    assert.equal(h.find((x) => x.reports.length === 2)?.company, "Dangote Refinery");
+  });
+  test("quarantined rows are held back, and listed on request", () => {
+    const rows = [
+      { "Person Name": "Sadio Mané", Company: "Mango Business", Quarantined: true, Source: "extracted" },
+      { "Person Name": "Femi Otedola", Company: "First HoldCo", Source: "extracted" },
+    ];
+    assert.deepEqual(groupHoldings(rows).map((x) => x.person), ["Femi Otedola"]);
+    assert.deepEqual(groupHoldings(rows, { heldBack: true }).map((x) => x.person), ["Sadio Mané"]);
+  });
+  test("unsourced records and bare board roles are shown but not counted", () => {
+    const h = groupHoldings([
+      { "Person Name": "Jim Ovia", Company: "Zenith Bank Plc", Percentage: "16.2%", Source: "" },
+      { "Person Name": "Thomas Ogungbangbe", Company: "CITA Energies", "Board Role": "Chairman", "Nature of Control": "Significant influence or control", Source: "extracted" },
+      { "Person Name": "Femi Otedola", Company: "First HoldCo", Percentage: "27.49%", Source: "extracted" },
+    ]);
+    assert.equal(h.length, 3);
+    const ovia = h.find((x) => x.person === "Jim Ovia")!;
+    assert.equal(ovia.unsourced, true);
+    const cita = h.find((x) => x.company === "CITA Energies")!;
+    assert.equal(cita.kind, "role");
+    assert.equal(describeHolding(cita), "is chairman of CITA Energies");
+    const s = summarise(h);
+    assert.equal(s.holdings, 1);
+    assert.equal(s.unsourced, 1);
+    assert.equal(s.roles, 1);
   });
   test("empty register", () => {
     const s = summarise(groupHoldings([]));

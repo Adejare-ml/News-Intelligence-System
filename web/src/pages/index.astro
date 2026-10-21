@@ -10,7 +10,7 @@ import Subscribe from "../components/Subscribe.astro";
 import * as data from "../lib/data.ts";
 import { parseBrief } from "../lib/brief.ts";
 import { groupHoldings, summarise, type Holding } from "../lib/psc.ts";
-import { rankStories, parseTime } from "../lib/stories.ts";
+import { rankStories, parseTime, storiesInDay } from "../lib/stories.ts";
 import { DEFAULT_ROUTES, routesFromRecords } from "../lib/routes.ts";
 import { nextRunAfter, isStale, lagosTime, lagosDate, editionName } from "../lib/edition.ts";
 
@@ -27,16 +27,9 @@ const lastRun = reports
   .sort((a, b) => b.getTime() - a.getTime())[0] ?? null;
 const now = new Date();
 const editionAt = lastRun ?? now;
-const today = editionAt.toISOString().slice(0, 10);
-const articlesToday = reports
-  .filter((r) => String(r.Date ?? "") === today)
-  .reduce((n, r) => n + (Number(r["Total Articles"]) || 0), 0);
-
 const stories = rankStories(articles, editionAt, 9);
-const storiesToday = articles.filter((a) => {
-  const t = parseTime(a.Time);
-  return t && editionAt.getTime() - t.getTime() < 36e5 * 24;
-}).length;
+// One count everywhere: distinct stories published in the 24 hours before the edition.
+const storiesToday = storiesInDay(articles, editionAt);
 
 const holdings = groupHoldings(records);
 const summary = summarise(holdings);
@@ -65,7 +58,7 @@ const next = nextRunAfter(editionAt);
     updated={lastRun}
     next={next}
     stale={isStale(lastRun, now)}
-    articlesToday={articlesToday}
+    storiesToday={storiesToday}
     updatedLabel={lastRun ? lagosTime(lastRun) : "unknown"}
     nextLabel={lagosTime(next)}
   />

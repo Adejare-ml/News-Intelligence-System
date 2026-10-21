@@ -5,11 +5,12 @@ import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
-import { groupHoldings, summarise } from "../../lib/psc.ts";
+import { groupHoldings, summarise, counted } from "../../lib/psc.ts";
 import { toContract, sortContracts, type ProcurementRow } from "../../lib/procurement.ts";
 
 const holdings = groupHoldings(data.psc());
 const s = summarise(holdings);
+const heldBack = groupHoldings(data.psc(), { heldBack: true });
 const companiesPerPerson = new Map<string, Set<string>>();
 for (const h of holdings) {
   const k = h.person.toLowerCase();
@@ -19,7 +20,7 @@ for (const h of holdings) {
 const contracts = sortContracts(data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract));
 
 const filters = [
-  { id: "all", label: "All holdings", count: s.holdings },
+  { id: "all", label: "All records", count: holdings.length },
   { id: "stake", label: "Stake disclosed", count: s.withStake },
   { id: "pattern", label: "Worth checking", count: s.withPattern },
   { id: "band", label: "5–25% band", count: s.nigeriaBand },
@@ -38,19 +39,26 @@ const filters = [
       mention it. One card per holder and company, however many times it was reported.
     </p>
     <dl class="kpis" data-reveal>
-      <div><dt>Holdings</dt><dd class="num">{s.holdings}</dd></div>
+      <div><dt>Sourced holdings</dt><dd class="num">{s.holdings}</dd></div>
       <div><dt>People and firms</dt><dd class="num">{s.holders}</dd></div>
       <div><dt>Companies</dt><dd class="num">{s.companies}</dd></div>
       <div><dt>With a reported stake</dt><dd class="num">{s.withStake}</dd></div>
       <div><dt>Carry a CAC filing reference</dt><dd class="num">{s.filingRefRate === null ? "—" : `${Math.round(s.filingRefRate * 100)}%`}</dd></div>
     </dl>
+    {(s.unsourced > 0 || s.roles > 0) && (
+      <p class="note">{[
+        "The numbers count sourced ownership claims only.",
+        s.unsourced > 0 && `${s.unsourced} ${s.unsourced === 1 ? "record has" : "records have"} no source on file and ${s.unsourced === 1 ? "is" : "are"} labelled.`,
+        s.roles > 0 && `${s.roles} ${s.roles === 1 ? "is a board role" : "are board roles"} with no reported stake.`,
+      ].filter(Boolean).join(" ")}</p>
+    )}
     {s.isDemo && (
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>
     )}
   </section>
 
   <section class="wrap band-wrap">
-    <BandScale holdings={holdings} />
+    <BandScale holdings={counted(holdings)} />
   </section>
 
   <section class="wrap holdings" aria-labelledby="holdings-title">
@@ -69,7 +77,7 @@ const filters = [
         <input type="search" placeholder="Search a holder or company" data-register-search autocomplete="off" />
       </label>
     </div>
-    <p class="meta result" aria-live="polite" data-result>{s.holdings} holdings</p>
+    <p class="meta result" aria-live="polite" data-result>{holdings.length} records</p>
 
     <div class="grid" data-grid>
       {holdings.map((h, i) => (
@@ -79,6 +87,19 @@ const filters = [
     <p class="empty" hidden data-empty>
       Nothing matches. <button type="button" class="link" data-clear>Clear the filters</button>
     </p>
+    {heldBack.length > 0 && (
+      <details class="held-back">
+        <summary>Held back for review ({heldBack.length})</summary>
+        <p>
+          The validation gate keeps these extractions off the register because they look implausible
+          (for example, a sports or entertainment figure recorded as a company holder). They stay in the
+          database for review.
+        </p>
+        <ul>
+          {heldBack.map((h) => <li>{h.person} · {h.company} · {h.lastReported}</li>)}
+        </ul>
+      </details>
+    )}
   </section>
 
   <div class="wrap">
@@ -117,6 +138,25 @@ const filters = [
     margin: 0;
     font-size: clamp(2rem, 3.4vw, 2.8rem);
     line-height: 1.05;
+  }
+  .note {
+    margin: 18px 0 0;
+    max-width: 62ch;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .held-back {
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .held-back summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-soft);
+  }
+  .held-back p {
+    max-width: 62ch;
   }
   .demo {
     color: var(--gold);

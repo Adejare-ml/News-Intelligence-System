@@ -15,10 +15,13 @@ const when = relativeTime(story.published, now);
 const riskChip = story.riskLevel === "Critical" ? "chip-crimson" : story.riskLevel === "High" ? "chip-gold" : "";
 const showRisk = story.riskLevel === "Critical" || story.riskLevel === "High";
 const c = story.cover;
+// Only the lead gets a generated cover; other cards without a publisher
+// image are set in type rather than dressed in a picture of nothing.
+const typeOnly = size !== "lead" && !story.image;
 ---
-<article class:list={["story", size]} data-reveal data-tilt style={`--i:${index}`}>
+<article class:list={["story", size, { "type-only": typeOnly }, `tone-${c.tone}`]} data-reveal data-tilt style={`--i:${index}`}>
   <a class="hit" href={story.url} rel="noopener noreferrer" target="_blank" aria-label={`${story.title} (${story.publisher}, opens in a new tab)`}></a>
-  <div class="media">
+  {!typeOnly && <div class="media">
     <div
       class:list={["cover", `tone-${c.tone}`]}
       style={`--angle:${c.angle}deg; --seed:${c.seed}`}
@@ -37,7 +40,7 @@ const c = story.cover;
         data-story-img
       />
     )}
-  </div>
+  </div>}
   <div class="body">
     <div class="tags">
       <span class="chip">{story.category}</span>
@@ -270,5 +273,31 @@ const c = story.cover;
   }
   .compact .glyph {
     font-size: 4.2rem;
+  }
+
+  /* Typographic card: no picture, a toned rule and the headline in the display face. */
+  .type-only {
+    grid-template-rows: 1fr;
+    --accent: var(--line-strong);
+  }
+  .type-only.tone-royal { --accent: var(--royal-ink); }
+  .type-only.tone-gold { --accent: var(--gold); }
+  .type-only.tone-crimson { --accent: var(--crimson); }
+  .type-only::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 3px;
+    background: var(--accent);
+    opacity: 0.85;
+  }
+  .type-only .title {
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+  }
+  .type-only.feature .title {
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
   }
 </style>

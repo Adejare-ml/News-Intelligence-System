@@ -61,7 +61,7 @@ export function parseItem(line: string): BriefItem {
   }
   const bold = body.match(/^\*\*(.+?)\*\*:?\s*(.*)$/);
   const lead = bold ? bold[1].replace(/:$/, "").trim() : "";
-  const rest = (bold ? bold[2] : body).replace(/^[:\s]+/, "").replace(/\*\*/g, "").trim();
+  const rest = (bold ? bold[2] : body).replace(/^[:.—–\s]+/, "").replace(/\*\*/g, "").trim();
   return { lead, rest, source, html: inlineHtml(text) };
 }
 

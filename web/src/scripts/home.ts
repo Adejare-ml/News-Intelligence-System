@@ -53,6 +53,7 @@ const showTitle = () => {
 if (canvas) {
   const globe = mountGlobe(canvas, {
     routes,
+    illustrative: canvas.dataset.illustrative === "1",
     intro: playIntro,
     onIntroProgress: (p) => {
       // The headline rises as the planet finishes forming.

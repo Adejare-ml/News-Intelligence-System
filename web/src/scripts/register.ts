@@ -40,7 +40,7 @@ function apply(animate: boolean) {
       c.classList.add("is-in");
     }
   }
-  if (result) result.textContent = `${shown} ${shown === 1 ? "holding" : "holdings"}`;
+  if (result) result.textContent = `${shown} ${shown === 1 ? "record" : "records"}`;
   if (empty) empty.hidden = shown > 0;
 
   if (!animate || reduceMotion) return;

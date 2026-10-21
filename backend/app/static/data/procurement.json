@@ -120,16 +120,6 @@
     "Amount Currency": null
   },
   {
-    "Agency": "The Guardian Nigeria News",
-    "Contractor": "Tracked Contractor",
-    "Amount": "TBD (Local Pipeline)",
-    "Project": "Atiku challenges Tinubu to disclose details of \u20a615.13bn SUV procurement - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "Date": "",
-    "Amount Value": null,
-    "Amount Currency": null
-  },
-  {
     "Agency": "Nigerian Content Development and Monitoring Board",
     "Contractor": "Bank of Industry",
     "Amount": "$100 Million",
@@ -178,16 +168,6 @@
     "Date": "",
     "Amount Value": null,
     "Amount Currency": null
-  },
-  {
-    "Agency": "PFIPC",
-    "Contractor": "None",
-    "Amount": "N400 Million",
-    "Project": "Not specified",
-    "Source": "The Guardian Nigeria News",
-    "Date": "",
-    "Amount Value": 400000000.0,
-    "Amount Currency": "NGN"
   },
   {
     "Agency": "PFIPC",
@@ -253,9 +233,9 @@
     "Agency": "Jigawa State Government",
     "Contractor": "None",
     "Amount": "\u20a63.5 Billion",
-    "Project": "Payment of 2027 Hajj deposits for intending pilgrims",
-    "Source": "The Punch",
-    "Date": "",
+    "Project": "Asphalt and precast plant for indigenous constructions",
+    "Source": "Premium Times Nigeria",
+    "Date": "2026-10-18",
     "Amount Value": 3500000000.0,
     "Amount Currency": "NGN"
   },
@@ -1270,16 +1250,6 @@
     "Amount Currency": "USD"
   },
   {
-    "Agency": "Ogun State Government",
-    "Contractor": "DP World",
-    "Amount": "$7 Billion",
-    "Project": "Development of a port and industrial zone",
-    "Source": "The Guardian Nigeria News",
-    "Date": "2026-09-25",
-    "Amount Value": 7000000000.0,
-    "Amount Currency": "USD"
-  },
-  {
     "Agency": "Independent Monitoring and Procurement Inspectorate",
     "Contractor": "None",
     "Amount": "$500,000",
@@ -1298,26 +1268,6 @@
     "Date": "2026-09-26",
     "Amount Value": null,
     "Amount Currency": null
-  },
-  {
-    "Agency": "Ogun State Government",
-    "Contractor": "DP World",
-    "Amount": "$7 Billion",
-    "Project": "Port and industrial zone development",
-    "Source": "The Guardian Nigeria News",
-    "Date": "2026-09-26",
-    "Amount Value": 7000000000.0,
-    "Amount Currency": "USD"
-  },
-  {
-    "Agency": "Ogun State Government",
-    "Contractor": "DP World",
-    "Amount": "$7 Billion",
-    "Project": "Gateway Deep Seaport and Blue Marine Economic Zone",
-    "Source": "naijaonpoint_ng",
-    "Date": "2026-09-26",
-    "Amount Value": 7000000000.0,
-    "Amount Currency": "USD"
   },
   {
     "Agency": "Lagos State Security Trust Fund",
@@ -1570,16 +1520,6 @@
     "Amount Currency": null
   },
   {
-    "Agency": "Federal Ministry of Works",
-    "Contractor": "Hitech Construction",
-    "Amount": "None",
-    "Project": "Lagos-Calabar coastal highway",
-    "Source": "Punch Newspapers",
-    "Date": "2026-10-05",
-    "Amount Value": null,
-    "Amount Currency": null
-  },
-  {
     "Agency": "Nigerian National Petroleum Company",
     "Contractor": "None",
     "Amount": "N473.8 Billion",
@@ -1618,16 +1558,6 @@
     "Date": "2026-10-06",
     "Amount Value": 13900000.0,
     "Amount Currency": "USD"
-  },
-  {
-    "Agency": "Nigerian National Petroleum Company Limited",
-    "Contractor": "None",
-    "Amount": "N473.8 Billion",
-    "Project": "Gas infrastructure projects, including the Nigeria-Morocco Gas Pipeline",
-    "Source": "The Punch",
-    "Date": "2026-10-06",
-    "Amount Value": 473800000000.0,
-    "Amount Currency": "NGN"
   },
   {
     "Agency": "Federal Government of Nigeria",
@@ -1988,16 +1918,6 @@
     "Date": "2026-10-18",
     "Amount Value": null,
     "Amount Currency": null
-  },
-  {
-    "Agency": "Jigawa State Government",
-    "Contractor": "None",
-    "Amount": "\u20a63.5 Billion",
-    "Project": "Asphalt and precast plant for indigenous constructions",
-    "Source": "Premium Times Nigeria",
-    "Date": "2026-10-18",
-    "Amount Value": 3500000000.0,
-    "Amount Currency": "NGN"
   },
   {
     "Agency": "Bank of Industry",
