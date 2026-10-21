@@ -92,6 +92,35 @@
             T.excludes(html, "Not Specified");
         });
 
+        T.it("a role or an organisation in the Name is not a person", function () {
+            ["Managing Director/Chief Executive", "Officers Commanding",
+             "Director-General", "MD NAN", "DG NTA", "Kogi Forum",
+             "Rafa Corporation Accelerates Growth"
+            ].forEach(function (n) {
+                T.eq(B.isRoleOrOrgName(n), true, JSON.stringify(n) + " is not a person");
+            });
+            // Almost half this board is a surname on its own; none may go.
+            ["Cardoso", "Orya", "Agbebaku", "Tinubu", "Coker-Odusote",
+             "Bola Tinubu", "Prof Gombe", "Capt. Wisdom", "Nanna Ama",
+             "Ali Isa", "Uwem Ite", "Dr Haydar Daudu", ""
+            ].forEach(function (n) {
+                T.eq(B.isRoleOrOrgName(n), false, JSON.stringify(n) + " is a person");
+            });
+        });
+
+        T.it("role and organisation rows leave the board and the count", function () {
+            var m = B.appointmentsTimeline(PEOPLE.concat([
+                { Name: "MD NAN", Position: "Managing Director",
+                  Organization: "News Agency of Nigeria", Event: "reappointment", Date: "2026-09-08" },
+                { Name: "Kogi Forum", Position: "Officer", Organization: "NPC",
+                  Event: "appointment", Date: "2026-09-09" }
+            ]));
+            T.eq(m.total, 4, "count reflects only real people");
+            var html = B.renderAppointmentsHTML(m);
+            T.excludes(html, "MD NAN");
+            T.excludes(html, "Kogi Forum");
+        });
+
         T.it("a placeholder Position or Organization drops out of the role", function () {
             var html = B.renderAppointmentsHTML(B.appointmentsTimeline([
                 { Name: "Sarah Boulos", Position: "President", Organization: "Not Specified",

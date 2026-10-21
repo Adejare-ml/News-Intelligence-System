@@ -1,5 +1,9 @@
 import pytest
-from run_pipeline import is_placeholder_person, is_publication_or_furniture
+from run_pipeline import (
+    is_placeholder_person,
+    is_publication_or_furniture,
+    is_role_or_org_name,
+)
 
 
 @pytest.mark.parametrize("name", [
@@ -133,3 +137,65 @@ def test_placeholder_guard_runs_over_the_live_shape():
     ]
     kept = [r for r in rows if not is_placeholder_person(r["Name"])]
     assert [r["Name"] for r in kept] == ["Ada Obi", "Unnamed Commissioner"]
+
+
+# ---------------------------------------------------------------------------
+# Roles and organisations captured where a person belongs
+#
+# Precision is the whole game: 43% of the moves board is a real person named
+# by surname alone ("Cardoso", "Orya", "Agbebaku"), so a rule keyed on how
+# thin a name looks would delete most of the board. These key on what the
+# name is made of. Over the 440 distinct names in the live people.json the
+# guard flags exactly six, all six genuinely not people.
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize("name", [
+    "Managing Director/Chief Executive",  # the post, not its holder
+    "Officers Commanding",
+    "Director-General",
+    "Acting Chief Executive",
+    "Deputy Governor",
+    "MD NAN",                             # post + the organisation's initials
+    "DG NTA",
+    "CEO NNPC",
+    "Kogi Forum",                         # an organisation in the Name field
+    "Rafa Corporation Accelerates Growth",  # a headline fragment
+    "Nigeria Labour Congress",
+    "Lagos State University",
+])
+def test_roles_and_organisations_are_not_people(name):
+    assert is_role_or_org_name(name) is True
+
+
+@pytest.mark.parametrize("name", [
+    # Real people on the live board, including the single-token surnames
+    # that make up almost half of it.
+    "Cardoso",
+    "Orya",
+    "Agbebaku",
+    "Tinubu",
+    "Mohammed",
+    "Coker-Odusote",
+    "Bola Tinubu",
+    "Comfort Ero",
+    "Timipre Sylva",
+    "Is-haq Olanrewaju Oloyede",
+    # Titles attached to a real name must survive: only an all-role name goes.
+    "Prof Gombe",
+    "Capt. Wisdom",
+    "Dr Haydar Daudu",
+    # Near-misses on the acronym rule: a surname pair is not "MD NAN".
+    "Nanna Ama",
+    "Ali Isa",
+    "Abu Ammar",
+    "Uwem Ite",
+    "Betta Edu",
+])
+def test_real_people_survive_the_role_guard(name):
+    assert is_role_or_org_name(name) is False
+
+
+def test_role_guard_is_blank_safe():
+    """Blankness is the placeholder guard's job, not this one's."""
+    for blank in ["", "   ", None]:
+        assert is_role_or_org_name(blank) is False

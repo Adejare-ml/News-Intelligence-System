@@ -130,6 +130,73 @@
         return !cleaned || PLACEHOLDER_NAMES[cleaned] === 1;
     }
 
+    /* The other way a Name holds something that is not a person: the post
+       instead of its holder, the post abbreviated with the organisation's
+       initials, or an organisation outright. Mirrors is_role_or_org_name in
+       backend/app/services/relevance.py.
+
+       Precision over recall, deliberately: 43% of this board is a real
+       person named by surname alone ("Cardoso", "Orya"), so every rule here
+       keys on what the name is made of, never on how short it is. */
+    var ROLE_WORDS = ("managing director directors general chief executive officer "
+        + "officers commanding deputy acting interim assistant administrator "
+        + "chairman chairperson chair president vice secretary treasurer registrar "
+        + "provost rector commissioner comptroller controller commandant coordinator "
+        + "manager head boss spokesperson aide representative delegate envoy consul "
+        + "ambassador minister governor senator speaker dean principal supervisor "
+        + "inspector auditor counsel advisor adviser").split(" ");
+    var ORG_WORDS = ("forum association agency commission authority council ministry "
+        + "bureau institute federation union party corps command academy bank plc ltd "
+        + "limited company corporation group committee board department society "
+        + "congress assembly parliament senate tribunal secretariat organisation "
+        + "organization foundation trust university college school hospital church "
+        + "mosque").split(" ");
+    var NAME_FILLER = "and of the for to a an at in on".split(" ");
+    var TITLE_ACRONYMS = "md dg ceo cfo coo cto gmd ed".split(" ");
+
+    function inList(list, token) {
+        for (var i = 0; i < list.length; i++) { if (list[i] === token) return true; }
+        return false;
+    }
+
+    function nameTokens(name, splitHyphens) {
+        var cleaned = String(name == null ? "" : name)
+            .replace(/ /g, " ").split(/\s+/).join(" ").toLowerCase()
+            .replace(/[/,]/g, " ");
+        // Hyphens split only for the all-role rule; the org rule fires on a
+        // single token and "Bank-Olemoh" would hand it one.
+        if (splitHyphens) cleaned = cleaned.replace(/[-‐-―]/g, " ");
+        var out = [];
+        cleaned.split(/\s+/).forEach(function (t) {
+            t = t.replace(/^[^\w]+|[^\w]+$/g, "");
+            if (t) out.push(t);
+        });
+        return out;
+    }
+
+    /** True when a Name holds a job title or an organisation, not a person. */
+    function isRoleOrOrgName(name) {
+        var tokens = nameTokens(name, false);
+        if (!tokens.length) return false;
+
+        var roleTokens = nameTokens(name, true).filter(function (t) {
+            return !inList(NAME_FILLER, t);
+        });
+        var allRole = roleTokens.length > 0 && roleTokens.every(function (t) {
+            return inList(ROLE_WORDS, t);
+        });
+        if (allRole) return true;
+
+        // "MD NAN" / "DG NTA": a post abbreviation then an all-caps acronym.
+        var raw = String(name == null ? "" : name).split(/\s+/).filter(Boolean);
+        if (tokens.length === 2 && raw.length === 2 && inList(TITLE_ACRONYMS, tokens[0])
+            && /^[A-Z]{2,6}$/.test(raw[1].replace(/^[^\w]+|[^\w]+$/g, ""))) {
+            return true;
+        }
+
+        return tokens.some(function (t) { return inList(ORG_WORDS, t); });
+    }
+
     /** True for "Unnamed Commissioner": a real move, but nobody to link to. */
     function isUnnamedPerson(name) {
         return /^unnamed\b/.test(normalizeName(name));
@@ -149,7 +216,7 @@
             var event = String(row.Event || "").trim().toLowerCase();
             if (!MOVE_EVENTS[event]) continue;
             var name = String(row.Name || "").trim();
-            if (!name || isPlaceholderName(name)) continue;
+            if (!name || isPlaceholderName(name) || isRoleOrOrgName(name)) continue;
             var date = String(row.Date || "").trim().slice(0, 10);
             var month = date.slice(0, 7);
             if (!/^\d{4}-\d{2}$/.test(month)) month = "undated";
@@ -360,6 +427,7 @@
         appointmentsTimeline: appointmentsTimeline,
         isPlaceholderName: isPlaceholderName,
         isUnnamedPerson: isUnnamedPerson,
+        isRoleOrOrgName: isRoleOrOrgName,
         renderAppointmentsHTML: renderAppointmentsHTML,
         ledgerRows: ledgerRows,
         ledgerColumns: ledgerColumns,
