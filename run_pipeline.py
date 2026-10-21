@@ -55,6 +55,7 @@ from backend.app.services.relevance import (  # noqa: E402  (re-export)
     is_placeholder_person,
     is_publication_or_furniture,
     is_role_or_org_name,
+    is_unevidenced_officer,
 )
 
 
@@ -1321,6 +1322,27 @@ def export_static_json_database():
         # the appointments board.
         and not is_role_or_org_name(p.get("Name"))
     ]
+
+    # Historical residue from the retired heuristic fallback, which stamped
+    # position "Officer" and the article's first organisation onto every
+    # person it found. Neither was a finding, so where the fingerprint is
+    # present both fields go: the person, the event and the date are real
+    # and stay. "Fayose | Officer | Tinubu" becomes just "Fayose", instead
+    # of asserting that one politician works for another.
+    #
+    # Fixed at source in LLMService._run_local_fallback, but that only helps
+    # rows written from now on, and the sheet holds three months of these.
+    for _row in people:
+        if relevance.is_unevidenced_officer(_row.get("Position")):
+            _row["Position"] = ""
+            _row["Organization"] = ""
+        # "N/A", "Not Specified" and friends in the organisation slot are the
+        # absence of one; a blank says that without dressing it as a name.
+        elif is_placeholder_person(_row.get("Organization")):
+            _row["Organization"] = ""
+        # Same for the post: "Not Specified" is not one.
+        if is_placeholder_person(_row.get("Position")):
+            _row["Position"] = ""
     # Procurement and PSC rows feed the same graph and their own exports,
     # and were never filtered at all.
     procurement = [

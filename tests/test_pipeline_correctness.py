@@ -204,3 +204,66 @@ class TestHeuristicFallbackIsValidated:
         assert out["engine"] == "local-heuristics"
         assert "relevant" in out
         assert isinstance(out["significant_control"], list)
+
+
+class TestHeuristicFallbackInventsNothing:
+    """The local fallback used to stamp the same three values onto every
+    person spaCy found: position "Officer", the article's first
+    organisation, and event "appointment" whenever the word "appoint"
+    appeared anywhere in the text. That residue is still in the published
+    data -- 335 of 581 people rows read "Officer", 70 of them "@ N/A" --
+    and it is what rendered "Fayose -> Officer @ Tinubu" on the
+    appointments board: two people and no relationship between them.
+    """
+
+    @staticmethod
+    def _fallback(monkeypatch, text, people, orgs):
+        from backend.app.services.nlp_pipeline import NLPPipelineService
+
+        monkeypatch.setattr(NLPPipelineService, "extract_named_entities",
+                            staticmethod(lambda t: {"people": people, "organizations": orgs}))
+        monkeypatch.setattr(NLPPipelineService, "analyze_sentiment", staticmethod(lambda t: 0.0))
+        monkeypatch.setattr(NLPPipelineService, "classify_risk", staticmethod(lambda t: "Low"))
+        monkeypatch.setattr(NLPPipelineService, "detect_category", staticmethod(lambda t: "Company"))
+        monkeypatch.setattr(NLPPipelineService, "calculate_importance_score",
+                            staticmethod(lambda t, e, c: 1))
+        monkeypatch.setattr(NLPPipelineService, "generate_summaries",
+                            staticmethod(lambda t, x: {"executive": "s", "detailed": "s"}))
+        return LLMService._run_local_fallback("headline", text)["people"]
+
+    def test_no_position_is_invented_when_the_article_states_none(self, monkeypatch):
+        people = self._fallback(monkeypatch, "Something happened in Abuja.",
+                                ["Ada Obi"], ["Dangote"])
+        assert people[0]["position"] == "", "an unknown post is blank, not 'Officer'"
+
+    def test_md_no_longer_matches_ahmed(self, monkeypatch):
+        """`"md" in text.lower()` elected anyone in an article naming Ahmed."""
+        people = self._fallback(monkeypatch, "Ahmed and Mohammed met amid the review.",
+                                ["Ahmed Bello"], ["NNPC"])
+        assert people[0]["position"] == ""
+
+    def test_a_single_stated_post_still_survives(self, monkeypatch):
+        people = self._fallback(monkeypatch, "The new managing director takes over.",
+                                ["Ada Obi"], ["NNPC"])
+        assert people[0]["position"] == "Managing Director"
+
+    def test_two_candidate_posts_mean_we_cannot_say_who_holds_which(self, monkeypatch):
+        people = self._fallback(monkeypatch, "The CEO met the minister in Abuja.",
+                                ["Ada Obi"], ["NNPC"])
+        assert people[0]["position"] == ""
+
+    def test_one_organisation_is_not_evidence_of_employment(self, monkeypatch):
+        """Two people in one article were both filed under organisations[0]."""
+        people = self._fallback(monkeypatch, "Tinubu and Fayose spoke.",
+                                ["Bola Tinubu", "Ayo Fayose"], ["Tinubu", "PDP"])
+        assert [p["organization"] for p in people] == ["", ""]
+
+    def test_the_only_organisation_named_is_still_used(self, monkeypatch):
+        people = self._fallback(monkeypatch, "A statement was issued.",
+                                ["Ada Obi"], ["Dangote"])
+        assert people[0]["organization"] == "Dangote"
+
+    def test_the_word_appoint_does_not_make_every_mention_an_appointment(self, monkeypatch):
+        people = self._fallback(monkeypatch, "The court will appoint a receiver next year.",
+                                ["Ada Obi", "Ben Ade"], ["Dangote"])
+        assert [p["event"] for p in people] == ["other", "other"]

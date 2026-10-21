@@ -358,6 +358,24 @@ def is_role_or_org_name(name: Any) -> bool:
     return any(t in _ORG_WORDS for t in tokens)
 
 
+def is_unevidenced_officer(position: Any) -> bool:
+    """True for the bare "Officer" the retired heuristic fallback stamped on
+    every person it found.
+
+    It is a fingerprint, not a job title. The fallback (see
+    ``LLMService._run_local_fallback``) gave each person "Officer" plus the
+    article's first organisation, neither of them a finding, so a row
+    carrying it has an invented Organization too. 93% of July's rows read
+    this way and none since September, which is when that path stopped
+    running -- the model names a real post or leaves it blank.
+
+    Exact match only: "Chief Security Officer" and "Information Officer"
+    are real posts and must survive.
+    """
+    cleaned = " ".join(str(position or "").replace("\xa0", " ").split()).lower()
+    return cleaned == "officer"
+
+
 def is_placeholder_person(name: Any) -> bool:
     """True when a Name field holds a "no name was given" marker, not a person.
 
