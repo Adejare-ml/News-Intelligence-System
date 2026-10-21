@@ -121,6 +121,18 @@
       "risk": "High"
     },
     {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9e4088ac2b55",
+      "label": "APC Campaign Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -229,15 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "aa9abf2767d5",
-      "label": "Standards Organisation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "agency",
+      "id": "7a8bece02efd",
+      "label": "Betta Edu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -280,6 +286,12 @@
       "id": "8ddf0d9698a1",
       "label": "Agunloye",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9b5f79697bc2",
+      "label": "Federal Ministry of Power",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -466,18 +478,6 @@
       "id": "4b80ca311098",
       "label": "Hadi Sirika",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "2d3a7d6c7ac4",
-      "label": "Douye Diri",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -729,6 +729,12 @@
   ],
   "edges": [
     {
+      "id": "9c1b3db2433f",
+      "from": "7a8bece02efd",
+      "to": "9e4088ac2b55",
+      "label": "Appointed as Director"
+    },
+    {
       "id": "234af74126a1",
       "from": "40ce4ff30275",
       "to": "4c7e8211e98f",
@@ -871,12 +877,6 @@
       "from": "4b80ca311098",
       "to": "0c2be969618b",
       "label": "Appointed as Former Minister"
-    },
-    {
-      "id": "445b2fd273b0",
-      "from": "2d3a7d6c7ac4",
-      "to": "217ee6fe71c5",
-      "label": "Appointed as Governor of Bayelsa State"
     },
     {
       "id": "a5e36b5f552f",

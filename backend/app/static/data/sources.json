@@ -16,45 +16,45 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 1960,
-      "published": 844,
-      "filtered": 1116,
+      "total": 1970,
+      "published": 847,
+      "filtered": 1123,
       "accept_rate": 43,
-      "avg_risk": 30.9,
+      "avg_risk": 31.0,
       "engines": {
         "unknown": 440,
-        "ollama": 400,
+        "ollama": 403,
         "nvidia": 4
       },
-      "last_seen": "2026-10-20"
+      "last_seen": "2026-10-21"
     },
     {
       "source": "Punch Newspapers",
-      "total": 989,
-      "published": 409,
-      "filtered": 580,
+      "total": 994,
+      "published": 411,
+      "filtered": 583,
       "accept_rate": 41,
       "avg_risk": 27.2,
       "engines": {
         "unknown": 188,
-        "ollama": 217,
+        "ollama": 219,
         "nvidia": 4
       },
       "last_seen": "2026-10-20"
     },
     {
       "source": "The Punch",
-      "total": 613,
-      "published": 347,
-      "filtered": 266,
+      "total": 615,
+      "published": 348,
+      "filtered": 267,
       "accept_rate": 57,
-      "avg_risk": 32.7,
+      "avg_risk": 32.6,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 237
+        "ollama": 238
       },
-      "last_seen": "2026-10-19"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -140,9 +140,9 @@
     },
     {
       "source": "dailypost",
-      "total": 171,
+      "total": 173,
       "published": 43,
-      "filtered": 128,
+      "filtered": 130,
       "accept_rate": 25,
       "avg_risk": 24.4,
       "engines": {
@@ -180,9 +180,9 @@
     },
     {
       "source": "independentng",
-      "total": 125,
+      "total": 126,
       "published": 30,
-      "filtered": 95,
+      "filtered": 96,
       "accept_rate": 24,
       "avg_risk": 24.2,
       "engines": {
@@ -258,9 +258,9 @@
     },
     {
       "source": "premiumtimesng",
-      "total": 40,
+      "total": 41,
       "published": 4,
-      "filtered": 36,
+      "filtered": 37,
       "accept_rate": 10,
       "avg_risk": 24.0,
       "engines": {
@@ -510,6 +510,18 @@
       "last_seen": "2026-10-19"
     },
     {
+      "source": "Central Bank of Nigeria",
+      "total": 7,
+      "published": 2,
+      "filtered": 5,
+      "accept_rate": 29,
+      "avg_risk": 20.0,
+      "engines": {
+        "ollama": 2
+      },
+      "last_seen": "2026-10-20"
+    },
+    {
       "source": "healthwise.punchng.com",
       "total": 7,
       "published": 2,
@@ -536,16 +548,16 @@
       "last_seen": "2026-10-14"
     },
     {
-      "source": "Central Bank of Nigeria",
-      "total": 5,
-      "published": 2,
-      "filtered": 3,
-      "accept_rate": 40,
-      "avg_risk": 20.0,
+      "source": "technext24",
+      "total": 6,
+      "published": 1,
+      "filtered": 5,
+      "accept_rate": 17,
+      "avg_risk": 30.0,
       "engines": {
-        "ollama": 2
+        "ollama": 1
       },
-      "last_seen": "2026-09-02"
+      "last_seen": "2026-10-20"
     },
     {
       "source": "Jeune Afrique",
@@ -638,18 +650,6 @@
         "unknown": 1
       },
       "last_seen": "2026-09-04"
-    },
-    {
-      "source": "technext24",
-      "total": 5,
-      "published": 1,
-      "filtered": 4,
-      "accept_rate": 20,
-      "avg_risk": 30.0,
-      "engines": {
-        "ollama": 1
-      },
-      "last_seen": "2026-10-15"
     },
     {
       "source": "BBC News",
@@ -834,6 +834,18 @@
         "ollama": 3
       },
       "last_seen": "2026-09-19"
+    },
+    {
+      "source": "Securities and Exchange Commission, Nigeria",
+      "total": 3,
+      "published": 1,
+      "filtered": 2,
+      "accept_rate": 33,
+      "avg_risk": 20.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-10-20"
     },
     {
       "source": "Thechronicle.com.gh",
@@ -1834,18 +1846,6 @@
       "last_seen": "2026-08-14"
     },
     {
-      "source": "Securities and Exchange Commission, Nigeria",
-      "total": 1,
-      "published": 1,
-      "filtered": 0,
-      "accept_rate": 100,
-      "avg_risk": 20.0,
-      "engines": {
-        "ollama": 1
-      },
-      "last_seen": "2026-09-01"
-    },
-    {
       "source": "Sport.pl",
       "total": 1,
       "published": 0,
@@ -2134,5 +2134,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-20 20:25:10"
+  "generated": "2026-10-21 01:29:53"
 }

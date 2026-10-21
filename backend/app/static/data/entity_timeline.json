@@ -864,6 +864,31 @@
       ]
     },
     {
+      "key": "osun state government",
+      "label": "Osun State Government",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 6,
+          "avg_risk": 43.3,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "total_mentions": 7,
@@ -891,25 +916,6 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "osun state government",
-      "label": "Osun State Government",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 6,
-          "avg_risk": 43.3,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -3903,6 +3909,19 @@
       ]
     },
     {
+      "key": "apc campaign council",
+      "label": "APC Campaign Council",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ascsn",
       "label": "ASCSN",
       "total_mentions": 1,
@@ -4523,6 +4542,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "betta edu",
+      "label": "Betta Edu",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -5331,33 +5363,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "fidson",
-      "label": "Fidson",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "fidson healthcare",
-      "label": "Fidson Healthcare Plc",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-20 20:25:10"
+  "generated": "2026-10-21 01:29:53"
 }
