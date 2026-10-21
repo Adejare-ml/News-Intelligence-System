@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 950,
-      "mentions": 1606,
+      "companies": 949,
+      "mentions": 1607,
       "risk": {
-        "Low": 838,
+        "Low": 837,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 37,
-      "mentions": 206,
+      "companies": 39,
+      "mentions": 209,
       "risk": {
         "Medium": 12,
-        "Low": 21,
+        "Low": 23,
         "Critical": 1,
         "High": 3
       }
@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 21,
-      "mentions": 43,
+      "mentions": 44,
       "risk": {
         "Low": 16,
         "Medium": 5
@@ -33,11 +33,11 @@
     },
     {
       "industry": "Telecoms",
-      "companies": 5,
-      "mentions": 32,
+      "companies": 7,
+      "mentions": 37,
       "risk": {
-        "Medium": 1,
-        "Low": 4
+        "Low": 6,
+        "Medium": 1
       }
     },
     {
@@ -123,11 +123,19 @@
     },
     {
       "industry": "Agriculture",
+      "companies": 8,
+      "mentions": 9,
+      "risk": {
+        "Low": 7,
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Healthcare",
       "companies": 7,
       "mentions": 8,
       "risk": {
-        "Low": 6,
-        "Medium": 1
+        "Low": 7
       }
     },
     {
@@ -154,14 +162,6 @@
       "risk": {
         "Medium": 4,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Healthcare",
-      "companies": 6,
-      "mentions": 7,
-      "risk": {
-        "Low": 6
       }
     },
     {
@@ -447,6 +447,14 @@
       }
     },
     {
+      "industry": "Banking/Payments",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Civil Society",
       "companies": 1,
       "mentions": 1,
@@ -496,6 +504,14 @@
     },
     {
       "industry": "Fintech/Social Impact",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Gaming",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -600,6 +616,14 @@
     },
     {
       "industry": "Media/Journalism",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Mining",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -751,5 +775,5 @@
       }
     }
   ],
-  "generated": "2026-10-21 12:50:21"
+  "generated": "2026-10-21 20:37:35"
 }

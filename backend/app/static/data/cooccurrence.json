@@ -18,6 +18,10 @@
       "label": "African Democratic Congress"
     },
     {
+      "key": "airtel",
+      "label": "Airtel"
+    },
+    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government"
     },
@@ -102,6 +106,10 @@
       "label": "Federal Government of Nigeria"
     },
     {
+      "key": "glo",
+      "label": "Glo"
+    },
+    {
       "key": "godwin emefiele",
       "label": "Godwin Emefiele"
     },
@@ -168,6 +176,10 @@
     {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority"
+    },
+    {
+      "key": "mtn",
+      "label": "MTN"
     },
     {
       "key": "mtn foundation",
@@ -390,6 +402,21 @@
       "weight": 2
     },
     {
+      "a": "airtel",
+      "b": "glo",
+      "weight": 2
+    },
+    {
+      "a": "airtel",
+      "b": "house of representatives",
+      "weight": 2
+    },
+    {
+      "a": "airtel",
+      "b": "mtn",
+      "weight": 2
+    },
+    {
       "a": "akwa ibom state government",
       "b": "economic and financial crimes commission",
       "weight": 2
@@ -505,6 +532,16 @@
       "weight": 2
     },
     {
+      "a": "glo",
+      "b": "house of representatives",
+      "weight": 2
+    },
+    {
+      "a": "glo",
+      "b": "mtn",
+      "weight": 2
+    },
+    {
       "a": "government of",
       "b": "government of the united states",
       "weight": 2
@@ -512,6 +549,11 @@
     {
       "a": "house of representatives",
       "b": "independent national electoral commission",
+      "weight": 2
+    },
+    {
+      "a": "house of representatives",
+      "b": "mtn",
       "weight": 2
     },
     {
@@ -595,5 +637,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-21 12:50:21"
+  "generated": "2026-10-21 20:37:35"
 }

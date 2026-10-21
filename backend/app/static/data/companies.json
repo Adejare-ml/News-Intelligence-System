@@ -5249,7 +5249,7 @@
   },
   {
     "Company": "MTN Nigeria",
-    "Mention Count": 9,
+    "Mention Count": 11,
     "Last Seen": "2026-09-10 16:52",
     "Industry": "General",
     "Risk Level": "Low",
@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 88,
+    "Mention Count": 89,
     "Last Seen": "2026-10-20 12:32",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
@@ -7113,9 +7113,9 @@
   },
   {
     "Company": "Airtel",
-    "Mention Count": 1,
-    "Last Seen": "2026-08-19 07:38",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-21 20:30",
+    "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -8505,7 +8505,7 @@
   },
   {
     "Company": "Nigeria Inter-Bank Settlement System Plc",
-    "Mention Count": 1,
+    "Mention Count": 2,
     "Last Seen": "2026-09-29 02:34",
     "Industry": "Banking",
     "Risk Level": "Low",
@@ -9422,5 +9422,69 @@
     "Industry": "Infrastructure/Aviation",
     "Risk Level": "Low",
     "First Seen": "2026-10-21 12:44"
+  },
+  {
+    "Company": "Glo",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-21 20:30",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 17:51"
+  },
+  {
+    "Company": "FSGRN",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 17:51",
+    "Industry": "Gaming",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 17:51"
+  },
+  {
+    "Company": "Lagos State Butchers Association",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 17:51",
+    "Industry": "Agriculture",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 17:51"
+  },
+  {
+    "Company": "Global Cancer Body",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 17:52",
+    "Industry": "Healthcare",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 17:52"
+  },
+  {
+    "Company": "Thor Explorations Ltd",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 17:52",
+    "Industry": "Mining",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 17:52"
+  },
+  {
+    "Company": "Transactility",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 17:52",
+    "Industry": "Banking/Payments",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 17:52"
+  },
+  {
+    "Company": "Octagram",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 20:30",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 20:30"
+  },
+  {
+    "Company": "ONDIPA",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-21 20:30",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-21 20:30"
   }
 ]
