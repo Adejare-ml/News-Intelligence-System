@@ -19,13 +19,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "nasir el rufai",
-      "label": "Nasir El-Rufai",
-      "recent_avg": 66.7,
-      "previous_avg": 85.0,
-      "delta": -18.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "recent_avg": 22.5,
+      "previous_avg": 40.0,
+      "delta": -17.5,
+      "recent_mentions": 4,
+      "previous_mentions": 4
     },
     {
       "key": "national assembly",
@@ -37,40 +37,31 @@
       "previous_mentions": 2
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 23.3,
-      "previous_avg": 40.0,
-      "delta": -16.7,
-      "recent_mentions": 3,
-      "previous_mentions": 4
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 27.1,
+      "recent_avg": 27.5,
       "previous_avg": 42.9,
-      "delta": -15.8,
-      "recent_mentions": 7,
+      "delta": -15.4,
+      "recent_mentions": 8,
       "previous_mentions": 7
     },
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "recent_avg": 27.5,
-      "previous_avg": 38.3,
-      "delta": -10.8,
-      "recent_mentions": 6,
+      "recent_avg": 31.0,
+      "previous_avg": 20.0,
+      "delta": 11.0,
+      "recent_mentions": 5,
       "previous_mentions": 3
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 62.5,
-      "previous_avg": 52.5,
+      "key": "ogun state government",
+      "label": "Ogun State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 10.0,
       "delta": 10.0,
-      "recent_mentions": 16,
-      "previous_mentions": 10
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "content development and monitoring board",
@@ -91,21 +82,12 @@
       "previous_mentions": 2
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "recent_avg": 17.5,
-      "previous_avg": 10.0,
-      "delta": 7.5,
-      "recent_mentions": 8,
-      "previous_mentions": 2
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 24.6,
+      "recent_avg": 23.9,
       "previous_avg": 31.8,
-      "delta": -7.2,
-      "recent_mentions": 14,
+      "delta": -7.9,
+      "recent_mentions": 18,
       "previous_mentions": 14
     },
     {
@@ -116,24 +98,6 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 25.0,
-      "previous_avg": 20.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "recent_avg": 12.5,
-      "previous_avg": 17.5,
-      "delta": -5.0,
-      "recent_mentions": 6,
-      "previous_mentions": 2
     },
     {
       "key": "ports authority",
@@ -152,6 +116,15 @@
       "delta": 5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 60.8,
+      "previous_avg": 56.5,
+      "delta": 4.3,
+      "recent_mentions": 13,
+      "previous_mentions": 13
     },
     {
       "key": "lagos state government",
@@ -179,8 +152,35 @@
       "delta": 1.2,
       "recent_mentions": 5,
       "previous_mentions": 9
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "recent_avg": 16.0,
+      "previous_avg": 15.0,
+      "delta": 1.0,
+      "recent_mentions": 5,
+      "previous_mentions": 4
+    },
+    {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "recent_avg": 14.2,
+      "previous_avg": 15.0,
+      "delta": -0.8,
+      "recent_mentions": 6,
+      "previous_mentions": 3
+    },
+    {
+      "key": "dangote refinery",
+      "label": "Dangote Refinery",
+      "recent_avg": 30.0,
+      "previous_avg": 30.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-21 01:29:53"
+  "generated": "2026-10-21 12:50:21"
 }

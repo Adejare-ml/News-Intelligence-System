@@ -178,6 +178,10 @@
       "label": "Nasir El-Rufai"
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control"
+    },
+    {
       "key": "national bureau of statistics",
       "label": "National Bureau of Statistics"
     },
@@ -260,6 +264,10 @@
     {
       "key": "stallion",
       "label": "Stallion Group"
+    },
+    {
+      "key": "standards organisation of",
+      "label": "Standards Organisation of Nigeria"
     },
     {
       "key": "state security service",
@@ -562,6 +570,11 @@
       "weight": 2
     },
     {
+      "a": "national agency for food and drug administration and control",
+      "b": "standards organisation of",
+      "weight": 2
+    },
+    {
       "a": "national information technology development agency",
       "b": "tech revolution africa",
       "weight": 2
@@ -582,5 +595,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-21 01:29:53"
+  "generated": "2026-10-21 12:50:21"
 }

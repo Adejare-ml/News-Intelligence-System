@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-21 01:29:50",
+  "generated": "2026-10-21 12:50:19",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1962,
-      "downloads": 27737
+      "likes": 2081,
+      "downloads": 42122
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1096,
-      "downloads": 439528
+      "likes": 1134,
+      "downloads": 490447
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 836,
-      "downloads": 13495
+      "likes": 866,
+      "downloads": 15274
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 610,
-      "downloads": 2592
-    },
-    {
-      "id": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "task": "feature-extraction",
-      "likes": 2770,
-      "downloads": 172474
+      "likes": 620,
+      "downloads": 2891
     },
     {
       "id": "black-forest-labs/flux-3-image-klein",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
       "task": "image-to-image",
-      "likes": 566,
-      "downloads": 78897
+      "likes": 587,
+      "downloads": 92604
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 496,
-      "downloads": 4547
+      "likes": 513,
+      "downloads": 5840
     },
     {
-      "id": "jialinyyzz/humanizer",
-      "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "task": "text-generation",
-      "likes": 2023,
-      "downloads": 115341
+      "id": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "task": "feature-extraction",
+      "likes": 2788,
+      "downloads": 179734
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 8680,
+      "downloads": 2057942
     }
   ],
   "papers": [
     {
-      "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
-      "url": "https://huggingface.co/papers/2610.26754",
+      "title": "Slot-JEPA: Object-Structured Prediction Interfaces for Latent World Models",
+      "url": "https://huggingface.co/papers/2610.28074",
       "upvotes": 1
     },
     {
-      "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
-      "url": "https://huggingface.co/papers/2610.22466",
-      "upvotes": 1
-    },
-    {
-      "title": "Vision as Proprioception: Estimating Humanoid Robot Pose from Video",
-      "url": "https://huggingface.co/papers/2610.25288",
-      "upvotes": 1
-    },
-    {
-      "title": "A Language-Informed Loss for Visual Generation",
-      "url": "https://huggingface.co/papers/2610.23653",
-      "upvotes": 2
-    },
-    {
-      "title": "First Passage Attention",
-      "url": "https://huggingface.co/papers/2610.22714",
+      "title": "VideoMaMa++: Temporally Consistent Video Matting via Preserve-and-Refine Token",
+      "url": "https://huggingface.co/papers/2610.26857",
       "upvotes": 0
     },
     {
-      "title": "Competence-Based Evaluation of Logical Reasoning in Large Language Models",
-      "url": "https://huggingface.co/papers/2610.22894",
-      "upvotes": 0
+      "title": "HRoPE: Homography Relative Positional Encoding",
+      "url": "https://huggingface.co/papers/2610.28284",
+      "upvotes": 1
+    },
+    {
+      "title": "OverSeer: Multi-Agent World Models Beyond What Agents See",
+      "url": "https://huggingface.co/papers/2610.28554",
+      "upvotes": 1
+    },
+    {
+      "title": "On the Fragility of Tasks under Composition: Implicit Budgeting in Language Models",
+      "url": "https://huggingface.co/papers/2610.27190",
+      "upvotes": 4
+    },
+    {
+      "title": "PhysLDM: Latent Diffusion for High-Fidelity Deformable Simulation",
+      "url": "https://huggingface.co/papers/2610.07609",
+      "upvotes": 1
     }
   ]
 }
