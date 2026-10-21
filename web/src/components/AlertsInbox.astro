@@ -1,0 +1,224 @@
+---
+/**
+ * The notification inbox that replaces the old red alerts band. The alerts
+ * are embedded at build time; read state lives in this browser only.
+ */
+import Icon from "./Icon.astro";
+import * as data from "../lib/data.ts";
+import { cleanAlerts } from "../lib/alerts.ts";
+
+const alerts = cleanAlerts(data.alerts().alerts ?? []);
+---
+<script type="application/json" id="aura-alerts" set:html={JSON.stringify(alerts)} />
+
+<div class="scrim" data-inbox-scrim hidden></div>
+<aside class="inbox" data-inbox aria-labelledby="inbox-title" role="dialog" aria-modal="true" hidden>
+  <div class="grab" aria-hidden="true"></div>
+  <header class="top">
+    <div>
+      <p class="eyebrow">Alerts</p>
+      <h2 class="h3" id="inbox-title">What needs your attention</h2>
+    </div>
+    <button class="icon-btn" type="button" data-inbox-close aria-label="Close alerts"><Icon name="x" /></button>
+  </header>
+  <div class="tools">
+    <span class="meta" data-inbox-summary></span>
+    <button type="button" class="mark" data-inbox-markall>Mark all read</button>
+  </div>
+  <ol class="list" data-inbox-list></ol>
+  <p class="meta note">
+    Stories scored high or critical by AURA’s risk model in the last few days. Scores are model
+    estimates from the reporting, not findings.
+  </p>
+</aside>
+
+<div class="toast" data-toast role="status" aria-live="polite" hidden>
+  <span class="toast-dot" aria-hidden="true"></span>
+  <span data-toast-text></span>
+  <button type="button" class="toast-open" data-open-inbox>View</button>
+</div>
+
+<style>
+  .scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: rgba(5, 6, 10, 0.5);
+    opacity: 0;
+    transition: opacity 260ms ease;
+  }
+  .scrim:global(.is-open) {
+    opacity: 1;
+  }
+  .inbox {
+    position: fixed;
+    z-index: 61;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: min(440px, calc(100vw - 20px));
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-l);
+    background: color-mix(in srgb, var(--surface) 92%, transparent);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    border: 1px solid var(--line-strong);
+    box-shadow: var(--shadow-2);
+    transform: translateX(110%);
+    touch-action: pan-y;
+    will-change: transform;
+  }
+  .grab {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    width: 4px;
+    height: 44px;
+    margin-top: -22px;
+    border-radius: 2px;
+    background: var(--line-strong);
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 12px;
+    padding: 22px 22px 10px 26px;
+  }
+  .top .eyebrow {
+    color: var(--gold);
+    margin: 0 0 4px;
+  }
+  .tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px 12px 26px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark {
+    background: none;
+    border: 0;
+    padding: 4px 0;
+    color: var(--royal-ink);
+    font-weight: 560;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .mark:disabled {
+    color: var(--faint);
+    cursor: default;
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 10px 8px 14px;
+    overflow-y: auto;
+    flex: 1;
+    overscroll-behavior: contain;
+  }
+  .list :global(.day) {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding: 14px 12px 6px;
+  }
+  .list :global(a) {
+    display: grid;
+    grid-template-columns: 10px minmax(0, 1fr);
+    gap: 4px 12px;
+    padding: 12px;
+    border-radius: var(--radius-m);
+    transition: background-color var(--dur-ui) ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .list :global(a:hover) {
+      background: var(--surface-2);
+    }
+  }
+  .list :global(.unread-dot) {
+    width: 8px;
+    height: 8px;
+    margin-top: 7px;
+    border-radius: 50%;
+    background: var(--royal-ink);
+    transition: opacity 300ms ease, transform 300ms var(--ease-out);
+  }
+  .list :global(.is-read .unread-dot) {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  .list :global(.a-title) {
+    font-weight: 560;
+    line-height: 1.35;
+  }
+  .list :global(.is-read .a-title) {
+    color: var(--text-soft);
+    font-weight: 450;
+  }
+  .list :global(.a-meta) {
+    grid-column: 2;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .note {
+    margin: 0;
+    padding: 12px 22px 18px 26px;
+    border-top: 1px solid var(--line);
+  }
+
+  .toast {
+    position: fixed;
+    z-index: 55;
+    left: 50%;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 10px 10px 16px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    border: 1px solid var(--line-strong);
+    box-shadow: var(--shadow-2);
+    font-size: 0.9rem;
+    transform: translate(-50%, 0);
+    transition: transform 420ms var(--ease-out), opacity 420ms var(--ease-out);
+  }
+  @starting-style {
+    .toast {
+      transform: translate(-50%, 140%);
+      opacity: 0;
+    }
+  }
+  .toast:global(.is-leaving) {
+    transform: translate(-50%, 140%);
+    opacity: 0;
+    transition-duration: 220ms;
+  }
+  .toast-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+  .toast-open {
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 12px;
+    background: var(--gold);
+    color: #14110a;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  @media (max-width: 900px) {
+    .toast {
+      bottom: calc(92px + env(safe-area-inset-bottom));
+    }
+  }
+</style>

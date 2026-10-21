@@ -48,7 +48,8 @@ const TAIL_RE = /\s+[-–—|]\s+([^-–—|]+)$/;
 
 /** Headline without the " - Publisher" suffix Google News appends. */
 export function cleanTitle(title: string, source = ""): { title: string; publisher: string } {
-  const text = String(title || "").trim();
+  // Feeds sometimes leave a dangling separator: "... investor of $120m |".
+  const text = String(title || "").trim().replace(/\s*[|–—-]+\s*$/, "");
   const src = String(source || "").trim();
   for (const sep of [" - ", " | ", " – ", " — "]) {
     if (src && text.toLowerCase().endsWith((sep + src).toLowerCase())) {

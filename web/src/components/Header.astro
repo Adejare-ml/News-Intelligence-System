@@ -27,6 +27,15 @@ const NAV = SECTIONS;
     </nav>
 
     <div class="actions">
+      <button class="search-btn" type="button" data-open-search aria-label="Search (Ctrl or Cmd + K)">
+        <Icon name="search" size={17} />
+        <span class="search-label">Search</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <button class="icon-btn bell" type="button" data-open-inbox aria-label="Alerts">
+        <span class="bell-icon" data-bell><Icon name="bell" /></span>
+        <span class="badge" data-bell-count hidden></span>
+      </button>
       <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to light theme">
         <span class="theme-icon theme-dark"><Icon name="sun" /></span>
         <span class="theme-icon theme-light"><Icon name="moon" /></span>
@@ -144,6 +153,59 @@ const NAV = SECTIONS;
     align-items: center;
     gap: 6px;
   }
+  .search-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    padding: 0 8px 0 12px;
+    margin-right: 4px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface-glass);
+    color: var(--muted);
+    font-size: 0.86rem;
+    cursor: pointer;
+    transition: border-color var(--dur-ui) ease, color var(--dur-ui) ease, transform var(--dur-press) var(--ease-out);
+  }
+  .search-btn:active {
+    transform: scale(0.97);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .search-btn:hover {
+      border-color: var(--text-soft);
+      color: var(--text);
+    }
+  }
+  .search-btn kbd {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border: 1px solid var(--line-strong);
+    background: var(--bg);
+  }
+  .bell-icon {
+    display: grid;
+    place-items: center;
+    transform-origin: 50% 15%;
+  }
+  .badge {
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    min-width: 17px;
+    height: 17px;
+    padding: 0 4px;
+    border-radius: 999px;
+    background: var(--gold);
+    color: #14110a;
+    font-size: 0.66rem;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    box-shadow: 0 0 0 2px var(--bg);
+  }
   .subscribe-cta {
     min-height: 38px;
     padding: 0 16px;
@@ -170,11 +232,77 @@ const NAV = SECTIONS;
       display: none;
     }
   }
+  @media (max-width: 640px) {
+    .search-btn {
+      width: 40px;
+      padding: 0;
+      justify-content: center;
+      border-color: transparent;
+      background: transparent;
+    }
+    .search-label,
+    .search-btn kbd {
+      display: none;
+    }
+  }
   @media (max-width: 480px) {
     .subscribe-cta span {
       display: none;
     }
-    .subscribe-cta {
+    .search-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    padding: 0 8px 0 12px;
+    margin-right: 4px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface-glass);
+    color: var(--muted);
+    font-size: 0.86rem;
+    cursor: pointer;
+    transition: border-color var(--dur-ui) ease, color var(--dur-ui) ease, transform var(--dur-press) var(--ease-out);
+  }
+  .search-btn:active {
+    transform: scale(0.97);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .search-btn:hover {
+      border-color: var(--text-soft);
+      color: var(--text);
+    }
+  }
+  .search-btn kbd {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border: 1px solid var(--line-strong);
+    background: var(--bg);
+  }
+  .bell-icon {
+    display: grid;
+    place-items: center;
+    transform-origin: 50% 15%;
+  }
+  .badge {
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    min-width: 17px;
+    height: 17px;
+    padding: 0 4px;
+    border-radius: 999px;
+    background: var(--gold);
+    color: #14110a;
+    font-size: 0.66rem;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    box-shadow: 0 0 0 2px var(--bg);
+  }
+  .subscribe-cta {
       width: 40px;
       padding: 0;
       justify-content: center;

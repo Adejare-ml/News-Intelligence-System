@@ -102,3 +102,5 @@ if (initial && buttons.some((b) => b.dataset.filter === initial)) {
   buttons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.filter === initial)));
 }
 if (query || filter !== "all") apply(false);
+
+export {};

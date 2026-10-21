@@ -13,6 +13,7 @@ export const SECTIONS: Section[] = [
   { path: "", label: "Today", short: "Today", icon: "home" },
   { path: "brief/", label: "Brief", short: "Brief", icon: "newspaper" },
   { path: "register/", label: "Register", short: "Register", icon: "shield" },
+  { path: "news/", label: "News", short: "News", icon: "layers" },
 ];
 
 export const hasSection = (path: string) => SECTIONS.some((s) => s.path === path);
