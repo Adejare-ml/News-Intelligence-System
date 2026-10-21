@@ -12,3 +12,13 @@ export function isActive(current: string, path: string): boolean {
   if (path === "" || path === "/") return here === target || here === "";
   return here === target || here.startsWith(`${target}/`);
 }
+
+/**
+ * Lead-image URL. On Cloudflare (PUBLIC_IMG_PROXY=1) images go through the
+ * /img function so the browser never contacts the publisher; elsewhere
+ * (the GitHub Pages mirror has no functions) the publisher URL is used.
+ */
+export function imageSrc(url: string): string {
+  if (!url) return "";
+  return import.meta.env.PUBLIC_IMG_PROXY === "1" ? href(`img?u=${encodeURIComponent(url)}`) : url;
+}

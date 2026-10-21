@@ -1,0 +1,11 @@
+# Local development only (`npx wrangler pages dev out/cloudflare`).
+# Production bindings live in the Cloudflare dashboard; this file is NOT
+# copied to the deployed branch, so it never overrides them.
+name = "auranews"
+compatibility_date = "2026-09-01"
+pages_build_output_dir = "out/cloudflare"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aura"
+database_id = "local-only"

@@ -13,4 +13,8 @@ export default defineConfig({
   build: { format: "directory" },
   prefetch: { prefetchAll: true, defaultStrategy: "hover" },
   devToolbar: { enabled: false },
+  // Vite inlines scripts under 4KB by default. Cloudflare serves a strict
+  // CSP (script-src 'self', see public/_headers), so every script must be
+  // its own file.
+  vite: { build: { assetsInlineLimit: 0 } },
 });

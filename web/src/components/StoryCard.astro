@@ -2,6 +2,7 @@
 import Icon from "./Icon.astro";
 import type { Story } from "../lib/stories.ts";
 import { relativeTime } from "../lib/stories.ts";
+import { imageSrc } from "../lib/url.ts";
 
 interface Props {
   story: Story;
@@ -28,7 +29,7 @@ const c = story.cover;
     </div>
     {story.image && (
       <img
-        src={story.image}
+        src={imageSrc(story.image)}
         alt=""
         loading={size === "lead" ? "eager" : "lazy"}
         decoding="async"
