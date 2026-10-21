@@ -1,68 +1,78 @@
 {
-  "generated": "2026-10-20 20:24:53",
+  "generated": "2026-10-21 01:29:50",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 1923,
+      "likes": 1962,
       "downloads": 27737
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1072,
+      "likes": 1096,
       "downloads": 439528
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 824,
+      "likes": 836,
       "downloads": 13495
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 606,
+      "likes": 610,
       "downloads": 2592
     },
     {
       "id": "google/embeddinggemma-2",
       "url": "https://huggingface.co/google/embeddinggemma-2",
       "task": "feature-extraction",
-      "likes": 2759,
+      "likes": 2770,
       "downloads": 172474
     },
     {
       "id": "black-forest-labs/flux-3-image-klein",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
       "task": "image-to-image",
-      "likes": 558,
+      "likes": 566,
       "downloads": 78897
-    },
-    {
-      "id": "jialinyyzz/humanizer",
-      "url": "https://huggingface.co/jialinyyzz/humanizer",
-      "task": "text-generation",
-      "likes": 2022,
-      "downloads": 115341
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 490,
+      "likes": 496,
       "downloads": 4547
+    },
+    {
+      "id": "jialinyyzz/humanizer",
+      "url": "https://huggingface.co/jialinyyzz/humanizer",
+      "task": "text-generation",
+      "likes": 2023,
+      "downloads": 115341
     }
   ],
   "papers": [
     {
+      "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning",
+      "url": "https://huggingface.co/papers/2610.26754",
+      "upvotes": 1
+    },
+    {
+      "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
+      "url": "https://huggingface.co/papers/2610.22466",
+      "upvotes": 1
+    },
+    {
       "title": "Vision as Proprioception: Estimating Humanoid Robot Pose from Video",
       "url": "https://huggingface.co/papers/2610.25288",
-      "upvotes": 0
+      "upvotes": 1
     },
     {
       "title": "A Language-Informed Loss for Visual Generation",
@@ -78,16 +88,6 @@
       "title": "Competence-Based Evaluation of Logical Reasoning in Large Language Models",
       "url": "https://huggingface.co/papers/2610.22894",
       "upvotes": 0
-    },
-    {
-      "title": "Legal Guidance in the Wild: How Users Seek Legal Help in Real-World LLM Conversations",
-      "url": "https://huggingface.co/papers/2610.25159",
-      "upvotes": 1
-    },
-    {
-      "title": "Predicting Privileged Information Effectiveness for On-Policy Self-Distillation",
-      "url": "https://huggingface.co/papers/2610.22512",
-      "upvotes": 3
     }
   ]
 }

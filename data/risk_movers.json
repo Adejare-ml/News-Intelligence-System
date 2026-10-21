@@ -1,6 +1,15 @@
 {
   "movers": [
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 43.3,
+      "previous_avg": 23.3,
+      "delta": 20.0,
+      "recent_mentions": 9,
+      "previous_mentions": 23
+    },
+    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "recent_avg": 38.3,
@@ -10,13 +19,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 41.0,
-      "previous_avg": 23.4,
-      "delta": 17.6,
-      "recent_mentions": 10,
-      "previous_mentions": 22
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "recent_avg": 66.7,
+      "previous_avg": 85.0,
+      "delta": -18.3,
+      "recent_mentions": 3,
+      "previous_mentions": 1
     },
     {
       "key": "national assembly",
@@ -28,6 +37,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "recent_avg": 23.3,
+      "previous_avg": 40.0,
+      "delta": -16.7,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 27.1,
@@ -37,24 +55,6 @@
       "previous_mentions": 7
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 63.8,
-      "previous_avg": 48.9,
-      "delta": 14.9,
-      "recent_mentions": 17,
-      "previous_mentions": 9
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 27.5,
-      "previous_avg": 40.0,
-      "delta": -12.5,
-      "recent_mentions": 4,
-      "previous_mentions": 3
-    },
-    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 27.5,
@@ -62,6 +62,24 @@
       "delta": -10.8,
       "recent_mentions": 6,
       "previous_mentions": 3
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 62.5,
+      "previous_avg": 52.5,
+      "delta": 10.0,
+      "recent_mentions": 16,
+      "previous_mentions": 10
+    },
+    {
+      "key": "content development and monitoring board",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "recent_avg": 20.0,
+      "previous_avg": 10.0,
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "government of",
@@ -85,19 +103,10 @@
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 24.6,
-      "previous_avg": 31.0,
-      "delta": -6.4,
+      "previous_avg": 31.8,
+      "delta": -7.2,
       "recent_mentions": 14,
-      "previous_mentions": 15
-    },
-    {
-      "key": "content development and monitoring board",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
+      "previous_mentions": 14
     },
     {
       "key": "olayemi cardoso",
@@ -170,17 +179,8 @@
       "delta": 1.2,
       "recent_mentions": 5,
       "previous_mentions": 9
-    },
-    {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 20.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-20 20:25:10"
+  "generated": "2026-10-21 01:29:53"
 }

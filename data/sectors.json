@@ -42,11 +42,11 @@
     },
     {
       "industry": "Aviation",
-      "companies": 7,
-      "mentions": 22,
+      "companies": 8,
+      "mentions": 23,
       "risk": {
         "Medium": 4,
-        "Low": 2,
+        "Low": 3,
         "High": 1
       }
     },
@@ -743,5 +743,5 @@
       }
     }
   ],
-  "generated": "2026-10-20 20:25:10"
+  "generated": "2026-10-21 01:29:53"
 }

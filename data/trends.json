@@ -1,19 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 197,
-  "previous_articles": 198,
+  "recent_articles": 196,
+  "previous_articles": 203,
   "rising": [
     {
       "term": "probe",
       "recent": 9,
       "previous": 2,
       "change": 7
-    },
-    {
-      "term": "efcc",
-      "recent": 17,
-      "previous": 11,
-      "change": 6
     },
     {
       "term": "imf",
@@ -34,6 +28,30 @@
       "change": 6
     },
     {
+      "term": "premium",
+      "recent": 78,
+      "previous": 73,
+      "change": 5
+    },
+    {
+      "term": "premium times",
+      "recent": 78,
+      "previous": 73,
+      "change": 5
+    },
+    {
+      "term": "times",
+      "recent": 78,
+      "previous": 73,
+      "change": 5
+    },
+    {
+      "term": "guardian",
+      "recent": 45,
+      "previous": 40,
+      "change": 5
+    },
+    {
       "term": "eagle",
       "recent": 11,
       "previous": 6,
@@ -43,24 +61,6 @@
       "term": "eagle online",
       "recent": 11,
       "previous": 6,
-      "change": 5
-    },
-    {
-      "term": "online",
-      "recent": 11,
-      "previous": 6,
-      "change": 5
-    },
-    {
-      "term": "warns",
-      "recent": 8,
-      "previous": 3,
-      "change": 5
-    },
-    {
-      "term": "gas",
-      "recent": 7,
-      "previous": 2,
       "change": 5
     }
   ],
@@ -84,21 +84,27 @@
       "change": -9
     },
     {
+      "term": "nnpc",
+      "recent": 7,
+      "previous": 15,
+      "change": -8
+    },
+    {
       "term": "fuel",
       "recent": 1,
       "previous": 9,
       "change": -8
     },
     {
-      "term": "nnpc",
-      "recent": 8,
-      "previous": 14,
-      "change": -6
-    },
-    {
       "term": "unveils",
       "recent": 1,
       "previous": 7,
+      "change": -6
+    },
+    {
+      "term": "panel",
+      "recent": 0,
+      "previous": 6,
       "change": -6
     },
     {
@@ -118,31 +124,25 @@
       "recent": 3,
       "previous": 8,
       "change": -5
-    },
-    {
-      "term": "lagos-calabar",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 138,
-      "previous": 142
+      "recent": 136,
+      "previous": 145
     },
     {
       "category": "Legal",
-      "recent": 32,
-      "previous": 28
+      "recent": 33,
+      "previous": 29
     },
     {
       "category": "Company",
       "recent": 27,
-      "previous": 28
+      "previous": 29
     }
   ],
   "social": [],
-  "generated": "2026-10-20 20:24:54"
+  "generated": "2026-10-21 01:29:51"
 }
