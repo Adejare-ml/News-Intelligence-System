@@ -68,6 +68,83 @@
         T.it("no churn at all hides the panel", function () {
             T.eq(B.appointmentsTimeline([{ Name: "X", Event: "other" }]), null);
         });
+
+        T.it("placeholder names are the absence of a name, not a person", function () {
+            ["Unknown", "unknown", "None", "Not Specified", "NOT STATED",
+             "N/A", "n/a.", "nil", "TBD", "(unknown)", "-", "--", "  ", ""
+            ].forEach(function (n) {
+                T.eq(B.isPlaceholderName(n), true, JSON.stringify(n) + " is a placeholder");
+            });
+            ["Ada Obi", "Nilesh Patel", "Nancy", "Unnamed Commissioner", "Tinubu"
+            ].forEach(function (n) {
+                T.eq(B.isPlaceholderName(n), false, JSON.stringify(n) + " is a name");
+            });
+        });
+
+        T.it("placeholder rows are dropped and do not inflate the count", function () {
+            var m = B.appointmentsTimeline(PEOPLE.concat([
+                { Name: "Unknown", Position: "Speaker", Organization: "Edo Assembly", Event: "resignation", Date: "2026-09-05" },
+                { Name: "Not Specified", Position: "CEO", Organization: "Geregu", Event: "appointment", Date: "2026-09-06" }
+            ]));
+            T.eq(m.total, 4, "count still reflects only real people");
+            var html = B.renderAppointmentsHTML(m);
+            T.excludes(html, "Unknown");
+            T.excludes(html, "Not Specified");
+        });
+
+        T.it("a role or an organisation in the Name is not a person", function () {
+            ["Managing Director/Chief Executive", "Officers Commanding",
+             "Director-General", "MD NAN", "DG NTA", "Kogi Forum",
+             "Rafa Corporation Accelerates Growth"
+            ].forEach(function (n) {
+                T.eq(B.isRoleOrOrgName(n), true, JSON.stringify(n) + " is not a person");
+            });
+            // Almost half this board is a surname on its own; none may go.
+            ["Cardoso", "Orya", "Agbebaku", "Tinubu", "Coker-Odusote",
+             "Bola Tinubu", "Prof Gombe", "Capt. Wisdom", "Nanna Ama",
+             "Ali Isa", "Uwem Ite", "Dr Haydar Daudu", ""
+            ].forEach(function (n) {
+                T.eq(B.isRoleOrOrgName(n), false, JSON.stringify(n) + " is a person");
+            });
+        });
+
+        T.it("role and organisation rows leave the board and the count", function () {
+            var m = B.appointmentsTimeline(PEOPLE.concat([
+                { Name: "MD NAN", Position: "Managing Director",
+                  Organization: "News Agency of Nigeria", Event: "reappointment", Date: "2026-09-08" },
+                { Name: "Kogi Forum", Position: "Officer", Organization: "NPC",
+                  Event: "appointment", Date: "2026-09-09" }
+            ]));
+            T.eq(m.total, 4, "count reflects only real people");
+            var html = B.renderAppointmentsHTML(m);
+            T.excludes(html, "MD NAN");
+            T.excludes(html, "Kogi Forum");
+        });
+
+        T.it("a placeholder Position or Organization drops out of the role", function () {
+            var html = B.renderAppointmentsHTML(B.appointmentsTimeline([
+                { Name: "Sarah Boulos", Position: "President", Organization: "Not Specified",
+                  Event: "appointment", Date: "2026-09-17" },
+                { Name: "Ayo Fayose", Position: "Officer", Organization: "N/A",
+                  Event: "appointment", Date: "2026-07-21" }
+            ]));
+            T.excludes(html, "Not Specified");
+            T.excludes(html, "N/A");
+            T.contains(html, "→ President", "the half we do know survives");
+            T.contains(html, "→ Officer");
+        });
+
+        T.it("'Unnamed X' keeps its move but gets no dossier link", function () {
+            var m = B.appointmentsTimeline([
+                { Name: "Unnamed Commissioner", Position: "Commissioner",
+                  Organization: "Lagos State", Event: "appointment", Date: "2026-09-02" }
+            ]);
+            T.eq(m.total, 1, "a role without a name is still a recorded move");
+            var html = B.renderAppointmentsHTML(m);
+            T.contains(html, "move-anon");
+            T.contains(html, "Unnamed Commissioner");
+            T.excludes(html, "#/person/", "nothing to open, so nothing is linked");
+        });
     });
 
     T.describe("procurement ledger", function () {

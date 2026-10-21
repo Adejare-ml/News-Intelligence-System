@@ -46,7 +46,10 @@ MAX_CONSECUTIVE_LLM_FAILURES = 3
 from backend.app.services.relevance import (  # noqa: E402  (re-export)
     NEWS_OUTLET_MARKERS,
     NON_ENTITY_TERMS,
+    PLACEHOLDER_PERSON_NAMES,
+    is_placeholder_person,
     is_publication_or_furniture,
+    is_role_or_org_name,
 )
 
 
@@ -1273,6 +1276,15 @@ def export_static_json_database():
         if not relevance.is_off_topic(p.get("Organization"))
         and not relevance.is_off_topic(p.get("Name"))
         and not is_publication_or_furniture(p.get("Organization"))
+        # "Unknown" / "Not Specified" are the extractor reporting that the
+        # article named nobody. Left in, they shipped as tracked people:
+        # person dossiers, graph nodes, and rows on the appointments board.
+        and not is_placeholder_person(p.get("Name"))
+        # The post captured instead of its holder ("Managing Director/Chief
+        # Executive", "MD NAN") or an organisation standing in for a person
+        # ("Kogi Forum"). Six such names in the live export, five of them on
+        # the appointments board.
+        and not is_role_or_org_name(p.get("Name"))
     ]
     # Procurement and PSC rows feed the same graph and their own exports,
     # and were never filtered at all.

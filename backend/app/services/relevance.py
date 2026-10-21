@@ -249,6 +249,127 @@ NON_ENTITY_TERMS = {
     "read more", "subscribe", "latest news", "breaking news", "news",
 }
 
+# What the extractor writes into a Name field when the article never named
+# anyone. These reached the dashboard as people: the appointments board
+# rendered "Unknown left Speaker @ Edo State House of Assembly" and linked
+# it to a person dossier, and the entity directory carried "Not Specified"
+# as a tracked individual. They are the absence of a name, not a name.
+#
+# "Unnamed Commissioner" is deliberately NOT here. It is the same absence,
+# but it carries the role, so the move is still worth recording -- the
+# dashboard renders those without a dossier link instead of dropping them.
+PLACEHOLDER_PERSON_NAMES = {
+    "unknown", "unknowns", "unidentified", "none", "no name", "nobody",
+    "n/a", "na", "nil", "null", "nan", "tbd", "tba", "anonymous", "unnamed",
+    "not specified", "unspecified", "not stated", "not disclosed",
+    "undisclosed", "not available", "not known", "not named",
+    "not mentioned", "not applicable", "not provided", "not reported",
+}
+
+
+# The other way a Name field ends up holding something that is not a person:
+# the extractor captures the post instead of the holder ("Managing
+# Director/Chief Executive", "Officers Commanding"), abbreviates the post
+# plus the organisation's initials ("MD NAN", "DG NTA"), or lifts an
+# organisation or a headline fragment outright ("Kogi Forum", "Rafa
+# Corporation Accelerates Growth").
+#
+# Precision matters far more than recall here. 43% of the moves board is a
+# real person referred to by surname alone -- "Cardoso", "Orya", "Agbebaku"
+# -- so a rule that treats a thin name as a bad one would delete most of
+# the board. Every rule below therefore fires on what the name *is made
+# of*, never on how much of it there is. Measured over the 440 distinct
+# names in the live people.json, the three together flag six, all six
+# genuinely not people, and leave "Prof Gombe" and "Capt. Wisdom" alone.
+_ROLE_WORDS = {
+    "managing", "director", "directors", "general", "chief", "executive",
+    "officer", "officers", "commanding", "deputy", "acting", "interim",
+    "assistant", "administrator", "chairman", "chairperson", "chair",
+    "president", "vice", "secretary", "treasurer", "registrar", "provost",
+    "rector", "commissioner", "comptroller", "controller", "commandant",
+    "coordinator", "manager", "head", "boss", "spokesperson", "aide",
+    "representative", "delegate", "envoy", "consul", "ambassador",
+    "minister", "governor", "senator", "speaker", "dean", "principal",
+    "supervisor", "inspector", "auditor", "counsel", "advisor", "adviser",
+}
+
+# Words that carry no identity, so they do not stop a name being all-role.
+_NAME_FILLER = {"and", "of", "the", "for", "to", "a", "an", "at", "in", "on"}
+
+# Posts that get abbreviated in front of an organisation's initials.
+_TITLE_ACRONYMS = {"md", "dg", "ceo", "cfo", "coo", "cto", "gmd", "ed"}
+
+# Institutional words. Distinct from the outlet markers above: those catch
+# the publication, these catch the subject organisation.
+_ORG_WORDS = {
+    "forum", "association", "agency", "commission", "authority", "council",
+    "ministry", "bureau", "institute", "federation", "union", "party",
+    "corps", "command", "academy", "bank", "plc", "ltd", "limited",
+    "company", "corporation", "group", "committee", "board", "department",
+    "society", "congress", "assembly", "parliament", "senate", "tribunal",
+    "secretariat", "organisation", "organization", "foundation", "trust",
+    "university", "college", "school", "hospital", "church", "mosque",
+}
+
+
+def _name_tokens(name: Any, split_hyphens: bool = False) -> list:
+    """Lowercased word tokens, with separators and edge punctuation gone.
+
+    Hyphens split only for the all-role rule, which needs "Director-General"
+    to read as two role words. The organisation rule must not split them:
+    it fires on a single token, and a hyphenated Nigerian surname such as
+    "Bank-Olemoh" would hand it one.
+    """
+    cleaned = " ".join(str(name or "").replace("\xa0", " ").split()).lower()
+    cleaned = re.sub(r"[/,]", " ", cleaned)
+    if split_hyphens:
+        cleaned = re.sub(r"[-‐-―]", " ", cleaned)
+    out = []
+    for token in cleaned.split():
+        token = re.sub(r"^[^\w]+|[^\w]+$", "", token)
+        if token:
+            out.append(token)
+    return out
+
+
+def is_role_or_org_name(name: Any) -> bool:
+    """True when a Name field holds a job title or an organisation, not a person."""
+    tokens = _name_tokens(name)
+    if not tokens:
+        return False
+
+    # A post with no holder: every word is title vocabulary.
+    meaningful = [t for t in _name_tokens(name, split_hyphens=True)
+                  if t not in _NAME_FILLER]
+    if meaningful and all(t in _ROLE_WORDS for t in meaningful):
+        return True
+
+    # "MD NAN" / "DG NTA": a post abbreviation then an all-caps acronym.
+    # The second word is checked in its original case, because "Dg Nta"
+    # would be a surname pair and this pattern is specifically the
+    # newsroom shorthand.
+    raw = str(name or "").split()
+    if len(tokens) == 2 and len(raw) == 2 and tokens[0] in _TITLE_ACRONYMS:
+        second = re.sub(r"^[^\w]+|[^\w]+$", "", raw[1])
+        if re.fullmatch(r"[A-Z]{2,6}", second):
+            return True
+
+    # An organisation standing where a person should be.
+    return any(t in _ORG_WORDS for t in tokens)
+
+
+def is_placeholder_person(name: Any) -> bool:
+    """True when a Name field holds a "no name was given" marker, not a person.
+
+    Applied at export (``run_pipeline``) rather than at write time, so the
+    sheet keeps its audit trail exactly as the other entity guards here do.
+    """
+    cleaned = " ".join(str(name or "").replace("\xa0", " ").split()).lower()
+    # Strip the punctuation these arrive wrapped in ("(unknown)", "N/A.",
+    # "--"), which also collapses a bare dash or question mark to "".
+    cleaned = re.sub(r"^[^\w]+|[^\w]+$", "", cleaned)
+    return not cleaned or cleaned in PLACEHOLDER_PERSON_NAMES
+
 
 def _word_bounded(marker: str, cleaned: str) -> bool:
     return re.search(r"\b" + re.escape(marker) + r"\b", cleaned) is not None
