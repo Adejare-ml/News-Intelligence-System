@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 21,
-      "mentions": 42,
+      "mentions": 43,
       "risk": {
         "Low": 16,
         "Medium": 5
@@ -42,11 +42,11 @@
     },
     {
       "industry": "Aviation",
-      "companies": 8,
-      "mentions": 23,
+      "companies": 9,
+      "mentions": 26,
       "risk": {
         "Medium": 4,
-        "Low": 3,
+        "Low": 4,
         "High": 1
       }
     },
@@ -302,6 +302,14 @@
       }
     },
     {
+      "industry": "Employer Association",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "FinTech",
       "companies": 1,
       "mentions": 2,
@@ -479,14 +487,6 @@
       }
     },
     {
-      "industry": "Employer Association",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Fintech/Banking",
       "companies": 1,
       "mentions": 1,
@@ -528,6 +528,14 @@
     },
     {
       "industry": "Industrial Infrastructure",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Infrastructure/Aviation",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -743,5 +751,5 @@
       }
     }
   ],
-  "generated": "2026-10-21 01:29:53"
+  "generated": "2026-10-21 12:50:21"
 }

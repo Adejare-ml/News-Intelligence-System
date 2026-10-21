@@ -121,26 +121,8 @@
       "risk": "High"
     },
     {
-      "id": "b27f282d6347",
-      "label": "Osun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9e4088ac2b55",
-      "label": "APC Campaign Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,6 +145,72 @@
       "risk": "Low"
     },
     {
+      "id": "b27f282d6347",
+      "label": "Osun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "aa9abf2767d5",
+      "label": "Standards Organisation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9e4088ac2b55",
+      "label": "APC Campaign Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7cd4ee68f6fa",
+      "label": "House of Representatives Committee on Home Affairs",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7ea10c41e70c",
+      "label": "Taraba State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
       "type": "agency",
@@ -171,12 +219,6 @@
     {
       "id": "1613f8dac921",
       "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
       "type": "agency",
       "risk": "Low"
     },
@@ -195,48 +237,6 @@
     {
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "22e91132d957",
-      "label": "Presidency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "d7ecacfbe05f",
-      "label": "Plateau State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "903358e8b4b2",
-      "label": "Federal Ministry of Health",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
