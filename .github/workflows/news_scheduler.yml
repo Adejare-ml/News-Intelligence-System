@@ -253,10 +253,20 @@ jobs:
           set -euo pipefail
           git fetch --force origin "refs/tags/production:refs/tags/production" || true
           if git rev-parse --verify -q "production^{commit}" >/dev/null; then
-            bash web/scripts/build-production.sh production
-            echo "built=true" >> "$GITHUB_OUTPUT"
+            REF=production
           else
-            echo "::warning::No version promoted yet (no production tag): production keeps its current build. Run 'Promote to production'."
+            # Before the first promotion there is no tag: keep the code that
+            # is live now, read from the last publish to cloudflare-pages
+            # ("Deploying to cloudflare-pages from @ owner/repo@<sha>").
+            git fetch origin cloudflare-pages || true
+            REF=$(git log -1 --format=%s origin/cloudflare-pages 2>/dev/null | grep -oE '[0-9a-f]{40}' | tail -1 || true)
+          fi
+          if [ -n "${REF:-}" ] && git rev-parse --verify -q "${REF}^{commit}" >/dev/null; then
+            bash web/scripts/build-production.sh "$REF"
+            echo "built=true" >> "$GITHUB_OUTPUT"
+            echo "sha=$(git rev-parse "${REF}^{commit}")" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::No promoted version found: production keeps its current build. Run 'Promote to production'."
             echo "built=false" >> "$GITHUB_OUTPUT"
           fi
 
@@ -274,6 +284,9 @@ jobs:
         with:
           folder: out-production
           branch: cloudflare-pages
+          # Names the production code version (not this data commit), which
+          # the next run reads back if the production tag is missing.
+          commit-message: "Deploying to cloudflare-pages from @ ${{ github.repository }}@${{ steps.production.outputs.sha }} (data refresh)"
 
       # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
       # the data commit lands with [skip ci], so this path -- the one that

@@ -72,6 +72,8 @@ jobs:
           folder: out-production
           branch: cloudflare-pages
           token: ${{ secrets.GITHUB_TOKEN }}
+          # Names the promoted commit, which the scheduler also reads.
+          commit-message: "Deploying to cloudflare-pages from @ ${{ github.repository }}@${{ steps.resolve.outputs.sha }} (promoted)"
 
       - name: Mark the promoted version
         env:
