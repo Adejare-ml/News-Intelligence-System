@@ -577,18 +577,6 @@
       "risk": "High"
     },
     {
-      "id": "a5e155a532ad",
-      "label": "Sadio Mane\u0301",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "930993bc7654",
-      "label": "Mango Business",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
       "id": "f3f65e2dd7f8",
       "label": "Leno Adesanya",
       "type": "psc",
@@ -615,18 +603,6 @@
     {
       "id": "c23cf0c11158",
       "label": "FirstHoldCo",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "1b45367ee273",
-      "label": "Tony O. Elumelu",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "f5be7663cdb3",
-      "label": "United Bank for Africa (UBA) Plc",
       "type": "company",
       "risk": "Medium"
     },
@@ -933,12 +909,6 @@
       "label": "Significant influence or control"
     },
     {
-      "id": "bacdbeb20944",
-      "from": "a5e155a532ad",
-      "to": "930993bc7654",
-      "label": "Significant influence or control"
-    },
-    {
       "id": "6ef476ba43f6",
       "from": "f3f65e2dd7f8",
       "to": "b64909add6b9",
@@ -967,12 +937,6 @@
       "from": "6617740c0c1a",
       "to": "c23cf0c11158",
       "label": "Significant influence or control"
-    },
-    {
-      "id": "da3764a5dbad",
-      "from": "1b45367ee273",
-      "to": "f5be7663cdb3",
-      "label": "PSC: 24.5%"
     },
     {
       "id": "c1d603f082d4",

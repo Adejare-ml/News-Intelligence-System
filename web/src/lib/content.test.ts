@@ -121,7 +121,7 @@ describe("brief", () => {
     const b = parseBrief(md);
     assert.equal(b.title, "PSC & Company Daily Intelligence Report");
     assert.equal(b.generated, "2026-10-21 12:47:35 (UTC)");
-    assert.deepEqual(b.stats[0], { label: "Total Articles Processed", value: "25" });
+    assert.deepEqual(b.stats[0], { label: "New articles analysed in today’s runs", value: "25" });
     assert.deepEqual(b.sections.map((s) => s.id), ["key-developments", "beneficial-ownership-and-psc-disclosures"]);
   });
   test("splits a bullet into lead, sentence and source", () => {

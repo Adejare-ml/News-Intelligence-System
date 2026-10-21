@@ -32,7 +32,7 @@ const { holding, others } = Astro.props;
         {holding.band && <span class="chip chip-gold">CAMA band {holding.band.label}</span>}
         {holding.flags.slice(0, 2).map((f) => <span class:list={["chip", f.severity === "high" ? "chip-crimson" : "chip-royal"]}>{f.title}</span>)}
         <span class="meta src">Extracted from news reporting · not a CAC filing</span>
-        <a class="link" href={href(`entity/${slugify(holding.person)}/`)}>Follow {holding.person.split(" ")[0]} <Icon name="arrowRight" size={16} /></a>
+        <a class="link" href={href(`entity/${slugify(holding.person)}/`)}>Follow {holding.person.split(" ").length === 2 ? holding.person.split(" ")[0] : holding.person} <Icon name="arrowRight" size={16} /></a>
       </div>
     </div>
 

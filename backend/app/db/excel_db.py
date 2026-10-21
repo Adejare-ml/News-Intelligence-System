@@ -48,7 +48,10 @@ SHEETS_CONFIG = {
         "Person Name", "Company", "Nature of Control", "Board Role", "Percentage",
         "Direct %", "Indirect %", "Voting Rights %", "Share Band", "Intermediate Entities",
         "PEP Status", "Risk Level", "Regulatory Filing Ref",
-        "Verification Status", "Change Type", "Previous Holder", "Date", "Source"
+        "Verification Status", "Change Type", "Previous Holder", "Date", "Source",
+        # The article the claim was extracted from, so the site can link
+        # every claim to its reporting. Older rows have these blank.
+        "Source URL", "Source Title", "Publisher"
     ],
     # "Archive File" resolves an edition to its exact archived markdown file.
     # Added after runs 2-4 of each day were found to overwrite run 1's archive.

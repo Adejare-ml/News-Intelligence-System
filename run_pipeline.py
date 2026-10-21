@@ -512,7 +512,12 @@ def run_pipeline(seed: bool = False):
                 "Date": datetime.now().strftime("%Y-%m-%d"),
                 # Distinguishes real extractions from seeded demo rows so the
                 # dashboard can label them honestly.
-                "Source": "extracted"
+                "Source": "extracted",
+                # The reporting behind the claim, linked from every page
+                # that shows it.
+                "Source URL": url,
+                "Source Title": title,
+                "Publisher": source,
             })
             
         articles_processed += 1
@@ -1329,6 +1334,16 @@ def export_static_json_database():
         if not is_publication_or_furniture(row.get("Company"))
         and not is_publication_or_furniture(row.get("Person Name"))
     ]
+    # Validation gate. Every export below (the register, its timeline, the
+    # graph, the cycle diff) sees only rows the site may publish: sourced
+    # and not quarantined. Withheld rows stay in the sheet for review, and
+    # only their counts are published.
+    psc_checked = register_quality.gate(collapse_identical_rows(psc_records))
+    psc_records = register_quality.public_rows(psc_checked)
+    psc_withheld = register_quality.withheld_summary(psc_checked)
+    if psc_withheld["unsourced"] or psc_withheld["implausible"]:
+        logger.info(f"Register gate withheld {psc_withheld['unsourced']} unsourced and "
+                    f"{psc_withheld['implausible']} implausible row(s) from the export.")
 
     # Legacy duplicate rows collapse at export (the sheet keeps its audit
     # trail): one row per company, one per (person, organization). Agencies
@@ -1516,14 +1531,11 @@ def export_static_json_database():
         json.dump(agencies, f, default=str, indent=2)
 
     with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
-        # Validation gate: canonical keys, claim kind (stake / role /
-        # influence) and quality flags ride along on every row, so the site
-        # groups spelling variants and keeps unsourced or implausible rows
-        # out of its headline numbers. Nothing is dropped but exact repeats.
-        json.dump(
-            register_quality.collapse_same_report(
-                register_quality.annotate(collapse_identical_rows(psc_records))),
-            f, default=str, indent=2)
+        # Already gated above: published rows only, with canonical keys,
+        # claim kind and quality flags on each.
+        json.dump(psc_records, f, default=str, indent=2)
+    with open(os.path.join(DATA_DIR, "register_quality.json"), "w", encoding="utf-8") as f:
+        json.dump(dict(psc_withheld, generated=datetime.now().strftime("%Y-%m-%d %H:%M:%S")), f, default=str, indent=2)
         
     with open(os.path.join(DATA_DIR, "reports.json"), "w", encoding="utf-8") as f:
         json.dump(slim_report_rows(reports), f, default=str, indent=2)

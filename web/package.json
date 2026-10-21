@@ -13,7 +13,8 @@
     "build": "npm run copy-data && astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "test": "node --test \"src/**/*.test.ts\" \"functions/**/*.test.ts\""
+    "test": "node --test \"src/**/*.test.ts\" \"functions/**/*.test.ts\"",
+    "check:leaks": "node scripts/check-leaks.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "5.3.0",

@@ -2,24 +2,20 @@
 import Icon from "./Icon.astro";
 import { href } from "../lib/url.ts";
 import type { RegisterSummary } from "../lib/psc.ts";
+import type { FunnelStep } from "../lib/funnel.ts";
 
 interface Props {
   edition: string;
   dateLabel: string;
   summary: RegisterSummary;
-  storiesToday: number;
+  funnel: FunnelStep[];
   routes: { label: string }[];
   routesFromData: boolean;
 }
 
-const { edition, dateLabel, summary, storiesToday, routes, routesFromData } = Astro.props;
+const { edition, dateLabel, summary, funnel, routes, routesFromData } = Astro.props;
 
-const kpis = [
-  { value: summary.holdings, label: "Sourced holdings", hint: `${summary.holders} people and firms behind them` },
-  { value: summary.companies, label: "Companies mapped", hint: "From reported ownership" },
-  { value: summary.withPattern, label: "Patterns worth checking", hint: `${summary.highSeverity} rated high severity` },
-  { value: storiesToday, label: "Stories, last 24 hours", hint: "Distinct business and regulatory stories" },
-];
+const kpis = funnel;
 ---
 <section class="hero" data-hero>
   <div class="hero-grid wrap">
@@ -44,11 +40,12 @@ const kpis = [
         <a class="btn btn-ghost" href={href("register/")}>Explore the register</a>
       </div>
 
-      <dl class="kpis">
+      <p class="funnel-title" data-reveal style="--i:3">From newsroom to register</p>
+      <dl class="kpis funnel">
         {kpis.map((k, i) => (
           <div class="kpi" data-reveal style={`--i:${4 + i}`}>
             <dt>{k.label}</dt>
-            <dd class="num value"><span data-count={k.value}>{k.value}</span></dd>
+            <dd class="num value"><span data-count={k.value}>{k.value.toLocaleString("en-GB")}</span></dd>
             <dd class="hint">{k.hint}</dd>
           </div>
         ))}
@@ -195,12 +192,32 @@ const kpis = [
   }
   .kpi .value {
     order: 1;
-    font-size: clamp(2rem, 3.2vw, 2.8rem);
+    font-size: clamp(1.7rem, 2.6vw, 2.4rem);
     line-height: 1;
     color: var(--text);
   }
-  .kpi:nth-child(3) .value {
+  .funnel-title {
+    margin: 0 0 10px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .kpi {
+    position: relative;
+  }
+  /* The last step is the register: what survived. */
+  .kpi:last-child .value {
     color: var(--gold);
+  }
+  .kpi:not(:last-child)::after {
+    content: "›";
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    font-size: 1.1rem;
+    color: var(--faint);
   }
   .kpi .hint {
     order: 3;
@@ -327,7 +344,8 @@ const kpis = [
     }
     .lede { order: 3; margin: 0; }
     .ctas { order: 4; margin: 0; }
-    .kpis { order: 5; margin: 0; }
+    .funnel-title { order: 5; margin: 0; }
+    .kpis { order: 6; margin: 0; }
     .globe-stage {
       max-width: 440px;
     }
@@ -339,6 +357,9 @@ const kpis = [
     }
   }
   @media (max-width: 640px) {
+    .kpi:nth-child(2n)::after {
+      content: none;
+    }
     .kpis {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }

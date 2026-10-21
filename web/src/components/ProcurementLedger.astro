@@ -10,8 +10,11 @@ const withValue = contracts.filter((c) => c.amount !== null).length;
 // A column that is mostly blank is noise, so it only shows when it carries data.
 const showContractor = coverage(contracts, (c) => c.contractor) >= 0.3;
 const showDate = coverage(contracts, (c) => c.date) >= 0.3;
-const first = contracts.slice(0, 25);
-const rest = contracts.slice(25);
+// Awards that identify something (a value or a named contractor) lead;
+// bare mentions ("an agency announced a contract") wait behind a button.
+const identified = contracts.filter((c) => c.amount !== null || c.contractor);
+const first = identified;
+const rest = contracts.filter((c) => !(c.amount !== null || c.contractor));
 ---
 <section class="ledger" id="procurement" aria-labelledby="proc-title">
   <div class="section-head">
@@ -19,7 +22,7 @@ const rest = contracts.slice(25);
       <p class="eyebrow">Money trail</p>
       <h2 class="h2" id="proc-title" data-split>Public contracts in the news</h2>
     </div>
-    <p class="meta">{contracts.length} reported awards · {withValue} with a disclosed value</p>
+    <p class="meta">{identified.length} awards with a value or a named contractor · {withValue} with a disclosed value</p>
   </div>
 
   <div class="table-wrap" data-reveal>
@@ -61,7 +64,7 @@ const rest = contracts.slice(25);
   </div>
   {rest.length > 0 && (
     <button class="btn btn-ghost show-more" type="button" data-show-more aria-expanded="false">
-      Show all {contracts.length} awards
+      Show {rest.length} more mentions with no value or contractor
     </button>
   )}
   <p class="meta caveat">

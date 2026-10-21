@@ -9,7 +9,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Article } from "./stories.ts";
-import type { PscRecord } from "./psc.ts";
+import { publicRecords, type PscRecord } from "./psc.ts";
 
 const DATA_DIR = process.env.AURA_DATA_DIR
   ? resolve(process.env.AURA_DATA_DIR)
@@ -40,7 +40,17 @@ export function readText(name: string): string {
 }
 
 export const articles = () => readJson<Article[]>("latest.json", []);
-export const psc = () => readJson<PscRecord[]>("significant_control.json", []);
+/** Register rows the site may publish. Every page reads the register through this. */
+export const psc = () => publicRecords(readJson<PscRecord[]>("significant_control.json", []));
+
+export interface GateSummary {
+  checked?: number;
+  published?: number;
+  unsourced?: number;
+  implausible?: number;
+}
+/** Counts (never names) of register rows the validation gate kept off the site. */
+export const registerQuality = () => readJson<GateSummary>("register_quality.json", {});
 export const briefMarkdown = () => readText("report_latest.md");
 
 export interface FxPayload {
