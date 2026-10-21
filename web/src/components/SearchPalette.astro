@@ -1,0 +1,146 @@
+---
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+---
+<dialog class="palette" data-palette aria-label="Search AURA" data-index={href("search-index.json")}>
+  <div class="box">
+    <label class="field">
+      <Icon name="search" size={18} />
+      <span class="sr-only">Search people, companies, holdings and stories</span>
+      <input
+        type="search"
+        placeholder="Search people, companies, stories…"
+        autocomplete="off"
+        spellcheck="false"
+        role="combobox"
+        aria-expanded="true"
+        aria-controls="palette-results"
+        aria-autocomplete="list"
+        data-palette-input
+      />
+      <kbd>esc</kbd>
+    </label>
+    <div class="results" id="palette-results" role="listbox" data-palette-results>
+      <p class="hint">Try a name like “Dangote”, a company like “Zenith”, or a word like “EFCC”.</p>
+    </div>
+    <footer class="foot meta">
+      <span><kbd>↑</kbd><kbd>↓</kbd> move</span>
+      <span><kbd>↵</kbd> open</span>
+      <span><kbd>⌘</kbd><kbd>K</kbd> toggle</span>
+    </footer>
+  </div>
+</dialog>
+
+<style>
+  .palette {
+    width: min(640px, calc(100vw - 24px));
+    max-height: min(560px, calc(100dvh - 120px));
+    margin: 12vh auto auto;
+    padding: 0;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-l);
+    background: var(--surface);
+    color: var(--text);
+    box-shadow: var(--shadow-2), 0 0 0 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .palette::backdrop {
+    background: rgba(5, 6, 10, 0.55);
+    backdrop-filter: blur(3px);
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    max-height: inherit;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+  }
+  .field input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 1.08rem;
+  }
+  .field input::-webkit-search-cancel-button {
+    display: none;
+  }
+  kbd {
+    font-family: var(--font-ui);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border: 1px solid var(--line-strong);
+    color: var(--muted);
+    background: var(--bg);
+  }
+  .results {
+    overflow-y: auto;
+    padding: 8px;
+    min-height: 120px;
+  }
+  .hint {
+    color: var(--muted);
+    padding: 14px 12px;
+    margin: 0;
+    font-size: 0.92rem;
+  }
+  .results :global(.group-label) {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    padding: 12px 12px 6px;
+    margin: 0;
+  }
+  .results :global(a) {
+    display: grid;
+    gap: 2px;
+    padding: 10px 12px;
+    border-radius: var(--radius-s);
+    color: var(--text);
+  }
+  .results :global(a[aria-selected="true"]) {
+    background: var(--royal-wash);
+    box-shadow: inset 2px 0 0 var(--gold);
+  }
+  .results :global(.r-label) {
+    font-weight: 560;
+  }
+  .results :global(.r-label mark) {
+    background: none;
+    color: var(--gold);
+  }
+  .results :global(.r-sub) {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .foot {
+    display: flex;
+    gap: 18px;
+    padding: 10px 18px;
+    border-top: 1px solid var(--line);
+  }
+  .foot kbd {
+    margin-right: 3px;
+  }
+  @media (max-width: 640px) {
+    .palette {
+      margin-top: 8px;
+      max-height: calc(100dvh - 120px);
+    }
+    .foot {
+      display: none;
+    }
+  }
+</style>

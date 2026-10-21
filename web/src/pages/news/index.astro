@@ -1,0 +1,327 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import * as data from "../../lib/data.ts";
+import { toStory, relativeTime, type Story } from "../../lib/stories.ts";
+
+const stories = data.articles().map(toStory).filter((s) => s.title);
+const seen = new Set<string>();
+const unique = stories.filter((s) => {
+  const k = s.title.toLowerCase();
+  if (seen.has(k)) return false;
+  seen.add(k);
+  return true;
+}).sort((a, b) => (b.published?.getTime() ?? 0) - (a.published?.getTime() ?? 0));
+
+const newest = unique.find((s) => s.published)?.published ?? new Date();
+const dayKey = (d: Date | null) => (d ? d.toISOString().slice(0, 10) : "undated");
+const dayLabel = (key: string) => {
+  if (key === "undated") return "Undated";
+  const d = new Date(`${key}T12:00:00Z`);
+  const today = newest.toISOString().slice(0, 10);
+  const yesterday = new Date(newest.getTime() - 864e5).toISOString().slice(0, 10);
+  if (key === today) return "Today";
+  if (key === yesterday) return "Yesterday";
+  return d.toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+};
+const days = new Map<string, Story[]>();
+for (const s of unique) {
+  const k = dayKey(s.published);
+  if (!days.has(k)) days.set(k, []);
+  days.get(k)!.push(s);
+}
+const categories = [...new Set(unique.map((s) => s.category))].sort();
+const sources = [...new Set(unique.map((s) => s.publisher))].sort();
+const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
+---
+<Base title="News · AURA" description="Every story AURA has read recently from Nigeria's business and regulatory press, scored for risk and linked to the people and companies in it.">
+  <section class="wrap intro">
+    <p class="eyebrow">The wire</p>
+    <h1 class="h1" data-split>Everything AURA read</h1>
+    <p class="lede">
+      {unique.length} recent stories from Nigeria’s business and regulatory press, each scored for risk
+      and linked to the people and companies it names.
+    </p>
+  </section>
+
+  <section class="wrap">
+    <div class="controls" data-reveal>
+      <div class="chips" role="group" aria-label="Filter by topic">
+        <button type="button" class="filter" data-cat="all" aria-pressed="true">All <span class="count">{unique.length}</span></button>
+        {categories.map((c) => (
+          <button type="button" class="filter" data-cat={c} aria-pressed="false">{c} <span class="count">{count((s) => s.category === c)}</span></button>
+        ))}
+      </div>
+      <div class="selects">
+        <label>
+          <span class="sr-only">Risk</span>
+          <select data-risk>
+            <option value="all">Any risk</option>
+            <option value="high">High or critical</option>
+            <option value="critical">Critical only</option>
+          </select>
+        </label>
+        <label>
+          <span class="sr-only">Publisher</span>
+          <select data-source>
+            <option value="all">All publishers</option>
+            {sources.map((s) => <option value={s}>{s}</option>)}
+          </select>
+        </label>
+        <label class="search">
+          <Icon name="search" size={16} />
+          <span class="sr-only">Search stories</span>
+          <input type="search" placeholder="Search stories" data-news-search autocomplete="off" />
+        </label>
+      </div>
+    </div>
+    <p class="meta result" aria-live="polite" data-news-result>{unique.length} stories</p>
+
+    {[...days.entries()].map(([key, list]) => (
+      <section class="day" data-day>
+        <h2 class="day-label">{dayLabel(key)}</h2>
+        <ol class="items">
+          {list.map((s, i) => (
+            <li
+              data-story
+              data-reveal
+              style={`--i:${Math.min(i, 6)}`}
+              data-cat={s.category}
+              data-level={s.riskLevel.toLowerCase()}
+              data-source={s.publisher}
+              data-text={`${s.title} ${s.summary} ${s.entities.join(" ")}`.toLowerCase()}
+            >
+              <a class="item" href={s.url} target="_blank" rel="noopener noreferrer">
+                <div class:list={["thumb", `tone-${s.cover.tone}`]} aria-hidden="true">
+                  <span>{s.cover.glyph}</span>
+                  {s.image && <img src={s.image} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />}
+                </div>
+                <div class="text">
+                  <p class="kicker">
+                    <span>{s.category}</span>
+                    {(s.riskLevel === "High" || s.riskLevel === "Critical") && (
+                      <span class:list={["chip", s.riskLevel === "Critical" ? "chip-crimson" : "chip-gold"]}><span class="dot"></span>{s.riskLevel}</span>
+                    )}
+                  </p>
+                  <h3 class="title">{s.title}</h3>
+                  {s.summary && <p class="summary">{s.summary}</p>}
+                  <p class="meta byline">{s.publisher}{s.published && <> · {relativeTime(s.published, newest)}</>}</p>
+                </div>
+                <Icon name="arrowUpRight" size={18} class="out" />
+              </a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+    <p class="empty" hidden data-news-empty>No stories match these filters.</p>
+  </section>
+</Base>
+
+<script>
+  import "../../scripts/news.ts";
+</script>
+
+<style>
+  .intro {
+    padding-block: clamp(40px, 7vw, 88px) 28px;
+    display: grid;
+    gap: 16px;
+  }
+  .intro .eyebrow {
+    color: var(--gold);
+  }
+  .controls {
+    display: grid;
+    gap: 12px;
+    position: sticky;
+    top: var(--header-h);
+    z-index: 5;
+    padding-block: 12px;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  .chips,
+  .selects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .filter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 34px;
+    padding: 0 13px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: transparent;
+    font-size: 0.85rem;
+    font-weight: 560;
+    color: var(--text-soft);
+    cursor: pointer;
+    transition: background-color var(--dur-ui) ease, color var(--dur-ui) ease, transform var(--dur-press) var(--ease-out);
+  }
+  .filter:active {
+    transform: scale(0.96);
+  }
+  .filter[aria-pressed="true"] {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+  }
+  .count {
+    opacity: 0.6;
+    font-variant-numeric: tabular-nums;
+  }
+  select {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.86rem;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--muted);
+    flex: 1;
+    min-width: 200px;
+  }
+  .search input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 0.9rem;
+  }
+  .result {
+    margin: 6px 0 8px;
+  }
+  .day {
+    padding-top: 28px;
+  }
+  .day-label {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 520;
+    margin: 0 0 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 132px minmax(0, 1fr) 24px;
+    gap: 20px;
+    align-items: start;
+    padding: 18px 8px;
+    border-bottom: 1px solid var(--line);
+    border-radius: var(--radius-m);
+    transition: background-color var(--dur-ui) ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .item:hover {
+      background: var(--surface);
+    }
+    .item:hover :global(.out) {
+      color: var(--gold);
+      transform: translate(2px, -2px);
+    }
+  }
+  .item :global(.out) {
+    color: var(--faint);
+    transition: transform var(--dur-ui) var(--ease-out), color var(--dur-ui) ease;
+  }
+  .thumb {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border-radius: var(--radius-s);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #232a40, #0b0d14);
+  }
+  .thumb span {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(237, 230, 216, 0.4);
+  }
+  .thumb.tone-royal { background: linear-gradient(135deg, #2a49b8, #0f1736); }
+  .thumb.tone-gold { background: linear-gradient(135deg, #6d5418, #17130a); }
+  .thumb.tone-crimson { background: linear-gradient(135deg, #6e2a1d, #140c0b); }
+  .thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .kicker {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0 0 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .title {
+    font-family: var(--font-display);
+    font-size: 1.22rem;
+    font-weight: 540;
+    line-height: 1.22;
+    margin: 0 0 6px;
+    text-wrap: pretty;
+  }
+  .summary {
+    margin: 0 0 6px;
+    color: var(--text-soft);
+    font-size: 0.94rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .byline {
+    margin: 0;
+  }
+  .empty {
+    padding: 40px 0;
+    color: var(--muted);
+  }
+  @media (max-width: 640px) {
+    .item {
+      grid-template-columns: 84px minmax(0, 1fr);
+      gap: 14px;
+    }
+    .item :global(.out) {
+      display: none;
+    }
+    .summary {
+      display: none;
+    }
+  }
+</style>

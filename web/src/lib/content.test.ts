@@ -26,6 +26,7 @@ describe("stories", () => {
       { title: "EFCC arraigns four", publisher: "Premium Times Nigeria" });
     const src = "The Guardian Nigeria News - Nigeria and World News";
     assert.equal(cleanTitle(`Airports listed - ${src}`, src).title, "Airports listed");
+    assert.equal(cleanTitle("EFCC arrests businessman for $120m |").title, "EFCC arrests businessman for $120m");
     const long = "Senate passes bill - a move critics say will raise prices for everyone";
     assert.equal(cleanTitle(long).title, long);
   });
