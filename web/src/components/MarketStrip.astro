@@ -1,0 +1,182 @@
+---
+/**
+ * Naira rates, bitcoin and Lagos weather as a slow ticker with 30-day
+ * sparklines. The marquee pauses on hover and focus, and stops entirely
+ * under reduced motion.
+ */
+import type { FxPayload, WeatherPayload } from "../lib/data.ts";
+
+interface Props {
+  fx: FxPayload;
+  markets: FxPayload;
+  weather: WeatherPayload;
+}
+const { fx, markets, weather } = Astro.props;
+
+interface Tick {
+  label: string;
+  value: string;
+  change: number | null;
+  spark: string;
+  up: boolean;
+}
+
+function sparkPath(values: number[]): string {
+  if (values.length < 2) return "";
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const span = max - min || 1;
+  return values
+    .map((v, i) => `${i === 0 ? "M" : "L"}${((i / (values.length - 1)) * 100).toFixed(2)},${(28 - ((v - min) / span) * 24 - 2).toFixed(2)}`)
+    .join(" ");
+}
+
+function series(payload: FxPayload, key: string): number[] {
+  return (payload.history || [])
+    .map((row) => Number(row[key]))
+    .filter((n) => Number.isFinite(n))
+    .slice(-30);
+}
+
+const ticks: Tick[] = [];
+for (const cur of ["USD", "GBP", "EUR"]) {
+  const now = fx.latest?.[cur];
+  if (!now) continue;
+  const s = series(fx, cur);
+  const first = s[0];
+  const change = first ? ((now - first) / first) * 100 : null;
+  ticks.push({
+    label: `${cur}/NGN`,
+    value: `₦${now.toLocaleString("en-NG", { maximumFractionDigits: 2, minimumFractionDigits: 2 })}`,
+    change,
+    // A rising naira price means a weaker naira: that is the "down" colour.
+    up: change !== null && change <= 0,
+    spark: sparkPath([...s, now]),
+  });
+}
+const btc = markets.latest?.btc;
+if (btc) {
+  const s = series(markets, "btc");
+  const change = s[0] ? ((btc - s[0]) / s[0]) * 100 : null;
+  ticks.push({
+    label: "BTC/USD",
+    value: `$${Math.round(btc).toLocaleString("en-US")}`,
+    change,
+    up: change !== null && change >= 0,
+    spark: sparkPath([...s, btc]),
+  });
+}
+const lagos = weather.cities?.find((c) => c.name === "Lagos");
+---
+{ticks.length > 0 && (
+  <section class="markets" aria-label="Naira rates and markets">
+    <div class="track" tabindex="0" aria-label="Market ticker; hover or focus to pause">
+      {[0, 1].map((copy) => (
+        <ul class="row" aria-hidden={copy === 1 ? "true" : undefined}>
+          {ticks.map((t) => (
+            <li>
+              <span class="label">{t.label}</span>
+              <span class="value num">{t.value}</span>
+              {t.change !== null && (
+                <span class:list={["delta", t.up ? "good" : "bad"]}>
+                  {t.change >= 0 ? "+" : ""}{t.change.toFixed(1)}% <small>30d</small>
+                </span>
+              )}
+              {t.spark && (
+                <svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none" aria-hidden="true">
+                  <path d={t.spark} />
+                </svg>
+              )}
+            </li>
+          ))}
+          {lagos && (
+            <li>
+              <span class="label">Lagos</span>
+              <span class="value num">{Math.round(lagos.temp_c)}°C</span>
+              <span class="delta">{lagos.description}</span>
+            </li>
+          )}
+        </ul>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .markets {
+    border-block: 1px solid var(--line);
+    background: var(--bg-deep);
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .track {
+    display: flex;
+    width: max-content;
+    animation: marquee 60s linear infinite;
+  }
+  .track:hover,
+  .track:focus-within,
+  .track:focus {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
+  .row {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 36px;
+    border-right: 1px solid var(--line);
+    white-space: nowrap;
+  }
+  .label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+  .value {
+    font-size: 1.15rem;
+  }
+  .delta {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .delta small {
+    color: var(--faint);
+  }
+  .good {
+    color: var(--royal-ink);
+  }
+  .bad {
+    color: var(--gold);
+  }
+  .spark {
+    width: 72px;
+    height: 24px;
+  }
+  .spark path {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+    opacity: 0.85;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .track {
+      animation: none;
+      overflow-x: auto;
+      width: 100%;
+    }
+    .row[aria-hidden="true"] {
+      display: none;
+    }
+  }
+</style>

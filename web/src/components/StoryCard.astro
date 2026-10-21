@@ -1,0 +1,273 @@
+---
+import Icon from "./Icon.astro";
+import type { Story } from "../lib/stories.ts";
+import { relativeTime } from "../lib/stories.ts";
+
+interface Props {
+  story: Story;
+  now: Date;
+  size?: "lead" | "feature" | "compact";
+  index?: number;
+}
+const { story, now, size = "compact", index = 0 } = Astro.props;
+const when = relativeTime(story.published, now);
+const riskChip = story.riskLevel === "Critical" ? "chip-crimson" : story.riskLevel === "High" ? "chip-gold" : "";
+const showRisk = story.riskLevel === "Critical" || story.riskLevel === "High";
+const c = story.cover;
+---
+<article class:list={["story", size]} data-reveal data-tilt style={`--i:${index}`}>
+  <a class="hit" href={story.url} rel="noopener noreferrer" target="_blank" aria-label={`${story.title} (${story.publisher}, opens in a new tab)`}></a>
+  <div class="media">
+    <div
+      class:list={["cover", `tone-${c.tone}`]}
+      style={`--angle:${c.angle}deg; --seed:${c.seed}`}
+      aria-hidden="true"
+    >
+      <span class="glyph">{c.glyph}</span>
+      <span class="cover-cat">{story.category}</span>
+    </div>
+    {story.image && (
+      <img
+        src={story.image}
+        alt=""
+        loading={size === "lead" ? "eager" : "lazy"}
+        decoding="async"
+        referrerpolicy="no-referrer"
+        data-story-img
+      />
+    )}
+  </div>
+  <div class="body">
+    <div class="tags">
+      <span class="chip">{story.category}</span>
+      {showRisk && <span class:list={["chip", riskChip]}><span class="dot"></span>{story.riskLevel} risk</span>}
+    </div>
+    <h3 class="h3 title">{story.title}</h3>
+    {size !== "compact" && story.summary && <p class="summary">{story.summary}</p>}
+    <p class="meta byline">
+      <span class="publisher">{story.publisher}</span>
+      {when && <><span aria-hidden="true">·</span><time datetime={story.published?.toISOString()}>{when}</time></>}
+      <Icon name="arrowUpRight" size={14} class="out" />
+    </p>
+  </div>
+</article>
+
+<style>
+  .story {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: var(--radius-l);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    overflow: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: border-color var(--dur-ui) ease, box-shadow 400ms var(--ease-out);
+    box-shadow: var(--shadow-1);
+  }
+  .story:active {
+    transform: scale(0.985);
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .story:hover {
+      border-color: var(--line-strong);
+      box-shadow: var(--shadow-2);
+    }
+    .story:hover .media img,
+    .story:hover .cover {
+      transform: scale(1.035);
+    }
+    .story:hover .title {
+      color: var(--text);
+    }
+    .story:hover .out {
+      transform: translate(2px, -2px);
+      color: var(--gold);
+    }
+  }
+  .hit {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+  }
+  .hit:focus-visible {
+    outline-offset: -3px;
+  }
+
+  .media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--surface-2);
+  }
+  /* The lead runs full width: image left, story right. */
+  .lead {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    grid-template-rows: auto;
+  }
+  .lead .media {
+    aspect-ratio: auto;
+    min-height: 340px;
+  }
+  .lead .body {
+    padding: clamp(22px, 3vw, 40px);
+    justify-content: center;
+    gap: 14px;
+  }
+  @media (max-width: 860px) {
+    .lead {
+      grid-template-columns: 1fr;
+    }
+    .lead .media {
+      min-height: 0;
+      aspect-ratio: 16 / 10;
+    }
+    .lead .body {
+      padding: 18px 20px 20px;
+    }
+  }
+  .media img,
+  .cover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 900ms var(--ease-out);
+  }
+  .media img {
+    object-fit: cover;
+  }
+  /* Images arrive with a reveal from the bottom edge. */
+  :global(.js) .media img {
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 900ms var(--ease-out), transform 900ms var(--ease-out);
+  }
+  :global(.js) .media img:global(.is-loaded) {
+    clip-path: inset(0 0 0 0);
+  }
+
+  /* Generated cover: tone gradient + dot-matrix texture + oversized glyph. */
+  .cover {
+    --c1: #1b2440;
+    --c2: #0d1120;
+    --ink: rgba(237, 230, 216, 0.9);
+    background:
+      radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.09) 1px, transparent 1.4px) 0 0 / 12px 12px,
+      radial-gradient(80% 90% at 85% 10%, rgba(212, 168, 74, 0.2), transparent 60%),
+      linear-gradient(var(--angle), var(--c1), var(--c2));
+    display: grid;
+    align-items: end;
+    padding: 18px 20px;
+  }
+  .tone-royal {
+    --c1: #2a49b8;
+    --c2: #0f1736;
+  }
+  .tone-gold {
+    --c1: #6d5418;
+    --c2: #17130a;
+  }
+  .tone-crimson {
+    --c1: #6e2a1d;
+    --c2: #140c0b;
+  }
+  .tone-ink {
+    --c1: #232a40;
+    --c2: #0b0d14;
+  }
+  .glyph {
+    position: absolute;
+    right: -0.04em;
+    bottom: -0.2em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(4.5rem, 12vw, 9rem);
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1.2px rgba(237, 230, 216, 0.28);
+    user-select: none;
+  }
+  .lead .glyph {
+    font-size: clamp(6rem, 16vw, 13rem);
+  }
+  .cover-cat {
+    position: relative;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(237, 230, 216, 0.75);
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 20px 20px;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .title {
+    color: var(--text);
+    text-wrap: pretty;
+    transition: color var(--dur-ui) ease;
+  }
+  .lead .title {
+    font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+  .feature .title {
+    font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  }
+  .compact .title {
+    font-size: 1.08rem;
+    line-height: 1.25;
+    font-family: var(--font-ui);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+  }
+  .summary {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 0.95rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .lead .summary {
+    font-size: 1.05rem;
+    -webkit-line-clamp: 4;
+  }
+  .byline {
+    margin: auto 0 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .publisher {
+    color: var(--text-soft);
+    font-weight: 560;
+  }
+  .byline :global(.out) {
+    margin-left: auto;
+    transition: transform var(--dur-ui) var(--ease-out), color var(--dur-ui) ease;
+  }
+
+  .compact {
+    grid-template-columns: 1fr;
+  }
+  .compact .media {
+    aspect-ratio: 2 / 1;
+  }
+  .compact .glyph {
+    font-size: 4.2rem;
+  }
+</style>

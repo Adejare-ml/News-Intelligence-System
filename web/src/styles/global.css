@@ -1,0 +1,469 @@
+/*
+ * AURA design system: dark cinematic, royal blue + gold.
+ *
+ * One accent per job: royal blue is for things you can act on, gold is
+ * for what matters in the data (stakes, numbers, offshore routes), crimson
+ * only for critical risk. Nothing glows brighter than ~8% opacity.
+ */
+
+/* ---------- Tokens ---------- */
+:root {
+  color-scheme: dark;
+
+  --bg: #0b0d14;
+  --bg-deep: #07080d;
+  --surface: #131726;
+  --surface-2: #1a1f33;
+  --surface-glass: rgba(19, 23, 38, 0.66);
+  --line: rgba(237, 230, 216, 0.08);
+  --line-strong: rgba(237, 230, 216, 0.16);
+
+  --text: #ede6d8;
+  --text-soft: #c9c2b4;
+  --muted: #9a9486;
+  --faint: #6c6759;
+
+  --royal: #2f55d4;
+  --royal-hover: #3d63e6;
+  --royal-ink: #6e8bff;
+  --royal-wash: rgba(47, 85, 212, 0.14);
+  --gold: #d4a84a;
+  --gold-deep: #a9842f;
+  --gold-wash: rgba(212, 168, 74, 0.12);
+  --crimson: #c8553d;
+  --crimson-wash: rgba(200, 85, 61, 0.14);
+
+  --font-display: "Fraunces Variable", "Iowan Old Style", Georgia, serif;
+  --font-ui: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 22px;
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --shadow-2: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+
+  /* Motion: strong custom curves, short UI durations. */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --dur-press: 140ms;
+  --dur-ui: 220ms;
+  --dur-reveal: 700ms;
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --measure: 68ch;
+  --max: 1280px;
+  --header-h: 64px;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f1e6;
+  --bg-deep: #ece6d6;
+  --surface: #fffcf4;
+  --surface-2: #f0ead9;
+  --surface-glass: rgba(255, 252, 244, 0.72);
+  --line: rgba(27, 26, 23, 0.09);
+  --line-strong: rgba(27, 26, 23, 0.18);
+  --text: #1b1a17;
+  --text-soft: #3b3830;
+  --muted: #6b6558;
+  --faint: #938c7c;
+  --royal: #1e3fae;
+  --royal-hover: #2549c2;
+  --royal-ink: #1e3fae;
+  --royal-wash: rgba(30, 63, 174, 0.09);
+  --gold: #9c7420;
+  --gold-deep: #7d5c16;
+  --gold-wash: rgba(156, 116, 32, 0.1);
+  --crimson: #a63a24;
+  --crimson-wash: rgba(166, 58, 36, 0.09);
+  --shadow-1: 0 1px 2px rgba(27, 26, 23, 0.05), 0 12px 30px -16px rgba(27, 26, 23, 0.25);
+  --shadow-2: 0 2px 4px rgba(27, 26, 23, 0.05), 0 30px 60px -24px rgba(27, 26, 23, 0.3);
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --line: rgba(237, 230, 216, 0.3);
+    --muted: #c9c2b4;
+    --surface-glass: var(--surface);
+  }
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 16px);
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.55;
+  letter-spacing: 0.002em;
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--royal-ink);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--gold);
+  color: #0b0d14;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  background: var(--royal);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: var(--radius-s);
+  transition: transform var(--dur-ui) var(--ease-out);
+}
+.skip-link:focus {
+  transform: translateY(76px);
+}
+
+/* ---------- Type ---------- */
+.display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 560;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 6.4vw, 5.6rem);
+  font-weight: 540;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-optical-sizing: auto;
+  margin: 0;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+  font-weight: 520;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+  font-weight: 540;
+  line-height: 1.18;
+  letter-spacing: -0.012em;
+  margin: 0;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.lede {
+  font-size: clamp(1.05rem, 1.4vw, 1.22rem);
+  line-height: 1.6;
+  color: var(--text-soft);
+  max-width: 56ch;
+}
+
+.num {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums lining-nums;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Layout ---------- */
+.wrap {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: clamp(56px, 9vw, 120px);
+  position: relative;
+}
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: clamp(24px, 4vw, 44px);
+  flex-wrap: wrap;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong) 20%, var(--line-strong) 80%, transparent);
+  border: 0;
+  margin: 0;
+}
+
+/* ---------- Controls ---------- */
+.btn {
+  --btn-bg: var(--surface-2);
+  --btn-fg: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-weight: 560;
+  font-size: 0.95rem;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+  transition:
+    transform var(--dur-press) var(--ease-out),
+    background-color var(--dur-ui) ease,
+    border-color var(--dur-ui) ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn-primary {
+  --btn-bg: var(--royal);
+  --btn-fg: #fff;
+  border-color: transparent;
+}
+.btn-gold {
+  --btn-bg: var(--gold);
+  --btn-fg: #14110a;
+  border-color: transparent;
+}
+.btn-ghost {
+  --btn-bg: transparent;
+}
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover {
+    --btn-bg: var(--royal-hover);
+  }
+  .btn-ghost:hover,
+  .btn:not(.btn-primary):not(.btn-gold):hover {
+    border-color: var(--text-soft);
+  }
+}
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-btn {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-soft);
+  cursor: pointer;
+  position: relative;
+  transition: transform var(--dur-press) var(--ease-out), background-color var(--dur-ui) ease, color var(--dur-ui) ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.icon-btn:active {
+  transform: scale(0.94);
+}
+@media (hover: hover) and (pointer: fine) {
+  .icon-btn:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+}
+.icon-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 24px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--surface-2);
+  color: var(--text-soft);
+  white-space: nowrap;
+}
+.chip-gold {
+  background: var(--gold-wash);
+  color: var(--gold);
+}
+.chip-royal {
+  background: var(--royal-wash);
+  color: var(--royal-ink);
+}
+.chip-crimson {
+  background: var(--crimson-wash);
+  color: var(--crimson);
+}
+.chip .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.link {
+  color: var(--royal-ink);
+  font-weight: 560;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--dur-ui) var(--ease-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    gap: 10px;
+  }
+}
+
+/* ---------- Reveal on scroll (progressive: content is visible without JS) ---------- */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity var(--dur-reveal) var(--ease-out),
+    transform var(--dur-reveal) var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 45ms);
+}
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Headlines reveal line by line from a clip. */
+.js [data-split] .word {
+  display: inline-block;
+  clip-path: inset(0 0 100% 0);
+  transform: translateY(0.35em);
+  transition:
+    clip-path 760ms var(--ease-out),
+    transform 760ms var(--ease-out);
+  transition-delay: calc(var(--w, 0) * 32ms);
+}
+.js [data-split].is-in .word {
+  clip-path: inset(-0.2em -0.1em -0.25em -0.1em);
+  transform: none;
+}
+
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 260ms;
+  animation-timing-function: var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+  .js [data-reveal] {
+    transform: none;
+    transition: opacity 200ms ease;
+  }
+  .js [data-split] .word {
+    clip-path: none;
+    transform: none;
+    transition: none;
+  }
+  @view-transition {
+    navigation: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --surface-glass: var(--surface);
+  }
+}

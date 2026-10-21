@@ -1,0 +1,96 @@
+---
+import { href } from "../lib/url.ts";
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div class="about">
+      <p class="brandline"><span class="display">AURA</span> reads Nigeria's business and regulatory news four times a day and maps who controls what.</p>
+      <p class="legal">
+        Records are extracted by a language model from news reporting. They are <strong>not</strong> the
+        statutory CAC register, and a record here is evidence of reporting, not a finding of wrongdoing.
+        Names may be shared by more than one person or company.
+      </p>
+    </div>
+    <nav class="links" aria-label="Footer">
+      <a href={href("brief/")}>Morning Brief</a>
+      <a href={href("register/")}>Ownership register</a>
+      <a href={href("how-it-works/")}>Methodology</a>
+      <a href={href("data/feed.xml")}>RSS feed</a>
+      <button type="button" class="replay" data-replay-intro>Replay intro</button>
+    </nav>
+  </div>
+  <div class="wrap base meta">
+    <span>© {year} AURA · Built by Adejare</span>
+    <a href="https://github.com/Adejare-ml/News-Intelligence-System" rel="noopener">Source on GitHub</a>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: clamp(40px, 8vw, 96px);
+    padding-block: 56px 32px;
+    border-top: 1px solid var(--line);
+    background: linear-gradient(to bottom, transparent, var(--bg-deep));
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 40px;
+  }
+  .brandline {
+    font-size: 1.15rem;
+    color: var(--text-soft);
+    margin: 0 0 14px;
+    max-width: 46ch;
+  }
+  .brandline .display {
+    color: var(--gold);
+    letter-spacing: 0.1em;
+  }
+  .legal {
+    font-size: 0.84rem;
+    color: var(--muted);
+    max-width: 64ch;
+    margin: 0;
+  }
+  .legal strong {
+    color: var(--text-soft);
+  }
+  .links {
+    display: grid;
+    align-content: start;
+    gap: 10px;
+    justify-items: start;
+  }
+  .links a,
+  .replay {
+    color: var(--text-soft);
+    font-size: 0.92rem;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: color var(--dur-ui) ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .links a:hover,
+    .replay:hover {
+      color: var(--gold);
+    }
+  }
+  .base {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  @media (max-width: 720px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

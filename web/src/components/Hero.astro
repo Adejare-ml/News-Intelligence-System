@@ -1,0 +1,340 @@
+---
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+import type { RegisterSummary } from "../lib/psc.ts";
+
+interface Props {
+  edition: string;
+  dateLabel: string;
+  summary: RegisterSummary;
+  storiesToday: number;
+  routes: { label: string }[];
+  routesFromData: boolean;
+}
+
+const { edition, dateLabel, summary, storiesToday, routes, routesFromData } = Astro.props;
+
+const kpis = [
+  { value: summary.holdings, label: "Holdings tracked", hint: `${summary.holders} people and firms behind them` },
+  { value: summary.companies, label: "Companies mapped", hint: "From reported ownership" },
+  { value: summary.withPattern, label: "Patterns worth checking", hint: `${summary.highSeverity} rated high severity` },
+  { value: storiesToday, label: "Stories read today", hint: "Business and regulatory news" },
+];
+---
+<section class="hero" data-hero>
+  <div class="hero-grid wrap">
+    <div class="copy">
+      <p class="edition" data-reveal style="--i:0">
+        <span class="pulse" aria-hidden="true"></span>
+        <span>{edition}</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <span class="date">{dateLabel}</span>
+      </p>
+      <h1 class="h1 title" data-split data-reveal-manual>
+        Who really controls <em>Nigeria’s</em> companies?
+      </h1>
+      <p class="lede" data-reveal style="--i:2">
+        Hidden owners are how public money quietly disappears. AURA reads Nigeria’s business news four
+        times a day and maps who controls what.
+      </p>
+      <div class="ctas" data-reveal style="--i:3">
+        <a class="btn btn-primary" href={href("brief/")}>
+          Read today’s brief <Icon name="arrowRight" size={18} />
+        </a>
+        <a class="btn btn-ghost" href={href("register/")}>Explore the register</a>
+      </div>
+
+      <dl class="kpis">
+        {kpis.map((k, i) => (
+          <div class="kpi" data-reveal style={`--i:${4 + i}`}>
+            <dt>{k.label}</dt>
+            <dd class="num value"><span data-count={k.value}>{k.value}</span></dd>
+            <dd class="hint">{k.hint}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    <figure class="globe-wrap" aria-labelledby="globe-caption">
+      <div class="globe-stage">
+        <canvas
+          class="globe"
+          data-globe
+          role="img"
+          aria-label={`Globe showing routes from Lagos and Abuja to ${routes.map((r) => r.label).join(", ")}`}
+        ></canvas>
+        <p class="drag-hint" aria-hidden="true">Drag to spin</p>
+      </div>
+      <figcaption id="globe-caption">
+        <span class="num routes-count"><span data-route-count>{routes.length}</span> offshore routes</span>
+        <span class="caption-text">
+          {routesFromData
+            ? "Jurisdictions named in the ownership chains AURA has recorded."
+            : "Where Nigerian ownership chains commonly route: the secrecy jurisdictions AURA watches for."}
+        </span>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: min(100svh - var(--header-h), 940px);
+    display: grid;
+    align-items: center;
+    padding-block: clamp(32px, 6vw, 72px) clamp(56px, 8vw, 96px);
+    overflow: clip;
+    isolation: isolate;
+  }
+  /* A wash of royal blue from the globe side and a whisper of gold. */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: -20% -10% 0 30%;
+    z-index: -1;
+    background:
+      radial-gradient(48% 52% at 62% 46%, rgba(47, 85, 212, 0.16), transparent 70%),
+      radial-gradient(30% 30% at 70% 70%, rgba(212, 168, 74, 0.07), transparent 70%);
+    pointer-events: none;
+  }
+  :global(:root[data-theme="light"]) .hero::before {
+    background:
+      radial-gradient(48% 52% at 62% 46%, rgba(30, 63, 174, 0.1), transparent 70%),
+      radial-gradient(30% 30% at 70% 70%, rgba(156, 116, 32, 0.08), transparent 70%);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: clamp(24px, 4vw, 64px);
+    align-items: center;
+  }
+
+  .edition {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 22px;
+    padding: 6px 14px 6px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface-glass);
+    font-size: 0.78rem;
+    font-weight: 560;
+    letter-spacing: 0.04em;
+    color: var(--text-soft);
+  }
+  .edition .sep {
+    color: var(--faint);
+  }
+  .pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 0 rgba(212, 168, 74, 0.5);
+    animation: breathe 6s var(--ease-in-out) infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(212, 168, 74, 0.45); }
+    50% { box-shadow: 0 0 0 7px rgba(212, 168, 74, 0); }
+  }
+
+  .title {
+    max-width: 12ch;
+    margin-bottom: 26px;
+    text-wrap: balance;
+  }
+  .title em {
+    font-style: italic;
+    font-weight: 460;
+    color: var(--gold);
+  }
+
+  .lede {
+    margin: 0 0 30px;
+  }
+
+  .ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: clamp(32px, 5vw, 52px);
+  }
+
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    margin: 0;
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .kpi {
+    background: var(--bg);
+    padding: 18px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .kpi dt {
+    order: 2;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-soft);
+  }
+  .kpi dd {
+    margin: 0;
+  }
+  .kpi .value {
+    order: 1;
+    font-size: clamp(2rem, 3.2vw, 2.8rem);
+    line-height: 1;
+    color: var(--text);
+  }
+  .kpi:nth-child(3) .value {
+    color: var(--gold);
+  }
+  .kpi .hint {
+    order: 3;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: var(--muted);
+  }
+
+  .globe-wrap {
+    margin: 0;
+    position: relative;
+  }
+  .globe-stage {
+    position: relative;
+    aspect-ratio: 1;
+    width: 100%;
+    max-width: 620px;
+    margin-inline: auto;
+  }
+  .globe {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    touch-action: pan-y;
+  }
+  .globe:global(.is-dragging) {
+    cursor: grabbing;
+  }
+  .drag-hint {
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+    margin: 0;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    opacity: 0;
+    transition: opacity 600ms ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .globe-stage:hover .drag-hint {
+      opacity: 1;
+    }
+  }
+  figcaption {
+    display: grid;
+    gap: 4px;
+    justify-items: center;
+    text-align: center;
+    margin-top: -12px;
+  }
+  .routes-count {
+    font-size: 1.15rem;
+    color: var(--gold);
+  }
+  .caption-text {
+    font-size: 0.84rem;
+    color: var(--muted);
+    max-width: 42ch;
+  }
+
+  .scroll-cue {
+    position: absolute;
+    left: 50%;
+    bottom: 22px;
+    width: 1px;
+    height: 44px;
+    background: var(--line-strong);
+    overflow: hidden;
+  }
+  .scroll-cue span {
+    display: block;
+    width: 100%;
+    height: 40%;
+    background: var(--gold);
+    animation: cue 2.6s var(--ease-in-out) infinite;
+  }
+  @keyframes cue {
+    0% { transform: translateY(-100%); }
+    70%, 100% { transform: translateY(260%); }
+  }
+
+  /* Scroll-driven exit: the copy lifts and fades, the globe recedes.
+     Runs off the main thread where supported; elsewhere the hero just scrolls. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .copy {
+        animation: hero-copy-out linear both;
+        animation-timeline: view();
+        animation-range: exit 0% exit 80%;
+      }
+      .globe-stage {
+        animation: hero-globe-out linear both;
+        animation-timeline: view();
+        animation-range: exit 0% exit 100%;
+      }
+    }
+  }
+  @keyframes hero-copy-out {
+    to { transform: translateY(-60px); opacity: 0.1; }
+  }
+  @keyframes hero-globe-out {
+    to { transform: translateY(40px) scale(0.86); opacity: 0.25; }
+  }
+
+  @media (max-width: 980px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+    .globe-wrap {
+      order: -1;
+      margin-inline: auto;
+      width: min(100%, 440px);
+    }
+    .globe-stage {
+      max-width: 440px;
+    }
+    .title {
+      max-width: 14ch;
+    }
+    .scroll-cue {
+      display: none;
+    }
+  }
+  @media (max-width: 640px) {
+    .kpis {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .globe-wrap {
+      width: min(100%, 340px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse,
+    .scroll-cue span {
+      animation: none;
+    }
+  }
+</style>

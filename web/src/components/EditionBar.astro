@@ -1,0 +1,109 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  updated: Date | null;
+  next: Date;
+  stale: boolean;
+  articlesToday: number;
+  updatedLabel: string;
+  nextLabel: string;
+}
+const { updated, next, stale, articlesToday, updatedLabel, nextLabel } = Astro.props;
+---
+<div class:list={["edition-bar", { stale }]} role="status">
+  <div class="wrap row">
+    <span class="item live">
+      <span class="beacon" aria-hidden="true"></span>
+      {stale ? "Data may be out of date" : "Live edition"}
+    </span>
+    <span class="item">
+      <Icon name="clock" size={15} />
+      Updated <time datetime={updated?.toISOString()}>{updatedLabel}</time> Lagos
+    </span>
+    <span class="item">
+      Next run <time datetime={next.toISOString()} data-next-run>{nextLabel}</time>
+    </span>
+    <span class="item hide-sm">{articlesToday} stories processed today</span>
+    {stale && (
+      <span class="item note">
+        The last scheduled run did not publish. What you see is the most recent edition.
+      </span>
+    )}
+  </div>
+</div>
+
+<style>
+  .edition-bar {
+    border-block: 1px solid var(--line);
+    background: color-mix(in srgb, var(--surface) 55%, transparent);
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 26px;
+    min-height: 48px;
+    padding-block: 10px;
+  }
+  .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  .live {
+    color: var(--text-soft);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  time {
+    color: var(--text-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .beacon {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--royal-ink);
+  }
+  .beacon::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 1px solid var(--royal-ink);
+    opacity: 0;
+    animation: ping 7s var(--ease-out) infinite;
+  }
+  @keyframes ping {
+    0% { transform: scale(0.6); opacity: 0.8; }
+    35%, 100% { transform: scale(1.8); opacity: 0; }
+  }
+  .stale .beacon {
+    background: var(--gold);
+  }
+  .stale .beacon::after {
+    border-color: var(--gold);
+  }
+  .stale .live {
+    color: var(--gold);
+  }
+  .note {
+    white-space: normal;
+    color: var(--text-soft);
+  }
+  @media (max-width: 640px) {
+    .hide-sm {
+      display: none;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .beacon::after {
+      animation: none;
+    }
+  }
+</style>

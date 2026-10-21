@@ -106,6 +106,37 @@ jobs:
           NPM_CONFIG_IGNORE_SCRIPTS: "true"
         run: npx --yes eslint@10.10.0 "backend/app/static/js/**/*.js" "tests/frontend/**/*.js"
 
+  web:
+    name: Web (new site)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      # Lockfile-pinned install, so the dependency tree is exactly the one
+      # reviewed in the PR.
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Unit tests (register rules, stories, brief, edition clock)
+        run: npm test
+
+      - name: Type check
+        run: npm run check
+
+      - name: Build from the committed data
+        run: npm run build
+
   cache-buster:
     name: Cache-buster check
     # Push runs cover direct commits to main: the psc-core.js slip
