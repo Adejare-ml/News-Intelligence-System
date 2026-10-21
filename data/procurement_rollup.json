@@ -2,10 +2,10 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 53,
+      "contracts": 54,
       "undisclosed": 35,
       "totals": {
-        "NGN": 17215096000000.0,
+        "NGN": 17235096000000.0,
         "GBP": 1492000000.0,
         "USD": 31230000000.0
       }
@@ -253,6 +253,12 @@
       }
     },
     {
+      "name": "Abia State Government",
+      "contracts": 3,
+      "undisclosed": 3,
+      "totals": {}
+    },
+    {
       "name": "Federal Airports Authority of Nigeria",
       "contracts": 3,
       "undisclosed": 3,
@@ -274,12 +280,6 @@
       "name": "Zamfara State Government",
       "contracts": 3,
       "undisclosed": 3,
-      "totals": {}
-    },
-    {
-      "name": "Abia State Government",
-      "contracts": 2,
-      "undisclosed": 2,
       "totals": {}
     },
     {
@@ -460,6 +460,12 @@
     },
     {
       "name": "Institute for Peace and Conflict Resolution",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
+      "name": "Kebbi State Government",
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
@@ -674,10 +680,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 122,
-      "undisclosed": 75,
+      "contracts": 125,
+      "undisclosed": 77,
       "totals": {
-        "NGN": 20759214090000.0,
+        "NGN": 20779214090000.0,
         "USD": 47797140000.0
       }
     },
@@ -1166,5 +1172,5 @@
       }
     }
   ],
-  "generated": "2026-10-21 12:50:21"
+  "generated": "2026-10-21 20:37:35"
 }

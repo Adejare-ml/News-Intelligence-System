@@ -3,11 +3,20 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 43.3,
+      "recent_avg": 45.5,
       "previous_avg": 23.3,
-      "delta": 20.0,
-      "recent_mentions": 9,
+      "delta": 22.2,
+      "recent_mentions": 10,
       "previous_mentions": 23
+    },
+    {
+      "key": "socio economic rights and accountability project",
+      "label": "Socio-Economic Rights and Accountability Project",
+      "recent_avg": 55.0,
+      "previous_avg": 75.0,
+      "delta": -20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "seyi makinde",
@@ -28,6 +37,15 @@
       "previous_mentions": 4
     },
     {
+      "key": "senate of",
+      "label": "Senate of Nigeria",
+      "recent_avg": 37.5,
+      "previous_avg": 55.0,
+      "delta": -17.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "recent_avg": 13.3,
@@ -37,22 +55,31 @@
       "previous_mentions": 2
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 27.5,
-      "previous_avg": 42.9,
-      "delta": -15.4,
-      "recent_mentions": 8,
-      "previous_mentions": 7
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 30.0,
+      "delta": -15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 31.0,
-      "previous_avg": 20.0,
-      "delta": 11.0,
-      "recent_mentions": 5,
-      "previous_mentions": 3
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 29.3,
+      "previous_avg": 39.4,
+      "delta": -10.1,
+      "recent_mentions": 7,
+      "previous_mentions": 8
+    },
+    {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 15.0,
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "ogun state government",
@@ -73,22 +100,31 @@
       "previous_mentions": 1
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 16.7,
-      "previous_avg": 25.0,
-      "delta": -8.3,
-      "recent_mentions": 3,
-      "previous_mentions": 2
+      "key": "kano state government",
+      "label": "Kano State Government",
+      "recent_avg": 30.0,
+      "previous_avg": 20.0,
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 26.9,
+      "previous_avg": 20.0,
+      "delta": 6.9,
+      "recent_mentions": 8,
+      "previous_mentions": 3
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 23.9,
-      "previous_avg": 31.8,
-      "delta": -7.9,
-      "recent_mentions": 18,
-      "previous_mentions": 14
+      "recent_avg": 24.7,
+      "previous_avg": 30.3,
+      "delta": -5.6,
+      "recent_mentions": 17,
+      "previous_mentions": 16
     },
     {
       "key": "olayemi cardoso",
@@ -118,15 +154,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 60.8,
-      "previous_avg": 56.5,
-      "delta": 4.3,
-      "recent_mentions": 13,
-      "previous_mentions": 13
-    },
-    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 21.7,
@@ -136,51 +163,24 @@
       "previous_mentions": 4
     },
     {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 55.0,
-      "previous_avg": 56.7,
-      "delta": -1.7,
-      "recent_mentions": 2,
-      "previous_mentions": 3
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 34.0,
-      "previous_avg": 32.8,
-      "delta": 1.2,
+      "previous_avg": 31.2,
+      "delta": 2.8,
       "recent_mentions": 5,
-      "previous_mentions": 9
+      "previous_mentions": 8
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "recent_avg": 16.0,
-      "previous_avg": 15.0,
-      "delta": 1.0,
-      "recent_mentions": 5,
-      "previous_mentions": 4
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "recent_avg": 14.2,
-      "previous_avg": 15.0,
-      "delta": -0.8,
-      "recent_mentions": 6,
-      "previous_mentions": 3
-    },
-    {
-      "key": "dangote refinery",
-      "label": "Dangote Refinery",
-      "recent_avg": 30.0,
-      "previous_avg": 30.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 59.6,
+      "previous_avg": 57.9,
+      "delta": 1.7,
+      "recent_mentions": 12,
+      "previous_mentions": 14
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-21 12:50:21"
+  "generated": "2026-10-21 20:37:35"
 }

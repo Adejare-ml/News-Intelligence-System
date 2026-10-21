@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 82,
+      "total_mentions": 83,
       "points": [
         {
           "week": "2026-09-14",
@@ -37,8 +37,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 8,
-          "avg_risk": 44.4,
+          "mentions": 9,
+          "avg_risk": 46.7,
           "max_risk": 85
         }
       ]
@@ -46,7 +46,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 81,
+      "total_mentions": 82,
       "points": [
         {
           "week": "2026-09-07",
@@ -86,8 +86,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 8,
-          "avg_risk": 23.1,
+          "mentions": 9,
+          "avg_risk": 23.9,
           "max_risk": 40
         }
       ]
@@ -375,6 +375,43 @@
       ]
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 6,
+          "avg_risk": 29.2,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "total_mentions": 15,
@@ -449,43 +486,6 @@
       ]
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "total_mentions": 13,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 38.3,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "total_mentions": 13,
@@ -519,7 +519,7 @@
     {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 12,
+      "total_mentions": 13,
       "points": [
         {
           "week": "2026-09-14",
@@ -544,6 +544,12 @@
           "mentions": 2,
           "avg_risk": 27.5,
           "max_risk": 35
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -833,6 +839,37 @@
       ]
     },
     {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 8,
@@ -921,37 +958,6 @@
           "week": "2026-10-12",
           "mentions": 3,
           "avg_risk": 23.3,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 3,
-          "avg_risk": 18.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 30.0,
           "max_risk": 30
         }
       ]
@@ -1583,6 +1589,31 @@
       ]
     },
     {
+      "key": "kano state government",
+      "label": "Kano State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "kucoin",
       "label": "KuCoin Nigeria Limited",
       "total_mentions": 4,
@@ -1778,6 +1809,25 @@
       ]
     },
     {
+      "key": "senate of",
+      "label": "Senate of Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "west african examinations council",
       "label": "West African Examinations Council",
       "total_mentions": 4,
@@ -1812,6 +1862,31 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -1999,21 +2074,21 @@
       ]
     },
     {
-      "key": "kano state government",
-      "label": "Kano State Government",
+      "key": "ishaku",
+      "label": "Ishaku",
       "total_mentions": 3,
       "points": [
         {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
         },
         {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -2398,19 +2473,6 @@
       ]
     },
     {
-      "key": "senate of",
-      "label": "Senate of Nigeria",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -2513,25 +2575,6 @@
       ]
     },
     {
-      "key": "abia state government",
-      "label": "Abia State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "access bank",
       "label": "Access Bank",
       "total_mentions": 2,
@@ -2592,6 +2635,19 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "airtel",
+      "label": "Airtel",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2813,6 +2869,25 @@
       ]
     },
     {
+      "key": "ekiti state house of assembly",
+      "label": "Ekiti State House of Assembly",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "enugu state government",
       "label": "Enugu State Government",
       "total_mentions": 2,
@@ -2847,6 +2922,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "fsgrn",
+      "label": "FSGRN",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -2985,6 +3073,19 @@
       ]
     },
     {
+      "key": "glo",
+      "label": "Glo",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "godwin emefiele",
       "label": "Godwin Emefiele",
       "total_mentions": 2,
@@ -3087,19 +3188,6 @@
       ]
     },
     {
-      "key": "ishaku",
-      "label": "Ishaku",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 80.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "jpmorgan",
       "label": "JPMorgan",
       "total_mentions": 2,
@@ -3125,6 +3213,19 @@
       "points": [
         {
           "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "mtn",
+      "label": "MTN",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3243,6 +3344,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national agency for food and drug administration and control nafdac",
+      "label": "National Agency for Food and Drug Administration and Control (NAFDAC)",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
         }
       ]
     },
@@ -3377,6 +3497,25 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "inter bank settlement system",
+      "label": "Nigeria Inter-Bank Settlement System Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3800,6 +3939,25 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "unnamed commissioner",
+      "label": "Unnamed Commissioner",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -4940,6 +5098,19 @@
       ]
     },
     {
+      "key": "cross river state assembly",
+      "label": "Cross River State Assembly",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "dlm",
       "label": "DLM",
       "total_mentions": 1,
@@ -5135,19 +5306,6 @@
       ]
     },
     {
-      "key": "ekiti state house of assembly",
-      "label": "Ekiti State House of Assembly",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "eko power",
       "label": "Eko Power",
       "total_mentions": 1,
@@ -5289,111 +5447,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "federal capital territory fct judicial committee",
-      "label": "Federal Capital Territory (FCT) Judicial Committee",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "federal civil service",
-      "label": "Federal Civil Service",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "federal high court",
-      "label": "Federal High Court",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "federal housing authority",
-      "label": "Federal Housing Authority",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal ministry of art culture tourism and the creative economy",
-      "label": "Federal Ministry of Art, Culture, Tourism and the Creative Economy",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "federal ministry of aviation",
-      "label": "Federal Ministry of Aviation",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "federal ministry of health",
-      "label": "Federal Ministry of Health",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal ministry of works",
-      "label": "Federal Ministry of Works",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-21 12:50:21"
+  "generated": "2026-10-21 20:37:35"
 }

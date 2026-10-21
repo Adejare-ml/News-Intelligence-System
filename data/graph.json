@@ -109,16 +109,16 @@
       "risk": "Critical"
     },
     {
-      "id": "81dcb233ede4",
-      "label": "Tinubu",
+      "id": "dce5a31d3181",
+      "label": "MTN Nigeria",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "2a77f31e67e8",
-      "label": "PFIPC",
+      "id": "81dcb233ede4",
+      "label": "Tinubu",
       "type": "company",
-      "risk": "High"
+      "risk": "Low"
     },
     {
       "id": "01391c4b85e7",
@@ -145,6 +145,30 @@
       "risk": "Low"
     },
     {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "85a88efc62db",
+      "label": "Nigeria Extractive Industries Transparency Initiative",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ac79f04a4e30",
+      "label": "Kano State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b27f282d6347",
       "label": "Osun State Government",
       "type": "agency",
@@ -153,6 +177,12 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,8 +205,26 @@
       "risk": "Low"
     },
     {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2ce95174205c",
+      "label": "National Agency for Food and Drug Administration and Control (NAFDAC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "aa9abf2767d5",
       "label": "Standards Organisation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "81adceec0174",
+      "label": "Ekiti State House of Assembly",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,51 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "7ea10c41e70c",
-      "label": "Taraba State House of Assembly",
-      "type": "agency",
+      "id": "5476ecdab0f0",
+      "label": "Ishaku",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "42f5df65143b",
-      "label": "Federal Road Safety Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0634464820c7",
-      "label": "Nigerian Correctional Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
+      "id": "737f70b3bdb8",
+      "label": "Taraba State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -247,8 +259,32 @@
       "risk": "Low"
     },
     {
-      "id": "40ce4ff30275",
-      "label": "Godwin Emefiele",
+      "id": "26727e8d2493",
+      "label": "Ismaila Babalola",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f8df12550e3e",
+      "label": "Lagos State Butchers Association",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "14d70952866c",
+      "label": "Unnamed Ex-Kebbi First Lady",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "c4bf546ac931",
+      "label": "Global Cancer Body",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "86430d64a9dc",
+      "label": "Unnamed Commissioner",
       "type": "person",
       "risk": "Low"
     },
@@ -256,6 +292,12 @@
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -268,6 +310,18 @@
       "id": "68419b78e6b4",
       "label": "Ministry of Aviation",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "06c8cb034ab7",
+      "label": "Alli",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "40ce4ff30275",
+      "label": "Godwin Emefiele",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -313,14 +367,8 @@
       "risk": "Low"
     },
     {
-      "id": "06c8cb034ab7",
-      "label": "Alli",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "37a6259cc0c1",
-      "label": "null",
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -379,12 +427,6 @@
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "10e91a46eee3",
       "label": "Godswill Akpabio",
       "type": "person",
@@ -439,44 +481,14 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "58c58351d674",
-      "label": "Olayemi Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "423d33ac58c5",
-      "label": "Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6f9832b76212",
-      "label": "Africa Finance Corporation",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "c9eb8a8dbd99",
-      "label": "Segun Kayode",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ec79cf0c700a",
-      "label": "State Security Service",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "4b80ca311098",
-      "label": "Hadi Sirika",
       "type": "person",
       "risk": "Low"
     },
@@ -607,6 +619,18 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "1570ca89d4ee",
+      "label": "Kebbi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "84b6d6cbf896",
       "label": "National Agency for Science and Engineering Infrastructure",
       "type": "agency",
@@ -695,15 +719,15 @@
       "label": "Primary Health Care centers",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "d3177bcccf13",
-      "label": "Nigerian National Petroleum Company (NNPC) / House of Representatives Committee Recommendation",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "d926e4f83416",
+      "from": "5476ecdab0f0",
+      "to": "737f70b3bdb8",
+      "label": "Appointed as Former Governor"
+    },
     {
       "id": "9c1b3db2433f",
       "from": "7a8bece02efd",
@@ -711,10 +735,22 @@
       "label": "Appointed as Director"
     },
     {
-      "id": "234af74126a1",
-      "from": "40ce4ff30275",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Former Governor"
+      "id": "cb99ade28e7f",
+      "from": "26727e8d2493",
+      "to": "f8df12550e3e",
+      "label": "Appointed as Executive Leader"
+    },
+    {
+      "id": "1fd66623721e",
+      "from": "14d70952866c",
+      "to": "c4bf546ac931",
+      "label": "Appointed as Leader"
+    },
+    {
+      "id": "a00c0d871fb8",
+      "from": "86430d64a9dc",
+      "to": "ac79f04a4e30",
+      "label": "Appointed as Commissioner"
     },
     {
       "id": "63dfe1afb291",
@@ -727,6 +763,12 @@
       "from": "18bc77b97b9c",
       "to": "68419b78e6b4",
       "label": "Appointed as Minister of Aviation"
+    },
+    {
+      "id": "234af74126a1",
+      "from": "40ce4ff30275",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Former Governor"
     },
     {
       "id": "896a53d24a55",
@@ -753,12 +795,6 @@
       "label": "Appointed as Official"
     },
     {
-      "id": "1a494aa58ad9",
-      "from": "06c8cb034ab7",
-      "to": "37a6259cc0c1",
-      "label": "Appointed as null"
-    },
-    {
       "id": "b6c8fff20d98",
       "from": "6ff5775e8631",
       "to": "a70f31de512b",
@@ -781,12 +817,6 @@
       "from": "17530210d4fa",
       "to": "04d993f97b29",
       "label": "Appointed as Former Chairman"
-    },
-    {
-      "id": "004ec5440d8a",
-      "from": "f94328a29154",
-      "to": "334c4a4c42fd",
-      "label": "Appointed as None"
     },
     {
       "id": "d3525dfdc157",
@@ -829,30 +859,6 @@
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President"
-    },
-    {
-      "id": "fd1604102e20",
-      "from": "58c58351d674",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "7c66b5e3768e",
-      "from": "423d33ac58c5",
-      "to": "6f9832b76212",
-      "label": "Appointed as Board Chairman"
-    },
-    {
-      "id": "5370f65cc0e4",
-      "from": "c9eb8a8dbd99",
-      "to": "ec79cf0c700a",
-      "label": "Appointed as Forensic Investigator"
-    },
-    {
-      "id": "f1edc6c3817b",
-      "from": "4b80ca311098",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Minister"
     },
     {
       "id": "a5e36b5f552f",
@@ -939,6 +945,24 @@
       "label": "Significant influence or control"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "0da63ab8c0bc",
+      "from": "334c4a4c42fd",
+      "to": "7ac5d6bb2121",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "1a8ba2e01c37",
+      "from": "334c4a4c42fd",
+      "to": "1570ca89d4ee",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "c1d603f082d4",
       "from": "334c4a4c42fd",
       "to": "68419b78e6b4",
@@ -987,12 +1011,6 @@
       "label": "Contract Awardee"
     },
     {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "8dfb56d07ece",
       "from": "4757d2f9d325",
       "to": "e79817c87e24",
@@ -1020,12 +1038,6 @@
       "id": "f17f809e54b8",
       "from": "2be931f076db",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "099c3745b8eb",
-      "from": "9b5549bd0205",
-      "to": "d3177bcccf13",
       "label": "Contract Awardee"
     }
   ]
