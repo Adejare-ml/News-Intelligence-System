@@ -1,0 +1,423 @@
+---
+import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { resolve } from "node:path";
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import * as data from "../../lib/data.ts";
+import { href } from "../../lib/url.ts";
+import { groupHoldings, summarise } from "../../lib/psc.ts";
+import { listEditions } from "../../lib/archive.ts";
+
+// Every number on this page is computed from the repository at build time.
+const days = data.history().days ?? [];
+const runs = days.reduce((n, d) => n + (d.runs || 0), 0);
+const published = days.reduce((n, d) => n + (d.articles || 0), 0);
+const sourcesPayload = data.readJson<{ sources?: { total: number }[] }>("sources.json", {});
+const sources = sourcesPayload.sources ?? [];
+const screened = sources.reduce((n, s) => n + (s.total || 0), 0);
+const holdings = summarise(groupHoldings(data.psc()));
+const editions = listEditions().length;
+
+const repo = resolve(process.cwd(), "..");
+const countLines = (p: string) => (existsSync(p) ? readFileSync(p, "utf-8").split("\n").filter((l) => l.trim()).length : 0);
+const gold = countLines(resolve(repo, "evals/extraction_gold.jsonl"));
+const corpusDir = resolve(repo, "evals/corpus");
+const corpus = existsSync(corpusDir)
+  ? readdirSync(corpusDir).filter((f) => f.endsWith(".jsonl")).reduce((n, f) => n + countLines(resolve(corpusDir, f)), 0)
+  : 0;
+const pyTests = existsSync(resolve(repo, "tests"))
+  ? readdirSync(resolve(repo, "tests")).filter((f) => /^test_.*\.py$/.test(f)).length
+  : 0;
+const firstDay = days[0]?.date;
+
+const fmt = (n: number) => n.toLocaleString("en-GB");
+const stages = [
+  { n: "01", title: "Collect", body: "Google News RSS and four news APIs, searched for Nigerian companies, agencies and owners, four times a day.", tag: `${sources.length} publishers` },
+  { n: "02", title: "Screen", body: "A topic guard drops sport, celebrity and off-topic stories before any model is paid to read them.", tag: screened ? `${fmt(screened)} screened` : "Relevance guard" },
+  { n: "03", title: "Read", body: "A language model cascade (Ollama Cloud, then NVIDIA NIM) extracts people, companies, stakes, contracts and a risk score.", tag: "LLM cascade" },
+  { n: "04", title: "Resolve", body: "Names are normalised and merged, repeat reports grouped into holdings, CAMA 2020 bands and patterns computed.", tag: `${holdings.holdings} holdings` },
+  { n: "05", title: "Publish", body: "The register, the brief and this site are rebuilt from the exports and deployed to the edge.", tag: `${editions} editions` },
+];
+
+const patterns = [
+  ["Several holders just under 5%", "Two or more holders in one company sitting between 3.5% and 5%, just under Nigeria’s disclosure line."],
+  ["Voting rights exceed equity", "Reported voting rights at least 20 points above the economic stake."],
+  ["Held through an offshore vehicle", "Control reported through an entity linked to a secrecy jurisdiction such as Mauritius, Jersey or the BVI."],
+  ["Nominee or trust arrangement", "A nominee, trustee or custodian reported in the chain of control."],
+  ["Politically exposed person", "The holder is recorded as politically exposed."],
+  ["Recent change of control", "Control reported to have moved from a named previous holder."],
+  ["Holdings in several companies", "The same holder reported in two or more tracked companies."],
+  ["Interest not quantified", "No stake and no nature of control in any report."],
+];
+---
+<Base
+  title="How AURA works · Methodology"
+  description="How AURA turns Nigeria's business news into an ownership register: the pipeline, the models, the evaluation set, and the limits of what it can tell you."
+>
+  <section class="wrap hero">
+    <p class="eyebrow">How it works</p>
+    <h1 class="h1" data-split>From headline to holding, four times a day.</h1>
+    <p class="lede">
+      AURA is an automated newsroom: it reads Nigeria’s business and regulatory press, pulls out who
+      owns and controls what, and publishes it as a register anyone can search. No one types the
+      records in. That is the point, and also the caveat.
+    </p>
+  </section>
+
+  <section class="wrap pipeline" aria-labelledby="pipe-title">
+    <h2 class="sr-only" id="pipe-title">The pipeline</h2>
+    <ol class="stages">
+      {stages.map((s, i) => (
+        <li class="stage" data-reveal style={`--i:${i}`}>
+          {i > 0 && (
+            <span class="wire" aria-hidden="true">
+              <span class="packet" style={`--p:${i}`}></span>
+              <span class="packet late" style={`--p:${i}`}></span>
+            </span>
+          )}
+          <span class="n num">{s.n}</span>
+          <h3 class="h3">{s.title}</h3>
+          <p>{s.body}</p>
+          <span class="chip chip-gold">{s.tag}</span>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="wrap numbers" aria-labelledby="num-title">
+    <h2 class="h2" id="num-title" data-split>The record so far</h2>
+    <dl class="grid" data-reveal>
+      <div><dd class="num">{fmt(runs)}</dd><dt>pipeline runs{firstDay && ` since ${new Date(`${firstDay}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`}</dt></div>
+      <div><dd class="num">{fmt(screened)}</dd><dt>articles screened</dt></div>
+      <div><dd class="num">{fmt(published)}</dd><dt>stories analysed and published</dt></div>
+      <div><dd class="num">{fmt(sources.length)}</dd><dt>publishers seen</dt></div>
+      <div><dd class="num">{fmt(holdings.holdings)}</dd><dt>ownership holdings mapped</dt></div>
+      <div><dd class="num">{fmt(editions)}</dd><dt>brief editions archived</dt></div>
+    </dl>
+  </section>
+
+  <section class="wrap split" aria-labelledby="eval-title">
+    <div>
+      <h2 class="h2" id="eval-title" data-split>Measured, not assumed</h2>
+      <p class="lede">
+        Every stored field is model output, so the archive cannot grade itself. AURA samples the
+        articles it reads into an evaluation corpus, and a person labels what the correct extraction
+        should have been. Only human-verified labels can reach the optimiser (DSPy with GEPA).
+      </p>
+    </div>
+    <dl class="mini" data-reveal>
+      <div><dd class="num">{fmt(corpus)}</dd><dt>article inputs captured for evaluation</dt></div>
+      <div><dd class="num">{fmt(gold)}</dd><dt>hand-verified gold extractions</dt></div>
+      <div><dd class="num">{pyTests}</dd><dt>backend test modules, plus the site’s own unit tests</dt></div>
+    </dl>
+  </section>
+
+  <section class="wrap split" aria-labelledby="pat-title">
+    <div>
+      <h2 class="h2" id="pat-title" data-split>What “worth checking” means</h2>
+      <p class="lede">
+        Nigeria requires disclosure of significant control from <strong>5%</strong> (CAMA 2020 s.868 and
+        the CAC PSC Regulations 2022), not the 25% used in the UK. The patterns below come from the
+        FATF and Egmont concealment typologies, limited to what the reporting lets AURA compute.
+      </p>
+    </div>
+    <ul class="patterns">
+      {patterns.map(([t, d], i) => (
+        <li data-reveal style={`--i:${i}`}><strong>{t}</strong><span>{d}</span></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap limits" aria-labelledby="lim-title">
+    <h2 class="h2" id="lim-title" data-split>What AURA can’t tell you</h2>
+    <div class="cards">
+      <div class="card" data-reveal>
+        <h3 class="h3">It is not the CAC register</h3>
+        <p>Every record is extracted by a language model from news reporting. None carries a CAC filing unless the reporting cited one.</p>
+      </div>
+      <div class="card" data-reveal style="--i:1">
+        <h3 class="h3">A pattern is not wrongdoing</h3>
+        <p>Offshore vehicles and nominee holders are legal. A pattern is a reason to look closer, nothing more.</p>
+      </div>
+      <div class="card" data-reveal style="--i:2">
+        <h3 class="h3">Names collide</h3>
+        <p>Different people and companies can share a name. Check the source articles before relying on a record.</p>
+      </div>
+      <div class="card" data-reveal style="--i:3">
+        <h3 class="h3">Models make mistakes</h3>
+        <p>Stakes can be misread, roles confused, stories mis-scored. The evaluation set exists to measure and reduce that.</p>
+      </div>
+    </div>
+    <div class="correct" data-reveal>
+      <div>
+        <h3 class="h3">Spotted an error?</h3>
+        <p>Corrections are welcome and handled in the open. Say which record is wrong and link the source.</p>
+      </div>
+      <a class="btn btn-primary" href="https://github.com/Adejare-ml/News-Intelligence-System/issues/new?title=Correction%3A%20&labels=correction" rel="noopener">
+        Request a correction <Icon name="arrowUpRight" size={16} />
+      </a>
+    </div>
+  </section>
+
+  <section class="wrap stack" aria-labelledby="stack-title">
+    <h2 class="h2" id="stack-title" data-split>Built with</h2>
+    <ul class="tags" data-reveal>
+      {["Python", "GitHub Actions (4 runs a day)", "Google Sheets as the store", "Ollama Cloud and NVIDIA NIM", "DSPy + GEPA", "Astro", "TypeScript", "Canvas 2D globe", "Motion springs", "Cloudflare Pages, Functions and D1"].map((t) => <li>{t}</li>)}
+    </ul>
+    <p class="meta">
+      Source and history on <a class="link" href="https://github.com/Adejare-ml/News-Intelligence-System" rel="noopener">GitHub</a>.
+      Raw exports at <a class="link" href={href("data/latest.json")}>/data</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: clamp(40px, 8vw, 104px) clamp(24px, 4vw, 48px);
+    display: grid;
+    gap: 18px;
+  }
+  .hero .eyebrow {
+    color: var(--gold);
+  }
+  .hero .h1 {
+    max-width: 14ch;
+  }
+
+  .stages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px;
+  }
+  .stage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px;
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .stage p {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 0.92rem;
+    flex: 1;
+  }
+  .n {
+    color: var(--gold);
+    font-size: 1rem;
+  }
+  .stage .chip {
+    align-self: flex-start;
+  }
+  /* Data packets travel the wire between stages: transform only, sized by
+     the wire's own width through container query units. */
+  .wire {
+    position: absolute;
+    right: 100%;
+    top: 48px;
+    width: 28px;
+    height: 2px;
+    background: var(--line-strong);
+    container-type: inline-size;
+    overflow: visible;
+  }
+  .packet {
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 10px rgba(212, 168, 74, 0.6);
+    animation: travel 2.4s var(--ease-in-out) infinite;
+    animation-delay: calc(var(--p) * 0.35s);
+    opacity: 0;
+  }
+  .packet.late {
+    animation-delay: calc(var(--p) * 0.35s + 1.2s);
+  }
+  @keyframes travel {
+    0% { transform: translateX(-6px); opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { transform: translateX(100cqw); opacity: 0; }
+  }
+
+  .numbers,
+  .split,
+  .limits,
+  .stack {
+    padding-top: clamp(64px, 10vw, 128px);
+  }
+  .numbers .h2,
+  .limits .h2,
+  .stack .h2 {
+    margin-bottom: 28px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    margin: 0;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-l);
+    overflow: hidden;
+  }
+  .grid div,
+  .mini div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 26px 24px;
+    background: var(--bg);
+  }
+  .grid dd,
+  .mini dd {
+    margin: 0;
+    font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+    line-height: 1;
+    color: var(--gold);
+  }
+  .grid dt,
+  .mini dt {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+  }
+  .split {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(28px, 5vw, 72px);
+    align-items: start;
+  }
+  .split .h2 {
+    margin-bottom: 18px;
+  }
+  .split strong {
+    color: var(--gold);
+  }
+  .mini {
+    margin: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .mini div {
+    border-radius: var(--radius-m);
+    border: 1px solid var(--line);
+  }
+  .patterns {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .patterns li {
+    display: grid;
+    gap: 4px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .patterns span {
+    color: var(--text-soft);
+    font-size: 0.92rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .card {
+    padding: 22px;
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .card p {
+    color: var(--text-soft);
+    font-size: 0.92rem;
+    margin: 10px 0 0;
+  }
+  .correct {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line-strong);
+    background: linear-gradient(120deg, var(--royal-wash), var(--surface));
+  }
+  .correct p {
+    margin: 6px 0 0;
+    color: var(--text-soft);
+  }
+  .tags {
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tags li {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    font-size: 0.9rem;
+    color: var(--text-soft);
+  }
+
+  @media (max-width: 1100px) {
+    .stages {
+      grid-template-columns: 1fr;
+      gap: 26px;
+      max-width: 620px;
+    }
+    .wire {
+      right: auto;
+      left: 40px;
+      top: auto;
+      bottom: 100%;
+      width: 2px;
+      height: 26px;
+      container-type: size;
+    }
+    .packet {
+      top: 0;
+      left: -2px;
+    }
+    @keyframes travel {
+      0% { transform: translateY(-6px); opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { transform: translateY(100cqh); opacity: 0; }
+    }
+    .cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 720px) {
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .split {
+      grid-template-columns: 1fr;
+    }
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .packet {
+      display: none;
+    }
+  }
+</style>

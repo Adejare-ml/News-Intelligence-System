@@ -2,14 +2,35 @@
 
 [![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-Scheduler-2088FF?style=flat-square&logo=githubactions&logoColor=white)](.github/workflows/news_scheduler.yml)
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Dashboard-222222?style=flat-square&logo=github&logoColor=white)](https://adejare-ml.github.io/News-Intelligence-System/)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-Live_site-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://auranews.pages.dev/)
+[![Astro](https://img.shields.io/badge/Astro-Site-BC52EE?style=flat-square&logo=astro&logoColor=white)](web/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 An automated intelligence pipeline that tracks **corporate ownership transparency in Nigeria** — beneficial owners (Persons with Significant Control), board changes, mergers, procurement awards, and regulatory actions — by reading the news four times a day and turning it into structured records and an executive brief.
 
-**→ [Live dashboard](https://adejare-ml.github.io/News-Intelligence-System/)**
+**→ [auranews.pages.dev](https://auranews.pages.dev/)** · mirror on [GitHub Pages](https://adejare-ml.github.io/News-Intelligence-System/)
 
-It runs with **no servers**: GitHub Actions is the scheduler, Google Sheets is the database, an LLM cascade does the extraction and writing, and GitHub Pages serves the dashboard. Total hosting cost is zero.
+![AURA: who really controls Nigeria's companies](docs/screenshots/home.jpg)
+
+It runs with **no servers of its own**: GitHub Actions is the scheduler, Google Sheets is the database, an LLM cascade does the extraction and writing, and an Astro site on Cloudflare Pages publishes it. Total hosting cost is zero.
+
+## 🌍 The site
+
+A daily edition rather than a dashboard, in navy, royal blue and gold:
+
+- **Today**: the hero globe forms from scattered dots, Nigeria lights up and offshore routes draw out. Then the Morning Brief, image-led stories, and the ownership story of the day drawn as a chain.
+- **[Brief](https://auranews.pages.dev/brief/)**: the day's brief as a long read, plus every archived edition.
+- **[Register](https://auranews.pages.dev/register/)**: one card per holding (repeat reports grouped), CAMA 2020 disclosure bands from 5%, patterns worth checking, and the procurement ledger.
+- **Entity pages**: per person and company, with ownership chains, report timelines, news and board moves.
+- **[News](https://auranews.pages.dev/news/)**, an **alerts inbox** (spring-physics drawer, drag to dismiss), and **⌘K search**.
+- **[How it works](https://auranews.pages.dev/how-it-works/)**: the pipeline, the evaluation set, and the limits.
+- **Morning Brief sign-up**: Cloudflare Pages Functions and D1, with double opt-in. Sending is off until a provider is configured.
+
+| Register | Entity | Mobile |
+|---|---|---|
+| ![Register](docs/screenshots/register.jpg) | ![Entity page](docs/screenshots/entity.jpg) | ![Mobile](docs/screenshots/mobile.jpg) |
+
+The site lives in [`web/`](web/) and is built from the pipeline's exports after every run. Hosting details are in [docs/CLOUDFLARE.md](docs/CLOUDFLARE.md).
 
 ---
 

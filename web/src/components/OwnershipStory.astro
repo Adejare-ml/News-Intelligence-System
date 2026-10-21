@@ -103,12 +103,18 @@ const { holding, others } = Astro.props;
     gap: 2px 16px;
     padding: 16px 4px;
     border-bottom: 1px solid var(--line);
-    transition: background-color var(--dur-ui) ease, padding var(--dur-ui) var(--ease-out);
+    transition: background-color var(--dur-ui) ease;
+  }
+  .o-name {
+    transition: transform var(--dur-ui) var(--ease-out), color var(--dur-ui) ease;
   }
   @media (hover: hover) and (pointer: fine) {
     .others a:hover {
-      padding-inline: 12px;
       background: var(--surface);
+    }
+    .others a:hover .o-name {
+      transform: translateX(6px);
+      color: var(--gold);
     }
   }
   .o-name {
