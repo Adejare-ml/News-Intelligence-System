@@ -144,10 +144,20 @@ _NON_BUSINESS_FIGURES = {
 }
 
 
+def has_source_link(row: Dict[str, Any]) -> bool:
+    """True when the row links to the article it came from.
+
+    The "Source" column only says how a row was made ("extracted", "seed"),
+    so it is no evidence of reporting. Every published claim must link to
+    the article behind it.
+    """
+    return str(row.get("Source URL") or "").strip().startswith(("http://", "https://"))
+
+
 def quality_flags(row: Dict[str, Any]) -> List[str]:
     """'unsourced', 'implausible' and/or 'no_filing' for one register row."""
     flags = []
-    if not _clean(row.get("Source")):
+    if not has_source_link(row):
         flags.append("unsourced")
     pct = _percent(row.get("Percentage"))
     person = canonical_person(row.get("Person Name"))
@@ -377,4 +387,168 @@ def qa_brief_headlines(md: str, records: Iterable[Dict[str, Any]]) -> str:
         first = re.split(r"(?<=[.!?])\s", summary.strip(), maxsplit=1)[0] if summary else ""
         tail = (". " + first) if first else ""
         out.append(f"{m.group('lead')}**{title}**{tail} {link.group(0) if link else ''}".rstrip() + "  ")
+    return "\n".join(out)
+
+
+# --- source backfill for older register rows -----------------------------------------
+
+def _mentions(text: str, name: str) -> bool:
+    folded = f" {_fold(text)} "
+    words = [w for w in _fold(name).split() if len(w) > 1]
+    return bool(words) and all(f" {w} " in folded for w in words)
+
+
+def backfill_sources(rows: Iterable[Dict[str, Any]], articles: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Attach the reporting to register rows saved before rows carried it.
+
+    A row gets an article only when exactly one article names both the
+    person and the company (title, summary or entities). Ambiguous or
+    missing matches stay unlinked, and the gate then withholds the row.
+    """
+    pool = []
+    for a in articles or []:
+        url = str(a.get("URL") or a.get("url") or "").strip()
+        if not url.startswith(("http://", "https://")):
+            continue
+        text = " ".join(str(a.get(k) or "") for k in ("Title", "title", "Summary", "summary", "Entities"))
+        pool.append((url, text, a))
+    out = []
+    for row in rows or []:
+        r = dict(row or {})
+        if not has_source_link(r):
+            person = str(r.get("Person Name") or "")
+            company = str(r.get("Company") or "")
+            # Headlines usually name people by surname ("Otedola raises stake").
+            surname = (canonical_person(person).split() or [""])[-1]
+            hits = {url: a for url, text, a in pool if _mentions(text, surname) and _mentions(text, company)}
+            if len(hits) == 1:
+                url, a = next(iter(hits.items()))
+                r["Source URL"] = url
+                r["Source Title"] = str(a.get("Title") or a.get("title") or "")
+                r["Publisher"] = str(a.get("Source") or a.get("source") or "")
+        out.append(r)
+    return out
+
+
+# --- deterministic clean-up of the model-written brief ---------------------------------
+
+_HEADING_RE = re.compile(r"^#{2,3}\s+(.+?)\s*$")
+_ITEM_RE = re.compile(r"^\s*[-*]\s+")
+_URL_RE = re.compile(r"\]\((https?://[^)\s]+)\)")
+_SOURCE_TAG_RE = re.compile(r"\{\s*source:([^}]*)\}")
+_HIGH = {"high", "critical"}
+
+
+def _record_text(rec: Dict[str, Any]) -> str:
+    analysis = rec.get("analysis") or {}
+    return " ".join(str(x or "") for x in (rec.get("title") or rec.get("Title"), analysis.get("summary") or rec.get("Summary")))
+
+
+def _risk(rec: Optional[Dict[str, Any]]) -> str:
+    if not rec:
+        return ""
+    analysis = rec.get("analysis") or {}
+    return str(analysis.get("risk_level") or rec.get("Risk Level") or "").strip().lower()
+
+
+def _cite(rec: Dict[str, Any]) -> str:
+    url = str(rec.get("url") or rec.get("URL") or "")
+    source = str(rec.get("source") or rec.get("Source") or "Source").replace("[", "(").replace("]", ")")
+    return f"([{source}]({url}))"
+
+
+def _strip_citations(text: str) -> str:
+    """The bullet without its trailing citations (links or {source: ...} tags)."""
+    body = text.rstrip()
+    while True:
+        trimmed = body.rstrip(" .;,")
+        if trimmed.endswith(")") or trimmed.endswith("}"):
+            # Cut back to the "(" that opens the citation group, when the
+            # group holds only citations.
+            start = trimmed.rfind(" (")
+            if start == -1:
+                start = trimmed.rfind("(")
+            group = trimmed[start:].strip()
+            leftover = _SOURCE_TAG_RE.sub("", re.sub(r"\[[^\]]*\]\(https?://[^)\s]+\)", "", group))
+            if start != -1 and not leftover.strip("() ;,&and"):
+                body = trimmed[:start]
+                continue
+        return trimmed
+
+
+def clean_brief(md: str, records: Iterable[Dict[str, Any]]) -> str:
+    """Make the model's brief safe to publish and send, by rule:
+
+    - every bullet cites one of the day's articles: a {source: X} tag is
+      replaced by that article's link, and a bullet that matches no article
+      is dropped;
+    - "High Risk Alerts" keeps only articles the analysis rated High or
+      Critical (the model sometimes files medium-risk items there);
+    - sport and celebrity stories are dropped;
+    - each article appears once: a story listed in a specific section is
+      not repeated under "Key Developments".
+    """
+    recs = [r for r in records or [] if str(r.get("url") or r.get("URL") or "").startswith("http")]
+    by_url = {str(r.get("url") or r.get("URL")): r for r in recs}
+
+    def find(line: str) -> Optional[Dict[str, Any]]:
+        for url in _URL_RE.findall(line):
+            if url in by_url:
+                return by_url[url]
+        words = _named_tokens(line)
+        best, score = None, 0
+        for r in recs:
+            shared = len(words & _named_tokens(_record_text(r)))
+            if shared > score:
+                best, score = r, shared
+        return best if score >= 2 else None
+
+    # Pass 1: sections and their bullets.
+    blocks: List[Dict[str, Any]] = []
+    current = {"title": "", "lines": []}
+    blocks.append(current)
+    for line in (md or "").split("\n"):
+        h = _HEADING_RE.match(line)
+        if h:
+            current = {"title": h.group(1), "lines": [line]}
+            blocks.append(current)
+        else:
+            current["lines"].append(line)
+
+    def is_key(title: str) -> bool:
+        return "key development" in title.lower()
+
+    def is_alert(title: str) -> bool:
+        return "risk" in title.lower() or "alert" in title.lower()
+
+    cleaned: List[Dict[str, Any]] = []
+    for block in blocks:
+        items = []
+        for line in block["lines"]:
+            if not _ITEM_RE.match(line):
+                items.append((line, None))
+                continue
+            rec = find(line)
+            if rec is None:
+                continue  # uncited: nothing to link a reader to
+            if relevance.is_off_topic(rec.get("title") or rec.get("Title"), (rec.get("analysis") or {}).get("summary")):
+                continue
+            if is_alert(block["title"]) and _risk(rec) not in _HIGH:
+                continue
+            body = _strip_citations(line)
+            if not body.endswith((".", "!", "?", "*")):
+                body += "."
+            items.append((f"{body} {_cite(rec)}  ", str(rec.get("url") or rec.get("URL"))))
+        cleaned.append({"title": block["title"], "items": items})
+
+    elsewhere = {url for b in cleaned if not is_key(b["title"]) for _, url in b["items"] if url}
+    out: List[str] = []
+    for b in cleaned:
+        seen = set()
+        for line, url in b["items"]:
+            if url and (url in seen or (is_key(b["title"]) and url in elsewhere)):
+                continue
+            if url:
+                seen.add(url)
+            out.append(line)
     return "\n".join(out)

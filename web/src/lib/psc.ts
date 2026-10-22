@@ -101,7 +101,9 @@ export function isQuarantined(record: PscRecord | null | undefined): boolean {
  */
 export function isPublic(record: PscRecord | null | undefined): boolean {
   if (!record || isQuarantined(record)) return false;
-  return sourceOf(record) !== "";
+  // "Source" only says how the row was made ("extracted", "seed"); a claim is
+  // published only with a link to the article that reported it.
+  return /^https?:\/\//.test(String(record["Source URL"] ?? "").trim());
 }
 
 export function publicRecords(records: PscRecord[]): PscRecord[] {

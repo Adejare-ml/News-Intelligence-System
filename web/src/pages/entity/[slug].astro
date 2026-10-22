@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Chain from "../../components/Chain.astro";
 import ReportTimeline from "../../components/ReportTimeline.astro";
+import Provenance from "../../components/Provenance.astro";
 import StoryCard from "../../components/StoryCard.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
@@ -42,6 +43,7 @@ const summary = e.holdings.length
 const entityLogo = logoFor([e.name]);
 ---
 <Base
+  noindex
   title={`${e.name} · AURA`}
   description={`${e.name}: reported ownership, related news, board moves and contracts, from AURA's reading of Nigerian business news.`}
 >
@@ -76,6 +78,7 @@ const entityLogo = logoFor([e.name]);
             </p>
             <Chain holding={h} />
             <ReportTimeline holding={h} />
+            <Provenance holding={h} />
           </article>
         ))}
       </div>

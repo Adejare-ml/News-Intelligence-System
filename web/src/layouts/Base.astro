@@ -12,10 +12,13 @@ import { href } from "../lib/url.ts";
 interface Props {
   title?: string;
   description?: string;
+  /** Keep the page out of search results (pages naming people as owners). */
+  noindex?: boolean;
 }
 
 const {
   title = "AURA · Who really controls Nigeria's companies",
+  noindex = false,
   description = "AURA reads Nigeria's business and regulatory news four times a day and maps who controls what: beneficial owners, board changes, procurement and regulatory actions.",
 } = Astro.props;
 
@@ -29,6 +32,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="theme-color" content="#0b0d14" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f5f1e6" media="(prefers-color-scheme: light)" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />

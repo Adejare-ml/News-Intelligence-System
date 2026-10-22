@@ -1,5 +1,6 @@
 ---
 import Chain from "./Chain.astro";
+import Provenance from "./Provenance.astro";
 import { href } from "../lib/url.ts";
 import { slugify } from "../lib/entity-key.ts";
 import { describeHolding, type Holding } from "../lib/psc.ts";
@@ -47,10 +48,11 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
     ))}
   </div>
 
+  <Provenance holding={h} />
+
   <footer class="meta">
     <span>
       Reported on {h.days} {h.days === 1 ? "day" : "days"} · latest {fmt(h.lastReported)}
-      {h.sources[0] && <> · <a class="src-link" href={h.sources[0].url} rel="noopener noreferrer" target="_blank">source ↗</a></>}
     </span>
     <a class="company-link" href={href(`entity/${slugify(h.company)}/`)}>{h.company} →</a>
   </footer>

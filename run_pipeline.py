@@ -894,6 +894,9 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         # naming someone the article never mentions is replaced by the
         # article's own title, and repeated bullets are dropped.
         generated_md = register_quality.qa_brief_headlines(generated_md, day_records)
+        # Then by rule: every bullet cites an article, alerts are only High
+        # or Critical, no sport or celebrity items, each story once.
+        generated_md = register_quality.clean_brief(generated_md, day_records)
         md = f"""{header}
 {generated_md}
 
@@ -1360,6 +1363,12 @@ def export_static_json_database():
     # graph, the cycle diff) sees only rows the site may publish: sourced
     # and not quarantined. Withheld rows stay in the sheet for review, and
     # only their counts are published.
+    # Rows saved before rows carried their article get it back when exactly
+    # one stored article names both the person and the company.
+    try:
+        psc_records = register_quality.backfill_sources(psc_records, db.get_articles())
+    except Exception as exc:
+        logger.warning(f"PSC source backfill skipped ({type(exc).__name__})")
     psc_checked = register_quality.gate(collapse_identical_rows(psc_records))
     psc_records = register_quality.public_rows(psc_checked)
     psc_withheld = register_quality.withheld_summary(psc_checked)
