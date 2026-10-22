@@ -98,25 +98,63 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
    **Pages project → Settings → Bindings → Add → D1 database**,
    variable name `DB`, database `aura`. Redeploy.
 
-### Sending (off by default)
+### Morning Brief email (Resend)
 
-Sign-ups are stored as `pending` and no email is sent until you add these
-**environment variables** to the Pages project (Settings → Variables and
-Secrets):
+Sign-ups are stored as `pending` and nothing is sent until this is set up.
+Once it is, new sign-ups get a confirmation email, and every morning after
+the 08:00 Lagos run each confirmed subscriber gets that day's brief (the
+email at `/brief/email/`), with a one-click unsubscribe link and header.
+
+How it works: the subscriber list stays in D1. The scheduler waits until
+production shows the new edition, then calls `POST /api/send-brief` with a
+shared secret; Cloudflare sends through Resend's batch API. One send per
+Lagos day, and an edition that was already sent is never sent again.
+
+**1. Verify your domain in Resend** (resend.com → Domains → Add domain).
+Use a subdomain such as `mail.yourdomain.com`. Resend lists DNS records
+(SPF and MX on `send.…`, a DKIM TXT on `resend._domainkey.…`); add them
+where your domain's DNS is managed, then wait for **Verified**.
+Then **API Keys → Create** (permission: sending access).
+
+**2. Create the database tables** (once):
+
+```
+npx wrangler d1 create aura                 # if it doesn't exist yet
+npx wrangler d1 execute aura --remote --file=web/migrations/0001_subscribers.sql
+npx wrangler d1 execute aura --remote --file=web/migrations/0002_sends.sql
+```
+
+(or paste each file into the D1 console). Then **Pages project → Settings
+→ Bindings → Add → D1 database**: variable `DB`, database `aura`.
+
+**3. Pages environment variables** (Settings → Variables and Secrets,
+Production):
 
 | Variable | Value |
 |---|---|
 | `EMAIL_PROVIDER` | `resend` |
-| `RESEND_API_KEY` | an API key from resend.com (store as a secret) |
-| `MAIL_FROM` | e.g. `AURA <brief@yourdomain.com>`, on a domain verified in Resend |
+| `RESEND_API_KEY` | the Resend API key (**Secret**) |
+| `MAIL_FROM` | `AURA Morning Brief <brief@mail.yourdomain.com>` |
 | `SITE_URL` | `https://auranews.pages.dev` |
+| `BRIEF_SEND_SECRET` | a long random string (**Secret**), e.g. `openssl rand -hex 32` |
+| `OWNER_EMAIL` | your address, for test sends |
 
-With these set, new sign-ups get a confirmation email. The daily brief's
-email layout is previewed at `/brief/email/`.
+**4. GitHub secret:** repository → Settings → Secrets and variables →
+Actions → `BRIEF_SEND_SECRET`, the same value as in step 3.
+
+**5. Ship it:** run **Actions → Promote to production** so the new
+function is live, then **Actions → Send Morning Brief**:
+
+- `dry_run`: how many confirmed subscribers would get today's brief;
+- `test`: one copy to `OWNER_EMAIL`, to check it in your inbox;
+- `send`: send today's brief now (never twice in one day).
+
+From then on the 08:00 Lagos run sends it automatically; the result is in
+that run's job summary.
 
 Subscriber emails are personal data under the Nigeria Data Protection Act
-2023: they are stored only in your D1 database, used only to send the
-brief, and removed from the sending list on unsubscribe.
+2023: they are stored only in your D1 database, never leave Cloudflare,
+are used only to send the brief, and stop receiving it on unsubscribe.
 
 ## Local development
 
