@@ -1,38 +1,39 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-22 01:25:57 (UTC)
-**Run Window:** 2026-10-22, all runs to 01:25 (run 1 of the day)
+**Generated on:** 2026-10-22 12:49:52 (UTC)
+**Run Window:** 2026-10-22, all runs to 12:49 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 5
-- **High Risk Signals:** 0
-- **Appointments Logged:** 0
+- **Total Articles Processed:** 17
+- **High Risk Signals:** 1
+- **Appointments Logged:** 1
 - **Procurement Awards:** 0
 
 ---
 
-**Intelligence Briefing: Nigerian Corporate Transparency & MDA Oversight**  
-**Report Date:** 22 October 2026  
-**Coverage:** Monitored media coverage for 22 October 2026 (up to 01:25)
-
 ### Key Developments
-
-* **Executive order yields N212bn in oil revenue**. President Bola Tinubu's executive order on petroleum revenue management has resulted in the accumulation of N211.74bn from frontier exploration and gas flaring penalties. ([The Punch](https://punchng.com/executive-order-yields-n212bn-in-oil-revenue/))  
-* **Senate panel summons NMDPRA, NNPC, NEITI over discrepancies in petrol import records**. A Nigerian Senate panel has summoned the NMDPRA, NNPC, and NEITI to address discrepancies found in petrol import records. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQajhERDk3cFNaU3ZfRU42MWV1ckJEU3pEa1N3Ylkxc2RUcVlQdXRlUzllakZGbm4tUURyaHpSTTAwcFVhdGNoWmhWUmE1NlhRQmhsaVhkeG5lZjVPWnRIMVlvRWQ3TjlxWGxRakdGUlVJVUk2LUI0dTBLTXEtdVhwSk5MUllGUUhGWlg1eFY3ejRnZzQzNG5CV1h3QlpYak9uNmpBRFVDVVd3VG9vUzVoZzlRNksyQm1sdHdja21vb0VoNkpDUkRSLWZjMlgtcjFiTzVDZW1B?oc=5))  
-* **Emefiele’s bid to remove trial judge awaits appeal verdict**. Former Central Bank of Nigeria Governor Godwin Emefiele has filed an appeal to remove the trial judge overseeing his criminal proceedings. ([The Punch](https://punchng.com/emefieles-bid-to-remove-trial-judge-awaits-appeal-verdict/))  
-* **Ebola Outbreak: Lawmakers move to amend Nigeria’s 100-year-old Quarantine Act**. Nigerian lawmakers are seeking to amend the century-old Quarantine Act in response to the Ebola outbreak to modernize public health laws. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMizAFBVV95cUxPLUM3ZE1SbmxqOVd6OXJGZEIyalJkUlNsV3BKdG1PZ0ZSWTlReUhpZTlHb0t6NEpjMWVFWmx5SWZOQllIZjBXcFk2M0ZMbHRVWU00cEJrRFNoTHNETlVVdzNjdVdxNTJvOGZ1Q2JBakx4QmpGalE0S19vckJnMUJtLVBjaEZuV3JsMkEtQTlDNlpHZlNoMHJ4VFI2dTcyNnNXQ29NYWdOWUV5bnlFT0E5ZDdoenR1QXJRN2xvM1hYUk5aNjdZUHQ0a1hZRTA?oc=5))  
+- Seplat Energy declared Effiong Okon as its new CEO, signalling a fresh leadership direction in the oil & gas sector ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5XM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5)).
+- The Guardian reports a widening digital tax regime across Africa, increasing compliance burdens for Nigerian firms ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPamduUkQ4NGJTYi1EVVZqSjB3RFh2Y1lhOTdVZ1IyVE9ZSWZ1LUxkaHVCbkZfNmZtc3JVckM2NzRvSTEzams1bDE1bHFYTmdiN1k3UnVIWGdRVHJrOGNLc0d3aW11cktkOFQ1bjhUTVJjQjJma0NlbnV1aGlCV3lvRGlsYW9tX0RVNnA3bFpUaXU1X2UwRTdsdnp6d1BOdDQ4bGRFa0VmTHVmVHM?oc=5)).
+- The diseased organ and tissue donation bill passes its first reading, a preliminary step toward a national donation framework ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxPNld3cmxPb01qUGxLNmJaWllvSzFyRTZaNlBkTzM2SHNBS1NBRExJY1BZaFJPVkx0d0xMbVl2QXFRM05CWjVIOEJMdjV4alJtakJQOFZ6emRCYlh4REJVTWVselUtcW1teDdUckkzZXMyRDkwbUwzQU12M3RrdFVNZHpYZnQzNjhoRmc?oc=5)).
+- Taraba’s mining reforms face alleged extortion claims, flagging systemic corruption risk in the state’s resource sector ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikAFBVV95cUxORGFla1RRNWMyRHhyajRNVFFXNVIwVHc5UGZTTDNtcUVLbk9yRGNUeU16UFkzdVRiZm1rYmVjTmp2c01pTDlDblhMam9TNWY1ZzZPckJRZmxzTkxjakZUOVlKaGhfZ2RvS3BFWE1jSGVJWU5hdGZBU3YwaUV0VDBndFg0clhycmxCRjd5VFEtV1Y?oc=5)).
+- A review of public projects reveals over 60,000 abandoned initiatives due to weak oversight, a critical governance failure ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMioAFBVV95cUxQVDZpamFfRFVzZnc0Z09LOGIzYTdZa0ZzTS1meWJ4LXc2alJsTW81bUNEZTI1WXdDU0FfbERkM1o4YWltXzZzNVB5UFR3Yzh2ZDBrTDNUbVJ5RGp2bzFtZHo4a2d4blNlbFJGRV9jYURWNkt1S25zUWxpUFlzWDNjaVZka0x2UnFVUW5DOEdiQ2JENFNjT3UxUXZIUkdTZUZo?oc=5)).
+- The EFCC prosecutes a fraud case involving impersonated officials behind a $700,000 scam, highlighting enforcement gaps ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNYk5jUENBd3VQQmVfSzh6S3Y0dWdjUUNLN2F5NVJrZXVMNWpxcVc1cE13a0dRbEZJWXBMeXpOa2FDX0xscmp1UDQ1YTFORHZzS0piS1N2TDJ4Rm1zOW9hejhzYVN1a1gyTU9fRm0wWExTM2M2WllhZVpySnkycGIzMzZFRFNyMDB4VHhJVUczOGxvclNwamJMcUxHVnhLc2FjaDVUekwwdGw2Q3VKTU1URVhjRUVVV0tiNjNBRWIxemcxMkVSNnFvU254TXRvbjkwQlJpWVJxTWh5b2pnOVF5X3pkNDR5SGxlWkE?oc=5)).
+- TCIPC and MARCON collaborate to improve maritime information sharing, potentially enhancing safety and compliance at sea ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWnVNcEw5ZVA5MXE3bTMtRnp3WDlPUGk2a3lXMUREMTE3TlJCSEpHQlFzY3B0NEVMRDl1cWo0aEFtRXhsaEtDUTgwSXZybHNBNnEwRUZxLU91ZlhDZ2d3OWVhWTZDYWNfd2daQ3BVYnYtMG5OQ3BDU2JyeHhsVnRReW9fLUZoYkpTV1UyNUlndzRwY0VHSU5fOGU2V3dCeU9lTUg5UExsNGNmdE5oSFNTb1l2MVE2VGhT?oc=5)).
+- NIMASA seized four vessels for Cabotage Act violations, enforcing domestic shipping policies ({source: Vanguard News}).
+- NITDA urges MDAs to adopt IPv6, signalling a push for modernization of Nigeria’s digital backbone ({source: The Guardian Nigeria News}).
+- Nasarawa and Akwa Ibom state assemblies legislate the creation of state police forces, expanding internal security powers ({source: Premium Times Nigeria}&{source: Premium Times Nigeria}).
+- JPMorgan Chase moves toward a Nigerian banking license, depositing N50 billion with the Central Bank as part of its application process ([pymnts.com](https://www.pymnts.com/news/banking/2026/jpmorgan-gets-closer-to-securing-nigerian-banking-license/)).
 
 ### High Risk Alerts
-
-* **Abuja bizman arrested over alleged $120m fraud**. The Economic and Financial Crimes Commission (EFCC) has arrested Abuja-based businessman Innocent Ezuma for allegedly defrauding a Ukrainian investor of over $120 million. ([The Punch](https://punchng.com/abuja-bizman-arrested-over-alleged-120m-fraud/))  
-* **Senate panel summons NMDPRA, NNPC, NEITI over discrepancies in petrol import records**. A Nigerian Senate panel has summoned the NMDPRA, NNPC, and NEITI to address discrepancies found in petrol import records. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQajhERDk3cFNaU3ZfRU42MWV1ckJEU3pEa1N3Ylkxc2RUcVlQdXRlUzllakZGbm4tUURyaHpSTTAwcFVhdGNoWmhWUmE1NlhRQmhsaVhkeG5lZjVPWnRIMVlvRWQ3TjlxWGxRakdGUlVJVUk2LUI0dTBLTXEtdVhwSk5MUllGUUhGWlg1eFY3ejRnZzQzNG5CV1h3QlpYak9uNmpBRFVDVVd3VG9vUzVoZzlRNksyQm1sdHdja21vb0VoNkpDUkRSLWZjMlgtcjFiTzVDZW1B?oc=5))  
+- Taraba mining extortion allegations signal a medium‑risk corruption nexus involving the state government and the executive branch ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikAFBVV95cUxORGFla1RRNWMyRHhyajRNVFFXNVIwVHc5UGZTTDNtcUVLbk9yRGNUeU16UFkzdVRiZm1rYmVjTmp2c01pTDlDblhMam9TNWY1ZzZPckJRZmxzTkxjakZUOVlKaGhfZ2RvS3BFWE1jSGVJWU5hdGZBU3YwaUV0VDBndFg0clhycmxCRjd5VFEtV1Y?oc=5)).
+- The abandonment of over 60,000 public projects points to systemic audit and oversight failure, a high‑risk governance gap ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMioAFBVV95cUxQVDZpamFfRFVzZnc0Z09LOGIzYTdZa0ZzTS1meWJ4LXc2alJsTW81bUNEZTI1WXdDU0FfbERkM1o4YWltXzZzNVB5UFR3Yzh2ZDBrTDNUbVJ5RGp2bzFtZHo4a2d4blNlbFJGRV9jYURWNkt1S25zUWxpUFlzWDNjaVZka0x2UnFVUW5DOEdiQ2JENFNjT3UxUXZIUkdTZUZo?oc=5)).
+- The EFCC fraud case involving false identities poses a medium‑risk counter‑terrorism and financial crime concern ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi6gFBVV95cUxNYk5jUENBd3VQQmVfSzh6S3Y0dWdjUUNLN2F5NVJrZXVMNWpxcVc1cE13a0dRbEZJWXBMeXpOa2FDX0xscmp1UDQ1YTFORHZzS0piS1N2TDJ4Rm1zOW9hejhzYVN1a1gyTU9fRm0wWExTM2M2WllhZVpySnkycGIzMzZFRFNyMDB4VHhJVUczOGxvclNwamJMcUxHVnhLc2FjaDVUekwwdGw2Q3VKTU1URVhjRUVVV0tiNjNBRWIxemcxMkVSNnFvU254TXRvbjkwQlJpWVJxTWh5b2pnOVF5X3pkNDR5SGxlWkE?oc=5)).
 
 ### Beneficial Ownership & PSC Disclosures
-
-The monitored reporting period contains no recorded PSC disclosures or beneficial ownership registry filings.
+No PSC disclosures or significant control holders were identified in the supplied data.
 
 ### Procurement & Board Changes
-
-The current dataset contains no notices regarding public contract awards or executive board realignments across MDAs.
+- Seplat Energy’s appointment of Effiong Okon as CEO alters board leadership in a major oil company ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5XM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5)).
+- No additional procurement decisions or board appointments were reported in the assessment period.
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

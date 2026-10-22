@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-22 01:26:40",
+  "generated": "2026-10-22 12:53:01",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2169,
-      "downloads": 42122
+      "likes": 2275,
+      "downloads": 51911
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1190,
-      "downloads": 490447
+      "likes": 1246,
+      "downloads": 512524
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 637,
-      "downloads": 2891
+      "likes": 651,
+      "downloads": 3163
     },
     {
       "id": "black-forest-labs/flux-3-image-klein",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
       "task": "image-to-image",
-      "likes": 601,
-      "downloads": 92604
-    },
-    {
-      "id": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "task": "text-to-speech",
-      "likes": 888,
-      "downloads": 15274
+      "likes": 619,
+      "downloads": 102903
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 535,
-      "downloads": 5840
+      "likes": 550,
+      "downloads": 6890
+    },
+    {
+      "id": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "task": "text-to-speech",
+      "likes": 903,
+      "downloads": 16305
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
       "task": "text-to-image",
-      "likes": 466,
-      "downloads": 4344
+      "likes": 477,
+      "downloads": 5013
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8759,
-      "downloads": 2057942
+      "likes": 8819,
+      "downloads": 2054990
     }
   ],
   "papers": [
     {
-      "title": "Ask to Distill: Learning to Synthesize Data for On-Policy Distillation",
-      "url": "https://huggingface.co/papers/2610.27450",
+      "title": "Retrieval Augmented Generation Compositionality",
+      "url": "https://huggingface.co/papers/2610.29722",
+      "upvotes": 16
+    },
+    {
+      "title": "From RL Papers to Framework Code: Inclusion and Review in Seven Open-Source Training Frameworks",
+      "url": "https://huggingface.co/papers/2610.28027",
+      "upvotes": 4
+    },
+    {
+      "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
+      "url": "https://huggingface.co/papers/2610.28827",
       "upvotes": 7
     },
     {
-      "title": "ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference",
-      "url": "https://huggingface.co/papers/2610.25519",
-      "upvotes": 2
+      "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
+      "url": "https://huggingface.co/papers/2610.26659",
+      "upvotes": 102
     },
     {
-      "title": "What Makes a Good Symbol for Hybrid Discrete-Continuous Planning?",
-      "url": "https://huggingface.co/papers/2610.23010",
-      "upvotes": 1
+      "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
+      "url": "https://huggingface.co/papers/2610.29560",
+      "upvotes": 9
     },
     {
-      "title": "Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models",
-      "url": "https://huggingface.co/papers/2603.19233",
-      "upvotes": 0
-    },
-    {
-      "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
-      "url": "https://huggingface.co/papers/2610.25459",
-      "upvotes": 1
-    },
-    {
-      "title": "Training the Whole Agent, Not Just the Model",
-      "url": "https://huggingface.co/papers/2610.28069",
-      "upvotes": 4
+      "title": "CompactSplat: Spatially Adaptive Gaussian Distribution for Feedforward Scene Reconstruction",
+      "url": "https://huggingface.co/papers/2610.13177",
+      "upvotes": 9
     }
   ]
 }
