@@ -121,12 +121,6 @@
       "risk": "Low"
     },
     {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -145,14 +139,26 @@
       "risk": "Low"
     },
     {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
+      "id": "85a88efc62db",
+      "label": "Nigeria Extractive Industries Transparency Initiative",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "85a88efc62db",
-      "label": "Nigeria Extractive Industries Transparency Initiative",
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -177,12 +183,6 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -238,6 +238,12 @@
       "id": "7cd4ee68f6fa",
       "label": "House of Representatives Committee on Home Affairs",
       "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "40ce4ff30275",
+      "label": "Godwin Emefiele",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -315,12 +321,6 @@
     {
       "id": "06c8cb034ab7",
       "label": "Alli",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "40ce4ff30275",
-      "label": "Godwin Emefiele",
       "type": "person",
       "risk": "Low"
     },
@@ -723,6 +723,12 @@
   ],
   "edges": [
     {
+      "id": "234af74126a1",
+      "from": "40ce4ff30275",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Former Governor"
+    },
+    {
       "id": "d926e4f83416",
       "from": "5476ecdab0f0",
       "to": "737f70b3bdb8",
@@ -763,12 +769,6 @@
       "from": "18bc77b97b9c",
       "to": "68419b78e6b4",
       "label": "Appointed as Minister of Aviation"
-    },
-    {
-      "id": "234af74126a1",
-      "from": "40ce4ff30275",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Former Governor"
     },
     {
       "id": "896a53d24a55",

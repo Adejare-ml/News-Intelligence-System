@@ -1,35 +1,17 @@
 {
-  "new_companies": [
-    "FSGRN",
-    "Glo",
-    "Global Cancer Body",
-    "Lagos State Butchers Association",
-    "ONDIPA",
-    "Octagram",
-    "Thor Explorations Ltd",
-    "Transactility"
-  ],
-  "new_people": [
-    "Ismaila Babalola",
-    "Unnamed Ex-Kebbi First Lady"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "Alleged N27bn Fraud: I didn't receive payment instructions from ex-governor Ishaku, but his co-accused - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPY3Z5dng2Z1dYYU5jc2poelVueXl4U2hGeElOeHptS0pERFZ4TFZJZGp3c3FJX0pQWTQ3MHAxWm43bUYwTWJWekhrQUtHSDBnNjRacEJ6V3czWWZZbnZQemh2MEFhaGZ4S1ViOUpPMkNBcFcxY0FBNUVwbFZVZjRJQkd4VXU0cTliang2VXZseGt6aXVCYTM3bERKemdzVVRSekktVWVEZDRVelAzTzd4aDNyUV84dVFCR3V3ZzVybDhxX29Kb1g1SERjMTQ0MW9oMGF5RFV2c2twYlFRaF9XejByLTROMy1NSFlVNg?oc=5",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 8,
-    "new_people": 2,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-10-21 20:37:23"
+  "generated": "2026-10-22 01:26:38"
 }
