@@ -1,33 +1,30 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-22 17:52:02 (UTC)
-**Run Window:** 2026-10-22, all runs to 17:52 (run 3 of the day)
+**Generated on:** 2026-10-22 20:29:56 (UTC)
+**Run Window:** 2026-10-22, all runs to 20:29 (run 4 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 25
-- **High Risk Signals:** 1
-- **Appointments Logged:** 1
+- **Total Articles Processed:** 32
+- **High Risk Signals:** 2
+- **Appointments Logged:** 2
 - **Procurement Awards:** 1
 
 ---
 
-# Executive Intelligence Report: Nigerian Corporate Transparency
-**Report Date:** 2026-10-22
-**Coverage:** All articles published on 2026-10-22 up to 17:52 (run 3 of the day)
+### Key Developments  
+- Governor Lawal swears in five new permanent secretaries across ministries ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMinwFBVV95cUxQLWZzT3NnSDJzTVhaQjVUNzVTaFZ1Q2U5dUdVZ0VGN2VXMzdpZ1N6U3FUSUhkS1FpSjRncklvdXV0VldjVWJNWkFwUXdRZUR3bGRtTV9TZWZieUhSeXZmMlh1WElfT1ZxMVM2QXluY1lzdm5DSHhNYzg2VU1EdW9rb05oRkFpV3Vib0wzWVpUdUtUdGFtdUhPWVRZM3V1Uzg?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMinwFBVV95cUxQLWZzT3NnSDJzTVhaQjVUNzVTaFZ1Q2U5dUdVZ0VGN2VXMzdpZ1N6U3FUSUhkS1FpSjRncklvdXV0VldjVWJNWkFwUXdRZUR3bGRtTV9TZWZieUhSeXZmMlh1WElfT1ZxMVM2QXluY1lzdm5DSHhNYzg2VU1EdW9rb05oRkFpV3Vib0wzWVpUdUtUdGFtdUhPWVRZM3V1Uzg?oc=5))  
+- NBTI unveils a $600 million innovation investment pipeline to spur biotech development ([Punch Newspapers](https://news.google.com/rss/articles/CBMiigFBVV95cUxNYkVOQ1U1eTRFVXIwc1hfRHVTRDZ4REtvVGdwWEtPbzlHSkJVbzU3LTl5alRlZnNMb1FJdHk1eHJlVlppNUpOVHNIV0VxQkJhc2E1TTd6aXpkUGtfWTZlenFwTkJMWUY3eXJENy1QQWdCV0pXQW1ZSkdSd1UwM3pJdlJBcVM0eDBkSUE?oc=5)). ([Punch Newspapers](https://news.google.com/rss/articles/CBMiigFBVV95cUxNYkVOQ1U1eTRFVXIwc1hfRHVTRDZ4REtvVGdwWEtPbzlHSkJVbzU3LTl5alRlZnNMb1FJdHk1eHJlVlppNUpOVHNIV0VxQkJhc2E1TTd6aXpkUGtfWTZlenFwTkJMWUY3eXJENy1QQWdCV0pXQW1ZSkdSd1UwM3pJdlJBcVM0eDBkSUE?oc=5))  
+- NAU commission proposes new universities in Delta and Cross River states; Senate passes the bills ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZDRMemFyVjhTRV93RHFFU3pnN1Fja3ZpOWZJMW9uNmhkQjZJVWdGZFFod25ULXo5T05KOEVDVWRTWC1XcWdmM3NCNHNMa293WFIzWlo3Qmp0ck5teEhRbk1Yczl4NVg5WE12WXVMZUFGb2dfaHJHbm10TFRxOTlZRm41eFJpbWQwNTJxZFhmRVlCcnc5X2E4TVVUQlctSW1jM04tQ1lvRXU3aU85YXFCLVlBRHRscFZval9FWmRJM2xzWGlfemRwcE55WGQwWkpiYktHRUl1TEs3THM?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZDRMemFyVjhTRV93RHFFU3pnN1Fja3ZpOWZJMW9uNmhkQjZJVWdGZFFod25ULXo5T05KOEVDVWRTWC1XcWdmM3NCNHNMa293WFIzWlo3Qmp0ck5teEhRbk1Yczl4NVg5WE12WXVMZUFGb2dfaHJHbm10TFRxOTlZRm41eFJpbWQwNTJxZFhmRVlCcnc5X2E4TVVUQlctSW1jM04tQ1lvRXU3aU85YXFCLVlBRHRscFZval9FWmRJM2xzWGlfemRwcE55WGQwWkpiYktHRUl1TEs3THM?oc=5))  
+- NIMASA detains four vessels for Cabotage breaches, reinforcing maritime regulatory compliance ([Vanguard News](https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzZ2dldCM0xxNDNfR1dQMmxGalVBNTJIVk5jLXJuQlpmcrIWB7CMdoco?oc=5)). ([Vanguard News](https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzZ2dldCM0xxNDNfR1dQMmxGalVBNTJIVk5jLXJuQlpmcklQWFFIQ0RUT2hYUTRJdm13QjFwazltSDdwLVRXQ3hLMkhkb1VwMkZ0clhqY0o1N1gyLTB4UmFfZFluQ2RidzlpVDJkSlNVVWZ4WlFxc0tlU2lEbnVxTl9WNjFuY3EyelVpdEJvVnTSAZYBQVVfeXFMTUM1TlR1aTVrU1laYzRoODhIQXBuc1g2amtHMWUxNVIzZ04wQUFMcHFOcjFOaEdOQUstS0xQTFZ1V3NQdHFpeG1NdVFNTmh3dmQ3RWlhTWJqd0ZjTWxrdGFXeHBmZkJUWi1oN3ZwR3ZfZDhtX0J6dFBXMFZzOEVlSE5lNWl6eHltWVgzTmdXTFFBVVhDNzh3?oc=5))  
+- Acton Swifts a digital infrastructure push: NITDA urges MDAs to migrate to IPv6, aligning with national digital goals ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMipAFBVV95cUxQWmtpcnFya09CevdxcQwPmhPb1lmadcA?oc=5)). ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikgFBVV95cUxOckp1UGQ4aEZlb1pVZFFCVV9STzdwcUVxRlE3ZXdhQS16MndtRXFQd2FWUmhjd0dkZlVsLTZib1JROW9pMXFFS19ob1N1eGxlYmQyc00yQUpoZEdPVURzbVl4T29kWHpDVlgxWDhVQXFTcFBrdDJlOEFIV2JPSTBJaFFsNzFGY3ViOWgzcHRQZGlBQQ?oc=5))  
 
-### Key Developments
-* **Senate probes Tansian University over alleged regulatory violations |**. The Nigerian Senate is conducting a probe into Tansian University following allegations of regulatory violations. ([The Eagle Online](https://news.google.com/rss/articles/CBMinwFBVV95cUxQU3VUYmpEWE15TGo4TDhUOE5JSnZpT2RfRGlwQVdFTlJSVHYtMnpoNDJwczFSNnRScDNWVWVTNkppV09jWG5wUkJLQnMwTk5KdEgyWTZ3SkxFcXg3bnNoNXVtS01IS1VENU55Vlo4N2dCbnQ5NFdvLTZUNWtKZUpJT0J3VGNKd3JrZUVfZzUyN19xR2g3a0tEMEl0MDN4c3c?oc=5))  
-* **Uncertainty persists over Nigeria’s VAT e-invoicing rules — PwC**. PwC reports ongoing uncertainty regarding the implementation and rules surrounding Value Added Tax (VAT) e-invoicing in Nigeria. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYmRfSHZ1dHEzMVJLUnhuTEV2Tm5xTW1XdEU3eVhkVFBNN3R0RmtFdkhJRTVGSHVTNEpwaVJQOTBMNlFlYlFzWEVlR3EtdENwYzlHVlBqb0NEcHk5THpRd0R3TGxWQ1ZieTJIRDNFS2JhaXZxa01TY0diWGFSSFVBbDNYZ1BrTUlZ?oc=5))  
-* **Otu unveils landmark M&E Policy to track projects, funding**. A new Monitoring and Evaluation (M&E) Policy has been unveiled by Otu to enhance the tracking of projects and funding. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxQUXd2bzhQbW5TaERjNmpYYXlMOW9PbEdZQkl1RGM5a01VQ29wMUQ2QTB4cVRQTW4tS1Q4NGVlR3hiWG1mOXl3ZFlRRWtrZGNyeUNtVG5uMF9nc1lUcU8xU0RDNlpxcWFIeFgyQjFxMndFUlYxT3RlVklmZTJRUC0zNDRVa1Qwc1JEV1E?oc=5))  
+### High Risk Alerts  
+- EFCC frozen accounts related to a N1.06 bn fraud case – *risky* ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxOOVZ1NWF4aHI4ejk3ZkYzRDBnTnViMTMxTncxU3F6NFBNelBRUWRJUTJ3QnFiWTNjUEp2UWJxRjViV2hLSWxFYmhoYXEtVURSNXJFaXk1YnZNenk3M0liVW1zZmh2Vkd6OU8xR1BPazJuWlpsb0pRdzdlOWRsT3JFZ2RiUmh5R2hMVWN5UFNvekRkMldHSFBtTjNXcE9UUXBqTllwVGM3eVlIa015YlBLTmh2dv9I?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxOOVZ1NWF4aGI4ejk3ZkYzRDBnTnViMTMxTncxU3F6NFBNelBRUWRJUTJ3QnFiWTNjUEp2UWJxRjViV2hLSWxFYmhoYXEtVURTNXJFaXk1YnZNenk3M0liVW1zZmh2Vkd6OU8xR1BPazJuWlpsb0pRdzdlOWRsT3JFZ2RiUmh5R2hMVWN5UFNvekRrMldHSFBtTjNXcE9UUXBqTllwVGM3eVlIa015YlBLTmh2djlpb1RHT21vMg?oc=5))  
 
-### High Risk Alerts
+### Beneficial Ownership & PSC Disclosures  
+No publicly disclosed significant control or PSC information is present in the sourced articles.  
 
-### Beneficial Ownership & PSC Disclosures
-No person with significant control was identified in the provided data.
-
-### Procurement & Board Changes
-* **Seplat Energy appoints Effiong Okon as chief executive officer**. Seplat Energy has appointed Effiong Okon as the company's new Chief Executive Officer. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5YM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5))  
-* **Tinubu commissions section of Kano-Kaduna highway**. President Tinubu commissioned a section of the Kano-Kaduna highway. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNWpkeDM2T2tBMU92REFmWmctRzhtbWxvSi1UOUNSNDgtRmo4bnRsdzNYNWZpVHVQaVk2UW5iN3RVMl9TYUNZX1o5Sk1mUDJNbjJTT3NER3hreEpubGhVQkhYaUljUTVpX0x6N0FBTGd4dnpDTjZSUmNNNkY2LW1PS2VNTlpaWGJWMFFLaXZ6Qy1LM2o1WGR5RzZjRnUydE50ZGFBV1poWTN1Zw?oc=5))  
-* **TCIPC, MARCON partner to strengthen maritime information dissemination**. TCIPC and MARCON have entered into a partnership aimed at strengthening the dissemination of maritime information. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWnVNcEw5ZVA5MXE3bTMtRnp3WDlPUGk2a3lXMUREMTE3TlJCSEpHQlFzY3B0NEVMRDl1cWo0aEFtRXhsaEtDUTgwSXZybHNBNnEwRUZxLU91ZlhDZ2d3OWVhWTZDYWNfd2daQ3BVYnYtMG5OQ3BDU2JyeHhsVnRReW9fLUZoYkpTV1UyNUlndzRwY0VHSU5fOGU2V3dCeU9lTUg5UExsNGNmdE5oSFNTb1l2MVE2VGhT?oc=5))  
+### Procurement & Board Changes  
+- Seplat Energy appoints new CEO Effiong Okon, signalling executive turnover ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5YM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5YM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5))  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

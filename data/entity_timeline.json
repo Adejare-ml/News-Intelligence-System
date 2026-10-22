@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 85,
+      "total_mentions": 86,
       "points": [
         {
           "week": "2026-09-07",
@@ -43,8 +43,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 12,
-          "avg_risk": 22.1,
+          "mentions": 13,
+          "avg_risk": 21.2,
           "max_risk": 40
         }
       ]
@@ -95,7 +95,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 65,
+      "total_mentions": 66,
       "points": [
         {
           "week": "2026-09-07",
@@ -135,8 +135,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 8,
-          "avg_risk": 61.9,
+          "mentions": 9,
+          "avg_risk": 62.2,
           "max_risk": 85
         }
       ]
@@ -377,7 +377,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-14",
@@ -405,8 +405,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 6,
-          "avg_risk": 29.2,
+          "mentions": 7,
+          "avg_risk": 27.9,
           "max_risk": 85
         }
       ]
@@ -907,6 +907,31 @@
       ]
     },
     {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 18.8,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "osun state government",
       "label": "Osun State Government",
       "total_mentions": 8,
@@ -959,31 +984,6 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 18.8,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -5467,5 +5467,5 @@
       ]
     }
   ],
-  "generated": "2026-10-22 17:56:59"
+  "generated": "2026-10-22 20:32:54"
 }

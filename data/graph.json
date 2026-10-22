@@ -151,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "type": "agency",
@@ -199,6 +205,12 @@
       "risk": "Low"
     },
     {
+      "id": "947ed505ab9c",
+      "label": "National Biotechnology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -207,12 +219,6 @@
     {
       "id": "ac79f04a4e30",
       "label": "Kano State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -231,12 +237,6 @@
     {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
       "type": "agency",
       "risk": "Low"
     },
