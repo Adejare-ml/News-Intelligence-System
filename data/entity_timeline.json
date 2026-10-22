@@ -3,7 +3,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 83,
+      "total_mentions": 84,
       "points": [
         {
           "week": "2026-09-14",
@@ -37,8 +37,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 9,
-          "avg_risk": 46.7,
+          "mentions": 10,
+          "avg_risk": 48.5,
           "max_risk": 85
         }
       ]
@@ -46,7 +46,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 82,
+      "total_mentions": 83,
       "points": [
         {
           "week": "2026-09-07",
@@ -86,8 +86,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 9,
-          "avg_risk": 23.9,
+          "mentions": 10,
+          "avg_risk": 23.5,
           "max_risk": 40
         }
       ]
@@ -95,7 +95,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 63,
+      "total_mentions": 64,
       "points": [
         {
           "week": "2026-09-07",
@@ -135,7 +135,7 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 6,
+          "mentions": 7,
           "avg_risk": 65.0,
           "max_risk": 85
         }
@@ -144,7 +144,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 49,
+      "total_mentions": 50,
       "points": [
         {
           "week": "2026-09-07",
@@ -184,8 +184,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 48.3,
+          "mentions": 4,
+          "avg_risk": 41.2,
           "max_risk": 85
         }
       ]
@@ -486,40 +486,9 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 13,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 34.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 13,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-14",
@@ -547,9 +516,40 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 13,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2036,6 +2036,25 @@
       ]
     },
     {
+      "key": "godwin emefiele",
+      "label": "Godwin Emefiele",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 52.5,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "heineken lokpobiri",
       "label": "Heineken Lokpobiri",
       "total_mentions": 3,
@@ -3086,25 +3105,6 @@
       ]
     },
     {
-      "key": "godwin emefiele",
-      "label": "Godwin Emefiele",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "greenwich bank",
       "label": "Greenwich Bank",
       "total_mentions": 2,
@@ -3478,6 +3478,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "extractive industries transparency initiative",
+      "label": "Nigeria Extractive Industries Transparency Initiative",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 65
         }
       ]
     },
@@ -5434,20 +5447,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "faisal maina",
-      "label": "Faisal Maina",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
     }
   ],
-  "generated": "2026-10-21 20:37:35"
+  "generated": "2026-10-22 01:26:43"
 }

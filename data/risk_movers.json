@@ -1,12 +1,21 @@
 {
   "movers": [
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 65.0,
+      "previous_avg": 27.5,
+      "delta": 37.5,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 45.5,
+      "recent_avg": 47.3,
       "previous_avg": 23.3,
-      "delta": 22.2,
-      "recent_mentions": 10,
+      "delta": 24.0,
+      "recent_mentions": 11,
       "previous_mentions": 23
     },
     {
@@ -55,6 +64,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "federal airports authority of",
+      "label": "Federal Airports Authority of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 10.0,
+      "delta": 15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 15.0,
@@ -66,20 +84,11 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 29.3,
+      "recent_avg": 28.1,
       "previous_avg": 39.4,
-      "delta": -10.1,
-      "recent_mentions": 7,
+      "delta": -11.3,
+      "recent_mentions": 8,
       "previous_mentions": 8
-    },
-    {
-      "key": "federal airports authority of",
-      "label": "Federal Airports Authority of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 15.0,
-      "delta": 10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "ogun state government",
@@ -100,13 +109,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "kano state government",
-      "label": "Kano State Government",
-      "recent_avg": 30.0,
-      "previous_avg": 20.0,
-      "delta": 10.0,
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 17.5,
+      "previous_avg": 26.0,
+      "delta": -8.5,
       "recent_mentions": 2,
-      "previous_mentions": 1
+      "previous_mentions": 5
     },
     {
       "key": "house of representatives",
@@ -118,29 +127,11 @@
       "previous_mentions": 3
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 24.7,
-      "previous_avg": 30.3,
-      "delta": -5.6,
-      "recent_mentions": 17,
-      "previous_mentions": 16
-    },
-    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "recent_avg": 15.0,
       "previous_avg": 20.0,
       "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "ports authority",
-      "label": "Nigerian Ports Authority",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
     },
@@ -154,13 +145,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 21.7,
-      "previous_avg": 25.0,
-      "delta": -3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 4
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 25.3,
+      "previous_avg": 28.9,
+      "delta": -3.6,
+      "recent_mentions": 16,
+      "previous_mentions": 18
     },
     {
       "key": "independent national electoral commission",
@@ -174,13 +165,22 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 59.6,
+      "recent_avg": 60.0,
       "previous_avg": 57.9,
-      "delta": 1.7,
-      "recent_mentions": 12,
+      "delta": 2.1,
+      "recent_mentions": 13,
       "previous_mentions": 14
+    },
+    {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "recent_avg": 15.0,
+      "previous_avg": 16.0,
+      "delta": -1.0,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-21 20:37:35"
+  "generated": "2026-10-22 01:26:43"
 }
