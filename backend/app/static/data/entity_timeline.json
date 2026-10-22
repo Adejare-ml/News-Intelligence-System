@@ -95,7 +95,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 64,
+      "total_mentions": 65,
       "points": [
         {
           "week": "2026-09-07",
@@ -135,8 +135,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 7,
-          "avg_risk": 65.0,
+          "mentions": 8,
+          "avg_risk": 61.9,
           "max_risk": 85
         }
       ]
@@ -144,7 +144,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 50,
+      "total_mentions": 51,
       "points": [
         {
           "week": "2026-09-07",
@@ -184,8 +184,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 41.2,
+          "mentions": 5,
+          "avg_risk": 37.0,
           "max_risk": 85
         }
       ]
@@ -554,34 +554,9 @@
       ]
     },
     {
-      "key": "dangote petroleum refinery",
-      "label": "Dangote Petroleum Refinery",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 37.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-14",
@@ -609,8 +584,33 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "dangote petroleum refinery",
+      "label": "Dangote Petroleum Refinery",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 37.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 20.0,
           "max_risk": 30
         }
       ]
@@ -963,6 +963,31 @@
       ]
     },
     {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 18.8,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "total_mentions": 7,
@@ -1096,31 +1121,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 18.8,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -1828,6 +1828,31 @@
       ]
     },
     {
+      "key": "taraba state government",
+      "label": "Taraba State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "west african examinations council",
       "label": "West African Examinations Council",
       "total_mentions": 4,
@@ -2492,6 +2517,25 @@
       ]
     },
     {
+      "key": "seplat energy",
+      "label": "Seplat Energy",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -2500,25 +2544,6 @@
           "week": "2026-09-14",
           "mentions": 3,
           "avg_risk": 58.3,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "taraba state government",
-      "label": "Taraba State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 80.0,
           "max_risk": 85
         }
       ]
@@ -3776,19 +3801,6 @@
       ]
     },
     {
-      "key": "seplat energy",
-      "label": "Seplat Energy",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "shell",
       "label": "Shell",
       "total_mentions": 2,
@@ -4522,6 +4534,19 @@
           "mentions": 1,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "akwa ibom state house of assembly",
+      "label": "Akwa Ibom State House of Assembly",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -5319,6 +5344,19 @@
       ]
     },
     {
+      "key": "effiong okon",
+      "label": "Effiong Okon",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "eko power",
       "label": "Eko Power",
       "total_mentions": 1,
@@ -5421,33 +5459,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "fct high court",
-      "label": "FCT High Court",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "first e p",
-      "label": "FIRST E&P",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-22 01:26:43"
+  "generated": "2026-10-22 12:53:04"
 }

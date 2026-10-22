@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 39,
-      "mentions": 210,
+      "mentions": 211,
       "risk": {
         "Medium": 12,
         "Low": 23,
@@ -24,10 +24,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 21,
-      "mentions": 44,
+      "companies": 22,
+      "mentions": 45,
       "risk": {
-        "Low": 16,
+        "Low": 17,
         "Medium": 5
       }
     },
@@ -291,6 +291,14 @@
       "mentions": 3,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Maritime",
+      "companies": 3,
+      "mentions": 3,
+      "risk": {
+        "Low": 3
       }
     },
     {
@@ -607,14 +615,6 @@
       }
     },
     {
-      "industry": "Maritime",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -775,5 +775,5 @@
       }
     }
   ],
-  "generated": "2026-10-22 01:26:43"
+  "generated": "2026-10-22 12:53:04"
 }

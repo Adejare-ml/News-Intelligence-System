@@ -10,6 +10,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "airways",
+      "label": "Nigeria Airways",
+      "recent_avg": 15.0,
+      "previous_avg": 40.0,
+      "delta": -25.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 47.3,
@@ -17,6 +26,15 @@
       "delta": 24.0,
       "recent_mentions": 11,
       "previous_mentions": 23
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 30.0,
+      "previous_avg": 10.0,
+      "delta": 20.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "socio economic rights and accountability project",
@@ -35,15 +53,6 @@
       "delta": 18.3,
       "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 22.5,
-      "previous_avg": 40.0,
-      "delta": -17.5,
-      "recent_mentions": 4,
-      "previous_mentions": 4
     },
     {
       "key": "senate of",
@@ -73,6 +82,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "recent_avg": 20.0,
+      "previous_avg": 35.0,
+      "delta": -15.0,
+      "recent_mentions": 2,
+      "previous_mentions": 6
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 15.0,
@@ -82,22 +100,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 28.1,
-      "previous_avg": 39.4,
-      "delta": -11.3,
-      "recent_mentions": 8,
-      "previous_mentions": 8
-    },
-    {
-      "key": "ogun state government",
-      "label": "Ogun State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 10.0,
-      "delta": 10.0,
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "recent_avg": 10.0,
+      "previous_avg": 20.0,
+      "delta": -10.0,
       "recent_mentions": 2,
-      "previous_mentions": 1
+      "previous_mentions": 2
     },
     {
       "key": "content development and monitoring board",
@@ -107,6 +116,15 @@
       "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 28.1,
+      "previous_avg": 37.2,
+      "delta": -9.1,
+      "recent_mentions": 8,
+      "previous_mentions": 9
     },
     {
       "key": "lagos state government",
@@ -154,33 +172,15 @@
       "previous_mentions": 18
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 34.0,
-      "previous_avg": 31.2,
-      "delta": 2.8,
-      "recent_mentions": 5,
-      "previous_mentions": 8
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 60.0,
-      "previous_avg": 57.9,
-      "delta": 2.1,
-      "recent_mentions": 13,
-      "previous_mentions": 14
-    },
-    {
       "key": "international monetary fund",
       "label": "International Monetary Fund",
-      "recent_avg": 15.0,
-      "previous_avg": 16.0,
-      "delta": -1.0,
-      "recent_mentions": 4,
-      "previous_mentions": 5
+      "recent_avg": 13.3,
+      "previous_avg": 16.7,
+      "delta": -3.4,
+      "recent_mentions": 3,
+      "previous_mentions": 6
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-22 01:26:43"
+  "generated": "2026-10-22 12:53:04"
 }
