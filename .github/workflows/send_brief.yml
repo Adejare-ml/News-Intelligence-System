@@ -1,0 +1,31 @@
+name: Send Morning Brief
+
+# Manual control of the Morning Brief email (the 08:00 Lagos scheduler run
+# sends it automatically):
+#   dry_run  how many confirmed subscribers would get today's brief
+#   test     send one copy to OWNER_EMAIL, so you can check it in your inbox
+#   send     send today's brief now (never twice in one day)
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry_run, test or send"
+        required: true
+        default: dry_run
+        type: choice
+        options: [dry_run, test, send]
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Call the send endpoint
+        env:
+          BRIEF_SEND_SECRET: ${{ secrets.BRIEF_SEND_SECRET }}
+          MODE: ${{ inputs.mode }}
+        run: bash scripts/send_brief.sh "$MODE"

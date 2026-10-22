@@ -288,6 +288,21 @@ jobs:
           # the next run reads back if the production tag is missing.
           commit-message: "Deploying to cloudflare-pages from @ ${{ github.repository }}@${{ steps.production.outputs.sha }} (data refresh)"
 
+      # The 08:00 Lagos run emails the Morning Brief to confirmed
+      # subscribers. Cloudflare does the sending (subscribers live in D1);
+      # this waits until production serves this run's edition, then calls
+      # /api/send-brief with the shared secret. Skips cleanly while
+      # BRIEF_SEND_SECRET is unset; a failed send shows red without failing
+      # the run. See docs/CLOUDFLARE.md "Morning Brief email".
+      - name: Email the Morning Brief to subscribers
+        if: github.event.schedule == '0 7 * * *' && steps.production.outputs.built == 'true'
+        continue-on-error: true
+        env:
+          BRIEF_SEND_SECRET: ${{ secrets.BRIEF_SEND_SECRET }}
+        run: |
+          EDITION=$(grep -o 'name="aura-edition" content="[^"]*"' out-production/brief/email/index.html | sed 's/.*content="//; s/"$//')
+          bash scripts/send_brief.sh send "$EDITION"
+
       # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
       # the data commit lands with [skip ci], so this path -- the one that
       # runs four times a day -- shipped unverified. A truncated or

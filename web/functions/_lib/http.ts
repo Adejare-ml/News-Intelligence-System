@@ -5,6 +5,7 @@ export interface D1Like {
   prepare(sql: string): {
     bind(...values: unknown[]): {
       first<T = Record<string, unknown>>(): Promise<T | null>;
+      all<T = Record<string, unknown>>(): Promise<{ results: T[] }>;
       run(): Promise<unknown>;
     };
   };
@@ -17,6 +18,12 @@ export interface Env {
   RESEND_API_KEY?: string;
   MAIL_FROM?: string;
   SITE_URL?: string;
+  /** Shared with the scheduler (GitHub secret of the same name); authorises /api/send-brief. */
+  BRIEF_SEND_SECRET?: string;
+  /** Where ?test=1 sends a preview of the real brief. */
+  OWNER_EMAIL?: string;
+  /** Override for tests and local runs; defaults to https://api.resend.com. */
+  RESEND_API_BASE?: string;
 }
 
 export interface Ctx {
