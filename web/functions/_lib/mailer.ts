@@ -1,10 +1,13 @@
 /**
- * Outbound email for the Morning Brief sign-up flow.
+ * Outbound email for the Morning Brief sign-up flow and the daily brief.
  *
  * Sending is OFF until EMAIL_PROVIDER is set in the Pages project's
- * environment variables. Supported today: "resend" (with RESEND_API_KEY
- * and MAIL_FROM on a domain verified in Resend). With no provider, sign-ups
- * are stored as pending and nothing is sent.
+ * environment variables. Supported:
+ *   "resend"  RESEND_API_KEY, and MAIL_FROM on a domain verified in Resend.
+ *   "brevo"   BREVO_API_KEY, and MAIL_FROM on a sender verified in Brevo.
+ *             No domain needed: Brevo sends unauthenticated free-mail
+ *             senders from its own domain.
+ * With no provider, sign-ups are stored as pending and nothing is sent.
  */
 import type { Env } from "./http.ts";
 
@@ -15,14 +18,48 @@ export interface Mail {
   text: string;
 }
 
+type Provider = "resend" | "brevo";
+
+export function provider(env: Env): Provider | null {
+  if (!env.MAIL_FROM) return null;
+  if (env.EMAIL_PROVIDER === "resend" && env.RESEND_API_KEY) return "resend";
+  if (env.EMAIL_PROVIDER === "brevo" && env.BREVO_API_KEY) return "brevo";
+  return null;
+}
+
 export function sendingEnabled(env: Env): boolean {
-  return env.EMAIL_PROVIDER === "resend" && Boolean(env.RESEND_API_KEY && env.MAIL_FROM);
+  return provider(env) !== null;
 }
 
 const apiBase = (env: Env) => (env.RESEND_API_BASE || "https://api.resend.com").replace(/\/$/, "");
+const brevoBase = (env: Env) => (env.BREVO_API_BASE || "https://api.brevo.com").replace(/\/$/, "");
+
+/** "AURA Morning Brief <brief@example.org>" -> { name, email }. */
+export function parseFrom(from: string): { name?: string; email: string } {
+  const m = from.match(/^\s*"?([^"<]*?)"?\s*<([^>]+)>\s*$/);
+  if (!m) return { email: from.trim() };
+  return m[1] ? { name: m[1], email: m[2].trim() } : { email: m[2].trim() };
+}
+
+const brevoHeaders = (env: Env) => ({ "api-key": env.BREVO_API_KEY!, "Content-Type": "application/json", Accept: "application/json" });
 
 export async function send(env: Env, mail: Mail): Promise<boolean> {
-  if (!sendingEnabled(env)) return false;
+  const via = provider(env);
+  if (!via) return false;
+  if (via === "brevo") {
+    const res = await fetch(`${brevoBase(env)}/v3/smtp/email`, {
+      method: "POST",
+      headers: brevoHeaders(env),
+      body: JSON.stringify({
+        sender: parseFrom(env.MAIL_FROM!),
+        to: [{ email: mail.to }],
+        subject: mail.subject,
+        htmlContent: mail.html,
+        textContent: mail.text,
+      }),
+    });
+    return res.ok;
+  }
   const res = await fetch(`${apiBase(env)}/emails`, {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
@@ -146,18 +183,44 @@ export function batchPayload(from: string, mails: BriefMail[]) {
   }));
 }
 
-/** Sends up to 100 emails per Resend batch call. Returns how many were accepted and how many failed. */
+/**
+ * The Brevo batch payload: one message version per subscriber, each with
+ * its own HTML (and so its own unsubscribe link). The shared base content
+ * carries no subscriber's link.
+ */
+export function brevoBatchPayload(from: string, mails: BriefMail[]) {
+  return {
+    sender: parseFrom(from),
+    subject: mails[0]?.subject ?? "",
+    htmlContent: "<p>AURA Morning Brief</p>",
+    messageVersions: mails.map((m) => ({ to: [{ email: m.to }], subject: m.subject, htmlContent: m.html })),
+  };
+}
+
+/**
+ * Sends the brief in batches (Resend: 100 per call; Brevo: 50 per call).
+ * Few calls per run, well inside a Pages Function's subrequest limit.
+ * Returns how many were accepted and how many failed.
+ */
 export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: number; failed: number }> {
-  if (!sendingEnabled(env)) return { sent: 0, failed: mails.length };
+  const via = provider(env);
+  if (!via) return { sent: 0, failed: mails.length };
   let sent = 0;
   let failed = 0;
-  for (const group of chunk(mails, 100)) {
+  for (const group of chunk(mails, via === "brevo" ? 50 : 100)) {
     try {
-      const res = await fetch(`${apiBase(env)}/emails/batch`, {
-        method: "POST",
-        headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-        body: JSON.stringify(batchPayload(env.MAIL_FROM!, group)),
-      });
+      const res =
+        via === "brevo"
+          ? await fetch(`${brevoBase(env)}/v3/smtp/email`, {
+              method: "POST",
+              headers: brevoHeaders(env),
+              body: JSON.stringify(brevoBatchPayload(env.MAIL_FROM!, group)),
+            })
+          : await fetch(`${apiBase(env)}/emails/batch`, {
+              method: "POST",
+              headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
+              body: JSON.stringify(batchPayload(env.MAIL_FROM!, group)),
+            });
       if (res.ok) sent += group.length;
       else failed += group.length;
     } catch {
