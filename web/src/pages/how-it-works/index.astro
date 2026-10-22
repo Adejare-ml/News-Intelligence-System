@@ -133,7 +133,7 @@ const patterns = [
         <dl class="mini" data-reveal>
           <div><dd class="num">{fmt(gate.checked)}</dd><dt>ownership claims extracted</dt></div>
           <div><dd class="num">{fmt(gate.published ?? 0)}</dd><dt>passed and published</dt></div>
-          <div><dd class="num">{fmt((gate.unsourced ?? 0) + (gate.implausible ?? 0))}</dd><dt>withheld ({gate.unsourced ?? 0} with no source, {gate.implausible ?? 0} implausible)</dt></div>
+          <div><dd class="num">{fmt((gate.unsourced ?? 0) + (gate.implausible ?? 0))}</dd><dt>withheld ({gate.unsourced ?? 0} with no source link, {gate.implausible ?? 0} implausible)</dt></div>
         </dl>
       ) : null}
     </div>

@@ -16,10 +16,12 @@ export function GET({ site }: { site?: URL }) {
     articles: data.articles(),
     contracts: data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract),
   });
+  // The register and entity pages name people as owners from news reporting;
+  // they carry noindex and stay out of the sitemap.
+  void entities;
   const paths = [
-    ...SECTIONS.map((s) => s.path),
+    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/"),
     ...listEditions().map((e) => `brief/${e.slug}/`),
-    ...entities.map((e) => `entity/${e.slug}/`),
   ];
   const urls = paths.map((p) => `  <url><loc>${new URL(href(p), base).toString()}</loc></url>`).join("\n");
   return new Response(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`, {

@@ -67,8 +67,8 @@ import { groupHoldings } from "./psc.ts";
 
 describe("entities", () => {
   const holdings = groupHoldings([
-    { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Percentage: "27.49%", Source: "extracted" },
-    { "Person Name": "Femi Otedola", Company: "Geregu Power Plc", Date: "2026-08-01", Percentage: "", Source: "extracted" },
+    { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Percentage: "27.49%", Source: "extracted", "Source URL": "https://punchng.com/report/" },
+    { "Person Name": "Femi Otedola", Company: "Geregu Power Plc", Date: "2026-08-01", Percentage: "", Source: "extracted", "Source URL": "https://punchng.com/report/" },
   ]);
   const entities = buildEntities({
     holdings,

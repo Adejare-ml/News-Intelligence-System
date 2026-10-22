@@ -1,0 +1,44 @@
+---
+/**
+ * Where a holding comes from, on every card that shows one: the outlet that
+ * reported it, that it is not checked against the CAC register, and how to
+ * ask for a correction.
+ */
+import type { Holding } from "../lib/psc.ts";
+import { correctionUrl } from "../lib/corrections.ts";
+
+interface Props {
+  holding: Holding;
+}
+const { holding: h } = Astro.props;
+const src = h.sources[0];
+const outlet = src?.publisher || "a news report";
+---
+<p class="provenance">
+  {src ? (
+    <>Reported by <a href={src.url} rel="noopener noreferrer" target="_blank">{outlet} ↗</a>{h.sources.length > 1 && ` and ${h.sources.length - 1} more`}</>
+  ) : (
+    <>No source article on file</>
+  )}
+  {h.hasFilingRef ? ", with a CAC filing reference on record." : ", not verified with the CAC register."}
+  {" "}<a class="fix" href={correctionUrl(`${h.person} / ${h.company}`)} rel="noopener noreferrer" target="_blank">Report an error</a>
+</p>
+
+<style>
+  .provenance {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+  .provenance a {
+    color: var(--royal-ink);
+    font-weight: 560;
+  }
+  .provenance .fix {
+    color: var(--muted);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

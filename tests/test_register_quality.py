@@ -10,8 +10,11 @@ def row(**kw):
         "Person Name": "Femi Otedola", "Company": "First HoldCo", "Percentage": "",
         "Board Role": "", "Nature of Control": "Ownership of shares",
         "Source": "extracted", "Date": "2026-08-07", "Intermediate Entities": "Direct Holding",
-        "Regulatory Filing Ref": "",
+        "Regulatory Filing Ref": "", "Source URL": "https://punchng.com/otedola-firstholdco/",
     }
+    # The older tests mark a row unsourced with Source=""; that now means no link too.
+    if kw.get("Source") == "" and "Source URL" not in kw:
+        kw["Source URL"] = ""
     base.update(kw)
     return base
 
@@ -199,3 +202,84 @@ class TestPublicExport:
     def test_unannotated_rows_are_judged_too(self):
         assert q.is_public(row()) is True
         assert q.is_public(row(Source="")) is False
+
+
+class TestSourceLink:
+    def test_extracted_label_is_not_a_source(self):
+        # Every row the live export shipped said Source="extracted" and had no link.
+        assert "unsourced" in q.quality_flags(row(**{"Source URL": ""}))
+        assert q.is_public(q.annotate([row(**{"Source URL": ""})])[0]) is False
+
+    def test_link_makes_it_sourced(self):
+        assert "unsourced" not in q.quality_flags(row(Source="extracted"))
+
+    def test_backfill_attaches_the_one_matching_article(self):
+        articles = [
+            {"URL": "https://punchng.com/a/", "Title": "Otedola raises stake in First HoldCo", "Source": "The Punch", "Summary": ""},
+            {"URL": "https://punchng.com/b/", "Title": "Dangote refinery output rises", "Source": "The Punch", "Summary": ""},
+        ]
+        out = q.backfill_sources([row(**{"Source URL": ""})], articles)
+        assert out[0]["Source URL"] == "https://punchng.com/a/"
+        assert out[0]["Publisher"] == "The Punch"
+
+    def test_backfill_leaves_ambiguous_rows_unlinked(self):
+        articles = [
+            {"URL": "https://a.ng/1", "Title": "Femi Otedola and First HoldCo", "Source": "A"},
+            {"URL": "https://b.ng/2", "Title": "First HoldCo: Femi Otedola again", "Source": "B"},
+        ]
+        assert q.backfill_sources([row(**{"Source URL": ""})], articles)[0]["Source URL"] == ""
+
+    def test_backfill_needs_both_names(self):
+        articles = [{"URL": "https://a.ng/1", "Title": "Femi Otedola buys a house", "Source": "A"}]
+        assert q.backfill_sources([row(**{"Source URL": ""})], articles)[0]["Source URL"] == ""
+
+
+def rec(url, title, risk="Medium", source="The Punch", summary=""):
+    return {"url": url, "title": title, "source": source, "analysis": {"risk_level": risk, "summary": summary}}
+
+
+class TestCleanBrief:
+    RECS = [
+        rec("https://punchng.com/seplat/", "Seplat names Effiong Okon as CEO", "Medium", "Premium Times"),
+        rec("https://punchng.com/efcc/", "EFCC arrests Abuja businessman over $120m fraud", "High"),
+        rec("https://punchng.com/taraba/", "Taraba mining extortion claims", "Medium", "The Guardian"),
+        rec("https://vanguardngr.com/nimasa/", "NIMASA seizes four vessels for Cabotage Act breaches", "Medium", "Vanguard News"),
+        rec("https://punchng.com/osimhen/", "Osimhen scores twice for Napoli", "Low"),
+    ]
+
+    def test_source_tag_becomes_a_link(self):
+        md = "### Key Developments\n* NIMASA seized four vessels for Cabotage Act violations ({source: Vanguard News})."
+        out = q.clean_brief(md, self.RECS)
+        assert "{source" not in out
+        assert "([Vanguard News](https://vanguardngr.com/nimasa/))" in out
+
+    def test_uncited_bullet_is_dropped(self):
+        md = "### Key Developments\n* Something nobody reported happened in Lagos today."
+        assert "nobody reported" not in q.clean_brief(md, self.RECS)
+
+    def test_alerts_keep_only_high_risk(self):
+        md = ("### High Risk Alerts\n"
+              "* The EFCC arrested a businessman ([The Punch](https://punchng.com/efcc/)).\n"
+              "* Taraba mining extortion is a medium-risk concern ([The Guardian](https://punchng.com/taraba/)).")
+        out = q.clean_brief(md, self.RECS)
+        assert "EFCC" in out and "Taraba" not in out
+
+    def test_story_not_repeated_under_key_developments(self):
+        md = ("### Key Developments\n"
+              "* Seplat named a new CEO ([Premium Times](https://punchng.com/seplat/)).\n"
+              "* The EFCC arrested a businessman ([The Punch](https://punchng.com/efcc/)).\n"
+              "### High Risk Alerts\n"
+              "* The EFCC arrested a businessman ([The Punch](https://punchng.com/efcc/)).")
+        out = q.clean_brief(md, self.RECS)
+        assert out.count("punchng.com/efcc/") == 1
+        assert out.index("High Risk Alerts") < out.index("punchng.com/efcc/")
+        assert "punchng.com/seplat/" in out
+
+    def test_sport_is_dropped(self):
+        md = "### Key Developments\n* Osimhen scored twice for Napoli ([The Punch](https://punchng.com/osimhen/))."
+        assert "Osimhen" not in q.clean_brief(md, self.RECS)
+
+    def test_headings_and_paragraphs_survive(self):
+        md = "### Beneficial Ownership & PSC Disclosures\n\nNo PSC disclosures were reported."
+        out = q.clean_brief(md, self.RECS)
+        assert "### Beneficial Ownership" in out and "No PSC disclosures" in out
