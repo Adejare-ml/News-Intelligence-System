@@ -98,6 +98,10 @@
       "label": "Nigerian Exchange Group"
     },
     {
+      "key": "extractive industries transparency initiative",
+      "label": "Nigeria Extractive Industries Transparency Initiative"
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation"
     },
@@ -352,6 +356,11 @@
       "weight": 4
     },
     {
+      "a": "central bank of",
+      "b": "godwin emefiele",
+      "weight": 3
+    },
+    {
       "a": "department of state services",
       "b": "economic and financial crimes commission",
       "weight": 3
@@ -458,11 +467,6 @@
     },
     {
       "a": "central bank of",
-      "b": "godwin emefiele",
-      "weight": 2
-    },
-    {
-      "a": "central bank of",
       "b": "international monetary fund",
       "weight": 2
     },
@@ -524,6 +528,16 @@
     {
       "a": "ekiti state government",
       "b": "oyebanji",
+      "weight": 2
+    },
+    {
+      "a": "extractive industries transparency initiative",
+      "b": "midstream and downstream petroleum regulatory authority",
+      "weight": 2
+    },
+    {
+      "a": "extractive industries transparency initiative",
+      "b": "national petroleum company",
       "weight": 2
     },
     {
@@ -607,6 +621,11 @@
       "weight": 2
     },
     {
+      "a": "midstream and downstream petroleum regulatory authority",
+      "b": "national petroleum company",
+      "weight": 2
+    },
+    {
       "a": "nasir el rufai",
       "b": "state security service",
       "weight": 2
@@ -637,5 +656,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-21 20:37:35"
+  "generated": "2026-10-22 01:26:43"
 }

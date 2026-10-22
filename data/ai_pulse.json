@@ -1,64 +1,84 @@
 {
-  "generated": "2026-10-21 20:37:28",
+  "generated": "2026-10-22 01:26:40",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2138,
+      "likes": 2169,
       "downloads": 42122
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1175,
+      "likes": 1190,
       "downloads": 490447
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 632,
+      "likes": 637,
       "downloads": 2891
-    },
-    {
-      "id": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "task": "text-to-speech",
-      "likes": 882,
-      "downloads": 15274
     },
     {
       "id": "black-forest-labs/flux-3-image-klein",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
       "task": "image-to-image",
-      "likes": 597,
+      "likes": 601,
       "downloads": 92604
+    },
+    {
+      "id": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "task": "text-to-speech",
+      "likes": 888,
+      "downloads": 15274
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 528,
+      "likes": 535,
       "downloads": 5840
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
       "task": "text-to-image",
-      "likes": 462,
+      "likes": 466,
       "downloads": 4344
     },
     {
-      "id": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "task": "feature-extraction",
-      "likes": 2801,
-      "downloads": 179734
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 8759,
+      "downloads": 2057942
     }
   ],
   "papers": [
+    {
+      "title": "Ask to Distill: Learning to Synthesize Data for On-Policy Distillation",
+      "url": "https://huggingface.co/papers/2610.27450",
+      "upvotes": 7
+    },
+    {
+      "title": "ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference",
+      "url": "https://huggingface.co/papers/2610.25519",
+      "upvotes": 2
+    },
+    {
+      "title": "What Makes a Good Symbol for Hybrid Discrete-Continuous Planning?",
+      "url": "https://huggingface.co/papers/2610.23010",
+      "upvotes": 1
+    },
+    {
+      "title": "Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models",
+      "url": "https://huggingface.co/papers/2603.19233",
+      "upvotes": 0
+    },
     {
       "title": "BiDex-100: A Comprehensive Benchmark for Bimanual Dexterous Manipulation Across 100+ Simulation Tasks",
       "url": "https://huggingface.co/papers/2610.25459",
@@ -67,26 +87,6 @@
     {
       "title": "Training the Whole Agent, Not Just the Model",
       "url": "https://huggingface.co/papers/2610.28069",
-      "upvotes": 4
-    },
-    {
-      "title": "Axiomatic World Modeling for Physics Reasoning",
-      "url": "https://huggingface.co/papers/2610.24519",
-      "upvotes": 1
-    },
-    {
-      "title": "World Models with Configurable Perception",
-      "url": "https://huggingface.co/papers/2610.27914",
-      "upvotes": 1
-    },
-    {
-      "title": "On the Tip of the Tongue: First-Token Cueing as a Behavioral Probe of Recall Failures in LLMs",
-      "url": "https://huggingface.co/papers/2610.23400",
-      "upvotes": 3
-    },
-    {
-      "title": "Self-Credit: Credit Assignment for Long-Horizon Agentic RL via Intra-group Rescaling",
-      "url": "https://huggingface.co/papers/2610.28388",
       "upvotes": 4
     }
   ]
