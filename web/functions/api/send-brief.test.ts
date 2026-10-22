@@ -1,7 +1,7 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost, sameSecret, lagosDay, readMeta } from "./send-brief.ts";
-import { personalise, htmlToText, batchPayload, chunk } from "../_lib/mailer.ts";
+import { personalise, htmlToText, batchPayload, chunk, decodeEntities } from "../_lib/mailer.ts";
 import type { Env } from "../_lib/http.ts";
 
 const SECRET = "s3cret-for-tests-0123456789";
@@ -164,6 +164,9 @@ test("helpers", () => {
   assert.equal(readMeta(TEMPLATE, "aura-edition"), "20261022-074512");
   assert.equal(personalise('<a href="{{unsubscribe_url}}">x</a>', "https://x/u?token=1&a=2"), '<a href="https://x/u?token=1&amp;a=2">x</a>');
   assert.equal(htmlToText("<p>One &amp; two</p><p>Three</p>"), "One & two\nThree");
+  assert.equal(htmlToText("<head><title>x</title><style>p{}</style></head><body><p>Hi</p><script>bad()</script></body>"), "Hi");
+  assert.equal(htmlToText('<a href="https://a.b/?x=1&amp;y=2">Go</a>'), "Go (https://a.b/?x=1&y=2)");
+  assert.equal(decodeEntities("&amp;lt;"), "&lt;", "decoded once, never twice");
   assert.deepEqual(chunk([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
   assert.equal(batchPayload("F", [{ to: "x@y.z", subject: "s", html: "h", text: "t", unsubscribe: "u" }])[0].headers["List-Unsubscribe"], "<u>");
 });

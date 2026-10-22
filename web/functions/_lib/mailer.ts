@@ -63,23 +63,64 @@ export function personalise(html: string, unsubscribe: string): string {
   return html.split("{{unsubscribe_url}}").join(unsubscribe.replace(/&/g, "&amp;"));
 }
 
-/** A readable plain-text part for clients that do not show HTML. */
+const ENTITIES: Record<string, string> = {
+  amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", "#x27": "'", apos: "'", nbsp: " ", rsquo: "’", lsquo: "‘", mdash: "—", ndash: "–", middot: "·",
+};
+
+/** Decodes the few named and numeric entities the template uses, in one pass (never twice). */
+export function decodeEntities(text: string): string {
+  return text.replace(/&(#\d+|#x[0-9a-f]+|[a-z]+);/gi, (match, name: string) => {
+    const key = name.toLowerCase();
+    if (key in ENTITIES) return ENTITIES[key];
+    if (key.startsWith("#x")) return String.fromCodePoint(parseInt(key.slice(2), 16));
+    if (key.startsWith("#")) return String.fromCodePoint(parseInt(key.slice(1), 10));
+    return match;
+  });
+}
+
+const BLOCK_END = new Set(["tr", "p", "div", "li", "h1", "h2", "h3", "h4", "h5", "h6", "table"]);
+const SKIP = new Set(["head", "style", "script", "title"]);
+
+/**
+ * A readable plain-text part for clients that do not show HTML. A small
+ * tag scanner, not regex stripping: text outside tags is kept, links keep
+ * their address, block ends become line breaks, and head/style/script
+ * contents are dropped. The result is plain text, never rendered as HTML.
+ */
 export function htmlToText(html: string): string {
-  return html
-    .replace(/<(script|style|head)[\s\S]*?<\/\1>/gi, "")
-    .replace(/<a [^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_m, href, label) => `${label.replace(/<[^>]+>/g, "").trim()} (${href})`)
-    .replace(/<\/(tr|p|div|h[1-6]|li)>/gi, "\n")
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&rsquo;|&#x27;/g, "’")
+  let out = "";
+  let skipping = "";
+  let href = "";
+  let i = 0;
+  while (i < html.length) {
+    const lt = html.indexOf("<", i);
+    const textEnd = lt === -1 ? html.length : lt;
+    if (!skipping) out += html.slice(i, textEnd);
+    if (lt === -1) break;
+    const gt = html.indexOf(">", lt + 1);
+    if (gt === -1) break;
+    const tag = html.slice(lt + 1, gt);
+    const closing = tag.startsWith("/");
+    const name = (closing ? tag.slice(1) : tag).trim().split(/[\s/]/)[0].toLowerCase();
+    if (skipping) {
+      if (closing && name === skipping) skipping = "";
+    } else if (!closing && SKIP.has(name)) {
+      skipping = name;
+    } else if (!closing && name === "a") {
+      const m = tag.match(/href="([^"]*)"/i);
+      href = m ? decodeEntities(m[1]) : "";
+    } else if (closing && name === "a") {
+      if (href && /^https?:/.test(href)) out += ` (${href})`;
+      href = "";
+    } else if (name === "br" || (closing && BLOCK_END.has(name))) {
+      out += "\n";
+    }
+    i = gt + 1;
+  }
+  return decodeEntities(out)
     .split("\n")
     .map((line) => line.replace(/\s+/g, " ").trim())
-    .filter((line, i, all) => line || (all[i - 1] ?? "") !== "")
+    .filter((line, idx, all) => line || (all[idx - 1] ?? "") !== "")
     .join("\n")
     .trim();
 }

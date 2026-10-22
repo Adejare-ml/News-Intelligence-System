@@ -14,7 +14,7 @@
  */
 import { json, type Ctx, type Env } from "../_lib/http.ts";
 import {
-  htmlToText, personalise, sendBatch, sendingEnabled, unsubscribeUrl, type BriefMail,
+  decodeEntities, htmlToText, personalise, sendBatch, sendingEnabled, unsubscribeUrl, type BriefMail,
 } from "../_lib/mailer.ts";
 
 /** Constant-time string comparison, so the secret cannot be guessed by timing. */
@@ -40,7 +40,7 @@ export function lagosDay(now: Date): string {
 
 export function readMeta(html: string, name: string): string {
   const m = html.match(new RegExp(`<meta[^>]+name="${name}"[^>]+content="([^"]*)"`, "i"));
-  return m ? m[1].replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'") : "";
+  return m ? decodeEntities(m[1]) : "";
 }
 
 export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
