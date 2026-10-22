@@ -48,11 +48,13 @@ const itemLink = (sectionId: string | undefined, item: BriefItem, items: BriefIt
           <div>
             <h3 class="h3"><a class="item-link" href={itemLink(key?.id, item, key?.items || [])}>{item.lead || item.rest}</a></h3>
             {item.lead && item.rest && <p>{item.rest}</p>}
-            {item.source && (
+            {item.source && (item.source.url ? (
               <a class="source" href={item.source.url} rel="noopener noreferrer" target="_blank">
                 {item.source.name} <Icon name="arrowUpRight" size={14} />
               </a>
-            )}
+            ) : (
+              <span class="source">{item.source.name}</span>
+            ))}
           </div>
         </li>
       ))}

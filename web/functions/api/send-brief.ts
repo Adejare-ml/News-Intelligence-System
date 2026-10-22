@@ -43,6 +43,23 @@ export function readMeta(html: string, name: string): string {
   return m ? decodeEntities(m[1]) : "";
 }
 
+/**
+ * The site adds its prefetch script to every page, the email page too. Mail
+ * clients never run it, and some flag scripts, so each <script> element is
+ * cut out (repeatedly, until none is left) before sending.
+ */
+export function stripScripts(html: string): string {
+  let out = html;
+  for (;;) {
+    const lower = out.toLowerCase();
+    const start = lower.indexOf("<script");
+    if (start === -1) return out;
+    const close = lower.indexOf("</script>", start);
+    const end = close === -1 ? out.length : close + "</script>".length;
+    out = out.slice(0, start) + out.slice(end);
+  }
+}
+
 export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   if (!env.BRIEF_SEND_SECRET) return json({ error: "Sending is not configured (BRIEF_SEND_SECRET)." }, 503);
   if (!authorised(request, env)) return json({ error: "Not authorised." }, 401);
@@ -57,7 +74,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   // The email is the page the site built from this edition's data.
   const templateRes = await env.ASSETS.fetch(new Request(new URL("/brief/email/", url.origin)));
   if (!templateRes.ok) return json({ error: "The email template page is missing." }, 500);
-  const template = await templateRes.text();
+  const template = stripScripts(await templateRes.text());
   const edition = readMeta(template, "aura-edition");
   const subject = readMeta(template, "aura-subject") || "AURA Morning Brief";
   if (!edition) return json({ error: "The template does not name its edition." }, 500);

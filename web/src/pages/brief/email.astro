@@ -1,11 +1,16 @@
 ---
 /**
  * The Morning Brief as an email: table layout and inline styles, the way
- * mail clients need it. This is the template the sender will use once
- * sending is switched on, and a preview of it in the meantime.
+ * mail clients need it. /api/send-brief sends this page, so what it shows is
+ * what subscribers get.
+ *
+ * Editing for the inbox, not the site: alerts first, each story once (the
+ * model often repeats an alert under Key Developments), short publisher
+ * links instead of raw URLs, and sections with nothing new folded into one
+ * line.
  */
 import * as data from "../../lib/data.ts";
-import { parseBrief, isQuietItem } from "../../lib/brief.ts";
+import { parseBrief, isQuietItem, type BriefItem, type BriefSection } from "../../lib/brief.ts";
 import { listEditions } from "../../lib/archive.ts";
 import { lagosDate } from "../../lib/edition.ts";
 import { groupHoldings, describeHolding } from "../../lib/psc.ts";
@@ -18,10 +23,48 @@ const editionId = latest?.slug ?? "";
 const subject = `AURA Morning Brief · ${lagosDate(when)}`;
 const site = (Astro.site?.toString() ?? "https://auranews.pages.dev/").replace(/\/$/, "") + import.meta.env.BASE_URL.replace(/\/$/, "");
 const featured = groupHoldings(data.psc()).filter((h) => h.stake !== null).sort((a, b) => b.reports.length - a.reports.length)[0];
+
+const MAX_ITEMS = 8;
+const isAlert = (s: BriefSection) => /risk|alert/i.test(s.title);
+const ordered = [...brief.sections.filter(isAlert), ...brief.sections.filter((s) => !isAlert(s))];
+
+// One key per story: its first source link, else the start of its text.
+const storyKey = (item: BriefItem) =>
+  item.sources.find((x) => x.url)?.url || (item.lead || item.rest).toLowerCase().replace(/[^a-z0-9]+/g, " ").slice(0, 60);
+const seen = new Set<string>();
+const sections: { title: string; alert: boolean; items: BriefItem[]; more: number }[] = [];
+const quiet: string[] = [];
+for (const s of ordered) {
+  const fresh = s.items.filter((item) => !isQuietItem(item)).filter((item) => {
+    const key = storyKey(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  if (!fresh.length) {
+    // Nothing new here, or only stories already shown above.
+    if (!s.items.some((item) => !isQuietItem(item))) quiet.push(s.title);
+    continue;
+  }
+  sections.push({ title: s.title, alert: isAlert(s), items: fresh.slice(0, MAX_ITEMS), more: Math.max(0, fresh.length - MAX_ITEMS) });
+}
+const total = sections.reduce((n, s) => n + s.items.length + s.more, 0);
+const alerts = sections.filter((s) => s.alert).reduce((n, s) => n + s.items.length + s.more, 0);
+const first = sections[0]?.items[0];
+const preheader = first ? (first.lead || first.rest).slice(0, 110) : "Today in Nigerian business, ownership and public contracts.";
+const summary = [
+  alerts ? `${alerts} risk alert${alerts === 1 ? "" : "s"}` : "",
+  `${total} ${total === 1 ? "story" : "stories"}`,
+].filter(Boolean).join(" · ");
+
 const ink = "#1b1a17";
 const muted = "#6b6558";
 const gold = "#9c7420";
 const royal = "#1e3fae";
+const alertRed = "#a3312a";
+const rule = "#e7e0cf";
+const sans = "Helvetica,Arial,sans-serif";
+const serif = "Georgia,'Times New Roman',serif";
 ---
 <!doctype html>
 <html lang="en">
@@ -31,48 +74,81 @@ const royal = "#1e3fae";
     <meta name="robots" content="noindex" />
     <meta name="aura-edition" content={editionId} />
     <meta name="aura-subject" content={subject} />
-    <title>Morning Brief email preview · AURA</title>
+    <title>{subject}</title>
   </head>
   <body style="margin:0;padding:0;background:#ece6d6;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">{preheader}</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ece6d6;">
       <tr><td align="center" style="padding:24px 12px;">
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fffcf4;border-radius:14px;">
-          <tr><td style={`padding:32px 32px 8px;font:600 12px/1.4 Helvetica,Arial,sans-serif;letter-spacing:2px;color:${gold};`}>
+          <tr><td style={`padding:32px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>
             AURA · THE MORNING BRIEF
           </td></tr>
-          <tr><td style={`padding:0 32px;font:500 30px/1.15 Georgia,'Times New Roman',serif;color:${ink};`}>
+          <tr><td style={`padding:0 32px;font:500 30px/1.15 ${serif};color:${ink};`}>
             {lagosDate(when)}
           </td></tr>
-          <tr><td style={`padding:10px 32px 20px;font:15px/1.6 Helvetica,Arial,sans-serif;color:${muted};`}>
+          <tr><td style={`padding:10px 32px 4px;font:15px/1.6 ${sans};color:${muted};`}>
             What moved in Nigerian business, ownership and public contracts since yesterday.
           </td></tr>
-          {brief.sections.map((s) => (
+          <tr><td style={`padding:0 32px 20px;font:600 13px/1.6 ${sans};color:${ink};`}>
+            {summary}
+          </td></tr>
+          {sections.map((s) => (
             <>
-              <tr><td style={`padding:20px 32px 6px;font:700 11px/1.4 Helvetica,Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:${gold};border-top:1px solid #e7e0cf;`}>
+              <tr><td style={`padding:20px 32px 4px;font:700 11px/1.4 ${sans};letter-spacing:2px;text-transform:uppercase;color:${s.alert ? alertRed : gold};border-top:1px solid ${rule};`}>
                 {s.title}
               </td></tr>
               {s.items.map((item) => (
-                <tr><td style={`padding:8px 32px;font:15px/1.6 Helvetica,Arial,sans-serif;color:${isQuietItem(item) ? muted : ink};`}>
-                  {item.lead && <strong style="font-family:Georgia,serif;font-size:17px;">{item.lead}</strong>} {item.rest}
-                  {item.source && <> <a href={item.source.url} style={`color:${royal};text-decoration:none;`}>{item.source.name} →</a></>}
+                <tr><td style="padding:10px 32px;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style={`width:4px;background:${s.alert ? alertRed : gold};border-radius:2px;`}></td>
+                      <td style={`padding:0 0 0 14px;font:15px/1.55 ${sans};color:${ink};`}>
+                        {item.lead && <div style={`font:600 16px/1.35 ${serif};color:${ink};margin:0 0 4px;`}>{item.lead}</div>}
+                        <div>{item.rest}</div>
+                        {item.sources.length > 0 && (
+                          <div style={`margin-top:6px;font:600 12px/1.4 ${sans};color:${muted};`}>
+                            {item.sources.map((src, i) => (
+                              <>
+                                {i > 0 && " · "}
+                                {src.url
+                                  ? <a href={src.url} style={`color:${royal};text-decoration:none;`}>{src.name} →</a>
+                                  : <span>{src.name}</span>}
+                              </>
+                            ))}
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  </table>
                 </td></tr>
               ))}
+              {s.more > 0 && (
+                <tr><td style={`padding:4px 32px 8px 50px;font:13px/1.5 ${sans};color:${muted};`}>
+                  <a href={`${site}/brief/`} style={`color:${royal};text-decoration:none;`}>+ {s.more} more in the full brief →</a>
+                </td></tr>
+              )}
             </>
           ))}
+          {quiet.length > 0 && (
+            <tr><td style={`padding:16px 32px 4px;font:13px/1.6 ${sans};color:${muted};border-top:1px solid ${rule};`}>
+              Nothing new today in: {quiet.join(" · ")}.
+            </td></tr>
+          )}
           {featured && (
             <tr><td style="padding:20px 32px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0b0d14;border-radius:12px;">
-                <tr><td style="padding:22px 24px;font:600 11px/1.4 Helvetica,Arial,sans-serif;letter-spacing:2px;color:#d4a84a;">OWNERSHIP STORY</td></tr>
-                <tr><td style="padding:0 24px 22px;font:500 20px/1.3 Georgia,serif;color:#ede6d8;">
+                <tr><td style={`padding:22px 24px 6px;font:600 11px/1.4 ${sans};letter-spacing:2px;color:#d4a84a;`}>OWNERSHIP STORY</td></tr>
+                <tr><td style={`padding:0 24px 22px;font:500 20px/1.3 ${serif};color:#ede6d8;`}>
                   {featured.person} {describeHolding(featured)}.
                 </td></tr>
               </table>
             </td></tr>
           )}
           <tr><td style="padding:12px 32px 28px;">
-            <a href={`${site}/brief/`} style={`display:inline-block;background:${royal};color:#ffffff;padding:12px 22px;border-radius:999px;font:600 15px Helvetica,Arial,sans-serif;text-decoration:none;`}>Read the full brief</a>
+            <a href={`${site}/brief/`} style={`display:inline-block;background:${royal};color:#ffffff;padding:12px 22px;border-radius:999px;font:600 15px ${sans};text-decoration:none;`}>Read the full brief</a>
           </td></tr>
-          <tr><td style={`padding:18px 32px 28px;font:12px/1.6 Helvetica,Arial,sans-serif;color:${muted};border-top:1px solid #e7e0cf;`}>
+          <tr><td style={`padding:18px 32px 28px;font:12px/1.6 ${sans};color:${muted};border-top:1px solid ${rule};`}>
             Compiled automatically from news reporting. Records are not the CAC register.
             You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.
             <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.

@@ -10,9 +10,11 @@ export interface BriefItem {
   lead: string;
   /** The sentence after the lead, plain text. */
   rest: string;
-  /** Source link text and URL when the bullet ends with ([Publisher](url)). */
+  /** The first source: link text and URL (url is "" when the model named a publisher without a link). */
   source: { name: string; url: string } | null;
-  /** Full bullet rendered to inline HTML. */
+  /** Every distinct source cited at the end of the bullet. */
+  sources: { name: string; url: string }[];
+  /** Full bullet rendered to inline HTML, citations left out (they render as `sources`). */
   html: string;
 }
 
@@ -32,8 +34,27 @@ export interface Brief {
   sections: BriefSection[];
 }
 
-// The model sometimes doubles the closing paren: "([Punch](url)))".
-const LINK_TAIL = /\s*\(\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)\)+\s*$/;
+/**
+ * The citations at the end of a bullet, in the shapes the model writes:
+ *   ([Punch](https://...))      ([Punch](https://...)).      ([Punch](url)))
+ *   ({source: Vanguard News})   ({source: A}&{source: B})    ([A](u1); [B](u2))
+ */
+const CITE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)|\{\s*source:\s*([^}]+?)\s*\}/g;
+const CITE_TAIL = /\s*\(((?:\s*(?:\[[^\]]+\]\(https?:\/\/[^)\s]+\)|\{\s*source:[^}]+\})\s*[,;&]?\s*(?:and\s+)?)+)\)+[.;,]?\s*$/;
+
+export function splitCitations(text: string): { body: string; sources: { name: string; url: string }[] } {
+  const tail = text.match(CITE_TAIL);
+  if (!tail) return { body: text, sources: [] };
+  const sources: { name: string; url: string }[] = [];
+  for (const m of tail[1].matchAll(CITE)) {
+    const name = (m[1] ?? m[3] ?? "").trim();
+    const url = m[2] ?? "";
+    if (name && !sources.some((s) => s.name === name && (s.url === url || !url))) sources.push({ name, url });
+  }
+  let body = text.slice(0, tail.index).trim();
+  if (!/[.!?]$/.test(body)) body += ".";
+  return { body, sources };
+}
 
 export function slugHeading(text: string): string {
   return text.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -67,17 +88,16 @@ export function inlineHtml(md: string): string {
 
 export function parseItem(line: string): BriefItem {
   const text = line.replace(/^\s*[-*]\s+/, "").replace(/\s{2,}$/, "").trim();
-  let body = text;
-  let source: BriefItem["source"] = null;
-  const tail = body.match(LINK_TAIL);
-  if (tail) {
-    source = { name: tail[1], url: tail[2] };
-    body = body.slice(0, tail.index).trim();
-  }
+  const { body, sources } = splitCitations(text);
+  const source = sources[0] ?? null;
   const bold = body.match(/^\*\*(.+?)\*\*:?\s*(.*)$/);
   const lead = bold ? bold[1].replace(/:$/, "").trim() : "";
-  const rest = (bold ? bold[2] : body).replace(/^[:.—–\s]+/, "").replace(/\*\*/g, "").trim();
-  return { lead, rest, source, html: inlineHtml(text) };
+  const rest = (bold ? bold[2] : body)
+    .replace(/^[:.—–\s]+/, "")
+    .replace(/\*\*/g, "")
+    .replace(/\[([^\]]+)\]\((?:https?:\/\/)?[^)\s]*\)/g, "$1")
+    .trim();
+  return { lead, rest, source, sources, html: inlineHtml(body) };
 }
 
 export function parseBrief(md: string): Brief {

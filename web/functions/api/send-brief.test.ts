@@ -1,6 +1,6 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
-import { onRequestPost, sameSecret, lagosDay, readMeta } from "./send-brief.ts";
+import { onRequestPost, sameSecret, lagosDay, readMeta, stripScripts } from "./send-brief.ts";
 import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom } from "../_lib/mailer.ts";
 import { fakeSmtp } from "../_lib/smtp-fake.test.ts";
 import type { Env } from "../_lib/http.ts";
@@ -9,6 +9,7 @@ const SECRET = "s3cret-for-tests-0123456789";
 const TEMPLATE = `<!doctype html><html><head>
 <meta name="aura-edition" content="20261022-074512" />
 <meta name="aura-subject" content="AURA Morning Brief · Thursday 22 October" />
+<script type="module" src="/_astro/page.abc.js"></script>
 </head><body><p>Hello &amp; welcome</p><a href="https://auranews.pages.dev/brief/">Read the full brief</a>
 <a href="{{unsubscribe_url}}">Unsubscribe</a></body></html>`;
 
@@ -229,4 +230,12 @@ test("gmailFrom keeps a matching MAIL_FROM and otherwise uses the Gmail address"
   assert.equal(gmailFrom({ GMAIL_USER: "me@gmail.com" }), "AURA Morning Brief <me@gmail.com>");
   assert.equal(gmailFrom({ GMAIL_USER: "me@gmail.com", MAIL_FROM: "AURA <me@gmail.com>" }), "AURA <me@gmail.com>");
   assert.equal(gmailFrom({ GMAIL_USER: "me@gmail.com", MAIL_FROM: "AURA <brief@other.org>" }), "AURA Morning Brief <me@gmail.com>");
+});
+
+test("scripts never reach the inbox", async () => {
+  assert.equal(stripScripts('<p>a</p><script type="module" src="/x.js"></script><p>b</p><SCRIPT>1</SCRIPT>'), "<p>a</p><p>b</p>");
+  assert.equal(stripScripts("<p>a</p><script>unclosed"), "<p>a</p>");
+  await call(env());
+  const batch = sentBodies[0] as { html: string }[];
+  assert.ok(!batch[0].html.includes("<script"));
 });
