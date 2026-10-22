@@ -266,6 +266,10 @@
       "label": "Securities and Exchange Commission (SEC) Nigeria"
     },
     {
+      "key": "senate of",
+      "label": "Senate of Nigeria"
+    },
+    {
       "key": "serap",
       "label": "SERAP"
     },
@@ -546,6 +550,11 @@
       "weight": 2
     },
     {
+      "a": "federal government of",
+      "b": "senate of",
+      "weight": 2
+    },
+    {
       "a": "glo",
       "b": "house of representatives",
       "weight": 2
@@ -656,5 +665,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-22 12:53:04"
+  "generated": "2026-10-22 17:56:59"
 }

@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "85a88efc62db",
       "label": "Nigeria Extractive Industries Transparency Initiative",
       "type": "agency",
@@ -153,6 +159,12 @@
     {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,6 +187,12 @@
       "risk": "Low"
     },
     {
+      "id": "c5ba63ec1ad8",
+      "label": "National Universities Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ccefe316d0ca",
       "label": "Nasarawa State House of Assembly",
       "type": "agency",
@@ -183,12 +201,6 @@
     {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -225,18 +237,6 @@
     {
       "id": "782563a7c2d7",
       "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -583,12 +583,6 @@
       "risk": "Medium"
     },
     {
-      "id": "77c793dd24f7",
-      "label": "Aliko Dangote",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
       "id": "f3f65e2dd7f8",
       "label": "Leno Adesanya",
       "type": "psc",
@@ -601,20 +595,20 @@
       "risk": "Medium"
     },
     {
-      "id": "6617740c0c1a",
-      "label": "Femi Otedola",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
       "id": "5bc53f66db9d",
       "label": "Seplat",
       "type": "company",
       "risk": "Medium"
     },
     {
-      "id": "c23cf0c11158",
-      "label": "FirstHoldCo",
+      "id": "1b45367ee273",
+      "label": "Tony O. Elumelu",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "f5be7663cdb3",
+      "label": "United Bank for Africa (UBA) Plc",
       "type": "company",
       "risk": "Medium"
     },
@@ -622,6 +616,12 @@
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -712,12 +712,6 @@
       "id": "bba8d9d0344e",
       "label": "House of Representatives Committee on Host Communities",
       "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2be931f076db",
-      "label": "Primary Health Care centers",
-      "type": "company",
       "risk": "Low"
     }
   ],
@@ -909,28 +903,10 @@
       "label": "PSC: 73.29%"
     },
     {
-      "id": "f5e961dc48f7",
-      "from": "77c793dd24f7",
-      "to": "9ed3f0f5bb2d",
-      "label": "Significant influence or control"
-    },
-    {
       "id": "6ef476ba43f6",
       "from": "f3f65e2dd7f8",
       "to": "b64909add6b9",
       "label": "Significant influence or control"
-    },
-    {
-      "id": "b42222bf292e",
-      "from": "77c793dd24f7",
-      "to": "01ccce37119e",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "0cd3b636ebc8",
-      "from": "6617740c0c1a",
-      "to": "c0f6baef22e7",
-      "label": "Ownership of shares"
     },
     {
       "id": "b2eae1d0c424",
@@ -939,10 +915,10 @@
       "label": "Ownership of shares"
     },
     {
-      "id": "ee173444ce0d",
-      "from": "6617740c0c1a",
-      "to": "c23cf0c11158",
-      "label": "Significant influence or control"
+      "id": "da3764a5dbad",
+      "from": "1b45367ee273",
+      "to": "f5be7663cdb3",
+      "label": "PSC: 24.5%"
     },
     {
       "id": "7ae984c2a8c8",
@@ -1032,12 +1008,6 @@
       "id": "28c0a7cca224",
       "from": "9b5549bd0205",
       "to": "bba8d9d0344e",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "f17f809e54b8",
-      "from": "2be931f076db",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]
