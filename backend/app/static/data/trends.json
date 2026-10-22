@@ -1,18 +1,18 @@
 {
   "window_days": 7,
-  "recent_articles": 201,
-  "previous_articles": 237,
+  "recent_articles": 199,
+  "previous_articles": 242,
   "rising": [
-    {
-      "term": "bill",
-      "recent": 10,
-      "previous": 2,
-      "change": 8
-    },
     {
       "term": "fraud",
       "recent": 11,
       "previous": 4,
+      "change": 7
+    },
+    {
+      "term": "bill",
+      "recent": 10,
+      "previous": 3,
       "change": 7
     },
     {
@@ -28,9 +28,9 @@
       "change": 6
     },
     {
-      "term": "approves",
-      "recent": 7,
-      "previous": 2,
+      "term": "senate",
+      "recent": 8,
+      "previous": 3,
       "change": 5
     },
     {
@@ -58,24 +58,30 @@
       "change": 5
     },
     {
-      "term": "reps",
-      "recent": 10,
-      "previous": 6,
-      "change": 4
+      "term": "tackle",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
       "term": "petrol",
       "recent": 3,
-      "previous": 16,
-      "change": -13
+      "previous": 14,
+      "change": -11
     },
     {
       "term": "discount",
       "recent": 1,
-      "previous": 12,
-      "change": -11
+      "previous": 11,
+      "change": -10
+    },
+    {
+      "term": "subsidy",
+      "recent": 1,
+      "previous": 10,
+      "change": -9
     },
     {
       "term": "atiku",
@@ -84,33 +90,27 @@
       "change": -9
     },
     {
-      "term": "highway",
-      "recent": 0,
-      "previous": 9,
-      "change": -9
-    },
-    {
-      "term": "tinubu",
-      "recent": 3,
-      "previous": 11,
-      "change": -8
-    },
-    {
       "term": "fuel",
       "recent": 1,
       "previous": 9,
       "change": -8
     },
     {
-      "term": "nnpc",
-      "recent": 8,
-      "previous": 15,
+      "term": "highway",
+      "recent": 1,
+      "previous": 9,
+      "change": -8
+    },
+    {
+      "term": "tinubu",
+      "recent": 4,
+      "previous": 11,
       "change": -7
     },
     {
-      "term": "subsidy",
-      "recent": 2,
-      "previous": 9,
+      "term": "imf",
+      "recent": 1,
+      "previous": 8,
       "change": -7
     },
     {
@@ -120,27 +120,27 @@
       "change": -7
     },
     {
-      "term": "dangote",
-      "recent": 2,
-      "previous": 8,
+      "term": "nnpc",
+      "recent": 8,
+      "previous": 14,
       "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 139,
-      "previous": 167
+      "recent": 137,
+      "previous": 172
     },
     {
       "category": "Legal",
       "recent": 34,
-      "previous": 35
+      "previous": 36
     },
     {
       "category": "Company",
       "recent": 26,
-      "previous": 35
+      "previous": 34
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-22 12:53:01"
+  "generated": "2026-10-22 17:56:55"
 }

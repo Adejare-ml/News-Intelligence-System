@@ -1,52 +1,9 @@
 {
   "entities": [
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 84,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 9,
-          "avg_risk": 17.2,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 8,
-          "avg_risk": 21.2,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 26,
-          "avg_risk": 31.7,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 22,
-          "avg_risk": 29.8,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 9,
-          "avg_risk": 23.9,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 10,
-          "avg_risk": 48.5,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 83,
+      "total_mentions": 85,
       "points": [
         {
           "week": "2026-09-07",
@@ -86,9 +43,52 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 10,
-          "avg_risk": 23.5,
+          "mentions": 12,
+          "avg_risk": 22.1,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "total_mentions": 84,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 9,
+          "avg_risk": 17.2,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 8,
+          "avg_risk": 21.2,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 26,
+          "avg_risk": 31.7,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 22,
+          "avg_risk": 29.8,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 9,
+          "avg_risk": 23.9,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 10,
+          "avg_risk": 48.5,
+          "max_risk": 85
         }
       ]
     },
@@ -486,6 +486,37 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 14,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "total_mentions": 14,
@@ -519,37 +550,6 @@
           "mentions": 2,
           "avg_risk": 65.0,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 13,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 34.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -984,6 +984,25 @@
           "mentions": 2,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "senate of",
+      "label": "Senate of Nigeria",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 65
         }
       ]
     },
@@ -1809,25 +1828,6 @@
       ]
     },
     {
-      "key": "senate of",
-      "label": "Senate of Nigeria",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "taraba state government",
       "label": "Taraba State Government",
       "total_mentions": 4,
@@ -2273,6 +2273,31 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national universities commission",
+      "label": "National Universities Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3452,25 +3477,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "national universities commission",
-      "label": "National Universities Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -5461,5 +5467,5 @@
       ]
     }
   ],
-  "generated": "2026-10-22 12:53:04"
+  "generated": "2026-10-22 17:56:59"
 }
