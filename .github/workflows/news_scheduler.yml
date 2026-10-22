@@ -44,10 +44,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: "pip"
@@ -210,7 +210,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout the commit run-pipeline just pushed
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # Pinned to the exact SHA run-pipeline produced (job output above),
           # not a floating `main` ref -- see the outputs comment on
