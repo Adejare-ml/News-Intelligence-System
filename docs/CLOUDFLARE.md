@@ -98,7 +98,7 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
    **Pages project → Settings → Bindings → Add → D1 database**,
    variable name `DB`, database `aura`. Redeploy.
 
-### Morning Brief email (Resend)
+### Morning Brief email (Brevo or Resend)
 
 Sign-ups are stored as `pending` and nothing is sent until this is set up.
 Once it is, new sign-ups get a confirmation email, and every morning after
@@ -107,14 +107,22 @@ email at `/brief/email/`), with a one-click unsubscribe link and header.
 
 How it works: the subscriber list stays in D1. The scheduler waits until
 production shows the new edition, then calls `POST /api/send-brief` with a
-shared secret; Cloudflare sends through Resend's batch API. One send per
+shared secret; Cloudflare sends through Brevo or Resend in batches. One send per
 Lagos day, and an edition that was already sent is never sent again.
 
-**1. Verify your domain in Resend** (resend.com → Domains → Add domain).
-Use a subdomain such as `mail.yourdomain.com`. Resend lists DNS records
-(SPF and MX on `send.…`, a DKIM TXT on `resend._domainkey.…`); add them
-where your domain's DNS is managed, then wait for **Verified**.
-Then **API Keys → Create** (permission: sending access).
+**1. Pick a provider.**
+
+- **Brevo, no domain needed** (free: 300 emails a day). brevo.com → sign
+  up → Settings → Senders, domains & IPs → **Senders → Add a sender** with
+  the address you want replies to go to (a Gmail address works) and
+  confirm it. Then **SMTP & API → API Keys → Generate a new API key**.
+  Without a domain of your own, Brevo sends from its own domain
+  (`…@brevosend.com`) but shows your sender name.
+- **Resend, with a domain you own** (free: 100 a day, 3,000 a month).
+  resend.com → Domains → Add domain; use a subdomain such as
+  `mail.yourdomain.com` and add the DNS records Resend lists (SPF and MX on
+  `send.…`, a DKIM TXT on `resend._domainkey.…`), then wait for
+  **Verified**. Then **API Keys → Create** (sending access).
 
 **2. Create the database tables** (once):
 
@@ -132,9 +140,10 @@ Production):
 
 | Variable | Value |
 |---|---|
-| `EMAIL_PROVIDER` | `resend` |
-| `RESEND_API_KEY` | the Resend API key (**Secret**) |
-| `MAIL_FROM` | `AURA Morning Brief <brief@mail.yourdomain.com>` |
+| `EMAIL_PROVIDER` | `brevo` or `resend` |
+| `BREVO_API_KEY` | the Brevo API key (**Secret**; Brevo only) |
+| `RESEND_API_KEY` | the Resend API key (**Secret**; Resend only) |
+| `MAIL_FROM` | `AURA Morning Brief <the sender you verified>` |
 | `SITE_URL` | `https://auranews.pages.dev` |
 | `BRIEF_SEND_SECRET` | a long random string (**Secret**), e.g. `openssl rand -hex 32` |
 | `OWNER_EMAIL` | your address, for test sends |

@@ -24,6 +24,10 @@ export interface Env {
   OWNER_EMAIL?: string;
   /** Override for tests and local runs; defaults to https://api.resend.com. */
   RESEND_API_BASE?: string;
+  /** Brevo (EMAIL_PROVIDER=brevo): works without a domain of your own. */
+  BREVO_API_KEY?: string;
+  /** Override for tests and local runs; defaults to https://api.brevo.com. */
+  BREVO_API_BASE?: string;
 }
 
 export interface Ctx {

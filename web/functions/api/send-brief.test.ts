@@ -1,7 +1,7 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost, sameSecret, lagosDay, readMeta } from "./send-brief.ts";
-import { personalise, htmlToText, batchPayload, chunk, decodeEntities } from "../_lib/mailer.ts";
+import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom } from "../_lib/mailer.ts";
 import type { Env } from "../_lib/http.ts";
 
 const SECRET = "s3cret-for-tests-0123456789";
@@ -169,4 +169,30 @@ test("helpers", () => {
   assert.equal(decodeEntities("&amp;lt;"), "&lt;", "decoded once, never twice");
   assert.deepEqual(chunk([1, 2, 3, 4, 5], 2), [[1, 2], [3, 4], [5]]);
   assert.equal(batchPayload("F", [{ to: "x@y.z", subject: "s", html: "h", text: "t", unsubscribe: "u" }])[0].headers["List-Unsubscribe"], "<u>");
+});
+
+test("brevo: one call, one version per subscriber, each with only their own link", async () => {
+  const calls: { url: string; headers: Record<string, string>; body: any }[] = [];
+  globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+    calls.push({ url: String(input), headers: init?.headers as Record<string, string>, body: JSON.parse(String(init?.body)) });
+    return new Response('{"messageIds":[]}', { status: 201 });
+  }) as typeof fetch;
+  const e = { ...env(), EMAIL_PROVIDER: "brevo", RESEND_API_KEY: undefined, BREVO_API_KEY: "xkeysib-test", BREVO_API_BASE: "https://brevo.test" };
+  const body = await (await call(e)).json();
+  assert.equal(body.sent, 2);
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].url, "https://brevo.test/v3/smtp/email");
+  assert.equal(calls[0].headers["api-key"], "xkeysib-test");
+  const payload = calls[0].body;
+  assert.deepEqual(payload.sender, { name: "AURA", email: "brief@example.org" });
+  assert.ok(!payload.htmlContent.includes("token="), "the shared base carries nobody's link");
+  assert.deepEqual(payload.messageVersions.map((v: any) => v.to[0].email), ["a@example.com", "d@example.com"]);
+  assert.ok(payload.messageVersions[0].htmlContent.includes("a".repeat(48)));
+  assert.ok(!payload.messageVersions[0].htmlContent.includes("d".repeat(48)));
+});
+
+test("parseFrom", () => {
+  assert.deepEqual(parseFrom("AURA Morning Brief <me@gmail.com>"), { name: "AURA Morning Brief", email: "me@gmail.com" });
+  assert.deepEqual(parseFrom('"AURA" <me@gmail.com>'), { name: "AURA", email: "me@gmail.com" });
+  assert.deepEqual(parseFrom("me@gmail.com"), { email: "me@gmail.com" });
 });
