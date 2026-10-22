@@ -1,6 +1,15 @@
 {
   "alerts": [
     {
+      "date": "2026-10-22",
+      "title": "Weak oversight, fiscal plan leave over 60,000 public projects abandoned - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVDZpamFfRFVzZnc0Z09LOGIzYTdZa0ZzTS1meWJ4LXc2alJsTW81bUNEZTI1WXdDU0FfbERkM1o4YWltXzZzNVB5UFR3Yzh2ZDBrTDNUbVJ5RGp2bzFtZHo4a2d4blNlbFJGRV9jYURWNkt1S25zUWxpUFlzWDNjaVZka0x2UnFVUW5DOEdiQ2JENFNjT3UxUXZIUkdTZUZo?oc=5",
+      "source": "The Guardian Nigeria News",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": []
+    },
+    {
       "date": "2026-10-21",
       "title": "Sule Lamido\u2019s son denies, money laundering, bribery charges against him, his father, others - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdmo4ZklMUnBSQlZZcTZzNkE0SElxVXNxWjYwS1hDenBrRW44WUF4VVZHVF94ZDVTRFd5aW04NHRLZlJzODduTEVLajRqNVVNREZrZmhRXzg3RHdKY2p6Z2d5Zm1aUXVJRWJweUYyTVBhenhFbEhaUE0xdTdqMkpwRVNHc2hRV2JuV1AxVXBPSC1uWFVyNTd6UXl5a3BSSU9QRUk3TGNRODB2anJBOWdVczZwZVFadzE1dWlOVEJrX1hCNGxWaDJaR05NcU14dmN5YXREM2NxcDVmM09s?oc=5",
@@ -787,5 +796,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-22 01:26:43"
+  "generated": "2026-10-22 12:53:04"
 }

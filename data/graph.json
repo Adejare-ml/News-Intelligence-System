@@ -151,6 +151,36 @@
       "risk": "Low"
     },
     {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f7b975597002",
+      "label": "Akwa Ibom State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "737f70b3bdb8",
+      "label": "Taraba State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ccefe316d0ca",
+      "label": "Nasarawa State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -211,38 +241,26 @@
       "risk": "Low"
     },
     {
-      "id": "2ce95174205c",
-      "label": "National Agency for Food and Drug Administration and Control (NAFDAC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "aa9abf2767d5",
-      "label": "Standards Organisation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "81adceec0174",
-      "label": "Ekiti State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9e4088ac2b55",
-      "label": "APC Campaign Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7cd4ee68f6fa",
-      "label": "House of Representatives Committee on Home Affairs",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "40ce4ff30275",
       "label": "Godwin Emefiele",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "261b654580ee",
+      "label": "Effiong Okon",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "686b21d53042",
+      "label": "Seplat Energy",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "268a2ed6a82c",
+      "label": "Kefas",
       "type": "person",
       "risk": "Low"
     },
@@ -253,15 +271,15 @@
       "risk": "Low"
     },
     {
-      "id": "737f70b3bdb8",
-      "label": "Taraba State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "7a8bece02efd",
       "label": "Betta Edu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9e4088ac2b55",
+      "label": "APC Campaign Council",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -472,24 +490,6 @@
       "id": "aecb5553d6f9",
       "label": "Nigerian Breweries Plc",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "568f4fc5fb3d",
-      "label": "Gbajabiamila",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -729,6 +729,18 @@
       "label": "Appointed as Former Governor"
     },
     {
+      "id": "61c34cbce265",
+      "from": "261b654580ee",
+      "to": "686b21d53042",
+      "label": "Appointed as Chief Executive Officer"
+    },
+    {
+      "id": "418485000d12",
+      "from": "268a2ed6a82c",
+      "to": "737f70b3bdb8",
+      "label": "Appointed as Governor"
+    },
+    {
       "id": "d926e4f83416",
       "from": "5476ecdab0f0",
       "to": "737f70b3bdb8",
@@ -847,18 +859,6 @@
       "from": "132d7e075c63",
       "to": "aecb5553d6f9",
       "label": "Appointed as Chief Executive Officer"
-    },
-    {
-      "id": "ab11158b4224",
-      "from": "568f4fc5fb3d",
-      "to": "38b03bbf0068",
-      "label": "Appointed as Speaker of the House of Representatives"
-    },
-    {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
     },
     {
       "id": "a5e36b5f552f",

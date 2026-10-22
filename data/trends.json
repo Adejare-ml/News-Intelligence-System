@@ -1,25 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 200,
-  "previous_articles": 226,
+  "recent_articles": 201,
+  "previous_articles": 237,
   "rising": [
+    {
+      "term": "bill",
+      "recent": 10,
+      "previous": 2,
+      "change": 8
+    },
+    {
+      "term": "fraud",
+      "recent": 11,
+      "previous": 4,
+      "change": 7
+    },
     {
       "term": "probe",
       "recent": 9,
       "previous": 2,
       "change": 7
-    },
-    {
-      "term": "fraud",
-      "recent": 10,
-      "previous": 4,
-      "change": 6
-    },
-    {
-      "term": "bill",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
     },
     {
       "term": "son",
@@ -52,16 +52,16 @@
       "change": 5
     },
     {
-      "term": "move",
+      "term": "nlng",
       "recent": 5,
       "previous": 0,
       "change": 5
     },
     {
-      "term": "nlng",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
+      "term": "reps",
+      "recent": 10,
+      "previous": 6,
+      "change": 4
     }
   ],
   "falling": [
@@ -76,6 +76,12 @@
       "recent": 1,
       "previous": 12,
       "change": -11
+    },
+    {
+      "term": "atiku",
+      "recent": 0,
+      "previous": 9,
+      "change": -9
     },
     {
       "term": "highway",
@@ -102,45 +108,39 @@
       "change": -7
     },
     {
-      "term": "two",
-      "recent": 3,
+      "term": "subsidy",
+      "recent": 2,
       "previous": 9,
-      "change": -6
+      "change": -7
+    },
+    {
+      "term": "audit",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
     },
     {
       "term": "dangote",
       "recent": 2,
       "previous": 8,
       "change": -6
-    },
-    {
-      "term": "public",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
-      "term": "seals",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 141,
-      "previous": 158
+      "recent": 139,
+      "previous": 167
     },
     {
       "category": "Legal",
-      "recent": 33,
-      "previous": 34
+      "recent": 34,
+      "previous": 35
     },
     {
       "category": "Company",
-      "recent": 24,
-      "previous": 34
+      "recent": 26,
+      "previous": 35
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-22 01:26:41"
+  "generated": "2026-10-22 12:53:01"
 }
