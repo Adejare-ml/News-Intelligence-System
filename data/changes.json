@@ -1,24 +1,41 @@
 {
   "new_companies": [
-    "JPMorgan Chase",
-    "MARCON",
-    "TCIPC"
+    "Tansian University"
   ],
-  "new_people": [
-    "Effiong Okon",
-    "Kefas"
+  "new_people": [],
+  "psc_added": [
+    {
+      "person": "Tony O. Elumelu",
+      "company": "United Bank for Africa (UBA) Plc"
+    }
   ],
-  "psc_added": [],
-  "psc_removed": [],
+  "psc_removed": [
+    {
+      "person": "Aliko Dangote",
+      "company": "Dangote Petroleum Refinery"
+    },
+    {
+      "person": "Aliko Dangote",
+      "company": "Dangote Refinery"
+    },
+    {
+      "person": "Femi Otedola",
+      "company": "First HoldCo"
+    },
+    {
+      "person": "Femi Otedola",
+      "company": "FirstHoldCo"
+    }
+  ],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 2,
-    "psc_added": 0,
-    "psc_removed": 0,
+    "new_companies": 1,
+    "new_people": 0,
+    "psc_added": 1,
+    "psc_removed": 4,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-22 12:52:58"
+  "generated": "2026-10-22 17:56:52"
 }

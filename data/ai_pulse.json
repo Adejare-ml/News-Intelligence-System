@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-22 12:53:01",
+  "generated": "2026-10-22 17:56:55",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2275,
+      "likes": 2326,
       "downloads": 51911
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1246,
+      "likes": 1275,
       "downloads": 512524
     },
     {
       "id": "meta-models/Muse-Spark-Open-816B-A42B",
       "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "task": "image-text-to-text",
-      "likes": 651,
+      "likes": 655,
       "downloads": 3163
-    },
-    {
-      "id": "black-forest-labs/flux-3-image-klein",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-      "task": "image-to-image",
-      "likes": 619,
-      "downloads": 102903
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 550,
+      "likes": 562,
       "downloads": 6890
     },
     {
-      "id": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "task": "text-to-speech",
-      "likes": 903,
-      "downloads": 16305
+      "id": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "task": "text-generation",
+      "likes": 474,
+      "downloads": 420
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
       "task": "text-to-image",
-      "likes": 477,
+      "likes": 484,
       "downloads": 5013
     },
     {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 8819,
-      "downloads": 2054990
+      "id": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "task": "text-to-speech",
+      "likes": 905,
+      "downloads": 16305
+    },
+    {
+      "id": "black-forest-labs/flux-3-image-klein",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "task": "image-to-image",
+      "likes": 629,
+      "downloads": 102903
     }
   ],
   "papers": [
     {
-      "title": "Retrieval Augmented Generation Compositionality",
-      "url": "https://huggingface.co/papers/2610.29722",
-      "upvotes": 16
+      "title": "Language Models Learn to Improve Language Models",
+      "url": "https://huggingface.co/papers/2610.23344",
+      "upvotes": 1
     },
     {
-      "title": "From RL Papers to Framework Code: Inclusion and Review in Seven Open-Source Training Frameworks",
-      "url": "https://huggingface.co/papers/2610.28027",
-      "upvotes": 4
+      "title": "VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents",
+      "url": "https://huggingface.co/papers/2610.28679",
+      "upvotes": 3
     },
     {
-      "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
-      "url": "https://huggingface.co/papers/2610.28827",
-      "upvotes": 7
+      "title": "Looped Uniform Diffusion Language Models",
+      "url": "https://huggingface.co/papers/2610.30066",
+      "upvotes": 3
     },
     {
-      "title": "SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes?",
-      "url": "https://huggingface.co/papers/2610.26659",
-      "upvotes": 102
+      "title": "RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation",
+      "url": "https://huggingface.co/papers/2610.27861",
+      "upvotes": 2
     },
     {
-      "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
-      "url": "https://huggingface.co/papers/2610.29560",
-      "upvotes": 9
+      "title": "Exploring The Empirical Privacy Landscape of Synthetic Data",
+      "url": "https://huggingface.co/papers/2610.22659",
+      "upvotes": 3
     },
     {
-      "title": "CompactSplat: Spatially Adaptive Gaussian Distribution for Feedforward Scene Reconstruction",
-      "url": "https://huggingface.co/papers/2610.13177",
-      "upvotes": 9
+      "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+      "url": "https://huggingface.co/papers/2610.28905",
+      "upvotes": 6
     }
   ]
 }

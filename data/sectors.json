@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 949,
-      "mentions": 1607,
+      "companies": 948,
+      "mentions": 1605,
       "risk": {
-        "Low": 837,
+        "Low": 836,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -221,6 +221,14 @@
       }
     },
     {
+      "industry": "Professional Services",
+      "companies": 3,
+      "mentions": 5,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Cement",
       "companies": 2,
       "mentions": 4,
@@ -234,6 +242,15 @@
       "mentions": 4,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Education",
+      "companies": 4,
+      "mentions": 4,
+      "risk": {
+        "Low": 3,
+        "Medium": 1
       }
     },
     {
@@ -275,14 +292,6 @@
       "mentions": 3,
       "risk": {
         "High": 1
-      }
-    },
-    {
-      "industry": "Education",
-      "companies": 3,
-      "mentions": 3,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -355,14 +364,6 @@
       "mentions": 2,
       "risk": {
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Professional Services",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "Low": 2
       }
     },
     {
@@ -775,5 +776,5 @@
       }
     }
   ],
-  "generated": "2026-10-22 12:53:04"
+  "generated": "2026-10-22 17:56:59"
 }
