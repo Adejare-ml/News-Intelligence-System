@@ -30,7 +30,7 @@ test("parseItem: plain text has no markdown and the HTML no citation", () => {
   assert.equal(item.lead, "");
   assert.equal(item.rest, "Seplat Energy declared Effiong Okon as its new CEO.");
   assert.equal(item.source?.name, "Premium Times Nigeria");
-  assert.ok(!item.html.includes("news.google.com"));
+  assert.ok(!item.html.includes("<a"), "the citation link is not in the item text");
   const bold = parseItem("* **Executive order yields N212bn**. The order raised N211.74bn. ([The Punch](https://punchng.com/x/))");
   assert.equal(bold.lead, "Executive order yields N212bn");
   assert.equal(bold.rest, "The order raised N211.74bn.");
@@ -41,4 +41,12 @@ test("parseBrief keeps sections and their sources", () => {
   const b = parseBrief(md);
   assert.deepEqual(b.sections.map((s) => s.title), ["Key Developments", "High Risk Alerts"]);
   assert.equal(b.sections[0].items[0].sources[0].name, "Vanguard News");
+});
+
+test("long runs of odd text stay fast", () => {
+  const nasty = "x (" + "{source: a} ".repeat(5000) + "{source:" + " and".repeat(5000);
+  const t = Date.now();
+  splitCitations(nasty);
+  parseItem(`* ${nasty}`);
+  assert.ok(Date.now() - t < 500);
 });
