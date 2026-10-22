@@ -14,7 +14,7 @@
  */
 import { json, type Ctx, type Env } from "../_lib/http.ts";
 import {
-  decodeEntities, htmlToText, personalise, sendBatch, sendingEnabled, unsubscribeUrl, type BriefMail,
+  decodeEntities, htmlToText, sendBrief, sendingEnabled, unsubscribeUrl,
 } from "../_lib/mailer.ts";
 
 /** Constant-time string comparison, so the secret cannot be guessed by timing. */
@@ -64,14 +64,12 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
 
   const site = (env.SITE_URL || url.origin).replace(/\/$/, "");
   const day = lagosDay(new Date());
-  const compose = (to: string, unsubscribe: string): BriefMail => {
-    const html = personalise(template, unsubscribe);
-    return { to, subject, html, text: htmlToText(html), unsubscribe };
-  };
+  // The text part is derived once; each copy only swaps in its unsubscribe link.
+  const brief = { subject, html: template, text: htmlToText(template) };
 
   if (test) {
     if (!env.OWNER_EMAIL) return json({ error: "Set OWNER_EMAIL to receive a test copy." }, 400);
-    const result = await sendBatch(env, [compose(env.OWNER_EMAIL, `${site}/api/unsubscribe`)]);
+    const result = await sendBrief(env, brief, [{ to: env.OWNER_EMAIL, unsubscribe: `${site}/api/unsubscribe` }]);
     return json({ test: true, edition, subject, ...result });
   }
 
@@ -92,7 +90,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
 
   await env.DB.prepare("INSERT INTO sends (day, edition, started_at) VALUES (?, ?, ?)")
     .bind(day, edition, new Date().toISOString()).run();
-  const result = await sendBatch(env, recipients.map((r) => compose(r.email, unsubscribeUrl(site, r.token))));
+  const result = await sendBrief(env, brief, recipients.map((r) => ({ to: r.email, unsubscribe: unsubscribeUrl(site, r.token) })));
   await env.DB.prepare("UPDATE sends SET finished_at = ?, sent = ?, failed = ? WHERE day = ?")
     .bind(new Date().toISOString(), result.sent, result.failed, day).run();
 

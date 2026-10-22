@@ -7,9 +7,12 @@
  *   "brevo"   BREVO_API_KEY, and MAIL_FROM on a sender verified in Brevo.
  *             No domain needed: Brevo sends unauthenticated free-mail
  *             senders from its own domain.
+ *   "gmail"   GMAIL_USER and GMAIL_APP_PASSWORD (a Google App Password).
+ *             Sent from your own Gmail over SMTP; about 500 a day.
  * With no provider, sign-ups are stored as pending and nothing is sent.
  */
 import type { Env } from "./http.ts";
+import { cloudflareSocket, compileMessage, smtpSend, PLACEHOLDER, type OpenSocket } from "./smtp.ts";
 
 export interface Mail {
   to: string;
@@ -18,14 +21,33 @@ export interface Mail {
   text: string;
 }
 
-type Provider = "resend" | "brevo";
+type Provider = "resend" | "brevo" | "gmail";
 
 export function provider(env: Env): Provider | null {
+  if (env.EMAIL_PROVIDER === "gmail") return env.GMAIL_USER && env.GMAIL_APP_PASSWORD ? "gmail" : null;
   if (!env.MAIL_FROM) return null;
   if (env.EMAIL_PROVIDER === "resend" && env.RESEND_API_KEY) return "resend";
   if (env.EMAIL_PROVIDER === "brevo" && env.BREVO_API_KEY) return "brevo";
   return null;
 }
+
+/** Gmail's sender: MAIL_FROM when it is the same address, otherwise the Gmail address with the AURA name. */
+export function gmailFrom(env: Env): string {
+  const user = env.GMAIL_USER!.trim();
+  const from = env.MAIL_FROM?.trim();
+  if (from && from.toLowerCase().includes(`<${user.toLowerCase()}>`)) return from;
+  return `AURA Morning Brief <${user}>`;
+}
+
+/** Gmail allows about 500 recipients a day on a personal account; stay under it. */
+export const GMAIL_DAILY_CAP = 450;
+
+/** How Gmail sockets are opened; tests swap this for an in-memory server. */
+export const smtpTransport = {
+  open: (env: Env): OpenSocket => cloudflareSocket(env.SMTP_HOST || "smtp.gmail.com", Number(env.SMTP_PORT) || 465),
+};
+
+const gmailLogin = (env: Env) => ({ user: env.GMAIL_USER!.trim(), password: env.GMAIL_APP_PASSWORD!.replace(/\s+/g, "") });
 
 export function sendingEnabled(env: Env): boolean {
   return provider(env) !== null;
@@ -46,6 +68,12 @@ const brevoHeaders = (env: Env) => ({ "api-key": env.BREVO_API_KEY!, "Content-Ty
 export async function send(env: Env, mail: Mail): Promise<boolean> {
   const via = provider(env);
   if (!via) return false;
+  if (via === "gmail") {
+    const from = gmailFrom(env);
+    const build = compileMessage({ from, subject: mail.subject, html: mail.html, text: mail.text });
+    const result = await smtpSend(smtpTransport.open(env), gmailLogin(env), [{ from, to: mail.to, data: () => build(mail.to) }]);
+    return result.sent === 1;
+  }
   if (via === "brevo") {
     const res = await fetch(`${brevoBase(env)}/v3/smtp/email`, {
       method: "POST",
@@ -147,7 +175,7 @@ export function htmlToText(html: string): string {
       const m = tag.match(/href="([^"]*)"/i);
       href = m ? decodeEntities(m[1]) : "";
     } else if (closing && name === "a") {
-      if (href && /^https?:/.test(href)) out += ` (${href})`;
+      if (href && (/^https?:/.test(href) || href === PLACEHOLDER)) out += ` (${href})`;
       href = "";
     } else if (name === "br" || (closing && BLOCK_END.has(name))) {
       out += "\n";
@@ -202,9 +230,20 @@ export function brevoBatchPayload(from: string, mails: BriefMail[]) {
  * Few calls per run, well inside a Pages Function's subrequest limit.
  * Returns how many were accepted and how many failed.
  */
-export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: number; failed: number }> {
+export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: number; failed: number; error?: string }> {
   const via = provider(env);
   if (!via) return { sent: 0, failed: mails.length };
+  if (via === "gmail") {
+    const from = gmailFrom(env);
+    return smtpSend(
+      smtpTransport.open(env),
+      gmailLogin(env),
+      mails.slice(0, GMAIL_DAILY_CAP).map((m) => {
+        const build = compileMessage({ from, subject: m.subject, html: m.html, text: m.text });
+        return { from, to: m.to, data: () => build(m.to, m.unsubscribe) };
+      }),
+    ).then((r) => ({ ...r, failed: r.failed + Math.max(0, mails.length - GMAIL_DAILY_CAP) }));
+  }
   let sent = 0;
   let failed = 0;
   for (const group of chunk(mails, via === "brevo" ? 50 : 100)) {
@@ -228,4 +267,53 @@ export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: n
     }
   }
   return { sent, failed };
+}
+
+export interface BriefTemplate {
+  subject: string;
+  /** The email HTML with the {{unsubscribe_url}} placeholder. */
+  html: string;
+  /** The plain-text part with the same placeholder. */
+  text: string;
+}
+
+/** Fills the placeholder in the plain-text part (no HTML escaping). */
+export function personaliseText(text: string, unsubscribe: string): string {
+  return text.split(PLACEHOLDER).join(unsubscribe);
+}
+
+/**
+ * Sends one brief to many people, each with their own unsubscribe link.
+ * Gmail encodes the email once and only swaps the link per person, so a
+ * large list stays inside a Function's CPU budget.
+ */
+export async function sendBrief(
+  env: Env,
+  brief: BriefTemplate,
+  recipients: { to: string; unsubscribe: string }[],
+): Promise<{ sent: number; failed: number; error?: string }> {
+  if (provider(env) === "gmail") {
+    const from = gmailFrom(env);
+    const build = compileMessage({ from, ...brief });
+    const allowed = recipients.slice(0, GMAIL_DAILY_CAP);
+    const result = await smtpSend(
+      smtpTransport.open(env),
+      gmailLogin(env),
+      allowed.map((r) => ({ from, to: r.to, data: () => build(r.to, r.unsubscribe) })),
+    );
+    const over = recipients.length - allowed.length;
+    return over > 0
+      ? { ...result, failed: result.failed + over, error: `Gmail daily cap: ${over} not sent` }
+      : result;
+  }
+  return sendBatch(
+    env,
+    recipients.map((r) => ({
+      to: r.to,
+      subject: brief.subject,
+      html: personalise(brief.html, r.unsubscribe),
+      text: personaliseText(brief.text, r.unsubscribe),
+      unsubscribe: r.unsubscribe,
+    })),
+  );
 }
