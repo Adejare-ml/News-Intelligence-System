@@ -1,39 +1,32 @@
 {
-  "generated": "2026-10-22 17:56:55",
+  "generated": "2026-10-22 20:32:48",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2326,
+      "likes": 2341,
       "downloads": 51911
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1275,
+      "likes": 1285,
       "downloads": 512524
-    },
-    {
-      "id": "meta-models/Muse-Spark-Open-816B-A42B",
-      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "task": "image-text-to-text",
-      "likes": 655,
-      "downloads": 3163
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 562,
+      "likes": 569,
       "downloads": 6890
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 474,
+      "likes": 498,
       "downloads": 420
     },
     {
@@ -44,50 +37,57 @@
       "downloads": 5013
     },
     {
+      "id": "meta-models/Muse-Spark-Open-816B-A42B",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "task": "image-text-to-text",
+      "likes": 658,
+      "downloads": 3163
+    },
+    {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 905,
+      "likes": 907,
       "downloads": 16305
     },
     {
-      "id": "black-forest-labs/flux-3-image-klein",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
-      "task": "image-to-image",
-      "likes": 629,
-      "downloads": 102903
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 8876,
+      "downloads": 2054990
     }
   ],
   "papers": [
     {
+      "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
+      "url": "https://huggingface.co/papers/2610.28940",
+      "upvotes": 8
+    },
+    {
+      "title": "FrontierCS 2: A Benchmark for Computer Science R&D",
+      "url": "https://huggingface.co/papers/2610.29932",
+      "upvotes": 2
+    },
+    {
       "title": "Language Models Learn to Improve Language Models",
       "url": "https://huggingface.co/papers/2610.23344",
-      "upvotes": 1
+      "upvotes": 5
     },
     {
       "title": "VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents",
       "url": "https://huggingface.co/papers/2610.28679",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "Looped Uniform Diffusion Language Models",
       "url": "https://huggingface.co/papers/2610.30066",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation",
       "url": "https://huggingface.co/papers/2610.27861",
       "upvotes": 2
-    },
-    {
-      "title": "Exploring The Empirical Privacy Landscape of Synthetic Data",
-      "url": "https://huggingface.co/papers/2610.22659",
-      "upvotes": 3
-    },
-    {
-      "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
-      "url": "https://huggingface.co/papers/2610.28905",
-      "upvotes": 6
     }
   ]
 }
