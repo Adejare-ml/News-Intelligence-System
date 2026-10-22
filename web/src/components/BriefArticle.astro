@@ -71,11 +71,13 @@ const sections = brief.sections;
                     ) : (
                       <p set:html={item.html} />
                     )}
-                    {item.source && (
+                    {item.source && (item.source.url ? (
                       <a class="source" href={item.source.url} rel="noopener noreferrer" target="_blank">
                         {item.source.name} <Icon name="arrowUpRight" size={14} />
                       </a>
-                    )}
+                    ) : (
+                      <span class="source">{item.source.name}</span>
+                    ))}
                   </li>
                 ),
               )}

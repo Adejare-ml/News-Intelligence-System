@@ -10,9 +10,11 @@ export interface BriefItem {
   lead: string;
   /** The sentence after the lead, plain text. */
   rest: string;
-  /** Source link text and URL when the bullet ends with ([Publisher](url)). */
+  /** The first source: link text and URL (url is "" when the model named a publisher without a link). */
   source: { name: string; url: string } | null;
-  /** Full bullet rendered to inline HTML. */
+  /** Every distinct source cited at the end of the bullet. */
+  sources: { name: string; url: string }[];
+  /** Full bullet rendered to inline HTML, citations left out (they render as `sources`). */
   html: string;
 }
 
@@ -32,8 +34,60 @@ export interface Brief {
   sections: BriefSection[];
 }
 
-// The model sometimes doubles the closing paren: "([Punch](url)))".
-const LINK_TAIL = /\s*\(\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)\)+\s*$/;
+/**
+ * The citations at the end of a bullet, in the shapes the model writes:
+ *   ([Punch](https://...))      ([Punch](https://...)).      ([Punch](url)))
+ *   ({source: Vanguard News})   ({source: A}&{source: B})    ([A](u1); [B](u2))
+ */
+const CITE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)|\{\s*source:([^}]*)\}/g;
+
+/** True when `inner` holds nothing but citations and separators (",", ";", "&", "and"). */
+function onlyCitations(inner: string): boolean {
+  if (!inner.includes("[") && !inner.includes("{")) return false;
+  const rest = inner.replace(CITE, " ").replace(/\band\b/g, " ");
+  for (const ch of rest) if (!" \t,;&".includes(ch)) return false;
+  return true;
+}
+
+/**
+ * Splits trailing citations off a bullet. A plain scan rather than one big
+ * pattern, so odd model output can never make it slow.
+ */
+export function splitCitations(text: string): { body: string; sources: { name: string; url: string }[] } {
+  let end = text.trimEnd().length;
+  while (end > 0 && ".;,".includes(text[end - 1])) end--;
+  while (end > 0 && text[end - 1] === " ") end--;
+  if (text[end - 1] !== ")") return { body: text, sources: [] };
+  // The tail's closing parens; the model sometimes doubles them.
+  let closeFrom = end - 1;
+  while (closeFrom > 0 && text[closeFrom - 1] === ")") closeFrom--;
+
+  let start = -1;
+  let inner = "";
+  for (let open = text.lastIndexOf("(", end - 1); open !== -1; open = open > 0 ? text.lastIndexOf("(", open - 1) : -1) {
+    if (text[open + 1] !== "[" && text[open + 1] !== "{") continue;
+    // Try each way of splitting the closing parens between the last link and the group.
+    for (let close = end - 1; close >= closeFrom; close--) {
+      const candidate = text.slice(open + 1, close);
+      if (onlyCitations(candidate)) {
+        start = open;
+        inner = candidate;
+        break;
+      }
+    }
+  }
+  if (start === -1) return { body: text, sources: [] };
+
+  const sources: { name: string; url: string }[] = [];
+  for (const m of inner.matchAll(CITE)) {
+    const name = (m[1] ?? m[3] ?? "").trim();
+    const url = m[2] ?? "";
+    if (name && !sources.some((s) => s.name === name && (s.url === url || !url))) sources.push({ name, url });
+  }
+  let body = text.slice(0, start).trim();
+  if (body && !/[.!?]$/.test(body)) body += ".";
+  return { body, sources };
+}
 
 export function slugHeading(text: string): string {
   return text.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -67,17 +121,16 @@ export function inlineHtml(md: string): string {
 
 export function parseItem(line: string): BriefItem {
   const text = line.replace(/^\s*[-*]\s+/, "").replace(/\s{2,}$/, "").trim();
-  let body = text;
-  let source: BriefItem["source"] = null;
-  const tail = body.match(LINK_TAIL);
-  if (tail) {
-    source = { name: tail[1], url: tail[2] };
-    body = body.slice(0, tail.index).trim();
-  }
+  const { body, sources } = splitCitations(text);
+  const source = sources[0] ?? null;
   const bold = body.match(/^\*\*(.+?)\*\*:?\s*(.*)$/);
   const lead = bold ? bold[1].replace(/:$/, "").trim() : "";
-  const rest = (bold ? bold[2] : body).replace(/^[:.—–\s]+/, "").replace(/\*\*/g, "").trim();
-  return { lead, rest, source, html: inlineHtml(text) };
+  const rest = (bold ? bold[2] : body)
+    .replace(/^[:.—–\s]+/, "")
+    .replace(/\*\*/g, "")
+    .replace(/\[([^\]]+)\]\((?:https?:\/\/)?[^)\s]*\)/g, "$1")
+    .trim();
+  return { lead, rest, source, sources, html: inlineHtml(body) };
 }
 
 export function parseBrief(md: string): Brief {
