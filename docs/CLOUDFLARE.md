@@ -98,7 +98,7 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
    **Pages project → Settings → Bindings → Add → D1 database**,
    variable name `DB`, database `aura`. Redeploy.
 
-### Morning Brief email (Brevo or Resend)
+### Morning Brief email (Gmail, Brevo or Resend)
 
 Sign-ups are stored as `pending` and nothing is sent until this is set up.
 Once it is, new sign-ups get a confirmation email, and every morning after
@@ -107,11 +107,19 @@ email at `/brief/email/`), with a one-click unsubscribe link and header.
 
 How it works: the subscriber list stays in D1. The scheduler waits until
 production shows the new edition, then calls `POST /api/send-brief` with a
-shared secret; Cloudflare sends through Brevo or Resend in batches. One send per
+shared secret; Cloudflare sends through Gmail, Brevo or Resend. One send per
 Lagos day, and an edition that was already sent is never sent again.
 
 **1. Pick a provider.**
 
+- **Gmail, no domain and no new account** (about 500 a day). Turn on
+  2-Step Verification for the Google account, then create an **App
+  Password** at myaccount.google.com/apppasswords (name it "AURA"). Emails
+  come from your own Gmail address with the name "AURA Morning Brief".
+  Cloudflare connects to `smtp.gmail.com:465` over TLS, one session per
+  morning. AURA stops at 450 a day to stay under Gmail's limit; a personal
+  account that mails a large list can land in spam, so move to a domain
+  with Resend as the list grows.
 - **Brevo, no domain needed** (free: 300 emails a day). brevo.com → sign
   up → Settings → Senders, domains & IPs → **Senders → Add a sender** with
   the address you want replies to go to (a Gmail address works) and
@@ -140,10 +148,12 @@ Production):
 
 | Variable | Value |
 |---|---|
-| `EMAIL_PROVIDER` | `brevo` or `resend` |
+| `EMAIL_PROVIDER` | `gmail`, `brevo` or `resend` |
+| `GMAIL_USER` | your Gmail address (Gmail only) |
+| `GMAIL_APP_PASSWORD` | the 16-letter App Password (**Secret**; Gmail only) |
 | `BREVO_API_KEY` | the Brevo API key (**Secret**; Brevo only) |
 | `RESEND_API_KEY` | the Resend API key (**Secret**; Resend only) |
-| `MAIL_FROM` | `AURA Morning Brief <the sender you verified>` |
+| `MAIL_FROM` | `AURA Morning Brief <the sender you verified>` (optional for Gmail) |
 | `SITE_URL` | `https://auranews.pages.dev` |
 | `BRIEF_SEND_SECRET` | a long random string (**Secret**), e.g. `openssl rand -hex 32` |
 | `OWNER_EMAIL` | your address, for test sends |

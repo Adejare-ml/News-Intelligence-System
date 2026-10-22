@@ -1,7 +1,8 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost, sameSecret, lagosDay, readMeta } from "./send-brief.ts";
-import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom } from "../_lib/mailer.ts";
+import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom } from "../_lib/mailer.ts";
+import { fakeSmtp } from "../_lib/smtp-fake.test.ts";
 import type { Env } from "../_lib/http.ts";
 
 const SECRET = "s3cret-for-tests-0123456789";
@@ -195,4 +196,37 @@ test("parseFrom", () => {
   assert.deepEqual(parseFrom("AURA Morning Brief <me@gmail.com>"), { name: "AURA Morning Brief", email: "me@gmail.com" });
   assert.deepEqual(parseFrom('"AURA" <me@gmail.com>'), { name: "AURA", email: "me@gmail.com" });
   assert.deepEqual(parseFrom("me@gmail.com"), { email: "me@gmail.com" });
+});
+
+test("gmail: one SMTP session, confirmed subscribers only, each with their own link", async () => {
+  const server = fakeSmtp({ password: "abcdefghijklmnop" });
+  const realOpen = smtpTransport.open;
+  smtpTransport.open = () => server.open;
+  try {
+    const e = {
+      ...env(),
+      EMAIL_PROVIDER: "gmail",
+      RESEND_API_KEY: undefined,
+      MAIL_FROM: undefined,
+      GMAIL_USER: "aura.owner@gmail.com",
+      GMAIL_APP_PASSWORD: "abcd efgh ijkl mnop",
+    };
+    const body = await (await call(e)).json();
+    assert.equal(body.sent, 2);
+    assert.equal(body.failed, 0);
+    assert.equal(sentBodies.length, 0, "no HTTP email API was called");
+    assert.deepEqual(server.delivered.map((m) => m.to), ["a@example.com", "d@example.com"]);
+    assert.equal(server.delivered[0].from, "aura.owner@gmail.com");
+    assert.match(server.delivered[0].data, /^From: AURA Morning Brief <aura\.owner@gmail\.com>$/m);
+    assert.match(server.delivered[0].data, new RegExp(`List-Unsubscribe: <[^>]*token=${"a".repeat(48)}>`));
+    assert.ok(!server.delivered[0].data.includes("d".repeat(48)));
+  } finally {
+    smtpTransport.open = realOpen;
+  }
+});
+
+test("gmailFrom keeps a matching MAIL_FROM and otherwise uses the Gmail address", () => {
+  assert.equal(gmailFrom({ GMAIL_USER: "me@gmail.com" }), "AURA Morning Brief <me@gmail.com>");
+  assert.equal(gmailFrom({ GMAIL_USER: "me@gmail.com", MAIL_FROM: "AURA <me@gmail.com>" }), "AURA <me@gmail.com>");
+  assert.equal(gmailFrom({ GMAIL_USER: "me@gmail.com", MAIL_FROM: "AURA <brief@other.org>" }), "AURA Morning Brief <me@gmail.com>");
 });

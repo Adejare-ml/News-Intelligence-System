@@ -38,7 +38,7 @@ case "$MODE" in
   *) echo "send-brief: unknown mode $MODE"; exit 2 ;;
 esac
 
-RESPONSE=$(curl -sS --max-time 120 -X POST -H "Authorization: Bearer $BRIEF_SEND_SECRET" \
+RESPONSE=$(curl -sS --max-time 300 -X POST -H "Authorization: Bearer $BRIEF_SEND_SECRET" \
   -w $'\n%{http_code}' "$SITE/api/send-brief$QUERY")
 CODE=$(printf '%s' "$RESPONSE" | tail -n1)
 BODY=$(printf '%s' "$RESPONSE" | sed '$d')

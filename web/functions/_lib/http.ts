@@ -28,6 +28,12 @@ export interface Env {
   BREVO_API_KEY?: string;
   /** Override for tests and local runs; defaults to https://api.brevo.com. */
   BREVO_API_BASE?: string;
+  /** Gmail (EMAIL_PROVIDER=gmail): the Gmail address and a Google App Password. */
+  GMAIL_USER?: string;
+  GMAIL_APP_PASSWORD?: string;
+  /** Overrides for local runs; default smtp.gmail.com:465. */
+  SMTP_HOST?: string;
+  SMTP_PORT?: string;
 }
 
 export interface Ctx {

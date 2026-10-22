@@ -23,6 +23,8 @@ test("sending stays off until a provider is fully configured", () => {
   assert.equal(sendingEnabled({ EMAIL_PROVIDER: "brevo", MAIL_FROM: "brief@aura.example" }), false);
   assert.equal(sendingEnabled({ EMAIL_PROVIDER: "brevo", BREVO_API_KEY: "k", MAIL_FROM: "brief@aura.example" }), true);
   assert.equal(sendingEnabled({ EMAIL_PROVIDER: "brevo", RESEND_API_KEY: "k", MAIL_FROM: "brief@aura.example" }), false);
+  assert.equal(sendingEnabled({ EMAIL_PROVIDER: "gmail", GMAIL_USER: "me@gmail.com" }), false);
+  assert.equal(sendingEnabled({ EMAIL_PROVIDER: "gmail", GMAIL_USER: "me@gmail.com", GMAIL_APP_PASSWORD: "abcd efgh ijkl mnop" }), true);
 });
 
 test("confirmation mail links to confirm and to leave", () => {
