@@ -4,10 +4,10 @@
   "previous_articles": 236,
   "rising": [
     {
-      "term": "bill",
-      "recent": 10,
-      "previous": 3,
-      "change": 7
+      "term": "son",
+      "recent": 8,
+      "previous": 0,
+      "change": 8
     },
     {
       "term": "probe",
@@ -16,40 +16,10 @@
       "change": 7
     },
     {
-      "term": "son",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
-    },
-    {
       "term": "demand",
       "recent": 7,
       "previous": 1,
       "change": 6
-    },
-    {
-      "term": "fraud",
-      "recent": 11,
-      "previous": 6,
-      "change": 5
-    },
-    {
-      "term": "alleged",
-      "recent": 10,
-      "previous": 5,
-      "change": 5
-    },
-    {
-      "term": "assembly",
-      "recent": 8,
-      "previous": 3,
-      "change": 5
-    },
-    {
-      "term": "national",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
     },
     {
       "term": "arrests",
@@ -62,6 +32,36 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "tackle",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "targets",
+      "recent": 7,
+      "previous": 3,
+      "change": 4
+    },
+    {
+      "term": "abuja",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
+    },
+    {
+      "term": "interest",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "projects",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
     }
   ],
   "falling": [
@@ -72,21 +72,15 @@
       "change": -9
     },
     {
-      "term": "court",
-      "recent": 6,
-      "previous": 14,
+      "term": "efcc",
+      "recent": 11,
+      "previous": 19,
       "change": -8
     },
     {
       "term": "oil",
-      "recent": 6,
-      "previous": 14,
-      "change": -8
-    },
-    {
-      "term": "petrol",
-      "recent": 3,
-      "previous": 11,
+      "recent": 5,
+      "previous": 13,
       "change": -8
     },
     {
@@ -96,51 +90,57 @@
       "change": -8
     },
     {
-      "term": "tinubu",
-      "recent": 4,
-      "previous": 11,
-      "change": -7
-    },
-    {
       "term": "highway",
       "recent": 2,
       "previous": 9,
       "change": -7
     },
     {
-      "term": "discount",
-      "recent": 1,
-      "previous": 8,
+      "term": "audit",
+      "recent": 0,
+      "previous": 7,
       "change": -7
     },
     {
-      "term": "fuel",
-      "recent": 1,
-      "previous": 8,
-      "change": -7
+      "term": "court",
+      "recent": 8,
+      "previous": 14,
+      "change": -6
     },
     {
-      "term": "subsidy",
-      "recent": 1,
+      "term": "tinubu",
+      "recent": 5,
+      "previous": 11,
+      "change": -6
+    },
+    {
+      "term": "warns",
+      "recent": 3,
+      "previous": 9,
+      "change": -6
+    },
+    {
+      "term": "dangote",
+      "recent": 2,
       "previous": 8,
-      "change": -7
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 138,
-      "previous": 165
+      "recent": 134,
+      "previous": 163
     },
     {
       "category": "Legal",
-      "recent": 33,
-      "previous": 39
+      "recent": 35,
+      "previous": 40
     },
     {
       "category": "Company",
-      "recent": 27,
-      "previous": 32
+      "recent": 29,
+      "previous": 33
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-23 01:25:26"
+  "generated": "2026-10-23 12:31:01"
 }
