@@ -3,10 +3,10 @@
     {
       "key": "state security service",
       "label": "State Security Service",
-      "recent_avg": 30.0,
+      "recent_avg": 26.7,
       "previous_avg": 85.0,
-      "delta": -55.0,
-      "recent_mentions": 2,
+      "delta": -58.3,
+      "recent_mentions": 3,
       "previous_mentions": 1
     },
     {
@@ -67,10 +67,10 @@
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 43.3,
-      "previous_avg": 31.2,
-      "delta": 12.1,
+      "previous_avg": 32.9,
+      "delta": 10.4,
       "recent_mentions": 3,
-      "previous_mentions": 8
+      "previous_mentions": 7
     },
     {
       "key": "content development and monitoring board",
@@ -129,20 +129,11 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 24.0,
+      "recent_avg": 25.0,
       "previous_avg": 27.9,
-      "delta": -3.9,
-      "recent_mentions": 15,
+      "delta": -2.9,
+      "recent_mentions": 16,
       "previous_mentions": 21
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 37.0,
-      "previous_avg": 33.5,
-      "delta": 3.5,
-      "recent_mentions": 5,
-      "previous_mentions": 10
     },
     {
       "key": "communications commission",
@@ -157,10 +148,19 @@
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 57.9,
-      "previous_avg": 57.8,
-      "delta": 0.1,
+      "previous_avg": 59.0,
+      "delta": -1.1,
       "recent_mentions": 14,
-      "previous_mentions": 16
+      "previous_mentions": 15
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 34.2,
+      "previous_avg": 33.5,
+      "delta": 0.7,
+      "recent_mentions": 6,
+      "previous_mentions": 10
     },
     {
       "key": "united airlines",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-23 17:46:55"
+  "generated": "2026-10-23 20:19:53"
 }
