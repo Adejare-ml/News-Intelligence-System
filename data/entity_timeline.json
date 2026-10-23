@@ -95,7 +95,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 66,
+      "total_mentions": 67,
       "points": [
         {
           "week": "2026-09-07",
@@ -135,8 +135,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 9,
-          "avg_risk": 62.2,
+          "mentions": 10,
+          "avg_risk": 60.0,
           "max_risk": 85
         }
       ]
@@ -334,7 +334,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 17,
+      "total_mentions": 18,
       "points": [
         {
           "week": "2026-09-14",
@@ -368,8 +368,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 15.0,
+          "mentions": 3,
+          "avg_risk": 13.3,
           "max_risk": 20
         }
       ]
@@ -820,6 +820,43 @@
       ]
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
       "total_mentions": 8,
@@ -866,43 +903,6 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1765,6 +1765,25 @@
       ]
     },
     {
+      "key": "exchange",
+      "label": "Nigerian Exchange Group",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "total_mentions": 4,
@@ -1824,6 +1843,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "standards organisation of",
+      "label": "Standards Organisation of Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 16.2,
+          "max_risk": 20
         }
       ]
     },
@@ -2371,19 +2403,6 @@
       ]
     },
     {
-      "key": "exchange",
-      "label": "Nigerian Exchange Group",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "navy",
       "label": "Nigerian Navy",
       "total_mentions": 3,
@@ -2561,15 +2580,21 @@
       ]
     },
     {
-      "key": "standards organisation of",
-      "label": "Standards Organisation of Nigeria",
+      "key": "state security service",
+      "label": "State Security Service",
       "total_mentions": 3,
       "points": [
         {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
           "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 16.7,
-          "max_risk": 20
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
         }
       ]
     },
@@ -3187,6 +3212,25 @@
       ]
     },
     {
+      "key": "government of the united kingdom",
+      "label": "Government of the United Kingdom",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "greenwich bank",
       "label": "Greenwich Bank",
       "total_mentions": 2,
@@ -3596,6 +3640,25 @@
       ]
     },
     {
+      "key": "judo federation",
+      "label": "Nigeria Judo Federation",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "labour congress",
       "label": "Nigeria Labour Congress",
       "total_mentions": 2,
@@ -3667,6 +3730,25 @@
         {
           "week": "2026-09-14",
           "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "not specified",
+      "label": "Not Specified",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -3861,25 +3943,6 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "state security service",
-      "label": "State Security Service",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -4719,6 +4782,19 @@
       ]
     },
     {
+      "key": "anambra state government",
+      "label": "Anambra State Government",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "anthony kila",
       "label": "Anthony Kila",
       "total_mentions": 1,
@@ -5419,59 +5495,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "enugu state local government councils",
-      "label": "Enugu State Local Government Councils",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "euracare",
-      "label": "Euracare",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "european investment bank",
-      "label": "European Investment Bank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "everkind",
-      "label": "Everkind Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-23 01:25:30"
+  "generated": "2026-10-23 12:31:05"
 }

@@ -671,6 +671,12 @@
       "totals": {}
     },
     {
+      "name": "Zeenab Foods Limited",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "the Federal High Court",
       "contracts": 1,
       "undisclosed": 1,
@@ -680,8 +686,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 126,
-      "undisclosed": 78,
+      "contracts": 127,
+      "undisclosed": 79,
       "totals": {
         "NGN": 20779214090000.0,
         "USD": 47797140000.0
@@ -1172,5 +1178,5 @@
       }
     }
   ],
-  "generated": "2026-10-23 01:25:30"
+  "generated": "2026-10-23 12:31:05"
 }

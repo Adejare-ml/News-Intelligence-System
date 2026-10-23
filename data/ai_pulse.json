@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-23 01:25:25",
+  "generated": "2026-10-23 12:31:00",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2364,
-      "downloads": 51911
+      "likes": 2475,
+      "downloads": 57715
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1307,
-      "downloads": 512524
-    },
-    {
-      "id": "OpenMOSS-Team/MOSS-Image-SFT",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "task": "text-to-image",
-      "likes": 585,
-      "downloads": 6890
+      "likes": 1346,
+      "downloads": 534837
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 540,
-      "downloads": 420
+      "likes": 613,
+      "downloads": 1904
+    },
+    {
+      "id": "OpenMOSS-Team/MOSS-Image-SFT",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+      "task": "text-to-image",
+      "likes": 619,
+      "downloads": 7658
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
       "task": "text-to-image",
-      "likes": 489,
-      "downloads": 5013
+      "likes": 508,
+      "downloads": 5618
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8902,
-      "downloads": 2054990
+      "likes": 8966,
+      "downloads": 2026951
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 916,
-      "downloads": 16305
+      "likes": 933,
+      "downloads": 17017
     },
     {
-      "id": "google/embeddinggemma-2",
-      "url": "https://huggingface.co/google/embeddinggemma-2",
-      "task": "feature-extraction",
-      "likes": 2845,
-      "downloads": 185259
+      "id": "Comfy-Org/MOSS-Image",
+      "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+      "task": "",
+      "likes": 385,
+      "downloads": 1606363
     }
   ],
   "papers": [
     {
-      "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
-      "url": "https://huggingface.co/papers/2610.27233",
+      "title": "Realism VS Accuracy: Event Sequence Forecasting from a Generative Modeling Perspective",
+      "url": "https://huggingface.co/papers/2610.12586",
       "upvotes": 0
     },
     {
-      "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
-      "url": "https://huggingface.co/papers/2610.26836",
+      "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
+      "url": "https://huggingface.co/papers/2610.22951",
       "upvotes": 1
     },
     {
-      "title": "Bridged Self-Distillation for On-Policy Learning",
-      "url": "https://huggingface.co/papers/2610.26397",
+      "title": "SplatLab: Autonomous Scientific Discovery for 3DGS Research",
+      "url": "https://huggingface.co/papers/2610.30468",
       "upvotes": 1
     },
     {
-      "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
-      "url": "https://huggingface.co/papers/2610.28441",
-      "upvotes": 2
+      "title": "RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation",
+      "url": "https://huggingface.co/papers/2610.20091",
+      "upvotes": 8
     },
     {
-      "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
-      "url": "https://huggingface.co/papers/2610.28940",
-      "upvotes": 9
+      "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
+      "url": "https://huggingface.co/papers/2610.30949",
+      "upvotes": 45
     },
     {
-      "title": "FrontierCS 2: A Benchmark for Computer Science R&D",
-      "url": "https://huggingface.co/papers/2610.29932",
-      "upvotes": 2
+      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
+      "url": "https://huggingface.co/papers/2610.31329",
+      "upvotes": 142
     }
   ]
 }
