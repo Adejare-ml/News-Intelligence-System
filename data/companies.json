@@ -2233,9 +2233,9 @@
   },
   {
     "Company": "First HoldCo",
-    "Mention Count": 17,
-    "Last Seen": "2026-10-23 12:25",
-    "Industry": "Financial Services",
+    "Mention Count": 18,
+    "Last Seen": "2026-10-23 17:42",
+    "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -9550,5 +9550,21 @@
     "Industry": "Healthcare",
     "Risk Level": "Low",
     "First Seen": "2026-10-23 12:27"
+  },
+  {
+    "Company": "Oneremit",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-23 17:41",
+    "Industry": "Fintech",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-23 17:41"
+  },
+  {
+    "Company": "Blockradar",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-23 17:41",
+    "Industry": "Blockchain/Fintech",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-23 17:41"
   }
 ]

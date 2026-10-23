@@ -141,15 +141,16 @@
       }
     },
     {
-      "name": "Ekiti State Government",
-      "contracts": 1,
+      "name": "National Information Technology Development Agency",
+      "contracts": 2,
       "undisclosed": 0,
       "totals": {
-        "NGN": 3000000000.0
+        "NGN": 3000000000.0,
+        "USD": 10400000.0
       }
     },
     {
-      "name": "National Information Technology Development Agency",
+      "name": "Ekiti State Government",
       "contracts": 1,
       "undisclosed": 0,
       "totals": {
@@ -686,11 +687,11 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 127,
+      "contracts": 128,
       "undisclosed": 79,
       "totals": {
         "NGN": 20779214090000.0,
-        "USD": 47797140000.0
+        "USD": 47807540000.0
       }
     },
     {
@@ -1178,5 +1179,5 @@
       }
     }
   ],
-  "generated": "2026-10-23 12:31:05"
+  "generated": "2026-10-23 17:46:55"
 }

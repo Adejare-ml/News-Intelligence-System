@@ -22,10 +22,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 48.5,
-      "previous_avg": 24.3,
-      "delta": 24.2,
+      "previous_avg": 24.6,
+      "delta": 23.9,
       "recent_mentions": 10,
-      "previous_mentions": 15
+      "previous_mentions": 14
     },
     {
       "key": "socio economic rights and accountability project",
@@ -53,6 +53,24 @@
       "delta": -16.7,
       "recent_mentions": 3,
       "previous_mentions": 2
+    },
+    {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "recent_avg": 27.5,
+      "previous_avg": 15.0,
+      "delta": 12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 43.3,
+      "previous_avg": 31.2,
+      "delta": 12.1,
+      "recent_mentions": 3,
+      "previous_mentions": 8
     },
     {
       "key": "content development and monitoring board",
@@ -100,13 +118,13 @@
       "previous_mentions": 3
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 37.5,
-      "previous_avg": 32.9,
-      "delta": 4.6,
-      "recent_mentions": 4,
-      "previous_mentions": 7
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 20.0,
+      "previous_avg": 15.0,
+      "delta": 5.0,
+      "recent_mentions": 3,
+      "previous_mentions": 2
     },
     {
       "key": "federal government of",
@@ -127,15 +145,6 @@
       "previous_mentions": 10
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 20.0,
-      "previous_avg": 23.3,
-      "delta": -3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 3
-    },
-    {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 15.0,
@@ -154,6 +163,15 @@
       "previous_mentions": 16
     },
     {
+      "key": "united airlines",
+      "label": "United Nigeria Airlines",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "nipco",
       "label": "NIPCO",
       "recent_avg": 85.0,
@@ -161,26 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "pension reform task team",
-      "label": "Pension Reform Task Team",
-      "recent_avg": 65.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 65.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-23 12:31:05"
+  "generated": "2026-10-23 17:46:55"
 }

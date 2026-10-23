@@ -1,29 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-23 12:27:57 (UTC)
-**Run Window:** 2026-10-23, all runs to 12:27 (run 2 of the day)
+**Generated on:** 2026-10-23 17:43:34 (UTC)
+**Run Window:** 2026-10-23, all runs to 17:43 (run 3 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 15
+- **Total Articles Processed:** 21
 - **High Risk Signals:** 0
 - **Appointments Logged:** 2
-- **Procurement Awards:** 1
+- **Procurement Awards:** 2
 
 ---
 
+**Report Date:** 2026‑10‑23  
+**Coverage Period:** All articles published on 2026‑10‑23 up to 17:43
+
 ### Key Developments  
-- Nigeria’s **Econ­omic and Finance Crimes Commission (EFCC)** had its bid to freeze Aisha Achimugu’s accounts rejected by the Appeal Court, a blow to the agency’s enforcement push. ([The Eagle Online](https://news.google.com/rss/articles/CBMirgFBVV95cUxQcnFQaEFhclJwdzRhS2pzY2dJSk5iWXFfdERvYTA1M052T2pWTVQ2aEt3SVdOVTVuTXMyUV8tQUktSkdabFpYbnBpTVA0WG1tdlY1ZXVPS04zS1drLTJtWnZveEZUZF9VcjBIZTUzQkctSDY0T3FQdmpjRkFfenZFcUZUSG5GV2tMNzhGVzRXTFEwd0VFTVdZUGsxQ3hwbWViMVV1ajF2algxbTdTT3c?oc=5))  
-- **Standards Organisation of Nigeria (SON)** certified 17,866 products, intensifying the fight against sub‑standard goods. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqgFBVV95cUxObzJFeVpVMGFKMVNaYzlZSENiZnlhWmZ3QWo4TEN2OG1KckZWLW1Hc0lxc2JnVm9PUE9iQ0pfeHlZcV9CQUlLaDNIQ0o4S1luNlItcWhDdjFKamUzYW80SDJuMmdtd1V0OXpHRTBIWWwwMllaUzdRbm5fbW5qVm42WHhVMl9VSlByQmxvSVJQT1VsWUlYX2R6ZXJ1SHZlZ0hndEZwOFpraDhfQQ?oc=5))  
-- The **Nigerian Exchange Group (NGX)** imposed N123.17 million fines on 15 listed firms for delayed financial filings. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMipwFBVV95cUxPWHhqR1B3ZnBaMjJMQW5jWjdza19EVjVHajdXbGZPLS15QnV6NDZ3NElyekR2OW9ZM0FlRXpGaktSQlQtMzdnNkhvc2l4UGpkbkMxdW94T3JNdk4yRkw4Mk1scU1Oamd3OEFIdWNUNENhcVVzWEQ5TGNwSmhyeXdmUHhMUGRLZ2VwMHZTOU5lOGFsM1lRZGZrdjhyLW9ZQ041dkFmSVMxbw?oc=5))  
+- President Tinubu officially flagged off NITDA’s $10.4 million Renewed Hope Innovation Hub, a major IT investment initiative. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPU1pPbENVTlJVT0NuV2dsNTUwZXVkdUZ2cHUtVkF4cEpuMjBieW00SDMtSE4tTG1EVEJIbWp5UkFQZGplTGRDcDMyaWV3SEFEMXJTOHMydW1UYXAwYjdROGVMdTlrelFybXhxMDhGU1Y2SlRoWjQ3YlNZRzhFLXhZZFduNE8tRkpQNkZZ?oc=5))  
+- Oneremit announced a partnership with Blockradar to facilitate stablecoin flows across its cross‑border payment network, signalling fintech expansion into digital assets. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdTBuVTZ0bHA2cTZTN2NoU0JOZk9sWGlKRW0tblFfWUtBeVM4aW01ejdUdlRQdEJUZ2pERjQwSnh1QlVzYTd3V0hOWnBsN0k3UkZxTExWQlRRWHhpSndaakwxZjFWY2NSSmNtVGx5aFhYZ2FoUEU0dTlmR3lfSU9SMno5NkplSGhmWGp3SzRsTjlsQ1VEakthTl81bHJSUktqQTFSSzRISzBwczlKU3g1cGlJUmV3RmJsdWRoemNZak9zRGNXOFRFZ01Ob0lVQlgt?oc=5))  
+- Lagos‑Calabar coastal highway, overseen by the Federal Ministry of Works, remains without a unified engineering design, raising regulatory compliance concerns. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbENLb25LX3FocmtZMVpZemRxMkZXZmhoWnRmZVQ5SmJiWUdnY2VYM1hveXB4NDZoN2JkODNmSzBTX2hoTHR6M0Vad05LTVF6LUgzME9BT1E0bWlKXzkyMklYTmp1ck5oWHJHY3Noakh6NElscVFOVzVTLWw1dWpiRXhEX2ZNZ3Vq?oc=5))  
+- The Oyo State government has introduced strict penalties for open grazing, including a five‑year prison term and a ₦5 million fine, tightening rural land use policies. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilwFBVV95cUxPM1hGd2FQekE1Y042MGZCeVRGYl9aUHN5WUl6RzY0ZXByMGU2TWIzMHk2S3ZpQXZxbGYyVk56T1IxS0I1cDlUZW41M19rQ1A1NHdaVDljeWtWVUxLSVQ5U01ldWR6SkNUd0JRVk16bDdVcDRDbUZXZ1VGWGJIbzBXQnVnZXBsVUNLRjJNbE5MdGIyRUp3WGNn?oc=5))  
+- Nigeria‑UK memorandum enhances cooperation on AI standards and the digital economy, signalling alignment with global tech governance. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMipAFBVV95cUxQYXNoYmhJMzJFMC1TUThMSWdUdjRxa0VmTGE1bWNSTGxzWkxVVFBsTVNhbEdyd2M5QTlBeURhWldoblRHS0hRd3NOWVRueTBsVXg4R2NXdjRPRkxQV1VpRm83VWRtMW9od0s2UVllSTQ2N28yc0sxWUljMTc4bzdaTnJmRXVxY0dTS0lFYnlmMkhYYjVkdExKQzUwd2F1eXVCZ3JVMw?oc=5))  
 
 ### High Risk Alerts  
 
 ### Beneficial Ownership & PSC Disclosures  
-No PSC disclosures identified.  
+No PSC disclosures were identified in the current coverage cycle; no holders, percentages, or filing references were provided.
 
 ### Procurement & Board Changes  
-- **Zeenab Foods Limited** released a call for expressions of interest to supply agricultural commodities, setting a procurement schedule. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWW5UUXBGNlBVOW5Ob1FOaWJfOGRUeE9PWkxkYTRRRmZkdFh5X2s1aEFsSGdDcWhuLXhtS0dNSDlYYUNfbEJQXzNHV1dnX0l4VllmTU5nSmRwOVpqSUZNdVI4QVFyU2hkTGxBeGI3WE1EbUFtN2hxNWdYZW4tWC1SZ01UeWRNeUY5OGl4MUEzbmRlaTBWY2EwTnBrMzhySmF0c2taYzdqSnRqVm1tcUFka2lCRDcydTJoUGR1U0Z0Rm9BTXhlTmdwQ1IwOFA5OWZHWnVlSnBPRDcwZXNpNGwxT3RQdDEzendIdjVUbA?oc=5))  
-- **First HoldCo** added a new non‑executive director to its board, broadening governance oversight. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMitAFBVV95cUxQOThJNVBoZkJfaVNacTZzaUtUMnJhN3EwQXFpSlJFSDd5MmNwckpCcTFyWkFuYWlmcmRfeS1sTS1YWlVNSFN5LXZEaEZiRElVblpMcEZQTXFqbW4yZGpyQVZSdDVPYnlwblZmMjdkQ1dya2lBb19vTHM0cWd3dFh4a0g0ckJIZGNFSmxPX0FMR0l3bGZjSy1aWEVBRDItanNoNDJya01JbEozM0F1RFJFMmYwQzA?oc=5))  
-- **National Intelligence Service (NISS)** appointed a former Director General of the State Security Service as its Governing Board Chair, heightening political linkage at senior security levels. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxNamFQQ29EZW1hQm90UWdELU5yMTRsOVRDLTMyRXBSZTloal9RcDAyMm5JRVBuOUV0MEt3V1FHOUdXcFFKeXBEZ3Z5c1FHZG9ZbFVUMVFHSEdLQmkxcl9NN3AxaTF6UFRCbDdiSHpGdE1fNnhkcDVpcjZSRmREZW9UMkllbmRGTF8yQ1NCTWxRRlozRlJwVVlYaHBUekpsZnFQZjV2MUI2SllfWVY0ekFfTThUZjZZQWthaVZ1MQ?oc=5))  
+- First HoldCo announced the appointment of a new non‑executive director to its board, potentially altering governance dynamics. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNTBHajQwSDNoVVZZRXhqZ3RzNFhKUHgzalREMndqWmN1eHRCVzNaZmhsczdNelF6QnFKMkV2ZHV3ejY0ZDFqSUo2MzVCMS02NVB5bENSM3ZhZHBMS2w3amI4aFlzOEdIa0ltSm5VZmVZYVNEalU3SDFSZHpOUWtZYURFMzZUN1FyWTlJV1p1X2hSNnpkV0RVNWhIWm5FclFDU18xdTF4Z1RVS3VpNDBWOHpZa3FZejVlUm5BWGNDaGlCZw?oc=5))  
+- President Tinubu appointed a former Director General of the State Security Service as Governing Board Chair of the National Intelligence Service, marking a significant leadership transition. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxNamFQQ29EZW1hQm90UWdELU5yMTRsOVRDLTMyRXBSZTloal9RcDAyMm5JRVBuOUV0MEt3V1FHOUdXcFFKeXBEZ3Z5c1FHZG9ZbFVUMVFHSEdLQmkxcl9NN3AxaTF6UFRCbDdiSHpGdE1fNnhkcDVpcjZSRmREZW9UMkllbmRGTF8yQ1NCTWxRRlozRlJwVVlYaHBUekpsZnFQZjV2MUI2SllfWVY0ekFfTThUZjZZQWthaVZ1MQ?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
