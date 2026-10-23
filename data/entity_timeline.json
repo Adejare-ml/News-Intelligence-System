@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 86,
+      "total_mentions": 87,
       "points": [
         {
           "week": "2026-09-07",
@@ -43,8 +43,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 13,
-          "avg_risk": 21.2,
+          "mentions": 14,
+          "avg_risk": 22.5,
           "max_risk": 40
         }
       ]
@@ -144,7 +144,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 51,
+      "total_mentions": 52,
       "points": [
         {
           "week": "2026-09-07",
@@ -184,8 +184,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 5,
-          "avg_risk": 37.0,
+          "mentions": 6,
+          "avg_risk": 34.2,
           "max_risk": 85
         }
       ]
@@ -1860,6 +1860,25 @@
       ]
     },
     {
+      "key": "state security service",
+      "label": "State Security Service",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "taraba state government",
       "label": "Taraba State Government",
       "total_mentions": 4,
@@ -2190,6 +2209,25 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "jpmorgan",
+      "label": "JPMorgan",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
         }
       ]
     },
@@ -2601,25 +2639,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "state security service",
-      "label": "State Security Service",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
         }
       ]
     },
@@ -3352,25 +3371,6 @@
       ]
     },
     {
-      "key": "jpmorgan",
-      "label": "JPMorgan",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "jigawa state government",
       "label": "Jigawa State Government",
       "total_mentions": 2,
@@ -3380,6 +3380,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "kaduna state house of assembly",
+      "label": "Kaduna State House of Assembly",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3570,6 +3589,19 @@
         {
           "week": "2026-10-12",
           "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national intelligence service",
+      "label": "National Intelligence Service",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -5405,6 +5437,19 @@
       ]
     },
     {
+      "key": "development bank of",
+      "label": "Development Bank of Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "douye diri",
       "label": "Douye Diri",
       "total_mentions": 1,
@@ -5468,46 +5513,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "edo state government",
-      "label": "Edo State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "edo state house of assembly",
-      "label": "Edo State House of Assembly",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "effiong okon",
-      "label": "Effiong Okon",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-23 17:46:55"
+  "generated": "2026-10-23 20:19:53"
 }

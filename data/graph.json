@@ -133,6 +133,18 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
       "type": "agency",
@@ -187,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "f8d3fab1ad95",
+      "label": "Kaduna State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b2cb7eb633cf",
       "label": "All Progressives Congress (APC)",
       "type": "agency",
@@ -211,14 +229,8 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "e94d960651d4",
+      "label": "Development Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,20 +241,26 @@
       "risk": "Low"
     },
     {
-      "id": "85a88efc62db",
-      "label": "Nigeria Extractive Industries Transparency Initiative",
-      "type": "agency",
+      "id": "f1f131ace5c4",
+      "label": "Uba Sani",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
       "id": "e153c1875584",
       "label": "Dave Umahi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "77b2dee0aac9",
+      "label": "Unnamed former SSS DG",
       "type": "person",
       "risk": "Low"
     },
@@ -421,12 +439,6 @@
       "risk": "Low"
     },
     {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "512a18337770",
       "label": "LAWMA boss",
       "type": "person",
@@ -472,24 +484,6 @@
       "id": "337f5ec18620",
       "label": "Barau Jura Barau",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "177791d52ca2",
-      "label": "Oyedele",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "756d4b0b3d43",
-      "label": "Unnamed Archbishop",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "698e510c77d0",
-      "label": "Unnamed Church",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -711,10 +705,22 @@
   ],
   "edges": [
     {
+      "id": "1d53d5ab75b4",
+      "from": "f1f131ace5c4",
+      "to": "4b3b1b76a8e8",
+      "label": "Appointed as Governor"
+    },
+    {
       "id": "81c12b1ceeb0",
       "from": "e153c1875584",
       "to": "23d8905a6cbb",
       "label": "Appointed as Minister of Works"
+    },
+    {
+      "id": "fc7b49bd86ca",
+      "from": "77b2dee0aac9",
+      "to": "133de1c3396b",
+      "label": "Appointed as Governing Board Chair"
     },
     {
       "id": "234af74126a1",
@@ -835,18 +841,6 @@
       "from": "337f5ec18620",
       "to": "8e95a32117a9",
       "label": "Appointed as Deputy Senate President"
-    },
-    {
-      "id": "d129d54dae65",
-      "from": "177791d52ca2",
-      "to": "0c2be969618b",
-      "label": "Appointed as Government Representative"
-    },
-    {
-      "id": "fa79ffd6dedf",
-      "from": "756d4b0b3d43",
-      "to": "698e510c77d0",
-      "label": "Appointed as Archbishop"
     },
     {
       "id": "a5e36b5f552f",
