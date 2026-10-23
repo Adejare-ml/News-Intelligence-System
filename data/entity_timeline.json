@@ -2561,6 +2561,19 @@
       ]
     },
     {
+      "key": "standards organisation of",
+      "label": "Standards Organisation of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 16.7,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "sunrise power and transmission company",
       "label": "Sunrise Power and Transmission Company Limited",
       "total_mentions": 3,
@@ -2915,6 +2928,25 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3833,19 +3865,6 @@
       ]
     },
     {
-      "key": "standards organisation of",
-      "label": "Standards Organisation of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "state security service",
       "label": "State Security Service",
       "total_mentions": 2,
@@ -4609,6 +4628,19 @@
       ]
     },
     {
+      "key": "all progressives congress apc",
+      "label": "All Progressives Congress (APC)",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "all progressives movement",
       "label": "All Progressives Movement",
       "total_mentions": 1,
@@ -5246,19 +5278,6 @@
       ]
     },
     {
-      "key": "delta state government",
-      "label": "Delta State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "douye diri",
       "label": "Douye Diri",
       "total_mentions": 1,
@@ -5452,20 +5471,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "fct councils",
-      "label": "FCT Councils",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
     }
   ],
-  "generated": "2026-10-22 20:32:54"
+  "generated": "2026-10-23 01:25:30"
 }
