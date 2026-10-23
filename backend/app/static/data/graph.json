@@ -121,6 +121,24 @@
       "risk": "Low"
     },
     {
+      "id": "aa9abf2767d5",
+      "label": "Standards Organisation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bfc1f02f682e",
+      "label": "Delta State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b2cb7eb633cf",
+      "label": "All Progressives Congress (APC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -219,24 +237,6 @@
     {
       "id": "ac79f04a4e30",
       "label": "Kano State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b27f282d6347",
-      "label": "Osun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
       "risk": "Low"
     },

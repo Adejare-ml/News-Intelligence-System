@@ -1,30 +1,35 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-22 20:29:56 (UTC)
-**Run Window:** 2026-10-22, all runs to 20:29 (run 4 of the day)
+**Generated on:** 2026-10-23 01:24:22 (UTC)
+**Run Window:** 2026-10-23, all runs to 01:24 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 32
-- **High Risk Signals:** 2
-- **Appointments Logged:** 2
-- **Procurement Awards:** 1
+- **Total Articles Processed:** 3
+- **High Risk Signals:** 0
+- **Appointments Logged:** 0
+- **Procurement Awards:** 0
 
 ---
 
-### Key Developments  
-- Governor Lawal swears in five new permanent secretaries across ministries ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMinwFBVV95cUxQLWZzT3NnSDJzTVhaQjVUNzVTaFZ1Q2U5dUdVZ0VGN2VXMzdpZ1N6U3FUSUhkS1FpSjRncklvdXV0VldjVWJNWkFwUXdRZUR3bGRtTV9TZWZieUhSeXZmMlh1WElfT1ZxMVM2QXluY1lzdm5DSHhNYzg2VU1EdW9rb05oRkFpV3Vib0wzWVpUdUtUdGFtdUhPWVRZM3V1Uzg?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMinwFBVV95cUxQLWZzT3NnSDJzTVhaQjVUNzVTaFZ1Q2U5dUdVZ0VGN2VXMzdpZ1N6U3FUSUhkS1FpSjRncklvdXV0VldjVWJNWkFwUXdRZUR3bGRtTV9TZWZieUhSeXZmMlh1WElfT1ZxMVM2QXluY1lzdm5DSHhNYzg2VU1EdW9rb05oRkFpV3Vib0wzWVpUdUtUdGFtdUhPWVRZM3V1Uzg?oc=5))  
-- NBTI unveils a $600 million innovation investment pipeline to spur biotech development ([Punch Newspapers](https://news.google.com/rss/articles/CBMiigFBVV95cUxNYkVOQ1U1eTRFVXIwc1hfRHVTRDZ4REtvVGdwWEtPbzlHSkJVbzU3LTl5alRlZnNMb1FJdHk1eHJlVlppNUpOVHNIV0VxQkJhc2E1TTd6aXpkUGtfWTZlenFwTkJMWUY3eXJENy1QQWdCV0pXQW1ZSkdSd1UwM3pJdlJBcVM0eDBkSUE?oc=5)). ([Punch Newspapers](https://news.google.com/rss/articles/CBMiigFBVV95cUxNYkVOQ1U1eTRFVXIwc1hfRHVTRDZ4REtvVGdwWEtPbzlHSkJVbzU3LTl5alRlZnNMb1FJdHk1eHJlVlppNUpOVHNIV0VxQkJhc2E1TTd6aXpkUGtfWTZlenFwTkJMWUY3eXJENy1QQWdCV0pXQW1ZSkdSd1UwM3pJdlJBcVM0eDBkSUE?oc=5))  
-- NAU commission proposes new universities in Delta and Cross River states; Senate passes the bills ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZDRMemFyVjhTRV93RHFFU3pnN1Fja3ZpOWZJMW9uNmhkQjZJVWdGZFFod25ULXo5T05KOEVDVWRTWC1XcWdmM3NCNHNMa293WFIzWlo3Qmp0ck5teEhRbk1Yczl4NVg5WE12WXVMZUFGb2dfaHJHbm10TFRxOTlZRm41eFJpbWQwNTJxZFhmRVlCcnc5X2E4TVVUQlctSW1jM04tQ1lvRXU3aU85YXFCLVlBRHRscFZval9FWmRJM2xzWGlfemRwcE55WGQwWkpiYktHRUl1TEs3THM?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZDRMemFyVjhTRV93RHFFU3pnN1Fja3ZpOWZJMW9uNmhkQjZJVWdGZFFod25ULXo5T05KOEVDVWRTWC1XcWdmM3NCNHNMa293WFIzWlo3Qmp0ck5teEhRbk1Yczl4NVg5WE12WXVMZUFGb2dfaHJHbm10TFRxOTlZRm41eFJpbWQwNTJxZFhmRVlCcnc5X2E4TVVUQlctSW1jM04tQ1lvRXU3aU85YXFCLVlBRHRscFZval9FWmRJM2xzWGlfemRwcE55WGQwWkpiYktHRUl1TEs3THM?oc=5))  
-- NIMASA detains four vessels for Cabotage breaches, reinforcing maritime regulatory compliance ([Vanguard News](https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzZ2dldCM0xxNDNfR1dQMmxGalVBNTJIVk5jLXJuQlpmcrIWB7CMdoco?oc=5)). ([Vanguard News](https://news.google.com/rss/articles/CBMikAFBVV95cUxNTzZ2dldCM0xxNDNfR1dQMmxGalVBNTJIVk5jLXJuQlpmcklQWFFIQ0RUT2hYUTRJdm13QjFwazltSDdwLVRXQ3hLMkhkb1VwMkZ0clhqY0o1N1gyLTB4UmFfZFluQ2RidzlpVDJkSlNVVWZ4WlFxc0tlU2lEbnVxTl9WNjFuY3EyelVpdEJvVnTSAZYBQVVfeXFMTUM1TlR1aTVrU1laYzRoODhIQXBuc1g2amtHMWUxNVIzZ04wQUFMcHFOcjFOaEdOQUstS0xQTFZ1V3NQdHFpeG1NdVFNTmh3dmQ3RWlhTWJqd0ZjTWxrdGFXeHBmZkJUWi1oN3ZwR3ZfZDhtX0J6dFBXMFZzOEVlSE5lNWl6eHltWVgzTmdXTFFBVVhDNzh3?oc=5))  
-- Acton Swifts a digital infrastructure push: NITDA urges MDAs to migrate to IPv6, aligning with national digital goals ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMipAFBVV95cUxQWmtpcnFya09CevdxcQwPmhPb1lmadcA?oc=5)). ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikgFBVV95cUxOckp1UGQ4aEZlb1pVZFFCVV9STzdwcUVxRlE3ZXdhQS16MndtRXFQd2FWUmhjd0dkZlVsLTZib1JROW9pMXFFS19ob1N1eGxlYmQyc00yQUpoZEdPVURzbVl4T29kWHpDVlgxWDhVQXFTcFBrdDJlOEFIV2JPSTBJaFFsNzFGY3ViOWgzcHRQZGlBQQ?oc=5))  
+**Report Date:** 2026-10-23  
+**Coverage:** All articles published on 2026-10-23 up to 01:24
 
-### High Risk Alerts  
-- EFCC frozen accounts related to a N1.06 bn fraud case – *risky* ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxOOVZ1NWF4aHI4ejk3ZkYzRDBnTnViMTMxTncxU3F6NFBNelBRUWRJUTJ3QnFiWTNjUEp2UWJxRjViV2hLSWxFYmhoYXEtVURSNXJFaXk1YnZNenk3M0liVW1zZmh2Vkd6OU8xR1BPazJuWlpsb0pRdzdlOWRsT3JFZ2RiUmh5R2hMVWN5UFNvekRkMldHSFBtTjNXcE9UUXBqTllwVGM3eVlIa015YlBLTmh2dv9I?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxOOVZ1NWF4aGI4ejk3ZkYzRDBnTnViMTMxTncxU3F6NFBNelBRUWRJUTJ3QnFiWTNjUEp2UWJxRjViV2hLSWxFYmhoYXEtVURTNXJFaXk1YnZNenk3M0liVW1zZmh2Vkd6OU8xR1BPazJuWlpsb0pRdzdlOWRsT3JFZ2RiUmh5R2hMVWN5UFNvekRrMldHSFBtTjNXcE9UUXBqTllwVGM3eVlIa015YlBLTmh2djlpb1RHT21vMg?oc=5))  
+### Key Developments
 
-### Beneficial Ownership & PSC Disclosures  
-No publicly disclosed significant control or PSC information is present in the sourced articles.  
+* **Tinubu’s ₦10bn Ebola emergency fund still untouched, APC campaign council replies Atiku**. The APC campaign council has responded to claims made by Atiku Abubakar regarding a ₦10 billion Ebola emergency fund associated with President Tinubu, asserting that the funds remain untouched. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5AFBVV95cUxOYjktMHVZNzFMcXIxTzEtbEhaRUtLVmRUalpaa2oxYUlMQ1NEejBKQmVzamRNMGhMaWJKQjVxQi1ZQUpObkpMSkFhVVh3Tlg3VWV1TWUwNTkwTlFndjVFUjc0bU4yYTN1OEpOTEsxdW5KMnN4NW5PNV9mdHNKYU9UZVJVMTJyNXhMMlllamVTbGRkZjZ1NzN0d29LclNmVTl5MVpmelJJQVM0MzItNnAyVlh2eDgwdDlnb0g3Q1plWWl2QXQ5eDM0OUNNbV9PS2l1YnNjX2tieGoyZVBOM2V1RjVBYWQ?oc=5))  
+* **Otu budgets N987.8bn for 2027, capital projects get 72%**. The administration of Governor Otu has proposed a budget of N987.8 billion for the year 2027. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxOUTFNUS1xSTdsYkk0S085cnc4NFVILVV6d0Fyal9GWHdQcklBdFY0QXo5RXlqeWdheUhQOGdiT0hOanlTUk8zMzRRNUwyZ3g2cmlEejdNYlBiZm9pUnFyMWFhbTVTMVRENXpQVUhORlllU3lLSG5sSWlwcFpZWGZJWkF5RjN3Y254RFVnaXEzQ2RfSk9FMFRBNnVVX0g5dDJrUHBwY01BSGliR19kYTlnUThqSURMLW5KMUUxeFJFZkRZczRW?oc=5))  
+* **Mate Energy bags prestigious SON Award**. Mate Energy Industries Limited has received a Mandatory Conformity Assessment Programme quality award from the Standards Organisation of Nigeria (SON) under the 10-year category. ([The Punch](https://punchng.com/mate-energy-bags-prestigious-son-award/))  
 
-### Procurement & Board Changes  
-- Seplat Energy appoints new CEO Effiong Okon, signalling executive turnover ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5YM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPSkF6Vzh2bHo4emtmZUwwS2Yzb0h4Y2YwR2Fya3dmTGRYa096NVBRa2Y3amhXUU5qdUtxOW5YM21JZDk1THJCQTNqc3FtX0UyMC1JNmNTZGQ1SjlVclk3QnNmTlBkLU95RHhEb2FUcTlWMHBuS0JYd2FEUTBEcjdUT1VSeFJUcU1kLUJZbDZYc1U0dmQ4cjN6ZGc3Mk9oYlpybjZ3RDNSaWVtb1NNaVdWdm92bmRHSlRlMV9kUFROME5uSkt1Y1pn?oc=5))  
+### High Risk Alerts
+
+There are no critical governance threats or high-risk integrity alerts identified in today's monitored coverage.
+
+### Beneficial Ownership & PSC Disclosures
+
+The incoming data contains no beneficial ownership or person with significant control (PSC) filings.
+
+### Procurement & Board Changes
+
+No formal tender awards, public contract variations, or corporate board adjustments were reported across the covered channels.
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
