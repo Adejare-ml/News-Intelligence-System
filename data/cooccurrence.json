@@ -158,6 +158,10 @@
       "label": "Ishaku"
     },
     {
+      "key": "jpmorgan",
+      "label": "JPMorgan"
+    },
+    {
       "key": "kucoin",
       "label": "KuCoin Nigeria Limited"
     },
@@ -208,6 +212,10 @@
     {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency"
+    },
+    {
+      "key": "national intelligence service",
+      "label": "National Intelligence Service"
     },
     {
       "key": "national petroleum company",
@@ -480,6 +488,11 @@
     },
     {
       "a": "central bank of",
+      "b": "jpmorgan",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
       "b": "lagos chamber of commerce and industry",
       "weight": 2
     },
@@ -659,6 +672,11 @@
       "weight": 2
     },
     {
+      "a": "national intelligence service",
+      "b": "state security service",
+      "weight": 2
+    },
+    {
       "a": "national petroleum company",
       "b": "natural resource governance institute",
       "weight": 2
@@ -674,5 +692,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-23 17:46:55"
+  "generated": "2026-10-23 20:19:53"
 }
