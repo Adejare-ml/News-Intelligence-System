@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-23 12:31:00",
+  "generated": "2026-10-23 17:46:51",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2475,
+      "likes": 2534,
       "downloads": 57715
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1346,
+      "likes": 1388,
       "downloads": 534837
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 613,
+      "likes": 651,
       "downloads": 1904
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 619,
+      "likes": 639,
       "downloads": 7658
-    },
-    {
-      "id": "OpenMOSS-Team/MOSS-Image-Base",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
-      "task": "text-to-image",
-      "likes": 508,
-      "downloads": 5618
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8966,
+      "likes": 8990,
       "downloads": 2026951
+    },
+    {
+      "id": "OpenMOSS-Team/MOSS-Image-Base",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
+      "task": "text-to-image",
+      "likes": 514,
+      "downloads": 5618
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 933,
+      "likes": 941,
       "downloads": 17017
     },
     {
-      "id": "Comfy-Org/MOSS-Image",
-      "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
-      "task": "",
-      "likes": 385,
-      "downloads": 1606363
+      "id": "XHToken/Spark-X2.6-4B",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "task": "text-generation",
+      "likes": 401,
+      "downloads": 1060
     }
   ],
   "papers": [
     {
-      "title": "Realism VS Accuracy: Event Sequence Forecasting from a Generative Modeling Perspective",
-      "url": "https://huggingface.co/papers/2610.12586",
+      "title": "Bridging Exploration and Persona: Information-Directed Dueling for Test-Time Agent Personalization",
+      "url": "https://huggingface.co/papers/2610.24385",
       "upvotes": 0
     },
     {
-      "title": "MambaAct: Efficient Mamba Action Experts for Flow-Matching Vision-Language-Action Models",
-      "url": "https://huggingface.co/papers/2610.22951",
+      "title": "IF-MAP: Influence-Function-Inspired Agent Prioritization in Multi-Agent Systems",
+      "url": "https://huggingface.co/papers/2610.24383",
       "upvotes": 1
     },
     {
-      "title": "SplatLab: Autonomous Scientific Discovery for 3DGS Research",
-      "url": "https://huggingface.co/papers/2610.30468",
+      "title": "Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems",
+      "url": "https://huggingface.co/papers/2610.30418",
+      "upvotes": 4
+    },
+    {
+      "title": "HyperDrone: Simulation-to-Reality Transfer at Millions of Frames per Second",
+      "url": "https://huggingface.co/papers/2610.28950",
+      "upvotes": 0
+    },
+    {
+      "title": "BrickWright: Agentic Creation of Physically Feasible Brick Builds",
+      "url": "https://huggingface.co/papers/2610.31651",
       "upvotes": 1
     },
     {
-      "title": "RTAformer: Relation-Transition-Aware Transformer for Video Scene Graph Generation",
-      "url": "https://huggingface.co/papers/2610.20091",
-      "upvotes": 8
-    },
-    {
-      "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems",
-      "url": "https://huggingface.co/papers/2610.30949",
-      "upvotes": 45
-    },
-    {
-      "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels",
-      "url": "https://huggingface.co/papers/2610.31329",
-      "upvotes": 142
+      "title": "Who Takes the Lead? Model Ability and Task-Conditioned Collaboration with Humans",
+      "url": "https://huggingface.co/papers/2610.27148",
+      "upvotes": 4
     }
   ]
 }

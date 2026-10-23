@@ -24,10 +24,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 22,
-      "mentions": 45,
+      "companies": 23,
+      "mentions": 63,
       "risk": {
-        "Low": 17,
+        "Low": 18,
         "Medium": 5
       }
     },
@@ -38,16 +38,6 @@
       "risk": {
         "Low": 6,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 6,
-      "mentions": 28,
-      "risk": {
-        "Low": 3,
-        "Medium": 2,
-        "High": 1
       }
     },
     {
@@ -79,6 +69,25 @@
       }
     },
     {
+      "industry": "Financial Services",
+      "companies": 5,
+      "mentions": 11,
+      "risk": {
+        "Medium": 2,
+        "Low": 2,
+        "High": 1
+      }
+    },
+    {
+      "industry": "Fintech",
+      "companies": 7,
+      "mentions": 11,
+      "risk": {
+        "Medium": 3,
+        "Low": 4
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 1,
       "mentions": 11,
@@ -102,15 +111,6 @@
       "risk": {
         "Low": 8,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 6,
-      "mentions": 10,
-      "risk": {
-        "Medium": 3,
-        "Low": 3
       }
     },
     {
@@ -464,6 +464,14 @@
       }
     },
     {
+      "industry": "Blockchain/Fintech",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Civil Society",
       "companies": 1,
       "mentions": 1,
@@ -784,5 +792,5 @@
       }
     }
   ],
-  "generated": "2026-10-23 12:31:05"
+  "generated": "2026-10-23 17:46:55"
 }

@@ -139,8 +139,26 @@
       "risk": "Low"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "dbaadc7cfab3",
       "label": "Government of the United Kingdom",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,6 +205,12 @@
       "risk": "Low"
     },
     {
+      "id": "38e80be0fd57",
+      "label": "Ministry of Tourism",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -217,27 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f7b975597002",
-      "label": "Akwa Ibom State House of Assembly",
-      "type": "agency",
+      "id": "e153c1875584",
+      "label": "Dave Umahi",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -328,12 +334,6 @@
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -493,18 +493,6 @@
       "risk": "Low"
     },
     {
-      "id": "132d7e075c63",
-      "label": "Thibaut Boidin",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "aecb5553d6f9",
-      "label": "Nigerian Breweries Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "65c8c8afe47f",
       "label": "Thomas Ogungbangbe",
       "type": "psc",
@@ -625,15 +613,15 @@
       "risk": "Medium"
     },
     {
-      "id": "79ad7c2f3273",
-      "label": "Zeenab Foods Limited",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "79ad7c2f3273",
+      "label": "Zeenab Foods Limited",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -719,15 +707,15 @@
       "label": "FHFL",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "413a05d99356",
-      "label": "Nigeria Air",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "81c12b1ceeb0",
+      "from": "e153c1875584",
+      "to": "23d8905a6cbb",
+      "label": "Appointed as Minister of Works"
+    },
     {
       "id": "234af74126a1",
       "from": "40ce4ff30275",
@@ -861,12 +849,6 @@
       "label": "Appointed as Archbishop"
     },
     {
-      "id": "5a66573fe49d",
-      "from": "132d7e075c63",
-      "to": "aecb5553d6f9",
-      "label": "Appointed as Chief Executive Officer"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -931,6 +913,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "9eaaba6423cf",
+      "from": "334c4a4c42fd",
+      "to": "a75518830b0f",
+      "label": "Contract Awardee"
     },
     {
       "id": "3bb70fc86d28",
@@ -1014,12 +1002,6 @@
       "id": "34888a28806f",
       "from": "5ac7e16e2803",
       "to": "0125a5da750c",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "1793b8b93155",
-      "from": "413a05d99356",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]
