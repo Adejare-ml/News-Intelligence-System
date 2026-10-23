@@ -51,21 +51,21 @@
       }
     },
     {
+      "industry": "Energy",
+      "companies": 8,
+      "mentions": 14,
+      "risk": {
+        "Medium": 4,
+        "High": 2,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Conglomerate",
       "companies": 2,
       "mentions": 13,
       "risk": {
         "Medium": 2
-      }
-    },
-    {
-      "industry": "Energy",
-      "companies": 7,
-      "mentions": 13,
-      "risk": {
-        "Medium": 4,
-        "High": 2,
-        "Low": 1
       }
     },
     {
@@ -776,5 +776,5 @@
       }
     }
   ],
-  "generated": "2026-10-22 20:32:54"
+  "generated": "2026-10-23 01:25:30"
 }

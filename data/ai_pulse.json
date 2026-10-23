@@ -1,92 +1,92 @@
 {
-  "generated": "2026-10-22 20:32:48",
+  "generated": "2026-10-23 01:25:25",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2341,
+      "likes": 2364,
       "downloads": 51911
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1285,
+      "likes": 1307,
       "downloads": 512524
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 569,
+      "likes": 585,
       "downloads": 6890
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 498,
+      "likes": 540,
       "downloads": 420
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
       "task": "text-to-image",
-      "likes": 484,
+      "likes": 489,
       "downloads": 5013
-    },
-    {
-      "id": "meta-models/Muse-Spark-Open-816B-A42B",
-      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
-      "task": "image-text-to-text",
-      "likes": 658,
-      "downloads": 3163
-    },
-    {
-      "id": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "task": "text-to-speech",
-      "likes": 907,
-      "downloads": 16305
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 8876,
+      "likes": 8902,
       "downloads": 2054990
+    },
+    {
+      "id": "fishaudio/drama-3",
+      "url": "https://huggingface.co/fishaudio/drama-3",
+      "task": "text-to-speech",
+      "likes": 916,
+      "downloads": 16305
+    },
+    {
+      "id": "google/embeddinggemma-2",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "task": "feature-extraction",
+      "likes": 2845,
+      "downloads": 185259
     }
   ],
   "papers": [
     {
+      "title": "MMedAgent-Plus: Scaling Multimodal Medical Agents across Modalities, Tasks and Workflows",
+      "url": "https://huggingface.co/papers/2610.27233",
+      "upvotes": 0
+    },
+    {
+      "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+      "url": "https://huggingface.co/papers/2610.26836",
+      "upvotes": 1
+    },
+    {
+      "title": "Bridged Self-Distillation for On-Policy Learning",
+      "url": "https://huggingface.co/papers/2610.26397",
+      "upvotes": 1
+    },
+    {
+      "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
+      "url": "https://huggingface.co/papers/2610.28441",
+      "upvotes": 2
+    },
+    {
       "title": "StyleStream 2.0: Fast and Controllable Streaming Voice Style Conversion",
       "url": "https://huggingface.co/papers/2610.28940",
-      "upvotes": 8
+      "upvotes": 9
     },
     {
       "title": "FrontierCS 2: A Benchmark for Computer Science R&D",
       "url": "https://huggingface.co/papers/2610.29932",
-      "upvotes": 2
-    },
-    {
-      "title": "Language Models Learn to Improve Language Models",
-      "url": "https://huggingface.co/papers/2610.23344",
-      "upvotes": 5
-    },
-    {
-      "title": "VerifierBench: Benchmarking the Generation of Executable Verifiers for LLM Agents",
-      "url": "https://huggingface.co/papers/2610.28679",
-      "upvotes": 4
-    },
-    {
-      "title": "Looped Uniform Diffusion Language Models",
-      "url": "https://huggingface.co/papers/2610.30066",
-      "upvotes": 4
-    },
-    {
-      "title": "RoboCasa-Shift: Stage-Aware Robustness Evaluation of Vision-Language-Action Policies in Long-Horizon Household Manipulation",
-      "url": "https://huggingface.co/papers/2610.27861",
       "upvotes": 2
     }
   ]
