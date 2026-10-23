@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 948,
-      "mentions": 1605,
+      "companies": 947,
+      "mentions": 1589,
       "risk": {
-        "Low": 836,
+        "Low": 835,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -38,6 +38,16 @@
       "risk": {
         "Low": 6,
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Financial Services",
+      "companies": 6,
+      "mentions": 28,
+      "risk": {
+        "Low": 3,
+        "Medium": 2,
+        "High": 1
       }
     },
     {
@@ -86,13 +96,12 @@
       }
     },
     {
-      "industry": "Financial Services",
-      "companies": 5,
+      "industry": "Agriculture",
+      "companies": 9,
       "mentions": 10,
       "risk": {
-        "Medium": 2,
-        "Low": 2,
-        "High": 1
+        "Low": 8,
+        "Medium": 1
       }
     },
     {
@@ -122,20 +131,11 @@
       }
     },
     {
-      "industry": "Agriculture",
+      "industry": "Healthcare",
       "companies": 8,
       "mentions": 9,
       "risk": {
-        "Low": 7,
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Healthcare",
-      "companies": 7,
-      "mentions": 8,
-      "risk": {
-        "Low": 7
+        "Low": 8
       }
     },
     {
@@ -680,6 +680,14 @@
       }
     },
     {
+      "industry": "Policy Advocacy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Policy Research/Consultancy",
       "companies": 1,
       "mentions": 1,
@@ -776,5 +784,5 @@
       }
     }
   ],
-  "generated": "2026-10-23 01:25:30"
+  "generated": "2026-10-23 12:31:05"
 }

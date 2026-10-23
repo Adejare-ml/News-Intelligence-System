@@ -1,35 +1,29 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-23 01:24:22 (UTC)
-**Run Window:** 2026-10-23, all runs to 01:24 (run 1 of the day)
+**Generated on:** 2026-10-23 12:27:57 (UTC)
+**Run Window:** 2026-10-23, all runs to 12:27 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 3
+- **Total Articles Processed:** 15
 - **High Risk Signals:** 0
-- **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Appointments Logged:** 2
+- **Procurement Awards:** 1
 
 ---
 
-**Report Date:** 2026-10-23  
-**Coverage:** All articles published on 2026-10-23 up to 01:24
+### Key Developments  
+- Nigeria’s **Econ­omic and Finance Crimes Commission (EFCC)** had its bid to freeze Aisha Achimugu’s accounts rejected by the Appeal Court, a blow to the agency’s enforcement push. ([The Eagle Online](https://news.google.com/rss/articles/CBMirgFBVV95cUxQcnFQaEFhclJwdzRhS2pzY2dJSk5iWXFfdERvYTA1M052T2pWTVQ2aEt3SVdOVTVuTXMyUV8tQUktSkdabFpYbnBpTVA0WG1tdlY1ZXVPS04zS1drLTJtWnZveEZUZF9VcjBIZTUzQkctSDY0T3FQdmpjRkFfenZFcUZUSG5GV2tMNzhGVzRXTFEwd0VFTVdZUGsxQ3hwbWViMVV1ajF2algxbTdTT3c?oc=5))  
+- **Standards Organisation of Nigeria (SON)** certified 17,866 products, intensifying the fight against sub‑standard goods. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqgFBVV95cUxObzJFeVpVMGFKMVNaYzlZSENiZnlhWmZ3QWo4TEN2OG1KckZWLW1Hc0lxc2JnVm9PUE9iQ0pfeHlZcV9CQUlLaDNIQ0o4S1luNlItcWhDdjFKamUzYW80SDJuMmdtd1V0OXpHRTBIWWwwMllaUzdRbm5fbW5qVm42WHhVMl9VSlByQmxvSVJQT1VsWUlYX2R6ZXJ1SHZlZ0hndEZwOFpraDhfQQ?oc=5))  
+- The **Nigerian Exchange Group (NGX)** imposed N123.17 million fines on 15 listed firms for delayed financial filings. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMipwFBVV95cUxPWHhqR1B3ZnBaMjJMQW5jWjdza19EVjVHajdXbGZPLS15QnV6NDZ3NElyekR2OW9ZM0FlRXpGaktSQlQtMzdnNkhvc2l4UGpkbkMxdW94T3JNdk4yRkw4Mk1scU1Oamd3OEFIdWNUNENhcVVzWEQ5TGNwSmhyeXdmUHhMUGRLZ2VwMHZTOU5lOGFsM1lRZGZrdjhyLW9ZQ041dkFmSVMxbw?oc=5))  
 
-### Key Developments
+### High Risk Alerts  
 
-* **Tinubu’s ₦10bn Ebola emergency fund still untouched, APC campaign council replies Atiku**. The APC campaign council has responded to claims made by Atiku Abubakar regarding a ₦10 billion Ebola emergency fund associated with President Tinubu, asserting that the funds remain untouched. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5AFBVV95cUxOYjktMHVZNzFMcXIxTzEtbEhaRUtLVmRUalpaa2oxYUlMQ1NEejBKQmVzamRNMGhMaWJKQjVxQi1ZQUpObkpMSkFhVVh3Tlg3VWV1TWUwNTkwTlFndjVFUjc0bU4yYTN1OEpOTEsxdW5KMnN4NW5PNV9mdHNKYU9UZVJVMTJyNXhMMlllamVTbGRkZjZ1NzN0d29LclNmVTl5MVpmelJJQVM0MzItNnAyVlh2eDgwdDlnb0g3Q1plWWl2QXQ5eDM0OUNNbV9PS2l1YnNjX2tieGoyZVBOM2V1RjVBYWQ?oc=5))  
-* **Otu budgets N987.8bn for 2027, capital projects get 72%**. The administration of Governor Otu has proposed a budget of N987.8 billion for the year 2027. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxOUTFNUS1xSTdsYkk0S085cnc4NFVILVV6d0Fyal9GWHdQcklBdFY0QXo5RXlqeWdheUhQOGdiT0hOanlTUk8zMzRRNUwyZ3g2cmlEejdNYlBiZm9pUnFyMWFhbTVTMVRENXpQVUhORlllU3lLSG5sSWlwcFpZWGZJWkF5RjN3Y254RFVnaXEzQ2RfSk9FMFRBNnVVX0g5dDJrUHBwY01BSGliR19kYTlnUThqSURMLW5KMUUxeFJFZkRZczRW?oc=5))  
-* **Mate Energy bags prestigious SON Award**. Mate Energy Industries Limited has received a Mandatory Conformity Assessment Programme quality award from the Standards Organisation of Nigeria (SON) under the 10-year category. ([The Punch](https://punchng.com/mate-energy-bags-prestigious-son-award/))  
+### Beneficial Ownership & PSC Disclosures  
+No PSC disclosures identified.  
 
-### High Risk Alerts
-
-There are no critical governance threats or high-risk integrity alerts identified in today's monitored coverage.
-
-### Beneficial Ownership & PSC Disclosures
-
-The incoming data contains no beneficial ownership or person with significant control (PSC) filings.
-
-### Procurement & Board Changes
-
-No formal tender awards, public contract variations, or corporate board adjustments were reported across the covered channels.
+### Procurement & Board Changes  
+- **Zeenab Foods Limited** released a call for expressions of interest to supply agricultural commodities, setting a procurement schedule. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWW5UUXBGNlBVOW5Ob1FOaWJfOGRUeE9PWkxkYTRRRmZkdFh5X2s1aEFsSGdDcWhuLXhtS0dNSDlYYUNfbEJQXzNHV1dnX0l4VllmTU5nSmRwOVpqSUZNdVI4QVFyU2hkTGxBeGI3WE1EbUFtN2hxNWdYZW4tWC1SZ01UeWRNeUY5OGl4MUEzbmRlaTBWY2EwTnBrMzhySmF0c2taYzdqSnRqVm1tcUFka2lCRDcydTJoUGR1U0Z0Rm9BTXhlTmdwQ1IwOFA5OWZHWnVlSnBPRDcwZXNpNGwxT3RQdDEzendIdjVUbA?oc=5))  
+- **First HoldCo** added a new non‑executive director to its board, broadening governance oversight. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMitAFBVV95cUxQOThJNVBoZkJfaVNacTZzaUtUMnJhN3EwQXFpSlJFSDd5MmNwckpCcTFyWkFuYWlmcmRfeS1sTS1YWlVNSFN5LXZEaEZiRElVblpMcEZQTXFqbW4yZGpyQVZSdDVPYnlwblZmMjdkQ1dya2lBb19vTHM0cWd3dFh4a0g0ckJIZGNFSmxPX0FMR0l3bGZjSy1aWEVBRDItanNoNDJya01JbEozM0F1RFJFMmYwQzA?oc=5))  
+- **National Intelligence Service (NISS)** appointed a former Director General of the State Security Service as its Governing Board Chair, heightening political linkage at senior security levels. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxNamFQQ29EZW1hQm90UWdELU5yMTRsOVRDLTMyRXBSZTloal9RcDAyMm5JRVBuOUV0MEt3V1FHOUdXcFFKeXBEZ3Z5c1FHZG9ZbFVUMVFHSEdLQmkxcl9NN3AxaTF6UFRCbDdiSHpGdE1fNnhkcDVpcjZSRmREZW9UMkllbmRGTF8yQ1NCTWxRRlozRlJwVVlYaHBUekpsZnFQZjV2MUI2SllfWVY0ekFfTThUZjZZQWthaVZ1MQ?oc=5))  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
