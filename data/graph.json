@@ -121,14 +121,44 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
+      "id": "23cd33f022ff",
+      "label": "Benue State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "aa9abf2767d5",
+      "label": "Standards Organisation of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -151,8 +181,20 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
+      "id": "1b5b11475e62",
+      "label": "Federal Civil Service Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "320005948437",
+      "label": "NIHOTOUR",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "62e2ee328721",
+      "label": "Human Rights Injustice Watch",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,48 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "aa9abf2767d5",
-      "label": "Standards Organisation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bfc1f02f682e",
-      "label": "Delta State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ec79cf0c700a",
-      "label": "State Security Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f8d3fab1ad95",
-      "label": "Kaduna State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b2cb7eb633cf",
-      "label": "All Progressives Congress (APC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a695c16dc97f",
-      "label": "Nigeria Judo Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "133de1c3396b",
-      "label": "National Intelligence Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f90690e3c7de",
       "label": "Darma",
       "type": "person",
@@ -250,6 +250,18 @@
       "id": "6d3754b631b4",
       "label": "Verheijen",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "363c0b4617d9",
+      "label": "Omobolaji Balakin",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e8eddeeb8103",
+      "label": "MMA2",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -274,6 +286,12 @@
       "id": "77b2dee0aac9",
       "label": "Unnamed former SSS DG",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "133de1c3396b",
+      "label": "National Intelligence Service",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -475,12 +493,6 @@
       "risk": "Low"
     },
     {
-      "id": "f94328a29154",
-      "label": "Faisal Maina",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "65c8c8afe47f",
       "label": "Thomas Ogungbangbe",
       "type": "psc",
@@ -601,6 +613,12 @@
       "risk": "Medium"
     },
     {
+      "id": "e1894ded2ce6",
+      "label": "Federal Government of Nigeria / Benue State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -683,18 +701,6 @@
       "label": "63 biometric agents",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "0125a5da750c",
-      "label": "Nigeria Police Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5ac7e16e2803",
-      "label": "FHFL",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -703,6 +709,12 @@
       "from": "6d3754b631b4",
       "to": "0c2be969618b",
       "label": "Appointed as Official/Spokesperson"
+    },
+    {
+      "id": "a74b3e23be57",
+      "from": "363c0b4617d9",
+      "to": "e8eddeeb8103",
+      "label": "Appointed as Representative/Executive"
     },
     {
       "id": "1d53d5ab75b4",
@@ -897,6 +909,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "0bd84267868a",
+      "from": "334c4a4c42fd",
+      "to": "e1894ded2ce6",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "9eaaba6423cf",
       "from": "334c4a4c42fd",
       "to": "a75518830b0f",
@@ -978,12 +996,6 @@
       "id": "8dfb56d07ece",
       "from": "4757d2f9d325",
       "to": "e79817c87e24",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "34888a28806f",
-      "from": "5ac7e16e2803",
-      "to": "0125a5da750c",
       "label": "Contract Awardee"
     }
   ]
