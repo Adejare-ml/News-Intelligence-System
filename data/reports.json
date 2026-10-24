@@ -1,25 +1,6 @@
 [
   {
     "Date": "2026-09-21",
-    "Total Articles": 3,
-    "High Risk": 0,
-    "Appointments": 2,
-    "Procurement": 0,
-    "Cascade Failures": 0,
-    "Run Seconds": 94,
-    "Generated": "2026-09-21 18:28:30",
-    "Archive File": "report_20260921_182830.md",
-    "Candidates": 1072,
-    "Rejected": 11,
-    "Undated": 0,
-    "Stubs": 44,
-    "Nigerian": 404,
-    "Fresh": 52,
-    "Distinct": 50,
-    "Content": ""
-  },
-  {
-    "Date": "2026-09-21",
     "Total Articles": 2,
     "High Risk": 0,
     "Appointments": 0,
@@ -2277,6 +2258,25 @@
     "Nigerian": 472,
     "Fresh": 129,
     "Distinct": 128,
+    "Content": ""
+  },
+  {
+    "Date": "2026-10-24",
+    "Total Articles": 1,
+    "High Risk": 0,
+    "Appointments": 0,
+    "Procurement": 0,
+    "Cascade Failures": 0,
+    "Run Seconds": 56,
+    "Generated": "2026-10-24 19:19:56",
+    "Archive File": "report_20261024_191956.md",
+    "Candidates": 1054,
+    "Rejected": 8,
+    "Undated": 0,
+    "Stubs": 39,
+    "Nigerian": 478,
+    "Fresh": 119,
+    "Distinct": 118,
     "Content": ""
   }
 ]
