@@ -10,7 +10,7 @@ pydantic-settings==2.16.0
 feedparser==6.0.14
 beautifulsoup4==4.15.0
 spacy==3.8.16
-sentence-transformers==3.0.1
+sentence-transformers==5.6.0
 pyjwt==2.15.1
 requests==2.33.0
 numpy==1.26.4
