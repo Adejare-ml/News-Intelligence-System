@@ -193,7 +193,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-07",
@@ -233,8 +233,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 32.5,
+          "mentions": 3,
+          "avg_risk": 31.7,
           "max_risk": 45
         }
       ]
@@ -4721,6 +4721,19 @@
       ]
     },
     {
+      "key": "ajaokuta steel company",
+      "label": "Ajaokuta Steel Company Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "akinshola samuel akinde",
       "label": "Akinshola Samuel Akinde",
       "total_mentions": 1,
@@ -5512,20 +5525,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "eib global",
-      "label": "EIB Global",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-24 11:57:45"
+  "generated": "2026-10-24 16:32:06"
 }

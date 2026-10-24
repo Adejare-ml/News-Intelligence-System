@@ -157,6 +157,12 @@
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "aa9abf2767d5",
       "label": "Standards Organisation of Nigeria",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "cc4a4d0f3e25",
-      "label": "Anambra State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "f90690e3c7de",
       "label": "Darma",
       "type": "person",
@@ -262,6 +262,12 @@
       "id": "e8eddeeb8103",
       "label": "MMA2",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "75ce69c80acb",
+      "label": "Natasha Akpoti-Uduaghan",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -477,18 +483,6 @@
     {
       "id": "0b2ac17f47f4",
       "label": "Lagos State Waste Management Authority",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "17530210d4fa",
-      "label": "Abdulrasheed Maina",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "04d993f97b29",
-      "label": "Pension Reform Task Team",
       "type": "company",
       "risk": "Low"
     },
@@ -717,6 +711,12 @@
       "label": "Appointed as Representative/Executive"
     },
     {
+      "id": "97d03f9c79c6",
+      "from": "75ce69c80acb",
+      "to": "38b03bbf0068",
+      "label": "Appointed as Senator"
+    },
+    {
       "id": "1d53d5ab75b4",
       "from": "f1f131ace5c4",
       "to": "4b3b1b76a8e8",
@@ -835,12 +835,6 @@
       "from": "512a18337770",
       "to": "0b2ac17f47f4",
       "label": "Appointed as Managing Director/CEO"
-    },
-    {
-      "id": "773118582206",
-      "from": "17530210d4fa",
-      "to": "04d993f97b29",
-      "label": "Appointed as Former Chairman"
     },
     {
       "id": "a5e36b5f552f",

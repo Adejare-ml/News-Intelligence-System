@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2691,
+      "total": 2694,
       "published": 1499,
-      "filtered": 1192,
+      "filtered": 1195,
       "accept_rate": 56,
       "avg_risk": 28.5,
       "engines": {
@@ -16,14 +16,14 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2114,
-      "published": 890,
-      "filtered": 1224,
+      "total": 2123,
+      "published": 893,
+      "filtered": 1230,
       "accept_rate": 42,
-      "avg_risk": 30.8,
+      "avg_risk": 30.7,
       "engines": {
         "unknown": 440,
-        "ollama": 446,
+        "ollama": 449,
         "nvidia": 4
       },
       "last_seen": "2026-10-24"
@@ -44,9 +44,9 @@
     },
     {
       "source": "The Punch",
-      "total": 638,
+      "total": 639,
       "published": 359,
-      "filtered": 279,
+      "filtered": 280,
       "accept_rate": 56,
       "avg_risk": 32.4,
       "engines": {
@@ -232,16 +232,16 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 72,
+      "total": 74,
       "published": 16,
-      "filtered": 56,
+      "filtered": 58,
       "accept_rate": 22,
       "avg_risk": 28.6,
       "engines": {
         "unknown": 8,
         "ollama": 8
       },
-      "last_seen": "2026-10-23"
+      "last_seen": "2026-10-24"
     },
     {
       "source": "punchng.com",
@@ -425,15 +425,15 @@
     },
     {
       "source": "pmnewsnigeria",
-      "total": 13,
+      "total": 14,
       "published": 3,
-      "filtered": 10,
-      "accept_rate": 23,
+      "filtered": 11,
+      "accept_rate": 21,
       "avg_risk": 24.0,
       "engines": {
         "unknown": 3
       },
-      "last_seen": "2026-10-23"
+      "last_seen": "2026-10-24"
     },
     {
       "source": "converseer",
@@ -787,6 +787,18 @@
       "last_seen": "2026-10-15"
     },
     {
+      "source": "DW (English)",
+      "total": 3,
+      "published": 1,
+      "filtered": 2,
+      "accept_rate": 33,
+      "avg_risk": 49.0,
+      "engines": {
+        "unknown": 1
+      },
+      "last_seen": "2026-10-23"
+    },
+    {
       "source": "Dailymail.com",
       "total": 3,
       "published": 1,
@@ -983,18 +995,6 @@
         "unknown": 2
       },
       "last_seen": "2026-07-16"
-    },
-    {
-      "source": "DW (English)",
-      "total": 2,
-      "published": 1,
-      "filtered": 1,
-      "accept_rate": 50,
-      "avg_risk": 49.0,
-      "engines": {
-        "unknown": 1
-      },
-      "last_seen": "2026-10-20"
     },
     {
       "source": "Daily Post Nigeria",
@@ -2147,5 +2147,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-24 11:57:45"
+  "generated": "2026-10-24 16:32:06"
 }

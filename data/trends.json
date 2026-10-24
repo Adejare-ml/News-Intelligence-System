@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 200,
+  "recent_articles": 201,
   "previous_articles": 238,
   "rising": [
     {
@@ -22,25 +22,7 @@
       "change": 5
     },
     {
-      "term": "revenue",
-      "recent": 7,
-      "previous": 2,
-      "change": 5
-    },
-    {
-      "term": "customs",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
       "term": "nlng",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "tackle",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -61,6 +43,24 @@
       "term": "demand",
       "recent": 6,
       "previous": 2,
+      "change": 4
+    },
+    {
+      "term": "executive",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "interest",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "projects",
+      "recent": 5,
+      "previous": 1,
       "change": 4
     }
   ],
@@ -114,15 +114,15 @@
       "change": -6
     },
     {
-      "term": "warns",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
-    },
-    {
       "term": "dangote",
       "recent": 2,
       "previous": 8,
+      "change": -6
+    },
+    {
+      "term": "coastal",
+      "recent": 1,
+      "previous": 7,
       "change": -6
     }
   ],
@@ -130,17 +130,17 @@
     {
       "category": "Government",
       "recent": 139,
-      "previous": 163
+      "previous": 164
+    },
+    {
+      "category": "Company",
+      "recent": 30,
+      "previous": 33
     },
     {
       "category": "Legal",
       "recent": 30,
-      "previous": 42
-    },
-    {
-      "category": "Company",
-      "recent": 29,
-      "previous": 33
+      "previous": 41
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-24 11:57:42"
+  "generated": "2026-10-24 16:32:04"
 }
