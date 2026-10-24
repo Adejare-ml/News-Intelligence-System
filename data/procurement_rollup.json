@@ -434,6 +434,12 @@
       }
     },
     {
+      "name": "Federal Government of Nigeria / Benue State Government",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "GIZ Nigeria & ECOWAS",
       "contracts": 1,
       "undisclosed": 1,
@@ -687,8 +693,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 128,
-      "undisclosed": 79,
+      "contracts": 129,
+      "undisclosed": 80,
       "totals": {
         "NGN": 20779214090000.0,
         "USD": 47807540000.0
@@ -1179,5 +1185,5 @@
       }
     }
   ],
-  "generated": "2026-10-24 01:31:38"
+  "generated": "2026-10-24 11:57:45"
 }

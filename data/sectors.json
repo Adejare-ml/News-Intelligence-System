@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 947,
-      "mentions": 1589,
+      "companies": 948,
+      "mentions": 1590,
       "risk": {
-        "Low": 835,
+        "Low": 836,
         "Critical": 57,
         "Medium": 32,
         "High": 23
@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 23,
-      "mentions": 64,
+      "mentions": 65,
       "risk": {
         "Low": 18,
         "Medium": 5
@@ -448,6 +448,14 @@
       }
     },
     {
+      "industry": "Aviation/Infrastructure",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Banking/Development Finance",
       "companies": 1,
       "mentions": 1,
@@ -792,5 +800,5 @@
       }
     }
   ],
-  "generated": "2026-10-24 01:31:38"
+  "generated": "2026-10-24 11:57:45"
 }

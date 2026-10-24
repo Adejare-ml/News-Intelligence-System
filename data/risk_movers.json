@@ -64,15 +64,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 43.3,
-      "previous_avg": 32.9,
-      "delta": 10.4,
-      "recent_mentions": 3,
-      "previous_mentions": 7
-    },
-    {
       "key": "content development and monitoring board",
       "label": "Nigerian Content Development and Monitoring Board",
       "recent_avg": 20.0,
@@ -100,6 +91,15 @@
       "previous_mentions": 6
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 43.3,
+      "previous_avg": 35.0,
+      "delta": 8.3,
+      "recent_mentions": 3,
+      "previous_mentions": 6
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 27.9,
@@ -118,40 +118,40 @@
       "previous_mentions": 3
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 24.7,
-      "previous_avg": 27.9,
-      "delta": -3.2,
+      "recent_avg": 22.1,
+      "previous_avg": 29.5,
+      "delta": -7.4,
       "recent_mentions": 17,
-      "previous_mentions": 21
+      "previous_mentions": 22
+    },
+    {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 18.8,
+      "previous_avg": 15.0,
+      "delta": 3.8,
+      "recent_mentions": 4,
+      "previous_mentions": 2
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 32.1,
+      "recent_avg": 30.6,
       "previous_avg": 33.5,
-      "delta": -1.4,
-      "recent_mentions": 7,
+      "delta": -2.9,
+      "recent_mentions": 8,
       "previous_mentions": 10
     },
     {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 15.0,
-      "previous_avg": 13.8,
-      "delta": 1.2,
-      "recent_mentions": 5,
-      "previous_mentions": 4
+      "previous_avg": 14.0,
+      "delta": 1.0,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "economic and financial crimes commission",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-24 01:31:38"
+  "generated": "2026-10-24 11:57:45"
 }
