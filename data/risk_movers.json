@@ -22,10 +22,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 48.5,
-      "previous_avg": 25.0,
-      "delta": 23.5,
+      "previous_avg": 25.4,
+      "delta": 23.1,
       "recent_mentions": 10,
-      "previous_mentions": 13
+      "previous_mentions": 12
     },
     {
       "key": "socio economic rights and accountability project",
@@ -145,15 +145,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "recent_avg": 16.7,
-      "previous_avg": 13.3,
-      "delta": 3.4,
-      "recent_mentions": 3,
-      "previous_mentions": 6
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 30.6,
@@ -179,8 +170,17 @@
       "delta": 0.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "nipco",
+      "label": "NIPCO",
+      "recent_avg": 85.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-24 16:32:06"
+  "generated": "2026-10-24 19:24:27"
 }
