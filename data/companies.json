@@ -2881,9 +2881,9 @@
   },
   {
     "Company": "Unilever Nigeria PLC",
-    "Mention Count": 4,
-    "Last Seen": "2026-07-22 9:31",
-    "Industry": "General",
+    "Mention Count": 5,
+    "Last Seen": "2026-10-24 16:26",
+    "Industry": "Consumer Goods",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -7761,9 +7761,9 @@
   },
   {
     "Company": "Ajaokuta Steel Company Limited",
-    "Mention Count": 2,
-    "Last Seen": "2026-09-08 11:59",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-24 16:27",
+    "Industry": "Steel/Manufacturing",
     "Risk Level": "Medium",
     "First Seen": ""
   },
@@ -9582,5 +9582,13 @@
     "Industry": "Aviation/Infrastructure",
     "Risk Level": "Low",
     "First Seen": "2026-10-24 11:51"
+  },
+  {
+    "Company": "Yiaga Africa",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-24 16:26",
+    "Industry": "Civil Society/Non-Profit",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-24 16:26"
   }
 ]
