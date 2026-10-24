@@ -22,10 +22,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 48.5,
-      "previous_avg": 24.6,
-      "delta": 23.9,
+      "previous_avg": 25.0,
+      "delta": 23.5,
       "recent_mentions": 10,
-      "previous_mentions": 14
+      "previous_mentions": 13
     },
     {
       "key": "socio economic rights and accountability project",
@@ -129,11 +129,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 25.0,
+      "recent_avg": 24.7,
       "previous_avg": 27.9,
-      "delta": -2.9,
-      "recent_mentions": 16,
+      "delta": -3.2,
+      "recent_mentions": 17,
       "previous_mentions": 21
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 32.1,
+      "previous_avg": 33.5,
+      "delta": -1.4,
+      "recent_mentions": 7,
+      "previous_mentions": 10
     },
     {
       "key": "communications commission",
@@ -147,20 +156,11 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 57.9,
-      "previous_avg": 59.0,
-      "delta": -1.1,
-      "recent_mentions": 14,
-      "previous_mentions": 15
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 34.2,
-      "previous_avg": 33.5,
-      "delta": 0.7,
-      "recent_mentions": 6,
-      "previous_mentions": 10
+      "recent_avg": 58.2,
+      "previous_avg": 58.6,
+      "delta": -0.4,
+      "recent_mentions": 11,
+      "previous_mentions": 18
     },
     {
       "key": "united airlines",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-23 20:19:53"
+  "generated": "2026-10-24 01:31:38"
 }

@@ -121,18 +121,6 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -141,6 +129,36 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9da30857f532",
+      "label": "ECOWAS Court",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e94d960651d4",
+      "label": "Development Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3cb22e0cca07",
+      "label": "Presidential panel on State Police",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,21 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "38e80be0fd57",
-      "label": "Ministry of Tourism",
-      "type": "agency",
+      "id": "f90690e3c7de",
+      "label": "Darma",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "e94d960651d4",
-      "label": "Development Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
-      "type": "agency",
+      "id": "6d3754b631b4",
+      "label": "Verheijen",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -469,24 +481,6 @@
       "risk": "Low"
     },
     {
-      "id": "10e91a46eee3",
-      "label": "Godswill Akpabio",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8e95a32117a9",
-      "label": "Senate of the Federal Republic of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "337f5ec18620",
-      "label": "Barau Jura Barau",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "65c8c8afe47f",
       "label": "Thomas Ogungbangbe",
       "type": "psc",
@@ -705,6 +699,12 @@
   ],
   "edges": [
     {
+      "id": "144969986b4f",
+      "from": "6d3754b631b4",
+      "to": "0c2be969618b",
+      "label": "Appointed as Official/Spokesperson"
+    },
+    {
       "id": "1d53d5ab75b4",
       "from": "f1f131ace5c4",
       "to": "4b3b1b76a8e8",
@@ -829,18 +829,6 @@
       "from": "17530210d4fa",
       "to": "04d993f97b29",
       "label": "Appointed as Former Chairman"
-    },
-    {
-      "id": "d3525dfdc157",
-      "from": "10e91a46eee3",
-      "to": "8e95a32117a9",
-      "label": "Appointed as Senate President"
-    },
-    {
-      "id": "8c14c0c8ca5d",
-      "from": "337f5ec18620",
-      "to": "8e95a32117a9",
-      "label": "Appointed as Deputy Senate President"
     },
     {
       "id": "a5e36b5f552f",
