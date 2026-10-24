@@ -1,14 +1,8 @@
 {
   "window_days": 7,
-  "recent_articles": 199,
+  "recent_articles": 201,
   "previous_articles": 239,
   "rising": [
-    {
-      "term": "son",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
-    },
     {
       "term": "probe",
       "recent": 8,
@@ -22,15 +16,9 @@
       "change": 6
     },
     {
-      "term": "abuja",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "arrests",
-      "recent": 5,
-      "previous": 0,
+      "term": "police",
+      "recent": 7,
+      "previous": 2,
       "change": 5
     },
     {
@@ -58,13 +46,31 @@
       "change": 4
     },
     {
-      "term": "police",
-      "recent": 6,
-      "previous": 2,
+      "term": "interest",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "projects",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "customs",
+      "recent": 4,
+      "previous": 0,
       "change": 4
     }
   ],
   "falling": [
+    {
+      "term": "efcc",
+      "recent": 9,
+      "previous": 20,
+      "change": -11
+    },
     {
       "term": "imf",
       "recent": 0,
@@ -76,18 +82,6 @@
       "recent": 5,
       "previous": 13,
       "change": -8
-    },
-    {
-      "term": "efcc",
-      "recent": 11,
-      "previous": 18,
-      "change": -7
-    },
-    {
-      "term": "court",
-      "recent": 7,
-      "previous": 14,
-      "change": -7
     },
     {
       "term": "tinubu",
@@ -106,6 +100,12 @@
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "court",
+      "recent": 8,
+      "previous": 14,
+      "change": -6
     },
     {
       "term": "highway",
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 137,
-      "previous": 163
+      "recent": 141,
+      "previous": 162
     },
     {
       "category": "Legal",
-      "recent": 33,
-      "previous": 40
+      "recent": 31,
+      "previous": 42
     },
     {
       "category": "Company",
       "recent": 27,
-      "previous": 36
+      "previous": 35
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-23 20:19:50"
+  "generated": "2026-10-24 01:31:37"
 }
