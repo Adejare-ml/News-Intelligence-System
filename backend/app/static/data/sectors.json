@@ -2,12 +2,12 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 948,
-      "mentions": 1590,
+      "companies": 946,
+      "mentions": 1584,
       "risk": {
-        "Low": 836,
+        "Low": 835,
         "Critical": 57,
-        "Medium": 32,
+        "Medium": 31,
         "High": 23
       }
     },
@@ -205,6 +205,14 @@
       }
     },
     {
+      "industry": "Consumer Goods",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Logistics & Port Operations",
       "companies": 1,
       "mentions": 5,
@@ -312,6 +320,14 @@
     },
     {
       "industry": "Professional Services/Accounting",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Steel/Manufacturing",
       "companies": 1,
       "mentions": 3,
       "risk": {
@@ -493,6 +509,14 @@
       "mentions": 1,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Civil Society/Non-Profit",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -800,5 +824,5 @@
       }
     }
   ],
-  "generated": "2026-10-24 11:57:45"
+  "generated": "2026-10-24 16:32:06"
 }
