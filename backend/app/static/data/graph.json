@@ -163,6 +163,12 @@
       "risk": "Low"
     },
     {
+      "id": "737f70b3bdb8",
+      "label": "Taraba State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "aa9abf2767d5",
       "label": "Standards Organisation of Nigeria",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "dbaadc7cfab3",
       "label": "Government of the United Kingdom",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -322,12 +322,6 @@
       "id": "268a2ed6a82c",
       "label": "Kefas",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "737f70b3bdb8",
-      "label": "Taraba State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -616,6 +610,12 @@
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
       "risk": "Low"
     },
     {

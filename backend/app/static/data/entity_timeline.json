@@ -1450,6 +1450,31 @@
       ]
     },
     {
+      "key": "taraba state government",
+      "label": "Taraba State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 80.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "abubakar malami",
       "label": "Abubakar Malami",
       "total_mentions": 4,
@@ -1894,31 +1919,6 @@
           "mentions": 3,
           "avg_risk": 26.7,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "taraba state government",
-      "label": "Taraba State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 80.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
         }
       ]
     },
@@ -5527,5 +5527,5 @@
       ]
     }
   ],
-  "generated": "2026-10-24 16:32:06"
+  "generated": "2026-10-24 19:24:27"
 }
