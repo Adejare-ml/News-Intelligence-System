@@ -1,88 +1,88 @@
 {
-  "generated": "2026-10-24 01:31:36",
+  "generated": "2026-10-24 11:57:42",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2589,
-      "downloads": 57715
+      "likes": 2668,
+      "downloads": 73215
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 689,
-      "downloads": 1904
+      "likes": 723,
+      "downloads": 4795
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1406,
-      "downloads": 534837
+      "likes": 1448,
+      "downloads": 590742
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 653,
-      "downloads": 7658
+      "likes": 667,
+      "downloads": 9717
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9035,
-      "downloads": 2026951
+      "likes": 9098,
+      "downloads": 2087721
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 413,
-      "downloads": 1060
+      "likes": 428,
+      "downloads": 2537
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 947,
-      "downloads": 17017
+      "likes": 960,
+      "downloads": 19831
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-Base",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base",
       "task": "text-to-image",
-      "likes": 520,
-      "downloads": 5618
+      "likes": 526,
+      "downloads": 6943
     }
   ],
   "papers": [
     {
       "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
       "url": "https://huggingface.co/papers/2610.30043",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "The LLM-Attacker: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems",
       "url": "https://huggingface.co/papers/2610.22722",
-      "upvotes": 2
+      "upvotes": 4
     },
     {
       "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
       "url": "https://huggingface.co/papers/2610.04184",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
       "url": "https://huggingface.co/papers/2610.25835",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
       "url": "https://huggingface.co/papers/2610.31198",
-      "upvotes": 5
+      "upvotes": 10
     },
     {
       "title": "Bridging Exploration and Persona: Information-Directed Dueling for Test-Time Agent Personalization",

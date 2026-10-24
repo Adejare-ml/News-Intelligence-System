@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 201,
-  "previous_articles": 239,
+  "recent_articles": 200,
+  "previous_articles": 238,
   "rising": [
     {
       "term": "probe",
@@ -10,15 +10,27 @@
       "change": 6
     },
     {
-      "term": "demand",
-      "recent": 7,
-      "previous": 1,
-      "change": 6
+      "term": "bill",
+      "recent": 10,
+      "previous": 5,
+      "change": 5
     },
     {
       "term": "police",
       "recent": 7,
       "previous": 2,
+      "change": 5
+    },
+    {
+      "term": "revenue",
+      "recent": 7,
+      "previous": 2,
+      "change": 5
+    },
+    {
+      "term": "customs",
+      "recent": 5,
+      "previous": 0,
       "change": 5
     },
     {
@@ -34,9 +46,9 @@
       "change": 5
     },
     {
-      "term": "bill",
-      "recent": 9,
-      "previous": 5,
+      "term": "assembly",
+      "recent": 8,
+      "previous": 4,
       "change": 4
     },
     {
@@ -46,21 +58,9 @@
       "change": 4
     },
     {
-      "term": "interest",
-      "recent": 5,
-      "previous": 1,
-      "change": 4
-    },
-    {
-      "term": "projects",
-      "recent": 5,
-      "previous": 1,
-      "change": 4
-    },
-    {
-      "term": "customs",
-      "recent": 4,
-      "previous": 0,
+      "term": "demand",
+      "recent": 6,
+      "previous": 2,
       "change": 4
     }
   ],
@@ -84,15 +84,15 @@
       "change": -8
     },
     {
-      "term": "tinubu",
-      "recent": 6,
-      "previous": 13,
-      "change": -7
-    },
-    {
       "term": "atiku",
       "recent": 2,
       "previous": 9,
+      "change": -7
+    },
+    {
+      "term": "security",
+      "recent": 1,
+      "previous": 8,
       "change": -7
     },
     {
@@ -102,9 +102,9 @@
       "change": -7
     },
     {
-      "term": "court",
-      "recent": 8,
-      "previous": 14,
+      "term": "tinubu",
+      "recent": 7,
+      "previous": 13,
       "change": -6
     },
     {
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 141,
-      "previous": 162
+      "recent": 139,
+      "previous": 163
     },
     {
       "category": "Legal",
-      "recent": 31,
+      "recent": 30,
       "previous": 42
     },
     {
       "category": "Company",
-      "recent": 27,
-      "previous": 35
+      "recent": 29,
+      "previous": 33
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-24 01:31:37"
+  "generated": "2026-10-24 11:57:42"
 }
