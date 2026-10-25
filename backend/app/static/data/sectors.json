@@ -69,6 +69,24 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 8,
+      "mentions": 12,
+      "risk": {
+        "Medium": 3,
+        "Low": 5
+      }
+    },
+    {
+      "industry": "Non-Profit/Legal Advocacy",
+      "companies": 2,
+      "mentions": 12,
+      "risk": {
+        "High": 1,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 9,
       "mentions": 11,
@@ -84,23 +102,6 @@
       "risk": {
         "Medium": 2,
         "Low": 2,
-        "High": 1
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 7,
-      "mentions": 11,
-      "risk": {
-        "Medium": 3,
-        "Low": 4
-      }
-    },
-    {
-      "industry": "Non-Profit/Legal Advocacy",
-      "companies": 1,
-      "mentions": 11,
-      "risk": {
         "High": 1
       }
     },
@@ -696,6 +697,14 @@
       }
     },
     {
+      "industry": "Non-Profit/Sociopolitical",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Non-profit/NGO",
       "companies": 1,
       "mentions": 1,
@@ -824,5 +833,5 @@
       }
     }
   ],
-  "generated": "2026-10-25 00:59:21"
+  "generated": "2026-10-25 12:26:45"
 }

@@ -22,28 +22,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 48.5,
-      "previous_avg": 25.4,
-      "delta": 23.1,
+      "previous_avg": 25.9,
+      "delta": 22.6,
       "recent_mentions": 10,
-      "previous_mentions": 12
-    },
-    {
-      "key": "socio economic rights and accountability project",
-      "label": "Socio-Economic Rights and Accountability Project",
-      "recent_avg": 55.0,
-      "previous_avg": 75.0,
-      "delta": -20.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "seyi makinde",
-      "label": "Seyi Makinde",
-      "recent_avg": 38.3,
-      "previous_avg": 20.0,
-      "delta": 18.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "previous_mentions": 11
     },
     {
       "key": "government of",
@@ -73,6 +55,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 18.8,
+      "previous_avg": 10.0,
+      "delta": 8.8,
+      "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 23.8,
@@ -91,15 +82,6 @@
       "previous_mentions": 5
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 22.1,
-      "previous_avg": 30.0,
-      "delta": -7.9,
-      "recent_mentions": 17,
-      "previous_mentions": 21
-    },
-    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 27.9,
@@ -107,6 +89,15 @@
       "delta": 7.9,
       "recent_mentions": 7,
       "previous_mentions": 5
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 31.7,
+      "previous_avg": 39.3,
+      "delta": -7.6,
+      "recent_mentions": 3,
+      "previous_mentions": 7
     },
     {
       "key": "senate of",
@@ -118,13 +109,31 @@
       "previous_mentions": 3
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 40.0,
-      "previous_avg": 35.0,
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 24.4,
+      "previous_avg": 30.0,
+      "delta": -5.6,
+      "recent_mentions": 18,
+      "previous_mentions": 21
+    },
+    {
+      "key": "dave umahi",
+      "label": "Dave Umahi",
+      "recent_avg": 35.0,
+      "previous_avg": 40.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "federal ministry of works",
+      "label": "Federal Ministry of Works",
+      "recent_avg": 35.0,
+      "previous_avg": 30.0,
       "delta": 5.0,
-      "recent_mentions": 4,
-      "previous_mentions": 6
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "national agency for food and drug administration and control",
@@ -136,24 +145,6 @@
       "previous_mentions": 5
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 18.8,
-      "previous_avg": 15.0,
-      "delta": 3.8,
-      "recent_mentions": 4,
-      "previous_mentions": 2
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 30.6,
-      "previous_avg": 33.5,
-      "delta": -2.9,
-      "recent_mentions": 8,
-      "previous_mentions": 10
-    },
-    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 60.0,
@@ -161,6 +152,15 @@
       "delta": 2.8,
       "recent_mentions": 10,
       "previous_mentions": 18
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 30.6,
+      "previous_avg": 28.9,
+      "delta": 1.7,
+      "recent_mentions": 8,
+      "previous_mentions": 9
     },
     {
       "key": "nipco",
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-25 00:59:21"
+  "generated": "2026-10-25 12:26:45"
 }

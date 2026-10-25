@@ -121,8 +121,26 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "e4c5ee83197c",
       "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9da30857f532",
+      "label": "ECOWAS Court",
       "type": "agency",
       "risk": "Low"
     },
@@ -141,12 +159,6 @@
     {
       "id": "23cd33f022ff",
       "label": "Benue State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -177,12 +189,6 @@
     {
       "id": "aa9abf2767d5",
       "label": "Standards Organisation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9da30857f532",
-      "label": "ECOWAS Court",
       "type": "agency",
       "risk": "Low"
     },
@@ -235,9 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "agency",
+      "id": "e153c1875584",
+      "label": "Dave Umahi",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -280,12 +286,6 @@
       "id": "4b3b1b76a8e8",
       "label": "Kaduna State Government",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e153c1875584",
-      "label": "Dave Umahi",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -699,6 +699,12 @@
   ],
   "edges": [
     {
+      "id": "81c12b1ceeb0",
+      "from": "e153c1875584",
+      "to": "23d8905a6cbb",
+      "label": "Appointed as Former Minister of Works"
+    },
+    {
       "id": "144969986b4f",
       "from": "6d3754b631b4",
       "to": "0c2be969618b",
@@ -721,12 +727,6 @@
       "from": "f1f131ace5c4",
       "to": "4b3b1b76a8e8",
       "label": "Appointed as Governor"
-    },
-    {
-      "id": "81c12b1ceeb0",
-      "from": "e153c1875584",
-      "to": "23d8905a6cbb",
-      "label": "Appointed as Minister of Works"
     },
     {
       "id": "fc7b49bd86ca",

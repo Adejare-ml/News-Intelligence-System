@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 89,
+      "total_mentions": 90,
       "points": [
         {
           "week": "2026-09-07",
@@ -43,9 +43,9 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 16,
-          "avg_risk": 22.2,
-          "max_risk": 40
+          "mentions": 17,
+          "avg_risk": 24.7,
+          "max_risk": 65
         }
       ]
     },
@@ -1532,6 +1532,31 @@
       ]
     },
     {
+      "key": "dave umahi",
+      "label": "Dave Umahi",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 4,
@@ -2005,31 +2030,6 @@
       ]
     },
     {
-      "key": "dave umahi",
-      "label": "Dave Umahi",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "david umahi",
       "label": "David Umahi",
       "total_mentions": 3,
@@ -2087,6 +2087,25 @@
       ]
     },
     {
+      "key": "ecowas court",
+      "label": "ECOWAS Court",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 47.5,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "ekiti state government",
       "label": "Ekiti State Government",
       "total_mentions": 3,
@@ -2133,6 +2152,25 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "federal ministry of works",
+      "label": "Federal Ministry of Works",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 40
         }
       ]
     },
@@ -2713,6 +2751,31 @@
       ]
     },
     {
+      "key": "unknown",
+      "label": "Unknown",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "amni",
       "label": "AMNI",
       "total_mentions": 2,
@@ -3033,25 +3096,6 @@
       ]
     },
     {
-      "key": "ecowas court",
-      "label": "ECOWAS Court",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "ebonyi state government",
       "label": "Ebonyi State Government",
       "total_mentions": 2,
@@ -3156,25 +3200,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal ministry of works",
-      "label": "Federal Ministry of Works",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -4158,25 +4183,6 @@
       ]
     },
     {
-      "key": "unknown",
-      "label": "Unknown",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "unnamed commissioner",
       "label": "Unnamed Commissioner",
       "total_mentions": 2,
@@ -4955,6 +4961,19 @@
       ]
     },
     {
+      "key": "arewa consultative forum",
+      "label": "Arewa Consultative Forum",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "association of issuing houses of",
       "label": "Association of Issuing Houses of Nigeria",
       "total_mentions": 1,
@@ -5512,20 +5531,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "douye diri",
-      "label": "Douye Diri",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-25 00:59:21"
+  "generated": "2026-10-25 12:26:45"
 }
