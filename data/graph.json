@@ -127,6 +127,18 @@
       "risk": "Low"
     },
     {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "23d8905a6cbb",
       "label": "Federal Ministry of Works",
       "type": "agency",
@@ -135,6 +147,12 @@
     {
       "id": "e4c5ee83197c",
       "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "e153c1875584",
       "label": "Dave Umahi",
       "type": "person",
@@ -280,12 +280,6 @@
       "id": "f1f131ace5c4",
       "label": "Uba Sani",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -382,6 +376,12 @@
       "id": "f121c0e97820",
       "label": "Seyi Makinde",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -601,6 +601,12 @@
       "risk": "Medium"
     },
     {
+      "id": "0bee8e95809f",
+      "label": "Pincode",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "79ad7c2f3273",
       "label": "Zeenab Foods Limited",
       "type": "agency",
@@ -681,18 +687,6 @@
     {
       "id": "babe3308606d",
       "label": "PINL",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e79817c87e24",
-      "label": "National Identity Management Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4757d2f9d325",
-      "label": "63 biometric agents",
       "type": "company",
       "risk": "Low"
     }
@@ -903,6 +897,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "12047b1c4fd5",
+      "from": "0bee8e95809f",
+      "to": "a99d3740770f",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "3bb70fc86d28",
       "from": "334c4a4c42fd",
       "to": "79ad7c2f3273",
@@ -984,12 +984,6 @@
       "id": "a8e62f428290",
       "from": "babe3308606d",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "8dfb56d07ece",
-      "from": "4757d2f9d325",
-      "to": "e79817c87e24",
       "label": "Contract Awardee"
     }
   ]

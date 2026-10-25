@@ -1,21 +1,25 @@
 {
   "new_companies": [
-    "Arewa Consultative Forum",
-    "Socio-Economic Rights and Accountability Project (SERAP)",
-    "Transvora"
+    "Pincode"
   ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "ICPC Chairman on spotlight over allegation of malfeasance in Sterling Oil investigation",
+      "url": "https://businessday.ng/life/article/icpc-chairman-on-spotlight-over-allegation-of-malfeasance-in-sterling-oil-investigation/",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 3,
+    "new_companies": 1,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-25 12:26:41"
+  "generated": "2026-10-25 17:02:17"
 }

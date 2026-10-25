@@ -1,61 +1,61 @@
 {
-  "generated": "2026-10-25 12:26:43",
+  "generated": "2026-10-25 17:02:18",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2883,
+      "likes": 2930,
       "downloads": 85275
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 810,
+      "likes": 832,
       "downloads": 6444
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1552,
+      "likes": 1577,
       "downloads": 660874
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 473,
+      "likes": 488,
       "downloads": 3488
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9240,
+      "likes": 9283,
       "downloads": 2107108
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 708,
+      "likes": 719,
       "downloads": 10757
-    },
-    {
-      "id": "fishaudio/drama-3",
-      "url": "https://huggingface.co/fishaudio/drama-3",
-      "task": "text-to-speech",
-      "likes": 1001,
-      "downloads": 21375
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 333,
+      "likes": 338,
       "downloads": 7355
+    },
+    {
+      "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
+      "task": "text-to-image",
+      "likes": 5018,
+      "downloads": 2235846
     }
   ],
   "papers": [
@@ -72,7 +72,7 @@
     {
       "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
       "url": "https://huggingface.co/papers/2610.04184",
-      "upvotes": 20
+      "upvotes": 21
     },
     {
       "title": "Diffusion Language Models Change Speed Across Tasks and Languages",

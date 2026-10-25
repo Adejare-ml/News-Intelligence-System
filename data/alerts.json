@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-10-25",
+      "title": "ICPC Chairman on spotlight over allegation of malfeasance in Sterling Oil investigation",
+      "url": "https://businessday.ng/life/article/icpc-chairman-on-spotlight-over-allegation-of-malfeasance-in-sterling-oil-investigation/",
+      "source": "businessday",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Independent Corrupt Practices and Other Related Offences Commission",
+        "Sterling Oil"
+      ]
+    },
+    {
       "date": "2026-10-22",
       "title": "Weak oversight, fiscal plan leave over 60,000 public projects abandoned - The Guardian Nigeria News",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVDZpamFfRFVzZnc0Z09LOGIzYTdZa0ZzTS1meWJ4LXc2alJsTW81bUNEZTI1WXdDU0FfbERkM1o4YWltXzZzNVB5UFR3Yzh2ZDBrTDNUbVJ5RGp2bzFtZHo4a2d4blNlbFJGRV9jYURWNkt1S25zUWxpUFlzWDNjaVZka0x2UnFVUW5DOEdiQ2JENFNjT3UxUXZIUkdTZUZo?oc=5",
@@ -807,5 +819,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-25 12:26:45"
+  "generated": "2026-10-25 17:02:23"
 }
