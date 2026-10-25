@@ -957,6 +957,37 @@
       ]
     },
     {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "total_mentions": 7,
@@ -1040,31 +1071,6 @@
           "mentions": 2,
           "avg_risk": 42.5,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1671,6 +1677,25 @@
       ]
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "jpmorgan",
       "label": "JPMorgan",
       "total_mentions": 4,
@@ -2127,6 +2152,31 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3134,25 +3184,6 @@
       ]
     },
     {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "enugu state house of assembly",
       "label": "Enugu State House of Assembly",
       "total_mentions": 2,
@@ -3409,25 +3440,6 @@
       ]
     },
     {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "international finance corporation",
       "label": "International Finance Corporation",
       "total_mentions": 2,
@@ -3456,6 +3468,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "kaduna state government",
+      "label": "Kaduna State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -5518,20 +5549,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "delta maritime",
-      "label": "Delta Maritime Group",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-25 12:26:45"
+  "generated": "2026-10-25 17:02:23"
 }

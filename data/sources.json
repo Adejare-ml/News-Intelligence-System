@@ -2,37 +2,37 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2701,
-      "published": 1501,
-      "filtered": 1200,
+      "total": 2704,
+      "published": 1502,
+      "filtered": 1202,
       "accept_rate": 56,
       "avg_risk": 28.5,
       "engines": {
         "unknown": 963,
-        "ollama": 530,
+        "ollama": 531,
         "nvidia": 8
       },
       "last_seen": "2026-10-25"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2142,
-      "published": 895,
-      "filtered": 1247,
+      "total": 2150,
+      "published": 897,
+      "filtered": 1253,
       "accept_rate": 42,
       "avg_risk": 30.7,
       "engines": {
         "unknown": 440,
-        "ollama": 451,
+        "ollama": 453,
         "nvidia": 4
       },
       "last_seen": "2026-10-25"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1024,
+      "total": 1026,
       "published": 421,
-      "filtered": 603,
+      "filtered": 605,
       "accept_rate": 41,
       "avg_risk": 27.3,
       "engines": {
@@ -44,9 +44,9 @@
     },
     {
       "source": "The Punch",
-      "total": 642,
+      "total": 643,
       "published": 360,
-      "filtered": 282,
+      "filtered": 283,
       "accept_rate": 56,
       "avg_risk": 32.3,
       "engines": {
@@ -127,16 +127,16 @@
     },
     {
       "source": "leadership",
-      "total": 188,
+      "total": 189,
       "published": 49,
-      "filtered": 139,
+      "filtered": 140,
       "accept_rate": 26,
       "avg_risk": 23.6,
       "engines": {
         "unknown": 35,
         "ollama": 14
       },
-      "last_seen": "2026-10-23"
+      "last_seen": "2026-10-25"
     },
     {
       "source": "dailypost",
@@ -153,9 +153,9 @@
     },
     {
       "source": "vanguardngr",
-      "total": 178,
+      "total": 180,
       "published": 28,
-      "filtered": 150,
+      "filtered": 152,
       "accept_rate": 16,
       "avg_risk": 25.8,
       "engines": {
@@ -207,16 +207,16 @@
     },
     {
       "source": "businessday",
-      "total": 93,
-      "published": 26,
-      "filtered": 67,
+      "total": 95,
+      "published": 27,
+      "filtered": 68,
       "accept_rate": 28,
-      "avg_risk": 28.2,
+      "avg_risk": 29.9,
       "engines": {
         "unknown": 13,
-        "ollama": 13
+        "ollama": 14
       },
-      "last_seen": "2026-10-22"
+      "last_seen": "2026-10-25"
     },
     {
       "source": "The Eagle Online",
@@ -2157,5 +2157,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-25 12:26:45"
+  "generated": "2026-10-25 17:02:23"
 }
