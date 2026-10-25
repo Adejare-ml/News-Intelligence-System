@@ -1,7 +1,7 @@
 {
   "window_days": 7,
   "recent_articles": 198,
-  "previous_articles": 239,
+  "previous_articles": 241,
   "rising": [
     {
       "term": "bill",
@@ -13,18 +13,6 @@
       "term": "police",
       "recent": 7,
       "previous": 2,
-      "change": 5
-    },
-    {
-      "term": "interest",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "nlng",
-      "recent": 5,
-      "previous": 0,
       "change": 5
     },
     {
@@ -62,6 +50,18 @@
       "recent": 5,
       "previous": 1,
       "change": 4
+    },
+    {
+      "term": "agricultural",
+      "recent": 4,
+      "previous": 0,
+      "change": 4
+    },
+    {
+      "term": "design",
+      "recent": 4,
+      "previous": 0,
+      "change": 4
     }
   ],
   "falling": [
@@ -79,14 +79,8 @@
     },
     {
       "term": "oil",
-      "recent": 5,
+      "recent": 6,
       "previous": 13,
-      "change": -8
-    },
-    {
-      "term": "atiku",
-      "recent": 2,
-      "previous": 9,
       "change": -7
     },
     {
@@ -124,23 +118,29 @@
       "recent": 0,
       "previous": 6,
       "change": -6
+    },
+    {
+      "term": "seals",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 135,
-      "previous": 164
+      "recent": 134,
+      "previous": 166
+    },
+    {
+      "category": "Legal",
+      "recent": 31,
+      "previous": 40
     },
     {
       "category": "Company",
       "recent": 30,
       "previous": 35
-    },
-    {
-      "category": "Legal",
-      "recent": 30,
-      "previous": 40
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-25 12:26:43"
+  "generated": "2026-10-25 17:02:19"
 }

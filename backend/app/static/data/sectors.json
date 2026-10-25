@@ -2,24 +2,24 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 946,
-      "mentions": 1584,
+      "companies": 945,
+      "mentions": 1583,
       "risk": {
         "Low": 835,
         "Critical": 57,
-        "Medium": 31,
+        "Medium": 30,
         "High": 23
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 39,
-      "mentions": 211,
+      "companies": 40,
+      "mentions": 213,
       "risk": {
         "Medium": 12,
         "Low": 23,
         "Critical": 1,
-        "High": 3
+        "High": 4
       }
     },
     {
@@ -48,6 +48,16 @@
         "Medium": 4,
         "Low": 4,
         "High": 1
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 6,
+      "mentions": 19,
+      "risk": {
+        "Low": 2,
+        "High": 1,
+        "Medium": 3
       }
     },
     {
@@ -103,24 +113,6 @@
         "Medium": 2,
         "Low": 2,
         "High": 1
-      }
-    },
-    {
-      "industry": "Politics",
-      "companies": 5,
-      "mentions": 11,
-      "risk": {
-        "Low": 2,
-        "Medium": 3
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 2,
-      "mentions": 10,
-      "risk": {
-        "High": 1,
-        "Medium": 1
       }
     },
     {
@@ -317,6 +309,14 @@
       "mentions": 3,
       "risk": {
         "Low": 3
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -657,6 +657,14 @@
       }
     },
     {
+      "industry": "Marketing/Advertising",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -833,5 +841,5 @@
       }
     }
   ],
-  "generated": "2026-10-25 12:26:45"
+  "generated": "2026-10-25 17:02:23"
 }

@@ -246,6 +246,15 @@
       }
     },
     {
+      "name": "Enugu State Government",
+      "contracts": 2,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 200000000.0,
+        "NGN": 2000000.0
+      }
+    },
+    {
       "name": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "contracts": 1,
       "undisclosed": 0,
@@ -430,14 +439,6 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
-    },
-    {
-      "name": "Enugu State Government",
-      "contracts": 1,
-      "undisclosed": 0,
-      "totals": {
-        "USD": 200000000.0
-      }
     },
     {
       "name": "Federal Government of Nigeria / Benue State Government",
@@ -786,6 +787,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 20000000.0
+      }
+    },
+    {
+      "name": "Pincode",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 2000000.0
       }
     },
     {
@@ -1185,5 +1194,5 @@
       }
     }
   ],
-  "generated": "2026-10-25 12:26:45"
+  "generated": "2026-10-25 17:02:23"
 }
