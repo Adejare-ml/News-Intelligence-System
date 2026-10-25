@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 198,
-  "previous_articles": 241,
+  "recent_articles": 197,
+  "previous_articles": 238,
   "rising": [
     {
       "term": "bill",
@@ -19,6 +19,12 @@
       "term": "assembly",
       "recent": 8,
       "previous": 4,
+      "change": 4
+    },
+    {
+      "term": "gas",
+      "recent": 7,
+      "previous": 3,
       "change": 4
     },
     {
@@ -56,12 +62,6 @@
       "recent": 4,
       "previous": 0,
       "change": 4
-    },
-    {
-      "term": "design",
-      "recent": 4,
-      "previous": 0,
-      "change": 4
     }
   ],
   "falling": [
@@ -76,12 +76,6 @@
       "recent": 0,
       "previous": 9,
       "change": -9
-    },
-    {
-      "term": "oil",
-      "recent": 6,
-      "previous": 13,
-      "change": -7
     },
     {
       "term": "ncc",
@@ -100,6 +94,12 @@
       "recent": 0,
       "previous": 7,
       "change": -7
+    },
+    {
+      "term": "oil",
+      "recent": 6,
+      "previous": 12,
+      "change": -6
     },
     {
       "term": "dangote",
@@ -130,17 +130,17 @@
     {
       "category": "Government",
       "recent": 134,
-      "previous": 166
+      "previous": 164
     },
     {
       "category": "Legal",
       "recent": 31,
-      "previous": 40
+      "previous": 38
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 35
+      "recent": 29,
+      "previous": 36
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-25 17:02:19"
+  "generated": "2026-10-25 19:30:58"
 }
