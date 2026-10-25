@@ -1,25 +1,25 @@
 {
-  "generated": "2026-10-25 17:02:18",
+  "generated": "2026-10-25 19:30:58",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2930,
+      "likes": 2952,
       "downloads": 85275
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 832,
+      "likes": 837,
       "downloads": 6444
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1577,
+      "likes": 1584,
       "downloads": 660874
     },
     {
@@ -33,28 +33,28 @@
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9283,
+      "likes": 9305,
       "downloads": 2107108
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 719,
+      "likes": 723,
       "downloads": 10757
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 338,
+      "likes": 343,
       "downloads": 7355
     },
     {
       "id": "abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized",
       "task": "text-to-image",
-      "likes": 5018,
+      "likes": 5031,
       "downloads": 2235846
     }
   ],
