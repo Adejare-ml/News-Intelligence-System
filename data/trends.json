@@ -1,14 +1,8 @@
 {
   "window_days": 7,
-  "recent_articles": 199,
-  "previous_articles": 240,
+  "recent_articles": 197,
+  "previous_articles": 241,
   "rising": [
-    {
-      "term": "probe",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
-    },
     {
       "term": "bill",
       "recent": 10,
@@ -22,6 +16,12 @@
       "change": 5
     },
     {
+      "term": "interest",
+      "recent": 6,
+      "previous": 1,
+      "change": 5
+    },
+    {
       "term": "nlng",
       "recent": 5,
       "previous": 0,
@@ -31,6 +31,12 @@
       "term": "assembly",
       "recent": 8,
       "previous": 4,
+      "change": 4
+    },
+    {
+      "term": "probe",
+      "recent": 7,
+      "previous": 3,
       "change": 4
     },
     {
@@ -52,12 +58,6 @@
       "change": 4
     },
     {
-      "term": "interest",
-      "recent": 5,
-      "previous": 1,
-      "change": 4
-    },
-    {
       "term": "projects",
       "recent": 5,
       "previous": 1,
@@ -67,9 +67,9 @@
   "falling": [
     {
       "term": "efcc",
-      "recent": 9,
-      "previous": 20,
-      "change": -11
+      "recent": 8,
+      "previous": 21,
+      "change": -13
     },
     {
       "term": "imf",
@@ -130,16 +130,16 @@
     {
       "category": "Government",
       "recent": 137,
-      "previous": 166
+      "previous": 165
     },
     {
       "category": "Company",
-      "recent": 30,
-      "previous": 33
+      "recent": 29,
+      "previous": 35
     },
     {
       "category": "Legal",
-      "recent": 30,
+      "recent": 29,
       "previous": 41
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-24 19:24:23"
+  "generated": "2026-10-25 00:59:17"
 }

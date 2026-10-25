@@ -350,6 +350,12 @@
       "totals": {}
     },
     {
+      "name": "Zeenab Foods Limited",
+      "contracts": 2,
+      "undisclosed": 2,
+      "totals": {}
+    },
+    {
       "name": "AfCFTA Secretariat",
       "contracts": 1,
       "undisclosed": 1,
@@ -678,12 +684,6 @@
       "totals": {}
     },
     {
-      "name": "Zeenab Foods Limited",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "the Federal High Court",
       "contracts": 1,
       "undisclosed": 1,
@@ -693,8 +693,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 129,
-      "undisclosed": 80,
+      "contracts": 130,
+      "undisclosed": 81,
       "totals": {
         "NGN": 20779214090000.0,
         "USD": 47807540000.0
@@ -1185,5 +1185,5 @@
       }
     }
   ],
-  "generated": "2026-10-24 19:24:27"
+  "generated": "2026-10-25 00:59:21"
 }

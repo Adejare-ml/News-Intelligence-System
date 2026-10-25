@@ -449,6 +449,37 @@
       ]
     },
     {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 15,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "total_mentions": 15,
@@ -482,37 +513,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 14,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 34.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 40
         }
       ]
     },
@@ -4247,6 +4247,19 @@
       ]
     },
     {
+      "key": "zeenab foods",
+      "label": "Zeenab Foods Limited",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "zenith bank",
       "label": "Zenith Bank",
       "total_mentions": 2,
@@ -5512,20 +5525,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "dr haydar daudu",
-      "label": "Dr Haydar Daudu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-24 19:24:27"
+  "generated": "2026-10-25 00:59:21"
 }
