@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "23d8905a6cbb",
       "label": "Federal Ministry of Works",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dbaadc7cfab3",
-      "label": "Government of the United Kingdom",
       "type": "agency",
       "risk": "Low"
     },
@@ -601,8 +601,8 @@
       "risk": "Medium"
     },
     {
-      "id": "e1894ded2ce6",
-      "label": "Federal Government of Nigeria / Benue State Government",
+      "id": "79ad7c2f3273",
+      "label": "Zeenab Foods Limited",
       "type": "agency",
       "risk": "Low"
     },
@@ -613,14 +613,14 @@
       "risk": "Low"
     },
     {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
+      "id": "e1894ded2ce6",
+      "label": "Federal Government of Nigeria / Benue State Government",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "79ad7c2f3273",
-      "label": "Zeenab Foods Limited",
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -903,6 +903,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "3bb70fc86d28",
+      "from": "334c4a4c42fd",
+      "to": "79ad7c2f3273",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "0bd84267868a",
       "from": "334c4a4c42fd",
       "to": "e1894ded2ce6",
@@ -912,12 +918,6 @@
       "id": "9eaaba6423cf",
       "from": "334c4a4c42fd",
       "to": "a75518830b0f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "3bb70fc86d28",
-      "from": "334c4a4c42fd",
-      "to": "79ad7c2f3273",
       "label": "Contract Awardee"
     },
     {
