@@ -1,61 +1,61 @@
 {
-  "generated": "2026-10-25 00:59:17",
+  "generated": "2026-10-25 12:26:43",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2788,
-      "downloads": 73215
+      "likes": 2883,
+      "downloads": 85275
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 779,
-      "downloads": 4795
+      "likes": 810,
+      "downloads": 6444
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1504,
-      "downloads": 590742
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 9188,
-      "downloads": 2087721
+      "likes": 1552,
+      "downloads": 660874
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 454,
-      "downloads": 2537
+      "likes": 473,
+      "downloads": 3488
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 9240,
+      "downloads": 2107108
     },
     {
       "id": "OpenMOSS-Team/MOSS-Image-SFT",
       "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
       "task": "text-to-image",
-      "likes": 697,
-      "downloads": 9717
+      "likes": 708,
+      "downloads": 10757
     },
     {
       "id": "fishaudio/drama-3",
       "url": "https://huggingface.co/fishaudio/drama-3",
       "task": "text-to-speech",
-      "likes": 989,
-      "downloads": 19831
+      "likes": 1001,
+      "downloads": 21375
     },
     {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 18349,
-      "downloads": 7851161
+      "likes": 333,
+      "downloads": 7355
     }
   ],
   "papers": [
@@ -72,7 +72,7 @@
     {
       "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
       "url": "https://huggingface.co/papers/2610.04184",
-      "upvotes": 7
+      "upvotes": 20
     },
     {
       "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
@@ -82,7 +82,7 @@
     {
       "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
       "url": "https://huggingface.co/papers/2610.31198",
-      "upvotes": 19
+      "upvotes": 23
     },
     {
       "title": "Bridging Exploration and Persona: Information-Directed Dueling for Test-Time Agent Personalization",
