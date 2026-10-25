@@ -91,13 +91,13 @@
       "previous_mentions": 5
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 26.7,
-      "previous_avg": 35.0,
-      "delta": -8.3,
-      "recent_mentions": 3,
-      "previous_mentions": 6
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 22.1,
+      "previous_avg": 30.0,
+      "delta": -7.9,
+      "recent_mentions": 17,
+      "previous_mentions": 21
     },
     {
       "key": "house of representatives",
@@ -118,15 +118,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 22.1,
-      "previous_avg": 29.5,
-      "delta": -7.4,
-      "recent_mentions": 17,
-      "previous_mentions": 22
-    },
-    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 40.0,
@@ -134,6 +125,15 @@
       "delta": 5.0,
       "recent_mentions": 4,
       "previous_mentions": 6
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "recent_avg": 30.0,
+      "previous_avg": 34.0,
+      "delta": -4.0,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "national assembly",
@@ -156,20 +156,11 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 58.2,
-      "previous_avg": 58.6,
-      "delta": -0.4,
-      "recent_mentions": 11,
+      "recent_avg": 60.0,
+      "previous_avg": 57.2,
+      "delta": 2.8,
+      "recent_mentions": 10,
       "previous_mentions": 18
-    },
-    {
-      "key": "united airlines",
-      "label": "United Nigeria Airlines",
-      "recent_avg": 20.0,
-      "previous_avg": 20.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "nipco",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 65.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-24 19:24:27"
+  "generated": "2026-10-25 00:59:21"
 }

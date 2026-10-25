@@ -69,6 +69,15 @@
       }
     },
     {
+      "industry": "Agriculture",
+      "companies": 9,
+      "mentions": 11,
+      "risk": {
+        "Low": 8,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Financial Services",
       "companies": 5,
       "mentions": 11,
@@ -102,15 +111,6 @@
       "risk": {
         "Low": 2,
         "Medium": 3
-      }
-    },
-    {
-      "industry": "Agriculture",
-      "companies": 9,
-      "mentions": 10,
-      "risk": {
-        "Low": 8,
-        "Medium": 1
       }
     },
     {
@@ -824,5 +824,5 @@
       }
     }
   ],
-  "generated": "2026-10-24 19:24:27"
+  "generated": "2026-10-25 00:59:21"
 }

@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2696,
+      "total": 2698,
       "published": 1500,
-      "filtered": 1196,
+      "filtered": 1198,
       "accept_rate": 56,
       "avg_risk": 28.5,
       "engines": {
@@ -16,9 +16,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2124,
+      "total": 2130,
       "published": 893,
-      "filtered": 1231,
+      "filtered": 1237,
       "accept_rate": 42,
       "avg_risk": 30.7,
       "engines": {
@@ -30,31 +30,31 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 1021,
-      "published": 419,
+      "total": 1022,
+      "published": 420,
       "filtered": 602,
       "accept_rate": 41,
       "avg_risk": 27.3,
       "engines": {
         "unknown": 188,
-        "ollama": 227,
+        "ollama": 228,
         "nvidia": 4
       },
       "last_seen": "2026-10-24"
     },
     {
       "source": "The Punch",
-      "total": 639,
-      "published": 359,
-      "filtered": 280,
+      "total": 642,
+      "published": 360,
+      "filtered": 282,
       "accept_rate": 56,
-      "avg_risk": 32.4,
+      "avg_risk": 32.3,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 249
+        "ollama": 250
       },
-      "last_seen": "2026-10-23"
+      "last_seen": "2026-10-24"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -152,6 +152,19 @@
       "last_seen": "2026-10-24"
     },
     {
+      "source": "vanguardngr",
+      "total": 176,
+      "published": 28,
+      "filtered": 148,
+      "accept_rate": 16,
+      "avg_risk": 25.8,
+      "engines": {
+        "unknown": 19,
+        "ollama": 9
+      },
+      "last_seen": "2026-10-24"
+    },
+    {
       "source": "punchng",
       "total": 175,
       "published": 38,
@@ -164,19 +177,6 @@
         "ollama": 18
       },
       "last_seen": "2026-10-23"
-    },
-    {
-      "source": "vanguardngr",
-      "total": 175,
-      "published": 28,
-      "filtered": 147,
-      "accept_rate": 16,
-      "avg_risk": 25.8,
-      "engines": {
-        "unknown": 19,
-        "ollama": 9
-      },
-      "last_seen": "2026-10-24"
     },
     {
       "source": "independentng",
@@ -397,6 +397,19 @@
       "last_seen": "2026-10-22"
     },
     {
+      "source": "naijanews",
+      "total": 15,
+      "published": 3,
+      "filtered": 12,
+      "accept_rate": 20,
+      "avg_risk": 31.0,
+      "engines": {
+        "unknown": 2,
+        "ollama": 1
+      },
+      "last_seen": "2026-10-24"
+    },
+    {
       "source": "nairametrics",
       "total": 15,
       "published": 8,
@@ -409,19 +422,6 @@
         "nvidia": 1
       },
       "last_seen": "2026-10-05"
-    },
-    {
-      "source": "naijanews",
-      "total": 14,
-      "published": 3,
-      "filtered": 11,
-      "accept_rate": 21,
-      "avg_risk": 31.0,
-      "engines": {
-        "unknown": 2,
-        "ollama": 1
-      },
-      "last_seen": "2026-10-16"
     },
     {
       "source": "pmnewsnigeria",
@@ -787,6 +787,16 @@
       "last_seen": "2026-10-15"
     },
     {
+      "source": "Breitbart News",
+      "total": 3,
+      "published": 0,
+      "filtered": 3,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-10-23"
+    },
+    {
       "source": "DW (English)",
       "total": 3,
       "published": 1,
@@ -973,16 +983,6 @@
         "unknown": 2
       },
       "last_seen": "2026-07-15"
-    },
-    {
-      "source": "Breitbart News",
-      "total": 2,
-      "published": 0,
-      "filtered": 2,
-      "accept_rate": 0,
-      "avg_risk": null,
-      "engines": {},
-      "last_seen": "2026-10-21"
     },
     {
       "source": "BusinessLine",
@@ -1427,6 +1427,16 @@
         "unknown": 1
       },
       "last_seen": "2026-07-20"
+    },
+    {
+      "source": "Economic and Financial Crimes Commission - EFCC",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-10-24"
     },
     {
       "source": "Elconfidencial.com",
@@ -2147,5 +2157,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-24 19:24:27"
+  "generated": "2026-10-25 00:59:21"
 }
