@@ -22,10 +22,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 48.5,
-      "previous_avg": 24.5,
-      "delta": 24.0,
+      "previous_avg": 23.9,
+      "delta": 24.6,
       "recent_mentions": 10,
-      "previous_mentions": 10
+      "previous_mentions": 9
     },
     {
       "key": "government of",
@@ -51,15 +51,6 @@
       "recent_avg": 42.5,
       "previous_avg": 30.0,
       "delta": 12.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "content development and monitoring board",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "recent_avg": 20.0,
-      "previous_avg": 10.0,
-      "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 1
     },
@@ -109,13 +100,13 @@
       "previous_mentions": 5
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 31.7,
-      "previous_avg": 39.2,
-      "delta": -7.5,
-      "recent_mentions": 3,
-      "previous_mentions": 6
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 30.6,
+      "previous_avg": 23.1,
+      "delta": 7.5,
+      "recent_mentions": 8,
+      "previous_mentions": 8
     },
     {
       "key": "senate of",
@@ -172,15 +163,24 @@
       "previous_mentions": 18
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 30.6,
-      "previous_avg": 28.9,
-      "delta": 1.7,
-      "recent_mentions": 8,
-      "previous_mentions": 9
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 31.7,
+      "previous_avg": 34.0,
+      "delta": -2.3,
+      "recent_mentions": 3,
+      "previous_mentions": 5
+    },
+    {
+      "key": "nipco",
+      "label": "NIPCO",
+      "recent_avg": 85.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-25 17:02:23"
+  "generated": "2026-10-25 19:31:00"
 }
