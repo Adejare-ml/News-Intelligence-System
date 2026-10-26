@@ -1,0 +1,1 @@
+document.querySelectorAll(`[data-show-more]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.parentElement?.querySelector(`[data-more]`);t&&(t.hidden=!1,e.remove())})});
