@@ -121,6 +121,36 @@
       "risk": "Low"
     },
     {
+      "id": "4f3be5c55ea4",
+      "label": "Presidency of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "dbaadc7cfab3",
+      "label": "Government of the United Kingdom",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "525996fa741b",
+      "label": "National Public Assets Management Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -211,33 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "e94d960651d4",
-      "label": "Development Bank of Nigeria",
-      "type": "agency",
+      "id": "18bc77b97b9c",
+      "label": "Festus Keyamo",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "3cb22e0cca07",
-      "label": "Presidential panel on State Police",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1b5b11475e62",
-      "label": "Federal Civil Service Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "320005948437",
-      "label": "NIHOTOUR",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "62e2ee328721",
-      "label": "Human Rights Injustice Watch",
-      "type": "agency",
+      "id": "00d9f6e47194",
+      "label": "2027 Re-election Campaign",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -385,12 +397,6 @@
       "risk": "Low"
     },
     {
-      "id": "18bc77b97b9c",
-      "label": "Festus Keyamo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "68419b78e6b4",
       "label": "Ministry of Aviation",
       "type": "company",
@@ -466,18 +472,6 @@
       "id": "be252fefa816",
       "label": "Nasir El-Rufai",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "512a18337770",
-      "label": "LAWMA boss",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0b2ac17f47f4",
-      "label": "Lagos State Waste Management Authority",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -693,6 +687,12 @@
   ],
   "edges": [
     {
+      "id": "ff7b9bca2ec3",
+      "from": "18bc77b97b9c",
+      "to": "00d9f6e47194",
+      "label": "Appointed as Director of Air Mobilisation"
+    },
+    {
       "id": "81c12b1ceeb0",
       "from": "e153c1875584",
       "to": "23d8905a6cbb",
@@ -823,12 +823,6 @@
       "from": "be252fefa816",
       "to": "4b3b1b76a8e8",
       "label": "Appointed as Former Governor"
-    },
-    {
-      "id": "9bc508d477ef",
-      "from": "512a18337770",
-      "to": "0b2ac17f47f4",
-      "label": "Appointed as Managing Director/CEO"
     },
     {
       "id": "a5e36b5f552f",
