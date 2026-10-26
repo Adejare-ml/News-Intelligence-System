@@ -24,6 +24,31 @@
     },
     {
       "date": "2026-10-26",
+      "title": "\u20a617trn Project Waste: CIPMN moves to expose perpetrators - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMFJGYm5mQTlaMGJBaEtrVTh3b2RqQWU0RkdkYTdQNjlNOEtiaFBnN1AyR1VhY1V6ZjkxNF9YcDNBTnkyeFE5QVREQXM0eUJXWFdiUTJiMElWZXFFbmFmcThud05fLTQ3WVhUTDFtMFo3TGlCbWc5c2lNYlQ5NVVkS2RqcmxQTzJ0V2FuNEdZd1Q4cTQ?oc=5",
+      "source": "The Guardian Nigeria News",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Chartered Institute of Project Management Nigeria"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "NYSC, UNN disowned ex-minister Uche Nnaji\u2019s certificates \u2013 ICPC witness tells court - The Guardian Nigeria News",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcEFhSGtVMUdQcy1sUWZ6cHhrSUR2YndfRjQ4N1BqMmZqMFp1NUNKZlMtT1pnQ1FNUFBnUTE4MHQ2NG1RWDByTGFpYm5jQk5OaFdmWkhTdjl5WVV4Njh3ZmVLUl9YdkttSzNqVWhsMnFiWUxrU3IwaXQ1c0ZWbnFhVGRtNXZhQzBZenFHWmtfQjBjUEkyTlg1bDBGOG5NbUFzSW9lZnFFUjM?oc=5",
+      "source": "The Guardian Nigeria News",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Independent Corrupt Practices and Other Related Offences Commission",
+        "National Youth Service Corps",
+        "University of Nigeria, Nsukka",
+        "Uche Nnaji"
+      ]
+    },
+    {
+      "date": "2026-10-26",
       "title": "EFCC busts four illegal lithium plants in Ogun, arrests 15 suspects | - The Eagle Online",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQkRhZmFZRklHaGswN0RlNllqQzF0UWNMdWlwOHItSDZJZDhRVUFqVk5jeUJMenFPb3VWcWNpdHNVNENTT1hNM0xMQzZKam56ZGNudFgyaDV2d3FrZUJwYWFUeENzSDNqSlRyanVGVlJXRUMwVXYxQTdVcVc5T0VoTTJ2TW95VHFyTzFQLUJUWUtWdjk0dTJRUEdoMEpxQQ?oc=5",
       "source": "The Eagle Online",
@@ -852,5 +877,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-26 14:00:32"
+  "generated": "2026-10-26 19:07:18"
 }

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-26 14:00:18",
+  "generated": "2026-10-26 19:07:09",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3105,
+      "likes": 3156,
       "downloads": 95889
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 893,
+      "likes": 906,
       "downloads": 8470
-    },
-    {
-      "id": "XHToken/Spark-X2.6-4B",
-      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-      "task": "text-generation",
-      "likes": 615,
-      "downloads": 4726
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 531,
+      "likes": 572,
       "downloads": 2787
+    },
+    {
+      "id": "XHToken/Spark-X2.6-4B",
+      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
+      "task": "text-generation",
+      "likes": 632,
+      "downloads": 4726
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1652,
+      "likes": 1678,
       "downloads": 700652
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9394,
+      "likes": 9430,
       "downloads": 2117147
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 372,
+      "likes": 381,
       "downloads": 8782
     },
     {
-      "id": "OpenMOSS-Team/MOSS-Image-SFT",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "task": "text-to-image",
-      "likes": 743,
-      "downloads": 12114
+      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "task": "text-generation",
+      "likes": 334,
+      "downloads": 891147
     }
   ],
   "papers": [
     {
-      "title": "FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models",
-      "url": "https://huggingface.co/papers/2610.31423",
+      "title": "Predictive Closure: A Set-Level Characterization of JEPA's Feature Selection",
+      "url": "https://huggingface.co/papers/2610.27364",
+      "upvotes": 0
+    },
+    {
+      "title": "Judging the Justification: Decision Certificate Supervision for Generative Reward Models",
+      "url": "https://huggingface.co/papers/2610.27528",
       "upvotes": 1
     },
     {
-      "title": "Does LeWorldModel Preserve Local Action Geometry?",
-      "url": "https://huggingface.co/papers/2610.31716",
-      "upvotes": 1
+      "title": "On the Token Collapse Phenomenon in Textual Graph Soft Prompting",
+      "url": "https://huggingface.co/papers/2610.31572",
+      "upvotes": 0
     },
     {
-      "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
-      "url": "https://huggingface.co/papers/2610.31668",
-      "upvotes": 218
+      "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+      "url": "https://huggingface.co/papers/2610.31779",
+      "upvotes": 0
     },
     {
-      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
-      "url": "https://huggingface.co/papers/2610.27782",
+      "title": "KANLab: TensorFlow Playground for Kolmogorov-Arnold Networks",
+      "url": "https://huggingface.co/papers/2610.20117",
       "upvotes": 2
     },
     {
-      "title": "SliderEdit++: Improved Slider Trajectories in Instruction-Based Image Editing",
-      "url": "https://huggingface.co/papers/2610.14253",
+      "title": "LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification",
+      "url": "https://huggingface.co/papers/2610.30524",
       "upvotes": 1
-    },
-    {
-      "title": "MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning",
-      "url": "https://huggingface.co/papers/2610.01352",
-      "upvotes": 4
     }
   ]
 }

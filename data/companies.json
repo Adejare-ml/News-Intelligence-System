@@ -5249,9 +5249,9 @@
   },
   {
     "Company": "MTN Nigeria",
-    "Mention Count": 11,
-    "Last Seen": "2026-09-10 16:52",
-    "Industry": "General",
+    "Mention Count": 12,
+    "Last Seen": "2026-10-26 19:03",
+    "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 90,
-    "Last Seen": "2026-10-22 1:24",
+    "Mention Count": 92,
+    "Last Seen": "2026-10-26 19:02",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -7112,8 +7112,8 @@
     "First Seen": ""
   },
   {
-    "Company": "Airtel",
-    "Mention Count": 3,
+    "Company": "Airtel Nigeria",
+    "Mention Count": 4,
     "Last Seen": "2026-10-21 20:30",
     "Industry": "Telecoms",
     "Risk Level": "Low",
@@ -7281,8 +7281,8 @@
   },
   {
     "Company": "United Bank for Africa Plc",
-    "Mention Count": 6,
-    "Last Seen": "2026-10-16 19:52",
+    "Mention Count": 7,
+    "Last Seen": "2026-10-26 19:04",
     "Industry": "Banking",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -9630,5 +9630,53 @@
     "Industry": "Media",
     "Risk Level": "Low",
     "First Seen": "2026-10-26 13:50"
+  },
+  {
+    "Company": "Tunji Olowolafe Foundation",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 19:01",
+    "Industry": "Philanthropy/Education",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-26 19:01"
+  },
+  {
+    "Company": "NNPC Cooperative",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 19:02",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-26 19:02"
+  },
+  {
+    "Company": "Union Bank",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 19:02",
+    "Industry": "Banking",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-26 19:02"
+  },
+  {
+    "Company": "Arik Air",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 19:02",
+    "Industry": "Aviation",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-26 19:02"
+  },
+  {
+    "Company": "Globacom",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 19:03",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-26 19:03"
+  },
+  {
+    "Company": "Vitol",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 19:04",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-26 19:04"
   }
 ]

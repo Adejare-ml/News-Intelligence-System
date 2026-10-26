@@ -58,7 +58,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 84,
+      "total_mentions": 86,
       "points": [
         {
           "week": "2026-09-14",
@@ -95,13 +95,19 @@
           "mentions": 10,
           "avg_risk": 48.5,
           "max_risk": 85
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 45
         }
       ]
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 69,
+      "total_mentions": 70,
       "points": [
         {
           "week": "2026-09-07",
@@ -147,8 +153,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 70.0,
+          "mentions": 3,
+          "avg_risk": 61.7,
           "max_risk": 75
         }
       ]
@@ -156,7 +162,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 54,
+      "total_mentions": 55,
       "points": [
         {
           "week": "2026-09-07",
@@ -196,8 +202,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 8,
-          "avg_risk": 30.6,
+          "mentions": 9,
+          "avg_risk": 31.7,
           "max_risk": 85
         }
       ]
@@ -344,6 +350,49 @@
       ]
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 20,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 8,
+          "avg_risk": 30.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "total_mentions": 19,
@@ -383,43 +432,6 @@
           "mentions": 4,
           "avg_risk": 12.5,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "total_mentions": 18,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 8,
-          "avg_risk": 30.0,
-          "max_risk": 85
         }
       ]
     },
@@ -1355,6 +1367,31 @@
       ]
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "lagos chamber of commerce and industry",
       "label": "Lagos Chamber of Commerce and Industry",
       "total_mentions": 5,
@@ -1745,25 +1782,6 @@
       ]
     },
     {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "jpmorgan",
       "label": "JPMorgan",
       "total_mentions": 4,
@@ -2022,6 +2040,31 @@
       ]
     },
     {
+      "key": "united bank for africa",
+      "label": "United Bank for Africa",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "west african examinations council",
       "label": "West African Examinations Council",
       "total_mentions": 4,
@@ -2099,6 +2142,25 @@
           "week": "2026-10-12",
           "mentions": 2,
           "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "airtel",
+      "label": "Airtel Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -2397,6 +2459,25 @@
           "mentions": 3,
           "avg_risk": 13.3,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2831,25 +2912,6 @@
       ]
     },
     {
-      "key": "united bank for africa",
-      "label": "United Bank for Africa",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "united airlines",
       "label": "United Nigeria Airlines",
       "total_mentions": 3,
@@ -2967,19 +3029,6 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "airtel",
-      "label": "Airtel",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -3561,19 +3610,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "mtn",
-      "label": "MTN",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4284,6 +4320,25 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "uche nnaji",
+      "label": "Uche Nnaji",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -5092,6 +5147,19 @@
       ]
     },
     {
+      "key": "arik air",
+      "label": "Arik Air",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "association of issuing houses of",
       "label": "Association of Issuing Houses of Nigeria",
       "total_mentions": 1,
@@ -5365,6 +5433,19 @@
       ]
     },
     {
+      "key": "chartered institute of project management",
+      "label": "Chartered Institute of Project Management Nigeria",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "chukwu",
       "label": "Chukwu",
       "total_mentions": 1,
@@ -5558,46 +5639,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "dangote east african refinery",
-      "label": "Dangote East African Refinery",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "dangote foundation",
-      "label": "Dangote Foundation",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "dangote petroleum refinery and petrochemicals",
-      "label": "Dangote Petroleum Refinery and Petrochemicals",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-26 14:00:32"
+  "generated": "2026-10-26 19:07:18"
 }
