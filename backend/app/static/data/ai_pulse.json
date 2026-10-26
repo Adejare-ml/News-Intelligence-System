@@ -1,64 +1,69 @@
 {
-  "generated": "2026-10-26 19:07:09",
+  "generated": "2026-10-26 21:32:03",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3156,
+      "likes": 3175,
       "downloads": 95889
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 906,
+      "likes": 915,
       "downloads": 8470
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 572,
+      "likes": 586,
       "downloads": 2787
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 632,
+      "likes": 637,
       "downloads": 4726
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1678,
+      "likes": 1690,
       "downloads": 700652
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9430,
+      "likes": 9445,
       "downloads": 2117147
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 381,
+      "likes": 382,
       "downloads": 8782
     },
     {
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 334,
+      "likes": 337,
       "downloads": 891147
     }
   ],
   "papers": [
+    {
+      "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
+      "url": "https://huggingface.co/papers/2610.21109",
+      "upvotes": 4
+    },
     {
       "title": "Predictive Closure: A Set-Level Characterization of JEPA's Feature Selection",
       "url": "https://huggingface.co/papers/2610.27364",
@@ -83,11 +88,6 @@
       "title": "KANLab: TensorFlow Playground for Kolmogorov-Arnold Networks",
       "url": "https://huggingface.co/papers/2610.20117",
       "upvotes": 2
-    },
-    {
-      "title": "LLM2Cert: LLM Synthesis of Certificates with SMT/Lean Verification",
-      "url": "https://huggingface.co/papers/2610.30524",
-      "upvotes": 1
     }
   ]
 }

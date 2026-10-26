@@ -234,6 +234,10 @@
       "label": "Nigerian National Petroleum Company Limited"
     },
     {
+      "key": "national youth service corps",
+      "label": "National Youth Service Corps"
+    },
+    {
       "key": "natural resource governance institute",
       "label": "Natural Resource Governance Institute"
     },
@@ -340,6 +344,10 @@
     {
       "key": "united bank for africa",
       "label": "United Bank for Africa"
+    },
+    {
+      "key": "university of nsukka",
+      "label": "University of Nigeria, Nsukka"
     }
   ],
   "edges": [
@@ -709,10 +717,15 @@
       "weight": 2
     },
     {
+      "a": "national youth service corps",
+      "b": "university of nsukka",
+      "weight": 2
+    },
+    {
       "a": "stallion",
       "b": "united bank for africa",
       "weight": 2
     }
   ],
-  "generated": "2026-10-26 19:07:18"
+  "generated": "2026-10-26 21:32:07"
 }

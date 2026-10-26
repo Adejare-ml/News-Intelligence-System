@@ -175,6 +175,12 @@
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9409708c9d80",
       "label": "International Monetary Fund",
       "type": "agency",
@@ -223,20 +229,14 @@
       "risk": "Low"
     },
     {
+      "id": "a000a2cb7017",
+      "label": "Cash Transfer Office",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a99d3740770f",
       "label": "Enugu State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
       "type": "agency",
       "risk": "Low"
     },
@@ -277,9 +277,21 @@
       "risk": "Low"
     },
     {
+      "id": "20186135f191",
+      "label": "Nnaji",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "e153c1875584",
       "label": "Dave Umahi",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -463,18 +475,6 @@
       "risk": "Low"
     },
     {
-      "id": "8ddf0d9698a1",
-      "label": "Agunloye",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "65c8c8afe47f",
       "label": "Thomas Ogungbangbe",
       "type": "psc",
@@ -639,6 +639,12 @@
     {
       "id": "84b6d6cbf896",
       "label": "National Agency for Science and Engineering Infrastructure",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9b5f79697bc2",
+      "label": "Federal Ministry of Power",
       "type": "agency",
       "risk": "Low"
     },
@@ -811,12 +817,6 @@
       "from": "07cdd79cacad",
       "to": "7f002a16ab95",
       "label": "Appointed as Ex-governor"
-    },
-    {
-      "id": "066f497b4a2d",
-      "from": "8ddf0d9698a1",
-      "to": "9b5f79697bc2",
-      "label": "Appointed as Former Power Minister"
     },
     {
       "id": "a5e36b5f552f",
