@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 945,
-      "mentions": 1583,
+      "companies": 944,
+      "mentions": 1572,
       "risk": {
-        "Low": 835,
+        "Low": 834,
         "Critical": 57,
         "Medium": 30,
         "High": 23
@@ -13,39 +13,39 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 40,
-      "mentions": 213,
+      "companies": 42,
+      "mentions": 217,
       "risk": {
-        "Medium": 12,
-        "Low": 23,
+        "Medium": 13,
+        "Low": 24,
         "Critical": 1,
         "High": 4
       }
     },
     {
       "industry": "Banking",
-      "companies": 23,
-      "mentions": 65,
+      "companies": 24,
+      "mentions": 67,
       "risk": {
         "Low": 18,
-        "Medium": 5
+        "Medium": 6
       }
     },
     {
       "industry": "Telecoms",
-      "companies": 7,
-      "mentions": 37,
+      "companies": 9,
+      "mentions": 51,
       "risk": {
-        "Low": 6,
+        "Low": 8,
         "Medium": 1
       }
     },
     {
       "industry": "Aviation",
-      "companies": 9,
-      "mentions": 26,
+      "companies": 10,
+      "mentions": 27,
       "risk": {
-        "Medium": 4,
+        "Medium": 5,
         "Low": 4,
         "High": 1
       }
@@ -745,6 +745,14 @@
       }
     },
     {
+      "industry": "Philanthropy/Education",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Policy Advocacy",
       "companies": 1,
       "mentions": 1,
@@ -849,5 +857,5 @@
       }
     }
   ],
-  "generated": "2026-10-26 14:00:32"
+  "generated": "2026-10-26 19:07:18"
 }
