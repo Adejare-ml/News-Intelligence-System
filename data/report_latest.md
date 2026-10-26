@@ -1,29 +1,30 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-25 16:59:33 (UTC)
-**Run Window:** 2026-10-25, all runs to 16:59 (run 3 of the day)
+**Generated on:** 2026-10-26 01:06:07 (UTC)
+**Run Window:** 2026-10-26, all runs to 01:06 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 10
-- **High Risk Signals:** 1
+- **Total Articles Processed:** 3
+- **High Risk Signals:** 0
 - **Appointments Logged:** 1
-- **Procurement Awards:** 2
+- **Procurement Awards:** 0
 
 ---
+
+**Executive Intelligence Summary: Nigerian Corporate Transparency, Disclosures & MDAs**  
+*Coverage Date: 26 October 2026*
 
 ### Key Developments
-- ICPC recognized by civil society for performance and accountability, underscoring progress in Nigeria’s anti‑corruption apparatus. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimAFBVV95cUxPVmtLcEY0bXNlNnFWc2hlM21peEZKb0UybktuUlJ5dG1SUURFaURwanhVNjhFTzQtU2FsN3R6WkxPWENhdURpOURMdWxrc3NWVU1HcTFOX1JEVVkwRFV0UDhvdk9ELXhFa1d0NU5VaVg5a0ZLLXNVOVM0RnFTZms3QVVtelY3bDJsbmZnSXBvcHk5cU1mMkRZdg?oc=5))  
-- Kaduna State dismisses a rumor of a ₦2.3 trillion APC campaign‑funding letter, mitigating political‑funding misinformation. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMitgFBVV95cUxNZFduWWxwdlVFemRkOWpDVDlTVFZYTWpZWXE2b2dQZ3pFVGczSzd0N014SktLbGdVM3dXTXVTS1JGUlQ2Mll5SGx2NkpTZU5CdVRtSm1MMG0tY0xxZXM1QmZ6MEFSaC1mNF9LeWxNZjRTZlhMMkx6SnFkbnRBQ3hHcE9icGc1R1gxN0szRm40NmFiUXJzaDJOdmZkQWNWSTFyQ2RPTTl5UVpMNDZiZGhaNlhhQmMzQQ?oc=5))  
-- Nigerian fintech Transvora reports ₦1.2 million in first‑hand transactions since launch, indicating early market traction. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivwFBVV95cUxObW1FTWxMczl5eGQtcjkxUDFQaTFGYkl2M1FhbTlnZkFSVEpsbUJIa3BQaGo0X0d1b01OOUtBcHFycEhPYktNNDdYdklhbk1Pb1NhQTNMNTdyVEpHY1FKbU53d1BsTkY4ckhzNnMwUER3YjQxM2pCZkNreUlpYUZvcTFXUFY3VEVvX3N0M1BBV3RvUGxWM3pNcWhwTmZHR2l1eGlGdENERGVBR28yUmEzZHVCaHpyNjJXcHNDVjFWTQ?oc=5))  
+* **Federal Asset Sale Regulations**: The House of Representatives has proposed legislation to establish the National Public Assets Management Commission to register, value, manage, and dispose of Federal Government assets, aiming to enhance transparency and curtail undervaluation during public asset transfers. ([The Punch](https://punchng.com/reps-move-to-tighten-rules-on-sale-of-federal-assets/))  
+* **Digital Trade & AI Standards**: Nigeria and the United Kingdom have moved to deepen bilateral engagement focusing on policy harmonization for artificial intelligence and cross-border digital trade standards. ([Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTE1LQ0d4dlJ0NXgzS1BFQ2tZZnlwclNtVjVFQ0ZORlhmMU9rdEljRi1wRUNGSmlwNGEzMW95b3d4NTJ0VmhlQ0xpdXBFc0dCN3M1dmVXWjVIZUZVSlNieG9DRXE5amtoM1Q2Q01VS29jQks3eXE2RVNQdGd2VFpkUQ?oc=5))  
 
 ### High Risk Alerts
-- A high‑risk allegation (score 75) that the ICPC chairman may have mis‑managed a Sterling Oil investigation warrants intensified oversight. ([businessday](https://businessday.ng/life/article/icpc-chairman-on-spotlight-over-allegation-of-malfeasance-in-sterling-oil-investigation/))  
+No severe integrity hazards or high-exposure regulatory red flags were detected during this coverage period.
 
 ### Beneficial Ownership & PSC Disclosures
-No PSC disclosures were identified during this reporting period.
+The monitored records contain no beneficial ownership filings or Persons with Significant Control (PSC) notifications.
 
 ### Procurement & Board Changes
-- Enugu State Government awarded a ₦2 million contract to Pincode for a jingles competition; procurement details confirm a clear, directly awarded deal. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiywFBVV95cUxOZXJCSEpsZHJoc1RFOE1LaXZUdVAxVkVuX0w3YlZtcmFrQzAwNVRBMk9nMGozR1dpLVFCem1fSjlkRTBXMmVnOVZYajd6dW1vMzEwVFU4Rng2QjU0T015bWUyNWJpaVMtSm9MamZOTmkyOTVKSjFqUVk2SjEyMmpRYS1JTXROdi11eWtEaVFqXzBSbkFTcTk1S1Zybzd3cHRQdFdIWWpsM244ZG90b1pVVWRNYzZkM1I0em5tWjVMa01KVDZ1cW93YkQ3VQ?oc=5))  
-- The Arewa Consultative Forum (ACF) in Kano state has restructured its leadership: chair resigns, and a three‑member interim team takes charge. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixgFBVV95cUxONVZXSkJZdWhRT0MweGJTZHBiV1BUN0FyMjZ1UVBxT3JsNWNZOUw5NEFWSDF3Vl9VR3cwbU9tR2xDOFk1UUNSMGYzN1lLbTNHbVZ2VjNqQkFUOG5USGFCMzNvM3hua00tNksxaTV5dVpBbnNUWXhVcXdoMHBGN2JKZEhkWlVXZzVwRDNSMEVXTV83blF0TVBTVkRjUzEyVmNTdE1TV01BUmVuUFJ0SkZ4TmFmU09yLWFKdjBDSV9xTk5aRHQ4N0E?oc=5))  
+* **Campaign Leadership Appointment**: President Bola Tinubu has appointed Festus Keyamo as the Director of Air Mobilisation for his 2027 presidential re-election apparatus. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMisAFBVV95cUxNTWlLdXlDWFZSRWMyLTBuMmZGUG1Ydld1azJkc0JieUl5d2lKbl9Fd0FkRXdtWV9rdEhIR01KekY1MkVMSjAxT3FMaXhhTXk0Ny1uUi1wOWhRZzdqbjVqRGQ0RzZuaWx6aHdxRXlXbkFfTDY5MmNEa3I5dk9nWExsTU0yUGVVTlhYbURZbVBCYXR2cHNXYmVFUTJrUmljMkdibXU5dWlNUzJWYzQ1cXFaQQ?oc=5))  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
