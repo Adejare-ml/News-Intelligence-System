@@ -10,6 +10,24 @@
       "previous_mentions": 1
     },
     {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "recent_avg": 40.0,
+      "previous_avg": 81.7,
+      "delta": -41.7,
+      "recent_mentions": 2,
+      "previous_mentions": 3
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 56.7,
+      "previous_avg": 27.7,
+      "delta": 29.0,
+      "recent_mentions": 6,
+      "previous_mentions": 13
+    },
+    {
       "key": "airways",
       "label": "Nigeria Airways",
       "recent_avg": 15.0,
@@ -17,24 +35,6 @@
       "delta": -25.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 46.7,
-      "previous_avg": 28.0,
-      "delta": 18.7,
-      "recent_mentions": 9,
-      "previous_mentions": 10
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 12.5,
-      "previous_avg": 30.0,
-      "delta": -17.5,
-      "recent_mentions": 4,
-      "previous_mentions": 2
     },
     {
       "key": "central bank of",
@@ -52,6 +52,24 @@
       "previous_avg": 15.0,
       "delta": 12.5,
       "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 10.0,
+      "previous_avg": 22.5,
+      "delta": -12.5,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 17.5,
+      "previous_avg": 27.5,
+      "delta": -10.0,
+      "recent_mentions": 2,
       "previous_mentions": 4
     },
     {
@@ -61,6 +79,15 @@
       "previous_avg": 20.0,
       "delta": 10.0,
       "recent_mentions": 8,
+      "previous_mentions": 5
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 25.0,
+      "previous_avg": 34.0,
+      "delta": -9.0,
+      "recent_mentions": 2,
       "previous_mentions": 5
     },
     {
@@ -82,15 +109,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 17.5,
-      "previous_avg": 26.0,
-      "delta": -8.5,
-      "recent_mentions": 2,
-      "previous_mentions": 5
-    },
-    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "recent_avg": 32.5,
@@ -103,19 +121,19 @@
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 23.3,
-      "previous_avg": 29.6,
-      "delta": -6.3,
+      "previous_avg": 28.6,
+      "delta": -5.3,
       "recent_mentions": 15,
-      "previous_mentions": 23
+      "previous_mentions": 22
     },
     {
-      "key": "dave umahi",
-      "label": "Dave Umahi",
-      "recent_avg": 35.0,
-      "previous_avg": 40.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 61.7,
+      "previous_avg": 56.5,
+      "delta": 5.2,
+      "recent_mentions": 12,
+      "previous_mentions": 17
     },
     {
       "key": "federal ministry of works",
@@ -139,27 +157,9 @@
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "recent_avg": 30.0,
-      "previous_avg": 34.0,
-      "delta": -4.0,
+      "previous_avg": 32.5,
+      "delta": -2.5,
       "recent_mentions": 4,
-      "previous_mentions": 5
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 60.0,
-      "previous_avg": 57.2,
-      "delta": 2.8,
-      "recent_mentions": 10,
-      "previous_mentions": 18
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 31.7,
-      "previous_avg": 31.2,
-      "delta": 0.5,
-      "recent_mentions": 3,
       "previous_mentions": 4
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-26 01:07:49"
+  "generated": "2026-10-26 14:00:32"
 }

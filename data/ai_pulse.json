@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-26 01:07:47",
+  "generated": "2026-10-26 14:00:18",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 2982,
-      "downloads": 85275
+      "likes": 3105,
+      "downloads": 95889
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 859,
-      "downloads": 6444
-    },
-    {
-      "id": "black-forest-labs/flux-3-image-klein-comfy",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "task": "image-to-image",
-      "likes": 1605,
-      "downloads": 660874
+      "likes": 893,
+      "downloads": 8470
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 495,
-      "downloads": 3488
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 9338,
-      "downloads": 2107108
+      "likes": 615,
+      "downloads": 4726
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 376,
-      "downloads": 0
+      "likes": 531,
+      "downloads": 2787
     },
     {
-      "id": "OpenMOSS-Team/MOSS-Image-SFT",
-      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
-      "task": "text-to-image",
-      "likes": 728,
-      "downloads": 10757
+      "id": "black-forest-labs/flux-3-image-klein-comfy",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+      "task": "image-to-image",
+      "likes": 1652,
+      "downloads": 700652
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 9394,
+      "downloads": 2117147
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 352,
-      "downloads": 7355
+      "likes": 372,
+      "downloads": 8782
+    },
+    {
+      "id": "OpenMOSS-Team/MOSS-Image-SFT",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+      "task": "text-to-image",
+      "likes": 743,
+      "downloads": 12114
     }
   ],
   "papers": [
     {
-      "title": "TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments",
-      "url": "https://huggingface.co/papers/2610.30043",
-      "upvotes": 8
+      "title": "FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models",
+      "url": "https://huggingface.co/papers/2610.31423",
+      "upvotes": 1
     },
     {
-      "title": "The LLM-Attacker: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems",
-      "url": "https://huggingface.co/papers/2610.22722",
-      "upvotes": 10
+      "title": "Does LeWorldModel Preserve Local Action Geometry?",
+      "url": "https://huggingface.co/papers/2610.31716",
+      "upvotes": 1
     },
     {
-      "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
-      "url": "https://huggingface.co/papers/2610.04184",
-      "upvotes": 22
+      "title": "Reading, Writing, Sharing, and Interacting with the World through Video",
+      "url": "https://huggingface.co/papers/2610.31668",
+      "upvotes": 218
     },
     {
-      "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
-      "url": "https://huggingface.co/papers/2610.25835",
-      "upvotes": 10
+      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "url": "https://huggingface.co/papers/2610.27782",
+      "upvotes": 2
     },
     {
-      "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
-      "url": "https://huggingface.co/papers/2610.31198",
-      "upvotes": 23
+      "title": "SliderEdit++: Improved Slider Trajectories in Instruction-Based Image Editing",
+      "url": "https://huggingface.co/papers/2610.14253",
+      "upvotes": 1
     },
     {
-      "title": "Bridging Exploration and Persona: Information-Directed Dueling for Test-Time Agent Personalization",
-      "url": "https://huggingface.co/papers/2610.24385",
-      "upvotes": 7
+      "title": "MMVistaReason: Toward Open-Data and Post-Training Recipes for Multimodal Reasoning",
+      "url": "https://huggingface.co/papers/2610.01352",
+      "upvotes": 4
     }
   ]
 }

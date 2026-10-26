@@ -51,16 +51,6 @@
       }
     },
     {
-      "industry": "Politics",
-      "companies": 6,
-      "mentions": 19,
-      "risk": {
-        "Low": 2,
-        "High": 1,
-        "Medium": 3
-      }
-    },
-    {
       "industry": "Energy",
       "companies": 8,
       "mentions": 14,
@@ -76,6 +66,15 @@
       "mentions": 13,
       "risk": {
         "Medium": 2
+      }
+    },
+    {
+      "industry": "Political Party",
+      "companies": 2,
+      "mentions": 13,
+      "risk": {
+        "High": 1,
+        "Medium": 1
       }
     },
     {
@@ -113,6 +112,15 @@
         "Medium": 2,
         "Low": 2,
         "High": 1
+      }
+    },
+    {
+      "industry": "Politics",
+      "companies": 5,
+      "mentions": 11,
+      "risk": {
+        "Low": 2,
+        "Medium": 3
       }
     },
     {
@@ -309,14 +317,6 @@
       "mentions": 3,
       "risk": {
         "Low": 3
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 1,
-      "mentions": 3,
-      "risk": {
-        "Medium": 1
       }
     },
     {
@@ -665,6 +665,14 @@
       }
     },
     {
+      "industry": "Media",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Media/Journalism",
       "companies": 1,
       "mentions": 1,
@@ -841,5 +849,5 @@
       }
     }
   ],
-  "generated": "2026-10-26 01:07:49"
+  "generated": "2026-10-26 14:00:32"
 }

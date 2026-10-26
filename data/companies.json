@@ -6529,9 +6529,9 @@
   },
   {
     "Company": "All Progressives Congress",
-    "Mention Count": 8,
-    "Last Seen": "2026-10-25 16:58",
-    "Industry": "Politics",
+    "Mention Count": 10,
+    "Last Seen": "2026-10-26 13:52",
+    "Industry": "Political Party",
     "Risk Level": "High",
     "First Seen": ""
   },
@@ -9622,5 +9622,13 @@
     "Industry": "Marketing/Advertising",
     "Risk Level": "Low",
     "First Seen": "2026-10-25 16:58"
+  },
+  {
+    "Company": "ABS-CBN",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-26 13:50",
+    "Industry": "Media",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-26 13:50"
   }
 ]
