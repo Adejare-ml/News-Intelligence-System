@@ -85,6 +85,12 @@
       "risk": "Low"
     },
     {
+      "id": "dce5a31d3181",
+      "label": "MTN Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "6b0baabbfd00",
       "label": "APC Group",
       "type": "company",
@@ -109,12 +115,6 @@
       "risk": "Critical"
     },
     {
-      "id": "dce5a31d3181",
-      "label": "MTN Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "81dcb233ede4",
       "label": "Tinubu",
       "type": "company",
@@ -123,6 +123,12 @@
     {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,6 +163,12 @@
       "risk": "Low"
     },
     {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "dbaadc7cfab3",
       "label": "Government of the United Kingdom",
       "type": "agency",
@@ -187,8 +199,26 @@
       "risk": "Low"
     },
     {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "id": "715a651bd1f9",
+      "label": "Chartered Institute of Project Management Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5be6a743740a",
+      "label": "Obafemi Awolowo University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a8bfa117a3e5",
+      "label": "National Youth Service Corps",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "27ca0db67f34",
+      "label": "University of Nigeria, Nsukka",
       "type": "agency",
       "risk": "Low"
     },
@@ -207,36 +237,6 @@
     {
       "id": "e4c5ee83197c",
       "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9da30857f532",
-      "label": "ECOWAS Court",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "23cd33f022ff",
-      "label": "Benue State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -267,6 +267,12 @@
     {
       "id": "be252fefa816",
       "label": "Nasir El-Rufai",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "22efb00940fe",
+      "label": "Uche Nnaji",
       "type": "person",
       "risk": "Low"
     },
@@ -307,9 +313,21 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f1f131ace5c4",
       "label": "Uba Sani",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -453,18 +471,6 @@
     {
       "id": "9b5f79697bc2",
       "label": "Federal Ministry of Power",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "a1d99afd636d",
-      "label": "Sirika",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ca819a01e636",
-      "label": "Federal Ministry",
       "type": "company",
       "risk": "Low"
     },
@@ -699,6 +705,12 @@
       "label": "Appointed as Director General"
     },
     {
+      "id": "a5f6cdea5bb8",
+      "from": "22efb00940fe",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former Minister"
+    },
+    {
       "id": "81c12b1ceeb0",
       "from": "e153c1875584",
       "to": "23d8905a6cbb",
@@ -805,12 +817,6 @@
       "from": "8ddf0d9698a1",
       "to": "9b5f79697bc2",
       "label": "Appointed as Former Power Minister"
-    },
-    {
-      "id": "74a762d58402",
-      "from": "a1d99afd636d",
-      "to": "ca819a01e636",
-      "label": "Appointed as Former Minister"
     },
     {
       "id": "a5e36b5f552f",
