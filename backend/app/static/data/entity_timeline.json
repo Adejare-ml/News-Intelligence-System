@@ -334,7 +334,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 18,
+      "total_mentions": 19,
       "points": [
         {
           "week": "2026-09-14",
@@ -368,8 +368,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 13.3,
+          "mentions": 4,
+          "avg_risk": 12.5,
           "max_risk": 20
         }
       ]
@@ -377,7 +377,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 17,
+      "total_mentions": 18,
       "points": [
         {
           "week": "2026-09-14",
@@ -405,8 +405,8 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 7,
-          "avg_risk": 27.9,
+          "mentions": 8,
+          "avg_risk": 30.0,
           "max_risk": 85
         }
       ]
@@ -2225,6 +2225,19 @@
       ]
     },
     {
+      "key": "festus keyamo",
+      "label": "Festus Keyamo",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "fitch ratings",
       "label": "Fitch Ratings",
       "total_mentions": 3,
@@ -2259,6 +2272,25 @@
           "mentions": 2,
           "avg_risk": 52.5,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "government of the united kingdom",
+      "label": "Government of the United Kingdom",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -3280,19 +3312,6 @@
       ]
     },
     {
-      "key": "festus keyamo",
-      "label": "Festus Keyamo",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "financial reporting council",
       "label": "Financial Reporting Council",
       "total_mentions": 2,
@@ -3372,25 +3391,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "government of the united kingdom",
-      "label": "Government of the United Kingdom",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -4068,6 +4068,25 @@
           "mentions": 2,
           "avg_risk": 5.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "presidency of",
+      "label": "Presidency of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -5536,20 +5555,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "david fagbemi",
-      "label": "David Fagbemi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-25 19:31:00"
+  "generated": "2026-10-26 01:07:49"
 }

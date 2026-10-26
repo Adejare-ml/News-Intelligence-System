@@ -21,20 +21,29 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 48.5,
-      "previous_avg": 23.9,
-      "delta": 24.6,
-      "recent_mentions": 10,
-      "previous_mentions": 9
+      "recent_avg": 46.7,
+      "previous_avg": 28.0,
+      "delta": 18.7,
+      "recent_mentions": 9,
+      "previous_mentions": 10
     },
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "recent_avg": 13.3,
+      "recent_avg": 12.5,
       "previous_avg": 30.0,
-      "delta": -16.7,
-      "recent_mentions": 3,
+      "delta": -17.5,
+      "recent_mentions": 4,
       "previous_mentions": 2
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 30.6,
+      "previous_avg": 15.0,
+      "delta": 15.6,
+      "recent_mentions": 8,
+      "previous_mentions": 5
     },
     {
       "key": "oyo state government",
@@ -46,13 +55,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "seyi makinde",
-      "label": "Seyi Makinde",
-      "recent_avg": 42.5,
-      "previous_avg": 30.0,
-      "delta": 12.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 30.0,
+      "previous_avg": 20.0,
+      "delta": 10.0,
+      "recent_mentions": 8,
+      "previous_mentions": 5
     },
     {
       "key": "national assembly",
@@ -73,15 +82,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "lng",
-      "label": "Nigeria LNG Limited",
-      "recent_avg": 38.8,
-      "previous_avg": 30.0,
-      "delta": 8.8,
-      "recent_mentions": 4,
-      "previous_mentions": 1
-    },
-    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 17.5,
@@ -91,24 +91,6 @@
       "previous_mentions": 5
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 27.9,
-      "previous_avg": 20.0,
-      "delta": 7.9,
-      "recent_mentions": 7,
-      "previous_mentions": 5
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 30.6,
-      "previous_avg": 23.1,
-      "delta": 7.5,
-      "recent_mentions": 8,
-      "previous_mentions": 8
-    },
-    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "recent_avg": 32.5,
@@ -116,6 +98,15 @@
       "delta": -7.5,
       "recent_mentions": 4,
       "previous_mentions": 3
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 23.3,
+      "previous_avg": 29.6,
+      "delta": -6.3,
+      "recent_mentions": 15,
+      "previous_mentions": 23
     },
     {
       "key": "dave umahi",
@@ -136,13 +127,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 24.7,
-      "previous_avg": 29.5,
-      "delta": -4.8,
-      "recent_mentions": 17,
-      "previous_mentions": 22
+      "key": "lng",
+      "label": "Nigeria LNG Limited",
+      "recent_avg": 40.0,
+      "previous_avg": 35.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "national agency for food and drug administration and control",
@@ -166,10 +157,10 @@
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "recent_avg": 31.7,
-      "previous_avg": 34.0,
-      "delta": -2.3,
+      "previous_avg": 31.2,
+      "delta": 0.5,
       "recent_mentions": 3,
-      "previous_mentions": 5
+      "previous_mentions": 4
     },
     {
       "key": "nipco",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "recent_avg": 65.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-25 19:31:00"
+  "generated": "2026-10-26 01:07:49"
 }

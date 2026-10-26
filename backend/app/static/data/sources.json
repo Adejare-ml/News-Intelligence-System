@@ -2,23 +2,23 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2707,
-      "published": 1502,
+      "total": 2708,
+      "published": 1503,
       "filtered": 1205,
-      "accept_rate": 55,
+      "accept_rate": 56,
       "avg_risk": 28.5,
       "engines": {
         "unknown": 963,
-        "ollama": 531,
+        "ollama": 532,
         "nvidia": 8
       },
       "last_seen": "2026-10-25"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2151,
+      "total": 2154,
       "published": 897,
-      "filtered": 1254,
+      "filtered": 1257,
       "accept_rate": 42,
       "avg_risk": 30.7,
       "engines": {
@@ -30,31 +30,31 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 1028,
-      "published": 421,
-      "filtered": 607,
+      "total": 1030,
+      "published": 422,
+      "filtered": 608,
       "accept_rate": 41,
       "avg_risk": 27.3,
       "engines": {
         "unknown": 188,
-        "ollama": 229,
+        "ollama": 230,
         "nvidia": 4
       },
-      "last_seen": "2026-10-25"
+      "last_seen": "2026-10-26"
     },
     {
       "source": "The Punch",
-      "total": 643,
-      "published": 360,
+      "total": 644,
+      "published": 361,
       "filtered": 283,
       "accept_rate": 56,
-      "avg_risk": 32.3,
+      "avg_risk": 32.4,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 250
+        "ollama": 251
       },
-      "last_seen": "2026-10-24"
+      "last_seen": "2026-10-25"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -113,9 +113,9 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 197,
+      "total": 198,
       "published": 62,
-      "filtered": 135,
+      "filtered": 136,
       "accept_rate": 31,
       "avg_risk": 24.1,
       "engines": {
@@ -123,7 +123,7 @@
         "ollama": 10,
         "nvidia": 2
       },
-      "last_seen": "2026-10-23"
+      "last_seen": "2026-10-25"
     },
     {
       "source": "leadership",
@@ -140,16 +140,16 @@
     },
     {
       "source": "dailypost",
-      "total": 180,
+      "total": 182,
       "published": 44,
-      "filtered": 136,
+      "filtered": 138,
       "accept_rate": 24,
       "avg_risk": 24.8,
       "engines": {
         "unknown": 40,
         "ollama": 4
       },
-      "last_seen": "2026-10-24"
+      "last_seen": "2026-10-25"
     },
     {
       "source": "vanguardngr",
@@ -2157,5 +2157,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-25 19:31:00"
+  "generated": "2026-10-26 01:07:49"
 }
