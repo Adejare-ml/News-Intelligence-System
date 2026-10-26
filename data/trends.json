@@ -1,19 +1,19 @@
 {
   "window_days": 7,
   "recent_articles": 194,
-  "previous_articles": 210,
+  "previous_articles": 211,
   "rising": [
+    {
+      "term": "others",
+      "recent": 8,
+      "previous": 2,
+      "change": 6
+    },
     {
       "term": "trial",
       "recent": 6,
       "previous": 0,
       "change": 6
-    },
-    {
-      "term": "others",
-      "recent": 7,
-      "previous": 2,
-      "change": 5
     },
     {
       "term": "police",
@@ -46,9 +46,9 @@
       "change": 5
     },
     {
-      "term": "court",
-      "recent": 13,
-      "previous": 9,
+      "term": "alleged",
+      "recent": 10,
+      "previous": 6,
       "change": 4
     },
     {
@@ -90,18 +90,6 @@
       "change": -6
     },
     {
-      "term": "warns",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
-    },
-    {
-      "term": "probe",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
       "term": "dangote",
       "recent": 1,
       "previous": 7,
@@ -124,18 +112,30 @@
       "recent": 0,
       "previous": 6,
       "change": -6
+    },
+    {
+      "term": "contract",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "probe",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
       "recent": 128,
-      "previous": 147
+      "previous": 146
     },
     {
       "category": "Legal",
       "recent": 37,
-      "previous": 26
+      "previous": 28
     },
     {
       "category": "Company",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-26 19:07:10"
+  "generated": "2026-10-26 21:32:03"
 }

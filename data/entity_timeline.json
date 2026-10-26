@@ -211,7 +211,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 27,
+      "total_mentions": 28,
       "points": [
         {
           "week": "2026-09-07",
@@ -254,6 +254,12 @@
           "mentions": 3,
           "avg_risk": 31.7,
           "max_risk": 45
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2166,6 +2172,25 @@
       ]
     },
     {
+      "key": "code of conduct bureau",
+      "label": "Code of Conduct Bureau",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "david umahi",
       "label": "David Umahi",
       "total_mentions": 3,
@@ -3212,25 +3237,6 @@
       ]
     },
     {
-      "key": "code of conduct bureau",
-      "label": "Code of Conduct Bureau",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "dangote cement",
       "label": "Dangote Cement",
       "total_mentions": 2,
@@ -3825,6 +3831,19 @@
       ]
     },
     {
+      "key": "national youth service corps",
+      "label": "National Youth Service Corps",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 57.5,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "natural resource governance institute",
       "label": "Natural Resource Governance Institute",
       "total_mentions": 2,
@@ -4338,6 +4357,19 @@
           "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "university of nsukka",
+      "label": "University of Nigeria, Nsukka",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 57.5,
           "max_risk": 75
         }
       ]
@@ -5381,6 +5413,19 @@
       ]
     },
     {
+      "key": "cash transfer office",
+      "label": "Cash Transfer Office",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "centre for journalism innovation and development",
       "label": "Centre for Journalism Innovation and Development",
       "total_mentions": 1,
@@ -5600,46 +5645,7 @@
           "max_risk": 45
         }
       ]
-    },
-    {
-      "key": "cross river state assembly",
-      "label": "Cross River State Assembly",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "dlm",
-      "label": "DLM",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "dangote consortium",
-      "label": "Dangote Consortium",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-26 19:07:18"
+  "generated": "2026-10-26 21:32:07"
 }

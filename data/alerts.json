@@ -13,6 +13,17 @@
     },
     {
       "date": "2026-10-26",
+      "title": "Panama Papers scandal: CCB launches probe against Peter Obi, Saraki, David Mark, Ibori, others",
+      "url": "https://dailypost.ng/2026/10/26/panama-papers-scandal-ccb-launches-probe-against-peter-obi-saraki-david-mark-ibori-others/",
+      "source": "dailypost",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Code of Conduct Bureau"
+      ]
+    },
+    {
+      "date": "2026-10-26",
       "title": "EFCC arrests 14 Chinese nationals, one Nigerian over four illegal lithium processing plants - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYUh3UDE2NEc5T2dxWjB1LWg0OFhzdWVJT29CTk9rRkJTWlBhSTg4dWozajRMSmpKdno4T1UtZWNQTm9HRFBzRjFfRkpUeElBTk51NjNNMHY0MVAxUmpmUUVvZnN1QVQyNHA4YkhMSHNkalhqSXduVE1LejVkQVVIVjVsRXhoMmVrbDd4NjkxaUhKaUJvemVpVVdEeklLbkRrZUN1dHhtNTFQZFl0RThRQW1hMVdXalZYNWdoTFpVWXMzQ0ljS1Q0NTdPUEgwQzVVVUlfZmVrbXdOWWExc05NWg?oc=5",
       "source": "Premium Times Nigeria",
@@ -45,6 +56,17 @@
         "National Youth Service Corps",
         "University of Nigeria, Nsukka",
         "Uche Nnaji"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Under Buhari, Tinubu, Cash Transfer Office failed to identify beneficiaries of N33.75 billion - Audit Report - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNMU1YX1pYSXJNalNlczVoWWh1bE9SRHNiaUpCMUQ1bEdrRlpNZTJPNklaZ25GNmdMN1RYdUI0OW9yTm5xYWJxZlFWaFhxM1lzNzBWU3N0aGNzelpTTmtweG1YZ2MwLVRtZU9LOXpzVGpxV2NRZkl3TjlqMm9IaTF0eFM4TzU5U1NrZTVfeVo3SzJpdmlnd3BLcTgwOG1MdXdKU05acWlXYktNX2R5MC1XdUVaUEVxcE1SeUctS0R5aVZvOGhBd0VOVkNGc3F2el9WTWZvbEtxdDh3OFpPdzJwQ1lZLWdXSmRfNmVCemZXUS1fVzlY?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Cash Transfer Office"
       ]
     },
     {
@@ -877,5 +899,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-26 19:07:18"
+  "generated": "2026-10-26 21:32:07"
 }
