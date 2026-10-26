@@ -118,6 +118,10 @@
       "label": "Federal Ministry of Works"
     },
     {
+      "key": "festus keyamo",
+      "label": "Festus Keyamo"
+    },
+    {
       "key": "glo",
       "label": "Glo"
     },
@@ -466,6 +470,11 @@
     },
     {
       "a": "all progressives congress",
+      "b": "festus keyamo",
+      "weight": 2
+    },
+    {
+      "a": "all progressives congress",
       "b": "toyin abraham",
       "weight": 2
     },
@@ -705,5 +714,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-26 01:07:49"
+  "generated": "2026-10-26 14:00:32"
 }

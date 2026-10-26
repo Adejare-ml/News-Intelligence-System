@@ -1,17 +1,32 @@
 {
-  "new_companies": [],
-  "new_people": [],
+  "new_companies": [
+    "ABS-CBN"
+  ],
+  "new_people": [
+    "Ibrahim Abdulkarim"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "EXCLUSIVE: CCB investigates Peter Obi, Saraki, David Mark, four others over offshore assets - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMkFiUGVaMGxCVEZ3S1B6OThIQzhGdV9xWDVWaTdtNllHNnIxbnBJVUVHZGtCVl9zbHpzNDZrQmROXzJjR1c3R2VWM0ExSlhWMW1fN3RJeEtYTW0xWWtlcnlxeGlDZFRSM0U2U3lQUl90MHNkZTQ5YXpQSno3T2pQSENRc3NnRUY2Yjd6TmtjS1JtVjlKVXRBQ1pyZGxaYUFGUFN2ODdDeFhtRVBSMDNzNWhoVWxYOXg0M2EzeFNrS09hRkhlcGhFQUNXbWlwNm1h?oc=5",
+      "risk": 85.0
+    },
+    {
+      "title": "EFCC arrests 14 Chinese nationals, one Nigerian over four illegal lithium processing plants - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQYUh3UDE2NEc5T2dxWjB1LWg0OFhzdWVJT29CTk9rRkJTWlBhSTg4dWozajRMSmpKdno4T1UtZWNQTm9HRFBzRjFfRkpUeElBTk51NjNNMHY0MVAxUmpmUUVvZnN1QVQyNHA4YkhMSHNkalhqSXduVE1LejVkQVVIVjVsRXhoMmVrbDd4NjkxaUhKaUJvemVpVVdEeklLbkRrZUN1dHhtNTFQZFl0RThRQW1hMVdXalZYNWdoTFpVWXMzQ0ljS1Q0NTdPUEgwQzVVVUlfZmVrbXdOWWExc05NWg?oc=5",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
+    "new_companies": 1,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 2
   },
-  "generated": "2026-10-26 01:07:45"
+  "generated": "2026-10-26 14:00:14"
 }
