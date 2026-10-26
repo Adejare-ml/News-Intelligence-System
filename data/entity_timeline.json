@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 90,
+      "total_mentions": 91,
       "points": [
         {
           "week": "2026-09-07",
@@ -46,6 +46,12 @@
           "mentions": 17,
           "avg_risk": 24.7,
           "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -95,7 +101,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 67,
+      "total_mentions": 69,
       "points": [
         {
           "week": "2026-09-07",
@@ -138,6 +144,12 @@
           "mentions": 10,
           "avg_risk": 60.0,
           "max_risk": 85
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
         }
       ]
     },
@@ -616,6 +628,31 @@
       ]
     },
     {
+      "key": "international monetary fund",
+      "label": "International Monetary Fund",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 9,
+          "avg_risk": 15.6,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 11,
@@ -739,25 +776,6 @@
       ]
     },
     {
-      "key": "international monetary fund",
-      "label": "International Monetary Fund",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 9,
-          "avg_risk": 15.6,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 10,
@@ -852,6 +870,43 @@
           "week": "2026-10-12",
           "mentions": 3,
           "avg_risk": 18.3,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -953,37 +1008,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -1312,6 +1336,25 @@
       ]
     },
     {
+      "key": "festus keyamo",
+      "label": "Festus Keyamo",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "lagos chamber of commerce and industry",
       "label": "Lagos Chamber of Commerce and Industry",
       "total_mentions": 5,
@@ -1364,6 +1407,31 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 81.7,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1774,25 +1842,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "nasir el rufai",
-      "label": "Nasir El-Rufai",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 81.7,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -2221,19 +2270,6 @@
           "mentions": 2,
           "avg_risk": 35.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "festus keyamo",
-      "label": "Festus Keyamo",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
         }
       ]
     },
@@ -3123,6 +3159,25 @@
           "mentions": 2,
           "avg_risk": 17.5,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "code of conduct bureau",
+      "label": "Code of Conduct Bureau",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -4374,6 +4429,19 @@
       ]
     },
     {
+      "key": "abs cbn",
+      "label": "ABS-CBN",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "ag vision",
       "label": "AG Vision",
       "total_mentions": 1,
@@ -5349,19 +5417,6 @@
       ]
     },
     {
-      "key": "code of conduct bureau",
-      "label": "Code of Conduct Bureau",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "coleman technical industries",
       "label": "Coleman Technical Industries Limited",
       "total_mentions": 1,
@@ -5542,20 +5597,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "darma",
-      "label": "Darma",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-26 01:07:49"
+  "generated": "2026-10-26 14:00:32"
 }
