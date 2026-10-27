@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-27",
+      "title": "Yobe Airport bailout, money badly spent",
+      "url": "https://punchng.com/yobe-airport-bailout-money-badly-spent/",
+      "source": "The Punch",
+      "risk_score": 75,
+      "risk_level": "High",
+      "entities": [
+        "Yobe State Government"
+      ]
+    },
+    {
       "date": "2026-10-26",
       "title": "EXCLUSIVE: CCB investigates Peter Obi, Saraki, David Mark, four others over offshore assets - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMkFiUGVaMGxCVEZ3S1B6OThIQzhGdV9xWDVWaTdtNllHNnIxbnBJVUVHZGtCVl9zbHpzNDZrQmROXzJjR1c3R2VWM0ExSlhWMW1fN3RJeEtYTW0xWWtlcnlxeGlDZFRSM0U2U3lQUl90MHNkZTQ5YXpQSno3T2pQSENRc3NnRUY2Yjd6TmtjS1JtVjlKVXRBQ1pyZGxaYUFGUFN2ODdDeFhtRVBSMDNzNWhoVWxYOXg0M2EzeFNrS09hRkhlcGhFQUNXbWlwNm1h?oc=5",
@@ -899,5 +910,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }

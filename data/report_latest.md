@@ -1,32 +1,31 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-26 21:29:22 (UTC)
-**Run Window:** 2026-10-26, all runs to 21:29 (run 4 of the day)
+**Generated on:** 2026-10-27 01:58:12 (UTC)
+**Run Window:** 2026-10-27, all runs to 01:58 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 28
-- **High Risk Signals:** 7
-- **Appointments Logged:** 4
-- **Procurement Awards:** 0
+- **Total Articles Processed:** 7
+- **High Risk Signals:** 1
+- **Appointments Logged:** 0
+- **Procurement Awards:** 2
 
 ---
+
+**Report Date:** 2026-10-27
+**Coverage:** All articles published on 2026-10-27 up to 01:58 (run 1 of the day)
 
 ### Key Developments
-- The EFCC shut down four illegal lithium processing plants in Ogun State, arresting fifteen suspects, including fourteen Chinese nationals, highlighting regulatory breaches in the mining sector. ([The Eagle Online](https://news.google.com/rss/articles/CBMingFBVV95cUxPQkRhZmFZRklHaGswN0RlNllqQzF0UWNMdWlwOHItSDZJZDhRVUFqVk5jeUJMenFPb3VWcWNpdHNVNENTT1hNM0xMQzZKam56ZGNudFgyaDV2d3FrZUJwYWFUeENzSDNqSlRyanVGVlJXRUMwVXYxQTdVcVc5T0VoTTJ2TW95VHFyTzFQLUJUWUtWdjk0dTJRUEdoMEpxQQ?oc=5))  
-- The Chartered Institute of Project Management Nigeria (CIPMN) is actively pursuing the exposure of individuals responsible for an estimated ₦17 trillion loss due to project waste, underscoring systemic governance weaknesses. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikwFBVV95cUxNMFJGYm5mQTlaMGJBaEtrVTh3b2RqQWU0RkdkYTdQNjlNOEtiaFBnN1AyR1VhY1V6ZjkxNF9YcDNBTnkyeFE5QVREQXM0eUJXWFdiUTJiMElWZXFFbmFmcThud05fLTQ3WVhUTDFtMFo3TGlCbWc5c2lNYlQ5NVVkS2RqcmxQTzJ0V2FuNEdZd1Q4cTQ?oc=5))  
-- The National Youth Service Corps (NYSC) and University of Nigeria, Nsukka (UNN) have disowned certificates claimed by former minister Uche Nnaji, casting doubts on credential verification processes. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcEFhSGtVMUdQcy1sUWZ6cHhrSUR2YndfRjQ4N1BqMmZqMFp1NUNKZlMtT1pnQ1FNUFBnUTE4MHQ2NG1RWDByTGFpYm5jQk5OaFdmWkhTdjl5WVV4Njh3ZmVLUl9YdkttSzNqVWhsMnFiWUxrU3IwaXQ1c0ZWbnFhVGRtNXZhQzBZenFHWmtfQjBjUEkyTlg1bDBGOG5NbUFzSW9lZnFFUjM?oc=5))  
+* **Reps propose commission to track, manage FG assets**. The House of Representatives has proposed the establishment of the National Public Assets Management Commission. ([The Punch](https://punchng.com/reps-propose-commission-to-track-manage-fg-assets/))  
+* **Tinubu vows to revive dormant NNPC refineries**. President Bola Tinubu has pledged to revive dormant refineries operated by the Nigerian National Petroleum Company (NNPC). ([Punch Newspapers](https://news.google.com/rss/articles/CBMidEFVX3lxTE1EcS0wN2dEQndwX0x2b0hwNXJQd1pMc1VPRDdPYWtUZzh2d3pLR2w3YnpIYUJKamRiekFSMktuQVZpMGVsMWdGX18zalRkcUNFU1V2NlV1aVZyd1JuTjdXek1Xc29kaEE2SmdsdTJRNzZaYkd3?oc=5))  
 
-### High‑Risk Alerts
-- **Cash Transfer Office audit** indicates mismanagement of N33.75 billion in disbursements. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi9AFBVV95cUxNMU1YX1pYSXJNalNlczVoWWh1bE9SRHNiaUpCMUQ1bEdrRlpNZTJPNklaZ25GNmdMN1RYdUI0OW9yTm5xYWJxZlFWaFhxM1lzNzBWU3N0aGNzelpTTmtweG1YZ2MwLVRtZU9LOXpzVGpxV2NRZkl3TjlqMm9IaTF0eFM4TzU5U1NrZTVfeVo3SzJpdmlnd3BLcTgwOG1MdXdKU05acWlXYktNX2R5MC1XdUVaUEVxcE1SeUctS0R5aVZvOGhBd0VOVkNGc3F2el9WTWZvbEtxdDh3OFpPdzJwQ1lZLWdXSmRfNmVCemZXUS1fVzlY?oc=5))  
-- **Panama Papers probe** involves high‑profile politicians with potential offshore assets. ([dailypost](https://dailypost.ng/2026/10/26/panama-papers-scandal-ccb-launches-probe-against-peter-obi-saraki-david-mark-ibori-others/))  
+### High Risk Alerts
+* **Yobe Airport bailout, money badly spent**. President Bola Tinubu proposed a N100.5 billion reimbursement to Yobe State for the construction of the Muhammadu Buhari International Cargo Airport in Damaturu. ([The Punch](https://punchng.com/yobe-airport-bailout-money-badly-spent/))  
 
 ### Beneficial Ownership & PSC Disclosures
-No PSC disclosures were identified in the coverage period; therefore, no individuals, percentages, or filing statuses can be reported.  
+No PSC disclosures were identified in the provided data.
 
 ### Procurement & Board Changes
-- Tinubu appointed Festus Keyamo as director of APC air mobilisation for the 2027 campaign, expanding the party’s campaign infrastructure. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixgFBVV95cUxOXzh0eVdZa1JiTHhkTFlDYXdsbmJIUnZncnozS0FTZ21Gcm0xZEJFQjhYUGZ1eEhfT3lnb180NjhkaENoLVZhS3VFVW9ocnlxcTlJbm9XcG1ncWFpZUh5RlJzOTJhYUlNYW5sUnZ5RXZIcXVWeFZWYW41YWszLVYyMWp3elloR3hOZndCT0loZ2Rfa2JubE9wUmh1R3ZnX1pfblIzYW1KcE1IMVJ1RjZiWDlkdjJaNzMxWlR2X1pyZnpwa2t5Z1E?oc=5))  
-- The New Democratic Coalition named Ibrahim Abdulkarim as its Director General, solidifying its campaign leadership structure. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2gFBVV95cUxPYkV3UTkwN2lnVmFBMVdTNVhONTBrSWo0QXFfYXpjRVhNSTJESGVGZjBacHpfbHFXSkNSX1o3Y20za1R5NWROYXNGZ2E0b0ZTMWRqaENFbDdyY2tTekZhdHFTUnVHaDNrTXRPd1ZkbWdHWmdJWW41TjBhUUItcjB5bHlfczVvZFJ1SzZjZU1rMElRdjF2NXBjUUhYT0U3eElBQ3lnM01PZllrSjNwaEtKTVB0WHZpTnl3aHltbXJ3M0IxUGtfY2UzRXFOSUZPSlVMY2tCME5mRTNhQQ?oc=5))  
-- The House of Representatives dismissed a money‑laundering petition against the head of the Nigerian National Petroleum Company Limited, removing a potential legal impediment to its executive operations. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxPUHNNekNpM0RhSWtKcjY4R3RGSWlxaWY4aDlTdmg3cXdmazVXb242azJZMEdvRWh2V3JxMWxJTXVFdjlZY0VqNEtfZi1RZDFQb0R4SWlrMHJrSG9CeXdxNDZtamNKU0Nrd1NjMmFLRGRHWmliRFVVZGF3OHlPbFBZU3YzMnY?oc=5))  
-- The Regent of Lagos State, Nasir El‑Rufai, is under court scrutiny for phone‑tapping allegations, bringing further executive‑level scrutiny. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMivAFBVV95cUxOUGx2Rl8yQzlMUEQ3a0cwNUNCdlNDV2Jlc2NnT2U4Vlc5UzZGdEh4UWhYSjJCUFVfNGVmQzNEY3ZpaGZEanhLZUhxX2huZ1VLNm5fTm10RGszSzlQN05mRDhUdVdsSkpnMWFXMVpZV2o3OHVxRmxRYThvMnNTMk96ZFBKYmtCdFllQzNIVTVTVHp1T2Q3bHp3OGhLMW9DRUFpbUllRVVzbzY2QkhLQ2dVdVplRUZZVEs4YnNucg?oc=5))  
+* **Yobe Airport bailout, money badly spent**. President Bola Tinubu proposed a N100.5 billion reimbursement to Yobe State for the construction of the Muhammadu Buhari International Cargo Airport in Damaturu. ([The Punch](https://punchng.com/yobe-airport-bailout-money-badly-spent/))  
+* **Nigeria to Acquire 12 Turkish Combat Drones**. The Nigerian government intends to acquire 12 combat drones from Turkey to enhance security capabilities. ([Nigeria Communications Week](https://news.google.com/rss/articles/CBMioAFBVV95cUxNb0lBNktpaHpvVFVOZmJDOVczZzVBMWVOMmsxUVZ1Y25KVGY3TkVZSXZySjVadEdmNUV6N3R2X2haQmtEMjNOUVU5YmRTaVpEbE9lX09NZVJVdWNzVkxPY3k5RmI4WFBNQm5fNFg2TmR5VGNlME84SWxSR0s1SEwxNE4xcnBhcENka3I2dFRoTktKSkVZdFZiT0dFWWJCQjlL?oc=5))  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*

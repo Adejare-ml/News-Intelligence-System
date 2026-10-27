@@ -2038,5 +2038,25 @@
     "Date": "2026-10-25",
     "Amount Value": 2000000.0,
     "Amount Currency": "NGN"
+  },
+  {
+    "Agency": "Government of Nigeria",
+    "Contractor": "None",
+    "Amount": "None",
+    "Project": "Acquisition of 12 Turkish Combat Drones",
+    "Source": "Nigeria Communications Week",
+    "Date": "2026-10-27",
+    "Amount Value": null,
+    "Amount Currency": null
+  },
+  {
+    "Agency": "Federal Government of Nigeria",
+    "Contractor": "Yobe State Government",
+    "Amount": "N100.5 Billion",
+    "Project": "Reimbursement for construction of Muhammadu Buhari International Cargo Airport in Damaturu",
+    "Source": "The Punch",
+    "Date": "2026-10-27",
+    "Amount Value": 100500000000.0,
+    "Amount Currency": "NGN"
   }
 ]
