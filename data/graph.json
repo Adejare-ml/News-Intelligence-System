@@ -121,8 +121,32 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -139,6 +163,12 @@
       "risk": "Low"
     },
     {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "283e1d4aa831",
       "label": "All Progressives Congress",
       "type": "agency",
@@ -151,8 +181,32 @@
       "risk": "Low"
     },
     {
+      "id": "19e301887487",
+      "label": "National Hajj Commission of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a70f31de512b",
       "label": "Ekiti State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "58e21ffa68da",
+      "label": "Katsina State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,60 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "27ca0db67f34",
-      "label": "University of Nigeria, Nsukka",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "41c439b9d3bb",
-      "label": "Bayelsa Medical University",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4f3be5c55ea4",
-      "label": "Presidency of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3b2e786113af",
-      "label": "Tax Ombud",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dbaadc7cfab3",
-      "label": "Government of the United Kingdom",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -250,6 +250,18 @@
       "id": "6ff5775e8631",
       "label": "Oyebanji",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "be252fefa816",
+      "label": "Nasir El-Rufai",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4b3b1b76a8e8",
+      "label": "Kaduna State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -274,12 +286,6 @@
       "id": "3844955f0bba",
       "label": "New Democratic Coalition",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "be252fefa816",
-      "label": "Nasir El-Rufai",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -337,21 +343,9 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f1f131ace5c4",
       "label": "Uba Sani",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -370,6 +364,12 @@
       "id": "40ce4ff30275",
       "label": "Godwin Emefiele",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -459,12 +459,6 @@
     {
       "id": "3a4a88456e84",
       "label": "Oyo State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "68419b78e6b4",
-      "label": "Ministry of Aviation",
       "type": "company",
       "risk": "Low"
     },
@@ -637,6 +631,12 @@
       "risk": "Low"
     },
     {
+      "id": "68419b78e6b4",
+      "label": "Ministry of Aviation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "84b6d6cbf896",
       "label": "National Agency for Science and Engineering Infrastructure",
       "type": "agency",
@@ -683,12 +683,6 @@
       "label": "Gombe State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "babe3308606d",
-      "label": "PINL",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -703,6 +697,12 @@
       "from": "6ff5775e8631",
       "to": "a70f31de512b",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "0786561b838b",
+      "from": "be252fefa816",
+      "to": "4b3b1b76a8e8",
+      "label": "Appointed as Former Governor of Kaduna State"
     },
     {
       "id": "ff7b9bca2ec3",
@@ -819,12 +819,6 @@
       "label": "Appointed as Governor"
     },
     {
-      "id": "74ea085c66a5",
-      "from": "18bc77b97b9c",
-      "to": "68419b78e6b4",
-      "label": "Appointed as Minister of Aviation"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -889,6 +883,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "571c83be7b42",
+      "from": "334c4a4c42fd",
+      "to": "58e21ffa68da",
+      "label": "Contract Awardee"
     },
     {
       "id": "7bf4de3d8073",
@@ -984,12 +984,6 @@
       "id": "d3dec1815180",
       "from": "334c4a4c42fd",
       "to": "88ddee7fc08f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "a8e62f428290",
-      "from": "babe3308606d",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-27 13:06:02",
+  "generated": "2026-10-27 18:44:14",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3299,
+      "likes": 3337,
       "downloads": 105667
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 945,
+      "likes": 953,
       "downloads": 10574
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 626,
+      "likes": 651,
       "downloads": 4785
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 744,
+      "likes": 776,
       "downloads": 6191
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1791,
+      "likes": 1826,
       "downloads": 750694
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9511,
+      "likes": 9548,
       "downloads": 2163739
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 399,
+      "likes": 405,
       "downloads": 11075
     },
     {
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 371,
+      "likes": 384,
       "downloads": 1105751
     }
   ],
   "papers": [
     {
-      "title": "OBB-PBD: Extending Parallel Box Decoding to Oriented Bounding Boxes for Referring Expression Grounding in Aerial Imagery",
-      "url": "https://huggingface.co/papers/2610.35450",
-      "upvotes": 2
-    },
-    {
-      "title": "RoboJev: An Open Vision-Language Judge for Robot Success Detection",
-      "url": "https://huggingface.co/papers/2610.33718",
-      "upvotes": 2
-    },
-    {
-      "title": "Evolving to Match Capabilities: Improving Harness Self-Evolution via Skill Adaptation",
-      "url": "https://huggingface.co/papers/2610.33024",
-      "upvotes": 9
-    },
-    {
-      "title": "Constrained Decoding: Harmful or Beneficial? Revisiting Its Impact on LLM Performance",
-      "url": "https://huggingface.co/papers/2610.35328",
+      "title": "ReGE: Stronger Agents through Experience Synthesis",
+      "url": "https://huggingface.co/papers/2610.33861",
       "upvotes": 1
     },
     {
-      "title": "DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents",
-      "url": "https://huggingface.co/papers/2610.21561",
+      "title": "CRM-Agent-Bench: Benchmarking Tool-Using Agents in Stateful Enterprise Environments",
+      "url": "https://huggingface.co/papers/2610.32004",
+      "upvotes": 3
+    },
+    {
+      "title": "Gluing Local Contexts into Global Meaning: A Sheaf-Theoretic Decomposition of Transformer Representations",
+      "url": "https://huggingface.co/papers/2610.17117",
+      "upvotes": 0
+    },
+    {
+      "title": "ThinkBit: Search Codewords, Recalibrate Scales, Select by Reasoning",
+      "url": "https://huggingface.co/papers/2610.34886",
+      "upvotes": 0
+    },
+    {
+      "title": "iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents",
+      "url": "https://huggingface.co/papers/2610.34735",
       "upvotes": 2
     },
     {
-      "title": "Trust Mechanisms for Offline Generative AI at the Edge: A Connectivity-Regime Framework and an Empirical Study on a Raspberry Pi 5",
-      "url": "https://huggingface.co/papers/2610.33732",
-      "upvotes": 0
+      "title": "Semantic Concept Steering Breaks the Explanation Drift Loop in Continual Learning",
+      "url": "https://huggingface.co/papers/2610.33877",
+      "upvotes": 1
     }
   ]
 }

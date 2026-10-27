@@ -141,6 +141,14 @@
       }
     },
     {
+      "name": "Katsina State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 4000000000.0
+      }
+    },
+    {
       "name": "National Information Technology Development Agency",
       "contracts": 2,
       "undisclosed": 0,
@@ -694,10 +702,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 131,
+      "contracts": 132,
       "undisclosed": 82,
       "totals": {
-        "NGN": 20779214090000.0,
+        "NGN": 20783214090000.0,
         "USD": 47807540000.0
       }
     },
@@ -1194,5 +1202,5 @@
       }
     }
   ],
-  "generated": "2026-10-27 13:06:06"
+  "generated": "2026-10-27 18:44:21"
 }

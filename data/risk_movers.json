@@ -10,6 +10,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "recent_avg": 40.0,
+      "previous_avg": 71.2,
+      "delta": -31.2,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
       "key": "airways",
       "label": "Nigeria Airways",
       "recent_avg": 15.0,
@@ -28,6 +37,15 @@
       "previous_mentions": 2
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 28.3,
+      "previous_avg": 13.3,
+      "delta": 15.0,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 31.9,
@@ -35,15 +53,6 @@
       "delta": 14.4,
       "recent_mentions": 8,
       "previous_mentions": 6
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 23.3,
-      "previous_avg": 37.5,
-      "delta": -14.2,
-      "recent_mentions": 3,
-      "previous_mentions": 4
     },
     {
       "key": "independent corrupt practices and other related offences commission",
@@ -55,13 +64,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "festus keyamo",
-      "label": "Festus Keyamo",
-      "recent_avg": 17.5,
-      "previous_avg": 30.0,
-      "delta": -12.5,
-      "recent_mentions": 4,
-      "previous_mentions": 1
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 26.7,
+      "previous_avg": 15.0,
+      "delta": 11.7,
+      "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 23.3,
+      "previous_avg": 34.0,
+      "delta": -10.7,
+      "recent_mentions": 3,
+      "previous_mentions": 5
     },
     {
       "key": "bola tinubu",
@@ -73,76 +91,76 @@
       "previous_mentions": 2
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 23.2,
-      "previous_avg": 33.0,
-      "delta": -9.8,
-      "recent_mentions": 11,
-      "previous_mentions": 5
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 23.8,
-      "previous_avg": 15.0,
-      "delta": 8.8,
-      "recent_mentions": 4,
-      "previous_mentions": 1
-    },
-    {
       "key": "senate of",
       "label": "Senate of Nigeria",
-      "recent_avg": 32.5,
-      "previous_avg": 40.0,
-      "delta": -7.5,
-      "recent_mentions": 4,
-      "previous_mentions": 3
+      "recent_avg": 28.0,
+      "previous_avg": 37.5,
+      "delta": -9.5,
+      "recent_mentions": 5,
+      "previous_mentions": 2
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 40.6,
-      "previous_avg": 35.0,
-      "delta": 5.6,
-      "recent_mentions": 8,
-      "previous_mentions": 14
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 18.3,
-      "previous_avg": 15.0,
-      "delta": 3.3,
+      "key": "festus keyamo",
+      "label": "Festus Keyamo",
+      "recent_avg": 16.7,
+      "previous_avg": 25.0,
+      "delta": -8.3,
       "recent_mentions": 3,
       "previous_mentions": 2
     },
     {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
-      "recent_avg": 30.0,
-      "previous_avg": 32.5,
-      "delta": -2.5,
-      "recent_mentions": 4,
+      "recent_avg": 33.3,
+      "previous_avg": 27.5,
+      "delta": 5.8,
+      "recent_mentions": 3,
       "previous_mentions": 4
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 24.3,
-      "previous_avg": 25.6,
-      "delta": -1.3,
-      "recent_mentions": 14,
-      "previous_mentions": 16
+      "key": "standards organisation of",
+      "label": "Standards Organisation of Nigeria",
+      "recent_avg": 16.2,
+      "previous_avg": 20.0,
+      "delta": -3.8,
+      "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 24.0,
+      "previous_avg": 27.5,
+      "delta": -3.5,
+      "recent_mentions": 10,
+      "previous_mentions": 6
+    },
+    {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 40.6,
+      "previous_avg": 41.0,
+      "delta": -0.4,
+      "recent_mentions": 8,
+      "previous_mentions": 10
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 62.1,
-      "previous_avg": 61.5,
-      "delta": 0.6,
-      "recent_mentions": 12,
-      "previous_mentions": 13
+      "recent_avg": 61.8,
+      "previous_avg": 62.0,
+      "delta": -0.2,
+      "recent_mentions": 11,
+      "previous_mentions": 15
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 23.9,
+      "previous_avg": 24.1,
+      "delta": -0.2,
+      "recent_mentions": 14,
+      "previous_mentions": 16
     },
     {
       "key": "government of",
@@ -161,26 +179,8 @@
       "delta": 0.0,
       "recent_mentions": 2,
       "previous_mentions": 1
-    },
-    {
-      "key": "code of conduct bureau",
-      "label": "Code of Conduct Bureau",
-      "recent_avg": 85.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "recent_avg": 65.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-27 13:06:06"
+  "generated": "2026-10-27 18:44:21"
 }
