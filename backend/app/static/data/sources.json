@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2733,
+      "total": 2734,
       "published": 1511,
-      "filtered": 1222,
+      "filtered": 1223,
       "accept_rate": 55,
       "avg_risk": 28.5,
       "engines": {
@@ -16,43 +16,43 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2202,
-      "published": 907,
-      "filtered": 1295,
+      "total": 2210,
+      "published": 909,
+      "filtered": 1301,
       "accept_rate": 41,
       "avg_risk": 30.9,
       "engines": {
         "unknown": 440,
-        "ollama": 463,
+        "ollama": 465,
         "nvidia": 4
       },
       "last_seen": "2026-10-26"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1038,
-      "published": 424,
-      "filtered": 614,
+      "total": 1041,
+      "published": 426,
+      "filtered": 615,
       "accept_rate": 41,
-      "avg_risk": 27.3,
+      "avg_risk": 27.4,
       "engines": {
         "unknown": 188,
-        "ollama": 232,
+        "ollama": 234,
         "nvidia": 4
       },
-      "last_seen": "2026-10-26"
+      "last_seen": "2026-10-27"
     },
     {
       "source": "The Punch",
-      "total": 644,
-      "published": 361,
-      "filtered": 283,
+      "total": 648,
+      "published": 363,
+      "filtered": 285,
       "accept_rate": 56,
-      "avg_risk": 32.4,
+      "avg_risk": 32.5,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 251
+        "ollama": 253
       },
       "last_seen": "2026-10-25"
     },
@@ -140,9 +140,9 @@
     },
     {
       "source": "dailypost",
-      "total": 184,
+      "total": 185,
       "published": 45,
-      "filtered": 139,
+      "filtered": 140,
       "accept_rate": 24,
       "avg_risk": 26.1,
       "engines": {
@@ -153,9 +153,9 @@
     },
     {
       "source": "vanguardngr",
-      "total": 181,
+      "total": 182,
       "published": 28,
-      "filtered": 153,
+      "filtered": 154,
       "accept_rate": 15,
       "avg_risk": 25.8,
       "engines": {
@@ -180,16 +180,16 @@
     },
     {
       "source": "independentng",
-      "total": 130,
+      "total": 131,
       "published": 30,
-      "filtered": 100,
+      "filtered": 101,
       "accept_rate": 23,
       "avg_risk": 24.2,
       "engines": {
         "unknown": 20,
         "ollama": 10
       },
-      "last_seen": "2026-10-23"
+      "last_seen": "2026-10-26"
     },
     {
       "source": "legit",
@@ -372,16 +372,16 @@
     },
     {
       "source": "Voice of Nigeria",
-      "total": 22,
+      "total": 23,
       "published": 11,
-      "filtered": 11,
-      "accept_rate": 50,
+      "filtered": 12,
+      "accept_rate": 48,
       "avg_risk": 19.5,
       "engines": {
         "nvidia": 1,
         "ollama": 10
       },
-      "last_seen": "2026-10-24"
+      "last_seen": "2026-10-26"
     },
     {
       "source": "dailytrust",
@@ -1046,6 +1046,18 @@
       "last_seen": "2026-08-10"
     },
     {
+      "source": "FRCN HQ",
+      "total": 2,
+      "published": 1,
+      "filtered": 1,
+      "accept_rate": 50,
+      "avg_risk": 20.0,
+      "engines": {
+        "nvidia": 1
+      },
+      "last_seen": "2026-10-25"
+    },
+    {
       "source": "Fortune",
       "total": 2,
       "published": 2,
@@ -1463,18 +1475,6 @@
       "last_seen": "2026-07-28"
     },
     {
-      "source": "FRCN HQ",
-      "total": 1,
-      "published": 1,
-      "filtered": 0,
-      "accept_rate": 100,
-      "avg_risk": 20.0,
-      "engines": {
-        "nvidia": 1
-      },
-      "last_seen": "2026-08-03"
-    },
-    {
       "source": "Fair Observer",
       "total": 1,
       "published": 0,
@@ -1743,6 +1743,18 @@
         "ollama": 1
       },
       "last_seen": "2026-09-10"
+    },
+    {
+      "source": "Nigeria Communications Week",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 30.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-10-25"
     },
     {
       "source": "Nigerian Content Development & Monitoring Board",
@@ -2201,5 +2213,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }

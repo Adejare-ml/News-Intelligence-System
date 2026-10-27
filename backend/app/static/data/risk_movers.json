@@ -19,15 +19,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 50.0,
-      "previous_avg": 33.2,
-      "delta": 16.8,
-      "recent_mentions": 6,
-      "previous_mentions": 14
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 31.7,
@@ -46,13 +37,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 10.0,
-      "previous_avg": 22.5,
-      "delta": -12.5,
-      "recent_mentions": 2,
-      "previous_mentions": 4
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 45.0,
+      "previous_avg": 33.2,
+      "delta": 11.8,
+      "recent_mentions": 8,
+      "previous_mentions": 14
     },
     {
       "key": "independent national electoral commission",
@@ -84,20 +75,11 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "recent_avg": 23.9,
+      "recent_avg": 24.5,
       "previous_avg": 30.8,
-      "delta": -6.9,
-      "recent_mentions": 9,
+      "delta": -6.3,
+      "recent_mentions": 10,
       "previous_mentions": 6
-    },
-    {
-      "key": "federal ministry of works",
-      "label": "Federal Ministry of Works",
-      "recent_avg": 35.0,
-      "previous_avg": 30.0,
-      "delta": 5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     },
     {
       "key": "national assembly",
@@ -112,10 +94,10 @@
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 24.3,
-      "previous_avg": 27.1,
-      "delta": -2.8,
+      "previous_avg": 27.5,
+      "delta": -3.2,
       "recent_mentions": 14,
-      "previous_mentions": 19
+      "previous_mentions": 18
     },
     {
       "key": "national agency for food and drug administration and control",
@@ -134,6 +116,15 @@
       "delta": 0.6,
       "recent_mentions": 12,
       "previous_mentions": 13
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 16.7,
+      "previous_avg": 16.7,
+      "delta": 0.0,
+      "recent_mentions": 3,
+      "previous_mentions": 3
     },
     {
       "key": "code of conduct bureau",
@@ -165,16 +156,25 @@
     {
       "key": "national youth service corps",
       "label": "National Youth Service Corps",
-      "recent_avg": 57.5,
+      "recent_avg": 53.3,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
       "key": "university of nsukka",
       "label": "University of Nigeria, Nsukka",
-      "recent_avg": 57.5,
+      "recent_avg": 53.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "godwin emefiele",
+      "label": "Godwin Emefiele",
+      "recent_avg": 52.5,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }

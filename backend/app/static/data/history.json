@@ -1312,7 +1312,20 @@
       "rejected": 85,
       "undated": 0,
       "run_seconds": 687
+    },
+    {
+      "date": "2026-10-27",
+      "runs": 1,
+      "articles": 7,
+      "high_risk": 1,
+      "appointments": 0,
+      "procurement": 2,
+      "cascade_failures": 0,
+      "candidates": 1002,
+      "rejected": 15,
+      "undated": 0,
+      "run_seconds": 133
     }
   ],
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }

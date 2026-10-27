@@ -234,6 +234,10 @@
       "label": "Nigerian National Petroleum Company Limited"
     },
     {
+      "key": "national public assets management commission",
+      "label": "National Public Assets Management Commission"
+    },
+    {
       "key": "national youth service corps",
       "label": "National Youth Service Corps"
     },
@@ -442,6 +446,11 @@
       "weight": 3
     },
     {
+      "a": "national youth service corps",
+      "b": "university of nsukka",
+      "weight": 3
+    },
+    {
       "a": "ogunwuyi",
       "b": "oyo state government",
       "weight": 3
@@ -632,6 +641,11 @@
       "weight": 2
     },
     {
+      "a": "house of representatives",
+      "b": "national public assets management commission",
+      "weight": 2
+    },
+    {
       "a": "house of representatives committee on host communities",
       "b": "pipeline infrastructure",
       "weight": 2
@@ -717,15 +731,10 @@
       "weight": 2
     },
     {
-      "a": "national youth service corps",
-      "b": "university of nsukka",
-      "weight": 2
-    },
-    {
       "a": "stallion",
       "b": "united bank for africa",
       "weight": 2
     }
   ],
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }

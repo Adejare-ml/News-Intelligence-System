@@ -58,7 +58,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 86,
+      "total_mentions": 88,
       "points": [
         {
           "week": "2026-09-14",
@@ -98,8 +98,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 42.5,
+          "mentions": 4,
+          "avg_risk": 36.2,
           "max_risk": 45
         }
       ]
@@ -358,7 +358,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 20,
+      "total_mentions": 21,
       "points": [
         {
           "week": "2026-09-14",
@@ -386,7 +386,7 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 8,
+          "mentions": 9,
           "avg_risk": 30.0,
           "max_risk": 85
         },
@@ -401,7 +401,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 19,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-14",
@@ -435,9 +435,9 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 12.5,
-          "max_risk": 20
+          "mentions": 5,
+          "avg_risk": 16.0,
+          "max_risk": 30
         }
       ]
     },
@@ -2659,6 +2659,19 @@
       ]
     },
     {
+      "key": "national youth service corps",
+      "label": "National Youth Service Corps",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 53.3,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "niger delta development commission",
       "label": "Niger Delta Development Commission",
       "total_mentions": 3,
@@ -2952,6 +2965,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "university of nsukka",
+      "label": "University of Nigeria, Nsukka",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 53.3,
+          "max_risk": 75
         }
       ]
     },
@@ -3812,6 +3838,19 @@
       ]
     },
     {
+      "key": "national public assets management commission",
+      "label": "National Public Assets Management Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "national teachers institute",
       "label": "National Teachers Institute",
       "total_mentions": 2,
@@ -3827,19 +3866,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "national youth service corps",
-      "label": "National Youth Service Corps",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 57.5,
-          "max_risk": 75
         }
       ]
     },
@@ -4362,19 +4388,6 @@
       ]
     },
     {
-      "key": "university of nsukka",
-      "label": "University of Nigeria, Nsukka",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 57.5,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "unnamed commissioner",
       "label": "Unnamed Commissioner",
       "total_mentions": 2,
@@ -4422,6 +4435,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "yobe state government",
+      "label": "Yobe State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -5257,6 +5289,19 @@
       ]
     },
     {
+      "key": "bayelsa medical university",
+      "label": "Bayelsa Medical University",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 0.0,
+          "max_risk": 0
+        }
+      ]
+    },
+    {
       "key": "bayero university kano",
       "label": "Bayero University Kano",
       "total_mentions": 1,
@@ -5606,46 +5651,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "council for the regulation of engineering in",
-      "label": "Council for the Regulation of Engineering in Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "credit guarantee company",
-      "label": "Credit Guarantee Company",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "creditville",
-      "label": "Creditville",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
     }
   ],
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }

@@ -121,6 +121,48 @@
       "risk": "Low"
     },
     {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7f50eb5ca259",
+      "label": "Yobe State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "525996fa741b",
+      "label": "National Public Assets Management Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a8bfa117a3e5",
+      "label": "National Youth Service Corps",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "27ca0db67f34",
+      "label": "University of Nigeria, Nsukka",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "41c439b9d3bb",
+      "label": "Bayelsa Medical University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -141,18 +183,6 @@
     {
       "id": "4f3be5c55ea4",
       "label": "Presidency of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,12 +223,6 @@
       "risk": "Low"
     },
     {
-      "id": "525996fa741b",
-      "label": "National Public Assets Management Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "3844955f0bba",
       "label": "New Democratic Coalition",
       "type": "agency",
@@ -213,30 +237,6 @@
     {
       "id": "5be6a743740a",
       "label": "Obafemi Awolowo University",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a8bfa117a3e5",
-      "label": "National Youth Service Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "27ca0db67f34",
-      "label": "University of Nigeria, Nsukka",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a000a2cb7017",
-      "label": "Cash Transfer Office",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -595,6 +595,18 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bee8e95809f",
       "label": "Pincode",
       "type": "company",
@@ -604,12 +616,6 @@
       "id": "79ad7c2f3273",
       "label": "Zeenab Foods Limited",
       "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -883,6 +889,18 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "7bf4de3d8073",
+      "from": "7f50eb5ca259",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "d60095afa222",
+      "from": "334c4a4c42fd",
+      "to": "b5da1d8370fd",
+      "label": "Contract Awardee"
     },
     {
       "id": "12047b1c4fd5",
