@@ -1,19 +1,25 @@
 {
   "window_days": 7,
-  "recent_articles": 196,
-  "previous_articles": 201,
+  "recent_articles": 194,
+  "previous_articles": 200,
   "rising": [
     {
-      "term": "others",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
+      "term": "tinubu",
+      "recent": 15,
+      "previous": 5,
+      "change": 10
     },
     {
-      "term": "police",
+      "term": "alleged",
+      "recent": 12,
+      "previous": 5,
+      "change": 7
+    },
+    {
+      "term": "campaign",
       "recent": 7,
-      "previous": 1,
-      "change": 6
+      "previous": 0,
+      "change": 7
     },
     {
       "term": "apc",
@@ -28,21 +34,21 @@
       "change": 6
     },
     {
-      "term": "tinubu",
+      "term": "reps",
       "recent": 13,
       "previous": 8,
       "change": 5
     },
     {
-      "term": "alleged",
-      "recent": 11,
-      "previous": 6,
+      "term": "digital",
+      "recent": 8,
+      "previous": 3,
       "change": 5
     },
     {
-      "term": "fraud",
-      "recent": 11,
-      "previous": 6,
+      "term": "others",
+      "recent": 8,
+      "previous": 3,
       "change": 5
     },
     {
@@ -56,32 +62,38 @@
       "recent": 6,
       "previous": 1,
       "change": 5
-    },
-    {
-      "term": "tinubu appoints",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     }
   ],
   "falling": [
     {
+      "term": "lagos",
+      "recent": 4,
+      "previous": 12,
+      "change": -8
+    },
+    {
+      "term": "efcc",
+      "recent": 9,
+      "previous": 16,
+      "change": -7
+    },
+    {
       "term": "probe",
-      "recent": 1,
-      "previous": 10,
-      "change": -9
+      "recent": 2,
+      "previous": 9,
+      "change": -7
+    },
+    {
+      "term": "warns",
+      "recent": 2,
+      "previous": 9,
+      "change": -7
     },
     {
       "term": "imf",
       "recent": 1,
       "previous": 8,
       "change": -7
-    },
-    {
-      "term": "oil",
-      "recent": 4,
-      "previous": 10,
-      "change": -6
     },
     {
       "term": "ncc",
@@ -102,12 +114,6 @@
       "change": -6
     },
     {
-      "term": "warns",
-      "recent": 3,
-      "previous": 8,
-      "change": -5
-    },
-    {
       "term": "deal",
       "recent": 0,
       "previous": 5,
@@ -118,29 +124,23 @@
       "recent": 0,
       "previous": 5,
       "change": -5
-    },
-    {
-      "term": "pinl",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 129,
-      "previous": 141
+      "recent": 128,
+      "previous": 140
     },
     {
       "category": "Legal",
-      "recent": 38,
-      "previous": 29
+      "recent": 36,
+      "previous": 31
     },
     {
       "category": "Company",
-      "recent": 24,
-      "previous": 31
+      "recent": 25,
+      "previous": 29
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-27 13:06:03"
+  "generated": "2026-10-27 18:44:14"
 }
