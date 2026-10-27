@@ -121,6 +121,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "1613f8dac921",
       "label": "House of Representatives",
       "type": "agency",
@@ -133,8 +139,38 @@
       "risk": "Low"
     },
     {
+      "id": "283e1d4aa831",
+      "label": "All Progressives Congress",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7f50eb5ca259",
       "label": "Yobe State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "d10f0fd05d5d",
+      "label": "Nigeria Centre for Disease Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "81adceec0174",
+      "label": "Ekiti State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b135be2e521d",
+      "label": "African Democratic Congress",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,12 +211,6 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "4f3be5c55ea4",
       "label": "Presidency of Nigeria",
       "type": "agency",
@@ -211,33 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "9409708c9d80",
-      "label": "International Monetary Fund",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "cf3ed84d35f7",
-      "label": "Code of Conduct Bureau",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3844955f0bba",
-      "label": "New Democratic Coalition",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "715a651bd1f9",
-      "label": "Chartered Institute of Project Management Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5be6a743740a",
-      "label": "Obafemi Awolowo University",
-      "type": "agency",
+      "id": "6ff5775e8631",
+      "label": "Oyebanji",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -253,15 +265,15 @@
       "risk": "Low"
     },
     {
-      "id": "283e1d4aa831",
-      "label": "All Progressives Congress",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "b08d8c8059f5",
       "label": "Ibrahim Abdulkarim",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3844955f0bba",
+      "label": "New Democratic Coalition",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -453,24 +465,6 @@
     {
       "id": "68419b78e6b4",
       "label": "Ministry of Aviation",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "06c8cb034ab7",
-      "label": "Alli",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "07cdd79cacad",
-      "label": "Liyel Imoke",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7f002a16ab95",
-      "label": "Cross River State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -699,6 +693,18 @@
   ],
   "edges": [
     {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "b6c8fff20d98",
+      "from": "6ff5775e8631",
+      "to": "a70f31de512b",
+      "label": "Appointed as Governor"
+    },
+    {
       "id": "ff7b9bca2ec3",
       "from": "18bc77b97b9c",
       "to": "00d9f6e47194",
@@ -817,12 +823,6 @@
       "from": "18bc77b97b9c",
       "to": "68419b78e6b4",
       "label": "Appointed as Minister of Aviation"
-    },
-    {
-      "id": "896a53d24a55",
-      "from": "07cdd79cacad",
-      "to": "7f002a16ab95",
-      "label": "Appointed as Ex-governor"
     },
     {
       "id": "a5e36b5f552f",
