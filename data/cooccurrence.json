@@ -98,6 +98,10 @@
       "label": "Ekiti State Government"
     },
     {
+      "key": "ekiti state house of assembly",
+      "label": "Ekiti State House of Assembly"
+    },
+    {
       "key": "exchange",
       "label": "Nigerian Exchange Group"
     },
@@ -361,6 +365,11 @@
       "weight": 6
     },
     {
+      "a": "house of representatives",
+      "b": "national petroleum company",
+      "weight": 5
+    },
+    {
       "a": "all progressives congress",
       "b": "independent national electoral commission",
       "weight": 4
@@ -383,11 +392,6 @@
     {
       "a": "economic and financial crimes commission",
       "b": "nasir el rufai",
-      "weight": 4
-    },
-    {
-      "a": "house of representatives",
-      "b": "national petroleum company",
       "weight": 4
     },
     {
@@ -428,6 +432,11 @@
     {
       "a": "economic and financial crimes commission",
       "b": "maina",
+      "weight": 3
+    },
+    {
+      "a": "ekiti state government",
+      "b": "oyebanji",
       "weight": 3
     },
     {
@@ -531,6 +540,11 @@
       "weight": 2
     },
     {
+      "a": "bola tinubu",
+      "b": "federal government of",
+      "weight": 2
+    },
+    {
       "a": "central bank of",
       "b": "international monetary fund",
       "weight": 2
@@ -597,7 +611,7 @@
     },
     {
       "a": "ekiti state government",
-      "b": "oyebanji",
+      "b": "ekiti state house of assembly",
       "weight": 2
     },
     {
@@ -736,5 +750,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-27 02:03:03"
+  "generated": "2026-10-27 13:06:06"
 }
