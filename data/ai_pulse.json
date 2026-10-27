@@ -1,46 +1,46 @@
 {
-  "generated": "2026-10-26 21:32:03",
+  "generated": "2026-10-27 02:03:00",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3175,
+      "likes": 3197,
       "downloads": 95889
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 915,
+      "likes": 926,
       "downloads": 8470
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 586,
+      "likes": 602,
       "downloads": 2787
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 637,
+      "likes": 661,
       "downloads": 4726
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1690,
+      "likes": 1705,
       "downloads": 700652
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9445,
+      "likes": 9463,
       "downloads": 2117147
     },
     {
@@ -54,39 +54,39 @@
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 337,
+      "likes": 345,
       "downloads": 891147
     }
   ],
   "papers": [
     {
-      "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
-      "url": "https://huggingface.co/papers/2610.21109",
-      "upvotes": 4
-    },
-    {
-      "title": "Predictive Closure: A Set-Level Characterization of JEPA's Feature Selection",
-      "url": "https://huggingface.co/papers/2610.27364",
-      "upvotes": 0
-    },
-    {
-      "title": "Judging the Justification: Decision Certificate Supervision for Generative Reward Models",
-      "url": "https://huggingface.co/papers/2610.27528",
+      "title": "Trial by Trace: Benchmarking AI Agent Harnesses for Reliability and Failure Attribution",
+      "url": "https://huggingface.co/papers/2610.32285",
       "upvotes": 1
     },
     {
-      "title": "On the Token Collapse Phenomenon in Textual Graph Soft Prompting",
-      "url": "https://huggingface.co/papers/2610.31572",
+      "title": "Steering Black-Box Large Language Model Agents with Pitfall Anticipation World Model",
+      "url": "https://huggingface.co/papers/2610.29139",
+      "upvotes": 1
+    },
+    {
+      "title": "WorldCast: World-Consistent Character Video Generation with Large-Angle Camera Control",
+      "url": "https://huggingface.co/papers/2610.33135",
+      "upvotes": 19
+    },
+    {
+      "title": "WORTH Benchmark: Evidence Discovery under Not-Fully-Cooperative Information -- A Two-Episode Pilot",
+      "url": "https://huggingface.co/papers/2610.27597",
       "upvotes": 0
     },
     {
-      "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
-      "url": "https://huggingface.co/papers/2610.31779",
-      "upvotes": 0
+      "title": "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning",
+      "url": "https://huggingface.co/papers/2610.32093",
+      "upvotes": 8
     },
     {
-      "title": "KANLab: TensorFlow Playground for Kolmogorov-Arnold Networks",
-      "url": "https://huggingface.co/papers/2610.20117",
+      "title": "Function-Space Temporal Self-Distillation for Policy Optimization",
+      "url": "https://huggingface.co/papers/2610.19687",
       "upvotes": 2
     }
   ]

@@ -2,10 +2,10 @@
   "agencies": [
     {
       "name": "Federal Government of Nigeria",
-      "contracts": 55,
+      "contracts": 56,
       "undisclosed": 36,
       "totals": {
-        "NGN": 17235096000000.0,
+        "NGN": 17335596000000.0,
         "GBP": 1492000000.0,
         "USD": 31230000000.0
       }
@@ -281,6 +281,14 @@
       "totals": {}
     },
     {
+      "name": "Government of Nigeria",
+      "contracts": 3,
+      "undisclosed": 2,
+      "totals": {
+        "USD": 4500000000.0
+      }
+    },
+    {
       "name": "Niger Delta Development Commission",
       "contracts": 3,
       "undisclosed": 3,
@@ -304,14 +312,6 @@
       "undisclosed": 1,
       "totals": {
         "USD": 6000000000.0
-      }
-    },
-    {
-      "name": "Government of Nigeria",
-      "contracts": 2,
-      "undisclosed": 1,
-      "totals": {
-        "USD": 4500000000.0
       }
     },
     {
@@ -694,8 +694,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 130,
-      "undisclosed": 81,
+      "contracts": 131,
+      "undisclosed": 82,
       "totals": {
         "NGN": 20779214090000.0,
         "USD": 47807540000.0
@@ -703,10 +703,10 @@
     },
     {
       "name": "Yobe State Government",
-      "contracts": 1,
+      "contracts": 2,
       "undisclosed": 0,
       "totals": {
-        "NGN": 100000000000.0
+        "NGN": 200500000000.0
       }
     },
     {
@@ -1194,5 +1194,5 @@
       }
     }
   ],
-  "generated": "2026-10-26 21:32:07"
+  "generated": "2026-10-27 02:03:03"
 }
