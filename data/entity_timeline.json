@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 92,
+      "total_mentions": 93,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 20.0,
+          "mentions": 3,
+          "avg_risk": 18.3,
           "max_risk": 20
         }
       ]
@@ -107,7 +107,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 70,
+      "total_mentions": 71,
       "points": [
         {
           "week": "2026-09-07",
@@ -153,8 +153,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 61.7,
+          "mentions": 4,
+          "avg_risk": 62.5,
           "max_risk": 75
         }
       ]
@@ -211,7 +211,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 28,
+      "total_mentions": 29,
       "points": [
         {
           "week": "2026-09-07",
@@ -257,7 +257,7 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 1,
+          "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -266,7 +266,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 23,
+      "total_mentions": 24,
       "points": [
         {
           "week": "2026-09-14",
@@ -303,13 +303,19 @@
           "mentions": 2,
           "avg_risk": 17.5,
           "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 22,
+      "total_mentions": 23,
       "points": [
         {
           "week": "2026-09-14",
@@ -343,8 +349,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 23.3,
+          "mentions": 4,
+          "avg_risk": 21.2,
           "max_risk": 40
         }
       ]
@@ -671,6 +677,49 @@
       ]
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 18.8,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 11,
@@ -827,43 +876,6 @@
           "mentions": 3,
           "avg_risk": 25.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 18.8,
-          "max_risk": 30
         }
       ]
     },
@@ -1069,7 +1081,7 @@
     {
       "key": "senate of",
       "label": "Senate of Nigeria",
-      "total_mentions": 7,
+      "total_mentions": 8,
       "points": [
         {
           "week": "2026-10-12",
@@ -1082,6 +1094,12 @@
           "mentions": 4,
           "avg_risk": 32.5,
           "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -1194,6 +1212,62 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 81.7,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "national hajj commission of",
+      "label": "National Hajj Commission of Nigeria",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -1456,56 +1530,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "nasir el rufai",
-      "label": "Nasir El-Rufai",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 81.7,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "national hajj commission of",
-      "label": "National Hajj Commission of Nigeria",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1957,6 +1981,25 @@
       ]
     },
     {
+      "key": "meta",
+      "label": "Meta",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national agency for science and engineering infrastructure",
       "label": "National Agency for Science and Engineering Infrastructure",
       "total_mentions": 4,
@@ -2003,6 +2046,37 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "national pension commission",
+      "label": "National Pension Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -2246,6 +2320,31 @@
       ]
     },
     {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "code of conduct bureau",
       "label": "Code of Conduct Bureau",
       "total_mentions": 3,
@@ -2435,6 +2534,31 @@
       ]
     },
     {
+      "key": "firstbank",
+      "label": "FirstBank",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "fitch ratings",
       "label": "Fitch Ratings",
       "total_mentions": 3,
@@ -2594,19 +2718,6 @@
       ]
     },
     {
-      "key": "meta",
-      "label": "Meta",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "ministry of finance",
       "label": "Ministry of Finance",
       "total_mentions": 3,
@@ -2676,31 +2787,6 @@
         },
         {
           "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national pension commission",
-      "label": "National Pension Commission",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3216,25 +3302,6 @@
       ]
     },
     {
-      "key": "bayelsa state government",
-      "label": "Bayelsa State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "benue state government",
       "label": "Benue State Government",
       "total_mentions": 2,
@@ -3529,25 +3596,6 @@
       ]
     },
     {
-      "key": "firstbank",
-      "label": "FirstBank",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "glo",
       "label": "Glo",
       "total_mentions": 2,
@@ -3555,6 +3603,25 @@
         {
           "week": "2026-10-19",
           "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "google",
+      "label": "Google",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -3676,6 +3743,25 @@
       ]
     },
     {
+      "key": "katsina state government",
+      "label": "Katsina State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "makinde",
       "label": "Makinde",
       "total_mentions": 2,
@@ -3733,6 +3819,25 @@
         },
         {
           "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "microsoft",
+      "label": "Microsoft",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -5648,46 +5753,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "conference of private practitioners employers",
-      "label": "Conference of Private Practitioners Employers",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "conoil",
-      "label": "Conoil",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "continental re",
-      "label": "Continental Re",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-27 13:06:06"
+  "generated": "2026-10-27 18:44:21"
 }

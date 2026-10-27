@@ -24,10 +24,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 24,
-      "mentions": 68,
+      "companies": 25,
+      "mentions": 70,
       "risk": {
-        "Low": 18,
+        "Low": 19,
         "Medium": 6
       }
     },
@@ -69,21 +69,21 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 9,
+      "mentions": 13,
+      "risk": {
+        "Medium": 3,
+        "Low": 6
+      }
+    },
+    {
       "industry": "Political Party",
       "companies": 2,
       "mentions": 13,
       "risk": {
         "High": 1,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 8,
-      "mentions": 12,
-      "risk": {
-        "Medium": 3,
-        "Low": 5
       }
     },
     {
@@ -140,6 +140,14 @@
       }
     },
     {
+      "industry": "Technology",
+      "companies": 3,
+      "mentions": 9,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Insurance",
       "companies": 7,
       "mentions": 8,
@@ -179,14 +187,6 @@
       "mentions": 6,
       "risk": {
         "Medium": 2
-      }
-    },
-    {
-      "industry": "Technology",
-      "companies": 3,
-      "mentions": 6,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -857,5 +857,5 @@
       }
     }
   ],
-  "generated": "2026-10-27 13:06:06"
+  "generated": "2026-10-27 18:44:21"
 }

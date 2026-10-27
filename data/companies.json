@@ -3369,8 +3369,8 @@
   },
   {
     "Company": "Google",
-    "Mention Count": 2,
-    "Last Seen": "2026-10-10 13:55",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-27 18:35",
     "Industry": "Technology",
     "Risk Level": "Low",
     "First Seen": ""
@@ -6313,8 +6313,8 @@
   },
   {
     "Company": "FirstBank",
-    "Mention Count": 4,
-    "Last Seen": "2026-10-19 14:18",
+    "Mention Count": 5,
+    "Last Seen": "2026-10-27 18:38",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
@@ -8425,8 +8425,8 @@
   },
   {
     "Company": "Meta",
-    "Mention Count": 3,
-    "Last Seen": "2026-09-29 13:44",
+    "Mention Count": 4,
+    "Last Seen": "2026-10-27 18:35",
     "Industry": "Technology",
     "Risk Level": "Low",
     "First Seen": "2026-09-28 20:00"
@@ -8889,8 +8889,8 @@
   },
   {
     "Company": "Microsoft",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-10 13:55",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-27 18:35",
     "Industry": "Technology",
     "Risk Level": "Low",
     "First Seen": "2026-10-10 13:55"
@@ -9678,5 +9678,21 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-10-26 19:04"
+  },
+  {
+    "Company": "Guaranty Trust Holding Company",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-27 18:36",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-27 18:36"
+  },
+  {
+    "Company": "Google Pay",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-27 18:38",
+    "Industry": "Fintech",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-27 18:38"
   }
 ]

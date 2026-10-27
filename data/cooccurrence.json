@@ -134,6 +134,10 @@
       "label": "Godwin Emefiele"
     },
     {
+      "key": "google",
+      "label": "Google"
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria"
     },
@@ -200,6 +204,10 @@
     {
       "key": "mambilla hydropower project",
       "label": "Mambilla Hydropower Project"
+    },
+    {
+      "key": "microsoft",
+      "label": "Microsoft"
     },
     {
       "key": "midstream and downstream petroleum regulatory authority",
@@ -645,6 +653,16 @@
       "weight": 2
     },
     {
+      "a": "google",
+      "b": "independent national electoral commission",
+      "weight": 2
+    },
+    {
+      "a": "google",
+      "b": "microsoft",
+      "weight": 2
+    },
+    {
       "a": "government of",
       "b": "government of the united states",
       "weight": 2
@@ -667,6 +685,11 @@
     {
       "a": "independent corrupt practices and other related offences commission",
       "b": "office of the attorney general of the federation",
+      "weight": 2
+    },
+    {
+      "a": "independent national electoral commission",
+      "b": "microsoft",
       "weight": 2
     },
     {
@@ -750,5 +773,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-27 13:06:06"
+  "generated": "2026-10-27 18:44:21"
 }
