@@ -2,6 +2,31 @@
   "alerts": [
     {
       "date": "2026-10-27",
+      "title": "How companies disbursed Kogi LG funds through \u2018in-and-out\u2019 paper transactions - EFCC investigator - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNak1pWTRqbkEzd1lnUGE3dDFhRkVKSndvRDVMTFFIWVhnQU96OHFTU2xTVEtLa1RCS05IOHByR1hZNVM0Ql95SjhkLVVOZVNhNjJVYjkza2ZYcWdoanoxcHR4Nl8xY3dLUmx3OUM1T1ozcVM0cEZXYjhLaE1EUk52M0Z6TDJTSnpZbGtham1vSVg3R3VwM2NJbVlpOHR6NTktMFZMalJ2dXFYemFzTnNIM3NSdWtUOE5uSUZTM2l1ZWFHSVZKUEdzOTd0VklDUUgxaWZGdmRXdkdvTExaZ190RFJsaUw?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "title": "How ONSA under Dasuki paid out security funds received from CBN, accountant general - EFCC witness - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUk15WVVZVmw5NHNSb1R2RmRMbklGcmE4aVM3cmlwU1pfVkhOZEctZWh0MUk1REtteWdOWnhqbmZfUGhBR2JsSkl2WjhBeGVJcmQtcEJkaTZNT3gzQ2YyWGVQVERQWlhiVS1mS1AzbUZxektFeFFJbXYxTkFBbUUzcmVPRmgzM1NOUnA2eWNfaFpVTDhTXy1UUE05Zk53eHpFSTUtS2p5cW5qb2N3Ty1CYTZJamtYcUlRYmstQlpkb2ZLOGNWQVRMdEJfQVYtbUxfQ1ZYZDFNTThhclZEcTU1NThjeXRhYzg?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Office of the National Security Adviser",
+        "Central Bank of Nigeria",
+        "Economic and Financial Crimes Commission",
+        "Sambo Dasuki"
+      ]
+    },
+    {
+      "date": "2026-10-27",
       "title": "Yobe Airport bailout, money badly spent",
       "url": "https://punchng.com/yobe-airport-bailout-money-badly-spent/",
       "source": "The Punch",
@@ -910,5 +935,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-27 18:44:21"
+  "generated": "2026-10-27 21:16:50"
 }
