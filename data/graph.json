@@ -133,14 +133,56 @@
       "risk": "Low"
     },
     {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa6306528d39",
+      "label": "Nigerian Ports Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "22e91132d957",
+      "label": "Presidency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },
     {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7dc08a8ebfaa",
       "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4318c4c9c3f1",
+      "label": "Nigeria Security and Civil Defence Corps",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "956df12f4b75",
+      "label": "Sokoto State House of Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -169,20 +217,8 @@
       "risk": "Low"
     },
     {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -201,42 +237,6 @@
     {
       "id": "283e1d4aa831",
       "label": "All Progressives Congress",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dc806bf0f048",
-      "label": "Pan Niger Delta Forum",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "22e91132d957",
-      "label": "Presidency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7f50eb5ca259",
-      "label": "Yobe State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "19e301887487",
-      "label": "National Hajj Commission of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -577,14 +577,20 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "58e21ffa68da",
       "label": "Katsina State Government",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
+      "id": "7f50eb5ca259",
+      "label": "Yobe State Government",
       "type": "company",
       "risk": "Low"
     },
@@ -609,12 +615,6 @@
     {
       "id": "e1894ded2ce6",
       "label": "Federal Government of Nigeria / Benue State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -675,12 +675,6 @@
     {
       "id": "02bcb5f5a7b4",
       "label": "Jigawa State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "88ddee7fc08f",
-      "label": "Gombe State Government",
       "type": "agency",
       "risk": "Low"
     }
@@ -885,6 +879,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "571c83be7b42",
       "from": "334c4a4c42fd",
       "to": "58e21ffa68da",
@@ -924,12 +924,6 @@
       "id": "9eaaba6423cf",
       "from": "334c4a4c42fd",
       "to": "a75518830b0f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
     {
@@ -978,12 +972,6 @@
       "id": "6b1d699c5d81",
       "from": "334c4a4c42fd",
       "to": "02bcb5f5a7b4",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "d3dec1815180",
-      "from": "334c4a4c42fd",
-      "to": "88ddee7fc08f",
       "label": "Contract Awardee"
     }
   ]

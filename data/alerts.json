@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-28",
+      "title": "Niger Miners\u2019 Saga: NSCDC death cell cleaned to destroy evidence, probe panel member says - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUWlSdTZVMHR1V29yakRpUERNRXE5SERmMFpPQld5MFFCb1JyUlJJRWF6ZHJpa2RyUnFLMU9vSkI2OV9CSkZhZXNnRWd0OV8wUFY0QXhaRHlMeE05aC0wZ3FySmJFMEQ5ZEJ2UENJRkh2b3hGbDM1RlZqanVNeDduRkNEdGV1Z0x2SHdfRlZuVk5WTFJ2OUcwR0xwSXhxalBCYlZRaEtnY2M0TDVWeGR2Vl9KYWhPUUhXSGY0U0cxdzNhV3QxNjFIcGtGV0l1OVBsemtQOFQzSERqZTVFZGJlRHc1R0p3TDA?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 65,
+      "risk_level": "High",
+      "entities": [
+        "Nigeria Security and Civil Defence Corps"
+      ]
+    },
+    {
       "date": "2026-10-27",
       "title": "How companies disbursed Kogi LG funds through \u2018in-and-out\u2019 paper transactions - EFCC investigator - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNak1pWTRqbkEzd1lnUGE3dDFhRkVKSndvRDVMTFFIWVhnQU96OHFTU2xTVEtLa1RCS05IOHByR1hZNVM0Ql95SjhkLVVOZVNhNjJVYjkza2ZYcWdoanoxcHR4Nl8xY3dLUmx3OUM1T1ozcVM0cEZXYjhLaE1EUk52M0Z6TDJTSnpZbGtham1vSVg3R3VwM2NJbVlpOHR6NTktMFZMalJ2dXFYemFzTnNIM3NSdWtUOE5uSUZTM2l1ZWFHSVZKUEdzOTd0VklDUUgxaWZGdmRXdkdvTExaZ190RFJsaUw?oc=5",
@@ -935,5 +946,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-28 02:10:41"
+  "generated": "2026-10-28 13:53:51"
 }

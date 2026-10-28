@@ -2,21 +2,21 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 944,
-      "mentions": 1572,
+      "companies": 942,
+      "mentions": 1570,
       "risk": {
-        "Low": 834,
+        "Low": 833,
         "Critical": 57,
-        "Medium": 30,
+        "Medium": 29,
         "High": 23
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 42,
-      "mentions": 222,
+      "companies": 43,
+      "mentions": 224,
       "risk": {
-        "Medium": 13,
+        "Medium": 14,
         "Low": 24,
         "Critical": 1,
         "High": 4
@@ -419,6 +419,14 @@
     },
     {
       "industry": "Tobacco",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Trade and Commerce",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -858,5 +866,5 @@
       }
     }
   ],
-  "generated": "2026-10-28 02:10:41"
+  "generated": "2026-10-28 13:53:51"
 }
