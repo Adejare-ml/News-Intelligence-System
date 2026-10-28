@@ -1,28 +1,34 @@
 {
   "window_days": 7,
-  "recent_articles": 195,
-  "previous_articles": 203,
+  "recent_articles": 182,
+  "previous_articles": 215,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 16,
-      "previous": 5,
-      "change": 11
+      "recent": 17,
+      "previous": 4,
+      "change": 13
     },
     {
       "term": "reps",
-      "recent": 14,
+      "recent": 15,
       "previous": 7,
+      "change": 8
+    },
+    {
+      "term": "court",
+      "recent": 15,
+      "previous": 8,
+      "change": 7
+    },
+    {
+      "term": "senate",
+      "recent": 9,
+      "previous": 2,
       "change": 7
     },
     {
       "term": "appoints",
-      "recent": 8,
-      "previous": 2,
-      "change": 6
-    },
-    {
-      "term": "senate",
       "recent": 8,
       "previous": 2,
       "change": 6
@@ -34,19 +40,13 @@
       "change": 6
     },
     {
-      "term": "police",
-      "recent": 7,
-      "previous": 2,
+      "term": "witness",
+      "recent": 8,
+      "previous": 3,
       "change": 5
     },
     {
       "term": "campaign",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "four",
       "recent": 6,
       "previous": 1,
       "change": 5
@@ -58,7 +58,7 @@
       "change": 5
     },
     {
-      "term": "tinubu appoints",
+      "term": "panel",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -67,24 +67,36 @@
   "falling": [
     {
       "term": "lagos",
-      "recent": 4,
-      "previous": 11,
+      "recent": 3,
+      "previous": 12,
+      "change": -9
+    },
+    {
+      "term": "oil",
+      "recent": 3,
+      "previous": 10,
       "change": -7
     },
     {
-      "term": "probe",
-      "recent": 2,
-      "previous": 9,
-      "change": -7
-    },
-    {
-      "term": "imf",
+      "term": "warns",
       "recent": 1,
       "previous": 8,
       "change": -7
     },
     {
-      "term": "warns",
+      "term": "revenue",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "probe",
+      "recent": 3,
+      "previous": 9,
+      "change": -6
+    },
+    {
+      "term": "targets",
       "recent": 2,
       "previous": 8,
       "change": -6
@@ -96,58 +108,46 @@
       "change": -6
     },
     {
-      "term": "subsidy",
-      "recent": 0,
+      "term": "approves",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "ministry",
+      "recent": 1,
       "previous": 6,
-      "change": -6
-    },
-    {
-      "term": "efcc",
-      "recent": 10,
-      "previous": 15,
       "change": -5
     },
     {
-      "term": "oil",
-      "recent": 4,
-      "previous": 9,
-      "change": -5
-    },
-    {
-      "term": "business",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "nlng",
-      "recent": 0,
-      "previous": 5,
+      "term": "ncc",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 131,
-      "previous": 141
+      "recent": 123,
+      "previous": 152
     },
     {
       "category": "Legal",
-      "recent": 34,
-      "previous": 34
+      "recent": 33,
+      "previous": 33
     },
     {
       "category": "Company",
-      "recent": 25,
-      "previous": 28
+      "recent": 22,
+      "previous": 29
     },
     {
       "category": "Other",
-      "recent": 5,
-      "previous": 0
+      "recent": 4,
+      "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-10-28 02:10:40"
+  "generated": "2026-10-28 13:53:49"
 }
