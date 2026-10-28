@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 99,
+      "total_mentions": 100,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 9,
-          "avg_risk": 18.9,
+          "mentions": 10,
+          "avg_risk": 19.0,
           "max_risk": 30
         }
       ]
@@ -107,7 +107,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 77,
+      "total_mentions": 78,
       "points": [
         {
           "week": "2026-09-07",
@@ -153,8 +153,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 10,
-          "avg_risk": 68.0,
+          "mentions": 11,
+          "avg_risk": 68.6,
           "max_risk": 85
         }
       ]
@@ -1220,6 +1220,31 @@
       ]
     },
     {
+      "key": "bureau of public procurement",
+      "label": "Bureau of Public Procurement",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 3,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -1422,31 +1447,6 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "bureau of public procurement",
-      "label": "Bureau of Public Procurement",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 25.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4275,6 +4275,25 @@
       ]
     },
     {
+      "key": "revenue service",
+      "label": "Nigeria Revenue Service",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "security and civil defence corps",
       "label": "Nigeria Security and Civil Defence Corps",
       "total_mentions": 2,
@@ -4590,6 +4609,25 @@
           "mentions": 2,
           "avg_risk": 52.5,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "sirika",
+      "label": "Sirika",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
         }
       ]
     },
@@ -5240,6 +5278,19 @@
       ]
     },
     {
+      "key": "african union",
+      "label": "African Union",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "african university of science and technology",
       "label": "African University of Science and Technology",
       "total_mentions": 1,
@@ -5810,46 +5861,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "cash transfer office",
-      "label": "Cash Transfer Office",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "centre for journalism innovation and development",
-      "label": "Centre for Journalism Innovation and Development",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "centre for the promotion of private enterprise",
-      "label": "Centre for the Promotion of Private Enterprise",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-28 18:44:14"
+  "generated": "2026-10-28 21:37:21"
 }
