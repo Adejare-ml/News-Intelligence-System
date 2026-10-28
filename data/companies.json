@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 97,
-    "Last Seen": "2026-10-27 12:58",
+    "Mention Count": 98,
+    "Last Seen": "2026-10-28 18:39",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -6953,8 +6953,8 @@
   },
   {
     "Company": "PwC",
-    "Mention Count": 3,
-    "Last Seen": "2026-10-22 17:50",
+    "Mention Count": 4,
+    "Last Seen": "2026-10-28 18:38",
     "Industry": "Professional Services",
     "Risk Level": "Low",
     "First Seen": ""
@@ -7249,11 +7249,11 @@
   },
   {
     "Company": "Fidelity Bank plc",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-24 13:52",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-10-28 18:38",
+    "Industry": "Banking",
     "Risk Level": "Low",
-    "First Seen": ""
+    "First Seen": "2026-09-17 01:16"
   },
   {
     "Company": "DrugStoc",
@@ -9726,5 +9726,37 @@
     "Industry": "Education",
     "Risk Level": "Low",
     "First Seen": "2026-10-28 02:06"
+  },
+  {
+    "Company": "MultiChoice",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-28 18:37",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-28 18:37"
+  },
+  {
+    "Company": "Eni SpA",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-28 18:40",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-28 18:40"
+  },
+  {
+    "Company": "Agip Energy and Natural Resources Ltd",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-28 18:40",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-28 18:40"
+  },
+  {
+    "Company": "Sterling",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-28 18:40",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-28 18:40"
   }
 ]

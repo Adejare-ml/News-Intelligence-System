@@ -1,32 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-28 13:51:33 (UTC)
-**Run Window:** 2026-10-28, all runs to 13:51 (run 2 of the day)
+**Generated on:** 2026-10-28 18:41:15 (UTC)
+**Run Window:** 2026-10-28, all runs to 18:41 (run 3 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 20
+- **Total Articles Processed:** 31
 - **High Risk Signals:** 1
 - **Appointments Logged:** 2
 - **Procurement Awards:** 1
 
 ---
 
-**Report Date:** 2026‑10‑28 – **Coverage:** All articles published on 2026‑10‑28 up to 13:51 (run 2 of the day)
+# Executive Summary – 2026‑10‑28  
+**Period Covered:** 2026‑10‑28 up to 18:41 (run 3 of the day)  
 
-### Key Developments
-- Nestoil has paid an additional $40 million to its lenders following an Economic and Financial Crimes Commission intervention. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbFR1ZFlYSTkxRUdNRkk0cWhDTDlSQ1hyZmMxWUhmTFNSenNyc1JlSG1BUWM5N2xOblVzSnY3Z1Y4ZWk5ejhZX09aYlZEYWZfRlBjLVNtR2MyY3IxUkVsQmNUSW12Y29ySGVTb2h2MGY5WkFMUFYxRjFSTkowN0ZOeGdZSVdUYlNEd1ZvbEY3d0RYTm1aZXRuaEp4Q2F5b1BEWndwLW1Oc2FvN0lLbFJBZWlVTGVLWFRlMmxacnVxZEZtdw?oc=5))  
-- President Tinubu is seeking Senate approval for $20.5 billion of new external loans and €1.05 billion, signalling large sovereign borrowing. ([Nigeria Communications Week](https://news.google.com/rss/articles/CBMirwFBVV95cUxNZGFIdXF3YjJBaXdYdHlFcERIaVdSUnM1cFRSWUU5RWxmVG9LZEtKN0pTamxKbG1zUTJ0X294SnZTNlpmaXBhTGpPU2dETjdRcy1uMmNlVkNJRlBtQzg1MUdUZU51azBRSzFIVmd6QjFrMVdIeTF6RGV1TjVMWWtxWG9CekE3TlNRTjFHODdadWNmM3VuZzg4aXdINHQ0S2JnNGZOQnB2TGswRVFLS1Rr?oc=5))  
+## Key Developments
+- MultiChoice announces continent‑wide restructuring of its DStv subscription model, affecting satellite TV services across Africa. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2AFBVV95cUxQa0FwX3hFdV9ick01ZDRZdjFZRFAzcHRkVEM3azVDbmIzTlNzWWZObnRDaG1nWnlGM2VFaFV5dHZZeFZKU1cyU29WVFJNTmdpUmhEeGRXS3lWcjh0WlIwY2dZcXlRbTlRZ0NiVjl5Nm5mT1d5LWR5X0FtOTVyZlJjcVJZQzRQaGJYQjl2eTBPbWJ4cnEwUGRESzFZOFp2VFEydzRmWmRKSEwyV003NFZZaDNxbVVPZTJZZjdUc09jdDRfWGpXaHN1SWJpUXQ3WDJTVGtNYXp0T1k?oc=5))  
+- Bureau of Public Procurement (BPP) and the National Regulatory System (NRS) launch a drive to rewrite procurement laws to curb waste of public funds. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMingFBVV95cUxOeVBocTdsajd4bzh3dzlma1ZTeHc3VWcySExmeTlqTkdBZmZ4S1pkSXJ3QU5NZVE0dzBUeFFvYkpTYjFXaUFGdDctYTdMOEtJa2hoTjdfdEJnam45QVlXZW93ZEdpQlZ5RS12dmxGZ3B5bWpIc0RCMDJUeGhKVk9qbUZ0SE5wTm9lWl9JQzVBZFd6VkhyV3pZVXUwSWg4Zw?oc=5))  
+- Central Bank of Nigeria (CBN) introduces new payment rules that are expected to increase operational costs and reshape the fintech market. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilgFBVV95cUxOdjhEMDJGNlhfbkZiQ0RfaVBtUWNjdDg3dk9sV1huMHdRRjI0MUMyeC1YbktwVlRMZUVhNWVvY0FiaHpmTXdPWXRjWGhET0l3VG8zSURlaDhkMk9DNTRJcE5uUWUwbm1VWkNhQkQ0QkFjSVVVNzZPemFORE9PS0ZlaEhvUlpaZzM4R1BaLXdqd29LbmN4VXc?oc=5))  
+- Nigerian National Petroleum Company (NNPC) commits to oil exploration in Borno’s Lake Chad Basin. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVTFWNHpmTU0tMWE2ZVhMSzdlekxydkh6UkpJdHE3OG9mYkI3R0MtLWFnVFYydElpakdPa2ZWQUMwRGlQeW5zbWlpc0QyTG9Ea0d3X1hkcmJWNkpWV0FPT2czVUx5MHI5MzVhVFNpRjdvai1oMGNUcDdyRWhISktKX09JLWVVNUhjbnNN?oc=5))  
+- Italian oil giant Eni exits Nigeria’s onshore upstream sector, selling Agip Energy and Natural Resources Ltd to local company Sterling. ([Rigzone](https://www.rigzone.com/news/eni_exits_nigerias_onshore_upstream_sector-27-oct-2026-184942-article/))  
+- Nigerian government inaugurates a $100 million gas pipeline project in the South‑East region. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMitAFBVV95cUxNVnNIVEVFeHQ1dUtJN3E0RFUxVWVaWDExVjlTV3lsWG9LajZoUEhqQWVmWXJUYi0tbHZXM1VVam8yd3RHWWk5TGt5UThjelhCZk0xNk9CTk1RTEVDeE1ZTnctZlczYXVCb0hsTkwwenRSN0hBaFgxb1VYMUxQaXNfNU5BeHljWGFaelR1UjN2OW1qNzR6YThLRXYyWDdHSFBjNGs4NnJkV0tWZEVfV3dnQkxldHQ?oc=5))  
 
-### High‑Risk Alerts
-- **Niger miners saga probe**: 65/High risk score; allegations of evidence tampering by NSCDC point to systemic corruption. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUWlSdTZVMHR1V29yakRpUERNRXE5SERmMFpPQld5MFFCb1JyUlJJRWF6ZHJpa2RyUnFLMU9vSkI2OV9CSkZhZXNnRWd0OV8wUFY0QXhaRHlMeE05aC0wZ3FySmJFMEQ5ZEJ2UENJRkh2b3hGbDM1RlZqanVNeDduRkNEdGV1Z0x2SHdfRlZuVk5WTFJ2OUcwR0xwSXhxalBCYlZRaEtnY2M0TDVWeGR2Vl9KYWhPUUhXSGY0U0cxdzNhV3QxNjFIcGtGV0l1OVBsemtQOFQzSERqZTVFZGJlRHc1R0p3TDA?oc=5))  
+## High‑Risk Alerts
 
-### Beneficial Ownership & PSC Disclosures
-N/A – No significant‑control or PSC data provided in the coverage period.
+## Beneficial Ownership & PSC Disclosures
+No PSC or beneficial‑ownership disclosures appear in the current dataset.
 
-### Procurement & Board Changes
-- Government approval of a $100 million south‑eastern gas pipeline procurement. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMitAFBVV95cUxNVnNIVEVFeHQ1dUtJN3E0RFUxVWVaWDExVjlTV3lsWG9LajZoUEhqQWVmWXJUYi0tbHZXM1VVam8yd3RHWWk5TGt5UThjelhCZk0xNk9CTk1RTEVDeE1ZTnctZlczYXVCb0hsTkwwenRSN0hBaFgxb1VYMUxQaXNfNU5BeHljWGFaelR1UjN2OW1qNzR6YThLRXYyWDdHSFBjNGs4NnJkV0tWZEVfV3dnQkxldHQ?oc=5))  
-- NPA’s plan to coordinate port operations and enhance yard capacity to curb congestion. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXA1MktkaWpUMEwwZm9aYmFXd2w5ODhHQjZrOEJCcGxxNGhPN1ZwLVpXdGs1RjlhUlFqbUR0TC1jd0RWXzB6SVFkM0FKYmZzcUw3MlgtRjFnYlo5YXVCbVUxMU5kWFptVWdZX3BLYmxOTUJSenozaVlQSUhDZ0lDcVcwVFE0c291QnZRcl9DR2VwbjdnNDJoTWJpYnlQQ2ZEdFAxWm5NZXVIWkFaUmlpQzhqZXk3M01mU1R0MA?oc=5))  
-- Sokoto State Assembly’s approval of a state police force, reflecting local security governance changes. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMirgFBVV95cUxPX0hkNmE2QzVJYm1Ca2lSOGEwMGFmQ3lnSzh1eDlPUFRZZFluaVZHcWZ4ZWdqTFJsR2pLa04yeklHSmx0LXBKSUVJTERMRGsxV0cwUUoxYWpWR3RmR2tHTEk0STVIcXdtdWNFYWM5MkVzTmJVOXNDWHIzSHRQWlRFNkZ5M0VMVWF0ZW92bmh2VzJKZjdaMlN6M3VDYS1UQmhCUk5uamZaLXJVa3ZBdUE?oc=5))  
-- NITDA‑NACCIMA partnership to support startup investment and market access, signalling policy‑level support for techentrepreneurs. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimwFBVV95cUxNa0tzUWVnTkRNWVVPdERMWEl3V1ZBbVJZRllJNTdRcWxNajFCNjlIb09UTjFNZmw5UlU2T194UUdzODhIRDV5Qm8tOG9Ud2l3MnpuSUstcm1FUDRWQVJZc2ZjelRaSFl4NnQ1eTFoMDRFdUtTTUhaMV80elZ0ZFhUZXl0Nzd5dkgwZDRMYzdGM1hsRVdpYjBGVVRoaw?oc=5))  
+## Procurement & Board Changes
+No new procurement policy adjustments or board‑member shifts are reported in the coverage period.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

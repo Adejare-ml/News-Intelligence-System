@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 942,
-      "mentions": 1570,
+      "companies": 941,
+      "mentions": 1568,
       "risk": {
-        "Low": 833,
+        "Low": 832,
         "Critical": 57,
         "Medium": 29,
         "High": 23
@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 43,
-      "mentions": 224,
+      "companies": 46,
+      "mentions": 228,
       "risk": {
-        "Medium": 14,
+        "Medium": 17,
         "Low": 24,
         "Critical": 1,
         "High": 4
@@ -24,19 +24,19 @@
     },
     {
       "industry": "Banking",
-      "companies": 25,
-      "mentions": 70,
+      "companies": 26,
+      "mentions": 73,
       "risk": {
-        "Low": 19,
+        "Low": 20,
         "Medium": 6
       }
     },
     {
       "industry": "Telecoms",
-      "companies": 9,
-      "mentions": 51,
+      "companies": 10,
+      "mentions": 52,
       "risk": {
-        "Low": 8,
+        "Low": 9,
         "Medium": 1
       }
     },
@@ -199,6 +199,14 @@
       }
     },
     {
+      "industry": "Professional Services",
+      "companies": 3,
+      "mentions": 6,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Beverages",
       "companies": 5,
       "mentions": 5,
@@ -233,14 +241,6 @@
     },
     {
       "industry": "Pharmaceuticals",
-      "companies": 3,
-      "mentions": 5,
-      "risk": {
-        "Low": 3
-      }
-    },
-    {
-      "industry": "Professional Services",
       "companies": 3,
       "mentions": 5,
       "risk": {
@@ -866,5 +866,5 @@
       }
     }
   ],
-  "generated": "2026-10-28 13:53:51"
+  "generated": "2026-10-28 18:44:14"
 }

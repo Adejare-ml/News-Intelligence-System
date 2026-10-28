@@ -1,7 +1,7 @@
 {
   "window_days": 7,
   "recent_articles": 182,
-  "previous_articles": 215,
+  "previous_articles": 213,
   "rising": [
     {
       "term": "tinubu",
@@ -10,9 +10,9 @@
       "change": 13
     },
     {
-      "term": "reps",
-      "recent": 15,
-      "previous": 7,
+      "term": "appoints",
+      "recent": 8,
+      "previous": 0,
       "change": 8
     },
     {
@@ -28,21 +28,15 @@
       "change": 7
     },
     {
-      "term": "appoints",
+      "term": "witness",
       "recent": 8,
       "previous": 2,
       "change": 6
     },
     {
-      "term": "unveils",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
-    },
-    {
-      "term": "witness",
-      "recent": 8,
-      "previous": 3,
+      "term": "reps",
+      "recent": 14,
+      "previous": 9,
       "change": 5
     },
     {
@@ -52,13 +46,19 @@
       "change": 5
     },
     {
-      "term": "governing",
+      "term": "unveils",
+      "recent": 6,
+      "previous": 1,
+      "change": 5
+    },
+    {
+      "term": "board",
       "recent": 5,
       "previous": 0,
       "change": 5
     },
     {
-      "term": "panel",
+      "term": "governing",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -67,15 +67,9 @@
   "falling": [
     {
       "term": "lagos",
-      "recent": 3,
-      "previous": 12,
-      "change": -9
-    },
-    {
-      "term": "oil",
-      "recent": 3,
-      "previous": 10,
-      "change": -7
+      "recent": 2,
+      "previous": 13,
+      "change": -11
     },
     {
       "term": "warns",
@@ -84,10 +78,10 @@
       "change": -7
     },
     {
-      "term": "revenue",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
+      "term": "oil",
+      "recent": 4,
+      "previous": 10,
+      "change": -6
     },
     {
       "term": "probe",
@@ -99,6 +93,12 @@
       "term": "targets",
       "recent": 2,
       "previous": 8,
+      "change": -6
+    },
+    {
+      "term": "revenue",
+      "recent": 1,
+      "previous": 7,
       "change": -6
     },
     {
@@ -130,7 +130,7 @@
     {
       "category": "Government",
       "recent": 123,
-      "previous": 152
+      "previous": 151
     },
     {
       "category": "Legal",
@@ -139,15 +139,15 @@
     },
     {
       "category": "Company",
-      "recent": 22,
-      "previous": 29
+      "recent": 23,
+      "previous": 27
     },
     {
       "category": "Other",
-      "recent": 4,
-      "previous": 1
+      "recent": 3,
+      "previous": 2
     }
   ],
   "social": [],
-  "generated": "2026-10-28 13:53:49"
+  "generated": "2026-10-28 18:44:11"
 }
