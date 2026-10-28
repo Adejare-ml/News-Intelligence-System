@@ -34,6 +34,10 @@
       "label": "AMNI"
     },
     {
+      "key": "asset management corporation of",
+      "label": "Asset Management Corporation of Nigeria"
+    },
+    {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar"
     },
@@ -256,6 +260,10 @@
     {
       "key": "natural resource governance institute",
       "label": "Natural Resource Governance Institute"
+    },
+    {
+      "key": "ng eagle",
+      "label": "NG Eagle"
     },
     {
       "key": "office of the attorney general of the federation",
@@ -523,6 +531,16 @@
       "weight": 2
     },
     {
+      "a": "asset management corporation of",
+      "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
+      "a": "asset management corporation of",
+      "b": "ng eagle",
+      "weight": 2
+    },
+    {
       "a": "atiku abubakar",
       "b": "economic and financial crimes commission",
       "weight": 2
@@ -550,6 +568,11 @@
     {
       "a": "bola tinubu",
       "b": "federal government of",
+      "weight": 2
+    },
+    {
+      "a": "bola tinubu",
+      "b": "national petroleum company",
       "weight": 2
     },
     {
@@ -600,6 +623,11 @@
     {
       "a": "diezani alison madueke",
       "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
+      "a": "economic and financial crimes commission",
+      "b": "ng eagle",
       "weight": 2
     },
     {
@@ -778,5 +806,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-27 21:16:50"
+  "generated": "2026-10-28 02:10:41"
 }
