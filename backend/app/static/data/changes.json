@@ -1,17 +1,22 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Agip Energy and Natural Resources Ltd",
+    "Eni SpA",
+    "MultiChoice",
+    "Sterling"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 4,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-10-28 13:53:46"
+  "generated": "2026-10-28 18:44:08"
 }
