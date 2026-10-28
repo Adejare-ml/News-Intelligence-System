@@ -121,26 +121,50 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0cfa03e45d4d",
+      "label": "Kwara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4124c8b1ec79",
+      "label": "Asset Management Corporation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,39 +241,33 @@
       "risk": "Low"
     },
     {
-      "id": "a70f31de512b",
-      "label": "Ekiti State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "58e21ffa68da",
-      "label": "Katsina State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3e883c4859e6",
-      "label": "National Human Rights Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
       "risk": "Low"
     },
     {
+      "id": "e89885ad47bd",
+      "label": "Dakuku Peterside",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f3b85fb16f5b",
+      "label": "African University of Science and Technology",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "6ff5775e8631",
       "label": "Oyebanji",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "a70f31de512b",
+      "label": "Ekiti State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -439,18 +457,6 @@
       "risk": "Low"
     },
     {
-      "id": "14d70952866c",
-      "label": "Unnamed Ex-Kebbi First Lady",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c4bf546ac931",
-      "label": "Global Cancer Body",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "65c8c8afe47f",
       "label": "Thomas Ogungbangbe",
       "type": "psc",
@@ -571,6 +577,12 @@
       "risk": "Medium"
     },
     {
+      "id": "58e21ffa68da",
+      "label": "Katsina State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -679,6 +691,12 @@
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President"
+    },
+    {
+      "id": "4be093f8fc30",
+      "from": "e89885ad47bd",
+      "to": "f3b85fb16f5b",
+      "label": "Appointed as Director of African leadership legacy programme"
     },
     {
       "id": "b6c8fff20d98",
@@ -799,12 +817,6 @@
       "from": "26727e8d2493",
       "to": "f8df12550e3e",
       "label": "Appointed as Executive Leader"
-    },
-    {
-      "id": "1fd66623721e",
-      "from": "14d70952866c",
-      "to": "c4bf546ac931",
-      "label": "Appointed as Leader"
     },
     {
       "id": "a5e36b5f552f",
