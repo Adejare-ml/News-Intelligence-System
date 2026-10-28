@@ -187,6 +187,12 @@
       "risk": "Low"
     },
     {
+      "id": "3a855b071fef",
+      "label": "Nigeria Revenue Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a75518830b0f",
       "label": "National Information Technology Development Agency",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -255,6 +255,18 @@
     {
       "id": "f3b85fb16f5b",
       "label": "African University of Science and Technology",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "a1d99afd636d",
+      "label": "Sirika",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "68e4cf4ccc70",
+      "label": "Federal Ministry of Aviation (implied)",
       "type": "company",
       "risk": "Low"
     },
@@ -391,6 +403,12 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "f1f131ace5c4",
       "label": "Uba Sani",
       "type": "person",
@@ -453,18 +471,6 @@
     {
       "id": "9e4088ac2b55",
       "label": "APC Campaign Council",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "26727e8d2493",
-      "label": "Ismaila Babalola",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f8df12550e3e",
-      "label": "Lagos State Butchers Association",
       "type": "company",
       "risk": "Low"
     },
@@ -589,6 +595,12 @@
       "risk": "Medium"
     },
     {
+      "id": "8ad929872c06",
+      "label": "Federal Ministry of Aviation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -683,12 +695,6 @@
       "label": "Sapphital",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "02bcb5f5a7b4",
-      "label": "Jigawa State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -703,6 +709,12 @@
       "from": "e89885ad47bd",
       "to": "f3b85fb16f5b",
       "label": "Appointed as Director of African leadership legacy programme"
+    },
+    {
+      "id": "c78d57d0205a",
+      "from": "a1d99afd636d",
+      "to": "68e4cf4ccc70",
+      "label": "Appointed as Former Minister"
     },
     {
       "id": "b6c8fff20d98",
@@ -819,12 +831,6 @@
       "label": "Appointed as Director"
     },
     {
-      "id": "cb99ade28e7f",
-      "from": "26727e8d2493",
-      "to": "f8df12550e3e",
-      "label": "Appointed as Executive Leader"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -889,6 +895,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "51b6ffa966e8",
+      "from": "334c4a4c42fd",
+      "to": "8ad929872c06",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
@@ -978,12 +990,6 @@
       "id": "094eb630c81d",
       "from": "5a0a05b0f09c",
       "to": "8aeb2e3bdb2c",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "6b1d699c5d81",
-      "from": "334c4a4c42fd",
-      "to": "02bcb5f5a7b4",
       "label": "Contract Awardee"
     }
   ]

@@ -1,13 +1,13 @@
 {
   "window_days": 7,
   "recent_articles": 182,
-  "previous_articles": 213,
+  "previous_articles": 211,
   "rising": [
     {
       "term": "tinubu",
       "recent": 17,
-      "previous": 4,
-      "change": 13
+      "previous": 3,
+      "change": 14
     },
     {
       "term": "appoints",
@@ -16,27 +16,21 @@
       "change": 8
     },
     {
-      "term": "court",
-      "recent": 15,
-      "previous": 8,
-      "change": 7
-    },
-    {
-      "term": "senate",
-      "recent": 9,
-      "previous": 2,
-      "change": 7
-    },
-    {
       "term": "witness",
       "recent": 8,
       "previous": 2,
       "change": 6
     },
     {
-      "term": "reps",
+      "term": "court",
       "recent": 14,
       "previous": 9,
+      "change": 5
+    },
+    {
+      "term": "senate",
+      "recent": 8,
+      "previous": 3,
       "change": 5
     },
     {
@@ -62,14 +56,20 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "panel",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
       "term": "lagos",
       "recent": 2,
-      "previous": 13,
-      "change": -11
+      "previous": 12,
+      "change": -10
     },
     {
       "term": "warns",
@@ -108,9 +108,9 @@
       "change": -6
     },
     {
-      "term": "approves",
-      "recent": 3,
-      "previous": 8,
+      "term": "nigeria\u2019s",
+      "recent": 9,
+      "previous": 14,
       "change": -5
     },
     {
@@ -129,13 +129,13 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 123,
-      "previous": 151
+      "recent": 124,
+      "previous": 148
     },
     {
       "category": "Legal",
-      "recent": 33,
-      "previous": 33
+      "recent": 32,
+      "previous": 34
     },
     {
       "category": "Company",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-28 18:44:11"
+  "generated": "2026-10-28 21:37:20"
 }
