@@ -190,6 +190,14 @@
       }
     },
     {
+      "name": "Federal Ministry of Aviation",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 1500000000.0
+      }
+    },
+    {
       "name": "PFIPC",
       "contracts": 3,
       "undisclosed": 0,
@@ -702,10 +710,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 133,
+      "contracts": 134,
       "undisclosed": 82,
       "totals": {
-        "NGN": 20783214090000.0,
+        "NGN": 20784714090000.0,
         "USD": 47907540000.0
       }
     },
@@ -1202,5 +1210,5 @@
       }
     }
   ],
-  "generated": "2026-10-28 18:44:14"
+  "generated": "2026-10-28 21:37:21"
 }

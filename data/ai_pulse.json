@@ -1,64 +1,74 @@
 {
-  "generated": "2026-10-28 18:44:11",
+  "generated": "2026-10-28 21:37:19",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3507,
+      "likes": 3528,
       "downloads": 116770
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 1144,
+      "likes": 1149,
       "downloads": 14047
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 710,
+      "likes": 719,
       "downloads": 7412
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 844,
+      "likes": 851,
       "downloads": 8222
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 444,
+      "likes": 448,
       "downloads": 13247
     },
     {
       "id": "black-forest-labs/flux-3-image-klein-comfy",
       "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
       "task": "image-to-image",
-      "likes": 1937,
+      "likes": 1948,
       "downloads": 798943
     },
     {
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 430,
+      "likes": 431,
       "downloads": 1377570
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9685,
+      "likes": 9705,
       "downloads": 2234788
     }
   ],
   "papers": [
+    {
+      "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
+      "url": "https://huggingface.co/papers/2509.05512",
+      "upvotes": 0
+    },
+    {
+      "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+      "url": "https://huggingface.co/papers/2610.22684",
+      "upvotes": 1
+    },
     {
       "title": "Sub-monolayer tracking of molecular states at buried interfaces",
       "url": "https://huggingface.co/papers/2610.31924",
@@ -72,22 +82,12 @@
     {
       "title": "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models",
       "url": "https://huggingface.co/papers/2610.36192",
-      "upvotes": 8
+      "upvotes": 9
     },
     {
       "title": "What Outcome RL Buys: Finishing, Reliability, Rarely Reach",
       "url": "https://huggingface.co/papers/2610.34894",
-      "upvotes": 2
-    },
-    {
-      "title": "How Much Does the Hint Matter? Scope Conditions for Hindsight Self-Distillation in Financial Reasoning",
-      "url": "https://huggingface.co/papers/2610.36082",
-      "upvotes": 2
-    },
-    {
-      "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations",
-      "url": "https://huggingface.co/papers/2610.37364",
-      "upvotes": 10
+      "upvotes": 3
     }
   ]
 }
