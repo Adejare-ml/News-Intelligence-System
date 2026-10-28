@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 98,
+      "total_mentions": 99,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 8,
-          "avg_risk": 19.4,
+          "mentions": 9,
+          "avg_risk": 18.9,
           "max_risk": 30
         }
       ]
@@ -58,7 +58,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 91,
+      "total_mentions": 92,
       "points": [
         {
           "week": "2026-09-14",
@@ -98,8 +98,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 7,
-          "avg_risk": 30.7,
+          "mentions": 8,
+          "avg_risk": 29.4,
           "max_risk": 45
         }
       ]
@@ -107,7 +107,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 76,
+      "total_mentions": 77,
       "points": [
         {
           "week": "2026-09-07",
@@ -153,8 +153,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 9,
-          "avg_risk": 68.3,
+          "mentions": 10,
+          "avg_risk": 68.0,
           "max_risk": 85
         }
       ]
@@ -162,7 +162,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 56,
+      "total_mentions": 58,
       "points": [
         {
           "week": "2026-09-07",
@@ -208,8 +208,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 85.0,
+          "mentions": 3,
+          "avg_risk": 41.7,
           "max_risk": 85
         }
       ]
@@ -272,7 +272,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 25,
+      "total_mentions": 26,
       "points": [
         {
           "week": "2026-09-14",
@@ -306,9 +306,9 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 6,
-          "avg_risk": 20.8,
-          "max_risk": 40
+          "mentions": 7,
+          "avg_risk": 27.1,
+          "max_risk": 65
         }
       ]
     },
@@ -1426,6 +1426,31 @@
       ]
     },
     {
+      "key": "bureau of public procurement",
+      "label": "Bureau of Public Procurement",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 3,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dp world",
       "label": "DP World",
       "total_mentions": 5,
@@ -1804,25 +1829,6 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "bureau of public procurement",
-      "label": "Bureau of Public Procurement",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 25.0,
-          "max_risk": 40
         }
       ]
     },
@@ -2493,6 +2499,31 @@
         },
         {
           "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -3471,25 +3502,6 @@
       ]
     },
     {
-      "key": "delta state government",
-      "label": "Delta State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "development bank of",
       "label": "Development Bank of Nigeria",
       "total_mentions": 2,
@@ -3614,6 +3626,25 @@
           "mentions": 2,
           "avg_risk": 30.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "fidelity bank",
+      "label": "Fidelity Bank plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -4505,6 +4536,25 @@
       ]
     },
     {
+      "key": "pwc",
+      "label": "PwC",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "sunu assurances",
       "label": "SUNU Assurances",
       "total_mentions": 2,
@@ -5216,6 +5266,19 @@
       ]
     },
     {
+      "key": "agip energy and natural resources",
+      "label": "Agip Energy and Natural Resources Ltd",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "agro climatic resilience in semi arid landscapes",
       "label": "Agro-Climatic Resilience in Semi-Arid Landscapes",
       "total_mentions": 1,
@@ -5786,46 +5849,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "chams holdco",
-      "label": "Chams HoldCo",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "chartered institute of procurement and supply management of",
-      "label": "Chartered Institute of Procurement and Supply Management of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "chartered institute of project management",
-      "label": "Chartered Institute of Project Management Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
     }
   ],
-  "generated": "2026-10-28 13:53:51"
+  "generated": "2026-10-28 18:44:14"
 }
