@@ -45,10 +45,10 @@
     },
     {
       "name": "Akwa Ibom State Government",
-      "contracts": 5,
+      "contracts": 6,
       "undisclosed": 2,
       "totals": {
-        "NGN": 376630000000.0
+        "NGN": 376680000000.0
       }
     },
     {
@@ -146,6 +146,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 7580000000.0
+      }
+    },
+    {
+      "name": "Lagos State Government",
+      "contracts": 2,
+      "undisclosed": 1,
+      "totals": {
+        "NGN": 7450000000.0
       }
     },
     {
@@ -523,12 +531,6 @@
       "totals": {}
     },
     {
-      "name": "Lagos State Government",
-      "contracts": 1,
-      "undisclosed": 1,
-      "totals": {}
-    },
-    {
       "name": "Lagos State Security Trust Fund",
       "contracts": 1,
       "undisclosed": 1,
@@ -718,10 +720,10 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 136,
+      "contracts": 137,
       "undisclosed": 82,
       "totals": {
-        "NGN": 21461094090000.0,
+        "NGN": 21468544090000.0,
         "USD": 47907540000.0
       }
     },
@@ -803,6 +805,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 400000000.0
+      }
+    },
+    {
+      "name": "Youth Beneficiaries",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 50000000.0
       }
     },
     {
@@ -1224,5 +1234,5 @@
       }
     }
   ],
-  "generated": "2026-10-29 18:53:42"
+  "generated": "2026-10-29 21:39:15"
 }

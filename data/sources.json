@@ -2,37 +2,37 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2802,
-      "published": 1536,
-      "filtered": 1266,
+      "total": 2805,
+      "published": 1537,
+      "filtered": 1268,
       "accept_rate": 55,
       "avg_risk": 28.4,
       "engines": {
         "unknown": 963,
-        "ollama": 565,
+        "ollama": 566,
         "nvidia": 8
       },
       "last_seen": "2026-10-29"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2350,
-      "published": 968,
-      "filtered": 1382,
+      "total": 2354,
+      "published": 969,
+      "filtered": 1385,
       "accept_rate": 41,
       "avg_risk": 30.7,
       "engines": {
         "unknown": 440,
-        "ollama": 524,
+        "ollama": 525,
         "nvidia": 4
       },
       "last_seen": "2026-10-29"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1070,
+      "total": 1071,
       "published": 435,
-      "filtered": 635,
+      "filtered": 636,
       "accept_rate": 41,
       "avg_risk": 27.4,
       "engines": {
@@ -127,29 +127,29 @@
     },
     {
       "source": "leadership",
-      "total": 197,
+      "total": 198,
       "published": 49,
-      "filtered": 148,
+      "filtered": 149,
       "accept_rate": 25,
       "avg_risk": 23.6,
       "engines": {
         "unknown": 35,
         "ollama": 14
       },
-      "last_seen": "2026-10-28"
+      "last_seen": "2026-10-29"
     },
     {
       "source": "dailypost",
-      "total": 185,
+      "total": 186,
       "published": 45,
-      "filtered": 140,
+      "filtered": 141,
       "accept_rate": 24,
       "avg_risk": 26.1,
       "engines": {
         "unknown": 40,
         "ollama": 5
       },
-      "last_seen": "2026-10-26"
+      "last_seen": "2026-10-29"
     },
     {
       "source": "punchng",
@@ -360,14 +360,14 @@
     },
     {
       "source": "Voice of Nigeria",
-      "total": 25,
-      "published": 11,
+      "total": 26,
+      "published": 12,
       "filtered": 14,
-      "accept_rate": 44,
-      "avg_risk": 19.5,
+      "accept_rate": 46,
+      "avg_risk": 19.6,
       "engines": {
         "nvidia": 1,
-        "ollama": 10
+        "ollama": 11
       },
       "last_seen": "2026-10-29"
     },
@@ -1292,6 +1292,18 @@
       "avg_risk": null,
       "engines": {},
       "last_seen": "2026-09-13"
+    },
+    {
+      "source": "saharareporters",
+      "total": 2,
+      "published": 1,
+      "filtered": 1,
+      "accept_rate": 50,
+      "avg_risk": 65.0,
+      "engines": {
+        "ollama": 1
+      },
+      "last_seen": "2026-10-29"
     },
     {
       "source": "tdpelmedia",
@@ -2243,5 +2255,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-29 18:53:42"
+  "generated": "2026-10-29 21:39:15"
 }

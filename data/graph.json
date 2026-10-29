@@ -223,6 +223,12 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "beb91054dc85",
       "label": "Federal Capital Territory Administration",
       "type": "agency",
@@ -235,9 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "3a855b071fef",
-      "label": "Nigeria Revenue Service",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -280,12 +286,6 @@
       "id": "84cf3fb98281",
       "label": "Ministry of Solid Minerals Development",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -571,14 +571,20 @@
       "risk": "Medium"
     },
     {
-      "id": "36ac0a198e4e",
-      "label": "Humatrix",
+      "id": "334c4a4c42fd",
+      "label": "None",
       "type": "company",
       "risk": "Low"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
+      "id": "26e2ff8028c0",
+      "label": "Youth Beneficiaries",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "36ac0a198e4e",
+      "label": "Humatrix",
       "type": "company",
       "risk": "Low"
     },
@@ -629,21 +635,15 @@
       "label": "Kebbi State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "68419b78e6b4",
-      "label": "Ministry of Aviation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "84b6d6cbf896",
-      "label": "National Agency for Science and Engineering Infrastructure",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
     {
       "id": "a46d5d092b68",
       "from": "7a5d97d369d9",
@@ -673,12 +673,6 @@
       "from": "67b05664cea3",
       "to": "84cf3fb98281",
       "label": "Appointed as Minister of Solid Minerals Development"
-    },
-    {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
     },
     {
       "id": "4be093f8fc30",
@@ -843,6 +837,18 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "28b1db6062df",
+      "from": "334c4a4c42fd",
+      "to": "9aef00190386",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "c94e4c1b5c44",
+      "from": "26e2ff8028c0",
+      "to": "5a98eb23f6f5",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "0b3de92242bb",
       "from": "7f50eb5ca259",
       "to": "1613f8dac921",
@@ -924,18 +930,6 @@
       "id": "1a8ba2e01c37",
       "from": "334c4a4c42fd",
       "to": "1570ca89d4ee",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c1d603f082d4",
-      "from": "334c4a4c42fd",
-      "to": "68419b78e6b4",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "66bf53cd5347",
-      "from": "334c4a4c42fd",
-      "to": "84b6d6cbf896",
       "label": "Contract Awardee"
     }
   ]
