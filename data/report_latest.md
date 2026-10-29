@@ -1,35 +1,42 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-29 02:18:50 (UTC)
-**Run Window:** 2026-10-29, all runs to 02:18 (run 1 of the day)
+**Generated on:** 2026-10-29 14:00:17 (UTC)
+**Run Window:** 2026-10-29, all runs to 14:00 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 11
+- **Total Articles Processed:** 27
 - **High Risk Signals:** 0
-- **Appointments Logged:** 0
-- **Procurement Awards:** 1
+- **Appointments Logged:** 1
+- **Procurement Awards:** 2
 
 ---
 
-### Key Developments
-- Nigeria renews 2030 gas flaring pledge, yet gaps in methane monitoring and enforcement are highlighted. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi6wFBVV95cUxQOVVSVHRQU25maG1GQnpHT1ZUYTRMU3VxbkZ5czR2cmxoNmE3d2NTRnhWbktaRnBYUmlFMmpqajBDVDdnNFNabXRoZTFqc2lMMUtnbnNHcFJtcGZkSkNocHlmaUQ3T2VzNXBYWkoxeVFhSlFiZy1kbUNiSE1zdjlfZ2pxeG9uZmZFMzRUdjBTZXhieFNsLWROOUR5Mkt4bHVKaTcwMFZiN1lxa09BRktGQ2J1Y2pBYTkwR0dSZ3RHaElCb2NWeHJycEp1dlhnNXJROTlST0JMNTdjM3lfT1VKX1JqVzhTbjMzb0FV?oc=5))  
+**Report Date:** 2026‑10‑29  
+**Coverage:** All articles published on 2026‑10‑29 up to 14:00 (run 2 of the day)
 
+---
 
+## Key Developments
+- Central Bank reports that over 50 % of financial institutions are ready for data localisation, tightening domestic data‑storage rules. ([The Eagle Online](https://news.google.com/rss/articles/CBMirwFBVV95cUxON0NkMEtFc1Y3ME5oZEF0c1VNTEI1Z21LYU02eG5SQUh5VHB2WnF6UkhJN1BZZ2VYV2d5dFVWNmNMUUhfaXppOU1ObWltZGNqam5Xai10eDJYR3BJUmlpNHFtQ0VCcThYeWkyUG5abENvUVI0cVIzVkVReFF6emlJLWhVUjZxNHgzVG02S2N1U0FKT0VNTmFILWxRSjJrME1RYU4xaU9MN18tYUU4ZHBZ?oc=5))  
+- Federal Government moves to implement the Minimum Pension Guarantee, ending an 11‑year delay. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikAFBVV95cUxOa1l2N21kQ1VkRjZXbEVESWNRdnlNUjBHNDNKRHJhLTFLU0lvWU9DcDVlYTVWd1gwVW1iNHdLd3FzdjVVMHBMR2dzcWhJd3U2UUItbXNSTW51Ymt1MWRSWTdndl9HTVM5UHZiN1hWM19NWTdNQVdlSW5LS2xSam9RcFBpRGhEQ2N5aGQzbjZDUHc?oc=5))  
+- Delta State Governor signs five new bills and introduces a 13th‑month salary for state workers. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiogFBVV95cUxPLVVQbWJEMlAxZjd2WWp1Q01kNFl3THVMTGZsVUhja0VEMUxhQVR3dWF5S3BRQjhSY2JiMEtqVVRCZTk2YVNqa2JZaWIwR3hLS19TS0d3b00yWksxWGh3cWh3NnJ2OFZkei1KSUVmMlNGR1N0M1NOSGJXNXJtOWxwRW9UTmFha2pZT2lXU2Rxa0tubUgyM09Sc1hkYW5wYmZuTUE?oc=5))  
+- Nigerian government mandates enhanced cybersecurity for all Ministries, Departments and Agencies (MDAs). ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUl4VTBkZ0tsNm9EZDdpREJtb29ocDhReUpYaE9CZWxrNThCZTZzdTkzVkVaREpUNXpaUjdlYjBMRExmam5NcklCQmdQQk1xSzB0ejhfVjBEWlpNcld6Mlduc2tGNG43cktENTAwYjF4OWF2LXVvQ0NRMlAtVVhRd2ZoZk1ZTTNMdFFIZ3NtdU1BazBkeUkwZktn?oc=5))  
+- Nigeria Revenue Service launches a new tagline, “Inspiring Trust, Sustaining Growth,” to boost voluntary compliance. ([The Punch](https://punchng.com/taxpayers-are-focus-of-new-tagline-nrs/))  
 
-- Transcorp reports an 18 % drop in first‑nine‑month profit amid revenue shrinkage, impacting its conglomerate outlook. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZVZmTEQ0SnNnUXhIZmloTjV4MG9QU0k5YjJaOHRNZnphWU9PMnlpTWg1MmV0Rkp5anN0RkFWUjd0TjJaVHhLaTU3cGJjME5ZY1FHb2RCU3lJVDkyM04zSTEwc0pWRDBPN3dNTUpJUXRzeGxISGhIcVJySURWV1dZYUo5R1pkUEdMQmJIV1ZUUXlyR2VGWlJ0emQxNURmQXp5VXRZVV82a3hhUzJhNnBzSXRHaExKa0tMdG4wLTRtdHVjcU9nbmV6SQ?oc=5))  
+---
 
-- President Bola Tinubu to present the 2027 budget to the National Assembly in December, signaling upcoming fiscal priorities. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMitgFBVV95cUxOemVWUEJhaU53bFQ1RXlSUlN1VWxxMUNtN3hwdXRBX1BVWUN1Z3MySW5JcUF5Y1hxRTNsWE9RQW1adlZ3b01qd1FwdkxNR3RIVlZsaUdxd2VtM2I4cFVTcWVhN0pqX3FGM0VxMWNsZkZkaFNQMDlDLTNZT2ZfQlNZUHJ4Q0VVZnNrSXZIVE14eUtRR3FYN1VRTUFLcXZBQUEzSzF1dGJVQUN2TXY4LXktQ3B6YXdudw?oc=5))  
+## High Risk Alerts
 
-- Governor Zulum rejects relocation of NNPC exploration equipment from Borno, affecting oil‑infrastructure plans. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTTRIdm9hdFlUVlpKTDczejNCOXJKMERlbnBrRnQxSFJxTTFreFpOb3F3MEd1QkEyemE4MXdVWVBSQ3VCMHYxOEI2LXZNUGZUMko4VmE5MXFHMjUxOERzUXE0X0Y4U0ZpSFQzNzczNUNHTjhsdXFtWW0xeWxvYXRmTVc2WDVEMTBGc2NMOVV1LXRmNmd0dVkwNlJfS2EteHZTM19WMGo1aTZGbGJEMXota29TZkhPeFZqWDFqUEhVeENjczBvWVRESw?oc=5))  
+---
 
-### High Risk Alerts
+## Beneficial Ownership & PSC Disclosures
+No beneficial ownership or PSC disclosures were identified in this reporting period.
 
+---
 
-
-### Beneficial Ownership & PSC Disclosures
-No significant control or PSC disclosures were identified in the current reporting cycle.
-
-### Procurement & Board Changes
-- The FEC’s 663.3 billion Naira allocation for nine road projects represents the main procurement activity of the day. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxNdDAtcTQ3RG1pZzJUU3ZQV2ZrZlgwNXFtanh3RFl1RWFfT1ZmekNReWNrTWdwZTlWeTRxbzVSOG45QVdRMW5TSUt5UU9KeGlJYnowcUFLUmFQX3phV1A0Um9XaW12TlljWEtMVHJiYmZWZmlUYXNBemkyWkpvTVZ1Sl9zdzVNWFZmeEg0UF9pbkoxWnZTT004RTlQSGtqRDZsRlVxd1hKQlRXRkE4N21Od1d0dENMdVF3OUI4SmlRWUF1SlZs?oc=5))  
+## Procurement & Board Changes
+- N45.08 bn biosecurity contract awarded for major Nigerian airports. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiogFBVV95cUxPcTB4LS1pZTBUNnltWXFDSk05YkNuYlR2SnhQd2xsNEJnM3ZqTXhnN3FkemQtN2FxRGxVeGx3Rm00U2stS3AzdG5GZjRvajFjWW9jRUJldzBHVEN6NnJFOVk5Sy0wLWVzaVhfNzNaQXB5UWJHSWU5Sm15ZmVYcWdhczRwNU9aNVJTV0lrRHdZWEViaU1mWkJQazUzSHZ2R2VHNWc?oc=5))  
+- NGCc guarantees a total of N64.13 bn in loans to businesses and individuals. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi7wFBVV95cUxPSUkzZEF0RmVmUF9mOWp2bUI0Umg0cFEwMEo4Mmg0cnVlYlhFck9xZjY1TTJCZk1abzc5ZU5WTl92M3JBWUhTZEx4R0hHQWEwRmJpdFMwT0RmZGlGZlEzVkJuLTF3c3lETHdpOFhKeVVWaFJrNzAxUzJCT2dWRUM4ZWNMRzdLV3Z6LXh5d2lERFpheC1XMHBUM0R6c3NSRlV2T090YjQyNkVyaC1fcVdUX19tWWk2TXpmR0FFNU9nQzlodG5pZ3U3OVRzZ1J2UEdYQnFkaG9wY0NudHBNUlNxQVh2XzFHaGdQZm5Jc2c0SQ?oc=5))  
+- Ekiti State House of Assembly re‑appoints two former commissioners and opens ten special adviser slots. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi9AFBVV95cUxQczh1UEk4Y3Y4aTUwSmZORHpxTXFEWlBtMzB3cnd3dkdZRkFMOG9XZVk5VTNGR0paLWpMeDFpM1JydlhXQ0t5VnBiWXJMTWhiUDltc3VWLWxxRkVFeUo5YmJSSU9GQ2JqNnZMQjBEemRmNnpvWVdaLTJtOHJ2OUFpbk9kZmh0OEE4UHVPWFVlZEFjbE1wSlRGTzFsbnNZUHlJZFdIcFdTY2JaUWY3czVLUENWVTFidC1KNGVSa0lPem5Cdk1PeEI2ZzNEWnZ3ejdsdUVQQ3FaTGtnSXRMM2J1bkNKOXNVWlpaY0F3cjE2SFc3bWp6?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

@@ -97,6 +97,12 @@
       "risk": "Critical"
     },
     {
+      "id": "283e1d4aa831",
+      "label": "All Progressives Congress",
+      "type": "company",
+      "risk": "High"
+    },
+    {
       "id": "866686ab0fd6",
       "label": "Dangote Group",
       "type": "company",
@@ -115,12 +121,6 @@
       "risk": "Critical"
     },
     {
-      "id": "81dcb233ede4",
-      "label": "Tinubu",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -133,38 +133,20 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "71c59636e7a3",
-      "label": "Federal Executive Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bcf9d1e3fc55",
-      "label": "Nigerian Airspace Management Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "631735ae7f74",
+      "label": "Nigeria Police Force",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,14 +157,20 @@
       "risk": "Low"
     },
     {
-      "id": "fa6306528d39",
-      "label": "Nigerian Ports Authority",
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "22e91132d957",
-      "label": "Presidency",
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c89820f522",
+      "label": "Nigerian Navy",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,14 +187,8 @@
       "risk": "Low"
     },
     {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "95368915b67a",
-      "label": "Bureau of Public Procurement",
+      "id": "71c59636e7a3",
+      "label": "Federal Executive Council",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,8 +199,14 @@
       "risk": "Low"
     },
     {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
+      "id": "bcf9d1e3fc55",
+      "label": "Nigerian Airspace Management Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5ac1e4450b44",
+      "label": "National Health Insurance Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,15 +217,39 @@
       "risk": "Low"
     },
     {
-      "id": "0cfa03e45d4d",
-      "label": "Kwara State Government",
+      "id": "bfc1f02f682e",
+      "label": "Delta State Government",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "bfc1f02f682e",
-      "label": "Delta State Government",
+      "id": "81adceec0174",
+      "label": "Ekiti State House of Assembly",
       "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a0ca9428fbad",
+      "label": "Nigeria Credit Guarantee Corporation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7a5d97d369d9",
+      "label": "Uzodimma",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8d64c9ee9816",
+      "label": "Okorocha",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -321,12 +333,6 @@
     {
       "id": "00d9f6e47194",
       "label": "2027 Re-election Campaign",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "283e1d4aa831",
-      "label": "All Progressives Congress",
       "type": "company",
       "risk": "Low"
     },
@@ -441,24 +447,6 @@
     {
       "id": "737f70b3bdb8",
       "label": "Taraba State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5476ecdab0f0",
-      "label": "Ishaku",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7a8bece02efd",
-      "label": "Betta Edu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9e4088ac2b55",
-      "label": "APC Campaign Council",
       "type": "company",
       "risk": "Low"
     },
@@ -631,6 +619,12 @@
       "risk": "Low"
     },
     {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7ac5d6bb2121",
       "label": "Abia State Government",
       "type": "agency",
@@ -659,21 +653,21 @@
       "label": "Federal Ministry of Power",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "ef6dbf96f94e",
-      "label": "Ondo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ff7de7b79a06",
-      "label": "Unnamed tech firm",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "a46d5d092b68",
+      "from": "7a5d97d369d9",
+      "to": "283e1d4aa831",
+      "label": "Appointed as Senatorial Candidate"
+    },
+    {
+      "id": "41f0720f89d2",
+      "from": "8d64c9ee9816",
+      "to": "283e1d4aa831",
+      "label": "Appointed as Senatorial Candidate"
+    },
     {
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
@@ -795,18 +789,6 @@
       "label": "Appointed as Governor"
     },
     {
-      "id": "d926e4f83416",
-      "from": "5476ecdab0f0",
-      "to": "737f70b3bdb8",
-      "label": "Appointed as Former Governor"
-    },
-    {
-      "id": "9c1b3db2433f",
-      "from": "7a8bece02efd",
-      "to": "9e4088ac2b55",
-      "label": "Appointed as Director"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -873,6 +855,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "e185b6db0a0f",
       "from": "334c4a4c42fd",
       "to": "71c59636e7a3",
@@ -882,12 +870,6 @@
       "id": "51b6ffa966e8",
       "from": "334c4a4c42fd",
       "to": "8ad929872c06",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
     {
@@ -960,12 +942,6 @@
       "id": "d2ef7a3bb9d9",
       "from": "334c4a4c42fd",
       "to": "9b5f79697bc2",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "1c17064eccb8",
-      "from": "ff7de7b79a06",
-      "to": "ef6dbf96f94e",
       "label": "Contract Awardee"
     }
   ]
