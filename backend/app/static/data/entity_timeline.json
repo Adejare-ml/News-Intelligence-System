@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 101,
+      "total_mentions": 103,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 11,
-          "avg_risk": 19.1,
+          "mentions": 13,
+          "avg_risk": 19.2,
           "max_risk": 30
         }
       ]
@@ -162,7 +162,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 58,
+      "total_mentions": 61,
       "points": [
         {
           "week": "2026-09-07",
@@ -208,8 +208,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 41.7,
+          "mentions": 6,
+          "avg_risk": 30.8,
           "max_risk": 85
         }
       ]
@@ -217,7 +217,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 30,
+      "total_mentions": 31,
       "points": [
         {
           "week": "2026-09-07",
@@ -263,16 +263,16 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 4,
+          "avg_risk": 22.5,
+          "max_risk": 30
         }
       ]
     },
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-14",
@@ -306,8 +306,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 7,
-          "avg_risk": 27.1,
+          "mentions": 8,
+          "avg_risk": 29.4,
           "max_risk": 65
         }
       ]
@@ -462,7 +462,7 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-14",
@@ -492,6 +492,12 @@
           "week": "2026-10-19",
           "mentions": 4,
           "avg_risk": 23.8,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
           "max_risk": 45
         }
       ]
@@ -573,7 +579,7 @@
     {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 14,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-14",
@@ -607,9 +613,9 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
         }
       ]
     },
@@ -690,6 +696,43 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 26.2,
+          "max_risk": 45
         }
       ]
     },
@@ -974,43 +1017,6 @@
           "mentions": 2,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 25.0,
-          "max_risk": 45
         }
       ]
     },
@@ -1858,6 +1864,31 @@
       ]
     },
     {
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 4,
@@ -1922,6 +1953,31 @@
           "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "ekiti state house of assembly",
+      "label": "Ekiti State House of Assembly",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -2179,6 +2235,37 @@
       ]
     },
     {
+      "key": "police force",
+      "label": "Nigeria Police Force",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "army",
       "label": "Nigerian Army",
       "total_mentions": 4,
@@ -2219,6 +2306,37 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "navy",
+      "label": "Nigerian Navy",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 70.0,
+          "max_risk": 70
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -2525,31 +2643,6 @@
       ]
     },
     {
-      "key": "delta state government",
-      "label": "Delta State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "department of state services",
       "label": "Department of State Services",
       "total_mentions": 3,
@@ -2578,31 +2671,6 @@
           "mentions": 2,
           "avg_risk": 47.5,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "ekiti state house of assembly",
-      "label": "Ekiti State House of Assembly",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2936,6 +3004,25 @@
       ]
     },
     {
+      "key": "national health insurance authority",
+      "label": "National Health Insurance Authority",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national universities commission",
       "label": "National Universities Commission",
       "total_mentions": 3,
@@ -2999,27 +3086,40 @@
       ]
     },
     {
-      "key": "police force",
-      "label": "Nigeria Police Force",
+      "key": "revenue service",
+      "label": "Nigeria Revenue Service",
       "total_mentions": 3,
       "points": [
         {
           "week": "2026-09-21",
           "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "security and civil defence corps",
+      "label": "Nigeria Security and Civil Defence Corps",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
         },
         {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 55.0,
+          "max_risk": 65
         }
       ]
     },
@@ -3039,31 +3139,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "navy",
-      "label": "Nigerian Navy",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 70.0,
-          "max_risk": 70
         }
       ]
     },
@@ -3604,6 +3679,19 @@
       ]
     },
     {
+      "key": "federal executive council",
+      "label": "Federal Executive Council",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "federal ministry of finance",
       "label": "Federal Ministry of Finance",
       "total_mentions": 2,
@@ -4064,19 +4152,6 @@
       ]
     },
     {
-      "key": "national health insurance authority",
-      "label": "National Health Insurance Authority",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "national human rights commission",
       "label": "National Human Rights Commission",
       "total_mentions": 2,
@@ -4290,44 +4365,6 @@
           "mentions": 2,
           "avg_risk": 22.5,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "revenue service",
-      "label": "Nigeria Revenue Service",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "security and civil defence corps",
-      "label": "Nigeria Security and Civil Defence Corps",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
         }
       ]
     },
@@ -5860,20 +5897,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "cgc",
-      "label": "CGC Nigeria Limited",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
     }
   ],
-  "generated": "2026-10-29 02:23:06"
+  "generated": "2026-10-29 14:04:11"
 }
