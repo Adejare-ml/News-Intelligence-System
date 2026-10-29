@@ -70,21 +70,21 @@
       }
     },
     {
+      "industry": "Political Party",
+      "companies": 2,
+      "mentions": 14,
+      "risk": {
+        "High": 1,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 9,
       "mentions": 13,
       "risk": {
         "Medium": 3,
         "Low": 6
-      }
-    },
-    {
-      "industry": "Political Party",
-      "companies": 2,
-      "mentions": 13,
-      "risk": {
-        "High": 1,
-        "Medium": 1
       }
     },
     {
@@ -875,5 +875,5 @@
       }
     }
   ],
-  "generated": "2026-10-29 02:23:06"
+  "generated": "2026-10-29 14:04:11"
 }
