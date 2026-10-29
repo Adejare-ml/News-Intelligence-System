@@ -395,6 +395,11 @@
       "weight": 5
     },
     {
+      "a": "bola tinubu",
+      "b": "federal government of",
+      "weight": 4
+    },
+    {
       "a": "central bank of",
       "b": "olayemi cardoso",
       "weight": 4
@@ -432,11 +437,6 @@
     {
       "a": "airtel",
       "b": "mtn",
-      "weight": 3
-    },
-    {
-      "a": "bola tinubu",
-      "b": "federal government of",
       "weight": 3
     },
     {
@@ -815,5 +815,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-29 18:53:42"
+  "generated": "2026-10-29 21:39:15"
 }

@@ -1341,17 +1341,17 @@
     },
     {
       "date": "2026-10-29",
-      "runs": 3,
-      "articles": 47,
+      "runs": 4,
+      "articles": 51,
       "high_risk": 1,
       "appointments": 2,
-      "procurement": 4,
+      "procurement": 6,
       "cascade_failures": 0,
-      "candidates": 2562,
-      "rejected": 60,
+      "candidates": 3419,
+      "rejected": 69,
       "undated": 0,
-      "run_seconds": 635
+      "run_seconds": 714
     }
   ],
-  "generated": "2026-10-29 18:53:42"
+  "generated": "2026-10-29 21:39:15"
 }

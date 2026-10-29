@@ -1,19 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 203,
-  "previous_articles": 205,
+  "recent_articles": 201,
+  "previous_articles": 207,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 18,
+      "recent": 19,
       "previous": 4,
-      "change": 14
+      "change": 15
     },
     {
-      "term": "court",
-      "recent": 15,
-      "previous": 7,
-      "change": 8
+      "term": "reps",
+      "recent": 16,
+      "previous": 9,
+      "change": 7
     },
     {
       "term": "financial",
@@ -22,9 +22,9 @@
       "change": 7
     },
     {
-      "term": "reps",
-      "recent": 15,
-      "previous": 9,
+      "term": "court",
+      "recent": 14,
+      "previous": 8,
       "change": 6
     },
     {
@@ -40,15 +40,9 @@
       "change": 6
     },
     {
-      "term": "seeks",
-      "recent": 8,
-      "previous": 3,
-      "change": 5
-    },
-    {
-      "term": "campaign",
-      "recent": 6,
-      "previous": 1,
+      "term": "witness",
+      "recent": 7,
+      "previous": 2,
       "change": 5
     },
     {
@@ -62,9 +56,21 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "governing",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
+    {
+      "term": "fraud",
+      "recent": 5,
+      "previous": 12,
+      "change": -7
+    },
     {
       "term": "bill",
       "recent": 3,
@@ -76,12 +82,6 @@
       "recent": 0,
       "previous": 7,
       "change": -7
-    },
-    {
-      "term": "lagos",
-      "recent": 4,
-      "previous": 10,
-      "change": -6
     },
     {
       "term": "probe",
@@ -96,33 +96,33 @@
       "change": -6
     },
     {
+      "term": "nigeria\u2019s",
+      "recent": 7,
+      "previous": 12,
+      "change": -5
+    },
+    {
+      "term": "alleged",
+      "recent": 5,
+      "previous": 10,
+      "change": -5
+    },
+    {
+      "term": "lagos",
+      "recent": 5,
+      "previous": 10,
+      "change": -5
+    },
+    {
       "term": "assembly",
       "recent": 4,
       "previous": 9,
       "change": -5
     },
     {
-      "term": "targets",
-      "recent": 3,
-      "previous": 8,
-      "change": -5
-    },
-    {
       "term": "son",
       "recent": 2,
       "previous": 7,
-      "change": -5
-    },
-    {
-      "term": "abuja",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "investment",
-      "recent": 1,
-      "previous": 6,
       "change": -5
     }
   ],
@@ -134,8 +134,8 @@
     },
     {
       "category": "Legal",
-      "recent": 32,
-      "previous": 33
+      "recent": 30,
+      "previous": 35
     },
     {
       "category": "Company",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-29 18:53:40"
+  "generated": "2026-10-29 21:39:13"
 }
