@@ -46,6 +46,24 @@
       "previous_mentions": 11
     },
     {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 35.0,
+      "previous_avg": 17.5,
+      "delta": 17.5,
+      "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 24.0,
+      "previous_avg": 37.5,
+      "delta": -13.5,
+      "recent_mentions": 5,
+      "previous_mentions": 4
+    },
+    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "recent_avg": 51.2,
@@ -53,15 +71,6 @@
       "delta": 11.2,
       "recent_mentions": 4,
       "previous_mentions": 1
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 24.0,
-      "previous_avg": 34.0,
-      "delta": -10.0,
-      "recent_mentions": 5,
-      "previous_mentions": 5
     },
     {
       "key": "jpmorgan",
@@ -112,19 +121,10 @@
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 20.0,
-      "previous_avg": 14.2,
-      "delta": 5.8,
+      "previous_avg": 15.0,
+      "delta": 5.0,
       "recent_mentions": 3,
-      "previous_mentions": 6
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 62.9,
-      "previous_avg": 57.3,
-      "delta": 5.6,
-      "recent_mentions": 14,
-      "previous_mentions": 13
+      "previous_mentions": 5
     },
     {
       "key": "ekiti state house of assembly",
@@ -136,6 +136,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 62.7,
+      "previous_avg": 57.9,
+      "delta": 4.8,
+      "recent_mentions": 13,
+      "previous_mentions": 14
+    },
+    {
       "key": "house of representatives",
       "label": "House of Representatives",
       "recent_avg": 31.4,
@@ -143,6 +152,15 @@
       "delta": 3.5,
       "recent_mentions": 11,
       "previous_mentions": 7
+    },
+    {
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "recent_avg": 16.7,
+      "previous_avg": 20.0,
+      "delta": -3.3,
+      "recent_mentions": 3,
+      "previous_mentions": 1
     },
     {
       "key": "senate of",
@@ -161,26 +179,8 @@
       "delta": 3.0,
       "recent_mentions": 5,
       "previous_mentions": 2
-    },
-    {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "recent_avg": 17.5,
-      "previous_avg": 15.0,
-      "delta": 2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 17.5,
-      "delta": 2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-29 18:53:42"
+  "generated": "2026-10-29 21:39:15"
 }
