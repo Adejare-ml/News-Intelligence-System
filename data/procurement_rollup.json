@@ -52,6 +52,14 @@
       }
     },
     {
+      "name": "House of Representatives",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 100510000000.0
+      }
+    },
+    {
       "name": "Yobe State Government",
       "contracts": 1,
       "undisclosed": 0,
@@ -263,8 +271,8 @@
     },
     {
       "name": "Enugu State Government",
-      "contracts": 2,
-      "undisclosed": 0,
+      "contracts": 3,
+      "undisclosed": 1,
       "totals": {
         "USD": 200000000.0,
         "NGN": 2000000.0
@@ -719,10 +727,10 @@
     },
     {
       "name": "Yobe State Government",
-      "contracts": 2,
+      "contracts": 3,
       "undisclosed": 0,
       "totals": {
-        "NGN": 200500000000.0
+        "NGN": 301010000000.0
       }
     },
     {
@@ -998,6 +1006,12 @@
       "totals": {}
     },
     {
+      "name": "Humatrix",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Julius Berger",
       "contracts": 1,
       "undisclosed": 1,
@@ -1210,5 +1224,5 @@
       }
     }
   ],
-  "generated": "2026-10-29 14:04:11"
+  "generated": "2026-10-29 18:53:42"
 }
