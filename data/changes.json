@@ -1,20 +1,29 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Humatrix",
+    "Sterling Financial"
+  ],
   "new_people": [
-    "Okorocha",
-    "Uzodimma"
+    "Adeniyi Adeyemi",
+    "Dele Alake"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "How I paid money into ex-CCT chairman's wife's account, covered his children's school fees - Contractor - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTlBCUWRjNTA1YnlIMWxIOUhSS1BoVmUwaHo3M3prUjFIdDZfdndZX0pPN05DOXhRTzI3QjZBNFJfTTI3cTVyZ1ZhQzRfMUxNaFhYS0NOeFNnUm15VncySWIzaDM4S1ZsVWx6aHhuYm9IXzlvMDhZNElmS0RmYjBzdXFaTUdwXzV6b3dPZE91a1dZZTZGUHRldFM0VFRUUmdnN09GVDFTYk0yRHNaX29XZERmbnhoQlcyOV9SdFF5dVZLZHdWN1BoZFpDTXdEQWUzc0pHODBRcXdqNTVVS3JKQmlvRjJiTUhnY3c?oc=5",
+      "risk": 85.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 2,
     "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-29 14:04:07"
+  "generated": "2026-10-29 18:53:37"
 }

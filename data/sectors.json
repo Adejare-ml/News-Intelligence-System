@@ -24,10 +24,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 26,
-      "mentions": 74,
+      "companies": 27,
+      "mentions": 75,
       "risk": {
-        "Low": 20,
+        "Low": 21,
         "Medium": 6
       }
     },
@@ -483,6 +483,14 @@
       }
     },
     {
+      "industry": "BPO/Technology",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Banking/Development Finance",
       "companies": 1,
       "mentions": 1,
@@ -875,5 +883,5 @@
       }
     }
   ],
-  "generated": "2026-10-29 14:04:11"
+  "generated": "2026-10-29 18:53:42"
 }

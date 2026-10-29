@@ -1,16 +1,28 @@
 {
   "window_days": 7,
-  "recent_articles": 190,
-  "previous_articles": 207,
+  "recent_articles": 203,
+  "previous_articles": 205,
   "rising": [
     {
       "term": "tinubu",
       "recent": 18,
-      "previous": 3,
-      "change": 15
+      "previous": 4,
+      "change": 14
     },
     {
       "term": "court",
+      "recent": 15,
+      "previous": 7,
+      "change": 8
+    },
+    {
+      "term": "financial",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
+    },
+    {
+      "term": "reps",
       "recent": 15,
       "previous": 9,
       "change": 6
@@ -28,13 +40,19 @@
       "change": 6
     },
     {
-      "term": "financial",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
+      "term": "seeks",
+      "recent": 8,
+      "previous": 3,
+      "change": 5
     },
     {
       "term": "campaign",
+      "recent": 6,
+      "previous": 1,
+      "change": 5
+    },
+    {
+      "term": "tax",
       "recent": 6,
       "previous": 1,
       "change": 5
@@ -44,29 +62,11 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "governing",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "tinubu appoints",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "seeks",
-      "recent": 7,
-      "previous": 3,
-      "change": 4
     }
   ],
   "falling": [
     {
-      "term": "lagos",
+      "term": "bill",
       "recent": 3,
       "previous": 10,
       "change": -7
@@ -78,9 +78,9 @@
       "change": -7
     },
     {
-      "term": "assembly",
-      "recent": 3,
-      "previous": 9,
+      "term": "lagos",
+      "recent": 4,
+      "previous": 10,
       "change": -6
     },
     {
@@ -96,19 +96,7 @@
       "change": -6
     },
     {
-      "term": "fraud",
-      "recent": 6,
-      "previous": 11,
-      "change": -5
-    },
-    {
-      "term": "bill",
-      "recent": 4,
-      "previous": 9,
-      "change": -5
-    },
-    {
-      "term": "oil",
+      "term": "assembly",
       "recent": 4,
       "previous": 9,
       "change": -5
@@ -120,26 +108,38 @@
       "change": -5
     },
     {
-      "term": "revenue",
+      "term": "son",
       "recent": 2,
       "previous": 7,
+      "change": -5
+    },
+    {
+      "term": "abuja",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "investment",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 133,
+      "recent": 144,
       "previous": 143
     },
     {
       "category": "Legal",
-      "recent": 31,
-      "previous": 35
+      "recent": 32,
+      "previous": 33
     },
     {
       "category": "Company",
-      "recent": 23,
+      "recent": 24,
       "previous": 27
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-29 14:04:09"
+  "generated": "2026-10-29 18:53:40"
 }

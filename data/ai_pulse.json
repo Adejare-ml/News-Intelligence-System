@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-29 14:04:09",
+  "generated": "2026-10-29 18:53:39",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3694,
+      "likes": 3738,
       "downloads": 131062
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 751,
+      "likes": 762,
       "downloads": 9655
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 1226,
+      "likes": 1235,
       "downloads": 16598
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 893,
+      "likes": 899,
       "downloads": 10163
-    },
-    {
-      "id": "tencent/Hy-SimulMT-30B-A3B-FP8",
-      "url": "https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-FP8",
-      "task": "translation",
-      "likes": 454,
-      "downloads": 396
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 445,
+      "likes": 460,
       "downloads": 15885
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 478,
+      "likes": 482,
       "downloads": 15738
     },
     {
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 461,
+      "likes": 465,
       "downloads": 1578937
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 9822,
+      "downloads": 2269999
     }
   ],
   "papers": [
     {
+      "title": "Evaluating DeepSeek V4.1 Flash-1017 for loss of control and harmful manipulation risks",
+      "url": "https://huggingface.co/papers/2610.35671",
+      "upvotes": 2
+    },
+    {
+      "title": "Amortizing Sequential Experimental Design in Reasoning LLMs",
+      "url": "https://huggingface.co/papers/2610.20832",
+      "upvotes": 4
+    },
+    {
       "title": "RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents",
       "url": "https://huggingface.co/papers/2610.22507",
-      "upvotes": 10
+      "upvotes": 15
     },
     {
       "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
       "url": "https://huggingface.co/papers/2610.30132",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents",
       "url": "https://huggingface.co/papers/2610.30161",
-      "upvotes": 8
+      "upvotes": 9
     },
     {
       "title": "CausGround: Causal Interaction Grounding for Adaptive Embodied Planning",
       "url": "https://huggingface.co/papers/2610.29702",
       "upvotes": 2
-    },
-    {
-      "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
-      "url": "https://huggingface.co/papers/2610.34186",
-      "upvotes": 1
-    },
-    {
-      "title": "OmniSpectra: A Unified Foundation Model for Universal Spectra Representation Learning",
-      "url": "https://huggingface.co/papers/2601.15351",
-      "upvotes": 0
     }
   ]
 }
