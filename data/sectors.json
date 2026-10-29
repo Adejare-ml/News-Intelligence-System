@@ -5,16 +5,16 @@
       "companies": 941,
       "mentions": 1568,
       "risk": {
-        "Low": 832,
+        "Low": 831,
         "Critical": 57,
-        "Medium": 29,
+        "Medium": 30,
         "High": 23
       }
     },
     {
       "industry": "Oil & Gas",
       "companies": 46,
-      "mentions": 228,
+      "mentions": 229,
       "risk": {
         "Medium": 17,
         "Low": 24,
@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 26,
-      "mentions": 73,
+      "mentions": 74,
       "risk": {
         "Low": 20,
         "Medium": 6
@@ -51,6 +51,15 @@
       }
     },
     {
+      "industry": "Conglomerate",
+      "companies": 3,
+      "mentions": 15,
+      "risk": {
+        "Low": 1,
+        "Medium": 2
+      }
+    },
+    {
       "industry": "Energy",
       "companies": 8,
       "mentions": 14,
@@ -58,14 +67,6 @@
         "Medium": 4,
         "High": 2,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Conglomerate",
-      "companies": 2,
-      "mentions": 13,
-      "risk": {
-        "Medium": 2
       }
     },
     {
@@ -124,6 +125,14 @@
       }
     },
     {
+      "industry": "Technology",
+      "companies": 3,
+      "mentions": 11,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
       "industry": "Healthcare",
       "companies": 9,
       "mentions": 10,
@@ -137,14 +146,6 @@
       "mentions": 10,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Technology",
-      "companies": 3,
-      "mentions": 9,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -562,6 +563,14 @@
       }
     },
     {
+      "industry": "Fintech/Payments",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Fintech/Social Impact",
       "companies": 1,
       "mentions": 1,
@@ -866,5 +875,5 @@
       }
     }
   ],
-  "generated": "2026-10-28 21:37:21"
+  "generated": "2026-10-29 02:23:06"
 }
