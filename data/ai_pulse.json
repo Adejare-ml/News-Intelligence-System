@@ -1,92 +1,92 @@
 {
-  "generated": "2026-10-28 21:37:19",
+  "generated": "2026-10-29 02:23:01",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3528,
+      "likes": 3574,
       "downloads": 116770
     },
     {
       "id": "RecursiveSI/flint",
       "url": "https://huggingface.co/RecursiveSI/flint",
       "task": "text-generation",
-      "likes": 1149,
+      "likes": 1167,
       "downloads": 14047
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 719,
+      "likes": 733,
       "downloads": 7412
     },
     {
       "id": "XHToken/Spark-X2.6-4B",
       "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
       "task": "text-generation",
-      "likes": 851,
+      "likes": 869,
       "downloads": 8222
     },
     {
       "id": "MiniMaxAI/MiniMax-M3.1-Flash",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "task": "image-text-to-text",
-      "likes": 448,
+      "likes": 465,
       "downloads": 13247
-    },
-    {
-      "id": "black-forest-labs/flux-3-image-klein-comfy",
-      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
-      "task": "image-to-image",
-      "likes": 1948,
-      "downloads": 798943
-    },
-    {
-      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "task": "text-generation",
-      "likes": 431,
-      "downloads": 1377570
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9705,
+      "likes": 9735,
       "downloads": 2234788
+    },
+    {
+      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "task": "text-generation",
+      "likes": 449,
+      "downloads": 1377570
+    },
+    {
+      "id": "LiquidAI/LFM3-1.7B",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "task": "text-generation",
+      "likes": 403,
+      "downloads": 8892
     }
   ],
   "papers": [
     {
+      "title": "DTCA: Denoising Token Credit Assignment for Reinforcement Learning in Diffusion Language Models",
+      "url": "https://huggingface.co/papers/2610.35201",
+      "upvotes": 248
+    },
+    {
+      "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
+      "url": "https://huggingface.co/papers/2610.33245",
+      "upvotes": 1
+    },
+    {
+      "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
+      "url": "https://huggingface.co/papers/2610.30435",
+      "upvotes": 2
+    },
+    {
       "title": "Quaternion Approximate Networks for Enhanced Image Classification and Oriented Object Detection",
       "url": "https://huggingface.co/papers/2509.05512",
-      "upvotes": 0
+      "upvotes": 2
     },
     {
       "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
       "url": "https://huggingface.co/papers/2610.22684",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Sub-monolayer tracking of molecular states at buried interfaces",
       "url": "https://huggingface.co/papers/2610.31924",
-      "upvotes": 1
-    },
-    {
-      "title": "Lipi-Ghor: A Large-Scale, Diarized, Multi-Domain Bengali Speech Corpus and a Scalable Pipeline for Building It",
-      "url": "https://huggingface.co/papers/2610.36184",
-      "upvotes": 0
-    },
-    {
-      "title": "Beyond the Estimate: Wiener-Informed Decoding for Easier Training of Pixel-Space Flow Models",
-      "url": "https://huggingface.co/papers/2610.36192",
-      "upvotes": 9
-    },
-    {
-      "title": "What Outcome RL Buys: Finishing, Reliability, Rarely Reach",
-      "url": "https://huggingface.co/papers/2610.34894",
       "upvotes": 3
     }
   ]
