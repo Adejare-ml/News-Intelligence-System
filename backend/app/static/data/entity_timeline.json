@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 103,
+      "total_mentions": 104,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 13,
-          "avg_risk": 19.2,
+          "mentions": 14,
+          "avg_risk": 18.6,
           "max_risk": 30
         }
       ]
@@ -272,7 +272,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 27,
+      "total_mentions": 28,
       "points": [
         {
           "week": "2026-09-14",
@@ -306,8 +306,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 8,
-          "avg_risk": 29.4,
+          "mentions": 9,
+          "avg_risk": 30.0,
           "max_risk": 65
         }
       ]
@@ -315,7 +315,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 24,
+      "total_mentions": 25,
       "points": [
         {
           "week": "2026-09-14",
@@ -355,9 +355,9 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 30
         }
       ]
     },
@@ -659,7 +659,7 @@
     {
       "key": "national assembly",
       "label": "National Assembly",
-      "total_mentions": 12,
+      "total_mentions": 13,
       "points": [
         {
           "week": "2026-09-14",
@@ -693,9 +693,40 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 25.0,
+          "mentions": 3,
+          "avg_risk": 20.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 13,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 8,
+          "avg_risk": 13.8,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -813,37 +844,6 @@
           "week": "2026-10-12",
           "mentions": 9,
           "avg_risk": 15.6,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 8,
-          "avg_risk": 13.8,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
           "max_risk": 20
         },
         {
@@ -1251,6 +1251,31 @@
       ]
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 60.0,
+          "max_risk": 75
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -1507,6 +1532,50 @@
       ]
     },
     {
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 16.7,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "federal capital territory administration",
+      "label": "Federal Capital Territory Administration",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 4,
+          "avg_risk": 33.8,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "festus keyamo",
       "label": "Festus Keyamo",
       "total_mentions": 5,
@@ -1522,31 +1591,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -1864,31 +1908,6 @@
       ]
     },
     {
-      "key": "delta state government",
-      "label": "Delta State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 4,
@@ -1983,6 +2002,37 @@
       ]
     },
     {
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "european union",
       "label": "European Union",
       "total_mentions": 4,
@@ -2011,19 +2061,6 @@
           "mentions": 4,
           "avg_risk": 63.8,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "federal capital territory administration",
-      "label": "Federal Capital Territory Administration",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 33.8,
-          "max_risk": 75
         }
       ]
     },
@@ -2175,6 +2212,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national health insurance authority",
+      "label": "National Health Insurance Authority",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -2675,31 +2731,6 @@
       ]
     },
     {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "federal ministry of power",
       "label": "Federal Ministry of Power",
       "total_mentions": 3,
@@ -2883,6 +2914,31 @@
       ]
     },
     {
+      "key": "kaduna state government",
+      "label": "Kaduna State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "mtn foundation",
       "label": "MTN Group Foundation",
       "total_mentions": 3,
@@ -3004,25 +3060,6 @@
       ]
     },
     {
-      "key": "national health insurance authority",
-      "label": "National Health Insurance Authority",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "national universities commission",
       "label": "National Universities Commission",
       "total_mentions": 3,
@@ -3082,6 +3119,31 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "data protection commission",
+      "label": "Nigeria Data Protection Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -3327,6 +3389,31 @@
       ]
     },
     {
+      "key": "yobe state government",
+      "label": "Yobe State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "zenith bank",
       "label": "Zenith Bank",
       "total_mentions": 3,
@@ -3551,6 +3638,25 @@
       ]
     },
     {
+      "key": "bola ahmed tinubu",
+      "label": "Bola Ahmed Tinubu",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "bolt",
       "label": "Bolt",
       "total_mentions": 2,
@@ -3643,6 +3749,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "edo state government",
+      "label": "Edo State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3912,25 +4037,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "kaduna state government",
-      "label": "Kaduna State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -4260,25 +4366,6 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "data protection commission",
-      "label": "Nigeria Data Protection Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4649,6 +4736,25 @@
       ]
     },
     {
+      "key": "rivers state government",
+      "label": "Rivers State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "sunu assurances",
       "label": "SUNU Assurances",
       "total_mentions": 2,
@@ -4876,25 +4982,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "yobe state government",
-      "label": "Yobe State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -5232,6 +5319,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "adeniyi adeyemi",
+      "label": "Adeniyi Adeyemi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -5665,6 +5765,19 @@
       ]
     },
     {
+      "key": "arab fund for economic and social development",
+      "label": "Arab Fund for Economic and Social Development",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "arewa consultative forum",
       "label": "Arewa Consultative Forum",
       "total_mentions": 1,
@@ -5832,72 +5945,7 @@
           "max_risk": 30
         }
       ]
-    },
-    {
-      "key": "bisedge logistics infrastructure",
-      "label": "Bisedge Logistics & Infrastructure",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "blockradar",
-      "label": "Blockradar",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "bola ahmed tinubu",
-      "label": "Bola Ahmed Tinubu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "bolaji abdullahi",
-      "label": "Bolaji Abdullahi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "cappa",
-      "label": "CAPPA",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-29 14:04:11"
+  "generated": "2026-10-29 18:53:42"
 }

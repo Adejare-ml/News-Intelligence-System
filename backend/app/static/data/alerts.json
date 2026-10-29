@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-10-29",
+      "title": "How I paid money into ex-CCT chairman's wife's account, covered his children's school fees - Contractor - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTlBCUWRjNTA1YnlIMWxIOUhSS1BoVmUwaHo3M3prUjFIdDZfdndZX0pPN05DOXhRTzI3QjZBNFJfTTI3cTVyZ1ZhQzRfMUxNaFhYS0NOeFNnUm15VncySWIzaDM4S1ZsVWx6aHhuYm9IXzlvMDhZNElmS0RmYjBzdXFaTUdwXzV6b3dPZE91a1dZZTZGUHRldFM0VFRUUmdnN09GVDFTYk0yRHNaX29XZERmbnhoQlcyOV9SdFF5dVZLZHdWN1BoZFpDTXdEQWUzc0pHODBRcXdqNTVVS3JKQmlvRjJiTUhnY3c?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Conditional Cash Transfer (CCT)"
+      ]
+    },
+    {
       "date": "2026-10-28",
       "title": "Defence questions EFCC witness\u2019 evidence on N1.5bn airport contract in ex-minister Sirika\u2019s trial - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNQW1ITW8zVnA1RzU5U3otSzF2MnpESDMzOFF6bTVrUktFUmF3blpzSU9SYllYUlVKZm82MllINXI0TEgyUjhudy1aUF9CN2dHSlFZWS1hbzZiR1RPcTdSVXRQLUJHXzdKbjhTZjJ1VTB0MTA3c3BGdTd2TmdjcS1lS2JYaThFTl9jS0pZSFQwV2thS183c05qZkRzZ253Q3l4UW5aWGJpWjBGTjFVQzlrMWFtNlZWYXVVN3FIZTV0OTl4TlJXM3dFOTItVS1CNEl6VkwzWDRCaEFyYkR5YnNYeE90b3RiaU0?oc=5",
@@ -958,5 +969,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-10-29 14:04:11"
+  "generated": "2026-10-29 18:53:42"
 }

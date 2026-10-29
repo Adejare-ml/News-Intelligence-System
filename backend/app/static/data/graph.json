@@ -151,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "1613f8dac921",
       "label": "House of Representatives",
       "type": "agency",
@@ -169,6 +175,30 @@
       "risk": "Low"
     },
     {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7f50eb5ca259",
+      "label": "Yobe State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "e4c89820f522",
       "label": "Nigerian Navy",
       "type": "agency",
@@ -181,8 +211,20 @@
       "risk": "Low"
     },
     {
+      "id": "4d8cb1e72a03",
+      "label": "Nigeria Data Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
       "type": "agency",
       "risk": "Low"
     },
@@ -199,48 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "bcf9d1e3fc55",
-      "label": "Nigerian Airspace Management Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5ac1e4450b44",
-      "label": "National Health Insurance Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4318c4c9c3f1",
-      "label": "Nigeria Security and Civil Defence Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bfc1f02f682e",
-      "label": "Delta State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "81adceec0174",
-      "label": "Ekiti State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a0ca9428fbad",
-      "label": "Nigeria Credit Guarantee Corporation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "7a5d97d369d9",
       "label": "Uzodimma",
       "type": "person",
@@ -250,6 +250,36 @@
       "id": "8d64c9ee9816",
       "label": "Okorocha",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "5a094abf1abe",
+      "label": "Bola Ahmed Tinubu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "5152c3f8bc4a",
+      "label": "Adeniyi Adeyemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "382e8e8b425b",
+      "label": "Presidential Council",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "67b05664cea3",
+      "label": "Dele Alake",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "84cf3fb98281",
+      "label": "Ministry of Solid Minerals Development",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -421,36 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "40ce4ff30275",
-      "label": "Godwin Emefiele",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "261b654580ee",
-      "label": "Effiong Okon",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "686b21d53042",
-      "label": "Seplat Energy",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "268a2ed6a82c",
-      "label": "Kefas",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "737f70b3bdb8",
-      "label": "Taraba State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "65c8c8afe47f",
       "label": "Thomas Ogungbangbe",
       "type": "psc",
@@ -571,6 +571,12 @@
       "risk": "Medium"
     },
     {
+      "id": "36ac0a198e4e",
+      "label": "Humatrix",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -585,18 +591,6 @@
     {
       "id": "58e21ffa68da",
       "label": "Katsina State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7f50eb5ca259",
-      "label": "Yobe State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -647,12 +641,6 @@
       "label": "National Agency for Science and Engineering Infrastructure",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "9b5f79697bc2",
-      "label": "Federal Ministry of Power",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -667,6 +655,24 @@
       "from": "8d64c9ee9816",
       "to": "283e1d4aa831",
       "label": "Appointed as Senatorial Candidate"
+    },
+    {
+      "id": "90d4f5fbf4b4",
+      "from": "5a094abf1abe",
+      "to": "0c2be969618b",
+      "label": "Appointed as President"
+    },
+    {
+      "id": "f4c3e183cff8",
+      "from": "5152c3f8bc4a",
+      "to": "382e8e8b425b",
+      "label": "Appointed as Fake Director General"
+    },
+    {
+      "id": "315b0fe9face",
+      "from": "67b05664cea3",
+      "to": "84cf3fb98281",
+      "label": "Appointed as Minister of Solid Minerals Development"
     },
     {
       "id": "599ed5bc3174",
@@ -771,24 +777,6 @@
       "label": "Appointed as Governing Board Chair"
     },
     {
-      "id": "234af74126a1",
-      "from": "40ce4ff30275",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Former Governor"
-    },
-    {
-      "id": "61c34cbce265",
-      "from": "261b654580ee",
-      "to": "686b21d53042",
-      "label": "Appointed as Chief Executive Officer"
-    },
-    {
-      "id": "418485000d12",
-      "from": "268a2ed6a82c",
-      "to": "737f70b3bdb8",
-      "label": "Appointed as Governor"
-    },
-    {
       "id": "a5e36b5f552f",
       "from": "65c8c8afe47f",
       "to": "6ef575649788",
@@ -853,6 +841,18 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "0b3de92242bb",
+      "from": "7f50eb5ca259",
+      "to": "1613f8dac921",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "0493c0641a9b",
+      "from": "36ac0a198e4e",
+      "to": "a99d3740770f",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
@@ -936,12 +936,6 @@
       "id": "66bf53cd5347",
       "from": "334c4a4c42fd",
       "to": "84b6d6cbf896",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "d2ef7a3bb9d9",
-      "from": "334c4a4c42fd",
-      "to": "9b5f79697bc2",
       "label": "Contract Awardee"
     }
   ]
