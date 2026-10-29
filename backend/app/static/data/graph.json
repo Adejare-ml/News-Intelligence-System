@@ -121,20 +121,44 @@
       "risk": "Low"
     },
     {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "71c59636e7a3",
+      "label": "Federal Executive Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bcf9d1e3fc55",
+      "label": "Nigerian Airspace Management Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,30 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "4124c8b1ec79",
-      "label": "Asset Management Corporation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "956df12f4b75",
-      "label": "Sokoto State House of Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ba78a702d979",
-      "label": "National Regulatory System",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "298b75f27851",
-      "label": "Kaduna Polytechnic",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -310,12 +310,6 @@
       "id": "eb7f9542101c",
       "label": "Musa",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -400,12 +394,6 @@
       "id": "75ce69c80acb",
       "label": "Natasha Akpoti-Uduaghan",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -595,15 +583,15 @@
       "risk": "Medium"
     },
     {
-      "id": "8ad929872c06",
-      "label": "Federal Ministry of Aviation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "8ad929872c06",
+      "label": "Federal Ministry of Aviation",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -681,18 +669,6 @@
     {
       "id": "ff7de7b79a06",
       "label": "Unnamed tech firm",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a0a05b0f09c",
-      "label": "Sapphital",
       "type": "company",
       "risk": "Low"
     }
@@ -897,6 +873,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "e185b6db0a0f",
+      "from": "334c4a4c42fd",
+      "to": "71c59636e7a3",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "51b6ffa966e8",
       "from": "334c4a4c42fd",
       "to": "8ad929872c06",
@@ -984,12 +966,6 @@
       "id": "1c17064eccb8",
       "from": "ff7de7b79a06",
       "to": "ef6dbf96f94e",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "094eb630c81d",
-      "from": "5a0a05b0f09c",
-      "to": "8aeb2e3bdb2c",
       "label": "Contract Awardee"
     }
   ]

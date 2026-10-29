@@ -3369,8 +3369,8 @@
   },
   {
     "Company": "Google",
-    "Mention Count": 3,
-    "Last Seen": "2026-10-27 18:35",
+    "Mention Count": 5,
+    "Last Seen": "2026-10-29 02:17",
     "Industry": "Technology",
     "Risk Level": "Low",
     "First Seen": ""
@@ -3649,9 +3649,9 @@
   },
   {
     "Company": "Transcorp",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-23 18:18",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-10-29 02:17",
+    "Industry": "Conglomerate",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -3857,8 +3857,8 @@
   },
   {
     "Company": "Zenith Bank Plc",
-    "Mention Count": 4,
-    "Last Seen": "2026-10-11 1:44",
+    "Mention Count": 5,
+    "Last Seen": "2026-10-29 02:17",
     "Industry": "Banking",
     "Risk Level": "Low",
     "First Seen": ""
@@ -6321,8 +6321,8 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 98,
-    "Last Seen": "2026-10-28 18:39",
+    "Mention Count": 99,
+    "Last Seen": "2026-10-29 02:18",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": ""
@@ -9758,5 +9758,21 @@
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": "2026-10-28 18:40"
+  },
+  {
+    "Company": "KC Luxury",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-29 02:16",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-10-29 02:16"
+  },
+  {
+    "Company": "Visa",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-29 02:17",
+    "Industry": "Fintech/Payments",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-29 02:17"
   }
 ]

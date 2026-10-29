@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 182,
-  "previous_articles": 211,
+  "recent_articles": 188,
+  "previous_articles": 208,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 17,
+      "recent": 18,
       "previous": 3,
-      "change": 14
+      "change": 15
     },
     {
       "term": "appoints",
@@ -16,31 +16,19 @@
       "change": 8
     },
     {
+      "term": "digital",
+      "recent": 10,
+      "previous": 3,
+      "change": 7
+    },
+    {
       "term": "witness",
       "recent": 8,
       "previous": 2,
       "change": 6
     },
     {
-      "term": "court",
-      "recent": 14,
-      "previous": 9,
-      "change": 5
-    },
-    {
-      "term": "senate",
-      "recent": 8,
-      "previous": 3,
-      "change": 5
-    },
-    {
       "term": "campaign",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
-      "term": "unveils",
       "recent": 6,
       "previous": 1,
       "change": 5
@@ -58,23 +46,29 @@
       "change": 5
     },
     {
-      "term": "panel",
+      "term": "tax",
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "tinubu appoints",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "court",
+      "recent": 14,
+      "previous": 10,
+      "change": 4
     }
   ],
   "falling": [
     {
       "term": "lagos",
-      "recent": 2,
-      "previous": 12,
-      "change": -10
-    },
-    {
-      "term": "warns",
-      "recent": 1,
-      "previous": 8,
+      "recent": 3,
+      "previous": 10,
       "change": -7
     },
     {
@@ -90,13 +84,7 @@
       "change": -6
     },
     {
-      "term": "targets",
-      "recent": 2,
-      "previous": 8,
-      "change": -6
-    },
-    {
-      "term": "revenue",
+      "term": "warns",
       "recent": 1,
       "previous": 7,
       "change": -6
@@ -108,9 +96,21 @@
       "change": -6
     },
     {
-      "term": "nigeria\u2019s",
-      "recent": 9,
-      "previous": 14,
+      "term": "targets",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "revenue",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
+    },
+    {
+      "term": "son",
+      "recent": 2,
+      "previous": 7,
       "change": -5
     },
     {
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 124,
-      "previous": 148
+      "recent": 128,
+      "previous": 146
     },
     {
       "category": "Legal",
@@ -139,8 +139,8 @@
     },
     {
       "category": "Company",
-      "recent": 23,
-      "previous": 27
+      "recent": 25,
+      "previous": 26
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-28 21:37:20"
+  "generated": "2026-10-29 02:23:02"
 }

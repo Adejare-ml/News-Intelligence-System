@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 100,
+      "total_mentions": 101,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 10,
-          "avg_risk": 19.0,
+          "mentions": 11,
+          "avg_risk": 19.1,
           "max_risk": 30
         }
       ]
@@ -58,7 +58,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 92,
+      "total_mentions": 93,
       "points": [
         {
           "week": "2026-09-14",
@@ -98,8 +98,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 8,
-          "avg_risk": 29.4,
+          "mentions": 9,
+          "avg_risk": 28.3,
           "max_risk": 45
         }
       ]
@@ -107,7 +107,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 78,
+      "total_mentions": 79,
       "points": [
         {
           "week": "2026-09-07",
@@ -153,8 +153,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 11,
-          "avg_risk": 68.6,
+          "mentions": 12,
+          "avg_risk": 64.6,
           "max_risk": 85
         }
       ]
@@ -362,6 +362,55 @@
       ]
     },
     {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "total_mentions": 22,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 26.7,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 4,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 5,
+          "avg_risk": 24.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 5,
+          "avg_risk": 16.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 21,
@@ -407,55 +456,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "total_mentions": 21,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 26.7,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 4,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 5,
-          "avg_risk": 24.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 5,
-          "avg_risk": 16.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -651,6 +651,49 @@
       ]
     },
     {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 18.8,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "total_mentions": 11,
@@ -734,49 +777,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 18.8,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -1968,6 +1968,25 @@
           "mentions": 4,
           "avg_risk": 33.8,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "google",
+      "label": "Google",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 13.3,
+          "max_risk": 20
         }
       ]
     },
@@ -3233,6 +3252,25 @@
       ]
     },
     {
+      "key": "zenith bank",
+      "label": "Zenith Bank",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "amni",
       "label": "AMNI",
       "total_mentions": 2,
@@ -3707,25 +3745,6 @@
         {
           "week": "2026-10-19",
           "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "google",
-      "label": "Google",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         }
@@ -4332,6 +4351,25 @@
       ]
     },
     {
+      "key": "airspace management agency",
+      "label": "Nigerian Airspace Management Agency",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "education loan fund",
       "label": "Nigerian Education Loan Fund",
       "total_mentions": 2,
@@ -4851,19 +4889,6 @@
           "week": "2026-10-19",
           "mentions": 2,
           "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "zenith bank",
-      "label": "Zenith Bank",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 15.0,
           "max_risk": 20
         }
       ]
@@ -5848,20 +5873,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "cita energies",
-      "label": "CITA Energies",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-28 21:37:21"
+  "generated": "2026-10-29 02:23:06"
 }
