@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 941,
-      "mentions": 1568,
+      "companies": 940,
+      "mentions": 1567,
       "risk": {
-        "Low": 831,
+        "Low": 830,
         "Critical": 57,
         "Medium": 30,
         "High": 23
@@ -184,6 +184,15 @@
       }
     },
     {
+      "industry": "Crypto Exchange",
+      "companies": 2,
+      "mentions": 6,
+      "risk": {
+        "Medium": 1,
+        "Low": 1
+      }
+    },
+    {
       "industry": "Manufacturing",
       "companies": 3,
       "mentions": 6,
@@ -254,14 +263,6 @@
       "mentions": 4,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Crypto Exchange",
-      "companies": 1,
-      "mentions": 4,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -884,5 +885,5 @@
       }
     }
   ],
-  "generated": "2026-10-30 02:34:51"
+  "generated": "2026-10-30 13:55:17"
 }

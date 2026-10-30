@@ -37,15 +37,6 @@
       "previous_mentions": 10
     },
     {
-      "key": "state security service",
-      "label": "State Security Service",
-      "recent_avg": 20.0,
-      "previous_avg": 40.0,
-      "delta": -20.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "lagos state government",
       "label": "Lagos State Government",
       "recent_avg": 35.0,
@@ -57,10 +48,10 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 24.0,
+      "recent_avg": 23.3,
       "previous_avg": 37.5,
-      "delta": -13.5,
-      "recent_mentions": 5,
+      "delta": -14.2,
+      "recent_mentions": 6,
       "previous_mentions": 4
     },
     {
@@ -91,6 +82,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 21.2,
+      "previous_avg": 30.0,
+      "delta": -8.8,
+      "recent_mentions": 4,
+      "previous_mentions": 2
+    },
+    {
       "key": "festus keyamo",
       "label": "Festus Keyamo",
       "recent_avg": 16.7,
@@ -100,31 +100,31 @@
       "previous_mentions": 2
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 21.7,
-      "previous_avg": 30.0,
-      "delta": -8.3,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
-      "recent_avg": 17.5,
+      "recent_avg": 18.3,
       "previous_avg": 10.0,
-      "delta": 7.5,
-      "recent_mentions": 2,
+      "delta": 8.3,
+      "recent_mentions": 3,
       "previous_mentions": 3
     },
     {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
+      "key": "senate of",
+      "label": "Senate of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 32.5,
+      "delta": -7.5,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
       "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
-      "recent_mentions": 3,
-      "previous_mentions": 5
+      "previous_avg": 13.3,
+      "delta": 6.7,
+      "recent_mentions": 4,
+      "previous_mentions": 3
     },
     {
       "key": "ekiti state house of assembly",
@@ -134,6 +134,15 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 62.1,
+      "previous_avg": 57.9,
+      "delta": 4.2,
+      "recent_mentions": 14,
+      "previous_mentions": 14
     },
     {
       "key": "house of representatives",
@@ -154,33 +163,24 @@
       "previous_mentions": 1
     },
     {
-      "key": "senate of",
-      "label": "Senate of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 28.0,
-      "delta": -3.0,
-      "recent_mentions": 2,
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "recent_avg": 17.5,
+      "previous_avg": 15.0,
+      "delta": 2.5,
+      "recent_mentions": 4,
       "previous_mentions": 5
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 18.0,
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "recent_avg": 17.5,
       "previous_avg": 15.0,
-      "delta": 3.0,
-      "recent_mentions": 5,
-      "previous_mentions": 2
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 60.7,
-      "previous_avg": 57.9,
-      "delta": 2.8,
-      "recent_mentions": 15,
-      "previous_mentions": 14
+      "delta": 2.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-30 02:34:51"
+  "generated": "2026-10-30 13:55:17"
 }
