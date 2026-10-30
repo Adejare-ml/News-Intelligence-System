@@ -583,15 +583,15 @@
       "risk": "Medium"
     },
     {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -657,12 +657,6 @@
     {
       "id": "e1894ded2ce6",
       "label": "Federal Government of Nigeria / Benue State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
     }
@@ -879,6 +873,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "7ae984c2a8c8",
+      "from": "334c4a4c42fd",
+      "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "e93a110c1ab6",
       "from": "2cbc793c6023",
       "to": "b5da1d8370fd",
@@ -906,12 +906,6 @@
       "id": "0493c0641a9b",
       "from": "36ac0a198e4e",
       "to": "a99d3740770f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     },
     {
@@ -966,12 +960,6 @@
       "id": "9eaaba6423cf",
       "from": "334c4a4c42fd",
       "to": "a75518830b0f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "0da63ab8c0bc",
-      "from": "334c4a4c42fd",
-      "to": "7ac5d6bb2121",
       "label": "Contract Awardee"
     }
   ]

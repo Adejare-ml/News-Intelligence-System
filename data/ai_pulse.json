@@ -1,64 +1,74 @@
 {
-  "generated": "2026-10-30 18:30:36",
+  "generated": "2026-10-30 21:29:55",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3979,
+      "likes": 3997,
       "downloads": 145869
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 793,
+      "likes": 795,
       "downloads": 12178
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 539,
+      "likes": 553,
       "downloads": 23694
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 479,
+      "likes": 490,
       "downloads": 15980
     },
     {
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 501,
+      "likes": 506,
       "downloads": 1747945
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 440,
+      "likes": 447,
       "downloads": 24276
-    },
-    {
-      "id": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "task": "text-generation",
-      "likes": 1255,
-      "downloads": 19015
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1322,
+      "likes": 1333,
       "downloads": 1239
+    },
+    {
+      "id": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "task": "text-generation",
+      "likes": 1256,
+      "downloads": 19015
     }
   ],
   "papers": [
+    {
+      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+      "url": "https://huggingface.co/papers/2610.38293",
+      "upvotes": 0
+    },
+    {
+      "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+      "url": "https://huggingface.co/papers/2610.38681",
+      "upvotes": 0
+    },
     {
       "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
       "url": "https://huggingface.co/papers/2610.39293",
@@ -78,16 +88,6 @@
       "title": "Training Foundation Models with a Single Algorithm",
       "url": "https://huggingface.co/papers/2610.40564",
       "upvotes": 2
-    },
-    {
-      "title": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
-      "url": "https://huggingface.co/papers/2610.23656",
-      "upvotes": 3
-    },
-    {
-      "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
-      "url": "https://huggingface.co/papers/2610.39302",
-      "upvotes": 6
     }
   ]
 }
