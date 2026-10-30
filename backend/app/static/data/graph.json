@@ -145,6 +145,66 @@
       "risk": "Low"
     },
     {
+      "id": "bbdd3227478f",
+      "label": "Niger Delta Development Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6b7faa37fa88",
+      "label": "Universal Basic Education Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "71c59636e7a3",
+      "label": "Federal Executive Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6d8852f19447",
+      "label": "Federal Bureau of Investigation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e5e05b704829",
+      "label": "Office of the Auditor-General for the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4124c8b1ec79",
+      "label": "Asset Management Corporation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "37f668c33e65",
+      "label": "Federal Capital Development Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ad1197883d63",
+      "label": "People's Democratic Party",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "31cdb17c8d34",
+      "label": "Nigerian Stored Products Research Institute",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2e36790d4395",
+      "label": "Ministry of Budget and Economic Planning",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "631735ae7f74",
       "label": "Nigeria Police Force",
       "type": "agency",
@@ -181,69 +241,45 @@
       "risk": "Low"
     },
     {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7f50eb5ca259",
-      "label": "Yobe State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c89820f522",
-      "label": "Nigerian Navy",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4d8cb1e72a03",
-      "label": "Nigeria Data Protection Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "71c59636e7a3",
-      "label": "Federal Executive Council",
-      "type": "agency",
+      "id": "2388a11cf55e",
+      "label": "Ola Olukoyede",
+      "type": "person",
       "risk": "Low"
     },
     {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "651d26051cf1",
+      "label": "Isa Pantami",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "bed201f6abaa",
+      "label": "Ahmed Kuru",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9c6b88ddb885",
+      "label": "Doris Anite-Uzoka",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f175b65f0351",
+      "label": "Tayo Oviosu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "37da868a45f1",
+      "label": "Paga",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -409,46 +445,16 @@
       "risk": "Low"
     },
     {
-      "id": "6d3754b631b4",
-      "label": "Verheijen",
-      "type": "person",
-      "risk": "Low"
+      "id": "f05534764d4f",
+      "label": "Olukayode Olusanya",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "363c0b4617d9",
-      "label": "Omobolaji Balakin",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "e8eddeeb8103",
-      "label": "MMA2",
+      "id": "dba897677026",
+      "label": "Oak Homes",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "75ce69c80acb",
-      "label": "Natasha Akpoti-Uduaghan",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f1f131ace5c4",
-      "label": "Uba Sani",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "77b2dee0aac9",
-      "label": "Unnamed former SSS DG",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "133de1c3396b",
-      "label": "National Intelligence Service",
-      "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "65c8c8afe47f",
@@ -577,9 +583,27 @@
       "risk": "Low"
     },
     {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "26e2ff8028c0",
       "label": "Youth Beneficiaries",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "7f50eb5ca259",
+      "label": "Yobe State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -639,10 +663,40 @@
   ],
   "edges": [
     {
+      "id": "173d8cf4554e",
+      "from": "2388a11cf55e",
+      "to": "0bcaaf453cd3",
+      "label": "Appointed as Chairman"
+    },
+    {
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President"
+    },
+    {
+      "id": "9d4cc80459a3",
+      "from": "651d26051cf1",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former Minister"
+    },
+    {
+      "id": "016043421744",
+      "from": "bed201f6abaa",
+      "to": "4124c8b1ec79",
+      "label": "Appointed as Former Managing Director"
+    },
+    {
+      "id": "03dcb2c9fbff",
+      "from": "9c6b88ddb885",
+      "to": "2e36790d4395",
+      "label": "Appointed as Minister of State for Budget and Economic Planning"
+    },
+    {
+      "id": "aa9a51059ab6",
+      "from": "f175b65f0351",
+      "to": "37da868a45f1",
+      "label": "Appointed as Chief Executive Officer and Founder"
     },
     {
       "id": "a46d5d092b68",
@@ -741,34 +795,10 @@
       "label": "Appointed as Former Minister of Works"
     },
     {
-      "id": "144969986b4f",
-      "from": "6d3754b631b4",
-      "to": "0c2be969618b",
-      "label": "Appointed as Official/Spokesperson"
-    },
-    {
-      "id": "a74b3e23be57",
-      "from": "363c0b4617d9",
-      "to": "e8eddeeb8103",
-      "label": "Appointed as Representative/Executive"
-    },
-    {
-      "id": "97d03f9c79c6",
-      "from": "75ce69c80acb",
-      "to": "38b03bbf0068",
-      "label": "Appointed as Senator"
-    },
-    {
-      "id": "1d53d5ab75b4",
-      "from": "f1f131ace5c4",
-      "to": "4b3b1b76a8e8",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "fc7b49bd86ca",
-      "from": "77b2dee0aac9",
-      "to": "133de1c3396b",
-      "label": "Appointed as Governing Board Chair"
+      "id": "34c826682817",
+      "from": "f05534764d4f",
+      "to": "dba897677026",
+      "label": "Significant influence or control"
     },
     {
       "id": "a5e36b5f552f",

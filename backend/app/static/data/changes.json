@@ -1,17 +1,42 @@
 {
-  "new_companies": [],
-  "new_people": [],
-  "psc_added": [],
+  "new_companies": [
+    "Human and Environmental Development Agenda",
+    "Oak Homes",
+    "Paga"
+  ],
+  "new_people": [
+    "Ahmed Kuru",
+    "Doris Anite-Uzoka",
+    "Isa Pantami",
+    "Tayo Oviosu"
+  ],
+  "psc_added": [
+    {
+      "person": "Olukayode Olusanya",
+      "company": "Oak Homes"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Court fixes December for AMCON ex-MD\u2019s fraud trial",
+      "url": "https://punchng.com/court-fixes-december-for-amcon-ex-mds-fraud-trial/",
+      "risk": 75.0
+    },
+    {
+      "title": "HEDA urges EFCC to probe NSPRI\u2019s N683.8m spending",
+      "url": "https://punchng.com/heda-urges-efcc-to-probe-nspris-n683-8m-spending/",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
-    "psc_added": 0,
+    "new_companies": 3,
+    "new_people": 4,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 2
   },
-  "generated": "2026-10-29 21:39:11"
+  "generated": "2026-10-30 02:34:46"
 }

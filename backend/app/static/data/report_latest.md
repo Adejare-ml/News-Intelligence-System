@@ -1,48 +1,35 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-29 21:38:12 (UTC)
-**Run Window:** 2026-10-29, all runs to 21:38 (run 4 of the day)
+**Generated on:** 2026-10-30 02:32:05 (UTC)
+**Run Window:** 2026-10-30, all runs to 02:32 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 51
-- **High Risk Signals:** 1
-- **Appointments Logged:** 2
-- **Procurement Awards:** 6
+- **Total Articles Processed:** 14
+- **High Risk Signals:** 2
+- **Appointments Logged:** 0
+- **Procurement Awards:** 1
 
 ---
 
-# Executive Intelligence Brief: Nigerian Corporate Transparency & MDA Operations
-
-**Report Date:** 29 October 2026  
-**Coverage:** All articles published on 29 October 2026 up to 21:38
-
----
+## 2026‑10‑30 Executive Summary – Daily Coverage
 
 ### Key Developments
+- Abuja court to decide joinder in Pantami vs. PDP suit. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPeVpCVjRfSURsNG0zQkxDaWpJbVpsaFl2TndyZG9MQU1zaWFKc0poZVdZbDllZ2N2Si1QZG91LWktV1VFVXFwS09ScEpaUFFXSF9KanpaNDM3M3h4MWw4Qi1hTkRmRE05aENtdHZiYWVZWTB5NWZSeVZZMksxWnFEVlFrRlV3aF9jdVpSdlpIeGR0WXVOdzRJN0lWTGVMMThNMVdrQy0tVWN5U1l5VXJXRkhDS2M3QW1SM0pj?oc=5))  
 
-* **Data Localization Rule: Over 50% of financial institutions ready for deadline — CBN |**. The Central Bank of Nigeria (CBN) reports that over 50% of financial institutions are prepared for the upcoming data localization deadline. ([The Eagle Online](https://news.google.com/rss/articles/CBMirwFBVV95cUxON0NkMEtFc1Y3ME5oZEF0c1VNTEI1Z21LYU02eG5SQUh5VHB2WnF6UkhJN1BZZ2VYV2d5dFVWNmNMUUhfaXppOU1ObWltZGNqam5Xai10eDJYR3BJUmlpNHFtQ0VCcThYeWkyUG5abENvUVI0cVIzVkVReFF6emlJLWhVUjZxNHgzVG02S2N1U0FKT0VNTmFILWxRSjJrME1RYU4xaU9MN18tYUU4ZHBZ?oc=5))  
-* **Subnational debts hit N4.6trn mid-year as Lagos, Delta, FCT, Rivers, Edo account for 54%**. Subnational debt in Nigeria has reached N4.6 trillion at mid-year. ([blueprint](https://blueprint.ng/subnational-debts-hit-n4-6trn-mid-year-as-lagos-delta-fct-rivers-edo-account-for-54/))  
-* **Nigeria mandates MDAs to bolster cybersecurity amid rising threats**. The Nigerian government has issued a mandate requiring Ministries, Departments, and Agencies (MDAs) to strengthen their cybersecurity frameworks in response to increasing digital threats. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUl4VTBkZ0tsNm9EZDdpREJtb29ocDhReUpYaE9CZWxrNThCZTZzdTkzVkVaREpUNXpaUjdlYjBMRExmam5NcklCQmdQQk1xSzB0ejhfVjBEWlpNcld6Mlduc2tGNG43cktENTAwYjF4OWF2LXVvQ0NRMlAtVVhRd2ZoZk1ZTTNMdFFIZ3NtdU1BazBkeUkwZktn?oc=5))  
-* **FG to Implement Minimum Pension Guarantee after 11-Year delay**. The Federal Government of Nigeria is set to implement the Minimum Pension Guarantee, ending an 11-year delay in the policy's execution. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikAFBVV95cUxOa1l2N21kQ1VkRjZXbEVESWNRdnlNUjBHNDNKRHJhLTFLU0lvWU9DcDVlYTVWd1gwVW1iNHdLd3FzdjVVMHBMR2dzcWhJd3U2UUItbXNSTW51Ymt1MWRSWTdndl9HTVM5UHZiN1hWM19NWTdNQVdlSW5LS2xSam9RcFBpRGhEQ2N5aGQzbjZDUHc?oc=5))  
-
----
-
-### High Risk Alerts
-
-* **How I paid money into ex-CCT chairman's wife's account, covered his children's school fees - Contractor**. A contractor has alleged making illicit payments to the wife of the former Chairman of the Conditional Cash Transfer (CCT) program and paying school fees for his children, suggesting a corruption and kickback scheme. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi6gFBVV95cUxPTlBCUWRjNTA1YnlIMWxIOUhSS1BoVmUwaHo3M3prUjFIdDZfdndZX0pPN05DOXhRTzI3QjZBNFJfTTI3cTVyZ1ZhQzRfMUxNaFhYS0NOeFNnUm15VncySWIzaDM4S1ZsVWx6aHhuYm9IXzlvMDhZNElmS0RmYjBzdXFaTUdwXzV6b3dPZE91a1dZZTZGUHRldFM0VFRUUmdnN09GVDFTYk0yRHNaX29XZERmbnhoQlcyOV9SdFF5dVZLZHdWN1BoZFpDTXdEQWUzc0pHODBRcXdqNTVVS3JKQmlvRjJiTUhnY3c?oc=5))  
-
----
+### High‑Risk Alerts
+- EFCC’s proposed probe into NSPRI’s N683.8m misuse highlights high‑level financial crime risk. ([The Punch](https://punchng.com/heda-urges-efcc-to-probe-nspris-n683-8m-spending/))  
+- AMCON ex‑MD Ahmed Kuru awaiting verdict in N4.9bn fraud case, a pivotal financial‑institutional exposure. ([The Punch](https://punchng.com/court-fixes-december-for-amcon-ex-mds-fraud-trial/))  
 
 ### Beneficial Ownership & PSC Disclosures
-
-The monitored reporting for this cycle contains no statutory beneficial ownership filings or persons with significant control disclosures.
-
----
+- **Olukayode Olusanya** – Oak Homes – significant control disclosed (no percentage indicated, risk elevated). No PEP status; regulatory filing still ongoing. ([The Punch](https://punchng.com/court-admits-offer-letter-in-n152m-oak-homes-trial/))  
 
 ### Procurement & Board Changes
-
-* **FG approves N45.08bn biosecurity for Abuja, Lagos, Kano, other airports**. The Federal Government of Nigeria has approved N45.08 billion for the implementation of biosecurity measures across several airports, including those in Abuja, Lagos, and Kano. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiogFBVV95cUxPcTB4LS1pZTBUNnltWXFDSk05YkNuYlR2SnhQd2xsNEJnM3ZqTXhnN3FkemQtN2FxRGxVeGx3Rm00U2stS3AzdG5GZjRvajFjWW9jRUJldzBHVEN6NnJFOVk5Sy0wLWVzaVhfNzNaQXB5UWJHSWU5Sm15ZmVYcWdhczRwNU9aNVJTV0lrRHdZWEViaU1mWkJQazUzSHZ2R2VHNWc?oc=5))  
-* **Governor Eno Urges Youths to Grow ₦50m Grant**. Governor Eno has announced a ₦50 million grant aimed at supporting youth growth and development initiatives. ([Voice of Nigeria](https://news.google.com/rss/articles/CBMifEFVX3lxTE1FbW9SRURIYXNMaEJJY3RHSTNOb015NE9SQUVfYXpibzY4UzdwVlBUdGNrYnVrWWkya3NiS2t4TTNYb01XaEV0ZTIxNjJsMlNjcEU4NnBBQXVNNnhjOVNBcXRiSml5RTgzQjVtc1g5Nm1PZU9OcTVEakhQUDQ?oc=5))  
-* **Kaduna deputy gov swears in three commissioners, 18 special advisers**. The Deputy Governor of Kaduna State has sworn in three commissioners and 18 special advisers to the state government. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWUl3N2hqaUt0c0FyWUlmNmZ0cFZ5S3Itd18wTm5jY1EwRUZwQXJlMkdPck51T0J6Ti1iZ0ZlSzNKTTNIOFJKOTh3WHRRdDBrODFMVjlqQzBCWHUxbzlDLVhuZzZLVGc1UU9PWVpVa1lhVkxXbTh5Wk1RQ0NYZVg3dTZZRUhPNEJaZmFEN3VYbW8xdjBkOXFsdnlnX3BZUU1KSERKcVg3SFhmaWpVUEdIQVhSVk5wUklmbHd3?oc=5))  
+- NDDC contracts potentially limited by Cross River contractors’ financial capacity. ([dailypost](https://dailypost.ng/2026/10/29/no-criver-contractor-has-financial-capacity-for-nddc-jobs-duke/))  
+- Oak Homes case confirms significant control by Olukayode Olusanya, hinting at board‑level influence. ([The Punch](https://punchng.com/court-admits-offer-letter-in-n152m-oak-homes-trial/))  
+- States’ failure to deploy UBEC matching funds indicates procurement oversight gaps. ([The Punch](https://punchng.com/states-hold-n264bn-ubec-funds-as-schools-struggle/))  
+- Pending EFCC review of NSPRI spending may uncover procurement irregularities. ([The Punch](https://punchng.com/heda-urges-efcc-to-probe-nspris-n683-8m-spending/))  
+- The FCDA conviction illustrates corruption within urban‑development procurement. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOLTQ3NFY0cHZ3TWVmd2dwbTUxdzdhWS1fR0R3ZUVnLUhQR1dBWG4zSDVwdW1ZYU1GTW5PWkV2YVg4dEJxQWpndlJ2cnI0UTZwLVJOcHVOdXZLdHhDaEJkQmZXSFI5QXVLYjNyYlhtMFZYdjRBa240c1hVdEhZSTl6U3ZFaXJBb2gtcEFxYUxhTS1fTXJNWWVfU2YxNnVHV3I2bWl3UlZzUS14ekZaTkxXLVJWZlpyNXpvQlkwWE5FZWR5SWFfeWZaSg?oc=5))  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
+
+---
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
