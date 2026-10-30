@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 106,
+      "total_mentions": 108,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 16,
-          "avg_risk": 18.1,
+          "mentions": 18,
+          "avg_risk": 18.3,
           "max_risk": 30
         }
       ]
@@ -217,7 +217,7 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "total_mentions": 31,
+      "total_mentions": 32,
       "points": [
         {
           "week": "2026-09-07",
@@ -263,8 +263,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 22.5,
+          "mentions": 5,
+          "avg_risk": 22.0,
           "max_risk": 30
         }
       ]
@@ -503,6 +503,49 @@
       ]
     },
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 18.3,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "total_mentions": 16,
@@ -577,45 +620,82 @@
       ]
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-14",
-          "mentions": 5,
-          "avg_risk": 17.0,
+          "mentions": 1,
+          "avg_risk": 20.0,
           "max_risk": 20
         },
         {
           "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
         },
         {
           "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
+          "mentions": 4,
+          "avg_risk": 25.0,
+          "max_risk": 40
         },
         {
           "week": "2026-10-05",
           "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
+          "avg_risk": 27.5,
+          "max_risk": 35
         },
         {
           "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 14,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
           "mentions": 3,
-          "avg_risk": 30.0,
+          "avg_risk": 23.3,
           "max_risk": 30
         },
         {
           "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 20
+          "mentions": 7,
+          "avg_risk": 17.1,
+          "max_risk": 30
         }
       ]
     },
@@ -663,83 +743,9 @@
       ]
     },
     {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 14,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 27.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 25.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 27.5,
-          "max_risk": 35
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 13,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 6,
-          "avg_risk": 18.3,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
-      "total_mentions": 13,
+      "total_mentions": 14,
       "points": [
         {
           "week": "2026-09-21",
@@ -761,8 +767,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 20.0,
+          "mentions": 4,
+          "avg_risk": 17.5,
           "max_risk": 20
         }
       ]
@@ -904,6 +910,37 @@
       ]
     },
     {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 18.8,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 12.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "ports authority",
       "label": "Nigerian Ports Authority",
       "total_mentions": 11,
@@ -1023,37 +1060,6 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 18.8,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 12.5,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -1401,6 +1407,37 @@
       ]
     },
     {
+      "key": "content development and monitoring board",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "upstream petroleum regulatory commission",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "total_mentions": 6,
@@ -1707,6 +1744,56 @@
       ]
     },
     {
+      "key": "national health insurance authority",
+      "label": "National Health Insurance Authority",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "national pension commission",
+      "label": "National Pension Commission",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "airways",
       "label": "Nigeria Airways",
       "total_mentions": 5,
@@ -1728,31 +1815,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "content development and monitoring board",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2228,25 +2290,6 @@
       ]
     },
     {
-      "key": "national health insurance authority",
-      "label": "National Health Insurance Authority",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "national insurance commission",
       "label": "National Insurance Commission",
       "total_mentions": 4,
@@ -2268,37 +2311,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "national pension commission",
-      "label": "National Pension Commission",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -3213,6 +3225,25 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "labour congress",
+      "label": "Nigeria Labour Congress",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 22.5,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -4492,19 +4523,6 @@
       ]
     },
     {
-      "key": "labour congress",
-      "label": "Nigeria Labour Congress",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 22.5,
-          "max_risk": 30
-        }
-      ]
-    },
-    {
       "key": "air force",
       "label": "Nigerian Air Force",
       "total_mentions": 2,
@@ -4730,6 +4748,19 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "police service commission",
+      "label": "Police Service Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -5879,6 +5910,19 @@
       ]
     },
     {
+      "key": "biofin",
+      "label": "BIOFIN",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "bank of agriculture",
       "label": "Bank of Agriculture",
       "total_mentions": 1,
@@ -5955,33 +5999,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "berkshire",
-      "label": "Berkshire",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "betta edu",
-      "label": "Betta Edu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-10-30 02:34:51"
+  "generated": "2026-10-30 13:55:17"
 }

@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-30 02:34:49",
+  "generated": "2026-10-30 13:55:07",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3850,
-      "downloads": 131062
+      "likes": 3948,
+      "downloads": 145869
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 779,
-      "downloads": 9655
-    },
-    {
-      "id": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "task": "text-generation",
-      "likes": 1245,
-      "downloads": 16598
+      "likes": 791,
+      "downloads": 12178
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 487,
-      "downloads": 15885
-    },
-    {
-      "id": "XHToken/Spark-X2.6-4B",
-      "url": "https://huggingface.co/XHToken/Spark-X2.6-4B",
-      "task": "text-generation",
-      "likes": 911,
-      "downloads": 10163
-    },
-    {
-      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "task": "text-generation",
-      "likes": 476,
-      "downloads": 1578937
+      "likes": 528,
+      "downloads": 23694
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 417,
-      "downloads": 4276
+      "likes": 464,
+      "downloads": 15980
+    },
+    {
+      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+      "task": "text-generation",
+      "likes": 493,
+      "downloads": 1747945
+    },
+    {
+      "id": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "task": "text-generation",
+      "likes": 1251,
+      "downloads": 19015
+    },
+    {
+      "id": "baidu/Unlimited-OCR-2",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "task": "image-text-to-text",
+      "likes": 433,
+      "downloads": 24276
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9863,
-      "downloads": 2269999
+      "likes": 9909,
+      "downloads": 2335172
     }
   ],
   "papers": [
     {
-      "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
-      "url": "https://huggingface.co/papers/2610.37161",
-      "upvotes": 4
-    },
-    {
-      "title": "After One-Click Video: The Inflow of Service-Type Content, the Failure of the Recommendation Pool Mechanism, and the BoLe System",
-      "url": "https://huggingface.co/papers/2610.37695",
-      "upvotes": 0
-    },
-    {
-      "title": "PreView: Enhancing GUI Grounding with Preprocessed Views and Cues",
-      "url": "https://huggingface.co/papers/2610.33645",
-      "upvotes": 2
-    },
-    {
-      "title": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
-      "url": "https://huggingface.co/papers/2610.22990",
-      "upvotes": 13
-    },
-    {
-      "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
-      "url": "https://huggingface.co/papers/2610.27100",
-      "upvotes": 2
-    },
-    {
-      "title": "Know, then Draw: A New Learning Paradigm for Visual Generation",
-      "url": "https://huggingface.co/papers/2610.37626",
+      "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
+      "url": "https://huggingface.co/papers/2610.39423",
       "upvotes": 1
+    },
+    {
+      "title": "Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion",
+      "url": "https://huggingface.co/papers/2610.25276",
+      "upvotes": 2
+    },
+    {
+      "title": "Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities",
+      "url": "https://huggingface.co/papers/2610.39301",
+      "upvotes": 12
+    },
+    {
+      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+      "url": "https://huggingface.co/papers/2610.39287",
+      "upvotes": 3
+    },
+    {
+      "title": "PhysInsert: Physically Plausible Object Insertion with Geometric Priors and Bidirectional Object-Scene Interactions",
+      "url": "https://huggingface.co/papers/2610.40453",
+      "upvotes": 11
+    },
+    {
+      "title": "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers",
+      "url": "https://huggingface.co/papers/2610.39663",
+      "upvotes": 3
     }
   ]
 }
