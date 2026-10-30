@@ -6,6 +6,10 @@
       "label": "Abubakar Malami"
     },
     {
+      "key": "adeniyi adeyemi",
+      "label": "Adeniyi Adeyemi"
+    },
+    {
       "key": "africa finance corporation",
       "label": "Africa Finance Corporation"
     },
@@ -500,6 +504,11 @@
       "weight": 2
     },
     {
+      "a": "adeniyi adeyemi",
+      "b": "independent corrupt practices and other related offences commission",
+      "weight": 2
+    },
+    {
       "a": "africa finance corporation",
       "b": "cardoso",
       "weight": 2
@@ -815,5 +824,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-30 13:55:17"
+  "generated": "2026-10-30 18:30:38"
 }

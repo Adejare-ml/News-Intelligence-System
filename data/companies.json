@@ -7241,8 +7241,8 @@
   },
   {
     "Company": "Dangote Refinery",
-    "Mention Count": 26,
-    "Last Seen": "2026-10-19 14:21",
+    "Mention Count": 27,
+    "Last Seen": "2026-10-30 18:25",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -9814,5 +9814,21 @@
     "Industry": "Fintech",
     "Risk Level": "Low",
     "First Seen": "2026-10-30 02:31"
+  },
+  {
+    "Company": "Pension Fund Administrators",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-30 18:25",
+    "Industry": "Banking/Financial Services",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-30 18:25"
+  },
+  {
+    "Company": "Pension Fund Custodians",
+    "Mention Count": 1,
+    "Last Seen": "2026-10-30 18:25",
+    "Industry": "Banking/Financial Services",
+    "Risk Level": "Low",
+    "First Seen": "2026-10-30 18:25"
   }
 ]

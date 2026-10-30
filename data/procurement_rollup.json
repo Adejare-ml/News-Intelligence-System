@@ -295,6 +295,14 @@
       }
     },
     {
+      "name": "Government of Nigeria",
+      "contracts": 4,
+      "undisclosed": 2,
+      "totals": {
+        "USD": 4530000000.0
+      }
+    },
+    {
       "name": "Abia State Government",
       "contracts": 3,
       "undisclosed": 3,
@@ -311,14 +319,6 @@
       "contracts": 3,
       "undisclosed": 3,
       "totals": {}
-    },
-    {
-      "name": "Government of Nigeria",
-      "contracts": 3,
-      "undisclosed": 2,
-      "totals": {
-        "USD": 4500000000.0
-      }
     },
     {
       "name": "Niger Delta Development Commission",
@@ -992,6 +992,14 @@
       "totals": {}
     },
     {
+      "name": "Government of China",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 30000000.0
+      }
+    },
+    {
       "name": "Government of the United States",
       "contracts": 1,
       "undisclosed": 1,
@@ -1234,5 +1242,5 @@
       }
     }
   ],
-  "generated": "2026-10-30 13:55:17"
+  "generated": "2026-10-30 18:30:38"
 }
