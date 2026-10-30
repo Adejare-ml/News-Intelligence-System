@@ -157,8 +157,20 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -169,8 +181,20 @@
       "risk": "Low"
     },
     {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7cd6fef502f0",
       "label": "United Nations",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "044ec82597eb",
+      "label": "Presidential Foreign Intervention Promotion Council",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,6 +217,12 @@
       "risk": "Low"
     },
     {
+      "id": "2cbc793c6023",
+      "label": "Government of China",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "bf69cb1ec5ea",
       "label": "Independent National Electoral Commission",
       "type": "agency",
@@ -207,36 +237,6 @@
     {
       "id": "a75518830b0f",
       "label": "National Information Technology Development Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6d8852f19447",
-      "label": "Federal Bureau of Investigation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5ac1e4450b44",
-      "label": "National Health Insurance Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e5e05b704829",
-      "label": "Office of the Auditor-General for the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4124c8b1ec79",
-      "label": "Asset Management Corporation of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -265,6 +265,12 @@
       "risk": "Low"
     },
     {
+      "id": "4124c8b1ec79",
+      "label": "Asset Management Corporation of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "9c6b88ddb885",
       "label": "Doris Anite-Uzoka",
       "type": "person",
@@ -289,6 +295,12 @@
       "risk": "Low"
     },
     {
+      "id": "5152c3f8bc4a",
+      "label": "Adeniyi Adeyemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "7a5d97d369d9",
       "label": "Uzodimma",
       "type": "person",
@@ -303,12 +315,6 @@
     {
       "id": "5a094abf1abe",
       "label": "Bola Ahmed Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "5152c3f8bc4a",
-      "label": "Adeniyi Adeyemi",
       "type": "person",
       "risk": "Low"
     },
@@ -397,12 +403,6 @@
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "18bc77b97b9c",
       "label": "Festus Keyamo",
       "type": "person",
@@ -448,12 +448,6 @@
       "id": "23d8905a6cbb",
       "label": "Federal Ministry of Works",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f90690e3c7de",
-      "label": "Darma",
-      "type": "person",
       "risk": "Low"
     },
     {
@@ -671,12 +665,6 @@
       "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "1570ca89d4ee",
-      "label": "Kebbi State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -715,6 +703,12 @@
       "from": "f175b65f0351",
       "to": "37da868a45f1",
       "label": "Appointed as Chief Executive Officer and Founder"
+    },
+    {
+      "id": "6db8be62206f",
+      "from": "5152c3f8bc4a",
+      "to": "044ec82597eb",
+      "label": "Appointed as Purported Director-General"
     },
     {
       "id": "a46d5d092b68",
@@ -885,6 +879,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "e93a110c1ab6",
+      "from": "2cbc793c6023",
+      "to": "b5da1d8370fd",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "28b1db6062df",
       "from": "334c4a4c42fd",
       "to": "9aef00190386",
@@ -972,12 +972,6 @@
       "id": "0da63ab8c0bc",
       "from": "334c4a4c42fd",
       "to": "7ac5d6bb2121",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "1a8ba2e01c37",
-      "from": "334c4a4c42fd",
-      "to": "1570ca89d4ee",
       "label": "Contract Awardee"
     }
   ]

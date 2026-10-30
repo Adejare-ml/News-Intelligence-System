@@ -1,17 +1,26 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "Pension Fund Administrators",
+    "Pension Fund Custodians"
+  ],
   "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "ICPC re-arraigns f\u2019ake\u2019 DG Adeyemi over N30bn fraud",
+      "url": "https://punchng.com/icpc-re-arraigns-fake-dg-adeyemi-over-n30bn-fraud/",
+      "risk": 75.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
+    "new_companies": 2,
     "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-10-30 13:55:05"
+  "generated": "2026-10-30 18:30:33"
 }
