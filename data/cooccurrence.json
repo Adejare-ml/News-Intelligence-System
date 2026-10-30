@@ -390,6 +390,11 @@
       "weight": 5
     },
     {
+      "a": "economic and financial crimes commission",
+      "b": "federal bureau of investigation",
+      "weight": 5
+    },
+    {
       "a": "house of representatives",
       "b": "national petroleum company",
       "weight": 5
@@ -407,11 +412,6 @@
     {
       "a": "dp world",
       "b": "ogun state government",
-      "weight": 4
-    },
-    {
-      "a": "economic and financial crimes commission",
-      "b": "federal bureau of investigation",
       "weight": 4
     },
     {
@@ -457,6 +457,11 @@
     {
       "a": "economic and financial crimes commission",
       "b": "maina",
+      "weight": 3
+    },
+    {
+      "a": "economic and financial crimes commission",
+      "b": "ola olukoyede",
       "weight": 3
     },
     {
@@ -636,11 +641,6 @@
     },
     {
       "a": "economic and financial crimes commission",
-      "b": "ola olukoyede",
-      "weight": 2
-    },
-    {
-      "a": "economic and financial crimes commission",
       "b": "oyo state government",
       "weight": 2
     },
@@ -815,5 +815,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-10-29 21:39:15"
+  "generated": "2026-10-30 02:34:51"
 }
