@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -151,8 +157,44 @@
       "risk": "Low"
     },
     {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1576ccbbc285",
+      "label": "Police Service Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7cd6fef502f0",
+      "label": "United Nations",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6b7faa37fa88",
       "label": "Universal Basic Education Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,8 +205,26 @@
       "risk": "Low"
     },
     {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6d8852f19447",
       "label": "Federal Bureau of Investigation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5ac1e4450b44",
+      "label": "National Health Insurance Authority",
       "type": "agency",
       "risk": "Low"
     },
@@ -177,66 +237,6 @@
     {
       "id": "4124c8b1ec79",
       "label": "Asset Management Corporation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "37f668c33e65",
-      "label": "Federal Capital Development Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ad1197883d63",
-      "label": "People's Democratic Party",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "31cdb17c8d34",
-      "label": "Nigerian Stored Products Research Institute",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2e36790d4395",
-      "label": "Ministry of Budget and Economic Planning",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "631735ae7f74",
-      "label": "Nigeria Police Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -268,6 +268,12 @@
       "id": "9c6b88ddb885",
       "label": "Doris Anite-Uzoka",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "2e36790d4395",
+      "label": "Ministry of Budget and Economic Planning",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -388,6 +394,12 @@
       "id": "eb7f9542101c",
       "label": "Musa",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -577,6 +589,12 @@
       "risk": "Medium"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -592,6 +610,12 @@
       "id": "26e2ff8028c0",
       "label": "Youth Beneficiaries",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -639,12 +663,6 @@
     {
       "id": "e1894ded2ce6",
       "label": "Federal Government of Nigeria / Benue State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },

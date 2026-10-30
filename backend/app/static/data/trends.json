@@ -1,25 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 213,
-  "previous_articles": 207,
+  "recent_articles": 218,
+  "previous_articles": 203,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 20,
-      "previous": 4,
+      "recent": 22,
+      "previous": 6,
       "change": 16
     },
     {
       "term": "court",
-      "recent": 18,
-      "previous": 7,
-      "change": 11
-    },
-    {
-      "term": "financial",
-      "recent": 8,
-      "previous": 0,
-      "change": 8
+      "recent": 17,
+      "previous": 8,
+      "change": 9
     },
     {
       "term": "reps",
@@ -34,16 +28,22 @@
       "change": 7
     },
     {
-      "term": "appoints",
+      "term": "official",
+      "recent": 7,
+      "previous": 0,
+      "change": 7
+    },
+    {
+      "term": "financial",
       "recent": 7,
       "previous": 1,
       "change": 6
     },
     {
-      "term": "official",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
+      "term": "seeks",
+      "recent": 8,
+      "previous": 3,
+      "change": 5
     },
     {
       "term": "witness",
@@ -58,7 +58,7 @@
       "change": 5
     },
     {
-      "term": "board",
+      "term": "loans",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -67,44 +67,26 @@
   "falling": [
     {
       "term": "bill",
-      "recent": 3,
-      "previous": 10,
+      "recent": 2,
+      "previous": 9,
       "change": -7
     },
     {
-      "term": "national",
-      "recent": 0,
-      "previous": 7,
-      "change": -7
-    },
-    {
-      "term": "demand",
+      "term": "son",
       "recent": 1,
-      "previous": 7,
+      "previous": 8,
+      "change": -7
+    },
+    {
+      "term": "interest",
+      "recent": 0,
+      "previous": 6,
       "change": -6
-    },
-    {
-      "term": "fraud",
-      "recent": 6,
-      "previous": 11,
-      "change": -5
-    },
-    {
-      "term": "alleged",
-      "recent": 5,
-      "previous": 10,
-      "change": -5
     },
     {
       "term": "lagos",
       "recent": 5,
       "previous": 10,
-      "change": -5
-    },
-    {
-      "term": "assembly",
-      "recent": 4,
-      "previous": 9,
       "change": -5
     },
     {
@@ -114,33 +96,51 @@
       "change": -5
     },
     {
-      "term": "gas",
+      "term": "assembly",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "demand",
       "recent": 2,
       "previous": 7,
       "change": -5
     },
     {
-      "term": "son",
-      "recent": 2,
-      "previous": 7,
+      "term": "nlng",
+      "recent": 0,
+      "previous": 5,
       "change": -5
+    },
+    {
+      "term": "fraud",
+      "recent": 6,
+      "previous": 10,
+      "change": -4
+    },
+    {
+      "term": "gas",
+      "recent": 3,
+      "previous": 7,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 149,
-      "previous": 144
+      "recent": 159,
+      "previous": 140
     },
     {
       "category": "Legal",
-      "recent": 34,
-      "previous": 34
+      "recent": 32,
+      "previous": 35
     },
     {
       "category": "Company",
-      "recent": 27,
-      "previous": 27
+      "recent": 24,
+      "previous": 26
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-30 02:34:49"
+  "generated": "2026-10-30 13:55:08"
 }
