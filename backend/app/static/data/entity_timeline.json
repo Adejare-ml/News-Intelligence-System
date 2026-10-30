@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 108,
+      "total_mentions": 109,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 18,
-          "avg_risk": 18.3,
+          "mentions": 19,
+          "avg_risk": 18.4,
           "max_risk": 30
         }
       ]
@@ -107,7 +107,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 82,
+      "total_mentions": 83,
       "points": [
         {
           "week": "2026-09-07",
@@ -153,8 +153,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 15,
-          "avg_risk": 59.3,
+          "mentions": 16,
+          "avg_risk": 58.4,
           "max_risk": 85
         }
       ]
@@ -2830,6 +2830,25 @@
       ]
     },
     {
+      "key": "edo state government",
+      "label": "Edo State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "federal executive council",
       "label": "Federal Executive Council",
       "total_mentions": 3,
@@ -3861,25 +3880,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "edo state government",
-      "label": "Edo State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -5409,6 +5409,19 @@
       ]
     },
     {
+      "key": "adamawa state post primary schools management board",
+      "label": "Adamawa State Post-Primary Schools Management Board",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "adeleke",
       "label": "Adeleke",
       "total_mentions": 1,
@@ -5992,20 +6005,7 @@
           "max_risk": 0
         }
       ]
-    },
-    {
-      "key": "bayero university kano",
-      "label": "Bayero University Kano",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-10-30 18:30:38"
+  "generated": "2026-10-30 21:29:57"
 }

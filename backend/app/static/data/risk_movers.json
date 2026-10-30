@@ -1,15 +1,6 @@
 {
   "movers": [
     {
-      "key": "united bank for africa",
-      "label": "United Bank for Africa",
-      "recent_avg": 20.0,
-      "previous_avg": 45.0,
-      "delta": -25.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "presidency",
       "label": "Presidency",
       "recent_avg": 20.0,
@@ -100,15 +91,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 27.5,
-      "previous_avg": 34.2,
-      "delta": -6.7,
-      "recent_mentions": 10,
-      "previous_mentions": 6
-    },
-    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
       "recent_avg": 17.5,
@@ -129,11 +111,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 20.8,
+      "recent_avg": 20.7,
       "previous_avg": 24.7,
-      "delta": -3.9,
-      "recent_mentions": 20,
+      "delta": -4.0,
+      "recent_mentions": 21,
       "previous_mentions": 17
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 28.3,
+      "previous_avg": 32.1,
+      "delta": -3.8,
+      "recent_mentions": 9,
+      "previous_mentions": 7
     },
     {
       "key": "house of representatives",
@@ -174,13 +165,22 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 59.3,
-      "previous_avg": 57.9,
-      "delta": 1.4,
-      "recent_mentions": 15,
-      "previous_mentions": 14
+      "recent_avg": 58.4,
+      "previous_avg": 57.3,
+      "delta": 1.1,
+      "recent_mentions": 16,
+      "previous_mentions": 13
+    },
+    {
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 19.0,
+      "previous_avg": 20.0,
+      "delta": -1.0,
+      "recent_mentions": 5,
+      "previous_mentions": 3
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-30 18:30:38"
+  "generated": "2026-10-30 21:29:57"
 }
