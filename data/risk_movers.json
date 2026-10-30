@@ -1,22 +1,13 @@
 {
   "movers": [
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 45.0,
-      "previous_avg": 16.2,
-      "delta": 28.8,
-      "recent_mentions": 2,
-      "previous_mentions": 4
-    },
-    {
       "key": "united bank for africa",
       "label": "United Bank for Africa",
       "recent_avg": 20.0,
       "previous_avg": 45.0,
       "delta": -25.0,
       "recent_mentions": 2,
-      "previous_mentions": 2
+      "previous_mentions": 1
     },
     {
       "key": "presidency",
@@ -28,6 +19,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 36.7,
+      "previous_avg": 16.2,
+      "delta": 20.5,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 28.3,
@@ -35,6 +35,15 @@
       "delta": -20.2,
       "recent_mentions": 9,
       "previous_mentions": 10
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 23.3,
+      "previous_avg": 43.3,
+      "delta": -20.0,
+      "recent_mentions": 6,
+      "previous_mentions": 3
     },
     {
       "key": "lagos state government",
@@ -46,39 +55,12 @@
       "previous_mentions": 2
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 23.3,
-      "previous_avg": 37.5,
-      "delta": -14.2,
-      "recent_mentions": 6,
-      "previous_mentions": 4
-    },
-    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "recent_avg": 51.2,
+      "recent_avg": 56.0,
       "previous_avg": 40.0,
-      "delta": 11.2,
-      "recent_mentions": 4,
-      "previous_mentions": 1
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 26.8,
-      "previous_avg": 37.0,
-      "delta": -10.2,
-      "recent_mentions": 11,
-      "previous_mentions": 5
-    },
-    {
-      "key": "jpmorgan",
-      "label": "JPMorgan",
-      "recent_avg": 20.0,
-      "previous_avg": 30.0,
-      "delta": -10.0,
-      "recent_mentions": 2,
+      "delta": 16.0,
+      "recent_mentions": 5,
       "previous_mentions": 1
     },
     {
@@ -100,15 +82,6 @@
       "previous_mentions": 2
     },
     {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "recent_avg": 18.3,
-      "previous_avg": 10.0,
-      "delta": 8.3,
-      "recent_mentions": 3,
-      "previous_mentions": 3
-    },
-    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "recent_avg": 25.0,
@@ -123,8 +96,26 @@
       "recent_avg": 20.0,
       "previous_avg": 13.3,
       "delta": 6.7,
-      "recent_mentions": 4,
+      "recent_mentions": 5,
       "previous_mentions": 3
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 27.5,
+      "previous_avg": 34.2,
+      "delta": -6.7,
+      "recent_mentions": 10,
+      "previous_mentions": 6
+    },
+    {
+      "key": "national information technology development agency",
+      "label": "National Information Technology Development Agency",
+      "recent_avg": 17.5,
+      "previous_avg": 12.5,
+      "delta": 5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     },
     {
       "key": "ekiti state house of assembly",
@@ -136,13 +127,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 62.1,
-      "previous_avg": 57.9,
-      "delta": 4.2,
-      "recent_mentions": 14,
-      "previous_mentions": 14
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 20.8,
+      "previous_avg": 24.7,
+      "delta": -3.9,
+      "recent_mentions": 20,
+      "previous_mentions": 17
     },
     {
       "key": "house of representatives",
@@ -179,8 +170,17 @@
       "delta": 2.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 59.3,
+      "previous_avg": 57.9,
+      "delta": 1.4,
+      "recent_mentions": 15,
+      "previous_mentions": 14
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-30 13:55:17"
+  "generated": "2026-10-30 18:30:38"
 }

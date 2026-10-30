@@ -1,93 +1,93 @@
 {
-  "generated": "2026-10-30 13:55:07",
+  "generated": "2026-10-30 18:30:36",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 3948,
+      "likes": 3979,
       "downloads": 145869
     },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 791,
+      "likes": 793,
       "downloads": 12178
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 528,
+      "likes": 539,
       "downloads": 23694
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 464,
+      "likes": 479,
       "downloads": 15980
     },
     {
       "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
       "task": "text-generation",
-      "likes": 493,
+      "likes": 501,
       "downloads": 1747945
-    },
-    {
-      "id": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "task": "text-generation",
-      "likes": 1251,
-      "downloads": 19015
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 433,
+      "likes": 440,
       "downloads": 24276
     },
     {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 9909,
-      "downloads": 2335172
+      "id": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "task": "text-generation",
+      "likes": 1255,
+      "downloads": 19015
+    },
+    {
+      "id": "mistralai/Mistral-Large-4-1T-A52B",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "task": "image-text-to-text",
+      "likes": 1322,
+      "downloads": 1239
     }
   ],
   "papers": [
     {
-      "title": "FDSML: Formula-Driven Supervised Metric Learning with Parameter-Aware Triplet Loss",
-      "url": "https://huggingface.co/papers/2610.39423",
+      "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
+      "url": "https://huggingface.co/papers/2610.39293",
       "upvotes": 1
     },
     {
-      "title": "Holo4D: Holistic 4D Reconstruction as Geometric Control for Video Diffusion",
-      "url": "https://huggingface.co/papers/2610.25276",
+      "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
+      "url": "https://huggingface.co/papers/2610.34298",
       "upvotes": 2
     },
     {
-      "title": "Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities",
-      "url": "https://huggingface.co/papers/2610.39301",
-      "upvotes": 12
+      "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
+      "url": "https://huggingface.co/papers/2609.05881",
+      "upvotes": 2
     },
     {
-      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
-      "url": "https://huggingface.co/papers/2610.39287",
+      "title": "Training Foundation Models with a Single Algorithm",
+      "url": "https://huggingface.co/papers/2610.40564",
+      "upvotes": 2
+    },
+    {
+      "title": "ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics",
+      "url": "https://huggingface.co/papers/2610.23656",
       "upvotes": 3
     },
     {
-      "title": "PhysInsert: Physically Plausible Object Insertion with Geometric Priors and Bidirectional Object-Scene Interactions",
-      "url": "https://huggingface.co/papers/2610.40453",
-      "upvotes": 11
-    },
-    {
-      "title": "AB-Attention: Accurate Block Attention for Accelerating Video Diffusion Transformers",
-      "url": "https://huggingface.co/papers/2610.39663",
-      "upvotes": 3
+      "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs",
+      "url": "https://huggingface.co/papers/2610.39302",
+      "upvotes": 6
     }
   ]
 }
