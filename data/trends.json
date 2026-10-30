@@ -1,19 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 216,
-  "previous_articles": 206,
+  "recent_articles": 218,
+  "previous_articles": 204,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 21,
-      "previous": 7,
-      "change": 14
+      "recent": 22,
+      "previous": 6,
+      "change": 16
     },
     {
       "term": "court",
-      "recent": 17,
-      "previous": 7,
-      "change": 10
+      "recent": 16,
+      "previous": 8,
+      "change": 8
     },
     {
       "term": "reps",
@@ -32,6 +32,12 @@
       "recent": 7,
       "previous": 1,
       "change": 6
+    },
+    {
+      "term": "efcc",
+      "recent": 15,
+      "previous": 10,
+      "change": 5
     },
     {
       "term": "cbn",
@@ -56,21 +62,9 @@
       "recent": 6,
       "previous": 1,
       "change": 5
-    },
-    {
-      "term": "loans",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     }
   ],
   "falling": [
-    {
-      "term": "lagos",
-      "recent": 4,
-      "previous": 11,
-      "change": -7
-    },
     {
       "term": "bill",
       "recent": 2,
@@ -78,22 +72,22 @@
       "change": -7
     },
     {
+      "term": "lagos",
+      "recent": 5,
+      "previous": 11,
+      "change": -6
+    },
+    {
       "term": "son",
       "recent": 1,
-      "previous": 8,
-      "change": -7
+      "previous": 7,
+      "change": -6
     },
     {
       "term": "interest",
       "recent": 0,
       "previous": 6,
       "change": -6
-    },
-    {
-      "term": "probe",
-      "recent": 4,
-      "previous": 9,
-      "change": -5
     },
     {
       "term": "assembly",
@@ -124,22 +118,28 @@
       "recent": 0,
       "previous": 5,
       "change": -5
+    },
+    {
+      "term": "probe",
+      "recent": 4,
+      "previous": 8,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 157,
-      "previous": 142
+      "recent": 159,
+      "previous": 141
     },
     {
       "category": "Legal",
-      "recent": 34,
-      "previous": 34
+      "recent": 33,
+      "previous": 33
     },
     {
       "category": "Company",
-      "recent": 22,
+      "recent": 23,
       "previous": 28
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-30 18:30:36"
+  "generated": "2026-10-30 21:29:55"
 }
