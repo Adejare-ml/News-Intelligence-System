@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 219,
-  "previous_articles": 203,
+  "recent_articles": 223,
+  "previous_articles": 201,
   "rising": [
     {
       "term": "tinubu",
@@ -84,12 +84,6 @@
       "change": -5
     },
     {
-      "term": "lagos",
-      "recent": 5,
-      "previous": 10,
-      "change": -5
-    },
-    {
       "term": "assembly",
       "recent": 3,
       "previous": 8,
@@ -114,6 +108,12 @@
       "change": -5
     },
     {
+      "term": "lagos",
+      "recent": 6,
+      "previous": 10,
+      "change": -4
+    },
+    {
       "term": "alleged",
       "recent": 4,
       "previous": 8,
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 157,
-      "previous": 140
+      "recent": 160,
+      "previous": 138
     },
     {
       "category": "Legal",
@@ -139,7 +139,7 @@
     },
     {
       "category": "Company",
-      "recent": 26,
+      "recent": 27,
       "previous": 31
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-31 17:36:51"
+  "generated": "2026-10-31 20:33:13"
 }
