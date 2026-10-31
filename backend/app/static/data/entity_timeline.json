@@ -3361,6 +3361,19 @@
       ]
     },
     {
+      "key": "opay",
+      "label": "OPay",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "ogunwuyi",
       "label": "Ogunwuyi",
       "total_mentions": 3,
@@ -4665,19 +4678,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "opay",
-      "label": "OPay",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -6019,5 +6019,5 @@
       ]
     }
   ],
-  "generated": "2026-10-31 13:20:48"
+  "generated": "2026-10-31 17:36:52"
 }
