@@ -1,42 +1,36 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-30 21:26:53 (UTC)
-**Run Window:** 2026-10-30, all runs to 21:26 (run 4 of the day)
+**Generated on:** 2026-10-31 02:10:40 (UTC)
+**Run Window:** 2026-10-31, all runs to 02:10 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 41
-- **High Risk Signals:** 3
-- **Appointments Logged:** 3
-- **Procurement Awards:** 3
+- **Total Articles Processed:** 6
+- **High Risk Signals:** 1
+- **Appointments Logged:** 0
+- **Procurement Awards:** 0
 
 ---
 
-**Report Date** – 2026‑10‑30 | Coverage – “All articles published on 2026‑10‑30 up to 21:26 (run 4 of the day)”  
+**Report Date:** October 31, 2026  
+**Coverage Window:** Articles published on October 31, 2026 up to 02:10
+
+### Key Developments
+
+* **OPay NYSE Listing:** Fintech firm OPay has officially debuted on the New York Stock Exchange, raising $304 million in capital while actively targeting Nigerian retail and institutional participation to expand its investor base. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxNWm05cFFGYzZGVXk1U21rR0RWaHVTbzl3WjdXSmc2dHFNdHRHanFLMlI1S1I0UGdPNU9ILWUyOHVxdjQ5VmxMMHJSc1NHc2gzTnNma2FnUm53ZUVQa0JHTWZ6YUFpYjBjMVJVdnhKMk9ncnNEVHBZa1FXS0U2R2NRbFNMRU0?oc=5))  
+* **Seven modular refineries to begin operations in 2027**. Nigeria's modular refining sector is projected to expand in 2027 with seven new refineries commencing operations. ([The Punch](https://punchng.com/seven-modular-refineries-to-begin-operations-in-2027/))  
+* **EFCC recovers N1.05bn for disengaged Adamawa teachers**. The Economic and Financial Crimes Commission (EFCC) has recovered N1.05 billion intended for disengaged teachers in Adamawa State. ([Punch Newspapers](https://news.google.com/rss/articles/CBMif0FVX3lxTE9kNVFFc2JhOVJ4RFozVHhYclVzS0JVYThUaWlZaE1tWjJ1Y21OeUJoWmJXbzEwbTFteDgzNzRrOEJ5SnhJNVRxNDdpYXpCNzJjMzA2N05wT2QzNk9nYjFvNmNzMklnS1p1ZnZlOXR5emQtQTJzak1NcHBYWVdhTGM?oc=5))  
+* **Nigeria joins 33 African nations in landmark medicines treaty to fight fake drugs**. Nigeria has joined a landmark medicines treaty alongside 33 other African nations aimed at combating the proliferation of counterfeit drugs. ([tribuneonlineng](https://tribuneonlineng.com/nigeria-joins-33-african-nations-in-landmark-medicines-treaty-to-fight-fake-drugs/))  
+
+### High Risk Alerts
+
+* **Falana tasks Senate on recovery of $123bn, N66bn oil funds**. Femi Falana has called on the National Assembly to ensure the recovery of $123.17 billion in outstanding oil royalties, taxes, and dividends, as well as N66.4 billion in other funds. ([The Punch](https://punchng.com/falana-tasks-senate-on-recovery-of-123bn-n66bn-oil-funds/))  
+
+### Beneficial Ownership & PSC Disclosures
+
+The monitoring data for this period contains no beneficial ownership or Person with Significant Control (PSC) notifications.
+
+### Procurement & Board Changes
+
+No public procurement notices, contract awards, or corporate directorship updates were published during this monitoring period.
 
 ---
-
-### Key Developments  
-- The **Edo State Government** sealed nine companies after uncovering unpaid taxes amounting to ₦8.98 bn, reflecting intensified fiscal compliance enforcement.  ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMijAFBVV95cUxQZFhMX3VycGFjN0h5Wl9LbU1RZ3NyTjJHVU9WdkRvRnd1UWxuZTdxUDBXQXltNVp1OUdrRUdMZjZ1bTNGX3NvS2F3d2x3SE44MlJUd0FINlpCVlp3eXlpeWRRQXZzdzQ4ZFBHNHVqVXJjVVV1bmlxejdnRHAtM2JsZi15RzVLYm13RHpOXw?oc=5)) / **Edo State Government** ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMijAFBVV95cUxQZFhMX3VycGFjN0h5Wl9LbU1RZ3NyTjJHVU9WdkRvRnd1UWxuZTdxUDBXQXltNVp1OUdrRUdMZjZ1bTNGX3NvS2F3d2x3SE44MlJUd0FINlpCVlp3eXlpeWRRQXZzdzQ4ZFBHNHVqVXJjVVV1bmlxejdnRHAtM2JsZi15RzVLYm13RHpOXw?oc=5))  
-- The **Economic and Financial Crimes Commission (EFCC)** recovered and returned ₦1.05 bn to 659 teachers of the Adamawa State Post‑Primary Schools Management Board, underscoring anti‑corruption momentum.  ([The Punch](https://punchng.com/efcc-recovers-n1-05bn-for-disengaged-adamawa-teachers/)) / **EFCC, Adamawa State Post‑Primary Schools Management Board** ([The Punch](https://punchng.com/efcc-recovers-n1-05bn-for-disengaged-adamawa-teachers/))  
-- Commercial banks’ deposits with the Central Bank of Nigeria total ₦6.98 trn, providing a safety net for liquidity during an upcoming Treasury‑bill issue.  ([Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTE4xMXZFZ0NQNmZhVFhKcUVPakppaUVjZG5zYXNma2JDWUw3bGJVWVdOYWdOczItLUdDREMwSC1pN3NxZW1FQWlCU1ljQjY5elFiQ3c5WlZaUk96RHBmaFZjbkNZR281YzVva3dUZVdMYk5CakN2bWltTmNMcm5yZw?oc=5)) / **Commercial Banks** ([Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTE4xMXZFZ0NQNmZhVFhKcUVPakppaUVjZG5zYXNma2JDWUw3bGJVWVdOYWdOczItLUdDREMwSC1pN3NxZW1FQWlCU1ljQjY5elFiQ3c5WlVaUk96RHBmaFZjbkNZR281YzVva3dUZVdNYk5CakN2bWltTmNMcm5yZw?oc=5))  
-- President Tinubu highlighted Nigeria’s credit‑rating upgrade as a means to lower borrowing costs and attract foreign investment, signalling fiscal stability.  ([The Eagle Online](https://news.google.com/rss/articles/CBMirwFBVV95cUxNenQ3dGRTcjhkYUk3Slplazd2cUplYjFmVlNMMmxSNndMTTVhZ1hhaWhZckRrTDZJTFFKVlhRMlB0R2F6SldlaWozS2JseThDRGtDck5RRTBkWlZNaXd0X2FzTmppUnVXU3ltZ2VDRGgtYVpxeUV6RGhyTE9Bb0VSUUU3aDg4VE5jVlZGdms3RDBRYndwcWdOeUxSWXNiaURsSlVDSzdHSTRUdElVYlVF?oc=5)) / **Federal Government** ([The Eagle Online](https://news.google.com/rss/articles/CBMirwFBVV95cUxNenQ3dGRTcjhkYUk3Slplazd2cUplYjFmVlNMMmxSNndMTTVhZ1hhaWhZckRrTDZJTFFKVlhRMlB0R2F6SldlaWozS2JseThDRGtDck5RRTBkWlZNaXd0X2FzTmppUnVXU3ltZ2VDRGgtYVpxeUV6RGhyTE9Bb0VSUUU3aDg4VE5jVlZGdms3RDBRYndwcWdOeUxSWXNiaURsSlVDSzdHSTRUdElVYlVF?oc=5))  
-
----
-
-### High Risk Alerts  
-
----
-
-### Beneficial Ownership & PSC Disclosures  
-No PSC disclosures or significant control information were identified within the coverage period.  
-
----
-
-### Procurement & Board Changes  
-- **Federal Government** procured the Lagos‑Calabar Coastal Highway, a major public‑works project intended to boost regional trade and employment. ([The Eagle Online](https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUkN5VFljaGRqRjhKQnR6RVlEb1VPQU16bzBzbDBFUjJPNllXNHZkZm5RcjE4U05GbnpQRDRfMkwyYnNuLW5rUlFIOFViUjMtekQxMFFZODZvalY4WXJ5dkdZeGJfanBpWi1LX3ZiYmlxbFZCOWpkcHoydmFlcnM0QjJTcXFiNEdEVkVRYmR4NW83akhvd0Z2QWZWM3R1eWxuUzdfZXFobU4?oc=5))  
-- The **Police Service Commission (PSC)** elevated 4,124 officers, promoted 2 DIGs and 10 AIGs, and appointed 2 additional Deputy Inspectors General, reinforcing senior police leadership. ([sunnewsonline](https://thesun.ng/psc-elevates-4124-police-officers-promotes-2-digs-10-aigs/))  
-- President Tinubu nominated six Executive Directors for the **NMDPRA**, a strategic move toward reshaping petroleum regulation. ([The State House, Abuja](https://news.google.com/rss/articles/CBMitAFBVV95cUxQeGlkYU5DRElxRldmaVNvV25jc20xM3p2NXpTZ0pYMW5xeWkwbjVoTlNuMFgtdEJfT0dBUGFXZ0NnRkRXRlZadzYzczFYZEdnc1FJUzlENi1ITzVzNUhmODh3c2x3bFV5UC1IMktudEJXOFUyNDdycDdCTkRiT3duMlZDZ0U1akRtQTc2Sm8yTlV1OTM4ZGFYUEdZczBxdmgxbkZ0M3NXTmd6dFp0YVBJc3Z4Z3E?oc=5))  
-
----
-
----
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*

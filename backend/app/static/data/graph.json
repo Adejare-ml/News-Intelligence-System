@@ -127,26 +127,38 @@
       "risk": "Low"
     },
     {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8b2c9ab00c80",
+      "label": "Government of Russia",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c25544734c7e",
+      "label": "Nigerian Content Development and Monitoring Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -165,12 +177,6 @@
     {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -231,12 +237,6 @@
     {
       "id": "71c59636e7a3",
       "label": "Federal Executive Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -657,6 +657,12 @@
     {
       "id": "e1894ded2ce6",
       "label": "Federal Government of Nigeria / Benue State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a75518830b0f",
+      "label": "National Information Technology Development Agency",
       "type": "agency",
       "risk": "Low"
     }

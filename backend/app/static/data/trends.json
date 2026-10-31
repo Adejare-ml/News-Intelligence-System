@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 218,
-  "previous_articles": 204,
+  "recent_articles": 223,
+  "previous_articles": 203,
   "rising": [
     {
       "term": "tinubu",
@@ -14,6 +14,12 @@
       "recent": 16,
       "previous": 8,
       "change": 8
+    },
+    {
+      "term": "efcc",
+      "recent": 16,
+      "previous": 9,
+      "change": 7
     },
     {
       "term": "reps",
@@ -32,12 +38,6 @@
       "recent": 7,
       "previous": 1,
       "change": 6
-    },
-    {
-      "term": "efcc",
-      "recent": 15,
-      "previous": 10,
-      "change": 5
     },
     {
       "term": "cbn",
@@ -75,12 +75,6 @@
       "term": "lagos",
       "recent": 5,
       "previous": 11,
-      "change": -6
-    },
-    {
-      "term": "son",
-      "recent": 1,
-      "previous": 7,
       "change": -6
     },
     {
@@ -124,22 +118,28 @@
       "recent": 4,
       "previous": 8,
       "change": -4
+    },
+    {
+      "term": "gas",
+      "recent": 3,
+      "previous": 7,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 159,
-      "previous": 141
+      "recent": 162,
+      "previous": 142
     },
     {
       "category": "Legal",
       "recent": 33,
-      "previous": 33
+      "previous": 31
     },
     {
       "category": "Company",
-      "recent": 23,
+      "recent": 25,
       "previous": 28
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-30 21:29:55"
+  "generated": "2026-10-31 02:11:28"
 }

@@ -60,6 +60,15 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 11,
+      "mentions": 15,
+      "risk": {
+        "Medium": 3,
+        "Low": 8
+      }
+    },
+    {
       "industry": "Energy",
       "companies": 8,
       "mentions": 14,
@@ -67,15 +76,6 @@
         "Medium": 4,
         "High": 2,
         "Low": 2
-      }
-    },
-    {
-      "industry": "Fintech",
-      "companies": 10,
-      "mentions": 14,
-      "risk": {
-        "Medium": 3,
-        "Low": 7
       }
     },
     {
@@ -581,6 +581,14 @@
       }
     },
     {
+      "industry": "Energy Market Intelligence",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Energy/Power Distribution",
       "companies": 1,
       "mentions": 1,
@@ -901,5 +909,5 @@
       }
     }
   ],
-  "generated": "2026-10-30 21:29:57"
+  "generated": "2026-10-31 02:11:31"
 }
