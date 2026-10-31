@@ -67,6 +67,17 @@ class TestPublishedToday:
         levels = [r["analysis"]["risk_level"] for r in published_today(rows, today=TODAY)]
         assert levels == ["High", "Standard", "High", "Standard"]
 
+    def test_stored_level_and_story_detail_are_kept(self):
+        row = _row("2026-08-16T10:00:00", **{
+            "Risk Score": 40, "Risk Level": "Medium", "Event Type": "Procurement",
+            "Key Facts": "Oyo approved N4.6bn | Covers Circular road owners", "Why It Matters": "Large state payout.",
+        })
+        a = published_today([row], today=TODAY)[0]["analysis"]
+        assert a["risk_level"] == "Medium"
+        assert a["event_type"] == "Procurement"
+        assert a["key_facts"] == ["Oyo approved N4.6bn", "Covers Circular road owners"]
+        assert a["why_it_matters"] == "Large state payout."
+
 
 class TestDayTotals:
     def test_sums_only_todays_rows(self):

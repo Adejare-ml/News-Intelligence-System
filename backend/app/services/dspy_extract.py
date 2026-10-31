@@ -257,6 +257,10 @@ def prediction_to_dict(pred: Any) -> Dict[str, Any]:
         "risk_level": getattr(pred, "risk_level", "Low"),
         "importance_score": int(getattr(pred, "importance_score", 0) or 0),
         "summary": getattr(pred, "summary", "") or "",
+        # The typed program does not ask for these yet (its optimised
+        # instruction would need re-running); the email copes without them.
+        "key_facts": list(getattr(pred, "key_facts", None) or []),
+        "why_it_matters": getattr(pred, "why_it_matters", None) or "",
         "organizations": dump(getattr(pred, "organizations", []) or []),
         "people": dump(getattr(pred, "people", []) or []),
         "significant_control": dump(getattr(pred, "significant_control", []) or []),

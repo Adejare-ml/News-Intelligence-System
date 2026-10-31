@@ -29,6 +29,7 @@ from backend.app.services.ingestion import NewsIngestionService, parse_feed_date
 from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import analytics, images as article_images, relevance
 from backend.app.services import register_quality
+from backend.app.services import story_detail
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -407,7 +408,9 @@ def run_pipeline(seed: bool = False):
             "Event Type": analysis.get("event_type") or "Other",
             "Risk Level": analysis.get("risk_level") or "",
             "Importance": _int_cell(analysis.get("importance_score", 50)),
-            "Entities": entity_mentions(analysis)
+            "Entities": entity_mentions(analysis),
+            # Read from the full article now; the email shows them later.
+            **story_detail.article_cells(analysis),
         }
         
         added = db.add_article(db_article)
@@ -642,10 +645,14 @@ def published_today(article_rows: List[Dict[str, Any]], today=None) -> List[Dict
             "analysis": {
                 "summary": row.get("Summary") or "",
                 "category": row.get("Category") or "",
+                "event_type": row.get("Event Type") or "",
                 "risk_score": score,
-                # The sheet keeps only the numeric score; >=70 mirrors the
-                # dashboard's own critical-alert threshold (app.js).
-                "risk_level": "High" if score >= 70 else "Standard",
+                # The extractor's own level when the row has it; older rows
+                # keep only the score, and >=70 mirrors the dashboard's
+                # critical-alert threshold (app.js).
+                "risk_level": str(row.get("Risk Level") or "").strip()
+                or ("High" if score >= 70 else "Standard"),
+                **story_detail.from_row(row),
             },
         })
     return reduced

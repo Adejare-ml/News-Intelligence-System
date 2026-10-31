@@ -469,7 +469,9 @@ def _strip_citations(text: str) -> str:
             if start == -1:
                 start = trimmed.rfind("(")
             group = trimmed[start:].strip()
-            leftover = _SOURCE_TAG_RE.sub("", re.sub(r"\[[^\]]*\]\(https?://[^)\s]+\)", "", group))
+            # Any "[Name](...)" counts, even when the model broke the URL
+            # (spaces inside it); a broken link is still only a citation.
+            leftover = _SOURCE_TAG_RE.sub("", re.sub(r"\[[^\]]*\]\([^)]*\)", "", group))
             if start != -1 and not leftover.strip("() ;,&and"):
                 body = trimmed[:start]
                 continue
@@ -545,10 +547,18 @@ def clean_brief(md: str, records: Iterable[Dict[str, Any]]) -> str:
     out: List[str] = []
     for b in cleaned:
         seen = set()
+        lines: List[str] = []
         for line, url in b["items"]:
             if url and (url in seen or (is_key(b["title"]) and url in elsewhere)):
                 continue
             if url:
                 seen.add(url)
-            out.append(line)
+            lines.append(line)
+        # A section the rules emptied keeps its heading with a plain line,
+        # rather than a bare heading readers take for a rendering fault.
+        has_content = any(l.strip() and not _HEADING_RE.match(l) for l in lines)
+        if b["title"] and not has_content:
+            empty = "No high-risk items today." if is_alert(b["title"]) else "Nothing to report here today."
+            lines = [lines[0], empty, ""] if lines else [empty]
+        out.extend(lines)
     return "\n".join(out)
