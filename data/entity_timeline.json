@@ -315,7 +315,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-14",
@@ -355,8 +355,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 35.0,
+          "mentions": 4,
+          "avg_risk": 31.2,
           "max_risk": 65
         }
       ]
@@ -364,7 +364,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 25,
+      "total_mentions": 26,
       "points": [
         {
           "week": "2026-09-14",
@@ -404,8 +404,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 5,
-          "avg_risk": 16.0,
+          "mentions": 6,
+          "avg_risk": 16.7,
           "max_risk": 20
         }
       ]
@@ -786,6 +786,43 @@
       ]
     },
     {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 36.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 27.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
       "total_mentions": 11,
@@ -992,37 +1029,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 36.2,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 27.5,
-          "max_risk": 40
         }
       ]
     },
@@ -2489,6 +2495,19 @@
       ]
     },
     {
+      "key": "opay",
+      "label": "OPay",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 38.8,
+          "max_risk": 65
+        }
+      ]
+    },
+    {
       "key": "office of the national security adviser",
       "label": "Office of the National Security Adviser",
       "total_mentions": 4,
@@ -3361,19 +3380,6 @@
       ]
     },
     {
-      "key": "opay",
-      "label": "OPay",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "ogunwuyi",
       "label": "Ogunwuyi",
       "total_mentions": 3,
@@ -4094,6 +4100,19 @@
       "points": [
         {
           "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "government of russia",
+      "label": "Government of Russia",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -6004,20 +6023,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "barau jura barau",
-      "label": "Barau Jura Barau",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-10-31 17:36:52"
+  "generated": "2026-10-31 20:33:16"
 }

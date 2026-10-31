@@ -1,25 +1,25 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-31 17:31:56 (UTC)
-**Run Window:** 2026-10-31, all runs to 17:31 (run 3 of the day)
+**Generated on:** 2026-10-31 20:28:25 (UTC)
+**Run Window:** 2026-10-31, all runs to 20:28 (run 4 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 15
+- **Total Articles Processed:** 19
 - **High Risk Signals:** 1
 - **Appointments Logged:** 1
-- **Procurement Awards:** 0
+- **Procurement Awards:** 1
 
 ---
 
-# Executive Intelligence Summary: October 31, 2026
+# Executive Intelligence Report: Nigerian Corporate Transparency
 
 **Report Date:** 2026-10-31
-**Coverage:** All articles published on 2026-10-31 up to 17:31
+**Coverage:** All articles published on 2026-10-31 up to 20:28
 
 ### Key Developments
-* **OPay withdraws planned $304m US IPO over foreign regulatory inquiry**. OPay has withdrawn its plans for a $304 million initial public offering (IPO) in the United States. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMizAFBVV95cUxPeFRsQjF1YUZEQi05SlZCUFpVLXluWTJkdGtzVUVka0VndWM1UlVMVlZHbnFJRXFlZHdXSXVuSElHNkNXSFQyZ0NsRHcteHQ5RndaNXUxNnZTbFNsYVluM0JkWkVOR3AzRHptdXRMUlRtZGc5ZXpIb05qMjNwcDN4LW10R1lxSHNWUmdPSUlJTkgwc0N0Q3VZN3I2ampKUVRzakpzVW1RWTV2VUQ2VzBEbTJERVBzWWNoWDJ2a1VFQmJMZENpeTlxNzd3ZDU?oc=5))  
-* **Hamzat unveils 100-point manifesto, pledges child protection agency, state wealth fund**. Hamzat has unveiled a 100-point manifesto featuring pledges to establish a child protection agency and a state wealth fund. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQU5iZUtTQXd4RWJUbHZVVndGTmxBSzQ2T3B3YkVTVi1yeDQ1bjBHWi00WWpHMm05NTMwdUNxTHJxM2ZObUctSm02VmpLMU5JNjdHRnFqXzEwRkJ6TjRXYVVxLURyRGhSTlVWT2RiTU53QXJ1V0tJY2V6RG82dkcwcUhESnpzN2hOY1p1QnI4dTZpNEFxMjF5X1ZFSUx4eFlORTdicGxKa2hjRmpuREVyZWxpNmRzbHV0VWZrTHBhQmJjaDdfY3FYTDZuaUNocEtUczZRQ1FGRFlUOWs?oc=5))  
+* **OPay lists on NYSE, raises $304m in IPO at $4 billion valuation**. Fintech company OPay has listed on the New York Stock Exchange (NYSE), raising $304 million through an Initial Public Offering (IPO). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ0ZXOG1qYVN1TjlFazhIaDF4aUtCTFFlUzUwUjRid09VbU05a011SHRfbkZEbnVyeXhfOG42cWJLVURsTHZqekFGNnQySkwxQ0xxMlFfakdTM0NBUFdXcXVKM1VOejJsY2hkU29zQ3FlMUhMb09RU0I5ekhabkVwNTlrVXNiR01CV1ZzdUZ6MlJ5enFXNVBFa0o0eXBfcmt3eHA1eHBuLUNiSEc2LS1wdlhUcGp2OVZMNEE?oc=5))  
 * **Nigeria Becomes 34th AU Member State to Ratify African Medicine Treaty, NAFDAC DG Reveals**. Nigeria has officially ratified the African Medicine Treaty, becoming the 34th African Union member state to do so. ([thisdaylive](https://www.thisdaylive.com/2026/10/31/nigeria-becomes-34th-au-member-state-to-ratify-african-medicine-treaty-nafdac-dg-reveals/))  
-* **Tinubu welcomes Airtel’s open network launch**. President Tinubu has welcomed the launch of Airtel's open network. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtmV1l3NVBaYTJ3Wl82RU9hWm1QTVJJM1ZFX2VQRThTN1poeE4xN0dfbWxQY01uemVVclVxYUlOSXRzNHN6ZmZpQXdUeTA1WWVPckhKcF9yNnJEcUh0dzVkbXJuR0JuOHJkUmVHcDhoM0xqLVp5NEhFLUM5UjNMUWRZaHR3LWZjTHpEYmRzaFJJSlFwbU9fejlkYUFRY3JTSnZR?oc=5))  
+* **Infrastructure & Telecommunications:** President Tinubu endorsed Airtel's open network launch to improve connectivity ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtmV1l3NVBaYTJ3Wl82RU9hWm1QTVJJM1ZFX_eP8S7ZhxN17G_mlPcMznEu rUqaINIts4sffiAwTy05YeOrHJP_r6rDhTw5dmrnGBn8rdReGp8h3Lj-Zy4HE-C9R3LQdYhtw-fcLzDbs hRIJQpmO_z9daAQcrSJvQ?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtmV1l3NVBaYTJ3Wl82RU9hWm1QTVJJM1ZFX2VQRThTN1poeE4xN0dfbWxQY01uemVVclVxYUlOSXRzNHN6ZmZpQXdUeTA1WWVPckhKcF9yNnJEcUh0dzVkbXJuR0JuOHJkUmVHcDhoM0xqLVp5NEhFLUM5UjNMUWRZaHR3LWZjTHpEYmRzaFJJSlFwbU9fejlkYUFRY3JTSnZR?oc=5))  
+* **Fani-Kayode formally begins diplomatic assignment in South Africa**. Diepreye Fani-Kayode has formally commenced his diplomatic assignment in South Africa. ([vanguardngr](https://www.vanguardngr.com/2026/10/fani-kayode-formally-begins-diplomatic-assignment-in-south-africa/))  
 
 ### High Risk Alerts
 
@@ -27,7 +27,8 @@
 No persons with significant control were identified in the provided data.
 
 ### Procurement & Board Changes
-The Standards Organisation of Nigeria (SON) issued a MANCAP award to MATE Energy ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMidkFVX3lxTE01OVdlMUNpYUJiUjJqYzlfQUpuOGVWeUpEdHJUcWh5R2dEQVRxcEsxZ1pTRmEzSGp3RHF5bnBZVFRoTEN6eXpqV2VDX3lvZ0J0WGNPaWNRNkMwdnJ0Z2RQVTk5SWhfdFZGQm82NmNlc0xSVWdKNmc?oc=5)); otherwise, no further board or procurement activity was noted.
+* **Makinde approves ₦4.6bn compensation for Circular road-affected property owners**. Governor Makinde has approved the payment of ₦4.6 billion in compensation for property owners affected by the Circular road project. ([businessday](https://businessday.ng/news/article/makinde-approves-%E2%82%A64-6bn-compensation-for-circular-road-affected-property-owners/))  
+* **SON Rewards MATE Energy With MANCAP Award**. The Standards Organisation of Nigeria (SON) has granted the Mandatory Conformity Assessment Programme (MANCAP) award to MATE Energy. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMidkFVX3lxTE01OVdlMUNpYUJiUjJqYzlfQUpuOGVWeUpEdHJUcWh5R2dEQVRxcEsxZ1pTRmEzSGp3RHF5bnBZVFRoTEN6eXpqV2VDX3lvZ0J0WGNPaWNRNkMwdnJ0Z2RQVTk5SWhfdFZGQm82NmNlc0xSVWdKNmc?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*

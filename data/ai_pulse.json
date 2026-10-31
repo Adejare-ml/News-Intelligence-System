@@ -1,60 +1,60 @@
 {
-  "generated": "2026-10-31 17:36:50",
+  "generated": "2026-10-31 20:33:13",
   "models": [
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 846,
+      "likes": 856,
       "downloads": 13832
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4078,
+      "likes": 4096,
       "downloads": 156373
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 616,
+      "likes": 624,
       "downloads": 32933
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 529,
+      "likes": 538,
       "downloads": 24357
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1389,
+      "likes": 1399,
       "downloads": 2945
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 470,
+      "likes": 472,
       "downloads": 69231
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10046,
+      "likes": 10070,
       "downloads": 2441077
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 377,
+      "likes": 384,
       "downloads": 29615
     }
   ],

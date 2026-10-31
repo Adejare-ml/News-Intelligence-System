@@ -139,8 +139,20 @@
       "risk": "Low"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "b5da1d8370fd",
       "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "044ec82597eb",
-      "label": "Presidential Foreign Intervention Promotion Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "fc0df526d10a",
       "label": "Diepreye Fani-Kayode",
       "type": "person",
@@ -304,6 +304,12 @@
       "id": "5152c3f8bc4a",
       "label": "Adeniyi Adeyemi",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "044ec82597eb",
+      "label": "Presidential Foreign Intervention Promotion Council",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -586,12 +592,6 @@
       "id": "2cbc793c6023",
       "label": "Government of China",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -883,6 +883,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "9aaad96e9617",
+      "from": "334c4a4c42fd",
+      "to": "3a4a88456e84",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",

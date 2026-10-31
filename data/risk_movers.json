@@ -28,15 +28,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 35.0,
-      "previous_avg": 17.5,
-      "delta": 17.5,
-      "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "recent_avg": 56.0,
@@ -53,6 +44,15 @@
       "delta": -13.8,
       "recent_mentions": 4,
       "previous_mentions": 1
+    },
+    {
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 31.2,
+      "previous_avg": 17.5,
+      "delta": 13.7,
+      "recent_mentions": 4,
+      "previous_mentions": 2
     },
     {
       "key": "national assembly",
@@ -120,10 +120,10 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "recent_avg": 17.1,
+      "recent_avg": 17.5,
       "previous_avg": 13.3,
-      "delta": 3.8,
-      "recent_mentions": 7,
+      "delta": 4.2,
+      "recent_mentions": 8,
       "previous_mentions": 3
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-31 17:36:52"
+  "generated": "2026-10-31 20:33:16"
 }
