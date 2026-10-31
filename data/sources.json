@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2827,
+      "total": 2829,
       "published": 1545,
-      "filtered": 1282,
+      "filtered": 1284,
       "accept_rate": 55,
       "avg_risk": 28.4,
       "engines": {
@@ -30,31 +30,31 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 1078,
-      "published": 437,
-      "filtered": 641,
+      "total": 1084,
+      "published": 440,
+      "filtered": 644,
       "accept_rate": 41,
       "avg_risk": 27.4,
       "engines": {
         "unknown": 188,
-        "ollama": 245,
+        "ollama": 248,
         "nvidia": 4
       },
-      "last_seen": "2026-10-30"
+      "last_seen": "2026-10-31"
     },
     {
       "source": "The Punch",
-      "total": 676,
-      "published": 385,
-      "filtered": 291,
+      "total": 681,
+      "published": 387,
+      "filtered": 294,
       "accept_rate": 57,
-      "avg_risk": 32.7,
+      "avg_risk": 32.8,
       "engines": {
         "unknown": 104,
         "nvidia": 6,
-        "ollama": 275
+        "ollama": 277
       },
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-30"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -207,10 +207,10 @@
     },
     {
       "source": "The Eagle Online",
-      "total": 115,
+      "total": 119,
       "published": 29,
-      "filtered": 86,
-      "accept_rate": 25,
+      "filtered": 90,
+      "accept_rate": 24,
       "avg_risk": 33.3,
       "engines": {
         "ollama": 29
@@ -296,16 +296,16 @@
     },
     {
       "source": "tribuneonlineng",
-      "total": 36,
-      "published": 10,
+      "total": 37,
+      "published": 11,
       "filtered": 26,
-      "accept_rate": 28,
-      "avg_risk": 28.7,
+      "accept_rate": 30,
+      "avg_risk": 27.0,
       "engines": {
         "unknown": 3,
-        "ollama": 7
+        "ollama": 8
       },
-      "last_seen": "2026-10-24"
+      "last_seen": "2026-10-30"
     },
     {
       "source": "thisdaylive",
@@ -2255,5 +2255,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-30 21:29:57"
+  "generated": "2026-10-31 02:11:31"
 }
