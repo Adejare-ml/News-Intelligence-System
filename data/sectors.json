@@ -34,7 +34,7 @@
     {
       "industry": "Telecoms",
       "companies": 10,
-      "mentions": 52,
+      "mentions": 53,
       "risk": {
         "Low": 9,
         "Medium": 1
@@ -51,6 +51,15 @@
       }
     },
     {
+      "industry": "Fintech",
+      "companies": 11,
+      "mentions": 16,
+      "risk": {
+        "Medium": 3,
+        "Low": 8
+      }
+    },
+    {
       "industry": "Conglomerate",
       "companies": 3,
       "mentions": 15,
@@ -60,22 +69,13 @@
       }
     },
     {
-      "industry": "Fintech",
-      "companies": 11,
-      "mentions": 15,
-      "risk": {
-        "Medium": 3,
-        "Low": 8
-      }
-    },
-    {
       "industry": "Energy",
-      "companies": 8,
-      "mentions": 14,
+      "companies": 9,
+      "mentions": 15,
       "risk": {
         "Medium": 4,
         "High": 2,
-        "Low": 2
+        "Low": 3
       }
     },
     {
@@ -88,20 +88,20 @@
       }
     },
     {
+      "industry": "Agriculture",
+      "companies": 10,
+      "mentions": 12,
+      "risk": {
+        "Low": 9,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 2,
       "mentions": 12,
       "risk": {
         "High": 1,
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Agriculture",
-      "companies": 9,
-      "mentions": 11,
-      "risk": {
-        "Low": 8,
         "Medium": 1
       }
     },
@@ -909,5 +909,5 @@
       }
     }
   ],
-  "generated": "2026-10-31 02:11:31"
+  "generated": "2026-10-31 13:20:48"
 }

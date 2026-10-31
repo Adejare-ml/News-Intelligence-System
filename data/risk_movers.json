@@ -10,15 +10,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 36.7,
-      "previous_avg": 16.2,
-      "delta": 20.5,
-      "recent_mentions": 3,
-      "previous_mentions": 4
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 28.3,
@@ -55,22 +46,31 @@
       "previous_mentions": 1
     },
     {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 21.2,
-      "previous_avg": 30.0,
-      "delta": -8.8,
-      "recent_mentions": 4,
-      "previous_mentions": 2
-    },
-    {
       "key": "national assembly",
       "label": "National Assembly",
-      "recent_avg": 28.3,
-      "previous_avg": 20.0,
-      "delta": 8.3,
-      "recent_mentions": 6,
+      "recent_avg": 31.0,
+      "previous_avg": 18.8,
+      "delta": 12.2,
+      "recent_mentions": 5,
+      "previous_mentions": 4
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 18.3,
+      "previous_avg": 30.0,
+      "delta": -11.7,
+      "recent_mentions": 3,
       "previous_mentions": 3
+    },
+    {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 32.5,
+      "previous_avg": 23.8,
+      "delta": 8.7,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     },
     {
       "key": "festus keyamo",
@@ -91,15 +91,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 18.3,
-      "previous_avg": 13.3,
-      "delta": 5.0,
-      "recent_mentions": 6,
-      "previous_mentions": 3
-    },
-    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
       "recent_avg": 17.5,
@@ -118,22 +109,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 20.7,
-      "previous_avg": 24.7,
-      "delta": -4.0,
-      "recent_mentions": 22,
-      "previous_mentions": 17
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 28.3,
-      "previous_avg": 32.1,
-      "delta": -3.8,
-      "recent_mentions": 9,
-      "previous_mentions": 7
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 17.1,
+      "previous_avg": 13.3,
+      "delta": 3.8,
+      "recent_mentions": 7,
+      "previous_mentions": 3
     },
     {
       "key": "house of representatives",
@@ -160,16 +142,25 @@
       "previous_avg": 15.0,
       "delta": 2.5,
       "recent_mentions": 4,
-      "previous_mentions": 5
+      "previous_mentions": 4
     },
     {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "recent_avg": 17.5,
-      "previous_avg": 15.0,
-      "delta": 2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 20.7,
+      "previous_avg": 22.1,
+      "delta": -1.4,
+      "recent_mentions": 21,
+      "previous_mentions": 17
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 29.4,
+      "previous_avg": 30.6,
+      "delta": -1.2,
+      "recent_mentions": 8,
+      "previous_mentions": 8
     },
     {
       "key": "economic and financial crimes commission",
@@ -179,8 +170,17 @@
       "delta": -0.8,
       "recent_mentions": 17,
       "previous_mentions": 11
+    },
+    {
+      "key": "nasir el rufai",
+      "label": "Nasir El-Rufai",
+      "recent_avg": 40.0,
+      "previous_avg": 40.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-31 02:11:31"
+  "generated": "2026-10-31 13:20:48"
 }

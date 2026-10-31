@@ -1,73 +1,73 @@
 {
-  "generated": "2026-10-31 02:11:28",
+  "generated": "2026-10-31 13:20:46",
   "models": [
-    {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "task": "image-text-to-text",
-      "likes": 4012,
-      "downloads": 145869
-    },
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 798,
-      "downloads": 12178
+      "likes": 825,
+      "downloads": 13832
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "task": "image-text-to-text",
+      "likes": 4060,
+      "downloads": 156373
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 567,
-      "downloads": 23694
+      "likes": 600,
+      "downloads": 32933
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 503,
-      "downloads": 15980
-    },
-    {
-      "id": "baidu/Unlimited-OCR-2",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-      "task": "image-text-to-text",
-      "likes": 455,
-      "downloads": 24276
-    },
-    {
-      "id": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-      "task": "text-generation",
-      "likes": 507,
-      "downloads": 1747945
+      "likes": 521,
+      "downloads": 24357
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1347,
-      "downloads": 1239
+      "likes": 1378,
+      "downloads": 2945
+    },
+    {
+      "id": "baidu/Unlimited-OCR-2",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "task": "image-text-to-text",
+      "likes": 468,
+      "downloads": 69231
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 9971,
-      "downloads": 2335172
+      "likes": 10021,
+      "downloads": 2441077
+    },
+    {
+      "id": "RecursiveSI/flint",
+      "url": "https://huggingface.co/RecursiveSI/flint",
+      "task": "text-generation",
+      "likes": 1271,
+      "downloads": 23079
     }
   ],
   "papers": [
     {
       "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
       "url": "https://huggingface.co/papers/2610.38293",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
       "url": "https://huggingface.co/papers/2610.38681",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
@@ -87,7 +87,7 @@
     {
       "title": "Training Foundation Models with a Single Algorithm",
       "url": "https://huggingface.co/papers/2610.40564",
-      "upvotes": 3
+      "upvotes": 5
     }
   ]
 }
