@@ -24,6 +24,7 @@ import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
+from urllib.parse import urlparse
 
 from backend.app.services import relevance, story_detail
 from backend.app.services.analytics import entity_key
@@ -180,6 +181,12 @@ def _num(value: Any, default: float = 0.0) -> float:
         return default
 
 
+def _is_google_news(url: str) -> bool:
+    """Google News feed links: AURA saw only the headline and feed snippet."""
+    host = (urlparse(url).hostname or "").lower()
+    return host == "news.google.com"
+
+
 def report_from_row(row: Dict[str, Any]) -> Optional[Report]:
     url = str(row.get("URL") or "").strip()
     title = str(row.get("Title") or "").strip()
@@ -210,7 +217,7 @@ def report_from_row(row: Dict[str, Any]) -> Optional[Report]:
         entities=[e.strip() for e in str(row.get("Entities") or "").split("|") if e.strip()],
         key_facts=detail["key_facts"],
         why=detail["why_it_matters"],
-        detail=detail["detail"] or ("headline" if "news.google.com" in url else ""),
+        detail=detail["detail"] or ("headline" if _is_google_news(url) else ""),
         engine=str(row.get("Engine") or "").strip(),
     )
     rep.stage = stage_of(rep.headline)

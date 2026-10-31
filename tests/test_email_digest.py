@@ -205,6 +205,9 @@ class TestCardContent:
         r = row(20005, "Firm X wins N2bn contract", "Premium Times Nigeria", "2026-10-31T06:00:00Z",
                 url="https://news.google.com/rss/articles/abc")
         assert edition([r])["cards"][0]["headline_only"] is True
+        lookalike = row(20006, "Firm Y wins N3bn contract", "The Punch", "2026-10-31T06:00:00Z",
+                        url="https://punchng.com/news.google.com-mirror/")
+        assert edition([lookalike])["cards"][0]["headline_only"] is False
 
     def test_terms_are_defined_when_used(self):
         terms = {t["term"] for t in edition()["terms"]}
