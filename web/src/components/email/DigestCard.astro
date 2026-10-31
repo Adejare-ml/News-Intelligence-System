@@ -1,0 +1,83 @@
+---
+/** One story in the Morning Brief email: everything a reader needs without opening the article. */
+import type { DigestCard } from "../../lib/digest.ts";
+
+interface Props {
+  c: DigestCard;
+}
+const { c } = Astro.props;
+
+const ink = "#1b1a17";
+const muted = "#6b6558";
+const soft = "#3a372f";
+const gold = "#9c7420";
+const royal = "#1e3fae";
+const alertRed = "#a3312a";
+const panel = "#f6f1e4";
+const sans = "Helvetica,Arial,sans-serif";
+const serif = "Georgia,'Times New Roman',serif";
+const sub = `font:600 10px/1.4 ${sans};letter-spacing:1.5px;text-transform:uppercase;color:${muted};margin:12px 0 4px;`;
+const body = `font:15px/1.6 ${sans};color:${ink};`;
+const small = `font:13px/1.55 ${sans};color:${muted};`;
+const link = `color:${royal};text-decoration:none;font-weight:600;`;
+const flagColour = (f: string) => (f === "Alert" || f.startsWith("Allegation") ? alertRed : gold);
+---
+<tr><td style="padding:14px 32px 18px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style={`border-left:4px solid ${c.alert ? alertRed : gold};`}>
+    <tr><td style="padding:0 0 0 16px;">
+      <p style={`margin:0 0 6px;font:700 11px/1.4 ${sans};letter-spacing:1.5px;text-transform:uppercase;color:${muted};`}>
+        {c.n} · {c.theme}{c.event_type && c.event_type !== "Other" && ` · ${c.event_type}`}
+        {c.flags.map((f) => <span style={`color:${flagColour(f)};`}> · {f}</span>)}
+      </p>
+      {c.risk && <p style={`margin:0 0 6px;${small}`}>{c.risk}</p>}
+      <p style={`margin:0 0 4px;font:600 19px/1.3 ${serif};color:${ink};`}>{c.headline}</p>
+      <p style={`margin:0 0 10px;${small}`}>{c.byline}</p>
+
+      {c.what_happened && (<>
+        <p style={sub}>What happened</p>
+        <p style={`margin:0;${body}`}>{c.what_happened}</p>
+      </>)}
+
+      {c.key_facts.length > 0 && (<>
+        <p style={sub}>Key facts</p>
+        <ul style={`margin:0;padding:0 0 0 18px;${body}`}>
+          {c.key_facts.map((f) => <li style="margin:0 0 3px;">{f}</li>)}
+        </ul>
+      </>)}
+
+      {c.timeline.length > 0 && (<>
+        <p style={sub}>How the story moved</p>
+        <ul style={`margin:0;padding:0 0 0 18px;font:13px/1.55 ${sans};color:${soft};`}>
+          {c.timeline.map((t) => <li style="margin:0 0 3px;">{t}</li>)}
+        </ul>
+      </>)}
+
+      {c.headline_only && (
+        <p style={`margin:8px 0 0;font:italic 12px/1.5 ${sans};color:${muted};`}>
+          AURA saw only the headline and feed snippet of this report, not the full article.
+        </p>
+      )}
+
+      {c.analysis.length > 0 && (
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style={`margin:12px 0 0;background:${panel};border-radius:8px;`}>
+          <tr><td style="padding:10px 14px;">
+            <p style={`margin:0 0 4px;font:700 10px/1.4 ${sans};letter-spacing:1.5px;text-transform:uppercase;color:${gold};`}>AURA analysis · interpretation, not reported fact</p>
+            {c.analysis.map((a) => <p style={`margin:0 0 4px;font:14px/1.55 ${sans};color:${soft};`}>{a}</p>)}
+          </td></tr>
+        </table>
+      )}
+
+      {c.ownership_caveat && <p style={`margin:8px 0 0;${small}`}>{c.ownership_caveat}</p>}
+      {c.named.length > 0 && <p style={`margin:10px 0 0;${small}`}><strong style={`color:${soft};`}>Named:</strong> {c.named.join(", ")}</p>}
+
+      <p style={`margin:10px 0 0;font:13px/1.6 ${sans};color:${muted};`}>
+        Read the original: <a href={c.source.url} style={link}>{c.source.outlet} ↗</a>
+        {c.also_reported.length > 0 && (<>
+          {" · Also reported by: "}
+          {c.also_reported.map((a, i) => (<>{i > 0 && ", "}<a href={a.url} style={link}>{a.outlet} ↗</a></>))}
+          {c.also_more > 0 && ` +${c.also_more}`}
+        </>)}
+      </p>
+    </td></tr>
+  </table>
+</td></tr>

@@ -2,7 +2,7 @@ import os
 import json
 import logging
 import re
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 from backend.app.core.config import settings
 from backend.app.services.nlp_pipeline import NLPPipelineService
 from backend.app.services import relevance
@@ -309,7 +309,31 @@ class LLMService:
         )
 
     @classmethod
-    def generate_daily_report_gemini(cls, raw_data_string: str) -> str:
+    def generate_digest(cls, prompt: str) -> tuple:
+        """One free-form completion for the Morning Brief email digest.
+
+        Same provider order and timeouts as the daily report. Returns
+        (text, engine), or ("", "") when every provider fails: the email
+        then goes out with its deterministic content, never held back.
+        """
+        attempts = []
+        if settings.GEMINI_API_KEY:
+            attempts.append(("gemini", cls.generate_daily_report_gemini))
+        if settings.NVIDIA_API_KEY:
+            attempts.append(("nvidia", cls._generate_report_nvidia))
+        if cls._ollama_configured():
+            attempts.append(("ollama", cls._generate_report_ollama))
+        if settings.OPENAI_API_KEY:
+            attempts.append(("openai", cls._generate_report_openai))
+        for engine, call in attempts:
+            text = call("", prompt=prompt)
+            if text:
+                return text, engine
+            logger.warning(f"Digest generation failed on {engine}; trying the next provider.")
+        return "", ""
+
+    @classmethod
+    def generate_daily_report_gemini(cls, raw_data_string: str, prompt: Optional[str] = None) -> str:
         """Uses Gemini explicitly to generate a cohesive Markdown report from raw records."""
         try:
             if not settings.GEMINI_API_KEY:
@@ -320,7 +344,7 @@ class LLMService:
             genai.configure(api_key=settings.GEMINI_API_KEY)
             
             model = genai.GenerativeModel(settings.GEMINI_MODEL or DEFAULT_GEMINI_MODEL)
-            prompt = build_report_prompt(raw_data_string)
+            prompt = prompt or build_report_prompt(raw_data_string)
             
             # Explicit deadline: without it a hung connection holds the
             # pipeline indefinitely -- the Actions job would burn its
@@ -336,7 +360,7 @@ class LLMService:
             return ""
 
     @classmethod
-    def _generate_report_nvidia(cls, raw_data_string: str) -> str:
+    def _generate_report_nvidia(cls, raw_data_string: str, prompt: Optional[str] = None) -> str:
         """Generates executive markdown report using NVIDIA API."""
         try:
             from openai import OpenAI
@@ -350,7 +374,7 @@ class LLMService:
                 timeout=90.0,
                 max_retries=1
             )
-            prompt = build_report_prompt(raw_data_string)
+            prompt = prompt or build_report_prompt(raw_data_string)
             primary = settings.NVIDIA_MODEL or DEFAULT_NVIDIA_MODEL
             fallback = settings.NVIDIA_MODEL_FALLBACK or DEFAULT_NVIDIA_MODEL_FALLBACK
             try:
@@ -379,14 +403,14 @@ class LLMService:
             return ""
 
     @classmethod
-    def _generate_report_ollama(cls, raw_data_string: str) -> str:
+    def _generate_report_ollama(cls, raw_data_string: str, prompt: Optional[str] = None) -> str:
         """Generates executive markdown report using Ollama API."""
         try:
             from openai import OpenAI
             api_key = settings.OLLAMA_API_KEY or "ollama"
             client = OpenAI(base_url=cls._ollama_base_url(), api_key=api_key, timeout=15.0)
             
-            prompt = build_report_prompt(raw_data_string)
+            prompt = prompt or build_report_prompt(raw_data_string)
             response = client.chat.completions.create(
                 model=settings.OLLAMA_MODEL,
                 messages=[
@@ -399,13 +423,13 @@ class LLMService:
             return ""
 
     @classmethod
-    def _generate_report_openai(cls, raw_data_string: str) -> str:
+    def _generate_report_openai(cls, raw_data_string: str, prompt: Optional[str] = None) -> str:
         """Generates executive markdown report using OpenAI API."""
         try:
             from openai import OpenAI
             # Explicit deadline; the SDK default is 600s + 2 retries.
             client = OpenAI(api_key=settings.OPENAI_API_KEY, timeout=90.0, max_retries=1)
-            prompt = build_report_prompt(raw_data_string)
+            prompt = prompt or build_report_prompt(raw_data_string)
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[

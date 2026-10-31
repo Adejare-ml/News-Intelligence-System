@@ -25,7 +25,7 @@ SHEETS_CONFIG = {
     # carry detail a reader trusts without opening the article.
     "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine",
                  "Event Type", "Risk Level", "Importance", "Entities", "Filter Reason",
-                 "Key Facts", "Why It Matters"],
+                 "Key Facts", "Why It Matters", "Detail"],
     # "First Seen" is set once on insert and never updated -- the sheet had
     # "Last Seen" only, so no export could say when an entity first appeared.
     # Appended at the END deliberately: _add_company_locked updates cells by
