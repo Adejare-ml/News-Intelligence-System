@@ -1,36 +1,28 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-31 02:10:40 (UTC)
-**Run Window:** 2026-10-31, all runs to 02:10 (run 1 of the day)
+**Generated on:** 2026-10-31 13:19:28 (UTC)
+**Run Window:** 2026-10-31, all runs to 13:19 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 6
+- **Total Articles Processed:** 13
 - **High Risk Signals:** 1
-- **Appointments Logged:** 0
+- **Appointments Logged:** 1
 - **Procurement Awards:** 0
 
 ---
 
-**Report Date:** October 31, 2026  
-**Coverage Window:** Articles published on October 31, 2026 up to 02:10
+### Key Developments  
+- The Standards Organisation of Nigeria awarded MANCAP to MATE Energy, underscoring compliance in the energy sector. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMidkFVX3lxTE01OVdlMUNpYUJiUjJqYzlfQUpuOGVWeUpEdHJUcWh5R2dEQVRxcEsxZ1pTRmEzSGp3RHF5bnBZVFRoTEN6eXpqV2VDX3lvZ0J0WGNPaWNRNkMwdnJ0Z2RQVTk5SWhfdFZGQm82NmNlc0xSVWdKNmc?oc=5))  
+- OPay postponed its NYSE listing; the company confirmed Nigerian operations remain unaffected. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirwFBVV95cUxPMm15Qk1XN0xLM1pQdkdPbnozTG1ydm1uQktGTXktUS1Fd2ZlUzFrakpPblNvcFdZVk8xYm5PWHVMVGZ2N0swM3F3R3VfN3ZFZGkzRXB6dnBEb1VSNXZzd2ljdVo1VlNHUEpaSDVyLVFxcDBMSXItWUh4V3paaWJfQ3dtM0RianJ0VXhPWWpGSGpURC13X0xRbG1xdVA0U2hISldKaWdCS1lOZ2tQUGk0?oc=5))  
+- President Tinubu welcomed Airtel’s open‑network launch, aiming to broaden telecommunications access. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtmV1l3NVBaYTJ3Wl82RU9hWm1QTVJJM1ZFX2VQRThTN1poeE4xN0dfbWxQY01uemVVclVxYUlOSXRzNHN6ZmZpQXdUeTA1WWVPckhKcF9yNnJEcUh0dzVkbXJuR0JuOHJkUmVHcDhoM0xqLVp5NEhFLUM5UjNMUWRZaHR3LWZjTHpEYmRzaFJJSlFwbU9fejlkYUFRY3JTSnZR?oc=5))  
+- BUA Foods announced a nine‑month profit climb to N450 billion, reflecting robust agricultural performance. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTy1oSndEYWF2M0tWbDljVldROXNWVlFJa1dndFBDNEgya3ZNMDJnYWpURy1kY2kxT2Y3TEt0Mng0UDhoZmo3VU9KdFVvUXRUQlJrLVBUcElvU2pnVXB5Z0ROekFsaXhQdlJQM0dZY0dTeEppY3FTLWkyT2VfSEdoMGZrd2VjbWhmVjN3RkFpdWNiR3dtdVMtdTJxVEVsWUxibllKRGx1bFlXdw?oc=5))  
+- A probe panel in Niger State recommended N1.4 billion in compensations and scholarships for victims’ children after mass deaths. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRGVicDk0ZVlHSm5neTZyaGV5QjRJY2cwNDBGUnlxRTdLOGVFbVR3XzdaOVZwVnp6emFlRDJSRkpId0hJZGw2akFGN2VmZTZEbklzSnBzS2tLQWV0MGNTLVFHOG04MUtKUTZSOHB0b0puZkdiWTE3Zm43d2EyQm9nVzBaLVFMNEN6RDdEMXhXQUlla2stVHhzWUllWVlBSi1LeUp3RTMtWFBsQlV0bXZraVNMUnRwZ1p4dTR5anAxdjZ1aHIxTDdackhZR0c2bnFrMk9KU3hwcnJJc2JwRzFsN1pBT2IxTmhIb1ZiQ0Rpcm5qYjg?oc=5))  
+- Nigeria ratified the African Medicine Treaty, joining 34 AU member states, as announced by NAFDAC DG. ([thisdaylive](https://www.thisdaylive.com/2026/10/31/nigeria-becomes-34th-au-member-state-to-ratify-african-medicine-treaty-nafdac-dg-reveals/))  
 
-### Key Developments
+### High Risk Alerts  
 
-* **OPay NYSE Listing:** Fintech firm OPay has officially debuted on the New York Stock Exchange, raising $304 million in capital while actively targeting Nigerian retail and institutional participation to expand its investor base. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxNWm05cFFGYzZGVXk1U21rR0RWaHVTbzl3WjdXSmc2dHFNdHRHanFLMlI1S1I0UGdPNU9ILWUyOHVxdjQ5VmxMMHJSc1NHc2gzTnNma2FnUm53ZUVQa0JHTWZ6YUFpYjBjMVJVdnhKMk9ncnNEVHBZa1FXS0U2R2NRbFNMRU0?oc=5))  
-* **Seven modular refineries to begin operations in 2027**. Nigeria's modular refining sector is projected to expand in 2027 with seven new refineries commencing operations. ([The Punch](https://punchng.com/seven-modular-refineries-to-begin-operations-in-2027/))  
-* **EFCC recovers N1.05bn for disengaged Adamawa teachers**. The Economic and Financial Crimes Commission (EFCC) has recovered N1.05 billion intended for disengaged teachers in Adamawa State. ([Punch Newspapers](https://news.google.com/rss/articles/CBMif0FVX3lxTE9kNVFFc2JhOVJ4RFozVHhYclVzS0JVYThUaWlZaE1tWjJ1Y21OeUJoWmJXbzEwbTFteDgzNzRrOEJ5SnhJNVRxNDdpYXpCNzJjMzA2N05wT2QzNk9nYjFvNmNzMklnS1p1ZnZlOXR5emQtQTJzak1NcHBYWVdhTGM?oc=5))  
-* **Nigeria joins 33 African nations in landmark medicines treaty to fight fake drugs**. Nigeria has joined a landmark medicines treaty alongside 33 other African nations aimed at combating the proliferation of counterfeit drugs. ([tribuneonlineng](https://tribuneonlineng.com/nigeria-joins-33-african-nations-in-landmark-medicines-treaty-to-fight-fake-drugs/))  
+### Beneficial Ownership & PSC Disclosures  
 
-### High Risk Alerts
-
-* **Falana tasks Senate on recovery of $123bn, N66bn oil funds**. Femi Falana has called on the National Assembly to ensure the recovery of $123.17 billion in outstanding oil royalties, taxes, and dividends, as well as N66.4 billion in other funds. ([The Punch](https://punchng.com/falana-tasks-senate-on-recovery-of-123bn-n66bn-oil-funds/))  
-
-### Beneficial Ownership & PSC Disclosures
-
-The monitoring data for this period contains no beneficial ownership or Person with Significant Control (PSC) notifications.
-
-### Procurement & Board Changes
-
-No public procurement notices, contract awards, or corporate directorship updates were published during this monitoring period.
+### Procurement & Board Changes  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: gemini).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

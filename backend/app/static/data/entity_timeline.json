@@ -364,7 +364,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 24,
+      "total_mentions": 25,
       "points": [
         {
           "week": "2026-09-14",
@@ -404,8 +404,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 17.5,
+          "mentions": 5,
+          "avg_risk": 16.0,
           "max_risk": 20
         }
       ]
@@ -505,6 +505,43 @@
           "mentions": 2,
           "avg_risk": 32.5,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -628,37 +665,6 @@
           "mentions": 8,
           "avg_risk": 18.8,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 15,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 34.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 30.0,
-          "max_risk": 40
         }
       ]
     },
@@ -1506,6 +1512,25 @@
       ]
     },
     {
+      "key": "standards organisation of",
+      "label": "Standards Organisation of Nigeria",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 5,
+          "avg_risk": 17.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "totalenergies",
       "label": "TotalEnergies",
       "total_mentions": 6,
@@ -1850,19 +1875,6 @@
       ]
     },
     {
-      "key": "standards organisation of",
-      "label": "Standards Organisation of Nigeria",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 5,
-          "avg_risk": 17.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "taraba state government",
       "label": "Taraba State Government",
       "total_mentions": 5,
@@ -1972,6 +1984,25 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "airtel",
+      "label": "Airtel Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -2671,25 +2702,6 @@
         },
         {
           "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "airtel",
-      "label": "Airtel Nigeria",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -3650,6 +3662,19 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "african union",
+      "label": "African Union",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -4644,6 +4669,19 @@
       ]
     },
     {
+      "key": "opay",
+      "label": "OPay",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "office of the accountant general of the federation",
       "label": "Office of the Accountant General of the Federation",
       "total_mentions": 2,
@@ -5539,19 +5577,6 @@
       ]
     },
     {
-      "key": "african union",
-      "label": "African Union",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "african university of science and technology",
       "label": "African University of Science and Technology",
       "total_mentions": 1,
@@ -5955,6 +5980,19 @@
       ]
     },
     {
+      "key": "bua foods",
+      "label": "BUA Foods",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "bank of agriculture",
       "label": "Bank of Agriculture",
       "total_mentions": 1,
@@ -5979,33 +6017,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "bauchi state government",
-      "label": "Bauchi State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "baxi",
-      "label": "Baxi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        }
-      ]
     }
   ],
-  "generated": "2026-10-31 02:11:31"
+  "generated": "2026-10-31 13:20:48"
 }

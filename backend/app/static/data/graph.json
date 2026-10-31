@@ -145,6 +145,30 @@
       "risk": "Low"
     },
     {
+      "id": "aa5a2a60ab61",
+      "label": "Niger State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "aa9abf2767d5",
+      "label": "Standards Organisation of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "036789b5ea26",
+      "label": "African Union",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8b2c9ab00c80",
       "label": "Government of Russia",
       "type": "agency",
@@ -217,27 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "6b7faa37fa88",
-      "label": "Universal Basic Education Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2cbc793c6023",
-      "label": "Government of China",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "71c59636e7a3",
-      "label": "Federal Executive Council",
-      "type": "agency",
+      "id": "fc0df526d10a",
+      "label": "Diepreye Fani-Kayode",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -439,18 +445,6 @@
       "risk": "Low"
     },
     {
-      "id": "e153c1875584",
-      "label": "Dave Umahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "23d8905a6cbb",
-      "label": "Federal Ministry of Works",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -589,6 +583,12 @@
       "risk": "Low"
     },
     {
+      "id": "2cbc793c6023",
+      "label": "Government of China",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
       "type": "agency",
@@ -631,6 +631,12 @@
       "risk": "Low"
     },
     {
+      "id": "71c59636e7a3",
+      "label": "Federal Executive Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8ad929872c06",
       "label": "Federal Ministry of Aviation",
       "type": "agency",
@@ -668,6 +674,12 @@
     }
   ],
   "edges": [
+    {
+      "id": "1bbcdc3382b5",
+      "from": "fc0df526d10a",
+      "to": "b5da1d8370fd",
+      "label": "Appointed as Diplomat"
+    },
     {
       "id": "173d8cf4554e",
       "from": "2388a11cf55e",
@@ -799,12 +811,6 @@
       "from": "22efb00940fe",
       "to": "0c2be969618b",
       "label": "Appointed as Former Minister"
-    },
-    {
-      "id": "81c12b1ceeb0",
-      "from": "e153c1875584",
-      "to": "23d8905a6cbb",
-      "label": "Appointed as Former Minister of Works"
     },
     {
       "id": "34c826682817",
