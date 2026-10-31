@@ -175,6 +175,12 @@
       "risk": "Low"
     },
     {
+      "id": "820581ad245e",
+      "label": "State Wealth Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "c25544734c7e",
       "label": "Nigerian Content Development and Monitoring Board",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "782563a7c2d7",
       "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },
