@@ -1,26 +1,22 @@
 {
   "new_companies": [
-    "Argus Media",
-    "OPay"
+    "BUA Foods",
+    "MATE Energy"
   ],
-  "new_people": [],
+  "new_people": [
+    "Diepreye Fani-Kayode"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "Falana tasks Senate on recovery of $123bn, N66bn oil funds",
-      "url": "https://punchng.com/falana-tasks-senate-on-recovery-of-123bn-n66bn-oil-funds/",
-      "risk": 75.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
     "new_companies": 2,
-    "new_people": 0,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-10-31 02:11:26"
+  "generated": "2026-10-31 13:20:44"
 }

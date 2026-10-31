@@ -2,38 +2,38 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2829,
-      "published": 1545,
-      "filtered": 1284,
-      "accept_rate": 55,
-      "avg_risk": 28.4,
+      "total": 2841,
+      "published": 1547,
+      "filtered": 1294,
+      "accept_rate": 54,
+      "avg_risk": 28.3,
       "engines": {
         "unknown": 963,
-        "ollama": 574,
+        "ollama": 576,
         "nvidia": 8
       },
-      "last_seen": "2026-10-30"
+      "last_seen": "2026-10-31"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2387,
-      "published": 978,
-      "filtered": 1409,
+      "total": 2392,
+      "published": 981,
+      "filtered": 1411,
       "accept_rate": 41,
       "avg_risk": 30.6,
       "engines": {
         "unknown": 440,
-        "ollama": 534,
+        "ollama": 537,
         "nvidia": 4
       },
-      "last_seen": "2026-10-30"
+      "last_seen": "2026-10-31"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1084,
+      "total": 1088,
       "published": 440,
-      "filtered": 644,
-      "accept_rate": 41,
+      "filtered": 648,
+      "accept_rate": 40,
       "avg_risk": 27.4,
       "engines": {
         "unknown": 188,
@@ -44,9 +44,9 @@
     },
     {
       "source": "The Punch",
-      "total": 681,
+      "total": 683,
       "published": 387,
-      "filtered": 294,
+      "filtered": 296,
       "accept_rate": 57,
       "avg_risk": 32.8,
       "engines": {
@@ -153,16 +153,16 @@
     },
     {
       "source": "vanguardngr",
-      "total": 186,
-      "published": 29,
+      "total": 187,
+      "published": 30,
       "filtered": 157,
       "accept_rate": 16,
-      "avg_risk": 25.6,
+      "avg_risk": 25.0,
       "engines": {
         "unknown": 19,
-        "ollama": 10
+        "ollama": 11
       },
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     {
       "source": "punchng",
@@ -193,9 +193,9 @@
     },
     {
       "source": "legit",
-      "total": 125,
+      "total": 126,
       "published": 24,
-      "filtered": 101,
+      "filtered": 102,
       "accept_rate": 19,
       "avg_risk": 25.4,
       "engines": {
@@ -203,7 +203,7 @@
         "ollama": 8,
         "nvidia": 1
       },
-      "last_seen": "2026-10-30"
+      "last_seen": "2026-10-31"
     },
     {
       "source": "The Eagle Online",
@@ -295,6 +295,19 @@
       "last_seen": "2026-10-04"
     },
     {
+      "source": "thisdaylive",
+      "total": 37,
+      "published": 13,
+      "filtered": 24,
+      "accept_rate": 35,
+      "avg_risk": 24.2,
+      "engines": {
+        "unknown": 5,
+        "ollama": 8
+      },
+      "last_seen": "2026-10-31"
+    },
+    {
       "source": "tribuneonlineng",
       "total": 37,
       "published": 11,
@@ -304,19 +317,6 @@
       "engines": {
         "unknown": 3,
         "ollama": 8
-      },
-      "last_seen": "2026-10-30"
-    },
-    {
-      "source": "thisdaylive",
-      "total": 34,
-      "published": 12,
-      "filtered": 22,
-      "accept_rate": 35,
-      "avg_risk": 25.4,
-      "engines": {
-        "unknown": 5,
-        "ollama": 7
       },
       "last_seen": "2026-10-30"
     },
@@ -1105,6 +1105,18 @@
       "last_seen": "2026-08-02"
     },
     {
+      "source": "Jumia Nigeria",
+      "total": 2,
+      "published": 1,
+      "filtered": 1,
+      "accept_rate": 50,
+      "avg_risk": 24.0,
+      "engines": {
+        "unknown": 1
+      },
+      "last_seen": "2026-10-30"
+    },
+    {
       "source": "Livemint",
       "total": 2,
       "published": 2,
@@ -1677,18 +1689,6 @@
       "last_seen": "2026-10-13"
     },
     {
-      "source": "Jumia Nigeria",
-      "total": 1,
-      "published": 1,
-      "filtered": 0,
-      "accept_rate": 100,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 1
-      },
-      "last_seen": "2026-07-16"
-    },
-    {
       "source": "Leaders League",
       "total": 1,
       "published": 0,
@@ -2255,5 +2255,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-31 02:11:31"
+  "generated": "2026-10-31 13:20:48"
 }

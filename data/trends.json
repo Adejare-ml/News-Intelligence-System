@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 223,
-  "previous_articles": 203,
+  "recent_articles": 221,
+  "previous_articles": 202,
   "rising": [
     {
       "term": "tinubu",
       "recent": 22,
-      "previous": 6,
-      "change": 16
+      "previous": 7,
+      "change": 15
     },
     {
       "term": "court",
@@ -40,18 +40,6 @@
       "change": 6
     },
     {
-      "term": "cbn",
-      "recent": 9,
-      "previous": 4,
-      "change": 5
-    },
-    {
-      "term": "seeks",
-      "recent": 8,
-      "previous": 3,
-      "change": 5
-    },
-    {
       "term": "witness",
       "recent": 7,
       "previous": 2,
@@ -62,20 +50,26 @@
       "recent": 6,
       "previous": 1,
       "change": 5
+    },
+    {
+      "term": "data",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "loans",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
     }
   ],
   "falling": [
     {
       "term": "bill",
-      "recent": 2,
-      "previous": 9,
-      "change": -7
-    },
-    {
-      "term": "lagos",
-      "recent": 5,
-      "previous": 11,
-      "change": -6
+      "recent": 1,
+      "previous": 10,
+      "change": -9
     },
     {
       "term": "interest",
@@ -84,25 +78,31 @@
       "change": -6
     },
     {
+      "term": "nigeria\u2019s",
+      "recent": 8,
+      "previous": 13,
+      "change": -5
+    },
+    {
+      "term": "lagos",
+      "recent": 5,
+      "previous": 10,
+      "change": -5
+    },
+    {
       "term": "assembly",
       "recent": 3,
       "previous": 8,
       "change": -5
     },
     {
-      "term": "demand",
-      "recent": 2,
-      "previous": 7,
+      "term": "son",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     },
     {
       "term": "ministry",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "nafdac",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -114,33 +114,33 @@
       "change": -5
     },
     {
-      "term": "probe",
-      "recent": 4,
-      "previous": 8,
-      "change": -4
-    },
-    {
       "term": "gas",
       "recent": 3,
       "previous": 7,
+      "change": -4
+    },
+    {
+      "term": "demand",
+      "recent": 2,
+      "previous": 6,
       "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 162,
-      "previous": 142
+      "recent": 159,
+      "previous": 140
     },
     {
       "category": "Legal",
       "recent": 33,
-      "previous": 31
+      "previous": 30
     },
     {
       "category": "Company",
-      "recent": 25,
-      "previous": 28
+      "recent": 26,
+      "previous": 30
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-31 02:11:28"
+  "generated": "2026-10-31 13:20:46"
 }
