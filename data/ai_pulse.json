@@ -1,61 +1,61 @@
 {
-  "generated": "2026-10-31 13:20:46",
+  "generated": "2026-10-31 17:36:50",
   "models": [
     {
       "id": "Nanbeige/Nanbeige4.3-33B",
       "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
       "task": "text-generation",
-      "likes": 825,
+      "likes": 846,
       "downloads": 13832
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4060,
+      "likes": 4078,
       "downloads": 156373
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 600,
+      "likes": 616,
       "downloads": 32933
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 521,
+      "likes": 529,
       "downloads": 24357
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1378,
+      "likes": 1389,
       "downloads": 2945
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 468,
+      "likes": 470,
       "downloads": 69231
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10021,
+      "likes": 10046,
       "downloads": 2441077
     },
     {
-      "id": "RecursiveSI/flint",
-      "url": "https://huggingface.co/RecursiveSI/flint",
-      "task": "text-generation",
-      "likes": 1271,
-      "downloads": 23079
+      "id": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "task": "",
+      "likes": 377,
+      "downloads": 29615
     }
   ],
   "papers": [
@@ -77,17 +77,17 @@
     {
       "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
       "url": "https://huggingface.co/papers/2610.34298",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
       "url": "https://huggingface.co/papers/2609.05881",
-      "upvotes": 3
+      "upvotes": 5
     },
     {
       "title": "Training Foundation Models with a Single Algorithm",
       "url": "https://huggingface.co/papers/2610.40564",
-      "upvotes": 5
+      "upvotes": 8
     }
   ]
 }

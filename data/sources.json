@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2841,
+      "total": 2845,
       "published": 1547,
-      "filtered": 1294,
+      "filtered": 1298,
       "accept_rate": 54,
       "avg_risk": 28.3,
       "engines": {
@@ -16,23 +16,23 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2392,
-      "published": 981,
-      "filtered": 1411,
+      "total": 2399,
+      "published": 983,
+      "filtered": 1416,
       "accept_rate": 41,
       "avg_risk": 30.6,
       "engines": {
         "unknown": 440,
-        "ollama": 537,
+        "ollama": 539,
         "nvidia": 4
       },
       "last_seen": "2026-10-31"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1088,
+      "total": 1090,
       "published": 440,
-      "filtered": 648,
+      "filtered": 650,
       "accept_rate": 40,
       "avg_risk": 27.4,
       "engines": {
@@ -140,22 +140,22 @@
     },
     {
       "source": "dailypost",
-      "total": 187,
+      "total": 190,
       "published": 46,
-      "filtered": 141,
-      "accept_rate": 25,
+      "filtered": 144,
+      "accept_rate": 24,
       "avg_risk": 26.5,
       "engines": {
         "unknown": 40,
         "ollama": 6
       },
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-10-31"
     },
     {
       "source": "vanguardngr",
-      "total": 187,
+      "total": 188,
       "published": 30,
-      "filtered": 157,
+      "filtered": 158,
       "accept_rate": 16,
       "avg_risk": 25.0,
       "engines": {
@@ -1985,6 +1985,16 @@
       "last_seen": "2026-08-15"
     },
     {
+      "source": "The Manila Times",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-10-31"
+    },
+    {
       "source": "The Providence Journal",
       "total": 1,
       "published": 0,
@@ -2255,5 +2265,5 @@
       "last_seen": "2026-07-24"
     }
   ],
-  "generated": "2026-10-31 13:20:48"
+  "generated": "2026-10-31 17:36:52"
 }

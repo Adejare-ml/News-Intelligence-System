@@ -21,11 +21,11 @@
     {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
-      "recent_avg": 23.3,
-      "previous_avg": 43.3,
-      "delta": -20.0,
-      "recent_mentions": 6,
-      "previous_mentions": 3
+      "recent_avg": 22.0,
+      "previous_avg": 40.0,
+      "delta": -18.0,
+      "recent_mentions": 5,
+      "previous_mentions": 4
     },
     {
       "key": "lagos state government",
@@ -43,6 +43,15 @@
       "previous_avg": 40.0,
       "delta": 16.0,
       "recent_mentions": 5,
+      "previous_mentions": 1
+    },
+    {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "recent_avg": 26.2,
+      "previous_avg": 40.0,
+      "delta": -13.8,
+      "recent_mentions": 4,
       "previous_mentions": 1
     },
     {
@@ -139,10 +148,10 @@
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 17.5,
-      "previous_avg": 15.0,
-      "delta": 2.5,
+      "previous_avg": 20.0,
+      "delta": -2.5,
       "recent_mentions": 4,
-      "previous_mentions": 4
+      "previous_mentions": 1
     },
     {
       "key": "federal government of",
@@ -170,17 +179,8 @@
       "delta": -0.8,
       "recent_mentions": 17,
       "previous_mentions": 11
-    },
-    {
-      "key": "nasir el rufai",
-      "label": "Nasir El-Rufai",
-      "recent_avg": 40.0,
-      "previous_avg": 40.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-31 13:20:48"
+  "generated": "2026-10-31 17:36:52"
 }
