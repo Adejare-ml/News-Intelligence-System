@@ -1,60 +1,60 @@
 {
-  "generated": "2026-11-01 18:22:04",
+  "generated": "2026-11-01 21:04:00",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4218,
+      "likes": 4257,
       "downloads": 170353
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 671,
+      "likes": 682,
       "downloads": 37568
-    },
-    {
-      "id": "Nanbeige/Nanbeige4.3-33B",
-      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "task": "text-generation",
-      "likes": 964,
-      "downloads": 15795
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 581,
+      "likes": 587,
       "downloads": 29364
+    },
+    {
+      "id": "Nanbeige/Nanbeige4.3-33B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "task": "text-generation",
+      "likes": 965,
+      "downloads": 15795
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1434,
+      "likes": 1440,
       "downloads": 4576
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 506,
+      "likes": 511,
       "downloads": 109519
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10177,
+      "likes": 10201,
       "downloads": 2431846
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 459,
+      "likes": 468,
       "downloads": 44825
     }
   ],

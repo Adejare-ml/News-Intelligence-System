@@ -121,6 +121,12 @@
       "risk": "Critical"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7ac5d6bb2121",
       "label": "Abia State Government",
       "type": "agency",
@@ -141,12 +147,6 @@
     {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -885,15 +885,15 @@
       "label": "PSC: 24.5%"
     },
     {
-      "id": "9aaad96e9617",
-      "from": "334c4a4c42fd",
-      "to": "3a4a88456e84",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "7ae984c2a8c8",
       "from": "334c4a4c42fd",
       "to": "0c2be969618b",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "9aaad96e9617",
+      "from": "334c4a4c42fd",
+      "to": "3a4a88456e84",
       "label": "Contract Awardee"
     },
     {
