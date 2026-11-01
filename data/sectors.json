@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 940,
-      "mentions": 1567,
+      "companies": 939,
+      "mentions": 1566,
       "risk": {
-        "Low": 830,
+        "Low": 829,
         "Critical": 57,
         "Medium": 30,
         "High": 23
@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 46,
-      "mentions": 231,
+      "companies": 47,
+      "mentions": 233,
       "risk": {
         "Medium": 17,
-        "Low": 24,
+        "Low": 25,
         "Critical": 1,
         "High": 4
       }
@@ -354,6 +354,14 @@
       "mentions": 3,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Agriculture/Cold Chain",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
       }
     },
     {
@@ -910,5 +918,5 @@
       }
     }
   ],
-  "generated": "2026-11-01 02:02:26"
+  "generated": "2026-11-01 14:06:54"
 }

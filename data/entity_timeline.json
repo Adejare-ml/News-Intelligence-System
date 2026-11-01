@@ -1931,6 +1931,37 @@
       ]
     },
     {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "abubakar malami",
       "label": "Abubakar Malami",
       "total_mentions": 4,
@@ -2699,31 +2730,6 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 35
-        }
-      ]
-    },
-    {
-      "key": "abia state government",
-      "label": "Abia State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -6025,5 +6031,5 @@
       ]
     }
   ],
-  "generated": "2026-11-01 02:02:26"
+  "generated": "2026-11-01 14:06:54"
 }
