@@ -84,11 +84,11 @@
     {
       "key": "festus keyamo",
       "label": "Festus Keyamo",
-      "recent_avg": 16.7,
-      "previous_avg": 25.0,
+      "recent_avg": 15.0,
+      "previous_avg": 23.3,
       "delta": -8.3,
-      "recent_mentions": 3,
-      "previous_mentions": 2
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "senate of",
@@ -102,10 +102,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 18.5,
+      "recent_avg": 18.6,
       "previous_avg": 24.7,
-      "delta": -6.2,
-      "recent_mentions": 20,
+      "delta": -6.1,
+      "recent_mentions": 21,
       "previous_mentions": 17
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-01 18:22:06"
+  "generated": "2026-11-01 21:04:03"
 }

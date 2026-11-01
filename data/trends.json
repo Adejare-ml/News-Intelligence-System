@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 221,
-  "previous_articles": 199,
+  "recent_articles": 222,
+  "previous_articles": 198,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 22,
-      "previous": 7,
-      "change": 15
+      "recent": 21,
+      "previous": 8,
+      "change": 13
     },
     {
       "term": "efcc",
@@ -129,7 +129,7 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 158,
+      "recent": 159,
       "previous": 135
     },
     {
@@ -140,7 +140,7 @@
     {
       "category": "Company",
       "recent": 30,
-      "previous": 30
+      "previous": 29
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-01 18:22:04"
+  "generated": "2026-11-01 21:04:00"
 }

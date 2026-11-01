@@ -590,6 +590,14 @@
       }
     },
     {
+      "industry": "Energy Finance",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Energy Market Intelligence",
       "companies": 1,
       "mentions": 1,
@@ -926,5 +934,5 @@
       }
     }
   ],
-  "generated": "2026-11-01 18:22:06"
+  "generated": "2026-11-01 21:04:03"
 }

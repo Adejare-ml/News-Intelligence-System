@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 110,
+      "total_mentions": 111,
       "points": [
         {
           "week": "2026-09-07",
@@ -49,8 +49,8 @@
         },
         {
           "week": "2026-10-26",
-          "mentions": 20,
-          "avg_risk": 18.5,
+          "mentions": 21,
+          "avg_risk": 18.6,
           "max_risk": 30
         }
       ]
@@ -5563,6 +5563,19 @@
       ]
     },
     {
+      "key": "africa energy bank",
+      "label": "Africa Energy Bank",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "african african university",
       "label": "African African University",
       "total_mentions": 1,
@@ -6016,20 +6029,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "bank of agriculture",
-      "label": "Bank of Agriculture",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-11-01 18:22:06"
+  "generated": "2026-11-01 21:04:03"
 }
