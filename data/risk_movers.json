@@ -19,24 +19,6 @@
       "previous_mentions": 10
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 22.0,
-      "previous_avg": 40.0,
-      "delta": -18.0,
-      "recent_mentions": 5,
-      "previous_mentions": 4
-    },
-    {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "recent_avg": 56.0,
-      "previous_avg": 40.0,
-      "delta": 16.0,
-      "recent_mentions": 5,
-      "previous_mentions": 1
-    },
-    {
       "key": "all progressives congress",
       "label": "All Progressives Congress",
       "recent_avg": 26.2,
@@ -73,6 +55,15 @@
       "previous_mentions": 3
     },
     {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 22.0,
+      "previous_avg": 31.7,
+      "delta": -9.7,
+      "recent_mentions": 5,
+      "previous_mentions": 3
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 32.5,
@@ -98,6 +89,24 @@
       "delta": -7.5,
       "recent_mentions": 2,
       "previous_mentions": 4
+    },
+    {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "recent_avg": 51.2,
+      "previous_avg": 57.5,
+      "delta": -6.3,
+      "recent_mentions": 4,
+      "previous_mentions": 2
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 18.5,
+      "previous_avg": 24.4,
+      "delta": -5.9,
+      "recent_mentions": 20,
+      "previous_mentions": 18
     },
     {
       "key": "national information technology development agency",
@@ -154,15 +163,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 20.7,
-      "previous_avg": 22.1,
-      "delta": -1.4,
-      "recent_mentions": 21,
-      "previous_mentions": 17
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 29.4,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-01 02:02:26"
+  "generated": "2026-11-01 14:06:54"
 }
