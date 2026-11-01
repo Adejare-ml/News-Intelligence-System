@@ -1,29 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-01 14:02:41 (UTC)
-**Run Window:** 2026-11-01, all runs to 14:02 (run 1 of the day)
+**Generated on:** 2026-11-01 18:17:19 (UTC)
+**Run Window:** 2026-11-01, all runs to 18:17 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 4
+- **Total Articles Processed:** 6
 - **High Risk Signals:** 0
 - **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
-### Key Developments  
-- Ecotutu partners with Lange and Grant to launch a cold‑room facility targeting post‑harvest loss reduction in Nigeria. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiugFBVV95cUxNS25pSExlbmtSbzY4ZlZjTnUxbTRTQ3VZSF9yVzFzS2dXUjMwb1VSclRNbUVWY0VzZnV6U0ptQThwMGVabm9qSk1CU3hoN181RWd1ODNocEQ4dlBISHJQaDlKblNJTGNkOVpEeTlkU2dfLXQzWTRPLWZkLVA2Y19jX2NTVWdldE5zOXo4Zzl6dXFBTWFXRUx6cEhUMUpxRkZFcy1VcFd2Q3pGS0ViQV9iQnJZTWVqS0taNXc?oc=5))  
-- Oando reports a 9 % revenue surge to 2.78 trillion naira for the September 2026 period, with production up 14 %. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQVVXWjdhUGI2aF9IRFpkQXJTRGpvTnRMYTZEdE1KUlZITXVtVC1tVGhUc0Y4bElUbjBxYUh0eHB1bzNOVjlMOHk5VkFIVUxnenlidzlvdTNENVNYV1NtOFB5dUR3b2NSeS1FVEtBblJpLXU1ejBtRWhqRmViY2tjdDVZVVhrVHNSTDhQWFl6SndYa1liaGdwTkRXQjJJNVVmUmUxZGcyN2pDQ0JHa1hOVTltUE5xNzM4blFOSEk2ZWNpYlhUYy1adERwc0hMeVpUaGtiaHBpUnUzQQ?oc=5))  
-- The NNPC/MPN joint‑venture trust awards scholarships and bursaries to 4,510 students in Akwa Ibom State, a corporate social‑responsibility outlay. ([The Punch](https://punchng.com/4510-akwa-ibom-students-get-scholarships-bursaries/))  
-- Abia State Governor Alex Otti reports a significant decline in the state’s debt profile, though specific figures remain absent from the coverage. ([sunnewsonline](https://thesun.ng/abia-debt-profile-has-dropped-significantly-otti/))  
+# Executive Intelligence Summary: November 1, 2026
 
-### High Risk Alerts  
-None of the incidents reported in this coverage period exhibit a risk score high enough to trigger a high‑risk alert.
+**Coverage Period:** All articles published on 2026-11-01 up to 18:17.
 
-### Beneficial Ownership & PSC Disclosures  
-No PSC disclosures or identified holders of significant control were found in the material provided.
+### Key Developments
+* **MTN Nigeria** reported a substantial 55% increase in profit for the first nine months of the year, totaling N1.17 trillion. ([Punch Newspapers](https://news.google.com/rss/articles/CBMie0FVX3lxTFBkYWN4d3p0NU1iV1pNclBhc0xtMHZCUEl0eDZEdWhjS09XTnlCdi1WOGpCU0RMOXBBa3VPemY0VFY3WkNmS1hmWnZQaUk5LWNVNzJXOEIyamlhQ24ya1pWbGtmZ2pIYzZpdHdtUE9PZHhRdVNMd3ZZdkpWbw?oc=5))  
+* **Lee Group** is initiating a $1.8 billion industrial park project in Ogun State, designed to house 29 factories and generate 2,500 jobs. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZlBURk1vTXBsTGlQM3ROTmh0R2o3dTlaWmNHS0JCR2cxaUJIbGtfODdkX09wdmRPY05mNllWUm0tVmZoN0Zob3FKblJSZU44eTMzXzhjdXVKMlVZR0ktb3FZb3F4VExrUjF1N25qTnBVWXN0b1BFaU9JLUU5UEpGWlhIVlo1dF9IcnhEbXRENHUwSE5USWptNjNPTlk0SVBNaVRiV1NpUGh2SmdVdDNVSWxaTFJ1cWxKZnY4Yk56ajRkeDNSRjFILV9JVzNZNi1NTVE?oc=5))  
+* **Ecotutu** has entered a partnership with **Lange and Grant** to establish cold room facilities to mitigate post-harvest agricultural losses. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiugFBVV95cUxNS25pSExlbmtSbzY4ZlZjTnUxbTRTQ3VZSF9yVzFzS2dXUjMwb1VSclRNbUVWY0VzZnV6U0ptQThwMGVabm9qSk1CU3hoN181RWd1ODNocEQ4dlBISHJQaDlKblNJTGNkOVpEeTlkU2dfLXQzWTRPLWZkLVA2Y19jX2NTVWdldE5zOXo4Zzl6dXFBTWFXRUx6cEhUMUpxRkZFcy1VcFd2Q3pGS0ViQV9iQnJZTWVqS0taNXc?oc=5))  
+* **Governor Alex Otti** stated that the debt profile of Abia State has seen a significant reduction. ([sunnewsonline](https://thesun.ng/abia-debt-profile-has-dropped-significantly-otti/))  
 
-### Procurement & Board Changes  
-No procurement actions or board changes were mentioned within this round of reports.
+### High Risk Alerts
+There are no critical risk signals to report from the analyzed data.
+
+### Beneficial Ownership & PSC Disclosures
+No persons with significant control were identified in the provided data.
+
+### Procurement & Board Changes
+No corporate governance or contract award updates were documented.
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*
