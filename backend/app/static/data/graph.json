@@ -121,6 +121,18 @@
       "risk": "Critical"
     },
     {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ce170f2e6007",
+      "label": "NNPC/MPN JV EMOIMEE Host Community Development Trust",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "38b03bbf0068",
       "label": "National Assembly",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "1576ccbbc285",
       "label": "Police Service Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7cd6fef502f0",
-      "label": "United Nations",
       "type": "agency",
       "risk": "Low"
     },

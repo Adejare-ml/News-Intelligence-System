@@ -1,34 +1,29 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-10-31 20:28:25 (UTC)
-**Run Window:** 2026-10-31, all runs to 20:28 (run 4 of the day)
+**Generated on:** 2026-11-01 14:02:41 (UTC)
+**Run Window:** 2026-11-01, all runs to 14:02 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 19
-- **High Risk Signals:** 1
-- **Appointments Logged:** 1
-- **Procurement Awards:** 1
+- **Total Articles Processed:** 4
+- **High Risk Signals:** 0
+- **Appointments Logged:** 0
+- **Procurement Awards:** 0
 
 ---
 
-# Executive Intelligence Report: Nigerian Corporate Transparency
+### Key Developments  
+- Ecotutu partners with Lange and Grant to launch a cold‑room facility targeting post‑harvest loss reduction in Nigeria. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiugFBVV95cUxNS25pSExlbmtSbzY4ZlZjTnUxbTRTQ3VZSF9yVzFzS2dXUjMwb1VSclRNbUVWY0VzZnV6U0ptQThwMGVabm9qSk1CU3hoN181RWd1ODNocEQ4dlBISHJQaDlKblNJTGNkOVpEeTlkU2dfLXQzWTRPLWZkLVA2Y19jX2NTVWdldE5zOXo4Zzl6dXFBTWFXRUx6cEhUMUpxRkZFcy1VcFd2Q3pGS0ViQV9iQnJZTWVqS0taNXc?oc=5))  
+- Oando reports a 9 % revenue surge to 2.78 trillion naira for the September 2026 period, with production up 14 %. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQQVVXWjdhUGI2aF9IRFpkQXJTRGpvTnRMYTZEdE1KUlZITXVtVC1tVGhUc0Y4bElUbjBxYUh0eHB1bzNOVjlMOHk5VkFIVUxnenlidzlvdTNENVNYV1NtOFB5dUR3b2NSeS1FVEtBblJpLXU1ejBtRWhqRmViY2tjdDVZVVhrVHNSTDhQWFl6SndYa1liaGdwTkRXQjJJNVVmUmUxZGcyN2pDQ0JHa1hOVTltUE5xNzM4blFOSEk2ZWNpYlhUYy1adERwc0hMeVpUaGtiaHBpUnUzQQ?oc=5))  
+- The NNPC/MPN joint‑venture trust awards scholarships and bursaries to 4,510 students in Akwa Ibom State, a corporate social‑responsibility outlay. ([The Punch](https://punchng.com/4510-akwa-ibom-students-get-scholarships-bursaries/))  
+- Abia State Governor Alex Otti reports a significant decline in the state’s debt profile, though specific figures remain absent from the coverage. ([sunnewsonline](https://thesun.ng/abia-debt-profile-has-dropped-significantly-otti/))  
 
-**Report Date:** 2026-10-31
-**Coverage:** All articles published on 2026-10-31 up to 20:28
+### High Risk Alerts  
+None of the incidents reported in this coverage period exhibit a risk score high enough to trigger a high‑risk alert.
 
-### Key Developments
-* **OPay lists on NYSE, raises $304m in IPO at $4 billion valuation**. Fintech company OPay has listed on the New York Stock Exchange (NYSE), raising $304 million through an Initial Public Offering (IPO). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiugFBVV95cUxPZ0ZXOG1qYVN1TjlFazhIaDF4aUtCTFFlUzUwUjRid09VbU05a011SHRfbkZEbnVyeXhfOG42cWJLVURsTHZqekFGNnQySkwxQ0xxMlFfakdTM0NBUFdXcXVKM1VOejJsY2hkU29zQ3FlMUhMb09RU0I5ekhabkVwNTlrVXNiR01CV1ZzdUZ6MlJ5enFXNVBFa0o0eXBfcmt3eHA1eHBuLUNiSEc2LS1wdlhUcGp2OVZMNEE?oc=5))  
-* **Nigeria Becomes 34th AU Member State to Ratify African Medicine Treaty, NAFDAC DG Reveals**. Nigeria has officially ratified the African Medicine Treaty, becoming the 34th African Union member state to do so. ([thisdaylive](https://www.thisdaylive.com/2026/10/31/nigeria-becomes-34th-au-member-state-to-ratify-african-medicine-treaty-nafdac-dg-reveals/))  
-* **Infrastructure & Telecommunications:** President Tinubu endorsed Airtel's open network launch to improve connectivity ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtmV1l3NVBaYTJ3Wl82RU9hWm1QTVJJM1ZFX_eP8S7ZhxN17G_mlPcMznEu rUqaINIts4sffiAwTy05YeOrHJP_r6rDhTw5dmrnGBn8rdReGp8h3Lj-Zy4HE-C9R3LQdYhtw-fcLzDbs hRIJQpmO_z9daAQcrSJvQ?oc=5)). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtmV1l3NVBaYTJ3Wl82RU9hWm1QTVJJM1ZFX2VQRThTN1poeE4xN0dfbWxQY01uemVVclVxYUlOSXRzNHN6ZmZpQXdUeTA1WWVPckhKcF9yNnJEcUh0dzVkbXJuR0JuOHJkUmVHcDhoM0xqLVp5NEhFLUM5UjNMUWRZaHR3LWZjTHpEYmRzaFJJSlFwbU9fejlkYUFRY3JTSnZR?oc=5))  
-* **Fani-Kayode formally begins diplomatic assignment in South Africa**. Diepreye Fani-Kayode has formally commenced his diplomatic assignment in South Africa. ([vanguardngr](https://www.vanguardngr.com/2026/10/fani-kayode-formally-begins-diplomatic-assignment-in-south-africa/))  
+### Beneficial Ownership & PSC Disclosures  
+No PSC disclosures or identified holders of significant control were found in the material provided.
 
-### High Risk Alerts
-
-### Beneficial Ownership & PSC Disclosures
-No persons with significant control were identified in the provided data.
-
-### Procurement & Board Changes
-* **Makinde approves ₦4.6bn compensation for Circular road-affected property owners**. Governor Makinde has approved the payment of ₦4.6 billion in compensation for property owners affected by the Circular road project. ([businessday](https://businessday.ng/news/article/makinde-approves-%E2%82%A64-6bn-compensation-for-circular-road-affected-property-owners/))  
-* **SON Rewards MATE Energy With MANCAP Award**. The Standards Organisation of Nigeria (SON) has granted the Mandatory Conformity Assessment Programme (MANCAP) award to MATE Energy. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMidkFVX3lxTE01OVdlMUNpYUJiUjJqYzlfQUpuOGVWeUpEdHJUcWh5R2dEQVRxcEsxZ1pTRmEzSGp3RHF5bnBZVFRoTEN6eXpqV2VDX3lvZ0J0WGNPaWNRNkMwdnJ0Z2RQVTk5SWhfdFZGQm82NmNlc0xSVWdKNmc?oc=5))  
+### Procurement & Board Changes  
+No procurement actions or board changes were mentioned within this round of reports.
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: ollama).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
