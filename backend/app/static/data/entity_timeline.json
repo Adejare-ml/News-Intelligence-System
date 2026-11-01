@@ -2320,6 +2320,25 @@
       ]
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "meta",
       "label": "Meta",
       "total_mentions": 4,
@@ -3116,25 +3135,6 @@
           "mentions": 3,
           "avg_risk": 13.3,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -6031,5 +6031,5 @@
       ]
     }
   ],
-  "generated": "2026-11-01 14:06:54"
+  "generated": "2026-11-01 18:22:06"
 }

@@ -10,6 +10,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "recent_avg": 65.0,
+      "previous_avg": 41.7,
+      "delta": 23.3,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 28.3,
@@ -91,22 +100,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "recent_avg": 51.2,
-      "previous_avg": 57.5,
-      "delta": -6.3,
-      "recent_mentions": 4,
-      "previous_mentions": 2
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 18.5,
-      "previous_avg": 24.4,
-      "delta": -5.9,
+      "previous_avg": 24.7,
+      "delta": -6.2,
       "recent_mentions": 20,
-      "previous_mentions": 18
+      "previous_mentions": 17
     },
     {
       "key": "national information technology development agency",
@@ -116,6 +116,15 @@
       "delta": 5.0,
       "recent_mentions": 2,
       "previous_mentions": 4
+    },
+    {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "ekiti state house of assembly",
@@ -170,17 +179,8 @@
       "delta": -1.2,
       "recent_mentions": 8,
       "previous_mentions": 8
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 30.0,
-      "previous_avg": 30.0,
-      "delta": 0.0,
-      "recent_mentions": 10,
-      "previous_mentions": 8
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-01 14:06:54"
+  "generated": "2026-11-01 18:22:06"
 }
