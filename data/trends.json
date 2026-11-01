@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 223,
+  "recent_articles": 220,
   "previous_articles": 201,
   "rising": [
     {
@@ -18,20 +18,20 @@
     {
       "term": "efcc",
       "recent": 16,
-      "previous": 9,
-      "change": 7
-    },
-    {
-      "term": "reps",
-      "recent": 16,
-      "previous": 9,
-      "change": 7
+      "previous": 8,
+      "change": 8
     },
     {
       "term": "official",
       "recent": 7,
       "previous": 0,
       "change": 7
+    },
+    {
+      "term": "reps",
+      "recent": 15,
+      "previous": 10,
+      "change": 5
     },
     {
       "term": "witness",
@@ -96,6 +96,12 @@
       "change": -5
     },
     {
+      "term": "two",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
       "term": "ministry",
       "recent": 0,
       "previous": 5,
@@ -118,29 +124,23 @@
       "recent": 4,
       "previous": 8,
       "change": -4
-    },
-    {
-      "term": "gas",
-      "recent": 3,
-      "previous": 7,
-      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 160,
-      "previous": 138
+      "recent": 158,
+      "previous": 140
     },
     {
       "category": "Legal",
       "recent": 33,
-      "previous": 30
+      "previous": 29
     },
     {
       "category": "Company",
-      "recent": 27,
-      "previous": 31
+      "recent": 26,
+      "previous": 30
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-10-31 20:33:13"
+  "generated": "2026-11-01 02:02:23"
 }

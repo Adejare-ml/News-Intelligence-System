@@ -127,15 +127,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 31.4,
-      "previous_avg": 27.9,
-      "delta": 3.5,
-      "recent_mentions": 11,
-      "previous_mentions": 7
-    },
-    {
       "key": "delta state government",
       "label": "Delta State Government",
       "recent_avg": 16.7,
@@ -143,6 +134,15 @@
       "delta": -3.3,
       "recent_mentions": 3,
       "previous_mentions": 1
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 57.4,
+      "previous_avg": 60.0,
+      "delta": -2.6,
+      "recent_mentions": 17,
+      "previous_mentions": 10
     },
     {
       "key": "communications commission",
@@ -172,15 +172,15 @@
       "previous_mentions": 8
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 57.4,
-      "previous_avg": 58.2,
-      "delta": -0.8,
-      "recent_mentions": 17,
-      "previous_mentions": 11
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 30.0,
+      "previous_avg": 30.0,
+      "delta": 0.0,
+      "recent_mentions": 10,
+      "previous_mentions": 8
     }
   ],
   "window_days": 7,
-  "generated": "2026-10-31 20:33:16"
+  "generated": "2026-11-01 02:02:26"
 }
