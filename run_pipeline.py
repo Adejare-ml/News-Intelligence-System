@@ -1244,6 +1244,12 @@ def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[st
     """
     marker_path = os.path.join(DATA_DIR, "digests", "last_edition.json")
     edition_run = os.environ.get("EMAIL_EDITION", "").strip() == "1"
+    if edition_run and os.environ.get("GITHUB_ACTIONS") and getattr(db, "use_local", False):
+        # Sheets was unreachable and this run fell back to an empty local
+        # file: its row IDs are not the sheet's. Build only a preview, which
+        # the 08:00 send skips, so the next email carries these stories.
+        logger.warning("Email digest: database on the local fallback; building a preview, not the edition")
+        edition_run = False
     try:
         previous = None
         if os.path.exists(marker_path):

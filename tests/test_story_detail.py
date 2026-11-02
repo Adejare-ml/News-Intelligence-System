@@ -139,3 +139,33 @@ def test_figures_keep_their_currency_and_scale(line, ok):
 def test_counts_written_as_words_are_compared():
     assert not sd.grounded("EFCC arraigned seven directors", "EFCC arraigned five directors")
     assert sd.grounded("EFCC arraigned five directors", "EFCC arraigned 5 directors")
+
+
+# --- second review round ------------------------------------------------------------------
+
+def test_a_key_fact_must_restate_one_sentence():
+    source = "Senator Musa denies receiving ₦500m from an NDDC contractor. The contractor declined to comment."
+    assert sd.article_cells({"key_facts": ["Senator Musa received ₦500m from an NDDC contractor"]}, source)["Key Facts"] == ""
+    assert sd.article_cells({"key_facts": ["Senator Musa denies receiving ₦500m from an NDDC contractor"]},
+                            source)["Key Facts"] != ""
+
+
+def test_a_clearance_cannot_become_an_accusation():
+    source = "A House panel clears Okunbor of corruption allegations over the oil contract."
+    assert sd.article_cells({"key_facts": ["Okunbor faces corruption allegations over the oil contract"]}, source)["Key Facts"] == ""
+
+
+def test_future_or_conditional_legal_steps_stay_so():
+    assert not sd.careful("Okafor was charged with fraud, EFCC said.", "EFCC said Okafor will be charged with fraud.")
+    assert not sd.careful("Okafor was found guilty, the court said.", "If found guilty, Okafor faces ten years, the court said.")
+
+
+def test_parties_keep_their_roles():
+    source = "Zenith Bank sues Acme Ltd over a ₦2bn debt."
+    assert sd.careful("Zenith Bank sued Acme Ltd over a ₦2bn debt.", source)
+    assert not sd.careful("Acme Ltd sued Zenith Bank over a ₦2bn debt.", source)
+
+
+def test_trillions_in_house_style():
+    assert ("NGN", sd.Decimal("1.2E+12")) in sd.amounts_in("Zenith posts N1.2tr profit")
+    assert sd.grounded("Zenith posted ₦1.2 trillion profit", "Zenith posts N1.2tr profit")

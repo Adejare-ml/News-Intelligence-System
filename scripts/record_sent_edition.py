@@ -7,8 +7,9 @@ starts where this one ended.
 Writes <data-dir>/digests/last_edition.json (the "since last email" marker
 the pipeline reads) and archives the sent edition as
 <data-dir>/digests/<edition>.json. It records only:
-  - a real send (not a test, a dry run or a skip) that reached at least one
-    subscriber, or found none to send to; and
+  - a real send (not a test or a dry run) that reached at least one
+    subscriber or found none to send to, or a skip because this very
+    edition went out earlier; and
   - the digest the send used: its edition must be the one the send names.
 
 Anything else leaves the marker where it was, so the next email still
@@ -31,17 +32,24 @@ def should_record(result: Dict[str, Any], digest: Dict[str, Any]) -> Tuple[bool,
         return False, "unreadable send result or digest"
     if result.get("test") or result.get("dry_run"):
         return False, "test or dry run"
-    if result.get("skipped") or result.get("error"):
-        return False, f"send skipped ({result.get('skipped') or result.get('error')})"
+    edition = str(result.get("edition") or "")
+    if not edition or edition != str(digest.get("edition") or ""):
+        return False, f"sent edition {edition or '?'} is not this digest ({digest.get('edition') or '?'})"
+    # This very edition went out earlier (a retry after the marker failed to
+    # save): record it now.
+    if result.get("skipped") in ("edition_already_sent", "already_sent_today"):
+        if "through_id" not in digest:
+            return False, "the digest has no through_id"
+        return True, f"recorded {edition} (sent earlier)"
+    if result.get("skipped"):
+        return False, f"send skipped ({result.get('skipped')})"
     if "sent" not in result:
-        return False, "the response does not say what was sent"
+        return False, f"the response does not say what was sent ({result.get('error') or 'no count'})"
+    # A per-recipient error (say, Gmail's daily cap) still means the edition went out.
     sent = int(result.get("sent") or 0)
     recipients = int(result.get("recipients") or 0)
     if sent == 0 and recipients > 0:
         return False, "no copy was delivered"
-    edition = str(result.get("edition") or "")
-    if not edition or edition != str(digest.get("edition") or ""):
-        return False, f"sent edition {edition or '?'} is not this digest ({digest.get('edition') or '?'})"
     if "through_id" not in digest:
         return False, "the digest has no through_id"
     return True, f"recorded {edition} ({sent} sent)"

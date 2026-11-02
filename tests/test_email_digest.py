@@ -130,7 +130,7 @@ class TestRanking:
         e = edition()
         assert e["stats"]["public_money"] == sum(1 for c in e["cards"] if c["theme"] == "Public money") + \
             sum(1 for a in e["also"] if a["theme"] == "Public money")
-        assert "ownership (PSC) disclosures" in e["nothing_in"]
+        assert "ownership and control reports" in e["nothing_in"]
 
 
 def model(payload):
@@ -139,13 +139,19 @@ def model(payload):
 
 class TestModelLines:
     def test_good_lines_are_kept_with_their_citation(self):
+        oyo = next(c for c in edition()["cards"] if "Makinde" in c["headline"])
         e = edition(llm=model({
-            "overview": [{"text": "OPay withdrew its planned $304 million IPO in the United States.", "card": 1}],
+            "overview": [{"text": "Governor Makinde approved ₦4.6 billion for Circular road property owners.", "card": oyo["n"]}],
             "insights": [],
         }))
-        assert e["overview"][0]["text"].startswith("OPay withdrew")
-        assert e["overview"][0]["outlet"] == "Premium Times"
+        line = next(o for o in e["overview"] if o["card"] == oyo["n"])
+        assert line["text"].startswith("Governor Makinde approved") and line["outlet"] == "BusinessDay"
         assert e["engines"]["digest"] == "gemini"
+
+    def test_a_contested_story_is_told_in_the_outlets_words(self):
+        e = edition(llm=model({"overview": [{"text": "OPay withdrew its planned $304 million IPO.", "card": 1}]}))
+        assert e["overview"][0]["text"] == "OPay has withdrawn its plans for a $304 million IPO in the United States."
+        assert e["health"]["overview_own_words"] == 1
 
     def test_endorsed_is_not_welcomed(self):
         airtel = next(c for c in edition()["cards"] + [] if "Airtel" in c["headline"])
@@ -161,12 +167,9 @@ class TestModelLines:
         assert all("5.2" not in o["text"] and "Seyi" not in o["text"] for o in e["overview"])
 
     def test_stale_lead_needs_an_earlier_cue(self):
-        stale = {"text": "OPay listed on the NYSE and raised $304m.", "card": 1}
-        e = edition(llm=model({"overview": [stale]}))
-        assert all(not o["text"].startswith("OPay listed") for o in e["overview"])
-        framed = {"text": "OPay withdrew its $304m IPO; earlier reports said it had listed on the NYSE.", "card": 1}
-        e = edition(llm=model({"overview": [framed]}))
-        assert e["overview"][0]["text"].startswith("OPay withdrew")
+        card = card_of(OPAY)
+        assert not ed.check_line("OPay listed on the NYSE and raised $304m.", [card])
+        assert ed.check_line("Earlier reports said OPay listed on the NYSE; it has now withdrawn its $304m IPO.", [card])
 
     def test_unattributed_accusation_is_dropped(self):
         e = edition(llm=model({"insights": [
@@ -338,6 +341,12 @@ class TestThreadsReview:
         assert not e["subject"].startswith("AURA alert")
 
 
+def card_of(rows):
+    """One card, with the private fields the validator reads."""
+    reports = sorted((ed.report_from_row(r) for r in rows), key=lambda r: (r.time, r.id))
+    return ed.build_card(1, reports)
+
+
 def cards_for(rows):
     return lambda payload: ed.build_edition(rows, [], NOW, LAST, model(payload))
 
@@ -357,10 +366,11 @@ class TestModelLinesReview:
     def test_roles_within_one_card_are_not_swapped(self):
         r = row(30062, "Court grants Bello bail as EFCC arraigns five directors of Alpha Ltd", "The Punch", T,
                 entities="Yahaya Bello|Alpha Ltd|EFCC")
-        e = cards_for([r])({"overview": [{"card": 1, "text": "Yahaya Bello and five Alpha Ltd directors were arraigned by the EFCC."}]})
+        swapped = "Yahaya Bello and five Alpha Ltd directors were arraigned by the EFCC."
+        assert not ed.check_line(swapped, [card_of([r])])
+        assert ed.check_line("EFCC arraigned five directors of Alpha Ltd.", [card_of([r])])
+        e = cards_for([r])({"overview": [{"card": 1, "text": swapped}]})
         assert all("arraigned" not in o["text"] for o in e["overview"])
-        ok = cards_for([r])({"overview": [{"card": 1, "text": "EFCC arraigned five directors of Alpha Ltd."}]})
-        assert ok["overview"][0]["text"] == "EFCC arraigned five directors of Alpha Ltd."
 
     @pytest.mark.parametrize("headline, line", [
         ("Senator Ibrahim Musa denies receiving ₦500m from NDDC contractor",
@@ -373,8 +383,10 @@ class TestModelLinesReview:
          "FG scrapped the Lagos-Calabar coastal highway contract."),
     ])
     def test_flipped_meaning_is_dropped(self, headline, line):
-        e = cards_for([row(30063, headline, "The Punch", T)])({"overview": [{"card": 1, "text": line}]})
-        assert e["health"]["overview_dropped"] == 1
+        r = row(30063, headline, "The Punch", T)
+        assert not ed.check_line(line, [card_of([r])])
+        e = cards_for([r])({"overview": [{"card": 1, "text": line}]})
+        assert all(o["text"] != line for o in e["overview"])
 
     @pytest.mark.parametrize("line", [
         "OPay listed on the NYSE earlier this week, raising $304m.",
@@ -382,8 +394,9 @@ class TestModelLinesReview:
         "OPay raised $304m in its US IPO.",
     ])
     def test_a_reversed_story_is_never_described_as_done(self, line):
+        assert not ed.check_line(line, [card_of(OPAY)])
         e = edition(llm=model({"overview": [{"card": 1, "text": line}]}))
-        assert e["health"]["overview_dropped"] == 1
+        assert all(o["text"] != line for o in e["overview"])
 
     def test_earlier_reports_facts_are_labelled_on_a_reversed_story(self):
         rows = [dict(r) for r in OPAY]
@@ -485,3 +498,106 @@ class TestMarker:
         rows = OPAY + OTHERS
         assert ed.build_edition(rows, [], NOW, LAST, preview=True)["edition"].endswith("-preview")
         assert not ed.build_edition(rows, [], NOW, LAST)["edition"].endswith("-preview")
+
+
+# --- second review round: whole classes, not single wordings ------------------------------
+
+class TestStagesRound2:
+    @pytest.mark.parametrize("headline, stage", [
+        ("Court refuses to discharge ex-governor in N80bn case", "in_court"),
+        ("Ex-minister seeks to quash fraud charges", "in_court"),
+        ("Court fixes date for judgment in Maina case", "in_court"),
+        ("Court frees ex-NNPC GMD", "cleared"),
+        ("Court finds ex-minister not guilty of fraud", "cleared"),
+        ("Court finds ex-minister guilty of fraud", "ruled"),
+        ("EFCC charges Abuja businessman with $120m fraud", "charged"),
+        ("Customers withdraw cash ahead of new limits", "unclear"),
+        ("FG approves completion of abandoned Lagos road", "approved"),
+        ("Senate passes budget despite delays", "unclear"),
+        ("OPay pulls IPO", "withdrawn_or_cancelled"),
+        ("OPay IPO delayed by regulator", "postponed"),
+        ("Banks court investors with new dollar bonds", "unclear"),
+        ("CBN moves to arrest the decline of the naira", "unclear"),
+    ])
+    def test_outcomes_pending_cases_and_business_words(self, headline, stage):
+        assert ed.stage_of(headline) == stage
+
+    def test_the_caveat_is_true_at_any_stage(self):
+        pending = card_of([row(30200, "Court refuses to discharge ex-governor in N80bn case", "The Punch", T)])
+        ruled = card_of([row(30201, "Court convicts ex-pension boss Maina", "The Punch", T)])
+        assert any("not a finding of guilt" in a for a in pending["analysis"])
+        assert ruled["analysis"][-1].startswith("Court outcome as reported by Punch")
+        assert not any("no court has ruled" in a for c in (pending, ruled) for a in c["analysis"])
+
+
+class TestOwnWords:
+    def test_the_model_writes_nothing_about_a_legal_story(self):
+        r = row(30210, "EFCC arraigns Adebayo Somefun over alleged ₦2bn misappropriation", "The Punch", T,
+                entities="EFCC|Adebayo Somefun")
+        e = cards_for([r])({"overview": [{"card": 1, "text": "EFCC arraigned Adebayo Somefun over alleged ₦2bn misappropriation."}]})
+        assert e["overview"][0]["text"] == "EFCC arraigns Adebayo Somefun over alleged ₦2bn misappropriation."
+        assert e["health"]["overview_own_words"] == 1
+
+    def test_no_insight_touches_a_legal_story(self):
+        rows = [
+            row(30211, "EFCC probes alleged ₦3bn fraud at Delta pension board", "The Punch", T, entities="EFCC"),
+            row(30212, "Access Holdings appoints Bolaji Agbede as group CEO", "BusinessDay", T,
+                importance=70, entities="Access Holdings|Bolaji Agbede"),
+        ]
+        e = cards_for(rows)({"insights": [
+            {"kind": "pattern", "cards": [1, 2], "text": "Access Holdings is under EFCC probe over alleged ₦3bn fraud, according to reports."},
+            {"kind": "watch", "cards": [2], "text": "Will the new group CEO face fraud questions?"},
+        ]})
+        assert e["insights"] == []
+
+
+class TestThreadsRound2:
+    def test_two_people_charged_by_one_agency_stay_apart(self):
+        rows = [
+            row(30220, "NDLEA arraigns businessman over cocaine export", "The Punch", T, entities="NDLEA|John Okoro"),
+            row(30221, "NDLEA arraigns businessman over cocaine export in Lagos", "Vanguard News", T,
+                entities="NDLEA|Mary Okoro"),
+        ]
+        assert edition(rows)["stats"]["stories"] == 2
+
+    def test_a_report_naming_nobody_does_not_chain_two_people(self):
+        rows = [
+            row(30222, "Court remands ex-minister Ade Bello over N2bn fraud in Abuja", "The Punch", T, entities="Ade Bello"),
+            row(30223, "Court remands ex-minister over N2bn fraud in Abuja", "Vanguard News", T),
+            row(30224, "Court remands ex-minister Tunde Musa over N2bn fraud in Abuja", "ThisDay", T, entities="Tunde Musa"),
+        ]
+        e = edition(rows)
+        assert e["stats"]["stories"] >= 2
+        assert not any("Bello" in c["headline"] and any("Musa" in t for t in c["timeline"]) for c in e["cards"])
+
+    def test_invisible_characters_do_not_hide_a_repost(self):
+        sent = row(30230, "CBN sanctions five banks", "The Punch", "2026-10-31T05:00:00Z", url="https://punchng.com/cbn")
+        repost = row(30232, "CBN sanctions​ five banks", "The Punch", "2026-10-31T06:00:00Z",
+                     url="https://news.google.com/rss/articles/cbn2")
+        e = ed.build_edition([sent, repost], [], NOW, {"through_id": 30231, "built_at": "2026-10-31 05:30:00"})
+        assert e["cards"] == []
+
+
+class TestWordingRound2:
+    def test_another_outlets_name_in_the_tail_is_kept(self):
+        r = row(30240, "Naira hits record low against dollar - Reuters", "The Punch", T)
+        assert edition([r])["cards"][0]["headline"].endswith("- Reuters")
+        gn = row(30241, "Naira hits record low - Punch Newspapers", "Punch Newspapers", T)
+        assert edition([gn])["cards"][0]["headline"] == "Naira hits record low"
+
+    def test_a_title_is_not_a_sentence_end(self):
+        assert ed.first_sentence("Dr. Ngozi Okonjo-Iweala said the WTO would act. Later text.") == \
+            "Dr. Ngozi Okonjo-Iweala said the WTO would act."
+
+    def test_the_subject_uses_another_top_story_rather_than_cut_one(self):
+        rows = [row(30250, "Lee Group set to unveil $1.8bn industrial park in Ogun, targets 29 factories, 2,500 jobs",
+                    "Premium Times Nigeria", T, importance=90),
+                row(30251, "Nigeria hosts $5bn Africa Energy Bank headquarters", "The Punch", T, importance=80)]
+        e = edition(rows)
+        assert e["subject"] == "AURA · Sun 1 Nov · Nigeria hosts $5bn Africa Energy Bank headquarters"
+        assert "…" not in e["subject"] + e["preheader"]
+
+    def test_a_resignation_is_not_a_sale(self):
+        r = {"Person Name": "Jane Okafor", "Company": "Wema Bank Plc", "Board Role": "Non-Executive Director",
+             "Kind": "role", "Change Type": "resigned", "Source URL": "https://x.ng/w", "Date": "2026-10-31"}
+        assert ed.psc_text(r) == "Jane Okafor reported as no longer non-executive director of Wema Bank Plc"

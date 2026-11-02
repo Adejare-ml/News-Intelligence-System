@@ -27,10 +27,23 @@ def test_no_subscribers_still_moves_the_marker(tmp_path):
     assert rec.record(dict(SENT, recipients=0, sent=0), DIGEST, str(tmp_path))[0]
 
 
+def test_a_partial_send_still_moves_the_marker(tmp_path):
+    result = dict(SENT, sent=450, failed=12, error="Gmail daily cap: 12 not sent")
+    assert rec.record(result, DIGEST, str(tmp_path))[0]
+
+
+@pytest.mark.parametrize("result", [
+    {"skipped": "edition_already_sent", "edition": "20261103-120"},
+    {"skipped": "already_sent_today", "day": "2026-11-03", "edition": "20261103-120"},
+])
+def test_this_edition_sent_earlier_is_recorded_on_a_retry(tmp_path, result):
+    assert rec.record(result, DIGEST, str(tmp_path))[0]
+
+
 @pytest.mark.parametrize("result", [
     dict(SENT, sent=0, failed=3),                                    # every copy failed
     {"skipped": "already_sent_today", "day": "2026-11-03", "edition": "20261102-90"},
-    {"skipped": "edition_already_sent", "edition": "20261103-120"},
+    {"skipped": "send_in_progress_or_incomplete", "day": "2026-11-03", "edition": "20261103-120"},
     {"test": True, "edition": "20261103-120", "sent": 1, "failed": 0},
     {"dry_run": True, "edition": "20261103-120", "recipients": 3},
     dict(SENT, edition="20261103-121-preview"),                      # not the digest in hand
@@ -74,3 +87,14 @@ def test_a_failed_send_leaves_its_stories_for_the_next_email(tmp_path):
     assert not rec.record(dict(SENT, edition=first["edition"], sent=0, failed=2), first, str(tmp_path))[0]
     nxt = ed.build_edition(rows, [], ed.datetime(2026, 11, 3, 7, 5), {"through_id": 40, "built_at": "2026-11-01 07:05:00"})
     assert {c["headline"] for c in nxt["cards"]} == {"MTN raises data tariffs", "Seplat signs gas supply deal"}
+
+
+def test_a_run_on_the_local_fallback_builds_a_preview(tmp_path, monkeypatch):
+    monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+    monkeypatch.setenv("EMAIL_EDITION", "1")
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setattr(rp.db, "use_local", True, raising=False)
+    monkeypatch.setattr(rp.LLMService, "generate_digest", staticmethod(lambda prompt: ("{}", "gemini")))
+    rp.write_email_digest(_articles(), [])
+    built = json.loads((tmp_path / "email_digest.json").read_text())
+    assert built["edition"].endswith("-preview") and built["engines"]["digest"] == ""

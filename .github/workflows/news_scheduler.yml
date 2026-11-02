@@ -314,6 +314,13 @@ jobs:
           SEND_RESULT_FILE: ${{ runner.temp }}/send-result.json
         run: |
           EDITION=$(grep -o 'name="aura-edition" content="[^"]*"' out-production/brief/email/index.html | sed 's/.*content="//; s/"$//')
+          # A preview means this run could not build the edition (e.g. the
+          # database fell back to a local file): send nothing, so the next
+          # email still carries these stories.
+          case "$EDITION" in *-preview)
+            echo "::warning::This run built a preview ($EDITION), not the Morning Brief edition; nothing sent."
+            exit 0 ;;
+          esac
           bash scripts/send_brief.sh send "$EDITION"
 
       # Only a send that went out moves the "since last email" marker, so a
