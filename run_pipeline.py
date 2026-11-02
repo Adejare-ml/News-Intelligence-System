@@ -6,6 +6,7 @@ import logging
 import argparse
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
+from urllib.parse import urlparse
 
 # Adjust sys.path to find backend module
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -30,6 +31,7 @@ from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import analytics, images as article_images, relevance
 from backend.app.services import register_quality
 from backend.app.services import story_detail
+from backend.app.services import claude_llm
 from backend.app.services import email_digest
 from backend.app.db.excel_db import db
 
@@ -329,6 +331,19 @@ def run_pipeline(seed: bool = False):
 
         logger.info(f"Analyzing: '{title}' ({source})")
 
+        # Google News gives only the headline and a feed snippet. When Claude
+        # is configured, look the outlet's own article up on the web (a few
+        # per run), so extraction, key facts and the email read the full
+        # report. The row keeps its Google News URL, which is what later
+        # runs deduplicate on.
+        if (urlparse(url or "").hostname or "").lower() == "news.google.com" \
+                and story_detail.detail_level(cleaned_text, title, source) == "headline" \
+                and claude_llm.configured():
+            fetched = claude_llm.fetch_article(title, source, item.get("published_at") or "")
+            if fetched:
+                logger.info(f"Fetched the full article for '{title[:80]}' from {fetched['url']}")
+                cleaned_text = fetched["text"]
+
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
         try:
@@ -409,7 +424,7 @@ def run_pipeline(seed: bool = False):
             "URL": url,
             "Category": analysis.get("category", "Other"),
             "Risk Score": int(analysis.get("risk_score", 10)),
-            "Summary": analysis.get("summary") or title,
+            "Summary": story_detail.clean_summary(analysis.get("summary")) or title,
             "Status": "Unread",
             "Engine": analysis.get("engine", ""),
             "Event Type": analysis.get("event_type") or "Other",

@@ -55,6 +55,32 @@ def clean_facts(value: Any, summary: str = "") -> List[str]:
     return out
 
 
+# A model describing its input instead of the news: "The article discusses
+# ...", "..., though the reasons were not detailed in the provided text."
+_META = re.compile(
+    r"\b(?:the|this) (?:provided |given |source )?(?:article|text|snippet|report|excerpt|piece|story)\b"
+    r"(?= (?:discuss|mention|describ|highlight|focus|state|note|report|says|does not|doesn't|lacks|is|was|provid))"
+    r"|\bprovided (?:text|article|snippet|content)\b|\b(?:not|no) (?:detailed|specified|mentioned|stated|provided) in the\b",
+    re.I,
+)
+
+
+def clean_summary(value: Any) -> str:
+    """A summary that reports the news: a sentence about "the article" or
+    "the provided text" loses that clause, or goes if nothing is left."""
+    text = _SPACES.sub(" ", str(value or "")).strip()
+    out = []
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        if not _META.search(sentence):
+            out.append(sentence)
+            continue
+        # "X happened, though the reasons were not detailed in the provided text."
+        head = re.split(r",\s+(?:though|but|although|however|while|and)\s+", sentence)[0].rstrip(" ,;:.")
+        if len(head.split()) >= 5 and not _META.search(head):
+            out.append(head + ".")
+    return " ".join(out).strip()
+
+
 def clean_why(value: Any) -> str:
     return _clean_text(value, MAX_WHY_CHARS)
 
@@ -214,7 +240,11 @@ ACCUSATORY = _terms(
     ("cheat", r"\bcheat\w*\b"),
     ("pretence", r"\bfalse pretences?\b|\bobtain\w* (?:money|funds|property) by\b"),
     ("conspire", r"\bconspir\w*\b"),
-    ("wrongdoing", r"\bwrongdoing\b|\bmisconduct\b|\bmalfeasance\b|\bimpropriet\w*\b"),
+    ("wrongdoing", r"\bwrongdoing\b|\bmisconduct\b|\bmalfeasance\b|\bimpropriet\w*\b|\bmalpractice\w*\b|\bsharp practices?\b"),
+    ("irregular", r"\birregularit\w*\b"),
+    ("conflict of interest", r"\bconflicts? of interest\b"),
+    ("nepotism", r"\bnepotis\w*\b|\bfavou?ritism\b"),
+    ("rig", r"\brig(?:ged|ging)\b"),
     ("scam", r"\bscam\w*\b"),
     ("cover-up", r"\bcover-?ups?\b"),
     ("crony", r"\bcron(?:y|ies|yism)\b"),

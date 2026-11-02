@@ -66,8 +66,8 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
       </td></tr>
       <tr><td style={`padding:4px 32px 20px;font:600 13px/1.6 ${sans};color:${ink};`}>
         {glance}
-        {d.also_more > 0 && <span style={`display:block;font-weight:400;color:${muted};`}>Counts cover the whole edition, including {plural(d.also_more, "story", "stories")} listed only on the site.</span>}
-        {d.nothing_in.length > 0 && <span style={`display:block;font-weight:400;color:${muted};`}>Nothing reported in this edition: {d.nothing_in.join(", ")}.</span>}
+        {d.also_more > 0 && <><br /><span style={`font-weight:400;color:${muted};`}>Counts cover the whole edition, including {plural(d.also_more, "story", "stories")} listed only on the site.</span></>}
+        {d.nothing_in.length > 0 && <><br /><span style={`font-weight:400;color:${muted};`}>Nothing reported in this edition: {d.nothing_in.join(", ")}.</span></>}
       </td></tr>
 
       {d.overview.length > 0 && (<>

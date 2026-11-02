@@ -288,7 +288,7 @@ def report_from_row(row: Dict[str, Any]) -> Optional[Report]:
         headline=headline,
         outlet=outlet(row.get("Source")),
         url=url,
-        summary=re.sub(r"\s+", " ", str(row.get("Summary") or "")).strip(),
+        summary=story_detail.clean_summary(row.get("Summary")),
         risk_level=level.capitalize(),
         risk_score=score,
         importance=_num(row.get("Importance"), 50),
@@ -674,7 +674,9 @@ def build_card(n: int, thread: List[Report], fresh_ids: Optional[set] = None) ->
     analysis: List[str] = []
     if differs:
         analysis.append("Reports differ: " + stage_moves(thread))
-    if lead.why:
+    # Stored before this check existed, so checked again here: an analysis
+    # line that accuses anyone the report does not is dropped.
+    if lead.why and story_detail.careful(lead.why, " ".join([lead.headline, lead.summary] + lead.key_facts)):
         analysis.append("Why it matters: " + _whole_sentences(lead.why, 60))
     # One caveat that is true at any stage of a case, so a misread stage
     # never makes the email say something false about it.

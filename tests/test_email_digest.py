@@ -602,3 +602,16 @@ class TestWordingRound2:
         r = {"Person Name": "Jane Okafor", "Company": "Wema Bank Plc", "Board Role": "Non-Executive Director",
              "Kind": "role", "Change Type": "resigned", "Source URL": "https://x.ng/w", "Date": "2026-10-31"}
         assert ed.psc_text(r) == "Jane Okafor reported as no longer non-executive director of Wema Bank Plc"
+
+
+class TestRound3:
+    def test_a_stored_accusing_why_line_is_not_shown(self):
+        r = row(30300, "Lagos Councillor's firm lands N21.35m govt contract", "FIJ NG", T, level="High", score=85,
+                why="This suggests potential conflict of interest and procurement irregularities.")
+        card = edition([r])["cards"][0]
+        assert not any(a.startswith("Why it matters") for a in card["analysis"])
+
+    def test_a_summary_about_the_text_is_cleaned(self):
+        r = row(30301, "Anambra seals orphanage", "Premium Times Nigeria", T,
+                summary="The Anambra State government has sealed an orphanage, though the reasons were not detailed in the provided text.")
+        assert edition([r])["cards"][0]["what_happened"] == "The Anambra State government has sealed an orphanage."

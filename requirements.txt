@@ -21,6 +21,8 @@ pandas==3.0.6
 openpyxl==3.1.5
 google-generativeai==0.8.6
 openai>=1.55.3,<2
+# Claude (backend/app/services/claude_llm.py), used when ANTHROPIC_API_KEY is set.
+anthropic==2.3.0
 slowapi==0.1.10
 # OAuth2PasswordRequestForm parses form bodies through this; without it the
 # login endpoint 500s at request time. (Surfaced by tests/test_api_routes.py.)

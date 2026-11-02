@@ -80,6 +80,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # Optional: Claude first in every cascade (Haiku extraction, Sonnet
+          # brief/email/article lookups). Empty secret = the cascade is as before.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_EXTRACT_MODEL: ${{ vars.ANTHROPIC_EXTRACT_MODEL }}
+          ANTHROPIC_WRITING_MODEL: ${{ vars.ANTHROPIC_WRITING_MODEL }}
+          ANTHROPIC_FETCH_MAX: ${{ vars.ANTHROPIC_FETCH_MAX || '6' }}
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           OLLAMA_HOST: ${{ secrets.OLLAMA_HOST }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
