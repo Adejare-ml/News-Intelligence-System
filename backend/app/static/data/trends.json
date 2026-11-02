@@ -1,19 +1,19 @@
 {
   "window_days": 7,
-  "recent_articles": 217,
-  "previous_articles": 199,
+  "recent_articles": 214,
+  "previous_articles": 202,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 19,
-      "previous": 10,
-      "change": 9
+      "recent": 18,
+      "previous": 11,
+      "change": 7
     },
     {
-      "term": "inec",
-      "recent": 7,
-      "previous": 2,
-      "change": 5
+      "term": "efcc",
+      "recent": 16,
+      "previous": 10,
+      "change": 6
     },
     {
       "term": "official",
@@ -46,36 +46,36 @@
       "change": 5
     },
     {
-      "term": "efcc",
-      "recent": 15,
-      "previous": 11,
-      "change": 4
-    },
-    {
-      "term": "nnpc",
-      "recent": 7,
-      "previous": 3,
-      "change": 4
-    },
-    {
       "term": "profit",
       "recent": 7,
       "previous": 3,
+      "change": 4
+    },
+    {
+      "term": "seeks",
+      "recent": 7,
+      "previous": 3,
+      "change": 4
+    },
+    {
+      "term": "financial",
+      "recent": 6,
+      "previous": 2,
       "change": 4
     }
   ],
   "falling": [
     {
+      "term": "alleged",
+      "recent": 1,
+      "previous": 11,
+      "change": -10
+    },
+    {
       "term": "bill",
       "recent": 1,
       "previous": 9,
       "change": -8
-    },
-    {
-      "term": "alleged",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
     },
     {
       "term": "four",
@@ -96,12 +96,6 @@
       "change": -5
     },
     {
-      "term": "appoints",
-      "recent": 2,
-      "previous": 7,
-      "change": -5
-    },
-    {
       "term": "campaign",
       "recent": 1,
       "previous": 6,
@@ -114,13 +108,19 @@
       "change": -5
     },
     {
-      "term": "two",
-      "recent": 1,
-      "previous": 6,
+      "term": "alleged fraud",
+      "recent": 0,
+      "previous": 5,
       "change": -5
     },
     {
-      "term": "alleged fraud",
+      "term": "keyamo",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
+      "term": "tells",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 161,
-      "previous": 131
+      "recent": 159,
+      "previous": 133
     },
     {
       "category": "Company",
-      "recent": 31,
+      "recent": 32,
       "previous": 25
     },
     {
       "category": "Legal",
-      "recent": 24,
-      "previous": 38
+      "recent": 22,
+      "previous": 39
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-02 18:13:17"
+  "generated": "2026-11-02 23:59:06"
 }
