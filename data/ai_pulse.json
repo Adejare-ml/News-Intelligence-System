@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-02 02:15:11",
+  "generated": "2026-11-02 13:56:54",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4315,
-      "downloads": 170353
+      "likes": 4607,
+      "downloads": 177009
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 702,
-      "downloads": 37568
+      "likes": 780,
+      "downloads": 42384
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 604,
-      "downloads": 29364
+      "likes": 647,
+      "downloads": 32439
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1453,
-      "downloads": 4576
-    },
-    {
-      "id": "Nanbeige/Nanbeige4.3-33B",
-      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "task": "text-generation",
-      "likes": 974,
-      "downloads": 15795
+      "likes": 1475,
+      "downloads": 5500
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 520,
-      "downloads": 109519
+      "likes": 550,
+      "downloads": 147588
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10226,
-      "downloads": 2431846
+      "likes": 10296,
+      "downloads": 2467613
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 483,
-      "downloads": 44825
+      "likes": 528,
+      "downloads": 63499
+    },
+    {
+      "id": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "task": "image-to-3d",
+      "likes": 370,
+      "downloads": 7787
     }
   ],
   "papers": [
     {
-      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
-      "url": "https://huggingface.co/papers/2610.38293",
-      "upvotes": 3
+      "title": "When Requirements Interact: Scaling Long-Horizon Coding via Interdependent Specifications",
+      "url": "https://huggingface.co/papers/2610.40256",
+      "upvotes": 4
     },
     {
-      "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
-      "url": "https://huggingface.co/papers/2610.38681",
-      "upvotes": 3
-    },
-    {
-      "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
-      "url": "https://huggingface.co/papers/2610.39293",
-      "upvotes": 3
-    },
-    {
-      "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
-      "url": "https://huggingface.co/papers/2610.34298",
+      "title": "Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling",
+      "url": "https://huggingface.co/papers/2610.37393",
       "upvotes": 6
     },
     {
-      "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
-      "url": "https://huggingface.co/papers/2609.05881",
-      "upvotes": 6
+      "title": "Supervising the Visible State: Separating Representation from View Selection in Streaming Video",
+      "url": "https://huggingface.co/papers/2610.34926",
+      "upvotes": 4
     },
     {
-      "title": "Training Foundation Models with a Single Algorithm",
-      "url": "https://huggingface.co/papers/2610.40564",
-      "upvotes": 11
+      "title": "Venus-DefakerOne2: A Vision-Forensics Foundation Model with Broader Coverage",
+      "url": "https://huggingface.co/papers/2610.37918",
+      "upvotes": 15
+    },
+    {
+      "title": "MemSteer: Turning User Histories into Supervision for Agent Memory Optimization",
+      "url": "https://huggingface.co/papers/2610.39276",
+      "upvotes": 4
+    },
+    {
+      "title": "VoxLock: Target-Speaker Extraction for Voice Agents Without an Enrollment Step",
+      "url": "https://huggingface.co/papers/2610.40727",
+      "upvotes": 2
     }
   ]
 }
