@@ -52,11 +52,11 @@
     },
     {
       "industry": "Energy",
-      "companies": 10,
-      "mentions": 16,
+      "companies": 11,
+      "mentions": 17,
       "risk": {
         "Medium": 4,
-        "High": 2,
+        "High": 3,
         "Low": 4
       }
     },
@@ -502,6 +502,14 @@
       }
     },
     {
+      "industry": "Automotive",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Aviation Services",
       "companies": 1,
       "mentions": 1,
@@ -942,5 +950,5 @@
       }
     }
   ],
-  "generated": "2026-11-02 13:56:57"
+  "generated": "2026-11-02 18:06:10"
 }

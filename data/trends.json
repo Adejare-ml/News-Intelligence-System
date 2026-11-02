@@ -1,19 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 214,
-  "previous_articles": 198,
+  "recent_articles": 216,
+  "previous_articles": 199,
   "rising": [
     {
       "term": "tinubu",
       "recent": 19,
       "previous": 10,
       "change": 9
-    },
-    {
-      "term": "witness",
-      "recent": 7,
-      "previous": 2,
-      "change": 5
     },
     {
       "term": "official",
@@ -47,8 +41,14 @@
     },
     {
       "term": "efcc",
-      "recent": 14,
-      "previous": 10,
+      "recent": 15,
+      "previous": 11,
+      "change": 4
+    },
+    {
+      "term": "nnpc",
+      "recent": 7,
+      "previous": 3,
       "change": 4
     },
     {
@@ -68,8 +68,14 @@
     {
       "term": "bill",
       "recent": 1,
-      "previous": 10,
-      "change": -9
+      "previous": 9,
+      "change": -8
+    },
+    {
+      "term": "alleged",
+      "recent": 3,
+      "previous": 9,
+      "change": -6
     },
     {
       "term": "four",
@@ -114,13 +120,7 @@
       "change": -5
     },
     {
-      "term": "council",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "keyamo",
+      "term": "alleged fraud",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -129,25 +129,25 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 155,
-      "previous": 134
+      "recent": 160,
+      "previous": 131
     },
     {
       "category": "Company",
-      "recent": 32,
+      "recent": 31,
       "previous": 25
     },
     {
       "category": "Legal",
-      "recent": 25,
-      "previous": 35
+      "recent": 24,
+      "previous": 38
     },
     {
       "category": "Other",
-      "recent": 2,
-      "previous": 4
+      "recent": 1,
+      "previous": 5
     }
   ],
   "social": [],
-  "generated": "2026-11-02 13:56:54"
+  "generated": "2026-11-02 18:06:03"
 }
