@@ -20,8 +20,12 @@ SHEETS_CONFIG = {
     # "Entities" is the canonical org+person names, pipe-joined.
     # "Filter Reason" records *why* a Filtered row was rejected; before, the
     # reason lived only in log lines that rotate away with the Actions run.
+    # "Key Facts" (" | "-joined) and "Why It Matters" are extracted from the
+    # full article text, the only time it is available, so the email can
+    # carry detail a reader trusts without opening the article.
     "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine",
-                 "Event Type", "Risk Level", "Importance", "Entities", "Filter Reason"],
+                 "Event Type", "Risk Level", "Importance", "Entities", "Filter Reason",
+                 "Key Facts", "Why It Matters", "Detail"],
     # "First Seen" is set once on insert and never updated -- the sheet had
     # "Last Seen" only, so no export could say when an entity first appeared.
     # Appended at the END deliberately: _add_company_locked updates cells by

@@ -16,6 +16,10 @@ export interface Article {
   Importance?: number | string;
   Entities?: string;
   Image?: string;
+  /** Facts read from the full article at extraction, " | "-joined. */
+  "Key Facts"?: string;
+  /** Why the story matters, from the article only. */
+  "Why It Matters"?: string;
 }
 
 export interface Story {

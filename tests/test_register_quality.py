@@ -283,3 +283,24 @@ class TestCleanBrief:
         md = "### Beneficial Ownership & PSC Disclosures\n\nNo PSC disclosures were reported."
         out = q.clean_brief(md, self.RECS)
         assert "### Beneficial Ownership" in out and "No PSC disclosures" in out
+
+
+class TestCleanBriefLiveCases:
+    """Shapes taken from the 31 Oct 2026 brief."""
+    URL = "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUGtm?oc=5"
+    RECS = [rec(URL, "Tinubu endorses Airtel open network launch", "Low", "Premium Times Nigeria")]
+
+    def test_broken_link_is_replaced_not_doubled(self):
+        md = ("### Key Developments\n"
+              "* **Infrastructure & Telecommunications:** President Tinubu endorsed Airtel's open network launch "
+              "([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiowFB VV95 cUxQ?oc=5)). "
+              f"([Premium Times Nigeria]({URL}))  ")
+        out = q.clean_brief(md, self.RECS)
+        assert out.count("Premium Times Nigeria") == 1
+        assert "CBMiowFB VV95" not in out
+        assert f"([Premium Times Nigeria]({self.URL}))" in out
+
+    def test_emptied_alerts_section_says_so(self):
+        md = "### High Risk Alerts\n* A medium story ([X](https://x.ng/1)).\n### Key Developments\n"
+        out = q.clean_brief(md, [rec("https://x.ng/1", "A medium story here", "Medium")])
+        assert "### High Risk Alerts\nNo high-risk items today." in out
