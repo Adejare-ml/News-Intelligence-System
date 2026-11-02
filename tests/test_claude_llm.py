@@ -80,12 +80,19 @@ ARTICLE = ("Oyo State Governor Seyi Makinde has approved N4.6 billion as compens
 def test_fetching_finds_the_outlets_article_and_resumes_a_paused_turn(claude):
     paused = text_reply("", stop="pause_turn", content=[NS(type="server_tool_use")])
     found = text_reply('{"found": true, "url": "https://businessday.ng/x", "text": "%s"}' % ARTICLE)
-    client = claude(FakeClient(beta_replies=[paused, found]))
+    client = claude(FakeClient([paused, found]))
     result = claude_llm.fetch_article("Makinde approves N4.6bn compensation for Circular road owners", "businessday")
     assert result["url"] == "https://businessday.ng/x" and result["text"].startswith("Oyo State")
-    second = client.beta.messages.calls[1]["messages"]
-    assert second[1] == {"role": "assistant", "content": paused.content}
-    assert {t["type"] for t in client.beta.messages.calls[0]["tools"]} == {"web_search_20260209", "web_fetch_20260209"}
+    first, second = client.messages.calls
+    assert second["messages"][1] == {"role": "assistant", "content": paused.content}
+    # The research agent runs on Haiku, with the web tools Haiku supports.
+    assert first["model"] == "claude-haiku-5-5"
+    assert {t["type"] for t in first["tools"]} == {"web_search_20250305", "web_fetch_20250910"}
+
+
+def test_a_larger_model_gets_the_newer_web_tools():
+    assert {t["type"] for t in claude_llm._web_tools("claude-sonnet-5-5", 3, 2)} == \
+        {"web_search_20260209", "web_fetch_20260209"}
 
 
 @pytest.mark.parametrize("reply", [
@@ -95,15 +102,15 @@ def test_fetching_finds_the_outlets_article_and_resumes_a_paused_turn(claude):
     '{"found": true, "url": "https://punchng.com/z", "text": "%s"}' % ("Unrelated cement story. " * 40),
 ])
 def test_a_doubtful_lookup_is_not_used(claude, reply):
-    claude(FakeClient(beta_replies=[text_reply(reply)]))
+    claude(FakeClient([text_reply(reply)]))
     assert claude_llm.fetch_article("Makinde approves N4.6bn compensation for Circular road owners", "businessday") is None
 
 
 def test_lookups_stop_at_the_per_run_cap(claude):
-    client = claude(FakeClient(beta_replies=[text_reply('{"found": false}')] * 5))
+    client = claude(FakeClient([text_reply('{"found": false}')] * 5))
     for _ in range(5):
         claude_llm.fetch_article("Some headline about a company", "Punch")
-    assert len(client.beta.messages.calls) == 2
+    assert len(client.messages.calls) == 2
 
 
 def test_claude_leads_the_extraction_cascade(claude, monkeypatch):
@@ -124,3 +131,21 @@ def test_only_google_itself_is_refused_as_a_source(claude):
     for host, ok in (("news.google.com", False), ("google.com", False), ("notgoogle.com", True)):
         assert claude_llm._plausible({"url": f"https://{host}/a", "text": ARTICLE},
                                      "Makinde approves N4.6bn compensation for Circular road owners") is ok
+
+
+def test_research_answers_with_sources(claude):
+    reply = ('{"answer": "Dangote Industries holds about 86% of Dangote Cement, according to its annual report.", '
+             '"sources": [{"title": "Annual report", "url": "https://dangotecement.com/ar"}, {"title": "bad", "url": "ftp://x"}], '
+             '"confidence": "high"}')
+    client = claude(FakeClient([text_reply(reply)]))
+    result = claude_llm.research("Who owns Dangote Cement?")
+    assert result["answer"].startswith("Dangote Industries") and result["confidence"] == "high"
+    assert [s["url"] for s in result["sources"]] == ["https://dangotecement.com/ar"]
+    assert "<question>" in client.messages.calls[0]["messages"][0]["content"]
+
+
+def test_research_keeps_a_plain_text_answer_and_survives_errors(claude):
+    claude(FakeClient([text_reply("No public record found."), RuntimeError("down")]))
+    assert claude_llm.research("q")["answer"] == "No public record found."
+    assert claude_llm.research("q") is None
+    assert claude_llm.research("   ") is None

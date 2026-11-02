@@ -1,0 +1,33 @@
+name: Research
+
+# Ask AURA's research agent (Claude Haiku with web search and fetch) any
+# question about Nigerian business, ownership, public money or regulation.
+# The answer and its sources appear in this run's summary.
+on:
+  workflow_dispatch:
+    inputs:
+      question:
+        description: "What do you want to know?"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Install the Anthropic SDK
+        run: pip install "anthropic==2.3.0" "pydantic-settings==2.16.2"
+      - name: Ask the research agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_RESEARCH_MODEL: ${{ vars.ANTHROPIC_RESEARCH_MODEL }}
+          QUESTION: ${{ inputs.question }}
+        run: python scripts/research.py "$QUESTION"

@@ -55,14 +55,15 @@ class Settings(BaseSettings):
 
     # Claude (Anthropic API). Used first in every cascade when the key is set;
     # without it nothing changes. Blank model values fall back to the
-    # defaults in claude_llm.py (Haiku for per-article extraction, Sonnet for
-    # the brief, the email overview and fetching headline-only articles).
+    # defaults in claude_llm.py (Haiku for per-article extraction and the
+    # web research agent, Sonnet for the brief and the email overview).
     ANTHROPIC_API_KEY: Optional[str] = None
     ANTHROPIC_EXTRACT_MODEL: Optional[str] = None
     ANTHROPIC_WRITING_MODEL: Optional[str] = None
+    ANTHROPIC_RESEARCH_MODEL: Optional[str] = None
     # Most articles per run that Claude may look up on the web when AURA only
     # has their headline (each lookup is a web search plus a page fetch).
-    ANTHROPIC_FETCH_MAX: int = 6
+    ANTHROPIC_FETCH_MAX: int = 15
 
     # Pipeline behavior
     SEED_DEMO_PSC: bool = False
