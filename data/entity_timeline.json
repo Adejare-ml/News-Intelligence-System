@@ -786,6 +786,49 @@
       ]
     },
     {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 26.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "total_mentions": 12,
@@ -868,43 +911,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 26.2,
-          "max_risk": 45
         }
       ]
     },
@@ -1082,6 +1088,31 @@
       ]
     },
     {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 7,
+          "avg_risk": 22.9,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        }
+      ]
+    },
+    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "total_mentions": 9,
@@ -1103,25 +1134,6 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 22.9,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -1562,6 +1574,43 @@
       ]
     },
     {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "dp world",
       "label": "DP World",
       "total_mentions": 5,
@@ -1927,37 +1976,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "abia state government",
-      "label": "Abia State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -3742,6 +3760,25 @@
       ]
     },
     {
+      "key": "anambra state government",
+      "label": "Anambra State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "axxela",
       "label": "Axxela",
       "total_mentions": 2,
@@ -4707,6 +4744,25 @@
       ]
     },
     {
+      "key": "not stated",
+      "label": "Not Stated",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "office of the accountant general of the federation",
       "label": "Office of the Accountant General of the Federation",
       "total_mentions": 2,
@@ -4798,6 +4854,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "otti",
+      "label": "Otti",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -5927,19 +6002,6 @@
       ]
     },
     {
-      "key": "anambra state government",
-      "label": "Anambra State Government",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "anthony kila",
       "label": "Anthony Kila",
       "total_mentions": 1,
@@ -6003,33 +6065,7 @@
           "max_risk": 45
         }
       ]
-    },
-    {
-      "key": "association of issuing houses of",
-      "label": "Association of Issuing Houses of Nigeria",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "biofin",
-      "label": "BIOFIN",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-11-02 02:15:17"
+  "generated": "2026-11-02 13:56:57"
 }
