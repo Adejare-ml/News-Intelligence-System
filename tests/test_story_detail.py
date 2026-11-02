@@ -169,3 +169,22 @@ def test_parties_keep_their_roles():
 def test_trillions_in_house_style():
     assert ("NGN", sd.Decimal("1.2E+12")) in sd.amounts_in("Zenith posts N1.2tr profit")
     assert sd.grounded("Zenith posted ₦1.2 trillion profit", "Zenith posts N1.2tr profit")
+
+
+# --- third round: wording a reader should never see ---------------------------------------
+
+@pytest.mark.parametrize("raw, clean", [
+    ("The Anambra State government has sealed an orphanage, though the specific reasons for the action were not "
+     "detailed in the provided text.", "The Anambra State government has sealed an orphanage."),
+    ("The article discusses a draft Nigeria Economic Policy Framework.", ""),
+    ("MTN Nigeria reported a 55% increase in profit. The report does not mention dividends.",
+     "MTN Nigeria reported a 55% increase in profit."),
+    ("Shareholders approved the report and accounts for 2025.", "Shareholders approved the report and accounts for 2025."),
+])
+def test_summaries_report_the_news_not_the_text(raw, clean):
+    assert sd.clean_summary(raw) == clean
+
+
+def test_insinuations_need_attribution():
+    source = "EXPOSED: Lagos Councillor firm lands N21.35m govt contract barely 7 months after CAC registration"
+    assert not sd.careful("This suggests potential conflict of interest and procurement irregularities.", source)
