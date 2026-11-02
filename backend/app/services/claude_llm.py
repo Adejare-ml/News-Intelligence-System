@@ -135,7 +135,8 @@ def _plausible(result: Dict[str, Any], title: str) -> bool:
     url = str(result.get("url") or "")
     host = (urlparse(url).hostname or "").lower()
     text = str(result.get("text") or "")
-    if not url.startswith(("http://", "https://")) or not host or host.endswith("google.com"):
+    google = host == "google.com" or host.endswith(".google.com")
+    if not url.startswith(("http://", "https://")) or not host or google:
         return False
     if len(text) < 400:
         return False

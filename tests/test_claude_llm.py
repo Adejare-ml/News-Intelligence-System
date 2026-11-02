@@ -118,3 +118,9 @@ def test_the_cascade_moves_on_when_claude_fails(claude, monkeypatch):
     monkeypatch.setattr(settings, "GEMINI_API_KEY", "g")
     monkeypatch.setattr(LLMService, "generate_daily_report_gemini", classmethod(lambda cls, raw, prompt=None: "gemini brief"))
     assert LLMService.generate_daily_report("data") == ("gemini brief", "gemini")
+
+
+def test_only_google_itself_is_refused_as_a_source(claude):
+    for host, ok in (("news.google.com", False), ("google.com", False), ("notgoogle.com", True)):
+        assert claude_llm._plausible({"url": f"https://{host}/a", "text": ARTICLE},
+                                     "Makinde approves N4.6bn compensation for Circular road owners") is ok
