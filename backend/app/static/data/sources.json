@@ -16,9 +16,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2481,
+      "total": 2482,
       "published": 999,
-      "filtered": 1482,
+      "filtered": 1483,
       "accept_rate": 40,
       "avg_risk": 30.5,
       "engines": {
@@ -113,6 +113,20 @@
       "last_seen": "2026-11-02"
     },
     {
+      "source": "naijaonpoint_ng",
+      "total": 206,
+      "published": 58,
+      "filtered": 148,
+      "accept_rate": 28,
+      "avg_risk": 24.4,
+      "engines": {
+        "unknown": 43,
+        "ollama": 14,
+        "claude": 1
+      },
+      "last_seen": "2026-11-02"
+    },
+    {
       "source": "leadership",
       "total": 205,
       "published": 50,
@@ -126,30 +140,17 @@
       "last_seen": "2026-11-02"
     },
     {
-      "source": "naijaonpoint_ng",
-      "total": 205,
-      "published": 57,
-      "filtered": 148,
-      "accept_rate": 28,
-      "avg_risk": 24.3,
-      "engines": {
-        "unknown": 43,
-        "ollama": 14
-      },
-      "last_seen": "2026-10-30"
-    },
-    {
       "source": "dailypost",
-      "total": 198,
+      "total": 199,
       "published": 46,
-      "filtered": 152,
+      "filtered": 153,
       "accept_rate": 23,
       "avg_risk": 26.5,
       "engines": {
         "unknown": 40,
         "ollama": 6
       },
-      "last_seen": "2026-11-01"
+      "last_seen": "2026-11-02"
     },
     {
       "source": "vanguardngr",
@@ -2123,6 +2124,16 @@
       "last_seen": "2026-09-05"
     },
     {
+      "source": "hallmarknews",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-11-02"
+    },
+    {
       "source": "informationng",
       "total": 1,
       "published": 0,
@@ -2277,5 +2288,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-02 18:06:10"
+  "generated": "2026-11-02 18:13:22"
 }
