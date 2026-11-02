@@ -5641,6 +5641,19 @@
       ]
     },
     {
+      "key": "agbi",
+      "label": "Agbi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "agip energy and natural resources",
       "label": "Agip Energy and Natural Resources Ltd",
       "total_mentions": 1,
@@ -6016,20 +6029,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "bua foods",
-      "label": "BUA Foods",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-11-01 21:04:03"
+  "generated": "2026-11-02 02:15:17"
 }

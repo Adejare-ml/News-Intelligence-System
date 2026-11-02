@@ -121,6 +121,12 @@
       "risk": "Critical"
     },
     {
+      "id": "faa96568b0eb",
+      "label": "NTIA",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -235,9 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "1576ccbbc285",
-      "label": "Police Service Commission",
-      "type": "agency",
+      "id": "34c799e822f2",
+      "label": "Agbi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "a345e8b7e0f7",
+      "label": "SAO Energy",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -441,12 +453,6 @@
     {
       "id": "22efb00940fe",
       "label": "Uche Nnaji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "20186135f191",
-      "label": "Nnaji",
       "type": "person",
       "risk": "Low"
     },
@@ -674,6 +680,12 @@
     }
   ],
   "edges": [
+    {
+      "id": "f055c1aaac37",
+      "from": "34c799e822f2",
+      "to": "a345e8b7e0f7",
+      "label": "Appointed as CEO"
+    },
     {
       "id": "1bbcdc3382b5",
       "from": "fc0df526d10a",

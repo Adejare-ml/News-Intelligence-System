@@ -1,5 +1,23 @@
 [
   {
+    "ID": 10729,
+    "Time": "2026-11-01 14:08:46",
+    "Title": "SAO Energy CEO, Agbi, wins NTIA\u2019s \u2018Tech Woman of The Year\u2019 award",
+    "Source": "businessday",
+    "URL": "https://businessday.ng/life/article/sao-energy-ceo-agbi-wins-ntias-tech-woman-of-the-year-award/",
+    "Category": "Company",
+    "Risk Score": 10,
+    "Summary": "Agbi, the CEO of SAO Energy, has been named 'Tech Woman of The Year' by the NTIA. The article focuses on professional recognition rather than corporate structural changes.",
+    "Status": "Unread",
+    "Engine": "ollama",
+    "Event Type": "Other",
+    "Risk Level": "Low",
+    "Importance": 30,
+    "Entities": "SAO Energy|NTIA|Agbi",
+    "Filter Reason": "",
+    "Image": ""
+  },
+  {
     "ID": 10712,
     "Time": "2026-11-01 08:57:38",
     "Title": "FG will not abandon Akwanga-Jos-Gombe road project \u2013 APC national chairman",
@@ -1060,23 +1078,5 @@
     "Entities": "Paga|Tayo Oviosu",
     "Filter Reason": "",
     "Image": "https://cdn.punchng.com/wp-content/uploads/2026/10/28230420/Paga_1793225060.webp"
-  },
-  {
-    "ID": 10465,
-    "Time": "2026-10-28T23:05:46Z",
-    "Title": "Tinubu prepares 2027 budget, FEC approves roads, airport biosecurity",
-    "Source": "The Punch",
-    "URL": "https://punchng.com/tinubu-prepares-2027-budget-fec-approves-roads-airport-biosecurity/",
-    "Category": "Government",
-    "Risk Score": 20,
-    "Summary": "The Federal Executive Council (FEC) has approved various infrastructure projects including roads and airport biosecurity measures. Additionally, the Minister of State for Budget and Economic Planning announced that President Bola Tinubu will present the 2027 budget to the National Assembly by year-end.",
-    "Status": "Unread",
-    "Engine": "ollama",
-    "Event Type": "Policy",
-    "Risk Level": "Low",
-    "Importance": 70,
-    "Entities": "Federal Executive Council|Ministry of Budget and Economic Planning|National Assembly|Bola Tinubu|Doris Anite-Uzoka",
-    "Filter Reason": "",
-    "Image": "https://cdn.punchng.com/wp-content/uploads/2026/10/27133010/tinubu-3_1793104210.webp"
   }
 ]
