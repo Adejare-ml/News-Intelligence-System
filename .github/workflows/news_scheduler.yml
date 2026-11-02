@@ -2,15 +2,18 @@ name: AI News Intelligence Scheduler
 
 on:
   schedule:
-    # 8:00 AM, 2:00 PM, 6:00 PM, and 11:00 PM Nigeria Time (UTC+1)
-    - cron: "0 7 * * *"   # 8:00 AM Nigeria Time (7:00 AM UTC)
-    - cron: "0 13 * * *"  # 2:00 PM Nigeria Time (1:00 PM UTC)
-    - cron: "0 17 * * *"  # 6:00 PM Nigeria Time (5:00 PM UTC)
-    - cron: "0 23 * * *"  # 11:00 PM Nigeria Time (11:00 PM UTC)
+    # 8:11 AM, 2:11 PM, 6:11 PM and 11:11 PM Nigeria Time (UTC+1). Off the
+    # hour: GitHub drops scheduled runs most often at :00, when every repo's
+    # cron fires at once (the 07:00 and 13:00 runs of 2 Nov 2026 never
+    # started). scheduler_watchdog.yml starts any run that still goes missing.
+    - cron: "11 7 * * *"   # 8:11 AM Nigeria Time: the Morning Brief edition
+    - cron: "11 13 * * *"  # 2:11 PM Nigeria Time
+    - cron: "11 17 * * *"  # 6:11 PM Nigeria Time
+    - cron: "11 23 * * *"  # 11:11 PM Nigeria Time
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
     inputs:
       email_edition:
-        description: "Also build and send the Morning Brief email (when the 08:00 run was missed or failed)"
+        description: "Also build and send the Morning Brief email (when the morning run was missed or failed)"
         type: boolean
         default: false
 
@@ -98,7 +101,7 @@ jobs:
           # overview. Other runs write a preview of the next edition. The
           # "since last email" marker moves only after a send succeeds
           # (deploy-pages below).
-          EMAIL_EDITION: ${{ (github.event.schedule == '0 7 * * *' || inputs.email_edition) && '1' || '' }}
+          EMAIL_EDITION: ${{ (github.event.schedule == '11 7 * * *' || inputs.email_edition) && '1' || '' }}
         run: |
           python run_pipeline.py
 
@@ -130,7 +133,7 @@ jobs:
       # pipeline run red or file a pipeline-failure issue; the step's own
       # log still shows the failure. See docs/NOTIFICATIONS.md for setup.
       - name: Send the morning email briefing
-        if: github.event.schedule == '0 7 * * *'
+        if: github.event.schedule == '11 7 * * *'
         continue-on-error: true
         env:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
@@ -307,7 +310,7 @@ jobs:
       # the run. See docs/CLOUDFLARE.md "Morning Brief email".
       - name: Email the Morning Brief to subscribers
         id: send
-        if: (github.event.schedule == '0 7 * * *' || inputs.email_edition) && steps.production.outputs.built == 'true'
+        if: (github.event.schedule == '11 7 * * *' || inputs.email_edition) && steps.production.outputs.built == 'true'
         continue-on-error: true
         env:
           BRIEF_SEND_SECRET: ${{ secrets.BRIEF_SEND_SECRET }}

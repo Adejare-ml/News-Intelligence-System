@@ -1,0 +1,69 @@
+name: Scheduler watchdog
+
+# GitHub sometimes drops scheduled runs without a trace (on 2 Nov 2026 the
+# 07:00 and 13:00 UTC pipeline runs never started, so no Morning Brief went
+# out). This checks, after each pipeline slot, that a run of "AI News
+# Intelligence Scheduler" actually started; if none did, it starts one. For
+# the morning slot it starts the email edition, so the brief still goes out
+# (a later duplicate is harmless: send-brief sends once per Lagos day).
+#
+# Two chances for the morning slot (07:51 and 08:29 UTC), one for the others.
+# A watchdog run can be dropped too, but two independent schedules missing
+# the same slot is far rarer than one.
+on:
+  schedule:
+    - cron: "51 7,13,17,23 * * *"
+    - cron: "29 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write   # to start the pipeline
+  contents: read
+
+concurrency:
+  group: scheduler-watchdog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start the pipeline if its slot was skipped
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # The slot this check covers: the latest of 07, 13, 17 and 23 UTC
+          # at or before now (before 07:00, yesterday's 23:00).
+          HOUR=$((10#$(date -u +%H)))
+          SINCE=""
+          for SLOT in 23 17 13 7; do
+            if [ "$HOUR" -ge "$SLOT" ]; then
+              SINCE=$(date -u -d "today $SLOT:00" +%Y-%m-%dT%H:%M:%SZ)
+              break
+            fi
+          done
+          if [ -z "$SINCE" ]; then
+            SLOT=23
+            SINCE=$(date -u -d "yesterday 23:00" +%Y-%m-%dT%H:%M:%SZ)
+          fi
+
+          # Any run since the slot counts: scheduled, manual or started by
+          # an earlier watchdog check, queued, running or finished.
+          STARTED=$(gh run list -R "$REPO" --workflow news_scheduler.yml --limit 30 \
+            --json createdAt --jq "[.[] | select(.createdAt >= \"$SINCE\")] | length")
+          if [ "$STARTED" -gt 0 ]; then
+            echo "The pipeline has started since $SINCE ($STARTED run(s)); nothing to do."
+            exit 0
+          fi
+
+          EDITION=false
+          [ "$SLOT" = "7" ] && EDITION=true
+          echo "::warning::No pipeline run since $SINCE: GitHub skipped the scheduled slot. Starting one now (email_edition=$EDITION)."
+          gh workflow run news_scheduler.yml -R "$REPO" --ref main -f email_edition="$EDITION"
+          {
+            echo "### Scheduler watchdog"
+            echo
+            echo "No pipeline run had started since $SINCE, so this started one (email_edition=$EDITION)."
+          } >> "$GITHUB_STEP_SUMMARY"
