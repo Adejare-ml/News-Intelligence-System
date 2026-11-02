@@ -1,60 +1,60 @@
 {
-  "generated": "2026-11-01 21:04:00",
+  "generated": "2026-11-02 02:15:11",
   "models": [
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4257,
+      "likes": 4315,
       "downloads": 170353
     },
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 682,
+      "likes": 702,
       "downloads": 37568
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 587,
+      "likes": 604,
       "downloads": 29364
-    },
-    {
-      "id": "Nanbeige/Nanbeige4.3-33B",
-      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "task": "text-generation",
-      "likes": 965,
-      "downloads": 15795
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1440,
+      "likes": 1453,
       "downloads": 4576
+    },
+    {
+      "id": "Nanbeige/Nanbeige4.3-33B",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "task": "text-generation",
+      "likes": 974,
+      "downloads": 15795
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 511,
+      "likes": 520,
       "downloads": 109519
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10201,
+      "likes": 10226,
       "downloads": 2431846
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 468,
+      "likes": 483,
       "downloads": 44825
     }
   ],
@@ -62,32 +62,32 @@
     {
       "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
       "url": "https://huggingface.co/papers/2610.38293",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
       "url": "https://huggingface.co/papers/2610.38681",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
       "url": "https://huggingface.co/papers/2610.39293",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
       "url": "https://huggingface.co/papers/2610.34298",
-      "upvotes": 5
+      "upvotes": 6
     },
     {
       "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
       "url": "https://huggingface.co/papers/2609.05881",
-      "upvotes": 5
+      "upvotes": 6
     },
     {
       "title": "Training Foundation Models with a Single Algorithm",
       "url": "https://huggingface.co/papers/2610.40564",
-      "upvotes": 8
+      "upvotes": 11
     }
   ]
 }
