@@ -199,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "fa1f6b770d91",
+      "label": "Independent National Electoral Commission (INEC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ce170f2e6007",
       "label": "NNPC/MPN JV EMOIMEE Host Community Development Trust",
       "type": "agency",
@@ -229,12 +235,6 @@
       "risk": "Low"
     },
     {
-      "id": "aa5a2a60ab61",
-      "label": "Niger State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "34c799e822f2",
       "label": "Agbi",
       "type": "person",
@@ -261,6 +261,12 @@
     {
       "id": "10e91a46eee3",
       "label": "Godswill Akpabio",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "711f164886cd",
+      "label": "Bayode",
       "type": "person",
       "risk": "Low"
     },
@@ -705,6 +711,12 @@
       "label": "Appointed as Politician"
     },
     {
+      "id": "d38fa55c5f1f",
+      "from": "711f164886cd",
+      "to": "fa1f6b770d91",
+      "label": "Appointed as ICT Director"
+    },
+    {
       "id": "1bbcdc3382b5",
       "from": "fc0df526d10a",
       "to": "b5da1d8370fd",
@@ -823,12 +835,6 @@
       "from": "18bc77b97b9c",
       "to": "00d9f6e47194",
       "label": "Appointed as Director of Air Mobilisation"
-    },
-    {
-      "id": "90393028440a",
-      "from": "18bc77b97b9c",
-      "to": "283e1d4aa831",
-      "label": "Appointed as Head of Air Mobilisation"
     },
     {
       "id": "34c826682817",

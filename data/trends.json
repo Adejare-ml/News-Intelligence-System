@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 216,
+  "recent_articles": 217,
   "previous_articles": 199,
   "rising": [
     {
@@ -8,6 +8,12 @@
       "recent": 19,
       "previous": 10,
       "change": 9
+    },
+    {
+      "term": "inec",
+      "recent": 7,
+      "previous": 2,
+      "change": 5
     },
     {
       "term": "official",
@@ -55,12 +61,6 @@
       "term": "profit",
       "recent": 7,
       "previous": 3,
-      "change": 4
-    },
-    {
-      "term": "financial",
-      "recent": 6,
-      "previous": 2,
       "change": 4
     }
   ],
@@ -129,7 +129,7 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 160,
+      "recent": 161,
       "previous": 131
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-02 18:06:03"
+  "generated": "2026-11-02 18:13:17"
 }

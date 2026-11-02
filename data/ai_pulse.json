@@ -1,18 +1,18 @@
 {
-  "generated": "2026-11-02 18:06:03",
+  "generated": "2026-11-02 18:13:17",
   "models": [
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 919,
+      "likes": 920,
       "downloads": 42384
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4661,
+      "likes": 4662,
       "downloads": 177009
     },
     {
@@ -54,7 +54,7 @@
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 392,
+      "likes": 393,
       "downloads": 7787
     }
   ],
@@ -62,7 +62,7 @@
     {
       "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
       "url": "https://huggingface.co/papers/2610.37481",
-      "upvotes": 6
+      "upvotes": 12
     },
     {
       "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
