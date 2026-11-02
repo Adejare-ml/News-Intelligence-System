@@ -7,7 +7,8 @@
 # where the subscriber list lives; this only calls it. With an expected
 # edition, it first waits (up to 10 minutes) until production serves that
 # edition, so subscribers get the brief the site shows. Prints the result to
-# the log and, in Actions, to the job summary.
+# the log and, in Actions, to the job summary; with SEND_RESULT_FILE set,
+# also writes a successful response there.
 set -uo pipefail
 
 MODE="${1:-send}"
@@ -46,4 +47,7 @@ echo "send-brief ($MODE): HTTP $CODE $BODY"
 if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
   { echo "### Morning Brief email ($MODE)"; echo; echo "HTTP $CODE"; echo; echo '```json'; echo "$BODY"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 fi
-[ "$CODE" -lt 400 ] || { echo "::error::Morning Brief send returned HTTP $CODE"; exit 1; }
+# 000 means no response at all: not a send.
+{ [ "$CODE" -ge 200 ] && [ "$CODE" -lt 400 ]; } || { echo "::error::Morning Brief send returned HTTP $CODE"; exit 1; }
+# The caller records a successful send's edition (record_sent_edition.sh).
+if [ -n "${SEND_RESULT_FILE:-}" ]; then printf '%s\n' "$BODY" > "$SEND_RESULT_FILE"; fi

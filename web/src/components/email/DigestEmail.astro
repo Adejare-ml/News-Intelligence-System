@@ -40,8 +40,13 @@ const glance = [
   plural(s.risk_alerts, "risk alert") + " (High/Critical)",
   plural(s.public_money, "public-money decision"),
   plural(s.appointments, "appointment"),
-  plural(s.ownership, "ownership (PSC) disclosure"),
+  plural(s.ownership, "ownership and control report"),
 ].join(" · ");
+
+// Outlook for Windows ignores max-width and stretches a width:100% table
+// across the reading pane; a fixed 600px ghost table holds it.
+const msoOpen = '<!--[if mso]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]-->';
+const msoClose = "<!--[if mso]></td></tr></table><![endif]-->";
 
 const label = `padding:22px 32px 6px;font:700 11px/1.4 ${sans};letter-spacing:2px;text-transform:uppercase;color:${gold};border-top:1px solid ${rule};`;
 const body = `font:15px/1.6 ${sans};color:${ink};`;
@@ -50,6 +55,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
 ---
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#ece6d6;">
   <tr><td align="center" style="padding:24px 12px;">
+    <Fragment set:html={msoOpen} />
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fffcf4;border-radius:14px;">
       <tr><td style={`padding:32px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>AURA · THE MORNING BRIEF</td></tr>
       <tr><td style={`padding:0 32px;font:500 30px/1.15 ${serif};color:${ink};`}>{d.date}</td></tr>
@@ -60,6 +66,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
       </td></tr>
       <tr><td style={`padding:4px 32px 20px;font:600 13px/1.6 ${sans};color:${ink};`}>
         {glance}
+        {d.also_more > 0 && <span style={`display:block;font-weight:400;color:${muted};`}>Counts cover the whole edition, including {plural(d.also_more, "story", "stories")} listed only on the site.</span>}
         {d.nothing_in.length > 0 && <span style={`display:block;font-weight:400;color:${muted};`}>Nothing reported in this edition: {d.nothing_in.join(", ")}.</span>}
       </td></tr>
 
@@ -117,6 +124,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
               <a href={p.url} style={link}>Read the report ↗</a>
             </p>
           ))}
+          {(d.psc_more ?? 0) > 0 && <p style={`margin:0;${small}`}><a href={`${site}/register/`} style={link}>+{d.psc_more} more in the ownership register ↗</a></p>}
         </td></tr>
       </>)}
 
@@ -140,5 +148,6 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
         <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.
       </td></tr>
     </table>
+    <Fragment set:html={msoClose} />
   </td></tr>
 </table>

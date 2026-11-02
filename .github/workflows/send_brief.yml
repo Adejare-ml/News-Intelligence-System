@@ -4,7 +4,13 @@ name: Send Morning Brief
 # sends it automatically):
 #   dry_run  how many confirmed subscribers would get today's brief
 #   test     send one copy to OWNER_EMAIL, so you can check it in your inbox
-#   send     send today's brief now (never twice in one day)
+#   send     send today's brief now (never twice in one day); the edition
+#            sent becomes the "since last email" marker, as after an
+#            automatic send
+#
+# To rebuild a missed 08:00 edition first (with its model-written
+# overview), run "AI News Intelligence Scheduler" with email_edition ticked:
+# it builds, publishes and sends in one go.
 on:
   workflow_dispatch:
     inputs:
@@ -16,7 +22,7 @@ on:
         options: [dry_run, test, send]
 
 permissions:
-  contents: read
+  contents: write   # records the sent edition (digests/last_edition.json)
 
 jobs:
   send:
@@ -24,8 +30,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Fetch the edition production serves
+        if: inputs.mode == 'send'
+        run: curl -fsSL --max-time 30 "https://auranews.pages.dev/data/email_digest.json" -o "$RUNNER_TEMP/email_digest.json" || true
       - name: Call the send endpoint
+        id: send
         env:
           BRIEF_SEND_SECRET: ${{ secrets.BRIEF_SEND_SECRET }}
           MODE: ${{ inputs.mode }}
+          SEND_RESULT_FILE: ${{ runner.temp }}/send-result.json
         run: bash scripts/send_brief.sh "$MODE"
+      - name: Record the sent edition
+        if: inputs.mode == 'send' && steps.send.outcome == 'success'
+        run: bash scripts/record_sent_edition.sh "$RUNNER_TEMP/send-result.json" "$RUNNER_TEMP/email_digest.json"
