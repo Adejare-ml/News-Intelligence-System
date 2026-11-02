@@ -171,6 +171,14 @@ function is live, then **Actions → Send Morning Brief**:
 From then on the 08:00 Lagos run sends it automatically; the result is in
 that run's job summary.
 
+Each email covers every story added since the last email that was **sent**.
+After a send succeeds, the workflow commits `digests/last_edition.json`
+(under `backend/app/static/data/`); a failed or skipped send leaves it, so
+the next email keeps those stories. If the 08:00 run was missed or failed,
+run **Actions → AI News Intelligence Scheduler** with *email_edition*
+ticked: it rebuilds the edition (with its model-written overview),
+publishes it and sends it.
+
 Subscriber emails are personal data under the Nigeria Data Protection Act
 2023: they are stored only in your D1 database, never leave Cloudflare,
 are used only to send the brief, and stop receiving it on unsubscribe.

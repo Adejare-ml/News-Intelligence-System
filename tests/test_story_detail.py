@@ -63,3 +63,79 @@ def test_detail_level_reflects_what_was_read():
 def test_missing_fields_are_empty_not_none():
     assert sd.article_cells({}) == {"Key Facts": "", "Why It Matters": ""}
     assert sd.from_row({}) == {"key_facts": [], "why_it_matters": "", "detail": ""}
+
+
+# --- review findings: accusations, legal steps and reversals ---------------------------
+
+import pytest  # noqa: E402
+
+CHARGE = ("EFCC arraigns Adebayo Somefun over alleged ₦2bn misappropriation at NSITF; "
+          "he pleaded not guilty, the commission said.")
+
+
+@pytest.mark.parametrize("fact", [
+    "Makinde misappropriated N4.6 billion meant for Circular road owners",
+    "Makinde siphoned N4.6 billion from the Circular road fund",
+    "Makinde was arrested over the N4.6 billion Circular road payout",
+    "Makinde was convicted over the Circular road compensation",
+])
+def test_invented_accusations_and_legal_steps_are_dropped(fact):
+    assert sd.article_cells({"key_facts": [fact]}, ARTICLE)["Key Facts"] == ""
+
+
+def test_an_accusation_needs_attribution_even_when_the_article_has_the_word():
+    source = "The EFCC alleged fraud by Makinde. A report was filed."
+    assert not sd.careful("The N4.6 billion report proves Makinde committed fraud", source)
+    assert sd.careful("Makinde committed fraud, the EFCC alleged.", source)
+
+
+@pytest.mark.parametrize("line, source", [
+    ("Senator Musa admitted receiving ₦500m.", "Senator Musa denies receiving ₦500m from NDDC contractor"),
+    ("Police charged the cashier over the missing ₦40m.", "Police say the cashier has not been charged over missing ₦40m"),
+    ("Somefun pleaded guilty to misappropriating ₦2bn, EFCC said.", CHARGE),
+    ("FG scrapped the rail contract.", "FG postpones signing of rail contract"),
+])
+def test_flipped_meaning_is_dropped(line, source):
+    assert not sd.careful(line, source)
+
+
+def test_the_same_sense_passes():
+    assert sd.careful("Somefun pleaded not guilty, EFCC said.", CHARGE)
+    assert sd.careful("FG postponed signing the rail contract.", "FG postpones signing of rail contract")
+
+
+@pytest.mark.parametrize("fact, source", [
+    ("Headline inflation eased to 32.70 per cent in September 2026",
+     "Headline inflation eased to 32.70 per cent in September 2026, the NBS said."),
+    ("Access Holdings will buy a 51% stake in Union Bank", "Access Holdings will buy a 51% stake in Union Bank."),
+    ("Access Holdings will sell its pension unit", "Access Holdings will sell its pension unit."),
+    ("Army destroys 20 illegal refineries", "The Army said troops destroyed 20 illegal refineries in Rivers."),
+])
+def test_benign_business_facts_survive(fact, source):
+    assert sd.article_cells({"key_facts": [fact]}, source)["Key Facts"] == fact
+
+
+def test_calling_a_named_firm_illegal_needs_attribution():
+    source = "The Army said troops destroyed 20 illegal refineries run by Acme Ltd."
+    assert not sd.careful("Acme Ltd ran 20 illegal refineries", source)
+    assert sd.careful("Acme Ltd ran 20 illegal refineries, the Army said", source)
+
+
+def test_investment_advice_is_dropped():
+    assert not sd.careful("Investors should buy OPay shares", "OPay shares")
+
+
+@pytest.mark.parametrize("line, ok", [
+    ("Makinde approved N4.6 billion in compensation", True),
+    ("Makinde approved ₦4,600 million in compensation", True),
+    ("Makinde approved ₦4.6 trillion in compensation", False),   # scale
+    ("Makinde approved N4.6 million in compensation", False),    # scale
+    ("Makinde approved $4.6bn in compensation", False),          # currency
+])
+def test_figures_keep_their_currency_and_scale(line, ok):
+    assert sd.grounded(line, ARTICLE) is ok
+
+
+def test_counts_written_as_words_are_compared():
+    assert not sd.grounded("EFCC arraigned seven directors", "EFCC arraigned five directors")
+    assert sd.grounded("EFCC arraigned five directors", "EFCC arraigned 5 directors")

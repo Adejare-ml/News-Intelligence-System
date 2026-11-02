@@ -53,6 +53,10 @@ export interface EmailDigest {
   also: { n: number; theme: string; text: string; outlet: string; url: string }[];
   also_more: number;
   psc: { text: string; outlet: string; date: string; url: string }[];
+  /** Ownership claims in this edition beyond the ones shown. */
+  psc_more?: number;
+  /** Built between sends; the edition id ends in "-preview". */
+  preview?: boolean;
   terms: { term: string; meaning: string }[];
   engines: { extraction: string[]; digest: string };
   health: Record<string, number | string>;

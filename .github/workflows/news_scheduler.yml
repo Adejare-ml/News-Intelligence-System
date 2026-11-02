@@ -8,6 +8,11 @@ on:
     - cron: "0 17 * * *"  # 6:00 PM Nigeria Time (5:00 PM UTC)
     - cron: "0 23 * * *"  # 11:00 PM Nigeria Time (11:00 PM UTC)
   workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+    inputs:
+      email_edition:
+        description: "Also build and send the Morning Brief email (when the 08:00 run was missed or failed)"
+        type: boolean
+        default: false
 
 # Permissions are granted per job below: run-pipeline needs contents:write
 # (data commit) and issues:write (failure alerts); deploy-pages hands its
@@ -88,10 +93,12 @@ jobs:
           # topic>) for phone push alerts on the same high-risk records.
           # Empty secret = clean skip. See docs/NOTIFICATIONS.md.
           NTFY_TOPIC_URL: ${{ secrets.NTFY_TOPIC_URL }}
-          # The 07:00 UTC run builds the Morning Brief email edition: one
-          # model call for its overview, and the "since last email" marker
-          # moves on. Other runs write a preview of the next edition.
-          EMAIL_EDITION: ${{ github.event.schedule == '0 7 * * *' && '1' || '' }}
+          # The 07:00 UTC run (or a manual run with email_edition) builds
+          # the Morning Brief email edition, with one model call for its
+          # overview. Other runs write a preview of the next edition. The
+          # "since last email" marker moves only after a send succeeds
+          # (deploy-pages below).
+          EMAIL_EDITION: ${{ (github.event.schedule == '0 7 * * *' || inputs.email_edition) && '1' || '' }}
         run: |
           python run_pipeline.py
 
@@ -299,13 +306,23 @@ jobs:
       # BRIEF_SEND_SECRET is unset; a failed send shows red without failing
       # the run. See docs/CLOUDFLARE.md "Morning Brief email".
       - name: Email the Morning Brief to subscribers
-        if: github.event.schedule == '0 7 * * *' && steps.production.outputs.built == 'true'
+        id: send
+        if: (github.event.schedule == '0 7 * * *' || inputs.email_edition) && steps.production.outputs.built == 'true'
         continue-on-error: true
         env:
           BRIEF_SEND_SECRET: ${{ secrets.BRIEF_SEND_SECRET }}
+          SEND_RESULT_FILE: ${{ runner.temp }}/send-result.json
         run: |
           EDITION=$(grep -o 'name="aura-edition" content="[^"]*"' out-production/brief/email/index.html | sed 's/.*content="//; s/"$//')
           bash scripts/send_brief.sh send "$EDITION"
+
+      # Only a send that went out moves the "since last email" marker, so a
+      # failed, skipped or cancelled send leaves its stories for the next
+      # email. Commits digests/last_edition.json to main ([skip ci]).
+      - name: Record the sent edition
+        if: steps.send.outcome == 'success'
+        continue-on-error: true
+        run: bash scripts/record_sent_edition.sh "${{ runner.temp }}/send-result.json" out-production/data/email_digest.json
 
       # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
       # the data commit lands with [skip ci], so this path -- the one that

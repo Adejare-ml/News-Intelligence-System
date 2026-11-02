@@ -395,6 +395,12 @@ def run_pipeline(seed: bool = False):
         # article) and then thrown away here; persisting them is what lets
         # the dashboard facet the feed and join articles to entities
         # without substring-guessing.
+        # Read from the full article now; the email shows them later. What
+        # the grounding check dropped is dropped for the daily brief model
+        # too, which reads `analysis` below.
+        detail_cells = story_detail.article_cells(analysis, cleaned_text, title, source)
+        analysis["key_facts"] = story_detail.clean_facts(detail_cells["Key Facts"])
+        analysis["why_it_matters"] = detail_cells["Why It Matters"]
         db_article = {
             "ID": "", # Auto incremented inside ExcelDatabase
             "Time": item.get("published_at") or datetime.now().isoformat(),
@@ -410,8 +416,7 @@ def run_pipeline(seed: bool = False):
             "Risk Level": analysis.get("risk_level") or "",
             "Importance": _int_cell(analysis.get("importance_score", 50)),
             "Entities": entity_mentions(analysis),
-            # Read from the full article now; the email shows them later.
-            **story_detail.article_cells(analysis, cleaned_text, title, source),
+            **detail_cells,
         }
         
         added = db.add_article(db_article)
@@ -1229,14 +1234,15 @@ def top_rows(rows: List[Dict[str, Any]], n: int, count_key: str = None,
 def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[str, Any]]) -> None:
     """The Morning Brief email edition (email_digest.json).
 
-    Every run writes a preview of the next email: every story added since
-    the last edition. The 07:00 UTC run (EMAIL_EDITION=1) is the edition
-    itself: it alone spends the one model call for the overview and
-    insights, archives the edition and moves the "since" marker on, so the
-    next email starts where this one ended and no story falls between two.
+    Every edition covers what was added since the last email that was SENT
+    (digests/last_edition.json). The send step writes that marker once the
+    send succeeds (scripts/record_sent_edition.py), never this build: a
+    build whose send fails or is cancelled must leave its stories for the
+    next email. The 07:00 UTC run (EMAIL_EDITION=1) is the edition itself
+    and alone spends the one model call for the overview and insights;
+    other runs write a preview, whose edition id says so.
     """
-    digest_dir = os.path.join(DATA_DIR, "digests")
-    marker_path = os.path.join(digest_dir, "last_edition.json")
+    marker_path = os.path.join(DATA_DIR, "digests", "last_edition.json")
     edition_run = os.environ.get("EMAIL_EDITION", "").strip() == "1"
     try:
         previous = None
@@ -1246,20 +1252,15 @@ def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[st
         edition = email_digest.build_edition(
             articles, psc_records, datetime.utcnow(), previous,
             llm=LLMService.generate_digest if edition_run else None,
+            preview=not edition_run,
         )
         with open(os.path.join(DATA_DIR, "email_digest.json"), "w", encoding="utf-8") as f:
             json.dump(edition, f, ensure_ascii=False, indent=2)
-        if edition_run:
-            os.makedirs(digest_dir, exist_ok=True)
-            with open(os.path.join(digest_dir, f"{edition['edition']}.json"), "w", encoding="utf-8") as f:
-                json.dump(edition, f, ensure_ascii=False, indent=2)
-            with open(marker_path, "w", encoding="utf-8") as f:
-                json.dump({"edition": edition["edition"], "through_id": edition["through_id"],
-                           "built_at": edition["built_at"]}, f, indent=2)
         logger.info(
-            f"Email digest: {edition['stats']['stories']} stories from {edition['stats']['reports']} reports"
-            + (f", overview by {edition['engines']['digest'] or 'stored text'}" if edition_run else " (preview)")
-            + (f", dropped {edition['health']}" if any(edition['health'].values()) else "")
+            f"Email digest {edition['edition']}: {edition['stats']['stories']} stories from "
+            f"{edition['stats']['reports']} reports"
+            + (f", overview by {edition['engines']['digest'] or 'stored text'}" if edition_run else "")
+            + (f", health {edition['health']}" if any(edition['health'].values()) else "")
         )
     except Exception as exc:  # the site and the rest of the export never fail on the email
         logger.error(f"Email digest skipped: {type(exc).__name__}: {exc}")
