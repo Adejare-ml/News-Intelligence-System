@@ -1,31 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 218,
-  "previous_articles": 197,
+  "recent_articles": 214,
+  "previous_articles": 198,
   "rising": [
     {
       "term": "tinubu",
-      "recent": 21,
-      "previous": 8,
-      "change": 13
-    },
-    {
-      "term": "efcc",
-      "recent": 16,
-      "previous": 8,
-      "change": 8
-    },
-    {
-      "term": "official",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
-    },
-    {
-      "term": "court",
-      "recent": 15,
-      "previous": 9,
-      "change": 6
+      "recent": 19,
+      "previous": 10,
+      "change": 9
     },
     {
       "term": "witness",
@@ -34,7 +16,7 @@
       "change": 5
     },
     {
-      "term": "tax",
+      "term": "official",
       "recent": 6,
       "previous": 1,
       "change": 5
@@ -62,6 +44,24 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "efcc",
+      "recent": 14,
+      "previous": 10,
+      "change": 4
+    },
+    {
+      "term": "profit",
+      "recent": 7,
+      "previous": 3,
+      "change": 4
+    },
+    {
+      "term": "financial",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
     }
   ],
   "falling": [
@@ -72,15 +72,33 @@
       "change": -9
     },
     {
-      "term": "demand",
-      "recent": 1,
-      "previous": 7,
+      "term": "four",
+      "recent": 0,
+      "previous": 6,
       "change": -6
     },
     {
       "term": "assembly",
       "recent": 3,
       "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "others",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "appoints",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
+    },
+    {
+      "term": "campaign",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     },
     {
@@ -96,58 +114,40 @@
       "change": -5
     },
     {
-      "term": "lagos",
-      "recent": 6,
-      "previous": 10,
-      "change": -4
-    },
-    {
-      "term": "alleged",
-      "recent": 4,
-      "previous": 8,
-      "change": -4
-    },
-    {
-      "term": "gas",
-      "recent": 3,
-      "previous": 7,
-      "change": -4
-    },
-    {
-      "term": "first",
-      "recent": 2,
-      "previous": 6,
-      "change": -4
-    },
-    {
-      "term": "former",
-      "recent": 1,
+      "term": "council",
+      "recent": 0,
       "previous": 5,
-      "change": -4
+      "change": -5
+    },
+    {
+      "term": "keyamo",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 154,
-      "previous": 135
+      "recent": 155,
+      "previous": 134
     },
     {
       "category": "Company",
-      "recent": 31,
-      "previous": 28
+      "recent": 32,
+      "previous": 25
     },
     {
       "category": "Legal",
-      "recent": 31,
-      "previous": 31
+      "recent": 25,
+      "previous": 35
     },
     {
       "category": "Other",
       "recent": 2,
-      "previous": 3
+      "previous": 4
     }
   ],
   "social": [],
-  "generated": "2026-11-02 02:15:12"
+  "generated": "2026-11-02 13:56:54"
 }

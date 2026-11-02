@@ -150,10 +150,10 @@
     },
     {
       "name": "Lagos State Government",
-      "contracts": 2,
+      "contracts": 3,
       "undisclosed": 1,
       "totals": {
-        "NGN": 7450000000.0
+        "NGN": 7471350000.0
       }
     },
     {
@@ -267,6 +267,14 @@
       "undisclosed": 0,
       "totals": {
         "NGN": 345500000.0
+      }
+    },
+    {
+      "name": "Lagos Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 21350000.0
       }
     },
     {
@@ -816,6 +824,22 @@
       }
     },
     {
+      "name": "Unnamed Firm (owned by Lagos Councillor)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 21350000.0
+      }
+    },
+    {
+      "name": "Unnamed firm owned by Lagos Councillor",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 21350000.0
+      }
+    },
+    {
       "name": "Women's Rights Groups",
       "contracts": 1,
       "undisclosed": 0,
@@ -1242,5 +1266,5 @@
       }
     }
   ],
-  "generated": "2026-11-02 02:15:17"
+  "generated": "2026-11-02 13:56:57"
 }

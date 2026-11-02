@@ -1,6 +1,26 @@
 {
   "alerts": [
     {
+      "date": "2026-11-02",
+      "title": "EXPOSED: Lagos Councillor\u2019s Firm Lands N21.35m Govt Contract Barely 7 Months After CAC Registration - FIJ NG",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOFhDNDlSTzA2c29qNmNoREZxVk5CalRnZUpsV2I5V2JGUWxjTUh1Ykp2Rk1mQWNsVE93eHhLVWlTdjJuNW5SYm9DbjJtbjlHNG01X3R2Z0NpUDF0Sk9Gb1hXWUdsZHFObzBmdXd1U1BXOEtkZ0tjU1JRazJGLVRTQkd4a2dKVWNNMXdwZW5vY1p5QjJiazRVcDVmMmN2RDcyR1NQTUxPcG5sd2h1ZDVLWTNXZ1JzZS1SRlJOaA?oc=5",
+      "source": "FIJ NG",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": []
+    },
+    {
+      "date": "2026-11-02",
+      "title": "EXPOSED: Lagos Councillor\u2019s Firm Lands N21.35m Govt Contract Barely 7 Months After CAC Registration - FIJ NG",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNFhYaGFMUm9veTVpdUdzZVU3V0p1WnZ3YUdCOV9PTklHZS1NenIzYzNpUExXSm5ndXBYS2VfR2xsMmpVQWs4aU9iVkFqSG55LVVmcGk3cWZfQm1jTnBMcDZEME9mcHZ2ekZEblk0TXNGVmdXNElBbFVhRVJyeVNSSHBCWmJtWXp5OGFqVlQ2dHBHeEpJSzh1U3FaMVhQVzdWQ212cWZyWEhFMGJMTG4zTktET1BYNjNuSUtlUkRn?oc=5",
+      "source": "FIJ NG",
+      "risk_score": 85,
+      "risk_level": "High",
+      "entities": [
+        "Corporate Affairs Commission"
+      ]
+    },
+    {
       "date": "2026-10-31",
       "title": "Falana tasks Senate on recovery of $123bn, N66bn oil funds",
       "url": "https://punchng.com/falana-tasks-senate-on-recovery-of-123bn-n66bn-oil-funds/",
@@ -1018,5 +1038,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-02 02:15:17"
+  "generated": "2026-11-02 13:56:57"
 }

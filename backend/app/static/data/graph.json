@@ -121,6 +121,24 @@
       "risk": "Critical"
     },
     {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cc4a4d0f3e25",
+      "label": "Anambra State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3933ac79ce03",
+      "label": "Corporate Affairs Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "faa96568b0eb",
       "label": "NTIA",
       "type": "agency",
@@ -129,12 +147,6 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +235,6 @@
       "risk": "Low"
     },
     {
-      "id": "bbdd3227478f",
-      "label": "Niger Delta Development Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "34c799e822f2",
       "label": "Agbi",
       "type": "person",
@@ -250,6 +244,12 @@
       "id": "a345e8b7e0f7",
       "label": "SAO Energy",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "3fd6d917dd79",
+      "label": "Otti",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -451,12 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "22efb00940fe",
-      "label": "Uche Nnaji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -589,6 +583,24 @@
       "risk": "Medium"
     },
     {
+      "id": "f91fc56bb9ce",
+      "label": "Unnamed Firm (owned by Lagos Councillor)",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ab4dcffbf2e5",
+      "label": "Lagos Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3e32a23488ab",
+      "label": "Unnamed firm owned by Lagos Councillor",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -671,12 +683,6 @@
       "label": "Federal Government of Nigeria / Benue State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "a75518830b0f",
-      "label": "National Information Technology Development Agency",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -685,6 +691,12 @@
       "from": "34c799e822f2",
       "to": "a345e8b7e0f7",
       "label": "Appointed as CEO"
+    },
+    {
+      "id": "c16569747cc7",
+      "from": "3fd6d917dd79",
+      "to": "7ac5d6bb2121",
+      "label": "Appointed as Governor"
     },
     {
       "id": "1bbcdc3382b5",
@@ -819,12 +831,6 @@
       "label": "Appointed as Director General"
     },
     {
-      "id": "a5f6cdea5bb8",
-      "from": "22efb00940fe",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Minister"
-    },
-    {
       "id": "34c826682817",
       "from": "f05534764d4f",
       "to": "dba897677026",
@@ -895,6 +901,18 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "c3a1ff8afb13",
+      "from": "f91fc56bb9ce",
+      "to": "9aef00190386",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "41566a83c72b",
+      "from": "3e32a23488ab",
+      "to": "ab4dcffbf2e5",
+      "label": "Contract Awardee"
     },
     {
       "id": "7ae984c2a8c8",
@@ -984,12 +1002,6 @@
       "id": "0bd84267868a",
       "from": "334c4a4c42fd",
       "to": "e1894ded2ce6",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "9eaaba6423cf",
-      "from": "334c4a4c42fd",
-      "to": "a75518830b0f",
       "label": "Contract Awardee"
     }
   ]

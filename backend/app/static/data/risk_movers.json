@@ -1,6 +1,15 @@
 {
   "movers": [
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 28.3,
+      "previous_avg": 56.7,
+      "delta": -28.4,
+      "recent_mentions": 9,
+      "previous_mentions": 6
+    },
+    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "recent_avg": 65.0,
@@ -8,24 +17,6 @@
       "delta": 23.3,
       "recent_mentions": 3,
       "previous_mentions": 3
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 28.3,
-      "previous_avg": 46.7,
-      "delta": -18.4,
-      "recent_mentions": 9,
-      "previous_mentions": 9
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "recent_avg": 26.2,
-      "previous_avg": 40.0,
-      "delta": -13.8,
-      "recent_mentions": 4,
-      "previous_mentions": 1
     },
     {
       "key": "lagos state government",
@@ -55,15 +46,6 @@
       "previous_mentions": 3
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 22.0,
-      "previous_avg": 31.7,
-      "delta": -9.7,
-      "recent_mentions": 5,
-      "previous_mentions": 3
-    },
-    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 32.5,
@@ -73,12 +55,12 @@
       "previous_mentions": 4
     },
     {
-      "key": "festus keyamo",
-      "label": "Festus Keyamo",
-      "recent_avg": 15.0,
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "recent_avg": 31.7,
       "previous_avg": 23.3,
-      "delta": -8.3,
-      "recent_mentions": 2,
+      "delta": 8.4,
+      "recent_mentions": 3,
       "previous_mentions": 3
     },
     {
@@ -91,6 +73,15 @@
       "previous_mentions": 4
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 55.7,
+      "previous_avg": 61.7,
+      "delta": -6.0,
+      "recent_mentions": 15,
+      "previous_mentions": 12
+    },
+    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
       "recent_avg": 17.5,
@@ -98,15 +89,6 @@
       "delta": 5.0,
       "recent_mentions": 2,
       "previous_mentions": 4
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
     },
     {
       "key": "ekiti state house of assembly",
@@ -118,12 +100,21 @@
       "previous_mentions": 1
     },
     {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 18.6,
+      "recent_avg": 18.5,
       "previous_avg": 23.3,
-      "delta": -4.7,
-      "recent_mentions": 21,
+      "delta": -4.8,
+      "recent_mentions": 20,
       "previous_mentions": 15
     },
     {
@@ -145,13 +136,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 57.4,
-      "previous_avg": 60.0,
-      "delta": -2.6,
-      "recent_mentions": 17,
-      "previous_mentions": 10
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 22.0,
+      "previous_avg": 25.0,
+      "delta": -3.0,
+      "recent_mentions": 5,
+      "previous_mentions": 2
     },
     {
       "key": "communications commission",
@@ -163,24 +154,33 @@
       "previous_mentions": 1
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 31.2,
+      "previous_avg": 29.0,
+      "delta": 2.2,
+      "recent_mentions": 8,
+      "previous_mentions": 10
+    },
+    {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 16.7,
-      "previous_avg": 16.0,
-      "delta": 0.7,
+      "previous_avg": 16.7,
+      "delta": 0.0,
       "recent_mentions": 6,
-      "previous_mentions": 5
+      "previous_mentions": 3
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 30.0,
-      "previous_avg": 30.0,
-      "delta": 0.0,
-      "recent_mentions": 9,
-      "previous_mentions": 9
+      "key": "asset management corporation of",
+      "label": "Asset Management Corporation of Nigeria",
+      "recent_avg": 68.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-02 02:15:17"
+  "generated": "2026-11-02 13:56:57"
 }
