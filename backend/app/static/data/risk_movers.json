@@ -1,40 +1,40 @@
 {
   "movers": [
     {
+      "key": "national youth service corps",
+      "label": "National Youth Service Corps",
+      "recent_avg": 42.5,
+      "previous_avg": 75.0,
+      "delta": -32.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
+      "key": "university of nsukka",
+      "label": "University of Nigeria, Nsukka",
+      "recent_avg": 42.5,
+      "previous_avg": 75.0,
+      "delta": -32.5,
+      "recent_mentions": 2,
+      "previous_mentions": 1
+    },
+    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 28.3,
-      "previous_avg": 56.7,
-      "delta": -28.4,
-      "recent_mentions": 9,
+      "recent_avg": 26.9,
+      "previous_avg": 49.2,
+      "delta": -22.3,
+      "recent_mentions": 8,
       "previous_mentions": 6
-    },
-    {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "recent_avg": 65.0,
-      "previous_avg": 41.7,
-      "delta": 23.3,
-      "recent_mentions": 3,
-      "previous_mentions": 3
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 31.2,
-      "previous_avg": 17.5,
-      "delta": 13.7,
-      "recent_mentions": 4,
-      "previous_mentions": 2
     },
     {
       "key": "national assembly",
       "label": "National Assembly",
       "recent_avg": 31.0,
-      "previous_avg": 18.8,
-      "delta": 12.2,
+      "previous_avg": 18.3,
+      "delta": 12.7,
       "recent_mentions": 5,
-      "previous_mentions": 4
+      "previous_mentions": 3
     },
     {
       "key": "maritime administration and safety agency",
@@ -46,11 +46,20 @@
       "previous_mentions": 3
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 32.5,
-      "previous_avg": 23.8,
-      "delta": 8.7,
+      "key": "lagos state government",
+      "label": "Lagos State Government",
+      "recent_avg": 31.2,
+      "previous_avg": 20.0,
+      "delta": 11.2,
+      "recent_mentions": 4,
+      "previous_mentions": 1
+    },
+    {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "recent_avg": 60.0,
+      "previous_avg": 50.0,
+      "delta": 10.0,
       "recent_mentions": 2,
       "previous_mentions": 4
     },
@@ -75,11 +84,20 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 55.7,
-      "previous_avg": 61.7,
-      "delta": -6.0,
-      "recent_mentions": 15,
-      "previous_mentions": 12
+      "recent_avg": 53.1,
+      "previous_avg": 60.4,
+      "delta": -7.3,
+      "recent_mentions": 16,
+      "previous_mentions": 13
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 17.6,
+      "previous_avg": 24.3,
+      "delta": -6.7,
+      "recent_mentions": 21,
+      "previous_mentions": 14
     },
     {
       "key": "national information technology development agency",
@@ -109,13 +127,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 18.5,
-      "previous_avg": 23.3,
-      "delta": -4.8,
-      "recent_mentions": 20,
-      "previous_mentions": 15
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 28.3,
+      "previous_avg": 23.8,
+      "delta": 4.5,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 28.8,
+      "previous_avg": 24.5,
+      "delta": 4.3,
+      "recent_mentions": 8,
+      "previous_mentions": 10
     },
     {
       "key": "central bank of",
@@ -136,15 +163,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 22.0,
-      "previous_avg": 25.0,
-      "delta": -3.0,
-      "recent_mentions": 5,
-      "previous_mentions": 2
-    },
-    {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 17.5,
@@ -154,33 +172,15 @@
       "previous_mentions": 1
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 31.2,
-      "previous_avg": 29.0,
-      "delta": 2.2,
-      "recent_mentions": 8,
-      "previous_mentions": 10
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 16.7,
-      "previous_avg": 16.7,
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 25.0,
+      "previous_avg": 25.0,
       "delta": 0.0,
       "recent_mentions": 6,
-      "previous_mentions": 3
-    },
-    {
-      "key": "asset management corporation of",
-      "label": "Asset Management Corporation of Nigeria",
-      "recent_avg": 68.3,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
+      "previous_mentions": 2
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-02 13:56:57"
+  "generated": "2026-11-02 18:06:10"
 }
