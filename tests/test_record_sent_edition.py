@@ -66,6 +66,9 @@ def _articles(time=None):
 def test_no_build_moves_the_marker(tmp_path, monkeypatch, edition_run):
     monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
     monkeypatch.setenv("EMAIL_EDITION", "1" if edition_run else "")
+    # As on the scheduler, with the Sheets database reachable.
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setattr(rp.db, "use_local", False, raising=False)
     monkeypatch.setattr(rp.LLMService, "generate_digest", staticmethod(lambda prompt: ("{}", "gemini")))
     (tmp_path / "digests").mkdir()
     marker = {"edition": "20261101-40", "through_id": 40, "built_at": "2026-11-01 07:05:00", "psc_keys": []}
