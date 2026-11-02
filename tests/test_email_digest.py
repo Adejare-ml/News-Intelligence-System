@@ -518,6 +518,7 @@ class TestStagesRound2:
         ("OPay IPO delayed by regulator", "postponed"),
         ("Banks court investors with new dollar bonds", "unclear"),
         ("CBN moves to arrest the decline of the naira", "unclear"),
+        ("Court denies ex-governor bail in N80bn case", "in_court"),
     ])
     def test_outcomes_pending_cases_and_business_words(self, headline, stage):
         assert ed.stage_of(headline) == stage

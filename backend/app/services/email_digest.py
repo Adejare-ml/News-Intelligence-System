@@ -113,7 +113,8 @@ STAGES = [
     ("in_court", r"\b(?:refuses?|refused|declines?|declined|rejects?|rejected)\b.{0,30}\b(?:to )?(?:discharg|acquit|quash|set aside|dismiss|bail|stop|halt)"
                  r"|\b(?:seeks?|sought|asks?|asked|urges?|urged|wants?|applies|applied|application|motion|bid|plea|request)\b.{0,30}\bto (?:quash|discharg|acquit|set aside|dismiss)"
                  r"|\b(?:fixes|fixed|sets|reserves|reserved|adjourns|adjourned)\b.{0,30}\b(?:date|judgment|judgement|ruling|verdict|hearing|trial)\b"
-                 r"|\b(?:to|will) (?:rule|deliver (?:judgment|judgement|ruling))\b"),
+                 r"|\b(?:to|will) (?:rule|deliver (?:judgment|judgement|ruling))\b"
+                 r"|\b(?:denies|denied|refuses|refused|grants|granted|revokes|revoked)\b.{0,20}\bbail\b"),
     ("cleared", r"\bacquit\w*|\bdischarg(?:es|ed)\b|\bfrees?\b|\bfreed\b|\bexonerat\w*|\babsolv\w*"
                 r"|\bquash(?:es|ed)\b.{0,40}\b(?:charges?|conviction|case|indictment)\b"
                 r"|\bconviction\b.{0,30}\b(?:quashed|set aside|overturned)\b"

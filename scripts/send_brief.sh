@@ -47,6 +47,7 @@ echo "send-brief ($MODE): HTTP $CODE $BODY"
 if [ -n "${GITHUB_STEP_SUMMARY:-}" ]; then
   { echo "### Morning Brief email ($MODE)"; echo; echo "HTTP $CODE"; echo; echo '```json'; echo "$BODY"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 fi
-[ "$CODE" -lt 400 ] || { echo "::error::Morning Brief send returned HTTP $CODE"; exit 1; }
+# 000 means no response at all: not a send.
+{ [ "$CODE" -ge 200 ] && [ "$CODE" -lt 400 ]; } || { echo "::error::Morning Brief send returned HTTP $CODE"; exit 1; }
 # The caller records a successful send's edition (record_sent_edition.sh).
 if [ -n "${SEND_RESULT_FILE:-}" ]; then printf '%s\n' "$BODY" > "$SEND_RESULT_FILE"; fi
