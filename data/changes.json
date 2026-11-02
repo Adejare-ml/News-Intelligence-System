@@ -1,32 +1,22 @@
 {
   "new_companies": [
-    "Association of Licensed Telecoms Operators of Nigeria",
-    "Nigeria\u2019s physiotherapy society",
-    "PZ Cussons"
+    "Honda",
+    "Mambilla power project"
   ],
-  "new_people": [],
+  "new_people": [
+    "Enang"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "EXPOSED: Lagos Councillor\u2019s Firm Lands N21.35m Govt Contract Barely 7 Months After CAC Registration - FIJ NG",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNFhYaGFMUm9veTVpdUdzZVU3V0p1WnZ3YUdCOV9PTklHZS1NenIzYzNpUExXSm5ndXBYS2VfR2xsMmpVQWs4aU9iVkFqSG55LVVmcGk3cWZfQm1jTnBMcDZEME9mcHZ2ekZEblk0TXNGVmdXNElBbFVhRVJyeVNSSHBCWmJtWXp5OGFqVlQ2dHBHeEpJSzh1U3FaMVhQVzdWQ212cWZyWEhFMGJMTG4zTktET1BYNjNuSUtlUkRn?oc=5",
-      "risk": 85.0
-    },
-    {
-      "title": "EXPOSED: Lagos Councillor\u2019s Firm Lands N21.35m Govt Contract Barely 7 Months After CAC Registration - FIJ NG",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOFhDNDlSTzA2c29qNmNoREZxVk5CalRnZUpsV2I5V2JGUWxjTUh1Ykp2Rk1mQWNsVE93eHhLVWlTdjJuNW5SYm9DbjJtbjlHNG01X3R2Z0NpUDF0Sk9Gb1hXWUdsZHFObzBmdXd1U1BXOEtkZ0tjU1JRazJGLVRTQkd4a2dKVWNNMXdwZW5vY1p5QjJiazRVcDVmMmN2RDcyR1NQTUxPcG5sd2h1ZDVLWTNXZ1JzZS1SRlJOaA?oc=5",
-      "risk": 85.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 0,
+    "new_companies": 2,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 2
+    "new_high_risk": 0
   },
-  "generated": "2026-11-02 13:56:52"
+  "generated": "2026-11-02 18:05:59"
 }

@@ -121,6 +121,42 @@
       "risk": "Critical"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cf8ea783000f",
+      "label": "National Drug Law Enforcement Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "bf69cb1ec5ea",
+      "label": "Independent National Electoral Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7ac5d6bb2121",
       "label": "Abia State Government",
       "type": "agency",
@@ -139,14 +175,26 @@
       "risk": "Low"
     },
     {
+      "id": "e79817c87e24",
+      "label": "National Identity Management Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "faa96568b0eb",
       "label": "NTIA",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "aee652184206",
+      "label": "Federal Fire and Rescue Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8036ca4008f7",
+      "label": "Nigerian Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -159,12 +207,6 @@
     {
       "id": "38b03bbf0068",
       "label": "National Assembly",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,48 +235,6 @@
       "risk": "Low"
     },
     {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "aa9abf2767d5",
-      "label": "Standards Organisation of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "036789b5ea26",
-      "label": "African Union",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8b2c9ab00c80",
-      "label": "Government of Russia",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "820581ad245e",
-      "label": "State Wealth Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c25544734c7e",
-      "label": "Nigerian Content Development and Monitoring Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "34c799e822f2",
       "label": "Agbi",
       "type": "person",
@@ -249,6 +249,18 @@
     {
       "id": "3fd6d917dd79",
       "label": "Otti",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "cd8b1a412778",
+      "label": "Enang",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "10e91a46eee3",
+      "label": "Godswill Akpabio",
       "type": "person",
       "risk": "Low"
     },
@@ -439,18 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "b08d8c8059f5",
-      "label": "Ibrahim Abdulkarim",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3844955f0bba",
-      "label": "New Democratic Coalition",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -625,12 +625,6 @@
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "7f50eb5ca259",
       "label": "Yobe State Government",
       "type": "company",
@@ -697,6 +691,18 @@
       "from": "3fd6d917dd79",
       "to": "7ac5d6bb2121",
       "label": "Appointed as Governor"
+    },
+    {
+      "id": "49ac3dca37d6",
+      "from": "cd8b1a412778",
+      "to": "8036ca4008f7",
+      "label": "Appointed as Ambassador"
+    },
+    {
+      "id": "304dec55c3df",
+      "from": "10e91a46eee3",
+      "to": "8036ca4008f7",
+      "label": "Appointed as Politician"
     },
     {
       "id": "1bbcdc3382b5",
@@ -823,12 +829,6 @@
       "from": "18bc77b97b9c",
       "to": "283e1d4aa831",
       "label": "Appointed as Head of Air Mobilisation"
-    },
-    {
-      "id": "16c493121ea1",
-      "from": "b08d8c8059f5",
-      "to": "3844955f0bba",
-      "label": "Appointed as Director General"
     },
     {
       "id": "34c826682817",
