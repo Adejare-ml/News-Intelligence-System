@@ -52,7 +52,7 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: "pip"
@@ -111,7 +111,7 @@ jobs:
         id: autocommit
         # Third-party actions pinned to commit SHAs so a moved tag cannot
         # inject code into a workflow that holds a contents:write token
-        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
+        uses: stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c # v7.2.1
         with:
           commit_message: "Automated AURA database updates [skip ci]"
           # evals/corpus/ belongs here too. run_pipeline.capture_eval_input
