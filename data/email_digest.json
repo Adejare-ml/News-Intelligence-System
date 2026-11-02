@@ -1,16 +1,16 @@
 {
-  "edition": "20261102-10803-preview",
+  "edition": "20261102-10811-preview",
   "preview": true,
-  "built_at": "2026-11-02 18:06:10",
+  "built_at": "2026-11-02 18:13:22",
   "date": "Monday 2 November 2026",
-  "subject": "AURA alert · Mon 2 Nov · 16 stories, 2 risk alerts",
-  "preheader": "16 stories, 2 risk alerts",
+  "subject": "AURA alert · Mon 2 Nov · 17 stories, 2 risk alerts",
+  "preheader": "17 stories, 2 risk alerts",
   "since": "",
-  "through_id": 10803,
+  "through_id": 10811,
   "stats": {
-    "reports": 17,
-    "stories": 16,
-    "outlets": 3,
+    "reports": 18,
+    "stories": 17,
+    "outlets": 4,
     "risk_alerts": 2,
     "public_money": 2,
     "appointments": 2,
@@ -126,6 +126,37 @@
     },
     {
       "n": 4,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 30/100",
+      "headline": "AI voter register: Obidient Movement wants INEC ICT director, Bayode sacked",
+      "byline": "naijaonpoint_ng · Mon 2 Nov, 07:10 Lagos",
+      "outlet": "naijaonpoint_ng",
+      "what_happened": "The Obidient Movement has called for the removal of Bayode, the ICT director of the Independent National Electoral Commission (INEC), over an AI voter register. The full report is behind a paid subscription, so the basis for the demand is not available.",
+      "key_facts": [
+        "The Obidient Movement wants INEC's ICT director, Bayode, sacked over an AI voter register."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The demand targets a senior INEC official over the voter register system, which bears on the integrity of electoral data."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Independent National Electoral Commission (INEC)",
+        "Bayode"
+      ],
+      "source": {
+        "outlet": "naijaonpoint_ng",
+        "url": "https://naijaonpoint.com.ng/ai-voter-register-obidient-movement-wants-inec-ict-director-bayode-sacked/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 5,
       "theme": "Public money",
       "event_type": "Audit",
       "flags": [
@@ -155,112 +186,81 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Other",
-      "flags": [
-        "Allegation, not a finding"
-      ],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 40/100",
-      "headline": "Court restrains EFCC from arresting Honda executives, dealers, associates",
-      "byline": "The Guardian · Mon 2 Nov, 04:02 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "A court has issued an order restraining the Economic and Financial Crimes Commission (EFCC) from arresting executives, dealers, and associates of Honda.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "As reported by The Guardian; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Economic and Financial Crimes Commission",
-        "Honda"
-      ],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdExJZ0J6bjA4VmE3OUhXYWc4dC1rbTF1VEJJUlg1WTJ2bHdIamRrVUc5WUwxbEwxTVpVRGhpemtYeDNabTBDM0ZJbHhHSnFpLWl1MEsxeUZyOFBBczQzcnlGNmhfRm9yV3poUlJ2VVpDaU84bzRQczlselh5b3ZZeGxpbXhHcFVBN19fRHNLMmE0UVl0NUx2b1l2UkhiXzdsaUo3bUppTW1YRnNGNGVsMQ?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
+      "theme": "Regulation & enforcement",
+      "text": "A court has issued an order restraining the Economic and Financial Crimes Commission (EFCC) from arresting executives, dealers, and associates of Honda.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdExJZ0J6bjA4VmE3OUhXYWc4dC1rbTF1VEJJUlg1WTJ2bHdIamRrVUc5WUwxbEwxTVpVRGhpemtYeDNabTBDM0ZJbHhHSnFpLWl1MEsxeUZyOFBBczQzcnlGNmhfRm9yV3poUlJ2VVpDaU84bzRQczlselh5b3ZZeGxpbXhHcFVBN19fRHNLMmE0UVl0NUx2b1l2UkhiXzdsaUo3bUppTW1YRnNGNGVsMQ?oc=5"
+    },
+    {
+      "n": 7,
       "theme": "People",
       "text": "Godswill Akpabio stated that he facilitated the appointment of Enang as a Nigerian ambassador to prevent him from criticizing Eno.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWnRvWFJSQlRHODEwb2daT1kzU2FMN3hDaTlXdG1tSW44eFhoOU94NV9iYm0tbzY1X2U1blpDRGtUeEpkSFlwZTdPSmJWNm94YXpjWm8wbnU2aWlfeHE4RXVkTGZhbDd6Q283V3pMU3NiNXFqX1FMLVZGaERDcDBXMGdpcjJBdDhNODdIYVVCbmZTdGY2VTJQclpsZGljQl9yVjB4RDlXM3hPaWU5dUxNb3JPeC1kdExHZ3ZTNHp3RTRCZDhDWTczWGxBUkpadi1vS3VLclJULVF3dw?oc=5"
     },
     {
-      "n": 7,
+      "n": 8,
       "theme": "Regulation & enforcement",
       "text": "The House of Representatives has proposed a 20% investment cap intended to protect the beneficiaries of trust funds.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWHJXWngzN19DWU5wbkNZVk80SmlYeDJQMkF0dWlsNE82X2d2Q1k2NzVnVFBtR3gyWFJyRDh3NEd0cDc4VGVCZjBpeU9tSWl2N291OXZYZWJJcTBLQlduRjlMMzZ0WW9NVmxGUGhuUWVvVURjRms2NWl1VGFHODE3Z0dQWTk3a3d5Z1JwWE1vOHp5M1ZPREtGOWF2TWpZWmxYZFpfcUFscldFVTlEOUJzTUcyeG55VV81V2JsZGhIMWZtZTlwamNWZkJ0OW4?oc=5"
     },
     {
-      "n": 8,
+      "n": 9,
       "theme": "Business",
       "text": "Shareholders of PZ Cussons have approved a dividend payout totaling N9.926 billion.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQlZjM0J2RkdjVmhLQ0lLdHBUMk1pMFdxbHpMVGxPcmNvcUExZWFXQW1tMzFKM3BCODlGMlNLMTJ5UGtTUm5TT0htVmdFeEEybHAydGRVelVyeUw5WjRtWjUwTzBXRG1NMEp3b1AwU2pYT0VqRWdKOWM5TzJvMTBuV2VjRU0wTG5nam1XRWJydkEzbC1mNFIxU1BKS2RrZ0wzaXNKOXcyRzEtQWIw?oc=5"
     },
     {
-      "n": 9,
+      "n": 10,
       "theme": "Regulation & enforcement",
       "text": "The Federal Government has launched a USSD credit service designed to provide Nigerians with credit for solar energy and other household needs.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMndpeVdDT0NyVEtVelNmdUxaanJ6ZF84VmV2NVNqa1F5ek16MEdlZHhQU1E5a2QwZEllcHdmY1l3NkNRWXoyd1lxekRna1Y0eXYwa2NSal9zZGpPRFZIUkFIVm5jVDR5eUlfT0QyZnU0S0t6MThmLVE5RmVROU9DZVBYX0c1c0pZUlppQWtxTnE5VENLS1Y1MHhxUzlIMDh4bDhvSVJLd2pfVDhwcG9qQlE4Smo4eHZFRHlmSEt2LUUzU25Kc0g5alptWlowLXJHSk1oS1NUUkVkZw?oc=5"
     },
     {
-      "n": 10,
+      "n": 11,
       "theme": "Regulation & enforcement",
       "text": "The Guardian reports: NIMC cracks down on Illegal NIN enrolment, urges use of approved centres",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcFE4ZVc2MHpQcGtTUGlLTHhpV1BkSW5pN1p3QjdzUjJNU3FXS0RrNDVTTVlZMHYwdEZJUUttVXpFZnlVMGZaZGhtQjJKQVp2MXRjLUVGNXFnTmhFaVk0V3U3dlRZUFRNRUVEdWEtSWs4bVB2VDVhTjdlU3FkT2gyazVVajFGM3RvMHlZQk5rd2lVSm04NVIxVUszV1d0QQ?oc=5"
     },
     {
-      "n": 11,
+      "n": 12,
       "theme": "Regulation & enforcement",
       "text": "The Federal Government of Nigeria is set to sign the Federal Fire and Rescue Service Act into law.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMnJDRTZabEhxdDdiQldPd3IxZjhXamdsckUwbnNNQnpsVnBGS2ZoYVg3cFREOGRrRFFpYUJETnlfQUQwT3ctX25JeE1IR2JYRUN0THYwZGJGVDNKejRUMnBxVktfbGl0Vi1hWXJURmFQTlA1RG1UZ28tMUJDSFBWNVhkczRWWnpG?oc=5"
     },
     {
-      "n": 12,
+      "n": 13,
       "theme": "Business",
       "text": "VFD Group reported a 96% increase in profit for the first nine months of the year, attributed to higher investment income.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZDlVUE1KUHBXaFVGRjBxeVZvdm9SUzJ4LVhmRlAtWGhTRlg5M29vNjl0cDNwcXU4ZVpFNUZTV0VxNXN6eExVMlZIaG5wTjNrWGtxcG11ZlNMWVhuMnVyNS1QdUVDenJ5ajJxVFNtaW45S09VS2VMS1VRa01ZTHJZbTVjcGV0UVl3VWh6U3FLM3BKbUY0OFF1ZnNyY3dxVG5tU2FtYkM3X0hpNGpOYmltdHJ5V1JvVFlNSmVzWUI1YUFVSFpWZ1lsN1dicGNxTFU3Q1ZRb3dRbW42QzJaRzduaC12LVl3bEJTLVFN?oc=5"
     },
     {
-      "n": 13,
+      "n": 14,
       "theme": "Other",
       "text": "The Anambra State government has sealed an orphanage.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV2ZoaGZ3U3lIbTlnNG1NWEZRTFpzaGZwc3BLZnBwWEFOeTdBWGlfak8zWHJkTGV2WXMyZzR0d0c0bWpxNFRvazdiOEp6dGdmcHFqUGhES3dqR2FhUTBHOFJHVDRKVDFqNGNCaTl1RG44akc1d09UcWkwcVQ4YWVWdk5MbjhoWGVhM3RwS1AyRkFHb3Q0Nm1kdE92blAxY1J3N2dnS1VWbUY?oc=5"
     },
     {
-      "n": 14,
+      "n": 15,
       "theme": "Regulation & enforcement",
       "text": "Governor Otti of Abia State has provided justifications for the state's strategic preference for electric buses over Compressed Natural Gas (CNG) alternatives for its transportation needs.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUlE1eDBKeWVhejlxbDFPS2lHVHVEOC0xWExCMnRKM25BR0JodVByNzN4Unp4OHlESFRXQW03ZkEwSWs3bmJ3RHlGVjQyd05FWHV3d3Vzc1NFWk1La1FNZzRvamJzaG9UNllKYTZRSC1zSjVyS1ZXWDc2Z2MwakRTd1Jka3A5ZHB3bUwtWnAxNVhQa2w5RG80RFdsTXc2cTA0aUNOUExWQlM2Tl9uNU5FOU5GbUFZbV9GemsyVmNkOA?oc=5"
-    },
-    {
-      "n": 15,
-      "theme": "Regulation & enforcement",
-      "text": "The draft Nigeria Economic Policy Framework and the necessity of fiscal discipline, By Uddin Ifeanyi",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSnpERkhJeTY5VXo3UC1QRTRmbDRRb2JPUm4zc253V2dTRUI2Y3BjMHc3c0xSSWJYMWJMWDNjQ1FtSjNWdzZyb3FKcjNWZ1NOdDBDQzJ3YllxdzVGc0ZwalNWOVVDazg4RFdQalZQN0JPaHV3RUd2OEMyYjJQdmdxNmRsV3JJX1ExWEtWeU5iQVJzQzRkY0h2cUVEdTlHczFNZGx3ZENEVlRLY3ZzN053dXpmS0ItM2F1YVMyV09kOWJQOExaRExEeXBiS2R4aVBidHowajBITHhPVVhjQzd5aXpKMTA?oc=5"
     }
   ],
-  "also_more": 1,
+  "also_more": 2,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
@@ -280,6 +280,7 @@
   ],
   "engines": {
     "extraction": [
+      "claude",
       "ollama"
     ],
     "digest": ""
