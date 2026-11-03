@@ -3,11 +3,11 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 21.7,
-      "previous_avg": 48.6,
-      "delta": -26.9,
-      "recent_mentions": 6,
-      "previous_mentions": 7
+      "recent_avg": 16.7,
+      "previous_avg": 41.7,
+      "delta": -25.0,
+      "recent_mentions": 3,
+      "previous_mentions": 9
     },
     {
       "key": "national assembly",
@@ -16,15 +16,6 @@
       "previous_avg": 18.3,
       "delta": 12.7,
       "recent_mentions": 5,
-      "previous_mentions": 3
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 18.3,
-      "previous_avg": 30.0,
-      "delta": -11.7,
-      "recent_mentions": 3,
       "previous_mentions": 3
     },
     {
@@ -73,15 +64,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 17.6,
-      "previous_avg": 24.3,
-      "delta": -6.7,
-      "recent_mentions": 21,
-      "previous_mentions": 14
-    },
-    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "recent_avg": 60.0,
@@ -89,6 +71,15 @@
       "delta": 6.7,
       "recent_mentions": 2,
       "previous_mentions": 3
+    },
+    {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 17.8,
+      "previous_avg": 23.7,
+      "delta": -5.9,
+      "recent_mentions": 20,
+      "previous_mentions": 15
     },
     {
       "key": "national information technology development agency",
@@ -116,6 +107,15 @@
       "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 20.0,
+      "previous_avg": 25.0,
+      "delta": -5.0,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "customs service",
@@ -172,15 +172,15 @@
       "previous_mentions": 1
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 16.7,
-      "previous_avg": 16.7,
-      "delta": 0.0,
-      "recent_mentions": 6,
-      "previous_mentions": 3
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 18.6,
+      "previous_avg": 20.0,
+      "delta": -1.4,
+      "recent_mentions": 7,
+      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-02 23:59:08"
+  "generated": "2026-11-03 04:01:13"
 }

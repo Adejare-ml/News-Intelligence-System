@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-02 23:59:05",
+  "generated": "2026-11-03 04:01:08",
   "models": [
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 996,
+      "likes": 1190,
       "downloads": 42384
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4695,
+      "likes": 4721,
       "downloads": 177009
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 679,
+      "likes": 692,
       "downloads": 32439
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1500,
+      "likes": 1502,
       "downloads": 5500
     },
     {
       "id": "baidu/Unlimited-OCR-2",
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "task": "image-text-to-text",
-      "likes": 561,
+      "likes": 564,
       "downloads": 147588
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 413,
+      "likes": 428,
       "downloads": 7787
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10359,
+      "likes": 10379,
       "downloads": 2467613
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 560,
+      "likes": 566,
       "downloads": 63499
     }
   ],
   "papers": [
     {
-      "title": "SOMA: A Benchmark for Fine-Grained Egocentric Behavior and Body-Motion Understanding",
-      "url": "https://huggingface.co/papers/2610.36384",
-      "upvotes": 4
-    },
-    {
-      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
-      "url": "https://huggingface.co/papers/2610.37651",
-      "upvotes": 3
-    },
-    {
-      "title": "AuditFL: A Contract-Backed Clearing Layer for Open Federated Learning",
-      "url": "https://huggingface.co/papers/2610.41278",
+      "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents",
+      "url": "https://huggingface.co/papers/2610.41216",
       "upvotes": 1
     },
     {
-      "title": "Follow the Gradient: Tracing Safety Degradation Back to Training Data",
-      "url": "https://huggingface.co/papers/2610.37481",
-      "upvotes": 25
+      "title": "Lost in Recovery: Demystifying Recovery Behavior of Computer-Use Agents via Goal-Oriented Action Replay",
+      "url": "https://huggingface.co/papers/2610.27954",
+      "upvotes": 1
     },
     {
-      "title": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
-      "url": "https://huggingface.co/papers/2610.40488",
+      "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+      "url": "https://huggingface.co/papers/2610.40191",
+      "upvotes": 18
+    },
+    {
+      "title": "Diagnosing the Reference Gap: What Visual Scaffolds Can and Cannot Fix in Multimodal Reasoning",
+      "url": "https://huggingface.co/papers/2610.39419",
+      "upvotes": 9
+    },
+    {
+      "title": "From Fragmentation to Fusion: A Survey and Roadmap for Omnimodal Embeddings",
+      "url": "https://huggingface.co/papers/2611.00172",
+      "upvotes": 11
+    },
+    {
+      "title": "MAServeBench: Benchmarking Multi-Agent LLM Serving Systems with Hierarchical Collaboration Workloads",
+      "url": "https://huggingface.co/papers/2610.40293",
       "upvotes": 2
-    },
-    {
-      "title": "OSWAM: An Effective World Action Model with One-Step Action Generation",
-      "url": "https://huggingface.co/papers/2610.35850",
-      "upvotes": 23
     }
   ]
 }
