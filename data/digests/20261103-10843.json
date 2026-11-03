@@ -1,0 +1,303 @@
+{
+  "edition": "20261103-10843",
+  "preview": false,
+  "built_at": "2026-11-03 08:55:05",
+  "date": "Tuesday 3 November 2026",
+  "subject": "AURA alert · Tue 3 Nov · CBN appoints eight agents for crude oil exports",
+  "preheader": "17 stories, 2 risk alerts",
+  "since": "",
+  "through_id": 10843,
+  "stats": {
+    "reports": 18,
+    "stories": 17,
+    "outlets": 4,
+    "risk_alerts": 2,
+    "public_money": 2,
+    "appointments": 3,
+    "ownership": 0
+  },
+  "nothing_in": [
+    "ownership and control reports"
+  ],
+  "overview": [
+    {
+      "text": "The Central Bank of Nigeria has appointed eight agents to handle crude oil exports.",
+      "card": 3,
+      "outlet": "Vanguard"
+    },
+    {
+      "text": "Godswill Akpabio stated that he facilitated Enang's appointment as a Nigerian ambassador to prevent him from criticizing Eno.",
+      "card": 5,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "The House of Representatives has proposed a 20% investment cap intended to protect trust fund beneficiaries.",
+      "card": 6,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "Shareholders of PZ Cussons have approved a dividend payout totaling N9.926 billion.",
+      "card": 7,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "The Federal Government has launched a USSD credit service for solar energy and other household needs.",
+      "card": 8,
+      "outlet": "Premium Times"
+    }
+  ],
+  "insights": [],
+  "cards": [
+    {
+      "n": 1,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 65/100",
+      "headline": "Agunloye’s lawyer questions Imoke in efforts to justify award of controversial Mambilla power project",
+      "byline": "Premium Times · Mon 2 Nov, 17:36 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "Legal representatives for Agunloye are questioning Imoke regarding the awarding process of the Mambilla power project.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The dispute concerns the awarding of a major national infrastructure project, which impacts public procurement transparency."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Mambilla power project"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQNWROMVZPdlR3bl9tNFRvbS10NXNHQ09lV29Qdk9aWG51aXpPc0FnMlI5VVE5OWI5MFVhN3dyTjZCYTktYXpYQVJBZ2JNa0NEb0NPOXNFLW9GMTR1WTg3WWxWSWtrNjJQbzFUTGRrdGQtYnZBWFYzOU9oT2dNQ0k1Z1JRbmpjZVVpQ2JjYk03X1U1bGdoWkJWeW5CcmRudEREdnpHS18wRVAxV0dBajBHeGxTZGVIWEV1dkxyX0puZnpuWjRjeHFGV2gxbzhqLVRPV0tiLVl4cmJfWVhEZWg0MHdadU1VOGwyQkFkZW93?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert",
+        "Allegation, not a finding"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 62/100",
+      "headline": "EFCC arraigns man, company for N12.5bn fraud in Lagos",
+      "byline": "Premium Times · Mon 2 Nov, 20:38 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Economic and Financial Crimes Commission (EFCC) has arraigned a man and a company in Lagos over an alleged N12.5 billion fraud.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "EFCC"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWGwxb255amZKVHpDT2F0cTdVZnRLckdEM1NmbEE1WE9Jb3JLY0JLOXZTRTZfOTlERFJ4OUs1QUpGZE5wSGFSeExhYU96TjlqcUVFd0taV0gzbXVtS3pNcENaOG92TDRURHE0UmVqYkVDdlVhY25RanJ5TGRPT3hsbXpFd3RVQno3azR3azVVNnpFTm1qZ0FoVFFLVGZDZkVBRkN0V25aTTFPeE4tNnc?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
+      "theme": "Public money",
+      "event_type": "Procurement",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "CBN appoints eight agents for crude oil exports",
+      "byline": "Vanguard · Mon 2 Nov, 20:00 Lagos",
+      "outlet": "Vanguard",
+      "what_happened": "The Central Bank of Nigeria has appointed eight agents to handle crude oil exports.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Central Bank of Nigeria"
+      ],
+      "source": {
+        "outlet": "Vanguard",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZ19Nd1FicEVGd1dlR2dSMDNJb3A1V0Joa3p3b2hLRUpzQ0ctd0ZpNmlJMWc1cl9SRG5vWEZDclJjb3lrY3B0R08yQk9Cd0pmZTllMk53ckpvaFE4aXZnZUNLYUs1MnhYejlDeDhTSldUOXh4R2Fqc29IM2JHamlJTzZEX0tqTGF2aWphRNIBkgFBVV95cUxPWlRmdW9STHhyeG5TRjBCZXZHNkV2dGtZOWJBTFpuOG1WSlQ0YXRBT2xPcG9yN2ZkWkR5M1hjbUlnaDlTcDY1bmNpd3NlRXZZOU5UV1NzUWFQdHJXMGlrOHlFNTQzbEUzWl81ME5ZdEY5SHNSWkNBYlNXUkRoRmhpYVczbTcxX2ZaY0IwTV9tR0NnQQ?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 4,
+      "theme": "Public money",
+      "event_type": "Audit",
+      "flags": [
+        "Allegation, not a finding"
+      ],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 40/100",
+      "headline": "INEC investigates officials over fake voter registrations",
+      "byline": "Premium Times · Mon 2 Nov, 15:10 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Independent National Electoral Commission (INEC) is investigating its officials following reports of fake voter registrations.",
+      "key_facts": [
+        "INEC is investigating its own officials"
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Independent National Electoral Commission"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTFNjbk5pZWNjOU1sR2xBVEN4Y3Ewb3oyS2RjZGpsa3YzamxHdnhURVNGdEVESGFKY1JvTU5ObzAwcGJTWk9ENks1dDRqRVlSUzRZRHU4T0cwNF9rX2swdmhUUzloY1BuWmlJdF83RjJwRV9FalJkM0lZdzI4dHgyUi05WHRQbG5LMXVaYmM4RC1HcXcxRnNkUmVQR2JycEg2bmxmQXdDUUJwSVFWenI2MTJzWE8?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 5,
+      "theme": "People",
+      "event_type": "Appointment",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "I made Enang Nigerian ambassador to stop his criticism of Eno – Akpabio",
+      "byline": "Premium Times · Mon 2 Nov, 17:24 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "Godswill Akpabio stated that he facilitated the appointment of Enang as a Nigerian ambassador to prevent him from criticizing Eno.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The statement suggests the use of diplomatic appointments for political management within the Nigerian government."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Nigerian Government",
+        "Enang",
+        "Godswill Akpabio"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWnRvWFJSQlRHODEwb2daT1kzU2FMN3hDaTlXdG1tSW44eFhoOU94NV9iYm0tbzY1X2U1blpDRGtUeEpkSFlwZTdPSmJWNm94YXpjWm8wbnU2aWlfeHE4RXVkTGZhbDd6Q283V3pMU3NiNXFqX1FMLVZGaERDcDBXMGdpcjJBdDhNODdIYVVCbmZTdGY2VTJQclpsZGljQl9yVjB4RDlXM3hPaWU5dUxNb3JPeC1kdExHZ3ZTNHp3RTRCZDhDWTczWGxBUkpadi1vS3VLclJULVF3dw?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    }
+  ],
+  "also": [
+    {
+      "n": 6,
+      "theme": "Regulation & enforcement",
+      "text": "The House of Representatives has proposed a 20% investment cap intended to protect the beneficiaries of trust funds.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWHJXWngzN19DWU5wbkNZVk80SmlYeDJQMkF0dWlsNE82X2d2Q1k2NzVnVFBtR3gyWFJyRDh3NEd0cDc4VGVCZjBpeU9tSWl2N291OXZYZWJJcTBLQlduRjlMMzZ0WW9NVmxGUGhuUWVvVURjRms2NWl1VGFHODE3Z0dQWTk3a3d5Z1JwWE1vOHp5M1ZPREtGOWF2TWpZWmxYZFpfcUFscldFVTlEOUJzTUcyeG55VV81V2JsZGhIMWZtZTlwamNWZkJ0OW4?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Business",
+      "text": "Shareholders of PZ Cussons have approved a dividend payout totaling N9.926 billion.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQlZjM0J2RkdjVmhLQ0lLdHBUMk1pMFdxbHpMVGxPcmNvcUExZWFXQW1tMzFKM3BCODlGMlNLMTJ5UGtTUm5TT0htVmdFeEEybHAydGRVelVyeUw5WjRtWjUwTzBXRG1NMEp3b1AwU2pYT0VqRWdKOWM5TzJvMTBuV2VjRU0wTG5nam1XRWJydkEzbC1mNFIxU1BKS2RrZ0wzaXNKOXcyRzEtQWIw?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Government has launched a USSD credit service designed to provide Nigerians with credit for solar energy and other household needs.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMndpeVdDT0NyVEtVelNmdUxaanJ6ZF84VmV2NVNqa1F5ek16MEdlZHhQU1E5a2QwZEllcHdmY1l3NkNRWXoyd1lxekRna1Y0eXYwa2NSal9zZGpPRFZIUkFIVm5jVDR5eUlfT0QyZnU0S0t6MThmLVE5RmVROU9DZVBYX0c1c0pZUlppQWtxTnE5VENLS1Y1MHhxUzlIMDh4bDhvSVJLd2pfVDhwcG9qQlE4Smo4eHZFRHlmSEt2LUUzU25Kc0g5alptWlowLXJHSk1oS1NUUkVkZw?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "People",
+      "text": "Two officials in Oyo State, a commissioner and a special adviser, have resigned from the government of Governor Seyi Makinde.",
+      "outlet": "premiumtimesng",
+      "url": "https://www.premiumtimesng.com/regional/ssouth-west/922092-two-oyo-commissioner-special-adviser-resign-from-makindes-government.html"
+    },
+    {
+      "n": 10,
+      "theme": "Regulation & enforcement",
+      "text": "The Guardian reports: NIMC cracks down on illegal NIN enrolment, insists on approved centres",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWXhDVmE1dkw2SjRlRXZocjFFUTRQQ2xnS3VvbmlpZ0FBZTF0WXQ3NF9ZN0hVWTQtX3FsR0l4eFE5ckxRUUZSYVZSZkZ6ZzQwOGw0eEVsR292ODBibWRWUm5iWFFGZk9WSWZkT3lwV296bUFTUXFTckdVdVlqVlZZNDRIcWdwendmSUQtdHdSZkxGa2hoMHN2ZFpEdw?oc=5"
+    },
+    {
+      "n": 11,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Government of Nigeria is set to sign the Federal Fire and Rescue Service Act into law.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMnJDRTZabEhxdDdiQldPd3IxZjhXamdsckUwbnNNQnpsVnBGS2ZoYVg3cFREOGRrRFFpYUJETnlfQUQwT3ctX25JeE1IR2JYRUN0THYwZGJGVDNKejRUMnBxVktfbGl0Vi1hWXJURmFQTlA1RG1UZ28tMUJDSFBWNVhkczRWWnpG?oc=5"
+    },
+    {
+      "n": 12,
+      "theme": "Business",
+      "text": "VFD Group reported a 96% increase in profit for the first nine months of the year, attributed to higher investment income.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZDlVUE1KUHBXaFVGRjBxeVZvdm9SUzJ4LVhmRlAtWGhTRlg5M29vNjl0cDNwcXU4ZVpFNUZTV0VxNXN6eExVMlZIaG5wTjNrWGtxcG11ZlNMWVhuMnVyNS1QdUVDenJ5ajJxVFNtaW45S09VS2VMS1VRa01ZTHJZbTVjcGV0UVl3VWh6U3FLM3BKbUY0OFF1ZnNyY3dxVG5tU2FtYkM3X0hpNGpOYmltdHJ5V1JvVFlNSmVzWUI1YUFVSFpWZ1lsN1dicGNxTFU3Q1ZRb3dRbW42QzJaRzduaC12LVl3bEJTLVFN?oc=5"
+    },
+    {
+      "n": 13,
+      "theme": "Other",
+      "text": "Investors oversubscribed a commercial paper issuance by Johnvents worth N80 billion, according to a Guardian Nigeria report.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPOEVKcS1qalViUUFwMmo2NVBGbVJWREd2UVozQXJKUHFMeEoyUU00SXZyMHdpeXE4SC1NN1o0U3djM1AxV2V4TVd4MkVQZW5jSXJBM21ucTN3Sk1XS0RWVDcwdEtneHVydGdfZ0RnR0VzLVE0bFhWRjZUR2VlX1VDRzZHUElqNkdRbjlOc0tJMlJBaWhNQkUxcFBwUnRONFBOXzdQVzlzTkVxTzJQLVo0?oc=5"
+    },
+    {
+      "n": 14,
+      "theme": "Regulation & enforcement",
+      "text": "The federal government plans to enact a law governing the fire rescue service and is targeting December for completion of a fire service academy.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQa0h1eVdCOGNCUDkwNEo3S25PbDZQZ1JYd0tTNUJyTDQ2clZZeHZ1YUVMOFhnMnczVWk1eWlVX0c5aDUyU2ZiS05oRzNFVk9DYXlIOHQ0OUxHNGhha25KRXZORDhhRXZYVUIyT3ZDV05hNWI4dnZwTFNVY2tTME0zc3N2NDhIc0Nuc1Y2Z0JHeE9kell3Wll6LWlISUE3dW8?oc=5"
+    },
+    {
+      "n": 15,
+      "theme": "Other",
+      "text": "The Anambra State government has sealed an orphanage.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQV2ZoaGZ3U3lIbTlnNG1NWEZRTFpzaGZwc3BLZnBwWEFOeTdBWGlfak8zWHJkTGV2WXMyZzR0d0c0bWpxNFRvazdiOEp6dGdmcHFqUGhES3dqR2FhUTBHOFJHVDRKVDFqNGNCaTl1RG44akc1d09UcWkwcVQ4YWVWdk5MbjhoWGVhM3RwS1AyRkFHb3Q0Nm1kdE92blAxY1J3N2dnS1VWbUY?oc=5"
+    }
+  ],
+  "also_more": 2,
+  "psc": [],
+  "psc_more": 0,
+  "psc_keys": [],
+  "terms": [
+    {
+      "term": "EFCC",
+      "meaning": "Economic and Financial Crimes Commission"
+    },
+    {
+      "term": "CBN",
+      "meaning": "Central Bank of Nigeria"
+    },
+    {
+      "term": "AURA risk rating",
+      "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
+    }
+  ],
+  "engines": {
+    "extraction": [
+      "claude",
+      "ollama"
+    ],
+    "digest": "claude"
+  },
+  "health": {
+    "overview_dropped": 0,
+    "insights_dropped": 2
+  },
+  "site": "https://auranews.pages.dev"
+}
