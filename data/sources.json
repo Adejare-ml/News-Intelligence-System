@@ -17,9 +17,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2493,
+      "total": 2499,
       "published": 1000,
-      "filtered": 1493,
+      "filtered": 1499,
       "accept_rate": 40,
       "avg_risk": 30.5,
       "engines": {
@@ -28,13 +28,13 @@
         "nvidia": 4,
         "claude": 1
       },
-      "last_seen": "2026-11-02"
+      "last_seen": "2026-11-03"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1105,
+      "total": 1109,
       "published": 442,
-      "filtered": 663,
+      "filtered": 667,
       "accept_rate": 40,
       "avg_risk": 27.3,
       "engines": {
@@ -46,9 +46,9 @@
     },
     {
       "source": "The Punch",
-      "total": 693,
+      "total": 695,
       "published": 390,
-      "filtered": 303,
+      "filtered": 305,
       "accept_rate": 56,
       "avg_risk": 32.7,
       "engines": {
@@ -75,10 +75,10 @@
     },
     {
       "source": "Vanguard News",
-      "total": 341,
+      "total": 342,
       "published": 162,
-      "filtered": 179,
-      "accept_rate": 48,
+      "filtered": 180,
+      "accept_rate": 47,
       "avg_risk": 27.0,
       "engines": {
         "unknown": 94,
@@ -86,7 +86,7 @@
         "nvidia": 5,
         "claude": 1
       },
-      "last_seen": "2026-11-02"
+      "last_seen": "2026-11-03"
     },
     {
       "source": "Vanguard",
@@ -117,6 +117,19 @@
       "last_seen": "2026-11-02"
     },
     {
+      "source": "leadership",
+      "total": 209,
+      "published": 50,
+      "filtered": 159,
+      "accept_rate": 24,
+      "avg_risk": 23.3,
+      "engines": {
+        "unknown": 35,
+        "ollama": 15
+      },
+      "last_seen": "2026-11-02"
+    },
+    {
       "source": "naijaonpoint_ng",
       "total": 206,
       "published": 58,
@@ -131,23 +144,10 @@
       "last_seen": "2026-11-02"
     },
     {
-      "source": "leadership",
-      "total": 205,
-      "published": 50,
-      "filtered": 155,
-      "accept_rate": 24,
-      "avg_risk": 23.3,
-      "engines": {
-        "unknown": 35,
-        "ollama": 15
-      },
-      "last_seen": "2026-11-02"
-    },
-    {
       "source": "dailypost",
-      "total": 200,
+      "total": 201,
       "published": 46,
-      "filtered": 154,
+      "filtered": 155,
       "accept_rate": 23,
       "avg_risk": 26.5,
       "engines": {
@@ -198,9 +198,9 @@
     },
     {
       "source": "legit",
-      "total": 132,
+      "total": 133,
       "published": 24,
-      "filtered": 108,
+      "filtered": 109,
       "accept_rate": 18,
       "avg_risk": 25.4,
       "engines": {
@@ -250,9 +250,9 @@
     },
     {
       "source": "premiumtimesng",
-      "total": 51,
+      "total": 52,
       "published": 6,
-      "filtered": 45,
+      "filtered": 46,
       "accept_rate": 12,
       "avg_risk": 21.8,
       "engines": {
@@ -366,16 +366,16 @@
     },
     {
       "source": "Voice of Nigeria",
-      "total": 26,
+      "total": 27,
       "published": 12,
-      "filtered": 14,
-      "accept_rate": 46,
+      "filtered": 15,
+      "accept_rate": 44,
       "avg_risk": 19.6,
       "engines": {
         "nvidia": 1,
         "ollama": 11
       },
-      "last_seen": "2026-10-29"
+      "last_seen": "2026-11-03"
     },
     {
       "source": "vanguardngr.com",
@@ -746,6 +746,18 @@
       "last_seen": "2026-10-21"
     },
     {
+      "source": "Thechronicle.com.gh",
+      "total": 4,
+      "published": 1,
+      "filtered": 3,
+      "accept_rate": 25,
+      "avg_risk": 28.0,
+      "engines": {
+        "unknown": 1
+      },
+      "last_seen": "2026-11-02"
+    },
+    {
       "source": "completesports",
       "total": 4,
       "published": 0,
@@ -897,18 +909,6 @@
       "avg_risk": null,
       "engines": {},
       "last_seen": "2026-10-21"
-    },
-    {
-      "source": "Thechronicle.com.gh",
-      "total": 3,
-      "published": 1,
-      "filtered": 2,
-      "accept_rate": 33,
-      "avg_risk": 28.0,
-      "engines": {
-        "unknown": 1
-      },
-      "last_seen": "2026-09-25"
     },
     {
       "source": "authorityngr",
@@ -2293,5 +2293,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-03 04:01:13"
+  "generated": "2026-11-03 08:55:05"
 }
