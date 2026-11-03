@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -141,6 +147,12 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,24 +229,6 @@
       "risk": "Low"
     },
     {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "34c799e822f2",
       "label": "Agbi",
       "type": "person",
@@ -271,9 +265,27 @@
       "risk": "Low"
     },
     {
+      "id": "149587086c36",
+      "label": "Unnamed Oyo State Commissioner",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8a8a46a4990f",
+      "label": "Unnamed Special Adviser",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "fc0df526d10a",
       "label": "Diepreye Fani-Kayode",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -439,24 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "eb7f9542101c",
-      "label": "Musa",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "18bc77b97b9c",
-      "label": "Festus Keyamo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "00d9f6e47194",
-      "label": "2027 Re-election Campaign",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -589,6 +583,18 @@
       "risk": "Medium"
     },
     {
+      "id": "334c4a4c42fd",
+      "label": "None",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "f91fc56bb9ce",
       "label": "Unnamed Firm (owned by Lagos Councillor)",
       "type": "company",
@@ -603,12 +609,6 @@
     {
       "id": "3e32a23488ab",
       "label": "Unnamed firm owned by Lagos Councillor",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "334c4a4c42fd",
-      "label": "None",
       "type": "company",
       "risk": "Low"
     },
@@ -677,12 +677,6 @@
       "label": "Zeenab Foods Limited",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "e1894ded2ce6",
-      "label": "Federal Government of Nigeria / Benue State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
@@ -715,6 +709,18 @@
       "from": "711f164886cd",
       "to": "fa1f6b770d91",
       "label": "Appointed as ICT Director"
+    },
+    {
+      "id": "b39a272f0083",
+      "from": "149587086c36",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Commissioner"
+    },
+    {
+      "id": "a1bda8ed9fe7",
+      "from": "8a8a46a4990f",
+      "to": "3a4a88456e84",
+      "label": "Appointed as Special Adviser"
     },
     {
       "id": "1bbcdc3382b5",
@@ -825,18 +831,6 @@
       "label": "Appointed as National Security Adviser"
     },
     {
-      "id": "76571bd12138",
-      "from": "eb7f9542101c",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as Official"
-    },
-    {
-      "id": "ff7b9bca2ec3",
-      "from": "18bc77b97b9c",
-      "to": "00d9f6e47194",
-      "label": "Appointed as Director of Air Mobilisation"
-    },
-    {
       "id": "34c826682817",
       "from": "f05534764d4f",
       "to": "dba897677026",
@@ -907,6 +901,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "c1305d06177d",
+      "from": "334c4a4c42fd",
+      "to": "4c7e8211e98f",
+      "label": "Contract Awardee"
     },
     {
       "id": "c3a1ff8afb13",
@@ -1002,12 +1002,6 @@
       "id": "3bb70fc86d28",
       "from": "334c4a4c42fd",
       "to": "79ad7c2f3273",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "0bd84267868a",
-      "from": "334c4a4c42fd",
-      "to": "e1894ded2ce6",
       "label": "Contract Awardee"
     }
   ]
