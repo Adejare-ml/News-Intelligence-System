@@ -449,6 +449,12 @@
       "totals": {}
     },
     {
+      "name": "Central Bank of Nigeria",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "Cross River State Government",
       "contracts": 1,
       "undisclosed": 1,
@@ -728,8 +734,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 140,
-      "undisclosed": 84,
+      "contracts": 141,
+      "undisclosed": 85,
       "totals": {
         "NGN": 21473144090000.0,
         "USD": 47907540000.0
@@ -1266,5 +1272,5 @@
       }
     }
   ],
-  "generated": "2026-11-02 18:13:22"
+  "generated": "2026-11-02 23:59:08"
 }

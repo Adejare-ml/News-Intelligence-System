@@ -174,7 +174,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 62,
+      "total_mentions": 63,
       "points": [
         {
           "week": "2026-09-07",
@@ -223,6 +223,12 @@
           "mentions": 7,
           "avg_risk": 27.9,
           "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -810,6 +816,49 @@
       ]
     },
     {
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "total_mentions": 13,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 4,
+          "avg_risk": 36.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 27.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "all progressives congress",
       "label": "All Progressives Congress",
       "total_mentions": 12,
@@ -846,43 +895,6 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "total_mentions": 12,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 4,
-          "avg_risk": 36.2,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 27.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -4308,6 +4320,25 @@
       ]
     },
     {
+      "key": "johnvents",
+      "label": "Johnvents",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "kaduna state house of assembly",
       "label": "Kaduna State House of Assembly",
       "total_mentions": 2,
@@ -6094,20 +6125,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "arewa consultative forum",
-      "label": "Arewa Consultative Forum",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-11-02 18:13:22"
+  "generated": "2026-11-02 23:59:08"
 }
