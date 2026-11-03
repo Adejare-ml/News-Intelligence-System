@@ -3,10 +3,10 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 16.7,
-      "previous_avg": 41.7,
-      "delta": -25.0,
-      "recent_mentions": 3,
+      "recent_avg": 20.0,
+      "previous_avg": 38.3,
+      "delta": -18.3,
+      "recent_mentions": 2,
       "previous_mentions": 9
     },
     {
@@ -28,6 +28,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 52.3,
+      "previous_avg": 62.3,
+      "delta": -10.0,
+      "recent_mentions": 15,
+      "previous_mentions": 13
+    },
+    {
       "key": "oyo state government",
       "label": "Oyo State Government",
       "recent_avg": 17.5,
@@ -37,22 +46,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 53.1,
-      "previous_avg": 62.1,
-      "delta": -9.0,
-      "recent_mentions": 16,
-      "previous_mentions": 12
-    },
-    {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "recent_avg": 31.7,
-      "previous_avg": 23.3,
-      "delta": 8.4,
-      "recent_mentions": 3,
-      "previous_mentions": 3
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 31.4,
+      "previous_avg": 23.2,
+      "delta": 8.2,
+      "recent_mentions": 7,
+      "previous_mentions": 11
     },
     {
       "key": "senate of",
@@ -75,10 +75,10 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 17.8,
+      "recent_avg": 17.6,
       "previous_avg": 23.7,
-      "delta": -5.9,
-      "recent_mentions": 20,
+      "delta": -6.1,
+      "recent_mentions": 19,
       "previous_mentions": 15
     },
     {
@@ -127,13 +127,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 28.8,
-      "previous_avg": 24.5,
-      "delta": 4.3,
-      "recent_mentions": 8,
-      "previous_mentions": 10
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "recent_avg": 25.0,
+      "previous_avg": 28.8,
+      "delta": -3.8,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     },
     {
       "key": "delta state government",
@@ -143,6 +143,15 @@
       "delta": -3.3,
       "recent_mentions": 3,
       "previous_mentions": 1
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 20.0,
+      "previous_avg": 16.7,
+      "delta": 3.3,
+      "recent_mentions": 5,
+      "previous_mentions": 3
     },
     {
       "key": "central bank of",
@@ -170,17 +179,8 @@
       "delta": -2.5,
       "recent_mentions": 4,
       "previous_mentions": 1
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 18.6,
-      "previous_avg": 20.0,
-      "delta": -1.4,
-      "recent_mentions": 7,
-      "previous_mentions": 1
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-03 04:01:13"
+  "generated": "2026-11-03 08:55:05"
 }
