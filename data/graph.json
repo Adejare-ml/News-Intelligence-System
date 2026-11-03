@@ -121,6 +121,12 @@
       "risk": "Critical"
     },
     {
+      "id": "77a5831b7c50",
+      "label": "National Identity Management Commission (NIMC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -219,12 +225,6 @@
     {
       "id": "ce170f2e6007",
       "label": "NNPC/MPN JV EMOIMEE Host Community Development Trust",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "38b03bbf0068",
-      "label": "National Assembly",
       "type": "agency",
       "risk": "Low"
     },

@@ -1,20 +1,20 @@
 {
-  "generated": "2026-11-02 23:59:04",
+  "generated": "2026-11-03 04:01:06",
   "source": "open-meteo.com",
   "cities": [
     {
       "name": "Lagos",
       "temp_c": 27.4,
-      "humidity": 90,
-      "wind_kmh": 4.3,
+      "humidity": 89,
+      "wind_kmh": 6.1,
       "code": 0,
       "description": "Clear sky"
     },
     {
       "name": "Abuja",
-      "temp_c": 23.9,
-      "humidity": 92,
-      "wind_kmh": 3.3,
+      "temp_c": 25.1,
+      "humidity": 72,
+      "wind_kmh": 0.3,
       "code": 3,
       "description": "Overcast"
     }

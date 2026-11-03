@@ -1,14 +1,8 @@
 {
   "window_days": 7,
-  "recent_articles": 214,
-  "previous_articles": 202,
+  "recent_articles": 211,
+  "previous_articles": 203,
   "rising": [
-    {
-      "term": "tinubu",
-      "recent": 18,
-      "previous": 11,
-      "change": 7
-    },
     {
       "term": "efcc",
       "recent": 16,
@@ -16,13 +10,19 @@
       "change": 6
     },
     {
-      "term": "official",
-      "recent": 6,
-      "previous": 1,
+      "term": "data",
+      "recent": 5,
+      "previous": 0,
       "change": 5
     },
     {
-      "term": "data",
+      "term": "december",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "law",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -35,12 +35,6 @@
     },
     {
       "term": "pension",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "refineries",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -59,6 +53,12 @@
     },
     {
       "term": "financial",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
+    },
+    {
+      "term": "nine-month",
       "recent": 6,
       "previous": 2,
       "change": 4
@@ -129,13 +129,13 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 159,
+      "recent": 157,
       "previous": 133
     },
     {
       "category": "Company",
-      "recent": 32,
-      "previous": 25
+      "recent": 31,
+      "previous": 26
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-02 23:59:06"
+  "generated": "2026-11-03 04:01:08"
 }
