@@ -31,7 +31,50 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # GitHub's cron fires late or not at all for this repo, so the Cloudflare
+  # Worker in web/workers/scheduler starts each slot on time (at :07). A
+  # scheduled run that arrives after a run for its slot already started
+  # skips itself, so no slot runs twice. Manual runs are never skipped.
+  guard:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - name: Skip a scheduled run whose slot already ran
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+          CRON: ${{ github.event.schedule }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" != "schedule" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          HOUR=$(echo "$CRON" | awk '{print $2}')
+          SINCE=$(date -u -d "today $HOUR:00" +%Y-%m-%dT%H:%M:%SZ)
+          # A late 23:11 run can arrive after midnight: its slot was yesterday.
+          if [ "$(date -u -d "$SINCE" +%s)" -gt "$(date -u +%s)" ]; then
+            SINCE=$(date -u -d "yesterday $HOUR:00" +%Y-%m-%dT%H:%M:%SZ)
+          fi
+          OTHERS=$(gh run list -R "$REPO" --workflow news_scheduler.yml --limit 30 \
+            --json databaseId,createdAt \
+            --jq "[.[] | select(.createdAt >= \"$SINCE\" and .databaseId != $RUN_ID)] | length")
+          if [ "$OTHERS" -gt 0 ]; then
+            echo "A run for the $SINCE slot already started ($OTHERS); this scheduled run skips itself."
+            echo "go=false" >> "$GITHUB_OUTPUT"
+            echo "Skipped: the $SINCE slot already ran (started by the Cloudflare scheduler or by hand)." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
   run-pipeline:
+    needs: guard
+    if: needs.guard.outputs.go == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: write

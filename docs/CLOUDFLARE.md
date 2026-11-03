@@ -183,6 +183,46 @@ Subscriber emails are personal data under the Nigeria Data Protection Act
 2023: they are stored only in your D1 database, never leave Cloudflare,
 are used only to send the brief, and stop receiving it on unsubscribe.
 
+## Scheduler (starts the pipeline on time)
+
+GitHub's own cron is unreliable for this repo: on 3 Nov 2026 it never
+started the 07:11 UTC run, so the Morning Brief went out only after a manual
+start, and other runs began 40+ minutes late. A small Cloudflare Worker,
+`web/workers/scheduler`, now starts each run instead. Cloudflare cron
+triggers fire on time.
+
+- At :07 past 07, 13, 17 and 23 UTC it starts "AI News Intelligence
+  Scheduler" through GitHub's API. The 07 UTC run is the Morning Brief
+  edition (`email_edition=true`).
+- At :40 it checks again and starts the run only if none has started for
+  that slot, in case the first start failed.
+- It never starts a second run for a slot. GitHub's own :11 cron and the
+  watchdog stay as backups, and a scheduled run that arrives after the
+  slot already ran skips itself (the `guard` job in `news_scheduler.yml`).
+
+One-time setup:
+
+1. **GitHub token.** On GitHub, go to Settings, then Developer settings, then
+   Fine-grained tokens, then Generate new token.
+   - Resource owner: your account. Repository access: only
+     `News-Intelligence-System`.
+   - Permissions: **Actions: Read and write**. Metadata (read) is added
+     automatically. Nothing else is needed.
+   - Pick a long expiry and note the date: the scheduler stops when the
+     token expires.
+2. **Worker.** In the Cloudflare dashboard, go to Workers & Pages, then
+   Create, then Import a repository.
+   - Choose this repository, branch `main`, and set the root directory to
+     `web/workers/scheduler`.
+   - Deploy. The name (`aura-scheduler`), the cron triggers and the
+     variables come from its `wrangler.toml`.
+3. **Secret.** In the Worker, go to Settings, then Variables and Secrets,
+   then Add. Choose type Secret, name `GITHUB_TOKEN`, and paste the token.
+4. **Check it.** In the Worker, go to Settings, then Trigger events. Both
+   cron triggers should be listed. After the next slot, the Worker's logs
+   show `{"action":"started",...}` and a `workflow_dispatch` run appears in
+   GitHub Actions.
+
 ## Local development
 
 ```
