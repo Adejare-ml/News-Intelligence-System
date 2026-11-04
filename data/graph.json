@@ -121,8 +121,8 @@
       "risk": "Critical"
     },
     {
-      "id": "77a5831b7c50",
-      "label": "National Identity Management Commission (NIMC)",
+      "id": "2d8b68a63cae",
+      "label": "Nigerian Senate",
       "type": "agency",
       "risk": "Low"
     },
@@ -139,14 +139,56 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cab1be53cb3b",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ee660b17d5a8",
+      "label": "National Automotive Design and Development Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6eac15c47af6",
+      "label": "NNPC",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a8bfa117a3e5",
+      "label": "National Youth Service Corps",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a44ffb8120e9",
+      "label": "Nigerian Automotive Design and Development Council (NADDC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "77a5831b7c50",
+      "label": "National Identity Management Commission (NIMC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,45 +229,33 @@
       "risk": "Low"
     },
     {
-      "id": "3933ac79ce03",
-      "label": "Corporate Affairs Commission",
-      "type": "agency",
+      "id": "58c58351d674",
+      "label": "Olayemi Cardoso",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "e79817c87e24",
-      "label": "National Identity Management Commission",
-      "type": "agency",
+      "id": "20186135f191",
+      "label": "Nnaji",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "faa96568b0eb",
-      "label": "NTIA",
-      "type": "agency",
+      "id": "503f12437e7f",
+      "label": "Hussaini Jallo",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "aee652184206",
-      "label": "Federal Fire and Rescue Service",
-      "type": "agency",
+      "id": "d9f4b51cedf5",
+      "label": "Tajudeen Abbas",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "8036ca4008f7",
-      "label": "Nigerian Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "fa1f6b770d91",
-      "label": "Independent National Electoral Commission (INEC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ce170f2e6007",
-      "label": "NNPC/MPN JV EMOIMEE Host Community Development Trust",
-      "type": "agency",
+      "id": "fb716fc8591c",
+      "label": "James Ibori",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -253,6 +283,12 @@
       "risk": "Low"
     },
     {
+      "id": "8036ca4008f7",
+      "label": "Nigerian Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "10e91a46eee3",
       "label": "Godswill Akpabio",
       "type": "person",
@@ -262,6 +298,12 @@
       "id": "711f164886cd",
       "label": "Bayode",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fa1f6b770d91",
+      "label": "Independent National Electoral Commission (INEC)",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -387,66 +429,6 @@
     {
       "id": "84cf3fb98281",
       "label": "Ministry of Solid Minerals Development",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e89885ad47bd",
-      "label": "Dakuku Peterside",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f3b85fb16f5b",
-      "label": "African University of Science and Technology",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "a1d99afd636d",
-      "label": "Sirika",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "68e4cf4ccc70",
-      "label": "Federal Ministry of Aviation (implied)",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6ff5775e8631",
-      "label": "Oyebanji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a70f31de512b",
-      "label": "Ekiti State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "be252fefa816",
-      "label": "Nasir El-Rufai",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4b3b1b76a8e8",
-      "label": "Kaduna State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "c4dd50a83302",
-      "label": "Sambo Dasuki",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6ec7b4566d36",
-      "label": "Office of the National Security Adviser",
       "type": "company",
       "risk": "Low"
     },
@@ -671,15 +653,27 @@
       "label": "Pincode",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "79ad7c2f3273",
-      "label": "Zeenab Foods Limited",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "fd1604102e20",
+      "from": "58c58351d674",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Governor, Central Bank of Nigeria"
+    },
+    {
+      "id": "ee851bbc96bf",
+      "from": "503f12437e7f",
+      "to": "1613f8dac921",
+      "label": "Appointed as Member, House of Representatives (Igabi Federal Constituency, Kaduna State)"
+    },
+    {
+      "id": "fbaaa6bad6d9",
+      "from": "d9f4b51cedf5",
+      "to": "1613f8dac921",
+      "label": "Appointed as Speaker, House of Representatives"
+    },
     {
       "id": "f055c1aaac37",
       "from": "34c799e822f2",
@@ -801,36 +795,6 @@
       "label": "Appointed as Minister of Solid Minerals Development"
     },
     {
-      "id": "4be093f8fc30",
-      "from": "e89885ad47bd",
-      "to": "f3b85fb16f5b",
-      "label": "Appointed as Director of African leadership legacy programme"
-    },
-    {
-      "id": "c78d57d0205a",
-      "from": "a1d99afd636d",
-      "to": "68e4cf4ccc70",
-      "label": "Appointed as Former Minister"
-    },
-    {
-      "id": "b6c8fff20d98",
-      "from": "6ff5775e8631",
-      "to": "a70f31de512b",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "0786561b838b",
-      "from": "be252fefa816",
-      "to": "4b3b1b76a8e8",
-      "label": "Appointed as Former Governor of Kaduna State"
-    },
-    {
-      "id": "309c1b2976a5",
-      "from": "c4dd50a83302",
-      "to": "6ec7b4566d36",
-      "label": "Appointed as National Security Adviser"
-    },
-    {
       "id": "34c826682817",
       "from": "f05534764d4f",
       "to": "dba897677026",
@@ -901,6 +865,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "1e528d29d72f",
+      "from": "334c4a4c42fd",
+      "to": "ee660b17d5a8",
+      "label": "Contract Awardee"
     },
     {
       "id": "c1305d06177d",
@@ -996,12 +966,6 @@
       "id": "12047b1c4fd5",
       "from": "0bee8e95809f",
       "to": "a99d3740770f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "3bb70fc86d28",
-      "from": "334c4a4c42fd",
-      "to": "79ad7c2f3273",
       "label": "Contract Awardee"
     }
   ]
