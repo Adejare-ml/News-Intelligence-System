@@ -1,29 +1,34 @@
 {
   "new_companies": [
-    "Access Holdings Plc"
+    "Africa50",
+    "CDC Group (now British International Investment)",
+    "EMTS Limited (Etisalat Nigeria)",
+    "FMN Holdings Limited",
+    "First Securities Discount House Limited",
+    "Ingentia Energies",
+    "KINA Advisory",
+    "MTN Nigeria Communications Plc",
+    "Society for Corporate Governance Nigeria"
   ],
   "new_people": [
-    "Hussaini Jallo",
-    "James Ibori",
-    "Tajudeen Abbas"
+    "Boye Olusanya",
+    "Fabian Ajogwu (SAN)",
+    "Ibrahim Dikko",
+    "Imoni Akpofure",
+    "Lwazi Bam",
+    "Unnamed former Etisalat boss"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "EFCC uncovers Chinese-operated illegal oil refinery in Ogun - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT19pT2FwQWhfaHB4aFpQRFU1eVB1NktUSkFGU0x4ZmdGbW1BNno4X1hiZVM3a3loZnh5WVRzcDYxU2k0cUxRMDAwdHYwcHBBQ1o1c3NWZ3ZjZk9Cek9UY2JKTHJfb2YtdDQ3Q1FNVnVhZFFvcUg1bzRQYXNEbXRRZ3hjc3NsUjB3WnRpYTByRVB5WWdScmZrSzFmWjBxQmlmV21LX0JRNlNWZ0tpVXc5QmcwZFJpVk0?oc=5",
-      "risk": 70.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 3,
+    "new_companies": 9,
+    "new_people": 6,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-11-04 03:11:33"
+  "generated": "2026-11-04 15:34:00"
 }

@@ -504,7 +504,7 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "total_mentions": 19,
+      "total_mentions": 20,
       "points": [
         {
           "week": "2026-09-14",
@@ -541,6 +541,12 @@
           "mentions": 3,
           "avg_risk": 28.3,
           "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -1261,6 +1267,37 @@
       ]
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission, Nigeria",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "seyi makinde",
       "label": "Seyi Makinde",
       "total_mentions": 7,
@@ -1417,6 +1454,31 @@
       ]
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "nasir el rufai",
       "label": "Nasir El-Rufai",
       "total_mentions": 6,
@@ -1562,31 +1624,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission, Nigeria",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -2442,25 +2479,6 @@
       ]
     },
     {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "meta",
       "label": "Meta",
       "total_mentions": 4,
@@ -2686,6 +2704,31 @@
       ]
     },
     {
+      "key": "nyesom wike",
+      "label": "Nyesom Wike",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 60.0,
+          "max_risk": 60
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "opay",
       "label": "OPay",
       "total_mentions": 4,
@@ -2882,6 +2925,31 @@
       ]
     },
     {
+      "key": "bank of industry",
+      "label": "Bank of Industry",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "bayelsa state government",
       "label": "Bayelsa State Government",
       "total_mentions": 3,
@@ -2979,6 +3047,25 @@
           "mentions": 3,
           "avg_risk": 56.7,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "development bank of",
+      "label": "Development Bank of Nigeria",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3194,6 +3281,31 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "international finance corporation",
+      "label": "International Finance Corporation",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -3472,25 +3584,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "nyesom wike",
-      "label": "Nyesom Wike",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 60.0,
-          "max_risk": 60
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -3915,25 +4008,6 @@
       ]
     },
     {
-      "key": "bank of industry",
-      "label": "Bank of Industry",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "benue state government",
       "label": "Benue State Government",
       "total_mentions": 2,
@@ -4045,19 +4119,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "development bank of",
-      "label": "Development Bank of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4333,25 +4394,6 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "international finance corporation",
-      "label": "International Finance Corporation",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -5713,6 +5755,19 @@
       ]
     },
     {
+      "key": "academic staff union of universities asuu",
+      "label": "Academic Staff Union of Universities (ASUU)",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "access bank kenya",
       "label": "Access Bank Kenya",
       "total_mentions": 1,
@@ -5839,6 +5894,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "africa50",
+      "label": "Africa50",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -6153,33 +6221,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "aluminium smelter company of alscon",
-      "label": "Aluminium Smelter Company of Nigeria (ALSCON) Plc",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "aluminum smelter company of alscon",
-      "label": "Aluminum Smelter Company of Nigeria (ALSCON)",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
     }
   ],
-  "generated": "2026-11-04 03:11:38"
+  "generated": "2026-11-04 15:34:05"
 }

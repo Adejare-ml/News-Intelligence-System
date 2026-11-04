@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-04 03:11:35",
+  "generated": "2026-11-04 15:34:02",
   "models": [
-    {
-      "id": "LiquidAI/LFM3-1.7B",
-      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "task": "text-generation",
-      "likes": 1409,
-      "downloads": 47817
-    },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 741,
-      "downloads": 38942
+      "likes": 1448,
+      "downloads": 44939
     },
     {
       "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "task": "image-text-to-text",
-      "likes": 4863,
-      "downloads": 187260
+      "likes": 5238,
+      "downloads": 221621
+    },
+    {
+      "id": "LiquidAI/LFM3-1.7B",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "task": "text-generation",
+      "likes": 1462,
+      "downloads": 54959
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1550,
-      "downloads": 6556
+      "likes": 1578,
+      "downloads": 8200
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 522,
-      "downloads": 10742
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 10501,
-      "downloads": 2488128
+      "likes": 572,
+      "downloads": 14613
     },
     {
       "id": "Pika-Labs/Pika-H3-Flex",
       "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
       "task": "image-to-video",
-      "likes": 397,
-      "downloads": 633
+      "likes": 418,
+      "downloads": 749
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 10572,
+      "downloads": 2493402
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 610,
-      "downloads": 91123
+      "likes": 634,
+      "downloads": 123321
     }
   ],
   "papers": [
     {
-      "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
-      "url": "https://huggingface.co/papers/2611.02501",
-      "upvotes": 3
-    },
-    {
-      "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
-      "url": "https://huggingface.co/papers/2611.02079",
-      "upvotes": 2
-    },
-    {
-      "title": "MoviEdit: Long-form Multi-Shot Video Editing Made Easy",
-      "url": "https://huggingface.co/papers/2611.02737",
-      "upvotes": 5
-    },
-    {
-      "title": "SeMo3D: Unifying 3D Generation, Editing, and Completion via Selective Modeling",
-      "url": "https://huggingface.co/papers/2611.02568",
+      "title": "BEND 2.0: Benchmarking the Capabilities Needed to Design DNA",
+      "url": "https://huggingface.co/papers/2611.03806",
       "upvotes": 1
     },
     {
-      "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
-      "url": "https://huggingface.co/papers/2611.02497",
+      "title": "Dory1.0-4B: A Looped Normalized-GPT",
+      "url": "https://huggingface.co/papers/2611.03998",
+      "upvotes": 1
+    },
+    {
+      "title": "Every Token Needs Its Own Teacher: Multi-teacher Adaptive On-policy Self-distillation",
+      "url": "https://huggingface.co/papers/2610.40574",
       "upvotes": 7
     },
     {
-      "title": "StreamDuo: A Live Commentator and a Research Agent for Unseen Games",
-      "url": "https://huggingface.co/papers/2611.01120",
-      "upvotes": 4
+      "title": "Kierston & KierstonBench: Simulation of Allentown, PA and Evaluation of Language Models in Crime Investigation and Surveillance Tasks",
+      "url": "https://huggingface.co/papers/2611.04785",
+      "upvotes": 0
+    },
+    {
+      "title": "Factorized MLLM Embeddings for Composed Image Retrieval",
+      "url": "https://huggingface.co/papers/2611.05193",
+      "upvotes": 39
+    },
+    {
+      "title": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
+      "url": "https://huggingface.co/papers/2611.04814",
+      "upvotes": 63
     }
   ]
 }

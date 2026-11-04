@@ -985,9 +985,9 @@
   },
   {
     "Company": "Deloitte Africa",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-17 15:47",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "Professional Services",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -5249,8 +5249,8 @@
   },
   {
     "Company": "MTN Nigeria",
-    "Mention Count": 13,
-    "Last Seen": "2026-11-01 18:15",
+    "Mention Count": 15,
+    "Last Seen": "2026-11-04 15:31",
     "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": ""
@@ -9178,7 +9178,7 @@
   {
     "Company": "Nigeria Air",
     "Mention Count": 2,
-    "Last Seen": "2026-11-04 03:06",
+    "Last Seen": "2026-11-04 3:06",
     "Industry": "Aviation",
     "Risk Level": "High",
     "First Seen": "2026-10-15 12:29"
@@ -9950,5 +9950,77 @@
     "Industry": "Automotive",
     "Risk Level": "Medium",
     "First Seen": "2026-11-02 17:59"
+  },
+  {
+    "Company": "MTN Nigeria Communications Plc",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "First Securities Discount House Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "EMTS Limited (Etisalat Nigeria)",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "Telecoms",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "FMN Holdings Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "Agriculture",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "Society for Corporate Governance Nigeria",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "Africa50",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "CDC Group (now British International Investment)",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "KINA Advisory",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:26",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:26"
+  },
+  {
+    "Company": "Ingentia Energies",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-04 15:27",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-04 15:27"
   }
 ]

@@ -61,6 +61,12 @@
       "risk": "Medium"
     },
     {
+      "id": "dce5a31d3181",
+      "label": "MTN Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "452af0ea3b15",
       "label": "PDP",
       "type": "company",
@@ -75,12 +81,6 @@
     {
       "id": "8e617358cf86",
       "label": "NBA",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "dce5a31d3181",
-      "label": "MTN Nigeria",
       "type": "company",
       "risk": "Low"
     },
@@ -127,6 +127,18 @@
       "risk": "Low"
     },
     {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7301d85363bc",
+      "label": "Financial Reporting Council of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -145,14 +157,32 @@
       "risk": "Low"
     },
     {
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
       "type": "agency",
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "cab1be53cb3b",
       "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e5a1ebedf8b7",
+      "label": "Nigerians in Diaspora Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -169,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "e94d960651d4",
+      "label": "Development Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a8bfa117a3e5",
       "label": "National Youth Service Corps",
       "type": "agency",
@@ -181,50 +217,26 @@
       "risk": "Low"
     },
     {
-      "id": "77a5831b7c50",
-      "label": "National Identity Management Commission (NIMC)",
+      "id": "360a9de78182",
+      "label": "International Finance Corporation (IFC)",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "dfb1365b34ec",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission (NUPRC)",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
+      "id": "e782294db59c",
+      "label": "Nigeria Social Insurance Trust Fund (NSITF)",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cf8ea783000f",
-      "label": "National Drug Law Enforcement Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bf69cb1ec5ea",
-      "label": "Independent National Electoral Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cc4a4d0f3e25",
-      "label": "Anambra State Government",
+      "id": "07e47c2db94f",
+      "label": "NIMASA",
       "type": "agency",
       "risk": "Low"
     },
@@ -232,6 +244,18 @@
       "id": "58c58351d674",
       "label": "Olayemi Cardoso",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "56a1ac14d764",
+      "label": "Nyesom Wike",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -259,6 +283,48 @@
       "risk": "Low"
     },
     {
+      "id": "44927a723e54",
+      "label": "Ibrahim Dikko",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fd7d1376d4af",
+      "label": "MTN Nigeria Communications Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "26da1f6fe318",
+      "label": "Boye Olusanya",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0ee08649f568",
+      "label": "Fabian Ajogwu (SAN)",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9d77a1e81ddf",
+      "label": "Imoni Akpofure",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "1d6d92cfab39",
+      "label": "Lwazi Bam",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "d8e7926b6ad7",
+      "label": "Unnamed former Etisalat boss",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "34c799e822f2",
       "label": "Agbi",
       "type": "person",
@@ -274,6 +340,12 @@
       "id": "3fd6d917dd79",
       "label": "Otti",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7ac5d6bb2121",
+      "label": "Abia State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -313,6 +385,12 @@
       "risk": "Low"
     },
     {
+      "id": "3a4a88456e84",
+      "label": "Oyo State Government",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "8a8a46a4990f",
       "label": "Unnamed Special Adviser",
       "type": "person",
@@ -343,6 +421,12 @@
       "risk": "Low"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "651d26051cf1",
       "label": "Isa Pantami",
       "type": "person",
@@ -369,66 +453,6 @@
     {
       "id": "2e36790d4395",
       "label": "Ministry of Budget and Economic Planning",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "f175b65f0351",
-      "label": "Tayo Oviosu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "37da868a45f1",
-      "label": "Paga",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5152c3f8bc4a",
-      "label": "Adeniyi Adeyemi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "044ec82597eb",
-      "label": "Presidential Foreign Intervention Promotion Council",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "7a5d97d369d9",
-      "label": "Uzodimma",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8d64c9ee9816",
-      "label": "Okorocha",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "5a094abf1abe",
-      "label": "Bola Ahmed Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "382e8e8b425b",
-      "label": "Presidential Council",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "67b05664cea3",
-      "label": "Dele Alake",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "84cf3fb98281",
-      "label": "Ministry of Solid Minerals Development",
       "type": "company",
       "risk": "Low"
     },
@@ -663,6 +687,12 @@
       "label": "Appointed as Governor, Central Bank of Nigeria"
     },
     {
+      "id": "4f87337f3e1c",
+      "from": "56a1ac14d764",
+      "to": "beb91054dc85",
+      "label": "Appointed as Minister of the Federal Capital Territory"
+    },
+    {
       "id": "ee851bbc96bf",
       "from": "503f12437e7f",
       "to": "1613f8dac921",
@@ -673,6 +703,42 @@
       "from": "d9f4b51cedf5",
       "to": "1613f8dac921",
       "label": "Appointed as Speaker, House of Representatives"
+    },
+    {
+      "id": "52a49e23e458",
+      "from": "44927a723e54",
+      "to": "fd7d1376d4af",
+      "label": "Appointed as Independent Non-Executive Director"
+    },
+    {
+      "id": "c2f55f3a1eae",
+      "from": "26da1f6fe318",
+      "to": "fd7d1376d4af",
+      "label": "Appointed as Independent Non-Executive Director"
+    },
+    {
+      "id": "8c5d4bcd25d3",
+      "from": "0ee08649f568",
+      "to": "fd7d1376d4af",
+      "label": "Appointed as Non-Executive Director"
+    },
+    {
+      "id": "3f3500b4de58",
+      "from": "9d77a1e81ddf",
+      "to": "fd7d1376d4af",
+      "label": "Appointed as Non-Executive Director"
+    },
+    {
+      "id": "abf18b66b79a",
+      "from": "1d6d92cfab39",
+      "to": "fd7d1376d4af",
+      "label": "Appointed as Non-Executive Director"
+    },
+    {
+      "id": "4018bda591c4",
+      "from": "d8e7926b6ad7",
+      "to": "dce5a31d3181",
+      "label": "Appointed as Director"
     },
     {
       "id": "f055c1aaac37",
@@ -751,48 +817,6 @@
       "from": "9c6b88ddb885",
       "to": "2e36790d4395",
       "label": "Appointed as Minister of State for Budget and Economic Planning"
-    },
-    {
-      "id": "aa9a51059ab6",
-      "from": "f175b65f0351",
-      "to": "37da868a45f1",
-      "label": "Appointed as Chief Executive Officer and Founder"
-    },
-    {
-      "id": "6db8be62206f",
-      "from": "5152c3f8bc4a",
-      "to": "044ec82597eb",
-      "label": "Appointed as Purported Director-General"
-    },
-    {
-      "id": "a46d5d092b68",
-      "from": "7a5d97d369d9",
-      "to": "283e1d4aa831",
-      "label": "Appointed as Senatorial Candidate"
-    },
-    {
-      "id": "41f0720f89d2",
-      "from": "8d64c9ee9816",
-      "to": "283e1d4aa831",
-      "label": "Appointed as Senatorial Candidate"
-    },
-    {
-      "id": "90d4f5fbf4b4",
-      "from": "5a094abf1abe",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
-    },
-    {
-      "id": "f4c3e183cff8",
-      "from": "5152c3f8bc4a",
-      "to": "382e8e8b425b",
-      "label": "Appointed as Fake Director General"
-    },
-    {
-      "id": "315b0fe9face",
-      "from": "67b05664cea3",
-      "to": "84cf3fb98281",
-      "label": "Appointed as Minister of Solid Minerals Development"
     },
     {
       "id": "34c826682817",
