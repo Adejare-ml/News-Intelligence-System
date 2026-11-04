@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 938,
-      "mentions": 1566,
+      "companies": 941,
+      "mentions": 1569,
       "risk": {
-        "Low": 828,
+        "Low": 831,
         "Critical": 57,
         "Medium": 30,
         "High": 23
@@ -13,30 +13,30 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 47,
-      "mentions": 233,
+      "companies": 48,
+      "mentions": 234,
       "risk": {
         "Medium": 17,
-        "Low": 25,
+        "Low": 26,
         "Critical": 1,
         "High": 4
       }
     },
     {
       "industry": "Banking",
-      "companies": 27,
-      "mentions": 76,
+      "companies": 28,
+      "mentions": 77,
       "risk": {
-        "Low": 21,
+        "Low": 22,
         "Medium": 6
       }
     },
     {
       "industry": "Telecoms",
-      "companies": 11,
-      "mentions": 55,
+      "companies": 13,
+      "mentions": 59,
       "risk": {
-        "Low": 10,
+        "Low": 12,
         "Medium": 1
       }
     },
@@ -70,6 +70,15 @@
       }
     },
     {
+      "industry": "Agriculture",
+      "companies": 11,
+      "mentions": 14,
+      "risk": {
+        "Low": 10,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Fintech",
       "companies": 10,
       "mentions": 14,
@@ -84,15 +93,6 @@
       "mentions": 14,
       "risk": {
         "High": 1,
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Agriculture",
-      "companies": 10,
-      "mentions": 13,
-      "risk": {
-        "Low": 9,
         "Medium": 1
       }
     },
@@ -166,6 +166,14 @@
       }
     },
     {
+      "industry": "Professional Services",
+      "companies": 4,
+      "mentions": 8,
+      "risk": {
+        "Low": 4
+      }
+    },
+    {
       "industry": "Construction",
       "companies": 6,
       "mentions": 7,
@@ -214,14 +222,6 @@
       "mentions": 6,
       "risk": {
         "Medium": 2
-      }
-    },
-    {
-      "industry": "Professional Services",
-      "companies": 3,
-      "mentions": 6,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -950,5 +950,5 @@
       }
     }
   ],
-  "generated": "2026-11-04 03:11:38"
+  "generated": "2026-11-04 15:34:05"
 }
