@@ -64,7 +64,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 93,
+      "total_mentions": 94,
       "points": [
         {
           "week": "2026-09-14",
@@ -107,13 +107,19 @@
           "mentions": 9,
           "avg_risk": 28.3,
           "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 86,
+      "total_mentions": 88,
       "points": [
         {
           "week": "2026-09-07",
@@ -165,16 +171,16 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
+          "mentions": 3,
+          "avg_risk": 55.0,
+          "max_risk": 70
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 63,
+      "total_mentions": 64,
       "points": [
         {
           "week": "2026-09-07",
@@ -226,9 +232,9 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 35.0,
-          "max_risk": 35
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 45
         }
       ]
     },
@@ -296,7 +302,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 29,
+      "total_mentions": 30,
       "points": [
         {
           "week": "2026-09-14",
@@ -336,9 +342,9 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 45
         }
       ]
     },
@@ -1354,6 +1360,25 @@
       ]
     },
     {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 68.8,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -1866,6 +1891,31 @@
       ]
     },
     {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "national health insurance authority",
       "label": "National Health Insurance Authority",
       "total_mentions": 5,
@@ -1937,6 +1987,37 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -2144,19 +2225,6 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 68.8,
-          "max_risk": 85
         }
       ]
     },
@@ -2462,6 +2530,25 @@
       ]
     },
     {
+      "key": "national youth service corps",
+      "label": "National Youth Service Corps",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 53.3,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "niger delta development commission",
       "label": "Niger Delta Development Commission",
       "total_mentions": 4,
@@ -2627,31 +2714,6 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
         }
       ]
     },
@@ -3263,25 +3325,6 @@
       ]
     },
     {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national identity management commission",
       "label": "National Identity Management Commission",
       "total_mentions": 3,
@@ -3328,19 +3371,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "national youth service corps",
-      "label": "National Youth Service Corps",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 53.3,
-          "max_risk": 75
         }
       ]
     },
@@ -3705,6 +3735,25 @@
         },
         {
           "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "access",
+      "label": "Access Holdings Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-02",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -4543,6 +4592,25 @@
       ]
     },
     {
+      "key": "national automotive design and development council",
+      "label": "National Automotive Design and Development Council",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "national bureau of statistics",
       "label": "National Bureau of Statistics",
       "total_mentions": 2,
@@ -4648,6 +4716,25 @@
           "mentions": 2,
           "avg_risk": 27.5,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "air",
+      "label": "Nigeria Air",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -4820,6 +4907,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "nnaji",
+      "label": "Nnaji",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -5620,19 +5726,6 @@
       ]
     },
     {
-      "key": "access",
-      "label": "Access Holdings",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
       "key": "accord party",
       "label": "Accord Party",
       "total_mentions": 1,
@@ -6086,46 +6179,7 @@
           "max_risk": 85
         }
       ]
-    },
-    {
-      "key": "amupitan",
-      "label": "Amupitan",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "anthony kila",
-      "label": "Anthony Kila",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "arab fund for economic and social development",
-      "label": "Arab Fund for Economic and Social Development",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-03 08:55:05"
+  "generated": "2026-11-04 03:11:38"
 }

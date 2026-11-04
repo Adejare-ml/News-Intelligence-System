@@ -1,28 +1,28 @@
 {
   "window_days": 7,
-  "recent_articles": 205,
-  "previous_articles": 203,
+  "recent_articles": 180,
+  "previous_articles": 202,
   "rising": [
     {
-      "term": "data",
-      "recent": 5,
-      "previous": 0,
+      "term": "approves",
+      "recent": 9,
+      "previous": 3,
+      "change": 6
+    },
+    {
+      "term": "lagos",
+      "recent": 9,
+      "previous": 4,
       "change": 5
     },
     {
-      "term": "december",
-      "recent": 5,
-      "previous": 0,
+      "term": "oil",
+      "recent": 9,
+      "previous": 4,
       "change": 5
     },
     {
       "term": "law",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
-      "term": "loans",
       "recent": 5,
       "previous": 0,
       "change": 5
@@ -40,13 +40,13 @@
       "change": 4
     },
     {
-      "term": "profit",
-      "recent": 7,
-      "previous": 3,
+      "term": "cbn",
+      "recent": 8,
+      "previous": 4,
       "change": 4
     },
     {
-      "term": "seeks",
+      "term": "profit",
       "recent": 7,
       "previous": 3,
       "change": 4
@@ -58,89 +58,89 @@
       "change": 4
     },
     {
-      "term": "nine-month",
-      "recent": 6,
-      "previous": 2,
+      "term": "opay",
+      "recent": 4,
+      "previous": 0,
       "change": 4
     }
   ],
   "falling": [
     {
-      "term": "alleged",
-      "recent": 1,
-      "previous": 11,
-      "change": -10
+      "term": "bill",
+      "recent": 0,
+      "previous": 9,
+      "change": -9
     },
     {
-      "term": "bill",
+      "term": "alleged",
       "recent": 1,
       "previous": 9,
       "change": -8
     },
     {
-      "term": "four",
+      "term": "witness",
       "recent": 0,
-      "previous": 6,
+      "previous": 8,
+      "change": -8
+    },
+    {
+      "term": "tinubu",
+      "recent": 11,
+      "previous": 17,
+      "change": -6
+    },
+    {
+      "term": "court",
+      "recent": 8,
+      "previous": 14,
       "change": -6
     },
     {
       "term": "reps",
-      "recent": 9,
+      "recent": 8,
       "previous": 14,
-      "change": -5
+      "change": -6
+    },
+    {
+      "term": "appoints",
+      "recent": 2,
+      "previous": 8,
+      "change": -6
     },
     {
       "term": "assembly",
-      "recent": 3,
+      "recent": 2,
       "previous": 8,
-      "change": -5
+      "change": -6
     },
     {
       "term": "others",
-      "recent": 3,
+      "recent": 2,
       "previous": 8,
-      "change": -5
+      "change": -6
     },
     {
-      "term": "apc",
+      "term": "unveils",
       "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "campaign",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "son",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "alleged fraud",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
+      "previous": 7,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 152,
-      "previous": 133
+      "recent": 131,
+      "previous": 136
     },
     {
       "category": "Company",
-      "recent": 31,
+      "recent": 29,
       "previous": 26
     },
     {
       "category": "Legal",
-      "recent": 21,
-      "previous": 39
+      "recent": 19,
+      "previous": 35
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-03 08:55:02"
+  "generated": "2026-11-04 03:11:36"
 }

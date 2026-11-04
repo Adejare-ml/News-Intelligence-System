@@ -3,7 +3,7 @@
     {
       "industry": "General",
       "companies": 938,
-      "mentions": 1565,
+      "mentions": 1566,
       "risk": {
         "Low": 828,
         "Critical": 57,
@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 27,
-      "mentions": 75,
+      "mentions": 76,
       "risk": {
         "Low": 21,
         "Medium": 6
@@ -43,7 +43,7 @@
     {
       "industry": "Aviation",
       "companies": 11,
-      "mentions": 29,
+      "mentions": 30,
       "risk": {
         "Medium": 6,
         "Low": 4,
@@ -950,5 +950,5 @@
       }
     }
   ],
-  "generated": "2026-11-03 08:55:05"
+  "generated": "2026-11-04 03:11:38"
 }

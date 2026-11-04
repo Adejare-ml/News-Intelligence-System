@@ -1,6 +1,17 @@
 {
   "alerts": [
     {
+      "date": "2026-11-04",
+      "title": "EFCC uncovers Chinese-operated illegal oil refinery in Ogun - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPT19pT2FwQWhfaHB4aFpQRFU1eVB1NktUSkFGU0x4ZmdGbW1BNno4X1hiZVM3a3loZnh5WVRzcDYxU2k0cUxRMDAwdHYwcHBBQ1o1c3NWZ3ZjZk9Cek9UY2JKTHJfb2YtdDQ3Q1FNVnVhZFFvcUg1bzRQYXNEbXRRZ3hjc3NsUjB3WnRpYTByRVB5WWdScmZrSzFmWjBxQmlmV21LX0JRNlNWZ0tpVXc5QmcwZFJpVk0?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "Economic and Financial Crimes Commission"
+      ]
+    },
+    {
       "date": "2026-11-02",
       "title": "EXPOSED: Lagos Councillor\u2019s Firm Lands N21.35m Govt Contract Barely 7 Months After CAC Registration - FIJ NG",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOFhDNDlSTzA2c29qNmNoREZxVk5CalRnZUpsV2I5V2JGUWxjTUh1Ykp2Rk1mQWNsVE93eHhLVWlTdjJuNW5SYm9DbjJtbjlHNG01X3R2Z0NpUDF0Sk9Gb1hXWUdsZHFObzBmdXd1U1BXOEtkZ0tjU1JRazJGLVRTQkd4a2dKVWNNMXdwZW5vY1p5QjJiazRVcDVmMmN2RDcyR1NQTUxPcG5sd2h1ZDVLWTNXZ1JzZS1SRlJOaA?oc=5",
@@ -1060,5 +1071,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-03 08:55:05"
+  "generated": "2026-11-04 03:11:38"
 }

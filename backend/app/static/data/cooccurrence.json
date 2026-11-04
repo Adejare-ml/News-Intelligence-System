@@ -270,6 +270,10 @@
       "label": "NG Eagle"
     },
     {
+      "key": "nnaji",
+      "label": "Nnaji"
+    },
+    {
       "key": "office of the attorney general of the federation",
       "label": "Office of the Attorney General of the Federation"
     },
@@ -394,6 +398,11 @@
       "weight": 5
     },
     {
+      "a": "central bank of",
+      "b": "olayemi cardoso",
+      "weight": 5
+    },
+    {
       "a": "economic and financial crimes commission",
       "b": "federal bureau of investigation",
       "weight": 5
@@ -406,11 +415,6 @@
     {
       "a": "bola tinubu",
       "b": "federal government of",
-      "weight": 4
-    },
-    {
-      "a": "central bank of",
-      "b": "olayemi cardoso",
       "weight": 4
     },
     {
@@ -596,6 +600,11 @@
     {
       "a": "central bank of",
       "b": "economic and financial crimes commission",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
+      "b": "house of representatives",
       "weight": 2
     },
     {
@@ -824,10 +833,15 @@
       "weight": 2
     },
     {
+      "a": "national youth service corps",
+      "b": "nnaji",
+      "weight": 2
+    },
+    {
       "a": "stallion",
       "b": "united bank for africa",
       "weight": 2
     }
   ],
-  "generated": "2026-11-03 08:55:05"
+  "generated": "2026-11-04 03:11:38"
 }
