@@ -1,43 +1,77 @@
 {
-  "edition": "20261104-10921-preview",
-  "preview": true,
-  "built_at": "2026-11-04 03:11:38",
+  "edition": "20261104-11000",
+  "preview": false,
+  "built_at": "2026-11-04 15:34:05",
   "date": "Wednesday 4 November 2026",
   "subject": "AURA alert · Wed 4 Nov · NNPC eyes 10% equity sale, London, New York listings",
-  "preheader": "11 stories, 1 risk alert",
+  "preheader": "21 stories, 1 risk alert",
   "since": "Tue 3 Nov, 09:55 Lagos",
-  "through_id": 10921,
+  "through_id": 11000,
   "stats": {
-    "reports": 13,
-    "stories": 11,
-    "outlets": 6,
+    "reports": 23,
+    "stories": 21,
+    "outlets": 7,
     "risk_alerts": 1,
     "public_money": 2,
-    "appointments": 0,
+    "appointments": 2,
     "ownership": 0
   },
   "nothing_in": [
-    "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "The Economic and Financial Crimes Commission (EFCC) uncovered an illegal oil refinery in Ogun State reportedly operated by Chinese nationals.",
-      "card": 1,
-      "outlet": "The Eagle Online"
-    },
-    {
-      "text": "NNPC is considering selling a 10% equity stake in itself and pursuing listings on the London and New York stock exchanges.",
+      "text": "NNPC is considering selling a 10% equity stake in itself and pursuing listings on the London and New York stock exchanges, according to Punch.",
       "card": 2,
       "outlet": "Punch"
     },
     {
-      "text": "Premium Times reports: Ibori loses appeal over £102million corrupt assets forfeiture",
-      "card": 3,
+      "text": "MTN Nigeria Communications Plc appointed five new directors, three non-executive and two independent non-executive, with effect from December 1, 2026, in a statement signed by company secretary Uto Ukpanah.",
+      "card": 4,
+      "outlet": "Business Post Nigeria"
+    },
+    {
+      "text": "ASUU has threatened industrial action over Federal Capital Territory Minister Nyesom Wike's allocation of University of Abuja land.",
+      "card": 6,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "NNPC says reforms under the Petroleum Industry Act have lifted Nigeria's oil output by 600,000 barrels per day.",
+      "card": 8,
+      "outlet": "Vanguard"
+    },
+    {
+      "text": "The Bank of Industry and the International Finance Corporation signed a $50 million loan agreement to expand financing for Nigeria's micro, small and medium enterprises.",
+      "card": 10,
       "outlet": "Premium Times"
     }
   ],
-  "insights": [],
+  "insights": [
+    {
+      "label": "Across stories",
+      "text": "Vanguard and Punch both carry NNPC's claim that reforms raised output by 600,000 barrels per day. Both reports are headline-level and attribute the figure to NNPC.",
+      "cards": [
+        8,
+        9
+      ],
+      "outlets": [
+        "Vanguard",
+        "Punch"
+      ]
+    },
+    {
+      "label": "Across stories",
+      "text": "Premium Times and Business Post Nigeria both report that MTN Nigeria appointed five new directors to its board.",
+      "cards": [
+        4,
+        7
+      ],
+      "outlets": [
+        "Business Post Nigeria",
+        "Premium Times"
+      ]
+    }
+  ],
   "cards": [
     {
       "n": 1,
@@ -142,6 +176,43 @@
     },
     {
       "n": 4,
+      "theme": "People",
+      "event_type": "Appointment",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "MTN Nigeria Strengthens Board With Appointment of Fabian Ajogwu, Four Others",
+      "byline": "Business Post Nigeria · Wed 4 Nov, 12:53 Lagos",
+      "outlet": "Business Post Nigeria",
+      "what_happened": "MTN Nigeria Communications Plc has appointed five new directors, three non-executive and two independent non-executive, with effect from December 1, 2026. The appointments were announced in a statement signed by company secretary Uto Ukpanah. The appointees include Ibrahim Dikko, Boye Olusanya, Fabian Ajogwu (SAN), Imoni Akpofure and Lwazi Bam.",
+      "key_facts": [
+        "MTN Nigeria Communications Plc appointed five directors: three non-executive and two independent non-executive.",
+        "Appointments take effect from December 1, 2026.",
+        "Statement signed by company secretary Uto Ukpanah.",
+        "Lwazi Bam joined MTN Group on June 1, 2026, as Group Chief Risk Officer."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: The board changes reshape MTN Nigeria's governance and direction, and the article reports no change to shareholding or significant control."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "MTN Nigeria Communications Plc",
+        "First Securities Discount House Limited",
+        "EMTS Limited (Etisalat Nigeria)",
+        "FMN Holdings Limited",
+        "Securities and Exchange Commission"
+      ],
+      "source": {
+        "outlet": "Business Post Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMnZHRVVEcTY3Zjl2QjMwQ0ZrNWpXVmdhYmJZaEFmYkc2RVF2aEJ5QlprTTcxa2w4SUZINDhZMXQ2MGFhUm5DdFlLanB4aDB2aHRCZHY4OEN0REVoX2hfZkhnakMtODhvMkxOemdHX0hxd3gtT3VJdGpwdnhBZW41YVlMbWxubFVQM3pqaDFXMXFBZjF3YUpDSVJzOHpKVFNnalBxb1ZVNWk?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 5,
       "theme": "Public money",
       "event_type": "Audit",
       "flags": [
@@ -177,81 +248,81 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "PIA reforms lift oil output by 600,000bpd — NNPC",
-      "byline": "Vanguard · Tue 3 Nov, 17:18 Lagos",
-      "outlet": "Vanguard",
-      "what_happened": "The NNPC says reforms under the Petroleum Industry Act (PIA) have lifted Nigeria's oil output by 600,000 barrels per day. The statement credits the regulatory changes for the production increase. The report contains no details on specific companies, ownership changes or contracts.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: The PIA reform framework shapes the operating environment for upstream oil companies and the public revenue they generate. The article reports no ownership or procurement change."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "NNPC"
-      ],
-      "source": {
-        "outlet": "Vanguard",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOTVuRms1STNDMGRyZEg5bm14TkkxUFVFU0lieUJrUzRseEozLURhTWZsV0hYZXlKMTl2N21lYmwycGR3OTVYZ0pVU0F6N21iWHpyTmJRRXFPYmt1aUw2Qmt0V0VVanJqbUVUOXd3MmhqV0VDR2lVRWlhaVhBRHJkSWR0MGpOYVl4WHfSAY8BQVVfeXFMT3NHMXZ2SU9UdHBvRHNQZ3VGMkhwT1Y4bXRsekNpa2VmeURCaThJcnhaZ3ZBcDhRVjlJWlJVX2VibEwzUTZBOElmSDJwY3QtSHRqLWdma0QzRnNoNm55NjN3blVvVnV0WkNObTdKX0U5emRkeUVKMUpuN1pKazVIa0lBVWJDLW5JUWxqNlZMM2c?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
+      "theme": "Other",
+      "text": "The Academic Staff Union of Universities (ASUU) has threatened industrial action over the Federal Capital Territory Minister Nyesom Wike's allocation of University of Abuja land.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNci1TU09QblBnb3A3YmZxSXhNZ1RaemZLTUJ0RV83TGtwUTVRTUwtVHl1Sl9NVDRiOGJqdWJiVzlmc18ycExYYjBuRGpLN2tpcWZHT1Q3d2kwM1QwV3EzVVpLbWJHem1mYVM5MTZycXEzcnVPU0g5QjlWQmFHSERjZzRGdWg3NDctRDJLMjdKaVNhUzU2OHk5dmtqeHFuQ2VSMEFvRGxudElMdEx0aTFNS1RqN0M1SVNvdlJXZmdaM09mc2RaaHAw?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "People",
+      "text": "MTN Nigeria has appointed five new directors to its board, including a former Etisalat chief executive.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaHVtbzFvcmtEZmgyY3RGdEU4YzJBUmlvU0k5dVo0eDhRUmoxTzU4VXV3eUV3RXR6Y1lsbjBNaU9yVUdjREhSUnVCNjZlUk4tRHJCMHhfSklTaEJZQTZWYUlOYU9STklULVVLVXI0UGdvYkExa3VvQUNxdlFfUjlxWGpTd0g4ZDZPb042X1g0V25vbmpxWWhrLUJXRWcta3Q0YktNejloQWRXbGFtc3hKMkx0S1hvRmVaQUxqUU9FeEx2em84WV84?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Regulation & enforcement",
+      "text": "The NNPC says reforms under the Petroleum Industry Act (PIA) have lifted Nigeria's oil output by 600,000 barrels per day.",
+      "outlet": "Vanguard",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOTVuRms1STNDMGRyZEg5bm14TkkxUFVFU0lieUJrUzRseEozLURhTWZsV0hYZXlKMTl2N21lYmwycGR3OTVYZ0pVU0F6N21iWHpyTmJRRXFPYmt1aUw2Qmt0V0VVanJqbUVUOXd3MmhqV0VDR2lVRWlhaVhBRHJkSWR0MGpOYVl4WHfSAY8BQVVfeXFMT3NHMXZ2SU9UdHBvRHNQZ3VGMkhwT1Y4bXRsekNpa2VmeURCaThJcnhaZ3ZBcDhRVjlJWlJVX2VibEwzUTZBOElmSDJwY3QtSHRqLWdma0QzRnNoNm55NjN3blVvVnV0WkNObTdKX0U5emRkeUVKMUpuN1pKazVIa0lBVWJDLW5JUWxqNlZMM2c?oc=5"
+    },
+    {
+      "n": 9,
       "theme": "Regulation & enforcement",
       "text": "The Nigerian National Petroleum Company (NNPC) says oil sector reforms have raised Nigeria's crude output by 600,000 barrels per day.",
       "outlet": "Punch",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EOW9DdkU3V3ZjSVZxRkx4WUlTcHpvN21ZcFpwS0V0U0xkdEQ5MEQxVjBLM3AwV19TWmt1aWhjb0xJTi1PSXVqWGpwZXJFYk4zRWIyVE1wZTRfRVJYMzlKOVJ6S2xETmZpR1I3OEJnRllBUmI5SUVyTFRhNHg3dw?oc=5"
     },
     {
-      "n": 7,
+      "n": 10,
+      "theme": "Other",
+      "text": "The Bank of Industry (BOI) and the International Finance Corporation (IFC) have signed a $50 million loan agreement aimed at expanding financing for micro, small and medium enterprises (MSMEs) in Nigeria.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVnNod21PS1VzWmRjcHJGdmRWTU1qODRkSWlpUGg1bW9wMEJZcmtGR1llam5vRHVPaVp6MnNobVJtWlR3SUJrd3gwMXNnY0JlZ29MZXNqTjFGU1Yyd21aay02ckJVZTJRaGY3TW4wd2FuSVFlQ3VadXlrQlVLMGpzc3J3ZS1YX1ZBT2F1NE9qbm1yMFc3R0RrTE56VFhmNVRTcjFVRkxtUVMtM0dIVXRaTlZIMlRxYnlpc1VzUWdIbFpQR3o2czBDWXFITQ?oc=5"
+    },
+    {
+      "n": 11,
       "theme": "Business",
       "text": "Access Holdings reported a 6% decline in nine-month profit as rising cost of funds eroded earnings.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbi1XbzMwbVhpMVVLOFgwRmdreXVTWXVhYk5YSkh2WE9kT05TZ29IVmpXZVp4OURLYktidmhpNEVyb0MzS2FydHViX0p2STU4bklRejJEVm9BZE8zMF9lTHgzUTVfV01PbUxSQWFhbURzcDlkTEFwQ0ZhUF85MUNNNUV3OVltN2FoVjBwaFVtczJpalZkUmdqZHRCVVZBME1lREFrT2tfanUzbW5mWmduTE1iSUZia1IwVTQ5WUJPSkNMcVRKVGRid24xSkQyeEd4dS1ISlBB?oc=5"
     },
     {
-      "n": 8,
+      "n": 12,
+      "theme": "Regulation & enforcement",
+      "text": "The federal government says it will recover N400 million in unpaid charges and pledges action to tackle power shortages.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNN1hLWlZUT251U2VXb2U0TjR6ME12YmIxdjZCZkFmU3RuYnItTXVCMDJfX0t5ZTVFRjJGWkswWlVBQnphbFVzTl9PYmJWRFhJRFBlTmdKbUgyMWRYUmZLQ0Y5cG9XcnZYSndpbDFZRUdxNG15VDJkRlI5cHdQMjBqRzFDMmh0bFRDNUFaMFpIdHBZNHpCZFN4STB6VUo4SWwxdzlnbVVMWG9CZ0k?oc=5"
+    },
+    {
+      "n": 13,
       "theme": "Other",
       "text": "The National Youth Service Corps (NYSC) has disowned a discharge certificate attributed to former minister Nnaji, according to a Premium Times Nigeria report.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMW91TmI3cHd0d1ZnekdQZ3k3SzhERWFwQ1owdVhZcmNXdkwyanF0M0V6TDQyRWU1ZU04YjhZcHQzU1ZqeGN1c0tkMDNNMU1UNDFLN1hROGp1ME00emJoLWVOc3lVVGpNZjEzNTlBLXZLZ01ZSGVQWlB1RFJrUW9SZTQ3TkhocmI0WWpRMVQ4TlJCWEtCd1MwSUMwYnNCVjBVQjJQODBlNHJiRkFiQTVJ?oc=5"
     },
     {
-      "n": 9,
+      "n": 14,
+      "theme": "Other",
+      "text": "Nigeria's Customs Service intercepted 195 smuggling attempts and seized contraband worth N6.19 billion, according to a Guardian Nigeria report.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQVF1OWtmUU9sTjc3cVpQTVRfdmJpLVptZHdrVFB4NTBlVDZzMXEwOG9kZ1JqRVBXV21CenY0Zm9yVDdPUlA4UmtJcnFreDZrbXlXN3loX2pEVlQ1TDhMejZEZjZBQ01fWEFINHNTYTlvWW80ZEtyVkwtUnBEZmlxMGZhYkd4dkpueDljSHpaX0RNbVRhMHV2SkpacnlBTjFmQXg3Ry0tZXJNNEFQNUtWVEFR?oc=5"
+    },
+    {
+      "n": 15,
       "theme": "Regulation & enforcement",
       "text": "The Nigerian Senate rejected a proposal to revive the Nigeria Air project.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUGlUX2R0SFZZclk3U2RVQkg0elppd2VSUGhnS2FNSGZlakF6ZHVrYkh5bG1heWpiM3paUmtDTEoyeVhzQm9oZW8wSEtVZW9MT1pFMUFNRFBMQWdHSDI5R2FyZVhXZkZubmZkRTJ0RmFyMVAtMU9nYll5WEhRSkp5TDVJWnFWQ1BEZ1dDbU8xcEVHcHJnTnJmQzdreTJkOVpsaFFMbnRVb3B3cVI2MkRwdlpqT1FCTDZHdXFrWWhKUGlXYUJSMWNyT1FJNURhX19xTlZWQ1E0RQ?oc=5"
-    },
-    {
-      "n": 10,
-      "theme": "Regulation & enforcement",
-      "text": "The Guardian reports: EFCC, NADDC, others move to curb money laundering in automobile sector",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaUlBc3NiMmFoVVBYQWxUUllsNGkyazVxeW44RDl0cW9uVmJfWHpVdW9aaWF0dGV5SFBiQ0xhUHFMTnJQTzlxVnczYlJSV1ZLWEdKZG5CZVl4NkVManMtclFKaEF1eHU5M2R5SkRqYmRfUmZfdU9vQ3VWYlRIeC1HZm51R081clVtS3paekxjNlF6M1pmVnlLYVhB?oc=5"
-    },
-    {
-      "n": 11,
-      "theme": "Public money",
-      "text": "The National Automotive Design and Development Council (NADDC), Abuja, has issued an invitation to tender and expression of interest for the execution of several projects.",
-      "outlet": "etenders.com.ng",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPS21KOHFrMjg4Qmwtb3MzZE9tLXBfb0Jvc1IzNk82OVUybS05eUNMWmRvUnVFeklKaDRxa1Z0V2xFSWE4SlVuQ1phbTRMOXZZZGl3eTJ5VTkzVVlaV0ZpbEZqRHhfY0Z0UDlHa2h2dldFUTBkVk1CYVB4WGRvT3VaRkUxUFFobEpkNG4ycHlhWlNJNnFYYkMwTWdwdURFb0puOXQxS1Yya3J6V1VUeU9NRVAzTm5oRGZISXFOSEZPUmtDS2xYLXN5c04xR0VVZDgxMVZHN3RMRkZBd1JrazAzcDJSWFZ2TkxDU3hFZnp3eHE?oc=5"
     }
   ],
-  "also_more": 0,
+  "also_more": 6,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
@@ -277,11 +348,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": ""
+    "digest": "claude"
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 0
+    "insights_dropped": 1
   },
   "site": "https://auranews.pages.dev"
 }

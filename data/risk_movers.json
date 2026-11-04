@@ -19,40 +19,58 @@
       "previous_mentions": 9
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 45.4,
-      "previous_avg": 63.5,
-      "delta": -18.1,
-      "recent_mentions": 12,
-      "previous_mentions": 13
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 28.8,
+      "previous_avg": 45.0,
+      "delta": -16.2,
+      "recent_mentions": 4,
+      "previous_mentions": 1
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 38.3,
-      "previous_avg": 23.6,
-      "delta": 14.7,
-      "recent_mentions": 6,
-      "previous_mentions": 11
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 46.0,
+      "previous_avg": 60.4,
+      "delta": -14.4,
+      "recent_mentions": 10,
+      "previous_mentions": 14
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 23.8,
-      "previous_avg": 34.2,
-      "delta": -10.4,
+      "previous_avg": 37.0,
+      "delta": -13.2,
       "recent_mentions": 8,
-      "previous_mentions": 6
+      "previous_mentions": 5
     },
     {
-      "key": "google",
-      "label": "Google",
-      "recent_avg": 10.0,
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 36.7,
+      "previous_avg": 27.1,
+      "delta": 9.6,
+      "recent_mentions": 3,
+      "previous_mentions": 14
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 30.0,
+      "previous_avg": 22.5,
+      "delta": 7.5,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "recent_avg": 13.3,
       "previous_avg": 20.0,
-      "delta": -10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "delta": -6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 3
     },
     {
       "key": "independent corrupt practices and other related offences commission",
@@ -64,13 +82,13 @@
       "previous_mentions": 3
     },
     {
-      "key": "abia state government",
-      "label": "Abia State Government",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 16.9,
+      "previous_avg": 22.2,
+      "delta": -5.3,
+      "recent_mentions": 13,
+      "previous_mentions": 16
     },
     {
       "key": "maritime administration and safety agency",
@@ -82,31 +100,13 @@
       "previous_mentions": 3
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 18.1,
-      "previous_avg": 22.5,
-      "delta": -4.4,
-      "recent_mentions": 16,
-      "previous_mentions": 16
-    },
-    {
-      "key": "national information technology development agency",
-      "label": "National Information Technology Development Agency",
-      "recent_avg": 17.5,
-      "previous_avg": 13.3,
-      "delta": 4.2,
+      "key": "delta state government",
+      "label": "Delta State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 15.0,
+      "delta": 5.0,
       "recent_mentions": 2,
-      "previous_mentions": 3
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 27.5,
-      "previous_avg": 23.3,
-      "delta": 4.2,
-      "recent_mentions": 4,
-      "previous_mentions": 3
+      "previous_mentions": 2
     },
     {
       "key": "all progressives congress",
@@ -124,25 +124,7 @@
       "previous_avg": 20.0,
       "delta": -3.3,
       "recent_mentions": 3,
-      "previous_mentions": 2
-    },
-    {
-      "key": "delta state government",
-      "label": "Delta State Government",
-      "recent_avg": 16.7,
-      "previous_avg": 20.0,
-      "delta": -3.3,
-      "recent_mentions": 3,
       "previous_mentions": 1
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 20.0,
-      "previous_avg": 16.7,
-      "delta": 3.3,
-      "recent_mentions": 5,
-      "previous_mentions": 3
     },
     {
       "key": "oyo state government",
@@ -154,13 +136,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 28.3,
-      "previous_avg": 26.7,
-      "delta": 1.6,
-      "recent_mentions": 3,
-      "previous_mentions": 3
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 17.5,
+      "previous_avg": 20.0,
+      "delta": -2.5,
+      "recent_mentions": 4,
+      "previous_mentions": 4
     },
     {
       "key": "government of",
@@ -179,8 +161,26 @@
       "delta": 0.5,
       "recent_mentions": 4,
       "previous_mentions": 3
+    },
+    {
+      "key": "adeniyi adeyemi",
+      "label": "Adeniyi Adeyemi",
+      "recent_avg": 60.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "recent_avg": 40.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-04 03:11:38"
+  "generated": "2026-11-04 15:34:05"
 }
