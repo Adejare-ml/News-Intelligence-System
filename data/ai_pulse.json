@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-03 08:55:02",
+  "generated": "2026-11-04 03:11:35",
   "models": [
     {
       "id": "LiquidAI/LFM3-1.7B",
       "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "task": "text-generation",
-      "likes": 1257,
-      "downloads": 42384
-    },
-    {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "task": "image-text-to-text",
-      "likes": 4760,
-      "downloads": 177009
+      "likes": 1409,
+      "downloads": 47817
     },
     {
       "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
       "task": "automatic-speech-recognition",
-      "likes": 700,
-      "downloads": 32439
+      "likes": 741,
+      "downloads": 38942
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "task": "image-text-to-text",
+      "likes": 4863,
+      "downloads": 187260
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1515,
-      "downloads": 5500
+      "likes": 1550,
+      "downloads": 6556
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 449,
-      "downloads": 7787
-    },
-    {
-      "id": "baidu/Unlimited-OCR-2",
-      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-      "task": "image-text-to-text",
-      "likes": 573,
-      "downloads": 147588
+      "likes": 522,
+      "downloads": 10742
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10402,
-      "downloads": 2467613
+      "likes": 10501,
+      "downloads": 2488128
+    },
+    {
+      "id": "Pika-Labs/Pika-H3-Flex",
+      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
+      "task": "image-to-video",
+      "likes": 397,
+      "downloads": 633
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 575,
-      "downloads": 63499
+      "likes": 610,
+      "downloads": 91123
     }
   ],
   "papers": [
     {
-      "title": "Lab2Sim: Turning Real-World Experiment Videos into Interactive Virtual Experiments",
-      "url": "https://huggingface.co/papers/2611.02928",
-      "upvotes": 1
-    },
-    {
-      "title": "FLAMIA: FLAsh MIcroscaling Attention for Fast and Causally Safe Training on Blackwell",
-      "url": "https://huggingface.co/papers/2611.03344",
-      "upvotes": 0
-    },
-    {
-      "title": "Measuring AI Agents as Teammates with Collaborative Intelligence",
-      "url": "https://huggingface.co/papers/2611.02633",
+      "title": "SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding",
+      "url": "https://huggingface.co/papers/2611.02501",
       "upvotes": 3
     },
     {
-      "title": "Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning",
-      "url": "https://huggingface.co/papers/2611.03602",
-      "upvotes": 17
+      "title": "ParetoSaddler: Pareto-Guided Optimization of Agent Harnesses for Quality and Cost",
+      "url": "https://huggingface.co/papers/2611.02079",
+      "upvotes": 2
     },
     {
-      "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation",
-      "url": "https://huggingface.co/papers/2611.03178",
-      "upvotes": 48
-    },
-    {
-      "title": "BYOD: Build Your Own DLM - Efficient Autoregressive-to-Diffusion Language Model Conversion",
-      "url": "https://huggingface.co/papers/2610.41574",
+      "title": "MoviEdit: Long-form Multi-Shot Video Editing Made Easy",
+      "url": "https://huggingface.co/papers/2611.02737",
       "upvotes": 5
+    },
+    {
+      "title": "SeMo3D: Unifying 3D Generation, Editing, and Completion via Selective Modeling",
+      "url": "https://huggingface.co/papers/2611.02568",
+      "upvotes": 1
+    },
+    {
+      "title": "RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild",
+      "url": "https://huggingface.co/papers/2611.02497",
+      "upvotes": 7
+    },
+    {
+      "title": "StreamDuo: A Live Commentator and a Research Agent for Unseen Games",
+      "url": "https://huggingface.co/papers/2611.01120",
+      "upvotes": 4
     }
   ]
 }

@@ -577,6 +577,12 @@
       "totals": {}
     },
     {
+      "name": "National Automotive Design and Development Council",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "National Economic Council",
       "contracts": 1,
       "undisclosed": 0,
@@ -734,8 +740,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 141,
-      "undisclosed": 85,
+      "contracts": 142,
+      "undisclosed": 86,
       "totals": {
         "NGN": 21473144090000.0,
         "USD": 47907540000.0
@@ -1272,5 +1278,5 @@
       }
     }
   ],
-  "generated": "2026-11-03 08:55:05"
+  "generated": "2026-11-04 03:11:38"
 }
