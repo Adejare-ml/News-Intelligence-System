@@ -145,6 +145,12 @@
       "risk": "Low"
     },
     {
+      "id": "6eac15c47af6",
+      "label": "NNPC",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "56cff69fc378",
       "label": "Zamfara State Internal Revenue Service",
       "type": "agency",
@@ -213,12 +219,6 @@
     {
       "id": "ee660b17d5a8",
       "label": "National Automotive Design and Development Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6eac15c47af6",
-      "label": "NNPC",
       "type": "agency",
       "risk": "Low"
     },

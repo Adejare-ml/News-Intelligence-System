@@ -1,75 +1,39 @@
 {
   "movers": [
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 38.3,
-      "previous_avg": 10.0,
-      "delta": 28.3,
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 23.3,
+      "previous_avg": 45.0,
+      "delta": -21.7,
       "recent_mentions": 3,
-      "previous_mentions": 1
+      "previous_mentions": 2
     },
     {
       "key": "national assembly",
       "label": "National Assembly",
       "recent_avg": 42.5,
-      "previous_avg": 23.0,
-      "delta": 19.5,
+      "previous_avg": 21.2,
+      "delta": 21.3,
       "recent_mentions": 2,
-      "previous_mentions": 5
+      "previous_mentions": 4
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
       "recent_avg": 41.4,
-      "previous_avg": 59.7,
-      "delta": -18.3,
+      "previous_avg": 60.9,
+      "delta": -19.5,
       "recent_mentions": 7,
-      "previous_mentions": 17
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 28.8,
-      "previous_avg": 45.0,
-      "delta": -16.2,
-      "recent_mentions": 4,
-      "previous_mentions": 1
+      "previous_mentions": 16
     },
     {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 37.5,
-      "previous_avg": 23.8,
-      "delta": 13.7,
-      "recent_mentions": 2,
-      "previous_mentions": 4
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 30.0,
-      "previous_avg": 22.5,
-      "delta": 7.5,
+      "recent_avg": 36.7,
+      "previous_avg": 21.7,
+      "delta": 15.0,
       "recent_mentions": 3,
-      "previous_mentions": 4
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 32.1,
-      "delta": -7.1,
-      "recent_mentions": 6,
-      "previous_mentions": 7
-    },
-    {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "recent_avg": 60.0,
-      "previous_avg": 53.3,
-      "delta": 6.7,
-      "recent_mentions": 2,
       "previous_mentions": 3
     },
     {
@@ -82,31 +46,40 @@
       "previous_mentions": 1
     },
     {
-      "key": "delta state government",
-      "label": "Delta State Government",
-      "recent_avg": 20.0,
-      "previous_avg": 15.0,
-      "delta": 5.0,
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 25.0,
+      "previous_avg": 31.4,
+      "delta": -6.4,
+      "recent_mentions": 3,
+      "previous_mentions": 11
+    },
+    {
+      "key": "independent national electoral commission",
+      "label": "Independent National Electoral Commission",
+      "recent_avg": 30.0,
+      "previous_avg": 24.0,
+      "delta": 6.0,
+      "recent_mentions": 2,
+      "previous_mentions": 5
+    },
+    {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "recent_avg": 15.0,
+      "previous_avg": 20.0,
+      "delta": -5.0,
       "recent_mentions": 2,
       "previous_mentions": 2
     },
     {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "recent_avg": 25.0,
-      "previous_avg": 28.8,
-      "delta": -3.8,
-      "recent_mentions": 2,
-      "previous_mentions": 4
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 17.7,
-      "previous_avg": 21.3,
-      "delta": -3.6,
-      "recent_mentions": 11,
-      "previous_mentions": 19
+      "recent_avg": 17.5,
+      "previous_avg": 21.7,
+      "delta": -4.2,
+      "recent_mentions": 8,
+      "previous_mentions": 21
     },
     {
       "key": "bola tinubu",
@@ -116,15 +89,6 @@
       "delta": -3.3,
       "recent_mentions": 3,
       "previous_mentions": 5
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "recent_avg": 16.7,
-      "previous_avg": 20.0,
-      "delta": -3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 1
     },
     {
       "key": "government of",
@@ -145,22 +109,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
       "recent_avg": 30.0,
-      "previous_avg": 29.1,
-      "delta": 0.9,
-      "recent_mentions": 4,
-      "previous_mentions": 11
-    },
-    {
-      "key": "adeniyi adeyemi",
-      "label": "Adeniyi Adeyemi",
-      "recent_avg": 60.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
+      "previous_avg": 28.5,
+      "delta": 1.5,
+      "recent_mentions": 3,
+      "previous_mentions": 10
     },
     {
       "key": "economic and financial crimes commission efcc",
@@ -179,8 +134,44 @@
       "delta": null,
       "recent_mentions": 4,
       "previous_mentions": 0
+    },
+    {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "recent_avg": 28.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "government of russia",
+      "label": "Government of Russia",
+      "recent_avg": 20.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "abia state government",
+      "label": "Abia State Government",
+      "recent_avg": 15.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "police service commission",
+      "label": "Police Service Commission",
+      "recent_avg": 10.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-05 03:36:53"
+  "generated": "2026-11-05 15:34:06"
 }

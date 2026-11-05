@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-05 03:36:51",
+  "generated": "2026-11-05 15:33:49",
   "models": [
     {
-      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "task": "automatic-speech-recognition",
-      "likes": 2259,
-      "downloads": 44939
-    },
-    {
-      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 5282,
-      "downloads": 221621
+      "likes": 802,
+      "downloads": 11658
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 629,
-      "downloads": 14613
-    },
-    {
-      "id": "LiquidAI/LFM3-1.7B",
-      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-      "task": "text-generation",
-      "likes": 1489,
-      "downloads": 54959
+      "likes": 688,
+      "downloads": 17180
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1592,
-      "downloads": 8200
-    },
-    {
-      "id": "moonshotai/Kimi-K3.1-Pro",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "task": "image-text-to-text",
-      "likes": 557,
-      "downloads": 797
+      "likes": 1605,
+      "downloads": 9592
     },
     {
       "id": "Pika-Labs/Pika-H3-Flex",
       "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
       "task": "image-to-video",
-      "likes": 431,
-      "downloads": 749
+      "likes": 452,
+      "downloads": 863
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10631,
-      "downloads": 2493402
+      "likes": 10675,
+      "downloads": 2561845
+    },
+    {
+      "id": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "task": "",
+      "likes": 680,
+      "downloads": 157157
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "task": "automatic-speech-recognition",
+      "likes": 3043,
+      "downloads": 57297
+    },
+    {
+      "id": "burner22/numbat",
+      "url": "https://huggingface.co/burner22/numbat",
+      "task": "",
+      "likes": 351,
+      "downloads": 8789
     }
   ],
   "papers": [
     {
-      "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
-      "url": "https://huggingface.co/papers/2611.02857",
-      "upvotes": 8
+      "title": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization",
+      "url": "https://huggingface.co/papers/2611.03517",
+      "upvotes": 0
     },
     {
-      "title": "SpecOPD: Branch-Parallel On-Policy Distillation for Speculative Decoding",
-      "url": "https://huggingface.co/papers/2611.02846",
-      "upvotes": 3
-    },
-    {
-      "title": "VeriSpoof: Beyond Real or Fake with One Audio LLM",
-      "url": "https://huggingface.co/papers/2611.04634",
+      "title": "Why Pay for Long Reasoning When Rewrite Do Trick? Causal Effects of Reasoning History Compaction on Future Generation and Agent Cost",
+      "url": "https://huggingface.co/papers/2611.03852",
       "upvotes": 2
     },
     {
-      "title": "Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs",
-      "url": "https://huggingface.co/papers/2611.04391",
+      "title": "DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI",
+      "url": "https://huggingface.co/papers/2611.05029",
+      "upvotes": 0
+    },
+    {
+      "title": "LiveFoley: Dynamic Real-Time Video-to-Audio Generation for Immersive Interactive Worlds",
+      "url": "https://huggingface.co/papers/2611.05988",
+      "upvotes": 2
+    },
+    {
+      "title": "UniRestorer++: Scalable Universal Image Restoration with Multi-Granularity Degradation Modeling",
+      "url": "https://huggingface.co/papers/2611.06042",
+      "upvotes": 2
+    },
+    {
+      "title": "GaussianRenderFormer: Transformer-based Rendering of 3D Gaussian Splats",
+      "url": "https://huggingface.co/papers/2611.05593",
       "upvotes": 3
-    },
-    {
-      "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
-      "url": "https://huggingface.co/papers/2610.37257",
-      "upvotes": 10
-    },
-    {
-      "title": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
-      "url": "https://huggingface.co/papers/2611.04166",
-      "upvotes": 1
     }
   ]
 }
