@@ -24,10 +24,10 @@
     },
     {
       "industry": "Banking",
-      "companies": 28,
-      "mentions": 77,
+      "companies": 29,
+      "mentions": 78,
       "risk": {
-        "Low": 22,
+        "Low": 23,
         "Medium": 6
       }
     },
@@ -52,10 +52,10 @@
     },
     {
       "industry": "Energy",
-      "companies": 11,
-      "mentions": 17,
+      "companies": 12,
+      "mentions": 18,
       "risk": {
-        "Medium": 4,
+        "Medium": 5,
         "High": 3,
         "Low": 4
       }
@@ -429,6 +429,15 @@
       }
     },
     {
+      "industry": "Mining",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 1,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Advocacy",
       "companies": 2,
       "mentions": 2,
@@ -603,6 +612,14 @@
       "mentions": 1,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Electricity",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -782,14 +799,6 @@
       }
     },
     {
-      "industry": "Mining",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Mining/Metals",
       "companies": 1,
       "mentions": 1,
@@ -950,5 +959,5 @@
       }
     }
   ],
-  "generated": "2026-11-04 15:34:05"
+  "generated": "2026-11-05 03:36:53"
 }

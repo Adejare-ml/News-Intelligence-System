@@ -10,13 +10,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 18.3,
-      "previous_avg": 38.3,
-      "delta": -20.0,
-      "recent_mentions": 3,
-      "previous_mentions": 9
+      "key": "national assembly",
+      "label": "National Assembly",
+      "recent_avg": 42.5,
+      "previous_avg": 23.0,
+      "delta": 19.5,
+      "recent_mentions": 2,
+      "previous_mentions": 5
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 41.4,
+      "previous_avg": 59.7,
+      "delta": -18.3,
+      "recent_mentions": 7,
+      "previous_mentions": 17
     },
     {
       "key": "customs service",
@@ -28,31 +37,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 46.0,
-      "previous_avg": 60.4,
-      "delta": -14.4,
-      "recent_mentions": 10,
-      "previous_mentions": 14
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 23.8,
-      "previous_avg": 37.0,
-      "delta": -13.2,
-      "recent_mentions": 8,
-      "previous_mentions": 5
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 36.7,
-      "previous_avg": 27.1,
-      "delta": 9.6,
-      "recent_mentions": 3,
-      "previous_mentions": 14
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 37.5,
+      "previous_avg": 23.8,
+      "delta": 13.7,
+      "recent_mentions": 2,
+      "previous_mentions": 4
     },
     {
       "key": "independent national electoral commission",
@@ -64,13 +55,13 @@
       "previous_mentions": 4
     },
     {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "recent_avg": 13.3,
-      "previous_avg": 20.0,
-      "delta": -6.7,
-      "recent_mentions": 3,
-      "previous_mentions": 3
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 25.0,
+      "previous_avg": 32.1,
+      "delta": -7.1,
+      "recent_mentions": 6,
+      "previous_mentions": 7
     },
     {
       "key": "independent corrupt practices and other related offences commission",
@@ -82,22 +73,13 @@
       "previous_mentions": 3
     },
     {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 16.9,
-      "previous_avg": 22.2,
-      "delta": -5.3,
-      "recent_mentions": 13,
-      "previous_mentions": 16
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 20.0,
-      "previous_avg": 25.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 3
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "recent_avg": 13.3,
+      "previous_avg": 20.0,
+      "delta": -6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 1
     },
     {
       "key": "delta state government",
@@ -118,6 +100,24 @@
       "previous_mentions": 4
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 17.7,
+      "previous_avg": 21.3,
+      "delta": -3.6,
+      "recent_mentions": 11,
+      "previous_mentions": 19
+    },
+    {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 16.7,
+      "previous_avg": 20.0,
+      "delta": -3.3,
+      "recent_mentions": 3,
+      "previous_mentions": 5
+    },
+    {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 16.7,
@@ -125,6 +125,15 @@
       "delta": -3.3,
       "recent_mentions": 3,
       "previous_mentions": 1
+    },
+    {
+      "key": "government of",
+      "label": "Government of Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 18.0,
+      "delta": -3.0,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
       "key": "oyo state government",
@@ -136,31 +145,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 17.5,
-      "previous_avg": 20.0,
-      "delta": -2.5,
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 30.0,
+      "previous_avg": 29.1,
+      "delta": 0.9,
       "recent_mentions": 4,
-      "previous_mentions": 4
-    },
-    {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 16.0,
-      "previous_avg": 17.5,
-      "delta": -1.5,
-      "recent_mentions": 5,
-      "previous_mentions": 4
-    },
-    {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 28.8,
-      "previous_avg": 28.3,
-      "delta": 0.5,
-      "recent_mentions": 4,
-      "previous_mentions": 3
+      "previous_mentions": 11
     },
     {
       "key": "adeniyi adeyemi",
@@ -179,8 +170,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "opay",
+      "label": "OPay",
+      "recent_avg": 38.8,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 4,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-04 15:34:05"
+  "generated": "2026-11-05 03:36:53"
 }
