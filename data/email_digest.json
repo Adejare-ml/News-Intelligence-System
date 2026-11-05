@@ -1,16 +1,16 @@
 {
-  "edition": "20261105-11056-preview",
-  "preview": true,
-  "built_at": "2026-11-05 03:36:53",
+  "edition": "20261105-11097",
+  "preview": false,
+  "built_at": "2026-11-05 15:34:06",
   "date": "Thursday 5 November 2026",
-  "subject": "AURA · Thu 5 Nov · Stakeholders call for forensic audit of NIMASA vessel funds",
-  "preheader": "Also: ATLAS CRITICAL MINERALS Corp Initial Statement of Beneficial Ownership · 7 stories, 0 risk alerts",
+  "subject": "AURA · Thu 5 Nov · Nigeria’s state oil company mulls IPO",
+  "preheader": "Also: FG to recover N400b unpaid charges, pledges to tackle power shortages · 11 stories, 0 risk alerts",
   "since": "Wed 4 Nov, 16:34 Lagos",
-  "through_id": 11056,
+  "through_id": 11097,
   "stats": {
-    "reports": 7,
-    "stories": 7,
-    "outlets": 5,
+    "reports": 11,
+    "stories": 11,
+    "outlets": 7,
     "risk_alerts": 0,
     "public_money": 1,
     "appointments": 1,
@@ -22,25 +22,103 @@
   ],
   "overview": [
     {
-      "text": "Stakeholders have called for a forensic audit of funds linked to vessels under the Nigerian Maritime Administration and Safety Agency (NIMASA).",
+      "text": "NNPC, Nigeria's state oil company, is considering a Lagos initial public offering that could float up to a 10% stake, its CEO told Reuters.",
       "card": 1,
+      "outlet": "Biztoc.com"
+    },
+    {
+      "text": "The federal government says it will recover N400 billion in unpaid charges and pledges to tackle power shortages.",
+      "card": 2,
+      "outlet": "The Guardian"
+    },
+    {
+      "text": "Stakeholders called for a forensic audit of NIMASA vessel funds.",
+      "card": 3,
       "outlet": "Punch"
     },
     {
-      "text": "Ossiomo Power Company has accused Chinese firm CCETC of continuing to disobey Nigerian court orders, a dispute it says threatens the electricity market in Edo State.",
-      "card": 2,
-      "outlet": "independentng"
+      "text": "The UK and Nigeria moved to mobilise private capital for three hydropower projects, per a Punch headline.",
+      "card": 4,
+      "outlet": "Punch"
     },
     {
-      "text": "Atlas Critical Minerals Corp has filed an initial statement of beneficial ownership, according to a Stock Titan notice.",
-      "card": 3,
-      "outlet": "Stock Titan"
+      "text": "Zamfara Governor Dauda Lawal approved recruitment of technical staff for the state's Internal Revenue Service.",
+      "card": 9,
+      "outlet": "Premium Times"
     }
   ],
-  "insights": [],
+  "insights": [
+    {
+      "label": "What to watch",
+      "text": "What did the CEO say about the timing and structure of the NNPC listing, given that the available text is truncated?",
+      "cards": [
+        1
+      ],
+      "outlets": [
+        "Biztoc.com"
+      ]
+    }
+  ],
   "cards": [
     {
       "n": 1,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "Nigeria’s state oil company mulls IPO",
+      "byline": "Biztoc.com · Wed 4 Nov, 15:26 Lagos",
+      "outlet": "Biztoc.com",
+      "what_happened": "NNPC, Nigeria's state oil company, is considering an initial public offering in Lagos that could float up to a 10% stake. Its CEO told Reuters the company may follow the listing with a secondary listing in London or New York. The article text is truncated, so further details on timing and structure are not available.",
+      "key_facts": [
+        "NNPC could float up to a 10% stake in a Lagos initial public offering.",
+        "NNPC's CEO told Reuters the listing could be followed by a secondary listing in London or New York."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: A partial public listing of the state oil company would bring its ownership and governance under public-market disclosure rules, which bears on transparency over public assets."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "NNPC"
+      ],
+      "source": {
+        "outlet": "Biztoc.com",
+        "url": "https://biztoc.com/x/cf08b1526c6cc4e9"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 25/100",
+      "headline": "FG to recover N400b unpaid charges, pledges to tackle power shortages",
+      "byline": "The Guardian · Thu 5 Nov, 13:15 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "The federal government says it will recover N400 billion in unpaid charges and pledges to tackle power shortages.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Federal Government of Nigeria"
+      ],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTkQtS2tEMTVuS2pzWi10aHIwNUowSHBSOXJ2bDhyS3BaUjc0S0tCQ08yb3M0c1B5SjA4bFVVV0Jwa1FlbjBJQ0JKbUVjbTQ4RDE1MVg2bDY2dUdVczNkek5xRWhCa3Q5bXJnZlozSGJJN290Q2NIcDRFMUFiYVZKbUh3c1g1eVJ4bURDdlI5UjdtZzBsUEtKN1dZT0lreG9CX1ZZSU1TUVZpNWs?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
       "theme": "Public money",
       "event_type": "Audit",
       "flags": [],
@@ -68,7 +146,33 @@
       "also_more": 0
     },
     {
-      "n": 2,
+      "n": 4,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "UK, Nigeria mobilise private capital for three hydro projects",
+      "byline": "Punch · Wed 4 Nov, 01:42 Lagos",
+      "outlet": "Punch",
+      "what_happened": "The United Kingdom and Nigeria have moved to mobilise private capital for three hydropower projects, according to a Punch Newspapers headline. The available text contains no further detail on the investors, amounts or project locations.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: Private capital mobilisation for public infrastructure can involve new corporate counterparties and ownership arrangements, but the article text provided does not give enough detail to assess this."
+      ],
+      "ownership_caveat": "",
+      "named": [],
+      "source": {
+        "outlet": "Punch",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVHdRX1E3dVBnNTdkS0MzZzhZdTFJOVVlaHZzREE1NTJLT1ZmSDd5b2lFLUQwT0RtYmtYOHg3Wng5MWpwNkFEdnVJOU1NTDB2MUJ0UVllZEx6N2pBRHc4YWZhamUyVEw2OEhkRUxndnI4OU9PdDllU0RKUndxY205SEZLR3RCNE1V?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 5,
       "theme": "Other",
       "event_type": "Other",
       "flags": [
@@ -99,109 +203,46 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 3,
-      "theme": "Ownership & capital",
-      "event_type": "PSC Change",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "ATLAS CRITICAL MINERALS Corp Initial Statement of Beneficial Ownership",
-      "byline": "Stock Titan · Wed 4 Nov, 16:00 Lagos",
-      "outlet": "Stock Titan",
-      "what_happened": "Atlas Critical Minerals Corp has filed an initial statement of beneficial ownership, according to a Stock Titan notice.",
-      "key_facts": [
-        "Atlas Critical Minerals Corp filed an Initial Statement of Beneficial Ownership, per a Stock Titan listing."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: A beneficial ownership filing signals that a party has acquired a significant stake in the company, which bears on ownership transparency; the full filing is needed to identify the controllers and their percentages."
-      ],
-      "ownership_caveat": "Ownership details as reported by Stock Titan; not verified with CAC records.",
-      "named": [
-        "ATLAS CRITICAL MINERALS Corp"
-      ],
-      "source": {
-        "outlet": "Stock Titan",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNXdaV3lCbnc2SHpjcUJHVEFZMXhWQmNVaTNWeVNSeld2bDRNVkY3ODVNLXBnTlppYXJ5cWI3TEw1eWVwWVdNbVN6UV9RSEZtUUNCNXlRMi0zTWRpSkRuT2VRRFBmeGlubE5OS0dDUmNHQlVpdkw1YUV5NzFvX19xb2tyNDdHNnBNYkNzT2ktc3NTdTVJNEFCUEFKRXlxdjhzUWd2Ujd5ZWJjOWhxRENlTnNCTVpEVDllNlViZ3JPb2F0SVNBNElHQzlwNA?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [
-        "Allegation, not a finding"
-      ],
-      "alert": false,
-      "risk": "",
-      "headline": "Methane Emissions: Ogun, FG intensify investigation in Ijebu-Ode, pledge lasting solution",
-      "byline": "Premium Times · Wed 4 Nov, 23:37 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The Ogun State Government and the Federal Government have intensified an investigation into methane emissions in Ijebu-Ode and pledged a lasting solution. Methane emissions are the focus of the government response.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: Government action on methane emissions in Ijebu-Ode may affect environmental compliance obligations for businesses operating in the area.",
-        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Ogun State Government",
-        "Federal Government of Nigeria"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSFhNcEtKMmxmb3RmR202alpsTWYyWWgwNjJxeFdieUsxaXozTkZfdi1KSTFDUnhER1Z3bDNUdWNvaWozU0Jua0dkcUo0anh6a1VJX3hMaks1b0Fablc1RHl1T2dDbW1CN1NFOWp4anBqd2Ywdml5emRwSkdWb2JYU1ROR0R6WEdXUS1CRzZ2ZDEtUC1kU2o0VG9QTGJlYkVjSEREYjNhb1BYX08zU0RoN201c2ZrZmo4S3dnYURkM2tYWW1PVnNOQXlQSGMtTm1BMHB6Yg?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "People",
-      "event_type": "Appointment",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Revenue: Gov Lawal approves recruitment of technical staff for Zamfara IRS",
-      "byline": "Premium Times · Wed 4 Nov, 22:58 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "Zamfara State Governor Dauda Lawal has approved the recruitment of technical staff for the Zamfara Internal Revenue Service (IRS). The article text provided is limited to the headline, so further details on numbers, roles or timelines are not available.",
-      "key_facts": [
-        "Governor Lawal approved recruitment of technical staff for Zamfara IRS."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Zamfara State Internal Revenue Service",
-        "Lawal"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON2VxN0pXampDOHAwV2RsMXEwcUw5cXI3LVhJRldrbjdzNnZlSlZRNWlWb0NlaDFHMVpfZnJ4X0kzeVZFeGZWdGplajNRdEJ3endZRlgydjNWeUVKeXV5N2cxQm5uQ2VqQjZNQWVMakNYVGx3aWc5MlNTTUR3U2gwVXZycE8wZ3MtZGhoODBSWjY1QWlZTlFBYVFkUDBTSFEwd3N4RjFrYmg2bmFCM0dmNXk3aTNjQXktOG50VFRNb3hVM2c?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
+      "theme": "Regulation & enforcement",
+      "text": "The Nigerian Maritime Administration and Safety Agency (NIMASA) has reacted to missing marine incident reports and threatened sanctions against those responsible for failing to submit them.",
+      "outlet": "The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYlprSEpjYXVxQ0h1aDVEZV82c2JFblpyYjk5YUZjWmdUQlhQZnZndkpEcnV5NzhOdnEwemRQQkt5Nk8yUTNWdzhYNHhFTzRTLUtyajRSc2NXM2E2ZE9HcThERG91Z09TWkZjVVpHcThYdDE2dDcycm9PalN4N0VWX2YxQVlEYkpyWVFlNDlpQWJtLWtyclI2OTUxdVlidWhXcW1V?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Ownership & capital",
+      "text": "Atlas Critical Minerals Corp has filed an initial statement of beneficial ownership, according to a Stock Titan notice.",
+      "outlet": "Stock Titan",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNXdaV3lCbnc2SHpjcUJHVEFZMXhWQmNVaTNWeVNSeld2bDRNVkY3ODVNLXBnTlppYXJ5cWI3TEw1eWVwWVdNbVN6UV9RSEZtUUNCNXlRMi0zTWRpSkRuT2VRRFBmeGlubE5OS0dDUmNHQlVpdkw1YUV5NzFvX19xb2tyNDdHNnBNYkNzT2ktc3NTdTVJNEFCUEFKRXlxdjhzUWd2Ujd5ZWJjOWhxRENlTnNCTVpEVDllNlViZ3JPb2F0SVNBNElHQzlwNA?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Other",
+      "text": "The Ogun State Government and the Federal Government have intensified an investigation into methane emissions in Ijebu-Ode and pledged a lasting solution.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSFhNcEtKMmxmb3RmR202alpsTWYyWWgwNjJxeFdieUsxaXozTkZfdi1KSTFDUnhER1Z3bDNUdWNvaWozU0Jua0dkcUo0anh6a1VJX3hMaks1b0Fablc1RHl1T2dDbW1CN1NFOWp4anBqd2Ywdml5emRwSkdWb2JYU1ROR0R6WEdXUS1CRzZ2ZDEtUC1kU2o0VG9QTGJlYkVjSEREYjNhb1BYX08zU0RoN201c2ZrZmo4S3dnYURkM2tYWW1PVnNOQXlQSGMtTm1BMHB6Yg?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "People",
+      "text": "Zamfara State Governor Dauda Lawal has approved the recruitment of technical staff for the Zamfara Internal Revenue Service (IRS).",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON2VxN0pXampDOHAwV2RsMXEwcUw5cXI3LVhJRldrbjdzNnZlSlZRNWlWb0NlaDFHMVpfZnJ4X0kzeVZFeGZWdGplajNRdEJ3endZRlgydjNWeUVKeXV5N2cxQm5uQ2VqQjZNQWVMakNYVGx3aWc5MlNTTUR3U2gwVXZycE8wZ3MtZGhoODBSWjY1QWlZTlFBYVFkUDBTSFEwd3N4RjFrYmg2bmFCM0dmNXk3aTNjQXktOG50VFRNb3hVM2c?oc=5"
+    },
+    {
+      "n": 10,
       "theme": "Other",
       "text": "FairMoney has emphasised compliance and customer trust as drivers of its digital banking growth, according to a Guardian Nigeria report.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ1hubEF3N1k0NVRUVzltNE5OMVFKamdJTWl3eGkwOV9LdDVPMVp3VEJiaDIwMGpwekp3cVVmRkVTWTdZTmd3QUtISmlUdlVMLURkN3U3SC1CdmRHWWNyRmNNdkxYRFpnMWFHc010QXRJWnNMOFZNdlhYbDBzdlpZRlR0RFRhTTJ2RFFUbi1ZTTVINThJZkVuLVc2MlU?oc=5"
     },
     {
-      "n": 7,
+      "n": 11,
       "theme": "Regulation & enforcement",
       "text": "Members of the House of Representatives have proposed fines and licence withdrawal for hospitals that delay emergency treatment.",
       "outlet": "Premium Times",
@@ -213,6 +254,14 @@
   "psc_more": 0,
   "psc_keys": [],
   "terms": [
+    {
+      "term": "IPO",
+      "meaning": "initial public offering, a company's first sale of shares to the public"
+    },
+    {
+      "term": "NNPC",
+      "meaning": "Nigerian National Petroleum Company"
+    },
     {
       "term": "NIMASA",
       "meaning": "Nigerian Maritime Administration and Safety Agency"
@@ -226,11 +275,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": ""
+    "digest": "claude"
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 0
+    "insights_dropped": 1
   },
   "site": "https://auranews.pages.dev"
 }

@@ -1,24 +1,17 @@
 {
-  "new_companies": [
-    "ATLAS CRITICAL MINERALS Corp",
-    "CCETC",
-    "FairMoney",
-    "Ossiomo Power Company"
-  ],
-  "new_people": [
-    "Lawal"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 4,
-    "new_people": 1,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-05 03:36:48"
+  "generated": "2026-11-05 15:33:47"
 }

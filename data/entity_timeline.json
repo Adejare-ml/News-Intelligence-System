@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 113,
+      "total_mentions": 114,
       "points": [
         {
           "week": "2026-09-07",
@@ -55,8 +55,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 12.5,
+          "mentions": 3,
+          "avg_risk": 16.7,
           "max_risk": 25
         }
       ]
@@ -553,7 +553,7 @@
     {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 17,
+      "total_mentions": 18,
       "points": [
         {
           "week": "2026-09-14",
@@ -593,8 +593,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 55.0,
+          "mentions": 2,
+          "avg_risk": 45.0,
           "max_risk": 55
         }
       ]
@@ -1491,6 +1491,31 @@
       ]
     },
     {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 28.3,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "nasir el rufai",
       "label": "Nasir El-Rufai",
       "total_mentions": 6,
@@ -1936,31 +1961,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 35
         }
       ]
     },
@@ -6235,5 +6235,5 @@
       ]
     }
   ],
-  "generated": "2026-11-05 03:36:53"
+  "generated": "2026-11-05 15:34:06"
 }
