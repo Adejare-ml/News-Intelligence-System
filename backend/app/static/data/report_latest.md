@@ -1,34 +1,37 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-04 15:33:37 (UTC)
-**Run Window:** 2026-11-04, all runs to 15:33 (run 2 of the day)
+**Generated on:** 2026-11-05 03:36:18 (UTC)
+**Run Window:** 2026-11-05, all runs to 03:36 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 23
-- **High Risk Signals:** 1
-- **Appointments Logged:** 2
-- **Procurement Awards:** 1
+- **Total Articles Processed:** 7
+- **High Risk Signals:** 0
+- **Appointments Logged:** 1
+- **Procurement Awards:** 0
 
 ---
 
-# Executive Summary: Nigerian Corporate Transparency and MDA Monitor
-**Report date:** 4 November 2026 | **Coverage:** all articles published on 4 November 2026 up to 15:33 (the day's coverage so far, run 2)
+# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Monitoring
+
+**Report date:** 5 November 2026
+**Coverage:** All articles published on 5 November 2026 up to 03:36 (run 1 of the day)
 
 ### Key Developments
-- **NNPC** is reportedly considering a 10% equity sale and listings in London and New York. This would change the shareholding structure of the state oil company. The source is headline-only, so scope and terms are unconfirmed. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiekFVX3lxTE5rSVpzYWpCWjNEUEVGdDFFOU14cHY5M1hTc0xZeHZOVGxrZFVnMzJlVXlMcFNrUnRWRlZEZmNKYXFONnJHcTk4YjIxUGNGc2d6SWRldU90OVBjMEt4Z0hIazFKYVJyS0xmLWRULTJoaUFOWHdmb2ZGS3pB?oc=5))  
-- **ASUU** has threatened industrial action over FCT Minister Nyesom Wike's allocation of University of Abuja land. This raises questions about how public assets are assigned. The terms of the allocation are not given. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxNci1TU09QblBnb3A3YmZxSXhNZ1RaemZLTUJ0RV83TGtwUTVRTUwtVHl1Sl9NVDRiOGJqdWJiVzlmc18ycExYYjBuRGpLN2tpcWZHT1Q3d2kwM1QwV3EzVVpLbWJHem1mYVM5MTZycXEzcnVPU0g5QjlWQmFHSERjZzRGdWg3NDctRDJLMjdKaVNhUzU2OHk5dmtqeHFuQ2VSMEFvRGxudElMdEx0aTFNS1RqN0M1SVNvdlJXZmdaM09mc2RaaHAw?oc=5))  
-- **Bank of Industry and IFC** signed a $50 million loan to expand MSME financing. It is a financing arrangement, not an ownership change. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiywFBVV95cUxQVnNod21PS1VzWmRjcHJGdmRWTU1qODRkSWlpUGg1bW9wMEJZcmtGR1llam5vRHVPaVp6MnNobVJtWlR3SUJrd3gwMXNnY0JlZ29MZXNqTjFGU1Yyd21aay02ckJVZTJRaGY3TW4wd2FuSVFlQ3VadXlrQlVLMGpzc3J3ZS1YX1ZBT2F1NE9qbm1yMFc3R0RrTE56VFhmNVRTcjFVRkxtUVMtM0dIVXRaTlZIMlRxYnlpc1VzUWdIbFpQR3o2czBDWXFITQ?oc=5))  
-- **Regulatory and enforcement items:** NIMASA threatened sanctions over missing marine incident reports, NSITF seeks stronger enforcement of workers' compensation law, and Customs reported 195 intercepted smuggling attempts worth N6.19b. Most of these items are headline-only. ([Vanguard News](https://news.google.com/rss/articles/CBMiogFBVV95cUxNUGwzd0doa1JEMEhMVGZlTnFLQ0FSc3E4WlhFZVhSTWt3WmlVd1VlenhiSDh0b29YUWJQWktuZkZmRXZUTUxNTXlBcWJjcXZSZmVoRk9idnhsdGI0ekM2UjI3MFNTWVJKaVVvZ1E5RVVjSUMzWHV0ZkR5ZkFsalJuT0RSdTVETVBtUTNwTjk1dHBCeXZIRVZPLTcyYWgyRjEtWVHSAacBQVVfeXFMTlhYQWNqMGYxWlFhVGlRQ3l3eF80aWlpakpTbjR1bl9rZVE0SGdEalJ0N1dKT3BiNG9hVDJsQkV0Y2g3ajY0WXhCZWJ2LURNdmU4MS1ZUU9GUmI2UEN1T1FKTENPdUhrWHRNMkZaWUdlcUQwSXdUSW5DeFQ3TmVFLXZvNjJra0RVMjhZeGptdm1kMU9xMC1oUnQ3eHdyS1l0V3ZqODVEMDg?oc=5))  
-- **Other items:** Ingentia Energies is targeting 30,000 bopd by 2030, the FG pledged to recover N400m in unpaid charges, and NiDCOM raised concern over 57 Nigerian bank jobs in The Gambia. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMioAFBVV95cUxNS18wUFVLWlBwVnZuUGN2WGlYa1pYNVZPdG53Tm05R21nOENCZzdUN0VhMzJibHFsYVVVdHZVcFo5UHJqb2VNTEZSeFVGX0NXMFVSazFDZXhzSzhCTVlnOFRQb1lZNXpDN3ItYVJFYkJxaEhkaDlyNFBGSEFWQWNCZkF5SVZzY0dVNTQ3Mk9TelFVVGVTekZkM0VIWDJic1BC?oc=5))  
+
+- **Ossiomo Power Company** accuses Chinese firm CCETC of continuing to disobey Nigerian court orders, which it says threatens Edo State's electricity market. The full article is paywalled, so the claim is unverified. ([independentng](https://independent.ng/edo-state-electricity-market-under-threat-as-chinese-firm-ccetc-continues-to-disobey-nigerian-court-orders-ossiomo-power-company/))  
+- **Ogun State and the Federal Government** have intensified their investigation into methane emissions in Ijebu-Ode and pledged a lasting solution. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSFhNcEtKMmxmb3RmR202alpsTWYyWWgwNjJxeFdieUsxaXozTkZfdi1KSTFDUnhER1Z3bDNUdWNvaWozU0Jua0dkcUo0anh6a1VJX3hMaks1b0Fablc1RHl1T2dDbW1CN1NFOWp4anBqd2Ywdml5emRwSkdWb2JYU1ROR0R6WEdXUS1CRzZ2ZDEtUC1kU2o0VG9QTGJlYkVjSEREYjNhb1BYX08zU0RoN201c2ZrZmo4S3dnYURkM2tYWW1PVnNOQXlQSGMtTm1BMHB6Yg?oc=5))  
+- **House of Representatives** members proposed fines and licence withdrawal for hospitals that delay emergency treatment. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbWJBYWJDU21GbTFMc0RGOGZVN1A0Y3dFMUtTTW5mLUN5eVYyMHJwdkFzNm0xVFdqcW9XZ3QxalAwT3FFYVBJcm1BNmlsMzdqdnptRnpseFo3MHNsTTdwSlU2bzhqSzYxRWNEU3JFVTJjVUFRYUk4SS0yVzJLSlM3cUlMV3I5RHVkN1NPY0hnMWRwaTRSSTJoSzI4UE1QU0VzRXg5bHc5dGZseTJYc0hsUlpDaWJucG1lUnpmalo3OXpYZHVFUHA2Tk1XTE5mZTBmYVNhRldkazd1d3d3?oc=5))  
+- **FairMoney** is stressing compliance and customer trust as drivers of its digital banking growth. The article gives no specifics. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ1hubEF3N1k0NVRUVzltNE5OMVFKamdJTWl3eGkwOV9LdDVPMVp3VEJiaDIwMGpwekp3cVVmRkVTWTdZTmd3QUtISmlUdlVMLURkN3U3SC1CdmRHWWNyRmNNdkxYRFpnMWFHc010QXRJWnNMOFZNdlhYbDBzdlpZRlR0RFRhTTJ2RFFUbi1ZTTVINThJZkVuLVc2MlU?oc=5))  
 
 ### High Risk Alerts
 No high-risk items today.
 
 ### Beneficial Ownership & PSC Disclosures
-The data contains no PSC disclosures: no persons with significant control, percentages, PEP flags or pending filings were reported.
+
+- **Atlas Critical Minerals Corp** filed an initial beneficial ownership statement, but the holders, holdings, and whether control is direct or indirect are not stated. The full filing is needed to identify the controllers. Whether the filing is complete or still pending cannot be confirmed from the data. ([Stock Titan](https://news.google.com/rss/articles/CBMiywFBVV95cUxQNXdaV3lCbnc2SHpjcUJHVEFZMXhWQmNVaTNWeVNSeld2bDRNVkY3ODVNLXBnTlppYXJ5cWI3TEw1eWVwWVdNbVN6UV9RSEZtUUNCNXlRMi0zTWRpSkRuT2VRRFBmeGlubE5OS0dDUmNHQlVpdkw1YUV5NzFvX19xb2tyNDdHNnBNYkNzT2ktc3NTdTVJNEFCUEFKRXlxdjhzUWd2Ujd5ZWJjOWhxRENlTnNCTVpEVDllNlViZ3JPb2F0SVNBNElHQzlwNA?oc=5))  
 
 ### Procurement & Board Changes
-- **MTN Nigeria** appointed five directors effective 1 December 2026. Ibrahim Dikko and Boye Olusanya are listed as independent non-executive directors. Fabian Ajogwu (SAN), Imoni Akpofure and Lwazi Bam are listed as non-executive directors. The statement was signed by company secretary Uto Ukpanah. Bam joined MTN Group as Group Chief Risk Officer on 1 June 2026. No shareholding change was reported. ([Business Post Nigeria](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQMnZHRVVEcTY3Zjl2QjMwQ0ZrNWpXVmdhYmJZaEFmYkc2RVF2aEJ5QlprTTcxa2w4SUZINDhZMXQ2MGFhUm5DdFlLanB4aDB2aHRCZHY4OEN0REVoX2hfZkhnakMtODhvMkxOemdHX0hxd3gtT3VJdGpwdnhBZW41YVlMbWxubFVQM3pqaDFXMXFBZjF3YUpDSVJzOHpKVFNnalBxb1ZVNWk?oc=5))  
-- Premium Times separately reports that the appointees include a former Etisalat chief executive. Its summary is headline-only. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxOaHVtbzFvcmtEZmgyY3RGdEU4YzJBUmlvU0k5dVo0eDhRUmoxTzU4VXV3eUV3RXR6Y1lsbjBNaU9yVUdjREhSUnVCNjZlUk4tRHJCMHhfSklTaEJZQTZWYUlOYU9STklULVVLVXI0UGdvYkExa3VvQUNxdlFfUjlxWGpTd0g4ZDZPb042X1g0V25vbmpxWWhrLUJXRWcta3Q0YktNejloQWRXbGFtc3hKMkx0S1hvRmVaQUxqUU9FeEx2em84WV84?oc=5))  
+
+- **Zamfara State:** Governor Dauda Lawal approved the recruitment of technical staff for the Zamfara Internal Revenue Service. Numbers, roles, and timelines were not provided. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiwwFBVV95cUxON2VxN0pXampDOHAwV2RsMXEwcUw5cXI3LVhJRldrbjdzNnZlSlZRNWlWb0NlaDFHMVpfZnJ4X0kzeVZFeGZWdGplajNRdEJ3endZRlgydjNWeUVKeXV5N2cxQm5uQ2VqQjZNQWVMakNYVGx3aWc5MlNTTUR3U2gwVXZycE8wZ3MtZGhoODBSWjY1QWlZTlFBYVFkUDBTSFEwd3N4RjFrYmg2bmFCM0dmNXk3aTNjQXktOG50VFRNb3hVM2c?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

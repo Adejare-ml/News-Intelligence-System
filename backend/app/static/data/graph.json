@@ -121,6 +121,36 @@
       "risk": "Critical"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7dc08a8ebfaa",
+      "label": "Ogun State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "56cff69fc378",
+      "label": "Zamfara State Internal Revenue Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "2d8b68a63cae",
       "label": "Nigerian Senate",
       "type": "agency",
@@ -147,12 +177,6 @@
     {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,27 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "360a9de78182",
-      "label": "International Finance Corporation (IFC)",
-      "type": "agency",
+      "id": "a54268f37a2e",
+      "label": "Lawal",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "dfb1365b34ec",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission (NUPRC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e782294db59c",
-      "label": "Nigeria Social Insurance Trust Fund (NSITF)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "07e47c2db94f",
-      "label": "NIMASA",
-      "type": "agency",
+      "id": "de44b55175fc",
+      "label": "Zamfara State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -421,12 +433,6 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "651d26051cf1",
       "label": "Isa Pantami",
       "type": "person",
@@ -441,18 +447,6 @@
     {
       "id": "4124c8b1ec79",
       "label": "Asset Management Corporation of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "9c6b88ddb885",
-      "label": "Doris Anite-Uzoka",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "2e36790d4395",
-      "label": "Ministry of Budget and Economic Planning",
       "type": "company",
       "risk": "Low"
     },
@@ -681,6 +675,12 @@
   ],
   "edges": [
     {
+      "id": "5407642df18c",
+      "from": "a54268f37a2e",
+      "to": "de44b55175fc",
+      "label": "Appointed as Governor, Zamfara State"
+    },
+    {
       "id": "fd1604102e20",
       "from": "58c58351d674",
       "to": "4c7e8211e98f",
@@ -811,12 +811,6 @@
       "from": "bed201f6abaa",
       "to": "4124c8b1ec79",
       "label": "Appointed as Former Managing Director"
-    },
-    {
-      "id": "03dcb2c9fbff",
-      "from": "9c6b88ddb885",
-      "to": "2e36790d4395",
-      "label": "Appointed as Minister of State for Budget and Economic Planning"
     },
     {
       "id": "34c826682817",

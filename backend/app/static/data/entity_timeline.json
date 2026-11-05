@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 112,
+      "total_mentions": 113,
       "points": [
         {
           "week": "2026-09-07",
@@ -55,9 +55,9 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 0.0,
-          "max_risk": 0
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 25
         }
       ]
     },
@@ -302,7 +302,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 30,
+      "total_mentions": 31,
       "points": [
         {
           "week": "2026-09-14",
@@ -342,8 +342,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 32.5,
+          "mentions": 3,
+          "avg_risk": 25.0,
           "max_risk": 45
         }
       ]
@@ -551,46 +551,9 @@
       ]
     },
     {
-      "key": "national agency for food and drug administration and control",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "total_mentions": 16,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 4,
-          "avg_risk": 32.5,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 34.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 30.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-14",
@@ -627,13 +590,19 @@
           "mentions": 3,
           "avg_risk": 18.3,
           "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 55.0,
+          "max_risk": 55
         }
       ]
     },
     {
       "key": "ogun state government",
       "label": "Ogun State Government",
-      "total_mentions": 16,
+      "total_mentions": 17,
       "points": [
         {
           "week": "2026-09-14",
@@ -670,6 +639,49 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
+      "key": "national agency for food and drug administration and control",
+      "label": "National Agency for Food and Drug Administration and Control",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 4,
+          "avg_risk": 32.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 30.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -5638,6 +5650,19 @@
       ]
     },
     {
+      "key": "atlas critical minerals corp",
+      "label": "ATLAS CRITICAL MINERALS Corp",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "auaton",
       "label": "AUATON",
       "total_mentions": 1,
@@ -6208,20 +6233,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "allied peoples movement",
-      "label": "Allied Peoples Movement",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        }
-      ]
     }
   ],
-  "generated": "2026-11-04 15:34:05"
+  "generated": "2026-11-05 03:36:53"
 }
