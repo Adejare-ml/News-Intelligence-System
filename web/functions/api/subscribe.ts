@@ -28,7 +28,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
 
   // The sign-up form marks itself with choices=1. Such a post with no boxes
   // ticked is a mistake, not an old client that should default to Business.
-  if (String(body.choices ?? "") === "1" && body.categories === undefined) body.categories = "none";
+  if (String(body.choices ?? "") === "1" && body.categories === undefined && body.category === undefined) body.categories = "none";
   const parsed = parsePrefs(body);
   if ("error" in parsed) return json({ error: parsed.error }, 400);
   const { prefs } = parsed;
@@ -52,7 +52,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   }
   const site = env.SITE_URL || new URL(request.url).origin;
   if (existing?.status === "confirmed") {
-    await send(env, alreadySubscribedMail(site, email, token, existing));
+    await send(env, alreadySubscribedMail(site, email, token, existing, existing.paused));
   } else {
     // A pending row confirms what its owner first chose.
     await send(env, confirmationMail(site, email, token, existing?.status === "pending" ? existing : prefs));

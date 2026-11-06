@@ -74,6 +74,15 @@ def weekly_totals(report_rows: List[Dict[str, Any]],
     return totals
 
 
+_MISSING = {"", "none", "null", "n/a", "na", "nan", "-", "—"}
+
+
+def _text(value: Any) -> str:
+    """A cell as text, with missing values ("None", null, N/A) as ""."""
+    text = str(value if value is not None else "").strip()
+    return "" if text.lower() in _MISSING else text
+
+
 def week_procurement(procurement_rows: List[Dict[str, Any]],
                      window: Dict[str, str],
                      cap: int = 8) -> List[Dict[str, str]]:
@@ -82,10 +91,10 @@ def week_procurement(procurement_rows: List[Dict[str, Any]],
         day = _day((row or {}).get("Date"))
         if window["start"] <= day <= window["end"]:
             out.append({
-                "agency": str(row.get("Agency", "")).strip(),
-                "contractor": str(row.get("Contractor", "")).strip(),
-                "amount": str(row.get("Amount", "")).strip(),
-                "project": str(row.get("Project", "")).strip(),
+                "agency": _text(row.get("Agency")),
+                "contractor": _text(row.get("Contractor")),
+                "amount": _text(row.get("Amount")),
+                "project": _text(row.get("Project")),
                 "date": day,
             })
     out.sort(key=lambda r: r["date"], reverse=True)
@@ -151,7 +160,9 @@ def compose_weekly_wrap(report_rows: List[Dict[str, Any]],
         lines.append("## Procurement recorded this week")
         for c in contracts:
             amount = c["amount"] or "amount undisclosed"
-            lines.append(f"- {c['date']} — {c['agency']} → {c['contractor']}"
+            who = c["agency"] or "Agency not named"
+            to = f" → {c['contractor']}" if c["contractor"] else ""
+            lines.append(f"- {c['date']} — {who}{to}"
                          f" ({amount}){': ' + c['project'] if c['project'] else ''}")
         lines.append("")
 

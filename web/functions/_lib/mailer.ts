@@ -120,9 +120,10 @@ export function confirmationMail(site: string, email: string, token: string, pre
 }
 
 /** For an address that is already confirmed: no new sign-up, just their own link to change it. */
-export function alreadySubscribedMail(site: string, email: string, token: string, prefs: Prefs): Mail {
+export function alreadySubscribedMail(site: string, email: string, token: string, prefs: Prefs, paused = false): Mail {
   const manage = `${site}/api/preferences?token=${token}`;
-  const chosen = describePrefs(prefs);
+  // A paused reader gets nothing right now, so say so rather than describe a brief they don't receive.
+  const chosen = paused ? `${describePrefs(prefs)}, paused for now (the link below starts it again)` : describePrefs(prefs);
   const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   return {
     to: email,
@@ -131,7 +132,7 @@ export function alreadySubscribedMail(site: string, email: string, token: string
     html: `<div style="font-family:Georgia,serif;max-width:520px;margin:auto;padding:24px;color:#1b1a17">
 <p style="letter-spacing:.14em;font:600 12px system-ui;color:#9c7420">AURA · MORNING BRIEF</p>
 <h1 style="font-weight:500">You’re already subscribed.</h1>
-<p style="font:16px/1.6 system-ui">Someone (probably you) asked to sign this address up. You already get: <strong>${esc(chosen)}</strong>.</p>
+<p style="font:16px/1.6 system-ui">Someone (probably you) asked to sign this address up. You’re already subscribed: <strong>${esc(chosen)}</strong>.</p>
 <p><a href="${manage}" style="display:inline-block;background:#1e3fae;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font:600 15px system-ui">Change what I get</a></p>
 <p style="font:13px/1.6 system-ui;color:#6b6558">Didn't ask? You can ignore this email.</p></div>`,
   };
@@ -351,8 +352,9 @@ export async function sendBriefs(env: Env, jobs: BriefJob[]): Promise<{ sent: nu
     }
     const result = await smtpSend(smtpTransport.open(env), gmailLogin(env), envelopes);
     const over = total - envelopes.length;
+    // Keep the SMTP error (a failed login, a refusal) alongside the cap note.
     return over > 0
-      ? { ...result, failed: result.failed + over, error: `Gmail daily cap: ${over} not sent` }
+      ? { ...result, failed: result.failed + over, error: [result.error, `Gmail daily cap: ${over} not sent`].filter(Boolean).join("; ") }
       : result;
   }
   return sendBatch(

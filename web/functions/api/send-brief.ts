@@ -111,6 +111,20 @@ export function composeEmail(base: string, sections: string[]): string {
   return base.replace(SECTIONS_SLOT, () => sections.join("\n"));
 }
 
+/** Replaces the text between <!--aura:NAME--> and <!--/aura:NAME--> (escaped by the caller). */
+export function replaceMarked(html: string, name: string, text: string): string {
+  const start = `<!--aura:${name}-->`;
+  const end = `<!--/aura:${name}-->`;
+  const a = html.indexOf(start);
+  const b = html.indexOf(end);
+  if (a === -1 || b === -1 || b < a) return html;
+  return html.slice(0, a + start.length) + text + html.slice(b);
+}
+
+const WEEK_INTRO = "The week in business from AURA’s own records";
+const WEEK_SOURCE = "The week in business is compiled automatically from AURA’s pipeline records; ownership items are press reports, not CAC records.";
+const HEADLINE_SOURCE = "Headlines are collected automatically from Google News; each links to the outlet that published it.";
+
 export interface Group {
   key: string;
   prefs: Prefs;
@@ -201,7 +215,12 @@ export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { 
   const week = wantsBusiness && prefs.frequency === "weekly" && t.week ? t.week : null;
   const withBusiness = wantsBusiness && !week && businessFresh && t.business;
   if (!withBusiness && !week && !sections.length) return null;
-  const html = composeEmail(withBusiness ? t.business!.html : t.shell.html, week ? [week.rows, ...sections] : sections);
+  let base = withBusiness ? t.business!.html : t.shell.html;
+  if (week) {
+    base = replaceMarked(base, "intro", sections.length ? `${WEEK_INTRO}, then the headlines you chose.` : `${WEEK_INTRO}.`);
+    base = replaceMarked(base, "source", sections.length ? `${WEEK_SOURCE} ${HEADLINE_SOURCE}` : WEEK_SOURCE);
+  }
+  const html = composeEmail(base, week ? [week.rows, ...sections] : sections);
   const labels = [...(week ? ["The week in business"] : []), ...chosen.map(categoryLabel)];
   const subject = withBusiness ? t.business!.subject : `${t.shell.subject} · ${listLabels(labels)}`;
   return { subject, html, text: htmlToText(html) };

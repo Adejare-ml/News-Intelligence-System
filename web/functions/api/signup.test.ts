@@ -166,3 +166,25 @@ test("the form with no boxes ticked is an error, not a Business sign-up", async 
   assert.equal(res.status, 400);
   assert.equal(await subscriberStore(db).byEmail("nojs@x.co"), null);
 });
+
+test("a paused reader's already-subscribed email says it is paused", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "z@x.co", token: T("f"), paused: 1 });
+  const mails: { subject: string; html: string; text: string }[] = [];
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = (async (_u: RequestInfo | URL, init?: RequestInit) => { mails.push(JSON.parse(String(init?.body))); return new Response("{}"); }) as typeof fetch;
+  try {
+    const env: Env = { DB: db, EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test", SITE_URL: SITE };
+    await subscribe({ request: post("/api/subscribe", { email: "z@x.co", categories: ["sports"], choices: "1" }), env });
+    assert.match(mails[0].html, /paused for now/);
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+});
+
+test("the category alias still works alongside the form marker", async () => {
+  const db = sqliteD1();
+  const res = await subscribe({ request: post("/api/subscribe", { email: "e@x.co", choices: "1", category: "sports" }), env: { DB: db } });
+  assert.equal(res.status, 200);
+  assert.deepEqual((await subscriberStore(db).byEmail("e@x.co"))!.categories, ["sports"]);
+});

@@ -18,7 +18,7 @@ const MONDAY = new Date("2026-11-09T06:10:00Z");
 const BUSINESS = `<!doctype html><html><head><meta name="aura-edition" content="ed-1106" /><meta name="aura-subject" content="AURA Morning Brief · Friday 6 November" /></head>
 <body><table><tr><td>BUSINESS STORIES</td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
 const SHELL = `<!doctype html><html><head><meta name="aura-subject" content="AURA Morning Brief · Friday 6 November" /></head>
-<body><table><tr><td>MASTHEAD</td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
+<body><table><tr><td>MASTHEAD <!--aura:intro-->The headlines you chose<!--/aura:intro--></td></tr><tr><td><!--aura:source-->Google News<!--/aura:source--></td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
 const section = (name: string, generated = "2026-11-06 05:00:00", empty: string[] = []) => {
   const region = (id: string, label: string) =>
     `<!--region:${id}-->${empty.includes(id) ? "<!--empty--><tr><td>none</td></tr>" : `<tr><td>${name} ${label}</td></tr>`}<!--/region:${id}-->`;
@@ -200,6 +200,8 @@ test("weekly Business readers get the week in business on Mondays", async () => 
   const w = got["wbiz@x.co"];
   assert.match(w.html, /MASTHEAD[\s\S]*WEEK IN BUSINESS[\s\S]*politics NG/);
   assert.doesNotMatch(w.html, /BUSINESS STORIES/, "the week, not just Monday's brief");
+  assert.match(w.html, /AURA’s own records, then the headlines you chose/);
+  assert.match(w.html, /pipeline records[^<]*Google News/);
   assert.equal(w.subject, "AURA Morning Brief · Friday 6 November · The week in business and Politics");
   assert.match(got["biz@x.co"].html, /BUSINESS STORIES/, "daily readers still get the daily brief");
 });
@@ -210,6 +212,16 @@ test("weekly Business readers fall back to Monday's brief when the wrap is stale
   addSubscriber(e.DB, { email: "wbiz@x.co", token: T("7"), categories: "business", frequency: "weekly" });
   await call(e);
   assert.match(byRecipient()["wbiz@x.co"].html, /BUSINESS STORIES/);
+});
+
+test("a week-only email says where it comes from, not Google News", async () => {
+  mock.timers.setTime(MONDAY.getTime());
+  const e = env({ "/brief/email/section/business-week/": WEEK() });
+  addSubscriber(e.DB, { email: "wonly@x.co", token: T("6"), categories: "business", frequency: "weekly" });
+  await call(e);
+  const html = byRecipient()["wonly@x.co"].html;
+  assert.match(html, /AURA’s own records\./);
+  assert.doesNotMatch(html, /Google News|headlines you chose/);
 });
 
 test("gmail: one session and one daily cap across every mix", async () => {
@@ -229,6 +241,7 @@ test("gmail: one session and one daily cap across every mix", async () => {
     assert.equal(body.sent, 450);
     assert.equal(body.failed, body.recipients - 450);
     assert.match(body.error, /Gmail daily cap/);
+    assert.doesNotMatch(body.error, /^;/);
   } finally {
     smtpTransport.open = realOpen;
   }
