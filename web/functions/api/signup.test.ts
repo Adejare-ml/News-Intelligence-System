@@ -112,7 +112,9 @@ test("preferences refuse bad and unknown tokens, and unsubscribed readers", asyn
 });
 
 test("preferencesForm escapes the token", () => {
-  assert.doesNotMatch(preferencesForm('"><script>', { categories: ["business"], region: "nigeria", frequency: "daily" }, false), /<script>/);
+  const html = preferencesForm('"><ScRiPt>x', { categories: ["business"], region: "nigeria", frequency: "daily" }, false);
+  assert.ok(!html.toLowerCase().includes("<script"), "no raw script tag in any case");
+  assert.ok(html.includes("&quot;&gt;&lt;ScRiPt&gt;x"), "the token is escaped");
 });
 
 test("unsubscribe still works", async () => {
