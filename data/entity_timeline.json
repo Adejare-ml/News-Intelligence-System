@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 114,
+      "total_mentions": 115,
       "points": [
         {
           "week": "2026-09-07",
@@ -55,8 +55,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 16.7,
+          "mentions": 4,
+          "avg_risk": 16.2,
           "max_risk": 25
         }
       ]
@@ -64,7 +64,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 94,
+      "total_mentions": 95,
       "points": [
         {
           "week": "2026-09-14",
@@ -110,8 +110,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
+          "mentions": 2,
+          "avg_risk": 12.5,
           "max_risk": 15
         }
       ]
@@ -119,7 +119,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 88,
+      "total_mentions": 89,
       "points": [
         {
           "week": "2026-09-07",
@@ -171,7 +171,7 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 3,
+          "mentions": 4,
           "avg_risk": 55.0,
           "max_risk": 70
         }
@@ -1254,6 +1254,37 @@
       ]
     },
     {
+      "key": "bureau of public procurement",
+      "label": "Bureau of Public Procurement",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 3,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "total_mentions": 7,
@@ -1347,6 +1378,37 @@
       ]
     },
     {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "atiku abubakar",
       "label": "Atiku Abubakar",
       "total_mentions": 6,
@@ -1380,31 +1442,6 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "bureau of public procurement",
-      "label": "Bureau of Public Procurement",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 3,
-          "avg_risk": 25.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1680,31 +1717,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 40
         }
       ]
     },
@@ -2040,6 +2052,25 @@
       ]
     },
     {
+      "key": "opay",
+      "label": "OPay",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 38.8,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
       "key": "olayemi cardoso",
       "label": "Olayemi Cardoso",
       "total_mentions": 5,
@@ -2224,6 +2255,31 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "bank of industry",
+      "label": "Bank of Industry",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
         }
       ]
     },
@@ -2535,6 +2591,31 @@
       ]
     },
     {
+      "key": "national identity management commission",
+      "label": "National Identity Management Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 30
+        }
+      ]
+    },
+    {
       "key": "national insurance commission",
       "label": "National Insurance Commission",
       "total_mentions": 4,
@@ -2741,19 +2822,6 @@
       ]
     },
     {
-      "key": "opay",
-      "label": "OPay",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 38.8,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "office of the national security adviser",
       "label": "Office of the National Security Adviser",
       "total_mentions": 4,
@@ -2933,31 +3001,6 @@
           "mentions": 3,
           "avg_risk": 68.3,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "bank of industry",
-      "label": "Bank of Industry",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -3449,31 +3492,6 @@
       ]
     },
     {
-      "key": "national identity management commission",
-      "label": "National Identity Management Commission",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "national universities commission",
       "label": "National Universities Commission",
       "total_mentions": 3,
@@ -3678,6 +3696,25 @@
           "mentions": 2,
           "avg_risk": 52.5,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "shell",
+      "label": "Shell",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 52.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -5277,19 +5314,6 @@
       ]
     },
     {
-      "key": "shell",
-      "label": "Shell",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 52.5,
-          "max_risk": 65
-        }
-      ]
-    },
-    {
       "key": "sirika",
       "label": "Sirika",
       "total_mentions": 2,
@@ -5767,6 +5791,19 @@
       ]
     },
     {
+      "key": "abu dhabi national oil company",
+      "label": "Abu Dhabi National Oil Company",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "abuja continental",
       "label": "Abuja Continental",
       "total_mentions": 1,
@@ -6014,6 +6051,19 @@
       ]
     },
     {
+      "key": "agence fran\u00e7aise de d\u00e9veloppement",
+      "label": "Agence Fran\u00e7aise de D\u00e9veloppement",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "agip energy and natural resources",
       "label": "Agip Energy and Natural Resources Ltd",
       "total_mentions": 1,
@@ -6207,33 +6257,7 @@
           "max_risk": 40
         }
       ]
-    },
-    {
-      "key": "all progressives movement",
-      "label": "All Progressives Movement",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "all progressives alliance",
-      "label": "All Progressives alliance",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-05 15:34:06"
+  "generated": "2026-11-06 03:31:53"
 }

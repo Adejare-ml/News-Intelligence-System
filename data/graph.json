@@ -121,8 +121,50 @@
       "risk": "Critical"
     },
     {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "95368915b67a",
+      "label": "Bureau of Public Procurement",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e79817c87e24",
+      "label": "National Identity Management Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "13d618290120",
+      "label": "Federal Ministry of Information and National Orientation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "93ae4b6cdd46",
+      "label": "Apapa Ports",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0f08a8914675",
+      "label": "Agence Fran\u00e7aise de D\u00e9veloppement",
       "type": "agency",
       "risk": "Low"
     },
@@ -163,20 +205,8 @@
       "risk": "Low"
     },
     {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "7301d85363bc",
       "label": "Financial Reporting Council of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -211,33 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "e5a1ebedf8b7",
-      "label": "Nigerians in Diaspora Commission",
-      "type": "agency",
+      "id": "c0bb480c6bd1",
+      "label": "Bashir Bayo Ojulari",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "ee660b17d5a8",
-      "label": "National Automotive Design and Development Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e94d960651d4",
-      "label": "Development Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a8bfa117a3e5",
-      "label": "National Youth Service Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a44ffb8120e9",
-      "label": "Nigerian Automotive Design and Development Council (NADDC)",
-      "type": "agency",
+      "id": "6605d2b161d9",
+      "label": "Unnamed ex-banker",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -433,24 +445,6 @@
       "risk": "Low"
     },
     {
-      "id": "651d26051cf1",
-      "label": "Isa Pantami",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "bed201f6abaa",
-      "label": "Ahmed Kuru",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "4124c8b1ec79",
-      "label": "Asset Management Corporation of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -583,6 +577,12 @@
       "risk": "Medium"
     },
     {
+      "id": "ee660b17d5a8",
+      "label": "National Automotive Design and Development Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
@@ -674,6 +674,12 @@
     }
   ],
   "edges": [
+    {
+      "id": "4e2bff94f21e",
+      "from": "c0bb480c6bd1",
+      "to": "f38bd75574f6",
+      "label": "Appointed as Group Chief Executive Officer, NNPC Limited"
+    },
     {
       "id": "5407642df18c",
       "from": "a54268f37a2e",
@@ -799,18 +805,6 @@
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President"
-    },
-    {
-      "id": "9d4cc80459a3",
-      "from": "651d26051cf1",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former Minister"
-    },
-    {
-      "id": "016043421744",
-      "from": "bed201f6abaa",
-      "to": "4124c8b1ec79",
-      "label": "Appointed as Former Managing Director"
     },
     {
       "id": "34c826682817",

@@ -1001,8 +1001,8 @@
   },
   {
     "Company": "Shell Plc",
-    "Mention Count": 5,
-    "Last Seen": "2026-10-14 12:44",
+    "Mention Count": 6,
+    "Last Seen": "2026-11-06 03:28",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 99,
+    "Mention Count": 100,
     "Last Seen": "2026-10-29 2:18",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
@@ -8193,8 +8193,8 @@
   },
   {
     "Company": "TotalEnergies",
-    "Mention Count": 6,
-    "Last Seen": "2026-10-14 12:44",
+    "Mention Count": 7,
+    "Last Seen": "2026-11-06 03:28",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": "2026-09-19 11:48"
@@ -9841,9 +9841,9 @@
   },
   {
     "Company": "OPay",
-    "Mention Count": 4,
-    "Last Seen": "2026-10-31 20:27",
-    "Industry": "Telecoms/Fintech",
+    "Mention Count": 5,
+    "Last Seen": "2026-11-06 03:30",
+    "Industry": "Fintech / Payments",
     "Risk Level": "Medium",
     "First Seen": "2026-10-31 02:10"
   },
@@ -10054,5 +10054,29 @@
     "Industry": "Energy",
     "Risk Level": "Medium",
     "First Seen": "2026-11-05 03:35"
+  },
+  {
+    "Company": "Yoyei",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-06 03:27",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-06 03:27"
+  },
+  {
+    "Company": "Eni",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-06 03:28",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-06 03:28"
+  },
+  {
+    "Company": "Abu Dhabi National Oil Company",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-06 03:28",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-06 03:28"
   }
 ]
