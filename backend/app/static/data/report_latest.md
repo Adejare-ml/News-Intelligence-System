@@ -1,33 +1,34 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-05 15:33:26 (UTC)
-**Run Window:** 2026-11-05, all runs to 15:33 (run 2 of the day)
+**Generated on:** 2026-11-06 03:31:14 (UTC)
+**Run Window:** 2026-11-06, all runs to 03:31 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 11
+- **Total Articles Processed:** 8
 - **High Risk Signals:** 0
-- **Appointments Logged:** 1
+- **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
 # Executive Intelligence Summary: Nigerian Corporate Transparency and MDAs
-**Report date:** 5 November 2026
-**Coverage:** All articles published on 5 November 2026 up to 15:33 (run 2 of the day). Most items were headline-only or truncated, so detail is limited.
+**Report date:** 6 November 2026 | **Coverage:** all articles published on 6 November 2026 up to 03:31
 
 ### Key Developments
-- **NNPC IPO under consideration:** The state oil company is weighing a Lagos initial public offering of up to a 10% stake. Its CEO told Reuters a secondary listing in London or New York could follow. This is the most significant item for public-asset transparency, though timing and structure are unknown. ([Biztoc.com](https://biztoc.com/x/cf08b1526c6cc4e9))  
-- **NIMASA sanctions threat:** The agency has reacted to missing marine incident reports and threatened sanctions. The parties and the number of reports affected are not stated. ([The Eagle Online](https://news.google.com/rss/articles/CBMiowFBVV95cUxQYlprSEpjYXVxQ0h1aDVEZV82c2JFblpyYjk5YUZjWmdUQlhQZnZndkpEcnV5NzhOdnEwemRQQkt5Nk8yUTNWdzhYNHhFTzRTLUtyajRSc2NXM2E2ZE9HcThERG91Z09TWkZjVVpHcThYdDE2dDcycm9PalN4N0VWX2YxQVlEYkpyWVFlNDlpQWJtLWtyclI2OTUxdVlidWhXcW1V?oc=5))  
-- **N400bn recovery pledge:** The Federal Government says it will recover N400 billion in unpaid charges and tackle power shortages. No mechanism or timeline is given. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTkQtS2tEMTVuS2pzWi10aHIwNUowSHBSOXJ2bDhyS3BaUjc0S0tCQ08yb3M0c1B5SjA4bFVVV0Jwa1FlbjBJQ0JKbUVjbTQ4RDE1MVg2bDY2dUdVczNkek5xRWhCa3Q5bXJnZlozSGJJN290Q2NIcDRFMUFiYVZKbUh3c1g1eVJ4bURDdlI5UjdtZzBsUEtKN1dZT0lreG9CX1ZZSU1TUVZpNWs?oc=5))  
-- **FairMoney compliance messaging:** The digital bank stresses compliance and customer trust as growth drivers. This is a low-risk, headline-level item. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ1hubEF3N1k0NVRUVzltNE5OMVFKamdJTWl3eGkwOV9LdDVPMVp3VEJiaDIwMGpwekp3cVVmRkVTWTdZTmd3QUtISmlUdlVMLURkN3U3SC1CdmRHWWNyRmNNdkxYRFpnMWFHc010QXRJWnNMOFZNdlhYbDBzdlpZRlR0RFRhTTJ2RFFUbi1ZTTVINThJZkVuLVc2MlU?oc=5))  
+- **$196m NIN funds unspent, FG seeks extension**. The Federal Government has requested a further 12-month extension for Nigeria's $430 million digital identity project. ([The Punch](https://punchng.com/196m-nin-funds-unspent-fg-seeks-extension/))  
+- **OPay listing paused:** OPay has reportedly paused listing plans amid Chinese regulatory scrutiny. Only a paywall notice was available, so details are unconfirmed. ([businessday](https://businessday.ng/news/article/chinese-regulatory-scrutiny-forces-nigeria-payments-firm-opay-to-pause-listing-plans/))  
+- **Yoyei seals $115 million pact to deploy 5,000 EVs in Nigeria**. Yoyei has signed a $115 million agreement to deploy 5,000 electric vehicles in Nigeria. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVWNXaDNYdDZRcDlsT1RmeV9LT3FhWTJFZXU1aVlQRU84S0FTYUFtRnlEUnpidV9zRkVRbko4dEtacTlXVnJESjhJWU04bGRNakVRcmNSVTlsWUV5a1ZOcmJRc1pJcXItWTNwSTRNWlExT0RrallocEdTaWNDTHM3TmVRczdxbjZOSnE4d0FZZXdXNFlSdVlsVG1aUF9ZNDVxZmt5RmN1dmRoMTA?oc=5))  
+- **Development finance:** AFD and the Bank of Industry signed a $30m credit line and a €500,000 grant for the creative industry. ([Vanguard News](https://news.google.com/rss/articles/CBMitgFBVV95cUxNczZ5aWdVaEtVVV9McEtRUk9SMFRod0dQTmRWVEZFYXQ5RWlNWFF4c1JmUmUxTk0zNzRvSl9OYVNmaFgwdGtSYWJUQWlyX0JyWHJqNmJSWXpFanJ5Q3pabk4zQ0tvb3hEY1BGMzNfa3lFNEh5aTJNd3NOUzN5Vmp0Y3BUdDRua2t3ZHozLVVZSzVYSDB3ZGZ5TjBxbzNxUWlHc0FNakdYTDFnQkR3TkdXTk5jcWRYQdIBuwFBVV95cUxPZE1LUTF5SVhzUkQ4UWpOSGs1amJPcUJpY0lJR3dmdXNsRlFscmsxdEZwT2wxV1hVb0R2RFVpRzhpSGs0SmdLVE9ZU2ZLblZDSTFQck02QXdpOHd1OFNMMGo5UmdXNHlacXJ1WXRmTVp5YmtkRTdIUFh1aTF4V04zRTZwT1ZjZWZpUEZ1WkFJNjhCb0lzX21CQzEtNkFtbm1ReTNiUnBZTWJzamRZaGhQU2pCbGxpdzRQaEww?oc=5))  
+- **Port backlog:** The FG has cleared 44 of more than 300 stranded power equipment containers at Apapa. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiowFBVV95cUxQMHU0SVVyLW5PcjFoSFpqUDI4Z2RYZG55Vk5tTmNJaHJGV2lpRzJrQUlod1NiZndjQ1NWd0Y0QzlnUktDZndPOGFsYml5UWNQVy1USHJjZ2VDelkzWmhYeFZ1VkdqSG1wdXhUVlpwX09vNjZLQ3Z2eVUwTVhsM2dKSnYxRmRGTlFfRGx4dVBacDdEQVdvdVBHZFhnRm1Qc0hlc05v?oc=5))  
 
 ### High Risk Alerts
 No high-risk items today.
 
 ### Beneficial Ownership & PSC Disclosures
-The data contains no PSC disclosures, so no holders, percentages, PEP flags or pending filings can be reported.
+Nothing to report here today.
 
 ### Procurement & Board Changes
-- The only related signal is the UK–Nigeria hydro financing effort. Its counterparties are unnamed, so ownership arrangements cannot be assessed. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVHdRX1E3dVBnNTdkS0MzZzhZdTFJOVVlaHZzREE1NTJLT1ZmSDd5b2lFLUQwT0RtYmtYOHg3Wng5MWpwNkFEdnVJOU1NTDB2MUJ0UVllZEx6N2pBRHc4YWZhamUyVEw2OEhkRUxndnI4OU9PdDllU0RKUndxY205SEZLR3RCNE1V?oc=5))  
+- **Procurement:** The Bureau of Public Procurement (BPP) called for a stronger procurement and project management partnership to support industrial transformation. Only the headline was available, with no contract details. ([Federal Ministry of Information and National Orientation](https://news.google.com/rss/articles/CBMiywFBVV95cUxPWjdwc1N0LWFvVm4tQzBXcVktVW94R2RVZFNJQmZUdVhFQ3BGcU9SSHpkZzRiV0NrLUpTX2U3eFdzTTJtWEpsV19UU1owXzMwbUtzR2czSHJ4V21XUlp6aTZ5LWxIUjVnYlVaNUR0UUJlUUx3MmlybWFVNDFwV3RPX3M0WHlnWGFsdHRDS0pZdVFZeXZUa2dPYlRFVmMtLURxUUNadk40QkhrS0ZmRDFnY1U1TXVMdzhYU0NCcGRzT194R0R6aUZ2UVNFQQ?oc=5))  
+- **REFORMS: Oil output has grown by 600,000bpd since PIA — NNPC**. NNPC Limited says Nigeria's crude oil output has risen by 600,000 barrels per day, from about 1.2 million bpd to 1.8 million bpd, since the Petroleum Industry Act reforms. ([Vanguard News](https://news.google.com/rss/articles/CBMimAFBVV95cUxPVGhjS1BXLW95bzlPTllOMWFBN2lIN0NMSXpTWnlPWXB0UGtVM0dwV0dCMVBjT2dyU3hhd2N2V0g4dTdxenBURzV5c1B5Q3ZEbkdieU5GLWM0c0FJeEp1UTB4VW5Pa0tWOWVPOGRiQmFoVmJRekY5bldsMDI4T3B6d2Z2Z3kxdG1acTFHUTluamYtZVdJRVZaT9IBngFBVV95cUxQcHVfaDJFT0RLRld6TFdZdFIxZG9TMnNEVGNYT0liaFRjQkMyZWU4UUM1RkFNdWVyN1EzUVlDYzN2dGdYaXVUMHE2akd4SmhRNUpYcEx5cFBwalBfb3g4cnM4U19KX1FyNnpaR2RicEE5RkV3ZFJLNTh1WTgzc0xZQkNqMl9iS1R4bmlreWlXMzlsVzNPQ1lyczRmeWlWZw?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

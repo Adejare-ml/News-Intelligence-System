@@ -493,6 +493,11 @@
       "weight": 3
     },
     {
+      "a": "national petroleum company",
+      "b": "totalenergies",
+      "weight": 3
+    },
+    {
       "a": "national youth service corps",
       "b": "university of nsukka",
       "weight": 3
@@ -828,11 +833,6 @@
       "weight": 2
     },
     {
-      "a": "national petroleum company",
-      "b": "totalenergies",
-      "weight": 2
-    },
-    {
       "a": "national youth service corps",
       "b": "nnaji",
       "weight": 2
@@ -843,5 +843,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-05 15:34:06"
+  "generated": "2026-11-06 03:31:53"
 }

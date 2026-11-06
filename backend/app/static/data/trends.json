@@ -1,22 +1,28 @@
 {
   "window_days": 7,
-  "recent_articles": 127,
-  "previous_articles": 216,
+  "recent_articles": 114,
+  "previous_articles": 223,
   "rising": [
     {
       "term": "firm",
-      "recent": 4,
+      "recent": 5,
       "previous": 0,
-      "change": 4
+      "change": 5
     },
     {
       "term": "opay",
+      "recent": 5,
+      "previous": 0,
+      "change": 5
+    },
+    {
+      "term": "power",
       "recent": 4,
       "previous": 0,
       "change": 4
     },
     {
-      "term": "rises",
+      "term": "sign",
       "recent": 4,
       "previous": 0,
       "change": 4
@@ -26,12 +32,6 @@
       "recent": 4,
       "previous": 0,
       "change": 4
-    },
-    {
-      "term": "oil",
-      "recent": 8,
-      "previous": 5,
-      "change": 3
     },
     {
       "term": "illegal",
@@ -46,19 +46,19 @@
       "change": 3
     },
     {
+      "term": "chinese",
+      "recent": 4,
+      "previous": 1,
+      "change": 3
+    },
+    {
       "term": "pledges",
       "recent": 4,
       "previous": 1,
       "change": 3
     },
     {
-      "term": "efcc uncovers",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
-    },
-    {
-      "term": "enrolment",
+      "term": "bpd",
       "recent": 3,
       "previous": 0,
       "change": 3
@@ -67,24 +67,30 @@
   "falling": [
     {
       "term": "court",
-      "recent": 3,
+      "recent": 2,
       "previous": 18,
-      "change": -15
+      "change": -16
     },
     {
       "term": "tinubu",
-      "recent": 8,
-      "previous": 19,
-      "change": -11
+      "recent": 6,
+      "previous": 21,
+      "change": -15
     },
     {
       "term": "reps",
-      "recent": 4,
-      "previous": 15,
-      "change": -11
+      "recent": 3,
+      "previous": 16,
+      "change": -13
     },
     {
       "term": "approves",
+      "recent": 2,
+      "previous": 10,
+      "change": -8
+    },
+    {
+      "term": "cbn",
       "recent": 2,
       "previous": 10,
       "change": -8
@@ -96,13 +102,19 @@
       "change": -8
     },
     {
+      "term": "police",
+      "recent": 0,
+      "previous": 8,
+      "change": -8
+    },
+    {
       "term": "digital",
       "recent": 1,
       "previous": 8,
       "change": -7
     },
     {
-      "term": "trial",
+      "term": "official",
       "recent": 0,
       "previous": 7,
       "change": -7
@@ -112,34 +124,22 @@
       "recent": 0,
       "previous": 7,
       "change": -7
-    },
-    {
-      "term": "cbn",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
-    },
-    {
-      "term": "alleged",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 89,
-      "previous": 151
+      "recent": 77,
+      "previous": 156
     },
     {
       "category": "Company",
-      "recent": 27,
-      "previous": 27
+      "recent": 28,
+      "previous": 29
     },
     {
       "category": "Legal",
-      "recent": 10,
+      "recent": 8,
       "previous": 35
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-05 15:33:50"
+  "generated": "2026-11-06 03:31:50"
 }

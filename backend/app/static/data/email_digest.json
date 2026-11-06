@@ -1,172 +1,174 @@
 {
-  "edition": "20261105-11097",
-  "preview": false,
-  "built_at": "2026-11-05 15:34:06",
-  "date": "Thursday 5 November 2026",
-  "subject": "AURA · Thu 5 Nov · Nigeria’s state oil company mulls IPO",
-  "preheader": "Also: FG to recover N400b unpaid charges, pledges to tackle power shortages · 11 stories, 0 risk alerts",
-  "since": "Wed 4 Nov, 16:34 Lagos",
-  "through_id": 11097,
+  "edition": "20261106-11138-preview",
+  "preview": true,
+  "built_at": "2026-11-06 03:31:53",
+  "date": "Friday 6 November 2026",
+  "subject": "AURA · Fri 6 Nov · REFORMS: Oil output has grown by 600,000bpd since PIA — NNPC",
+  "preheader": "Also: $196m NIN funds unspent, FG seeks extension · 8 stories, 0 risk alerts",
+  "since": "Thu 5 Nov, 16:34 Lagos",
+  "through_id": 11138,
   "stats": {
-    "reports": 11,
-    "stories": 11,
-    "outlets": 7,
+    "reports": 8,
+    "stories": 8,
+    "outlets": 6,
     "risk_alerts": 0,
-    "public_money": 1,
-    "appointments": 1,
+    "public_money": 0,
+    "appointments": 0,
     "ownership": 0
   },
   "nothing_in": [
     "risk alerts",
+    "public-money decisions",
+    "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "NNPC, Nigeria's state oil company, is considering a Lagos initial public offering that could float up to a 10% stake, its CEO told Reuters.",
+      "text": "NNPC Limited says Nigeria's crude oil output has risen by 600,000 barrels per day, from about 1.2 million bpd to 1.8 million bpd, since the Petroleum Industry Act reforms.",
       "card": 1,
-      "outlet": "Biztoc.com"
+      "outlet": "Vanguard"
     },
     {
-      "text": "The federal government says it will recover N400 billion in unpaid charges and pledges to tackle power shortages.",
+      "text": "The Federal Government has requested a further 12-month extension for Nigeria's $430 million digital identity project.",
       "card": 2,
-      "outlet": "The Guardian"
+      "outlet": "Punch"
     },
     {
-      "text": "Stakeholders called for a forensic audit of NIMASA vessel funds.",
+      "text": "Yoyei has signed a $115 million agreement to deploy 5,000 electric vehicles in Nigeria.",
       "card": 3,
-      "outlet": "Punch"
-    },
-    {
-      "text": "The UK and Nigeria moved to mobilise private capital for three hydropower projects, per a Punch headline.",
-      "card": 4,
-      "outlet": "Punch"
-    },
-    {
-      "text": "Zamfara Governor Dauda Lawal approved recruitment of technical staff for the state's Internal Revenue Service.",
-      "card": 9,
-      "outlet": "Premium Times"
+      "outlet": "The Guardian"
     }
   ],
-  "insights": [
-    {
-      "label": "What to watch",
-      "text": "What did the CEO say about the timing and structure of the NNPC listing, given that the available text is truncated?",
-      "cards": [
-        1
-      ],
-      "outlets": [
-        "Biztoc.com"
-      ]
-    }
-  ],
+  "insights": [],
   "cards": [
     {
       "n": 1,
       "theme": "Other",
       "event_type": "Other",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "Nigeria’s state oil company mulls IPO",
-      "byline": "Biztoc.com · Wed 4 Nov, 15:26 Lagos",
-      "outlet": "Biztoc.com",
-      "what_happened": "NNPC, Nigeria's state oil company, is considering an initial public offering in Lagos that could float up to a 10% stake. Its CEO told Reuters the company may follow the listing with a secondary listing in London or New York. The article text is truncated, so further details on timing and structure are not available.",
-      "key_facts": [
-        "NNPC could float up to a 10% stake in a Lagos initial public offering.",
-        "NNPC's CEO told Reuters the listing could be followed by a secondary listing in London or New York."
+      "flags": [
+        "Developing"
       ],
-      "timeline": [],
+      "alert": false,
+      "risk": "",
+      "headline": "REFORMS: Oil output has grown by 600,000bpd since PIA — NNPC",
+      "byline": "Vanguard · Wed 4 Nov, 06:48 Lagos · latest of 2 reports from 2 outlets",
+      "outlet": "Vanguard",
+      "what_happened": "NNPC Limited says Nigeria's crude oil output has risen by 600,000 barrels per day, from about 1.2 million bpd to 1.8 million bpd, since the Petroleum Industry Act reforms. Group CEO Bashir Bayo Ojulari made the disclosure at the 2026 ADIPEC conference in Abu Dhabi and set a target of two million bpd by 2027.",
+      "key_facts": [],
+      "timeline": [
+        "Tue 3 Nov, 15:19 · Punch: “Oil reforms raised Nigeria’s output by 600,000bpd — NNPC”",
+        "Wed 4 Nov, 06:48 · Vanguard: “REFORMS: Oil output has grown by 600,000bpd since PIA — NNPC” (lead report)"
+      ],
       "headline_only": false,
       "analysis": [
-        "Why it matters: A partial public listing of the state oil company would bring its ownership and governance under public-market disclosure rules, which bears on transparency over public assets."
+        "Why it matters: The production claims and investment figures are management statements from NNPC's CEO and are not independently verified in the article. They bear on public expectations for oil revenue and on the company's reported performance under the PIA."
       ],
       "ownership_caveat": "",
       "named": [
-        "NNPC"
+        "Nigerian National Petroleum Company Limited",
+        "TotalEnergies",
+        "Shell",
+        "Eni",
+        "Abu Dhabi National Oil Company"
       ],
       "source": {
-        "outlet": "Biztoc.com",
-        "url": "https://biztoc.com/x/cf08b1526c6cc4e9"
+        "outlet": "Vanguard",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVGhjS1BXLW95bzlPTllOMWFBN2lIN0NMSXpTWnlPWXB0UGtVM0dwV0dCMVBjT2dyU3hhd2N2V0g4dTdxenBURzV5c1B5Q3ZEbkdieU5GLWM0c0FJeEp1UTB4VW5Pa0tWOWVPOGRiQmFoVmJRekY5bldsMDI4T3B6d2Z2Z3kxdG1acTFHUTluamYtZVdJRVZaT9IBngFBVV95cUxQcHVfaDJFT0RLRld6TFdZdFIxZG9TMnNEVGNYT0liaFRjQkMyZWU4UUM1RkFNdWVyN1EzUVlDYzN2dGdYaXVUMHE2akd4SmhRNUpYcEx5cFBwalBfb3g4cnM4U19KX1FyNnpaR2RicEE5RkV3ZFJLNTh1WTgzc0xZQkNqMl9iS1R4bmlreWlXMzlsVzNPQ1lyczRmeWlWZw?oc=5"
       },
-      "also_reported": [],
+      "also_reported": [
+        {
+          "outlet": "Punch",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EOW9DdkU3V3ZjSVZxRkx4WUlTcHpvN21ZcFpwS0V0U0xkdEQ5MEQxVjBLM3AwV19TWmt1aWhjb0xJTi1PSXVqWGpwZXJFYk4zRWIyVE1wZTRfRVJYMzlKOVJ6S2xETmZpR1I3OEJnRllBUmI5SUVyTFRhNHg3dw?oc=5"
+        }
+      ],
       "also_more": 0
     },
     {
       "n": 2,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
+      "theme": "Other",
+      "event_type": "Other",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 25/100",
-      "headline": "FG to recover N400b unpaid charges, pledges to tackle power shortages",
-      "byline": "The Guardian · Thu 5 Nov, 13:15 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "The federal government says it will recover N400 billion in unpaid charges and pledges to tackle power shortages.",
-      "key_facts": [],
+      "risk": "AURA risk rating: Medium · 30/100",
+      "headline": "$196m NIN funds unspent, FG seeks extension",
+      "byline": "Punch · Thu 5 Nov, 01:26 Lagos",
+      "outlet": "Punch",
+      "what_happened": "The Federal Government has requested a further 12-month extension for Nigeria's $430 million digital identity project. About $196 million of its financing remains undisbursed, according to the report.",
+      "key_facts": [
+        "The Federal Government has requested another 12-month extension of Nigeria's $430 million digital identity project.",
+        "Approximately $196m of the project's financing remains undisbursed."
+      ],
       "timeline": [],
-      "headline_only": true,
-      "analysis": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: Unspent funds on a large national digital identity project affect how public financing is deployed and how long delivery timelines run. The article text provided is truncated, so further detail on the causes of delay is not available."
+      ],
       "ownership_caveat": "",
       "named": [
-        "Federal Government of Nigeria"
+        "National Identity Management Commission"
       ],
       "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTkQtS2tEMTVuS2pzWi10aHIwNUowSHBSOXJ2bDhyS3BaUjc0S0tCQ08yb3M0c1B5SjA4bFVVV0Jwa1FlbjBJQ0JKbUVjbTQ4RDE1MVg2bDY2dUdVczNkek5xRWhCa3Q5bXJnZlozSGJJN290Q2NIcDRFMUFiYVZKbUh3c1g1eVJ4bURDdlI5UjdtZzBsUEtKN1dZT0lreG9CX1ZZSU1TUVZpNWs?oc=5"
+        "outlet": "Punch",
+        "url": "https://punchng.com/196m-nin-funds-unspent-fg-seeks-extension/"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 3,
-      "theme": "Public money",
-      "event_type": "Audit",
+      "theme": "Other",
+      "event_type": "Other",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 55/100",
-      "headline": "Stakeholders call for forensic audit of NIMASA vessel funds",
-      "byline": "Punch · Thu 5 Nov, 00:28 Lagos",
-      "outlet": "Punch",
-      "what_happened": "Stakeholders have called for a forensic audit of funds linked to vessels under the Nigerian Maritime Administration and Safety Agency (NIMASA). The article text provided is limited to the headline, so the scope of the funds and the basis for the call are not detailed.",
-      "key_facts": [
-        "Stakeholders called for a forensic audit of NIMASA vessel funds."
-      ],
+      "risk": "",
+      "headline": "Yoyei seals $115 million pact to deploy 5,000 EVs in Nigeria",
+      "byline": "The Guardian · Fri 6 Nov, 04:09 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "Yoyei has signed a $115 million agreement to deploy 5,000 electric vehicles in Nigeria.",
+      "key_facts": [],
       "timeline": [],
       "headline_only": true,
       "analysis": [],
       "ownership_caveat": "",
       "named": [
-        "Nigerian Maritime Administration and Safety Agency"
+        "Yoyei"
       ],
       "source": {
-        "outlet": "Punch",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQU8td2Zfc3ZWRUhQaEtKUjNteUZHTTNSZGRNVFJfY1NtZXZGQVFXYWxSOXB6UmY3MERJU1JXVUtQS2o0d3ZXV3lKVzVjUWdGRnU0VENjY2hBT0g5U0NzQ0x4VGtwNWloOGJtVmI5OWprX3hQeGQwbzNVRWFlS1AyeFdCa1lYak0?oc=5"
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVWNXaDNYdDZRcDlsT1RmeV9LT3FhWTJFZXU1aVlQRU84S0FTYUFtRnlEUnpidV9zRkVRbko4dEtacTlXVnJESjhJWU04bGRNakVRcmNSVTlsWUV5a1ZOcmJRc1pJcXItWTNwSTRNWlExT0RrallocEdTaWNDTHM3TmVRczdxbjZOSnE4d0FZZXdXNFlSdVlsVG1aUF9ZNDVxZmt5RmN1dmRoMTA?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 4,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [],
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Allegation, not a finding"
+      ],
       "alert": false,
-      "risk": "",
-      "headline": "UK, Nigeria mobilise private capital for three hydro projects",
-      "byline": "Punch · Wed 4 Nov, 01:42 Lagos",
-      "outlet": "Punch",
-      "what_happened": "The United Kingdom and Nigeria have moved to mobilise private capital for three hydropower projects, according to a Punch Newspapers headline. The available text contains no further detail on the investors, amounts or project locations.",
-      "key_facts": [],
+      "risk": "AURA risk rating: Medium · 55/100",
+      "headline": "EFCC investigates ex-banker over alleged N515 million diversion",
+      "byline": "Premium Times · Thu 5 Nov, 20:41 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Economic and Financial Crimes Commission (EFCC) is investigating a former banker over an alleged diversion of N515 million.",
+      "key_facts": [
+        "EFCC is investigating an ex-banker over an alleged N515 million diversion."
+      ],
       "timeline": [],
       "headline_only": true,
       "analysis": [
-        "Why it matters: Private capital mobilisation for public infrastructure can involve new corporate counterparties and ownership arrangements, but the article text provided does not give enough detail to assess this."
+        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
       ],
       "ownership_caveat": "",
-      "named": [],
+      "named": [
+        "Economic and Financial Crimes Commission",
+        "Unnamed ex-banker"
+      ],
       "source": {
-        "outlet": "Punch",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVHdRX1E3dVBnNTdkS0MzZzhZdTFJOVVlaHZzREE1NTJLT1ZmSDd5b2lFLUQwT0RtYmtYOHg3Wng5MWpwNkFEdnVJOU1NTDB2MUJ0UVllZEx6N2pBRHc4YWZhamUyVEw2OEhkRUxndnI4OU9PdDllU0RKUndxY205SEZLR3RCNE1V?oc=5"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQclR4ZHRFYUtkZmltXzdFbUYxZk1kSGZmM2hYcXVjQ2VZQmZhUkFseGxWZmZ1OUVlZy1ac1hhcUJlVGJ4U1hRLWJXeVRWTFJuNTR0ZjBiUDhBcE9zUHJwbUxKN1dHQXpHT1ZmVmpBUXJUYjY3VDNjME91dFlTUnNtSU1fTlktaWJYRFhkeWUtQk52MlcwMXVFSVl4N1pqbkxIY1RjNmR1S1U1ck5YZWRpU01zU3BJZFA1WHQ3RA?oc=5"
       },
       "also_reported": [],
       "also_more": 0
@@ -175,31 +177,26 @@
       "n": 5,
       "theme": "Other",
       "event_type": "Other",
-      "flags": [
-        "Allegation, not a finding"
-      ],
+      "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 45/100",
-      "headline": "Edo State Electricity Market Under Threat As Chinese Firm, CCETC, Continues To Disobey Nigerian Court Orders – Ossiomo Power Company",
-      "byline": "independentng · Wed 4 Nov, 16:29 Lagos",
-      "outlet": "independentng",
-      "what_happened": "Ossiomo Power Company has accused Chinese firm CCETC of continuing to disobey Nigerian court orders, a dispute it says threatens the electricity market in Edo State.",
-      "key_facts": [
-        "Ossiomo Power Company says CCETC continues to disobey Nigerian court orders."
-      ],
+      "risk": "",
+      "headline": "Chinese regulatory scrutiny forces Nigeria payments firm OPay to pause listing plans",
+      "byline": "BusinessDay · Thu 5 Nov, 16:23 Lagos",
+      "outlet": "BusinessDay",
+      "what_happened": "Nigerian payments firm OPay has reportedly paused its listing plans amid Chinese regulatory scrutiny. The available text is limited to a paywall notice, so no further details of the decision are confirmed.",
+      "key_facts": [],
       "timeline": [],
       "headline_only": true,
       "analysis": [
-        "As reported by independentng; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+        "Why it matters: A paused listing can affect how a company's ownership and governance are disclosed to investors and regulators. The article text provided contains no further detail beyond the headline."
       ],
       "ownership_caveat": "",
       "named": [
-        "Ossiomo Power Company",
-        "CCETC"
+        "OPay"
       ],
       "source": {
-        "outlet": "independentng",
-        "url": "https://independent.ng/edo-state-electricity-market-under-threat-as-chinese-firm-ccetc-continues-to-disobey-nigerian-court-orders-ossiomo-power-company/"
+        "outlet": "BusinessDay",
+        "url": "https://businessday.ng/news/article/chinese-regulatory-scrutiny-forces-nigeria-payments-firm-opay-to-pause-listing-plans/"
       },
       "also_reported": [],
       "also_more": 0
@@ -208,45 +205,24 @@
   "also": [
     {
       "n": 6,
-      "theme": "Regulation & enforcement",
-      "text": "The Nigerian Maritime Administration and Safety Agency (NIMASA) has reacted to missing marine incident reports and threatened sanctions against those responsible for failing to submit them.",
-      "outlet": "The Eagle Online",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYlprSEpjYXVxQ0h1aDVEZV82c2JFblpyYjk5YUZjWmdUQlhQZnZndkpEcnV5NzhOdnEwemRQQkt5Nk8yUTNWdzhYNHhFTzRTLUtyajRSc2NXM2E2ZE9HcThERG91Z09TWkZjVVpHcThYdDE2dDcycm9PalN4N0VWX2YxQVlEYkpyWVFlNDlpQWJtLWtyclI2OTUxdVlidWhXcW1V?oc=5"
+      "theme": "Other",
+      "text": "The French Development Agency (AFD) and the Bank of Industry (BoI) have signed a $30 million credit line and a €500,000 grant to support Nigeria's creative industry.",
+      "outlet": "Vanguard",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNczZ5aWdVaEtVVV9McEtRUk9SMFRod0dQTmRWVEZFYXQ5RWlNWFF4c1JmUmUxTk0zNzRvSl9OYVNmaFgwdGtSYWJUQWlyX0JyWHJqNmJSWXpFanJ5Q3pabk4zQ0tvb3hEY1BGMzNfa3lFNEh5aTJNd3NOUzN5Vmp0Y3BUdDRua2t3ZHozLVVZSzVYSDB3ZGZ5TjBxbzNxUWlHc0FNakdYTDFnQkR3TkdXTk5jcWRYQdIBuwFBVV95cUxPZE1LUTF5SVhzUkQ4UWpOSGs1amJPcUJpY0lJR3dmdXNsRlFscmsxdEZwT2wxV1hVb0R2RFVpRzhpSGs0SmdLVE9ZU2ZLblZDSTFQck02QXdpOHd1OFNMMGo5UmdXNHlacXJ1WXRmTVp5YmtkRTdIUFh1aTF4V04zRTZwT1ZjZWZpUEZ1WkFJNjhCb0lzX21CQzEtNkFtbm1ReTNiUnBZTWJzamRZaGhQU2pCbGxpdzRQaEww?oc=5"
     },
     {
       "n": 7,
-      "theme": "Ownership & capital",
-      "text": "Atlas Critical Minerals Corp has filed an initial statement of beneficial ownership, according to a Stock Titan notice.",
-      "outlet": "Stock Titan",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNXdaV3lCbnc2SHpjcUJHVEFZMXhWQmNVaTNWeVNSeld2bDRNVkY3ODVNLXBnTlppYXJ5cWI3TEw1eWVwWVdNbVN6UV9RSEZtUUNCNXlRMi0zTWRpSkRuT2VRRFBmeGlubE5OS0dDUmNHQlVpdkw1YUV5NzFvX19xb2tyNDdHNnBNYkNzT2ktc3NTdTVJNEFCUEFKRXlxdjhzUWd2Ujd5ZWJjOWhxRENlTnNCTVpEVDllNlViZ3JPb2F0SVNBNElHQzlwNA?oc=5"
+      "theme": "Other",
+      "text": "The Federal Government has cleared 44 of more than 300 stranded power equipment containers at Apapa Ports in Lagos.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMHU0SVVyLW5PcjFoSFpqUDI4Z2RYZG55Vk5tTmNJaHJGV2lpRzJrQUlod1NiZndjQ1NWd0Y0QzlnUktDZndPOGFsYml5UWNQVy1USHJjZ2VDelkzWmhYeFZ1VkdqSG1wdXhUVlpwX09vNjZLQ3Z2eVUwTVhsM2dKSnYxRmRGTlFfRGx4dVBacDdEQVdvdVBHZFhnRm1Qc0hlc05v?oc=5"
     },
     {
       "n": 8,
-      "theme": "Other",
-      "text": "The Ogun State Government and the Federal Government have intensified an investigation into methane emissions in Ijebu-Ode and pledged a lasting solution.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNSFhNcEtKMmxmb3RmR202alpsTWYyWWgwNjJxeFdieUsxaXozTkZfdi1KSTFDUnhER1Z3bDNUdWNvaWozU0Jua0dkcUo0anh6a1VJX3hMaks1b0Fablc1RHl1T2dDbW1CN1NFOWp4anBqd2Ywdml5emRwSkdWb2JYU1ROR0R6WEdXUS1CRzZ2ZDEtUC1kU2o0VG9QTGJlYkVjSEREYjNhb1BYX08zU0RoN201c2ZrZmo4S3dnYURkM2tYWW1PVnNOQXlQSGMtTm1BMHB6Yg?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "People",
-      "text": "Zamfara State Governor Dauda Lawal has approved the recruitment of technical staff for the Zamfara Internal Revenue Service (IRS).",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON2VxN0pXampDOHAwV2RsMXEwcUw5cXI3LVhJRldrbjdzNnZlSlZRNWlWb0NlaDFHMVpfZnJ4X0kzeVZFeGZWdGplajNRdEJ3endZRlgydjNWeUVKeXV5N2cxQm5uQ2VqQjZNQWVMakNYVGx3aWc5MlNTTUR3U2gwVXZycE8wZ3MtZGhoODBSWjY1QWlZTlFBYVFkUDBTSFEwd3N4RjFrYmg2bmFCM0dmNXk3aTNjQXktOG50VFRNb3hVM2c?oc=5"
-    },
-    {
-      "n": 10,
-      "theme": "Other",
-      "text": "FairMoney has emphasised compliance and customer trust as drivers of its digital banking growth, according to a Guardian Nigeria report.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQ1hubEF3N1k0NVRUVzltNE5OMVFKamdJTWl3eGkwOV9LdDVPMVp3VEJiaDIwMGpwekp3cVVmRkVTWTdZTmd3QUtISmlUdlVMLURkN3U3SC1CdmRHWWNyRmNNdkxYRFpnMWFHc010QXRJWnNMOFZNdlhYbDBzdlpZRlR0RFRhTTJ2RFFUbi1ZTTVINThJZkVuLVc2MlU?oc=5"
-    },
-    {
-      "n": 11,
       "theme": "Regulation & enforcement",
-      "text": "Members of the House of Representatives have proposed fines and licence withdrawal for hospitals that delay emergency treatment.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNbWJBYWJDU21GbTFMc0RGOGZVN1A0Y3dFMUtTTW5mLUN5eVYyMHJwdkFzNm0xVFdqcW9XZ3QxalAwT3FFYVBJcm1BNmlsMzdqdnptRnpseFo3MHNsTTdwSlU2bzhqSzYxRWNEU3JFVTJjVUFRYUk4SS0yVzJLSlM3cUlMV3I5RHVkN1NPY0hnMWRwaTRSSTJoSzI4UE1QU0VzRXg5bHc5dGZseTJYc0hsUlpDaWJucG1lUnpmalo3OXpYZHVFUHA2Tk1XTE5mZTBmYVNhRldkazd1d3d3?oc=5"
+      "text": "The Bureau of Public Procurement (BPP) has sought a stronger procurement and project management partnership to drive Nigeria's industrial transformation, according to a Federal Ministry of Information and National Orientation report.",
+      "outlet": "Federal Ministry of Information and National Orientation",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWjdwc1N0LWFvVm4tQzBXcVktVW94R2RVZFNJQmZUdVhFQ3BGcU9SSHpkZzRiV0NrLUpTX2U3eFdzTTJtWEpsV19UU1owXzMwbUtzR2czSHJ4V21XUlp6aTZ5LWxIUjVnYlVaNUR0UUJlUUx3MmlybWFVNDFwV3RPX3M0WHlnWGFsdHRDS0pZdVFZeXZUa2dPYlRFVmMtLURxUUNadk40QkhrS0ZmRDFnY1U1TXVMdzhYU0NCcGRzT194R0R6aUZ2UVNFQQ?oc=5"
     }
   ],
   "also_more": 0,
@@ -255,16 +231,16 @@
   "psc_keys": [],
   "terms": [
     {
-      "term": "IPO",
-      "meaning": "initial public offering, a company's first sale of shares to the public"
+      "term": "BPP",
+      "meaning": "Bureau of Public Procurement, which regulates federal contracts"
+    },
+    {
+      "term": "EFCC",
+      "meaning": "Economic and Financial Crimes Commission"
     },
     {
       "term": "NNPC",
       "meaning": "Nigerian National Petroleum Company"
-    },
-    {
-      "term": "NIMASA",
-      "meaning": "Nigerian Maritime Administration and Safety Agency"
     },
     {
       "term": "AURA risk rating",
@@ -275,11 +251,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 1
+    "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
 }
