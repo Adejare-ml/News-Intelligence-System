@@ -2,7 +2,7 @@ name: CodeQL
 
 # Static security analysis for both halves of the codebase. pip-audit in
 # tests.yml covers known-vulnerable *dependencies*; nothing scanned the
-# first-party Python or the dashboard JavaScript itself until this.
+# first-party Python or the site TypeScript itself until this.
 on:
   push:
     branches: [main]

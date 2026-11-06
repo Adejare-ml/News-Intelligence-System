@@ -59,10 +59,9 @@ deploy workflow first runs on `main`. If you would rather not wait, run
 ## Removing the old dashboard
 
 The old vanilla-JS dashboard (`backend/app/static/index.html`, `css/`, `js/`)
-stays in the repository until the switch-over above is confirmed, because the
-current Cloudflare project may still be serving it. Once the new site is
-live, a follow-up PR deletes it. The pipeline keeps writing its exports to
-`backend/app/static/data/`, which the new site reads at build time.
+has been deleted now that the Astro site is live. Only
+`backend/app/static/data/` remains: the pipeline keeps writing its exports
+there, and the site reads them at build time.
 
 ## Security headers
 

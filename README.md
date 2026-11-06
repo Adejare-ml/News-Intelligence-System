@@ -58,13 +58,13 @@ The site lives in [`web/`](web/) and is built from the pipeline's exports after 
                                             └───────────┬────────────┘
                                                         ▼
                                             ┌────────────────────────┐
-                                            │  GitHub Pages          │
-                                            │  dashboard (vanilla    │
-                                            │  JS, no build step)    │
+                                            │  Astro site (web/) on  │
+                                            │  Cloudflare Pages +    │
+                                            │  GitHub Pages copy     │
                                             └────────────────────────┘
 ```
 
-**Why this shape.** The workload is four short bursts a day, not a continuous service. A cron runner that exits when it's done costs nothing and has nothing to keep alive, patch, or pay for. Sheets gives non-technical reviewers a familiar way to audit and correct records, which matters more here than query performance. A static dashboard means no API to secure or scale.
+**Why this shape.** The workload is four short bursts a day, not a continuous service. A cron runner that exits when it's done costs nothing and has nothing to keep alive, patch, or pay for. Sheets gives non-technical reviewers a familiar way to audit and correct records, which matters more here than query performance. A static site means no API to secure or scale.
 
 ### The LLM cascade
 
@@ -86,8 +86,8 @@ Degraded local extraction still exists for offline development, but only behind 
 - **Relevance filtering** — off-topic stories are recorded as `Filtered` rather than published, and their URLs are cached so they are never re-analyzed
 - **Executive reporting** — a daily Markdown brief with Key Developments, High Risk Alerts, Beneficial Ownership & PSC Disclosures, and Procurement & Board Changes, archived per run. Each edition covers the whole calendar day up to the run time (every bullet cites its source article), so the last run of the day publishes the complete daily picture rather than only its own batch
 - **Knowledge graph** — entity relationship map linking people, companies, agencies, and PSC holders, with shortest-path tracing between any two entities
-- **Global search & dossiers** — a Ctrl+K palette over companies, people, PSC records, articles and procurement; every entity gets a linkable dossier page (`#/company/…`, `#/person/…`, `#/agency/…`)
-- **Interactive dashboard** — intelligence feed with live search and risk filtering, a sortable/paginated PSC register with per-holder dossiers, per-device watchlists and alert dismissal, and CSV export
+- **Global search & entity pages** — a ⌘K palette over companies, people, PSC records, articles and procurement; every entity gets its own page
+- **News categories** — Sports, Technology, Politics and Entertainment headlines in Nigeria and Global editions, on the site and in the Morning Brief for readers who choose them
 - **Context signals** — term/category momentum over the pipeline's own articles, an r/Nigeria social column, and current Lagos/Abuja conditions, all fetched pipeline-side to keep the site's CSP locked to `'self'`
 - **Syndication** — an RSS feed of every brief edition at [`data/feed.xml`](https://adejare-ml.github.io/News-Intelligence-System/data/feed.xml), and an optional high-risk webhook (Slack/Discord-compatible) gated on a repository secret
 - **Provenance** — every article and report records the engine that generated it
@@ -108,13 +108,15 @@ python run_pipeline.py
 
 Without Google Sheets credentials the pipeline falls back to a local Excel workbook at `backend/app/db/excel_db.xlsx`, so it runs end-to-end with no cloud setup.
 
-### View the dashboard locally
+### View the site locally
 
 ```bash
-python -m http.server 8017 --directory backend/app/static
+cd web
+npm ci
+npm run dev
 ```
 
-Then open **`http://localhost:8017/index.html?static=1`**. The `?static=1` flag forces the serverless data mode so the dashboard reads the committed JSON files instead of expecting an API.
+The site builds from the committed exports in `backend/app/static/data/`.
 
 ### Deploy your own
 
@@ -161,13 +163,13 @@ Google Sheets acts as the database. Each tab maps to a `SHEETS_CONFIG` entry in 
 | **Procurement** | Contract awards: agency, contractor, amount, project |
 | **Daily Reports** | Run statistics and the full generated report |
 
-Each run exports these to `backend/app/static/data/*.json` for the dashboard and writes `report_latest.md` plus a dated archive, along with `weather.json`/`trends.json` context signals and the `feed.xml` RSS document.
+Each run exports these to `backend/app/static/data/*.json` for the site and writes `report_latest.md` plus a dated archive, along with `weather.json`/`trends.json` context signals and the `feed.xml` RSS document.
 
 ## 🧪 Testing
 
 ```bash
 pytest -q                    # Python suite (CI installs requirements-ci.txt)
-node tests/frontend/run.js   # frontend suite, no dependencies or build step
+cd web && npm test           # site and Cloudflare Functions suite
 ```
 
 Counts grow with every PR; CI runs both suites on each pull request and
@@ -182,12 +184,12 @@ keeps them blocking, so the badge state is the authoritative number.
 | **Storage** | Google Sheets via gspread (local Excel fallback) |
 | **NLP** | spaCy, sentence-transformers |
 | **AI** | Gemini, NVIDIA NIM, Ollama, OpenAI |
-| **Frontend** | Vanilla JS, Chart.js, vis-network — no build step |
-| **Hosting** | GitHub Pages |
+| **Frontend** | Astro, TypeScript |
+| **Hosting** | Cloudflare Pages (+ Functions, D1), GitHub Pages copy |
 
 ## 🐳 Optional: Docker / API mode
 
-The repo also contains a **FastAPI + PostgreSQL + Celery + Redis** stack for running the same analysis as a live service. It is **not** what powers the live dashboard and is best treated as an alternative deployment target.
+The repo also contains a **FastAPI + PostgreSQL + Celery + Redis** stack for running the same analysis as a live service. It is **not** what powers the live site and is best treated as an alternative deployment target.
 
 ```bash
 cp .env.example .env    # JWT_SECRET is required; the API refuses to start without it

@@ -14,10 +14,10 @@ Please use the issue tracker to report bugs. Include a detailed description and
 steps to reproduce.
 
 ## Running the tests
-The Python suite and the headless frontend suite both run without a browser:
+The Python suite and the site suite both run without a browser:
 
 ```bash
 pip install -r requirements-ci.txt pytest
 pytest -q
-node tests/frontend/run.js
+cd web && npm ci && npm test
 ```
