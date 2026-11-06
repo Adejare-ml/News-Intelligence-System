@@ -1,0 +1,55 @@
+---
+/** Links between the business wire (/news/) and the headline category pages. */
+import { CATEGORIES } from "../../functions/_lib/categories.ts";
+import { href } from "../lib/url.ts";
+
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+const tabs = CATEGORIES.map((c) => ({
+  id: c.id,
+  label: c.label,
+  path: c.id === "business" ? "news/" : `news/${c.id}/`,
+}));
+---
+<nav class="tabs" aria-label="News categories">
+  {tabs.map((t) => (
+    <a class="tab" href={href(t.path)} aria-current={t.id === current ? "page" : undefined}>{t.label}</a>
+  ))}
+</nav>
+
+<style>
+  .tabs {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .tab {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    font-weight: 560;
+    text-decoration: none;
+    transition: background-color var(--dur-ui) ease, color var(--dur-ui) ease;
+  }
+  .tab:hover {
+    color: var(--text);
+  }
+  .tab[aria-current="page"] {
+    background: var(--gold-wash);
+    border-color: var(--gold);
+    color: var(--text);
+  }
+</style>
