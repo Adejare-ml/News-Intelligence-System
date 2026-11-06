@@ -133,8 +133,38 @@
       "risk": "Low"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a10bb5746426",
+      "label": "Joint Admissions and Matriculation Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -169,8 +199,26 @@
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
+      "id": "6dfecfdab502",
+      "label": "Nigeria Diaspora Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f7e64c275e9b",
+      "label": "Apapa Port",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e194c74ceda2",
+      "label": "LASTMA",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4af52105f17",
+      "label": "Afreximbank",
       "type": "agency",
       "risk": "Low"
     },
@@ -193,51 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "56cff69fc378",
-      "label": "Zamfara State Internal Revenue Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2d8b68a63cae",
-      "label": "Nigerian Senate",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7301d85363bc",
-      "label": "Financial Reporting Council of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "type": "agency",
+      "id": "5a094abf1abe",
+      "label": "Bola Ahmed Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -439,12 +445,6 @@
       "risk": "Low"
     },
     {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -577,15 +577,15 @@
       "risk": "Medium"
     },
     {
-      "id": "ee660b17d5a8",
-      "label": "National Automotive Design and Development Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "334c4a4c42fd",
       "label": "None",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ee660b17d5a8",
+      "label": "National Automotive Design and Development Council",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -616,12 +616,6 @@
       "id": "2cbc793c6023",
       "label": "Government of China",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -665,15 +659,15 @@
       "label": "Katsina State Government",
       "type": "agency",
       "risk": "Low"
-    },
-    {
-      "id": "0bee8e95809f",
-      "label": "Pincode",
-      "type": "company",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "90d4f5fbf4b4",
+      "from": "5a094abf1abe",
+      "to": "0c2be969618b",
+      "label": "Appointed as President of Nigeria"
+    },
     {
       "id": "4e2bff94f21e",
       "from": "c0bb480c6bd1",
@@ -801,12 +795,6 @@
       "label": "Appointed as Chairman"
     },
     {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President"
-    },
-    {
       "id": "34c826682817",
       "from": "f05534764d4f",
       "to": "dba897677026",
@@ -877,6 +865,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "f8428f09d5a7",
+      "from": "334c4a4c42fd",
+      "to": "5a98eb23f6f5",
+      "label": "Contract Awardee"
     },
     {
       "id": "1e528d29d72f",
@@ -972,12 +966,6 @@
       "id": "d60095afa222",
       "from": "334c4a4c42fd",
       "to": "b5da1d8370fd",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "12047b1c4fd5",
-      "from": "0bee8e95809f",
-      "to": "a99d3740770f",
       "label": "Contract Awardee"
     }
   ]

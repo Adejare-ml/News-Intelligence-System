@@ -180,7 +180,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 64,
+      "total_mentions": 65,
       "points": [
         {
           "week": "2026-09-07",
@@ -232,8 +232,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 40.0,
+          "mentions": 3,
+          "avg_risk": 35.0,
           "max_risk": 45
         }
       ]
@@ -302,7 +302,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 31,
+      "total_mentions": 32,
       "points": [
         {
           "week": "2026-09-14",
@@ -342,8 +342,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 25.0,
+          "mentions": 4,
+          "avg_risk": 30.0,
           "max_risk": 45
         }
       ]
@@ -504,7 +504,7 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "total_mentions": 20,
+      "total_mentions": 21,
       "points": [
         {
           "week": "2026-09-14",
@@ -544,8 +544,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 30.0,
+          "mentions": 2,
+          "avg_risk": 22.5,
           "max_risk": 30
         }
       ]
@@ -883,52 +883,9 @@
       ]
     },
     {
-      "key": "all progressives congress",
-      "label": "All Progressives Congress",
-      "total_mentions": 12,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 26.2,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "akwa ibom state government",
       "label": "Akwa Ibom State Government",
-      "total_mentions": 11,
+      "total_mentions": 12,
       "points": [
         {
           "week": "2026-09-07",
@@ -968,6 +925,55 @@
         },
         {
           "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "all progressives congress",
+      "label": "All Progressives Congress",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 26.2,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -1254,6 +1260,37 @@
       ]
     },
     {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "bureau of public procurement",
       "label": "Bureau of Public Procurement",
       "total_mentions": 7,
@@ -1374,37 +1411,6 @@
           "mentions": 2,
           "avg_risk": 42.5,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -3030,6 +3036,31 @@
       ]
     },
     {
+      "key": "bola ahmed tinubu",
+      "label": "Bola Ahmed Tinubu",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-07",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "code of conduct bureau",
       "label": "Code of Conduct Bureau",
       "total_mentions": 3,
@@ -3935,6 +3966,25 @@
       ]
     },
     {
+      "key": "afreximbank",
+      "label": "Afreximbank",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "africa finance corporation",
       "label": "Africa Finance Corporation",
       "total_mentions": 2,
@@ -4085,25 +4135,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "bola ahmed tinubu",
-      "label": "Bola Ahmed Tinubu",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-07",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -5921,19 +5952,6 @@
       ]
     },
     {
-      "key": "afreximbank",
-      "label": "Afreximbank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "afri invoice",
       "label": "Afri Invoice",
       "total_mentions": 1,
@@ -6259,5 +6277,5 @@
       ]
     }
   ],
-  "generated": "2026-11-06 03:31:53"
+  "generated": "2026-11-06 15:07:02"
 }

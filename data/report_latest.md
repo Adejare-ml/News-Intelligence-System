@@ -1,24 +1,26 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-06 03:31:14 (UTC)
-**Run Window:** 2026-11-06, all runs to 03:31 (run 1 of the day)
+**Generated on:** 2026-11-06 15:06:20 (UTC)
+**Run Window:** 2026-11-06, all runs to 15:06 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 8
+- **Total Articles Processed:** 16
 - **High Risk Signals:** 0
 - **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Procurement Awards:** 1
 
 ---
 
-# Executive Intelligence Summary: Nigerian Corporate Transparency and MDAs
-**Report date:** 6 November 2026 | **Coverage:** all articles published on 6 November 2026 up to 03:31
+# Executive Summary: Nigerian Corporate Transparency & MDA Monitor
+**Report date:** 6 November 2026
+**Coverage:** All articles published on 6 November 2026 up to 15:06 (run 2 of the day)
 
 ### Key Developments
-- **$196m NIN funds unspent, FG seeks extension**. The Federal Government has requested a further 12-month extension for Nigeria's $430 million digital identity project. ([The Punch](https://punchng.com/196m-nin-funds-unspent-fg-seeks-extension/))  
-- **OPay listing paused:** OPay has reportedly paused listing plans amid Chinese regulatory scrutiny. Only a paywall notice was available, so details are unconfirmed. ([businessday](https://businessday.ng/news/article/chinese-regulatory-scrutiny-forces-nigeria-payments-firm-opay-to-pause-listing-plans/))  
-- **Yoyei seals $115 million pact to deploy 5,000 EVs in Nigeria**. Yoyei has signed a $115 million agreement to deploy 5,000 electric vehicles in Nigeria. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVWNXaDNYdDZRcDlsT1RmeV9LT3FhWTJFZXU1aVlQRU84S0FTYUFtRnlEUnpidV9zRkVRbko4dEtacTlXVnJESjhJWU04bGRNakVRcmNSVTlsWUV5a1ZOcmJRc1pJcXItWTNwSTRNWlExT0RrallocEdTaWNDTHM3TmVRczdxbjZOSnE4d0FZZXdXNFlSdVlsVG1aUF9ZNDVxZmt5RmN1dmRoMTA?oc=5))  
-- **Development finance:** AFD and the Bank of Industry signed a $30m credit line and a €500,000 grant for the creative industry. ([Vanguard News](https://news.google.com/rss/articles/CBMitgFBVV95cUxNczZ5aWdVaEtVVV9McEtRUk9SMFRod0dQTmRWVEZFYXQ5RWlNWFF4c1JmUmUxTk0zNzRvSl9OYVNmaFgwdGtSYWJUQWlyX0JyWHJqNmJSWXpFanJ5Q3pabk4zQ0tvb3hEY1BGMzNfa3lFNEh5aTJNd3NOUzN5Vmp0Y3BUdDRua2t3ZHozLVVZSzVYSDB3ZGZ5TjBxbzNxUWlHc0FNakdYTDFnQkR3TkdXTk5jcWRYQdIBuwFBVV95cUxPZE1LUTF5SVhzUkQ4UWpOSGs1amJPcUJpY0lJR3dmdXNsRlFscmsxdEZwT2wxV1hVb0R2RFVpRzhpSGs0SmdLVE9ZU2ZLblZDSTFQck02QXdpOHd1OFNMMGo5UmdXNHlacXJ1WXRmTVp5YmtkRTdIUFh1aTF4V04zRTZwT1ZjZWZpUEZ1WkFJNjhCb0lzX21CQzEtNkFtbm1ReTNiUnBZTWJzamRZaGhQU2pCbGxpdzRQaEww?oc=5))  
-- **Port backlog:** The FG has cleared 44 of more than 300 stranded power equipment containers at Apapa. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiowFBVV95cUxQMHU0SVVyLW5PcjFoSFpqUDI4Z2RYZG55Vk5tTmNJaHJGV2lpRzJrQUlod1NiZndjQ1NWd0Y0QzlnUktDZndPOGFsYml5UWNQVy1USHJjZ2VDelkzWmhYeFZ1VkdqSG1wdXhUVlpwX09vNjZLQ3Z2eVUwTVhsM2dKSnYxRmRGTlFfRGx4dVBacDdEQVdvdVBHZFhnRm1Qc0hlc05v?oc=5))  
+- **CBN stablecoin rule:** The Central Bank of Nigeria set a N15bn capital requirement for dollar stablecoin issuers. The source gave only the headline, so no further detail is available. ([Punch Newspapers](https://news.google.com/rss/articles/CBMijgFBVV95cUxQV0hKQWpPOUpPbHB4bFhPdjUtWlZKUWNxY2YzQ0I3RmJUUnZwMjBWV1FNbEc1M3Blek9KQmFZdVlRU3d3QW5LY2gybjBYaVdsdUZmRnNVel94VlRMaE9XSllhTWRCNnZrWXBKMXlVOWR2SDZvSUxmT3BtV1gwQnYxal81OUFHNXB1bXhtX3VB?oc=5))  
+- **Customs revenue:** The Nigeria Customs Service reported N302bn from Apapa port in October and said it is streamlining transire processing. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMitgFBVV95cUxOLVRwbXRXTzJ4WWt3VjhLSF9lVkRvVjZpaUNoTzV0bjNseV9yaWMzeTZpQ0dvRXQ4aDZGZjhsaXlZSGs5NUl0dDlsNmxud3ZtSmZNUXZheEtXRVRvYkhQLTlMX3pLN3lNT3ppUEdsX1AwSTF0eHc2V2t6UklZeGw4QWhMeklubW9WZFBzYmpUZ3g3bFN5ZmdOenJxdVNvZTRfMU5nQXJNbTk4amhSNWxsdUhHUS1GUQ?oc=5))  
+- **Power equipment backlog:** The Federal Government has cleared 44 of more than 300 stranded power equipment containers at Apapa. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiowFBVV95cUxQMHU0SVVyLW5PcjFoSFpqUDI4Z2RYZG55Vk5tTmNJaHJGV2lpRzJrQUlod1NiZndjQ1NWd0Y0QzlnUktDZndPOGFsYml5UWNQVy1USHJjZ2VDelkzWmhYeFZ1VkdqSG1wdXhUVlpwX09vNjZLQ3Z2eVUwTVhsM2dKSnYxRmRGTlFfRGx4dVBacDdEQVdvdVBHZFhnRm1Qc0hlc05v?oc=5))  
+- **Upstream oil:** TotalEnergies deployed a deepwater rig to the Akpo field for fresh drilling. The report gives no ownership or contract detail. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNNjlPTkJfek9DQmZsWTEyTEhEUzN1WGRab05aRkZrd0hRRHZWeEhhcTVuckZpYmczX1oyMUdocnRqYWxxVk80S0E4TXB6WlpjdXNnZWdkdUpjSzJ6NGc0ZDhwSDJCR1VLd1VPZ1NUOGF1RTU5NFRsOXNUSFkwMlJCLW1zWkVwU09hYUVwN2wwb3dMMVJPLWZ2bXFWdFJnTXdmRkFJMHhUWnF0UC11YXlqamlRdDJvQU5OanFvbnoyeDBUaDVWU083cHNvcEVaRGFSZ2N2TFln?oc=5))  
+- **Investment pipeline:** NiDCOM is targeting $100bn in annual diaspora investment, Afreximbank is targeting over $540m in deals at Lagos CANEX, and Yoyei signed a $115m pact to deploy 5,000 EVs. Each source gave only a headline. ([Punch Newspapers](https://news.google.com/rss/articles/CBMie0FVX3lxTFBueXIzYzZkTWFORXBZTGNuSmljNy1UX2k4bV9USDBvY01keTBTSHJ0QWhqRXZQbDVISzVmcE94N0pRYTItZEhibmpfQnVRYXhfQWZHT25MZDRINy1SdTBYZjhNbmh2TXVyeG1JMzExYUF0d3lSb1FLTVFVZw?oc=5))  
+- **Yuletide: LASTMA inducts 100 community volunteers to promote traffic discipline**. The Lagos State Traffic Management Authority (LASTMA) has inducted 100 community volunteers to promote traffic discipline during the Yuletide season. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiugFBVV95cUxOR3d5dmhuTjhXWVFKRXZOWWpLNHBsR2hMQ3kybm9xMkRFMjBUb2hmb0xBYkowMVdvNTBfUUVNMjhPLVBvcDh6dFhReXQ2VFdYbzQwY2E3cG9jcEdULURUakF3dHlIN2tUR2FIc1BTOXdTMGgyREVCWUhpakhfSVB4bXhLNG5INjZRYVNJZUlsbWNzZEJTNnctU3UzR3hHMmNFWXIwZGROTzRfMG90UkV6MHNYd1R0SWJZOEE?oc=5))  
 
 ### High Risk Alerts
 No high-risk items today.
@@ -27,8 +29,8 @@ No high-risk items today.
 Nothing to report here today.
 
 ### Procurement & Board Changes
-- **Procurement:** The Bureau of Public Procurement (BPP) called for a stronger procurement and project management partnership to support industrial transformation. Only the headline was available, with no contract details. ([Federal Ministry of Information and National Orientation](https://news.google.com/rss/articles/CBMiywFBVV95cUxPWjdwc1N0LWFvVm4tQzBXcVktVW94R2RVZFNJQmZUdVhFQ3BGcU9SSHpkZzRiV0NrLUpTX2U3eFdzTTJtWEpsV19UU1owXzMwbUtzR2czSHJ4V21XUlp6aTZ5LWxIUjVnYlVaNUR0UUJlUUx3MmlybWFVNDFwV3RPX3M0WHlnWGFsdHRDS0pZdVFZeXZUa2dPYlRFVmMtLURxUUNadk40QkhrS0ZmRDFnY1U1TXVMdzhYU0NCcGRzT194R0R6aUZ2UVNFQQ?oc=5))  
-- **REFORMS: Oil output has grown by 600,000bpd since PIA — NNPC**. NNPC Limited says Nigeria's crude oil output has risen by 600,000 barrels per day, from about 1.2 million bpd to 1.8 million bpd, since the Petroleum Industry Act reforms. ([Vanguard News](https://news.google.com/rss/articles/CBMimAFBVV95cUxPVGhjS1BXLW95bzlPTllOMWFBN2lIN0NMSXpTWnlPWXB0UGtVM0dwV0dCMVBjT2dyU3hhd2N2V0g4dTdxenBURzV5c1B5Q3ZEbkdieU5GLWM0c0FJeEp1UTB4VW5Pa0tWOWVPOGRiQmFoVmJRekY5bldsMDI4T3B6d2Z2Z3kxdG1acTFHUTluamYtZVdJRVZaT9IBngFBVV95cUxQcHVfaDJFT0RLRld6TFdZdFIxZG9TMnNEVGNYT0liaFRjQkMyZWU4UUM1RkFNdWVyN1EzUVlDYzN2dGdYaXVUMHE2akd4SmhRNUpYcEx5cFBwalBfb3g4cnM4U19KX1FyNnpaR2RicEE5RkV3ZFJLNTh1WTgzc0xZQkNqMl9iS1R4bmlreWlXMzlsVzNPQ1lyczRmeWlWZw?oc=5))  
+- **Akwa Ibom State Government:** The state is commissioning eight projects, including a terminal, with no published contractor, contract sums or procurement records. The only figure is the N59.65bn budget allocation for the terminal. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi0AFBVV95cUxPaXllMWhwNkJVTDZ4RUFZYzc2TC1BMkR2TVhQN2k0RmRFYWVBNTFJVFg4b3ZNMWhEekdibWpvc3pwUnBPZWxNdFdxSnI3RWJiQkdONGxnRUprQkx1VVdtUFpFTE5aNjdCY0hRT1hPSlZrWk54TVhEeEpxNXJZSUxpQ2FVcEdpbE1QQU9XaHNkdDdFNVpGdTFSWWpnS1FWM0JYODVQOVVFVEpyVjhwNWl6UWRqYmhJTW1mWWNLQ0duaVlsU2VWeWpyWU9RUGVMRGVl?oc=5))  
+- **JAMB:** The N710m computer spending is under House scrutiny, but no contractor or procurement details were given. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMimwFBVV95cUxQWW9lbnItckFkTFZIQzZWWkdYbF9OVzhScERzeXFMam82M2JBWEhVSnprZnNWNXhkcnF2OElvRmZnQjhTckU5QjllN0FkZzZCNXMxYWR0RVNLcUoxc2JIQ1lrbmNUa0VrNWpHSlM4czJjcEx0Rjg5TXp2OXhaY2JUcTFjSXJ2cTBocVBDMmNfX0pTeHlQenBrQXNhZw?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*
