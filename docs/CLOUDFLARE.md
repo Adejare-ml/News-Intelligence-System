@@ -59,10 +59,9 @@ deploy workflow first runs on `main`. If you would rather not wait, run
 ## Removing the old dashboard
 
 The old vanilla-JS dashboard (`backend/app/static/index.html`, `css/`, `js/`)
-stays in the repository until the switch-over above is confirmed, because the
-current Cloudflare project may still be serving it. Once the new site is
-live, a follow-up PR deletes it. The pipeline keeps writing its exports to
-`backend/app/static/data/`, which the new site reads at build time.
+has been deleted now that the Astro site is live. Only
+`backend/app/static/data/` remains: the pipeline keeps writing its exports
+there, and the site reads them at build time.
 
 ## Security headers
 
@@ -79,9 +78,12 @@ deploys it with the site:
 
 | Route | What it does |
 |---|---|
-| `POST /api/subscribe` | Stores a Morning Brief sign-up (pending) in D1 |
+| `POST /api/subscribe` | Stores a Morning Brief sign-up (pending) in D1, with the reader's categories, region and frequency |
 | `GET /api/confirm?token=` | Double opt-in confirmation |
+| `GET/POST /api/preferences?token=` | The reader's own page: change categories, region, daily/weekly, or pause |
 | `GET/POST /api/unsubscribe?token=` | One-click unsubscribe |
+| `POST /api/send-brief` | Sends the morning email (owner secret; see below) |
+| `GET /api/stats` | Subscriber counts by status, category, region and frequency, weekly sign-ups and recent sends. Needs `Authorization: Bearer <BRIEF_SEND_SECRET>`. Counts only, never addresses. |
 | `GET /img?u=` | Serves publisher images from the site's origin, cached for a week. Only URLs in the build's `/img-allow.json` are fetched. |
 
 ### Morning Brief sign-ups (one-time setup)
@@ -91,9 +93,10 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
 1. Create the database:
    **Workers & Pages → D1 → Create database**, name `aura`. Or, with
    wrangler: `npx wrangler d1 create aura`.
-2. Create the table:
+2. Create the tables: run each file in `web/migrations/` in order, e.g.
    `npx wrangler d1 execute aura --remote --file=web/migrations/0001_subscribers.sql`
-   (or paste the file into the D1 console).
+   (or paste each file into the D1 console). `0003_preferences.sql` adds the
+   reader's choices; existing subscribers keep business, Nigeria, daily.
 3. Bind it to the site:
    **Pages project → Settings → Bindings → Add → D1 database**,
    variable name `DB`, database `aura`. Redeploy.
@@ -102,8 +105,21 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
 
 Sign-ups are stored as `pending` and nothing is sent until this is set up.
 Once it is, new sign-ups get a confirmation email, and every morning after
-the 08:00 Lagos run each confirmed subscriber gets that day's brief (the
-email at `/brief/email/`), with a one-click unsubscribe link and header.
+the 08:00 Lagos run each confirmed subscriber gets that day's brief, with a
+one-click unsubscribe link and header and a "Change topics" link.
+
+What each reader gets depends on what they chose at sign-up:
+
+- **Business** is the brief at `/brief/email/`.
+- **Sports, Technology, Politics, Entertainment** are headline sections from
+  `category_news.json` (`/brief/email/section/<category>/`), in the Nigeria
+  edition, the Global one, or both. Readers without Business get them in the
+  shell at `/brief/email/shell/`. Headlines older than 36 hours are left out.
+- **Weekly** readers get the Monday email only.
+
+Readers with the same choices share one copy, so each distinct email is
+built once. Preview any mix with
+`POST /api/send-brief?test=1&categories=business,sports&region=both`.
 
 How it works: the subscriber list stays in D1. The scheduler waits until
 production shows the new edition, then calls `POST /api/send-brief` with a
@@ -138,7 +154,11 @@ Lagos day, and an edition that was already sent is never sent again.
 npx wrangler d1 create aura                 # if it doesn't exist yet
 npx wrangler d1 execute aura --remote --file=web/migrations/0001_subscribers.sql
 npx wrangler d1 execute aura --remote --file=web/migrations/0002_sends.sql
+npx wrangler d1 execute aura --remote --file=web/migrations/0003_preferences.sql
 ```
+
+**Apply 0003 before deploying the version with news categories**: the new
+functions read the `categories`, `region`, `frequency` and `paused` columns.
 
 (or paste each file into the D1 console). Then **Pages project → Settings
 → Bindings → Add → D1 database**: variable `DB`, database `aura`.

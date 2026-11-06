@@ -1,4 +1,23 @@
-/** Morning Brief sign-up: POSTs to /api/subscribe (a Cloudflare Pages Function). */
+/**
+ * Morning Brief sign-up: POSTs to /api/subscribe (a Cloudflare Pages Function)
+ * with the reader's email and the kinds of news they chose.
+ */
+const checkedValues = (form: HTMLFormElement, name: string) =>
+  [...form.querySelectorAll<HTMLInputElement>(`input[name="${name}"]:checked`)].map((i) => i.value);
+
+/** "Headlines from" only matters once a headline category is ticked. */
+function syncRegion(form: HTMLFormElement): void {
+  const region = form.querySelector<HTMLElement>("[data-region]");
+  if (region) region.hidden = !checkedValues(form, "categories").some((c) => c !== "business");
+}
+
+/** /news/sports/ links here with ?topic=sports: tick it for the reader. */
+function preselect(form: HTMLFormElement): void {
+  const topic = new URLSearchParams(location.search).get("topic");
+  const box = topic ? form.querySelector<HTMLInputElement>(`input[name="categories"][value="${CSS.escape(topic)}"]`) : null;
+  if (box) box.checked = true;
+}
+
 document.querySelectorAll<HTMLFormElement>("form[data-subscribe]").forEach((form) => {
   const status = form.querySelector<HTMLElement>("[data-subscribe-status]");
   const input = form.querySelector<HTMLInputElement>('input[type="email"]');
@@ -8,6 +27,13 @@ document.querySelectorAll<HTMLFormElement>("form[data-subscribe]").forEach((form
     status.classList.toggle("ok", kind === "ok");
     status.classList.toggle("error", kind === "error");
   };
+
+  preselect(form);
+  syncRegion(form);
+  form.addEventListener("change", (event) => {
+    if ((event.target as HTMLInputElement).name === "categories") syncRegion(form);
+  });
+
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const email = input?.value.trim() || "";
@@ -16,13 +42,25 @@ document.querySelectorAll<HTMLFormElement>("form[data-subscribe]").forEach((form
       input?.focus();
       return;
     }
+    const categories = checkedValues(form, "categories");
+    if (!categories.length) {
+      say("Choose at least one kind of news.", "error");
+      form.querySelector<HTMLInputElement>('input[name="categories"]')?.focus();
+      return;
+    }
     form.classList.add("is-busy");
     say("Adding you to the list…");
     try {
       const res = await fetch(form.action, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ email, company_site: (form.elements.namedItem("company_site") as HTMLInputElement)?.value || "" }),
+        body: JSON.stringify({
+          email,
+          categories,
+          region: checkedValues(form, "region")[0] || "nigeria",
+          frequency: checkedValues(form, "frequency")[0] || "daily",
+          company_site: (form.elements.namedItem("company_site") as HTMLInputElement)?.value || "",
+        }),
       });
       if (res.status === 404 || res.status === 405) {
         say("Sign-ups open very soon. The brief is already live at the top of this page.", "");

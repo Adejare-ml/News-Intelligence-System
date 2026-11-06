@@ -1,21 +1,13 @@
 ---
 /** One story in the Morning Brief email: everything a reader needs without opening the article. */
 import type { DigestCard } from "../../lib/digest.ts";
+import { ink, muted, soft, gold, royal, alertRed, panel, sans, serif } from "./theme.ts";
 
 interface Props {
   c: DigestCard;
 }
 const { c } = Astro.props;
 
-const ink = "#1b1a17";
-const muted = "#6b6558";
-const soft = "#3a372f";
-const gold = "#9c7420";
-const royal = "#1e3fae";
-const alertRed = "#a3312a";
-const panel = "#f6f1e4";
-const sans = "Helvetica,Arial,sans-serif";
-const serif = "Georgia,'Times New Roman',serif";
 const sub = `font:600 10px/1.4 ${sans};letter-spacing:1.5px;text-transform:uppercase;color:${muted};margin:12px 0 4px;`;
 const body = `font:15px/1.6 ${sans};color:${ink};`;
 const small = `font:13px/1.55 ${sans};color:${muted};`;

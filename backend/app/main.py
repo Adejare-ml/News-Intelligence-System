@@ -163,9 +163,10 @@ def init_db():
     finally:
         db.close()
 
-# Mount Frontend static files
-static_dir = os.path.join(os.path.dirname(__file__), "static")
-if os.path.exists(static_dir):
-    app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
+# The pipeline's JSON exports, read-only. The public site is the Astro
+# app in web/; this API no longer serves a dashboard of its own.
+data_dir = os.path.join(os.path.dirname(__file__), "static", "data")
+if os.path.exists(data_dir):
+    app.mount("/data", StaticFiles(directory=data_dir), name="data")
 else:
-    logger.warning(f"Static files directory not found at: {static_dir}")
+    logger.warning(f"Data directory not found at: {data_dir}")

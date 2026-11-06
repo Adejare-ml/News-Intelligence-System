@@ -2,6 +2,7 @@
 import * as data from "../lib/data.ts";
 import { href } from "../lib/url.ts";
 import { SECTIONS } from "../lib/nav.ts";
+import { HEADLINE_CATEGORIES } from "../../functions/_lib/categories.ts";
 import { listEditions } from "../lib/archive.ts";
 import { groupHoldings } from "../lib/psc.ts";
 import { toContract, type ProcurementRow } from "../lib/procurement.ts";
@@ -21,6 +22,7 @@ export function GET({ site }: { site?: URL }) {
   void entities;
   const paths = [
     ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/"),
+    ...HEADLINE_CATEGORIES.map((c) => `news/${c}/`),
     ...listEditions().map((e) => `brief/${e.slug}/`),
   ];
   const urls = paths.map((p) => `  <url><loc>${new URL(href(p), base).toString()}</loc></url>`).join("\n");

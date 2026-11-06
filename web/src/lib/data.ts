@@ -96,3 +96,17 @@ export interface WeatherPayload {
   cities?: { name: string; temp_c: number; description: string }[];
 }
 export const weather = () => readJson<WeatherPayload>("weather.json", {});
+
+/** One headline from a category feed (backend/app/services/headlines.py). */
+export interface Headline {
+  title: string;
+  url: string;
+  source: string;
+  published: string;
+}
+export interface CategoryNews {
+  generated?: string;
+  sections?: Record<string, { nigeria?: Headline[]; global?: Headline[] }>;
+}
+/** Sports, technology, politics and entertainment headlines, Nigeria and Global editions. */
+export const categoryNews = () => readJson<CategoryNews>("category_news.json", {});

@@ -6,11 +6,14 @@
  * Reads in full without a click: an overview, AURA's analysis kept apart from
  * reported fact, then a card per story with what happened, the key facts, how
  * the story moved and why it matters. Each article is linked once, by outlet
- * name. Nothing here is per-recipient except {{unsubscribe_url}}.
+ * name. Nothing here is per-recipient except {{unsubscribe_url}} and
+ * {{preferences_url}}; the reader's chosen category sections go in at
+ * SECTIONS_SLOT when the brief is sent.
  */
 import type { EmailDigest } from "../../lib/digest.ts";
 import Card from "./DigestCard.astro";
 import { plural } from "../../lib/digest.ts";
+import { ink, muted, soft, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } from "./theme.ts";
 
 interface Props {
   digest: EmailDigest;
@@ -18,15 +21,6 @@ interface Props {
 }
 const { digest: d, site } = Astro.props;
 
-const ink = "#1b1a17";
-const muted = "#6b6558";
-const soft = "#3a372f";
-const gold = "#9c7420";
-const royal = "#1e3fae";
-const alertRed = "#a3312a";
-const rule = "#e7e0cf";
-const sans = "Helvetica,Arial,sans-serif";
-const serif = "Georgia,'Times New Roman',serif";
 
 const s = d.stats;
 const alertCards = d.cards.filter((c) => c.alert);
@@ -135,6 +129,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
         </td></tr>
       </>)}
 
+      <Fragment set:html={SECTIONS_SLOT} />
       <tr><td style={`padding:20px 32px 28px;${small}border-top:1px solid ${rule};`}>
         AURA reads Nigerian news outlets four times a day. An AI model extracts what each report says, and rules
         check each line against its source and drop anything that does not match. Facts are as reported by the
@@ -144,7 +139,8 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
         {d.engines.extraction.length > 0 && <>Engine: extraction {d.engines.extraction.join(", ")}{d.engines.digest ? ` · overview ${d.engines.digest}` : " · overview from stored text"}<br /></>}
         <a href={`${site}/brief/`} style={link}>Full brief, archive and registers ↗</a>
         <br />
-        You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.
+        You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.{" "}
+        <a href="{{preferences_url}}" style={`color:${muted};`}>Change topics</a>{" · "}
         <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.
       </td></tr>
     </table>

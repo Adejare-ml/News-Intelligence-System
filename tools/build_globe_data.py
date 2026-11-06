@@ -1,4 +1,4 @@
-"""Bake Natural Earth coastlines into a static asset for the dashboard globe.
+"""Bake Natural Earth coastlines into a static asset for the site's globe.
 
 The dashboard is served from GitHub Pages under a strict CSP whose image policy
 is ``img-src 'self' data:``. That rules out pulling an Earth texture from a tile
@@ -12,7 +12,7 @@ Run manually when the coastline resolution needs to change::
 
     python tools/build_globe_data.py
 
-Output: ``backend/app/static/js/globe-data.js``
+Output: ``web/src/lib/globe-data.ts``
 """
 
 from __future__ import annotations
@@ -38,7 +38,7 @@ COUNTRIES_URL = f"{NE_BASE}/ne_110m_admin_0_countries.geojson"
 # finer than the render needs, and it keeps the payload near 11 KB of base64.
 GRID_W, GRID_H = 360, 180
 
-OUT_PATH = Path(__file__).resolve().parents[1] / "backend/app/static/js/globe-data.js"
+OUT_PATH = Path(__file__).resolve().parents[1] / "web/src/lib/globe-data.ts"
 
 # Highlighted on the globe because the pipeline tracks Nigerian corporate
 # ownership; the outline is what anchors the viewer geographically.
@@ -125,25 +125,21 @@ def extract_outline(countries: dict[str, Any], name: str) -> list[list[float]]:
 
 
 def render_module(mask_b64: str, outline: list[list[float]]) -> str:
-    """Emit the JS module. Deliberately dependency-free and human-readable."""
-    outline_json = json.dumps(outline, separators=(",", ":"))
-    return f"""// GENERATED FILE -- do not edit by hand.
-// Regenerate with: python tools/build_globe_data.py
-//
-// Coastlines are baked in at author time because the dashboard's CSP allows
-// images only from 'self' and data: URIs, so a runtime Earth texture is not an
-// option. Source: Natural Earth 110m (public domain).
-window.AURA_GLOBE_DATA = {{
-    // {GRID_W}x{GRID_H} equirectangular land mask, 1 bit per cell, MSB first,
-    // row-major from lat +90 down to -90 and lon -180 to +180.
-    maskWidth: {GRID_W},
-    maskHeight: {GRID_H},
-    mask: "{mask_b64}",
-    // Largest ring of the focus country, as [lon, lat] pairs.
-    focusName: {json.dumps(FOCUS_COUNTRY)},
-    focusOutline: {outline_json}
-}};
-"""
+    """Emit the TypeScript module the site's globe imports."""
+    data = {
+        "maskWidth": GRID_W,
+        "maskHeight": GRID_H,
+        "mask": mask_b64,
+        "focusOutline": outline,
+    }
+    return (
+        "// Generated from Natural Earth 110m (public domain).\n"
+        "// Regenerate with: python tools/build_globe_data.py\n"
+        "export interface GlobeData { maskWidth: number; maskHeight: number; mask: string; "
+        "focusOutline: [number, number][]; }\n"
+        "const data: GlobeData = " + json.dumps(data, separators=(",", ":")) + ";\n"
+        "export default data;\n"
+    )
 
 
 def main() -> None:
