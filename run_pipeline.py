@@ -33,6 +33,7 @@ from backend.app.services import register_quality
 from backend.app.services import story_detail
 from backend.app.services import claude_llm
 from backend.app.services import email_digest
+from backend.app.pipeline import side_feeds
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -61,21 +62,9 @@ from backend.app.services.relevance import (  # noqa: E402  (re-export)
     is_role_or_org_name,
     is_unevidenced_officer,
 )
+# CAMA 2020 PSC disclosure bands: see backend/app/pipeline/bands.py.
+from backend.app.pipeline.bands import SHARE_BANDS, share_band  # noqa: E402,F401  (re-export)
 
-
-# Nigerian PSC disclosure bands.
-#
-# CAMA 2020 s.868, read with the CAC Persons with Significant Control
-# Regulations 2022, sets the Nigerian threshold at **5%** of shares or voting
-# rights -- not the 25% used by the UK PSC register and the FATF standard.
-# A 6% holder is a statutory PSC in Nigeria and invisible to a UK-calibrated
-# tool, so the 5-25% band is tracked as a first-class category.
-SHARE_BANDS = (
-    (75.0, "BAND_75_100"),
-    (50.0, "BAND_50_75"),
-    (25.0, "BAND_25_50"),
-    (5.0, "BAND_5_25"),
-)
 
 
 EVAL_CORPUS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "evals", "corpus")
@@ -141,25 +130,6 @@ def capture_eval_input(title: str, article_text: str, url: str, source: str) -> 
         logger.warning("Could not capture eval input for '%s': %s", title, exc)
 
 
-def share_band(percentage: Any) -> str:
-    """Map a percentage (number, or a string like '28.5%') onto a CAMA band.
-
-    Returns "" when no figure was disclosed, so the UI can say "not disclosed"
-    rather than implying a band that was never reported.
-    """
-    if percentage is None:
-        return ""
-    try:
-        value = float(str(percentage).replace("%", "").strip())
-    except (TypeError, ValueError):
-        return ""
-    for floor, name in SHARE_BANDS:
-        if value >= floor:
-            return name
-    return "BELOW_THRESHOLD"
-
-
-# Illustrative PSC rows used only when SEED_DEMO_PSC=true.
 # Every entity here is invented. Each row carries Source="seed" so the
 # dashboard can label it as illustrative rather than extracted.
 DEMO_PSC_RECORDS: List[Dict[str, Any]] = [
@@ -634,218 +604,18 @@ def run_pipeline(seed: bool = False):
     return {"status": "success", "processed": new_articles_count,
             "cascade_failures": cascade_failures}
 
-def published_today(article_rows: List[Dict[str, Any]], today=None) -> List[Dict[str, Any]]:
-    """Reduce today's already-published Articles rows to report-record shape.
-
-    The sheet keeps Title/Source/URL/Category/Risk Score/Summary but not the
-    full analysis, so these records carry what a brief needs and nothing that
-    would have to be invented. The Time cell arrives in three formats (RFC
-    2822, ISO with Z, plain ISO); parse_feed_date already reads all of them.
-    """
-    today = today or datetime.now().date()
-    reduced = []
-    for row in article_rows or []:
-        # Rejects are written to the same sheet with Status "Filtered";
-        # the export path already skips them, but this path fed them back
-        # into the day's brief -- and at the observed ~80% reject rate,
-        # most of the "coverage" handed to the report model was junk the
-        # relevance guard had already thrown out.
-        if str(row.get("Status", "")).strip().lower() == "filtered":
-            continue
-        stamp = parse_feed_date(row.get("Time"))
-        if stamp is None or stamp.date() != today:
-            continue
-        try:
-            score = float(str(row.get("Risk Score", "")).strip() or 0)
-        except (TypeError, ValueError):
-            score = 0.0
-        reduced.append({
-            "title": row.get("Title"),
-            "source": row.get("Source"),
-            "url": row.get("URL"),
-            "analysis": {
-                "summary": row.get("Summary") or "",
-                "category": row.get("Category") or "",
-                "event_type": row.get("Event Type") or "",
-                "risk_score": score,
-                # The extractor's own level when the row has it; older rows
-                # keep only the score, and >=70 mirrors the dashboard's
-                # critical-alert threshold (app.js).
-                "risk_level": str(row.get("Risk Level") or "").strip()
-                or ("High" if score >= 70 else "Standard"),
-                **story_detail.from_row(row),
-            },
-        })
-    return reduced
-
-
-def _int_cell(value: Any) -> int:
-    """Sheet cells come back as int, float, or string; NaN/blank count as 0."""
-    try:
-        return int(float(str(value).strip() or 0))
-    except (TypeError, ValueError):
-        return 0
-
-
-def filter_reason(off_topic) -> str:
-    """Compact durable form of an off-topic verdict for the Filter Reason cell."""
-    if not off_topic:
-        return ""
-    matched = ", ".join(off_topic.matched or [])
-    return f"{off_topic.topic}: {matched}" if matched else str(off_topic.topic)
-
-
-def entity_mentions(analysis: Dict[str, Any]) -> str:
-    """Pipe-joined canonical entity names an analysis attributes to its article.
-
-    This is the only durable article<->entity linkage: the org/person names
-    go to their own sheets without any reference back to the article row.
-    Surface names are kept (not entity_key output) so labels stay readable;
-    consumers normalise with entity_key when joining. Publications and page
-    furniture are excluded the same way the entity sheets exclude them.
-    """
-    names, seen = [], set()
-    for org in analysis.get("organizations") or []:
-        name = str((org or {}).get("name") or "").strip()
-        if not name or is_publication_or_furniture(name):
-            continue
-        key = entity_key(name)
-        if key not in seen:
-            seen.add(key)
-            names.append(name)
-    for person in analysis.get("people") or []:
-        name = str((person or {}).get("name") or "").strip()
-        if not name:
-            continue
-        key = entity_key(name)
-        if key not in seen:
-            seen.add(key)
-            names.append(name)
-    return "|".join(names)
-
-
-def day_totals(report_rows: List[Dict[str, Any]], today_str: str) -> Dict[str, int]:
-    """Sum today's earlier per-run Daily Reports rows.
-
-    Each run writes a per-run row (that stays per-run -- it is the time
-    series), so the exact day-to-date totals are the sum of today's rows
-    plus the current run. Date is compared on its first 10 chars because a
-    historical branch wrote full timestamps into the Date column.
-    """
-    totals = {"Total Articles": 0, "High Risk": 0, "Appointments": 0, "Procurement": 0}
-    for row in report_rows or []:
-        if str(row.get("Date", "")).strip()[:10] != today_str:
-            continue
-        for key in totals:
-            totals[key] += _int_cell(row.get(key))
-    return totals
-
-
-def report_payload(records: List[Dict[str, Any]], summary_limit: int = 400) -> List[Dict[str, Any]]:
-    """Shape records for the report prompt, truncating long summaries.
-
-    A 60-article day would otherwise serialize every full summary into the
-    prompt; past ~400 chars a summary stops adding signal and starts
-    crowding out other articles' context.
-    """
-    payload = []
-    for r in records or []:
-        analysis = dict(r.get("analysis") or {})
-        summary = analysis.get("summary")
-        if isinstance(summary, str) and len(summary) > summary_limit:
-            analysis["summary"] = summary[:summary_limit].rstrip() + "..."
-        payload.append({
-            "title": r.get("title"),
-            "source": r.get("source"),
-            "url": r.get("url"),
-            "analysis": analysis,
-        })
-    return payload
-
-
-def _loose_number(value):
-    """Loose numeric parse for sheet cells: '12.5%', '12,5', 40 -> float, else None."""
-    s = str(value if value is not None else "").strip().replace("%", "").replace(",", "")
-    if not s:
-        return None
-    try:
-        return float(s)
-    except ValueError:
-        return None
-
-
-def compute_cycle_changes(prev: Dict[str, Any], curr: Dict[str, Any]) -> Dict[str, Any]:
-    """Pure diff between the previous static-JSON snapshot and this run's.
-
-    `prev`/`curr` carry the exported row lists under "articles", "companies",
-    "people" and "psc"; missing keys and a missing prev (first run, an old
-    deploy) mean empty. Entities key on their name columns, PSC rows on
-    (Person Name, Company), articles on URL. Everything returned is sorted
-    so the payload is deterministic for a given pair of snapshots.
-    """
-    prev = prev or {}
-    curr = curr or {}
-
-    def names(rows, key):
-        return {str(r.get(key, "")).strip() for r in rows or [] if str(r.get(key, "")).strip()}
-
-    new_companies = sorted(names(curr.get("companies"), "Company") - names(prev.get("companies"), "Company"))
-    new_people = sorted(names(curr.get("people"), "Name") - names(prev.get("people"), "Name"))
-
-    def psc_key(row):
-        return (str(row.get("Person Name", "")).strip().lower(),
-                str(row.get("Company", "")).strip().lower())
-
-    def psc_entry(row):
-        return {"person": str(row.get("Person Name", "")).strip(),
-                "company": str(row.get("Company", "")).strip()}
-
-    prev_psc = {psc_key(r): r for r in prev.get("psc") or [] if any(psc_key(r))}
-    curr_psc = {psc_key(r): r for r in curr.get("psc") or [] if any(psc_key(r))}
-
-    psc_added = [psc_entry(r) for k, r in sorted(curr_psc.items()) if k not in prev_psc]
-    psc_removed = [psc_entry(r) for k, r in sorted(prev_psc.items()) if k not in curr_psc]
-    psc_changed = []
-    for k, r in sorted(curr_psc.items()):
-        if k not in prev_psc:
-            continue
-        before = _loose_number(prev_psc[k].get("Percentage"))
-        after = _loose_number(r.get("Percentage"))
-        if before is not None and after is not None and abs(before - after) > 1e-9:
-            entry = psc_entry(r)
-            entry["from"] = before
-            entry["to"] = after
-            psc_changed.append(entry)
-
-    prev_urls = {str(r.get("URL", "")) for r in prev.get("articles") or [] if r.get("URL")}
-    new_high_risk = []
-    for r in curr.get("articles") or []:
-        url = str(r.get("URL", ""))
-        if url and url in prev_urls:
-            continue
-        score = _loose_number(r.get("Risk Score"))
-        # 70 mirrors the dashboard's alert threshold (app.js).
-        if score is not None and score >= 70:
-            new_high_risk.append({"title": str(r.get("Title", "")), "url": url, "risk": score})
-    new_high_risk.sort(key=lambda e: (-e["risk"], e["title"]))
-
-    return {
-        "new_companies": new_companies,
-        "new_people": new_people,
-        "psc_added": psc_added,
-        "psc_removed": psc_removed,
-        "psc_changed": psc_changed,
-        "new_high_risk": new_high_risk,
-        "counts": {
-            "new_companies": len(new_companies),
-            "new_people": len(new_people),
-            "psc_added": len(psc_added),
-            "psc_removed": len(psc_removed),
-            "psc_changed": len(psc_changed),
-            "new_high_risk": len(new_high_risk),
-        },
-    }
-
+# Pure report helpers live in backend/app/pipeline/report.py; re-exported
+# because callers and tests import them from run_pipeline.
+from backend.app.pipeline.report import (  # noqa: E402,F401  (re-export)
+    _int_cell,
+    _loose_number,
+    compute_cycle_changes,
+    day_totals,
+    entity_mentions,
+    filter_reason,
+    published_today,
+    report_payload,
+)
 
 def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None,
                          cascade_failures: int = 0, run_seconds: int = None,
@@ -1054,197 +824,19 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         "Content": md
     })
 
-def make_node_id(text: str) -> str:
-    """Returns a deterministic string ID for graph nodes."""
-    import hashlib
-    return hashlib.md5((text or "").strip().lower().encode("utf-8")).hexdigest()[:12]
-
-
-def slim_report_rows(reports: List[Dict[str, Any]], keep: int = 120) -> List[Dict[str, Any]]:
-    """Rows for reports.json: the newest `keep`, inline markdown stripped
-    where the identical bytes already exist as an archive file.
-
-    The exported file had grown to ~570KB of which 90% was the Content
-    column -- fetched on every dashboard load, growing ~3.4MB/year, while
-    data/archives/ holds the same markdown per edition. Legacy rows that
-    predate the Archive File column keep their inline Content, since it is
-    the only copy.
-    """
-    out = []
-    for row in (reports or [])[-keep:]:
-        r = dict(row)
-        if str(r.get("Archive File", "")).strip():
-            r["Content"] = ""
-        out.append(r)
-    return out
-
-
-def build_history(report_rows: List[Dict[str, Any]], keep_days: int = 365) -> List[Dict[str, Any]]:
-    """Per-day rollup of the Daily Reports tab for history.json.
-
-    The health panel previously re-derived a 30-day view client-side by
-    parsing 120 heavy report rows; this gives it a year in a small payload,
-    and it is the first export to carry the filter funnel (candidates /
-    rejected / undated) that the sheet records but nothing rendered.
-    Dates compare on their first 10 chars because a historical branch wrote
-    full timestamps into the Date column. Pure aggregation over rows the
-    exporter already has in memory -- no extra Sheets read.
-    """
-    days: Dict[str, Dict[str, Any]] = {}
-    for row in report_rows or []:
-        date = str(row.get("Date", "")).strip()[:10]
-        if not date:
-            continue
-        d = days.setdefault(date, {
-            "date": date, "runs": 0, "articles": 0, "high_risk": 0,
-            "appointments": 0, "procurement": 0, "cascade_failures": 0,
-            "candidates": 0, "rejected": 0, "undated": 0, "run_seconds": 0,
-        })
-        d["runs"] += 1
-        d["articles"] += _int_cell(row.get("Total Articles"))
-        d["high_risk"] += _int_cell(row.get("High Risk"))
-        d["appointments"] += _int_cell(row.get("Appointments"))
-        d["procurement"] += _int_cell(row.get("Procurement"))
-        d["cascade_failures"] += _int_cell(row.get("Cascade Failures"))
-        d["candidates"] += _int_cell(row.get("Candidates"))
-        d["rejected"] += _int_cell(row.get("Rejected"))
-        d["undated"] += _int_cell(row.get("Undated"))
-        d["run_seconds"] += _int_cell(row.get("Run Seconds"))
-    return [days[k] for k in sorted(days)][-keep_days:]
-
-
-def build_sources(article_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Per-publisher scorecard over the full Articles history for sources.json.
-
-    The dashboard's engine-mix chart answers "which extractor ran" over the
-    newest 60 articles only; this answers, over the whole corpus, which
-    feeds actually earn their fetches: volume, accept rate (Filtered rows
-    are the rejects), mean risk of what was published, engine mix and the
-    most recent sighting. Aggregation only -- no extra Sheets read.
-    """
-    sources: Dict[str, Dict[str, Any]] = {}
-    for row in article_rows or []:
-        name = str(row.get("Source", "")).strip() or "Unknown"
-        s = sources.setdefault(name, {
-            "source": name, "total": 0, "published": 0, "filtered": 0,
-            "risk_sum": 0, "risk_n": 0, "engines": {}, "last_seen": "",
-        })
-        s["total"] += 1
-        if str(row.get("Status", "")).strip().lower() == "filtered":
-            s["filtered"] += 1
-        else:
-            s["published"] += 1
-            s["risk_sum"] += _int_cell(row.get("Risk Score"))
-            s["risk_n"] += 1
-            engine = str(row.get("Engine", "")).strip() or "unknown"
-            s["engines"][engine] = s["engines"].get(engine, 0) + 1
-        stamp = parse_feed_date(row.get("Time"))
-        if stamp is not None:
-            iso = stamp.strftime("%Y-%m-%d")
-            if iso > s["last_seen"]:
-                s["last_seen"] = iso
-    out = []
-    for s in sorted(sources.values(), key=lambda x: (-x["total"], x["source"])):
-        out.append({
-            "source": s["source"],
-            "total": s["total"],
-            "published": s["published"],
-            "filtered": s["filtered"],
-            "accept_rate": round(100.0 * s["published"] / s["total"]) if s["total"] else 0,
-            "avg_risk": round(s["risk_sum"] / s["risk_n"], 1) if s["risk_n"] else None,
-            "engines": s["engines"],
-            "last_seen": s["last_seen"],
-        })
-    return out
-
-
-# entity_key moved to backend.app.services.analytics (Package 22) so the
-# derived-analytics functions can share the exact same identity rule;
-# re-imported here because dedupe_entity_rows and half the test suite
-# address it as run_pipeline.entity_key.
-from backend.app.services.analytics import entity_key  # noqa: E402  (re-export)
-
-
-def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
-                       count_key: str = None) -> List[Dict[str, Any]]:
-    """Suffix-normalised dedupe of exported entity rows.
-
-    The Companies sheet holds e.g. eight copies of one outlet and People
-    734 rows for 627 distinct (name, organization) pairs -- legacy rows
-    written before add_company's find-or-update existed -- plus 25
-    measured suffix-variant groups ("NNPC" / "NNPC Limited" / "NNPC Ltd").
-    First occurrence keeps its position. When `count_key` is given the
-    highest-count row wins, its count becomes the SUM across the group
-    (the mentions were all of one entity), and the longest surface form
-    becomes the label; otherwise the latest duplicate (freshest row) wins.
-    """
-    best: Dict[Any, Dict[str, Any]] = {}
-    counts: Dict[Any, int] = {}
-    labels: Dict[Any, str] = {}
-    order: List[Any] = []
-    for row in rows or []:
-        key = tuple(entity_key(row.get(f)) for f in key_fields)
-        if not any(key):
-            continue
-        if count_key:
-            counts[key] = counts.get(key, 0) + _int_cell(row.get(count_key))
-            surface = str(row.get(key_fields[0], "")).strip()
-            if len(surface) > len(labels.get(key, "")):
-                labels[key] = surface
-        if key not in best:
-            best[key] = row
-            order.append(key)
-        elif count_key:
-            if _int_cell(row.get(count_key)) > _int_cell(best[key].get(count_key)):
-                best[key] = row
-        else:
-            best[key] = row
-    out = []
-    for k in order:
-        row = best[k]
-        if count_key:
-            row = dict(row)
-            row[count_key] = counts[k]
-            if labels.get(k):
-                row[key_fields[0]] = labels[k]
-        out.append(row)
-    return out
-
-
-def collapse_identical_rows(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Drop rows that repeat an earlier row field-for-field, keeping order.
-
-    The Significant Control tab still holds an exact duplicate pair written
-    before add_significant_control learned to refuse repeats (see
-    tests/test_psc_dedupe.py). Rows that differ in any field -- a later
-    report of the same holding with a new date or stake -- are kept: they
-    are history, and the site groups them by holding instead.
-    """
-    seen = set()
-    out = []
-    for row in rows or []:
-        key = tuple(sorted((str(k), str(v).strip()) for k, v in (row or {}).items()))
-        if key in seen:
-            continue
-        seen.add(key)
-        out.append(row)
-    return out
-
-
-def top_rows(rows: List[Dict[str, Any]], n: int, count_key: str = None,
-             date_key: str = None) -> List[Dict[str, Any]]:
-    """The N rows most worth graphing, instead of the first N inserted.
-
-    The graph slices used to take `companies[:20]` etc. over sheets in
-    insertion order -- a fixed window onto the oldest records. Sorts by
-    mention count (when given) then date string (ISO-ish, so lexical works),
-    both descending; stable, so ties keep sheet order.
-    """
-    def sort_key(row):
-        count = _int_cell(row.get(count_key)) if count_key else 0
-        date = str(row.get(date_key, "")) if date_key else ""
-        return (count, date)
-    return sorted(rows or [], key=sort_key, reverse=True)[:n]
+# Pure row helpers live in backend/app/pipeline/rows.py (re-exported).
+# entity_key lives in backend.app.services.analytics; half the test suite
+# addresses it as run_pipeline.entity_key.
+from backend.app.services.analytics import entity_key  # noqa: E402,F401  (re-export)
+from backend.app.pipeline.rows import (  # noqa: E402,F401  (re-export)
+    build_history,
+    build_sources,
+    collapse_identical_rows,
+    dedupe_entity_rows,
+    make_node_id,
+    slim_report_rows,
+    top_rows,
+)
 
 def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[str, Any]]) -> None:
     """The Morning Brief email edition (email_digest.json).
@@ -1483,81 +1075,12 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "changes.json"), "w", encoding="utf-8") as f:
         json.dump(changes, f, default=str, indent=2)
 
-    # Context signals: weather for the two home ports and term/category
-    # momentum over our own articles (plus a best-effort r/Nigeria social
-    # column). Fetched pipeline-side because the site's CSP pins
-    # connect-src to 'self'. Strictly best-effort -- neither may ever fail
-    # a news run, and a failed weather fetch keeps the previous file
-    # rather than publishing an empty one.
-    try:
-        from backend.app.services.weather import fetch_weather
-        weather = fetch_weather()
-        if weather:
-            with open(os.path.join(DATA_DIR, "weather.json"), "w", encoding="utf-8") as f:
-                json.dump(weather, f, default=str, indent=2)
-    except Exception as exc:  # pragma: no cover - defensive
-        logger.warning(f"Weather export skipped: {exc}")
+    # Side feeds (weather, FX, markets, headlines, news categories): all
+    # keyless and best-effort -- see backend/app/pipeline/side_feeds.py.
+    side_feeds.export_side_feeds(DATA_DIR)
 
-    # Naira FX snapshot (USD/EUR/GBP), same contract as weather: fetched
-    # pipeline-side (CSP pins connect-src to 'self'), one history point
-    # per day with the day's latest run winning, and a failed fetch keeps
-    # the previous file with its honest date rather than an empty one.
-    try:
-        from backend.app.services.fx import fetch_rates, merge_history
-        fx_path = os.path.join(DATA_DIR, "fx.json")
-        existing_fx = None
-        if os.path.exists(fx_path):
-            try:
-                with open(fx_path, encoding="utf-8") as f:
-                    existing_fx = json.load(f)
-            except Exception:
-                existing_fx = None
-        fx = merge_history(existing_fx, fetch_rates(), datetime.now())
-        if fx:
-            with open(fx_path, "w", encoding="utf-8") as f:
-                json.dump(fx, f, default=str, indent=2)
-    except Exception as exc:  # pragma: no cover - defensive
-        logger.warning(f"FX export skipped: {exc}")
-
-    # News-center verticals (Package 30): world/culture headlines, market
-    # quotes with daily history, HF trending models + papers. All keyless,
-    # all outside the LLM pipeline, all best-effort; a dead source shrinks
-    # its section rather than failing the run or blanking the previous file.
-    try:
-        from backend.app.services.verticals import build_world_now
-        world = build_world_now()
-        if world.get("world") or world.get("culture"):
-            with open(os.path.join(DATA_DIR, "world_now.json"), "w", encoding="utf-8") as f:
-                json.dump(world, f, default=str, indent=2)
-    except Exception as exc:  # pragma: no cover - defensive
-        logger.warning(f"World-now export skipped: {exc}")
-
-    try:
-        from backend.app.services.verticals import fetch_market_rates, merge_market_history
-        markets_path = os.path.join(DATA_DIR, "markets.json")
-        existing_markets = None
-        if os.path.exists(markets_path):
-            try:
-                with open(markets_path, encoding="utf-8") as f:
-                    existing_markets = json.load(f)
-            except Exception:
-                existing_markets = None
-        markets = merge_market_history(existing_markets, fetch_market_rates(), datetime.now())
-        if markets:
-            with open(markets_path, "w", encoding="utf-8") as f:
-                json.dump(markets, f, default=str, indent=2)
-    except Exception as exc:  # pragma: no cover - defensive
-        logger.warning(f"Markets export skipped: {exc}")
-
-    try:
-        from backend.app.services.verticals import build_ai_pulse
-        pulse = build_ai_pulse()
-        if pulse.get("models") or pulse.get("papers"):
-            with open(os.path.join(DATA_DIR, "ai_pulse.json"), "w", encoding="utf-8") as f:
-                json.dump(pulse, f, default=str, indent=2)
-    except Exception as exc:  # pragma: no cover - defensive
-        logger.warning(f"AI-pulse export skipped: {exc}")
-
+    # Term/category momentum over our own articles, plus a best-effort
+    # r/Nigeria social column.
     try:
         from backend.app.services.trends import compute_trends, fetch_reddit_nigeria
         trends = compute_trends(articles)
@@ -1567,20 +1090,6 @@ def export_static_json_database():
             json.dump(trends, f, default=str, indent=2)
     except Exception as exc:  # pragma: no cover - defensive
         logger.warning(f"Trends export skipped: {exc}")
-
-    # Tech & AI headlines: a keyless, LLM-free side vertical rendered in
-    # its own panel. Best-effort, and an empty result keeps the previous
-    # file rather than blanking the panel over one bad fetch window.
-    try:
-        from backend.app.services.tech_news import build_tech_news
-        tech = build_tech_news()
-        if tech.get("ai") or tech.get("dev"):
-            with open(os.path.join(DATA_DIR, "tech_news.json"), "w", encoding="utf-8") as f:
-                json.dump(tech, f, default=str, indent=2)
-        else:
-            logger.warning("Tech news export skipped: every feed came back empty.")
-    except Exception as exc:  # pragma: no cover - defensive
-        logger.warning(f"Tech news export skipped: {exc}")
 
     # Lead images: API-supplied ones from this run, then a capped og:image
     # lookup for published rows still missing one. Never fails the export.

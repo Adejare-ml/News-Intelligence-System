@@ -18,12 +18,12 @@ from typing import Any, Dict, List, Optional
 
 import requests
 
-from backend.app.services.tech_news import (
+from backend.app.services.headlines import (
     REQUEST_TIMEOUT_SECONDS,
     USER_AGENT,
-    _fetch_feed,
-    _google_rss_url,
-    dedupe_items,
+    google_search_url,
+    google_topic_url,
+    merged_section,
 )
 
 logger = logging.getLogger(__name__)
@@ -32,8 +32,11 @@ MAX_HISTORY_DAYS = 365
 
 
 def _google_topic_url(topic: str) -> str:
-    return ("https://news.google.com/rss/headlines/section/topic/"
-            + topic + "?hl=en-US&gl=US&ceid=US:en")
+    return google_topic_url(topic, "global")
+
+
+def _google_rss_url(query: str) -> str:
+    return google_search_url(query, "global")
 
 
 # ---------------------------------------------------------------------------
@@ -58,10 +61,7 @@ def build_world_now(cap: int = 10) -> Dict[str, Any]:
         "generated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }
     for section, urls in WORLD_SECTIONS.items():
-        merged: List[Dict[str, Any]] = []
-        for url in urls:
-            merged.extend(_fetch_feed(url, "Google News"))
-        payload[section] = dedupe_items(merged, cap)
+        payload[section] = merged_section(urls, cap=cap)
     return payload
 
 
