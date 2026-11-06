@@ -123,3 +123,46 @@ test("unsubscribe still works", async () => {
   await unsubscribe({ request: get(`/api/unsubscribe?token=${T("a")}`), env: { DB: db } });
   assert.equal((await subscriberStore(db).byToken(T("a")))!.status, "unsubscribed");
 });
+
+test("a pending sign-up keeps its owner's choices; its confirmation mail says so", async () => {
+  const db = sqliteD1();
+  const mails: { to: string[]; subject: string; html: string }[] = [];
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = (async (_u: RequestInfo | URL, init?: RequestInit) => { mails.push(JSON.parse(String(init?.body))); return new Response("{}"); }) as typeof fetch;
+  try {
+    const env: Env = { DB: db, EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test" };
+    await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["business", "sports"], frequency: "weekly" }), env });
+    await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["entertainment"] }), env });
+    const row = (await subscriberStore(db).byEmail("p@x.co"))!;
+    assert.deepEqual([row.categories, row.frequency], [["business", "sports"], "weekly"]);
+    assert.match(mails[1].html, /Business and Sports \(Nigeria\), once a week/, "the second confirmation names the owner's choices");
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+});
+
+test("every address gets the same answer; a confirmed one gets an already-subscribed email", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "c@x.co", token: T("c"), categories: "politics" });
+  const mails: { to: string[]; subject: string; html: string }[] = [];
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = (async (_u: RequestInfo | URL, init?: RequestInit) => { mails.push(JSON.parse(String(init?.body))); return new Response("{}"); }) as typeof fetch;
+  try {
+    const env: Env = { DB: db, EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test", SITE_URL: SITE };
+    const known = await (await subscribe({ request: post("/api/subscribe", { email: "c@x.co" }), env })).text();
+    const fresh = await (await subscribe({ request: post("/api/subscribe", { email: "n@x.co" }), env })).text();
+    assert.equal(known, fresh);
+    assert.match(mails[0].subject, /already/);
+    assert.match(mails[0].html, new RegExp(`/api/preferences\\?token=${T("c")}`));
+    assert.match(mails[1].subject, /Confirm/);
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+});
+
+test("the form with no boxes ticked is an error, not a Business sign-up", async () => {
+  const db = sqliteD1();
+  const res = await subscribe({ request: post("/api/subscribe", { email: "nojs@x.co", choices: "1", region: "nigeria" }, true), env: { DB: db } });
+  assert.equal(res.status, 400);
+  assert.equal(await subscriberStore(db).byEmail("nojs@x.co"), null);
+});

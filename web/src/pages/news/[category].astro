@@ -24,6 +24,8 @@ const lists = regionLists(news, category);
 const updated = generatedDate(news.generated);
 const now = updated ?? new Date();
 const total = lists.reduce((n, l) => n + l.items.length, 0);
+// Open on Nigeria, unless it is empty and Global is not.
+const start = lists.find((l) => l.items.length)?.id ?? lists[0].id;
 ---
 <Base title={`${meta.label} · AURA`} description={`${meta.label} headlines from Nigeria and around the world, collected by AURA four times a day.`}>
   <section class="wrap intro">
@@ -39,8 +41,8 @@ const total = lists.reduce((n, l) => n + l.items.length, 0);
   <section class="wrap">
     <div class="bar" data-reveal>
       <div class="regions" role="group" aria-label="Edition" data-region-switch hidden>
-        {lists.map((l, i) => (
-          <button type="button" class="region" data-region-btn={l.id} aria-pressed={i === 0 ? "true" : "false"}>
+        {lists.map((l) => (
+          <button type="button" class="region" data-region-btn={l.id} aria-pressed={l.id === start ? "true" : "false"}>
             {l.label} <span class="count">{l.items.length}</span>
           </button>
         ))}
@@ -127,6 +129,12 @@ const total = lists.reduce((n, l) => n + l.items.length, 0);
     background: var(--text);
     color: var(--bg);
     border-color: var(--text);
+  }
+  @media (forced-colors: active) {
+    .region[aria-pressed="true"] {
+      outline: 2px solid Highlight;
+      outline-offset: 2px;
+    }
   }
   .count {
     opacity: 0.6;

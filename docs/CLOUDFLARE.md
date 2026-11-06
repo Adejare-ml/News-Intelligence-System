@@ -114,12 +114,18 @@ What each reader gets depends on what they chose at sign-up:
 - **Sports, Technology, Politics, Entertainment** are headline sections from
   `category_news.json` (`/brief/email/section/<category>/`), in the Nigeria
   edition, the Global one, or both. Readers without Business get them in the
-  shell at `/brief/email/shell/`. Headlines older than 36 hours are left out.
-- **Weekly** readers get the Monday email only.
+  shell at `/brief/email/shell/`. Headlines older than 36 hours are left out,
+  and so is a category with no headlines in the reader's regions.
+- **Weekly** readers get the Monday email only. If they chose Business, it
+  carries the week in business (the Sunday weekly wrap,
+  `/brief/email/section/business-week/`) instead of Monday's daily brief;
+  if the wrap is more than 48 hours old, they get Monday's brief.
 
 Readers with the same choices share one copy, so each distinct email is
-built once. Preview any mix with
-`POST /api/send-brief?test=1&categories=business,sports&region=both`.
+built once, and all copies go out in one pass: one Gmail session under one
+daily cap, or shared Resend/Brevo batches. Preview any mix with
+`POST /api/send-brief?test=1&categories=business,sports&region=both`
+(add `&frequency=weekly` to preview the weekly email).
 
 How it works: the subscriber list stays in D1. The scheduler waits until
 production shows the new edition, then calls `POST /api/send-brief` with a

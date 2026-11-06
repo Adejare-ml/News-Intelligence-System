@@ -110,3 +110,12 @@ export interface CategoryNews {
 }
 /** Sports, technology, politics and entertainment headlines, Nigeria and Global editions. */
 export const categoryNews = () => readJson<CategoryNews>("category_news.json", {});
+
+/** The Sunday weekly wrap (backend/app/services/weekly.py). */
+export interface WeeklyWrap {
+  week_start?: string;
+  week_end?: string;
+  generated?: string;
+  markdown?: string;
+}
+export const weeklyWrap = () => readJson<WeeklyWrap>("weekly_wrap.json", {});

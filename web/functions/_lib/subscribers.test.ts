@@ -27,15 +27,18 @@ test("legacy rows read as business, Nigeria, daily", async () => {
   assert.deepEqual([row!.categories, row!.region, row!.frequency, row!.paused], [["business"], "nigeria", "daily", false]);
 });
 
-test("reopen never touches a confirmed row", async () => {
+test("reopen only touches unsubscribed rows", async () => {
   const db = sqliteD1();
   addSubscriber(db, { email: "c@x.co", token: T("c"), status: "confirmed" });
   addSubscriber(db, { email: "u@x.co", token: T("u"), status: "unsubscribed", paused: 1 });
   const store = subscriberStore(db);
   const prefs = { categories: ["sports" as const], region: "global" as const, frequency: "daily" as const };
+  addSubscriber(db, { email: "p@x.co", token: T("d"), status: "pending" });
   await store.reopen("c@x.co", prefs);
   await store.reopen("u@x.co", prefs);
+  await store.reopen("p@x.co", prefs);
   assert.deepEqual((await store.byEmail("c@x.co"))!.categories, ["business"]);
+  assert.deepEqual((await store.byEmail("p@x.co"))!.categories, ["business"], "a pending row keeps its owner's choices");
   const u = (await store.byEmail("u@x.co"))!;
   assert.deepEqual([u.status, u.categories, u.paused], ["pending", ["sports"], false]);
 });

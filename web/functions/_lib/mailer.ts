@@ -119,6 +119,24 @@ export function confirmationMail(site: string, email: string, token: string, pre
   };
 }
 
+/** For an address that is already confirmed: no new sign-up, just their own link to change it. */
+export function alreadySubscribedMail(site: string, email: string, token: string, prefs: Prefs): Mail {
+  const manage = `${site}/api/preferences?token=${token}`;
+  const chosen = describePrefs(prefs);
+  const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return {
+    to: email,
+    subject: "You’re already getting the AURA Morning Brief",
+    text: `Someone (probably you) asked to sign this address up for the AURA Morning Brief. You're already subscribed: ${chosen}.\nChange what you get: ${manage}\n\nDidn't ask? You can ignore this email.`,
+    html: `<div style="font-family:Georgia,serif;max-width:520px;margin:auto;padding:24px;color:#1b1a17">
+<p style="letter-spacing:.14em;font:600 12px system-ui;color:#9c7420">AURA · MORNING BRIEF</p>
+<h1 style="font-weight:500">You’re already subscribed.</h1>
+<p style="font:16px/1.6 system-ui">Someone (probably you) asked to sign this address up. You already get: <strong>${esc(chosen)}</strong>.</p>
+<p><a href="${manage}" style="display:inline-block;background:#1e3fae;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font:600 15px system-ui">Change what I get</a></p>
+<p style="font:13px/1.6 system-ui;color:#6b6558">Didn't ask? You can ignore this email.</p></div>`,
+  };
+}
+
 /* ---------- The daily Morning Brief ---------- */
 
 /** One subscriber's copy: the brief with their own unsubscribe (and preferences) link. */
@@ -235,13 +253,14 @@ export function brevoBatchPayload(from: string, mails: BriefMail[]) {
     sender: parseFrom(from),
     subject: mails[0]?.subject ?? "",
     htmlContent: "<p>AURA Morning Brief</p>",
-    messageVersions: mails.map((m) => ({ to: [{ email: m.to }], subject: m.subject, htmlContent: m.html })),
+    messageVersions: mails.map((m) => ({ to: [{ email: m.to }], subject: m.subject, htmlContent: m.html, textContent: m.text })),
   };
 }
 
 /**
  * Sends the brief in batches (Resend: 100 per call; Brevo: 50 per call).
- * Few calls per run, well inside a Pages Function's subrequest limit.
+ * Mails may differ in subject and body (several mixes share one batch), so
+ * the call count follows the list size: well inside a Function's subrequest limit.
  * Returns how many were accepted and how many failed.
  */
 export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: number; failed: number; error?: string }> {
@@ -304,39 +323,54 @@ export interface Recipient {
   preferences?: string;
 }
 
+/** One distinct email and the readers who get it. */
+export interface BriefJob {
+  brief: BriefTemplate;
+  recipients: Recipient[];
+}
+
 /**
- * Sends one brief to many people, each with their own unsubscribe link.
- * Gmail encodes the email once and only swaps the link per person, so a
- * large list stays inside a Function's CPU budget.
+ * Sends several distinct briefs (one per mix of reader choices) in one pass:
+ * one SMTP session for Gmail, under one daily cap across every brief, and
+ * shared batches for Resend and Brevo, so the number of provider calls
+ * grows with the list size, not with the number of distinct mixes.
+ * Each brief is encoded once; only the links change per reader.
  */
-export async function sendBrief(
-  env: Env,
-  brief: BriefTemplate,
-  recipients: Recipient[],
-): Promise<{ sent: number; failed: number; error?: string }> {
+export async function sendBriefs(env: Env, jobs: BriefJob[]): Promise<{ sent: number; failed: number; error?: string }> {
+  const total = jobs.reduce((n, j) => n + j.recipients.length, 0);
+  if (!total) return { sent: 0, failed: 0 };
   if (provider(env) === "gmail") {
     const from = gmailFrom(env);
-    const build = compileMessage({ from, ...brief });
-    const allowed = recipients.slice(0, GMAIL_DAILY_CAP);
-    const result = await smtpSend(
-      smtpTransport.open(env),
-      gmailLogin(env),
-      allowed.map((r) => ({ from, to: r.to, data: () => build(r.to, { unsubscribe: r.unsubscribe, preferences: r.preferences }) })),
-    );
-    const over = recipients.length - allowed.length;
+    const envelopes: { from: string; to: string; data: () => string }[] = [];
+    for (const job of jobs) {
+      const build = compileMessage({ from, ...job.brief });
+      for (const r of job.recipients) {
+        if (envelopes.length >= GMAIL_DAILY_CAP) break;
+        envelopes.push({ from, to: r.to, data: () => build(r.to, { unsubscribe: r.unsubscribe, preferences: r.preferences }) });
+      }
+    }
+    const result = await smtpSend(smtpTransport.open(env), gmailLogin(env), envelopes);
+    const over = total - envelopes.length;
     return over > 0
       ? { ...result, failed: result.failed + over, error: `Gmail daily cap: ${over} not sent` }
       : result;
   }
   return sendBatch(
     env,
-    recipients.map((r) => ({
-      to: r.to,
-      subject: brief.subject,
-      html: personalise(brief.html, r.unsubscribe, r.preferences),
-      text: personaliseText(brief.text, r.unsubscribe, r.preferences),
-      unsubscribe: r.unsubscribe,
-      preferences: r.preferences,
-    })),
+    jobs.flatMap((job) =>
+      job.recipients.map((r) => ({
+        to: r.to,
+        subject: job.brief.subject,
+        html: personalise(job.brief.html, r.unsubscribe, r.preferences),
+        text: personaliseText(job.brief.text, r.unsubscribe, r.preferences),
+        unsubscribe: r.unsubscribe,
+        preferences: r.preferences,
+      })),
+    ),
   );
+}
+
+/** One brief to many people, each with their own links. */
+export function sendBrief(env: Env, brief: BriefTemplate, recipients: Recipient[]): Promise<{ sent: number; failed: number; error?: string }> {
+  return sendBriefs(env, [{ brief, recipients }]);
 }

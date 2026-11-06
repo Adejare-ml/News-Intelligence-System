@@ -59,6 +59,8 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
             ))}
           </div>
         </fieldset>
+        <!-- Tells the server these choices came from this form (see functions/api/subscribe.ts). -->
+        <input type="hidden" name="choices" value="1" />
         <!-- Honeypot: invisible to people, tempting to bots. -->
         <input class="hp" type="text" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <p class="status" role="status" aria-live="polite" data-subscribe-status></p>
@@ -231,6 +233,17 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
   }
   .hint {
     margin: 8px 4px 0;
+  }
+  @media (forced-colors: active) {
+    /* System colours replace the gold fill, so the chosen state needs a shape too. */
+    .pick input:checked + span {
+      outline: 2px solid Highlight;
+      outline-offset: 2px;
+    }
+    .pick input:focus-visible + span {
+      outline: 2px dashed Highlight;
+      outline-offset: 2px;
+    }
   }
   .privacy {
     margin: 0 4px;

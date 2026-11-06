@@ -59,6 +59,7 @@ document.querySelectorAll<HTMLFormElement>("form[data-subscribe]").forEach((form
           categories,
           region: checkedValues(form, "region")[0] || "nigeria",
           frequency: checkedValues(form, "frequency")[0] || "daily",
+          choices: "1",
           company_site: (form.elements.namedItem("company_site") as HTMLInputElement)?.value || "",
         }),
       });
