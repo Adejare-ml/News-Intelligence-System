@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { onRequestPost, sameSecret, lagosDay, readMeta, stripScripts } from "./send-brief.ts";
 import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom } from "../_lib/mailer.ts";
 import { fakeSmtp } from "../_lib/smtp-fake.test.ts";
+import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import type { Env } from "../_lib/http.ts";
 
 const SECRET = "s3cret-for-tests-0123456789";
@@ -13,40 +14,20 @@ const TEMPLATE = `<!doctype html><html><head>
 </head><body><p>Hello &amp; welcome</p><a href="https://auranews.pages.dev/brief/">Read the full brief</a>
 <a href="{{unsubscribe_url}}">Unsubscribe</a></body></html>`;
 
-/** A tiny in-memory stand-in for the D1 calls the endpoint makes. */
-function fakeDb(subscribers: { email: string; token: string; status: string }[]) {
-  const sends = new Map<string, { edition: string; finished_at: string | null; sent: number; failed: number }>();
-  const db = {
-    sends,
-    prepare(sql: string) {
-      return {
-        bind(...v: unknown[]) {
-          return {
-            async first<T>() {
-              if (sql.startsWith("SELECT edition, finished_at FROM sends")) return (sends.get(String(v[0])) ?? null) as T;
-              if (sql.startsWith("SELECT day FROM sends WHERE edition")) {
-                for (const [day, row] of sends) if (row.edition === v[0] && row.finished_at) return { day } as T;
-                return null;
-              }
-              return null;
-            },
-            async all<T>() {
-              return { results: subscribers.filter((s) => s.status === "confirmed").map(({ email, token }) => ({ email, token })) as T[] };
-            },
-            async run() {
-              if (sql.startsWith("INSERT INTO sends")) sends.set(String(v[0]), { edition: String(v[1]), finished_at: null, sent: 0, failed: 0 });
-              if (sql.startsWith("UPDATE sends")) {
-                const row = sends.get(String(v[3]))!;
-                Object.assign(row, { finished_at: String(v[0]), sent: Number(v[1]), failed: Number(v[2]) });
-              }
-              return {};
-            },
-          };
-        },
-      };
+/** The real schema in SQLite, plus a small handle on the sends table for setup and checks. */
+function fakeDb(subscribers: { email: string; token: string; status: string; categories?: string; region?: string; frequency?: string; paused?: number }[]) {
+  const db = sqliteD1();
+  for (const s of subscribers) addSubscriber(db, s);
+  const sends = {
+    set(day: string, row: { edition: string; finished_at: string | null; sent: number; failed: number }) {
+      db.raw.prepare("INSERT INTO sends (day, edition, started_at, finished_at, sent, failed) VALUES (?, ?, ?, ?, ?, ?)")
+        .run(day, row.edition, row.finished_at ?? "", row.finished_at, row.sent, row.failed);
+    },
+    get size() {
+      return Number((db.raw.prepare("SELECT COUNT(*) AS n FROM sends").get() as { n: number }).n);
     },
   };
-  return db;
+  return Object.assign(db, { sends });
 }
 
 const subs = [

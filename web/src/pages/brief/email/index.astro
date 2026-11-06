@@ -9,13 +9,14 @@
  * links instead of raw URLs, and sections with nothing new folded into one
  * line.
  */
-import * as data from "../../lib/data.ts";
-import { parseBrief, isQuietItem, type BriefItem, type BriefSection } from "../../lib/brief.ts";
-import { listEditions } from "../../lib/archive.ts";
-import { lagosDate } from "../../lib/edition.ts";
-import { groupHoldings, describeHolding } from "../../lib/psc.ts";
-import { readDigest } from "../../lib/digest.ts";
-import DigestEmail from "../../components/email/DigestEmail.astro";
+import * as data from "../../../lib/data.ts";
+import { parseBrief, isQuietItem, type BriefItem, type BriefSection } from "../../../lib/brief.ts";
+import { listEditions } from "../../../lib/archive.ts";
+import { lagosDate } from "../../../lib/edition.ts";
+import { groupHoldings, describeHolding } from "../../../lib/psc.ts";
+import { readDigest } from "../../../lib/digest.ts";
+import DigestEmail from "../../../components/email/DigestEmail.astro";
+import { ink, muted, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } from "../../../components/email/theme.ts";
 
 // The pipeline's edition (every story since the last email, as cards). The
 // markdown brief below is only the fallback when no edition file exists.
@@ -64,14 +65,6 @@ const summary = [
   `${total} ${total === 1 ? "story" : "stories"}`,
 ].filter(Boolean).join(" · ");
 
-const ink = "#1b1a17";
-const muted = "#6b6558";
-const gold = "#9c7420";
-const royal = "#1e3fae";
-const alertRed = "#a3312a";
-const rule = "#e7e0cf";
-const sans = "Helvetica,Arial,sans-serif";
-const serif = "Georgia,'Times New Roman',serif";
 ---
 <!doctype html>
 <html lang="en">
@@ -157,9 +150,11 @@ const serif = "Georgia,'Times New Roman',serif";
           <tr><td style="padding:12px 32px 28px;">
             <a href={`${site}/brief/`} style={`display:inline-block;background:${royal};color:#ffffff;padding:12px 22px;border-radius:999px;font:600 15px ${sans};text-decoration:none;`}>Read the full brief</a>
           </td></tr>
+          <Fragment set:html={SECTIONS_SLOT} />
           <tr><td style={`padding:18px 32px 28px;font:12px/1.6 ${sans};color:${muted};border-top:1px solid ${rule};`}>
             Compiled automatically from news reporting. Records are not the CAC register.
-            You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.
+            You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.{" "}
+            <a href="{{preferences_url}}" style={`color:${muted};`}>Change topics</a>{" · "}
             <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.
           </td></tr>
         </table>

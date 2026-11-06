@@ -1,41 +1,53 @@
 /**
  * POST /api/send-brief   Authorization: Bearer <BRIEF_SEND_SECRET>
  *
- * Emails today's Morning Brief to every confirmed subscriber. Called by the
- * scheduler after the 08:00 Lagos run has been published, so the brief it
- * sends is the one the site shows. Subscriber addresses never leave
+ * Emails today's Morning Brief to every confirmed, unpaused subscriber who
+ * is due (daily readers every day, weekly readers on Mondays, Lagos time).
+ * Called by the scheduler after the 08:00 Lagos run has been published, so
+ * what it sends is what the site shows. Subscriber addresses never leave
  * Cloudflare: GitHub only holds the secret that triggers this.
  *
- *   ?dry_run=1  report the edition, subject and recipient count; send nothing
- *   ?test=1     send one copy to OWNER_EMAIL; record nothing
+ * Each reader gets one email with the kinds of news they chose. Readers
+ * with the same choices share a copy, so each distinct email is built once:
+ *   - Business readers: the brief page (/brief/email/);
+ *   - everyone else: the shell page (/brief/email/shell/);
+ *   - then each chosen headline category (/brief/email/section/<id>/) goes
+ *     in at the sections slot, with only the regions the reader chose.
  *
- * Safe to call twice: one send per Lagos day, and an edition that was
- * already sent (the pipeline produced nothing new) is never sent again.
+ *   ?dry_run=1  report the edition, subject and recipient counts; send nothing
+ *   ?test=1     send one copy to OWNER_EMAIL; record nothing. Add
+ *               &categories=business,sports&region=both to preview a mix.
+ *
+ * Safe to call twice: one send per Lagos day. A business edition that was
+ * already sent (the pipeline produced nothing new) is not sent again; readers
+ * who also chose headline categories still get those.
  */
-import { json, type Ctx, type Env } from "../_lib/http.ts";
+import { authorised, json, type Ctx, type Env } from "../_lib/http.ts";
+import { decodeEntities, htmlToText, preferencesUrl, sendBrief, sendingEnabled, unsubscribeUrl } from "../_lib/mailer.ts";
 import {
-  decodeEntities, htmlToText, sendBrief, sendingEnabled, unsubscribeUrl,
-} from "../_lib/mailer.ts";
+  categoryLabel, comboKey, editionsFor, headlineCategories, listLabels, parseCategories, parseRegion,
+  type Edition, type HeadlineCategory, type Prefs,
+} from "../_lib/categories.ts";
+import { sendLog, subscriberStore, type Subscriber } from "../_lib/subscribers.ts";
 
-/** Constant-time string comparison, so the secret cannot be guessed by timing. */
-export function sameSecret(a: string, b: string): boolean {
-  const enc = new TextEncoder();
-  const x = enc.encode(a);
-  const y = enc.encode(b);
-  let diff = x.length ^ y.length;
-  for (let i = 0; i < Math.max(x.length, y.length); i++) diff |= (x[i] ?? 0) ^ (y[i] ?? 0);
-  return diff === 0;
-}
+// Kept as exports here: older tests and scripts import them from this module.
+export { sameSecret, authorised } from "../_lib/http.ts";
 
-export function authorised(request: Request, env: Env): boolean {
-  const secret = env.BRIEF_SEND_SECRET || "";
-  const header = request.headers.get("Authorization") || "";
-  const given = header.startsWith("Bearer ") ? header.slice(7).trim() : "";
-  return secret.length >= 16 && given.length > 0 && sameSecret(given, secret);
-}
+export const SECTIONS_SLOT = "<!--aura:sections-->";
+/** Headlines older than this are left out rather than sent as news. */
+export const MAX_HEADLINE_AGE_HOURS = 36;
 
 export function lagosDay(now: Date): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Lagos", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
+}
+
+export function lagosWeekday(now: Date): string {
+  return new Intl.DateTimeFormat("en-GB", { timeZone: "Africa/Lagos", weekday: "short" }).format(now);
+}
+
+/** Daily readers every day; weekly readers on Mondays (Lagos time). */
+export function isDue(frequency: Prefs["frequency"], now: Date): boolean {
+  return frequency === "daily" || lagosWeekday(now) === "Mon";
 }
 
 export function readMeta(html: string, name: string): string {
@@ -60,6 +72,107 @@ export function stripScripts(html: string): string {
   }
 }
 
+/** The rows between <!--aura:section--> and <!--/aura:section-->, or "" when the page has none. */
+export function extractSection(html: string): string {
+  const start = html.indexOf("<!--aura:section-->");
+  const end = html.indexOf("<!--/aura:section-->");
+  if (start === -1 || end === -1 || end < start) return "";
+  return html.slice(start + "<!--aura:section-->".length, end).trim();
+}
+
+/** Drops the region blocks the reader did not choose. */
+export function filterRegions(section: string, keep: Edition[]): string {
+  return section.replace(/<!--region:(\w+)-->([\s\S]*?)<!--\/region:\1-->/g, (_m, region: string, body: string) =>
+    keep.includes(region as Edition) ? body : "",
+  );
+}
+
+/**
+ * Puts the sections in at the slot. With sections to add, a base without a
+ * slot is a build error, not something to guess around.
+ */
+export function composeEmail(base: string, sections: string[]): string {
+  if (!sections.length) return base.replace(SECTIONS_SLOT, "");
+  if (!base.includes(SECTIONS_SLOT)) throw new Error("The email template has no sections slot.");
+  return base.replace(SECTIONS_SLOT, sections.join("\n"));
+}
+
+export interface Group {
+  key: string;
+  prefs: Prefs;
+  readers: Subscriber[];
+}
+
+/** Readers with the same choices share one email. */
+export function groupRecipients(readers: Subscriber[]): Group[] {
+  const groups = new Map<string, Group>();
+  for (const r of readers) {
+    const key = comboKey(r);
+    const g = groups.get(key) ?? { key, prefs: { categories: r.categories, region: r.region, frequency: r.frequency }, readers: [] };
+    g.readers.push(r);
+    groups.set(key, g);
+  }
+  return [...groups.values()];
+}
+
+export function hoursOld(generated: string, now: Date): number {
+  // The pipeline stamps local runner time (UTC on GitHub Actions) as "YYYY-MM-DD HH:MM:SS".
+  const t = Date.parse(generated.replace(" ", "T") + (/[zZ]|[+-]\d\d:?\d\d$/.test(generated) ? "" : "Z"));
+  return Number.isNaN(t) ? Infinity : (now.getTime() - t) / 3_600_000;
+}
+
+/** Everything the sender needs, fetched once per run from the site's own pages. */
+export interface Templates {
+  business: { html: string; edition: string; subject: string } | null;
+  shell: { html: string; subject: string };
+  sections: Partial<Record<HeadlineCategory, string>>;
+}
+
+async function fetchPage(env: Env, origin: string, path: string): Promise<string | null> {
+  const res = await env.ASSETS!.fetch(new Request(new URL(path, origin)));
+  return res.ok ? stripScripts(await res.text()) : null;
+}
+
+export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCategory[], now: Date): Promise<Templates | string> {
+  const businessHtml = await fetchPage(env, origin, "/brief/email/");
+  if (!businessHtml) return "The email template page is missing.";
+  const edition = readMeta(businessHtml, "aura-edition");
+  if (!edition) return "The template does not name its edition.";
+  const shellHtml = await fetchPage(env, origin, "/brief/email/shell/");
+  if (!shellHtml) return "The email shell page is missing.";
+
+  const sections: Templates["sections"] = {};
+  for (const category of wanted) {
+    const html = await fetchPage(env, origin, `/brief/email/section/${category}/`);
+    if (!html) continue;
+    if (hoursOld(readMeta(html, "aura-generated"), now) > MAX_HEADLINE_AGE_HOURS) continue;
+    const rows = extractSection(html);
+    if (rows) sections[category] = rows;
+  }
+  return {
+    business: { html: businessHtml, edition, subject: readMeta(businessHtml, "aura-subject") || "AURA Morning Brief" },
+    shell: { html: shellHtml, subject: readMeta(shellHtml, "aura-subject") || "AURA Morning Brief" },
+    sections,
+  };
+}
+
+/**
+ * One group's email, or null when there is nothing fresh to send them.
+ * `businessFresh` is false when today's business edition was already sent.
+ */
+export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { subject: string; html: string; text: string } | null {
+  const editions = editionsFor(prefs.region);
+  const chosen = headlineCategories(prefs).filter((c) => t.sections[c]);
+  const sections = chosen.map((c) => filterRegions(t.sections[c]!, editions));
+  const withBusiness = prefs.categories.includes("business") && businessFresh && t.business;
+  if (!withBusiness && !sections.length) return null;
+  const html = composeEmail(withBusiness ? t.business!.html : t.shell.html, sections);
+  const subject = withBusiness
+    ? t.business!.subject
+    : `${t.shell.subject} · ${listLabels(chosen.map(categoryLabel))}`;
+  return { subject, html, text: htmlToText(html) };
+}
+
 export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   if (!env.BRIEF_SEND_SECRET) return json({ error: "Sending is not configured (BRIEF_SEND_SECRET)." }, 503);
   if (!authorised(request, env)) return json({ error: "Not authorised." }, 401);
@@ -71,47 +184,76 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   if (!dryRun && !sendingEnabled(env)) return json({ error: "Email provider is not configured." }, 503);
   if (!env.ASSETS) return json({ error: "Static assets are unavailable." }, 503);
 
-  // The email is the page the site built from this edition's data.
-  const templateRes = await env.ASSETS.fetch(new Request(new URL("/brief/email/", url.origin)));
-  if (!templateRes.ok) return json({ error: "The email template page is missing." }, 500);
-  const template = stripScripts(await templateRes.text());
-  const edition = readMeta(template, "aura-edition");
-  const subject = readMeta(template, "aura-subject") || "AURA Morning Brief";
-  if (!edition) return json({ error: "The template does not name its edition." }, 500);
-
+  const now = new Date();
   const site = (env.SITE_URL || url.origin).replace(/\/$/, "");
-  const day = lagosDay(new Date());
-  // The text part is derived once; each copy only swaps in its unsubscribe link.
-  const brief = { subject, html: template, text: htmlToText(template) };
+  const day = lagosDay(now);
 
   if (test) {
     if (!env.OWNER_EMAIL) return json({ error: "Set OWNER_EMAIL to receive a test copy." }, 400);
-    const result = await sendBrief(env, brief, [{ to: env.OWNER_EMAIL, unsubscribe: `${site}/api/unsubscribe` }]);
-    return json({ test: true, edition, subject, ...result });
+    const categories = parseCategories(url.searchParams.get("categories") ?? "business");
+    const prefs: Prefs = {
+      categories: categories.length ? categories : ["business"],
+      region: parseRegion(url.searchParams.get("region")) ?? "nigeria",
+      frequency: "daily",
+    };
+    const t = await loadTemplates(env, url.origin, headlineCategories(prefs), now);
+    if (typeof t === "string") return json({ error: t }, 500);
+    const mail = buildFor(prefs, t, true);
+    if (!mail) return json({ error: "Nothing to send for that mix: no fresh headlines." }, 409);
+    const result = await sendBrief(env, mail, [{ to: env.OWNER_EMAIL, unsubscribe: `${site}/api/unsubscribe`, preferences: `${site}/api/preferences` }]);
+    return json({ test: true, edition: t.business?.edition, subject: mail.subject, prefs, ...result });
   }
 
-  const today = await env.DB.prepare("SELECT edition, finished_at FROM sends WHERE day = ?")
-    .bind(day).first<{ edition: string; finished_at: string | null }>();
+  const log = sendLog(env.DB);
+  const today = await log.forDay(day);
   if (today?.finished_at) return json({ skipped: "already_sent_today", day, edition: today.edition });
   if (today) return json({ skipped: "send_in_progress_or_incomplete", day }, 409);
 
-  const before = await env.DB.prepare("SELECT day FROM sends WHERE edition = ? AND finished_at IS NOT NULL")
-    .bind(edition).first<{ day: string }>();
-  if (before) return json({ skipped: "edition_already_sent", edition, sent_on: before.day });
+  const due = (await subscriberStore(env.DB).recipients()).filter((r) => isDue(r.frequency, now));
+  const groups = groupRecipients(due);
+  const wanted = [...new Set(groups.flatMap((g) => headlineCategories(g.prefs)))];
+  const t = await loadTemplates(env, url.origin, wanted, now);
+  if (typeof t === "string") return json({ error: t }, 500);
+  const edition = t.business!.edition;
+  const sentOn = await log.sentOn(edition);
+  const businessFresh = !sentOn;
 
-  const { results } = await env.DB.prepare("SELECT email, token FROM subscribers WHERE status = 'confirmed'")
-    .bind().all<{ email: string; token: string }>();
-  const recipients = results ?? [];
+  const plan = groups.map((g) => ({ group: g, mail: buildFor(g.prefs, t, businessFresh) }));
+  const sending = plan.filter((p) => p.mail);
+  const recipients = sending.reduce((n, p) => n + p.group.readers.length, 0);
+  const summary = {
+    day,
+    edition,
+    business_fresh: businessFresh,
+    headline_sections: Object.keys(t.sections),
+    recipients,
+    skipped_readers: due.length - recipients,
+    groups: plan.map((p) => ({ mix: p.group.key, readers: p.group.readers.length, subject: p.mail?.subject ?? null })),
+  };
 
-  if (dryRun) return json({ dry_run: true, day, edition, subject, recipients: recipients.length });
+  if (dryRun) return json({ dry_run: true, subject: t.business!.subject, ...summary });
+  if (!recipients) {
+    return json(sentOn ? { skipped: "edition_already_sent", edition, sent_on: sentOn } : { skipped: "nothing_to_send", ...summary });
+  }
 
-  await env.DB.prepare("INSERT INTO sends (day, edition, started_at) VALUES (?, ?, ?)")
-    .bind(day, edition, new Date().toISOString()).run();
-  const result = await sendBrief(env, brief, recipients.map((r) => ({ to: r.email, unsubscribe: unsubscribeUrl(site, r.token) })));
-  await env.DB.prepare("UPDATE sends SET finished_at = ?, sent = ?, failed = ? WHERE day = ?")
-    .bind(new Date().toISOString(), result.sent, result.failed, day).run();
+  await log.start(day, edition, now.toISOString());
+  let sent = 0;
+  let failed = 0;
+  const errors: string[] = [];
+  for (const { group, mail } of sending) {
+    const result = await sendBrief(
+      env,
+      mail!,
+      group.readers.map((r) => ({ to: r.email, unsubscribe: unsubscribeUrl(site, r.token), preferences: preferencesUrl(site, r.token) })),
+    );
+    sent += result.sent;
+    failed += result.failed;
+    if (result.error) errors.push(result.error);
+  }
+  await log.finish(day, sent, failed, new Date().toISOString());
 
-  return json({ day, edition, subject, recipients: recipients.length, ...result }, result.failed && !result.sent ? 502 : 200);
+  const body = { ...summary, sent, failed, ...(errors.length ? { error: errors.join("; ") } : {}) };
+  return json(body, failed && !sent ? 502 : 200);
 }
 
 export function onRequest(): Response {

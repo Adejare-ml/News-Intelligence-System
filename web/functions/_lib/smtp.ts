@@ -87,17 +87,39 @@ function encodeAddress(from: string): string {
 }
 
 export const PLACEHOLDER = "{{unsubscribe_url}}";
+/** The reader's own "change topics" link, filled per copy like the unsubscribe link. */
+export const PREFS_PLACEHOLDER = "{{preferences_url}}";
+const PLACEHOLDER_RE = /(\{\{unsubscribe_url\}\}|\{\{preferences_url\}\})/;
+
+/** A recipient's personal links. Missing preferences fall back to the matching /api/preferences URL. */
+export interface Links {
+  unsubscribe?: string;
+  preferences?: string;
+}
+
+/** /api/unsubscribe?token=… -> /api/preferences?token=… (both carry the same token). */
+export function preferencesFor(unsubscribe: string): string {
+  return unsubscribe.replace("/api/unsubscribe", "/api/preferences");
+}
+
+export function resolveLinks(links?: string | Links): { unsubscribe: string; preferences: string } {
+  const l = typeof links === "string" ? { unsubscribe: links } : links ?? {};
+  const unsubscribe = l.unsubscribe ?? "";
+  return { unsubscribe, preferences: l.preferences ?? (unsubscribe ? preferencesFor(unsubscribe) : "") };
+}
 
 /**
  * Compiles a message once. The returned function builds one recipient's copy
- * by string substitution only: their address, their unsubscribe link (in the
- * HTML, the text and the List-Unsubscribe header) and a fresh Message-ID.
+ * by string substitution only: their address, their links (unsubscribe and
+ * preferences, in the HTML and the text; unsubscribe also in the
+ * List-Unsubscribe header) and a fresh Message-ID.
  */
 export function compileMessage(m: { from: string; subject: string; html: string; text: string }) {
   const boundary = `aura-${crypto.randomUUID()}`;
   const domain = addressOf(m.from).split("@")[1] || "localhost";
   // Each placeholder sits on its own soft-wrapped line, so inserting a link never breaks the encoding.
-  const isolate = (body: string) => body.split(PLACEHOLDER).map(qpEncode).join(`=\r\n${PLACEHOLDER}=\r\n`);
+  const isolate = (body: string) =>
+    body.split(PLACEHOLDER_RE).map((piece, i) => (i % 2 ? `=\r\n${piece}=\r\n` : qpEncode(piece))).join("");
   const htmlQp = isolate(m.html);
   const textQp = isolate(m.text);
   const fixed = [
@@ -107,18 +129,22 @@ export function compileMessage(m: { from: string; subject: string; html: string;
     `Content-Type: multipart/alternative; boundary="${boundary}"`,
   ].join("\r\n");
   const part = (type: string) => `--${boundary}\r\nContent-Type: ${type}; charset=UTF-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n`;
+  const fill = (body: string, links: { unsubscribe: string; preferences: string }, html: boolean) => {
+    const enc = (link: string) => qpEncode(html ? link.replace(/&/g, "&amp;") : link);
+    return body.split(PLACEHOLDER).join(enc(links.unsubscribe)).split(PREFS_PLACEHOLDER).join(enc(links.preferences));
+  };
 
-  return (to: string, unsubscribe?: string, now = new Date()): string => {
+  return (to: string, links?: string | Links, now = new Date()): string => {
+    const resolved = resolveLinks(links);
     const head = [
       fixed,
       `To: <${to}>`,
       `Date: ${now.toUTCString().replace("GMT", "+0000")}`,
       `Message-ID: <${crypto.randomUUID()}@${domain}>`,
     ];
-    if (unsubscribe) head.push(`List-Unsubscribe: <${unsubscribe}>`, "List-Unsubscribe-Post: List-Unsubscribe=One-Click");
-    const link = unsubscribe ?? "";
-    const html = htmlQp.split(PLACEHOLDER).join(qpEncode(link.replace(/&/g, "&amp;")));
-    const text = textQp.split(PLACEHOLDER).join(qpEncode(link));
+    if (resolved.unsubscribe) head.push(`List-Unsubscribe: <${resolved.unsubscribe}>`, "List-Unsubscribe-Post: List-Unsubscribe=One-Click");
+    const html = fill(htmlQp, resolved, true);
+    const text = fill(textQp, resolved, false);
     return `${head.join("\r\n")}\r\n\r\n${part("text/plain")}${text}\r\n${part("text/html")}${html}\r\n--${boundary}--`;
   };
 }

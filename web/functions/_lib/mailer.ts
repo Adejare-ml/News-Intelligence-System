@@ -12,7 +12,12 @@
  * With no provider, sign-ups are stored as pending and nothing is sent.
  */
 import type { Env } from "./http.ts";
-import { cloudflareSocket, compileMessage, smtpSend, PLACEHOLDER, type OpenSocket } from "./smtp.ts";
+import {
+  cloudflareSocket, compileMessage, smtpSend, resolveLinks, PLACEHOLDER, PREFS_PLACEHOLDER, type OpenSocket,
+} from "./smtp.ts";
+
+export { preferencesFor } from "./smtp.ts";
+import { DEFAULT_PREFS, describePrefs, type Prefs } from "./categories.ts";
 
 export interface Mail {
   to: string;
@@ -96,17 +101,19 @@ export async function send(env: Env, mail: Mail): Promise<boolean> {
   return res.ok;
 }
 
-export function confirmationMail(site: string, email: string, token: string): Mail {
+export function confirmationMail(site: string, email: string, token: string, prefs: Prefs = DEFAULT_PREFS): Mail {
   const confirm = `${site}/api/confirm?token=${token}`;
   const leave = `${site}/api/unsubscribe?token=${token}`;
+  const chosen = describePrefs(prefs);
+  const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   return {
     to: email,
     subject: "Confirm your AURA Morning Brief",
-    text: `Confirm your subscription to the AURA Morning Brief:\n${confirm}\n\nDidn't ask for this? Ignore this email, or remove yourself: ${leave}`,
+    text: `Confirm your subscription to the AURA Morning Brief (${chosen}):\n${confirm}\n\nDidn't ask for this? Ignore this email, or remove yourself: ${leave}`,
     html: `<div style="font-family:Georgia,serif;max-width:520px;margin:auto;padding:24px;color:#1b1a17">
 <p style="letter-spacing:.14em;font:600 12px system-ui;color:#9c7420">AURA · MORNING BRIEF</p>
 <h1 style="font-weight:500">One click to confirm.</h1>
-<p style="font:16px/1.6 system-ui">You asked for the AURA Morning Brief: Nigeria's ownership changes, board moves and contracts, at 08:00 Lagos.</p>
+<p style="font:16px/1.6 system-ui">You asked for the AURA Morning Brief: <strong>${esc(chosen)}</strong>.</p>
 <p><a href="${confirm}" style="display:inline-block;background:#1e3fae;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font:600 15px system-ui">Confirm my subscription</a></p>
 <p style="font:13px/1.6 system-ui;color:#6b6558">Didn't ask for this? Ignore this email, or <a href="${leave}">remove this address</a>.</p></div>`,
   };
@@ -114,18 +121,25 @@ export function confirmationMail(site: string, email: string, token: string): Ma
 
 /* ---------- The daily Morning Brief ---------- */
 
-/** One subscriber's copy: the brief with their own unsubscribe link. */
+/** One subscriber's copy: the brief with their own unsubscribe (and preferences) link. */
 export interface BriefMail extends Mail {
   unsubscribe: string;
+  preferences?: string;
 }
 
 export function unsubscribeUrl(site: string, token: string): string {
   return `${site.replace(/\/$/, "")}/api/unsubscribe?token=${token}`;
 }
 
-/** Fills the template's {{unsubscribe_url}} placeholder. */
-export function personalise(html: string, unsubscribe: string): string {
-  return html.split("{{unsubscribe_url}}").join(unsubscribe.replace(/&/g, "&amp;"));
+export function preferencesUrl(site: string, token: string): string {
+  return `${site.replace(/\/$/, "")}/api/preferences?token=${token}`;
+}
+
+/** Fills the template's {{unsubscribe_url}} and {{preferences_url}} placeholders. */
+export function personalise(html: string, unsubscribe: string, preferences?: string): string {
+  const links = resolveLinks({ unsubscribe, preferences });
+  const esc = (link: string) => link.replace(/&/g, "&amp;");
+  return html.split(PLACEHOLDER).join(esc(links.unsubscribe)).split(PREFS_PLACEHOLDER).join(esc(links.preferences));
 }
 
 const ENTITIES: Record<string, string> = {
@@ -175,7 +189,7 @@ export function htmlToText(html: string): string {
       const m = tag.match(/href="([^"]*)"/i);
       href = m ? decodeEntities(m[1]) : "";
     } else if (closing && name === "a") {
-      if (href && (/^https?:/.test(href) || href === PLACEHOLDER)) out += ` (${href})`;
+      if (href && (/^https?:/.test(href) || href === PLACEHOLDER || href === PREFS_PLACEHOLDER)) out += ` (${href})`;
       href = "";
     } else if (name === "br" || (closing && BLOCK_END.has(name))) {
       out += "\n";
@@ -240,7 +254,7 @@ export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: n
       gmailLogin(env),
       mails.slice(0, GMAIL_DAILY_CAP).map((m) => {
         const build = compileMessage({ from, subject: m.subject, html: m.html, text: m.text });
-        return { from, to: m.to, data: () => build(m.to, m.unsubscribe) };
+        return { from, to: m.to, data: () => build(m.to, { unsubscribe: m.unsubscribe, preferences: m.preferences }) };
       }),
     ).then((r) => ({ ...r, failed: r.failed + Math.max(0, mails.length - GMAIL_DAILY_CAP) }));
   }
@@ -277,9 +291,17 @@ export interface BriefTemplate {
   text: string;
 }
 
-/** Fills the placeholder in the plain-text part (no HTML escaping). */
-export function personaliseText(text: string, unsubscribe: string): string {
-  return text.split(PLACEHOLDER).join(unsubscribe);
+/** Fills the placeholders in the plain-text part (no HTML escaping). */
+export function personaliseText(text: string, unsubscribe: string, preferences?: string): string {
+  const links = resolveLinks({ unsubscribe, preferences });
+  return text.split(PLACEHOLDER).join(links.unsubscribe).split(PREFS_PLACEHOLDER).join(links.preferences);
+}
+
+/** One reader of a brief: their address and personal links. */
+export interface Recipient {
+  to: string;
+  unsubscribe: string;
+  preferences?: string;
 }
 
 /**
@@ -290,7 +312,7 @@ export function personaliseText(text: string, unsubscribe: string): string {
 export async function sendBrief(
   env: Env,
   brief: BriefTemplate,
-  recipients: { to: string; unsubscribe: string }[],
+  recipients: Recipient[],
 ): Promise<{ sent: number; failed: number; error?: string }> {
   if (provider(env) === "gmail") {
     const from = gmailFrom(env);
@@ -299,7 +321,7 @@ export async function sendBrief(
     const result = await smtpSend(
       smtpTransport.open(env),
       gmailLogin(env),
-      allowed.map((r) => ({ from, to: r.to, data: () => build(r.to, r.unsubscribe) })),
+      allowed.map((r) => ({ from, to: r.to, data: () => build(r.to, { unsubscribe: r.unsubscribe, preferences: r.preferences }) })),
     );
     const over = recipients.length - allowed.length;
     return over > 0
@@ -311,9 +333,10 @@ export async function sendBrief(
     recipients.map((r) => ({
       to: r.to,
       subject: brief.subject,
-      html: personalise(brief.html, r.unsubscribe),
-      text: personaliseText(brief.text, r.unsubscribe),
+      html: personalise(brief.html, r.unsubscribe, r.preferences),
+      text: personaliseText(brief.text, r.unsubscribe, r.preferences),
       unsubscribe: r.unsubscribe,
+      preferences: r.preferences,
     })),
   );
 }

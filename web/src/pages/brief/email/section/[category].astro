@@ -1,0 +1,54 @@
+---
+/**
+ * One headline category as rows for the Morning Brief email. /api/send-brief
+ * reads the rows between the aura:section markers and inserts them at the
+ * sections slot of the reader's email, keeping only the region blocks the
+ * reader chose. Not a page anyone visits.
+ */
+import { HEADLINE_CATEGORIES, categoryLabel } from "../../../../../functions/_lib/categories.ts";
+import { categoryNews, type Headline } from "../../../../lib/data.ts";
+import { ink, muted, gold, royal, rule, sans, serif } from "../../../../components/email/theme.ts";
+
+export function getStaticPaths() {
+  return HEADLINE_CATEGORIES.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params as { category: string };
+const MAX = 6;
+const news = categoryNews();
+const section = news.sections?.[category] ?? {};
+const regions: { id: "nigeria" | "global"; label: string; items: Headline[] }[] = [
+  { id: "nigeria", label: "From Nigeria", items: (section.nigeria ?? []).slice(0, MAX) },
+  { id: "global", label: "Around the world", items: (section.global ?? []).slice(0, MAX) },
+];
+const site = (Astro.site?.toString() ?? "https://auranews.pages.dev/").replace(/\/$/, "") + import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const label = `padding:22px 32px 6px;font:700 11px/1.4 ${sans};letter-spacing:2px;text-transform:uppercase;color:${gold};border-top:1px solid ${rule};`;
+const sub = `padding:10px 32px 2px;font:600 10px/1.4 ${sans};letter-spacing:1.5px;text-transform:uppercase;color:${muted};`;
+const marker = (text: string) => `<!--${text}-->`;
+---
+<meta name="robots" content="noindex" />
+<meta name="aura-generated" content={news.generated ?? ""} />
+<table role="presentation">
+<Fragment set:html={marker("aura:section")} />
+<tr><td style={label}>{categoryLabel(category)}</td></tr>
+{regions.map((r) => (
+  <>
+    <Fragment set:html={marker(`region:${r.id}`)} />
+    <tr><td style={sub}>{r.label}</td></tr>
+    {r.items.length ? r.items.map((h) => (
+      <tr><td style="padding:6px 32px;">
+        <a href={h.url} style={`font:600 15px/1.4 ${serif};color:${ink};text-decoration:none;`}>{h.title}</a>
+        <div style={`font:12px/1.4 ${sans};color:${muted};margin-top:2px;`}>{h.source}</div>
+      </td></tr>
+    )) : (
+      <tr><td style={`padding:6px 32px;font:13px/1.5 ${sans};color:${muted};`}>No new headlines this morning.</td></tr>
+    )}
+    <Fragment set:html={marker(`/region:${r.id}`)} />
+  </>
+))}
+<tr><td style={`padding:6px 32px 10px;font:13px/1.5 ${sans};`}>
+  <a href={`${site}/news/${category}/`} style={`color:${royal};text-decoration:none;font-weight:600;`}>More {categoryLabel(category).toLowerCase()} on AURA ↗</a>
+</td></tr>
+<Fragment set:html={marker("/aura:section")} />
+</table>

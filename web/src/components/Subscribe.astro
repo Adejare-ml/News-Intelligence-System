@@ -1,6 +1,7 @@
 ---
 import Icon from "./Icon.astro";
 import { href } from "../lib/url.ts";
+import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categories.ts";
 ---
 <section class="section subscribe" id="subscribe" aria-labelledby="sub-title">
   <div class="wrap">
@@ -9,8 +10,9 @@ import { href } from "../lib/url.ts";
         <p class="eyebrow">The Morning Brief · 08:00 Lagos</p>
         <h2 class="h2" id="sub-title" data-split>Wake up knowing who moved what.</h2>
         <p class="lede">
-          One short email after the 08:00 run: the day’s ownership changes, board moves, contracts and
-          the stories worth your attention. Free, and one click to leave.
+          One short email after the 08:00 run. Choose what goes in it: AURA’s business brief on ownership
+          changes, board moves and contracts, plus sports, technology, politics or entertainment headlines
+          from Nigeria, the world, or both. Free, and one click to leave.
         </p>
       </div>
       <form class="form" action={href("api/subscribe")} method="post" data-subscribe novalidate>
@@ -23,12 +25,46 @@ import { href } from "../lib/url.ts";
             <Icon name="check" size={18} class="done-icon" />
           </button>
         </div>
+        <fieldset class="choices" data-topics>
+          <legend class="choice-title">What do you want to hear about?</legend>
+          <div class="chips">
+            {CATEGORIES.map((c) => (
+              <label class="pick" title={c.blurb}>
+                <input type="checkbox" name="categories" value={c.id} checked={c.id === "business"} />
+                <span>{c.label}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <fieldset class="choices" data-region>
+          <legend class="choice-title">Headlines from</legend>
+          <div class="chips">
+            {REGIONS.map((r) => (
+              <label class="pick">
+                <input type="radio" name="region" value={r.id} checked={r.id === "nigeria"} />
+                <span>{r.label}</span>
+              </label>
+            ))}
+          </div>
+          <p class="hint meta">For sports, technology, politics and entertainment. Business is always Nigeria.</p>
+        </fieldset>
+        <fieldset class="choices">
+          <legend class="choice-title">How often</legend>
+          <div class="chips">
+            {FREQUENCIES.map((f) => (
+              <label class="pick" title={f.when}>
+                <input type="radio" name="frequency" value={f.id} checked={f.id === "daily"} />
+                <span>{f.label}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
         <!-- Honeypot: invisible to people, tempting to bots. -->
         <input class="hp" type="text" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <p class="status" role="status" aria-live="polite" data-subscribe-status></p>
         <p class="privacy meta">
-          We store only your email address, to send this brief. It is never shared, and every email has an
-          unsubscribe link.
+          We store only your email address and the choices above, to send this brief. It is never shared, and
+          every email has links to change your topics or unsubscribe.
         </p>
       </form>
     </div>
@@ -139,6 +175,62 @@ import { href } from "../lib/url.ts";
   }
   .status:global(.ok) {
     color: var(--gold);
+  }
+  .choices {
+    border: 0;
+    margin: 16px 0 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .choices[hidden] {
+    display: none;
+  }
+  .choice-title {
+    padding: 0;
+    margin: 0 4px 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-soft);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pick {
+    position: relative;
+    cursor: pointer;
+  }
+  .pick input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .pick span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--bg);
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    transition: background var(--dur-ui) ease, border-color var(--dur-ui) ease, color var(--dur-ui) ease;
+  }
+  .pick input:checked + span {
+    background: var(--gold-wash);
+    border-color: var(--gold);
+    color: var(--text);
+  }
+  .pick input:focus-visible + span {
+    box-shadow: 0 0 0 3px var(--gold-wash);
+    border-color: var(--gold);
+  }
+  .hint {
+    margin: 8px 4px 0;
   }
   .privacy {
     margin: 0 4px;
