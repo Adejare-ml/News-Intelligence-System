@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 114,
-  "previous_articles": 223,
+  "recent_articles": 102,
+  "previous_articles": 231,
   "rising": [
     {
       "term": "firm",
@@ -17,12 +17,6 @@
     },
     {
       "term": "power",
-      "recent": 4,
-      "previous": 0,
-      "change": 4
-    },
-    {
-      "term": "sign",
       "recent": 4,
       "previous": 0,
       "change": 4
@@ -52,13 +46,19 @@
       "change": 3
     },
     {
-      "term": "pledges",
-      "recent": 4,
-      "previous": 1,
+      "term": "bpd",
+      "recent": 3,
+      "previous": 0,
       "change": 3
     },
     {
-      "term": "bpd",
+      "term": "efcc uncovers",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "eyes",
       "recent": 3,
       "previous": 0,
       "change": 3
@@ -66,51 +66,51 @@
   ],
   "falling": [
     {
-      "term": "court",
+      "term": "tinubu",
       "recent": 2,
-      "previous": 18,
-      "change": -16
+      "previous": 24,
+      "change": -22
     },
     {
-      "term": "tinubu",
-      "recent": 6,
-      "previous": 21,
+      "term": "court",
+      "recent": 2,
+      "previous": 17,
       "change": -15
     },
     {
       "term": "reps",
-      "recent": 3,
+      "recent": 4,
       "previous": 16,
-      "change": -13
+      "change": -12
     },
     {
-      "term": "approves",
-      "recent": 2,
-      "previous": 10,
+      "term": "efcc",
+      "recent": 8,
+      "previous": 16,
       "change": -8
     },
     {
       "term": "cbn",
-      "recent": 2,
+      "recent": 3,
       "previous": 10,
-      "change": -8
+      "change": -7
+    },
+    {
+      "term": "approves",
+      "recent": 2,
+      "previous": 9,
+      "change": -7
+    },
+    {
+      "term": "fraud",
+      "recent": 1,
+      "previous": 8,
+      "change": -7
     },
     {
       "term": "financial",
       "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "police",
-      "recent": 0,
-      "previous": 8,
-      "change": -8
-    },
-    {
-      "term": "digital",
-      "recent": 1,
-      "previous": 8,
+      "previous": 7,
       "change": -7
     },
     {
@@ -120,7 +120,7 @@
       "change": -7
     },
     {
-      "term": "witness",
+      "term": "police",
       "recent": 0,
       "previous": 7,
       "change": -7
@@ -129,18 +129,18 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 77,
-      "previous": 156
+      "recent": 67,
+      "previous": 167
     },
     {
       "category": "Company",
-      "recent": 28,
-      "previous": 29
+      "recent": 27,
+      "previous": 27
     },
     {
       "category": "Legal",
-      "recent": 8,
-      "previous": 35
+      "recent": 7,
+      "previous": 34
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-06 03:31:50"
+  "generated": "2026-11-06 15:07:02"
 }

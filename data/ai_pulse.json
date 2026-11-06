@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-06 03:31:50",
+  "generated": "2026-11-06 15:06:54",
   "models": [
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 941,
-      "downloads": 11658
+      "likes": 1386,
+      "downloads": 18432
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 795,
-      "downloads": 17180
+      "likes": 877,
+      "downloads": 19139
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 712,
-      "downloads": 157157
+      "likes": 757,
+      "downloads": 190243
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10743,
-      "downloads": 2561845
-    },
-    {
-      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "task": "automatic-speech-recognition",
-      "likes": 3059,
-      "downloads": 57297
-    },
-    {
-      "id": "mistralai/Mistral-Large-4-1T-A52B",
-      "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-      "task": "image-text-to-text",
-      "likes": 1615,
-      "downloads": 9592
-    },
-    {
-      "id": "Pika-Labs/Pika-H3-Flex",
-      "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
-      "task": "image-to-video",
-      "likes": 475,
-      "downloads": 863
+      "likes": 10813,
+      "downloads": 2607491
     },
     {
       "id": "burner22/numbat",
       "url": "https://huggingface.co/burner22/numbat",
       "task": "",
-      "likes": 355,
-      "downloads": 8789
+      "likes": 364,
+      "downloads": 9066
+    },
+    {
+      "id": "FusionCow/Sulphur-3",
+      "url": "https://huggingface.co/FusionCow/Sulphur-3",
+      "task": "",
+      "likes": 388,
+      "downloads": 950
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "task": "automatic-speech-recognition",
+      "likes": 3067,
+      "downloads": 61049
+    },
+    {
+      "id": "ricursiveAI/Ripple-65B-Preview",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "task": "",
+      "likes": 307,
+      "downloads": 2013
     }
   ],
   "papers": [
     {
-      "title": "Towards Foundation Decision Models: Drex",
-      "url": "https://huggingface.co/papers/2611.07854",
-      "upvotes": 6
+      "title": "Information Games: Strategic Crowding and Firm Repositioning in Language-Model Space",
+      "url": "https://huggingface.co/papers/2609.37820",
+      "upvotes": 1
     },
     {
-      "title": "D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
-      "url": "https://huggingface.co/papers/2611.06425",
-      "upvotes": 8
+      "title": "Reducing Representational Interference in Retrieval Embeddings with Trainable Prefix Tokens",
+      "url": "https://huggingface.co/papers/2611.07298",
+      "upvotes": 0
     },
     {
-      "title": "Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention",
-      "url": "https://huggingface.co/papers/2611.03768",
-      "upvotes": 3
+      "title": "Hard Sample-Conditioned Decorrelated Attention for Robust Face Recognition",
+      "url": "https://huggingface.co/papers/2610.41789",
+      "upvotes": 1
     },
     {
-      "title": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
-      "url": "https://huggingface.co/papers/2611.04408",
-      "upvotes": 32
+      "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
+      "url": "https://huggingface.co/papers/2611.06976",
+      "upvotes": 11
     },
     {
-      "title": "TaoMate-HD: Progressive-Resolution Autoregressive Audio-Video Generation",
-      "url": "https://huggingface.co/papers/2611.03394",
-      "upvotes": 3
+      "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
+      "url": "https://huggingface.co/papers/2611.07613",
+      "upvotes": 2
     },
     {
-      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
-      "url": "https://huggingface.co/papers/2611.03330",
-      "upvotes": 9
+      "title": "SynthFaces: Balanced Large Scale Human Dataset",
+      "url": "https://huggingface.co/papers/2610.40119",
+      "upvotes": 1
     }
   ]
 }

@@ -1,12 +1,21 @@
 {
   "movers": [
     {
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 45.0,
+      "previous_avg": 21.2,
+      "delta": 23.8,
+      "recent_mentions": 2,
+      "previous_mentions": 4
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "recent_avg": 23.3,
+      "recent_avg": 21.2,
       "previous_avg": 45.0,
-      "delta": -21.7,
-      "recent_mentions": 3,
+      "delta": -23.8,
+      "recent_mentions": 4,
       "previous_mentions": 2
     },
     {
@@ -21,28 +30,19 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 43.3,
-      "previous_avg": 58.5,
-      "delta": -15.2,
-      "recent_mentions": 6,
+      "recent_avg": 48.0,
+      "previous_avg": 57.4,
+      "delta": -9.4,
+      "recent_mentions": 5,
       "previous_mentions": 17
-    },
-    {
-      "key": "maritime administration and safety agency",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "recent_avg": 36.7,
-      "previous_avg": 21.7,
-      "delta": 15.0,
-      "recent_mentions": 3,
-      "previous_mentions": 3
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 40.0,
+      "recent_avg": 35.0,
       "previous_avg": 26.8,
-      "delta": 13.2,
-      "recent_mentions": 2,
+      "delta": 8.2,
+      "recent_mentions": 3,
       "previous_mentions": 11
     },
     {
@@ -55,40 +55,22 @@
       "previous_mentions": 1
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 25.0,
-      "previous_avg": 31.4,
-      "delta": -6.4,
-      "recent_mentions": 3,
-      "previous_mentions": 11
-    },
-    {
-      "key": "independent national electoral commission",
-      "label": "Independent National Electoral Commission",
-      "recent_avg": 30.0,
-      "previous_avg": 24.0,
-      "delta": 6.0,
-      "recent_mentions": 2,
-      "previous_mentions": 5
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 18.1,
-      "previous_avg": 21.8,
-      "delta": -3.7,
-      "recent_mentions": 8,
-      "previous_mentions": 20
+      "recent_avg": 17.5,
+      "previous_avg": 21.6,
+      "delta": -4.1,
+      "recent_mentions": 6,
+      "previous_mentions": 22
     },
     {
       "key": "government of",
       "label": "Government of Nigeria",
       "recent_avg": 15.0,
-      "previous_avg": 18.0,
-      "delta": -3.0,
-      "recent_mentions": 4,
-      "previous_mentions": 5
+      "previous_avg": 18.3,
+      "delta": -3.3,
+      "recent_mentions": 2,
+      "previous_mentions": 6
     },
     {
       "key": "oyo state government",
@@ -98,6 +80,15 @@
       "delta": 2.5,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 30.0,
+      "previous_avg": 31.4,
+      "delta": -1.4,
+      "recent_mentions": 4,
+      "previous_mentions": 11
     },
     {
       "key": "economic and financial crimes commission efcc",
@@ -161,8 +152,17 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "recent_avg": 12.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-06 03:31:53"
+  "generated": "2026-11-06 15:07:02"
 }
