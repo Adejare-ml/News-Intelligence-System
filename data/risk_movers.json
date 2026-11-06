@@ -10,22 +10,22 @@
       "previous_mentions": 2
     },
     {
-      "key": "national assembly",
-      "label": "National Assembly",
-      "recent_avg": 42.5,
-      "previous_avg": 21.2,
-      "delta": 21.3,
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 12.5,
+      "previous_avg": 28.3,
+      "delta": -15.8,
       "recent_mentions": 2,
-      "previous_mentions": 4
+      "previous_mentions": 9
     },
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 41.4,
-      "previous_avg": 60.9,
-      "delta": -19.5,
-      "recent_mentions": 7,
-      "previous_mentions": 16
+      "recent_avg": 43.3,
+      "previous_avg": 58.5,
+      "delta": -15.2,
+      "recent_mentions": 6,
+      "previous_mentions": 17
     },
     {
       "key": "maritime administration and safety agency",
@@ -35,6 +35,15 @@
       "delta": 15.0,
       "recent_mentions": 3,
       "previous_mentions": 3
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 40.0,
+      "previous_avg": 26.8,
+      "delta": 13.2,
+      "recent_mentions": 2,
+      "previous_mentions": 11
     },
     {
       "key": "mtn",
@@ -64,31 +73,13 @@
       "previous_mentions": 5
     },
     {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "recent_avg": 15.0,
-      "previous_avg": 20.0,
-      "delta": -5.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 17.5,
-      "previous_avg": 21.7,
-      "delta": -4.2,
+      "recent_avg": 18.1,
+      "previous_avg": 21.8,
+      "delta": -3.7,
       "recent_mentions": 8,
-      "previous_mentions": 21
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "recent_avg": 16.7,
-      "previous_avg": 20.0,
-      "delta": -3.3,
-      "recent_mentions": 3,
-      "previous_mentions": 5
+      "previous_mentions": 20
     },
     {
       "key": "government of",
@@ -109,15 +100,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": 28.5,
-      "delta": 1.5,
-      "recent_mentions": 3,
-      "previous_mentions": 10
-    },
-    {
       "key": "economic and financial crimes commission efcc",
       "label": "Economic and Financial Crimes Commission (EFCC)",
       "recent_avg": 40.0,
@@ -129,10 +111,10 @@
     {
       "key": "opay",
       "label": "OPay",
-      "recent_avg": 38.8,
+      "recent_avg": 36.0,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 4,
+      "recent_mentions": 5,
       "previous_mentions": 0
     },
     {
@@ -142,6 +124,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "national identity management commission",
+      "label": "National Identity Management Commission",
+      "recent_avg": 25.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -163,9 +154,9 @@
       "previous_mentions": 0
     },
     {
-      "key": "police service commission",
-      "label": "Police Service Commission",
-      "recent_avg": 10.0,
+      "key": "bank of industry",
+      "label": "Bank of Industry",
+      "recent_avg": 12.5,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -173,5 +164,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-05 15:34:06"
+  "generated": "2026-11-06 03:31:53"
 }

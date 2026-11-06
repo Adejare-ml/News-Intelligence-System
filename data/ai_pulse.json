@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-05 15:33:49",
+  "generated": "2026-11-06 03:31:50",
   "models": [
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 802,
+      "likes": 941,
       "downloads": 11658
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 688,
+      "likes": 795,
       "downloads": 17180
+    },
+    {
+      "id": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "task": "",
+      "likes": 712,
+      "downloads": 157157
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 10743,
+      "downloads": 2561845
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+      "task": "automatic-speech-recognition",
+      "likes": 3059,
+      "downloads": 57297
     },
     {
       "id": "mistralai/Mistral-Large-4-1T-A52B",
       "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "task": "image-text-to-text",
-      "likes": 1605,
+      "likes": 1615,
       "downloads": 9592
     },
     {
       "id": "Pika-Labs/Pika-H3-Flex",
       "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
       "task": "image-to-video",
-      "likes": 452,
+      "likes": 475,
       "downloads": 863
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 10675,
-      "downloads": 2561845
-    },
-    {
-      "id": "ccore/Qwen3.5-4B-3D-Coder",
-      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "task": "",
-      "likes": 680,
-      "downloads": 157157
-    },
-    {
-      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "task": "automatic-speech-recognition",
-      "likes": 3043,
-      "downloads": 57297
     },
     {
       "id": "burner22/numbat",
       "url": "https://huggingface.co/burner22/numbat",
       "task": "",
-      "likes": 351,
+      "likes": 355,
       "downloads": 8789
     }
   ],
   "papers": [
     {
-      "title": "Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization",
-      "url": "https://huggingface.co/papers/2611.03517",
-      "upvotes": 0
+      "title": "Towards Foundation Decision Models: Drex",
+      "url": "https://huggingface.co/papers/2611.07854",
+      "upvotes": 6
     },
     {
-      "title": "Why Pay for Long Reasoning When Rewrite Do Trick? Causal Effects of Reasoning History Compaction on Future Generation and Agent Cost",
-      "url": "https://huggingface.co/papers/2611.03852",
-      "upvotes": 2
+      "title": "D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
+      "url": "https://huggingface.co/papers/2611.06425",
+      "upvotes": 8
     },
     {
-      "title": "DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI",
-      "url": "https://huggingface.co/papers/2611.05029",
-      "upvotes": 0
-    },
-    {
-      "title": "LiveFoley: Dynamic Real-Time Video-to-Audio Generation for Immersive Interactive Worlds",
-      "url": "https://huggingface.co/papers/2611.05988",
-      "upvotes": 2
-    },
-    {
-      "title": "UniRestorer++: Scalable Universal Image Restoration with Multi-Granularity Degradation Modeling",
-      "url": "https://huggingface.co/papers/2611.06042",
-      "upvotes": 2
-    },
-    {
-      "title": "GaussianRenderFormer: Transformer-based Rendering of 3D Gaussian Splats",
-      "url": "https://huggingface.co/papers/2611.05593",
+      "title": "Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention",
+      "url": "https://huggingface.co/papers/2611.03768",
       "upvotes": 3
+    },
+    {
+      "title": "Halley: A Predictive Control Plane for Optical AI Data Center Networks",
+      "url": "https://huggingface.co/papers/2611.04408",
+      "upvotes": 32
+    },
+    {
+      "title": "TaoMate-HD: Progressive-Resolution Autoregressive Audio-Video Generation",
+      "url": "https://huggingface.co/papers/2611.03394",
+      "upvotes": 3
+    },
+    {
+      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+      "url": "https://huggingface.co/papers/2611.03330",
+      "upvotes": 9
     }
   ]
 }

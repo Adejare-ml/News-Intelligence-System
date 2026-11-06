@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 941,
-      "mentions": 1569,
+      "companies": 942,
+      "mentions": 1570,
       "risk": {
-        "Low": 831,
+        "Low": 832,
         "Critical": 57,
         "Medium": 30,
         "High": 23
@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 48,
-      "mentions": 234,
+      "companies": 50,
+      "mentions": 239,
       "risk": {
         "Medium": 17,
-        "Low": 26,
+        "Low": 28,
         "Critical": 1,
         "High": 4
       }
@@ -225,15 +225,6 @@
       }
     },
     {
-      "industry": "Telecoms/Fintech",
-      "companies": 2,
-      "mentions": 6,
-      "risk": {
-        "Low": 1,
-        "Medium": 1
-      }
-    },
-    {
       "industry": "Beverages",
       "companies": 5,
       "mentions": 5,
@@ -247,6 +238,14 @@
       "mentions": 5,
       "risk": {
         "Low": 4,
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Fintech / Payments",
+      "companies": 1,
+      "mentions": 5,
+      "risk": {
         "Medium": 1
       }
     },
@@ -456,6 +455,14 @@
     },
     {
       "industry": "Technology/Venture Capital",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Telecoms/Fintech",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -959,5 +966,5 @@
       }
     }
   ],
-  "generated": "2026-11-05 15:34:06"
+  "generated": "2026-11-06 03:31:53"
 }
