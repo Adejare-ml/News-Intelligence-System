@@ -99,13 +99,14 @@ test("the owner is emailed when sending is on, with the reader's text escaped", 
       MAIL_FROM: "AURA <brief@example.org>",
       OWNER_EMAIL: "owner@example.org",
     };
-    const res = await dispute({ request: post({ ...GOOD, message: "<script>x</script> wrong" }), env });
+    const res = await dispute({ request: post({ ...GOOD, message: "<ScRiPt>x</ScRiPt> wrong" }), env });
     assert.deepEqual(await res.json(), { ok: true, message: DISPUTE_RECEIVED });
     assert.equal(sent.length, 1);
     assert.equal(sent[0].to, "owner@example.org");
     assert.match(sent[0].subject, /tolu-bakare/);
-    assert.doesNotMatch(sent[0].html, /<script>/);
-    assert.match(sent[0].text, /<script>x<\/script> wrong/);
+    assert.ok(!sent[0].html.toLowerCase().includes("<script"), "no raw script tag in any case");
+    assert.ok(sent[0].html.includes("&lt;ScRiPt&gt;x"), "the message is escaped in the HTML part");
+    assert.ok(sent[0].text.includes("<ScRiPt>x</ScRiPt> wrong"), "the text part keeps it verbatim");
   } finally {
     globalThis.fetch = realFetch;
   }
