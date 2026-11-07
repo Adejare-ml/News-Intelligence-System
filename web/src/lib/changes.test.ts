@@ -116,16 +116,32 @@ describe("procurement", () => {
     assert.equal(w.contracts[0].contractor, "");
     assert.equal(w.contracts[1].amountLabel, "₦59.65bn");
   });
+  test("an extractor's 'Not specified' is no project title", () => {
+    const w = weeklyChanges({ ...empty, procurement: [{ Agency: "Lagos Government", Project: "Not specified", Date: "2026-11-02" }] }, END);
+    assert.equal(w.contracts[0].project, "");
+  });
 });
 
 describe("source articles", () => {
   test("a line links to an article naming its entity within a day", () => {
-    const article = { Title: "MTN names new directors", URL: src(9), Time: "2026-11-04T15:00:00Z", Entities: "MTN Nigeria|Lwazi Bam" };
+    const article = { Title: "MTN names new directors - Premium Times Nigeria", Source: "Premium Times Nigeria", URL: src(9), Time: "2026-11-04T15:00:00Z", Entities: "MTN Nigeria|Lwazi Bam" };
     const far = { Title: "Older MTN story", URL: src(8), Time: "2026-10-20T15:00:00Z", Entities: "Lwazi Bam" };
     const w = weeklyChanges({ ...empty, articles: [far, article], people: [
       { Name: "Lwazi Bam", Organization: "MTN Nigeria", Event: "appointment", Date: "2026-11-04" },
     ] }, END);
-    assert.deepEqual(w.moves[0].article, { url: src(9), title: "MTN names new directors" });
+    // The feed's " - Publisher" tail is split off, so the link reads as a headline.
+    assert.deepEqual(w.moves[0].article, { url: src(9), title: "MTN names new directors", publisher: "Premium Times" });
+  });
+  test("a contract links only to a story about that project, not any story naming the agency", () => {
+    const agency = "Central Bank of Nigeria";
+    const unrelated = { Title: "Reps invite CBN governor over unpaid pensions arrears", URL: src(5), Time: "2026-11-02T10:00:00Z", Entities: agency };
+    const related = { Title: "FG vows National Library project completion in 24 months", URL: src(6), Time: "2026-11-07T01:00:00Z", Entities: "Federal Ministry of Education" };
+    const w = weeklyChanges({ ...empty, articles: [unrelated, related], procurement: [
+      { Agency: agency, Contractor: "None", Project: "Appointment of eight agents for crude oil exports", Source: "The Eagle Online", Date: "2026-11-02" },
+      { Agency: "Federal Ministry of Education", Contractor: "None", Project: "Completion of the National Library headquarters project", Source: "The Punch", Date: "2026-11-07" },
+    ] }, END);
+    assert.equal(w.contracts.find((c) => c.agency === agency)?.article, null);
+    assert.equal(w.contracts.find((c) => c.agency !== agency)?.article?.url, src(6));
   });
   test("no article is better than a wrong one", () => {
     const w = weeklyChanges({ ...empty, articles: [{ Title: "Unrelated", URL: src(7), Time: "2026-11-04T10:00:00Z", Entities: "Someone Else" }],

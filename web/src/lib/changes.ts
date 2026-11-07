@@ -10,7 +10,7 @@
 import { nameKey, slugify } from "./entity-key.ts";
 import { companyKey, personKey, publicRecords, toPercent, groupHoldings, type PscRecord } from "./psc.ts";
 import { toContract, known, type ProcurementRow } from "./procurement.ts";
-import { parseTime } from "./stories.ts";
+import { cleanTitle, parseTime, publisherName } from "./stories.ts";
 import type { CompanyRow, PersonMove } from "./entities.ts";
 
 export const WEEK_DAYS = 7;
@@ -18,11 +18,13 @@ export const WEEK_DAYS = 7;
 export interface ArticleRef {
   url: string;
   title: string;
+  publisher: string;
 }
 
 /** The fields of a latest.json article this page uses. */
 export interface ArticleLike {
   Title?: string;
+  Source?: string;
   URL?: string;
   Time?: string;
   Entities?: string;
@@ -166,12 +168,19 @@ function ownershipChanges(records: PscRecord[], start: string, end: string): Own
   return out;
 }
 
+/** Words of four letters or more: enough to tell one story's subject from another's. */
+const words = (text: string) => new Set(nameKey(text).split(/[^a-z0-9]+/).filter((w) => w.length >= 4));
+
 /**
  * An article in latest.json that lists one of the names among its entities
  * and was published within a day of the record: the closest one. A line
  * with no such article shows no link, rather than a guess.
+ *
+ * An agency like the CBN is named in many stories a day, so a contract also
+ * needs its project to share at least two words with the headline.
  */
-function articleFor(names: string[], date: string, articles: ArticleLike[]): ArticleRef | null {
+function articleFor(names: string[], date: string, articles: ArticleLike[], about = ""): ArticleRef | null {
+  const subject = words(about);
   const wanted = new Set(names.map(nameKey).filter(Boolean));
   if (!wanted.size) return null;
   const at = Date.parse(`${date}T12:00:00Z`);
@@ -183,7 +192,10 @@ function articleFor(names: string[], date: string, articles: ArticleLike[]): Art
     const gap = Math.abs(published.getTime() - at);
     if (gap > 1.5 * DAY_MS) continue;
     if (!String(a.Entities ?? "").split("|").some((e) => wanted.has(nameKey(e)))) continue;
-    if (!best || gap < best.gap) best = { ref: { url, title: String(a.Title ?? "").trim() }, gap };
+    if (subject.size && [...words(String(a.Title ?? ""))].filter((w) => subject.has(w)).length < 2) continue;
+    if (best && gap >= best.gap) continue;
+    const { title, publisher } = cleanTitle(String(a.Title ?? ""), String(a.Source ?? ""));
+    best = { ref: { url, title, publisher: publisher && publisherName(publisher) }, gap };
   }
   return best?.ref ?? null;
 }
@@ -258,10 +270,11 @@ export function weeklyChanges(input: ChangesInput, lastRun: string): WeeklyChang
         date: c.date,
         agency: c.agency,
         contractor: c.contractor,
-        project: c.project,
+        // The extractor writes "Not specified" when a story names no project.
+        project: /^not specified$/i.test(c.project) ? "" : c.project,
         amountLabel: c.amountLabel,
         publisher: c.source,
-        article: articleFor([c.agency, c.contractor], c.date, input.articles),
+        article: articleFor([c.agency, c.contractor], c.date, input.articles, c.project),
       })),
   );
 
