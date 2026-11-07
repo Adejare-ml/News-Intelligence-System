@@ -493,6 +493,12 @@
       "totals": {}
     },
     {
+      "name": "Federal Ministry of Education",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "GIZ Nigeria & ECOWAS",
       "contracts": 1,
       "undisclosed": 1,
@@ -740,8 +746,8 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 143,
-      "undisclosed": 86,
+      "contracts": 144,
+      "undisclosed": 87,
       "totals": {
         "NGN": 21532794090000.0,
         "USD": 47907540000.0
@@ -1278,5 +1284,5 @@
       }
     }
   ],
-  "generated": "2026-11-06 15:07:02"
+  "generated": "2026-11-07 02:53:26"
 }

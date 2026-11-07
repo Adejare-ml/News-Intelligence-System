@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-06 15:06:54",
+  "generated": "2026-11-07 02:53:17",
   "models": [
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 1386,
+      "likes": 1516,
       "downloads": 18432
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 877,
+      "likes": 953,
       "downloads": 19139
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 757,
+      "likes": 793,
       "downloads": 190243
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10813,
+      "likes": 10876,
       "downloads": 2607491
     },
     {
       "id": "burner22/numbat",
       "url": "https://huggingface.co/burner22/numbat",
       "task": "",
-      "likes": 364,
+      "likes": 372,
       "downloads": 9066
     },
     {
       "id": "FusionCow/Sulphur-3",
       "url": "https://huggingface.co/FusionCow/Sulphur-3",
       "task": "",
-      "likes": 388,
+      "likes": 397,
       "downloads": 950
-    },
-    {
-      "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
-      "task": "automatic-speech-recognition",
-      "likes": 3067,
-      "downloads": 61049
     },
     {
       "id": "ricursiveAI/Ripple-65B-Preview",
       "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
       "task": "",
-      "likes": 307,
+      "likes": 334,
       "downloads": 2013
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "task": "image-text-to-text",
+      "likes": 19282,
+      "downloads": 7845288
     }
   ],
   "papers": [
     {
-      "title": "Information Games: Strategic Crowding and Firm Repositioning in Language-Model Space",
-      "url": "https://huggingface.co/papers/2609.37820",
+      "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
+      "url": "https://huggingface.co/papers/2611.06500",
       "upvotes": 1
     },
     {
-      "title": "Reducing Representational Interference in Retrieval Embeddings with Trainable Prefix Tokens",
-      "url": "https://huggingface.co/papers/2611.07298",
-      "upvotes": 0
-    },
-    {
-      "title": "Hard Sample-Conditioned Decorrelated Attention for Robust Face Recognition",
-      "url": "https://huggingface.co/papers/2610.41789",
+      "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
+      "url": "https://huggingface.co/papers/2611.06498",
       "upvotes": 1
     },
     {
-      "title": "On the Opportunities and Challenges of Prefill-to-Autoregressive Cross-Model Transfer",
-      "url": "https://huggingface.co/papers/2611.06976",
-      "upvotes": 11
+      "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+      "url": "https://huggingface.co/papers/2611.04386",
+      "upvotes": 3
     },
     {
-      "title": "Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation",
-      "url": "https://huggingface.co/papers/2611.07613",
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "url": "https://huggingface.co/papers/2611.08483",
+      "upvotes": 3
+    },
+    {
+      "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
+      "url": "https://huggingface.co/papers/2610.37739",
       "upvotes": 2
     },
     {
-      "title": "SynthFaces: Balanced Large Scale Human Dataset",
-      "url": "https://huggingface.co/papers/2610.40119",
-      "upvotes": 1
+      "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
+      "url": "https://huggingface.co/papers/2611.08237",
+      "upvotes": 7
     }
   ]
 }
