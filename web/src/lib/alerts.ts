@@ -4,6 +4,9 @@
  */
 import { cleanTitle, publisherName, riskLevelFor, type Story } from "./stories.ts";
 
+/** Where the inbox keeps read alert ids; the Follow dot reads the same list. */
+export const ALERTS_READ_KEY = "aura-alerts-read";
+
 export interface RawAlert {
   date?: string;
   title?: string;

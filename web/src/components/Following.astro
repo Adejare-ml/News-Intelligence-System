@@ -1,0 +1,48 @@
+---
+/**
+ * The home page's "Following" panel. Empty and hidden in the HTML:
+ * scripts/follow.ts fills it from this browser's follows and shows it, so
+ * readers without JavaScript, or following nothing, never see it.
+ */
+import { href } from "../lib/url.ts";
+---
+<section class="wrap following" data-following data-latest={href("data/latest.json")} data-alerts={href("data/alerts.json")} data-entity={href("entity/")} aria-labelledby="following-title" hidden>
+  <div class="card">
+    <p class="eyebrow">Following</p>
+    <h2 class="h3" id="following-title">People and companies you follow</h2>
+    <ul class="list" data-following-list></ul>
+    <p class="meta note">Saved in this browser only. Follow or unfollow from any person or company page.</p>
+  </div>
+</section>
+
+<style>
+  .following {
+    padding-top: clamp(24px, 4vw, 48px);
+  }
+  .card {
+    padding: clamp(18px, 3vw, 28px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-l);
+    background: var(--surface);
+  }
+  .list {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+  }
+  .list :global(li) {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .list :global(.f-name) {
+    font-weight: 600;
+    color: var(--royal-ink);
+  }
+  .list :global(.f-latest) {
+    margin: 4px 0 0;
+    overflow-wrap: anywhere;
+  }
+  .note {
+    margin: 12px 0 0;
+  }
+</style>

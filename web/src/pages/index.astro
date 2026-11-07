@@ -7,6 +7,7 @@ import StoryGrid from "../components/StoryGrid.astro";
 import OwnershipStory from "../components/OwnershipStory.astro";
 import MarketStrip from "../components/MarketStrip.astro";
 import Subscribe from "../components/Subscribe.astro";
+import Following from "../components/Following.astro";
 import * as data from "../lib/data.ts";
 import { href } from "../lib/url.ts";
 import { parseBrief } from "../lib/brief.ts";
@@ -88,6 +89,7 @@ const next = nextRunAfter(editionAt);
     updatedLabel={lastRun ? lagosTime(lastRun) : "unknown"}
     nextLabel={lagosTime(next)}
   />
+  <Following />
   <BriefLead brief={brief} dateLabel={lagosDate(editionAt)} />
   <StoryGrid stories={stories} now={editionAt} />
   {featured && <OwnershipStory holding={featured} others={others} />}
