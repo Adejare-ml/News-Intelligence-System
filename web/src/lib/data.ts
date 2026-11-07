@@ -6,10 +6,11 @@
  * hidden because a request failed. Each pipeline run commits new data, and
  * that commit triggers a rebuild.
  */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Article } from "./stories.ts";
 import { publicRecords, type PscRecord } from "./psc.ts";
+import { isFindingFile, publishableFindings, type Finding } from "./findings.ts";
 
 const DATA_DIR = process.env.AURA_DATA_DIR
   ? resolve(process.env.AURA_DATA_DIR)
@@ -119,3 +120,13 @@ export interface WeeklyWrap {
   markdown?: string;
 }
 export const weeklyWrap = () => readJson<WeeklyWrap>("weekly_wrap.json", {});
+
+/** Merged weekly findings, rechecked against today's register (see findings.ts). */
+export function findings(): Finding[] {
+  const dir = resolve(DATA_DIR, "findings");
+  const files = existsSync(dir) ? readdirSync(dir).filter(isFindingFile) : [];
+  return publishableFindings(
+    files.map((name) => readJson<Finding>(`findings/${name}`, null as unknown as Finding)),
+    readJson<PscRecord[]>("significant_control.json", []),
+  );
+}
