@@ -59,10 +59,18 @@ This appends `{name, kind?, added, reason}` to
   `latest.json`, `graph.json`, `alerts.json`, the timelines and the email
   digest). The rows stay in the Google Sheet.
 
-Matching is by whole words, ignoring case: "Aliko Dangote" also hides
-"Alhaji Aliko Dangote", but not "Dangote Cement". Use the full name; a
-single common word would hide every record containing it. Any article,
-brief line or contract that names the entity is hidden with it.
+Matching is by whole words, ignoring case, accents, middle initials and
+honorifics, plus the register's canonical keys: "Aliko Dangote" also hides
+"Alhaji Aliko Dangote", "Tony Elumelu" hides "Tony O. Elumelu", and
+"Dangote Cement Plc" hides "Dangote Cement", but "Aliko Dangote" does not
+hide "Dangote Cement". Use the full name; a single common word would hide
+every record containing it. Any article, headline, brief line or contract
+that names the entity, in any field, is hidden with it.
+
+**The list is public.** `suppressed.json` is in this public repository, so
+each name and its reason can be read there (the site itself does not
+serve the file). Keep the reason generic, such as "dispute upheld" or
+"removed on request"; never put the details of a dispute there.
 
 To publish a name again, delete its entry from `suppressed.json`.
 
