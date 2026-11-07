@@ -4,6 +4,8 @@
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { hidden } from "./data.ts";
+import { withoutHiddenLines } from "./suppressed.ts";
 
 export interface Edition {
   slug: string;
@@ -41,8 +43,9 @@ export function listEditions(): Edition[] {
     .sort((a, b) => b.date.getTime() - a.date.getTime());
 }
 
+/** One edition's markdown, without lines naming an unpublished entity. */
 export function readEdition(edition: Edition): string {
-  return readFileSync(resolve(archiveDir(), edition.file), "utf-8");
+  return withoutHiddenLines(readFileSync(resolve(archiveDir(), edition.file), "utf-8"), hidden());
 }
 
 /** Group editions by day, newest day first. */

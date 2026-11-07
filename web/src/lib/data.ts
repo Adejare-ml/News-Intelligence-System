@@ -9,7 +9,10 @@
 import { readFileSync, existsSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Article } from "./stories.ts";
+import type { CompanyRow, PersonMove } from "./entities.ts";
+import type { ProcurementRow } from "./procurement.ts";
 import { publicRecords, type PscRecord } from "./psc.ts";
+import { hiddenNames, scrubDigest, withoutHidden, withoutHiddenLines } from "./suppressed.ts";
 
 const DATA_DIR = process.env.AURA_DATA_DIR
   ? resolve(process.env.AURA_DATA_DIR)
@@ -39,9 +42,24 @@ export function readText(name: string): string {
   return existsSync(path) ? readFileSync(path, "utf-8") : "";
 }
 
-export const articles = () => readJson<Article[]>("latest.json", []);
+/**
+ * Names the owner has unpublished (scripts/unpublish.py). Every loader
+ * below that returns rows about people or companies leaves them out, so
+ * pages, search, the sitemap and the email never read them.
+ */
+export const hidden = () => hiddenNames(readJson<unknown>("suppressed.json", []));
+
+export const articles = () => withoutHidden(readJson<Article[]>("latest.json", []), hidden());
 /** Register rows the site may publish. Every page reads the register through this. */
-export const psc = () => publicRecords(readJson<PscRecord[]>("significant_control.json", []));
+export const psc = () => publicRecords(withoutHidden(readJson<PscRecord[]>("significant_control.json", []), hidden()));
+export const companies = () => withoutHidden(readJson<CompanyRow[]>("companies.json", []), hidden());
+export const people = () => withoutHidden(readJson<PersonMove[]>("people.json", []), hidden());
+export const procurement = () => withoutHidden(readJson<ProcurementRow[]>("procurement.json", []), hidden());
+/** The pipeline's Morning Brief edition (email_digest.json), or null. */
+export const emailDigest = () => {
+  const raw = readJson<Record<string, unknown> | null>("email_digest.json", null);
+  return raw && typeof raw === "object" ? scrubDigest(raw, hidden()) : raw;
+};
 
 export interface GateSummary {
   checked?: number;
@@ -51,7 +69,7 @@ export interface GateSummary {
 }
 /** Counts (never names) of register rows the validation gate kept off the site. */
 export const registerQuality = () => readJson<GateSummary>("register_quality.json", {});
-export const briefMarkdown = () => readText("report_latest.md");
+export const briefMarkdown = () => withoutHiddenLines(readText("report_latest.md"), hidden());
 
 export interface FxPayload {
   generated?: string;
@@ -75,7 +93,10 @@ export interface AlertsPayload {
     summary?: string;
   }[];
 }
-export const alerts = () => readJson<AlertsPayload>("alerts.json", {});
+export const alerts = (): AlertsPayload => {
+  const payload = readJson<AlertsPayload>("alerts.json", {});
+  return payload.alerts ? { ...payload, alerts: withoutHidden(payload.alerts, hidden()) } : payload;
+};
 
 export interface ReportRow {
   Date?: string;
@@ -118,4 +139,7 @@ export interface WeeklyWrap {
   generated?: string;
   markdown?: string;
 }
-export const weeklyWrap = () => readJson<WeeklyWrap>("weekly_wrap.json", {});
+export const weeklyWrap = (): WeeklyWrap => {
+  const wrap = readJson<WeeklyWrap>("weekly_wrap.json", {});
+  return wrap.markdown ? { ...wrap, markdown: withoutHiddenLines(wrap.markdown, hidden()) } : wrap;
+};

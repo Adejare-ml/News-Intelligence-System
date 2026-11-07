@@ -5,17 +5,17 @@ import { SECTIONS } from "../lib/nav.ts";
 import { HEADLINE_CATEGORIES } from "../../functions/_lib/categories.ts";
 import { listEditions } from "../lib/archive.ts";
 import { groupHoldings } from "../lib/psc.ts";
-import { toContract, type ProcurementRow } from "../lib/procurement.ts";
-import { buildEntities, type CompanyRow, type PersonMove } from "../lib/entities.ts";
+import { toContract } from "../lib/procurement.ts";
+import { buildEntities } from "../lib/entities.ts";
 
 export function GET({ site }: { site?: URL }) {
   const base = site ?? new URL("https://auranews.pages.dev");
   const entities = buildEntities({
     holdings: groupHoldings(data.psc()),
-    companies: data.readJson<CompanyRow[]>("companies.json", []),
-    people: data.readJson<PersonMove[]>("people.json", []),
+    companies: data.companies(),
+    people: data.people(),
     articles: data.articles(),
-    contracts: data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract),
+    contracts: data.procurement().map(toContract),
   });
   // The register and entity pages name people as owners from news reporting;
   // they carry noindex and stay out of the sitemap.
