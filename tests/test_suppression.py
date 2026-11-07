@@ -51,6 +51,36 @@ def test_scrub_drops_every_row_that_names_a_hidden_entity():
     assert [r["Person Name"] for r in tables["psc"]] == ["Jim"]
 
 
+def test_scrub_drops_rows_that_name_a_hidden_entity_in_any_column():
+    """Free-text columns are published too (Key Facts in the digest cards,
+    Previous Holder and Source Title on the register, Event on people)."""
+    tables = suppression.scrub(
+        ["Zed Hidden"],
+        psc=[{"Person Name": "Ann Other", "Company": "Acme Plc", "Previous Holder": "Zed Hidden"},
+             {"Person Name": "Ann Other", "Company": "Acme Plc", "Source Title": "Zed Hidden sells Acme stake"},
+             {"Person Name": "Ann Other", "Company": "Acme Plc", "Percentage": 40}],
+        articles=[{"Title": "Acme changes hands", "Key Facts": "Seller: Zed Hidden"},
+                  {"Title": "Acme changes hands", "Detail": {"para": ["Zed Hidden sold 40%"]}}],
+        people=[{"Name": "Ann Other", "Organization": "Acme", "Event": "Replaces Zed Hidden as chairman"}],
+    )
+    assert {k: len(v) for k, v in tables.items()} == {"psc": 1, "articles": 0, "people": 0}
+
+
+def test_names_match_the_registers_canonical_forms():
+    """A middle initial, an honorific or a legal suffix does not make a
+    different entity (register_quality.canonical_person/canonical_company)."""
+    assert suppression.names("Tony O. Elumelu", ["Tony Elumelu"])
+    assert suppression.names("Tony Elumelu", ["Chief Tony O. Elumelu"])
+    assert suppression.names("Profits at Dangote Cement rise", ["Dangote Cement Plc"])
+    assert suppression.names("Dangote Petroleum Refinery", ["Dangote Refinery"])
+    assert suppression.scrub(["Zedekiah Varianttest"], psc=[
+        {"Person Name": "Zedekiah Q. Varianttest", "Company": "Sentinel Mills Plc"}])["psc"] == []
+    # A suffix-only key would be one common word: "Access Holdings" must not
+    # hide every story that says "access".
+    assert not suppression.names("Banks widen access to credit", ["Access Holdings"])
+    assert suppression.names("Access", ["Access Holdings"])
+
+
 def test_scrub_with_nothing_hidden_returns_the_same_rows():
     rows = [{"Company": "A"}]
     assert suppression.scrub([], companies=rows)["companies"] is rows
@@ -62,7 +92,7 @@ def test_alerts_naming_a_hidden_entity_are_dropped():
         {"title": "Fraud probe", "entities": ["Kola Holdings"]},
         {"title": "CBN fines bank", "entities": ["CBN"]},
     ]
-    assert suppression.drop_alerts(alerts, ["Kola Holdings"]) == [alerts[2]]
+    assert suppression.without(alerts, ["Kola Holdings"]) == [alerts[2]]
 
 
 def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch):

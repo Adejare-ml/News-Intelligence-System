@@ -1241,7 +1241,7 @@ def export_static_json_database():
         logger.warning(f"Alerts ledger read failed; keeping previous alerts.json: {exc}")
     else:
         with open(os.path.join(DATA_DIR, "alerts.json"), "w", encoding="utf-8") as f:
-            json.dump({"alerts": suppression.drop_alerts(analytics.recent_alerts(alert_rows), hidden),
+            json.dump({"alerts": suppression.without(analytics.recent_alerts(alert_rows), hidden),
                        "window_days": 90,
                        "generated": stamp}, f, default=str, indent=2)
 
