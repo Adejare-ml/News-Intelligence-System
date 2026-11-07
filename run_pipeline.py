@@ -1420,9 +1420,12 @@ def export_static_json_database():
                 })
 
     # Generate edges from Procurement
+    # From the cleaned, deduped rows: legacy "TBD"/"None" contractors are
+    # blank there, so the agency-and-contractor check below drops them
+    # instead of graphing a company called "TBD".
     # Newest first by the Date column; legacy rows without a Date fall
     # back to append-order recency (later row index = newer).
-    _dated = sorted(enumerate(procurement),
+    _dated = sorted(enumerate(procurement_out),
                     key=lambda p: (str(p[1].get("Date", "")), p[0]), reverse=True)
     for _, row in _dated[:20]:
         agency = row.get("Agency", "").strip()

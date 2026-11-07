@@ -100,6 +100,22 @@ class TestProcurementExport:
         assert rows[0]["Amount"] == ""
         assert rows[0]["Project"] == ""
 
+    def test_placeholder_contractors_add_no_graph_nodes(self, tmp_path, monkeypatch):
+        # 139 of 224 published awards carried "TBD"/"None" contractors, and
+        # each became a company node with a "Contract Awardee" edge.
+        out = run_export(tmp_path, monkeypatch, {"Procurement": [
+            {"Agency": "NNPC", "Contractor": "TBD", "Amount": "N/A",
+             "Project": "Pipeline repairs", "Source": "Punch", "Date": "2026-09-01"},
+            {"Agency": "FMW", "Contractor": "None", "Amount": "N2bn",
+             "Project": "Bridge", "Source": "Punch", "Date": "2026-09-02"},
+            AWARD,
+        ]})
+        graph = json.loads((out / "graph.json").read_text())
+        labels = {n["label"] for n in graph["nodes"]}
+        assert not labels & {"TBD", "None"}
+        assert "Julius Berger Plc" in labels
+        assert [e["label"] for e in graph["edges"]].count("Contract Awardee") == 1
+
     def test_rollup_counts_a_duplicated_award_once(self, tmp_path, monkeypatch):
         out = run_export(tmp_path, monkeypatch, {"Procurement": [
             dict(AWARD, Source="Punch"), dict(AWARD, Source="Vanguard"),
