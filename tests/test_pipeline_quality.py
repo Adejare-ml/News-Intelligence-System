@@ -297,28 +297,55 @@ class TestCollapseStoryCopies:
         assert collapse_story_copies(rows) == rows
 
 
+def run_one_article(tmp_path, monkeypatch, analysis):
+    """Run the pipeline over one collected article the model answers with
+    `analysis`, and return every pause it took."""
+    from backend.app.services.ingestion import NewsIngestionService
+    from backend.app.services.llm import LLMService
+
+    d = SheetsDatabase()
+    d.use_local = True
+    d.local_path = str(tmp_path / "run.xlsx")
+    d._cache = {}
+    d._init_db()
+    monkeypatch.setattr(rp, "db", d)
+    monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(NewsIngestionService, "collect_all", classmethod(lambda cls: [
+        {"title": "CBN raises monetary policy rate to 28%", "source": "Punch",
+         "url": "https://punchng.com/mpr", "raw_text": "The CBN raised the MPR."}]))
+    monkeypatch.setattr(LLMService, "analyze_article",
+                        classmethod(lambda cls, t, x: dict(analysis)))
+    monkeypatch.setattr(rp, "compile_daily_report", lambda *a, **k: None)
+    monkeypatch.setattr(rp, "export_static_json_database", lambda: None)
+    waits = []
+    monkeypatch.setattr("time.sleep", lambda s: waits.append(s))
+    rp.run_pipeline()
+    return waits
+
+
+ACCEPTED = {"relevant": True, "engine": "claude", "category": "Policy",
+            "summary": "The CBN raised the monetary policy rate to 28%.", "risk_score": 40}
+
+
 class TestRejectPacing:
     def test_a_model_reject_waits_only_for_its_one_sheets_write(self, tmp_path, monkeypatch):
         # The 3.5s wait cited Gemini's 15 RPM, but Gemini does not extract
         # (LLMService.analyze_article: DSPy, Claude, Ollama, NVIDIA). A
         # reject writes one Filtered row, paced like the pre-LLM reject.
-        from backend.app.services.ingestion import NewsIngestionService
-        from backend.app.services.llm import LLMService
-
-        d = SheetsDatabase()
-        d.use_local = True
-        d.local_path = str(tmp_path / "run.xlsx")
-        d._cache = {}
-        d._init_db()
-        monkeypatch.setattr(rp, "db", d)
-        monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
-        monkeypatch.setattr(NewsIngestionService, "collect_all", classmethod(lambda cls: [
-            {"title": "CBN raises monetary policy rate to 28%", "source": "Punch",
-             "url": "https://punchng.com/mpr", "raw_text": "The CBN raised the MPR."}]))
-        monkeypatch.setattr(LLMService, "analyze_article",
-                            classmethod(lambda cls, t, x: {"relevant": False, "engine": "claude"}))
-        monkeypatch.setattr(rp, "export_static_json_database", lambda: None)
-        waits = []
-        monkeypatch.setattr("time.sleep", lambda s: waits.append(s))
-        rp.run_pipeline()
+        waits = run_one_article(tmp_path, monkeypatch, {"relevant": False, "engine": "claude"})
         assert waits == [1.0]
+
+
+class TestAcceptPacing:
+    def test_an_accepted_article_waits_four_seconds_by_default(self, tmp_path, monkeypatch):
+        monkeypatch.delenv("EXTRACTION_SLEEP_SECONDS", raising=False)
+        assert run_one_article(tmp_path, monkeypatch, ACCEPTED)[-1:] == [4.0]
+
+    def test_the_pause_is_tunable_without_a_code_change(self, tmp_path, monkeypatch):
+        monkeypatch.setenv("EXTRACTION_SLEEP_SECONDS", "0.5")
+        assert run_one_article(tmp_path, monkeypatch, ACCEPTED)[-1:] == [0.5]
+
+    @pytest.mark.parametrize("raw", ["", "fast", "-2"])
+    def test_an_unreadable_setting_falls_back_to_the_default(self, raw, monkeypatch):
+        monkeypatch.setenv("EXTRACTION_SLEEP_SECONDS", raw)
+        assert rp.accept_pause_seconds() == 4.0

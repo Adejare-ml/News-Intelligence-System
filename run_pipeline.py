@@ -47,6 +47,22 @@ RUN_IMAGES: Dict[str, str] = {}
 # pacing, not an LLM rate limit.
 REJECT_PAUSE_SECONDS = 1.0
 
+# Pause after an accepted article. It appends a row per company, person,
+# agency, award and PSC claim on top of its own, one write each, and Sheets
+# allows 60 writes a minute per user: 4s keeps a run of entity-rich
+# articles under that. excel_db also retries 429s with backoff, so the
+# owner can shorten it with EXTRACTION_SLEEP_SECONDS without a code change.
+ACCEPT_PAUSE_SECONDS = 4.0
+
+
+def accept_pause_seconds() -> float:
+    """EXTRACTION_SLEEP_SECONDS when it is a non-negative number, else 4s."""
+    try:
+        value = float(os.environ.get("EXTRACTION_SLEEP_SECONDS", ""))
+    except ValueError:
+        return ACCEPT_PAUSE_SECONDS
+    return value if value >= 0 else ACCEPT_PAUSE_SECONDS
+
 # Abort the run after this many articles in a row fail the whole LLM cascade:
 # at that point the providers are down and continuing would only burn quota.
 MAX_CONSECUTIVE_LLM_FAILURES = 3
@@ -524,13 +540,10 @@ def run_pipeline(seed: bool = False):
         # Add to existing_urls set to prevent processing duplicate URLs within the same candidate batch
         existing_urls.add(url)
         
-        # Sheets write pacing. An accepted article appends a row per company,
-        # person, agency, award and PSC claim on top of its own, one write
-        # each, and Sheets allows 60 writes a minute per user: this keeps a
-        # run of entity-rich articles under it. (It used to cite Gemini's
-        # 15 RPM; Gemini no longer extracts.)
+        # Sheets write pacing (see ACCEPT_PAUSE_SECONDS). It used to cite
+        # Gemini's 15 RPM; Gemini no longer extracts.
         import time
-        time.sleep(4.0)
+        time.sleep(accept_pause_seconds())
 
     logger.info(f"Pipeline run completed. Processed {new_articles_count} new news items.")
 
