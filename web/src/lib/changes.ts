@@ -144,13 +144,17 @@ function ownershipChanges(records: PscRecord[], start: string, end: string): Own
       const date = dateOf(r.Date);
       const stake = toPercent(r.Percentage);
       const divested = DIVESTED.test(String(r["Change Type"] ?? ""));
+      // An exit wording is a removal whatever figure comes with it: "sold her
+      // 20% stake" reports the stake given up, not one still held (as the
+      // email digest reads it too).
       let kind: OwnershipChange["kind"] | null = null;
-      if (divested && (stake === null || !seen)) kind = "removed";
+      if (divested) kind = "removed";
       else if (!seen) kind = "added";
       else if (stake !== null && lastStake !== null && stake !== lastStake) kind = "changed";
       const previous = lastStake;
-      seen = true;
-      if (stake !== null) lastStake = stake;
+      // After an exit the holding is gone, so a later report starts it afresh.
+      seen = !divested;
+      lastStake = divested ? null : stake ?? lastStake;
       if (!kind || date < start || date > end) continue;
       const holding = names.get(key);
       out.push({

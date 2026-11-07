@@ -119,7 +119,9 @@ const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as
               {" · "}
               {entity(o.company) ? <a href={entity(o.company)}>{o.company}</a> : o.company}
               {o.kind === "changed" && o.previous !== null && <> {pct(o.previous)} → {pct(o.stake)}</>}
-              {o.kind !== "changed" && o.stake !== null && <> · {pct(o.stake)}</>}
+              {o.kind === "added" && o.stake !== null && <> · {pct(o.stake)}</>}
+              {/* On an exit the figure is the stake given up, not one still held. */}
+              {o.kind === "removed" && o.stake !== null && <> · figure reported: {pct(o.stake)}</>}
               <a class="src" href={o.source.url} rel="noopener" target="_blank">{cite(o.source)}</a>
             </p>
           </li>

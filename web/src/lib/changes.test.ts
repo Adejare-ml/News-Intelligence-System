@@ -56,6 +56,31 @@ describe("ownership records", () => {
     ] }, END);
     assert.equal(w.ownership[0].kind, "removed");
   });
+  test("an exit reported with the stake sold is a removal, showing the figure reported", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ "Person Name": "Ada Obi", Date: "2026-10-01", Percentage: "20%" }),
+      psc({ "Person Name": "Ada Obi", Date: "2026-11-05", Percentage: "20%", "Change Type": "sold", "Source URL": src(2) }),
+    ] }, END);
+    assert.equal(w.ownership.length, 1);
+    assert.equal(w.ownership[0].kind, "removed");
+    assert.equal(w.ownership[0].stake, 20);
+    assert.equal(w.ownership[0].previous, null);
+  });
+  test("an exit reported at 0% is a removal, not a stake change", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ "Person Name": "Ada Obi", Date: "2026-10-01", Percentage: "20%" }),
+      psc({ "Person Name": "Ada Obi", Date: "2026-11-05", Percentage: "0%", "Change Type": "sold", "Source URL": src(2) }),
+    ] }, END);
+    assert.deepEqual(w.ownership.map((o) => o.kind), ["removed"]);
+  });
+  test("a holding reported again after an exit is added afresh", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ Date: "2026-10-01", Percentage: "20%" }),
+      psc({ Date: "2026-10-10", Percentage: "20%", "Change Type": "sold" }),
+      psc({ Date: "2026-11-05", Percentage: "20%", "Source URL": src(3) }),
+    ] }, END);
+    assert.deepEqual(w.ownership.map((o) => o.kind), ["added"]);
+  });
   test("rows the register gate withholds never appear", () => {
     const w = weeklyChanges({ ...empty, records: [
       psc({ "Person Name": "Unsourced Person", "Source URL": "" }),
