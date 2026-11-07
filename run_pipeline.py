@@ -34,6 +34,7 @@ from backend.app.services import story_detail
 from backend.app.services import claude_llm
 from backend.app.services import email_digest
 from backend.app.pipeline import side_feeds
+from backend.app.pipeline.cells import clean_procurement_row, procurement_cells
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -468,15 +469,9 @@ def run_pipeline(seed: bool = False):
             })
             
         # Write Procurement Tenders
-        proc = analysis.get("procurement")
-        if proc and isinstance(proc, dict) and proc.get("agency"):
-            db.add_procurement({
-                "Agency": proc.get("agency"),
-                "Contractor": proc.get("contractor", "TBD"),
-                "Amount": proc.get("amount", "N/A"),
-                "Project": proc.get("project", title),
-                "Source": source
-            })
+        proc_row = procurement_cells(analysis.get("procurement"), title, source)
+        if proc_row:
+            db.add_procurement(proc_row)
             
         # Write Significant Control (PSC)
         #
@@ -1121,9 +1116,11 @@ def export_static_json_database():
     # Procurement rows carry their parsed amount at export time (never
     # stored), so the parser's coverage applies to every historical row,
     # not just rows written after it shipped. Undisclosed stays null.
+    # Legacy rows written before procurement_cells still carry "TBD",
+    # "N/A" and "None" as text; they publish as blanks.
     procurement_out = []
     for row in procurement:
-        r = dict(row)
+        r = clean_procurement_row(row)
         parsed = analytics.parse_amount(r.get("Amount"))
         r["Amount Value"] = parsed["value"] if parsed else None
         r["Amount Currency"] = parsed["currency"] if parsed else None
