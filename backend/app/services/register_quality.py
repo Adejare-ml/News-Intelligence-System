@@ -171,15 +171,26 @@ def has_source_link(row: Dict[str, Any]) -> bool:
 # The extraction prompt shows this reference as an example; a model that
 # found none sometimes copies it, so it is never taken as a real filing.
 _EXAMPLE_FILING_REFS = {"cac/psc/2026/0891"}
-# A registry reference has letters and a run of digits ("RC 1234567",
-# "CAC/PSC/2026/1187"); "SEC disclosure" or "pending" is a word, not a ref.
-_FILING_REF_RE = re.compile(r"[a-z].*\d{3,}|\d{3,}.*[a-z]", re.I)
+# A registry reference is a registry prefix and a number ("RC 1234567",
+# "BN 3344556") or one unbroken code of letters and digits
+# ("CAC/PSC/2026/1187"). Words with a year in them ("SEC disclosure 2026",
+# "Not filed as of 2026") are what the model writes when it found none.
+_FILING_REF_RE = re.compile(
+    r"(?:rc|bn|it|cac|psc)\s*[-/:#.]?\s*\d{3,}|(?=\S*[a-z])(?=\S*\d{3,})\S+", re.I)
+_NOT_A_REF_WORDS = {
+    "not", "no", "none", "nil", "pending", "unknown", "awaiting", "tbd", "filed",
+    "unavailable", "undisclosed", "disclosure", "disclosures", "announcement",
+}
 
 
 def has_filing_ref(row: Dict[str, Any]) -> bool:
     """True when the row carries something shaped like a registry reference."""
     ref = _clean(row.get("Regulatory Filing Ref"))
-    return bool(ref) and ref.lower() not in _EXAMPLE_FILING_REFS and bool(_FILING_REF_RE.search(ref))
+    if not ref or ref.lower() in _EXAMPLE_FILING_REFS:
+        return False
+    if any(w in _NOT_A_REF_WORDS for w in _fold(ref).split()):
+        return False
+    return bool(_FILING_REF_RE.fullmatch(ref))
 
 
 # What the extractor read when it wrote the row ("Basis" column): only the
@@ -208,34 +219,57 @@ def is_approved(row: Dict[str, Any]) -> bool:
 
 
 def confidence(row: Dict[str, Any]) -> str:
-    """The tier readers see on every published record."""
-    basis = basis_of(row)
-    if has_filing_ref(row) or basis == "filing":
+    """The tier readers see on every published record.
+
+    "Official filing" tells readers a reference is on record, so it needs
+    one; an owner who set Basis = filing without entering it gets the tier
+    the reporting itself supports.
+    """
+    if has_filing_ref(row):
         return "Official filing"
-    if basis == "article":
+    if basis_of(row) == "article":
         return "Full article"
     return "Headline only"
 
 
 # Words that make a holder a company, trust or vehicle rather than a person.
-_HOLDER_ENTITY_WORDS = _COMPANY_SUFFIXES | {
+_HOLDER_ENTITY_WORDS = _COMPANY_SUFFIXES | relevance._ORG_WORDS | {
     "nominees", "nominee", "capital", "investments", "investment", "partners",
-    "fund", "ventures", "trust", "trustees", "llp",
+    "fund", "ventures", "trustees", "trustee", "llp", "spv",
 }
+
+# What the extractor writes in the chain fields when there is no one there.
+_NO_HOLDER = {"direct", "direct holding", "direct shareholder"}
+
+
+def _reads_as_entity(name: str) -> bool:
+    """True only on clear evidence that a name is an organisation: it ends
+    in an entity word ("Sahel Nominees", "Access Bank Plc") or holds two of
+    them ("Vetiva Capital Partners").
+
+    One entity word anywhere is not enough: Trust, Fund and Favour are
+    Nigerian first names, and wrongly calling a person a company would
+    publish a headline-only claim about them. Unclear names count as people.
+    """
+    words = _fold(name).split()
+    return bool(words) and (
+        words[-1] in _HOLDER_ENTITY_WORDS or sum(w in _HOLDER_ENTITY_WORDS for w in words) >= 2)
 
 
 def names_person(row: Dict[str, Any]) -> bool:
-    """True when the holder named on the row reads as a natural person.
+    """True when the row names a natural person anywhere in the holding:
+    the holder, the previous holder or the control chain.
 
     Companies-only records (one company holding another) are not claims
-    about an individual, so the person rule leaves them alone.
+    about an individual, so the person rule leaves them alone. A previous
+    holder is rendered on the card ("control moved from ..."), so a company
+    row that names a person there is a claim about that person too.
     """
-    name = _clean(row.get("Person Name"))
-    if not name:
-        return False
-    if any(w in _HOLDER_ENTITY_WORDS for w in _fold(name).split()):
-        return False
-    return not relevance.is_role_or_org_name(name)
+    for field in ("Person Name", "Previous Holder", "Intermediate Entities"):
+        name = _clean(row.get(field))
+        if name and _fold(name) not in _NO_HOLDER and not _reads_as_entity(name):
+            return True
+    return False
 
 
 def quality_flags(row: Dict[str, Any]) -> List[str]:
@@ -252,8 +286,10 @@ def quality_flags(row: Dict[str, Any]) -> List[str]:
     if (pct is not None and not 0 <= pct <= 100) or person in _NON_BUSINESS_FIGURES or off_topic:
         flags.append("implausible")
     # A claim about a named person needs more than a headline behind it:
-    # a filing reference, the full article, or the owner's sign-off.
-    if names_person(row) and confidence(row) == "Headline only" and not is_approved(row):
+    # a filing reference, the full article, or the owner's sign-off (an
+    # Approved = yes, or a Basis = filing the owner set after checking).
+    signed_off = is_approved(row) or basis_of(row) == "filing"
+    if names_person(row) and confidence(row) == "Headline only" and not signed_off:
         flags.append("unverified_person")
     if not has_filing_ref(row):
         flags.append("no_filing")
@@ -309,6 +345,25 @@ def is_public(row: Dict[str, Any]) -> bool:
 def public_rows(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """The annotated rows the site may publish, each marked Public."""
     return [dict(r, Public=True) for r in rows or [] if is_public(r)]
+
+
+def _pair(row: Dict[str, Any]) -> tuple:
+    # The (person, company) key report.compute_cycle_changes diffs on.
+    return (str(row.get("Person Name", "")).strip().lower(), str(row.get("Company", "")).strip().lower())
+
+
+def without_withheld(previous: Iterable[Dict[str, Any]], checked: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """The previous export minus every pair the gate now withholds.
+
+    changes.json is public and lists removed pairs by name. Diffed against
+    the raw previous export, a claim the gate has just held back (or one
+    un-approved after a correction request) would be announced there as
+    "removed", naming the person the gate kept off the site.
+    """
+    checked = list(checked or [])
+    shown = {_pair(r) for r in checked if is_public(r)}
+    held = {_pair(r) for r in checked if not is_public(r)} - shown
+    return [r for r in previous or [] if _pair(r) not in held]
 
 
 def _withheld_reason(row: Dict[str, Any]) -> str:

@@ -1078,7 +1078,9 @@ def export_static_json_database():
             "articles": _prev_snapshot("latest.json"),
             "companies": _prev_snapshot("companies.json"),
             "people": _prev_snapshot("people.json"),
-            "psc": _prev_snapshot("significant_control.json"),
+            # Pairs the gate now withholds would otherwise be listed by name
+            # as "removed" in this public file.
+            "psc": register_quality.without_withheld(_prev_snapshot("significant_control.json"), psc_checked),
         },
         {
             "articles": articles_sorted,

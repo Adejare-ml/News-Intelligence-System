@@ -73,13 +73,18 @@ class TestConfidence:
     def test_three_tiers(self):
         tiers = [q.annotate([r])[0]["Confidence"] for r in (
             row(**{"Regulatory Filing Ref": "CAC/PSC/2026/1187-KFM"}),
-            row(Basis="filing"),
             row(Basis="article"),
             row(Basis="headline", Approved="yes"),
             row(),
         )]
-        assert tiers == ["Official filing", "Official filing", "Full article",
-                         "Headline only", "Headline only"]
+        assert tiers == ["Official filing", "Full article", "Headline only", "Headline only"]
+
+    def test_filing_basis_without_a_reference_is_not_an_official_filing(self):
+        # The tier promises readers a reference is on record; without one the
+        # owner's "filing" basis still passes the gate, as an approval.
+        r = q.gate([row(**{"Person Name": "Ada Obi"}, Basis="filing")])[0]
+        assert r["Confidence"] == "Headline only"
+        assert q.is_public(r) is True
 
 
 class TestWithheldCounts:
@@ -132,3 +137,68 @@ class TestBriefOwnershipLines:
         ]
         lines, _, _ = email_digest.psc_lines(rows, since=None)
         assert sorted(line["confidence"] for line in lines) == ["Full article", "Headline only"]
+
+
+class TestFilingRefShape:
+    def test_words_with_a_year_are_not_references(self):
+        # A model that found no filing writes these; a year is not a reference.
+        for ref in ("SEC disclosure 2025", "SEC disclosure 2026", "Not filed as of 2026",
+                    "Pending - 2026", "Unknown (2026)", "Announcement 2026", "2026"):
+            r = row(**{"Person Name": "Ada Obi", "Regulatory Filing Ref": ref})
+            assert q.has_filing_ref(r) is False, ref
+            checked = q.gate([r])[0]
+            assert checked["Confidence"] == "Headline only", ref
+            assert q.is_public(checked) is False, ref
+
+    def test_registry_shaped_references_count(self):
+        for ref in ("RC 1234567", "RC1234567", "BN 3344556", "CAC/PSC/2026/1187-KFM", "PSC-2026-00412"):
+            assert q.has_filing_ref(row(**{"Regulatory Filing Ref": ref})) is True, ref
+
+
+class TestPersonDetection:
+    def test_person_names_containing_entity_words_are_people(self):
+        # Trust, Fund and Favour are Nigerian given names; Capital-Bello a surname.
+        for name in ("Trust Okonkwo", "Fund Adeyemi", "Favour Capital-Bello", "Bank Olawale"):
+            r = q.gate([row(**{"Person Name": name}, Basis="headline")])[0]
+            assert q.names_person(r) is True, name
+            assert "unverified_person" in r["Quality"], name
+            assert q.is_public(r) is False, name
+
+    def test_clear_company_holders_are_not_people(self):
+        for name in ("Heirs Holdings Limited", "Sahel Nominees", "Stanbic IBTC Trustees",
+                     "Dangote Industries Ltd", "Access Bank Plc", "Vetiva Capital Partners"):
+            assert q.names_person(row(**{"Person Name": name})) is False, name
+
+    def test_a_person_named_as_previous_holder_brings_in_the_person_rule(self):
+        r = row(**{"Person Name": "Dangote Industries Ltd", "Previous Holder": "Abubakar Musa",
+                   "Change Type": "acquired"}, Basis="headline")
+        checked = q.gate([r])[0]
+        assert "unverified_person" in checked["Quality"]
+        assert q.is_public(checked) is False
+        assert q.is_public(q.gate([dict(r, Basis="article")])[0]) is True
+
+    def test_a_person_in_the_control_chain_brings_in_the_person_rule(self):
+        r = row(**{"Person Name": "Dangote Industries Ltd",
+                   "Intermediate Entities": "Abubakar Musa"}, Basis="headline")
+        assert q.is_public(q.gate([r])[0]) is False
+
+    def test_company_or_empty_chain_fields_leave_company_rows_alone(self):
+        for prev, chain in (("Sahel Nominees", "Direct holding"), ("null", "N/A"), ("", "Direct")):
+            r = row(**{"Person Name": "Dangote Industries Ltd", "Previous Holder": prev,
+                       "Intermediate Entities": chain}, Basis="headline")
+            assert q.is_public(q.gate([r])[0]) is True, (prev, chain)
+
+
+class TestChangesFeed:
+    def test_withheld_pairs_are_not_listed_as_removed(self):
+        # changes.json is public: a pair the gate now withholds must not be
+        # announced there by name as "removed".
+        from backend.app.pipeline.report import compute_cycle_changes
+        held = row(Basis="headline")
+        kept = row(**{"Person Name": "Ada Obi"}, Basis="article")
+        gone = row(**{"Person Name": "Heirs Holdings Limited", "Company": "Transcorp"})
+        checked = q.gate([held, kept])
+        prev = q.without_withheld([held, kept, gone], checked)
+        changes = compute_cycle_changes({"psc": prev}, {"psc": q.public_rows(checked)})
+        assert changes["psc_removed"] == [{"person": "Heirs Holdings Limited", "company": "Transcorp"}]
+        assert "Musa" not in str(changes)
