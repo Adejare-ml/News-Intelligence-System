@@ -11,7 +11,7 @@ import { slugify } from "../../lib/entity-key.ts";
 import { groupHoldings, describeHolding } from "../../lib/psc.ts";
 import { toStory, parseTime } from "../../lib/stories.ts";
 import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
-import { buildEntities, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
+import { buildEntities, isKnownCompany, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
 import { logoFor } from "../../lib/logos.ts";
 import { entityMeta, organizationLd } from "../../lib/seo.ts";
 
@@ -42,9 +42,12 @@ const summary = e.holdings.length
   : `Mentioned in ${e.mentions ?? e.articles.length} reports tracked by AURA.`;
 // Companies and bodies show their own logo when the deploy fetched one.
 const entityLogo = logoFor([e.name]);
-const meta = entityMeta(e.name, isPerson ? "person" : "company");
+const isCompany = isKnownCompany(e);
+const meta = entityMeta(e.name, isPerson ? "person" : isCompany ? "company" : "other");
 // People get no Person markup: AURA reports claims about them, not facts.
-const structuredData = isPerson ? undefined : organizationLd({
+// Organization markup goes only on names we know are companies, so a person
+// the pipeline filed under Company Info is never called one.
+const structuredData = !isCompany ? undefined : organizationLd({
   name: e.name,
   url: new URL(href(`entity/${e.slug}/`), Astro.site).toString(),
   logo: entityLogo ? new URL(href(entityLogo.path), Astro.site).toString() : undefined,

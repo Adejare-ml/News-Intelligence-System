@@ -45,6 +45,14 @@ describe("seo", () => {
     assert.ok(long.description.length <= 160);
   });
 
+  test("a name not known to be a company or holder gets a neutral title, no ownership claim", () => {
+    const other = entityMeta("Tinubu", "other");
+    assert.equal(other.title, "Tinubu in the news · AURA");
+    assert.doesNotMatch(other.description, /own|control/i);
+    assert.match(other.description, /^Tinubu: /);
+    assert.ok(other.description.length <= 160);
+  });
+
   test("sitemap entries carry lastmod only when a date is known, and escape URLs", () => {
     const xml = sitemapXml([
       { loc: "https://a.dev/news/", lastmod: new Date("2026-11-06T06:30:00Z") },

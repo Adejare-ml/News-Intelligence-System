@@ -46,13 +46,28 @@ export function websiteLd(siteUrl: string, searchTemplate: string) {
 // Search results cut descriptions at about 160 characters.
 const DESCRIPTION_MAX = 160;
 
+// "other" is a name we cannot confirm is a company (often a person the
+// pipeline filed as one), so its wording makes no ownership claim.
+const ENTITY_META = {
+  company: {
+    title: ": who owns and controls it",
+    tail: ": who the news reports as owning or controlling it, board moves and contracts. Based on press reports, not CAC filings.",
+  },
+  person: {
+    title: ": reported company holdings",
+    tail: ": companies the news reports them as owning or controlling. Based on press reports, not CAC filings.",
+  },
+  other: {
+    title: " in the news",
+    tail: ": recent Nigerian business and regulatory reports that mention it, tracked by AURA.",
+  },
+};
+
 /** Title and description for an entity page: its name first, then what AURA tracks about it. */
-export function entityMeta(name: string, kind: "company" | "person") {
-  const tail = kind === "company"
-    ? ": who the news reports as owning or controlling it, board moves and contracts. Based on press reports, not CAC filings."
-    : ": companies the news reports them as owning or controlling. Based on press reports, not CAC filings.";
+export function entityMeta(name: string, kind: keyof typeof ENTITY_META) {
+  const { title, tail } = ENTITY_META[kind];
   return {
-    title: kind === "company" ? `${name}: who owns and controls it · AURA` : `${name}: reported company holdings · AURA`,
+    title: `${name}${title} · AURA`,
     description: `${clip(name, DESCRIPTION_MAX - tail.length)}${tail}`,
   };
 }
