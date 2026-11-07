@@ -149,3 +149,22 @@ def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch
     # Only rows naming the person go; the rest of the export is untouched.
     assert "Dangote Cement" in (out / "latest.json").read_text()
     assert "Dangote Cement" in (out / "companies.json").read_text()
+
+
+def test_the_sites_copy_of_the_canonical_lists_matches_the_pipeline():
+    """web/src/lib/suppressed.ts ports canonical_person/canonical_company;
+    a word added here but not there would hide a name in one place only."""
+    import re
+    from pathlib import Path
+    from backend.app.services import register_quality as rq
+
+    ts = (Path(__file__).resolve().parents[1] / "web/src/lib/suppressed.ts").read_text()
+
+    def block(name):
+        body = re.search(rf"const {name}\b[^=]*= (?:new Set\(\[|\{{)(.*?)(?:\]\)|\}});", ts, re.S).group(1)
+        return re.findall(r'"([^"]+)"', body)
+
+    assert set(block("HONORIFICS")) == rq._HONORIFICS
+    assert set(block("COMPANY_SUFFIXES")) == rq._COMPANY_SUFFIXES
+    pairs = block("COMPANY_ALIASES")
+    assert dict(zip(pairs[::2], pairs[1::2])) == rq._COMPANY_ALIASES

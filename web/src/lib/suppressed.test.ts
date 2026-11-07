@@ -15,6 +15,20 @@ test("a value names a hidden entity by whole words, ignoring case (the pipeline'
   assert.equal(namesHidden("Aliko Dangote", []), false);
 });
 
+test("variants the register treats as one entity are hidden too (the pipeline's canonical keys)", () => {
+  assert.equal(namesHidden("Tony O. Elumelu", ["Tony Elumelu"]), true);
+  assert.equal(namesHidden("Tony Elumelu", ["Chief Tony O. Elumelu"]), true);
+  assert.equal(namesHidden("Profits at Dangote Cement rise", ["Dangote Cement Plc"]), true);
+  assert.equal(namesHidden({ Company: "Dangote Petroleum Refinery" }, ["Dangote Refinery"]), true);
+  assert.equal(namesHidden({ "Person Name": "Zedekiah Q. Varianttest" }, ["Zedekiah Varianttest"]), true);
+  assert.equal(namesHidden({ Entities: "First Bank|Sentinel Mills" }, ["Sentinel Mills Ltd"]), true);
+  // A company key that shrinks to one common word is used for whole values only.
+  assert.equal(namesHidden("Banks widen access to credit", ["Access Holdings"]), false);
+  assert.equal(namesHidden({ Company: "Access" }, ["Access Holdings"]), true);
+  // One field never runs into the next: "Ann" then "Other" is not "Ann Other".
+  assert.equal(namesHidden({ First: "Ann", Last: "Other" }, ["Ann Other"]), false);
+});
+
 test("rows naming a hidden entity anywhere are dropped", () => {
   const rows = [{ Company: "Ikeja Mills" }, { Title: "Results", Entities: "First Bank|Ikeja Mills" }, { Company: "First Bank" }];
   assert.deepEqual(withoutHidden(rows, ["Ikeja Mills"]), [{ Company: "First Bank" }]);
