@@ -153,7 +153,7 @@ def collapse_story_copies(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]
     arraignment three times in a row. Copies are matched by the email
     digest's same_story (headline, people, sums and timing must agree;
     when unsure, they stay apart). The highest-risk copy is kept (the first
-    on a tie) and carries the others as "Also Reported" [{outlet, url}].
+    on a tie) and carries the other outlets as "Also Reported" [{outlet, url}].
     Rows the digest cannot read (no link, filtered) are left as they are.
     """
     reports = [report_from_row(row) for row in articles]
@@ -175,8 +175,18 @@ def collapse_story_copies(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]
             continue
         best = max(group, key=lambda i: (reports[i].risk_score, -i))
         row = dict(articles[best])
-        row["Also Reported"] = [{"outlet": reports[i].outlet, "url": reports[i].url}
-                                for i in group if i != best]
+        # Each other outlet once, and never the kept row's own: one outlet's
+        # second copy (its site and its Google News link) is not "also
+        # reported by" itself.
+        seen = {reports[best].outlet.lower()}
+        also = []
+        for i in group:
+            name = reports[i].outlet
+            if name.lower() not in seen:
+                seen.add(name.lower())
+                also.append({"outlet": name, "url": reports[i].url})
+        if also:
+            row["Also Reported"] = also
         out.append(row)
     return out
 

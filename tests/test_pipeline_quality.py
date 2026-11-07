@@ -267,6 +267,30 @@ class TestCollapseStoryCopies:
         assert out[0]["URL"] == "https://punchng.com/a"
         assert all("Also Reported" not in r for r in rows)
 
+    def test_each_other_outlet_is_listed_once_and_never_the_kept_one(self):
+        # "Punch Newspapers" and "Punch" are one outlet: its Google News
+        # copy of a Punch story is not "also reported by Punch".
+        rows = self.copies() + [
+            article(4, Title=f"{self.HEADLINE} - Vanguard", Source="Vanguard News",
+                    URL="https://news.google.com/rss/articles/v2", **{"Risk Score": 30}),
+            article(5, Title=f"{self.HEADLINE} - Punch", Source="Punch Newspapers",
+                    URL="https://news.google.com/rss/articles/p2", **{"Risk Score": 30}),
+        ]
+        out = collapse_story_copies(rows)
+        assert len(out) == 1
+        assert out[0]["Also Reported"] == [
+            {"outlet": "Punch", "url": "https://punchng.com/a"},
+            {"outlet": "Premium Times", "url": "https://premiumtimesng.com/c"},
+        ]
+
+    def test_one_outlets_two_copies_list_no_one_else(self):
+        rows = [self.copies()[0],
+                article(5, Title=f"{self.HEADLINE} - Punch", Source="Punch Newspapers",
+                        URL="https://news.google.com/rss/articles/p2", **{"Risk Score": 30})]
+        out = collapse_story_copies(rows)
+        assert len(out) == 1
+        assert "Also Reported" not in out[0]
+
     def test_different_stories_and_unreadable_rows_are_left_alone(self):
         rows = [article(1), article(2, Title="CBN raises MPR to 27.5%", URL="https://x.ng/m"),
                 {"Title": "no url"}]
