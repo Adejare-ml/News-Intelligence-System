@@ -29,7 +29,7 @@ const url = morningUrl(site, digest.edition);
     <h1 class="h1">{digest.date}</h1>
     <div class="share" data-share data-title={title} data-url={url}>
       <button type="button" class="btn btn-ghost" data-share-native hidden>Share</button>
-      <a class="btn btn-ghost" href={whatsappUrl(title, url)} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a class="btn btn-ghost" href={whatsappUrl(title, url)} target="_blank" rel="noopener noreferrer" aria-label="Share on WhatsApp (opens in a new tab)">WhatsApp</a>
       <button type="button" class="btn btn-ghost" data-share-copy hidden>Copy link</button>
       <span class="meta" data-share-status role="status"></span>
     </div>
