@@ -20,8 +20,10 @@ export interface Env {
   SITE_URL?: string;
   /** Shared with the scheduler (GitHub secret of the same name); authorises /api/send-brief. */
   BRIEF_SEND_SECRET?: string;
-  /** Where ?test=1 sends a preview of the real brief. */
+  /** Where ?test=1 sends a preview of the real brief; also where replies go when REPLY_TO is unset. */
   OWNER_EMAIL?: string;
+  /** Where readers' replies to the brief and to sign-up mails go ("Name <address>" or an address). */
+  REPLY_TO?: string;
   /** Override for tests and local runs; defaults to https://api.resend.com. */
   RESEND_API_BASE?: string;
   /** Brevo (EMAIL_PROVIDER=brevo): works without a domain of your own. */
