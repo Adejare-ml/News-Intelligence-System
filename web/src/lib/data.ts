@@ -133,7 +133,19 @@ export interface CategoryNews {
   sections?: Record<string, { nigeria?: Headline[]; global?: Headline[] }>;
 }
 /** Sports, technology, politics and entertainment headlines, Nigeria and Global editions. */
-export const categoryNews = () => readJson<CategoryNews>("category_news.json", {});
+export const categoryNews = (): CategoryNews => {
+  const news = readJson<CategoryNews>("category_news.json", {});
+  const names = hidden();
+  if (!names.length || !news.sections) return news;
+  // These pages are emailed too (send-brief fetches /brief/email/section/*).
+  const sections = Object.fromEntries(
+    Object.entries(news.sections).map(([key, s]) => [
+      key,
+      { ...s, nigeria: withoutHidden(s.nigeria ?? [], names), global: withoutHidden(s.global ?? [], names) },
+    ]),
+  );
+  return { ...news, sections };
+};
 
 /** The Sunday weekly wrap (backend/app/services/weekly.py). */
 export interface WeeklyWrap {

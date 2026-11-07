@@ -44,7 +44,13 @@ const hiddenRow = {
   Source: "extracted", "Source URL": "https://punchng.com/sentinel", "Source Title": "Sentinel takes control",
   Date: "2026-10-20", Kind: "stake", Public: true, Quarantined: false,
 };
-writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS, hiddenRow], null, 2));
+// The same person as the register might spell them: a middle initial and a
+// neutral title, so only the canonical key ties the row to the hidden name.
+const variantRow = {
+  ...hiddenRow, "Person Name": "Zedekiah Q. Leakcheck-Suppressed", Company: "Sentinel Variant Mills Ltd",
+  "Source URL": "https://punchng.com/variant", "Source Title": "Mills changes hands",
+};
+writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS, hiddenRow, variantRow], null, 2));
 const addRows = (file, rows) => {
   const path = join(data, file);
   writeFileSync(path, JSON.stringify([...JSON.parse(readFileSync(path, "utf-8")), ...rows], null, 2));
@@ -57,6 +63,14 @@ addRows("latest.json", [{
   Source: "The Punch", URL: "https://punchng.com/sentinel", Category: "Corporate", "Risk Score": "80",
   Summary: "Sentinel story.", Entities: `${HIDDEN.person}|${HIDDEN.company}`,
 }]);
+// Category headlines feed /news/<category>/ and the emailed section pages.
+const categoryPath = join(data, "category_news.json");
+const categories = JSON.parse(readFileSync(categoryPath, "utf-8"));
+categories.sections.politics.nigeria.unshift(
+  { title: `${HIDDEN.person} speaks on 2027`, url: "https://punchng.com/speaks", source: "The Punch", published: "" },
+  { title: "Sentinel Suppressed Mills posts results", url: "https://punchng.com/results", source: "The Punch", published: "" },
+);
+writeFileSync(categoryPath, JSON.stringify(categories, null, 2));
 writeFileSync(join(data, "suppressed.json"), JSON.stringify([{ name: HIDDEN.person }, { name: HIDDEN.company }]));
 
 try {
@@ -67,7 +81,9 @@ try {
   });
 
   const leaks = [];
-  const needles = [...SENTINELS.flatMap((r) => [r["Person Name"], r.Company]), HIDDEN.person, HIDDEN.company];
+  const needles = [...SENTINELS.flatMap((r) => [r["Person Name"], r.Company]), 
+  // Cores of the hidden names, so the variant spellings count as leaks too.
+  "Leakcheck-Suppressed", "Sentinel Suppressed Mills", "Sentinel Variant Mills"];
   const walk = (dir) => {
     for (const name of readdirSync(dir)) {
       const path = join(dir, name);
