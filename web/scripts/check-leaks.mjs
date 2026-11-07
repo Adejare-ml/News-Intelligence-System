@@ -36,8 +36,10 @@ const registerPath = join(data, "significant_control.json");
 const register = JSON.parse(readFileSync(registerPath, "utf-8"));
 writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS], null, 2));
 
-// A merged finding of the week built on the withheld rows: the findings
-// pages, the home teaser and the sitemap must all leave it out.
+// A merged finding of the week that names the withheld rows: the findings
+// pages, the home teaser and the sitemap must all leave it out. Its bullets
+// are news, not register rows, so only the recheck's withheld-name match can
+// drop it (a register bullet without its row would be dropped for that alone).
 const [unsourced, quarantined] = SENTINELS;
 mkdirSync(join(data, "findings"), { recursive: true });
 writeFileSync(join(data, "findings", "2099-W01.json"), JSON.stringify({
@@ -47,7 +49,10 @@ writeFileSync(join(data, "findings", "2099-W01.json"), JSON.stringify({
   ref: "sentinel",
   names_person: true,
   link: "https://auranews.pages.dev/findings/2099-W01/",
-  bullets: [{ kind: "register", text: `${unsourced["Person Name"]} holds 61.5%`, outlet: "Sentinel", url: "https://example.test/sentinel", date: "2026-10-20" }],
+  bullets: [
+    { kind: "news", text: `Sentinel reported: "${unsourced["Person Name"]} buys in"`, outlet: "Sentinel", url: "https://example.test/sentinel-1", date: "2026-10-20" },
+    { kind: "news", text: `Sentinel reported: "${quarantined.Company} changes hands"`, outlet: "Sentinel", url: "https://example.test/sentinel-2", date: "2026-10-21" },
+  ],
   drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
 }));
 
