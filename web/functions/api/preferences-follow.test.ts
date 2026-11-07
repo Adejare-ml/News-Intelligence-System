@@ -12,7 +12,7 @@ const INDEX = { companies: [{ slug: "dangote-cement-plc", name: "Dangote Cement 
 
 function env(): Env & { DB: ReturnType<typeof sqliteD1> } {
   const db = sqliteD1();
-  addSubscriber(db, { email: "r@x.co", token: T("a"), categories: "business,sports" });
+  addSubscriber(db, { email: "r@x.co", token: T("a"), categories: "business,technology" });
   return {
     DB: db,
     ASSETS: { fetch: async (r: Request | string) => {
@@ -56,7 +56,7 @@ test("adding by name, unfollowing, and refusing unknown companies", async () => 
   const removed = await post(e, { follow_action: "remove", slug: "dangote-cement-plc" });
   assert.match(await removed.text(), /no longer follow Dangote Cement Plc/);
   assert.deepEqual(await followStore(e.DB).list(T("a")), []);
-  assert.deepEqual((await subscriberStore(e.DB).byToken(T("a")))!.categories, ["business", "sports"], "follow buttons leave topics alone");
+  assert.deepEqual((await subscriberStore(e.DB).byToken(T("a")))!.categories, ["business", "technology"], "follow buttons leave topics alone");
 });
 
 test(`the add field disappears at ${MAX_FOLLOWS} follows and a forced add is refused`, async () => {
@@ -75,9 +75,9 @@ test("without the follows table (0007 not applied) topics can still be changed",
   const page = await prefsGet({ request: new Request(url), env: e });
   assert.equal(page.status, 200);
   assert.doesNotMatch(await page.text(), /id="following"/);
-  const saved = await post(e, { categories: "sports", region: "global", frequency: "daily" });
+  const saved = await post(e, { categories: "politics", region: "global", frequency: "daily" });
   assert.equal(saved.status, 200);
-  assert.deepEqual((await subscriberStore(e.DB).byToken(T("a")))!.categories, ["sports"]);
+  assert.deepEqual((await subscriberStore(e.DB).byToken(T("a")))!.categories, ["politics"]);
 });
 
 test("an unsubscribed reader's link manages nothing", async () => {

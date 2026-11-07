@@ -18,7 +18,7 @@ const BUSINESS = `<!doctype html><html><head><meta name="aura-edition" content="
 <body><table><tr><td>BUSINESS STORIES</td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
 const SHELL = `<!doctype html><html><head><meta name="aura-subject" content="AURA Morning Brief · Friday 6 November" /></head>
 <body><table><tr><td>MASTHEAD</td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
-const SPORTS = `<meta name="aura-generated" content="2026-11-06 05:00:00" /><table><!--aura:section--><tr><td>SPORTS</td></tr><!--region:nigeria--><tr><td>sports NG</td></tr><!--/region:nigeria--><!--region:global--><tr><td>sports WORLD</td></tr><!--/region:global--><!--/aura:section--></table>`;
+const TECHNOLOGY = `<meta name="aura-generated" content="2026-11-06 05:00:00" /><table><!--aura:section--><tr><td>TECHNOLOGY</td></tr><!--region:nigeria--><tr><td>technology NG</td></tr><!--/region:nigeria--><!--region:global--><tr><td>technology WORLD</td></tr><!--/region:global--><!--/aura:section--></table>`;
 const fragment = (name: string, empty = false, generated = "2026-11-06T05:00:00.000Z") =>
   `<meta name="aura-generated" content="${generated}" /><table><!--aura:section--><tr><td>${name}</td></tr>${empty ? "<!--empty--><tr><td>none</td></tr>" : `<tr><td>${name} NEWS</td></tr>`}<tr><td><a href="{{preferences_url}}">Unfollow ${name}</a></td></tr><!--/aura:section--></table>`;
 
@@ -34,7 +34,7 @@ function env(pages: Record<string, string> = {}, companies = COMPANIES): Env & {
   const all: Record<string, string> = {
     "/brief/email/": BUSINESS,
     "/brief/email/shell/": SHELL,
-    "/brief/email/section/sports/": SPORTS,
+    "/brief/email/section/technology/": TECHNOLOGY,
     "/brief/email/follow/index.json": JSON.stringify({ companies }),
     "/brief/email/follow/dangote-cement/": fragment("Dangote Cement"),
     "/brief/email/follow/mtn-nigeria/": fragment("MTN Nigeria"),
@@ -84,11 +84,11 @@ const follow = (e: ReturnType<typeof env>, token: string, ...slugs: string[]) =>
 
 test("followers get a Following block after their sections; everyone else shares one email", async () => {
   const e = env();
-  addSubscriber(e.DB, { email: "plain@x.co", token: T("a"), categories: "business,sports" });
-  addSubscriber(e.DB, { email: "quiet@x.co", token: T("b"), categories: "business,sports" });
-  addSubscriber(e.DB, { email: "f1@x.co", token: T("c"), categories: "business,sports" });
-  addSubscriber(e.DB, { email: "f2@x.co", token: T("d"), categories: "business,sports" });
-  addSubscriber(e.DB, { email: "f3@x.co", token: T("e"), categories: "business,sports" });
+  addSubscriber(e.DB, { email: "plain@x.co", token: T("a"), categories: "business,technology" });
+  addSubscriber(e.DB, { email: "quiet@x.co", token: T("b"), categories: "business,technology" });
+  addSubscriber(e.DB, { email: "f1@x.co", token: T("c"), categories: "business,technology" });
+  addSubscriber(e.DB, { email: "f2@x.co", token: T("d"), categories: "business,technology" });
+  addSubscriber(e.DB, { email: "f3@x.co", token: T("e"), categories: "business,technology" });
   await follow(e, T("b"), "quiet-co", "stale-co", "gone-co");
   await follow(e, T("c"), "dangote-cement", "quiet-co");
   await follow(e, T("d"), "dangote-cement");
@@ -106,7 +106,7 @@ test("followers get a Following block after their sections; everyone else shares
   assert.doesNotMatch(got["quiet@x.co"].html, /Following|Quiet Co|Stale Co/);
 
   const f3 = got["f3@x.co"].html;
-  assert.match(f3, /BUSINESS STORIES[\s\S]*sports NG[\s\S]*>Following<[\s\S]*Dangote Cement NEWS[\s\S]*MTN Nigeria NEWS[\s\S]*Change topics/);
+  assert.match(f3, /BUSINESS STORIES[\s\S]*technology NG[\s\S]*>Following<[\s\S]*Dangote Cement NEWS[\s\S]*MTN Nigeria NEWS[\s\S]*Change topics/);
   assert.ok(f3.includes(`<a href="${SITE}/api/preferences?token=${T("e")}">Unfollow MTN Nigeria</a>`), "unfollow points at the reader's own preferences page");
   assert.doesNotMatch(got["f1@x.co"].html, /MTN|Quiet Co/);
   assert.match(got["f1@x.co"].text, /Unfollow Dangote Cement \(https:\/\/auranews\.pages\.dev\/api\/preferences\?token=c{48}\)/);
