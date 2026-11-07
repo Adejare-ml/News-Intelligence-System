@@ -1215,7 +1215,9 @@ def export_static_json_database():
                   f, default=str, indent=2)
 
     with open(os.path.join(DATA_DIR, "procurement_rollup.json"), "w", encoding="utf-8") as f:
-        payload = analytics.procurement_rollup(procurement)
+        # The deduped rows: the raw ones counted an award once per outlet
+        # that reported it, inflating both contract counts and totals.
+        payload = analytics.procurement_rollup(procurement_out)
         payload["generated"] = stamp
         json.dump(payload, f, default=str, indent=2)
 

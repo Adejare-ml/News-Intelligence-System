@@ -73,6 +73,8 @@ def run_export(tmp_path, monkeypatch, rows):
     monkeypatch.setattr(rp, "db", d)
     monkeypatch.setattr(rp, "DATA_DIR", str(out_dir))
     monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    # Side feeds (weather, FX, headlines) are network-only: not under test.
+    monkeypatch.setattr(rp.side_feeds, "export_side_feeds", lambda *a, **k: None)
     import backend.app.services.trends as trends_mod
     import backend.app.services.weather as weather_mod
     monkeypatch.setattr(weather_mod, "fetch_weather", lambda *a, **k: None)
@@ -96,3 +98,13 @@ class TestProcurementExport:
         assert rows[0]["Contractor"] == ""
         assert rows[0]["Amount"] == ""
         assert rows[0]["Project"] == ""
+
+    def test_rollup_counts_a_duplicated_award_once(self, tmp_path, monkeypatch):
+        out = run_export(tmp_path, monkeypatch, {"Procurement": [
+            dict(AWARD, Source="Punch"), dict(AWARD, Source="Vanguard"),
+        ]})
+        assert len(json.loads((out / "procurement.json").read_text())) == 1
+        rollup = json.loads((out / "procurement_rollup.json").read_text())
+        works = [a for a in rollup["agencies"] if a["name"] == AWARD["Agency"]][0]
+        assert works["contracts"] == 1
+        assert works["totals"]["NGN"] == 5e9
