@@ -77,6 +77,14 @@ def _company_slugs(row):
     return {slugify(row.get("Company")), slugify(row.get("Company Key"))} - {""}
 
 
+def _record(row):
+    """The row's keys exactly as personKey()/companyKey() in web/src/lib/psc.ts
+    build them, so the site's recheck can find this very row again."""
+    def key(canon, name):
+        return str(row.get(canon) or "").strip() or str(row.get(name) or "").strip().lower()
+    return {"person": key("Person Key", "Person Name"), "company": key("Company Key", "Company")}
+
+
 def _load(data_dir, name):
     path = os.path.join(data_dir, name)
     if not os.path.exists(path):
@@ -100,7 +108,7 @@ def _register_bullet(row):
     url = str(row["Source URL"]).strip()
     outlet = str(row.get("Publisher") or "").strip() or re.sub(r"^https?://(www\.)?([^/]+).*$", r"\2", url)
     return {"kind": "register", "text": text, "outlet": outlet, "url": url,
-            "date": str(row.get("Date", ""))[:10]}
+            "date": str(row.get("Date", ""))[:10], "record": _record(row)}
 
 
 def _news_bullet(article):
@@ -132,15 +140,16 @@ def gather(pick, register, articles, people):
         if not rows:
             raise Refusal(f"{ref!r} is not in the published exports (no published register row for this holding)")
         names = {person, company} | {s for r in rows for s in _company_slugs(r) | _person_slugs(r)}
-        names_person = True
     elif pick.get("entity"):
         ref = pick["entity"]
+        if ref in withheld_companies(register):
+            raise Refusal(f"{ref!r} is not in the published exports: every register row naming this company "
+                          "is withheld (no source link, or quarantined), so the site would drop the finding")
         if ref in unbacked:
             raise Refusal(f"{ref!r} is not in the published exports: the register gate withholds it, "
                           "or no published register row backs naming this person")
         rows = [r for r in public if ref in _person_slugs(r) | _company_slugs(r)]
         names = {ref} | {s for r in rows for s in (_company_slugs(r) if ref in _company_slugs(r) else _person_slugs(r))}
-        names_person = bool(rows)
     else:
         raise Refusal("a pick needs a record_ref (person-slug/company-slug) or an entity slug")
 
@@ -169,7 +178,34 @@ def gather(pick, register, articles, people):
         raise Refusal(f"{ref!r} is not in the published exports (no published register row or article)")
     if len(bullets) < MIN_BULLETS:
         raise Refusal(f"{ref!r} has only {len(bullets)} published fact; a finding needs at least {MIN_BULLETS}")
-    return bullets[:MAX_BULLETS], names_person, ref
+    bullets = bullets[:MAX_BULLETS]
+    return bullets, names_person(pick, bullets, names, register, articles, people), ref
+
+
+def withheld_companies(register):
+    """Company slugs that appear only in rows the register gate withholds."""
+    published = set().union(*(_company_slugs(r) for r in register if is_public(r)))
+    return {s for r in register if not is_public(r) for s in _company_slugs(r)} - published
+
+
+def names_person(pick, bullets, names, register, articles, people):
+    """Whether the finding may name a person anywhere, which keeps its page out
+    of search and the sitemap. It answers False only when it is sure: no
+    register bullet (each names a holder), no person AURA knows in the
+    headline, note or bullets, and every entity tagged on a cited article is
+    the pick itself or a company the register knows. Anything else could be a
+    person, so it counts as one."""
+    if any(b["kind"] == "register" for b in bullets):
+        return True
+    known_people = {s for r in register for s in _person_slugs(r)} | {slugify(p.get("Name")) for p in people}
+    text = " ".join([str(pick.get("headline", "")), str(pick.get("note", ""))] + [b["text"] for b in bullets])
+    if any(mentions(text, s) for s in known_people - {""}):
+        return True
+    companies = names | {s for r in register for s in _company_slugs(r)}
+    cited = {b["url"] for b in bullets}
+    tags = {slugify(e) for a in articles if str(a.get("URL", "")).strip() in cited
+            for e in str(a.get("Entities", "")).split("|")} - {""}
+    return not tags <= companies
 
 
 def _display(slug, register, people):

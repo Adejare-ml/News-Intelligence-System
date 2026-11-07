@@ -216,3 +216,55 @@ def test_company_with_only_news_does_not_name_a_person(tmp_path):
     finding = json.loads((data / "findings" / "2026-W45.json").read_text())
     assert finding["names_person"] is False
     assert [b["kind"] for b in finding["bullets"]] == ["news", "news"]
+
+
+def test_register_bullets_name_their_row_by_the_sites_keys(tmp_path):
+    # The build recheck matches each register bullet to its own row by
+    # personKey/companyKey (web/src/lib/psc.ts), not by the link alone.
+    pick = {"week": "2026-W46", "record_ref": "tony-elumelu/united-bank-for-africa-uba-plc",
+            "headline": "Elumelu and UBA", "note": ""}
+    data = make_data(tmp_path, [pick])
+    assert run(data).returncode == 0
+    finding = json.loads((data / "findings" / "2026-W46.json").read_text())
+    register = [b for b in finding["bullets"] if b["kind"] == "register"]
+    assert register
+    for b in register:
+        assert b["record"] == {"person": "tony elumelu", "company": "united bank for africa"}
+    # An older row with no keys falls back to the lower-cased names, as the site does.
+    data = make_data(tmp_path / "seplat", [ENTITY_PICK])
+    assert run(data).returncode == 0
+    finding = json.loads((data / "findings" / "2026-W45.json").read_text())
+    assert finding["bullets"][0]["record"] == {"person": "tony elumelu", "company": "seplat"}
+
+
+REFINERY_PICK = {"week": "2026-W45", "entity": "dangote-petroleum-refinery", "headline": "Refinery week", "note": ""}
+REFINERY_NEWS = dict(ARTICLES[-1], URL="https://punchng.com/dangote-2/", Time="2026-11-05T08:00:00Z",
+                     Title="Dangote refinery cuts petrol price")
+
+
+@pytest.mark.parametrize("pick, article", [
+    # The headline names a person the register backs.
+    (dict(REFINERY_PICK, headline="Tony Elumelu and the refinery"), REFINERY_NEWS),
+    # A news bullet names one.
+    (REFINERY_PICK, dict(REFINERY_NEWS, Title="Tony Elumelu backs Dangote refinery expansion")),
+    # A news bullet is tagged with an entity the script cannot tell is a company.
+    (REFINERY_PICK, dict(REFINERY_NEWS, Entities="Dangote Petroleum Refinery|Ada Okafor")),
+])
+def test_company_finding_naming_a_person_anywhere_stays_out_of_search(tmp_path, pick, article):
+    data = make_data(tmp_path, [pick], articles=ARTICLES + [article])
+    result = run(data)
+    assert result.returncode == 0, result.stderr
+    assert json.loads((data / "findings" / "2026-W45.json").read_text())["names_person"] is True
+
+
+def test_refuses_a_company_only_in_withheld_rows(tmp_path):
+    # News mentions it, but the register gate withholds every row naming it,
+    # so the site would drop the finding at build without saying why.
+    news = [dict(ARTICLES[0], URL=f"https://businessday.ng/q{i}/", Title=f"Quarantined Ltd update {i}",
+                 Entities="Quarantined Ltd") for i in range(2)]
+    pick = {"week": "2026-W45", "entity": "quarantined-ltd", "headline": "x", "note": ""}
+    data = make_data(tmp_path, [pick], articles=news)
+    result = run(data)
+    assert result.returncode == 1
+    assert "withheld" in result.stderr
+    assert not (data / "findings" / "2026-W45.json").exists()
