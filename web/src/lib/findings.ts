@@ -50,6 +50,28 @@ export const isFindingFile = (name: string) => /^\d{4}-W\d{2}\.json$/.test(name)
 const loose = (value: unknown) =>
   slugify(value).split("-").filter((w) => w.length > 1).join("-");
 
+/**
+ * The register gate's company aliases (_COMPANY_ALIASES in
+ * backend/app/services/register_quality.py): spelling -> the canonical key it
+ * folds into. Mirrored so a withheld company is searched for under every
+ * spelling the gate counts as the same company. tests/test_company_aliases_mirror.py
+ * fails if the two tables drift apart.
+ */
+const COMPANY_ALIASES: Record<string, string> = {
+  "dangote petroleum refinery": "dangote refinery",
+  "dangote petroleum refinery and petrochemicals": "dangote refinery",
+  "dangote oil refinery": "dangote refinery",
+  "firstholdco": "first holdco",
+  "fbn holdings": "first holdco",
+  "united bank for africa uba": "united bank for africa",
+  "uba": "united bank for africa",
+  "seplat energy": "seplat",
+  "seplat petroleum development": "seplat",
+};
+
+const aliasesOf = (key: string) =>
+  Object.entries(COMPANY_ALIASES).filter(([, canon]) => canon === key).map(([spelling]) => spelling);
+
 export function publishableFindings(findings: Finding[], register: PscRecord[]): Finding[] {
   const published = register.filter(isPublic);
   const recordKey = (url: unknown, person: unknown, company: unknown) =>
@@ -69,7 +91,7 @@ export function publishableFindings(findings: Finding[], register: PscRecord[]):
     .filter((r) => !isPublic(r))
     .flatMap((r) => [
       ...(publishedPeople.has(personKey(r)) ? [] : [r["Person Name"], r["Person Key"]]),
-      ...(publishedCompanies.has(companyKey(r)) ? [] : [r.Company, r["Company Key"]]),
+      ...(publishedCompanies.has(companyKey(r)) ? [] : [r.Company, r["Company Key"], ...aliasesOf(companyKey(r))]),
     ])
     .map(loose)
     .filter((n) => n && !backedNames.has(n));

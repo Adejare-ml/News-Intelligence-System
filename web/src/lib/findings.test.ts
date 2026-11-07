@@ -78,6 +78,19 @@ describe("findings", () => {
     assert.deepEqual(publishableFindings([initial], [sourced, unkeyed]), []);
   });
 
+  test("matches a withheld company by every alias spelling the gate folds into its key", () => {
+    // The gate keys "FBN Holdings" and "FirstHoldCo" both as "first holdco".
+    const quarantined = {
+      "Person Name": "Quin Quarantined", Company: "FBN Holdings", "Company Key": "first holdco",
+      "Source URL": "https://punchng.com/fbn/", Quarantined: true,
+    };
+    const alias = finding({
+      headline: "Inside FirstHoldCo's new control map",
+      bullets: [finding().bullets[1], { ...finding().bullets[1], url: "https://businessday.ng/c/" }],
+    });
+    assert.deepEqual(publishableFindings([alias], [sourced, quarantined]), []);
+  });
+
   test("drops malformed files instead of breaking the build", () => {
     const broken = [null, { week: "soon" }, finding({ bullets: undefined as never })] as unknown as Finding[];
     assert.deepEqual(publishableFindings(broken, [sourced]), []);
