@@ -84,7 +84,7 @@ describe("Holdings grouped from repeated reports", () => {
     { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Percentage: "27.49%", "Nature of Control": "Ownership of shares 25-50%" },
     { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-26", Percentage: "", "Nature of Control": "Ownership of shares" },
     { "Person Name": "Babs Ogundeyi", Company: "Kuda", Date: "2026-10-14", Percentage: "" },
-  ].map((r) => ({ Source: "extracted", "Source URL": "https://punchng.com/report/", ...r }));
+  ].map((r) => ({ Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/", ...r }));
 
   test("one holding per holder and company", () => {
     const h = groupHoldings(reports);
@@ -119,20 +119,20 @@ describe("Holdings grouped from repeated reports", () => {
   });
   test("spacing and punctuation do not split a company", () => {
     const h = groupHoldings([
-      { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Source: "extracted", "Source URL": "https://punchng.com/report/" },
-      { "Person Name": "Femi Otedola", Company: "FirstHoldCo", Date: "2026-08-11", Source: "extracted", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Femi Otedola", Company: "FirstHoldCo", Date: "2026-08-11", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
     ]);
     assert.equal(h.length, 1);
   });
   test("placeholder roles are not shown", () => {
-    const [h] = groupHoldings([{ "Person Name": "Aliko Dangote", Company: "Dangote Refinery", "Board Role": "null", Source: "extracted", "Source URL": "https://punchng.com/report/" }]);
+    const [h] = groupHoldings([{ "Person Name": "Aliko Dangote", Company: "Dangote Refinery", "Board Role": "null", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" }]);
     assert.equal(h.role, "");
   });
   test("canonical keys from the validation gate merge spelling variants", () => {
     const h = groupHoldings([
-      { "Person Name": "Alhaji Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Petroleum Refinery", "Company Key": "dangote refinery", Date: "2026-09-17", Source: "extracted", "Source URL": "https://punchng.com/report/" },
-      { "Person Name": "Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Refinery", "Company Key": "dangote refinery", Date: "2026-09-30", Source: "extracted", "Source URL": "https://punchng.com/report/" },
-      { "Person Name": "Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Cement", "Company Key": "dangote cement", Date: "2026-01-15", Source: "extracted", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Alhaji Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Petroleum Refinery", "Company Key": "dangote refinery", Date: "2026-09-17", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Refinery", "Company Key": "dangote refinery", Date: "2026-09-30", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Aliko Dangote", "Person Key": "aliko dangote", Company: "Dangote Cement", "Company Key": "dangote cement", Date: "2026-01-15", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
     ]);
     assert.equal(h.length, 2);
     assert.ok(h.every((x) => x.person === "Aliko Dangote"), "one spelling per holder");
@@ -140,24 +140,38 @@ describe("Holdings grouped from repeated reports", () => {
   });
   test("only publishable rows become holdings: unsourced and quarantined rows never render", () => {
     const h = groupHoldings([
-      { "Person Name": "Sadio Mané", Company: "Mango Business", Quarantined: true, Source: "extracted", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Sadio Mané", Company: "Mango Business", Quarantined: true, Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
       { "Person Name": "Jubril Adewale Tinubu", Company: "Oando Plc", Percentage: "66.7%", Source: "" },
       { "Person Name": "Femi Otedola", Company: "Geregu Power Plc", Percentage: "78.6%" },
-      { "Person Name": "Femi Otedola", Company: "First HoldCo", Percentage: "27.49%", Source: "extracted", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Femi Otedola", Company: "First HoldCo", Percentage: "27.49%", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
     ]);
     assert.deepEqual(h.map((x) => `${x.person}/${x.company}`), ["Femi Otedola/First HoldCo"]);
     assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "null" }), false);
     assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "seed" }), false, "a label is not a source");
     assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "extracted" }), false, "every live row looked like this");
-    assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "extracted", "Source URL": "https://punchng.com/a/" }), true);
+    assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/a/" }), true);
     assert.equal(isPublic({
       "Person Name": "A", Company: "B", "Source URL": "https://punchng.com/a/", Quality: ["unverified_person", "no_filing"],
     }), false, "a person claim the gate held for review");
   });
+  test("a row exported before the person rule never publishes a named person", () => {
+    // No Confidence means the gate that holds headline-only person claims
+    // never saw the row, so only company-to-company holdings may show.
+    const legacy = { Company: "Kano Flour Mills Plc", Source: "extracted", "Source URL": "https://punchng.com/a/" };
+    for (const name of ["Abubakar Musa", "Trust Okonkwo", "Fund Adeyemi"]) {
+      assert.equal(isPublic({ ...legacy, "Person Name": name }), false, name);
+    }
+    assert.equal(isPublic({ ...legacy, "Person Name": "Dangote Industries Ltd" }), true);
+    assert.equal(isPublic({ ...legacy, "Person Name": "Sahel Nominees", "Intermediate Entities": "Direct holding" }), true);
+    assert.equal(isPublic({ ...legacy, "Person Name": "Sahel Nominees", "Previous Holder": "Abubakar Musa" }), false,
+      "a previous holder is named on the card");
+    assert.equal(isPublic({ ...legacy, "Person Name": "Abubakar Musa", Confidence: "Full article" }), true,
+      "the gate saw it");
+  });
   test("bare board roles are shown but not counted as holdings", () => {
     const h = groupHoldings([
-      { "Person Name": "Thomas Ogungbangbe", Company: "CITA Energies", "Board Role": "Chairman", "Nature of Control": "Significant influence or control", Source: "extracted", "Source URL": "https://punchng.com/report/" },
-      { "Person Name": "Femi Otedola", Company: "First HoldCo", Percentage: "27.49%", Source: "extracted", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Thomas Ogungbangbe", Company: "CITA Energies", "Board Role": "Chairman", "Nature of Control": "Significant influence or control", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
+      { "Person Name": "Femi Otedola", Company: "First HoldCo", Percentage: "27.49%", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
     ]);
     assert.equal(h.length, 2);
     const cita = h.find((x) => x.company === "CITA Energies")!;
@@ -170,7 +184,7 @@ describe("Holdings grouped from repeated reports", () => {
   test("two people sharing a name at different companies stay two holders", () => {
     const musa = (name: string, company: string, key: string, date: string) => ({
       "Person Name": name, "Person Key": "abubakar musa", Company: company, "Company Key": key,
-      Date: date, Source: "extracted", "Source URL": "https://punchng.com/r/",
+      Date: date, Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/r/",
     });
     const h = groupHoldings([
       musa("Alhaji Abubakar Musa", "Kano Flour Mills", "kano flour mills", "2026-09-01"),
@@ -192,13 +206,15 @@ describe("Holdings grouped from repeated reports", () => {
     });
     assert.equal(groupHoldings([row("Headline only", "2026-09-01"), row("Full article", "2026-08-01")])[0].confidence, "Full article");
     assert.equal(groupHoldings([row("Full article", "2026-09-01"), row("Official filing", "2026-08-01")])[0].confidence, "Official filing");
-    assert.equal(groupHoldings([row("", "2026-09-01")])[0].confidence, "Headline only", "no tier on record is the weakest");
+    // Only a company holder publishes without a tier (a legacy row).
+    const legacy = { ...row("", "2026-09-01"), "Person Name": "Obi Holdings Ltd" };
+    assert.equal(groupHoldings([legacy])[0].confidence, "Headline only", "no tier on record is the weakest");
     const s = summarise(groupHoldings([row("Official filing", "2026-08-01")]));
     assert.equal(s.filingRefRate, 1);
   });
   test("evidence comes from the newest report that has a quote", () => {
     const row = (quote: string, Date: string) => ({
-      "Person Name": "Ada Obi", Company: "C", Date, Source: "extracted", "Source URL": `https://punchng.com/${Date}/`,
+      "Person Name": "Ada Obi", Company: "C", Date, Source: "extracted", Confidence: "Full article", "Source URL": `https://punchng.com/${Date}/`,
       Publisher: "The Punch",
       Evidence: { source_url: `https://punchng.com/${Date}/`, quote, date: Date, last_verified: "2026-11-07 06:00:00" },
     });

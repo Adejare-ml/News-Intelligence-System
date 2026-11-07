@@ -5,7 +5,7 @@ import { groupHoldings } from "./psc.ts";
 
 const musa = (company: string, key: string) => ({
   "Person Name": "Abubakar Musa", "Person Key": "abubakar musa", Company: company, "Company Key": key,
-  Date: "2026-09-01", Source: "extracted", "Source URL": "https://punchng.com/r/",
+  Date: "2026-09-01", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/r/",
 });
 
 describe("Person pages are per holder and company", () => {

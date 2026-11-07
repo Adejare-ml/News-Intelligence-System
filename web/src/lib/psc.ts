@@ -116,6 +116,41 @@ export function confidenceOf(record: PscRecord | null | undefined): Confidence {
   return (CONFIDENCE_TIERS as readonly string[]).includes(stored) ? (stored as Confidence) : "Headline only";
 }
 
+/**
+ * Words that mark an organisation, as in register_quality._HOLDER_ENTITY_WORDS
+ * (legal suffixes, relevance._ORG_WORDS and vehicle words).
+ */
+const ENTITY_WORDS = new Set([
+  "plc", "ltd", "limited", "nigeria", "nig", "co", "company", "inc", "llc", "group", "holdings",
+  "forum", "association", "agency", "commission", "authority", "council", "ministry", "bureau",
+  "institute", "federation", "union", "party", "corps", "command", "academy", "bank",
+  "corporation", "committee", "board", "department", "society", "congress", "assembly",
+  "parliament", "senate", "tribunal", "secretariat", "organisation", "organization",
+  "foundation", "trust", "university", "college", "school", "hospital", "church", "mosque",
+  "nominees", "nominee", "capital", "investments", "investment", "partners", "fund",
+  "ventures", "trustees", "trustee", "llp", "spv",
+]);
+
+/**
+ * A name is an organisation only on clear evidence: it ends in an entity
+ * word or holds two (register_quality._reads_as_entity). Trust and Fund
+ * are Nigerian first names, so one such word anywhere is not enough.
+ */
+function readsAsEntity(name: string): boolean {
+  const words = name.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
+  if (!words.length) return false;
+  return ENTITY_WORDS.has(words[words.length - 1]) || words.filter((w) => ENTITY_WORDS.has(w)).length >= 2;
+}
+
+/** The row names a natural person as holder, previous holder or in the chain. */
+function namesPerson(record: PscRecord): boolean {
+  return ["Person Name", "Previous Holder", "Intermediate Entities"].some((field) => {
+    const name = String(record[field] ?? "").trim();
+    return name !== "" && !PLACEHOLDER.has(name.toLowerCase()) && !isDirectHolding(name) && !readsAsEntity(name);
+  });
+}
+
 /** Held back by the gate as implausible (a footballer "controlling" a business). */
 export function isQuarantined(record: PscRecord | null | undefined): boolean {
   const q = record?.Quarantined;
@@ -133,6 +168,11 @@ export function isPublic(record: PscRecord | null | undefined): boolean {
   // A claim naming a person on a headline alone waits for the owner's review.
   const quality = Array.isArray(record.Quality) ? record.Quality : [];
   if (quality.includes("unverified_person")) return false;
+  // A row with no tier was exported before the gate held such claims, so
+  // nothing says it rests on more than a headline: only companies show.
+  if (!(CONFIDENCE_TIERS as readonly string[]).includes(String(record.Confidence ?? "").trim()) && namesPerson(record)) {
+    return false;
+  }
   // "Source" only says how the row was made ("extracted", "seed"); a claim is
   // published only with a link to the article that reported it.
   return /^https?:\/\//.test(String(record["Source URL"] ?? "").trim());
