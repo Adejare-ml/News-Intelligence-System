@@ -10,15 +10,6 @@
       "previous_mentions": 4
     },
     {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 21.2,
-      "previous_avg": 45.0,
-      "delta": -23.8,
-      "recent_mentions": 4,
-      "previous_mentions": 2
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 12.5,
@@ -28,22 +19,31 @@
       "previous_mentions": 9
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 21.7,
+      "previous_avg": 36.7,
+      "delta": -15.0,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 48.0,
+      "recent_avg": 45.7,
       "previous_avg": 57.4,
-      "delta": -9.4,
-      "recent_mentions": 5,
+      "delta": -11.7,
+      "recent_mentions": 7,
       "previous_mentions": 17
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 35.0,
-      "previous_avg": 26.8,
-      "delta": 8.2,
+      "key": "opay",
+      "label": "OPay",
+      "recent_avg": 40.0,
+      "previous_avg": 30.0,
+      "delta": 10.0,
       "recent_mentions": 3,
-      "previous_mentions": 11
+      "previous_mentions": 2
     },
     {
       "key": "mtn",
@@ -57,29 +57,20 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 17.5,
-      "previous_avg": 21.6,
-      "delta": -4.1,
-      "recent_mentions": 6,
+      "recent_avg": 17.0,
+      "previous_avg": 20.7,
+      "delta": -3.7,
+      "recent_mentions": 5,
       "previous_mentions": 22
     },
     {
-      "key": "government of",
-      "label": "Government of Nigeria",
-      "recent_avg": 15.0,
-      "previous_avg": 18.3,
-      "delta": -3.3,
-      "recent_mentions": 2,
-      "previous_mentions": 6
-    },
-    {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "recent_avg": 17.5,
-      "previous_avg": 15.0,
-      "delta": 2.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 31.2,
+      "previous_avg": 28.3,
+      "delta": 2.9,
+      "recent_mentions": 4,
+      "previous_mentions": 9
     },
     {
       "key": "house of representatives",
@@ -97,15 +88,6 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "opay",
-      "label": "OPay",
-      "recent_avg": 36.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 5,
       "previous_mentions": 0
     },
     {
@@ -127,9 +109,9 @@
       "previous_mentions": 0
     },
     {
-      "key": "government of russia",
-      "label": "Government of Russia",
-      "recent_avg": 20.0,
+      "key": "oyo state government",
+      "label": "Oyo State Government",
+      "recent_avg": 17.5,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -164,5 +146,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-06 15:07:02"
+  "generated": "2026-11-07 02:53:26"
 }

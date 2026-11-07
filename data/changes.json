@@ -1,17 +1,20 @@
 {
   "new_companies": [],
-  "new_people": [],
+  "new_people": [
+    "Mbah",
+    "Tunji Alausa"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
     "new_companies": 0,
-    "new_people": 0,
+    "new_people": 2,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-06 15:06:52"
+  "generated": "2026-11-07 02:53:15"
 }

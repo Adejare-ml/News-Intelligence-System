@@ -446,6 +446,14 @@
       }
     },
     {
+      "industry": "Power Distribution",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Shipping",
       "companies": 1,
       "mentions": 2,
@@ -639,14 +647,6 @@
     },
     {
       "industry": "Energy Market Intelligence",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Energy/Power Distribution",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -966,5 +966,5 @@
       }
     }
   ],
-  "generated": "2026-11-06 15:07:02"
+  "generated": "2026-11-07 02:53:26"
 }

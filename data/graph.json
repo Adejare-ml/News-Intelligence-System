@@ -121,12 +121,6 @@
       "risk": "Critical"
     },
     {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -135,6 +129,36 @@
     {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3641df6a5c2b",
+      "label": "Federal Ministry of Education",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c049605cdfa7",
+      "label": "National Library of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3b41237fb8e0",
+      "label": "Transmission Company of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "8aeb2e3bdb2c",
+      "label": "Bank of Industry",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,27 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "e4af52105f17",
-      "label": "Afreximbank",
-      "type": "agency",
+      "id": "31cdf5f58157",
+      "label": "Mbah",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "7dc08a8ebfaa",
-      "label": "Ogun State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6eac15c47af6",
-      "label": "NNPC",
-      "type": "agency",
+      "id": "6ad86bc4a2de",
+      "label": "Tunji Alausa",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -427,24 +439,6 @@
       "risk": "Low"
     },
     {
-      "id": "fc0df526d10a",
-      "label": "Diepreye Fani-Kayode",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2388a11cf55e",
-      "label": "Ola Olukoyede",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -613,6 +607,12 @@
       "risk": "Low"
     },
     {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "2cbc793c6023",
       "label": "Government of China",
       "type": "company",
@@ -628,12 +628,6 @@
       "id": "7f50eb5ca259",
       "label": "Yobe State Government",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -662,6 +656,18 @@
     }
   ],
   "edges": [
+    {
+      "id": "456bb67cfb9e",
+      "from": "31cdf5f58157",
+      "to": "a99d3740770f",
+      "label": "Appointed as Governor"
+    },
+    {
+      "id": "129bce9b28e3",
+      "from": "6ad86bc4a2de",
+      "to": "3641df6a5c2b",
+      "label": "Appointed as Minister of Education"
+    },
     {
       "id": "90d4f5fbf4b4",
       "from": "5a094abf1abe",
@@ -783,18 +789,6 @@
       "label": "Appointed as Special Adviser"
     },
     {
-      "id": "1bbcdc3382b5",
-      "from": "fc0df526d10a",
-      "to": "b5da1d8370fd",
-      "label": "Appointed as Diplomat"
-    },
-    {
-      "id": "173d8cf4554e",
-      "from": "2388a11cf55e",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as Chairman"
-    },
-    {
       "id": "34c826682817",
       "from": "f05534764d4f",
       "to": "dba897677026",
@@ -865,6 +859,12 @@
       "from": "1b45367ee273",
       "to": "f5be7663cdb3",
       "label": "PSC: 24.5%"
+    },
+    {
+      "id": "89c5f77f8475",
+      "from": "334c4a4c42fd",
+      "to": "3641df6a5c2b",
+      "label": "Contract Awardee"
     },
     {
       "id": "f8428f09d5a7",
@@ -960,12 +960,6 @@
       "id": "7bf4de3d8073",
       "from": "7f50eb5ca259",
       "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "d60095afa222",
-      "from": "334c4a4c42fd",
-      "to": "b5da1d8370fd",
       "label": "Contract Awardee"
     }
   ]
