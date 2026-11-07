@@ -50,10 +50,11 @@ describe("Patterns worth checking", () => {
     assert.ok(ids({ "Person Name": "A", Company: "C", "PEP Status": "Yes - PEP" }).includes("R9_PEP"));
     assert.ok(!ids({ "Person Name": "A", Company: "C", "PEP Status": "No" }).includes("R9_PEP"));
   });
-  test("cross-entity counts distinct companies, not rows", () => {
+  test("a shared name at another company is not the same holder", () => {
+    // Name alone is no identity: this used to flag "holdings in several
+    // companies" for two different people called Ada.
     const one = { "Person Name": "Ada", Company: "X" };
-    assert.ok(ids(one, [one, { "Person Name": "Ada", Company: "Y" }]).includes("R12_CROSS_ENTITY"));
-    assert.ok(!ids(one, [one, { ...one }, { ...one }]).includes("R12_CROSS_ENTITY"));
+    assert.ok(!ids(one, [one, { "Person Name": "Ada", Company: "Y" }]).some((id) => id === "R12_CROSS_ENTITY"));
   });
   test("high severity ranks first", () => {
     const rec = { "Person Name": "Ada", Company: "C", "Intermediate Entities": "Nominee (Cayman) Ltd" };
@@ -149,6 +150,9 @@ describe("Holdings grouped from repeated reports", () => {
     assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "seed" }), false, "a label is not a source");
     assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "extracted" }), false, "every live row looked like this");
     assert.equal(isPublic({ "Person Name": "A", Company: "B", Source: "extracted", "Source URL": "https://punchng.com/a/" }), true);
+    assert.equal(isPublic({
+      "Person Name": "A", Company: "B", "Source URL": "https://punchng.com/a/", Quality: ["unverified_person", "no_filing"],
+    }), false, "a person claim the gate held for review");
   });
   test("bare board roles are shown but not counted as holdings", () => {
     const h = groupHoldings([
@@ -162,6 +166,49 @@ describe("Holdings grouped from repeated reports", () => {
     const s = summarise(h);
     assert.equal(s.holdings, 1);
     assert.equal(s.roles, 1);
+  });
+  test("two people sharing a name at different companies stay two holders", () => {
+    const musa = (name: string, company: string, key: string, date: string) => ({
+      "Person Name": name, "Person Key": "abubakar musa", Company: company, "Company Key": key,
+      Date: date, Source: "extracted", "Source URL": "https://punchng.com/r/",
+    });
+    const h = groupHoldings([
+      musa("Alhaji Abubakar Musa", "Kano Flour Mills", "kano flour mills", "2026-09-01"),
+      musa("Alhaji Abubakar Musa", "Kano Flour Mills Plc", "kano flour mills", "2026-09-02"),
+      musa("ABUBAKAR MUSA", "Kano Flour Mills Plc", "kano flour mills", "2026-09-03"),
+      musa("Abubakar Musa", "Sokoto Cement", "sokoto cement", "2026-09-04"),
+    ]);
+    assert.equal(h.length, 2);
+    const kano = h.find((x) => x.companyKey === "kano flour mills")!;
+    const sokoto = h.find((x) => x.companyKey === "sokoto cement")!;
+    assert.equal(kano.reports.length, 3, "case and honorific variants at one company merge");
+    assert.equal(kano.person, "Alhaji Abubakar Musa");
+    assert.equal(sokoto.person, "Abubakar Musa", "the other man's spelling is his own");
+    assert.equal(summarise(h).holders, 2);
+  });
+  test("confidence is the strongest tier any report reached", () => {
+    const row = (Confidence: string, Date: string) => ({
+      "Person Name": "Ada Obi", Company: "C", Confidence, Date, Source: "extracted", "Source URL": "https://punchng.com/r/",
+    });
+    assert.equal(groupHoldings([row("Headline only", "2026-09-01"), row("Full article", "2026-08-01")])[0].confidence, "Full article");
+    assert.equal(groupHoldings([row("Full article", "2026-09-01"), row("Official filing", "2026-08-01")])[0].confidence, "Official filing");
+    assert.equal(groupHoldings([row("", "2026-09-01")])[0].confidence, "Headline only", "no tier on record is the weakest");
+    const s = summarise(groupHoldings([row("Official filing", "2026-08-01")]));
+    assert.equal(s.filingRefRate, 1);
+  });
+  test("evidence comes from the newest report that has a quote", () => {
+    const row = (quote: string, Date: string) => ({
+      "Person Name": "Ada Obi", Company: "C", Date, Source: "extracted", "Source URL": `https://punchng.com/${Date}/`,
+      Publisher: "The Punch",
+      Evidence: { source_url: `https://punchng.com/${Date}/`, quote, date: Date, last_verified: "2026-11-07 06:00:00" },
+    });
+    const [h] = groupHoldings([row("Ada Obi bought 12%.", "2026-08-01"), row("Ada Obi sold.", "2026-09-01"), row("", "2026-10-01")]);
+    assert.deepEqual(h.evidence, {
+      url: "https://punchng.com/2026-09-01/", quote: "Ada Obi sold.", date: "2026-09-01",
+      lastVerified: "2026-11-07 06:00:00", publisher: "The Punch",
+    });
+    const [none] = groupHoldings([row("", "2026-10-01")]);
+    assert.equal(none.evidence, null);
   });
   test("empty register", () => {
     const s = summarise(groupHoldings([]));

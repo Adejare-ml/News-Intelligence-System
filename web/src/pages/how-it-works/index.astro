@@ -5,7 +5,7 @@ import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
 import { href } from "../../lib/url.ts";
-import { groupHoldings, summarise } from "../../lib/psc.ts";
+import { groupHoldings, summarise, CONFIDENCE_TIERS, CONFIDENCE_NOTES } from "../../lib/psc.ts";
 import { listEditions } from "../../lib/archive.ts";
 
 // Every number on this page is computed from the repository at build time.
@@ -19,9 +19,10 @@ const holdings = summarise(groupHoldings(data.psc()));
 const editions = listEditions().length;
 const gate = data.registerQuality();
 const gateChecks: [string, string][] = [
-  ["One name, one key", "“Alhaji Aliko Dangote” and “Aliko Dangote”, “Dangote Refinery” and “Dangote Petroleum Refinery”: honorifics, initials and company suffixes are folded so one holder is one card."],
+  ["One holder, one key", "“Alhaji Aliko Dangote” and “Aliko Dangote”, “Dangote Refinery” and “Dangote Petroleum Refinery”: honorifics, initials and company suffixes are folded so one holder is one card. A holder is a name at a company: two people who share a name at different companies are never merged."],
   ["Stake, control or role", "A chairmanship is not a shareholding. Each claim is typed, and board roles are shown as roles, never on the stake bar."],
   ["No source, not published", "A claim with no article behind it is withheld from every page, not labelled and shown. Only the count is published."],
+  ["A person needs more than a headline", "A claim naming a person is published only with a filing reference, from the full article, or after an editor checks it."],
   ["Implausible, held back", "A sports or entertainment figure recorded as a company holder, or a stake outside 0–100%, is quarantined for review."],
   ["Same award, one row", "One contract reported by several outlets, under different spellings, is kept once."],
   ["Headlines checked against sources", "A brief headline naming someone its source article never mentions is replaced by that article’s own title."],
@@ -55,7 +56,6 @@ const patterns = [
   ["Nominee or trust arrangement", "A nominee, trustee or custodian reported in the chain of control."],
   ["Politically exposed person", "The holder is recorded as politically exposed."],
   ["Recent change of control", "Control reported to have moved from a named previous holder."],
-  ["Holdings in several companies", "The same holder reported in two or more tracked companies."],
   ["Interest not quantified", "No stake and no nature of control in any report."],
 ];
 ---
@@ -133,13 +133,35 @@ const patterns = [
         <dl class="mini" data-reveal>
           <div><dd class="num">{fmt(gate.checked)}</dd><dt>ownership claims extracted</dt></div>
           <div><dd class="num">{fmt(gate.published ?? 0)}</dd><dt>passed and published</dt></div>
-          <div><dd class="num">{fmt((gate.unsourced ?? 0) + (gate.implausible ?? 0))}</dd><dt>withheld ({gate.unsourced ?? 0} with no source link, {gate.implausible ?? 0} implausible)</dt></div>
+          <div><dd class="num">{fmt((gate.unsourced ?? 0) + (gate.implausible ?? 0) + (gate.needs_review ?? 0))}</dd><dt>withheld ({gate.unsourced ?? 0} with no source link, {gate.implausible ?? 0} implausible, {gate.needs_review ?? 0} awaiting review)</dt></div>
         </dl>
       ) : null}
     </div>
     <ul class="patterns">
       {gateChecks.map(([t, d], i) => (
         <li data-reveal style={`--i:${i}`}><strong>{t}</strong><span>{d}</span></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap split" id="confidence" aria-labelledby="know-title">
+    <div>
+      <h2 class="h2" id="know-title" data-split>How we know this</h2>
+      <p class="lede">
+        Every card in the register carries one of three labels, so you can see how strong the evidence
+        is before you rely on it. Each also links the article behind it and, where AURA stored one,
+        quotes the sentence that names the holder or the company.
+      </p>
+      <p class="lede">
+        <strong>The person rule.</strong> A claim that names a person is published only if it links its
+        source and either carries a regulatory filing reference or was extracted from the full article.
+        A claim drawn from a headline alone is held back until an editor checks it. Holdings between
+        companies, naming no person, are not held to this rule.
+      </p>
+    </div>
+    <ul class="patterns">
+      {CONFIDENCE_TIERS.map((t, i) => (
+        <li data-reveal style={`--i:${i}`}><strong>{t}</strong><span>{CONFIDENCE_NOTES[t]}</span></li>
       ))}
     </ul>
   </section>

@@ -1,8 +1,8 @@
 ---
 /**
  * Where a holding comes from, on every card that shows one: the outlet that
- * reported it, that it is not checked against the CAC register, and how to
- * ask for a correction.
+ * reported it, a sentence from that report where AURA stored one, that it
+ * is not checked against the CAC register, and how to ask for a correction.
  */
 import type { Holding } from "../lib/psc.ts";
 import { correctionUrl } from "../lib/corrections.ts";
@@ -13,18 +13,42 @@ interface Props {
 const { holding: h } = Astro.props;
 const src = h.sources[0];
 const outlet = src?.publisher || "a news report";
+const ev = h.evidence;
+const fmt = (iso: string) => {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+};
 ---
+{ev && (
+  <p class="evidence">
+    Reported by <a href={ev.url} rel="noopener noreferrer" target="_blank">{ev.publisher || "a news report"} ↗</a>{ev.date && `, ${fmt(ev.date)}`}:{" "}
+    <q>{ev.quote}</q>
+  </p>
+)}
 <p class="provenance">
   {src ? (
-    <>Reported by <a href={src.url} rel="noopener noreferrer" target="_blank">{outlet} ↗</a>{h.sources.length > 1 && ` and ${h.sources.length - 1} more`}</>
+    <>{ev ? "Sources:" : "Reported by"} <a href={src.url} rel="noopener noreferrer" target="_blank">{outlet} ↗</a>{h.sources.length > 1 && ` and ${h.sources.length - 1} more`}</>
   ) : (
     <>No source article on file</>
   )}
-  {h.hasFilingRef ? ", with a CAC filing reference on record." : ", not verified with the CAC register."}
+  {h.confidence === "Official filing" ? ", with a filing reference on record." : ", not verified with the CAC register."}
   {" "}<a class="fix" href={correctionUrl(`${h.person} / ${h.company}`)} rel="noopener noreferrer" target="_blank">Report an error</a>
 </p>
 
 <style>
+  .evidence {
+    margin: 0;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: var(--text-soft);
+  }
+  .evidence a {
+    color: var(--royal-ink);
+    font-weight: 560;
+  }
+  .evidence q {
+    font-style: italic;
+  }
   .provenance {
     margin: 0;
     font-size: 0.8rem;

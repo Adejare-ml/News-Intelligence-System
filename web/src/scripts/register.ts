@@ -20,7 +20,6 @@ function matches(card: HTMLElement): boolean {
   if (filter === "stake" && d.stake !== "1") return false;
   if (filter === "pattern" && d.pattern !== "1") return false;
   if (filter === "band" && d.band !== "BAND_5_25") return false;
-  if (filter === "multi" && d.multi !== "1") return false;
   if (query && !(d.search || "").includes(query)) return false;
   return true;
 }
