@@ -5,24 +5,16 @@ import ReportTimeline from "../../components/ReportTimeline.astro";
 import Provenance from "../../components/Provenance.astro";
 import StoryCard from "../../components/StoryCard.astro";
 import Icon from "../../components/Icon.astro";
-import * as data from "../../lib/data.ts";
 import { href } from "../../lib/url.ts";
 import { slugify } from "../../lib/entity-key.ts";
-import { groupHoldings, describeHolding } from "../../lib/psc.ts";
+import { describeHolding } from "../../lib/psc.ts";
 import { toStory, parseTime } from "../../lib/stories.ts";
-import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
-import { buildEntities, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
+import type { Entity } from "../../lib/entities.ts";
+import { siteEntities } from "../../lib/site-entities.ts";
 import { logoFor } from "../../lib/logos.ts";
 
 export function getStaticPaths() {
-  const entities = buildEntities({
-    holdings: groupHoldings(data.psc()),
-    companies: data.readJson<CompanyRow[]>("companies.json", []),
-    people: data.readJson<PersonMove[]>("people.json", []),
-    articles: data.articles(),
-    contracts: data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract),
-  });
-  return entities.map((entity) => ({ params: { slug: entity.slug }, props: { entity } }));
+  return siteEntities().map((entity) => ({ params: { slug: entity.slug }, props: { entity } }));
 }
 
 const { entity: e } = Astro.props as { entity: Entity };

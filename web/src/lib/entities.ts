@@ -50,7 +50,8 @@ export function mentions(text: string, name: string): boolean {
   return new RegExp(`(^|[^a-z0-9])${escaped}($|[^a-z0-9])`, "i").test(nameKey(text));
 }
 
-function articleMentions(a: Article, name: string): boolean {
+/** True when an article names the entity in its tagged entities, headline or summary. */
+export function articleMentions(a: Article, name: string): boolean {
   const ents = String(a.Entities || "").split("|").map(nameKey);
   if (ents.includes(nameKey(name))) return true;
   return mentions(`${a.Title || ""} ${a.Summary || ""}`, name);
