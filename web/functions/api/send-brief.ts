@@ -20,7 +20,7 @@
  *
  *   ?dry_run=1  report the edition, subject and recipient counts; send nothing
  *   ?test=1     send one copy to OWNER_EMAIL; record nothing. Add
- *               &categories=business,sports&region=both to preview a mix.
+ *               &categories=business,technology&region=both to preview a mix.
  *
  * Safe to call twice: one send per Lagos day. A business edition that was
  * already sent (the pipeline produced nothing new) is not sent again; readers

@@ -8,11 +8,11 @@ const T = (c: string) => c.repeat(48);
 test("create, find, confirm and unsubscribe", async () => {
   const db = sqliteD1();
   const store = subscriberStore(db);
-  await store.create("a@x.co", T("a"), { categories: ["sports", "politics"], region: "both", frequency: "weekly" }, "2026-11-06T07:00:00Z");
+  await store.create("a@x.co", T("a"), { categories: ["technology", "politics"], region: "both", frequency: "weekly" }, "2026-11-06T07:00:00Z");
   const row = await store.byEmail("a@x.co");
   assert.deepEqual(row, {
     email: "a@x.co", token: T("a"), status: "pending", paused: false,
-    categories: ["sports", "politics"], region: "both", frequency: "weekly",
+    categories: ["technology", "politics"], region: "both", frequency: "weekly",
   });
   await store.confirm(T("a"), "2026-11-06T08:00:00Z");
   assert.equal((await store.byToken(T("a")))!.status, "confirmed");
@@ -32,7 +32,7 @@ test("reopen only touches unsubscribed rows", async () => {
   addSubscriber(db, { email: "c@x.co", token: T("c"), status: "confirmed" });
   addSubscriber(db, { email: "u@x.co", token: T("u"), status: "unsubscribed", paused: 1 });
   const store = subscriberStore(db);
-  const prefs = { categories: ["sports" as const], region: "global" as const, frequency: "daily" as const };
+  const prefs = { categories: ["technology" as const], region: "global" as const, frequency: "daily" as const };
   addSubscriber(db, { email: "p@x.co", token: T("d"), status: "pending" });
   await store.reopen("c@x.co", prefs);
   await store.reopen("u@x.co", prefs);
@@ -40,7 +40,7 @@ test("reopen only touches unsubscribed rows", async () => {
   assert.deepEqual((await store.byEmail("c@x.co"))!.categories, ["business"]);
   assert.deepEqual((await store.byEmail("p@x.co"))!.categories, ["business"], "a pending row keeps its owner's choices");
   const u = (await store.byEmail("u@x.co"))!;
-  assert.deepEqual([u.status, u.categories, u.paused], ["pending", ["sports"], false]);
+  assert.deepEqual([u.status, u.categories, u.paused], ["pending", ["technology"], false]);
 });
 
 test("recipients are confirmed and not paused", async () => {
@@ -48,19 +48,19 @@ test("recipients are confirmed and not paused", async () => {
   addSubscriber(db, { email: "a@x.co", token: T("a") });
   addSubscriber(db, { email: "b@x.co", token: T("b"), status: "pending" });
   addSubscriber(db, { email: "p@x.co", token: T("p"), paused: 1 });
-  addSubscriber(db, { email: "z@x.co", token: T("z"), categories: "sports,technology", region: "global" });
+  addSubscriber(db, { email: "z@x.co", token: T("z"), categories: "politics,technology", region: "global" });
   const list = await subscriberStore(db).recipients();
   assert.deepEqual(list.map((s) => s.email), ["a@x.co", "z@x.co"]);
-  assert.deepEqual(list[1].categories, ["sports", "technology"]);
+  assert.deepEqual(list[1].categories, ["technology", "politics"]);
 });
 
 test("updatePrefs saves topics and pause", async () => {
   const db = sqliteD1();
   addSubscriber(db, { email: "a@x.co", token: T("a") });
   const store = subscriberStore(db);
-  await store.updatePrefs(T("a"), { categories: ["entertainment"], region: "nigeria", frequency: "weekly" }, true);
+  await store.updatePrefs(T("a"), { categories: ["politics"], region: "nigeria", frequency: "weekly" }, true);
   const a = (await store.byEmail("a@x.co"))!;
-  assert.deepEqual([a.categories, a.frequency, a.paused], [["entertainment"], "weekly", true]);
+  assert.deepEqual([a.categories, a.frequency, a.paused], [["politics"], "weekly", true]);
 });
 
 test("send log", async () => {

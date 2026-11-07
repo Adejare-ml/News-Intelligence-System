@@ -12,8 +12,8 @@ const get = (e: Env, secret = SECRET) =>
 function db() {
   const d = sqliteD1();
   addSubscriber(d, { email: "a@x.co", token: T("a"), created_at: "2026-11-02T10:00:00Z" });
-  addSubscriber(d, { email: "b@x.co", token: T("b"), categories: "business,sports", region: "both", created_at: "2026-11-03T10:00:00Z" });
-  addSubscriber(d, { email: "c@x.co", token: T("c"), categories: "sports,politics", region: "global", frequency: "weekly", created_at: "2026-10-28T10:00:00Z" });
+  addSubscriber(d, { email: "b@x.co", token: T("b"), categories: "business,technology", region: "both", created_at: "2026-11-03T10:00:00Z" });
+  addSubscriber(d, { email: "c@x.co", token: T("c"), categories: "technology,politics", region: "global", frequency: "weekly", created_at: "2026-10-28T10:00:00Z" });
   addSubscriber(d, { email: "d@x.co", token: T("d"), status: "pending", categories: "technology" });
   addSubscriber(d, { email: "e@x.co", token: T("e"), paused: 1 });
   addSubscriber(d, { email: "f@x.co", token: T("f"), status: "unsubscribed" });
@@ -35,7 +35,7 @@ test("counts by status, category, region and frequency, never addresses", async 
   assert.deepEqual(body.status, { pending: 1, confirmed: 4, unsubscribed: 1 });
   assert.equal(body.paused, 1);
   assert.equal(body.active.total, 3);
-  assert.deepEqual(body.active.by_category, { business: 2, sports: 2, technology: 0, politics: 1, entertainment: 0 });
+  assert.deepEqual(body.active.by_category, { business: 2, technology: 2, politics: 1 });
   assert.deepEqual(body.active.by_region, { nigeria: 0, global: 1, both: 1 });
   assert.deepEqual(body.active.by_frequency, { daily: 2, weekly: 1 });
   assert.equal(body.sends[0].sent, 3);

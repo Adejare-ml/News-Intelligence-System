@@ -57,10 +57,10 @@ function fromIp(ip: string, email: string): Request {
 test("sign-up stores the chosen categories, region and frequency", async () => {
   const db = sqliteD1();
   const env: Env = { DB: db };
-  const res = await subscribe({ request: post("/api/subscribe", { email: "Ada@Example.com", categories: ["sports", "business"], region: "both", frequency: "weekly" }), env });
+  const res = await subscribe({ request: post("/api/subscribe", { email: "Ada@Example.com", categories: ["technology", "business"], region: "both", frequency: "weekly" }), env });
   assert.equal(res.status, 200);
   const row = await subscriberStore(db).byEmail("ada@example.com");
-  assert.deepEqual([row!.status, row!.categories, row!.region, row!.frequency], ["pending", ["business", "sports"], "both", "weekly"]);
+  assert.deepEqual([row!.status, row!.categories, row!.region, row!.frequency], ["pending", ["business", "technology"], "both", "weekly"]);
 });
 
 test("a form post with repeated checkboxes works too", async () => {
@@ -85,7 +85,7 @@ test("unknown categories are refused", async () => {
 test("a confirmed reader's choices cannot be changed by re-subscribing", async () => {
   const db = sqliteD1();
   addSubscriber(db, { email: "c@x.co", token: T("c"), categories: "business,politics" });
-  const res = await subscribe({ request: post("/api/subscribe", { email: "c@x.co", categories: ["sports"] }), env: { DB: db } });
+  const res = await subscribe({ request: post("/api/subscribe", { email: "c@x.co", categories: ["technology"] }), env: { DB: db } });
   assert.equal(res.status, 200);
   assert.deepEqual((await subscriberStore(db).byEmail("c@x.co"))!.categories, ["business", "politics"]);
 });
@@ -112,30 +112,30 @@ test("opening a confirm link changes nothing; it shows one button that posts bac
 
 test("confirm names what the reader chose and links to preferences", async () => {
   const db = sqliteD1();
-  addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending", categories: "sports", region: "global", frequency: "weekly" });
+  addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending", categories: "technology", region: "global", frequency: "weekly" });
   const res = await confirm({ request: new Request(`${SITE}/api/confirm?token=${T("a")}`, { method: "POST" }), env: { DB: db } });
   const html = await res.text();
   assert.match(html, /every Monday/);
-  assert.match(html, /Sports \(Global\), once a week/);
+  assert.match(html, /Technology \(Global\), once a week/);
   assert.match(html, /\/api\/preferences\?token=a{48}/);
   assert.equal((await subscriberStore(db).byToken(T("a")))!.status, "confirmed");
 });
 
 test("preferences page is pre-filled and saves changes", async () => {
   const db = sqliteD1();
-  addSubscriber(db, { email: "a@x.co", token: T("a"), categories: "business,sports", region: "both" });
+  addSubscriber(db, { email: "a@x.co", token: T("a"), categories: "business,technology", region: "both" });
   const page = await (await prefsGet({ request: get(`/api/preferences?token=${T("a")}`), env: { DB: db } })).text();
-  assert.match(page, /value="sports" checked/);
+  assert.match(page, /value="technology" checked/);
   assert.match(page, /value="both" checked/);
   assert.doesNotMatch(page, /a@x\.co/, "the address is never shown");
 
   const saved = await prefsPost({
-    request: post(`/api/preferences?token=${T("a")}`, { categories: ["entertainment"], region: "nigeria", frequency: "weekly" }, true),
+    request: post(`/api/preferences?token=${T("a")}`, { categories: ["politics"], region: "nigeria", frequency: "weekly" }, true),
     env: { DB: db },
   });
   assert.equal(saved.status, 200);
   const row = (await subscriberStore(db).byToken(T("a")))!;
-  assert.deepEqual([row.categories, row.region, row.frequency, row.paused], [["entertainment"], "nigeria", "weekly", false]);
+  assert.deepEqual([row.categories, row.region, row.frequency, row.paused], [["politics"], "nigeria", "weekly", false]);
 });
 
 test("preferences: nothing ticked is an error, pause is saved", async () => {
@@ -193,12 +193,12 @@ test("a pending sign-up keeps its owner's choices; its confirmation mail says so
   globalThis.fetch = (async (_u: RequestInfo | URL, init?: RequestInit) => { mails.push(JSON.parse(String(init?.body))); return new Response("{}"); }) as typeof fetch;
   try {
     const env: Env = { DB: db, EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test" };
-    await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["business", "sports"], frequency: "weekly" }), env });
+    await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["business", "technology"], frequency: "weekly" }), env });
     rewindMail(db, "p@x.co");
-    await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["entertainment"] }), env });
+    await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["politics"] }), env });
     const row = (await subscriberStore(db).byEmail("p@x.co"))!;
-    assert.deepEqual([row.categories, row.frequency], [["business", "sports"], "weekly"]);
-    assert.match(mails[1].html, /Business and Sports \(Nigeria\), once a week/, "the second confirmation names the owner's choices");
+    assert.deepEqual([row.categories, row.frequency], [["business", "technology"], "weekly"]);
+    assert.match(mails[1].html, /Business and Technology \(Nigeria\), once a week/, "the second confirmation names the owner's choices");
   } finally {
     globalThis.fetch = realFetch;
   }
@@ -238,7 +238,7 @@ test("a paused reader's already-subscribed email says it is paused", async () =>
   globalThis.fetch = (async (_u: RequestInfo | URL, init?: RequestInit) => { mails.push(JSON.parse(String(init?.body))); return new Response("{}"); }) as typeof fetch;
   try {
     const env: Env = { DB: db, EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test", SITE_URL: SITE };
-    await subscribe({ request: post("/api/subscribe", { email: "z@x.co", categories: ["sports"], choices: "1" }), env });
+    await subscribe({ request: post("/api/subscribe", { email: "z@x.co", categories: ["technology"], choices: "1" }), env });
     assert.match(mails[0].html, /paused for now/);
   } finally {
     globalThis.fetch = realFetch;
@@ -247,9 +247,9 @@ test("a paused reader's already-subscribed email says it is paused", async () =>
 
 test("the category alias still works alongside the form marker", async () => {
   const db = sqliteD1();
-  const res = await subscribe({ request: post("/api/subscribe", { email: "e@x.co", choices: "1", category: "sports" }), env: { DB: db } });
+  const res = await subscribe({ request: post("/api/subscribe", { email: "e@x.co", choices: "1", category: "technology" }), env: { DB: db } });
   assert.equal(res.status, 200);
-  assert.deepEqual((await subscriberStore(db).byEmail("e@x.co"))!.categories, ["sports"]);
+  assert.deepEqual((await subscriberStore(db).byEmail("e@x.co"))!.categories, ["technology"]);
 });
 
 test("a second sign-up within 10 minutes sends nothing but answers the same", async () => {
