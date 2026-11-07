@@ -166,6 +166,16 @@ npx wrangler d1 execute aura --remote --file=web/migrations/0003_preferences.sql
 **Apply 0003 before deploying the version with news categories**: the new
 functions read the `categories`, `region`, `frequency` and `paused` columns.
 
+**Apply 0007 before deploying Follow by email**
+(`npx wrangler d1 execute aura --remote --file=web/migrations/0007_follows.sql`).
+It adds `follows` (the companies each reader follows, by token, at most 20)
+and `follow_requests` (throttles the "Get updates by email" form on company
+pages to one email per address every 10 minutes; rows older than a day are
+deleted). Without it the follow form and follow buttons fail, the
+preferences page shows topics only, and the brief goes out with no Following block (its send report says
+`following.error`). It only creates new tables, so it is safe to apply at
+any time, before or after 0004 to 0006.
+
 (or paste each file into the D1 console). Then **Pages project → Settings
 → Bindings → Add → D1 database**: variable `DB`, database `aura`.
 

@@ -12,6 +12,7 @@ import { toStory, parseTime } from "../../lib/stories.ts";
 import type { Entity } from "../../lib/entities.ts";
 import { siteEntities } from "../../lib/site-entities.ts";
 import { logoFor } from "../../lib/logos.ts";
+import FollowForm from "../../components/FollowForm.astro";
 
 export function getStaticPaths() {
   return siteEntities().map((entity) => ({ params: { slug: entity.slug }, props: { entity } }));
@@ -122,6 +123,9 @@ const entityLogo = logoFor([e.name]);
   {e.holdings.length === 0 && stories.length === 0 && (
     <section class="wrap block"><p class="lede">AURA has no recent reporting on {e.name} yet.</p></section>
   )}
+
+  {/* Companies only: readers follow businesses by email, never a person. */}
+  {!isPerson && <FollowForm slug={e.slug} name={e.name} />}
 
   <section class="wrap block">
     <a class="btn btn-ghost" href={href(`register/?q=${encodeURIComponent(e.name)}`)}>
