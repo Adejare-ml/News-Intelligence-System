@@ -26,7 +26,7 @@
  * already sent (the pipeline produced nothing new) is not sent again; readers
  * who also chose headline categories still get those.
  */
-import { authorised, json, type Ctx, type Env } from "../_lib/http.ts";
+import { authorised, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts";
 import { decodeEntities, htmlToText, preferencesUrl, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl } from "../_lib/mailer.ts";
 import {
   categoryLabel, comboKey, editionsFor, headlineCategories, listLabels, parseCategories, parseRegion,
@@ -35,17 +35,13 @@ import {
 import { sendLog, subscriberStore, type Subscriber } from "../_lib/subscribers.ts";
 
 // Kept as exports here: older tests and scripts import them from this module.
-export { sameSecret, authorised } from "../_lib/http.ts";
+export { sameSecret, authorised, lagosDay } from "../_lib/http.ts";
 
 export const SECTIONS_SLOT = "<!--aura:sections-->";
 /** Headlines older than this are left out rather than sent as news. */
 export const MAX_HEADLINE_AGE_HOURS = 36;
 /** The weekly wrap is built Sunday evening; on Monday morning it is about half a day old. */
 export const MAX_WRAP_AGE_HOURS = 48;
-
-export function lagosDay(now: Date): string {
-  return new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Lagos", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
-}
 
 export function lagosWeekday(now: Date): string {
   return new Intl.DateTimeFormat("en-GB", { timeZone: "Africa/Lagos", weekday: "short" }).format(now);

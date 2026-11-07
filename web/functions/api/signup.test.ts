@@ -24,6 +24,36 @@ function post(path: string, body: unknown, form = false): Request {
 
 const get = (path: string) => new Request(`${SITE}${path}`);
 
+/** Moves an address's last mail an hour back, as if the 10-minute gap had passed. */
+function rewindMail(db: ReturnType<typeof sqliteD1>, email: string): void {
+  db.raw.prepare("UPDATE subscribers SET last_mailed_at = ? WHERE email = ?").run(new Date(Date.now() - 3_600_000).toISOString(), email);
+}
+
+const RESEND: Env = { EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test", SITE_URL: SITE };
+
+/** Runs `fn` with the provider stubbed: every mail sent is recorded and answered with `status`. */
+async function withMail(fn: (mails: { to: string[]; subject: string }[]) => Promise<void>, status = 200): Promise<void> {
+  const mails: { to: string[]; subject: string }[] = [];
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = (async (_u: RequestInfo | URL, init?: RequestInit) => {
+    mails.push(JSON.parse(String(init?.body)));
+    return new Response("{}", { status });
+  }) as typeof fetch;
+  try {
+    await fn(mails);
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+}
+
+function fromIp(ip: string, email: string): Request {
+  return new Request(`${SITE}/api/subscribe`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "CF-Connecting-IP": ip },
+    body: JSON.stringify({ email }),
+  });
+}
+
 test("sign-up stores the chosen categories, region and frequency", async () => {
   const db = sqliteD1();
   const env: Env = { DB: db };
@@ -132,6 +162,7 @@ test("a pending sign-up keeps its owner's choices; its confirmation mail says so
   try {
     const env: Env = { DB: db, EMAIL_PROVIDER: "resend", RESEND_API_KEY: "k", MAIL_FROM: "A <a@x.org>", RESEND_API_BASE: "https://r.test" };
     await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["business", "sports"], frequency: "weekly" }), env });
+    rewindMail(db, "p@x.co");
     await subscribe({ request: post("/api/subscribe", { email: "p@x.co", categories: ["entertainment"] }), env });
     const row = (await subscriberStore(db).byEmail("p@x.co"))!;
     assert.deepEqual([row.categories, row.frequency], [["business", "sports"], "weekly"]);
@@ -187,4 +218,63 @@ test("the category alias still works alongside the form marker", async () => {
   const res = await subscribe({ request: post("/api/subscribe", { email: "e@x.co", choices: "1", category: "sports" }), env: { DB: db } });
   assert.equal(res.status, 200);
   assert.deepEqual((await subscriberStore(db).byEmail("e@x.co"))!.categories, ["sports"]);
+});
+
+test("a second sign-up within 10 minutes sends nothing but answers the same", async () => {
+  const db = sqliteD1();
+  await withMail(async (mails) => {
+    const env: Env = { DB: db, ...RESEND };
+    const first = await subscribe({ request: post("/api/subscribe", { email: "t@x.co" }), env });
+    const second = await subscribe({ request: post("/api/subscribe", { email: "t@x.co" }), env });
+    assert.equal(mails.length, 1);
+    assert.equal(second.status, 200);
+    assert.equal(await second.text(), await first.text());
+  });
+});
+
+test("an address gets at most three sign-up mails a Lagos day", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "c@x.co", token: T("c") });
+  await withMail(async (mails) => {
+    const env: Env = { DB: db, ...RESEND };
+    for (let i = 0; i < 5; i++) {
+      rewindMail(db, "c@x.co");
+      assert.equal((await subscribe({ request: post("/api/subscribe", { email: "c@x.co" }), env })).status, 200);
+    }
+    assert.equal(mails.length, 3);
+  });
+});
+
+test("one IP gets 20 sign-up posts a day, then a 429", async () => {
+  const db = sqliteD1();
+  const env: Env = { DB: db };
+  for (let i = 0; i < 20; i++) {
+    assert.equal((await subscribe({ request: fromIp("203.0.113.9", `r${i}@x.co`), env })).status, 200);
+  }
+  const over = await subscribe({ request: fromIp("203.0.113.9", "late@x.co"), env });
+  assert.equal(over.status, 429);
+  assert.equal(((await over.json()) as { error: string }).error, "Too many sign-ups from here today. Try again tomorrow.");
+  assert.equal(await subscriberStore(db).byEmail("late@x.co"), null);
+  assert.equal((await subscribe({ request: fromIp("198.51.100.1", "other@x.co"), env })).status, 200, "other IPs are unaffected");
+  assert.equal((await subscribe({ request: post("/api/subscribe", { email: "noip@x.co" }), env })).status, 200, "no IP header, no IP limit");
+});
+
+test("a provider failure is a 502 for every address, and the try is given back", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "c@x.co", token: T("c") });
+  const env: Env = { DB: db, ...RESEND };
+  const bodies: string[] = [];
+  await withMail(async () => {
+    for (const email of ["c@x.co", "new@x.co"]) {
+      const res = await subscribe({ request: post("/api/subscribe", { email }), env });
+      assert.equal(res.status, 502);
+      bodies.push(await res.text());
+    }
+  }, 500);
+  assert.equal(bodies[0], bodies[1]);
+  assert.equal(JSON.parse(bodies[0]).error, "We couldn't send the email just now. Please try again in a few minutes.");
+  await withMail(async (mails) => {
+    await subscribe({ request: post("/api/subscribe", { email: "new@x.co" }), env });
+    assert.equal(mails.length, 1, "a retry straight after the failure is sent");
+  });
 });

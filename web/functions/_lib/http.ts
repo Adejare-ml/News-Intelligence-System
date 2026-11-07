@@ -120,6 +120,11 @@ export function authorised(request: Request, env: Env): boolean {
   return secret.length >= 16 && given.length > 0 && sameSecret(given, secret);
 }
 
+/** The date in Lagos (YYYY-MM-DD): the day sends and mail limits are counted by. */
+export function lagosDay(now: Date): string {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Lagos", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
+}
+
 /** Subscriber tokens: 48 lowercase hex characters (see newToken). */
 export const validToken = (token: string): boolean => /^[a-f0-9]{48}$/.test(token);
 
