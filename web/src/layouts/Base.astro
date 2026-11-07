@@ -50,6 +50,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="sitemap" href={href("sitemap.xml")} />
     <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title="AURA Morning Brief" href={href("data/feed.xml")} />
+    {/* Pages add their own feed links through this slot. */}
+    <slot name="head" />
     <script is:inline src={href("theme-init.js")}></script>
   </head>
   <body>

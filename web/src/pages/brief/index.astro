@@ -7,6 +7,7 @@ import * as data from "../../lib/data.ts";
 import { parseBrief } from "../../lib/brief.ts";
 import { listEditions } from "../../lib/archive.ts";
 import { lagosDate, editionName } from "../../lib/edition.ts";
+import { href } from "../../lib/url.ts";
 
 const brief = parseBrief(data.briefMarkdown());
 const editions = listEditions();
@@ -17,6 +18,7 @@ const when = latest?.date ?? new Date();
   title="The Morning Brief · AURA"
   description="Today's ownership changes, board moves, contracts and regulatory actions in Nigeria, compiled from the day's reporting."
 >
+  <link slot="head" rel="alternate" type="application/feed+json" title="AURA Morning Brief (JSON Feed)" href={href("feed.json")} />
   <BriefArticle
     brief={brief}
     heading="What moved in Nigerian business today"

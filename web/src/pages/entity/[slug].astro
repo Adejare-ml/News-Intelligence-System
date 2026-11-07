@@ -35,6 +35,7 @@ const entityLogo = logoFor([e.name]);
   title={`${e.name} · AURA`}
   description={`${e.name}: reported ownership, related news, board moves and contracts, from AURA's reading of Nigerian business news.`}
 >
+  {!isPerson && <link slot="head" rel="alternate" type="application/rss+xml" title={`AURA · ${e.name}`} href={href(`entity/${e.slug}/feed.xml`)} />}
   <section class="wrap head">
     <a class="back link" href={href("register/")}><span aria-hidden="true">←</span> Register</a>
     <p class="eyebrow kind">{isPerson ? "Person or holder" : "Company or body"}{e.industry && ` · ${e.industry}`}</p>

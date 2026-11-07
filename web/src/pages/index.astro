@@ -8,6 +8,7 @@ import OwnershipStory from "../components/OwnershipStory.astro";
 import MarketStrip from "../components/MarketStrip.astro";
 import Subscribe from "../components/Subscribe.astro";
 import * as data from "../lib/data.ts";
+import { href } from "../lib/url.ts";
 import { parseBrief } from "../lib/brief.ts";
 import { groupHoldings, summarise, counted, type Holding } from "../lib/psc.ts";
 import { within, STORY_OF_DAY_DAYS, FRONT_PAGE_DAYS } from "../lib/freshness.ts";
@@ -68,6 +69,8 @@ const routes = dataRoutes ?? DEFAULT_ROUTES;
 const next = nextRunAfter(editionAt);
 ---
 <Base>
+  <link slot="head" rel="alternate" type="application/feed+json" title="AURA Morning Brief (JSON Feed)" href={href("feed.json")} />
+  <link slot="head" rel="alternate" type="application/rss+xml" title="AURA alerts" href={href("feeds/alerts.xml")} />
   <Hero
     edition={editionName(editionAt)}
     dateLabel={lagosDate(editionAt)}
