@@ -165,6 +165,7 @@ def run_pipeline(seed: bool = False):
     else:
         logger.info("Production Mode: Aggregating feeds from RSS and API wrappers...")
         candidates = NewsIngestionService.collect_all()
+        write_source_health(NewsIngestionService.last_source_counts)
 
     logger.info(f"Aggregated {len(candidates)} candidate articles. Deduplicating and processing...")
 
@@ -829,9 +830,38 @@ from backend.app.pipeline.rows import (  # noqa: E402,F401  (re-export)
     collapse_identical_rows,
     dedupe_entity_rows,
     make_node_id,
+    merge_source_health,
     slim_report_rows,
+    stale_sources,
     top_rows,
 )
+
+def write_source_health(counts: Dict[str, int]) -> None:
+    """Merge this run's per-feed fetch counts into source_health.json and
+    flag feeds that have come back empty several runs in a row, in the
+    log and on the Actions run page. Best-effort: never fails a run."""
+    path = os.path.join(DATA_DIR, "source_health.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            previous = json.load(f)
+    except Exception:
+        previous = None
+    health = merge_source_health(previous, counts, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(health, f, indent=2)
+        stale = stale_sources(health)
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        for name in stale:
+            runs = health["sources"][name]["empty_runs"]
+            line = f"Source {name} has returned no articles for {runs} runs in a row."
+            logger.warning(line)
+            if summary_path:
+                with open(summary_path, "a", encoding="utf-8") as f:
+                    f.write(f"- :warning: {line}\n")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Source health skipped: {type(exc).__name__}: {exc}")
+
 
 def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[str, Any]]) -> None:
     """The Morning Brief email edition (email_digest.json).

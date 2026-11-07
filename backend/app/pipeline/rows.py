@@ -112,6 +112,37 @@ def build_sources(article_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return out
 
 
+# A configured feed returning nothing this many runs in a row is broken
+# (an expired key, a changed endpoint), not having a quiet day.
+STALE_SOURCE_RUNS = 3
+
+
+def merge_source_health(previous: Any, counts: Dict[str, int], now: str) -> Dict[str, Any]:
+    """source_health.json: each feed's last fetch count, consecutive empty
+    runs and the last run it returned anything, carried run over run.
+
+    Feeds absent from `counts` (keyless, or skipped by the fetch budget)
+    keep their previous entry: not running is not the same as failing.
+    """
+    sources = (previous or {}).get("sources") if isinstance(previous, dict) else None
+    merged = {name: dict(entry) for name, entry in sources.items()
+              if isinstance(entry, dict)} if isinstance(sources, dict) else {}
+    for name, count in counts.items():
+        entry = merged.get(name, {})
+        if count:
+            entry = {"last_count": count, "empty_runs": 0, "last_ok": now}
+        else:
+            entry = {"last_count": 0,
+                     "empty_runs": _int_cell(entry.get("empty_runs")) + 1,
+                     "last_ok": entry.get("last_ok", "")}
+        merged[name] = entry
+    return {"generated": now, "sources": merged}
+
+
+def stale_sources(health: Dict[str, Any]) -> List[str]:
+    """Feeds that have come back empty STALE_SOURCE_RUNS runs in a row."""
+    return [name for name, entry in health.get("sources", {}).items()
+            if _int_cell(entry.get("empty_runs")) >= STALE_SOURCE_RUNS]
 
 
 def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
