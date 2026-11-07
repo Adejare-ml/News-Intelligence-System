@@ -238,3 +238,30 @@ class TestCollapseStoryCopies:
         rows = [article(1), article(2, Title="CBN raises MPR to 27.5%", URL="https://x.ng/m"),
                 {"Title": "no url"}]
         assert collapse_story_copies(rows) == rows
+
+
+class TestRejectPacing:
+    def test_a_model_reject_waits_only_for_its_one_sheets_write(self, tmp_path, monkeypatch):
+        # The 3.5s wait cited Gemini's 15 RPM, but Gemini does not extract
+        # (LLMService.analyze_article: DSPy, Claude, Ollama, NVIDIA). A
+        # reject writes one Filtered row, paced like the pre-LLM reject.
+        from backend.app.services.ingestion import NewsIngestionService
+        from backend.app.services.llm import LLMService
+
+        d = SheetsDatabase()
+        d.use_local = True
+        d.local_path = str(tmp_path / "run.xlsx")
+        d._cache = {}
+        d._init_db()
+        monkeypatch.setattr(rp, "db", d)
+        monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+        monkeypatch.setattr(NewsIngestionService, "collect_all", classmethod(lambda cls: [
+            {"title": "CBN raises monetary policy rate to 28%", "source": "Punch",
+             "url": "https://punchng.com/mpr", "raw_text": "The CBN raised the MPR."}]))
+        monkeypatch.setattr(LLMService, "analyze_article",
+                            classmethod(lambda cls, t, x: {"relevant": False, "engine": "claude"}))
+        monkeypatch.setattr(rp, "export_static_json_database", lambda: None)
+        waits = []
+        monkeypatch.setattr("time.sleep", lambda s: waits.append(s))
+        rp.run_pipeline()
+        assert waits == [1.0]

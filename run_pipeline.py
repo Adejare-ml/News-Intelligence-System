@@ -43,6 +43,10 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "
 # URL -> image URL), merged into data/article_images.json at export.
 RUN_IMAGES: Dict[str, str] = {}
 
+# Pause after an article that ends as a single Filtered row: Sheets write
+# pacing, not an LLM rate limit.
+REJECT_PAUSE_SECONDS = 1.0
+
 # Abort the run after this many articles in a row fail the whole LLM cascade:
 # at that point the providers are down and continuing would only burn quota.
 MAX_CONSECUTIVE_LLM_FAILURES = 3
@@ -298,7 +302,7 @@ def run_pipeline(seed: bool = False):
             rejected_count += 1
             # Sheets write pacing only -- no LLM call happened.
             import time
-            time.sleep(1.0)
+            time.sleep(REJECT_PAUSE_SECONDS)
             continue
 
         logger.info(f"Analyzing: '{title}' ({source})")
@@ -373,8 +377,12 @@ def run_pipeline(seed: bool = False):
             if filtered_saved:
                 existing_urls.add(url)
             rejected_count += 1
+            # One Filtered row written: the same Sheets pacing as a pre-LLM
+            # reject. This was 3.5s, citing Gemini's 15 RPM, but Gemini does
+            # not extract (see LLMService.analyze_article) and most analysed
+            # articles end here, so it was most of a run's waiting.
             import time
-            time.sleep(3.5)
+            time.sleep(REJECT_PAUSE_SECONDS)
             continue
 
         # Write Article to Database. Event Type, Risk Level, Importance and
@@ -516,9 +524,12 @@ def run_pipeline(seed: bool = False):
         # Add to existing_urls set to prevent processing duplicate URLs within the same candidate batch
         existing_urls.add(url)
         
-        # Throttle to avoid rate limiting when writing sequentially to sheets and calling Gemini
+        # Sheets write pacing. An accepted article appends a row per company,
+        # person, agency, award and PSC claim on top of its own, one write
+        # each, and Sheets allows 60 writes a minute per user: this keeps a
+        # run of entity-rich articles under it. (It used to cite Gemini's
+        # 15 RPM; Gemini no longer extracts.)
         import time
-        # 4-second sleep guarantees we stay under 15 RPM (Requests Per Minute) for Gemini & Google Sheets API
         time.sleep(4.0)
 
     logger.info(f"Pipeline run completed. Processed {new_articles_count} new news items.")
