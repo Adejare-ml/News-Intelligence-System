@@ -119,7 +119,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 89,
+      "total_mentions": 91,
       "points": [
         {
           "week": "2026-09-07",
@@ -171,8 +171,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 4,
-          "avg_risk": 55.0,
+          "mentions": 6,
+          "avg_risk": 50.0,
           "max_risk": 70
         }
       ]
@@ -180,7 +180,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 65,
+      "total_mentions": 66,
       "points": [
         {
           "week": "2026-09-07",
@@ -232,8 +232,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 35.0,
+          "mentions": 4,
+          "avg_risk": 31.2,
           "max_risk": 45
         }
       ]
@@ -1839,6 +1839,43 @@
       ]
     },
     {
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "federal bureau of investigation",
       "label": "Federal Bureau of Investigation",
       "total_mentions": 5,
@@ -2391,37 +2428,6 @@
           "week": "2026-10-26",
           "mentions": 2,
           "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "enugu state government",
-      "label": "Enugu State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
           "max_risk": 20
         }
       ]
@@ -4478,6 +4484,25 @@
       ]
     },
     {
+      "key": "ikeja electric",
+      "label": "Ikeja Electric",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "jigawa state government",
       "label": "Jigawa State Government",
       "total_mentions": 2,
@@ -4793,6 +4818,25 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "national library of",
+      "label": "National Library of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -6249,33 +6293,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "aliyu",
-      "label": "Aliyu",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "all progressives congress apc",
-      "label": "All Progressives Congress (APC)",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
     }
   ],
-  "generated": "2026-11-06 15:07:02"
+  "generated": "2026-11-07 02:53:26"
 }
