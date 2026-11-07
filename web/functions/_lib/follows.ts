@@ -9,7 +9,12 @@ import type { D1Like, Env } from "./http.ts";
 export const MAX_FOLLOWS = 20;
 /** One follow email per address in this window, so the form cannot flood an inbox. */
 export const REQUEST_GAP_MINUTES = 10;
-/** The throttle only needs recent rows; older ones are deleted so addresses are not kept. */
+/**
+ * The throttle only needs recent rows; older ones are deleted so addresses
+ * are not kept. The form purges on every use and the daily brief send purges
+ * too, so a stranger's address is gone within about a day even if nobody
+ * uses the form again.
+ */
 const REQUEST_KEEP_HOURS = 24;
 
 /** Built by web/src/pages/brief/email/follow/index.json.ts: companies with a page, published data only. */
@@ -35,6 +40,11 @@ export function followStore(db: D1Like) {
       await db.prepare("DELETE FROM follows WHERE token = ? AND slug = ?").bind(token, slug).run();
     },
 
+    /** On unsubscribe: follows are kept only with a subscription, and must not come back if the address signs up again. */
+    async clear(token: string): Promise<void> {
+      await db.prepare("DELETE FROM follows WHERE token = ?").bind(token).run();
+    },
+
     /** Follows of everyone who gets a brief at all, in one query: token -> sorted slugs. */
     async forRecipients(): Promise<Map<string, string[]>> {
       const { results } = await db
@@ -52,13 +62,18 @@ export function followStore(db: D1Like) {
 
 export function followRequests(db: D1Like) {
   return {
+    /** Deletes rows older than REQUEST_KEEP_HOURS. */
+    async purge(now: Date): Promise<void> {
+      const keepFrom = new Date(now.getTime() - REQUEST_KEEP_HOURS * 3_600_000).toISOString();
+      await db.prepare("DELETE FROM follow_requests WHERE requested_at < ?").bind(keepFrom).run();
+    },
+
     /**
      * True (and the time recorded) when this address has had no follow email
      * in the last REQUEST_GAP_MINUTES. Refused tries leave the clock alone.
      */
     async allow(email: string, now: Date): Promise<boolean> {
-      const keepFrom = new Date(now.getTime() - REQUEST_KEEP_HOURS * 3_600_000).toISOString();
-      await db.prepare("DELETE FROM follow_requests WHERE requested_at < ?").bind(keepFrom).run();
+      await this.purge(now);
       const since = new Date(now.getTime() - REQUEST_GAP_MINUTES * 60_000).toISOString();
       const recent = await db.prepare("SELECT 1 AS hit FROM follow_requests WHERE email = ? AND requested_at > ?").bind(email, since).first();
       if (recent) return false;

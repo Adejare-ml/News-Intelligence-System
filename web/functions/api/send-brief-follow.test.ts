@@ -166,6 +166,16 @@ test("pure helpers: ranking, grouping and the block", () => {
   assert.equal(buildFor({ categories: ["business"], region: "nigeria", frequency: "daily" }, t, false, { html: block, hasNews: false }), null, "names to look up are not news");
 });
 
+test("the daily send deletes follow-form addresses older than a day, even if nobody uses the form again", async () => {
+  const e = env();
+  const add = e.DB.raw.prepare("INSERT INTO follow_requests (email, requested_at) VALUES (?, ?)");
+  add.run("stranger@x.org", "2026-11-04T06:00:00.000Z");
+  add.run("recent@x.org", "2026-11-06T05:00:00.000Z");
+  assert.equal((await call(e)).status, 200);
+  const rows = e.DB.raw.prepare("SELECT email FROM follow_requests").all() as { email: string }[];
+  assert.deepEqual(rows.map((r) => r.email), ["recent@x.org"]);
+});
+
 test("a database without the follows table (0007 not applied) still sends the brief", async () => {
   const e = env();
   addSubscriber(e.DB, { email: "plain@x.co", token: T("a") });

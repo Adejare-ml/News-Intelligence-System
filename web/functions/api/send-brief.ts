@@ -37,7 +37,7 @@ import {
   type Edition, type HeadlineCategory, type Prefs,
 } from "../_lib/categories.ts";
 import { sendLog, subscriberStore, type Subscriber } from "../_lib/subscribers.ts";
-import { followStore, loadFollowable } from "../_lib/follows.ts";
+import { followRequests, followStore, loadFollowable } from "../_lib/follows.ts";
 
 // Kept as exports here: older tests and scripts import them from this module.
 export { sameSecret, authorised } from "../_lib/http.ts";
@@ -357,6 +357,9 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   let followError = "";
   try {
     follows = await followStore(env.DB).forRecipients();
+    // The follow form only purges its throttle rows when it is used again, so
+    // the daily send purges too: addresses typed there are gone within a day.
+    if (!dryRun) await followRequests(env.DB).purge(now);
   } catch (err) {
     followError = `follows not read: ${(err as Error).message}`;
   }
