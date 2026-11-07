@@ -1,0 +1,131 @@
+---
+/**
+ * "New to AURA?": what the site is, what a PSC is, and that every record is
+ * a press report rather than a CAC filing. Open by default; a reader who
+ * closes it keeps it closed (src/scripts/explainer.ts, theme-init.js).
+ * The heading is the toggle, the standard disclosure pattern, so its name
+ * stays the same and aria-expanded carries the state.
+ */
+import { href } from "../lib/url.ts";
+---
+<aside class="explainer wrap" aria-labelledby="explainer-title">
+  <div class="panel">
+    <h2 class="title" id="explainer-title">
+      <button type="button" class="toggle" aria-expanded="true" aria-controls="explainer-body" data-explainer-toggle>
+        <span>New to AURA? What you are looking at</span>
+        <svg class="chev" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </button>
+    </h2>
+    <div class="body" id="explainer-body">
+      <dl>
+        <div>
+          <dt>What AURA is</dt>
+          <dd>
+            AURA reads Nigerian business and regulatory news four times a day and pulls out who is
+            reported to own or control which companies, board changes and public contracts.
+          </dd>
+        </div>
+        <div>
+          <dt>What a PSC is</dt>
+          <dd>
+            A person with significant control: anyone with at least <strong>5%</strong> of a company's
+            shares or votes, or who can otherwise direct it. The Companies and Allied Matters Act
+            (CAMA) 2020 makes companies disclose them to the Corporate Affairs Commission (CAC).
+          </dd>
+        </div>
+        <div>
+          <dt>Where records come from</dt>
+          <dd>
+            Every record is a claim made in a press report, linked to the article. None is a CAC
+            filing, and being named is not a finding of wrongdoing.
+          </dd>
+        </div>
+      </dl>
+      <a class="link more" href={href("how-it-works/")}>How AURA works <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</aside>
+
+<script>
+  import "../scripts/explainer.ts";
+</script>
+
+<style>
+  .explainer {
+    margin-block: 28px;
+  }
+  .panel {
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-l);
+    background: var(--surface);
+    padding: 6px clamp(16px, 3vw, 28px);
+  }
+  .title {
+    margin: 0;
+    font: 600 1rem/1.3 var(--font-ui);
+  }
+  .toggle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: var(--text);
+    text-align: left;
+    cursor: pointer;
+  }
+  .toggle:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .chev {
+    flex: none;
+    color: var(--gold);
+    transition: transform var(--dur-ui) var(--ease-out);
+  }
+  /* Without script the toggle cannot work, so it reads as a plain heading. */
+  :global(html:not(.js)) .toggle {
+    cursor: default;
+  }
+  :global(html:not(.js)) .chev {
+    display: none;
+  }
+  :global(html.explainer-closed) .chev {
+    transform: rotate(-90deg);
+  }
+  :global(html.explainer-closed) .body {
+    display: none;
+  }
+  .body {
+    padding-bottom: 18px;
+  }
+  dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 16px 28px;
+    margin: 0 0 14px;
+  }
+  dt {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  dd {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+  .more {
+    font-size: 0.9rem;
+  }
+</style>

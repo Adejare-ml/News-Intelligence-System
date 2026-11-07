@@ -6,6 +6,7 @@ import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
 import Term from "../../components/Term.astro";
+import Explainer from "../../components/Explainer.astro";
 import * as data from "../../lib/data.ts";
 import { groupHoldings, summarise, counted, registerOrder } from "../../lib/psc.ts";
 import { within, REGISTER_RECENT_DAYS } from "../../lib/freshness.ts";
@@ -74,6 +75,8 @@ const filters = [
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>
     )}
   </section>
+
+  <Explainer />
 
   <section class="wrap band-wrap">
     <BandScale holdings={counted(holdings)} />
