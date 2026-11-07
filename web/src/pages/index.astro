@@ -7,6 +7,7 @@ import StoryGrid from "../components/StoryGrid.astro";
 import OwnershipStory from "../components/OwnershipStory.astro";
 import MarketStrip from "../components/MarketStrip.astro";
 import Subscribe from "../components/Subscribe.astro";
+import FindingTeaser from "../components/FindingTeaser.astro";
 import * as data from "../lib/data.ts";
 import { parseBrief } from "../lib/brief.ts";
 import { groupHoldings, summarise, counted, type Holding } from "../lib/psc.ts";
@@ -66,6 +67,7 @@ const others = claims
 const dataRoutes = routesFromRecords(records);
 const routes = dataRoutes ?? DEFAULT_ROUTES;
 const next = nextRunAfter(editionAt);
+const latestFinding = data.findings()[0];
 ---
 <Base>
   <Hero
@@ -88,6 +90,7 @@ const next = nextRunAfter(editionAt);
   <BriefLead brief={brief} dateLabel={lagosDate(editionAt)} />
   <StoryGrid stories={stories} now={editionAt} />
   {featured && <OwnershipStory holding={featured} others={others} />}
+  {latestFinding && <FindingTeaser finding={latestFinding} />}
   <MarketStrip fx={data.fx()} markets={data.markets()} weather={data.weather()} />
   <Subscribe />
 </Base>

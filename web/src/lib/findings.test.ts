@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { isFindingFile, publishableFindings, whatsappHref, type Finding } from "./findings.ts";
+import { isFindingFile, publishableFindings, weekStart, whatsappHref, type Finding } from "./findings.ts";
 
 const sourced = {
   "Person Name": "Tony Elumelu", Company: "Seplat", "Source URL": "https://punchng.com/a/", Quarantined: false,
@@ -55,5 +55,11 @@ describe("findings", () => {
 
   test("WhatsApp share link carries the text, encoded", () => {
     assert.equal(whatsappHref("A & B https://x.test/"), "https://wa.me/?text=A%20%26%20B%20https%3A%2F%2Fx.test%2F");
+  });
+
+  test("weekStart returns the Monday an ISO week starts on", () => {
+    assert.equal(weekStart("2026-W45"), "2026-11-02");
+    assert.equal(weekStart("2026-W01"), "2025-12-29");
+    assert.equal(weekStart("2021-W01"), "2021-01-04");
   });
 });

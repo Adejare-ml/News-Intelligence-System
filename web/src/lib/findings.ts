@@ -55,4 +55,13 @@ export function publishableFindings(findings: Finding[], register: PscRecord[]):
     .sort((a, b) => b.week.localeCompare(a.week));
 }
 
+/** "2026-W45" -> "2026-11-02": the ISO week's Monday (week 1 holds 4 January). */
+export function weekStart(week: string): string {
+  const [year, n] = week.split("-W").map(Number);
+  const jan4 = new Date(Date.UTC(year, 0, 4));
+  const monday = new Date(jan4);
+  monday.setUTCDate(jan4.getUTCDate() - ((jan4.getUTCDay() + 6) % 7) + (n - 1) * 7);
+  return monday.toISOString().slice(0, 10);
+}
+
 export const whatsappHref = (text: string) => `https://wa.me/?text=${encodeURIComponent(text)}`;

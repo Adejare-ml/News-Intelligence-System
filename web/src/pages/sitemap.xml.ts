@@ -20,8 +20,12 @@ export function GET({ site }: { site?: URL }) {
   // The register and entity pages name people as owners from news reporting;
   // they carry noindex and stay out of the sitemap.
   void entities;
+  // Findings that name a person carry noindex too, and so does the list showing them.
+  const findings = data.findings();
+  const findingsNoindex = findings.some((f) => f.names_person);
   const paths = [
-    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/"),
+    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/" && !(p === "findings/" && findingsNoindex)),
+    ...findings.filter((f) => !f.names_person).map((f) => `findings/${f.week}/`),
     ...HEADLINE_CATEGORIES.map((c) => `news/${c}/`),
     ...listEditions().map((e) => `brief/${e.slug}/`),
   ];

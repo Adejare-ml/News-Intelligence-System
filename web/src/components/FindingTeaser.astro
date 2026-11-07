@@ -1,0 +1,45 @@
+---
+/** Home page pointer to the latest Ownership Finding of the Week. */
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+import type { Finding } from "../lib/findings.ts";
+
+interface Props {
+  finding: Finding;
+}
+const { finding } = Astro.props;
+---
+<section class="section teaser" aria-labelledby="finding-title">
+  <div class="wrap">
+    <a class="card" href={href(`findings/${finding.week}/`)}>
+      <p class="eyebrow">Ownership Finding of the Week</p>
+      <h2 class="h2" id="finding-title">{finding.headline}</h2>
+      <span class="more">Read the finding and its sources <Icon name="arrowRight" size={16} /></span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .teaser {
+    padding-block: 0 clamp(40px, 6vw, 72px);
+  }
+  .card {
+    display: grid;
+    gap: 10px;
+    padding: clamp(20px, 4vw, 36px);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-l);
+    background: linear-gradient(135deg, var(--gold-wash), transparent 60%), var(--surface);
+    transition: border-color var(--dur-ui) ease;
+  }
+  .card:hover {
+    border-color: var(--line-strong);
+  }
+  .more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--gold);
+    font-weight: 600;
+  }
+</style>

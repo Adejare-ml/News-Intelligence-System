@@ -6,7 +6,7 @@
 // This catches a component that reads the raw register instead of
 // data.psc(), which is how the "No source on file" rows leaked onto the
 // home and entity pages before.
-import { cpSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -35,6 +35,21 @@ const SENTINELS = [
 const registerPath = join(data, "significant_control.json");
 const register = JSON.parse(readFileSync(registerPath, "utf-8"));
 writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS], null, 2));
+
+// A merged finding of the week built on the withheld rows: the findings
+// pages, the home teaser and the sitemap must all leave it out.
+const [unsourced, quarantined] = SENTINELS;
+mkdirSync(join(data, "findings"), { recursive: true });
+writeFileSync(join(data, "findings", "2099-W01.json"), JSON.stringify({
+  week: "2099-W01",
+  headline: `${unsourced["Person Name"]} and ${unsourced.Company}`,
+  note: `${quarantined["Person Name"]} at ${quarantined.Company}`,
+  ref: "sentinel",
+  names_person: true,
+  link: "https://auranews.pages.dev/findings/2099-W01/",
+  bullets: [{ kind: "register", text: `${unsourced["Person Name"]} holds 61.5%`, outlet: "Sentinel", url: "https://example.test/sentinel", date: "2026-10-20" }],
+  drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
+}));
 
 try {
   execFileSync("npx", ["astro", "build", "--outDir", out], {
