@@ -84,10 +84,18 @@ export async function onRequestGet(ctx: Ctx): Promise<Response> {
   return page("Your Morning Brief", now, 200, await withFollows(ctx, token, preferencesForm(token, row, row.paused)));
 }
 
-/** The preferences form followed by the reader's follows, read fresh after any change. */
+/**
+ * The preferences form followed by the reader's follows, read fresh after any
+ * change. If follows cannot be read (migration 0007 not applied yet), the
+ * section is left out so readers can still change their topics.
+ */
 async function withFollows(ctx: Ctx, token: string, form: string, followable?: Map<string, string>): Promise<string> {
   const list = followable ?? (await loadFollowable(ctx.env, new URL(ctx.request.url).origin));
-  return form + followSection(token, await followStore(ctx.env.DB!).list(token), list);
+  try {
+    return form + followSection(token, await followStore(ctx.env.DB!).list(token), list);
+  } catch {
+    return form;
+  }
 }
 
 /** An add or remove from the follow section; leaves topics and frequency alone. */

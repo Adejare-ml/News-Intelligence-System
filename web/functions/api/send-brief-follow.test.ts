@@ -165,3 +165,14 @@ test("pure helpers: ranking, grouping and the block", () => {
   const t: Templates = { business: null, shell: { html: SHELL, subject: "S" }, sections: {} };
   assert.equal(buildFor({ categories: ["business"], region: "nigeria", frequency: "daily" }, t, false, { html: block, hasNews: false }), null, "names to look up are not news");
 });
+
+test("a database without the follows table (0007 not applied) still sends the brief", async () => {
+  const e = env();
+  addSubscriber(e.DB, { email: "plain@x.co", token: T("a") });
+  e.DB.raw.exec("DROP TABLE follows");
+  const res = await call(e);
+  assert.equal(res.status, 200);
+  const body = await res.json();
+  assert.equal(body.sent, 1);
+  assert.match(body.following.error, /follows/);
+});

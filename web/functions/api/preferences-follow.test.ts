@@ -69,6 +69,17 @@ test(`the add field disappears at ${MAX_FOLLOWS} follows and a forced add is ref
   assert.equal(res.status, 409);
 });
 
+test("without the follows table (0007 not applied) topics can still be changed", async () => {
+  const e = env();
+  e.DB.raw.exec("DROP TABLE follows");
+  const page = await prefsGet({ request: new Request(url), env: e });
+  assert.equal(page.status, 200);
+  assert.doesNotMatch(await page.text(), /id="following"/);
+  const saved = await post(e, { categories: "sports", region: "global", frequency: "daily" });
+  assert.equal(saved.status, 200);
+  assert.deepEqual((await subscriberStore(e.DB).byToken(T("a")))!.categories, ["sports"]);
+});
+
 test("an unsubscribed reader's link manages nothing", async () => {
   const e = env();
   e.DB.raw.prepare("UPDATE subscribers SET status = 'unsubscribed'").run();

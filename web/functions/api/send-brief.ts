@@ -351,7 +351,15 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   if (today) return json({ skipped: "send_in_progress_or_incomplete", day }, 409);
 
   const due = (await subscriberStore(env.DB).recipients()).filter((r) => isDue(r.frequency, now));
-  const follows = await followStore(env.DB).forRecipients();
+  // Follows are an extra: if they cannot be read (migration 0007 not applied
+  // yet), the brief still goes out without a Following block, and the report says why.
+  let follows = new Map<string, string[]>();
+  let followError = "";
+  try {
+    follows = await followStore(env.DB).forRecipients();
+  } catch (err) {
+    followError = `follows not read: ${(err as Error).message}`;
+  }
   const ranked = rankFollows(due, follows);
   const following = ranked.length
     ? await loadFollowing(env, url.origin, ranked, await loadFollowable(env, url.origin), now)
@@ -389,6 +397,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
       fetched: following.fetched,
       with_news: [...following.fragments.keys()],
       listed_only: following.unfetched.size,
+      ...(followError ? { error: followError } : {}),
     },
     recipients,
     skipped_readers: due.length - recipients,
