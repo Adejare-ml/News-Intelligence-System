@@ -38,3 +38,18 @@ def test_category_news_is_written_when_any_section_has_headlines(tmp_path, monke
 def test_every_side_feed_is_registered():
     assert "Category news" in side_feeds.SIDE_FEEDS
     assert len(side_feeds.SIDE_FEEDS) == 7
+
+
+def test_category_news_leaves_out_headlines_naming_an_unpublished_entity(tmp_path, monkeypatch):
+    """The category pages and the emailed section pages read this file."""
+    from backend.app.services import categories
+    (tmp_path / "suppressed.json").write_text(json.dumps([{"name": "Atiku Abubakar"}]))
+    payload = {"sections": {"politics": {
+        "nigeria": [{"title": "Atiku Abubakar speaks", "url": "https://x/1"},
+                    {"title": "Senate sits", "url": "https://x/2"}],
+        "global": [{"title": "Summit", "url": "https://x/3", "source": "Alhaji Atiku Abubakar"}]}}}
+    monkeypatch.setattr(categories, "build_category_news", lambda: payload)
+    side_feeds.export_category_news(str(tmp_path))
+    written = json.loads((tmp_path / "category_news.json").read_text())
+    assert written["sections"]["politics"] == {"nigeria": [{"title": "Senate sits", "url": "https://x/2"}],
+                                               "global": []}
