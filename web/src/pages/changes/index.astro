@@ -3,14 +3,14 @@ import Base from "../../layouts/Base.astro";
 import * as data from "../../lib/data.ts";
 import { href } from "../../lib/url.ts";
 import { groupHoldings } from "../../lib/psc.ts";
-import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
-import { buildEntities, type CompanyRow } from "../../lib/entities.ts";
+import { toContract } from "../../lib/procurement.ts";
+import { buildEntities } from "../../lib/entities.ts";
 import { weeklyChanges, entitySlug, type ArticleRef, type PersonRow } from "../../lib/changes.ts";
 
 const records = data.psc();
-const companies = data.readJson<CompanyRow[]>("companies.json", []);
-const people = data.readJson<PersonRow[]>("people.json", []);
-const procurement = data.readJson<ProcurementRow[]>("procurement.json", []);
+const companies = data.companies();
+const people: PersonRow[] = data.people();
+const procurement = data.procurement();
 const articles = data.articles();
 const history = data.history();
 
