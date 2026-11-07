@@ -150,6 +150,9 @@ class TestExportEndToEnd:
         (out_dir / "archives").mkdir()
         monkeypatch.setattr(rp, "db", d)
         monkeypatch.setattr(rp, "DATA_DIR", str(out_dir))
+        # The local workbook is deliberate here; in CI the export would
+        # otherwise refuse it as a failed Sheets connection.
+        monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
         # The export's best-effort context-signal fetches must not reach
         # the network from a test run.
         import backend.app.services.trends as trends_mod
