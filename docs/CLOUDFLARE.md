@@ -223,31 +223,63 @@ triggers fire on time.
 - At :40 it checks again and starts the run only if none has started for
   that slot, in case the first start failed.
 - It never starts a second run for a slot. GitHub's own :11 cron and the
-  watchdog stay as backups, and a scheduled run that arrives after the
-  slot already ran skips itself (the `guard` job in `news_scheduler.yml`).
+  watchdog stay as backups. A scheduled run skips itself only when another
+  run that did real work (queued, running, or longer than two minutes)
+  started in the last 150 minutes, or when the Worker, the watchdog or a
+  person already ran its slot (`scripts/scheduler_guard.py`, used by the
+  `guard` job in `news_scheduler.yml`). So the late `11 7` cron does not
+  send a second morning email. Runs that skipped themselves never count,
+  and neither does another late cron, so one late run cannot make the rest
+  of the day skip.
+- If no run does real work for six hours, the watchdog opens one issue
+  labelled `pipeline-missed` (later checks comment on it). The next run
+  that completes and publishes the site closes it, and any open
+  `pipeline-failure` issue.
 
-One-time setup:
+Until the Worker is deployed, every run comes from GitHub's cron, hours
+late, and the Morning Brief goes out in the afternoon.
 
-1. **GitHub token.** On GitHub, go to Settings, then Developer settings, then
-   Fine-grained tokens, then Generate new token.
-   - Resource owner: your account. Repository access: only
-     `News-Intelligence-System`.
-   - Permissions: **Actions: Read and write**. Metadata (read) is added
-     automatically. Nothing else is needed.
+One-time setup (the "Deploy scheduler Worker" workflow does the deploy;
+you create three tokens and store them as repository secrets):
+
+1. **Cloudflare API token.** In the Cloudflare dashboard, open your
+   profile (top right), then API Tokens, then Create Token.
+   - Use the **Edit Cloudflare Workers** template, or Create Custom Token
+     with the permission **Account, Workers Scripts, Edit**.
+   - Account Resources: Include, your account. Zone Resources: none
+     needed (the Worker uses only `workers.dev` and cron triggers).
+   - Create the token and copy it; Cloudflare shows it once.
+2. **Cloudflare account ID.** In the dashboard, go to Workers & Pages.
+   The Account ID is in the right-hand column of the Overview page (or
+   on any domain's Overview page, under API). Copy it.
+3. **GitHub token for the Worker.** On GitHub, go to Settings, then
+   Developer settings, then Personal access tokens, then Fine-grained
+   tokens, then Generate new token.
+   - Resource owner: your account. Repository access: Only select
+     repositories, `News-Intelligence-System`.
+   - Repository permissions: **Actions: Read and write**. Metadata (read)
+     is added automatically. Nothing else is needed.
    - Pick a long expiry and note the date: the scheduler stops when the
-     token expires.
-2. **Worker.** In the Cloudflare dashboard, go to Workers & Pages, then
-   Create, then Import a repository.
-   - Choose this repository, branch `main`, and set the root directory to
-     `web/workers/scheduler`.
-   - Deploy. The name (`aura-scheduler`), the cron triggers and the
-     variables come from its `wrangler.toml`.
-3. **Secret.** In the Worker, go to Settings, then Variables and Secrets,
-   then Add. Choose type Secret, name `GITHUB_TOKEN`, and paste the token.
-4. **Check it.** In the Worker, go to Settings, then Trigger events. Both
-   cron triggers should be listed. After the next slot, the Worker's logs
-   show `{"action":"started",...}` and a `workflow_dispatch` run appears in
-   GitHub Actions.
+     token expires (the `pipeline-missed` issue is how you will notice).
+4. **Repository secrets.** In this repository, go to Settings, then
+   Secrets and variables, then Actions, then New repository secret, and
+   add:
+   - `CLOUDFLARE_API_TOKEN`: the token from step 1.
+   - `CLOUDFLARE_ACCOUNT_ID`: the ID from step 2.
+   - `SCHEDULER_GITHUB_TOKEN`: the token from step 3.
+5. **Deploy.** Go to Actions, then **Deploy scheduler Worker**, then Run
+   workflow (branch `main`). It deploys `aura-scheduler` with the cron
+   triggers and variables from `web/workers/scheduler/wrangler.toml`, then
+   stores the GitHub token as the Worker's `GITHUB_TOKEN` secret. If a
+   secret is missing, the run ends with a notice naming it. Later changes
+   under `web/workers/scheduler/` redeploy on push to `main`; after
+   renewing the GitHub token, update `SCHEDULER_GITHUB_TOKEN` and run the
+   workflow again.
+6. **Check it.** In the Cloudflare dashboard, open Workers & Pages, then
+   `aura-scheduler`, then Settings, then Trigger events. Both cron
+   triggers should be listed. After the next slot, the Worker's logs show
+   `{"action":"started",...}` and a `workflow_dispatch` run appears in
+   GitHub Actions at :07.
 
 ## Local development
 
