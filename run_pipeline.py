@@ -33,6 +33,7 @@ from backend.app.services import register_quality
 from backend.app.services import story_detail
 from backend.app.services import claude_llm
 from backend.app.services import email_digest
+from backend.app.services import suppression
 from backend.app.pipeline import side_feeds
 from backend.app.db.excel_db import db
 
@@ -921,6 +922,14 @@ def export_static_json_database():
             except Exception:
                 pass
 
+    # Unpublished names (scripts/unpublish.py) go here, once: every file
+    # below, the graph and the email digest are built from these rows.
+    hidden = suppression.load(DATA_DIR)
+    scrubbed = suppression.scrub(hidden, articles=articles, companies=companies, people=people,
+                                 agencies=agencies, procurement=procurement, psc=psc_records)
+    articles, companies, people = scrubbed["articles"], scrubbed["companies"], scrubbed["people"]
+    agencies, procurement, psc_records = scrubbed["agencies"], scrubbed["procurement"], scrubbed["psc"]
+
     # Sort chronological (newest first, excluding non-relevant filtered articles)
     #
     # The topic guard is re-applied here, not just at ingestion, because the
@@ -1057,13 +1066,14 @@ def export_static_json_database():
         except Exception:
             return []
 
+    # The old snapshots are scrubbed too, or a newly hidden name would be
+    # published once more as "removed this cycle".
+    prev = suppression.scrub(hidden, articles=_prev_snapshot("latest.json"),
+                             companies=_prev_snapshot("companies.json"),
+                             people=_prev_snapshot("people.json"),
+                             psc=_prev_snapshot("significant_control.json"))
     changes = compute_cycle_changes(
-        {
-            "articles": _prev_snapshot("latest.json"),
-            "companies": _prev_snapshot("companies.json"),
-            "people": _prev_snapshot("people.json"),
-            "psc": _prev_snapshot("significant_control.json"),
-        },
+        prev,
         {
             "articles": articles_sorted,
             "companies": companies,
@@ -1231,7 +1241,8 @@ def export_static_json_database():
         logger.warning(f"Alerts ledger read failed; keeping previous alerts.json: {exc}")
     else:
         with open(os.path.join(DATA_DIR, "alerts.json"), "w", encoding="utf-8") as f:
-            json.dump({"alerts": analytics.recent_alerts(alert_rows), "window_days": 90,
+            json.dump({"alerts": suppression.drop_alerts(analytics.recent_alerts(alert_rows), hidden),
+                       "window_days": 90,
                        "generated": stamp}, f, default=str, indent=2)
 
     # RSS feed over the same editions -- static, like everything else
