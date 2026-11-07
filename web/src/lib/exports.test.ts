@@ -9,9 +9,9 @@ describe("downloads", () => {
   test("the register CSV carries published rows only", () => {
     const csv = registerCsv([
       { "Person Name": "Ada Obi", Company: "Obi Holdings Ltd", Percentage: "12%", "Nature of Control": "Ownership of shares",
-        Date: "2026-10-01", "Source URL": "https://punchng.com/a", "Source Title": "Obi buys stake", Publisher: "The Punch" },
-      { "Person Name": "Hidden Unsourced", Company: "Nope Ltd", "Source URL": "" },
-      { "Person Name": "Hidden Quarantined", Company: "Nope Ltd", "Source URL": "https://x.test/b", Quarantined: true },
+        Date: "2026-10-01", Confidence: "Full article", "Source URL": "https://punchng.com/a", "Source Title": "Obi buys stake", Publisher: "The Punch" },
+      { "Person Name": "Hidden Unsourced", Company: "Nope Ltd", Confidence: "Full article", "Source URL": "" },
+      { "Person Name": "Hidden Quarantined", Company: "Nope Ltd", Confidence: "Full article", "Source URL": "https://x.test/b", Quarantined: true },
     ]);
     const rows = lines(csv);
     assert.equal(rows[0], "Person,Company,Stake,Nature of control,Board role,Change,Reported,Source title,Publisher,Source URL");

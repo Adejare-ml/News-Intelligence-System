@@ -6,7 +6,7 @@ import { groupHoldings } from "./psc.ts";
 
 const records = [
   { "Person Name": "Ada Obi", Company: "Obi Holdings Ltd", Percentage: "12%", "Nature of Control": "Ownership of shares",
-    Date: "2026-10-01", "Source URL": "https://punchng.com/a", "Source Title": "Obi buys stake", Publisher: "The Punch" },
+    Date: "2026-10-01", Confidence: "Full article", "Source URL": "https://punchng.com/a", "Source Title": "Obi buys stake", Publisher: "The Punch" },
 ];
 const [company] = buildEntities({
   holdings: groupHoldings(records),
