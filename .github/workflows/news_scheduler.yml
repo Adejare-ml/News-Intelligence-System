@@ -37,7 +37,9 @@ jobs:
   # running, or longer than two minutes) started in the last 150 minutes:
   # skipped runs last seconds and must not make later slots skip, which
   # the old "any run since the slot hour" rule did (6 Nov 2026: one late
-  # run skipped the next two slots). Manual runs are never skipped.
+  # run skipped the next two slots). It also skips when the Worker, the
+  # watchdog or a person already ran its slot, so a late "11 7" cron does
+  # not send a second morning email. Manual runs are never skipped.
   guard:
     runs-on: ubuntu-latest
     permissions:
@@ -60,6 +62,7 @@ jobs:
           REPO: ${{ github.repository }}
           EVENT: ${{ github.event_name }}
           RUN_ID: ${{ github.run_id }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
           if [ "$EVENT" != "schedule" ]; then
@@ -67,7 +70,7 @@ jobs:
           fi
           gh run list -R "$REPO" --workflow news_scheduler.yml --limit 30 \
               --json databaseId,createdAt,updatedAt,status,event \
-            | python3 scripts/scheduler_guard.py --self-id "$RUN_ID" > decision.txt
+            | python3 scripts/scheduler_guard.py --self-id "$RUN_ID" --slot "$SCHEDULE" > decision.txt
           cat decision.txt >> "$GITHUB_OUTPUT"
           cat decision.txt
           if grep -qx "go=false" decision.txt; then

@@ -139,3 +139,66 @@ def test_main_goes_on_an_empty_list(monkeypatch, capsys):
     monkeypatch.setattr(sys, "stdin", io.StringIO("[]"))
     assert guard.main(["--self-id", "1"]) == 0
     assert capsys.readouterr().out.splitlines()[0] == "go=true"
+
+
+# Once the Worker is live it starts each slot at :07 (workflow_dispatch) and
+# GitHub's own cron still arrives hours later. That late cron must skip, or
+# the pipeline runs twice per slot and the "11 7" one sends a second owner
+# email and rebuilds the edition in the afternoon.
+WORKER_MORNING = run(401, "2026-11-08 07:07:30", 690, event="workflow_dispatch")
+
+
+def test_the_late_morning_cron_skips_after_the_worker_ran_the_slot():
+    me = run(402, "2026-11-08 11:30:00", 0, status="in_progress")
+    go, why = guard.decide(
+        [WORKER_MORNING, me], 402, at("2026-11-08 11:30:05"),
+        slot_start=at("2026-11-08 07:00:00"),
+    )
+    assert not go
+    assert "401" in why
+
+
+def test_a_late_cron_for_an_earlier_slot_does_not_cover_a_later_slot():
+    # 6 Nov again: the 14:58 run was GitHub's late "11 7" cron, not a run
+    # for the 13:00 slot, so the "11 13" cron arriving at 19:55 still runs.
+    me = run(202, "2026-11-06 19:55:00", 0, status="in_progress")
+    go, why = guard.decide(
+        EARLIER + [MORNING, me], 202, at("2026-11-06 19:55:07"),
+        slot_start=at("2026-11-06 13:00:00"),
+    )
+    assert go, why
+
+
+def test_the_17_slot_still_runs_on_6_nov_with_slot_start():
+    skipped = run(202, "2026-11-06 19:55:00", 8)
+    me = run(203, "2026-11-06 22:06:00", 0, status="in_progress")
+    go, why = guard.decide(
+        EARLIER + [MORNING, skipped, me], 203, at("2026-11-06 22:06:06"),
+        slot_start=at("2026-11-06 17:00:00"),
+    )
+    assert go, why
+
+
+def test_a_manual_run_before_the_slot_does_not_cover_it():
+    manual = run(501, "2026-11-08 12:00:00", 700, event="workflow_dispatch")
+    me = run(502, "2026-11-08 16:30:00", 0, status="in_progress")
+    go, why = guard.decide(
+        [manual, me], 502, at("2026-11-08 16:30:05"),
+        slot_start=at("2026-11-08 13:00:00"),
+    )
+    assert go, why
+
+
+def test_slot_start_is_the_slot_hour_at_or_before_now():
+    assert guard.slot_start("11 7 * * *", at("2026-11-08 11:30:00")) == at("2026-11-08 07:00:00")
+    # The "11 23" cron arriving after midnight belongs to yesterday's slot.
+    assert guard.slot_start("11 23 * * *", at("2026-11-07 02:43:00")) == at("2026-11-06 23:00:00")
+
+
+def test_main_reads_the_slot_from_the_cron_string(monkeypatch, capsys):
+    runs = [WORKER_MORNING]
+    monkeypatch.setattr(sys, "stdin", io.StringIO(json.dumps(runs)))
+    assert guard.main(["--self-id", "402", "--slot", "11 7 * * *", "--now", "2026-11-08T11:30:00Z"]) == 0
+    lines = capsys.readouterr().out.splitlines()
+    assert lines[0] == "go=false"
+    assert "401" in lines[1]
