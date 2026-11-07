@@ -127,3 +127,44 @@ class TestEmptySiteGuard:
         with pytest.raises(RuntimeError, match="local"):
             rp.export_static_json_database()
         assert json.loads((out_dir / "latest.json").read_text()) == [{"Title": "kept"}]
+
+
+def article(i, **extra):
+    row = {"Title": f"Dangote Cement raises cement prices in Lagos {i}",
+           "Summary": "Dangote Cement raised ex-factory prices.",
+           "URL": f"https://punchng.com/story-{i}", "Source": "Punch",
+           "Time": "2026-09-01T07:00:00", "Risk Score": 40, "Status": "Unread",
+           "Category": "Company"}
+    row.update(extra)
+    return row
+
+
+def seed_file(tmp_path, name, n):
+    out_dir = tmp_path / "data"
+    out_dir.mkdir(exist_ok=True)
+    (out_dir / name).write_text(json.dumps([{"Title": f"old {i}"} for i in range(n)]))
+
+
+class TestShrinkGuard:
+    @pytest.fixture(autouse=True)
+    def no_image_lookups(self, monkeypatch):
+        monkeypatch.setattr(rp.article_images, "attach_images", lambda *a, **k: 0)
+
+    def test_a_collapsed_feed_keeps_the_previous_file(self, tmp_path, monkeypatch, caplog):
+        seed_file(tmp_path, "latest.json", 30)
+        seed_file(tmp_path, "companies.json", 25)
+        out = run_export(tmp_path, monkeypatch, {"Articles": [article(1)]})
+        assert len(json.loads((out / "latest.json").read_text())) == 30
+        assert len(json.loads((out / "companies.json").read_text())) == 25
+        assert "latest.json" in caplog.text
+
+    def test_a_small_previous_file_is_replaced(self, tmp_path, monkeypatch):
+        seed_file(tmp_path, "latest.json", 10)
+        out = run_export(tmp_path, monkeypatch, {"Articles": [article(1)]})
+        assert len(json.loads((out / "latest.json").read_text())) == 1
+
+    def test_a_modest_shrink_is_written(self, tmp_path, monkeypatch):
+        seed_file(tmp_path, "latest.json", 20)
+        out = run_export(tmp_path, monkeypatch,
+                         {"Articles": [article(i) for i in range(8)]})
+        assert len(json.loads((out / "latest.json").read_text())) == 8

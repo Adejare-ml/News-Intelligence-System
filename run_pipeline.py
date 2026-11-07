@@ -874,6 +874,33 @@ def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[st
         logger.error(f"Email digest skipped: {type(exc).__name__}: {exc}")
 
 
+# A core export shrinking below this share of the file it replaces is
+# treated as a broken read (a partial Sheets response, a filter gone
+# wrong), not news: the previous file stays and the run logs an error.
+CORE_EXPORT_MIN_SHARE = 0.4
+# Below this many rows the previous file is too small for a shrink to mean
+# anything, and a fresh deployment must always be able to write.
+CORE_EXPORT_MIN_ROWS = 20
+
+
+def write_core_export(name: str, rows: List[Dict[str, Any]]) -> None:
+    """Write one of the site's core lists, unless it collapsed."""
+    path = os.path.join(DATA_DIR, name)
+    try:
+        with open(path, encoding="utf-8") as f:
+            previous = len(json.load(f))
+    except Exception:
+        previous = 0
+    if previous >= CORE_EXPORT_MIN_ROWS and len(rows) < CORE_EXPORT_MIN_SHARE * previous:
+        logger.error(
+            f"Keeping the previous {name}: this run produced {len(rows)} row(s) "
+            f"against {previous} published, which looks like a failed read."
+        )
+        return
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(rows, f, default=str, indent=2)
+
+
 def export_static_json_database():
     """Generates the static JSON files read by index.html / app.js."""
     logger.info("Exporting static JSON telemetry files to static assets path...")
@@ -1112,14 +1139,9 @@ def export_static_json_database():
         logger.warning(f"Article image step skipped: {exc}")
 
     # Save base files
-    with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
-        json.dump(articles_sorted, f, default=str, indent=2)
-
-    with open(os.path.join(DATA_DIR, "companies.json"), "w", encoding="utf-8") as f:
-        json.dump(companies, f, default=str, indent=2)
-
-    with open(os.path.join(DATA_DIR, "people.json"), "w", encoding="utf-8") as f:
-        json.dump(people, f, default=str, indent=2)
+    write_core_export("latest.json", articles_sorted)
+    write_core_export("companies.json", companies)
+    write_core_export("people.json", people)
         
     # Procurement rows carry their parsed amount at export time (never
     # stored), so the parser's coverage applies to every historical row,
@@ -1144,10 +1166,9 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "agencies.json"), "w", encoding="utf-8") as f:
         json.dump(agencies, f, default=str, indent=2)
 
-    with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
-        # Already gated above: published rows only, with canonical keys,
-        # claim kind and quality flags on each.
-        json.dump(psc_records, f, default=str, indent=2)
+    # Already gated above: published rows only, with canonical keys,
+    # claim kind and quality flags on each.
+    write_core_export("significant_control.json", psc_records)
     with open(os.path.join(DATA_DIR, "register_quality.json"), "w", encoding="utf-8") as f:
         json.dump(dict(psc_withheld, generated=datetime.now().strftime("%Y-%m-%d %H:%M:%S")), f, default=str, indent=2)
         
