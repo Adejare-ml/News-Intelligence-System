@@ -29,6 +29,10 @@ def test_the_guard_uses_scheduler_guard_and_lets_manual_runs_through():
     run = step(guard, "Skip a scheduled run when another run just did the work")["run"]
     assert "scripts/scheduler_guard.py" in run
     assert '"$EVENT" != "schedule"' in run
+    # The slot lets a late cron skip when the Worker already ran its slot.
+    assert '--slot "$SCHEDULE"' in run
+    env = step(guard, "Skip a scheduled run when another run just did the work")["env"]
+    assert env["SCHEDULE"] == "${{ github.event.schedule }}"
 
 
 def test_the_owner_email_also_goes_out_for_a_manual_email_edition():
@@ -37,11 +41,17 @@ def test_the_owner_email_also_goes_out_for_a_manual_email_edition():
     assert "'11 7 * * *'" in cond and "inputs.email_edition" in cond
 
 
-def test_a_successful_run_closes_the_alert_issues():
-    job = load("news_scheduler.yml")["jobs"]["run-pipeline"]
-    last = job["steps"][-1]
-    assert last["if"] == "success()"
-    assert "pipeline-missed" in last["run"] and "pipeline-failure" in last["run"]
+def test_alerts_close_only_after_the_site_and_brief_are_published():
+    jobs = load("news_scheduler.yml")["jobs"]
+    # Closing in run-pipeline closed them before deploy-pages had published
+    # anything, and a gh error there skipped deploy-pages altogether.
+    assert not any("pipeline-missed" in s.get("run", "") for s in jobs["run-pipeline"]["steps"])
+    job = jobs["close-alerts"]
+    assert job["needs"] == ["run-pipeline", "deploy-pages"]
+    assert job["permissions"] == {"issues": "write"}
+    close = step(job, "Close the alert issues after a good run")
+    assert close["continue-on-error"] is True
+    assert "pipeline-missed" in close["run"] and "pipeline-failure" in close["run"]
 
 
 def test_the_watchdog_raises_a_missed_slot_issue():

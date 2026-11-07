@@ -19,7 +19,8 @@ on:
 
 # Permissions are granted per job below: run-pipeline needs contents:write
 # (data commit) and issues:write (failure alerts); deploy-pages hands its
-# token to a third-party deploy action, so it carries contents:write only.
+# token to a third-party deploy action, so it carries contents:write only;
+# close-alerts closes the alert issues, so it carries issues:write only.
 
 # Serialize runs: two overlapping runs both commit to main, and the slower one
 # is rejected as non-fast-forward (a manual trigger near a cron slot did exactly
@@ -263,22 +264,6 @@ jobs:
               --body "$BODY"
           fi
 
-      # The alerts above and in scheduler_watchdog.yml stay open until a
-      # run goes through, so a good run closes them: an open alert then
-      # always means the pipeline is still broken or still missing slots.
-      - name: Close the alert issues after a good run
-        if: success()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: |
-          set -euo pipefail
-          for LABEL in pipeline-missed pipeline-failure; do
-            for N in $(gh issue list --label "$LABEL" --state open --json number --jq '.[].number'); do
-              gh issue close "$N" --comment "Resolved: this run completed successfully. $RUN_URL"
-            done
-          done
-
   deploy-pages:
     name: Deploy to gh-pages
     needs: run-pipeline
@@ -435,3 +420,30 @@ jobs:
             echo "OK data/$f"
           done
           echo "Smoke test passed."
+
+  # The pipeline-failure alert above and the pipeline-missed one from
+  # scheduler_watchdog.yml stay open until a run goes through, so a good run
+  # closes them: an open alert then always means the pipeline is still
+  # broken or still missing slots. Its own job after deploy-pages, so a run
+  # that published nothing leaves them open, and a gh error here cannot stop
+  # the site deploy or the Morning Brief send.
+  close-alerts:
+    needs: [run-pipeline, deploy-pages]
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Close the alert issues after a good run
+        # Housekeeping: a failed close must not turn a good run red.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          for LABEL in pipeline-missed pipeline-failure; do
+            for N in $(gh issue list -R "$REPO" --label "$LABEL" --state open --json number --jq '.[].number'); do
+              gh issue close "$N" -R "$REPO" --comment "Resolved: this run completed and published. $RUN_URL"
+            done
+          done

@@ -225,12 +225,16 @@ triggers fire on time.
 - It never starts a second run for a slot. GitHub's own :11 cron and the
   watchdog stay as backups. A scheduled run skips itself only when another
   run that did real work (queued, running, or longer than two minutes)
-  started in the last 150 minutes (`scripts/scheduler_guard.py`, used by
-  the `guard` job in `news_scheduler.yml`). Runs that skipped themselves
-  never count, so one late run cannot make the rest of the day skip.
+  started in the last 150 minutes, or when the Worker, the watchdog or a
+  person already ran its slot (`scripts/scheduler_guard.py`, used by the
+  `guard` job in `news_scheduler.yml`). So the late `11 7` cron does not
+  send a second morning email. Runs that skipped themselves never count,
+  and neither does another late cron, so one late run cannot make the rest
+  of the day skip.
 - If no run does real work for six hours, the watchdog opens one issue
-  labelled `pipeline-missed` (later checks comment on it). The next
-  successful run closes it, and any open `pipeline-failure` issue.
+  labelled `pipeline-missed` (later checks comment on it). The next run
+  that completes and publishes the site closes it, and any open
+  `pipeline-failure` issue.
 
 Until the Worker is deployed, every run comes from GitHub's cron, hours
 late, and the Morning Brief goes out in the afternoon.
