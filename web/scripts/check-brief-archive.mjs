@@ -5,8 +5,9 @@
 // since the email's "View in browser" link points there; if a public page
 // still carries a {{...}} placeholder, which the sender fills with a
 // reader's personal unsubscribe or preferences link; if an edition page can
-// be indexed (they name people from news reports); or if the sitemap lists
-// one.
+// be indexed (they name people from news reports); if the sitemap lists
+// one; or if an edition page still says "Reply to this email" (there is no
+// inbox to reply from on the web).
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -48,6 +49,7 @@ for (const site of sites) {
     if (path !== "brief/morning/" && html && !/<meta name="robots" content="noindex/.test(html)) {
       problems.push(`${site}: /${path} is missing noindex`);
     }
+    if (html.includes("Reply to this email")) problems.push(`${site}: /${path} tells web readers to reply to an email`);
   }
   const sitemap = existsSync(join(out, "sitemap.xml")) ? readFileSync(join(out, "sitemap.xml"), "utf-8") : "";
   if (sitemap.includes("/brief/morning/")) problems.push(`${site}: the sitemap lists Morning Brief editions`);
