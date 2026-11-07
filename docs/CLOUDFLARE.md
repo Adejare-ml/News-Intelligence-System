@@ -84,6 +84,7 @@ deploys it with the site:
 | `GET/POST /api/unsubscribe?token=` | One-click unsubscribe |
 | `POST /api/send-brief` | Sends the morning email (owner secret; see below) |
 | `GET /api/stats` | Subscriber counts by status, category, region and frequency, weekly sign-ups and recent sends. Needs `Authorization: Bearer <BRIEF_SEND_SECRET>`. Counts only, never addresses. |
+| `POST /api/dispute` | Right of reply: stores a dispute about a record in D1 (`disputes`) and emails `OWNER_EMAIL` when sending is on. Five per sender a day. |
 | `GET /img?u=` | Serves publisher images from the site's origin, cached for a week. Only URLs in the build's `/img-allow.json` are fetched. |
 
 ### Morning Brief sign-ups (one-time setup)
@@ -100,6 +101,21 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
 3. Bind it to the site:
    **Pages project → Settings → Bindings → Add → D1 database**,
    variable name `DB`, database `aura`. Redeploy.
+
+### Disputes (one-time setup)
+
+The `/dispute/` form needs the `disputes` and `dispute_throttle` tables.
+Until they exist, posting the form fails, so apply this before (or with)
+the deploy that ships the form:
+
+```
+npx wrangler d1 execute aura --remote --file=web/migrations/0005_disputes.sql
+```
+
+New disputes arrive with status `open`. Read them in the D1 console
+(`SELECT * FROM disputes WHERE status = 'open' ORDER BY id`), reply by
+email, then mark them done (`UPDATE disputes SET status = 'resolved' WHERE id = ?`).
+How to correct or unpublish a record is in [CORRECTIONS.md](CORRECTIONS.md).
 
 ### Morning Brief email (Gmail, Brevo or Resend)
 
@@ -182,7 +198,7 @@ Production):
 | `MAIL_FROM` | `AURA Morning Brief <the sender you verified>` (optional for Gmail) |
 | `SITE_URL` | `https://auranews.pages.dev` |
 | `BRIEF_SEND_SECRET` | a long random string (**Secret**), e.g. `openssl rand -hex 32` |
-| `OWNER_EMAIL` | your address, for test sends |
+| `OWNER_EMAIL` | your address, for test sends and new disputes |
 
 **4. GitHub secret:** repository → Settings → Secrets and variables →
 Actions → `BRIEF_SEND_SECRET`, the same value as in step 3.
