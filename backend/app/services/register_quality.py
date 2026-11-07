@@ -95,6 +95,18 @@ def canonical_company(name: Any) -> str:
     return _COMPANY_ALIASES.get(key, key)
 
 
+def holder_key(row: Dict[str, Any]) -> str:
+    """Who a register row is about: the canonical name AND company.
+
+    A name alone is not an identity: two different men called Abubakar
+    Musa at two companies must not share a record, a timeline or a page,
+    and attributing one's holding to the other is exactly the error this
+    register cannot afford. Spelling, honorific and suffix variants of one
+    person at one company still share the key.
+    """
+    return f"{canonical_person(row.get('Person Name'))}|{canonical_company(row.get('Company'))}"
+
+
 # --- what a row claims --------------------------------------------------------
 
 _ROLE_RE = re.compile(
@@ -259,8 +271,8 @@ REASONS = {
 
 
 def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Copy each register row with Person Key, Company Key, Kind, Quality,
-    Quarantined and Confidence added. No row is dropped; 'null' board roles
+    """Copy each register row with Person Key, Company Key, Holder Key,
+    Kind, Quality, Quarantined and Confidence added. No row is dropped; 'null' board roles
     are blanked."""
     out = []
     for row in rows or []:
@@ -270,6 +282,7 @@ def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
         flags = quality_flags(r)
         r["Person Key"] = canonical_person(r.get("Person Name"))
         r["Company Key"] = canonical_company(r.get("Company"))
+        r["Holder Key"] = holder_key(r)
         r["Kind"] = classify_row(r)
         r["Quality"] = flags
         r["Quarantined"] = "implausible" in flags
