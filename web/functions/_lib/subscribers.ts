@@ -125,6 +125,38 @@ export function subscriberStore(db: D1Like) {
         .run();
     },
 
+    /**
+     * Deletes pending sign-ups not mailed since `before` (their last mail, or
+     * their sign-up when they never had one): nobody is going to confirm them,
+     * and an address should not be kept for nothing. Returns how many went.
+     */
+    async deleteStalePending(before: string): Promise<number> {
+      const { results } = await db
+        .prepare("DELETE FROM subscribers WHERE status = 'pending' AND julianday(COALESCE(last_mailed_at, created_at)) < julianday(?) RETURNING email")
+        .bind(before)
+        .all<{ email: string }>();
+      return (results ?? []).length;
+    },
+
+    /**
+     * Pending sign-ups 48 to 72 hours old that have had exactly one mail:
+     * the confirmation on the (Lagos) day they signed up, and nothing since.
+     * Lagos is UTC+1 all year, so that day is date(created_at, '+1 hour').
+     * A reminder moves mail_day on, so nobody is reminded twice.
+     */
+    async remindable(now: string, limit: number): Promise<Subscriber[]> {
+      const { results } = await db
+        .prepare(
+          `SELECT ${COLUMNS} FROM subscribers
+           WHERE status = 'pending' AND julianday(created_at) BETWEEN julianday(?) - 3 AND julianday(?) - 2
+             AND mails_today = 1 AND mail_day = date(created_at, '+1 hour')
+           ORDER BY created_at LIMIT ?`,
+        )
+        .bind(now, now, limit)
+        .all<Row>();
+      return (results ?? []).map((r) => fromRow(r)!);
+    },
+
     /** Everyone who should get a brief at all: confirmed and not paused. Frequency is the caller's call. */
     async recipients(): Promise<Subscriber[]> {
       const { results } = await db
