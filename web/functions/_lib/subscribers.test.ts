@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { subscriberStore, sendLog } from "./subscribers.ts";
+import { subscriberStore, sendLog, throttle } from "./subscribers.ts";
 import { addSubscriber, sqliteD1 } from "./d1-fake.test.ts";
 
 const T = (c: string) => c.repeat(48);
@@ -73,4 +73,41 @@ test("send log", async () => {
   const row = (await log.forDay("2026-11-06"))!;
   assert.deepEqual([row.sent, row.failed, row.finished_at], [3, 1, "t1"]);
   assert.equal((await log.recent(5)).length, 1);
+});
+
+test("claimMail allows one mail per 10 minutes and three per Lagos day", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending" });
+  const store = subscriberStore(db);
+  const at = (hhmm: string) => `2026-11-06T${hhmm}:00.000Z`;
+  assert.equal(await store.claimMail("a@x.co", at("08:00"), "2026-11-06"), true);
+  assert.equal(await store.claimMail("a@x.co", at("08:05"), "2026-11-06"), false, "too soon");
+  assert.equal(await store.claimMail("a@x.co", at("08:10"), "2026-11-06"), true);
+  assert.equal(await store.claimMail("a@x.co", at("09:00"), "2026-11-06"), true);
+  assert.equal(await store.claimMail("a@x.co", at("10:00"), "2026-11-06"), false, "three today already");
+  assert.equal(await store.claimMail("a@x.co", at("23:30"), "2026-11-07"), true, "a new Lagos day starts again");
+  assert.equal(await store.claimMail("nobody@x.co", at("08:00"), "2026-11-06"), false);
+});
+
+test("releaseMail gives back a claim whose mail was never sent", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending" });
+  const store = subscriberStore(db);
+  await store.claimMail("a@x.co", "2026-11-06T08:00:00.000Z", "2026-11-06");
+  await store.releaseMail("a@x.co", "2026-11-06");
+  assert.equal(await store.claimMail("a@x.co", "2026-11-06T08:01:00.000Z", "2026-11-06"), true);
+  const row = db.raw.prepare("SELECT mails_today FROM subscribers WHERE email = 'a@x.co'").get() as { mails_today: number };
+  assert.equal(row.mails_today, 1);
+});
+
+test("throttle counts hits per key per day", async () => {
+  const db = sqliteD1();
+  const t = throttle(db);
+  assert.equal(await t.hit("ip:1.2.3.4", "2026-11-06"), 1);
+  assert.equal(await t.hit("ip:1.2.3.4", "2026-11-06"), 2);
+  assert.equal(await t.hit("ip:5.6.7.8", "2026-11-06"), 1);
+  assert.equal(await t.hit("ip:1.2.3.4", "2026-11-07"), 1, "a new day starts from one");
+  await t.prune("2026-11-07");
+  const keys = db.raw.prepare("SELECT key FROM throttle").all() as { key: string }[];
+  assert.deepEqual(keys.map((k) => k.key), ["ip:1.2.3.4"], "earlier days are pruned");
 });

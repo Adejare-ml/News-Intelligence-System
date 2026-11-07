@@ -2,7 +2,8 @@
  * Every D1 query the Morning Brief makes, in one place. The endpoints ask
  * for what they need ("confirm this token") and never write SQL themselves.
  *
- * Tables: subscribers (migrations 0001 + 0003) and sends (0002).
+ * Tables: subscribers (migrations 0001, 0003, 0004), sends (0002) and
+ * throttle (0004).
  */
 import type { D1Like } from "./http.ts";
 import { prefsFromRow, serializeCategories, type Prefs } from "./categories.ts";
@@ -38,6 +39,10 @@ function fromRow(row: Row | null): Subscriber | null {
     ...prefsFromRow(row),
   };
 }
+
+/** Sign-up mail limits per address: one mail per gap, and a few per Lagos day. */
+export const MAIL_GAP_MINUTES = 10;
+export const MAILS_PER_DAY = 3;
 
 const prefValues = (p: Prefs) => [serializeCategories(p.categories), p.region, p.frequency];
 
@@ -88,6 +93,38 @@ export function subscriberStore(db: D1Like) {
         .run();
     },
 
+    /**
+     * Takes one of the address's mail allowances, or returns false when it
+     * has none left: mailed in the last MAIL_GAP_MINUTES, or MAILS_PER_DAY
+     * times already on this Lagos day. Check and record are one statement,
+     * so two sign-ups racing each other cannot both get through.
+     */
+    async claimMail(email: string, now: string, day: string): Promise<boolean> {
+      const cutoff = new Date(Date.parse(now) - MAIL_GAP_MINUTES * 60_000).toISOString();
+      const row = await db
+        .prepare(
+          `UPDATE subscribers SET last_mailed_at = ?, mails_today = CASE WHEN mail_day = ? THEN mails_today + 1 ELSE 1 END, mail_day = ?
+           WHERE email = ? AND (last_mailed_at IS NULL OR julianday(last_mailed_at) <= julianday(?))
+             AND (mail_day IS NULL OR mail_day != ? OR mails_today < ?)
+           RETURNING email`,
+        )
+        .bind(now, day, day, email, cutoff, day, MAILS_PER_DAY)
+        .first<{ email: string }>();
+      return row !== null;
+    },
+
+    /**
+     * Gives back a claim whose mail the provider refused, so the reader can
+     * try again straight away. The gap only ever held a claim older than
+     * MAIL_GAP_MINUTES, so clearing it allows no more than before.
+     */
+    async releaseMail(email: string, day: string): Promise<void> {
+      await db
+        .prepare("UPDATE subscribers SET last_mailed_at = NULL, mails_today = MAX(mails_today - 1, 0) WHERE email = ? AND mail_day = ?")
+        .bind(email, day)
+        .run();
+    },
+
     /** Everyone who should get a brief at all: confirmed and not paused. Frequency is the caller's call. */
     async recipients(): Promise<Subscriber[]> {
       const { results } = await db
@@ -104,6 +141,29 @@ export function subscriberStore(db: D1Like) {
         .bind()
         .all<{ status: string; categories: string; region: string; frequency: string; paused: number; created_at: string }>();
       return (results ?? []).map((r) => ({ status: r.status, paused: Number(r.paused) === 1, created_at: r.created_at, prefs: prefsFromRow(r) }));
+    },
+  };
+}
+
+/** Counts per key per Lagos day, e.g. sign-up posts from one IP ("ip:<address>"). */
+export function throttle(db: D1Like) {
+  return {
+    /** Counts one hit and returns today's total for the key, this one included. */
+    async hit(key: string, day: string): Promise<number> {
+      const row = await db
+        .prepare(
+          `INSERT INTO throttle (key, day, count) VALUES (?, ?, 1)
+           ON CONFLICT (key) DO UPDATE SET count = CASE WHEN throttle.day = excluded.day THEN throttle.count + 1 ELSE 1 END, day = excluded.day
+           RETURNING count`,
+        )
+        .bind(key, day)
+        .first<{ count: number }>();
+      return Number(row?.count ?? 1);
+    },
+
+    /** Drops counts from before `day`: they no longer limit anyone, and IPs need not be kept. */
+    async prune(day: string): Promise<void> {
+      await db.prepare("DELETE FROM throttle WHERE day < ?").bind(day).run();
     },
   };
 }
