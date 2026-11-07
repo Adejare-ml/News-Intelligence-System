@@ -1,8 +1,8 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost as subscribe } from "./subscribe.ts";
-import { onRequestGet as confirm } from "./confirm.ts";
-import { onRequestGet as unsubscribe } from "./unsubscribe.ts";
+import { onRequestGet as confirmGet, onRequestPost as confirm } from "./confirm.ts";
+import { onRequestGet as unsubscribeGet, onRequestPost as unsubscribe } from "./unsubscribe.ts";
 import { onRequestGet as prefsGet, onRequestPost as prefsPost, preferencesForm } from "./preferences.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import { subscriberStore } from "../_lib/subscribers.ts";
@@ -96,10 +96,24 @@ test("the honeypot answers ok and stores nothing", async () => {
   assert.equal(await subscriberStore(db).byEmail("bot@x.co"), null);
 });
 
+test("opening a confirm link changes nothing; it shows one button that posts back", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending" });
+  const res = await confirmGet({ request: get(`/api/confirm?token=${T("a")}`), env: { DB: db } });
+  assert.equal(res.status, 200);
+  const html = await res.text();
+  assert.equal(html.match(/<form /g)?.length, 1);
+  assert.match(html, new RegExp(`<form method="post" action="/api/confirm\\?token=${T("a")}">`));
+  assert.match(html, /<button type="submit">/);
+  assert.equal((await subscriberStore(db).byToken(T("a")))!.status, "pending", "link scanners must not confirm");
+  assert.equal((await confirmGet({ request: get("/api/confirm?token=nope"), env: { DB: db } })).status, 400);
+  assert.equal((await confirmGet({ request: get(`/api/confirm?token=${T("b")}`), env: { DB: db } })).status, 404);
+});
+
 test("confirm names what the reader chose and links to preferences", async () => {
   const db = sqliteD1();
   addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending", categories: "sports", region: "global", frequency: "weekly" });
-  const res = await confirm({ request: get(`/api/confirm?token=${T("a")}`), env: { DB: db } });
+  const res = await confirm({ request: new Request(`${SITE}/api/confirm?token=${T("a")}`, { method: "POST" }), env: { DB: db } });
   const html = await res.text();
   assert.match(html, /every Monday/);
   assert.match(html, /Sports \(Global\), once a week/);
@@ -147,11 +161,29 @@ test("preferencesForm escapes the token", () => {
   assert.ok(html.includes("&quot;&gt;&lt;ScRiPt&gt;x"), "the token is escaped");
 });
 
-test("unsubscribe still works", async () => {
+test("opening an unsubscribe link changes nothing; it shows one button that posts back", async () => {
   const db = sqliteD1();
   addSubscriber(db, { email: "a@x.co", token: T("a") });
-  await unsubscribe({ request: get(`/api/unsubscribe?token=${T("a")}`), env: { DB: db } });
+  const html = await (await unsubscribeGet({ request: get(`/api/unsubscribe?token=${T("a")}`), env: { DB: db } })).text();
+  assert.equal(html.match(/<form /g)?.length, 1);
+  assert.match(html, new RegExp(`<form method="post" action="/api/unsubscribe\\?token=${T("a")}">`));
+  assert.equal((await subscriberStore(db).byToken(T("a")))!.status, "confirmed", "link scanners must not unsubscribe");
+});
+
+test("unsubscribe by POST, including a mail client's one-click post", async () => {
+  const db = sqliteD1();
+  addSubscriber(db, { email: "a@x.co", token: T("a") });
+  addSubscriber(db, { email: "b@x.co", token: T("b") });
+  await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`, { method: "POST" }), env: { DB: db } });
   assert.equal((await subscriberStore(db).byToken(T("a")))!.status, "unsubscribed");
+  // RFC 8058: the client posts "List-Unsubscribe=One-Click" as a form body.
+  const oneClick = new Request(`${SITE}/api/unsubscribe?token=${T("b")}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: "List-Unsubscribe=One-Click",
+  });
+  assert.equal((await unsubscribe({ request: oneClick, env: { DB: db } })).status, 200);
+  assert.equal((await subscriberStore(db).byToken(T("b")))!.status, "unsubscribed");
 });
 
 test("a pending sign-up keeps its owner's choices; its confirmation mail says so", async () => {
