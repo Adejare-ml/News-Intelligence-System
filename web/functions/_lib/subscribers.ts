@@ -44,6 +44,15 @@ function fromRow(row: Row | null): Subscriber | null {
 export const MAIL_GAP_MINUTES = 10;
 export const MAILS_PER_DAY = 3;
 
+/** One subscriber as the owner's stats see it: no address. */
+export interface StatRow {
+  status: string;
+  paused: boolean;
+  created_at: string;
+  confirmed_at: string | null;
+  prefs: Prefs;
+}
+
 const prefValues = (p: Prefs) => [serializeCategories(p.categories), p.region, p.frequency];
 
 export function subscriberStore(db: D1Like) {
@@ -167,12 +176,18 @@ export function subscriberStore(db: D1Like) {
     },
 
     /** Rows for the owner's stats: preferences and dates only, never an address. */
-    async statRows(): Promise<{ status: string; paused: boolean; created_at: string; prefs: Prefs }[]> {
+    async statRows(): Promise<StatRow[]> {
       const { results } = await db
-        .prepare("SELECT status, categories, region, frequency, paused, created_at FROM subscribers")
+        .prepare("SELECT status, categories, region, frequency, paused, created_at, confirmed_at FROM subscribers")
         .bind()
-        .all<{ status: string; categories: string; region: string; frequency: string; paused: number; created_at: string }>();
-      return (results ?? []).map((r) => ({ status: r.status, paused: Number(r.paused) === 1, created_at: r.created_at, prefs: prefsFromRow(r) }));
+        .all<{ status: string; categories: string; region: string; frequency: string; paused: number; created_at: string; confirmed_at: string | null }>();
+      return (results ?? []).map((r) => ({
+        status: r.status,
+        paused: Number(r.paused) === 1,
+        created_at: r.created_at,
+        confirmed_at: r.confirmed_at ?? null,
+        prefs: prefsFromRow(r),
+      }));
     },
   };
 }
