@@ -27,9 +27,10 @@ class TestHolderIdentity:
         )}
         assert len(keys) == 1
 
-    def test_annotate_exports_the_holder_key(self):
+    def test_annotate_exports_both_halves_of_the_identity(self):
+        # The site rebuilds holder_key from these two (web/src/lib/psc.ts holderKey).
         r = q.annotate([psc("Alhaji Abubakar Musa", "Kano Flour Mills Plc", "", "")])[0]
-        assert r["Holder Key"] == "abubakar musa|kano flour mills"
+        assert f'{r["Person Key"]}|{r["Company Key"]}' == q.holder_key(r) == "abubakar musa|kano flour mills"
 
 
 class TestTimeline:

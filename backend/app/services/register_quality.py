@@ -271,9 +271,10 @@ REASONS = {
 
 
 def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Copy each register row with Person Key, Company Key, Holder Key,
-    Kind, Quality, Quarantined and Confidence added. No row is dropped; 'null' board roles
-    are blanked."""
+    """Copy each register row with Person Key, Company Key, Kind, Quality,
+    Quarantined and Confidence added. No row is dropped; 'null' board roles
+    are blanked. Person Key and Company Key together are the holder's
+    identity (holder_key); the site groups by the pair, never the name."""
     out = []
     for row in rows or []:
         r = dict(row or {})
@@ -282,7 +283,6 @@ def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
         flags = quality_flags(r)
         r["Person Key"] = canonical_person(r.get("Person Name"))
         r["Company Key"] = canonical_company(r.get("Company"))
-        r["Holder Key"] = holder_key(r)
         r["Kind"] = classify_row(r)
         r["Quality"] = flags
         r["Quarantined"] = "implausible" in flags
