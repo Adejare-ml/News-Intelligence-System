@@ -133,6 +133,24 @@
       "risk": "Low"
     },
     {
+      "id": "a10bb5746426",
+      "label": "Joint Admissions and Matriculation Board",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "02bcb5f5a7b4",
+      "label": "Jigawa State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a99d3740770f",
       "label": "Enugu State Government",
       "type": "agency",
@@ -141,6 +159,12 @@
     {
       "id": "3641df6a5c2b",
       "label": "Federal Ministry of Education",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "de44b55175fc",
+      "label": "Zamfara State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -157,6 +181,12 @@
       "risk": "Low"
     },
     {
+      "id": "83dcee8c7135",
+      "label": "Islamic Development Bank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8aeb2e3bdb2c",
       "label": "Bank of Industry",
       "type": "agency",
@@ -165,18 +195,6 @@
     {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a10bb5746426",
-      "label": "Joint Admissions and Matriculation Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,24 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "6dfecfdab502",
-      "label": "Nigeria Diaspora Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f7e64c275e9b",
-      "label": "Apapa Port",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e194c74ceda2",
-      "label": "LASTMA",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "31cdf5f58157",
       "label": "Mbah",
       "type": "person",
@@ -274,12 +274,6 @@
       "id": "a54268f37a2e",
       "label": "Lawal",
       "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "de44b55175fc",
-      "label": "Zamfara State Government",
-      "type": "company",
       "risk": "Low"
     },
     {
@@ -861,6 +855,12 @@
       "label": "PSC: 24.5%"
     },
     {
+      "id": "6b1d699c5d81",
+      "from": "334c4a4c42fd",
+      "to": "02bcb5f5a7b4",
+      "label": "Contract Awardee"
+    },
+    {
       "id": "89c5f77f8475",
       "from": "334c4a4c42fd",
       "to": "3641df6a5c2b",
@@ -954,12 +954,6 @@
       "id": "571c83be7b42",
       "from": "334c4a4c42fd",
       "to": "58e21ffa68da",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7bf4de3d8073",
-      "from": "7f50eb5ca259",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

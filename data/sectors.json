@@ -331,6 +331,14 @@
       }
     },
     {
+      "industry": "Power Distribution",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Professional Services/Accounting",
       "companies": 1,
       "mentions": 3,
@@ -443,14 +451,6 @@
       "risk": {
         "Low": 1,
         "High": 1
-      }
-    },
-    {
-      "industry": "Power Distribution",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -966,5 +966,5 @@
       }
     }
   ],
-  "generated": "2026-11-07 02:53:26"
+  "generated": "2026-11-07 14:05:31"
 }

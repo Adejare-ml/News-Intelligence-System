@@ -1,22 +1,22 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-07 02:52:50 (UTC)
-**Run Window:** 2026-11-07, all runs to 02:52 (run 1 of the day)
+**Generated on:** 2026-11-07 14:04:57 (UTC)
+**Run Window:** 2026-11-07, all runs to 14:04 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 6
+- **Total Articles Processed:** 10
 - **High Risk Signals:** 0
 - **Appointments Logged:** 1
-- **Procurement Awards:** 1
+- **Procurement Awards:** 2
 
 ---
 
-# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Monitoring
-**Report date:** 7 November 2026
-**Coverage:** All articles published on 7 November 2026 up to 02:52 (run 1 of the day)
+# Executive Summary: Nigerian Corporate Transparency and MDA Monitor
+**Report date:** 2026-11-07 | **Coverage:** All articles published on 2026-11-07 up to 14:04 (run 2 of the day)
 
 ### Key Developments
-- **CBN stablecoin capital rule:** The Central Bank of Nigeria has set a N15bn capital requirement for dollar stablecoins. Only the headline was available, so scope and timelines are unknown. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxQbVJnRjlVd2t1NGRFemJJUUJEcTNURDFZdW9GVVBjZ2xzTzZaWlFHMUhZZ0swUkxKbWZIM3pGaS1Sd0EzOHBLUHBwVGcwalAzdkJOOGdHbjJyVFBHbWVTLWxzdXFpV2JRcVNkSjJHejZHTUtQU1pfYXlfSC1NdDZWUXpTVkw?oc=5))  
-- **Power sector dispute:** TCN has rejected IKEDC's explanation for recent power outages. The dispute bears on accountability in electricity supply. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMihwFBVV95cUxPczFkSTVMb2FwXzN4SDE0N1N6NEE3Z3EzRjl4b3diLXVUZTVLOXpPd1A5c3JZTjdXMFY4TmUxdmphUUtsSWtKZl9FZjR3TEx0U3lBcVRzWk5GM2ljYkdMX1Jtc3pWRU9XWlB2VU81UG11X0poRUIzZ2d1RXdIVzFLSGo3ZlYtZ00?oc=5))  
+- **JAMB audit query:** The House of Representatives has queried the Joint Admissions and Matriculation Board over a N3 billion pension payment and N710 million in computer spending. Only the headline was available, so the findings and JAMB's response are unknown. Risk: Medium (55). ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilwFBVV95cUxQYjJCNVR3Q2V4alp3djJWTkFjckxYUDF3bHliX1FGTS1Oal9ULU9zYjBTazFBN0JCNUVTS3VyWHJmNU5qeWt0ajJZQ2pxWHpkRWVhQVpmY0ZKYnIzOTFHUnRqN1hndmRGbWJrTnl5d014Mk5vYVB3UFJOQl9DdXREc1NFRW5zeE9LTlh3UFBZR19wXzBxLWtz?oc=5))  
+- **Power sector dispute:** The Transmission Company of Nigeria (TCN) disputes Ikeja Electric's explanation for outages on Band A feeders. No further detail is given on causes or positions. Risk: Low. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxOZXV3Sk9oUGtMaklial9LdnNTMTFFMTRheEdrOTRjQXYwZmE3WmttWjVmRGloY1BueFd1MU94X1VyanVHWUM4N2VxMUNIYkR6YU03R1hkOVY0YXhRZ2JFN3NBdlNxN1FDcV80dDV4WUltU0tNZHNrYmpKam5fdWwwSERtLUVMWEQwQlNkcUlEMkF2SzZ3TndIZzRlUlFCZEE2bG1iVlR0aHhvWGlHT0JQb3ljTk1qRDl3SHpQamVFYm9BWnF3WUhv?oc=5))  
+- **Zamfara mining policy:** The state government has inaugurated an anti-illegal mining committee. Membership, mandate and timeline were not reported. Risk: Low. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSm82S3ZpWjRRY0VZQ2x5WmdMU1RXbVd5WElSQXFZVlBjUmNGdy1MdXZPQjJEdXRVemJwbnJfUFZFZ1BuMXZUQklMaVJLMEtRckxiUklRMnQ2SmVKZFdra3Q0VUlwdWt0RjVVLW1DUEdqY24tRU1mMjFKYWJSTDdxbERBZHdwc0NkaGxtMGxaWjFpZ2RWb3BjUEgxMVBmd3l5eS14Zm1xanVNQQ?oc=5))  
 
 ### High Risk Alerts
 No high-risk items today.
@@ -25,8 +25,7 @@ No high-risk items today.
 Nothing to report here today.
 
 ### Procurement & Board Changes
-- **National Library project:** Education Minister Tunji Alausa pledged to complete the long-abandoned National Library of Nigeria headquarters in Abuja within 24 months. The article names no contractor or contract amount, which is a transparency gap worth tracking. ([The Punch](https://punchng.com/fg-vows-national-library-project-completion-in-24-months/))  
-- **Mbah inaugurates 68 development centre administrators to take projects, policies to more communities**. Enugu State Governor Peter Mbah has inaugurated 68 development centre administrators tasked with carrying projects and policies to more communities. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUFdOZElURm9rQ2ZDV3JSUmVzMGVnSF9IVDE3Yk8zbGNKRWNNU0UzRk9SRl9QbGtvVk9scm9jTjdHdXdkNHUwSmtoREY2MWlBdDdhYTFma3ljR3lRYnlRSTZacmhwZkVVQ1UwLWpydHcya0I2OTdVRW10N2VPNVowTzRXM21HamhuLXhac0dfZm5Ydk9fOTYtS3JqVGRxT2syUGF3SkxiUmMzWTh1bG5ERzVTb01wVjE5NDNlbG52bzhMTzhmLXNVRFN4WjRuWG95ank4My15ZVRtbXY3SUUxQThGQ0w5UQ?oc=5))  
+- **Jigawa State Government and Islamic Development Bank:** A $110 million project to improve schools and teacher development. No contractor has been named, and no ownership details are available. Contractor selection should be monitored. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRXNLdFdHM0dTRlhJeFpjN3g4N0I2cnVVM181LXZrLXBNbVpUb0ozSTg5RktRSEFhNUlPZ0lWSTVDbEtfdmdfS2Iway03OEhLejlnSTRCVlFrSEJybGQxWDYwTlRlLV94NnRIQU9URzlGaTNYVEw5UVEtVDV6V0dSWEVFTTNDdHdQY3hJck5IWDlFSGZSNkRvQjNVWmROd2Q5RFgwbndHLXNFQjh1Rk5FT1RxVlFCRmUwUGRyN2tETVgxU1B1YXFPX2ZPZVpiblZoWHhuOWlWYk9sX0dhWnE0YUtzU1g?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*
