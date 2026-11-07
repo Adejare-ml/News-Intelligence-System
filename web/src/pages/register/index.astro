@@ -5,6 +5,7 @@ import { correctionUrl } from "../../lib/corrections.ts";
 import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
+import { href } from "../../lib/url.ts";
 import * as data from "../../lib/data.ts";
 import { groupHoldings, summarise, counted, registerOrder } from "../../lib/psc.ts";
 import { within, REGISTER_RECENT_DAYS } from "../../lib/freshness.ts";
@@ -68,6 +69,11 @@ const filters = [
       Every card is a claim reported in the news, not a CAC filing, and is published only with a link to
       the article behind it. Named in a card and think it is wrong?
       <a class="link" href={correctionUrl("register")} rel="noopener noreferrer" target="_blank">Ask for a correction or removal</a>.
+    </p>
+    <p class="note">
+      Download the published register as <a class="link" href={href("downloads/register.csv")} download>CSV</a>,
+      or the <a class="link" href={href("downloads/procurement.csv")} download>contracts in the news</a>.
+      <a class="link" href={href("downloads/")}>All downloads</a>.
     </p>
     {s.isDemo && (
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>
