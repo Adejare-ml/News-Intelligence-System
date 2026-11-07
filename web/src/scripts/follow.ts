@@ -52,11 +52,9 @@ const button = document.querySelector<HTMLButtonElement>("[data-follow]");
 const wrap = document.querySelector<HTMLElement>("[data-follow-wrap]");
 if (button && wrap && save(load())) {
   const item: Follow = { slug: button.dataset.slug!, name: button.dataset.name! };
-  const sync = () => {
-    const on = load().some((f) => f.slug === item.slug);
-    button.setAttribute("aria-pressed", String(on));
-    button.textContent = on ? "Following" : "Follow";
-  };
+  // A toggle button keeps one label; aria-pressed (styled in the page) carries the state,
+  // so screen readers do not announce it twice ("Following, pressed").
+  const sync = () => button.setAttribute("aria-pressed", String(load().some((f) => f.slug === item.slug)));
   button.addEventListener("click", () => {
     save(toggleFollow(load(), item));
     sync();
@@ -105,15 +103,22 @@ if (panel && follows.length) {
 
 /* ---------- Dot on the alerts bell (every page) ---------- */
 const dot = document.querySelector<HTMLElement>("[data-follow-dot]");
+// The bell's aria-label belongs to the inbox script (unread count), so the dot's meaning
+// reaches screen readers through this note, which the bell names in aria-describedby.
+const note = document.querySelector<HTMLElement>("[data-follow-note]");
+function showDot(on: boolean) {
+  dot!.hidden = !on;
+  if (note) note.textContent = on ? "Includes a new alert about someone you follow" : "";
+}
 async function updateDot() {
   if (!dot) return;
   const current = load();
   if (!current.length) {
-    dot.hidden = true;
+    showDot(false);
     return;
   }
   const alerts = await getJson<{ alerts?: FollowAlert[] }>(dot.dataset.alerts, {});
-  dot.hidden = !hasNewFollowedAlert(alerts.alerts ?? [], current, readAlerts());
+  showDot(hasNewFollowedAlert(alerts.alerts ?? [], current, readAlerts()));
 }
 void updateDot();
 // Reading an alert in the inbox can clear the dot; the inbox saves first, so check after it.
