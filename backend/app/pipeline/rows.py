@@ -5,6 +5,7 @@ from typing import Any, Dict, List
 
 from backend.app.pipeline.report import _int_cell
 from backend.app.services.analytics import entity_key
+from backend.app.services.email_digest import report_from_row, same_story
 from backend.app.services.ingestion import parse_feed_date
 
 
@@ -143,6 +144,41 @@ def stale_sources(health: Dict[str, Any]) -> List[str]:
     """Feeds that have come back empty STALE_SOURCE_RUNS runs in a row."""
     return [name for name, entry in health.get("sources", {}).items()
             if _int_cell(entry.get("empty_runs")) >= STALE_SOURCE_RUNS]
+
+
+def collapse_story_copies(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """One feed row per story, however many outlets reported it.
+
+    Each outlet's copy is its own Articles row, so the feed showed the same
+    arraignment three times in a row. Copies are matched by the email
+    digest's same_story (headline, people, sums and timing must agree;
+    when unsure, they stay apart). The highest-risk copy is kept (the first
+    on a tie) and carries the others as "Also Reported" [{outlet, url}].
+    Rows the digest cannot read (no link, filtered) are left as they are.
+    """
+    reports = [report_from_row(row) for row in articles]
+    groups: List[List[int]] = []  # row indexes, in feed order
+    for i, rep in enumerate(reports):
+        match = None
+        if rep is not None:
+            match = next((g for g in groups
+                          if reports[g[0]] is not None and same_story(reports[g[0]], rep)), None)
+        if match is None:
+            groups.append([i])
+        else:
+            match.append(i)
+
+    out = []
+    for group in groups:
+        if len(group) == 1:
+            out.append(articles[group[0]])
+            continue
+        best = max(group, key=lambda i: (reports[i].risk_score, -i))
+        row = dict(articles[best])
+        row["Also Reported"] = [{"outlet": reports[i].outlet, "url": reports[i].url}
+                                for i in group if i != best]
+        out.append(row)
+    return out
 
 
 def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],

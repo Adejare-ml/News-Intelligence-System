@@ -9,6 +9,7 @@ import pytest
 import run_pipeline as rp
 from backend.app.db.excel_db import SheetsDatabase
 from backend.app.pipeline.cells import clean_cell, clean_procurement_row, procurement_cells
+from backend.app.pipeline.rows import collapse_story_copies
 
 
 class TestCleanCell:
@@ -139,6 +140,19 @@ def article(i, **extra):
     return row
 
 
+# Eight different stories (one outlet's copies of a story would collapse).
+DISTINCT = [
+    "Dangote Cement raises ex-factory prices",
+    "CBN holds monetary policy rate at 27.5%",
+    "NNPC appoints new chief financial officer",
+    "SEC suspends trading in Chams shares",
+    "Access Holdings completes acquisition of Kenyan bank",
+    "FIRS extends VAT filing deadline",
+    "MTN Nigeria lists commercial paper on FMDQ",
+    "BPP approves N40bn Abuja road contracts",
+]
+
+
 def seed_file(tmp_path, name, n):
     out_dir = tmp_path / "data"
     out_dir.mkdir(exist_ok=True)
@@ -163,8 +177,64 @@ class TestShrinkGuard:
         out = run_export(tmp_path, monkeypatch, {"Articles": [article(1)]})
         assert len(json.loads((out / "latest.json").read_text())) == 1
 
+    def test_copies_of_one_story_collapse_in_latest_json(self, tmp_path, monkeypatch):
+        headline = "EFCC arraigns former governor over N80bn fraud"
+        out = run_export(tmp_path, monkeypatch, {"Articles": [
+            article(1, Title=f"{headline} - Punch", Source="Punch", URL="https://punchng.com/a",
+                    **{"Risk Score": 40}),
+            article(2, Title=f"{headline} - Vanguard", Source="Vanguard",
+                    URL="https://vanguardngr.com/b", **{"Risk Score": 70}),
+            article(3, Title=f"{headline} - Premium Times", Source="Premium Times",
+                    URL="https://premiumtimesng.com/c", **{"Risk Score": 50}),
+            article(4),
+        ]})
+        rows = json.loads((out / "latest.json").read_text())
+        assert len(rows) == 2
+        kept = [r for r in rows if "EFCC" in r["Title"]][0]
+        assert kept["URL"] == "https://vanguardngr.com/b"
+        assert sorted(a["url"] for a in kept["Also Reported"]) == [
+            "https://premiumtimesng.com/c", "https://punchng.com/a"]
+        other = [r for r in rows if "Dangote" in r["Title"]][0]
+        assert "Also Reported" not in other
+
     def test_a_modest_shrink_is_written(self, tmp_path, monkeypatch):
         seed_file(tmp_path, "latest.json", 20)
         out = run_export(tmp_path, monkeypatch,
-                         {"Articles": [article(i) for i in range(8)]})
+                         {"Articles": [article(i, Title=t) for i, t in enumerate(DISTINCT)]})
         assert len(json.loads((out / "latest.json").read_text())) == 8
+
+
+class TestCollapseStoryCopies:
+    HEADLINE = "EFCC arraigns former governor over N80bn fraud"
+
+    def copies(self):
+        return [
+            article(1, Title=f"{self.HEADLINE} - Punch", Source="Punch",
+                    URL="https://punchng.com/a", **{"Risk Score": 40}),
+            article(2, Title=f"{self.HEADLINE} - Vanguard", Source="Vanguard",
+                    URL="https://vanguardngr.com/b", **{"Risk Score": 70}),
+            article(3, Title=f"{self.HEADLINE} - Premium Times", Source="Premium Times",
+                    URL="https://premiumtimesng.com/c", **{"Risk Score": 50}),
+        ]
+
+    def test_three_outlets_become_one_row_keeping_the_highest_risk(self):
+        out = collapse_story_copies(self.copies())
+        assert len(out) == 1
+        assert out[0]["URL"] == "https://vanguardngr.com/b"
+        assert out[0]["Also Reported"] == [
+            {"outlet": "Punch", "url": "https://punchng.com/a"},
+            {"outlet": "Premium Times", "url": "https://premiumtimesng.com/c"},
+        ]
+
+    def test_ties_keep_the_first_row_and_inputs_are_not_mutated(self):
+        rows = self.copies()
+        for r in rows:
+            r["Risk Score"] = 50
+        out = collapse_story_copies(rows)
+        assert out[0]["URL"] == "https://punchng.com/a"
+        assert all("Also Reported" not in r for r in rows)
+
+    def test_different_stories_and_unreadable_rows_are_left_alone(self):
+        rows = [article(1), article(2, Title="CBN raises MPR to 27.5%", URL="https://x.ng/m"),
+                {"Title": "no url"}]
+        assert collapse_story_copies(rows) == rows

@@ -827,6 +827,7 @@ from backend.app.services.analytics import entity_key  # noqa: E402,F401  (re-ex
 from backend.app.pipeline.rows import (  # noqa: E402,F401  (re-export)
     build_history,
     build_sources,
+    collapse_story_copies,
     collapse_identical_rows,
     dedupe_entity_rows,
     make_node_id,
@@ -1011,7 +1012,9 @@ def export_static_json_database():
         for stored_title, reason in suppressed[:20]:
             logger.warning(f"  [{reason.topic}] {stored_title}")
 
-    articles_sorted = published
+    # Several outlets' copies of one story publish as one row listing the
+    # others, rather than as the same story several times over.
+    articles_sorted = collapse_story_copies(published)
 
     # Entities extracted from those same articles are filtered too. The company
     # table had accumulated "Premier League", "Serie A", "BBNaija" and
