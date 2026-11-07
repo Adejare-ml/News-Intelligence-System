@@ -1,7 +1,7 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost as follow, onRequest as followOther } from "./follow.ts";
-import { onRequestGet as unsubscribe } from "./unsubscribe.ts";
+import { onRequestPost as unsubscribe } from "./unsubscribe.ts";
 import { onRequestGet as confirmGet, onRequestPost as confirmPost } from "./follow-confirm.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import { followStore, MAX_FOLLOWS } from "../_lib/follows.ts";
@@ -155,14 +155,14 @@ test("without JavaScript the form gets a readable page, not raw JSON", async () 
 test("unsubscribing deletes follows, so signing up again starts with none", async () => {
   const e = env();
   await followStore(e.DB).add(T("a"), "mtn-nigeria", "2026-11-06T07:00:00Z");
-  await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`), env: e });
+  await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`, { method: "POST" }), env: e });
   assert.deepEqual(await followStore(e.DB).list(T("a")), []);
 });
 
 test("unsubscribe still works before migration 0007 is applied", async () => {
   const e = env();
   e.DB.raw.exec("DROP TABLE follows");
-  const res = await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`), env: e });
+  const res = await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`, { method: "POST" }), env: e });
   assert.equal(res.status, 200);
   assert.equal(e.DB.raw.prepare("SELECT status FROM subscribers WHERE token = ?").get(T("a"))!.status, "unsubscribed");
 });
