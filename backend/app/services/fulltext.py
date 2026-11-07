@@ -76,9 +76,10 @@ class RobotsCache:
             logger.info(f"robots.txt unreadable for {host} ({type(exc).__name__}); not fetching there.")
             parser.disallow_all = True
             return parser
-        # The standard library's own reading of status codes: refused means
-        # stay out, missing means nothing is disallowed.
-        if resp.status_code in (401, 403):
+        # The standard library's own reading of status codes (RFC 9309):
+        # refused or a failing server means stay out, missing means nothing
+        # is disallowed.
+        if resp.status_code in (401, 403) or resp.status_code >= 500:
             parser.disallow_all = True
         elif resp.status_code >= 400:
             parser.allow_all = True

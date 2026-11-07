@@ -174,6 +174,9 @@ def test_robots_txt_is_read_once_per_host_with_a_short_timeout():
 @pytest.mark.parametrize("response, allowed", [
     (FakeResponse("", status=404), True),   # no robots.txt: nothing is disallowed
     (FakeResponse("", status=403), False),  # robots.txt itself refused: stay out
+    # The server is failing: RFC 9309 says assume everything is disallowed.
+    (FakeResponse("", status=500), False),
+    (FakeResponse("", status=503), False),
 ])
 def test_robots_txt_status_codes(response, allowed):
     robots = fulltext.RobotsCache(get=lambda url, **k: response)
