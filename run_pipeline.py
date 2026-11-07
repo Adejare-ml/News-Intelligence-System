@@ -1034,9 +1034,10 @@ def export_static_json_database():
     # and not quarantined. Withheld rows stay in the sheet for review, and
     # only their counts are published.
     # Rows saved before rows carried their article get it back when exactly
-    # one stored article names both the person and the company.
+    # one stored article names both the person and the company. Only the
+    # scrubbed articles qualify, or a row could get a hidden name as its title.
     try:
-        psc_records = register_quality.backfill_sources(psc_records, db.get_articles())
+        psc_records = register_quality.backfill_sources(psc_records, articles)
     except Exception as exc:
         logger.warning(f"PSC source backfill skipped ({type(exc).__name__})")
     psc_checked = register_quality.gate(collapse_identical_rows(psc_records))

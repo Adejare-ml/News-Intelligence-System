@@ -110,7 +110,8 @@ def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch
     d._init_db()
     today = datetime.utcnow().strftime("%Y-%m-%d")
     stories = [("Tolu Bakare takes control of Ikeja Mills", "Tolu Bakare|Ikeja Mills"),
-               ("Dangote Cement posts results", "Dangote Cement")]
+               ("Dangote Cement posts results", "Dangote Cement"),
+               ("Tolu Bakare sells Ikeja Mills stake to Ann Okafor", "Ikeja Mills")]
     for i, (title, ents) in enumerate(stories):
         d._append_row("Articles", {"ID": i + 1, "Time": f"{today}T07:00:00Z", "Title": title,
                                    "Source": "The Punch", "URL": f"https://punchng.com/{i}",
@@ -123,6 +124,10 @@ def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch
     d._append_row("Significant Control", {"Person Name": "Chief Tolu Bakare", "Company": "Ikeja Mills",
                                           "Percentage": "60%", "Date": today,
                                           "Source URL": "https://punchng.com/0", "Source Title": "x"})
+    # Saved before rows carried their article: the source backfill must not
+    # give it the one story that names the hidden person.
+    d._append_row("Significant Control", {"Person Name": "Ann Okafor", "Company": "Ikeja Mills",
+                                          "Percentage": "20%", "Date": today})
     d._append_row("Alerts", {"Date": today, "Title": "Tolu Bakare takes control of Ikeja Mills",
                              "URL": "https://punchng.com/0", "Risk Score": 70, "Entities": "Tolu Bakare"})
 
