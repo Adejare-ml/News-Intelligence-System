@@ -6,7 +6,7 @@
  * hidden because a request failed. Each pipeline run commits new data, and
  * that commit triggers a rebuild.
  */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Article } from "./stories.ts";
 import { publicRecords, type PscRecord } from "./psc.ts";
@@ -37,6 +37,13 @@ export function readJson<T>(name: string, fallback: T): T {
 export function readText(name: string): string {
   const path = resolve(DATA_DIR, name);
   return existsSync(path) ? readFileSync(path, "utf-8") : "";
+}
+
+/** Every file in digests/ (sent Morning Brief editions), parsed; lib/morning.ts decides which are editions. */
+export function sentDigests(): unknown[] {
+  const dir = resolve(DATA_DIR, "digests");
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => readJson<unknown>(`digests/${f}`, null));
 }
 
 export const articles = () => readJson<Article[]>("latest.json", []);
