@@ -14,7 +14,7 @@ import type { EmailDigest } from "../../../lib/digest.ts";
 import { morningEditions, morningUrl, whatsappUrl } from "../../../lib/morning.ts";
 
 export function getStaticPaths() {
-  return morningEditions(data.sentDigests(), data.readJson<unknown>("email_digest.json", null))
+  return morningEditions(data.sentDigests(), data.emailDigest())
     .map((digest) => ({ params: { edition: digest.edition }, props: { digest } }));
 }
 

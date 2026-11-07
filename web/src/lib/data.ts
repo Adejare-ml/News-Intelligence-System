@@ -43,11 +43,19 @@ export function readText(name: string): string {
   return existsSync(path) ? readFileSync(path, "utf-8") : "";
 }
 
-/** Every file in digests/ (sent Morning Brief editions), parsed; lib/morning.ts decides which are editions. */
+/**
+ * Every file in digests/ (sent Morning Brief editions), parsed, without the
+ * items that name an unpublished entity (as emailDigest below); lib/morning.ts
+ * decides which are editions.
+ */
 export function sentDigests(): unknown[] {
   const dir = resolve(DATA_DIR, "digests");
   if (!existsSync(dir)) return [];
-  return readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => readJson<unknown>(`digests/${f}`, null));
+  const names = hidden();
+  return readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => {
+    const raw = readJson<unknown>(`digests/${f}`, null);
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? scrubDigest(raw as Record<string, unknown>, names) : raw;
+  });
 }
 
 /**

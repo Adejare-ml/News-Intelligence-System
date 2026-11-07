@@ -11,7 +11,7 @@ import { href } from "../../../lib/url.ts";
 import { plural } from "../../../lib/digest.ts";
 import { morningEditions } from "../../../lib/morning.ts";
 
-const editions = morningEditions(data.sentDigests(), data.readJson<unknown>("email_digest.json", null));
+const editions = morningEditions(data.sentDigests(), data.emailDigest());
 ---
 <Base
   title="Morning Brief archive · AURA"
