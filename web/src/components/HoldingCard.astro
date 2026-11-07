@@ -1,6 +1,7 @@
 ---
 import Chain from "./Chain.astro";
 import Provenance from "./Provenance.astro";
+import OfficialLinks from "./OfficialLinks.astro";
 import { href } from "../lib/url.ts";
 import { slugify } from "../lib/entity-key.ts";
 import { describeHolding, type Holding } from "../lib/psc.ts";
@@ -49,6 +50,8 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
   </div>
 
   <Provenance holding={h} />
+
+  <OfficialLinks company={h.company} collapsed />
 
   <footer class="meta">
     <span>

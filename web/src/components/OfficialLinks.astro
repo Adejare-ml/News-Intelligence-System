@@ -1,0 +1,80 @@
+---
+import { officialLinks } from "../lib/official-links.ts";
+
+interface Props {
+  company: string;
+  /** Folded behind a summary, for cards in a long list. */
+  collapsed?: boolean;
+}
+const { company, collapsed = false } = Astro.props;
+const links = officialLinks(company);
+---
+{links.length > 0 && (
+  collapsed ? (
+    <details class="official">
+      <summary>Check official records</summary>
+      <ul>
+        {links.map((l) => (
+          <li class:list={{ emphasis: l.emphasis }}>
+            <a href={l.href} target="_blank" rel="noopener noreferrer" title={l.note}>{l.label}<span class="sr-only"> (opens in a new tab)</span></a>
+            {l.emphasis && <span class="hint">public company: check first</span>}
+          </li>
+        ))}
+      </ul>
+    </details>
+  ) : (
+    <div class="official open">
+      <ul>
+        {links.map((l) => (
+          <li class:list={{ emphasis: l.emphasis }}>
+            <span>
+              <a href={l.href} target="_blank" rel="noopener noreferrer">{l.label}<span class="sr-only"> (opens in a new tab)</span></a>
+              {l.emphasis && <span class="hint">public company: check first</span>}
+            </span>
+            <span class="meta">{l.note}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+)}
+
+<style>
+  .official ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+  .official summary {
+    cursor: pointer;
+    font-size: 0.84rem;
+    color: var(--muted);
+  }
+  details.official ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    padding-top: 8px;
+    font-size: 0.84rem;
+  }
+  .official a {
+    color: var(--royal-ink);
+    font-weight: 560;
+  }
+  .official.open li {
+    display: grid;
+    gap: 2px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .official .emphasis a {
+    color: var(--gold);
+  }
+  .official .hint {
+    margin-left: 6px;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+</style>
