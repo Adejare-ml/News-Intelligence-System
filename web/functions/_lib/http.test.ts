@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { validEmail, newToken } from "./http.ts";
+import { validEmail, newToken, json, page } from "./http.ts";
 import { confirmationMail, sendingEnabled } from "./mailer.ts";
 
 test("emails are validated and normalised", () => {
@@ -31,4 +31,16 @@ test("confirmation mail links to confirm and to leave", () => {
   const m = confirmationMail("https://auranews.pages.dev", "a@b.com", "f".repeat(48));
   assert.ok(m.html.includes("/api/confirm?token="));
   assert.ok(m.text.includes("/api/unsubscribe?token="));
+});
+
+test("Function pages and JSON carry the security headers", () => {
+  for (const res of [page("t", "m"), json({ ok: true }), json({ error: "x" }, 405, { Allow: "POST" })]) {
+    const h = res.headers;
+    assert.equal(h.get("Content-Security-Policy"), "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'");
+    assert.match(h.get("Strict-Transport-Security") ?? "", /^max-age=\d{8,}/);
+    assert.equal(h.get("X-Content-Type-Options"), "nosniff");
+    assert.equal(h.get("Referrer-Policy"), "no-referrer");
+    assert.equal(h.get("Cache-Control"), "no-store");
+  }
+  assert.equal(json({}, 405, { Allow: "POST" }).headers.get("Allow"), "POST");
 });

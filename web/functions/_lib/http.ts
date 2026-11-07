@@ -44,10 +44,21 @@ export interface Ctx {
   waitUntil?: (p: Promise<unknown>) => void;
 }
 
+/**
+ * Sent with every Function response. The pages are self-contained: inline
+ * styles, no scripts, no images, and forms that post only back to this site.
+ */
+const SECURITY_HEADERS = {
+  "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "no-referrer",
+};
+
 export function json(body: unknown, status = 200, headers: Record<string, string> = {}): Response {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store", ...headers },
+    headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store", ...SECURITY_HEADERS, ...headers },
   });
 }
 
@@ -65,7 +76,7 @@ label{display:flex;gap:10px;align-items:center;padding:6px 0;cursor:pointer}inpu
 button{font:600 15px system-ui;background:#d4a84a;color:#0b0d14;border:0;border-radius:999px;padding:12px 22px;cursor:pointer}
 .hint{font-size:.85rem;color:#8f887b;margin:4px 0 0}</style></head>
 <body><main><h1>${esc(title)}</h1><p>${esc(message)}</p>${extraHtml}<p><a href="/">Back to AURA</a></p></main></body></html>`;
-  return new Response(html, { status, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" } });
+  return new Response(html, { status, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", ...SECURITY_HEADERS } });
 }
 
 const EMAIL_RE = /^[^\s@"<>]{1,64}@[^\s@"<>]{1,190}\.[a-z]{2,24}$/i;
