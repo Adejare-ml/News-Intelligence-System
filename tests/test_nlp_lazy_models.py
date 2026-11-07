@@ -2,13 +2,38 @@
 not at import: every pipeline run imports nlp_pipeline (for clean_html)
 and was paying for two model loads it mostly never used.
 """
-import importlib
+import os
+import subprocess
 import sys
 import types
 
 import pytest
 
 import backend.app.services.nlp_pipeline as nlp_pipeline
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# A fresh interpreter, so the import really runs (reloading the module in
+# this process would hand other modules a stale NLPPipelineService).
+IMPORT_PROBE = """
+import sys, types
+built = []
+st = types.ModuleType("sentence_transformers")
+st.SentenceTransformer = lambda *a, **k: built.append("embedder")
+tf = types.ModuleType("transformers")
+tf.pipeline = lambda *a, **k: built.append("classifier")
+sp = types.ModuleType("spacy")
+sp.load = lambda *a, **k: None
+sys.modules.update({"sentence_transformers": st, "transformers": tf, "spacy": sp})
+import backend.app.services.nlp_pipeline
+print(built)
+"""
+
+
+def test_import_loads_neither_model():
+    out = subprocess.run([sys.executable, "-c", IMPORT_PROBE], cwd=ROOT,
+                         capture_output=True, text=True, check=True)
+    assert out.stdout.strip().splitlines()[-1] == "[]"
 
 
 @pytest.fixture
@@ -33,16 +58,9 @@ def fake_models(monkeypatch):
     tf.pipeline = fake_pipeline
     monkeypatch.setitem(sys.modules, "sentence_transformers", st)
     monkeypatch.setitem(sys.modules, "transformers", tf)
-    importlib.reload(nlp_pipeline)
-    yield built
-    # Put the real (or conftest-mocked) modules back and reload, so no
-    # fake model stays cached for the rest of the suite.
-    monkeypatch.undo()
-    importlib.reload(nlp_pipeline)
-
-
-def test_import_loads_neither_model(fake_models):
-    assert fake_models == {"embedder": 0, "classifier": 0}
+    monkeypatch.setattr(nlp_pipeline, "_embedding_model", nlp_pipeline._UNLOADED)
+    monkeypatch.setattr(nlp_pipeline, "_classifier_pipeline", nlp_pipeline._UNLOADED)
+    return built
 
 
 def test_each_model_loads_once_on_first_use(fake_models):
