@@ -117,3 +117,18 @@ class TestSheetColumns:
         from backend.app.db.excel_db import SHEETS_CONFIG
         columns = SHEETS_CONFIG["Significant Control"]
         assert "Basis" in columns and "Approved" in columns
+
+
+class TestBriefOwnershipLines:
+    def test_each_line_says_how_strong_the_claim_is(self):
+        from backend.app.services import email_digest
+        rows = [
+            {"Person Name": "Abubakar Musa", "Company": "Kano Flour Mills", "Percentage": "12%",
+             "Source URL": "https://punchng.com/a", "Publisher": "The Punch", "Date": "2026-10-31",
+             "Confidence": "Full article"},
+            # An export written before tiers existed: the weakest tier, never none.
+            {"Person Name": "Heirs Holdings", "Company": "Transcorp", "Percentage": "25%",
+             "Source URL": "https://punchng.com/b", "Publisher": "The Punch", "Date": "2026-10-31"},
+        ]
+        lines, _, _ = email_digest.psc_lines(rows, since=None)
+        assert sorted(line["confidence"] for line in lines) == ["Full article", "Headline only"]
