@@ -1,7 +1,7 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { slugify, matchesSlug, nameKey } from "./entity-key.ts";
-import { cleanTitle, parseTime, rankStories, toStory, relativeTime, publisherName, isNearDuplicate, storiesInDay } from "./stories.ts";
+import { cleanTitle, parseTime, rankStories, toStory, relativeTime, publisherName, isNearDuplicate, storiesInDay, clip } from "./stories.ts";
 import { parseBrief, inlineHtml, isQuietItem } from "./brief.ts";
 import { nextRunAfter, isStale, editionName } from "./edition.ts";
 
@@ -90,6 +90,21 @@ describe("stories", () => {
     assert.equal(relativeTime(new Date("2026-10-21T09:00:00Z"), now), "3h ago");
     assert.equal(relativeTime(new Date("2026-10-20T08:00:00Z"), now), "Yesterday");
     assert.equal(relativeTime(null, now), "");
+  });
+  test("why it matters is carried only when the article has one, clipped at a word", () => {
+    assert.equal(toStory({ Title: "A" }).whyItMatters, "");
+    assert.equal(toStory({ Title: "A", "Why It Matters": "  Sets a capital floor.  " }).whyItMatters, "Sets a capital floor.");
+    const long = "The capital requirement sets a financial threshold for issuers of dollar stablecoins operating in Nigeria, which bears on regulatory oversight of digital asset activity across the market.";
+    const clipped = toStory({ Title: "A", "Why It Matters": long }).whyItMatters;
+    assert.ok(clipped.length <= 160, clipped);
+    assert.ok(clipped.endsWith("…"));
+    assert.ok(long.startsWith(clipped.slice(0, -1)));
+    assert.ok(!/\s…$/.test(clipped), "no space before the ellipsis");
+  });
+  test("clip leaves short text alone and cuts long text at a word boundary", () => {
+    assert.equal(clip("short", 10), "short");
+    assert.equal(clip("one two three four", 12), "one two…");
+    assert.equal(clip("one, two three", 9), "one…");
   });
 });
 
