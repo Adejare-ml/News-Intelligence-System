@@ -52,4 +52,10 @@ const tabs = CATEGORIES.map((c) => ({
     border-color: var(--gold);
     color: var(--text);
   }
+  @media (forced-colors: active) {
+    .tab[aria-current="page"] {
+      outline: 2px solid Highlight;
+      outline-offset: 2px;
+    }
+  }
 </style>

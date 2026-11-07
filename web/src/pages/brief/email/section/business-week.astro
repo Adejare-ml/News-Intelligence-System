@@ -1,0 +1,42 @@
+---
+/**
+ * The week in business, for Morning Brief readers who chose Business once a
+ * week: the Sunday weekly wrap as email rows. /api/send-brief puts it in on
+ * Mondays in place of the daily brief, while the wrap is fresh.
+ */
+import { weeklyWrap } from "../../../../lib/data.ts";
+import { wrapBlocks } from "../../../../lib/weekly-email.ts";
+import { ink, muted, gold, royal, rule, sans } from "../../../../components/email/theme.ts";
+
+const wrap = weeklyWrap();
+const blocks = wrapBlocks(wrap.markdown ?? "");
+const site = (Astro.site?.toString() ?? "https://auranews.pages.dev/").replace(/\/$/, "") + import.meta.env.BASE_URL.replace(/\/$/, "");
+const label = `padding:22px 32px 6px;font:700 11px/1.4 ${sans};letter-spacing:2px;text-transform:uppercase;color:${gold};border-top:1px solid ${rule};`;
+const sub = `padding:10px 32px 2px;font:600 10px/1.4 ${sans};letter-spacing:1.5px;text-transform:uppercase;color:${muted};`;
+const marker = (text: string) => `<!--${text}-->`;
+---
+<meta name="robots" content="noindex" />
+<meta name="aura-generated" content={wrap.generated ?? ""} />
+<meta name="aura-week" content={wrap.week_start && wrap.week_end ? `${wrap.week_start} to ${wrap.week_end}` : ""} />
+<table role="presentation">
+<Fragment set:html={marker("aura:section")} />
+{blocks.length > 0 && (
+  <>
+    <tr><td style={label}>The week in business · {wrap.week_start} to {wrap.week_end}</td></tr>
+    {blocks.map((b) => (
+      <>
+        <tr><td style={sub}>{b.heading}</td></tr>
+        {b.lines.map((l) => (
+          <tr><td style={`padding:4px 32px;font:14px/1.55 ${sans};color:${ink};`}>
+            {l.bold && <strong>{l.bold}</strong>} {l.rest}
+          </td></tr>
+        ))}
+      </>
+    ))}
+    <tr><td style={`padding:8px 32px 10px;font:13px/1.5 ${sans};`}>
+      <a href={`${site}/brief/`} style={`color:${royal};text-decoration:none;font-weight:600;`}>The daily briefs and registers on AURA ↗</a>
+    </td></tr>
+  </>
+)}
+<Fragment set:html={marker("/aura:section")} />
+</table>

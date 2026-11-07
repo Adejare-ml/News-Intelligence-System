@@ -1,9 +1,11 @@
 import { test, beforeEach, afterEach, mock } from "node:test";
 import assert from "node:assert/strict";
 import {
-  buildFor, composeEmail, extractSection, filterRegions, groupRecipients, hoursOld, isDue, onRequestPost, SECTIONS_SLOT,
+  buildFor, composeEmail, extractSection, filterRegions, groupRecipients, hasHeadlines, hoursOld, isDue, onRequestPost, SECTIONS_SLOT,
   type Templates,
 } from "./send-brief.ts";
+import { smtpTransport } from "../_lib/mailer.ts";
+import { fakeSmtp } from "../_lib/smtp-fake.test.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import type { Env } from "../_lib/http.ts";
 import type { Subscriber } from "../_lib/subscribers.ts";
@@ -16,9 +18,15 @@ const MONDAY = new Date("2026-11-09T06:10:00Z");
 const BUSINESS = `<!doctype html><html><head><meta name="aura-edition" content="ed-1106" /><meta name="aura-subject" content="AURA Morning Brief · Friday 6 November" /></head>
 <body><table><tr><td>BUSINESS STORIES</td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
 const SHELL = `<!doctype html><html><head><meta name="aura-subject" content="AURA Morning Brief · Friday 6 November" /></head>
-<body><table><tr><td>MASTHEAD</td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
-const section = (name: string, generated = "2026-11-06 05:00:00") => `<!DOCTYPE html><meta name="aura-generated" content="${generated}" /><table>
-<!--aura:section--><tr><td>${name.toUpperCase()}</td></tr><!--region:nigeria--><tr><td>${name} NG</td></tr><!--/region:nigeria--><!--region:global--><tr><td>${name} WORLD</td></tr><!--/region:global--><!--/aura:section--></table>`;
+<body><table><tr><td>MASTHEAD <!--aura:intro-->The headlines you chose<!--/aura:intro--></td></tr><tr><td><!--aura:source-->Google News<!--/aura:source--></td></tr>${SECTIONS_SLOT}<tr><td><a href="{{preferences_url}}">Change topics</a> <a href="{{unsubscribe_url}}">Unsubscribe</a></td></tr></table></body></html>`;
+const section = (name: string, generated = "2026-11-06 05:00:00", empty: string[] = []) => {
+  const region = (id: string, label: string) =>
+    `<!--region:${id}-->${empty.includes(id) ? "<!--empty--><tr><td>none</td></tr>" : `<tr><td>${name} ${label}</td></tr>`}<!--/region:${id}-->`;
+  return `<!DOCTYPE html><meta name="aura-generated" content="${generated}" /><table>
+<!--aura:section--><tr><td>${name.toUpperCase()}</td></tr>${region("nigeria", "NG")}${region("global", "WORLD")}<!--/aura:section--></table>`;
+};
+const WEEK = (generated = "2026-11-08 21:00:00") => `<!DOCTYPE html><meta name="aura-generated" content="${generated}" /><meta name="aura-week" content="2026-11-02 to 2026-11-08" /><table>
+<!--aura:section--><tr><td>WEEK IN BUSINESS</td></tr><!--/aura:section--></table>`;
 
 const T = (c: string) => c.repeat(48);
 
@@ -79,7 +87,8 @@ const byRecipient = () => Object.fromEntries(batches.flat().map((m) => [m.to[0],
 test("each reader gets the mix they chose, built once per mix", async () => {
   const body = await (await call(env())).json();
   assert.equal(body.sent, 4);
-  assert.equal(batches.length, 3, "business, sports-global and business+politics: one batch each");
+  assert.equal(batches.length, 1, "three different mixes share one provider batch");
+  assert.equal(new Set(batches[0].map((m) => m.subject + m.html.length)).size, 3, "three distinct emails");
   const got = byRecipient();
 
   assert.match(got["biz@x.co"].html, /BUSINESS STORIES/);
@@ -163,4 +172,85 @@ test("pure helpers", () => {
   assert.deepEqual(groups.map((g) => [g.key, g.readers.length]), [["business|-", 2], ["sports|global", 1]]);
   const t: Templates = { business: null, shell: { html: SHELL, subject: "S" }, sections: {} };
   assert.equal(buildFor({ categories: ["sports"], region: "global", frequency: "daily" }, t, true), null, "nothing fresh, nothing sent");
+});
+
+test("a category with no headlines in the reader's regions is left out", async () => {
+  // Sports has only international headlines today; politics has both.
+  const e = env({ "/brief/email/section/sports/": section("sports", "2026-11-06 05:00:00", ["nigeria"]) });
+  addSubscriber(e.DB, { email: "ngsport@x.co", token: T("9"), categories: "sports", region: "nigeria" });
+  addSubscriber(e.DB, { email: "ngmix@x.co", token: T("8"), categories: "sports,politics", region: "nigeria" });
+  await call(e);
+  const got = byRecipient();
+  assert.equal(got["ngsport@x.co"], undefined, "nothing new for them: no email");
+  assert.doesNotMatch(got["ngmix@x.co"].html, /SPORTS/);
+  assert.match(got["ngmix@x.co"].html, /politics NG/);
+  assert.equal(got["ngmix@x.co"].subject, "AURA Morning Brief · Friday 6 November · Politics");
+  assert.match(got["sport@x.co"].html, /sports WORLD/, "global readers still get sports");
+});
+
+test("weekly Business readers get the week in business on Mondays", async () => {
+  mock.timers.setTime(MONDAY.getTime());
+  const e = env({
+    "/brief/email/section/business-week/": WEEK(),
+    "/brief/email/section/politics/": section("politics", "2026-11-09 05:00:00"),
+  });
+  addSubscriber(e.DB, { email: "wbiz@x.co", token: T("7"), categories: "business,politics", region: "nigeria", frequency: "weekly" });
+  await call(e);
+  const got = byRecipient();
+  const w = got["wbiz@x.co"];
+  assert.match(w.html, /MASTHEAD[\s\S]*WEEK IN BUSINESS[\s\S]*politics NG/);
+  assert.doesNotMatch(w.html, /BUSINESS STORIES/, "the week, not just Monday's brief");
+  assert.match(w.html, /AURA’s own records, then the headlines you chose/);
+  assert.match(w.html, /pipeline records[^<]*Google News/);
+  assert.equal(w.subject, "AURA Morning Brief · Friday 6 November · The week in business and Politics");
+  assert.match(got["biz@x.co"].html, /BUSINESS STORIES/, "daily readers still get the daily brief");
+});
+
+test("weekly Business readers fall back to Monday's brief when the wrap is stale", async () => {
+  mock.timers.setTime(MONDAY.getTime());
+  const e = env({ "/brief/email/section/business-week/": WEEK("2026-11-01 21:00:00") });
+  addSubscriber(e.DB, { email: "wbiz@x.co", token: T("7"), categories: "business", frequency: "weekly" });
+  await call(e);
+  assert.match(byRecipient()["wbiz@x.co"].html, /BUSINESS STORIES/);
+});
+
+test("a week-only email says where it comes from, not Google News", async () => {
+  mock.timers.setTime(MONDAY.getTime());
+  const e = env({ "/brief/email/section/business-week/": WEEK() });
+  addSubscriber(e.DB, { email: "wonly@x.co", token: T("6"), categories: "business", frequency: "weekly" });
+  await call(e);
+  const html = byRecipient()["wonly@x.co"].html;
+  assert.match(html, /AURA’s own records\./);
+  assert.doesNotMatch(html, /Google News|headlines you chose/);
+});
+
+test("gmail: one session and one daily cap across every mix", async () => {
+  const server = fakeSmtp({ password: "abcdefghijklmnop" });
+  const realOpen = smtpTransport.open;
+  let sessions = 0;
+  smtpTransport.open = () => { sessions++; return server.open; };
+  try {
+    const e = { ...env(), EMAIL_PROVIDER: "gmail", RESEND_API_KEY: undefined, MAIL_FROM: undefined, GMAIL_USER: "me@gmail.com", GMAIL_APP_PASSWORD: "abcdefghijklmnop" } as Env;
+    const db = (e as unknown as { DB: ReturnType<typeof sqliteD1> }).DB;
+    // 460 business readers plus the fixture's mixes: well over the cap of 450 in total.
+    const insert = db.raw.prepare("INSERT INTO subscribers (email, token, status, created_at) VALUES (?, ?, 'confirmed', 'x')");
+    for (let i = 0; i < 460; i++) insert.run(`r${i}@x.co`, i.toString(16).padStart(48, "0"));
+    const body = await (await call(e)).json();
+    assert.equal(sessions, 1);
+    assert.equal(server.delivered.length, 450);
+    assert.equal(body.sent, 450);
+    assert.equal(body.failed, body.recipients - 450);
+    assert.match(body.error, /Gmail daily cap/);
+    assert.doesNotMatch(body.error, /^;/);
+  } finally {
+    smtpTransport.open = realOpen;
+  }
+});
+
+test("hasHeadlines and $ in headlines", () => {
+  const s = extractSection(section("x", "", ["nigeria"]));
+  assert.equal(hasHeadlines(s, ["nigeria"]), false);
+  assert.equal(hasHeadlines(s, ["global"]), true);
+  assert.equal(hasHeadlines(s, ["nigeria", "global"]), true);
+  assert.equal(composeEmail(`a${SECTIONS_SLOT}b`, ["N1,600/$&#39; and $& and $\`"]), "aN1,600/$&#39; and $& and $\`b");
 });

@@ -2,7 +2,8 @@
 /**
  * The Morning Brief for readers who did not choose Business: masthead,
  * the sections slot and the footer. /api/send-brief fills the slot with
- * their chosen category sections.
+ * their chosen category sections, and rewrites the marked intro and source
+ * lines when the email carries the week in business.
  */
 import { lagosDate } from "../../../lib/edition.ts";
 import { ink, muted, gold, rule, sans, serif, page, card, SECTIONS_SLOT } from "../../../components/email/theme.ts";
@@ -28,10 +29,10 @@ const msoClose = "<!--[if mso]></td></tr></table><![endif]-->";
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style={`max-width:600px;width:100%;background:${card};border-radius:14px;`}>
           <tr><td style={`padding:32px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>AURA · THE MORNING BRIEF</td></tr>
           <tr><td style={`padding:0 32px;font:500 30px/1.15 ${serif};color:${ink};`}>{today}</td></tr>
-          <tr><td style={`padding:10px 32px 16px;font:15px/1.6 ${sans};color:${muted};`}>The headlines you chose, from the outlets that reported them.</td></tr>
+          <tr><td style={`padding:10px 32px 16px;font:15px/1.6 ${sans};color:${muted};`}><Fragment set:html="<!--aura:intro-->" />The headlines you chose, from the outlets that reported them.<Fragment set:html="<!--/aura:intro-->" /></td></tr>
           <Fragment set:html={SECTIONS_SLOT} />
           <tr><td style={`padding:20px 32px 28px;font:12px/1.6 ${sans};color:${muted};border-top:1px solid ${rule};`}>
-            Headlines are collected automatically from Google News; each links to the outlet that published it.
+            <Fragment set:html="<!--aura:source-->" />Headlines are collected automatically from Google News; each links to the outlet that published it.<Fragment set:html="<!--/aura:source-->" />
             You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.{" "}
             <a href="{{preferences_url}}" style={`color:${muted};`}>Change topics</a>{" · "}
             <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.

@@ -12,7 +12,11 @@
  *   - Business readers: the brief page (/brief/email/);
  *   - everyone else: the shell page (/brief/email/shell/);
  *   - then each chosen headline category (/brief/email/section/<id>/) goes
- *     in at the sections slot, with only the regions the reader chose.
+ *     in at the sections slot, with only the regions the reader chose; a
+ *     category with no headlines in those regions is left out;
+ *   - weekly Business readers get the week in business (the Sunday weekly
+ *     wrap, /brief/email/section/business-week/) on Mondays instead of the
+ *     daily brief, while the wrap is fresh.
  *
  *   ?dry_run=1  report the edition, subject and recipient counts; send nothing
  *   ?test=1     send one copy to OWNER_EMAIL; record nothing. Add
@@ -23,7 +27,7 @@
  * who also chose headline categories still get those.
  */
 import { authorised, json, type Ctx, type Env } from "../_lib/http.ts";
-import { decodeEntities, htmlToText, preferencesUrl, sendBrief, sendingEnabled, unsubscribeUrl } from "../_lib/mailer.ts";
+import { decodeEntities, htmlToText, preferencesUrl, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl } from "../_lib/mailer.ts";
 import {
   categoryLabel, comboKey, editionsFor, headlineCategories, listLabels, parseCategories, parseRegion,
   type Edition, type HeadlineCategory, type Prefs,
@@ -36,6 +40,8 @@ export { sameSecret, authorised } from "../_lib/http.ts";
 export const SECTIONS_SLOT = "<!--aura:sections-->";
 /** Headlines older than this are left out rather than sent as news. */
 export const MAX_HEADLINE_AGE_HOURS = 36;
+/** The weekly wrap is built Sunday evening; on Monday morning it is about half a day old. */
+export const MAX_WRAP_AGE_HOURS = 48;
 
 export function lagosDay(now: Date): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Lagos", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
@@ -80,6 +86,13 @@ export function extractSection(html: string): string {
   return html.slice(start + "<!--aura:section-->".length, end).trim();
 }
 
+/** True when at least one of the kept regions has headlines (empty ones carry <!--empty-->). */
+export function hasHeadlines(section: string, keep: Edition[]): boolean {
+  const blocks = [...section.matchAll(/<!--region:(\w+)-->([\s\S]*?)<!--\/region:\1-->/g)];
+  if (!blocks.length) return section.trim() !== "";
+  return blocks.some(([, region, body]) => keep.includes(region as Edition) && !body.includes("<!--empty-->"));
+}
+
 /** Drops the region blocks the reader did not choose. */
 export function filterRegions(section: string, keep: Edition[]): string {
   return section.replace(/<!--region:(\w+)-->([\s\S]*?)<!--\/region:\1-->/g, (_m, region: string, body: string) =>
@@ -94,8 +107,23 @@ export function filterRegions(section: string, keep: Edition[]): string {
 export function composeEmail(base: string, sections: string[]): string {
   if (!sections.length) return base.replace(SECTIONS_SLOT, "");
   if (!base.includes(SECTIONS_SLOT)) throw new Error("The email template has no sections slot.");
-  return base.replace(SECTIONS_SLOT, sections.join("\n"));
+  // A replacer function, so "$&" or "$'" in a headline is never read as a pattern.
+  return base.replace(SECTIONS_SLOT, () => sections.join("\n"));
 }
+
+/** Replaces the text between <!--aura:NAME--> and <!--/aura:NAME--> (escaped by the caller). */
+export function replaceMarked(html: string, name: string, text: string): string {
+  const start = `<!--aura:${name}-->`;
+  const end = `<!--/aura:${name}-->`;
+  const a = html.indexOf(start);
+  const b = html.indexOf(end);
+  if (a === -1 || b === -1 || b < a) return html;
+  return html.slice(0, a + start.length) + text + html.slice(b);
+}
+
+const WEEK_INTRO = "The week in business from AURA’s own records";
+const WEEK_SOURCE = "The week in business is compiled automatically from AURA’s pipeline records; ownership items are press reports, not CAC records.";
+const HEADLINE_SOURCE = "Headlines are collected automatically from Google News; each links to the outlet that published it.";
 
 export interface Group {
   key: string;
@@ -103,11 +131,17 @@ export interface Group {
   readers: Subscriber[];
 }
 
+/** Weekly Business readers get different content (the week in business), so they group apart. */
+export function groupKey(prefs: Prefs): string {
+  const weeklyBusiness = prefs.frequency === "weekly" && prefs.categories.includes("business");
+  return comboKey(prefs) + (weeklyBusiness ? "|weekly" : "");
+}
+
 /** Readers with the same choices share one email. */
 export function groupRecipients(readers: Subscriber[]): Group[] {
   const groups = new Map<string, Group>();
   for (const r of readers) {
-    const key = comboKey(r);
+    const key = groupKey(r);
     const g = groups.get(key) ?? { key, prefs: { categories: r.categories, region: r.region, frequency: r.frequency }, readers: [] };
     g.readers.push(r);
     groups.set(key, g);
@@ -126,6 +160,8 @@ export interface Templates {
   business: { html: string; edition: string; subject: string } | null;
   shell: { html: string; subject: string };
   sections: Partial<Record<HeadlineCategory, string>>;
+  /** The week in business, when the weekly wrap is fresh. */
+  week?: { rows: string; label: string } | null;
 }
 
 async function fetchPage(env: Env, origin: string, path: string): Promise<string | null> {
@@ -133,7 +169,7 @@ async function fetchPage(env: Env, origin: string, path: string): Promise<string
   return res.ok ? stripScripts(await res.text()) : null;
 }
 
-export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCategory[], now: Date): Promise<Templates | string> {
+export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCategory[], now: Date, withWeek = false): Promise<Templates | string> {
   const businessHtml = await fetchPage(env, origin, "/brief/email/");
   if (!businessHtml) return "The email template page is missing.";
   const edition = readMeta(businessHtml, "aura-edition");
@@ -149,7 +185,16 @@ export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCa
     const rows = extractSection(html);
     if (rows) sections[category] = rows;
   }
+  let week: Templates["week"] = null;
+  if (withWeek) {
+    const html = await fetchPage(env, origin, "/brief/email/section/business-week/");
+    const rows = html ? extractSection(html) : "";
+    if (html && rows && hoursOld(readMeta(html, "aura-generated"), now) <= MAX_WRAP_AGE_HOURS) {
+      week = { rows, label: readMeta(html, "aura-week") };
+    }
+  }
   return {
+    week,
     business: { html: businessHtml, edition, subject: readMeta(businessHtml, "aura-subject") || "AURA Morning Brief" },
     shell: { html: shellHtml, subject: readMeta(shellHtml, "aura-subject") || "AURA Morning Brief" },
     sections,
@@ -162,14 +207,22 @@ export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCa
  */
 export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { subject: string; html: string; text: string } | null {
   const editions = editionsFor(prefs.region);
-  const chosen = headlineCategories(prefs).filter((c) => t.sections[c]);
+  const chosen = headlineCategories(prefs).filter((c) => t.sections[c] && hasHeadlines(t.sections[c]!, editions));
   const sections = chosen.map((c) => filterRegions(t.sections[c]!, editions));
-  const withBusiness = prefs.categories.includes("business") && businessFresh && t.business;
-  if (!withBusiness && !sections.length) return null;
-  const html = composeEmail(withBusiness ? t.business!.html : t.shell.html, sections);
-  const subject = withBusiness
-    ? t.business!.subject
-    : `${t.shell.subject} · ${listLabels(chosen.map(categoryLabel))}`;
+  const wantsBusiness = prefs.categories.includes("business");
+  // Weekly Business readers get the week in business when the wrap is fresh,
+  // else that Monday's brief like everyone else.
+  const week = wantsBusiness && prefs.frequency === "weekly" && t.week ? t.week : null;
+  const withBusiness = wantsBusiness && !week && businessFresh && t.business;
+  if (!withBusiness && !week && !sections.length) return null;
+  let base = withBusiness ? t.business!.html : t.shell.html;
+  if (week) {
+    base = replaceMarked(base, "intro", sections.length ? `${WEEK_INTRO}, then the headlines you chose.` : `${WEEK_INTRO}.`);
+    base = replaceMarked(base, "source", sections.length ? `${WEEK_SOURCE} ${HEADLINE_SOURCE}` : WEEK_SOURCE);
+  }
+  const html = composeEmail(base, week ? [week.rows, ...sections] : sections);
+  const labels = [...(week ? ["The week in business"] : []), ...chosen.map(categoryLabel)];
+  const subject = withBusiness ? t.business!.subject : `${t.shell.subject} · ${listLabels(labels)}`;
   return { subject, html, text: htmlToText(html) };
 }
 
@@ -194,9 +247,9 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
     const prefs: Prefs = {
       categories: categories.length ? categories : ["business"],
       region: parseRegion(url.searchParams.get("region")) ?? "nigeria",
-      frequency: "daily",
+      frequency: url.searchParams.get("frequency") === "weekly" ? "weekly" : "daily",
     };
-    const t = await loadTemplates(env, url.origin, headlineCategories(prefs), now);
+    const t = await loadTemplates(env, url.origin, headlineCategories(prefs), now, prefs.frequency === "weekly");
     if (typeof t === "string") return json({ error: t }, 500);
     const mail = buildFor(prefs, t, true);
     if (!mail) return json({ error: "Nothing to send for that mix: no fresh headlines." }, 409);
@@ -212,7 +265,8 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   const due = (await subscriberStore(env.DB).recipients()).filter((r) => isDue(r.frequency, now));
   const groups = groupRecipients(due);
   const wanted = [...new Set(groups.flatMap((g) => headlineCategories(g.prefs)))];
-  const t = await loadTemplates(env, url.origin, wanted, now);
+  const weekly = groups.some((g) => g.key.endsWith("|weekly"));
+  const t = await loadTemplates(env, url.origin, wanted, now, weekly);
   if (typeof t === "string") return json({ error: t }, 500);
   const edition = t.business!.edition;
   const sentOn = await log.sentOn(edition);
@@ -226,6 +280,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
     edition,
     business_fresh: businessFresh,
     headline_sections: Object.keys(t.sections),
+    week_in_business: Boolean(t.week),
     recipients,
     skipped_readers: due.length - recipients,
     groups: plan.map((p) => ({ mix: p.group.key, readers: p.group.readers.length, subject: p.mail?.subject ?? null })),
@@ -237,22 +292,19 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   }
 
   await log.start(day, edition, now.toISOString());
-  let sent = 0;
-  let failed = 0;
-  const errors: string[] = [];
-  for (const { group, mail } of sending) {
-    const result = await sendBrief(
-      env,
-      mail!,
-      group.readers.map((r) => ({ to: r.email, unsubscribe: unsubscribeUrl(site, r.token), preferences: preferencesUrl(site, r.token) })),
-    );
-    sent += result.sent;
-    failed += result.failed;
-    if (result.error) errors.push(result.error);
-  }
+  // Every group in one pass: one Gmail session under one daily cap, and
+  // shared provider batches however many distinct mixes there are.
+  const result = await sendBriefs(
+    env,
+    sending.map(({ group, mail }) => ({
+      brief: mail!,
+      recipients: group.readers.map((r) => ({ to: r.email, unsubscribe: unsubscribeUrl(site, r.token), preferences: preferencesUrl(site, r.token) })),
+    })),
+  );
+  const { sent, failed } = result;
   await log.finish(day, sent, failed, new Date().toISOString());
 
-  const body = { ...summary, sent, failed, ...(errors.length ? { error: errors.join("; ") } : {}) };
+  const body = { ...summary, sent, failed, ...(result.error ? { error: result.error } : {}) };
   return json(body, failed && !sent ? 502 : 200);
 }
 

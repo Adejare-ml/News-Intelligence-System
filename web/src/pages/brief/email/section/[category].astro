@@ -3,7 +3,8 @@
  * One headline category as rows for the Morning Brief email. /api/send-brief
  * reads the rows between the aura:section markers and inserts them at the
  * sections slot of the reader's email, keeping only the region blocks the
- * reader chose. Not a page anyone visits.
+ * reader chose. A region with no headlines carries <!--empty-->, so the
+ * sender can skip a category with nothing new. Not a page anyone visits.
  */
 import { HEADLINE_CATEGORIES, categoryLabel } from "../../../../../functions/_lib/categories.ts";
 import { categoryNews, type Headline } from "../../../../lib/data.ts";
@@ -42,7 +43,10 @@ const marker = (text: string) => `<!--${text}-->`;
         <div style={`font:12px/1.4 ${sans};color:${muted};margin-top:2px;`}>{h.source}</div>
       </td></tr>
     )) : (
-      <tr><td style={`padding:6px 32px;font:13px/1.5 ${sans};color:${muted};`}>No new headlines this morning.</td></tr>
+      <>
+        <Fragment set:html={marker("empty")} />
+        <tr><td style={`padding:6px 32px;font:13px/1.5 ${sans};color:${muted};`}>No new headlines this morning.</td></tr>
+      </>
     )}
     <Fragment set:html={marker(`/region:${r.id}`)} />
   </>

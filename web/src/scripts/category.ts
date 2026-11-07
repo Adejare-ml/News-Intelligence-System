@@ -14,5 +14,7 @@ function show(region: string): void {
 if (bar && buttons.length && panels.length) {
   bar.hidden = false;
   for (const b of buttons) b.addEventListener("click", () => show(b.dataset.regionBtn!));
-  show(buttons[0].dataset.regionBtn!);
+  // The page marks the edition to open on (the first with headlines).
+  const start = buttons.find((b) => b.getAttribute("aria-pressed") === "true") ?? buttons[0];
+  show(start.dataset.regionBtn!);
 }
