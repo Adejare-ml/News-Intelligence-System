@@ -6,7 +6,6 @@ import logging
 import argparse
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
-from urllib.parse import urlparse
 
 # Adjust sys.path to find backend module
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +30,7 @@ from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import analytics, images as article_images, relevance
 from backend.app.services import register_quality
 from backend.app.services import story_detail
-from backend.app.services import claude_llm
+from backend.app.services import fulltext
 from backend.app.services import email_digest
 from backend.app.pipeline import side_feeds
 from backend.app.db.excel_db import db
@@ -247,6 +246,7 @@ def run_pipeline(seed: bool = False):
     cascade_failures = 0
     consecutive_failures = 0
     rejected_count = 0
+    fulltext_fetcher = fulltext.FullTextFetcher()
 
     for item in candidates:
         url = item.get("url")
@@ -301,21 +301,9 @@ def run_pipeline(seed: bool = False):
 
         logger.info(f"Analyzing: '{title}' ({source})")
 
-        # Google News gives only the headline and a feed snippet. When Claude
-        # is configured, look the outlet's own article up on the web (a few
-        # per run), so extraction, key facts and the email read the full
-        # report. The row keeps its Google News URL, which is what later
-        # runs deduplicate on.
-        if (urlparse(url or "").hostname or "").lower() == "news.google.com" \
-                and story_detail.detail_level(cleaned_text, title, source) == "headline" \
-                and claude_llm.configured():
-            fetched = claude_llm.fetch_article(title, source, item.get("published_at") or "")
-            if fetched:
-                logger.info(f"Fetched the full article for '{title[:80]}' from {fetched['url']}")
-                cleaned_text = fetched["text"]
-
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
+        snippet_text = cleaned_text
         try:
             analysis = LLMService.analyze_article(title, cleaned_text)
         except LLMCascadeError as e:
@@ -330,6 +318,13 @@ def run_pipeline(seed: bool = False):
                 break
             continue
         consecutive_failures = 0
+
+        # Extracted from the snippet first; a story that reads as relevant is
+        # fetched in full (a few per run) and extracted again, and that
+        # reading decides relevance below. The row keeps the feed URL, which
+        # is what later runs deduplicate on.
+        analysis, cleaned_text, basis = fulltext.deepen(
+            analysis, cleaned_text, item, fulltext_fetcher, LLMService.analyze_article)
 
         # Relevance filter check (strictly keep corporate, policy, and procurement news).
         #
@@ -402,6 +397,7 @@ def run_pipeline(seed: bool = False):
             "Importance": _int_cell(analysis.get("importance_score", 50)),
             "Entities": entity_mentions(analysis),
             **detail_cells,
+            "Basis": basis,
         }
         
         added = db.add_article(db_article)
@@ -423,7 +419,9 @@ def run_pipeline(seed: bool = False):
         # Sampled rather than exhaustive because this is committed to the repo.
         # Sampled here, after the relevance and topic gates, so sport and
         # celebrity rejects stop entering the gold-set candidate pool.
-        capture_eval_input(title, cleaned_text, url, source)
+        # The snippet, not a fetched article: the corpus is committed to the
+        # repo, and an outlet's full text is theirs to publish, not ours.
+        capture_eval_input(title, snippet_text, url, source)
 
         run_records.append({
             "title": title,
@@ -513,6 +511,7 @@ def run_pipeline(seed: bool = False):
                 "Source URL": url,
                 "Source Title": title,
                 "Publisher": source,
+                "Basis": basis,
             })
             
         articles_processed += 1

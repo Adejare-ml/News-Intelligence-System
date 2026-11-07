@@ -21,7 +21,7 @@ class TestArticlesSchema:
         plan = plan_header_migration(old, SHEETS_CONFIG["Articles"])
         assert plan["needs_migration"]
         assert set(plan["added"]) == {"Event Type", "Risk Level", "Importance",
-                                      "Entities", "Filter Reason", "Key Facts", "Why It Matters", "Detail"}
+                                      "Entities", "Filter Reason", "Key Facts", "Why It Matters", "Detail", "Basis"}
         assert plan["removed"] == []
         # Old rows keep their values under the old names; new cells are blank.
         row = plan["remap"](["7", "t", "title", "src", "u", "Company", "40", "s", "Unread", "gemini"])

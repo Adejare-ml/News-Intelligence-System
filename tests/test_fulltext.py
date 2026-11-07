@@ -240,3 +240,23 @@ def test_a_failed_second_extraction_keeps_the_snippet_one():
                                             {"url": "u", "title": "t", "source": "s"},
                                             StubFetcher("the whole article"), analyze)
     assert (text, basis) == ("snippet", "headline")
+
+
+# --- where the basis is kept -------------------------------------------------------------------
+
+def test_basis_is_the_last_column_of_articles_and_significant_control():
+    from backend.app.db.excel_db import SHEETS_CONFIG
+    # Appended, not inserted: existing rows are remapped by name, and the
+    # Companies sheet shows positional writes still exist elsewhere.
+    assert SHEETS_CONFIG["Articles"][-1] == "Basis"
+    assert SHEETS_CONFIG["Significant Control"][-1] == "Basis"
+
+
+def test_the_pipeline_deepens_relevant_stories_and_stores_the_basis():
+    import inspect
+    import run_pipeline
+    src = inspect.getsource(run_pipeline.run_pipeline)
+    assert "fulltext.deepen(" in src
+    assert src.count('"Basis": basis') == 2  # the article row and each PSC row
+    # The old pre-relevance Claude lookup is gone: it ran for every story.
+    assert "claude_llm.fetch_article" not in src

@@ -25,7 +25,11 @@ SHEETS_CONFIG = {
     # carry detail a reader trusts without opening the article.
     "Articles": ["ID", "Time", "Title", "Source", "URL", "Category", "Risk Score", "Summary", "Status", "Engine",
                  "Event Type", "Risk Level", "Importance", "Entities", "Filter Reason",
-                 "Key Facts", "Why It Matters", "Detail"],
+                 "Key Facts", "Why It Matters", "Detail",
+                 # What the extraction read: "headline" (feed title and
+                 # snippet), "article" (the full text, fetched for relevant
+                 # stories) or "filing" (a regulator's document).
+                 "Basis"],
     # "First Seen" is set once on insert and never updated -- the sheet had
     # "Last Seen" only, so no export could say when an entity first appeared.
     # Appended at the END deliberately: _add_company_locked updates cells by
@@ -55,7 +59,9 @@ SHEETS_CONFIG = {
         "Verification Status", "Change Type", "Previous Holder", "Date", "Source",
         # The article the claim was extracted from, so the site can link
         # every claim to its reporting. Older rows have these blank.
-        "Source URL", "Source Title", "Publisher"
+        "Source URL", "Source Title", "Publisher",
+        # headline | article | filing, as on Articles.
+        "Basis"
     ],
     # "Archive File" resolves an edition to its exact archived markdown file.
     # Added after runs 2-4 of each day were found to overwrite run 1's archive.
