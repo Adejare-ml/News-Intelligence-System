@@ -281,9 +281,27 @@ const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as
   .day {
     color: var(--muted);
   }
+  /* Crimson text this small fails AA contrast on the dark ground, so the
+     count reads in soft text and the colour moves to a marker dot. */
   .hr {
-    color: var(--crimson, var(--muted));
-    font-size: 0.72rem;
+    color: var(--text-soft);
+    font-size: 0.8rem;
+  }
+  .hr::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background: var(--crimson);
+    vertical-align: middle;
+  }
+  /* The shared crimson chip is 3.96:1 on dark; here "Removed" and "Left"
+     keep the crimson wash and edge but take readable text. */
+  .chip-crimson {
+    color: var(--text-soft);
+    box-shadow: inset 0 0 0 1px var(--crimson);
   }
   .log {
     margin: 0;
