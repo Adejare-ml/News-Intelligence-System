@@ -12,6 +12,7 @@ import type { Article } from "./stories.ts";
 import type { CompanyRow, PersonMove } from "./entities.ts";
 import type { ProcurementRow } from "./procurement.ts";
 import { publicRecords, type PscRecord } from "./psc.ts";
+import { readCorrections } from "./corrections.ts";
 import { hiddenNames, scrubDigest, withoutHidden, withoutHiddenLines } from "./suppressed.ts";
 
 const DATA_DIR = process.env.AURA_DATA_DIR
@@ -55,6 +56,8 @@ export const psc = () => publicRecords(withoutHidden(readJson<PscRecord[]>("sign
 export const companies = () => withoutHidden(readJson<CompanyRow[]>("companies.json", []), hidden());
 export const people = () => withoutHidden(readJson<PersonMove[]>("people.json", []), hidden());
 export const procurement = () => withoutHidden(readJson<ProcurementRow[]>("procurement.json", []), hidden());
+/** The owner's corrections log. An entry naming an unpublished entity is left out too. */
+export const corrections = () => withoutHidden(readCorrections(readJson<unknown>("corrections.json", [])), hidden());
 /** The pipeline's Morning Brief edition (email_digest.json), or null. */
 export const emailDigest = () => {
   const raw = readJson<Record<string, unknown> | null>("email_digest.json", null);
