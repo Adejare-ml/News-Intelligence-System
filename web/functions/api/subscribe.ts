@@ -77,7 +77,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
       : // A pending row confirms what its owner first chose.
         confirmationMail(site, email, token, existing?.status === "pending" ? existing : prefs);
   if (!(await send(env, mail))) {
-    await store.releaseMail(email, day);
+    await store.releaseMail(email, now.toISOString(), day);
     return json({ error: "We couldn't send the email just now. Please try again in a few minutes." }, 502);
   }
   return json(SENT);

@@ -94,10 +94,23 @@ test("releaseMail gives back a claim whose mail was never sent", async () => {
   addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending" });
   const store = subscriberStore(db);
   await store.claimMail("a@x.co", "2026-11-06T08:00:00.000Z", "2026-11-06");
-  await store.releaseMail("a@x.co", "2026-11-06");
+  await store.releaseMail("a@x.co", "2026-11-06T08:00:00.000Z", "2026-11-06");
   assert.equal(await store.claimMail("a@x.co", "2026-11-06T08:01:00.000Z", "2026-11-06"), true);
   const row = db.raw.prepare("SELECT mails_today FROM subscribers WHERE email = 'a@x.co'").get() as { mails_today: number };
   assert.equal(row.mails_today, 1);
+});
+
+test("a released claim still counts as a recent try, so housekeeping keeps the row", async () => {
+  const db = sqliteD1();
+  // Signed up 60 days ago; tries again today and the provider refuses the mail.
+  addSubscriber(db, { email: "a@x.co", token: T("a"), status: "pending", created_at: "2026-09-07T08:00:00.000Z" });
+  const store = subscriberStore(db);
+  const now = "2026-11-06T08:00:00.000Z";
+  await store.claimMail("a@x.co", now, "2026-11-06");
+  await store.releaseMail("a@x.co", now, "2026-11-06");
+  assert.equal(await store.claimMail("a@x.co", "2026-11-06T08:00:30.000Z", "2026-11-06"), true, "the reader can retry at once");
+  await store.releaseMail("a@x.co", "2026-11-06T08:00:30.000Z", "2026-11-06");
+  assert.equal(await store.deleteStalePending("2026-10-07T08:00:00.000Z"), 0);
 });
 
 test("throttle counts hits per key per day", async () => {

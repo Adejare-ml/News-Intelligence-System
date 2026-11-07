@@ -124,13 +124,16 @@ export function subscriberStore(db: D1Like) {
 
     /**
      * Gives back a claim whose mail the provider refused, so the reader can
-     * try again straight away. The gap only ever held a claim older than
-     * MAIL_GAP_MINUTES, so clearing it allows no more than before.
+     * try again straight away: the last mail is dated just outside the gap
+     * rather than cleared. Cleared, the stale-pending clean-up would fall
+     * back to the sign-up date and could delete a row the reader has just
+     * tried to use.
      */
-    async releaseMail(email: string, day: string): Promise<void> {
+    async releaseMail(email: string, now: string, day: string): Promise<void> {
+      const open = new Date(Date.parse(now) - MAIL_GAP_MINUTES * 60_000).toISOString();
       await db
-        .prepare("UPDATE subscribers SET last_mailed_at = NULL, mails_today = MAX(mails_today - 1, 0) WHERE email = ? AND mail_day = ?")
-        .bind(email, day)
+        .prepare("UPDATE subscribers SET last_mailed_at = ?, mails_today = MAX(mails_today - 1, 0) WHERE email = ? AND mail_day = ?")
+        .bind(open, email, day)
         .run();
     },
 
