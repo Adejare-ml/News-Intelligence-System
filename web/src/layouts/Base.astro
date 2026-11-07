@@ -8,17 +8,21 @@ import TabBar from "../components/TabBar.astro";
 import SearchPalette from "../components/SearchPalette.astro";
 import AlertsInbox from "../components/AlertsInbox.astro";
 import { href } from "../lib/url.ts";
+import { jsonLd } from "../lib/seo.ts";
 
 interface Props {
   title?: string;
   description?: string;
   /** Keep the page out of search results (pages naming people as owners). */
   noindex?: boolean;
+  /** schema.org data for search engines, written as a JSON-LD block. */
+  structuredData?: unknown;
 }
 
 const {
   title = "AURA · Who really controls Nigeria's companies",
   noindex = false,
+  structuredData,
   description = "AURA reads Nigeria's business and regulatory news four times a day and maps who controls what: beneficial owners, board changes, procurement and regulatory actions.",
 } = Astro.props;
 
@@ -51,6 +55,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" href={href("favicon.svg")} type="image/svg+xml" />
     <link rel="alternate" type="application/rss+xml" title="AURA Morning Brief" href={href("data/feed.xml")} />
     <script is:inline src={href("theme-init.js")}></script>
+    {/* A data block, never executed, so script-src 'self' does not apply to it. */}
+    {structuredData !== undefined && <script type="application/ld+json" set:html={jsonLd(structuredData)} />}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

@@ -14,6 +14,8 @@ import { within, STORY_OF_DAY_DAYS, FRONT_PAGE_DAYS } from "../lib/freshness.ts"
 import { buildFunnel } from "../lib/funnel.ts";
 import { rankStories, parseTime, storiesInDay } from "../lib/stories.ts";
 import { DEFAULT_ROUTES, routesFromRecords } from "../lib/routes.ts";
+import { websiteLd } from "../lib/seo.ts";
+import { href } from "../lib/url.ts";
 import { nextRunAfter, isStale, lagosTime, lagosDate, editionName } from "../lib/edition.ts";
 
 const articles = data.articles();
@@ -66,8 +68,11 @@ const others = claims
 const dataRoutes = routesFromRecords(records);
 const routes = dataRoutes ?? DEFAULT_ROUTES;
 const next = nextRunAfter(editionAt);
+const siteUrl = new URL(href(""), Astro.site).toString();
+// The query is appended by hand: new URL() would percent-encode the braces.
+const structuredData = websiteLd(siteUrl, `${new URL(href("register/"), Astro.site)}?q={search_term_string}`);
 ---
-<Base>
+<Base structuredData={structuredData}>
   <Hero
     edition={editionName(editionAt)}
     dateLabel={lagosDate(editionAt)}
