@@ -81,7 +81,7 @@ class TestProductionGating:
                 for i in range(3)]
         monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss",
                             classmethod(lambda cls: list(real)))
-        for name in ("fetch_news_api", "fetch_gnews", "fetch_guardian_news",
+        for name in ("fetch_outlet_feeds", "fetch_news_api", "fetch_gnews", "fetch_guardian_news",
                      "fetch_newsdata_io"):
             monkeypatch.setattr(NewsIngestionService, name, staticmethod(lambda: []))
         return real
@@ -172,7 +172,7 @@ class TestThinIsAssessedAfterFiltering:
         ]
         monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss",
                             classmethod(lambda cls: junk + real))
-        for name in ("fetch_news_api", "fetch_gnews", "fetch_guardian_news",
+        for name in ("fetch_outlet_feeds", "fetch_news_api", "fetch_gnews", "fetch_guardian_news",
                      "fetch_newsdata_io"):
             monkeypatch.setattr(NewsIngestionService, name, staticmethod(lambda: []))
         monkeypatch.setattr(settings, "SEED_DEMO_ARTICLES", False)
