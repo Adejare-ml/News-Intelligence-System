@@ -53,7 +53,7 @@ export function entityMarkdown(e: Entity, opts: { pageUrl: string; entityUrl: (s
       out.push(`- ${lead}${chips.length ? ` · ${chips.join(" · ")}` : ""}`);
       const src = h.sources[0];
       const more = h.sources.length > 1 ? ` and ${h.sources.length - 1} more` : "";
-      const check = h.hasFilingRef ? "with a CAC filing reference on record" : "not verified with the CAC register";
+      const check = h.confidence === "Official filing" ? "with a filing reference on record" : "not verified with the CAC register";
       out.push(`  ${src ? `Reported by ${link(src.publisher || "a news report", src.url)}${more}` : "No source article on file"}, ${check}.`);
     }
     out.push("", "Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.", "");
