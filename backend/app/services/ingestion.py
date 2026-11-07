@@ -615,6 +615,13 @@ class NewsIngestionService:
     # Daily Reports row. A dict, refreshed per call; {} before any run.
     last_collect_stats: Dict[str, int] = {}
 
+    # Articles each configured adapter returned in the most recent
+    # collect_all(), for data/source_health.json. Keyless adapters are left
+    # out: they are switched off, not failing.
+    last_source_counts: Dict[str, int] = {}
+    _ADAPTER_KEYS = {"NewsAPI": "NEWSAPI_KEY", "GNews": "GNEWS_KEY",
+                     "Guardian": "GUARDIAN_API_KEY", "Newsdata.io": "NEWSDATA_KEY"}
+
     @classmethod
     def collect_all(cls) -> List[Dict[str, Any]]:
         """Collects news from all enabled adapters, strictly limited to Nigeria."""
@@ -630,6 +637,7 @@ class NewsIngestionService:
             ("Guardian", cls.fetch_guardian_news),
             ("Newsdata.io", cls.fetch_newsdata_io),
         ]
+        source_counts: Dict[str, int] = {}
         started = _time.monotonic()
         for i, (name, fetch) in enumerate(adapters):
             elapsed = _time.monotonic() - started
@@ -641,7 +649,12 @@ class NewsIngestionService:
                     cls.COLLECT_BUDGET_SECONDS, elapsed, ", ".join(skipped), len(all_articles)
                 )
                 break
-            all_articles.extend(fetch())
+            batch = fetch()
+            key = cls._ADAPTER_KEYS.get(name)
+            if key is None or getattr(settings, key, ""):
+                source_counts[name] = len(batch)
+            all_articles.extend(batch)
+        cls.last_source_counts = source_counts
 
         # Post-ingestion strict Nigeria filter
         # Drop site chrome before anything else. Scoping searches to gov.ng and

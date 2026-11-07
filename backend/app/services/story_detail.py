@@ -148,10 +148,11 @@ def _currency(m) -> str:
     return ""
 
 
-def amounts_in(text: str) -> set:
-    """Figures as (kind, value): kind is a currency code, '%' or '' (a bare number)."""
+def figures_in(text: str) -> List[tuple]:
+    """Figures as (kind, value) in reading order: kind is a currency code,
+    '%' or '' (a bare number)."""
     text = _NUMBER_WORD.sub(_number_word, text or "")
-    out = set()
+    out = []
     for m in _AMOUNT.finditer(text):
         try:
             value = Decimal(m.group("num").replace(",", ""))
@@ -160,8 +161,13 @@ def amounts_in(text: str) -> set:
         scale = (m.group("scale") or m.group("t") or "").lower()
         value = value.scaleb(_SCALES.get(scale, 0)).normalize()
         kind = "%" if m.group("pct") else _currency(m)
-        out.add((kind, value))
+        out.append((kind, value))
     return out
+
+
+def amounts_in(text: str) -> set:
+    """The distinct figures in a text (see figures_in)."""
+    return set(figures_in(text))
 
 
 def numbers_in(text: str) -> set:
