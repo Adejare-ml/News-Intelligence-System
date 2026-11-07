@@ -398,6 +398,7 @@ def run_pipeline(seed: bool = False):
             "Entities": entity_mentions(analysis),
             **detail_cells,
             "Basis": basis,
+            "Quote": story_detail.quote(cleaned_text, analysis["key_facts"]) if basis == "article" else "",
         }
         
         added = db.add_article(db_article)

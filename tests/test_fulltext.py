@@ -309,12 +309,39 @@ def test_a_failed_second_extraction_keeps_the_snippet_one():
 
 # --- where the basis is kept -------------------------------------------------------------------
 
-def test_basis_is_the_last_column_of_articles_and_significant_control():
+def test_basis_and_quote_are_appended_to_articles_and_basis_to_significant_control():
     from backend.app.db.excel_db import SHEETS_CONFIG
     # Appended, not inserted: existing rows are remapped by name, and the
     # Companies sheet shows positional writes still exist elsewhere.
-    assert SHEETS_CONFIG["Articles"][-1] == "Basis"
+    assert SHEETS_CONFIG["Articles"][-2:] == ["Basis", "Quote"]
     assert SHEETS_CONFIG["Significant Control"][-1] == "Basis"
+
+
+# --- the short quote ---------------------------------------------------------------------------
+
+FULL = ("Lagos -- Shares rose on Friday. "
+        "Dangote Industries Limited has acquired a 60 per cent stake in Lagos Refinery Services, "
+        "the company said. Analysts expect more deals.")
+
+
+def test_the_quote_is_the_article_sentence_the_first_key_fact_restates():
+    facts = ["Dangote Industries acquired a 60 per cent stake in Lagos Refinery Services."]
+    assert fulltext.story_detail.quote(FULL, facts) == (
+        "Dangote Industries Limited has acquired a 60 per cent stake in Lagos Refinery Services, "
+        "the company said.")
+
+
+def test_the_quote_is_capped_at_a_word_boundary():
+    long_sentence = "Dangote Industries acquired a stake " + "in a long list of refinery assets " * 10 + "."
+    text = fulltext.story_detail.quote(long_sentence, ["Dangote Industries acquired a stake in refinery assets"])
+    assert len(text) <= fulltext.story_detail.MAX_QUOTE_CHARS
+    assert text.endswith("…") and long_sentence.startswith(text[:-1])
+    assert not text[:-1].endswith(" ")
+
+
+def test_no_quote_without_a_fact_the_article_backs():
+    assert fulltext.story_detail.quote(FULL, ["Zenith Bank appointed a new chairman."]) == ""
+    assert fulltext.story_detail.quote(FULL, []) == ""
 
 
 def test_the_pipeline_deepens_relevant_stories_and_stores_the_basis():
@@ -323,5 +350,7 @@ def test_the_pipeline_deepens_relevant_stories_and_stores_the_basis():
     src = inspect.getsource(run_pipeline.run_pipeline)
     assert "fulltext.deepen(" in src
     assert src.count('"Basis": basis') == 2  # the article row and each PSC row
+    # A short quote from the full article, never the article itself.
+    assert '"Quote": story_detail.quote(cleaned_text, analysis["key_facts"]) if basis == "article" else ""' in src
     # The old pre-relevance Claude lookup is gone: it ran for every story.
     assert "claude_llm.fetch_article" not in src

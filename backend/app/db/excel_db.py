@@ -29,7 +29,10 @@ SHEETS_CONFIG = {
                  # What the extraction read: "headline" (feed title and
                  # snippet), "article" (the full text, fetched for relevant
                  # stories) or "filing" (a regulator's document).
-                 "Basis"],
+                 "Basis",
+                 # One sentence of the full article, at most 200 characters,
+                 # when Basis is "article": the article itself is never kept.
+                 "Quote"],
     # "First Seen" is set once on insert and never updated -- the sheet had
     # "Last Seen" only, so no export could say when an entity first appeared.
     # Appended at the END deliberately: _add_company_locked updates cells by

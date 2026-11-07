@@ -9,8 +9,8 @@ MAX_FULLTEXT per run, honouring each outlet's robots.txt -- and extracted
 again from the full text.
 
 The text is used in memory only. What reaches the sheet is what came from
-it before (a summary, key facts of a sentence each) plus Basis "article",
-never the article itself.
+it before (a summary, key facts of a sentence each) plus Basis "article"
+and a one-sentence Quote, never the article itself.
 """
 from __future__ import annotations
 
