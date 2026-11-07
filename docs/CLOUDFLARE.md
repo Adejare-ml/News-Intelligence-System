@@ -160,7 +160,8 @@ use up the provider's daily quota:
 **Housekeeping** runs after each day's real send: pending sign-ups not
 mailed for 30 days are deleted, and pending sign-ups 48-72 hours old that
 have had only their first mail get one reminder (at most 20 a run, within
-the limits above). The send's JSON result reports the counts under
+the limits above; on Gmail, only from what the brief left of the 450 a
+day). The send's JSON result reports the counts under
 `housekeeping`.
 
 **1. Pick a provider.**

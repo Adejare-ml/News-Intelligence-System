@@ -32,7 +32,7 @@
  */
 import { authorised, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts";
 import {
-  confirmationMail, decodeEntities, htmlToText, preferencesUrl, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl,
+  GMAIL_DAILY_CAP, confirmationMail, decodeEntities, htmlToText, preferencesUrl, provider, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl,
 } from "../_lib/mailer.ts";
 import {
   categoryLabel, comboKey, editionsFor, headlineCategories, listLabels, parseCategories, parseRegion,
@@ -235,14 +235,17 @@ export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { 
 /**
  * Clears out stale pending sign-ups and reminds recent ones, once a day
  * after the brief has gone. Reminders go in one provider pass of their own,
- * so the brief's sent and failed counts stay the brief's.
+ * so the brief's sent and failed counts stay the brief's. On Gmail that
+ * second pass shares the daily cap with the brief: `briefRecipients` is how
+ * many the brief tried to reach, and reminders only use what is left.
  */
-export async function housekeep(env: Env, site: string, now: Date) {
+export async function housekeep(env: Env, site: string, now: Date, briefRecipients = 0) {
   const store = subscriberStore(env.DB!);
   const day = lagosDay(now);
   const pendingDeleted = await store.deleteStalePending(new Date(now.getTime() - PENDING_DAYS * 86_400_000).toISOString());
+  const limit = provider(env) === "gmail" ? Math.min(MAX_REMINDERS, Math.max(0, GMAIL_DAILY_CAP - briefRecipients)) : MAX_REMINDERS;
   const reminding: Subscriber[] = [];
-  for (const r of await store.remindable(now.toISOString(), MAX_REMINDERS)) {
+  for (const r of await store.remindable(now.toISOString(), limit)) {
     // The same limits as a sign-up, so a reminder never adds to a busy inbox.
     if (await store.claimMail(r.email, now.toISOString(), day)) reminding.push(r);
   }
@@ -336,7 +339,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   await log.finish(day, sent, failed, new Date().toISOString());
   // The brief has gone and is logged; a housekeeping failure (say, migration
   // 0004 not applied yet) is reported, not turned into a failed send.
-  const housekeeping = await housekeep(env, site, now).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
+  const housekeeping = await housekeep(env, site, now, recipients).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
 
   const body = { ...summary, sent, failed, housekeeping, ...(result.error ? { error: result.error } : {}) };
   return json(body, failed && !sent ? 502 : 200);

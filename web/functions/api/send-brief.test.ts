@@ -1,7 +1,7 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
-import { onRequestPost, sameSecret, lagosDay, readMeta, stripScripts } from "./send-brief.ts";
-import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom } from "../_lib/mailer.ts";
+import { onRequestPost, housekeep, sameSecret, lagosDay, readMeta, stripScripts } from "./send-brief.ts";
+import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom, GMAIL_DAILY_CAP } from "../_lib/mailer.ts";
 import { fakeSmtp } from "../_lib/smtp-fake.test.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import type { Env } from "../_lib/http.ts";
@@ -254,6 +254,31 @@ test("gmail: one SMTP session, confirmed subscribers only, each with their own l
     assert.match(server.delivered[0].data, /^From: AURA Morning Brief <aura\.owner@gmail\.com>$/m);
     assert.match(server.delivered[0].data, new RegExp(`List-Unsubscribe: <[^>]*token=${"a".repeat(48)}>`));
     assert.ok(!server.delivered[0].data.includes("d".repeat(48)));
+  } finally {
+    smtpTransport.open = realOpen;
+  }
+});
+
+test("gmail: reminders only use what the brief left of the daily cap", async () => {
+  const server = fakeSmtp({ password: "abcdefghijklmnop" });
+  const realOpen = smtpTransport.open;
+  smtpTransport.open = () => server.open;
+  try {
+    const e = {
+      ...env(),
+      EMAIL_PROVIDER: "gmail",
+      RESEND_API_KEY: undefined,
+      MAIL_FROM: undefined,
+      GMAIL_USER: "aura.owner@gmail.com",
+      GMAIL_APP_PASSWORD: "abcd efgh ijkl mnop",
+    };
+    for (const c of ["1", "2", "3"]) addPending(e.DB, `p${c}@x.co`, c.repeat(48), 50);
+    const result = await housekeep(e, "https://auranews.pages.dev", new Date(), GMAIL_DAILY_CAP - 1);
+    assert.equal(result.reminders_sent, 1);
+    assert.equal(server.delivered.length, 1);
+    const unclaimed = e.DB.raw.prepare("SELECT COUNT(*) AS n FROM subscribers WHERE email LIKE 'p%' AND mail_day != ?").get(lagosDay(new Date())) as { n: number };
+    assert.equal(unclaimed.n, 2, "the others are left for tomorrow's run, not used up");
+    assert.equal((await housekeep(e, "https://auranews.pages.dev", new Date(), GMAIL_DAILY_CAP)).reminders_sent, 0);
   } finally {
     smtpTransport.open = realOpen;
   }
