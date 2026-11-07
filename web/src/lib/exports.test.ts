@@ -39,4 +39,14 @@ describe("downloads", () => {
     assert.equal(rows[0], "Published,Headline,Publisher,URL,Category,Risk score,Risk level,Entities,Summary");
     assert.equal(rows[1], "2026-11-06T00:51:20Z,'=FG vows completion,The Punch,https://punchng.com/x,Government,25,Low,Federal Government; Tunji Alausa,Short.");
   });
+
+  test("the news CSV writes every Published date as ISO so spreadsheets can sort it", () => {
+    const csv = newsCsv([
+      { Time: "Fri, 06 Nov 2026 17:55:52 GMT", Title: "Feed date" },
+      { Time: "2026-11-05 08:00:00", Title: "Runner date" },
+      { Time: "sometime", Title: "Unparseable" },
+    ]);
+    const published = lines(csv).slice(1).map((r) => r.split(",")[0]);
+    assert.deepEqual(published, ["2026-11-06T17:55:52Z", "2026-11-05T08:00:00Z", "sometime"]);
+  });
 });

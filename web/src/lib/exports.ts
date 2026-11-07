@@ -3,7 +3,7 @@
  */
 import { toCsv } from "./csv.ts";
 import { publicRecords, type PscRecord } from "./psc.ts";
-import { cleanTitle, type Article } from "./stories.ts";
+import { cleanTitle, parseTime, type Article } from "./stories.ts";
 import type { Contract } from "./procurement.ts";
 
 const text = (v: unknown) => String(v ?? "").trim();
@@ -30,11 +30,14 @@ export function procurementCsv(contracts: Contract[]): string {
   );
 }
 
+// latest.json mixes ISO and RSS dates; one ISO format lets a spreadsheet sort the column. Unreadable values pass through as written.
+const isoTime = (v: unknown) => parseTime(v)?.toISOString().replace(/\.\d{3}Z$/, "Z") ?? text(v);
+
 export function newsCsv(articles: Article[]): string {
   return toCsv(
     ["Published", "Headline", "Publisher", "URL", "Category", "Risk score", "Risk level", "Entities", "Summary"],
     articles.map((a) => [
-      text(a.Time), cleanTitle(text(a.Title), text(a.Source)).title, text(a.Source), text(a.URL), text(a.Category),
+      isoTime(a.Time), cleanTitle(text(a.Title), text(a.Source)).title, text(a.Source), text(a.URL), text(a.Category),
       a["Risk Score"] ?? "", text(a["Risk Level"]),
       text(a.Entities).split("|").map((e) => e.trim()).filter(Boolean).join("; "), text(a.Summary),
     ]),
