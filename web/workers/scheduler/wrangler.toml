@@ -1,7 +1,6 @@
 # AURA scheduler: starts the news pipeline on time (see src/schedule.ts).
-# Deploy: Cloudflare dashboard -> Workers & Pages -> Create -> Import a
-# repository, root directory web/workers/scheduler. Then add the secret
-# GITHUB_TOKEN (docs/CLOUDFLARE.md, "Scheduler").
+# Deployed by .github/workflows/deploy_scheduler.yml, which also sets the
+# GITHUB_TOKEN secret (owner setup: docs/CLOUDFLARE.md, "Scheduler").
 name = "aura-scheduler"
 main = "src/index.ts"
 compatibility_date = "2026-09-01"
