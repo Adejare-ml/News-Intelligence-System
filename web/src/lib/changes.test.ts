@@ -1,0 +1,159 @@
+import { test, describe } from "node:test";
+import assert from "node:assert/strict";
+import { weekWindow, weeklyChanges, entitySlug, type ChangesInput } from "./changes.ts";
+
+const src = (n: number) => `https://example.ng/story-${n}`;
+const psc = (over: Record<string, unknown>) => ({
+  "Person Name": "Ada Holder", Company: "Acme Plc", Percentage: "", Date: "2026-11-03",
+  "Source URL": src(1), "Source Title": "Ada buys into Acme", Publisher: "The Punch", "Change Type": "disclosed",
+  ...over,
+});
+
+const empty: ChangesInput = { records: [], companies: [], people: [], procurement: [], history: [], articles: [] };
+const END = "2026-11-07";
+
+describe("weekWindow", () => {
+  test("is the seven days ending on the last run's date", () => {
+    assert.deepEqual(weekWindow("2026-11-07 02:53:26"), { start: "2026-11-01", end: "2026-11-07" });
+  });
+  test("crosses month ends", () => {
+    assert.deepEqual(weekWindow("2026-11-03"), { start: "2026-10-28", end: "2026-11-03" });
+  });
+});
+
+describe("ownership records", () => {
+  test("a holding first reported this week is added, with its source", () => {
+    const w = weeklyChanges({ ...empty, records: [psc({ Percentage: "12%" })] }, END);
+    assert.equal(w.ownership.length, 1);
+    const o = w.ownership[0];
+    assert.equal(o.kind, "added");
+    assert.equal(o.person, "Ada Holder");
+    assert.equal(o.company, "Acme Plc");
+    assert.equal(o.stake, 12);
+    assert.deepEqual(o.source, { url: src(1), title: "Ada buys into Acme", publisher: "The Punch" });
+  });
+  test("a new figure for a known holding is a stake change, with the previous figure", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ Percentage: "10%", Date: "2026-09-01" }),
+      psc({ Percentage: "15%", Date: "2026-11-04", "Source URL": src(2) }),
+    ] }, END);
+    assert.equal(w.ownership.length, 1);
+    assert.equal(w.ownership[0].kind, "changed");
+    assert.equal(w.ownership[0].previous, 10);
+    assert.equal(w.ownership[0].stake, 15);
+  });
+  test("a repeat report of the same figure is not a change", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ Percentage: "10%", Date: "2026-09-01" }),
+      psc({ Percentage: "10%", Date: "2026-11-04" }),
+    ] }, END);
+    assert.equal(w.ownership.length, 0);
+  });
+  test("a reported exit is a removal", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ Date: "2026-09-01", Percentage: "10%" }),
+      psc({ Date: "2026-11-05", "Change Type": "lost" }),
+    ] }, END);
+    assert.equal(w.ownership[0].kind, "removed");
+  });
+  test("rows the register gate withholds never appear", () => {
+    const w = weeklyChanges({ ...empty, records: [
+      psc({ "Person Name": "Unsourced Person", "Source URL": "" }),
+      psc({ "Person Name": "Quarantined Person", Quarantined: true }),
+    ] }, END);
+    assert.equal(w.ownership.length, 0);
+  });
+  test("reports outside the week are left out", () => {
+    const w = weeklyChanges({ ...empty, records: [psc({ Date: "2026-10-31" })] }, END);
+    assert.equal(w.ownership.length, 0);
+  });
+});
+
+describe("first seen", () => {
+  test("companies first seen this week, newest first", () => {
+    const w = weeklyChanges({ ...empty, companies: [
+      { Company: "Old Co", "First Seen": "2026-10-01 10:00" },
+      { Company: "New Co", "First Seen": "2026-11-02 10:00" },
+      { Company: "Newer Co", "First Seen": "2026-11-06 03:28" },
+      { Company: "Unknown Co", "First Seen": "" },
+    ] }, END);
+    assert.deepEqual(w.companies.map((c) => c.name), ["Newer Co", "New Co"]);
+    assert.equal(w.companies[0].date, "2026-11-06");
+  });
+  test("people first seen this week: earliest row wins, unnamed people skipped", () => {
+    const w = weeklyChanges({ ...empty, people: [
+      { Name: "Known Person", Date: "2026-08-01", Event: "other" },
+      { Name: "Known Person", Date: "2026-11-03", Event: "other" },
+      { Name: "New Person", Position: "CEO", Organization: "Acme Plc", Date: "2026-11-04", Event: "other" },
+      { Name: "Unnamed Special Adviser", Date: "2026-11-04", Event: "resignation" },
+    ] }, END);
+    assert.deepEqual(w.people.map((p) => p.name), ["New Person"]);
+    assert.equal(w.people[0].detail, "CEO, Acme Plc");
+  });
+});
+
+describe("board moves", () => {
+  test("appointments and departures this week; other mentions are not moves", () => {
+    const w = weeklyChanges({ ...empty, people: [
+      { Name: "Lwazi Bam", Position: "Non-Executive Director", Organization: "MTN Nigeria", Event: "appointment", Date: "2026-11-04" },
+      { Name: "Ex Officer", Position: "Commissioner", Organization: "Oyo State Government", Event: "resignation", Date: "2026-11-02" },
+      { Name: "Just Mentioned", Event: "other", Date: "2026-11-05" },
+      { Name: "Old Move", Event: "appointment", Date: "2026-10-20" },
+    ] }, END);
+    assert.deepEqual(w.moves.map((m) => [m.name, m.event]), [["Lwazi Bam", "appointment"], ["Ex Officer", "departure"]]);
+  });
+});
+
+describe("procurement", () => {
+  test("dated awards this week, with placeholders dropped", () => {
+    const w = weeklyChanges({ ...empty, procurement: [
+      { Agency: "Federal Ministry of Education", Contractor: "None", Project: "National Library completion", Source: "The Punch", Date: "2026-11-07", "Amount Value": null, "Amount Currency": null },
+      { Agency: "Akwa Ibom State Government", Contractor: "Julius Berger", Project: "Terminal", Source: "Premium Times Nigeria", Date: "2026-11-06", "Amount Value": 59.65e9, "Amount Currency": "NGN" },
+      { Agency: "BPP", Contractor: "SON", Project: "Undated", Source: "", Date: "" },
+    ] }, END);
+    assert.equal(w.contracts.length, 2);
+    assert.equal(w.contracts[0].agency, "Federal Ministry of Education");
+    assert.equal(w.contracts[0].contractor, "");
+    assert.equal(w.contracts[1].amountLabel, "₦59.65bn");
+  });
+});
+
+describe("source articles", () => {
+  test("a line links to an article naming its entity within a day", () => {
+    const article = { Title: "MTN names new directors", URL: src(9), Time: "2026-11-04T15:00:00Z", Entities: "MTN Nigeria|Lwazi Bam" };
+    const far = { Title: "Older MTN story", URL: src(8), Time: "2026-10-20T15:00:00Z", Entities: "Lwazi Bam" };
+    const w = weeklyChanges({ ...empty, articles: [far, article], people: [
+      { Name: "Lwazi Bam", Organization: "MTN Nigeria", Event: "appointment", Date: "2026-11-04" },
+    ] }, END);
+    assert.deepEqual(w.moves[0].article, { url: src(9), title: "MTN names new directors" });
+  });
+  test("no article is better than a wrong one", () => {
+    const w = weeklyChanges({ ...empty, articles: [{ Title: "Unrelated", URL: src(7), Time: "2026-11-04T10:00:00Z", Entities: "Someone Else" }],
+      companies: [{ Company: "New Co", "First Seen": "2026-11-04 10:00" }] }, END);
+    assert.equal(w.companies[0].article, null);
+  });
+});
+
+describe("run activity", () => {
+  test("one bar per day of the week, missing days shown as no run", () => {
+    const w = weeklyChanges({ ...empty, history: [
+      { date: "2026-10-31", runs: 2, articles: 50, high_risk: 3 },
+      { date: "2026-11-05", runs: 2, articles: 11, high_risk: 0 },
+      { date: "2026-11-07", runs: 1, articles: 6, high_risk: 1 },
+    ] }, END);
+    assert.equal(w.activity.length, 7);
+    assert.deepEqual(w.activity[0], { date: "2026-11-01", runs: 0, articles: 0, highRisk: 0 });
+    assert.deepEqual(w.activity[6], { date: "2026-11-07", runs: 1, articles: 6, highRisk: 1 });
+    assert.equal(w.totals.articles, 17);
+    assert.equal(w.totals.highRisk, 1);
+  });
+});
+
+describe("entitySlug", () => {
+  test("links only to entity pages that exist", () => {
+    const slugs = new Set(["mtn-nigeria"]);
+    assert.equal(entitySlug("MTN Nigeria", slugs), "mtn-nigeria");
+    assert.equal(entitySlug("No Page Ltd", slugs), "");
+    assert.equal(entitySlug("", slugs), "");
+  });
+});
