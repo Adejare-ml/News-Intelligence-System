@@ -5,6 +5,9 @@ import ReportTimeline from "../../components/ReportTimeline.astro";
 import Provenance from "../../components/Provenance.astro";
 import StoryCard from "../../components/StoryCard.astro";
 import Icon from "../../components/Icon.astro";
+import Sparkline from "../../components/Sparkline.astro";
+import * as data from "../../lib/data.ts";
+import { weeklyMentions, type EntityTimeline } from "../../lib/sparkline.ts";
 import { href } from "../../lib/url.ts";
 import { slugify } from "../../lib/entity-key.ts";
 import { toStory, parseTime } from "../../lib/stories.ts";
@@ -23,6 +26,7 @@ const stories = e.articles.map(toStory);
 const latestArticle = stories.map((s) => s.published).filter((d): d is Date => d !== null).sort((a, b) => b.getTime() - a.getTime())[0];
 const now = latestArticle ?? parseTime(e.lastSeen) ?? new Date();
 const summary = entitySummary(e);
+const coverage = weeklyMentions(data.readJson<EntityTimeline>("entity_timeline.json", {}), e.slug);
 // Companies and bodies show their own logo when the deploy fetched one.
 const entityLogo = logoFor([e.name]);
 ---
@@ -47,6 +51,7 @@ const entityLogo = logoFor([e.name]);
       {e.articles.length > 0 && <div><dt>Recent stories</dt><dd class="num">{e.articles.length}</dd></div>}
       {e.lastSeen && <div><dt>Last seen</dt><dd class="date">{fmt(e.lastSeen)}</dd></div>}
     </dl>
+    {coverage && <Sparkline series={coverage} />}
   </section>
 
   {e.holdings.length > 0 && (
