@@ -108,3 +108,22 @@ class TestProcurementExport:
         works = [a for a in rollup["agencies"] if a["name"] == AWARD["Agency"]][0]
         assert works["contracts"] == 1
         assert works["totals"]["NGN"] == 5e9
+
+
+class TestEmptySiteGuard:
+    def test_ci_run_on_the_local_fallback_refuses_to_export(self, tmp_path, monkeypatch):
+        # Sheets unreachable in Actions means the run fell back to an empty
+        # local workbook; exporting it would publish an empty site.
+        out_dir = tmp_path / "data"
+        out_dir.mkdir()
+        (out_dir / "latest.json").write_text('[{"Title": "kept"}]')
+
+        class LocalDb:
+            use_local = True
+
+        monkeypatch.setattr(rp, "db", LocalDb())
+        monkeypatch.setattr(rp, "DATA_DIR", str(out_dir))
+        monkeypatch.setenv("GITHUB_ACTIONS", "true")
+        with pytest.raises(RuntimeError, match="local"):
+            rp.export_static_json_database()
+        assert json.loads((out_dir / "latest.json").read_text()) == [{"Title": "kept"}]

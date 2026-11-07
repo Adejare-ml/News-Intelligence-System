@@ -877,7 +877,15 @@ def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[st
 def export_static_json_database():
     """Generates the static JSON files read by index.html / app.js."""
     logger.info("Exporting static JSON telemetry files to static assets path...")
-    
+    # In Actions the database is Google Sheets. use_local there means the
+    # connection failed and the run fell back to an empty local workbook:
+    # exporting it would publish an empty site over the real one.
+    if os.environ.get("GITHUB_ACTIONS") == "true" and getattr(db, "use_local", False):
+        raise RuntimeError(
+            "Refusing to export: the database fell back to the local workbook in "
+            "GitHub Actions (Google Sheets unreachable), so the exports would be empty."
+        )
+
     # Read database tables
     articles = db.get_articles()
     companies = db.get_companies()
