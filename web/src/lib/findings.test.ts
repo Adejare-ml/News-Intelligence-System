@@ -16,7 +16,8 @@ function finding(over: Partial<Finding> = {}): Finding {
     names_person: true,
     link: "https://auranews.pages.dev/findings/2026-W45/",
     bullets: [
-      { kind: "register", text: "Tony Elumelu is reported to control Seplat", outlet: "The Punch", url: "https://punchng.com/a/", date: "2026-08-21" },
+      { kind: "register", text: "Tony Elumelu is reported to control Seplat", outlet: "The Punch", url: "https://punchng.com/a/", date: "2026-08-21",
+        record: { person: "tony elumelu", company: "seplat" } },
       { kind: "news", text: "BusinessDay reported: \"Seplat output rises\"", outlet: "BusinessDay", url: "https://businessday.ng/b/", date: "2026-11-02" },
     ],
     drafts: { linkedin: "l", x: "x", email: { subject: "s", body: "b" } },
@@ -46,6 +47,35 @@ describe("findings", () => {
     const named = finding({ note: "Zed Unsourced is also linked." });
     const company = finding({ headline: "Hidden Holdings Ltd and Seplat" });
     assert.deepEqual(publishableFindings([named, company], [sourced, withheld]), []);
+  });
+
+  test("drops a finding whose own row is withheld even when another published row shares its link", () => {
+    // One article backs two rows; the gate quarantined the Elumelu/Seplat one.
+    // Both names stay published through other rows, so only the record match can catch it.
+    const sameArticle = { "Person Name": "Femi Otedola", Company: "Seplat", "Source URL": "https://punchng.com/a/" };
+    const elsewhere = { "Person Name": "Tony Elumelu", Company: "UBA", "Source URL": "https://punchng.com/uba/" };
+    const out = publishableFindings([finding()], [{ ...sourced, Quarantined: true }, sameArticle, elsewhere]);
+    assert.deepEqual(out, []);
+  });
+
+  test("drops a register bullet that does not say which row it stands on", () => {
+    const [reg, news] = finding().bullets;
+    const unkeyed = finding({ bullets: [{ ...reg, record: undefined }, news] });
+    assert.deepEqual(publishableFindings([unkeyed], [sourced]), []);
+  });
+
+  test("matches withheld people by canonical key, not one spelling", () => {
+    // The gate keyed this row as "quin quarantined"; the finding spells it another way.
+    const quarantined = {
+      "Person Name": "Alhaji Quin O. Quarantined", "Person Key": "quin quarantined", Company: "Seplat",
+      "Source URL": "https://punchng.com/q/", Quarantined: true,
+    };
+    const byKey = finding({ note: "Quin Quarantined is also linked." });
+    // No Person Key on an older row: the middle initial still must not hide the name.
+    const unkeyed = { "Person Name": "Quin Quarantined", Company: "Seplat", "Source URL": "" };
+    const initial = finding({ note: "Quin O. Quarantined is also linked." });
+    assert.deepEqual(publishableFindings([byKey], [sourced, quarantined]), []);
+    assert.deepEqual(publishableFindings([initial], [sourced, unkeyed]), []);
   });
 
   test("drops malformed files instead of breaking the build", () => {
