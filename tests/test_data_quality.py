@@ -68,6 +68,20 @@ class TestDedupeEntityRows:
         assert len(out) == 2
         assert out[0]["Date"] == "2026-09-01"
 
+    def test_people_rows_carry_the_earliest_date_of_their_group_as_first_seen(self):
+        # The People sheet is append-only, so the newest row of a group is
+        # its latest mention; its earliest Date is when AURA first saw it.
+        rows = [
+            {"Name": "Tinubu", "Organization": "FGN", "Date": "2026-01-01"},
+            {"Name": "tinubu", "Organization": "fgn", "Date": "2026-09-01"},
+            {"Name": "Tinubu", "Organization": "APC", "Date": ""},
+        ]
+        out = dedupe_entity_rows(rows, ["Name", "Organization"], first_seen_from="Date")
+        assert out[0]["Date"] == "2026-09-01"
+        assert out[0]["First Seen"] == "2026-01-01"
+        assert out[1]["First Seen"] == ""
+        assert "First Seen" not in rows[1]
+
     def test_blank_keys_are_dropped(self):
         assert dedupe_entity_rows([{"Company": "  "}], ["Company"]) == []
 

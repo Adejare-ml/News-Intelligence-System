@@ -115,7 +115,8 @@ def build_sources(article_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
 
 
 def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
-                       count_key: str = None) -> List[Dict[str, Any]]:
+                       count_key: str = None,
+                       first_seen_from: str = None) -> List[Dict[str, Any]]:
     """Suffix-normalised dedupe of exported entity rows.
 
     The Companies sheet holds e.g. eight copies of one outlet and People
@@ -126,15 +127,23 @@ def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
     highest-count row wins, its count becomes the SUM across the group
     (the mentions were all of one entity), and the longest surface form
     becomes the label; otherwise the latest duplicate (freshest row) wins.
+    When `first_seen_from` names a date field, each row also gets
+    "First Seen": the earliest such date in its group. Keeping the freshest
+    row would otherwise throw away when the entity was first recorded.
     """
     best: Dict[Any, Dict[str, Any]] = {}
     counts: Dict[Any, int] = {}
     labels: Dict[Any, str] = {}
+    first: Dict[Any, str] = {}
     order: List[Any] = []
     for row in rows or []:
         key = tuple(entity_key(row.get(f)) for f in key_fields)
         if not any(key):
             continue
+        if first_seen_from:
+            stamp = str(row.get(first_seen_from) or "").strip()
+            if stamp and (key not in first or stamp < first[key]):
+                first[key] = stamp
         if count_key:
             counts[key] = counts.get(key, 0) + _int_cell(row.get(count_key))
             surface = str(row.get(key_fields[0], "")).strip()
@@ -156,6 +165,8 @@ def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
             row[count_key] = counts[k]
             if labels.get(k):
                 row[key_fields[0]] = labels[k]
+        if first_seen_from:
+            row = dict(row, **{"First Seen": first.get(k, "")})
         out.append(row)
     return out
 
