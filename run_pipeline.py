@@ -347,9 +347,10 @@ def run_pipeline(seed: bool = False):
         snippet_analyses.append((item, cleaned_text, analysis))
         # A URL listed twice in this batch is read once.
         existing_urls.add(url)
-        # Keeps the extraction calls under Gemini's 15 requests a minute.
-        import time
-        time.sleep(4.0)
+        # No pause here: this pass writes nothing to Sheets, and the pauses
+        # below pace each article's writes (REJECT_PAUSE_SECONDS,
+        # accept_pause_seconds). Gemini, whose 15 RPM a pause here cited,
+        # does not extract (see LLMService.analyze_article).
 
     # Every snippet is extracted first so that the run's few full-text
     # fetches go to the riskiest relevant stories, not the first listed.
@@ -403,10 +404,9 @@ def run_pipeline(seed: bool = False):
             })
             rejected_count += 1
             # One Filtered row written: the same Sheets pacing as a pre-LLM
-            # reject (the extraction call was paced in the first pass). This
-            # was 3.5s, citing Gemini's 15 RPM, but Gemini does not extract
-            # (see LLMService.analyze_article) and most analysed articles end
-            # here, so it was most of a run's waiting.
+            # reject. This was 3.5s, citing Gemini's 15 RPM, but Gemini does
+            # not extract (see LLMService.analyze_article) and most analysed
+            # articles end here, so it was most of a run's waiting.
             import time
             time.sleep(REJECT_PAUSE_SECONDS)
             continue
