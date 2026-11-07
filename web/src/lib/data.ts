@@ -48,6 +48,8 @@ export interface GateSummary {
   published?: number;
   unsourced?: number;
   implausible?: number;
+  /** Claims naming a person on headline-only reporting, held for the owner's review. */
+  needs_review?: number;
 }
 /** Counts (never names) of register rows the validation gate kept off the site. */
 export const registerQuality = () => readJson<GateSummary>("register_quality.json", {});

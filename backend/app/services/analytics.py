@@ -17,6 +17,7 @@ import re
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
+from backend.app.services import register_quality
 from backend.app.services.ingestion import parse_feed_date
 
 # Corporate suffixes and geography that make one entity read as several:
@@ -271,7 +272,7 @@ def psc_timeline(psc_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     months", which is the actual concealment signal. Undated or
     percentage-less rows contribute nothing.
     """
-    holdings: Dict[Tuple[str, str], Dict[str, Any]] = {}
+    holdings: Dict[str, Dict[str, Any]] = {}
     for row in psc_rows or []:
         person = str(row.get("Person Name", "")).strip()
         company = str(row.get("Company", "")).strip()
@@ -281,7 +282,11 @@ def psc_timeline(psc_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         date = str(row.get("Date", "")).strip()[:10]
         if pct is None or not date:
             continue
-        key = (entity_key(person), entity_key(company))
+        # The register's own identity (canonical name and company), so the
+        # timeline groups exactly as the register cards do: "Alhaji Ada
+        # Obi" and "Ada Obi" at one company share a series, two people who
+        # share a name at different companies never do.
+        key = register_quality.holder_key(row)
         h = holdings.setdefault(key, {"person": person, "company": company,
                                       "points": {}, "intermediates": []})
         # One point per day; a later row for the same day wins (freshest).

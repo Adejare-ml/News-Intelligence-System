@@ -37,6 +37,10 @@ from backend.app.pipeline import side_feeds
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
+# The owner's review queue names people the gate withheld, so it is kept
+# out of DATA_DIR: everything there is committed to the public repository,
+# served at /data and copied onto the site. Git-ignored.
+REVIEW_QUEUE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "db", "review_queue.json")
 
 # Lead images news APIs returned with this run's saved articles (article
 # URL -> image URL), merged into data/article_images.json at export.
@@ -513,6 +517,10 @@ def run_pipeline(seed: bool = False):
                 "Source URL": url,
                 "Source Title": title,
                 "Publisher": source,
+                # Whether the extractor read the full article or only the
+                # headline: the publish gate holds back claims about named
+                # people that rest on a headline alone.
+                "Basis": register_quality.basis_for_detail(detail_cells.get("Detail")),
             })
             
         articles_processed += 1
@@ -1033,9 +1041,18 @@ def export_static_json_database():
     psc_checked = register_quality.gate(collapse_identical_rows(psc_records))
     psc_records = register_quality.public_rows(psc_checked)
     psc_withheld = register_quality.withheld_summary(psc_checked)
-    if psc_withheld["unsourced"] or psc_withheld["implausible"]:
-        logger.info(f"Register gate withheld {psc_withheld['unsourced']} unsourced and "
-                    f"{psc_withheld['implausible']} implausible row(s) from the export.")
+    if psc_withheld["unsourced"] or psc_withheld["implausible"] or psc_withheld["needs_review"]:
+        logger.info(f"Register gate withheld {psc_withheld['unsourced']} unsourced, "
+                    f"{psc_withheld['implausible']} implausible and {psc_withheld['needs_review']} "
+                    "headline-only person row(s) from the export.")
+    gate_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(REVIEW_QUEUE_PATH, "w", encoding="utf-8") as f:
+        json.dump(register_quality.review_queue(psc_checked, gate_stamp), f, default=str, indent=2)
+    try:
+        psc_records = register_quality.attach_evidence(
+            psc_records, db.get_articles(), gate_stamp, register_quality.withheld_names(psc_checked))
+    except Exception as exc:
+        logger.warning(f"PSC evidence skipped ({type(exc).__name__})")
 
     # Legacy duplicate rows collapse at export (the sheet keeps its audit
     # trail): one row per company, one per (person, organization). Agencies
@@ -1062,7 +1079,9 @@ def export_static_json_database():
             "articles": _prev_snapshot("latest.json"),
             "companies": _prev_snapshot("companies.json"),
             "people": _prev_snapshot("people.json"),
-            "psc": _prev_snapshot("significant_control.json"),
+            # Pairs the gate now withholds would otherwise be listed by name
+            # as "removed" in this public file.
+            "psc": register_quality.without_withheld(_prev_snapshot("significant_control.json"), psc_checked),
         },
         {
             "articles": articles_sorted,
