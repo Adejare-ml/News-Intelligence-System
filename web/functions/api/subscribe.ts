@@ -60,7 +60,7 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
     token = newToken();
     await store.create(email, token, prefs, now.toISOString());
   } else if (existing.status === "unsubscribed") {
-    await store.reopen(email, prefs);
+    await store.reopen(email, prefs, now.toISOString());
   }
 
   if (!sendingEnabled(env) || !token) {

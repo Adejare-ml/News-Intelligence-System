@@ -40,6 +40,8 @@ function median(values: number[]): number | null {
  * (confirmed_at set, whether or not they have since unsubscribed). `counted`
  * is that denominator. median_hours_to_confirm: from sign-up to confirmation,
  * over everyone who confirmed. Both null when there is nothing to measure.
+ * A reader who unsubscribes and signs up again counts once, for the latest
+ * sign-up: reopen() restarts created_at and clears confirmed_at.
  */
 export function confirmationStats(rows: Pick<StatRow, "status" | "created_at" | "confirmed_at">[], now: Date) {
   const counted = rows.filter((r) => r.status !== "pending" || hoursBetween(r.created_at, now.toISOString()) >= CONFIRM_WAIT_HOURS);

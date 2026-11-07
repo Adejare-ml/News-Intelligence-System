@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { subscriberStore, sendLog, throttle } from "./subscribers.ts";
+import { confirmationStats } from "../api/stats.ts";
 import { addSubscriber, sqliteD1 } from "./d1-fake.test.ts";
 
 const T = (c: string) => c.repeat(48);
@@ -34,13 +35,28 @@ test("reopen only touches unsubscribed rows", async () => {
   const store = subscriberStore(db);
   const prefs = { categories: ["technology" as const], region: "global" as const, frequency: "daily" as const };
   addSubscriber(db, { email: "p@x.co", token: T("d"), status: "pending" });
-  await store.reopen("c@x.co", prefs);
-  await store.reopen("u@x.co", prefs);
-  await store.reopen("p@x.co", prefs);
+  await store.reopen("c@x.co", prefs, "2026-11-06T08:00:00.000Z");
+  await store.reopen("u@x.co", prefs, "2026-11-06T08:00:00.000Z");
+  await store.reopen("p@x.co", prefs, "2026-11-06T08:00:00.000Z");
   assert.deepEqual((await store.byEmail("c@x.co"))!.categories, ["business"]);
   assert.deepEqual((await store.byEmail("p@x.co"))!.categories, ["business"], "a pending row keeps its owner's choices");
   const u = (await store.byEmail("u@x.co"))!;
   assert.deepEqual([u.status, u.categories, u.paused], ["pending", ["technology"], false]);
+});
+
+test("a reader who signs up again is measured from the new sign-up", async () => {
+  const db = sqliteD1();
+  const store = subscriberStore(db);
+  const prefs = { categories: ["business" as const], region: "nigeria" as const, frequency: "daily" as const };
+  await store.create("u@x.co", T("u"), prefs, "2026-04-20T08:00:00.000Z");
+  await store.confirm(T("u"), "2026-04-20T09:00:00.000Z");
+  await store.unsubscribe(T("u"), "2026-05-01T08:00:00.000Z");
+  await store.reopen("u@x.co", prefs, "2026-11-06T08:00:00.000Z");
+  const reopened = (await store.statRows())[0];
+  assert.deepEqual([reopened.created_at, reopened.confirmed_at], ["2026-11-06T08:00:00.000Z", null], "the row describes the new sign-up");
+  await store.confirm(T("u"), "2026-11-06T10:00:00.000Z");
+  const stats = confirmationStats(await store.statRows(), new Date("2026-11-10T00:00:00.000Z"));
+  assert.deepEqual(stats, { rate: 1, counted: 1, median_hours_to_confirm: 2 });
 });
 
 test("recipients are confirmed and not paused", async () => {

@@ -75,12 +75,17 @@ export function subscriberStore(db: D1Like) {
     /**
      * An unsubscribed address signing up again: pending, with the preferences
      * just chosen. A pending row is left alone, so nobody else can change what
-     * the owner's own confirmation link will confirm.
+     * the owner's own confirmation link will confirm. The sign-up dates start
+     * again too, so the stats and the stale-pending clean-up see this sign-up,
+     * not one from months ago.
      */
-    async reopen(email: string, prefs: Prefs): Promise<void> {
+    async reopen(email: string, prefs: Prefs, now: string): Promise<void> {
       await db
-        .prepare("UPDATE subscribers SET status = 'pending', unsubscribed_at = NULL, paused = 0, categories = ?, region = ?, frequency = ? WHERE email = ? AND status = 'unsubscribed'")
-        .bind(...prefValues(prefs), email)
+        .prepare(
+          `UPDATE subscribers SET status = 'pending', created_at = ?, confirmed_at = NULL, unsubscribed_at = NULL, paused = 0, categories = ?, region = ?, frequency = ?
+           WHERE email = ? AND status = 'unsubscribed'`,
+        )
+        .bind(now, ...prefValues(prefs), email)
         .run();
     },
 
