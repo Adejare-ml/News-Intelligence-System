@@ -329,6 +329,66 @@ def review_queue(rows: Iterable[Dict[str, Any]], generated: str) -> Dict[str, An
     return {"generated": generated, "counts": withheld_summary(rows), "rows": held}
 
 
+# --- evidence for each published claim -------------------------------------------
+
+QUOTE_LIMIT = 200
+_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|\s+\|\s+")
+
+
+def _cut(sentence: str, limit: int = QUOTE_LIMIT) -> str:
+    """The sentence, or its opening words up to the limit, marked as cut."""
+    if len(sentence) <= limit:
+        return sentence
+    return sentence[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
+
+
+def evidence_quote(texts: Iterable[Any], person: Any, company: Any) -> str:
+    """One stored sentence that names the holder or the company, or "".
+
+    Sentences naming the person in full win, then the surname alone (how
+    reports refer back to people), then the company. The words are lifted
+    as stored; nothing is paraphrased, so an empty string is the honest
+    answer when no stored sentence names either.
+    """
+    sentences = [s.strip() for t in texts or [] for s in _SENTENCE_SPLIT_RE.split(str(t or "")) if s.strip()]
+    full = canonical_person(person)
+    surname = (full.split() or [""])[-1]
+    firm = canonical_company(company)
+    for name in (full, surname, firm):
+        if not name:
+            continue
+        for s in sentences:
+            if _mentions(s, name):
+                return _cut(s)
+    return ""
+
+
+def attach_evidence(rows: Iterable[Dict[str, Any]], articles: Iterable[Dict[str, Any]],
+                    verified_at: str) -> List[Dict[str, Any]]:
+    """Copy each row with Evidence: {source_url, quote, date, last_verified}.
+
+    The quote comes from the stored article behind the row (its key facts,
+    which restate the article's own sentences, then its summary) or the
+    row's notes. The date is the article's publication date when it is on
+    file, else the day the row was extracted.
+    """
+    by_url = {str(a.get("URL") or a.get("url") or "").strip(): a for a in articles or []}
+    out = []
+    for row in rows or []:
+        r = dict(row or {})
+        url = str(r.get("Source URL") or "").strip()
+        article = by_url.get(url) if url else None
+        texts = [article.get("Key Facts"), article.get("Summary")] if article else []
+        r["Evidence"] = {
+            "source_url": url,
+            "quote": evidence_quote(texts + [r.get("Notes")], r.get("Person Name"), r.get("Company")),
+            "date": str((article or {}).get("Time") or r.get("Date") or "")[:10],
+            "last_verified": verified_at,
+        }
+        out.append(r)
+    return out
+
+
 def gate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """Annotate and collapse repeats: every row, published or not."""
     return collapse_same_report(annotate(rows))
