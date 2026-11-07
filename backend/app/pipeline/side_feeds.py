@@ -82,7 +82,7 @@ def export_tech_news(data_dir: str) -> None:
 
 
 def export_category_news(data_dir: str) -> None:
-    """Sports, technology, politics and entertainment headlines, Nigeria
+    """Technology and politics headlines, Nigeria
     and Global, for the site's category pages and the Morning Brief."""
     from backend.app.services.categories import build_category_news, has_headlines
     news = build_category_news()
