@@ -5,7 +5,8 @@
 // quarantined), then fails if either name appears anywhere in the output.
 // This catches a component that reads the raw register instead of
 // data.psc(), which is how the "No source on file" rows leaked onto the
-// home and entity pages before.
+// home and entity pages before. It also adds a published holder named in
+// suppressed.json, which must vanish the same way.
 import { cpSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
@@ -34,7 +35,43 @@ const SENTINELS = [
 ];
 const registerPath = join(data, "significant_control.json");
 const register = JSON.parse(readFileSync(registerPath, "utf-8"));
-writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS], null, 2));
+
+// A fully published holder the owner has unpublished (suppressed.json):
+// committed data must stop rendering on the next build, before any run.
+const HIDDEN = { person: "Zedekiah Leakcheck-Suppressed", company: "Sentinel Suppressed Mills Plc" };
+const hiddenRow = {
+  "Person Name": HIDDEN.person, Company: HIDDEN.company, Percentage: "55%", "Nature of Control": "Ownership of shares",
+  Source: "extracted", "Source URL": "https://punchng.com/sentinel", "Source Title": "Sentinel takes control",
+  Date: "2026-10-20", Kind: "stake", Public: true, Quarantined: false,
+};
+// The same person as the register might spell them: a middle initial and a
+// neutral title, so only the canonical key ties the row to the hidden name.
+const variantRow = {
+  ...hiddenRow, "Person Name": "Zedekiah Q. Leakcheck-Suppressed", Company: "Sentinel Variant Mills Ltd",
+  "Source URL": "https://punchng.com/variant", "Source Title": "Mills changes hands",
+};
+writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS, hiddenRow, variantRow], null, 2));
+const addRows = (file, rows) => {
+  const path = join(data, file);
+  writeFileSync(path, JSON.stringify([...JSON.parse(readFileSync(path, "utf-8")), ...rows], null, 2));
+};
+addRows("companies.json", [{ Company: HIDDEN.company, "Mention Count": 40, "Last Seen": "2026-10-20" }]);
+addRows("people.json", [{ Name: HIDDEN.person, Position: "Chairman", Organization: HIDDEN.company, Date: "2026-10-20" }]);
+addRows("procurement.json", [{ Agency: "Federal Ministry of Works", Contractor: HIDDEN.company, Project: "Road", Date: "2026-10-20" }]);
+addRows("latest.json", [{
+  ID: "999999", Time: "2026-10-20T07:00:00Z", Title: `${HIDDEN.person} takes control of ${HIDDEN.company}`,
+  Source: "The Punch", URL: "https://punchng.com/sentinel", Category: "Corporate", "Risk Score": "80",
+  Summary: "Sentinel story.", Entities: `${HIDDEN.person}|${HIDDEN.company}`,
+}]);
+// Category headlines feed /news/<category>/ and the emailed section pages.
+const categoryPath = join(data, "category_news.json");
+const categories = JSON.parse(readFileSync(categoryPath, "utf-8"));
+categories.sections.politics.nigeria.unshift(
+  { title: `${HIDDEN.person} speaks on 2027`, url: "https://punchng.com/speaks", source: "The Punch", published: "" },
+  { title: "Sentinel Suppressed Mills posts results", url: "https://punchng.com/results", source: "The Punch", published: "" },
+);
+writeFileSync(categoryPath, JSON.stringify(categories, null, 2));
+writeFileSync(join(data, "suppressed.json"), JSON.stringify([{ name: HIDDEN.person }, { name: HIDDEN.company }]));
 
 try {
   execFileSync("npx", ["astro", "build", "--outDir", out], {
@@ -44,7 +81,9 @@ try {
   });
 
   const leaks = [];
-  const needles = SENTINELS.flatMap((r) => [r["Person Name"], r.Company]);
+  const needles = [...SENTINELS.flatMap((r) => [r["Person Name"], r.Company]), 
+  // Cores of the hidden names, so the variant spellings count as leaks too.
+  "Leakcheck-Suppressed", "Sentinel Suppressed Mills", "Sentinel Variant Mills"];
   const walk = (dir) => {
     for (const name of readdirSync(dir)) {
       const path = join(dir, name);
@@ -61,10 +100,10 @@ try {
   walk(out);
 
   if (leaks.length) {
-    console.error("check-leaks: withheld register rows reached the site:\n  " + leaks.join("\n  "));
+    console.error("check-leaks: withheld or unpublished names reached the site:\n  " + leaks.join("\n  "));
     process.exitCode = 1;
   } else {
-    console.log(`check-leaks: OK, ${SENTINELS.length} withheld rows appear on no page.`);
+    console.log(`check-leaks: OK, ${SENTINELS.length} withheld rows and an unpublished holder appear on no page.`);
   }
 } finally {
   rmSync(work, { recursive: true, force: true });

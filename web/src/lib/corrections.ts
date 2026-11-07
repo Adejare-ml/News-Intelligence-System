@@ -19,3 +19,22 @@ export function correctionUrl(subject = ""): string {
   );
   return `${DEFAULT}?labels=correction&title=${title}&body=${body}`;
 }
+
+/** One entry in the public corrections log (corrections.json, kept by the owner). */
+export interface Correction {
+  date: string;
+  ref: string;
+  what_changed: string;
+  reason: string;
+}
+
+/** The log, newest first. Entries without a date or a change are skipped. */
+export function readCorrections(raw: unknown): Correction[] {
+  if (!Array.isArray(raw)) return [];
+  const text = (v: unknown) => String(v ?? "").trim();
+  return raw
+    .filter((e): e is Record<string, unknown> => !!e && typeof e === "object")
+    .map((e) => ({ date: text(e.date), ref: text(e.ref), what_changed: text(e.what_changed), reason: text(e.reason) }))
+    .filter((e) => e.date && e.what_changed)
+    .sort((a, b) => b.date.localeCompare(a.date));
+}

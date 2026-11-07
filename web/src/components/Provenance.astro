@@ -2,10 +2,10 @@
 /**
  * Where a holding comes from, on every card that shows one: the outlet that
  * reported it, that it is not checked against the CAC register, and how to
- * ask for a correction.
+ * dispute it (the right-of-reply form at /dispute/).
  */
 import type { Holding } from "../lib/psc.ts";
-import { correctionUrl } from "../lib/corrections.ts";
+import { href } from "../lib/url.ts";
 
 interface Props {
   holding: Holding;
@@ -21,7 +21,7 @@ const outlet = src?.publisher || "a news report";
     <>No source article on file</>
   )}
   {h.hasFilingRef ? ", with a CAC filing reference on record." : ", not verified with the CAC register."}
-  {" "}<a class="fix" href={correctionUrl(`${h.person} / ${h.company}`)} rel="noopener noreferrer" target="_blank">Report an error</a>
+  {" "}<a class="fix" href={href(`dispute/?ref=${encodeURIComponent(`${h.person} / ${h.company}`)}`)}>Dispute this record</a>
 </p>
 
 <style>
