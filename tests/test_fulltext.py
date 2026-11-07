@@ -167,6 +167,22 @@ def test_a_redirect_loop_gives_up():
     assert fetcher.used == 1
 
 
+def test_a_page_served_without_a_charset_is_read_as_its_own_encoding(monkeypatch):
+    # requests would decode "text/html" with no charset as ISO-8859-1 and
+    # garble every naira sign and curly quote before extraction.
+    monkeypatch.setattr(fulltext, "trafilatura", None)
+    monkeypatch.setattr(fulltext.story_detail, "detail_level", lambda *a: "full")
+    resp = fulltext.requests.models.Response()
+    resp.status_code = 200
+    resp.headers["Content-Type"] = "text/html"
+    # What requests' HTTP adapter sets from that header.
+    resp.encoding = fulltext.requests.utils.get_encoding_from_headers(resp.headers)
+    resp._content = ('<html><head><meta charset="utf-8"></head><body><article>'
+                     "<p>Dangote’s ₦50bn stake — naira</p></article></body></html>").encode("utf-8")
+    fetcher = fulltext.FullTextFetcher(get=lambda url, **k: resp, robots=FakeRobots())
+    assert fetcher.fetch("https://businessday.ng/x/", "t", "s") == "Dangote’s ₦50bn stake — naira"
+
+
 def test_a_network_error_gives_nothing():
     def get(url, **kwargs):
         raise fulltext.requests.ConnectionError("down")

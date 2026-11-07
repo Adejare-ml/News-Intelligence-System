@@ -15,7 +15,7 @@ never the article itself.
 from __future__ import annotations
 
 import logging
-from typing import Any, Callable, Dict, Optional, Tuple
+from typing import Any, Callable, Dict, Optional, Tuple, Union
 from urllib import robotparser
 from urllib.parse import urljoin, urlparse
 
@@ -39,7 +39,7 @@ MAX_REDIRECTS = 3
 USER_AGENT = "AURA-NewsIntel/1.0 (+https://github.com/Adejare-ml/News-Intelligence-System)"
 
 
-def extract_main_text(html: str) -> str:
+def extract_main_text(html: Union[str, bytes]) -> str:
     """The article's own text: trafilatura when installed, else the <p>s of <article>."""
     if trafilatura is not None:
         text = trafilatura.extract(html)
@@ -115,9 +115,15 @@ class FullTextFetcher:
             return None
         self.used += 1
         resp = self._follow(url)
-        if resp is None or resp.status_code != 200 or "html" not in resp.headers.get("Content-Type", ""):
+        if resp is None:
             return None
-        text = extract_main_text(resp.text)
+        content_type = resp.headers.get("Content-Type", "").lower()
+        if resp.status_code != 200 or "html" not in content_type:
+            return None
+        # Without a charset in the header requests decodes as ISO-8859-1,
+        # garbling naira signs and quotes; the raw bytes let the parser read
+        # the page's own <meta charset> instead.
+        text = extract_main_text(resp.text if "charset" in content_type else resp.content)
         # Less than a full article's worth is a paywall, consent wall or
         # teaser, and would read no better than the snippet already had.
         if story_detail.detail_level(text, title, source) != "full":
