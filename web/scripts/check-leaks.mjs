@@ -21,20 +21,32 @@ const data = join(work, "data");
 const out = join(work, "out");
 cpSync(realData, data, { recursive: true });
 
+// Date the sentinels on the last run, so they fall inside the week that
+// /changes/ lists and that page is tested too.
+const history = JSON.parse(readFileSync(join(data, "history.json"), "utf-8"));
+const runDate = String(history.generated || new Date().toISOString()).slice(0, 10);
+
 const SENTINELS = [
   {
     "Person Name": "Zedekiah Leakcheck-Unsourced", Company: "Sentinel Unsourced Holdings Plc",
-    Percentage: "61.5%", "Nature of Control": "Ownership of shares", Source: "", Date: "2026-10-20",
+    Percentage: "61.5%", "Nature of Control": "Ownership of shares", Source: "", Date: runDate,
   },
   {
     "Person Name": "Zedekiah Leakcheck-Quarantined", Company: "Sentinel Quarantined Ltd",
     Percentage: "", "Nature of Control": "Significant influence or control", Source: "extracted",
-    Date: "2026-10-20", Quarantined: true, Quality: ["implausible"],
+    Date: runDate, Quarantined: true, Quality: ["implausible"],
   },
 ];
+// A sourced row the gate publishes: it must reach /changes/, which proves
+// that page would show a withheld row too if it read the raw register.
+const CONTROL = {
+  "Person Name": "Zedekiah Leakcheck-Published", Company: "Sentinel Published Holdings Plc",
+  Percentage: "12%", "Nature of Control": "Ownership of shares", Source: "extracted", Date: runDate,
+  "Source URL": "https://example.com/leakcheck-control",
+};
 const registerPath = join(data, "significant_control.json");
 const register = JSON.parse(readFileSync(registerPath, "utf-8"));
-writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS], null, 2));
+writeFileSync(registerPath, JSON.stringify([...register, ...SENTINELS, CONTROL], null, 2));
 
 try {
   execFileSync("npx", ["astro", "build", "--outDir", out], {
@@ -59,6 +71,8 @@ try {
     }
   };
   walk(out);
+  const changes = readFileSync(join(out, "changes", "index.html"), "utf-8");
+  if (!changes.includes(CONTROL["Person Name"])) leaks.push("/changes/: the published control row is missing, so this check proves nothing there");
 
   if (leaks.length) {
     console.error("check-leaks: withheld register rows reached the site:\n  " + leaks.join("\n  "));
