@@ -1,7 +1,7 @@
 name: Draft finding of the week
 
 # Drafts the Ownership Finding of the Week from the latest pick in
-# backend/app/static/data/findings/picks.json (see "Ownership Finding of the Week" in README.md).
+# backend/app/static/data/findings/picks.json (see docs/FINDINGS.md).
 # The draft goes to a branch named finding/<week> and the share text is
 # printed to this run's summary. Nothing is posted, merged or opened: the
 # owner checks the draft and merges the branch to publish it.

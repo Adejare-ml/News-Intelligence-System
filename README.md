@@ -167,18 +167,7 @@ Each run exports these to `backend/app/static/data/*.json` for the site and writ
 
 ### Ownership Finding of the Week
 
-One finding a week, picked and hand-checked by the owner, for readers to share. Nothing is posted automatically.
-
-1. **Pick.** Add an entry to [`backend/app/static/data/findings/picks.json`](backend/app/static/data/findings/picks.json) on `main`: `{"week": "2026-W45", "entity": "tony-elumelu", "headline": "...", "note": "..."}`. `week` is the ISO week (`YYYY-Www`); the newest one is drafted. Give either `entity` (the slug of an `/entity/<slug>/` page) or `record_ref` (one holding, `person-slug/company-slug`). `note` is optional context.
-2. **Draft.** Run **Actions → Draft finding of the week** (or `python scripts/draft_finding.py`). It writes `findings/<week>.json`: 2–3 bullets, each with outlet, link and date, plus template LinkedIn (≤ 1,300 chars), X (≤ 280) and journalist-email drafts ending with the finding's link. The workflow commits it to branch `finding/<week>` and prints the drafts in the run summary.
-3. **Check by hand.** Open every source and confirm each bullet; edit the JSON on the branch if needed.
-4. **Publish.** Merge the branch: the next build adds `/findings/<week>/` and a home page link. Post the drafts yourself.
-
-The script refuses (exit 1, no file written) when the pick has no published register row or article behind it (unsourced or quarantined rows never count), when a `record_ref` holding has no published row, when the entity, headline or note names a person with no published register row, or when fewer than two facts can be cited. `procurement.json` rows carry no article link, so they are not used. Each build rechecks merged findings against the register and drops any whose register row has since been withheld.
-
-**A good finding** is one clear fact about control (who holds what, through what), backed by two or more reports, that readers would not already know, worded as reported ("is reported to hold"), not as a filing.
-
-**Never name a person without the register's evidence.** Only people named by a published register row may appear. The script catches names AURA has seen, so check the wording yourself; finding pages naming a person carry `noindex`, like the register.
+A weekly, hand-checked finding for readers to share; the routine is in [docs/FINDINGS.md](docs/FINDINGS.md).
 
 ## 🧪 Testing
 
