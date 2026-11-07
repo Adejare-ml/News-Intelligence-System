@@ -5,6 +5,7 @@ import { correctionUrl } from "../../lib/corrections.ts";
 import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
+import Term from "../../components/Term.astro";
 import * as data from "../../lib/data.ts";
 import { groupHoldings, summarise, counted, registerOrder } from "../../lib/psc.ts";
 import { within, REGISTER_RECENT_DAYS } from "../../lib/freshness.ts";
@@ -42,7 +43,7 @@ const filters = [
   description="Persons with significant control over Nigerian companies, as reported in the news: stakes, disclosure bands and patterns worth checking."
 >
   <section class="wrap intro">
-    <p class="eyebrow">Persons with significant control</p>
+    <p class="eyebrow">Persons with significant control (<Term term="PSC" />)</p>
     <h1 class="h1" data-split>The ownership register</h1>
     <p class="lede">
       Who the press reports as owning or controlling Nigerian companies, grouped from the reports
@@ -54,7 +55,7 @@ const filters = [
       <div><dt>People and firms</dt><dd class="num">{s.holders}</dd></div>
       <div><dt>Companies</dt><dd class="num">{s.companies}</dd></div>
       <div><dt>With a reported stake</dt><dd class="num">{s.withStake}</dd></div>
-      <div><dt>Carry a CAC filing reference</dt><dd class="num">{s.filingRefRate === null ? "—" : `${Math.round(s.filingRefRate * 100)}%`}</dd></div>
+      <div><dt>Carry a <Term term="CAC" /> filing reference</dt><dd class="num">{s.filingRefRate === null ? "—" : `${Math.round(s.filingRefRate * 100)}%`}</dd></div>
     </dl>
     <p class="note">{[
       "The numbers count ownership claims only, not board roles.",
