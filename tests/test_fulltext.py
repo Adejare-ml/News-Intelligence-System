@@ -307,6 +307,31 @@ def test_a_failed_second_extraction_keeps_the_snippet_one():
     assert (text, basis) == ("snippet", "headline")
 
 
+# --- which stories get the budget --------------------------------------------------------------
+
+def test_relevant_stories_come_first_riskiest_first_and_the_rest_keep_feed_order():
+    analyses = [
+        {"relevant": False, "risk_score": 90},
+        {"relevant": True, "risk_score": 20},
+        {"relevant": True, "risk_score": 80},
+        {"relevant": False, "risk_score": 10},
+        {"relevant": True, "risk_score": 80},
+    ]
+    # Ties keep feed order, so a run is reproducible.
+    assert fulltext.fetch_order(analyses) == [2, 4, 1, 0, 3]
+
+
+def test_the_pipeline_spends_the_full_text_budget_in_risk_order():
+    import inspect
+    import run_pipeline
+    src = inspect.getsource(run_pipeline.run_pipeline)
+    # Every snippet is extracted before any story is deepened, so the
+    # riskiest relevant stories, not the first in the feed, get the fetches.
+    first_extraction = src.index("LLMService.analyze_article(title, cleaned_text)")
+    ordering = src.index("fulltext.fetch_order(")
+    assert first_extraction < ordering < src.index("fulltext.deepen(")
+
+
 # --- where the basis is kept -------------------------------------------------------------------
 
 def test_basis_and_quote_are_appended_to_articles_and_basis_to_significant_control():

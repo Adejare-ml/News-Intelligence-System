@@ -15,7 +15,7 @@ and a one-sentence Quote, never the article itself.
 from __future__ import annotations
 
 import logging
-from typing import Any, Callable, Dict, Optional, Tuple, Union
+from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 from urllib import robotparser
 from urllib.parse import urljoin, urlparse
 
@@ -153,6 +153,23 @@ class FullTextFetcher:
                 return None
         logger.info(f"Gave up on {url} after {MAX_REDIRECTS} redirects.")
         return None
+
+
+def fetch_order(analyses: List[Dict[str, Any]]) -> List[int]:
+    """Indices of snippet analyses in the order to finish them.
+
+    The relevant stories come first, riskiest first, so the run's few
+    full-text fetches go where they matter most rather than to whatever the
+    feeds listed first. The rest keep feed order; sorted() is stable, so
+    ties do too.
+    """
+    def rank(i: int) -> Tuple[int, int]:
+        a = analyses[i]
+        if a.get("relevant", False):
+            return (0, -int(a.get("risk_score", 10)))
+        return (1, 0)
+
+    return sorted(range(len(analyses)), key=rank)
 
 
 def deepen(analysis: Dict[str, Any], text: str, item: Dict[str, Any], fetcher: FullTextFetcher,

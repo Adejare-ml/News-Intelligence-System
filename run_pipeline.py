@@ -247,6 +247,7 @@ def run_pipeline(seed: bool = False):
     consecutive_failures = 0
     rejected_count = 0
     fulltext_fetcher = fulltext.FullTextFetcher()
+    snippet_analyses = []
 
     for item in candidates:
         url = item.get("url")
@@ -303,7 +304,6 @@ def run_pipeline(seed: bool = False):
 
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
-        snippet_text = cleaned_text
         try:
             analysis = LLMService.analyze_article(title, cleaned_text)
         except LLMCascadeError as e:
@@ -318,11 +318,25 @@ def run_pipeline(seed: bool = False):
                 break
             continue
         consecutive_failures = 0
+        snippet_analyses.append((item, cleaned_text, analysis))
+        # A URL listed twice in this batch is read once.
+        existing_urls.add(url)
+        # Keeps the extraction calls under Gemini's 15 requests a minute.
+        import time
+        time.sleep(4.0)
 
-        # Extracted from the snippet first; a story that reads as relevant is
-        # fetched in full (a few per run) and extracted again, and that
-        # reading decides relevance below. The row keeps the feed URL, which
-        # is what later runs deduplicate on.
+    # Every snippet is extracted first so that the run's few full-text
+    # fetches go to the riskiest relevant stories, not the first listed.
+    order = fulltext.fetch_order([analysis for _, _, analysis in snippet_analyses])
+    for item, cleaned_text, analysis in (snippet_analyses[i] for i in order):
+        url = item.get("url")
+        title = item.get("title")
+        source = item.get("source")
+        snippet_text = cleaned_text
+
+        # A story that reads as relevant is fetched in full (a few per run)
+        # and extracted again, and that reading decides relevance below. The
+        # row keeps the feed URL, which is what later runs deduplicate on.
         analysis, cleaned_text, basis = fulltext.deepen(
             analysis, cleaned_text, item, fulltext_fetcher, LLMService.analyze_article)
 
@@ -348,7 +362,7 @@ def run_pipeline(seed: bool = False):
                 )
             else:
                 logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
-            filtered_saved = db.add_article({
+            db.add_article({
                 "ID": "",
                 "Time": item.get("published_at") or datetime.now().isoformat(),
                 "Title": title,
@@ -361,13 +375,10 @@ def run_pipeline(seed: bool = False):
                 "Engine": analysis.get("engine", ""),
                 "Filter Reason": filter_reason(off_topic) if off_topic else "model-irrelevant"
             })
-            # Only cache the URL when the prevention row actually persisted,
-            # so a failed write is retried instead of silently skipped.
-            if filtered_saved:
-                existing_urls.add(url)
             rejected_count += 1
+            # Sheets write pacing only: the extraction call was paced above.
             import time
-            time.sleep(3.5)
+            time.sleep(1.0)
             continue
 
         # Write Article to Database. Event Type, Risk Level, Importance and
@@ -516,9 +527,6 @@ def run_pipeline(seed: bool = False):
             })
             
         articles_processed += 1
-        
-        # Add to existing_urls set to prevent processing duplicate URLs within the same candidate batch
-        existing_urls.add(url)
         
         # Throttle to avoid rate limiting when writing sequentially to sheets and calling Gemini
         import time
