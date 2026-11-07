@@ -3,9 +3,9 @@ import assert from "node:assert/strict";
 import { isFindingFile, publishableFindings, weekStart, whatsappHref, type Finding } from "./findings.ts";
 
 const sourced = {
-  "Person Name": "Tony Elumelu", Company: "Seplat", "Source URL": "https://punchng.com/a/", Quarantined: false,
+  "Person Name": "Tony Elumelu", Company: "Seplat", Confidence: "Full article", "Source URL": "https://punchng.com/a/", Quarantined: false,
 };
-const withheld = { "Person Name": "Zed Unsourced", Company: "Hidden Holdings Ltd", "Source URL": "" };
+const withheld = { "Person Name": "Zed Unsourced", Company: "Hidden Holdings Ltd", Confidence: "Full article", "Source URL": "" };
 
 function finding(over: Partial<Finding> = {}): Finding {
   return {
@@ -52,8 +52,8 @@ describe("findings", () => {
   test("drops a finding whose own row is withheld even when another published row shares its link", () => {
     // One article backs two rows; the gate quarantined the Elumelu/Seplat one.
     // Both names stay published through other rows, so only the record match can catch it.
-    const sameArticle = { "Person Name": "Femi Otedola", Company: "Seplat", "Source URL": "https://punchng.com/a/" };
-    const elsewhere = { "Person Name": "Tony Elumelu", Company: "UBA", "Source URL": "https://punchng.com/uba/" };
+    const sameArticle = { "Person Name": "Femi Otedola", Company: "Seplat", Confidence: "Full article", "Source URL": "https://punchng.com/a/" };
+    const elsewhere = { "Person Name": "Tony Elumelu", Company: "UBA", Confidence: "Full article", "Source URL": "https://punchng.com/uba/" };
     const out = publishableFindings([finding()], [{ ...sourced, Quarantined: true }, sameArticle, elsewhere]);
     assert.deepEqual(out, []);
   });
@@ -68,11 +68,11 @@ describe("findings", () => {
     // The gate keyed this row as "quin quarantined"; the finding spells it another way.
     const quarantined = {
       "Person Name": "Alhaji Quin O. Quarantined", "Person Key": "quin quarantined", Company: "Seplat",
-      "Source URL": "https://punchng.com/q/", Quarantined: true,
+      Confidence: "Full article", "Source URL": "https://punchng.com/q/", Quarantined: true,
     };
     const byKey = finding({ note: "Quin Quarantined is also linked." });
     // No Person Key on an older row: the middle initial still must not hide the name.
-    const unkeyed = { "Person Name": "Quin Quarantined", Company: "Seplat", "Source URL": "" };
+    const unkeyed = { "Person Name": "Quin Quarantined", Company: "Seplat", Confidence: "Full article", "Source URL": "" };
     const initial = finding({ note: "Quin O. Quarantined is also linked." });
     assert.deepEqual(publishableFindings([byKey], [sourced, quarantined]), []);
     assert.deepEqual(publishableFindings([initial], [sourced, unkeyed]), []);
@@ -82,7 +82,7 @@ describe("findings", () => {
     // The gate keys "FBN Holdings" and "FirstHoldCo" both as "first holdco".
     const quarantined = {
       "Person Name": "Quin Quarantined", Company: "FBN Holdings", "Company Key": "first holdco",
-      "Source URL": "https://punchng.com/fbn/", Quarantined: true,
+      Confidence: "Full article", "Source URL": "https://punchng.com/fbn/", Quarantined: true,
     };
     const alias = finding({
       headline: "Inside FirstHoldCo's new control map",
