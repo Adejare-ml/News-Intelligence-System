@@ -1,6 +1,7 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost as follow, onRequest as followOther } from "./follow.ts";
+import { onRequestGet as unsubscribe } from "./unsubscribe.ts";
 import { onRequestGet as confirmGet, onRequestPost as confirmPost } from "./follow-confirm.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import { followStore, MAX_FOLLOWS } from "../_lib/follows.ts";
@@ -135,4 +136,33 @@ test("confirm refuses bad links, unsubscribed readers, unknown companies and a f
   const full = await confirmPost({ request: new Request(confirmUrl(T("a"), "mtn-nigeria"), { method: "POST" }), env: e });
   assert.equal(full.status, 409);
   assert.match(await full.text(), new RegExp(`${MAX_FOLLOWS} companies`));
+});
+
+test("without JavaScript the form gets a readable page, not raw JSON", async () => {
+  const e = env();
+  const form = (fields: Record<string, string>) =>
+    follow({ request: new Request(`${SITE}/api/follow`, { method: "POST", body: new URLSearchParams(fields) }), env: e });
+  const ok = await form({ email: "reader@x.co", slug: "mtn-nigeria", company_site: "" });
+  assert.equal(ok.status, 200);
+  assert.match(ok.headers.get("Content-Type") ?? "", /text\/html/);
+  assert.match(await ok.text(), /Check your inbox.*MTN Nigeria/);
+  const bad = await form({ email: "nope", slug: "mtn-nigeria", company_site: "" });
+  assert.equal(bad.status, 400);
+  assert.match(bad.headers.get("Content-Type") ?? "", /text\/html/);
+  assert.match(await bad.text(), /doesn’t look right/);
+});
+
+test("unsubscribing deletes follows, so signing up again starts with none", async () => {
+  const e = env();
+  await followStore(e.DB).add(T("a"), "mtn-nigeria", "2026-11-06T07:00:00Z");
+  await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`), env: e });
+  assert.deepEqual(await followStore(e.DB).list(T("a")), []);
+});
+
+test("unsubscribe still works before migration 0007 is applied", async () => {
+  const e = env();
+  e.DB.raw.exec("DROP TABLE follows");
+  const res = await unsubscribe({ request: new Request(`${SITE}/api/unsubscribe?token=${T("a")}`), env: e });
+  assert.equal(res.status, 200);
+  assert.equal(e.DB.raw.prepare("SELECT status FROM subscribers WHERE token = ?").get(T("a"))!.status, "unsubscribed");
 });
