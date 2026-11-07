@@ -260,6 +260,22 @@ jobs:
               --body "$BODY"
           fi
 
+      # The alerts above and in scheduler_watchdog.yml stay open until a
+      # run goes through, so a good run closes them: an open alert then
+      # always means the pipeline is still broken or still missing slots.
+      - name: Close the alert issues after a good run
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          for LABEL in pipeline-missed pipeline-failure; do
+            for N in $(gh issue list --label "$LABEL" --state open --json number --jq '.[].number'); do
+              gh issue close "$N" --comment "Resolved: this run completed successfully. $RUN_URL"
+            done
+          done
+
   deploy-pages:
     name: Deploy to gh-pages
     needs: run-pipeline

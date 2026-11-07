@@ -35,3 +35,18 @@ def test_the_owner_email_also_goes_out_for_a_manual_email_edition():
     job = load("news_scheduler.yml")["jobs"]["run-pipeline"]
     cond = step(job, "Send the morning email briefing")["if"]
     assert "'11 7 * * *'" in cond and "inputs.email_edition" in cond
+
+
+def test_a_successful_run_closes_the_alert_issues():
+    job = load("news_scheduler.yml")["jobs"]["run-pipeline"]
+    last = job["steps"][-1]
+    assert last["if"] == "success()"
+    assert "pipeline-missed" in last["run"] and "pipeline-failure" in last["run"]
+
+
+def test_the_watchdog_raises_a_missed_slot_issue():
+    wf = load("scheduler_watchdog.yml")
+    assert wf["permissions"]["issues"] == "write"
+    run = step(wf["jobs"]["check"], "Raise an issue when nothing has run for six hours")["run"]
+    assert "--window-minutes 360" in run
+    assert "gh label create pipeline-missed" in run and "|| true" in run
