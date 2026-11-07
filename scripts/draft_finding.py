@@ -178,8 +178,13 @@ def gather(pick, register, articles, people):
         raise Refusal(f"{ref!r} is not in the published exports (no published register row or article)")
     if len(bullets) < MIN_BULLETS:
         raise Refusal(f"{ref!r} has only {len(bullets)} published fact; a finding needs at least {MIN_BULLETS}")
+    # A slug with no published person row could still be a person. Only a
+    # name the data files as a company is safe to draft without one.
+    if pick.get("entity") and ref not in backed_people and ref not in known_companies(register, people):
+        raise Refusal(f"{ref!r} is not a company the register or appointments name, and no published "
+                      "register row backs it as a person; it may name someone the register does not back")
     bullets = bullets[:MAX_BULLETS]
-    return bullets, names_person(pick, bullets, names, register, articles, people), ref
+    return bullets, names_person(pick, bullets, register, articles, people), ref
 
 
 def withheld_companies(register):
@@ -188,20 +193,27 @@ def withheld_companies(register):
     return {s for r in register if not is_public(r) for s in _company_slugs(r)} - published
 
 
-def names_person(pick, bullets, names, register, articles, people):
+def known_companies(register, people):
+    """Slugs the data files as companies: register companies and the
+    organisations in the appointments feed."""
+    return ({s for r in register for s in _company_slugs(r)}
+            | {slugify(p.get("Organization")) for p in people}) - {""}
+
+
+def names_person(pick, bullets, register, articles, people):
     """Whether the finding may name a person anywhere, which keeps its page out
     of search and the sitemap. It answers False only when it is sure: no
     register bullet (each names a holder), no person AURA knows in the
     headline, note or bullets, and every entity tagged on a cited article is
-    the pick itself or a company the register knows. Anything else could be a
-    person, so it counts as one."""
+    a company the data knows. The pick's own slug proves nothing: it could be
+    a person. Anything else could be a person, so it counts as one."""
     if any(b["kind"] == "register" for b in bullets):
         return True
     known_people = {s for r in register for s in _person_slugs(r)} | {slugify(p.get("Name")) for p in people}
     text = " ".join([str(pick.get("headline", "")), str(pick.get("note", ""))] + [b["text"] for b in bullets])
     if any(mentions(text, s) for s in known_people - {""}):
         return True
-    companies = names | {s for r in register for s in _company_slugs(r)}
+    companies = known_companies(register, people)
     cited = {b["url"] for b in bullets}
     tags = {slugify(e) for a in articles if str(a.get("URL", "")).strip() in cited
             for e in str(a.get("Entities", "")).split("|")} - {""}

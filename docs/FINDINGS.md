@@ -17,6 +17,7 @@ It exits 1 and writes no file when:
 - a `record_ref` holding has no published row;
 - the `entity` is a company that only withheld register rows name (the site would drop the finding without saying why);
 - the entity, headline or note names a person with no published register row;
+- the `entity` is neither a published register person nor a company the register or the appointments feed names (it could be a person the register does not back);
 - fewer than two facts can be cited.
 
 `procurement.json` rows carry no article link, so they are not used.

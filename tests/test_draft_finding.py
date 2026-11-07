@@ -268,3 +268,30 @@ def test_refuses_a_company_only_in_withheld_rows(tmp_path):
     assert result.returncode == 1
     assert "withheld" in result.stderr
     assert not (data / "findings" / "2026-W45.json").exists()
+
+
+BOLA_NEWS = [
+    {"Time": "2026-11-05T08:00:00Z", "Title": "Bola Newman buys stake in coastal shipping firm",
+     "Source": "BusinessDay", "URL": "https://businessday.ng/bola-1/", "Entities": "Bola Newman"},
+    {"Time": "2026-11-04T08:00:00Z", "Title": "Bola Newman named chairman",
+     "Source": "Vanguard", "URL": "https://vanguardngr.com/bola-2/", "Entities": "Bola Newman"},
+]
+BOLA_PICK = {"week": "2026-W45", "entity": "bola-newman", "headline": "Bola Newman's quiet shipping stake", "note": ""}
+
+
+def test_refuses_an_entity_it_cannot_confirm_is_a_company(tmp_path):
+    # No register row and no appointment names "Bola Newman" as a company, so
+    # the pick may well be a person the register does not back. The script
+    # must not draft (and index) a page naming them.
+    data = make_data(tmp_path, [BOLA_PICK], articles=BOLA_NEWS)
+    result = run(data)
+    assert result.returncode == 1
+    assert "not a company" in result.stderr
+    assert not (data / "findings" / "2026-W45.json").exists()
+
+
+def test_names_person_does_not_take_the_pick_itself_as_proof_of_a_company():
+    # A tag that matches only the pick's own slug is no evidence the pick is a
+    # company, so names_person must stay unsure (True).
+    bullets = [draft_finding._news_bullet(a) for a in BOLA_NEWS]
+    assert draft_finding.names_person(BOLA_PICK, bullets, REGISTER, BOLA_NEWS, PEOPLE) is True
