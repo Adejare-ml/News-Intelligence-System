@@ -48,15 +48,29 @@ function parse(body: Record<string, unknown>): Dispute | { error: string } {
   return { name, email, relationship, ref, message };
 }
 
-/** A stable, non-reversible key for the sender, so their IP is never stored. */
-async function senderKey(request: Request): Promise<string> {
+/**
+ * DISPUTE_SECRET is a Pages secret: the key for the throttle codes below.
+ * Kept out of the shared Env, since only this endpoint uses it.
+ */
+export type DisputeEnv = Env & { DISPUTE_SECRET?: string };
+
+/**
+ * A stable key for the sender, so their IP address is never stored. It is an
+ * HMAC under a secret: a plain hash with a salt in this public repo could be
+ * reversed by hashing every IPv4 address.
+ */
+async function senderKey(request: Request, secret: string): Promise<string> {
   const ip = request.headers.get("CF-Connecting-IP") || "unknown";
-  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`aura-dispute:${ip}`));
-  return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  const enc = new TextEncoder();
+  const key = await crypto.subtle.importKey("raw", enc.encode(secret), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const mac = await crypto.subtle.sign("HMAC", key, enc.encode(ip));
+  return [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
 /** Counts this post against the sender's day; true while they are within the limit. */
 async function withinLimit(env: Env, key: string, day: string): Promise<boolean> {
+  // Only today's counts matter; older codes are deleted rather than kept.
+  await env.DB!.prepare("DELETE FROM dispute_throttle WHERE day < ?").bind(day).run();
   const row = await env.DB!.prepare(
     "INSERT INTO dispute_throttle (key, day, count) VALUES (?, ?, 1) ON CONFLICT(key, day) DO UPDATE SET count = count + 1 RETURNING count",
   )
@@ -80,7 +94,7 @@ function ownerMail(to: string, d: Dispute, when: string) {
   return { to, subject: `AURA dispute: ${d.ref}`, text, html };
 }
 
-export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
+export async function onRequestPost({ request, env }: Ctx & { env: DisputeEnv }): Promise<Response> {
   // The page's script sends JSON; a browser without JavaScript sends the form.
   const wantsPage = !(request.headers.get("Content-Type") || "").includes("application/json");
   const reply = (title: string, message: string, status: number) => {
@@ -99,10 +113,10 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   const parsed = parse(body);
   if ("error" in parsed) return reply("Please check the form", parsed.error, 400);
 
-  if (!env.DB) return reply("Not open yet", "The dispute form opens very soon. Please try again later.", 503);
+  if (!env.DB || !env.DISPUTE_SECRET) return reply("Not open yet", "The dispute form opens very soon. Please try again later.", 503);
 
   const now = new Date().toISOString();
-  if (!(await withinLimit(env, await senderKey(request), now.slice(0, 10)))) return received();
+  if (!(await withinLimit(env, await senderKey(request, env.DISPUTE_SECRET), now.slice(0, 10)))) return received();
 
   await env.DB.prepare("INSERT INTO disputes (created_at, ref, name, email, relationship, message) VALUES (?, ?, ?, ?, ?, ?)")
     .bind(now, parsed.ref, parsed.name, parsed.email, parsed.relationship, parsed.message)

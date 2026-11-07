@@ -14,8 +14,9 @@ CREATE TABLE IF NOT EXISTS disputes (
 );
 
 -- At most a few disputes per sender a day, so the form cannot be used to
--- flood the table or the owner's inbox. The key is a hash of the sender's
--- IP address, never the address itself; old days can be deleted freely.
+-- flood the table or the owner's inbox. The key is an HMAC of the sender's
+-- IP address under the DISPUTE_SECRET Pages secret, never the address
+-- itself, and /api/dispute deletes rows from earlier days as it goes.
 CREATE TABLE IF NOT EXISTS dispute_throttle (
   key   TEXT NOT NULL,
   day   TEXT NOT NULL,                        -- YYYY-MM-DD, UTC

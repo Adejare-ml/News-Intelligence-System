@@ -112,6 +112,12 @@ the deploy that ships the form:
 npx wrangler d1 execute aura --remote --file=web/migrations/0005_disputes.sql
 ```
 
+It also needs a `DISPUTE_SECRET` (**Secret**, Production) in the Pages
+project's environment variables: a long random string, e.g.
+`openssl rand -hex 32`. It keys the per-sender daily limit, so the stored
+codes cannot be turned back into IP addresses. Until it is set, the form
+says it opens soon and stores nothing.
+
 New disputes arrive with status `open`. Read them in the D1 console
 (`SELECT * FROM disputes WHERE status = 'open' ORDER BY id`), reply by
 email, then mark them done (`UPDATE disputes SET status = 'resolved' WHERE id = ?`).

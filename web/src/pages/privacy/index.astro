@@ -34,8 +34,9 @@ import { href } from "../../lib/url.ts";
   <p>
     The <a href={href("dispute/")}>dispute form</a> stores your name, email address, your relationship to the
     record and your message, so we can look into it and reply. It is never published. We keep it as long as
-    we need to handle the dispute and to show what we did about it. We do not store your IP address: a
-    one-way code made from it limits how many disputes one sender can send in a day.
+    we need to handle the dispute and to show what we did about it. We do not store your IP address. To
+    limit how many disputes one sender can send in a day, we keep a code made from it with a secret key,
+    and delete that code the next day.
   </p>
 
   <h2>People named in our records</h2>
