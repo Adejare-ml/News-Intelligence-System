@@ -50,6 +50,7 @@ class TestCollectRecordsCounts:
             return staticmethod(lambda *a, **k: [{"title": f"t{i}", "source": "s",
                                                   "url": f"u{i}"} for i in range(n)])
         monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss", fetcher(3))
+        monkeypatch.setattr(NewsIngestionService, "fetch_outlet_feeds", fetcher(4))
         monkeypatch.setattr(NewsIngestionService, "fetch_news_api", fetcher(0))
         monkeypatch.setattr(NewsIngestionService, "fetch_gnews", fetcher(2))
         monkeypatch.setattr(NewsIngestionService, "fetch_guardian_news", fetcher(0))
@@ -63,7 +64,7 @@ class TestCollectRecordsCounts:
         NewsIngestionService.collect_all()
         # Keyless adapters are not failing, they are off: not counted.
         assert NewsIngestionService.last_source_counts == {
-            "Google News RSS": 3, "NewsAPI": 0, "GNews": 2}
+            "Google News RSS": 3, "Outlet feeds": 4, "NewsAPI": 0, "GNews": 2}
 
 
 class TestWriteSourceHealth:
