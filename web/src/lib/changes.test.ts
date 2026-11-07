@@ -6,6 +6,7 @@ const src = (n: number) => `https://example.ng/story-${n}`;
 const psc = (over: Record<string, unknown>) => ({
   "Person Name": "Ada Holder", Company: "Acme Plc", Percentage: "", Date: "2026-11-03",
   "Source URL": src(1), "Source Title": "Ada buys into Acme", Publisher: "The Punch", "Change Type": "disclosed",
+  Confidence: "Full article",
   ...over,
 });
 
