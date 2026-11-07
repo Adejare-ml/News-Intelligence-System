@@ -154,8 +154,81 @@ def has_source_link(row: Dict[str, Any]) -> bool:
     return str(row.get("Source URL") or "").strip().startswith(("http://", "https://"))
 
 
+# --- how strong a claim is -----------------------------------------------------
+
+# The extraction prompt shows this reference as an example; a model that
+# found none sometimes copies it, so it is never taken as a real filing.
+_EXAMPLE_FILING_REFS = {"cac/psc/2026/0891"}
+# A registry reference has letters and a run of digits ("RC 1234567",
+# "CAC/PSC/2026/1187"); "SEC disclosure" or "pending" is a word, not a ref.
+_FILING_REF_RE = re.compile(r"[a-z].*\d{3,}|\d{3,}.*[a-z]", re.I)
+
+
+def has_filing_ref(row: Dict[str, Any]) -> bool:
+    """True when the row carries something shaped like a registry reference."""
+    ref = _clean(row.get("Regulatory Filing Ref"))
+    return bool(ref) and ref.lower() not in _EXAMPLE_FILING_REFS and bool(_FILING_REF_RE.search(ref))
+
+
+# What the extractor read when it wrote the row ("Basis" column): only the
+# headline and feed snippet, the full article, or (set by the owner after
+# checking) a regulatory filing. Rows written before the column existed
+# have no basis on record, so they count as the weakest.
+_BASES = ("headline", "article", "filing")
+
+
+def basis_for_detail(detail: Any) -> str:
+    """The Basis to store for an extraction, from story_detail.detail_level.
+
+    A feed snippet is still not the article, so only full text counts.
+    """
+    return "article" if str(detail or "").strip().lower() == "full" else "headline"
+
+
+def basis_of(row: Dict[str, Any]) -> str:
+    basis = _clean(row.get("Basis")).lower()
+    return basis if basis in _BASES else "headline"
+
+
+def is_approved(row: Dict[str, Any]) -> bool:
+    """The owner checked the claim and set Approved = yes in the sheet."""
+    return _clean(row.get("Approved")).lower() == "yes"
+
+
+def confidence(row: Dict[str, Any]) -> str:
+    """The tier readers see on every published record."""
+    basis = basis_of(row)
+    if has_filing_ref(row) or basis == "filing":
+        return "Official filing"
+    if basis == "article":
+        return "Full article"
+    return "Headline only"
+
+
+# Words that make a holder a company, trust or vehicle rather than a person.
+_HOLDER_ENTITY_WORDS = _COMPANY_SUFFIXES | {
+    "nominees", "nominee", "capital", "investments", "investment", "partners",
+    "fund", "ventures", "trust", "trustees", "llp",
+}
+
+
+def names_person(row: Dict[str, Any]) -> bool:
+    """True when the holder named on the row reads as a natural person.
+
+    Companies-only records (one company holding another) are not claims
+    about an individual, so the person rule leaves them alone.
+    """
+    name = _clean(row.get("Person Name"))
+    if not name:
+        return False
+    if any(w in _HOLDER_ENTITY_WORDS for w in _fold(name).split()):
+        return False
+    return not relevance.is_role_or_org_name(name)
+
+
 def quality_flags(row: Dict[str, Any]) -> List[str]:
-    """'unsourced', 'implausible' and/or 'no_filing' for one register row."""
+    """'unsourced', 'implausible', 'unverified_person' and/or 'no_filing'
+    for one register row."""
     flags = []
     if not has_source_link(row):
         flags.append("unsourced")
@@ -166,14 +239,29 @@ def quality_flags(row: Dict[str, Any]) -> List[str]:
     )
     if (pct is not None and not 0 <= pct <= 100) or person in _NON_BUSINESS_FIGURES or off_topic:
         flags.append("implausible")
-    if not _clean(row.get("Regulatory Filing Ref")):
+    # A claim about a named person needs more than a headline behind it:
+    # a filing reference, the full article, or the owner's sign-off.
+    if names_person(row) and confidence(row) == "Headline only" and not is_approved(row):
+        flags.append("unverified_person")
+    if not has_filing_ref(row):
         flags.append("no_filing")
     return flags
 
 
+# Why a row was kept off the site, in words the owner can act on.
+REASONS = {
+    "unsourced": "No link to the article that reported it.",
+    "implausible": "Judged implausible: a stake out of range, an off-topic story, "
+                   "or a sport or entertainment figure.",
+    "unverified_person": "Names a person on headline-only reporting: needs a filing "
+                         "reference, the full article, or Approved = yes in the sheet.",
+}
+
+
 def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Copy each register row with Person Key, Company Key, Kind, Quality
-    and Quarantined added. No row is dropped; 'null' board roles are blanked."""
+    """Copy each register row with Person Key, Company Key, Kind, Quality,
+    Quarantined and Confidence added. No row is dropped; 'null' board roles
+    are blanked."""
     out = []
     for row in rows or []:
         r = dict(row or {})
@@ -185,12 +273,14 @@ def annotate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
         r["Kind"] = classify_row(r)
         r["Quality"] = flags
         r["Quarantined"] = "implausible" in flags
+        r["Confidence"] = confidence(r)
         out.append(r)
     return out
 
 
 def is_public(row: Dict[str, Any]) -> bool:
-    """A row the site may publish: sourced and not quarantined.
+    """A row the site may publish: sourced, not quarantined and, when it
+    names a person, resting on more than a headline.
 
     A label is not enough for the rest: "No source on file" next to a named
     person and a stake still publishes the claim. Withheld rows stay in the
@@ -200,7 +290,7 @@ def is_public(row: Dict[str, Any]) -> bool:
     quarantined = row.get("Quarantined")
     if quarantined is None:
         quarantined = "implausible" in quality
-    return not quarantined and "unsourced" not in quality
+    return not quarantined and "unsourced" not in quality and "unverified_person" not in quality
 
 
 def public_rows(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -208,13 +298,35 @@ def public_rows(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return [dict(r, Public=True) for r in rows or [] if is_public(r)]
 
 
+def _withheld_reason(row: Dict[str, Any]) -> str:
+    """The one count a withheld row falls under, strongest reason first."""
+    if row.get("Quarantined"):
+        return "implausible"
+    if "unsourced" in (row.get("Quality") or quality_flags(row)):
+        return "unsourced"
+    return "needs_review"
+
+
 def withheld_summary(rows: Iterable[Dict[str, Any]]) -> Dict[str, int]:
     """Counts only, never names: how many rows the gate kept off the site."""
     rows = list(rows or [])
-    quarantined = sum(1 for r in rows if not is_public(r) and r.get("Quarantined"))
-    unsourced = sum(1 for r in rows if not is_public(r) and not r.get("Quarantined"))
-    return {"checked": len(rows), "published": len(rows) - quarantined - unsourced,
-            "unsourced": unsourced, "implausible": quarantined}
+    counts = {"unsourced": 0, "implausible": 0, "needs_review": 0}
+    for r in rows:
+        if not is_public(r):
+            counts[_withheld_reason(r)] += 1
+    return {"checked": len(rows), "published": len(rows) - sum(counts.values()), **counts}
+
+
+def review_queue(rows: Iterable[Dict[str, Any]], generated: str) -> Dict[str, Any]:
+    """Every withheld row in full, with the reasons it was withheld.
+
+    For the owner only: it names people the gate decided not to publish,
+    so it is written outside the published data folder.
+    """
+    rows = list(rows or [])
+    held = [dict(r, Reasons=[REASONS[f] for f in r.get("Quality") or [] if f in REASONS])
+            for r in rows if not is_public(r)]
+    return {"generated": generated, "counts": withheld_summary(rows), "rows": held}
 
 
 def gate(rows: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
