@@ -17,7 +17,7 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, Optional, Tuple
 from urllib import robotparser
-from urllib.parse import urlparse
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -35,6 +35,7 @@ logger = logging.getLogger(__name__)
 MAX_FULLTEXT = 10
 FETCH_TIMEOUT = 15
 ROBOTS_TIMEOUT = 5
+MAX_REDIRECTS = 3
 USER_AGENT = "AURA-NewsIntel/1.0 (+https://github.com/Adejare-ml/News-Intelligence-System)"
 
 
@@ -113,12 +114,8 @@ class FullTextFetcher:
         if not self._robots.allowed(url):
             return None
         self.used += 1
-        try:
-            resp = self._get(url, timeout=FETCH_TIMEOUT, headers={"User-Agent": USER_AGENT})
-        except requests.RequestException as exc:
-            logger.info(f"Full text fetch failed for {url} ({type(exc).__name__}).")
-            return None
-        if resp.status_code != 200 or "html" not in resp.headers.get("Content-Type", ""):
+        resp = self._follow(url)
+        if resp is None or resp.status_code != 200 or "html" not in resp.headers.get("Content-Type", ""):
             return None
         text = extract_main_text(resp.text)
         # Less than a full article's worth is a paywall, consent wall or
@@ -126,6 +123,30 @@ class FullTextFetcher:
         if story_detail.detail_level(text, title, source) != "full":
             return None
         return text
+
+
+    def _follow(self, url: str) -> Optional[Any]:
+        """The response at the end of a few redirects, each target checked against robots.txt.
+
+        requests would follow redirects itself, but then an outlet's AMP,
+        consent or tracking host would be read without asking its own
+        robots.txt.
+        """
+        for _ in range(MAX_REDIRECTS + 1):
+            try:
+                resp = self._get(url, timeout=FETCH_TIMEOUT, headers={"User-Agent": USER_AGENT},
+                                 allow_redirects=False)
+            except requests.RequestException as exc:
+                logger.info(f"Full text fetch failed for {url} ({type(exc).__name__}).")
+                return None
+            location = resp.headers.get("Location")
+            if resp.status_code not in (301, 302, 303, 307, 308) or not location:
+                return resp
+            url = urljoin(url, location)
+            if not self._robots.allowed(url):
+                return None
+        logger.info(f"Gave up on {url} after {MAX_REDIRECTS} redirects.")
+        return None
 
 
 def deepen(analysis: Dict[str, Any], text: str, item: Dict[str, Any], fetcher: FullTextFetcher,

@@ -121,6 +121,52 @@ def test_a_page_that_is_not_the_article_gives_nothing(response, monkeypatch):
     assert fetcher.fetch("https://businessday.ng/x/", "t", "s") is None
 
 
+def _redirecting(hops):
+    """A client that answers each URL in `hops` with a redirect to the next value."""
+    calls = []
+
+    def get(url, **kwargs):
+        calls.append((url, kwargs))
+        if url in hops:
+            resp = FakeResponse("", status=301)
+            resp.headers["Location"] = hops[url]
+            return resp
+        return FakeResponse(ARTICLE_HTML)
+
+    get.calls = calls
+    return get
+
+
+def test_each_redirect_target_is_checked_against_robots_txt(monkeypatch):
+    monkeypatch.setattr(fulltext, "trafilatura", None)
+    # A relative Location is resolved against the page that sent it.
+    get = _redirecting({"https://businessday.ng/x/": "https://amp.businessday.ng/x/",
+                        "https://amp.businessday.ng/x/": "/story/"})
+    robots = FakeRobots()
+    text = fulltext.FullTextFetcher(get=get, robots=robots).fetch(
+        "https://businessday.ng/x/", "Dangote takes control", "BusinessDay")
+    assert "acquired a 60 per cent stake" in text
+    assert robots.asked == ["https://businessday.ng/x/", "https://amp.businessday.ng/x/",
+                            "https://amp.businessday.ng/story/"]
+    assert all(kwargs["allow_redirects"] is False for _, kwargs in get.calls)
+
+
+def test_a_redirect_to_a_disallowed_page_is_not_followed():
+    get = _redirecting({"https://businessday.ng/x/": "https://consent.example/wall/"})
+    fetcher = fulltext.FullTextFetcher(get=get, robots=FakeRobots(disallowed=("consent.example",)))
+    assert fetcher.fetch("https://businessday.ng/x/", "t", "s") is None
+    assert [url for url, _ in get.calls] == ["https://businessday.ng/x/"]
+
+
+def test_a_redirect_loop_gives_up():
+    get = _redirecting({"https://businessday.ng/a/": "https://businessday.ng/b/",
+                        "https://businessday.ng/b/": "https://businessday.ng/a/"})
+    fetcher = fulltext.FullTextFetcher(get=get, robots=FakeRobots())
+    assert fetcher.fetch("https://businessday.ng/a/", "t", "s") is None
+    assert len(get.calls) == 1 + fulltext.MAX_REDIRECTS
+    assert fetcher.used == 1
+
+
 def test_a_network_error_gives_nothing():
     def get(url, **kwargs):
         raise fulltext.requests.ConnectionError("down")
