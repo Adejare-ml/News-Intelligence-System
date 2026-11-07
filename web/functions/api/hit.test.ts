@@ -45,15 +45,25 @@ test("stores nothing that identifies a reader", async () => {
   assert.doesNotMatch(JSON.stringify(rows(db)), /1\.2\.3\.4|abc|Mozilla/);
 });
 
-test("drops the query string and rejects bad paths and sources", async () => {
+test("drops the query string and rejects bad paths", async () => {
   const db = sqliteD1();
   await beacon(db, { p: "/news/?q=dangote#top" });
   assert.equal((await beacon(db, { p: "news/" })).status, 400);
   assert.equal((await beacon(db, { p: `/${"a".repeat(200)}` })).status, 400);
-  assert.equal((await beacon(db, { p: "/", s: "Brief_1" })).status, 400);
-  assert.equal((await beacon(db, { p: "/", s: "a".repeat(41) })).status, 400);
   assert.equal((await beacon(db, "not json")).status, 400);
   assert.deepEqual(rows(db).map((r) => r.path), ["/news/"]);
+});
+
+test("a source it cannot use still counts the page view, with no source", async () => {
+  const db = sqliteD1();
+  for (const s of ["Twitter", "fb_share", "a".repeat(41)]) {
+    assert.equal((await beacon(db, { p: "/news/", s })).status, 204, s);
+  }
+  assert.equal((await click(db, `s=Bad_Value&to=${encodeURIComponent(`${ORIGIN}/brief/`)}`)).status, 302);
+  assert.deepEqual(rows(db), [
+    { day: "2026-11-07", path: "/brief/", source: "", count: 1 },
+    { day: "2026-11-07", path: "/news/", source: "", count: 3 },
+  ]);
 });
 
 test("does not count bots, or readers who ask not to be tracked", async () => {

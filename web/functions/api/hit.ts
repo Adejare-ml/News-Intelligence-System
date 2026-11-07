@@ -24,11 +24,14 @@ export function cleanPath(value: unknown): string | null {
   return path.startsWith("/") && path.length <= 200 ? path : null;
 }
 
-/** "" for no source, the source when it is short lowercase letters, digits and dashes, else null. */
-export function cleanSource(value: unknown): string | null {
-  if (value === undefined || value === null || value === "") return "";
-  const source = String(value);
-  return SOURCE_RE.test(source) ? source : null;
+/**
+ * The source when it is short lowercase letters, digits and dashes, else "".
+ * A link from elsewhere may carry its own ?src= convention ("Twitter",
+ * "fb_share"); the visit still counts, just without a source.
+ */
+export function cleanSource(value: unknown): string {
+  const source = String(value ?? "");
+  return SOURCE_RE.test(source) ? source : "";
 }
 
 /** Bots are not readers, and a reader who asked not to be tracked is not counted. */
@@ -58,7 +61,7 @@ export async function onRequestPost({ request, env }: Ctx, now = new Date()): Pr
   }
   const path = cleanPath(body.p);
   const source = cleanSource(body.s);
-  if (path === null || source === null) return json({ error: "Bad path or source." }, 400);
+  if (path === null) return json({ error: "Bad path." }, 400);
   if (!shouldCount(request)) return new Response(null, { status: 204 });
   if (!env.DB) return json({ error: "Database (DB) is not bound." }, 503);
   await count(env.DB, lagosDay(now), path, source);
@@ -81,7 +84,7 @@ export async function onRequestGet({ request, env }: Ctx, now = new Date()): Pro
   const path = cleanPath(url.searchParams.get("p") || to.pathname);
   const source = cleanSource(url.searchParams.get("s"));
   // Counting is best effort: the reader always gets to the page.
-  if (env.DB && path !== null && source !== null && shouldCount(request)) {
+  if (env.DB && path !== null && shouldCount(request)) {
     try {
       await count(env.DB, lagosDay(now), path, source);
     } catch {
