@@ -17,11 +17,11 @@ export function GET({ site }: { site?: URL }) {
     articles: data.articles(),
     contracts: data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract),
   });
-  // The register and entity pages name people as owners from news reporting;
-  // they carry noindex and stay out of the sitemap.
+  // The register, entity and weekly-changes pages name people as owners from
+  // news reporting; they carry noindex and stay out of the sitemap.
   void entities;
   const paths = [
-    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/"),
+    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/" && p !== "changes/"),
     ...HEADLINE_CATEGORIES.map((c) => `news/${c}/`),
     ...listEditions().map((e) => `brief/${e.slug}/`),
   ];

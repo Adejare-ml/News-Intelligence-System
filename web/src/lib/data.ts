@@ -88,6 +88,7 @@ export interface ReportRow {
 export const reports = () => readJson<ReportRow[]>("reports.json", []);
 
 export interface HistoryPayload {
+  generated?: string;
   days?: { date: string; runs: number; articles: number; high_risk: number }[];
 }
 export const history = () => readJson<HistoryPayload>("history.json", {});
