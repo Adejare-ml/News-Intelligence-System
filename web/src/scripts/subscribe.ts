@@ -11,7 +11,7 @@ function syncRegion(form: HTMLFormElement): void {
   if (region) region.hidden = !checkedValues(form, "categories").some((c) => c !== "business");
 }
 
-/** /news/sports/ links here with ?topic=sports: tick it for the reader. */
+/** /news/technology/ links here with ?topic=technology: tick it for the reader. */
 function preselect(form: HTMLFormElement): void {
   const topic = new URLSearchParams(location.search).get("topic");
   const box = topic ? form.querySelector<HTMLInputElement>(`input[name="categories"][value="${CSS.escape(topic)}"]`) : null;
