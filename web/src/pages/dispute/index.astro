@@ -1,0 +1,134 @@
+---
+import TextPage from "../../layouts/TextPage.astro";
+import { href } from "../../lib/url.ts";
+import { correctionUrl } from "../../lib/corrections.ts";
+---
+<TextPage
+  title="Dispute a record"
+  eyebrow="Right of reply"
+  heading="Dispute a record"
+  lede="If AURA names you, or a company you act for, and something is wrong, tell us here. Every dispute is read by a person."
+  description="Ask AURA to correct or remove a record about you or a company you represent."
+>
+  <form class="dispute-form" action={href("api/dispute")} method="post" data-dispute data-fallback={correctionUrl("dispute")}>
+    <label for="d-ref">Which record or page?</label>
+    <input id="d-ref" name="ref" type="text" maxlength="200" required placeholder="For example: the person and company named, or the page address" />
+
+    <label for="d-name">Your name</label>
+    <input id="d-name" name="name" type="text" maxlength="200" autocomplete="name" required />
+
+    <label for="d-email">Your email address</label>
+    <input id="d-email" name="email" type="email" inputmode="email" autocomplete="email" required />
+    <p class="hint meta">We reply here. It is never published.</p>
+
+    <fieldset>
+      <legend>Who are you in relation to the record?</legend>
+      <label class="choice"><input type="radio" name="relationship" value="subject" required /> I am the person or company named</label>
+      <label class="choice"><input type="radio" name="relationship" value="representative" /> I act for them (lawyer, staff, family)</label>
+      <label class="choice"><input type="radio" name="relationship" value="other" /> Other</label>
+    </fieldset>
+
+    <label for="d-message">What is wrong, and what is correct?</label>
+    <textarea id="d-message" name="message" rows="7" maxlength="4000" required></textarea>
+    <p class="hint meta">Up to 4,000 characters. A link to a source (a CAC filing, a company statement) helps.</p>
+
+    <!-- Honeypot: invisible to people, tempting to bots. -->
+    <input class="hp" type="text" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+    <button class="btn btn-gold" type="submit">Send dispute</button>
+    <p class="status" role="status" aria-live="polite" data-dispute-status></p>
+  </form>
+
+  <h2>What happens next</h2>
+  <p>
+    We check the record against its source article and reply by email. If the record is wrong, we correct it
+    or take it off the site, and log the change on the <a href={href("corrections/")}>corrections page</a>.
+    While we look into it, the record may stay up.
+  </p>
+  <p>
+    Records on AURA are drawn from news reports, not from the CAC register. A record says that a news outlet
+    reported something, not that it is true. See the <a href={href("terms/")}>terms</a> and how we handle
+    what you send in the <a href={href("privacy/")}>privacy notice</a>.
+  </p>
+</TextPage>
+
+<script>
+  import "../../scripts/dispute.ts";
+</script>
+
+<style>
+  .dispute-form {
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+    padding: clamp(20px, 4vw, 32px);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-l);
+    background: var(--surface);
+  }
+  .dispute-form label:not(.choice),
+  legend {
+    color: var(--text);
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: var(--radius-s);
+    border: 1px solid var(--line-strong);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+  }
+  textarea {
+    resize: vertical;
+  }
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+  }
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+  .choice {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .choice input {
+    accent-color: var(--gold);
+  }
+  .hint {
+    margin: 0;
+  }
+  .hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  .btn {
+    justify-self: start;
+    margin-top: 14px;
+  }
+  .status {
+    margin: 0;
+    min-height: 1.5em;
+  }
+  .status:global(.ok) {
+    color: var(--gold);
+  }
+  .status:global(.error) {
+    color: var(--crimson);
+  }
+</style>

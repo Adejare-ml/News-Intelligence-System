@@ -57,6 +57,9 @@ const entityLogo = logoFor([e.name]);
       <h1 class="h1 name" data-split>{e.name}</h1>
     </div>
     <p class="lede">{summary}</p>
+    <p class="dispute meta">
+      Named here and something is wrong? <a class="link" href={href(`dispute/?ref=${encodeURIComponent(e.slug)}`)}>Dispute this record</a>
+    </p>
     <dl class="facts" data-reveal>
       {e.mentions !== null && <div><dt>Mentions tracked</dt><dd class="num">{e.mentions}</dd></div>}
       <div><dt>Holdings</dt><dd class="num">{e.holdings.length}</dd></div>
@@ -165,6 +168,9 @@ const entityLogo = logoFor([e.name]);
   }
   .back {
     font-size: 0.88rem;
+  }
+  .dispute {
+    margin: 0;
   }
   .kind {
     color: var(--gold);
