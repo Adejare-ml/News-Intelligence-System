@@ -71,6 +71,12 @@ images only from the site (publisher images go through `/img`), no
 framing. It also sets HSTS, `nosniff`, and long caching for fingerprinted
 `/_astro/*` files.
 
+The Functions' own pages and JSON (sign-up links, preferences) set theirs
+in `web/functions/_lib/http.ts`: a CSP that allows only inline styles and
+forms that post back to the site, HSTS, `nosniff`, and
+`Referrer-Policy: no-referrer`, so a link's token never leaks to another
+site.
+
 ## Functions
 
 `web/functions/` is copied into the `cloudflare-pages` branch, and Pages
@@ -78,12 +84,12 @@ deploys it with the site:
 
 | Route | What it does |
 |---|---|
-| `POST /api/subscribe` | Stores a Morning Brief sign-up (pending) in D1, with the reader's categories, region and frequency |
-| `GET /api/confirm?token=` | Double opt-in confirmation |
+| `POST /api/subscribe` | Stores a Morning Brief sign-up (pending) in D1, with the reader's categories, region and frequency (limits below) |
+| `GET/POST /api/confirm?token=` | Double opt-in. GET shows a "Confirm" button; only its POST confirms |
 | `GET/POST /api/preferences?token=` | The reader's own page: change categories, region, daily/weekly, or pause |
-| `GET/POST /api/unsubscribe?token=` | One-click unsubscribe |
-| `POST /api/send-brief` | Sends the morning email (owner secret; see below) |
-| `GET /api/stats` | Subscriber counts by status, category, region and frequency, weekly sign-ups and recent sends. Needs `Authorization: Bearer <BRIEF_SEND_SECRET>`. Counts only, never addresses. |
+| `GET/POST /api/unsubscribe?token=` | GET shows an "Unsubscribe" button; POST unsubscribes, including mail clients' one-click (RFC 8058) |
+| `POST /api/send-brief` | Sends the morning email, then does the sign-up housekeeping (owner secret; see below) |
+| `GET /api/stats` | Subscriber counts by status, category, region and frequency, weekly sign-ups, confirmation rate and median hours to confirm, and recent sends. Needs `Authorization: Bearer <BRIEF_SEND_SECRET>`. Counts only, never addresses. |
 | `GET /img?u=` | Serves publisher images from the site's origin, cached for a week. Only URLs in the build's `/img-allow.json` are fetched. |
 
 ### Morning Brief sign-ups (one-time setup)
@@ -97,6 +103,7 @@ Until this is done, the form says sign-ups open soon. Nothing breaks.
    `npx wrangler d1 execute aura --remote --file=web/migrations/0001_subscribers.sql`
    (or paste each file into the D1 console). `0003_preferences.sql` adds the
    reader's choices; existing subscribers keep business, Nigeria, daily.
+   `0004_mail_throttle.sql` adds the sign-up mail limits.
 3. Bind it to the site:
    **Pages project → Settings → Bindings → Add → D1 database**,
    variable name `DB`, database `aura`. Redeploy.
@@ -111,7 +118,7 @@ one-click unsubscribe link and header and a "Change topics" link.
 What each reader gets depends on what they chose at sign-up:
 
 - **Business** is the brief at `/brief/email/`.
-- **Sports, Technology, Politics, Entertainment** are headline sections from
+- **Technology, Politics** are headline sections from
   `category_news.json` (`/brief/email/section/<category>/`), in the Nigeria
   edition, the Global one, or both. Readers without Business get them in the
   shell at `/brief/email/shell/`. Headlines older than 36 hours are left out,
@@ -124,13 +131,37 @@ What each reader gets depends on what they chose at sign-up:
 Readers with the same choices share one copy, so each distinct email is
 built once, and all copies go out in one pass: one Gmail session under one
 daily cap, or shared Resend/Brevo batches. Preview any mix with
-`POST /api/send-brief?test=1&categories=business,sports&region=both`
+`POST /api/send-brief?test=1&categories=business,technology&region=both`
 (add `&frequency=weekly` to preview the weekly email).
 
 How it works: the subscriber list stays in D1. The scheduler waits until
 production shows the new edition, then calls `POST /api/send-brief` with a
 shared secret; Cloudflare sends through Gmail, Brevo or Resend. One send per
 Lagos day, and an edition that was already sent is never sent again.
+
+Sports and Entertainment were offered until November 2026 and have been
+cut. Readers who chose them keep their other topics; one who chose only
+those now gets Business.
+
+**Sign-up limits.** So the form cannot be used to flood someone's inbox or
+use up the provider's daily quota:
+
+- An address gets at most **one sign-up mail per 10 minutes** and **three
+  per Lagos day** (confirmation and already-subscribed mails alike). Past
+  that the form answers exactly as usual but sends nothing, so it never
+  reveals whether an address is on the list.
+- One IP address (`CF-Connecting-IP`) may post **20 sign-ups per Lagos
+  day**; after that it gets "Too many sign-ups from here today."
+- If the provider refuses a mail, the reader is told to try again in a few
+  minutes, and that try does not count against the address.
+- Confirmation and unsubscribe links do nothing until the button on the
+  page is pressed, so mail scanners that open every link change nothing.
+
+**Housekeeping** runs after each day's real send: pending sign-ups not
+mailed for 30 days are deleted, and pending sign-ups 48-72 hours old that
+have had only their first mail get one reminder (at most 20 a run, within
+the limits above). The send's JSON result reports the counts under
+`housekeeping`.
 
 **1. Pick a provider.**
 
@@ -161,10 +192,14 @@ npx wrangler d1 create aura                 # if it doesn't exist yet
 npx wrangler d1 execute aura --remote --file=web/migrations/0001_subscribers.sql
 npx wrangler d1 execute aura --remote --file=web/migrations/0002_sends.sql
 npx wrangler d1 execute aura --remote --file=web/migrations/0003_preferences.sql
+npx wrangler d1 execute aura --remote --file=web/migrations/0004_mail_throttle.sql
 ```
 
 **Apply 0003 before deploying the version with news categories**: the new
 functions read the `categories`, `region`, `frequency` and `paused` columns.
+**Apply 0004 before deploying the version with sign-up limits**: sign-ups
+read and write `last_mailed_at`, `mail_day`, `mails_today` and the
+`throttle` table, and fail without them.
 
 (or paste each file into the D1 console). Then **Pages project → Settings
 → Bindings → Add → D1 database**: variable `DB`, database `aura`.
@@ -182,7 +217,8 @@ Production):
 | `MAIL_FROM` | `AURA Morning Brief <the sender you verified>` (optional for Gmail) |
 | `SITE_URL` | `https://auranews.pages.dev` |
 | `BRIEF_SEND_SECRET` | a long random string (**Secret**), e.g. `openssl rand -hex 32` |
-| `OWNER_EMAIL` | your address, for test sends |
+| `OWNER_EMAIL` | your address, for test sends (and for replies, if `REPLY_TO` is unset) |
+| `REPLY_TO` | where readers' replies go, e.g. `AURA <you@example.com>` (optional; defaults to `OWNER_EMAIL`) |
 
 **4. GitHub secret:** repository → Settings → Secrets and variables →
 Actions → `BRIEF_SEND_SECRET`, the same value as in step 3.
