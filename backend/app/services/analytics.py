@@ -18,6 +18,7 @@ from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
 from backend.app.services.ingestion import parse_feed_date
+from backend.app.services.story_detail import figures_in
 
 # Corporate suffixes and geography that make one entity read as several:
 # "NNPC" / "NNPC Limited" / "NNPC Ltd" were three Companies rows splitting
@@ -315,51 +316,44 @@ _CURRENCY_PREFIXES = (
     ("€", "EUR"), ("eur", "EUR"),
 )
 
-_MULTIPLIERS = {
-    "k": 1e3, "thousand": 1e3,
-    "m": 1e6, "mn": 1e6, "million": 1e6,
-    "b": 1e9, "bn": 1e9, "billion": 1e9,
-    "tn": 1e12, "trn": 1e12, "trillion": 1e12,
-}
-
-_AMOUNT_RE = re.compile(r"([\d][\d,]*\.?\d*)\s*(k|mn|m|bn|b|trn|tn|thousand|million|billion|trillion)?\b",
-                        re.IGNORECASE)
-
 
 def parse_amount(text: Any) -> Optional[Dict[str, Any]]:
     """Deterministic parse of the free-text Amount cell.
 
     'N400 Million' -> 400e6 NGN; '$4.5 Billion' -> 4.5e9 USD; '£746
-    Million' -> 746e6 GBP; 'N1.5 trillion' -> 1.5e12 NGN. Sentinels
-    ('None', 'TBD (Local Pipeline)', 'N/A') and anything with no digits
-    return None -- undisclosed stays undisclosed, never zero. A bare
-    number with no currency marker is naira: this is Nigerian public
-    procurement.
+    Million' -> 746e6 GBP; 'N1.2tr' -> 1.2e12 NGN; '4.5 million dollars'
+    -> 4.5e6 USD. Sentinels ('None', 'TBD (Local Pipeline)', 'N/A') and
+    anything with no digits return None -- undisclosed stays undisclosed,
+    never zero. A bare number with no currency marker is naira: this is
+    Nigerian public procurement.
+
+    The first figure carrying a currency is the award: in 'N2.5bn ($1.6m)'
+    the bracket is a conversion, and in '2 contracts worth N5bn' the 2 is
+    a count. Figures are read by story_detail.figures_in, the same reader
+    the brief's grounding check uses.
     """
     s = str(text or "").strip()
     low = s.lower()
     if low in _AMOUNT_SENTINELS or low.startswith("tbd"):
         return None
 
-    currency = None
+    figures = [f for f in figures_in(s) if f[0] != "%"]
+    if not figures:
+        return None
+    kind, value = next((f for f in figures if f[0]), figures[0])
+    currency = kind or _currency_marker(low)
+    return {"value": float(value), "currency": currency or "NGN"}
+
+
+def _currency_marker(low: str) -> Optional[str]:
+    """A currency named away from the figure ('4.5bn USD', 'N 750m')."""
     for prefix, code in _CURRENCY_PREFIXES:
         if prefix in low:
-            currency = code
-            break
+            return code
     # A leading bare "N" before a digit is the informal naira sign.
-    if currency is None and re.match(r"^\s*n\s*[\d.]", low):
-        currency = "NGN"
-
-    match = _AMOUNT_RE.search(s.replace(",", ""))
-    if not match:
-        return None
-    try:
-        value = float(match.group(1))
-    except ValueError:
-        return None
-    unit = (match.group(2) or "").lower()
-    value *= _MULTIPLIERS.get(unit, 1)
-    return {"value": value, "currency": currency or "NGN"}
+    if re.match(r"^\s*n\s*[\d.]", low):
+        return "NGN"
+    return None
 
 
 def procurement_rollup(rows: List[Dict[str, Any]]) -> Dict[str, Any]:

@@ -34,6 +34,7 @@ from backend.app.services import story_detail
 from backend.app.services import claude_llm
 from backend.app.services import email_digest
 from backend.app.pipeline import side_feeds
+from backend.app.pipeline.cells import clean_procurement_row, procurement_cells
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
@@ -41,6 +42,26 @@ DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "
 # Lead images news APIs returned with this run's saved articles (article
 # URL -> image URL), merged into data/article_images.json at export.
 RUN_IMAGES: Dict[str, str] = {}
+
+# Pause after an article that ends as a single Filtered row: Sheets write
+# pacing, not an LLM rate limit.
+REJECT_PAUSE_SECONDS = 1.0
+
+# Pause after an accepted article. It appends a row per company, person,
+# agency, award and PSC claim on top of its own, one write each, and Sheets
+# allows 60 writes a minute per user: 4s keeps a run of entity-rich
+# articles under that. excel_db also retries 429s with backoff, so the
+# owner can shorten it with EXTRACTION_SLEEP_SECONDS without a code change.
+ACCEPT_PAUSE_SECONDS = 4.0
+
+
+def accept_pause_seconds() -> float:
+    """EXTRACTION_SLEEP_SECONDS when it is a non-negative number, else 4s."""
+    try:
+        value = float(os.environ.get("EXTRACTION_SLEEP_SECONDS", ""))
+    except ValueError:
+        return ACCEPT_PAUSE_SECONDS
+    return value if value >= 0 else ACCEPT_PAUSE_SECONDS
 
 # Abort the run after this many articles in a row fail the whole LLM cascade:
 # at that point the providers are down and continuing would only burn quota.
@@ -164,6 +185,7 @@ def run_pipeline(seed: bool = False):
     else:
         logger.info("Production Mode: Aggregating feeds from RSS and API wrappers...")
         candidates = NewsIngestionService.collect_all()
+        write_source_health(NewsIngestionService.last_source_counts)
 
     logger.info(f"Aggregated {len(candidates)} candidate articles. Deduplicating and processing...")
 
@@ -296,7 +318,7 @@ def run_pipeline(seed: bool = False):
             rejected_count += 1
             # Sheets write pacing only -- no LLM call happened.
             import time
-            time.sleep(1.0)
+            time.sleep(REJECT_PAUSE_SECONDS)
             continue
 
         logger.info(f"Analyzing: '{title}' ({source})")
@@ -371,8 +393,12 @@ def run_pipeline(seed: bool = False):
             if filtered_saved:
                 existing_urls.add(url)
             rejected_count += 1
+            # One Filtered row written: the same Sheets pacing as a pre-LLM
+            # reject. This was 3.5s, citing Gemini's 15 RPM, but Gemini does
+            # not extract (see LLMService.analyze_article) and most analysed
+            # articles end here, so it was most of a run's waiting.
             import time
-            time.sleep(3.5)
+            time.sleep(REJECT_PAUSE_SECONDS)
             continue
 
         # Write Article to Database. Event Type, Risk Level, Importance and
@@ -468,15 +494,9 @@ def run_pipeline(seed: bool = False):
             })
             
         # Write Procurement Tenders
-        proc = analysis.get("procurement")
-        if proc and isinstance(proc, dict) and proc.get("agency"):
-            db.add_procurement({
-                "Agency": proc.get("agency"),
-                "Contractor": proc.get("contractor", "TBD"),
-                "Amount": proc.get("amount", "N/A"),
-                "Project": proc.get("project", title),
-                "Source": source
-            })
+        proc_row = procurement_cells(analysis.get("procurement"), title, source)
+        if proc_row:
+            db.add_procurement(proc_row)
             
         # Write Significant Control (PSC)
         #
@@ -520,10 +540,10 @@ def run_pipeline(seed: bool = False):
         # Add to existing_urls set to prevent processing duplicate URLs within the same candidate batch
         existing_urls.add(url)
         
-        # Throttle to avoid rate limiting when writing sequentially to sheets and calling Gemini
+        # Sheets write pacing (see ACCEPT_PAUSE_SECONDS). It used to cite
+        # Gemini's 15 RPM; Gemini no longer extracts.
         import time
-        # 4-second sleep guarantees we stay under 15 RPM (Requests Per Minute) for Gemini & Google Sheets API
-        time.sleep(4.0)
+        time.sleep(accept_pause_seconds())
 
     logger.info(f"Pipeline run completed. Processed {new_articles_count} new news items.")
 
@@ -831,12 +851,42 @@ from backend.app.services.analytics import entity_key  # noqa: E402,F401  (re-ex
 from backend.app.pipeline.rows import (  # noqa: E402,F401  (re-export)
     build_history,
     build_sources,
+    collapse_story_copies,
     collapse_identical_rows,
     dedupe_entity_rows,
     make_node_id,
+    merge_source_health,
     slim_report_rows,
+    stale_sources,
     top_rows,
 )
+
+def write_source_health(counts: Dict[str, int]) -> None:
+    """Merge this run's per-feed fetch counts into source_health.json and
+    flag feeds that have come back empty several runs in a row, in the
+    log and on the Actions run page. Best-effort: never fails a run."""
+    path = os.path.join(DATA_DIR, "source_health.json")
+    try:
+        with open(path, encoding="utf-8") as f:
+            previous = json.load(f)
+    except Exception:
+        previous = None
+    health = merge_source_health(previous, counts, datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(health, f, indent=2)
+        stale = stale_sources(health)
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        for name in stale:
+            runs = health["sources"][name]["empty_runs"]
+            line = f"Source {name} has returned no articles for {runs} runs in a row."
+            logger.warning(line)
+            if summary_path:
+                with open(summary_path, "a", encoding="utf-8") as f:
+                    f.write(f"- :warning: {line}\n")
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.warning(f"Source health skipped: {type(exc).__name__}: {exc}")
+
 
 def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[str, Any]]) -> None:
     """The Morning Brief email edition (email_digest.json).
@@ -879,10 +929,49 @@ def write_email_digest(articles: List[Dict[str, Any]], psc_records: List[Dict[st
         logger.error(f"Email digest skipped: {type(exc).__name__}: {exc}")
 
 
+# A core export shrinking below this share of the file it replaces is
+# treated as a broken read (a partial Sheets response, a filter gone
+# wrong), not news: the previous file stays and the run logs an error.
+CORE_EXPORT_MIN_SHARE = 0.4
+# Below this many rows the previous file is too small for a shrink to mean
+# anything, and a fresh deployment must always be able to write.
+CORE_EXPORT_MIN_ROWS = 20
+
+
+def core_rows(name: str, rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """The rows to publish as one of the site's core lists: this run's,
+    or the previous file's when this run's collapsed.
+
+    Decided before anything is built from the list, so the cycle diff,
+    the graph and the timelines agree with the file that stays published
+    instead of reporting a failed read as the register being removed.
+    """
+    try:
+        with open(os.path.join(DATA_DIR, name), encoding="utf-8") as f:
+            previous = json.load(f)
+    except Exception:
+        previous = []
+    if len(previous) >= CORE_EXPORT_MIN_ROWS and len(rows) < CORE_EXPORT_MIN_SHARE * len(previous):
+        logger.error(
+            f"Keeping the previous {name}: this run produced {len(rows)} row(s) "
+            f"against {len(previous)} published, which looks like a failed read."
+        )
+        return previous
+    return rows
+
+
 def export_static_json_database():
     """Generates the static JSON files read by index.html / app.js."""
     logger.info("Exporting static JSON telemetry files to static assets path...")
-    
+    # In Actions the database is Google Sheets. use_local there means the
+    # connection failed and the run fell back to an empty local workbook:
+    # exporting it would publish an empty site over the real one.
+    if os.environ.get("GITHUB_ACTIONS") == "true" and getattr(db, "use_local", False):
+        raise RuntimeError(
+            "Refusing to export: the database fell back to the local workbook in "
+            "GitHub Actions (Google Sheets unreachable), so the exports would be empty."
+        )
+
     # Read database tables
     articles = db.get_articles()
     companies = db.get_companies()
@@ -951,7 +1040,9 @@ def export_static_json_database():
         for stored_title, reason in suppressed[:20]:
             logger.warning(f"  [{reason.topic}] {stored_title}")
 
-    articles_sorted = published
+    # Several outlets' copies of one story publish as one row listing the
+    # others, rather than as the same story several times over.
+    articles_sorted = collapse_story_copies(published)
 
     # Entities extracted from those same articles are filtered too. The company
     # table had accumulated "Premier League", "Serie A", "BBNaija" and
@@ -1046,6 +1137,11 @@ def export_static_json_database():
     people = dedupe_entity_rows(people, ["Name", "Organization"])
     agencies = dedupe_entity_rows(agencies, ["Agency"])
 
+    articles_sorted = core_rows("latest.json", articles_sorted)
+    companies = core_rows("companies.json", companies)
+    people = core_rows("people.json", people)
+    psc_records = core_rows("significant_control.json", psc_records)
+
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or
     # unreadable file (first run, fresh checkout) diffs as empty, so the
@@ -1111,19 +1207,19 @@ def export_static_json_database():
     # Save base files
     with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
         json.dump(articles_sorted, f, default=str, indent=2)
-
     with open(os.path.join(DATA_DIR, "companies.json"), "w", encoding="utf-8") as f:
         json.dump(companies, f, default=str, indent=2)
-
     with open(os.path.join(DATA_DIR, "people.json"), "w", encoding="utf-8") as f:
         json.dump(people, f, default=str, indent=2)
         
     # Procurement rows carry their parsed amount at export time (never
     # stored), so the parser's coverage applies to every historical row,
     # not just rows written after it shipped. Undisclosed stays null.
+    # Legacy rows written before procurement_cells still carry "TBD",
+    # "N/A" and "None" as text; they publish as blanks.
     procurement_out = []
     for row in procurement:
-        r = dict(row)
+        r = clean_procurement_row(row)
         parsed = analytics.parse_amount(r.get("Amount"))
         r["Amount Value"] = parsed["value"] if parsed else None
         r["Amount Currency"] = parsed["currency"] if parsed else None
@@ -1139,9 +1235,9 @@ def export_static_json_database():
     with open(os.path.join(DATA_DIR, "agencies.json"), "w", encoding="utf-8") as f:
         json.dump(agencies, f, default=str, indent=2)
 
+    # Already gated above: published rows only, with canonical keys,
+    # claim kind and quality flags on each.
     with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
-        # Already gated above: published rows only, with canonical keys,
-        # claim kind and quality flags on each.
         json.dump(psc_records, f, default=str, indent=2)
     with open(os.path.join(DATA_DIR, "register_quality.json"), "w", encoding="utf-8") as f:
         json.dump(dict(psc_withheld, generated=datetime.now().strftime("%Y-%m-%d %H:%M:%S")), f, default=str, indent=2)
@@ -1218,7 +1314,9 @@ def export_static_json_database():
                   f, default=str, indent=2)
 
     with open(os.path.join(DATA_DIR, "procurement_rollup.json"), "w", encoding="utf-8") as f:
-        payload = analytics.procurement_rollup(procurement)
+        # The deduped rows: the raw ones counted an award once per outlet
+        # that reported it, inflating both contract counts and totals.
+        payload = analytics.procurement_rollup(procurement_out)
         payload["generated"] = stamp
         json.dump(payload, f, default=str, indent=2)
 
@@ -1348,9 +1446,12 @@ def export_static_json_database():
                 })
 
     # Generate edges from Procurement
+    # From the cleaned, deduped rows: legacy "TBD"/"None" contractors are
+    # blank there, so the agency-and-contractor check below drops them
+    # instead of graphing a company called "TBD".
     # Newest first by the Date column; legacy rows without a Date fall
     # back to append-order recency (later row index = newer).
-    _dated = sorted(enumerate(procurement),
+    _dated = sorted(enumerate(procurement_out),
                     key=lambda p: (str(p[1].get("Date", "")), p[0]), reverse=True)
     for _, row in _dated[:20]:
         agency = row.get("Agency", "").strip()
