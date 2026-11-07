@@ -4,17 +4,19 @@
  * a press report rather than a CAC filing. Open by default; a reader who
  * closes it keeps it closed (src/scripts/explainer.ts, theme-init.js).
  * The heading is the toggle, the standard disclosure pattern, so its name
- * stays the same and aria-expanded carries the state.
+ * stays the same and aria-expanded carries the state. It ships as plain
+ * heading text and the script turns it into the button, so readers without
+ * script are never offered a toggle that does nothing.
  */
 import { href } from "../lib/url.ts";
 ---
 <aside class="explainer wrap" aria-labelledby="explainer-title">
   <div class="panel">
     <h2 class="title" id="explainer-title">
-      <button type="button" class="toggle" aria-expanded="true" aria-controls="explainer-body" data-explainer-toggle>
+      <span class="toggle" data-explainer-toggle>
         <span>New to AURA? What you are looking at</span>
         <svg class="chev" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-      </button>
+      </span>
     </h2>
     <div class="body" id="explainer-body">
       <dl>
@@ -89,11 +91,11 @@ import { href } from "../lib/url.ts";
     color: var(--gold);
     transition: transform var(--dur-ui) var(--ease-out);
   }
-  /* Without script the toggle cannot work, so it reads as a plain heading. */
-  :global(html:not(.js)) .toggle {
+  /* Until the script makes it a button there is nothing to open or close. */
+  span.toggle {
     cursor: default;
   }
-  :global(html:not(.js)) .chev {
+  span.toggle .chev {
     display: none;
   }
   :global(html.explainer-closed) .chev {
