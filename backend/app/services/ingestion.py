@@ -255,6 +255,24 @@ def is_navigation_stub(title: Any, source: Any = None) -> bool:
     return False
 
 
+def _rss_article(entry: Any, source: str) -> Dict[str, Any]:
+    """One feedparser entry as an ingestion article; shared by every RSS source."""
+    clean_title = html.unescape(entry.title) if hasattr(entry, 'title') and entry.title else ""
+    clean_summary = html.unescape(entry.summary) if hasattr(entry, 'summary') and entry.summary else clean_title
+    return {
+        "title": clean_title,
+        "url": entry.link,
+        "source": source,
+        # Empty, not now(): an entry that omits a date has an
+        # unknown one, and the 48h filter excludes and logs it
+        # rather than treating this moment as its publication.
+        "published_at": entry.published if hasattr(entry, 'published') else "",
+        "raw_text": clean_summary,
+        "image": image_from_feed_entry(entry),
+        "is_rss": True
+    }
+
+
 class NewsIngestionService:
     # Publications the pipeline trusts for Nigerian corporate reporting.
     SITE_FILTER = (
@@ -358,26 +376,54 @@ class NewsIngestionService:
                     if entry.link in urls_processed:
                         continue
                     urls_processed.add(entry.link)
-                    
-                    clean_title = html.unescape(entry.title) if hasattr(entry, 'title') and entry.title else ""
-                    clean_summary = html.unescape(entry.summary) if hasattr(entry, 'summary') and entry.summary else clean_title
-                    
-                    articles.append({
-                        "title": clean_title,
-                        "url": entry.link,
-                        "source": entry.source.title if hasattr(entry, 'source') else "Google News",
-                        # Empty, not now(): an entry that omits a date has an
-                        # unknown one, and the 48h filter excludes and logs it
-                        # rather than treating this moment as its publication.
-                        "published_at": entry.published if hasattr(entry, 'published') else "",
-                        "raw_text": clean_summary,
-                        "image": image_from_feed_entry(entry),
-                        "is_rss": True
-                    })
+                    source = entry.source.title if hasattr(entry, 'source') else "Google News"
+                    articles.append(_rss_article(entry, source))
             except Exception as e:
                 logger.error(f"Error fetching Google News RSS query '{q}': {e}")
                 
         logger.info(f"Successfully fetched {len(articles)} combined RSS entries.")
+        return articles
+
+    # The outlets' own feeds. Google News only returns what its search ranks
+    # for our queries, and routinely misses stories these four publish; their
+    # feeds list everything, so items are filtered to the same SEARCH_TOPICS
+    # keywords here, before any of them can cost an LLM call.
+    OUTLET_FEEDS = {
+        "BusinessDay": "https://businessday.ng/feed/",
+        "Premium Times": "https://www.premiumtimesng.com/feed",
+        "Nairametrics": "https://nairametrics.com/feed/",
+        "TheCable": "https://www.thecable.ng/feed",
+    }
+
+    @classmethod
+    def fetch_outlet_feeds(cls) -> List[Dict[str, Any]]:
+        """On-topic items from each outlet's RSS feed, deduplicated by link."""
+        articles = []
+        urls_processed = set()
+        for outlet, url in cls.OUTLET_FEEDS.items():
+            try:
+                resp = http_get_with_retry(url, timeout=15, headers={"User-Agent": "AURA-NewsIntel/1.0"})
+                resp.raise_for_status()
+                entries = feedparser.parse(resp.content).entries
+            except Exception as e:
+                # Class only, as for the API adapters: one outlet being down
+                # must not cost the others.
+                logger.error(f"Outlet feed {outlet} failed ({type(e).__name__}).")
+                continue
+            kept = 0
+            for entry in entries:
+                link = getattr(entry, "link", "")
+                if not link or link in urls_processed:
+                    continue
+                article = _rss_article(entry, outlet)
+                if not matches_search_topics(f"{article['title']} {article['raw_text']}"):
+                    continue
+                urls_processed.add(link)
+                articles.append(article)
+                kept += 1
+            # Per-feed counts, so a feed that quietly changes format or goes
+            # empty shows up in the run log as "0 of N" rather than nothing.
+            logger.info(f"Outlet feed {outlet}: {kept} on-topic of {len(entries)} entries.")
         return articles
 
     # Credential-hygiene note for every adapter below: keys ride in headers
@@ -625,6 +671,7 @@ class NewsIngestionService:
         # RSS first (always active, no key), then the API-key adapters.
         adapters = [
             ("Google News RSS", cls.fetch_google_news_rss),
+            ("Outlet feeds", cls.fetch_outlet_feeds),
             ("NewsAPI", cls.fetch_news_api),
             ("GNews", cls.fetch_gnews),
             ("Guardian", cls.fetch_guardian_news),
@@ -671,7 +718,8 @@ class NewsIngestionService:
                 "punchng" in url_lower or 
                 "vanguardngr" in url_lower or 
                 "thecable" in url_lower or 
-                "premiumtimesng" in url_lower or 
+                "premiumtimesng" in url_lower or
+                "nairametrics" in url_lower or
                 "nigeria" in title_lower or 
                 "nigeria" in text_lower or
                 "nigerian" in title_lower or
@@ -823,3 +871,24 @@ class NewsIngestionService:
         logger.info(f"Fuzzy Deduplication: Reduced {len(articles)} candidate items to {len(deduped)} distinct stories.")
         return deduped
 
+
+_topic_pattern: Optional["re.Pattern[str]"] = None
+
+
+def matches_search_topics(text: str) -> bool:
+    """Whether text mentions any SEARCH_TOPICS keyword, as a whole word or phrase.
+
+    The outlet feeds carry everything an outlet publishes (sport, politics,
+    lifestyle); reusing the Google News query terms keeps both sources on
+    the same definition of on-topic.
+    """
+    global _topic_pattern
+    if _topic_pattern is None:
+        terms = []
+        for query in NewsIngestionService.SEARCH_TOPICS.values():
+            for phrase, word in re.findall(r'"([^"]+)"|(\S+)', query):
+                term = phrase or word
+                if term != "OR":
+                    terms.append(re.escape(term))
+        _topic_pattern = re.compile(r"\b(?:" + "|".join(terms) + r")\b", re.IGNORECASE)
+    return bool(_topic_pattern.search(text or ""))
