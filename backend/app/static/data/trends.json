@@ -1,8 +1,14 @@
 {
   "window_days": 7,
-  "recent_articles": 98,
-  "previous_articles": 230,
+  "recent_articles": 94,
+  "previous_articles": 228,
   "rising": [
+    {
+      "term": "power",
+      "recent": 6,
+      "previous": 0,
+      "change": 6
+    },
     {
       "term": "firm",
       "recent": 5,
@@ -10,13 +16,13 @@
       "change": 5
     },
     {
-      "term": "power",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
+      "term": "illegal",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
     },
     {
-      "term": "illegal",
+      "term": "project",
       "recent": 6,
       "previous": 2,
       "change": 4
@@ -29,12 +35,6 @@
     },
     {
       "term": "ogun",
-      "recent": 5,
-      "previous": 2,
-      "change": 3
-    },
-    {
-      "term": "project",
       "recent": 5,
       "previous": 2,
       "change": 3
@@ -67,9 +67,9 @@
   "falling": [
     {
       "term": "tinubu",
-      "recent": 2,
+      "recent": 1,
       "previous": 22,
-      "change": -20
+      "change": -21
     },
     {
       "term": "court",
@@ -79,15 +79,15 @@
     },
     {
       "term": "reps",
-      "recent": 4,
+      "recent": 5,
       "previous": 16,
-      "change": -12
+      "change": -11
     },
     {
       "term": "approves",
-      "recent": 2,
+      "recent": 1,
       "previous": 9,
-      "change": -7
+      "change": -8
     },
     {
       "term": "financial",
@@ -130,12 +130,12 @@
     {
       "category": "Government",
       "recent": 64,
-      "previous": 167
+      "previous": 164
     },
     {
       "category": "Company",
-      "recent": 24,
-      "previous": 27
+      "recent": 20,
+      "previous": 28
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-07 02:53:26"
+  "generated": "2026-11-07 14:05:31"
 }

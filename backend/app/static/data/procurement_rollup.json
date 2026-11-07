@@ -102,10 +102,11 @@
     },
     {
       "name": "Jigawa State Government",
-      "contracts": 4,
+      "contracts": 5,
       "undisclosed": 0,
       "totals": {
-        "NGN": 21386260000.0
+        "NGN": 21386260000.0,
+        "USD": 110000000.0
       }
     },
     {
@@ -746,11 +747,11 @@
   "contractors": [
     {
       "name": "None",
-      "contracts": 144,
+      "contracts": 145,
       "undisclosed": 87,
       "totals": {
         "NGN": 21532794090000.0,
-        "USD": 47907540000.0
+        "USD": 48017540000.0
       }
     },
     {
@@ -1284,5 +1285,5 @@
       }
     }
   ],
-  "generated": "2026-11-07 02:53:26"
+  "generated": "2026-11-07 14:05:31"
 }

@@ -10,6 +10,10 @@ name: Scheduler watchdog
 # Two chances for the morning slot (07:51 and 08:29 UTC), one for the others.
 # A watchdog run can be dropped too, but two independent schedules missing
 # the same slot is far rarer than one.
+#
+# It also opens a pipeline-missed issue when no run has done real work for
+# six hours, so a stalled schedule is seen rather than found days later.
+# A successful pipeline run closes it.
 on:
   schedule:
     - cron: "51 7,13,17,23 * * *"
@@ -19,6 +23,7 @@ on:
 permissions:
   actions: write   # to start the pipeline
   contents: read
+  issues: write    # the pipeline-missed alert
 
 concurrency:
   group: scheduler-watchdog
@@ -28,6 +33,53 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the guard script
+        uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts/scheduler_guard.py
+          sparse-checkout-cone-mode: false
+
+      # Runs before the start below, so a run this check starts does not
+      # hide the gap it is filling. "Real" uses the guard's rule: queued,
+      # running, or longer than two minutes; skipped runs do not count.
+      # continue-on-error: a failed alert must not stop the start below.
+      - name: Raise an issue when nothing has run for six hours
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          # go=true over a six-hour window means no run did real work in it.
+          gh run list -R "$REPO" --workflow news_scheduler.yml --limit 30 \
+              --json databaseId,createdAt,updatedAt,status,event \
+            | python3 scripts/scheduler_guard.py --self-id 0 --window-minutes 360 > decision.txt
+          cat decision.txt
+          if ! grep -qx "go=true" decision.txt; then
+            exit 0
+          fi
+
+          gh label create pipeline-missed -R "$REPO" --color D93F0B \
+            --description "No pipeline run did real work for six hours" 2>/dev/null || true
+          BODY="No run of the news pipeline has done real work in the last six hours
+          (runs that skipped themselves in seconds do not count), so at least one slot
+          published nothing.
+
+          **Checked by:** $RUN_URL
+
+          Check that the Cloudflare scheduler Worker is deployed and its GITHUB_TOKEN has
+          not expired (docs/CLOUDFLARE.md, \"Scheduler\"). This issue closes itself after
+          the next successful run."
+          EXISTING=$(gh issue list -R "$REPO" --label pipeline-missed --state open \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" -R "$REPO" --body "$BODY"
+          else
+            gh issue create -R "$REPO" --title "Pipeline alert: no run for six hours" \
+              --label pipeline-missed --body "$BODY"
+          fi
+
       - name: Start the pipeline if its slot was skipped
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
