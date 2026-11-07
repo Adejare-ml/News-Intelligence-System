@@ -102,11 +102,11 @@ const count = (pred: (s: Story) => boolean) => unique.filter(pred).length;
               <a class:list={["item", { "no-thumb": !s.image && !logo }]} href={s.url} target="_blank" rel="noopener noreferrer">
                 {s.image ? (
                   <div class="thumb" aria-hidden="true">
-                    <img src={imageSrc(s.image)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />
+                    <img src={imageSrc(s.image)} alt="" width="160" height="120" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-story-img />
                   </div>
                 ) : logo ? (
                   <div class="thumb logo" aria-hidden="true" title={logo.name}>
-                    <img src={href(logo.path)} alt="" loading="lazy" decoding="async" />
+                    <img src={href(logo.path)} alt="" width="64" height="64" loading="lazy" decoding="async" />
                   </div>
                 ) : null}
                 <div class="text">
