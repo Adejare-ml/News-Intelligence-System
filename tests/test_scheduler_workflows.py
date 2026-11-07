@@ -50,3 +50,17 @@ def test_the_watchdog_raises_a_missed_slot_issue():
     run = step(wf["jobs"]["check"], "Raise an issue when nothing has run for six hours")["run"]
     assert "--window-minutes 360" in run
     assert "gh label create pipeline-missed" in run and "|| true" in run
+
+
+def test_the_scheduler_worker_deploys_from_github():
+    wf = load("deploy_scheduler.yml")
+    # PyYAML reads the bare key `on` as True.
+    on = wf.get("on", wf.get(True))
+    assert "workflow_dispatch" in on
+    assert on["push"]["branches"] == ["main"]
+    assert on["push"]["paths"] == ["web/workers/scheduler/**"]
+    assert wf["permissions"] == {"contents": "read"}
+    steps = wf["jobs"]["deploy"]["steps"]
+    deploy = next(s for s in steps if "wrangler@4 deploy" in s.get("run", ""))
+    assert deploy["working-directory"] == "web/workers/scheduler"
+    assert any("wrangler@4 secret put GITHUB_TOKEN" in s.get("run", "") for s in steps)
