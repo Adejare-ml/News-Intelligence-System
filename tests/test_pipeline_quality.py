@@ -188,6 +188,23 @@ class TestShrinkGuard:
         assert len(json.loads((out / "companies.json").read_text())) == 25
         assert "latest.json" in caplog.text
 
+    def test_a_kept_register_reports_no_removals_in_changes_json(self, tmp_path, monkeypatch):
+        # The failed read the guard exists for must not tell the site's
+        # "what changed this cycle" panel that the whole register went.
+        out_dir = tmp_path / "data"
+        out_dir.mkdir()
+        register = [{"Person Name": f"Holder {i}", "Company": f"Firm {i} Ltd",
+                     "Percentage": "10%", "Date": "2026-09-01",
+                     "Source": f"https://punchng.com/psc-{i}"}
+                    for i in range(30)]
+        (out_dir / "significant_control.json").write_text(json.dumps(register))
+        out = run_export(tmp_path, monkeypatch, {})
+        assert json.loads((out / "significant_control.json").read_text()) == register
+        changes = json.loads((out / "changes.json").read_text())
+        assert changes["psc_removed"] == []
+        holdings = json.loads((out / "psc_timeline.json").read_text())["holdings"]
+        assert len(holdings) == 30
+
     def test_a_small_previous_file_is_replaced(self, tmp_path, monkeypatch):
         seed_file(tmp_path, "latest.json", 10)
         out = run_export(tmp_path, monkeypatch, {"Articles": [article(1)]})

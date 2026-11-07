@@ -925,22 +925,26 @@ CORE_EXPORT_MIN_SHARE = 0.4
 CORE_EXPORT_MIN_ROWS = 20
 
 
-def write_core_export(name: str, rows: List[Dict[str, Any]]) -> None:
-    """Write one of the site's core lists, unless it collapsed."""
-    path = os.path.join(DATA_DIR, name)
+def core_rows(name: str, rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """The rows to publish as one of the site's core lists: this run's,
+    or the previous file's when this run's collapsed.
+
+    Decided before anything is built from the list, so the cycle diff,
+    the graph and the timelines agree with the file that stays published
+    instead of reporting a failed read as the register being removed.
+    """
     try:
-        with open(path, encoding="utf-8") as f:
-            previous = len(json.load(f))
+        with open(os.path.join(DATA_DIR, name), encoding="utf-8") as f:
+            previous = json.load(f)
     except Exception:
-        previous = 0
-    if previous >= CORE_EXPORT_MIN_ROWS and len(rows) < CORE_EXPORT_MIN_SHARE * previous:
+        previous = []
+    if len(previous) >= CORE_EXPORT_MIN_ROWS and len(rows) < CORE_EXPORT_MIN_SHARE * len(previous):
         logger.error(
             f"Keeping the previous {name}: this run produced {len(rows)} row(s) "
-            f"against {previous} published, which looks like a failed read."
+            f"against {len(previous)} published, which looks like a failed read."
         )
-        return
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(rows, f, default=str, indent=2)
+        return previous
+    return rows
 
 
 def export_static_json_database():
@@ -1120,6 +1124,11 @@ def export_static_json_database():
     people = dedupe_entity_rows(people, ["Name", "Organization"])
     agencies = dedupe_entity_rows(agencies, ["Agency"])
 
+    articles_sorted = core_rows("latest.json", articles_sorted)
+    companies = core_rows("companies.json", companies)
+    people = core_rows("people.json", people)
+    psc_records = core_rows("significant_control.json", psc_records)
+
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or
     # unreadable file (first run, fresh checkout) diffs as empty, so the
@@ -1183,9 +1192,12 @@ def export_static_json_database():
         logger.warning(f"Article image step skipped: {exc}")
 
     # Save base files
-    write_core_export("latest.json", articles_sorted)
-    write_core_export("companies.json", companies)
-    write_core_export("people.json", people)
+    with open(os.path.join(DATA_DIR, "latest.json"), "w", encoding="utf-8") as f:
+        json.dump(articles_sorted, f, default=str, indent=2)
+    with open(os.path.join(DATA_DIR, "companies.json"), "w", encoding="utf-8") as f:
+        json.dump(companies, f, default=str, indent=2)
+    with open(os.path.join(DATA_DIR, "people.json"), "w", encoding="utf-8") as f:
+        json.dump(people, f, default=str, indent=2)
         
     # Procurement rows carry their parsed amount at export time (never
     # stored), so the parser's coverage applies to every historical row,
@@ -1212,7 +1224,8 @@ def export_static_json_database():
 
     # Already gated above: published rows only, with canonical keys,
     # claim kind and quality flags on each.
-    write_core_export("significant_control.json", psc_records)
+    with open(os.path.join(DATA_DIR, "significant_control.json"), "w", encoding="utf-8") as f:
+        json.dump(psc_records, f, default=str, indent=2)
     with open(os.path.join(DATA_DIR, "register_quality.json"), "w", encoding="utf-8") as f:
         json.dump(dict(psc_withheld, generated=datetime.now().strftime("%Y-%m-%d %H:%M:%S")), f, default=str, indent=2)
         
