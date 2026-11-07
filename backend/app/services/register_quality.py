@@ -29,6 +29,7 @@ import unicodedata
 from typing import Any, Dict, Iterable, List, Optional
 
 from backend.app.services import relevance
+from backend.app.services.ingestion import parse_feed_date
 from backend.app.services.trends import strip_publisher
 
 # --- canonical names ---------------------------------------------------------
@@ -256,20 +257,26 @@ def _reads_as_entity(name: str) -> bool:
         words[-1] in _HOLDER_ENTITY_WORDS or sum(w in _HOLDER_ENTITY_WORDS for w in words) >= 2)
 
 
+def _people_named(row: Dict[str, Any]) -> List[str]:
+    """The names on a row that read as natural persons: the holder, the
+    previous holder and the control chain."""
+    names = []
+    for field in ("Person Name", "Previous Holder", "Intermediate Entities"):
+        name = _clean(row.get(field))
+        if name and _fold(name) not in _NO_HOLDER and not _reads_as_entity(name):
+            names.append(name)
+    return names
+
+
 def names_person(row: Dict[str, Any]) -> bool:
-    """True when the row names a natural person anywhere in the holding:
-    the holder, the previous holder or the control chain.
+    """True when the row names a natural person anywhere in the holding.
 
     Companies-only records (one company holding another) are not claims
     about an individual, so the person rule leaves them alone. A previous
     holder is rendered on the card ("control moved from ..."), so a company
     row that names a person there is a claim about that person too.
     """
-    for field in ("Person Name", "Previous Holder", "Intermediate Entities"):
-        name = _clean(row.get(field))
-        if name and _fold(name) not in _NO_HOLDER and not _reads_as_entity(name):
-            return True
-    return False
+    return bool(_people_named(row))
 
 
 def quality_flags(row: Dict[str, Any]) -> List[str]:
@@ -352,6 +359,13 @@ def _pair(row: Dict[str, Any]) -> tuple:
     return (str(row.get("Person Name", "")).strip().lower(), str(row.get("Company", "")).strip().lower())
 
 
+def withheld_names(checked: Iterable[Dict[str, Any]]) -> List[str]:
+    """The people named on rows the gate withheld (holder, previous holder,
+    control chain), so attach_evidence never quotes a sentence about them
+    on another holder's card."""
+    return sorted({n for r in checked or [] if not is_public(r) for n in _people_named(r)})
+
+
 def without_withheld(previous: Iterable[Dict[str, Any]], checked: Iterable[Dict[str, Any]]) -> List[Dict[str, Any]]:
     """The previous export minus every pair the gate now withholds.
 
@@ -400,7 +414,9 @@ def review_queue(rows: Iterable[Dict[str, Any]], generated: str) -> Dict[str, An
 # --- evidence for each published claim -------------------------------------------
 
 QUOTE_LIMIT = 200
-_SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|\s+\|\s+")
+# Key Facts are stored " | "-separated. The pipe is tried first so a fact
+# ending in "." does not leave "| " at the start of the next one.
+_SENTENCE_SPLIT_RE = re.compile(r"\s*\|\s*|(?<=[.!?])\s+")
 
 
 def _cut(sentence: str, limit: int = QUOTE_LIMIT) -> str:
@@ -410,47 +426,53 @@ def _cut(sentence: str, limit: int = QUOTE_LIMIT) -> str:
     return sentence[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
 
 
-def evidence_quote(texts: Iterable[Any], person: Any, company: Any) -> str:
-    """One stored sentence that names the holder or the company, or "".
+def evidence_quote(texts: Iterable[Any], person: Any, withheld: Iterable[Any] = ()) -> str:
+    """One stored sentence that names the holder in full, or "".
 
-    Sentences naming the person in full win, then the surname alone (how
-    reports refer back to people), then the company. The words are lifted
-    as stored; nothing is paraphrased, so an empty string is the honest
-    answer when no stored sentence names either.
+    Only the holder's full name will do. A surname ("Dangote") or the
+    company alone can match a sentence about someone else, which would put
+    another person's act on this holder's card. A sentence that names a
+    person the gate withheld is never quoted, so their claim cannot reach
+    the site on a neighbour's card. The words are lifted as stored; nothing
+    is paraphrased, so an empty string is the honest answer.
     """
-    sentences = [s.strip() for t in texts or [] for s in _SENTENCE_SPLIT_RE.split(str(t or "")) if s.strip()]
-    full = canonical_person(person)
-    surname = (full.split() or [""])[-1]
-    firm = canonical_company(company)
-    for name in (full, surname, firm):
-        if not name:
-            continue
-        for s in sentences:
-            if _mentions(s, name):
+    holder = _clean(person)
+    name = canonical_company(holder) if _reads_as_entity(holder) else canonical_person(holder)
+    if not name:
+        return ""
+    hidden = [canonical_person(w) for w in withheld or () if _clean(w)]
+    for t in texts or []:
+        for s in _SENTENCE_SPLIT_RE.split(str(t or "")):
+            s = s.strip()
+            if s and _mentions(s, name) and not any(_mentions(s, h) for h in hidden):
                 return _cut(s)
     return ""
 
 
 def attach_evidence(rows: Iterable[Dict[str, Any]], articles: Iterable[Dict[str, Any]],
-                    verified_at: str) -> List[Dict[str, Any]]:
+                    verified_at: str, withheld: Iterable[Any] = ()) -> List[Dict[str, Any]]:
     """Copy each row with Evidence: {source_url, quote, date, last_verified}.
 
     The quote comes from the stored article behind the row (its key facts,
     which restate the article's own sentences, then its summary) or the
-    row's notes. The date is the article's publication date when it is on
-    file, else the day the row was extracted.
+    row's notes, skipping sentences that name anyone in `withheld`. The
+    date is the article's publication day (feeds store RFC-822 times, so
+    it is parsed, not sliced) when it is on file, else the day the row was
+    extracted.
     """
     by_url = {str(a.get("URL") or a.get("url") or "").strip(): a for a in articles or []}
+    withheld = list(withheld or ())
     out = []
     for row in rows or []:
         r = dict(row or {})
         url = str(r.get("Source URL") or "").strip()
         article = by_url.get(url) if url else None
         texts = [article.get("Key Facts"), article.get("Summary")] if article else []
+        published = parse_feed_date((article or {}).get("Time"))
         r["Evidence"] = {
             "source_url": url,
-            "quote": evidence_quote(texts + [r.get("Notes")], r.get("Person Name"), r.get("Company")),
-            "date": str((article or {}).get("Time") or r.get("Date") or "")[:10],
+            "quote": evidence_quote(texts + [r.get("Notes")], r.get("Person Name"), withheld),
+            "date": published.strftime("%Y-%m-%d") if published else str(r.get("Date") or "")[:10],
             "last_verified": verified_at,
         }
         out.append(r)

@@ -1049,7 +1049,8 @@ def export_static_json_database():
     with open(REVIEW_QUEUE_PATH, "w", encoding="utf-8") as f:
         json.dump(register_quality.review_queue(psc_checked, gate_stamp), f, default=str, indent=2)
     try:
-        psc_records = register_quality.attach_evidence(psc_records, db.get_articles(), gate_stamp)
+        psc_records = register_quality.attach_evidence(
+            psc_records, db.get_articles(), gate_stamp, register_quality.withheld_names(psc_checked))
     except Exception as exc:
         logger.warning(f"PSC evidence skipped ({type(exc).__name__})")
 
