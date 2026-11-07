@@ -37,10 +37,13 @@ export interface HistoryDay {
   high_risk: number;
 }
 
+/** A people.json row; the pipeline adds "First Seen" (the earliest Date of its group). */
+export type PersonRow = PersonMove & { "First Seen"?: string };
+
 export interface ChangesInput {
   records: PscRecord[];
   companies: CompanyRow[];
-  people: PersonMove[];
+  people: PersonRow[];
   procurement: ProcurementRow[];
   history: HistoryDay[];
   articles: ArticleLike[];
@@ -223,20 +226,22 @@ export function weeklyChanges(input: ChangesInput, lastRun: string): WeeklyChang
       }),
   );
 
-  // people.json has no first-seen field: a person's earliest dated row is when AURA first recorded them.
-  const firstRow = new Map<string, PersonMove>();
+  // A person's first sighting is the earliest First Seen across their
+  // organisations. Rows without one (exports from before the pipeline wrote
+  // it) are skipped: their Date is the latest mention, not the first.
+  const firstRow = new Map<string, PersonRow>();
   for (const p of input.people) {
     const key = nameKey(p.Name);
-    const date = dateOf(p.Date);
+    const date = dateOf(p["First Seen"]);
     if (!key || !date || isUnnamed(String(p.Name))) continue;
     const prior = firstRow.get(key);
-    if (!prior || date < dateOf(prior.Date)) firstRow.set(key, p);
+    if (!prior || date < dateOf(prior["First Seen"])) firstRow.set(key, p);
   }
   const people = newestFirst(
     [...firstRow.values()]
-      .filter((p) => inWeek(dateOf(p.Date)))
+      .filter((p) => inWeek(dateOf(p["First Seen"])))
       .map((p) => {
-        const date = dateOf(p.Date);
+        const date = dateOf(p["First Seen"]);
         return {
           date,
           name: String(p.Name).trim(),

@@ -4,12 +4,12 @@ import * as data from "../../lib/data.ts";
 import { href } from "../../lib/url.ts";
 import { groupHoldings } from "../../lib/psc.ts";
 import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
-import { buildEntities, type CompanyRow, type PersonMove } from "../../lib/entities.ts";
-import { weeklyChanges, entitySlug, type ArticleRef } from "../../lib/changes.ts";
+import { buildEntities, type CompanyRow } from "../../lib/entities.ts";
+import { weeklyChanges, entitySlug, type ArticleRef, type PersonRow } from "../../lib/changes.ts";
 
 const records = data.psc();
 const companies = data.readJson<CompanyRow[]>("companies.json", []);
-const people = data.readJson<PersonMove[]>("people.json", []);
+const people = data.readJson<PersonRow[]>("people.json", []);
 const procurement = data.readJson<ProcurementRow[]>("procurement.json", []);
 const articles = data.articles();
 const history = data.history();
@@ -49,7 +49,15 @@ const counts = [
 ];
 const firstSeen = [
   { id: "companies", title: "Companies first seen", rows: week.companies, empty: "No company appeared in AURA's records for the first time this week." },
-  { id: "people", title: "People first seen", rows: week.people, empty: "No person appeared in AURA's records for the first time this week." },
+  {
+    id: "people",
+    title: "People first seen",
+    rows: week.people,
+    // Exports written before the pipeline recorded "First Seen" cannot say who is new.
+    empty: people.some((p) => p["First Seen"])
+      ? "No person appeared in AURA's records for the first time this week."
+      : "AURA's records do not yet say when each person was first seen. This list fills in after the next pipeline run.",
+  },
 ];
 const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as const;
 ---

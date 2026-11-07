@@ -80,15 +80,22 @@ describe("first seen", () => {
     assert.deepEqual(w.companies.map((c) => c.name), ["Newer Co", "New Co"]);
     assert.equal(w.companies[0].date, "2026-11-06");
   });
-  test("people first seen this week: earliest row wins, unnamed people skipped", () => {
+  test("people first seen this week come from the export's First Seen, not the row date", () => {
     const w = weeklyChanges({ ...empty, people: [
-      { Name: "Known Person", Date: "2026-08-01", Event: "other" },
-      { Name: "Known Person", Date: "2026-11-03", Event: "other" },
-      { Name: "New Person", Position: "CEO", Organization: "Acme Plc", Date: "2026-11-04", Event: "other" },
-      { Name: "Unnamed Special Adviser", Date: "2026-11-04", Event: "resignation" },
+      // The export keeps the newest row per (name, organisation): a recent Date, an old First Seen.
+      { Name: "Olayemi Cardoso", Organization: "Central Bank of Nigeria", Date: "2026-11-04", "First Seen": "2026-09-22", Event: "other" },
+      { Name: "Known Person", Organization: "Acme Plc", Date: "2026-11-03", "First Seen": "2026-11-03", Event: "other" },
+      { Name: "Known Person", Organization: "Other Ltd", Date: "2026-08-01", "First Seen": "2026-08-01", Event: "other" },
+      { Name: "New Person", Position: "CEO", Organization: "Acme Plc", Date: "2026-11-05", "First Seen": "2026-11-04", Event: "other" },
+      { Name: "Unnamed Special Adviser", Date: "2026-11-04", "First Seen": "2026-11-04", Event: "resignation" },
     ] }, END);
     assert.deepEqual(w.people.map((p) => p.name), ["New Person"]);
+    assert.equal(w.people[0].date, "2026-11-04");
     assert.equal(w.people[0].detail, "CEO, Acme Plc");
+  });
+  test("a person with no First Seen recorded is never claimed as new", () => {
+    const w = weeklyChanges({ ...empty, people: [{ Name: "Older Export", Date: "2026-11-04", Event: "other" }] }, END);
+    assert.deepEqual(w.people, []);
   });
 });
 
