@@ -24,6 +24,9 @@ export function GET({ site }: { site?: URL }) {
     ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/"),
     ...HEADLINE_CATEGORIES.map((c) => `news/${c}/`),
     ...listEditions().map((e) => `brief/${e.slug}/`),
+    "corrections/",
+    "privacy/",
+    "terms/",
   ];
   const urls = paths.map((p) => `  <url><loc>${new URL(href(p), base).toString()}</loc></url>`).join("\n");
   return new Response(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`, {
