@@ -7,8 +7,10 @@
 // reader's personal unsubscribe or preferences link; if an edition page can
 // be indexed (they name people from news reports); if the sitemap lists
 // one; if an edition page still says "Reply to this email" (there is no
-// inbox to reply from on the web); or if a link that opens a new tab does
-// not say so to screen-reader users.
+// inbox to reply from on the web); if an edition page sends corrections to
+// a public GitHub issue instead of the private /dispute/ form (editions
+// name people); or if a link that opens a new tab does not say so to
+// screen-reader users.
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -51,6 +53,9 @@ for (const site of sites) {
       problems.push(`${site}: /${path} is missing noindex`);
     }
     if (html.includes("Reply to this email")) problems.push(`${site}: /${path} tells web readers to reply to an email`);
+    if (/github\.com\/[^"'\s]*\/issues\/new/.test(html)) {
+      problems.push(`${site}: /${path} asks for corrections through a public GitHub issue, not /dispute/`);
+    }
     for (const a of html.match(/<a\b[^>]*target="_blank"[^>]*>/g) ?? []) {
       if (!/new tab/.test(a)) problems.push(`${site}: /${path} has a new-tab link that does not say so: ${a}`);
     }
