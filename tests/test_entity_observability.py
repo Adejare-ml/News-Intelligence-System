@@ -142,7 +142,7 @@ class TestObservability:
                 {"title": "Home", "source": "CAC", "url": "https://e.test/3",
                  "raw_text": "", "published_at": stamp},  # navigation stub
             ]
-        for attr in ("fetch_news_api", "fetch_gnews", "fetch_guardian_news", "fetch_newsdata_io"):
+        for attr in ("fetch_outlet_feeds", "fetch_news_api", "fetch_gnews", "fetch_guardian_news", "fetch_newsdata_io"):
             monkeypatch.setattr(NewsIngestionService, attr, staticmethod(lambda *a, **k: []))
         monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss", staticmethod(fetch_rss))
 

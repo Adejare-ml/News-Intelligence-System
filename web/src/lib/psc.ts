@@ -87,6 +87,76 @@ export function companyKey(record: PscRecord | null | undefined): string {
   return canon || String(record?.Company ?? "").trim().toLowerCase();
 }
 
+/**
+ * Who a row is about: name AND company, never name alone (the same
+ * identity as register_quality.holder_key). Two different people called
+ * Abubakar Musa at two companies must not share a card, a page or a
+ * pattern; spelling variants of one person at one company do. Spacing and
+ * punctuation are dropped so "FirstHoldCo" and "First HoldCo" stay one.
+ */
+export function holderKey(record: PscRecord | null | undefined): string {
+  const squash = (s: string) => s.replace(/[^a-z0-9]/g, "");
+  return `${squash(personKey(record))}::${squash(companyKey(record))}`;
+}
+
+/** How strong a published claim is, strongest first (register_quality.confidence). */
+export const CONFIDENCE_TIERS = ["Official filing", "Full article", "Headline only"] as const;
+export type Confidence = (typeof CONFIDENCE_TIERS)[number];
+
+/** What each tier means, in the words the badge and How it works use. */
+export const CONFIDENCE_NOTES: Record<Confidence, string> = {
+  "Official filing": "A regulatory filing reference is on record for this claim. AURA has not checked it against the register itself.",
+  "Full article": "Extracted from the full text of the news report, not just its headline.",
+  "Headline only": "Extracted from a headline and feed snippet. Shown only for company-to-company holdings, or after an editor checked it.",
+};
+
+/** The tier the gate exported; a row without one counts as the weakest. */
+export function confidenceOf(record: PscRecord | null | undefined): Confidence {
+  const stored = String(record?.Confidence ?? "").trim();
+  return (CONFIDENCE_TIERS as readonly string[]).includes(stored) ? (stored as Confidence) : "Headline only";
+}
+
+/**
+ * Words that mark an organisation, as in register_quality._HOLDER_ENTITY_WORDS
+ * (legal suffixes, relevance._ORG_WORDS and vehicle words).
+ */
+const ENTITY_WORDS = new Set([
+  "plc", "ltd", "limited", "nigeria", "nig", "co", "company", "inc", "llc", "group", "holdings",
+  "forum", "association", "agency", "commission", "authority", "council", "ministry", "bureau",
+  "institute", "federation", "union", "party", "corps", "command", "academy", "bank",
+  "corporation", "committee", "board", "department", "society", "congress", "assembly",
+  "parliament", "senate", "tribunal", "secretariat", "organisation", "organization",
+  "foundation", "trust", "university", "college", "school", "hospital", "church", "mosque",
+  "nominees", "nominee", "capital", "investments", "investment", "partners", "fund",
+  "ventures", "trustees", "trustee", "llp", "spv",
+]);
+
+/**
+ * A name is an organisation only on clear evidence: it ends in an entity
+ * word or holds two (register_quality._reads_as_entity). Trust and Fund
+ * are Nigerian first names, so one such word anywhere is not enough.
+ */
+function readsAsEntity(name: string): boolean {
+  const words = name.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
+  if (!words.length) return false;
+  return ENTITY_WORDS.has(words[words.length - 1]) || words.filter((w) => ENTITY_WORDS.has(w)).length >= 2;
+}
+
+/**
+ * A name that may be a natural person: not blank, a placeholder or "direct
+ * holding", and not clearly an organisation. Unclear names count as people.
+ */
+export function readsAsPerson(value: unknown): boolean {
+  const name = String(value ?? "").trim();
+  return name !== "" && !PLACEHOLDER.has(name.toLowerCase()) && !isDirectHolding(name) && !readsAsEntity(name);
+}
+
+/** The row names a natural person as holder, previous holder or in the chain. */
+function namesPerson(record: PscRecord): boolean {
+  return ["Person Name", "Previous Holder", "Intermediate Entities"].some((field) => readsAsPerson(record[field]));
+}
+
 /** Held back by the gate as implausible (a footballer "controlling" a business). */
 export function isQuarantined(record: PscRecord | null | undefined): boolean {
   const q = record?.Quarantined;
@@ -101,6 +171,14 @@ export function isQuarantined(record: PscRecord | null | undefined): boolean {
  */
 export function isPublic(record: PscRecord | null | undefined): boolean {
   if (!record || isQuarantined(record)) return false;
+  // A claim naming a person on a headline alone waits for the owner's review.
+  const quality = Array.isArray(record.Quality) ? record.Quality : [];
+  if (quality.includes("unverified_person")) return false;
+  // A row with no tier was exported before the gate held such claims, so
+  // nothing says it rests on more than a headline: only companies show.
+  if (!(CONFIDENCE_TIERS as readonly string[]).includes(String(record.Confidence ?? "").trim()) && namesPerson(record)) {
+    return false;
+  }
   // "Source" only says how the row was made ("extracted", "seed"); a claim is
   // published only with a link to the article that reported it.
   return /^https?:\/\//.test(String(record["Source URL"] ?? "").trim());
@@ -135,32 +213,21 @@ export function isDirectHolding(text: unknown): boolean {
   return !t || t === "direct holding" || t === "direct shareholder" || t === "direct" || t === "n/a";
 }
 
+/**
+ * Rows by company, for patterns across one company's holders. There is no
+ * by-person view: a name alone cannot say two rows are the same person.
+ */
 export interface Context {
-  byPerson: Record<string, PscRecord[]>;
   byCompany: Record<string, PscRecord[]>;
 }
 
 export function buildContext(records: PscRecord[]): Context {
-  const byPerson: Record<string, PscRecord[]> = {};
   const byCompany: Record<string, PscRecord[]> = {};
   for (const r of records || []) {
-    const p = personKey(r);
     const c = companyKey(r);
-    if (p) (byPerson[p] ||= []).push(r);
     if (c) (byCompany[c] ||= []).push(r);
   }
-  return { byPerson, byCompany };
-}
-
-/** Distinct companies (not rows) one person holds control in. */
-export function companiesFor(record: PscRecord, context?: Context): string[] {
-  const ctx = context || buildContext([record]);
-  const seen = new Set<string>();
-  for (const r of ctx.byPerson[personKey(record)] || []) {
-    const c = companyKey(r);
-    if (c) seen.add(c);
-  }
-  return [...seen];
+  return { byCompany };
 }
 
 type Rule = { id: string; run: (r: PscRecord, ctx: Context) => Omit<Flag, "id"> | null };
@@ -254,18 +321,6 @@ const RULES: Rule[] = [
     },
   },
   {
-    id: "R12_CROSS_ENTITY",
-    run(record, ctx) {
-      const companies = companiesFor(record, ctx);
-      if (companies.length < 2) return null;
-      return {
-        severity: "medium",
-        title: "Holdings in several companies",
-        detail: `Reported in ${companies.length} tracked companies.`,
-      };
-    },
-  },
-  {
     id: "R6_UNKNOWN_OWNER",
     run(record) {
       const pct = toPercent(record.Percentage);
@@ -326,6 +381,8 @@ export interface Holding {
   key: string;
   person: string;
   company: string;
+  /** The gate's canonical company ("united bank for africa"), for matching text. */
+  companyKey: string;
   role: string;
   /** The most recent disclosed stake, or null if no report gave one. */
   stake: number | null;
@@ -341,8 +398,36 @@ export interface Holding {
   firstReported: string;
   lastReported: string;
   flags: Flag[];
-  hasFilingRef: boolean;
+  /** The strongest tier any report of it reached. */
+  confidence: Confidence;
+  /** A quote from the newest report that has one, or null. */
+  evidence: Evidence | null;
   isSeed: boolean;
+}
+
+/** A stored sentence behind a holding (register_quality.attach_evidence). */
+export interface Evidence {
+  url: string;
+  publisher: string;
+  quote: string;
+  date: string;
+  lastVerified: string;
+}
+
+function evidenceOf(rows: PscRecord[]): Evidence | null {
+  for (let i = rows.length - 1; i >= 0; i--) {
+    const e = (rows[i].Evidence ?? {}) as Record<string, unknown>;
+    const quote = String(e.quote ?? "").trim();
+    if (!quote) continue;
+    return {
+      url: String(e.source_url ?? "").trim(),
+      publisher: String(rows[i].Publisher ?? "").trim(),
+      quote,
+      date: String(e.date ?? "").slice(0, 10),
+      lastVerified: String(e.last_verified ?? ""),
+    };
+  }
+  return null;
 }
 
 /** Values the extractor writes when it has nothing: never shown as data. */
@@ -415,15 +500,14 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
   // Only publishable rows become holdings, whoever the caller is.
   const wanted = publicRecords(records);
   const ctx = buildContext(wanted);
-  const personName = displayNames(records, personKey, "Person Name");
+  // A holder's spelling is chosen among that holder's own rows, so one
+  // Abubakar Musa never takes another's.
+  const personName = displayNames(records, holderKey, "Person Name");
   const companyName = displayNames(records, companyKey, "Company");
   const groups = new Map<string, PscRecord[]>();
   for (const r of wanted) {
-    const p = personKey(r);
-    const c = companyKey(r);
-    if (!p && !c) continue;
-    // "FirstHoldCo" and "First HoldCo" are the same company in the reporting.
-    const key = `${p.replace(/[^a-z0-9]/g, "")}::${c.replace(/[^a-z0-9]/g, "")}`;
+    if (!personKey(r) && !companyKey(r)) continue;
+    const key = holderKey(r);
     const list = groups.get(key);
     if (list) list.push(r);
     else groups.set(key, [r]);
@@ -455,8 +539,9 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
     holdings.push({
       key,
       kind: kinds.has("stake") ? "stake" : kinds.has("role") ? "role" : "influence",
-      person: personName.get(personKey(latest)) || "Undisclosed holder",
+      person: personName.get(key) || "Undisclosed holder",
       company: companyName.get(companyKey(latest)) || "Undisclosed company",
+      companyKey: companyKey(latest),
       role: pick("Board Role"),
       stake,
       stakeLabel: stake === null ? "Stake not disclosed" : `${stake % 1 === 0 ? stake.toFixed(0) : stake.toFixed(2).replace(/0$/, "")}%`,
@@ -474,7 +559,8 @@ export function groupHoldings(records: PscRecord[]): Holding[] {
       firstReported: dateOf(sorted[0]),
       lastReported: dateOf(latest),
       flags,
-      hasFilingRef: sorted.some((r) => String(r["Regulatory Filing Ref"] ?? "").trim() !== ""),
+      confidence: CONFIDENCE_TIERS[Math.min(...sorted.map((r) => CONFIDENCE_TIERS.indexOf(confidenceOf(r))))],
+      evidence: evidenceOf(sorted),
       isSeed: sorted.some((r) => String(r.Source ?? "").toLowerCase() === "seed"),
     });
   }
@@ -507,7 +593,7 @@ export function counted(holdings: Holding[]): Holding[] {
 
 export function summarise(all: Holding[]): RegisterSummary {
   const holdings = counted(all);
-  const holders = new Set(holdings.map((h) => h.person.toLowerCase()));
+  const holders = new Set(holdings.map((h) => h.key));
   const companies = new Set(holdings.map((h) => h.company.toLowerCase()));
   return {
     holdings: holdings.length,
@@ -519,7 +605,7 @@ export function summarise(all: Holding[]): RegisterSummary {
     highSeverity: holdings.filter((h) => h.flags.some((f) => f.severity === "high")).length,
     nigeriaBand: holdings.filter((h) => h.band?.id === "BAND_5_25").length,
     offshore: holdings.filter((h) => h.flags.some((f) => f.id === "R7_SECRECY_VEHICLE")).length,
-    filingRefRate: holdings.length ? holdings.filter((h) => h.hasFilingRef).length / holdings.length : null,
+    filingRefRate: holdings.length ? holdings.filter((h) => h.confidence === "Official filing").length / holdings.length : null,
     isDemo: all.some((h) => h.isSeed),
   };
 }

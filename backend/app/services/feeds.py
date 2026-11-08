@@ -3,8 +3,8 @@
 Two outbound surfaces, both fed from data the pipeline already produces:
 
 - ``build_rss_feed``: an RSS 2.0 document over the Daily Reports rows,
-  one item per compiled edition, linking to that edition's archived
-  markdown. Written to ``static/data/feed.xml`` at export time so GitHub
+  one item per compiled edition, linking to that edition's page on the
+  site (/brief/<slug>/). Written to ``static/data/feed.xml`` at export time so GitHub
   Pages serves it like every other static artifact -- there is no server
   to render a feed on demand.
 
@@ -21,6 +21,7 @@ argument -- reading the environment is the caller's job.
 """
 
 import logging
+import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from typing import Any, Dict, List
@@ -30,8 +31,13 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-# The canonical deployment; mirrors <link rel="canonical"> in index.html.
-SITE_URL = "https://adejare-ml.github.io/News-Intelligence-System"
+# The production site (Cloudflare). Readers land on the edition pages it
+# builds, not on the GitHub Pages test copy.
+SITE_URL = "https://auranews.pages.dev"
+
+# report_YYYYMMDD_HHMMSS.md -> the site's /brief/YYYYMMDD-HHMMSS/ page
+# (same naming rule as web/src/lib/archive.ts).
+_ARCHIVE_NAME = re.compile(r"^report_(\d{8})_(\d{6})\.md$")
 
 WEBHOOK_TIMEOUT_SECONDS = 10
 MAX_WEBHOOK_ITEMS = 10
@@ -71,8 +77,8 @@ def build_rss_feed(reports: List[Dict[str, Any]], site_url: str = SITE_URL,
                    limit: int = 30, now: datetime = None) -> str:
     """RSS 2.0 document over the newest ``limit`` report editions.
 
-    Editions with an ``Archive File`` link to that durable markdown
-    document; legacy rows without one link to the live brief section.
+    Editions with an ``Archive File`` link to that edition's page on the
+    site; legacy rows without one link to the brief index.
     Everything interpolated is XML-escaped, and the guid is the archive
     filename (already unique per edition since it carries the run time).
     """
@@ -85,7 +91,8 @@ def build_rss_feed(reports: List[Dict[str, Any]], site_url: str = SITE_URL,
     for row in ordered:
         stamp = _edition_datetime(row)
         archive = str(row.get("Archive File", "")).strip()
-        link = f"{site}/data/archives/{archive}" if archive else f"{site}/#brief"
+        match = _ARCHIVE_NAME.match(archive)
+        link = f"{site}/brief/{match.group(1)}-{match.group(2)}/" if match else f"{site}/brief/"
         guid = archive or f"edition-{stamp.strftime('%Y%m%d%H%M%S')}"
         title = f"AURA brief — {stamp.strftime('%d %b %Y, %H:%M UTC')}"
         items.append(

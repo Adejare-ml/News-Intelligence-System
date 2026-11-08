@@ -1,0 +1,102 @@
+# Disputes, corrections and unpublishing
+
+AURA names people and companies from news reports, so it needs a way for
+them to answer back, and a public record of what was fixed.
+
+## 1. A dispute comes in
+
+Readers use **Dispute this record** (on entity pages and every holding
+card), which opens `/dispute/?ref=<record>`. The form posts to
+`/api/dispute`, which stores the dispute in D1 (`disputes`, status
+`open`) and emails `OWNER_EMAIL` when email sending is on. Setup is in
+[CLOUDFLARE.md](CLOUDFLARE.md#disputes-one-time-setup).
+
+Check the record against its source article, reply to the sender, then
+do one of the two things below, or nothing if the record stands.
+
+## 2. Correct a record
+
+Fix the row in the Google Sheet, then add an entry to
+`backend/app/static/data/corrections.json`. The site lists it on
+`/corrections/` at the next build. The file is a JSON list, in any
+order (the page shows the newest first):
+
+```json
+[
+  {
+    "date": "2026-11-07",
+    "ref": "Ikeja Mills Plc / holder record",
+    "what_changed": "Stake corrected from 60% to 6%.",
+    "reason": "The source article said 6%; the figure was misread."
+  }
+]
+```
+
+| Field | Required | Meaning |
+|---|---|---|
+| `date` | yes | When the change was made, `YYYY-MM-DD` |
+| `ref` | no | Which record or page. Leave out names that were unpublished |
+| `what_changed` | yes | What is different now, in one or two plain sentences |
+| `reason` | no | Why it changed |
+
+Entries without a `date` or `what_changed` are skipped. An entry that
+names someone on the unpublished list is not shown either.
+
+## 3. Unpublish a name
+
+```
+python3 scripts/unpublish.py "Full Name or Company Ltd" --reason "dispute upheld" [--kind person|company]
+```
+
+This appends `{name, kind?, added, reason}` to
+`backend/app/static/data/suppressed.json`. Commit and push it:
+
+- the next **site build** stops showing the name anywhere: entity pages,
+  the register, news, the brief and its archive pages, search
+  (`search-index.json`), the sitemap and the email page. It also takes the
+  name out of the raw copies served under `/data/` of the files no
+  pipeline run rewrites: `report_latest.md`, `archives/*.md`,
+  `weekly_wrap.md`, `weekly_wrap.json`, `email_digest.json` and the sent
+  editions in `digests/` (the line, card or ownership item naming it goes);
+- the next **pipeline run** drops every row naming it from the exported
+  files (`significant_control.json`, `people.json`, `companies.json`,
+  `latest.json`, `procurement.json`, `category_news.json`, `graph.json`,
+  `alerts.json`, `changes.json`, the timelines and the email digest) and
+  leaves it out of the new brief (`report_latest.md` and its archive
+  copy). The rows stay in the Google Sheet.
+
+Matching is by whole words, ignoring case, accents, middle initials and
+honorifics, plus the register's canonical keys: "Aliko Dangote" also hides
+"Alhaji Aliko Dangote", "Tony Elumelu" hides "Tony O. Elumelu", and
+"Dangote Cement Plc" hides "Dangote Cement", but "Aliko Dangote" does not
+hide "Dangote Cement". Use the full name; a single common word would hide
+every record containing it. Any article, headline, brief line or contract
+that names the entity, in any field, is hidden with it.
+
+**The list is public.** `suppressed.json` is in this public repository, so
+each name and its reason can be read there (the site itself does not
+serve the file). Keep the reason generic, such as "dispute upheld" or
+"removed on request"; never put the details of a dispute there.
+
+To publish a name again, delete its entry from `suppressed.json`.
+
+Until the next pipeline run, the row exports under `/data/` (the files
+the run rewrites, listed above) still contain the name, because a build
+copies them as they are; trigger a run to clear them at once.
+
+**Production follows the promoted code.** Production is rebuilt from the
+promoted site code (the `production` tag) with the current data, by each
+scheduler run and each promotion, never by a push (a push rebuilds only
+the test site). Everything the site build does above, on pages and in the
+`/data/` copies, reaches production only once a version that has it is
+promoted, and then at the next scheduler or promote build; until then
+production pages keep showing the name. Promote such a version before
+using `unpublish.py` for the first time. Production never serves
+`suppressed.json` itself, whatever version is promoted
+(`web/scripts/build-production.sh` removes it).
+
+**The repository keeps the name.** Only what the site serves is cleaned.
+The committed files in `backend/app/static/data/` that no run rewrites
+(the archived briefs and digests above) still contain it, and the public
+repository's history keeps every earlier version of every exported file.
+Unpublishing does not edit those files or rewrite history.

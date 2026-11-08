@@ -1,9 +1,10 @@
 """Reader-chosen news categories for the Morning Brief.
 
 Business is AURA's own brief (the ownership/corporate pipeline). The
-other categories a reader can tick at sign-up -- sports, technology,
-politics, entertainment -- are headline sections built here from
-keyless Google News feeds, each in two editions: Nigeria and Global.
+other categories a reader can tick at sign-up -- technology and
+politics -- are headline sections built here from keyless Google News
+feeds, each in two editions: Nigeria and Global. (Sports and
+entertainment were offered once and have been cut.)
 
 Like the other verticals this stays outside the main pipeline: no LLM
 cascade, no Sheets writes. The export is ``category_news.json``:
@@ -12,7 +13,7 @@ cascade, no Sheets writes. The export is ``category_news.json``:
       "generated": "2026-11-06 07:05:12",
       "regions": ["nigeria", "global"],
       "sections": {
-        "sports": {"nigeria": [item, ...], "global": [item, ...]},
+        "technology": {"nigeria": [item, ...], "global": [item, ...]},
         ...
       }
     }
@@ -35,23 +36,14 @@ CATEGORY_CAP = 8
 
 # Order is the order sections appear in emails and on the site.
 CATEGORY_LABELS: Dict[str, str] = {
-    "sports": "Sports",
     "technology": "Technology",
     "politics": "Politics",
-    "entertainment": "Entertainment",
 }
 CATEGORIES = tuple(CATEGORY_LABELS)
 
 # Each region lists its feeds best-first: the dedupe keeps the first copy
 # of a story, and the cap keeps the section short.
 CATEGORY_FEEDS: Dict[str, Dict[str, List[str]]] = {
-    "sports": {
-        "nigeria": [
-            google_search_url("\"Super Eagles\" OR \"Super Falcons\" OR NPFL OR \"Nigerian athlete\" when:2d", "nigeria"),
-            google_topic_url("SPORTS", "nigeria"),
-        ],
-        "global": [google_topic_url("SPORTS", "global")],
-    },
     "technology": {
         "nigeria": [
             google_search_url("Nigeria (tech OR startup OR fintech OR telecom) when:2d", "nigeria"),
@@ -67,13 +59,6 @@ CATEGORY_FEEDS: Dict[str, Dict[str, List[str]]] = {
             google_search_url("(election OR parliament OR president OR \"prime minister\") politics when:1d", "global"),
             google_topic_url("WORLD", "global"),
         ],
-    },
-    "entertainment": {
-        "nigeria": [
-            google_search_url("Nollywood OR Afrobeats OR \"Nigerian music\" OR \"Nigerian film\" when:2d", "nigeria"),
-            google_topic_url("ENTERTAINMENT", "nigeria"),
-        ],
-        "global": [google_topic_url("ENTERTAINMENT", "global")],
     },
 }
 

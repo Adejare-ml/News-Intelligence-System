@@ -1,0 +1,102 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import * as data from "../../lib/data.ts";
+import { href } from "../../lib/url.ts";
+import { weekStart, whatsappHref, type Finding } from "../../lib/findings.ts";
+
+export function getStaticPaths() {
+  return data.findings().map((finding) => ({ params: { week: finding.week }, props: { finding } }));
+}
+
+const { finding } = Astro.props as { finding: Finding };
+const day = (iso: string) =>
+  new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+---
+<Base
+  title={`${finding.headline} · Finding of the Week · AURA`}
+  description={finding.bullets.map((b) => b.text).join(" ").slice(0, 160)}
+  noindex={finding.names_person}
+>
+  <article class="wrap finding">
+    <p class="eyebrow">Finding of the Week · {day(weekStart(finding.week))}</p>
+    <h1 class="h1">{finding.headline}</h1>
+    {finding.note && <p class="lede">{finding.note}</p>}
+
+    <ul class="facts">
+      {finding.bullets.map((b) => (
+        <li>
+          <p>{b.text}</p>
+          <a class="meta" href={b.url} rel="noopener nofollow" target="_blank">
+            {b.outlet}, {day(b.date)} <Icon name="arrowUpRight" size={14} />
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <section class="share" aria-labelledby="share-title">
+      <h2 class="h3" id="share-title">Share this finding</h2>
+      <div class="buttons">
+        <button class="btn" type="button" data-copy={finding.drafts.linkedin}>Copy for LinkedIn</button>
+        <button class="btn" type="button" data-copy={finding.drafts.x}>Copy for X</button>
+        <a class="btn" href={whatsappHref(finding.drafts.x)} rel="noopener" target="_blank">Share on WhatsApp</a>
+      </div>
+      <p class="meta" data-copy-status role="status" aria-live="polite"></p>
+    </section>
+
+    <p class="meta back">
+      These are reported claims from published news, not regulatory filings.
+      <a href={href("findings/")}>All findings</a>
+    </p>
+  </article>
+</Base>
+
+<script>
+  import "../../scripts/findings.ts";
+</script>
+
+<style>
+  .finding {
+    padding-block: clamp(40px, 7vw, 88px) clamp(48px, 8vw, 96px);
+    display: grid;
+    gap: 18px;
+    max-width: var(--measure);
+  }
+  .facts {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .facts li {
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-s);
+    background: var(--surface);
+    overflow-wrap: anywhere;
+  }
+  .facts p {
+    margin: 0 0 6px;
+  }
+  .facts a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .share {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .back a {
+    color: var(--gold);
+    margin-left: 6px;
+  }
+</style>

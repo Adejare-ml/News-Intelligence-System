@@ -7,9 +7,9 @@
  * "AI News Intelligence Scheduler" workflow through GitHub's API at each
  * slot, and checks again later in case that start failed.
  *
- * It never starts a second run for a slot: if any run (from this Worker,
- * GitHub's cron, the watchdog or a person) was created since the slot began,
- * it does nothing. The GitHub cron runs skip themselves the same way when
+ * It never starts a second run for a slot: if a run that did real work (from
+ * this Worker, GitHub's cron, the watchdog or a person) was created since the
+ * slot began, it does nothing. Runs that skipped themselves do not count. The GitHub cron runs skip themselves the same way when
  * this Worker got there first (the "guard" job in news_scheduler.yml).
  */
 
@@ -31,6 +31,23 @@ export function slotStart(now: Date): Date {
   const start = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), slot ?? SLOTS[SLOTS.length - 1]));
   if (slot === undefined) start.setUTCDate(start.getUTCDate() - 1);   // before 07:00: last night's 23:00
   return start;
+}
+
+interface RunInfo {
+  status: string;
+  created_at: string;
+  updated_at: string;
+}
+
+/**
+ * A run covers its slot only if it is still queued or running, or ran for
+ * more than two minutes. A late GitHub cron run that skipped itself finishes
+ * in seconds and must not stop the next slot from starting (same rule as
+ * scripts/scheduler_guard.py).
+ */
+export function didRealWork(run: RunInfo): boolean {
+  if (run.status !== "completed") return true;
+  return Date.parse(run.updated_at) - Date.parse(run.created_at) > 120_000;
 }
 
 type Fetch = (input: string, init?: RequestInit) => Promise<Response>;
@@ -56,10 +73,10 @@ export async function ensureRun(env: Env, now: Date, fetcher: Fetch = fetch): Pr
   };
   const base = `https://api.github.com/repos/${repo}/actions/workflows/${encodeURIComponent(workflow)}`;
 
-  const list = await fetcher(`${base}/runs?per_page=1&created=${encodeURIComponent(">=" + slot)}`, { headers });
+  const list = await fetcher(`${base}/runs?per_page=20&created=${encodeURIComponent(">=" + slot)}`, { headers });
   if (!list.ok) return { action: "error", slot, detail: `listing runs: HTTP ${list.status}` };
-  const runs = (await list.json()) as { total_count?: number };
-  if ((runs.total_count ?? 0) > 0) return { action: "already_running", slot };
+  const runs = (await list.json()) as { workflow_runs?: RunInfo[] };
+  if ((runs.workflow_runs ?? []).some(didRealWork)) return { action: "already_running", slot };
 
   const email_edition = start.getUTCHours() === EDITION_SLOT;
   const dispatch = await fetcher(`${base}/dispatches`, {

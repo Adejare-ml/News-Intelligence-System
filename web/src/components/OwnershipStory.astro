@@ -2,8 +2,9 @@
 import Icon from "./Icon.astro";
 import Chain from "./Chain.astro";
 import ReportTimeline from "./ReportTimeline.astro";
+import ConfidenceBadge from "./ConfidenceBadge.astro";
 import { href } from "../lib/url.ts";
-import { slugify } from "../lib/entity-key.ts";
+import { holderSlug } from "../lib/entities.ts";
 import type { Holding } from "../lib/psc.ts";
 import { describeHolding } from "../lib/psc.ts";
 
@@ -29,10 +30,11 @@ const { holding, others } = Astro.props;
       <div class="timeline-wrap"><ReportTimeline holding={holding} /></div>
 
       <div class="foot">
+        <ConfidenceBadge confidence={holding.confidence} />
         {holding.band && <span class="chip chip-gold">CAMA band {holding.band.label}</span>}
         {holding.flags.slice(0, 2).map((f) => <span class:list={["chip", f.severity === "high" ? "chip-crimson" : "chip-royal"]}>{f.title}</span>)}
         <span class="meta src">Extracted from news reporting · not a CAC filing</span>
-        <a class="link" href={href(`entity/${slugify(holding.person)}/`)}>Follow {holding.person.split(" ").length === 2 ? holding.person.split(" ")[0] : holding.person} <Icon name="arrowRight" size={16} /></a>
+        <a class="link" href={href(`entity/${holderSlug(holding.person, holding.company)}/`)}>Follow {holding.person.split(" ").length === 2 ? holding.person.split(" ")[0] : holding.person} <Icon name="arrowRight" size={16} /></a>
       </div>
     </div>
 
@@ -40,7 +42,7 @@ const { holding, others } = Astro.props;
       <ul class="others">
         {others.map((h, i) => (
           <li data-reveal style={`--i:${i}`}>
-            <a href={href(`entity/${slugify(h.person)}/`)}>
+            <a href={href(`entity/${holderSlug(h.person, h.company)}/`)}>
               <span class="o-name">{h.person}</span>
               <span class="o-desc">{describeHolding(h)}</span>
               <span class:list={["o-stake", "num", { muted: h.stake === null }]}>{h.stake === null ? "—" : h.stakeLabel}</span>

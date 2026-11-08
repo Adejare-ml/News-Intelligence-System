@@ -19,7 +19,8 @@ const TABS = SECTIONS.map((s) => ({ path: s.path, label: s.short, icon: s.icon }
   .tabbar {
     display: none;
   }
-  @media (max-width: 900px) {
+  /* Wherever the header hides its section links (Header.astro). */
+  @media (max-width: 1100px) {
     .tabbar {
       position: fixed;
       z-index: 40;

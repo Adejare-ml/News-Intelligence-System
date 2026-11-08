@@ -1,0 +1,55 @@
+---
+/**
+ * Nine weeks of news coverage for one entity, as inline SVG. Drawn at
+ * build time, so it needs no script; screen readers get the weekly counts
+ * from the label.
+ */
+import { sparkPoints, type WeeklySeries } from "../lib/sparkline.ts";
+import { formatDay } from "../lib/entity-export.ts";
+
+interface Props {
+  series: WeeklySeries;
+}
+const { series } = Astro.props;
+const W = 180;
+const H = 36;
+const line = sparkPoints(series.mentions, W, H);
+const area = `0,${H} ${line} ${W},${H}`;
+const first = formatDay(series.weeks[0]);
+const last = formatDay(series.weeks[series.weeks.length - 1]);
+---
+<figure class="spark">
+  <svg viewBox={`0 -2 ${W} ${H + 4}`} width={W} height={H + 4} role="img"
+    aria-label={`Mentions per week, ${series.weeks.length} weeks from ${first}: ${series.mentions.join(", ")}`}>
+    <polygon points={area} class="area" />
+    <polyline points={line} class="line" />
+  </svg>
+  <figcaption class="meta">{series.total} {series.total === 1 ? "mention" : "mentions"} in the news, {series.weeks.length} weeks to {last}</figcaption>
+</figure>
+
+<style>
+  .spark {
+    margin: 4px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 14px;
+  }
+  .spark svg {
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+  .line {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+  .area {
+    fill: var(--gold);
+    opacity: 0.12;
+  }
+</style>

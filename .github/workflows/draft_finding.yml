@@ -1,0 +1,42 @@
+name: Draft finding of the week
+
+# Drafts the Ownership Finding of the Week from the latest pick in
+# backend/app/static/data/findings/picks.json (see docs/FINDINGS.md).
+# The draft goes to a branch named finding/<week> and the share text is
+# printed to this run's summary. Nothing is posted, merged or opened: the
+# owner checks the draft and merges the branch to publish it.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        # The script reads suppressed.json through backend.app.services.suppression,
+        # which imports the register gate and, through it, the feed helpers.
+        run: pip install -r requirements-ci.txt
+      - name: Draft the finding
+        # Explicit bash turns on pipefail, so a refusal still fails the job through tee.
+        shell: bash
+        run: python scripts/draft_finding.py | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Commit the draft to finding/<week>
+        run: |
+          WEEK=$(python -c "import json, sys; sys.path.insert(0, 'scripts'); import draft_finding as d; print(d.latest_pick(json.load(open('backend/app/static/data/findings/picks.json')))['week'])")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "finding/$WEEK"
+          git add "backend/app/static/data/findings/$WEEK.json"
+          git commit -m "Draft finding of the week $WEEK"
+          # Re-running replaces the earlier draft for the same week.
+          git push -f origin "finding/$WEEK"
+          echo "Draft committed to branch finding/$WEEK. Review it, then merge to publish." >> "$GITHUB_STEP_SUMMARY"
