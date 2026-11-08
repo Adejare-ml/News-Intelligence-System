@@ -139,6 +139,12 @@ def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch
     (out / "people.json").write_text(json.dumps([{"Name": "Tolu Bakare"}]))
     monkeypatch.setattr(rp, "db", d)
     monkeypatch.setattr(rp, "DATA_DIR", str(out))
+    # Run as a local export, with no live hosts: side feeds and og:image
+    # lookups are network-only and not under test. attach_images itself is
+    # replaced, since its fetch default is bound when it is defined.
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    monkeypatch.setattr(rp.side_feeds, "export_side_feeds", lambda *a, **k: None)
+    monkeypatch.setattr(rp.article_images, "attach_images", lambda rows, cache, **k: 0)
     monkeypatch.setattr(weather_mod, "fetch_weather", lambda *a, **k: None)
     monkeypatch.setattr(trends_mod, "fetch_reddit_nigeria", lambda *a, **k: [])
     rp.export_static_json_database()
@@ -149,6 +155,15 @@ def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch
     # Only rows naming the person go; the rest of the export is untouched.
     assert "Dangote Cement" in (out / "latest.json").read_text()
     assert "Dangote Cement" in (out / "companies.json").read_text()
+
+
+def test_no_test_writes_the_owners_review_queue(tmp_path):
+    """The export writes the gate's review queue (run_pipeline.REVIEW_QUEUE_PATH),
+    which is private and git-ignored: tests/conftest.py points it at each
+    test's own directory, so a test run never overwrites the owner's copy."""
+    import run_pipeline as rp
+
+    assert rp.REVIEW_QUEUE_PATH == str(tmp_path / "review_queue.json")
 
 
 def test_the_sites_copy_of_the_canonical_lists_matches_the_pipeline():
