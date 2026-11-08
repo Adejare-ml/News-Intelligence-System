@@ -216,7 +216,8 @@ const alerts = cleanAlerts(data.alerts().alerts ?? []);
     font-weight: 600;
     cursor: pointer;
   }
-  @media (max-width: 900px) {
+  /* Above the tab bar, which shows at this width (TabBar.astro). */
+  @media (max-width: 1100px) {
     .toast {
       bottom: calc(92px + env(safe-area-inset-bottom));
     }
