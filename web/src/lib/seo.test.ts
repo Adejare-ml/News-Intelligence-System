@@ -1,6 +1,9 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { jsonLd, organizationLd, websiteLd, entityMeta, sitemapXml } from "./seo.ts";
+import { HEADLINE_CATEGORIES } from "../../functions/_lib/categories.ts";
 
 describe("seo", () => {
   test("JSON-LD cannot close its own script tag", () => {
@@ -61,5 +64,22 @@ describe("seo", () => {
     assert.match(xml, /^<\?xml version="1.0" encoding="UTF-8"\?>/);
     assert.match(xml, /<url><loc>https:\/\/a.dev\/news\/<\/loc><lastmod>2026-11-06T06:30:00Z<\/lastmod><\/url>/);
     assert.match(xml, /<url><loc>https:\/\/a.dev\/\?a=1&amp;b=2<\/loc><\/url>/);
+  });
+
+  test("the retired Sports and Entertainment pages, still linked from sent briefs and old sitemaps, redirect to News", () => {
+    const rules = readFileSync(resolve(import.meta.dirname, "../../public/_redirects"), "utf-8")
+      .split("\n")
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith("#"))
+      .map((line) => line.split(/\s+/));
+    for (const retired of ["sports", "entertainment"]) {
+      for (const path of [`/news/${retired}`, `/news/${retired}/`]) {
+        assert.deepEqual(rules.find(([from]) => from === path)?.slice(1), ["/news/", "301"], path);
+      }
+    }
+    // Cloudflare follows a redirect even when the page exists, so none may cover a section still built.
+    for (const live of HEADLINE_CATEGORIES) {
+      assert.ok(!rules.some(([from]) => from.startsWith(`/news/${live}`)), live);
+    }
   });
 });
