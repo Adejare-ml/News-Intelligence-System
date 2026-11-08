@@ -1,14 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
 import HoldingCard from "../../components/HoldingCard.astro";
-import { correctionUrl } from "../../lib/corrections.ts";
+import { disputeUrl } from "../../lib/corrections.ts";
 import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
 import * as data from "../../lib/data.ts";
 import { groupHoldings, summarise, counted, registerOrder } from "../../lib/psc.ts";
 import { within, REGISTER_RECENT_DAYS } from "../../lib/freshness.ts";
-import { toContract, sortContracts, type ProcurementRow } from "../../lib/procurement.ts";
+import { toContract, sortContracts } from "../../lib/procurement.ts";
 
 // Strongest claims first. Holdings not reported for a while move to
 // "Earlier reports", so old records never crowd out current reporting.
@@ -20,7 +20,7 @@ const s = summarise(all);
 const shown = summarise(holdings);
 const gate = data.registerQuality();
 const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0) + (gate.needs_review ?? 0);
-const contracts = sortContracts(data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract));
+const contracts = sortContracts(data.procurement().map(toContract));
 
 const filters = [
   { id: "all", label: "All records", count: holdings.length },
@@ -61,7 +61,7 @@ const filters = [
     <p class="note">
       Every card is a claim reported in the news, not a CAC filing, and is published only with a link to
       the article behind it. Named in a card and think it is wrong?
-      <a class="link" href={correctionUrl("register")} rel="noopener noreferrer" target="_blank">Ask for a correction or removal</a>.
+      <a class="link" href={disputeUrl("register")}>Ask for a correction or removal</a>.
     </p>
     {s.isDemo && (
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>

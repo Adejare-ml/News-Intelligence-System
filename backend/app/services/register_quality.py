@@ -26,7 +26,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Callable, Dict, Iterable, List, Optional
 
 from backend.app.services import relevance
 from backend.app.services.ingestion import parse_feed_date
@@ -426,15 +426,18 @@ def _cut(sentence: str, limit: int = QUOTE_LIMIT) -> str:
     return sentence[: limit - 1].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
 
 
-def evidence_quote(texts: Iterable[Any], person: Any, withheld: Iterable[Any] = ()) -> str:
+def evidence_quote(texts: Iterable[Any], person: Any, withheld: Iterable[Any] = (),
+                   unpublished: Optional[Callable[[str], bool]] = None) -> str:
     """One stored sentence that names the holder in full, or "".
 
     Only the holder's full name will do. A surname ("Dangote") or the
     company alone can match a sentence about someone else, which would put
     another person's act on this holder's card. A sentence that names a
     person the gate withheld is never quoted, so their claim cannot reach
-    the site on a neighbour's card. The words are lifted as stored; nothing
-    is paraphrased, so an empty string is the honest answer.
+    the site on a neighbour's card; nor is one for which `unpublished`
+    (suppression.matcher: names the owner unpublished) is true. The words
+    are lifted as stored; nothing is paraphrased, so an empty string is the
+    honest answer.
     """
     holder = _clean(person)
     name = canonical_company(holder) if _reads_as_entity(holder) else canonical_person(holder)
@@ -444,21 +447,24 @@ def evidence_quote(texts: Iterable[Any], person: Any, withheld: Iterable[Any] = 
     for t in texts or []:
         for s in _SENTENCE_SPLIT_RE.split(str(t or "")):
             s = s.strip()
-            if s and _mentions(s, name) and not any(_mentions(s, h) for h in hidden):
+            if (s and _mentions(s, name) and not any(_mentions(s, h) for h in hidden)
+                    and not (unpublished and unpublished(s))):
                 return _cut(s)
     return ""
 
 
 def attach_evidence(rows: Iterable[Dict[str, Any]], articles: Iterable[Dict[str, Any]],
-                    verified_at: str, withheld: Iterable[Any] = ()) -> List[Dict[str, Any]]:
+                    verified_at: str, withheld: Iterable[Any] = (),
+                    unpublished: Optional[Callable[[str], bool]] = None) -> List[Dict[str, Any]]:
     """Copy each row with Evidence: {source_url, quote, date, last_verified}.
 
     The quote comes from the stored article behind the row (its key facts,
     which restate the article's own sentences, then its summary) or the
-    row's notes, skipping sentences that name anyone in `withheld`. The
-    date is the article's publication day (feeds store RFC-822 times, so
-    it is parsed, not sliced) when it is on file, else the day the row was
-    extracted.
+    row's notes, skipping sentences that name anyone in `withheld` or that
+    `unpublished` refuses. Pass articles already scrubbed of unpublished
+    names: a co-holder's article can name one. The date is the article's
+    publication day (feeds store RFC-822 times, so it is parsed, not
+    sliced) when it is on file, else the day the row was extracted.
     """
     by_url = {str(a.get("URL") or a.get("url") or "").strip(): a for a in articles or []}
     withheld = list(withheld or ())
@@ -471,7 +477,7 @@ def attach_evidence(rows: Iterable[Dict[str, Any]], articles: Iterable[Dict[str,
         published = parse_feed_date((article or {}).get("Time"))
         r["Evidence"] = {
             "source_url": url,
-            "quote": evidence_quote(texts + [r.get("Notes")], r.get("Person Name"), withheld),
+            "quote": evidence_quote(texts + [r.get("Notes")], r.get("Person Name"), withheld, unpublished),
             "date": published.strftime("%Y-%m-%d") if published else str(r.get("Date") or "")[:10],
             "last_verified": verified_at,
         }

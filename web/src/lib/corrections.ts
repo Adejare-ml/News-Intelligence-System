@@ -1,8 +1,18 @@
+import { href } from "./url.ts";
+
 /**
- * Where a named person or company can ask for a correction or removal.
- * Set PUBLIC_CORRECTIONS_URL at build time to use an email form or a
- * mailto: address; by default it opens a pre-filled issue on the public
- * repository.
+ * Where a named person or company asks for a correction or removal: the
+ * private dispute form, with the record it is about filled in from ?ref=.
+ */
+export function disputeUrl(ref = ""): string {
+  return href(ref ? `dispute/?ref=${encodeURIComponent(ref)}` : "dispute/");
+}
+
+/**
+ * Where the dispute form sends people when the site has no Functions to
+ * receive it (the GitHub Pages mirror). Set PUBLIC_CORRECTIONS_URL at build
+ * time to use an email form or a mailto: address; by default it opens a
+ * pre-filled issue on the public repository, which anyone can read.
  */
 const DEFAULT = "https://github.com/Adejare-ml/News-Intelligence-System/issues/new";
 
@@ -18,4 +28,23 @@ export function correctionUrl(subject = ""): string {
       "Are you the person or company named? (yes / no)\n",
   );
   return `${DEFAULT}?labels=correction&title=${title}&body=${body}`;
+}
+
+/** One entry in the public corrections log (corrections.json, kept by the owner). */
+export interface Correction {
+  date: string;
+  ref: string;
+  what_changed: string;
+  reason: string;
+}
+
+/** The log, newest first. Entries without a date or a change are skipped. */
+export function readCorrections(raw: unknown): Correction[] {
+  if (!Array.isArray(raw)) return [];
+  const text = (v: unknown) => String(v ?? "").trim();
+  return raw
+    .filter((e): e is Record<string, unknown> => !!e && typeof e === "object")
+    .map((e) => ({ date: text(e.date), ref: text(e.ref), what_changed: text(e.what_changed), reason: text(e.reason) }))
+    .filter((e) => e.date && e.what_changed)
+    .sort((a, b) => b.date.localeCompare(a.date));
 }

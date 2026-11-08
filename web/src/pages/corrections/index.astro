@@ -1,0 +1,68 @@
+---
+import TextPage from "../../layouts/TextPage.astro";
+import * as data from "../../lib/data.ts";
+import { href } from "../../lib/url.ts";
+
+const log = data.corrections();
+const fmt = (iso: string) => {
+  const d = new Date(`${iso.slice(0, 10)}T12:00:00Z`);
+  return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+};
+---
+<TextPage
+  title="Corrections"
+  eyebrow="Corrections log"
+  heading="What we have corrected"
+  lede="When a record on AURA turns out to be wrong, we fix it and say so here: what changed, when, and why."
+  description="Every correction AURA has made to its records, with the date and the reason."
+>
+  {log.length ? (
+    <ol class="log">
+      {log.map((c) => (
+        <li>
+          <p class="meta"><time datetime={c.date}>{fmt(c.date)}</time>{c.ref && <> · {c.ref}</>}</p>
+          <p class="what">{c.what_changed}</p>
+          {c.reason && <p class="why">Why: {c.reason}</p>}
+        </li>
+      ))}
+    </ol>
+  ) : (
+    <p class="empty">No corrections yet.</p>
+  )}
+
+  <h2>Spotted a mistake?</h2>
+  <p>
+    If a record names you, or a company you act for, use the <a href={href("dispute/")}>dispute form</a>.
+    Records that are removed at someone’s request are logged here without repeating the name.
+  </p>
+</TextPage>
+
+<style>
+  .log {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .log li {
+    padding: 16px 18px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-m);
+    background: var(--surface);
+  }
+  .log p {
+    margin: 0;
+  }
+  .log .what {
+    color: var(--text);
+    margin-top: 4px;
+  }
+  .log .why {
+    font-size: 0.92rem;
+    margin-top: 4px;
+  }
+  .empty {
+    color: var(--muted);
+  }
+</style>

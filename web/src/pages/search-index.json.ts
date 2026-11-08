@@ -7,8 +7,8 @@ import { href } from "../lib/url.ts";
 import { SECTIONS } from "../lib/nav.ts";
 import { groupHoldings, describeHolding } from "../lib/psc.ts";
 import { toStory } from "../lib/stories.ts";
-import { toContract, type ProcurementRow } from "../lib/procurement.ts";
-import { buildEntities, type CompanyRow, type PersonMove } from "../lib/entities.ts";
+import { toContract } from "../lib/procurement.ts";
+import { buildEntities } from "../lib/entities.ts";
 import { listEditions } from "../lib/archive.ts";
 import { lagosDate, lagosTime } from "../lib/edition.ts";
 import type { Entry } from "../lib/search.ts";
@@ -17,10 +17,10 @@ export function GET() {
   const holdings = groupHoldings(data.psc());
   const entities = buildEntities({
     holdings,
-    companies: data.readJson<CompanyRow[]>("companies.json", []),
-    people: data.readJson<PersonMove[]>("people.json", []),
+    companies: data.companies(),
+    people: data.people(),
     articles: data.articles(),
-    contracts: data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract),
+    contracts: data.procurement().map(toContract),
   });
 
   const entries: Entry[] = [

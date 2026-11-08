@@ -206,10 +206,10 @@ const patterns = [
     <div class="correct" data-reveal>
       <div>
         <h3 class="h3">Spotted an error?</h3>
-        <p>Corrections are welcome and handled in the open. Say which record is wrong and link the source.</p>
+        <p>Corrections are welcome. Say which record is wrong and link the source. Disputes stay private; what we change is listed on the <a class="link" href={href("corrections/")}>corrections page</a>.</p>
       </div>
-      <a class="btn btn-primary" href="https://github.com/Adejare-ml/News-Intelligence-System/issues/new?title=Correction%3A%20&labels=correction" rel="noopener">
-        Request a correction <Icon name="arrowUpRight" size={16} />
+      <a class="btn btn-primary" href={href("dispute/")}>
+        Request a correction <Icon name="arrowRight" size={16} />
       </a>
     </div>
   </section>

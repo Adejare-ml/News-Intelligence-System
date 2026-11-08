@@ -32,6 +32,7 @@ from backend.app.services import register_quality
 from backend.app.services import story_detail
 from backend.app.services import fulltext
 from backend.app.services import email_digest
+from backend.app.services import suppression
 from backend.app.pipeline import side_feeds
 from backend.app.pipeline.cells import clean_procurement_row, procurement_cells
 from backend.app.db.excel_db import db
@@ -743,6 +744,12 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
     # The model sees the whole day -- this run's full analyses plus the
     # reduced records of what earlier runs already published -- wrapped with
     # the date and coverage window the prompt declares authoritative.
+    # Stories naming an unpublished entity (scripts/unpublish.py) are left
+    # out, as from every export: report_latest.md and the archive copy are
+    # served at /data/. The run's counts above stay per-run totals.
+    hidden = suppression.load(DATA_DIR)
+    records = suppression.without(records, hidden)
+    prior_today = suppression.without(prior_today, hidden)
     # Holdings the publish gate withholds are removed first: the brief is
     # public and names every holder it is given.
     day_records, withheld_names = gate_report_holdings(records + prior_today)
@@ -1086,6 +1093,14 @@ def export_static_json_database():
             except Exception:
                 pass
 
+    # Unpublished names (scripts/unpublish.py) go here, once: every file
+    # below, the graph and the email digest are built from these rows.
+    hidden = suppression.load(DATA_DIR)
+    scrubbed = suppression.scrub(hidden, articles=articles, companies=companies, people=people,
+                                 agencies=agencies, procurement=procurement, psc=psc_records)
+    articles, companies, people = scrubbed["articles"], scrubbed["companies"], scrubbed["people"]
+    agencies, procurement, psc_records = scrubbed["agencies"], scrubbed["procurement"], scrubbed["psc"]
+
     # Sort chronological (newest first, excluding non-relevant filtered articles)
     #
     # The topic guard is re-applied here, not just at ingestion, because the
@@ -1192,9 +1207,10 @@ def export_static_json_database():
     # and not quarantined. Withheld rows stay in the sheet for review, and
     # only their counts are published.
     # Rows saved before rows carried their article get it back when exactly
-    # one stored article names both the person and the company.
+    # one stored article names both the person and the company. Only the
+    # scrubbed articles qualify, or a row could get a hidden name as its title.
     try:
-        psc_records = register_quality.backfill_sources(psc_records, db.get_articles())
+        psc_records = register_quality.backfill_sources(psc_records, articles)
     except Exception as exc:
         logger.warning(f"PSC source backfill skipped ({type(exc).__name__})")
     psc_checked = register_quality.gate(collapse_identical_rows(psc_records))
@@ -1207,9 +1223,13 @@ def export_static_json_database():
     gate_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(REVIEW_QUEUE_PATH, "w", encoding="utf-8") as f:
         json.dump(register_quality.review_queue(psc_checked, gate_stamp), f, default=str, indent=2)
+    # Quotes come from the scrubbed articles, and a sentence naming an
+    # unpublished entity is never quoted: a co-holder's article can name
+    # one, and the gate's withheld list cannot (scrubbed rows never reach it).
     try:
         psc_records = register_quality.attach_evidence(
-            psc_records, db.get_articles(), gate_stamp, register_quality.withheld_names(psc_checked))
+            psc_records, articles, gate_stamp, register_quality.withheld_names(psc_checked),
+            unpublished=suppression.matcher(hidden) if hidden else None)
     except Exception as exc:
         logger.warning(f"PSC evidence skipped ({type(exc).__name__})")
 
@@ -1222,15 +1242,22 @@ def export_static_json_database():
     people = dedupe_entity_rows(people, ["Name", "Organization"])
     agencies = dedupe_entity_rows(agencies, ["Agency"])
 
-    articles_sorted = core_rows("latest.json", articles_sorted)
-    companies = core_rows("companies.json", companies)
-    people = core_rows("people.json", people)
+    # A previous file is scrubbed of unpublished names before it is
+    # compared or kept: it may predate the unpublish, and a kept file would
+    # bring the name back and list it as new in changes.json.
+    def unpublished_out(rows):
+        return suppression.without(rows, hidden)
+
+    articles_sorted = core_rows("latest.json", articles_sorted, clean=unpublished_out)
+    companies = core_rows("companies.json", companies, clean=unpublished_out)
+    people = core_rows("people.json", people, clean=unpublished_out)
     # The previous register is judged by this run's gate first. A shrink
     # the gate or an owner's un-approval caused is then published, and a
     # failed read (nothing checked) still keeps the previous file, without
     # a claim the gate now withholds.
     psc_records = core_rows("significant_control.json", psc_records,
-                            clean=lambda rows: register_quality.without_withheld(rows, psc_checked))
+                            clean=lambda rows: register_quality.without_withheld(
+                                unpublished_out(rows), psc_checked))
 
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or
@@ -1243,14 +1270,18 @@ def export_static_json_database():
         except Exception:
             return []
 
+    # The old snapshots are scrubbed too, or a newly hidden name would be
+    # published once more as "removed this cycle".
+    prev = suppression.scrub(hidden, articles=_prev_snapshot("latest.json"),
+                             companies=_prev_snapshot("companies.json"),
+                             people=_prev_snapshot("people.json"),
+                             psc=_prev_snapshot("significant_control.json"))
     changes = compute_cycle_changes(
         {
-            "articles": _prev_snapshot("latest.json"),
-            "companies": _prev_snapshot("companies.json"),
-            "people": _prev_snapshot("people.json"),
+            **prev,
             # Pairs the gate now withholds would otherwise be listed by name
             # as "removed" in this public file.
-            "psc": register_quality.without_withheld(_prev_snapshot("significant_control.json"), psc_checked),
+            "psc": register_quality.without_withheld(prev["psc"], psc_checked),
         },
         {
             "articles": articles_sorted,
@@ -1421,7 +1452,8 @@ def export_static_json_database():
         logger.warning(f"Alerts ledger read failed; keeping previous alerts.json: {exc}")
     else:
         with open(os.path.join(DATA_DIR, "alerts.json"), "w", encoding="utf-8") as f:
-            json.dump({"alerts": analytics.recent_alerts(alert_rows), "window_days": 90,
+            json.dump({"alerts": suppression.without(analytics.recent_alerts(alert_rows), hidden),
+                       "window_days": 90,
                        "generated": stamp}, f, default=str, indent=2)
 
     # RSS feed over the same editions -- static, like everything else
