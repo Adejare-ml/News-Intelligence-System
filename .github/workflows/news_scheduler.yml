@@ -19,7 +19,8 @@ on:
 
 # Permissions are granted per job below: run-pipeline needs contents:write
 # (data commit) and issues:write (failure alerts); deploy-pages hands its
-# token to a third-party deploy action, so it carries contents:write only.
+# token to a third-party deploy action, so it carries contents:write only;
+# close-alerts closes the alert issues, so it carries issues:write only.
 
 # Serialize runs: two overlapping runs both commit to main, and the slower one
 # is rejected as non-fast-forward (a manual trigger near a cron slot did exactly
@@ -31,45 +32,50 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # GitHub's cron fires late or not at all for this repo, so the Cloudflare
-  # Worker in web/workers/scheduler starts each slot on time (at :07). A
-  # scheduled run that arrives after a run for its slot already started
-  # skips itself, so no slot runs twice. Manual runs are never skipped.
+  # GitHub's cron fires hours late for this repo, so the Cloudflare Worker
+  # in web/workers/scheduler starts each slot on time (at :07). A scheduled
+  # run skips itself only when another run that did real work (queued,
+  # running, or longer than two minutes) started in the last 150 minutes:
+  # skipped runs last seconds and must not make later slots skip, which
+  # the old "any run since the slot hour" rule did (6 Nov 2026: one late
+  # run skipped the next two slots). It also skips when the Worker, the
+  # watchdog or a person already ran its slot, so a late "11 7" cron does
+  # not send a second morning email. Manual runs are never skipped.
   guard:
     runs-on: ubuntu-latest
     permissions:
       actions: read
+      contents: read
     outputs:
       go: ${{ steps.check.outputs.go }}
     steps:
-      - name: Skip a scheduled run whose slot already ran
+      - name: Checkout the guard script
+        if: github.event_name == 'schedule'
+        uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts/scheduler_guard.py
+          sparse-checkout-cone-mode: false
+
+      - name: Skip a scheduled run when another run just did the work
         id: check
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           EVENT: ${{ github.event_name }}
-          CRON: ${{ github.event.schedule }}
           RUN_ID: ${{ github.run_id }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
           set -euo pipefail
           if [ "$EVENT" != "schedule" ]; then
             echo "go=true" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          HOUR=$(echo "$CRON" | awk '{print $2}')
-          SINCE=$(date -u -d "today $HOUR:00" +%Y-%m-%dT%H:%M:%SZ)
-          # A late 23:11 run can arrive after midnight: its slot was yesterday.
-          if [ "$(date -u -d "$SINCE" +%s)" -gt "$(date -u +%s)" ]; then
-            SINCE=$(date -u -d "yesterday $HOUR:00" +%Y-%m-%dT%H:%M:%SZ)
-          fi
-          OTHERS=$(gh run list -R "$REPO" --workflow news_scheduler.yml --limit 30 \
-            --json databaseId,createdAt \
-            --jq "[.[] | select(.createdAt >= \"$SINCE\" and .databaseId != $RUN_ID)] | length")
-          if [ "$OTHERS" -gt 0 ]; then
-            echo "A run for the $SINCE slot already started ($OTHERS); this scheduled run skips itself."
-            echo "go=false" >> "$GITHUB_OUTPUT"
-            echo "Skipped: the $SINCE slot already ran (started by the Cloudflare scheduler or by hand)." >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "go=true" >> "$GITHUB_OUTPUT"
+          gh run list -R "$REPO" --workflow news_scheduler.yml --limit 30 \
+              --json databaseId,createdAt,updatedAt,status,event \
+            | python3 scripts/scheduler_guard.py --self-id "$RUN_ID" --slot "$SCHEDULE" > decision.txt
+          cat decision.txt >> "$GITHUB_OUTPUT"
+          cat decision.txt
+          if grep -qx "go=false" decision.txt; then
+            echo "Skipped: $(sed -n 's/^reason=//p' decision.txt)." >> "$GITHUB_STEP_SUMMARY"
           fi
 
   run-pipeline:
@@ -176,14 +182,15 @@ jobs:
           # that a corpus would accumulate on its own quietly false.
           file_pattern: "backend/app/static/data/* evals/corpus/*"
 
-      # Morning email briefing: only after the 07:00 UTC run (08:00 Lagos),
+      # Morning email briefing: after the 07:00 UTC run (08:00 Lagos), or a
+      # manual run with email_edition (how the Worker starts that slot),
       # composed from the data files this run just wrote. Opt-in via SMTP
       # secrets -- the script exits 0 with a log line when they are unset.
       # continue-on-error because a mail-provider outage must not mark the
       # pipeline run red or file a pipeline-failure issue; the step's own
       # log still shows the failure. See docs/NOTIFICATIONS.md for setup.
       - name: Send the morning email briefing
-        if: github.event.schedule == '11 7 * * *'
+        if: github.event.schedule == '11 7 * * *' || inputs.email_edition
         continue-on-error: true
         env:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
@@ -413,3 +420,30 @@ jobs:
             echo "OK data/$f"
           done
           echo "Smoke test passed."
+
+  # The pipeline-failure alert above and the pipeline-missed one from
+  # scheduler_watchdog.yml stay open until a run goes through, so a good run
+  # closes them: an open alert then always means the pipeline is still
+  # broken or still missing slots. Its own job after deploy-pages, so a run
+  # that published nothing leaves them open, and a gh error here cannot stop
+  # the site deploy or the Morning Brief send.
+  close-alerts:
+    needs: [run-pipeline, deploy-pages]
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Close the alert issues after a good run
+        # Housekeeping: a failed close must not turn a good run red.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          for LABEL in pipeline-missed pipeline-failure; do
+            for N in $(gh issue list -R "$REPO" --label "$LABEL" --state open --json number --jq '.[].number'); do
+              gh issue close "$N" -R "$REPO" --comment "Resolved: this run completed and published. $RUN_URL"
+            done
+          done

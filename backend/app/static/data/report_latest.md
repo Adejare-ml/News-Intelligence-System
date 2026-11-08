@@ -1,32 +1,36 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-07 02:52:50 (UTC)
-**Run Window:** 2026-11-07, all runs to 02:52 (run 1 of the day)
+**Generated on:** 2026-11-08 02:25:41 (UTC)
+**Run Window:** 2026-11-08, all runs to 02:25 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 6
+- **Total Articles Processed:** 2
 - **High Risk Signals:** 0
-- **Appointments Logged:** 1
-- **Procurement Awards:** 1
+- **Appointments Logged:** 0
+- **Procurement Awards:** 0
 
 ---
 
-# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Monitoring
-**Report date:** 7 November 2026
-**Coverage:** All articles published on 7 November 2026 up to 02:52 (run 1 of the day)
+# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Watch
+
+**Report date:** 8 November 2026
+**Coverage:** All articles published on 8 November 2026 up to 02:25 (run 1 of the day)
 
 ### Key Developments
-- **CBN stablecoin capital rule:** The Central Bank of Nigeria has set a N15bn capital requirement for dollar stablecoins. Only the headline was available, so scope and timelines are unknown. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxQbVJnRjlVd2t1NGRFemJJUUJEcTNURDFZdW9GVVBjZ2xzTzZaWlFHMUhZZ0swUkxKbWZIM3pGaS1Sd0EzOHBLUHBwVGcwalAzdkJOOGdHbjJyVFBHbWVTLWxzdXFpV2JRcVNkSjJHejZHTUtQU1pfYXlfSC1NdDZWUXpTVkw?oc=5))  
-- **Power sector dispute:** TCN has rejected IKEDC's explanation for recent power outages. The dispute bears on accountability in electricity supply. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMihwFBVV95cUxPczFkSTVMb2FwXzN4SDE0N1N6NEE3Z3EzRjl4b3diLXVUZTVLOXpPd1A5c3JZTjdXMFY4TmUxdmphUUtsSWtKZl9FZjR3TEx0U3lBcVRzWk5GM2ljYkdMX1Jtc3pWRU9XWlB2VU81UG11X0poRUIzZ2d1RXdIVzFLSGo3ZlYtZ00?oc=5))  
+
+- **NNPC rejects gas-supply explanation for low power output.** The Nigerian National Petroleum Company insists that gas supply shortfalls are not responsible for low electricity generation. The report gives no supporting data or details of the dispute. ([Punch Newspapers](https://news.google.com/rss/articles/CBMijgFBVV95cUxPS0V6MDFFNFpMUXB3dWI1NTVzTXFBVTV3NTJtTTZGUS14VnZ4SUUwUVRXa2xMRDFjRzRmWndOX3Ixam5VTFIzbFpUY1FacmplODdqVUQwR0JJM09VS2ZpcTJtOVFHTF85aFJicUNmanBMMkN2Nk45LWpJeDNZMldCTUJLU3dGeTA2U0VaOHp3?oc=5))  
+- **NNPC absolves its gas transportation network.** A second outlet reports the same position, specifically that the gas transportation network is not to blame for the drop in power generation. It offers no further detail. ([Vanguard News](https://news.google.com/rss/articles/CBMirwFBVV95cUxPQWZ0N0JaUVoyTkFuclFvMHVlOVhiUndjYXlJZERvZEpxQnc3d1FMa3JpcVJWUnVlSk5lUUFnVmZoSjNYUF83WXh3cllpTlJnMW1LeUtPWnY5WVluTE40VDN3OEtSRk1VTWxNSm9OUGpRTHRMRmdxdDUzc2V2Ym8tc2JJUGhCUXNKaFdPTUZad0NEeW0wd0paYWllX19FVmQ2dEV0QmkyUElyVDVYX3d30gG0AUFVX3lxTE9rdENOWEhPNHRRTEhfTHR4YjJicGgxN2RRaEpwWHEyZXJTRGhqZk9WMnh2eUd4TVRSdUlUSzd2VmJ3bF95b3FhUV9XNWF6QUN5WjlkNjJnWFhwdzJEdVNDQUpFZjZWay1LTE9JM20weWFGV0N2TEoxRHFGeVVMTVR2bGswLUI0aWdLcnhWQjVMSU1nWi1ld25mZ2hMMTlxclNndmNrSnZ2c3NVOEI4RGxJYm54cw?oc=5))  
 
 ### High Risk Alerts
-No high-risk items today.
+
+Nothing in today's early coverage reached a high-risk threshold. Both articles were scored Low.
 
 ### Beneficial Ownership & PSC Disclosures
-Nothing to report here today.
+
+The data contains no PSC disclosures, so there are no holders, percentages, PEP flags or pending filings to report.
 
 ### Procurement & Board Changes
-- **National Library project:** Education Minister Tunji Alausa pledged to complete the long-abandoned National Library of Nigeria headquarters in Abuja within 24 months. The article names no contractor or contract amount, which is a transparency gap worth tracking. ([The Punch](https://punchng.com/fg-vows-national-library-project-completion-in-24-months/))  
-- **Mbah inaugurates 68 development centre administrators to take projects, policies to more communities**. Enugu State Governor Peter Mbah has inaugurated 68 development centre administrators tasked with carrying projects and policies to more communities. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUFdOZElURm9rQ2ZDV3JSUmVzMGVnSF9IVDE3Yk8zbGNKRWNNU0UzRk9SRl9QbGtvVk9scm9jTjdHdXdkNHUwSmtoREY2MWlBdDdhYTFma3ljR3lRYnlRSTZacmhwZkVVQ1UwLWpydHcya0I2OTdVRW10N2VPNVowTzRXM21HamhuLXhac0dfZm5Ydk9fOTYtS3JqVGRxT2syUGF3SkxiUmMzWTh1bG5ERzVTb01wVjE5NDNlbG52bzhMTzhmLXNVRFN4WjRuWG95ank4My15ZVRtbXY3SUUxQThGQ0w5UQ?oc=5))  
+
+Neither article mentions contract awards, tenders or board appointments, so there are no procurement or governance changes to record for this window.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

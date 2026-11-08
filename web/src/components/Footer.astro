@@ -12,7 +12,7 @@ const year = new Date().getFullYear();
         statutory CAC register, and a record here is evidence of reporting, not a finding of wrongdoing.
         Names may be shared by more than one person or company. Everything here is machine-extracted
         and unverified.
-        <a class="correct" href="https://github.com/Adejare-ml/News-Intelligence-System/issues/new?title=Correction%3A%20&labels=correction" rel="noopener">Request a correction or removal</a>.
+        <a class="correct" href={href("dispute/")}>Dispute a record or ask for its removal</a>.
       </p>
     </div>
     <nav class="links" aria-label="Footer">
@@ -23,6 +23,11 @@ const year = new Date().getFullYear();
       <button type="button" class="replay" data-replay-intro>Replay intro</button>
     </nav>
   </div>
+  <p class="wrap disclaimer meta">
+    An information service, not legal or financial advice.
+    <a href={href("privacy/")}>Privacy</a> · <a href={href("terms/")}>Terms</a> ·
+    <a href={href("corrections/")}>Corrections</a> · <a href={href("dispute/")}>Dispute a record</a>
+  </p>
   <div class="wrap base meta">
     <span>
       © {year} AURA · Designed and built by Adejare{hasSection("how-it-works/") && <> · <a href={href("how-it-works/")}>how it was made</a></>}
@@ -88,11 +93,17 @@ const year = new Date().getFullYear();
       color: var(--gold);
     }
   }
+  .disclaimer {
+    margin: 32px auto 0;
+  }
+  .disclaimer a {
+    color: var(--text-soft);
+  }
   .base {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    margin-top: 40px;
+    margin-top: 16px;
     padding-top: 20px;
     border-top: 1px solid var(--line);
     flex-wrap: wrap;

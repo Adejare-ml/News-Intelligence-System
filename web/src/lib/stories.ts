@@ -28,6 +28,8 @@ export interface Story {
   publisher: string;
   url: string;
   summary: string;
+  /** The article's own "why it matters" line, clipped for a card; "" when it has none. */
+  whyItMatters: string;
   category: string;
   eventType: string;
   risk: number;
@@ -143,6 +145,17 @@ export function coverFor(title: string, category: string, riskLevel: Story["risk
   return { angle: 110 + (h % 70), tone, glyph, seed: h % 1000 };
 }
 
+/**
+ * Text cut to at most `max` characters at a word boundary, with an ellipsis,
+ * so a card line never ends mid-word or overflows its clamp.
+ */
+export function clip(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max - 1);
+  const space = cut.lastIndexOf(" ");
+  return `${(space > 0 ? cut.slice(0, space) : cut).replace(/[\s,;:.\-–—]+$/, "")}…`;
+}
+
 export function toStory(a: Article): Story {
   const { title, publisher } = cleanTitle(String(a.Title || ""), String(a.Source || ""));
   const risk = num(a["Risk Score"]);
@@ -154,6 +167,7 @@ export function toStory(a: Article): Story {
     publisher: publisherName(publisher || String(a.Source || "")),
     url: String(a.URL || ""),
     summary: String(a.Summary || "").trim(),
+    whyItMatters: clip(String(a["Why It Matters"] || "").trim(), 160),
     category,
     eventType: String(a["Event Type"] || "Other"),
     risk,

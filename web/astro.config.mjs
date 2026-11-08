@@ -10,11 +10,13 @@ export default defineConfig({
   site,
   base,
   trailingSlash: "ignore",
-  build: { format: "directory" },
   prefetch: { prefetchAll: true, defaultStrategy: "hover" },
   devToolbar: { enabled: false },
   // Vite inlines scripts under 4KB by default. Cloudflare serves a strict
   // CSP (script-src 'self', see public/_headers), so every script must be
-  // its own file.
-  vite: { build: { assetsInlineLimit: 0 } },
+  // its own file. CSS is different: style-src allows 'unsafe-inline', so
+  // stylesheets under 4KB go into the page (one request fewer each) while
+  // scripts, fonts and images stay files.
+  build: { format: "directory", inlineStylesheets: "auto" },
+  vite: { build: { assetsInlineLimit: (file) => file.endsWith(".css") ? undefined : false } },
 });
