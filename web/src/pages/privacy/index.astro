@@ -15,13 +15,14 @@ import { href } from "../../lib/url.ts";
   <ul>
     <li>your email address;</li>
     <li>the choices you made: which kinds of news, which region, how often, and whether delivery is paused;</li>
+    <li>the companies you follow by email, if any, so new reporting on them goes in the “Following” part of your brief;</li>
     <li>when you signed up, confirmed, or unsubscribed;</li>
     <li>when we last emailed you and how many emails we sent you that day, so no address gets more than a few a day;</li>
     <li>a random code that makes your confirm, change-topics and unsubscribe links work.</li>
   </ul>
   <p>
-    When the sign-up form is sent, we also keep the IP address it came from, only to limit how many sign-ups
-    one address can make in a day, and delete it at the next daily clean-up.
+    When the sign-up form or a follow form is sent, we also keep the IP address it came from, only to limit
+    how many requests one address can make in a day, and delete it at the next daily clean-up.
   </p>
   <p>
     We use these only to send you the brief you asked for. We do not sell or share them, and we do not use
@@ -32,8 +33,21 @@ import { href } from "../../lib/url.ts";
     <strong>How long:</strong> a sign-up that is never confirmed gets the confirmation email and at most one
     reminder, about two days later. It is deleted automatically 30 days after the last email we sent it, or
     sooner if you ask (see “Your rights” below). When you
-    unsubscribe we stop sending at once, and keep the address and dates only as long as we need them to
-    show that you left and to make sure you are not emailed again.
+    unsubscribe we stop sending at once and delete the companies you follow, and keep the address and dates
+    only as long as we need them to show that you left and to make sure you are not emailed again.
+  </p>
+
+  <h2>If someone types your address into a follow form</h2>
+  <p>
+    Company pages have a “Get updates by email” form, and anyone can type any address into it. That address
+    gets one email: a link to confirm the follow if it already gets the brief, or an invitation to subscribe
+    if it does not. Nothing is followed and nobody is signed up unless the address’s owner acts on it.
+  </p>
+  <p>
+    To stop repeat emails, we keep the address and the time of the request for up to about two days, and
+    send an address at most one such email every ten minutes and three a day. For an address that does not
+    get the brief, that day’s count is kept under a code made from the address (a one-way hash), not the
+    address itself, and deleted at the next daily clean-up.
   </p>
 
   <h2>If you send a dispute</h2>

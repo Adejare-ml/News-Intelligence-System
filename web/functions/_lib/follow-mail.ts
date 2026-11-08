@@ -40,17 +40,19 @@ export function followConfirmMail(site: string, email: string, token: string, sl
 /** For any other address: how to get updates, without saying whether it was ever on the list. */
 export function followInviteMail(site: string, email: string, company: string): Mail {
   const join = `${site.replace(/\/$/, "")}/brief/#subscribe`;
+  // The address may not be the reader's own: say what is kept about it.
+  const privacy = `${site.replace(/\/$/, "")}/privacy/`;
   const name = escapeHtml(company);
   return {
     to: email,
     subject: `Updates about ${company} come with the AURA Morning Brief`,
-    text: `Someone (probably you) asked for updates about ${company} on AURA. Updates arrive in the AURA Morning Brief, which this address doesn't receive. Subscribe here, then ask again from the ${company} page:\n${join}\n\nDidn't ask? Ignore this email and nothing changes.`,
+    text: `Someone (probably you) asked for updates about ${company} on AURA. Updates arrive in the AURA Morning Brief, which this address doesn't receive. Subscribe here, then ask again from the ${company} page:\n${join}\n\nDidn't ask? Ignore this email and nothing changes. What we keep about this address: ${privacy}`,
     html: layout(
       `Updates on ${name}`,
       `Someone (probably you) asked for updates about <strong>${name}</strong> on AURA. Updates arrive in the AURA Morning Brief, which this address doesn't receive. Subscribe, then ask again from the ${name} page.`,
       "Get the Morning Brief",
       join,
-      "Didn't ask? Ignore this email and nothing changes.",
+      `Didn't ask? Ignore this email and nothing changes. <a href="${escapeHtml(privacy)}" style="color:#6b6558">What we keep about this address</a>.`,
     ),
   };
 }
