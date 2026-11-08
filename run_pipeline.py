@@ -1217,9 +1217,13 @@ def export_static_json_database():
     gate_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(REVIEW_QUEUE_PATH, "w", encoding="utf-8") as f:
         json.dump(register_quality.review_queue(psc_checked, gate_stamp), f, default=str, indent=2)
+    # Quotes come from the scrubbed articles, and a sentence naming an
+    # unpublished entity is never quoted: a co-holder's article can name
+    # one, and the gate's withheld list cannot (scrubbed rows never reach it).
     try:
         psc_records = register_quality.attach_evidence(
-            psc_records, db.get_articles(), gate_stamp, register_quality.withheld_names(psc_checked))
+            psc_records, articles, gate_stamp, register_quality.withheld_names(psc_checked),
+            unpublished=suppression.matcher(hidden) if hidden else None)
     except Exception as exc:
         logger.warning(f"PSC evidence skipped ({type(exc).__name__})")
 

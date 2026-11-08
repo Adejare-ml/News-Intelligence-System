@@ -27,7 +27,7 @@ from __future__ import annotations
 import json
 import os
 import re
-from typing import Any, Dict, Iterable, Iterator, List
+from typing import Any, Callable, Dict, Iterable, Iterator, List
 
 from backend.app.services.register_quality import _fold, canonical_company, canonical_person
 
@@ -91,6 +91,11 @@ def load(data_dir: str) -> List[str]:
         return []
     return [str(e["name"]).strip() for e in entries
             if isinstance(e, dict) and str(e.get("name") or "").strip()]
+
+
+def matcher(hidden: Iterable[str]) -> Callable[[Any], bool]:
+    """names() with the hidden list prepared once, for testing many texts."""
+    return _Matcher(hidden)
 
 
 def names(text: Any, hidden: Iterable[str]) -> bool:

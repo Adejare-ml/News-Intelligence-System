@@ -157,6 +157,79 @@ def test_no_export_or_the_digest_carries_a_suppressed_name(tmp_path, monkeypatch
     assert "Dangote Cement" in (out / "companies.json").read_text()
 
 
+def test_a_holders_evidence_never_quotes_a_hidden_co_party(tmp_path, monkeypatch):
+    """A public row's Evidence quote is lifted from its source article. When
+    that article also names a hidden person, the quote must not carry the
+    name into significant_control.json, and the row itself stays: it is
+    the co-party's legitimate claim, and dropping it on the site would list
+    it as new in changes.json on every run."""
+    import run_pipeline as rp
+    from backend.app.db.excel_db import SheetsDatabase
+    import backend.app.services.trends as trends_mod
+
+    d = SheetsDatabase()
+    d.use_local = True
+    d.local_path = str(tmp_path / "db.xlsx")
+    d._cache = {}
+    d._init_db()
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    d._append_row("Articles", {"ID": 1, "Time": f"{today}T07:00:00Z",
+                               "Title": "Ikeja Mills gets a new top shareholder",
+                               "Source": "The Punch", "URL": "https://punchng.com/1",
+                               "Category": "Corporate", "Risk Score": 70,
+                               "Summary": "A change at Ikeja Mills.",
+                               "Key Facts": "Ann Okafor bought Tolu Bakare's 20% stake in Ikeja Mills. "
+                                            "| The deal closed in October.",
+                               "Status": "Unread", "Engine": "claude", "Entities": "Ann Okafor|Ikeja Mills"})
+    d._append_row("Companies", {"Company": "Ikeja Mills", "Mention Count": 4, "Last Seen": today})
+    d._append_row("Significant Control", {"Person Name": "Ann Okafor", "Company": "Ikeja Mills",
+                                          "Nature of Control": "Ownership of shares",
+                                          "Percentage": "20%", "Date": today, "Source": "extracted",
+                                          "Source URL": "https://punchng.com/1",
+                                          "Source Title": "Ikeja Mills gets a new top shareholder",
+                                          "Basis": "article", "Change Type": "acquired"})
+    out = tmp_path / "data"
+    (out / "archives").mkdir(parents=True)
+    (out / "suppressed.json").write_text(json.dumps([{"name": "Tolu Bakare", "added": today}]))
+    monkeypatch.setattr(rp, "db", d)
+    monkeypatch.setattr(rp, "DATA_DIR", str(out))
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    monkeypatch.setattr(rp.side_feeds, "export_side_feeds", lambda *a, **k: None)
+    monkeypatch.setattr(rp.article_images, "attach_images", lambda rows, cache, **k: 0)
+    monkeypatch.setattr(trends_mod, "fetch_reddit_nigeria", lambda *a, **k: [])
+
+    rp.export_static_json_database()
+    register = (out / "significant_control.json").read_text()
+    assert "Tolu Bakare" not in register
+    assert [r["Person Name"] for r in json.loads(register)] == ["Ann Okafor"]
+
+    # The next run diffs against that file: the holding is not new again.
+    rp.export_static_json_database()
+    changes = json.loads((out / "changes.json").read_text())
+    assert changes["psc_added"] == []
+    assert "Tolu Bakare" not in (out / "significant_control.json").read_text()
+
+
+def test_evidence_skips_a_sentence_naming_a_hidden_entity():
+    """The hidden list is matched like the export's scrub: spelling
+    variants and companies too, not only the gate's canonical people."""
+    from backend.app.services import register_quality as rq
+
+    article = {"URL": "https://punchng.com/9", "Time": "",
+               "Key Facts": "Ann Okafor bought Alhaji TOLU Bakare's stake. | "
+                            "Ann Okafor now owns 20% of Ikeja Mills."}
+    row = {"Person Name": "Ann Okafor", "Company": "Ikeja Mills", "Source URL": "https://punchng.com/9"}
+    [out] = rq.attach_evidence([row], [article], "now",
+                               unpublished=suppression.matcher(["Tolu Bakare"]))
+    assert out["Evidence"]["quote"] == "Ann Okafor now owns 20% of Ikeja Mills."
+    [out] = rq.attach_evidence([row], [article], "now",
+                               unpublished=suppression.matcher(["Tolu Bakare", "Ikeja Mills Plc"]))
+    assert out["Evidence"]["quote"] == ""
+    # Without the list, the first sentence would have been quoted.
+    [out] = rq.attach_evidence([row], [article], "now")
+    assert "Bakare" in out["Evidence"]["quote"]
+
+
 def test_no_test_writes_the_owners_review_queue(tmp_path):
     """The export writes the gate's review queue (run_pipeline.REVIEW_QUEUE_PATH),
     which is private and git-ignored: tests/conftest.py points it at each
