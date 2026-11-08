@@ -61,7 +61,7 @@ export function followSection(token: string, follows: string[], followable: Map<
 <datalist id="followable-companies">${options}</datalist>
 <button type="submit">Follow</button></form>`;
   return `<fieldset id="following"><legend>Companies you follow</legend>
-<p class="hint">New reporting on these appears in a “Following” section of your brief. Companies with a page on AURA only, up to ${MAX_FOLLOWS}.</p>
+<p class="hint">Reporting on these since the previous day’s brief appears in a “Following” section of your brief; on the weekly brief, Monday’s email carries the reporting since Sunday’s brief, not the whole week. Companies with a page on AURA only, up to ${MAX_FOLLOWS}.</p>
 ${list}${add}</fieldset>`;
 }
 

@@ -52,7 +52,7 @@ export async function onRequestPost(ctx: Ctx): Promise<Response> {
     );
   }
   const message = result === "added"
-    ? `You now follow ${company}. It appears in your Morning Brief whenever there is new reporting on it.`
+    ? `You now follow ${company}. Reporting on it since the previous day’s brief appears in a “Following” section of your Morning Brief. On the weekly brief, Monday’s email carries the reporting since Sunday’s brief, not the whole week.`
     : `You already follow ${company}.`;
   return page("Done.", message, 200, manageLink(token));
 }

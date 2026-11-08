@@ -17,7 +17,7 @@ const { slug, name } = Astro.props;
   <div class="card">
     <div class="copy">
       <h2 class="h3" id="follow-title">Get updates by email</h2>
-      <p class="meta">New reporting on {name} in a “Following” section of your Morning Brief. We’ll email you a link to confirm.</p>
+      <p class="meta">Reporting on {name} since the previous day’s brief, in a “Following” section of your Morning Brief (on the weekly brief, Monday’s email carries the reporting since Sunday’s). We’ll email you a link to confirm.</p>
     </div>
     <form class="form" action={href("api/follow")} method="post" data-follow novalidate>
       <label class="sr-only" for="follow-email">Email address</label>
