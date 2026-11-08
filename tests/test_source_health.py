@@ -3,9 +3,13 @@ data/source_health.json, so a feed that silently returns nothing is
 noticed after three runs instead of never.
 """
 import json
+from pathlib import Path
+
+import pytest
 
 import run_pipeline as rp
 from backend.app.pipeline.rows import merge_source_health, stale_sources
+from backend.app.services import ingestion
 from backend.app.services.ingestion import NewsIngestionService
 
 NOW = "2026-11-07 07:00:00"
@@ -50,7 +54,11 @@ class TestCollectRecordsCounts:
             return staticmethod(lambda *a, **k: [{"title": f"t{i}", "source": "s",
                                                   "url": f"u{i}"} for i in range(n)])
         monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss", fetcher(3))
-        monkeypatch.setattr(NewsIngestionService, "fetch_outlet_feeds", fetcher(4))
+
+        def outlets(cls):
+            cls.last_outlet_counts = {"Outlet: BusinessDay": 4, "Outlet: Nairametrics": 0}
+            return [{"title": f"o{i}", "source": "BusinessDay", "url": f"o{i}"} for i in range(4)]
+        monkeypatch.setattr(NewsIngestionService, "fetch_outlet_feeds", classmethod(outlets))
         monkeypatch.setattr(NewsIngestionService, "fetch_news_api", fetcher(0))
         monkeypatch.setattr(NewsIngestionService, "fetch_gnews", fetcher(2))
         monkeypatch.setattr(NewsIngestionService, "fetch_guardian_news", fetcher(0))
@@ -62,9 +70,53 @@ class TestCollectRecordsCounts:
         monkeypatch.setattr(settings, "NEWSDATA_KEY", "")
         monkeypatch.setattr(settings, "SEED_DEMO_ARTICLES", False)
         NewsIngestionService.collect_all()
-        # Keyless adapters are not failing, they are off: not counted.
+        # Keyless adapters are not failing, they are off: not counted. Each
+        # outlet feed is its own source.
         assert NewsIngestionService.last_source_counts == {
-            "Google News RSS": 3, "Outlet feeds": 4, "NewsAPI": 0, "GNews": 2}
+            "Google News RSS": 3, "Outlet: BusinessDay": 4, "Outlet: Nairametrics": 0,
+            "NewsAPI": 0, "GNews": 2}
+
+
+OUTLET_FIXTURE = (Path(__file__).parent / "fixtures" / "outlet_feed.xml").read_bytes()
+
+
+class TestOutletFeedCounts:
+    @pytest.fixture
+    def nairametrics_refuses(self, monkeypatch):
+        """Every outlet serves the fixture feed except Nairametrics (403);
+        Google News returns a story and the keyed adapters are off."""
+        class Response:
+            def __init__(self, status):
+                self.status_code = status
+                self.content = OUTLET_FIXTURE if status == 200 else b""
+
+            def raise_for_status(self):
+                if self.status_code >= 400:
+                    raise ingestion.requests.HTTPError(f"HTTP {self.status_code}")
+
+        monkeypatch.setattr(ingestion, "http_get_with_retry",
+                            lambda url, **k: Response(403 if "nairametrics" in url else 200))
+        monkeypatch.setattr(NewsIngestionService, "fetch_google_news_rss", staticmethod(
+            lambda *a, **k: [{"title": "t", "source": "s", "url": "u"}]))
+        from backend.app.core.config import settings
+        for key in ("NEWSAPI_KEY", "GNEWS_KEY", "GUARDIAN_API_KEY", "NEWSDATA_KEY"):
+            monkeypatch.setattr(settings, key, "")
+        monkeypatch.setattr(settings, "SEED_DEMO_ARTICLES", False)
+
+    def test_each_outlet_is_counted_by_the_entries_its_feed_served(self, nairametrics_refuses):
+        NewsIngestionService.collect_all()
+        # Raw entries, not on-topic items: Premium Times' stories were all
+        # taken by BusinessDay first, and a quiet day is not a dead feed.
+        assert NewsIngestionService.last_source_counts == {
+            "Google News RSS": 1, "Outlet: BusinessDay": 4, "Outlet: Premium Times": 4,
+            "Outlet: Nairametrics": 0, "Outlet: TheCable": 4}
+
+    def test_one_dead_outlet_is_flagged_after_three_runs(self, nairametrics_refuses):
+        health = None
+        for _ in range(3):
+            NewsIngestionService.collect_all()
+            health = merge_source_health(health, NewsIngestionService.last_source_counts, NOW)
+        assert stale_sources(health) == ["Outlet: Nairametrics"]
 
 
 class TestWriteSourceHealth:

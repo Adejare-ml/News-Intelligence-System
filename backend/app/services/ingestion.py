@@ -395,12 +395,21 @@ class NewsIngestionService:
         "TheCable": "https://www.thecable.ng/feed",
     }
 
+    # Entries each outlet's feed served in the most recent
+    # fetch_outlet_feeds(), keyed "Outlet: <name>", 0 for a feed that failed.
+    # collect_all() reports these to source_health.json one per outlet, so a
+    # single dead feed is flagged instead of hidden by the other three. Raw
+    # entries, not on-topic items: a quiet news day is not a dead feed.
+    last_outlet_counts: Dict[str, int] = {}
+
     @classmethod
     def fetch_outlet_feeds(cls) -> List[Dict[str, Any]]:
         """On-topic items from each outlet's RSS feed, deduplicated by link."""
         articles = []
         urls_processed = set()
+        counts: Dict[str, int] = {}
         for outlet, url in cls.OUTLET_FEEDS.items():
+            counts[f"Outlet: {outlet}"] = 0
             try:
                 resp = http_get_with_retry(url, timeout=15, headers={"User-Agent": "AURA-NewsIntel/1.0"})
                 resp.raise_for_status()
@@ -410,6 +419,7 @@ class NewsIngestionService:
                 # must not cost the others.
                 logger.error(f"Outlet feed {outlet} failed ({type(e).__name__}).")
                 continue
+            counts[f"Outlet: {outlet}"] = len(entries)
             kept = 0
             for entry in entries:
                 link = getattr(entry, "link", "")
@@ -424,6 +434,7 @@ class NewsIngestionService:
             # Per-feed counts, so a feed that quietly changes format or goes
             # empty shows up in the run log as "0 of N" rather than nothing.
             logger.info(f"Outlet feed {outlet}: {kept} on-topic of {len(entries)} entries.")
+        cls.last_outlet_counts = counts
         return articles
 
     # Credential-hygiene note for every adapter below: keys ride in headers
@@ -663,7 +674,8 @@ class NewsIngestionService:
 
     # Articles each configured adapter returned in the most recent
     # collect_all(), for data/source_health.json. Keyless adapters are left
-    # out: they are switched off, not failing.
+    # out: they are switched off, not failing. The outlet feeds are listed
+    # one per outlet (last_outlet_counts).
     last_source_counts: Dict[str, int] = {}
     _ADAPTER_KEYS = {"NewsAPI": "NEWSAPI_KEY", "GNews": "GNEWS_KEY",
                      "Guardian": "GUARDIAN_API_KEY", "Newsdata.io": "NEWSDATA_KEY"}
@@ -685,6 +697,8 @@ class NewsIngestionService:
             ("Newsdata.io", cls.fetch_newsdata_io),
         ]
         source_counts: Dict[str, int] = {}
+        # Cleared first, so the outlet counts only ever come from this call.
+        cls.last_outlet_counts = {}
         started = _time.monotonic()
         for i, (name, fetch) in enumerate(adapters):
             elapsed = _time.monotonic() - started
@@ -698,7 +712,9 @@ class NewsIngestionService:
                 break
             batch = fetch()
             key = cls._ADAPTER_KEYS.get(name)
-            if key is None or getattr(settings, key, ""):
+            if name == "Outlet feeds":
+                source_counts.update(cls.last_outlet_counts)
+            elif key is None or getattr(settings, key, ""):
                 source_counts[name] = len(batch)
             all_articles.extend(batch)
         cls.last_source_counts = source_counts
