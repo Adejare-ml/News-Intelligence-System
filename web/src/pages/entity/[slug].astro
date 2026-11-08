@@ -157,7 +157,7 @@ const structuredData = !isCompany ? undefined : organizationLd({
     <a class="btn btn-ghost" href={href(`register/?q=${encodeURIComponent(e.name)}`)}>
       <Icon name="search" size={16} /> Find {e.name} in the register
     </a>
-    <a class="btn btn-ghost" href={href(`entity/${e.slug}.md`)} download>Download as Markdown</a>
+    <a class="btn btn-ghost" href={href(`entity/${e.slug}.md`)} rel="nofollow" download>Download as Markdown</a>
   </section>
 </Base>
 
