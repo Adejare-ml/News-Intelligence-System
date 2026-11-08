@@ -205,6 +205,33 @@ class TestShrinkGuard:
         holdings = json.loads((out / "psc_timeline.json").read_text())["holdings"]
         assert len(holdings) == 30
 
+    def test_an_unapproval_shrink_publishes_without_the_withheld_rows(self, tmp_path, monkeypatch):
+        # A real shrink, not a failed read: the owner un-approved 20 of 25
+        # headline-only person claims. Restoring the previous file would
+        # republish them, and changes.json would list them by name as new.
+        monkeypatch.setattr(rp, "REVIEW_QUEUE_PATH", str(tmp_path / "review_queue.json"))
+
+        def holding(i, approved):
+            return {"Person Name": f"Ada Okafor {i}", "Company": f"Firm {i} Ltd",
+                    "Nature of Control": "Ownership of shares", "Percentage": "10%",
+                    "Date": "2026-09-01", "Source": "extracted",
+                    "Source URL": f"https://punchng.com/psc-{i}", "Basis": "headline",
+                    "Approved": "yes" if approved else ""}
+
+        out_dir = tmp_path / "data"
+        out_dir.mkdir()
+        (out_dir / "significant_control.json").write_text(
+            json.dumps([holding(i, True) for i in range(25)]))
+        out = run_export(tmp_path, monkeypatch,
+                         {"Significant Control": [holding(i, i < 5) for i in range(25)]})
+        written = json.loads((out / "significant_control.json").read_text())
+        assert sorted(r["Person Name"] for r in written) == [f"Ada Okafor {i}" for i in range(5)]
+        changes = json.loads((out / "changes.json").read_text())
+        assert changes["psc_added"] == [] and changes["psc_removed"] == []
+        assert len(json.loads((out / "psc_timeline.json").read_text())["holdings"]) == 5
+        for name in ("changes.json", "graph.json", "email_digest.json", "psc_timeline.json"):
+            assert "Ada Okafor 7" not in (out / name).read_text(), name
+
     def test_a_small_previous_file_is_replaced(self, tmp_path, monkeypatch):
         seed_file(tmp_path, "latest.json", 10)
         out = run_export(tmp_path, monkeypatch, {"Articles": [article(1)]})

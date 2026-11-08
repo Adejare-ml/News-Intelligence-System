@@ -946,19 +946,24 @@ CORE_EXPORT_MIN_SHARE = 0.4
 CORE_EXPORT_MIN_ROWS = 20
 
 
-def core_rows(name: str, rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def core_rows(name: str, rows: List[Dict[str, Any]], clean=None) -> List[Dict[str, Any]]:
     """The rows to publish as one of the site's core lists: this run's,
     or the previous file's when this run's collapsed.
 
     Decided before anything is built from the list, so the cycle diff,
     the graph and the timelines agree with the file that stays published
     instead of reporting a failed read as the register being removed.
+    `clean`, when given, filters the previous rows before they are
+    compared or kept: a shrink it accounts for is published, and a kept
+    file never brings back a row this run withholds.
     """
     try:
         with open(os.path.join(DATA_DIR, name), encoding="utf-8") as f:
             previous = json.load(f)
     except Exception:
         previous = []
+    if clean is not None:
+        previous = clean(previous)
     if len(previous) >= CORE_EXPORT_MIN_ROWS and len(rows) < CORE_EXPORT_MIN_SHARE * len(previous):
         logger.error(
             f"Keeping the previous {name}: this run produced {len(rows)} row(s) "
@@ -1157,7 +1162,12 @@ def export_static_json_database():
     articles_sorted = core_rows("latest.json", articles_sorted)
     companies = core_rows("companies.json", companies)
     people = core_rows("people.json", people)
-    psc_records = core_rows("significant_control.json", psc_records)
+    # The previous register is judged by this run's gate first. A shrink
+    # the gate or an owner's un-approval caused is then published, and a
+    # failed read (nothing checked) still keeps the previous file, without
+    # a claim the gate now withholds.
+    psc_records = core_rows("significant_control.json", psc_records,
+                            clean=lambda rows: register_quality.without_withheld(rows, psc_checked))
 
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or
