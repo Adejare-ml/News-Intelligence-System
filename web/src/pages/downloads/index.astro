@@ -8,7 +8,7 @@ import { href } from "../../lib/url.ts";
 import { CATEGORIES, HEADLINE_CATEGORIES } from "../../../functions/_lib/categories.ts";
 
 const files = [
-  { path: "downloads/register.csv", label: "Ownership register", note: "Published register rows: holder, company, stake, nature of control and the article that reported it. Rows the validation gate withholds are not in the file." },
+  { path: "downloads/register.csv", label: "Ownership register", note: "Published register rows: holder, company, stake, nature of control, confidence and the article that reported it. Confidence says what a claim rests on: an official filing reference, the full article, or a headline only. Rows the validation gate withholds are not in the file." },
   { path: "downloads/procurement.csv", label: "Contracts in the news", note: "Public contracts named in the reporting: agency, contractor, value where reported, publisher." },
   { path: "downloads/news.csv", label: "News", note: "The stories on the news page: headline, publisher, link, category, risk score and the entities named." },
 ];

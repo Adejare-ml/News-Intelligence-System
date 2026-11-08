@@ -36,6 +36,17 @@ describe("entity Markdown export", () => {
     assert.match(md, /Source page: https:\/\/aura\.test\/entity\/obi-holdings-ltd\//);
   });
 
+  test("each holding carries its Confidence tier first, as the page's badge does", () => {
+    const md = entityMarkdown(company, { pageUrl: "p", entityUrl: (s) => s });
+    assert.match(md, /^- \[Ada Obi\]\(ada-obi-at-obi-holdings-ltd\) owns 12% of Obi Holdings Ltd · Full article( · |$)/m);
+    const [headline] = buildEntities({
+      holdings: groupHoldings([{ "Person Name": "Eze Mills Ltd", Company: "Kola Foods Ltd", Percentage: "60%", "Nature of Control": "Ownership of shares",
+        Date: "2026-10-04", Confidence: "Headline only", "Source URL": "https://punchng.com/e", Publisher: "The Punch" }]),
+      companies: [], people: [], articles: [], contracts: [],
+    }).filter((e) => e.slug === "kola-foods-ltd");
+    assert.match(entityMarkdown(headline, { pageUrl: "p", entityUrl: (s) => s }), /owns 60% of Kola Foods Ltd · Headline only/);
+  });
+
   test("Markdown control characters in names are escaped", () => {
     assert.equal(mdText("[click](javascript:x) *bold*"), "\\[click\\](javascript:x) \\*bold\\*");
   });

@@ -14,10 +14,25 @@ describe("downloads", () => {
       { "Person Name": "Hidden Quarantined", Company: "Nope Ltd", Confidence: "Full article", "Source URL": "https://x.test/b", Quarantined: true },
     ]);
     const rows = lines(csv);
-    assert.equal(rows[0], "Person,Company,Stake,Nature of control,Board role,Change,Reported,Source title,Publisher,Source URL");
+    assert.equal(rows[0], "Person,Company,Stake,Nature of control,Board role,Change,Reported,Confidence,Source title,Publisher,Source URL");
     assert.equal(rows.length, 2);
-    assert.match(rows[1], /^Ada Obi,Obi Holdings Ltd,12%,Ownership of shares,,,2026-10-01,Obi buys stake,The Punch,https:\/\/punchng.com\/a$/);
+    assert.match(rows[1], /^Ada Obi,Obi Holdings Ltd,12%,Ownership of shares,,,2026-10-01,Full article,Obi buys stake,The Punch,https:\/\/punchng.com\/a$/);
     assert.ok(!csv.includes("Hidden"));
+  });
+
+  test("each register row says what it rests on, as the page's badge does", () => {
+    const csv = registerCsv([
+      // A company-to-company holding the gate publishes on a headline alone.
+      { "Person Name": "Obi Holdings Ltd", Company: "Eze Mills Ltd", Percentage: "40%", Date: "2026-10-02",
+        Confidence: "Headline only", "Source URL": "https://punchng.com/c" },
+      { "Person Name": "Ada Obi", Company: "Eze Mills Ltd", Percentage: "5%", Date: "2026-10-03",
+        Confidence: "Official filing", "Filing Reference": "RC-123", "Source URL": "https://punchng.com/d" },
+      // Exported before rows had a tier: counts as the weakest, as on the page.
+      { "Person Name": "Eze Mills Ltd", Company: "Kola Foods Ltd", Percentage: "60%", Date: "2026-10-04", "Source URL": "https://punchng.com/e" },
+    ]);
+    const confidence = lines(csv)[0].split(",").indexOf("Confidence");
+    assert.ok(confidence > 0);
+    assert.deepEqual(lines(csv).slice(1).map((r) => r.split(",")[confidence]), ["Headline only", "Official filing", "Headline only"]);
   });
 
   test("the procurement CSV uses the cleaned contract fields", () => {

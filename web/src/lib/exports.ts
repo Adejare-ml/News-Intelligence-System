@@ -2,7 +2,7 @@
  * The tables behind /downloads/*.csv, built from the same exports as the pages.
  */
 import { toCsv } from "./csv.ts";
-import { publicRecords, type PscRecord } from "./psc.ts";
+import { confidenceOf, publicRecords, type PscRecord } from "./psc.ts";
 import { cleanTitle, parseTime, type Article } from "./stories.ts";
 import type { Contract } from "./procurement.ts";
 
@@ -11,14 +11,15 @@ const text = (v: unknown) => String(v ?? "").trim();
 /**
  * One line per register row. Filters through publicRecords itself, so a
  * caller that hands it the raw register still cannot publish a row the
- * validation gate withholds.
+ * validation gate withholds. Confidence is the tier the page's badge
+ * shows, so a headline-only claim keeps that caveat in a spreadsheet.
  */
 export function registerCsv(records: PscRecord[]): string {
   return toCsv(
-    ["Person", "Company", "Stake", "Nature of control", "Board role", "Change", "Reported", "Source title", "Publisher", "Source URL"],
+    ["Person", "Company", "Stake", "Nature of control", "Board role", "Change", "Reported", "Confidence", "Source title", "Publisher", "Source URL"],
     publicRecords(records).map((r) => [
       text(r["Person Name"]), text(r.Company), text(r.Percentage), text(r["Nature of Control"]), text(r["Board Role"]),
-      text(r["Change Type"]), text(r.Date).slice(0, 10), text(r["Source Title"]), text(r.Publisher), text(r["Source URL"]),
+      text(r["Change Type"]), text(r.Date).slice(0, 10), confidenceOf(r), text(r["Source Title"]), text(r.Publisher), text(r["Source URL"]),
     ]),
   );
 }

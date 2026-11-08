@@ -49,7 +49,8 @@ export function entityMarkdown(e: Entity, opts: { pageUrl: string; entityUrl: (s
       const lead = isPerson
         ? `${mdText(e.name)} ${mdText(describeHolding(h))} (${link(h.company, opts.entityUrl(slugify(h.company)))})`
         : `${link(h.person, opts.entityUrl(holderSlug(h.person, h.company)))} ${mdText(describeHolding(h))}`;
-      const chips = [h.band?.label, ...h.flags.map((f) => f.title)].filter(Boolean).map(mdText);
+      // The tier first, as the page puts its ConfidenceBadge before the other chips.
+      const chips = [h.confidence, h.band?.label, ...h.flags.map((f) => f.title)].filter(Boolean).map(mdText);
       out.push(`- ${lead}${chips.length ? ` · ${chips.join(" · ")}` : ""}`);
       const src = h.sources[0];
       const more = h.sources.length > 1 ? ` and ${h.sources.length - 1} more` : "";
