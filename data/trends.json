@@ -22,12 +22,6 @@
       "change": 4
     },
     {
-      "term": "project",
-      "recent": 6,
-      "previous": 2,
-      "change": 4
-    },
-    {
       "term": "threatens",
       "recent": 4,
       "previous": 0,
@@ -62,6 +56,12 @@
       "recent": 3,
       "previous": 0,
       "change": 3
+    },
+    {
+      "term": "eyes",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
     }
   ],
   "falling": [
@@ -74,14 +74,20 @@
     {
       "term": "court",
       "recent": 2,
-      "previous": 16,
-      "change": -14
+      "previous": 15,
+      "change": -13
     },
     {
       "term": "reps",
       "recent": 5,
       "previous": 15,
       "change": -10
+    },
+    {
+      "term": "efcc",
+      "recent": 9,
+      "previous": 17,
+      "change": -8
     },
     {
       "term": "approves",
@@ -102,12 +108,6 @@
       "change": -7
     },
     {
-      "term": "efcc",
-      "recent": 10,
-      "previous": 16,
-      "change": -6
-    },
-    {
       "term": "fraud",
       "recent": 2,
       "previous": 8,
@@ -120,9 +120,9 @@
       "change": -6
     },
     {
-      "term": "financial",
-      "recent": 0,
-      "previous": 6,
+      "term": "money",
+      "recent": 1,
+      "previous": 7,
       "change": -6
     }
   ],
@@ -130,24 +130,24 @@
     {
       "category": "Government",
       "recent": 67,
-      "previous": 160
+      "previous": 161
     },
     {
       "category": "Company",
       "recent": 19,
-      "previous": 28
+      "previous": 30
     },
     {
       "category": "Legal",
       "recent": 9,
-      "previous": 33
+      "previous": 31
     },
     {
       "category": "Other",
       "recent": 1,
-      "previous": 3
+      "previous": 2
     }
   ],
   "social": [],
-  "generated": "2026-11-08 02:26:08"
+  "generated": "2026-11-08 14:27:34"
 }

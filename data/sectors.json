@@ -183,6 +183,15 @@
       }
     },
     {
+      "industry": "Education",
+      "companies": 6,
+      "mentions": 7,
+      "risk": {
+        "Low": 5,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Business Association",
       "companies": 2,
       "mentions": 6,
@@ -230,15 +239,6 @@
       "mentions": 5,
       "risk": {
         "Low": 5
-      }
-    },
-    {
-      "industry": "Education",
-      "companies": 5,
-      "mentions": 5,
-      "risk": {
-        "Low": 4,
-        "Medium": 1
       }
     },
     {
@@ -966,5 +966,5 @@
       }
     }
   ],
-  "generated": "2026-11-08 02:26:08"
+  "generated": "2026-11-08 14:27:34"
 }
