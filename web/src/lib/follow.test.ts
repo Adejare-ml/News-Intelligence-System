@@ -3,7 +3,9 @@ import assert from "node:assert/strict";
 import { parseFollows, toggleFollow, latestMention, hasNewFollowedAlert, followingFeed, companyNews, editionWindow, followableCompanies } from "./follow.ts";
 import { cleanAlerts } from "./alerts.ts";
 import type { Article } from "./stories.ts";
-import { holderSlug, type Entity } from "./entities.ts";
+import { buildEntities, holderSlug, type CompanyRow } from "./entities.ts";
+import { entityFeeds } from "./feeds.ts";
+import type { Holding } from "./psc.ts";
 import { slugify } from "./entity-key.ts";
 
 const dangote = { slug: "dangote-refinery", name: "Dangote Refinery" };
@@ -137,10 +139,23 @@ test("company news: named in Entities or the headline, newest first, one per lin
   assert.equal(companyNews("Dangote Cement", items, 1).length, 1);
 });
 
+const entitiesOf = (companies: CompanyRow[], holdings: Holding[] = []) => buildEntities({ holdings, companies, people: [], articles: [], contracts: [] });
+
 test("only companies can be followed, never people", () => {
-  const e = (slug: string, name: string, kind: Entity["kind"]) => ({ slug, name, kind }) as Entity;
-  assert.deepEqual(
-    followableCompanies([e("ada-obi", "Ada Obi", "person"), e("mtn-nigeria", "MTN Nigeria", "company")]),
-    [{ slug: "mtn-nigeria", name: "MTN Nigeria" }],
-  );
+  const es = entitiesOf([], [{ person: "Ada Obi", company: "MTN Nigeria" } as Holding]);
+  assert.deepEqual(es.map((e) => e.slug).sort(), ["ada-obi-at-mtn-nigeria", "mtn-nigeria"]);
+  assert.deepEqual(followableCompanies(es), [{ slug: "mtn-nigeria", name: "MTN Nigeria" }]);
+});
+
+test("a person the pipeline filed as a company is not followable and gets no feed", () => {
+  // Company Info carries often-mentioned people with Industry "General"
+  // (#164's isKnownCompany); kind "company" alone would offer a follow and
+  // a per-person RSS feed for them.
+  const es = entitiesOf([
+    { Company: "Tinubu", "Mention Count": 40, Industry: "General" },
+    { Company: "MTN Nigeria", "Mention Count": 9, Industry: "Telecoms" },
+  ]);
+  assert.deepEqual(es.map((e) => [e.slug, e.kind]).sort(), [["mtn-nigeria", "company"], ["tinubu", "company"]]);
+  assert.deepEqual(followableCompanies(es), [{ slug: "mtn-nigeria", name: "MTN Nigeria" }]);
+  assert.deepEqual(entityFeeds(es).map((e) => e.slug), ["mtn-nigeria"]);
 });

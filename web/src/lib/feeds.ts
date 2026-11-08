@@ -4,6 +4,17 @@
  * absolute URLs, so the same code serves the root site and the GitHub copy
  * under its base path.
  */
+import { isKnownCompany, type Entity } from "./entities.ts";
+
+/**
+ * The entities that get /entity/<slug>/feed.xml: known companies only. A
+ * feed per person would be a tracker on an individual, and kind "company"
+ * alone also covers often-mentioned people the pipeline files under
+ * Company Info ("Tinubu"), so this takes isKnownCompany's test.
+ */
+export function entityFeeds(entities: Entity[]): Entity[] {
+  return entities.filter(isKnownCompany);
+}
 
 // XML 1.0 forbids these control characters outright; one stray byte from a
 // scraped headline would make the whole feed unreadable.

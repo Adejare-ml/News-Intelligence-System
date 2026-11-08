@@ -7,7 +7,7 @@
  *    counts as new reporting on one for the next Morning Brief. The pages
  *    under /brief/email/follow/ use these; /api/send-brief reads those pages.
  */
-import { articleMentions, mentions, type Entity } from "./entities.ts";
+import { articleMentions, isKnownCompany, mentions, type Entity } from "./entities.ts";
 import { nameKey, slugify } from "./entity-key.ts";
 import { cleanAlerts, type RawAlert } from "./alerts.ts";
 import { cleanTitle, parseTime, toStory, type Article, type Story } from "./stories.ts";
@@ -145,7 +145,11 @@ export function companyNews(name: string, articles: Article[], max: number): Sto
     .slice(0, max);
 }
 
-/** Companies only: a reader follows businesses, never a person. */
+/**
+ * Companies only: a reader follows businesses, never a person. kind
+ * "company" is not enough, since the pipeline files often-mentioned people
+ * ("Tinubu") under Company Info too, so this takes isKnownCompany's test.
+ */
 export function followableCompanies(entities: Entity[]): { slug: string; name: string }[] {
-  return entities.filter((e) => e.kind === "company").map((e) => ({ slug: e.slug, name: e.name }));
+  return entities.filter(isKnownCompany).map((e) => ({ slug: e.slug, name: e.name }));
 }
