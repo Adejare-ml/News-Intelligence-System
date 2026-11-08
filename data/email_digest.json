@@ -1,16 +1,16 @@
 {
-  "edition": "20261108-11352-preview",
+  "edition": "20261108-11365-preview",
   "preview": true,
-  "built_at": "2026-11-08 18:23:50",
+  "built_at": "2026-11-08 21:12:49",
   "date": "Sunday 8 November 2026",
-  "subject": "AURA · Sun 8 Nov · Top NGX-listed tech companies ranked by revenue growth in 2026",
-  "preheader": "Also: Kefas signs Executive Order to curb naira abuse in Taraba · 3 stories, 0 risk alerts",
+  "subject": "AURA · Sun 8 Nov · Major shakeup in Nigerian Air Force, 67 senior officers redeployed",
+  "preheader": "Also: Top NGX-listed tech companies ranked by revenue growth in 2026 · 5 stories, 0 risk alerts",
   "since": "Sun 8 Nov, 15:27 Lagos",
-  "through_id": 11352,
+  "through_id": 11365,
   "stats": {
-    "reports": 3,
-    "stories": 3,
-    "outlets": 3,
+    "reports": 5,
+    "stories": 5,
+    "outlets": 4,
     "risk_alerts": 0,
     "public_money": 0,
     "appointments": 0,
@@ -24,25 +24,53 @@
   ],
   "overview": [
     {
-      "text": "Revenue growth across nine NGX-listed technology and telecommunications companies was mixed in 2026, according to an analysis of their latest financial statements as of November 8, 2026.",
+      "text": "The Nigerian Air Force has redeployed 67 senior officers in a major shakeup, according to a Premium Times Nigeria report.",
       "card": 1,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "Revenue growth across nine NGX-listed technology and telecommunications companies was mixed in 2026, according to an analysis of their latest financial statements as of November 8, 2026.",
+      "card": 2,
       "outlet": "Nairametrics"
     },
     {
-      "text": "Taraba State Governor Agbu Kefas has signed an Executive Order aimed at curbing the abuse of the naira in the state.",
-      "card": 2,
-      "outlet": "The Guardian"
-    },
-    {
-      "text": "President Bola Tinubu has moved to accelerate rail projects in northern Nigeria, according to a headline published by Voice of Nigeria.",
+      "text": "Kogi State Governor Ahmed Usman Ododo has ordered the regulation of mining activities in a Kogi community and expressed support for artisanal miners.",
       "card": 3,
-      "outlet": "Voice of Nigeria"
+      "outlet": "The Guardian"
     }
   ],
   "insights": [],
   "cards": [
     {
       "n": 1,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "Major shakeup in Nigerian Air Force, 67 senior officers redeployed",
+      "byline": "Premium Times · Sun 8 Nov, 22:06 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Nigerian Air Force has redeployed 67 senior officers in a major shakeup, according to a Premium Times Nigeria report. The article text provided is limited to the headline, so no further details on postings or reasons are available.",
+      "key_facts": [
+        "67 senior officers were redeployed in the Nigerian Air Force."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Nigerian Air Force"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZGg0NXlRREVSZEpQR0Uzdl9iS2ZWTkxyQkM5TU5uZV9zOFZiOHFPMGNiVEh2QjVHVnptdm1yTXE3dTBQd1ZjbmVIejVldVFFWExwWG5haTFkdE5XYXRxTklCbmpnV3J5RVp0R2oxb213WEl6TVAwMC1FLXJpWHhIYnAzaU9uV1dGcTZ0RjE5OTlGNkltMjNrVVJyU09BSHRjdEN5cW1NVGpkQnY5VzlRd3o5c1JicGE0eTVta0lPaWQ?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
       "theme": "Business",
       "event_type": "Earnings",
       "flags": [],
@@ -79,7 +107,36 @@
       "also_more": 0
     },
     {
-      "n": 2,
+      "n": 3,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "Ododo orders regulation of mining activities in Kogi community, backs Artisanal miners",
+      "byline": "The Guardian · Sun 8 Nov, 20:16 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "Kogi State Governor Ahmed Usman Ododo has ordered the regulation of mining activities in a Kogi community and expressed support for artisanal miners. The directive positions state oversight of small-scale mining operations in the area. No further details on the scope or timeline were provided in the article.",
+      "key_facts": [
+        "Governor Ododo ordered regulation of mining activities in a Kogi community."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Kogi State Government",
+        "Ahmed Usman Ododo"
+      ],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOGF2d0E1b2pOaEstMThUQnMtZElGM3dwNkF6Q1lrZUhJWU1Eem8yVEFLU3NrNFRyZlNHNDhvLXN5Q1dFQktZbWZobEE2NUt1MkRLV3dPOU10Ym4tNHg2d0VfS0xYT3oySWN2NWVJMTIyQTd2TVRhZTJwMUNQNlB6MndpcXNBejNuN1drYTMwVExJTEYySFhMSWR2dUZFNVk4X0xQRVFMNWF2TVBzTGwwag?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 4,
       "theme": "Regulation & enforcement",
       "event_type": "Policy",
       "flags": [],
@@ -108,7 +165,7 @@
       "also_more": 0
     },
     {
-      "n": 3,
+      "n": 5,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
