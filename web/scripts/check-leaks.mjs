@@ -78,7 +78,7 @@ const HIDDEN = { person: "Zedekiah Leakcheck-Suppressed", company: "Sentinel Sup
 const hiddenRow = {
   "Person Name": HIDDEN.person, Company: HIDDEN.company, Percentage: "55%", "Nature of Control": "Ownership of shares",
   Source: "extracted", "Source URL": "https://punchng.com/sentinel", "Source Title": "Sentinel takes control",
-  Date: "2026-10-20", Kind: "stake", Public: true, Quarantined: false,
+  Date: runDate, Kind: "stake", Public: true, Quarantined: false,
 };
 // The same person as the register might spell them: a middle initial and a
 // neutral title, so only the canonical key ties the row to the hidden name.
@@ -91,9 +91,27 @@ const addRows = (file, rows) => {
   const path = join(data, file);
   writeFileSync(path, JSON.stringify([...JSON.parse(readFileSync(path, "utf-8")), ...rows], null, 2));
 };
-addRows("companies.json", [{ Company: HIDDEN.company, "Mention Count": 40, "Last Seen": "2026-10-20" }]);
-addRows("people.json", [{ Name: HIDDEN.person, Position: "Chairman", Organization: HIDDEN.company, Date: "2026-10-20" }]);
-addRows("procurement.json", [{ Agency: "Federal Ministry of Works", Contractor: HIDDEN.company, Project: "Road", Date: "2026-10-20" }]);
+// Dated on the last run, so every /changes/ section (companies and people
+// first seen, board moves, contracts) would list the unpublished rows if it
+// read the raw export. Each published control beside them must be listed,
+// which proves the section was there to check.
+const CONTROLS = {
+  company: "Sentinel Control Foods Plc", person: "Zedekiah Leakcheck-Appointed", contractor: "Sentinel Control Works Ltd",
+  story: "Sentinel Control Foods Plc opens a mill", psc: "Sentinel Control Foods Plc holds 20% of Sentinel Control Works Ltd",
+  alert: "Sentinel control alert: Federal Ministry of Works audits road fund",
+};
+addRows("companies.json", [
+  { Company: HIDDEN.company, "Mention Count": 40, "First Seen": runDate, "Last Seen": runDate },
+  { Company: CONTROLS.company, "Mention Count": 1, "First Seen": runDate, "Last Seen": runDate },
+]);
+addRows("people.json", [
+  { Name: HIDDEN.person, Position: "Chairman", Organization: HIDDEN.company, Event: "appointment", Date: runDate, "First Seen": runDate },
+  { Name: CONTROLS.person, Position: "Chairman", Organization: CONTROLS.company, Event: "appointment", Date: runDate, "First Seen": runDate },
+]);
+addRows("procurement.json", [
+  { Agency: "Federal Ministry of Works", Contractor: HIDDEN.company, Project: "Road", Date: runDate },
+  { Agency: "Federal Ministry of Works", Contractor: CONTROLS.contractor, Project: "Bridge", Date: runDate },
+]);
 addRows("latest.json", [{
   ID: "999999", Time: "2026-10-20T07:00:00Z", Title: `${HIDDEN.person} takes control of ${HIDDEN.company}`,
   Source: "The Punch", URL: "https://punchng.com/sentinel", Category: "Corporate", "Risk Score": "80",
@@ -117,6 +135,21 @@ const archive = newest("archives", (n) => n.endsWith(".md"));
 const digest = newest("digests", (n) => /^\d.*\.json$/.test(n));
 if (archive) PLANTED.push(`archives/${archive}`);
 if (digest) PLANTED.push(`digests/${digest}`);
+// A sent edition of its own, so the archive's edition pages are checked
+// whichever editions the real data holds.
+const sentEdition = `${runDate.replace(/-/g, "")}-99999999`;
+writeFileSync(join(data, "digests", `${sentEdition}.json`), JSON.stringify({
+  ...JSON.parse(readFileSync(join(data, "email_digest.json"), "utf-8")), edition: sentEdition, through_id: 99999999, preview: false,
+}, null, 2));
+PLANTED.push(`digests/${sentEdition}.json`);
+// A story card and an ownership line naming the unpublished holder, each
+// beside a control that must reach the page.
+const card = (n, headline, named) => ({
+  n, theme: "Ownership & control", event_type: "Ownership", flags: [], alert: false, risk: "", headline,
+  byline: "Punch", outlet: "Punch", what_happened: `${headline}.`, key_facts: [], timeline: [], headline_only: false,
+  analysis: [], ownership_caveat: "", named, source: { outlet: "Punch", url: "https://punchng.com/sentinel" }, also_reported: [], also_more: 0,
+});
+const pscLine = (text) => ({ text, outlet: "Punch", date: runDate, url: "https://punchng.com/sentinel", confidence: "Full article" });
 for (const file of PLANTED) {
   const path = join(data, file);
   const text = readFileSync(path, "utf-8");
@@ -129,9 +162,21 @@ for (const file of PLANTED) {
     const edition = JSON.parse(text);
     edition.subject = `${HIDDEN.person} takes control`;
     edition.psc_keys = [...(edition.psc_keys ?? []), `${HIDDEN.person.toLowerCase()}|${HIDDEN.company.toLowerCase()}|https://punchng.com/sentinel`];
+    edition.cards = [card(98, CONTROLS.story, [CONTROLS.company]), card(99, hiddenLine.slice(2), [HIDDEN.person, HIDDEN.company]), ...(edition.cards ?? [])];
+    edition.psc = [pscLine(CONTROLS.psc), pscLine(`${HIDDEN.person} holds 55% of ${HIDDEN.company}`), ...(edition.psc ?? [])];
     writeFileSync(path, JSON.stringify(edition, null, 2));
   }
 }
+// High-risk alerts for the inbox on every page (and the alerts feed).
+const alertsPath = join(data, "alerts.json");
+const alertsFile = JSON.parse(readFileSync(alertsPath, "utf-8"));
+const alert = (title, url) => ({ date: runDate, title, url, source: "The Punch", risk_score: 95, risk_level: "Critical" });
+alertsFile.alerts = [
+  alert(CONTROLS.alert, "https://punchng.com/control-alert"),
+  { ...alert(hiddenLine.slice(2), "https://punchng.com/sentinel-alert"), entities: [HIDDEN.person, HIDDEN.company] },
+  ...(alertsFile.alerts ?? []),
+];
+writeFileSync(alertsPath, JSON.stringify(alertsFile, null, 2));
 writeFileSync(join(data, "suppressed.json"), JSON.stringify([{ name: HIDDEN.person }, { name: HIDDEN.company }]));
 
 try {
@@ -169,7 +214,7 @@ try {
     stdio: ["ignore", "ignore", "inherit"],
     env: { ...process.env, COPY_DATA_SRC: data, COPY_DATA_DEST: outData },
   });
-  const RUN_REWRITES = new Set(["significant_control.json", "companies.json", "people.json", "procurement.json", "latest.json", "category_news.json"]);
+  const RUN_REWRITES = new Set(["significant_control.json", "companies.json", "people.json", "procurement.json", "latest.json", "category_news.json", "alerts.json"]);
   const walkData = (dir) => {
     for (const name of readdirSync(dir)) {
       const path = join(dir, name);
@@ -206,6 +251,28 @@ try {
   }
   walk(out);
   const changes = readFileSync(join(out, "changes", "index.html"), "utf-8");
+  // Each /changes/ section, the brief pages and the alerts inbox must show the
+  // control planted beside each unpublished row, or the walk proved nothing there.
+  const section = (html, id) => (html.split(`id="${id}"`)[1] ?? "").split(/<h2|<\/section>/)[0];
+  for (const [id, name] of [["companies", CONTROLS.company], ["people", CONTROLS.person], ["moves", CONTROLS.person], ["contracts", CONTROLS.contractor]]) {
+    if (!section(changes, id).includes(name)) leaks.push(`/changes/#${id}: the published control row is missing, so this check proves nothing there`);
+  }
+  const built = (path) => {
+    try {
+      return readFileSync(join(out, path), "utf-8");
+    } catch {
+      return "";
+    }
+  };
+  const inbox = (built("index.html").split('id="aura-alerts"')[1] ?? "").split("</script>")[0];
+  for (const [where, html, controls] of [
+    ["/brief/email/", built("brief/email/index.html"), [CONTROLS.story, CONTROLS.psc]],
+    ["/brief/morning/", built("brief/morning/index.html"), [`brief/morning/${sentEdition}/`]],
+    [`/brief/morning/${sentEdition}/`, built(`brief/morning/${sentEdition}/index.html`), [CONTROLS.story, CONTROLS.psc]],
+    ["the alerts inbox", inbox, [CONTROLS.alert]],
+  ]) {
+    for (const c of controls) if (!html.includes(c)) leaks.push(`${where}: the planted control "${c}" is missing, so this check proves nothing there`);
+  }
   if (!changes.includes(CONTROL["Person Name"])) leaks.push("/changes/: the published control row is missing, so this check proves nothing there");
 
   if (leaks.length) {
