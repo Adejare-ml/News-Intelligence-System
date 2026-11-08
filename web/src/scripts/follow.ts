@@ -4,16 +4,16 @@
  *    Never on a person's page, which is one holder at one company: a follow
  *    matches news by name, so it would show another person of that name.
  *  - Home page: a "Following" panel with each followed company's latest
- *    mention, from /data/latest.json and /data/alerts.json (same origin,
- *    so the CSP's connect-src 'self' allows it).
+ *    mention, from /following.json (same origin, so the CSP's connect-src
+ *    'self' allows it). That file is built through the unpublish-aware
+ *    loaders, so it never names what the owner unpublished.
  *  - Every page: a dot on the alerts bell while an unread alert names a
  *    followed company.
  * Everything starts hidden in the HTML, so without JavaScript (or without
  * storage) none of it shows. Nothing leaves the browser.
  */
-import { FOLLOW_KEY, parseFollows, toggleFollow, latestMention, hasNewFollowedAlert, type Follow, type FollowAlert } from "../lib/follow.ts";
+import { FOLLOW_KEY, parseFollows, toggleFollow, latestMention, hasNewFollowedAlert, type Follow, type FollowAlert, type FollowingFeed } from "../lib/follow.ts";
 import { ALERTS_READ_KEY } from "../lib/alerts.ts";
-import type { Article } from "../lib/stories.ts";
 
 function load(): Follow[] {
   try {
@@ -72,9 +72,9 @@ const follows = load();
 if (panel && follows.length) {
   const list = panel.querySelector<HTMLElement>("[data-following-list]")!;
   void Promise.all([
-    getJson<Article[]>(panel.dataset.latest, []),
+    getJson<Partial<FollowingFeed>>(panel.dataset.latest, {}),
     getJson<{ alerts?: FollowAlert[] }>(panel.dataset.alerts, {}),
-  ]).then(([articles, alerts]) => {
+  ]).then(([{ articles }, alerts]) => {
     list.replaceChildren(
       ...follows.map((f) => {
         const li = document.createElement("li");

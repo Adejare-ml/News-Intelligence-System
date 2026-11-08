@@ -71,6 +71,25 @@ export function latestMention(name: string, articles: Article[], alerts: FollowA
   return { title, url: String(found.url ?? ""), source: publisher || String(found.source ?? ""), date: found.at?.toISOString().slice(0, 10) ?? "" };
 }
 
+/** /following.json: what the panel and the bell dot fetch. */
+export interface FollowingFeed {
+  articles: Article[];
+  alerts: FollowAlert[];
+}
+
+/**
+ * The stories and alerts for /following.json, cut to the fields the panel
+ * and the dot match on. The page builds it from data.articles() and
+ * data.alerts(), the rows the inbox embeds, so the dot's ids are the
+ * inbox's and an unpublished name is gone on the next build.
+ */
+export function followingFeed(articles: Article[], alerts: FollowAlert[]): FollowingFeed {
+  return {
+    articles: articles.map(({ Title, Summary, Entities, URL, Source, Time }) => ({ Title, Summary, Entities, URL, Source, Time })),
+    alerts: alerts.map(({ date, title, url, source, entities, risk_score, risk_level }) => ({ date, title, url, source, entities, risk_score, risk_level })),
+  };
+}
+
 /**
  * True when an alert the inbox shows is unread and names a followed entity.
  * Ids come from cleanAlerts, the same function the inbox uses, so "read"

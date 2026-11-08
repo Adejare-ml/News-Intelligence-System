@@ -1,6 +1,6 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { parseFollows, toggleFollow, latestMention, hasNewFollowedAlert } from "./follow.ts";
+import { parseFollows, toggleFollow, latestMention, hasNewFollowedAlert, followingFeed } from "./follow.ts";
 import { cleanAlerts } from "./alerts.ts";
 import { holderSlug } from "./entities.ts";
 import { slugify } from "./entity-key.ts";
@@ -78,5 +78,24 @@ describe("following in the browser", () => {
     assert.equal(hasNewFollowedAlert(raw, [{ slug: "mtn", name: "MTN" }], new Set([a.id])), true);
     assert.equal(hasNewFollowedAlert(raw, [{ slug: "mtn", name: "MTN" }], new Set([a.id, b.id])), false);
     assert.equal(hasNewFollowedAlert(raw, [], new Set()), false);
+  });
+
+  test("following.json keeps only what the panel and the dot match on, with the inbox's ids", () => {
+    const articles = [
+      { ID: 7, Time: "2026-11-05T08:00:00Z", Title: "Unrelated", Summary: "Dangote Refinery raises output.", Source: "Punch", URL: "https://p.test/2",
+        Entities: "NNPC", Category: "Energy", "Risk Score": 40 },
+    ];
+    const alerts = [
+      { date: "2026-11-04", title: "EFCC raids depot", url: "https://p.test/a", source: "Punch", entities: ["Dangote Refinery"], risk_score: 95, risk_level: "Critical", summary: "Long text.", category: "Crime" },
+      { date: "2026-11-03", title: "MTN fined", url: "https://p.test/b", source: "Punch", risk_score: 70 },
+    ];
+    const feed = followingFeed(articles, alerts);
+    assert.deepEqual(Object.keys(feed.articles[0]).sort(), ["Entities", "Source", "Summary", "Time", "Title", "URL"]);
+    assert.deepEqual(Object.keys(feed.alerts[0]).sort(), ["date", "entities", "risk_level", "risk_score", "source", "title", "url"]);
+    assert.deepEqual(cleanAlerts(feed.alerts), cleanAlerts(alerts));
+    assert.deepEqual(latestMention("Dangote Refinery", feed.articles, feed.alerts), latestMention("Dangote Refinery", articles, alerts));
+    const [a] = cleanAlerts(alerts);
+    assert.equal(hasNewFollowedAlert(feed.alerts, [dangote], new Set()), true);
+    assert.equal(hasNewFollowedAlert(feed.alerts, [dangote], new Set([a.id])), false);
   });
 });

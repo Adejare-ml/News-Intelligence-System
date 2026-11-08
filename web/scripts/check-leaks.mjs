@@ -11,7 +11,8 @@
 // suppressed.json, which must vanish the same way.
 //
 // The downloads, Markdown exports and feeds are checked the same way: each
-// is built from the register, so each could leak it. The check also fails
+// is built from the register, so each could leak it. So is following.json,
+// what the browser Follow panel and bell dot fetch. The check also fails
 // if one of them is missing, so a renamed route cannot drop out unnoticed.
 import { cpSync, existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -274,15 +275,32 @@ try {
     ["/brief/morning/", built("brief/morning/index.html"), [`brief/morning/${sentEdition}/`]],
     [`/brief/morning/${sentEdition}/`, built(`brief/morning/${sentEdition}/index.html`), [CONTROLS.story, CONTROLS.psc]],
     ["the alerts inbox", inbox, [CONTROLS.alert]],
+    // The walk above fails on the unpublished story and alert in this file.
+    ["/following.json", built("following.json"), [CONTROLS.alert]],
   ]) {
     for (const c of controls) if (!html.includes(c)) leaks.push(`${where}: the planted control "${c}" is missing, so this check proves nothing there`);
+  }
+  // The Follow panel and the bell dot fetch stories and alerts in the browser.
+  // They must read following.json, built through the unpublish-aware loaders,
+  // never the raw /data/latest.json or /data/alerts.json a run rewrites later.
+  let followed = { articles: [] };
+  try {
+    followed = JSON.parse(built("following.json"));
+  } catch {}
+  if (!followed.articles?.length) leaks.push("/following.json: lists no stories, so this check proves nothing there");
+  const fetched = [...built("index.html").matchAll(/data-(latest|alerts)="([^"]*)"/g)];
+  if (!fetched.some((m) => m[1] === "latest") || !fetched.some((m) => m[1] === "alerts")) {
+    leaks.push("/index.html: the Follow panel's data-latest or data-alerts is missing, so this check proves nothing there");
+  }
+  for (const [, attr, url] of fetched) {
+    if (!url.endsWith("following.json")) leaks.push(`/index.html: data-${attr} fetches ${url}, not following.json, so it skips the unpublish list`);
   }
   if (!changes.includes(CONTROL["Person Name"])) leaks.push("/changes/: the published control row is missing, so this check proves nothing there");
 
   // Every kind of export this check must cover, at least one file each.
   const EXPORTS = [
     "downloads/register.csv", "downloads/procurement.csv", "downloads/news.csv",
-    "feed.json", "feeds/alerts.xml",
+    "feed.json", "feeds/alerts.xml", "following.json",
   ];
   const missing = EXPORTS.filter((p) => !existsSync(join(out, p)));
   const entityDir = join(out, "entity");
