@@ -109,6 +109,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "kogi state government",
+      "label": "Kogi State Government",
+      "recent_avg": 35.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "nnpc",
       "label": "NNPC Limited",
       "recent_avg": 28.3,
@@ -173,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-08 18:23:50"
+  "generated": "2026-11-08 21:12:48"
 }

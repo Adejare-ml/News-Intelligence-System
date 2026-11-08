@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 96,
+  "recent_articles": 97,
   "previous_articles": 226,
   "rising": [
     {
@@ -8,12 +8,6 @@
       "recent": 8,
       "previous": 0,
       "change": 8
-    },
-    {
-      "term": "firm",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
     },
     {
       "term": "illegal",
@@ -29,6 +23,12 @@
     },
     {
       "term": "chinese",
+      "recent": 4,
+      "previous": 1,
+      "change": 3
+    },
+    {
+      "term": "firm",
       "recent": 4,
       "previous": 1,
       "change": 3
@@ -68,8 +68,8 @@
     {
       "term": "tinubu",
       "recent": 3,
-      "previous": 22,
-      "change": -19
+      "previous": 21,
+      "change": -18
     },
     {
       "term": "court",
@@ -129,7 +129,7 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 67,
+      "recent": 68,
       "previous": 162
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-08 18:23:50"
+  "generated": "2026-11-08 21:12:48"
 }
