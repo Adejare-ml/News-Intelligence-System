@@ -87,7 +87,7 @@ Degraded local extraction still exists for offline development, but only behind 
 - **Executive reporting** — a daily Markdown brief with Key Developments, High Risk Alerts, Beneficial Ownership & PSC Disclosures, and Procurement & Board Changes, archived per run. Each edition covers the whole calendar day up to the run time (every bullet cites its source article), so the last run of the day publishes the complete daily picture rather than only its own batch
 - **Knowledge graph** — entity relationship map linking people, companies, agencies, and PSC holders, with shortest-path tracing between any two entities
 - **Global search & entity pages** — a ⌘K palette over companies, people, PSC records, articles and procurement; every entity gets its own page
-- **News categories** — Sports, Technology, Politics and Entertainment headlines in Nigeria and Global editions, on the site and in the Morning Brief for readers who choose them
+- **News categories** — Technology and Politics headlines in Nigeria and Global editions, on the site and in the Morning Brief for readers who choose them
 - **Context signals** — term/category momentum over the pipeline's own articles, an r/Nigeria social column, and current Lagos/Abuja conditions, all fetched pipeline-side to keep the site's CSP locked to `'self'`
 - **Syndication** — an RSS feed of every brief edition at [`data/feed.xml`](https://adejare-ml.github.io/News-Intelligence-System/data/feed.xml), and an optional high-risk webhook (Slack/Discord-compatible) gated on a repository secret
 - **Provenance** — every article and report records the engine that generated it

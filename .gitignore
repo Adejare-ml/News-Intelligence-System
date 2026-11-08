@@ -30,3 +30,6 @@ backend/app/db/excel_db.xlsx
 
 # Claude Code local settings (launch.json is shared; settings.local.json is not)
 .claude/settings.local.json
+
+# The register gate's review queue: full rows it withheld, owner-only.
+backend/app/db/review_queue.json

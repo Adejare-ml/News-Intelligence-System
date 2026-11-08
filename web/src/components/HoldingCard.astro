@@ -1,16 +1,18 @@
 ---
 import Chain from "./Chain.astro";
 import Provenance from "./Provenance.astro";
+import ConfidenceBadge from "./ConfidenceBadge.astro";
+import OfficialLinks from "./OfficialLinks.astro";
 import { href } from "../lib/url.ts";
 import { slugify } from "../lib/entity-key.ts";
+import { holderSlug } from "../lib/entities.ts";
 import { describeHolding, type Holding } from "../lib/psc.ts";
 
 interface Props {
   holding: Holding;
   index?: number;
-  multiCompany?: boolean;
 }
-const { holding: h, index = 0, multiCompany = false } = Astro.props;
+const { holding: h, index = 0 } = Astro.props;
 const fmt = (iso: string) => {
   const d = new Date(`${iso}T12:00:00Z`);
   return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
@@ -26,13 +28,12 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
   data-stake={h.stake !== null ? "1" : "0"}
   data-pattern={h.flags.length ? "1" : "0"}
   data-band={h.band?.id ?? ""}
-  data-multi={multiCompany ? "1" : "0"}
   data-last={h.lastReported}
   data-value={h.stake ?? -1}
 >
   <header>
     <div>
-      <h3 class="h3"><a href={href(`entity/${slugify(h.person)}/`)}>{h.person}</a></h3>
+      <h3 class="h3"><a href={href(`entity/${holderSlug(h.person, h.company)}/`)}>{h.person}</a></h3>
       <p class="desc">{describeHolding(h)}</p>
     </div>
     <span class:list={["stake", "num", { muted: h.stake === null }]}>{h.stake === null ? "—" : h.stakeLabel}</span>
@@ -41,6 +42,7 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
   <Chain holding={h} size="small" />
 
   <div class="tags">
+    <ConfidenceBadge confidence={h.confidence} />
     {h.band && <span class="chip chip-gold">{h.band.label}</span>}
     {h.kind === "role" && <span class="chip" title="A board post was reported, not a shareholding.">Board role, no stake</span>}
     {h.flags.map((f) => (
@@ -49,6 +51,8 @@ const search = `${h.person} ${h.company} ${h.vehicle} ${h.role} ${h.nature}`.toL
   </div>
 
   <Provenance holding={h} />
+
+  <OfficialLinks company={h.company} collapsed />
 
   <footer class="meta">
     <span>

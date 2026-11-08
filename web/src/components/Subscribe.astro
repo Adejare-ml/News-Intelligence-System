@@ -1,7 +1,11 @@
 ---
 import Icon from "./Icon.astro";
 import { href } from "../lib/url.ts";
-import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categories.ts";
+import {
+  CATEGORIES, FREQUENCIES, HEADLINE_CATEGORIES, REGIONS, categoryLabel, listLabels,
+} from "../../functions/_lib/categories.ts";
+
+const headlineLabels = listLabels(HEADLINE_CATEGORIES.map(categoryLabel));
 ---
 <section class="section subscribe" id="subscribe" aria-labelledby="sub-title">
   <div class="wrap">
@@ -11,8 +15,8 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
         <h2 class="h2" id="sub-title" data-split>Wake up knowing who moved what.</h2>
         <p class="lede">
           One short email after the 08:00 run. Choose what goes in it: AURA’s business brief on ownership
-          changes, board moves and contracts, plus sports, technology, politics or entertainment headlines
-          from Nigeria, the world, or both. Free, and one click to leave.
+          changes, board moves and contracts, plus {headlineLabels.toLowerCase()} headlines from Nigeria, the
+          world, or both. Free, and one click to leave.
         </p>
       </div>
       <form class="form" action={href("api/subscribe")} method="post" data-subscribe novalidate>
@@ -27,11 +31,11 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
         </div>
         <fieldset class="choices" data-topics>
           <legend class="choice-title">What do you want to hear about?</legend>
-          <div class="chips">
+          <div class="topics">
             {CATEGORIES.map((c) => (
-              <label class="pick" title={c.blurb}>
+              <label class="pick topic">
                 <input type="checkbox" name="categories" value={c.id} checked={c.id === "business"} />
-                <span>{c.label}</span>
+                <span><strong>{c.label}</strong> <small class="blurb">{c.blurb}</small></span>
               </label>
             ))}
           </div>
@@ -46,7 +50,7 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
               </label>
             ))}
           </div>
-          <p class="hint meta">For sports, technology, politics and entertainment. Business is always Nigeria.</p>
+          <p class="hint meta">For {headlineLabels}. Business is always Nigeria.</p>
         </fieldset>
         <fieldset class="choices">
           <legend class="choice-title">How often</legend>
@@ -66,7 +70,7 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
         <p class="status" role="status" aria-live="polite" data-subscribe-status></p>
         <p class="privacy meta">
           We store only your email address and the choices above, to send this brief. It is never shared, and
-          every email has links to change your topics or unsubscribe.
+          every email has links to change your topics or unsubscribe. See our <a href={href("privacy/")}>privacy notice</a>.
         </p>
       </form>
     </div>
@@ -221,6 +225,27 @@ import { CATEGORIES, FREQUENCIES, REGIONS } from "../../functions/_lib/categorie
     color: var(--text-soft);
     font-size: 0.9rem;
     transition: background var(--dur-ui) ease, border-color var(--dur-ui) ease, color var(--dur-ui) ease;
+  }
+  /* Topics show their description, so each is a full-width row rather than a pill. */
+  .topics {
+    display: grid;
+    gap: 8px;
+  }
+  .topic span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 8px 14px;
+    border-radius: var(--radius-m);
+  }
+  .topic strong {
+    font-weight: 600;
+    color: var(--text);
+  }
+  .blurb {
+    font-size: 0.8rem;
+    color: var(--muted);
   }
   .pick input:checked + span {
     background: var(--gold-wash);

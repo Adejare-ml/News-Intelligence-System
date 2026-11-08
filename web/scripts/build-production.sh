@@ -35,4 +35,7 @@ SITES=cloudflare bash scripts/build-sites.sh
 
 rm -rf "$ROOT/out-production"
 mv out/cloudflare "$ROOT/out-production"
+# The list of unpublished names is never served, whatever code is promoted:
+# a version older than the unpublish filter copies the whole data folder.
+rm -f "$ROOT/out-production/data/suppressed.json"
 echo "build-production: $(git -C "$ROOT" rev-parse --short "$REF") code + current data -> out-production"
