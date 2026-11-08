@@ -27,7 +27,8 @@ describe("entity Markdown export", () => {
     assert.match(md, /Company or body · Finance/);
     assert.match(md, /- Mentions tracked: 7/);
     assert.match(md, /- Last seen: 3 Oct 2026/);
-    assert.match(md, /\[Ada Obi\]\(https:\/\/aura\.test\/entity\/ada-obi\/\) owns 12% of Obi Holdings Ltd/);
+    // A person's page is the holder at this company (holderSlug), never the name alone.
+    assert.match(md, /\[Ada Obi\]\(https:\/\/aura\.test\/entity\/ada-obi-at-obi-holdings-ltd\/\) owns 12% of Obi Holdings Ltd/);
     assert.match(md, /Reported by \[The Punch\]\(https:\/\/punchng\.com\/a\)/);
     assert.match(md, /\[Obi Holdings expands\]\(https:\/\/punchng\.com\/b\) · The Punch · 2 Oct 2026/);
     assert.match(md, /\*\*Chidi Eze\*\*, CEO/);

@@ -7,7 +7,7 @@
 import { describeHolding } from "./psc.ts";
 import { toStory } from "./stories.ts";
 import { slugify } from "./entity-key.ts";
-import type { Entity } from "./entities.ts";
+import { holderSlug, type Entity } from "./entities.ts";
 
 export function entitySummary(e: Entity): string {
   const isPerson = e.kind === "person";
@@ -48,7 +48,7 @@ export function entityMarkdown(e: Entity, opts: { pageUrl: string; entityUrl: (s
     for (const h of e.holdings) {
       const lead = isPerson
         ? `${mdText(e.name)} ${mdText(describeHolding(h))} (${link(h.company, opts.entityUrl(slugify(h.company)))})`
-        : `${link(h.person, opts.entityUrl(slugify(h.person)))} ${mdText(describeHolding(h))}`;
+        : `${link(h.person, opts.entityUrl(holderSlug(h.person, h.company)))} ${mdText(describeHolding(h))}`;
       const chips = [h.band?.label, ...h.flags.map((f) => f.title)].filter(Boolean).map(mdText);
       out.push(`- ${lead}${chips.length ? ` · ${chips.join(" · ")}` : ""}`);
       const src = h.sources[0];
