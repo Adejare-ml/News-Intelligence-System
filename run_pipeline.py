@@ -1239,7 +1239,7 @@ def export_static_json_database():
     # the export was shipping 874 rows for 313 distinct names -- 184KB to
     # the browser and duplicate nodes in the graph and dossiers.
     companies = dedupe_entity_rows(companies, ["Company"], count_key="Mention Count")
-    people = dedupe_entity_rows(people, ["Name", "Organization"])
+    people = dedupe_entity_rows(people, ["Name", "Organization"], first_seen_from="Date")
     agencies = dedupe_entity_rows(agencies, ["Agency"])
 
     # A previous file is scrubbed of unpublished names before it is

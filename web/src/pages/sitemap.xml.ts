@@ -19,8 +19,8 @@ export function GET({ site }: { site?: URL }) {
     articles: data.articles(),
     contracts: data.procurement().map(toContract),
   });
-  // The register and entity pages name people as owners from news reporting;
-  // they carry noindex and stay out of the sitemap.
+  // The register, entity and weekly-changes pages name people as owners from
+  // news reporting; they carry noindex and stay out of the sitemap.
   void entities;
   // Section and category pages change with every pipeline run; an edition
   // page never changes after its run. Policy pages carry no lastmod.
@@ -30,7 +30,7 @@ export function GET({ site }: { site?: URL }) {
     .sort((a, b) => b.getTime() - a.getTime())[0] ?? null;
   const loc = (p: string) => new URL(href(p), base).toString();
   const entries = [
-    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/").map((p) => ({ loc: loc(p), lastmod: lastRun })),
+    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/" && p !== "changes/").map((p) => ({ loc: loc(p), lastmod: lastRun })),
     ...HEADLINE_CATEGORIES.map((c) => ({ loc: loc(`news/${c}/`), lastmod: lastRun })),
     ...listEditions().map((e) => ({ loc: loc(`brief/${e.slug}/`), lastmod: e.date })),
     ...["corrections/", "privacy/", "terms/"].map((p) => ({ loc: loc(p), lastmod: null })),
