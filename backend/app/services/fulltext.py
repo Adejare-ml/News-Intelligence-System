@@ -110,7 +110,11 @@ class FullTextFetcher:
                 return None
             self.used += 1
             found = claude_llm.fetch_article(title, source, published)
-            return found["text"] if found else None
+            # The lookup accepts a page on 400 characters; the same rule as
+            # a direct fetch below decides whether that is the article.
+            if not found or story_detail.detail_level(found["text"], title, source) != "full":
+                return None
+            return found["text"]
         if not self._robots.allowed(url):
             return None
         self.used += 1

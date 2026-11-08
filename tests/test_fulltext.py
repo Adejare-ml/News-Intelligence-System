@@ -197,16 +197,29 @@ def test_google_news_links_go_to_the_claude_lookup_not_a_direct_fetch(http, monk
 
     def lookup(title, outlet, published=""):
         seen.update(title=title, outlet=outlet, published=published)
-        return {"url": "https://punchng.com/story", "text": "full report"}
+        return {"url": "https://punchng.com/story", "text": PARAGRAPH * 10}
 
     monkeypatch.setattr(fulltext.claude_llm, "configured", lambda: True)
     monkeypatch.setattr(fulltext.claude_llm, "fetch_article", lookup)
     fetcher = fulltext.FullTextFetcher(get=http, robots=FakeRobots())
     text = fetcher.fetch("https://news.google.com/rss/articles/abc", "Headline", "Punch", "2026-11-06")
-    assert text == "full report"
+    assert text == PARAGRAPH * 10
     assert seen == {"title": "Headline", "outlet": "Punch", "published": "2026-11-06"}
     assert http.calls == []
     # One run budget covers both kinds of fetch.
+    assert fetcher.used == 1
+
+
+def test_a_claude_lookup_shorter_than_a_full_article_gives_nothing(http, monkeypatch):
+    # The same rule as a direct fetch: a teaser reads no better than the
+    # snippet, so the story keeps its snippet extraction. The lookup was
+    # still spent.
+    monkeypatch.setattr(fulltext.claude_llm, "configured", lambda: True)
+    monkeypatch.setattr(fulltext.claude_llm, "fetch_article",
+                        lambda title, outlet, published="": {"url": "https://punchng.com/story",
+                                                             "text": PARAGRAPH * 3})
+    fetcher = fulltext.FullTextFetcher(get=http, robots=FakeRobots())
+    assert fetcher.fetch("https://news.google.com/rss/articles/abc", "Headline", "Punch") is None
     assert fetcher.used == 1
 
 
