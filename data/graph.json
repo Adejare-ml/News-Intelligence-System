@@ -121,8 +121,26 @@
       "risk": "Critical"
     },
     {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a0ce0506cbaa",
+      "label": "Kogi State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9f778a9a1d4e",
+      "label": "SERAP",
       "type": "agency",
       "risk": "Low"
     },
@@ -217,26 +235,8 @@
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "95368915b67a",
-      "label": "Bureau of Public Procurement",
       "type": "agency",
       "risk": "Low"
     },
@@ -433,84 +433,6 @@
       "risk": "Low"
     },
     {
-      "id": "f05534764d4f",
-      "label": "Olukayode Olusanya",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "dba897677026",
-      "label": "Oak Homes",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "65c8c8afe47f",
-      "label": "Thomas Ogungbangbe",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "6ef575649788",
-      "label": "CITA Energies",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "eb5a8434f1bd",
-      "label": "Tony Elumelu",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "507a818f1115",
-      "label": "Afrinvest",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "06dd8607f181",
-      "label": "Aliyu Abubakar",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "de55ca178512",
-      "label": "AA Oil Limited",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "992de97c5755",
-      "label": "Babs Ogundeyi",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "a04fa9c8b7c4",
-      "label": "Kuda",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "1805dc0a136a",
-      "label": "Musty Mustapha",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "5cf2fccd8723",
-      "label": "Okunbor",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "9b5549bd0205",
-      "label": "Pipeline Infrastructure Nigeria Limited",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
       "id": "539d727618e7",
       "label": "International Finance Corporation",
       "type": "psc",
@@ -519,48 +441,6 @@
     {
       "id": "b35a4cc86b40",
       "label": "Quickmart",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "763ad8d1cb39",
-      "label": "Sunbeth",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "71399a9ad4ea",
-      "label": "Livestock Feeds Business",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "f3f65e2dd7f8",
-      "label": "Leno Adesanya",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "b64909add6b9",
-      "label": "Sunrise Ltd",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "5bc53f66db9d",
-      "label": "Seplat",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
-      "id": "1b45367ee273",
-      "label": "Tony O. Elumelu",
-      "type": "psc",
-      "risk": "High"
-    },
-    {
-      "id": "f5be7663cdb3",
-      "label": "United Bank for Africa (UBA) Plc",
       "type": "company",
       "risk": "Medium"
     },
@@ -586,6 +466,12 @@
       "id": "2cbc793c6023",
       "label": "Government of China",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -741,76 +627,10 @@
       "label": "Appointed as Commissioner"
     },
     {
-      "id": "34c826682817",
-      "from": "f05534764d4f",
-      "to": "dba897677026",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "a5e36b5f552f",
-      "from": "65c8c8afe47f",
-      "to": "6ef575649788",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "5d0107c18b4d",
-      "from": "eb5a8434f1bd",
-      "to": "507a818f1115",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "3023a1a4371e",
-      "from": "06dd8607f181",
-      "to": "de55ca178512",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "c71bb559e46f",
-      "from": "992de97c5755",
-      "to": "a04fa9c8b7c4",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "b9ad30833926",
-      "from": "1805dc0a136a",
-      "to": "a04fa9c8b7c4",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "548ef4f08bf9",
-      "from": "5cf2fccd8723",
-      "to": "9b5549bd0205",
-      "label": "Significant influence or control"
-    },
-    {
       "id": "990674302105",
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
       "label": "PSC: 6.5%"
-    },
-    {
-      "id": "65d32072e59e",
-      "from": "763ad8d1cb39",
-      "to": "71399a9ad4ea",
-      "label": "PSC: 73.29%"
-    },
-    {
-      "id": "6ef476ba43f6",
-      "from": "f3f65e2dd7f8",
-      "to": "b64909add6b9",
-      "label": "Significant influence or control"
-    },
-    {
-      "id": "b2eae1d0c424",
-      "from": "eb5a8434f1bd",
-      "to": "5bc53f66db9d",
-      "label": "Ownership of shares"
-    },
-    {
-      "id": "da3764a5dbad",
-      "from": "1b45367ee273",
-      "to": "f5be7663cdb3",
-      "label": "PSC: 24.5%"
     },
     {
       "id": "41566a83c72b",
