@@ -3711,6 +3711,31 @@
       ]
     },
     {
+      "key": "air force",
+      "label": "Nigerian Air Force",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "civil aviation authority",
       "label": "Nigerian Civil Aviation Authority",
       "total_mentions": 3,
@@ -4648,6 +4673,19 @@
       ]
     },
     {
+      "key": "kogi state government",
+      "label": "Kogi State Government",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "mtn communications",
       "label": "MTN Nigeria Communications Plc",
       "total_mentions": 2,
@@ -5078,25 +5116,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "air force",
-      "label": "Nigerian Air Force",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -6316,20 +6335,7 @@
           "max_risk": 75
         }
       ]
-    },
-    {
-      "key": "airtel africa",
-      "label": "Airtel Africa Plc",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-11-08 18:23:50"
+  "generated": "2026-11-08 21:12:48"
 }

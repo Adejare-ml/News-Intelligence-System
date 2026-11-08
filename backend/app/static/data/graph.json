@@ -145,6 +145,12 @@
       "risk": "Low"
     },
     {
+      "id": "5cdf8c992852",
+      "label": "Nigerian Air Force",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9f778a9a1d4e",
       "label": "SERAP",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "8aeb2e3bdb2c",
-      "label": "Bank of Industry",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -249,6 +249,12 @@
     {
       "id": "aa0e4e6198bd",
       "label": "Agbu Kefas",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "c6e1b7b6fc07",
+      "label": "Ahmed Usman Ododo",
       "type": "person",
       "risk": "Low"
     },
@@ -415,18 +421,6 @@
       "risk": "Low"
     },
     {
-      "id": "711f164886cd",
-      "label": "Bayode",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "fa1f6b770d91",
-      "label": "Independent National Electoral Commission (INEC)",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "539d727618e7",
       "label": "International Finance Corporation",
       "type": "psc",
@@ -499,6 +493,12 @@
       "from": "aa0e4e6198bd",
       "to": "737f70b3bdb8",
       "label": "Appointed as Governor of Taraba State"
+    },
+    {
+      "id": "496ca7066a26",
+      "from": "c6e1b7b6fc07",
+      "to": "a0ce0506cbaa",
+      "label": "Appointed as Governor, Kogi State"
     },
     {
       "id": "456bb67cfb9e",
@@ -613,12 +613,6 @@
       "from": "10e91a46eee3",
       "to": "8036ca4008f7",
       "label": "Appointed as Politician"
-    },
-    {
-      "id": "d38fa55c5f1f",
-      "from": "711f164886cd",
-      "to": "fa1f6b770d91",
-      "label": "Appointed as ICT Director"
     },
     {
       "id": "990674302105",
