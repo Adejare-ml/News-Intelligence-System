@@ -1,0 +1,140 @@
+---
+/**
+ * "Get updates by email" on a company page. Posts to /api/follow, which
+ * emails a confirm link (or, for an address not on the list, how to
+ * subscribe); nothing is followed until the reader clicks that link.
+ */
+import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
+
+interface Props {
+  slug: string;
+  name: string;
+}
+const { slug, name } = Astro.props;
+---
+<section class="wrap block follow" aria-labelledby="follow-title">
+  <div class="card">
+    <div class="copy">
+      <h2 class="h3" id="follow-title">Get updates by email</h2>
+      <p class="meta">Reporting on {name} since the previous day’s brief, in a “Following” section of your Morning Brief (on the weekly brief, Monday’s email carries the reporting since Sunday’s). We’ll email you a link to confirm.</p>
+    </div>
+    <form class="form" action={href("api/follow")} method="post" data-follow novalidate>
+      <label class="sr-only" for="follow-email">Email address</label>
+      <div class="field">
+        <Icon name="mail" size={18} class="field-icon" />
+        <input id="follow-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" required />
+        <button class="btn btn-gold" type="submit">Follow</button>
+      </div>
+      <input type="hidden" name="slug" value={slug} />
+      <!-- Honeypot: invisible to people, tempting to bots. -->
+      <input class="hp" type="text" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <p class="status" role="status" aria-live="polite" data-follow-status></p>
+      <p class="privacy meta">The companies you follow are stored with your subscription, only to send these updates. Unfollow any time from the link in every brief.</p>
+    </form>
+  </div>
+</section>
+
+<script>
+  import "../scripts/follow.ts";
+</script>
+
+<style>
+  .card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: clamp(16px, 4vw, 48px);
+    align-items: center;
+    padding: clamp(20px, 3vw, 32px);
+    border-radius: var(--radius-l);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .copy .h3 {
+    margin: 0 0 6px;
+  }
+  .copy .meta {
+    margin: 0;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 6px 6px 16px;
+    border-radius: 999px;
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+  }
+  .field:focus-within {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 4px var(--gold-wash);
+  }
+  .field :global(.field-icon) {
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+  input[type="email"] {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    outline: none;
+  }
+  input::placeholder {
+    color: var(--faint);
+  }
+  .btn {
+    flex-shrink: 0;
+  }
+  .form:global(.is-busy) .btn {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  .hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  .status {
+    min-height: 1.4em;
+    margin: 10px 4px 2px;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+  }
+  .status:global(.error) {
+    color: var(--crimson);
+  }
+  .status:global(.ok) {
+    color: var(--gold);
+  }
+  .privacy {
+    margin: 0 4px;
+  }
+  @media (max-width: 760px) {
+    .card {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 420px) {
+    .field {
+      flex-wrap: wrap;
+      border-radius: var(--radius-m);
+      padding: 6px;
+    }
+    .field :global(.field-icon) {
+      display: none;
+    }
+    input[type="email"] {
+      padding-left: 10px;
+    }
+    .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>

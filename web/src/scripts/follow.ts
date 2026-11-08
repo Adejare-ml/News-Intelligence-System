@@ -11,6 +11,9 @@
  *    followed company.
  * Everything starts hidden in the HTML, so without JavaScript (or without
  * storage) none of it shows. Nothing leaves the browser.
+ *
+ * Also "Get updates by email" on company pages: POSTs the address and the
+ * company's slug to /api/follow (a Cloudflare Pages Function).
  */
 import { FOLLOW_KEY, parseFollows, toggleFollow, latestMention, hasNewFollowedAlert, type Follow, type FollowAlert, type FollowingFeed } from "../lib/follow.ts";
 import { ALERTS_READ_KEY } from "../lib/alerts.ts";
@@ -50,7 +53,7 @@ async function getJson<T>(url: string | undefined, fallback: T): Promise<T> {
 }
 
 /* ---------- Follow button (entity pages) ---------- */
-const button = document.querySelector<HTMLButtonElement>("[data-follow]");
+const button = document.querySelector<HTMLButtonElement>("button[data-follow]");
 const wrap = document.querySelector<HTMLElement>("[data-follow-wrap]");
 if (button && wrap && save(load())) {
   const item: Follow = { slug: button.dataset.slug!, name: button.dataset.name! };
@@ -126,4 +129,47 @@ void updateDot();
 // Reading an alert in the inbox can clear the dot; the inbox saves first, so check after it.
 document.addEventListener("click", (e) => {
   if ((e.target as Element).closest("[data-alert], [data-inbox-markall]")) window.setTimeout(updateDot, 0);
+});
+
+/* ---------- Get updates by email (company pages) ---------- */
+document.querySelectorAll<HTMLFormElement>("form[data-follow]").forEach((form) => {
+  const status = form.querySelector<HTMLElement>("[data-follow-status]");
+  const input = form.querySelector<HTMLInputElement>('input[type="email"]');
+  const field = (name: string) => (form.elements.namedItem(name) as HTMLInputElement | null)?.value || "";
+  const say = (msg: string, kind: "ok" | "error" | "" = "") => {
+    if (!status) return;
+    status.textContent = msg;
+    status.classList.toggle("ok", kind === "ok");
+    status.classList.toggle("error", kind === "error");
+  };
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const email = input?.value.trim() || "";
+    if (!input || !input.checkValidity() || !email) {
+      say("That email address doesn’t look right.", "error");
+      input?.focus();
+      return;
+    }
+    form.classList.add("is-busy");
+    say("Sending…");
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ email, slug: field("slug"), company_site: field("company_site") }),
+      });
+      const body = (await res.json().catch(() => ({}))) as { message?: string; error?: string };
+      // The GitHub Pages mirror has no Functions: say so plainly instead of failing.
+      if (res.status === 404 || res.status === 405) say("Updates by email open very soon.");
+      else if (res.ok) {
+        say(body.message || "Check your inbox.", "ok");
+        input.value = "";
+      } else say(body.error || "Something went wrong. Please try again in a moment.", "error");
+    } catch {
+      say("You seem to be offline. Please try again.", "error");
+    } finally {
+      form.classList.remove("is-busy");
+    }
+  });
 });

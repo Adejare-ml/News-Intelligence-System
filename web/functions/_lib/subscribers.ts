@@ -200,7 +200,11 @@ export function subscriberStore(db: D1Like) {
   };
 }
 
-/** Counts per key per Lagos day, e.g. sign-up posts from one IP ("ip:<address>"). */
+/**
+ * Counts per key per Lagos day, e.g. sign-up and follow posts from one IP
+ * ("ip:<address>"), or follow emails to an address not on the list
+ * ("follow:<SHA-256 of the address>").
+ */
 export function throttle(db: D1Like) {
   return {
     /** Counts one hit and returns today's total for the key, this one included. */

@@ -16,7 +16,11 @@
  *     category with no headlines in those regions is left out;
  *   - weekly Business readers get the week in business (the Sunday weekly
  *     wrap, /brief/email/section/business-week/) on Mondays instead of the
- *     daily brief, while the wrap is fresh.
+ *     daily brief, while the wrap is fresh;
+ *   - readers who follow companies get a "Following" block after their
+ *     sections, built from /brief/email/follow/<slug>/ for each followed
+ *     company with new reporting. Readers whose follows have nothing new
+ *     share the email of readers who follow nothing.
  *
  *   ?dry_run=1  report the edition, subject and recipient counts; send nothing
  *   ?test=1     send one copy to OWNER_EMAIL; record nothing. Add
@@ -26,11 +30,12 @@
  * already sent (the pipeline produced nothing new) is not sent again; readers
  * who also chose headline categories still get those.
  *
- * After a real send, housekeeping: pending sign-ups not mailed for 30 days
- * are deleted, and pending sign-ups 48-72 hours old that have had only their
- * first mail get one reminder (at most 20 a run, within the sign-up limits).
+ * After a real send, and on a real call with nobody to send to, housekeeping:
+ * pending sign-ups not mailed for 30 days are deleted, pending sign-ups 48-72
+ * hours old that have had only their first mail get one reminder (at most 20
+ * a run, within the sign-up limits), and earlier days' throttle counts go.
  */
-import { authorised, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts";
+import { authorised, escapeHtml, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts";
 import {
   GMAIL_DAILY_CAP, confirmationMail, decodeEntities, htmlToText, preferencesUrl, provider, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl,
 } from "../_lib/mailer.ts";
@@ -40,6 +45,7 @@ import {
   type Edition, type HeadlineCategory, type Prefs,
 } from "../_lib/categories.ts";
 import { sendLog, subscriberStore, throttle, type Subscriber } from "../_lib/subscribers.ts";
+import { followRequests, followStore, loadFollowable } from "../_lib/follows.ts";
 
 // Kept as exports here: older tests and scripts import them from this module.
 export { sameSecret, authorised, lagosDay } from "../_lib/http.ts";
@@ -136,6 +142,21 @@ export interface Group {
   key: string;
   prefs: Prefs;
   readers: Subscriber[];
+  /** Followed companies in this group's email: with new reporting, and listed by name only. */
+  follow?: { news: string[]; more: string[] };
+}
+
+/** Fragment fetches per send, so a long tail of follows cannot exhaust a Function's subrequests. */
+export const MAX_FOLLOW_FETCHES = 30;
+
+/** Today's follow material, fetched once per send. */
+export interface Following {
+  /** slug -> rows, for companies with fresh, non-empty reporting. */
+  fragments: Map<string, string>;
+  /** slug -> name, for followed companies past the fetch cap: listed as links, not checked. */
+  unfetched: Map<string, string>;
+  /** Fragments requested, for the send report. */
+  fetched: number;
 }
 
 /** Weekly Business readers get different content (the week in business), so they group apart. */
@@ -144,17 +165,55 @@ export function groupKey(prefs: Prefs): string {
   return comboKey(prefs) + (weeklyBusiness ? "|weekly" : "");
 }
 
-/** Readers with the same choices share one email. */
-export function groupRecipients(readers: Subscriber[]): Group[] {
+/**
+ * Readers with the same choices share one email. Follows split a group only
+ * when they put something in the email (news today, or a name past the
+ * fetch cap). The full list keys the group internally only: its key says
+ * "|follow" and nothing about which companies, since even a hash of them
+ * could be reversed by trying every subset of the day's followed companies.
+ */
+export function groupRecipients(readers: Subscriber[], follows = new Map<string, string[]>(), following?: Following): Group[] {
   const groups = new Map<string, Group>();
   for (const r of readers) {
-    const key = groupKey(r);
-    const g = groups.get(key) ?? { key, prefs: { categories: r.categories, region: r.region, frequency: r.frequency }, readers: [] };
+    const mine = follows.get(r.token) ?? [];
+    const news = following ? mine.filter((s) => following.fragments.has(s)) : [];
+    const more = following ? mine.filter((s) => following.unfetched.has(s)) : [];
+    const sig = news.length || more.length ? `${news.join(",")}|${more.join(",")}` : "";
+    const id = sig ? `${groupKey(r)}|${sig}` : groupKey(r);
+    const g = groups.get(id) ?? {
+      key: sig ? `${groupKey(r)}|follow` : groupKey(r),
+      prefs: { categories: r.categories, region: r.region, frequency: r.frequency },
+      readers: [],
+      ...(sig ? { follow: { news, more } } : {}),
+    };
     g.readers.push(r);
-    groups.set(key, g);
+    groups.set(id, g);
   }
   return [...groups.values()];
 }
+
+/** Followed companies of the due readers, most followed first, so the fetch cap keeps the most-read ones. */
+export function rankFollows(readers: Subscriber[], follows: Map<string, string[]>): string[] {
+  const count = new Map<string, number>();
+  for (const r of readers) for (const s of follows.get(r.token) ?? []) count.set(s, (count.get(s) ?? 0) + 1);
+  return [...count.keys()].sort((a, b) => count.get(b)! - count.get(a)! || a.localeCompare(b));
+}
+
+// Inline styles matching the category sections (web/src/components/email/theme.ts),
+// repeated here because the Functions bundle cannot import from web/src.
+const FOLLOW_LABEL = "padding:22px 32px 6px;font:700 11px/1.4 Helvetica,Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#9c7420;border-top:1px solid #e7e0cf;";
+const FOLLOW_MORE = "padding:6px 32px 10px;font:13px/1.5 Helvetica,Arial,sans-serif;color:#6b6558;";
+
+/** The reader's Following block: each company's rows, then any followed names not checked today. */
+export function followingBlock(rows: string[], more: { slug: string; name: string }[], site: string): string {
+  if (!rows.length && !more.length) return "";
+  const links = more
+    .map((c) => `<a href="${escapeHtml(`${site}/entity/${c.slug}/`)}" style="color:#1e3fae;text-decoration:none;">${escapeHtml(c.name)}</a>`)
+    .join(" · ");
+  const tail = more.length ? `<tr><td style="${FOLLOW_MORE}">Also following (see their pages for the latest): ${links}</td></tr>` : "";
+  return `<tr><td style="${FOLLOW_LABEL}">Following</td></tr>\n${rows.join("\n")}${tail}`;
+}
+
 
 export function hoursOld(generated: string, now: Date): number {
   // The pipeline stamps local runner time (UTC on GitHub Actions) as "YYYY-MM-DD HH:MM:SS".
@@ -174,6 +233,23 @@ export interface Templates {
 async function fetchPage(env: Env, origin: string, path: string): Promise<string | null> {
   const res = await env.ASSETS!.fetch(new Request(new URL(path, origin)));
   return res.ok ? stripScripts(await res.text()) : null;
+}
+
+/** Fetches up to MAX_FOLLOW_FETCHES fragments, in `ranked` order; followed companies without a page are dropped. */
+export async function loadFollowing(env: Env, origin: string, ranked: string[], followable: Map<string, string>, now: Date): Promise<Following> {
+  const following: Following = { fragments: new Map(), unfetched: new Map(), fetched: 0 };
+  for (const slug of ranked.filter((s) => followable.has(s))) {
+    if (following.fetched >= MAX_FOLLOW_FETCHES) {
+      following.unfetched.set(slug, followable.get(slug)!);
+      continue;
+    }
+    following.fetched++;
+    const html = await fetchPage(env, origin, `/brief/email/follow/${slug}/`);
+    if (!html || hoursOld(readMeta(html, "aura-generated"), now) > MAX_HEADLINE_AGE_HOURS) continue;
+    const rows = extractSection(html);
+    if (rows && !rows.includes("<!--empty-->")) following.fragments.set(slug, rows);
+  }
+  return following;
 }
 
 export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCategory[], now: Date, withWeek = false): Promise<Templates | string> {
@@ -212,7 +288,12 @@ export async function loadTemplates(env: Env, origin: string, wanted: HeadlineCa
  * One group's email, or null when there is nothing fresh to send them.
  * `businessFresh` is false when today's business edition was already sent.
  */
-export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { subject: string; html: string; text: string } | null {
+export function buildFor(
+  prefs: Prefs,
+  t: Templates,
+  businessFresh: boolean,
+  following?: { html: string; hasNews: boolean },
+): { subject: string; html: string; text: string } | null {
   const editions = editionsFor(prefs.region);
   const chosen = headlineCategories(prefs).filter((c) => t.sections[c] && hasHeadlines(t.sections[c]!, editions));
   const sections = chosen.map((c) => filterRegions(t.sections[c]!, editions));
@@ -221,14 +302,17 @@ export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { 
   // else that Monday's brief like everyone else.
   const week = wantsBusiness && prefs.frequency === "weekly" && t.week ? t.week : null;
   const withBusiness = wantsBusiness && !week && businessFresh && t.business;
-  if (!withBusiness && !week && !sections.length) return null;
+  // Names listed past the fetch cap are not news, so they never send an email on their own.
+  const followNews = Boolean(following?.hasNews);
+  if (!withBusiness && !week && !sections.length && !followNews) return null;
   let base = withBusiness ? t.business!.html : t.shell.html;
   if (week) {
     base = replaceMarked(base, "intro", sections.length ? `${WEEK_INTRO}, then the headlines you chose.` : `${WEEK_INTRO}.`);
     base = replaceMarked(base, "source", sections.length ? `${WEEK_SOURCE} ${HEADLINE_SOURCE}` : WEEK_SOURCE);
   }
-  const html = composeEmail(base, week ? [week.rows, ...sections] : sections);
-  const labels = [...(week ? ["The week in business"] : []), ...chosen.map(categoryLabel)];
+  const follow = following?.html ? [following.html] : [];
+  const html = composeEmail(base, [...(week ? [week.rows] : []), ...sections, ...follow]);
+  const labels = [...(week ? ["The week in business"] : []), ...chosen.map(categoryLabel), ...(followNews ? ["Following"] : [])];
   const subject = withBusiness ? t.business!.subject : `${t.shell.subject} · ${listLabels(labels)}`;
   return { subject, html, text: htmlToText(html) };
 }
@@ -303,32 +387,83 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   if (today) return json({ skipped: "send_in_progress_or_incomplete", day }, 409);
 
   const due = (await subscriberStore(env.DB).recipients()).filter((r) => isDue(r.frequency, now));
-  const groups = groupRecipients(due);
+  // Follows are an extra: if they cannot be read (migration 0007 not applied
+  // yet), the brief still goes out without a Following block, and the report says why.
+  let follows = new Map<string, string[]>();
+  let followError = "";
+  try {
+    follows = await followStore(env.DB).forRecipients();
+    // The follow form only purges its throttle rows when it is used again, so
+    // the daily send purges too: addresses typed there are gone within a day.
+    if (!dryRun) await followRequests(env.DB).purge(now);
+  } catch (err) {
+    followError = `follows not read: ${(err as Error).message}`;
+  }
+  const ranked = rankFollows(due, follows);
+  const following = ranked.length
+    ? await loadFollowing(env, url.origin, ranked, await loadFollowable(env, url.origin), now)
+    : { fragments: new Map<string, string>(), unfetched: new Map<string, string>(), fetched: 0 };
+  const groups = groupRecipients(due, follows, following);
   const wanted = [...new Set(groups.flatMap((g) => headlineCategories(g.prefs)))];
-  const weekly = groups.some((g) => g.key.endsWith("|weekly"));
+  const weekly = groups.some((g) => groupKey(g.prefs).endsWith("|weekly"));
   const t = await loadTemplates(env, url.origin, wanted, now, weekly);
   if (typeof t === "string") return json({ error: t }, 500);
   const edition = t.business!.edition;
   const sentOn = await log.sentOn(edition);
   const businessFresh = !sentOn;
 
-  const plan = groups.map((g) => ({ group: g, mail: buildFor(g.prefs, t, businessFresh) }));
+  const followFor = (g: Group) =>
+    g.follow && {
+      html: followingBlock(
+        g.follow.news.map((s) => following.fragments.get(s)!),
+        g.follow.more.map((slug) => ({ slug, name: following.unfetched.get(slug)! })),
+        site,
+      ),
+      hasNews: g.follow.news.length > 0,
+    };
+  const plan = groups.map((g) => ({ group: g, mail: buildFor(g.prefs, t, businessFresh, followFor(g)) }));
   const sending = plan.filter((p) => p.mail);
   const recipients = sending.reduce((n, p) => n + p.group.readers.length, 0);
+  // scripts/send_brief.sh prints this report to the public Actions log and
+  // job summary. A group with follows can be one reader, so those groups are
+  // only counted: listing their mix would tie that reader's topics, region
+  // and frequency to the companies in with_news.
+  const followGroups = plan.filter((p) => p.group.follow);
   const summary = {
     day,
     edition,
     business_fresh: businessFresh,
     headline_sections: Object.keys(t.sections),
     week_in_business: Boolean(t.week),
+    // Counts and public company slugs only: never who follows what.
+    following: {
+      followed: ranked.length,
+      fetched: following.fetched,
+      with_news: [...following.fragments.keys()],
+      listed_only: following.unfetched.size,
+      groups: followGroups.length,
+      readers: followGroups.reduce((n, p) => n + p.group.readers.length, 0),
+      ...(followError ? { error: followError } : {}),
+    },
     recipients,
     skipped_readers: due.length - recipients,
-    groups: plan.map((p) => ({ mix: p.group.key, readers: p.group.readers.length, subject: p.mail?.subject ?? null })),
+    groups: plan
+      .filter((p) => !p.group.follow)
+      .map((p) => ({ mix: p.group.key, readers: p.group.readers.length, subject: p.mail?.subject ?? null })),
   };
 
   if (dryRun) return json({ dry_run: true, subject: t.business!.subject, ...summary });
+  // A housekeeping failure (say, migration 0004 not applied yet) is
+  // reported, never turned into a failed send.
+  const tidy = (briefRecipients: number) =>
+    housekeep(env, site, now, briefRecipients).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
   if (!recipients) {
-    return json(sentOn ? { skipped: "edition_already_sent", edition, sent_on: sentOn } : { skipped: "nothing_to_send", ...summary });
+    // Nobody due (launch day, or a weekday when every reader is weekly):
+    // the clean-up still runs, or reminders miss their 48-72 hour window and
+    // IP counts outlive their day. Safe on a retry: a reminder moves the
+    // reader's mail_day on, and the deletes are idempotent.
+    const housekeeping = await tidy(0);
+    return json(sentOn ? { skipped: "edition_already_sent", edition, sent_on: sentOn, housekeeping } : { skipped: "nothing_to_send", ...summary, housekeeping });
   }
 
   await log.start(day, edition, now.toISOString());
@@ -343,9 +478,8 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   );
   const { sent, failed } = result;
   await log.finish(day, sent, failed, new Date().toISOString());
-  // The brief has gone and is logged; a housekeeping failure (say, migration
-  // 0004 not applied yet) is reported, not turned into a failed send.
-  const housekeeping = await housekeep(env, site, now, recipients).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
+  // The brief has gone and is logged; now the clean-up.
+  const housekeeping = await tidy(recipients);
 
   const body = { ...summary, sent, failed, housekeeping, ...(result.error ? { error: result.error } : {}) };
   return json(body, failed && !sent ? 502 : 200);

@@ -1,0 +1,50 @@
+---
+/**
+ * One followed company's new reporting, as rows for the Morning Brief
+ * email. /api/send-brief reads the rows between the aura:section markers
+ * and puts them in the reader's "Following" block. "New" means since the
+ * last emailed edition (digests/last_edition.json), else the last 24 hours.
+ * A company with nothing new carries <!--empty-->, so the sender leaves it
+ * out. Not a page anyone visits.
+ */
+import * as data from "../../../../lib/data.ts";
+import { companyNews, editionWindow, followableCompanies, type EditionMarker } from "../../../../lib/follow.ts";
+import { siteEntities } from "../../../../lib/site-entities.ts";
+import { ink, muted, royal, sans, serif } from "../../../../components/email/theme.ts";
+
+export function getStaticPaths() {
+  return followableCompanies(siteEntities()).map((c) => ({ params: { slug: c.slug }, props: c }));
+}
+
+const { slug, name } = Astro.props as { slug: string; name: string };
+const MAX = 5;
+const now = new Date();
+const fresh = editionWindow(data.articles(), data.readJson<EditionMarker | null>("digests/last_edition.json", null), now);
+const items = companyNews(name, fresh, MAX);
+const site = (Astro.site?.toString() ?? "https://auranews.pages.dev/").replace(/\/$/, "") + import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const sub = `padding:12px 32px 2px;font:700 13px/1.4 ${sans};color:${ink};`;
+const marker = (text: string) => `<!--${text}-->`;
+---
+<meta name="robots" content="noindex" />
+<meta name="aura-generated" content={now.toISOString()} />
+<table role="presentation">
+<Fragment set:html={marker("aura:section")} />
+<tr><td style={sub}>{name}</td></tr>
+{items.length ? items.map((s) => (
+  <tr><td style="padding:6px 32px;">
+    <a href={s.url} style={`font:600 15px/1.4 ${serif};color:${ink};text-decoration:none;`}>{s.title}</a>
+    <div style={`font:12px/1.4 ${sans};color:${muted};margin-top:2px;`}>{s.publisher}</div>
+  </td></tr>
+)) : (
+  <>
+    <Fragment set:html={marker("empty")} />
+    <tr><td style={`padding:6px 32px;font:13px/1.5 ${sans};color:${muted};`}>No new reporting since the last brief.</td></tr>
+  </>
+)}
+<tr><td style={`padding:4px 32px 8px;font:12px/1.5 ${sans};color:${muted};`}>
+  <a href={`${site}/entity/${slug}/`} style={`color:${royal};text-decoration:none;font-weight:600;`}>More on {name} ↗</a>
+  {" · "}<a href="{{preferences_url}}" style={`color:${muted};`}>Unfollow {name}</a>
+</td></tr>
+<Fragment set:html={marker("/aura:section")} />
+</table>

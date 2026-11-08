@@ -1,7 +1,9 @@
 /**
  * Every entity the site builds a page for, joined once from the exports.
- * The entity page, its Markdown export and its feed all read this, so the
- * three always describe the same entities from the same published rows.
+ * The entity page, its Markdown export, its feed and the Follow by email
+ * pages all read this, so they always describe the same entities from the
+ * same published rows (the register only through data.psc(), the
+ * publishing gate).
  */
 import * as data from "./data.ts";
 import { groupHoldings } from "./psc.ts";

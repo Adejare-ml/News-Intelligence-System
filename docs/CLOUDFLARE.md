@@ -180,13 +180,27 @@ use up the provider's daily quota:
   minutes, and that try does not count against the address.
 - Confirmation and unsubscribe links do nothing until the button on the
   page is pressed, so mail scanners that open every link change nothing.
+- The **"Get updates by email" form** on company pages (`/api/follow`)
+  sends mail too, so it has the same limits. An address gets at most one
+  follow email per 10 minutes and three per Lagos day: an address on the
+  list shares its three with the sign-up mails above, and any other address
+  is counted in `throttle` under `follow:<SHA-256 of the address>`, never
+  the address itself. Past that the form answers as usual but sends
+  nothing. Its posts count against the same **20 per IP per Lagos day** as
+  sign-ups (one budget for both forms), after which it gets "Too many
+  requests from here today." Together these keep a script from flooding one
+  inbox or spending the provider's daily quota before the Morning Brief.
 
-**Housekeeping** runs after each day's real send: pending sign-ups not
-mailed for 30 days are deleted, and pending sign-ups 48-72 hours old that
-have had only their first mail get one reminder (at most 20 a run, within
-the limits above; on Gmail, only from what the brief left of the 450 a
-day). The send's JSON result reports the counts under
-`housekeeping`.
+**Housekeeping** runs after each day's real send, and also on a real call
+that finds nobody to send to (`nothing_to_send` or `edition_already_sent`:
+launch day with no confirmed readers, or Tuesday to Sunday when every reader
+is weekly): pending sign-ups not mailed for 30 days are deleted, pending
+sign-ups 48-72 hours old that have had only their first mail get one
+reminder (at most 20 a run, within the limits above; on Gmail, only from
+what the brief left of the 450 a day), and earlier days' counts in
+`throttle` (IP addresses, hashed follow-form addresses) are deleted. A
+retry the same day reminds nobody twice. The send's JSON result reports
+the counts under `housekeeping`.
 
 **1. Pick a provider.**
 
@@ -226,6 +240,19 @@ functions read the `categories`, `region`, `frequency` and `paused` columns.
 **Apply 0004 before deploying the version with sign-up limits**: sign-ups
 read and write `last_mailed_at`, `mail_day`, `mails_today` and the
 `throttle` table, and fail without them.
+
+**Apply 0007 before deploying Follow by email**
+(`npx wrangler d1 execute aura --remote --file=web/migrations/0007_follows.sql`).
+It adds `follows` (the companies each reader follows, by token, at most 20)
+and `follow_requests` (throttles the "Get updates by email" form on company
+pages to one email per address every 10 minutes; rows older than a day are
+deleted). Without it the follow form and follow buttons fail, the
+preferences page shows topics only, and the brief goes out with no Following block (its send report says
+`following.error`). It only creates new tables, so it is safe to apply at
+any time, before or after 0004 to 0006. The follow form's daily limits
+(three emails per address, 20 posts per IP; see **Sign-up limits** above)
+need no table of their own: they use 0004's mail columns and `throttle`
+table, so the form needs 0004 applied as well.
 
 (or paste each file into the D1 console). Then **Pages project → Settings
 → Bindings → Add → D1 database**: variable `DB`, database `aura`.

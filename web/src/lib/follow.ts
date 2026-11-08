@@ -1,12 +1,18 @@
 /**
- * "Follow" on company pages, kept in this browser only (localStorage). Pure
- * helpers for the client script (scripts/follow.ts), so the matching is
- * tested here and the script only does storage and the DOM.
+ * Following companies, two ways:
+ *  - "Follow" on company pages, kept in this browser only (localStorage). Pure
+ *    helpers for the client script (scripts/follow.ts), so the matching is
+ *    tested here and the script only does storage and the DOM.
+ *  - Follow by email, build side: which companies can be followed and what
+ *    counts as new reporting on one for the next Morning Brief. The pages
+ *    under /brief/email/follow/ use these; /api/send-brief reads those pages.
  */
-import { articleMentions, mentions } from "./entities.ts";
+import { articleMentions, isKnownCompany, mentions, type Entity } from "./entities.ts";
 import { nameKey, slugify } from "./entity-key.ts";
 import { cleanAlerts, type RawAlert } from "./alerts.ts";
-import { cleanTitle, parseTime, type Article } from "./stories.ts";
+import { cleanTitle, parseTime, toStory, type Article, type Story } from "./stories.ts";
+
+/* ---------- Follow in this browser ---------- */
 
 export interface Follow {
   slug: string;
@@ -102,4 +108,48 @@ export function hasNewFollowedAlert(alerts: FollowAlert[], follows: Follow[], re
     const id = cleanAlerts([a])[0]?.id;
     return id !== undefined && shown.has(id) && !read.has(id) && follows.some((f) => alertMentions(a, f.name));
   });
+}
+
+/* ---------- Follow by email (build side) ---------- */
+
+/** data/digests/last_edition.json, written after each send (scripts/record_sent_edition.py). */
+export interface EditionMarker {
+  through_id?: unknown;
+}
+
+const DAY_MS = 24 * 3_600_000;
+
+/**
+ * Articles the next brief has not carried yet: newer than the last emailed
+ * edition when the marker says where it ended, else the last 24 hours.
+ */
+export function editionWindow(articles: Article[], marker: EditionMarker | null, now: Date): Article[] {
+  const through = Number(marker?.through_id);
+  if (marker?.through_id !== undefined && Number.isFinite(through)) {
+    return articles.filter((a) => Number(a.ID) > through);
+  }
+  return articles.filter((a) => {
+    const t = parseTime(a.Time);
+    return t !== null && now.getTime() - t.getTime() <= DAY_MS;
+  });
+}
+
+/** One company's stories in `articles`, newest first, one per link. */
+export function companyNews(name: string, articles: Article[], max: number): Story[] {
+  const seen = new Set<string>();
+  return articles
+    .filter((a) => articleMentions(a, name))
+    .map(toStory)
+    .sort((x, y) => (y.published?.getTime() ?? 0) - (x.published?.getTime() ?? 0))
+    .filter((s) => (seen.has(s.url) ? false : (seen.add(s.url), true)))
+    .slice(0, max);
+}
+
+/**
+ * Companies only: a reader follows businesses, never a person. kind
+ * "company" is not enough, since the pipeline files often-mentioned people
+ * ("Tinubu") under Company Info too, so this takes isKnownCompany's test.
+ */
+export function followableCompanies(entities: Entity[]): { slug: string; name: string }[] {
+  return entities.filter(isKnownCompany).map((e) => ({ slug: e.slug, name: e.name }));
 }

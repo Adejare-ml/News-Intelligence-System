@@ -18,6 +18,7 @@ import { siteEntities } from "../../lib/site-entities.ts";
 import { entitySummary, formatDay as fmt } from "../../lib/entity-export.ts";
 import { logoFor } from "../../lib/logos.ts";
 import { entityMeta, organizationLd } from "../../lib/seo.ts";
+import FollowForm from "../../components/FollowForm.astro";
 
 export function getStaticPaths() {
   return siteEntities().map((entity) => ({ params: { slug: entity.slug }, props: { entity } }));
@@ -49,7 +50,8 @@ const structuredData = !isCompany ? undefined : organizationLd({
   description={meta.description}
   structuredData={structuredData}
 >
-  {!isPerson && <link slot="head" rel="alternate" type="application/rss+xml" title={`AURA · ${e.name}`} href={href(`entity/${e.slug}/feed.xml`)} />}
+  {/* The same test as feed.xml's paths (entityFeeds), so the link never points at a missing feed. */}
+  {isCompany && <link slot="head" rel="alternate" type="application/rss+xml" title={`AURA · ${e.name}`} href={href(`entity/${e.slug}/feed.xml`)} />}
   <section class="wrap head">
     <a class="back link" href={href("register/")}><span aria-hidden="true">←</span> Register</a>
     <p class="eyebrow kind">{isPerson ? `Person or holder · at ${e.company}` : "Company or body"}{e.industry && ` · ${e.industry}`}</p>
@@ -152,6 +154,9 @@ const structuredData = !isCompany ? undefined : organizationLd({
       <OfficialLinks company={e.name} />
     </section>
   )}
+
+  {/* Known companies only, as followableCompanies: readers follow businesses by email, never a person. */}
+  {isCompany && <FollowForm slug={e.slug} name={e.name} />}
 
   <section class="wrap block">
     <a class="btn btn-ghost" href={href(`register/?q=${encodeURIComponent(e.name)}`)}>
