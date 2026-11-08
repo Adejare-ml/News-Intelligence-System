@@ -1,8 +1,18 @@
+import { href } from "./url.ts";
+
 /**
- * Where a named person or company can ask for a correction or removal.
- * Set PUBLIC_CORRECTIONS_URL at build time to use an email form or a
- * mailto: address; by default it opens a pre-filled issue on the public
- * repository.
+ * Where a named person or company asks for a correction or removal: the
+ * private dispute form, with the record it is about filled in from ?ref=.
+ */
+export function disputeUrl(ref = ""): string {
+  return href(ref ? `dispute/?ref=${encodeURIComponent(ref)}` : "dispute/");
+}
+
+/**
+ * Where the dispute form sends people when the site has no Functions to
+ * receive it (the GitHub Pages mirror). Set PUBLIC_CORRECTIONS_URL at build
+ * time to use an email form or a mailto: address; by default it opens a
+ * pre-filled issue on the public repository, which anyone can read.
  */
 const DEFAULT = "https://github.com/Adejare-ml/News-Intelligence-System/issues/new";
 

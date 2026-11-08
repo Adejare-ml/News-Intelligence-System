@@ -177,6 +177,21 @@ try {
       leaks.push(`/data/${file}: missing from the copy, so this check proves nothing there`);
     }
   }
+  // Someone named here who asks for a correction must reach the private
+  // dispute form, never a pre-filled public GitHub issue.
+  const correctionPages = ["register/index.html", "how-it-works/index.html",
+    ...readdirSync(join(out, "entity")).map((n) => `entity/${n}/index.html`)];
+  for (const page of correctionPages) {
+    let html = "";
+    try {
+      html = readFileSync(join(out, page), "utf-8");
+    } catch {
+      continue;
+    }
+    if (html.includes("github.com/Adejare-ml/News-Intelligence-System/issues/new")) {
+      leaks.push(`/${page}: asks for corrections through a public GitHub issue, not /dispute/`);
+    }
+  }
   walk(out);
 
   if (leaks.length) {

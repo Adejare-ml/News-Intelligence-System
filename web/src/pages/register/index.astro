@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import HoldingCard from "../../components/HoldingCard.astro";
-import { correctionUrl } from "../../lib/corrections.ts";
+import { disputeUrl } from "../../lib/corrections.ts";
 import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
@@ -61,7 +61,7 @@ const filters = [
     <p class="note">
       Every card is a claim reported in the news, not a CAC filing, and is published only with a link to
       the article behind it. Named in a card and think it is wrong?
-      <a class="link" href={correctionUrl("register")} rel="noopener noreferrer" target="_blank">Ask for a correction or removal</a>.
+      <a class="link" href={disputeUrl("register")}>Ask for a correction or removal</a>.
     </p>
     {s.isDemo && (
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>
