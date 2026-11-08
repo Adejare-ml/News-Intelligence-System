@@ -740,7 +740,7 @@ def _strip_citations(text: str) -> str:
         return trimmed
 
 
-def clean_brief(md: str, records: Iterable[Dict[str, Any]]) -> str:
+def clean_brief(md: str, records: Iterable[Dict[str, Any]], withheld: Iterable[Any] = ()) -> str:
     """Make the model's brief safe to publish and send, by rule:
 
     - every bullet cites one of the day's articles: a {source: X} tag is
@@ -750,10 +750,14 @@ def clean_brief(md: str, records: Iterable[Dict[str, Any]]) -> str:
       Critical (the model sometimes files medium-risk items there);
     - sport and celebrity stories are dropped;
     - each article appears once: a story listed in a specific section is
-      not repeated under "Key Developments".
+      not repeated under "Key Developments";
+    - the ownership section drops a bullet naming, in full, anyone in
+      `withheld` (people on holdings the publish gate held back), should the
+      model rebuild such a holding from an article's summary.
     """
     recs = [r for r in records or [] if str(r.get("url") or r.get("URL") or "").startswith("http")]
     by_url = {str(r.get("url") or r.get("URL")): r for r in recs}
+    hidden = [canonical_person(w) for w in withheld or () if _clean(w)]
 
     def find(line: str) -> Optional[Dict[str, Any]]:
         for url in _URL_RE.findall(line):
@@ -785,12 +789,17 @@ def clean_brief(md: str, records: Iterable[Dict[str, Any]]) -> str:
     def is_alert(title: str) -> bool:
         return "risk" in title.lower() or "alert" in title.lower()
 
+    def is_ownership(title: str) -> bool:
+        return "ownership" in title.lower() or "psc" in title.lower()
+
     cleaned: List[Dict[str, Any]] = []
     for block in blocks:
         items = []
         for line in block["lines"]:
             if not _ITEM_RE.match(line):
                 items.append((line, None))
+                continue
+            if is_ownership(block["title"]) and any(_mentions(line, h) for h in hidden):
                 continue
             rec = find(line)
             if rec is None:

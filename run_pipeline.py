@@ -459,7 +459,11 @@ def run_pipeline(seed: bool = False):
             "title": title,
             "source": source,
             "url": url,
-            "analysis": analysis
+            "analysis": analysis,
+            # What the extraction read, as this story's register rows below
+            # record it, so the brief holds back the holdings the publish
+            # gate holds back (gate_report_holdings).
+            "basis": db_article.get("Basis") or register_quality.basis_for_detail(db_article.get("Detail")),
         })
         
         # Write Organizations/Companies
@@ -645,6 +649,48 @@ from backend.app.pipeline.report import (  # noqa: E402,F401  (re-export)
     report_payload,
 )
 
+def gate_report_holdings(records: List[Dict[str, Any]]):
+    """(records, withheld): each record with only the holdings the publish
+    gate would publish, and the people named on the holdings it held back.
+
+    The brief states every holder it is given, and report_latest.md, the
+    home page's ownership aside and the brief archives publish it, so a
+    holding the gate keeps off the register (a person named on headline-only
+    reporting, an unsourced or implausible claim) never reaches the model.
+    Each holding is judged as the register row the write loop makes of it.
+    The input records are not changed.
+    """
+    gated, withheld = [], []
+    for record in records or []:
+        analysis = record.get("analysis") or {}
+        holdings = analysis.get("significant_control")
+        if not holdings:
+            gated.append(record)
+            continue
+        kept = []
+        for psc in holdings:
+            if not isinstance(psc, dict):
+                continue
+            row = register_quality.annotate([{
+                "Person Name": psc.get("name") or "",
+                "Company": psc.get("organization") or "",
+                "Nature of Control": psc.get("nature_of_control") or "",
+                "Board Role": psc.get("board_role") or "",
+                "Percentage": psc.get("percentage") or "",
+                "Intermediate Entities": psc.get("intermediate_entities") or "Direct Holding",
+                "Regulatory Filing Ref": psc.get("regulatory_filing_ref") or "",
+                "Previous Holder": psc.get("previous_holder") or "",
+                "Source URL": record.get("url") or "",
+                "Basis": record.get("basis") or "",
+            }])[0]
+            if register_quality.is_public(row):
+                kept.append(psc)
+            else:
+                withheld.append(row)
+        gated.append({**record, "analysis": {**analysis, "significant_control": kept}})
+    return gated, register_quality.withheld_names(withheld)
+
+
 def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None,
                          cascade_failures: int = 0, run_seconds: int = None,
                          rejected: int = None):
@@ -683,7 +729,9 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
     # The model sees the whole day -- this run's full analyses plus the
     # reduced records of what earlier runs already published -- wrapped with
     # the date and coverage window the prompt declares authoritative.
-    day_records = records + prior_today
+    # Holdings the publish gate withholds are removed first: the brief is
+    # public and names every holder it is given.
+    day_records, withheld_names = gate_report_holdings(records + prior_today)
     raw_json_str = json.dumps({
         "report_date": today_str,
         "coverage": f"All articles published on {today_str} up to {now.strftime('%H:%M')} (run {runs_today} of the day)",
@@ -721,8 +769,9 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         # article's own title, and repeated bullets are dropped.
         generated_md = register_quality.qa_brief_headlines(generated_md, day_records)
         # Then by rule: every bullet cites an article, alerts are only High
-        # or Critical, no sport or celebrity items, each story once.
-        generated_md = register_quality.clean_brief(generated_md, day_records)
+        # or Critical, no sport or celebrity items, each story once, and the
+        # ownership section names no one whose holding the gate withheld.
+        generated_md = register_quality.clean_brief(generated_md, day_records, withheld_names)
         md = f"""{header}
 {generated_md}
 

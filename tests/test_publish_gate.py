@@ -202,3 +202,133 @@ class TestChangesFeed:
         changes = compute_cycle_changes({"psc": prev}, {"psc": q.public_rows(checked)})
         assert changes["psc_removed"] == [{"person": "Heirs Holdings Limited", "company": "Transcorp"}]
         assert "Musa" not in str(changes)
+
+
+def story(url, holder, company, basis, **psc):
+    """One run record as run_pipeline hands it to compile_daily_report."""
+    return {
+        "title": f"{holder} takes a stake in {company}", "source": "Punch", "url": url,
+        "basis": basis,
+        "analysis": {
+            "summary": f"{holder} disclosed a 12% stake in {company}.", "risk_level": "Medium",
+            "significant_control": [dict({"name": holder, "organization": company,
+                                          "percentage": "12%",
+                                          "nature_of_control": "Ownership of shares"}, **psc)],
+        },
+    }
+
+
+class TestDailyBrief:
+    """The brief is public too: report_latest.md, the home page's ownership
+    aside, /brief/ and every archive. Its ownership section names every
+    holder the model is given, so it is given only what the register shows."""
+
+    def compile(self, tmp_path, monkeypatch, records, md=""):
+        import json
+
+        import run_pipeline as rp
+        from backend.app.services.llm import LLMService
+
+        class Db:
+            def get_daily_reports(self):
+                return []
+
+            def add_daily_report(self, row):
+                pass
+
+        sent = []
+
+        def generate(cls, raw):
+            sent.append(json.loads(raw))
+            return md, "test"
+
+        monkeypatch.setattr(rp, "db", Db())
+        monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+        monkeypatch.setattr(LLMService, "generate_daily_report", classmethod(generate))
+        rp.compile_daily_report(records)
+        return sent[0], (tmp_path / "report_latest.md").read_text(encoding="utf-8")
+
+    RECORDS = [
+        story("https://punchng.com/kano-flour/", "Abubakar Musa", "Kano Flour Mills Plc", "headline"),
+        story("https://punchng.com/transcorp/", "Heirs Holdings Limited", "Transcorp Plc", "headline"),
+        story("https://punchng.com/lagos-foods/", "Ada Obi", "Lagos Foods Plc", "article"),
+        story("https://punchng.com/sahel/", "Dangote Industries Ltd", "Sahel Mills Plc", "headline",
+              previous_holder="Bola Adeyemi"),
+    ]
+
+    def test_a_headline_only_person_holding_never_reaches_the_model(self, tmp_path, monkeypatch):
+        payload, _ = self.compile(tmp_path, monkeypatch, self.RECORDS)
+        holders = [h["name"] for a in payload["articles"] for h in a["analysis"]["significant_control"]]
+        # A company holding another company is no claim about a person, and
+        # the full article supports a person; a person named on a headline
+        # alone, as holder or previous holder, is held back as on the register.
+        assert holders == ["Heirs Holdings Limited", "Ada Obi"]
+        assert "Adeyemi" not in str([a["analysis"]["significant_control"] for a in payload["articles"]])
+        assert self.RECORDS[0]["analysis"]["significant_control"], "the run's records are left alone"
+
+    def test_the_ownership_section_never_names_a_withheld_holder(self, tmp_path, monkeypatch):
+        # The model is told not to rebuild a removed holding from the
+        # summary; this is the rule that holds when it does anyway.
+        md = ("### Beneficial Ownership & PSC Disclosures\n"
+              "- **Abubakar Musa** holds 12% of Kano Flour Mills Plc "
+              "([Punch](https://punchng.com/kano-flour/))\n"
+              "- **Heirs Holdings Limited** holds 12% of Transcorp Plc "
+              "([Punch](https://punchng.com/transcorp/))\n")
+        _, brief = self.compile(tmp_path, monkeypatch, self.RECORDS, md=md)
+        assert "Musa" not in brief
+        assert "Heirs Holdings Limited" in brief
+
+    def test_the_prompt_says_withheld_holdings_were_removed(self):
+        from backend.app.services.llm import build_report_prompt
+        prompt = build_report_prompt("{}")
+        assert "significant_control" in prompt
+        assert "never rebuild" in prompt.lower()
+
+
+def run_story(tmp_path, monkeypatch, text, analysis):
+    """Run the pipeline over one collected story the model answers with
+    `analysis`; return the records it hands the brief and the register
+    rows it wrote."""
+    import run_pipeline as rp
+    from backend.app.db.excel_db import SheetsDatabase
+    from backend.app.services.ingestion import NewsIngestionService
+    from backend.app.services.llm import LLMService
+
+    d = SheetsDatabase()
+    d.use_local = True
+    d.local_path = str(tmp_path / "run.xlsx")
+    d._cache = {}
+    d._init_db()
+    monkeypatch.setattr(rp, "db", d)
+    monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(rp, "EVAL_CAPTURE_RATE", 0)
+    monkeypatch.setattr(NewsIngestionService, "collect_all", classmethod(lambda cls: [
+        {"title": "Abubakar Musa buys 12% of Kano Flour Mills", "source": "Punch",
+         # A host that never resolves: nothing here may be fetched.
+         "url": "https://kano-flour.invalid/story", "raw_text": text}]))
+    monkeypatch.setattr(LLMService, "analyze_article",
+                        classmethod(lambda cls, t, x: dict(analysis)))
+    records = []
+    monkeypatch.setattr(rp, "compile_daily_report", lambda recs, *a, **k: records.extend(recs))
+    monkeypatch.setattr(rp, "export_static_json_database", lambda: None)
+    monkeypatch.setattr("time.sleep", lambda s: None)
+    rp.run_pipeline()
+    return records, d.get_significant_control()
+
+
+class TestRunRecordBasis:
+    ANALYSIS = {
+        "relevant": True, "engine": "claude", "category": "Business", "risk_score": 40,
+        "summary": "Abubakar Musa bought 12% of Kano Flour Mills Plc.",
+        "significant_control": [{"name": "Abubakar Musa", "organization": "Kano Flour Mills Plc",
+                                 "percentage": "12%"}],
+    }
+
+    def test_a_record_carries_the_basis_its_register_rows_carry(self, tmp_path, monkeypatch):
+        for text, basis in (("Abubakar Musa bought 12% of Kano Flour Mills Plc.", "headline"),
+                            ("Abubakar Musa bought 12% of Kano Flour Mills Plc. " * 40, "article")):
+            out = tmp_path / basis
+            out.mkdir()
+            records, rows = run_story(out, monkeypatch, text, self.ANALYSIS)
+            assert [r.get("basis") for r in records] == [basis]
+            assert [r.get("Basis") for r in rows] == [basis]
