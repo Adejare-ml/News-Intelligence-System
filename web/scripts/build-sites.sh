@@ -39,4 +39,7 @@ if [ "$SITES" = "both" ] || [ "$SITES" = "github" ]; then
   touch out/github/.nojekyll
 fi
 
+# Every sent edition has a public page with no personal links on it.
+node scripts/check-brief-archive.mjs
+
 echo "built ($SITES):$( [ -d out/cloudflare ] && echo " out/cloudflare ($(find out/cloudflare -name '*.html' | wc -l) pages)")$( [ -d out/github ] && echo " out/github")"

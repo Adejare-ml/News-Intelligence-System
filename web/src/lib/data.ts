@@ -6,7 +6,7 @@
  * hidden because a request failed. Each pipeline run commits new data, and
  * that commit triggers a rebuild.
  */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import type { Article } from "./stories.ts";
 import type { CompanyRow, PersonMove } from "./entities.ts";
@@ -41,6 +41,21 @@ export function readJson<T>(name: string, fallback: T): T {
 export function readText(name: string): string {
   const path = resolve(DATA_DIR, name);
   return existsSync(path) ? readFileSync(path, "utf-8") : "";
+}
+
+/**
+ * Every file in digests/ (sent Morning Brief editions), parsed, without the
+ * items that name an unpublished entity (as emailDigest below); lib/morning.ts
+ * decides which are editions.
+ */
+export function sentDigests(): unknown[] {
+  const dir = resolve(DATA_DIR, "digests");
+  if (!existsSync(dir)) return [];
+  const names = hidden();
+  return readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => {
+    const raw = readJson<unknown>(`digests/${f}`, null);
+    return raw && typeof raw === "object" && !Array.isArray(raw) ? scrubDigest(raw as Record<string, unknown>, names) : raw;
+  });
 }
 
 /**

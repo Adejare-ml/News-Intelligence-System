@@ -9,17 +9,25 @@
  * name. Nothing here is per-recipient except {{unsubscribe_url}} and
  * {{preferences_url}}; the reader's chosen category sections go in at
  * SECTIONS_SLOT when the brief is sent.
+ *
+ * `web` renders the same edition for the public archive (/brief/morning/):
+ * no "View in browser" link (it is the browser copy), a link to the private
+ * dispute form in place of "Reply to this email" (there is no inbox to reply
+ * from), and a sign-up link where the email has the reader's personal
+ * unsubscribe and topic links.
  */
 import type { EmailDigest } from "../../lib/digest.ts";
 import Card from "./DigestCard.astro";
 import { plural } from "../../lib/digest.ts";
+import { viewInBrowserUrl } from "../../lib/morning.ts";
 import { ink, muted, soft, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } from "./theme.ts";
 
 interface Props {
   digest: EmailDigest;
   site: string;
+  web?: boolean;
 }
-const { digest: d, site } = Astro.props;
+const { digest: d, site, web = false } = Astro.props;
 
 
 const s = d.stats;
@@ -51,7 +59,8 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
   <tr><td align="center" style="padding:24px 12px;">
     <Fragment set:html={msoOpen} />
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fffcf4;border-radius:14px;">
-      <tr><td style={`padding:32px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>AURA · THE MORNING BRIEF</td></tr>
+      {!web && <tr><td align="right" style={`padding:14px 32px 0;${small}font-size:12px;`}><a href={viewInBrowserUrl(site, d)} style={`color:${muted};`}>View in browser</a></td></tr>}
+      <tr><td style={`padding:${web ? 32 : 14}px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>AURA · THE MORNING BRIEF</td></tr>
       <tr><td style={`padding:0 32px;font:500 30px/1.15 ${serif};color:${ink};`}>{d.date}</td></tr>
       <tr><td style={`padding:10px 32px 4px;${small}`}>
         {s.stories > 0
@@ -134,14 +143,17 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
         AURA reads Nigerian news outlets four times a day. An AI model extracts what each report says, and rules
         check each line against its source and drop anything that does not match. Facts are as reported by the
         outlet named, not independently verified. Lines marked AURA analysis are interpretation. Ownership items
-        are press reports, not CAC records. Spot an error? Reply to this email.
+        are press reports, not CAC records. Spot an error?{" "}
+        {web ? <a href={`${site}/dispute/?ref=${encodeURIComponent(`Morning Brief ${d.edition}`)}`} style={link}>Request a correction</a> : "Reply to this email"}.
         <br /><br />
         {d.engines.extraction.length > 0 && <>Engine: extraction {d.engines.extraction.join(", ")}{d.engines.digest ? ` · overview ${d.engines.digest}` : " · overview from stored text"}<br /></>}
         <a href={`${site}/brief/`} style={link}>Full brief, archive and registers ↗</a>
         <br />
-        You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.{" "}
-        <a href="{{preferences_url}}" style={`color:${muted};`}>Change topics</a>{" · "}
-        <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.
+        {web ? <a href={`${site}/brief/#subscribe`} style={link}>Sign up for the Morning Brief ↗</a> : <>
+          You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.{" "}
+          <a href="{{preferences_url}}" style={`color:${muted};`}>Change topics</a>{" · "}
+          <a href="{{unsubscribe_url}}" style={`color:${muted};`}>Unsubscribe</a>.
+        </>}
       </td></tr>
     </table>
     <Fragment set:html={msoClose} />
