@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /img
+Disallow: /News-Intelligence-System/brief/email/
 
 Sitemap: https://adejare-ml.github.io/News-Intelligence-System/sitemap.xml
