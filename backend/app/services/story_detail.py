@@ -17,6 +17,7 @@ FACT_SEPARATOR = " | "
 MAX_FACTS = 4
 MAX_FACT_CHARS = 200
 MAX_WHY_CHARS = 320
+MAX_QUOTE_CHARS = 200
 
 _PLACEHOLDERS = {"", "null", "none", "n/a", "na", "unknown", "-"}
 _SPACES = re.compile(r"\s+")
@@ -512,19 +513,36 @@ def _content(text: str) -> set:
     return {_stem(w) for w in re.findall(r"[a-z0-9₦$%.]+", (text or "").lower()) if w not in _STOPWORDS and len(w) > 2}
 
 
-def extractive(line: str, source: str, threshold: float = 0.75) -> bool:
-    """The line restates one source sentence: most of its words are in that
-    sentence, and it keeps that sentence's "not", "denies" or "cleared of"
-    (and adds none of its own)."""
+def source_sentence(line: str, source: str, threshold: float = 0.75) -> str:
+    """The source sentence the line restates, or "": most of the line's words
+    are in that sentence, and it keeps that sentence's "not", "denies" or
+    "cleared of" (and adds none of its own)."""
     words = _content(line)
     if not words:
-        return False
+        return ""
     for sentence in _sentences(source):
         if len(words & _content(sentence)) / len(words) < threshold:
             continue
         if all(bool(p.search(line)) == bool(p.search(sentence)) for p in _POLARITY):
-            return True
-    return False
+            return sentence
+    return ""
+
+
+def extractive(line: str, source: str, threshold: float = 0.75) -> bool:
+    """The line restates one source sentence (see source_sentence)."""
+    return bool(source_sentence(line, source, threshold))
+
+
+def quote(source_text: str, facts: List[str]) -> str:
+    """A short verbatim quote from the article: the sentence behind the first
+    key fact it backs. Short on purpose -- the outlet's text is theirs, so
+    only a line of it is kept, never the article."""
+    for fact in facts:
+        sentence = source_sentence(fact, source_text)
+        if sentence:
+            # One character is left for the ellipsis a cut sentence ends in.
+            return _clean_text(sentence, MAX_QUOTE_CHARS - 1)
+    return ""
 
 
 def detail_level(text: str, title: str = "", source: str = "") -> str:

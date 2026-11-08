@@ -6,7 +6,6 @@ import logging
 import argparse
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
-from urllib.parse import urlparse
 
 # Adjust sys.path to find backend module
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +30,7 @@ from backend.app.services.llm import LLMService, LLMCascadeError
 from backend.app.services import analytics, images as article_images, relevance
 from backend.app.services import register_quality
 from backend.app.services import story_detail
-from backend.app.services import claude_llm
+from backend.app.services import fulltext
 from backend.app.services import email_digest
 from backend.app.pipeline import side_feeds
 from backend.app.pipeline.cells import clean_procurement_row, procurement_cells
@@ -273,6 +272,8 @@ def run_pipeline(seed: bool = False):
     cascade_failures = 0
     consecutive_failures = 0
     rejected_count = 0
+    fulltext_fetcher = fulltext.FullTextFetcher()
+    snippet_analyses = []
 
     for item in candidates:
         url = item.get("url")
@@ -327,19 +328,6 @@ def run_pipeline(seed: bool = False):
 
         logger.info(f"Analyzing: '{title}' ({source})")
 
-        # Google News gives only the headline and a feed snippet. When Claude
-        # is configured, look the outlet's own article up on the web (a few
-        # per run), so extraction, key facts and the email read the full
-        # report. The row keeps its Google News URL, which is what later
-        # runs deduplicate on.
-        if (urlparse(url or "").hostname or "").lower() == "news.google.com" \
-                and story_detail.detail_level(cleaned_text, title, source) == "headline" \
-                and claude_llm.configured():
-            fetched = claude_llm.fetch_article(title, source, item.get("published_at") or "")
-            if fetched:
-                logger.info(f"Fetched the full article for '{title[:80]}' from {fetched['url']}")
-                cleaned_text = fetched["text"]
-
         # Run AI LLM Extraction. A cascade failure skips the article entirely
         # (no junk row, URL left uncached so a later healthy run retries it).
         try:
@@ -356,6 +344,28 @@ def run_pipeline(seed: bool = False):
                 break
             continue
         consecutive_failures = 0
+        snippet_analyses.append((item, cleaned_text, analysis))
+        # A URL listed twice in this batch is read once.
+        existing_urls.add(url)
+        # No pause here: this pass writes nothing to Sheets, and the pauses
+        # below pace each article's writes (REJECT_PAUSE_SECONDS,
+        # accept_pause_seconds). Gemini, whose 15 RPM a pause here cited,
+        # does not extract (see LLMService.analyze_article).
+
+    # Every snippet is extracted first so that the run's few full-text
+    # fetches go to the riskiest relevant stories, not the first listed.
+    order = fulltext.fetch_order([analysis for _, _, analysis in snippet_analyses])
+    for item, cleaned_text, analysis in (snippet_analyses[i] for i in order):
+        url = item.get("url")
+        title = item.get("title")
+        source = item.get("source")
+        snippet_text = cleaned_text
+
+        # A story that reads as relevant is fetched in full (a few per run)
+        # and extracted again, and that reading decides relevance below. The
+        # row keeps the feed URL, which is what later runs deduplicate on.
+        analysis, cleaned_text, basis = fulltext.deepen(
+            analysis, cleaned_text, item, fulltext_fetcher, LLMService.analyze_article)
 
         # Relevance filter check (strictly keep corporate, policy, and procurement news).
         #
@@ -379,7 +389,7 @@ def run_pipeline(seed: bool = False):
                 )
             else:
                 logger.info(f"Skipping non-relevant news item and logging URL to prevention cache: '{title}'")
-            filtered_saved = db.add_article({
+            db.add_article({
                 "ID": "",
                 "Time": item.get("published_at") or datetime.now().isoformat(),
                 "Title": title,
@@ -392,10 +402,6 @@ def run_pipeline(seed: bool = False):
                 "Engine": analysis.get("engine", ""),
                 "Filter Reason": filter_reason(off_topic) if off_topic else "model-irrelevant"
             })
-            # Only cache the URL when the prevention row actually persisted,
-            # so a failed write is retried instead of silently skipped.
-            if filtered_saved:
-                existing_urls.add(url)
             rejected_count += 1
             # One Filtered row written: the same Sheets pacing as a pre-LLM
             # reject. This was 3.5s, citing Gemini's 15 RPM, but Gemini does
@@ -416,6 +422,13 @@ def run_pipeline(seed: bool = False):
         detail_cells = story_detail.article_cells(analysis, cleaned_text, title, source)
         analysis["key_facts"] = story_detail.clean_facts(detail_cells["Key Facts"])
         analysis["why_it_matters"] = detail_cells["Why It Matters"]
+        # Basis is what the extraction read, measured on that text (Detail)
+        # rather than on where it came from: a fetched article, or a feed
+        # item that carries the whole body (some APIs send it), is 'article';
+        # a short Claude lookup of a Google News story, which deepen() also
+        # re-extracts from, is a teaser and stays 'headline' for the publish
+        # gate. The Quote below follows the same basis.
+        basis = register_quality.basis_for_detail(detail_cells.get("Detail"))
         db_article = {
             "ID": "", # Auto incremented inside ExcelDatabase
             "Time": item.get("published_at") or datetime.now().isoformat(),
@@ -432,6 +445,8 @@ def run_pipeline(seed: bool = False):
             "Importance": _int_cell(analysis.get("importance_score", 50)),
             "Entities": entity_mentions(analysis),
             **detail_cells,
+            "Basis": basis,
+            "Quote": story_detail.quote(cleaned_text, analysis["key_facts"]) if basis == "article" else "",
         }
         
         added = db.add_article(db_article)
@@ -453,7 +468,9 @@ def run_pipeline(seed: bool = False):
         # Sampled rather than exhaustive because this is committed to the repo.
         # Sampled here, after the relevance and topic gates, so sport and
         # celebrity rejects stop entering the gold-set candidate pool.
-        capture_eval_input(title, cleaned_text, url, source)
+        # The snippet, not a fetched article: the corpus is committed to the
+        # repo, and an outlet's full text is theirs to publish, not ours.
+        capture_eval_input(title, snippet_text, url, source)
 
         run_records.append({
             "title": title,
@@ -544,13 +561,10 @@ def run_pipeline(seed: bool = False):
                 # Whether the extractor read the full article or only the
                 # headline: the publish gate holds back claims about named
                 # people that rest on a headline alone.
-                "Basis": register_quality.basis_for_detail(detail_cells.get("Detail")),
+                "Basis": basis,
             })
             
         articles_processed += 1
-        
-        # Add to existing_urls set to prevent processing duplicate URLs within the same candidate batch
-        existing_urls.add(url)
         
         # Sheets write pacing (see ACCEPT_PAUSE_SECONDS). It used to cite
         # Gemini's 15 RPM; Gemini no longer extracts.

@@ -324,9 +324,10 @@ class TestCollapseStoryCopies:
         assert collapse_story_copies(rows) == rows
 
 
-def run_one_article(tmp_path, monkeypatch, analysis):
+def run_one_article(tmp_path, monkeypatch, analysis, fetched=None):
     """Run the pipeline over one collected article the model answers with
-    `analysis`, and return every pause it took."""
+    `analysis`, and return every pause it took. A relevant story's full-text
+    fetch returns `fetched` (None: no full text), so no outlet is called."""
     from backend.app.services.ingestion import NewsIngestionService
     from backend.app.services.llm import LLMService
 
@@ -344,6 +345,8 @@ def run_one_article(tmp_path, monkeypatch, analysis):
                         classmethod(lambda cls, t, x: dict(analysis)))
     monkeypatch.setattr(rp, "compile_daily_report", lambda *a, **k: None)
     monkeypatch.setattr(rp, "export_static_json_database", lambda: None)
+    # The class method, since run_pipeline makes its own fetcher.
+    monkeypatch.setattr(rp.fulltext.FullTextFetcher, "fetch", lambda self, *a, **k: fetched)
     waits = []
     monkeypatch.setattr("time.sleep", lambda s: waits.append(s))
     rp.run_pipeline()
@@ -376,3 +379,14 @@ class TestAcceptPacing:
     def test_an_unreadable_setting_falls_back_to_the_default(self, raw, monkeypatch):
         monkeypatch.setenv("EXTRACTION_SLEEP_SECONDS", raw)
         assert rp.accept_pause_seconds() == 4.0
+
+
+class TestFullTextBasis:
+    def test_a_story_read_in_full_is_stored_as_read_from_the_article(self, tmp_path, monkeypatch):
+        sentence = "The Central Bank of Nigeria raised the monetary policy rate on Tuesday. "
+        run_one_article(tmp_path, monkeypatch, ACCEPTED, fetched=sentence * 25)
+        assert [(a["Basis"], a["Detail"]) for a in rp.db.get_articles()] == [("article", "full")]
+
+    def test_a_story_without_full_text_is_stored_as_read_from_the_headline(self, tmp_path, monkeypatch):
+        run_one_article(tmp_path, monkeypatch, ACCEPTED)
+        assert [a["Basis"] for a in rp.db.get_articles()] == ["headline"]

@@ -42,9 +42,9 @@ const firstDay = days[0]?.date;
 
 const fmt = (n: number) => n.toLocaleString("en-GB");
 const stages = [
-  { n: "01", title: "Collect", body: "Google News RSS and four news APIs, searched for Nigerian companies, agencies and owners, four times a day.", tag: `${sources.length} publishers` },
+  { n: "01", title: "Collect", body: "Google News RSS, the BusinessDay, Premium Times, Nairametrics and TheCable feeds, and four news APIs, searched for Nigerian companies, agencies and owners, four times a day.", tag: `${sources.length} publishers` },
   { n: "02", title: "Screen", body: "A topic guard drops sport, celebrity and off-topic stories before any model is paid to read them.", tag: screened ? `${fmt(screened)} screened` : "Relevance guard" },
-  { n: "03", title: "Read", body: "A language model cascade (Ollama Cloud, then NVIDIA NIM) extracts people, companies, stakes, contracts and a risk score.", tag: "LLM cascade" },
+  { n: "03", title: "Read", body: "A language model cascade (Ollama Cloud, then NVIDIA NIM) extracts people, companies, stakes, contracts and a risk score from the snippet; up to ten relevant stories a run are then read again from the full article.", tag: "LLM cascade" },
   { n: "04", title: "Resolve", body: "Names are normalised and merged, repeat reports grouped into holdings, CAMA 2020 bands and patterns computed.", tag: `${holdings.holdings} holdings` },
   { n: "05", title: "Publish", body: "The register, the brief and this site are rebuilt from the exports and deployed to the edge.", tag: `${editions} editions` },
 ];

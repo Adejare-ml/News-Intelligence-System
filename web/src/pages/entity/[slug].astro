@@ -6,6 +6,7 @@ import Provenance from "../../components/Provenance.astro";
 import ConfidenceBadge from "../../components/ConfidenceBadge.astro";
 import StoryCard from "../../components/StoryCard.astro";
 import Icon from "../../components/Icon.astro";
+import OfficialLinks from "../../components/OfficialLinks.astro";
 import * as data from "../../lib/data.ts";
 import { href } from "../../lib/url.ts";
 import { slugify } from "../../lib/entity-key.ts";
@@ -131,6 +132,13 @@ const entityLogo = logoFor([e.name]);
 
   {e.holdings.length === 0 && stories.length === 0 && (
     <section class="wrap block"><p class="lede">AURA has no recent reporting on {e.name} yet.</p></section>
+  )}
+
+  {!isPerson && (
+    <section class="wrap block" aria-labelledby="official">
+      <h2 class="h2" id="official" data-split>Check official records</h2>
+      <OfficialLinks company={e.name} />
+    </section>
   )}
 
   <section class="wrap block">
