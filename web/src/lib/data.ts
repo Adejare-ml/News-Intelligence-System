@@ -179,7 +179,8 @@ export const weeklyWrap = (): WeeklyWrap => {
 };
 
 /**
- * Merged weekly findings, rechecked against today's register (see findings.ts).
+ * Merged weekly findings, rechecked against today's register, stories,
+ * appointments and companies (see findings.ts).
  * A finding that names an unpublished entity anywhere (headline, note,
  * bullets or share drafts) is left out whole, as the other loaders leave out
  * such rows. Its register bullets are checked against the rows the site still
@@ -192,5 +193,7 @@ export function findings(): Finding[] {
   return publishableFindings(
     files.map((name) => readJson<Finding>(`findings/${name}`, null as unknown as Finding)),
     withoutHidden(readJson<PscRecord[]>("significant_control.json", []), names),
+    // Whom today's stories and appointments name: the export holds no withheld rows.
+    { articles: articles(), people: people(), companies: companies() },
   ).filter((f) => !namesHidden(f, names));
 }

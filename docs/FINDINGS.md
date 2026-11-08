@@ -13,11 +13,11 @@ One finding a week, picked and hand-checked by the owner, for readers to share. 
 
 It exits 1 and writes no file when:
 
-- the pick has no published register row or article behind it (unsourced or quarantined rows never count);
+- the pick has no published register row or article behind it (unsourced, quarantined or held-for-review rows never count, nor do rows naming a person without a confidence tier: the same gate as the site);
 - the entity, record, headline or note names someone or something the owner has unpublished (`suppressed.json`, see `scripts/unpublish.py`); rows and articles naming them are never used either;
 - a `record_ref` holding has no published row;
 - the `entity` is a company that only withheld register rows name (the site would drop the finding without saying why);
-- the entity, headline or note names a person with no published register row;
+- the entity, headline or note names a person with no published register row: someone only withheld rows or the appointments feed name, or anyone a story in `latest.json` is tagged with who may be a person and is neither a published holder nor a company the data knows (the register, the appointments feed, or `companies.json` with a real industry). The export holds no row for a holder the gate withholds (they go to the private review queue), so the news that named them is the only trace. Stories naming or tagged with such a name are never used as bullets either; a bare surname counts unless it only appears inside a published holder's full name;
 - the `entity` is neither a published register person nor a company the register or the appointments feed names (it could be a person the register does not back);
 - fewer than two facts can be cited.
 
@@ -25,7 +25,7 @@ It exits 1 and writes no file when:
 
 ## What the build rechecks
 
-Each build checks merged findings against today's register and leaves out any that no longer stand: a register bullet must still match its own published row (same link, person key and company key, so another row citing the same article does not keep it alive), and the finding must not name, in any spelling, a person or company that only withheld rows name. A finding that names an unpublished entity anywhere, share drafts included, is left out whole.
+Each build checks merged findings against today's register and leaves out any that no longer stand: a register bullet must still match its own published row (same link, person key and company key, so another row citing the same article does not keep it alive), and the finding must not name, in any spelling, a person or company that only withheld rows name. The same unbacked-name rule as the script is applied to its headline, note, bullets and the stories it cites, against today's stories, appointments and companies; a finding that breaks it is dropped, not just kept out of search. A finding that names an unpublished entity anywhere, share drafts included, is left out whole.
 
 The `findings/` folder itself is never served: unlike the other exports, it is not copied to `/data/`, so neither `picks.json` nor a draft the recheck drops is reachable on the site.
 

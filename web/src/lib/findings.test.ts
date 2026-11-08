@@ -137,6 +137,70 @@ describe("findings", () => {
     assert.deepEqual(out.map((f) => f.week), ["2026-W44"]);
   });
 
+  // Since #166 the pipeline exports no withheld row: a headline-only holder
+  // goes to the private review queue, never significant_control.json. The
+  // news that named them is the only trace, so anyone a story tags who may be
+  // a person, and is neither a published holder nor a company the data knows,
+  // counts as unbacked (as in scripts/draft_finding.py).
+  const zara = { Title: "Zara Headline buys 30% of Seplat", URL: "https://vanguardngr.com/zara/", Entities: "Seplat|Zara Headline" };
+
+  test("drops a finding naming a holder the gate keeps out of the export, known only from the news", () => {
+    const [reg, news] = finding().bullets;
+    const cases = {
+      headline: finding({ headline: "Zara Headline's quiet Seplat stake" }),
+      note: finding({ note: "Zara O. Headline is also linked." }),
+      bullet: finding({ bullets: [reg, { ...news, text: `Vanguard reported: "${zara.Title}"`, url: zara.URL }] }),
+      // Cited without quoting its title: the story's own tags still name them.
+      cited: finding({ bullets: [reg, { ...news, text: "Vanguard reported a Seplat stake sale", url: zara.URL }] }),
+    };
+    for (const [where, f] of Object.entries(cases)) {
+      assert.deepEqual(publishableFindings([f], [sourced], { articles: [zara] }), [], where);
+    }
+    // The appointments feed names people no register row backs, too.
+    const appointee = finding({ note: "Ada Appointee chairs the board." });
+    assert.deepEqual(publishableFindings([appointee], [sourced], { people: [{ Name: "Ada Appointee", Organization: "Seplat" }] }), []);
+  });
+
+  test("a published holder or a known company under another spelling is not unbacked", () => {
+    const articles = [
+      // Another spelling of the published holder, and an alias the gate folds into Seplat.
+      { Title: "Tony Elumelu raises Seplat Energy stake", URL: "https://vanguardngr.com/e/", Entities: "Seplat Energy|Alhaji Tony O. Elumelu" },
+      // A bare surname (it could be anyone called Elumelu) and an organisation by its full name.
+      { Title: "Seplat board meets", URL: "https://vanguardngr.com/s/", Entities: "Seplat|Elumelu|Nigerian Upstream Petroleum Regulatory Commission" },
+    ];
+    const [reg, news] = finding().bullets;
+    const f = finding({
+      headline: "Tony Elumelu's Seplat Energy stake",
+      note: "The Nigerian Upstream Petroleum Regulatory Commission approved it.",
+      bullets: [reg, { ...news, text: `Vanguard reported: "${articles[0].Title}"`, url: articles[0].URL }],
+    });
+    assert.equal(publishableFindings([f], [sourced], { articles }).length, 1);
+    // The surname on its own is a different matter.
+    assert.deepEqual(publishableFindings([finding({ note: "Elumelu is also linked." })], [sourced], { articles }), []);
+  });
+
+  test("a company with a real industry is not unbacked, unlike a name filed under companies as General", () => {
+    // companies.json files often-mentioned people under companies too ("Tinubu");
+    // a real industry is the sign isKnownCompany() (entities.ts) takes for a company.
+    const articles = [{ Title: "OPay and Seplat sign payments deal", URL: "https://vanguardngr.com/o/", Entities: "Seplat|OPay|Tinubu" }];
+    const companies = [{ Company: "OPay", Industry: "Fintech / Payments" }, { Company: "Tinubu", Industry: "General" }];
+    assert.equal(publishableFindings([finding({ note: "OPay is a new partner." })], [sourced], { articles, companies }).length, 1);
+    assert.deepEqual(publishableFindings([finding({ note: "Tinubu backs the deal." })], [sourced], { articles, companies }), []);
+  });
+
+  test("data.findings() rechecks findings against today's news, appointments and companies", async () => {
+    const out = await loadFindings({
+      "significant_control.json": [sourced],
+      "latest.json": [zara, { Title: "OPay and Seplat sign payments deal", URL: "https://vanguardngr.com/o/", Entities: "Seplat|OPay" }],
+      "people.json": [{ Name: "Ada Appointee", Organization: "Seplat" }],
+      "companies.json": [{ Company: "OPay", Industry: "Fintech / Payments" }],
+      "findings/2026-W44.json": finding({ week: "2026-W44", note: "OPay is a new partner." }),
+      "findings/2026-W45.json": finding({ week: "2026-W45", headline: "Zara Headline's quiet Seplat stake" }),
+      "findings/2026-W46.json": finding({ week: "2026-W46", note: "Ada Appointee chairs the board." }),
+    });
+    assert.deepEqual(out.map((f) => f.week), ["2026-W44"]);
+  });
+
   test("drops malformed files instead of breaking the build", () => {
     const broken = [null, { week: "soon" }, finding({ bullets: undefined as never })] as unknown as Finding[];
     assert.deepEqual(publishableFindings(broken, [sourced]), []);

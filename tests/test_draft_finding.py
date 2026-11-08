@@ -3,8 +3,9 @@ Ownership Finding of the Week: the drafting script turns the owner's pick into
 share-ready text built only from what the site already publishes.
 
 The guard that matters most: nothing the register gate withholds (no source
-link, or quarantined) can reach a draft, and a person is never named without a
-published register row behind them. All offline, fixtures only.
+link, quarantined, or a person on a headline alone) can reach a draft, and a
+person is never named without a published register row behind them. All
+offline, fixtures only.
 """
 import json
 import os
@@ -26,7 +27,7 @@ REGISTER = [
         "Nature of Control": "Ownership of shares", "Board Role": "", "Kind": "stake",
         "Date": "2026-08-21", "Source URL": "https://punchng.com/elumelu-seplat/",
         "Source Title": "Elumelu's Seplat investment doubles", "Publisher": "The Punch",
-        "Quarantined": False,
+        "Quarantined": False, "Confidence": "Full article",
     },
     {
         "Person Name": "Tony O. Elumelu", "Company": "United Bank for Africa (UBA) Plc",
@@ -35,19 +36,19 @@ REGISTER = [
         "Company Key": "united bank for africa",
         "Date": "2026-06-18", "Source URL": "https://punchng.com/uba-chairman/",
         "Source Title": "UBA welcomes new chairman", "Publisher": "The Punch",
-        "Quarantined": False,
+        "Quarantined": False, "Confidence": "Full article",
     },
     # Withheld: no source link.
     {
         "Person Name": "Zed Unsourced", "Company": "Seplat", "Percentage": "61.5%",
         "Nature of Control": "Ownership of shares", "Date": "2026-10-20",
-        "Source": "", "Source URL": "",
+        "Source": "", "Source URL": "", "Confidence": "Full article",
     },
     # Withheld: quarantined by the gate.
     {
         "Person Name": "Quin Quarantined", "Company": "Quarantined Ltd", "Percentage": "",
         "Nature of Control": "Significant influence", "Date": "2026-10-20",
-        "Source URL": "https://example.test/q", "Quarantined": True,
+        "Source URL": "https://example.test/q", "Quarantined": True, "Confidence": "Full article",
     },
 ]
 
@@ -55,7 +56,9 @@ ARTICLES = [
     {
         "Time": "2026-11-02T08:00:00Z", "Title": "Seplat output rises in third quarter",
         "Source": "BusinessDay", "URL": "https://businessday.ng/seplat-output/",
-        "Entities": "Seplat|NUPRC",
+        # A regulator the script can tell is an organisation (it ends in an
+        # entity word); a bare acronym could be anyone's initials.
+        "Entities": "Seplat|Nigerian Upstream Petroleum Regulatory Commission",
     },
     {
         "Time": "2026-11-03T08:00:00Z", "Title": "Zed Unsourced eyes bigger Seplat role",
@@ -77,12 +80,13 @@ ARTICLES = [
 PEOPLE = [{"Name": "Ada Appointee", "Position": "CEO", "Organization": "Dangote Petroleum Refinery"}]
 
 
-def make_data(tmp_path, picks, register=REGISTER, articles=ARTICLES, people=PEOPLE, unpublished=()):
+def make_data(tmp_path, picks, register=REGISTER, articles=ARTICLES, people=PEOPLE, unpublished=(), companies=()):
     data = tmp_path / "data"
     (data / "findings").mkdir(parents=True)
     (data / "significant_control.json").write_text(json.dumps(register))
     (data / "latest.json").write_text(json.dumps(articles))
     (data / "people.json").write_text(json.dumps(people))
+    (data / "companies.json").write_text(json.dumps(list(companies)))
     (data / "findings" / "picks.json").write_text(json.dumps(picks))
     if unpublished:
         (data / "suppressed.json").write_text(json.dumps(
@@ -250,8 +254,10 @@ REFINERY_NEWS = dict(ARTICLES[-1], URL="https://punchng.com/dangote-2/", Time="2
     (dict(REFINERY_PICK, headline="Tony Elumelu and the refinery"), REFINERY_NEWS),
     # A news bullet names one.
     (REFINERY_PICK, dict(REFINERY_NEWS, Title="Tony Elumelu backs Dangote refinery expansion")),
-    # A news bullet is tagged with an entity the script cannot tell is a company.
-    (REFINERY_PICK, dict(REFINERY_NEWS, Entities="Dangote Petroleum Refinery|Ada Okafor")),
+    # A news bullet is tagged with a person the register backs but its title
+    # does not name. (A tag that is neither a company nor a published holder
+    # keeps the article out altogether: see the withheld-holder tests below.)
+    (REFINERY_PICK, dict(REFINERY_NEWS, Entities="Dangote Petroleum Refinery|Tony Elumelu")),
 ])
 def test_company_finding_naming_a_person_anywhere_stays_out_of_search(tmp_path, pick, article):
     data = make_data(tmp_path, [pick], articles=ARTICLES + [article])
@@ -333,3 +339,98 @@ def test_leaves_out_rows_and_news_naming_an_unpublished_entity(tmp_path):
     text = (data / "findings" / "2026-W45.json").read_text()
     assert "Hidden Holdings" not in text
     assert "https://punchng.com/elumelu-seplat/" in text
+
+
+# The register gate's own rule (web/src/lib/psc.ts isPublic, #166): a row
+# naming a person also needs a confidence tier, and a claim about a person on
+# a headline alone (Quality "unverified_person") waits for the owner.
+
+@pytest.mark.parametrize("row, public", [
+    (REGISTER[0], True),
+    # Held for the owner's review.
+    (dict(REGISTER[0], Quality=["unverified_person", "no_filing"], Confidence="Headline only"), False),
+    # Exported before rows carried a tier: nothing says it rests on more than a headline.
+    ({k: v for k, v in REGISTER[0].items() if k != "Confidence"}, False),
+    # A company holding a company needs no tier, even through a direct holding.
+    ({"Person Name": "Heirs Holdings Limited", "Company": "Transcorp Plc", "Intermediate Entities": "Direct holding",
+      "Source URL": "https://punchng.com/heirs/"}, True),
+    # A company holder whose previous holder is a person is a claim about that person.
+    ({"Person Name": "Heirs Holdings Limited", "Company": "Transcorp Plc", "Previous Holder": "Ada Seller",
+      "Source URL": "https://punchng.com/heirs/"}, False),
+    (dict(REGISTER[0], Quarantined="true"), False),
+    (dict(REGISTER[0], **{"Source URL": "punchng.com/no-scheme"}), False),
+])
+def test_is_public_is_the_sites_gate(row, public):
+    assert draft_finding.is_public(row) is public
+
+
+# Since #166 the pipeline exports no withheld row: a headline-only holder goes
+# to the private review queue, not significant_control.json, and PSC holders
+# are not in people.json either. The only trace in the data is the news that
+# named them, so anyone a story tags who may be a person and is neither a
+# published holder nor a company the data knows counts as unbacked.
+
+WITHHELD_NEWS = {"Time": "2026-11-06T08:00:00Z", "Title": "Zara Headline buys 30% of Seplat",
+                 "Source": "Vanguard", "URL": "https://vanguardngr.com/zara-seplat/", "Entities": "Seplat|Zara Headline"}
+
+
+@pytest.mark.parametrize("field", ["headline", "note"])
+def test_refuses_a_pick_naming_a_holder_the_gate_keeps_out_of_the_export(tmp_path, field):
+    pick = dict(ENTITY_PICK, **{field: "Zara Headline's quiet Seplat stake"})
+    data = make_data(tmp_path, [pick], articles=ARTICLES + [WITHHELD_NEWS])
+    result = run(data)
+    assert result.returncode == 1
+    assert "Zara Headline" in result.stderr
+    assert not (data / "findings" / "2026-W45.json").exists()
+
+
+def test_leaves_out_news_naming_a_holder_the_gate_keeps_out_of_the_export(tmp_path):
+    # The newest Seplat story, so it would make the cut. Another story tags
+    # them by surname alone, which is no more a company than the full name.
+    surname = dict(WITHHELD_NEWS, URL="https://vanguardngr.com/zara-2/", Time="2026-11-05T08:00:00Z",
+                   Title="Seplat board meets new investor", Entities="Seplat|Headline")
+    data = make_data(tmp_path, [ENTITY_PICK], articles=ARTICLES + [WITHHELD_NEWS, surname])
+    result = run(data)
+    assert result.returncode == 0, result.stderr
+    finding = json.loads((data / "findings" / "2026-W45.json").read_text())
+    text = json.dumps(finding)
+    assert "Zara" not in text and "zara" not in text
+    assert "https://vanguardngr.com/zara-2/" not in text
+    assert "https://businessday.ng/seplat-output/" in text
+
+
+def test_a_published_holder_and_known_companies_are_not_unbacked(tmp_path):
+    # Tagged by another spelling of a published holder (title and initial)
+    # and by a company alias the register folds into Seplat. Another story
+    # tags a bare surname, which the headline and title only use inside the
+    # holder's full name. (A bare "Elumelu" on its own could be anyone called
+    # Elumelu, so it would count.)
+    news = {"Time": "2026-11-06T08:00:00Z", "Title": "Tony Elumelu raises Seplat Energy stake",
+            "Source": "Vanguard", "URL": "https://vanguardngr.com/elumelu-seplat/",
+            "Entities": "Seplat Energy|Alhaji Tony O. Elumelu"}
+    surname = dict(news, URL="https://vanguardngr.com/elumelu-2/", Time="2026-11-05T08:00:00Z", Entities="Seplat|Elumelu")
+    pick = dict(ENTITY_PICK, headline="Tony Elumelu's Seplat Energy stake")
+    data = make_data(tmp_path, [pick], articles=ARTICLES + [news, surname])
+    result = run(data)
+    assert result.returncode == 0, result.stderr
+    text = (data / "findings" / "2026-W45.json").read_text()
+    assert "https://vanguardngr.com/elumelu-seplat/" in text
+
+
+def test_a_company_with_a_real_industry_is_not_unbacked(tmp_path):
+    # companies.json files often-mentioned people under companies too
+    # ("Tinubu", Industry "General"); a real industry is the sign #164's
+    # isKnownCompany() takes for a company.
+    news = {"Time": "2026-11-06T08:00:00Z", "Title": "OPay and Seplat sign payments deal",
+            "Source": "Vanguard", "URL": "https://vanguardngr.com/opay-seplat/", "Entities": "Seplat|OPay|Tinubu"}
+    companies = [{"Company": "OPay", "Industry": "Fintech / Payments"}, {"Company": "Tinubu", "Industry": "General"}]
+    data = make_data(tmp_path, [dict(ENTITY_PICK, note="OPay is a new partner.")], articles=ARTICLES + [news], companies=companies)
+    result = run(data)
+    assert result.returncode == 0, result.stderr
+    # The story is still left out: it is tagged with Tinubu, who may be a person.
+    assert "opay-seplat" not in (data / "findings" / "2026-W45.json").read_text()
+    data = make_data(tmp_path / "tinubu", [dict(ENTITY_PICK, note="Tinubu backs the deal.")], articles=ARTICLES + [news],
+                     companies=companies)
+    result = run(data)
+    assert result.returncode == 1
+    assert "Tinubu" in result.stderr

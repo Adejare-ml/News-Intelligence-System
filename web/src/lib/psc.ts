@@ -143,12 +143,18 @@ function readsAsEntity(name: string): boolean {
   return ENTITY_WORDS.has(words[words.length - 1]) || words.filter((w) => ENTITY_WORDS.has(w)).length >= 2;
 }
 
+/**
+ * A name that may be a natural person: not blank, a placeholder or "direct
+ * holding", and not clearly an organisation. Unclear names count as people.
+ */
+export function readsAsPerson(value: unknown): boolean {
+  const name = String(value ?? "").trim();
+  return name !== "" && !PLACEHOLDER.has(name.toLowerCase()) && !isDirectHolding(name) && !readsAsEntity(name);
+}
+
 /** The row names a natural person as holder, previous holder or in the chain. */
 function namesPerson(record: PscRecord): boolean {
-  return ["Person Name", "Previous Holder", "Intermediate Entities"].some((field) => {
-    const name = String(record[field] ?? "").trim();
-    return name !== "" && !PLACEHOLDER.has(name.toLowerCase()) && !isDirectHolding(name) && !readsAsEntity(name);
-  });
+  return ["Person Name", "Previous Holder", "Intermediate Entities"].some((field) => readsAsPerson(record[field]));
 }
 
 /** Held back by the gate as implausible (a footballer "controlling" a business). */

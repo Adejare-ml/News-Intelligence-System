@@ -50,14 +50,16 @@ function fold(text: unknown): string {
 
 const noInitials = (text: string) => text.split(" ").filter((w) => w.length > 1).join(" ");
 
-function canonicalPerson(name: unknown): string {
+/** register_quality.canonical_person: "Alhaji Tony O. Elumelu" -> "tony elumelu". */
+export function canonicalPerson(name: unknown): string {
   let words = fold(name).split(" ").filter(Boolean);
   while (words.length && HONORIFICS.has(words[0])) words = words.slice(1);
   if (words.length > 2) words = words.filter((w, i) => !(w.length === 1 && i > 0 && i < words.length - 1));
   return words.join(" ");
 }
 
-function canonicalCompany(name: unknown): string {
+/** register_quality.canonical_company: "Seplat Energy Plc" -> "seplat". */
+export function canonicalCompany(name: unknown): string {
   const folded = fold(name);
   if (COMPANY_ALIASES[folded]) return COMPANY_ALIASES[folded];
   const words = folded.split(" ").filter(Boolean);

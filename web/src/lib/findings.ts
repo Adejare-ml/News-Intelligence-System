@@ -8,7 +8,8 @@
  * out any finding that no longer stands.
  */
 import { slugify } from "./entity-key.ts";
-import { companyKey, isPublic, personKey, type PscRecord } from "./psc.ts";
+import { companyKey, isPublic, personKey, readsAsPerson, type PscRecord } from "./psc.ts";
+import { canonicalCompany, canonicalPerson } from "./suppressed.ts";
 
 export interface FindingBullet {
   /** "register": a published register row; "news": an article in latest.json. */
@@ -72,7 +73,69 @@ const COMPANY_ALIASES: Record<string, string> = {
 const aliasesOf = (key: string) =>
   Object.entries(COMPANY_ALIASES).filter(([, canon]) => canon === key).map(([spelling]) => spelling);
 
-export function publishableFindings(findings: Finding[], register: PscRecord[]): Finding[] {
+/** What a build knows beyond the register: today's stories, appointments and companies. */
+export interface FindingContext {
+  /** latest.json: whom each story is tagged with (Entities, "|"-separated). */
+  articles?: { Title?: unknown; URL?: unknown; Entities?: unknown }[];
+  /** people.json: the appointments feed. */
+  people?: { Name?: unknown; Organization?: unknown }[];
+  /** companies.json, which tells companies from people. */
+  companies?: { Company?: unknown; Industry?: unknown }[];
+}
+
+const tagsOf = (a: { Entities?: unknown }) =>
+  String(a.Entities ?? "").split("|").map((t) => t.trim()).filter(Boolean);
+
+/**
+ * The names a finding may not use, and the backed names (published holders,
+ * companies the data knows) that may contain one. Unbacked: anyone in the
+ * appointments feed, and anyone a story is tagged with who may be a person
+ * (readsAsPerson) and is neither a published holder nor a company the data
+ * knows, under any spelling the register's canonical keys fold together.
+ * The pipeline exports no withheld row (since #166 a headline-only holder goes
+ * to the private review queue, and PSC holders are kept out of people.json),
+ * so the news that named them is the only trace of them here. Mirrors
+ * unbacked_people() in scripts/draft_finding.py.
+ */
+function unbackedPeople(published: PscRecord[], register: PscRecord[], { articles = [], people = [], companies: rows = [] }: FindingContext) {
+  const backedPeople = new Set(published.flatMap((r) => [r["Person Name"], r["Person Key"]]).map(loose).filter(Boolean));
+  const companyNames = [
+    ...register.flatMap((r) => [r.Company, r["Company Key"]]),
+    ...people.map((p) => p.Organization),
+    // companies.json files often-mentioned people under companies too ("Tinubu"):
+    // a real industry is the sign isKnownCompany() in entities.ts takes for a company.
+    ...rows.filter((c) => c.Industry && c.Industry !== "General").map((c) => c.Company),
+  ];
+  const companies = new Set(companyNames.map(loose).filter(Boolean));
+  const companyKeys = new Set(companyNames.map((n) => loose(canonicalCompany(n))).filter(Boolean));
+  const known = (name: string) =>
+    companies.has(loose(name)) || companyKeys.has(loose(canonicalCompany(name))) || backedPeople.has(loose(canonicalPerson(name)));
+  const unbacked = new Set(
+    [...people.map((p) => p.Name), ...articles.flatMap(tagsOf).filter((t) => readsAsPerson(t) && !known(t))]
+      .map(loose)
+      .filter((n) => n && !backedPeople.has(n)),
+  );
+  return { unbacked, backed: [...backedPeople, ...companies] };
+}
+
+/**
+ * The text names an unbacked name on its own. A mention inside a backed name
+ * that contains it does not count: "Tony Elumelu" is no mention of a bare
+ * "Elumelu" someone else is tagged as.
+ */
+function namesUnbacked(text: unknown, unbacked: Set<string>, backed: string[]): boolean {
+  const slug = `-${loose(text)}-`;
+  for (const name of unbacked) {
+    let own = slug;
+    for (const b of backed) {
+      if (b !== name && `-${b}-`.includes(`-${name}-`)) own = own.replace(new RegExp(`(?<=-)${b}(?=-)`, "g"), "");
+    }
+    if (own.includes(`-${name}-`)) return true;
+  }
+  return false;
+}
+
+export function publishableFindings(findings: Finding[], register: PscRecord[], context: FindingContext = {}): Finding[] {
   const published = register.filter(isPublic);
   const recordKey = (url: unknown, person: unknown, company: unknown) =>
     JSON.stringify([String(url ?? "").trim(), person, company]);
@@ -96,6 +159,14 @@ export function publishableFindings(findings: Finding[], register: PscRecord[]):
     .map(loose)
     .filter((n) => n && !backedNames.has(n));
 
+  // People no published row backs, though no row in this export names them.
+  const { unbacked, backed: backedSpellings } = unbackedPeople(published, register, context);
+  const unbackedIn = (text: unknown) => namesUnbacked(text, unbacked, backedSpellings);
+  const citedStories = (f: Finding) => {
+    const urls = new Set(f.bullets.filter((b) => b.kind === "news").map((b) => String(b.url ?? "").trim()));
+    return (context.articles ?? []).filter((a) => urls.has(String(a.URL ?? "").trim()));
+  };
+
   return findings
     .filter((f) => f && WEEK.test(String(f.week)) && Array.isArray(f.bullets))
     .filter((f) => f.bullets.every(backed))
@@ -103,6 +174,9 @@ export function publishableFindings(findings: Finding[], register: PscRecord[]):
       const text = `-${loose(JSON.stringify(f))}-`;
       return !withheld.some((n) => text.includes(`-${n}-`));
     })
+    // Dropped, not just kept out of search: the claim would still be on the page.
+    .filter((f) => ![f.headline, f.note, ...f.bullets.map((b) => b.text)].some(unbackedIn))
+    .filter((f) => !citedStories(f).some((a) => unbackedIn(a.Title) || tagsOf(a).some(unbackedIn)))
     .sort((a, b) => b.week.localeCompare(a.week));
 }
 

@@ -14,6 +14,9 @@
 // is built from the register, so each could leak it. So is following.json,
 // what the browser Follow panel and bell dot fetch. The check also fails
 // if one of them is missing, so a renamed route cannot drop out unnoticed.
+// Merged findings of the week naming those holders, or a holder the export
+// leaves out altogether and only the news names, must be dropped, while a
+// control finding naming a company stands.
 import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
@@ -219,7 +222,42 @@ writeFileSync(join(data, "findings", "2099-W02.json"), JSON.stringify({
   ],
   drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
 }));
-const DROPPED_FINDINGS = ["2099-W01", "2099-W02"];
+// The state the pipeline really produces: a person claim on a headline alone
+// goes to the private review queue, so the export holds no row for the
+// holder at all, and only the news names them. A finding about them must be
+// dropped all the same. The story itself is news and may show elsewhere, so
+// only the findings pages, the home teaser and the sitemap are checked for it.
+const REVIEW = { person: "Zedekiah Leakcheck-Review", company: "Sentinel Review Holdings Plc" };
+const reviewStory = {
+  ID: "999998", Time: "2026-10-21T07:00:00Z", Title: `${REVIEW.person} buys 33% of ${REVIEW.company}`,
+  Source: "Vanguard", URL: "https://vanguardngr.com/sentinel-review", Category: "Corporate", "Risk Score": "60",
+  Summary: "Sentinel review story.", Entities: `${REVIEW.person}|${REVIEW.company}`,
+};
+addRows("latest.json", [reviewStory]);
+const plantFinding = (week, fields) => writeFileSync(join(data, "findings", `${week}.json`), JSON.stringify({
+  week, note: "", ref: "sentinel", link: `https://auranews.pages.dev/findings/${week}/`,
+  drafts: { linkedin: "", x: "", email: { subject: "", body: "" } }, ...fields,
+}));
+plantFinding("2099-W03", {
+  headline: `${REVIEW.person}'s quiet stake in ${REVIEW.company}`,
+  names_person: true,
+  bullets: [
+    { kind: "news", text: `Vanguard reported: "${reviewStory.Title}"`, outlet: "Vanguard", url: reviewStory.URL, date: "2026-10-21" },
+    { kind: "news", text: `Vanguard reported: "${REVIEW.company} adds a director"`, outlet: "Vanguard", url: "https://vanguardngr.com/sentinel-review-2", date: "2026-10-22" },
+  ],
+});
+// A finding that stands, naming only a company, so the findings list, the
+// home teaser and the sitemap are shown to be there to check.
+const CONTROL_FINDING = { week: "2098-W52", headline: `${CONTROLS.company} doubles its milling capacity` };
+plantFinding(CONTROL_FINDING.week, {
+  headline: CONTROL_FINDING.headline,
+  names_person: false,
+  bullets: [
+    { kind: "news", text: `The Punch reported: "${CONTROLS.story}"`, outlet: "The Punch", url: "https://punchng.com/control-mill", date: "2026-10-20" },
+    { kind: "news", text: `The Punch reported: "${CONTROLS.company} doubles capacity"`, outlet: "The Punch", url: "https://punchng.com/control-mill-2", date: "2026-10-21" },
+  ],
+});
+const DROPPED_FINDINGS = ["2099-W01", "2099-W02", "2099-W03"];
 
 try {
   execFileSync("npx", ["astro", "build", "--outDir", out], {
@@ -341,6 +379,18 @@ try {
   for (const week of DROPPED_FINDINGS) {
     if (existsSync(join(out, "findings", week))) leaks.push(`/findings/${week}/: built, though the recheck must drop this finding`);
     if (sitemap.includes(`findings/${week}/`)) leaks.push(`/sitemap.xml: lists findings/${week}/, which the recheck must drop`);
+  }
+  // The holder known only from the news: their story may show elsewhere, but
+  // no finding names them. The standing control finding must show in each
+  // place, or that place was not checked.
+  const teaser = (built("index.html").split('aria-labelledby="finding-title"')[1] ?? "").split("</section>")[0];
+  for (const [where, html, control] of [
+    ["/findings/", built("findings/index.html"), CONTROL_FINDING.headline],
+    ["the home teaser", teaser, CONTROL_FINDING.headline],
+    ["/sitemap.xml", sitemap, `findings/${CONTROL_FINDING.week}/`],
+  ]) {
+    for (const n of Object.values(REVIEW)) if (html.includes(n)) leaks.push(`${where}: ${n}`);
+    if (!html.includes(control)) leaks.push(`${where}: the planted control "${control}" is missing, so this check proves nothing there`);
   }
 
   // Every kind of export this check must cover, at least one file each.
