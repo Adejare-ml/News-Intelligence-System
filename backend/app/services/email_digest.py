@@ -832,6 +832,9 @@ def psc_lines(psc_rows: Iterable[Dict[str, Any]], since: Optional[datetime],
         "outlet": outlet(r.get("Publisher")) if r.get("Publisher") else "a news report",
         "date": lagos_label(day, with_time=False) if day else "",
         "url": str(r.get("Source URL")).strip(),
+        # The register's confidence tier; an export from before tiers
+        # existed has none, and claims nothing stronger than a headline.
+        "confidence": str(r.get("Confidence") or "").strip() or "Headline only",
     } for r, day, _ in rows[-MAX_PSC:][::-1]]
     return lines, len(rows), [key for _, _, key in rows]
 

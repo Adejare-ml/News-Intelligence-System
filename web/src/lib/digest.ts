@@ -52,7 +52,8 @@ export interface EmailDigest {
   cards: DigestCard[];
   also: { n: number; theme: string; text: string; outlet: string; url: string }[];
   also_more: number;
-  psc: { text: string; outlet: string; date: string; url: string }[];
+  /** confidence: the register tier (Official filing, Full article, Headline only). */
+  psc: { text: string; outlet: string; date: string; url: string; confidence?: string }[];
   /** Ownership claims in this edition beyond the ones shown. */
   psc_more?: number;
   /** Built between sends; the edition id ends in "-preview". */

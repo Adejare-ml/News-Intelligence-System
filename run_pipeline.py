@@ -38,6 +38,10 @@ from backend.app.pipeline.cells import clean_procurement_row, procurement_cells
 from backend.app.db.excel_db import db
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "static", "data")
+# The owner's review queue names people the gate withheld, so it is kept
+# out of DATA_DIR: everything there is committed to the public repository,
+# served at /data and copied onto the site. Git-ignored.
+REVIEW_QUEUE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend", "app", "db", "review_queue.json")
 
 # Lead images news APIs returned with this run's saved articles (article
 # URL -> image URL), merged into data/article_images.json at export.
@@ -455,7 +459,11 @@ def run_pipeline(seed: bool = False):
             "title": title,
             "source": source,
             "url": url,
-            "analysis": analysis
+            "analysis": analysis,
+            # What the extraction read, as this story's register rows below
+            # record it, so the brief holds back the holdings the publish
+            # gate holds back (gate_report_holdings).
+            "basis": db_article.get("Basis") or register_quality.basis_for_detail(db_article.get("Detail")),
         })
         
         # Write Organizations/Companies
@@ -533,6 +541,10 @@ def run_pipeline(seed: bool = False):
                 "Source URL": url,
                 "Source Title": title,
                 "Publisher": source,
+                # Whether the extractor read the full article or only the
+                # headline: the publish gate holds back claims about named
+                # people that rest on a headline alone.
+                "Basis": register_quality.basis_for_detail(detail_cells.get("Detail")),
             })
             
         articles_processed += 1
@@ -637,6 +649,48 @@ from backend.app.pipeline.report import (  # noqa: E402,F401  (re-export)
     report_payload,
 )
 
+def gate_report_holdings(records: List[Dict[str, Any]]):
+    """(records, withheld): each record with only the holdings the publish
+    gate would publish, and the people named on the holdings it held back.
+
+    The brief states every holder it is given, and report_latest.md, the
+    home page's ownership aside and the brief archives publish it, so a
+    holding the gate keeps off the register (a person named on headline-only
+    reporting, an unsourced or implausible claim) never reaches the model.
+    Each holding is judged as the register row the write loop makes of it.
+    The input records are not changed.
+    """
+    gated, withheld = [], []
+    for record in records or []:
+        analysis = record.get("analysis") or {}
+        holdings = analysis.get("significant_control")
+        if not holdings:
+            gated.append(record)
+            continue
+        kept = []
+        for psc in holdings:
+            if not isinstance(psc, dict):
+                continue
+            row = register_quality.annotate([{
+                "Person Name": psc.get("name") or "",
+                "Company": psc.get("organization") or "",
+                "Nature of Control": psc.get("nature_of_control") or "",
+                "Board Role": psc.get("board_role") or "",
+                "Percentage": psc.get("percentage") or "",
+                "Intermediate Entities": psc.get("intermediate_entities") or "Direct Holding",
+                "Regulatory Filing Ref": psc.get("regulatory_filing_ref") or "",
+                "Previous Holder": psc.get("previous_holder") or "",
+                "Source URL": record.get("url") or "",
+                "Basis": record.get("basis") or "",
+            }])[0]
+            if register_quality.is_public(row):
+                kept.append(psc)
+            else:
+                withheld.append(row)
+        gated.append({**record, "analysis": {**analysis, "significant_control": kept}})
+    return gated, register_quality.withheld_names(withheld)
+
+
 def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[str, Any]] = None,
                          cascade_failures: int = 0, run_seconds: int = None,
                          rejected: int = None):
@@ -675,7 +729,9 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
     # The model sees the whole day -- this run's full analyses plus the
     # reduced records of what earlier runs already published -- wrapped with
     # the date and coverage window the prompt declares authoritative.
-    day_records = records + prior_today
+    # Holdings the publish gate withholds are removed first: the brief is
+    # public and names every holder it is given.
+    day_records, withheld_names = gate_report_holdings(records + prior_today)
     raw_json_str = json.dumps({
         "report_date": today_str,
         "coverage": f"All articles published on {today_str} up to {now.strftime('%H:%M')} (run {runs_today} of the day)",
@@ -713,8 +769,9 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
         # article's own title, and repeated bullets are dropped.
         generated_md = register_quality.qa_brief_headlines(generated_md, day_records)
         # Then by rule: every bullet cites an article, alerts are only High
-        # or Critical, no sport or celebrity items, each story once.
-        generated_md = register_quality.clean_brief(generated_md, day_records)
+        # or Critical, no sport or celebrity items, each story once, and the
+        # ownership section names no one whose holding the gate withheld.
+        generated_md = register_quality.clean_brief(generated_md, day_records, withheld_names)
         md = f"""{header}
 {generated_md}
 
@@ -938,19 +995,24 @@ CORE_EXPORT_MIN_SHARE = 0.4
 CORE_EXPORT_MIN_ROWS = 20
 
 
-def core_rows(name: str, rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def core_rows(name: str, rows: List[Dict[str, Any]], clean=None) -> List[Dict[str, Any]]:
     """The rows to publish as one of the site's core lists: this run's,
     or the previous file's when this run's collapsed.
 
     Decided before anything is built from the list, so the cycle diff,
     the graph and the timelines agree with the file that stays published
     instead of reporting a failed read as the register being removed.
+    `clean`, when given, filters the previous rows before they are
+    compared or kept: a shrink it accounts for is published, and a kept
+    file never brings back a row this run withholds.
     """
     try:
         with open(os.path.join(DATA_DIR, name), encoding="utf-8") as f:
             previous = json.load(f)
     except Exception:
         previous = []
+    if clean is not None:
+        previous = clean(previous)
     if len(previous) >= CORE_EXPORT_MIN_ROWS and len(rows) < CORE_EXPORT_MIN_SHARE * len(previous):
         logger.error(
             f"Keeping the previous {name}: this run produced {len(rows)} row(s) "
@@ -1124,9 +1186,18 @@ def export_static_json_database():
     psc_checked = register_quality.gate(collapse_identical_rows(psc_records))
     psc_records = register_quality.public_rows(psc_checked)
     psc_withheld = register_quality.withheld_summary(psc_checked)
-    if psc_withheld["unsourced"] or psc_withheld["implausible"]:
-        logger.info(f"Register gate withheld {psc_withheld['unsourced']} unsourced and "
-                    f"{psc_withheld['implausible']} implausible row(s) from the export.")
+    if psc_withheld["unsourced"] or psc_withheld["implausible"] or psc_withheld["needs_review"]:
+        logger.info(f"Register gate withheld {psc_withheld['unsourced']} unsourced, "
+                    f"{psc_withheld['implausible']} implausible and {psc_withheld['needs_review']} "
+                    "headline-only person row(s) from the export.")
+    gate_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(REVIEW_QUEUE_PATH, "w", encoding="utf-8") as f:
+        json.dump(register_quality.review_queue(psc_checked, gate_stamp), f, default=str, indent=2)
+    try:
+        psc_records = register_quality.attach_evidence(
+            psc_records, db.get_articles(), gate_stamp, register_quality.withheld_names(psc_checked))
+    except Exception as exc:
+        logger.warning(f"PSC evidence skipped ({type(exc).__name__})")
 
     # Legacy duplicate rows collapse at export (the sheet keeps its audit
     # trail): one row per company, one per (person, organization). Agencies
@@ -1140,7 +1211,12 @@ def export_static_json_database():
     articles_sorted = core_rows("latest.json", articles_sorted)
     companies = core_rows("companies.json", companies)
     people = core_rows("people.json", people)
-    psc_records = core_rows("significant_control.json", psc_records)
+    # The previous register is judged by this run's gate first. A shrink
+    # the gate or an owner's un-approval caused is then published, and a
+    # failed read (nothing checked) still keeps the previous file, without
+    # a claim the gate now withholds.
+    psc_records = core_rows("significant_control.json", psc_records,
+                            clean=lambda rows: register_quality.without_withheld(rows, psc_checked))
 
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or
@@ -1158,7 +1234,9 @@ def export_static_json_database():
             "articles": _prev_snapshot("latest.json"),
             "companies": _prev_snapshot("companies.json"),
             "people": _prev_snapshot("people.json"),
-            "psc": _prev_snapshot("significant_control.json"),
+            # Pairs the gate now withholds would otherwise be listed by name
+            # as "removed" in this public file.
+            "psc": register_quality.without_withheld(_prev_snapshot("significant_control.json"), psc_checked),
         },
         {
             "articles": articles_sorted,
