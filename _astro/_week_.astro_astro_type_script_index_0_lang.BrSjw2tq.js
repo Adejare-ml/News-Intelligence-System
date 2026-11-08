@@ -1,0 +1,1 @@
+var e=document.querySelector(`[data-copy-status]`);document.querySelectorAll(`button[data-copy]`).forEach(t=>{t.addEventListener(`click`,async()=>{try{await navigator.clipboard.writeText(t.dataset.copy||``),e&&(e.textContent=`Copied. Paste it into your post.`)}catch{e&&(e.textContent=`Your browser blocked copying. Select the text on this page instead.`)}})});
