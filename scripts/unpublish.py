@@ -8,8 +8,10 @@ that file. The next pipeline run drops the name from every file it
 rewrites (the register, people, companies, news, graph, alerts, timelines,
 the email digest and the new brief). The next site build stops showing it
 (pages, search, sitemap) and takes it out of the copies of past briefs,
-archives, digests and the weekly wrap served under /data/; production does
-that only from a promoted version containing it. The committed archives
+archives, digests and the weekly wrap served under /data/. Production is
+built from the promoted code by scheduler runs and promotions, not by a
+push, so it does the build's part only once a version that has it is
+promoted: promote one before the first unpublish. The committed archives
 and digests, and the public repository's history, still hold the name.
 The rows stay in the Google Sheet; nothing is deleted.
 

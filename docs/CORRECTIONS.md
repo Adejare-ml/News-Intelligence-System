@@ -82,9 +82,18 @@ To publish a name again, delete its entry from `suppressed.json`.
 
 Until the next pipeline run, the row exports under `/data/` (the files
 the run rewrites, listed above) still contain the name, because a build
-copies them as they are; trigger a run to clear them at once. The build's
-scrub of the `/data/` brief and digest copies is site code, so production
-applies it only from a promoted version that contains it.
+copies them as they are; trigger a run to clear them at once.
+
+**Production follows the promoted code.** Production is rebuilt from the
+promoted site code (the `production` tag) with the current data, by each
+scheduler run and each promotion, never by a push (a push rebuilds only
+the test site). Everything the site build does above, on pages and in the
+`/data/` copies, reaches production only once a version that has it is
+promoted, and then at the next scheduler or promote build; until then
+production pages keep showing the name. Promote such a version before
+using `unpublish.py` for the first time. Production never serves
+`suppressed.json` itself, whatever version is promoted
+(`web/scripts/build-production.sh` removes it).
 
 **The repository keeps the name.** Only what the site serves is cleaned.
 The committed files in `backend/app/static/data/` that no run rewrites
