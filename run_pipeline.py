@@ -1236,15 +1236,22 @@ def export_static_json_database():
     people = dedupe_entity_rows(people, ["Name", "Organization"])
     agencies = dedupe_entity_rows(agencies, ["Agency"])
 
-    articles_sorted = core_rows("latest.json", articles_sorted)
-    companies = core_rows("companies.json", companies)
-    people = core_rows("people.json", people)
+    # A previous file is scrubbed of unpublished names before it is
+    # compared or kept: it may predate the unpublish, and a kept file would
+    # bring the name back and list it as new in changes.json.
+    def unpublished_out(rows):
+        return suppression.without(rows, hidden)
+
+    articles_sorted = core_rows("latest.json", articles_sorted, clean=unpublished_out)
+    companies = core_rows("companies.json", companies, clean=unpublished_out)
+    people = core_rows("people.json", people, clean=unpublished_out)
     # The previous register is judged by this run's gate first. A shrink
     # the gate or an owner's un-approval caused is then published, and a
     # failed read (nothing checked) still keeps the previous file, without
     # a claim the gate now withholds.
     psc_records = core_rows("significant_control.json", psc_records,
-                            clean=lambda rows: register_quality.without_withheld(rows, psc_checked))
+                            clean=lambda rows: register_quality.without_withheld(
+                                unpublished_out(rows), psc_checked))
 
     # "What changed this cycle": diff against the snapshots the previous run
     # left on disk, before they are overwritten below. A missing or

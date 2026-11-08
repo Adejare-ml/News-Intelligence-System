@@ -210,6 +210,51 @@ def test_a_holders_evidence_never_quotes_a_hidden_co_party(tmp_path, monkeypatch
     assert "Tolu Bakare" not in (out / "significant_control.json").read_text()
 
 
+def test_a_kept_previous_file_does_not_bring_back_a_hidden_name(tmp_path, monkeypatch):
+    """When a run's read collapses, the shrink guard (core_rows) keeps the
+    previous files. Those were written before the name was unpublished, so
+    they are scrubbed first: nothing is re-published, and changes.json,
+    whose previous side is scrubbed too, lists nothing as new."""
+    import run_pipeline as rp
+    from backend.app.db.excel_db import SheetsDatabase
+    import backend.app.services.trends as trends_mod
+
+    d = SheetsDatabase()
+    d.use_local = True
+    d.local_path = str(tmp_path / "db.xlsx")
+    d._cache = {}
+    d._init_db()
+    out = tmp_path / "data"
+    (out / "archives").mkdir(parents=True)
+    (out / "suppressed.json").write_text(json.dumps([{"name": "Tolu Bakare", "added": "2026-11-07"}]))
+    (out / "latest.json").write_text(json.dumps(
+        [{"Title": f"Story {i}", "URL": f"https://punchng.com/s{i}", "Risk Score": 80} for i in range(29)]
+        + [{"Title": "Tolu Bakare takes control of Ikeja Mills", "URL": "https://punchng.com/tb",
+            "Risk Score": 80}]))
+    (out / "companies.json").write_text(json.dumps(
+        [{"Company": f"Firm {i} Ltd"} for i in range(24)] + [{"Company": "Tolu Bakare Holdings Ltd"}]))
+    (out / "people.json").write_text(json.dumps(
+        [{"Name": f"Person {i}"} for i in range(24)] + [{"Name": "Tolu Bakare"}]))
+    (out / "significant_control.json").write_text(json.dumps(
+        [{"Person Name": f"Holder {i}", "Company": f"Firm {i} Ltd", "Percentage": "10%"} for i in range(24)]
+        + [{"Person Name": "Tolu Bakare", "Company": "Ikeja Mills", "Percentage": "60%"}]))
+    monkeypatch.setattr(rp, "db", d)
+    monkeypatch.setattr(rp, "DATA_DIR", str(out))
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    monkeypatch.setattr(rp.side_feeds, "export_side_feeds", lambda *a, **k: None)
+    monkeypatch.setattr(rp.article_images, "attach_images", lambda rows, cache, **k: 0)
+    monkeypatch.setattr(trends_mod, "fetch_reddit_nigeria", lambda *a, **k: [])
+    rp.export_static_json_database()
+
+    kept = {"latest.json": 29, "companies.json": 24, "people.json": 24, "significant_control.json": 24}
+    for name, rows in kept.items():
+        text = (out / name).read_text()
+        assert "Tolu Bakare" not in text, name
+        assert len(json.loads(text)) == rows, name
+    for name in ("changes.json", "graph.json", "psc_timeline.json"):
+        assert "Tolu Bakare" not in (out / name).read_text(), name
+
+
 def test_evidence_skips_a_sentence_naming_a_hidden_entity():
     """The hidden list is matched like the export's scrub: spelling
     variants and companies too, not only the gate's canonical people."""
