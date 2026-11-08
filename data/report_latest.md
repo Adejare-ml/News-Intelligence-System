@@ -1,22 +1,23 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-08 14:27:00 (UTC)
-**Run Window:** 2026-11-08, all runs to 14:27 (run 2 of the day)
+**Generated on:** 2026-11-08 18:23:15 (UTC)
+**Run Window:** 2026-11-08, all runs to 18:23 (run 3 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 6
+- **Total Articles Processed:** 9
 - **High Risk Signals:** 0
 - **Appointments Logged:** 0
 - **Procurement Awards:** 1
 
 ---
 
-# Executive Summary: Nigerian Corporate Transparency and MDA Watch
-**Report date:** 8 November 2026 | **Coverage:** All articles published on 8 November 2026 up to 14:27 (run 2 of the day)
+# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Monitor
+**Report date:** 2026-11-08 | **Coverage:** All articles published on 2026-11-08 up to 18:23 (run 3 of the day)
 
 ### Key Developments
-- **SERAP** urged the Federal Government to disclose the beneficiaries of the ₦50,000 NERSI relief payment, citing transparency over who received public funds. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRDlTN1lGTXhPUFhJY0pRZVlBcy0xSlZLX0NsdWpkZnVrOHlyazVXNEJKVmVuc0UxUUhrOC1aLXVZc245WDk0b0J1RG5BQ0I1bjdOam0zQkRUcmczV3htYlEta2NETmFWa2V2XzZuVFVSY19Nb0pkVTcwZllDU0FvdlJtMVFXdVA2QktyR3p6SDVnWkNvNVJTLW1BYl9fTFFXUl9rcGRzc0lCY2p5dXBYWmg3dlZuNkRMcWE1aHN5aHQ5b1FzdWRhR1VMYWRBTjlKczNia2dzVQ?oc=5))  
-- **Baze University** acquired two aircraft to expand aviation education. This is a low-risk capital investment, and the report gives no value or regulatory details. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWGtuN3lnNmU5RE5FRXBvbk1UNmZMWG5rSE9PSVFkMU94TXNVZmtacEJUbzJ2VVpRd0pLanpYWi1xclZTR25sYWFYWmV1dUpsbXNsUnFqMVVmaGNqTldYSG1WbmVaY0liaXdVa2RGRnQyc29JSWtGcUlpNEhmM0lZcFRfd290MGJwV2pBbVkwRWM3SUpsZkZzX1BCM1hHb0VwcTBreU9uaUt6TlQ1RmRIMVJiTTN6OUh2ZUs1MmZlMDZMeHpITDN3ZHF4NUFfMlhSN0ZESWxOSGo?oc=5))  
-- Baze University also targets 600 aviation professionals and plans a second Abuja aerodrome. Timelines and funding are unconfirmed. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSF80SlA2YjdQTDBLTzJaVkFsc1oyMTlfLUF5eXAtc1FBdlkyZ3RaSjl4WS1VYUxOY1dkWjZIb2dqNGFaSEdDVjNOaEsyd0tOZWgwanVhY0ZFd01ZWFRla0VVdGxEYzVRZWFjUlM3b3hXZnlaYXBVOXRRZUx2M2M3SXpUc0tVQ1RwdkZDWEx5Q3E0eTlSd3VETDFEZVBHV3dqQXpUZEhZTldBMGZrNnA5UzBZSTB0Vks2N0VrLXhZOVdYZmtOeVFpeHl5QXA5bG1KREE?oc=5))  
+- **Taraba naira order:** Governor Agbu Kefas signed an Executive Order to curb naira abuse in the state. Only the headline was available, so the provisions are unknown. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmJ1eEREVmcwWnJRdjZFN0h6Zy1BYl9tOVVxMTFFTUpONGNRWDFDSUtvczBvbWluODlKYXhmN1VSZ3BhclljUDFUUXk3SURrQUgwMXBCWmdWcGh6X0RUTnVnZEFXck1zV0V1Nmc3dEFWV3RUN215MmJMRzJlYnhZMWtKZXJRa3dqNmI0?oc=5))  
+- **Northern rail:** President Tinubu is reported to be fast-tracking northern rail projects. Scope, funding and timelines are not stated. ([Voice of Nigeria](https://news.google.com/rss/articles/CBMie0FVX3lxTFAzSFBTeU5jQVJMVkpxR2g4LU1lSTNtZG9jbFRDUjNLd1NiUlM0bENQOWJUVHpsbmJxMzNGRHJFYWV0M3A4RWdWbWRwLXlyZ2VkQWJ1S2UtbllCWWFsdHVZV19seDVjbWs2NlRjM3ZYd0JRaHJhLW5PM3pyMA?oc=5))  
+- **NGX tech earnings:** Revenue growth was mixed across nine listed tech and telecoms firms. MTN Nigeria revenue rose 23.6% to N4.61 trillion, and eTranzact profit after tax fell 42.7% to N1.38 billion. Legend Internet revenue fell 7.4%. ([Nairametrics](https://nairametrics.com/2026/11/08/top-ngx-listed-tech-companies-ranked-by-revenue-growth-in-2026/))  
+- **Baze University aviation expansion:** The university acquired two aircraft, targets 600 aviation professionals and plans a second Abuja aerodrome. The reports are headline-only, with no value or ownership detail. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWGtuN3lnNmU5RE5FRXBvbk1UNmZMWG5rSE9PSVFkMU94TXNVZmtacEJUbzJ2VVpRd0pLanpYWi1xclZTR25sYWFYWmV1dUpsbXNsUnFqMVVmaGNqTldYSG1WbmVaY0liaXdVa2RGRnQyc29JSWtGcUlpNEhmM0lZcFRfd290MGJwV2pBbVkwRWM3SUpsZkZzX1BCM1hHb0VwcTBreU9uaUt6TlQ1RmRIMVJiTTN6OUh2ZUs1MmZlMDZMeHpITDN3ZHF4NUFfMlhSN0ZESWxOSGo?oc=5))  
 
 ### High Risk Alerts
 No high-risk items today.

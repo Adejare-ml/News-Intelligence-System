@@ -19,6 +19,15 @@
       "previous_mentions": 9
     },
     {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "recent_avg": 12.5,
+      "previous_avg": 18.8,
+      "delta": -6.3,
+      "recent_mentions": 2,
+      "previous_mentions": 8
+    },
+    {
       "key": "customs service",
       "label": "Nigeria Customs Service",
       "recent_avg": 22.5,
@@ -118,6 +127,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "mtn communications",
+      "label": "MTN Nigeria Communications Plc",
+      "recent_avg": 15.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "transmission company of",
       "label": "Transmission Company of Nigeria",
       "recent_avg": 15.0,
@@ -155,5 +173,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-08 14:27:34"
+  "generated": "2026-11-08 18:23:50"
 }

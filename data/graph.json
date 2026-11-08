@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "737f70b3bdb8",
+      "label": "Taraba State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9f778a9a1d4e",
       "label": "SERAP",
       "type": "agency",
@@ -235,14 +241,14 @@
       "risk": "Low"
     },
     {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
+      "id": "aa0e4e6198bd",
+      "label": "Agbu Kefas",
       "type": "person",
       "risk": "Low"
     },
@@ -421,18 +427,6 @@
       "risk": "Low"
     },
     {
-      "id": "149587086c36",
-      "label": "Unnamed Oyo State Commissioner",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3a4a88456e84",
-      "label": "Oyo State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "539d727618e7",
       "label": "International Finance Corporation",
       "type": "psc",
@@ -498,7 +492,13 @@
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
       "to": "0c2be969618b",
-      "label": "Appointed as President of Nigeria"
+      "label": "Appointed as President"
+    },
+    {
+      "id": "28fae7776f5e",
+      "from": "aa0e4e6198bd",
+      "to": "737f70b3bdb8",
+      "label": "Appointed as Governor of Taraba State"
     },
     {
       "id": "456bb67cfb9e",
@@ -619,12 +619,6 @@
       "from": "711f164886cd",
       "to": "fa1f6b770d91",
       "label": "Appointed as ICT Director"
-    },
-    {
-      "id": "b39a272f0083",
-      "from": "149587086c36",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Commissioner"
     },
     {
       "id": "990674302105",

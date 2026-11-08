@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 942,
-      "mentions": 1570,
+      "companies": 943,
+      "mentions": 1571,
       "risk": {
-        "Low": 832,
+        "Low": 833,
         "Critical": 57,
         "Medium": 30,
         "High": 23
@@ -33,10 +33,10 @@
     },
     {
       "industry": "Telecoms",
-      "companies": 13,
-      "mentions": 59,
+      "companies": 15,
+      "mentions": 62,
       "risk": {
-        "Low": 12,
+        "Low": 14,
         "Medium": 1
       }
     },
@@ -404,6 +404,14 @@
       }
     },
     {
+      "industry": "Information Technology",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 2
+      }
+    },
+    {
       "industry": "Investment",
       "companies": 1,
       "mentions": 2,
@@ -606,6 +614,14 @@
       }
     },
     {
+      "industry": "Computer & Electronics",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Consultancy/Governance",
       "companies": 1,
       "mentions": 1,
@@ -635,6 +651,14 @@
       "mentions": 1,
       "risk": {
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Electronic Payments",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
       }
     },
     {
@@ -727,6 +751,14 @@
     },
     {
       "industry": "Infrastructure/Aviation",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Internet Services",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -966,5 +998,5 @@
       }
     }
   ],
-  "generated": "2026-11-08 14:27:34"
+  "generated": "2026-11-08 18:23:50"
 }
