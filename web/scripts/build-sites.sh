@@ -33,8 +33,8 @@ fi
 if [ "$SITES" = "both" ] || [ "$SITES" = "github" ]; then
   AURA_BASE=/News-Intelligence-System/ AURA_SITE=https://adejare-ml.github.io npm run build
   mv dist out/github
-  # _headers is Cloudflare-only.
-  rm -f out/github/_headers
+  # _headers and _redirects are Cloudflare-only.
+  rm -f out/github/_headers out/github/_redirects
   # Keep GitHub Pages from running Jekyll over the _astro/ folder.
   touch out/github/.nojekyll
 fi

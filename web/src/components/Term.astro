@@ -1,0 +1,70 @@
+---
+/**
+ * An abbreviation (PSC, CAC, CAMA, BPP) a reader can tap to see what it means.
+ * Hover shows the expansion through <abbr title>; a tap or Enter opens the
+ * definition as a native popover, so it works with no script under the CSP.
+ * A popover rather than <details> because a term sits inside headings and
+ * sentences, where only inline (phrasing) elements are valid.
+ */
+import { GLOSSARY, termId, type GlossaryTerm } from "../lib/glossary.ts";
+
+interface Props {
+  term: GlossaryTerm;
+  /** Visible text when it differs from the term, e.g. "CAMA 2020". */
+  label?: string;
+}
+const { term, label = term } = Astro.props;
+const { expansion, definition } = GLOSSARY[term];
+const id = termId(term);
+---
+<button type="button" class="term" popovertarget={id} aria-label={`${label}: ${expansion}, show definition`}><abbr title={expansion}>{label}</abbr></button><span class="term-pop" id={id} popover><strong>{term}: {expansion}.</strong> {definition}</span>
+
+<style>
+  .term {
+    display: inline;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    color: inherit;
+    cursor: help;
+  }
+  .term abbr {
+    text-decoration: underline dotted;
+    text-underline-offset: 0.2em;
+  }
+  .term:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+  /* Opens centred like a small footnote card, on top of everything. Hidden
+     unless open, so a browser without popover support shows only the
+     <abbr> title instead of the definition spilled into the sentence. */
+  .term-pop {
+    display: none;
+  }
+  .term-pop:popover-open {
+    display: block;
+    max-width: min(26rem, calc(100vw - 32px));
+    margin: auto;
+    padding: 16px 18px;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-m);
+    background: var(--surface);
+    color: var(--text-soft);
+    box-shadow: var(--shadow-2);
+    font: 400 0.92rem/1.5 var(--font-ui);
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: left;
+  }
+  .term-pop strong {
+    color: var(--text);
+  }
+  .term-pop::backdrop {
+    background: rgba(0, 0, 0, 0.35);
+  }
+</style>

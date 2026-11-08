@@ -7,6 +7,7 @@
  */
 import type { Holding } from "../lib/psc.ts";
 import { href } from "../lib/url.ts";
+import Term from "./Term.astro";
 
 interface Props {
   holding: Holding;
@@ -32,7 +33,7 @@ const fmt = (iso: string) => {
   ) : (
     <>No source article on file</>
   )}
-  {h.confidence === "Official filing" ? ", with a filing reference on record." : ", not verified with the CAC register."}
+  {h.confidence === "Official filing" ? ", with a filing reference on record." : <>, not verified with the <Term term="CAC" /> register.</>}
   {" "}<a class="fix" href={href(`dispute/?ref=${encodeURIComponent(`${h.person} / ${h.company}`)}`)}>Dispute this record</a>
 </p>
 

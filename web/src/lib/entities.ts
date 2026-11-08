@@ -61,6 +61,21 @@ export function mentions(text: string, name: string): boolean {
   return new RegExp(`(^|[^a-z0-9])${escaped}($|[^a-z0-9])`, "i").test(nameKey(text));
 }
 
+// Words in a registered company's name ("Zenith Bank Plc", "NNPC Limited").
+const LEGAL_SUFFIX = /\b(plc|ltd|limited|group|bank|holdco|holdings|inc)\b/i;
+
+/**
+ * Whether we can safely describe an entity as a company to search engines.
+ * kind "company" alone is not enough: the pipeline files often-mentioned
+ * people and loose words ("Tinubu", "AI") under Company Info too, so this
+ * needs the company side of a register holding, a real industry, or a
+ * legal suffix in the name.
+ */
+export function isKnownCompany(e: Entity): boolean {
+  if (e.kind !== "company") return false;
+  return e.holdings.some((h) => slugify(h.company) === e.slug) || e.industry !== "" || LEGAL_SUFFIX.test(e.name);
+}
+
 function articleMentions(a: Article, name: string): boolean {
   const ents = String(a.Entities || "").split("|").map(nameKey);
   if (ents.includes(nameKey(name))) return true;
