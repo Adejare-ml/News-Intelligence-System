@@ -70,10 +70,13 @@ const structuredData = !isCompany ? undefined : organizationLd({
       {e.lastSeen && <div><dt>Last seen</dt><dd class="date">{fmt(e.lastSeen)}</dd></div>}
     </dl>
     {coverage && <Sparkline series={coverage} />}
-    <div class="follow" data-follow-wrap hidden>
-      <button type="button" class="btn btn-ghost" data-follow data-slug={e.slug} data-name={e.name} aria-pressed="false">Follow</button>
-      <span class="meta">Saved in this browser only</span>
-    </div>
+    {/* Known companies only: a follow matches news by name, and a person's page is one holder at one company. */}
+    {isCompany && (
+      <div class="follow" data-follow-wrap hidden>
+        <button type="button" class="btn btn-ghost" data-follow data-slug={e.slug} data-name={e.name} aria-pressed="false">Follow</button>
+        <span class="meta">Saved in this browser only</span>
+      </div>
+    )}
   </section>
 
   {e.holdings.length > 0 && (

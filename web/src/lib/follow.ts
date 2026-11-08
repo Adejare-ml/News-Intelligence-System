@@ -1,10 +1,10 @@
 /**
- * "Follow" on entity pages, kept in this browser only (localStorage). Pure
+ * "Follow" on company pages, kept in this browser only (localStorage). Pure
  * helpers for the client script (scripts/follow.ts), so the matching is
  * tested here and the script only does storage and the DOM.
  */
 import { articleMentions, mentions } from "./entities.ts";
-import { nameKey } from "./entity-key.ts";
+import { nameKey, slugify } from "./entity-key.ts";
 import { cleanAlerts, type RawAlert } from "./alerts.ts";
 import { cleanTitle, parseTime, type Article } from "./stories.ts";
 
@@ -20,12 +20,23 @@ export interface FollowAlert extends RawAlert {
 
 export const FOLLOW_KEY = "aura-following";
 
-/** Whatever is in storage (edited by hand, an older format): keep only well-formed entries. */
+/**
+ * A follow saved from a person's page: its slug is holderSlug(name, company).
+ * That page is one holder at one company, but a follow matches news by name
+ * alone, so it would show another person of the same name. A company's slug
+ * is slugify(name), so a company with "at" in its name is never caught.
+ */
+const isHolderFollow = (f: Follow) => f.slug.startsWith(`${slugify(f.name)}-at-`);
+
+/**
+ * Whatever is in storage (edited by hand, an older format): keep only
+ * well-formed company entries. Follow is offered on company pages only.
+ */
 export function parseFollows(raw: string | null): Follow[] {
   try {
     const list = JSON.parse(raw ?? "[]");
     if (!Array.isArray(list)) return [];
-    return list.filter((f) => f && typeof f.slug === "string" && f.slug && typeof f.name === "string" && f.name);
+    return list.filter((f) => f && typeof f.slug === "string" && f.slug && typeof f.name === "string" && f.name && !isHolderFollow(f));
   } catch {
     return [];
   }

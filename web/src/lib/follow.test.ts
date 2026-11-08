@@ -2,6 +2,8 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import { parseFollows, toggleFollow, latestMention, hasNewFollowedAlert } from "./follow.ts";
 import { cleanAlerts } from "./alerts.ts";
+import { holderSlug } from "./entities.ts";
+import { slugify } from "./entity-key.ts";
 
 const dangote = { slug: "dangote-refinery", name: "Dangote Refinery" };
 const mtn = { slug: "mtn-nigeria", name: "MTN Nigeria" };
@@ -13,6 +15,19 @@ describe("following in the browser", () => {
     assert.deepEqual(parseFollows("not json"), []);
     assert.deepEqual(parseFollows('{"slug":"x"}'), []);
     assert.deepEqual(parseFollows(JSON.stringify([dangote, { slug: 3 }, { slug: "a" }])), [dangote]);
+  });
+
+  test("a person follow saved from a holder page is dropped, a company whose slug has '-at-' is kept", () => {
+    // A person page is one holder at one company (#166), but Follow matched the
+    // name alone, so another Abubakar Musa's arrest showed under the Kola holder.
+    const holder = { slug: holderSlug("Abubakar Musa", "Kola Foods Ltd"), name: "Abubakar Musa" };
+    const mosque = { slug: slugify("Shuni Central Jumu’at Mosque"), name: "Shuni Central Jumu’at Mosque" };
+    assert.equal(mosque.slug, "shuni-central-jumu-at-mosque");
+    const follows = parseFollows(JSON.stringify([holder, dangote, mosque]));
+    assert.deepEqual(follows, [dangote, mosque]);
+    const arrest = [{ date: "2026-11-04", title: "Abubakar Musa arrested in Kano", url: "https://p.test/arrest", source: "Punch", entities: ["Abubakar Musa"] }];
+    assert.equal(hasNewFollowedAlert(arrest, follows, new Set()), false);
+    assert.equal(latestMention(follows[0].name, [], arrest), null);
   });
 
   test("follow adds, a second press removes", () => {

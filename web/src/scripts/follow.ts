@@ -1,11 +1,13 @@
 /**
  * Follow, in this browser only.
- *  - Entity pages: a Follow button that saves the entity to localStorage.
- *  - Home page: a "Following" panel with each followed entity's latest
+ *  - Company pages: a Follow button that saves the company to localStorage.
+ *    Never on a person's page, which is one holder at one company: a follow
+ *    matches news by name, so it would show another person of that name.
+ *  - Home page: a "Following" panel with each followed company's latest
  *    mention, from /data/latest.json and /data/alerts.json (same origin,
  *    so the CSP's connect-src 'self' allows it).
  *  - Every page: a dot on the alerts bell while an unread alert names a
- *    followed entity.
+ *    followed company.
  * Everything starts hidden in the HTML, so without JavaScript (or without
  * storage) none of it shows. Nothing leaves the browser.
  */
@@ -108,7 +110,7 @@ const dot = document.querySelector<HTMLElement>("[data-follow-dot]");
 const note = document.querySelector<HTMLElement>("[data-follow-note]");
 function showDot(on: boolean) {
   dot!.hidden = !on;
-  if (note) note.textContent = on ? "Includes a new alert about someone you follow" : "";
+  if (note) note.textContent = on ? "Includes a new alert about a company you follow" : "";
 }
 async function updateDot() {
   if (!dot) return;
