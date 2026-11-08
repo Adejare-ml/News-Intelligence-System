@@ -8,7 +8,7 @@
  */
 import { escapeHtml, page, readBody, validToken, type Ctx } from "../_lib/http.ts";
 import {
-  CATEGORIES, FREQUENCIES, REGIONS, describePrefs, parsePrefs, type Prefs,
+  CATEGORIES, FREQUENCIES, HEADLINE_CATEGORIES, REGIONS, categoryLabel, describePrefs, listLabels, parsePrefs, type Prefs,
 } from "../_lib/categories.ts";
 import { subscriberStore, type Subscriber } from "../_lib/subscribers.ts";
 
@@ -29,7 +29,7 @@ export function preferencesForm(token: string, prefs: Prefs, paused: boolean): s
   ).join("");
   return `<form method="post" action="/api/preferences?token=${t}">
 <fieldset><legend>What you want to hear about</legend>${topics}</fieldset>
-<fieldset><legend>Headlines from</legend>${regions}<p class="hint">Applies to Sports, Technology, Politics and Entertainment. Business is always Nigeria.</p></fieldset>
+<fieldset><legend>Headlines from</legend>${regions}<p class="hint">Applies to ${escapeHtml(listLabels(HEADLINE_CATEGORIES.map(categoryLabel)))}. Business is always Nigeria.</p></fieldset>
 <fieldset><legend>How often</legend>${often}</fieldset>
 <fieldset><legend>Pause</legend><label><input type="checkbox" name="paused" value="1"${checked(paused)}> Pause the brief for now</label></fieldset>
 <button type="submit">Save my choices</button>

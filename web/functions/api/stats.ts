@@ -3,11 +3,12 @@
  *
  * Counts for the owner: subscribers by status, and among active readers
  * (confirmed, not paused) by category, region and frequency; sign-ups per
- * ISO week; and the last 14 sends. Counts only: no address ever leaves D1.
+ * ISO week; how many sign-ups confirm, and how fast; and the last 14 sends.
+ * Counts only: no address ever leaves D1.
  */
 import { authorised, json, type Ctx } from "../_lib/http.ts";
-import { CATEGORIES, FREQUENCIES, REGIONS, headlineCategories, type Prefs } from "../_lib/categories.ts";
-import { sendLog, subscriberStore } from "../_lib/subscribers.ts";
+import { CATEGORIES, FREQUENCIES, REGIONS, headlineCategories } from "../_lib/categories.ts";
+import { sendLog, subscriberStore, type StatRow } from "../_lib/subscribers.ts";
 
 /** Monday of the ISO week a timestamp falls in, as YYYY-MM-DD (UTC). */
 export function weekOf(iso: string): string | null {
@@ -21,7 +22,43 @@ export function weekOf(iso: string): string | null {
 
 const zeroes = <T extends string>(ids: readonly T[]) => Object.fromEntries(ids.map((id) => [id, 0])) as Record<T, number>;
 
-export function summarise(rows: { status: string; paused: boolean; created_at: string; prefs: Prefs }[], weeks = 12) {
+/** A pending sign-up younger than this may still confirm (the reminder goes at 48-72h), so it is not counted yet. */
+export const CONFIRM_WAIT_HOURS = 72;
+
+const hoursBetween = (from: string, to: string) => (Date.parse(to) - Date.parse(from)) / 3_600_000;
+
+function median(values: number[]): number | null {
+  if (!values.length) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  return sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2;
+}
+
+/**
+ * rate: of the sign-ups that have had their chance (every row except pending
+ * ones younger than CONFIRM_WAIT_HOURS), the share that ever confirmed
+ * (confirmed_at set, whether or not they have since unsubscribed). `counted`
+ * is that denominator. median_hours_to_confirm: from sign-up to confirmation,
+ * over everyone who confirmed. Both null when there is nothing to measure.
+ * A reader who unsubscribes and signs up again counts once, for the latest
+ * sign-up: reopen() restarts created_at and clears confirmed_at.
+ */
+export function confirmationStats(rows: Pick<StatRow, "status" | "created_at" | "confirmed_at">[], now: Date) {
+  const counted = rows.filter((r) => r.status !== "pending" || hoursBetween(r.created_at, now.toISOString()) >= CONFIRM_WAIT_HOURS);
+  const confirmed = counted.filter((r) => r.confirmed_at);
+  const hours = rows
+    .filter((r) => r.confirmed_at)
+    .map((r) => hoursBetween(r.created_at, r.confirmed_at!))
+    .filter((h) => Number.isFinite(h) && h >= 0);
+  const mid = median(hours);
+  return {
+    rate: counted.length ? Math.round((confirmed.length / counted.length) * 1000) / 1000 : null,
+    counted: counted.length,
+    median_hours_to_confirm: mid === null ? null : Math.round(mid * 10) / 10,
+  };
+}
+
+export function summarise(rows: StatRow[], weeks = 12, now = new Date()) {
   const status: Record<string, number> = { pending: 0, confirmed: 0, unsubscribed: 0 };
   const active = rows.filter((r) => r.status === "confirmed" && !r.paused);
   const byCategory = zeroes(CATEGORIES.map((c) => c.id));
@@ -52,6 +89,7 @@ export function summarise(rows: { status: string; paused: boolean; created_at: s
       by_frequency: byFrequency,
     },
     signups_by_week: recentWeeks.map((week) => ({ week, count: signups[week] })),
+    confirmation: confirmationStats(rows, now),
   };
 }
 

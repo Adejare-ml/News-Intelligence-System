@@ -6,14 +6,16 @@
  * Functions and the email pages, so a category added here appears
  * everywhere. Business is AURA's own ownership brief; the others are
  * headline sections built by the pipeline (category_news.json).
+ *
+ * Sports and Entertainment were offered once and cut. Rows that still name
+ * them read without them (parseCategories keeps only ids listed here), and
+ * a row left with nothing falls back to Business (prefsFromRow).
  */
 
 export const CATEGORIES = [
   { id: "business", label: "Business", blurb: "Ownership changes, board moves and public contracts" },
-  { id: "sports", label: "Sports", blurb: "Football, athletics and the results that matter" },
   { id: "technology", label: "Technology", blurb: "Tech, startups, telecoms and AI" },
   { id: "politics", label: "Politics", blurb: "Government, elections and policy" },
-  { id: "entertainment", label: "Entertainment", blurb: "Music, film and culture" },
 ] as const;
 
 export type CategoryId = (typeof CATEGORIES)[number]["id"];
@@ -121,7 +123,7 @@ export function listLabels(items: string[]): string {
   return `${items.slice(0, -1).join(", ")} and ${items[items.length - 1]}`;
 }
 
-/** "Business and Sports (Nigeria + Global), every morning" */
+/** "Business and Technology (Nigeria + Global), every morning" */
 export function describePrefs(prefs: Prefs): string {
   const topics = listLabels(prefs.categories.map(categoryLabel));
   const region = headlineCategories(prefs).length ? ` (${REGIONS.find((r) => r.id === prefs.region)?.label})` : "";

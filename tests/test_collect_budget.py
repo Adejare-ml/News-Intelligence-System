@@ -35,6 +35,7 @@ def stubbed_adapters(monkeypatch):
 
     for attr, name in [
         ("fetch_google_news_rss", "rss"),
+        ("fetch_outlet_feeds", "outlets"),
         ("fetch_news_api", "newsapi"),
         ("fetch_gnews", "gnews"),
         ("fetch_guardian_news", "guardian"),
@@ -61,8 +62,8 @@ class TestCollectBudget:
     def test_all_adapters_run_inside_the_budget(self, stubbed_adapters, monkeypatch):
         _stub_clock(monkeypatch, per_adapter_seconds=1.0)
         articles = NewsIngestionService.collect_all()
-        assert stubbed_adapters == ["rss", "newsapi", "gnews", "guardian", "newsdata"]
-        assert len(articles) == 5
+        assert stubbed_adapters == ["rss", "outlets", "newsapi", "gnews", "guardian", "newsdata"]
+        assert len(articles) == 6
 
     def test_exhausted_budget_skips_the_remaining_adapters(self, stubbed_adapters, monkeypatch):
         # Each clock reading jumps past the whole budget, so only the first

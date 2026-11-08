@@ -19,13 +19,7 @@ const earlier = all.filter((h) => !within(h.lastReported, REGISTER_RECENT_DAYS, 
 const s = summarise(all);
 const shown = summarise(holdings);
 const gate = data.registerQuality();
-const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0);
-const companiesPerPerson = new Map<string, Set<string>>();
-for (const h of all) {
-  const k = h.person.toLowerCase();
-  if (!companiesPerPerson.has(k)) companiesPerPerson.set(k, new Set());
-  companiesPerPerson.get(k)!.add(h.company.toLowerCase());
-}
+const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0) + (gate.needs_review ?? 0);
 const contracts = sortContracts(data.procurement().map(toContract));
 
 const filters = [
@@ -33,7 +27,6 @@ const filters = [
   { id: "stake", label: "Stake disclosed", count: shown.withStake },
   { id: "pattern", label: "Worth checking", count: shown.withPattern },
   { id: "band", label: "5–25% band", count: shown.nigeriaBand },
-  { id: "multi", label: "Several companies", count: holdings.filter((h) => (companiesPerPerson.get(h.person.toLowerCase())?.size ?? 0) > 1).length },
 ];
 ---
 <Base
@@ -62,6 +55,7 @@ const filters = [
       withheld > 0 && `${withheld} of ${gate.checked} extracted ${gate.checked === 1 ? "record" : "records"} did not pass the validation gate (${[
         gate.unsourced && `${gate.unsourced} with no source link`,
         gate.implausible && `${gate.implausible} judged implausible`,
+        gate.needs_review && `${gate.needs_review} naming a person on a headline alone, awaiting review`,
       ].filter(Boolean).join(", ")}) and ${withheld === 1 ? "is" : "are"} not published.`,
     ].filter(Boolean).join(" ")}</p>
     <p class="note">
@@ -98,7 +92,7 @@ const filters = [
 
     <div class="grid" data-grid>
       {holdings.map((h, i) => (
-        <HoldingCard holding={h} index={i} multiCompany={(companiesPerPerson.get(h.person.toLowerCase())?.size ?? 0) > 1} />
+        <HoldingCard holding={h} index={i} />
       ))}
     </div>
     {holdings.length === 0 && earlier.length === 0 && (

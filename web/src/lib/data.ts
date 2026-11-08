@@ -69,6 +69,8 @@ export interface GateSummary {
   published?: number;
   unsourced?: number;
   implausible?: number;
+  /** Claims naming a person on headline-only reporting, held for the owner's review. */
+  needs_review?: number;
 }
 /** Counts (never names) of register rows the validation gate kept off the site. */
 export const registerQuality = () => readJson<GateSummary>("register_quality.json", {});
@@ -132,7 +134,7 @@ export interface CategoryNews {
   generated?: string;
   sections?: Record<string, { nigeria?: Headline[]; global?: Headline[] }>;
 }
-/** Sports, technology, politics and entertainment headlines, Nigeria and Global editions. */
+/** Technology and politics headlines, Nigeria and Global editions. */
 export const categoryNews = (): CategoryNews => {
   const news = readJson<CategoryNews>("category_news.json", {});
   const names = hidden();

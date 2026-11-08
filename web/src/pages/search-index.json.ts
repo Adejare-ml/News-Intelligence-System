@@ -28,7 +28,7 @@ export function GET() {
     ...entities.map((e) => ({
       t: "entity" as const,
       l: e.name,
-      s: e.kind === "person" ? "Person" : `Company${e.industry ? ` · ${e.industry}` : ""}`,
+      s: e.kind === "person" ? `Person · ${e.company}` : `Company${e.industry ? ` · ${e.industry}` : ""}`,
       u: href(`entity/${e.slug}/`),
     })),
     ...holdings.map((h) => ({
