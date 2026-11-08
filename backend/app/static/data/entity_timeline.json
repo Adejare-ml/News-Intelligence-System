@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 115,
+      "total_mentions": 116,
       "points": [
         {
           "week": "2026-09-07",
@@ -55,9 +55,9 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 4,
-          "avg_risk": 16.2,
-          "max_risk": 25
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 35
         }
       ]
     },
@@ -2928,6 +2928,31 @@
       ]
     },
     {
+      "key": "serap",
+      "label": "SERAP",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 52.5,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "seplat energy",
       "label": "Seplat Energy",
       "total_mentions": 4,
@@ -3762,25 +3787,6 @@
       ]
     },
     {
-      "key": "serap",
-      "label": "SERAP",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 52.5,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "shell",
       "label": "Shell",
       "total_mentions": 3,
@@ -4178,6 +4184,19 @@
           "mentions": 2,
           "avg_risk": 17.5,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "baze university",
+      "label": "Baze University",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -6304,20 +6323,7 @@
           "max_risk": 65
         }
       ]
-    },
-    {
-      "key": "akwa ibom state house of assembly",
-      "label": "Akwa Ibom State House of Assembly",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-08 02:26:08"
+  "generated": "2026-11-08 14:27:34"
 }

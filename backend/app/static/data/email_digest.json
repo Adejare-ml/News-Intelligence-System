@@ -1,18 +1,18 @@
 {
-  "edition": "20261108-11292-preview",
-  "preview": true,
-  "built_at": "2026-11-08 02:26:08",
+  "edition": "20261108-11313",
+  "preview": false,
+  "built_at": "2026-11-08 14:27:34",
   "date": "Sunday 8 November 2026",
   "subject": "AURA · Sun 8 Nov · CBN sets N15bn capital requirement for dollar stablecoins",
-  "preheader": "Also: FG vows National Library project completion in 24 months · 11 stories, 0 risk alerts",
+  "preheader": "Also: FG vows National Library project completion in 24 months · 15 stories, 0 risk alerts",
   "since": "Fri 6 Nov, 16:07 Lagos",
-  "through_id": 11292,
+  "through_id": 11313,
   "stats": {
-    "reports": 14,
-    "stories": 11,
+    "reports": 18,
+    "stories": 15,
     "outlets": 5,
     "risk_alerts": 0,
-    "public_money": 2,
+    "public_money": 3,
     "appointments": 1,
     "ownership": 0
   },
@@ -22,19 +22,29 @@
   ],
   "overview": [
     {
-      "text": "The Central Bank of Nigeria has set a N15 billion capital requirement for dollar stablecoins, according to a Punch Newspapers headline.",
+      "text": "The Central Bank of Nigeria has set a N15 billion capital requirement for dollar stablecoins, according to Punch.",
       "card": 1,
       "outlet": "Punch"
     },
     {
-      "text": "Premium Times reports: EFCC secures final forfeiture of $163,592 proceeds of US fraud",
-      "card": 2,
+      "text": "The Federal Government, through Education Minister Tunji Alausa, pledged to complete the long-abandoned National Library of Nigeria headquarters project in Abuja within 24 months.",
+      "card": 3,
+      "outlet": "Punch"
+    },
+    {
+      "text": "Jigawa State and the Islamic Development Bank are collaborating on a $110 million project to improve schools and teacher development, Premium Times reports.",
+      "card": 5,
       "outlet": "Premium Times"
     },
     {
-      "text": "The Federal Government, through Minister of Education Tunji Alausa, has pledged to complete the long-abandoned National Library of Nigeria headquarters project in Abuja within 24 months.",
-      "card": 3,
-      "outlet": "Punch"
+      "text": "Kogi announced a ₦7 billion upgrade of primary health centres without providing details, while clinics remain incomplete and understaffed, according to Premium Times.",
+      "card": 7,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "NNPC says its gas transportation network is not responsible for the drop in power generation, Vanguard reports.",
+      "card": 10,
+      "outlet": "Vanguard"
     }
   ],
   "insights": [],
@@ -199,38 +209,66 @@
     },
     {
       "n": 7,
+      "theme": "Public money",
+      "text": "Kogi State has announced a ₦7 billion upgrade of primary health centres (PHCs), but has not provided details of the project.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNY29xWUZIWGU2djhQZ2tTOXJpczFhdkk3YUZKN1ZVODV5TUkxYU5Da2V3WHdlMHJkaHNlOE9GeUowSHlOakdxLVRfMzdMS01IQ0V1djdQMGNUb3pxSzV5NW5DVS1LdzIwTWtibGlVdThNOFZFQTJqT3M0UG5paG5QaDVQX1ZwRnBNN05kTHJjYW0yOERPUXJzNlN3WUZoX1VqcnpVal9temExVjBLNjA3YnJTeUdEd2dlaUlMcnhjMW5pUlNadDlLZ3lPRjVwYmVDOHQ1MTBxZ1hpMmZwUlhHaFR0UHlBOWNXT2pRTWtsQ2FvR054WWNkR3ZRY2IyOW9CbVE4ZEEwbXZvX3ZxU1Ryd2dxdkdzMzU1SVUw?oc=5"
+    },
+    {
+      "n": 8,
       "theme": "Regulation & enforcement",
       "text": "The Economic and Financial Crimes Commission (EFCC) secured the conviction of 10 people over illegal petroleum dealings in Delta State.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEV3MDlVQ1dmYlF3OWJqOG1uejJtTUJfZ0VWNktxd1RUTHVRVUo5N0NUbGdfVXozWENkUWxVNFFuUTI5VHN4TG9IQnM1WjZuZlVrbWI4cVRBN1FKdWJFTU9HTTdzLVBTaVhWRFpyT20yQmt5dUJxLS1Fb0dlRE5pMjgyb25FdlM5dVpjZmdWLTRRTk1IZnBBQWVCVE5XNnF2Q1lmVGNwcmx5S1kwdGRtaXY2S3FlUjFQd3J3ODZrU1U1LVZKeW9Z?oc=5"
     },
     {
-      "n": 8,
+      "n": 9,
+      "theme": "Other",
+      "text": "SERAP has urged the Federal Government to disclose details of the beneficiaries of a N50,000 relief payment under the NERSI programme.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRDlTN1lGTXhPUFhJY0pRZVlBcy0xSlZLX0NsdWpkZnVrOHlyazVXNEJKVmVuc0UxUUhrOC1aLXVZc245WDk0b0J1RG5BQ0I1bjdOam0zQkRUcmczV3htYlEta2NETmFWa2V2XzZuVFVSY19Nb0pkVTcwZllDU0FvdlJtMVFXdVA2QktyR3p6SDVnWkNvNVJTLW1BYl9fTFFXUl9rcGRzc0lCY2p5dXBYWmg3dlZuNkRMcWE1aHN5aHQ5b1FzdWRhR1VMYWRBTjlKczNia2dzVQ?oc=5"
+    },
+    {
+      "n": 10,
       "theme": "Other",
       "text": "The Nigerian National Petroleum Company (NNPC) has stated that its gas transportation network is not responsible for the drop in power generation.",
       "outlet": "Vanguard",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQWZ0N0JaUVoyTkFuclFvMHVlOVhiUndjYXlJZERvZEpxQnc3d1FMa3JpcVJWUnVlSk5lUUFnVmZoSjNYUF83WXh3cllpTlJnMW1LeUtPWnY5WVluTE40VDN3OEtSRk1VTWxNSm9OUGpRTHRMRmdxdDUzc2V2Ym8tc2JJUGhCUXNKaFdPTUZad0NEeW0wd0paYWllX19FVmQ2dEV0QmkyUElyVDVYX3d30gG0AUFVX3lxTE9rdENOWEhPNHRRTEhfTHR4YjJicGgxN2RRaEpwWHEyZXJTRGhqZk9WMnh2eUd4TVRSdUlUSzd2VmJ3bF95b3FhUV9XNWF6QUN5WjlkNjJnWFhwdzJEdVNDQUpFZjZWay1LTE9JM20weWFGV0N2TEoxRHFGeVVMTVR2bGswLUI0aWdLcnhWQjVMSU1nWi1ld25mZ2hMMTlxclNndmNrSnZ2c3NVOEI4RGxJYm54cw?oc=5"
     },
     {
-      "n": 9,
+      "n": 11,
       "theme": "Regulation & enforcement",
       "text": "The Zamfara State Government has inaugurated a committee tasked with tackling illegal mining in the state.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSm82S3ZpWjRRY0VZQ2x5WmdMU1RXbVd5WElSQXFZVlBjUmNGdy1MdXZPQjJEdXRVemJwbnJfUFZFZ1BuMXZUQklMaVJLMEtRckxiUklRMnQ2SmVKZFdra3Q0VUlwdWt0RjVVLW1DUEdqY24tRU1mMjFKYWJSTDdxbERBZHdwc0NkaGxtMGxaWjFpZ2RWb3BjUEgxMVBmd3l5eS14Zm1xanVNQQ?oc=5"
     },
     {
-      "n": 10,
+      "n": 12,
       "theme": "Other",
       "text": "The Transmission Company of Nigeria (TCN) has disputed Ikeja Electric's explanation for power outages affecting Band A feeders.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZXV3Sk9oUGtMaklial9LdnNTMTFFMTRheEdrOTRjQXYwZmE3WmttWjVmRGloY1BueFd1MU94X1VyanVHWUM4N2VxMUNIYkR6YU03R1hkOVY0YXhRZ2JFN3NBdlNxN1FDcV80dDV4WUltU0tNZHNrYmpKam5fdWwwSERtLUVMWEQwQlNkcUlEMkF2SzZ3TndIZzRlUlFCZEE2bG1iVlR0aHhvWGlHT0JQb3ljTk1qRDl3SHpQamVFYm9BWnF3WUhv?oc=5"
     },
     {
-      "n": 11,
+      "n": 13,
       "theme": "People",
       "text": "Enugu State Governor Peter Mbah has inaugurated 68 development centre administrators tasked with carrying projects and policies to more communities.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPUFdOZElURm9rQ2ZDV3JSUmVzMGVnSF9IVDE3Yk8zbGNKRWNNU0UzRk9SRl9QbGtvVk9scm9jTjdHdXdkNHUwSmtoREY2MWlBdDdhYTFma3ljR3lRYnlRSTZacmhwZkVVQ1UwLWpydHcya0I2OTdVRW10N2VPNVowTzRXM21HamhuLXhac0dfZm5Ydk9fOTYtS3JqVGRxT2syUGF3SkxiUmMzWTh1bG5ERzVTb01wVjE5NDNlbG52bzhMTzhmLXNVRFN4WjRuWG95ank4My15ZVRtbXY3SUUxQThGQ0w5UQ?oc=5"
+    },
+    {
+      "n": 14,
+      "theme": "Other",
+      "text": "Baze University has set a target of training 600 aviation professionals and plans a second aerodrome in Abuja, according to a Guardian Nigeria report.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSF80SlA2YjdQTDBLTzJaVkFsc1oyMTlfLUF5eXAtc1FBdlkyZ3RaSjl4WS1VYUxOY1dkWjZIb2dqNGFaSEdDVjNOaEsyd0tOZWgwanVhY0ZFd01ZWFRla0VVdGxEYzVRZWFjUlM3b3hXZnlaYXBVOXRRZUx2M2M3SXpUc0tVQ1RwdkZDWEx5Q3E0eTlSd3VETDFEZVBHV3dqQXpUZEhZTldBMGZrNnA5UzBZSTB0Vks2N0VrLXhZOVdYZmtOeVFpeHl5QXA5bG1KREE?oc=5"
+    },
+    {
+      "n": 15,
+      "theme": "Ownership & capital",
+      "text": "Baze University has acquired two aircraft as part of an expansion of its aviation education programme, according to a Premium Times report.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWGtuN3lnNmU5RE5FRXBvbk1UNmZMWG5rSE9PSVFkMU94TXNVZmtacEJUbzJ2VVpRd0pLanpYWi1xclZTR25sYWFYWmV1dUpsbXNsUnFqMVVmaGNqTldYSG1WbmVaY0liaXdVa2RGRnQyc29JSWtGcUlpNEhmM0lZcFRfd290MGJwV2pBbVkwRWM3SUpsZkZzX1BCM1hHb0VwcTBreU9uaUt6TlQ1RmRIMVJiTTN6OUh2ZUs1MmZlMDZMeHpITDN3ZHF4NUFfMlhSN0ZESWxOSGo?oc=5"
     }
   ],
   "also_more": 0,
@@ -259,11 +297,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": ""
+    "digest": "claude"
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 0
+    "insights_dropped": 2
   },
   "site": "https://auranews.pages.dev"
 }
