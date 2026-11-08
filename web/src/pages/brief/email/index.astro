@@ -15,13 +15,14 @@ import { listEditions } from "../../../lib/archive.ts";
 import { lagosDate } from "../../../lib/edition.ts";
 import { groupHoldings, describeHolding } from "../../../lib/psc.ts";
 import { readDigest } from "../../../lib/digest.ts";
+import { morningUrl } from "../../../lib/morning.ts";
 import { briefLink, briefSource, emailEdition } from "../../../lib/brief-link.ts";
 import DigestEmail from "../../../components/email/DigestEmail.astro";
 import { ink, muted, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } from "../../../components/email/theme.ts";
 
 // The pipeline's edition (every story since the last email, as cards). The
 // markdown brief below is only the fallback when no edition file exists.
-const digest = readDigest(data.readJson<unknown>("email_digest.json", null));
+const digest = readDigest(data.emailDigest());
 
 const brief = parseBrief(data.briefMarkdown());
 const latest = listEditions()[0];
@@ -84,7 +85,9 @@ const summary = [
       <tr><td align="center" style="padding:24px 12px;">
         <Fragment set:html={'<!--[if mso]><table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0"><tr><td><![endif]-->'} />
         <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fffcf4;border-radius:14px;">
-          <tr><td style={`padding:32px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>
+          {/* No edition data, so no edition page: the archive is the browser copy. */}
+          <tr><td align="right" style={`padding:14px 32px 0;font:12px/1.55 ${sans};color:${muted};`}><a href={morningUrl(site)} style={`color:${muted};`}>View in browser</a></td></tr>
+          <tr><td style={`padding:14px 32px 8px;font:600 12px/1.4 ${sans};letter-spacing:2px;color:${gold};`}>
             AURA · THE MORNING BRIEF
           </td></tr>
           <tr><td style={`padding:0 32px;font:500 30px/1.15 ${serif};color:${ink};`}>

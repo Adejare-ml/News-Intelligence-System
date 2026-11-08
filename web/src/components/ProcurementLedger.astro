@@ -1,6 +1,7 @@
 ---
 import type { Contract } from "../lib/procurement.ts";
 import { coverage } from "../lib/procurement.ts";
+import Term from "./Term.astro";
 
 interface Props {
   contracts: Contract[];
@@ -22,7 +23,7 @@ const rest = contracts.filter((c) => !(c.amount !== null || c.contractor));
       <p class="eyebrow">Money trail</p>
       <h2 class="h2" id="proc-title" data-split>Public contracts in the news</h2>
     </div>
-    <p class="meta">{identified.length} awards with a value or a named contractor · {withValue} with a disclosed value</p>
+    <p class="meta">{identified.length} awards with a value or a named contractor · {withValue} with a disclosed value · from news reports, not <Term term="BPP" /> records</p>
   </div>
 
   <div class="table-wrap" data-reveal>

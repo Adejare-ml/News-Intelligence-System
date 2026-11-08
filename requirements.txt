@@ -9,6 +9,9 @@ pydantic==2.14.2
 pydantic-settings==2.16.2
 feedparser==6.0.14
 beautifulsoup4==4.15.0
+# Main-text extraction for full articles (backend/app/services/fulltext.py).
+# Optional at runtime: without it a BeautifulSoup <article>/<p> reader is used.
+trafilatura==2.3.1
 spacy==3.8.18
 sentence-transformers==5.6.0
 pyjwt==2.15.1

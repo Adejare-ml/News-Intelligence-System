@@ -188,3 +188,10 @@ def test_summaries_report_the_news_not_the_text(raw, clean):
 def test_insinuations_need_attribution():
     source = "EXPOSED: Lagos Councillor firm lands N21.35m govt contract barely 7 months after CAC registration"
     assert not sd.careful("This suggests potential conflict of interest and procurement irregularities.", source)
+
+
+def test_source_sentence_is_the_one_sentence_a_line_restates():
+    source = "Shares rose. OPay raised $304m from SoftBank on Friday. It plans to expand."
+    assert sd.source_sentence("OPay raised $304m from SoftBank", source) == "OPay raised $304m from SoftBank on Friday."
+    assert sd.source_sentence("OPay did not raise $304m from SoftBank", source) == ""
+    assert sd.source_sentence("Zenith appointed a chairman", source) == ""

@@ -64,7 +64,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 95,
+      "total_mentions": 96,
       "points": [
         {
           "week": "2026-09-14",
@@ -110,8 +110,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 12.5,
+          "mentions": 3,
+          "avg_risk": 13.3,
           "max_risk": 15
         }
       ]
@@ -239,6 +239,55 @@
       ]
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "total_mentions": 33,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 70.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 5,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 9,
+          "avg_risk": 30.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 9,
+          "avg_risk": 30.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 5,
+          "avg_risk": 35.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "independent national electoral commission",
       "label": "Independent National Electoral Commission",
       "total_mentions": 33,
@@ -296,55 +345,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "total_mentions": 32,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 70.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 5,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 9,
-          "avg_risk": 30.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 9,
-          "avg_risk": 30.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 4,
-          "avg_risk": 30.0,
-          "max_risk": 45
         }
       ]
     },
@@ -649,6 +649,49 @@
       ]
     },
     {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 8,
+          "avg_risk": 18.8,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "total_mentions": 16,
@@ -682,43 +725,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 15,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 8,
-          "avg_risk": 18.8,
-          "max_risk": 30
         }
       ]
     },
@@ -3358,6 +3364,25 @@
       ]
     },
     {
+      "key": "ikeja electric",
+      "label": "Ikeja Electric",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "institute of chartered accountants of",
       "label": "Institute of Chartered Accountants of Nigeria",
       "total_mentions": 3,
@@ -3417,6 +3442,25 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "jigawa state government",
+      "label": "Jigawa State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -3866,6 +3910,31 @@
           "mentions": 1,
           "avg_risk": 35.0,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "zamfara state government",
+      "label": "Zamfara State Government",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -4484,38 +4553,6 @@
       ]
     },
     {
-      "key": "ikeja electric",
-      "label": "Ikeja Electric",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "jigawa state government",
-      "label": "Jigawa State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "johnvents",
       "label": "Johnvents",
       "total_mentions": 2,
@@ -4531,6 +4568,19 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "joint admissions and matriculation board",
+      "label": "Joint Admissions and Matriculation Board",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 50.0,
+          "max_risk": 55
         }
       ]
     },
@@ -5064,6 +5114,25 @@
       ]
     },
     {
+      "key": "national petroleum company nnpc",
+      "label": "Nigerian National Petroleum Company (NNPC)",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national shipping line",
       "label": "Nigerian National Shipping Line",
       "total_mentions": 2,
@@ -5511,6 +5580,19 @@
       ]
     },
     {
+      "key": "transmission company of",
+      "label": "Transmission Company of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "uche nnaji",
       "label": "Uche Nnaji",
       "total_mentions": 2,
@@ -5577,25 +5659,6 @@
           "mentions": 2,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "zamfara state government",
-      "label": "Zamfara State Government",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -6254,46 +6317,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "al hikmah university",
-      "label": "Al-Hikmah University",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "albert",
-      "label": "Albert",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "aliko dangote",
-      "label": "Aliko Dangote",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-07 02:53:26"
+  "generated": "2026-11-08 02:26:08"
 }

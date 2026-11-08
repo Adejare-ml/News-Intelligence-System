@@ -11,6 +11,9 @@ def row(**kw):
         "Board Role": "", "Nature of Control": "Ownership of shares",
         "Source": "extracted", "Date": "2026-08-07", "Intermediate Entities": "Direct Holding",
         "Regulatory Filing Ref": "", "Source URL": "https://punchng.com/otedola-firstholdco/",
+        # Read from the full article, so these cases test sourcing, not the
+        # person rule (tests/test_publish_gate.py covers that).
+        "Basis": "article",
     }
     # The older tests mark a row unsourced with Source=""; that now means no link too.
     if kw.get("Source") == "" and "Source URL" not in kw:
@@ -196,7 +199,7 @@ class TestPublicExport:
     def test_withheld_summary_counts_without_names(self):
         rows = q.gate([row(), row(Source="", Date="2026-01-15"), row(**{"Person Name": "Sadio Mané"})])
         summary = q.withheld_summary(rows)
-        assert summary == {"checked": 3, "published": 1, "unsourced": 1, "implausible": 1}
+        assert summary == {"checked": 3, "published": 1, "unsourced": 1, "implausible": 1, "needs_review": 0}
         assert "Sadio" not in str(summary)
 
     def test_unannotated_rows_are_judged_too(self):

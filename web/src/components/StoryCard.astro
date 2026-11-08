@@ -55,6 +55,7 @@ const typeOnly = !story.image && !logoBanner;
     </div>
     <h3 class="h3 title">{story.title}</h3>
     {size !== "compact" && story.summary && <p class="summary">{story.summary}</p>}
+    {story.whyItMatters && <p class="why"><span class="why-label">Why it matters</span> {story.whyItMatters}</p>}
     <p class="meta byline">
       <span class="publisher">{story.publisher}</span>
       {when && <><span aria-hidden="true">·</span><time datetime={story.published?.toISOString()}>{when}</time></>}
@@ -278,6 +279,22 @@ const typeOnly = !story.image && !logoBanner;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  /* The pipeline's one-line reason to care, only when the article gave one. */
+  .why {
+    margin: 0;
+    padding-left: 10px;
+    border-left: 2px solid var(--gold);
+    color: var(--text-soft);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+  .why-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
   }
   .lead .summary {
     font-size: 1.05rem;
