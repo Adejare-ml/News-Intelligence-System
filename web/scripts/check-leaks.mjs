@@ -1,8 +1,10 @@
 // Leak check for the register's publishing contract.
 //
-// Builds the site against a copy of the real data with two rows the
+// Builds the site against a copy of the real data with rows the
 // validation gate must keep off every page (one with no source, one
-// quarantined), then fails if either name appears anywhere in the output.
+// quarantined, one naming a person on a headline alone, a legacy person
+// row with no tier, a company row naming a person as previous holder),
+// then fails if any of their names appears anywhere in the output.
 // This catches a component that reads the raw register instead of
 // data.psc(), which is how the "No source on file" rows leaked onto the
 // home and entity pages before.
@@ -31,6 +33,28 @@ const SENTINELS = [
     Percentage: "", "Nature of Control": "Significant influence or control", Source: "extracted",
     Date: "2026-10-20", Quarantined: true, Quality: ["implausible"],
   },
+  {
+    // A named person on headline-only reporting, held for the owner's review.
+    "Person Name": "Zedekiah Leakcheck-Headline", Company: "Sentinel Headline Holdings Plc",
+    Percentage: "33%", "Nature of Control": "Ownership of shares", Source: "extracted",
+    "Source URL": "https://example.com/leakcheck-headline", Date: "2026-10-20",
+    Quarantined: false, Quality: ["unverified_person", "no_filing"], Confidence: "Headline only",
+  },
+  {
+    // A sourced person row exported before the gate gave rows a tier: nothing
+    // says it rests on more than a headline.
+    "Person Name": "Zedekiah Leakcheck-Legacy", Company: "Sentinel Legacy Holdings Plc",
+    Percentage: "12%", "Nature of Control": "Ownership of shares", Source: "extracted",
+    "Source URL": "https://example.com/leakcheck-legacy", Date: "2026-10-20",
+  },
+  {
+    // A company holder with a person as previous holder, on a headline alone:
+    // the card would name the previous holder.
+    "Person Name": "Sentinel Buyer Industries Ltd", Company: "Sentinel Target Mills Plc",
+    "Previous Holder": "Zedekiah Leakcheck-Previous", "Change Type": "acquired",
+    Percentage: "40%", "Nature of Control": "Ownership of shares", Source: "extracted",
+    "Source URL": "https://example.com/leakcheck-previous", Date: "2026-10-20",
+  },
 ];
 const registerPath = join(data, "significant_control.json");
 const register = JSON.parse(readFileSync(registerPath, "utf-8"));
@@ -44,7 +68,7 @@ try {
   });
 
   const leaks = [];
-  const needles = SENTINELS.flatMap((r) => [r["Person Name"], r.Company]);
+  const needles = SENTINELS.flatMap((r) => [r["Person Name"], r.Company, r["Previous Holder"]].filter(Boolean));
   const walk = (dir) => {
     for (const name of readdirSync(dir)) {
       const path = join(dir, name);

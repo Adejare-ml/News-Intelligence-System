@@ -1,7 +1,7 @@
 import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
-import { onRequestPost, sameSecret, lagosDay, readMeta, stripScripts } from "./send-brief.ts";
-import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom } from "../_lib/mailer.ts";
+import { onRequestPost, housekeep, sameSecret, lagosDay, readMeta, stripScripts } from "./send-brief.ts";
+import { personalise, htmlToText, batchPayload, chunk, decodeEntities, parseFrom, smtpTransport, gmailFrom, GMAIL_DAILY_CAP } from "../_lib/mailer.ts";
 import { fakeSmtp } from "../_lib/smtp-fake.test.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import type { Env } from "../_lib/http.ts";
@@ -130,6 +130,58 @@ test("a Resend failure is counted, not hidden", async () => {
   assert.equal(body.sent, 0);
 });
 
+/** A pending sign-up `hours` old whose confirmation went out `mails` times on its first Lagos day. */
+function addPending(db: ReturnType<typeof fakeDb>, email: string, token: string, hours: number, mails = 1, lastMailedHours = hours): void {
+  const at = (h: number) => new Date(Date.now() - h * 3_600_000).toISOString();
+  addSubscriber(db, { email, token, status: "pending", created_at: at(hours) });
+  db.raw
+    .prepare("UPDATE subscribers SET last_mailed_at = ?, mail_day = ?, mails_today = ? WHERE email = ?")
+    .run(at(lastMailedHours), lagosDay(new Date(Date.now() - hours * 3_600_000)), mails, email);
+}
+
+test("after a send: stale pending rows go, and a 48-72h pending sign-up gets one reminder", async () => {
+  const e = env();
+  addPending(e.DB, "remind@x.co", "1".repeat(48), 60);
+  addPending(e.DB, "twice@x.co", "2".repeat(48), 60, 2);
+  addPending(e.DB, "young@x.co", "3".repeat(48), 10);
+  addPending(e.DB, "old@x.co", "4".repeat(48), 24 * 40);
+  addPending(e.DB, "reopened@x.co", "5".repeat(48), 24 * 40, 1, 24);
+  const body = await (await call(e)).json();
+  assert.deepEqual(body.housekeeping, { pending_deleted: 1, reminders_sent: 1, reminders_failed: 0 });
+  assert.equal(sentBodies.length, 2, "the brief, then the reminders");
+  const reminders = sentBodies[1] as { to: string[]; subject: string; html: string; headers: Record<string, string> }[];
+  assert.deepEqual(reminders.map((m) => m.to[0]), ["remind@x.co"]);
+  assert.match(reminders[0].subject, /Confirm/);
+  assert.ok(reminders[0].html.includes(`/api/confirm?token=${"1".repeat(48)}`));
+  assert.ok(reminders[0].headers["List-Unsubscribe"].includes("1".repeat(48)));
+  const left = (e.DB.raw.prepare("SELECT email FROM subscribers WHERE status = 'pending' ORDER BY email").all() as { email: string }[]).map((r) => r.email);
+  assert.deepEqual(left, ["b@example.com", "remind@x.co", "reopened@x.co", "twice@x.co", "young@x.co"]);
+  const reminded = e.DB.raw.prepare("SELECT mails_today, mail_day FROM subscribers WHERE email = 'remind@x.co'").get() as { mails_today: number; mail_day: string };
+  assert.deepEqual([reminded.mails_today, reminded.mail_day], [1, lagosDay(new Date())], "the reminder counts against today's limit");
+});
+
+test("reminders are capped at 20 a run, and a dry run does no housekeeping", async () => {
+  const e = env();
+  for (let i = 0; i < 25; i++) addPending(e.DB, `p${i}@x.co`, i.toString(16).padStart(2, "0").repeat(24), 50);
+  addPending(e.DB, "old@x.co", "f".repeat(48), 24 * 40);
+  await call(e, "?dry_run=1");
+  assert.equal(sentBodies.length, 0);
+  assert.ok(e.DB.raw.prepare("SELECT 1 FROM subscribers WHERE email = 'old@x.co'").get(), "a dry run deletes nothing");
+  const body = await (await call(e)).json();
+  assert.equal(body.housekeeping.reminders_sent, 20);
+  assert.equal((sentBodies[1] as unknown[]).length, 20);
+});
+
+test("a housekeeping failure is reported without failing the send", async () => {
+  const e = env();
+  e.DB.raw.exec("DROP TABLE throttle");
+  const res = await call(e);
+  assert.equal(res.status, 200);
+  const body = await res.json();
+  assert.equal(body.sent, 2);
+  assert.match(body.housekeeping.error, /throttle/);
+});
+
 test("test mode sends one copy to the owner and records nothing", async () => {
   const e = env();
   const body = await (await call(e, "?test=1")).json();
@@ -202,6 +254,31 @@ test("gmail: one SMTP session, confirmed subscribers only, each with their own l
     assert.match(server.delivered[0].data, /^From: AURA Morning Brief <aura\.owner@gmail\.com>$/m);
     assert.match(server.delivered[0].data, new RegExp(`List-Unsubscribe: <[^>]*token=${"a".repeat(48)}>`));
     assert.ok(!server.delivered[0].data.includes("d".repeat(48)));
+  } finally {
+    smtpTransport.open = realOpen;
+  }
+});
+
+test("gmail: reminders only use what the brief left of the daily cap", async () => {
+  const server = fakeSmtp({ password: "abcdefghijklmnop" });
+  const realOpen = smtpTransport.open;
+  smtpTransport.open = () => server.open;
+  try {
+    const e = {
+      ...env(),
+      EMAIL_PROVIDER: "gmail",
+      RESEND_API_KEY: undefined,
+      MAIL_FROM: undefined,
+      GMAIL_USER: "aura.owner@gmail.com",
+      GMAIL_APP_PASSWORD: "abcd efgh ijkl mnop",
+    };
+    for (const c of ["1", "2", "3"]) addPending(e.DB, `p${c}@x.co`, c.repeat(48), 50);
+    const result = await housekeep(e, "https://auranews.pages.dev", new Date(), GMAIL_DAILY_CAP - 1);
+    assert.equal(result.reminders_sent, 1);
+    assert.equal(server.delivered.length, 1);
+    const unclaimed = e.DB.raw.prepare("SELECT COUNT(*) AS n FROM subscribers WHERE email LIKE 'p%' AND mail_day != ?").get(lagosDay(new Date())) as { n: number };
+    assert.equal(unclaimed.n, 2, "the others are left for tomorrow's run, not used up");
+    assert.equal((await housekeep(e, "https://auranews.pages.dev", new Date(), GMAIL_DAILY_CAP)).reminders_sent, 0);
   } finally {
     smtpTransport.open = realOpen;
   }

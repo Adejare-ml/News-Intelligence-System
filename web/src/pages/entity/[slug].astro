@@ -3,6 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Chain from "../../components/Chain.astro";
 import ReportTimeline from "../../components/ReportTimeline.astro";
 import Provenance from "../../components/Provenance.astro";
+import ConfidenceBadge from "../../components/ConfidenceBadge.astro";
 import StoryCard from "../../components/StoryCard.astro";
 import Icon from "../../components/Icon.astro";
 import OfficialLinks from "../../components/OfficialLinks.astro";
@@ -12,7 +13,7 @@ import { slugify } from "../../lib/entity-key.ts";
 import { groupHoldings, describeHolding } from "../../lib/psc.ts";
 import { toStory, parseTime } from "../../lib/stories.ts";
 import { toContract, type ProcurementRow } from "../../lib/procurement.ts";
-import { buildEntities, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
+import { buildEntities, holderSlug, type CompanyRow, type PersonMove, type Entity } from "../../lib/entities.ts";
 import { logoFor } from "../../lib/logos.ts";
 
 export function getStaticPaths() {
@@ -37,7 +38,7 @@ const fmt = (iso: string) => {
 };
 const summary = e.holdings.length
   ? isPerson
-    ? `${e.name} ${describeHolding(e.holdings[0])}${e.holdings.length > 1 ? `, and is reported in ${e.holdings.length - 1} more ${e.holdings.length === 2 ? "company" : "companies"}` : ""}.`
+    ? `${e.name} ${describeHolding(e.holdings[0])}.`
     : `${e.holdings.length} reported ${e.holdings.length === 1 ? "holder" : "holders"} with significant control.`
   : `Mentioned in ${e.mentions ?? e.articles.length} reports tracked by AURA.`;
 // Companies and bodies show their own logo when the deploy fetched one.
@@ -50,7 +51,7 @@ const entityLogo = logoFor([e.name]);
 >
   <section class="wrap head">
     <a class="back link" href={href("register/")}><span aria-hidden="true">←</span> Register</a>
-    <p class="eyebrow kind">{isPerson ? "Person or holder" : "Company or body"}{e.industry && ` · ${e.industry}`}</p>
+    <p class="eyebrow kind">{isPerson ? `Person or holder · at ${e.company}` : "Company or body"}{e.industry && ` · ${e.industry}`}</p>
     <div class="name-row">
       {!isPerson && entityLogo && (
         <span class="entity-logo"><img src={href(entityLogo.path)} alt={`${entityLogo.name} logo`} width="64" height="64" /></span>
@@ -73,7 +74,8 @@ const entityLogo = logoFor([e.name]);
         {e.holdings.map((h, i) => (
           <article class="holding" data-reveal style={`--i:${i}`}>
             <p class="h-desc">
-              <a href={href(`entity/${slugify(isPerson ? h.company : h.person)}/`)}>{isPerson ? h.company : h.person}</a>
+              <a href={href(`entity/${isPerson ? slugify(h.company) : holderSlug(h.person, h.company)}/`)}>{isPerson ? h.company : h.person}</a>
+              <ConfidenceBadge confidence={h.confidence} />
               {h.band && <span class="chip chip-gold">{h.band.label}</span>}
               {h.flags.map((f) => <span class:list={["chip", f.severity === "high" ? "chip-crimson" : "chip-royal"]} title={f.detail}>{f.title}</span>)}
             </p>

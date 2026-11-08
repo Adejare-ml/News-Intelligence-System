@@ -63,7 +63,13 @@ SHEETS_CONFIG = {
         # The article the claim was extracted from, so the site can link
         # every claim to its reporting. Older rows have these blank.
         "Source URL", "Source Title", "Publisher",
-        # headline | article | filing, as on Articles.
+        # Approved = yes is the owner's sign-off that publishes a
+        # headline-only claim about a named person (register_quality).
+        "Approved",
+        # What the claim rests on, for the publish gate in register_quality,
+        # as on Articles: "headline" (headline and feed snippet only) or
+        # "article" (full text), written at extraction; the owner may set
+        # "filing" after checking a registry filing.
         "Basis"
     ],
     # "Archive File" resolves an edition to its exact archived markdown file.

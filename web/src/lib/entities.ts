@@ -29,6 +29,8 @@ export interface Entity {
   slug: string;
   name: string;
   kind: "person" | "company";
+  /** A person's page is about them at one company (see holderSlug). */
+  company: string;
   /** As holder (person) or as the company held. */
   holdings: Holding[];
   mentions: number | null;
@@ -41,6 +43,15 @@ export interface Entity {
 }
 
 export const MIN_MENTIONS_FOR_PAGE = 5;
+
+/**
+ * A person's page is a holder at one company, never a name alone: two
+ * different people called Abubakar Musa at two companies get two pages,
+ * so neither is shown with the other's holdings, news or board moves.
+ */
+export function holderSlug(person: string, company: string): string {
+  return `${slugify(person)}-at-${slugify(company)}`;
+}
 
 /** Whole-word, case-insensitive match of a name inside free text. */
 export function mentions(text: string, name: string): boolean {
@@ -66,9 +77,9 @@ export function buildEntities(input: {
   const byKey = new Map<string, Entity>();
   const companyInfo = new Map(input.companies.map((c) => [nameKey(c.Company), c]));
 
-  const ensure = (name: string, kind: Entity["kind"]): Entity | null => {
-    const slug = slugify(name);
-    if (!slug) return null;
+  const ensure = (name: string, kind: Entity["kind"], company = ""): Entity | null => {
+    const slug = kind === "person" ? holderSlug(name, company) : slugify(name);
+    if (!slugify(name)) return null;
     const existing = byKey.get(slug);
     if (existing) return existing;
     const info = kind === "company" ? companyInfo.get(nameKey(name)) : undefined;
@@ -76,6 +87,7 @@ export function buildEntities(input: {
       slug,
       name: name.trim(),
       kind,
+      company,
       holdings: [],
       mentions: info?.["Mention Count"] ?? null,
       industry: info?.Industry && info.Industry !== "General" ? info.Industry : "",
@@ -89,8 +101,13 @@ export function buildEntities(input: {
     return e;
   };
 
+  // The canonical company each person page is about, for matching news
+  // and board moves to that company rather than to the name alone.
+  const companyOf = new Map<string, string>();
   for (const h of input.holdings) {
-    ensure(h.person, "person")?.holdings.push(h);
+    const person = ensure(h.person, "person", h.company);
+    person?.holdings.push(h);
+    if (person) companyOf.set(person.slug, h.companyKey || h.company);
     ensure(h.company, "company")?.holdings.push(h);
   }
   for (const c of input.companies) {
@@ -98,9 +115,14 @@ export function buildEntities(input: {
   }
 
   for (const e of byKey.values()) {
-    e.articles = input.articles.filter((a) => articleMentions(a, e.name)).slice(0, 12);
+    const firm = companyOf.get(e.slug) ?? "";
+    e.articles = input.articles
+      .filter((a) => articleMentions(a, e.name) && (e.kind === "company" || articleMentions(a, firm)))
+      .slice(0, 12);
     e.moves = input.people
-      .filter((p) => (e.kind === "person" ? nameKey(p.Name) === nameKey(e.name) : nameKey(p.Organization) === nameKey(e.name)))
+      .filter((p) => (e.kind === "person"
+        ? nameKey(p.Name) === nameKey(e.name) && mentions(String(p.Organization ?? ""), firm)
+        : nameKey(p.Organization) === nameKey(e.name)))
       .sort((a, b) => String(b.Date || "").localeCompare(String(a.Date || "")))
       .slice(0, 12);
     e.contracts = input.contracts

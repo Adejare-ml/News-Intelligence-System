@@ -67,8 +67,8 @@ import { groupHoldings } from "./psc.ts";
 
 describe("entities", () => {
   const holdings = groupHoldings([
-    { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Percentage: "27.49%", Source: "extracted", "Source URL": "https://punchng.com/report/" },
-    { "Person Name": "Femi Otedola", Company: "Geregu Power Plc", Date: "2026-08-01", Percentage: "", Source: "extracted", "Source URL": "https://punchng.com/report/" },
+    { "Person Name": "Femi Otedola", Company: "First HoldCo", Date: "2026-08-17", Percentage: "27.49%", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
+    { "Person Name": "Femi Otedola", Company: "Geregu Power Plc", Date: "2026-08-01", Percentage: "", Source: "extracted", Confidence: "Full article", "Source URL": "https://punchng.com/report/" },
   ]);
   const entities = buildEntities({
     holdings,
@@ -88,27 +88,33 @@ describe("entities", () => {
   const by = (slug: string) => entities.find((e) => e.slug === slug);
 
   test("one page per holder and company, plus well-covered companies", () => {
-    assert.ok(by("femi-otedola"));
+    assert.ok(by("femi-otedola-at-first-holdco"));
+    assert.ok(by("femi-otedola-at-geregu-power-plc"));
     assert.ok(by("first-holdco"));
     assert.ok(by("geregu-power-plc"));
     assert.ok(by("nnpc"));
     assert.equal(by("tiny-ltd"), undefined);
   });
-  test("a holder collects every holding, a company its holders", () => {
-    assert.equal(by("femi-otedola")!.holdings.length, 2);
+  test("a holder is a name at one company, a company collects its holders", () => {
+    // Changed deliberately: a name alone is no identity, so one person page
+    // per (holder, company), never one page gathering everyone of that name.
+    assert.equal(by("femi-otedola-at-first-holdco")!.holdings.length, 1);
+    assert.equal(by("femi-otedola-at-geregu-power-plc")!.holdings.length, 1);
     assert.equal(by("first-holdco")!.holdings.length, 1);
     assert.equal(by("first-holdco")!.industry, "Banking");
     assert.equal(by("nnpc")!.industry, "", "'General' is not a real industry");
   });
   test("related stories match whole names only", () => {
     assert.equal(by("nnpc")!.articles.length, 1);
-    assert.equal(by("femi-otedola")!.articles.length, 1);
+    assert.equal(by("femi-otedola-at-first-holdco")!.articles.length, 1);
+    assert.equal(by("femi-otedola-at-geregu-power-plc")!.articles.length, 0, "news must name the company too");
     assert.ok(mentions("Shell and NNPC sign deal", "NNPC"));
     assert.ok(!mentions("NNPCX", "NNPC"));
     assert.ok(!mentions("anything", "AB"), "names under 3 characters never match");
   });
-  test("board moves join on person name or organisation", () => {
-    assert.equal(by("femi-otedola")!.moves.length, 1);
+  test("board moves join on person name and company, or organisation", () => {
+    assert.equal(by("femi-otedola-at-first-holdco")!.moves.length, 1);
+    assert.equal(by("femi-otedola-at-geregu-power-plc")!.moves.length, 0);
     assert.equal(by("first-holdco")!.moves.length, 1);
   });
 });

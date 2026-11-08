@@ -144,12 +144,28 @@ class TestExportEndToEnd:
                                         "Generated": "2026-09-01 07:00:00",
                                         "Archive File": "report_20260901_070000.md",
                                         "Content": "# should be stripped"})
+        # Two claims about named people: one read from the full article,
+        # one from a headline only. Only the first may reach the site.
+        d._append_row("Articles", {"Title": "Musa buys into Kano Flour", "URL": "https://punchng.com/kano",
+                                   "Time": "2026-09-01T08:00:00Z", "Source": "The Punch",
+                                   "Summary": "Abubakar Musa bought 12% of Kano Flour Mills.",
+                                   "Status": "Unread", "Category": "Company"})
+        d._append_row("Significant Control", {"Person Name": "Abubakar Musa", "Company": "Kano Flour Mills",
+                                              "Percentage": "12%", "Date": "2026-09-01", "Source": "extracted",
+                                              "Source URL": "https://punchng.com/kano", "Basis": "article"})
+        d._append_row("Significant Control", {"Person Name": "Zainab Headline", "Company": "Rumour Ltd",
+                                              "Percentage": "40%", "Date": "2026-09-01", "Source": "extracted",
+                                              "Source URL": "https://punchng.com/rumour", "Basis": "headline"})
 
         out_dir = tmp_path / "data"
         out_dir.mkdir()
         (out_dir / "archives").mkdir()
         monkeypatch.setattr(rp, "db", d)
         monkeypatch.setattr(rp, "DATA_DIR", str(out_dir))
+        monkeypatch.setattr(rp, "REVIEW_QUEUE_PATH", str(tmp_path / "review_queue.json"))
+        # The local workbook is deliberate here; in CI the export would
+        # otherwise refuse it as a failed Sheets connection.
+        monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
         # The export's best-effort context-signal fetches must not reach
         # the network from a test run.
         import backend.app.services.trends as trends_mod
@@ -177,6 +193,17 @@ class TestExportEndToEnd:
         graph = json.loads((exported / "graph.json").read_text())
         ids = [n["id"] for n in graph["nodes"]]
         assert len(ids) == len(set(ids)), "duplicate node ids shipped"
+
+    def test_headline_only_person_claim_goes_to_the_review_queue(self, exported):
+        register = json.loads((exported / "significant_control.json").read_text())
+        assert [r["Person Name"] for r in register] == ["Abubakar Musa"]
+        assert register[0]["Confidence"] == "Full article"
+        assert register[0]["Evidence"]["quote"] == "Abubakar Musa bought 12% of Kano Flour Mills."
+        assert json.loads((exported / "register_quality.json").read_text())["needs_review"] == 1
+        queue = json.loads((exported.parent / "review_queue.json").read_text())
+        assert [r["Person Name"] for r in queue["rows"]] == ["Zainab Headline"]
+        published = " ".join(p.read_text() for p in exported.rglob("*.json"))
+        assert "Zainab Headline" not in published
 
     def test_reports_json_is_slimmed(self, exported):
         reports = json.loads((exported / "reports.json").read_text())
