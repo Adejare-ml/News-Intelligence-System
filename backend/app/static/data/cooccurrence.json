@@ -166,6 +166,10 @@
       "label": "House of Representatives Committee on Host Communities"
     },
     {
+      "key": "ikeja electric",
+      "label": "Ikeja Electric"
+    },
+    {
       "key": "independent corrupt practices and other related offences commission",
       "label": "Independent Corrupt Practices and Other Related Offences Commission"
     },
@@ -184,6 +188,10 @@
     {
       "key": "ishaku",
       "label": "Ishaku"
+    },
+    {
+      "key": "joint admissions and matriculation board",
+      "label": "Joint Admissions and Matriculation Board"
     },
     {
       "key": "jpmorgan",
@@ -376,6 +384,10 @@
     {
       "key": "toyin abraham",
       "label": "Toyin Abraham"
+    },
+    {
+      "key": "transmission company of",
+      "label": "Transmission Company of Nigeria"
     },
     {
       "key": "united bank for africa",
@@ -744,12 +756,22 @@
     },
     {
       "a": "house of representatives",
+      "b": "joint admissions and matriculation board",
+      "weight": 2
+    },
+    {
+      "a": "house of representatives",
       "b": "national public assets management commission",
       "weight": 2
     },
     {
       "a": "house of representatives committee on host communities",
       "b": "pipeline infrastructure",
+      "weight": 2
+    },
+    {
+      "a": "ikeja electric",
+      "b": "transmission company of",
       "weight": 2
     },
     {
@@ -843,5 +865,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-07 02:53:26"
+  "generated": "2026-11-08 02:26:08"
 }

@@ -20,32 +20,38 @@
  *
  *   ?dry_run=1  report the edition, subject and recipient counts; send nothing
  *   ?test=1     send one copy to OWNER_EMAIL; record nothing. Add
- *               &categories=business,sports&region=both to preview a mix.
+ *               &categories=business,technology&region=both to preview a mix.
  *
  * Safe to call twice: one send per Lagos day. A business edition that was
  * already sent (the pipeline produced nothing new) is not sent again; readers
  * who also chose headline categories still get those.
+ *
+ * After a real send, housekeeping: pending sign-ups not mailed for 30 days
+ * are deleted, and pending sign-ups 48-72 hours old that have had only their
+ * first mail get one reminder (at most 20 a run, within the sign-up limits).
  */
-import { authorised, json, type Ctx, type Env } from "../_lib/http.ts";
-import { decodeEntities, htmlToText, preferencesUrl, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl } from "../_lib/mailer.ts";
+import { authorised, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts";
+import {
+  GMAIL_DAILY_CAP, confirmationMail, decodeEntities, htmlToText, preferencesUrl, provider, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl,
+} from "../_lib/mailer.ts";
 import {
   categoryLabel, comboKey, editionsFor, headlineCategories, listLabels, parseCategories, parseRegion,
   type Edition, type HeadlineCategory, type Prefs,
 } from "../_lib/categories.ts";
-import { sendLog, subscriberStore, type Subscriber } from "../_lib/subscribers.ts";
+import { sendLog, subscriberStore, throttle, type Subscriber } from "../_lib/subscribers.ts";
 
 // Kept as exports here: older tests and scripts import them from this module.
-export { sameSecret, authorised } from "../_lib/http.ts";
+export { sameSecret, authorised, lagosDay } from "../_lib/http.ts";
 
 export const SECTIONS_SLOT = "<!--aura:sections-->";
 /** Headlines older than this are left out rather than sent as news. */
 export const MAX_HEADLINE_AGE_HOURS = 36;
 /** The weekly wrap is built Sunday evening; on Monday morning it is about half a day old. */
 export const MAX_WRAP_AGE_HOURS = 48;
-
-export function lagosDay(now: Date): string {
-  return new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Lagos", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
-}
+/** Pending sign-ups not mailed for this long are deleted. */
+export const PENDING_DAYS = 30;
+/** Confirmation reminders per run: a few, well inside a Function's subrequest budget. */
+export const MAX_REMINDERS = 20;
 
 export function lagosWeekday(now: Date): string {
   return new Intl.DateTimeFormat("en-GB", { timeZone: "Africa/Lagos", weekday: "short" }).format(now);
@@ -226,6 +232,34 @@ export function buildFor(prefs: Prefs, t: Templates, businessFresh: boolean): { 
   return { subject, html, text: htmlToText(html) };
 }
 
+/**
+ * Clears out stale pending sign-ups and reminds recent ones, once a day
+ * after the brief has gone. Reminders go in one provider pass of their own,
+ * so the brief's sent and failed counts stay the brief's. On Gmail that
+ * second pass shares the daily cap with the brief: `briefRecipients` is how
+ * many the brief tried to reach, and reminders only use what is left.
+ */
+export async function housekeep(env: Env, site: string, now: Date, briefRecipients = 0) {
+  const store = subscriberStore(env.DB!);
+  const day = lagosDay(now);
+  const pendingDeleted = await store.deleteStalePending(new Date(now.getTime() - PENDING_DAYS * 86_400_000).toISOString());
+  const limit = provider(env) === "gmail" ? Math.min(MAX_REMINDERS, Math.max(0, GMAIL_DAILY_CAP - briefRecipients)) : MAX_REMINDERS;
+  const reminding: Subscriber[] = [];
+  for (const r of await store.remindable(now.toISOString(), limit)) {
+    // The same limits as a sign-up, so a reminder never adds to a busy inbox.
+    if (await store.claimMail(r.email, now.toISOString(), day)) reminding.push(r);
+  }
+  const result = await sendBriefs(
+    env,
+    reminding.map((r) => ({
+      brief: confirmationMail(site, r.email, r.token, r),
+      recipients: [{ to: r.email, unsubscribe: unsubscribeUrl(site, r.token) }],
+    })),
+  );
+  await throttle(env.DB!).prune(day);
+  return { pending_deleted: pendingDeleted, reminders_sent: result.sent, reminders_failed: result.failed };
+}
+
 export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   if (!env.BRIEF_SEND_SECRET) return json({ error: "Sending is not configured (BRIEF_SEND_SECRET)." }, 503);
   if (!authorised(request, env)) return json({ error: "Not authorised." }, 401);
@@ -303,8 +337,11 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   );
   const { sent, failed } = result;
   await log.finish(day, sent, failed, new Date().toISOString());
+  // The brief has gone and is logged; a housekeeping failure (say, migration
+  // 0004 not applied yet) is reported, not turned into a failed send.
+  const housekeeping = await housekeep(env, site, now, recipients).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
 
-  const body = { ...summary, sent, failed, ...(result.error ? { error: result.error } : {}) };
+  const body = { ...summary, sent, failed, housekeeping, ...(result.error ? { error: result.error } : {}) };
   return json(body, failed && !sent ? 502 : 200);
 }
 

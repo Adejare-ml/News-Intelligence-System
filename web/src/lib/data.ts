@@ -110,7 +110,7 @@ export interface CategoryNews {
   generated?: string;
   sections?: Record<string, { nigeria?: Headline[]; global?: Headline[] }>;
 }
-/** Sports, technology, politics and entertainment headlines, Nigeria and Global editions. */
+/** Technology and politics headlines, Nigeria and Global editions. */
 export const categoryNews = () => readJson<CategoryNews>("category_news.json", {});
 
 /** The Sunday weekly wrap (backend/app/services/weekly.py). */
