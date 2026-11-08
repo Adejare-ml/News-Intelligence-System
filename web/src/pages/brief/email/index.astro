@@ -21,7 +21,7 @@ import { ink, muted, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } f
 
 // The pipeline's edition (every story since the last email, as cards). The
 // markdown brief below is only the fallback when no edition file exists.
-const digest = readDigest(data.readJson<unknown>("email_digest.json", null));
+const digest = readDigest(data.emailDigest());
 
 const brief = parseBrief(data.briefMarkdown());
 const latest = listEditions()[0];

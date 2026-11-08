@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-07 02:53:17",
+  "generated": "2026-11-08 02:26:02",
   "models": [
-    {
-      "id": "moonshotai/Kimi-K3.1-Pro",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "task": "image-text-to-text",
-      "likes": 1516,
-      "downloads": 18432
-    },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 953,
-      "downloads": 19139
+      "likes": 1131,
+      "downloads": 20689
+    },
+    {
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "task": "image-text-to-text",
+      "likes": 1640,
+      "downloads": 22571
+    },
+    {
+      "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "task": "text-generation",
+      "likes": 516,
+      "downloads": 1369
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 793,
-      "downloads": 190243
+      "likes": 877,
+      "downloads": 221506
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10876,
-      "downloads": 2607491
-    },
-    {
-      "id": "burner22/numbat",
-      "url": "https://huggingface.co/burner22/numbat",
-      "task": "",
-      "likes": 372,
-      "downloads": 9066
-    },
-    {
-      "id": "FusionCow/Sulphur-3",
-      "url": "https://huggingface.co/FusionCow/Sulphur-3",
-      "task": "",
-      "likes": 397,
-      "downloads": 950
+      "likes": 11003,
+      "downloads": 2643778
     },
     {
       "id": "ricursiveAI/Ripple-65B-Preview",
       "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
       "task": "",
-      "likes": 334,
-      "downloads": 2013
+      "likes": 373,
+      "downloads": 3803
     },
     {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "task": "image-text-to-text",
-      "likes": 19282,
-      "downloads": 7845288
+      "id": "burner22/numbat",
+      "url": "https://huggingface.co/burner22/numbat",
+      "task": "",
+      "likes": 381,
+      "downloads": 9212
+    },
+    {
+      "id": "FusionCow/Sulphur-3",
+      "url": "https://huggingface.co/FusionCow/Sulphur-3",
+      "task": "",
+      "likes": 405,
+      "downloads": 997
     }
   ],
   "papers": [
     {
       "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
       "url": "https://huggingface.co/papers/2611.06500",
-      "upvotes": 1
+      "upvotes": 3
     },
     {
       "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
       "url": "https://huggingface.co/papers/2611.06498",
-      "upvotes": 1
+      "upvotes": 3
     },
     {
       "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
       "url": "https://huggingface.co/papers/2611.04386",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
       "url": "https://huggingface.co/papers/2611.08483",
-      "upvotes": 3
+      "upvotes": 8
     },
     {
       "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
       "url": "https://huggingface.co/papers/2610.37739",
-      "upvotes": 2
+      "upvotes": 4
     },
     {
       "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
       "url": "https://huggingface.co/papers/2611.08237",
-      "upvotes": 7
+      "upvotes": 10
     }
   ]
 }

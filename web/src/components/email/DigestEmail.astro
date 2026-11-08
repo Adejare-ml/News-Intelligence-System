@@ -124,7 +124,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
           <p style={`margin:0 0 8px;${small}`}>A PSC (person with significant control) owns or controls 5% or more of a Nigerian company under CAMA 2020.</p>
           {d.psc.map((p) => (
             <p style={`margin:0 0 8px;font:14px/1.55 ${sans};color:${ink};`}>
-              {p.text} · reported by {p.outlet}{p.date && `, ${p.date}`} · not verified with CAC (Corporate Affairs Commission) records ·{" "}
+              {p.text} · reported by {p.outlet}{p.date && `, ${p.date}`}{p.confidence && ` · ${p.confidence}`} · not verified with CAC (Corporate Affairs Commission) records ·{" "}
               <a href={p.url} style={link}>Read the report ↗</a>
             </p>
           ))}
