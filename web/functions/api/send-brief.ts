@@ -34,6 +34,7 @@ import { authorised, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts"
 import {
   GMAIL_DAILY_CAP, confirmationMail, decodeEntities, htmlToText, preferencesUrl, provider, sendBrief, sendBriefs, sendingEnabled, unsubscribeUrl,
 } from "../_lib/mailer.ts";
+import { pruneDisputeThrottle } from "./dispute.ts";
 import {
   categoryLabel, comboKey, editionsFor, headlineCategories, listLabels, parseCategories, parseRegion,
   type Edition, type HeadlineCategory, type Prefs,
@@ -290,6 +291,11 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
     const result = await sendBrief(env, mail, [{ to: env.OWNER_EMAIL, unsubscribe: `${site}/api/unsubscribe`, preferences: `${site}/api/preferences` }]);
     return json({ test: true, edition: t.business?.edition, subject: mail.subject, prefs, ...result });
   }
+
+  // The dispute form deletes old throttle codes only when it is used again,
+  // so the daily send deletes them too, keyed by UTC day as the form keys
+  // them. Without the table (migration 0005) the brief still goes.
+  if (!dryRun) await pruneDisputeThrottle(env.DB, now.toISOString().slice(0, 10)).catch(() => {});
 
   const log = sendLog(env.DB);
   const today = await log.forDay(day);

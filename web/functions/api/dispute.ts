@@ -11,7 +11,7 @@
  * the honeypot or over the daily limit, so the response teaches a bot nothing.
  * Only a mistake the sender can fix (a missing field) gets its own message.
  */
-import { escapeHtml, json, page, readBody, validEmail, type Ctx, type Env } from "../_lib/http.ts";
+import { escapeHtml, json, page, readBody, validEmail, type Ctx, type D1Like, type Env } from "../_lib/http.ts";
 import { send, sendingEnabled } from "../_lib/mailer.ts";
 
 export const DISPUTE_RECEIVED =
@@ -67,10 +67,19 @@ async function senderKey(request: Request, secret: string): Promise<string> {
   return [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
+/**
+ * Deletes throttle codes from before `day` (YYYY-MM-DD, UTC, as the rows are
+ * keyed): only today's counts limit anyone. The form does this as it is
+ * used, and the daily brief send does it too, so a code is gone the next
+ * day even when no dispute follows.
+ */
+export async function pruneDisputeThrottle(db: D1Like, day: string): Promise<void> {
+  await db.prepare("DELETE FROM dispute_throttle WHERE day < ?").bind(day).run();
+}
+
 /** Counts this post against the sender's day; true while they are within the limit. */
 async function withinLimit(env: Env, key: string, day: string): Promise<boolean> {
-  // Only today's counts matter; older codes are deleted rather than kept.
-  await env.DB!.prepare("DELETE FROM dispute_throttle WHERE day < ?").bind(day).run();
+  await pruneDisputeThrottle(env.DB!, day);
   const row = await env.DB!.prepare(
     "INSERT INTO dispute_throttle (key, day, count) VALUES (?, ?, 1) ON CONFLICT(key, day) DO UPDATE SET count = count + 1 RETURNING count",
   )

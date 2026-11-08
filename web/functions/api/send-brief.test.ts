@@ -297,3 +297,27 @@ test("scripts never reach the inbox", async () => {
   const batch = sentBodies[0] as { html: string }[];
   assert.ok(!batch[0].html.includes("<script"));
 });
+
+test("the daily send deletes dispute throttle codes from earlier (UTC) days; a dry run keeps them", async () => {
+  const e = env();
+  const today = new Date().toISOString().slice(0, 10);
+  const throttleRow = e.DB.raw.prepare("INSERT INTO dispute_throttle (key, day, count) VALUES (?, ?, 1)");
+  throttleRow.run("old-code", "2026-01-01");
+  throttleRow.run("new-code", today);
+  const codes = () => (e.DB.raw.prepare("SELECT key FROM dispute_throttle ORDER BY key").all() as { key: string }[]).map((r) => r.key);
+  await call(e, "?dry_run=1");
+  assert.deepEqual(codes(), ["new-code", "old-code"], "a dry run deletes nothing");
+  // Before anything else: a day whose brief already went still deletes them.
+  e.DB.sends.set(lagosDay(new Date()), { edition: "x", finished_at: new Date().toISOString(), sent: 1, failed: 0 });
+  const body = await (await call(e)).json();
+  assert.equal(body.skipped, "already_sent_today");
+  assert.deepEqual(codes(), ["new-code"]);
+});
+
+test("a missing dispute_throttle table never stops the brief", async () => {
+  const e = env();
+  e.DB.raw.exec("DROP TABLE dispute_throttle");
+  const res = await call(e);
+  assert.equal(res.status, 200);
+  assert.equal((await res.json()).sent, 2);
+});
