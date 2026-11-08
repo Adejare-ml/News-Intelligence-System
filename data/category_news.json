@@ -1,131 +1,27 @@
 {
-  "generated": "2026-11-07 14:05:31",
+  "generated": "2026-11-08 02:26:08",
   "regions": [
     "nigeria",
     "global"
   ],
   "labels": {
-    "sports": "Sports",
     "technology": "Technology",
-    "politics": "Politics",
-    "entertainment": "Entertainment"
+    "politics": "Politics"
   },
   "sections": {
-    "sports": {
-      "nigeria": [
-        {
-          "title": "NPFL: Kun Khalifat Holds Kano Pillars In Owerri - Voice of Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBRUnYwVHF6T2dlVTlFUkFBeGZaSDNUMlppTDFWeG5yU3gwc0MyaElmZW11ZmRSSDU4akFOODNRUDBOaFFfdDVVc0FPMm1rOEFGWktHdnAwdzdvOVN3MGtuaE1xNjI1ekllWjluMUI1Q3dNd241?oc=5",
-          "source": "Voice of Nigeria",
-          "published": "Sat, 07 Nov 2026 08:37:45 GMT"
-        },
-        {
-          "title": "Super Eagles stars gear-up for tough clashes across Europe - The Guardian Nigeria News",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOHoyWkxNM0M4ajFmczFIaGxfUEpBZWxPeUNWVHQ2eTRkNDU0YVUwbElnN194Wmg1ZzAwZm1fdnhtQlZMZnl3dzJmX2dzQ2l6UFZoMUhYWFJLYjZ0WFU4SVZCcVNKM2V5OUpvM3ZjRDMzbENtdHdITUtLMVdXbHl4MzhvU2Zqd3IyRmpjQVBxU2JDSEhaWDl3Y2dn?oc=5",
-          "source": "The Guardian Nigeria News",
-          "published": "Sat, 07 Nov 2026 09:01:28 GMT"
-        },
-        {
-          "title": "AFCON Qualifiers: 24 Players Expected As Super Eagles Camp Opens - OwnGoal Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLXJVanA5ZW9jR2Y0Q0drcmVhWXAtU0Q0elVCdHZOTm5OZzd2NmJFeklLM3lmTkFlUjNuVk5QbmQ2MlFoUE1FdUhzRDFPSTh6c2Y1Z1NvWkpXeFltdkdVbnlOdVJRYVphakZmR1o4cGhDM0Jid19BX1RTQlM4MUpnMC1FeUNPQUxPQmpreWwtVnBOb1RDTkMzSHp4djlFanRUX3dlVQ?oc=5",
-          "source": "OwnGoal Nigeria",
-          "published": "Sat, 07 Nov 2026 11:32:13 GMT"
-        },
-        {
-          "title": "Osimhen\u2019s knee injury deals Super Eagles major blow ahead of Tanzania clashes - Western Post",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQXzY5YUlsZWVvcG9xZUdERXEzU3V0bTQzMGZDNzQzNzFtRV80OHNNcEJrcXNYRVBvYkNQNUZMTTJmOWZSMGV2X0E2NHRlU0tCTDFaa3F1RkpmVWlaSVYxVWNaUFlNMFFoRnFDdWdTZ2pPWmRZVGdlWnh5dUE5cGVDSGJkV0NXZnRUa2ROZ0ZKNzdIam04VzE0NjRpUmd2ZjZuT3B3VnZzbw?oc=5",
-          "source": "Western Post",
-          "published": "Sat, 07 Nov 2026 07:50:26 GMT"
-        },
-        {
-          "title": "NPFL: Nasarawa United host Plateau United in North Central derby - The Nation Newspaper",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSS03Ry1kX1VDVm5CMEtMTF9ya0hlN19Edm1wc2pNckJEaVQ1dHNVbnJtY0FqUEhMTldIV3dfbzFtNFE3MFpSLXEtZjVlR0hkRUwxejllMm1mZlJ6dDZuUUs5Y1dfcEtCM1FpbWxHRGVRSmY4T0twTTZ3TzMzQUJIaXBNMXBBMTlLcjlIUTFVMnV5VG5paG80WTNn0gGfAUFVX3lxTE85cExhdWI0TG91Skt4MVJfUkJiRVgzUWFSdGpOQWxyd0NiTzNVNVVfV0RyUk1HMW5SVkQ3UzQ3MGtxbnZVLXkta0NvWHpoYVJxUWxhU0FiX3pZeE14YWFwU01YUUNLSWVRZ3JncEdNS2xWVzNpTHlZN1AyQ2xCMmMtSU5jdm1qTG5SRVdjclJPNzNxQ1FDZmFwWUJidGlmbw?oc=5",
-          "source": "The Nation Newspaper",
-          "published": "Sat, 07 Nov 2026 04:21:04 GMT"
-        },
-        {
-          "title": "Super Eagles AFCON Qualifiers Suffers Blow as Osimhen Goes Under the Knife - THISDAYLIVE",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVWNwZHdXSVhzTkpjbHUyS3FBVkdtZnd6dTJBYTZUdF91OVc2WmI4MGE1NGhCdzRXcGVmSFJiUEZrZTcwTEN1RE8xZ25xNUpza3FfRmh2UUFRRzVSMy0zNWNNOVlYb3ZFWV84Q1NDalVvVXNEY2h1UGVEQmREWWtWeVFCaVVXdy13LWxncUxLLXF5U3BYYVpVX1N2d3VqZjZsZzhobGNaTXJLSE15cS0zUmRtblU?oc=5",
-          "source": "THISDAYLIVE",
-          "published": "Fri, 06 Nov 2026 23:34:25 GMT"
-        },
-        {
-          "title": "Drogba, Amuneke, Babayaro others in Lagos ahead Super Eagles, African football legends' clash - Blueprint Newspapers",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPckdDZ1k0Q2JITE1tM1dBTVhCa3gwSk9EWG5QT3BNdXBOeFRXSnEtUW1ScThhVUJ3NXl1RGJNVUoxcUNPRFU3bTJFWFVjU25HZmtYVjRfUzJNS3FvalNpYmN2Y3Azc0hqNmE2VV9OR1VGNUhpV05JWXY1ejg3RTBSX05XX0pzQVpTZ19FQkJBeXZRN3RTbmkyZV91VWk4ZUdRbTYxOXBlaVFOazdOczVvNg?oc=5",
-          "source": "Blueprint Newspapers",
-          "published": "Sat, 07 Nov 2026 09:29:18 GMT"
-        },
-        {
-          "title": "2027AFCONQ: Chelle omits Okoye and Iheanacho for Tanzania clash - ACLSports",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZE1hNHVBSHF1N24yYUFPXzdGTWVjQ0d1eUREV1hDVi01eFFyd01TRHJoZEF1cUhudUZZblcwVWE4WTNVQUdGcUtfWHh4cWpJQnJyM19janBRcklHb05fcEhvS2xxdU93NmtwbldRT1BsWjBtUVNLZzRQcUxESHhCU3daSzJ3VmlDSmJNWXprQUNJY0k?oc=5",
-          "source": "ACLSports",
-          "published": "Sat, 07 Nov 2026 12:30:29 GMT"
-        }
-      ],
-      "global": [
-        {
-          "title": "Irish Illustrated Preview: No. 1 Miami (8-0) @ No. 11 Notre Dame (7-1) - 247Sports",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNYVBRdE5UbzlSc2dOTXN6Tm5xU1NydWxiV184Sl9EV1kwRmk0RGZ4bC1yQ1pKVmt3WjVnaDIzQ25uX1NoTEtYU0xhYmVoSjJQOWdvQmFXSHNaSzBUX1BTZXNmUk1KWWVSeE14OW1rNGtLMzBNcEY1Q3pCZmptSDZCWWpVZDNUY0Rkd1pxbmNOdmVtM29MaXZLS2NBM3RsTjh4QlBpbUEtUmx0VDNrQ1RHOWNOWWt0aFZhVlFwMFhYWXZpOWM0VWQ5eG11TjdudXhIT3JmaHJmM0VGMzlPdTZSVENNM2I2c1pMelJF?oc=5",
-          "source": "247Sports",
-          "published": "Sat, 07 Nov 2026 12:30:00 GMT"
-        },
-        {
-          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 10 - CBS Sports",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUlR3a2lVNFM0SXpBQzNZcmk1SGpBWDBFeDk5WEsxd2hETWcxS1ZFei1OV3JxOEdUd0t6WlpReVVIRU9CbEI1LW9pc185Q3VsY2JZd0V5cHR6OWZKMFhRVDY3dVE1dzNRNmcwdWRPSXFPVDZJdWw5RGZCZ1NaU0ZwYnVLVS1Lbi1USjV1akliWFhWVndoYnByQjVjZUpPMW1JNjlSc1N4RXBaeVd1clFvbnNJR0c5Sno3MHBIblZ5WnVhR2w3SnhTejFR?oc=5",
-          "source": "CBS Sports",
-          "published": "Fri, 06 Nov 2026 21:00:36 GMT"
-        },
-        {
-          "title": "2026 NFL trade deadline: Proposing deals for Tony Pollard, Riq Woolen, others - ESPN",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONFdOLVBSZ0RoODRacjVKX2FHSDNKOVc2UGh2OGV4RTJId2duQ0hXX0I1anZPSm8xWWc0RnVSck5IUU11T3A0Q2xwcm5nVTFkVjJPcmExTW1TWEx4UWZCTVlCQVV2TTROd3R3dGxfaVdYNGw0WlI5TTF4elg1NDlRT2h5bUtyaHB1bUN6aUVRQWhjUFNvaEdfc0dPRUozekpSX3lNYXNZSWc?oc=5",
-          "source": "ESPN",
-          "published": "Sat, 07 Nov 2026 11:35:00 GMT"
-        },
-        {
-          "title": "Alcaraz Pulls Off Stunning Paris Escape, Denies Fritz ATP Finals Dream - Tennis Now",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPb3dhYVVDWHRrb3oxejlRRE1kRThvNUFvY0VoZmFQQmJ1T2cxT2hFXzNKaDJtYUt0a2tldUpVLTc1cnNZYms4Rk1WNlNJTmhRdXJlU1hvYzVUQXIyTk5hWVhYQzF2RkR5WGpsN2dwbUFKaV9pc1lVdDZ4V2d2WENVQS1fZXM5RTBObTRmVGMzdlBsMUNaSEEw?oc=5",
-          "source": "Tennis Now",
-          "published": "Fri, 06 Nov 2026 22:14:47 GMT"
-        },
-        {
-          "title": "Player Grades: Lakers vs. Blazers - Silver Screen and Roll",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONFc5bDd2ZUlKU2dLYjUzWmRFM1h6YjB2TUxWR1RNbGNfNE5lZXdjZFZxTjFfWklTZFZzeExRa3djaVVQOEs0NU9Zbnp0eHRVMHF6c2l2UmdpMGdzeTJMb3dveDU1QVVLTDh0MF9McWVOUEdPNml5ekNHT3F3OHR0N0czOHRfV2Y4bERBcXNzQVF5UGNONllNZmRSR0xSUm9SRlJ6S3h4b3V0dDg5c3poN0ZfMGkza2dvdGMzZjFuVXpvbjNCUmJJbTUySm0tTTdM?oc=5",
-          "source": "Silver Screen and Roll",
-          "published": "Sat, 07 Nov 2026 06:57:00 GMT"
-        },
-        {
-          "title": "Brandon Aiyuk returns to 49ers facility, speaks to media in Santa Clara - SFGATE",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9DRk42c1JLNXBwa3A0bk1WazJBc0oxVjhBNVdrZmtNYzJtWE1XNFp1am1NYXhyb0pmTnAxZjVmRWQweHA4SzM5S0hXcjE3S3Y4UVZkYk1CYTJwZ0Q5b3pKSjBIeWl2MEQ1RlgyaUFOT1lWMmhDd3FDYlh3?oc=5",
-          "source": "SFGATE",
-          "published": "Sat, 07 Nov 2026 02:42:20 GMT"
-        },
-        {
-          "title": "Three takeaways & three stars from Illini's 24-13 win over Nebraska to clinch bowl bid - 247Sports",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQlZzcERxZUc0SGlzSTJGRFJaZlpHNkNHbEQ0YldKNjhYbWFpR0hrTGRRWHZoNlNwcjQ2dm8wZko1Tk5FejhfdmlTVl9KY0ZRNWJERkdia2RhWnlLWVRVeUYyMzZxZERGZmRTd1B5VFMzLUNub2FCa2xPUHRDMDdkdHhYbDZ6X1IxOERwc0U4Ny1oNlV0TVlCa2dsVmIxMWhHX1A5VkVuTTloaEREd1c0YzM1LXlXdS02c1hPV00xaThJdE03bFI4S1F0MlBwek1qWXhZM0tnSQ?oc=5",
-          "source": "247Sports",
-          "published": "Sat, 07 Nov 2026 05:13:07 GMT"
-        },
-        {
-          "title": "Jaguars\u2019 point differential of +108 this season is 50 points better than any other team - NBC Sports",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPdHVscnQtN1pxdVVRbTZEaW9MWFJ6b3pzb2hBaWZUZml2YlNlYklmbDRNVHk0SFBjb0NId3I2NzRXSnpLR0pQYS1OcnRJcVZXQWszNTYtVllxTDBhTFVQeUdhRUwzVm5tYURGU05DemJualQ5Y3ZKYS11cW1LcjlBb0ZiLUlEMGtsNkxwYW5udHNSQnZnLUZfNWhpX0pSX3htX3VNWnNrR1FIVnlaRVFyZzAzRnFMcndDVzlvYjlDYnN3TnpMSUJ5U2xpUEtYSC1zSEtFM1FZOWhJb2FaVUJmdQ?oc=5",
-          "source": "NBC Sports",
-          "published": "Fri, 06 Nov 2026 09:39:58 GMT"
-        }
-      ]
-    },
     "technology": {
       "nigeria": [
+        {
+          "title": "Unverified fintech cyberattack reports highlight gaps in Nigeria\u2019s threat-sharing framework - Business News Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQN0k5YnE3Y2tCWUh6Uk1xRXVDM3o1QTlFX1c0TjRPbTNRYXBQT2hxTVdkTG8yMDN2N0tDOEprUE1kZXBwR25Gci1QZWNTWU1ZMTM2emtaeWQySXJuNTlnVUZMVEtDLTd0R2ticGxzc2pkanVQRVZGandHbnp5dHZIZlVsUF9tTWh3b1BwUklmQXdHOTJUR3ZId29Qb3owYnlYOEpXTDMyWGY1UTFKNmR0c0pJcHZqM2VWa0hXbHR2cVJ3c3pQb2ZEZVRsQ0hObDk3Nk1r?oc=5",
+          "source": "Business News Nigeria",
+          "published": "Sat, 07 Nov 2026 16:13:25 GMT"
+        },
         {
           "title": "Big Tech, AI, and the quiet expansion of digital surveillance in Nigeria - Global Voices",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQ3VLalBpc0Nsd0pEOERSZ3B2alJRUmRmd3gwWE5HRks2MGtENXpnOHdieWFBampOalhXQ2VIOFZLczFrY2NyZVV3eDd3TnVDWkpTU00tcURIcE85U2pYY3Njd0dOX1gyTTRWMUwzNG9QQ0pZRU1qX2pxVFJ4M1VYUlFLVFRqX184M2JFQV9jX3N0X2djZkxNMFJoNVFjZTR6UnFONGdweWE4Mkk?oc=5",
           "source": "Global Voices",
           "published": "Fri, 06 Nov 2026 20:02:13 GMT"
-        },
-        {
-          "title": "What CBN\u2019s new stablecoin rules mean for Nigeria\u2019s fintech builders - Business News Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVURrT2h1bzFzTUwzSmE5a25ucm4yOTZWTThzWUFsUW1oNjczRWdOSEpqdWdMSU9XXzJ0QUt2cE96U1VCS3FjajdlcWNQQ3plUEJzQkFScGhWbnVQUTRxQzFUY2xOUVlqcjNSb253bDEtcUNZS3lJLTlPeXFGNUtra2dzNDdyT25fTDJ6NE9Pc0M3Z3hZcFQ4WjFaNEpENl9zWmQyVlczWnVObFlGS3JrQzlmckVIN1N6emN1cVFQcUw?oc=5",
-          "source": "Business News Nigeria",
-          "published": "Fri, 06 Nov 2026 14:16:21 GMT"
         },
         {
           "title": "Millions use them. But who owns Nigeria\u2019s Tech Giants - The Guardian Nigeria News",
@@ -134,22 +30,10 @@
           "published": "Fri, 06 Nov 2026 12:20:30 GMT"
         },
         {
-          "title": "Rex Africa launches AI-native bank with agent Rex Atlas in Nigeria - The Paypers",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOelN1TEhXTlh5bDByTlo0VzJmUjNhbUpueEJSLUhQeHhaWDBieTVnWVh3VjNaUklzTHI5VlJGMzVObTdqeXUyY0tMS3dPbDI5WWJBSmxzZGlXdTEzS2ljV0dSNllzWjJRdl95eWJETWp5SHFQNEc0SklvcFpRZVZBa21jejlFZVhSX2ZYelFXaFgwdGN4VG9XSGxwdEhObFh1ajRpSg?oc=5",
-          "source": "The Paypers",
-          "published": "Fri, 06 Nov 2026 14:13:27 GMT"
-        },
-        {
           "title": "Nigerian Youth Must Lead Global Tech Space, Says NITDA DG - THISDAYLIVE",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEVKR2kxT3k1cGNCZ2ZZNmFBUE5JYXRNLTVGMkVRZGhVbDZGMmZyc2JVRFZRWFRCS0x1S3lYck1WbVo5NTJSTnlvTVJ6TkUtZ2oyYkNuelBWTEM4NVFjQktycGR6M2ZIWXgzOUNyZUpGZEhIVURSSEJGN2NzTVFWSUVfNjg2MElsYTk3WUJEVWtfN3lKN2xYWlN1UWg?oc=5",
           "source": "THISDAYLIVE",
-          "published": "Fri, 06 Nov 2026 00:54:44 GMT"
-        },
-        {
-          "title": "Telecom union, operators drag House of Reps to court over network quality probe - The Sun Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNS0VWQUM3b2ZLWGJpT1ptazJFVEd5Q3hXVlB4ci1rNHFlNU1qaWhNeFQ0Z1lWQnNIUkhoVTJubXpRU2ZoWC1GUllrdHJBQjI4bkFPY08yVERiUGQySGVqOVJ2cHY0TzFrWnpOamlVMmR4MDR0d3ppelBqN09sUlFFMFgzTms5TkpOb05rYTdjTFRWR0l6cTVsSGp0dUlaZw?oc=5",
-          "source": "The Sun Nigeria",
-          "published": "Thu, 05 Nov 2026 16:13:28 GMT"
+          "published": "Fri, 06 Nov 2026 15:42:11 GMT"
         },
         {
           "title": "Nigeria Telecom Operators Sue House of Representatives to Block Network Quality Probe - Head Topics",
@@ -158,65 +42,107 @@
           "published": "Fri, 06 Nov 2026 10:09:00 GMT"
         },
         {
-          "title": "Democrats midterm wins hits Musk and tech stocks - PM News Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRGxzdGxNMHJ1N0k4U285eWdrVV9RMVh5cWVVR0xmcWxFVDJ4dW8wV0MzRVpuWkFYLW5rZUpFVmNzU1NZLVpBUE1tQ2taNHB5bG9sWHRvdVc2c3dsYXJPd1RFbExCd3E4b0lHWHhvellEX3RxeEo5dGNoZHdMdUN1UGE5MFl5YzNnWWl4d2tMUQ?oc=5",
-          "source": "PM News Nigeria",
-          "published": "Thu, 05 Nov 2026 18:32:43 GMT"
+          "title": "Nigeria, France advance agribusiness cooperation - The Guardian Nigeria News",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxORmE5UWFVRWo3TVVPY1JtZm9wV0dXdzZ0VlF1MUxIVXRPTUc2Rlc4eVphVU9rblg0dXJ0SWFNanNtNHZMWDMxanR6Wk9PeXhjSlVETml4ZzJlXzlFOFNDaWF0UVh5X2dhT0t6ajdaWHYyeEE5ZE1ZbV96aFhXdG1zb21hdTJ6U3UtWDJrX25COA?oc=5",
+          "source": "The Guardian Nigeria News",
+          "published": "Fri, 06 Nov 2026 03:02:01 GMT"
+        },
+        {
+          "title": "What CBN\u2019s new stablecoin rules mean for Nigeria\u2019s fintech builders - Business News Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVURrT2h1bzFzTUwzSmE5a25ucm4yOTZWTThzWUFsUW1oNjczRWdOSEpqdWdMSU9XXzJ0QUt2cE96U1VCS3FjajdlcWNQQ3plUEJzQkFScGhWbnVQUTRxQzFUY2xOUVlqcjNSb253bDEtcUNZS3lJLTlPeXFGNUtra2dzNDdyT25fTDJ6NE9Pc0M3Z3hZcFQ4WjFaNEpENl9zWmQyVlczWnVObFlGS3JrQzlmckVIN1N6emN1cVFQcUw?oc=5",
+          "source": "Business News Nigeria",
+          "published": "Fri, 06 Nov 2026 14:16:21 GMT"
+        },
+        {
+          "title": "Telecom Operators Compensate 75m Subscribers Over Poor Services- NCC - Head Topics",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONW5Hd1JTOVNhT2dyWU8wTzkzS3piLW10VUxSaWYzOG13dHQtNmFZNGtLMU1mTUczUExxejNrTHBqLUs5SzJVdzFleFZJTm5WcjlscFNNQ2hORVNwb194TjRNZjZCdjl3eGJ0bVN4ang3T0JHbm1FbHE3bUUyakUtSzVfWUR4UUFCeGFKUmVwNEJtbXhRZDJuek93?oc=5",
+          "source": "Head Topics",
+          "published": "Fri, 06 Nov 2026 10:17:00 GMT"
         }
       ],
       "global": [
         {
-          "title": "The Legend of Zelda: Ocarina of Time Remake Now Runs at 60 FPS on PC Emulators Lichii and Eglantine, a Day After Booting at 20-30 FPS - Wccftech",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9aeERqTjk4Q05jMDUwU29JbDM4c3BNdkVlTVQ0cXpGT0FhWlF0a1JfS1RvVDNiZ2RMdTlIYmYxX2I2Yl91MDFsTXBPaUd3UWNGelFpY05VWEwwTzJEZ256M2RCanJSb2ptMHFmWkdGc05vWTBEQUN2aXp30gF_QVVfeXFMT2lWdVBFc05sX0ZJbmdnYVdYaEVqWExwUFRHYk1pdUNILTNNZFFuSGRENS1vUi1qcFVvZjFGOEVFd2p3S0Y5bmczRzhRTzJ6Vlc0MV9RX0xBRFZ1cE8wdHB5SWhZeER0ZHdvX1dPTk9MdGRuRHBfMjc0bU5TRjJTQQ?oc=5",
-          "source": "Wccftech",
-          "published": "Fri, 06 Nov 2026 19:00:00 GMT"
-        },
-        {
-          "title": "Apple Rumored to Drop the iPhone's Action Button Next Year - MacRumors",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbmZlYzE3cG1WdWRYekUzbjlwWE1hd3lwVG51SmZPUEVRRjJuOF9yLS12a2V3dngzZTBYMmtlTGJBSEtvVi12dXJPaF9Yd1BTTnFNUmYtZy16VFpxT2dsMXZ0MG9wcWtGRXBTZUEwQVYtVjdqcDE1a1R4Nk4xUEE5SmhMYw?oc=5",
+          "title": "Early Apple Black Friday Deals on Apple Watch, MacBook Air, and More - MacRumors",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9TdzlKcHJ0anlDZ2JSaXVlYzdIXy1kNGhQRjA5dGZScW53TG4yU2wwSnRqSGN5VUE4a0YySEYxakw4SXAwc0RJaTdmYlZYMVplQUlzNmdhV3N2dGRiMW5oN1Q2eGZNT3owLWU3SlVYRUR5WUVsemNB?oc=5",
           "source": "MacRumors",
-          "published": "Fri, 06 Nov 2026 14:07:47 GMT"
+          "published": "Sat, 07 Nov 2026 20:50:00 GMT"
         },
         {
-          "title": "The Pok\u00e9mon TCG: Mega Evolution\u2014Delta Reign Expansion Is Available Now - Pokemon.com",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOTBaUW5STWYzd1dzMzkySDFpRXRtT0wyVEdoNndOamxnejhwcGM2Tnpxc3VxMEdSQkwzLTB4aWlrNXk3ajRvNWdhVktXRHFaa0h1S195VzdIdV9xUlpLSlpIQ2Nsb0FlUmJNM1c4R09nWWFsLXVPWEFRU21KN2F4ejZ1NVVtbFpIamZudXEyVW9qb013V3Q1YVJJTkVuakRnWVlR?oc=5",
-          "source": "Pokemon.com",
-          "published": "Fri, 06 Nov 2026 14:08:45 GMT"
+          "title": "iPhone Duo vs. Galaxy Z Fold 8 Camera Comparison: Frolicking With Apple's and Samsung's Foldables - CNET",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZVNjbEJNRFNIUGVDZzNmUDBXNGh2Sm9WMnozVldCR2NwYU04MTJPQURKR2ZpQ0hTN3d4VjhxWXRzNDRJSEhjcDVTYlFLU3Z6MzFWd3J4YlJpSE1DTTNFRTkxbmE4elMtUkdPamp4NTUxd2F5eXpGQXhXOHBDOGpRLWxpSi02a2U1?oc=5",
+          "source": "CNET",
+          "published": "Sat, 07 Nov 2026 13:00:09 GMT"
         },
         {
-          "title": "Apple's first deliveries offer a closer look at new iPad mini, MacBook Pros, and iMac - AppleInsider",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTndNX3JmcnJaNS1vM1JwOUFqMkZVZy1ka2w3N2NXX1hhVHZUME9PMi1aQ1ZOTGdiRFpXTjU4RS14djRfNG1vbEsySW4wZ1YyTXdjTFZYbHpVVUdCU0hTMXNKRmhNT3FXZ1BiYWVlWkQwbE10LV9KNGhwZDF1YlNSRXk3MGV3ZTNvTHdEN0hVby1IUGhwRDZ3Tkk2X3o0YWhhYktZT1lBRHU5Z1E5bWVqbDRYbkpRZ0J4ZmlpUDBVU0JpeUk?oc=5",
-          "source": "AppleInsider",
-          "published": "Fri, 06 Nov 2026 11:43:21 GMT"
+          "title": "Ocarina of Time review: Does Nintendo's Zelda remake match its original? - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfTHNYdGNfYzNjeDhxOVJNY3ZWaG52aHZSdWx4dy1uVm1peTl0M3ljNmRGZV94Ui1fX0xXMGo1eWNDQnVlcjBzUWZ3NjEtcGF3M3Bva0FWT0I2SUU?oc=5",
+          "source": "BBC",
+          "published": "Sun, 08 Nov 2026 00:37:45 GMT"
         },
         {
-          "title": "The iPhone Duo has more than 100,000 optimized apps, Apple says - The Verge",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE15MVhaZWM2TnVYcHBzaHMxc1dUSGpuX3VUS2JWOG1mNFUxZGpncnZ4bzdpTVBDWmw3UDl1Z1E3TXZIeXhkbm81TURWXzRJOGlXc3g4cmt0SDVURlV5ajNFTWFLcEN4ZWhQcVBvcnprajJiczBFWXFzeg?oc=5",
+          "title": "Windows 11 Future Platforms build 29704.1000 fixes upgrade and AMD audio issues - Neowin",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNN1JCY0EyUmE0Ynp3ZnF0Ykk0S1BTYk9nTmdOWEFLYW9CREJ5SjVsZkJJRkJLa0RrRmxfSmVJNWVxRUt6RW9UQ3FOcENWRXFfS3hZcDVrUzhfWVlHR3R6dXdYeW81RV9KdVp5NHpLV3UxeTc4WlJvWHFYMWFVQjBIc2tJazVScjdUT0hxQ2VrYjBBamtWRXRyY1BWOHNpRTdFbDdzb0JPZ0NvT3c?oc=5",
+          "source": "Neowin",
+          "published": "Fri, 06 Nov 2026 18:38:00 GMT"
+        },
+        {
+          "title": "NYT Cooking\u2019s AI assistant saved my weeknight chicken, but almost ruined my cake - The Verge",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBrc2NBamlMdERCVTZuX2txQVl6bjQzR19yNXFTTlN2SDNnbjRqcFB6b2xGeGdXM0Y4ZEJ2cERDWi1GZWMxWnUxa3BVREtJN2dUZWdiQ0xrOFBfRnlrekp5VnhSdTFsUU9hVEViWjZYS2h5WHNzX3VLUw?oc=5",
           "source": "The Verge",
-          "published": "Fri, 06 Nov 2026 17:24:36 GMT"
+          "published": "Sat, 07 Nov 2026 15:50:00 GMT"
+        },
+        {
+          "title": "The Pok\u00e9mon TCG 30th Celebration Elite Trainer Box is live at Amazon: Shop now for way under market price - Mashable",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZ3pnNmRVT3EyVzR6blpuWHZicHVRRU1rcWFUbHdTRUdUZWo5UlN5MTNnV1RvblRST2xKc0dJNnZLOGRrZGNGU1dBaDVIa1pkaTgxMVhMdGd1SzZfQXJaSmszMUxRdElGQ1Y0ekRINEhoR0xQNXh2ZUdCRUQ5TTlMVHRsSjE3ZVdzWXhn?oc=5",
+          "source": "Mashable",
+          "published": "Sat, 07 Nov 2026 14:39:15 GMT"
+        },
+        {
+          "title": "Bring Khazalite might to armies of Order with Regiments of Renown - Warhammer Community",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT1JzbGtFNENzd2ZKY3JuSlJCNEdMeS1ES3o1UzZjV0NJYXVCMzd1bVdFSnJVZU1HMVNmV2lKcnJMbGZlQVBNR2E5REhLU1F5VnJ3dldOUElkSEJsbW8xS0psRjFNOVJ3STg4N05BbUQwdEctVUkwMy1FVndndFJ2eU9meHRUU1dBSklSdnVBRmxrQkpHQ2pRaUV4anU2RVkzSDhWYS1mQkw3UGhSR2lSX1o3NVQyVEh3Q2x6aFB6NjhFYVRu?oc=5",
+          "source": "Warhammer Community",
+          "published": "Thu, 05 Nov 2026 13:57:16 GMT"
         },
         {
           "title": "The Headphones That Came With the First Sony Walkman Are Back, Now With USB-C - Hypebeast",
           "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeDM5MjZMUzVnUDJFV1g0bnA3QXU5RDFleXJ6NnhyLWpKUm5QenRQVjJuS0VaNGtuM2d1NkxEdVE3WXlpVkk1RjZYc25fMEh3NzJPV1FGbVlzNjlMUmptWnhaTzlHUV9rdXZ4eVB2eFM5WEEtZ1VQb1Z1V2YwWHZwUGJRQUlaak54SlJwZHJzcjVsSUtN?oc=5",
           "source": "Hypebeast",
-          "published": "Fri, 06 Nov 2026 08:02:38 GMT"
-        },
-        {
-          "title": "YouTube is giving its Android navigation bar a Liquid Glass-y makeover - Android Authority",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTnJnbDBRS0tyaDhBYmlnbFdrc1pIekFQcWpLcnRmNzcwZ21HMXdCeTVvTkxacFFzRG9Lc0dIMnJSUnZMLTVPNUZZNkNtYnhBTDdBcXdKQmhtMXp6MVZaUllOUmptNFYwbTJkRWdrZjRiUDFITTNiaEdfalA1RGg4MEVrR25OQlo5M3dvLTVYaTk2TGZDTWRidjFn?oc=5",
-          "source": "Android Authority",
-          "published": "Thu, 05 Nov 2026 10:01:00 GMT"
-        },
-        {
-          "title": "The 'Grand Theft Auto VI' Custom In-Game Cars Have Come to Life - Hypebeast",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1qQV93bFpfREVFcVZROVNaMVV6TjVWRzVaTXpSd3UyUzNUZTJ0cm1idFJHbGlZejQxMm9qdkFuVzl4OG5xZFdSajFfamozRWNXWHk3ZDgzNlFyNDBobEJuRjBVc3hrQ3pqVUVjQ0o0WFFGZDhFOVoxZDB2cW0?oc=5",
-          "source": "Hypebeast",
-          "published": "Fri, 06 Nov 2026 19:00:33 GMT"
+          "published": "Fri, 06 Nov 2026 08:19:21 GMT"
         }
       ]
     },
     "politics": {
       "nigeria": [
+        {
+          "title": "Tinubu Congratulates Flamingos On Historic U-17 World Cup Victory - Channels Television",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ2tEc1VCbnVOUWZrOUx0OFRxR2Zpb25GRDlERkZfZU5BN29UNVRnZHlFTHNKRVZFSGs3d0JYckVETUpQZVRzOTBDMVBrdmE3M2lKLURxVU5LYUc4YmhWUzFnQ2VFM09iSEtlY3FOem5Gd3NBb0k0aUxrOGRITGlLUXFqWW9odVZvWHRDeVVzUk10dW81ZjhFQ2hCLWs4ZGhfMTYyTktHUQ?oc=5",
+          "source": "Channels Television",
+          "published": "Sat, 07 Nov 2026 21:56:31 GMT"
+        },
+        {
+          "title": "President Tinubu Reaffirms Commitment to Sustaining Economic Gains - Voice of Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUnNaVkh0aDNBN0NsQ3AwVWMweEFZYzNET1ZWMXQxa0R5MUZlNnpnV096Wkd5cEpRVVQyYk1uTFBNc3JlM1ZwYTliUUM0Tjg0NE15dmYxUW9kWWV4VFpwWTY0Vl9BWE5wM0Q3cmM4eXFBOEJtLUJhbDRISng0NDI5YUJvZWV4bXBpNGdKcVpKOA?oc=5",
+          "source": "Voice of Nigeria",
+          "published": "Sat, 07 Nov 2026 15:29:48 GMT"
+        },
+        {
+          "title": "AMERICA IS NOT NIGERIA: Why Trump\u2019s midterm defeat cannot predict Tinubu\u2019s 2027 fortunes - Vanguard News",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcEJ3RXgtTlQtaEhOV0hMb2ZsV1FmRGhPMDZFRmtPb1ZScWhDaklmSEx2bS1yMHZOU29GMzhReHZsb2Rid3ZRYkt3M3VNSHdhQzFoMVhmaDNHTzdKOUJSd2ZRZlBxeFRDeWg5LXZYQlh2d2VpQXdkbTNCeVdKNjd6OHVjZkFIV1dwQnVteVNVNkpiYUoxdnVEZ2dYT2NHejFYVmtuZDVwS2lkSXhVelIwbkdQN3JMc2ppaE42R1BRQdIBxAFBVV95cUxPTUtVSkJ4S2tTTnR0WHVya05pOGZLV2tSUFpFcGN3U1RRWEY0VjVWam1kZXlCMHl2TlRWX0RpUjBFNFpXNVk2ZlpPdTFNYkUtaW9Dc1FXSTRIck1ITWVCUzJHRWRYanU0eDJaY2lGeXZiNm90VE1RbEZoRHJlVmFfeUtPV2NiU0JUNkdiYXhMV2sxdnpZTnplLUMyelcwQUw2d25rY0txQmY1dmNobXVoeWJLRjJRVFZLXzZIVGh2QjlZdFdm?oc=5",
+          "source": "Vanguard News",
+          "published": "Sun, 08 Nov 2026 00:04:03 GMT"
+        },
+        {
+          "title": "Taxis, cows, shoes and Nigeria\u2019s grass-to-grace politics - Punch Newspapers",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Wd3dReHlWVzIyaXlBenMyVV85U19QU1l6NzlpM1htbi1MX2hJMWk4a21TSVFaaEFvWUlOWnB4QnQ0a3F4MDNzU05zXzFjVkl6ZzlwbF9OWHJ5MHBNenhPQzFJZ1pHekNrN2w5YUZaQVNFRnRHMzFfbDhFdzlJNm8?oc=5",
+          "source": "Punch Newspapers",
+          "published": "Sat, 07 Nov 2026 23:47:24 GMT"
+        },
+        {
+          "title": "\u2018Tinubu -Shettima Ticket Most Formidable Political Combination In Nigeria\u2019s History\u2019 - https://thefact.ng/",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUnBRTHM1YUU5WldKaDh1R3Y1d054Mzk2TktlaEx1RnB6Q3ZWOExMQ0hOdEd4YnBaVjQzVm5MYTROOHhwcDJ0c3lnNkpFTFdBaGE3Z2pKQkdUY1FadGpiSmV3MGFTUUl6UEdJc0R2UlB3a2xOVDB3VzJqRFlLdF9SaHhhZjZUcDZTOTBPYzU0NFUzTjVRQmlnNjZaZ2Fsc2JjcVE?oc=5",
+          "source": "https://thefact.ng/",
+          "published": "Sat, 07 Nov 2026 21:29:36 GMT"
+        },
         {
           "title": "Tinubu visit to Mecca Holy city: Wetin make access inside Kaaba special for Muslims during Umrah? - BBC",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA5eWFSQmhSMGhWYW1FTlJRWFd6Y3hYeUlhR1FOZl9RelpEX2hBWHNWcFc0RmU4Wllpc0hlQno1N0F5d1pGc21SaDVXZTZVcG1GV05JRUJ2c281VkN6a0JPSXdhVdIBY0FVX3lxTFA5eWFSQmhSMGhWYW1FTlJRWFd6Y3hYeUlhR1FOZl9RelpEX2hBWHNWcFc0RmU4Wllpc0hlQno1N0F5d1pGc21SaDVXZTZVcG1GV05JRUJ2c281VkN6a0JPSXdhVQ?oc=5",
@@ -224,198 +150,66 @@
           "published": "Sat, 07 Nov 2026 10:54:40 GMT"
         },
         {
-          "title": "Naira Would Have Been Worthless Without Economic Reforms, Tinubu Tells Nigerians - Channels Television",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUk5Ea2hmSE16aWcyNjhRclgtZEQ4MUg4Y2VmSkV4aUNLb0VKYkdpbGYzOW9OUGpQMGk0ZmxPTVZhMlZHRGZXRDdOTnVQVlAzOVpIRXlCdHg4Y2xsM20zb3NoYVY2SzdzOFd6VUJ5cVFQWThVa3lzQ0xrS1dLVXdqVzZGM1oxWGt4R04xdXZkNnNWazh0amo3OFVCVDNydmRpcXlSNTQ4aFFUdG9VQTU3emhYWVotQXEzVGc?oc=5",
-          "source": "Channels Television",
-          "published": "Sat, 07 Nov 2026 09:38:54 GMT"
-        },
-        {
           "title": "A logistics lesson for INEC from America\u2019s midterm elections, By Adeola Akinremi - Premium Times Nigeria",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQZkdNRWc5QkhDcmhEWTItYVJZZ1hrdERpVS1PRGk4dTVsR2NhdlZCOUVibVN1VlhjWWRMUlNCOGRSM1NKdnZsNzNyU05ubDhMY0YyOGN1WG1OTU1uTXBlVUJKQ3lrVjBobVk0ejlxVzNJTUtobzZoeFJZUTJkWm5Hcy1kTzN4STBhZk84OUtYNjkwd1pGeEtTQnE1aGVSckJUMHdHdXpmdV9sZTZKdkt0TUhtMGItX1hQY2Vtd2JaRG40R0VETjlUSw?oc=5",
           "source": "Premium Times Nigeria",
-          "published": "Sat, 07 Nov 2026 13:57:56 GMT"
+          "published": "Sat, 07 Nov 2026 13:58:38 GMT"
         },
         {
-          "title": "Kalu urges Igbo leaders to unite, engage in Nigerian politics - Vanguard News",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMGE3VE1RTlZBandfbUZHR3dELV8xaHR6UlFUM3FUZGtfVGZTT1Yya1Z5Y1JzUUQ4Q1p1ZXd2bHFIOXJ0U3JadTBIanhqdndWVE5VYVNNRnI3bGI0NWF0U3BJS0dHRFRuT2phYjRfd1huUlFBTFpscFB0UVdkR0l3UkFUYlNDTHJYR21MRzBQeW1lNHNwWDQzUXlVUGg3Z9IBowFBVV95cUxPSXItVjRHWlRVMjNvc19BdThFb1VkZDQ0TTBjQzhKNmdoczc0VG1iaGhjcFRpNXpKSDFyX3M1VlZkcDRNOUJYME5nSm9iQzFlRFllY2g5aFNpc001TENJVGw5bmhIZUpxSk1GTllfbEk0dFI2Q0F3ZUszRndGZDdlNTJZci00SE14MHliWWpTZDRISzVYTWJGWUEyVFNsVk44MFUw?oc=5",
-          "source": "Vanguard News",
-          "published": "Sat, 07 Nov 2026 12:23:06 GMT"
-        },
-        {
-          "title": "How many Nigerians have been lifted out of poverty? Obi asks Tinubu - Punch Newspapers",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQX3N3aFJuX1BZRDYxQmJRbVhkdmVwZHVPVlFkVGVCVnRHS3RJa3ZXWGdtVkYySlBkRXJhbTZUTm1wYWpVNzlIVHEwZ2RmbkF3ZVZEQ1JCWnlGRWR4Z3lCbXRONHlhZzh1b3RuZkZudW8zRDVxZ2N5d01NcDJxalhIMVN2UkV0WUtPM0lvUXd2Q3Q?oc=5",
-          "source": "Punch Newspapers",
-          "published": "Sat, 07 Nov 2026 12:34:10 GMT"
-        },
-        {
-          "title": "Obi Dares Tinubu To Visit 33 States, Account For $100bn Loans, N15.8trn Savings - The Whistler Newspaper",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOOVZMOG1HRXlYdmlFM1AycUU5R0FOTzVPRjB6Wk1jLW1qVkZ5djZqWVRlUG02WjhCcTVON3lIT2JSUklhc3BsZmw4a2VFbk51RXlWQlRWOXA2OUtvUTlIRmdSdEdVWWRhOVdGYk00WmozbDRyQU04aFZaaGhSaU5oS29hZTNDT1hWWHVwRjduTG55TGVSbk9TNTh0OUVoWDVGTkE?oc=5",
-          "source": "The Whistler Newspaper",
-          "published": "Sat, 07 Nov 2026 11:58:06 GMT"
-        },
-        {
-          "title": "APC Leaders, Supporters Gather for President Tinubu\u2019s Rivers Rally - Voice of Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc1gybnhSVmxSZ1JhcVRXODlNMjBBbUJlaUVqM2hzTGYyME56V2JVajIyUjNfRDdEeDVoWlJwZVV1b0hXS3NNZjNoUTNDZ3RsU0VvSUpqdGNERHh2cm9kU0U1bEV1RHp2SldlcERidEJBWEVNdVpkYnBQUmM5eXpnUEhDaHpKMGhzSXJBWQ?oc=5",
-          "source": "Voice of Nigeria",
-          "published": "Sat, 07 Nov 2026 13:26:39 GMT"
-        },
-        {
-          "title": "Governor Makinde Warns Tinubu: 'Don't Destroy Nigerian Judiciary, Win Fair And Square If You Can' - Sahara Reporters",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOGZ1WHpBNGR2clpWQWVwM0kzNVBBRUFLRlJqOTFJMnBhTGpzMXZZbHFpQndwUnlSSnJSalk4S1VuMFRFQzZiRHYxejRUYUdjRzduU3Jjdl9wNUpNVlV3ZXFLR3BRVGRvbktfdUtid2tNR3BNcjNqbW9DNzBtZHo3X0c4Q200QmtZMzhoZkhlSkJEc3JEWHduVWNIZnBSaXUtOXdIY2JBSDhkTkFzem5vX2JsSjN0VlplbUlrU1RqeGV2UEZQLVE?oc=5",
-          "source": "Sahara Reporters",
-          "published": "Sat, 07 Nov 2026 13:44:34 GMT"
+          "title": "2027: No Going Back On Nigeria\u2019s Path To Economic Prosperity, Declares Tinubu - Independent Newspaper Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRzZiSmJZUHAzb29RWlBRd0d3dENSTzllQTdQVmlEamVaYlhSRXFuRm0tOUN4bWo1aUZmeU91clZIOFhOQWMzVGIwVE9uMEJIVmVHaks2QjhJRUNwY3ZhNUlTekdvOS04a3g1dWIzUVBqb3VQRS16TUhGT0F2cWNlb0d2anlVMVNDTW1QLXlnZ3ZUbWI0VmtjbUNYQ2lhR0k?oc=5",
+          "source": "Independent Newspaper Nigeria",
+          "published": "Sat, 07 Nov 2026 20:06:24 GMT"
         }
       ],
       "global": [
         {
-          "title": "New Zealand in political limbo after knife-edge election - CNN",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNazZ3Q0ZwVlVRTW5aZTJnZDVjSXkyVzU0b0NwNmdLMlE1eUk4UmRJM2EwYmF5V0VIeVZnZXpuRG1pbDU3TjNtV21nWFg3aER6T0ZBNXdfWkl5WFBSa1UzYTllUGhiUE5BRmVJSFlSMkwxdEtMekc5R3UySmpUaEwwMHFEaUJFaWM3bG84?oc=5",
-          "source": "CNN",
-          "published": "Sat, 07 Nov 2026 13:09:24 GMT"
+          "title": "Israel's president taps opposition candidate, not Netanyahu, to form a government - NPR",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZDlIMU9QdDB4N3pvejhqZmFBWm5lMkFici1VX3dCNFM4UHVXMVU5cWF5c2xfejBzVEtnSk5DNHcwQXRFSU1iQkQtYzY2bUk4S1o3dXVFdUd2NG5oS3RxSF94bFlNVTA2OFNNWHAyTTZmbGlkdHgwTEQxR09yRVJwcjQ3MGdEd2M4d2VIMENHYw?oc=5",
+          "source": "NPR",
+          "published": "Sat, 07 Nov 2026 20:18:18 GMT"
         },
         {
-          "title": "Conservative bloc takes a slim lead in New Zealand election that\u2019s still too close to call - AP News",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYVZ6SS13ZlhVYVFPcXFkeXljMDY3M1dXTWNfZHVGb3Y4NXU4ZWw3SU5HSXRlMkRJNVUzcWVxRXhOZUVmeTNHblM3Wnd3MzYyNExaMWNKTXgxWWowb0VmTVFwT05CajhMV0d5ZGE5ZGtSV3ZZdXlidUc4dFpveG9XQnBldFQ2c2syWHY5MXZWaUd5Q0VHRmlmM3ZiYmVtTjlUUkJXR3hLckRpcjhCUFE?oc=5",
-          "source": "AP News",
-          "published": "Sat, 07 Nov 2026 11:44:00 GMT"
+          "title": "Ex-military chief Gadi Eisenkot, opponent of Netanyahu, tapped to form government - The Washington Post",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNkNJbUh4ZFl6NzBHZjJZVU85UGhmUnIzSnBXZUhrczJyNldvUWNHYndxc293NGFwOG1Yb2JaeEdmVW1nYWU1dmdrYVJXU2NVdFZERGN6TjZSUFk3WmhzTjdHd2RZdWx5OFZQOEx6V3lOeVY5dTlwV0pidXZ6RWN3MVlPU20xQWJmcjlPdzJtSlZWMld0QkpESFVkbEpfa3k4ZzJhc2Z1QzR2OGdEdlFfQ3VBWjZvZWtDSXhuN0taZFNFU1E4?oc=5",
+          "source": "The Washington Post",
+          "published": "Sun, 08 Nov 2026 02:14:44 GMT"
+        },
+        {
+          "title": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVHIwVVZqTlgycHFJTEhPM3g1WU5oWWtKelZsNW5aUEphdmpDRC1STjMxQmYyYjR5dkNZUVFiVFBfZ3J1Nm9HN0RmM25pOUlTMWJkWGZuVktLV3h5QkNmdEtrbUt5X2NBYXFuZC04TzhPZUJWLWVJeWJMM256ZWIxRENRczhNdEtIa2I2aF85VzJUejZMa1ZvVEFSZXZCQWJtZU1nTnBvaVl4cmNJTEhfcWpCNTFjMmotS090TzE1eXc?oc=5",
+          "source": "Reuters",
+          "published": "Sat, 07 Nov 2026 22:49:13 GMT"
+        },
+        {
+          "title": "Israel\u2019s president picks Eisenkot over Netanyahu to form next government - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNjJubXg0Znh4QVI4cm5kSENUVE9LYXZWR2xJZm5Ya2NQRDRzcXZRMzNMakZzTHpPbFp6cE51WHBmNUlLWlN5T0F5X1ZoeUpRYklCOVNkOU50enRfMFlGTGVsTktVQU1qcWhfazN0eE5yZGJfd1Fmdk9SY1NZSkZta3E4M2x3cHhrb20wbDl5YU5UdkZVRlVOTWZCSFhFSkh5QU5EbnpMRkIxaFIxQWVSdEN30gG3AUFVX3lxTFB5OENqM2pFYzQzdXlrMHBiaGF1RlhPd2hDQzJxSW1FQlNqRVNMV3VlOFMwS0tLaDM1RThDcmF3ZVZSMUM0SkFXenhDZmlCMW0tWUhhQ2d6OWJYQlprd3h3SUttM2djTDlIM09HdVVWY1VJZ01hZ3REbkpTellwSDQ0WVpQcFNyTUM3MlZhenhwcWFYS3p1MjB5bDlTQ1ZYbVNRN2tQdER4N3RYaFowcVVIRjN6X1k5WQ?oc=5",
+          "source": "Al Jazeera",
+          "published": "Sat, 07 Nov 2026 23:19:46 GMT"
+        },
+        {
+          "title": "Israeli president picks Netanyahu\u2019s rival Eisenkot to form new government - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMUdlLW5QcDNMY3dRNm1XVHROSG1MRkVMSVhsWkp4R2kybXIyMHpNX2pZZHdFdUFnNU1INE9XUUFQaWlPQmU5aklBSXhnU2p2VThNZEhGQjd5UzI5alBFYUNjTnhMSVlIaGprTTZuVU1sNlNUMUNzMUhrdDFqRm12ejhrSUxOX0lZbXhNU21Xb0dtS3Zz0gGaAUFVX3lxTE5vdmsxQlNoWkltVFFEWTZfNkdPNjZoSUNJQXprNE5kaHh3dzE2dFJOS2UzYS1CbTktZDY5Y0VEckdXMlVwSVlzc1EtcGR2emh5SkFzamRQSVpxcFdmelIyek1nS1pOdnBPNC1XSElDX2lScTMxS3c3Y0dOenFQSmJESmhsQmZoMWtFdm50X3Zpek9tX2NfME9laHc?oc=5",
+          "source": "The Hill",
+          "published": "Sat, 07 Nov 2026 21:13:00 GMT"
+        },
+        {
+          "title": "Israel\u2019s president picks Yashar leader Gadi Eisenkot to form government - The Guardian",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPR0JHczRrNlAyS01zWHNUYlRNR1d4NVNQMVR3Q3VreERqZjY0QmJ5dlJsaEFoWUc4VEQxcjNxMmw2RkIydWVVSFZ3Ukg5M0lDX1EzWjJ2cmt5ZmFEOTZXWk11Zkh6OUNDc21OM29sQXVjcXgwNTZYYWdXYnZuMUNJYUtWNlJGblN2TXRZN2M1TW82VjVaUFJ3?oc=5",
+          "source": "The Guardian",
+          "published": "Sat, 07 Nov 2026 23:42:00 GMT"
         },
         {
           "title": "Results for Women Congressional and Statewide Executive Candidates in Election 2026 - CAWP",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNOFpsRmJGX3dfQkQyNThKTVdjUlo2VFRpaFRUNk9nX3ZlbTFvcGgzRUYwNFFKNEp4bXZPUnphZ1Z5bEhsWl9zcF83OGJINFZZVXNONkZFWmFiWl9GemJyQjh2WFpjaV9ZOHUwZ3BiUDdwXzlYMnlRbFdZYWxTVDU2MUlFREs4SVVIelRKY2l2NFVFczFWV3o3ZXJYMVJSQmxPSHVzS1VHd2pRdw?oc=5",
           "source": "CAWP",
-          "published": "Fri, 06 Nov 2026 21:45:00 GMT"
+          "published": "Sat, 07 Nov 2026 15:20:00 GMT"
         },
         {
-          "title": "7+ Florida Politics Now: Discussing election results - WJHG",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYVRHR1VYUWxteTN4Uy1lblpvXzBPUGlMU3I2eTJuOEpLUTYtMUFXSG5FYzRrenYtRGl0aTd6Z290dF9RZV9KckxkZUxHdW83akU3NW9lMmFKWGtaMEdocFEtd3F6ZnN3WTkxdmR3MGt5aXR6TUVqU1Z3aXh0eU1KY0QtTG1PbTlPeFVv0gGfAUFVX3lxTE5vUnVLRHVGc2xNUUZHZXVZa0J6ejNWLVJHTW9FSHpoa1pXQV9jTWl5VzYxQzNJT3B5TXlSWWNHVGVLY3JCY1NsRTVnWTZIV1VVbmg1cDhpdUdwajhIRUNDUHoxWU1vUUZIWF82aElTZTQyOTcyNTNoU3Fmb1lSeWVRZFRDdHduOS1TOThVb3B4NTJsaUZzQU83RVd1SUJxVQ?oc=5",
-          "source": "WJHG",
-          "published": "Sat, 07 Nov 2026 00:01:00 GMT"
-        },
-        {
-          "title": "EAST TEXAS POLITICS: Texas\u2019 next comptroller and attorney general discuss election wins, Republicans respond - KLTV.com",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWFMzWFpwU0hTMF9EQUtTM01TNVNZRHRGeTc0VUZqd0ZRUDgxRDZUbFhNSTdpOG43RG9taWRzUFEwMHZCVGNaUmF2MDRDTnlabWFxNmROMVpDYXl3UjFOOTVpS3RlQXRueFZxbDhhZEJJQ1VaNnU5X3VYZ2pMcE1YZzBrXzZzVTdZc1dyYmRQaTA4dGstbVZJTnVIVVpCeVdPR2U1ZEVUcHltQUpjbDE3cFBsNjE0cUlwNjZ6VW5JNkxwLU5BRHlIN25fUzdjbk3SAeMBQVVfeXFMTTlVSDQ5UEllRVBDcEpVa3NReTlpNU43c0RDdmV0ZGx1TGZJb1RvQ2RVMHF2eXU4aldPcFgzNklVN3dpaUpMdGVUWXVKX0xtemNMTlNJX09mYnN2LVd2LUVGZTRIVGZHR1RqeURTcFJxbDdrZmNfeVZTM19QQmdDQzMtY25WclpuTlQwTkt3Z0hfRVJrRmpjYkNKRjBLWExTVGZkWWtLU3Fpc1BwV3lZYVV5X0FiWmh2LVdpUGtDb0syTTZUN0gzZGdPNGtlX0dfUkgxYmlGMm9yaHY2OWVUMUNQNVE?oc=5",
-          "source": "KLTV.com",
-          "published": "Sat, 07 Nov 2026 01:06:00 GMT"
-        },
-        {
-          "title": "Israel's Arab-led parties in spotlight after inconclusive election - NPR",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNURJVzhrOEgxNkI0bVVDZXNtazNIUlJPcHFJQkVDZmFnN3FjMGJ3UE9NUUhFV1pJWkJ5NS1FczJ4dy13a1JkdHh0YXRCbVBzTUwxOXkyT1lFblBvU2VoTXNNRHBKYVhfMTZiZFBGN0U3TnlIbTkwOC1fWXlvSXEyeWZxSUlQT1JKOGEw?oc=5",
-          "source": "NPR",
-          "published": "Fri, 06 Nov 2026 20:42:51 GMT"
-        },
-        {
-          "title": "A knife-edge result, 3 possible outcomes: what comes next after NZ\u2019s election? - The Conversation",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVEpCeHk2cDBrLXM3b2k2R2NiWEEtdzVRdUFIX0pteGpHRm1WclRFYWJLTVJYRTFSVk5xYW8yN0NTS1ppR1dKYTNrRktUWHptbGpVek4wLWY2VjRESUMtRk9xNUpwVWhRY3BmWUpzOVpENG40QUpCMFlrQTR1R3Jkck9LY1B1dnNEUzUxOWw4ZzViTEdoX3hHQWZUUTlUamlyUGpIbVlDTjJqQlZIaFE?oc=5",
-          "source": "The Conversation",
-          "published": "Sat, 07 Nov 2026 11:03:32 GMT"
-        },
-        {
-          "title": "Mississippi election marks political earthquake in the Deep South - Financial Times",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQR24xZVplLUlWSjBHOXNjME1Uak9YM3ViTlBtYkw4UDFtQ3BvRHdJUjRRTlg0ajExb2dlQ0ctcTJUa2cyNnVhRkRGczYxN1d5RUhROUVOYUFqSC1CTC12TDFGQU5yOFk5MWNZLXozRUVpSHhwb0hESkF5YTFkZGEwSEU5d3M?oc=5",
-          "source": "Financial Times",
-          "published": "Sat, 07 Nov 2026 05:00:22 GMT"
-        }
-      ]
-    },
-    "entertainment": {
-      "nigeria": [
-        {
-          "title": "KADIFF Mourns Veteran Nollywood Actor, Diewait Ikpechukwu - News Agency of Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeTVQc3RvMTdFVEk2czd2LVk3bjBfUFlWRHctLWZqclZxUUlXY3ZMb3dDS3ZLTnpJcHhEdU9qVmlDSjNqV3ZJWnpuNEJpRFZDaFJIN3RPYW01cGQxaE9RZm1RbktQS2NVeVBZa2pSTGwtN2ptcGI0ejBjQW02SWZOTkpB?oc=5",
-          "source": "News Agency of Nigeria",
-          "published": "Sat, 07 Nov 2026 10:14:59 GMT"
-        },
-        {
-          "title": "Afrobeats meets the altar: Davido and Kirk Franklin find common ground - TRT Afrika",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vVDlYa3JKTG9qR0N5VF8yZUlFeXUtendicnNwVFh2VGxtakRRenh6SDBrMnVubXdtOGYydXhfN1JrWWMtWENtVDQ3NFcxTUZGcFZEeWFUeldqYnFWMHgyZUJVNlc?oc=5",
-          "source": "TRT Afrika",
-          "published": "Sat, 07 Nov 2026 05:22:01 GMT"
-        },
-        {
-          "title": "Nollywood actor Diewait Ikpechukwu dies in Nigeria \u2014 Premium Times Nigeria - UA.NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQ3hwbGNvS0ktZm91UFI2ZDM1b2RhRWVuU1hzWlk1Sm9lamJJSkZqMW5BM2x1SF9seHdLOGM3VHVRMTJoaDBVUDBpTnJIcnVqTTUzaktpMU1ndTVPUDdTUlRMRWhrNjZ4b3N0MlF6RlFoeWs5aVFiZ0laNnJqdzNqSFNTNzBBRDVVRks4Rm1hbGZkYy1hakhYTlo5aTF1NlpoVTZMYzM5Z2c?oc=5",
-          "source": "UA.NEWS",
-          "published": "Sat, 07 Nov 2026 10:36:31 GMT"
-        },
-        {
-          "title": "Veteran Nollywood Actor Diewait Ikpechukwu Dies At 71 - Independent Newspaper Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMFdpWXJ5dkIxU1loWEs5TnJpdlctUThsUG9XUkFFS05aTXNEX3Vqd2ZXaXU5TldZWHFKeXVGWDZYb25EUnZlaXVoR3hubnhDRHdVbC1wX1NhUTFOY0oybFd5c2dZX0ZYUzRxVVNjYl9EX19XeWNzVjlGNjVUMG9wc1Ruaw?oc=5",
-          "source": "Independent Newspaper Nigeria",
-          "published": "Sat, 07 Nov 2026 11:06:38 GMT"
-        },
-        {
-          "title": "Veteran Nollywood actor Diewait Ikpechukwu dies at 71 - Premium Times Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbDNubk9vcmRpQzQ1RndhalpKZHFRamh5UVlCU1MwZkg4ZkpnZE1wcUI1MGpMVjJmdTdWSzFCLTlSeWx5NUllYXdqcE9uYWhDdFpCLTlBVkdneG9KWUQ4OVQxOHlxenBEekJDNDg4S2dPQ09nbGRLV2tNRTVUaXRqZDRIMGNvbFhzeTV2M2lZUmRERFZyWEd4Y0Nud21HRkxsUmNpeEVTQ1NTOGJrYXhaNFM5ZU1rMEczVWl0SQ?oc=5",
-          "source": "Premium Times Nigeria",
-          "published": "Sat, 07 Nov 2026 10:18:46 GMT"
-        },
-        {
-          "title": "KADIFF mourns veteran nollywood actor Diewait Ikpechukwu - Peoples Gazette Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSVF0RTI0d2VmcjU3V2ZvUzVKMXc2NXljR2tySUJnclQzOTQ5YUZaamE5RzFSOXFjaFdkb1g0WmUzTHJQZlgteExRVFE5RktxUzdYWXpzTkRqQl9FRzNnLWRvd1NCWU1WUnNlOUw0Nk1WNjFxRHQzN3BZUzg0V254ZFJabEk3VDA?oc=5",
-          "source": "Peoples Gazette Nigeria",
-          "published": "Sat, 07 Nov 2026 10:17:16 GMT"
-        },
-        {
-          "title": "Nollywood actor Diewait Ikpechukwu dies at 71 - FRCN HQ",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMnRaekJWQnQ1R0tpUUVLTDkyQlFRV24xNktGeXRpQjhaQkRib0pldnRxSnpGOVFLTE9qSDdtZmhnYUlCZW9iZ0puYUNhcl8xblVlLUNyTkxjU28xN285T2hISFhRZ1lXcU83cTVwTGJRS3V0UXVUMER1bVFpNGRHV1FILWl6NmthUGJ5d0N3?oc=5",
-          "source": "FRCN HQ",
-          "published": "Sat, 07 Nov 2026 13:44:46 GMT"
-        },
-        {
-          "title": "Nollywood Movies and Series Coming Out This November 2026 - YNaija",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcFY1RGRzbHBHZ1pFQ0JJTXlHNzgzUExSNmw5Um9Sc005WURnTFZtNXl0VlZKRFI2OHNpNlFOMjBMQXhmdGM3bW9leVBPXzhIVkpEV1U4eHRZTDVGM0NfekU3QzFNZmowbXRKbVE5OERtRWRtNEhZS1FibC1veFJXT0dCOA?oc=5",
-          "source": "YNaija",
-          "published": "Sat, 07 Nov 2026 11:01:09 GMT"
-        }
-      ],
-      "global": [
-        {
-          "title": "Victims in rape cases must not feel like they are on trial, Burnham says - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE00RHI0dk9QYkRFSUFodWhpODUxbk5tc2tMRk8wM1A1NDVmaXpXTzl6TXR0alQxVEVnVkNZYS04enZKUVpFdEdtZkp5UnpPX09aYXczbE9yZnJNNlk?oc=5",
-          "source": "BBC",
-          "published": "Sat, 07 Nov 2026 11:04:28 GMT"
-        },
-        {
-          "title": "Horoscope for Saturday, November 07, 2026 - Chicago Sun-Times",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOamJfLUxTSkF2N2l5eHVOZUlhOXNXWGhQZzVlV2Z1bUE2cTFzckpnaWYyMHV3U3ozNVhuNXBCc1EwbDVGTm5JMkEtVTZnRnQ1Z1dzdkowUkttS2lwNy12X2toREx6Rmp3SUVqNVNfY1l5cDA4TjVCMlhWdEppdXJsbTJFam50dnc0ZW02WTIwVjJsZGRqajZ5NA?oc=5",
-          "source": "Chicago Sun-Times",
-          "published": "Sat, 07 Nov 2026 06:01:00 GMT"
-        },
-        {
-          "title": "Meghan's estranged father arrested and charged with possessing child sexual abuse materials - AP News",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNHpGTGhqcHRFbVlLRWRncDVhUFJnU25fSGFTclFBam5RNWpJSDBxanJTRkxGVmFaWjU3WFRXaHJQaldNU2ZURXBuRzRXLUhYUmdrR083a3FaaTJEdG84QUVFMzdxNVJ5NmVuYkstV1AwVVg2YmREMzAwRFEzYmlLODhzbGUwZHpTV2YwVzdNekFGZjk1MnEyMXhCTDFaVjg?oc=5",
-          "source": "AP News",
-          "published": "Sat, 07 Nov 2026 00:01:00 GMT"
-        },
-        {
-          "title": "'Golden Bachelorette' couple Joan Vassos, Chock Chapple split after two years - USA Today",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOeTFzV3NQQlZjQTlCa1RSemtMNHZOTVdldDdBamVuVlRYV0JUN0R6cVpVU1l4OUQ5S0hXelJlSUZDS09sMUg1UjZreDM3QWRRUmFrYk5xcmpTU2ZyVWxoZDB0M2l6UWRkSVBXWU9MWFE0X3paZzBWWm9qbTd0bUlkdHpQZ3hPS2lmOGU1a0MzSnRDazhjaVdTdktIUU9ENHhoaElEQW5PcDlCQWNLVG1jQXdYaVQ1VC1vVnd2T05mNFgxaXBEZDJQbERQQnQ5cUh1YUZVd0dTM3U?oc=5",
-          "source": "USA Today",
-          "published": "Fri, 06 Nov 2026 23:34:00 GMT"
-        },
-        {
-          "title": "Lifetime star Natasha Wilson permanently disfigured after dog attack - USA Today",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZ3dTU3cycUt1OVFYY2lPTG5vVndZX3MzbzNhQWVqNGlOc0p3NVlJU2RiQWtCTFE2LUtGbS05ZVBrbUtEUUV3OEpJcFNHMmdoZ2FjZ2I0MFZSRHB1eDNaTlY4Z25wS1F0NE5KVDBPN0pFMEx3Wkp6dG5JZ3ctajZSRFpJdERqWVVFSnViOFRPY3FzZ2g4bHRwQ3U1SVNpc1hPRG1fZ1BpY1VfU2VsaUxzTW9OV05UWWlCZ2lkNFRvMUF2cDhyZGpWYw?oc=5",
-          "source": "USA Today",
-          "published": "Thu, 05 Nov 2026 22:25:00 GMT"
-        },
-        {
-          "title": "Knicks defend Taylor Swift after players name her 'fakest celebrity fan' - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9YejBFVDc5YlNoTFJKTHp1Q3FWQjNGTEtjc1pYenkyeC0xb3Y0UHk0OFphWUp0NzlrQUdyd2JuXzlCYUhCZzJzMW40QXVQZXJaU3lVS3MwZ2dZRFU?oc=5",
-          "source": "BBC",
-          "published": "Sat, 07 Nov 2026 13:03:57 GMT"
-        },
-        {
-          "title": "Chris Brown and Usher Deliver Drama Instead of Duets - Yahoo",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNM2tSOEdTQm5fN3g5a1JOVTJCdExmU21RaTRxWk81bXVFOERwRmpzQW4xVzU0RDZjVk41NEZYYnhBZ1ZrWHh6YlNEY2pXcWlCVE12NU5XVk5HLUVKc0U0T0JYeE9JMWFoUk5QSzlGRmdXTFJvRk1TTzFlVVBnQkF2T0ZGSmVGZWxHZEI0dkJ6S056NFhhVW13U0NFMXFlai1na1o4QUY4Z0FEQQ?oc=5",
-          "source": "Yahoo",
-          "published": "Fri, 06 Nov 2026 19:24:21 GMT"
-        },
-        {
-          "title": "Wild Video Shows 'Celebrity Rehab' Star Kari Ann Peniche's House Exploding in a Fire - TMZ",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RMkRoM0R5RHVJQmhUNW1rNW1TNGx6OFZRUHBiNUNTUXhid2NCd1o0ZURvU1JqRHVPcmYxUFhZZnh0X0lkZFA3VVRIV2NNNXdqX2J5NkZ3UVBKUDlMZHpqeU1rbU50QUxwNzNnaDVxMFE0UQ?oc=5",
-          "source": "TMZ",
-          "published": "Sat, 07 Nov 2026 09:00:42 GMT"
+          "title": "Scott Colom and Black Mississippians stand on the cusp of Senate history as vote count stretches on - PBS",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOV2Rac3hxeXVCWWZlNGF3UndSazNNcjBfNVhfa2QzUTNOVTEtSnh4b1dLXzVsdlRTc0R3Um5DRG9vZW1lRVhPeFlSRXZybFVnd0J0LXZkWmhRVjJVa1JXZDVNdHRLX1Nid2gxWndjUllJdVFsaTNUcUxMWm5xOTV2TDQyd01GY2U0c3pvbEg1RldaS3BlcEFYZmNDcWRHd051T3ZzQUt2QjJ0RWNLeXA3b216RkIya3hNM1djR3FRSFBwMzdWRmpab1JUQ0t6MGRaUEZJ0gHYAUFVX3lxTFBRVFdWWnRfd3VfaHFvc1ZDR0tNcVFYYWFIOVpLVnZid1lIX2dBUDh5ZEZGOFM2ajBLeHJTbXByeWNIeGVyaDdtYno2UFNleEE5cHZyVlB0QWRtTl9vWGZGT2pRS3NUa3ZWWEtYLXo3ek42VDRGQUpyeVVEc0pndGJTdmF6SG1fVGtzVmVSX1JkSnpNYUd3RXp3U0loTTlnMFl5enhwbzZoRW0xMFZBd2RPX2o0R09JT21tSHdraldEOFByakdySnRCa3FRRFpsUXhMODBqWWxFTA?oc=5",
+          "source": "PBS",
+          "published": "Sat, 07 Nov 2026 17:54:01 GMT"
         }
       ]
     }

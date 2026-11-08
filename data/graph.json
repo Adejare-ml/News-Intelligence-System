@@ -121,6 +121,18 @@
       "risk": "Critical"
     },
     {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f8f7bbd6535e",
+      "label": "Nigerian National Petroleum Company (NNPC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -187,6 +199,18 @@
       "risk": "Low"
     },
     {
+      "id": "9d67de6b1eb2",
+      "label": "Ibom Deep Seaport",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3e0f0da289fe",
+      "label": "Nigerian Institute of Transport Technology (NTI)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "8aeb2e3bdb2c",
       "label": "Bank of Industry",
       "type": "agency",
@@ -217,27 +241,9 @@
       "risk": "Low"
     },
     {
-      "id": "e79817c87e24",
-      "label": "National Identity Management Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "13d618290120",
-      "label": "Federal Ministry of Information and National Orientation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "93ae4b6cdd46",
-      "label": "Apapa Ports",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0f08a8914675",
-      "label": "Agence Fran\u00e7aise de D\u00e9veloppement",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -427,12 +433,6 @@
       "risk": "Low"
     },
     {
-      "id": "8a8a46a4990f",
-      "label": "Unnamed Special Adviser",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "f05534764d4f",
       "label": "Olukayode Olusanya",
       "type": "psc",
@@ -565,30 +565,6 @@
       "risk": "Medium"
     },
     {
-      "id": "334c4a4c42fd",
-      "label": "None",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ee660b17d5a8",
-      "label": "National Automotive Design and Development Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f91fc56bb9ce",
-      "label": "Unnamed Firm (owned by Lagos Councillor)",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "ab4dcffbf2e5",
       "label": "Lagos Government",
       "type": "agency",
@@ -629,27 +605,15 @@
       "label": "Humatrix",
       "type": "company",
       "risk": "Low"
-    },
-    {
-      "id": "71c59636e7a3",
-      "label": "Federal Executive Council",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8ad929872c06",
-      "label": "Federal Ministry of Aviation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "58e21ffa68da",
-      "label": "Katsina State Government",
-      "type": "agency",
-      "risk": "Low"
     }
   ],
   "edges": [
+    {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President of Nigeria"
+    },
     {
       "id": "456bb67cfb9e",
       "from": "31cdf5f58157",
@@ -777,12 +741,6 @@
       "label": "Appointed as Commissioner"
     },
     {
-      "id": "a1bda8ed9fe7",
-      "from": "8a8a46a4990f",
-      "to": "3a4a88456e84",
-      "label": "Appointed as Special Adviser"
-    },
-    {
       "id": "34c826682817",
       "from": "f05534764d4f",
       "to": "dba897677026",
@@ -855,69 +813,15 @@
       "label": "PSC: 24.5%"
     },
     {
-      "id": "6b1d699c5d81",
-      "from": "334c4a4c42fd",
-      "to": "02bcb5f5a7b4",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "89c5f77f8475",
-      "from": "334c4a4c42fd",
-      "to": "3641df6a5c2b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "f8428f09d5a7",
-      "from": "334c4a4c42fd",
-      "to": "5a98eb23f6f5",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "1e528d29d72f",
-      "from": "334c4a4c42fd",
-      "to": "ee660b17d5a8",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c1305d06177d",
-      "from": "334c4a4c42fd",
-      "to": "4c7e8211e98f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "c3a1ff8afb13",
-      "from": "f91fc56bb9ce",
-      "to": "9aef00190386",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "41566a83c72b",
       "from": "3e32a23488ab",
       "to": "ab4dcffbf2e5",
       "label": "Contract Awardee"
     },
     {
-      "id": "7ae984c2a8c8",
-      "from": "334c4a4c42fd",
-      "to": "0c2be969618b",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "9aaad96e9617",
-      "from": "334c4a4c42fd",
-      "to": "3a4a88456e84",
-      "label": "Contract Awardee"
-    },
-    {
       "id": "e93a110c1ab6",
       "from": "2cbc793c6023",
       "to": "b5da1d8370fd",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "28b1db6062df",
-      "from": "334c4a4c42fd",
-      "to": "9aef00190386",
       "label": "Contract Awardee"
     },
     {
@@ -939,21 +843,9 @@
       "label": "Contract Awardee"
     },
     {
-      "id": "e185b6db0a0f",
-      "from": "334c4a4c42fd",
-      "to": "71c59636e7a3",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "51b6ffa966e8",
-      "from": "334c4a4c42fd",
-      "to": "8ad929872c06",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "571c83be7b42",
-      "from": "334c4a4c42fd",
-      "to": "58e21ffa68da",
+      "id": "7bf4de3d8073",
+      "from": "7f50eb5ca259",
+      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

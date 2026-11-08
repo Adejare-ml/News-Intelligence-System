@@ -64,7 +64,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 95,
+      "total_mentions": 96,
       "points": [
         {
           "week": "2026-09-14",
@@ -110,8 +110,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 12.5,
+          "mentions": 3,
+          "avg_risk": 13.3,
           "max_risk": 15
         }
       ]
@@ -649,6 +649,49 @@
       ]
     },
     {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 8,
+          "avg_risk": 18.8,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national agency for food and drug administration and control",
       "label": "National Agency for Food and Drug Administration and Control",
       "total_mentions": 16,
@@ -682,43 +725,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 15,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 8,
-          "avg_risk": 18.8,
-          "max_risk": 30
         }
       ]
     },
@@ -5108,6 +5114,25 @@
       ]
     },
     {
+      "key": "national petroleum company nnpc",
+      "label": "Nigerian National Petroleum Company (NNPC)",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "national shipping line",
       "label": "Nigerian National Shipping Line",
       "total_mentions": 2,
@@ -6292,20 +6317,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "al hikmah university",
-      "label": "Al-Hikmah University",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-07 14:05:31"
+  "generated": "2026-11-08 02:26:08"
 }

@@ -12,10 +12,10 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 12.5,
+      "recent_avg": 13.3,
       "previous_avg": 28.3,
-      "delta": -15.8,
-      "recent_mentions": 2,
+      "delta": -15.0,
+      "recent_mentions": 3,
       "previous_mentions": 9
     },
     {
@@ -37,13 +37,13 @@
       "previous_mentions": 2
     },
     {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "recent_avg": 13.3,
-      "previous_avg": 20.0,
-      "delta": -6.7,
-      "recent_mentions": 3,
-      "previous_mentions": 1
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 35.0,
+      "previous_avg": 30.0,
+      "delta": 5.0,
+      "recent_mentions": 5,
+      "previous_mentions": 10
     },
     {
       "key": "ikeja electric",
@@ -64,15 +64,6 @@
       "previous_mentions": 21
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 35.0,
-      "previous_avg": 31.4,
-      "delta": 3.6,
-      "recent_mentions": 5,
-      "previous_mentions": 11
-    },
-    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 31.2,
@@ -80,6 +71,15 @@
       "delta": 1.8,
       "recent_mentions": 4,
       "previous_mentions": 8
+    },
+    {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 15.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "joint admissions and matriculation board",
@@ -118,15 +118,6 @@
       "previous_mentions": 0
     },
     {
-      "key": "abia state government",
-      "label": "Abia State Government",
-      "recent_avg": 15.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
       "key": "transmission company of",
       "label": "Transmission Company of Nigeria",
       "recent_avg": 15.0,
@@ -155,5 +146,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-07 14:05:31"
+  "generated": "2026-11-08 02:26:08"
 }

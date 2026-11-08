@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 94,
-  "previous_articles": 228,
+  "recent_articles": 96,
+  "previous_articles": 224,
   "rising": [
     {
       "term": "power",
-      "recent": 6,
+      "recent": 8,
       "previous": 0,
-      "change": 6
+      "change": 8
     },
     {
       "term": "firm",
@@ -67,9 +67,9 @@
   "falling": [
     {
       "term": "tinubu",
-      "recent": 1,
+      "recent": 2,
       "previous": 22,
-      "change": -21
+      "change": -20
     },
     {
       "term": "court",
@@ -80,19 +80,13 @@
     {
       "term": "reps",
       "recent": 5,
-      "previous": 16,
-      "change": -11
+      "previous": 15,
+      "change": -10
     },
     {
       "term": "approves",
-      "recent": 1,
+      "recent": 2,
       "previous": 9,
-      "change": -8
-    },
-    {
-      "term": "financial",
-      "recent": 0,
-      "previous": 7,
       "change": -7
     },
     {
@@ -124,17 +118,23 @@
       "recent": 1,
       "previous": 7,
       "change": -6
+    },
+    {
+      "term": "financial",
+      "recent": 0,
+      "previous": 6,
+      "change": -6
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 64,
-      "previous": 164
+      "recent": 67,
+      "previous": 160
     },
     {
       "category": "Company",
-      "recent": 20,
+      "recent": 19,
       "previous": 28
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-07 14:05:31"
+  "generated": "2026-11-08 02:26:08"
 }
