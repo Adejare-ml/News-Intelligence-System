@@ -1458,17 +1458,30 @@
     },
     {
       "date": "2026-11-07",
-      "runs": 2,
-      "articles": 10,
+      "runs": 3,
+      "articles": 12,
       "high_risk": 0,
       "appointments": 1,
       "procurement": 2,
       "cascade_failures": 0,
-      "candidates": 1548,
-      "rejected": 80,
+      "candidates": 2314,
+      "rejected": 101,
       "undated": 0,
-      "run_seconds": 695
+      "run_seconds": 884
+    },
+    {
+      "date": "2026-11-08",
+      "runs": 1,
+      "articles": 2,
+      "high_risk": 0,
+      "appointments": 0,
+      "procurement": 0,
+      "cascade_failures": 0,
+      "candidates": 765,
+      "rejected": 14,
+      "undated": 0,
+      "run_seconds": 117
     }
   ],
-  "generated": "2026-11-07 14:05:31"
+  "generated": "2026-11-08 02:26:08"
 }

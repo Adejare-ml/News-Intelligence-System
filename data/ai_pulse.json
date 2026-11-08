@@ -1,73 +1,73 @@
 {
-  "generated": "2026-11-07 14:05:23",
+  "generated": "2026-11-08 02:26:02",
   "models": [
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 1025,
+      "likes": 1131,
       "downloads": 20689
     },
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 1594,
+      "likes": 1640,
       "downloads": 22571
+    },
+    {
+      "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+      "task": "text-generation",
+      "likes": 516,
+      "downloads": 1369
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 835,
+      "likes": 877,
       "downloads": 221506
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 10925,
+      "likes": 11003,
       "downloads": 2643778
     },
     {
       "id": "ricursiveAI/Ripple-65B-Preview",
       "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
       "task": "",
-      "likes": 351,
+      "likes": 373,
       "downloads": 3803
     },
     {
       "id": "burner22/numbat",
       "url": "https://huggingface.co/burner22/numbat",
       "task": "",
-      "likes": 373,
+      "likes": 381,
       "downloads": 9212
     },
     {
       "id": "FusionCow/Sulphur-3",
       "url": "https://huggingface.co/FusionCow/Sulphur-3",
       "task": "",
-      "likes": 401,
+      "likes": 405,
       "downloads": 997
-    },
-    {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "task": "image-text-to-text",
-      "likes": 19315,
-      "downloads": 7813215
     }
   ],
   "papers": [
     {
       "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
       "url": "https://huggingface.co/papers/2611.06500",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
       "url": "https://huggingface.co/papers/2611.06498",
-      "upvotes": 2
+      "upvotes": 3
     },
     {
       "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
@@ -77,17 +77,17 @@
     {
       "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
       "url": "https://huggingface.co/papers/2611.08483",
-      "upvotes": 6
+      "upvotes": 8
     },
     {
       "title": "OpenFrontiers: A Collection of Open Research Problems and a Benchmark for Scientific Rediscovery",
       "url": "https://huggingface.co/papers/2610.37739",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "Terminal-style Mathematical Modeling Bench: The First Agentic and Verifiable Benchmark for Mathematical Modeling",
       "url": "https://huggingface.co/papers/2611.08237",
-      "upvotes": 9
+      "upvotes": 10
     }
   ]
 }
