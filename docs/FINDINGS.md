@@ -26,6 +26,8 @@ It exits 1 and writes no file when:
 
 Each build checks merged findings against today's register and leaves out any that no longer stand: a register bullet must still match its own published row (same link, person key and company key, so another row citing the same article does not keep it alive), and the finding must not name, in any spelling, a person or company that only withheld rows name.
 
+The `findings/` folder itself is never served: unlike the other exports, it is not copied to `/data/`, so neither `picks.json` nor a draft the recheck drops is reachable on the site.
+
 ## Search engines
 
 A finding that may name a person carries `noindex` and stays out of the sitemap, like the register. The script marks it so (`names_person`) whenever it has a register bullet, the headline, note or bullets name a person AURA knows, or a cited article is tagged with anything it cannot tell is a company. Only a finding it is sure names no one is indexed.

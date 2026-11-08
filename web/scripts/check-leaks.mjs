@@ -259,6 +259,9 @@ try {
       leaks.push(`/data/${file}: missing from the copy, so this check proves nothing there`);
     }
   }
+  // Picks and drafts, including the findings planted above that the recheck
+  // drops, are never served raw.
+  if (existsSync(join(outData, "findings"))) leaks.push("/data/findings/: published, with picks and drafts the recheck may drop");
   // Someone named here who asks for a correction must reach the private
   // dispute form, never a pre-filled public GitHub issue.
   const correctionPages = ["register/index.html", "how-it-works/index.html",

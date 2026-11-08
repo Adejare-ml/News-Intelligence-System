@@ -26,6 +26,29 @@ test("copy-data publishes the exports but not the list of unpublished names", ()
   }
 });
 
+test("copy-data does not publish the findings folder: the owner's picks and every draft", () => {
+  const work = mkdtempSync(join(tmpdir(), "aura-copy-"));
+  try {
+    const src = join(work, "src");
+    const dest = join(work, "dest");
+    mkdirSync(join(src, "findings"), { recursive: true });
+    writeFileSync(join(src, "latest.json"), "[]");
+    // A file elsewhere that merely shares the name is still published.
+    mkdirSync(join(src, "archives"), { recursive: true });
+    writeFileSync(join(src, "archives", "findings.json"), "[]");
+    // An unvetted pick, and a merged finding the build's recheck may drop:
+    // the site renders findings at build, so nothing reads these at /data/.
+    writeFileSync(join(src, "findings", "picks.json"), '[{"week":"2026-W45","entity":"tolu-bakare"}]');
+    writeFileSync(join(src, "findings", "2026-W45.json"), '{"week":"2026-W45","headline":"Tolu Bakare and Ikeja Mills"}');
+    execFileSync(process.execPath, [script], { env: { ...process.env, COPY_DATA_SRC: src, COPY_DATA_DEST: dest }, stdio: "ignore" });
+    assert.ok(existsSync(join(dest, "latest.json")));
+    assert.ok(existsSync(join(dest, "archives", "findings.json")));
+    assert.equal(existsSync(join(dest, "findings")), false);
+  } finally {
+    rmSync(work, { recursive: true, force: true });
+  }
+});
+
 test("copy-data takes an unpublished name out of the briefs and digests it publishes", () => {
   const work = mkdtempSync(join(tmpdir(), "aura-copy-"));
   try {
