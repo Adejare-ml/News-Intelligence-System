@@ -165,6 +165,10 @@ Google Sheets acts as the database. Each tab maps to a `SHEETS_CONFIG` entry in 
 
 Each run exports these to `backend/app/static/data/*.json` for the site and writes `report_latest.md` plus a dated archive, along with `weather.json`/`trends.json` context signals and the `feed.xml` RSS document.
 
+### Ownership Finding of the Week
+
+A weekly, hand-checked finding for readers to share; the routine is in [docs/FINDINGS.md](docs/FINDINGS.md).
+
 ## 🧪 Testing
 
 ```bash

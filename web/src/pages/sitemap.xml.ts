@@ -28,9 +28,15 @@ export function GET({ site }: { site?: URL }) {
     .map((r) => parseTime(r.Generated))
     .filter((d): d is Date => d !== null)
     .sort((a, b) => b.getTime() - a.getTime())[0] ?? null;
+  // Findings that name a person carry noindex too, and so does the list showing them.
+  const findings = data.findings();
+  const findingsNoindex = findings.some((f) => f.names_person);
   const loc = (p: string) => new URL(href(p), base).toString();
   const entries = [
-    ...SECTIONS.map((s) => s.path).filter((p) => p !== "register/" && p !== "changes/").map((p) => ({ loc: loc(p), lastmod: lastRun })),
+    ...SECTIONS.map((s) => s.path)
+      .filter((p) => p !== "register/" && p !== "changes/" && !(p === "findings/" && findingsNoindex))
+      .map((p) => ({ loc: loc(p), lastmod: lastRun })),
+    ...findings.filter((f) => !f.names_person).map((f) => ({ loc: loc(`findings/${f.week}/`), lastmod: null })),
     ...HEADLINE_CATEGORIES.map((c) => ({ loc: loc(`news/${c}/`), lastmod: lastRun })),
     ...listEditions().map((e) => ({ loc: loc(`brief/${e.slug}/`), lastmod: e.date })),
     ...["corrections/", "privacy/", "terms/"].map((p) => ({ loc: loc(p), lastmod: null })),

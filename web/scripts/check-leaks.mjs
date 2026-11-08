@@ -14,7 +14,10 @@
 // is built from the register, so each could leak it. So is following.json,
 // what the browser Follow panel and bell dot fetch. The check also fails
 // if one of them is missing, so a renamed route cannot drop out unnoticed.
-import { cpSync, existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+// Merged findings of the week naming those holders, or a holder the export
+// leaves out altogether and only the news names, must be dropped, while a
+// control finding naming a company stands.
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -83,7 +86,7 @@ const HIDDEN = { person: "Zedekiah Leakcheck-Suppressed", company: "Sentinel Sup
 const hiddenRow = {
   "Person Name": HIDDEN.person, Company: HIDDEN.company, Percentage: "55%", "Nature of Control": "Ownership of shares",
   Source: "extracted", "Source URL": "https://punchng.com/sentinel", "Source Title": "Sentinel takes control",
-  Date: runDate, Kind: "stake", Public: true, Quarantined: false,
+  Date: runDate, Kind: "stake", Public: true, Quarantined: false, Confidence: "Full article",
 };
 // The same person as the register might spell them: a middle initial and a
 // neutral title, so only the canonical key ties the row to the hidden name.
@@ -184,6 +187,78 @@ alertsFile.alerts = [
 writeFileSync(alertsPath, JSON.stringify(alertsFile, null, 2));
 writeFileSync(join(data, "suppressed.json"), JSON.stringify([{ name: HIDDEN.person }, { name: HIDDEN.company }]));
 
+// A merged finding of the week that names the withheld rows: the findings
+// pages, the home teaser and the sitemap must all leave it out. Its bullets
+// are news, not register rows, so only the recheck's withheld-name match can
+// drop it (a register bullet without its row would be dropped for that alone).
+const [unsourced, quarantined] = SENTINELS;
+mkdirSync(join(data, "findings"), { recursive: true });
+writeFileSync(join(data, "findings", "2099-W01.json"), JSON.stringify({
+  week: "2099-W01",
+  headline: `${unsourced["Person Name"]} and ${unsourced.Company}`,
+  note: `${quarantined["Person Name"]} at ${quarantined.Company}`,
+  ref: "sentinel",
+  names_person: true,
+  link: "https://auranews.pages.dev/findings/2099-W01/",
+  bullets: [
+    { kind: "news", text: `Sentinel reported: "${unsourced["Person Name"]} buys in"`, outlet: "Sentinel", url: "https://example.test/sentinel-1", date: "2026-10-20" },
+    { kind: "news", text: `Sentinel reported: "${quarantined.Company} changes hands"`, outlet: "Sentinel", url: "https://example.test/sentinel-2", date: "2026-10-21" },
+  ],
+  drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
+}));
+// A merged finding about the unpublished holder, with news-only bullets and
+// no person flag: nothing but suppressed.json keeps it off the findings
+// pages, the home teaser and the sitemap (which lists findings naming no one).
+writeFileSync(join(data, "findings", "2099-W02.json"), JSON.stringify({
+  week: "2099-W02",
+  headline: `Who is behind ${HIDDEN.company}?`,
+  note: `${HIDDEN.person} is reported to have taken control.`,
+  ref: "sentinel-suppressed-mills-plc",
+  names_person: false,
+  link: "https://auranews.pages.dev/findings/2099-W02/",
+  bullets: [
+    { kind: "news", text: `The Punch reported: "${HIDDEN.company} changes hands"`, outlet: "The Punch", url: "https://punchng.com/sentinel", date: "2026-10-20" },
+    { kind: "news", text: `The Punch reported: "${HIDDEN.person} takes control"`, outlet: "The Punch", url: "https://punchng.com/sentinel-2", date: "2026-10-21" },
+  ],
+  drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
+}));
+// The state the pipeline really produces: a person claim on a headline alone
+// goes to the private review queue, so the export holds no row for the
+// holder at all, and only the news names them. A finding about them must be
+// dropped all the same. The story itself is news and may show elsewhere, so
+// only the findings pages, the home teaser and the sitemap are checked for it.
+const REVIEW = { person: "Zedekiah Leakcheck-Review", company: "Sentinel Review Holdings Plc" };
+const reviewStory = {
+  ID: "999998", Time: "2026-10-21T07:00:00Z", Title: `${REVIEW.person} buys 33% of ${REVIEW.company}`,
+  Source: "Vanguard", URL: "https://vanguardngr.com/sentinel-review", Category: "Corporate", "Risk Score": "60",
+  Summary: "Sentinel review story.", Entities: `${REVIEW.person}|${REVIEW.company}`,
+};
+addRows("latest.json", [reviewStory]);
+const plantFinding = (week, fields) => writeFileSync(join(data, "findings", `${week}.json`), JSON.stringify({
+  week, note: "", ref: "sentinel", link: `https://auranews.pages.dev/findings/${week}/`,
+  drafts: { linkedin: "", x: "", email: { subject: "", body: "" } }, ...fields,
+}));
+plantFinding("2099-W03", {
+  headline: `${REVIEW.person}'s quiet stake in ${REVIEW.company}`,
+  names_person: true,
+  bullets: [
+    { kind: "news", text: `Vanguard reported: "${reviewStory.Title}"`, outlet: "Vanguard", url: reviewStory.URL, date: "2026-10-21" },
+    { kind: "news", text: `Vanguard reported: "${REVIEW.company} adds a director"`, outlet: "Vanguard", url: "https://vanguardngr.com/sentinel-review-2", date: "2026-10-22" },
+  ],
+});
+// A finding that stands, naming only a company, so the findings list, the
+// home teaser and the sitemap are shown to be there to check.
+const CONTROL_FINDING = { week: "2098-W52", headline: `${CONTROLS.company} doubles its milling capacity` };
+plantFinding(CONTROL_FINDING.week, {
+  headline: CONTROL_FINDING.headline,
+  names_person: false,
+  bullets: [
+    { kind: "news", text: `The Punch reported: "${CONTROLS.story}"`, outlet: "The Punch", url: "https://punchng.com/control-mill", date: "2026-10-20" },
+    { kind: "news", text: `The Punch reported: "${CONTROLS.company} doubles capacity"`, outlet: "The Punch", url: "https://punchng.com/control-mill-2", date: "2026-10-21" },
+  ],
+});
+const DROPPED_FINDINGS = ["2099-W01", "2099-W02", "2099-W03"];
+
 try {
   execFileSync("npx", ["astro", "build", "--outDir", out], {
     cwd: web,
@@ -239,6 +314,9 @@ try {
       leaks.push(`/data/${file}: missing from the copy, so this check proves nothing there`);
     }
   }
+  // Picks and drafts, including the findings planted above that the recheck
+  // drops, are never served raw.
+  if (existsSync(join(outData, "findings"))) leaks.push("/data/findings/: published, with picks and drafts the recheck may drop");
   // Someone named here who asks for a correction must reach the private
   // dispute form, never a pre-filled public GitHub issue.
   const correctionPages = ["register/index.html", "how-it-works/index.html",
@@ -296,6 +374,24 @@ try {
     if (!url.endsWith("following.json")) leaks.push(`/index.html: data-${attr} fetches ${url}, not following.json, so it skips the unpublish list`);
   }
   if (!changes.includes(CONTROL["Person Name"])) leaks.push("/changes/: the published control row is missing, so this check proves nothing there");
+  // A dropped finding has no page and no sitemap entry, whatever it names.
+  const sitemap = built("sitemap.xml");
+  for (const week of DROPPED_FINDINGS) {
+    if (existsSync(join(out, "findings", week))) leaks.push(`/findings/${week}/: built, though the recheck must drop this finding`);
+    if (sitemap.includes(`findings/${week}/`)) leaks.push(`/sitemap.xml: lists findings/${week}/, which the recheck must drop`);
+  }
+  // The holder known only from the news: their story may show elsewhere, but
+  // no finding names them. The standing control finding must show in each
+  // place, or that place was not checked.
+  const teaser = (built("index.html").split('aria-labelledby="finding-title"')[1] ?? "").split("</section>")[0];
+  for (const [where, html, control] of [
+    ["/findings/", built("findings/index.html"), CONTROL_FINDING.headline],
+    ["the home teaser", teaser, CONTROL_FINDING.headline],
+    ["/sitemap.xml", sitemap, `findings/${CONTROL_FINDING.week}/`],
+  ]) {
+    for (const n of Object.values(REVIEW)) if (html.includes(n)) leaks.push(`${where}: ${n}`);
+    if (!html.includes(control)) leaks.push(`${where}: the planted control "${control}" is missing, so this check proves nothing there`);
+  }
 
   // Every kind of export this check must cover, at least one file each.
   const EXPORTS = [

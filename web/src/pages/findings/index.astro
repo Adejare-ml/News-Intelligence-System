@@ -1,0 +1,85 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import * as data from "../../lib/data.ts";
+import { href } from "../../lib/url.ts";
+import { weekStart } from "../../lib/findings.ts";
+
+const findings = data.findings();
+const day = (iso: string) =>
+  new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+---
+<Base
+  title="Ownership Finding of the Week · AURA"
+  description="One hand-checked finding a week about who controls Nigerian companies, every fact linked to the outlet that reported it."
+  noindex={findings.some((f) => f.names_person)}
+>
+  <section class="wrap intro">
+    <p class="eyebrow">Findings</p>
+    <h1 class="h1">Ownership Finding of the Week</h1>
+    <p class="lede">
+      One finding a week from AURA’s register and news coverage, checked by hand before it is
+      published. Every point links to the outlet that reported it.
+    </p>
+  </section>
+
+  <section class="wrap list" aria-label="Findings">
+    {findings.length ? (
+      <ol>
+        {findings.map((f) => (
+          <li>
+            <a class="item" href={href(`findings/${f.week}/`)}>
+              <span class="meta">Week of {day(weekStart(f.week))}</span>
+              <span class="h3">{f.headline}</span>
+              <span class="more">Read the finding <Icon name="arrowRight" size={16} /></span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <p class="empty">The first finding has not been published yet.</p>
+    )}
+  </section>
+</Base>
+
+<style>
+  .intro {
+    padding-block: clamp(40px, 7vw, 88px) 24px;
+    display: grid;
+    gap: 14px;
+    max-width: var(--measure);
+  }
+  .list {
+    padding-bottom: clamp(48px, 8vw, 96px);
+  }
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .item {
+    display: grid;
+    gap: 6px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-m);
+    background: var(--surface);
+    transition: border-color var(--dur-ui) ease;
+  }
+  .item:hover {
+    border-color: var(--line-strong);
+  }
+  .more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .empty {
+    color: var(--muted);
+  }
+</style>

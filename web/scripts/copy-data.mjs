@@ -3,7 +3,7 @@
 // writing to backend/app/static/data/; this copy is a build artefact.
 // COPY_DATA_SRC / COPY_DATA_DEST override the folders, for tests.
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
-import { basename, dirname, join, resolve, sep } from "node:path";
+import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hiddenNames, scrubDigest, withoutHiddenLines } from "../src/lib/suppressed.ts";
 
@@ -11,10 +11,15 @@ const here = dirname(fileURLToPath(import.meta.url));
 const src = resolve(process.env.COPY_DATA_SRC || resolve(here, "../../backend/app/static/data"));
 const dest = resolve(process.env.COPY_DATA_DEST || resolve(here, "../public/data"));
 
-// The names the owner unpublished (scripts/unpublish.py) are read at build
-// time from the pipeline's folder. Serving the list itself would point
-// readers straight at the people who asked to come off the site.
-const NOT_PUBLISHED = new Set(["suppressed.json"]);
+// Never served, by path under src ("/"-separated). The names the owner
+// unpublished (scripts/unpublish.py) are read at build time from the
+// pipeline's folder: serving the list itself would point readers straight
+// at the people who asked to come off the site. The findings folder holds
+// the owner's unvetted picks and every merged draft, share text included,
+// even one the build's recheck drops; the site renders the findings that
+// still stand at build (data.findings()), so nothing reads them at /data/.
+const NOT_PUBLISHED = [/(^|\/)suppressed\.json$/, /^findings(\/|$)/];
+const pathUnderSrc = (path) => relative(src, path).split(sep).join("/");
 
 // Files the pipeline writes once and never rewrites: each brief edition,
 // each sent email, the weekly wrap until the next week. A name unpublished
@@ -56,7 +61,7 @@ if (!existsSync(src)) {
 }
 rmSync(dest, { recursive: true, force: true });
 mkdirSync(dest, { recursive: true });
-cpSync(src, dest, { recursive: true, filter: (path) => !NOT_PUBLISHED.has(basename(path)) });
+cpSync(src, dest, { recursive: true, filter: (path) => !NOT_PUBLISHED.some((p) => p.test(pathUnderSrc(path))) });
 
 const hidden = readHidden();
 if (hidden.length) {
