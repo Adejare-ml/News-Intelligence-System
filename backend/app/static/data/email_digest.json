@@ -1,16 +1,16 @@
 {
-  "edition": "20261107-11253",
-  "preview": false,
-  "built_at": "2026-11-07 14:05:31",
-  "date": "Saturday 7 November 2026",
-  "subject": "AURA · Sat 7 Nov · CBN sets N15bn capital requirement for dollar stablecoins",
-  "preheader": "Also: FG vows National Library project completion in 24 months · 8 stories, 0 risk alerts",
+  "edition": "20261108-11292-preview",
+  "preview": true,
+  "built_at": "2026-11-08 02:26:08",
+  "date": "Sunday 8 November 2026",
+  "subject": "AURA · Sun 8 Nov · CBN sets N15bn capital requirement for dollar stablecoins",
+  "preheader": "Also: FG vows National Library project completion in 24 months · 11 stories, 0 risk alerts",
   "since": "Fri 6 Nov, 16:07 Lagos",
-  "through_id": 11253,
+  "through_id": 11292,
   "stats": {
-    "reports": 10,
-    "stories": 8,
-    "outlets": 3,
+    "reports": 14,
+    "stories": 11,
+    "outlets": 5,
     "risk_alerts": 0,
     "public_money": 2,
     "appointments": 1,
@@ -22,43 +22,22 @@
   ],
   "overview": [
     {
-      "text": "The Central Bank of Nigeria has set a N15 billion capital requirement for dollar stablecoins, per a Punch headline.",
+      "text": "The Central Bank of Nigeria has set a N15 billion capital requirement for dollar stablecoins, according to a Punch Newspapers headline.",
       "card": 1,
       "outlet": "Punch"
     },
     {
-      "text": "The Federal Government, through Education Minister Tunji Alausa, pledged to complete the long-abandoned National Library of Nigeria headquarters project in Abuja within 24 months.",
+      "text": "Premium Times reports: EFCC secures final forfeiture of $163,592 proceeds of US fraud",
+      "card": 2,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "The Federal Government, through Minister of Education Tunji Alausa, has pledged to complete the long-abandoned National Library of Nigeria headquarters project in Abuja within 24 months.",
       "card": 3,
       "outlet": "Punch"
-    },
-    {
-      "text": "Jigawa State has collaborated with the Islamic Development Bank on a $110 million project to improve schools and teacher development.",
-      "card": 4,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "The Transmission Company of Nigeria disputed Ikeja Electric's explanation for power outages on Band A feeders.",
-      "card": 7,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "Enugu State Governor Peter Mbah inaugurated 68 development centre administrators to take projects and policies to more communities.",
-      "card": 8,
-      "outlet": "Premium Times"
     }
   ],
-  "insights": [
-    {
-      "label": "Reports differ",
-      "text": "TCN and Ikeja Electric give different accounts of what caused the Band A feeder outages. The reports available do not set out either side's reasoning, so the cause remains in dispute.",
-      "cards": [
-        7
-      ],
-      "outlets": [
-        "Premium Times"
-      ]
-    }
-  ],
+  "insights": [],
   "cards": [
     {
       "n": 1,
@@ -156,6 +135,32 @@
     },
     {
       "n": 4,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "FG scraps NTI’s university affiliations nationwide",
+      "byline": "Premium Times · Sat 7 Nov, 18:27 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The federal government has scrapped the university affiliations of the Nigerian Institute of Transport Technology (NTI) nationwide. The article text provided contains only the headline, so further details such as the rationale, effective date and affected institutions are not available.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Nigerian Institute of Transport Technology (NTI)"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWEFGOUJkdXZzUXluT3lRT0ZQS0tSMlZRM0NxRFJrdzRKbVkzUmxFcC1ieU9xTXEtNzJBTmtUR29NaTljYjJ2NkZ0TllIaGlmNmtUWE1qUVlCQmRUUFJHQnFibVpMM3Q1eVdGZEVrWmRkTHpnR1lEZmhnUWhzOW4zeDhPc0RqWTZpSHFNTlY1WDdMclQzVGplR1hUelVIekc2Z2xKdlYySk1xRlk?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 5,
       "theme": "Public money",
       "event_type": "Procurement",
       "flags": [],
@@ -182,53 +187,46 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 45/100",
-      "headline": "EFCC secures conviction of 10 over illegal petroleum dealings in Delta",
-      "byline": "Premium Times · Fri 6 Nov, 18:55 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The Economic and Financial Crimes Commission (EFCC) secured the conviction of 10 people over illegal petroleum dealings in Delta State.",
-      "key_facts": [
-        "The EFCC secured the conviction of 10 people over illegal petroleum dealings in Delta State."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Economic and Financial Crimes Commission"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEV3MDlVQ1dmYlF3OWJqOG1uejJtTUJfZ0VWNktxd1RUTHVRVUo5N0NUbGdfVXozWENkUWxVNFFuUTI5VHN4TG9IQnM1WjZuZlVrbWI4cVRBN1FKdWJFTU9HTTdzLVBTaVhWRFpyT20yQmt5dUJxLS1Fb0dlRE5pMjgyb25FdlM5dVpjZmdWLTRRTk1IZnBBQWVCVE5XNnF2Q1lmVGNwcmx5S1kwdGRtaXY2S3FlUjFQd3J3ODZrU1U1LVZKeW9Z?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
       "theme": "Regulation & enforcement",
+      "text": "President Bola Tinubu has approved the Ibom Deep Seaport and an airport upgrade in Akwa Ibom State, according to Voice of Nigeria.",
+      "outlet": "Voice of Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaVU0d19DY3R3aHZiN0p3YTlSRUNXRU5qN1BBSjVsak9oY0RybUpMc3NaUjF6cWYwREZGWktyZ0pZMGdQWDFtemNSbUp4WG1ZRzVoVEJvODh2RXpwdXZpZTRPa0dreHFsNnpPNHpHZVlZT01Pb2QzbUx6dUFDVHQ2d25qbU13ZHI5ZXVTWEM1UGFhakNmVnFjZQ?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Regulation & enforcement",
+      "text": "The Economic and Financial Crimes Commission (EFCC) secured the conviction of 10 people over illegal petroleum dealings in Delta State.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUEV3MDlVQ1dmYlF3OWJqOG1uejJtTUJfZ0VWNktxd1RUTHVRVUo5N0NUbGdfVXozWENkUWxVNFFuUTI5VHN4TG9IQnM1WjZuZlVrbWI4cVRBN1FKdWJFTU9HTTdzLVBTaVhWRFpyT20yQmt5dUJxLS1Fb0dlRE5pMjgyb25FdlM5dVpjZmdWLTRRTk1IZnBBQWVCVE5XNnF2Q1lmVGNwcmx5S1kwdGRtaXY2S3FlUjFQd3J3ODZrU1U1LVZKeW9Z?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Other",
+      "text": "The Nigerian National Petroleum Company (NNPC) has stated that its gas transportation network is not responsible for the drop in power generation.",
+      "outlet": "Vanguard",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQWZ0N0JaUVoyTkFuclFvMHVlOVhiUndjYXlJZERvZEpxQnc3d1FMa3JpcVJWUnVlSk5lUUFnVmZoSjNYUF83WXh3cllpTlJnMW1LeUtPWnY5WVluTE40VDN3OEtSRk1VTWxNSm9OUGpRTHRMRmdxdDUzc2V2Ym8tc2JJUGhCUXNKaFdPTUZad0NEeW0wd0paYWllX19FVmQ2dEV0QmkyUElyVDVYX3d30gG0AUFVX3lxTE9rdENOWEhPNHRRTEhfTHR4YjJicGgxN2RRaEpwWHEyZXJTRGhqZk9WMnh2eUd4TVRSdUlUSzd2VmJ3bF95b3FhUV9XNWF6QUN5WjlkNjJnWFhwdzJEdVNDQUpFZjZWay1LTE9JM20weWFGV0N2TEoxRHFGeVVMTVR2bGswLUI0aWdLcnhWQjVMSU1nWi1ld25mZ2hMMTlxclNndmNrSnZ2c3NVOEI4RGxJYm54cw?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "Regulation & enforcement",
       "text": "The Zamfara State Government has inaugurated a committee tasked with tackling illegal mining in the state.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPSm82S3ZpWjRRY0VZQ2x5WmdMU1RXbVd5WElSQXFZVlBjUmNGdy1MdXZPQjJEdXRVemJwbnJfUFZFZ1BuMXZUQklMaVJLMEtRckxiUklRMnQ2SmVKZFdra3Q0VUlwdWt0RjVVLW1DUEdqY24tRU1mMjFKYWJSTDdxbERBZHdwc0NkaGxtMGxaWjFpZ2RWb3BjUEgxMVBmd3l5eS14Zm1xanVNQQ?oc=5"
     },
     {
-      "n": 7,
+      "n": 10,
       "theme": "Other",
       "text": "The Transmission Company of Nigeria (TCN) has disputed Ikeja Electric's explanation for power outages affecting Band A feeders.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZXV3Sk9oUGtMaklial9LdnNTMTFFMTRheEdrOTRjQXYwZmE3WmttWjVmRGloY1BueFd1MU94X1VyanVHWUM4N2VxMUNIYkR6YU03R1hkOVY0YXhRZ2JFN3NBdlNxN1FDcV80dDV4WUltU0tNZHNrYmpKam5fdWwwSERtLUVMWEQwQlNkcUlEMkF2SzZ3TndIZzRlUlFCZEE2bG1iVlR0aHhvWGlHT0JQb3ljTk1qRDl3SHpQamVFYm9BWnF3WUhv?oc=5"
     },
     {
-      "n": 8,
+      "n": 11,
       "theme": "People",
       "text": "Enugu State Governor Peter Mbah has inaugurated 68 development centre administrators tasked with carrying projects and policies to more communities.",
       "outlet": "Premium Times",
@@ -249,6 +247,10 @@
       "meaning": "Central Bank of Nigeria"
     },
     {
+      "term": "NNPC",
+      "meaning": "Nigerian National Petroleum Company"
+    },
+    {
       "term": "AURA risk rating",
       "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
     }
@@ -257,11 +259,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 2
+    "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
 }
