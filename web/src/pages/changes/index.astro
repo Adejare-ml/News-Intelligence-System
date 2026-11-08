@@ -5,7 +5,7 @@ import { href } from "../../lib/url.ts";
 import { groupHoldings } from "../../lib/psc.ts";
 import { toContract } from "../../lib/procurement.ts";
 import { buildEntities } from "../../lib/entities.ts";
-import { weeklyChanges, entitySlug, type ArticleRef, type PersonRow } from "../../lib/changes.ts";
+import { weeklyChanges, entityLinks, type ArticleRef, type FirstSeen, type PersonRow } from "../../lib/changes.ts";
 
 const records = data.psc();
 const companies = data.companies();
@@ -14,14 +14,15 @@ const procurement = data.procurement();
 const articles = data.articles();
 const history = data.history();
 
-// Names link only to entity pages the build actually makes.
-const slugs = new Set(buildEntities({
+// Names link only to entity pages the build actually makes, and a person
+// only to their page at the company the line names.
+const links = entityLinks(buildEntities({
   holdings: groupHoldings(records),
   companies,
   people,
   articles,
   contracts: procurement.map(toContract),
-}).map((e) => e.slug));
+}));
 
 // The week ends on the last pipeline run, not the build date, so a late
 // rebuild does not show an empty week.
@@ -32,10 +33,10 @@ const week = weeklyChanges({ records, companies, people, procurement, history: d
 const fmt = (iso: string, opts: Intl.DateTimeFormatOptions = { day: "numeric", month: "short" }) =>
   new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { ...opts, timeZone: "UTC" });
 const range = `${fmt(week.start, { day: "numeric", month: "long" })} to ${fmt(week.end, { day: "numeric", month: "long", year: "numeric" })}`;
-const entity = (name: string) => {
-  const slug = entitySlug(name, slugs);
-  return slug ? href(`entity/${slug}/`) : "";
-};
+const page = (slug: string) => (slug ? href(`entity/${slug}/`) : "");
+const entity = (name: string) => page(links.company(name));
+const holder = (person: string, company: string) => page(links.holder(person, company));
+const person = (name: string, organization: string) => page(links.person(name, organization));
 // "Headline · Publisher", so a reader knows where a link goes before following it.
 const cite = (a: ArticleRef) => [a.title || "Report", a.publisher].filter(Boolean).join(" · ");
 const pct = (n: number | null) => (n === null ? "" : `${n % 1 === 0 ? n.toFixed(0) : String(n)}%`);
@@ -48,11 +49,18 @@ const counts = [
   { label: "Contracts recorded", n: week.contracts.length, id: "contracts" },
 ];
 const firstSeen = [
-  { id: "companies", title: "Companies first seen", rows: week.companies, empty: "No company appeared in AURA's records for the first time this week." },
+  {
+    id: "companies",
+    title: "Companies first seen",
+    rows: week.companies,
+    link: (r: FirstSeen) => entity(r.name),
+    empty: "No company appeared in AURA's records for the first time this week.",
+  },
   {
     id: "people",
     title: "People first seen",
     rows: week.people,
+    link: (r: FirstSeen) => person(r.name, r.organization),
     // Exports written before the pipeline recorded "First Seen" cannot say who is new.
     empty: people.some((p) => p["First Seen"])
       ? "No person appeared in AURA's records for the first time this week."
@@ -115,7 +123,7 @@ const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as
             <time datetime={o.date}>{fmt(o.date)}</time>
             <p>
               <span class:list={["chip", o.kind === "removed" ? "chip-crimson" : o.kind === "changed" ? "chip-royal" : "chip-gold"]}>{KIND[o.kind]}</span>
-              {entity(o.person) ? <a href={entity(o.person)}>{o.person}</a> : o.person}
+              {holder(o.person, o.company) ? <a href={holder(o.person, o.company)}>{o.person}</a> : o.person}
               {" · "}
               {entity(o.company) ? <a href={entity(o.company)}>{o.company}</a> : o.company}
               {o.kind === "changed" && o.previous !== null && <> {pct(o.previous)} → {pct(o.stake)}</>}
@@ -142,7 +150,7 @@ const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as
               <li>
                 <time datetime={r.date}>{fmt(r.date)}</time>
                 <p>
-                  {entity(r.name) ? <a href={entity(r.name)}>{r.name}</a> : r.name}
+                  {group.link(r) ? <a href={group.link(r)}>{r.name}</a> : r.name}
                   {r.detail && <span class="detail">{r.detail}</span>}
                   {r.article && <a class="src" href={r.article.url} rel="noopener" target="_blank">{cite(r.article)}</a>}
                 </p>
@@ -163,7 +171,7 @@ const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as
             <time datetime={m.date}>{fmt(m.date)}</time>
             <p>
               <span class:list={["chip", m.event === "departure" ? "chip-crimson" : "chip-gold"]}>{m.event === "appointment" ? "Appointed" : "Left"}</span>
-              {entity(m.name) ? <a href={entity(m.name)}>{m.name}</a> : m.name}
+              {person(m.name, m.organization) ? <a href={person(m.name, m.organization)}>{m.name}</a> : m.name}
               {m.position && <span class="detail">{m.position}</span>}
               {m.organization && <>{m.position ? ", " : " · "}{entity(m.organization) ? <a href={entity(m.organization)}>{m.organization}</a> : m.organization}</>}
               {m.article && <a class="src" href={m.article.url} rel="noopener" target="_blank">{cite(m.article)}</a>}

@@ -11,7 +11,7 @@ import { nameKey, slugify } from "./entity-key.ts";
 import { companyKey, personKey, publicRecords, toPercent, groupHoldings, type PscRecord } from "./psc.ts";
 import { toContract, known, type ProcurementRow } from "./procurement.ts";
 import { cleanTitle, parseTime, publisherName } from "./stories.ts";
-import type { CompanyRow, PersonMove } from "./entities.ts";
+import { holderSlug, mentions, type CompanyRow, type Entity, type PersonMove } from "./entities.ts";
 
 export const WEEK_DAYS = 7;
 
@@ -63,6 +63,8 @@ export interface FirstSeen {
   date: string;
   name: string;
   detail: string;
+  /** For a person, the organisation their first row names them at; "" for a company. */
+  organization: string;
   article: ArticleRef | null;
 }
 
@@ -225,6 +227,7 @@ export function weeklyChanges(input: ChangesInput, lastRun: string): WeeklyChang
           date,
           name: String(c.Company).trim(),
           detail: c.Industry && c.Industry !== "General" ? c.Industry : "",
+          organization: "",
           article: articleFor([String(c.Company)], date, input.articles),
         };
       }),
@@ -250,6 +253,7 @@ export function weeklyChanges(input: ChangesInput, lastRun: string): WeeklyChang
           date,
           name: String(p.Name).trim(),
           detail: [known(p.Position), known(p.Organization)].filter(Boolean).join(", "),
+          organization: known(p.Organization),
           article: articleFor([String(p.Name)], date, input.articles),
         };
       }),
@@ -315,4 +319,37 @@ export function weeklyChanges(input: ChangesInput, lastRun: string): WeeklyChang
 export function entitySlug(name: string, slugs: Set<string>): string {
   const slug = slugify(name);
   return slug && slugs.has(slug) ? slug : "";
+}
+
+/**
+ * The entity page each name on this page links to, or "" when the site
+ * builds none. Companies, agencies and contractors link by name. A person's
+ * page is about them at one company (holderSlug), so a person links only to
+ * their page at the company the line names, never to a page found by name
+ * alone: that would be a same-name company page ("Tinubu"), or someone else.
+ */
+export function entityLinks(entities: Entity[]) {
+  const slugs = new Set(entities.map((e) => e.slug));
+  const people = new Map<string, Entity[]>();
+  for (const e of entities) {
+    if (e.kind !== "person") continue;
+    const key = nameKey(e.name);
+    people.set(key, [...(people.get(key) ?? []), e]);
+  }
+  return {
+    company: (name: string) => entitySlug(name, slugs),
+    /** A register holder, at the company held. */
+    holder: (person: string, company: string) => {
+      const slug = holderSlug(person, company);
+      return slugs.has(slug) ? slug : "";
+    },
+    /**
+     * A person named at an organisation (a board move, a first sighting):
+     * their page at a company that organisation names, as the entity page
+     * matches its board moves (buildEntities).
+     */
+    person: (name: string, organization: string) =>
+      (people.get(nameKey(name)) ?? []).find((e) =>
+        mentions(organization, e.company) || e.holdings.some((h) => mentions(organization, h.companyKey)))?.slug ?? "",
+  };
 }

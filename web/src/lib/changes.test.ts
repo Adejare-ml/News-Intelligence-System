@@ -1,6 +1,8 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
-import { weekWindow, weeklyChanges, entitySlug, type ChangesInput } from "./changes.ts";
+import { weekWindow, weeklyChanges, entitySlug, entityLinks, type ChangesInput } from "./changes.ts";
+import { buildEntities } from "./entities.ts";
+import { groupHoldings } from "./psc.ts";
 
 const src = (n: number) => `https://example.ng/story-${n}`;
 const psc = (over: Record<string, unknown>) => ({
@@ -204,5 +206,46 @@ describe("entitySlug", () => {
     assert.equal(entitySlug("MTN Nigeria", slugs), "mtn-nigeria");
     assert.equal(entitySlug("No Page Ltd", slugs), "");
     assert.equal(entitySlug("", slugs), "");
+  });
+});
+
+describe("entityLinks", () => {
+  // A person's page is about them at one company. "Tinubu" is also the kind
+  // of loose word the pipeline files under Company Info, with a page of its own.
+  const records = [psc({ "Person Name": "Tinubu", Company: "Acme Plc", Percentage: "12%" })];
+  const people = [
+    { Name: "Tinubu", Position: "Chairman", Organization: "Acme Plc", Event: "appointment", Date: "2026-11-05", "First Seen": "2026-11-05" },
+    { Name: "Tinubu", Position: "President", Organization: "Federal Government", Event: "appointment", Date: "2026-11-04", "First Seen": "2026-11-04" },
+  ];
+  const links = entityLinks(buildEntities({
+    holdings: groupHoldings(records),
+    companies: [{ Company: "Tinubu", "Mention Count": 40 }],
+    people,
+    articles: [],
+    contracts: [],
+  }));
+  const w = weeklyChanges({ ...empty, records, people }, END);
+
+  test("a register holder links to their page at the company held", () => {
+    const o = w.ownership[0];
+    assert.equal(links.holder(o.person, o.company), "tinubu-at-acme-plc");
+    assert.equal(links.holder(o.person, "Other Ltd"), "");
+  });
+  test("a person in a board move links only to their page at the organisation named", () => {
+    const at = (org: string) => w.moves.find((m) => m.organization === org)!;
+    assert.equal(links.person(at("Acme Plc").name, at("Acme Plc").organization), "tinubu-at-acme-plc");
+    // Never the same-name company page, nor their page at another company.
+    assert.equal(links.person(at("Federal Government").name, at("Federal Government").organization), "");
+  });
+  test("a person first seen links the same way, by the organisation on their first row", () => {
+    assert.equal(w.people.length, 1);
+    assert.equal(w.people[0].organization, "Federal Government");
+    assert.equal(links.person(w.people[0].name, w.people[0].organization), "");
+    assert.equal(links.person("Tinubu", ""), "");
+  });
+  test("companies, agencies and contractors still link by name", () => {
+    assert.equal(links.company("Acme Plc"), "acme-plc");
+    assert.equal(links.company("Tinubu"), "tinubu");
+    assert.equal(links.company("No Page Ltd"), "");
   });
 });
