@@ -1,19 +1,28 @@
 {
   "new_companies": [
-    "Baze University"
+    "Airtel Africa Plc",
+    "Briclinks Africa Plc",
+    "CWG Plc",
+    "Chams Holding Company Plc",
+    "Legend Internet",
+    "NCR Nigeria Plc",
+    "Omatek Ventures Plc",
+    "eTranzact International Plc"
   ],
-  "new_people": [],
+  "new_people": [
+    "Agbu Kefas"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 1,
-    "new_people": 0,
+    "new_companies": 8,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-08 14:27:28"
+  "generated": "2026-11-08 18:23:43"
 }
