@@ -255,6 +255,47 @@ def test_a_kept_previous_file_does_not_bring_back_a_hidden_name(tmp_path, monkey
         assert "Tolu Bakare" not in (out / name).read_text(), name
 
 
+def test_the_daily_brief_and_its_archive_leave_out_a_hidden_name(tmp_path, monkeypatch):
+    """report_latest.md and archives/*.md are served at /data/: the brief is
+    built only from stories that do not name an unpublished entity."""
+    import run_pipeline as rp
+    from backend.app.services.llm import LLMService
+
+    class Db:
+        def get_daily_reports(self):
+            return []
+
+        def add_daily_report(self, row):
+            pass
+
+    sent = []
+
+    def generate(cls, raw):
+        sent.append(raw)
+        return "", "test"  # no model text: the rule-based brief lists the records
+
+    def record(url, title, event="Appointment"):
+        return {"title": title, "source": "Punch", "url": url, "basis": "article",
+                "analysis": {"summary": title, "risk_level": "High", "event_type": event}}
+
+    records = [record("https://punchng.com/a", "Tolu Bakare named chairman of Ikeja Mills"),
+               record("https://punchng.com/b", "Ann Okafor named chief executive of Lagos Foods")]
+    prior = [record("https://punchng.com/c", "Ikeja Mills board backs Tolu Bakare", event="")]
+    (tmp_path / "suppressed.json").write_text(json.dumps([{"name": "Tolu Bakare", "added": "2026-11-07"}]))
+    monkeypatch.setattr(rp, "db", Db())
+    monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(rp.settings, "ALLOW_HEURISTIC_FALLBACK", True)
+    monkeypatch.setattr(LLMService, "generate_daily_report", classmethod(generate))
+    rp.compile_daily_report(records, prior)
+
+    assert "Tolu Bakare" not in sent[0]
+    [archive] = list((tmp_path / "archives").glob("*.md"))
+    for path in (tmp_path / "report_latest.md", archive):
+        brief = path.read_text(encoding="utf-8")
+        assert "Tolu Bakare" not in brief, path.name
+        assert "Ann Okafor" in brief, path.name
+
+
 def test_evidence_skips_a_sentence_naming_a_hidden_entity():
     """The hidden list is matched like the export's scrub: spelling
     variants and companies too, not only the gate's canonical people."""

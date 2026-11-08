@@ -52,12 +52,18 @@ This appends `{name, kind?, added, reason}` to
 `backend/app/static/data/suppressed.json`. Commit and push it:
 
 - the next **site build** stops showing the name anywhere: entity pages,
-  the register, news, the brief, search (`search-index.json`), the
-  sitemap and the email page;
+  the register, news, the brief and its archive pages, search
+  (`search-index.json`), the sitemap and the email page. It also takes the
+  name out of the raw copies served under `/data/` of the files no
+  pipeline run rewrites: `report_latest.md`, `archives/*.md`,
+  `weekly_wrap.md`, `weekly_wrap.json`, `email_digest.json` and the sent
+  editions in `digests/` (the line, card or ownership item naming it goes);
 - the next **pipeline run** drops every row naming it from the exported
   files (`significant_control.json`, `people.json`, `companies.json`,
-  `latest.json`, `graph.json`, `alerts.json`, the timelines and the email
-  digest). The rows stay in the Google Sheet.
+  `latest.json`, `procurement.json`, `category_news.json`, `graph.json`,
+  `alerts.json`, `changes.json`, the timelines and the email digest) and
+  leaves it out of the new brief (`report_latest.md` and its archive
+  copy). The rows stay in the Google Sheet.
 
 Matching is by whole words, ignoring case, accents, middle initials and
 honorifics, plus the register's canonical keys: "Aliko Dangote" also hides
@@ -74,6 +80,14 @@ serve the file). Keep the reason generic, such as "dispute upheld" or
 
 To publish a name again, delete its entry from `suppressed.json`.
 
-Until the next pipeline run, the raw files under `/data/` (copied from
-the last export) can still contain the name; trigger a run to clear them
-at once.
+Until the next pipeline run, the row exports under `/data/` (the files
+the run rewrites, listed above) still contain the name, because a build
+copies them as they are; trigger a run to clear them at once. The build's
+scrub of the `/data/` brief and digest copies is site code, so production
+applies it only from a promoted version that contains it.
+
+**The repository keeps the name.** Only what the site serves is cleaned.
+The committed files in `backend/app/static/data/` that no run rewrites
+(the archived briefs and digests above) still contain it, and the public
+repository's history keeps every earlier version of every exported file.
+Unpublishing does not edit those files or rewrite history.

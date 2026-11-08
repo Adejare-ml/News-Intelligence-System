@@ -744,6 +744,12 @@ def compile_daily_report(records: List[Dict[str, Any]], prior_today: List[Dict[s
     # The model sees the whole day -- this run's full analyses plus the
     # reduced records of what earlier runs already published -- wrapped with
     # the date and coverage window the prompt declares authoritative.
+    # Stories naming an unpublished entity (scripts/unpublish.py) are left
+    # out, as from every export: report_latest.md and the archive copy are
+    # served at /data/. The run's counts above stay per-run totals.
+    hidden = suppression.load(DATA_DIR)
+    records = suppression.without(records, hidden)
+    prior_today = suppression.without(prior_today, hidden)
     # Holdings the publish gate withholds are removed first: the brief is
     # public and names every holder it is given.
     day_records, withheld_names = gate_report_holdings(records + prior_today)

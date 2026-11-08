@@ -51,10 +51,13 @@ test("the email digest loses cards, lines and a subject that name a hidden entit
     insights: [],
     also: [{ text: "CBN" }],
     psc: [{ text: "Chief Tolu Bakare holds 60%" }],
+    // The ownership claims the edition carried, as "person|company|source".
+    psc_keys: ["tolu bakare|ikeja mills|https://punchng.com/0", "ann okafor|lagos foods|https://punchng.com/1"],
     stats: { stories: 2 },
   };
   const out = scrubDigest(digest, ["Tolu Bakare"]);
   assert.deepEqual(out.cards, [{ n: 2, headline: "CBN holds rates" }]);
+  assert.deepEqual(out.psc_keys, ["ann okafor|lagos foods|https://punchng.com/1"]);
   assert.deepEqual([out.overview, out.psc, out.also], [[], [], [{ text: "CBN" }]]);
   assert.equal(out.subject, "AURA Morning Brief");
   assert.equal(out.preheader, "");

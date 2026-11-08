@@ -138,7 +138,7 @@ export function withoutHiddenLines(markdown: string, hidden: string[]): string {
 export function scrubDigest<T extends Record<string, unknown>>(digest: T, hidden: string[]): T {
   if (!hidden.length) return digest;
   const out: Record<string, unknown> = { ...digest };
-  for (const key of ["cards", "overview", "insights", "also", "psc"]) {
+  for (const key of ["cards", "overview", "insights", "also", "psc", "psc_keys"]) {
     if (Array.isArray(out[key])) out[key] = withoutHidden(out[key] as unknown[], hidden);
   }
   // The subject is usually the lead story's headline.

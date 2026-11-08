@@ -95,6 +95,31 @@ categories.sections.politics.nigeria.unshift(
   { title: "Sentinel Suppressed Mills posts results", url: "https://punchng.com/results", source: "The Punch", published: "" },
 );
 writeFileSync(categoryPath, JSON.stringify(categories, null, 2));
+// Briefs and digests written before the name was unpublished. No pipeline
+// run rewrites them, so their copy at /data/ is scrubbed as it is made
+// (scripts/copy-data.mjs), as the pages built from them are.
+const hiddenLine = `- ${HIDDEN.person} takes control of ${HIDDEN.company}`;
+const newest = (dir, test) => readdirSync(join(data, dir)).filter(test).sort().pop();
+const PLANTED = ["report_latest.md", "weekly_wrap.md", "weekly_wrap.json", "email_digest.json"];
+const archive = newest("archives", (n) => n.endsWith(".md"));
+const digest = newest("digests", (n) => /^\d.*\.json$/.test(n));
+if (archive) PLANTED.push(`archives/${archive}`);
+if (digest) PLANTED.push(`digests/${digest}`);
+for (const file of PLANTED) {
+  const path = join(data, file);
+  const text = readFileSync(path, "utf-8");
+  if (file.endsWith(".md")) {
+    writeFileSync(path, `${text.trimEnd()}\n${hiddenLine}\n`);
+  } else if (file === "weekly_wrap.json") {
+    const wrap = JSON.parse(text);
+    writeFileSync(path, JSON.stringify({ ...wrap, markdown: `${String(wrap.markdown ?? "").trimEnd()}\n${hiddenLine}\n` }, null, 2));
+  } else {
+    const edition = JSON.parse(text);
+    edition.subject = `${HIDDEN.person} takes control`;
+    edition.psc_keys = [...(edition.psc_keys ?? []), `${HIDDEN.person.toLowerCase()}|${HIDDEN.company.toLowerCase()}|https://punchng.com/sentinel`];
+    writeFileSync(path, JSON.stringify(edition, null, 2));
+  }
+}
 writeFileSync(join(data, "suppressed.json"), JSON.stringify([{ name: HIDDEN.person }, { name: HIDDEN.company }]));
 
 try {
@@ -105,13 +130,13 @@ try {
   });
 
   const leaks = [];
-  const needles = [...SENTINELS.flatMap((r) => [r["Person Name"], r.Company, r["Previous Holder"]].filter(Boolean)),
   // Cores of the hidden names, so the variant spellings count as leaks too.
-  "Leakcheck-Suppressed", "Sentinel Suppressed Mills", "Sentinel Variant Mills"];
+  const unpublished = ["Leakcheck-Suppressed", "Sentinel Suppressed Mills", "Sentinel Variant Mills"];
+  const needles = [...SENTINELS.flatMap((r) => [r["Person Name"], r.Company, r["Previous Holder"]].filter(Boolean)), ...unpublished];
   const walk = (dir) => {
     for (const name of readdirSync(dir)) {
       const path = join(dir, name);
-      // /data/* is the pipeline's raw export, copied as-is; not a rendered page.
+      // /data/* is the pipeline's raw export, not a rendered page: checked below.
       if (statSync(path).isDirectory()) {
         if (path !== join(out, "data")) walk(path);
         continue;
@@ -121,6 +146,37 @@ try {
       for (const n of needles) if (text.includes(n)) leaks.push(`${path.slice(out.length)}: ${n}`);
     }
   };
+  // /data/* as a build publishes it: copy-data run on this data. The raw
+  // register keeps the gate's withheld rows (the pipeline gates it), but no
+  // copied file may name an unpublished entity, except the row exports
+  // planted above, which every pipeline run rewrites from scrubbed rows
+  // (tests/test_suppression.py).
+  const outData = join(out, "data");
+  rmSync(outData, { recursive: true, force: true });
+  execFileSync(process.execPath, [join(here, "copy-data.mjs")], {
+    stdio: ["ignore", "ignore", "inherit"],
+    env: { ...process.env, COPY_DATA_SRC: data, COPY_DATA_DEST: outData },
+  });
+  const RUN_REWRITES = new Set(["significant_control.json", "companies.json", "people.json", "procurement.json", "latest.json", "category_news.json"]);
+  const walkData = (dir) => {
+    for (const name of readdirSync(dir)) {
+      const path = join(dir, name);
+      const file = path.slice(outData.length + 1).split("\\").join("/");
+      if (statSync(path).isDirectory()) walkData(path);
+      else if (!RUN_REWRITES.has(file)) {
+        const text = readFileSync(path, "utf-8");
+        for (const n of unpublished) if (text.includes(n)) leaks.push(`/data/${file}: ${n}`);
+      }
+    }
+  };
+  walkData(outData);
+  for (const file of PLANTED) {
+    try {
+      statSync(join(outData, file));
+    } catch {
+      leaks.push(`/data/${file}: missing from the copy, so this check proves nothing there`);
+    }
+  }
   walk(out);
 
   if (leaks.length) {

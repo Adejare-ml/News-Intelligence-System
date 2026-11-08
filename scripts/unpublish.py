@@ -4,9 +4,14 @@ Take a person or company off the site.
     python3 scripts/unpublish.py "<person or company name>" [--reason "..."] [--kind person|company]
 
 Adds the name to backend/app/static/data/suppressed.json. Commit and push
-that file: the next site build stops showing the name (pages, search,
-sitemap), and the next pipeline run drops it from every exported file and
-the email digest. The rows stay in the Google Sheet; nothing is deleted.
+that file. The next pipeline run drops the name from every file it
+rewrites (the register, people, companies, news, graph, alerts, timelines,
+the email digest and the new brief). The next site build stops showing it
+(pages, search, sitemap) and takes it out of the copies of past briefs,
+archives, digests and the weekly wrap served under /data/; production does
+that only from a promoted version containing it. The committed archives
+and digests, and the public repository's history, still hold the name.
+The rows stay in the Google Sheet; nothing is deleted.
 
 Matching is by whole words, ignoring case, initials and honorifics, so
 "Aliko Dangote" also hides "Alhaji Aliko Dangote". Use the full name: a
