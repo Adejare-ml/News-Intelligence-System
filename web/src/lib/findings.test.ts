@@ -1,6 +1,28 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { isFindingFile, publishableFindings, weekStart, whatsappHref, type Finding } from "./findings.ts";
+
+/**
+ * data.findings() on a data folder of its own: data.ts reads AURA_DATA_DIR
+ * once, when it loads, so each call loads a fresh copy of the module.
+ */
+let loads = 0;
+async function loadFindings(files: Record<string, unknown>): Promise<Finding[]> {
+  const dir = mkdtempSync(join(tmpdir(), "aura-findings-"));
+  try {
+    mkdirSync(join(dir, "findings"));
+    for (const [name, value] of Object.entries(files)) writeFileSync(join(dir, name), JSON.stringify(value));
+    process.env.AURA_DATA_DIR = dir;
+    const data = await import(`./data.ts?load=${++loads}`);
+    return data.findings();
+  } finally {
+    delete process.env.AURA_DATA_DIR;
+    rmSync(dir, { recursive: true, force: true });
+  }
+}
 
 const sourced = {
   "Person Name": "Tony Elumelu", Company: "Seplat", Confidence: "Full article", "Source URL": "https://punchng.com/a/", Quarantined: false,
@@ -89,6 +111,30 @@ describe("findings", () => {
       bullets: [finding().bullets[1], { ...finding().bullets[1], url: "https://businessday.ng/c/" }],
     });
     assert.deepEqual(publishableFindings([alias], [sourced, quarantined]), []);
+  });
+
+  test("data.findings() leaves out a finding that names anyone or anything the owner unpublished", async () => {
+    const news = finding().bullets[1];
+    const clean = finding({ week: "2026-W44" });
+    // Named only in the note, with news-only bullets: no register row to lose.
+    const inNote = finding({ week: "2026-W45", note: "Alhaji Tolu O. Bakare is also linked.", bullets: [news, { ...news, url: "https://businessday.ng/c/" }] });
+    // Named only in a share draft.
+    const inDraft = finding({ week: "2026-W46", drafts: { ...finding().drafts, x: "Tolu Bakare and Seplat https://auranews.pages.dev/" } });
+    // A company, under another spelling the register groups with it.
+    const company = finding({ week: "2026-W47", headline: "Who is behind Ikeja Mills?", bullets: [news, { ...news, url: "https://businessday.ng/d/" }] });
+    // The register bullet's own row names the unpublished person as previous
+    // holder: the site never shows that row, so the bullet no longer stands.
+    const viaRow = finding({ week: "2026-W48" });
+    const out = await loadFindings({
+      "suppressed.json": [{ name: "Tolu Bakare", reason: "dispute upheld" }, { name: "Ikeja Mills Plc", reason: "dispute upheld" }],
+      "significant_control.json": [sourced, { ...sourced, "Previous Holder": "Tolu Bakare", "Source URL": "https://punchng.com/w48/" }],
+      "findings/2026-W44.json": clean,
+      "findings/2026-W45.json": inNote,
+      "findings/2026-W46.json": inDraft,
+      "findings/2026-W47.json": company,
+      "findings/2026-W48.json": { ...viaRow, bullets: [{ ...viaRow.bullets[0], url: "https://punchng.com/w48/" }, news] },
+    });
+    assert.deepEqual(out.map((f) => f.week), ["2026-W44"]);
   });
 
   test("drops malformed files instead of breaking the build", () => {

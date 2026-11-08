@@ -13,7 +13,7 @@ import type { CompanyRow, PersonMove } from "./entities.ts";
 import type { ProcurementRow } from "./procurement.ts";
 import { publicRecords, type PscRecord } from "./psc.ts";
 import { readCorrections } from "./corrections.ts";
-import { hiddenNames, scrubDigest, withoutHidden, withoutHiddenLines } from "./suppressed.ts";
+import { hiddenNames, namesHidden, scrubDigest, withoutHidden, withoutHiddenLines } from "./suppressed.ts";
 import { isFindingFile, publishableFindings, type Finding } from "./findings.ts";
 
 const DATA_DIR = process.env.AURA_DATA_DIR
@@ -178,12 +178,19 @@ export const weeklyWrap = (): WeeklyWrap => {
   return wrap.markdown ? { ...wrap, markdown: withoutHiddenLines(wrap.markdown, hidden()) } : wrap;
 };
 
-/** Merged weekly findings, rechecked against today's register (see findings.ts). */
+/**
+ * Merged weekly findings, rechecked against today's register (see findings.ts).
+ * A finding that names an unpublished entity anywhere (headline, note,
+ * bullets or share drafts) is left out whole, as the other loaders leave out
+ * such rows. Its register bullets are checked against the rows the site still
+ * shows; the withheld rows stay, as they drive the withheld-name check.
+ */
 export function findings(): Finding[] {
   const dir = resolve(DATA_DIR, "findings");
   const files = existsSync(dir) ? readdirSync(dir).filter(isFindingFile) : [];
+  const names = hidden();
   return publishableFindings(
     files.map((name) => readJson<Finding>(`findings/${name}`, null as unknown as Finding)),
-    readJson<PscRecord[]>("significant_control.json", []),
-  );
+    withoutHidden(readJson<PscRecord[]>("significant_control.json", []), names),
+  ).filter((f) => !namesHidden(f, names));
 }

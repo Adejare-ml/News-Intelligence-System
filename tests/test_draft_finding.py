@@ -77,13 +77,16 @@ ARTICLES = [
 PEOPLE = [{"Name": "Ada Appointee", "Position": "CEO", "Organization": "Dangote Petroleum Refinery"}]
 
 
-def make_data(tmp_path, picks, register=REGISTER, articles=ARTICLES, people=PEOPLE):
+def make_data(tmp_path, picks, register=REGISTER, articles=ARTICLES, people=PEOPLE, unpublished=()):
     data = tmp_path / "data"
     (data / "findings").mkdir(parents=True)
     (data / "significant_control.json").write_text(json.dumps(register))
     (data / "latest.json").write_text(json.dumps(articles))
     (data / "people.json").write_text(json.dumps(people))
     (data / "findings" / "picks.json").write_text(json.dumps(picks))
+    if unpublished:
+        (data / "suppressed.json").write_text(json.dumps(
+            [{"name": n, "reason": "dispute upheld"} for n in unpublished]))
     return data
 
 
@@ -295,3 +298,38 @@ def test_names_person_does_not_take_the_pick_itself_as_proof_of_a_company():
     # company, so names_person must stay unsure (True).
     bullets = [draft_finding._news_bullet(a) for a in BOLA_NEWS]
     assert draft_finding.names_person(BOLA_PICK, bullets, REGISTER, BOLA_NEWS, PEOPLE) is True
+
+
+# Names the owner unpublished (suppressed.json, scripts/unpublish.py): the
+# site leaves out everything naming them, so a draft must never use them.
+
+@pytest.mark.parametrize("pick", [
+    # Named only in the headline: no data file names them at all.
+    dict(REFINERY_PICK, headline="Alhaji Tolu O. Bakare and the refinery"),
+    dict(REFINERY_PICK, note="Tolu Bakare is linked to the buyer."),
+    # The pick itself, as an entity or as one holding.
+    dict(ENTITY_PICK, entity="tolu-bakare"),
+    {"week": "2026-W46", "record_ref": "tony-elumelu/seplat", "headline": "Elumelu and Seplat", "note": ""},
+])
+def test_refuses_a_pick_naming_an_unpublished_entity(tmp_path, pick):
+    data = make_data(tmp_path, [pick], articles=ARTICLES + [REFINERY_NEWS], unpublished=["Tolu Bakare", "Tony Elumelu"])
+    result = run(data)
+    assert result.returncode == 1
+    assert "unpublished" in result.stderr
+    assert not list((data / "findings").glob("2026-W*.json"))
+
+
+def test_leaves_out_rows_and_news_naming_an_unpublished_entity(tmp_path):
+    # Both are the newest facts about Seplat, so either would make the cut.
+    row = dict(REGISTER[0], Percentage="30%", Date="2026-11-06", Confidence="Full article",
+               **{"Nature of Control": "Indirect ownership via Hidden Holdings Ltd",
+                  "Source URL": "https://punchng.com/elumelu-hidden/"})
+    news = {"Time": "2026-11-06T08:00:00Z", "Title": "Seplat sells marginal field unit to Hidden Holdings Ltd",
+            "Source": "The Punch", "URL": "https://punchng.com/seplat-hidden/", "Entities": "Seplat|Hidden Holdings Ltd"}
+    data = make_data(tmp_path, [ENTITY_PICK], register=REGISTER + [row], articles=ARTICLES + [news],
+                     unpublished=["Hidden Holdings Ltd"])
+    result = run(data)
+    assert result.returncode == 0, result.stderr
+    text = (data / "findings" / "2026-W45.json").read_text()
+    assert "Hidden Holdings" not in text
+    assert "https://punchng.com/elumelu-seplat/" in text

@@ -14,12 +14,17 @@ permissions:
 jobs:
   draft:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        # The script reads suppressed.json through backend.app.services.suppression,
+        # which imports the register gate and, through it, the feed helpers.
+        run: pip install -r requirements-ci.txt
       - name: Draft the finding
         # Explicit bash turns on pipefail, so a refusal still fails the job through tee.
         shell: bash

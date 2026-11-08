@@ -10,10 +10,12 @@ posted anywhere; the owner reads the draft, edits it if needed, and merges it.
 
 It reads only rows the site may publish: register rows that pass the same
 gate as web/src/lib/psc.ts (a source link, not quarantined) and articles from
-latest.json. procurement.json rows carry no article link, so they cannot back
-a sourced bullet and are not used. If the pick has nothing published behind
-it, or would name a person the register does not back, it refuses (exit 1)
-rather than write a draft.
+latest.json, without anything naming an entity the owner unpublished
+(suppressed.json, as the site leaves those out). procurement.json rows carry
+no article link, so they cannot back a sourced bullet and are not used. If the
+pick has nothing published behind it, names an unpublished entity, or would
+name a person the register does not back, it refuses (exit 1) rather than
+write a draft.
 
     python scripts/draft_finding.py [--data-dir DIR] [--site URL]
 """
@@ -25,6 +27,10 @@ import sys
 import unicodedata
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, REPO)
+
+from backend.app.services import suppression  # noqa: E402
+
 DEFAULT_DATA = os.path.join(REPO, "backend", "app", "static", "data")
 DEFAULT_SITE = "https://auranews.pages.dev"
 WEEK = re.compile(r"^\d{4}-W(0[1-9]|[1-4]\d|5[0-3])$")
@@ -117,8 +123,21 @@ def _news_bullet(article):
             "date": str(article.get("Time", ""))[:10]}
 
 
-def gather(pick, register, articles, people):
-    """The pick's published facts as bullets, and whether the finding names a person."""
+def gather(pick, register, articles, people, hidden=()):
+    """The pick's published facts as bullets, and whether the finding names a person.
+
+    `hidden` is the owner's unpublished names (suppressed.json): a pick naming
+    one is refused, and every row and article naming one is left out, as the
+    site's loaders leave them out."""
+    if hidden:
+        unpublished = suppression.matcher(hidden)
+        for field in ("entity", "record_ref", "headline", "note"):
+            if unpublished(pick.get(field)):
+                raise Refusal(f"the {field} names someone or something the owner has unpublished "
+                              "(suppressed.json); the site leaves out everything naming them")
+        register = suppression.without(register, hidden)
+        articles = suppression.without(articles, hidden)
+        people = suppression.without(people, hidden)
     public = [r for r in register if is_public(r)]
     backed_people = set().union(*(_person_slugs(r) for r in public)) if public else set()
     # People the site may not name: those only in withheld register rows or in
@@ -266,7 +285,8 @@ def draft(data_dir, site=DEFAULT_SITE):
     findings_dir = os.path.join(data_dir, "findings")
     pick = latest_pick(_load(findings_dir, "picks.json"))
     bullets, names_person, ref = gather(
-        pick, _load(data_dir, "significant_control.json"), _load(data_dir, "latest.json"), _load(data_dir, "people.json"))
+        pick, _load(data_dir, "significant_control.json"), _load(data_dir, "latest.json"), _load(data_dir, "people.json"),
+        suppression.load(data_dir))
     week = pick["week"]
     link = f"{site.rstrip('/')}/findings/{week}/"
     headline = str(pick.get("headline", "")).strip()

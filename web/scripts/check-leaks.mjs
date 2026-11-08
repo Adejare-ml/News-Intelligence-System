@@ -83,7 +83,7 @@ const HIDDEN = { person: "Zedekiah Leakcheck-Suppressed", company: "Sentinel Sup
 const hiddenRow = {
   "Person Name": HIDDEN.person, Company: HIDDEN.company, Percentage: "55%", "Nature of Control": "Ownership of shares",
   Source: "extracted", "Source URL": "https://punchng.com/sentinel", "Source Title": "Sentinel takes control",
-  Date: runDate, Kind: "stake", Public: true, Quarantined: false,
+  Date: runDate, Kind: "stake", Public: true, Quarantined: false, Confidence: "Full article",
 };
 // The same person as the register might spell them: a middle initial and a
 // neutral title, so only the canonical key ties the row to the hidden name.
@@ -203,6 +203,23 @@ writeFileSync(join(data, "findings", "2099-W01.json"), JSON.stringify({
   ],
   drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
 }));
+// A merged finding about the unpublished holder, with news-only bullets and
+// no person flag: nothing but suppressed.json keeps it off the findings
+// pages, the home teaser and the sitemap (which lists findings naming no one).
+writeFileSync(join(data, "findings", "2099-W02.json"), JSON.stringify({
+  week: "2099-W02",
+  headline: `Who is behind ${HIDDEN.company}?`,
+  note: `${HIDDEN.person} is reported to have taken control.`,
+  ref: "sentinel-suppressed-mills-plc",
+  names_person: false,
+  link: "https://auranews.pages.dev/findings/2099-W02/",
+  bullets: [
+    { kind: "news", text: `The Punch reported: "${HIDDEN.company} changes hands"`, outlet: "The Punch", url: "https://punchng.com/sentinel", date: "2026-10-20" },
+    { kind: "news", text: `The Punch reported: "${HIDDEN.person} takes control"`, outlet: "The Punch", url: "https://punchng.com/sentinel-2", date: "2026-10-21" },
+  ],
+  drafts: { linkedin: "", x: "", email: { subject: "", body: "" } },
+}));
+const DROPPED_FINDINGS = ["2099-W01", "2099-W02"];
 
 try {
   execFileSync("npx", ["astro", "build", "--outDir", out], {
@@ -319,6 +336,12 @@ try {
     if (!url.endsWith("following.json")) leaks.push(`/index.html: data-${attr} fetches ${url}, not following.json, so it skips the unpublish list`);
   }
   if (!changes.includes(CONTROL["Person Name"])) leaks.push("/changes/: the published control row is missing, so this check proves nothing there");
+  // A dropped finding has no page and no sitemap entry, whatever it names.
+  const sitemap = built("sitemap.xml");
+  for (const week of DROPPED_FINDINGS) {
+    if (existsSync(join(out, "findings", week))) leaks.push(`/findings/${week}/: built, though the recheck must drop this finding`);
+    if (sitemap.includes(`findings/${week}/`)) leaks.push(`/sitemap.xml: lists findings/${week}/, which the recheck must drop`);
+  }
 
   // Every kind of export this check must cover, at least one file each.
   const EXPORTS = [
