@@ -32,10 +32,12 @@ const NAV = SECTIONS;
         <span class="search-label">Search</span>
         <kbd>⌘K</kbd>
       </button>
-      <button class="icon-btn bell" type="button" data-open-inbox aria-label="Alerts">
+      <button class="icon-btn bell" type="button" data-open-inbox aria-label="Alerts" aria-describedby="follow-dot-note">
         <span class="bell-icon" data-bell><Icon name="bell" /></span>
         <span class="badge" data-bell-count hidden></span>
+        <span class="follow-dot" data-follow-dot data-alerts={href("following.json")} title="A new alert names a company you follow" hidden></span>
       </button>
+      <span class="sr-only" id="follow-dot-note" data-follow-note></span>
       <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to light theme">
         <span class="theme-icon theme-dark"><Icon name="sun" /></span>
         <span class="theme-icon theme-light"><Icon name="moon" /></span>
@@ -307,5 +309,19 @@ const NAV = SECTIONS;
       padding: 0;
       justify-content: center;
     }
+  }
+  /* Shown by scripts/follow.ts when an unread alert names a followed entity. */
+  .follow-dot {
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--crimson);
+    box-shadow: 0 0 0 2px var(--bg);
+  }
+  .follow-dot[hidden] {
+    display: none;
   }
 </style>

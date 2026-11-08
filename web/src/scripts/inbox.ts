@@ -10,9 +10,8 @@
  * Read state is per-browser (localStorage) and wrapped in try/catch.
  */
 import { animate } from "motion";
-import type { Alert } from "../lib/alerts.ts";
+import { ALERTS_READ_KEY as READ_KEY, type Alert } from "../lib/alerts.ts";
 
-const READ_KEY = "aura-alerts-read";
 const SEEN_KEY = "aura-alerts-last-visit";
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

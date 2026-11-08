@@ -76,7 +76,8 @@ export function isKnownCompany(e: Entity): boolean {
   return e.holdings.some((h) => slugify(h.company) === e.slug) || e.industry !== "" || LEGAL_SUFFIX.test(e.name);
 }
 
-function articleMentions(a: Article, name: string): boolean {
+/** The article lists the name among its entities, or names it in the headline or summary. */
+export function articleMentions(a: Article, name: string): boolean {
   const ents = String(a.Entities || "").split("|").map(nameKey);
   if (ents.includes(nameKey(name))) return true;
   return mentions(`${a.Title || ""} ${a.Summary || ""}`, name);

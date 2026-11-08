@@ -82,4 +82,19 @@ describe("seo", () => {
       assert.ok(!rules.some(([from]) => from.startsWith(`/news/${live}`)), live);
     }
   });
+
+  test("the noindexed entity pages' Markdown copies and the register CSV are noindex too; /downloads/ is not", () => {
+    // public/_headers: a path line (Cloudflare's * matches anything), then indented "Name: value" lines.
+    const rules: { path: RegExp; headers: string[] }[] = [];
+    for (const line of readFileSync(resolve(import.meta.dirname, "../../public/_headers"), "utf-8").split("\n")) {
+      if (!line.trim() || line.trim().startsWith("#")) continue;
+      if (/^\s/.test(line)) rules.at(-1)?.headers.push(line.trim().toLowerCase());
+      else rules.push({ path: new RegExp(`^${line.trim().split("*").map((s) => s.replace(/[.?+^$()[\]{}|\\]/g, "\\$&")).join(".*")}$`), headers: [] });
+    }
+    const noindex = (url: string) => rules.some((r) => r.path.test(url) && r.headers.includes("x-robots-tag: noindex"));
+    for (const url of ["/entity/quickmart.md", "/entity/international-finance-corporation-at-quickmart.md", "/entity/quickmart/feed.xml", "/downloads/register.csv"]) {
+      assert.ok(noindex(url), url);
+    }
+    for (const url of ["/", "/downloads/", "/register/", "/news/"]) assert.ok(!noindex(url), url);
+  });
 });

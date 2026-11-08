@@ -1,0 +1,107 @@
+---
+/**
+ * Everything AURA publishes as a file or a feed, in one place, with where
+ * it comes from and what readers may do with it.
+ */
+import Base from "../../layouts/Base.astro";
+import { href } from "../../lib/url.ts";
+import { CATEGORIES, HEADLINE_CATEGORIES } from "../../../functions/_lib/categories.ts";
+
+// The register names people as owners, as the noindexed entity pages do: public/_headers
+// sends X-Robots-Tag: noindex for its CSV, and the link asks crawlers not to follow it.
+const files: { path: string; label: string; note: string; nofollow?: boolean }[] = [
+  { path: "downloads/register.csv", label: "Ownership register", nofollow: true, note: "Published register rows: holder, company, stake, nature of control, confidence and the article that reported it. Confidence says what a claim rests on: an official filing reference, the full article, or a headline only. Rows the validation gate withholds are not in the file." },
+  { path: "downloads/procurement.csv", label: "Contracts in the news", note: "Public contracts named in the reporting: agency, contractor, value where reported, publisher." },
+  { path: "downloads/news.csv", label: "News", note: "The stories on the news page: headline, publisher, link, category, risk score and the entities named." },
+];
+const feeds = [
+  { path: "data/feed.xml", label: "Morning Brief (RSS)" },
+  { path: "feed.json", label: "Morning Brief (JSON Feed)" },
+  { path: "feeds/alerts.xml", label: "Alerts (RSS)" },
+  ...HEADLINE_CATEGORIES.map((id) => ({ path: `feeds/category/${id}.xml`, label: `${CATEGORIES.find((c) => c.id === id)?.label} headlines (RSS)` })),
+];
+---
+<Base
+  title="Downloads · AURA"
+  description="AURA's register, contracts and news as CSV files, plus RSS and JSON feeds of the brief, alerts and headline categories."
+>
+  <section class="wrap intro">
+    <p class="eyebrow">Downloads and feeds</p>
+    <h1 class="h1" data-split>Take the data with you</h1>
+    <p class="lede">
+      The tables behind the site as CSV, rebuilt with every pipeline run, and feeds for your reader.
+    </p>
+  </section>
+
+  <section class="wrap block" aria-labelledby="files">
+    <h2 class="h2" id="files">Files</h2>
+    <ul class="list">
+      {files.map((f) => (
+        <li>
+          <a class="link name" href={href(f.path)} rel={f.nofollow ? "nofollow" : undefined} download>{f.label} <span class="meta">CSV</span></a>
+          <p class="meta">{f.note}</p>
+        </li>
+      ))}
+      <li>
+        <span class="name">Entity pages</span>
+        <p class="meta">Every person and company page has a “Download as Markdown” link with the facts that page shows.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="wrap block" aria-labelledby="feeds">
+    <h2 class="h2" id="feeds">Feeds</h2>
+    <ul class="list">
+      {feeds.map((f) => <li><a class="link name" href={href(f.path)}>{f.label}</a></li>)}
+      <li>
+        <span class="name">A company’s news</span>
+        <p class="meta">Each company page links its own feed of the stories that mention it.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="wrap block" aria-labelledby="terms">
+    <h2 class="h2" id="terms">Sources and licence</h2>
+    <p class="meta terms">
+      Every row is AURA’s machine reading of published news reporting. It is not the statutory CAC register,
+      it is unverified, and a record is evidence of reporting, not a finding of wrongdoing. Headlines and
+      summaries come from, and link to, the outlets that published them. The site’s code is MIT-licensed;
+      no separate licence has been set for the data, so if you reuse it, credit AURA and the original outlet
+      and check the source article before relying on a row. CSV cells that start with =, +, - or @ are
+      prefixed with an apostrophe so spreadsheets show them as text.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    padding-block: clamp(32px, 6vw, 72px) 0;
+    display: grid;
+    gap: 16px;
+  }
+  .block {
+    padding-top: clamp(32px, 6vw, 64px);
+  }
+  .block > .h2 {
+    margin-bottom: 16px;
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .list li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .list p {
+    margin: 4px 0 0;
+  }
+  .name {
+    font-weight: 600;
+  }
+  .terms {
+    max-width: 68ch;
+    line-height: 1.6;
+  }
+</style>

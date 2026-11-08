@@ -31,13 +31,23 @@ class TestBuildRssFeed:
         assert "11 Sep 2026" in items[0].findtext("title")
         assert "10 Sep 2026" in items[1].findtext("title")
 
-    def test_archive_editions_link_to_their_document(self):
+    def test_archive_editions_link_to_their_brief_page(self):
         xml = feeds.build_rss_feed(REPORTS)
         root = ElementTree.fromstring(xml)
         links = [i.findtext("link") for i in root.findall("./channel/item")]
-        assert links[0].endswith("/data/archives/report_20260911_132000.md")
-        # The legacy row falls back to the live brief.
-        assert links[2].endswith("/#brief")
+        # Each edition has a page on the site; the raw .md is not for readers.
+        assert links[0] == feeds.SITE_URL + "/brief/20260911-132000/"
+        assert links[1] == feeds.SITE_URL + "/brief/20260910-071500/"
+        assert not any(".md" in link for link in links)
+        # The legacy row falls back to the brief index.
+        assert links[2] == feeds.SITE_URL + "/brief/"
+
+    def test_links_point_at_the_production_site_not_the_github_mirror(self):
+        assert feeds.SITE_URL == "https://auranews.pages.dev"
+
+    def test_unrecognised_archive_name_falls_back_to_the_brief_index(self):
+        xml = feeds.build_rss_feed([{"Date": "2026-09-11", "Archive File": "notes.md"}])
+        assert ElementTree.fromstring(xml).findtext("./channel/item/link") == feeds.SITE_URL + "/brief/"
 
     def test_limit_and_empty_input(self):
         xml = feeds.build_rss_feed(REPORTS, limit=1)

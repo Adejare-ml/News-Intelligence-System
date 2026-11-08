@@ -8,6 +8,7 @@ import OwnershipStory from "../components/OwnershipStory.astro";
 import MarketStrip from "../components/MarketStrip.astro";
 import Subscribe from "../components/Subscribe.astro";
 import Explainer from "../components/Explainer.astro";
+import Following from "../components/Following.astro";
 import * as data from "../lib/data.ts";
 import { parseBrief } from "../lib/brief.ts";
 import { groupHoldings, summarise, counted, type Holding } from "../lib/psc.ts";
@@ -74,6 +75,8 @@ const siteUrl = new URL(href(""), Astro.site).toString();
 const structuredData = websiteLd(siteUrl, `${new URL(href("register/"), Astro.site)}?q={search_term_string}`);
 ---
 <Base structuredData={structuredData}>
+  <link slot="head" rel="alternate" type="application/feed+json" title="AURA Morning Brief (JSON Feed)" href={href("feed.json")} />
+  <link slot="head" rel="alternate" type="application/rss+xml" title="AURA alerts" href={href("feeds/alerts.xml")} />
   <Hero
     edition={editionName(editionAt)}
     dateLabel={lagosDate(editionAt)}
@@ -92,6 +95,7 @@ const structuredData = websiteLd(siteUrl, `${new URL(href("register/"), Astro.si
     nextLabel={lagosTime(next)}
   />
   <Explainer />
+  <Following />
   <BriefLead brief={brief} dateLabel={lagosDate(editionAt)} />
   <StoryGrid stories={stories} now={editionAt} />
   {featured && <OwnershipStory holding={featured} others={others} />}
