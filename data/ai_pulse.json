@@ -1,60 +1,60 @@
 {
-  "generated": "2026-11-08 14:27:30",
+  "generated": "2026-11-08 18:23:45",
   "models": [
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 1290,
+      "likes": 1330,
       "downloads": 22854
     },
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 735,
+      "likes": 786,
       "downloads": 7088
     },
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 1693,
+      "likes": 1709,
       "downloads": 25569
-    },
-    {
-      "id": "ccore/Qwen3.5-4B-3D-Coder",
-      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "task": "",
-      "likes": 904,
-      "downloads": 254053
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 11076,
+      "likes": 11104,
       "downloads": 2661026
+    },
+    {
+      "id": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "task": "",
+      "likes": 911,
+      "downloads": 254053
     },
     {
       "id": "ricursiveAI/Ripple-65B-Preview",
       "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
       "task": "",
-      "likes": 385,
+      "likes": 390,
       "downloads": 5087
     },
     {
-      "id": "burner22/numbat",
-      "url": "https://huggingface.co/burner22/numbat",
-      "task": "",
-      "likes": 385,
-      "downloads": 10197
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "task": "image-text-to-text",
+      "likes": 19391,
+      "downloads": 7668187
     },
     {
       "id": "FusionCow/Sulphur-3",
       "url": "https://huggingface.co/FusionCow/Sulphur-3",
       "task": "",
-      "likes": 413,
+      "likes": 414,
       "downloads": 1003
     }
   ],
@@ -62,7 +62,7 @@
     {
       "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
       "url": "https://huggingface.co/papers/2611.06500",
-      "upvotes": 5
+      "upvotes": 6
     },
     {
       "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
