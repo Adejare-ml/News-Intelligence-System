@@ -2,10 +2,11 @@ import { test, beforeEach, afterEach } from "node:test";
 import assert from "node:assert/strict";
 import { onRequestPost as follow, onRequest as followOther } from "./follow.ts";
 import { onRequestPost as unsubscribe } from "./unsubscribe.ts";
+import { onRequestPost as subscribe, SIGNUPS_PER_IP_PER_DAY } from "./subscribe.ts";
 import { onRequestGet as confirmGet, onRequestPost as confirmPost } from "./follow-confirm.ts";
 import { addSubscriber, sqliteD1 } from "../_lib/d1-fake.test.ts";
 import { followStore, MAX_FOLLOWS } from "../_lib/follows.ts";
-import type { Env } from "../_lib/http.ts";
+import { lagosDay, type Env } from "../_lib/http.ts";
 
 const SITE = "https://auranews.pages.dev";
 const T = (c: string) => c.repeat(48);
@@ -84,6 +85,65 @@ test("one follow email per address every ten minutes, same answer either way", a
   const other = await ask(e, { email: "reader@x.co", slug: "dangote-cement-plc" });
   assert.equal(other.status, 200, "another company is throttled too, without an error");
   assert.equal(mails.length, 1);
+});
+
+/** Moves an address's last follow email an hour back, as if the 10-minute gap had passed. */
+function rewindFollow(db: ReturnType<typeof sqliteD1>, email: string): void {
+  const hourAgo = new Date(Date.now() - 3_600_000).toISOString();
+  db.raw.prepare("UPDATE follow_requests SET requested_at = ? WHERE email = ?").run(hourAgo, email);
+  db.raw.prepare("UPDATE subscribers SET last_mailed_at = ? WHERE email = ? AND last_mailed_at IS NOT NULL").run(hourAgo, email);
+}
+
+test("an address not on the list gets at most three follow emails a Lagos day, and only a hash of it is counted", async () => {
+  const e = env();
+  const first = await (await ask(e, { email: "victim@x.org", slug: "mtn-nigeria" })).json();
+  for (let i = 0; i < 4; i++) {
+    rewindFollow(e.DB, "victim@x.org");
+    const res = await ask(e, { email: "victim@x.org", slug: i % 2 ? "mtn-nigeria" : "dangote-cement-plc" });
+    assert.equal(res.status, 200);
+    if (i % 2) assert.deepEqual(await res.json(), first, "past the limit the answer is the same");
+  }
+  assert.equal(mails.length, 3);
+  const keys = (e.DB.raw.prepare("SELECT key FROM throttle").all() as { key: string }[]).map((r) => r.key);
+  assert.equal(keys.length, 1);
+  assert.match(keys[0], /^follow:[0-9a-f]{64}$/, "the counter never stores the address");
+});
+
+test("a subscriber's follow emails share the sign-up mail limits, and a refused mail is given back", async () => {
+  const e = env();
+  // Two sign-up mails already today: one follow email is left.
+  e.DB.raw
+    .prepare("UPDATE subscribers SET mail_day = ?, mails_today = 2, last_mailed_at = ? WHERE email = 'reader@x.co'")
+    .run(lagosDay(new Date()), new Date(Date.now() - 3_600_000).toISOString());
+  for (let i = 0; i < 3; i++) {
+    rewindFollow(e.DB, "reader@x.co");
+    assert.equal((await ask(e, { email: "reader@x.co", slug: "mtn-nigeria" })).status, 200);
+  }
+  assert.equal(mails.length, 1);
+
+  globalThis.fetch = (async () => new Response("{}", { status: 500 })) as typeof fetch;
+  assert.equal((await ask(e, { email: "pending@x.co", slug: "mtn-nigeria" })).status, 200);
+  const row = e.DB.raw.prepare("SELECT mails_today FROM subscribers WHERE email = 'pending@x.co'").get() as { mails_today: number };
+  assert.equal(row.mails_today, 0, "a mail the provider refused does not count");
+});
+
+test("one IP shares the sign-up form's 20 posts a day, then gets a 429 and nothing is sent", async () => {
+  const e = env();
+  const fromIp = (path: string, body: Record<string, string>, ip = "203.0.113.9") =>
+    new Request(`${SITE}${path}`, { method: "POST", headers: { "Content-Type": "application/json", "CF-Connecting-IP": ip }, body: JSON.stringify(body) });
+  for (let i = 0; i < SIGNUPS_PER_IP_PER_DAY / 2; i++) {
+    assert.equal((await subscribe({ request: fromIp("/api/subscribe", { email: `s${i}@x.org` }), env: e })).status, 200);
+    assert.equal((await follow({ request: fromIp("/api/follow", { email: `f${i}@x.org`, slug: "mtn-nigeria" }), env: e })).status, 200);
+  }
+  const sent = mails.length;
+  const over = await follow({ request: fromIp("/api/follow", { email: "late@x.org", slug: "mtn-nigeria" }), env: e });
+  assert.equal(over.status, 429);
+  assert.match(((await over.json()) as { error: string }).error, /Too many/);
+  assert.equal(mails.length, sent, "nothing is sent past the limit");
+  assert.equal(e.DB.raw.prepare("SELECT COUNT(*) AS n FROM follow_requests WHERE email = 'late@x.org'").get()!.n, 0);
+  assert.equal((await subscribe({ request: fromIp("/api/subscribe", { email: "late@x.org" }), env: e })).status, 429, "the budget is shared both ways");
+  const elsewhere = fromIp("/api/follow", { email: "late@x.org", slug: "mtn-nigeria" }, "198.51.100.1");
+  assert.equal((await follow({ request: elsewhere, env: e })).status, 200, "other IPs are unaffected");
 });
 
 test("bad input: honeypot, address, unknown company, wrong method", async () => {

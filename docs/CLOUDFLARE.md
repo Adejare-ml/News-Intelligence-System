@@ -180,6 +180,16 @@ use up the provider's daily quota:
   minutes, and that try does not count against the address.
 - Confirmation and unsubscribe links do nothing until the button on the
   page is pressed, so mail scanners that open every link change nothing.
+- The **"Get updates by email" form** on company pages (`/api/follow`)
+  sends mail too, so it has the same limits. An address gets at most one
+  follow email per 10 minutes and three per Lagos day: an address on the
+  list shares its three with the sign-up mails above, and any other address
+  is counted in `throttle` under `follow:<SHA-256 of the address>`, never
+  the address itself. Past that the form answers as usual but sends
+  nothing. Its posts count against the same **20 per IP per Lagos day** as
+  sign-ups (one budget for both forms), after which it gets "Too many
+  requests from here today." Together these keep a script from flooding one
+  inbox or spending the provider's daily quota before the Morning Brief.
 
 **Housekeeping** runs after each day's real send: pending sign-ups not
 mailed for 30 days are deleted, and pending sign-ups 48-72 hours old that
@@ -235,7 +245,10 @@ pages to one email per address every 10 minutes; rows older than a day are
 deleted). Without it the follow form and follow buttons fail, the
 preferences page shows topics only, and the brief goes out with no Following block (its send report says
 `following.error`). It only creates new tables, so it is safe to apply at
-any time, before or after 0004 to 0006.
+any time, before or after 0004 to 0006. The follow form's daily limits
+(three emails per address, 20 posts per IP; see **Sign-up limits** above)
+need no table of their own: they use 0004's mail columns and `throttle`
+table, so the form needs 0004 applied as well.
 
 (or paste each file into the D1 console). Then **Pages project → Settings
 → Bindings → Add → D1 database**: variable `DB`, database `aura`.

@@ -133,6 +133,12 @@ export function authorised(request: Request, env: Env): boolean {
   return secret.length >= 16 && given.length > 0 && sameSecret(given, secret);
 }
 
+/** Hex SHA-256 of `text`: a key that counts something (an address) without storing it. */
+export async function sha256hex(text: string): Promise<string> {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+  return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
 /** The date in Lagos (YYYY-MM-DD): the day sends and mail limits are counted by. */
 export function lagosDay(now: Date): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: "Africa/Lagos", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);

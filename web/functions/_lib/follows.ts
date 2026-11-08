@@ -7,7 +7,11 @@ import type { D1Like, Env } from "./http.ts";
 
 /** Keeps each Following block short enough to read and cheap to build. */
 export const MAX_FOLLOWS = 20;
-/** One follow email per address in this window, so the form cannot flood an inbox. */
+/**
+ * One follow email per address in this window. With the daily limits in
+ * /api/follow (the sign-up allowance, or a hashed counter in throttle), the
+ * form cannot flood an inbox.
+ */
 export const REQUEST_GAP_MINUTES = 10;
 /**
  * The throttle only needs recent rows; older ones are deleted so addresses
