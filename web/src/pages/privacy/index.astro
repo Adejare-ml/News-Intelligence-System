@@ -8,7 +8,7 @@ import { href } from "../../lib/url.ts";
   heading="What we keep, and why"
   lede="AURA keeps as little personal data as it can. This page explains what it holds about readers and about the people its records name, under Nigeria’s Data Protection Act 2023."
   description="How AURA handles personal data: Morning Brief subscribers, people named in records, and disputes."
-  updated="2026-11-07"
+  updated="2026-11-08"
 >
   <h2>If you subscribe to the Morning Brief</h2>
   <p>We store:</p>
@@ -16,16 +16,22 @@ import { href } from "../../lib/url.ts";
     <li>your email address;</li>
     <li>the choices you made: which kinds of news, which region, how often, and whether delivery is paused;</li>
     <li>when you signed up, confirmed, or unsubscribed;</li>
+    <li>when we last emailed you and how many emails we sent you that day, so no address gets more than a few a day;</li>
     <li>a random code that makes your confirm, change-topics and unsubscribe links work.</li>
   </ul>
+  <p>
+    When the sign-up form is sent, we also keep the IP address it came from, only to limit how many sign-ups
+    one address can make in a day, and delete it at the next daily clean-up.
+  </p>
   <p>
     We use these only to send you the brief you asked for. We do not sell or share them, and we do not use
     them for advertising. The addresses are kept in a database run by Cloudflare, and the emails are sent
     through an email delivery service. Neither may use your address for anything else.
   </p>
   <p>
-    <strong>How long:</strong> a sign-up that is never confirmed gets no emails, and we delete it whenever
-    you ask (see “Your rights” below). When you
+    <strong>How long:</strong> a sign-up that is never confirmed gets the confirmation email and at most one
+    reminder, about two days later. It is deleted automatically 30 days after the last email we sent it, or
+    sooner if you ask (see “Your rights” below). When you
     unsubscribe we stop sending at once, and keep the address and dates only as long as we need them to
     show that you left and to make sure you are not emailed again.
   </p>
