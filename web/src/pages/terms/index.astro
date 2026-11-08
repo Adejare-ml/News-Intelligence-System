@@ -1,0 +1,45 @@
+---
+import TextPage from "../../layouts/TextPage.astro";
+import { href } from "../../lib/url.ts";
+---
+<TextPage
+  title="Terms"
+  eyebrow="Terms of use"
+  heading="What AURA is, and is not"
+  lede="AURA is a free information service. It summarises Nigerian business news about who owns and controls companies. Please read these points before relying on anything here."
+  description="The terms for using AURA: an information service built from news reports, not legal or financial advice."
+  updated="2026-11-07"
+>
+  <h2>Records come from news reports</h2>
+  <p>
+    Every ownership, board and contract record on AURA is drawn by software from articles published by news
+    outlets. A record says that an outlet reported something. It is not a record from the Corporate Affairs
+    Commission (CAC), it has not been checked against the CAC register, and it is not a finding that anyone
+    did anything wrong. Reports can be mistaken, out of date, or about a different person with the same name.
+  </p>
+
+  <h2>Not advice</h2>
+  <p>
+    Nothing on AURA, or in the Morning Brief, is legal, financial, investment or compliance advice. Check the
+    original reporting and the official registers, and take professional advice, before acting on it.
+  </p>
+
+  <h2>No warranty</h2>
+  <p>
+    AURA is provided as it is, without any promise that it is complete, accurate, current or always available.
+    As far as the law allows, we are not responsible for loss caused by relying on it.
+  </p>
+
+  <h2>Corrections</h2>
+  <p>
+    If something is wrong, tell us through the <a href={href("dispute/")}>dispute form</a>. Corrections are
+    listed on the <a href={href("corrections/")}>corrections page</a>. How we handle personal data is set out in
+    the <a href={href("privacy/")}>privacy notice</a>.
+  </p>
+
+  <h2>Using the site</h2>
+  <p>
+    You are welcome to read, link to and quote AURA with credit to AURA and the original outlet. Please do not
+    overload the site with automated requests, or present its records as official register data.
+  </p>
+</TextPage>

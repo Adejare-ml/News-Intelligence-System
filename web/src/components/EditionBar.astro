@@ -1,5 +1,6 @@
 ---
 import Icon from "./Icon.astro";
+import { href } from "../lib/url.ts";
 
 interface Props {
   updated: Date | null;
@@ -25,6 +26,7 @@ const { updated, next, stale, storiesToday, updatedLabel, nextLabel } = Astro.pr
       Next run <time datetime={next.toISOString()} data-next-run>{nextLabel}</time>
     </span>
     <span class="item hide-sm">{storiesToday} stories in the last 24 hours</span>
+    <a class="item week" href={href("changes/")}>What changed this week <Icon name="arrowRight" size={14} /></a>
     <span class="item note" data-stale-note hidden={!stale}>
       The last scheduled run did not publish. What you see is the most recent edition.
     </span>
@@ -55,6 +57,10 @@ const { updated, next, stale, storiesToday, updatedLabel, nextLabel } = Astro.pr
     align-items: center;
     gap: 8px;
     white-space: nowrap;
+  }
+  .week {
+    color: var(--gold);
+    font-weight: 600;
   }
   .live {
     color: var(--text-soft);

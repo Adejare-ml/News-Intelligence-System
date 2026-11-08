@@ -34,18 +34,16 @@ function env(pages: Record<string, string> = {}): Env & { DB: ReturnType<typeof 
   const all: Record<string, string> = {
     "/brief/email/": BUSINESS,
     "/brief/email/shell/": SHELL,
-    "/brief/email/section/sports/": section("sports"),
+    "/brief/email/section/technology/": section("technology"),
     "/brief/email/section/politics/": section("politics"),
-    "/brief/email/section/technology/": section("technology", "2026-11-03 05:00:00"), // stale
     ...pages,
   };
   const db = sqliteD1();
   addSubscriber(db, { email: "biz@x.co", token: T("a") });
-  addSubscriber(db, { email: "sport@x.co", token: T("b"), categories: "sports", region: "global" });
+  addSubscriber(db, { email: "techworld@x.co", token: T("b"), categories: "technology", region: "global" });
   addSubscriber(db, { email: "mix@x.co", token: T("c"), categories: "business,politics", region: "both" });
   addSubscriber(db, { email: "mix2@x.co", token: T("d"), categories: "business,politics", region: "both" });
-  addSubscriber(db, { email: "weekly@x.co", token: T("e"), categories: "sports", region: "nigeria", frequency: "weekly" });
-  addSubscriber(db, { email: "tech@x.co", token: T("f"), categories: "technology" });
+  addSubscriber(db, { email: "weekly@x.co", token: T("e"), categories: "technology", region: "nigeria", frequency: "weekly" });
   addSubscriber(db, { email: "paused@x.co", token: T("1"), paused: 1 });
   return {
     DB: db,
@@ -92,13 +90,13 @@ test("each reader gets the mix they chose, built once per mix", async () => {
   const got = byRecipient();
 
   assert.match(got["biz@x.co"].html, /BUSINESS STORIES/);
-  assert.doesNotMatch(got["biz@x.co"].html, /SPORTS|POLITICS|aura:sections/);
+  assert.doesNotMatch(got["biz@x.co"].html, /TECHNOLOGY|POLITICS|aura:sections/);
 
-  const sport = got["sport@x.co"];
-  assert.match(sport.html, /MASTHEAD/);
-  assert.match(sport.html, /sports WORLD/);
-  assert.doesNotMatch(sport.html, /sports NG|BUSINESS/);
-  assert.equal(sport.subject, "AURA Morning Brief · Friday 6 November · Sports");
+  const tech = got["techworld@x.co"];
+  assert.match(tech.html, /MASTHEAD/);
+  assert.match(tech.html, /technology WORLD/);
+  assert.doesNotMatch(tech.html, /technology NG|BUSINESS/);
+  assert.equal(tech.subject, "AURA Morning Brief · Friday 6 November · Technology");
 
   const mix = got["mix@x.co"];
   assert.match(mix.html, /BUSINESS STORIES[\s\S]*politics NG[\s\S]*politics WORLD/);
@@ -109,28 +107,28 @@ test("each reader gets the mix they chose, built once per mix", async () => {
 });
 
 test("weekly readers wait for Monday; paused readers and stale headlines are skipped", async () => {
-  await call(env());
+  await call(env({ "/brief/email/section/technology/": section("technology", "2026-11-03 05:00:00") }));
   const got = byRecipient();
   assert.equal(got["weekly@x.co"], undefined);
   assert.equal(got["paused@x.co"], undefined);
-  assert.equal(got["tech@x.co"], undefined, "technology headlines are three days old");
+  assert.equal(got["techworld@x.co"], undefined, "technology headlines are three days old");
 });
 
 test("on Monday weekly readers are included", async () => {
   mock.timers.setTime(MONDAY.getTime());
-  const fresh = { "/brief/email/section/sports/": section("sports", "2026-11-09 05:00:00") };
+  const fresh = { "/brief/email/section/technology/": section("technology", "2026-11-09 05:00:00") };
   const body = await (await call(env(fresh), "?dry_run=1")).json();
-  const weekly = body.groups.find((g: { mix: string }) => g.mix === "sports|nigeria");
-  assert.deepEqual(weekly, { mix: "sports|nigeria", readers: 1, subject: "AURA Morning Brief · Friday 6 November · Sports" });
+  const weekly = body.groups.find((g: { mix: string }) => g.mix === "technology|nigeria");
+  assert.deepEqual(weekly, { mix: "technology|nigeria", readers: 1, subject: "AURA Morning Brief · Friday 6 November · Technology" });
 });
 
 test("dry run reports every mix and sends nothing", async () => {
   const body = await (await call(env(), "?dry_run=1")).json();
   assert.equal(batches.length, 0);
   assert.equal(body.recipients, 4);
-  assert.equal(body.skipped_readers, 1);
-  assert.deepEqual(body.headline_sections.sort(), ["politics", "sports"]);
-  assert.deepEqual(body.groups.map((g: { mix: string }) => g.mix).sort(), ["business,politics|both", "business|-", "sports|global", "technology|nigeria"]);
+  assert.equal(body.skipped_readers, 0);
+  assert.deepEqual(body.headline_sections.sort(), ["politics", "technology"]);
+  assert.deepEqual(body.groups.map((g: { mix: string }) => g.mix).sort(), ["business,politics|both", "business|-", "technology|global"]);
 });
 
 test("a stale business edition still lets headline readers through", async () => {
@@ -146,11 +144,11 @@ test("a stale business edition still lets headline readers through", async () =>
 });
 
 test("test mode previews any mix to the owner", async () => {
-  const body = await (await call(env(), "?test=1&categories=sports,politics&region=nigeria")).json();
+  const body = await (await call(env(), "?test=1&categories=technology,politics&region=nigeria")).json();
   assert.equal(body.test, true);
   const [mail] = batches[0];
   assert.deepEqual(mail.to, ["owner@example.org"]);
-  assert.match(mail.html, /sports NG[\s\S]*politics NG/);
+  assert.match(mail.html, /technology NG[\s\S]*politics NG/);
   assert.doesNotMatch(mail.html, /WORLD/);
 });
 
@@ -168,24 +166,24 @@ test("pure helpers", () => {
   assert.equal(hoursOld("", NOW), Infinity);
   const s = (email: string, categories: Subscriber["categories"], region: Subscriber["region"]): Subscriber =>
     ({ email, token: "", status: "confirmed", paused: false, categories, region, frequency: "daily" });
-  const groups = groupRecipients([s("a", ["business"], "global"), s("b", ["business"], "nigeria"), s("c", ["sports"], "global")]);
-  assert.deepEqual(groups.map((g) => [g.key, g.readers.length]), [["business|-", 2], ["sports|global", 1]]);
+  const groups = groupRecipients([s("a", ["business"], "global"), s("b", ["business"], "nigeria"), s("c", ["technology"], "global")]);
+  assert.deepEqual(groups.map((g) => [g.key, g.readers.length]), [["business|-", 2], ["technology|global", 1]]);
   const t: Templates = { business: null, shell: { html: SHELL, subject: "S" }, sections: {} };
-  assert.equal(buildFor({ categories: ["sports"], region: "global", frequency: "daily" }, t, true), null, "nothing fresh, nothing sent");
+  assert.equal(buildFor({ categories: ["technology"], region: "global", frequency: "daily" }, t, true), null, "nothing fresh, nothing sent");
 });
 
 test("a category with no headlines in the reader's regions is left out", async () => {
-  // Sports has only international headlines today; politics has both.
-  const e = env({ "/brief/email/section/sports/": section("sports", "2026-11-06 05:00:00", ["nigeria"]) });
-  addSubscriber(e.DB, { email: "ngsport@x.co", token: T("9"), categories: "sports", region: "nigeria" });
-  addSubscriber(e.DB, { email: "ngmix@x.co", token: T("8"), categories: "sports,politics", region: "nigeria" });
+  // Technology has only international headlines today; politics has both.
+  const e = env({ "/brief/email/section/technology/": section("technology", "2026-11-06 05:00:00", ["nigeria"]) });
+  addSubscriber(e.DB, { email: "ngtech@x.co", token: T("9"), categories: "technology", region: "nigeria" });
+  addSubscriber(e.DB, { email: "ngmix@x.co", token: T("8"), categories: "technology,politics", region: "nigeria" });
   await call(e);
   const got = byRecipient();
-  assert.equal(got["ngsport@x.co"], undefined, "nothing new for them: no email");
-  assert.doesNotMatch(got["ngmix@x.co"].html, /SPORTS/);
+  assert.equal(got["ngtech@x.co"], undefined, "nothing new for them: no email");
+  assert.doesNotMatch(got["ngmix@x.co"].html, /TECHNOLOGY/);
   assert.match(got["ngmix@x.co"].html, /politics NG/);
   assert.equal(got["ngmix@x.co"].subject, "AURA Morning Brief · Friday 6 November · Politics");
-  assert.match(got["sport@x.co"].html, /sports WORLD/, "global readers still get sports");
+  assert.match(got["techworld@x.co"].html, /technology WORLD/, "global readers still get technology");
 });
 
 test("weekly Business readers get the week in business on Mondays", async () => {

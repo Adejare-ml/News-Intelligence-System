@@ -1,7 +1,6 @@
 import re
 import spacy
 from bs4 import BeautifulSoup
-from sentence_transformers import SentenceTransformer
 from typing import Dict, Any, List, Tuple
 import logging
 
@@ -19,18 +18,39 @@ except Exception as e:
         logger.error(f"Failed to download spaCy model: {download_err}")
         nlp = None
 
-try:
-    embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-except Exception as e:
-    logger.error(f"Could not load SentenceTransformer model: {e}")
-    embedding_model = None
+# The embedding model and the zero-shot classifier load on first use. Every
+# pipeline run imports this module for clean_html, and loading both at
+# import cost each run two model loads (and the torch import) that most
+# runs never used. A failed load is remembered as None, so it is tried once.
+_UNLOADED = object()
+_embedding_model: Any = _UNLOADED
+_classifier_pipeline: Any = _UNLOADED
 
-try:
-    from transformers import pipeline as hf_pipeline
-    classifier_pipeline = hf_pipeline("zero-shot-classification", model="valhalla/distilbart-mnli-12-3")
-except Exception as e:
-    logger.warning(f"Could not load Hugging Face zero-shot-classification pipeline: {e}. Falling back to rule-based classification.")
-    classifier_pipeline = None
+
+def embedding_model():
+    """The SentenceTransformer, loaded on first call; None if unavailable."""
+    global _embedding_model
+    if _embedding_model is _UNLOADED:
+        try:
+            from sentence_transformers import SentenceTransformer
+            _embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+        except Exception as e:
+            logger.error(f"Could not load SentenceTransformer model: {e}")
+            _embedding_model = None
+    return _embedding_model
+
+
+def classifier_pipeline():
+    """The zero-shot classifier, loaded on first call; None if unavailable."""
+    global _classifier_pipeline
+    if _classifier_pipeline is _UNLOADED:
+        try:
+            from transformers import pipeline as hf_pipeline
+            _classifier_pipeline = hf_pipeline("zero-shot-classification", model="valhalla/distilbart-mnli-12-3")
+        except Exception as e:
+            logger.warning(f"Could not load Hugging Face zero-shot-classification pipeline: {e}. Falling back to rule-based classification.")
+            _classifier_pipeline = None
+    return _classifier_pipeline
 
 # Vocab lists for Rule-Based Classification
 TITLES_VOCAB = [
@@ -97,12 +117,15 @@ class NLPPipelineService:
     @staticmethod
     def generate_embeddings(text: str) -> List[float]:
         """Generates 384-dimensional vector embeddings using SentenceTransformers."""
-        if not embedding_model or not text:
+        if not text:
+            return []
+        model = embedding_model()
+        if not model:
             return []
         # SentenceTransformers returns a numpy array, convert to list
         # Truncate text to standard max length (e.g. 512 tokens / ~1000 characters for embedding performance)
         truncated_text = text[:1500]
-        embedding = embedding_model.encode(truncated_text)
+        embedding = model.encode(truncated_text)
         return embedding.tolist()
 
     @staticmethod
@@ -255,10 +278,11 @@ class NLPPipelineService:
         if not text:
             return "Low"
 
-        if classifier_pipeline:
+        classifier = classifier_pipeline()
+        if classifier:
             try:
                 candidate_labels = ["Critical risk", "High risk", "Medium risk", "Low risk"]
-                res = classifier_pipeline(text[:1000], candidate_labels)
+                res = classifier(text[:1000], candidate_labels)
                 top_label = res["labels"][0]
                 return top_label.replace(" risk", "")
             except Exception as err:
@@ -322,10 +346,11 @@ class NLPPipelineService:
         if not text:
             return "General"
 
-        if classifier_pipeline:
+        classifier = classifier_pipeline()
+        if classifier:
             try:
                 candidate_labels = ["Government policy and state affairs", "Company business and finance", "Legal proceedings and court cases", "Individual person news"]
-                res = classifier_pipeline(text[:1000], candidate_labels)
+                res = classifier(text[:1000], candidate_labels)
                 top_label = res["labels"][0]
                 mapping = {
                     "Government policy and state affairs": "Government",

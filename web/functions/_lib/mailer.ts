@@ -68,6 +68,16 @@ export function parseFrom(from: string): { name?: string; email: string } {
   return m[1] ? { name: m[1], email: m[2].trim() } : { email: m[2].trim() };
 }
 
+/**
+ * Where replies go: REPLY_TO, else OWNER_EMAIL. Without it, replies would go
+ * to MAIL_FROM, which is often a no-reply or a provider's shared sender.
+ * A value with a line break is ignored: it could add headers of its own.
+ */
+export function replyTo(env: Env): string | undefined {
+  const value = (env.REPLY_TO || env.OWNER_EMAIL || "").trim();
+  return value && !/[\r\n]/.test(value) ? value : undefined;
+}
+
 const brevoHeaders = (env: Env) => ({ "api-key": env.BREVO_API_KEY!, "Content-Type": "application/json", Accept: "application/json" });
 
 export async function send(env: Env, mail: Mail): Promise<boolean> {
@@ -75,7 +85,7 @@ export async function send(env: Env, mail: Mail): Promise<boolean> {
   if (!via) return false;
   if (via === "gmail") {
     const from = gmailFrom(env);
-    const build = compileMessage({ from, subject: mail.subject, html: mail.html, text: mail.text });
+    const build = compileMessage({ from, replyTo: replyTo(env), subject: mail.subject, html: mail.html, text: mail.text });
     const result = await smtpSend(smtpTransport.open(env), gmailLogin(env), [{ from, to: mail.to, data: () => build(mail.to) }]);
     return result.sent === 1;
   }
@@ -85,6 +95,7 @@ export async function send(env: Env, mail: Mail): Promise<boolean> {
       headers: brevoHeaders(env),
       body: JSON.stringify({
         sender: parseFrom(env.MAIL_FROM!),
+        ...brevoReplyTo(replyTo(env)),
         to: [{ email: mail.to }],
         subject: mail.subject,
         htmlContent: mail.html,
@@ -96,7 +107,7 @@ export async function send(env: Env, mail: Mail): Promise<boolean> {
   const res = await fetch(`${apiBase(env)}/emails`, {
     method: "POST",
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: env.MAIL_FROM, to: [mail.to], subject: mail.subject, html: mail.html, text: mail.text }),
+    body: JSON.stringify({ from: env.MAIL_FROM, ...resendReplyTo(replyTo(env)), to: [mail.to], subject: mail.subject, html: mail.html, text: mail.text }),
   });
   return res.ok;
 }
@@ -229,10 +240,14 @@ export function chunk<T>(list: T[], size: number): T[][] {
   return out;
 }
 
+const resendReplyTo = (address?: string) => (address ? { reply_to: address } : {});
+const brevoReplyTo = (address?: string) => (address ? { replyTo: parseFrom(address) } : {});
+
 /** The Resend batch payload: one email per subscriber, with one-click unsubscribe headers (RFC 8058). */
-export function batchPayload(from: string, mails: BriefMail[]) {
+export function batchPayload(from: string, mails: BriefMail[], reply?: string) {
   return mails.map((m) => ({
     from,
+    ...resendReplyTo(reply),
     to: [m.to],
     subject: m.subject,
     html: m.html,
@@ -249,9 +264,10 @@ export function batchPayload(from: string, mails: BriefMail[]) {
  * its own HTML (and so its own unsubscribe link). The shared base content
  * carries no subscriber's link.
  */
-export function brevoBatchPayload(from: string, mails: BriefMail[]) {
+export function brevoBatchPayload(from: string, mails: BriefMail[], reply?: string) {
   return {
     sender: parseFrom(from),
+    ...brevoReplyTo(reply),
     subject: mails[0]?.subject ?? "",
     htmlContent: "<p>AURA Morning Brief</p>",
     messageVersions: mails.map((m) => ({ to: [{ email: m.to }], subject: m.subject, htmlContent: m.html, textContent: m.text })),
@@ -273,7 +289,7 @@ export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: n
       smtpTransport.open(env),
       gmailLogin(env),
       mails.slice(0, GMAIL_DAILY_CAP).map((m) => {
-        const build = compileMessage({ from, subject: m.subject, html: m.html, text: m.text });
+        const build = compileMessage({ from, replyTo: replyTo(env), subject: m.subject, html: m.html, text: m.text });
         return { from, to: m.to, data: () => build(m.to, { unsubscribe: m.unsubscribe, preferences: m.preferences }) };
       }),
     ).then((r) => ({ ...r, failed: r.failed + Math.max(0, mails.length - GMAIL_DAILY_CAP) }));
@@ -287,12 +303,12 @@ export async function sendBatch(env: Env, mails: BriefMail[]): Promise<{ sent: n
           ? await fetch(`${brevoBase(env)}/v3/smtp/email`, {
               method: "POST",
               headers: brevoHeaders(env),
-              body: JSON.stringify(brevoBatchPayload(env.MAIL_FROM!, group)),
+              body: JSON.stringify(brevoBatchPayload(env.MAIL_FROM!, group, replyTo(env))),
             })
           : await fetch(`${apiBase(env)}/emails/batch`, {
               method: "POST",
               headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, "Content-Type": "application/json" },
-              body: JSON.stringify(batchPayload(env.MAIL_FROM!, group)),
+              body: JSON.stringify(batchPayload(env.MAIL_FROM!, group, replyTo(env))),
             });
       if (res.ok) sent += group.length;
       else failed += group.length;
@@ -344,7 +360,7 @@ export async function sendBriefs(env: Env, jobs: BriefJob[]): Promise<{ sent: nu
     const from = gmailFrom(env);
     const envelopes: { from: string; to: string; data: () => string }[] = [];
     for (const job of jobs) {
-      const build = compileMessage({ from, ...job.brief });
+      const build = compileMessage({ from, replyTo: replyTo(env), ...job.brief });
       for (const r of job.recipients) {
         if (envelopes.length >= GMAIL_DAILY_CAP) break;
         envelopes.push({ from, to: r.to, data: () => build(r.to, { unsubscribe: r.unsubscribe, preferences: r.preferences }) });

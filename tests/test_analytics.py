@@ -5,6 +5,8 @@ columns. All pure; no Sheets, no network.
 """
 from datetime import datetime
 
+import pytest
+
 from backend.app.services.analytics import (
     cooccurrence,
     entity_key,
@@ -158,6 +160,23 @@ class TestParseAmount:
 
     def test_bare_numbers_default_to_naira(self):
         assert parse_amount("500 million") == {"value": 500e6, "currency": "NGN"}
+
+    @pytest.mark.parametrize("raw, value, currency", [
+        ("N1.2tr", 1.2e12, "NGN"),
+        ("N1.2 trillion", 1.2e12, "NGN"),
+        ("N1.2trn", 1.2e12, "NGN"),
+        ("4.5 million dollars", 4.5e6, "USD"),
+        ("2.1 billion naira", 2.1e9, "NGN"),
+        # The first amount is the award; a bracketed conversion is not.
+        ("N2.5bn ($1.6m)", 2.5e9, "NGN"),
+        # A count before the amount is not the amount.
+        ("2 contracts worth N5bn", 5e9, "NGN"),
+        ("two contracts worth N5bn", 5e9, "NGN"),
+        ("4.5bn USD", 4.5e9, "USD"),
+        ("N 750 million", 750e6, "NGN"),
+    ])
+    def test_wordier_shapes(self, raw, value, currency):
+        assert parse_amount(raw) == {"value": value, "currency": currency}
 
     def test_undisclosed_is_none_never_zero(self):
         for raw in ("None", "N/A", "TBD (Local Pipeline)", "", None, "Undisclosed",

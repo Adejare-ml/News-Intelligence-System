@@ -7,6 +7,8 @@ import StoryGrid from "../components/StoryGrid.astro";
 import OwnershipStory from "../components/OwnershipStory.astro";
 import MarketStrip from "../components/MarketStrip.astro";
 import Subscribe from "../components/Subscribe.astro";
+import Explainer from "../components/Explainer.astro";
+import Following from "../components/Following.astro";
 import FindingTeaser from "../components/FindingTeaser.astro";
 import * as data from "../lib/data.ts";
 import { parseBrief } from "../lib/brief.ts";
@@ -15,6 +17,8 @@ import { within, STORY_OF_DAY_DAYS, FRONT_PAGE_DAYS } from "../lib/freshness.ts"
 import { buildFunnel } from "../lib/funnel.ts";
 import { rankStories, parseTime, storiesInDay } from "../lib/stories.ts";
 import { DEFAULT_ROUTES, routesFromRecords } from "../lib/routes.ts";
+import { websiteLd } from "../lib/seo.ts";
+import { href } from "../lib/url.ts";
 import { nextRunAfter, isStale, lagosTime, lagosDate, editionName } from "../lib/edition.ts";
 
 const articles = data.articles();
@@ -67,9 +71,14 @@ const others = claims
 const dataRoutes = routesFromRecords(records);
 const routes = dataRoutes ?? DEFAULT_ROUTES;
 const next = nextRunAfter(editionAt);
+const siteUrl = new URL(href(""), Astro.site).toString();
+// The query is appended by hand: new URL() would percent-encode the braces.
+const structuredData = websiteLd(siteUrl, `${new URL(href("register/"), Astro.site)}?q={search_term_string}`);
 const latestFinding = data.findings()[0];
 ---
-<Base>
+<Base structuredData={structuredData}>
+  <link slot="head" rel="alternate" type="application/feed+json" title="AURA Morning Brief (JSON Feed)" href={href("feed.json")} />
+  <link slot="head" rel="alternate" type="application/rss+xml" title="AURA alerts" href={href("feeds/alerts.xml")} />
   <Hero
     edition={editionName(editionAt)}
     dateLabel={lagosDate(editionAt)}
@@ -87,6 +96,8 @@ const latestFinding = data.findings()[0];
     updatedLabel={lastRun ? lagosTime(lastRun) : "unknown"}
     nextLabel={lagosTime(next)}
   />
+  <Explainer />
+  <Following />
   <BriefLead brief={brief} dateLabel={lagosDate(editionAt)} />
   <StoryGrid stories={stories} now={editionAt} />
   {featured && <OwnershipStory holding={featured} others={others} />}

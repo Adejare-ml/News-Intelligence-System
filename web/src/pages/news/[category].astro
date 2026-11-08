@@ -1,6 +1,6 @@
 ---
 /**
- * A headline category (sports, technology, politics, entertainment), in its
+ * A headline category (technology, politics), in its
  * Nigeria and Global editions, from category_news.json. Headlines link out
  * to the outlet that published them; AURA does not analyse these.
  */
@@ -28,6 +28,7 @@ const total = lists.reduce((n, l) => n + l.items.length, 0);
 const start = lists.find((l) => l.items.length)?.id ?? lists[0].id;
 ---
 <Base title={`${meta.label} · AURA`} description={`${meta.label} headlines from Nigeria and around the world, collected by AURA four times a day.`}>
+  <link slot="head" rel="alternate" type="application/rss+xml" title={`AURA · ${meta.label}`} href={href(`feeds/category/${category}.xml`)} />
   <section class="wrap intro">
     <p class="eyebrow">Headlines · {meta.label}</p>
     <h1 class="h1" data-split>{meta.label}</h1>

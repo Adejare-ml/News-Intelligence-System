@@ -114,7 +114,7 @@ export function resolveLinks(links?: string | Links): { unsubscribe: string; pre
  * preferences, in the HTML and the text; unsubscribe also in the
  * List-Unsubscribe header) and a fresh Message-ID.
  */
-export function compileMessage(m: { from: string; subject: string; html: string; text: string }) {
+export function compileMessage(m: { from: string; replyTo?: string; subject: string; html: string; text: string }) {
   const boundary = `aura-${crypto.randomUUID()}`;
   const domain = addressOf(m.from).split("@")[1] || "localhost";
   // Each placeholder sits on its own soft-wrapped line, so inserting a link never breaks the encoding.
@@ -124,6 +124,7 @@ export function compileMessage(m: { from: string; subject: string; html: string;
   const textQp = isolate(m.text);
   const fixed = [
     `From: ${encodeAddress(m.from)}`,
+    ...(m.replyTo ? [`Reply-To: ${encodeAddress(m.replyTo)}`] : []),
     `Subject: ${encodeHeader(m.subject)}`,
     "MIME-Version: 1.0",
     `Content-Type: multipart/alternative; boundary="${boundary}"`,

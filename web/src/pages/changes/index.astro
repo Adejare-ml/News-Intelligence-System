@@ -1,0 +1,378 @@
+---
+import Base from "../../layouts/Base.astro";
+import * as data from "../../lib/data.ts";
+import { href } from "../../lib/url.ts";
+import { groupHoldings } from "../../lib/psc.ts";
+import { toContract } from "../../lib/procurement.ts";
+import { buildEntities } from "../../lib/entities.ts";
+import { weeklyChanges, entityLinks, type ArticleRef, type FirstSeen, type PersonRow } from "../../lib/changes.ts";
+
+const records = data.psc();
+const companies = data.companies();
+const people: PersonRow[] = data.people();
+const procurement = data.procurement();
+const articles = data.articles();
+const history = data.history();
+
+// Names link only to entity pages the build actually makes, and a person
+// only to their page at the company the line names.
+const links = entityLinks(buildEntities({
+  holdings: groupHoldings(records),
+  companies,
+  people,
+  articles,
+  contracts: procurement.map(toContract),
+}));
+
+// The week ends on the last pipeline run, not the build date, so a late
+// rebuild does not show an empty week.
+const days = history.days ?? [];
+const lastRun = history.generated || days[days.length - 1]?.date || new Date().toISOString();
+const week = weeklyChanges({ records, companies, people, procurement, history: days, articles }, lastRun);
+
+const fmt = (iso: string, opts: Intl.DateTimeFormatOptions = { day: "numeric", month: "short" }) =>
+  new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { ...opts, timeZone: "UTC" });
+const range = `${fmt(week.start, { day: "numeric", month: "long" })} to ${fmt(week.end, { day: "numeric", month: "long", year: "numeric" })}`;
+const page = (slug: string) => (slug ? href(`entity/${slug}/`) : "");
+const entity = (name: string) => page(links.company(name));
+const holder = (person: string, company: string) => page(links.holder(person, company));
+const person = (name: string, organization: string) => page(links.person(name, organization));
+// "Headline · Publisher", so a reader knows where a link goes before following it.
+const cite = (a: ArticleRef) => [a.title || "Report", a.publisher].filter(Boolean).join(" · ");
+const pct = (n: number | null) => (n === null ? "" : `${n % 1 === 0 ? n.toFixed(0) : String(n)}%`);
+const tallest = Math.max(1, ...week.activity.map((d) => d.articles));
+const counts = [
+  { label: "Ownership records", n: week.ownership.length, id: "ownership" },
+  { label: "Companies first seen", n: week.companies.length, id: "companies" },
+  { label: "People first seen", n: week.people.length, id: "people" },
+  { label: "Board moves", n: week.moves.length, id: "moves" },
+  { label: "Contracts recorded", n: week.contracts.length, id: "contracts" },
+];
+const firstSeen = [
+  {
+    id: "companies",
+    title: "Companies first seen",
+    rows: week.companies,
+    link: (r: FirstSeen) => entity(r.name),
+    empty: "No company appeared in AURA's records for the first time this week.",
+  },
+  {
+    id: "people",
+    title: "People first seen",
+    rows: week.people,
+    link: (r: FirstSeen) => person(r.name, r.organization),
+    // Exports written before the pipeline recorded "First Seen" cannot say who is new.
+    empty: people.some((p) => p["First Seen"])
+      ? "No person appeared in AURA's records for the first time this week."
+      : "AURA's records do not yet say when each person was first seen. This list fills in after the next pipeline run.",
+  },
+];
+const KIND = { added: "Added", changed: "Stake changed", removed: "Removed" } as const;
+---
+<Base
+  noindex
+  title="What changed this week · AURA"
+  description={`What changed in AURA's records from ${range}: ownership records, companies and people first seen, board moves and contracts.`}
+>
+  <section class="wrap intro">
+    <p class="eyebrow">The week in the records</p>
+    <h1 class="h1" data-split>What changed this week</h1>
+    <p class="lede">
+      Everything AURA added to its records from {range}, newest first. Each line is what a news
+      report said, with a link to the report where AURA has it. Nothing here is scored or ranked.
+    </p>
+    <ul class="counts" data-reveal>
+      {counts.map((c) => (
+        <li><a href={`#${c.id}`}><span class="num">{c.n}</span><span>{c.label}</span></a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap block" aria-labelledby="activity">
+    <h2 class="h2" id="activity">Run activity</h2>
+    <p class="sub">
+      {week.totals.runs
+        ? `${week.totals.runs} pipeline ${week.totals.runs === 1 ? "run" : "runs"} screened the news and kept ${week.totals.articles} ${week.totals.articles === 1 ? "article" : "articles"}; ${week.totals.highRisk} ${week.totals.highRisk === 1 ? "was" : "were"} flagged high-risk.`
+        : "The pipeline did not run this week."}
+    </p>
+    <div class="bars" role="img" aria-label={week.activity.map((d) => `${fmt(d.date, { weekday: "short", day: "numeric", month: "short" })}: ${d.articles} articles, ${d.highRisk} high-risk`).join("; ")}>
+      <svg viewBox="0 0 70 40" preserveAspectRatio="none" aria-hidden="true">
+        {week.activity.map((d, i) => (
+          <rect class:list={["bar", { none: d.runs === 0 }]} x={i * 10 + 2} width="6"
+            y={40 - Math.max(0.6, (d.articles / tallest) * 40)} height={Math.max(0.6, (d.articles / tallest) * 40)} />
+        ))}
+      </svg>
+      <ol class="days" aria-hidden="true">
+        {week.activity.map((d) => (
+          <li>
+            <span class="day">{fmt(d.date, { weekday: "short", day: "numeric" })}</span>
+            <span class="num">{d.runs ? d.articles : "–"}</span>
+            {d.highRisk > 0 && <span class="hr">{d.highRisk} high-risk</span>}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="wrap block" aria-labelledby="ownership">
+    <h2 class="h2" id="ownership">Ownership records</h2>
+    {week.ownership.length ? (
+      <ol class="log">
+        {week.ownership.map((o) => (
+          <li>
+            <time datetime={o.date}>{fmt(o.date)}</time>
+            <p>
+              <span class:list={["chip", o.kind === "removed" ? "chip-crimson" : o.kind === "changed" ? "chip-royal" : "chip-gold"]}>{KIND[o.kind]}</span>
+              {holder(o.person, o.company) ? <a href={holder(o.person, o.company)}>{o.person}</a> : o.person}
+              {" · "}
+              {entity(o.company) ? <a href={entity(o.company)}>{o.company}</a> : o.company}
+              {o.kind === "changed" && o.previous !== null && <> {pct(o.previous)} → {pct(o.stake)}</>}
+              {o.kind === "added" && o.stake !== null && <> · {pct(o.stake)}</>}
+              {/* On an exit the figure is the stake given up, not one still held. */}
+              {o.kind === "removed" && o.stake !== null && <> · figure reported: {pct(o.stake)}</>}
+              <a class="src" href={o.source.url} rel="noopener" target="_blank">{cite(o.source)}</a>
+            </p>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <p class="empty">No ownership record was added, changed or removed this week.</p>
+    )}
+  </section>
+
+  <section class="wrap block split">
+    {firstSeen.map((group) => (
+      <div aria-labelledby={group.id}>
+        <h2 class="h2" id={group.id}>{group.title}</h2>
+        {group.rows.length ? (
+          <ol class="log">
+            {group.rows.map((r) => (
+              <li>
+                <time datetime={r.date}>{fmt(r.date)}</time>
+                <p>
+                  {group.link(r) ? <a href={group.link(r)}>{r.name}</a> : r.name}
+                  {r.detail && <span class="detail">{r.detail}</span>}
+                  {r.article && <a class="src" href={r.article.url} rel="noopener" target="_blank">{cite(r.article)}</a>}
+                </p>
+              </li>
+            ))}
+          </ol>
+        ) : <p class="empty">{group.empty}</p>}
+      </div>
+    ))}
+  </section>
+
+  <section class="wrap block" aria-labelledby="moves">
+    <h2 class="h2" id="moves">Board appointments and departures</h2>
+    {week.moves.length ? (
+      <ol class="log">
+        {week.moves.map((m) => (
+          <li>
+            <time datetime={m.date}>{fmt(m.date)}</time>
+            <p>
+              <span class:list={["chip", m.event === "departure" ? "chip-crimson" : "chip-gold"]}>{m.event === "appointment" ? "Appointed" : "Left"}</span>
+              {person(m.name, m.organization) ? <a href={person(m.name, m.organization)}>{m.name}</a> : m.name}
+              {m.position && <span class="detail">{m.position}</span>}
+              {m.organization && <>{m.position ? ", " : " · "}{entity(m.organization) ? <a href={entity(m.organization)}>{m.organization}</a> : m.organization}</>}
+              {m.article && <a class="src" href={m.article.url} rel="noopener" target="_blank">{cite(m.article)}</a>}
+            </p>
+          </li>
+        ))}
+      </ol>
+    ) : <p class="empty">No board appointment or departure was recorded this week.</p>}
+  </section>
+
+  <section class="wrap block" aria-labelledby="contracts">
+    <h2 class="h2" id="contracts">Procurement recorded</h2>
+    {week.contracts.length ? (
+      <ol class="log">
+        {week.contracts.map((c) => (
+          <li>
+            <time datetime={c.date}>{fmt(c.date)}</time>
+            <p>
+              {c.project && <span class="project">{c.project}</span>}
+              {entity(c.agency) ? <a href={entity(c.agency)}>{c.agency}</a> : c.agency}
+              {c.contractor && <> → {entity(c.contractor) ? <a href={entity(c.contractor)}>{c.contractor}</a> : c.contractor}</>}
+              {c.amountLabel && <> · <span class="num">{c.amountLabel}</span></>}
+              {c.article
+                ? <a class="src" href={c.article.url} rel="noopener" target="_blank">{cite(c.article)}</a>
+                : c.publisher && <span class="src">{c.publisher}</span>}
+            </p>
+          </li>
+        ))}
+      </ol>
+    ) : <p class="empty">No dated contract was recorded this week.</p>}
+  </section>
+
+  <section class="wrap block foot">
+    <p class="note">
+      Built from AURA's own records. A company or person "first seen" is the first time AURA's
+      pipeline recorded the name, not when they began business. Ownership lines come only from
+      sourced records that passed the register's checks; see <a class="link" href={href("how-it-works/")}>how it works</a>.
+    </p>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    padding-block: clamp(40px, 7vw, 88px) 24px;
+    display: grid;
+    gap: 18px;
+  }
+  .intro .eyebrow {
+    color: var(--gold);
+  }
+  .counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .counts a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--text-soft);
+    font-size: 0.88rem;
+  }
+  .counts .num {
+    font-weight: 700;
+    color: var(--text);
+  }
+  .block {
+    padding-block: 28px;
+    display: grid;
+    gap: 14px;
+  }
+  .sub,
+  .empty,
+  .note {
+    margin: 0;
+    max-width: 62ch;
+    color: var(--muted);
+  }
+  .bars {
+    display: grid;
+    gap: 8px;
+    max-width: 640px;
+  }
+  .bars svg {
+    width: 100%;
+    height: 88px;
+    display: block;
+  }
+  .bar {
+    fill: var(--gold);
+  }
+  .bar.none {
+    fill: var(--line);
+  }
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .days li {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+  .day {
+    color: var(--muted);
+  }
+  /* Crimson text this small fails AA contrast on the dark ground, so the
+     count reads in soft text and the colour moves to a marker dot. */
+  .hr {
+    color: var(--text-soft);
+    font-size: 0.8rem;
+  }
+  .hr::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background: var(--crimson);
+    vertical-align: middle;
+  }
+  /* The shared crimson chip is 3.96:1 on dark; here "Removed" and "Left"
+     keep the crimson wash and edge but take readable text. */
+  .chip-crimson {
+    color: var(--text-soft);
+    box-shadow: inset 0 0 0 1px var(--crimson);
+  }
+  .log {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+  }
+  .log li {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    gap: 12px;
+    padding-block: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .log time {
+    color: var(--muted);
+    font-size: 0.86rem;
+    padding-top: 2px;
+  }
+  .log p {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .log .chip {
+    margin-right: 6px;
+  }
+  .log a:not(.src) {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--line);
+    text-underline-offset: 3px;
+  }
+  .detail {
+    color: var(--text-soft);
+  }
+  .detail::before {
+    content: " · ";
+  }
+  .project {
+    display: block;
+    color: var(--text);
+    font-weight: 560;
+  }
+  .src {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.84rem;
+    color: var(--muted);
+  }
+  a.src:hover {
+    color: var(--gold);
+  }
+  .split {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 28px 40px;
+    align-items: start;
+  }
+  .split > div {
+    display: grid;
+    gap: 14px;
+  }
+  .foot {
+    padding-bottom: 64px;
+  }
+</style>

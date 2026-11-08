@@ -1,0 +1,70 @@
+---
+/**
+ * The Morning Brief archive: every edition subscribers were sent, newest
+ * first. Only dates and counts here; the editions themselves name people
+ * from news reports, so they carry noindex and stay out of the sitemap.
+ */
+import Base from "../../../layouts/Base.astro";
+import Subscribe from "../../../components/Subscribe.astro";
+import * as data from "../../../lib/data.ts";
+import { href } from "../../../lib/url.ts";
+import { plural } from "../../../lib/digest.ts";
+import { morningEditions } from "../../../lib/morning.ts";
+
+const editions = morningEditions(data.sentDigests(), data.emailDigest());
+---
+<Base
+  title="Morning Brief archive · AURA"
+  description="Every edition of AURA's Morning Brief email, as subscribers received it."
+>
+  <section class="wrap morning-archive" aria-labelledby="morning-title">
+    <p class="eyebrow">The Morning Brief</p>
+    <h1 class="h1" id="morning-title">Every edition, as it was sent</h1>
+    <p class="lede">The email AURA sends each morning: what Nigerian outlets reported since the last one, story by story.</p>
+    {editions.length ? (
+      <ol class="editions">
+        {editions.map((d) => (
+          <li>
+            <a href={href(`brief/morning/${d.edition}/`)}>{d.date}</a>
+            <span class="meta">{plural(d.stats.stories, "story", "stories")} · {plural(d.stats.outlets, "outlet")}</span>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <p class="meta">No edition has been sent yet.</p>
+    )}
+  </section>
+  <Subscribe />
+</Base>
+<script>
+  import "../../../scripts/subscribe.ts";
+</script>
+
+<style>
+  .morning-archive {
+    padding-block: clamp(40px, 7vw, 88px) 0;
+  }
+  .editions {
+    list-style: none;
+    margin: 28px 0 0;
+    padding: 0;
+    max-width: 640px;
+  }
+  .editions li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .editions a {
+    color: var(--text);
+    font-weight: 560;
+    text-decoration: none;
+  }
+  .editions a:hover {
+    text-decoration: underline;
+  }
+</style>

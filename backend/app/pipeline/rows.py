@@ -5,6 +5,7 @@ from typing import Any, Dict, List
 
 from backend.app.pipeline.report import _int_cell
 from backend.app.services.analytics import entity_key
+from backend.app.services.email_digest import report_from_row, same_story
 from backend.app.services.ingestion import parse_feed_date
 
 
@@ -112,10 +113,87 @@ def build_sources(article_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return out
 
 
+# A configured feed returning nothing this many runs in a row is broken
+# (an expired key, a changed endpoint), not having a quiet day.
+STALE_SOURCE_RUNS = 3
+
+
+def merge_source_health(previous: Any, counts: Dict[str, int], now: str) -> Dict[str, Any]:
+    """source_health.json: each feed's last fetch count, consecutive empty
+    runs and the last run it returned anything, carried run over run.
+
+    Feeds absent from `counts` (keyless, or skipped by the fetch budget)
+    keep their previous entry: not running is not the same as failing.
+    """
+    sources = (previous or {}).get("sources") if isinstance(previous, dict) else None
+    merged = {name: dict(entry) for name, entry in sources.items()
+              if isinstance(entry, dict)} if isinstance(sources, dict) else {}
+    for name, count in counts.items():
+        entry = merged.get(name, {})
+        if count:
+            entry = {"last_count": count, "empty_runs": 0, "last_ok": now}
+        else:
+            entry = {"last_count": 0,
+                     "empty_runs": _int_cell(entry.get("empty_runs")) + 1,
+                     "last_ok": entry.get("last_ok", "")}
+        merged[name] = entry
+    return {"generated": now, "sources": merged}
+
+
+def stale_sources(health: Dict[str, Any]) -> List[str]:
+    """Feeds that have come back empty STALE_SOURCE_RUNS runs in a row."""
+    return [name for name, entry in health.get("sources", {}).items()
+            if _int_cell(entry.get("empty_runs")) >= STALE_SOURCE_RUNS]
+
+
+def collapse_story_copies(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """One feed row per story, however many outlets reported it.
+
+    Each outlet's copy is its own Articles row, so the feed showed the same
+    arraignment three times in a row. Copies are matched by the email
+    digest's same_story (headline, people, sums and timing must agree;
+    when unsure, they stay apart). The highest-risk copy is kept (the first
+    on a tie) and carries the other outlets as "Also Reported" [{outlet, url}].
+    Rows the digest cannot read (no link, filtered) are left as they are.
+    """
+    reports = [report_from_row(row) for row in articles]
+    groups: List[List[int]] = []  # row indexes, in feed order
+    for i, rep in enumerate(reports):
+        match = None
+        if rep is not None:
+            match = next((g for g in groups
+                          if reports[g[0]] is not None and same_story(reports[g[0]], rep)), None)
+        if match is None:
+            groups.append([i])
+        else:
+            match.append(i)
+
+    out = []
+    for group in groups:
+        if len(group) == 1:
+            out.append(articles[group[0]])
+            continue
+        best = max(group, key=lambda i: (reports[i].risk_score, -i))
+        row = dict(articles[best])
+        # Each other outlet once, and never the kept row's own: one outlet's
+        # second copy (its site and its Google News link) is not "also
+        # reported by" itself.
+        seen = {reports[best].outlet.lower()}
+        also = []
+        for i in group:
+            name = reports[i].outlet
+            if name.lower() not in seen:
+                seen.add(name.lower())
+                also.append({"outlet": name, "url": reports[i].url})
+        if also:
+            row["Also Reported"] = also
+        out.append(row)
+    return out
 
 
 def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
-                       count_key: str = None) -> List[Dict[str, Any]]:
+                       count_key: str = None,
+                       first_seen_from: str = None) -> List[Dict[str, Any]]:
     """Suffix-normalised dedupe of exported entity rows.
 
     The Companies sheet holds e.g. eight copies of one outlet and People
@@ -126,15 +204,23 @@ def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
     highest-count row wins, its count becomes the SUM across the group
     (the mentions were all of one entity), and the longest surface form
     becomes the label; otherwise the latest duplicate (freshest row) wins.
+    When `first_seen_from` names a date field, each row also gets
+    "First Seen": the earliest such date in its group. Keeping the freshest
+    row would otherwise throw away when the entity was first recorded.
     """
     best: Dict[Any, Dict[str, Any]] = {}
     counts: Dict[Any, int] = {}
     labels: Dict[Any, str] = {}
+    first: Dict[Any, str] = {}
     order: List[Any] = []
     for row in rows or []:
         key = tuple(entity_key(row.get(f)) for f in key_fields)
         if not any(key):
             continue
+        if first_seen_from:
+            stamp = str(row.get(first_seen_from) or "").strip()
+            if stamp and (key not in first or stamp < first[key]):
+                first[key] = stamp
         if count_key:
             counts[key] = counts.get(key, 0) + _int_cell(row.get(count_key))
             surface = str(row.get(key_fields[0], "")).strip()
@@ -156,6 +242,8 @@ def dedupe_entity_rows(rows: List[Dict[str, Any]], key_fields: List[str],
             row[count_key] = counts[k]
             if labels.get(k):
                 row[key_fields[0]] = labels[k]
+        if first_seen_from:
+            row = dict(row, **{"First Seen": first.get(k, "")})
         out.append(row)
     return out
 

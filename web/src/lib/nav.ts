@@ -6,13 +6,14 @@ export interface Section {
   path: string;
   label: string;
   short: string;
-  icon: "home" | "newspaper" | "shield" | "layers" | "cpu" | "search";
+  icon: "home" | "newspaper" | "shield" | "layers" | "cpu" | "clock" | "search";
 }
 
 export const SECTIONS: Section[] = [
   { path: "", label: "Today", short: "Today", icon: "home" },
   { path: "brief/", label: "Brief", short: "Brief", icon: "newspaper" },
   { path: "register/", label: "Register", short: "Register", icon: "shield" },
+  { path: "changes/", label: "This week", short: "Week", icon: "clock" },
   { path: "news/", label: "News", short: "News", icon: "layers" },
   { path: "findings/", label: "Findings", short: "Findings", icon: "search" },
   { path: "how-it-works/", label: "How it works", short: "How", icon: "cpu" },

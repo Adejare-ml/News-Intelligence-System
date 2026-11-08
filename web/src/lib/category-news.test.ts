@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { generatedDate, publishedDate, regionLists } from "./category-news.ts";
 
 test("regionLists always gives both regions, in order", () => {
-  const lists = regionLists({ sections: { sports: { global: [{ title: "t", url: "u", source: "s", published: "" }] } } }, "sports");
+  const lists = regionLists({ sections: { technology: { global: [{ title: "t", url: "u", source: "s", published: "" }] } } }, "technology");
   assert.deepEqual(lists.map((l) => [l.id, l.items.length]), [["nigeria", 0], ["global", 1]]);
   assert.deepEqual(regionLists({}, "politics").map((l) => l.items.length), [0, 0]);
 });

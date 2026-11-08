@@ -6,6 +6,8 @@ Zero LLM calls, zero extra reads; pure composition, tested on fixtures.
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional
 
+from backend.app.pipeline.cells import clean_cell
+
 
 def _day(value: Any) -> str:
     return str(value if value is not None else "").strip()[:10]
@@ -74,15 +76,6 @@ def weekly_totals(report_rows: List[Dict[str, Any]],
     return totals
 
 
-_MISSING = {"", "none", "null", "n/a", "na", "nan", "-", "—"}
-
-
-def _text(value: Any) -> str:
-    """A cell as text, with missing values ("None", null, N/A) as ""."""
-    text = str(value if value is not None else "").strip()
-    return "" if text.lower() in _MISSING else text
-
-
 def week_procurement(procurement_rows: List[Dict[str, Any]],
                      window: Dict[str, str],
                      cap: int = 8) -> List[Dict[str, str]]:
@@ -91,10 +84,10 @@ def week_procurement(procurement_rows: List[Dict[str, Any]],
         day = _day((row or {}).get("Date"))
         if window["start"] <= day <= window["end"]:
             out.append({
-                "agency": _text(row.get("Agency")),
-                "contractor": _text(row.get("Contractor")),
-                "amount": _text(row.get("Amount")),
-                "project": _text(row.get("Project")),
+                "agency": clean_cell(row.get("Agency")),
+                "contractor": clean_cell(row.get("Contractor")),
+                "amount": clean_cell(row.get("Amount")),
+                "project": clean_cell(row.get("Project")),
                 "date": day,
             })
     out.sort(key=lambda r: r["date"], reverse=True)
