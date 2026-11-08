@@ -96,9 +96,13 @@ test("followers get a Following block after their sections; everyone else shares
 
   const body = await (await call(e)).json();
   assert.equal(body.sent, 5);
-  assert.equal(body.groups.length, 3, "no follow news / Dangote only / Dangote + MTN");
-  assert.ok(body.groups.every((g: { mix: string }) => !/dangote|mtn/.test(g.mix)), "the reported mix hashes follows instead of naming them");
-  assert.deepEqual(body.following, { followed: 5, fetched: 4, with_news: ["dangote-cement", "mtn-nigeria"], listed_only: 0 });
+  // The report reaches the public Actions log. A hash of a group's follows
+  // can be reversed by trying every subset of with_news, so groups carrying
+  // follows (here Dangote only, and Dangote + MTN) are counted, never listed.
+  assert.equal(body.groups.length, 1, "only the group with no follow news is listed");
+  assert.equal(body.groups[0].readers, 2);
+  assert.doesNotMatch(JSON.stringify(body.groups), /follow/);
+  assert.deepEqual(body.following, { followed: 5, fetched: 4, with_news: ["dangote-cement", "mtn-nigeria"], listed_only: 0, groups: 2, readers: 3 });
   assert.equal(fetched.filter((p) => p.startsWith("/brief/email/follow/") && p !== "/brief/email/follow/index.json").length, 4, "each fragment fetched once; unknown companies never");
 
   const got = byRecipient();
@@ -154,7 +158,7 @@ test("pure helpers: ranking, grouping and the block", () => {
   const groups = groupRecipients([r(T("a")), r(T("b")), r(T("c")), r(T("d"))], follows, following);
   assert.equal(groups.length, 2);
   assert.deepEqual(groups.map((g) => g.readers.length), [2, 2]);
-  assert.match(groups[0].key, /^business\|-\|follow:[0-9a-f]{8}$/);
+  assert.equal(groups[0].key, "business|-|follow", "no hash of the follows in the key");
   assert.deepEqual(groups[0].follow, { news: ["a-co"], more: [] });
   assert.equal(groups[1].key, groupRecipients([r(T("d"))])[0].key, "readers without follow news keep the plain key");
 

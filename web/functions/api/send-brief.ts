@@ -158,13 +158,6 @@ export interface Following {
   fetched: number;
 }
 
-/** A short, stable label for a list of follows (FNV-1a), so reports never name what a reader follows. */
-function shortHash(text: string): string {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < text.length; i++) h = Math.imul(h ^ text.charCodeAt(i), 0x01000193);
-  return (h >>> 0).toString(16).padStart(8, "0");
-}
-
 /** Weekly Business readers get different content (the week in business), so they group apart. */
 export function groupKey(prefs: Prefs): string {
   const weeklyBusiness = prefs.frequency === "weekly" && prefs.categories.includes("business");
@@ -174,7 +167,9 @@ export function groupKey(prefs: Prefs): string {
 /**
  * Readers with the same choices share one email. Follows split a group only
  * when they put something in the email (news today, or a name past the
- * fetch cap); the full list keys the group, the reported key carries a hash.
+ * fetch cap). The full list keys the group internally only: its key says
+ * "|follow" and nothing about which companies, since even a hash of them
+ * could be reversed by trying every subset of the day's followed companies.
  */
 export function groupRecipients(readers: Subscriber[], follows = new Map<string, string[]>(), following?: Following): Group[] {
   const groups = new Map<string, Group>();
@@ -185,7 +180,7 @@ export function groupRecipients(readers: Subscriber[], follows = new Map<string,
     const sig = news.length || more.length ? `${news.join(",")}|${more.join(",")}` : "";
     const id = sig ? `${groupKey(r)}|${sig}` : groupKey(r);
     const g = groups.get(id) ?? {
-      key: sig ? `${groupKey(r)}|follow:${shortHash(sig)}` : groupKey(r),
+      key: sig ? `${groupKey(r)}|follow` : groupKey(r),
       prefs: { categories: r.categories, region: r.region, frequency: r.frequency },
       readers: [],
       ...(sig ? { follow: { news, more } } : {}),
@@ -428,6 +423,11 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   const plan = groups.map((g) => ({ group: g, mail: buildFor(g.prefs, t, businessFresh, followFor(g)) }));
   const sending = plan.filter((p) => p.mail);
   const recipients = sending.reduce((n, p) => n + p.group.readers.length, 0);
+  // scripts/send_brief.sh prints this report to the public Actions log and
+  // job summary. A group with follows can be one reader, so those groups are
+  // only counted: listing their mix would tie that reader's topics, region
+  // and frequency to the companies in with_news.
+  const followGroups = plan.filter((p) => p.group.follow);
   const summary = {
     day,
     edition,
@@ -440,11 +440,15 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
       fetched: following.fetched,
       with_news: [...following.fragments.keys()],
       listed_only: following.unfetched.size,
+      groups: followGroups.length,
+      readers: followGroups.reduce((n, p) => n + p.group.readers.length, 0),
       ...(followError ? { error: followError } : {}),
     },
     recipients,
     skipped_readers: due.length - recipients,
-    groups: plan.map((p) => ({ mix: p.group.key, readers: p.group.readers.length, subject: p.mail?.subject ?? null })),
+    groups: plan
+      .filter((p) => !p.group.follow)
+      .map((p) => ({ mix: p.group.key, readers: p.group.readers.length, subject: p.mail?.subject ?? null })),
   };
 
   if (dryRun) return json({ dry_run: true, subject: t.business!.subject, ...summary });
