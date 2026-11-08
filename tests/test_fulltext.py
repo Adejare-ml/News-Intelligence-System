@@ -379,3 +379,93 @@ def test_the_pipeline_deepens_relevant_stories_and_stores_the_basis():
     assert '"Quote": story_detail.quote(cleaned_text, analysis["key_facts"]) if basis == "article" else ""' in src
     # The old pre-relevance Claude lookup is gone: it ran for every story.
     assert "claude_llm.fetch_article" not in src
+
+
+
+# --- what a fetched text counts as -------------------------------------------------------------
+
+STORY_TITLE = "Ada Obi takes 60% stake in Lagos Refinery Services"
+STORY_ANALYSIS = {
+    "relevant": True, "engine": "claude", "category": "Company", "risk_score": 40,
+    "summary": "Ada Obi acquired a 60% stake in Lagos Refinery Services.",
+    "significant_control": [{"name": "Ada Obi", "organization": "Lagos Refinery Services Ltd",
+                             "nature_of_control": "Shareholding", "percentage": "60%"}],
+}
+
+
+def _sentences(n):
+    """About n characters of article-like text that does not repeat the headline."""
+    sentence = ("The refinery operator said the transaction was completed on Friday after "
+                "regulators approved the transfer of shares. ")
+    return (sentence * (n // len(sentence) + 1))[:n].strip()
+
+
+def run_one_story(tmp_path, monkeypatch, url):
+    """Run the pipeline over one relevant story naming a person as an owner;
+    return the stored article and PSC rows. The caller stubs the fetch."""
+    import run_pipeline as rp
+    from backend.app.db.excel_db import SheetsDatabase
+    from backend.app.services.ingestion import NewsIngestionService
+    from backend.app.services.llm import LLMService
+
+    d = SheetsDatabase()
+    d.use_local = True
+    d.local_path = str(tmp_path / "run.xlsx")
+    d._cache = {}
+    d._init_db()
+    monkeypatch.setattr(rp, "db", d)
+    monkeypatch.setattr(rp, "DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(NewsIngestionService, "collect_all", classmethod(lambda cls: [
+        {"title": STORY_TITLE, "source": "Punch", "url": url,
+         "raw_text": "Ada Obi has taken a 60% stake in Lagos Refinery Services."}]))
+    monkeypatch.setattr(LLMService, "analyze_article",
+                        classmethod(lambda cls, t, x: dict(STORY_ANALYSIS)))
+    monkeypatch.setattr(rp, "compile_daily_report", lambda *a, **k: None)
+    monkeypatch.setattr(rp, "export_static_json_database", lambda: None)
+    monkeypatch.setattr("time.sleep", lambda s: None)
+    rp.run_pipeline()
+    return d.get_articles(), d.get_significant_control()
+
+
+def run_google_news_story(tmp_path, monkeypatch, claude_text):
+    """One news.google.com story whose outlet copy Claude finds as `claude_text`."""
+    monkeypatch.setattr(fulltext.claude_llm, "configured", lambda: True)
+    monkeypatch.setattr(fulltext.claude_llm, "fetch_article",
+                        lambda title, outlet, published="": {"url": "https://punchng.com/story",
+                                                             "text": claude_text})
+    return run_one_story(tmp_path, monkeypatch, "https://news.google.com/rss/articles/xyz")
+
+
+def assert_withheld_on_a_headline(articles, psc):
+    from backend.app.services import register_quality
+    assert [a["Basis"] for a in articles] == ["headline"]
+    assert not articles[0]["Quote"]
+    assert [r["Basis"] for r in psc] == ["headline"]
+    row = register_quality.gate(psc)[0]
+    assert row["Confidence"] == "Headline only"
+    assert "unverified_person" in row["Quality"]
+    assert register_quality.is_public(row) is False
+    assert register_quality.public_rows(register_quality.gate(psc)) == []
+
+
+def test_a_short_claude_lookup_is_headline_grade_and_its_person_claim_is_withheld(tmp_path, monkeypatch):
+    # Claude's lookup passes on 400 characters; a teaser that size is not the
+    # article, so the person it names rests on a headline and is held back.
+    assert_withheld_on_a_headline(*run_google_news_story(tmp_path, monkeypatch, _sentences(600)))
+
+
+def test_the_basis_is_measured_on_the_text_whatever_fetched_it(tmp_path, monkeypatch):
+    # The stored basis follows the text the extraction read, not the fetch
+    # path that returned it.
+    monkeypatch.setattr(fulltext.FullTextFetcher, "fetch", lambda self, *a, **k: _sentences(600))
+    assert_withheld_on_a_headline(*run_one_story(tmp_path, monkeypatch, "https://punchng.com/story"))
+
+
+def test_a_full_claude_lookup_is_the_article(tmp_path, monkeypatch):
+    from backend.app.services import register_quality
+    articles, psc = run_google_news_story(tmp_path, monkeypatch, _sentences(1600))
+    assert [a["Basis"] for a in articles] == ["article"]
+    assert [r["Basis"] for r in psc] == ["article"]
+    row = register_quality.gate(psc)[0]
+    assert row["Confidence"] == "Full article"
+    assert register_quality.is_public(row) is True

@@ -422,11 +422,13 @@ def run_pipeline(seed: bool = False):
         detail_cells = story_detail.article_cells(analysis, cleaned_text, title, source)
         analysis["key_facts"] = story_detail.clean_facts(detail_cells["Key Facts"])
         analysis["why_it_matters"] = detail_cells["Why It Matters"]
-        # Basis is what the extraction read. deepen() reports a fetched
-        # article; a feed item can carry the whole article itself (some APIs
-        # send the body), and the publish gate counts that as the article too.
-        if basis != "article":
-            basis = register_quality.basis_for_detail(detail_cells.get("Detail"))
+        # Basis is what the extraction read, measured on that text (Detail)
+        # rather than on where it came from: a fetched article, or a feed
+        # item that carries the whole body (some APIs send it), is 'article';
+        # a short Claude lookup of a Google News story, which deepen() also
+        # re-extracts from, is a teaser and stays 'headline' for the publish
+        # gate. The Quote below follows the same basis.
+        basis = register_quality.basis_for_detail(detail_cells.get("Detail"))
         db_article = {
             "ID": "", # Auto incremented inside ExcelDatabase
             "Time": item.get("published_at") or datetime.now().isoformat(),
