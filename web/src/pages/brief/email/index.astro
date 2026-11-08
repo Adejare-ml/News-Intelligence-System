@@ -16,6 +16,7 @@ import { lagosDate } from "../../../lib/edition.ts";
 import { groupHoldings, describeHolding } from "../../../lib/psc.ts";
 import { readDigest } from "../../../lib/digest.ts";
 import { morningUrl } from "../../../lib/morning.ts";
+import { briefLink, briefSource, emailEdition } from "../../../lib/brief-link.ts";
 import DigestEmail from "../../../components/email/DigestEmail.astro";
 import { ink, muted, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } from "../../../components/email/theme.ts";
 
@@ -27,7 +28,7 @@ const brief = parseBrief(data.briefMarkdown());
 const latest = listEditions()[0];
 const when = latest?.date ?? new Date();
 // Read by /api/send-brief: which edition this is, and the email's subject.
-const editionId = digest?.edition ?? latest?.slug ?? "";
+const editionId = emailEdition();
 const subject = digest?.subject ?? `AURA Morning Brief · ${lagosDate(when)}`;
 const site = (Astro.site?.toString() ?? "https://auranews.pages.dev/").replace(/\/$/, "") + import.meta.env.BASE_URL.replace(/\/$/, "");
 const featured = groupHoldings(data.psc()).filter((h) => h.stake !== null).sort((a, b) => b.reports.length - a.reports.length)[0];
@@ -130,7 +131,7 @@ const summary = [
               ))}
               {s.more > 0 && (
                 <tr><td style={`padding:4px 32px 8px 50px;font:13px/1.5 ${sans};color:${muted};`}>
-                  <a href={`${site}/brief/`} style={`color:${royal};text-decoration:none;`}>+ {s.more} more in the full brief →</a>
+                  <a href={briefLink(site, "brief/", briefSource(editionId))} style={`color:${royal};text-decoration:none;`}>+ {s.more} more in the full brief →</a>
                 </td></tr>
               )}
             </>
@@ -151,7 +152,7 @@ const summary = [
             </td></tr>
           )}
           <tr><td style="padding:12px 32px 28px;">
-            <a href={`${site}/brief/`} style={`display:inline-block;background:${royal};color:#ffffff;padding:12px 22px;border-radius:999px;font:600 15px ${sans};text-decoration:none;`}>Read the full brief</a>
+            <a href={briefLink(site, "brief/", briefSource(editionId))} style={`display:inline-block;background:${royal};color:#ffffff;padding:12px 22px;border-radius:999px;font:600 15px ${sans};text-decoration:none;`}>Read the full brief</a>
           </td></tr>
           <Fragment set:html={SECTIONS_SLOT} />
           <tr><td style={`padding:18px 32px 28px;font:12px/1.6 ${sans};color:${muted};border-top:1px solid ${rule};`}>

@@ -20,6 +20,7 @@ import type { EmailDigest } from "../../lib/digest.ts";
 import Card from "./DigestCard.astro";
 import { plural } from "../../lib/digest.ts";
 import { viewInBrowserUrl } from "../../lib/morning.ts";
+import { briefLink, briefSource } from "../../lib/brief-link.ts";
 import { ink, muted, soft, gold, royal, alertRed, rule, sans, serif, SECTIONS_SLOT } from "./theme.ts";
 
 interface Props {
@@ -28,6 +29,9 @@ interface Props {
   web?: boolean;
 }
 const { digest: d, site, web = false } = Astro.props;
+// Tags links to the site with this edition, for click counts (no reader ids).
+// The web copy of the email gets no tag, so only email clicks are counted per edition.
+const src = web ? "" : briefSource(d.edition);
 
 
 const s = d.stats;
@@ -113,7 +117,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
               {a.text} <a href={a.url} style={link}>{a.outlet} ↗</a>
             </p>
           ))}
-          {d.also_more > 0 && <p style={`margin:0;${small}`}><a href={`${site}/news/`} style={link}>+{d.also_more} more on the site ↗</a></p>}
+          {d.also_more > 0 && <p style={`margin:0;${small}`}><a href={briefLink(site, "news/", src)} style={link}>+{d.also_more} more on the site ↗</a></p>}
         </td></tr>
       </>)}
 
@@ -127,7 +131,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
               <a href={p.url} style={link}>Read the report ↗</a>
             </p>
           ))}
-          {(d.psc_more ?? 0) > 0 && <p style={`margin:0;${small}`}><a href={`${site}/register/`} style={link}>+{d.psc_more} more in the ownership register ↗</a></p>}
+          {(d.psc_more ?? 0) > 0 && <p style={`margin:0;${small}`}><a href={briefLink(site, "register/", src)} style={link}>+{d.psc_more} more in the ownership register ↗</a></p>}
         </td></tr>
       </>)}
 
@@ -147,7 +151,7 @@ const link = `color:${royal};text-decoration:none;font-weight:600;`;
         {web ? <a href={`${site}/dispute/?ref=${encodeURIComponent(`Morning Brief ${d.edition}`)}`} style={link}>Request a correction</a> : "Reply to this email"}.
         <br /><br />
         {d.engines.extraction.length > 0 && <>Engine: extraction {d.engines.extraction.join(", ")}{d.engines.digest ? ` · overview ${d.engines.digest}` : " · overview from stored text"}<br /></>}
-        <a href={`${site}/brief/`} style={link}>Full brief, archive and registers ↗</a>
+        <a href={briefLink(site, "brief/", src)} style={link}>Full brief, archive and registers ↗</a>
         <br />
         {web ? <a href={`${site}/brief/#subscribe`} style={link}>Sign up for the Morning Brief ↗</a> : <>
           You get this because you subscribed at {site.replace(/^https?:\/\//, "")}.{" "}

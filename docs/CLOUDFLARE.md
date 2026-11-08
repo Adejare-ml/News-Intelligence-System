@@ -91,6 +91,8 @@ deploys it with the site:
 | `POST /api/send-brief` | Sends the morning email, then does the sign-up housekeeping (owner secret; see below) |
 | `GET /api/stats` | Subscriber counts by status, category, region and frequency, weekly sign-ups, confirmation rate and median hours to confirm, and recent sends. Needs `Authorization: Bearer <BRIEF_SEND_SECRET>`. Counts only, never addresses. |
 | `POST /api/dispute` | Right of reply: stores a dispute about a record in D1 (`disputes`) and emails `OWNER_EMAIL` when sending is on. Five per sender a day. |
+| `POST/GET /api/hit` | Cookieless reader counts: one per page view (sent by the site's hit script) or email click (`GET ?to=<this site's URL>&s=<source>`, then a 302). Stores only a daily count per path and source; skips bots and Do Not Track / Global Privacy Control. Needs migration `0006_hits.sql`. |
+| `GET /api/stats/traffic` | Last 30 days: page views per day, top pages, and clicks per Morning Brief edition beside its send count. Owner secret, like `/api/stats`. |
 | `GET /img?u=` | Serves publisher images from the site's origin, cached for a week. Only URLs in the build's `/img-allow.json` are fetched. |
 
 ### Morning Brief sign-ups (one-time setup)
@@ -216,6 +218,7 @@ npx wrangler d1 execute aura --remote --file=web/migrations/0001_subscribers.sql
 npx wrangler d1 execute aura --remote --file=web/migrations/0002_sends.sql
 npx wrangler d1 execute aura --remote --file=web/migrations/0003_preferences.sql
 npx wrangler d1 execute aura --remote --file=web/migrations/0004_mail_throttle.sql
+npx wrangler d1 execute aura --remote --file=web/migrations/0006_hits.sql
 ```
 
 **Apply 0003 before deploying the version with news categories**: the new

@@ -8,6 +8,7 @@
  */
 import { HEADLINE_CATEGORIES, categoryLabel } from "../../../../../functions/_lib/categories.ts";
 import { categoryNews, type Headline } from "../../../../lib/data.ts";
+import { briefLink, briefSource, emailEdition } from "../../../../lib/brief-link.ts";
 import { ink, muted, gold, royal, rule, sans, serif } from "../../../../components/email/theme.ts";
 
 export function getStaticPaths() {
@@ -52,7 +53,7 @@ const marker = (text: string) => `<!--${text}-->`;
   </>
 ))}
 <tr><td style={`padding:6px 32px 10px;font:13px/1.5 ${sans};`}>
-  <a href={`${site}/news/${category}/`} style={`color:${royal};text-decoration:none;font-weight:600;`}>More {categoryLabel(category).toLowerCase()} on AURA ↗</a>
+  <a href={briefLink(site, `news/${category}/`, briefSource(emailEdition()))} style={`color:${royal};text-decoration:none;font-weight:600;`}>More {categoryLabel(category).toLowerCase()} on AURA ↗</a>
 </td></tr>
 <Fragment set:html={marker("/aura:section")} />
 </table>
