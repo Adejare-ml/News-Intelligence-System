@@ -1,6 +1,8 @@
 import sys
 from unittest.mock import MagicMock
 
+import pytest
+
 # 1. Mock spacy if not installed (e.g., Python 3.13 on host)
 try:
     import spacy
@@ -42,3 +44,13 @@ except ImportError:
                 return np.zeros(384).tolist()
 
     sys.modules['sentence_transformers'] = MockSentenceTransformersModule()
+
+
+@pytest.fixture(autouse=True)
+def private_review_queue(tmp_path, monkeypatch):
+    """export_static_json_database writes the publish gate's review queue,
+    the owner's private list of withheld rows (git-ignored). Every test gets
+    its own, so a test that runs the export never overwrites the real one."""
+    import run_pipeline
+
+    monkeypatch.setattr(run_pipeline, "REVIEW_QUEUE_PATH", str(tmp_path / "review_queue.json"))

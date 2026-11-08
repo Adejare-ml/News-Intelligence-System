@@ -24,9 +24,18 @@ const when = latest?.date ?? new Date();
     heading="What moved in Nigerian business today"
     kicker={`${editionName(when)} · ${lagosDate(when)}`}
   />
+  <p class="wrap morning-link">
+    <a class="btn btn-ghost" href={href("brief/morning/")}>Morning Brief emails, as sent</a>
+  </p>
   <EditionList editions={editions} current={latest?.slug} />
   <Subscribe />
 </Base>
 <script>
   import "../../scripts/subscribe.ts";
 </script>
+
+<style>
+  .morning-link {
+    margin-top: clamp(32px, 6vw, 64px);
+  }
+</style>

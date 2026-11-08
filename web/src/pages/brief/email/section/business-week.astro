@@ -6,6 +6,7 @@
  */
 import { weeklyWrap } from "../../../../lib/data.ts";
 import { wrapBlocks } from "../../../../lib/weekly-email.ts";
+import { briefLink, briefSource, emailEdition } from "../../../../lib/brief-link.ts";
 import { ink, muted, gold, royal, rule, sans } from "../../../../components/email/theme.ts";
 
 const wrap = weeklyWrap();
@@ -34,7 +35,7 @@ const marker = (text: string) => `<!--${text}-->`;
       </>
     ))}
     <tr><td style={`padding:8px 32px 10px;font:13px/1.5 ${sans};`}>
-      <a href={`${site}/brief/`} style={`color:${royal};text-decoration:none;font-weight:600;`}>The daily briefs and registers on AURA ↗</a>
+      <a href={briefLink(site, "brief/", briefSource(emailEdition()))} style={`color:${royal};text-decoration:none;font-weight:600;`}>The daily briefs and registers on AURA ↗</a>
     </td></tr>
   </>
 )}

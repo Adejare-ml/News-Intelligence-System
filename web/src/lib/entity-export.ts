@@ -13,8 +13,7 @@ export function entitySummary(e: Entity): string {
   const isPerson = e.kind === "person";
   if (!e.holdings.length) return `Mentioned in ${e.mentions ?? e.articles.length} reports tracked by AURA.`;
   if (!isPerson) return `${e.holdings.length} reported ${e.holdings.length === 1 ? "holder" : "holders"} with significant control.`;
-  const more = e.holdings.length - 1;
-  return `${e.name} ${describeHolding(e.holdings[0])}${more ? `, and is reported in ${more} more ${more === 1 ? "company" : "companies"}` : ""}.`;
+  return `${e.name} ${describeHolding(e.holdings[0])}.`;
 }
 
 /** "2026-10-03" -> "3 Oct 2026", the date style the page uses. */

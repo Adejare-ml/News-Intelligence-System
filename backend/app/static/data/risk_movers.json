@@ -4,28 +4,19 @@
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "recent_avg": 45.0,
-      "previous_avg": 21.2,
-      "delta": 23.8,
+      "previous_avg": 18.3,
+      "delta": 26.7,
       "recent_mentions": 2,
-      "previous_mentions": 4
+      "previous_mentions": 3
     },
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 12.5,
+      "recent_avg": 13.3,
       "previous_avg": 28.3,
-      "delta": -15.8,
-      "recent_mentions": 2,
-      "previous_mentions": 9
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "recent_avg": 21.7,
-      "previous_avg": 36.7,
       "delta": -15.0,
       "recent_mentions": 3,
-      "previous_mentions": 3
+      "previous_mentions": 9
     },
     {
       "key": "economic and financial crimes commission",
@@ -37,21 +28,30 @@
       "previous_mentions": 17
     },
     {
-      "key": "opay",
-      "label": "OPay",
-      "recent_avg": 40.0,
-      "previous_avg": 30.0,
-      "delta": 10.0,
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "recent_avg": 21.7,
+      "previous_avg": 32.5,
+      "delta": -10.8,
       "recent_mentions": 3,
       "previous_mentions": 2
     },
     {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "recent_avg": 13.3,
-      "previous_avg": 20.0,
-      "delta": -6.7,
-      "recent_mentions": 3,
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 35.0,
+      "previous_avg": 30.0,
+      "delta": 5.0,
+      "recent_mentions": 5,
+      "previous_mentions": 10
+    },
+    {
+      "key": "ikeja electric",
+      "label": "Ikeja Electric",
+      "recent_avg": 15.0,
+      "previous_avg": 10.0,
+      "delta": 5.0,
+      "recent_mentions": 2,
       "previous_mentions": 1
     },
     {
@@ -61,25 +61,34 @@
       "previous_avg": 20.7,
       "delta": -3.7,
       "recent_mentions": 5,
-      "previous_mentions": 22
+      "previous_mentions": 21
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 31.2,
-      "previous_avg": 28.3,
-      "delta": 2.9,
+      "previous_avg": 29.4,
+      "delta": 1.8,
       "recent_mentions": 4,
-      "previous_mentions": 9
+      "previous_mentions": 8
     },
     {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 30.0,
-      "previous_avg": 31.4,
-      "delta": -1.4,
-      "recent_mentions": 4,
-      "previous_mentions": 11
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "recent_avg": 15.0,
+      "previous_avg": 15.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
+    },
+    {
+      "key": "joint admissions and matriculation board",
+      "label": "Joint Admissions and Matriculation Board",
+      "recent_avg": 50.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     },
     {
       "key": "economic and financial crimes commission efcc",
@@ -109,17 +118,8 @@
       "previous_mentions": 0
     },
     {
-      "key": "oyo state government",
-      "label": "Oyo State Government",
-      "recent_avg": 17.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "abia state government",
-      "label": "Abia State Government",
+      "key": "transmission company of",
+      "label": "Transmission Company of Nigeria",
       "recent_avg": 15.0,
       "previous_avg": null,
       "delta": null,
@@ -146,5 +146,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-07 02:53:26"
+  "generated": "2026-11-08 02:26:08"
 }

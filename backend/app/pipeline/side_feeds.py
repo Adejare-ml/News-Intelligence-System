@@ -82,10 +82,17 @@ def export_tech_news(data_dir: str) -> None:
 
 
 def export_category_news(data_dir: str) -> None:
-    """Sports, technology, politics and entertainment headlines, Nigeria
+    """Technology and politics headlines, Nigeria
     and Global, for the site's category pages and the Morning Brief."""
+    from backend.app.services import suppression
     from backend.app.services.categories import build_category_news, has_headlines
     news = build_category_news()
+    # Headlines come from outside feeds, not the sheet, so they skip the
+    # export's scrub: unpublished names are dropped here instead.
+    hidden = suppression.load(data_dir)
+    for regions in (news.get("sections") or {}).values():
+        for region, items in regions.items():
+            regions[region] = suppression.without(items, hidden)
     if has_headlines(news):
         _write_json(data_dir, "category_news.json", news)
     else:

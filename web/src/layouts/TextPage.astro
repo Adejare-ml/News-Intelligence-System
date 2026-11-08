@@ -1,0 +1,77 @@
+---
+/**
+ * A plain reading page (privacy, terms, corrections, disputes): a heading,
+ * a short lede, and prose in the slot at a comfortable line length.
+ */
+import Base from "./Base.astro";
+
+interface Props {
+  title: string;
+  eyebrow: string;
+  heading: string;
+  lede: string;
+  description: string;
+  /** Last reviewed, shown under the heading (YYYY-MM-DD). */
+  updated?: string;
+}
+const { title, eyebrow, heading, lede, description, updated } = Astro.props;
+const updatedLabel = updated
+  ? new Date(`${updated}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })
+  : "";
+---
+<Base title={`${title} · AURA`} description={description}>
+  <section class="wrap text-page">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1 class="h1">{heading}</h1>
+    <p class="lede">{lede}</p>
+    {updated && <p class="meta">Last updated <time datetime={updated}>{updatedLabel}</time></p>}
+    <div class="prose">
+      <slot />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .text-page {
+    padding-block: clamp(32px, 6vw, 72px);
+    display: grid;
+    gap: 16px;
+    max-width: calc(var(--measure) + 2 * var(--gutter));
+  }
+  .eyebrow {
+    color: var(--gold);
+    margin: 0;
+  }
+  .h1 {
+    margin: 0;
+    text-wrap: balance;
+  }
+  .lede,
+  .meta {
+    margin: 0;
+  }
+  .prose {
+    margin-top: 16px;
+    color: var(--text-soft);
+  }
+  .prose :global(h2) {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.45rem;
+    color: var(--text);
+    margin: 36px 0 10px;
+  }
+  .prose :global(p),
+  .prose :global(li) {
+    line-height: 1.65;
+  }
+  .prose :global(ul) {
+    padding-left: 1.2em;
+  }
+  .prose :global(a) {
+    color: var(--royal-ink);
+    font-weight: 560;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

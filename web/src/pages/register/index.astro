@@ -1,15 +1,17 @@
 ---
 import Base from "../../layouts/Base.astro";
 import HoldingCard from "../../components/HoldingCard.astro";
-import { correctionUrl } from "../../lib/corrections.ts";
+import { disputeUrl } from "../../lib/corrections.ts";
 import BandScale from "../../components/BandScale.astro";
 import ProcurementLedger from "../../components/ProcurementLedger.astro";
 import Icon from "../../components/Icon.astro";
+import Term from "../../components/Term.astro";
+import Explainer from "../../components/Explainer.astro";
 import { href } from "../../lib/url.ts";
 import * as data from "../../lib/data.ts";
 import { groupHoldings, summarise, counted, registerOrder } from "../../lib/psc.ts";
 import { within, REGISTER_RECENT_DAYS } from "../../lib/freshness.ts";
-import { toContract, sortContracts, type ProcurementRow } from "../../lib/procurement.ts";
+import { toContract, sortContracts } from "../../lib/procurement.ts";
 
 // Strongest claims first. Holdings not reported for a while move to
 // "Earlier reports", so old records never crowd out current reporting.
@@ -20,21 +22,14 @@ const earlier = all.filter((h) => !within(h.lastReported, REGISTER_RECENT_DAYS, 
 const s = summarise(all);
 const shown = summarise(holdings);
 const gate = data.registerQuality();
-const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0);
-const companiesPerPerson = new Map<string, Set<string>>();
-for (const h of all) {
-  const k = h.person.toLowerCase();
-  if (!companiesPerPerson.has(k)) companiesPerPerson.set(k, new Set());
-  companiesPerPerson.get(k)!.add(h.company.toLowerCase());
-}
-const contracts = sortContracts(data.readJson<ProcurementRow[]>("procurement.json", []).map(toContract));
+const withheld = (gate.unsourced ?? 0) + (gate.implausible ?? 0) + (gate.needs_review ?? 0);
+const contracts = sortContracts(data.procurement().map(toContract));
 
 const filters = [
   { id: "all", label: "All records", count: holdings.length },
   { id: "stake", label: "Stake disclosed", count: shown.withStake },
   { id: "pattern", label: "Worth checking", count: shown.withPattern },
   { id: "band", label: "5–25% band", count: shown.nigeriaBand },
-  { id: "multi", label: "Several companies", count: holdings.filter((h) => (companiesPerPerson.get(h.person.toLowerCase())?.size ?? 0) > 1).length },
 ];
 ---
 <Base
@@ -43,7 +38,7 @@ const filters = [
   description="Persons with significant control over Nigerian companies, as reported in the news: stakes, disclosure bands and patterns worth checking."
 >
   <section class="wrap intro">
-    <p class="eyebrow">Persons with significant control</p>
+    <p class="eyebrow">Persons with significant control (<Term term="PSC" />)</p>
     <h1 class="h1" data-split>The ownership register</h1>
     <p class="lede">
       Who the press reports as owning or controlling Nigerian companies, grouped from the reports
@@ -55,7 +50,7 @@ const filters = [
       <div><dt>People and firms</dt><dd class="num">{s.holders}</dd></div>
       <div><dt>Companies</dt><dd class="num">{s.companies}</dd></div>
       <div><dt>With a reported stake</dt><dd class="num">{s.withStake}</dd></div>
-      <div><dt>Carry a CAC filing reference</dt><dd class="num">{s.filingRefRate === null ? "—" : `${Math.round(s.filingRefRate * 100)}%`}</dd></div>
+      <div><dt>Carry a <Term term="CAC" /> filing reference</dt><dd class="num">{s.filingRefRate === null ? "—" : `${Math.round(s.filingRefRate * 100)}%`}</dd></div>
     </dl>
     <p class="note">{[
       "The numbers count ownership claims only, not board roles.",
@@ -63,12 +58,13 @@ const filters = [
       withheld > 0 && `${withheld} of ${gate.checked} extracted ${gate.checked === 1 ? "record" : "records"} did not pass the validation gate (${[
         gate.unsourced && `${gate.unsourced} with no source link`,
         gate.implausible && `${gate.implausible} judged implausible`,
+        gate.needs_review && `${gate.needs_review} naming a person on a headline alone, awaiting review`,
       ].filter(Boolean).join(", ")}) and ${withheld === 1 ? "is" : "are"} not published.`,
     ].filter(Boolean).join(" ")}</p>
     <p class="note">
       Every card is a claim reported in the news, not a CAC filing, and is published only with a link to
       the article behind it. Named in a card and think it is wrong?
-      <a class="link" href={correctionUrl("register")} rel="noopener noreferrer" target="_blank">Ask for a correction or removal</a>.
+      <a class="link" href={disputeUrl("register")}>Ask for a correction or removal</a>.
     </p>
     <p class="note">
       Download the published register as <a class="link" href={href("downloads/register.csv")} download>CSV</a>,
@@ -79,6 +75,8 @@ const filters = [
       <p class="demo">Some records are illustrative seed data, not extracted reporting.</p>
     )}
   </section>
+
+  <Explainer />
 
   <section class="wrap band-wrap">
     <BandScale holdings={counted(holdings)} />
@@ -104,7 +102,7 @@ const filters = [
 
     <div class="grid" data-grid>
       {holdings.map((h, i) => (
-        <HoldingCard holding={h} index={i} multiCompany={(companiesPerPerson.get(h.person.toLowerCase())?.size ?? 0) > 1} />
+        <HoldingCard holding={h} index={i} />
       ))}
     </div>
     {holdings.length === 0 && earlier.length === 0 && (

@@ -1,0 +1,14 @@
+---
+/**
+ * How strong a holding's evidence is: official filing, full article or
+ * headline only. Hover or focus shows what the tier means.
+ */
+import { CONFIDENCE_NOTES, type Confidence } from "../lib/psc.ts";
+
+interface Props {
+  confidence: Confidence;
+}
+const { confidence } = Astro.props;
+const tone = confidence === "Official filing" ? "chip-gold" : confidence === "Full article" ? "chip-royal" : "";
+---
+<span class:list={["chip", tone]} title={CONFIDENCE_NOTES[confidence]}>{confidence}</span>
