@@ -191,12 +191,16 @@ use up the provider's daily quota:
   requests from here today." Together these keep a script from flooding one
   inbox or spending the provider's daily quota before the Morning Brief.
 
-**Housekeeping** runs after each day's real send: pending sign-ups not
-mailed for 30 days are deleted, and pending sign-ups 48-72 hours old that
-have had only their first mail get one reminder (at most 20 a run, within
-the limits above; on Gmail, only from what the brief left of the 450 a
-day). The send's JSON result reports the counts under
-`housekeeping`.
+**Housekeeping** runs after each day's real send, and also on a real call
+that finds nobody to send to (`nothing_to_send` or `edition_already_sent`:
+launch day with no confirmed readers, or Tuesday to Sunday when every reader
+is weekly): pending sign-ups not mailed for 30 days are deleted, pending
+sign-ups 48-72 hours old that have had only their first mail get one
+reminder (at most 20 a run, within the limits above; on Gmail, only from
+what the brief left of the 450 a day), and earlier days' counts in
+`throttle` (IP addresses, hashed follow-form addresses) are deleted. A
+retry the same day reminds nobody twice. The send's JSON result reports
+the counts under `housekeeping`.
 
 **1. Pick a provider.**
 

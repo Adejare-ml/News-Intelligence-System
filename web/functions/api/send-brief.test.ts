@@ -172,6 +172,41 @@ test("reminders are capped at 20 a run, and a dry run does no housekeeping", asy
   assert.equal((sentBodies[1] as unknown[]).length, 20);
 });
 
+test("housekeeping still runs on a day with nobody to send to", async () => {
+  // Launch day with no confirmed readers, or Tuesday to Sunday when every
+  // reader is weekly: reminders, the stale clean-up and the IP prune must not wait.
+  const e = env(fakeDb(subs.filter((s) => s.status !== "confirmed")));
+  addPending(e.DB, "remind@x.co", "1".repeat(48), 60);
+  addPending(e.DB, "old@x.co", "4".repeat(48), 24 * 40);
+  const today = lagosDay(new Date());
+  const hit = e.DB.raw.prepare("INSERT INTO throttle (key, day, count) VALUES (?, ?, 1)");
+  hit.run("ip:203.0.113.9", "2026-01-01");
+  hit.run("ip:198.51.100.1", today);
+  const body = await (await call(e)).json();
+  assert.equal(body.skipped, "nothing_to_send");
+  assert.deepEqual(body.housekeeping, { pending_deleted: 1, reminders_sent: 1, reminders_failed: 0 });
+  assert.deepEqual((sentBodies[0] as { to: string[] }[]).map((m) => m.to[0]), ["remind@x.co"]);
+  assert.equal(e.DB.raw.prepare("SELECT 1 FROM subscribers WHERE email = 'old@x.co'").get(), undefined);
+  const keys = (e.DB.raw.prepare("SELECT key FROM throttle").all() as { key: string }[]).map((r) => r.key);
+  assert.deepEqual(keys, ["ip:198.51.100.1"], "yesterday's IP counts are gone");
+
+  // A retry the same day reminds nobody twice.
+  const again = await (await call(e)).json();
+  assert.deepEqual(again.housekeeping, { pending_deleted: 0, reminders_sent: 0, reminders_failed: 0 });
+  assert.equal(sentBodies.length, 1);
+});
+
+test("housekeeping runs when the edition was already sent, and a dry run still does none", async () => {
+  const e = env();
+  e.DB.sends.set("2026-10-21", { edition: "20261022-074512", finished_at: "2026-10-21T07:20:00Z", sent: 2, failed: 0 });
+  addPending(e.DB, "old@x.co", "4".repeat(48), 24 * 40);
+  await call(e, "?dry_run=1");
+  assert.ok(e.DB.raw.prepare("SELECT 1 FROM subscribers WHERE email = 'old@x.co'").get(), "a dry run deletes nothing");
+  const body = await (await call(e)).json();
+  assert.equal(body.skipped, "edition_already_sent");
+  assert.equal(body.housekeeping.pending_deleted, 1);
+});
+
 test("a housekeeping failure is reported without failing the send", async () => {
   const e = env();
   e.DB.raw.exec("DROP TABLE throttle");

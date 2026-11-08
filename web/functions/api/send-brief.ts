@@ -30,9 +30,10 @@
  * already sent (the pipeline produced nothing new) is not sent again; readers
  * who also chose headline categories still get those.
  *
- * After a real send, housekeeping: pending sign-ups not mailed for 30 days
- * are deleted, and pending sign-ups 48-72 hours old that have had only their
- * first mail get one reminder (at most 20 a run, within the sign-up limits).
+ * After a real send, and on a real call with nobody to send to, housekeeping:
+ * pending sign-ups not mailed for 30 days are deleted, pending sign-ups 48-72
+ * hours old that have had only their first mail get one reminder (at most 20
+ * a run, within the sign-up limits), and earlier days' throttle counts go.
  */
 import { authorised, escapeHtml, json, lagosDay, type Ctx, type Env } from "../_lib/http.ts";
 import {
@@ -452,8 +453,17 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   };
 
   if (dryRun) return json({ dry_run: true, subject: t.business!.subject, ...summary });
+  // A housekeeping failure (say, migration 0004 not applied yet) is
+  // reported, never turned into a failed send.
+  const tidy = (briefRecipients: number) =>
+    housekeep(env, site, now, briefRecipients).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
   if (!recipients) {
-    return json(sentOn ? { skipped: "edition_already_sent", edition, sent_on: sentOn } : { skipped: "nothing_to_send", ...summary });
+    // Nobody due (launch day, or a weekday when every reader is weekly):
+    // the clean-up still runs, or reminders miss their 48-72 hour window and
+    // IP counts outlive their day. Safe on a retry: a reminder moves the
+    // reader's mail_day on, and the deletes are idempotent.
+    const housekeeping = await tidy(0);
+    return json(sentOn ? { skipped: "edition_already_sent", edition, sent_on: sentOn, housekeeping } : { skipped: "nothing_to_send", ...summary, housekeeping });
   }
 
   await log.start(day, edition, now.toISOString());
@@ -468,9 +478,8 @@ export async function onRequestPost({ request, env }: Ctx): Promise<Response> {
   );
   const { sent, failed } = result;
   await log.finish(day, sent, failed, new Date().toISOString());
-  // The brief has gone and is logged; a housekeeping failure (say, migration
-  // 0004 not applied yet) is reported, not turned into a failed send.
-  const housekeeping = await housekeep(env, site, now, recipients).catch((e: unknown) => ({ error: e instanceof Error ? e.message : String(e) }));
+  // The brief has gone and is logged; now the clean-up.
+  const housekeeping = await tidy(recipients);
 
   const body = { ...summary, sent, failed, housekeeping, ...(result.error ? { error: result.error } : {}) };
   return json(body, failed && !sent ? 502 : 200);
