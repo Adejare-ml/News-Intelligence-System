@@ -3017,10 +3017,10 @@
   },
   {
     "Name": "Bola Tinubu",
-    "Position": "President",
+    "Position": "President of Nigeria",
     "Organization": "Federal Government of Nigeria",
     "Event": "other",
-    "Date": "2026-11-08",
+    "Date": "2026-11-09",
     "First Seen": "2026-09-15"
   },
   {
@@ -3161,10 +3161,10 @@
   },
   {
     "Name": "Muhammadu Buhari",
-    "Position": "Former President",
+    "Position": "Former President of Nigeria",
     "Organization": "Federal Government of Nigeria",
     "Event": "other",
-    "Date": "2026-09-20",
+    "Date": "2026-11-09",
     "First Seen": "2026-09-20"
   },
   {
@@ -4286,5 +4286,13 @@
     "Event": "other",
     "Date": "2026-11-08",
     "First Seen": "2026-11-08"
+  },
+  {
+    "Name": "Olatunji-Bello",
+    "Position": "Pro-Chancellor",
+    "Organization": "Redeemer's University",
+    "Event": "appointment",
+    "Date": "2026-11-09",
+    "First Seen": "2026-11-09"
   }
 ]

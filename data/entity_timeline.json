@@ -551,6 +551,55 @@
       ]
     },
     {
+      "key": "bola tinubu",
+      "label": "Bola Tinubu",
+      "total_mentions": 18,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 3,
+          "avg_risk": 23.3,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 8,
+          "avg_risk": 18.8,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "total_mentions": 18,
@@ -596,49 +645,6 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 55
-        }
-      ]
-    },
-    {
-      "key": "bola tinubu",
-      "label": "Bola Tinubu",
-      "total_mentions": 17,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 42.5,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 3,
-          "avg_risk": 23.3,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 8,
-          "avg_risk": 18.8,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
         }
       ]
     },
@@ -1714,6 +1720,31 @@
       ]
     },
     {
+      "key": "opay",
+      "label": "OPay",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 38.8,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 8.0,
+          "max_risk": 8
+        }
+      ]
+    },
+    {
       "key": "standards organisation of",
       "label": "Standards Organisation of Nigeria",
       "total_mentions": 6,
@@ -2128,25 +2159,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "opay",
-      "label": "OPay",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 38.8,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
         }
       ]
     },
@@ -4603,6 +4615,25 @@
       ]
     },
     {
+      "key": "ibom deep seaport",
+      "label": "Ibom Deep Seaport",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "johnvents",
       "label": "Johnvents",
       "total_mentions": 2,
@@ -4810,6 +4841,25 @@
           "mentions": 2,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "muhammadu buhari",
+      "label": "Muhammadu Buhari",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -6309,33 +6359,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "ahmed idris",
-      "label": "Ahmed Idris",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "ahmed kuru",
-      "label": "Ahmed Kuru",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
     }
   ],
-  "generated": "2026-11-09 02:39:24"
+  "generated": "2026-11-09 17:32:00"
 }

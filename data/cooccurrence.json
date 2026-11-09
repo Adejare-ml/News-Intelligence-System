@@ -166,6 +166,10 @@
       "label": "House of Representatives Committee on Host Communities"
     },
     {
+      "key": "ibom deep seaport",
+      "label": "Ibom Deep Seaport"
+    },
+    {
       "key": "ikeja electric",
       "label": "Ikeja Electric"
     },
@@ -611,6 +615,11 @@
     },
     {
       "a": "bola tinubu",
+      "b": "ibom deep seaport",
+      "weight": 2
+    },
+    {
+      "a": "bola tinubu",
       "b": "national petroleum company",
       "weight": 2
     },
@@ -865,5 +874,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-09 02:39:24"
+  "generated": "2026-11-09 17:32:00"
 }

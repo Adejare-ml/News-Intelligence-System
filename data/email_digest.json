@@ -1,19 +1,19 @@
 {
-  "edition": "20261109-11379-preview",
-  "preview": true,
-  "built_at": "2026-11-09 02:39:24",
+  "edition": "20261109-11391",
+  "preview": false,
+  "built_at": "2026-11-09 17:32:00",
   "date": "Monday 9 November 2026",
   "subject": "AURA · Mon 9 Nov · Nigeria Sets New Stablecoin Licensing Rules and Capital Requirements",
-  "preheader": "Also: MTN Nigeria appoints five new Directors · 7 stories, 0 risk alerts",
+  "preheader": "Also: MTN Nigeria appoints five new Directors · 10 stories, 0 risk alerts",
   "since": "Sun 8 Nov, 15:27 Lagos",
-  "through_id": 11379,
+  "through_id": 11391,
   "stats": {
-    "reports": 7,
-    "stories": 7,
+    "reports": 10,
+    "stories": 10,
     "outlets": 6,
     "risk_alerts": 0,
     "public_money": 0,
-    "appointments": 1,
+    "appointments": 2,
     "ownership": 0
   },
   "nothing_in": [
@@ -23,19 +23,29 @@
   ],
   "overview": [
     {
-      "text": "The Central Bank of Nigeria issued a new framework on November 5 for non-security virtual assets, creating separate licensing classes for naira-referenced and foreign-currency stablecoins.",
+      "text": "The Central Bank of Nigeria issued a framework on November 5 creating separate licensing classes for naira-referenced and foreign-currency stablecoins, with reserve, capital and local-presence obligations.",
       "card": 1,
       "outlet": "newsBTC"
     },
     {
-      "text": "MTN Nigeria has appointed five new directors to its board.",
+      "text": "President Tinubu issued a fresh approval for the Ibom Deep Seaport, prompting questions about the 2020 clearance and the financing, Premium Times reported.",
       "card": 2,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "MTN Nigeria appointed five new directors, according to Nigerian NewsDirect.",
+      "card": 3,
       "outlet": "Nigerian NewsDirect"
     },
     {
-      "text": "The Nigerian Air Force has redeployed 67 senior officers in a major shakeup, according to a Premium Times Nigeria report.",
-      "card": 3,
+      "text": "The Nigerian Air Force redeployed 67 senior officers, Premium Times reported.",
+      "card": 4,
       "outlet": "Premium Times"
+    },
+    {
+      "text": "Revenue growth across nine NGX-listed technology and telecoms companies was mixed; Omatek Ventures rose 650% from a low base, while Legend Internet's revenue fell 7.4%.",
+      "card": 5,
+      "outlet": "Nairametrics"
     }
   ],
   "insights": [],
@@ -73,6 +83,36 @@
     },
     {
       "n": 2,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "Tinubu’s fresh Ibom Deep Seaport approval raises questions over Buhari’s 2020 clearance, financing",
+      "byline": "Premium Times · Mon 9 Nov, 17:56 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "President Bola Tinubu has issued a fresh approval for the Ibom Deep Seaport, prompting questions about the 2020 clearance granted under former President Muhammadu Buhari and the project's financing.",
+      "key_facts": [
+        "The fresh approval raises questions over Buhari's 2020 clearance and financing."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Ibom Deep Seaport",
+        "Bola Tinubu",
+        "Muhammadu Buhari"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTDk0aFFmWGloRE5SaGhRbXhFTlFHRDdSc2hEbzNsSFR3Y0lpWU1GeHpvZGtleUV6VHBjQjN3UmJFcG0wUWZ0VUw4dUxDVk5kMUQwZkdLSEhoU2IxTl9MMm9vVUw3T181cHpUQ3NZMnFvS2NMc2QwRTRscUtxOTRac2Y2Tm1zR3A2UF9PVzd4djBjdWF2YUxzenoxTVVkSEpldXQwYUx6aERxSDFfNGE1TWlIYVJ5VUZWLW45ejhUenM5YXpfeUc4dGk3SUtXTUhPeENDVmNCZldmM0NvakExdGxrVUpYX21IYmVZaWVYV1hwbVg5d2lCVGhaeXI?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
       "theme": "People",
       "event_type": "Appointment",
       "flags": [],
@@ -100,7 +140,7 @@
       "also_more": 0
     },
     {
-      "n": 3,
+      "n": 4,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
@@ -128,7 +168,7 @@
       "also_more": 0
     },
     {
-      "n": 4,
+      "n": 5,
       "theme": "Business",
       "event_type": "Earnings",
       "flags": [],
@@ -163,51 +203,43 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Ododo orders regulation of mining activities in Kogi community, backs Artisanal miners",
-      "byline": "The Guardian · Sun 8 Nov, 20:16 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "Kogi State Governor Ahmed Usman Ododo has ordered the regulation of mining activities in a Kogi community and expressed support for artisanal miners. The directive positions state oversight of small-scale mining operations in the area. No further details on the scope or timeline were provided in the article.",
-      "key_facts": [
-        "Governor Ododo ordered regulation of mining activities in a Kogi community."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Kogi State Government",
-        "Ahmed Usman Ododo"
-      ],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOGF2d0E1b2pOaEstMThUQnMtZElGM3dwNkF6Q1lrZUhJWU1Eem8yVEFLU3NrNFRyZlNHNDhvLXN5Q1dFQktZbWZobEE2NUt1MkRLV3dPOU10Ym4tNHg2d0VfS0xYT3oySWN2NWVJMTIyQTd2TVRhZTJwMUNQNlB6MndpcXNBejNuN1drYTMwVExJTEYySFhMSWR2dUZFNVk4X0xQRVFMNWF2TVBzTGwwag?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
       "theme": "Regulation & enforcement",
+      "text": "Kogi State Governor Ahmed Usman Ododo has ordered the regulation of mining activities in a Kogi community and expressed support for artisanal miners.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOGF2d0E1b2pOaEstMThUQnMtZElGM3dwNkF6Q1lrZUhJWU1Eem8yVEFLU3NrNFRyZlNHNDhvLXN5Q1dFQktZbWZobEE2NUt1MkRLV3dPOU10Ym4tNHg2d0VfS0xYT3oySWN2NWVJMTIyQTd2TVRhZTJwMUNQNlB6MndpcXNBejNuN1drYTMwVExJTEYySFhMSWR2dUZFNVk4X0xQRVFMNWF2TVBzTGwwag?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Regulation & enforcement",
       "text": "Taraba State Governor Agbu Kefas has signed an Executive Order aimed at curbing the abuse of the naira in the state.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmJ1eEREVmcwWnJRdjZFN0h6Zy1BYl9tOVVxMTFFTUpONGNRWDFDSUtvczBvbWluODlKYXhmN1VSZ3BhclljUDFUUXk3SURrQUgwMXBCWmdWcGh6X0RUTnVnZEFXck1zV0V1Nmc3dEFWV3RUN215MmJMRzJlYnhZMWtKZXJRa3dqNmI0?oc=5"
     },
     {
-      "n": 7,
+      "n": 8,
+      "theme": "People",
+      "text": "Former Lagos State University Vice-Chancellor Olatunji-Bello has been appointed the first female Pro-Chancellor of Redeemer's University.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZDAyNXhKb1gxYlBjSHptV2k3Vi0wSVJDbk1WLWl5U2pfaTR0NGlkLVVkUWM5a0ZtaUxObW9MWl9Ma1JVQnVjcFlub0FYZEt2bU9YeXEtaUR5MVE3RWV5YkhTLTFDdEVheHNHVzh1N2I5Z1FZWFNvN2N1YXZFZXNGb0gxZ3JETkk4Y29vWnJnRmN6eGNQdWNCUzRSY0ZVVUYxbGN1dGF6UjZ2MXB0TFR3dzRnNlpveXdaMk9LcUhYcGg3XzQ2YVNkOWRjQWludHlQTjNUZjBqTHpHQQ?oc=5"
+    },
+    {
+      "n": 9,
       "theme": "Other",
       "text": "President Bola Tinubu has moved to accelerate rail projects in northern Nigeria, according to a headline published by Voice of Nigeria.",
       "outlet": "Voice of Nigeria",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzSFBTeU5jQVJMVkpxR2g4LU1lSTNtZG9jbFRDUjNLd1NiUlM0bENQOWJUVHpsbmJxMzNGRHJFYWV0M3A4RWdWbWRwLXlyZ2VkQWJ1S2UtbllCWWFsdHVZV19seDVjbWs2NlRjM3ZYd0JRaHJhLW5PM3pyMA?oc=5"
+    },
+    {
+      "n": 10,
+      "theme": "Other",
+      "text": "OPay has opened a new office in Kano, according to a Premium Times Nigeria report.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORE5UREk0N094MnMzNXFmclNDZFVCdElvZlRKVURwd09JUnF6a2FtVE1jYWFWQV83MzRDQndiNUdDelNWMWNRVGgzMFJyUy14N3lxVDJ5cUUxQ1k4enlsVE82Y2U5Z0ZaTlgxSG9yOUdBdGdFRnZoRkFOS1RTZm82RzNvOTh4UXhUX21DaGRGQTRXMHNqSldmOEVwSU52b3c0dHg0bWRsdzZ2UjU3d2tLd0d1cHRHX1RNdG54SXJNcGtfY20zcFpYUEhLWGhWUQ?oc=5"
     }
   ],
   "also_more": 0,
@@ -218,17 +250,21 @@
     {
       "term": "NGX",
       "meaning": "Nigerian Exchange, the Lagos stock market"
+    },
+    {
+      "term": "AURA risk rating",
+      "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
     }
   ],
   "engines": {
     "extraction": [
       "claude"
     ],
-    "digest": ""
+    "digest": "claude"
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 0
+    "insights_dropped": 2
   },
   "site": "https://auranews.pages.dev"
 }

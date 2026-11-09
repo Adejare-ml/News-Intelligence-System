@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "9d67de6b1eb2",
+      "label": "Ibom Deep Seaport",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -229,12 +235,6 @@
       "risk": "Low"
     },
     {
-      "id": "9d67de6b1eb2",
-      "label": "Ibom Deep Seaport",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "3e0f0da289fe",
       "label": "Nigerian Institute of Transport Technology (NTI)",
       "type": "agency",
@@ -244,6 +244,24 @@
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "514496e0e74c",
+      "label": "Muhammadu Buhari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "89ae040ca567",
+      "label": "Olatunji-Bello",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "c7ed2a62ac14",
+      "label": "Redeemer's University",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -403,24 +421,6 @@
       "risk": "Low"
     },
     {
-      "id": "cd8b1a412778",
-      "label": "Enang",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8036ca4008f7",
-      "label": "Nigerian Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "10e91a46eee3",
-      "label": "Godswill Akpabio",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "539d727618e7",
       "label": "International Finance Corporation",
       "type": "psc",
@@ -486,7 +486,19 @@
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
       "to": "0c2be969618b",
-      "label": "Appointed as President"
+      "label": "Appointed as President of Nigeria"
+    },
+    {
+      "id": "c70e5e786ee6",
+      "from": "514496e0e74c",
+      "to": "0c2be969618b",
+      "label": "Appointed as Former President of Nigeria"
+    },
+    {
+      "id": "a1be7055605b",
+      "from": "89ae040ca567",
+      "to": "c7ed2a62ac14",
+      "label": "Appointed as Pro-Chancellor"
     },
     {
       "id": "28fae7776f5e",
@@ -601,18 +613,6 @@
       "from": "3fd6d917dd79",
       "to": "7ac5d6bb2121",
       "label": "Appointed as Governor"
-    },
-    {
-      "id": "49ac3dca37d6",
-      "from": "cd8b1a412778",
-      "to": "8036ca4008f7",
-      "label": "Appointed as Ambassador"
-    },
-    {
-      "id": "304dec55c3df",
-      "from": "10e91a46eee3",
-      "to": "8036ca4008f7",
-      "label": "Appointed as Politician"
     },
     {
       "id": "990674302105",
