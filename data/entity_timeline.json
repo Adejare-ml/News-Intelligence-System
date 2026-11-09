@@ -180,7 +180,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 67,
+      "total_mentions": 68,
       "points": [
         {
           "week": "2026-09-07",
@@ -235,6 +235,12 @@
           "mentions": 5,
           "avg_risk": 30.0,
           "max_risk": 45
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -3053,6 +3059,31 @@
       ]
     },
     {
+      "key": "access",
+      "label": "Access Holdings Plc",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
       "key": "asset management corporation of",
       "label": "Asset Management Corporation of Nigeria",
       "total_mentions": 3,
@@ -4032,25 +4063,6 @@
         },
         {
           "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "access",
-      "label": "Access Holdings Plc",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-02",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -6361,5 +6373,5 @@
       ]
     }
   ],
-  "generated": "2026-11-09 17:32:00"
+  "generated": "2026-11-09 23:02:45"
 }

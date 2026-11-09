@@ -22,10 +22,10 @@
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 13.3,
-      "previous_avg": 26.9,
-      "delta": -13.6,
+      "previous_avg": 24.3,
+      "delta": -11.0,
       "recent_mentions": 3,
-      "previous_mentions": 8
+      "previous_mentions": 7
     },
     {
       "key": "house of representatives",
@@ -73,15 +73,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 30.0,
-      "previous_avg": 27.9,
-      "delta": 2.1,
-      "recent_mentions": 5,
-      "previous_mentions": 7
-    },
-    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "recent_avg": 20.0,
@@ -98,6 +89,15 @@
       "delta": -1.1,
       "recent_mentions": 5,
       "previous_mentions": 16
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 28.0,
+      "previous_avg": 28.8,
+      "delta": -0.8,
+      "recent_mentions": 5,
+      "previous_mentions": 8
     },
     {
       "key": "joint admissions and matriculation board",
@@ -145,6 +145,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "access",
+      "label": "Access Holdings Plc",
+      "recent_avg": 17.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "mtn communications",
       "label": "MTN Nigeria Communications Plc",
       "recent_avg": 15.0,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "recent_avg": 12.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-09 17:32:00"
+  "generated": "2026-11-09 23:02:45"
 }
