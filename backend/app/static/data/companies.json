@@ -5250,7 +5250,7 @@
   {
     "Company": "MTN Nigeria",
     "Mention Count": 16,
-    "Last Seen": "2026-11-09 02:38",
+    "Last Seen": "2026-11-09 2:38",
     "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": ""
@@ -9841,9 +9841,9 @@
   },
   {
     "Company": "OPay",
-    "Mention Count": 5,
-    "Last Seen": "2026-11-06 3:30",
-    "Industry": "Fintech / Payments",
+    "Mention Count": 6,
+    "Last Seen": "2026-11-09 17:30",
+    "Industry": "Fintech",
     "Risk Level": "Medium",
     "First Seen": "2026-10-31 02:10"
   },
@@ -10150,5 +10150,13 @@
     "Industry": "General",
     "Risk Level": "Low",
     "First Seen": "2026-11-08 18:22"
+  },
+  {
+    "Company": "Redeemer's University",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-09 17:30",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-09 17:30"
   }
 ]
