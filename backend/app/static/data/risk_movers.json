@@ -52,7 +52,7 @@
       "previous_avg": 30.0,
       "delta": 5.0,
       "recent_mentions": 5,
-      "previous_mentions": 10
+      "previous_mentions": 9
     },
     {
       "key": "ikeja electric",
@@ -66,11 +66,11 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 31.2,
-      "previous_avg": 29.4,
-      "delta": 1.8,
-      "recent_mentions": 4,
-      "previous_mentions": 8
+      "recent_avg": 30.0,
+      "previous_avg": 27.9,
+      "delta": 2.1,
+      "recent_mentions": 5,
+      "previous_mentions": 7
     },
     {
       "key": "federal government of",
@@ -87,7 +87,7 @@
       "recent_avg": 15.0,
       "previous_avg": 15.0,
       "delta": 0.0,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 2
     },
     {
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-08 21:12:48"
+  "generated": "2026-11-09 02:39:24"
 }
