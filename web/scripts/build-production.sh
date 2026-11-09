@@ -10,10 +10,16 @@
 # pipeline's data still refreshes production four times a day, so this
 # script takes web/ from <git-ref> and the data, evals and tests from the
 # checkout it runs in. Output: ./out-production (ready for cloudflare-pages).
+#
+# out-production/version.txt holds the full SHA of the code built, served at
+# /version.txt: the promotion smoke test polls it to tell the new build from
+# the one before. <git-ref> may be a tag (the scheduler passes `production`),
+# so it is resolved to the commit it names.
 set -euo pipefail
 
 REF="${1:?usage: build-production.sh <git-ref>}"
 ROOT="$(pwd)"
+SHA="$(git rev-parse --verify "${REF}^{commit}")"
 WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
 
@@ -38,4 +44,5 @@ mv out/cloudflare "$ROOT/out-production"
 # The list of unpublished names is never served, whatever code is promoted:
 # a version older than the unpublish filter copies the whole data folder.
 rm -f "$ROOT/out-production/data/suppressed.json"
-echo "build-production: $(git -C "$ROOT" rev-parse --short "$REF") code + current data -> out-production"
+printf '%s\n' "$SHA" > "$ROOT/out-production/version.txt"
+echo "build-production: ${SHA:0:7} code + current data -> out-production"
