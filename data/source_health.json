@@ -1,44 +1,44 @@
 {
-  "generated": "2026-11-08 21:11:04",
+  "generated": "2026-11-09 02:38:10",
   "sources": {
     "Google News RSS": {
-      "last_count": 664,
+      "last_count": 662,
       "empty_runs": 0,
-      "last_ok": "2026-11-08 21:11:04"
+      "last_ok": "2026-11-09 02:38:10"
     },
     "NewsAPI": {
       "last_count": 96,
       "empty_runs": 0,
-      "last_ok": "2026-11-08 21:11:04"
+      "last_ok": "2026-11-09 02:38:10"
     },
     "Guardian": {
       "last_count": 0,
-      "empty_runs": 4,
+      "empty_runs": 5,
       "last_ok": ""
     },
     "Newsdata.io": {
       "last_count": 10,
       "empty_runs": 0,
-      "last_ok": "2026-11-08 21:11:04"
+      "last_ok": "2026-11-09 02:38:10"
     },
     "Outlet: BusinessDay": {
       "last_count": 5,
       "empty_runs": 0,
-      "last_ok": "2026-11-08 21:11:04"
+      "last_ok": "2026-11-09 02:38:10"
     },
     "Outlet: Premium Times": {
       "last_count": 15,
       "empty_runs": 0,
-      "last_ok": "2026-11-08 21:11:04"
+      "last_ok": "2026-11-09 02:38:10"
     },
     "Outlet: Nairametrics": {
       "last_count": 20,
       "empty_runs": 0,
-      "last_ok": "2026-11-08 21:11:04"
+      "last_ok": "2026-11-09 02:38:10"
     },
     "Outlet: TheCable": {
       "last_count": 0,
-      "empty_runs": 3,
+      "empty_runs": 4,
       "last_ok": ""
     }
   }

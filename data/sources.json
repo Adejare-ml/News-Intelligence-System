@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 2959,
+      "total": 2960,
       "published": 1572,
-      "filtered": 1387,
+      "filtered": 1388,
       "accept_rate": 53,
       "avg_risk": 28.2,
       "engines": {
@@ -13,13 +13,13 @@
         "nvidia": 8,
         "claude": 20
       },
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-09"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2672,
+      "total": 2676,
       "published": 1025,
-      "filtered": 1647,
+      "filtered": 1651,
       "accept_rate": 38,
       "avg_risk": 30.4,
       "engines": {
@@ -28,7 +28,7 @@
         "nvidia": 4,
         "claude": 26
       },
-      "last_seen": "2026-11-08"
+      "last_seen": "2026-11-09"
     },
     {
       "source": "Punch Newspapers",
@@ -146,9 +146,9 @@
     },
     {
       "source": "dailypost",
-      "total": 207,
+      "total": 208,
       "published": 46,
-      "filtered": 161,
+      "filtered": 162,
       "accept_rate": 22,
       "avg_risk": 26.5,
       "engines": {
@@ -159,9 +159,9 @@
     },
     {
       "source": "vanguardngr",
-      "total": 201,
+      "total": 202,
       "published": 30,
-      "filtered": 171,
+      "filtered": 172,
       "accept_rate": 15,
       "avg_risk": 25.0,
       "engines": {
@@ -213,9 +213,9 @@
     },
     {
       "source": "legit",
-      "total": 141,
+      "total": 142,
       "published": 24,
-      "filtered": 117,
+      "filtered": 118,
       "accept_rate": 17,
       "avg_risk": 25.4,
       "engines": {
@@ -1897,6 +1897,18 @@
       "last_seen": "2026-09-22"
     },
     {
+      "source": "Nigerian NewsDirect",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 15.0,
+      "engines": {
+        "claude": 1
+      },
+      "last_seen": "2026-11-08"
+    },
+    {
       "source": "Nigerians in Diaspora Commission",
       "total": 1,
       "published": 0,
@@ -2249,6 +2261,18 @@
       "last_seen": "2026-09-24"
     },
     {
+      "source": "newsBTC",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 25.0,
+      "engines": {
+        "claude": 1
+      },
+      "last_seen": "2026-11-07"
+    },
+    {
       "source": "promptnewsonline",
       "total": 1,
       "published": 0,
@@ -2359,5 +2383,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-08 21:12:48"
+  "generated": "2026-11-09 02:39:24"
 }
