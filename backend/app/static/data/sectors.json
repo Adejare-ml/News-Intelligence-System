@@ -13,10 +13,10 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 50,
-      "mentions": 240,
+      "companies": 51,
+      "mentions": 241,
       "risk": {
-        "Medium": 17,
+        "Medium": 18,
         "Low": 28,
         "Critical": 1,
         "High": 4
@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 29,
-      "mentions": 78,
+      "mentions": 79,
       "risk": {
         "Low": 23,
         "Medium": 6
@@ -258,6 +258,15 @@
       }
     },
     {
+      "industry": "Real Estate",
+      "companies": 5,
+      "mentions": 5,
+      "risk": {
+        "Medium": 2,
+        "Low": 3
+      }
+    },
+    {
       "industry": "Cement",
       "companies": 2,
       "mentions": 4,
@@ -336,15 +345,6 @@
       "mentions": 3,
       "risk": {
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Real Estate",
-      "companies": 3,
-      "mentions": 3,
-      "risk": {
-        "Medium": 2,
-        "Low": 1
       }
     },
     {
@@ -990,5 +990,5 @@
       }
     }
   ],
-  "generated": "2026-11-09 17:32:00"
+  "generated": "2026-11-09 23:02:45"
 }

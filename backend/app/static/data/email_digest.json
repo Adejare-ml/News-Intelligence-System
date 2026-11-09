@@ -1,19 +1,19 @@
 {
-  "edition": "20261109-11391",
-  "preview": false,
-  "built_at": "2026-11-09 17:32:00",
-  "date": "Monday 9 November 2026",
-  "subject": "AURA · Mon 9 Nov · Nigeria Sets New Stablecoin Licensing Rules and Capital Requirements",
-  "preheader": "Also: MTN Nigeria appoints five new Directors · 10 stories, 0 risk alerts",
-  "since": "Sun 8 Nov, 15:27 Lagos",
-  "through_id": 11391,
+  "edition": "20261110-11428-preview",
+  "preview": true,
+  "built_at": "2026-11-09 23:02:45",
+  "date": "Tuesday 10 November 2026",
+  "subject": "AURA · Tue 10 Nov · Court sets aside forfeiture order against ex-Warri refinery MD",
+  "preheader": "Also: Access Holdings mulls exit from foreign subsidiary to meet CBN rule – Report · 4 stories, 0 risk alerts",
+  "since": "Mon 9 Nov, 18:32 Lagos",
+  "through_id": 11428,
   "stats": {
-    "reports": 10,
-    "stories": 10,
-    "outlets": 6,
+    "reports": 4,
+    "stories": 4,
+    "outlets": 1,
     "risk_alerts": 0,
     "public_money": 0,
-    "appointments": 2,
+    "appointments": 1,
     "ownership": 0
   },
   "nothing_in": [
@@ -23,60 +23,48 @@
   ],
   "overview": [
     {
-      "text": "The Central Bank of Nigeria issued a framework on November 5 creating separate licensing classes for naira-referenced and foreign-currency stablecoins, with reserve, capital and local-presence obligations.",
+      "text": "Access Holdings is reportedly considering an exit from a foreign subsidiary to comply with a Central Bank of Nigeria (CBN) rule.",
       "card": 1,
-      "outlet": "newsBTC"
+      "outlet": "Premium Times"
     },
     {
-      "text": "President Tinubu issued a fresh approval for the Ibom Deep Seaport, prompting questions about the 2020 clearance and the financing, Premium Times reported.",
+      "text": "A Nigerian court has set aside a forfeiture order against a former managing director of the Warri refinery.",
       "card": 2,
       "outlet": "Premium Times"
     },
     {
-      "text": "MTN Nigeria appointed five new directors, according to Nigerian NewsDirect.",
+      "text": "Lagos State has praised TEHC's Louisville mixed-use development in Eko Atlantic, according to a Premium Times Nigeria report.",
       "card": 3,
-      "outlet": "Nigerian NewsDirect"
-    },
-    {
-      "text": "The Nigerian Air Force redeployed 67 senior officers, Premium Times reported.",
-      "card": 4,
       "outlet": "Premium Times"
-    },
-    {
-      "text": "Revenue growth across nine NGX-listed technology and telecoms companies was mixed; Omatek Ventures rose 650% from a low base, while Legend Internet's revenue fell 7.4%.",
-      "card": 5,
-      "outlet": "Nairametrics"
     }
   ],
   "insights": [],
   "cards": [
     {
       "n": 1,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
+      "theme": "Ownership & capital",
+      "event_type": "Restructuring",
       "flags": [],
       "alert": false,
       "risk": "",
-      "headline": "Nigeria Sets New Stablecoin Licensing Rules and Capital Requirements",
-      "byline": "newsBTC · Sat 7 Nov, 23:00 Lagos",
-      "outlet": "newsBTC",
-      "what_happened": "The Central Bank of Nigeria issued a new framework on November 5 for non-security virtual assets, creating separate licensing classes for naira-referenced and foreign-currency stablecoins. The rules set reserve, capital and local-presence obligations and restrict certain algorithmic designs. The framework also applies to regulated activities directed at Nigerian residents, even where the provider is based abroad.",
-      "key_facts": [
-        "The Central Bank of Nigeria issued the framework in a November 5 circular and accompanying regulations.",
-        "The framework applies to regulated activities conducted in or from Nigeria or directed at Nigerian residents."
-      ],
+      "headline": "Access Holdings mulls exit from foreign subsidiary to meet CBN rule – Report",
+      "byline": "Premium Times · Mon 9 Nov, 18:36 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "Access Holdings is reportedly considering an exit from a foreign subsidiary to comply with a Central Bank of Nigeria (CBN) rule.",
+      "key_facts": [],
       "timeline": [],
-      "headline_only": false,
+      "headline_only": true,
       "analysis": [
-        "Why it matters: Stablecoin issuers and payment firms serving Nigerian customers face new capital, reserve and licensing requirements, including for foreign-based platforms. The framework also gives the central bank power to prescribe higher capital amounts."
+        "Why it matters: A bank holding company restructuring its foreign interests to meet a central bank rule can affect group ownership structure and regulatory compliance in Nigeria's banking sector."
       ],
       "ownership_caveat": "",
       "named": [
+        "Access Holdings",
         "Central Bank of Nigeria"
       ],
       "source": {
-        "outlet": "newsBTC",
-        "url": "https://www.newsbtc.com/regulation/nigeria-sets-new-stablecoin-licensing-rules-and-capital-requirements/"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeUNldjFxdVcycjBiTVRPa2c5TXNIUmRIVzdTVk5iNHA2MFBoVURwTHBTWDRhQkV0aHV0MEFXcmZyalVMYlJLN2xTRnEtajdOeFpIWWRuRE5vcHVyNW01TUREOU1SQ0RCczhZTnhiZ01EMXpkQmg0STZ6aElqSVlHb3k5MllqdzRScUo2XzJZXzlGVTBVWVNJT0oyNGVyX0cwSzhwOUJKVE9oUTBhME5NcWN2c1drckpJR2hUS3ZSN2xpdWtxNVZqb3FfQk1KdUxNUGM3azFYWQ?oc=5"
       },
       "also_reported": [],
       "also_more": 0
@@ -84,172 +72,106 @@
     {
       "n": 2,
       "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
+      "event_type": "Other",
+      "flags": [
+        "Allegation, not a finding"
+      ],
       "alert": false,
       "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "Tinubu’s fresh Ibom Deep Seaport approval raises questions over Buhari’s 2020 clearance, financing",
-      "byline": "Premium Times · Mon 9 Nov, 17:56 Lagos",
+      "headline": "Court sets aside forfeiture order against ex-Warri refinery MD",
+      "byline": "Premium Times · Mon 9 Nov, 19:19 Lagos",
       "outlet": "Premium Times",
-      "what_happened": "President Bola Tinubu has issued a fresh approval for the Ibom Deep Seaport, prompting questions about the 2020 clearance granted under former President Muhammadu Buhari and the project's financing.",
-      "key_facts": [
-        "The fresh approval raises questions over Buhari's 2020 clearance and financing."
-      ],
+      "what_happened": "A Nigerian court has set aside a forfeiture order against a former managing director of the Warri refinery. The article text provided is limited to the headline, so further details of the ruling are not available.",
+      "key_facts": [],
       "timeline": [],
       "headline_only": true,
-      "analysis": [],
+      "analysis": [
+        "Why it matters: Court reversals of asset forfeiture orders involving former refinery executives bear on how public-sector asset recovery and accountability cases are handled.",
+        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+      ],
       "ownership_caveat": "",
       "named": [
-        "Ibom Deep Seaport",
-        "Bola Tinubu",
-        "Muhammadu Buhari"
+        "Warri Refinery",
+        "Former Managing Director, Warri Refinery"
       ],
       "source": {
         "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTDk0aFFmWGloRE5SaGhRbXhFTlFHRDdSc2hEbzNsSFR3Y0lpWU1GeHpvZGtleUV6VHBjQjN3UmJFcG0wUWZ0VUw4dUxDVk5kMUQwZkdLSEhoU2IxTl9MMm9vVUw3T181cHpUQ3NZMnFvS2NMc2QwRTRscUtxOTRac2Y2Tm1zR3A2UF9PVzd4djBjdWF2YUxzenoxTVVkSEpldXQwYUx6aERxSDFfNGE1TWlIYVJ5VUZWLW45ejhUenM5YXpfeUc4dGk3SUtXTUhPeENDVmNCZldmM0NvakExdGxrVUpYX21IYmVZaWVYV1hwbVg5d2lCVGhaeXI?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPY3VSdnp1ajdNd2UxTVliYWFVR2lvYkphZHBTaDE1VXViMWtzTnVJNWdPVmtUUmFTaHdjQzAxb0FiRncxMjM0TkdOZU15dUJZTGl1X2JORmVrYkZLSF9vQllTWUhXdDlkOFJDZ0hWTzk5bkNPY0dJVzlHWXA2SHhPM1ZZNk9VX2s5R2dtT1NDSTI3QmduNGhoMlBZRlowRV9zSkk4TXdWQnBuTjdxLTBHLVZ1VDJsWkZMbFh3?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 3,
-      "theme": "People",
-      "event_type": "Appointment",
+      "theme": "Other",
+      "event_type": "Other",
       "flags": [],
       "alert": false,
       "risk": "",
-      "headline": "MTN Nigeria appoints five new Directors",
-      "byline": "Nigerian NewsDirect · Sun 8 Nov, 22:19 Lagos",
-      "outlet": "Nigerian NewsDirect",
-      "what_happened": "MTN Nigeria has appointed five new directors to its board. The announcement was reported by Nigerian NewsDirect, but the article text provides no names, roles or effective dates.",
-      "key_facts": [
-        "MTN Nigeria appointed five new directors, according to the headline."
-      ],
+      "headline": "Lagos hails TEHC’s Louisville mixed-use development in Eko Atlantic",
+      "byline": "Premium Times · Mon 9 Nov, 20:18 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "Lagos State has praised TEHC's Louisville mixed-use development in Eko Atlantic, according to a Premium Times Nigeria report.",
+      "key_facts": [],
       "timeline": [],
       "headline_only": true,
-      "analysis": [],
+      "analysis": [
+        "Why it matters: The article reports a government endorsement of a private real estate project in Lagos but gives no ownership, financial or regulatory details to assess."
+      ],
       "ownership_caveat": "",
       "named": [
-        "MTN Nigeria"
+        "TEHC",
+        "Eko Atlantic"
       ],
       "source": {
-        "outlet": "Nigerian NewsDirect",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9oQTBRS1hVU21Ga3RXSnZSeHFoNmNLaDBja1p2UWIyc1ZGOTJxZmpWR3FJZFIzdUFjajZRUlpHWWRQNjJHYTNwWkhPUFY0WVJobEszYUZpSkNzX3pmOFR1MU1QSHBGdER5Y3EtMk9HNnhUbmFLY09rd3BVbw?oc=5"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeDdhdHp5QlNtQjV4R3lURlluUlVUZE9EOFJ5Zy0zaU85T2hMY3ppRUZsdGNuNlh1bWMyUEd6QnQ2aWNOcjh6N3ZCanFTYlRfMDFKVTRaV2Z6N1gyeHpFLXVGeWk0aHhZUkkwem9SQXJWbkhHeFdNXzM2NFZGblNHeEdnczZ5X1pObkhHYlprRVJuMTFEeno4dm8wN25JMTFHMEZKYmtDOWpjLWZwem10NVFNWGQxd3ZvY1E?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 4,
-      "theme": "Other",
-      "event_type": "Other",
+      "theme": "People",
+      "event_type": "Appointment",
       "flags": [],
       "alert": false,
       "risk": "",
-      "headline": "Major shakeup in Nigerian Air Force, 67 senior officers redeployed",
-      "byline": "Premium Times · Sun 8 Nov, 22:06 Lagos",
+      "headline": "Niger gets new police commissioner as Elleman retires",
+      "byline": "Premium Times · Mon 9 Nov, 19:16 Lagos",
       "outlet": "Premium Times",
-      "what_happened": "The Nigerian Air Force has redeployed 67 senior officers in a major shakeup, according to a Premium Times Nigeria report. The article text provided is limited to the headline, so no further details on postings or reasons are available.",
+      "what_happened": "Niger State has received a new police commissioner following the retirement of Elleman. The change in police leadership was reported by Premium Times Nigeria. The article text provided contains only the headline and no further details.",
       "key_facts": [
-        "67 senior officers were redeployed in the Nigerian Air Force."
+        "Niger State gets a new police commissioner",
+        "Elleman has retired as police commissioner"
       ],
       "timeline": [],
       "headline_only": true,
-      "analysis": [],
+      "analysis": [
+        "Why it matters: A change in senior police command affects state security leadership, though the article provides no further detail on the appointee or the process."
+      ],
       "ownership_caveat": "",
       "named": [
-        "Nigerian Air Force"
+        "Niger State Police Command",
+        "Elleman"
       ],
       "source": {
         "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZGg0NXlRREVSZEpQR0Uzdl9iS2ZWTkxyQkM5TU5uZV9zOFZiOHFPMGNiVEh2QjVHVnptdm1yTXE3dTBQd1ZjbmVIejVldVFFWExwWG5haTFkdE5XYXRxTklCbmpnV3J5RVp0R2oxb213WEl6TVAwMC1FLXJpWHhIYnAzaU9uV1dGcTZ0RjE5OTlGNkltMjNrVVJyU09BSHRjdEN5cW1NVGpkQnY5VzlRd3o5c1JicGE0eTVta0lPaWQ?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Business",
-      "event_type": "Earnings",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Top NGX-listed tech companies ranked by revenue growth in 2026",
-      "byline": "Nairametrics · Sun 8 Nov, 16:05 Lagos",
-      "outlet": "Nairametrics",
-      "what_happened": "Revenue growth across nine NGX-listed technology and telecommunications companies was mixed in 2026, according to an analysis of their latest financial statements as of November 8, 2026. Omatek Ventures recorded the highest growth at 650% from a very low base, while Legend Internet posted the weakest performance with a 7.4% revenue decline. Several companies reported rising revenue alongside weaker profitability.",
-      "key_facts": [
-        "Omatek Ventures Plc revenue rose 650% to approximately N1.5 million for the nine months ended September 30, 2026.",
-        "Legend Internet revenue fell 7.4% to N1.10 billion for the 12 months ended July 31, 2026.",
-        "MTN Nigeria revenue grew 23.6% to N4.61 trillion for the nine months ended September 30, 2026.",
-        "eTranzact profit after tax fell 42.7% to N1.38 billion from N2.41 billion."
-      ],
-      "timeline": [],
-      "headline_only": false,
-      "analysis": [
-        "Why it matters: The analysis gives investors and regulators a comparative view of revenue and earnings performance across listed technology and telecoms firms, showing that revenue growth did not consistently translate into profit growth."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Omatek Ventures Plc",
-        "NCR Nigeria Plc",
-        "CWG Plc",
-        "Airtel Africa Plc",
-        "Legend Internet"
-      ],
-      "source": {
-        "outlet": "Nairametrics",
-        "url": "https://nairametrics.com/2026/11/08/top-ngx-listed-tech-companies-ranked-by-revenue-growth-in-2026/"
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTkhQaFpPMkd3bEFpSURzVXhGNkhydVRtTzZnb3R4cXVHNmxIajE3R3YtNHFkRmw4UC11U2s5UEhYVjQwaHRCOXhPRGxOSXJHOGh2T1gwMzVnd21YbWNhT1FxN2wzd3NqNnUwUGJwbHpIRmN4MDBhaEl2OU9UWlduU2lRYkowUF9KZ2lmNFNLN0tkUDhDby1ROEtCVGtZLU5hSC1GNFg1UVVxd2FKbnR5dG96cDI0VHBfQmpn?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     }
   ],
-  "also": [
-    {
-      "n": 6,
-      "theme": "Regulation & enforcement",
-      "text": "Kogi State Governor Ahmed Usman Ododo has ordered the regulation of mining activities in a Kogi community and expressed support for artisanal miners.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOGF2d0E1b2pOaEstMThUQnMtZElGM3dwNkF6Q1lrZUhJWU1Eem8yVEFLU3NrNFRyZlNHNDhvLXN5Q1dFQktZbWZobEE2NUt1MkRLV3dPOU10Ym4tNHg2d0VfS0xYT3oySWN2NWVJMTIyQTd2TVRhZTJwMUNQNlB6MndpcXNBejNuN1drYTMwVExJTEYySFhMSWR2dUZFNVk4X0xQRVFMNWF2TVBzTGwwag?oc=5"
-    },
-    {
-      "n": 7,
-      "theme": "Regulation & enforcement",
-      "text": "Taraba State Governor Agbu Kefas has signed an Executive Order aimed at curbing the abuse of the naira in the state.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmJ1eEREVmcwWnJRdjZFN0h6Zy1BYl9tOVVxMTFFTUpONGNRWDFDSUtvczBvbWluODlKYXhmN1VSZ3BhclljUDFUUXk3SURrQUgwMXBCWmdWcGh6X0RUTnVnZEFXck1zV0V1Nmc3dEFWV3RUN215MmJMRzJlYnhZMWtKZXJRa3dqNmI0?oc=5"
-    },
-    {
-      "n": 8,
-      "theme": "People",
-      "text": "Former Lagos State University Vice-Chancellor Olatunji-Bello has been appointed the first female Pro-Chancellor of Redeemer's University.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZDAyNXhKb1gxYlBjSHptV2k3Vi0wSVJDbk1WLWl5U2pfaTR0NGlkLVVkUWM5a0ZtaUxObW9MWl9Ma1JVQnVjcFlub0FYZEt2bU9YeXEtaUR5MVE3RWV5YkhTLTFDdEVheHNHVzh1N2I5Z1FZWFNvN2N1YXZFZXNGb0gxZ3JETkk4Y29vWnJnRmN6eGNQdWNCUzRSY0ZVVUYxbGN1dGF6UjZ2MXB0TFR3dzRnNlpveXdaMk9LcUhYcGg3XzQ2YVNkOWRjQWludHlQTjNUZjBqTHpHQQ?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "Other",
-      "text": "President Bola Tinubu has moved to accelerate rail projects in northern Nigeria, according to a headline published by Voice of Nigeria.",
-      "outlet": "Voice of Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzSFBTeU5jQVJMVkpxR2g4LU1lSTNtZG9jbFRDUjNLd1NiUlM0bENQOWJUVHpsbmJxMzNGRHJFYWV0M3A4RWdWbWRwLXlyZ2VkQWJ1S2UtbllCWWFsdHVZV19seDVjbWs2NlRjM3ZYd0JRaHJhLW5PM3pyMA?oc=5"
-    },
-    {
-      "n": 10,
-      "theme": "Other",
-      "text": "OPay has opened a new office in Kano, according to a Premium Times Nigeria report.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORE5UREk0N094MnMzNXFmclNDZFVCdElvZlRKVURwd09JUnF6a2FtVE1jYWFWQV83MzRDQndiNUdDelNWMWNRVGgzMFJyUy14N3lxVDJ5cUUxQ1k4enlsVE82Y2U5Z0ZaTlgxSG9yOUdBdGdFRnZoRkFOS1RTZm82RzNvOTh4UXhUX21DaGRGQTRXMHNqSldmOEVwSU52b3c0dHg0bWRsdzZ2UjU3d2tLd0d1cHRHX1RNdG54SXJNcGtfY20zcFpYUEhLWGhWUQ?oc=5"
-    }
-  ],
+  "also": [],
   "also_more": 0,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
   "terms": [
     {
-      "term": "NGX",
-      "meaning": "Nigerian Exchange, the Lagos stock market"
+      "term": "CBN",
+      "meaning": "Central Bank of Nigeria"
     },
     {
       "term": "AURA risk rating",
@@ -260,11 +182,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 2
+    "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
 }
