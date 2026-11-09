@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects. (GitHub Pages ignores this file; the build
+# removes it from that copy.)
+
+# Sports and Entertainment were cut; sent briefs and old sitemaps still link here.
+/news/sports /news/ 301
+/news/sports/ /news/ 301
+/news/entertainment /news/ 301
+/news/entertainment/ /news/ 301

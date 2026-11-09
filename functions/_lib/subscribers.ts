@@ -2,7 +2,8 @@
  * Every D1 query the Morning Brief makes, in one place. The endpoints ask
  * for what they need ("confirm this token") and never write SQL themselves.
  *
- * Tables: subscribers (migrations 0001 + 0003) and sends (0002).
+ * Tables: subscribers (migrations 0001, 0003, 0004), sends (0002) and
+ * throttle (0004).
  */
 import type { D1Like } from "./http.ts";
 import { prefsFromRow, serializeCategories, type Prefs } from "./categories.ts";
@@ -39,6 +40,19 @@ function fromRow(row: Row | null): Subscriber | null {
   };
 }
 
+/** Sign-up mail limits per address: one mail per gap, and a few per Lagos day. */
+export const MAIL_GAP_MINUTES = 10;
+export const MAILS_PER_DAY = 3;
+
+/** One subscriber as the owner's stats see it: no address. */
+export interface StatRow {
+  status: string;
+  paused: boolean;
+  created_at: string;
+  confirmed_at: string | null;
+  prefs: Prefs;
+}
+
 const prefValues = (p: Prefs) => [serializeCategories(p.categories), p.region, p.frequency];
 
 export function subscriberStore(db: D1Like) {
@@ -58,11 +72,20 @@ export function subscriberStore(db: D1Like) {
         .run();
     },
 
-    /** A pending or unsubscribed address signing up again: pending, with the preferences just chosen. */
-    async reopen(email: string, prefs: Prefs): Promise<void> {
+    /**
+     * An unsubscribed address signing up again: pending, with the preferences
+     * just chosen. A pending row is left alone, so nobody else can change what
+     * the owner's own confirmation link will confirm. The sign-up dates start
+     * again too, so the stats and the stale-pending clean-up see this sign-up,
+     * not one from months ago.
+     */
+    async reopen(email: string, prefs: Prefs, now: string): Promise<void> {
       await db
-        .prepare("UPDATE subscribers SET status = 'pending', unsubscribed_at = NULL, paused = 0, categories = ?, region = ?, frequency = ? WHERE email = ? AND status != 'confirmed'")
-        .bind(...prefValues(prefs), email)
+        .prepare(
+          `UPDATE subscribers SET status = 'pending', created_at = ?, confirmed_at = NULL, unsubscribed_at = NULL, paused = 0, categories = ?, region = ?, frequency = ?
+           WHERE email = ? AND status = 'unsubscribed'`,
+        )
+        .bind(now, ...prefValues(prefs), email)
         .run();
     },
 
@@ -84,6 +107,73 @@ export function subscriberStore(db: D1Like) {
         .run();
     },
 
+    /**
+     * Takes one of the address's mail allowances, or returns false when it
+     * has none left: mailed in the last MAIL_GAP_MINUTES, or MAILS_PER_DAY
+     * times already on this Lagos day. Check and record are one statement,
+     * so two sign-ups racing each other cannot both get through.
+     */
+    async claimMail(email: string, now: string, day: string): Promise<boolean> {
+      const cutoff = new Date(Date.parse(now) - MAIL_GAP_MINUTES * 60_000).toISOString();
+      const row = await db
+        .prepare(
+          `UPDATE subscribers SET last_mailed_at = ?, mails_today = CASE WHEN mail_day = ? THEN mails_today + 1 ELSE 1 END, mail_day = ?
+           WHERE email = ? AND (last_mailed_at IS NULL OR julianday(last_mailed_at) <= julianday(?))
+             AND (mail_day IS NULL OR mail_day != ? OR mails_today < ?)
+           RETURNING email`,
+        )
+        .bind(now, day, day, email, cutoff, day, MAILS_PER_DAY)
+        .first<{ email: string }>();
+      return row !== null;
+    },
+
+    /**
+     * Gives back a claim whose mail the provider refused, so the reader can
+     * try again straight away: the last mail is dated just outside the gap
+     * rather than cleared. Cleared, the stale-pending clean-up would fall
+     * back to the sign-up date and could delete a row the reader has just
+     * tried to use.
+     */
+    async releaseMail(email: string, now: string, day: string): Promise<void> {
+      const open = new Date(Date.parse(now) - MAIL_GAP_MINUTES * 60_000).toISOString();
+      await db
+        .prepare("UPDATE subscribers SET last_mailed_at = ?, mails_today = MAX(mails_today - 1, 0) WHERE email = ? AND mail_day = ?")
+        .bind(open, email, day)
+        .run();
+    },
+
+    /**
+     * Deletes pending sign-ups not mailed since `before` (their last mail, or
+     * their sign-up when they never had one): nobody is going to confirm them,
+     * and an address should not be kept for nothing. Returns how many went.
+     */
+    async deleteStalePending(before: string): Promise<number> {
+      const { results } = await db
+        .prepare("DELETE FROM subscribers WHERE status = 'pending' AND julianday(COALESCE(last_mailed_at, created_at)) < julianday(?) RETURNING email")
+        .bind(before)
+        .all<{ email: string }>();
+      return (results ?? []).length;
+    },
+
+    /**
+     * Pending sign-ups 48 to 72 hours old that have had exactly one mail:
+     * the confirmation on the (Lagos) day they signed up, and nothing since.
+     * Lagos is UTC+1 all year, so that day is date(created_at, '+1 hour').
+     * A reminder moves mail_day on, so nobody is reminded twice.
+     */
+    async remindable(now: string, limit: number): Promise<Subscriber[]> {
+      const { results } = await db
+        .prepare(
+          `SELECT ${COLUMNS} FROM subscribers
+           WHERE status = 'pending' AND julianday(created_at) BETWEEN julianday(?) - 3 AND julianday(?) - 2
+             AND mails_today = 1 AND mail_day = date(created_at, '+1 hour')
+           ORDER BY created_at LIMIT ?`,
+        )
+        .bind(now, now, limit)
+        .all<Row>();
+      return (results ?? []).map((r) => fromRow(r)!);
+    },
+
     /** Everyone who should get a brief at all: confirmed and not paused. Frequency is the caller's call. */
     async recipients(): Promise<Subscriber[]> {
       const { results } = await db
@@ -94,12 +184,45 @@ export function subscriberStore(db: D1Like) {
     },
 
     /** Rows for the owner's stats: preferences and dates only, never an address. */
-    async statRows(): Promise<{ status: string; paused: boolean; created_at: string; prefs: Prefs }[]> {
+    async statRows(): Promise<StatRow[]> {
       const { results } = await db
-        .prepare("SELECT status, categories, region, frequency, paused, created_at FROM subscribers")
+        .prepare("SELECT status, categories, region, frequency, paused, created_at, confirmed_at FROM subscribers")
         .bind()
-        .all<{ status: string; categories: string; region: string; frequency: string; paused: number; created_at: string }>();
-      return (results ?? []).map((r) => ({ status: r.status, paused: Number(r.paused) === 1, created_at: r.created_at, prefs: prefsFromRow(r) }));
+        .all<{ status: string; categories: string; region: string; frequency: string; paused: number; created_at: string; confirmed_at: string | null }>();
+      return (results ?? []).map((r) => ({
+        status: r.status,
+        paused: Number(r.paused) === 1,
+        created_at: r.created_at,
+        confirmed_at: r.confirmed_at ?? null,
+        prefs: prefsFromRow(r),
+      }));
+    },
+  };
+}
+
+/**
+ * Counts per key per Lagos day, e.g. sign-up and follow posts from one IP
+ * ("ip:<address>"), or follow emails to an address not on the list
+ * ("follow:<SHA-256 of the address>").
+ */
+export function throttle(db: D1Like) {
+  return {
+    /** Counts one hit and returns today's total for the key, this one included. */
+    async hit(key: string, day: string): Promise<number> {
+      const row = await db
+        .prepare(
+          `INSERT INTO throttle (key, day, count) VALUES (?, ?, 1)
+           ON CONFLICT (key) DO UPDATE SET count = CASE WHEN throttle.day = excluded.day THEN throttle.count + 1 ELSE 1 END, day = excluded.day
+           RETURNING count`,
+        )
+        .bind(key, day)
+        .first<{ count: number }>();
+      return Number(row?.count ?? 1);
+    },
+
+    /** Drops counts from before `day`: they no longer limit anyone, and IPs need not be kept. */
+    async prune(day: string): Promise<void> {
+      await db.prepare("DELETE FROM throttle WHERE day < ?").bind(day).run();
     },
   };
 }

@@ -16,3 +16,14 @@
 /data/*
   Cache-Control: public, max-age=300, must-revalidate
   Access-Control-Allow-Origin: *
+
+# Entity pages are noindex (a meta tag), but their Markdown copies and feeds
+# carry the same claims as plain text, which has no meta tag. A robots.txt
+# Disallow would hide this header from crawlers, so there is none.
+/entity/*
+  X-Robots-Tag: noindex
+
+# The register as CSV names people as owners, as entity pages do. Exact path,
+# so the /downloads/ page itself stays indexable.
+/downloads/register.csv
+  X-Robots-Tag: noindex

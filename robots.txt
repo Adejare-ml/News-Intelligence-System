@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /img
+Disallow: /brief/email/
 
 Sitemap: https://auranews.pages.dev/sitemap.xml
