@@ -19,10 +19,14 @@ publishes ready-built copies to two branches:
   with the latest data, publishes it to `cloudflare-pages`, moves the
   `production` tag to that commit, and checks auranews.pages.dev serves it.
 - **Data still refreshes production four times a day.** The scheduler's
-  deploy job rebuilds the test site from `main` and production from the
+  deploy jobs rebuild the test site from `main` and production from the
   code at the `production` tag (`web/scripts/build-production.sh`), both
   with that run's data. Untested design changes on `main` never reach
-  users through a data refresh.
+  users through a data refresh. The production half (`deploy-production`)
+  shares the promote workflow's `production-deploy` concurrency group, so
+  a refresh and a promotion never overlap: a refresh that starts during a
+  promotion waits for it and builds the newly promoted code, and so cannot
+  put the previous code back.
 - **Rolling back:** run the promote workflow with an older commit SHA.
 
 ## Why Cloudflare does not build the site itself
