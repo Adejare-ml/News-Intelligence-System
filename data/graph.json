@@ -133,6 +133,12 @@
       "risk": "Low"
     },
     {
+      "id": "09b47b7fac50",
+      "label": "Niger State Police Command",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -235,12 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "3e0f0da289fe",
-      "label": "Nigerian Institute of Transport Technology (NTI)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
@@ -262,6 +262,24 @@
       "id": "c7ed2a62ac14",
       "label": "Redeemer's University",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "2ed383c1d506",
+      "label": "Former Managing Director, Warri Refinery",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7ead61f85e05",
+      "label": "Warri Refinery",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "e2fde78a977f",
+      "label": "Elleman",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -397,30 +415,6 @@
       "risk": "Low"
     },
     {
-      "id": "34c799e822f2",
-      "label": "Agbi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a345e8b7e0f7",
-      "label": "SAO Energy",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "3fd6d917dd79",
-      "label": "Otti",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7ac5d6bb2121",
-      "label": "Abia State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "539d727618e7",
       "label": "International Finance Corporation",
       "type": "psc",
@@ -499,6 +493,18 @@
       "from": "89ae040ca567",
       "to": "c7ed2a62ac14",
       "label": "Appointed as Pro-Chancellor"
+    },
+    {
+      "id": "27081f17a833",
+      "from": "2ed383c1d506",
+      "to": "7ead61f85e05",
+      "label": "Appointed as Former Managing Director"
+    },
+    {
+      "id": "9e55cfe0906d",
+      "from": "e2fde78a977f",
+      "to": "09b47b7fac50",
+      "label": "Appointed as Police Commissioner"
     },
     {
       "id": "28fae7776f5e",
@@ -601,18 +607,6 @@
       "from": "d8e7926b6ad7",
       "to": "dce5a31d3181",
       "label": "Appointed as Director"
-    },
-    {
-      "id": "f055c1aaac37",
-      "from": "34c799e822f2",
-      "to": "a345e8b7e0f7",
-      "label": "Appointed as CEO"
-    },
-    {
-      "id": "c16569747cc7",
-      "from": "3fd6d917dd79",
-      "to": "7ac5d6bb2121",
-      "label": "Appointed as Governor"
     },
     {
       "id": "990674302105",
