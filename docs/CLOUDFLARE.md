@@ -17,7 +17,12 @@ publishes ready-built copies to two branches:
   site, then run **Actions → Promote to production → Run workflow**
   (`promote_production.yml`). It builds the chosen commit (default: `main`)
   with the latest data, publishes it to `cloudflare-pages`, moves the
-  `production` tag to that commit, and checks auranews.pages.dev serves it.
+  `production` tag to that commit, and checks auranews.pages.dev serves it:
+  the smoke test waits up to 10 minutes for
+  `https://auranews.pages.dev/version.txt` to show the promoted commit's
+  SHA, and fails if Cloudflare is still serving the previous build. Data
+  refreshes write the same SHA (the commit the `production` tag names), so
+  the file keeps naming the promoted code between promotions.
 - **Data still refreshes production four times a day.** The scheduler's
   deploy jobs rebuild the test site from `main` and production from the
   code at the `production` tag (`web/scripts/build-production.sh`), both
