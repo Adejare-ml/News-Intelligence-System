@@ -180,7 +180,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 66,
+      "total_mentions": 67,
       "points": [
         {
           "week": "2026-09-07",
@@ -232,8 +232,8 @@
         },
         {
           "week": "2026-11-02",
-          "mentions": 4,
-          "avg_risk": 31.2,
+          "mentions": 5,
+          "avg_risk": 30.0,
           "max_risk": 45
         }
       ]
@@ -1353,6 +1353,31 @@
       ]
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "securities and exchange commission",
       "label": "Securities and Exchange Commission, Nigeria",
       "total_mentions": 7,
@@ -1511,31 +1536,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -6337,5 +6337,5 @@
       ]
     }
   ],
-  "generated": "2026-11-08 21:12:48"
+  "generated": "2026-11-09 02:39:24"
 }

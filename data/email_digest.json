@@ -1,48 +1,106 @@
 {
-  "edition": "20261108-11365-preview",
+  "edition": "20261109-11379-preview",
   "preview": true,
-  "built_at": "2026-11-08 21:12:49",
-  "date": "Sunday 8 November 2026",
-  "subject": "AURA · Sun 8 Nov · Major shakeup in Nigerian Air Force, 67 senior officers redeployed",
-  "preheader": "Also: Top NGX-listed tech companies ranked by revenue growth in 2026 · 5 stories, 0 risk alerts",
+  "built_at": "2026-11-09 02:39:24",
+  "date": "Monday 9 November 2026",
+  "subject": "AURA · Mon 9 Nov · Nigeria Sets New Stablecoin Licensing Rules and Capital Requirements",
+  "preheader": "Also: MTN Nigeria appoints five new Directors · 7 stories, 0 risk alerts",
   "since": "Sun 8 Nov, 15:27 Lagos",
-  "through_id": 11365,
+  "through_id": 11379,
   "stats": {
-    "reports": 5,
-    "stories": 5,
-    "outlets": 4,
+    "reports": 7,
+    "stories": 7,
+    "outlets": 6,
     "risk_alerts": 0,
     "public_money": 0,
-    "appointments": 0,
+    "appointments": 1,
     "ownership": 0
   },
   "nothing_in": [
     "risk alerts",
     "public-money decisions",
-    "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "The Nigerian Air Force has redeployed 67 senior officers in a major shakeup, according to a Premium Times Nigeria report.",
+      "text": "The Central Bank of Nigeria issued a new framework on November 5 for non-security virtual assets, creating separate licensing classes for naira-referenced and foreign-currency stablecoins.",
       "card": 1,
-      "outlet": "Premium Times"
+      "outlet": "newsBTC"
     },
     {
-      "text": "Revenue growth across nine NGX-listed technology and telecommunications companies was mixed in 2026, according to an analysis of their latest financial statements as of November 8, 2026.",
+      "text": "MTN Nigeria has appointed five new directors to its board.",
       "card": 2,
-      "outlet": "Nairametrics"
+      "outlet": "Nigerian NewsDirect"
     },
     {
-      "text": "Kogi State Governor Ahmed Usman Ododo has ordered the regulation of mining activities in a Kogi community and expressed support for artisanal miners.",
+      "text": "The Nigerian Air Force has redeployed 67 senior officers in a major shakeup, according to a Premium Times Nigeria report.",
       "card": 3,
-      "outlet": "The Guardian"
+      "outlet": "Premium Times"
     }
   ],
   "insights": [],
   "cards": [
     {
       "n": 1,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "Nigeria Sets New Stablecoin Licensing Rules and Capital Requirements",
+      "byline": "newsBTC · Sat 7 Nov, 23:00 Lagos",
+      "outlet": "newsBTC",
+      "what_happened": "The Central Bank of Nigeria issued a new framework on November 5 for non-security virtual assets, creating separate licensing classes for naira-referenced and foreign-currency stablecoins. The rules set reserve, capital and local-presence obligations and restrict certain algorithmic designs. The framework also applies to regulated activities directed at Nigerian residents, even where the provider is based abroad.",
+      "key_facts": [
+        "The Central Bank of Nigeria issued the framework in a November 5 circular and accompanying regulations.",
+        "The framework applies to regulated activities conducted in or from Nigeria or directed at Nigerian residents."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: Stablecoin issuers and payment firms serving Nigerian customers face new capital, reserve and licensing requirements, including for foreign-based platforms. The framework also gives the central bank power to prescribe higher capital amounts."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Central Bank of Nigeria"
+      ],
+      "source": {
+        "outlet": "newsBTC",
+        "url": "https://www.newsbtc.com/regulation/nigeria-sets-new-stablecoin-licensing-rules-and-capital-requirements/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "People",
+      "event_type": "Appointment",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "MTN Nigeria appoints five new Directors",
+      "byline": "Nigerian NewsDirect · Sun 8 Nov, 22:19 Lagos",
+      "outlet": "Nigerian NewsDirect",
+      "what_happened": "MTN Nigeria has appointed five new directors to its board. The announcement was reported by Nigerian NewsDirect, but the article text provides no names, roles or effective dates.",
+      "key_facts": [
+        "MTN Nigeria appointed five new directors, according to the headline."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "MTN Nigeria"
+      ],
+      "source": {
+        "outlet": "Nigerian NewsDirect",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9oQTBRS1hVU21Ga3RXSnZSeHFoNmNLaDBja1p2UWIyc1ZGOTJxZmpWR3FJZFIzdUFjajZRUlpHWWRQNjJHYTNwWkhPUFY0WVJobEszYUZpSkNzX3pmOFR1MU1QSHBGdER5Y3EtMk9HNnhUbmFLY09rd3BVbw?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
@@ -70,7 +128,7 @@
       "also_more": 0
     },
     {
-      "n": 2,
+      "n": 4,
       "theme": "Business",
       "event_type": "Earnings",
       "flags": [],
@@ -107,7 +165,7 @@
       "also_more": 0
     },
     {
-      "n": 3,
+      "n": 5,
       "theme": "Regulation & enforcement",
       "event_type": "Policy",
       "flags": [],
@@ -134,64 +192,24 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Kefas signs Executive Order to curb naira abuse in Taraba",
-      "byline": "The Guardian · Sun 8 Nov, 17:41 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "Taraba State Governor Agbu Kefas has signed an Executive Order aimed at curbing the abuse of the naira in the state. The order is a state-level policy measure affecting currency use.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: A state executive order targeting naira abuse may affect how businesses handle cash and currency transactions in Taraba State."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Taraba State Government",
-        "Agbu Kefas"
-      ],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmJ1eEREVmcwWnJRdjZFN0h6Zy1BYl9tOVVxMTFFTUpONGNRWDFDSUtvczBvbWluODlKYXhmN1VSZ3BhclljUDFUUXk3SURrQUgwMXBCWmdWcGh6X0RUTnVnZEFXck1zV0V1Nmc3dEFWV3RUN215MmJMRzJlYnhZMWtKZXJRa3dqNmI0?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "President Tinubu Fast-Tracks Northern Rail Projects",
-      "byline": "Voice of Nigeria · Sun 8 Nov, 16:23 Lagos",
-      "outlet": "Voice of Nigeria",
-      "what_happened": "President Bola Tinubu has moved to accelerate rail projects in northern Nigeria, according to a headline published by Voice of Nigeria. The article text provided contains no further detail on project scope, funding or timelines.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Bola Tinubu"
-      ],
-      "source": {
-        "outlet": "Voice of Nigeria",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzSFBTeU5jQVJMVkpxR2g4LU1lSTNtZG9jbFRDUjNLd1NiUlM0bENQOWJUVHpsbmJxMzNGRHJFYWV0M3A4RWdWbWRwLXlyZ2VkQWJ1S2UtbllCWWFsdHVZV19seDVjbWs2NlRjM3ZYd0JRaHJhLW5PM3pyMA?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
-  "also": [],
+  "also": [
+    {
+      "n": 6,
+      "theme": "Regulation & enforcement",
+      "text": "Taraba State Governor Agbu Kefas has signed an Executive Order aimed at curbing the abuse of the naira in the state.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmJ1eEREVmcwWnJRdjZFN0h6Zy1BYl9tOVVxMTFFTUpONGNRWDFDSUtvczBvbWluODlKYXhmN1VSZ3BhclljUDFUUXk3SURrQUgwMXBCWmdWcGh6X0RUTnVnZEFXck1zV0V1Nmc3dEFWV3RUN215MmJMRzJlYnhZMWtKZXJRa3dqNmI0?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Other",
+      "text": "President Bola Tinubu has moved to accelerate rail projects in northern Nigeria, according to a headline published by Voice of Nigeria.",
+      "outlet": "Voice of Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAzSFBTeU5jQVJMVkpxR2g4LU1lSTNtZG9jbFRDUjNLd1NiUlM0bENQOWJUVHpsbmJxMzNGRHJFYWV0M3A4RWdWbWRwLXlyZ2VkQWJ1S2UtbllCWWFsdHVZV19seDVjbWs2NlRjM3ZYd0JRaHJhLW5PM3pyMA?oc=5"
+    }
+  ],
   "also_more": 0,
   "psc": [],
   "psc_more": 0,
