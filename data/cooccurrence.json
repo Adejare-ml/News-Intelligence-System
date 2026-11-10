@@ -62,6 +62,10 @@
       "label": "Bola Tinubu"
     },
     {
+      "key": "boye olusanya",
+      "label": "Boye Olusanya"
+    },
+    {
       "key": "cardoso",
       "label": "Cardoso"
     },
@@ -108,6 +112,14 @@
     {
       "key": "ekiti state house of assembly",
       "label": "Ekiti State House of Assembly"
+    },
+    {
+      "key": "electricity regulatory commission",
+      "label": "Nigerian Electricity Regulatory Commission"
+    },
+    {
+      "key": "etranzact international",
+      "label": "eTranzact International Plc"
     },
     {
       "key": "exchange",
@@ -170,8 +182,16 @@
       "label": "Ibom Deep Seaport"
     },
     {
+      "key": "ibrahim dikko",
+      "label": "Ibrahim Dikko"
+    },
+    {
       "key": "ikeja electric",
       "label": "Ikeja Electric"
+    },
+    {
+      "key": "imoni akpofure",
+      "label": "Imoni Akpofure"
     },
     {
       "key": "independent corrupt practices and other related offences commission",
@@ -218,12 +238,20 @@
       "label": "Nigeria LNG Limited"
     },
     {
+      "key": "lwazi bam",
+      "label": "Lwazi Bam"
+    },
+    {
       "key": "maina",
       "label": "Maina"
     },
     {
       "key": "mambilla hydropower project",
       "label": "Mambilla Hydropower Project"
+    },
+    {
+      "key": "meter acquisition fund",
+      "label": "Meter Acquisition Fund"
     },
     {
       "key": "microsoft",
@@ -236,6 +264,10 @@
     {
       "key": "mtn",
       "label": "MTN Nigeria"
+    },
+    {
+      "key": "mtn communications",
+      "label": "MTN Nigeria Communications Plc"
     },
     {
       "key": "mtn foundation",
@@ -310,6 +342,10 @@
       "label": "Olayemi Cardoso"
     },
     {
+      "key": "omatek ventures",
+      "label": "Omatek Ventures Plc"
+    },
+    {
       "key": "oyebanji",
       "label": "Oyebanji"
     },
@@ -324,6 +360,10 @@
     {
       "key": "pipeline infrastructure",
       "label": "Pipeline Infrastructure Nigeria Limited"
+    },
+    {
+      "key": "presidential foreign intervention promotion council",
+      "label": "Presidential Foreign Intervention Promotion Council"
     },
     {
       "key": "rmb",
@@ -454,6 +494,11 @@
       "weight": 4
     },
     {
+      "a": "adeniyi adeyemi",
+      "b": "independent corrupt practices and other related offences commission",
+      "weight": 3
+    },
+    {
       "a": "airtel",
       "b": "house of representatives",
       "weight": 3
@@ -530,7 +575,7 @@
     },
     {
       "a": "adeniyi adeyemi",
-      "b": "independent corrupt practices and other related offences commission",
+      "b": "presidential foreign intervention promotion council",
       "weight": 2
     },
     {
@@ -624,6 +669,26 @@
       "weight": 2
     },
     {
+      "a": "boye olusanya",
+      "b": "ibrahim dikko",
+      "weight": 2
+    },
+    {
+      "a": "boye olusanya",
+      "b": "imoni akpofure",
+      "weight": 2
+    },
+    {
+      "a": "boye olusanya",
+      "b": "lwazi bam",
+      "weight": 2
+    },
+    {
+      "a": "boye olusanya",
+      "b": "mtn communications",
+      "weight": 2
+    },
+    {
       "a": "central bank of",
       "b": "economic and financial crimes commission",
       "weight": 2
@@ -714,6 +779,21 @@
       "weight": 2
     },
     {
+      "a": "electricity regulatory commission",
+      "b": "meter acquisition fund",
+      "weight": 2
+    },
+    {
+      "a": "etranzact international",
+      "b": "mtn communications",
+      "weight": 2
+    },
+    {
+      "a": "etranzact international",
+      "b": "omatek ventures",
+      "weight": 2
+    },
+    {
       "a": "extractive industries transparency initiative",
       "b": "midstream and downstream petroleum regulatory authority",
       "weight": 2
@@ -779,13 +859,43 @@
       "weight": 2
     },
     {
+      "a": "ibrahim dikko",
+      "b": "imoni akpofure",
+      "weight": 2
+    },
+    {
+      "a": "ibrahim dikko",
+      "b": "lwazi bam",
+      "weight": 2
+    },
+    {
+      "a": "ibrahim dikko",
+      "b": "mtn communications",
+      "weight": 2
+    },
+    {
       "a": "ikeja electric",
       "b": "transmission company of",
       "weight": 2
     },
     {
+      "a": "imoni akpofure",
+      "b": "lwazi bam",
+      "weight": 2
+    },
+    {
+      "a": "imoni akpofure",
+      "b": "mtn communications",
+      "weight": 2
+    },
+    {
       "a": "independent corrupt practices and other related offences commission",
       "b": "office of the attorney general of the federation",
+      "weight": 2
+    },
+    {
+      "a": "independent corrupt practices and other related offences commission",
+      "b": "presidential foreign intervention promotion council",
       "weight": 2
     },
     {
@@ -834,8 +944,18 @@
       "weight": 2
     },
     {
+      "a": "lwazi bam",
+      "b": "mtn communications",
+      "weight": 2
+    },
+    {
       "a": "midstream and downstream petroleum regulatory authority",
       "b": "national petroleum company",
+      "weight": 2
+    },
+    {
+      "a": "mtn communications",
+      "b": "omatek ventures",
       "weight": 2
     },
     {
@@ -874,5 +994,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-10 04:40:04"
+  "generated": "2026-11-10 15:41:25"
 }

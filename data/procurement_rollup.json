@@ -76,6 +76,14 @@
       }
     },
     {
+      "name": "Nigerian Electricity Regulatory Commission",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 30000000000.0
+      }
+    },
+    {
       "name": "Federal Government",
       "contracts": 2,
       "undisclosed": 1,
@@ -768,6 +776,14 @@
       }
     },
     {
+      "name": "Eligible Local Meter Manufacturers and Assemblers (LMMAs) and Meter Asset Providers (MAPs)",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "NGN": 30000000000.0
+      }
+    },
+    {
       "name": "Nigeria Airways (Pensioners)",
       "contracts": 1,
       "undisclosed": 0,
@@ -1252,5 +1268,5 @@
       }
     }
   ],
-  "generated": "2026-11-10 04:40:04"
+  "generated": "2026-11-10 15:41:25"
 }
