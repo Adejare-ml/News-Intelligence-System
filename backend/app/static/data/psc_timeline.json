@@ -11,7 +11,33 @@
       ],
       "change": 0.0,
       "intermediates": []
+    },
+    {
+      "person": "Trademarks Global Concepts Limited",
+      "company": "eTranzact International Plc",
+      "points": [
+        {
+          "date": "2026-11-10",
+          "pct": 56.18
+        }
+      ],
+      "change": 0.0,
+      "intermediates": []
+    },
+    {
+      "person": "Xenergi",
+      "company": "Premier Paints Plc",
+      "points": [
+        {
+          "date": "2026-11-10",
+          "pct": 49.6
+        }
+      ],
+      "change": 0.0,
+      "intermediates": [
+        "Oida Group"
+      ]
     }
   ],
-  "generated": "2026-11-10 04:40:04"
+  "generated": "2026-11-10 15:41:25"
 }
