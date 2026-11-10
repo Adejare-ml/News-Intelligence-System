@@ -2,6 +2,24 @@
   "alerts": [
     {
       "date": "2026-11-10",
+      "title": "N210tn audit queries: Kyari finally appears before Senate panel",
+      "url": "https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/",
+      "source": "BusinessDay",
+      "risk_score": 78,
+      "risk_level": "High",
+      "entities": [
+        "Nigerian National Petroleum Company Limited",
+        "Nigerian National Petroleum Corporation",
+        "Office of the Auditor-General for the Federation",
+        "Senate Committee on Public Accounts",
+        "Mele Kyari",
+        "Ibrahim Dankwambo",
+        "Adams Oshiomhole",
+        "Victor Umeh"
+      ]
+    },
+    {
+      "date": "2026-11-10",
       "title": "ICPC amends charges against fake PFIPC DG",
       "url": "https://punchng.com/icpc-amends-charges-against-fake-pfipc-dg/",
       "source": "The Punch",
@@ -1148,5 +1166,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-10 15:41:25"
+  "generated": "2026-11-10 20:33:57"
 }

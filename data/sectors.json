@@ -2,24 +2,24 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 950,
-      "mentions": 1582,
+      "companies": 951,
+      "mentions": 1563,
       "risk": {
         "Low": 834,
         "Critical": 57,
-        "Medium": 32,
+        "Medium": 33,
         "High": 27
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 51,
-      "mentions": 242,
+      "companies": 53,
+      "mentions": 267,
       "risk": {
-        "Medium": 18,
+        "Medium": 19,
         "Low": 28,
         "Critical": 1,
-        "High": 4
+        "High": 5
       }
     },
     {
@@ -626,6 +626,14 @@
       }
     },
     {
+      "industry": "Clean Energy",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Consultancy/Governance",
       "companies": 1,
       "mentions": 1,
@@ -1002,5 +1010,5 @@
       }
     }
   ],
-  "generated": "2026-11-10 15:41:25"
+  "generated": "2026-11-10 20:33:57"
 }

@@ -1,145 +1,121 @@
 {
-  "edition": "20261110-11472",
-  "preview": false,
-  "built_at": "2026-11-10 15:41:25",
+  "edition": "20261110-11516-preview",
+  "preview": true,
+  "built_at": "2026-11-10 20:33:57",
   "date": "Tuesday 10 November 2026",
-  "subject": "AURA alert · Tue 10 Nov · 18 stories, 2 risk alerts",
-  "preheader": "eTranzact, MTN Nigeria, lead boardroom shake-ups as 9M 2026 earnings roll in · 18 stories, 2 risk alerts",
-  "since": "Mon 9 Nov, 18:32 Lagos",
-  "through_id": 11472,
+  "subject": "AURA alert · Tue 10 Nov · N210tn audit queries: Kyari finally appears before Senate panel",
+  "preheader": "Also: NNPC Audit Report: Former GMD tells lawmakers ₦210 trillion isn’t missing · 8 stories, 1 risk alert",
+  "since": "Tue 10 Nov, 16:41 Lagos",
+  "through_id": 11516,
   "stats": {
-    "reports": 18,
-    "stories": 18,
+    "reports": 9,
+    "stories": 8,
     "outlets": 6,
-    "risk_alerts": 2,
-    "public_money": 1,
+    "risk_alerts": 1,
+    "public_money": 3,
     "appointments": 1,
-    "ownership": 2
+    "ownership": 0
   },
-  "nothing_in": [],
+  "nothing_in": [
+    "ownership and control reports"
+  ],
   "overview": [
     {
-      "text": "eTranzact announced director changes on October 13, 2026, after 5.17 billion ordinary shares (56.18%) transferred to Trademarks Global Concepts Limited. Xenergi acquired about 49.6% of Premier Paints.",
+      "text": "Mele Kyari, former Group Chief Executive Officer of NNPC Limited, appeared before the Senate Committee on Public Accounts to answer questions over N210 trillion in financial transactions flagged in the company's 2017–2023 accounts.",
       "card": 1,
-      "outlet": "Nairametrics"
-    },
-    {
-      "text": "INEC removed 1.6 million names from the voters' register, according to Premium Times.",
-      "card": 4,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "NERC approved N30 billion as the third tranche of the Meter Acquisition Fund, allocated among eleven DisCos in proportion to their contributions. Installations must finish by 31 May 2027.",
-      "card": 5,
       "outlet": "BusinessDay"
     },
     {
-      "text": "The House of Representatives urged NNPC Ltd to translate Petroleum Industry Act 2021 reforms into increased oil production and investment, at a retreat in Abuja on Monday.",
-      "card": 7,
-      "outlet": "Leadership"
+      "text": "A former Group Managing Director of the Nigerian National Petroleum Company (NNPC) told lawmakers that ₦210 trillion referenced in an audit report is not missing.",
+      "card": 2,
+      "outlet": "Premium Times"
     },
     {
-      "text": "Raenest acquired 100% ownership of Remitise, a UK-based payments company registered with the FCA.",
-      "card": 9,
-      "outlet": "Nairametrics"
+      "text": "The Economic and Financial Crimes Commission (EFCC) recovered $3 million and N1.3 billion in unremitted revenues from two firms.",
+      "card": 3,
+      "outlet": "Premium Times"
     }
   ],
-  "insights": [
-    {
-      "label": "What to watch",
-      "text": "With the N30 billion tranche split among eleven DisCos, will procurement follow the transparent process BusinessDay describes, with payment 70 percent on verified delivery and 30 percent on complete installation?",
-      "cards": [
-        5
-      ],
-      "outlets": [
-        "BusinessDay"
-      ]
-    },
-    {
-      "label": "Across stories",
-      "text": "Ownership moves appear across the day's cards: eTranzact and Premier Paints stake changes, Raenest's Remitise acquisition, and a report that Access Holdings is considering exiting a foreign subsidiary.",
-      "cards": [
-        1,
-        8,
-        9
-      ],
-      "outlets": [
-        "Nairametrics",
-        "Premium Times",
-        "Nairametrics"
-      ]
-    }
-  ],
+  "insights": [],
   "cards": [
     {
       "n": 1,
-      "theme": "Ownership & capital",
-      "event_type": "Ownership Change",
+      "theme": "Public money",
+      "event_type": "Audit",
       "flags": [
-        "Alert"
+        "Alert",
+        "Developing"
       ],
       "alert": true,
-      "risk": "AURA risk rating: High · 62/100",
-      "headline": "eTranzact, MTN Nigeria, lead boardroom shake-ups as 9M 2026 earnings roll in",
-      "byline": "Nairametrics · Tue 10 Nov, 11:27 Lagos",
-      "outlet": "Nairametrics",
-      "what_happened": "A wave of board changes accompanied NGX-listed companies' nine-month 2026 results, led by eTranzact International Plc replacing five directors after 56.18% of its shares passed to Trademarks Global Concepts Limited.",
+      "risk": "AURA risk rating: High · 78/100",
+      "headline": "N210tn audit queries: Kyari finally appears before Senate panel",
+      "byline": "BusinessDay · Tue 10 Nov, 20:13 Lagos · latest of 3 reports from 3 outlets",
+      "outlet": "BusinessDay",
+      "what_happened": "Mele Kyari, former Group Chief Executive Officer of NNPC Limited, appeared before the Senate Committee on Public Accounts to answer questions over N210 trillion in financial transactions flagged in the company's 2017–2023 accounts.",
       "key_facts": [
-        "eTranzact announced director changes on October 13, 2026, after 5.17 billion ordinary shares (56.18%) transferred to Trademarks Global Concepts Limited.",
-        "Xenergi acquired approximately 49.6% of Premier Paints' issued share capital."
+        "Mele Kyari appeared before the Senate Committee on Public Accounts on Tuesday.",
+        "The N210 trillion comprises N103 trillion accrued expenses and N107 trillion sundry receivables.",
+        "The committee is chaired by Senator Ibrahim Dankwambo, representing Gombe North.",
+        "Ex-NNPCL boss Kyari appeared before a Senate panel. (The Eagle Online)"
       ],
-      "timeline": [],
+      "timeline": [
+        "Tue 10 Nov, 16:00 · Punch: “JUST IN: Ex-NNPC boss Kyari appears before Senate panel”",
+        "Tue 10 Nov, 17:40 · The Eagle Online: “Just in: Ex-NNPCL boss Kyari appears before Senate panel over N210t audit queries |”",
+        "Tue 10 Nov, 20:13 · BusinessDay: “N210tn audit queries: Kyari finally appears before Senate panel” (lead report)"
+      ],
       "headline_only": false,
-      "analysis": [],
-      "ownership_caveat": "Ownership details as reported by Nairametrics; not verified with CAC records.",
+      "analysis": [
+        "Why it matters: The scale of the unexplained entries, and lawmakers' demands for the identities of counterparties and supporting documentation, bear directly on transparency over public oil-company finances. The outcome will determine whether former management is held accountable for the recorded figures."
+      ],
+      "ownership_caveat": "",
       "named": [
-        "eTranzact International Plc",
-        "Trademarks Global Concepts Limited",
-        "Access Bank Plc",
-        "Meristem Trustees Limited",
-        "Accelerex Holdings"
+        "Nigerian National Petroleum Company Limited",
+        "Nigerian National Petroleum Corporation",
+        "Office of the Auditor-General for the Federation",
+        "Senate Committee on Public Accounts",
+        "Mele Kyari"
       ],
       "source": {
-        "outlet": "Nairametrics",
-        "url": "https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/"
+        "outlet": "BusinessDay",
+        "url": "https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/"
       },
-      "also_reported": [],
+      "also_reported": [
+        {
+          "outlet": "The Eagle Online",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaVh3eUFDTW0yOFo2dHVnY181TEJJeHJGeFlwSTFMeENjZDlXTVEwS1YyTGY5Zkk1c0J2VTJMckk0NXpiWkRZWXNoNXJFMEFzVnFfanh6NjlUVFd5ckw0UGJGYjlKWVg4Uk1tcHNlMGVlZldOS2Jab0ZLeVB4d0kyYzNYeE40dEpDRGtPckh0cHFLV2hOUmNTTlU2VHZXRHlucU5zZkVEd2x2ejR6YjEzMQ?oc=5"
+        },
+        {
+          "outlet": "Punch",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONTZHUWc5eV9TSjJxRWdwLTZvcTdmT3ZTMURtcGJ4X2xvNGRmV0dHT09EN0NvNFlSaFBfSkozUnVxeWxqNGRnQWl6LXNkTGROUDNpdjktdzhlTWd4dFBROXNiaWFGLWNsT24wakItUnRpQ1Z2MUVid0V6cWhYNGQwMg?oc=5"
+        }
+      ],
       "also_more": 0
     },
     {
       "n": 2,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [
-        "Alert",
-        "Allegation, not a finding"
-      ],
-      "alert": true,
-      "risk": "AURA risk rating: High · 62/100",
-      "headline": "ICPC amends charges against fake PFIPC DG",
-      "byline": "Punch · Mon 9 Nov, 16:06 Lagos",
-      "outlet": "Punch",
-      "what_happened": "The ICPC has amended its charges against Adeniyi Adeyemi, the purported Director-General of the non-existent Presidential Foreign Intervention Promotion Council, increasing the counts from 22 to 36 and adding four defendants. The FCT High Court in Maitama adjourned the case to November 18 for arraignment of all defendants after a defendant was reported hospitalised.",
-      "key_facts": [
-        "ICPC amended charges against Adeniyi Adeyemi, increasing counts from 22 to 36 and adding four defendants.",
-        "Adeyemi allegedly sought over N27bn as a take-off grant and another N3.8bn for personnel costs by forging official documents."
-      ],
+      "theme": "Public money",
+      "event_type": "Audit",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 55/100",
+      "headline": "NNPC Audit Report: Former GMD tells lawmakers ₦210 trillion isn’t missing",
+      "byline": "Premium Times · Tue 10 Nov, 20:54 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "A former Group Managing Director of the Nigerian National Petroleum Company (NNPC) told lawmakers that ₦210 trillion referenced in an audit report is not missing. The statement responds to scrutiny of NNPC's audit findings before the National Assembly.",
+      "key_facts": [],
       "timeline": [],
-      "headline_only": false,
+      "headline_only": true,
       "analysis": [
-        "As reported by Punch; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+        "Why it matters: The dispute over a reported ₦210 trillion gap in NNPC accounts bears directly on the accountability of public oil revenue and the reliability of audit findings on a state-owned company."
       ],
       "ownership_caveat": "",
       "named": [
-        "Presidential Foreign Intervention Promotion Council",
-        "Divine Dopacy Nigeria Limited",
-        "Independent Corrupt Practices and Other Related Offences Commission",
-        "Adeniyi Adeyemi",
-        "Ogaba Harry"
+        "Nigerian National Petroleum Company",
+        "Former NNPC Group Managing Director"
       ],
       "source": {
-        "outlet": "Punch",
-        "url": "https://punchng.com/icpc-amends-charges-against-fake-pfipc-dg/"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNi1TWUwwTmJyMkh3dkJITDRTTGJGZ0ZIeWpDNzJKdmRjazJvQktDOWJpSklhZTVid1ItanVPeUZkSktaSlBvd25zOExYSDRtOUl1QTlNYU95UGw0NFJVVkE0Yi1zMFoya2JMNGZIT09ielQyeVZPZjY2YW1pWWl6a0VhVGhCNUFZNjl1TVBqazlIa01nOTlKWUZmVGJIUXZNTE50NGM4dlVXdmhaa2hHa3Q4X084cVdCSmhuN20zTnpRREdGU0RtaWNjOGtfcnY2aXc?oc=5"
       },
       "also_reported": [],
       "also_more": 0
@@ -147,95 +123,89 @@
     {
       "n": 3,
       "theme": "Regulation & enforcement",
-      "event_type": "Policy",
+      "event_type": "Corruption",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "BREAKING: NERC approves N30 billion to provide free meters to Band A, Band B customers",
-      "byline": "Nairametrics · Tue 10 Nov, 15:18 Lagos",
-      "outlet": "Nairametrics",
-      "what_happened": "The Nigerian Electricity Regulatory Commission (NERC) has approved N30 billion for the third tranche of the Meter Acquisition Fund (MAF) to provide free electricity meters to unmetered Band A customers and accelerate metering for Band B customers. Under Order No. NERC/2026/121, the tranche takes effect from November 2, 2026, with all installations to be completed by May 31, 2027.",
+      "risk": "AURA risk rating: Medium · 55/100",
+      "headline": "EFCC recovers $3m, N1.3bn unremitted revenues from two firms, hands over funds to RMAFC",
+      "byline": "Premium Times · Tue 10 Nov, 21:09 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Economic and Financial Crimes Commission (EFCC) recovered $3 million and N1.3 billion in unremitted revenues from two firms. The recovered funds were handed over to the Revenue Mobilisation Allocation and Fiscal Commission (RMAFC).",
       "key_facts": [
-        "Funds will be distributed among the 11 electricity distribution companies (DisCos) according to their contributions to the Fund."
+        "EFCC recovered $3m and N1.3bn in unremitted revenues from two firms.",
+        "The recovered funds were handed over to the RMAFC."
       ],
       "timeline": [],
-      "headline_only": false,
+      "headline_only": true,
       "analysis": [
-        "Why it matters: The programme commits N30 billion of public-linked funds to meter procurement across 11 DisCos, with contracts required to be filed with NERC, which strengthens oversight of how the money is spent.",
-        "Court outcome as reported by Nairametrics; AURA has not checked court records."
+        "Why it matters: The recovery targets unremitted revenues owed to public finances, showing enforcement against companies that withheld government money."
       ],
       "ownership_caveat": "",
       "named": [
-        "Nigerian Electricity Regulatory Commission",
-        "Meter Acquisition Fund"
+        "Economic and Financial Crimes Commission",
+        "Revenue Mobilisation Allocation and Fiscal Commission"
       ],
       "source": {
-        "outlet": "Nairametrics",
-        "url": "https://nairametrics.com/2026/11/10/nerc-approves-n30-billion-to-provide-free-meters-to-band-a-band-b-customers/"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNTMwcTl4YzhQdnpuT003d3BiOUJzdTdoYkhURC1NTnU2a0hYalM2b2p6ODNqLWRxeXc4SDBZei1lX0NsaHhwWElJemEyM3lTY3R0QU9FaXF6TEVvVUdMbGQ2WDRfVWQtS3Z4Y2pVajZDaFhhWmxCbzhSVjhQNkNXWEhLSFZUNmJhcE50dnVzQTJmQzQ3ZmtsR2I0Snc2eWxwazVoWnlacVhJaFNaQ1EzdDR4bmVTUW13TjBKVEpGbUlkZmdhYU45TU1mVVBMTkxJSXYyUm8zUW8?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 4,
-      "theme": "Other",
-      "event_type": "Other",
+      "theme": "Public money",
+      "event_type": "Audit",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 40/100",
-      "headline": "INEC removes 1.6 million names from voters’ register, fingers 54 officials",
-      "byline": "Premium Times · Mon 9 Nov, 23:00 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The Independent National Electoral Commission (INEC) has removed 1.6 million names from the voters' register. The electoral body has also named 54 officials in connection with the exercise.",
+      "risk": "AURA risk rating: Medium · 45/100",
+      "headline": "N210trn not missing from NNPC – Mele Kyari tells Senate",
+      "byline": "Vanguard · Tue 10 Nov, 19:21 Lagos",
+      "outlet": "Vanguard",
+      "what_happened": "Former NNPC Group Chief Executive Mele Kyari told the Senate that N210 trillion is not missing from the Nigerian National Petroleum Company. The claim was made in response to allegations about the sum's whereabouts.",
       "key_facts": [
-        "INEC removed 1.6 million names from the voters' register."
+        "Mele Kyari told the Senate that N210trn is not missing from NNPC."
       ],
       "timeline": [],
       "headline_only": true,
       "analysis": [
-        "Why it matters: The removals and the naming of officials bear on the accuracy of Nigeria's voters' register and on accountability within the electoral agency."
+        "Why it matters: The claim concerns a very large sum linked to Nigeria's national oil company, a public money and transparency matter that depends on the accounting Kyari presented to the Senate."
       ],
       "ownership_caveat": "",
       "named": [
-        "Independent National Electoral Commission (INEC)"
+        "NNPC",
+        "Mele Kyari"
       ],
       "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOV0N1Y00zdHBISzkxYTlDeTFMYjFONHpZbE5sUzhQR2YwNkxXNTF6dVNhc082d1pxamZtTVJjWGFid1JpdkJRN0JBWFlWNGxSQk1GZUwzX3J2MnZDajh6d2g5TTFLSUpLQ0xmQW5LVUlFY2d3X29vcWJoalJQSXFLalUzd29IeHlvOWRMc2RPQlBDUGVsYjFRckNnVkxwcVhpNWp3UzlVTTlWdkY1TFFiQ1ZwNzRQMFJkRklsLXlYT0gxYjhhak5sXw?oc=5"
+        "outlet": "Vanguard",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXp0anVaX0pNc3V1aC10Q0dWb2RLb0VLbnRxOW95SWdwTlhlVnRlbHFXNXYtZ2F2Z2Z0OUstYWZoeEdWN1BFeFFLZXE1bHB1RjhYcExyWEFjSU9OeFZGU2ZOMk96NHgtOUFEbTRmc2FtMzdDalAxSUd2eWw1bEh3VHhzaWpGS0JkSzNkQnlRdzlmamxz0gGaAUFVX3lxTE9JcGhFQkxjQTc3ZkpHb0JJMUdfWnp1QTVIam16TnpfeHNNNnYtLVVCekFnUTk0b2VBOHU4TGIyMEExckZtTDJsOUtTNnBmRjF2YllUeXU3ZUItZlRhOERtNkdLTHRBdEw3UnRaT3V3Z1ZZalRKeEZaRGpzZ3ZlckZWcGFoYnVyaG5OWS1paEpzNHNySl9UZGx4cGc?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 5,
-      "theme": "Public money",
-      "event_type": "Procurement",
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
       "flags": [],
       "alert": false,
       "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "DisCos get N30bn as NERC disburse third tranch of meter acquisition fund",
-      "byline": "BusinessDay · Tue 10 Nov, 15:50 Lagos",
-      "outlet": "BusinessDay",
-      "what_happened": "The Nigerian Electricity Regulatory Commission (NERC) has approved N30 billion as the third tranche of the Meter Acquisition Fund, to be allocated among eleven Distribution Companies (DisCos) in proportion to their contributions. Under Order No. NERC/2026/121, DisCos must run transparent procurement involving eligible Local Meter Manufacturers and Assemblers and Meter Asset Providers, with installations due by 31 May 2027.",
-      "key_facts": [
-        "NERC approved N30 billion as the third tranche of the Meter Acquisition Fund.",
-        "The fund is allocated among eleven DisCos in proportion to their contributions to the Fund.",
-        "Payment to selected providers is made 70 percent on verified delivery and 30 percent on complete installation.",
-        "All meter installations under Tranche C must be completed on or before 31 May 2027."
-      ],
+      "headline": "No N210tn missing from NNPC — Kyari",
+      "byline": "Punch · Tue 10 Nov, 18:25 Lagos",
+      "outlet": "Punch",
+      "what_happened": "NNPC Limited Group Chief Executive Mele Kyari has denied that N210 trillion went missing from the state oil company, according to a Punch Newspapers report. The headline reflects a rebuttal of allegations concerning the corporation's finances. The article text provided is limited to the headline, so further details of the claims and the response are not available.",
+      "key_facts": [],
       "timeline": [],
-      "headline_only": false,
-      "analysis": [
-        "Why it matters: The order sets procurement, pricing and reporting rules for public metering funds, and requires all supply and installation contracts to be filed with the Commission, which supports transparency over how DisCos spend the money."
-      ],
+      "headline_only": true,
+      "analysis": [],
       "ownership_caveat": "",
       "named": [
-        "Nigerian Electricity Regulatory Commission",
-        "Meter Acquisition Fund"
+        "Nigerian National Petroleum Company Limited",
+        "Mele Kyari"
       ],
       "source": {
-        "outlet": "BusinessDay",
-        "url": "https://businessday.ng/energy/article/discos-get-n30bn-as-nerc-disburse-third-tranch-of-meter-acquisition-fund/"
+        "outlet": "Punch",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lSTRXZzhpSXBkUVIxN0pWVm9RZGFkbF9KOHZ4eG1aLUhDMEh4SkpvM2x1ZVdfQ3ZRY0JsSTM1dmNjT3JGb2Q4a2hPRjJrQzZDb3B6Ym5GVGZUaWc1akVvd19zbEI?oc=5"
       },
       "also_reported": [],
       "also_more": 0
@@ -244,117 +214,34 @@
   "also": [
     {
       "n": 6,
-      "theme": "Other",
-      "text": "Former NNPC Limited chief Mele Kyari has appeared before a Senate committee, according to a Punch Newspapers report.",
-      "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONTZHUWc5eV9TSjJxRWdwLTZvcTdmT3ZTMURtcGJ4X2xvNGRmV0dHT09EN0NvNFlSaFBfSkozUnVxeWxqNGRnQWl6LXNkTGROUDNpdjktdzhlTWd4dFBROXNiaWFGLWNsT24wakItUnRpQ1Z2MUVid0V6cWhYNGQwMg?oc=5"
+      "theme": "Business",
+      "text": "The Coalition of Progressive Academics and Stakeholders (CPASJ) has sought clarification from the Nigerian National Petroleum Company Limited (NNPCL) over a reported ₦7.2 trillion profit despite a decline in revenue.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOV3E0SDdkUmpMQTZzNEVtNHpEcUJkTHJNVmtDY2cxRDFRVHlHb0pYSll3Q09mR2daTE9Ub0NMZkZQWVNuTi1ROXVxT1JYSnRpMkxOcUhYelRuTlZoSzRYNUJlTmUzTUNBYjluRlctbnZXSXVNYkQ1OTdrVXN2RmFlRXJYd1hqNE5vbnRCWERSa3AyYjBIcHdMSDJQdW5SOTJzdkFETHpNYmdGcG9V?oc=5"
     },
     {
       "n": 7,
-      "theme": "Regulation & enforcement",
-      "text": "The House of Representatives urged NNPC Ltd to convert the Petroleum Industry Act 2021 reforms into higher oil production, investment, refining capacity and tangible benefits for Nigerians.",
-      "outlet": "Leadership",
-      "url": "https://leadership.ng/turn-pias-reforms-into-increased-oil-production-investments-dividends-reps-tell-nnpcl/"
+      "theme": "People",
+      "text": "Lagos State Governor Babajide Sanwo-Olu has appointed an acting Managing Director for the Lagos Waste Management Authority (LAWMA) amid a waste crisis.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWEZlc2ZiWkFDeE1KejhvWEZlQ1gydzN0RnZlUC13OHJ6TGc5Mzh0MUNGN2Q5QmZTVm1kQ3VSajI1MWZCakh4dmVFcjloczdrWWJqV3R0eWV0ZHVwUll1cXFHaThvWmlUelFiZHNaOXNBN3Fqb1JfczBINzcybzdwNTBnb1VxV2JqSDlGSWk0akg5dC1HUlgweUJlZ21ZM1p3R2Jrd0ZlM29NTVRfcXMxNE9tQQ?oc=5"
     },
     {
       "n": 8,
-      "theme": "Ownership & capital",
-      "text": "Access Holdings is reportedly considering an exit from a foreign subsidiary to comply with a Central Bank of Nigeria (CBN) rule.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeUNldjFxdVcycjBiTVRPa2c5TXNIUmRIVzdTVk5iNHA2MFBoVURwTHBTWDRhQkV0aHV0MEFXcmZyalVMYlJLN2xTRnEtajdOeFpIWWRuRE5vcHVyNW01TUREOU1SQ0RCczhZTnhiZ01EMXpkQmg0STZ6aElqSVlHb3k5MllqdzRScUo2XzJZXzlGVTBVWVNJT0oyNGVyX0cwSzhwOUJKVE9oUTBhME5NcWN2c1drckpJR2hUS3ZSN2xpdWtxNVZqb3FfQk1KdUxNUGM3azFYWQ?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "Ownership & capital",
-      "text": "Nigerian-founded fintech Raenest has acquired a 100% ownership stake in Remitise, a UK-based payments company registered with the Financial Conduct Authority.",
-      "outlet": "Nairametrics",
-      "url": "https://nairametrics.com/2026/11/10/raenest-acquires-100-stake-in-uk-payments-firm-remitise-to-strengthen-global-operations/"
-    },
-    {
-      "n": 10,
-      "theme": "Regulation & enforcement",
-      "text": "An opinion-style piece in The Guardian Nigeria News calls for reform of contract awards for the Mambilla hydroelectric project.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNY3lvUmNCOXAzUHkwS0I1bEtqR1ZFUWJEMmE1S0ZpNEJnVDNZMUgzRUV4cEdZU2JXVnZuMjR0NkRxSExkUmQ1ZkNBX1FhczNWdzNPdFh3alN5WFhzU0Y4SDl2c3NBc3Y5VzgwR002Rm5vcldsS281bFdOX0I4VGE5WmlLSzAwZnM1Sm95d3ZKOUdxTjFwRzQ3MWtLdE1MNm50eTQyYVd6NnVmU01sX3E2OQ?oc=5"
-    },
-    {
-      "n": 11,
-      "theme": "Regulation & enforcement",
-      "text": "A Nigerian court has set aside a forfeiture order against a former managing director of the Warri refinery.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPY3VSdnp1ajdNd2UxTVliYWFVR2lvYkphZHBTaDE1VXViMWtzTnVJNWdPVmtUUmFTaHdjQzAxb0FiRncxMjM0TkdOZU15dUJZTGl1X2JORmVrYkZLSF9vQllTWUhXdDlkOFJDZ0hWTzk5bkNPY0dJVzlHWXA2SHhPM1ZZNk9VX2s5R2dtT1NDSTI3QmduNGhoMlBZRlowRV9zSkk4TXdWQnBuTjdxLTBHLVZ1VDJsWkZMbFh3?oc=5"
-    },
-    {
-      "n": 12,
       "theme": "Other",
-      "text": "The Central Bank of Nigeria (CBN) is digitalising fiscal data collection across Nigeria's 36 states, the Federal Capital Territory and 774 Local Government Areas.",
-      "outlet": "Nairametrics",
-      "url": "https://nairametrics.com/2026/11/10/cbn-digitalises-fiscal-data-collection-across-36-states-fct-and-774-lgas/"
-    },
-    {
-      "n": 13,
-      "theme": "Other",
-      "text": "The Nigeria Customs Service has handed over an intercepted consignment of liquefied petroleum gas (LPG) to the Nigerian Midstream and Downstream Petroleum Regulatory Authority (NMDPRA).",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPanZHbXBvZkY3V1JfSlUyVUVmeDN2ajlQNzV2dmNoMkRsRlRKTzBjcDBxMjFHcjNibHMwcU9SbUdGV0s5eTNXZUZEWkl4VENYVEEyY1RYaXZUUWFuQ3dBdi0tSGt6XzZTNkt1U0hPMEhwdTVGTmV2N2JPcXJaX19XLWNPVEtGLVhCWHU2NHo4OFJGZUNTdlk0Y0VMWFJlVkV2RkJYRUtsTkxlaEo0NmNfbFNRT0U?oc=5"
-    },
-    {
-      "n": 14,
-      "theme": "Regulation & enforcement",
-      "text": "Nigerian insurers' low underwriting capacity and reliance on offshore cover are reported to cost the aviation and maritime sectors about N500 billion yearly.",
+      "text": "British International Investment (BII) has invested $7 million in Okra, a Nigerian clean energy company, to expand access to clean energy in Nigeria.",
       "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ21jdkR3cVN3ckd2WVM0bDBkQmtOSXVUekY5WldDQ0g1Qmd0Qkt2U25iRnJLbkI5VXZnRkZYX1lQQ0dlV2N1ZU5hNGxFa3pPbzRWZTBIX3NLbk84VzdoU3lveWhYNDN3OXhMOXRYQ19vUkc3Z3VpbzM3S1VvOGVYdkc0MFpTWmdYZG1xZkpiLUpadlRrcFhGV0lMNk0tOFd4UnRidnNfNG4yS3k2ZHZCLTE5TTd1cTFnWkNB?oc=5"
-    },
-    {
-      "n": 15,
-      "theme": "Regulation & enforcement",
-      "text": "Enugu State authorities sealed four private hospitals operating illegally and warned against unsafe medical practices.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX0NnTkcteGZWMTE2d2JpSVdfSHNDZ2VZc1liSUpoODJSNFJuZlZpcWFya2FTVTlMZ01XWWlsY3pCOUMwSURhdDgwUXdlWEVDYy1vV2FrZWVFVXB0My1uM0R3ZUh0bjg1bnBIb21tMDBLWkxCajBXTVhENXBwMDdfaFFwVUUzTWh6M05BejdCTGtiNHdob2IxdmthbVRyNU9MUFluWlg4VENjYzFrZjVpcnhTZTNfcDQzQ0E?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWi1RX2RKWHhBQS1pRnA2MHZFM1o3RWJVMk5HYmxmVng2a1d4R244Qnh6WE5NLUNFOXluSEkxSkVvSzJwSTMxMUl3TGV6UFJ2WEU2dFVhYVg1a2syWVl6MjBkYkdMZUJlWE5uNDRSWHlBU3VwT2lJZkNXZUIwOWhfWmR6OTFKOEFQTnZmUDlpZHBtbmd0TVE?oc=5"
     }
   ],
-  "also_more": 3,
-  "psc": [
-    {
-      "text": "Xenergi reported as holding 49.6% of Premier Paints Plc",
-      "outlet": "Nairametrics",
-      "date": "Tue 10 Nov",
-      "url": "https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/",
-      "confidence": "Full article"
-    },
-    {
-      "text": "Trademarks Global Concepts Limited reported as holding 56.18% of eTranzact International Plc",
-      "outlet": "Nairametrics",
-      "date": "Tue 10 Nov",
-      "url": "https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/",
-      "confidence": "Full article"
-    }
-  ],
+  "also_more": 0,
+  "psc": [],
   "psc_more": 0,
-  "psc_keys": [
-    "trademarks global concepts limited|etranzact international|https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/",
-    "xenergi|premier paints|https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/"
-  ],
+  "psc_keys": [],
   "terms": [
     {
-      "term": "PSC",
-      "meaning": "person with significant control: owns or controls 5% or more of a Nigerian company (CAMA 2020)"
-    },
-    {
-      "term": "ICPC",
-      "meaning": "Independent Corrupt Practices and Other Related Offences Commission"
-    },
-    {
-      "term": "CBN",
-      "meaning": "Central Bank of Nigeria"
-    },
-    {
-      "term": "NGX",
-      "meaning": "Nigerian Exchange, the Lagos stock market"
-    },
-    {
-      "term": "NMDPRA",
-      "meaning": "Nigerian Midstream and Downstream Petroleum Regulatory Authority"
+      "term": "EFCC",
+      "meaning": "Economic and Financial Crimes Commission"
     },
     {
       "term": "NNPC",
@@ -369,11 +256,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 1
+    "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
 }

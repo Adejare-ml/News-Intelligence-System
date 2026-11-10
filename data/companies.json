@@ -473,10 +473,10 @@
   },
   {
     "Company": "NNPC Limited",
-    "Mention Count": 21,
-    "Last Seen": "2026-07-31 23:58",
-    "Industry": "General",
-    "Risk Level": "Low",
+    "Mention Count": 23,
+    "Last Seen": "2026-11-10 20:31",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 101,
+    "Mention Count": 102,
     "Last Seen": "2026-10-29 2:18",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
@@ -10278,5 +10278,37 @@
     "Industry": "General",
     "Risk Level": "Medium",
     "First Seen": "2026-11-10 15:39"
+  },
+  {
+    "Company": "Nigerian National Petroleum Corporation",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-10 20:31",
+    "Industry": "Oil & Gas",
+    "Risk Level": "High",
+    "First Seen": "2026-11-10 20:31"
+  },
+  {
+    "Company": "Coalition of Progressive Academics and Stakeholders",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-10 20:32",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-10 20:32"
+  },
+  {
+    "Company": "British International Investment",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-10 20:32",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-10 20:32"
+  },
+  {
+    "Company": "Okra",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-10 20:32",
+    "Industry": "Clean Energy",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-10 20:32"
   }
 ]
