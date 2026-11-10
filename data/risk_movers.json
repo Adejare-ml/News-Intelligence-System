@@ -4,10 +4,10 @@
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
       "recent_avg": 45.0,
-      "previous_avg": 18.3,
-      "delta": 26.7,
+      "previous_avg": 20.0,
+      "delta": 25.0,
       "recent_mentions": 2,
-      "previous_mentions": 3
+      "previous_mentions": 2
     },
     {
       "key": "opay",
@@ -17,15 +17,6 @@
       "delta": -22.3,
       "recent_mentions": 2,
       "previous_mentions": 4
-    },
-    {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 13.3,
-      "previous_avg": 24.3,
-      "delta": -11.0,
-      "recent_mentions": 3,
-      "previous_mentions": 7
     },
     {
       "key": "house of representatives",
@@ -43,7 +34,7 @@
       "previous_avg": 17.6,
       "delta": 7.4,
       "recent_mentions": 4,
-      "previous_mentions": 21
+      "previous_mentions": 19
     },
     {
       "key": "customs service",
@@ -73,13 +64,22 @@
       "previous_mentions": 1
     },
     {
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 13.3,
+      "previous_avg": 16.7,
+      "delta": -3.4,
+      "recent_mentions": 3,
+      "previous_mentions": 3
+    },
+    {
       "key": "bola tinubu",
       "label": "Bola Tinubu",
       "recent_avg": 20.0,
-      "previous_avg": 18.8,
-      "delta": 1.2,
+      "previous_avg": 18.3,
+      "delta": 1.7,
       "recent_mentions": 3,
-      "previous_mentions": 8
+      "previous_mentions": 6
     },
     {
       "key": "economic and financial crimes commission",
@@ -98,6 +98,15 @@
       "delta": -0.8,
       "recent_mentions": 5,
       "previous_mentions": 8
+    },
+    {
+      "key": "enugu state government",
+      "label": "Enugu State Government",
+      "recent_avg": 20.0,
+      "previous_avg": 20.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 1
     },
     {
       "key": "joint admissions and matriculation board",
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "bank of industry",
-      "label": "Bank of Industry",
-      "recent_avg": 12.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-09 23:02:45"
+  "generated": "2026-11-10 04:40:04"
 }

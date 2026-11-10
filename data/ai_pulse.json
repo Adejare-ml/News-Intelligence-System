@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-09 23:02:40",
+  "generated": "2026-11-10 04:39:59",
   "models": [
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 1613,
+      "likes": 1658,
       "downloads": 24747
     },
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 1033,
+      "likes": 1068,
       "downloads": 11755
     },
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 1792,
+      "likes": 1804,
       "downloads": 27926
     },
     {
       "id": "ricursiveAI/Ripple-65B-Preview",
       "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
       "task": "",
-      "likes": 450,
+      "likes": 458,
       "downloads": 5835
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 11256,
+      "likes": 11280,
       "downloads": 2720096
-    },
-    {
-      "id": "ccore/Qwen3.5-4B-3D-Coder",
-      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
-      "task": "",
-      "likes": 948,
-      "downloads": 289466
     },
     {
       "id": "NousResearch/Arete-27B",
       "url": "https://huggingface.co/NousResearch/Arete-27B",
       "task": "text-generation",
-      "likes": 358,
+      "likes": 371,
       "downloads": 2407
+    },
+    {
+      "id": "ccore/Qwen3.5-4B-3D-Coder",
+      "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
+      "task": "",
+      "likes": 956,
+      "downloads": 289466
     },
     {
       "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "task": "image-text-to-text",
-      "likes": 2774,
+      "likes": 2786,
       "downloads": 1530688
     }
   ],
   "papers": [
     {
-      "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
-      "url": "https://huggingface.co/papers/2611.08175",
-      "upvotes": 24
+      "title": "JoVox: Joint Hierarchical Flow Matching for Lightweight Voxel Generation",
+      "url": "https://huggingface.co/papers/2611.10690",
+      "upvotes": 1
     },
     {
-      "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
-      "url": "https://huggingface.co/papers/2611.09891",
-      "upvotes": 6
-    },
-    {
-      "title": "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection",
-      "url": "https://huggingface.co/papers/2611.08647",
-      "upvotes": 4
-    },
-    {
-      "title": "Human-Centred, Risk-Constrained Evaluation of Financial Document Recognition: Evidence, Critical Errors, and Selective Automation",
-      "url": "https://huggingface.co/papers/2611.02775",
+      "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "url": "https://huggingface.co/papers/2611.08452",
       "upvotes": 5
     },
     {
-      "title": "Steerable Multi-Objective Group-Relative Preference Optimization with Jointly Trained Low-Rank Adapters",
-      "url": "https://huggingface.co/papers/2611.09634",
-      "upvotes": 7
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "url": "https://huggingface.co/papers/2610.42148",
+      "upvotes": 2
     },
     {
-      "title": "LowRAM: Low-Rank Keys and Amortised Values for Composable KV Cache Compression at Test-Time",
-      "url": "https://huggingface.co/papers/2611.07025",
-      "upvotes": 30
+      "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence",
+      "url": "https://huggingface.co/papers/2611.10771",
+      "upvotes": 9
+    },
+    {
+      "title": "Coding or Cheating? An Investigation of Frontier Coding LLMs",
+      "url": "https://huggingface.co/papers/2611.10404",
+      "upvotes": 2
+    },
+    {
+      "title": "ODE Policy: Robot Learning via Action Dynamics, Not Actions",
+      "url": "https://huggingface.co/papers/2611.01729",
+      "upvotes": 1
     }
   ]
 }
