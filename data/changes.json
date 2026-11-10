@@ -1,82 +1,32 @@
 {
   "new_companies": [
-    "3 Streams Synergy Limited",
-    "ABC Transport Plc",
-    "Accelerex Holdings",
-    "Access Bank Plc",
-    "Avante Consultants and Advisors Limited",
-    "KPMG Nigeria",
-    "Learn Africa Plc",
-    "Meristem Trustees Limited",
-    "Oida Group",
-    "Premier Paints Plc",
-    "Raenest",
-    "Remitise",
-    "Trademarks Global Concepts Limited",
-    "VFD Group Plc",
-    "Xenergi",
-    "eTranzact Global Limited"
+    "British International Investment",
+    "Coalition of Progressive Academics and Stakeholders",
+    "Nigerian National Petroleum Corporation",
+    "Okra"
   ],
   "new_people": [
-    "Abbas Tajudeen",
-    "Adebowale Fagbemi",
-    "Adedoyin Adeyinka",
-    "Afolabi Oladele",
-    "Ajayi Oluyemi",
-    "Akinwunmi Akinfemiwa",
-    "Alhaji Kabiru Yusuf",
-    "Aminu Abdullahi",
-    "Babalola Oluwole Awe",
-    "Benjamin Dabra",
-    "Binta Max-Gbinije",
-    "Bisi Aina",
-    "Chuma Ajene",
-    "Doron Grupper",
-    "Doseke Apkoriaye",
-    "Doyin Adelabu",
-    "Emeka Ene",
-    "Emeka Onwuamaegbu",
-    "Ernest Ereke",
-    "Fabian Ajogwu",
-    "Ifedayo Olaniyi Orimoloye",
-    "Ijeoma Emezie-Ezigbo",
-    "John Erinne",
-    "Julius Ihonvbere",
-    "M.K.O. Balogun",
-    "Mele Kyari",
-    "Mufida Bello Hussain",
-    "Mustapha Ajenifuja",
-    "Nuhu Habib",
-    "Ogaba Harry",
-    "Olanrewaju Bamisebi",
-    "Olanrewaju Oniyitan",
-    "Olatunde Akande",
-    "Oluseyi Kumapayi",
-    "Omobola Hollist",
-    "Oyekunle Gbenga",
-    "Temidayo Seriki",
-    "Yemi Ogundipe"
+    "Adams Oshiomhole",
+    "Ibrahim Dankwambo",
+    "Victor Umeh"
   ],
-  "psc_added": [
-    {
-      "person": "Trademarks Global Concepts Limited",
-      "company": "eTranzact International Plc"
-    },
-    {
-      "person": "Xenergi",
-      "company": "Premier Paints Plc"
-    }
-  ],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "N210tn audit queries: Kyari finally appears before Senate panel",
+      "url": "https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/",
+      "risk": 78.0
+    }
+  ],
   "counts": {
-    "new_companies": 16,
-    "new_people": 38,
-    "psc_added": 2,
+    "new_companies": 4,
+    "new_people": 3,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-11-10 15:41:11"
+  "generated": "2026-11-10 20:33:48"
 }

@@ -1,64 +1,84 @@
 {
-  "generated": "2026-11-10 15:41:13",
+  "generated": "2026-11-10 20:33:50",
   "models": [
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 1782,
+      "likes": 1838,
       "downloads": 26470
     },
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 1142,
+      "likes": 1169,
       "downloads": 14378
     },
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 1837,
+      "likes": 1858,
       "downloads": 30721
     },
     {
       "id": "ricursiveAI/Ripple-65B-Preview",
       "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
       "task": "",
-      "likes": 470,
+      "likes": 477,
       "downloads": 6480
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 11327,
+      "likes": 11358,
       "downloads": 2791606
     },
     {
       "id": "NousResearch/Arete-27B",
       "url": "https://huggingface.co/NousResearch/Arete-27B",
       "task": "text-generation",
-      "likes": 384,
+      "likes": 393,
       "downloads": 3431
     },
     {
       "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "task": "image-text-to-text",
-      "likes": 2819,
+      "likes": 2830,
       "downloads": 1459029
     },
     {
       "id": "ccore/Qwen3.5-4B-3D-Coder",
       "url": "https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder",
       "task": "",
-      "likes": 967,
+      "likes": 968,
       "downloads": 319405
     }
   ],
   "papers": [
+    {
+      "title": "FraudBench: A Legal Evaluation of AI Deception",
+      "url": "https://huggingface.co/papers/2611.12167",
+      "upvotes": 1
+    },
+    {
+      "title": "on\u00f3na: Twin Embeddings with Tied Unembeddings",
+      "url": "https://huggingface.co/papers/2611.10556",
+      "upvotes": 2
+    },
+    {
+      "title": "RidgeFill: Training-Free Late-Layer Cache Fill for Faster Prefill",
+      "url": "https://huggingface.co/papers/2611.09709",
+      "upvotes": 2
+    },
+    {
+      "title": "Creative Priming: Decoupling Process from Product to Escape the Creative Paradox",
+      "url": "https://huggingface.co/papers/2611.11740",
+      "upvotes": 1
+    },
     {
       "title": "Click3R: Interactive Stereo 3D Reconstruction with Sparse Correspondence Clicks",
       "url": "https://huggingface.co/papers/2611.12875",
@@ -68,26 +88,6 @@
       "title": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
       "url": "https://huggingface.co/papers/2610.37570",
       "upvotes": 3
-    },
-    {
-      "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment",
-      "url": "https://huggingface.co/papers/2611.12870",
-      "upvotes": 3
-    },
-    {
-      "title": "Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation",
-      "url": "https://huggingface.co/papers/2611.01112",
-      "upvotes": 2
-    },
-    {
-      "title": "Knowledge Graph-based Retrieval-Augmented Generation for Schema Matching",
-      "url": "https://huggingface.co/papers/2501.08686",
-      "upvotes": 0
-    },
-    {
-      "title": "Energy-Tweedie: Score meets Score, Energy meets Energy",
-      "url": "https://huggingface.co/papers/2512.23818",
-      "upvotes": 0
     }
   ]
 }
