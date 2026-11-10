@@ -121,8 +121,62 @@
       "risk": "Critical"
     },
     {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cd72c19626f6",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "044ec82597eb",
+      "label": "Presidential Foreign Intervention Promotion Council",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a5443515f025",
+      "label": "Nigerian Electricity Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "a99d3740770f",
       "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a7fb30b8c25a",
+      "label": "African Development Bank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "fa1f6b770d91",
+      "label": "Independent National Electoral Commission (INEC)",
       "type": "agency",
       "risk": "Low"
     },
@@ -133,8 +187,20 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "de0910f721a4",
+      "label": "Meter Acquisition Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "084a7c6a9ce5",
+      "label": "Ministry of Finance Incorporated",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "c0257b91c944",
+      "label": "FCT Lottery Regulatory Office",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,200 +241,8 @@
       "risk": "Low"
     },
     {
-      "id": "5cdf8c992852",
-      "label": "Nigerian Air Force",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9f778a9a1d4e",
-      "label": "SERAP",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f8f7bbd6535e",
-      "label": "Nigerian National Petroleum Company (NNPC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a10bb5746426",
-      "label": "Joint Admissions and Matriculation Board",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "02bcb5f5a7b4",
-      "label": "Jigawa State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3641df6a5c2b",
-      "label": "Federal Ministry of Education",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "de44b55175fc",
-      "label": "Zamfara State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c049605cdfa7",
-      "label": "National Library of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "3b41237fb8e0",
-      "label": "Transmission Company of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "1a17418ea885",
-      "label": "Bola Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "514496e0e74c",
-      "label": "Muhammadu Buhari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "89ae040ca567",
-      "label": "Olatunji-Bello",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c7ed2a62ac14",
-      "label": "Redeemer's University",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2ed383c1d506",
-      "label": "Former Managing Director, Warri Refinery",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7ead61f85e05",
-      "label": "Warri Refinery",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e2fde78a977f",
-      "label": "Elleman",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "aa0e4e6198bd",
-      "label": "Agbu Kefas",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c6e1b7b6fc07",
-      "label": "Ahmed Usman Ododo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "31cdf5f58157",
-      "label": "Mbah",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6ad86bc4a2de",
-      "label": "Tunji Alausa",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "5a094abf1abe",
-      "label": "Bola Ahmed Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c0bb480c6bd1",
-      "label": "Bashir Bayo Ojulari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6605d2b161d9",
-      "label": "Unnamed ex-banker",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a54268f37a2e",
-      "label": "Lawal",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "58c58351d674",
-      "label": "Olayemi Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "56a1ac14d764",
-      "label": "Nyesom Wike",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "20186135f191",
-      "label": "Nnaji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "503f12437e7f",
-      "label": "Hussaini Jallo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "d9f4b51cedf5",
-      "label": "Tajudeen Abbas",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "fb716fc8591c",
-      "label": "James Ibori",
+      "id": "5152c3f8bc4a",
+      "label": "Adeniyi Adeyemi",
       "type": "person",
       "risk": "Low"
     },
@@ -391,12 +265,6 @@
       "risk": "Low"
     },
     {
-      "id": "0ee08649f568",
-      "label": "Fabian Ajogwu (SAN)",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "9d77a1e81ddf",
       "label": "Imoni Akpofure",
       "type": "person",
@@ -409,10 +277,166 @@
       "risk": "Low"
     },
     {
-      "id": "d8e7926b6ad7",
-      "label": "Unnamed former Etisalat boss",
+      "id": "a81b2a825c1e",
+      "label": "Ogaba Harry",
       "type": "person",
       "risk": "Low"
+    },
+    {
+      "id": "09475ee4b539",
+      "label": "Office of the Chief Economic Adviser to the President",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "d185b12583e6",
+      "label": "Aminu Abdullahi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e2f88b47055c",
+      "label": "Office of the Secretary to the Government of the Federation",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "2a77edd5b8cb",
+      "label": "Oyekunle Gbenga",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "1ed14ffc2628",
+      "label": "Divine Dopacy Nigeria Limited",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "a256ae6d71a8",
+      "label": "Mele Kyari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "afc73118d371",
+      "label": "Chuma Ajene",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "d1a36097dfe6",
+      "label": "eTranzact International Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "055e8bf88608",
+      "label": "Benjamin Dabra",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b07edd3dd851",
+      "label": "Afolabi Oladele",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8c3be20a9349",
+      "label": "Binta Max-Gbinije",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7fb90ff7695c",
+      "label": "Emeka Onwuamaegbu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "5e232b57a9cd",
+      "label": "Akinwunmi Akinfemiwa",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "6f0ef31d8556",
+      "label": "Olatunde Akande",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "9b6acd27de49",
+      "label": "Doron Grupper",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "2c52962c9ff9",
+      "label": "Omobola Hollist",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f91f28e97a16",
+      "label": "Mustapha Ajenifuja",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "972ace82e99a",
+      "label": "Emeka Ene",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3b8f4952bc8b",
+      "label": "Premier Paints Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "ee15c8723739",
+      "label": "Adebowale Fagbemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "eedee0c26572",
+      "label": "John Erinne",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "859bcce6adc9",
+      "label": "Doseke Apkoriaye",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "604779397b81",
+      "label": "Adedoyin Adeyinka",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "804791123c57",
+      "label": "M.K.O. Balogun",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7d15f62e4dec",
+      "label": "Trademarks Global Concepts Limited",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "c39669440f36",
+      "label": "Xenergi",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "539d727618e7",
@@ -425,6 +449,12 @@
       "label": "Quickmart",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "0c25b2dab487",
+      "label": "Eligible Local Meter Manufacturers and Assemblers (LMMAs) and Meter Asset Providers (MAPs)",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "ab4dcffbf2e5",
@@ -463,6 +493,12 @@
       "risk": "Low"
     },
     {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "7f50eb5ca259",
       "label": "Yobe State Government",
       "type": "company",
@@ -477,142 +513,178 @@
   ],
   "edges": [
     {
-      "id": "599ed5bc3174",
-      "from": "1a17418ea885",
-      "to": "0c2be969618b",
-      "label": "Appointed as President of Nigeria"
-    },
-    {
-      "id": "c70e5e786ee6",
-      "from": "514496e0e74c",
-      "to": "0c2be969618b",
-      "label": "Appointed as Former President of Nigeria"
-    },
-    {
-      "id": "a1be7055605b",
-      "from": "89ae040ca567",
-      "to": "c7ed2a62ac14",
-      "label": "Appointed as Pro-Chancellor"
-    },
-    {
-      "id": "27081f17a833",
-      "from": "2ed383c1d506",
-      "to": "7ead61f85e05",
-      "label": "Appointed as Former Managing Director"
-    },
-    {
-      "id": "9e55cfe0906d",
-      "from": "e2fde78a977f",
-      "to": "09b47b7fac50",
-      "label": "Appointed as Police Commissioner"
-    },
-    {
-      "id": "28fae7776f5e",
-      "from": "aa0e4e6198bd",
-      "to": "737f70b3bdb8",
-      "label": "Appointed as Governor of Taraba State"
-    },
-    {
-      "id": "496ca7066a26",
-      "from": "c6e1b7b6fc07",
-      "to": "a0ce0506cbaa",
-      "label": "Appointed as Governor, Kogi State"
-    },
-    {
-      "id": "456bb67cfb9e",
-      "from": "31cdf5f58157",
-      "to": "a99d3740770f",
-      "label": "Appointed as Governor"
-    },
-    {
-      "id": "129bce9b28e3",
-      "from": "6ad86bc4a2de",
-      "to": "3641df6a5c2b",
-      "label": "Appointed as Minister of Education"
-    },
-    {
-      "id": "90d4f5fbf4b4",
-      "from": "5a094abf1abe",
-      "to": "0c2be969618b",
-      "label": "Appointed as President of Nigeria"
-    },
-    {
-      "id": "4e2bff94f21e",
-      "from": "c0bb480c6bd1",
-      "to": "f38bd75574f6",
-      "label": "Appointed as Group Chief Executive Officer, NNPC Limited"
-    },
-    {
-      "id": "5407642df18c",
-      "from": "a54268f37a2e",
-      "to": "de44b55175fc",
-      "label": "Appointed as Governor, Zamfara State"
-    },
-    {
-      "id": "fd1604102e20",
-      "from": "58c58351d674",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as Governor, Central Bank of Nigeria"
-    },
-    {
-      "id": "4f87337f3e1c",
-      "from": "56a1ac14d764",
-      "to": "beb91054dc85",
-      "label": "Appointed as Minister of the Federal Capital Territory"
-    },
-    {
-      "id": "ee851bbc96bf",
-      "from": "503f12437e7f",
-      "to": "1613f8dac921",
-      "label": "Appointed as Member, House of Representatives (Igabi Federal Constituency, Kaduna State)"
-    },
-    {
-      "id": "fbaaa6bad6d9",
-      "from": "d9f4b51cedf5",
-      "to": "1613f8dac921",
-      "label": "Appointed as Speaker, House of Representatives"
+      "id": "6db8be62206f",
+      "from": "5152c3f8bc4a",
+      "to": "044ec82597eb",
+      "label": "Appointed as Purported Director-General"
     },
     {
       "id": "52a49e23e458",
       "from": "44927a723e54",
       "to": "fd7d1376d4af",
-      "label": "Appointed as Independent Non-Executive Director"
+      "label": "Appointed as Independent non-executive director"
     },
     {
       "id": "c2f55f3a1eae",
       "from": "26da1f6fe318",
       "to": "fd7d1376d4af",
-      "label": "Appointed as Independent Non-Executive Director"
-    },
-    {
-      "id": "8c5d4bcd25d3",
-      "from": "0ee08649f568",
-      "to": "fd7d1376d4af",
-      "label": "Appointed as Non-Executive Director"
+      "label": "Appointed as Independent non-executive director"
     },
     {
       "id": "3f3500b4de58",
       "from": "9d77a1e81ddf",
       "to": "fd7d1376d4af",
-      "label": "Appointed as Non-Executive Director"
+      "label": "Appointed as Non-executive director"
     },
     {
       "id": "abf18b66b79a",
       "from": "1d6d92cfab39",
       "to": "fd7d1376d4af",
-      "label": "Appointed as Non-Executive Director"
+      "label": "Appointed as Non-executive director"
     },
     {
-      "id": "4018bda591c4",
-      "from": "d8e7926b6ad7",
-      "to": "dce5a31d3181",
+      "id": "8386e10ac2e7",
+      "from": "a81b2a825c1e",
+      "to": "09475ee4b539",
+      "label": "Appointed as Chief Accountant"
+    },
+    {
+      "id": "6903df320d02",
+      "from": "d185b12583e6",
+      "to": "e2f88b47055c",
+      "label": "Appointed as Assistant Chief Technical Officer"
+    },
+    {
+      "id": "2c12f5f355d8",
+      "from": "2a77edd5b8cb",
+      "to": "1ed14ffc2628",
+      "label": "Appointed as Managing Director"
+    },
+    {
+      "id": "84dd1610a5e9",
+      "from": "a256ae6d71a8",
+      "to": "d911eb1cbbc7",
+      "label": "Appointed as Former Group Chief Executive, NNPC Limited"
+    },
+    {
+      "id": "f1eb281b62d9",
+      "from": "afc73118d371",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "1b930ea544f0",
+      "from": "055e8bf88608",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "60b489670076",
+      "from": "b07edd3dd851",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "08b830662b5f",
+      "from": "8c3be20a9349",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Independent non-executive director"
+    },
+    {
+      "id": "78aec3839537",
+      "from": "7fb90ff7695c",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Independent non-executive director"
+    },
+    {
+      "id": "3a0af3b499fc",
+      "from": "5e232b57a9cd",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "954410e8c535",
+      "from": "6f0ef31d8556",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "3a3d28bc1f58",
+      "from": "9b6acd27de49",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "bddc2f1185fd",
+      "from": "2c52962c9ff9",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Independent non-executive director"
+    },
+    {
+      "id": "310df00d6e6b",
+      "from": "f91f28e97a16",
+      "to": "d1a36097dfe6",
+      "label": "Appointed as Independent non-executive director"
+    },
+    {
+      "id": "bb0925825418",
+      "from": "972ace82e99a",
+      "to": "3b8f4952bc8b",
+      "label": "Appointed as Board chairman"
+    },
+    {
+      "id": "f661415002ae",
+      "from": "ee15c8723739",
+      "to": "3b8f4952bc8b",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "5bb71afd4dc7",
+      "from": "eedee0c26572",
+      "to": "3b8f4952bc8b",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "b4050237bdf3",
+      "from": "859bcce6adc9",
+      "to": "3b8f4952bc8b",
+      "label": "Appointed as Non-executive director"
+    },
+    {
+      "id": "ae662d924557",
+      "from": "604779397b81",
+      "to": "3b8f4952bc8b",
       "label": "Appointed as Director"
+    },
+    {
+      "id": "3f41eef258e1",
+      "from": "804791123c57",
+      "to": "3b8f4952bc8b",
+      "label": "Appointed as Director"
+    },
+    {
+      "id": "faeedb2e3a5c",
+      "from": "7d15f62e4dec",
+      "to": "d1a36097dfe6",
+      "label": "PSC: 56.18%"
+    },
+    {
+      "id": "2c78b3f2aed8",
+      "from": "c39669440f36",
+      "to": "3b8f4952bc8b",
+      "label": "PSC: 49.6%"
     },
     {
       "id": "990674302105",
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
       "label": "PSC: 6.5%"
+    },
+    {
+      "id": "df014c224990",
+      "from": "0c25b2dab487",
+      "to": "a5443515f025",
+      "label": "Contract Awardee"
     },
     {
       "id": "41566a83c72b",
@@ -642,12 +714,6 @@
       "id": "0493c0641a9b",
       "from": "36ac0a198e4e",
       "to": "a99d3740770f",
-      "label": "Contract Awardee"
-    },
-    {
-      "id": "7bf4de3d8073",
-      "from": "7f50eb5ca259",
-      "to": "0c2be969618b",
       "label": "Contract Awardee"
     }
   ]

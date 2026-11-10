@@ -2,19 +2,19 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 944,
-      "mentions": 1572,
+      "companies": 950,
+      "mentions": 1582,
       "risk": {
         "Low": 834,
         "Critical": 57,
-        "Medium": 30,
-        "High": 23
+        "Medium": 32,
+        "High": 27
       }
     },
     {
       "industry": "Oil & Gas",
       "companies": 51,
-      "mentions": 241,
+      "mentions": 242,
       "risk": {
         "Medium": 18,
         "Low": 28,
@@ -25,7 +25,7 @@
     {
       "industry": "Banking",
       "companies": 29,
-      "mentions": 79,
+      "mentions": 81,
       "risk": {
         "Low": 23,
         "Medium": 6
@@ -34,10 +34,11 @@
     {
       "industry": "Telecoms",
       "companies": 15,
-      "mentions": 63,
+      "mentions": 64,
       "risk": {
-        "Low": 14,
-        "Medium": 1
+        "Low": 13,
+        "Medium": 1,
+        "High": 1
       }
     },
     {
@@ -149,6 +150,15 @@
       }
     },
     {
+      "industry": "Professional Services",
+      "companies": 5,
+      "mentions": 9,
+      "risk": {
+        "Low": 4,
+        "High": 1
+      }
+    },
+    {
       "industry": "Insurance",
       "companies": 7,
       "mentions": 8,
@@ -163,14 +173,6 @@
       "mentions": 8,
       "risk": {
         "Critical": 1
-      }
-    },
-    {
-      "industry": "Professional Services",
-      "companies": 4,
-      "mentions": 8,
-      "risk": {
-        "Low": 4
       }
     },
     {
@@ -189,6 +191,15 @@
       "risk": {
         "Low": 5,
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Manufacturing",
+      "companies": 4,
+      "mentions": 7,
+      "risk": {
+        "Low": 3,
+        "High": 1
       }
     },
     {
@@ -218,14 +229,6 @@
       }
     },
     {
-      "industry": "Manufacturing",
-      "companies": 3,
-      "mentions": 6,
-      "risk": {
-        "Low": 3
-      }
-    },
-    {
       "industry": "Non-Profit",
       "companies": 2,
       "mentions": 6,
@@ -246,6 +249,15 @@
       "companies": 1,
       "mentions": 5,
       "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Payments",
+      "companies": 4,
+      "mentions": 5,
+      "risk": {
+        "High": 3,
         "Low": 1
       }
     },
@@ -316,6 +328,14 @@
       }
     },
     {
+      "industry": "Investment",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Legal",
       "companies": 1,
       "mentions": 3,
@@ -372,6 +392,14 @@
       }
     },
     {
+      "industry": "Computer & Electronics",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Employer Association",
       "companies": 2,
       "mentions": 2,
@@ -401,14 +429,6 @@
       "mentions": 2,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Investment",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Low": 1
       }
     },
     {
@@ -606,14 +626,6 @@
       }
     },
     {
-      "industry": "Computer & Electronics",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Consultancy/Governance",
       "companies": 1,
       "mentions": 1,
@@ -646,14 +658,6 @@
       }
     },
     {
-      "industry": "Electronic Payments",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Energy Finance",
       "companies": 1,
       "mentions": 1,
@@ -663,6 +667,14 @@
     },
     {
       "industry": "Energy Market Intelligence",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
+      "industry": "Fintech / Payments",
       "companies": 1,
       "mentions": 1,
       "risk": {
@@ -990,5 +1002,5 @@
       }
     }
   ],
-  "generated": "2026-11-10 04:40:04"
+  "generated": "2026-11-10 15:41:25"
 }

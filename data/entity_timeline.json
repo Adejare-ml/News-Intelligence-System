@@ -64,7 +64,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 96,
+      "total_mentions": 97,
       "points": [
         {
           "week": "2026-09-14",
@@ -113,6 +113,12 @@
           "mentions": 3,
           "avg_risk": 13.3,
           "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -180,7 +186,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 68,
+      "total_mentions": 69,
       "points": [
         {
           "week": "2026-09-07",
@@ -238,8 +244,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 25.0,
+          "mentions": 2,
+          "avg_risk": 17.5,
           "max_risk": 25
         }
       ]
@@ -510,7 +516,7 @@
     {
       "key": "customs service",
       "label": "Nigeria Customs Service",
-      "total_mentions": 21,
+      "total_mentions": 22,
       "points": [
         {
           "week": "2026-09-14",
@@ -553,6 +559,12 @@
           "mentions": 2,
           "avg_risk": 22.5,
           "max_risk": 30
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -741,6 +753,55 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 4,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 27.5,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "national assembly",
       "label": "National Assembly",
       "total_mentions": 15,
@@ -780,49 +841,6 @@
           "mentions": 5,
           "avg_risk": 31.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 15,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 27.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 25.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 27.5,
-          "max_risk": 35
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -1253,6 +1271,37 @@
       ]
     },
     {
+      "key": "independent corrupt practices and other related offences commission",
+      "label": "Independent Corrupt Practices and Other Related Offences Commission",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 65.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "osun state government",
       "label": "Osun State Government",
       "total_mentions": 8,
@@ -1340,31 +1389,6 @@
       ]
     },
     {
-      "key": "independent corrupt practices and other related offences commission",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 65.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
       "key": "mtn",
       "label": "MTN Nigeria",
       "total_mentions": 7,
@@ -1386,6 +1410,80 @@
           "mentions": 3,
           "avg_risk": 15.0,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 28.3,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -1595,31 +1693,6 @@
       ]
     },
     {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 28.3,
-          "max_risk": 35
-        }
-      ]
-    },
-    {
       "key": "nasir el rufai",
       "label": "Nasir El-Rufai",
       "total_mentions": 6,
@@ -1728,43 +1801,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 32.5,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -2271,6 +2307,31 @@
           "mentions": 2,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "access",
+      "label": "Access Holdings Plc",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 43.5,
+          "max_risk": 62
         }
       ]
     },
@@ -2795,6 +2856,25 @@
       ]
     },
     {
+      "key": "electricity regulatory commission",
+      "label": "Nigerian Electricity Regulatory Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 27.5,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "exchange",
       "label": "Nigerian Exchange Group",
       "total_mentions": 4,
@@ -3065,18 +3145,18 @@
       ]
     },
     {
-      "key": "access",
-      "label": "Access Holdings Plc",
+      "key": "access bank",
+      "label": "Access Bank Plc",
       "total_mentions": 3,
       "points": [
         {
-          "week": "2026-10-05",
+          "week": "2026-09-28",
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
         },
         {
-          "week": "2026-11-02",
+          "week": "2026-10-05",
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
@@ -3084,8 +3164,27 @@
         {
           "week": "2026-11-09",
           "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
+      "key": "adeniyi adeyemi",
+      "label": "Adeniyi Adeyemi",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 60.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
         }
       ]
     },
@@ -3583,6 +3682,25 @@
       ]
     },
     {
+      "key": "mtn communications",
+      "label": "MTN Nigeria Communications Plc",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "maina",
       "label": "Maina",
       "total_mentions": 3,
@@ -4057,25 +4175,6 @@
       ]
     },
     {
-      "key": "access bank",
-      "label": "Access Bank",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "actionaid",
       "label": "ActionAid Nigeria",
       "total_mentions": 2,
@@ -4091,19 +4190,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "adeniyi adeyemi",
-      "label": "Adeniyi Adeyemi",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 60.0,
-          "max_risk": 75
         }
       ]
     },
@@ -4322,6 +4408,25 @@
           "mentions": 2,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "boye olusanya",
+      "label": "Boye Olusanya",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
         }
       ]
     },
@@ -4652,6 +4757,63 @@
       ]
     },
     {
+      "key": "ibrahim dikko",
+      "label": "Ibrahim Dikko",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
+      "key": "imoni akpofure",
+      "label": "Imoni Akpofure",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
+      "key": "independent national electoral commission inec",
+      "label": "Independent National Electoral Commission (INEC)",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "johnvents",
       "label": "Johnvents",
       "total_mentions": 2,
@@ -4735,15 +4897,21 @@
       ]
     },
     {
-      "key": "mtn communications",
-      "label": "MTN Nigeria Communications Plc",
+      "key": "lwazi bam",
+      "label": "Lwazi Bam",
       "total_mentions": 2,
       "points": [
         {
           "week": "2026-11-02",
-          "mentions": 2,
+          "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
         }
       ]
     },
@@ -4808,6 +4976,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "meter acquisition fund",
+      "label": "Meter Acquisition Fund",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -5226,19 +5407,6 @@
       ]
     },
     {
-      "key": "electricity regulatory commission",
-      "label": "Nigerian Electricity Regulatory Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 27.5,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "national petroleum company nnpc",
       "label": "Nigerian National Petroleum Company (NNPC)",
       "total_mentions": 2,
@@ -5404,6 +5572,25 @@
       ]
     },
     {
+      "key": "omatek ventures",
+      "label": "Omatek Ventures Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "ondo state government",
       "label": "Ondo State Government",
       "total_mentions": 2,
@@ -5515,6 +5702,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "presidential foreign intervention promotion council",
+      "label": "Presidential Foreign Intervention Promotion Council",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
         }
       ]
     },
@@ -5756,6 +5962,25 @@
       ]
     },
     {
+      "key": "vfd",
+      "label": "VFD Group Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "wayvepay",
       "label": "WayvePay",
       "total_mentions": 2,
@@ -5801,6 +6026,25 @@
       ]
     },
     {
+      "key": "etranzact international",
+      "label": "eTranzact International Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "indrive",
       "label": "inDrive",
       "total_mentions": 2,
@@ -5816,6 +6060,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "3 streams synergy",
+      "label": "3 Streams Synergy Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -5842,6 +6099,19 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "abc transport",
+      "label": "ABC Transport Plc",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
         }
       ]
     },
@@ -6002,6 +6272,19 @@
       ]
     },
     {
+      "key": "abbas tajudeen",
+      "label": "Abbas Tajudeen",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
       "key": "abdularasheed maina",
       "label": "Abdularasheed Maina",
       "total_mentions": 1,
@@ -6093,6 +6376,19 @@
       ]
     },
     {
+      "key": "accelerex",
+      "label": "Accelerex Holdings",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "access bank kenya",
       "label": "Access Bank Kenya",
       "total_mentions": 1,
@@ -6128,6 +6424,32 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "adebowale fagbemi",
+      "label": "Adebowale Fagbemi",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
+      "key": "adedoyin adeyinka",
+      "label": "Adedoyin Adeyinka",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
         }
       ]
     },
@@ -6169,215 +6491,7 @@
           "max_risk": 85
         }
       ]
-    },
-    {
-      "key": "afeni",
-      "label": "Afeni",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "afri invoice",
-      "label": "Afri Invoice",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "africa energy bank",
-      "label": "Africa Energy Bank",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "africa50",
-      "label": "Africa50",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "african african university",
-      "label": "African African University",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "african continental free trade area",
-      "label": "African Continental Free Trade Area",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "african diaspora network",
-      "label": "African Diaspora Network",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "african university of science and technology",
-      "label": "African University of Science and Technology",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "afrinvest",
-      "label": "Afrinvest",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "agbi",
-      "label": "Agbi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "agbu kefas",
-      "label": "Agbu Kefas",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "agence fran\u00e7aise de d\u00e9veloppement",
-      "label": "Agence Fran\u00e7aise de D\u00e9veloppement",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "agip energy and natural resources",
-      "label": "Agip Energy and Natural Resources Ltd",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "agro climatic resilience in semi arid landscapes",
-      "label": "Agro-Climatic Resilience in Semi-Arid Landscapes",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "agunloye",
-      "label": "Agunloye",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
-      "key": "agusto co",
-      "label": "Agusto & Co.",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-11-10 04:40:04"
+  "generated": "2026-11-10 15:41:25"
 }
