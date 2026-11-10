@@ -1,38 +1,36 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-09 23:02:06 (UTC)
-**Run Window:** 2026-11-09, all runs to 23:02 (run 3 of the day)
+**Generated on:** 2026-11-10 04:39:31 (UTC)
+**Run Window:** 2026-11-10, all runs to 04:39 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 9
+- **Total Articles Processed:** 3
 - **High Risk Signals:** 0
-- **Appointments Logged:** 3
+- **Appointments Logged:** 0
 - **Procurement Awards:** 0
 
 ---
 
 # Executive Intelligence Summary: Nigerian Corporate Transparency & MDA Monitoring
 
-**Report date:** 9 November 2026
-**Coverage:** All articles published on 9 November 2026 up to 23:02 (run 3 of the day). All items below rest on headline-level reporting only, so details are limited.
+**Report date:** 10 November 2026
+**Coverage:** All articles published on 10 November 2026 up to 04:39 (run 1 of the day). Three articles were reviewed, and all were assessed from headlines only.
 
 ### Key Developments
 
-- **Court sets aside forfeiture order against ex-Warri refinery MD**. A Nigerian court has set aside a forfeiture order against a former managing director of the Warri refinery. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPY3VSdnp1ajdNd2UxTVliYWFVR2lvYkphZHBTaDE1VXViMWtzTnVJNWdPVmtUUmFTaHdjQzAxb0FiRncxMjM0TkdOZU15dUJZTGl1X2JORmVrYkZLSF9vQllTWUhXdDlkOFJDZ0hWTzk5bkNPY0dJVzlHWXA2SHhPM1ZZNk9VX2s5R2dtT1NDSTI3QmduNGhoMlBZRlowRV9zSkk4TXdWQnBuTjdxLTBHLVZ1VDJsWkZMbFh3?oc=5))  
-- **Access Holdings mulls exit from foreign subsidiary to meet CBN rule – Report**. Access Holdings is reportedly considering an exit from a foreign subsidiary to comply with a Central Bank of Nigeria (CBN) rule. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1wFBVV95cUxNeUNldjFxdVcycjBiTVRPa2c5TXNIUmRIVzdTVk5iNHA2MFBoVURwTHBTWDRhQkV0aHV0MEFXcmZyalVMYlJLN2xTRnEtajdOeFpIWWRuRE5vcHVyNW01TUREOU1SQ0RCczhZTnhiZ01EMXpkQmg0STZ6aElqSVlHb3k5MllqdzRScUo2XzJZXzlGVTBVWVNJT0oyNGVyX0cwSzhwOUJKVE9oUTBhME5NcWN2c1drckpJR2hUS3ZSN2xpdWtxNVZqb3FfQk1KdUxNUGM3azFYWQ?oc=5))  
-- **Government policy:** A fresh presidential approval for the Ibom Deep Seaport raises questions over the 2020 clearance under Buhari and the project's financing. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi_AFBVV95cUxQTDk0aFFmWGloRE5SaGhRbXhFTlFHRDdSc2hEbzNsSFR3Y0lpWU1GeHpvZGtleUV6VHBjQjN3UmJFcG0wUWZ0VUw4dUxDVk5kMUQwZkdLSEhoU2IxTl9MMm9vVUw3T181cHpUQ3NZMnFvS2NMc2QwRTRscUtxOTRac2Y2Tm1zR3A2UF9PVzd4djBjdWF2YUxzenoxTVVkSEpldXQwYUx6aERxSDFfNGE1TWlIYVJ5VUZWLW45ejhUenM5YXpfeUc4dGk3SUtXTUhPeENDVmNCZldmM0NvakExdGxrVUpYX21IYmVZaWVYV1hwbVg5d2lCVGhaeXI?oc=5))  
-- **Lagos hails TEHC’s Louisville mixed-use development in Eko Atlantic**. Lagos State has praised TEHC's Louisville mixed-use development in Eko Atlantic, according to a Premium Times Nigeria report. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiugFBVV95cUxPeDdhdHp5QlNtQjV4R3lURlluUlVUZE9EOFJ5Zy0zaU85T2hMY3ppRUZsdGNuNlh1bWMyUEd6QnQ2aWNOcjh6N3ZCanFTYlRfMDFKVTRaV2Z6N1gyeHpFLXVGeWk0aHhZUkkwem9SQXJWbkhHeFdNXzM2NFZGblNHeEdnczZ5X1pObkhHYlprRVJuMTFEeno4dm8wN25JMTFHMEZKYmtDOWpjLWZwem10NVFNWGQxd3ZvY1E?oc=5))  
+- **Enugu State health enforcement:** Authorities sealed four illegal private hospitals and warned against unsafe medical practices. The operators and their ownership were not disclosed. Risk is Low (25). ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiugFBVV95cUxNX0NnTkcteGZWMTE2d2JpSVdfSHNDZ2VZc1liSUpoODJSNFJuZlZpcWFya2FTVTlMZ01XWWlsY3pCOUMwSURhdDgwUXdlWEVDYy1vV2FrZWVFVXB0My1uM0R3ZUh0bjg1bnBIb21tMDBLWkxCajBXTVhENXBwMDdfaFFwVUUzTWh6M05BejdCTGtiNHdob2IxdmthbVRyNU9MUFluWlg4VENjYzFrZjVpcnhTZTNfcDQzQ0E?oc=5))  
+- **Insurance sector capacity:** Low insurer capacity and reliance on offshore cover reportedly cost the aviation and maritime sectors about N500 billion a year. The report points to reform as a way to keep premiums onshore. Risk is Low (20). ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ21jdkR3cVN3ckd2WVM0bDBkQmtOSXVUekY5WldDQ0g1Qmd0Qkt2U25iRnJLbkI5VXZnRkZYX1lQQ0dlV2N1ZU5hNGxFa3pPbzRWZTBIX3NLbk84VzdoU3lveWhYNDN3OXhMOXRYQ19vUkc3Z3VpbzM3S1VvOGVYdkc0MFpTWmdYZG1xZkpiLUpadlRrcFhGV0lMNk0tOFd4UnRidnNfNG4yS3k2ZHZCLTE5TTd1cTFnWkNB?oc=5))  
 
 ### High Risk Alerts
-No high-risk items today.
+
+Nothing in today's early coverage scored High. The highest-rated item is the Medium-risk Mambilla procurement commentary. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMisAFBVV95cUxNY3lvUmNCOXAzUHkwS0I1bEtqR1ZFUWJEMmE1S0ZpNEJnVDNZMUgzRUV4cEdZU2JXVnZuMjR0NkRxSExkUmQ1ZkNBX1FhczNWdzNPdFh3alN5WFhzU0Y4SDl2c3NBc3Y5VzgwR002Rm5vcldsS281bFdOX0I4VGE5WmlLSzAwZnM1Sm95d3ZKOUdxTjFwRzQ3MWtLdE1MNm50eTQyYVd6NnVmU01sX3E2OQ?oc=5))
 
 ### Beneficial Ownership & PSC Disclosures
 
-No verified significant-control holdings appear in any of today's records, so there are no PSC disclosures, PEP flags or pending filings to report.
+The articles carry no verified PSC disclosures, so there are no holders, percentages, PEP flags or pending filings to report.
 
 ### Procurement & Board Changes
 
-- **Appointment:** Ex-LASU Vice-Chancellor Olatunji-Bello was appointed Redeemer's University's first female Pro-Chancellor. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZDAyNXhKb1gxYlBjSHptV2k3Vi0wSVJDbk1WLWl5U2pfaTR0NGlkLVVkUWM5a0ZtaUxObW9MWl9Ma1JVQnVjcFlub0FYZEt2bU9YeXEtaUR5MVE3RWV5YkhTLTFDdEVheHNHVzh1N2I5Z1FZWFNvN2N1YXZFZXNGb0gxZ3JETkk4Y29vWnJnRmN6eGNQdWNCUzRSY0ZVVUYxbGN1dGF6UjZ2MXB0TFR3dzRnNlpveXdaMk9LcUhYcGg3XzQ2YVNkOWRjQWludHlQTjNUZjBqTHpHQQ?oc=5))  
-- **Police leadership:** Niger State has a new police commissioner after Elleman's retirement. The appointee was not named in the text. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTkhQaFpPMkd3bEFpSURzVXhGNkhydVRtTzZnb3R4cXVHNmxIajE3R3YtNHFkRmw4UC11U2s5UEhYVjQwaHRCOXhPRGxOSXJHOGh2T1gwMzVnd21YbWNhT1FxN2wzd3NqNnUwUGJwbHpIRmN4MDBhaEl2OU9UWlduU2lRYkowUF9KZ2lmNFNLN0tkUDhDby1ROEtCVGtZLU5hSC1GNFg1UVVxd2FKbnR5dG96cDI0VHBfQmpn?oc=5))  
+- **Mambilla contract awards:** The piece argues for reform of how contracts are awarded. It reports no specific award, bidder or value, and no board changes. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMisAFBVV95cUxNY3lvUmNCOXAzUHkwS0I1bEtqR1ZFUWJEMmE1S0ZpNEJnVDNZMUgzRUV4cEdZU2JXVnZuMjR0NkRxSExkUmQ1ZkNBX1FhczNWdzNPdFh3alN5WFhzU0Y4SDl2c3NBc3Y5VzgwR002Rm5vcldsS281bFdOX0I4VGE5WmlLSzAwZnM1Sm95d3ZKOUdxTjFwRzQ3MWtLdE1MNm50eTQyYVd6NnVmU01sX3E2OQ?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

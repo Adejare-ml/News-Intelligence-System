@@ -1,16 +1,16 @@
 {
-  "edition": "20261110-11428-preview",
+  "edition": "20261110-11442-preview",
   "preview": true,
-  "built_at": "2026-11-09 23:02:45",
+  "built_at": "2026-11-10 04:40:04",
   "date": "Tuesday 10 November 2026",
   "subject": "AURA · Tue 10 Nov · Court sets aside forfeiture order against ex-Warri refinery MD",
-  "preheader": "Also: Access Holdings mulls exit from foreign subsidiary to meet CBN rule – Report · 4 stories, 0 risk alerts",
+  "preheader": "Also: Access Holdings mulls exit from foreign subsidiary to meet CBN rule – Report · 7 stories, 0 risk alerts",
   "since": "Mon 9 Nov, 18:32 Lagos",
-  "through_id": 11428,
+  "through_id": 11442,
   "stats": {
-    "reports": 4,
-    "stories": 4,
-    "outlets": 1,
+    "reports": 7,
+    "stories": 7,
+    "outlets": 2,
     "risk_alerts": 0,
     "public_money": 0,
     "appointments": 1,
@@ -28,12 +28,12 @@
       "outlet": "Premium Times"
     },
     {
-      "text": "A Nigerian court has set aside a forfeiture order against a former managing director of the Warri refinery.",
+      "text": "An opinion-style piece in The Guardian Nigeria News calls for reform of contract awards for the Mambilla hydroelectric project.",
       "card": 2,
-      "outlet": "Premium Times"
+      "outlet": "The Guardian"
     },
     {
-      "text": "Lagos State has praised TEHC's Louisville mixed-use development in Eko Atlantic, according to a Premium Times Nigeria report.",
+      "text": "A Nigerian court has set aside a forfeiture order against a former managing director of the Warri refinery.",
       "card": 3,
       "outlet": "Premium Times"
     }
@@ -72,6 +72,34 @@
     {
       "n": 2,
       "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "Mambilla hydroelectric project: Reforming contract awards for public good",
+      "byline": "The Guardian · Tue 10 Nov, 04:33 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "An opinion-style piece in The Guardian Nigeria News calls for reform of contract awards for the Mambilla hydroelectric project. The headline frames the project as a public-interest procurement matter. The article text supplied is limited to the title, so no specific award, contractor, or amount is reported.",
+      "key_facts": [
+        "The article is titled 'Mambilla hydroelectric project: Reforming contract awards for public good'."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Mambilla Hydroelectric Project"
+      ],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNY3lvUmNCOXAzUHkwS0I1bEtqR1ZFUWJEMmE1S0ZpNEJnVDNZMUgzRUV4cEdZU2JXVnZuMjR0NkRxSExkUmQ1ZkNBX1FhczNWdzNPdFh3alN5WFhzU0Y4SDl2c3NBc3Y5VzgwR002Rm5vcldsS281bFdOX0I4VGE5WmlLSzAwZnM1Sm95d3ZKOUdxTjFwRzQ3MWtLdE1MNm50eTQyYVd6NnVmU01sX3E2OQ?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
+      "theme": "Regulation & enforcement",
       "event_type": "Other",
       "flags": [
         "Allegation, not a finding"
@@ -102,68 +130,72 @@
       "also_more": 0
     },
     {
-      "n": 3,
-      "theme": "Other",
-      "event_type": "Other",
+      "n": 4,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
       "flags": [],
       "alert": false,
       "risk": "",
-      "headline": "Lagos hails TEHC’s Louisville mixed-use development in Eko Atlantic",
-      "byline": "Premium Times · Mon 9 Nov, 20:18 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "Lagos State has praised TEHC's Louisville mixed-use development in Eko Atlantic, according to a Premium Times Nigeria report.",
+      "headline": "Insurance reform: Insurers’ low capacity, offshore cover cost aviation, maritime N500b yearly",
+      "byline": "The Guardian · Tue 10 Nov, 05:05 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "Nigerian insurers' low underwriting capacity and reliance on offshore cover are reported to cost the aviation and maritime sectors about N500 billion yearly. The report points to insurance reform as a way to retain premiums onshore. The article's text is limited to its headline, so further detail is not available.",
       "key_facts": [],
       "timeline": [],
       "headline_only": true,
-      "analysis": [
-        "Why it matters: The article reports a government endorsement of a private real estate project in Lagos but gives no ownership, financial or regulatory details to assess."
-      ],
+      "analysis": [],
       "ownership_caveat": "",
-      "named": [
-        "TEHC",
-        "Eko Atlantic"
-      ],
+      "named": [],
       "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeDdhdHp5QlNtQjV4R3lURlluUlVUZE9EOFJ5Zy0zaU85T2hMY3ppRUZsdGNuNlh1bWMyUEd6QnQ2aWNOcjh6N3ZCanFTYlRfMDFKVTRaV2Z6N1gyeHpFLXVGeWk0aHhZUkkwem9SQXJWbkhHeFdNXzM2NFZGblNHeEdnczZ5X1pObkhHYlprRVJuMTFEeno4dm8wN25JMTFHMEZKYmtDOWpjLWZwem10NVFNWGQxd3ZvY1E?oc=5"
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ21jdkR3cVN3ckd2WVM0bDBkQmtOSXVUekY5WldDQ0g1Qmd0Qkt2U25iRnJLbkI5VXZnRkZYX1lQQ0dlV2N1ZU5hNGxFa3pPbzRWZTBIX3NLbk84VzdoU3lveWhYNDN3OXhMOXRYQ19vUkc3Z3VpbzM3S1VvOGVYdkc0MFpTWmdYZG1xZkpiLUpadlRrcFhGV0lMNk0tOFd4UnRidnNfNG4yS3k2ZHZCLTE5TTd1cTFnWkNB?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
-      "n": 4,
-      "theme": "People",
-      "event_type": "Appointment",
+      "n": 5,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
       "flags": [],
       "alert": false,
       "risk": "",
-      "headline": "Niger gets new police commissioner as Elleman retires",
-      "byline": "Premium Times · Mon 9 Nov, 19:16 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "Niger State has received a new police commissioner following the retirement of Elleman. The change in police leadership was reported by Premium Times Nigeria. The article text provided contains only the headline and no further details.",
-      "key_facts": [
-        "Niger State gets a new police commissioner",
-        "Elleman has retired as police commissioner"
-      ],
+      "headline": "Enugu seals four illegal private hospitals, warns against unsafe medical practices",
+      "byline": "The Guardian · Mon 9 Nov, 20:40 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "Enugu State authorities sealed four private hospitals operating illegally and warned against unsafe medical practices. The action targets facilities found operating without proper authorisation. No further details on the operators or ownership were reported.",
+      "key_facts": [],
       "timeline": [],
       "headline_only": true,
-      "analysis": [
-        "Why it matters: A change in senior police command affects state security leadership, though the article provides no further detail on the appointee or the process."
-      ],
+      "analysis": [],
       "ownership_caveat": "",
       "named": [
-        "Niger State Police Command",
-        "Elleman"
+        "Enugu State Government"
       ],
       "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTkhQaFpPMkd3bEFpSURzVXhGNkhydVRtTzZnb3R4cXVHNmxIajE3R3YtNHFkRmw4UC11U2s5UEhYVjQwaHRCOXhPRGxOSXJHOGh2T1gwMzVnd21YbWNhT1FxN2wzd3NqNnUwUGJwbHpIRmN4MDBhaEl2OU9UWlduU2lRYkowUF9KZ2lmNFNLN0tkUDhDby1ROEtCVGtZLU5hSC1GNFg1UVVxd2FKbnR5dG96cDI0VHBfQmpn?oc=5"
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX0NnTkcteGZWMTE2d2JpSVdfSHNDZ2VZc1liSUpoODJSNFJuZlZpcWFya2FTVTlMZ01XWWlsY3pCOUMwSURhdDgwUXdlWEVDYy1vV2FrZWVFVXB0My1uM0R3ZUh0bjg1bnBIb21tMDBLWkxCajBXTVhENXBwMDdfaFFwVUUzTWh6M05BejdCTGtiNHdob2IxdmthbVRyNU9MUFluWlg4VENjYzFrZjVpcnhTZTNfcDQzQ0E?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     }
   ],
-  "also": [],
+  "also": [
+    {
+      "n": 6,
+      "theme": "Other",
+      "text": "Lagos State has praised TEHC's Louisville mixed-use development in Eko Atlantic, according to a Premium Times Nigeria report.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeDdhdHp5QlNtQjV4R3lURlluUlVUZE9EOFJ5Zy0zaU85T2hMY3ppRUZsdGNuNlh1bWMyUEd6QnQ2aWNOcjh6N3ZCanFTYlRfMDFKVTRaV2Z6N1gyeHpFLXVGeWk0aHhZUkkwem9SQXJWbkhHeFdNXzM2NFZGblNHeEdnczZ5X1pObkhHYlprRVJuMTFEeno4dm8wN25JMTFHMEZKYmtDOWpjLWZwem10NVFNWGQxd3ZvY1E?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "People",
+      "text": "Niger State has received a new police commissioner following the retirement of Elleman.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOTkhQaFpPMkd3bEFpSURzVXhGNkhydVRtTzZnb3R4cXVHNmxIajE3R3YtNHFkRmw4UC11U2s5UEhYVjQwaHRCOXhPRGxOSXJHOGh2T1gwMzVnd21YbWNhT1FxN2wzd3NqNnUwUGJwbHpIRmN4MDBhaEl2OU9UWlduU2lRYkowUF9KZ2lmNFNLN0tkUDhDby1ROEtCVGtZLU5hSC1GNFg1UVVxd2FKbnR5dG96cDI0VHBfQmpn?oc=5"
+    }
+  ],
   "also_more": 0,
   "psc": [],
   "psc_more": 0,

@@ -1,24 +1,17 @@
 {
-  "new_companies": [
-    "Eko Atlantic",
-    "TEHC",
-    "Warri Refinery"
-  ],
-  "new_people": [
-    "Elleman",
-    "Former Managing Director, Warri Refinery"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 2,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-09 23:02:38"
+  "generated": "2026-11-10 04:39:57"
 }
