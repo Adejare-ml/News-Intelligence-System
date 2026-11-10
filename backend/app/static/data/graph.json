@@ -121,6 +121,18 @@
       "risk": "Critical"
     },
     {
+      "id": "a99d3740770f",
+      "label": "Enugu State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "1b235c4535a4",
+      "label": "Mambilla Hydroelectric Project",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -205,12 +217,6 @@
       "risk": "Low"
     },
     {
-      "id": "a99d3740770f",
-      "label": "Enugu State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "3641df6a5c2b",
       "label": "Federal Ministry of Education",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "3b41237fb8e0",
       "label": "Transmission Company of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "83dcee8c7135",
-      "label": "Islamic Development Bank",
       "type": "agency",
       "risk": "Low"
     },
