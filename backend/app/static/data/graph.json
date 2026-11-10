@@ -46,7 +46,7 @@
       "id": "d911eb1cbbc7",
       "label": "NNPC Limited",
       "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "c0f6baef22e7",
@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -141,6 +147,12 @@
     {
       "id": "a61e97dc06d8",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bf682efac4e",
+      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,6 +187,12 @@
       "risk": "Low"
     },
     {
+      "id": "e5e05b704829",
+      "label": "Office of the Auditor-General for the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "fa1f6b770d91",
       "label": "Independent National Electoral Commission (INEC)",
       "type": "agency",
@@ -205,39 +223,27 @@
       "risk": "Low"
     },
     {
-      "id": "9d67de6b1eb2",
-      "label": "Ibom Deep Seaport",
+      "id": "a99cc0a7da68",
+      "label": "Senate Committee on Public Accounts",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "09b47b7fac50",
-      "label": "Niger State Police Command",
+      "id": "43580e647597",
+      "label": "Lagos Waste Management Authority (LAWMA)",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
+      "id": "bedf3e3e9be1",
+      "label": "Babajide Sanwo-Olu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a0ce0506cbaa",
-      "label": "Kogi State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "737f70b3bdb8",
-      "label": "Taraba State Government",
-      "type": "agency",
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -316,6 +322,12 @@
       "id": "a256ae6d71a8",
       "label": "Mele Kyari",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "6eac15c47af6",
+      "label": "NNPC",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -421,12 +433,6 @@
       "risk": "Low"
     },
     {
-      "id": "804791123c57",
-      "label": "M.K.O. Balogun",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "7d15f62e4dec",
       "label": "Trademarks Global Concepts Limited",
       "type": "psc",
@@ -513,6 +519,12 @@
   ],
   "edges": [
     {
+      "id": "1e4b69d5e8fd",
+      "from": "bedf3e3e9be1",
+      "to": "9aef00190386",
+      "label": "Appointed as Governor, Lagos State"
+    },
+    {
       "id": "6db8be62206f",
       "from": "5152c3f8bc4a",
       "to": "044ec82597eb",
@@ -561,10 +573,10 @@
       "label": "Appointed as Managing Director"
     },
     {
-      "id": "84dd1610a5e9",
+      "id": "3376c7d0c696",
       "from": "a256ae6d71a8",
-      "to": "d911eb1cbbc7",
-      "label": "Appointed as Former Group Chief Executive, NNPC Limited"
+      "to": "6eac15c47af6",
+      "label": "Appointed as Former Group Chief Executive, NNPC"
     },
     {
       "id": "f1eb281b62d9",
@@ -653,12 +665,6 @@
     {
       "id": "ae662d924557",
       "from": "604779397b81",
-      "to": "3b8f4952bc8b",
-      "label": "Appointed as Director"
-    },
-    {
-      "id": "3f41eef258e1",
-      "from": "804791123c57",
       "to": "3b8f4952bc8b",
       "label": "Appointed as Director"
     },
