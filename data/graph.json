@@ -121,12 +121,6 @@
       "risk": "Critical"
     },
     {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -135,6 +129,30 @@
     {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4134e2d62095",
+      "label": "Office of the Accountant-General of the Federation",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "dc77ed2cf37a",
+      "label": "Supreme Court of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,15 +241,57 @@
       "risk": "Low"
     },
     {
-      "id": "a99cc0a7da68",
-      "label": "Senate Committee on Public Accounts",
-      "type": "agency",
+      "id": "2388a11cf55e",
+      "label": "Ola Olukoyede",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "43580e647597",
-      "label": "Lagos Waste Management Authority (LAWMA)",
-      "type": "agency",
+      "id": "a256ae6d71a8",
+      "label": "Mele Kyari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e7095455fd33",
+      "label": "Lateef Fagbemi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "33e047d24b95",
+      "label": "Dele Oyewale",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "c72c04ad366f",
+      "label": "Mojisola Dada",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "be85bb19de61",
+      "label": "Lagos State Special Offences Court",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "5e417f1fcdd7",
+      "label": "Ismaila Mustapha (Mompha)",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b73e06c8a24e",
+      "label": "Ismalob Global Investment Limited",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -319,12 +379,6 @@
       "risk": "Low"
     },
     {
-      "id": "a256ae6d71a8",
-      "label": "Mele Kyari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "6eac15c47af6",
       "label": "NNPC",
       "type": "company",
@@ -391,48 +445,6 @@
       "risk": "Low"
     },
     {
-      "id": "f91f28e97a16",
-      "label": "Mustapha Ajenifuja",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "972ace82e99a",
-      "label": "Emeka Ene",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3b8f4952bc8b",
-      "label": "Premier Paints Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "ee15c8723739",
-      "label": "Adebowale Fagbemi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "eedee0c26572",
-      "label": "John Erinne",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "859bcce6adc9",
-      "label": "Doseke Apkoriaye",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "604779397b81",
-      "label": "Adedoyin Adeyinka",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "7d15f62e4dec",
       "label": "Trademarks Global Concepts Limited",
       "type": "psc",
@@ -443,6 +455,12 @@
       "label": "Xenergi",
       "type": "psc",
       "risk": "High"
+    },
+    {
+      "id": "3b8f4952bc8b",
+      "label": "Premier Paints Plc",
+      "type": "company",
+      "risk": "Medium"
     },
     {
       "id": "539d727618e7",
@@ -518,6 +536,42 @@
     }
   ],
   "edges": [
+    {
+      "id": "173d8cf4554e",
+      "from": "2388a11cf55e",
+      "to": "0bcaaf453cd3",
+      "label": "Appointed as EFCC Chairman"
+    },
+    {
+      "id": "b45550736252",
+      "from": "a256ae6d71a8",
+      "to": "ebba2aef82e9",
+      "label": "Appointed as Former Group Chief Executive Officer"
+    },
+    {
+      "id": "606deb410b35",
+      "from": "e7095455fd33",
+      "to": "0c2be969618b",
+      "label": "Appointed as Attorney-General of the Federation and Minister of Justice"
+    },
+    {
+      "id": "b5cda71eebf2",
+      "from": "33e047d24b95",
+      "to": "0bcaaf453cd3",
+      "label": "Appointed as EFCC Spokesman"
+    },
+    {
+      "id": "a91a198ec02e",
+      "from": "c72c04ad366f",
+      "to": "be85bb19de61",
+      "label": "Appointed as Judge, Lagos State Special Offences Court"
+    },
+    {
+      "id": "2f27d86f176c",
+      "from": "5e417f1fcdd7",
+      "to": "b73e06c8a24e",
+      "label": "Appointed as Social media personality, defendant"
+    },
     {
       "id": "1e4b69d5e8fd",
       "from": "bedf3e3e9be1",
@@ -631,42 +685,6 @@
       "from": "2c52962c9ff9",
       "to": "d1a36097dfe6",
       "label": "Appointed as Independent non-executive director"
-    },
-    {
-      "id": "310df00d6e6b",
-      "from": "f91f28e97a16",
-      "to": "d1a36097dfe6",
-      "label": "Appointed as Independent non-executive director"
-    },
-    {
-      "id": "bb0925825418",
-      "from": "972ace82e99a",
-      "to": "3b8f4952bc8b",
-      "label": "Appointed as Board chairman"
-    },
-    {
-      "id": "f661415002ae",
-      "from": "ee15c8723739",
-      "to": "3b8f4952bc8b",
-      "label": "Appointed as Non-executive director"
-    },
-    {
-      "id": "5bb71afd4dc7",
-      "from": "eedee0c26572",
-      "to": "3b8f4952bc8b",
-      "label": "Appointed as Non-executive director"
-    },
-    {
-      "id": "b4050237bdf3",
-      "from": "859bcce6adc9",
-      "to": "3b8f4952bc8b",
-      "label": "Appointed as Non-executive director"
-    },
-    {
-      "id": "ae662d924557",
-      "from": "604779397b81",
-      "to": "3b8f4952bc8b",
-      "label": "Appointed as Director"
     },
     {
       "id": "faeedb2e3a5c",

@@ -64,7 +64,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 101,
+      "total_mentions": 102,
       "points": [
         {
           "week": "2026-09-14",
@@ -116,8 +116,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 5,
-          "avg_risk": 45.6,
+          "mentions": 6,
+          "avg_risk": 43.8,
           "max_risk": 78
         }
       ]
@@ -125,7 +125,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 92,
+      "total_mentions": 96,
       "points": [
         {
           "week": "2026-09-07",
@@ -183,16 +183,16 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 55.0,
-          "max_risk": 55
+          "mentions": 5,
+          "avg_risk": 50.4,
+          "max_risk": 72
         }
       ]
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 69,
+      "total_mentions": 70,
       "points": [
         {
           "week": "2026-09-07",
@@ -250,8 +250,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 2,
-          "avg_risk": 17.5,
+          "mentions": 3,
+          "avg_risk": 16.7,
           "max_risk": 25
         }
       ]
@@ -1196,34 +1196,9 @@
       ]
     },
     {
-      "key": "corporate affairs commission",
-      "label": "Corporate Affairs Commission",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 7,
-          "avg_risk": 22.9,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        }
-      ]
-    },
-    {
       "key": "nnpc",
       "label": "NNPC Limited",
-      "total_mentions": 9,
+      "total_mentions": 10,
       "points": [
         {
           "week": "2026-09-14",
@@ -1245,9 +1220,34 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 3,
-          "avg_risk": 45.0,
+          "mentions": 4,
+          "avg_risk": 40.0,
           "max_risk": 55
+        }
+      ]
+    },
+    {
+      "key": "corporate affairs commission",
+      "label": "Corporate Affairs Commission",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 7,
+          "avg_risk": 22.9,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -1699,6 +1699,19 @@
       ]
     },
     {
+      "key": "mele kyari",
+      "label": "Mele Kyari",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 6,
+          "avg_risk": 47.2,
+          "max_risk": 78
+        }
+      ]
+    },
+    {
       "key": "nasir el rufai",
       "label": "Nasir El-Rufai",
       "total_mentions": 6,
@@ -2138,19 +2151,6 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
-        }
-      ]
-    },
-    {
-      "key": "mele kyari",
-      "label": "Mele Kyari",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 5,
-          "avg_risk": 49.6,
-          "max_risk": 78
         }
       ]
     },
@@ -2984,6 +2984,37 @@
           "mentions": 1,
           "avg_risk": 85.0,
           "max_risk": 85
+        }
+      ]
+    },
+    {
+      "key": "ola olukoyede",
+      "label": "Ola Olukoyede",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -3941,6 +3972,31 @@
       ]
     },
     {
+      "key": "office of the accountant general of the federation",
+      "label": "Office of the Accountant General of the Federation",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "office of the auditor general for the federation",
       "label": "Office of the Auditor-General for the Federation",
       "total_mentions": 3,
@@ -4000,31 +4056,6 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "ola olukoyede",
-      "label": "Ola Olukoyede",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -5540,21 +5571,21 @@
       ]
     },
     {
-      "key": "office of the accountant general of the federation",
-      "label": "Office of the Accountant General of the Federation",
+      "key": "oando",
+      "label": "Oando Plc",
       "total_mentions": 2,
       "points": [
         {
-          "week": "2026-09-28",
+          "week": "2026-10-26",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         },
         {
-          "week": "2026-10-12",
+          "week": "2026-11-09",
           "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -5893,6 +5924,25 @@
           "mentions": 2,
           "avg_risk": 60.0,
           "max_risk": 75
+        }
+      ]
+    },
+    {
+      "key": "supreme court of",
+      "label": "Supreme Court of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -6483,33 +6533,7 @@
           "max_risk": 78
         }
       ]
-    },
-    {
-      "key": "adebowale fagbemi",
-      "label": "Adebowale Fagbemi",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 62.0,
-          "max_risk": 62
-        }
-      ]
-    },
-    {
-      "key": "adedoyin adeyinka",
-      "label": "Adedoyin Adeyinka",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 62.0,
-          "max_risk": 62
-        }
-      ]
     }
   ],
-  "generated": "2026-11-10 20:33:57"
+  "generated": "2026-11-11 02:50:12"
 }

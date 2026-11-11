@@ -473,7 +473,7 @@
   },
   {
     "Company": "NNPC Limited",
-    "Mention Count": 23,
+    "Mention Count": 24,
     "Last Seen": "2026-11-10 20:31",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
@@ -3480,8 +3480,8 @@
     "First Seen": ""
   },
   {
-    "Company": "Oando",
-    "Mention Count": 2,
+    "Company": "Oando Plc",
+    "Mention Count": 3,
     "Last Seen": "2026-11-01 14:01",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
@@ -10310,5 +10310,13 @@
     "Industry": "Clean Energy",
     "Risk Level": "Low",
     "First Seen": "2026-11-10 20:32"
+  },
+  {
+    "Company": "Ismalob Global Investment Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 02:47",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-11 02:47"
   }
 ]
