@@ -2,19 +2,19 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 951,
-      "mentions": 1563,
+      "companies": 952,
+      "mentions": 1564,
       "risk": {
         "Low": 834,
         "Critical": 57,
-        "Medium": 33,
+        "Medium": 34,
         "High": 27
       }
     },
     {
       "industry": "Oil & Gas",
       "companies": 53,
-      "mentions": 267,
+      "mentions": 269,
       "risk": {
         "Medium": 19,
         "Low": 28,
@@ -1010,5 +1010,5 @@
       }
     }
   ],
-  "generated": "2026-11-10 20:33:57"
+  "generated": "2026-11-11 02:50:12"
 }

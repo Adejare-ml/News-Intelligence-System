@@ -1,32 +1,31 @@
 {
   "new_companies": [
-    "British International Investment",
-    "Coalition of Progressive Academics and Stakeholders",
-    "Nigerian National Petroleum Corporation",
-    "Okra"
+    "Ismalob Global Investment Limited",
+    "Oando Plc"
   ],
   "new_people": [
-    "Adams Oshiomhole",
-    "Ibrahim Dankwambo",
-    "Victor Umeh"
+    "Dele Oyewale",
+    "Ismaila Mustapha (Mompha)",
+    "Lateef Fagbemi",
+    "Mojisola Dada"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "N210tn audit queries: Kyari finally appears before Senate panel",
-      "url": "https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/",
-      "risk": 78.0
+      "title": "EFCC recovers $3m, N1.3bn from two oil firms - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5",
+      "risk": 72.0
     }
   ],
   "counts": {
-    "new_companies": 4,
-    "new_people": 3,
+    "new_companies": 2,
+    "new_people": 4,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 1
   },
-  "generated": "2026-11-10 20:33:48"
+  "generated": "2026-11-11 02:50:03"
 }

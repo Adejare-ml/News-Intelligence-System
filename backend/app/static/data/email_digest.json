@@ -1,18 +1,18 @@
 {
-  "edition": "20261110-11516-preview",
+  "edition": "20261111-11551-preview",
   "preview": true,
-  "built_at": "2026-11-10 20:33:57",
-  "date": "Tuesday 10 November 2026",
-  "subject": "AURA alert · Tue 10 Nov · N210tn audit queries: Kyari finally appears before Senate panel",
-  "preheader": "Also: NNPC Audit Report: Former GMD tells lawmakers ₦210 trillion isn’t missing · 8 stories, 1 risk alert",
+  "built_at": "2026-11-11 02:50:12",
+  "date": "Wednesday 11 November 2026",
+  "subject": "AURA alert · Wed 11 Nov · N210tn audit queries: Kyari finally appears before Senate panel",
+  "preheader": "Also: NNPC Audit Report: Former GMD tells lawmakers ₦210 trillion isn’t missing · 13 stories, 2 risk alerts",
   "since": "Tue 10 Nov, 16:41 Lagos",
-  "through_id": 11516,
+  "through_id": 11551,
   "stats": {
-    "reports": 9,
-    "stories": 8,
+    "reports": 17,
+    "stories": 13,
     "outlets": 6,
-    "risk_alerts": 1,
-    "public_money": 3,
+    "risk_alerts": 2,
+    "public_money": 4,
     "appointments": 1,
     "ownership": 0
   },
@@ -26,12 +26,12 @@
       "outlet": "BusinessDay"
     },
     {
-      "text": "A former Group Managing Director of the Nigerian National Petroleum Company (NNPC) told lawmakers that ₦210 trillion referenced in an audit report is not missing.",
+      "text": "The Economic and Financial Crimes Commission (EFCC) recovered $3 million and N1.3 billion in unremitted revenues from two firms.",
       "card": 2,
       "outlet": "Premium Times"
     },
     {
-      "text": "The Economic and Financial Crimes Commission (EFCC) recovered $3 million and N1.3 billion in unremitted revenues from two firms.",
+      "text": "A former Group Managing Director of the Nigerian National Petroleum Company (NNPC) told lawmakers that ₦210 trillion referenced in an audit report is not missing.",
       "card": 3,
       "outlet": "Premium Times"
     }
@@ -93,6 +93,50 @@
     },
     {
       "n": 2,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert",
+        "Developing"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: Medium · 55/100",
+      "headline": "EFCC recovers $3m, N1.3bn unremitted revenues from two firms, hands over funds to RMAFC",
+      "byline": "Premium Times · Tue 10 Nov, 21:09 Lagos · latest of 2 reports from 2 outlets",
+      "outlet": "Premium Times",
+      "what_happened": "The Economic and Financial Crimes Commission (EFCC) recovered $3 million and N1.3 billion in unremitted revenues from two firms. The recovered funds were handed over to the Revenue Mobilisation Allocation and Fiscal Commission (RMAFC).",
+      "key_facts": [
+        "EFCC recovered $3m and N1.3bn in unremitted revenues from two firms.",
+        "The recovered funds were handed over to the RMAFC.",
+        "EFCC recovered $3m and N1.3bn from two oil firms. (Punch)"
+      ],
+      "timeline": [
+        "Tue 10 Nov, 19:52 · Punch: “EFCC recovers $3m, N1.3bn from two oil firms”",
+        "Tue 10 Nov, 21:09 · Premium Times: “EFCC recovers $3m, N1.3bn unremitted revenues from two firms, hands over funds to RMAFC” (lead report)"
+      ],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The recovery targets unremitted revenues owed to public finances, showing enforcement against companies that withheld government money."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Economic and Financial Crimes Commission",
+        "Revenue Mobilisation Allocation and Fiscal Commission"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNTMwcTl4YzhQdnpuT003d3BiOUJzdTdoYkhURC1NTnU2a0hYalM2b2p6ODNqLWRxeXc4SDBZei1lX0NsaHhwWElJemEyM3lTY3R0QU9FaXF6TEVvVUdMbGQ2WDRfVWQtS3Z4Y2pVajZDaFhhWmxCbzhSVjhQNkNXWEhLSFZUNmJhcE50dnVzQTJmQzQ3ZmtsR2I0Snc2eWxwazVoWnlacVhJaFNaQ1EzdDR4bmVTUW13TjBKVEpGbUlkZmdhYU45TU1mVVBMTkxJSXYyUm8zUW8?oc=5"
+      },
+      "also_reported": [
+        {
+          "outlet": "Punch",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5"
+        }
+      ],
+      "also_more": 0
+    },
+    {
+      "n": 3,
       "theme": "Public money",
       "event_type": "Audit",
       "flags": [],
@@ -121,91 +165,70 @@
       "also_more": 0
     },
     {
-      "n": 3,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 55/100",
-      "headline": "EFCC recovers $3m, N1.3bn unremitted revenues from two firms, hands over funds to RMAFC",
-      "byline": "Premium Times · Tue 10 Nov, 21:09 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The Economic and Financial Crimes Commission (EFCC) recovered $3 million and N1.3 billion in unremitted revenues from two firms. The recovered funds were handed over to the Revenue Mobilisation Allocation and Fiscal Commission (RMAFC).",
-      "key_facts": [
-        "EFCC recovered $3m and N1.3bn in unremitted revenues from two firms.",
-        "The recovered funds were handed over to the RMAFC."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: The recovery targets unremitted revenues owed to public finances, showing enforcement against companies that withheld government money."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Economic and Financial Crimes Commission",
-        "Revenue Mobilisation Allocation and Fiscal Commission"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNTMwcTl4YzhQdnpuT003d3BiOUJzdTdoYkhURC1NTnU2a0hYalM2b2p6ODNqLWRxeXc4SDBZei1lX0NsaHhwWElJemEyM3lTY3R0QU9FaXF6TEVvVUdMbGQ2WDRfVWQtS3Z4Y2pVajZDaFhhWmxCbzhSVjhQNkNXWEhLSFZUNmJhcE50dnVzQTJmQzQ3ZmtsR2I0Snc2eWxwazVoWnlacVhJaFNaQ1EzdDR4bmVTUW13TjBKVEpGbUlkZmdhYU45TU1mVVBMTkxJSXYyUm8zUW8?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
       "n": 4,
-      "theme": "Public money",
-      "event_type": "Audit",
+      "theme": "Regulation & enforcement",
+      "event_type": "Other",
       "flags": [],
       "alert": false,
       "risk": "AURA risk rating: Medium · 45/100",
-      "headline": "N210trn not missing from NNPC – Mele Kyari tells Senate",
-      "byline": "Vanguard · Tue 10 Nov, 19:21 Lagos",
-      "outlet": "Vanguard",
-      "what_happened": "Former NNPC Group Chief Executive Mele Kyari told the Senate that N210 trillion is not missing from the Nigerian National Petroleum Company. The claim was made in response to allegations about the sum's whereabouts.",
-      "key_facts": [
-        "Mele Kyari told the Senate that N210trn is not missing from NNPC."
-      ],
+      "headline": "Court strikes out EFCC’s N6bn money laundering charge against Mompha",
+      "byline": "Premium Times · Tue 10 Nov, 22:16 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Lagos State Special Offences Court in Ikeja struck out the N6 billion money laundering charge brought by the EFCC against social media personality Ismaila Mustapha, known as Mompha, and his company Ismalob Global Investment Limited.",
+      "key_facts": [],
       "timeline": [],
-      "headline_only": true,
+      "headline_only": false,
       "analysis": [
-        "Why it matters: The claim concerns a very large sum linked to Nigeria's national oil company, a public money and transparency matter that depends on the accounting Kyari presented to the Senate."
+        "Court outcome as reported by Premium Times; AURA has not checked court records."
       ],
       "ownership_caveat": "",
       "named": [
-        "NNPC",
-        "Mele Kyari"
+        "Ismalob Global Investment Limited",
+        "Economic and Financial Crimes Commission",
+        "Mojisola Dada",
+        "Ismaila Mustapha (Mompha)"
       ],
       "source": {
-        "outlet": "Vanguard",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXp0anVaX0pNc3V1aC10Q0dWb2RLb0VLbnRxOW95SWdwTlhlVnRlbHFXNXYtZ2F2Z2Z0OUstYWZoeEdWN1BFeFFLZXE1bHB1RjhYcExyWEFjSU9OeFZGU2ZOMk96NHgtOUFEbTRmc2FtMzdDalAxSUd2eWw1bEh3VHhzaWpGS0JkSzNkQnlRdzlmamxz0gGaAUFVX3lxTE9JcGhFQkxjQTc3ZkpHb0JJMUdfWnp1QTVIam16TnpfeHNNNnYtLVVCekFnUTk0b2VBOHU4TGIyMEExckZtTDJsOUtTNnBmRjF2YllUeXU3ZUItZlRhOERtNkdLTHRBdEw3UnRaT3V3Z1ZZalRKeEZaRGpzZ3ZlckZWcGFoYnVyaG5OWS1paEpzNHNySl9UZGx4cGc?oc=5"
+        "outlet": "Premium Times",
+        "url": "https://www.premiumtimesng.com/news/top-news/924296-court-strikes-out-efccs-n6bn-money-laundering-charge-against-mompha.html"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [],
+      "theme": "Public money",
+      "event_type": "Audit",
+      "flags": [
+        "Allegation, not a finding"
+      ],
       "alert": false,
       "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "No N210tn missing from NNPC — Kyari",
-      "byline": "Punch · Tue 10 Nov, 18:25 Lagos",
+      "headline": "LG autonomy: EFCC probes 774 chairmen’s spending",
+      "byline": "Punch · Tue 10 Nov, 00:50 Lagos",
       "outlet": "Punch",
-      "what_happened": "NNPC Limited Group Chief Executive Mele Kyari has denied that N210 trillion went missing from the state oil company, according to a Punch Newspapers report. The headline reflects a rebuttal of allegations concerning the corporation's finances. The article text provided is limited to the headline, so further details of the claims and the response are not available.",
-      "key_facts": [],
+      "what_happened": "The Economic and Financial Crimes Commission is secretly investigating the 774 local government chairmen across Nigeria over their management and spending of public funds since the councils gained financial autonomy, according to The PUNCH. Sources say the probe is being handled by EFCC zonal directorates across the 36 states and the Federal Capital Territory.",
+      "key_facts": [
+        "The EFCC is investigating the 774 local government chairmen over spending since councils gained financial autonomy.",
+        "The investigation is being handled by the commission's zonal directorates.",
+        "On July 11, 2024, the Supreme Court ruled local government financial autonomy unconstitutionally blocked by state governors."
+      ],
       "timeline": [],
-      "headline_only": true,
-      "analysis": [],
+      "headline_only": false,
+      "analysis": [
+        "As reported by Punch; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+      ],
       "ownership_caveat": "",
       "named": [
-        "Nigerian National Petroleum Company Limited",
-        "Mele Kyari"
+        "Economic and Financial Crimes Commission",
+        "Supreme Court of Nigeria",
+        "Office of the Accountant-General of the Federation",
+        "Ola Olukoyede",
+        "Lateef Fagbemi"
       ],
       "source": {
         "outlet": "Punch",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lSTRXZzhpSXBkUVIxN0pWVm9RZGFkbF9KOHZ4eG1aLUhDMEh4SkpvM2x1ZVdfQ3ZRY0JsSTM1dmNjT3JGb2Q4a2hPRjJrQzZDb3B6Ym5GVGZUaWc1akVvd19zbEI?oc=5"
+        "url": "https://punchng.com/lg-autonomy-efcc-probes-774-chairmens-spending/"
       },
       "also_reported": [],
       "also_more": 0
@@ -214,24 +237,59 @@
   "also": [
     {
       "n": 6,
+      "theme": "Public money",
+      "text": "Former NNPC Group Chief Executive Mele Kyari told the Senate that N210 trillion is not missing from the Nigerian National Petroleum Company.",
+      "outlet": "Vanguard",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXp0anVaX0pNc3V1aC10Q0dWb2RLb0VLbnRxOW95SWdwTlhlVnRlbHFXNXYtZ2F2Z2Z0OUstYWZoeEdWN1BFeFFLZXE1bHB1RjhYcExyWEFjSU9OeFZGU2ZOMk96NHgtOUFEbTRmc2FtMzdDalAxSUd2eWw1bEh3VHhzaWpGS0JkSzNkQnlRdzlmamxz0gGaAUFVX3lxTE9JcGhFQkxjQTc3ZkpHb0JJMUdfWnp1QTVIam16TnpfeHNNNnYtLVVCekFnUTk0b2VBOHU4TGIyMEExckZtTDJsOUtTNnBmRjF2YllUeXU3ZUItZlRhOERtNkdLTHRBdEw3UnRaT3V3Z1ZZalRKeEZaRGpzZ3ZlckZWcGFoYnVyaG5OWS1paEpzNHNySl9UZGx4cGc?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Regulation & enforcement",
+      "text": "Former Group Chief Executive of the NNPC, Mele Kyari, has denied that N210 trillion went missing from the Nigerian National Petroleum Company.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBNElOTzJwVEVBM1l4RXJJc052Wk9EMlFuSUo5OGtwSUthQ1doV1BzZVVTd09GZW9VdkpSQ1U0U2NnR3FvejhKb2d5WUx5MGpWbmlKMFczTnktR1VST1lfR1Jpb3BUYUxfUXlPOW9nb3lEX0E?oc=5"
+    },
+    {
+      "n": 8,
       "theme": "Business",
       "text": "The Coalition of Progressive Academics and Stakeholders (CPASJ) has sought clarification from the Nigerian National Petroleum Company Limited (NNPCL) over a reported ₦7.2 trillion profit despite a decline in revenue.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOV3E0SDdkUmpMQTZzNEVtNHpEcUJkTHJNVmtDY2cxRDFRVHlHb0pYSll3Q09mR2daTE9Ub0NMZkZQWVNuTi1ROXVxT1JYSnRpMkxOcUhYelRuTlZoSzRYNUJlTmUzTUNBYjluRlctbnZXSXVNYkQ1OTdrVXN2RmFlRXJYd1hqNE5vbnRCWERSa3AyYjBIcHdMSDJQdW5SOTJzdkFETHpNYmdGcG9V?oc=5"
     },
     {
-      "n": 7,
+      "n": 9,
       "theme": "People",
       "text": "Lagos State Governor Babajide Sanwo-Olu has appointed an acting Managing Director for the Lagos Waste Management Authority (LAWMA) amid a waste crisis.",
       "outlet": "Punch",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWEZlc2ZiWkFDeE1KejhvWEZlQ1gydzN0RnZlUC13OHJ6TGc5Mzh0MUNGN2Q5QmZTVm1kQ3VSajI1MWZCakh4dmVFcjloczdrWWJqV3R0eWV0ZHVwUll1cXFHaThvWmlUelFiZHNaOXNBN3Fqb1JfczBINzcybzdwNTBnb1VxV2JqSDlGSWk0akg5dC1HUlgweUJlZ21ZM1p3R2Jrd0ZlM29NTVRfcXMxNE9tQQ?oc=5"
     },
     {
-      "n": 8,
+      "n": 10,
+      "theme": "Regulation & enforcement",
+      "text": "NNPC and Oando have joined a global initiative to end gas flaring, as Nigeria's emissions continue to rise.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV01GTk1mMEpSMng3WlVTeDVfYTdrc1BUSVJmTjNaTjU1ajBibGtJaERFajFtM1JTM0JveUpsTFFKYk1kazM5aWY0WTZKYWhka1JDaG1MRU5NTWRoSTdXb1VxQllheHhhQmEyc3RhSU1POU9nWVdIS211UFAxS3lKV0p6Um4yRXFzUVhjTEpVLWM2VzV0Y2c2VEo4QnNfQzVJalVRTGFzR3FOSWFEa0FTaUFwNzFsQzFEUk56T3NVbnBfMkRzdEhnRTJXSGRGbExMckxrQ05HbmVRYTFFQklB?oc=5"
+    },
+    {
+      "n": 11,
       "theme": "Other",
       "text": "British International Investment (BII) has invested $7 million in Okra, a Nigerian clean energy company, to expand access to clean energy in Nigeria.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWi1RX2RKWHhBQS1pRnA2MHZFM1o3RWJVMk5HYmxmVng2a1d4R244Qnh6WE5NLUNFOXluSEkxSkVvSzJwSTMxMUl3TGV6UFJ2WEU2dFVhYVg1a2syWVl6MjBkYkdMZUJlWE5uNDRSWHlBU3VwT2lJZkNXZUIwOWhfWmR6OTFKOEFQTnZmUDlpZHBtbmd0TVE?oc=5"
+    },
+    {
+      "n": 12,
+      "theme": "Regulation & enforcement",
+      "text": "The Central Bank of Nigeria has introduced a digital fiscal reporting system for state governments and local government areas.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRlNkMTFvTVQyZEdULXZOV0ctMlJjZHpFdTZnUlloRWlKeW52aDhiTkFCd1huTXNtS0VwVUdlYy1iTVIwQnFsdnJpYzdzYUhyaDFXSWl4ZzNmZjcwMnJ6b3k2WHpyb2s0WFFBengxVVJVWmFqYkJuZzNmZC1VZ202Tk5hNVg?oc=5"
+    },
+    {
+      "n": 13,
+      "theme": "Other",
+      "text": "Nigeria's active telecom lines have reached 200 million, and 5G now accounts for more than 5% of connections.",
+      "outlet": "Vanguard",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTzBqR0pxeF9Tc2UyTXoweVRVS2RzZS1GNjg2Qk4zSWctSEpVc1EtT2pKWFlZWGlKd0wxdmF4RGxibmNXYUJkOXFydUE2M2xGdU9hRC1adHY1dGN6YWJCUkstNFpzbnFsdmIwNDQ3OFdJUzA1cDFoYmxyamx3Z3FHTHFjaUNCQWhOOUFUM2dmaV96TGtrRlZPdi14b0dIQdIBowFBVV95cUxQcXJpdGNBemw0aHM3em1SR2t3LXh3cElsaHpodUNpQ2w4WGIzalZFV29hSDRMT21IZ3E3RDRKYThkbEF6VHBMN2k0ZUZJbEt1ajZTT2hpcmVvaGlJTG9nbDBRTDM0UGdwMzA1M0g0TmwyRkpUakVWUnJXWUNBSE9JSzd1Vk5uLW9zd1FMQ1BwYmhSdTZRazB6Q3N0eHR3dW9RQTBr?oc=5"
     }
   ],
   "also_more": 0,
