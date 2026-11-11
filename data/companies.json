@@ -177,9 +177,9 @@
   },
   {
     "Company": "Skye Bank",
-    "Mention Count": 1,
-    "Last Seen": "2026-07-17 15:23",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-11 23:30",
+    "Industry": "Banking",
     "Risk Level": "Critical",
     "First Seen": ""
   },
@@ -5249,10 +5249,10 @@
   },
   {
     "Company": "MTN Nigeria",
-    "Mention Count": 17,
-    "Last Seen": "2026-11-11 15:13",
+    "Mention Count": 18,
+    "Last Seen": "2026-11-11 23:30",
     "Industry": "Telecoms",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -7113,7 +7113,7 @@
   },
   {
     "Company": "Airtel Nigeria",
-    "Mention Count": 5,
+    "Mention Count": 6,
     "Last Seen": "2026-10-31 13:18",
     "Industry": "Telecoms",
     "Risk Level": "Low",
@@ -9665,10 +9665,10 @@
   },
   {
     "Company": "Globacom",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-26 19:03",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-11 23:30",
     "Industry": "Telecoms",
-    "Risk Level": "Low",
+    "Risk Level": "Medium",
     "First Seen": "2026-10-26 19:03"
   },
   {
@@ -10382,5 +10382,13 @@
     "Industry": "Oil & Gas",
     "Risk Level": "High",
     "First Seen": "2026-11-11 20:13"
+  },
+  {
+    "Company": "T2",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 23:30",
+    "Industry": "Telecoms",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-11 23:30"
   }
 ]

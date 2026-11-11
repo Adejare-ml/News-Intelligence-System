@@ -6,11 +6,12 @@ Mentioned in 35 reports tracked by AURA.
 
 - Mentions tracked: 35
 - Holdings: 0
-- Recent stories: 4
+- Recent stories: 5
 - Last seen: 31 Jul 2026
 
 ## In the news
 
+- [EFCC re-arraigns ex-Skye Bank chair Tunde Ayeni on N15.6bn fraud charges](https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV2E2UkZQS3o5N0xXb252R3JNc1l1SzE4VEFDcl9nRFF4UGhUU003M3VIVmZwa3BOczRqSHpoeHF5emhnMVBHdko5emhNclZaaFNpa3VSaUFybnhXakFqaVNCaW9haGswakpSNnF2RktZQlcyUlVwLUhqNnZidzA1WXgwNVdubDNiUEVCRzdTZ0p1em40YWt4aG0yNWpVUTNfZGh6WVJIVjNsQ05TMTJuS3dKTFBHQXdiQkRHNk41eFlMYkdiU0ZZYg?oc=5) · Premium Times · 11 Nov 2026
 - [EFCC recovers $3m, N1.3bn from two oil firms](https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5) · The Punch · 10 Nov 2026
 - [EFCC recovers $3m, N1.3b from two oil firms](https://news.google.com/rss/articles/CBMifEFVX3lxTE1fdlhlVWR3QlBsSkR3TmYtbXBnY0dQTFh6MXhpSHpucEhIS09rTkJtZmJ6eE9iT2VaenoxaVNpWGhib1VndnRyOHJjZzRwYU41ck1sQWZoRm1sQWhoLWYteHlRZ0dHRHRQS3M1aU12c1BJZkdVWkFzTVJKeTU?oc=5) · The Eagle Online · 11 Nov 2026
 - [Court strikes out EFCC’s N6bn money laundering charge against Mompha](https://www.premiumtimesng.com/news/top-news/924296-court-strikes-out-efccs-n6bn-money-laundering-charge-against-mompha.html) · Premium Times · 10 Nov 2026

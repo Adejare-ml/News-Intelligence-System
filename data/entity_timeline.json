@@ -865,7 +865,7 @@
     {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
-      "total_mentions": 14,
+      "total_mentions": 15,
       "points": [
         {
           "week": "2026-09-21",
@@ -890,6 +890,12 @@
           "mentions": 4,
           "avg_risk": 17.5,
           "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -1313,6 +1319,37 @@
       ]
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "total_mentions": 9,
@@ -1365,37 +1402,6 @@
           "mentions": 1,
           "avg_risk": 62.0,
           "max_risk": 62
-        }
-      ]
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -1530,6 +1536,31 @@
       ]
     },
     {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 68.8,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 55.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "mele kyari",
       "label": "Mele Kyari",
       "total_mentions": 7,
@@ -1644,25 +1675,6 @@
           "mentions": 1,
           "avg_risk": 75.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 68.8,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 45
         }
       ]
     },
@@ -1993,6 +2005,31 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "airtel",
+      "label": "Airtel Nigeria",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -2493,25 +2530,6 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "airtel",
-      "label": "Airtel Nigeria",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -4903,6 +4921,25 @@
       ]
     },
     {
+      "key": "globacom",
+      "label": "Globacom",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "godswill akpabio",
       "label": "Godswill Akpabio",
       "total_mentions": 2,
@@ -6604,20 +6641,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "adamawa state post primary schools management board",
-      "label": "Adamawa State Post-Primary Schools Management Board",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
     }
   ],
-  "generated": "2026-11-11 20:15:42"
+  "generated": "2026-11-11 23:31:37"
 }
