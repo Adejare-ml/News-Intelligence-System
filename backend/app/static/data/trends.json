@@ -1,40 +1,40 @@
 {
   "window_days": 7,
-  "recent_articles": 97,
-  "previous_articles": 183,
+  "recent_articles": 104,
+  "previous_articles": 176,
   "rising": [
     {
-      "term": "power",
-      "recent": 7,
-      "previous": 1,
-      "change": 6
-    },
-    {
       "term": "kyari",
-      "recent": 6,
+      "recent": 7,
       "previous": 0,
-      "change": 6
+      "change": 7
     },
     {
       "term": "missing",
       "recent": 6,
-      "previous": 0,
-      "change": 6
+      "previous": 1,
+      "change": 5
     },
     {
-      "term": "nnpc",
-      "recent": 8,
-      "previous": 5,
-      "change": 3
+      "term": "power",
+      "recent": 6,
+      "previous": 2,
+      "change": 4
     },
     {
       "term": "audit",
-      "recent": 4,
+      "recent": 5,
       "previous": 1,
+      "change": 4
+    },
+    {
+      "term": "project",
+      "recent": 6,
+      "previous": 3,
       "change": 3
     },
     {
-      "term": "mtn",
+      "term": "ibom",
       "recent": 4,
       "previous": 1,
       "change": 3
@@ -52,13 +52,13 @@
       "change": 3
     },
     {
-      "term": "charges",
+      "term": "drive",
       "recent": 3,
       "previous": 0,
       "change": 3
     },
     {
-      "term": "four",
+      "term": "kogi",
       "recent": 3,
       "previous": 0,
       "change": 3
@@ -66,22 +66,16 @@
   ],
   "falling": [
     {
-      "term": "efcc",
-      "recent": 7,
-      "previous": 15,
-      "change": -8
-    },
-    {
       "term": "tinubu",
       "recent": 3,
       "previous": 11,
       "change": -8
     },
     {
-      "term": "approves",
-      "recent": 3,
-      "previous": 9,
-      "change": -6
+      "term": "oil",
+      "recent": 4,
+      "previous": 11,
+      "change": -7
     },
     {
       "term": "lagos",
@@ -93,12 +87,6 @@
       "term": "profit",
       "recent": 1,
       "previous": 7,
-      "change": -6
-    },
-    {
-      "term": "law",
-      "recent": 0,
-      "previous": 6,
       "change": -6
     },
     {
@@ -114,33 +102,45 @@
       "change": -6
     },
     {
-      "term": "oil",
-      "recent": 4,
-      "previous": 9,
+      "term": "efcc",
+      "recent": 8,
+      "previous": 13,
       "change": -5
     },
     {
-      "term": "court",
-      "recent": 3,
-      "previous": 8,
+      "term": "nigeria\u2019s",
+      "recent": 5,
+      "previous": 10,
+      "change": -5
+    },
+    {
+      "term": "fraud",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "reforms",
+      "recent": 1,
+      "previous": 6,
       "change": -5
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 64,
-      "previous": 134
+      "recent": 71,
+      "previous": 124
     },
     {
       "category": "Company",
-      "recent": 24,
-      "previous": 29
+      "recent": 23,
+      "previous": 34
     },
     {
       "category": "Legal",
-      "recent": 8,
-      "previous": 19
+      "recent": 9,
+      "previous": 17
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-11 02:50:11"
+  "generated": "2026-11-11 15:16:26"
 }

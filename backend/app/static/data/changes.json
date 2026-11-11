@@ -1,31 +1,32 @@
 {
   "new_companies": [
-    "Ismalob Global Investment Limited",
-    "Oando Plc"
+    "HSBC Amanah",
+    "I&M Bank Kenya",
+    "Otuogori bridge construction firm (unnamed in article)",
+    "Sterling Financial Holdings Company Plc",
+    "The Alternative Bank Limited",
+    "Two oil firms (unnamed)"
   ],
   "new_people": [
-    "Dele Oyewale",
-    "Ismaila Mustapha (Mompha)",
-    "Lateef Fagbemi",
-    "Mojisola Dada"
+    "Gul Khan",
+    "Hassan Yusuf",
+    "Ms Kuku",
+    "Muhtar Bakare",
+    "Unnamed former 9mobile CEO",
+    "Unnamed former Etisalat executive",
+    "Yemi Odubiyi"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "EFCC recovers $3m, N1.3bn from two oil firms - Punch Newspapers",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5",
-      "risk": 72.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 2,
-    "new_people": 4,
+    "new_companies": 6,
+    "new_people": 7,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-11-11 02:50:03"
+  "generated": "2026-11-11 15:16:19"
 }
