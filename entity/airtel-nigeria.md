@@ -2,13 +2,16 @@
 
 Company or body · Telecoms
 
-Mentioned in 5 reports tracked by AURA.
+Mentioned in 6 reports tracked by AURA.
 
-- Mentions tracked: 5
+- Mentions tracked: 6
 - Holdings: 0
+- Recent stories: 1
 - Last seen: 31 Oct 2026
 
-AURA has no recent reporting on Airtel Nigeria yet.
+## In the news
+
+- [Senate summons NCC, MTN, Airtel, others over poor network, unjustified airtime deductions](https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/) · BusinessDay · 11 Nov 2026
 
 ---
 

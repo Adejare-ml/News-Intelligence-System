@@ -2,11 +2,11 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 951,
-      "mentions": 1563,
+      "companies": 950,
+      "mentions": 1562,
       "risk": {
         "Low": 834,
-        "Critical": 57,
+        "Critical": 56,
         "Medium": 33,
         "High": 27
       }
@@ -24,20 +24,21 @@
     },
     {
       "industry": "Banking",
-      "companies": 33,
-      "mentions": 85,
+      "companies": 34,
+      "mentions": 87,
       "risk": {
+        "Critical": 1,
         "Low": 27,
         "Medium": 6
       }
     },
     {
       "industry": "Telecoms",
-      "companies": 15,
-      "mentions": 65,
+      "companies": 16,
+      "mentions": 69,
       "risk": {
-        "Low": 13,
-        "Medium": 1,
+        "Medium": 4,
+        "Low": 11,
         "High": 1
       }
     },
@@ -1010,5 +1011,5 @@
       }
     }
   ],
-  "generated": "2026-11-11 20:15:42"
+  "generated": "2026-11-11 23:31:37"
 }

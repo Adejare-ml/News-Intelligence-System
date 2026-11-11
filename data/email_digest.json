@@ -1,47 +1,114 @@
 {
-  "edition": "20261111-11643-preview",
+  "edition": "20261112-11677-preview",
   "preview": true,
-  "built_at": "2026-11-11 20:15:42",
-  "date": "Wednesday 11 November 2026",
-  "subject": "AURA · Wed 11 Nov · Mambilla project: Imoke insists contract award to Sunrise was invalid",
-  "preheader": "Also: FG moves to regulate scrap metal industry, curb infrastructure vandalism · 6 stories, 0 risk alerts",
+  "built_at": "2026-11-11 23:31:37",
+  "date": "Thursday 12 November 2026",
+  "subject": "AURA alert · Thu 12 Nov · 8 stories, 1 risk alert",
+  "preheader": "Mambilla project: Imoke insists contract award to Sunrise was invalid · 8 stories, 1 risk alert",
   "since": "Wed 11 Nov, 16:16 Lagos",
-  "through_id": 11643,
+  "through_id": 11677,
   "stats": {
-    "reports": 7,
-    "stories": 6,
-    "outlets": 3,
-    "risk_alerts": 0,
+    "reports": 9,
+    "stories": 8,
+    "outlets": 4,
+    "risk_alerts": 1,
     "public_money": 1,
     "appointments": 0,
     "ownership": 0
   },
   "nothing_in": [
-    "risk alerts",
     "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid.",
+      "text": "Premium Times reports: EFCC re-arraigns ex-Skye Bank chair Tunde Ayeni on N15.6bn fraud charges",
       "card": 1,
-      "outlet": "The Guardian"
-    },
-    {
-      "text": "The Federal Government has moved to regulate the scrap metal industry in an effort to curb infrastructure vandalism.",
-      "card": 2,
-      "outlet": "The Guardian"
-    },
-    {
-      "text": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector.",
-      "card": 3,
       "outlet": "Premium Times"
+    },
+    {
+      "text": "The Nigerian Senate has summoned the Nigerian Communications Commission and major telecom operators, including MTN, Airtel, Globacom and T2, over persistent network failures and alleged unjustified airtime deductions.",
+      "card": 2,
+      "outlet": "BusinessDay"
+    },
+    {
+      "text": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid.",
+      "card": 3,
+      "outlet": "The Guardian"
     }
   ],
   "insights": [],
   "cards": [
     {
       "n": 1,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert",
+        "Allegation, not a finding"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 55/100",
+      "headline": "EFCC re-arraigns ex-Skye Bank chair Tunde Ayeni on N15.6bn fraud charges",
+      "byline": "Premium Times · Wed 11 Nov, 23:29 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Economic and Financial Crimes Commission (EFCC) has re-arraigned Tunde Ayeni, a former chairman of Skye Bank, on fraud charges totalling N15.6bn. The re-arraignment concerns alleged fraud linked to a former bank chair, a matter of corporate governance accountability in Nigeria's banking sector.",
+      "key_facts": [
+        "EFCC re-arraigned ex-Skye Bank chair Tunde Ayeni."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Skye Bank",
+        "Economic and Financial Crimes Commission (EFCC)",
+        "Tunde Ayeni"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV2E2UkZQS3o5N0xXb252R3JNc1l1SzE4VEFDcl9nRFF4UGhUU003M3VIVmZwa3BOczRqSHpoeHF5emhnMVBHdko5emhNclZaaFNpa3VSaUFybnhXakFqaVNCaW9haGswakpSNnF2RktZQlcyUlVwLUhqNnZidzA1WXgwNVdubDNiUEVCRzdTZ0p1em40YWt4aG0yNWpVUTNfZGh6WVJIVjNsQ05TMTJuS3dKTFBHQXdiQkRHNk41eFlMYkdiU0ZZYg?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "Senate summons NCC, MTN, Airtel, others over poor network, unjustified airtime deductions",
+      "byline": "BusinessDay · Wed 11 Nov, 22:03 Lagos",
+      "outlet": "BusinessDay",
+      "what_happened": "The Nigerian Senate has summoned the Nigerian Communications Commission and major telecom operators, including MTN, Airtel, Globacom and T2, over persistent network failures and alleged unjustified airtime deductions. A Senate Committee on Communications, chaired by Ikra Bilbis, has been mandated to investigate subscriber losses and report back within four weeks.",
+      "key_facts": [
+        "The motion was sponsored by Tahir Monguno (APC, Borno North), the Senate Chief Whip.",
+        "The motion was presented by Lola Ashiru (APC, Kwara South), the Deputy Majority Leader."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Nigerian Communications Commission",
+        "MTN Nigeria",
+        "Airtel Nigeria",
+        "Globacom",
+        "T2"
+      ],
+      "source": {
+        "outlet": "BusinessDay",
+        "url": "https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
       "theme": "Public money",
       "event_type": "Procurement",
       "flags": [],
@@ -72,7 +139,7 @@
       "also_more": 0
     },
     {
-      "n": 2,
+      "n": 4,
       "theme": "Regulation & enforcement",
       "event_type": "Policy",
       "flags": [],
@@ -96,7 +163,7 @@
       "also_more": 0
     },
     {
-      "n": 3,
+      "n": 5,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
@@ -125,69 +192,25 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "UK backs Nigeria’s proposed $750m pension infrastructure fund",
-      "byline": "Punch · Wed 11 Nov, 00:20 Lagos",
-      "outlet": "Punch",
-      "what_happened": "The United Kingdom has backed Nigeria's proposed $750 million pension infrastructure fund.",
-      "key_facts": [
-        "The UK has backed Nigeria's proposed $750m pension infrastructure fund."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: A government-backed pension infrastructure fund of this size could direct long-term capital into Nigerian projects, though the article gives no detail on its governance or ownership structure."
-      ],
-      "ownership_caveat": "",
-      "named": [],
-      "source": {
-        "outlet": "Punch",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWlTaGZnd3M0akFvZV83aXB0RVZxem9abURwYVZLVEZlVWFodlFMWFZLbmNOenRoOUs1N1E4TjY2WFZBOUxVeUFoYmlNWDNwYkdJaGtra0JwanJzR0d0TmJ2aTIwT0c1UG5VMld6Z1BRRmZDc0ZZUFFkYXNRc2dYVXZXTU9QMmNsRVE?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Other",
-      "flags": [
-        "Allegation, not a finding"
-      ],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "Certificate Forgery: Court adjourns ex-minister Uche Nnaji’s suit",
-      "byline": "Premium Times · Wed 11 Nov, 16:38 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "A Nigerian court has adjourned a suit filed by former minister Uche Nnaji in a certificate forgery case. The report gives no further detail on the ruling or the next hearing date.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Uche Nnaji"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaWZGOWUwV1ZZcUxRcmlCTFYxYnBLQ0VfbGhsZTByYTNFWEFNc0pqU3E0RktkYlRUQTdDMTZXaTBMakh3dHRBRVpKV1hqUEllWlk3UzRaUjVBeHZWcS1hMnJiSk41Z2dWRmdWazVKcmdRUUZZZ0VacUtZUXVhb29zVVBPU3U4bVZKeWI0eGxHOTF3dnRkdUdpZXluOThoWEV5TXZHemU4RXN1d19PTTVBZ3g1RENCNGdmTnZab2VjR0cycGpmaWc?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
+      "theme": "Other",
+      "text": "The United Kingdom has backed Nigeria's proposed $750 million pension infrastructure fund.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWlTaGZnd3M0akFvZV83aXB0RVZxem9abURwYVZLVEZlVWFodlFMWFZLbmNOenRoOUs1N1E4TjY2WFZBOUxVeUFoYmlNWDNwYkdJaGtra0JwanJzR0d0TmJ2aTIwT0c1UG5VMld6Z1BRRmZDc0ZZUFFkYXNRc2dYVXZXTU9QMmNsRVE?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Regulation & enforcement",
+      "text": "Premium Times reports: Certificate Forgery: Court adjourns ex-minister Uche Nnaji’s suit",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaWZGOWUwV1ZZcUxRcmlCTFYxYnBLQ0VfbGhsZTByYTNFWEFNc0pqU3E0RktkYlRUQTdDMTZXaTBMakh3dHRBRVpKV1hqUEllWlk3UzRaUjVBeHZWcS1hMnJiSk41Z2dWRmdWazVKcmdRUUZZZ0VacUtZUXVhb29zVVBPU3U4bVZKeWI0eGxHOTF3dnRkdUdpZXluOThoWEV5TXZHemU4RXN1d19PTTVBZ3g1RENCNGdmTnZab2VjR0cycGpmaWc?oc=5"
+    },
+    {
+      "n": 8,
       "theme": "Regulation & enforcement",
       "text": "The Minister has suspended reviews of broadcast licence fees and urged broadcasters to maintain the highest standards ahead of the 2027 elections.",
       "outlet": "The Guardian",
@@ -199,6 +222,10 @@
   "psc_more": 0,
   "psc_keys": [],
   "terms": [
+    {
+      "term": "EFCC",
+      "meaning": "Economic and Financial Crimes Commission"
+    },
     {
       "term": "AURA risk rating",
       "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"

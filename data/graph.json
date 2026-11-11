@@ -49,6 +49,12 @@
       "risk": "Medium"
     },
     {
+      "id": "dce5a31d3181",
+      "label": "MTN Nigeria",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "01ccce37119e",
       "label": "Dangote Petroleum Refinery",
       "type": "company",
@@ -57,12 +63,6 @@
     {
       "id": "c0f6baef22e7",
       "label": "First HoldCo",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "dce5a31d3181",
-      "label": "MTN Nigeria",
       "type": "company",
       "risk": "Low"
     },
@@ -151,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "cab1be53cb3b",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bf682efac4e",
       "label": "Revenue Mobilisation Allocation and Fiscal Commission",
       "type": "agency",
@@ -159,6 +165,12 @@
     {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,15 +235,15 @@
       "risk": "Low"
     },
     {
-      "id": "67edaec2a032",
-      "label": "National Single Window",
-      "type": "agency",
+      "id": "d385d1ccc307",
+      "label": "Tunde Ayeni",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "9ff00c51bfd3",
-      "label": "Nigeria Customs Service",
-      "type": "agency",
+      "id": "c75de9075423",
+      "label": "Skye Bank",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -367,6 +379,36 @@
       "risk": "Low"
     },
     {
+      "id": "b106d6ffadcf",
+      "label": "Ikra Bilbis",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "2d8b68a63cae",
+      "label": "Nigerian Senate",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "63e8db3f7f0e",
+      "label": "Tahir Monguno",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "327d46c2fa4b",
+      "label": "Lola Ashiru",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "b0c149c4d665",
+      "label": "Ned Nwoko",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "bedf3e3e9be1",
       "label": "Babajide Sanwo-Olu",
       "type": "person",
@@ -399,48 +441,6 @@
     {
       "id": "fd7d1376d4af",
       "label": "MTN Nigeria Communications Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "26da1f6fe318",
-      "label": "Boye Olusanya",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9d77a1e81ddf",
-      "label": "Imoni Akpofure",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1d6d92cfab39",
-      "label": "Lwazi Bam",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "a81b2a825c1e",
-      "label": "Ogaba Harry",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "09475ee4b539",
-      "label": "Office of the Chief Economic Adviser to the President",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "d185b12583e6",
-      "label": "Aminu Abdullahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "e2f88b47055c",
-      "label": "Office of the Secretary to the Government of the Federation",
       "type": "company",
       "risk": "Low"
     },
@@ -549,6 +549,12 @@
   ],
   "edges": [
     {
+      "id": "06391ff1337b",
+      "from": "d385d1ccc307",
+      "to": "c75de9075423",
+      "label": "Appointed as Former Chairman"
+    },
+    {
       "id": "173d8cf4554e",
       "from": "2388a11cf55e",
       "to": "0bcaaf453cd3",
@@ -639,6 +645,30 @@
       "label": "Appointed as Acting Zonal Director, Lagos Zonal Directorate 2"
     },
     {
+      "id": "35678c648c7b",
+      "from": "b106d6ffadcf",
+      "to": "2d8b68a63cae",
+      "label": "Appointed as Chairman, Senate Committee on Communications"
+    },
+    {
+      "id": "2d56dffc15d6",
+      "from": "63e8db3f7f0e",
+      "to": "2d8b68a63cae",
+      "label": "Appointed as Senate Chief Whip"
+    },
+    {
+      "id": "ef55ff69a6b7",
+      "from": "327d46c2fa4b",
+      "to": "2d8b68a63cae",
+      "label": "Appointed as Deputy Majority Leader"
+    },
+    {
+      "id": "28b143288ebf",
+      "from": "b0c149c4d665",
+      "to": "2d8b68a63cae",
+      "label": "Appointed as Senator, Delta North"
+    },
+    {
       "id": "1e4b69d5e8fd",
       "from": "bedf3e3e9be1",
       "to": "9aef00190386",
@@ -655,36 +685,6 @@
       "from": "44927a723e54",
       "to": "fd7d1376d4af",
       "label": "Appointed as Independent non-executive director"
-    },
-    {
-      "id": "c2f55f3a1eae",
-      "from": "26da1f6fe318",
-      "to": "fd7d1376d4af",
-      "label": "Appointed as Independent non-executive director"
-    },
-    {
-      "id": "3f3500b4de58",
-      "from": "9d77a1e81ddf",
-      "to": "fd7d1376d4af",
-      "label": "Appointed as Non-executive director"
-    },
-    {
-      "id": "abf18b66b79a",
-      "from": "1d6d92cfab39",
-      "to": "fd7d1376d4af",
-      "label": "Appointed as Non-executive director"
-    },
-    {
-      "id": "8386e10ac2e7",
-      "from": "a81b2a825c1e",
-      "to": "09475ee4b539",
-      "label": "Appointed as Chief Accountant"
-    },
-    {
-      "id": "6903df320d02",
-      "from": "d185b12583e6",
-      "to": "e2f88b47055c",
-      "label": "Appointed as Assistant Chief Technical Officer"
     },
     {
       "id": "faeedb2e3a5c",
