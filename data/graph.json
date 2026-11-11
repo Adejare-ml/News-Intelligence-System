@@ -151,6 +151,12 @@
       "risk": "Low"
     },
     {
+      "id": "0bf682efac4e",
+      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "6843b615b76a",
       "label": "Federal Airports Authority of Nigeria",
       "type": "agency",
@@ -193,6 +199,18 @@
       "risk": "Low"
     },
     {
+      "id": "e94d960651d4",
+      "label": "Development Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4af52105f17",
+      "label": "Afreximbank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9b0e9a17ac57",
       "label": "CRFFN",
       "type": "agency",
@@ -213,24 +231,6 @@
     {
       "id": "9ff00c51bfd3",
       "label": "Nigeria Customs Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a61e97dc06d8",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bf682efac4e",
-      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd72c19626f6",
-      "label": "Independent Corrupt Practices and Other Related Offences Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -349,6 +349,24 @@
       "risk": "Low"
     },
     {
+      "id": "4c174f83f166",
+      "label": "Bawa Kaltungo",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "178d7fb3131f",
+      "label": "Imoke",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "22efb00940fe",
+      "label": "Uche Nnaji",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "bedf3e3e9be1",
       "label": "Babajide Sanwo-Olu",
       "type": "person",
@@ -427,40 +445,16 @@
       "risk": "Low"
     },
     {
-      "id": "2a77edd5b8cb",
-      "label": "Oyekunle Gbenga",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1ed14ffc2628",
-      "label": "Divine Dopacy Nigeria Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "6eac15c47af6",
-      "label": "NNPC",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "afc73118d371",
-      "label": "Chuma Ajene",
-      "type": "person",
-      "risk": "Low"
+      "id": "7d15f62e4dec",
+      "label": "Trademarks Global Concepts Limited",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "d1a36097dfe6",
       "label": "eTranzact International Plc",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "7d15f62e4dec",
-      "label": "Trademarks Global Concepts Limited",
-      "type": "psc",
-      "risk": "High"
+      "risk": "Medium"
     },
     {
       "id": "c39669440f36",
@@ -582,7 +576,7 @@
       "id": "b5cda71eebf2",
       "from": "33e047d24b95",
       "to": "0bcaaf453cd3",
-      "label": "Appointed as EFCC Spokesman"
+      "label": "Appointed as Spokesman, EFCC"
     },
     {
       "id": "a91a198ec02e",
@@ -639,6 +633,12 @@
       "label": "Appointed as Chief Executive Officer"
     },
     {
+      "id": "0a2897b0a47d",
+      "from": "4c174f83f166",
+      "to": "0bcaaf453cd3",
+      "label": "Appointed as Acting Zonal Director, Lagos Zonal Directorate 2"
+    },
+    {
       "id": "1e4b69d5e8fd",
       "from": "bedf3e3e9be1",
       "to": "9aef00190386",
@@ -685,24 +685,6 @@
       "from": "d185b12583e6",
       "to": "e2f88b47055c",
       "label": "Appointed as Assistant Chief Technical Officer"
-    },
-    {
-      "id": "2c12f5f355d8",
-      "from": "2a77edd5b8cb",
-      "to": "1ed14ffc2628",
-      "label": "Appointed as Managing Director"
-    },
-    {
-      "id": "3376c7d0c696",
-      "from": "a256ae6d71a8",
-      "to": "6eac15c47af6",
-      "label": "Appointed as Former Group Chief Executive, NNPC"
-    },
-    {
-      "id": "f1eb281b62d9",
-      "from": "afc73118d371",
-      "to": "d1a36097dfe6",
-      "label": "Appointed as Non-executive director"
     },
     {
       "id": "faeedb2e3a5c",
