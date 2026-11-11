@@ -6,19 +6,17 @@ Mentioned in 102 reports tracked by AURA.
 
 - Mentions tracked: 102
 - Holdings: 0
-- Recent stories: 4
+- Recent stories: 3
 - Last seen: 29 Oct 2026
 
 ## In the news
 
 - [CPASJ Seeks Clarification on NNPCL’s ₦7.2trn Profit Despite Revenue Decline](https://news.google.com/rss/articles/CBMirAFBVV95cUxOV3E0SDdkUmpMQTZzNEVtNHpEcUJkTHJNVmtDY2cxRDFRVHlHb0pYSll3Q09mR2daTE9Ub0NMZkZQWVNuTi1ROXVxT1JYSnRpMkxOcUhYelRuTlZoSzRYNUJlTmUzTUNBYjluRlctbnZXSXVNYkQ1OTdrVXN2RmFlRXJYd1hqNE5vbnRCWERSa3AyYjBIcHdMSDJQdW5SOTJzdkFETHpNYmdGcG9V?oc=5) · The Guardian Nigeria · 10 Nov 2026
-- [No N210tn missing from NNPC — Kyari](https://news.google.com/rss/articles/CBMiZEFVX3lxTE5lSTRXZzhpSXBkUVIxN0pWVm9RZGFkbF9KOHZ4eG1aLUhDMEh4SkpvM2x1ZVdfQ3ZRY0JsSTM1dmNjT3JGb2Q4a2hPRjJrQzZDb3B6Ym5GVGZUaWc1akVvd19zbEI?oc=5) · The Punch · 10 Nov 2026
 - [N210tn audit queries: Kyari finally appears before Senate panel](https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/) · BusinessDay · 10 Nov 2026
 - [Turn PIA’s Reforms Into Increased Oil Production, Investments, Dividends, Reps Tell NNPCL](https://leadership.ng/turn-pias-reforms-into-increased-oil-production-investments-dividends-reps-tell-nnpcl/) · leadership · 10 Nov 2026
 
 ## Appointments and departures
 
-- 10 Nov 2026: **Mele Kyari**, Group Chief Executive Officer
 - 6 Nov 2026: **Bashir Bayo Ojulari**, Group Chief Executive Officer, NNPC Limited
 
 ## Contracts in the news

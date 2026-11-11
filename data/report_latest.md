@@ -1,37 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-10 20:33:13 (UTC)
-**Run Window:** 2026-11-10, all runs to 20:33 (run 3 of the day)
+**Generated on:** 2026-11-11 02:49:37 (UTC)
+**Run Window:** 2026-11-11, all runs to 02:49 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 23
-- **High Risk Signals:** 3
-- **Appointments Logged:** 1
-- **Procurement Awards:** 2
+- **Total Articles Processed:** 8
+- **High Risk Signals:** 1
+- **Appointments Logged:** 0
+- **Procurement Awards:** 0
 
 ---
 
-# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Oversight
-**Report date:** 10 November 2026 | **Coverage:** All articles published on 10 November 2026 up to 20:33 (run 3 of the day)
+# Nigeria Corporate Transparency & MDA Intelligence Summary
+**Report date:** 2026-11-11 | **Coverage:** All articles published on 2026-11-11 up to 02:49 (run 1 of the day)
 
 ### Key Developments
-- **Kyari's rebuttal:** Kyari told the Senate that the N210 trillion is not missing. These reports are headline-only and give no detail on his accounting. ([Vanguard News](https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXp0anVaX0pNc3V1aC10Q0dWb2RLb0VLbnRxOW95SWdwTlhlVnRlbHFXNXYtZ2F2Z2Z0OUstYWZoeEdWN1BFeFFLZXE1bHB1RjhYcExyWEFjSU9OeFZGU2ZOMk96NHgtOUFEbTRmc2FtMzdDalAxSUd2eWw1bEh3VHhzaWpGS0JkSzNkQnlRdzlmamxz0gGaAUFVX3lxTE9JcGhFQkxjQTc3ZkpHb0JJMUdfWnp1QTVIam16TnpfeHNNNnYtLVVCekFnUTk0b2VBOHU4TGIyMEExckZtTDJsOUtTNnBmRjF2YllUeXU3ZUItZlRhOERtNkdLTHRBdEw3UnRaT3V3Z1ZZalRKeEZaRGpzZ3ZlckZWcGFoYnVyaG5OWS1paEpzNHNySl9UZGx4cGc?oc=5))  
-- **EFCC recovery:** The EFCC recovered $3 million and N1.3 billion in unremitted revenues from two firms and handed the funds to the RMAFC. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNTMwcTl4YzhQdnpuT003d3BiOUJzdTdoYkhURC1NTnU2a0hYalM2b2p6ODNqLWRxeXc4SDBZei1lX0NsaHhwWElJemEyM3lTY3R0QU9FaXF6TEVvVUdMbGQ2WDRfVWQtS3Z4Y2pVajZDaFhhWmxCbzhSVjhQNkNXWEhLSFZUNmJhcE50dnVzQTJmQzQ3ZmtsR2I0Snc2eWxwazVoWnlacVhJaFNaQ1EzdDR4bmVTUW13TjBKVEpGbUlkZmdhYU45TU1mVVBMTkxJSXYyUm8zUW8?oc=5))  
-- **NNPCL profit query:** CPASJ has asked NNPCL to explain a reported ₦7.2 trillion profit despite falling revenue. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirAFBVV95cUxOV3E0SDdkUmpMQTZzNEVtNHpEcUJkTHJNVmtDY2cxRDFRVHlHb0pYSll3Q09mR2daTE9Ub0NMZkZQWVNuTi1ROXVxT1JYSnRpMkxOcUhYelRuTlZoSzRYNUJlTmUzTUNBYjluRlctbnZXSXVNYkQ1OTdrVXN2RmFlRXJYd1hqNE5vbnRCWERSa3AyYjBIcHdMSDJQdW5SOTJzdkFETHpNYmdGcG9V?oc=5))  
-- **PIA governance:** The House of Representatives urged NNPC Ltd to turn PIA reforms into higher output and investment. Proposed amendments could shift strategic control to the Ministry of Finance Incorporated. ([leadership](https://leadership.ng/turn-pias-reforms-into-increased-oil-production-investments-dividends-reps-tell-nnpcl/))  
-- **CBN digitalises fiscal data collection across 36 states, FCT and 774 LGAs**. The Central Bank of Nigeria (CBN) is digitalising fiscal data collection across Nigeria's 36 states, the Federal Capital Territory and 774 Local Government Areas. ([Nairametrics](https://nairametrics.com/2026/11/10/cbn-digitalises-fiscal-data-collection-across-36-states-fct-and-774-lgas/))  
+- **EFCC local government probe:** The EFCC is reportedly investigating the spending of all 774 local government chairmen since councils gained financial autonomy. Zonal directorates across the 36 states and the FCT are handling the work, and the EFCC spokesman did not respond to the reporter. The probe follows the Supreme Court's 11 July 2024 ruling on LG financial autonomy. ([The Punch](https://punchng.com/lg-autonomy-efcc-probes-774-chairmens-spending/))  
+- **Mompha case struck out:** The Lagos State Special Offences Court in Ikeja struck out the EFCC's N6bn money laundering charge against Ismaila Mustapha (Mompha) and Ismalob Global Investment Limited. Judge Mojisola Dada held that prosecuting while a related Federal High Court case is pending was an abuse of process. That case, over about N32.9bn, remains pending. ([Premium Times](https://www.premiumtimesng.com/news/top-news/924296-court-strikes-out-efccs-n6bn-money-laundering-charge-against-mompha.html))  
+- **Fiscal reporting:** The CBN has introduced digital fiscal reporting for states and LGAs. The reporting gives no detail on design or timeline. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxQRlNkMTFvTVQyZEdULXZOV0ctMlJjZHpFdTZnUlloRWlKeW52aDhiTkFCd1huTXNtS0VwVUdlYy1iTVIwQnFsdnJpYzdzYUhyaDFXSWl4ZzNmZjcwMnJ6b3k2WHpyb2s0WFFBengxVVJVWmFqYkJuZzNmZC1VZ202Tk5hNVg?oc=5))  
+- **Gas flaring:** NNPC and Oando have joined a global push to end gas flaring. The report gives no figures. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV01GTk1mMEpSMng3WlVTeDVfYTdrc1BUSVJmTjNaTjU1ajBibGtJaERFajFtM1JTM0JveUpsTFFKYk1kazM5aWY0WTZKYWhka1JDaG1MRU5NTWRoSTdXb1VxQllheHhhQmEyc3RhSU1POU9nWVdIS211UFAxS3lKV0p6Um4yRXFzUVhjTEpVLWM2VzV0Y2c2VEo4QnNfQzVJalVRTGFzR3FOSWFEa0FTaUFwNzFsQzFEUk56T3NVbnBfMkRzdEhnRTJXSGRGbExMckxrQ05HbmVRYTFFQklB?oc=5))  
+- **Nigeria’s active telecom lines hit 200m as 5G share crosses 5%**. Nigeria's active telecom lines have reached 200 million, and 5G now accounts for more than 5% of connections. ([Vanguard News](https://news.google.com/rss/articles/CBMingFBVV95cUxPTzBqR0pxeF9Tc2UyTXoweVRVS2RzZS1GNjg2Qk4zSWctSEpVc1EtT2pKWFlZWGlKd0wxdmF4RGxibmNXYUJkOXFydUE2M2xGdU9hRC1adHY1dGN6YWJCUkstNFpzbnFsdmIwNDQ3OFdJUzA1cDFoYmxyamx3Z3FHTHFjaUNCQWhOOUFUM2dmaV96TGtrRlZPdi14b0dIQdIBowFBVV95cUxQcXJpdGNBemw0aHM3em1SR2t3LXh3cElsaHpodUNpQ2w4WGIzalZFV29hSDRMT21IZ3E3RDRKYThkbEF6VHBMN2k0ZUZJbEt1ajZTT2hpcmVvaGlJTG9nbDBRTDM0UGdwMzA1M0g0TmwyRkpUakVWUnJXWUNBSE9JSzd1Vk5uLW9zd1FMQ1BwYmhSdTZRazB6Q3N0eHR3dW9RQTBr?oc=5))  
 
 ### High Risk Alerts
-- **N210tn audit queries: Kyari finally appears before Senate panel**. Mele Kyari, former Group Chief Executive Officer of NNPC Limited, appeared before the Senate Committee on Public Accounts to answer questions over N210 trillion in financial transactions flagged in the company's 2017–2023 accounts. ([BusinessDay](https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/))  
-- **eTranzact, MTN Nigeria, lead boardroom shake-ups as 9M 2026 earnings roll in**. A wave of board changes accompanied NGX-listed companies' nine-month 2026 results, led by eTranzact International Plc replacing five directors after 56.18% of its shares passed to Trademarks Global Concepts Limited. ([Nairametrics](https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/))  
+- **EFCC recoveries from oil firms (risk 72, High):** The EFCC reportedly recovered $3m and N1.3bn from two oil companies. The headline-only report does not name the firms or state the basis of the recovery, so the case needs follow-up. ([Punch Newspapers](https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5))  
 
 ### Beneficial Ownership & PSC Disclosures
-Nothing to report here today.
+No verified significant-control holdings appear in today's coverage, so no holders, percentages or filing statuses can be reported.
 
 ### Procurement & Board Changes
-- **NERC Meter Acquisition Fund:** NERC approved N30 billion as the third tranche under Order No. NERC/2026/121, shared among 11 DisCos in proportion to their contributions. DisCos must run transparent procurement and file all contracts with the Commission. Payment is 70% on verified delivery and 30% on complete installation, and installations must be finished by 31 May 2027. ([Nairametrics](https://nairametrics.com/2026/11/10/nerc-approves-n30-billion-to-provide-free-meters-to-band-a-band-b-customers/))  
-- **eTranzact board overhaul:** Five directors were replaced following the change in majority ownership, and the appointments were reported as approved by the CBN. ([Nairametrics](https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/))  
-- **LAWMA:** Governor Sanwo-Olu appointed an acting LAWMA Managing Director and ordered senior officers redeployed amid the waste crisis. ([Punch Newspapers](https://news.google.com/rss/articles/CBMiswFBVV95cUxOWEZlc2ZiWkFDeE1KejhvWEZlQ1gydzN0RnZlUC13OHJ6TGc5Mzh0MUNGN2Q5QmZTVm1kQ3VSajI1MWZCakh4dmVFcjloczdrWWJqV3R0eWV0ZHVwUll1cXFHaThvWmlUelFiZHNaOXNBN3Fqb1JfczBINzcybzdwNTBnb1VxV2JqSDlGSWk0akg5dC1HUlgweUJlZ21ZM1p3R2Jrd0ZlM29NTVRfcXMxNE9tQQ?oc=5))  
-- **Mambilla hydroelectric project: Reforming contract awards for public good**. An opinion-style piece in The Guardian Nigeria News calls for reform of contract awards for the Mambilla hydroelectric project. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMisAFBVV95cUxNY3lvUmNCOXAzUHkwS0I1bEtqR1ZFUWJEMmE1S0ZpNEJnVDNZMUgzRUV4cEdZU2JXVnZuMjR0NkRxSExkUmQ1ZkNBX1FhczNWdzNPdFh3alN5WFhzU0Y4SDl2c3NBc3Y5VzgwR002Rm5vcldsS281bFdOX0I4VGE5WmlLSzAwZnM1Sm95d3ZKOUdxTjFwRzQ3MWtLdE1MNm50eTQyYVd6NnVmU01sX3E2OQ?oc=5))  
+No procurement awards or board appointments surfaced in this window's coverage, though the Mompha ruling and EFCC items involve named officials and defendants rather than corporate governance changes.
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

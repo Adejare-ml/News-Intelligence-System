@@ -492,6 +492,11 @@
       "weight": 4
     },
     {
+      "a": "economic and financial crimes commission",
+      "b": "ola olukoyede",
+      "weight": 4
+    },
+    {
       "a": "independent national electoral commission",
       "b": "socio economic rights and accountability project",
       "weight": 4
@@ -537,11 +542,6 @@
       "weight": 3
     },
     {
-      "a": "economic and financial crimes commission",
-      "b": "ola olukoyede",
-      "weight": 3
-    },
-    {
       "a": "ekiti state government",
       "b": "oyebanji",
       "weight": 3
@@ -554,6 +554,11 @@
     {
       "a": "house of representatives",
       "b": "mtn",
+      "weight": 3
+    },
+    {
+      "a": "mele kyari",
+      "b": "national petroleum company",
       "weight": 3
     },
     {
@@ -962,11 +967,6 @@
       "weight": 2
     },
     {
-      "a": "mele kyari",
-      "b": "national petroleum company",
-      "weight": 2
-    },
-    {
       "a": "midstream and downstream petroleum regulatory authority",
       "b": "national petroleum company",
       "weight": 2
@@ -1012,5 +1012,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-10 20:33:57"
+  "generated": "2026-11-11 02:50:12"
 }
