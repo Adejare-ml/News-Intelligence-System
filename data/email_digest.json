@@ -1,49 +1,41 @@
 {
-  "edition": "20261111-11596",
-  "preview": false,
-  "built_at": "2026-11-11 15:16:28",
+  "edition": "20261111-11643-preview",
+  "preview": true,
+  "built_at": "2026-11-11 20:15:42",
   "date": "Wednesday 11 November 2026",
-  "subject": "AURA alert · Wed 11 Nov · N210tn audit queries: Kyari finally appears before Senate panel",
-  "preheader": "Also: EFCC recovers $3m, N1.3b from two oil firms | · 30 stories, 2 risk alerts",
-  "since": "Tue 10 Nov, 16:41 Lagos",
-  "through_id": 11596,
+  "subject": "AURA · Wed 11 Nov · Mambilla project: Imoke insists contract award to Sunrise was invalid",
+  "preheader": "Also: FG moves to regulate scrap metal industry, curb infrastructure vandalism · 6 stories, 0 risk alerts",
+  "since": "Wed 11 Nov, 16:16 Lagos",
+  "through_id": 11643,
   "stats": {
-    "reports": 35,
-    "stories": 30,
-    "outlets": 9,
-    "risk_alerts": 2,
-    "public_money": 7,
-    "appointments": 3,
+    "reports": 7,
+    "stories": 6,
+    "outlets": 3,
+    "risk_alerts": 0,
+    "public_money": 1,
+    "appointments": 0,
     "ownership": 0
   },
   "nothing_in": [
+    "risk alerts",
+    "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "The EFCC recovered $3m and N1.3b from two oil firms, according to The Eagle Online; Premium Times reported the funds were handed over to the RMAFC.",
-      "card": 2,
-      "outlet": "The Eagle Online"
-    },
-    {
-      "text": "A former NNPC Group Managing Director told lawmakers that the ₦210 trillion referenced in an audit report is not missing, according to Premium Times.",
-      "card": 3,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "Mele Kyari said no money is missing from NNPCL and disputed audit findings suggesting otherwise, The Guardian reported.",
-      "card": 6,
+      "text": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid.",
+      "card": 1,
       "outlet": "The Guardian"
     },
     {
-      "text": "Akwa Ibom State has cleared ₦39.831bn in inherited bank loans, according to a Voice of Nigeria report.",
-      "card": 9,
-      "outlet": "Voice of Nigeria"
+      "text": "The Federal Government has moved to regulate the scrap metal industry in an effort to curb infrastructure vandalism.",
+      "card": 2,
+      "outlet": "The Guardian"
     },
     {
-      "text": "Lagos Governor Sanwo-Olu appointed an acting LAWMA Managing Director and ordered the redeployment of senior officers amid a waste crisis.",
-      "card": 13,
-      "outlet": "Punch"
+      "text": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector.",
+      "card": 3,
+      "outlet": "Premium Times"
     }
   ],
   "insights": [],
@@ -51,198 +43,143 @@
     {
       "n": 1,
       "theme": "Public money",
-      "event_type": "Audit",
-      "flags": [
-        "Alert",
-        "Developing"
-      ],
-      "alert": true,
-      "risk": "AURA risk rating: High · 78/100",
-      "headline": "N210tn audit queries: Kyari finally appears before Senate panel",
-      "byline": "BusinessDay · Tue 10 Nov, 20:13 Lagos · latest of 3 reports from 3 outlets",
-      "outlet": "BusinessDay",
-      "what_happened": "Mele Kyari, former Group Chief Executive Officer of NNPC Limited, appeared before the Senate Committee on Public Accounts to answer questions over N210 trillion in financial transactions flagged in the company's 2017–2023 accounts.",
+      "event_type": "Procurement",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 45/100",
+      "headline": "Mambilla project: Imoke insists contract award to Sunrise was invalid",
+      "byline": "The Guardian · Wed 11 Nov, 20:38 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid. The dispute centres on the validity of the contract award for the Mambilla hydropower project in Taraba State.",
       "key_facts": [
-        "Mele Kyari appeared before the Senate Committee on Public Accounts on Tuesday.",
-        "The N210 trillion comprises N103 trillion accrued expenses and N107 trillion sundry receivables.",
-        "The committee is chaired by Senator Ibrahim Dankwambo, representing Gombe North.",
-        "Ex-NNPCL boss Kyari appeared before a Senate panel. (The Eagle Online)"
+        "Imoke insists the contract award to Sunrise for the Mambilla project was invalid."
       ],
-      "timeline": [
-        "Tue 10 Nov, 16:00 · Punch: “JUST IN: Ex-NNPC boss Kyari appears before Senate panel”",
-        "Tue 10 Nov, 17:40 · The Eagle Online: “Just in: Ex-NNPCL boss Kyari appears before Senate panel over N210t audit queries |”",
-        "Tue 10 Nov, 20:13 · BusinessDay: “N210tn audit queries: Kyari finally appears before Senate panel” (lead report)"
-      ],
-      "headline_only": false,
+      "timeline": [],
+      "headline_only": true,
       "analysis": [
-        "Why it matters: The scale of the unexplained entries, and lawmakers' demands for the identities of counterparties and supporting documentation, bear directly on transparency over public oil-company finances. The outcome will determine whether former management is held accountable for the recorded figures."
+        "Why it matters: A public challenge to the validity of a major hydropower contract award raises questions about procurement process and accountability for public money in Nigeria's power sector."
       ],
       "ownership_caveat": "",
       "named": [
-        "Nigerian National Petroleum Company Limited",
-        "Nigerian National Petroleum Corporation",
-        "Office of the Auditor-General for the Federation",
-        "Senate Committee on Public Accounts",
-        "Mele Kyari"
+        "Sunrise",
+        "Imoke"
       ],
       "source": {
-        "outlet": "BusinessDay",
-        "url": "https://businessday.ng/news/article/n210tn-audit-queries-kyari-finally-appears-before-senate-panel/"
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc19VSGc3TlNfTHIza2VHTUZIQTVNUjZ3UTBOdkctNURTRC0tV292VjQ3ZzRnQTFRYTNlVFAyR0ZPZUQxZS1SdUxSVkpXTjNMNzRFMG9GSjZYVVFITjhUSlhYa2doeTFKdEYzZXlzUl83MUozQ3IydmhxUXp2LU5PTHVtbXMxRjBjOE5kNXRfMHE1cEpFR3Z6UmFpY20tMU9YMHRWSVRNZnJHaFhJ?oc=5"
       },
-      "also_reported": [
-        {
-          "outlet": "The Eagle Online",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaVh3eUFDTW0yOFo2dHVnY181TEJJeHJGeFlwSTFMeENjZDlXTVEwS1YyTGY5Zkk1c0J2VTJMckk0NXpiWkRZWXNoNXJFMEFzVnFfanh6NjlUVFd5ckw0UGJGYjlKWVg4Uk1tcHNlMGVlZldOS2Jab0ZLeVB4d0kyYzNYeE40dEpDRGtPckh0cHFLV2hOUmNTTlU2VHZXRHlucU5zZkVEd2x2ejR6YjEzMQ?oc=5"
-        },
-        {
-          "outlet": "Punch",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONTZHUWc5eV9TSjJxRWdwLTZvcTdmT3ZTMURtcGJ4X2xvNGRmV0dHT09EN0NvNFlSaFBfSkozUnVxeWxqNGRnQWl6LXNkTGROUDNpdjktdzhlTWd4dFBROXNiaWFGLWNsT24wakItUnRpQ1Z2MUVid0V6cWhYNGQwMg?oc=5"
-        }
-      ],
+      "also_reported": [],
       "also_more": 0
     },
     {
       "n": 2,
       "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [
-        "Alert",
-        "Developing"
-      ],
-      "alert": true,
-      "risk": "AURA risk rating: High · 55/100",
-      "headline": "EFCC recovers $3m, N1.3b from two oil firms |",
-      "byline": "The Eagle Online · Wed 11 Nov, 15:58 Lagos · latest of 3 reports from 3 outlets",
-      "outlet": "The Eagle Online",
-      "what_happened": "The Economic and Financial Crimes Commission (EFCC) has recovered $3 million and N1.3 billion from two oil companies.",
-      "key_facts": [
-        "EFCC recovered $3m from two oil firms.",
-        "EFCC recovered N1.3b from two oil firms.",
-        "EFCC recovered $3m and N1.3bn in unremitted revenues from two firms. (Premium Times)",
-        "The recovered funds were handed over to the RMAFC. (Premium Times)"
-      ],
-      "timeline": [
-        "Tue 10 Nov, 19:52 · Punch: “EFCC recovers $3m, N1.3bn from two oil firms”",
-        "Tue 10 Nov, 21:09 · Premium Times: “EFCC recovers $3m, N1.3bn unremitted revenues from two firms, hands over funds to RMAFC”",
-        "Wed 11 Nov, 15:58 · The Eagle Online: “EFCC recovers $3m, N1.3b from two oil firms |” (lead report)"
-      ],
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "FG moves to regulate scrap metal industry, curb infrastructure vandalism",
+      "byline": "The Guardian · Tue 10 Nov, 22:15 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "The Federal Government has moved to regulate the scrap metal industry in an effort to curb infrastructure vandalism.",
+      "key_facts": [],
+      "timeline": [],
       "headline_only": true,
       "analysis": [],
       "ownership_caveat": "",
-      "named": [
-        "Economic and Financial Crimes Commission",
-        "Two oil firms (unnamed)"
-      ],
+      "named": [],
       "source": {
-        "outlet": "The Eagle Online",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1fdlhlVWR3QlBsSkR3TmYtbXBnY0dQTFh6MXhpSHpucEhIS09rTkJtZmJ6eE9iT2VaenoxaVNpWGhib1VndnRyOHJjZzRwYU41ck1sQWZoRm1sQWhoLWYteHlRZ0dHRHRQS3M1aU12c1BJZkdVWkFzTVJKeTU?oc=5"
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0VhZHdYYXBsaV9pdlNENnFHbDdkS282Mm1EbE5kX3dBUjBkTy1pc2o2dnhWRTZLTGVyQk81WUJvR2dseE1hMXF0UkVubi1wM29DdThkN0J0Q1JyNkVCLW83Qmw1MmtHZVd6Z1JGNS1vWlV5aC1tb1l5ZmVVQ0kwc0dnb0lNN2RDbGdrNExiWnFUZjdRc1ozWDQ3VmZ6Zw?oc=5"
       },
-      "also_reported": [
-        {
-          "outlet": "Premium Times",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNTMwcTl4YzhQdnpuT003d3BiOUJzdTdoYkhURC1NTnU2a0hYalM2b2p6ODNqLWRxeXc4SDBZei1lX0NsaHhwWElJemEyM3lTY3R0QU9FaXF6TEVvVUdMbGQ2WDRfVWQtS3Z4Y2pVajZDaFhhWmxCbzhSVjhQNkNXWEhLSFZUNmJhcE50dnVzQTJmQzQ3ZmtsR2I0Snc2eWxwazVoWnlacVhJaFNaQ1EzdDR4bmVTUW13TjBKVEpGbUlkZmdhYU45TU1mVVBMTkxJSXYyUm8zUW8?oc=5"
-        },
-        {
-          "outlet": "Punch",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5"
-        }
-      ],
+      "also_reported": [],
       "also_more": 0
     },
     {
       "n": 3,
-      "theme": "Public money",
-      "event_type": "Audit",
+      "theme": "Other",
+      "event_type": "Other",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 55/100",
-      "headline": "NNPC Audit Report: Former GMD tells lawmakers ₦210 trillion isn’t missing",
-      "byline": "Premium Times · Tue 10 Nov, 20:54 Lagos",
+      "risk": "",
+      "headline": "Afreximbank, DBN partner on $75 million finance facility for SMEs, creative sector",
+      "byline": "Premium Times · Wed 11 Nov, 18:36 Lagos",
       "outlet": "Premium Times",
-      "what_happened": "A former Group Managing Director of the Nigerian National Petroleum Company (NNPC) told lawmakers that ₦210 trillion referenced in an audit report is not missing. The statement responds to scrutiny of NNPC's audit findings before the National Assembly.",
-      "key_facts": [],
+      "what_happened": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector. The announcement was reported by Premium Times Nigeria. No further details on terms or timelines are provided in the available text.",
+      "key_facts": [
+        "Afreximbank and DBN have partnered on a $75 million finance facility."
+      ],
       "timeline": [],
       "headline_only": true,
       "analysis": [
-        "Why it matters: The dispute over a reported ₦210 trillion gap in NNPC accounts bears directly on the accountability of public oil revenue and the reliability of audit findings on a state-owned company."
+        "Why it matters: The facility channels development finance into Nigerian SMEs and creative businesses, which is relevant to lending access for these sectors. The available text does not state terms, disbursement arrangements or governance details."
       ],
       "ownership_caveat": "",
       "named": [
-        "Nigerian National Petroleum Company",
-        "Former NNPC Group Managing Director"
+        "Afreximbank",
+        "Development Bank of Nigeria"
       ],
       "source": {
         "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNi1TWUwwTmJyMkh3dkJITDRTTGJGZ0ZIeWpDNzJKdmRjazJvQktDOWJpSklhZTVid1ItanVPeUZkSktaSlBvd25zOExYSDRtOUl1QTlNYU95UGw0NFJVVkE0Yi1zMFoya2JMNGZIT09ielQyeVZPZjY2YW1pWWl6a0VhVGhCNUFZNjl1TVBqazlIa01nOTlKWUZmVGJIUXZNTE50NGM4dlVXdmhaa2hHa3Q4X084cVdCSmhuN20zTnpRREdGU0RtaWNjOGtfcnY2aXc?oc=5"
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcThmb2RUNmZ0QzdtY0NSXzRnVTltUVV1Z21pWDluc1d6V0dBNHh0UGR2bjN0a0xVdHRuczVTM245MHZKcGJ0ZW9xZ2NiNFhNLVliZzFWQS1OcWxMNU1pQnN1eHJrVlREWjBQR3c1M25jZFBhVkZ5YndSNEVfa0oxaU8yZXdJNWk2UkZvUml4cTRGek83ZVdFakthSWl6ZzBpaFVNM2VEU3B0Y01EdklyTnh3ZFJRY1BleE0yM2lfcTdCQ29XelFDS3BsYzBCM3lmZERUUGRuaXpRMVFZSHc?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 4,
-      "theme": "Regulation & enforcement",
+      "theme": "Other",
       "event_type": "Other",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 45/100",
-      "headline": "Court strikes out EFCC’s N6bn money laundering charge against Mompha",
-      "byline": "Premium Times · Tue 10 Nov, 22:16 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The Lagos State Special Offences Court in Ikeja struck out the N6 billion money laundering charge brought by the EFCC against social media personality Ismaila Mustapha, known as Mompha, and his company Ismalob Global Investment Limited.",
-      "key_facts": [],
+      "risk": "",
+      "headline": "UK backs Nigeria’s proposed $750m pension infrastructure fund",
+      "byline": "Punch · Wed 11 Nov, 00:20 Lagos",
+      "outlet": "Punch",
+      "what_happened": "The United Kingdom has backed Nigeria's proposed $750 million pension infrastructure fund.",
+      "key_facts": [
+        "The UK has backed Nigeria's proposed $750m pension infrastructure fund."
+      ],
       "timeline": [],
-      "headline_only": false,
+      "headline_only": true,
       "analysis": [
-        "Court outcome as reported by Premium Times; AURA has not checked court records."
+        "Why it matters: A government-backed pension infrastructure fund of this size could direct long-term capital into Nigerian projects, though the article gives no detail on its governance or ownership structure."
       ],
       "ownership_caveat": "",
-      "named": [
-        "Ismalob Global Investment Limited",
-        "Economic and Financial Crimes Commission",
-        "Mojisola Dada",
-        "Ismaila Mustapha (Mompha)"
-      ],
+      "named": [],
       "source": {
-        "outlet": "Premium Times",
-        "url": "https://www.premiumtimesng.com/news/top-news/924296-court-strikes-out-efccs-n6bn-money-laundering-charge-against-mompha.html"
+        "outlet": "Punch",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWlTaGZnd3M0akFvZV83aXB0RVZxem9abURwYVZLVEZlVWFodlFMWFZLbmNOenRoOUs1N1E4TjY2WFZBOUxVeUFoYmlNWDNwYkdJaGtra0JwanJzR0d0TmJ2aTIwT0c1UG5VMld6Z1BRRmZDc0ZZUFFkYXNRc2dYVXZXTU9QMmNsRVE?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 5,
-      "theme": "Public money",
-      "event_type": "Audit",
+      "theme": "Regulation & enforcement",
+      "event_type": "Other",
       "flags": [
         "Allegation, not a finding"
       ],
       "alert": false,
       "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "LG autonomy: EFCC probes 774 chairmen’s spending",
-      "byline": "Punch · Tue 10 Nov, 00:50 Lagos",
-      "outlet": "Punch",
-      "what_happened": "The Economic and Financial Crimes Commission is secretly investigating the 774 local government chairmen across Nigeria over their management and spending of public funds since the councils gained financial autonomy, according to The PUNCH. Sources say the probe is being handled by EFCC zonal directorates across the 36 states and the Federal Capital Territory.",
-      "key_facts": [
-        "The EFCC is investigating the 774 local government chairmen over spending since councils gained financial autonomy.",
-        "The investigation is being handled by the commission's zonal directorates.",
-        "On July 11, 2024, the Supreme Court ruled local government financial autonomy unconstitutionally blocked by state governors."
-      ],
+      "headline": "Certificate Forgery: Court adjourns ex-minister Uche Nnaji’s suit",
+      "byline": "Premium Times · Wed 11 Nov, 16:38 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "A Nigerian court has adjourned a suit filed by former minister Uche Nnaji in a certificate forgery case. The report gives no further detail on the ruling or the next hearing date.",
+      "key_facts": [],
       "timeline": [],
-      "headline_only": false,
+      "headline_only": true,
       "analysis": [
-        "As reported by Punch; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
+        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
       ],
       "ownership_caveat": "",
       "named": [
-        "Economic and Financial Crimes Commission",
-        "Supreme Court of Nigeria",
-        "Office of the Accountant-General of the Federation",
-        "Ola Olukoyede",
-        "Lateef Fagbemi"
+        "Uche Nnaji"
       ],
       "source": {
-        "outlet": "Punch",
-        "url": "https://punchng.com/lg-autonomy-efcc-probes-774-chairmens-spending/"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaWZGOWUwV1ZZcUxRcmlCTFYxYnBLQ0VfbGhsZTByYTNFWEFNc0pqU3E0RktkYlRUQTdDMTZXaTBMakh3dHRBRVpKV1hqUEllWlk3UzRaUjVBeHZWcS1hMnJiSk41Z2dWRmdWazVKcmdRUUZZZ0VacUtZUXVhb29zVVBPU3U4bVZKeWI0eGxHOTF3dnRkdUdpZXluOThoWEV5TXZHemU4RXN1d19PTTVBZ3g1RENCNGdmTnZab2VjR0cycGpmaWc?oc=5"
       },
       "also_reported": [],
       "also_more": 0
@@ -251,88 +188,17 @@
   "also": [
     {
       "n": 6,
-      "theme": "Public money",
-      "text": "Mele Kyari has said no money is missing from the Nigerian National Petroleum Company Limited (NNPCL) and disputed audit findings suggesting otherwise.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPQjVWdGcwYlFtRE5UelZBV0JHVTN4dDVxOU1rTkIzTkRxS0lKY253Q25qRGVUYlo4VEUzU2RFcTVPVGp5QnFyWlBCOE0xeExLRkhWVXpsWHRQdkxOajBpV3o4c0pZX2xXNUtSM09LczQtbVhXcWFZVXVGTWNGQmtwZWxObmpNNXZkaWdTN3U5djVVekZyVXc?oc=5"
-    },
-    {
-      "n": 7,
-      "theme": "Public money",
-      "text": "The Niger Delta Development Commission (NDDC) and a construction firm have responded to allegations that the 600-metre Otuogori bridge project collapsed.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOamxLdlJyV2lLbVg3LXRDMHRTRFNDTmxaenh5RmFaQUd0WmlKMUpEdkFZc1F4RndndlRxMnFiQ1o0Ulhma3E4Ql9BUmpWOGdKd3h1b0VLVHk4TXp3NTB2SWhTRW5Ec3dPaUtGMnliYmFwY1p1Yk1nNkxIQldIM05ndGs0WE5NSjZWWnY3S212MFM1Tl9OdUdaYkkwdjhhWks3WGRqRUZMSjFiNW9zRFpQTQ?oc=5"
-    },
-    {
-      "n": 8,
-      "theme": "Public money",
-      "text": "Former NNPC Group Chief Executive Mele Kyari told the Senate that N210 trillion is not missing from the Nigerian National Petroleum Company.",
-      "outlet": "Vanguard",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaXp0anVaX0pNc3V1aC10Q0dWb2RLb0VLbnRxOW95SWdwTlhlVnRlbHFXNXYtZ2F2Z2Z0OUstYWZoeEdWN1BFeFFLZXE1bHB1RjhYcExyWEFjSU9OeFZGU2ZOMk96NHgtOUFEbTRmc2FtMzdDalAxSUd2eWw1bEh3VHhzaWpGS0JkSzNkQnlRdzlmamxz0gGaAUFVX3lxTE9JcGhFQkxjQTc3ZkpHb0JJMUdfWnp1QTVIam16TnpfeHNNNnYtLVVCekFnUTk0b2VBOHU4TGIyMEExckZtTDJsOUtTNnBmRjF2YllUeXU3ZUItZlRhOERtNkdLTHRBdEw3UnRaT3V3Z1ZZalRKeEZaRGpzZ3ZlckZWcGFoYnVyaG5OWS1paEpzNHNySl9UZGx4cGc?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "Other",
-      "text": "Akwa Ibom State has cleared ₦39.831 billion in bank loans it inherited, according to a Voice of Nigeria report.",
-      "outlet": "Voice of Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNckRLMWwxSHA0RWt4MTBvTk93Y0RxZU5zeTRXNlZabFZuZGwtcW9pdVdtWTA2R3BNZWZ6enBYMWhyenJOVUFRU1J3aG9kVXdQb3EtYnNIS2hBTGxsMFV0anoxa09KUy1SLUVMa0E4UWZ4ZUNYdmZEbDZJNFBEdGNpVw?oc=5"
-    },
-    {
-      "n": 10,
       "theme": "Regulation & enforcement",
-      "text": "Former Group Chief Executive of the NNPC, Mele Kyari, has denied that N210 trillion went missing from the Nigerian National Petroleum Company.",
-      "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBNElOTzJwVEVBM1l4RXJJc052Wk9EMlFuSUo5OGtwSUthQ1doV1BzZVVTd09GZW9VdkpSQ1U0U2NnR3FvejhKb2d5WUx5MGpWbmlKMFczTnktR1VST1lfR1Jpb3BUYUxfUXlPOW9nb3lEX0E?oc=5"
-    },
-    {
-      "n": 11,
-      "theme": "Business",
-      "text": "The Coalition of Progressive Academics and Stakeholders (CPASJ) has sought clarification from the Nigerian National Petroleum Company Limited (NNPCL) over a reported ₦7.2 trillion profit despite a decline in revenue.",
+      "text": "The Minister has suspended reviews of broadcast licence fees and urged broadcasters to maintain the highest standards ahead of the 2027 elections.",
       "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOV3E0SDdkUmpMQTZzNEVtNHpEcUJkTHJNVmtDY2cxRDFRVHlHb0pYSll3Q09mR2daTE9Ub0NMZkZQWVNuTi1ROXVxT1JYSnRpMkxOcUhYelRuTlZoSzRYNUJlTmUzTUNBYjluRlctbnZXSXVNYkQ1OTdrVXN2RmFlRXJYd1hqNE5vbnRCWERSa3AyYjBIcHdMSDJQdW5SOTJzdkFETHpNYmdGcG9V?oc=5"
-    },
-    {
-      "n": 12,
-      "theme": "Regulation & enforcement",
-      "text": "The Federal Government has granted drug manufacturers N24 billion in tax waivers aimed at boosting local pharmaceutical production.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPWW5wYjBqVEd1bXJWcU5qY3BXaTBLTjU3YVI5TmwzNmtXbVFRTUJ1NmxSMzliNkN0RHF0RWlNRlBFT3hyZ05NWHFMWnVHRUx6eE5BSHduaWs1NF8zdDdDNy1tWFByOTY3aTNPRVlnQVJpa0RON1VEZEg4a0daUUxoMnlreEdINVd3bWY3eEVqRWkzUXhZZTNINWFiTHNMNmhPWGhJOG1jTzNpYktPQnRHZkptVU1JTDUyQW4ycGJ4Zm5uVFFycXdyZGZOVnJIMHc?oc=5"
-    },
-    {
-      "n": 13,
-      "theme": "People",
-      "text": "Lagos State Governor Babajide Sanwo-Olu has appointed an acting Managing Director for the Lagos Waste Management Authority (LAWMA) amid a waste crisis.",
-      "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWEZlc2ZiWkFDeE1KejhvWEZlQ1gydzN0RnZlUC13OHJ6TGc5Mzh0MUNGN2Q5QmZTVm1kQ3VSajI1MWZCakh4dmVFcjloczdrWWJqV3R0eWV0ZHVwUll1cXFHaThvWmlUelFiZHNaOXNBN3Fqb1JfczBINzcybzdwNTBnb1VxV2JqSDlGSWk0akg5dC1HUlgweUJlZ21ZM1p3R2Jrd0ZlM29NTVRfcXMxNE9tQQ?oc=5"
-    },
-    {
-      "n": 14,
-      "theme": "People",
-      "text": "The Alternative Bank Limited, the non-interest banking subsidiary of Sterling Financial Holdings Company Plc, has appointed Gul Khan as Managing Director and Chief Executive Officer following Central Bank of Nigeria approval.",
-      "outlet": "Nairametrics",
-      "url": "https://nairametrics.com/2026/11/11/sterling-holdco-subsidiary-alt-bank-appoints-gul-khan-as-md-ceo/"
-    },
-    {
-      "n": 15,
-      "theme": "Other",
-      "text": "The Nigerian Exchange is entering a period of record market capitalisation, strong liquidity and substantial capital inflows.",
-      "outlet": "Nairametrics",
-      "url": "https://nairametrics.com/2026/11/11/stable-naira-mega-listing-nigerian-stocks-eye-n230-trillion-finish-in-2026/"
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRDhHZTJGWUVla0NuSUctODMtampJSHRWV2tMak9KdnZuUjBYaU5TTFdJV1RfTE8xcjQwNnZ2Qlh2NUNfcGI2cTJkSUd4V0lzT3NCYUZwSFRDWl9zeC1iUmdYbWhCX1dNNGpobXg1bjczMXgxNUdpMVRpa2xnaDlqOEdCTDBYdHl1WTNiNXlUVU51a0c3d2E2bXJuOTdSVjNFLU5PbUQ5czFVdVJoLV8wam9zbmNGd29s?oc=5"
     }
   ],
-  "also_more": 15,
+  "also_more": 0,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
   "terms": [
-    {
-      "term": "EFCC",
-      "meaning": "Economic and Financial Crimes Commission"
-    },
-    {
-      "term": "NNPC",
-      "meaning": "Nigerian National Petroleum Company"
-    },
     {
       "term": "AURA risk rating",
       "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
@@ -342,11 +208,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
     "overview_dropped": 0,
-    "insights_dropped": 2
+    "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
 }
