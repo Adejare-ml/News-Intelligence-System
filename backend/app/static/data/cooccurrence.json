@@ -154,6 +154,10 @@
       "label": "Glo"
     },
     {
+      "key": "globacom",
+      "label": "Globacom"
+    },
+    {
       "key": "godwin emefiele",
       "label": "Godwin Emefiele"
     },
@@ -485,6 +489,11 @@
       "weight": 5
     },
     {
+      "a": "airtel",
+      "b": "mtn",
+      "weight": 4
+    },
+    {
       "a": "bola tinubu",
       "b": "federal government of",
       "weight": 4
@@ -527,11 +536,6 @@
     {
       "a": "airtel",
       "b": "house of representatives",
-      "weight": 3
-    },
-    {
-      "a": "airtel",
-      "b": "mtn",
       "weight": 3
     },
     {
@@ -632,6 +636,11 @@
     {
       "a": "airtel",
       "b": "glo",
+      "weight": 2
+    },
+    {
+      "a": "airtel",
+      "b": "globacom",
       "weight": 2
     },
     {
@@ -860,6 +869,11 @@
       "weight": 2
     },
     {
+      "a": "globacom",
+      "b": "mtn",
+      "weight": 2
+    },
+    {
       "a": "google",
       "b": "independent national electoral commission",
       "weight": 2
@@ -1030,5 +1044,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-11 20:15:42"
+  "generated": "2026-11-11 23:31:37"
 }

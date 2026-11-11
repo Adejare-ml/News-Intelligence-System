@@ -1,60 +1,60 @@
 {
-  "generated": "2026-11-11 20:15:36",
+  "generated": "2026-11-11 23:31:30",
   "models": [
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 2346,
+      "likes": 2917,
       "downloads": 16693
     },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 667,
+      "likes": 694,
       "downloads": 142989
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 2136,
+      "likes": 2143,
       "downloads": 28250
-    },
-    {
-      "id": "ricursiveAI/Ripple-65B-Preview",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "task": "",
-      "likes": 510,
-      "downloads": 7112
-    },
-    {
-      "id": "moonshotai/Kimi-K3.1-Pro",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "task": "image-text-to-text",
-      "likes": 1921,
-      "downloads": 33617
     },
     {
       "id": "NousResearch/Arete-27B",
       "url": "https://huggingface.co/NousResearch/Arete-27B",
       "task": "text-generation",
-      "likes": 425,
+      "likes": 433,
       "downloads": 4023
+    },
+    {
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "task": "image-text-to-text",
+      "likes": 1934,
+      "downloads": 33617
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 11492,
+      "likes": 11509,
       "downloads": 2848771
+    },
+    {
+      "id": "ricursiveAI/Ripple-65B-Preview",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "task": "",
+      "likes": 515,
+      "downloads": 7112
     },
     {
       "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "task": "image-text-to-text",
-      "likes": 2894,
+      "likes": 2902,
       "downloads": 1532273
     }
   ],
@@ -62,7 +62,7 @@
     {
       "title": "Visual Similarity in Adult Word Extension and Artificial Word Learning",
       "url": "https://huggingface.co/papers/2611.14116",
-      "upvotes": 0
+      "upvotes": 1
     },
     {
       "title": "Prompt2Echo (P2Echo): Text-Prompted Multi-View Echocardiography Segmentation with One Model",
@@ -72,12 +72,12 @@
     {
       "title": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
       "url": "https://huggingface.co/papers/2611.10486",
-      "upvotes": 7
+      "upvotes": 8
     },
     {
       "title": "Embodied First Exam",
       "url": "https://huggingface.co/papers/2611.12177",
-      "upvotes": 13
+      "upvotes": 19
     },
     {
       "title": "LEASH: Stay Safe in Agentic Robotics",
