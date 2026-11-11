@@ -131,7 +131,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 97,
+      "total_mentions": 98,
       "points": [
         {
           "week": "2026-09-07",
@@ -189,8 +189,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 6,
-          "avg_risk": 51.2,
+          "mentions": 7,
+          "avg_risk": 52.7,
           "max_risk": 72
         }
       ]
@@ -198,7 +198,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 71,
+      "total_mentions": 72,
       "points": [
         {
           "week": "2026-09-07",
@@ -256,9 +256,9 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 4,
-          "avg_risk": 15.0,
-          "max_risk": 25
+          "mentions": 5,
+          "avg_risk": 24.4,
+          "max_risk": 62
         }
       ]
     },
@@ -2566,6 +2566,31 @@
       ]
     },
     {
+      "key": "development bank of",
+      "label": "Development Bank of Nigeria",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "diezani alison madueke",
       "label": "Diezani Alison-Madueke",
       "total_mentions": 4,
@@ -3287,6 +3312,31 @@
       ]
     },
     {
+      "key": "afreximbank",
+      "label": "Afreximbank",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "airtel money",
       "label": "Airtel Money",
       "total_mentions": 3,
@@ -3447,25 +3497,6 @@
           "mentions": 3,
           "avg_risk": 56.7,
           "max_risk": 65
-        }
-      ]
-    },
-    {
-      "key": "development bank of",
-      "label": "Development Bank of Nigeria",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -4152,6 +4183,25 @@
       ]
     },
     {
+      "key": "revenue mobilisation allocation and fiscal commission",
+      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 58.5,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "shell",
       "label": "Shell",
       "total_mentions": 3,
@@ -4167,6 +4217,31 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "sunrise",
+      "label": "Sunrise Ltd",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
         }
       ]
     },
@@ -4199,6 +4274,31 @@
           "mentions": 1,
           "avg_risk": 40.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "uche nnaji",
+      "label": "Uche Nnaji",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 75.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -4357,25 +4457,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "afreximbank",
-      "label": "Afreximbank",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
         }
       ]
     },
@@ -4607,6 +4688,19 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "dele oyewale",
+      "label": "Dele Oyewale",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 48.5,
+          "max_risk": 62
         }
       ]
     },
@@ -5860,25 +5954,6 @@
       ]
     },
     {
-      "key": "revenue mobilisation allocation and fiscal commission",
-      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 55.0,
-          "max_risk": 55
-        }
-      ]
-    },
-    {
       "key": "rivers state government",
       "label": "Rivers State Government",
       "total_mentions": 2,
@@ -5952,25 +6027,6 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "sunrise",
-      "label": "Sunrise Ltd",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 85.0,
-          "max_risk": 85
         }
       ]
     },
@@ -6074,25 +6130,6 @@
           "mentions": 2,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "uche nnaji",
-      "label": "Uche Nnaji",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 75.0,
-          "max_risk": 75
         }
       ]
     },
@@ -6580,20 +6617,7 @@
           "max_risk": 45
         }
       ]
-    },
-    {
-      "key": "adams oshiomhole",
-      "label": "Adams Oshiomhole",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 78.0,
-          "max_risk": 78
-        }
-      ]
     }
   ],
-  "generated": "2026-11-11 15:16:27"
+  "generated": "2026-11-11 20:15:42"
 }

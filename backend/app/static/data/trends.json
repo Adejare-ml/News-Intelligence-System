@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 104,
-  "previous_articles": 176,
+  "recent_articles": 110,
+  "previous_articles": 166,
   "rising": [
     {
       "term": "kyari",
@@ -16,6 +16,12 @@
       "change": 5
     },
     {
+      "term": "project",
+      "recent": 7,
+      "previous": 3,
+      "change": 4
+    },
+    {
       "term": "power",
       "recent": 6,
       "previous": 2,
@@ -28,9 +34,21 @@
       "change": 4
     },
     {
-      "term": "project",
-      "recent": 6,
-      "previous": 3,
+      "term": "nnpc",
+      "recent": 8,
+      "previous": 5,
+      "change": 3
+    },
+    {
+      "term": "two",
+      "recent": 5,
+      "previous": 2,
+      "change": 3
+    },
+    {
+      "term": "firms",
+      "recent": 4,
+      "previous": 1,
       "change": 3
     },
     {
@@ -44,24 +62,6 @@
       "recent": 4,
       "previous": 1,
       "change": 3
-    },
-    {
-      "term": "appears",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
-    },
-    {
-      "term": "drive",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
-    },
-    {
-      "term": "kogi",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
     }
   ],
   "falling": [
@@ -72,49 +72,25 @@
       "change": -8
     },
     {
-      "term": "oil",
-      "recent": 4,
-      "previous": 11,
-      "change": -7
-    },
-    {
       "term": "lagos",
       "recent": 3,
       "previous": 9,
       "change": -6
     },
     {
-      "term": "profit",
-      "recent": 1,
-      "previous": 7,
-      "change": -6
-    },
-    {
-      "term": "nine-month",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
-    {
-      "term": "nine-month profit",
-      "recent": 0,
-      "previous": 6,
-      "change": -6
-    },
-    {
-      "term": "efcc",
-      "recent": 8,
-      "previous": 13,
-      "change": -5
-    },
-    {
-      "term": "nigeria\u2019s",
+      "term": "oil",
       "recent": 5,
       "previous": 10,
       "change": -5
     },
     {
-      "term": "fraud",
+      "term": "court",
+      "recent": 3,
+      "previous": 8,
+      "change": -5
+    },
+    {
+      "term": "profit",
       "recent": 1,
       "previous": 6,
       "change": -5
@@ -124,22 +100,46 @@
       "recent": 1,
       "previous": 6,
       "change": -5
+    },
+    {
+      "term": "nine-month",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
+      "term": "nine-month profit",
+      "recent": 0,
+      "previous": 5,
+      "change": -5
+    },
+    {
+      "term": "efcc",
+      "recent": 9,
+      "previous": 13,
+      "change": -4
+    },
+    {
+      "term": "fraud",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 71,
-      "previous": 124
+      "recent": 76,
+      "previous": 117
     },
     {
       "category": "Company",
       "recent": 23,
-      "previous": 34
+      "previous": 31
     },
     {
       "category": "Legal",
-      "recent": 9,
+      "recent": 10,
       "previous": 17
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-11 15:16:26"
+  "generated": "2026-11-11 20:15:42"
 }
