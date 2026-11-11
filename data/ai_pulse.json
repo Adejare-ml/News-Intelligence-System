@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-11 02:50:06",
+  "generated": "2026-11-11 15:16:20",
   "models": [
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 1214,
-      "downloads": 14378
+      "likes": 1591,
+      "downloads": 16693
     },
     {
       "id": "speridlabs/idol",
       "url": "https://huggingface.co/speridlabs/idol",
       "task": "image-to-3d",
-      "likes": 1882,
-      "downloads": 26470
+      "likes": 1948,
+      "downloads": 28250
     },
     {
       "id": "moonshotai/Kimi-K3.1-Pro",
       "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "task": "image-text-to-text",
-      "likes": 1867,
-      "downloads": 30721
-    },
-    {
-      "id": "ricursiveAI/Ripple-65B-Preview",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "task": "",
-      "likes": 487,
-      "downloads": 6480
+      "likes": 1906,
+      "downloads": 33617
     },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 427,
-      "downloads": 667
+      "likes": 627,
+      "downloads": 142989
     },
     {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 11388,
-      "downloads": 2791606
+      "id": "ricursiveAI/Ripple-65B-Preview",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "task": "",
+      "likes": 501,
+      "downloads": 7112
     },
     {
       "id": "NousResearch/Arete-27B",
       "url": "https://huggingface.co/NousResearch/Arete-27B",
       "task": "text-generation",
-      "likes": 405,
-      "downloads": 3431
+      "likes": 419,
+      "downloads": 4023
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 11452,
+      "downloads": 2848771
     },
     {
       "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "task": "image-text-to-text",
-      "likes": 2847,
-      "downloads": 1459029
+      "likes": 2881,
+      "downloads": 1532273
     }
   ],
   "papers": [
     {
-      "title": "Modality-Aware Expert Pruning for MoE-Based Multimodal Large Language Models",
-      "url": "https://huggingface.co/papers/2611.05927",
-      "upvotes": 1
-    },
-    {
-      "title": "EmoHarness: Boosting Multimodal Emotion Understanding with Meta-Harness Evolving",
-      "url": "https://huggingface.co/papers/2611.11994",
-      "upvotes": 2
-    },
-    {
-      "title": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
-      "url": "https://huggingface.co/papers/2611.11995",
+      "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
+      "url": "https://huggingface.co/papers/2610.40754",
       "upvotes": 3
     },
     {
-      "title": "e-means: outperforming k-means (in one-tenth the epochs)",
-      "url": "https://huggingface.co/papers/2611.09501",
-      "upvotes": 1
+      "title": "From Tool State to Scientific Action: Auditing Decision Provenance in Biomedical Research Agents",
+      "url": "https://huggingface.co/papers/2611.01527",
+      "upvotes": 7
     },
     {
-      "title": "MotionGraphicsBench: Evaluating Motion Graphics Generation with Programmatic Verification",
-      "url": "https://huggingface.co/papers/2611.10592",
+      "title": "TorchCurves: Differentiable Parametric Curves",
+      "url": "https://huggingface.co/papers/2611.14516",
+      "upvotes": 2
+    },
+    {
+      "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+      "url": "https://huggingface.co/papers/2611.10866",
       "upvotes": 9
     },
     {
-      "title": "FraudBench: A Legal Evaluation of AI Deception",
-      "url": "https://huggingface.co/papers/2611.12167",
-      "upvotes": 2
+      "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
+      "url": "https://huggingface.co/papers/2611.10015",
+      "upvotes": 4
+    },
+    {
+      "title": "MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations",
+      "url": "https://huggingface.co/papers/2611.10649",
+      "upvotes": 9
     }
   ]
 }

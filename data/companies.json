@@ -473,8 +473,8 @@
   },
   {
     "Company": "NNPC Limited",
-    "Mention Count": 24,
-    "Last Seen": "2026-11-10 20:31",
+    "Mention Count": 25,
+    "Last Seen": "2026-11-11 15:14",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -5249,8 +5249,8 @@
   },
   {
     "Company": "MTN Nigeria",
-    "Mention Count": 16,
-    "Last Seen": "2026-11-09 2:38",
+    "Mention Count": 17,
+    "Last Seen": "2026-11-11 15:13",
     "Industry": "Telecoms",
     "Risk Level": "Low",
     "First Seen": ""
@@ -6553,8 +6553,8 @@
   },
   {
     "Company": "Dangote Petroleum Refinery",
-    "Mention Count": 17,
-    "Last Seen": "2026-10-13 21:49",
+    "Mention Count": 18,
+    "Last Seen": "2026-11-11 15:14",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -7753,9 +7753,9 @@
   },
   {
     "Company": "Nigerian Exchange (NGX)",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-06 15:58",
-    "Industry": "General",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-11 15:14",
+    "Industry": "Financial Markets",
     "Risk Level": "Medium",
     "First Seen": ""
   },
@@ -8681,9 +8681,9 @@
   },
   {
     "Company": "Airtel Money",
-    "Mention Count": 2,
-    "Last Seen": "2026-10-10 14:04",
-    "Industry": "Telecoms/Fintech",
+    "Mention Count": 3,
+    "Last Seen": "2026-11-11 15:13",
+    "Industry": "Fintech",
     "Risk Level": "Low",
     "First Seen": "2026-10-02 13:35"
   },
@@ -10318,5 +10318,53 @@
     "Industry": "General",
     "Risk Level": "Medium",
     "First Seen": "2026-11-11 02:47"
+  },
+  {
+    "Company": "Two oil firms (unnamed)",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 15:12",
+    "Industry": "Oil & Gas",
+    "Risk Level": "High",
+    "First Seen": "2026-11-11 15:12"
+  },
+  {
+    "Company": "Otuogori bridge construction firm (unnamed in article)",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 15:12",
+    "Industry": "Construction",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-11 15:12"
+  },
+  {
+    "Company": "The Alternative Bank Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 15:13",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-11 15:13"
+  },
+  {
+    "Company": "Sterling Financial Holdings Company Plc",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 15:13",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-11 15:13"
+  },
+  {
+    "Company": "I&M Bank Kenya",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 15:13",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-11 15:13"
+  },
+  {
+    "Company": "HSBC Amanah",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-11 15:13",
+    "Industry": "Banking",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-11 15:13"
   }
 ]

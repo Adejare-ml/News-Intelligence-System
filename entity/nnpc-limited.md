@@ -2,12 +2,12 @@
 
 Company or body · Oil & Gas
 
-Mentioned in 24 reports tracked by AURA.
+Mentioned in 25 reports tracked by AURA.
 
-- Mentions tracked: 24
+- Mentions tracked: 25
 - Holdings: 0
 - Recent stories: 3
-- Last seen: 10 Nov 2026
+- Last seen: 11 Nov 2026
 
 ## In the news
 

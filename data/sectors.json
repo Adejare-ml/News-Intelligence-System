@@ -2,39 +2,39 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 952,
-      "mentions": 1564,
+      "companies": 951,
+      "mentions": 1563,
       "risk": {
         "Low": 834,
         "Critical": 57,
-        "Medium": 34,
+        "Medium": 33,
         "High": 27
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 53,
-      "mentions": 269,
+      "companies": 54,
+      "mentions": 272,
       "risk": {
         "Medium": 19,
         "Low": 28,
         "Critical": 1,
-        "High": 5
+        "High": 6
       }
     },
     {
       "industry": "Banking",
-      "companies": 29,
-      "mentions": 81,
+      "companies": 33,
+      "mentions": 85,
       "risk": {
-        "Low": 23,
+        "Low": 27,
         "Medium": 6
       }
     },
     {
       "industry": "Telecoms",
       "companies": 15,
-      "mentions": 64,
+      "mentions": 65,
       "risk": {
         "Low": 13,
         "Medium": 1,
@@ -53,11 +53,11 @@
     },
     {
       "industry": "Fintech",
-      "companies": 11,
-      "mentions": 20,
+      "companies": 12,
+      "mentions": 23,
       "risk": {
         "Medium": 4,
-        "Low": 7
+        "Low": 8
       }
     },
     {
@@ -159,6 +159,15 @@
       }
     },
     {
+      "industry": "Construction",
+      "companies": 7,
+      "mentions": 8,
+      "risk": {
+        "Medium": 5,
+        "Low": 2
+      }
+    },
+    {
       "industry": "Insurance",
       "companies": 7,
       "mentions": 8,
@@ -173,15 +182,6 @@
       "mentions": 8,
       "risk": {
         "Critical": 1
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 6,
-      "mentions": 7,
-      "risk": {
-        "Medium": 4,
-        "Low": 2
       }
     },
     {
@@ -416,6 +416,14 @@
       }
     },
     {
+      "industry": "Financial Markets",
+      "companies": 1,
+      "mentions": 2,
+      "risk": {
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Hospitality",
       "companies": 2,
       "mentions": 2,
@@ -483,14 +491,6 @@
     },
     {
       "industry": "Technology/Venture Capital",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
-      "industry": "Telecoms/Fintech",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -1010,5 +1010,5 @@
       }
     }
   ],
-  "generated": "2026-11-11 02:50:12"
+  "generated": "2026-11-11 15:16:27"
 }

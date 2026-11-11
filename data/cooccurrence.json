@@ -502,6 +502,11 @@
       "weight": 4
     },
     {
+      "a": "mele kyari",
+      "b": "national petroleum company",
+      "weight": 4
+    },
+    {
       "a": "national petroleum company",
       "b": "ogun state government",
       "weight": 4
@@ -554,11 +559,6 @@
     {
       "a": "house of representatives",
       "b": "mtn",
-      "weight": 3
-    },
-    {
-      "a": "mele kyari",
-      "b": "national petroleum company",
       "weight": 3
     },
     {
@@ -1012,5 +1012,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-11 02:50:12"
+  "generated": "2026-11-11 15:16:27"
 }

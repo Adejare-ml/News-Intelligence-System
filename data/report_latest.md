@@ -1,33 +1,42 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-11 02:49:37 (UTC)
-**Run Window:** 2026-11-11, all runs to 02:49 (run 1 of the day)
+**Generated on:** 2026-11-11 15:15:41 (UTC)
+**Run Window:** 2026-11-11, all runs to 15:15 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 8
-- **High Risk Signals:** 1
-- **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Total Articles Processed:** 26
+- **High Risk Signals:** 2
+- **Appointments Logged:** 2
+- **Procurement Awards:** 2
 
 ---
 
-# Nigeria Corporate Transparency & MDA Intelligence Summary
-**Report date:** 2026-11-11 | **Coverage:** All articles published on 2026-11-11 up to 02:49 (run 1 of the day)
+# Nigerian Corporate Transparency Brief: 11 November 2026
+
+*Coverage: all articles published on 2026-11-11 up to 15:15 (run 2 of the day). Most items are headline-only, so detail is limited.*
 
 ### Key Developments
-- **EFCC local government probe:** The EFCC is reportedly investigating the spending of all 774 local government chairmen since councils gained financial autonomy. Zonal directorates across the 36 states and the FCT are handling the work, and the EFCC spokesman did not respond to the reporter. The probe follows the Supreme Court's 11 July 2024 ruling on LG financial autonomy. ([The Punch](https://punchng.com/lg-autonomy-efcc-probes-774-chairmens-spending/))  
-- **Mompha case struck out:** The Lagos State Special Offences Court in Ikeja struck out the EFCC's N6bn money laundering charge against Ismaila Mustapha (Mompha) and Ismalob Global Investment Limited. Judge Mojisola Dada held that prosecuting while a related Federal High Court case is pending was an abuse of process. That case, over about N32.9bn, remains pending. ([Premium Times](https://www.premiumtimesng.com/news/top-news/924296-court-strikes-out-efccs-n6bn-money-laundering-charge-against-mompha.html))  
-- **Fiscal reporting:** The CBN has introduced digital fiscal reporting for states and LGAs. The reporting gives no detail on design or timeline. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxQRlNkMTFvTVQyZEdULXZOV0ctMlJjZHpFdTZnUlloRWlKeW52aDhiTkFCd1huTXNtS0VwVUdlYy1iTVIwQnFsdnJpYzdzYUhyaDFXSWl4ZzNmZjcwMnJ6b3k2WHpyb2s0WFFBengxVVJVWmFqYkJuZzNmZC1VZ202Tk5hNVg?oc=5))  
-- **Gas flaring:** NNPC and Oando have joined a global push to end gas flaring. The report gives no figures. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV01GTk1mMEpSMng3WlVTeDVfYTdrc1BUSVJmTjNaTjU1ajBibGtJaERFajFtM1JTM0JveUpsTFFKYk1kazM5aWY0WTZKYWhka1JDaG1MRU5NTWRoSTdXb1VxQllheHhhQmEyc3RhSU1POU9nWVdIS211UFAxS3lKV0p6Um4yRXFzUVhjTEpVLWM2VzV0Y2c2VEo4QnNfQzVJalVRTGFzR3FOSWFEa0FTaUFwNzFsQzFEUk56T3NVbnBfMkRzdEhnRTJXSGRGbExMckxrQ05HbmVRYTFFQklB?oc=5))  
-- **Nigeria’s active telecom lines hit 200m as 5G share crosses 5%**. Nigeria's active telecom lines have reached 200 million, and 5G now accounts for more than 5% of connections. ([Vanguard News](https://news.google.com/rss/articles/CBMingFBVV95cUxPTzBqR0pxeF9Tc2UyTXoweVRVS2RzZS1GNjg2Qk4zSWctSEpVc1EtT2pKWFlZWGlKd0wxdmF4RGxibmNXYUJkOXFydUE2M2xGdU9hRC1adHY1dGN6YWJCUkstNFpzbnFsdmIwNDQ3OFdJUzA1cDFoYmxyamx3Z3FHTHFjaUNCQWhOOUFUM2dmaV96TGtrRlZPdi14b0dIQdIBowFBVV95cUxQcXJpdGNBemw0aHM3em1SR2t3LXh3cElsaHpodUNpQ2w4WGIzalZFV29hSDRMT21IZ3E3RDRKYThkbEF6VHBMN2k0ZUZJbEt1ajZTT2hpcmVvaGlJTG9nbDBRTDM0UGdwMzA1M0g0TmwyRkpUakVWUnJXWUNBSE9JSzd1Vk5uLW9zd1FMQ1BwYmhSdTZRazB6Q3N0eHR3dW9RQTBr?oc=5))  
+
+- **NNPCL audit dispute:** Mele Kyari says no money is missing from NNPCL and disputes audit findings. The findings themselves were not detailed. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilgFBVV95cUxPQjVWdGcwYlFtRE5UelZBV0JHVTN4dDVxOU1rTkIzTkRxS0lKY253Q25qRGVUYlo4VEUzU2RFcTVPVGp5QnFyWlBCOE0xeExLRkhWVXpsWHRQdkxOajBpV3o4c0pZX2xXNUtSM09LczQtbVhXcWFZVXVGTWNGQmtwZWxObmpNNXZkaWdTN3U5djVVekZyVXc?oc=5))  
+- **Tax waivers:** The FG granted drug manufacturers N24bn in tax waivers. Beneficiaries and legal basis were not named. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMizwFBVV95cUxPWW5wYjBqVEd1bXJWcU5qY3BXaTBLTjU3YVI5TmwzNmtXbVFRTUJ1NmxSMzliNkN0RHF0RWlNRlBFT3hyZ05NWHFMWnVHRUx6eE5BSHduaWs1NF8zdDdDNy1tWFByOTY3aTNPRVlnQVJpa0RON1VEZEg4a0daUUxoMnlreEdINVd3bWY3eEVqRWkzUXhZZTNINWFiTHNMNmhPWGhJOG1jTzNpYktPQnRHZkptVU1JTDUyQW4ycGJ4Zm5uVFFycXdyZGZOVnJIMHc?oc=5))  
+- **Akwa Ibom debt:** The state cleared N39.831bn of inherited bank loans. Lenders and terms were not stated. ([Voice of Nigeria](https://news.google.com/rss/articles/CBMigAFBVV95cUxNckRLMWwxSHA0RWt4MTBvTk93Y0RxZU5zeTRXNlZabFZuZGwtcW9pdVdtWTA2R3BNZWZ6enBYMWhyenJOVUFRU1J3aG9kVXdQb3EtYnNIS2hBTGxsMFV0anoxa09KUy1SLUVMa0E4UWZ4ZUNYdmZEbDZJNFBEdGNpVw?oc=5))  
+- **Market outlook:** Nigerian stocks are tipped to finish 2026 near N230 trillion, with the Dangote Petroleum Refinery listing anticipated. No shareholding details were given. ([Nairametrics](https://nairametrics.com/2026/11/11/stable-naira-mega-listing-nigerian-stocks-eye-n230-trillion-finish-in-2026/))  
+- **Lower loan-loss charges lift Nigerian banks’ profits as interest earnings shrink**. Lower credit impairment charges were the largest source of profit support for eight Nigerian Exchange-listed banking groups in the nine months ended September 2026. ([Nairametrics](https://nairametrics.com/2026/11/11/lower-loan-loss-charges-lift-nigerian-banks-profits-as-interest-earnings-shrink/))  
 
 ### High Risk Alerts
-- **EFCC recoveries from oil firms (risk 72, High):** The EFCC reportedly recovered $3m and N1.3bn from two oil companies. The headline-only report does not name the firms or state the basis of the recovery, so the case needs follow-up. ([Punch Newspapers](https://news.google.com/rss/articles/CBMicEFVX3lxTE9qV1Y2cmY3Rm5lZmJrRWZTWjBDaFIxTFB4WU8wcTV3X0VLaG5GV2lEZlBaSlNuRzk2cTlHRnJkV1ZXUUlzSFhRcHM5Y0ZrVmpLQy1TV2pKYzNxeVBYei1QMmhYQlhFeV9OM3Q2dmg4VHg?oc=5))  
+
+- **EFCC recovers $3m, N1.3b from two oil firms |**. The Economic and Financial Crimes Commission (EFCC) has recovered $3 million and N1.3 billion from two oil companies. ([The Eagle Online](https://news.google.com/rss/articles/CBMifEFVX3lxTE1fdlhlVWR3QlBsSkR3TmYtbXBnY0dQTFh6MXhpSHpucEhIS09rTkJtZmJ6eE9iT2VaenoxaVNpWGhib1VndnRyOHJjZzRwYU41ck1sQWZoRm1sQWhoLWYteHlRZ0dHRHRQS3M1aU12c1BJZkdVWkFzTVJKeTU?oc=5))  
 
 ### Beneficial Ownership & PSC Disclosures
-No verified significant-control holdings appear in today's coverage, so no holders, percentages or filing statuses can be reported.
+
+No significant-control holdings were verified or disclosed in today's coverage, so there are no holders, percentages, PEP flags or pending filings to report.
 
 ### Procurement & Board Changes
-No procurement awards or board appointments surfaced in this window's coverage, though the Mompha ruling and EFCC items involve named officials and defendants rather than corporate governance changes.
+
+- **Otuogori bridge:** NDDC and an unnamed construction firm explained the alleged collapse of the 600-metre bridge project. The contract value and cause were not given. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMisAFBVV95cUxOamxLdlJyV2lLbVg3LXRDMHRTRFNDTmxaenh5RmFaQUd0WmlKMUpEdkFZc1F4RndndlRxMnFiQ1o0Ulhma3E4Ql9BUmpWOGdKd3h1b0VLVHk4TXp3NTB2SWhTRW5Ec3dPaUtGMnliYmFwY1p1Yk1nNkxIQldIM05ndGs0WE5NSjZWWnY3S212MFM1Tl9OdUdaYkkwdjhhWks3WGRqRUZMSjFiNW9zRFpQTQ?oc=5))  
+- **‘Delayed contract payments, procurement barriers threaten businesses’**. Businesses are warning that delayed contract payments and procurement barriers are threatening their operations. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilwFBVV95cUxPYm1CUWVjZkdadzlMa2NKRlh4ZE5CNlRPckU2bHY1M0VPem02QzI4bEFISF9KaGNaSUVJcDdmNzdSVXlLQmRjNzJQU1Z3X0NQX0tDWjcyZ0VjbmNxeWMzRHAzdmRORkRGWWNXa3VDWWYxZWFOSU1qYjg2RzE1anJ3cHFDeUEtMDJ4d0ZFRGd3c1h2Y2RpSjc0?oc=5))  
+- **Alternative Bank CEO:** Gul Khan, formerly CEO of I&M Bank Kenya, was appointed MD/CEO following CBN approval. He succeeds founding MD Hassan Yusuf. The bank says it has met the CBN's revised minimum capital requirement. ([Nairametrics](https://nairametrics.com/2026/11/11/sterling-holdco-subsidiary-alt-bank-appoints-gul-khan-as-md-ceo/))  
+- **MTN Nigeria board:** A former 9mobile CEO and an ex-Etisalat executive were appointed to the board. Names and shareholding were not given. ([innovation-village.com](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBhaDNZYkNQTHd3cGZRMnlqMkE0d3h4N0pGcE5pcW9GX3J3bHUtblp1SWNiZmZOVVZ0MkdfSUcxamJJUWpmZVVGcllmNzhtS3dYTnlTZ3BwVXZzUVRiZ1hpVlFhbERCbUUy?oc=5))  
+- **Kogi airport:** Minister Festus Keyamo flagged off construction. Contractor and contract value were not disclosed, so procurement scrutiny is warranted. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNMWY3QlVsbjlNdVc2ZW9BeTZ6RUMxMXFqdkdTY0l3NGVGYmxhaXVla3JZT2NUc21HU1JSRzdOYmxQNkQ2Nzg1VVNXYURkdXNSU2tCMm9uak1FNEg2RGpSQVlJSGFFeDg3S0c2Zi0yZ05BZ2RUMHFkX2V6Rmw3eXp3LVdPWDJnRndUMzFPeXdPRU14SFhNSW5QSDZsSlJaRGZTSlpESHVZVjFONXBMTXYtbUJHUUFtaXREc29zOUFEZnlBR2ZRU3hKM0daTHl1ZHRLa0RTUHBqSDFzN3FSQVE?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*
