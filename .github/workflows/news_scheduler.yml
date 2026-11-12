@@ -18,9 +18,10 @@ on:
         default: false
 
 # Permissions are granted per job below: run-pipeline needs contents:write
-# (data commit) and issues:write (failure alerts); deploy-pages hands its
-# token to a third-party deploy action, so it carries contents:write only;
-# close-alerts closes the alert issues, so it carries issues:write only.
+# (data commit) and issues:write (failure alerts); deploy-pages and
+# deploy-production hand their token to a third-party deploy action, so they
+# carry contents:write only; close-alerts closes the alert issues, so it
+# carries issues:write only.
 
 # Serialize runs: two overlapping runs both commit to main, and the slower one
 # is rejected as non-fast-forward (a manual trigger near a cron slot did exactly
@@ -89,13 +90,14 @@ jobs:
     # 6-hour Actions default. Normal runs finish well inside 30 minutes
     # even with the per-article rate-limit sleeps.
     timeout-minutes: 90
-    # Exposes the SHA this run actually committed, so deploy-pages can check
-    # that exact commit out instead of a floating `main` ref. Without this,
-    # deploy-pages's checkout of `main` raced the push above closely enough
-    # that it consistently resolved to the *previous* run's commit instead --
-    # verified across three consecutive scheduled runs on 2026-09-22, where
-    # every gh-pages deploy shipped the prior cycle's data. The data was
-    # never lost, but the live site ran up to one cycle (~6h) stale.
+    # Exposes the SHA this run actually committed, so the deploy jobs can
+    # check that exact commit out instead of a floating `main` ref. Without
+    # this, deploy-pages's checkout of `main` raced the push above closely
+    # enough that it consistently resolved to the *previous* run's commit
+    # instead -- verified across three consecutive scheduled runs on
+    # 2026-09-22, where every gh-pages deploy shipped the prior cycle's data.
+    # The data was never lost, but the live site ran up to one cycle (~6h)
+    # stale.
     outputs:
       data_sha: ${{ steps.autocommit.outputs.commit_hash }}
 
@@ -156,7 +158,7 @@ jobs:
           # the Morning Brief email edition, with one model call for its
           # overview. Other runs write a preview of the next edition. The
           # "since last email" marker moves only after a send succeeds
-          # (deploy-pages below).
+          # (deploy-production below).
           EMAIL_EDITION: ${{ (github.event.schedule == '11 7 * * *' || inputs.email_edition) && '1' || '' }}
         run: |
           python run_pipeline.py
@@ -275,7 +277,8 @@ jobs:
     # so a docs push and a scheduler run could push gh-pages concurrently
     # and race. The data commit lands on main with [skip ci], which is why
     # deploy_pages.yml cannot cover this path itself. Newest deploy wins,
-    # so cancelling an in-progress one is safe.
+    # so cancelling an in-progress one is safe. Production is published by
+    # deploy-production below, so a cancel here never stops it.
     concurrency:
       group: pages-deploy
       cancel-in-progress: true
@@ -288,15 +291,10 @@ jobs:
           # run-pipeline for why. Falls back to `main` only if that output is
           # ever empty (e.g. the commit step didn't run for some reason).
           ref: ${{ needs.run-pipeline.outputs.data_sha || 'main' }}
-          # Full history so the promoted `production` tag can be built.
-          fetch-depth: 0
 
       # The site is built from this run's data: pages are rendered at build
-      # time, so a data refresh is a rebuild. Two copies:
-      #   gh-pages          the test site, built from main's code
-      #   cloudflare-pages  production, built from the PROMOTED code (the
-      #                     `production` tag) so untested changes on main
-      #                     never reach users through a data refresh.
+      # time, so a data refresh is a rebuild. This job rebuilds the test site
+      # (gh-pages) from main's code; deploy-production rebuilds production.
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
@@ -318,6 +316,94 @@ jobs:
           npm ci --no-audit --no-fund
           ./scripts/build-sites.sh
 
+      - name: Publish the GitHub Pages copy
+        # Pinned to a commit SHA so a moved tag cannot inject code into a
+        # workflow that holds a contents:write token
+        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
+        with:
+          folder: web/out/github
+          branch: gh-pages
+
+      # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
+      # the data commit lands with [skip ci], so this path -- the one that
+      # runs four times a day -- shipped unverified. A truncated or
+      # unparseable data file went unnoticed until a human loaded the
+      # dashboard. Same checks as deploy_pages.yml's smoke-test job.
+      - name: Smoke-test the deployed site
+        run: |
+          set -euo pipefail
+          BASE="https://adejare-ml.github.io/News-Intelligence-System"
+
+          fetch() {
+            # Retry across the CDN propagation window (up to ~2 minutes).
+            for i in 1 2 3 4 5 6; do
+              if curl -fsSL --max-time 30 "$1" -o "$2"; then return 0; fi
+              echo "attempt $i failed for $1; retrying in 20s"; sleep 20
+            done
+            echo "FAILED to fetch $1"; return 1
+          }
+
+          fetch "$BASE/" index.html
+          grep -q "data-hero" index.html
+
+          for f in latest.json companies.json people.json procurement.json \
+                   significant_control.json reports.json; do
+            fetch "$BASE/data/$f" "$f"
+            python3 -c "import json; json.load(open('$f'))"
+            echo "OK data/$f"
+          done
+          echo "Smoke test passed."
+
+  # Production (cloudflare-pages): this run's data built with the PROMOTED
+  # code (the `production` tag), so untested changes on main never reach
+  # users through a data refresh. Its own job so it can share
+  # promote_production.yml's production-deploy concurrency group. With
+  # different groups the two overlapped: a refresh that read the tag before
+  # a promotion moved it, and published after the promotion, put the old
+  # code back on auranews.pages.dev until the next refresh (~6 hours). Now
+  # a refresh that queues during a promotion waits for it (smoke test
+  # included) and reads the moved tag; a promotion that queues during a
+  # refresh waits, then publishes over it. cancel-in-progress stays false
+  # here too: one that arrived would cancel a promotion halfway.
+  #
+  # GitHub keeps one waiting entry per group, so if a second promotion is
+  # started while this job waits behind a first, this job is cancelled.
+  # Nothing is lost on the site (that promotion builds main, which already
+  # has this run's data), but a morning run's Morning Brief is not sent:
+  # run the scheduler with email_edition to send it.
+  deploy-production:
+    name: Deploy production (cloudflare-pages)
+    needs: run-pipeline
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: production-deploy
+      cancel-in-progress: false
+    steps:
+      - name: Checkout the commit run-pipeline just pushed
+        uses: actions/checkout@v7
+        with:
+          # The same data commit as deploy-pages (see run-pipeline's outputs).
+          ref: ${{ needs.run-pipeline.outputs.data_sha || 'main' }}
+          # Full history so the promoted `production` tag can be built.
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Restore logo cache
+        uses: actions/cache@v6
+        with:
+          path: web/public/logos
+          key: logos-${{ hashFiles('web/src/lib/logos.ts') }}
+
+      # Reads the tag inside the production-deploy group, so no promotion
+      # can move it between this build and the publish below.
       - name: Build production (promoted code, this run's data)
         id: production
         run: |
@@ -340,14 +426,6 @@ jobs:
             echo "::warning::No promoted version found: production keeps its current build. Run 'Promote to production'."
             echo "built=false" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Publish the GitHub Pages copy
-        # Pinned to a commit SHA so a moved tag cannot inject code into a
-        # workflow that holds a contents:write token
-        uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445 # v4
-        with:
-          folder: web/out/github
-          branch: gh-pages
 
       - name: Publish production (cloudflare-pages)
         if: steps.production.outputs.built == 'true'
@@ -391,44 +469,14 @@ jobs:
         continue-on-error: true
         run: bash scripts/record_sent_edition.sh "${{ runner.temp }}/send-result.json" out-production/data/email_digest.json
 
-      # The push-triggered deploy_pages.yml smoke-tests its own deploys, but
-      # the data commit lands with [skip ci], so this path -- the one that
-      # runs four times a day -- shipped unverified. A truncated or
-      # unparseable data file went unnoticed until a human loaded the
-      # dashboard. Same checks as deploy_pages.yml's smoke-test job.
-      - name: Smoke-test the deployed site
-        run: |
-          set -euo pipefail
-          BASE="https://adejare-ml.github.io/News-Intelligence-System"
-
-          fetch() {
-            # Retry across the CDN propagation window (up to ~2 minutes).
-            for i in 1 2 3 4 5 6; do
-              if curl -fsSL --max-time 30 "$1" -o "$2"; then return 0; fi
-              echo "attempt $i failed for $1; retrying in 20s"; sleep 20
-            done
-            echo "FAILED to fetch $1"; return 1
-          }
-
-          fetch "$BASE/" index.html
-          grep -q "data-hero" index.html
-
-          for f in latest.json companies.json people.json procurement.json \
-                   significant_control.json reports.json; do
-            fetch "$BASE/data/$f" "$f"
-            python3 -c "import json; json.load(open('$f'))"
-            echo "OK data/$f"
-          done
-          echo "Smoke test passed."
-
   # The pipeline-failure alert above and the pipeline-missed one from
   # scheduler_watchdog.yml stay open until a run goes through, so a good run
   # closes them: an open alert then always means the pipeline is still
-  # broken or still missing slots. Its own job after deploy-pages, so a run
-  # that published nothing leaves them open, and a gh error here cannot stop
-  # the site deploy or the Morning Brief send.
+  # broken or still missing slots. Its own job after both deploy jobs, so a
+  # run that did not publish the test site and production leaves them open,
+  # and a gh error here cannot stop the site deploy or the Morning Brief send.
   close-alerts:
-    needs: [run-pipeline, deploy-pages]
+    needs: [run-pipeline, deploy-pages, deploy-production]
     runs-on: ubuntu-latest
     permissions:
       issues: write

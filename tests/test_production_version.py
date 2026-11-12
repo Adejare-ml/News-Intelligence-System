@@ -198,7 +198,7 @@ def test_the_promotion_smoke_test_waits_for_the_promoted_sha_before_the_page_che
 def test_data_refreshes_build_production_from_the_production_tag():
     # build-production.sh writes the commit the tag names to version.txt, so
     # the file stays on the promoted SHA between promotions.
-    job = _load("news_scheduler.yml")["jobs"]["deploy-pages"]
+    job = _load("news_scheduler.yml")["jobs"]["deploy-production"]
     run = _steps(job)["Build production (promoted code, this run's data)"]["run"]
     assert "REF=production" in run
     assert 'build-production.sh "$REF"' in run

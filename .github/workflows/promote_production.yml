@@ -21,7 +21,10 @@ on:
 permissions:
   contents: write
 
-# One promotion at a time, and never cancelled halfway.
+# One promotion at a time, and never cancelled halfway. The scheduler's
+# deploy-production job (news_scheduler.yml) shares this group, so a data
+# refresh never reads the `production` tag before this run moves it and then
+# publishes the old code over this one.
 concurrency:
   group: production-deploy
   cancel-in-progress: false
