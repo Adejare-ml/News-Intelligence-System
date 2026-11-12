@@ -375,7 +375,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 27,
+      "total_mentions": 28,
       "points": [
         {
           "week": "2026-09-14",
@@ -418,6 +418,12 @@
           "mentions": 4,
           "avg_risk": 31.2,
           "max_risk": 65
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -4678,6 +4684,19 @@
       ]
     },
     {
+      "key": "british international investment",
+      "label": "British International Investment",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "cardoso",
       "label": "Cardoso",
       "total_mentions": 2,
@@ -5819,6 +5838,19 @@
       ]
     },
     {
+      "key": "okra",
+      "label": "Okra",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "omatek ventures",
       "label": "Omatek Ventures Plc",
       "total_mentions": 2,
@@ -6615,33 +6647,7 @@
           "max_risk": 62
         }
       ]
-    },
-    {
-      "key": "access bank kenya",
-      "label": "Access Bank Kenya",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "accord party",
-      "label": "Accord Party",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-11 23:31:37"
+  "generated": "2026-11-12 03:50:19"
 }
