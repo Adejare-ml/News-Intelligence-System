@@ -63,12 +63,12 @@
     },
     {
       "industry": "Energy",
-      "companies": 12,
-      "mentions": 19,
+      "companies": 13,
+      "mentions": 21,
       "risk": {
         "Medium": 5,
         "High": 3,
-        "Low": 4
+        "Low": 5
       }
     },
     {
@@ -627,14 +627,6 @@
       }
     },
     {
-      "industry": "Clean Energy",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Consultancy/Governance",
       "companies": 1,
       "mentions": 1,
@@ -1011,5 +1003,5 @@
       }
     }
   ],
-  "generated": "2026-11-11 23:31:37"
+  "generated": "2026-11-12 03:50:19"
 }
