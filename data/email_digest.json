@@ -1,15 +1,15 @@
 {
-  "edition": "20261112-11677-preview",
+  "edition": "20261112-11691-preview",
   "preview": true,
-  "built_at": "2026-11-11 23:31:37",
+  "built_at": "2026-11-12 03:50:20",
   "date": "Thursday 12 November 2026",
-  "subject": "AURA alert · Thu 12 Nov · 8 stories, 1 risk alert",
-  "preheader": "Mambilla project: Imoke insists contract award to Sunrise was invalid · 8 stories, 1 risk alert",
+  "subject": "AURA alert · Thu 12 Nov · 11 stories, 1 risk alert",
+  "preheader": "Mambilla project: Imoke insists contract award to Sunrise was invalid · 11 stories, 1 risk alert",
   "since": "Wed 11 Nov, 16:16 Lagos",
-  "through_id": 11677,
+  "through_id": 11691,
   "stats": {
-    "reports": 9,
-    "stories": 8,
+    "reports": 12,
+    "stories": 11,
     "outlets": 4,
     "risk_alerts": 1,
     "public_money": 1,
@@ -145,6 +145,30 @@
       "flags": [],
       "alert": false,
       "risk": "",
+      "headline": "Weak oversight, market gaps stall power tariff reforms",
+      "byline": "The Guardian · Thu 12 Nov, 04:00 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "Power tariff reforms in Nigeria are reported to be stalled by weak regulatory oversight and market gaps. The article's text is limited to its headline, so no further details on the parties, figures or timelines are available.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzlpVm5rOFdDWllYVjZ1Z01JaGxqX0pNN2xYUHlLRTl4c29nSlp5X1FaeXFxS2ZtSTVWZU1wbzZ6VXlPRWtCV19jVklkTzFza0g1d083bXNkUDhIdTl1UTM1QlJhZ244Nnl4aXludzkycS1FRGVRSDZDLXFuSVl0RXpsRmYzcXRWdkl2cWU5M2tUM3pnSHFN?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 5,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
       "headline": "FG moves to regulate scrap metal industry, curb infrastructure vandalism",
       "byline": "The Guardian · Tue 10 Nov, 22:15 Lagos",
       "outlet": "The Guardian",
@@ -161,56 +185,46 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Afreximbank, DBN partner on $75 million finance facility for SMEs, creative sector",
-      "byline": "Premium Times · Wed 11 Nov, 18:36 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector. The announcement was reported by Premium Times Nigeria. No further details on terms or timelines are provided in the available text.",
-      "key_facts": [
-        "Afreximbank and DBN have partnered on a $75 million finance facility."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: The facility channels development finance into Nigerian SMEs and creative businesses, which is relevant to lending access for these sectors. The available text does not state terms, disbursement arrangements or governance details."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Afreximbank",
-        "Development Bank of Nigeria"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcThmb2RUNmZ0QzdtY0NSXzRnVTltUVV1Z21pWDluc1d6V0dBNHh0UGR2bjN0a0xVdHRuczVTM245MHZKcGJ0ZW9xZ2NiNFhNLVliZzFWQS1OcWxMNU1pQnN1eHJrVlREWjBQR3c1M25jZFBhVkZ5YndSNEVfa0oxaU8yZXdJNWk2UkZvUml4cTRGek83ZVdFakthSWl6ZzBpaFVNM2VEU3B0Y01EdklyTnh3ZFJRY1BleE0yM2lfcTdCQ29XelFDS3BsYzBCM3lmZERUUGRuaXpRMVFZSHc?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
       "theme": "Other",
+      "text": "British International Investment (BII) announced a $7m debt facility to Okra, a mesh-grid technology provider for off-grid communities.",
+      "outlet": "Punch",
+      "url": "https://punchng.com/bii-backs-okra-with-7m-to-accelerate-clean-energy/"
+    },
+    {
+      "n": 7,
+      "theme": "Other",
+      "text": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcThmb2RUNmZ0QzdtY0NSXzRnVTltUVV1Z21pWDluc1d6V0dBNHh0UGR2bjN0a0xVdHRuczVTM245MHZKcGJ0ZW9xZ2NiNFhNLVliZzFWQS1OcWxMNU1pQnN1eHJrVlREWjBQR3c1M25jZFBhVkZ5YndSNEVfa0oxaU8yZXdJNWk2UkZvUml4cTRGek83ZVdFakthSWl6ZzBpaFVNM2VEU3B0Y01EdklyTnh3ZFJRY1BleE0yM2lfcTdCQ29XelFDS3BsYzBCM3lmZERUUGRuaXpRMVFZSHc?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Other",
       "text": "The United Kingdom has backed Nigeria's proposed $750 million pension infrastructure fund.",
       "outlet": "Punch",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWlTaGZnd3M0akFvZV83aXB0RVZxem9abURwYVZLVEZlVWFodlFMWFZLbmNOenRoOUs1N1E4TjY2WFZBOUxVeUFoYmlNWDNwYkdJaGtra0JwanJzR0d0TmJ2aTIwT0c1UG5VMld6Z1BRRmZDc0ZZUFFkYXNRc2dYVXZXTU9QMmNsRVE?oc=5"
     },
     {
-      "n": 7,
+      "n": 9,
       "theme": "Regulation & enforcement",
       "text": "Premium Times reports: Certificate Forgery: Court adjourns ex-minister Uche Nnaji’s suit",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaWZGOWUwV1ZZcUxRcmlCTFYxYnBLQ0VfbGhsZTByYTNFWEFNc0pqU3E0RktkYlRUQTdDMTZXaTBMakh3dHRBRVpKV1hqUEllWlk3UzRaUjVBeHZWcS1hMnJiSk41Z2dWRmdWazVKcmdRUUZZZ0VacUtZUXVhb29zVVBPU3U4bVZKeWI0eGxHOTF3dnRkdUdpZXluOThoWEV5TXZHemU4RXN1d19PTTVBZ3g1RENCNGdmTnZab2VjR0cycGpmaWc?oc=5"
     },
     {
-      "n": 8,
+      "n": 10,
+      "theme": "Regulation & enforcement",
+      "text": "Lagos State has moved to crack down on retail stores that enforce 'no refund' policies.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdUJIR0dscXcxWHJ1OWdvZEwtems1enprQkhwX0VPY1hDVGlKZjdzSVBHdXhvTTZPUjduRm13ekQ5NGwzQTJvcXBrT0dITi1SUUNmUWpLY1A3ZTZ5aE01UHFDc1A3SVVsLUhNX2oxcG9vbm91ZDlNWGZyZXVlTm94bmJPT3U?oc=5"
+    },
+    {
+      "n": 11,
       "theme": "Regulation & enforcement",
       "text": "The Minister has suspended reviews of broadcast licence fees and urged broadcasters to maintain the highest standards ahead of the 2027 elections.",
       "outlet": "The Guardian",

@@ -121,6 +121,24 @@
       "risk": "Critical"
     },
     {
+      "id": "9aef00190386",
+      "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a7a52fda9c6c",
+      "label": "Rural Electrification Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ae510682c88a",
+      "label": "British International Investment",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "01391c4b85e7",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "type": "agency",
@@ -217,21 +235,33 @@
       "risk": "Low"
     },
     {
-      "id": "e4af52105f17",
-      "label": "Afreximbank",
-      "type": "agency",
+      "id": "894050f02b6c",
+      "label": "Jonny Baxter",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "9b0e9a17ac57",
-      "label": "CRFFN",
-      "type": "agency",
+      "id": "e87d7d245824",
+      "label": "British High Commission",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "42019e92a5cf",
-      "label": "China Maritime Safety Administration",
-      "type": "agency",
+      "id": "b18554f8a377",
+      "label": "Geoffrey Manley",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "259569cb7165",
+      "label": "Afnan Hannan",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3fab39407c78",
+      "label": "Okra Solar",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -409,42 +439,6 @@
       "risk": "Low"
     },
     {
-      "id": "bedf3e3e9be1",
-      "label": "Babajide Sanwo-Olu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5152c3f8bc4a",
-      "label": "Adeniyi Adeyemi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "044ec82597eb",
-      "label": "Presidential Foreign Intervention Promotion Council",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "44927a723e54",
-      "label": "Ibrahim Dikko",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "fd7d1376d4af",
-      "label": "MTN Nigeria Communications Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "7d15f62e4dec",
       "label": "Trademarks Global Concepts Limited",
       "type": "psc",
@@ -548,6 +542,24 @@
     }
   ],
   "edges": [
+    {
+      "id": "5bb5dfb4be26",
+      "from": "894050f02b6c",
+      "to": "e87d7d245824",
+      "label": "Appointed as British Deputy High Commissioner in Lagos"
+    },
+    {
+      "id": "8b5f22a4c0ae",
+      "from": "b18554f8a377",
+      "to": "ae510682c88a",
+      "label": "Appointed as Director and Head of Infrastructure & Climate Debt, Africa and South Asia"
+    },
+    {
+      "id": "5f18e6fbac0d",
+      "from": "259569cb7165",
+      "to": "3fab39407c78",
+      "label": "Appointed as CEO"
+    },
     {
       "id": "06391ff1337b",
       "from": "d385d1ccc307",
@@ -667,24 +679,6 @@
       "from": "b0c149c4d665",
       "to": "2d8b68a63cae",
       "label": "Appointed as Senator, Delta North"
-    },
-    {
-      "id": "1e4b69d5e8fd",
-      "from": "bedf3e3e9be1",
-      "to": "9aef00190386",
-      "label": "Appointed as Governor, Lagos State"
-    },
-    {
-      "id": "6db8be62206f",
-      "from": "5152c3f8bc4a",
-      "to": "044ec82597eb",
-      "label": "Appointed as Purported Director-General"
-    },
-    {
-      "id": "52a49e23e458",
-      "from": "44927a723e54",
-      "to": "fd7d1376d4af",
-      "label": "Appointed as Independent non-executive director"
     },
     {
       "id": "faeedb2e3a5c",
