@@ -5,7 +5,6 @@ Person or holder
 Trademarks Global Concepts Limited owns 56.18% of eTranzact International Plc.
 
 - Holdings: 1
-- Recent stories: 1
 
 ## What they’re reported to control
 
@@ -13,10 +12,6 @@ Trademarks Global Concepts Limited owns 56.18% of eTranzact International Plc.
   Reported by [Nairametrics](https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/), not verified with the CAC register.
 
 Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.
-
-## In the news
-
-- [eTranzact, MTN Nigeria, lead boardroom shake-ups as 9M 2026 earnings roll in](https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/) · Nairametrics · 10 Nov 2026
 
 ---
 

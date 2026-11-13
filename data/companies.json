@@ -8737,10 +8737,10 @@
   },
   {
     "Company": "Afreximbank",
-    "Mention Count": 1,
-    "Last Seen": "2026-10-03 12:17",
-    "Industry": "Banking",
-    "Risk Level": "Medium",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-13 21:01",
+    "Industry": "Financial Services",
+    "Risk Level": "High",
     "First Seen": "2026-10-03 12:17"
   },
   {
@@ -10306,7 +10306,7 @@
   {
     "Company": "Okra",
     "Mention Count": 2,
-    "Last Seen": "2026-11-12 03:49",
+    "Last Seen": "2026-11-12 3:49",
     "Industry": "Energy",
     "Risk Level": "Low",
     "First Seen": "2026-11-10 20:32"
@@ -10390,5 +10390,29 @@
     "Industry": "Telecoms",
     "Risk Level": "Medium",
     "First Seen": "2026-11-11 23:30"
+  },
+  {
+    "Company": "CANEX Creations Incorporated",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-13 21:01",
+    "Industry": "Financial Services",
+    "Risk Level": "High",
+    "First Seen": "2026-11-13 21:01"
+  },
+  {
+    "Company": "CREAM",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-13 21:01",
+    "Industry": "Entertainment & Media",
+    "Risk Level": "High",
+    "First Seen": "2026-11-13 21:01"
+  },
+  {
+    "Company": "D\u2019Kings Men Media Ltd",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-13 21:01",
+    "Industry": "Media & Entertainment",
+    "Risk Level": "High",
+    "First Seen": "2026-11-13 21:01"
   }
 ]

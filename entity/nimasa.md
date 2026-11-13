@@ -11,7 +11,7 @@ Mentioned in 6 reports tracked by AURA.
 
 ## In the news
 
-- [NIMASA, China MSA sign MoU on maritime cooperation](https://news.google.com/rss/articles/CBMihwFBVV95cUxQV2c4eXkwMjZxeDNvejdjOGJ4ck9vQlF0ZTRzSnBkUEVYSUxRTnFwUk5pbUpXaWZrY1d6SnVGNld3eFhIVzFoNXJPbGVfbUFqa3pBRlJGTHZHaDc3NG9TNXJTSFVGZ3Q3a05BRFpuRnNxV1FpZTlRdnMxbkMySEZ2OW9URDducGc?oc=5) · The Eagle Online · 11 Nov 2026
+- [NIMASA, China deepen maritime cooperation](https://punchng.com/nimasa-china-deepen-maritime-cooperation/) · The Punch · 11 Nov 2026
 
 ---
 

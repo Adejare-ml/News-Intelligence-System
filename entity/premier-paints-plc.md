@@ -6,7 +6,6 @@ Company or body · Manufacturing
 
 - Mentions tracked: 1
 - Holdings: 1
-- Recent stories: 1
 - Last seen: 10 Nov 2026
 
 ## Who is reported to control it
@@ -15,10 +14,6 @@ Company or body · Manufacturing
   Reported by [Nairametrics](https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/), not verified with the CAC register.
 
 Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.
-
-## In the news
-
-- [eTranzact, MTN Nigeria, lead boardroom shake-ups as 9M 2026 earnings roll in](https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/) · Nairametrics · 10 Nov 2026
 
 ## Appointments and departures
 
