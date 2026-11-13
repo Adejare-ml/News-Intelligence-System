@@ -24,12 +24,12 @@
     },
     {
       "industry": "Banking",
-      "companies": 34,
-      "mentions": 87,
+      "companies": 33,
+      "mentions": 86,
       "risk": {
         "Critical": 1,
         "Low": 27,
-        "Medium": 6
+        "Medium": 5
       }
     },
     {
@@ -90,6 +90,16 @@
       }
     },
     {
+      "industry": "Financial Services",
+      "companies": 7,
+      "mentions": 14,
+      "risk": {
+        "Medium": 2,
+        "Low": 2,
+        "High": 3
+      }
+    },
+    {
       "industry": "Political Party",
       "companies": 2,
       "mentions": 14,
@@ -105,16 +115,6 @@
       "risk": {
         "High": 1,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 5,
-      "mentions": 11,
-      "risk": {
-        "Medium": 2,
-        "Low": 2,
-        "High": 1
       }
     },
     {
@@ -675,6 +675,14 @@
       }
     },
     {
+      "industry": "Entertainment & Media",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Fintech / Payments",
       "companies": 1,
       "mentions": 1,
@@ -832,6 +840,14 @@
       "mentions": 1,
       "risk": {
         "Low": 1
+      }
+    },
+    {
+      "industry": "Media & Entertainment",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
       }
     },
     {
@@ -1003,5 +1019,5 @@
       }
     }
   ],
-  "generated": "2026-11-12 03:50:19"
+  "generated": "2026-11-13 21:07:51"
 }

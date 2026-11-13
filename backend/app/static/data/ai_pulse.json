@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-12 03:50:14",
+  "generated": "2026-11-13 21:07:42",
   "models": [
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 3728,
-      "downloads": 16693
+      "likes": 5378,
+      "downloads": 21586
     },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 743,
-      "downloads": 142989
-    },
-    {
-      "id": "speridlabs/idol",
-      "url": "https://huggingface.co/speridlabs/idol",
-      "task": "image-to-3d",
-      "likes": 2154,
-      "downloads": 28250
+      "likes": 995,
+      "downloads": 437039
     },
     {
       "id": "NousResearch/Arete-27B",
       "url": "https://huggingface.co/NousResearch/Arete-27B",
       "task": "text-generation",
-      "likes": 440,
-      "downloads": 4023
+      "likes": 535,
+      "downloads": 5545
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 11529,
-      "downloads": 2848771
+      "likes": 11761,
+      "downloads": 2778909
     },
     {
-      "id": "moonshotai/Kimi-K3.1-Pro",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "id": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "task": "image-to-3d",
+      "likes": 2282,
+      "downloads": 31367
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 1936,
-      "downloads": 33617
-    },
-    {
-      "id": "ricursiveAI/Ripple-65B-Preview",
-      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "task": "",
-      "likes": 517,
-      "downloads": 7112
+      "likes": 19852,
+      "downloads": 6960395
     },
     {
       "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "task": "image-text-to-text",
-      "likes": 2917,
-      "downloads": 1532273
+      "likes": 3040,
+      "downloads": 1639400
+    },
+    {
+      "id": "moonshotai/Kimi-K3.1-Pro",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "task": "image-text-to-text",
+      "likes": 2018,
+      "downloads": 40953
     }
   ],
   "papers": [
     {
-      "title": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
-      "url": "https://huggingface.co/papers/2611.13028",
-      "upvotes": 2
-    },
-    {
-      "title": "LO-World: Unified BEV Latent Modeling for Joint 4D Occupancy and LiDAR Forecasting",
-      "url": "https://huggingface.co/papers/2611.11912",
+      "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
+      "url": "https://huggingface.co/papers/2611.17190",
       "upvotes": 1
     },
     {
-      "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
-      "url": "https://huggingface.co/papers/2611.13001",
-      "upvotes": 12
-    },
-    {
-      "title": "Visual Similarity in Adult Word Extension and Artificial Word Learning",
-      "url": "https://huggingface.co/papers/2611.14116",
+      "title": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
+      "url": "https://huggingface.co/papers/2611.09567",
       "upvotes": 2
     },
     {
-      "title": "Prompt2Echo (P2Echo): Text-Prompted Multi-View Echocardiography Segmentation with One Model",
-      "url": "https://huggingface.co/papers/2611.13425",
+      "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+      "url": "https://huggingface.co/papers/2611.16961",
       "upvotes": 1
     },
     {
-      "title": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
-      "url": "https://huggingface.co/papers/2611.10486",
-      "upvotes": 8
+      "title": "The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages?",
+      "url": "https://huggingface.co/papers/2611.12750",
+      "upvotes": 0
+    },
+    {
+      "title": "A frontier machine intelligence for human neuroimaging",
+      "url": "https://huggingface.co/papers/2611.15094",
+      "upvotes": 0
+    },
+    {
+      "title": "Unbundling Multimodal Vision Encoding",
+      "url": "https://huggingface.co/papers/2611.17334",
+      "upvotes": 4
     }
   ]
 }
