@@ -11,7 +11,7 @@ Mentioned in 6 reports tracked by AURA.
 
 ## In the news
 
-- [ICPC amends charges against fake PFIPC DG](https://punchng.com/icpc-amends-charges-against-fake-pfipc-dg/) · The Punch · 9 Nov 2026
+- [ICPC recovers N5.3b from LG accounts, to post councils’ books online](https://news.google.com/rss/articles/CBMilwFBVV95cUxNRWFYdmNCU0lRR2lYdVlVZlpZdWo4UGFCNU1uSjdMczQwcmU1X0dFU2VSQnF4akc5TFJxSElVeGYtVTlkdVVvV0JkWEJnejhEUDBDV3dPTzhvbnhxcHdSMkJWZjVreWx3SHdwdUVueUc2OTExNWJjZ0FBd0xuRFliV3lfNm8xWVJ4am51c0s2aUxObFhWbHJN?oc=5) · The Guardian Nigeria · 13 Nov 2026
 
 ---
 

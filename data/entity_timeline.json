@@ -3,7 +3,7 @@
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "total_mentions": 117,
+      "total_mentions": 119,
       "points": [
         {
           "week": "2026-09-07",
@@ -61,8 +61,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 25.0,
+          "mentions": 3,
+          "avg_risk": 18.3,
           "max_risk": 25
         }
       ]
@@ -131,7 +131,7 @@
     {
       "key": "economic and financial crimes commission",
       "label": "Economic and Financial Crimes Commission",
-      "total_mentions": 98,
+      "total_mentions": 99,
       "points": [
         {
           "week": "2026-09-07",
@@ -189,8 +189,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 7,
-          "avg_risk": 52.7,
+          "mentions": 8,
+          "avg_risk": 54.9,
           "max_risk": 72
         }
       ]
@@ -375,7 +375,7 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government",
-      "total_mentions": 28,
+      "total_mentions": 29,
       "points": [
         {
           "week": "2026-09-14",
@@ -421,9 +421,9 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "mentions": 2,
+          "avg_risk": 22.5,
+          "max_risk": 30
         }
       ]
     },
@@ -777,6 +777,43 @@
       ]
     },
     {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 16,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 8,
+          "avg_risk": 13.8,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 40
+        }
+      ]
+    },
+    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "total_mentions": 16,
@@ -865,43 +902,6 @@
           "mentions": 5,
           "avg_risk": 31.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 15,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 8,
-          "avg_risk": 13.8,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 17.5,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 35.0,
-          "max_risk": 35
         }
       ]
     },
@@ -1356,6 +1356,49 @@
       ]
     },
     {
+      "key": "upstream petroleum regulatory commission",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "total_mentions": 9,
@@ -1408,49 +1451,6 @@
           "mentions": 1,
           "avg_risk": 62.0,
           "max_risk": 62
-        }
-      ]
-    },
-    {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 32.5,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 2,
-          "avg_risk": 17.5,
-          "max_risk": 25
         }
       ]
     },
@@ -2515,6 +2515,31 @@
       ]
     },
     {
+      "key": "afreximbank",
+      "label": "Afreximbank",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 80
+        }
+      ]
+    },
+    {
       "key": "african democratic congress",
       "label": "African Democratic Congress",
       "total_mentions": 4,
@@ -2561,6 +2586,37 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
         }
       ]
     },
@@ -3336,31 +3392,6 @@
       ]
     },
     {
-      "key": "afreximbank",
-      "label": "Afreximbank",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
       "key": "airtel money",
       "label": "Airtel Money",
       "total_mentions": 3,
@@ -3395,31 +3426,6 @@
           "mentions": 3,
           "avg_risk": 68.3,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "bayelsa state government",
-      "label": "Bayelsa State Government",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -4710,6 +4716,19 @@
       ]
     },
     {
+      "key": "china maritime safety administration",
+      "label": "China Maritime Safety Administration",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "dangote cement",
       "label": "Dangote Cement",
       "total_mentions": 2,
@@ -4738,6 +4757,25 @@
           "mentions": 2,
           "avg_risk": 48.5,
           "max_risk": 62
+        }
+      ]
+    },
+    {
+      "key": "efcc",
+      "label": "EFCC",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 62.0,
+          "max_risk": 62
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 85.0,
+          "max_risk": 85
         }
       ]
     },
@@ -5376,6 +5414,25 @@
           "mentions": 2,
           "avg_risk": 65.0,
           "max_risk": 65
+        }
+      ]
+    },
+    {
+      "key": "nimasa",
+      "label": "NIMASA",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
         }
       ]
     },
@@ -6608,46 +6665,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "abuja continental",
-      "label": "Abuja Continental",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "academic staff union of universities asuu",
-      "label": "Academic Staff Union of Universities (ASUU)",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 35.0,
-          "max_risk": 35
-        }
-      ]
-    },
-    {
-      "key": "accelerex",
-      "label": "Accelerex Holdings",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 62.0,
-          "max_risk": 62
-        }
-      ]
     }
   ],
-  "generated": "2026-11-12 03:50:19"
+  "generated": "2026-11-13 21:07:51"
 }

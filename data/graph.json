@@ -121,8 +121,74 @@
       "risk": "Critical"
     },
     {
+      "id": "01391c4b85e7",
+      "label": "Nigerian Upstream Petroleum Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "9aef00190386",
       "label": "Lagos State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "16ec783a0d68",
+      "label": "Nigeria Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "07e47c2db94f",
+      "label": "NIMASA",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "42019e92a5cf",
+      "label": "China Maritime Safety Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "7320a94415b1",
+      "label": "National Social Insurance Trust Fund",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b834efb97677",
+      "label": "NMDPRA",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2d899f8d1635",
+      "label": "ICPC",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "daaeb0893724",
+      "label": "UNIJOS",
       "type": "agency",
       "risk": "Low"
     },
@@ -139,26 +205,8 @@
       "risk": "Low"
     },
     {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -181,57 +229,9 @@
       "risk": "Low"
     },
     {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "782563a7c2d7",
-      "label": "Nigerian Communications Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a5443515f025",
-      "label": "Nigerian Electricity Regulatory Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a0ce0506cbaa",
-      "label": "Kogi State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5a98eb23f6f5",
-      "label": "Akwa Ibom State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4134e2d62095",
-      "label": "Office of the Accountant-General of the Federation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "dc77ed2cf37a",
-      "label": "Supreme Court of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e94d960651d4",
-      "label": "Development Bank of Nigeria",
-      "type": "agency",
+      "id": "cfaeacae2eea",
+      "label": "Patricia Lar",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -391,6 +391,12 @@
       "risk": "Low"
     },
     {
+      "id": "6843b615b76a",
+      "label": "Federal Airports Authority of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "4c174f83f166",
       "label": "Bawa Kaltungo",
       "type": "person",
@@ -429,12 +435,6 @@
     {
       "id": "327d46c2fa4b",
       "label": "Lola Ashiru",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b0c149c4d665",
-      "label": "Ned Nwoko",
       "type": "person",
       "risk": "Low"
     },
@@ -481,6 +481,12 @@
       "risk": "Low"
     },
     {
+      "id": "a5443515f025",
+      "label": "Nigerian Electricity Regulatory Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c25b2dab487",
       "label": "Eligible Local Meter Manufacturers and Assemblers (LMMAs) and Meter Asset Providers (MAPs)",
       "type": "company",
@@ -508,6 +514,12 @@
       "id": "2cbc793c6023",
       "label": "Government of China",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "5a98eb23f6f5",
+      "label": "Akwa Ibom State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -542,6 +554,12 @@
     }
   ],
   "edges": [
+    {
+      "id": "60521bebf5c1",
+      "from": "cfaeacae2eea",
+      "to": "daaeb0893724",
+      "label": "Appointed as Vice\u2011Chancellor"
+    },
     {
       "id": "5bb5dfb4be26",
       "from": "894050f02b6c",
@@ -673,12 +691,6 @@
       "from": "327d46c2fa4b",
       "to": "2d8b68a63cae",
       "label": "Appointed as Deputy Majority Leader"
-    },
-    {
-      "id": "28b143288ebf",
-      "from": "b0c149c4d665",
-      "to": "2d8b68a63cae",
-      "label": "Appointed as Senator, Delta North"
     },
     {
       "id": "faeedb2e3a5c",

@@ -1,46 +1,145 @@
 {
-  "edition": "20261112-11691-preview",
+  "edition": "20261113-11721-preview",
   "preview": true,
-  "built_at": "2026-11-12 03:50:20",
-  "date": "Thursday 12 November 2026",
-  "subject": "AURA alert · Thu 12 Nov · 11 stories, 1 risk alert",
-  "preheader": "Mambilla project: Imoke insists contract award to Sunrise was invalid · 11 stories, 1 risk alert",
+  "built_at": "2026-11-13 21:07:51",
+  "date": "Friday 13 November 2026",
+  "subject": "AURA alert · Fri 13 Nov · Emefiele acquired properties through proxies, EFCC tells court",
+  "preheader": "Also: Afreximbank acquires stake in D’banj’s CREAM platform · 24 stories, 4 risk alerts",
   "since": "Wed 11 Nov, 16:16 Lagos",
-  "through_id": 11691,
+  "through_id": 11721,
   "stats": {
-    "reports": 12,
-    "stories": 11,
-    "outlets": 4,
-    "risk_alerts": 1,
-    "public_money": 1,
-    "appointments": 0,
+    "reports": 24,
+    "stories": 24,
+    "outlets": 5,
+    "risk_alerts": 4,
+    "public_money": 5,
+    "appointments": 1,
     "ownership": 0
   },
   "nothing_in": [
-    "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "Premium Times reports: EFCC re-arraigns ex-Skye Bank chair Tunde Ayeni on N15.6bn fraud charges",
+      "text": "The Enforcement and Financial Crimes Commission, in a Nigerian court hearing, alleged that former Central Bank governor Chukwuma Emefiele acquired properties through proxies.",
       "card": 1,
+      "outlet": "Punch"
+    },
+    {
+      "text": "The African Export‑Import Bank, through its vehicle CANEX Creations Incorporated, has acquired an equity stake in CREAM, the AI‑powered creative platform founded by Nigerian singer D’banj.",
+      "card": 2,
       "outlet": "Premium Times"
     },
     {
-      "text": "The Nigerian Senate has summoned the Nigerian Communications Commission and major telecom operators, including MTN, Airtel, Globacom and T2, over persistent network failures and alleged unjustified airtime deductions.",
-      "card": 2,
-      "outlet": "BusinessDay"
-    },
-    {
-      "text": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid.",
+      "text": "EFCC secured convictions of a mining firm and two other entities in Kwara following a regulatory probe.",
       "card": 3,
-      "outlet": "The Guardian"
+      "outlet": "Punch"
     }
   ],
   "insights": [],
   "cards": [
     {
       "n": 1,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: Critical · 85/100",
+      "headline": "Emefiele acquired properties through proxies, EFCC tells court",
+      "byline": "Punch · Fri 13 Nov, 02:09 Lagos",
+      "outlet": "Punch",
+      "what_happened": "The Enforcement and Financial Crimes Commission, in a Nigerian court hearing, alleged that former Central Bank governor Chukwuma Emefiele acquired properties through proxies. The claim is part of an ongoing probe into potential misuse of office, raising questions about transparency and legality.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: It highlights the possibility that high‑level public officials use intermediaries to conceal ownership of real‑estate assets, undermining transparency and the rule of law."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "EFCC"
+      ],
+      "source": {
+        "outlet": "Punch",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSjZLenBCSk96dGtyeU1VSjNwTzJsY1R1aFhJUVV0WUlsQkpONWM5dVY4STZsdVpnY3pVaWdtX183VU5JZC1FZm9CTHJYQnNCX3NxbVJlODhsbmQydktnYVFsYlhNbUU2bUxkQ0V0UUlnNTY4RmhXbGxpSmV2R0t1TzhNQ1pHaUo5T2c?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Ownership & capital",
+      "event_type": "Acquisition",
+      "flags": [
+        "Alert"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 80/100",
+      "headline": "Afreximbank acquires stake in D’banj’s CREAM platform",
+      "byline": "Premium Times · Fri 13 Nov, 19:46 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The African Export‑Import Bank, through its vehicle CANEX Creations Incorporated, has acquired an equity stake in CREAM, the AI‑powered creative platform founded by Nigerian singer D’banj. The deal, formalised on 6 November 2026, is part of the bank’s $2 billion commitment to Africa’s creative sector and aims to boost commercial value and intellectual‑property retention for creatives.",
+      "key_facts": [
+        "Afreximbank acquired an equity stake in CREAM via its vehicle CANEX Creations Incorporated.",
+        "Signing ceremony held on 6 November 2026 at the Wole Soyinka Centre in Lagos.",
+        "CREAM was launched in 2016 alongside MTN Nigeria and the Bank of Industry.",
+        "CANEX WKND 2026 attracted 17,000 participants and targeted at least $1 billion in capital commitments."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: This investment injects significant capital into Nigeria’s creative industry, enhancing financial infrastructure and support for intellectual‑property retention among creators."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Afreximbank",
+        "CANEX Creations Incorporated",
+        "CREAM",
+        "D’Kings Men Media Ltd"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://www.premiumtimesng.com/entertainment/naija-fashion/924992-afreximbank-acquires-stake-in-dbanjs-cream-platform.html"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 70/100",
+      "headline": "EFCC secures conviction of mining firm, two others in Kwara",
+      "byline": "Punch · Fri 13 Nov, 18:10 Lagos",
+      "outlet": "Punch",
+      "what_happened": "EFCC secured convictions of a mining firm and two other entities in Kwara following a regulatory probe. The action underscores the Commission's commitment to enforcing mining laws within the state.",
+      "key_facts": [
+        "EFCC secured convictions of a mining firm and two other entities"
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The convictions demonstrate EFCC's enforcement of mining regulations, reinforcing compliance in the sector."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Economic and Financial Crimes Commission"
+      ],
+      "source": {
+        "outlet": "Punch",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOWsyRXQ4aEtodGRDVFZNbXhQWWh4cUtRWHU2YmFKLXEwdFhweDhiWlc1bjlMT2taUWxzOF9mRlY1ZVNabG4xY1B3OTBjT0NRX1pmb09mNjRlZXdUX0EzdEozYUxXMXE3c1BDc0VhZ0NvUGpDc2hFUmp2Ny1Ycl9Xa01ad3ItaTJfTDdpMnhOMzlKRS11SGFVX2k3MFhwTEFmRFVBN3g2VnpJTWxGQksyWndGcUlTblNkVnE0Mmdn?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 4,
       "theme": "Regulation & enforcement",
       "event_type": "Corruption",
       "flags": [
@@ -75,113 +174,32 @@
       "also_more": 0
     },
     {
-      "n": 2,
-      "theme": "Other",
-      "event_type": "Other",
+      "n": 5,
+      "theme": "People",
+      "event_type": "Appointment",
       "flags": [],
       "alert": false,
-      "risk": "AURA risk rating: Medium · 35/100",
-      "headline": "Senate summons NCC, MTN, Airtel, others over poor network, unjustified airtime deductions",
-      "byline": "BusinessDay · Wed 11 Nov, 22:03 Lagos",
-      "outlet": "BusinessDay",
-      "what_happened": "The Nigerian Senate has summoned the Nigerian Communications Commission and major telecom operators, including MTN, Airtel, Globacom and T2, over persistent network failures and alleged unjustified airtime deductions. A Senate Committee on Communications, chaired by Ikra Bilbis, has been mandated to investigate subscriber losses and report back within four weeks.",
+      "risk": "",
+      "headline": "UNIJOS appoints first female vice-chancellor, Patricia Lar",
+      "byline": "Premium Times · Thu 12 Nov, 16:23 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "Patricia Lar has been appointed as the first female vice‑chancellor of UNIJOS, marking a milestone in the university’s leadership.",
       "key_facts": [
-        "The motion was sponsored by Tahir Monguno (APC, Borno North), the Senate Chief Whip.",
-        "The motion was presented by Lola Ashiru (APC, Kwara South), the Deputy Majority Leader."
-      ],
-      "timeline": [],
-      "headline_only": false,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Nigerian Communications Commission",
-        "MTN Nigeria",
-        "Airtel Nigeria",
-        "Globacom",
-        "T2"
-      ],
-      "source": {
-        "outlet": "BusinessDay",
-        "url": "https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 3,
-      "theme": "Public money",
-      "event_type": "Procurement",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 45/100",
-      "headline": "Mambilla project: Imoke insists contract award to Sunrise was invalid",
-      "byline": "The Guardian · Wed 11 Nov, 20:38 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid. The dispute centres on the validity of the contract award for the Mambilla hydropower project in Taraba State.",
-      "key_facts": [
-        "Imoke insists the contract award to Sunrise for the Mambilla project was invalid."
+        "Patricia Lar appointed as first female vice‑chancellor of UNIJOS"
       ],
       "timeline": [],
       "headline_only": true,
       "analysis": [
-        "Why it matters: A public challenge to the validity of a major hydropower contract award raises questions about procurement process and accountability for public money in Nigeria's power sector."
+        "Why it matters: This appointment signals progress in gender representation at the highest levels of Nigerian higher education and may influence the university’s strategic direction."
       ],
       "ownership_caveat": "",
       "named": [
-        "Sunrise",
-        "Imoke"
+        "UNIJOS",
+        "Patricia Lar"
       ],
       "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc19VSGc3TlNfTHIza2VHTUZIQTVNUjZ3UTBOdkctNURTRC0tV292VjQ3ZzRnQTFRYTNlVFAyR0ZPZUQxZS1SdUxSVkpXTjNMNzRFMG9GSjZYVVFITjhUSlhYa2doeTFKdEYzZXlzUl83MUozQ3IydmhxUXp2LU5PTHVtbXMxRjBjOE5kNXRfMHE1cEpFR3Z6UmFpY20tMU9YMHRWSVRNZnJHaFhJ?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Weak oversight, market gaps stall power tariff reforms",
-      "byline": "The Guardian · Thu 12 Nov, 04:00 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "Power tariff reforms in Nigeria are reported to be stalled by weak regulatory oversight and market gaps. The article's text is limited to its headline, so no further details on the parties, figures or timelines are available.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzlpVm5rOFdDWllYVjZ1Z01JaGxqX0pNN2xYUHlLRTl4c29nSlp5X1FaeXFxS2ZtSTVWZU1wbzZ6VXlPRWtCV19jVklkTzFza0g1d083bXNkUDhIdTl1UTM1QlJhZ244Nnl4aXludzkycS1FRGVRSDZDLXFuSVl0RXpsRmYzcXRWdkl2cWU5M2tUM3pnSHFN?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "FG moves to regulate scrap metal industry, curb infrastructure vandalism",
-      "byline": "The Guardian · Tue 10 Nov, 22:15 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "The Federal Government has moved to regulate the scrap metal industry in an effort to curb infrastructure vandalism.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0VhZHdYYXBsaV9pdlNENnFHbDdkS282Mm1EbE5kX3dBUjBkTy1pc2o2dnhWRTZLTGVyQk81WUJvR2dseE1hMXF0UkVubi1wM29DdThkN0J0Q1JyNkVCLW83Qmw1MmtHZVd6Z1JGNS1vWlV5aC1tb1l5ZmVVQ0kwc0dnb0lNN2RDbGdrNExiWnFUZjdRc1ozWDQ3VmZ6Zw?oc=5"
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNUlKNjJISVJqZjBCWnkxTmtsNDdLU3FHcHJjbUE5SzhBSHhvNTY1dVRaSTdOZFlraGtsTG96RnM1a0l4QjBGQjZ3T3M3YzNBMDMwc1BRUzZkODZkZVU2LVRyWjYwMnFsRjVKQWF2WloxZlJhRHFhOTNtR01OelpEczM4ZUVHVUhlZTBTVGFTZDhWd29nNWI2ZDNkV3hreUtoVnBSUi12dzhrMnZ5azU3ZzAzbkpqZXE3aE9ZUFh6amE?oc=5"
       },
       "also_reported": [],
       "also_more": 0
@@ -191,47 +209,75 @@
     {
       "n": 6,
       "theme": "Other",
-      "text": "British International Investment (BII) announced a $7m debt facility to Okra, a mesh-grid technology provider for off-grid communities.",
-      "outlet": "Punch",
-      "url": "https://punchng.com/bii-backs-okra-with-7m-to-accelerate-clean-energy/"
+      "text": "The Nigerian Senate has summoned the Nigerian Communications Commission and major telecom operators, including MTN, Airtel, Globacom and T2, over persistent network failures and alleged unjustified airtime deductions.",
+      "outlet": "BusinessDay",
+      "url": "https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/"
     },
     {
       "n": 7,
+      "theme": "Public money",
+      "text": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc19VSGc3TlNfTHIza2VHTUZIQTVNUjZ3UTBOdkctNURTRC0tV292VjQ3ZzRnQTFRYTNlVFAyR0ZPZUQxZS1SdUxSVkpXTjNMNzRFMG9GSjZYVVFITjhUSlhYa2doeTFKdEYzZXlzUl83MUozQ3IydmhxUXp2LU5PTHVtbXMxRjBjOE5kNXRfMHE1cEpFR3Z6UmFpY20tMU9YMHRWSVRNZnJHaFhJ?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Public money",
+      "text": "ICPC has recovered N5.3 billion from local government accounts and will publish the council books online, enhancing financial transparency.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRWFYdmNCU0lRR2lYdVlVZlpZdWo4UGFCNU1uSjdMczQwcmU1X0dFU2VSQnF4akc5TFJxSElVeGYtVTlkdVVvV0JkWEJnejhEUDBDV3dPTzhvbnhxcHdSMkJWZjVreWx3SHdwdUVueUc2OTExNWJjZ0FBd0xuRFliV3lfNm8xWVJ4am51c0s2aUxObFhWbHJN?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "Regulation & enforcement",
+      "text": "Lagos State announced plans to extend procurement reforms beyond the tenure of former Governor Sanwo-Olu, signalling a new commitment to transparency in public spending.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uWEtEemFna18wcTF6UUNvdWNtWkpJZ1kxenBpSURWaVgwYW5abVJfSkFkaHRLbjJ1VURQckRBTEo2UkJqVEl0cWFYSlk1clBuZTBfR0RFWWlDTHppZndBTy0xcVpWTUR4bzViOHIycWxGNTV0ZmpUOQ?oc=5"
+    },
+    {
+      "n": 10,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Government sealed an Abuja estate after alleged violations of residents’ rights.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORk95VWR0N2dBWkd4M1FmOWtJTjJHWDdsT0FVV2lFemV3TGlQOVRTU2s1V21LYmNsOGh6dTh2OTh3T3UxN21CLWduV3BYeUMwMElyRWs1ZGVLWEF3UTM3dG41TGg5SHhoM2ZETFg5a1YtNUdlbE1IVTQ5Vl9aYkhuaGFUNXo?oc=5"
+    },
+    {
+      "n": 11,
+      "theme": "Regulation & enforcement",
+      "text": "The Nigeria Communications Commission announced a new device registration policy that could raise the retail price of mobile phones, according to an expert warning.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2N6V2RQQmZTRXJfMVJoVlVBTXFFeXpyVUw2anItS0p3c09HcE5jSnl1REFiaDFhSHB4c2s5dzJsX3h2UlN0QUFJbTU4OFNNcjhzaWdqeWZSeFhRU1lPN0NrN1Y3cFRscGVFTUxPZjZCRElDbk02SVY3aW1ESW5Bcnlta3lvakFmZS0tMU92NlRSWmJmVGhOVE5CRGZOWmxWeWR2Y3BrUm5Iam1hV2c?oc=5"
+    },
+    {
+      "n": 12,
+      "theme": "Regulation & enforcement",
+      "text": "Power tariff reforms in Nigeria are reported to be stalled by weak regulatory oversight and market gaps.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzlpVm5rOFdDWllYVjZ1Z01JaGxqX0pNN2xYUHlLRTl4c29nSlp5X1FaeXFxS2ZtSTVWZU1wbzZ6VXlPRWtCV19jVklkTzFza0g1d083bXNkUDhIdTl1UTM1QlJhZ244Nnl4aXludzkycS1FRGVRSDZDLXFuSVl0RXpsRmYzcXRWdkl2cWU5M2tUM3pnSHFN?oc=5"
+    },
+    {
+      "n": 13,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Government has moved to regulate the scrap metal industry in an effort to curb infrastructure vandalism.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0VhZHdYYXBsaV9pdlNENnFHbDdkS282Mm1EbE5kX3dBUjBkTy1pc2o2dnhWRTZLTGVyQk81WUJvR2dseE1hMXF0UkVubi1wM29DdThkN0J0Q1JyNkVCLW83Qmw1MmtHZVd6Z1JGNS1vWlV5aC1tb1l5ZmVVQ0kwc0dnb0lNN2RDbGdrNExiWnFUZjdRc1ozWDQ3VmZ6Zw?oc=5"
+    },
+    {
+      "n": 14,
       "theme": "Other",
       "text": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcThmb2RUNmZ0QzdtY0NSXzRnVTltUVV1Z21pWDluc1d6V0dBNHh0UGR2bjN0a0xVdHRuczVTM245MHZKcGJ0ZW9xZ2NiNFhNLVliZzFWQS1OcWxMNU1pQnN1eHJrVlREWjBQR3c1M25jZFBhVkZ5YndSNEVfa0oxaU8yZXdJNWk2UkZvUml4cTRGek83ZVdFakthSWl6ZzBpaFVNM2VEU3B0Y01EdklyTnh3ZFJRY1BleE0yM2lfcTdCQ29XelFDS3BsYzBCM3lmZERUUGRuaXpRMVFZSHc?oc=5"
     },
     {
-      "n": 8,
+      "n": 15,
       "theme": "Other",
-      "text": "The United Kingdom has backed Nigeria's proposed $750 million pension infrastructure fund.",
+      "text": "British International Investment (BII) announced a $7m debt facility to Okra, a mesh-grid technology provider for off-grid communities.",
       "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWlTaGZnd3M0akFvZV83aXB0RVZxem9abURwYVZLVEZlVWFodlFMWFZLbmNOenRoOUs1N1E4TjY2WFZBOUxVeUFoYmlNWDNwYkdJaGtra0JwanJzR0d0TmJ2aTIwT0c1UG5VMld6Z1BRRmZDc0ZZUFFkYXNRc2dYVXZXTU9QMmNsRVE?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "Regulation & enforcement",
-      "text": "Premium Times reports: Certificate Forgery: Court adjourns ex-minister Uche Nnaji’s suit",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOaWZGOWUwV1ZZcUxRcmlCTFYxYnBLQ0VfbGhsZTByYTNFWEFNc0pqU3E0RktkYlRUQTdDMTZXaTBMakh3dHRBRVpKV1hqUEllWlk3UzRaUjVBeHZWcS1hMnJiSk41Z2dWRmdWazVKcmdRUUZZZ0VacUtZUXVhb29zVVBPU3U4bVZKeWI0eGxHOTF3dnRkdUdpZXluOThoWEV5TXZHemU4RXN1d19PTTVBZ3g1RENCNGdmTnZab2VjR0cycGpmaWc?oc=5"
-    },
-    {
-      "n": 10,
-      "theme": "Regulation & enforcement",
-      "text": "Lagos State has moved to crack down on retail stores that enforce 'no refund' policies.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdUJIR0dscXcxWHJ1OWdvZEwtems1enprQkhwX0VPY1hDVGlKZjdzSVBHdXhvTTZPUjduRm13ekQ5NGwzQTJvcXBrT0dITi1SUUNmUWpLY1A3ZTZ5aE01UHFDc1A3SVVsLUhNX2oxcG9vbm91ZDlNWGZyZXVlTm94bmJPT3U?oc=5"
-    },
-    {
-      "n": 11,
-      "theme": "Regulation & enforcement",
-      "text": "The Minister has suspended reviews of broadcast licence fees and urged broadcasters to maintain the highest standards ahead of the 2027 elections.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRDhHZTJGWUVla0NuSUctODMtampJSHRWV2tMak9KdnZuUjBYaU5TTFdJV1RfTE8xcjQwNnZ2Qlh2NUNfcGI2cTJkSUd4V0lzT3NCYUZwSFRDWl9zeC1iUmdYbWhCX1dNNGpobXg1bjczMXgxNUdpMVRpa2xnaDlqOEdCTDBYdHl1WTNiNXlUVU51a0c3d2E2bXJuOTdSVjNFLU5PbUQ5czFVdVJoLV8wam9zbmNGd29s?oc=5"
+      "url": "https://punchng.com/bii-backs-okra-with-7m-to-accelerate-clean-energy/"
     }
   ],
-  "also_more": 0,
+  "also_more": 9,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
@@ -241,13 +287,18 @@
       "meaning": "Economic and Financial Crimes Commission"
     },
     {
+      "term": "ICPC",
+      "meaning": "Independent Corrupt Practices and Other Related Offences Commission"
+    },
+    {
       "term": "AURA risk rating",
       "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
     }
   ],
   "engines": {
     "extraction": [
-      "claude"
+      "claude",
+      "nvidia"
     ],
     "digest": ""
   },

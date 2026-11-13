@@ -1,21 +1,39 @@
 {
-  "new_companies": [],
+  "new_companies": [
+    "CANEX Creations Incorporated",
+    "CREAM",
+    "D\u2019Kings Men Media Ltd"
+  ],
   "new_people": [
-    "Afnan Hannan",
-    "Geoffrey Manley",
-    "Jonny Baxter"
+    "Patricia Lar"
   ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Emefiele acquired properties through proxies, EFCC tells court - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSjZLenBCSk96dGtyeU1VSjNwTzJsY1R1aFhJUVV0WUlsQkpONWM5dVY4STZsdVpnY3pVaWdtX183VU5JZC1FZm9CTHJYQnNCX3NxbVJlODhsbmQydktnYVFsYlhNbUU2bUxkQ0V0UUlnNTY4RmhXbGxpSmV2R0t1TzhNQ1pHaUo5T2c?oc=5",
+      "risk": 85.0
+    },
+    {
+      "title": "Afreximbank acquires stake in D\u2019banj\u2019s CREAM platform",
+      "url": "https://www.premiumtimesng.com/entertainment/naija-fashion/924992-afreximbank-acquires-stake-in-dbanjs-cream-platform.html",
+      "risk": 80.0
+    },
+    {
+      "title": "EFCC secures conviction of mining firm, two others in Kwara - Punch Newspapers",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOWsyRXQ4aEtodGRDVFZNbXhQWWh4cUtRWHU2YmFKLXEwdFhweDhiWlc1bjlMT2taUWxzOF9mRlY1ZVNabG4xY1B3OTBjT0NRX1pmb09mNjRlZXdUX0EzdEozYUxXMXE3c1BDc0VhZ0NvUGpDc2hFUmp2Ny1Ycl9Xa01ad3ItaTJfTDdpMnhOMzlKRS11SGFVX2k3MFhwTEFmRFVBN3g2VnpJTWxGQksyWndGcUlTblNkVnE0Mmdn?oc=5",
+      "risk": 70.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 3,
+    "new_companies": 3,
+    "new_people": 1,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 3
   },
-  "generated": "2026-11-12 03:50:13"
+  "generated": "2026-11-13 21:07:31"
 }
