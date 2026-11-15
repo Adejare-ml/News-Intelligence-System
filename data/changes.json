@@ -1,29 +1,23 @@
 {
   "new_companies": [
-    "Bakassi Deep Seaport",
-    "Fulcrum LNG Incorporated",
-    "Peachville Platinum Estate Limited",
-    "Sunrisal",
-    "Westpaq International"
+    "Kano pharmaceutical company (unnamed in article)"
   ],
-  "new_people": [],
+  "new_people": [
+    "Bashir Tanimu",
+    "Haliru Abdullahi",
+    "Nwanneka Nwonkike"
+  ],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [
-    {
-      "title": "FCCPC seals real estate firm over alleged failure to deliver N140 million home",
-      "url": "https://nairametrics.com/2026/11/14/fccpc-seals-real-estate-firm-over-alleged-failure-to-deliver-n140-million-home/",
-      "risk": 70.0
-    }
-  ],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 5,
-    "new_people": 0,
+    "new_companies": 1,
+    "new_people": 3,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-11-15 02:59:55"
+  "generated": "2026-11-15 14:46:55"
 }

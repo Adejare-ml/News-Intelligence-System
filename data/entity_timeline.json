@@ -70,7 +70,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 103,
+      "total_mentions": 104,
       "points": [
         {
           "week": "2026-09-14",
@@ -122,8 +122,8 @@
         },
         {
           "week": "2026-11-09",
-          "mentions": 7,
-          "avg_risk": 45.4,
+          "mentions": 8,
+          "avg_risk": 41.0,
           "max_risk": 78
         }
       ]
@@ -1269,6 +1269,37 @@
       ]
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 3,
+          "avg_risk": 21.7,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "corporate affairs commission",
       "label": "Corporate Affairs Commission",
       "total_mentions": 9,
@@ -1327,37 +1358,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 2,
-          "avg_risk": 25.0,
-          "max_risk": 35
         }
       ]
     },
@@ -1426,6 +1426,31 @@
           "mentions": 2,
           "avg_risk": 25.0,
           "max_risk": 40
+        }
+      ]
+    },
+    {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "total_mentions": 8,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 4,
+          "avg_risk": 68.8,
+          "max_risk": 85
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 55
         }
       ]
     },
@@ -1544,31 +1569,6 @@
           "mentions": 1,
           "avg_risk": 15.0,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "total_mentions": 7,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 4,
-          "avg_risk": 68.8,
-          "max_risk": 85
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 55.0,
-          "max_risk": 55
         }
       ]
     },
@@ -4843,6 +4843,19 @@
       ]
     },
     {
+      "key": "fabian ajogwu",
+      "label": "Fabian Ajogwu",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 38.5,
+          "max_risk": 62
+        }
+      ]
+    },
+    {
       "key": "federal ministry of finance",
       "label": "Federal Ministry of Finance",
       "total_mentions": 2,
@@ -6664,20 +6677,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "abu dhabi national oil company",
-      "label": "Abu Dhabi National Oil Company",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-11-15 03:00:01"
+  "generated": "2026-11-15 14:46:59"
 }
