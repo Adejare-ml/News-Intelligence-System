@@ -10,12 +10,6 @@
       "change": 7
     },
     {
-      "term": "two",
-      "recent": 6,
-      "previous": 1,
-      "change": 5
-    },
-    {
       "term": "recovers",
       "recent": 5,
       "previous": 0,
@@ -59,6 +53,12 @@
     },
     {
       "term": "missing",
+      "recent": 5,
+      "previous": 2,
+      "change": 3
+    },
+    {
+      "term": "mtn",
       "recent": 5,
       "previous": 2,
       "change": 3
@@ -120,9 +120,9 @@
       "change": -3
     },
     {
-      "term": "bpd",
-      "recent": 0,
-      "previous": 3,
+      "term": "targets",
+      "recent": 1,
+      "previous": 4,
       "change": -3
     }
   ],
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-15 03:00:00"
+  "generated": "2026-11-15 14:46:58"
 }

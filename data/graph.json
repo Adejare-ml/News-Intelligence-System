@@ -121,8 +121,20 @@
       "risk": "Critical"
     },
     {
+      "id": "cab1be53cb3b",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "f6ea64bf1db3",
       "label": "Federal Competition and Consumer Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b787895b59f1",
+      "label": "Nigeria Customs Service, Sokoto/Zamfara Area Command",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,9 +235,27 @@
       "risk": "Low"
     },
     {
-      "id": "bbdd3227478f",
-      "label": "Niger Delta Development Commission",
-      "type": "agency",
+      "id": "857958a9f5f4",
+      "label": "Haliru Abdullahi",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "23d28578b862",
+      "label": "Nwanneka Nwonkike",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "e88757374e2f",
+      "label": "Bashir Tanimu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "85cbb864d800",
+      "label": "Fabian Ajogwu",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -409,36 +439,6 @@
       "risk": "Low"
     },
     {
-      "id": "22efb00940fe",
-      "label": "Uche Nnaji",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b106d6ffadcf",
-      "label": "Ikra Bilbis",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "2d8b68a63cae",
-      "label": "Nigerian Senate",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "63e8db3f7f0e",
-      "label": "Tahir Monguno",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "327d46c2fa4b",
-      "label": "Lola Ashiru",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "7d15f62e4dec",
       "label": "Trademarks Global Concepts Limited",
       "type": "psc",
@@ -490,6 +490,12 @@
       "id": "b9bda8938c99",
       "label": "Fulcrum LNG Incorporated",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "bbdd3227478f",
+      "label": "Niger Delta Development Commission",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -566,6 +572,30 @@
     }
   ],
   "edges": [
+    {
+      "id": "1d3b2219568c",
+      "from": "857958a9f5f4",
+      "to": "b787895b59f1",
+      "label": "Appointed as Customs Area Controller"
+    },
+    {
+      "id": "0429f05a33b0",
+      "from": "23d28578b862",
+      "to": "cab1be53cb3b",
+      "label": "Appointed as Acting Zonal Director, Sokoto"
+    },
+    {
+      "id": "f7d2a3fde2d1",
+      "from": "e88757374e2f",
+      "to": "b787895b59f1",
+      "label": "Appointed as Public Relations Officer"
+    },
+    {
+      "id": "520f4dea5410",
+      "from": "85cbb864d800",
+      "to": "dce5a31d3181",
+      "label": "Appointed as Board Director"
+    },
     {
       "id": "60521bebf5c1",
       "from": "cfaeacae2eea",
@@ -685,24 +715,6 @@
       "from": "4c174f83f166",
       "to": "0bcaaf453cd3",
       "label": "Appointed as Acting Zonal Director, Lagos Zonal Directorate 2"
-    },
-    {
-      "id": "35678c648c7b",
-      "from": "b106d6ffadcf",
-      "to": "2d8b68a63cae",
-      "label": "Appointed as Chairman, Senate Committee on Communications"
-    },
-    {
-      "id": "2d56dffc15d6",
-      "from": "63e8db3f7f0e",
-      "to": "2d8b68a63cae",
-      "label": "Appointed as Senate Chief Whip"
-    },
-    {
-      "id": "ef55ff69a6b7",
-      "from": "327d46c2fa4b",
-      "to": "2d8b68a63cae",
-      "label": "Appointed as Deputy Majority Leader"
     },
     {
       "id": "faeedb2e3a5c",

@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 57,
-      "mentions": 286,
+      "mentions": 287,
       "risk": {
         "Medium": 20,
         "Low": 28,
@@ -35,7 +35,7 @@
     {
       "industry": "Telecoms",
       "companies": 16,
-      "mentions": 69,
+      "mentions": 70,
       "risk": {
         "Medium": 4,
         "Low": 11,
@@ -229,6 +229,15 @@
       }
     },
     {
+      "industry": "Pharmaceuticals",
+      "companies": 4,
+      "mentions": 6,
+      "risk": {
+        "Low": 3,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Real Estate",
       "companies": 6,
       "mentions": 6,
@@ -260,14 +269,6 @@
       "risk": {
         "High": 3,
         "Low": 1
-      }
-    },
-    {
-      "industry": "Pharmaceuticals",
-      "companies": 3,
-      "mentions": 5,
-      "risk": {
-        "Low": 3
       }
     },
     {
@@ -1019,5 +1020,5 @@
       }
     }
   ],
-  "generated": "2026-11-15 03:00:01"
+  "generated": "2026-11-15 14:46:59"
 }
