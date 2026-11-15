@@ -354,6 +354,14 @@
       "totals": {}
     },
     {
+      "name": "ECOWAS",
+      "contracts": 2,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 90000.0
+      }
+    },
+    {
       "name": "Federal Ministry of Power",
       "contracts": 2,
       "undisclosed": 1,
@@ -450,6 +458,14 @@
       "totals": {}
     },
     {
+      "name": "Bayelsa State Government",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 100000000.0
+      }
+    },
+    {
       "name": "Bursaspor",
       "contracts": 1,
       "undisclosed": 1,
@@ -472,14 +488,6 @@
       "contracts": 1,
       "undisclosed": 1,
       "totals": {}
-    },
-    {
-      "name": "ECOWAS",
-      "contracts": 1,
-      "undisclosed": 0,
-      "totals": {
-        "USD": 65000.0
-      }
     },
     {
       "name": "EFCC",
@@ -1026,6 +1034,14 @@
       "totals": {}
     },
     {
+      "name": "Fulcrum LNG Incorporated",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 100000000.0
+      }
+    },
+    {
       "name": "Gateway Air",
       "contracts": 1,
       "undisclosed": 1,
@@ -1180,6 +1196,14 @@
       }
     },
     {
+      "name": "Sunrisal",
+      "contracts": 1,
+      "undisclosed": 0,
+      "totals": {
+        "USD": 25000.0
+      }
+    },
+    {
       "name": "Sunrise Power",
       "contracts": 1,
       "undisclosed": 0,
@@ -1274,5 +1298,5 @@
       }
     }
   ],
-  "generated": "2026-11-13 21:07:51"
+  "generated": "2026-11-15 03:00:01"
 }

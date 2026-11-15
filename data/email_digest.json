@@ -1,18 +1,18 @@
 {
-  "edition": "20261113-11721-preview",
+  "edition": "20261115-11857-preview",
   "preview": true,
-  "built_at": "2026-11-13 21:07:51",
-  "date": "Friday 13 November 2026",
-  "subject": "AURA alert · Fri 13 Nov · Emefiele acquired properties through proxies, EFCC tells court",
-  "preheader": "Also: Afreximbank acquires stake in D’banj’s CREAM platform · 24 stories, 4 risk alerts",
+  "built_at": "2026-11-15 03:00:01",
+  "date": "Sunday 15 November 2026",
+  "subject": "AURA alert · Sun 15 Nov · Emefiele acquired properties through proxies, EFCC tells court",
+  "preheader": "Also: Afreximbank acquires stake in D’banj’s CREAM platform · 20 stories, 3 risk alerts",
   "since": "Wed 11 Nov, 16:16 Lagos",
-  "through_id": 11721,
+  "through_id": 11857,
   "stats": {
-    "reports": 24,
-    "stories": 24,
-    "outlets": 5,
-    "risk_alerts": 4,
-    "public_money": 5,
+    "reports": 20,
+    "stories": 20,
+    "outlets": 4,
+    "risk_alerts": 3,
+    "public_money": 6,
     "appointments": 1,
     "ownership": 0
   },
@@ -140,41 +140,6 @@
     },
     {
       "n": 4,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [
-        "Alert",
-        "Allegation, not a finding"
-      ],
-      "alert": true,
-      "risk": "AURA risk rating: High · 55/100",
-      "headline": "EFCC re-arraigns ex-Skye Bank chair Tunde Ayeni on N15.6bn fraud charges",
-      "byline": "Premium Times · Wed 11 Nov, 23:29 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The Economic and Financial Crimes Commission (EFCC) has re-arraigned Tunde Ayeni, a former chairman of Skye Bank, on fraud charges totalling N15.6bn. The re-arraignment concerns alleged fraud linked to a former bank chair, a matter of corporate governance accountability in Nigeria's banking sector.",
-      "key_facts": [
-        "EFCC re-arraigned ex-Skye Bank chair Tunde Ayeni."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "As reported by Premium Times; AURA has not checked court or agency records. An allegation or charge is not a finding of guilt."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Skye Bank",
-        "Economic and Financial Crimes Commission (EFCC)",
-        "Tunde Ayeni"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQV2E2UkZQS3o5N0xXb252R3JNc1l1SzE4VEFDcl9nRFF4UGhUU003M3VIVmZwa3BOczRqSHpoeHF5emhnMVBHdko5emhNclZaaFNpa3VSaUFybnhXakFqaVNCaW9haGswakpSNnF2RktZQlcyUlVwLUhqNnZidzA1WXgwNVdubDNiUEVCRzdTZ0p1em40YWt4aG0yNWpVUTNfZGh6WVJIVjNsQ05TMTJuS3dKTFBHQXdiQkRHNk41eFlMYkdiU0ZZYg?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
       "theme": "People",
       "event_type": "Appointment",
       "flags": [],
@@ -203,22 +168,53 @@
       },
       "also_reported": [],
       "also_more": 0
+    },
+    {
+      "n": 5,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 40/100",
+      "headline": "Tinubu breaks ground for $3.5bn Bakassi Deep Seaport",
+      "byline": "The Guardian · Fri 13 Nov, 18:04 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "President Bola Tinubu inaugurated the construction of the Bakassi Deep Seaport, a $3.5 billion maritime project intended to bolster trade and create jobs in Nigeria’s south‑coast region. The ground‑breaking marks a significant step in the country’s infrastructure development agenda.",
+      "key_facts": [
+        "Tinubu broke ground for the seaport in Nigeria"
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: It demonstrates the federal government’s commitment to large‑scale maritime infrastructure, a cornerstone for expanding national trade capacity and employment."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Bakassi Deep Seaport",
+        "Government of Nigeria"
+      ],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQanJWeEJYVUxVMnh0alZYVVBPN0hDa2ZDYjRrYmlPSnhXZ085OHMwb1NTVGtZY29ManAxOXlnU0ZGWHE1dzNBWk5CX3BzcVkya3QwbHd2dm5GQTZneEVWQlpzQ3B4RncyVlEtaXBTYUc1aWJjb1VzbE9sTFg3Uk1uWkVVZw?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
       "theme": "Other",
-      "text": "The Nigerian Senate has summoned the Nigerian Communications Commission and major telecom operators, including MTN, Airtel, Globacom and T2, over persistent network failures and alleged unjustified airtime deductions.",
-      "outlet": "BusinessDay",
-      "url": "https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/"
+      "text": "The United Kingdom has purchased £1 billion worth of Nigerian oil as the Dangote refinery expands.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56WHBWOThDd0VGQUZrQjkyMkhDdlUxNFFwejZRWFI3NUdwZkZBMGtqZ0RaUnR2eFR1SHNJZi1nYWVWY0d5RG1GQ1lTYy03VGZYTGtrQmtHX2x4NnhZT1A5LXpJMW5jZVBzRGlMQk5RM0k1Z2xMeEpuZGhXS0hCdw?oc=5"
     },
     {
       "n": 7,
-      "theme": "Public money",
-      "text": "Cross River State Governor Ben Ayade's predecessor-era opposition figure Imoke has insisted that the award of the Mambilla power project contract to Sunrise was invalid.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc19VSGc3TlNfTHIza2VHTUZIQTVNUjZ3UTBOdkctNURTRC0tV292VjQ3ZzRnQTFRYTNlVFAyR0ZPZUQxZS1SdUxSVkpXTjNMNzRFMG9GSjZYVVFITjhUSlhYa2doeTFKdEYzZXlzUl83MUozQ3IydmhxUXp2LU5PTHVtbXMxRjBjOE5kNXRfMHE1cEpFR3Z6UmFpY20tMU9YMHRWSVRNZnJHaFhJ?oc=5"
+      "theme": "Other",
+      "text": "FCCPC seized Peachville Platinum Estate Limited for allegedly failing to deliver a N140 million property in Abuja after a consumer complaint.",
+      "outlet": "Nairametrics",
+      "url": "https://nairametrics.com/2026/11/14/fccpc-seals-real-estate-firm-over-alleged-failure-to-deliver-n140-million-home/"
     },
     {
       "n": 8,
@@ -243,41 +239,41 @@
     },
     {
       "n": 11,
+      "theme": "Public money",
+      "text": "Bayelsa State Government announced a partnership with U.S.-based Fulcrum LNG Inc. to construct a multi‑million‑dollar gas gathering and processing plant that will capture flared gas and supply power to the state’s Independent Power Plant.",
+      "outlet": "Punch",
+      "url": "https://punchng.com/us-firm-to-build-100m-bayelsa-gas-processing-plant/"
+    },
+    {
+      "n": 12,
       "theme": "Regulation & enforcement",
       "text": "The Nigeria Communications Commission announced a new device registration policy that could raise the retail price of mobile phones, according to an expert warning.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPX2N6V2RQQmZTRXJfMVJoVlVBTXFFeXpyVUw2anItS0p3c09HcE5jSnl1REFiaDFhSHB4c2s5dzJsX3h2UlN0QUFJbTU4OFNNcjhzaWdqeWZSeFhRU1lPN0NrN1Y3cFRscGVFTUxPZjZCRElDbk02SVY3aW1ESW5Bcnlta3lvakFmZS0tMU92NlRSWmJmVGhOVE5CRGZOWmxWeWR2Y3BrUm5Iam1hV2c?oc=5"
     },
     {
-      "n": 12,
+      "n": 13,
       "theme": "Regulation & enforcement",
       "text": "Power tariff reforms in Nigeria are reported to be stalled by weak regulatory oversight and market gaps.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzlpVm5rOFdDWllYVjZ1Z01JaGxqX0pNN2xYUHlLRTl4c29nSlp5X1FaeXFxS2ZtSTVWZU1wbzZ6VXlPRWtCV19jVklkTzFza0g1d083bXNkUDhIdTl1UTM1QlJhZ244Nnl4aXludzkycS1FRGVRSDZDLXFuSVl0RXpsRmYzcXRWdkl2cWU5M2tUM3pnSHFN?oc=5"
     },
     {
-      "n": 13,
-      "theme": "Regulation & enforcement",
-      "text": "The Federal Government has moved to regulate the scrap metal industry in an effort to curb infrastructure vandalism.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY0VhZHdYYXBsaV9pdlNENnFHbDdkS282Mm1EbE5kX3dBUjBkTy1pc2o2dnhWRTZLTGVyQk81WUJvR2dseE1hMXF0UkVubi1wM29DdThkN0J0Q1JyNkVCLW83Qmw1MmtHZVd6Z1JGNS1vWlV5aC1tb1l5ZmVVQ0kwc0dnb0lNN2RDbGdrNExiWnFUZjdRc1ozWDQ3VmZ6Zw?oc=5"
-    },
-    {
       "n": 14,
-      "theme": "Other",
-      "text": "Afreximbank and the Development Bank of Nigeria (DBN) have partnered on a $75 million finance facility aimed at small and medium-sized enterprises and the creative sector.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcThmb2RUNmZ0QzdtY0NSXzRnVTltUVV1Z21pWDluc1d6V0dBNHh0UGR2bjN0a0xVdHRuczVTM245MHZKcGJ0ZW9xZ2NiNFhNLVliZzFWQS1OcWxMNU1pQnN1eHJrVlREWjBQR3c1M25jZFBhVkZ5YndSNEVfa0oxaU8yZXdJNWk2UkZvUml4cTRGek83ZVdFakthSWl6ZzBpaFVNM2VEU3B0Y01EdklyTnh3ZFJRY1BleE0yM2lfcTdCQ29XelFDS3BsYzBCM3lmZERUUGRuaXpRMVFZSHc?oc=5"
+      "theme": "Regulation & enforcement",
+      "text": "Lagos State has moved to crack down on retail stores that enforce 'no refund' policies.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOdUJIR0dscXcxWHJ1OWdvZEwtems1enprQkhwX0VPY1hDVGlKZjdzSVBHdXhvTTZPUjduRm13ekQ5NGwzQTJvcXBrT0dITi1SUUNmUWpLY1A3ZTZ5aE01UHFDc1A3SVVsLUhNX2oxcG9vbm91ZDlNWGZyZXVlTm94bmJPT3U?oc=5"
     },
     {
       "n": 15,
-      "theme": "Other",
-      "text": "British International Investment (BII) announced a $7m debt facility to Okra, a mesh-grid technology provider for off-grid communities.",
-      "outlet": "Punch",
-      "url": "https://punchng.com/bii-backs-okra-with-7m-to-accelerate-clean-energy/"
+      "theme": "Public money",
+      "text": "Bayelsa State government announced the initiation of a gas plant project with a United States partner, though the investment amount and specific contractor have not been disclosed.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNX21XcXVsc3otOEo0UVktQ0R2bHM1UkxXNDlnLVBSMEJOX0k4NTN0T1ZCYUlHRWZiOExYRmVqUUtVVnV0MzlyOWhUMF8wSGx5RUhSQ0haakc3bVBPaVpvTlc5WDJvZ0lKQUJFVjJWTi02MG51cmR0aUxFcVIyc2toSkYxcWZaU0FuU1pST2s0VVp5eXFOWURkd2l1Y1YtQkVnVnJUM3RqRnNGZFRkU0RaOWwya2VfYmVzUEVrZk94cm9yeG5pUkEyb2RPN0VwcEx6TGFnUkFUaGplOTJTU3c4dw?oc=5"
     }
   ],
-  "also_more": 9,
+  "also_more": 5,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],

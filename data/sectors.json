@@ -2,21 +2,21 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 950,
-      "mentions": 1562,
+      "companies": 953,
+      "mentions": 1565,
       "risk": {
-        "Low": 834,
+        "Low": 835,
         "Critical": 56,
-        "Medium": 33,
+        "Medium": 35,
         "High": 27
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 56,
-      "mentions": 274,
+      "companies": 57,
+      "mentions": 286,
       "risk": {
-        "Medium": 19,
+        "Medium": 20,
         "Low": 28,
         "Critical": 1,
         "High": 8
@@ -63,21 +63,12 @@
     },
     {
       "industry": "Energy",
-      "companies": 13,
-      "mentions": 21,
+      "companies": 14,
+      "mentions": 22,
       "risk": {
-        "Medium": 5,
+        "Medium": 6,
         "High": 3,
         "Low": 5
-      }
-    },
-    {
-      "industry": "Conglomerate",
-      "companies": 3,
-      "mentions": 15,
-      "risk": {
-        "Low": 1,
-        "Medium": 2
       }
     },
     {
@@ -238,6 +229,15 @@
       }
     },
     {
+      "industry": "Real Estate",
+      "companies": 6,
+      "mentions": 6,
+      "risk": {
+        "Medium": 3,
+        "Low": 3
+      }
+    },
+    {
       "industry": "Beverages",
       "companies": 5,
       "mentions": 5,
@@ -271,20 +271,20 @@
       }
     },
     {
-      "industry": "Real Estate",
-      "companies": 5,
-      "mentions": 5,
-      "risk": {
-        "Medium": 2,
-        "Low": 3
-      }
-    },
-    {
       "industry": "Cement",
       "companies": 2,
       "mentions": 4,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Conglomerate",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 1,
+        "Medium": 1
       }
     },
     {
@@ -1019,5 +1019,5 @@
       }
     }
   ],
-  "generated": "2026-11-13 21:07:51"
+  "generated": "2026-11-15 03:00:01"
 }

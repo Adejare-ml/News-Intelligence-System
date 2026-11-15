@@ -1,92 +1,92 @@
 {
-  "generated": "2026-11-13 21:07:42",
+  "generated": "2026-11-15 02:59:56",
   "models": [
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 5378,
-      "downloads": 21586
+      "likes": 7373,
+      "downloads": 24470
     },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 995,
-      "downloads": 437039
-    },
-    {
-      "id": "NousResearch/Arete-27B",
-      "url": "https://huggingface.co/NousResearch/Arete-27B",
-      "task": "text-generation",
-      "likes": 535,
-      "downloads": 5545
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 11761,
-      "downloads": 2778909
-    },
-    {
-      "id": "speridlabs/idol",
-      "url": "https://huggingface.co/speridlabs/idol",
-      "task": "image-to-3d",
-      "likes": 2282,
-      "downloads": 31367
+      "likes": 1121,
+      "downloads": 517948
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 19852,
-      "downloads": 6960395
+      "likes": 20017,
+      "downloads": 6757964
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 11937,
+      "downloads": 2777667
     },
     {
       "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
       "task": "image-text-to-text",
-      "likes": 3040,
-      "downloads": 1639400
+      "likes": 3125,
+      "downloads": 1657783
     },
     {
-      "id": "moonshotai/Kimi-K3.1-Pro",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "task": "image-text-to-text",
-      "likes": 2018,
-      "downloads": 40953
+      "id": "Comfy-Org/MiniMax-H3-Image",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+      "task": "text-to-image",
+      "likes": 387,
+      "downloads": 1615613
+    },
+    {
+      "id": "speridlabs/idol",
+      "url": "https://huggingface.co/speridlabs/idol",
+      "task": "image-to-3d",
+      "likes": 2341,
+      "downloads": 32619
+    },
+    {
+      "id": "NousResearch/Arete-27B",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "task": "text-generation",
+      "likes": 595,
+      "downloads": 6191
     }
   ],
   "papers": [
     {
+      "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
+      "url": "https://huggingface.co/papers/2611.10439",
+      "upvotes": 7
+    },
+    {
+      "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
+      "url": "https://huggingface.co/papers/2611.16728",
+      "upvotes": 1
+    },
+    {
+      "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
+      "url": "https://huggingface.co/papers/2611.17336",
+      "upvotes": 3
+    },
+    {
       "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
       "url": "https://huggingface.co/papers/2611.17190",
-      "upvotes": 1
+      "upvotes": 4
     },
     {
       "title": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
       "url": "https://huggingface.co/papers/2611.09567",
-      "upvotes": 2
+      "upvotes": 4
     },
     {
       "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
       "url": "https://huggingface.co/papers/2611.16961",
-      "upvotes": 1
-    },
-    {
-      "title": "The Narrative Gap: Can LLMs Help Us Navigate Diverse Narratives Across Languages?",
-      "url": "https://huggingface.co/papers/2611.12750",
-      "upvotes": 0
-    },
-    {
-      "title": "A frontier machine intelligence for human neuroimaging",
-      "url": "https://huggingface.co/papers/2611.15094",
-      "upvotes": 0
-    },
-    {
-      "title": "Unbundling Multimodal Vision Encoding",
-      "url": "https://huggingface.co/papers/2611.17334",
       "upvotes": 4
     }
   ]

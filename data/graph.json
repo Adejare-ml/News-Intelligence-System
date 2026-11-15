@@ -91,6 +91,12 @@
       "risk": "Low"
     },
     {
+      "id": "866686ab0fd6",
+      "label": "Dangote Group",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "6b0baabbfd00",
       "label": "APC Group",
       "type": "company",
@@ -103,12 +109,6 @@
       "risk": "High"
     },
     {
-      "id": "866686ab0fd6",
-      "label": "Dangote Group",
-      "type": "company",
-      "risk": "Medium"
-    },
-    {
       "id": "1616286eac11",
       "label": "Socio-Economic Rights and Accountability Project",
       "type": "company",
@@ -119,6 +119,24 @@
       "label": "NNPCL",
       "type": "company",
       "risk": "Critical"
+    },
+    {
+      "id": "f6ea64bf1db3",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
+      "type": "agency",
+      "risk": "Low"
     },
     {
       "id": "01391c4b85e7",
@@ -141,12 +159,6 @@
     {
       "id": "9aef00190386",
       "label": "Lagos State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
       "type": "agency",
       "risk": "Low"
     },
@@ -213,18 +225,6 @@
     {
       "id": "bbdd3227478f",
       "label": "Niger Delta Development Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bf682efac4e",
-      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -475,6 +475,24 @@
       "risk": "Medium"
     },
     {
+      "id": "0b91738cec69",
+      "label": "ECOWAS",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "2a8c3c8fb890",
+      "label": "Sunrisal",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "b9bda8938c99",
+      "label": "Fulcrum LNG Incorporated",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "ad9545949768",
       "label": "Construction firm (unnamed in article)",
       "type": "company",
@@ -502,12 +520,6 @@
       "id": "3e32a23488ab",
       "label": "Unnamed firm owned by Lagos Councillor",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
       "risk": "Low"
     },
     {
@@ -709,6 +721,18 @@
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
       "label": "PSC: 6.5%"
+    },
+    {
+      "id": "f6395673b5e1",
+      "from": "2a8c3c8fb890",
+      "to": "0b91738cec69",
+      "label": "Contract Awardee"
+    },
+    {
+      "id": "5c60e02069e7",
+      "from": "b9bda8938c99",
+      "to": "217ee6fe71c5",
+      "label": "Contract Awardee"
     },
     {
       "id": "fb12cd682afe",
