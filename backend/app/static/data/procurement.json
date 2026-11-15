@@ -2268,5 +2268,25 @@
     "Date": "2026-11-11",
     "Amount Value": null,
     "Amount Currency": null
+  },
+  {
+    "Agency": "Bayelsa State Government",
+    "Contractor": "Fulcrum LNG Incorporated",
+    "Amount": "US$100\u202fmillion",
+    "Project": "Gas gathering and processing facility to monetize flared gas and power state Independent Power Plant",
+    "Source": "The Punch",
+    "Date": "2026-11-14",
+    "Amount Value": 100000000.0,
+    "Amount Currency": "USD"
+  },
+  {
+    "Agency": "ECOWAS",
+    "Contractor": "Sunrisal",
+    "Amount": "$25,000",
+    "Project": "rural solar",
+    "Source": "The Guardian Nigeria News",
+    "Date": "2026-11-14",
+    "Amount Value": 25000.0,
+    "Amount Currency": "USD"
   }
 ]
