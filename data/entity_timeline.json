@@ -430,7 +430,7 @@
     {
       "key": "government of",
       "label": "Government of Nigeria",
-      "total_mentions": 26,
+      "total_mentions": 27,
       "points": [
         {
           "week": "2026-09-14",
@@ -473,6 +473,12 @@
           "mentions": 6,
           "avg_risk": 16.7,
           "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
         }
       ]
     },
@@ -1685,6 +1691,43 @@
       ]
     },
     {
+      "key": "dangote",
+      "label": "Dangote Group",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        }
+      ]
+    },
+    {
       "key": "enugu state government",
       "label": "Enugu State Government",
       "total_mentions": 6,
@@ -2040,6 +2083,37 @@
       ]
     },
     {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 42.5,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "dp world",
       "label": "DP World",
       "total_mentions": 5,
@@ -2052,37 +2126,6 @@
         },
         {
           "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "dangote",
-      "label": "Dangote Group",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 32.5,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-19",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
@@ -2586,37 +2629,6 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
-        }
-      ]
-    },
-    {
-      "key": "bayelsa state government",
-      "label": "Bayelsa State Government",
-      "total_mentions": 4,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -6667,5 +6679,5 @@
       ]
     }
   ],
-  "generated": "2026-11-13 21:07:51"
+  "generated": "2026-11-15 03:00:01"
 }

@@ -21,11 +21,11 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 41.6,
-      "previous_avg": 12.5,
-      "delta": 29.1,
-      "recent_mentions": 8,
-      "previous_mentions": 2
+      "recent_avg": 45.4,
+      "previous_avg": 13.3,
+      "delta": 32.1,
+      "recent_mentions": 7,
+      "previous_mentions": 3
     },
     {
       "key": "mtn communications",
@@ -37,22 +37,13 @@
       "previous_mentions": 1
     },
     {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 23.9,
-      "previous_avg": 35.0,
-      "delta": -11.1,
-      "recent_mentions": 7,
-      "previous_mentions": 3
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "recent_avg": 21.7,
-      "previous_avg": 13.3,
-      "delta": 8.4,
-      "recent_mentions": 3,
-      "previous_mentions": 3
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 54.9,
+      "previous_avg": 45.7,
+      "delta": 9.2,
+      "recent_mentions": 8,
+      "previous_mentions": 7
     },
     {
       "key": "bola tinubu",
@@ -64,6 +55,15 @@
       "previous_mentions": 1
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "recent_avg": 21.7,
+      "previous_avg": 15.0,
+      "delta": 6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 2
+    },
+    {
       "key": "nnpc",
       "label": "NNPC Limited",
       "recent_avg": 34.0,
@@ -73,6 +73,15 @@
       "previous_mentions": 3
     },
     {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 24.4,
+      "previous_avg": 30.0,
+      "delta": -5.6,
+      "recent_mentions": 5,
+      "previous_mentions": 5
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
       "recent_avg": 22.5,
@@ -80,15 +89,6 @@
       "delta": 5.5,
       "recent_mentions": 4,
       "previous_mentions": 5
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 52.7,
-      "previous_avg": 47.5,
-      "delta": 5.2,
-      "recent_mentions": 9,
-      "previous_mentions": 6
     },
     {
       "key": "revenue mobilisation allocation and fiscal commission",
@@ -115,6 +115,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 7,
+      "previous_mentions": 0
+    },
+    {
+      "key": "bayelsa state government",
+      "label": "Bayelsa State Government",
+      "recent_avg": 42.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 3,
       "previous_mentions": 0
-    },
-    {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 22.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-13 21:07:51"
+  "generated": "2026-11-15 03:00:01"
 }

@@ -6,9 +6,12 @@ Mentioned in 5 reports tracked by AURA.
 
 - Mentions tracked: 5
 - Holdings: 0
+- Recent stories: 1
 - Last seen: 30 Jul 2026
 
-AURA has no recent reporting on FCCPC yet.
+## In the news
+
+- [FCCPC seals real estate firm over alleged failure to deliver N140 million home](https://nairametrics.com/2026/11/14/fccpc-seals-real-estate-firm-over-alleged-failure-to-deliver-n140-million-home/) · Nairametrics · 14 Nov 2026
 
 ---
 

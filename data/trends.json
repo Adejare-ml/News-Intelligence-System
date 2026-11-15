@@ -1,19 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 103,
-  "previous_articles": 99,
+  "recent_articles": 97,
+  "previous_articles": 97,
   "rising": [
     {
       "term": "kyari",
       "recent": 7,
       "previous": 0,
       "change": 7
-    },
-    {
-      "term": "gas",
-      "recent": 6,
-      "previous": 0,
-      "change": 6
     },
     {
       "term": "two",
@@ -26,12 +20,6 @@
       "recent": 5,
       "previous": 0,
       "change": 5
-    },
-    {
-      "term": "nnpc",
-      "recent": 8,
-      "previous": 4,
-      "change": 4
     },
     {
       "term": "senate",
@@ -62,9 +50,27 @@
       "recent": 5,
       "previous": 2,
       "change": 3
+    },
+    {
+      "term": "gas",
+      "recent": 5,
+      "previous": 2,
+      "change": 3
+    },
+    {
+      "term": "missing",
+      "recent": 5,
+      "previous": 2,
+      "change": 3
     }
   ],
   "falling": [
+    {
+      "term": "power",
+      "recent": 1,
+      "previous": 8,
+      "change": -7
+    },
     {
       "term": "illegal",
       "recent": 1,
@@ -76,6 +82,18 @@
       "recent": 0,
       "previous": 5,
       "change": -5
+    },
+    {
+      "term": "reps",
+      "recent": 1,
+      "previous": 5,
+      "change": -4
+    },
+    {
+      "term": "capital",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
     },
     {
       "term": "chinese",
@@ -90,7 +108,7 @@
       "change": -4
     },
     {
-      "term": "opay",
+      "term": "projects",
       "recent": 1,
       "previous": 4,
       "change": -3
@@ -106,41 +124,23 @@
       "recent": 0,
       "previous": 3,
       "change": -3
-    },
-    {
-      "term": "efcc uncovers",
-      "recent": 0,
-      "previous": 3,
-      "change": -3
-    },
-    {
-      "term": "eyes",
-      "recent": 0,
-      "previous": 3,
-      "change": -3
-    },
-    {
-      "term": "industrial",
-      "recent": 0,
-      "previous": 3,
-      "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 70,
-      "previous": 65
+      "recent": 63,
+      "previous": 68
     },
     {
       "category": "Company",
-      "recent": 21,
-      "previous": 25
+      "recent": 23,
+      "previous": 19
     },
     {
       "category": "Legal",
-      "recent": 11,
-      "previous": 8
+      "recent": 10,
+      "previous": 9
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-13 21:07:50"
+  "generated": "2026-11-15 03:00:00"
 }
