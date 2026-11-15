@@ -1,9 +1,9 @@
 {
-  "generated": "2026-11-15 02:59:56",
+  "generated": "2026-11-15 14:46:56",
   "sources": "coingecko.com (BTC)",
   "unit": "USD",
   "latest": {
-    "btc": 64801.0
+    "btc": 64611.0
   },
   "history": [
     {
@@ -212,7 +212,7 @@
     },
     {
       "date": "2026-11-15",
-      "btc": 64801.0
+      "btc": 64611.0
     }
   ]
 }
