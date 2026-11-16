@@ -2,13 +2,13 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 953,
-      "mentions": 1565,
+      "companies": 955,
+      "mentions": 1567,
       "risk": {
         "Low": 835,
         "Critical": 56,
         "Medium": 35,
-        "High": 27
+        "High": 29
       }
     },
     {
@@ -1020,5 +1020,5 @@
       }
     }
   ],
-  "generated": "2026-11-15 14:46:59"
+  "generated": "2026-11-16 03:18:46"
 }

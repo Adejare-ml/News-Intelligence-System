@@ -1,68 +1,83 @@
 {
-  "generated": "2026-11-15 14:46:56",
+  "generated": "2026-11-16 03:18:40",
   "models": [
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 7464,
+      "likes": 7552,
       "downloads": 27037
     },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 1151,
+      "likes": 1195,
       "downloads": 571067
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 20067,
+      "likes": 20132,
       "downloads": 6547772
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 12000,
+      "likes": 12071,
       "downloads": 2754355
     },
     {
       "id": "Comfy-Org/MiniMax-H3-Image",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 403,
+      "likes": 414,
       "downloads": 1973388
-    },
-    {
-      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "task": "image-text-to-text",
-      "likes": 3143,
-      "downloads": 1708637
     },
     {
       "id": "Zyphra/ZONOS3-Mini",
       "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
       "task": "text-to-speech",
-      "likes": 372,
+      "likes": 399,
       "downloads": 39862
     },
     {
-      "id": "speridlabs/idol",
-      "url": "https://huggingface.co/speridlabs/idol",
-      "task": "image-to-3d",
-      "likes": 2355,
-      "downloads": 33423
+      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "task": "image-text-to-text",
+      "likes": 3170,
+      "downloads": 1708637
+    },
+    {
+      "id": "thinkingmachines/Inkling-2-Small",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "task": "image-text-to-text",
+      "likes": 345,
+      "downloads": 7329
     }
   ],
   "papers": [
     {
+      "title": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+      "url": "https://huggingface.co/papers/2611.14504",
+      "upvotes": 0
+    },
+    {
+      "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+      "url": "https://huggingface.co/papers/2611.16439",
+      "upvotes": 1
+    },
+    {
+      "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
+      "url": "https://huggingface.co/papers/2611.07226",
+      "upvotes": 2
+    },
+    {
       "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
       "url": "https://huggingface.co/papers/2611.10439",
-      "upvotes": 8
+      "upvotes": 14
     },
     {
       "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
@@ -72,22 +87,7 @@
     {
       "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
       "url": "https://huggingface.co/papers/2611.17336",
-      "upvotes": 5
-    },
-    {
-      "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
-      "url": "https://huggingface.co/papers/2611.17190",
-      "upvotes": 4
-    },
-    {
-      "title": "TurtLES: A Large-Scale Benchmark for Turbulent 3D Neural PDE Surrogates",
-      "url": "https://huggingface.co/papers/2611.09567",
-      "upvotes": 4
-    },
-    {
-      "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
-      "url": "https://huggingface.co/papers/2611.16961",
-      "upvotes": 7
+      "upvotes": 6
     }
   ]
 }

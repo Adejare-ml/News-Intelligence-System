@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 97,
-  "previous_articles": 97,
+  "recent_articles": 92,
+  "previous_articles": 95,
   "rising": [
     {
       "term": "kyari",
@@ -14,6 +14,12 @@
       "recent": 5,
       "previous": 0,
       "change": 5
+    },
+    {
+      "term": "court",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
     },
     {
       "term": "senate",
@@ -40,12 +46,6 @@
       "change": 4
     },
     {
-      "term": "court",
-      "recent": 5,
-      "previous": 2,
-      "change": 3
-    },
-    {
       "term": "gas",
       "recent": 5,
       "previous": 2,
@@ -58,7 +58,7 @@
       "change": 3
     },
     {
-      "term": "mtn",
+      "term": "two",
       "recent": 5,
       "previous": 2,
       "change": 3
@@ -78,7 +78,7 @@
       "change": -5
     },
     {
-      "term": "ogun",
+      "term": "projects",
       "recent": 0,
       "previous": 5,
       "change": -5
@@ -102,16 +102,16 @@
       "change": -4
     },
     {
-      "term": "threatens",
+      "term": "ogun",
       "recent": 0,
       "previous": 4,
       "change": -4
     },
     {
-      "term": "projects",
-      "recent": 1,
+      "term": "threatens",
+      "recent": 0,
       "previous": 4,
-      "change": -3
+      "change": -4
     },
     {
       "term": "seeks",
@@ -120,27 +120,27 @@
       "change": -3
     },
     {
-      "term": "targets",
-      "recent": 1,
-      "previous": 4,
+      "term": "bpd",
+      "recent": 0,
+      "previous": 3,
       "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 63,
-      "previous": 68
+      "recent": 59,
+      "previous": 66
     },
     {
       "category": "Company",
-      "recent": 23,
-      "previous": 19
+      "recent": 22,
+      "previous": 20
     },
     {
       "category": "Legal",
       "recent": 10,
-      "previous": 9
+      "previous": 8
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-15 14:46:58"
+  "generated": "2026-11-16 03:18:46"
 }

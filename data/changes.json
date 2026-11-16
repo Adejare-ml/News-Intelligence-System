@@ -1,23 +1,31 @@
 {
   "new_companies": [
-    "Kano pharmaceutical company (unnamed in article)"
+    "Ibotta Inc",
+    "KDT Ibotta Holdings, LLC"
   ],
-  "new_people": [
-    "Bashir Tanimu",
-    "Haliru Abdullahi",
-    "Nwanneka Nwonkike"
+  "new_people": [],
+  "psc_added": [
+    {
+      "person": "KDT Ibotta Holdings, LLC",
+      "company": "Ibotta Inc"
+    }
   ],
-  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November - Investing.com Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
+      "risk": 80.0
+    }
+  ],
   "counts": {
-    "new_companies": 1,
-    "new_people": 3,
-    "psc_added": 0,
+    "new_companies": 2,
+    "new_people": 0,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-11-15 14:46:55"
+  "generated": "2026-11-16 03:18:39"
 }

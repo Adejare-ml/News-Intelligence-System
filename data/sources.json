@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 3104,
+      "total": 3111,
       "published": 1597,
-      "filtered": 1507,
+      "filtered": 1514,
       "accept_rate": 51,
       "avg_risk": 28.2,
       "engines": {
@@ -17,9 +17,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2807,
+      "total": 2810,
       "published": 1047,
-      "filtered": 1760,
+      "filtered": 1763,
       "accept_rate": 37,
       "avg_risk": 30.3,
       "engines": {
@@ -32,9 +32,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 1254,
+      "total": 1257,
       "published": 465,
-      "filtered": 789,
+      "filtered": 792,
       "accept_rate": 37,
       "avg_risk": 27.5,
       "engines": {
@@ -173,9 +173,9 @@
     },
     {
       "source": "The Eagle Online",
-      "total": 202,
+      "total": 203,
       "published": 35,
-      "filtered": 167,
+      "filtered": 168,
       "accept_rate": 17,
       "avg_risk": 34.6,
       "engines": {
@@ -268,6 +268,20 @@
       "last_seen": "2026-11-09"
     },
     {
+      "source": "Voice of Nigeria",
+      "total": 51,
+      "published": 16,
+      "filtered": 35,
+      "accept_rate": 31,
+      "avg_risk": 19.1,
+      "engines": {
+        "nvidia": 1,
+        "ollama": 11,
+        "claude": 4
+      },
+      "last_seen": "2026-11-15"
+    },
+    {
       "source": "blueprint",
       "total": 51,
       "published": 14,
@@ -292,20 +306,6 @@
         "ollama": 16
       },
       "last_seen": "2026-10-05"
-    },
-    {
-      "source": "Voice of Nigeria",
-      "total": 50,
-      "published": 16,
-      "filtered": 34,
-      "accept_rate": 32,
-      "avg_risk": 19.1,
-      "engines": {
-        "nvidia": 1,
-        "ollama": 11,
-        "claude": 4
-      },
-      "last_seen": "2026-11-15"
     },
     {
       "source": "tribuneonlineng",
@@ -1797,6 +1797,18 @@
       "last_seen": "2026-09-15"
     },
     {
+      "source": "Investing.com Nigeria",
+      "total": 1,
+      "published": 1,
+      "filtered": 0,
+      "accept_rate": 100,
+      "avg_risk": 80.0,
+      "engines": {
+        "nvidia": 1
+      },
+      "last_seen": "2026-11-15"
+    },
+    {
       "source": "Itfglobal.org",
       "total": 1,
       "published": 0,
@@ -2433,5 +2445,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-15 14:46:59"
+  "generated": "2026-11-16 03:18:46"
 }
