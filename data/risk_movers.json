@@ -10,15 +10,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "access",
-      "label": "Access Holdings Plc",
-      "recent_avg": 43.5,
-      "previous_avg": 10.0,
-      "delta": 33.5,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
       "recent_avg": 41.0,
@@ -37,6 +28,15 @@
       "previous_mentions": 3
     },
     {
+      "key": "federal government of",
+      "label": "Federal Government of Nigeria",
+      "recent_avg": 18.3,
+      "previous_avg": 25.0,
+      "delta": -6.7,
+      "recent_mentions": 3,
+      "previous_mentions": 4
+    },
+    {
       "key": "nnpc",
       "label": "NNPC Limited",
       "recent_avg": 34.0,
@@ -48,11 +48,11 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 24.4,
-      "previous_avg": 30.0,
-      "delta": -5.6,
-      "recent_mentions": 5,
-      "previous_mentions": 5
+      "recent_avg": 24.2,
+      "previous_avg": 29.2,
+      "delta": -5.0,
+      "recent_mentions": 4,
+      "previous_mentions": 6
     },
     {
       "key": "economic and financial crimes commission",
@@ -61,15 +61,6 @@
       "previous_avg": 52.0,
       "delta": 2.9,
       "recent_mentions": 8,
-      "previous_mentions": 5
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 18.3,
-      "previous_avg": 20.0,
-      "delta": -1.7,
-      "recent_mentions": 3,
       "previous_mentions": 5
     },
     {
@@ -163,6 +154,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "unijos",
+      "label": "UNIJOS",
+      "recent_avg": 17.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "upstream petroleum regulatory commission",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "recent_avg": 15.0,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-16 03:18:46"
+  "generated": "2026-11-16 17:56:52"
 }

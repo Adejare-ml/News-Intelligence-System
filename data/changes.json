@@ -1,31 +1,31 @@
 {
   "new_companies": [
-    "Ibotta Inc",
-    "KDT Ibotta Holdings, LLC"
+    "Anambra Airport",
+    "Lasaco Assurance Plc",
+    "NGX Group Plc",
+    "Nairobi Securities Exchange",
+    "Osas & Oseji Estate Surveyors & Valuers"
   ],
-  "new_people": [],
-  "psc_added": [
-    {
-      "person": "KDT Ibotta Holdings, LLC",
-      "company": "Ibotta Inc"
-    }
+  "new_people": [
+    "Gertrude Olutekunbi"
   ],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [
     {
-      "title": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November - Investing.com Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
-      "risk": 80.0
+      "title": "FG dismisses alleged irregularities in livestock ministry HQ deal amid procurement questions",
+      "url": "https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/",
+      "risk": 70.0
     }
   ],
   "counts": {
-    "new_companies": 2,
-    "new_people": 0,
-    "psc_added": 1,
+    "new_companies": 5,
+    "new_people": 1,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 1
   },
-  "generated": "2026-11-16 03:18:39"
+  "generated": "2026-11-16 17:56:43"
 }

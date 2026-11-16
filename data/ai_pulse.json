@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-16 03:18:40",
+  "generated": "2026-11-16 17:56:45",
   "models": [
     {
       "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
       "task": "text-generation",
-      "likes": 7552,
-      "downloads": 27037
+      "likes": 8102,
+      "downloads": 29567
     },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 1195,
-      "downloads": 571067
+      "likes": 1278,
+      "downloads": 609130
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 20132,
-      "downloads": 6547772
+      "likes": 20219,
+      "downloads": 6763402
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 12071,
-      "downloads": 2754355
+      "likes": 12177,
+      "downloads": 2789021
     },
     {
       "id": "Comfy-Org/MiniMax-H3-Image",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 414,
-      "downloads": 1973388
+      "likes": 458,
+      "downloads": 2294065
     },
     {
       "id": "Zyphra/ZONOS3-Mini",
       "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
       "task": "text-to-speech",
-      "likes": 399,
-      "downloads": 39862
+      "likes": 439,
+      "downloads": 69946
     },
     {
-      "id": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-      "task": "image-text-to-text",
-      "likes": 3170,
-      "downloads": 1708637
+      "id": "higurashi-ai/Haru-4B",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "task": "audio-to-audio",
+      "likes": 390,
+      "downloads": 3372
     },
     {
       "id": "thinkingmachines/Inkling-2-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
       "task": "image-text-to-text",
-      "likes": 345,
-      "downloads": 7329
+      "likes": 383,
+      "downloads": 16918
     }
   ],
   "papers": [
     {
-      "title": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
-      "url": "https://huggingface.co/papers/2611.14504",
+      "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
+      "url": "https://huggingface.co/papers/2611.16312",
       "upvotes": 0
     },
     {
-      "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
-      "url": "https://huggingface.co/papers/2611.16439",
+      "title": "Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing",
+      "url": "https://huggingface.co/papers/2611.17169",
       "upvotes": 1
     },
     {
-      "title": "Loopback Transformer: Towards a Unified View of Residual Looped Transformers",
-      "url": "https://huggingface.co/papers/2611.07226",
-      "upvotes": 2
+      "title": "MemInStream: Memorizing or Merely Recognizing? Rethinking Streaming Video Memory Evaluation",
+      "url": "https://huggingface.co/papers/2611.15640",
+      "upvotes": 5
     },
     {
-      "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
-      "url": "https://huggingface.co/papers/2611.10439",
-      "upvotes": 14
+      "title": "OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
+      "url": "https://huggingface.co/papers/2610.41354",
+      "upvotes": 12
     },
     {
-      "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
-      "url": "https://huggingface.co/papers/2611.16728",
-      "upvotes": 1
+      "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
+      "url": "https://huggingface.co/papers/2611.17440",
+      "upvotes": 5
     },
     {
-      "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
-      "url": "https://huggingface.co/papers/2611.17336",
-      "upvotes": 6
+      "title": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
+      "url": "https://huggingface.co/papers/2611.17194",
+      "upvotes": 3
     }
   ]
 }
