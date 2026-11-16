@@ -1,324 +1,87 @@
 {
-  "edition": "20261115-11912",
-  "preview": false,
-  "built_at": "2026-11-15 14:46:59",
-  "date": "Sunday 15 November 2026",
-  "subject": "AURA alert · Sun 15 Nov · Emefiele acquired properties through proxies, EFCC tells court",
-  "preheader": "Also: Afreximbank acquires stake in D’banj’s CREAM platform · 20 stories, 3 risk alerts",
-  "since": "Wed 11 Nov, 16:16 Lagos",
-  "through_id": 11912,
+  "edition": "20261116-11933-preview",
+  "preview": true,
+  "built_at": "2026-11-16 03:18:46",
+  "date": "Monday 16 November 2026",
+  "subject": "AURA alert · Mon 16 Nov · 1 story, 1 risk alert",
+  "preheader": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November · 1 story, 1 risk alert",
+  "since": "Sun 15 Nov, 15:46 Lagos",
+  "through_id": 11933,
   "stats": {
-    "reports": 20,
-    "stories": 20,
-    "outlets": 5,
-    "risk_alerts": 3,
-    "public_money": 6,
-    "appointments": 2,
-    "ownership": 0
+    "reports": 1,
+    "stories": 1,
+    "outlets": 1,
+    "risk_alerts": 1,
+    "public_money": 0,
+    "appointments": 0,
+    "ownership": 1
   },
   "nothing_in": [
-    "ownership and control reports"
+    "public-money decisions",
+    "appointments"
   ],
   "overview": [
     {
-      "text": "Patricia Lar has been appointed the first female vice-chancellor of UNIJOS.",
-      "card": 4,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "President Bola Tinubu broke ground for the $3.5 billion Bakassi Deep Seaport.",
-      "card": 5,
-      "outlet": "The Guardian"
-    },
-    {
-      "text": "The UK has bought £1 billion of Nigerian oil, while the Dangote refinery expands.",
-      "card": 6,
-      "outlet": "Punch"
-    },
-    {
-      "text": "Bayelsa State Government announced a partnership with U.S.-based Fulcrum LNG Inc. for a gas processing plant, with planned investment of about US $100 million.",
-      "card": 12,
-      "outlet": "Punch"
+      "text": "KDT Ibotta Holdings, LLC disclosed a 10% ownership stake in Ibotta Inc on 9 November, as reported in a Form 4 filing.",
+      "card": 1,
+      "outlet": "Investing.com Nigeria"
     }
   ],
-  "insights": [
-    {
-      "label": "Reports differ",
-      "text": "Punch reports a planned investment of about US $100 million for the Bayelsa gas plant with Fulcrum LNG Inc. Premium Times says the investment amount and specific contractor have not been disclosed. The reports differ on what is known.",
-      "cards": [
-        12,
-        15
-      ],
-      "outlets": [
-        "Punch",
-        "Premium Times"
-      ]
-    },
-    {
-      "label": "What to watch",
-      "text": "Will Bayelsa or its U.S. partner publish the investment value and contractor details for the gas plant?",
-      "cards": [
-        12,
-        15
-      ],
-      "outlets": [
-        "Punch",
-        "Premium Times"
-      ]
-    }
-  ],
+  "insights": [],
   "cards": [
     {
       "n": 1,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [
-        "Alert"
-      ],
-      "alert": true,
-      "risk": "AURA risk rating: Critical · 85/100",
-      "headline": "Emefiele acquired properties through proxies, EFCC tells court",
-      "byline": "Punch · Fri 13 Nov, 02:09 Lagos",
-      "outlet": "Punch",
-      "what_happened": "The Enforcement and Financial Crimes Commission, in a Nigerian court hearing, alleged that former Central Bank governor Chukwuma Emefiele acquired properties through proxies. The claim is part of an ongoing probe into potential misuse of office, raising questions about transparency and legality.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: It highlights the possibility that high‑level public officials use intermediaries to conceal ownership of real‑estate assets, undermining transparency and the rule of law."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "EFCC"
-      ],
-      "source": {
-        "outlet": "Punch",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSjZLenBCSk96dGtyeU1VSjNwTzJsY1R1aFhJUVV0WUlsQkpONWM5dVY4STZsdVpnY3pVaWdtX183VU5JZC1FZm9CTHJYQnNCX3NxbVJlODhsbmQydktnYVFsYlhNbUU2bUxkQ0V0UUlnNTY4RmhXbGxpSmV2R0t1TzhNQ1pHaUo5T2c?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 2,
       "theme": "Ownership & capital",
-      "event_type": "Acquisition",
+      "event_type": "PSC Change",
       "flags": [
         "Alert"
       ],
       "alert": true,
       "risk": "AURA risk rating: High · 80/100",
-      "headline": "Afreximbank acquires stake in D’banj’s CREAM platform",
-      "byline": "Premium Times · Fri 13 Nov, 19:46 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "The African Export‑Import Bank, through its vehicle CANEX Creations Incorporated, has acquired an equity stake in CREAM, the AI‑powered creative platform founded by Nigerian singer D’banj. The deal, formalised on 6 November 2026, is part of the bank’s $2 billion commitment to Africa’s creative sector and aims to boost commercial value and intellectual‑property retention for creatives.",
+      "headline": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November",
+      "byline": "Investing.com Nigeria · Sun 15 Nov, 04:09 Lagos",
+      "outlet": "Investing.com Nigeria",
+      "what_happened": "KDT Ibotta Holdings, LLC disclosed a 10% ownership stake in Ibotta Inc on 9 November, as reported in a Form 4 filing. The disclosure signals a significant level of control that surpasses Nigeria’s 5% threshold for Persons with Significant Control.",
       "key_facts": [
-        "Afreximbank acquired an equity stake in CREAM via its vehicle CANEX Creations Incorporated.",
-        "Signing ceremony held on 6 November 2026 at the Wole Soyinka Centre in Lagos.",
-        "CREAM was launched in 2016 alongside MTN Nigeria and the Bank of Industry.",
-        "CANEX WKND 2026 attracted 17,000 participants and targeted at least $1 billion in capital commitments."
-      ],
-      "timeline": [],
-      "headline_only": false,
-      "analysis": [
-        "Why it matters: This investment injects significant capital into Nigeria’s creative industry, enhancing financial infrastructure and support for intellectual‑property retention among creators."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Afreximbank",
-        "CANEX Creations Incorporated",
-        "CREAM",
-        "D’Kings Men Media Ltd"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://www.premiumtimesng.com/entertainment/naija-fashion/924992-afreximbank-acquires-stake-in-dbanjs-cream-platform.html"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 3,
-      "theme": "Regulation & enforcement",
-      "event_type": "Corruption",
-      "flags": [
-        "Alert"
-      ],
-      "alert": true,
-      "risk": "AURA risk rating: High · 70/100",
-      "headline": "EFCC secures conviction of mining firm, two others in Kwara",
-      "byline": "Punch · Fri 13 Nov, 18:10 Lagos",
-      "outlet": "Punch",
-      "what_happened": "EFCC secured convictions of a mining firm and two other entities in Kwara following a regulatory probe. The action underscores the Commission's commitment to enforcing mining laws within the state.",
-      "key_facts": [
-        "EFCC secured convictions of a mining firm and two other entities"
+        "KDT Ibotta Holdings, LLC holds 10% of Ibotta Inc"
       ],
       "timeline": [],
       "headline_only": true,
       "analysis": [
-        "Why it matters: The convictions demonstrate EFCC's enforcement of mining regulations, reinforcing compliance in the sector."
+        "Why it matters: A 10% stake by a foreign entity constitutes a material control interest, underscoring the importance of transparency for corporate governance and regulatory oversight."
       ],
-      "ownership_caveat": "",
+      "ownership_caveat": "Ownership details as reported by Investing.com Nigeria; not verified with CAC records.",
       "named": [
-        "Economic and Financial Crimes Commission"
+        "Ibotta Inc",
+        "KDT Ibotta Holdings, LLC"
       ],
       "source": {
-        "outlet": "Punch",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOWsyRXQ4aEtodGRDVFZNbXhQWWh4cUtRWHU2YmFKLXEwdFhweDhiWlc1bjlMT2taUWxzOF9mRlY1ZVNabG4xY1B3OTBjT0NRX1pmb09mNjRlZXdUX0EzdEozYUxXMXE3c1BDc0VhZ0NvUGpDc2hFUmp2Ny1Ycl9Xa01ad3ItaTJfTDdpMnhOMzlKRS11SGFVX2k3MFhwTEFmRFVBN3g2VnpJTWxGQksyWndGcUlTblNkVnE0Mmdn?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "People",
-      "event_type": "Appointment",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "UNIJOS appoints first female vice-chancellor, Patricia Lar",
-      "byline": "Premium Times · Thu 12 Nov, 16:23 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "Patricia Lar has been appointed as the first female vice‑chancellor of UNIJOS, marking a milestone in the university’s leadership.",
-      "key_facts": [
-        "Patricia Lar appointed as first female vice‑chancellor of UNIJOS"
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: This appointment signals progress in gender representation at the highest levels of Nigerian higher education and may influence the university’s strategic direction."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "UNIJOS",
-        "Patricia Lar"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNUlKNjJISVJqZjBCWnkxTmtsNDdLU3FHcHJjbUE5SzhBSHhvNTY1dVRaSTdOZFlraGtsTG96RnM1a0l4QjBGQjZ3T3M3YzNBMDMwc1BRUzZkODZkZVU2LVRyWjYwMnFsRjVKQWF2WloxZlJhRHFhOTNtR01OelpEczM4ZUVHVUhlZTBTVGFTZDhWd29nNWI2ZDNkV3hreUtoVnBSUi12dzhrMnZ5azU3ZzAzbkpqZXE3aE9ZUFh6amE?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 40/100",
-      "headline": "Tinubu breaks ground for $3.5bn Bakassi Deep Seaport",
-      "byline": "The Guardian · Fri 13 Nov, 18:04 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "President Bola Tinubu inaugurated the construction of the Bakassi Deep Seaport, a $3.5 billion maritime project intended to bolster trade and create jobs in Nigeria’s south‑coast region. The ground‑breaking marks a significant step in the country’s infrastructure development agenda.",
-      "key_facts": [
-        "Tinubu broke ground for the seaport in Nigeria"
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: It demonstrates the federal government’s commitment to large‑scale maritime infrastructure, a cornerstone for expanding national trade capacity and employment."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Bakassi Deep Seaport",
-        "Government of Nigeria"
-      ],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQanJWeEJYVUxVMnh0alZYVVBPN0hDa2ZDYjRrYmlPSnhXZ085OHMwb1NTVGtZY29ManAxOXlnU0ZGWHE1dzNBWk5CX3BzcVkya3QwbHd2dm5GQTZneEVWQlpzQ3B4RncyVlEtaXBTYUc1aWJjb1VzbE9sTFg3Uk1uWkVVZw?oc=5"
+        "outlet": "Investing.com Nigeria",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     }
   ],
-  "also": [
+  "also": [],
+  "also_more": 0,
+  "psc": [
     {
-      "n": 6,
-      "theme": "Other",
-      "text": "The United Kingdom has purchased £1 billion worth of Nigerian oil as the Dangote refinery expands.",
-      "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56WHBWOThDd0VGQUZrQjkyMkhDdlUxNFFwejZRWFI3NUdwZkZBMGtqZ0RaUnR2eFR1SHNJZi1nYWVWY0d5RG1GQ1lTYy03VGZYTGtrQmtHX2x4NnhZT1A5LXpJMW5jZVBzRGlMQk5RM0k1Z2xMeEpuZGhXS0hCdw?oc=5"
-    },
-    {
-      "n": 7,
-      "theme": "Other",
-      "text": "FCCPC seized Peachville Platinum Estate Limited for allegedly failing to deliver a N140 million property in Abuja after a consumer complaint.",
-      "outlet": "Nairametrics",
-      "url": "https://nairametrics.com/2026/11/14/fccpc-seals-real-estate-firm-over-alleged-failure-to-deliver-n140-million-home/"
-    },
-    {
-      "n": 8,
-      "theme": "Public money",
-      "text": "ICPC has recovered N5.3 billion from local government accounts and will publish the council books online, enhancing financial transparency.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRWFYdmNCU0lRR2lYdVlVZlpZdWo4UGFCNU1uSjdMczQwcmU1X0dFU2VSQnF4akc5TFJxSElVeGYtVTlkdVVvV0JkWEJnejhEUDBDV3dPTzhvbnhxcHdSMkJWZjVreWx3SHdwdUVueUc2OTExNWJjZ0FBd0xuRFliV3lfNm8xWVJ4am51c0s2aUxObFhWbHJN?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "Regulation & enforcement",
-      "text": "Lagos State announced plans to extend procurement reforms beyond the tenure of former Governor Sanwo-Olu, signalling a new commitment to transparency in public spending.",
-      "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uWEtEemFna18wcTF6UUNvdWNtWkpJZ1kxenBpSURWaVgwYW5abVJfSkFkaHRLbjJ1VURQckRBTEo2UkJqVEl0cWFYSlk1clBuZTBfR0RFWWlDTHppZndBTy0xcVpWTUR4bzViOHIycWxGNTV0ZmpUOQ?oc=5"
-    },
-    {
-      "n": 10,
-      "theme": "Regulation & enforcement",
-      "text": "The Federal Government sealed an Abuja estate after alleged violations of residents’ rights.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxORk95VWR0N2dBWkd4M1FmOWtJTjJHWDdsT0FVV2lFemV3TGlQOVRTU2s1V21LYmNsOGh6dTh2OTh3T3UxN21CLWduV3BYeUMwMElyRWs1ZGVLWEF3UTM3dG41TGg5SHhoM2ZETFg5a1YtNUdlbE1IVTQ5Vl9aYkhuaGFUNXo?oc=5"
-    },
-    {
-      "n": 11,
-      "theme": "People",
-      "text": "MTN Nigeria has appointed Prof. Fabian Ajogwu, SAN, as one of five new board directors.",
-      "outlet": "TheNigeriaLawyer",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeldGYjVHQ2hJdTQyMDhJd2hJZ013MjcyYUUyTEVhUUR0YkdUYU0tM1I3UkNyalh3U1hzeVNPRmQtNTNGeGF3SGx0VzRXMzZEZFRBYy01S1hqbU96UGhNcFduZGxnZ2gwNUVOaGg4RDlIeUVZUHVDekMyU3E3cVgxeHh2SGczUFFmLXRNZVdmVmNRbzlONThCV1RWZktPeC1LcS1DdjFITXNBTTNHNmtfSlBaOG41N293d2hDV0Fwc3NXXy0tRGQzUkM1eExqVjF1cXc?oc=5"
-    },
-    {
-      "n": 12,
-      "theme": "Public money",
-      "text": "Bayelsa State Government announced a partnership with U.S.-based Fulcrum LNG Inc. to construct a multi‑million‑dollar gas gathering and processing plant that will capture flared gas and supply power to the state’s Independent Power Plant.",
-      "outlet": "Punch",
-      "url": "https://punchng.com/us-firm-to-build-100m-bayelsa-gas-processing-plant/"
-    },
-    {
-      "n": 13,
-      "theme": "Other",
-      "text": "The Nigerian National Petroleum Company Limited (NNPC) showcased its methane reduction progress at COP31, the UN climate conference.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRUtWTmpCZ1NDcHhEcU0ydHA1NHIxaUdjS3hKT3BrWXJoZ1A2OVJsQnc5THFhN0JFNTQzSTBWekhsVDhEeHItUC1jTmkzX0ZJWFk1dldCV1pYd245Ulg0NEhqaEhUUWNiTDhaWHNhUnMxQWtMcTFETlVqMGQwckQ0VDM5TlY?oc=5"
-    },
-    {
-      "n": 14,
-      "theme": "Regulation & enforcement",
-      "text": "A taskforce sealed a pharmaceutical company in Kano, according to a Guardian Nigeria report.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wbEhmOHcxZndLWGwzaVZOSFZmblgyYS1GV3I3NGY5MERqMUVibXdSdXM1bXNnY0s1dkM2c2tzU3lxcGRuaFhMZG1yZHktYlF4RlFjbWhJc0JiZFFKY1Z6NVBiNzR3by1FUUNXTGIzS0lER2dnMVlNd1ZJWW0?oc=5"
-    },
-    {
-      "n": 15,
-      "theme": "Public money",
-      "text": "Bayelsa State government announced the initiation of a gas plant project with a United States partner, though the investment amount and specific contractor have not been disclosed.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNX21XcXVsc3otOEo0UVktQ0R2bHM1UkxXNDlnLVBSMEJOX0k4NTN0T1ZCYUlHRWZiOExYRmVqUUtVVnV0MzlyOWhUMF8wSGx5RUhSQ0haakc3bVBPaVpvTlc5WDJvZ0lKQUJFVjJWTi02MG51cmR0aUxFcVIyc2toSkYxcWZaU0FuU1pST2s0VVp5eXFOWURkd2l1Y1YtQkVnVnJUM3RqRnNGZFRkU0RaOWwya2VfYmVzUEVrZk94cm9yeG5pUkEyb2RPN0VwcEx6TGFnUkFUaGplOTJTU3c4dw?oc=5"
+      "text": "KDT Ibotta Holdings, LLC reported as holding 10% of Ibotta Inc",
+      "outlet": "Investing.com Nigeria",
+      "date": "Mon 16 Nov",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
+      "confidence": "Headline only"
     }
   ],
-  "also_more": 5,
-  "psc": [],
   "psc_more": 0,
-  "psc_keys": [],
+  "psc_keys": [
+    "kdt ibotta holdings llc|ibotta|https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5"
+  ],
   "terms": [
     {
-      "term": "EFCC",
-      "meaning": "Economic and Financial Crimes Commission"
-    },
-    {
-      "term": "ICPC",
-      "meaning": "Independent Corrupt Practices and Other Related Offences Commission"
-    },
-    {
-      "term": "NNPC",
-      "meaning": "Nigerian National Petroleum Company"
+      "term": "PSC",
+      "meaning": "person with significant control: owns or controls 5% or more of a Nigerian company (CAMA 2020)"
     },
     {
       "term": "AURA risk rating",
@@ -327,13 +90,12 @@
   ],
   "engines": {
     "extraction": [
-      "claude",
       "nvidia"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
-    "overview_dropped": 1,
+    "overview_dropped": 0,
     "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
