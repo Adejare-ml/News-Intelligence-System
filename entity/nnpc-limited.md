@@ -6,12 +6,9 @@ Mentioned in 25 reports tracked by AURA.
 
 - Mentions tracked: 25
 - Holdings: 0
-- Recent stories: 1
 - Last seen: 11 Nov 2026
 
-## In the news
-
-- [NNPC, Oando join global push to end gas flaring as Nigeria’s emissions rise](https://news.google.com/rss/articles/CBMi3wFBVV95cUxOV01GTk1mMEpSMng3WlVTeDVfYTdrc1BUSVJmTjNaTjU1ajBibGtJaERFajFtM1JTM0JveUpsTFFKYk1kazM5aWY0WTZKYWhka1JDaG1MRU5NTWRoSTdXb1VxQllheHhhQmEyc3RhSU1POU9nWVdIS211UFAxS3lKV0p6Um4yRXFzUVhjTEpVLWM2VzV0Y2c2VEo4QnNfQzVJalVRTGFzR3FOSWFEa0FTaUFwNzFsQzFEUk56T3NVbnBfMkRzdEhnRTJXSGRGbExMckxrQ05HbmVRYTFFQklB?oc=5) · Premium Times · 10 Nov 2026
+AURA has no recent reporting on NNPC Limited yet.
 
 ---
 

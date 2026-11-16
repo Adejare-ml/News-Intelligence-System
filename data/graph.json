@@ -121,6 +121,54 @@
       "risk": "Critical"
     },
     {
+      "id": "1a2ac1ef306d",
+      "label": "Nigeria Civil Aviation Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "beb91054dc85",
+      "label": "Federal Capital Territory Administration",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "de44b55175fc",
+      "label": "Zamfara State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b1dce9fc27e0",
+      "label": "National Pension Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "daaeb0893724",
+      "label": "UNIJOS",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ff87cce3f946",
+      "label": "Federal Ministry of Livestock Development",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "94b1c0c5d7ba",
+      "label": "University of Abuja",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6e50f6eccfd9",
+      "label": "NGX RegCo",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "cab1be53cb3b",
       "label": "Economic and Financial Crimes Commission (EFCC)",
       "type": "agency",
@@ -187,51 +235,15 @@
       "risk": "Low"
     },
     {
-      "id": "42019e92a5cf",
-      "label": "China Maritime Safety Administration",
-      "type": "agency",
+      "id": "56b8db8425af",
+      "label": "Gertrude Olutekunbi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "7320a94415b1",
-      "label": "National Social Insurance Trust Fund",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b834efb97677",
-      "label": "NMDPRA",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "2d899f8d1635",
-      "label": "ICPC",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "daaeb0893724",
-      "label": "UNIJOS",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a7a52fda9c6c",
-      "label": "Rural Electrification Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "ae510682c88a",
-      "label": "British International Investment",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
+      "id": "cd473a0eb606",
+      "label": "Lasaco Assurance Plc",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -280,6 +292,12 @@
       "id": "b18554f8a377",
       "label": "Geoffrey Manley",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "ae510682c88a",
+      "label": "British International Investment",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -433,12 +451,6 @@
       "risk": "Low"
     },
     {
-      "id": "178d7fb3131f",
-      "label": "Imoke",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "640e7a002af9",
       "label": "KDT Ibotta Holdings, LLC",
       "type": "psc",
@@ -485,6 +497,12 @@
       "label": "Quickmart",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "f69cc3d8f5a3",
+      "label": "Osas & Oseji Estate Surveyors & Valuers",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "0b91738cec69",
@@ -584,6 +602,12 @@
     }
   ],
   "edges": [
+    {
+      "id": "cb4195549bad",
+      "from": "56b8db8425af",
+      "to": "cd473a0eb606",
+      "label": "Appointed as Company Secretary and Investor Relations Officer"
+    },
     {
       "id": "1d3b2219568c",
       "from": "857958a9f5f4",
@@ -751,6 +775,12 @@
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
       "label": "PSC: 6.5%"
+    },
+    {
+      "id": "ef05b68e4745",
+      "from": "f69cc3d8f5a3",
+      "to": "ff87cce3f946",
+      "label": "Contract Awardee"
     },
     {
       "id": "f6395673b5e1",

@@ -13,6 +13,30 @@
       ]
     },
     {
+      "date": "2026-11-16",
+      "title": "FG dismisses alleged irregularities in livestock ministry HQ deal amid procurement questions",
+      "url": "https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/",
+      "source": "Nairametrics",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "Federal Ministry of Livestock Development",
+        "Osas & Oseji Estate Surveyors & Valuers"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "title": "NGX Group acquires 10% strategic stake in Nairobi Securities Exchange",
+      "url": "https://nairametrics.com/2026/11/16/ngx-group-acquires-10-strategic-stake-in-nairobi-securities-exchange-2/",
+      "source": "Nairametrics",
+      "risk_score": 60,
+      "risk_level": "High",
+      "entities": [
+        "NGX Group Plc",
+        "Nairobi Securities Exchange"
+      ]
+    },
+    {
       "date": "2026-11-15",
       "title": "FCCPC seals real estate firm over alleged failure to deliver N140 million home",
       "url": "https://nairametrics.com/2026/11/14/fccpc-seals-real-estate-firm-over-alleged-failure-to-deliver-n140-million-home/",
@@ -1279,5 +1303,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-16 03:18:46"
+  "generated": "2026-11-16 17:56:52"
 }

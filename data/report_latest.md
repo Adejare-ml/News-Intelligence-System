@@ -1,27 +1,33 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-16 03:16:06 (UTC)
-**Run Window:** 2026-11-16, all runs to 03:16 (run 1 of the day)
+**Generated on:** 2026-11-16 17:54:21 (UTC)
+**Run Window:** 2026-11-16, all runs to 17:54 (run 2 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 1
-- **High Risk Signals:** 1
-- **Appointments Logged:** 0
-- **Procurement Awards:** 0
+- **Total Articles Processed:** 8
+- **High Risk Signals:** 3
+- **Appointments Logged:** 1
+- **Procurement Awards:** 2
 
 ---
 
-### Key Developments  
-Nothing to report here today.
+---  
+**Report Date**: 2026‑11‑16 (coverage of all articles published up to 17:54).  
 
-### High Risk Alerts  
-- A **10 % stake** by a foreign entity (KDT Ibotta Holdings, LLC) in a domestic company (Ibotta Inc) represents elevated risk for undisclosed influence or potential corruption. ([Investing.com Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5))  
+## Key Developments  
+- The **Nigeria Civil Aviation Authority** upgraded Anambra Airport’s fire‑fighting facility to Category 7 standards. [Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWmptT3VvVXZHYjJPMlNITjEwTVY3dU1RN0E2MmY2UEVwUWZpc0Vzb0RHeHZLZ3BrdGtaQjVkS3dtaFNEMFN1UUkwLUYzbC1FcDNtRU40ejhHazlxbHkwbk9wV0tUSkU0amJqUHE5US1lYkZVcUctcjEyNURVNzVFRngwYjZIUVc1Z2xOTzRxVHY4R1I3VWltampFRkNaTFN4dXZCaDNjUGxnbmZTTVNrbjdpbVB1c3pEa1ZueVVNNXJhSlVIbGJLRGFHN0ZMQ3ZyOFBMd1B3). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWmptT3VvVXZHYjJPMlNITjEwTVY3dU1RN0E2MmY2UEVwUWZpc0Vzb0RHeHZLZ3BrdGtaQjVkS3dtaFNEMFN1UUkwLUYzbC1FcDNtRU40ejhHazlxbHkwbk9wV0tUSkU0amJqUHE5US1lYkZVcUctcjEyNURVNzVFRngwYjZIUVc1Z2xOTzRxVHY4R1I3VWltampFRkNaTFN4dXZCaDNjUGxnbmZTTVNrbjdpbVB1c3pEa1ZueVVNNXJhSlVIbGJMRGFHN0ZMQ3ZyOFBMd1B3?oc=5))  
+- **UNIJOS** becomes the first Nigerian university led solely by a female principal body, marking a milestone in gender representation. [Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbnNKUlpNdGltV0hqVzdERG1oQUhRQlE3N1dQZnV1dnU4MVUxYjkyUC0wdTFFY09Hb1FQOWlQUjUwa2ZDSjFwU0o2UlVtTDJlYVY5bXAwMERuZUFHVTJfOXI1ZkQ4WnNVOFBkclpEeTdtMmJVdFV4Y3JkeWNQT0JSTFdCLW85NHlEX0RXTXV2c1lEeVZXdTNBRTFKX3N0eVhiTzNPN0YyRGpFRENzWHhzSWJ1V3ZOZDZPYTJ1XzBuZWl6ZTE3WlpGc1kxSTVodUMtOU1TcUdQWVlKaFE). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbnNKUlpNdGltV0hqVzdERG1oQUhRQlE3N1dQZnV1dnU4MVUxYjkyUC0wdTFFY09Hb1FQOWlQUjUwa2ZDSjFwU0o2UlVtTDJlYVY5bXAwMERuZUFHVTJfOXI1ZkQ4WnNVOFBkclpEeTdtMmJVdFV4Y3JkeWNQT0JSTFdCLW85NHlEX0RXTXV2c1lEeVZXdTNBRTFKX3N0eVhiTzNPN0YyRGpFRENzWHhzSWJ1V3ZOZDZPYTJ1XzBuZWl6ZTE3WlpGc1kxSTVodUMtOU1TcUdQWVlLaFE?oc=5))  
+- **Zamfara State** joins seven others in clearing inherited pension backlogs, a key outcome of federal fiscal reforms. [Premium Times](https://www.premiumtimesng.com/promoted/925619-zamfara-among-eight-states-that-fully-cleared-inherited-pension-backlogs-pencom-report.html). ([Premium Times](https://www.premiumtimesng.com/promoted/925619-zamfara-among-eight-states-that-fully-cleared-inherited-pension-backlogs-pencom-report.html))  
 
-### Beneficial Ownership & PSC Disclosures  
-- **Holder:** KDT Ibotta Holdings, LLC. ([Investing.com Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5))  
+## High Risk Alerts  
+- The purchase of the Livestock Ministry’s headquarters for N8.94 billion raised allegations of procurement irregularities and remains a major governance concern. [Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/). ([Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/))  
+- NGX Group’s 10 % stake in Nairobi Securities Exchange represents a high‑risk foreign investment that may influence regional market dynamics. [Nairametrics](https://nairametrics.com/2026/11/16/ngx-group-acquires-10-strategic-stake-in-nairobi-securities-exchange-2/). ([Nairametrics](https://nairametrics.com/2026/11/16/ngx-group-acquires-10-strategic-stake-in-nairobi-securities-exchange-2/))  
 
-### Procurement & Board Changes  
-Nothing to report here today.
+## Beneficial Ownership & PSC Disclosures  
+No PSC disclosures were reported in the coverage period.  
 
+## Procurement & Board Changes  
+- The Federal Ministry of Livestock Development’s N8.94 billion acquisition of its Abuja headquarters underwent procurement scrutiny. [Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/). ([Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/))  
+- The Federal Capital Territory Administration approved a land cut for the University of Abuja to facilitate campus expansion. [Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTFBiQXlHcHI5X25rOWUyNEl6eUlrQXJWUjhPNXpUUEdNdnFTaVVSVWtfWUE0aTF0b1BlZmR2MXZZLW8yc0RyNTNxVnJHd2JxRmM1WFd4YXYzcTlTY2VlUFJxOTQ0MXVIUDIyOHM5dTM5YVpGLU81bWJnOEpZbGhZUQ?oc=5). ([Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTFBiQXlHcHI5X25rOWUyNEl6eUlrQXJWUjhPNXpUUEdNdnFTaVVSVWtfWUE0aTF0b1BlZmR2MXZZLW8yc0RyNTNxVnJHd2JxRmM1WFd4YXYzcTlTY2VlUFJxOTQ0MXVIUDIyOHM5dTM5YVpGLU81bWJnOEpZbGhZUQ?oc=5))  
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*

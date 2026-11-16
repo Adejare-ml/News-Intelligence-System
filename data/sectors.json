@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 955,
-      "mentions": 1567,
+      "companies": 956,
+      "mentions": 1570,
       "risk": {
-        "Low": 835,
+        "Low": 836,
         "Critical": 56,
         "Medium": 35,
         "High": 29
@@ -72,22 +72,22 @@
       }
     },
     {
+      "industry": "Financial Services",
+      "companies": 8,
+      "mentions": 15,
+      "risk": {
+        "Medium": 2,
+        "Low": 2,
+        "High": 4
+      }
+    },
+    {
       "industry": "Agriculture",
       "companies": 11,
       "mentions": 14,
       "risk": {
         "Low": 10,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Financial Services",
-      "companies": 7,
-      "mentions": 14,
-      "risk": {
-        "Medium": 2,
-        "Low": 2,
-        "High": 3
       }
     },
     {
@@ -988,6 +988,14 @@
       }
     },
     {
+      "industry": "Surveying",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "High": 1
+      }
+    },
+    {
       "industry": "Technology/Data Security",
       "companies": 1,
       "mentions": 1,
@@ -1020,5 +1028,5 @@
       }
     }
   ],
-  "generated": "2026-11-16 03:18:46"
+  "generated": "2026-11-16 17:56:52"
 }
