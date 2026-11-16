@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 92,
-  "previous_articles": 95,
+  "recent_articles": 94,
+  "previous_articles": 84,
   "rising": [
     {
       "term": "kyari",
@@ -28,6 +28,12 @@
       "change": 4
     },
     {
+      "term": "two",
+      "recent": 5,
+      "previous": 1,
+      "change": 4
+    },
+    {
       "term": "efcc recovers",
       "recent": 4,
       "previous": 0,
@@ -46,19 +52,13 @@
       "change": 4
     },
     {
+      "term": "firm",
+      "recent": 5,
+      "previous": 2,
+      "change": 3
+    },
+    {
       "term": "gas",
-      "recent": 5,
-      "previous": 2,
-      "change": 3
-    },
-    {
-      "term": "missing",
-      "recent": 5,
-      "previous": 2,
-      "change": 3
-    },
-    {
-      "term": "two",
       "recent": 5,
       "previous": 2,
       "change": 3
@@ -68,23 +68,11 @@
     {
       "term": "power",
       "recent": 1,
-      "previous": 8,
-      "change": -7
+      "previous": 7,
+      "change": -6
     },
     {
       "term": "illegal",
-      "recent": 1,
-      "previous": 6,
-      "change": -5
-    },
-    {
-      "term": "projects",
-      "recent": 0,
-      "previous": 5,
-      "change": -5
-    },
-    {
-      "term": "reps",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -108,46 +96,58 @@
       "change": -4
     },
     {
+      "term": "projects",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
       "term": "threatens",
       "recent": 0,
       "previous": 4,
       "change": -4
     },
     {
-      "term": "seeks",
+      "term": "cbn",
+      "recent": 2,
+      "previous": 5,
+      "change": -3
+    },
+    {
+      "term": "reps",
       "recent": 1,
       "previous": 4,
       "change": -3
     },
     {
-      "term": "bpd",
-      "recent": 0,
-      "previous": 3,
+      "term": "seeks",
+      "recent": 1,
+      "previous": 4,
       "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 59,
-      "previous": 66
+      "recent": 62,
+      "previous": 55
     },
     {
       "category": "Company",
-      "recent": 22,
-      "previous": 20
+      "recent": 21,
+      "previous": 21
     },
     {
       "category": "Legal",
-      "recent": 10,
+      "recent": 9,
       "previous": 8
     },
     {
       "category": "Other",
-      "recent": 1,
-      "previous": 1
+      "recent": 2,
+      "previous": 0
     }
   ],
   "social": [],
-  "generated": "2026-11-16 03:18:46"
+  "generated": "2026-11-16 17:56:49"
 }
