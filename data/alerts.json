@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-11-16",
+      "title": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November - Investing.com Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
+      "source": "Investing.com Nigeria",
+      "risk_score": 80,
+      "risk_level": "High",
+      "entities": [
+        "Ibotta Inc",
+        "KDT Ibotta Holdings, LLC"
+      ]
+    },
+    {
       "date": "2026-11-15",
       "title": "FCCPC seals real estate firm over alleged failure to deliver N140 million home",
       "url": "https://nairametrics.com/2026/11/14/fccpc-seals-real-estate-firm-over-alleged-failure-to-deliver-n140-million-home/",
@@ -1267,5 +1279,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-15 14:46:59"
+  "generated": "2026-11-16 03:18:46"
 }

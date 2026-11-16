@@ -439,6 +439,18 @@
       "risk": "Low"
     },
     {
+      "id": "640e7a002af9",
+      "label": "KDT Ibotta Holdings, LLC",
+      "type": "psc",
+      "risk": "High"
+    },
+    {
+      "id": "945d12c56639",
+      "label": "Ibotta Inc",
+      "type": "company",
+      "risk": "Medium"
+    },
+    {
       "id": "7d15f62e4dec",
       "label": "Trademarks Global Concepts Limited",
       "type": "psc",
@@ -715,6 +727,12 @@
       "from": "4c174f83f166",
       "to": "0bcaaf453cd3",
       "label": "Appointed as Acting Zonal Director, Lagos Zonal Directorate 2"
+    },
+    {
+      "id": "c4709d0863fb",
+      "from": "640e7a002af9",
+      "to": "945d12c56639",
+      "label": "PSC: 10%"
     },
     {
       "id": "faeedb2e3a5c",
