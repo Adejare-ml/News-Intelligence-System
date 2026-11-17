@@ -1,49 +1,17 @@
 {
-  "new_companies": [
-    "Africa Finance Corporation (AFC)",
-    "African Export-Import Bank (Afreximbank)",
-    "Chapel Hill Denham",
-    "Heirs Energies",
-    "Heirs Holdings",
-    "Livestock Feeds Plc",
-    "Maurel & Prom",
-    "Seplat Energy Plc",
-    "Sunbeth Treenuts and Sesame Limited",
-    "UAC of Nigeria Plc",
-    "Zichis Agro-Allied Industries Plc"
-  ],
-  "new_people": [
-    "Adebolanle Badejo",
-    "Chiamaka N. Uwaegbute",
-    "Farrukh Siddiqui",
-    "Franklin Nnaemeka Ngwu",
-    "Mary Mulili",
-    "NSCDC Commandant-General",
-    "Sam Okuwlehi",
-    "Seyi Ebenezer",
-    "Temitope Omodele",
-    "Udoma Udo Udoma"
-  ],
-  "psc_added": [
-    {
-      "person": "Sunbeth Treenuts and Sesame Limited",
-      "company": "Livestock Feeds Plc"
-    },
-    {
-      "person": "Tony Elumelu",
-      "company": "Seplat Energy Plc"
-    }
-  ],
+  "new_companies": [],
+  "new_people": [],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 11,
-    "new_people": 10,
-    "psc_added": 2,
+    "new_companies": 0,
+    "new_people": 0,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-17 17:00:23"
+  "generated": "2026-11-17 17:13:56"
 }

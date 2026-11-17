@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-17 17:00:24",
+  "generated": "2026-11-17 17:14:28",
   "models": [
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 1401,
+      "likes": 1403,
       "downloads": 727110
     },
     {
@@ -19,14 +19,14 @@
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 12356,
+      "likes": 12357,
       "downloads": 2828071
     },
     {
       "id": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "task": "audio-to-audio",
-      "likes": 476,
+      "likes": 477,
       "downloads": 4445
     },
     {
@@ -37,18 +37,18 @@
       "downloads": 18359
     },
     {
+      "id": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "task": "",
+      "likes": 6124,
+      "downloads": 6827598
+    },
+    {
       "id": "Comfy-Org/MiniMax-H3-Image",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
       "task": "text-to-image",
       "likes": 514,
       "downloads": 2660341
-    },
-    {
-      "id": "unsloth/Qwen3.8-27B-GGUF",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "task": "",
-      "likes": 6123,
-      "downloads": 6827598
     },
     {
       "id": "Zyphra/ZONOS3-Mini",

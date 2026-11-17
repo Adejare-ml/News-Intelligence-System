@@ -2,13 +2,16 @@
 
 Company or body · Oil & Gas
 
-Mentioned in 8 reports tracked by AURA.
+Mentioned in 9 reports tracked by AURA.
 
-- Mentions tracked: 8
+- Mentions tracked: 9
 - Holdings: 0
-- Last seen: 6 Nov 2026
+- Recent stories: 1
+- Last seen: 17 Nov 2026
 
-AURA has no recent reporting on TotalEnergies yet.
+## In the news
+
+- [TotalEnergies begins Nigerias first deepwater exploration drilling](https://www.latestnigeriannews.com/p/464114/totalenergies-begins-nigerias-first-deepwater-exploration-drilling.html) · latestnigeriannews · 17 Nov 2026
 
 ---
 
