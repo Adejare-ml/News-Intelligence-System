@@ -1448,6 +1448,43 @@
       ]
     },
     {
+      "key": "totalenergies",
+      "label": "TotalEnergies",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 12.5,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "bureau of public procurement",
       "label": "Bureau of Public Procurement",
       "total_mentions": 8,
@@ -1599,37 +1636,6 @@
           "mentions": 1,
           "avg_risk": 55.0,
           "max_risk": 55
-        }
-      ]
-    },
-    {
-      "key": "totalenergies",
-      "label": "TotalEnergies",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 12.5,
-          "max_risk": 15
         }
       ]
     },
@@ -6811,5 +6817,5 @@
       ]
     }
   ],
-  "generated": "2026-11-17 17:00:35"
+  "generated": "2026-11-17 17:15:35"
 }
