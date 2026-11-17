@@ -1,13 +1,13 @@
 {
   "window_days": 7,
-  "recent_articles": 94,
-  "previous_articles": 84,
+  "recent_articles": 90,
+  "previous_articles": 96,
   "rising": [
     {
-      "term": "kyari",
-      "recent": 7,
-      "previous": 0,
-      "change": 7
+      "term": "nnpc",
+      "recent": 9,
+      "previous": 4,
+      "change": 5
     },
     {
       "term": "recovers",
@@ -16,13 +16,13 @@
       "change": 5
     },
     {
-      "term": "court",
-      "recent": 5,
-      "previous": 1,
+      "term": "alleged",
+      "recent": 6,
+      "previous": 2,
       "change": 4
     },
     {
-      "term": "senate",
+      "term": "stake",
       "recent": 5,
       "previous": 1,
       "change": 4
@@ -52,13 +52,13 @@
       "change": 4
     },
     {
-      "term": "firm",
+      "term": "gas",
       "recent": 5,
       "previous": 2,
       "change": 3
     },
     {
-      "term": "gas",
+      "term": "kyari",
       "recent": 5,
       "previous": 2,
       "change": 3
@@ -72,7 +72,7 @@
       "change": -6
     },
     {
-      "term": "illegal",
+      "term": "cbn",
       "recent": 1,
       "previous": 5,
       "change": -4
@@ -84,13 +84,7 @@
       "change": -4
     },
     {
-      "term": "chinese",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
-      "term": "ogun",
+      "term": "illegal",
       "recent": 0,
       "previous": 4,
       "change": -4
@@ -102,52 +96,58 @@
       "change": -4
     },
     {
-      "term": "threatens",
+      "term": "seeks",
       "recent": 0,
       "previous": 4,
       "change": -4
     },
     {
-      "term": "cbn",
+      "term": "sets",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "spending",
+      "recent": 0,
+      "previous": 4,
+      "change": -4
+    },
+    {
+      "term": "reps",
       "recent": 2,
       "previous": 5,
       "change": -3
     },
     {
-      "term": "reps",
-      "recent": 1,
-      "previous": 4,
-      "change": -3
-    },
-    {
-      "term": "seeks",
-      "recent": 1,
-      "previous": 4,
+      "term": "aviation",
+      "recent": 0,
+      "previous": 3,
       "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 62,
-      "previous": 55
+      "recent": 58,
+      "previous": 63
     },
     {
       "category": "Company",
-      "recent": 21,
-      "previous": 21
+      "recent": 23,
+      "previous": 24
     },
     {
       "category": "Legal",
-      "recent": 9,
+      "recent": 8,
       "previous": 8
     },
     {
       "category": "Other",
-      "recent": 2,
-      "previous": 0
+      "recent": 1,
+      "previous": 1
     }
   ],
   "social": [],
-  "generated": "2026-11-16 17:56:49"
+  "generated": "2026-11-17 17:00:33"
 }

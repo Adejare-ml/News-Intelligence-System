@@ -25,6 +25,33 @@
       "intermediates": []
     },
     {
+      "person": "Sunbeth Treenuts and Sesame Limited",
+      "company": "Livestock Feeds Plc",
+      "points": [
+        {
+          "date": "2026-11-17",
+          "pct": 73.29
+        }
+      ],
+      "change": 0.0,
+      "intermediates": []
+    },
+    {
+      "person": "Tony Elumelu",
+      "company": "Seplat Energy Plc",
+      "points": [
+        {
+          "date": "2026-11-17",
+          "pct": 22.05
+        }
+      ],
+      "change": 0.0,
+      "intermediates": [
+        "Heirs Energies",
+        "Heirs Holdings"
+      ]
+    },
+    {
       "person": "Trademarks Global Concepts Limited",
       "company": "eTranzact International Plc",
       "points": [
@@ -51,5 +78,5 @@
       ]
     }
   ],
-  "generated": "2026-11-16 17:56:52"
+  "generated": "2026-11-17 17:00:35"
 }

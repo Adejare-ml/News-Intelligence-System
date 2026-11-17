@@ -2,11 +2,11 @@
 
 Company or body · Oil & Gas
 
-Mentioned in 25 reports tracked by AURA.
+Mentioned in 26 reports tracked by AURA.
 
-- Mentions tracked: 25
+- Mentions tracked: 26
 - Holdings: 0
-- Last seen: 11 Nov 2026
+- Last seen: 17 Nov 2026
 
 AURA has no recent reporting on NNPC Limited yet.
 
