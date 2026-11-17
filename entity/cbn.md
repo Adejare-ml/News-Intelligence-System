@@ -6,12 +6,9 @@ Mentioned in 42 reports tracked by AURA.
 
 - Mentions tracked: 42
 - Holdings: 0
-- Recent stories: 1
 - Last seen: 31 Jul 2026
 
-## In the news
-
-- [Sterling HoldCo Subsidiary, Alt Bank appoints Gul Khan as MD/CEO](https://nairametrics.com/2026/11/11/sterling-holdco-subsidiary-alt-bank-appoints-gul-khan-as-md-ceo/) · Nairametrics · 11 Nov 2026
+AURA has no recent reporting on CBN yet.
 
 ---
 
