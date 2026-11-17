@@ -1,33 +1,35 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-16 17:54:21 (UTC)
-**Run Window:** 2026-11-16, all runs to 17:54 (run 2 of the day)
+**Generated on:** 2026-11-17 16:59:54 (UTC)
+**Run Window:** 2026-11-17, all runs to 16:59 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 8
-- **High Risk Signals:** 3
+- **Total Articles Processed:** 19
+- **High Risk Signals:** 0
 - **Appointments Logged:** 1
-- **Procurement Awards:** 2
+- **Procurement Awards:** 1
 
 ---
 
----  
-**Report Date**: 2026‑11‑16 (coverage of all articles published up to 17:54).  
+# Executive Intelligence Summary: Nigerian Corporate Transparency & MDA Oversight
+**Report date:** 17 November 2026 | **Coverage:** All articles published on 17 November 2026 up to 16:59 (run 1 of the day)
 
-## Key Developments  
-- The **Nigeria Civil Aviation Authority** upgraded Anambra Airport’s fire‑fighting facility to Category 7 standards. [Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWmptT3VvVXZHYjJPMlNITjEwTVY3dU1RN0E2MmY2UEVwUWZpc0Vzb0RHeHZLZ3BrdGtaQjVkS3dtaFNEMFN1UUkwLUYzbC1FcDNtRU40ejhHazlxbHkwbk9wV0tUSkU0amJqUHE5US1lYkZVcUctcjEyNURVNzVFRngwYjZIUVc1Z2xOTzRxVHY4R1I3VWltampFRkNaTFN4dXZCaDNjUGxnbmZTTVNrbjdpbVB1c3pEa1ZueVVNNXJhSlVIbGJLRGFHN0ZMQ3ZyOFBMd1B3). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWmptT3VvVXZHYjJPMlNITjEwTVY3dU1RN0E2MmY2UEVwUWZpc0Vzb0RHeHZLZ3BrdGtaQjVkS3dtaFNEMFN1UUkwLUYzbC1FcDNtRU40ejhHazlxbHkwbk9wV0tUSkU0amJqUHE5US1lYkZVcUctcjEyNURVNzVFRngwYjZIUVc1Z2xOTzRxVHY4R1I3VWltampFRkNaTFN4dXZCaDNjUGxnbmZTTVNrbjdpbVB1c3pEa1ZueVVNNXJhSlVIbGJMRGFHN0ZMQ3ZyOFBMd1B3?oc=5))  
-- **UNIJOS** becomes the first Nigerian university led solely by a female principal body, marking a milestone in gender representation. [Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbnNKUlpNdGltV0hqVzdERG1oQUhRQlE3N1dQZnV1dnU4MVUxYjkyUC0wdTFFY09Hb1FQOWlQUjUwa2ZDSjFwU0o2UlVtTDJlYVY5bXAwMERuZUFHVTJfOXI1ZkQ4WnNVOFBkclpEeTdtMmJVdFV4Y3JkeWNQT0JSTFdCLW85NHlEX0RXTXV2c1lEeVZXdTNBRTFKX3N0eVhiTzNPN0YyRGpFRENzWHhzSWJ1V3ZOZDZPYTJ1XzBuZWl6ZTE3WlpGc1kxSTVodUMtOU1TcUdQWVlKaFE). ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbnNKUlpNdGltV0hqVzdERG1oQUhRQlE3N1dQZnV1dnU4MVUxYjkyUC0wdTFFY09Hb1FQOWlQUjUwa2ZDSjFwU0o2UlVtTDJlYVY5bXAwMERuZUFHVTJfOXI1ZkQ4WnNVOFBkclpEeTdtMmJVdFV4Y3JkeWNQT0JSTFdCLW85NHlEX0RXTXV2c1lEeVZXdTNBRTFKX3N0eVhiTzNPN0YyRGpFRENzWHhzSWJ1V3ZOZDZPYTJ1XzBuZWl6ZTE3WlpGc1kxSTVodUMtOU1TcUdQWVlLaFE?oc=5))  
-- **Zamfara State** joins seven others in clearing inherited pension backlogs, a key outcome of federal fiscal reforms. [Premium Times](https://www.premiumtimesng.com/promoted/925619-zamfara-among-eight-states-that-fully-cleared-inherited-pension-backlogs-pencom-report.html). ([Premium Times](https://www.premiumtimesng.com/promoted/925619-zamfara-among-eight-states-that-fully-cleared-inherited-pension-backlogs-pencom-report.html))  
+### Key Developments
+- **Pension infrastructure:** the proposed $750 million PIIP would draw about $600 million from pension funds. An opinion piece urges strong governance safeguards. ([The Punch](https://punchng.com/750m-piip-dont-gamble-with-retirees-future/))  
+- **Reps panel gives NSCDC boss 24 hours to explain alleged abuse by mining marshals**. A House of Representatives panel has given the Commandant-General of the Nigeria Security and Civil Defence Corps (NSCDC) 24 hours to explain alleged abuse by mining marshals. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeWIzZjhSd3NFLXV6QWdnU21DX2RvYjFlN2VFdm1sLUgtTVptWWgxNUVzWjFrc1Bnb3RRd1UtcHhxZU9xYTVMRDJfR2VqSU9Xb2FqWkMtaXB3c1lDVlBqanJPNEROWW1iWUNpbzVDb1diQl9iVkJRODBoOHBGZDczU2FvRl82TnZsTFdhRU9WdnRuSXk1STF4c2NGLTh0SjloV2t1a0x4N19sTnE5NmJGc3BobFpNWWQ5Si02Ry16VXNNUUc5dk1CYTJ4VHdjaGZWWG14eA?oc=5))  
+- **17 MDAs fail FG’s benchmark in 2026 Fiscal Responsibility Index**. Seventeen Ministries, Departments and Agencies (MDAs) failed to meet the federal government's benchmark in the 2026 Fiscal Responsibility Index. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikgFBVV95cUxNT2Jac3R1MDc1UG8yYXZ2MDROLVNGV1NOMmxKRHpjdGRvT3EtT2REUGpwRjVLM1pNZEZJRTRnMXJndnNMVVhuRFZzWEVuQnVub3VYRWJPdllOQmlfZ3l2SjJLV0tkb3JVbGx6TXRqLVRxSE1WV1N2NWd2blhyaUNRV3lUVVlKSDhKa0F0aEhOTFFWZw?oc=5))  
 
-## High Risk Alerts  
-- The purchase of the Livestock Ministry’s headquarters for N8.94 billion raised allegations of procurement irregularities and remains a major governance concern. [Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/). ([Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/))  
-- NGX Group’s 10 % stake in Nairobi Securities Exchange represents a high‑risk foreign investment that may influence regional market dynamics. [Nairametrics](https://nairametrics.com/2026/11/16/ngx-group-acquires-10-strategic-stake-in-nairobi-securities-exchange-2/). ([Nairametrics](https://nairametrics.com/2026/11/16/ngx-group-acquires-10-strategic-stake-in-nairobi-securities-exchange-2/))  
+### High Risk Alerts
+No high-risk items today.
 
-## Beneficial Ownership & PSC Disclosures  
-No PSC disclosures were reported in the coverage period.  
+### Beneficial Ownership & PSC Disclosures
+- **Sunbeth Treenuts and Sesame Limited → Livestock Feeds Plc:** 73.29%, **direct**. Control was gained from UAC of Nigeria Plc. PEP status: No. No regulatory filing reference is given, so PSC filing status is unconfirmed. ([Nairametrics](https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/))  
+- **Unnamed holder → Nairobi Securities Exchange:** 10%, with direct or indirect status not stated. PEP status: No. No filing reference is given. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi7AFBVV95cUxNQnRiWm5SVUtSZk1uVHRJQmxTc2ZmOVF3ODZMY0tMX0NHRFBiX3p0VVNpcmJxWFA2LTZmbC1jTHppTHZIdkFpWlBzRzI1ZXlZOXFEcG5GSzlRM19GaTZBY0p5Znh2Mk9XV3ZUU2tjUy1ja1gzcEdGVEx3YjhrNW9UYUktc2hybFNJR3FiSzY5NjZhZlBvcnVuVXR0bXd0MFNGaXRESTQ0SlIxeHhzZXRtdUlmTG1UNUxPWTFwWlY2OEQyWTdhTUxTN1lyQzRsMVJUODdTcTByZ0xFVGt6QXJwNnlnYkFzNjY1Qy16Wg?oc=5))  
 
-## Procurement & Board Changes  
-- The Federal Ministry of Livestock Development’s N8.94 billion acquisition of its Abuja headquarters underwent procurement scrutiny. [Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/). ([Nairametrics](https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/))  
-- The Federal Capital Territory Administration approved a land cut for the University of Abuja to facilitate campus expansion. [Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTFBiQXlHcHI5X25rOWUyNEl6eUlrQXJWUjhPNXpUUEdNdnFTaVVSVWtfWUE0aTF0b1BlZmR2MXZZLW8yc0RyNTNxVnJHd2JxRmM1WFd4YXYzcTlTY2VlUFJxOTQ0MXVIUDIyOHM5dTM5YVpGLU81bWJnOEpZbGhZUQ?oc=5). ([Punch Newspapers](https://news.google.com/rss/articles/CBMifkFVX3lxTFBiQXlHcHI5X25rOWUyNEl6eUlrQXJWUjhPNXpUUEdNdnFTaVVSVWtfWUE0aTF0b1BlZmR2MXZZLW8yc0RyNTNxVnJHd2JxRmM1WFd4YXYzcTlTY2VlUFJxOTQ0MXVIUDIyOHM5dTM5YVpGLU81bWJnOEpZbGhZUQ?oc=5))  
+### Procurement & Board Changes
+- **Livestock Feeds board:** Adebolanle Badejo, Temitope Omodele and Chiamaka Uwaegbute resigned. Sam Okuwlehi, Seyi Ebenezer, Prof. Franklin Ngwu, Mary Mulili and Farrukh Siddiqui (Group Advisor, Sunbeth Global Concepts) were appointed, which points to a buyer-aligned board. ([Nairametrics](https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/))  
+- **Seplat:** Elumelu is set to succeed Udoma Udo Udoma as Chairman from 1 January 2027. ([Nairametrics](https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/))  
+- **The Alternative Bank:** Gul Khan was appointed MD/CEO following CBN approval. ([The Punch](https://punchng.com/alternative-bank-appoints-new-md-ceo/))  
+- **Procurement:** the BPP Director-General promoted a "Nigeria First" procurement agenda at B20 USA. Kano's CNG bus scheme remains non-operational seven months after launch. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVTk0T3RCRGdCdGdPNXpoQUg0amI1Y1c5TUo4QzAwdTl5bmRFeGNaSFNjYXFDRUl2QjR6NlJHQTI4R0h4Tlp5d2ltTXZobHhaRlpZeGstOURmZG5CUTlfTEt3T2lxdFlkcEF2R2haUHRkRDNtc1hmaWd0RGJEQkpUaGtqOWFxNktVenBQc3ItbmJucmdmU2FMdDlrbGJjVUN1aFdidXI5OG80cEF0VFBWMXJoamladWZleHZ3?oc=5))  
 
 ---
-*Report compiled cloud-based by AURA Intelligence Scheduler (engine: nvidia).*
+*Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

@@ -114,6 +114,10 @@
       "label": "Economic and Financial Crimes Commission"
     },
     {
+      "key": "effiong okon",
+      "label": "Effiong Okon"
+    },
+    {
       "key": "ekiti state government",
       "label": "Ekiti State Government"
     },
@@ -131,7 +135,7 @@
     },
     {
       "key": "exchange",
-      "label": "Nigerian Exchange Group"
+      "label": "Nigerian Exchange Limited"
     },
     {
       "key": "extractive industries transparency initiative",
@@ -180,6 +184,10 @@
     {
       "key": "government of the united states",
       "label": "Government of the United States"
+    },
+    {
+      "key": "gul khan",
+      "label": "Gul Khan"
     },
     {
       "key": "house of representatives",
@@ -290,6 +298,10 @@
       "label": "MTN Group Foundation"
     },
     {
+      "key": "nairobi securities exchange",
+      "label": "Nairobi Securities Exchange"
+    },
+    {
       "key": "nasir el rufai",
       "label": "Nasir El-Rufai"
     },
@@ -328,6 +340,10 @@
     {
       "key": "ng eagle",
       "label": "NG Eagle"
+    },
+    {
+      "key": "ngx",
+      "label": "NGX Group Plc"
     },
     {
       "key": "nnaji",
@@ -410,6 +426,10 @@
       "label": "Senate of Nigeria"
     },
     {
+      "key": "seplat energy",
+      "label": "Seplat Energy Plc"
+    },
+    {
       "key": "serap",
       "label": "SERAP"
     },
@@ -448,6 +468,10 @@
     {
       "key": "tech revolution africa",
       "label": "Tech Revolution Africa"
+    },
+    {
+      "key": "the alternative bank",
+      "label": "The Alternative Bank Limited"
     },
     {
       "key": "totalenergies",
@@ -743,6 +767,11 @@
     },
     {
       "a": "central bank of",
+      "b": "gul khan",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
       "b": "house of representatives",
       "weight": 2
     },
@@ -759,6 +788,11 @@
     {
       "a": "central bank of",
       "b": "serap",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
+      "b": "the alternative bank",
       "weight": 2
     },
     {
@@ -832,6 +866,11 @@
       "weight": 2
     },
     {
+      "a": "effiong okon",
+      "b": "seplat energy",
+      "weight": 2
+    },
+    {
       "a": "ekiti state government",
       "b": "ekiti state house of assembly",
       "weight": 2
@@ -899,6 +938,11 @@
     {
       "a": "government of",
       "b": "government of the united states",
+      "weight": 2
+    },
+    {
+      "a": "gul khan",
+      "b": "the alternative bank",
       "weight": 2
     },
     {
@@ -1022,6 +1066,11 @@
       "weight": 2
     },
     {
+      "a": "nairobi securities exchange",
+      "b": "ngx",
+      "weight": 2
+    },
+    {
       "a": "nasir el rufai",
       "b": "state security service",
       "weight": 2
@@ -1057,5 +1106,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-16 17:56:52"
+  "generated": "2026-11-17 17:00:35"
 }

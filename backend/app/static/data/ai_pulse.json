@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-16 17:56:45",
+  "generated": "2026-11-17 17:00:24",
   "models": [
-    {
-      "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-      "url": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
-      "task": "text-generation",
-      "likes": 8102,
-      "downloads": 29567
-    },
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 1278,
-      "downloads": 609130
+      "likes": 1401,
+      "downloads": 727110
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 20219,
-      "downloads": 6763402
+      "likes": 20375,
+      "downloads": 6942530
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 12177,
-      "downloads": 2789021
-    },
-    {
-      "id": "Comfy-Org/MiniMax-H3-Image",
-      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
-      "task": "text-to-image",
-      "likes": 458,
-      "downloads": 2294065
-    },
-    {
-      "id": "Zyphra/ZONOS3-Mini",
-      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
-      "task": "text-to-speech",
-      "likes": 439,
-      "downloads": 69946
+      "likes": 12356,
+      "downloads": 2828071
     },
     {
       "id": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "task": "audio-to-audio",
-      "likes": 390,
-      "downloads": 3372
+      "likes": 476,
+      "downloads": 4445
     },
     {
       "id": "thinkingmachines/Inkling-2-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
       "task": "image-text-to-text",
-      "likes": 383,
-      "downloads": 16918
+      "likes": 434,
+      "downloads": 18359
+    },
+    {
+      "id": "Comfy-Org/MiniMax-H3-Image",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+      "task": "text-to-image",
+      "likes": 514,
+      "downloads": 2660341
+    },
+    {
+      "id": "unsloth/Qwen3.8-27B-GGUF",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "task": "",
+      "likes": 6123,
+      "downloads": 6827598
+    },
+    {
+      "id": "Zyphra/ZONOS3-Mini",
+      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
+      "task": "text-to-speech",
+      "likes": 505,
+      "downloads": 93909
     }
   ],
   "papers": [
     {
-      "title": "Alloy: A Multi-Material Physics Engine for Robot Learning",
-      "url": "https://huggingface.co/papers/2611.16312",
+      "title": "GPBam: A Retrieval-Aware German Public Law Exam Benchmark",
+      "url": "https://huggingface.co/papers/2611.18981",
       "upvotes": 0
     },
     {
-      "title": "Parsed, Plausible, Wrong: Output Format Controls Silent Errors in Small-Model Semantic Parsing",
-      "url": "https://huggingface.co/papers/2611.17169",
-      "upvotes": 1
-    },
-    {
-      "title": "MemInStream: Memorizing or Merely Recognizing? Rethinking Streaming Video Memory Evaluation",
-      "url": "https://huggingface.co/papers/2611.15640",
-      "upvotes": 5
-    },
-    {
-      "title": "OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
-      "url": "https://huggingface.co/papers/2610.41354",
-      "upvotes": 12
-    },
-    {
-      "title": "Interpreting Coding Agents Through Their Behavioral Trajectories",
-      "url": "https://huggingface.co/papers/2611.17440",
-      "upvotes": 5
-    },
-    {
-      "title": "eDMD: Endpoint Distribution Matching for Few-Step Diffusion Distillation",
-      "url": "https://huggingface.co/papers/2611.17194",
+      "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+      "url": "https://huggingface.co/papers/2611.09825",
       "upvotes": 3
+    },
+    {
+      "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
+      "url": "https://huggingface.co/papers/2611.14960",
+      "upvotes": 3
+    },
+    {
+      "title": "JEPA4R: Embodied JEPA World Models with 4D Point Planning",
+      "url": "https://huggingface.co/papers/2611.19771",
+      "upvotes": 3
+    },
+    {
+      "title": "Zuse: A Decision Model for European Languages",
+      "url": "https://huggingface.co/papers/2611.06238",
+      "upvotes": 0
+    },
+    {
+      "title": "LynnReal-Hand: Unlocking World Interaction with Hand Control",
+      "url": "https://huggingface.co/papers/2611.21479",
+      "upvotes": 1
     }
   ]
 }

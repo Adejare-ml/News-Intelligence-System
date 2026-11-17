@@ -1,40 +1,53 @@
 {
-  "edition": "20261116-11959-preview",
-  "preview": true,
-  "built_at": "2026-11-16 17:56:52",
-  "date": "Monday 16 November 2026",
-  "subject": "AURA alert · Mon 16 Nov · 8 stories, 3 risk alerts",
-  "preheader": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November · 8 stories, 3 risk alerts",
+  "edition": "20261117-12052",
+  "preview": false,
+  "built_at": "2026-11-17 17:00:35",
+  "date": "Tuesday 17 November 2026",
+  "subject": "AURA alert · Tue 17 Nov · 26 stories, 3 risk alerts",
+  "preheader": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November · 26 stories, 3 risk alerts",
   "since": "Sun 15 Nov, 15:46 Lagos",
-  "through_id": 11959,
+  "through_id": 12052,
   "stats": {
-    "reports": 8,
-    "stories": 8,
-    "outlets": 4,
+    "reports": 27,
+    "stories": 26,
+    "outlets": 5,
     "risk_alerts": 3,
-    "public_money": 2,
-    "appointments": 1,
-    "ownership": 1
+    "public_money": 6,
+    "appointments": 2,
+    "ownership": 3
   },
   "nothing_in": [],
   "overview": [
     {
-      "text": "KDT Ibotta Holdings, LLC disclosed a 10% ownership stake in Ibotta Inc on 9 November, as reported in a Form 4 filing.",
-      "card": 1,
-      "outlet": "Investing.com Nigeria"
-    },
-    {
-      "text": "The Federal Ministry of Livestock Development denied allegations of irregularities in the purchase of its Abuja headquarters.",
-      "card": 2,
-      "outlet": "Nairametrics"
-    },
-    {
-      "text": "NGX Group Plc has acquired a 10% equity stake in Nairobi Securities Exchange, expanding its investment footprint in East Africa as part of its pan‑African growth strategy.",
+      "text": "NGX Group Plc has acquired a 10% equity stake in Nairobi Securities Exchange, expanding its investment footprint in East Africa as part of its pan-African growth strategy.",
       "card": 3,
       "outlet": "Nairametrics"
+    },
+    {
+      "text": "Sunbeth Treenuts and Sesame Limited completed its N19.5 billion all-cash acquisition of UAC of Nigeria Plc's 73.29% stake in Livestock Feeds Plc and reconstituted the board with five new directors.",
+      "card": 4,
+      "outlet": "Nairametrics"
+    },
+    {
+      "text": "The Alternative Bank Limited has appointed Gul Khan as Managing Director and Chief Executive Officer, following approval by the Central Bank of Nigeria.",
+      "card": 11,
+      "outlet": "Punch"
     }
   ],
-  "insights": [],
+  "insights": [
+    {
+      "label": "Reports differ",
+      "text": "Reports on the Seplat purchase differ on size. Nairametrics gives approximately N98 billion and a 22.05% group stake; Premium Times, in a headline-level report, gives a $70 million purchase and a 22% stake.",
+      "cards": [
+        5,
+        6
+      ],
+      "outlets": [
+        "Nairametrics",
+        "Premium Times"
+      ]
+    }
+  ],
   "cards": [
     {
       "n": 1,
@@ -139,66 +152,71 @@
     },
     {
       "n": 4,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
+      "theme": "Ownership & capital",
+      "event_type": "Ownership Change",
       "flags": [],
       "alert": false,
-      "risk": "",
-      "headline": "Lasaco Assurance gets one-year extension to meet NGX free float requirement",
-      "byline": "Nairametrics · Mon 16 Nov, 15:33 Lagos",
+      "risk": "AURA risk rating: Medium · 55/100",
+      "headline": "Sunbeth completes N19.5 billion acquisition of UAC’s 73.29% stake in Livestock Feeds, reconstitutes Board",
+      "byline": "Nairametrics · Tue 17 Nov, 14:24 Lagos",
       "outlet": "Nairametrics",
-      "what_happened": "Lasaco Assurance Plc has secured a one‑year extension from NGX RegCo to meet the exchange’s free float requirement, giving the insurer until 2 November 2027 to bring its free float to the mandated 20% of issued shares or a N20 billion market cap.",
+      "what_happened": "Sunbeth Treenuts and Sesame Limited has completed its N19.5 billion all-cash acquisition of UAC of Nigeria Plc's 73.29% stake in Livestock Feeds Plc. The transaction followed approvals from the FCCPC, SEC and NGX, and the company has reconstituted its board with three resignations and five new directors.",
       "key_facts": [
-        "Lasaco Assurance Plc granted one‑year extension until 2 November 2027 by NGX RegCo",
-        "Minimum free float requirement is 20% of issued shares or N20 billion",
-        "Accumulated loss deficit narrowed to N39.32 million as of 30 September 2026"
+        "Sunbeth Treenuts and Sesame Limited acquired UAC of Nigeria Plc's 73.29% stake in Livestock Feeds Plc for N19.5 billion, all cash.",
+        "The transaction was announced on September 30, 2026, at an implied price of N8.85 per Livestock Feeds share.",
+        "Sam Okuwlehi, Seyi Ebenezer, Professor Franklin Nnaemeka Ngwu, Mary Mulili and Farrukh Siddiqui were appointed directors on November 17, 2026."
       ],
       "timeline": [],
       "headline_only": false,
       "analysis": [
-        "Why it matters: The extension allows Lasaco to meet mandatory free float rules and maintain its main‑board listing, safeguarding investor interests and preserving market stability.",
-        "Court outcome as reported by Nairametrics; AURA has not checked court records."
+        "Why it matters: The change of majority ownership and full board turnover at Livestock Feeds shifts control of a listed Nigerian animal feed company to Sunbeth, and the article names Sunbeth as the buyer without disclosing its beneficial owners."
       ],
-      "ownership_caveat": "",
+      "ownership_caveat": "Ownership details as reported by Nairametrics; not verified with CAC records.",
       "named": [
-        "Lasaco Assurance Plc",
-        "NGX RegCo",
-        "Gertrude Olutekunbi"
+        "Livestock Feeds Plc",
+        "Sunbeth Treenuts and Sesame Limited",
+        "UAC of Nigeria Plc",
+        "Federal Competition and Consumer Protection Commission",
+        "Securities and Exchange Commission"
       ],
       "source": {
         "outlet": "Nairametrics",
-        "url": "https://nairametrics.com/2026/11/16/lasaco-assurance-gets-one-year-extension-to-meet-ngx-free-float-requirement/"
+        "url": "https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/"
       },
       "also_reported": [],
       "also_more": 0
     },
     {
       "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
+      "theme": "Ownership & capital",
+      "event_type": "Ownership Change",
       "flags": [],
       "alert": false,
-      "risk": "",
-      "headline": "Zamfara among eight states that fully cleared inherited pension backlogs – PenCom report",
-      "byline": "Premium Times · Mon 16 Nov, 18:16 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "On 10 November 2026 PenCom announced that Zamfara State had fully met its inherited pension obligations, joining seven other states that cleared similar backlogs. Governor Dauda Lawal credited President Tinubu’s fiscal reforms for the state’s improved capacity to settle retirees’ dues.",
+      "risk": "AURA risk rating: Medium · 45/100",
+      "headline": "Billionaire Tony Elumelu adds N98 billion stake in Seplat",
+      "byline": "Nairametrics · Tue 17 Nov, 09:48 Lagos",
+      "outlet": "Nairametrics",
+      "what_happened": "Heirs Energies, the energy investment company of Tony Elumelu, bought an additional 5,888,341 Seplat Energy Plc shares at a cost of approximately N98 billion. The purchase lifts the Heirs Holdings Group's stake in Seplat to 22.05%, a holding the article values at approximately US$1.6 billion. Elumelu is also set to become Seplat's chairman effective January 1, 2027.",
       "key_facts": [
-        "Eight states cleared legacy pension backlogs: Lagos, Gombe, Borno, Anambra, Jigawa, Katsina, Kebbi, Zamfara.",
-        "Six states paid off more than 80% of pension liabilities: Delta, Osun, Ogun, Akwa Ibom, Kaduna, Oyo.",
-        "36 states owed a combined pension liability exceeding N2 trillion before reforms."
+        "Heirs Energies acquired 5,888,341 additional Seplat Energy Plc shares at approximately N98 billion.",
+        "The latest purchase brings the Heirs Holdings Group's total Seplat shareholding to 22.05%.",
+        "The Group's total Seplat holding is valued at approximately US$1.6 billion.",
+        "Elumelu is set to become Seplat Chairman effective January 1, 2027, succeeding Senator Udoma Udo Udoma."
       ],
       "timeline": [],
       "headline_only": false,
       "analysis": [],
-      "ownership_caveat": "",
+      "ownership_caveat": "Ownership details as reported by Nairametrics; not verified with CAC records.",
       "named": [
-        "National Pension Commission",
-        "Zamfara State Government"
+        "Heirs Energies",
+        "Heirs Holdings",
+        "Seplat Energy Plc",
+        "Maurel & Prom",
+        "African Export-Import Bank (Afreximbank)"
       ],
       "source": {
-        "outlet": "Premium Times",
-        "url": "https://www.premiumtimesng.com/promoted/925619-zamfara-among-eight-states-that-fully-cleared-inherited-pension-backlogs-pencom-report.html"
+        "outlet": "Nairametrics",
+        "url": "https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/"
       },
       "also_reported": [],
       "also_more": 0
@@ -207,28 +225,91 @@
   "also": [
     {
       "n": 6,
-      "theme": "Public money",
-      "text": "Under the Federal Capital Territory Administration, a land cut was approved for the University of Abuja.",
-      "outlet": "Punch",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBiQXlHcHI5X25rOWUyNEl6eUlrQXJWUjhPNXpUUEdNdnFTaVVSVWtfWUE0aTF0b1BlZmR2MXZZLW8yc0RyNTNxVnJHd2JxRmM1WFd4YXYzcTlTY2VlUFJxOTQ0MXVIUDIyOHM5dTM5YVpGLU81bWJnOEpZbGhZUQ?oc=5"
+      "theme": "Ownership & capital",
+      "text": "Tony Elumelu has increased his stake in Seplat Energy to 22% through a new share purchase worth $70 million, according to a report.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMEs5UkxFeC11bERZM0pjNDJnTlE3N0Z4azNKYnloLTRwUURFQ0lKQW1CaVA2RzdDQmd1eGNWVTI5NENhVDIwcmhlei05aU1kOXZUV0R2MU5MSzhteklHOWx3M2pQRnJtWDhxNDh0bWwzTlk2TUtrdmY0LTBMZzdVa0JkSkFwQVEyN19aSHpPcWUwZFROWUpmTVptUERPQndCV2w2YmFaX2JBbVRmSHJURV9UbjZ6RlZpWUtyRFZld0lORzA4SlRQd2RsanhHZHBiNlZoNQ?oc=5"
     },
     {
       "n": 7,
-      "theme": "People",
-      "text": "UNIJOS has appointed an all‑female leadership body, becoming the first university in Nigeria led entirely by women.",
+      "theme": "Ownership & capital",
+      "text": "NGX Group has acquired a 10% ownership stake in the Nairobi Securities Exchange, extending its presence in East Africa.",
       "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQbnNKUlpNdGltV0hqVzdERG1oQUhRQlE3N1dQZnV1dnU4MVUxYjkyUC0wdTFFY09Hb1FQOWlQUjUwa2ZDSjFwU0o2UlVtTDJlYVY5bXAwMERuZUFHVTJfOXI1ZkQ4WnNVOFBkclpEeTdtMmJVdFV4Y3JkeWNQT0JSTFdCLW85NHlEX0RXTXV2c1lEeVZXdTNBRTFKX3N0eVhiTzNPN0YyRGpFRENzWHhzSWJ1V3ZOZDZPYTJ1XzBuZWl6ZTE3WlpGc1kxSTVodUMtOU1TcUdQWVlLaFE?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNQnRiWm5SVUtSZk1uVHRJQmxTc2ZmOVF3ODZMY0tMX0NHRFBiX3p0VVNpcmJxWFA2LTZmbC1jTHppTHZIdkFpWlBzRzI1ZXlZOXFEcG5GSzlRM19GaTZBY0p5Znh2Mk9XV3ZUU2tjUy1ja1gzcEdGVEx3YjhrNW9UYUktc2hybFNJR3FiSzY5NjZhZlBvcnVuVXR0bXd0MFNGaXRESTQ0SlIxeHhzZXRtdUlmTG1UNUxPWTFwWlY2OEQyWTdhTUxTN1lyQzRsMVJUODdTcTByZ0xFVGt6QXJwNnlnYkFzNjY1Qy16Wg?oc=5"
     },
     {
       "n": 8,
+      "theme": "Other",
+      "text": "The House of Representatives has given the Nigeria Security and Civil Defence Corps (NSCDC) boss 24 hours to respond to alleged N2 billion transactions.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdVhZTXlmUDJvMGhadDhvN0FaQ0tSemN6MlVteWRDbERkWkVRbVcyQ1o1VkhheThjMml0VmY1ZnNEY1Y0djJtT2VMV3o3Umo2VnRuWmp3SW5RZ0Z6UWtVVi1Zd0RYa0dFWGphRFBJR01mUVg5Y2RQaldmRjVmeUhDbVM3bHpudEpZbjZBUC1n?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "Other",
+      "text": "Global Integrity Watch (GIW) reportedly visited the Debt Management Office (DMO) and demanded records relating to ₦88.6 trillion in debt issuance.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNeTVRNkc0dE4yTGkyOHE4RXlfSXlENFBnVEVxR0hteDdDWjgwUU5Ld3NzVW9fMlowbS1acFlHcmlZZmJTSlBVZ18yVDJRdWJMZTZHV01jVzBBWW1wSVYxREphNmVSTFNtS3p5NXJDemhCMjQ2QmNXajFlZUhVX2Z3RG9xNWtQNktPZnhqUFM3dkEwY09I?oc=5"
+    },
+    {
+      "n": 10,
       "theme": "Regulation & enforcement",
-      "text": "The Nigeria Civil Aviation Authority upgraded the fire‑fighting facility at Anambra Airport to Category 7, meeting higher safety standards for aviation operations.",
+      "text": "Nigeria's proposed $750 million Pension Industry Infrastructure Platform (PIIP) would mobilise about $600 million from Nigerian pension funds and at least $150 million from development finance institutions to finance infrastructure.",
+      "outlet": "Punch",
+      "url": "https://punchng.com/750m-piip-dont-gamble-with-retirees-future/"
+    },
+    {
+      "n": 11,
+      "theme": "People",
+      "text": "The Alternative Bank Limited has appointed Gul Khan as its Managing Director and Chief Executive Officer.",
+      "outlet": "Punch",
+      "url": "https://punchng.com/alternative-bank-appoints-new-md-ceo/"
+    },
+    {
+      "n": 12,
+      "theme": "Public money",
+      "text": "Kano State's compressed natural gas (CNG) buses remain off the roads seven months after their launch, according to a Premium Times special report.",
       "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWmptT3VvVXZHYjJPMlNITjEwTVY3dU1RN0E2MmY2UEVwUWZpc0Vzb0RHeHZLZ3BrdGtaQjVkS3dtaFNEMFN1UUkwLUYzbC1FcDNtRU40ejhHazlxbHkwbk9wV0tUSkU0amJqUHE5US1lYkZVcUctcjEyNURVNzVFRngwYjZIUVc1Z2xOTzRxVHY4R1I3VWltampFRkNaTFN4dXZCaDNjUGxnbmZTTVNrbjdpbVB1c3pEa1ZueVVNNXJhSlVIbGJMRGFHN0ZMQ3ZyOFBMd1B3?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQMFZFbF8zcDRjR3FqcjY5SDV6WVk1cFIydDRjVWlxbDFRYm9KV1lBSlczLTJWZzJlb2RSc25CUXFkSS1yeU5MR2hPejkza21kY09kTFgzVmVxUi0tMkNKOUd6WDNma3ViVVJCMDhQOVI2dVdQWW40ZEV1NDVKVmFxSHZVdG5CYl9TM0llZlJ4QjdydFFQUUFoTklKVFFFM21EcW83RU9rbnpKU0N4am5vNURlYkxHY0kwQjZ6Rng3aDZhdHdqc3JuanZSbw?oc=5"
+    },
+    {
+      "n": 13,
+      "theme": "Other",
+      "text": "A House of Representatives panel has given the Commandant-General of the Nigeria Security and Civil Defence Corps (NSCDC) 24 hours to explain alleged abuse by mining marshals.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeWIzZjhSd3NFLXV6QWdnU21DX2RvYjFlN2VFdm1sLUgtTVptWWgxNUVzWjFrc1Bnb3RRd1UtcHhxZU9xYTVMRDJfR2VqSU9Xb2FqWkMtaXB3c1lDVlBqanJPNEROWW1iWUNpbzVDb1diQl9iVkJRODBoOHBGZDczU2FvRl82TnZsTFdhRU9WdnRuSXk1STF4c2NGLTh0SjloV2t1a0x4N19sTnE5NmJGc3BobFpNWWQ5Si02Ry16VXNNUUc5dk1CYTJ4VHdjaGZWWG14eA?oc=5"
+    },
+    {
+      "n": 14,
+      "theme": "Public money",
+      "text": "The Nigerian National Petroleum Company (NNPC) is investigating a fire at a Lagos filling station that destroyed seven classrooms.",
+      "outlet": "Premium Times",
+      "url": "https://www.premiumtimesng.com/news/top-news/925866-nnpc-probes-lagos-filling-station-fire-that-destroyed-seven-classrooms.html"
+    },
+    {
+      "n": 15,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Government has made the National Identification Number (NIN) mandatory for passengers on domestic flights.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaWxtc2hMQ1hPUEdEejFIMk9jVTUxZWhnYXAyanVBTnRYaDE1bFQ3cUx2c2luTUVvVFExOHd6b3gxSHBsOXE1THAtRUdjeTFlRTRqTC1ITEpqa2ROMHB5U3g3bjFwN3RqM2xBVUR2ZXdSckJQYjZDU3JFcjFraTUxMTA3cw?oc=5"
     }
   ],
-  "also_more": 0,
+  "also_more": 11,
   "psc": [
+    {
+      "text": "Tony Elumelu reported as holding 22.05% of Seplat Energy Plc",
+      "outlet": "Nairametrics",
+      "date": "Tue 17 Nov",
+      "url": "https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/",
+      "confidence": "Full article"
+    },
+    {
+      "text": "Sunbeth Treenuts and Sesame Limited reported as holding 73.29% of Livestock Feeds Plc; previous holder reported as UAC of Nigeria Plc",
+      "outlet": "Nairametrics",
+      "date": "Tue 17 Nov",
+      "url": "https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/",
+      "confidence": "Full article"
+    },
     {
       "text": "KDT Ibotta Holdings, LLC reported as holding 10% of Ibotta Inc",
       "outlet": "Investing.com Nigeria",
@@ -239,7 +320,9 @@
   ],
   "psc_more": 0,
   "psc_keys": [
-    "kdt ibotta holdings llc|ibotta|https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5"
+    "kdt ibotta holdings llc|ibotta|https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
+    "sunbeth treenuts and sesame limited|livestock feeds|https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/",
+    "tony elumelu|seplat|https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/"
   ],
   "terms": [
     {
@@ -247,8 +330,16 @@
       "meaning": "person with significant control: owns or controls 5% or more of a Nigerian company (CAMA 2020)"
     },
     {
+      "term": "SEC",
+      "meaning": "Securities and Exchange Commission"
+    },
+    {
       "term": "NGX",
       "meaning": "Nigerian Exchange, the Lagos stock market"
+    },
+    {
+      "term": "NNPC",
+      "meaning": "Nigerian National Petroleum Company"
     },
     {
       "term": "AURA risk rating",
@@ -257,13 +348,14 @@
   ],
   "engines": {
     "extraction": [
+      "claude",
       "nvidia"
     ],
-    "digest": ""
+    "digest": "claude"
   },
   "health": {
-    "overview_dropped": 0,
-    "insights_dropped": 0
+    "overview_dropped": 2,
+    "insights_dropped": 2
   },
   "site": "https://auranews.pages.dev"
 }

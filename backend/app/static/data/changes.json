@@ -1,31 +1,49 @@
 {
   "new_companies": [
-    "Anambra Airport",
-    "Lasaco Assurance Plc",
-    "NGX Group Plc",
-    "Nairobi Securities Exchange",
-    "Osas & Oseji Estate Surveyors & Valuers"
+    "Africa Finance Corporation (AFC)",
+    "African Export-Import Bank (Afreximbank)",
+    "Chapel Hill Denham",
+    "Heirs Energies",
+    "Heirs Holdings",
+    "Livestock Feeds Plc",
+    "Maurel & Prom",
+    "Seplat Energy Plc",
+    "Sunbeth Treenuts and Sesame Limited",
+    "UAC of Nigeria Plc",
+    "Zichis Agro-Allied Industries Plc"
   ],
   "new_people": [
-    "Gertrude Olutekunbi"
+    "Adebolanle Badejo",
+    "Chiamaka N. Uwaegbute",
+    "Farrukh Siddiqui",
+    "Franklin Nnaemeka Ngwu",
+    "Mary Mulili",
+    "NSCDC Commandant-General",
+    "Sam Okuwlehi",
+    "Seyi Ebenezer",
+    "Temitope Omodele",
+    "Udoma Udo Udoma"
   ],
-  "psc_added": [],
-  "psc_removed": [],
-  "psc_changed": [],
-  "new_high_risk": [
+  "psc_added": [
     {
-      "title": "FG dismisses alleged irregularities in livestock ministry HQ deal amid procurement questions",
-      "url": "https://nairametrics.com/2026/11/16/fg-dismisses-alleged-irregularities-in-livestock-ministry-hq-deal-amid-procurement-questions/",
-      "risk": 70.0
+      "person": "Sunbeth Treenuts and Sesame Limited",
+      "company": "Livestock Feeds Plc"
+    },
+    {
+      "person": "Tony Elumelu",
+      "company": "Seplat Energy Plc"
     }
   ],
+  "psc_removed": [],
+  "psc_changed": [],
+  "new_high_risk": [],
   "counts": {
-    "new_companies": 5,
-    "new_people": 1,
-    "psc_added": 0,
+    "new_companies": 11,
+    "new_people": 10,
+    "psc_added": 2,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 1
+    "new_high_risk": 0
   },
-  "generated": "2026-11-16 17:56:43"
+  "generated": "2026-11-17 17:00:23"
 }

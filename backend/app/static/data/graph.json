@@ -37,14 +37,14 @@
       "risk": "Medium"
     },
     {
-      "id": "d9b2bde3f533",
-      "label": "Uber Nigeria",
+      "id": "d911eb1cbbc7",
+      "label": "NNPC Limited",
       "type": "company",
       "risk": "Medium"
     },
     {
-      "id": "d911eb1cbbc7",
-      "label": "NNPC Limited",
+      "id": "d9b2bde3f533",
+      "label": "Uber Nigeria",
       "type": "company",
       "risk": "Medium"
     },
@@ -121,6 +121,102 @@
       "risk": "Critical"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ac79f04a4e30",
+      "label": "Kano State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "974789639094",
+      "label": "Debt Management Office",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f6ea64bf1db3",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "95368915b67a",
+      "label": "Bureau of Public Procurement",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6eac15c47af6",
+      "label": "NNPC",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4318c4c9c3f1",
+      "label": "Nigeria Security and Civil Defence Corps",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "9daa63cb1687",
+      "label": "GIW",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e8bd74a934dc",
+      "label": "Benue State University",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cd76249f84cf",
+      "label": "Nigerian Exchange Limited",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "30332f9a7d69",
+      "label": "Pension Industry Infrastructure Platform",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "6906ebada0c3",
+      "label": "PenCom",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "45acd1796b9a",
+      "label": "FSD Africa",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a4e5a44bd7d5",
+      "label": "vPASS",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "1a2ac1ef306d",
       "label": "Nigeria Civil Aviation Authority",
       "type": "agency",
@@ -145,93 +241,105 @@
       "risk": "Low"
     },
     {
-      "id": "daaeb0893724",
-      "label": "UNIJOS",
-      "type": "agency",
+      "id": "18bc77b97b9c",
+      "label": "Festus Keyamo",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "ff87cce3f946",
-      "label": "Federal Ministry of Livestock Development",
-      "type": "agency",
+      "id": "8ad929872c06",
+      "label": "Federal Ministry of Aviation",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "94b1c0c5d7ba",
-      "label": "University of Abuja",
-      "type": "agency",
+      "id": "261b654580ee",
+      "label": "Effiong Okon",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "6e50f6eccfd9",
-      "label": "NGX RegCo",
-      "type": "agency",
+      "id": "fed919ff18b8",
+      "label": "Seplat Energy Plc",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "type": "agency",
+      "id": "0a6094c8d222",
+      "label": "Gul Khan",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "f6ea64bf1db3",
-      "label": "Federal Competition and Consumer Protection Commission",
-      "type": "agency",
+      "id": "53ecdd84a95c",
+      "label": "The Alternative Bank Limited",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "b787895b59f1",
-      "label": "Nigeria Customs Service, Sokoto/Zamfara Area Command",
-      "type": "agency",
+      "id": "26d57cdda665",
+      "label": "NSCDC Commandant-General",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "b5da1d8370fd",
-      "label": "Government of Nigeria",
-      "type": "agency",
+      "id": "7471d6015ba5",
+      "label": "Adebolanle Badejo",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "217ee6fe71c5",
-      "label": "Bayelsa State Government",
-      "type": "agency",
+      "id": "30a7ef8d2b51",
+      "label": "Livestock Feeds Plc",
+      "type": "company",
       "risk": "Low"
     },
     {
-      "id": "01391c4b85e7",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "type": "agency",
+      "id": "c7d8f08432fb",
+      "label": "Temitope Omodele",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
+      "id": "9ae45dd323f7",
+      "label": "Chiamaka N. Uwaegbute",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
-      "type": "agency",
+      "id": "ee9ce75da030",
+      "label": "Sam Okuwlehi",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "9aef00190386",
-      "label": "Lagos State Government",
-      "type": "agency",
+      "id": "1cbfd1385b51",
+      "label": "Seyi Ebenezer",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "16ec783a0d68",
-      "label": "Nigeria Communications Commission",
-      "type": "agency",
+      "id": "18d2a99d1a68",
+      "label": "Franklin Nnaemeka Ngwu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "07e47c2db94f",
-      "label": "NIMASA",
-      "type": "agency",
+      "id": "96935b96b1fb",
+      "label": "Mary Mulili",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "30f9990fa28d",
+      "label": "Farrukh Siddiqui",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f7e371365a45",
+      "label": "Udoma Udo Udoma",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -253,9 +361,21 @@
       "risk": "Low"
     },
     {
+      "id": "b787895b59f1",
+      "label": "Nigeria Customs Service, Sokoto/Zamfara Area Command",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "23d28578b862",
       "label": "Nwanneka Nwonkike",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "cab1be53cb3b",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -274,6 +394,12 @@
       "id": "cfaeacae2eea",
       "label": "Patricia Lar",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "daaeb0893724",
+      "label": "UNIJOS",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -331,14 +457,8 @@
       "risk": "Low"
     },
     {
-      "id": "18bc77b97b9c",
-      "label": "Festus Keyamo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8ad929872c06",
-      "label": "Federal Ministry of Aviation",
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "company",
       "risk": "Low"
     },
@@ -349,106 +469,16 @@
       "risk": "Low"
     },
     {
-      "id": "e7095455fd33",
-      "label": "Lateef Fagbemi",
-      "type": "person",
-      "risk": "Low"
+      "id": "3afd71cd31bc",
+      "label": "Sunbeth Treenuts and Sesame Limited",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "33e047d24b95",
-      "label": "Dele Oyewale",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c72c04ad366f",
-      "label": "Mojisola Dada",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "be85bb19de61",
-      "label": "Lagos State Special Offences Court",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "5e417f1fcdd7",
-      "label": "Ismaila Mustapha (Mompha)",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b73e06c8a24e",
-      "label": "Ismalob Global Investment Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "3b0c8ba7c855",
-      "label": "Unnamed former 9mobile CEO",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f2eaed765a29",
-      "label": "Unnamed former Etisalat executive",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0a6094c8d222",
-      "label": "Gul Khan",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "53ecdd84a95c",
-      "label": "The Alternative Bank Limited",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1d9b1b116272",
-      "label": "Hassan Yusuf",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ecd173a5a10a",
-      "label": "Muhtar Bakare",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "842608d69bcc",
-      "label": "Yemi Odubiyi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "12dc9e17256e",
-      "label": "Sterling Financial Holdings Company Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "dddbbebcc51a",
-      "label": "Ms Kuku",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "6843b615b76a",
-      "label": "Federal Airports Authority of Nigeria",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "4c174f83f166",
-      "label": "Bawa Kaltungo",
-      "type": "person",
-      "risk": "Low"
+      "id": "eb5a8434f1bd",
+      "label": "Tony Elumelu",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "640e7a002af9",
@@ -499,6 +529,12 @@
       "risk": "Medium"
     },
     {
+      "id": "ff87cce3f946",
+      "label": "Federal Ministry of Livestock Development",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "f69cc3d8f5a3",
       "label": "Osas & Oseji Estate Surveyors & Valuers",
       "type": "company",
@@ -514,6 +550,12 @@
       "id": "2a8c3c8fb890",
       "label": "Sunrisal",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "217ee6fe71c5",
+      "label": "Bayelsa State Government",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -556,6 +598,12 @@
       "id": "3e32a23488ab",
       "label": "Unnamed firm owned by Lagos Councillor",
       "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "b5da1d8370fd",
+      "label": "Government of Nigeria",
+      "type": "agency",
       "risk": "Low"
     },
     {
@@ -602,6 +650,84 @@
     }
   ],
   "edges": [
+    {
+      "id": "1fbb33996f92",
+      "from": "18bc77b97b9c",
+      "to": "8ad929872c06",
+      "label": "Appointed as Minister of Aviation"
+    },
+    {
+      "id": "f4c2e44d8180",
+      "from": "261b654580ee",
+      "to": "fed919ff18b8",
+      "label": "Appointed as Chief Executive Officer"
+    },
+    {
+      "id": "9278d6eff3c9",
+      "from": "0a6094c8d222",
+      "to": "53ecdd84a95c",
+      "label": "Appointed as Managing Director and Chief Executive Officer"
+    },
+    {
+      "id": "c93e4a73a1ac",
+      "from": "26d57cdda665",
+      "to": "4318c4c9c3f1",
+      "label": "Appointed as Commandant-General (NSCDC boss)"
+    },
+    {
+      "id": "6a7c868eab41",
+      "from": "7471d6015ba5",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director"
+    },
+    {
+      "id": "ddd8b3e61cc5",
+      "from": "c7d8f08432fb",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director"
+    },
+    {
+      "id": "317b7e25be6d",
+      "from": "9ae45dd323f7",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director"
+    },
+    {
+      "id": "40c4b5fd42e3",
+      "from": "ee9ce75da030",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director; Chief Executive Officer of LATC"
+    },
+    {
+      "id": "81f41bb05fb5",
+      "from": "1cbfd1385b51",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director; Managing Director and Chief Executive Officer of Payaza Africa Limited"
+    },
+    {
+      "id": "caed02a50e2a",
+      "from": "18d2a99d1a68",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director; Professor of Strategy and Corporate Governance, Lagos Business School"
+    },
+    {
+      "id": "1c326ef44cfe",
+      "from": "96935b96b1fb",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director; Managing Director and Chief Executive Officer of UBA Kenya"
+    },
+    {
+      "id": "a8e05643a0e6",
+      "from": "30f9990fa28d",
+      "to": "30a7ef8d2b51",
+      "label": "Appointed as Director; Group Advisor at Sunbeth Global Concepts"
+    },
+    {
+      "id": "17816f594e47",
+      "from": "f7e371365a45",
+      "to": "fed919ff18b8",
+      "label": "Appointed as Chairman"
+    },
     {
       "id": "cb4195549bad",
       "from": "56b8db8425af",
@@ -669,88 +795,22 @@
       "label": "Appointed as EFCC Chairman"
     },
     {
-      "id": "1fbb33996f92",
-      "from": "18bc77b97b9c",
-      "to": "8ad929872c06",
-      "label": "Appointed as Minister of State for Aviation"
-    },
-    {
       "id": "f3b9311e13e2",
       "from": "a256ae6d71a8",
       "to": "f38bd75574f6",
       "label": "Appointed as Group Chief Executive Officer"
     },
     {
-      "id": "606deb410b35",
-      "from": "e7095455fd33",
-      "to": "0c2be969618b",
-      "label": "Appointed as Attorney-General of the Federation and Minister of Justice"
+      "id": "18308313419a",
+      "from": "3afd71cd31bc",
+      "to": "30a7ef8d2b51",
+      "label": "PSC: 73.29%"
     },
     {
-      "id": "b5cda71eebf2",
-      "from": "33e047d24b95",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as Spokesman, EFCC"
-    },
-    {
-      "id": "a91a198ec02e",
-      "from": "c72c04ad366f",
-      "to": "be85bb19de61",
-      "label": "Appointed as Judge, Lagos State Special Offences Court"
-    },
-    {
-      "id": "2f27d86f176c",
-      "from": "5e417f1fcdd7",
-      "to": "b73e06c8a24e",
-      "label": "Appointed as Social media personality, defendant"
-    },
-    {
-      "id": "2a9b90076621",
-      "from": "3b0c8ba7c855",
-      "to": "dce5a31d3181",
-      "label": "Appointed as Board Director"
-    },
-    {
-      "id": "251ac7ac83ef",
-      "from": "f2eaed765a29",
-      "to": "dce5a31d3181",
-      "label": "Appointed as Board Director"
-    },
-    {
-      "id": "9278d6eff3c9",
-      "from": "0a6094c8d222",
-      "to": "53ecdd84a95c",
-      "label": "Appointed as Managing Director and Chief Executive Officer"
-    },
-    {
-      "id": "2b2a858cc286",
-      "from": "1d9b1b116272",
-      "to": "53ecdd84a95c",
-      "label": "Appointed as Founding Managing Director"
-    },
-    {
-      "id": "d7860f2fe51f",
-      "from": "ecd173a5a10a",
-      "to": "53ecdd84a95c",
-      "label": "Appointed as Chairman"
-    },
-    {
-      "id": "01533ea4f307",
-      "from": "842608d69bcc",
-      "to": "12dc9e17256e",
-      "label": "Appointed as Group Chief Executive Officer"
-    },
-    {
-      "id": "44c71a470fa0",
-      "from": "dddbbebcc51a",
-      "to": "6843b615b76a",
-      "label": "Appointed as Chief Executive Officer"
-    },
-    {
-      "id": "0a2897b0a47d",
-      "from": "4c174f83f166",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as Acting Zonal Director, Lagos Zonal Directorate 2"
+      "id": "849ad516e0fb",
+      "from": "eb5a8434f1bd",
+      "to": "fed919ff18b8",
+      "label": "PSC: 22.05%"
     },
     {
       "id": "c4709d0863fb",

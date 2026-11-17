@@ -2,34 +2,34 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 956,
-      "mentions": 1570,
+      "companies": 957,
+      "mentions": 1569,
       "risk": {
-        "Low": 836,
+        "Low": 835,
         "Critical": 56,
-        "Medium": 35,
+        "Medium": 37,
         "High": 29
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 57,
-      "mentions": 287,
+      "companies": 59,
+      "mentions": 293,
       "risk": {
-        "Medium": 20,
-        "Low": 28,
+        "Medium": 23,
+        "Low": 27,
         "Critical": 1,
         "High": 8
       }
     },
     {
       "industry": "Banking",
-      "companies": 33,
-      "mentions": 86,
+      "companies": 35,
+      "mentions": 89,
       "risk": {
         "Critical": 1,
         "Low": 27,
-        "Medium": 5
+        "Medium": 7
       }
     },
     {
@@ -72,22 +72,12 @@
       }
     },
     {
-      "industry": "Financial Services",
-      "companies": 8,
-      "mentions": 15,
-      "risk": {
-        "Medium": 2,
-        "Low": 2,
-        "High": 4
-      }
-    },
-    {
       "industry": "Agriculture",
-      "companies": 11,
-      "mentions": 14,
+      "companies": 13,
+      "mentions": 16,
       "risk": {
-        "Low": 10,
-        "Medium": 1
+        "Low": 11,
+        "Medium": 2
       }
     },
     {
@@ -97,6 +87,16 @@
       "risk": {
         "High": 1,
         "Medium": 1
+      }
+    },
+    {
+      "industry": "Financial Services",
+      "companies": 6,
+      "mentions": 13,
+      "risk": {
+        "Medium": 2,
+        "Low": 1,
+        "High": 3
       }
     },
     {
@@ -157,6 +157,16 @@
       "risk": {
         "Medium": 5,
         "Low": 2
+      }
+    },
+    {
+      "industry": "Financial Markets",
+      "companies": 3,
+      "mentions": 8,
+      "risk": {
+        "Low": 1,
+        "Medium": 1,
+        "High": 1
       }
     },
     {
@@ -297,6 +307,15 @@
       }
     },
     {
+      "industry": "Investment",
+      "companies": 2,
+      "mentions": 4,
+      "risk": {
+        "Low": 1,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Labor Union",
       "companies": 4,
       "mentions": 4,
@@ -330,11 +349,11 @@
       }
     },
     {
-      "industry": "Investment",
-      "companies": 1,
+      "industry": "Infrastructure Finance",
+      "companies": 2,
       "mentions": 3,
       "risk": {
-        "Low": 1
+        "Medium": 2
       }
     },
     {
@@ -411,14 +430,6 @@
     },
     {
       "industry": "FinTech",
-      "companies": 1,
-      "mentions": 2,
-      "risk": {
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Financial Markets",
       "companies": 1,
       "mentions": 2,
       "risk": {
@@ -1028,5 +1039,5 @@
       }
     }
   ],
-  "generated": "2026-11-16 17:56:52"
+  "generated": "2026-11-17 17:00:35"
 }
