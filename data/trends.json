@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 90,
-  "previous_articles": 96,
+  "recent_articles": 91,
+  "previous_articles": 95,
   "rising": [
     {
       "term": "nnpc",
@@ -84,12 +84,6 @@
       "change": -4
     },
     {
-      "term": "illegal",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
       "term": "projects",
       "recent": 0,
       "previous": 4,
@@ -124,6 +118,12 @@
       "recent": 0,
       "previous": 3,
       "change": -3
+    },
+    {
+      "term": "chinese",
+      "recent": 0,
+      "previous": 3,
+      "change": -3
     }
   ],
   "categories": [
@@ -134,13 +134,13 @@
     },
     {
       "category": "Company",
-      "recent": 23,
+      "recent": 24,
       "previous": 24
     },
     {
       "category": "Legal",
       "recent": 8,
-      "previous": 8
+      "previous": 7
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-17 17:00:33"
+  "generated": "2026-11-17 17:15:34"
 }

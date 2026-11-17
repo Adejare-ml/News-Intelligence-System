@@ -47,9 +47,9 @@
     },
     {
       "source": "The Punch",
-      "total": 760,
+      "total": 761,
       "published": 401,
-      "filtered": 359,
+      "filtered": 360,
       "accept_rate": 53,
       "avg_risk": 32.7,
       "engines": {
@@ -242,16 +242,17 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 89,
-      "published": 16,
-      "filtered": 73,
+      "total": 92,
+      "published": 17,
+      "filtered": 75,
       "accept_rate": 18,
-      "avg_risk": 28.6,
+      "avg_risk": 27.8,
       "engines": {
         "unknown": 8,
-        "ollama": 8
+        "ollama": 8,
+        "claude": 1
       },
-      "last_seen": "2026-11-16"
+      "last_seen": "2026-11-17"
     },
     {
       "source": "premiumtimesng",
@@ -2455,5 +2456,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-17 17:00:35"
+  "generated": "2026-11-17 17:15:35"
 }
