@@ -1,6 +1,18 @@
 {
   "alerts": [
     {
+      "date": "2026-11-18",
+      "title": "Bank official testifies on N500m disbursements from ONSA account to private company during Dasuki\u2019s tenure - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSUs0TmVsMVZQQ0JFSUg2TEZ0MnBmaF9reFpvYldPbmI5YzFDR1hLV0FOMUtpS2VzbUpkUmtWV1piekp4VC0wRHpVOFpWSUlEbzNpV0hyZU1QWUFqRjBjVkRZRkp4eE4xRndyUWdGQ0wxQjZZVVB4elhCVldja3J5ajMtTldDVXVvUkRIREdGcE85N0l0Q0tOZGlRSjBfZ1UyekE1elZoTl81SDdhWVRBbXZwSXJiNVlnR1hXd3NNcWZ3MXdxMUVWQXF5R3FJc3M3SnVIdmdpZmQ4R3dNZ1Z2Zml5cUEzQ0l4UnNGX0NOQVFvc1g4?oc=5",
+      "source": "Premium Times Nigeria",
+      "risk_score": 62,
+      "risk_level": "High",
+      "entities": [
+        "Office of the National Security Adviser (ONSA)",
+        "Sambo Dasuki"
+      ]
+    },
+    {
       "date": "2026-11-16",
       "title": "Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November - Investing.com Nigeria",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
@@ -1303,5 +1315,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-17 17:15:35"
+  "generated": "2026-11-18 04:17:09"
 }

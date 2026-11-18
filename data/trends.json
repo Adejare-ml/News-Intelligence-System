@@ -1,24 +1,24 @@
 {
   "window_days": 7,
-  "recent_articles": 91,
-  "previous_articles": 95,
+  "recent_articles": 80,
+  "previous_articles": 105,
   "rising": [
     {
-      "term": "nnpc",
-      "recent": 9,
-      "previous": 4,
-      "change": 5
-    },
-    {
-      "term": "recovers",
-      "recent": 5,
-      "previous": 0,
-      "change": 5
-    },
-    {
       "term": "alleged",
+      "recent": 7,
+      "previous": 1,
+      "change": 6
+    },
+    {
+      "term": "bank",
       "recent": 6,
-      "previous": 2,
+      "previous": 1,
+      "change": 5
+    },
+    {
+      "term": "first",
+      "recent": 5,
+      "previous": 1,
       "change": 4
     },
     {
@@ -28,69 +28,81 @@
       "change": 4
     },
     {
-      "term": "two",
-      "recent": 5,
+      "term": "airport",
+      "recent": 4,
       "previous": 1,
-      "change": 4
-    },
-    {
-      "term": "efcc recovers",
-      "recent": 4,
-      "previous": 0,
-      "change": 4
-    },
-    {
-      "term": "firms",
-      "recent": 4,
-      "previous": 0,
-      "change": 4
-    },
-    {
-      "term": "tells",
-      "recent": 4,
-      "previous": 0,
-      "change": 4
-    },
-    {
-      "term": "gas",
-      "recent": 5,
-      "previous": 2,
       "change": 3
     },
     {
-      "term": "kyari",
-      "recent": 5,
-      "previous": 2,
+      "term": "domestic",
+      "recent": 3,
+      "previous": 0,
       "change": 3
+    },
+    {
+      "term": "ngx",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "pipeline",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "board",
+      "recent": 3,
+      "previous": 1,
+      "change": 2
+    },
+    {
+      "term": "company",
+      "recent": 3,
+      "previous": 1,
+      "change": 2
     }
   ],
   "falling": [
     {
-      "term": "power",
-      "recent": 1,
+      "term": "kyari",
+      "recent": 0,
       "previous": 7,
-      "change": -6
+      "change": -7
     },
     {
-      "term": "cbn",
+      "term": "missing",
+      "recent": 0,
+      "previous": 7,
+      "change": -7
+    },
+    {
+      "term": "nigeria\u2019s",
+      "recent": 2,
+      "previous": 7,
+      "change": -5
+    },
+    {
+      "term": "power",
+      "recent": 1,
+      "previous": 6,
+      "change": -5
+    },
+    {
+      "term": "nnpc",
+      "recent": 5,
+      "previous": 9,
+      "change": -4
+    },
+    {
+      "term": "audit",
       "recent": 1,
       "previous": 5,
       "change": -4
     },
     {
-      "term": "capital",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
-      "term": "projects",
-      "recent": 0,
-      "previous": 4,
-      "change": -4
-    },
-    {
-      "term": "seeks",
+      "term": "revenue",
       "recent": 0,
       "previous": 4,
       "change": -4
@@ -108,39 +120,27 @@
       "change": -4
     },
     {
-      "term": "reps",
-      "recent": 2,
-      "previous": 5,
-      "change": -3
-    },
-    {
-      "term": "aviation",
+      "term": "targets",
       "recent": 0,
-      "previous": 3,
-      "change": -3
-    },
-    {
-      "term": "chinese",
-      "recent": 0,
-      "previous": 3,
-      "change": -3
+      "previous": 4,
+      "change": -4
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 58,
-      "previous": 63
+      "recent": 49,
+      "previous": 71
     },
     {
       "category": "Company",
-      "recent": 24,
-      "previous": 24
+      "recent": 23,
+      "previous": 25
     },
     {
       "category": "Legal",
-      "recent": 8,
-      "previous": 7
+      "recent": 7,
+      "previous": 8
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-17 17:15:34"
+  "generated": "2026-11-18 04:17:09"
 }

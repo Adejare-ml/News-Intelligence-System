@@ -6,13 +6,12 @@ Mentioned in 19 reports tracked by AURA.
 
 - Mentions tracked: 19
 - Holdings: 0
-- Recent stories: 2
+- Recent stories: 1
 - Last seen: 15 Nov 2026
 
 ## In the news
 
 - [“Wealth Of Experience And Expertise” — MTN Nigeria Names Prof. Fabian Ajogwu, SAN, Among Five New Board Directors](https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeldGYjVHQ2hJdTQyMDhJd2hJZ013MjcyYUUyTEVhUUR0YkdUYU0tM1I3UkNyalh3U1hzeVNPRmQtNTNGeGF3SGx0VzRXMzZEZFRBYy01S1hqbU96UGhNcFduZGxnZ2gwNUVOaGg4RDlIeUVZUHVDekMyU3E3cVgxeHh2SGczUFFmLXRNZVdmVmNRbzlONThCV1RWZktPeC1LcS1DdjFITXNBTTNHNmtfSlBaOG41N293d2hDV0Fwc3NXXy0tRGQzUkM1eExqVjF1cXc?oc=5) · TheNigeriaLawyer · 15 Nov 2026
-- [Senate summons NCC, MTN, Airtel, others over poor network, unjustified airtime deductions](https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/) · BusinessDay · 11 Nov 2026
 
 ## Appointments and departures
 

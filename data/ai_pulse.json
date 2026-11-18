@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-17 17:14:28",
+  "generated": "2026-11-18 04:17:04",
   "models": [
     {
       "id": "MiniMaxAI/MiniMax-H3-Image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 1403,
+      "likes": 1493,
       "downloads": 727110
     },
     {
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 20375,
+      "likes": 20453,
       "downloads": 6942530
-    },
-    {
-      "id": "Lightricks/LTX-2.5",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "task": "image-to-video",
-      "likes": 12357,
-      "downloads": 2828071
     },
     {
       "id": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "task": "audio-to-audio",
-      "likes": 477,
+      "likes": 523,
       "downloads": 4445
+    },
+    {
+      "id": "Lightricks/LTX-2.5",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "task": "image-to-video",
+      "likes": 12421,
+      "downloads": 2828071
     },
     {
       "id": "thinkingmachines/Inkling-2-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
       "task": "image-text-to-text",
-      "likes": 434,
+      "likes": 442,
       "downloads": 18359
     },
     {
       "id": "unsloth/Qwen3.8-27B-GGUF",
       "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
       "task": "",
-      "likes": 6124,
+      "likes": 6147,
       "downloads": 6827598
     },
     {
       "id": "Comfy-Org/MiniMax-H3-Image",
       "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 514,
+      "likes": 522,
       "downloads": 2660341
     },
     {
-      "id": "Zyphra/ZONOS3-Mini",
-      "url": "https://huggingface.co/Zyphra/ZONOS3-Mini",
-      "task": "text-to-speech",
-      "likes": 505,
-      "downloads": 93909
+      "id": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "task": "text-to-image",
+      "likes": 518,
+      "downloads": 160748
     }
   ],
   "papers": [
     {
-      "title": "GPBam: A Retrieval-Aware German Public Law Exam Benchmark",
-      "url": "https://huggingface.co/papers/2611.18981",
+      "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
+      "url": "https://huggingface.co/papers/2611.18856",
       "upvotes": 0
     },
     {
-      "title": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
-      "url": "https://huggingface.co/papers/2611.09825",
-      "upvotes": 3
-    },
-    {
-      "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
-      "url": "https://huggingface.co/papers/2611.14960",
-      "upvotes": 3
-    },
-    {
-      "title": "JEPA4R: Embodied JEPA World Models with 4D Point Planning",
-      "url": "https://huggingface.co/papers/2611.19771",
-      "upvotes": 3
-    },
-    {
-      "title": "Zuse: A Decision Model for European Languages",
-      "url": "https://huggingface.co/papers/2611.06238",
+      "title": "Regularized Score Centering",
+      "url": "https://huggingface.co/papers/2611.21791",
       "upvotes": 0
     },
     {
-      "title": "LynnReal-Hand: Unlocking World Interaction with Hand Control",
-      "url": "https://huggingface.co/papers/2611.21479",
-      "upvotes": 1
+      "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
+      "url": "https://huggingface.co/papers/2611.19559",
+      "upvotes": 8
+    },
+    {
+      "title": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
+      "url": "https://huggingface.co/papers/2611.15348",
+      "upvotes": 9
+    },
+    {
+      "title": "Weight-Space Programming Doesn't Need Transformers",
+      "url": "https://huggingface.co/papers/2611.22055",
+      "upvotes": 20
+    },
+    {
+      "title": "Multi-Branch Transformer",
+      "url": "https://huggingface.co/papers/2611.19800",
+      "upvotes": 17
     }
   ]
 }

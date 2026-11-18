@@ -11,7 +11,7 @@ Mentioned in 32 reports tracked by AURA.
 
 ## In the news
 
-- [Senate summons NCC, MTN, Airtel, others over poor network, unjustified airtime deductions](https://businessday.ng/news/article/senate-summons-ncc-mtn-airtel-others-over-poor-network-unjustified-airtime-deductions/) · BusinessDay · 11 Nov 2026
+- [Yobe Airport: Senate approves Tinubu’s request to refund ₦100.5 billion](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcm1MNWsyUEtPTUNOSVdsN1o0Ylh1TW5mSkZvc2JBcEFuMTB4ZlZERWV3bGotWHRuNkljTzl4TlZNaHZPM0V1TVFrRURaTnRLVWZSdEVrdDJmelZpNmJneDdGMmxfOXZFdWhINFp2TXZnOHZVMXRwbjNoVDhFTkJJYXdYQTBoazdfYWlESUVaeloxU0xnb3AwUzhLN21GdEt2NXlURFhuZ3pWODlRcU1xSFkzdWNjak9pMmdZaWhjcVQ3X09iaEs5SXdVWWJFVUdBUmhMUFlDcWw?oc=5) · Premium Times · 17 Nov 2026
 
 ## Appointments and departures
 
