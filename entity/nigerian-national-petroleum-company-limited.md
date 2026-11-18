@@ -2,9 +2,9 @@
 
 Company or body · Oil & Gas
 
-Mentioned in 103 reports tracked by AURA.
+Mentioned in 104 reports tracked by AURA.
 
-- Mentions tracked: 103
+- Mentions tracked: 104
 - Holdings: 0
 - Recent stories: 1
 - Last seen: 29 Oct 2026
@@ -15,6 +15,7 @@ Mentioned in 103 reports tracked by AURA.
 
 ## Appointments and departures
 
+- 18 Nov 2026: **Bayo Ojulari**, Group Chief Executive Officer
 - 11 Nov 2026: **Mele Kyari**, Group Chief Executive Officer
 - 6 Nov 2026: **Bashir Bayo Ojulari**, Group Chief Executive Officer, NNPC Limited
 

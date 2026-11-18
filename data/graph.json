@@ -139,6 +139,24 @@
       "risk": "Low"
     },
     {
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ebba2aef82e9",
+      "label": "Nigerian National Petroleum Company",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f6ea64bf1db3",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "3a855b071fef",
       "label": "Nigeria Revenue Service",
       "type": "agency",
@@ -147,6 +165,18 @@
     {
       "id": "f8f7bbd6535e",
       "label": "Nigerian National Petroleum Company (NNPC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "07e47c2db94f",
+      "label": "NIMASA",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cd76249f84cf",
+      "label": "Nigerian Exchange Limited",
       "type": "agency",
       "risk": "Low"
     },
@@ -175,20 +205,8 @@
       "risk": "Low"
     },
     {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "974789639094",
       "label": "Debt Management Office",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "f6ea64bf1db3",
-      "label": "Federal Competition and Consumer Protection Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -223,26 +241,14 @@
       "risk": "Low"
     },
     {
-      "id": "cd76249f84cf",
-      "label": "Nigerian Exchange Limited",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "30332f9a7d69",
-      "label": "Pension Industry Infrastructure Platform",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "6906ebada0c3",
-      "label": "PenCom",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "58c58351d674",
+      "label": "Olayemi Cardoso",
       "type": "person",
       "risk": "Low"
     },
@@ -255,6 +261,60 @@
     {
       "id": "e46c80167240",
       "label": "Unnamed former Chief Operating Officer",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0dbd4888a43e",
+      "label": "Peeyush Karnani",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "1a29b473f3a6",
+      "label": "Sunbeth Agro HoldCo",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "6eb8c640e00d",
+      "label": "Fola Aiyesimoju",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "14119ced6628",
+      "label": "UAC of Nigeria Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "16a1a80e8732",
+      "label": "Farouk Gumel",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "af13d56292e7",
+      "label": "Tropical General Investments (TGI) Group",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "c6b6a9282f26",
+      "label": "Ayomipo Wey",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0c6e44f7bf19",
+      "label": "Bayo Ojulari",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "2c5ac861b416",
+      "label": "Emem Usoro",
       "type": "person",
       "risk": "Low"
     },
@@ -385,76 +445,16 @@
       "risk": "Low"
     },
     {
-      "id": "23d28578b862",
-      "label": "Nwanneka Nwonkike",
-      "type": "person",
-      "risk": "Low"
+      "id": "be88442e5133",
+      "label": "22 Plus Invest Limited",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "cab1be53cb3b",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "id": "b3d794e72a63",
+      "label": "DP World Logistics Limited",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e88757374e2f",
-      "label": "Bashir Tanimu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "85cbb864d800",
-      "label": "Fabian Ajogwu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "cfaeacae2eea",
-      "label": "Patricia Lar",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "daaeb0893724",
-      "label": "UNIJOS",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "894050f02b6c",
-      "label": "Jonny Baxter",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "e87d7d245824",
-      "label": "British High Commission",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "b18554f8a377",
-      "label": "Geoffrey Manley",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ae510682c88a",
-      "label": "British International Investment",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "259569cb7165",
-      "label": "Afnan Hannan",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "3fab39407c78",
-      "label": "Okra Solar",
-      "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "3afd71cd31bc",
@@ -645,10 +645,52 @@
       "label": "Appointed as President of Nigeria"
     },
     {
+      "id": "fd1604102e20",
+      "from": "58c58351d674",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as CBN Governor"
+    },
+    {
       "id": "01056e9f0042",
       "from": "c4dd50a83302",
       "to": "61593181343c",
       "label": "Appointed as National Security Adviser"
+    },
+    {
+      "id": "0fde0536b7e1",
+      "from": "0dbd4888a43e",
+      "to": "1a29b473f3a6",
+      "label": "Appointed as Chief Strategy Officer, Sunbeth Agro HoldCo"
+    },
+    {
+      "id": "eb57ab74a936",
+      "from": "6eb8c640e00d",
+      "to": "14119ced6628",
+      "label": "Appointed as Group Managing Director"
+    },
+    {
+      "id": "a49f5a8f20f1",
+      "from": "16a1a80e8732",
+      "to": "af13d56292e7",
+      "label": "Appointed as Vice Chairman"
+    },
+    {
+      "id": "9845bd8c5122",
+      "from": "c6b6a9282f26",
+      "to": "14119ced6628",
+      "label": "Appointed as Company Secretary and Group General Counsel"
+    },
+    {
+      "id": "f17d6ec81b5e",
+      "from": "0c6e44f7bf19",
+      "to": "f38bd75574f6",
+      "label": "Appointed as Group Chief Executive Officer"
+    },
+    {
+      "id": "834382021d75",
+      "from": "2c5ac861b416",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as CBN Deputy Governor, Operations"
     },
     {
       "id": "1fbb33996f92",
@@ -741,46 +783,16 @@
       "label": "Appointed as Customs Area Controller"
     },
     {
-      "id": "0429f05a33b0",
-      "from": "23d28578b862",
-      "to": "cab1be53cb3b",
-      "label": "Appointed as Acting Zonal Director, Sokoto"
+      "id": "817c3d0323ca",
+      "from": "1a29b473f3a6",
+      "to": "30a7ef8d2b51",
+      "label": "PSC: 73.29%"
     },
     {
-      "id": "f7d2a3fde2d1",
-      "from": "e88757374e2f",
-      "to": "b787895b59f1",
-      "label": "Appointed as Public Relations Officer"
-    },
-    {
-      "id": "520f4dea5410",
-      "from": "85cbb864d800",
-      "to": "dce5a31d3181",
-      "label": "Appointed as Board Director"
-    },
-    {
-      "id": "60521bebf5c1",
-      "from": "cfaeacae2eea",
-      "to": "daaeb0893724",
-      "label": "Appointed as Vice\u2011Chancellor"
-    },
-    {
-      "id": "5bb5dfb4be26",
-      "from": "894050f02b6c",
-      "to": "e87d7d245824",
-      "label": "Appointed as British Deputy High Commissioner in Lagos"
-    },
-    {
-      "id": "8b5f22a4c0ae",
-      "from": "b18554f8a377",
-      "to": "ae510682c88a",
-      "label": "Appointed as Director and Head of Infrastructure & Climate Debt, Africa and South Asia"
-    },
-    {
-      "id": "5f18e6fbac0d",
-      "from": "259569cb7165",
-      "to": "3fab39407c78",
-      "label": "Appointed as CEO"
+      "id": "8a05bbe6698b",
+      "from": "be88442e5133",
+      "to": "b3d794e72a63",
+      "label": "PSC: 43%"
     },
     {
       "id": "18308313419a",

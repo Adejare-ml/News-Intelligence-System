@@ -1,23 +1,38 @@
 {
   "new_companies": [
-    "Augustsecrets",
-    "Milestone Global",
-    "Milestone Global Bank"
+    "22 Plus Invest Limited",
+    "DP World Logistics Limited",
+    "Sunbeth Agro HoldCo",
+    "Tropical General Investments (TGI) Group"
   ],
   "new_people": [
-    "Unnamed former Chief Operating Officer"
+    "Ayomipo Wey",
+    "Bayo Ojulari",
+    "Emem Usoro",
+    "Farouk Gumel",
+    "Fola Aiyesimoju",
+    "Peeyush Karnani"
   ],
-  "psc_added": [],
+  "psc_added": [
+    {
+      "person": "22 Plus Invest Limited",
+      "company": "DP World Logistics Limited"
+    },
+    {
+      "person": "Sunbeth Agro HoldCo",
+      "company": "Livestock Feeds Plc"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 3,
-    "new_people": 1,
-    "psc_added": 0,
+    "new_companies": 4,
+    "new_people": 6,
+    "psc_added": 2,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-18 04:17:02"
+  "generated": "2026-11-18 16:32:40"
 }

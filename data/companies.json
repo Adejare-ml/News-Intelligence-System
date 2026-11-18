@@ -474,7 +474,7 @@
   {
     "Company": "NNPC Limited",
     "Mention Count": 27,
-    "Last Seen": "2026-11-18 04:14",
+    "Last Seen": "2026-11-18 4:14",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
     "First Seen": ""
@@ -1770,7 +1770,7 @@
   {
     "Company": "Renaissance",
     "Mention Count": 5,
-    "Last Seen": "2026-11-18 04:14",
+    "Last Seen": "2026-11-18 4:14",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": ""
@@ -3993,9 +3993,9 @@
   },
   {
     "Company": "Air Peace",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-19 23:29",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-11-18 16:30",
+    "Industry": "Aviation",
     "Risk Level": "Low",
     "First Seen": ""
   },
@@ -6321,7 +6321,7 @@
   },
   {
     "Company": "Nigerian National Petroleum Company Limited",
-    "Mention Count": 103,
+    "Mention Count": 104,
     "Last Seen": "2026-10-29 2:18",
     "Industry": "Oil & Gas",
     "Risk Level": "High",
@@ -10505,25 +10505,25 @@
   },
   {
     "Company": "Livestock Feeds Plc",
-    "Mention Count": 1,
-    "Last Seen": "2026-11-17 16:57",
-    "Industry": "Agriculture",
+    "Mention Count": 3,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "Animal Nutrition",
     "Risk Level": "Medium",
     "First Seen": "2026-11-17 16:57"
   },
   {
     "Company": "Sunbeth Treenuts and Sesame Limited",
-    "Mention Count": 1,
-    "Last Seen": "2026-11-17 16:57",
-    "Industry": "General",
+    "Mention Count": 3,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "Agriculture",
     "Risk Level": "Medium",
     "First Seen": "2026-11-17 16:57"
   },
   {
     "Company": "UAC of Nigeria Plc",
-    "Mention Count": 1,
-    "Last Seen": "2026-11-17 16:57",
-    "Industry": "General",
+    "Mention Count": 4,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "Conglomerate",
     "Risk Level": "Medium",
     "First Seen": "2026-11-17 16:57"
   },
@@ -10606,5 +10606,37 @@
     "Industry": "Food & Nutrition",
     "Risk Level": "Low",
     "First Seen": "2026-11-18 04:15"
+  },
+  {
+    "Company": "Sunbeth Agro HoldCo",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "Agriculture",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-18 16:28"
+  },
+  {
+    "Company": "DP World Logistics Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "Logistics",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-18 16:29"
+  },
+  {
+    "Company": "22 Plus Invest Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-18 16:29"
+  },
+  {
+    "Company": "Tropical General Investments (TGI) Group",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-18 16:29",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-18 16:29"
   }
 ]

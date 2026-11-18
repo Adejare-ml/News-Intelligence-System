@@ -2,10 +2,10 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 957,
-      "mentions": 1569,
+      "companies": 956,
+      "mentions": 1567,
       "risk": {
-        "Low": 835,
+        "Low": 834,
         "Critical": 56,
         "Medium": 37,
         "High": 29
@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 59,
-      "mentions": 296,
+      "mentions": 297,
       "risk": {
         "Medium": 23,
         "Low": 27,
@@ -44,11 +44,11 @@
     },
     {
       "industry": "Aviation",
-      "companies": 11,
-      "mentions": 30,
+      "companies": 12,
+      "mentions": 33,
       "risk": {
         "Medium": 6,
-        "Low": 4,
+        "Low": 5,
         "High": 1
       }
     },
@@ -73,11 +73,11 @@
     },
     {
       "industry": "Agriculture",
-      "companies": 13,
-      "mentions": 16,
+      "companies": 14,
+      "mentions": 20,
       "risk": {
         "Low": 11,
-        "Medium": 2
+        "Medium": 3
       }
     },
     {
@@ -148,6 +148,15 @@
       "risk": {
         "Low": 4,
         "High": 1
+      }
+    },
+    {
+      "industry": "Conglomerate",
+      "companies": 3,
+      "mentions": 8,
+      "risk": {
+        "Low": 1,
+        "Medium": 2
       }
     },
     {
@@ -290,15 +299,6 @@
       }
     },
     {
-      "industry": "Conglomerate",
-      "companies": 2,
-      "mentions": 4,
-      "risk": {
-        "Low": 1,
-        "Medium": 1
-      }
-    },
-    {
       "industry": "Finance",
       "companies": 2,
       "mentions": 4,
@@ -338,6 +338,14 @@
       "mentions": 4,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Animal Nutrition",
+      "companies": 1,
+      "mentions": 3,
+      "risk": {
+        "Medium": 1
       }
     },
     {
@@ -473,6 +481,15 @@
       "companies": 1,
       "mentions": 2,
       "risk": {
+        "Medium": 1
+      }
+    },
+    {
+      "industry": "Logistics",
+      "companies": 2,
+      "mentions": 2,
+      "risk": {
+        "Low": 1,
         "Medium": 1
       }
     },
@@ -807,14 +824,6 @@
       }
     },
     {
-      "industry": "Logistics",
-      "companies": 1,
-      "mentions": 1,
-      "risk": {
-        "Low": 1
-      }
-    },
-    {
       "industry": "Logistics & Infrastructure",
       "companies": 1,
       "mentions": 1,
@@ -1047,5 +1056,5 @@
       }
     }
   ],
-  "generated": "2026-11-18 04:17:09"
+  "generated": "2026-11-18 16:33:13"
 }

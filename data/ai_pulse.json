@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-18 04:17:04",
+  "generated": "2026-11-18 16:33:01",
   "models": [
-    {
-      "id": "MiniMaxAI/MiniMax-H3-Image",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
-      "task": "text-to-image",
-      "likes": 1493,
-      "downloads": 727110
-    },
-    {
-      "id": "Qwen/Qwen3.8-27B",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "task": "image-text-to-text",
-      "likes": 20453,
-      "downloads": 6942530
-    },
     {
       "id": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "task": "audio-to-audio",
-      "likes": 523,
-      "downloads": 4445
+      "likes": 622,
+      "downloads": 5314
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 12421,
-      "downloads": 2828071
+      "likes": 12510,
+      "downloads": 2871190
     },
     {
       "id": "thinkingmachines/Inkling-2-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
       "task": "image-text-to-text",
-      "likes": 442,
-      "downloads": 18359
+      "likes": 481,
+      "downloads": 30082
     },
     {
-      "id": "unsloth/Qwen3.8-27B-GGUF",
-      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-      "task": "",
-      "likes": 6147,
-      "downloads": 6827598
+      "id": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "task": "image-text-to-text",
+      "likes": 337,
+      "downloads": 377
     },
     {
-      "id": "Comfy-Org/MiniMax-H3-Image",
-      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3-Image",
+      "id": "MiniMaxAI/MiniMax-H3-Image",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "task": "text-to-image",
-      "likes": 522,
-      "downloads": 2660341
+      "likes": 1571,
+      "downloads": 759661
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "task": "image-text-to-text",
+      "likes": 20536,
+      "downloads": 6888351
     },
     {
       "id": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
       "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
       "task": "text-to-image",
-      "likes": 518,
-      "downloads": 160748
+      "likes": 592,
+      "downloads": 224306
+    },
+    {
+      "id": "n4ze3m/tiny-voca",
+      "url": "https://huggingface.co/n4ze3m/tiny-voca",
+      "task": "text-to-speech",
+      "likes": 275,
+      "downloads": 4430
     }
   ],
   "papers": [
     {
-      "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
-      "url": "https://huggingface.co/papers/2611.18856",
-      "upvotes": 0
+      "title": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
+      "url": "https://huggingface.co/papers/2611.21938",
+      "upvotes": 3
     },
     {
-      "title": "Regularized Score Centering",
-      "url": "https://huggingface.co/papers/2611.21791",
-      "upvotes": 0
+      "title": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
+      "url": "https://huggingface.co/papers/2611.22563",
+      "upvotes": 3
     },
     {
-      "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
-      "url": "https://huggingface.co/papers/2611.19559",
-      "upvotes": 8
+      "title": "MillBill: A Machining Agent with Geometric Feedback",
+      "url": "https://huggingface.co/papers/2611.22565",
+      "upvotes": 3
     },
     {
-      "title": "Breath-Dx: A Time Series Classification Benchmark for Disease Screening with eNose",
-      "url": "https://huggingface.co/papers/2611.15348",
-      "upvotes": 9
+      "title": "VisualArtifactSpec 1.0: Evaluating Visual Artifacts under Task Specifications",
+      "url": "https://huggingface.co/papers/2611.21382",
+      "upvotes": 5
     },
     {
-      "title": "Weight-Space Programming Doesn't Need Transformers",
-      "url": "https://huggingface.co/papers/2611.22055",
-      "upvotes": 20
+      "title": "AuXSpec: Learning to Autoformalize Program Specifications via Executable Postconditions",
+      "url": "https://huggingface.co/papers/2611.21421",
+      "upvotes": 2
     },
     {
-      "title": "Multi-Branch Transformer",
-      "url": "https://huggingface.co/papers/2611.19800",
-      "upvotes": 17
+      "title": "PanDWM: Panoramic 4D Driving World Models",
+      "url": "https://huggingface.co/papers/2611.19857",
+      "upvotes": 1
     }
   ]
 }
