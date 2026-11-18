@@ -14,7 +14,7 @@
     {
       "industry": "Oil & Gas",
       "companies": 59,
-      "mentions": 294,
+      "mentions": 296,
       "risk": {
         "Medium": 23,
         "Low": 27,
@@ -24,11 +24,11 @@
     },
     {
       "industry": "Banking",
-      "companies": 35,
-      "mentions": 89,
+      "companies": 37,
+      "mentions": 91,
       "risk": {
         "Critical": 1,
-        "Low": 27,
+        "Low": 29,
         "Medium": 7
       }
     },
@@ -727,6 +727,14 @@
       }
     },
     {
+      "industry": "Food & Nutrition",
+      "companies": 1,
+      "mentions": 1,
+      "risk": {
+        "Low": 1
+      }
+    },
+    {
       "industry": "Gaming",
       "companies": 1,
       "mentions": 1,
@@ -1039,5 +1047,5 @@
       }
     }
   ],
-  "generated": "2026-11-17 17:15:35"
+  "generated": "2026-11-18 04:17:09"
 }

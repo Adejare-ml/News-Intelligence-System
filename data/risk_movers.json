@@ -10,33 +10,6 @@
       "previous_mentions": 1
     },
     {
-      "key": "national petroleum company",
-      "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 44.7,
-      "previous_avg": 21.2,
-      "delta": 23.5,
-      "recent_mentions": 6,
-      "previous_mentions": 4
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 59.8,
-      "previous_avg": 43.0,
-      "delta": 16.8,
-      "recent_mentions": 6,
-      "previous_mentions": 5
-    },
-    {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "recent_avg": 24.0,
-      "previous_avg": 40.0,
-      "delta": -16.0,
-      "recent_mentions": 5,
-      "previous_mentions": 4
-    },
-    {
       "key": "upstream petroleum regulatory commission",
       "label": "Nigerian Upstream Petroleum Regulatory Commission",
       "recent_avg": 10.0,
@@ -44,6 +17,33 @@
       "delta": -15.0,
       "recent_mentions": 2,
       "previous_mentions": 1
+    },
+    {
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "recent_avg": 20.0,
+      "previous_avg": 34.2,
+      "delta": -14.2,
+      "recent_mentions": 3,
+      "previous_mentions": 6
+    },
+    {
+      "key": "economic and financial crimes commission",
+      "label": "Economic and Financial Crimes Commission",
+      "recent_avg": 62.5,
+      "previous_avg": 49.9,
+      "delta": 12.6,
+      "recent_mentions": 2,
+      "previous_mentions": 9
+    },
+    {
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 13.8,
+      "previous_avg": 26.0,
+      "delta": -12.2,
+      "recent_mentions": 4,
+      "previous_mentions": 7
     },
     {
       "key": "mtn",
@@ -64,45 +64,9 @@
       "previous_mentions": 4
     },
     {
-      "key": "mele kyari",
-      "label": "Mele Kyari",
-      "recent_avg": 49.6,
-      "previous_avg": 45.0,
-      "delta": 4.6,
-      "recent_mentions": 5,
-      "previous_mentions": 2
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 25.5,
-      "previous_avg": 25.0,
-      "delta": 0.5,
-      "recent_mentions": 4,
-      "previous_mentions": 6
-    },
-    {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "recent_avg": 40.0,
-      "previous_avg": 40.0,
-      "delta": 0.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
       "key": "federal competition and consumer protection commission",
       "label": "Federal Competition and Consumer Protection Commission",
       "recent_avg": 62.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "revenue mobilisation allocation and fiscal commission",
-      "label": "Revenue Mobilisation Allocation and Fiscal Commission",
-      "recent_avg": 58.5,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -154,6 +118,15 @@
       "previous_mentions": 0
     },
     {
+      "key": "economic and financial crimes commission efcc",
+      "label": "Economic and Financial Crimes Commission (EFCC)",
+      "recent_avg": 40.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
       "key": "communications commission",
       "label": "Nigerian Communications Commission",
       "recent_avg": 37.5,
@@ -179,8 +152,35 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
+    },
+    {
+      "key": "china maritime safety administration",
+      "label": "China Maritime Safety Administration",
+      "recent_avg": 15.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "the alternative bank",
+      "label": "The Alternative Bank Limited",
+      "recent_avg": 12.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "gul khan",
+      "label": "Gul Khan",
+      "recent_avg": 12.5,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 2,
+      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-17 17:15:35"
+  "generated": "2026-11-18 04:17:09"
 }
