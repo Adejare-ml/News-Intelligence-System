@@ -1,32 +1,32 @@
 {
-  "generated": "2026-11-18 16:33:01",
+  "generated": "2026-11-18 17:31:09",
   "models": [
     {
       "id": "higurashi-ai/Haru-4B",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "task": "audio-to-audio",
-      "likes": 622,
+      "likes": 629,
       "downloads": 5314
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 12510,
+      "likes": 12512,
       "downloads": 2871190
     },
     {
       "id": "thinkingmachines/Inkling-2-Small",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
       "task": "image-text-to-text",
-      "likes": 481,
+      "likes": 483,
       "downloads": 30082
     },
     {
       "id": "harness-hub/Qwen3.8-27B-pi-adapted",
       "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
       "task": "image-text-to-text",
-      "likes": 337,
+      "likes": 347,
       "downloads": 377
     },
     {
@@ -40,25 +40,30 @@
       "id": "Qwen/Qwen3.8-27B",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "task": "image-text-to-text",
-      "likes": 20536,
+      "likes": 20540,
       "downloads": 6888351
-    },
-    {
-      "id": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "task": "text-to-image",
-      "likes": 592,
-      "downloads": 224306
     },
     {
       "id": "n4ze3m/tiny-voca",
       "url": "https://huggingface.co/n4ze3m/tiny-voca",
       "task": "text-to-speech",
-      "likes": 275,
+      "likes": 277,
       "downloads": 4430
+    },
+    {
+      "id": "tencent/Hy4-flash",
+      "url": "https://huggingface.co/tencent/Hy4-flash",
+      "task": "image-text-to-text",
+      "likes": 206,
+      "downloads": 159
     }
   ],
   "papers": [
+    {
+      "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+      "url": "https://huggingface.co/papers/2611.21925",
+      "upvotes": 2
+    },
     {
       "title": "HubEgo-100K: In-the-Wild Egocentric Video of Skilled Work for Robot Learning",
       "url": "https://huggingface.co/papers/2611.21938",
@@ -83,11 +88,6 @@
       "title": "AuXSpec: Learning to Autoformalize Program Specifications via Executable Postconditions",
       "url": "https://huggingface.co/papers/2611.21421",
       "upvotes": 2
-    },
-    {
-      "title": "PanDWM: Panoramic 4D Driving World Models",
-      "url": "https://huggingface.co/papers/2611.19857",
-      "upvotes": 1
     }
   ]
 }

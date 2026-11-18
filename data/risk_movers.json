@@ -46,6 +46,15 @@
       "previous_mentions": 5
     },
     {
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 30.0,
+      "previous_avg": 36.7,
+      "delta": -6.7,
+      "recent_mentions": 2,
+      "previous_mentions": 3
+    },
+    {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
       "recent_avg": 19.0,
@@ -170,17 +179,8 @@
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
-    },
-    {
-      "key": "sunbeth agro holdco",
-      "label": "Sunbeth Agro HoldCo",
-      "recent_avg": 35.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-18 16:33:13"
+  "generated": "2026-11-18 17:31:29"
 }

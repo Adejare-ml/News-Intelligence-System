@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0ea00150bb02",
       "label": "Securities and Exchange Commission",
       "type": "agency",
@@ -193,6 +199,12 @@
       "risk": "Low"
     },
     {
+      "id": "55b9a699f8f5",
+      "label": "National Technical Institute",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0c2be969618b",
       "label": "Federal Government of Nigeria",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "4318c4c9c3f1",
       "label": "Nigeria Security and Civil Defence Corps",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "9daa63cb1687",
-      "label": "GIW",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e8bd74a934dc",
-      "label": "Benue State University",
       "type": "agency",
       "risk": "Low"
     },
@@ -610,12 +610,6 @@
       "id": "26e2ff8028c0",
       "label": "Youth Beneficiaries",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
       "risk": "Low"
     },
     {
