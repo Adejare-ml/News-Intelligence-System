@@ -1,6 +1,6 @@
 {
   "window_days": 7,
-  "recent_articles": 74,
+  "recent_articles": 77,
   "previous_articles": 109,
   "rising": [
     {
@@ -40,6 +40,12 @@
       "change": 3
     },
     {
+      "term": "deadline",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
       "term": "deal",
       "recent": 3,
       "previous": 0,
@@ -53,12 +59,6 @@
     },
     {
       "term": "feeds",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
-    },
-    {
-      "term": "group",
       "recent": 3,
       "previous": 0,
       "change": 3
@@ -91,9 +91,9 @@
     },
     {
       "term": "power",
-      "recent": 1,
+      "recent": 2,
       "previous": 6,
-      "change": -5
+      "change": -4
     },
     {
       "term": "project",
@@ -129,7 +129,7 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 45,
+      "recent": 48,
       "previous": 75
     },
     {
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-18 16:33:10"
+  "generated": "2026-11-18 17:31:29"
 }

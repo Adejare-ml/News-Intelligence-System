@@ -283,7 +283,7 @@
     {
       "key": "house of representatives",
       "label": "House of Representatives",
-      "total_mentions": 33,
+      "total_mentions": 35,
       "points": [
         {
           "week": "2026-09-14",
@@ -326,6 +326,12 @@
           "mentions": 5,
           "avg_risk": 35.0,
           "max_risk": 55
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 2,
+          "avg_risk": 30.0,
+          "max_risk": 45
         }
       ]
     },
@@ -6877,5 +6883,5 @@
       ]
     }
   ],
-  "generated": "2026-11-18 16:33:13"
+  "generated": "2026-11-18 17:31:29"
 }
