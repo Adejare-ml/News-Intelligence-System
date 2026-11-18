@@ -1,38 +1,17 @@
 {
-  "new_companies": [
-    "22 Plus Invest Limited",
-    "DP World Logistics Limited",
-    "Sunbeth Agro HoldCo",
-    "Tropical General Investments (TGI) Group"
-  ],
-  "new_people": [
-    "Ayomipo Wey",
-    "Bayo Ojulari",
-    "Emem Usoro",
-    "Farouk Gumel",
-    "Fola Aiyesimoju",
-    "Peeyush Karnani"
-  ],
-  "psc_added": [
-    {
-      "person": "22 Plus Invest Limited",
-      "company": "DP World Logistics Limited"
-    },
-    {
-      "person": "Sunbeth Agro HoldCo",
-      "company": "Livestock Feeds Plc"
-    }
-  ],
+  "new_companies": [],
+  "new_people": [],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 4,
-    "new_people": 6,
-    "psc_added": 2,
+    "new_companies": 0,
+    "new_people": 0,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-18 16:32:40"
+  "generated": "2026-11-18 17:31:08"
 }
