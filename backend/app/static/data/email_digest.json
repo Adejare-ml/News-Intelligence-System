@@ -1,38 +1,133 @@
 {
-  "edition": "20261117-12121-preview",
+  "edition": "20261118-12135-preview",
   "preview": true,
-  "built_at": "2026-11-17 17:15:35",
-  "date": "Tuesday 17 November 2026",
-  "subject": "AURA · Tue 17 Nov · TotalEnergies begins Nigerias first deepwater exploration drilling",
-  "preheader": "1 story, 0 risk alerts",
+  "built_at": "2026-11-18 04:17:09",
+  "date": "Wednesday 18 November 2026",
+  "subject": "AURA alert · Wed 18 Nov · 10 stories, 1 risk alert",
+  "preheader": "Yobe Airport: Senate approves Tinubu’s request to refund ₦100.5 billion · 10 stories, 1 risk alert",
   "since": "Tue 17 Nov, 18:00 Lagos",
-  "through_id": 12121,
+  "through_id": 12135,
   "stats": {
-    "reports": 1,
-    "stories": 1,
-    "outlets": 1,
-    "risk_alerts": 0,
-    "public_money": 0,
+    "reports": 11,
+    "stories": 10,
+    "outlets": 5,
+    "risk_alerts": 1,
+    "public_money": 2,
     "appointments": 0,
     "ownership": 0
   },
   "nothing_in": [
-    "risk alerts",
-    "public-money decisions",
     "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "TotalEnergies has begun deepwater exploration drilling in Nigeria, according to the headline.",
+      "text": "A bank official testified in court about N500 million in disbursements made from a Office of the National Security Adviser (ONSA) account to a private company during Sambo Dasuki's tenure as National Security Adviser.",
       "card": 1,
-      "outlet": "latestnigeriannews"
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "The Guardian reports: NRS flags trillions in potential illicit financial flows",
+      "card": 2,
+      "outlet": "The Guardian"
+    },
+    {
+      "text": "The Senate has approved President Bola Tinubu's request to refund ₦100.5 billion related to Yobe Airport.",
+      "card": 3,
+      "outlet": "Premium Times"
     }
   ],
   "insights": [],
   "cards": [
     {
       "n": 1,
+      "theme": "Regulation & enforcement",
+      "event_type": "Corruption",
+      "flags": [
+        "Alert"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 62/100",
+      "headline": "Bank official testifies on N500m disbursements from ONSA account to private company during Dasuki’s tenure",
+      "byline": "Premium Times · Tue 17 Nov, 23:08 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "A bank official testified in court about N500 million in disbursements made from a Office of the National Security Adviser (ONSA) account to a private company during Sambo Dasuki's tenure as National Security Adviser. The testimony concerns transfers of public funds to a private entity.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The testimony concerns transfers of public security funds from a government account to a private company, bearing on how public money was disbursed and to whom."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Office of the National Security Adviser (ONSA)",
+        "Sambo Dasuki"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSUs0TmVsMVZQQ0JFSUg2TEZ0MnBmaF9reFpvYldPbmI5YzFDR1hLV0FOMUtpS2VzbUpkUmtWV1piekp4VC0wRHpVOFpWSUlEbzNpV0hyZU1QWUFqRjBjVkRZRkp4eE4xRndyUWdGQ0wxQjZZVVB4elhCVldja3J5ajMtTldDVXVvUkRIREdGcE85N0l0Q0tOZGlRSjBfZ1UyekE1elZoTl81SDdhWVRBbXZwSXJiNVlnR1hXd3NNcWZ3MXdxMUVWQXF5R3FJc3M3SnVIdmdpZmQ4R3dNZ1Z2Zml5cUEzQ0l4UnNGX0NOQVFvc1g4?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Public money",
+      "event_type": "Audit",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 55/100",
+      "headline": "NRS flags trillions in potential illicit financial flows",
+      "byline": "The Guardian · Tue 17 Nov, 18:32 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "The Nigeria Revenue Service (NRS) has flagged potential illicit financial flows totalling trillions of naira.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Nigeria Revenue Service"
+      ],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdEh2dVNsM0Q2UGxJcXNIRm1QQlBSUHVtSkNOS2E4eE10OWpuNEhabG91cUJDUXA4Q3NmTDNicDV2R3c3MjRkakFMbVZtNXVrVDN2R3BPbWI0aFlzNkJLenRZRkJRc3BKa1BLV3drNXhBWElEOFRLS1lyY1BVUnE0alZDNTl6eTNtZ1E?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "Yobe Airport: Senate approves Tinubu’s request to refund ₦100.5 billion",
+      "byline": "Premium Times · Tue 17 Nov, 21:54 Lagos",
+      "outlet": "Premium Times",
+      "what_happened": "The Senate has approved President Bola Tinubu's request to refund ₦100.5 billion related to Yobe Airport. The development concerns public funds tied to a federal aviation asset.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: The approval of a ₦100.5 billion refund involving public funds tied to a federal airport is a matter of public money oversight. The article does not state the refund's beneficiary or underlying basis, so the full implications cannot be assessed from it."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Yobe Airport",
+        "Senate of Nigeria",
+        "Bola Tinubu"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcm1MNWsyUEtPTUNOSVdsN1o0Ylh1TW5mSkZvc2JBcEFuMTB4ZlZERWV3bGotWHRuNkljTzl4TlZNaHZPM0V1TVFrRURaTnRLVWZSdEVrdDJmelZpNmJneDdGMmxfOXZFdWhINFp2TXZnOHZVMXRwbjNoVDhFTkJJYXdYQTBoazdfYWlESUVaeloxU0xnb3AwUzhLN21GdEt2NXlURFhuZ3pWODlRcU1xSFkzdWNjak9pMmdZaWhjcVQ3X09iaEs5SXdVWWJFVUdBUmhMUFlDcWw?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 4,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
@@ -58,14 +153,91 @@
       },
       "also_reported": [],
       "also_more": 0
+    },
+    {
+      "n": 5,
+      "theme": "Other",
+      "event_type": "Other",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "NNPC achieves 100% pipeline availability after 20 years",
+      "byline": "Punch · Wed 18 Nov, 00:05 Lagos",
+      "outlet": "Punch",
+      "what_happened": "The Nigerian National Petroleum Company (NNPC) has reported achieving 100% pipeline availability for the first time in 20 years, according to a Punch Newspapers headline. The article text provided contains no further detail on the figures, methods, or timeline behind the claim.",
+      "key_facts": [],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: Pipeline availability affects the flow of crude and refined products that underpins public revenue and fuel supply, so official performance claims in this sector are relevant to public accountability. The provided text is only a headline, so the claim cannot be independently verified from it."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Nigerian National Petroleum Company (NNPC)"
+      ],
+      "source": {
+        "outlet": "Punch",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcUJsb0ZkT1BGcGZiVVlUQUFkQXZ6SVladzRDSWNxbEplRHkxcDllbDIzaDFQc0ZoOEdsQXF0ay1OOWV6bWdpeHdORW8zWGx0XzAwOWJPZ19jQ0tjNVZtMUJSMGxRTGt4UnR5QXJyTUp0VjFNcF9SMllDQ2tOVmFIOA?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
     }
   ],
-  "also": [],
+  "also": [
+    {
+      "n": 6,
+      "theme": "Regulation & enforcement",
+      "text": "A former Chief Operating Officer has been arraigned over an alleged N605 million fraudulent diversion of company funds.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVmRDY1F1aDByczg5WUJ0dG55Rm1nejFHODNYS0ZPYkV3V3RNN005ekZhN2lEYW5sZmZqUGh2MFVoZzhyMGNLU21GS3VXT3FDWU1ITkFiNFBRcDhjaURuWUdKR2t1anEzRFYtdVRiek9WZ1ZCMjc3eldoS1ZNSFJMc3k1aWs5Y05naDNvWDhHZHVkaUNUSm9OSS11eFZJektW?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Other",
+      "text": "NNPC and Renaissance are reported to be seeking fresh funding for pipeline infrastructure.",
+      "outlet": "Vanguard",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUmpVOFVqeEhLVnpiZERUTlZZczZ0Vm9Bc1NSWFNWSGhncXhzc3I3MF85ZmJaZUk5V1NzREZmcTE4ejF4ak1MN2ZVSG1zSFRNeWN0Z1F1dDJ0ZHVRdWhIMUU4Um9VV3lXVEdRalltWi1ueDJReFpTMXA0VzlDWjZPNWs1MUxobzRMUzRNTVlWSnpkYzY4clh6cWhUX2g3WTc2cWfSAacBQVVfeXFMUEo0YWhUbkZ4YUpqSENOUFZDUVpvNzNobElXa3EtU3Vacmd6a1VRemFOb3NDekZEYXFFZVRJekZIdW5xTTRJWFo3WjFySENRV0xVdENTdzZNQ09SMHhDREJTZHpLeENXVkZEcFdlNEZBYzJkWUFORHJkWFdSYzctQ25QQXhSLWt4VUYweWVlTmR5RVNrbkdSQk1CZ1VSNFY3NGhyZ3dHLWM?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Other",
+      "text": "The Central Bank of Nigeria (CBN) has granted Milestone Global a non-interest banking licence, according to a Punch Newspapers headline.",
+      "outlet": "Punch",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYUxXalZTZmN0SXotb2xzYnR6NjlJeXRLWV9TNG5rVVRMbmZGMXY2Sl9YSnZSWElyMDJvLTBrY0VOOEI4WWhXUng4c1QwUDhwbjJwNkc0RV92X25qbEtlbmNZaTIwT29kbWVGdnN4OF85OVQzTTFWZmVxV2xJZnFFQkFubw?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "Public money",
+      "text": "Nigeria's Financial Reporting Council (FRC) has warned that weak fiscal controls threaten project delivery and public sector efficiency.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQeVlGdHFwVG5KV1FpUDNTOUdSVnVBdVBnd0stMlliaFpNUXZ3TVl3OWFpV3l4UHgxaTJoS2Fxa0hBSzVSaFFZWWV4NGdiSndveGR3MXlfUHB3cTBycnZrclhqYWEzRmVYSlJ2bjRqS1dCbWdrMEtCbkp1NmtTaHlfV2dxTEY1RjVzZGRrU2R2ZG9NS3NXY0FHUE9KVFFza0dieTJhdXRVeTBxY3pUTXJXVUVWZnM5Q1BhMGw0OQ?oc=5"
+    },
+    {
+      "n": 10,
+      "theme": "Other",
+      "text": "Augustsecrets is expanding its offering into family nutrition, moving from infant first foods to products for the whole family.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeFNNOURxang5NkZCVTBuSTdueUMtZmJsWE5MUjd3NERiT3RHTmlQSmh5UkthM0xhbVZBSk1VcS1XazdnMUhjRWVCdGExcGlENjdHTFFfNElXZzBFeVRibkdtOEJ0TURfT1ZhTVFxNVlUanZrbWhuRF9yQ0dDdFQ5VmxraEEzWkJqd0h0ZWYwY3Fib1NOQ3dPcGR2Q0dOcGw3WXNUV0VqNkowczBGNGc5cHZjX293UQ?oc=5"
+    }
+  ],
   "also_more": 0,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
-  "terms": [],
+  "terms": [
+    {
+      "term": "CBN",
+      "meaning": "Central Bank of Nigeria"
+    },
+    {
+      "term": "NNPC",
+      "meaning": "Nigerian National Petroleum Company"
+    },
+    {
+      "term": "AURA risk rating",
+      "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
+    }
+  ],
   "engines": {
     "extraction": [
       "claude"

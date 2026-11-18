@@ -1,40 +1,34 @@
 # PSC & Company Daily Intelligence Report
-**Generated on:** 2026-11-17 17:13:31 (UTC)
-**Run Window:** 2026-11-17, all runs to 17:13 (run 2 of the day)
+**Generated on:** 2026-11-18 04:16:30 (UTC)
+**Run Window:** 2026-11-18, all runs to 04:16 (run 1 of the day)
 
 ## Summary Statistics
-- **Total Articles Processed:** 20
-- **High Risk Signals:** 0
-- **Appointments Logged:** 1
-- **Procurement Awards:** 1
+- **Total Articles Processed:** 10
+- **High Risk Signals:** 1
+- **Appointments Logged:** 0
+- **Procurement Awards:** 0
 
 ---
 
-# Executive Intelligence Summary: Nigerian Corporate Transparency and MDAs
-
-**Report date:** 17 November 2026. This covers all articles published that day up to 17:13 (run 2 of the day).
+# Executive Intelligence Summary: Nigerian Corporate Transparency and MDA Oversight
+**Report date:** 18 November 2026 | **Coverage:** All articles published on 18 November 2026 up to 04:16 (run 1 of the day). All items below rest on headline-only reporting, so details are limited.
 
 ### Key Developments
-
-- **GIW storms DMO, demands records on ₦88.6trn debt issuance**. Global Integrity Watch (GIW) reportedly visited the Debt Management Office (DMO) and demanded records relating to ₦88.6 trillion in debt issuance. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNeTVRNkc0dE4yTGkyOHE4RXlfSXlENFBnVEVxR0hteDdDWjgwUU5Ld3NzVW9fMlowbS1acFlHcmlZZmJTSlBVZ18yVDJRdWJMZTZHV01jVzBBWW1wSVYxREphNmVSTFNtS3p5NXJDemhCMjQ2QmNXajFlZUhVX2Z3RG9xNWtQNktPZnhqUFM3dkEwY09I?oc=5))  
-- **Fiscal Responsibility Index:** 17 MDAs failed the federal benchmark in 2026; the agencies were not named in the available text. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMikgFBVV95cUxNT2Jac3R1MDc1UG8yYXZ2MDROLVNGV1NOMmxKRHpjdGRvT3EtT2REUGpwRjVLM1pNZEZJRTRnMXJndnNMVVhuRFZzWEVuQnVub3VYRWJPdllOQmlfZ3l2SjJLV0tkb3JVbGx6TXRqLVRxSE1WV1N2NWd2blhyaUNRV3lUVVlKSDhKa0F0aEhOTFFWZw?oc=5))  
-- **TotalEnergies begins Nigerias first deepwater exploration drilling**. TotalEnergies has begun deepwater exploration drilling in Nigeria, according to the headline. ([latestnigeriannews](https://www.latestnigeriannews.com/p/464114/totalenergies-begins-nigerias-first-deepwater-exploration-drilling.html))  
-- **Other items:** The remaining items cover the NIN requirement for domestic flights and the V-Pass deadline, plus the NNPC probe of a Lagos filling station fire, the NIPCO/NNPC Ogun pipeline and the Zichis stock surge. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMirAFBVV95cUxORXEzalV1U2RnQkRUSVJ5Rl81SEN2MU5CTDhsWXNDUmhKaWgxNnhaWmhfT290XzYwWFVTQlh3ZVZHVnhCeXhENnlGVElaU0gzMDdDWHVuRDNScXlCdldfaF9EUk4wQk5fNlh3aG1rTURlaUNDWFAwS1M2RkVJZzhuYXBWbHBVYThSLVF1d3c0N3pzVk1KUVZCSkFUWnJtSG5CSkhMWV85UTdoTjIy?oc=5))  
+- **Senate approval of ₦100.5bn refund (Yobe Airport):** The Senate approved President Tinubu's request for the refund. The beneficiary and the basis for it are not stated. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi2AFBVV95cUxOcm1MNWsyUEtPTUNOSVdsN1o0Ylh1TW5mSkZvc2JBcEFuMTB4ZlZERWV3bGotWHRuNkljTzl4TlZNaHZPM0V1TVFrRURaTnRLVWZSdEVrdDJmelZpNmJneDdGMmxfOXZFdWhINFp2TXZnOHZVMXRwbjNoVDhFTkJJYXdYQTBoazdfYWlESUVaeloxU0xnb3AwUzhLN21GdEt2NXlURFhuZ3pWODlRcU1xSFkzdWNjak9pMmdZaWhjcVQ3X09iaEs5SXdVWWJFVUdBUmhMUFlDcWw?oc=5))  
+- **NRS illicit flows flag:** The Nigeria Revenue Service flagged potential illicit financial flows running into trillions of naira. No breakdown by entity or sector was given. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiigFBVV95cUxNdEh2dVNsM0Q2UGxJcXNIRm1QQlBSUHVtSkNOS2E4eE10OWpuNEhabG91cUJDUXA4Q3NmTDNicDV2R3c3MjRkakFMbVZtNXVrVDN2R3BPbWI0aFlzNkJLenRZRkJRc3BKa1BLV3drNXhBWElEOFRLS1lyY1BVUnE0alZDNTl6eTNtZ1E?oc=5))  
+- **FRC warning:** The Financial Reporting Council said weak fiscal controls threaten project delivery and public sector efficiency. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMivAFBVV95cUxQeVlGdHFwVG5KV1FpUDNTOUdSVnVBdVBnd0stMlliaFpNUXZ3TVl3OWFpV3l4UHgxaTJoS2Fxa0hBSzVSaFFZWWV4NGdiSndveGR3MXlfUHB3cTBycnZrclhqYWEzRmVYSlJ2bjRqS1dCbWdrMEtCbkp1NmtTaHlfV2dxTEY1RjVzZGRrU2R2ZG9NS3NXY0FHUE9KVFFza0dieTJhdXRVeTBxY3pUTXJXVUVWZnM5Q1BhMGw0OQ?oc=5))  
+- **CBN licensing:** The CBN approved Milestone Global Bank as a non-interest lender. Ownership and licence terms were not disclosed. ([Punch Newspapers](https://news.google.com/rss/articles/CBMihAFBVV95cUxNQk9qbjRUcEJDNkg1dzFyeDFlUWdic3VncDVXc3pLX19sMUZXbEdzNmk2bHI5OTRmSm02SFY3eUNheW9YVUIwQ0FFSDVnbnY1Y200VjlyNjM5RGtyOUxadDd1a0dkSURjeU92SWN1WmFnLXB5ay1WYVFzVTNTYWdibkx0Y3c?oc=5))  
+- **NNPC:** NNPC claims 100% pipeline availability for the first time in 20 years. The claim cannot be verified from the headline. ([Punch Newspapers](https://news.google.com/rss/articles/CBMigAFBVV95cUxPcUJsb0ZkT1BGcGZiVVlUQUFkQXZ6SVladzRDSWNxbEplRHkxcDllbDIzaDFQc0ZoOEdsQXF0ay1OOWV6bWdpeHdORW8zWGx0XzAwOWJPZ19jQ0tjNVZtMUJSMGxRTGt4UnR5QXJyTUp0VjFNcF9SMllDQ2tOVmFIOA?oc=5))  
+- **NNPC, Renaissance seek fresh funding for pipeline infrastructure**. NNPC and Renaissance are reported to be seeking fresh funding for pipeline infrastructure. ([Vanguard News](https://news.google.com/rss/articles/CBMiogFBVV95cUxOUmpVOFVqeEhLVnpiZERUTlZZczZ0Vm9Bc1NSWFNWSGhncXhzc3I3MF85ZmJaZUk5V1NzREZmcTE4ejF4ak1MN2ZVSG1zSFRNeWN0Z1F1dDJ0ZHVRdWhIMUU4Um9VV3lXVEdRalltWi1ueDJReFpTMXA0VzlDWjZPNWs1MUxobzRMUzRNTVlWSnpkYzY4clh6cWhUX2g3WTc2cWfSAacBQVVfeXFMUEo0YWhUbkZ4YUpqSENOUFZDUVpvNzNobElXa3EtU3Vacmd6a1VRemFOb3NDekZEYXFFZVRJekZIdW5xTTRJWFo3WjFySENRV0xVdENTdzZNQ09SMHhDREJTZHpLeENXVkZEcFdlNEZBYzJkWUFORHJkWFdSYzctQ25QQXhSLWt4VUYweWVlTmR5RVNrbkdSQk1CZ1VSNFY3NGhyZ3dHLWM?oc=5))  
 
 ### High Risk Alerts
-
-No item reached a High risk rating today. The highest-rated items were medium risk:
-
+- **Bank official testifies on N500m disbursements from ONSA account to private company during Dasuki’s tenure**. A bank official testified in court about N500 million in disbursements made from a Office of the National Security Adviser (ONSA) account to a private company during Sambo Dasuki's tenure as National Security Adviser. ([Premium Times Nigeria](https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSUs0TmVsMVZQQ0JFSUg2TEZ0MnBmaF9reFpvYldPbmI5YzFDR1hLV0FOMUtpS2VzbUpkUmtWV1piekp4VC0wRHpVOFpWSUlEbzNpV0hyZU1QWUFqRjBjVkRZRkp4eE4xRndyUWdGQ0wxQjZZVVB4elhCVldja3J5ajMtTldDVXVvUkRIREdGcE85N0l0Q0tOZGlRSjBfZ1UyekE1elZoTl81SDdhWVRBbXZwSXJiNVlnR1hXd3NNcWZ3MXdxMUVWQXF5R3FJc3M3SnVIdmdpZmQ4R3dNZ1Z2Zml5cUEzQ0l4UnNGX0NOQVFvc1g4?oc=5))  
 
 ### Beneficial Ownership & PSC Disclosures
-
-No verified significant-control holdings are recorded in today's data, so none are reported here. The Seplat and Livestock Feeds stakes appear in the articles but are not in the register's verified fields.
+The register-verified data for this period holds no significant-control disclosures. No holders, percentages, PEP flags or pending filings can be reported. Ownership of Milestone Global Bank remains undisclosed in the reporting.
 
 ### Procurement & Board Changes
-
-- **Livestock Feeds board:** Three directors resigned. Sam Okuwlehi, Seyi Ebenezer, Prof. Franklin Nnaemeka Ngwu, Mary Mulili and Farrukh Siddiqui were appointed on 17 November 2026. ([Nairametrics](https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/))  
-- **Seplat chairmanship:** Elumelu succeeds Senator Udoma Udo Udoma from 1 January 2027. ([Nairametrics](https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/))  
-- **BPP:** The Director-General promoted a "Nigeria First" procurement agenda at B20 USA in Washington. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVTk0T3RCRGdCdGdPNXpoQUg0amI1Y1c5TUo4QzAwdTl5bmRFeGNaSFNjYXFDRUl2QjR6NlJHQTI4R0h4Tlp5d2ltTXZobHhaRlpZeGstOURmZG5CUTlfTEt3T2lxdFlkcEF2R2haUHRkRDNtc1hmaWd0RGJEQkpUaGtqOWFxNktVenBQc3ItbmJucmdmU2FMdDlrbGJjVUN1aFdidXI5OG80cEF0VFBWMXJoamladWZleHZ3?oc=5))  
+No procurement awards or board appointments appear in today's coverage. The only related item is the arraignment of an unnamed former COO, which is a leadership-level fraud allegation rather than a board change. ([The Guardian Nigeria News](https://news.google.com/rss/articles/CBMioAFBVV95cUxNVmRDY1F1aDByczg5WUJ0dG55Rm1nejFHODNYS0ZPYkV3V3RNN005ekZhN2lEYW5sZmZqUGh2MFVoZzhyMGNLU21GS3VXT3FDWU1ITkFiNFBRcDhjaURuWUdKR2t1anEzRFYtdVRiek9WZ1ZCMjc3eldoS1ZNSFJMc3k1aWs5Y05naDNvWDhHZHVkaUNUSm9OSS11eFZJektW?oc=5))
 
 ---
 *Report compiled cloud-based by AURA Intelligence Scheduler (engine: claude).*

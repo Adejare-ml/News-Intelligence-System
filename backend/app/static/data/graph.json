@@ -31,14 +31,14 @@
       "risk": "Critical"
     },
     {
-      "id": "9ed3f0f5bb2d",
-      "label": "Dangote Refinery",
+      "id": "d911eb1cbbc7",
+      "label": "NNPC Limited",
       "type": "company",
       "risk": "Medium"
     },
     {
-      "id": "d911eb1cbbc7",
-      "label": "NNPC Limited",
+      "id": "9ed3f0f5bb2d",
+      "label": "Dangote Refinery",
       "type": "company",
       "risk": "Medium"
     },
@@ -121,8 +121,44 @@
       "risk": "Critical"
     },
     {
+      "id": "7301d85363bc",
+      "label": "Financial Reporting Council of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b636c60fbd26",
+      "label": "Senate of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "3a855b071fef",
+      "label": "Nigeria Revenue Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "f8f7bbd6535e",
+      "label": "Nigerian National Petroleum Company (NNPC)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "61593181343c",
+      "label": "Office of the National Security Adviser (ONSA)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e2e4fd0c5100",
+      "label": "Yobe Airport",
       "type": "agency",
       "risk": "Low"
     },
@@ -205,39 +241,21 @@
       "risk": "Low"
     },
     {
-      "id": "45acd1796b9a",
-      "label": "FSD Africa",
-      "type": "agency",
+      "id": "1a17418ea885",
+      "label": "Bola Tinubu",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "a4e5a44bd7d5",
-      "label": "vPASS",
-      "type": "agency",
+      "id": "c4dd50a83302",
+      "label": "Sambo Dasuki",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "1a2ac1ef306d",
-      "label": "Nigeria Civil Aviation Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "beb91054dc85",
-      "label": "Federal Capital Territory Administration",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "de44b55175fc",
-      "label": "Zamfara State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "b1dce9fc27e0",
-      "label": "National Pension Commission",
-      "type": "agency",
+      "id": "e46c80167240",
+      "label": "Unnamed former Chief Operating Officer",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -439,36 +457,6 @@
       "risk": "Low"
     },
     {
-      "id": "d385d1ccc307",
-      "label": "Tunde Ayeni",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c75de9075423",
-      "label": "Skye Bank",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "2388a11cf55e",
-      "label": "Ola Olukoyede",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "a256ae6d71a8",
-      "label": "Mele Kyari",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
       "id": "3afd71cd31bc",
       "label": "Sunbeth Treenuts and Sesame Limited",
       "type": "psc",
@@ -651,6 +639,18 @@
   ],
   "edges": [
     {
+      "id": "599ed5bc3174",
+      "from": "1a17418ea885",
+      "to": "0c2be969618b",
+      "label": "Appointed as President of Nigeria"
+    },
+    {
+      "id": "01056e9f0042",
+      "from": "c4dd50a83302",
+      "to": "61593181343c",
+      "label": "Appointed as National Security Adviser"
+    },
+    {
       "id": "1fbb33996f92",
       "from": "18bc77b97b9c",
       "to": "8ad929872c06",
@@ -781,24 +781,6 @@
       "from": "259569cb7165",
       "to": "3fab39407c78",
       "label": "Appointed as CEO"
-    },
-    {
-      "id": "06391ff1337b",
-      "from": "d385d1ccc307",
-      "to": "c75de9075423",
-      "label": "Appointed as Former Chairman"
-    },
-    {
-      "id": "173d8cf4554e",
-      "from": "2388a11cf55e",
-      "to": "0bcaaf453cd3",
-      "label": "Appointed as EFCC Chairman"
-    },
-    {
-      "id": "f3b9311e13e2",
-      "from": "a256ae6d71a8",
-      "to": "f38bd75574f6",
-      "label": "Appointed as Group Chief Executive Officer"
     },
     {
       "id": "18308313419a",
