@@ -36,7 +36,7 @@
       "source_url": "https://businessday.ng/africa/article/ifc-takes-6-5-stake-in-quickmart-through-ksh15bn-ipo/",
       "quote": "The International Finance Corporation (IFC) has acquired a 6.5% stake in Quickmart through a KSh15 billion IPO.",
       "date": "2026-10-07",
-      "last_verified": "2026-11-18 04:17:02"
+      "last_verified": "2026-11-18 16:32:40"
     }
   },
   {
@@ -76,7 +76,7 @@
       "source_url": "https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/",
       "quote": "eTranzact announced director changes on October 13, 2026, after 5.17 billion ordinary shares (56.18%) transferred to Trademarks Global Concepts Limited.",
       "date": "2026-11-10",
-      "last_verified": "2026-11-18 04:17:02"
+      "last_verified": "2026-11-18 16:32:40"
     }
   },
   {
@@ -116,7 +116,7 @@
       "source_url": "https://nairametrics.com/2026/11/10/etranzact-mtn-nigeria-lead-boardroom-shake-ups-as-9m-2026-earnings-roll-in/",
       "quote": "Xenergi acquired approximately 49.6% of Premier Paints' issued share capital.",
       "date": "2026-11-10",
-      "last_verified": "2026-11-18 04:17:02"
+      "last_verified": "2026-11-18 16:32:40"
     }
   },
   {
@@ -156,7 +156,7 @@
       "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5",
       "quote": "KDT Ibotta Holdings, LLC holds 10% of Ibotta Inc",
       "date": "2026-11-15",
-      "last_verified": "2026-11-18 04:17:02"
+      "last_verified": "2026-11-18 16:32:40"
     }
   },
   {
@@ -196,7 +196,7 @@
       "source_url": "https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/",
       "quote": "",
       "date": "2026-11-17",
-      "last_verified": "2026-11-18 04:17:02"
+      "last_verified": "2026-11-18 16:32:40"
     }
   },
   {
@@ -236,7 +236,87 @@
       "source_url": "https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/",
       "quote": "",
       "date": "2026-11-17",
-      "last_verified": "2026-11-18 04:17:02"
+      "last_verified": "2026-11-18 16:32:40"
+    }
+  },
+  {
+    "Person Name": "Sunbeth Agro HoldCo",
+    "Company": "Livestock Feeds Plc",
+    "Nature of Control": "Ownership of shares >50%",
+    "Board Role": "",
+    "Percentage": "73.29%",
+    "Direct %": "73.29%",
+    "Indirect %": "",
+    "Voting Rights %": "",
+    "Share Band": "BAND_50_75",
+    "Intermediate Entities": "Sunbeth Treenuts and Sesame Limited",
+    "PEP Status": "No",
+    "Risk Level": "Standard",
+    "Regulatory Filing Ref": "",
+    "Verification Status": "Extracted from news reporting",
+    "Change Type": "gained",
+    "Previous Holder": "UAC of Nigeria Plc",
+    "Date": "2026-11-18",
+    "Source": "extracted",
+    "Source URL": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaExYdm5iMXp2dFNBX05CSWtHQXNxbUx3bXhvWEI1UE1JeHFDenhhZWxIdm9lMF9lMWZ6TlA5MnpCTUwyYmxpeVBleDdSUDAybFpRYW5xYXpPWk9md29kLXdVcnd5S0xtc1RHNkxLRU5YcV9BZk5sUkJDMzFSZzl1SGIxeVpfd1BhMldSbGlwYzkzS090SU90Zks1Q3FOMXpDeEY2a0VSSy10SlZKNzg0YjFBUU9nM242aVFBNklyV3B5ZGs?oc=5",
+    "Source Title": "Sunbeth completes acquisition of controlling stake in Livestock Feeds Plc - Premium Times Nigeria",
+    "Publisher": "Premium Times Nigeria",
+    "Approved": "",
+    "Basis": "article",
+    "Person Key": "sunbeth agro holdco",
+    "Company Key": "livestock feeds",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false,
+    "Confidence": "Full article",
+    "Public": true,
+    "Evidence": {
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPaExYdm5iMXp2dFNBX05CSWtHQXNxbUx3bXhvWEI1UE1JeHFDenhhZWxIdm9lMF9lMWZ6TlA5MnpCTUwyYmxpeVBleDdSUDAybFpRYW5xYXpPWk9md29kLXdVcnd5S0xtc1RHNkxLRU5YcV9BZk5sUkJDMzFSZzl1SGIxeVpfd1BhMldSbGlwYzkzS090SU90Zks1Q3FOMXpDeEY2a0VSSy10SlZKNzg0YjFBUU9nM242aVFBNklyV3B5ZGs?oc=5",
+      "quote": "",
+      "date": "2026-11-18",
+      "last_verified": "2026-11-18 16:32:40"
+    }
+  },
+  {
+    "Person Name": "22 Plus Invest Limited",
+    "Company": "DP World Logistics Limited",
+    "Nature of Control": "Ownership of shares 25-50%",
+    "Board Role": "",
+    "Percentage": "43%",
+    "Direct %": "43%",
+    "Indirect %": "",
+    "Voting Rights %": "",
+    "Share Band": "BAND_25_50",
+    "Intermediate Entities": "Tropical General Investments (TGI) Group",
+    "PEP Status": "No",
+    "Risk Level": "Standard",
+    "Regulatory Filing Ref": "",
+    "Verification Status": "Extracted from news reporting",
+    "Change Type": "gained",
+    "Previous Holder": "UAC of Nigeria Plc",
+    "Date": "2026-11-18",
+    "Source": "extracted",
+    "Source URL": "https://nairametrics.com/2026/11/18/uac-completes-sale-of-43-stake-in-dp-world-logistics-to-tgi-group/",
+    "Source Title": "UAC completes sale of 43% stake in DP World Logistics to TGI Group",
+    "Publisher": "Nairametrics",
+    "Approved": "",
+    "Basis": "article",
+    "Person Key": "22 plus invest limited",
+    "Company Key": "dp world logistics",
+    "Kind": "stake",
+    "Quality": [
+      "no_filing"
+    ],
+    "Quarantined": false,
+    "Confidence": "Full article",
+    "Public": true,
+    "Evidence": {
+      "source_url": "https://nairametrics.com/2026/11/18/uac-completes-sale-of-43-stake-in-dp-world-logistics-to-tgi-group/",
+      "quote": "The buyer is 22 Plus Invest Limited, a member of Tropical General Investments (TGI) Group.",
+      "date": "2026-11-18",
+      "last_verified": "2026-11-18 16:32:40"
     }
   }
 ]

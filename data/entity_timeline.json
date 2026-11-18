@@ -76,7 +76,7 @@
     {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "total_mentions": 104,
+      "total_mentions": 106,
       "points": [
         {
           "week": "2026-09-14",
@@ -131,6 +131,12 @@
           "mentions": 8,
           "avg_risk": 41.0,
           "max_risk": 78
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 2,
+          "avg_risk": 25.0,
+          "max_risk": 35
         }
       ]
     },
@@ -204,7 +210,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 75,
+      "total_mentions": 77,
       "points": [
         {
           "week": "2026-09-07",
@@ -268,9 +274,9 @@
         },
         {
           "week": "2026-11-16",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 15
+          "mentions": 5,
+          "avg_risk": 19.0,
+          "max_risk": 35
         }
       ]
     },
@@ -1324,6 +1330,43 @@
       ]
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission, Nigeria",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "senate of",
       "label": "Senate of Nigeria",
       "total_mentions": 10,
@@ -1615,43 +1658,6 @@
       ]
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission, Nigeria",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 1,
-          "avg_risk": 55.0,
-          "max_risk": 55
-        }
-      ]
-    },
-    {
       "key": "festus keyamo",
       "label": "Festus Keyamo",
       "total_mentions": 7,
@@ -1692,6 +1698,31 @@
           "mentions": 7,
           "avg_risk": 48.3,
           "max_risk": 78
+        }
+      ]
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Limited",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
         }
       ]
     },
@@ -2087,6 +2118,43 @@
       ]
     },
     {
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "seplat energy",
       "label": "Seplat Energy Plc",
       "total_mentions": 6,
@@ -2320,6 +2388,25 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
+        }
+      ]
+    },
+    {
+      "key": "federal competition and consumer protection commission",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 70.0,
+          "max_risk": 70
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 4,
+          "avg_risk": 40.0,
+          "max_risk": 55
         }
       ]
     },
@@ -2563,62 +2650,6 @@
           "mentions": 3,
           "avg_risk": 28.3,
           "max_risk": 35
-        }
-      ]
-    },
-    {
-      "key": "exchange",
-      "label": "Nigerian Exchange Limited",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 1,
-          "avg_risk": 55.0,
-          "max_risk": 55
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
         }
       ]
     },
@@ -3537,6 +3568,19 @@
       ]
     },
     {
+      "key": "uac of",
+      "label": "UAC of Nigeria Plc",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-11-16",
+          "mentions": 4,
+          "avg_risk": 40.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "west african examinations council",
       "label": "West African Examinations Council",
       "total_mentions": 4,
@@ -4105,6 +4149,19 @@
       ]
     },
     {
+      "key": "livestock feeds",
+      "label": "Livestock Feeds Plc",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "mtn foundation",
       "label": "MTN Group Foundation",
       "total_mentions": 3,
@@ -4184,6 +4241,31 @@
           "mentions": 1,
           "avg_risk": 30.0,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "nimasa",
+      "label": "NIMASA",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -4429,6 +4511,19 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "sunbeth treenuts and sesame",
+      "label": "Sunbeth Treenuts and Sesame Limited",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
         }
       ]
     },
@@ -5016,25 +5111,6 @@
           "mentions": 2,
           "avg_risk": 38.5,
           "max_risk": 62
-        }
-      ]
-    },
-    {
-      "key": "federal competition and consumer protection commission",
-      "label": "Federal Competition and Consumer Protection Commission",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 70.0,
-          "max_risk": 70
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 1,
-          "avg_risk": 55.0,
-          "max_risk": 55
         }
       ]
     },
@@ -5696,25 +5772,6 @@
       ]
     },
     {
-      "key": "nimasa",
-      "label": "NIMASA",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
       "key": "nairobi securities exchange",
       "label": "Nairobi Securities Exchange",
       "total_mentions": 2,
@@ -6237,6 +6294,19 @@
       ]
     },
     {
+      "key": "peeyush karnani",
+      "label": "Peeyush Karnani",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-16",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "pension reform task team",
       "label": "Pension Reform Task Team",
       "total_mentions": 2,
@@ -6463,6 +6533,19 @@
           "mentions": 2,
           "avg_risk": 45.0,
           "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "sunbeth agro holdco",
+      "label": "Sunbeth Agro HoldCo",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-16",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 35
         }
       ]
     },
@@ -6729,6 +6812,19 @@
       ]
     },
     {
+      "key": "22 plus invest",
+      "label": "22 Plus Invest Limited",
+      "total_mentions": 1,
+      "points": [
+        {
+          "week": "2026-11-16",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
       "key": "3 streams synergy",
       "label": "3 Streams Synergy Limited",
       "total_mentions": 1,
@@ -6779,85 +6875,7 @@
           "max_risk": 62
         }
       ]
-    },
-    {
-      "key": "abs cbn",
-      "label": "ABS-CBN",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "ag vision",
-      "label": "AG Vision",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "aghan",
-      "label": "AGHAN",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "agora fellowship",
-      "label": "AGORA Fellowship",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "apc",
-      "label": "APC",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "apc campaign council",
-      "label": "APC Campaign Council",
-      "total_mentions": 1,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-18 04:17:09"
+  "generated": "2026-11-18 16:33:13"
 }

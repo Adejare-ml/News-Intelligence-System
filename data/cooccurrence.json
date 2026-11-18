@@ -146,6 +146,10 @@
       "label": "Federal Bureau of Investigation"
     },
     {
+      "key": "federal competition and consumer protection commission",
+      "label": "Federal Competition and Consumer Protection Commission"
+    },
+    {
       "key": "federal government of",
       "label": "Federal Government of Nigeria"
     },
@@ -252,6 +256,10 @@
     {
       "key": "lagos state government",
       "label": "Lagos State Government"
+    },
+    {
+      "key": "livestock feeds",
+      "label": "Livestock Feeds Plc"
     },
     {
       "key": "lng",
@@ -394,6 +402,10 @@
       "label": "Oyo State Government"
     },
     {
+      "key": "peeyush karnani",
+      "label": "Peeyush Karnani"
+    },
+    {
       "key": "pension reform task team",
       "label": "Pension Reform Task Team"
     },
@@ -458,6 +470,14 @@
       "label": "State Security Service"
     },
     {
+      "key": "sunbeth agro holdco",
+      "label": "Sunbeth Agro HoldCo"
+    },
+    {
+      "key": "sunbeth treenuts and sesame",
+      "label": "Sunbeth Treenuts and Sesame Limited"
+    },
+    {
       "key": "sunrise power",
       "label": "Sunrise Power"
     },
@@ -486,6 +506,10 @@
       "label": "Transmission Company of Nigeria"
     },
     {
+      "key": "uac of",
+      "label": "UAC of Nigeria Plc"
+    },
+    {
       "key": "united bank for africa",
       "label": "United Bank for Africa"
     },
@@ -497,17 +521,17 @@
   "edges": [
     {
       "a": "central bank of",
+      "b": "olayemi cardoso",
+      "weight": 6
+    },
+    {
+      "a": "central bank of",
       "b": "socio economic rights and accountability project",
       "weight": 6
     },
     {
       "a": "all progressives congress",
       "b": "independent national electoral commission",
-      "weight": 5
-    },
-    {
-      "a": "central bank of",
-      "b": "olayemi cardoso",
       "weight": 5
     },
     {
@@ -543,6 +567,11 @@
     {
       "a": "economic and financial crimes commission",
       "b": "ola olukoyede",
+      "weight": 4
+    },
+    {
+      "a": "federal competition and consumer protection commission",
+      "b": "uac of",
       "weight": 4
     },
     {
@@ -601,6 +630,46 @@
       "weight": 3
     },
     {
+      "a": "exchange",
+      "b": "federal competition and consumer protection commission",
+      "weight": 3
+    },
+    {
+      "a": "exchange",
+      "b": "livestock feeds",
+      "weight": 3
+    },
+    {
+      "a": "exchange",
+      "b": "securities and exchange commission",
+      "weight": 3
+    },
+    {
+      "a": "exchange",
+      "b": "sunbeth treenuts and sesame",
+      "weight": 3
+    },
+    {
+      "a": "exchange",
+      "b": "uac of",
+      "weight": 3
+    },
+    {
+      "a": "federal competition and consumer protection commission",
+      "b": "livestock feeds",
+      "weight": 3
+    },
+    {
+      "a": "federal competition and consumer protection commission",
+      "b": "securities and exchange commission",
+      "weight": 3
+    },
+    {
+      "a": "federal competition and consumer protection commission",
+      "b": "sunbeth treenuts and sesame",
+      "weight": 3
+    },
+    {
       "a": "government of",
       "b": "government of the united kingdom",
       "weight": 3
@@ -608,6 +677,21 @@
     {
       "a": "house of representatives",
       "b": "mtn",
+      "weight": 3
+    },
+    {
+      "a": "livestock feeds",
+      "b": "securities and exchange commission",
+      "weight": 3
+    },
+    {
+      "a": "livestock feeds",
+      "b": "sunbeth treenuts and sesame",
+      "weight": 3
+    },
+    {
+      "a": "livestock feeds",
+      "b": "uac of",
       "weight": 3
     },
     {
@@ -633,6 +717,21 @@
     {
       "a": "ogunwuyi",
       "b": "oyo state government",
+      "weight": 3
+    },
+    {
+      "a": "securities and exchange commission",
+      "b": "sunbeth treenuts and sesame",
+      "weight": 3
+    },
+    {
+      "a": "securities and exchange commission",
+      "b": "uac of",
+      "weight": 3
+    },
+    {
+      "a": "sunbeth treenuts and sesame",
+      "b": "uac of",
       "weight": 3
     },
     {
@@ -787,6 +886,11 @@
     },
     {
       "a": "central bank of",
+      "b": "national petroleum company",
+      "weight": 2
+    },
+    {
+      "a": "central bank of",
       "b": "serap",
       "weight": 2
     },
@@ -891,6 +995,16 @@
       "weight": 2
     },
     {
+      "a": "exchange",
+      "b": "peeyush karnani",
+      "weight": 2
+    },
+    {
+      "a": "exchange",
+      "b": "sunbeth agro holdco",
+      "weight": 2
+    },
+    {
       "a": "extractive industries transparency initiative",
       "b": "midstream and downstream petroleum regulatory authority",
       "weight": 2
@@ -898,6 +1012,16 @@
     {
       "a": "extractive industries transparency initiative",
       "b": "national petroleum company",
+      "weight": 2
+    },
+    {
+      "a": "federal competition and consumer protection commission",
+      "b": "peeyush karnani",
+      "weight": 2
+    },
+    {
+      "a": "federal competition and consumer protection commission",
+      "b": "sunbeth agro holdco",
       "weight": 2
     },
     {
@@ -1041,6 +1165,16 @@
       "weight": 2
     },
     {
+      "a": "livestock feeds",
+      "b": "peeyush karnani",
+      "weight": 2
+    },
+    {
+      "a": "livestock feeds",
+      "b": "sunbeth agro holdco",
+      "weight": 2
+    },
+    {
       "a": "lng",
       "b": "national petroleum company",
       "weight": 2
@@ -1101,10 +1235,45 @@
       "weight": 2
     },
     {
+      "a": "peeyush karnani",
+      "b": "securities and exchange commission",
+      "weight": 2
+    },
+    {
+      "a": "peeyush karnani",
+      "b": "sunbeth agro holdco",
+      "weight": 2
+    },
+    {
+      "a": "peeyush karnani",
+      "b": "sunbeth treenuts and sesame",
+      "weight": 2
+    },
+    {
+      "a": "peeyush karnani",
+      "b": "uac of",
+      "weight": 2
+    },
+    {
+      "a": "securities and exchange commission",
+      "b": "sunbeth agro holdco",
+      "weight": 2
+    },
+    {
       "a": "stallion",
       "b": "united bank for africa",
       "weight": 2
+    },
+    {
+      "a": "sunbeth agro holdco",
+      "b": "sunbeth treenuts and sesame",
+      "weight": 2
+    },
+    {
+      "a": "sunbeth agro holdco",
+      "b": "uac of",
+      "weight": 2
     }
   ],
-  "generated": "2026-11-18 04:17:09"
+  "generated": "2026-11-18 16:33:13"
 }

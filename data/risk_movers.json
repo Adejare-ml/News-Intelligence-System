@@ -10,67 +10,49 @@
       "previous_mentions": 1
     },
     {
-      "key": "upstream petroleum regulatory commission",
-      "label": "Nigerian Upstream Petroleum Regulatory Commission",
-      "recent_avg": 10.0,
-      "previous_avg": 25.0,
-      "delta": -15.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
+      "key": "national petroleum company",
+      "label": "Nigerian National Petroleum Company Limited",
+      "recent_avg": 20.0,
+      "previous_avg": 41.6,
+      "delta": -21.6,
+      "recent_mentions": 3,
+      "previous_mentions": 8
     },
     {
       "key": "nnpc",
       "label": "NNPC Limited",
       "recent_avg": 20.0,
-      "previous_avg": 34.2,
-      "delta": -14.2,
+      "previous_avg": 34.0,
+      "delta": -14.0,
       "recent_mentions": 3,
-      "previous_mentions": 6
-    },
-    {
-      "key": "economic and financial crimes commission",
-      "label": "Economic and Financial Crimes Commission",
-      "recent_avg": 62.5,
-      "previous_avg": 49.9,
-      "delta": 12.6,
-      "recent_mentions": 2,
-      "previous_mentions": 9
-    },
-    {
-      "key": "central bank of",
-      "label": "Central Bank of Nigeria",
-      "recent_avg": 13.8,
-      "previous_avg": 26.0,
-      "delta": -12.2,
-      "recent_mentions": 4,
-      "previous_mentions": 7
+      "previous_mentions": 5
     },
     {
       "key": "mtn",
       "label": "MTN Nigeria",
-      "recent_avg": 21.7,
+      "recent_avg": 25.0,
       "previous_avg": 15.0,
-      "delta": 6.7,
-      "recent_mentions": 3,
-      "previous_mentions": 3
+      "delta": 10.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
       "key": "federal government of",
       "label": "Federal Government of Nigeria",
-      "recent_avg": 19.0,
+      "recent_avg": 17.5,
       "previous_avg": 25.0,
-      "delta": -6.0,
-      "recent_mentions": 5,
-      "previous_mentions": 4
+      "delta": -7.5,
+      "recent_mentions": 4,
+      "previous_mentions": 5
     },
     {
-      "key": "federal competition and consumer protection commission",
-      "label": "Federal Competition and Consumer Protection Commission",
-      "recent_avg": 62.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
+      "key": "central bank of",
+      "label": "Central Bank of Nigeria",
+      "recent_avg": 19.0,
+      "previous_avg": 24.0,
+      "delta": -5.0,
+      "recent_mentions": 5,
+      "previous_mentions": 8
     },
     {
       "key": "seplat energy",
@@ -79,6 +61,15 @@
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "federal competition and consumer protection commission",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "recent_avg": 46.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 5,
       "previous_mentions": 0
     },
     {
@@ -118,12 +109,57 @@
       "previous_mentions": 0
     },
     {
+      "key": "livestock feeds",
+      "label": "Livestock Feeds Plc",
+      "recent_avg": 41.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "sunbeth treenuts and sesame",
+      "label": "Sunbeth Treenuts and Sesame Limited",
+      "recent_avg": 41.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission",
+      "recent_avg": 41.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Limited",
+      "recent_avg": 41.7,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
+      "previous_mentions": 0
+    },
+    {
       "key": "economic and financial crimes commission efcc",
       "label": "Economic and Financial Crimes Commission (EFCC)",
       "recent_avg": 40.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "uac of",
+      "label": "UAC of Nigeria Plc",
+      "recent_avg": 40.0,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 4,
       "previous_mentions": 0
     },
     {
@@ -136,45 +172,9 @@
       "previous_mentions": 0
     },
     {
-      "key": "lagos state government",
-      "label": "Lagos State Government",
-      "recent_avg": 22.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "unijos",
-      "label": "UNIJOS",
-      "recent_avg": 17.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "china maritime safety administration",
-      "label": "China Maritime Safety Administration",
-      "recent_avg": 15.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "the alternative bank",
-      "label": "The Alternative Bank Limited",
-      "recent_avg": 12.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "gul khan",
-      "label": "Gul Khan",
-      "recent_avg": 12.5,
+      "key": "sunbeth agro holdco",
+      "label": "Sunbeth Agro HoldCo",
+      "recent_avg": 35.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -182,5 +182,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-18 04:17:09"
+  "generated": "2026-11-18 16:33:13"
 }
