@@ -1,6 +1,20 @@
 {
   "holdings": [
     {
+      "person": "22 Plus Invest Limited",
+      "company": "DP World Logistics Limited",
+      "points": [
+        {
+          "date": "2026-11-18",
+          "pct": 43.0
+        }
+      ],
+      "change": 0.0,
+      "intermediates": [
+        "Tropical General Investments (TGI) Group"
+      ]
+    },
+    {
       "person": "International Finance Corporation",
       "company": "Quickmart",
       "points": [
@@ -23,6 +37,20 @@
       ],
       "change": 0.0,
       "intermediates": []
+    },
+    {
+      "person": "Sunbeth Agro HoldCo",
+      "company": "Livestock Feeds Plc",
+      "points": [
+        {
+          "date": "2026-11-18",
+          "pct": 73.29
+        }
+      ],
+      "change": 0.0,
+      "intermediates": [
+        "Sunbeth Treenuts and Sesame Limited"
+      ]
     },
     {
       "person": "Sunbeth Treenuts and Sesame Limited",
@@ -78,5 +106,5 @@
       ]
     }
   ],
-  "generated": "2026-11-18 04:17:09"
+  "generated": "2026-11-18 16:33:13"
 }
