@@ -30,7 +30,7 @@ const { slug, name } = Astro.props;
       <!-- Honeypot: invisible to people, tempting to bots. -->
       <input class="hp" type="text" name="company_site" tabindex="-1" autocomplete="off" aria-hidden="true" />
       <p class="status" role="status" aria-live="polite" data-follow-status></p>
-      <p class="privacy meta">The companies you follow are stored with your subscription, only to send these updates. Unfollow any time from the link in every brief.</p>
+      <p class="privacy meta">The companies you follow are stored with your subscription, only to send these updates. Unfollow any time from the link in every brief. See our <a href={href("privacy/")}>privacy notice</a>.</p>
     </form>
   </div>
 </section>

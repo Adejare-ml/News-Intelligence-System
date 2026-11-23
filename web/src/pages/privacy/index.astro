@@ -8,7 +8,7 @@ import { href } from "../../lib/url.ts";
   heading="What we keep, and why"
   lede="AURA keeps as little personal data as it can. This page explains what it holds about readers and about the people its records name, under Nigeria’s Data Protection Act 2023."
   description="How AURA handles personal data: Morning Brief subscribers, people named in records, and disputes."
-  updated="2026-11-08"
+  updated="2026-11-23"
 >
   <h2>If you subscribe to the Morning Brief</h2>
   <p>We store:</p>
@@ -27,7 +27,8 @@ import { href } from "../../lib/url.ts";
   <p>
     We use these only to send you the brief you asked for. We do not sell or share them, and we do not use
     them for advertising. The addresses are kept in a database run by Cloudflare, and the emails are sent
-    through an email delivery service. Neither may use your address for anything else.
+    through one email delivery service (Gmail, Brevo or Resend; see “Who handles data for us” below).
+    Neither may use your address for anything else.
   </p>
   <p>
     <strong>How long:</strong> a sign-up that is never confirmed gets the confirmation email and at most one
@@ -70,6 +71,33 @@ import { href } from "../../lib/url.ts";
     If a record names you and it is wrong, or you object to it, use the <a href={href("dispute/")}>dispute form</a>.
     We will review it, reply, and correct or remove the record where that is right. Changes are listed on the
     <a href={href("corrections/")}>corrections page</a>.
+  </p>
+
+  <h2>How we use AI</h2>
+  <p>
+    AURA uses AI language models to read news articles, pull out who owns or runs which company, and write
+    the daily brief and the Morning Brief summary. What goes to these models is the text of published news
+    articles, which can include the names of the people they report on. Records made this way can be wrong,
+    which is why each one links to its source and can be disputed.
+  </p>
+  <p>
+    <strong>Your own data never goes to an AI model.</strong> Subscriber email addresses, the companies you
+    follow, your choices and anything you send through the dispute form are not sent to any AI service, and
+    are not used to train one. There is no AI chatbot on this site.
+  </p>
+
+  <h2>Who handles data for us</h2>
+  <p>These services process data on AURA’s behalf, only to run it:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> hosts the site and the database of subscribers, follows, disputes and daily page counts.</li>
+    <li><strong>One email delivery service, Gmail (Google), Brevo or Resend</strong>, receives your address and the email it carries, to deliver the Morning Brief and confirmation emails.</li>
+    <li><strong>AI model providers</strong>: Anthropic (Claude), Google (Gemini), NVIDIA, Ollama and OpenAI receive news article text, as described above. Not every provider is used on every run; the next one is tried when one fails.</li>
+    <li><strong>Google Sheets</strong> holds the ownership, board and procurement records drawn from the news. These name people reported on, not readers.</li>
+    <li><strong>GitHub</strong> runs the scheduled pipeline and hosts the code and the published records.</li>
+  </ul>
+  <p>
+    Some of these services are based outside Nigeria, so data they handle may be processed abroad. We do
+    not sell personal data to anyone, or share it for advertising.
   </p>
 
   <h2>Your rights</h2>
