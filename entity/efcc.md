@@ -11,7 +11,7 @@ Mentioned in 35 reports tracked by AURA.
 
 ## In the news
 
-- [Customs, EFCC join forces against smuggling, money laundering](https://punchng.com/customs-efcc-join-forces-against-smuggling-money-laundering/) · The Punch · 13 Nov 2026
+- [EFCC arraigns businessman, firm over N11m Canadian visa fraud](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNjJMRjloUlg4Qmp1b2VtVTdpaEJacnpCdVJUd3pldWk3c2FHdzBmVWJ5MFo1TEtxWGFjSm1XVkZ4QlBFcWVNU0VYMzZMNERqUjlJejZFVDRMU08zSGFSUEduUGVUS2Q4VUpMODNoRGc5N2FqcjBrUXE5bWdkSTRDdXNkMFZabVR5?oc=5) · The Punch · 26 Nov 2026
 
 ## Contracts in the news
 

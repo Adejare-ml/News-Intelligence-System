@@ -121,8 +121,8 @@
       "risk": "Critical"
     },
     {
-      "id": "7301d85363bc",
-      "label": "Financial Reporting Council of Nigeria",
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -133,8 +133,8 @@
       "risk": "Low"
     },
     {
-      "id": "b636c60fbd26",
-      "label": "Senate of Nigeria",
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -145,38 +145,56 @@
       "risk": "Low"
     },
     {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "f6ea64bf1db3",
-      "label": "Federal Competition and Consumer Protection Commission",
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "3a855b071fef",
-      "label": "Nigeria Revenue Service",
+      "id": "8e16dd9bbb58",
+      "label": "Federal Inland Revenue Service",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "f8f7bbd6535e",
-      "label": "Nigerian National Petroleum Company (NNPC)",
+      "id": "e4c5ee83197c",
+      "label": "National Agency for Food and Drug Administration and Control",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "07e47c2db94f",
-      "label": "NIMASA",
+      "id": "cc4a4d0f3e25",
+      "label": "Anambra State Government",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "65c1be98b2f6",
+      "label": "Mining Marshals",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "518d4efd7cba",
+      "label": "Tin-Can Port",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e4af52105f17",
+      "label": "Afreximbank",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "43580e647597",
+      "label": "Lagos Waste Management Authority (LAWMA)",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,57 +205,105 @@
       "risk": "Low"
     },
     {
-      "id": "61593181343c",
-      "label": "Office of the National Security Adviser (ONSA)",
+      "id": "bd6061bf78f6",
+      "label": "Nigerian National Petroleum Corporation",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "e2e4fd0c5100",
-      "label": "Yobe Airport",
+      "id": "5c89e3d0cf07",
+      "label": "Northern Nigeria Development Company",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "55b9a699f8f5",
-      "label": "National Technical Institute",
+      "id": "c669dc8630d2",
+      "label": "CVFF",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
+      "id": "e0168dae5af1",
+      "label": "NAFDAC",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "ac79f04a4e30",
-      "label": "Kano State Government",
+      "id": "732d6b70fb70",
+      "label": "Nigerian Inland Waterways Authority",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "974789639094",
-      "label": "Debt Management Office",
+      "id": "a3b307ee4b75",
+      "label": "Institute of Chartered Accountants of Nigeria (ICAN)",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "95368915b67a",
-      "label": "Bureau of Public Procurement",
-      "type": "agency",
+      "id": "7fbdf9a2a1ef",
+      "label": "Jide Omokore",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "6eac15c47af6",
-      "label": "NNPC",
-      "type": "agency",
+      "id": "e48ed3d21b8d",
+      "label": "Andy Odeh",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "4318c4c9c3f1",
-      "label": "Nigeria Security and Civil Defence Corps",
-      "type": "agency",
+      "id": "61a6a1927678",
+      "label": "Mutiu Sunmonu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7d890603e2a1",
+      "label": "Coronation Insurance Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "d1748e2f7de3",
+      "label": "Olamide Olajolo",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "aee05ad699cf",
+      "label": "HH Ahmed Nuhu Bamalli, CFR",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3d09ecb6f818",
+      "label": "Industrial and General Insurance Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "73b9c400d3f4",
+      "label": "Akinlolu Akinyele",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "3445f576e511",
+      "label": "Emmanuel Ojomah",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "aeeeb5e56578",
+      "label": "Afolabi Olufunmilayo",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "cf6a70333c22",
+      "label": "Governor of Anambra State",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -256,6 +322,12 @@
       "id": "c4dd50a83302",
       "label": "Sambo Dasuki",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "61593181343c",
+      "label": "Office of the National Security Adviser (ONSA)",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -361,6 +433,12 @@
       "risk": "Low"
     },
     {
+      "id": "4318c4c9c3f1",
+      "label": "Nigeria Security and Civil Defence Corps",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "7471d6015ba5",
       "label": "Adebolanle Badejo",
       "type": "person",
@@ -379,70 +457,10 @@
       "risk": "Low"
     },
     {
-      "id": "9ae45dd323f7",
-      "label": "Chiamaka N. Uwaegbute",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "ee9ce75da030",
-      "label": "Sam Okuwlehi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1cbfd1385b51",
-      "label": "Seyi Ebenezer",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "18d2a99d1a68",
-      "label": "Franklin Nnaemeka Ngwu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "96935b96b1fb",
-      "label": "Mary Mulili",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "30f9990fa28d",
-      "label": "Farrukh Siddiqui",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "f7e371365a45",
-      "label": "Udoma Udo Udoma",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "56b8db8425af",
-      "label": "Gertrude Olutekunbi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "cd473a0eb606",
-      "label": "Lasaco Assurance Plc",
+      "id": "ad062d79f1e1",
+      "label": "Duke Oil Company Incorporated",
       "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "857958a9f5f4",
-      "label": "Haliru Abdullahi",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "b787895b59f1",
-      "label": "Nigeria Customs Service, Sokoto/Zamfara Area Command",
-      "type": "company",
-      "risk": "Low"
+      "risk": "Medium"
     },
     {
       "id": "be88442e5133",
@@ -633,6 +651,54 @@
   ],
   "edges": [
     {
+      "id": "37fb849cdfca",
+      "from": "e48ed3d21b8d",
+      "to": "f38bd75574f6",
+      "label": "Appointed as Chief Corporate Communications Officer"
+    },
+    {
+      "id": "94499b1b85ad",
+      "from": "61a6a1927678",
+      "to": "7d890603e2a1",
+      "label": "Appointed as Chairman"
+    },
+    {
+      "id": "9802ab1659e2",
+      "from": "d1748e2f7de3",
+      "to": "7d890603e2a1",
+      "label": "Appointed as Managing Director/CEO"
+    },
+    {
+      "id": "ee6cd5370905",
+      "from": "aee05ad699cf",
+      "to": "3d09ecb6f818",
+      "label": "Appointed as Chairman, Board of Directors"
+    },
+    {
+      "id": "dfabd5449af0",
+      "from": "73b9c400d3f4",
+      "to": "3d09ecb6f818",
+      "label": "Appointed as Managing Director/CEO"
+    },
+    {
+      "id": "dde911d6ba19",
+      "from": "3445f576e511",
+      "to": "3d09ecb6f818",
+      "label": "Appointed as Company Secretary"
+    },
+    {
+      "id": "0075cba76c20",
+      "from": "aeeeb5e56578",
+      "to": "3d09ecb6f818",
+      "label": "Appointed as Head of Brand and Corporate Communications"
+    },
+    {
+      "id": "4b5d2a70d719",
+      "from": "cf6a70333c22",
+      "to": "cc4a4d0f3e25",
+      "label": "Appointed as Governor"
+    },
+    {
       "id": "599ed5bc3174",
       "from": "1a17418ea885",
       "to": "0c2be969618b",
@@ -723,58 +789,10 @@
       "label": "Appointed as Director"
     },
     {
-      "id": "317b7e25be6d",
-      "from": "9ae45dd323f7",
-      "to": "30a7ef8d2b51",
-      "label": "Appointed as Director"
-    },
-    {
-      "id": "40c4b5fd42e3",
-      "from": "ee9ce75da030",
-      "to": "30a7ef8d2b51",
-      "label": "Appointed as Director; Chief Executive Officer of LATC"
-    },
-    {
-      "id": "81f41bb05fb5",
-      "from": "1cbfd1385b51",
-      "to": "30a7ef8d2b51",
-      "label": "Appointed as Director; Managing Director and Chief Executive Officer of Payaza Africa Limited"
-    },
-    {
-      "id": "caed02a50e2a",
-      "from": "18d2a99d1a68",
-      "to": "30a7ef8d2b51",
-      "label": "Appointed as Director; Professor of Strategy and Corporate Governance, Lagos Business School"
-    },
-    {
-      "id": "1c326ef44cfe",
-      "from": "96935b96b1fb",
-      "to": "30a7ef8d2b51",
-      "label": "Appointed as Director; Managing Director and Chief Executive Officer of UBA Kenya"
-    },
-    {
-      "id": "a8e05643a0e6",
-      "from": "30f9990fa28d",
-      "to": "30a7ef8d2b51",
-      "label": "Appointed as Director; Group Advisor at Sunbeth Global Concepts"
-    },
-    {
-      "id": "17816f594e47",
-      "from": "f7e371365a45",
-      "to": "fed919ff18b8",
-      "label": "Appointed as Chairman"
-    },
-    {
-      "id": "cb4195549bad",
-      "from": "56b8db8425af",
-      "to": "cd473a0eb606",
-      "label": "Appointed as Company Secretary and Investor Relations Officer"
-    },
-    {
-      "id": "1d3b2219568c",
-      "from": "857958a9f5f4",
-      "to": "b787895b59f1",
-      "label": "Appointed as Customs Area Controller"
+      "id": "c7fd25ada3ac",
+      "from": "f38bd75574f6",
+      "to": "ad062d79f1e1",
+      "label": "PSC: 100%"
     },
     {
       "id": "817c3d0323ca",

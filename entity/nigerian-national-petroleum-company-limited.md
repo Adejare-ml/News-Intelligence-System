@@ -11,10 +11,11 @@ Mentioned in 104 reports tracked by AURA.
 
 ## In the news
 
-- [NNPC showcases methane reduction progress at COP31](https://news.google.com/rss/articles/CBMihAFBVV95cUxPRUtWTmpCZ1NDcHhEcU0ydHA1NHIxaUdjS3hKT3BrWXJoZ1A2OVJsQnc5THFhN0JFNTQzSTBWekhsVDhEeHItUC1jTmkzX0ZJWFk1dldCV1pYd245Ulg0NEhqaEhUUWNiTDhaWHNhUnMxQWtMcTFETlVqMGQwckQ0VDM5TlY?oc=5) · The Guardian Nigeria · 15 Nov 2026
+- [Duke Oil: NNPC explains $2bn crude-for-petrol transactions](https://punchng.com/duke-oil-nnpc-explains-2bn-crude-for-petrol-transactions/) · The Punch · 24 Nov 2026
 
 ## Appointments and departures
 
+- 26 Nov 2026: **Andy Odeh**, Chief Corporate Communications Officer
 - 18 Nov 2026: **Bayo Ojulari**, Group Chief Executive Officer
 - 11 Nov 2026: **Mele Kyari**, Group Chief Executive Officer
 - 6 Nov 2026: **Bashir Bayo Ojulari**, Group Chief Executive Officer, NNPC Limited
