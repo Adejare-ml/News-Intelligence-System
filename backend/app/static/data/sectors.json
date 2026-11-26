@@ -2,34 +2,34 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 956,
-      "mentions": 1567,
+      "companies": 958,
+      "mentions": 1568,
       "risk": {
         "Low": 834,
         "Critical": 56,
-        "Medium": 37,
+        "Medium": 39,
         "High": 29
       }
     },
     {
       "industry": "Oil & Gas",
-      "companies": 59,
-      "mentions": 297,
+      "companies": 62,
+      "mentions": 301,
       "risk": {
         "Medium": 23,
-        "Low": 27,
+        "Low": 28,
         "Critical": 1,
-        "High": 8
+        "High": 10
       }
     },
     {
       "industry": "Banking",
-      "companies": 37,
-      "mentions": 91,
+      "companies": 38,
+      "mentions": 94,
       "risk": {
         "Critical": 1,
         "Low": 29,
-        "Medium": 7
+        "Medium": 8
       }
     },
     {
@@ -134,6 +134,16 @@
       }
     },
     {
+      "industry": "Insurance",
+      "companies": 9,
+      "mentions": 10,
+      "risk": {
+        "High": 2,
+        "Low": 6,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Transportation/Ride-hailing",
       "companies": 2,
       "mentions": 10,
@@ -176,15 +186,6 @@
         "Low": 1,
         "Medium": 1,
         "High": 1
-      }
-    },
-    {
-      "industry": "Insurance",
-      "companies": 7,
-      "mentions": 8,
-      "risk": {
-        "High": 2,
-        "Low": 5
       }
     },
     {
@@ -321,6 +322,15 @@
       "mentions": 4,
       "risk": {
         "Low": 4
+      }
+    },
+    {
+      "industry": "Logistics",
+      "companies": 3,
+      "mentions": 4,
+      "risk": {
+        "Low": 2,
+        "Medium": 1
       }
     },
     {
@@ -481,15 +491,6 @@
       "companies": 1,
       "mentions": 2,
       "risk": {
-        "Medium": 1
-      }
-    },
-    {
-      "industry": "Logistics",
-      "companies": 2,
-      "mentions": 2,
-      "risk": {
-        "Low": 1,
         "Medium": 1
       }
     },
@@ -1056,5 +1057,5 @@
       }
     }
   ],
-  "generated": "2026-11-18 17:31:29"
+  "generated": "2026-11-26 17:53:39"
 }

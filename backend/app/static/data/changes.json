@@ -1,17 +1,48 @@
 {
-  "new_companies": [],
-  "new_people": [],
-  "psc_added": [],
+  "new_companies": [
+    "Broron",
+    "CIFCFIN",
+    "Coronation Insurance Plc",
+    "Coronation Registrars Limited",
+    "Duke Oil Company Incorporated",
+    "Ibom LNG Partners",
+    "Industrial and General Insurance Plc",
+    "NNPC Trading S.A.",
+    "UPS"
+  ],
+  "new_people": [
+    "Afolabi Olufunmilayo",
+    "Akinlolu Akinyele",
+    "Andy Odeh",
+    "Emmanuel Ojomah",
+    "Governor of Anambra State",
+    "HH Ahmed Nuhu Bamalli, CFR",
+    "Jide Omokore",
+    "Mutiu Sunmonu",
+    "Olamide Olajolo"
+  ],
+  "psc_added": [
+    {
+      "person": "Nigerian National Petroleum Company Limited",
+      "company": "Duke Oil Company Incorporated"
+    }
+  ],
   "psc_removed": [],
   "psc_changed": [],
-  "new_high_risk": [],
+  "new_high_risk": [
+    {
+      "title": "A\u2019Court jails Omokore, two ex-NNPC executives seven years over $1.6bn fraud",
+      "url": "https://businessday.ng/news/article/acourt-jails-omokore-two-ex-nnpc-executives-seven-years-over-1-6bn-fraud/",
+      "risk": 70.0
+    }
+  ],
   "counts": {
-    "new_companies": 0,
-    "new_people": 0,
-    "psc_added": 0,
+    "new_companies": 9,
+    "new_people": 9,
+    "psc_added": 1,
     "psc_removed": 0,
     "psc_changed": 0,
-    "new_high_risk": 0
+    "new_high_risk": 1
   },
-  "generated": "2026-11-18 17:31:08"
+  "generated": "2026-11-26 17:53:27"
 }

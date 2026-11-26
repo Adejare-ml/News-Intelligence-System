@@ -1,180 +1,45 @@
 {
   "movers": [
     {
-      "key": "afreximbank",
-      "label": "Afreximbank",
-      "recent_avg": 45.0,
-      "previous_avg": 10.0,
-      "delta": 35.0,
-      "recent_mentions": 2,
-      "previous_mentions": 1
-    },
-    {
       "key": "national petroleum company",
       "label": "Nigerian National Petroleum Company Limited",
-      "recent_avg": 20.0,
-      "previous_avg": 41.6,
-      "delta": -21.6,
-      "recent_mentions": 3,
-      "previous_mentions": 8
-    },
-    {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "recent_avg": 20.0,
-      "previous_avg": 34.0,
-      "delta": -14.0,
-      "recent_mentions": 3,
-      "previous_mentions": 5
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "recent_avg": 25.0,
-      "previous_avg": 15.0,
-      "delta": 10.0,
-      "recent_mentions": 2,
-      "previous_mentions": 2
-    },
-    {
-      "key": "federal government of",
-      "label": "Federal Government of Nigeria",
-      "recent_avg": 17.5,
-      "previous_avg": 25.0,
-      "delta": -7.5,
-      "recent_mentions": 4,
-      "previous_mentions": 5
-    },
-    {
-      "key": "house of representatives",
-      "label": "House of Representatives",
-      "recent_avg": 30.0,
-      "previous_avg": 36.7,
-      "delta": -6.7,
+      "recent_avg": 35.0,
+      "previous_avg": 20.0,
+      "delta": 15.0,
       "recent_mentions": 2,
       "previous_mentions": 3
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 19.0,
-      "previous_avg": 24.0,
-      "delta": -5.0,
-      "recent_mentions": 5,
-      "previous_mentions": 8
-    },
-    {
-      "key": "seplat energy",
-      "label": "Seplat Energy Plc",
-      "recent_avg": 50.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "federal competition and consumer protection commission",
-      "label": "Federal Competition and Consumer Protection Commission",
-      "recent_avg": 46.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 5,
-      "previous_mentions": 0
-    },
-    {
-      "key": "security and civil defence corps",
-      "label": "Nigeria Security and Civil Defence Corps",
-      "recent_avg": 45.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "bayelsa state government",
-      "label": "Bayelsa State Government",
-      "recent_avg": 42.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "ngx",
-      "label": "NGX Group Plc",
-      "recent_avg": 42.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "nairobi securities exchange",
-      "label": "Nairobi Securities Exchange",
-      "recent_avg": 42.5,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 2,
-      "previous_mentions": 0
-    },
-    {
-      "key": "livestock feeds",
-      "label": "Livestock Feeds Plc",
-      "recent_avg": 41.7,
-      "previous_avg": null,
-      "delta": null,
+      "recent_avg": 18.3,
+      "previous_avg": 19.0,
+      "delta": -0.7,
       "recent_mentions": 3,
-      "previous_mentions": 0
+      "previous_mentions": 5
     },
     {
-      "key": "sunbeth treenuts and sesame",
-      "label": "Sunbeth Treenuts and Sesame Limited",
-      "recent_avg": 41.7,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
+      "key": "house of representatives",
+      "label": "House of Representatives",
+      "recent_avg": 30.0,
+      "previous_avg": 30.0,
+      "delta": 0.0,
+      "recent_mentions": 2,
+      "previous_mentions": 2
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission",
-      "recent_avg": 41.7,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "exchange",
-      "label": "Nigerian Exchange Limited",
-      "recent_avg": 41.7,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 3,
-      "previous_mentions": 0
-    },
-    {
-      "key": "economic and financial crimes commission efcc",
-      "label": "Economic and Financial Crimes Commission (EFCC)",
-      "recent_avg": 40.0,
+      "key": "maritime administration and safety agency",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "recent_avg": 10.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
       "previous_mentions": 0
     },
     {
-      "key": "uac of",
-      "label": "UAC of Nigeria Plc",
-      "recent_avg": 40.0,
-      "previous_avg": null,
-      "delta": null,
-      "recent_mentions": 4,
-      "previous_mentions": 0
-    },
-    {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "recent_avg": 37.5,
+      "key": "ups",
+      "label": "UPS",
+      "recent_avg": 10.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
@@ -182,5 +47,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-18 17:31:29"
+  "generated": "2026-11-26 17:53:39"
 }
