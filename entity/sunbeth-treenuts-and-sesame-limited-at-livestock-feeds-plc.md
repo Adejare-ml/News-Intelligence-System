@@ -5,7 +5,7 @@ Person or holder
 Sunbeth Treenuts and Sesame Limited owns 73.29% of Livestock Feeds Plc.
 
 - Holdings: 1
-- Recent stories: 2
+- Recent stories: 1
 
 ## What they’re reported to control
 
@@ -17,7 +17,6 @@ Extracted from news reporting by a language model. Not a CAC filing; check the s
 ## In the news
 
 - [Sunbeth completes acquisition of controlling stake in Livestock Feeds Plc](https://www.premiumtimesng.com/promoted/926225-sunbeth-completes-acquisition-of-controlling-stake-in-livestock-feeds-plc.html) · Premium Times · 18 Nov 2026
-- [Sunbeth completes N19.5 billion acquisition of UAC’s 73.29% stake in Livestock Feeds, reconstitutes Board](https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/) · Nairametrics · 17 Nov 2026
 
 ---
 

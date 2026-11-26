@@ -6,7 +6,6 @@ Company or body · Oil & Gas
 
 - Mentions tracked: 9
 - Holdings: 1
-- Recent stories: 1
 - Last seen: 17 Nov 2026
 
 ## Who is reported to control it
@@ -15,10 +14,6 @@ Company or body · Oil & Gas
   Reported by [Nairametrics](https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/), not verified with the CAC register.
 
 Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.
-
-## In the news
-
-- [Billionaire Tony Elumelu adds N98 billion stake in Seplat](https://nairametrics.com/2026/11/17/billionaire-tony-elumelu-adds-n98-billion-stake-in-seplat/) · Nairametrics · 17 Nov 2026
 
 ## Appointments and departures
 
