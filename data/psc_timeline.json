@@ -39,6 +39,18 @@
       "intermediates": []
     },
     {
+      "person": "Nigerian National Petroleum Company Limited",
+      "company": "Duke Oil Company Incorporated",
+      "points": [
+        {
+          "date": "2026-11-26",
+          "pct": 100.0
+        }
+      ],
+      "change": 0.0,
+      "intermediates": []
+    },
+    {
       "person": "Sunbeth Agro HoldCo",
       "company": "Livestock Feeds Plc",
       "points": [
@@ -106,5 +118,5 @@
       ]
     }
   ],
-  "generated": "2026-11-18 17:31:29"
+  "generated": "2026-11-26 17:53:39"
 }

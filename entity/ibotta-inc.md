@@ -6,7 +6,6 @@ Company or body
 
 - Mentions tracked: 1
 - Holdings: 1
-- Recent stories: 1
 - Last seen: 16 Nov 2026
 
 ## Who is reported to control it
@@ -15,10 +14,6 @@ Company or body
   Reported by [Investing.com Nigeria](https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5), not verified with the CAC register.
 
 Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.
-
-## In the news
-
-- [Form 4 Ibotta Inc: KDT Ibotta Holdings, LLC (10% Owner) For: 9 November](https://news.google.com/rss/articles/CBMixAFBVV95cUxNc2VydDBZb0pqcWkzNERpZHVBemw0TzM0M0F1VkIyajNXZGctYnFqTnc5d050UWV5SlhtWkVIYXZIRVlnYTBYSmtGZ3FqME5Bdzh4cy1PcTNhUTlOR3poZ09kWEtNZUhPWlBLYU13dHNpaHdjREZyWHBqVEIxTkhJdWdndjIwSm1GbjcwVUdQOGNwbm9mbUk1XzlBZW5PUjBEVkUxLXVOeUhrdklDU3NEbUpucnVPZmh0SFJ1NDJ3UU1YOFVn?oc=5) · Investing.com Nigeria · 15 Nov 2026
 
 ---
 

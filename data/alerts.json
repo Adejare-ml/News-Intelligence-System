@@ -1,6 +1,33 @@
 {
   "alerts": [
     {
+      "date": "2026-11-26",
+      "title": "A\u2019Court jails Omokore, two ex-NNPC executives seven years over $1.6bn fraud",
+      "url": "https://businessday.ng/news/article/acourt-jails-omokore-two-ex-nnpc-executives-seven-years-over-1-6bn-fraud/",
+      "source": "BusinessDay",
+      "risk_score": 70,
+      "risk_level": "High",
+      "entities": [
+        "Nigerian National Petroleum Corporation",
+        "Jide Omokore"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Duke Oil: NNPC explains $2bn crude-for-petrol transactions",
+      "url": "https://punchng.com/duke-oil-nnpc-explains-2bn-crude-for-petrol-transactions/",
+      "source": "The Punch",
+      "risk_score": 55,
+      "risk_level": "High",
+      "entities": [
+        "Nigerian National Petroleum Company Limited",
+        "Duke Oil Company Incorporated",
+        "NNPC Trading S.A.",
+        "Federal Inland Revenue Service",
+        "Andy Odeh"
+      ]
+    },
+    {
       "date": "2026-11-18",
       "title": "Bank official testifies on N500m disbursements from ONSA account to private company during Dasuki\u2019s tenure - Premium Times Nigeria",
       "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPSUs0TmVsMVZQQ0JFSUg2TEZ0MnBmaF9reFpvYldPbmI5YzFDR1hLV0FOMUtpS2VzbUpkUmtWV1piekp4VC0wRHpVOFpWSUlEbzNpV0hyZU1QWUFqRjBjVkRZRkp4eE4xRndyUWdGQ0wxQjZZVVB4elhCVldja3J5ajMtTldDVXVvUkRIREdGcE85N0l0Q0tOZGlRSjBfZ1UyekE1elZoTl81SDdhWVRBbXZwSXJiNVlnR1hXd3NNcWZ3MXdxMUVWQXF5R3FJc3M3SnVIdmdpZmQ4R3dNZ1Z2Zml5cUEzQ0l4UnNGX0NOQVFvc1g4?oc=5",
@@ -1315,5 +1342,5 @@
     }
   ],
   "window_days": 90,
-  "generated": "2026-11-18 17:31:29"
+  "generated": "2026-11-26 17:53:39"
 }

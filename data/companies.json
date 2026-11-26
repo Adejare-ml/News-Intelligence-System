@@ -6761,10 +6761,10 @@
   },
   {
     "Company": "First Bank",
-    "Mention Count": 2,
-    "Last Seen": "2026-08-09 13:46",
-    "Industry": "General",
-    "Risk Level": "Low",
+    "Mention Count": 3,
+    "Last Seen": "2026-11-26 17:48",
+    "Industry": "Banking",
+    "Risk Level": "Medium",
     "First Seen": ""
   },
   {
@@ -7913,8 +7913,8 @@
   },
   {
     "Company": "Dangote Petroleum Refinery and Petrochemicals",
-    "Mention Count": 1,
-    "Last Seen": "2026-09-15 01:20",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-26 17:49",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
     "First Seen": "2026-09-15 01:20"
@@ -10638,5 +10638,77 @@
     "Industry": "General",
     "Risk Level": "Medium",
     "First Seen": "2026-11-18 16:29"
+  },
+  {
+    "Company": "Duke Oil Company Incorporated",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:47",
+    "Industry": "Oil & Gas",
+    "Risk Level": "High",
+    "First Seen": "2026-11-26 17:47"
+  },
+  {
+    "Company": "NNPC Trading S.A.",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:47",
+    "Industry": "Oil & Gas",
+    "Risk Level": "High",
+    "First Seen": "2026-11-26 17:47"
+  },
+  {
+    "Company": "Broron",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:48",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-26 17:48"
+  },
+  {
+    "Company": "Coronation Insurance Plc",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:48",
+    "Industry": "Insurance",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-26 17:48"
+  },
+  {
+    "Company": "Coronation Registrars Limited",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:48",
+    "Industry": "General",
+    "Risk Level": "Medium",
+    "First Seen": "2026-11-26 17:48"
+  },
+  {
+    "Company": "Industrial and General Insurance Plc",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:48",
+    "Industry": "Insurance",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-26 17:48"
+  },
+  {
+    "Company": "CIFCFIN",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:49",
+    "Industry": "General",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-26 17:49"
+  },
+  {
+    "Company": "Ibom LNG Partners",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-26 17:49",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-26 17:49"
+  },
+  {
+    "Company": "UPS",
+    "Mention Count": 2,
+    "Last Seen": "2026-11-26 17:49",
+    "Industry": "Logistics",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-26 17:49"
   }
 ]

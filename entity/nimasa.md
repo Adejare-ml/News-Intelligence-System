@@ -11,8 +11,8 @@ Mentioned in 6 reports tracked by AURA.
 
 ## In the news
 
+- [Tin-Can Port: NIMASA, UPS move to deploy real-time emissions monitoring](https://news.google.com/rss/articles/CBMimwFBVV95cUxQT1pBTHRHOFVOR3FFcFV6M3psTnJlSklYSjd5WWVwbEdncTF6SE9oemxHWGFsLWMtcG5tZGZKNUVsazc3amtJRERDZ2RYUTFKc2xKWDR0QjFudDBPT3NuaGZhVGh2STFrVEZNeU1pY0lSbXlGdGxTdEpoTklwMUlqT2hxeVRJT2ktalJtNkNkUFRDLXBmXzZuMmNkNA?oc=5) · The Guardian Nigeria · 25 Nov 2026
 - [Denmark offers sea time for Nigerian cadets, backs NIMASA innovation drive](https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGx4YzVKOVdvdTM4cUJYcFdyVnRfSW5ZOFJXSTJNdHdXOWNUYVBfMC1vLTZ6RXYwOTdES2tJdDA2TXBURENuVnZFdlAzR3NzZWpqNkZDenpuZjUwVk5GUXBBdHJnU21kMWZoV2Z6bXMxeVozcGQ4R0dLZWVDWWNZT29YUi1HVjFQM1BfbURXcnFYNkFDQXN6ZXZjOHFtY1NkeTJsNEdhNA?oc=5) · The Eagle Online · 18 Nov 2026
-- [NIMASA, China deepen maritime cooperation](https://punchng.com/nimasa-china-deepen-maritime-cooperation/) · The Punch · 11 Nov 2026
 
 ---
 
