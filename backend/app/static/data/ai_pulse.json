@@ -1,68 +1,78 @@
 {
-  "generated": "2026-11-26 17:53:29",
+  "generated": "2026-11-26 22:20:54",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6184,
+      "likes": 6230,
       "downloads": 96527
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1441,
+      "likes": 1488,
       "downloads": 2445633
     },
     {
       "id": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "task": "audio-to-audio",
-      "likes": 936,
+      "likes": 958,
       "downloads": 15244
     },
     {
       "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "task": "image-text-to-text",
-      "likes": 889,
+      "likes": 929,
       "downloads": 762491
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1183,
+      "likes": 1208,
       "downloads": 189735
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 472,
+      "likes": 512,
       "downloads": 59366
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13528,
+      "likes": 13584,
       "downloads": 3041405
     },
     {
-      "id": "apple/DepthPro2",
-      "url": "https://huggingface.co/apple/DepthPro2",
-      "task": "depth-estimation",
-      "likes": 1275,
-      "downloads": 0
+      "id": "llamaindex/OCRia-nano-1",
+      "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
+      "task": "image-to-text",
+      "likes": 281,
+      "downloads": 126
     }
   ],
   "papers": [
     {
+      "title": "Evaluating Memanto on DolphinBench for AI Agents",
+      "url": "https://huggingface.co/papers/2611.28231",
+      "upvotes": 2
+    },
+    {
+      "title": "Look Back: Reinforcement Learning with Counterfactual World Models",
+      "url": "https://huggingface.co/papers/2611.29259",
+      "upvotes": 0
+    },
+    {
       "title": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
       "url": "https://huggingface.co/papers/2611.34363",
-      "upvotes": 3
+      "upvotes": 4
     },
     {
       "title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
@@ -72,22 +82,12 @@
     {
       "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
       "url": "https://huggingface.co/papers/2611.33093",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "WorldBridge: Bridging Scattered Views for Coherent 3D World Generation",
       "url": "https://huggingface.co/papers/2611.34079",
       "upvotes": 2
-    },
-    {
-      "title": "Edit Recommendation: Can LLMs Anticipate Edit Requests from Users, and When?",
-      "url": "https://huggingface.co/papers/2611.21155",
-      "upvotes": 2
-    },
-    {
-      "title": "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift",
-      "url": "https://huggingface.co/papers/2611.30334",
-      "upvotes": 1
     }
   ]
 }
