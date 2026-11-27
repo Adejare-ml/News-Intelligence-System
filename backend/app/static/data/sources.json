@@ -2,24 +2,24 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 3272,
-      "published": 1624,
-      "filtered": 1648,
+      "total": 3277,
+      "published": 1625,
+      "filtered": 1652,
       "accept_rate": 50,
-      "avg_risk": 28.2,
+      "avg_risk": 28.1,
       "engines": {
         "unknown": 963,
         "ollama": 581,
         "nvidia": 15,
-        "claude": 65
+        "claude": 66
       },
-      "last_seen": "2026-11-26"
+      "last_seen": "2026-11-27"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2925,
+      "total": 2926,
       "published": 1062,
-      "filtered": 1863,
+      "filtered": 1864,
       "accept_rate": 36,
       "avg_risk": 30.3,
       "engines": {
@@ -28,13 +28,13 @@
         "nvidia": 9,
         "claude": 58
       },
-      "last_seen": "2026-11-26"
+      "last_seen": "2026-11-27"
     },
     {
       "source": "Punch Newspapers",
-      "total": 1306,
+      "total": 1310,
       "published": 474,
-      "filtered": 832,
+      "filtered": 836,
       "accept_rate": 36,
       "avg_risk": 27.4,
       "engines": {
@@ -47,9 +47,9 @@
     },
     {
       "source": "The Punch",
-      "total": 779,
+      "total": 782,
       "published": 403,
-      "filtered": 376,
+      "filtered": 379,
       "accept_rate": 52,
       "avg_risk": 32.7,
       "engines": {
@@ -132,9 +132,9 @@
     },
     {
       "source": "leadership",
-      "total": 224,
+      "total": 225,
       "published": 51,
-      "filtered": 173,
+      "filtered": 174,
       "accept_rate": 23,
       "avg_risk": 23.3,
       "engines": {
@@ -173,9 +173,9 @@
     },
     {
       "source": "vanguardngr",
-      "total": 210,
+      "total": 211,
       "published": 30,
-      "filtered": 180,
+      "filtered": 181,
       "accept_rate": 14,
       "avg_risk": 25.0,
       "engines": {
@@ -214,9 +214,9 @@
     },
     {
       "source": "legit",
-      "total": 152,
+      "total": 154,
       "published": 24,
-      "filtered": 128,
+      "filtered": 130,
       "accept_rate": 16,
       "avg_risk": 25.4,
       "engines": {
@@ -361,9 +361,9 @@
     },
     {
       "source": "tori",
-      "total": 36,
+      "total": 37,
       "published": 5,
-      "filtered": 31,
+      "filtered": 32,
       "accept_rate": 14,
       "avg_risk": 25.4,
       "engines": {
@@ -2506,5 +2506,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-27 01:04:24"
+  "generated": "2026-11-27 05:00:35"
 }

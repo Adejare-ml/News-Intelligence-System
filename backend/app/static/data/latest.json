@@ -1,5 +1,28 @@
 [
   {
+    "ID": 12420,
+    "Time": "Fri, 27 Nov 2026 03:00:42 GMT",
+    "Title": "FCCPC urges supermarkets to ensure fair pricing, product safety - The Guardian Nigeria News",
+    "Source": "The Guardian Nigeria News",
+    "URL": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ2xiRDFUN2ZDTF9PT1FKYWJndDF0akV2em1hQTlIWC1ONGpDMlVJZmwwaEloTHFuVjQtbWdXT3l3V2dXcTRiN0NZUk1pa09DT0lfbGpIeWRDWFZzVE8xYTY2NGRhcS1hcWYwUHJWWGhIcGpTOU9XOGViZjRkT1pQZWFMRU1mYndpVzRDbXozcGpZQQ?oc=5",
+    "Category": "Government",
+    "Risk Score": 15,
+    "Summary": "The Federal Competition and Consumer Protection Commission (FCCPC) has urged supermarkets to ensure fair pricing and product safety. The call was reported by The Guardian Nigeria. No further details on specific enforcement actions are given in the available text.",
+    "Status": "Unread",
+    "Engine": "claude",
+    "Event Type": "Policy",
+    "Risk Level": "Low",
+    "Importance": 35,
+    "Entities": "Federal Competition and Consumer Protection Commission",
+    "Filter Reason": "",
+    "Key Facts": "The FCCPC urged supermarkets to ensure fair pricing. | The FCCPC urged supermarkets to ensure product safety.",
+    "Why It Matters": "The regulatory call directs consumer-protection expectations at supermarket operators, which affects how retail companies price goods and manage product safety in Nigeria.",
+    "Detail": "headline",
+    "Basis": "headline",
+    "Quote": "",
+    "Image": ""
+  },
+  {
     "ID": 12404,
     "Time": "2026-11-26T00:06:06Z",
     "Title": "Dockworkers\u2019 service conditions undergo review",
@@ -1258,28 +1281,5 @@
     "Basis": "headline",
     "Quote": "",
     "Image": "https://media.premiumtimesng.com/wp-content/files/2026/11/1001586650.jpg"
-  },
-  {
-    "ID": 12044,
-    "Time": "Tue, 17 Nov 2026 03:00:05 GMT",
-    "Title": "17 MDAs fail FG\u2019s benchmark in 2026 Fiscal Responsibility Index - The Guardian Nigeria News",
-    "Source": "The Guardian Nigeria News",
-    "URL": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNT2Jac3R1MDc1UG8yYXZ2MDROLVNGV1NOMmxKRHpjdGRvT3EtT2REUGpwRjVLM1pNZEZJRTRnMXJndnNMVVhuRFZzWEVuQnVub3VYRWJPdllOQmlfZ3l2SjJLV0tkb3JVbGx6TXRqLVRxSE1WV1N2NWd2blhyaUNRV3lUVVlKSDhKa0F0aEhOTFFWZw?oc=5",
-    "Category": "Government",
-    "Risk Score": 25,
-    "Summary": "Seventeen Ministries, Departments and Agencies (MDAs) failed to meet the federal government's benchmark in the 2026 Fiscal Responsibility Index. The article headline reports the shortfall but the available text does not name the agencies or give scores.",
-    "Status": "Unread",
-    "Engine": "claude",
-    "Event Type": "Audit",
-    "Risk Level": "Low",
-    "Importance": 40,
-    "Entities": "Federal Government of Nigeria",
-    "Filter Reason": "",
-    "Key Facts": "",
-    "Why It Matters": "The index measures how well federal agencies manage public money, so repeated benchmark failures bear on accountability for public funds.",
-    "Detail": "headline",
-    "Basis": "headline",
-    "Quote": "",
-    "Image": ""
   }
 ]
