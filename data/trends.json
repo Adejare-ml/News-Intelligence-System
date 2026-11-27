@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 30,
-  "previous_articles": 64,
+  "recent_articles": 31,
+  "previous_articles": 62,
   "rising": [
     {
       "term": "emissions",
@@ -52,13 +52,13 @@
       "change": 2
     },
     {
-      "term": "bayelsa",
+      "term": "safety",
       "recent": 2,
-      "previous": 1,
-      "change": 1
+      "previous": 0,
+      "change": 2
     },
     {
-      "term": "lagos",
+      "term": "bayelsa",
       "recent": 2,
       "previous": 1,
       "change": 1
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 19,
-      "previous": 37
+      "recent": 20,
+      "previous": 36
     },
     {
       "category": "Company",
@@ -140,7 +140,7 @@
     {
       "category": "Legal",
       "recent": 5,
-      "previous": 4
+      "previous": 3
     },
     {
       "category": "Other",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-27 01:04:24"
+  "generated": "2026-11-27 05:00:35"
 }

@@ -127,6 +127,12 @@
       "risk": "Low"
     },
     {
+      "id": "f6ea64bf1db3",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -231,12 +237,6 @@
     {
       "id": "732d6b70fb70",
       "label": "Nigerian Inland Waterways Authority",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "a3b307ee4b75",
-      "label": "Institute of Chartered Accountants of Nigeria (ICAN)",
       "type": "agency",
       "risk": "Low"
     },
