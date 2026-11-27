@@ -1960,6 +1960,31 @@
       ]
     },
     {
+      "key": "federal competition and consumer protection commission",
+      "label": "Federal Competition and Consumer Protection Commission",
+      "total_mentions": 6,
+      "points": [
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 70.0,
+          "max_risk": 70
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 4,
+          "avg_risk": 40.0,
+          "max_risk": 55
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "international chamber of commerce",
       "label": "International Chamber of Commerce",
       "total_mentions": 6,
@@ -2473,25 +2498,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "federal competition and consumer protection commission",
-      "label": "Federal Competition and Consumer Protection Commission",
-      "total_mentions": 5,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 70.0,
-          "max_risk": 70
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 4,
-          "avg_risk": 40.0,
-          "max_risk": 55
         }
       ]
     },
@@ -6973,5 +6979,5 @@
       ]
     }
   ],
-  "generated": "2026-11-27 01:04:24"
+  "generated": "2026-11-27 05:00:35"
 }

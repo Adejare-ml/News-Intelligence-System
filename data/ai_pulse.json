@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-27 01:04:20",
+  "generated": "2026-11-27 05:00:30",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6256,
+      "likes": 6290,
       "downloads": 96527
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1495,
+      "likes": 1510,
       "downloads": 2445633
     },
     {
       "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "task": "image-text-to-text",
-      "likes": 936,
+      "likes": 944,
       "downloads": 762491
-    },
-    {
-      "id": "inworld/voice-isolator",
-      "url": "https://huggingface.co/inworld/voice-isolator",
-      "task": "audio-to-audio",
-      "likes": 963,
-      "downloads": 15244
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1212,
+      "likes": 1230,
       "downloads": 189735
+    },
+    {
+      "id": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "task": "audio-to-audio",
+      "likes": 972,
+      "downloads": 15244
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 521,
+      "likes": 538,
       "downloads": 59366
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13596,
+      "likes": 13610,
       "downloads": 3041405
     },
     {
       "id": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
       "task": "image-to-text",
-      "likes": 285,
+      "likes": 287,
       "downloads": 126
     }
   ],
   "papers": [
     {
-      "title": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
-      "url": "https://huggingface.co/papers/2611.29969",
-      "upvotes": 0
+      "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
+      "url": "https://huggingface.co/papers/2611.32238",
+      "upvotes": 5
     },
     {
-      "title": "Evaluating Memanto on DolphinBench for AI Agents",
-      "url": "https://huggingface.co/papers/2611.28231",
+      "title": "Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection",
+      "url": "https://huggingface.co/papers/2611.34719",
       "upvotes": 2
     },
     {
-      "title": "Look Back: Reinforcement Learning with Counterfactual World Models",
-      "url": "https://huggingface.co/papers/2611.29259",
-      "upvotes": 0
+      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "url": "https://huggingface.co/papers/2611.34232",
+      "upvotes": 41
     },
     {
-      "title": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
-      "url": "https://huggingface.co/papers/2611.34363",
-      "upvotes": 4
+      "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+      "url": "https://huggingface.co/papers/2611.34852",
+      "upvotes": 22
     },
     {
-      "title": "Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts",
-      "url": "https://huggingface.co/papers/2611.28732",
+      "title": "Decision-Native Multimodal Clinical Modeling via Anatomical Grounding and Confidence Calibration",
+      "url": "https://huggingface.co/papers/2611.32993",
       "upvotes": 3
     },
     {
-      "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
-      "url": "https://huggingface.co/papers/2611.33093",
-      "upvotes": 3
+      "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
+      "url": "https://huggingface.co/papers/2611.34290",
+      "upvotes": 21
     }
   ]
 }

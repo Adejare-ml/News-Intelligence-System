@@ -1,27 +1,17 @@
 {
-  "new_companies": [
-    "Association of Bonded Terminals Operations of Nigeria",
-    "Maritime Workers' Union of Nigeria",
-    "National Association of Stevedoring Operators",
-    "Oil Producers Trade Section",
-    "Seaport Terminal Operators of Nigeria"
-  ],
-  "new_people": [
-    "Francis Bunu",
-    "Jibril Abba",
-    "Osagie Edward"
-  ],
+  "new_companies": [],
+  "new_people": [],
   "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 5,
-    "new_people": 3,
+    "new_companies": 0,
+    "new_people": 0,
     "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-27 01:04:19"
+  "generated": "2026-11-27 05:00:28"
 }
