@@ -228,7 +228,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 81,
+      "total_mentions": 83,
       "points": [
         {
           "week": "2026-09-07",
@@ -298,9 +298,9 @@
         },
         {
           "week": "2026-11-23",
-          "mentions": 4,
-          "avg_risk": 21.2,
-          "max_risk": 30
+          "mentions": 6,
+          "avg_risk": 25.8,
+          "max_risk": 35
         }
       ]
     },
@@ -806,6 +806,61 @@
       ]
     },
     {
+      "key": "midstream and downstream petroleum regulatory authority",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "total_mentions": 17,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 5,
+          "avg_risk": 27.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 4,
+          "avg_risk": 25.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 27.5,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 65.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "ogun state government",
       "label": "Ogun State Government",
       "total_mentions": 17,
@@ -888,55 +943,6 @@
           "mentions": 2,
           "avg_risk": 37.5,
           "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "midstream and downstream petroleum regulatory authority",
-      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
-      "total_mentions": 16,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 5,
-          "avg_risk": 27.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 4,
-          "avg_risk": 25.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 27.5,
-          "max_risk": 35
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 35.0,
-          "max_risk": 35
         }
       ]
     },
@@ -1224,6 +1230,43 @@
       ]
     },
     {
+      "key": "mtn",
+      "label": "MTN Nigeria",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 3,
+          "avg_risk": 21.7,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "national information technology development agency",
       "label": "National Information Technology Development Agency",
       "total_mentions": 11,
@@ -1298,6 +1341,49 @@
       ]
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission, Nigeria",
+      "total_mentions": 11,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "total_mentions": 11,
@@ -1343,74 +1429,6 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "mtn",
-      "label": "MTN Nigeria",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 3,
-          "avg_risk": 21.7,
-          "max_risk": 35
-        }
-      ]
-    },
-    {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission, Nigeria",
-      "total_mentions": 10,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 55
         }
       ]
     },
@@ -1504,6 +1522,37 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Limited",
+      "total_mentions": 9,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 2,
+          "avg_risk": 32.5,
+          "max_risk": 45
         }
       ]
     },
@@ -1677,37 +1726,6 @@
           "mentions": 1,
           "avg_risk": 62.0,
           "max_risk": 62
-        }
-      ]
-    },
-    {
-      "key": "exchange",
-      "label": "Nigerian Exchange Limited",
-      "total_mentions": 8,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 55
-        },
-        {
-          "week": "2026-11-23",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
         }
       ]
     },
@@ -3089,6 +3107,31 @@
       ]
     },
     {
+      "key": "federal ministry of works",
+      "label": "Federal Ministry of Works",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 2,
+          "avg_risk": 35.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 55.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "google",
       "label": "Google",
       "total_mentions": 4,
@@ -3154,6 +3197,25 @@
           "mentions": 3,
           "avg_risk": 23.3,
           "max_risk": 30
+        }
+      ]
+    },
+    {
+      "key": "keystone bank",
+      "label": "Keystone Bank Limited",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 3,
+          "avg_risk": 33.3,
+          "max_risk": 35
         }
       ]
     },
@@ -3305,6 +3367,37 @@
           "mentions": 1,
           "avg_risk": 35.0,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "data protection commission",
+      "label": "Nigeria Data Protection Commission",
+      "total_mentions": 4,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -3975,25 +4068,6 @@
       ]
     },
     {
-      "key": "federal ministry of works",
-      "label": "Federal Ministry of Works",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 35.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "firstbank",
       "label": "FirstBank",
       "total_mentions": 3,
@@ -4386,31 +4460,6 @@
       ]
     },
     {
-      "key": "data protection commission",
-      "label": "Nigeria Data Protection Commission",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
       "key": "labour congress",
       "label": "Nigeria Labour Congress",
       "total_mentions": 3,
@@ -4476,6 +4525,56 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
+        }
+      ]
+    },
+    {
+      "key": "not stated",
+      "label": "Not Stated",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "oando",
+      "label": "Oando Plc",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -5072,6 +5171,51 @@
       ]
     },
     {
+      "key": "coca cola hbc",
+      "label": "Coca-Cola HBC Group",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
+      "key": "coronation insurance",
+      "label": "Coronation Insurance Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 2,
+          "avg_risk": 50.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
+      "key": "coronation registrars",
+      "label": "Coronation Registrars Limited",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 2,
+          "avg_risk": 50.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "dangote cement",
       "label": "Dangote Cement",
       "total_mentions": 2,
@@ -5119,6 +5263,25 @@
           "mentions": 2,
           "avg_risk": 48.5,
           "max_risk": 62
+        }
+      ]
+    },
+    {
+      "key": "delta state house of assembly",
+      "label": "Delta State House of Assembly",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -5667,25 +5830,6 @@
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "keystone bank",
-      "label": "Keystone Bank Limited",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-11-23",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
         }
       ]
     },
@@ -6245,6 +6389,25 @@
       ]
     },
     {
+      "key": "bottling company",
+      "label": "Nigerian Bottling Company Ltd",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
       "key": "education loan fund",
       "label": "Nigerian Education Loan Fund",
       "total_mentions": 2,
@@ -6334,44 +6497,6 @@
       ]
     },
     {
-      "key": "not stated",
-      "label": "Not Stated",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "oando",
-      "label": "Oando Plc",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
-        }
-      ]
-    },
-    {
       "key": "office of the attorney general of the federation",
       "label": "Office of the Attorney General of the Federation",
       "total_mentions": 2,
@@ -6419,6 +6544,19 @@
           "mentions": 2,
           "avg_risk": 12.5,
           "max_risk": 15
+        }
+      ]
+    },
+    {
+      "key": "olamide olajolo",
+      "label": "Olamide Olajolo",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 2,
+          "avg_risk": 50.0,
+          "max_risk": 55
         }
       ]
     },
@@ -6875,109 +7013,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "unijos",
-      "label": "UNIJOS",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "ups",
-      "label": "UPS",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-23",
-          "mentions": 2,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "unnamed commissioner",
-      "label": "Unnamed Commissioner",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        }
-      ]
-    },
-    {
-      "key": "vfd",
-      "label": "VFD Group Plc",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 62.0,
-          "max_risk": 62
-        }
-      ]
-    },
-    {
-      "key": "wayvepay",
-      "label": "WayvePay",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 65.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
-    },
-    {
-      "key": "yakubu gowon university",
-      "label": "Yakubu Gowon University",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-27 05:00:35"
+  "generated": "2026-11-27 17:33:59"
 }

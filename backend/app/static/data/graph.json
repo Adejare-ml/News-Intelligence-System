@@ -121,8 +121,38 @@
       "risk": "Critical"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "a61e97dc06d8",
+      "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "23d8905a6cbb",
+      "label": "Federal Ministry of Works",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "387e8dea8fb6",
       "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "4d8cb1e72a03",
+      "label": "Nigeria Data Protection Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -133,14 +163,38 @@
       "risk": "Low"
     },
     {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
+      "id": "c38419223e84",
+      "label": "Delta State House of Assembly",
       "type": "agency",
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
+      "id": "09f60485afe1",
+      "label": "Nigerian Exchange",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "ae1ea59d48a0",
+      "label": "Fair Competition Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "b7c89aa2e0ee",
+      "label": "Lagos State Taskforce",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "e7f6ed9708d8",
+      "label": "National Biosafety Management Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0bcaaf453cd3",
+      "label": "Economic and Financial Crimes Commission",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,57 +241,15 @@
       "risk": "Low"
     },
     {
-      "id": "518d4efd7cba",
-      "label": "Tin-Can Port",
-      "type": "agency",
+      "id": "d1748e2f7de3",
+      "label": "Olamide Olajolo",
+      "type": "person",
       "risk": "Low"
     },
     {
-      "id": "e4af52105f17",
-      "label": "Afreximbank",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "43580e647597",
-      "label": "Lagos Waste Management Authority (LAWMA)",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cd76249f84cf",
-      "label": "Nigerian Exchange Limited",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "bd6061bf78f6",
-      "label": "Nigerian National Petroleum Corporation",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "5c89e3d0cf07",
-      "label": "Northern Nigeria Development Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "c669dc8630d2",
-      "label": "CVFF",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e0168dae5af1",
-      "label": "NAFDAC",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "732d6b70fb70",
-      "label": "Nigerian Inland Waterways Authority",
-      "type": "agency",
+      "id": "7d890603e2a1",
+      "label": "Coronation Insurance Plc",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -265,6 +277,42 @@
       "risk": "Low"
     },
     {
+      "id": "1ede7e849674",
+      "label": "Not named in article",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "96c8a0af0be6",
+      "label": "Keystone Bank",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "647c7ee4dbeb",
+      "label": "Oboku Oforji",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "8500a7305958",
+      "label": "Anastassis G. David",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0f3f6a370929",
+      "label": "Coca-Cola HBC",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "70a0932645fc",
+      "label": "Zoran Bogdanovic",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
       "id": "7fbdf9a2a1ef",
       "label": "Jide Omokore",
       "type": "person",
@@ -279,18 +327,6 @@
     {
       "id": "61a6a1927678",
       "label": "Mutiu Sunmonu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7d890603e2a1",
-      "label": "Coronation Insurance Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "d1748e2f7de3",
-      "label": "Olamide Olajolo",
       "type": "person",
       "risk": "Low"
     },
@@ -403,40 +439,16 @@
       "risk": "Low"
     },
     {
-      "id": "6eb8c640e00d",
-      "label": "Fola Aiyesimoju",
-      "type": "person",
-      "risk": "Low"
+      "id": "7726be4beb32",
+      "label": "Coronation Capital (Mauritius) Limited",
+      "type": "psc",
+      "risk": "High"
     },
     {
-      "id": "14119ced6628",
-      "label": "UAC of Nigeria Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "16a1a80e8732",
-      "label": "Farouk Gumel",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "af13d56292e7",
-      "label": "Tropical General Investments (TGI) Group",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "c6b6a9282f26",
-      "label": "Ayomipo Wey",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "0c6e44f7bf19",
-      "label": "Bayo Ojulari",
-      "type": "person",
-      "risk": "Low"
+      "id": "5cf39a3d5076",
+      "label": "Gutsche Family Investments",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "ad062d79f1e1",
@@ -527,6 +539,12 @@
       "label": "Quickmart",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "a55e2b3aea7e",
+      "label": "Rock Result Nigeria Limited",
+      "type": "company",
+      "risk": "Low"
     },
     {
       "id": "ff87cce3f946",
@@ -645,6 +663,12 @@
   ],
   "edges": [
     {
+      "id": "9802ab1659e2",
+      "from": "d1748e2f7de3",
+      "to": "7d890603e2a1",
+      "label": "Appointed as Managing Director/CEO"
+    },
+    {
       "id": "5eb3fef4ffbc",
       "from": "cf29c7d805a0",
       "to": "387e8dea8fb6",
@@ -663,6 +687,30 @@
       "label": "Appointed as President-General"
     },
     {
+      "id": "6c076aea1705",
+      "from": "1ede7e849674",
+      "to": "96c8a0af0be6",
+      "label": "Appointed as Acting Managing Director"
+    },
+    {
+      "id": "fc7d64b5d7b5",
+      "from": "647c7ee4dbeb",
+      "to": "1613f8dac921",
+      "label": "Appointed as Member, House of Representatives, Yenagoa/Opokuma Federal Constituency"
+    },
+    {
+      "id": "6d5d860b2e32",
+      "from": "8500a7305958",
+      "to": "0f3f6a370929",
+      "label": "Appointed as Chairman"
+    },
+    {
+      "id": "cc4169c2bf5d",
+      "from": "70a0932645fc",
+      "to": "0f3f6a370929",
+      "label": "Appointed as Chief Executive Officer"
+    },
+    {
       "id": "37fb849cdfca",
       "from": "e48ed3d21b8d",
       "to": "f38bd75574f6",
@@ -673,12 +721,6 @@
       "from": "61a6a1927678",
       "to": "7d890603e2a1",
       "label": "Appointed as Chairman"
-    },
-    {
-      "id": "9802ab1659e2",
-      "from": "d1748e2f7de3",
-      "to": "7d890603e2a1",
-      "label": "Appointed as Managing Director/CEO"
     },
     {
       "id": "ee6cd5370905",
@@ -753,28 +795,16 @@
       "label": "Appointed as Chief Strategy Officer, Sunbeth Agro HoldCo"
     },
     {
-      "id": "eb57ab74a936",
-      "from": "6eb8c640e00d",
-      "to": "14119ced6628",
-      "label": "Appointed as Group Managing Director"
+      "id": "28310c0ed538",
+      "from": "7726be4beb32",
+      "to": "7d890603e2a1",
+      "label": "Core Shareholders' recipient of eligible Scheme Shares"
     },
     {
-      "id": "a49f5a8f20f1",
-      "from": "16a1a80e8732",
-      "to": "af13d56292e7",
-      "label": "Appointed as Vice Chairman"
-    },
-    {
-      "id": "9845bd8c5122",
-      "from": "c6b6a9282f26",
-      "to": "14119ced6628",
-      "label": "Appointed as Company Secretary and Group General Counsel"
-    },
-    {
-      "id": "f17d6ec81b5e",
-      "from": "0c6e44f7bf19",
-      "to": "f38bd75574f6",
-      "label": "Appointed as Group Chief Executive Officer"
+      "id": "a3f68a7da220",
+      "from": "5cf39a3d5076",
+      "to": "0f3f6a370929",
+      "label": "PSC: 5.45%"
     },
     {
       "id": "c7fd25ada3ac",
@@ -829,6 +859,12 @@
       "from": "539d727618e7",
       "to": "b35a4cc86b40",
       "label": "PSC: 6.5%"
+    },
+    {
+      "id": "42021f434852",
+      "from": "a55e2b3aea7e",
+      "to": "23d8905a6cbb",
+      "label": "Contract Awardee"
     },
     {
       "id": "ef05b68e4745",

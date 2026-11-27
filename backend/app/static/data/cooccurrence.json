@@ -62,6 +62,10 @@
       "label": "Bola Tinubu"
     },
     {
+      "key": "bottling company",
+      "label": "Nigerian Bottling Company Ltd"
+    },
+    {
       "key": "boye olusanya",
       "label": "Boye Olusanya"
     },
@@ -76,6 +80,18 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria"
+    },
+    {
+      "key": "coca cola hbc",
+      "label": "Coca-Cola HBC Group"
+    },
+    {
+      "key": "coronation insurance",
+      "label": "Coronation Insurance Plc"
+    },
+    {
+      "key": "coronation registrars",
+      "label": "Coronation Registrars Limited"
     },
     {
       "key": "customs service",
@@ -246,6 +262,10 @@
       "label": "JPMorgan"
     },
     {
+      "key": "keystone bank",
+      "label": "Keystone Bank Limited"
+    },
+    {
       "key": "kucoin",
       "label": "KuCoin Nigeria Limited"
     },
@@ -388,6 +408,10 @@
     {
       "key": "ola olukoyede",
       "label": "Ola Olukoyede"
+    },
+    {
+      "key": "olamide olajolo",
+      "label": "Olamide Olajolo"
     },
     {
       "key": "olayemi cardoso",
@@ -578,6 +602,11 @@
       "weight": 4
     },
     {
+      "a": "exchange",
+      "b": "securities and exchange commission",
+      "weight": 4
+    },
+    {
       "a": "federal competition and consumer protection commission",
       "b": "uac of",
       "weight": 4
@@ -624,6 +653,11 @@
     },
     {
       "a": "central bank of",
+      "b": "keystone bank",
+      "weight": 3
+    },
+    {
+      "a": "central bank of",
       "b": "national petroleum company",
       "weight": 3
     },
@@ -650,11 +684,6 @@
     {
       "a": "exchange",
       "b": "livestock feeds",
-      "weight": 3
-    },
-    {
-      "a": "exchange",
-      "b": "securities and exchange commission",
       "weight": 3
     },
     {
@@ -853,6 +882,11 @@
       "weight": 2
     },
     {
+      "a": "bottling company",
+      "b": "coca cola hbc",
+      "weight": 2
+    },
+    {
       "a": "boye olusanya",
       "b": "ibrahim dikko",
       "weight": 2
@@ -905,6 +939,21 @@
     {
       "a": "central bank of",
       "b": "the alternative bank",
+      "weight": 2
+    },
+    {
+      "a": "coronation insurance",
+      "b": "coronation registrars",
+      "weight": 2
+    },
+    {
+      "a": "coronation insurance",
+      "b": "olamide olajolo",
+      "weight": 2
+    },
+    {
+      "a": "coronation registrars",
+      "b": "olamide olajolo",
       "weight": 2
     },
     {
@@ -1288,5 +1337,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-27 05:00:35"
+  "generated": "2026-11-27 17:33:59"
 }
