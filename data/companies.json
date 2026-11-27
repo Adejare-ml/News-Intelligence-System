@@ -473,7 +473,7 @@
   },
   {
     "Company": "NNPC Limited",
-    "Mention Count": 27,
+    "Mention Count": 28,
     "Last Seen": "2026-11-18 4:14",
     "Industry": "Oil & Gas",
     "Risk Level": "Medium",
@@ -3481,11 +3481,11 @@
   },
   {
     "Company": "Oando Plc",
-    "Mention Count": 4,
-    "Last Seen": "2026-11-01 14:01",
+    "Mention Count": 6,
+    "Last Seen": "2026-11-27 22:00",
     "Industry": "Oil & Gas",
     "Risk Level": "Low",
-    "First Seen": ""
+    "First Seen": "2026-11-11 02:48"
   },
   {
     "Company": "Consul General",
@@ -10113,7 +10113,7 @@
   },
   {
     "Company": "Airtel Africa Plc",
-    "Mention Count": 1,
+    "Mention Count": 2,
     "Last Seen": "2026-11-08 18:22",
     "Industry": "Telecoms",
     "Risk Level": "Low",
@@ -10790,5 +10790,13 @@
     "Industry": "General",
     "Risk Level": "Medium",
     "First Seen": "2026-11-27 17:30"
+  },
+  {
+    "Company": "Barama Energy",
+    "Mention Count": 1,
+    "Last Seen": "2026-11-27 21:59",
+    "Industry": "Oil & Gas",
+    "Risk Level": "Low",
+    "First Seen": "2026-11-27 21:59"
   }
 ]

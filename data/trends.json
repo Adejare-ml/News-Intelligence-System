@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 43,
-  "previous_articles": 54,
+  "recent_articles": 50,
+  "previous_articles": 53,
   "rising": [
     {
       "term": "lagos",
@@ -11,6 +11,12 @@
     },
     {
       "term": "insurance",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "issue",
       "recent": 3,
       "previous": 0,
       "change": 3
@@ -28,39 +34,33 @@
       "change": 3
     },
     {
+      "term": "oando",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "rights",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "rights issue",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
       "term": "road",
       "recent": 3,
       "previous": 0,
       "change": 3
     },
     {
-      "term": "bank",
-      "recent": 5,
-      "previous": 3,
-      "change": 2
-    },
-    {
-      "term": "acting",
-      "recent": 2,
-      "previous": 0,
-      "change": 2
-    },
-    {
-      "term": "bayelsa",
-      "recent": 2,
-      "previous": 0,
-      "change": 2
-    },
-    {
-      "term": "cbn appoints",
-      "recent": 2,
-      "previous": 0,
-      "change": 2
-    },
-    {
-      "term": "coronation",
-      "recent": 2,
-      "previous": 0,
+      "term": "cbn",
+      "recent": 6,
+      "previous": 4,
       "change": 2
     }
   ],
@@ -68,8 +68,8 @@
     {
       "term": "stake",
       "recent": 0,
-      "previous": 8,
-      "change": -8
+      "previous": 7,
+      "change": -7
     },
     {
       "term": "nnpc",
@@ -90,12 +90,6 @@
       "change": -4
     },
     {
-      "term": "first",
-      "recent": 1,
-      "previous": 4,
-      "change": -3
-    },
-    {
       "term": "company",
       "recent": 0,
       "previous": 3,
@@ -114,13 +108,19 @@
       "change": -3
     },
     {
-      "term": "expands",
+      "term": "feeds",
       "recent": 0,
       "previous": 3,
       "change": -3
     },
     {
-      "term": "feeds",
+      "term": "group",
+      "recent": 0,
+      "previous": 3,
+      "change": -3
+    },
+    {
+      "term": "livestock feeds",
       "recent": 0,
       "previous": 3,
       "change": -3
@@ -129,13 +129,13 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 27,
+      "recent": 30,
       "previous": 29
     },
     {
       "category": "Company",
-      "recent": 11,
-      "previous": 22
+      "recent": 15,
+      "previous": 21
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-27 17:33:58"
+  "generated": "2026-11-27 22:02:02"
 }
