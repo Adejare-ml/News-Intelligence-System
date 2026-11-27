@@ -1,93 +1,93 @@
 {
-  "generated": "2026-11-27 05:00:30",
+  "generated": "2026-11-27 17:33:42",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6290,
-      "downloads": 96527
+      "likes": 6406,
+      "downloads": 155741
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1510,
-      "downloads": 2445633
-    },
-    {
-      "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "task": "image-text-to-text",
-      "likes": 944,
-      "downloads": 762491
+      "likes": 1560,
+      "downloads": 3302340
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1230,
-      "downloads": 189735
+      "likes": 1327,
+      "downloads": 539421
     },
     {
-      "id": "inworld/voice-isolator",
-      "url": "https://huggingface.co/inworld/voice-isolator",
-      "task": "audio-to-audio",
-      "likes": 972,
-      "downloads": 15244
+      "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "task": "image-text-to-text",
+      "likes": 992,
+      "downloads": 1059763
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 538,
-      "downloads": 59366
+      "likes": 594,
+      "downloads": 382546
+    },
+    {
+      "id": "inworld/voice-isolator",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "task": "audio-to-audio",
+      "likes": 984,
+      "downloads": 20510
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13610,
-      "downloads": 3041405
+      "likes": 13677,
+      "downloads": 3080701
     },
     {
       "id": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
       "task": "image-to-text",
-      "likes": 287,
-      "downloads": 126
+      "likes": 319,
+      "downloads": 626
     }
   ],
   "papers": [
     {
-      "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
-      "url": "https://huggingface.co/papers/2611.32238",
-      "upvotes": 5
+      "title": "BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models",
+      "url": "https://huggingface.co/papers/2611.30723",
+      "upvotes": 1
     },
     {
-      "title": "Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection",
-      "url": "https://huggingface.co/papers/2611.34719",
-      "upvotes": 2
+      "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
+      "url": "https://huggingface.co/papers/2611.27112",
+      "upvotes": 0
     },
     {
-      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-      "url": "https://huggingface.co/papers/2611.34232",
-      "upvotes": 41
+      "title": "Revisiting LLMs as Context Engineers",
+      "url": "https://huggingface.co/papers/2611.30494",
+      "upvotes": 4
     },
     {
-      "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
-      "url": "https://huggingface.co/papers/2611.34852",
-      "upvotes": 22
+      "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
+      "url": "https://huggingface.co/papers/2611.31516",
+      "upvotes": 1
     },
     {
-      "title": "Decision-Native Multimodal Clinical Modeling via Anatomical Grounding and Confidence Calibration",
-      "url": "https://huggingface.co/papers/2611.32993",
-      "upvotes": 3
+      "title": "So Many Ways to Multiply 3times3 Matrices: A Large Dataset of Rank-23 Schemes",
+      "url": "https://huggingface.co/papers/2611.31155",
+      "upvotes": 0
     },
     {
-      "title": "StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation",
-      "url": "https://huggingface.co/papers/2611.34290",
-      "upvotes": 21
+      "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
+      "url": "https://huggingface.co/papers/2611.31491",
+      "upvotes": 1
     }
   ]
 }

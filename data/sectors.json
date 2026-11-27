@@ -2,19 +2,19 @@
   "sectors": [
     {
       "industry": "General",
-      "companies": 958,
-      "mentions": 1568,
+      "companies": 959,
+      "mentions": 1570,
       "risk": {
         "Low": 834,
         "Critical": 56,
-        "Medium": 39,
+        "Medium": 40,
         "High": 29
       }
     },
     {
       "industry": "Oil & Gas",
       "companies": 63,
-      "mentions": 302,
+      "mentions": 303,
       "risk": {
         "Medium": 23,
         "Low": 29,
@@ -25,17 +25,17 @@
     {
       "industry": "Banking",
       "companies": 38,
-      "mentions": 95,
+      "mentions": 97,
       "risk": {
         "Critical": 1,
-        "Low": 29,
-        "Medium": 8
+        "Low": 28,
+        "Medium": 9
       }
     },
     {
       "industry": "Telecoms",
       "companies": 16,
-      "mentions": 70,
+      "mentions": 71,
       "risk": {
         "Medium": 4,
         "Low": 11,
@@ -117,6 +117,16 @@
       }
     },
     {
+      "industry": "Insurance",
+      "companies": 9,
+      "mentions": 11,
+      "risk": {
+        "High": 2,
+        "Low": 6,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Politics",
       "companies": 5,
       "mentions": 11,
@@ -134,13 +144,13 @@
       }
     },
     {
-      "industry": "Insurance",
+      "industry": "Construction",
       "companies": 9,
       "mentions": 10,
       "risk": {
-        "High": 2,
-        "Low": 6,
-        "Medium": 1
+        "Medium": 5,
+        "Low": 2,
+        "High": 2
       }
     },
     {
@@ -149,6 +159,15 @@
       "mentions": 10,
       "risk": {
         "Low": 2
+      }
+    },
+    {
+      "industry": "Beverages",
+      "companies": 7,
+      "mentions": 9,
+      "risk": {
+        "Low": 5,
+        "Medium": 2
       }
     },
     {
@@ -167,15 +186,6 @@
       "risk": {
         "Low": 1,
         "Medium": 2
-      }
-    },
-    {
-      "industry": "Construction",
-      "companies": 7,
-      "mentions": 8,
-      "risk": {
-        "Medium": 5,
-        "Low": 2
       }
     },
     {
@@ -267,11 +277,12 @@
       }
     },
     {
-      "industry": "Beverages",
-      "companies": 5,
+      "industry": "Investment",
+      "companies": 3,
       "mentions": 5,
       "risk": {
-        "Low": 5
+        "Low": 1,
+        "Medium": 2
       }
     },
     {
@@ -313,15 +324,6 @@
       "mentions": 4,
       "risk": {
         "Low": 2
-      }
-    },
-    {
-      "industry": "Investment",
-      "companies": 2,
-      "mentions": 4,
-      "risk": {
-        "Low": 1,
-        "Medium": 1
       }
     },
     {
@@ -1065,5 +1067,5 @@
       }
     }
   ],
-  "generated": "2026-11-27 05:00:35"
+  "generated": "2026-11-27 17:33:59"
 }

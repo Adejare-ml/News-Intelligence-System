@@ -2,9 +2,9 @@
 
 Company or body · Telecoms
 
-Mentioned in 19 reports tracked by AURA.
+Mentioned in 20 reports tracked by AURA.
 
-- Mentions tracked: 19
+- Mentions tracked: 20
 - Holdings: 0
 - Last seen: 15 Nov 2026
 
