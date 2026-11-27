@@ -32,9 +32,9 @@
     },
     {
       "source": "Punch Newspapers",
-      "total": 1300,
+      "total": 1306,
       "published": 474,
-      "filtered": 826,
+      "filtered": 832,
       "accept_rate": 36,
       "avg_risk": 27.4,
       "engines": {
@@ -43,22 +43,22 @@
         "nvidia": 9,
         "claude": 27
       },
-      "last_seen": "2026-11-26"
+      "last_seen": "2026-11-27"
     },
     {
       "source": "The Punch",
-      "total": 775,
-      "published": 402,
-      "filtered": 373,
+      "total": 779,
+      "published": 403,
+      "filtered": 376,
       "accept_rate": 52,
-      "avg_risk": 32.8,
+      "avg_risk": 32.7,
       "engines": {
         "unknown": 104,
         "nvidia": 8,
         "ollama": 279,
-        "claude": 11
+        "claude": 12
       },
-      "last_seen": "2026-11-25"
+      "last_seen": "2026-11-26"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -105,9 +105,9 @@
     },
     {
       "source": "sunnewsonline",
-      "total": 237,
+      "total": 238,
       "published": 67,
-      "filtered": 170,
+      "filtered": 171,
       "accept_rate": 28,
       "avg_risk": 23.7,
       "engines": {
@@ -115,7 +115,7 @@
         "ollama": 15,
         "nvidia": 2
       },
-      "last_seen": "2026-11-14"
+      "last_seen": "2026-11-26"
     },
     {
       "source": "The Eagle Online",
@@ -146,9 +146,9 @@
     },
     {
       "source": "dailypost",
-      "total": 217,
+      "total": 218,
       "published": 46,
-      "filtered": 171,
+      "filtered": 172,
       "accept_rate": 21,
       "avg_risk": 26.5,
       "engines": {
@@ -173,16 +173,16 @@
     },
     {
       "source": "vanguardngr",
-      "total": 209,
+      "total": 210,
       "published": 30,
-      "filtered": 179,
+      "filtered": 180,
       "accept_rate": 14,
       "avg_risk": 25.0,
       "engines": {
         "unknown": 19,
         "ollama": 11
       },
-      "last_seen": "2026-11-13"
+      "last_seen": "2026-11-26"
     },
     {
       "source": "punchng",
@@ -361,16 +361,16 @@
     },
     {
       "source": "tori",
-      "total": 35,
+      "total": 36,
       "published": 5,
-      "filtered": 30,
+      "filtered": 31,
       "accept_rate": 14,
       "avg_risk": 25.4,
       "engines": {
         "unknown": 3,
         "ollama": 2
       },
-      "last_seen": "2026-11-11"
+      "last_seen": "2026-11-26"
     },
     {
       "source": "premiumtimesng.com",
@@ -513,6 +513,18 @@
       "last_seen": "2026-10-28"
     },
     {
+      "source": "soccernet_ng",
+      "total": 11,
+      "published": 2,
+      "filtered": 9,
+      "accept_rate": 18,
+      "avg_risk": 24.0,
+      "engines": {
+        "unknown": 2
+      },
+      "last_seen": "2026-11-26"
+    },
+    {
       "source": "thewillnews",
       "total": 11,
       "published": 4,
@@ -524,18 +536,6 @@
         "ollama": 3
       },
       "last_seen": "2026-11-09"
-    },
-    {
-      "source": "soccernet_ng",
-      "total": 10,
-      "published": 2,
-      "filtered": 8,
-      "accept_rate": 20,
-      "avg_risk": 24.0,
-      "engines": {
-        "unknown": 2
-      },
-      "last_seen": "2026-11-03"
     },
     {
       "source": "thenationonlineng",
@@ -2308,6 +2308,16 @@
       "last_seen": "2026-08-26"
     },
     {
+      "source": "candg.com.ng",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-11-25"
+    },
+    {
       "source": "gllas.com.ng",
       "total": 1,
       "published": 0,
@@ -2496,5 +2506,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-26 22:20:59"
+  "generated": "2026-11-27 01:04:24"
 }

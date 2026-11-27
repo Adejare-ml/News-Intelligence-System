@@ -1,7 +1,7 @@
 {
   "window_days": 7,
-  "recent_articles": 29,
-  "previous_articles": 66,
+  "recent_articles": 30,
+  "previous_articles": 64,
   "rising": [
     {
       "term": "emissions",
@@ -52,13 +52,13 @@
       "change": 2
     },
     {
-      "term": "nimasa",
+      "term": "bayelsa",
       "recent": 2,
       "previous": 1,
       "change": 1
     },
     {
-      "term": "port",
+      "term": "lagos",
       "recent": 2,
       "previous": 1,
       "change": 1
@@ -129,8 +129,8 @@
   "categories": [
     {
       "category": "Government",
-      "recent": 18,
-      "previous": 39
+      "recent": 19,
+      "previous": 37
     },
     {
       "category": "Company",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-26 22:20:59"
+  "generated": "2026-11-27 01:04:24"
 }

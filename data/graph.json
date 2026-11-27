@@ -121,6 +121,12 @@
       "risk": "Critical"
     },
     {
+      "id": "387e8dea8fb6",
+      "label": "Nigerian Maritime Administration and Safety Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -147,12 +153,6 @@
     {
       "id": "ebba2aef82e9",
       "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "387e8dea8fb6",
-      "label": "Nigerian Maritime Administration and Safety Agency",
       "type": "agency",
       "risk": "Low"
     },
@@ -238,6 +238,30 @@
       "id": "a3b307ee4b75",
       "label": "Institute of Chartered Accountants of Nigeria (ICAN)",
       "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cf29c7d805a0",
+      "label": "Osagie Edward",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "f14d264d1f6a",
+      "label": "Jibril Abba",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "fbe7478a9754",
+      "label": "Francis Bunu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "25f80464bb59",
+      "label": "Maritime Workers' Union of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {
@@ -415,36 +439,6 @@
       "risk": "Low"
     },
     {
-      "id": "2c5ac861b416",
-      "label": "Emem Usoro",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "18bc77b97b9c",
-      "label": "Festus Keyamo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "8ad929872c06",
-      "label": "Federal Ministry of Aviation",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "261b654580ee",
-      "label": "Effiong Okon",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "fed919ff18b8",
-      "label": "Seplat Energy Plc",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "ad062d79f1e1",
       "label": "Duke Oil Company Incorporated",
       "type": "company",
@@ -479,6 +473,12 @@
       "label": "Tony Elumelu",
       "type": "psc",
       "risk": "High"
+    },
+    {
+      "id": "fed919ff18b8",
+      "label": "Seplat Energy Plc",
+      "type": "company",
+      "risk": "Medium"
     },
     {
       "id": "640e7a002af9",
@@ -645,6 +645,24 @@
   ],
   "edges": [
     {
+      "id": "5eb3fef4ffbc",
+      "from": "cf29c7d805a0",
+      "to": "387e8dea8fb6",
+      "label": "Appointed as Deputy Director/Head of Public Relations"
+    },
+    {
+      "id": "881a4b3df995",
+      "from": "f14d264d1f6a",
+      "to": "387e8dea8fb6",
+      "label": "Appointed as Chairman of the NJIC; Executive Director, Maritime Labour and Cabotage Services"
+    },
+    {
+      "id": "4a7eb954ef04",
+      "from": "fbe7478a9754",
+      "to": "25f80464bb59",
+      "label": "Appointed as President-General"
+    },
+    {
       "id": "37fb849cdfca",
       "from": "e48ed3d21b8d",
       "to": "f38bd75574f6",
@@ -757,24 +775,6 @@
       "from": "0c6e44f7bf19",
       "to": "f38bd75574f6",
       "label": "Appointed as Group Chief Executive Officer"
-    },
-    {
-      "id": "834382021d75",
-      "from": "2c5ac861b416",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as CBN Deputy Governor, Operations"
-    },
-    {
-      "id": "1fbb33996f92",
-      "from": "18bc77b97b9c",
-      "to": "8ad929872c06",
-      "label": "Appointed as Minister of Aviation"
-    },
-    {
-      "id": "f4c2e44d8180",
-      "from": "261b654580ee",
-      "to": "fed919ff18b8",
-      "label": "Appointed as Chief Executive Officer"
     },
     {
       "id": "c7fd25ada3ac",
