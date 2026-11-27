@@ -1,16 +1,16 @@
 {
-  "edition": "20261126-12380-preview",
+  "edition": "20261127-12404-preview",
   "preview": true,
-  "built_at": "2026-11-26 22:20:59",
-  "date": "Thursday 26 November 2026",
-  "subject": "AURA · Thu 26 Nov · BREAKING: CBN appoints Murtala Mohammed as acting CEO of Keystone Bank",
-  "preheader": "Also: FG adopts national e-pharmacy policy to curb drug misuse, self-medication · 3 stories, 0 risk alerts",
+  "built_at": "2026-11-27 01:04:24",
+  "date": "Friday 27 November 2026",
+  "subject": "AURA · Fri 27 Nov · BREAKING: CBN appoints Murtala Mohammed as acting CEO of Keystone Bank",
+  "preheader": "Also: FG adopts national e-pharmacy policy to curb drug misuse, self-medication · 4 stories, 0 risk alerts",
   "since": "Thu 26 Nov, 18:53 Lagos",
-  "through_id": 12380,
+  "through_id": 12404,
   "stats": {
-    "reports": 3,
-    "stories": 3,
-    "outlets": 2,
+    "reports": 4,
+    "stories": 4,
+    "outlets": 3,
     "risk_alerts": 0,
     "public_money": 0,
     "appointments": 1,
@@ -130,6 +130,43 @@
       },
       "also_reported": [],
       "also_more": 0
+    },
+    {
+      "n": 4,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "Dockworkers’ service conditions undergo review",
+      "byline": "Punch · Thu 26 Nov, 01:06 Lagos",
+      "outlet": "Punch",
+      "what_happened": "NIMASA and the Maritime Workers' Union of Nigeria have begun reviewing minimum standards and conditions of service for dockworkers for 2026–2028. Proposals from employers, unions and industry groups were presented at a reconvened National Joint Industrial Council meeting. Further consultations are planned towards a harmonised framework for the dock labour industry.",
+      "key_facts": [
+        "NIMASA and the Maritime Workers' Union of Nigeria commenced a review of dockworkers' minimum standards and conditions of service for 2026–2028.",
+        "Submissions cover wages, workers' welfare, occupational safety and health, pension provisions, working conditions, protective equipment and skills development.",
+        "Osagie Edward, Deputy Director/Head of Public Relations at NIMASA, issued the statement on Wednesday.",
+        "Jibril Abba, Executive Director, Maritime Labour and Cabotage Services at NIMASA, chairs the NJIC."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: The review sets wage, safety and welfare terms for dock labour across Nigerian ports, which affects port efficiency and industrial relations in the maritime sector."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Nigerian Maritime Administration and Safety Agency",
+        "Maritime Workers' Union of Nigeria",
+        "Seaport Terminal Operators of Nigeria",
+        "Oil Producers Trade Section",
+        "Association of Bonded Terminals Operations of Nigeria"
+      ],
+      "source": {
+        "outlet": "Punch",
+        "url": "https://punchng.com/dockworkers-service-conditions-undergo-review/"
+      },
+      "also_reported": [],
+      "also_more": 0
     }
   ],
   "also": [],
@@ -145,6 +182,10 @@
     {
       "term": "CBN",
       "meaning": "Central Bank of Nigeria"
+    },
+    {
+      "term": "NIMASA",
+      "meaning": "Nigerian Maritime Administration and Safety Agency"
     },
     {
       "term": "AURA risk rating",

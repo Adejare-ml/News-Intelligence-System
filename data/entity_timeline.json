@@ -649,7 +649,7 @@
     {
       "key": "maritime administration and safety agency",
       "label": "Nigerian Maritime Administration and Safety Agency",
-      "total_mentions": 21,
+      "total_mentions": 22,
       "points": [
         {
           "week": "2026-09-14",
@@ -701,7 +701,7 @@
         },
         {
           "week": "2026-11-23",
-          "mentions": 2,
+          "mentions": 3,
           "avg_risk": 10.0,
           "max_risk": 10
         }
@@ -5786,6 +5786,25 @@
       ]
     },
     {
+      "key": "maritime workers union of",
+      "label": "Maritime Workers' Union of Nigeria",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
+        }
+      ]
+    },
+    {
       "key": "meter acquisition fund",
       "label": "Meter Acquisition Fund",
       "total_mentions": 2,
@@ -6952,20 +6971,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "zeenab foods",
-      "label": "Zeenab Foods Limited",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-19",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-26 22:20:59"
+  "generated": "2026-11-27 01:04:24"
 }
