@@ -69,8 +69,8 @@
     },
     {
       "name": "Federal Ministry of Works",
-      "contracts": 6,
-      "undisclosed": 5,
+      "contracts": 7,
+      "undisclosed": 6,
       "totals": {
         "NGN": 41050000000.0
       }
@@ -1178,6 +1178,12 @@
       "totals": {}
     },
     {
+      "name": "Rock Result Nigeria Limited",
+      "contracts": 1,
+      "undisclosed": 1,
+      "totals": {}
+    },
+    {
       "name": "SINOMACH",
       "contracts": 1,
       "undisclosed": 0,
@@ -1314,5 +1320,5 @@
       }
     }
   ],
-  "generated": "2026-11-27 05:00:35"
+  "generated": "2026-11-27 17:33:59"
 }
