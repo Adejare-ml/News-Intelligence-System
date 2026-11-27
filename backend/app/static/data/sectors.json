@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 62,
-      "mentions": 301,
+      "companies": 63,
+      "mentions": 302,
       "risk": {
         "Medium": 23,
-        "Low": 28,
+        "Low": 29,
         "Critical": 1,
         "High": 10
       }
@@ -275,6 +275,14 @@
       }
     },
     {
+      "industry": "Labor Union",
+      "companies": 4,
+      "mentions": 5,
+      "risk": {
+        "Low": 4
+      }
+    },
+    {
       "industry": "Logistics & Port Operations",
       "companies": 1,
       "mentions": 5,
@@ -314,14 +322,6 @@
       "risk": {
         "Low": 1,
         "Medium": 1
-      }
-    },
-    {
-      "industry": "Labor Union",
-      "companies": 4,
-      "mentions": 4,
-      "risk": {
-        "Low": 4
       }
     },
     {
@@ -384,6 +384,14 @@
     },
     {
       "industry": "Maritime",
+      "companies": 3,
+      "mentions": 3,
+      "risk": {
+        "Low": 3
+      }
+    },
+    {
+      "industry": "Ports & Logistics",
       "companies": 3,
       "mentions": 3,
       "risk": {
@@ -1057,5 +1065,5 @@
       }
     }
   ],
-  "generated": "2026-11-26 22:20:59"
+  "generated": "2026-11-27 01:04:24"
 }
