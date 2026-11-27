@@ -1,68 +1,73 @@
 {
-  "generated": "2026-11-27 17:33:42",
+  "generated": "2026-11-27 22:01:58",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6406,
+      "likes": 6452,
       "downloads": 155741
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1560,
+      "likes": 1601,
       "downloads": 3302340
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1327,
+      "likes": 1365,
       "downloads": 539421
     },
     {
       "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "task": "image-text-to-text",
-      "likes": 992,
+      "likes": 1031,
       "downloads": 1059763
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 594,
+      "likes": 629,
       "downloads": 382546
     },
     {
       "id": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "task": "audio-to-audio",
-      "likes": 984,
+      "likes": 1011,
       "downloads": 20510
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13677,
+      "likes": 13720,
       "downloads": 3080701
     },
     {
       "id": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
       "task": "image-to-text",
-      "likes": 319,
+      "likes": 354,
       "downloads": 626
     }
   ],
   "papers": [
     {
+      "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
+      "url": "https://huggingface.co/papers/2611.30025",
+      "upvotes": 2
+    },
+    {
       "title": "BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models",
       "url": "https://huggingface.co/papers/2611.30723",
-      "upvotes": 1
+      "upvotes": 2
     },
     {
       "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
@@ -83,11 +88,6 @@
       "title": "So Many Ways to Multiply 3times3 Matrices: A Large Dataset of Rank-23 Schemes",
       "url": "https://huggingface.co/papers/2611.31155",
       "upvotes": 0
-    },
-    {
-      "title": "Pretrained Tabular Features and the Measurement of Financial Proximity",
-      "url": "https://huggingface.co/papers/2611.31491",
-      "upvotes": 1
     }
   ]
 }

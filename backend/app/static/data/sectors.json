@@ -13,11 +13,11 @@
     },
     {
       "industry": "Oil & Gas",
-      "companies": 63,
-      "mentions": 303,
+      "companies": 64,
+      "mentions": 307,
       "risk": {
         "Medium": 23,
-        "Low": 29,
+        "Low": 30,
         "Critical": 1,
         "High": 10
       }
@@ -35,7 +35,7 @@
     {
       "industry": "Telecoms",
       "companies": 16,
-      "mentions": 71,
+      "mentions": 72,
       "risk": {
         "Medium": 4,
         "Low": 11,
@@ -1067,5 +1067,5 @@
       }
     }
   ],
-  "generated": "2026-11-27 17:33:59"
+  "generated": "2026-11-27 22:02:03"
 }

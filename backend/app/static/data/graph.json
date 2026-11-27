@@ -139,6 +139,12 @@
       "risk": "Low"
     },
     {
+      "id": "782563a7c2d7",
+      "label": "Nigerian Communications Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "23d8905a6cbb",
       "label": "Federal Ministry of Works",
       "type": "agency",
@@ -193,6 +199,18 @@
       "risk": "Low"
     },
     {
+      "id": "6880425fa21a",
+      "label": "Defence Headquarters",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "28f8dadd52f0",
+      "label": "Nigerian Electrical Regulatory Services Agency",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "0bcaaf453cd3",
       "label": "Economic and Financial Crimes Commission",
       "type": "agency",
@@ -219,24 +237,6 @@
     {
       "id": "8e16dd9bbb58",
       "label": "Federal Inland Revenue Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "e4c5ee83197c",
-      "label": "National Agency for Food and Drug Administration and Control",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "cc4a4d0f3e25",
-      "label": "Anambra State Government",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "65c1be98b2f6",
-      "label": "Mining Marshals",
       "type": "agency",
       "risk": "Low"
     },
@@ -364,6 +364,12 @@
       "id": "cf6a70333c22",
       "label": "Governor of Anambra State",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "cc4a4d0f3e25",
+      "label": "Anambra State Government",
+      "type": "company",
       "risk": "Low"
     },
     {
