@@ -1,38 +1,19 @@
 {
   "new_companies": [
-    "Coca-Cola Beverages Africa",
-    "Coronation Capital (Mauritius) Limited",
-    "Gutsche Family Investments",
-    "Rock Result Nigeria Limited",
-    "Setraco Nigeria Limited",
-    "The Coca-Cola Company"
+    "Barama Energy"
   ],
-  "new_people": [
-    "Anastassis G. David",
-    "Not named in article",
-    "Oboku Oforji",
-    "Zoran Bogdanovic"
-  ],
-  "psc_added": [
-    {
-      "person": "Coronation Capital (Mauritius) Limited",
-      "company": "Coronation Insurance Plc"
-    },
-    {
-      "person": "Gutsche Family Investments",
-      "company": "Coca-Cola HBC"
-    }
-  ],
+  "new_people": [],
+  "psc_added": [],
   "psc_removed": [],
   "psc_changed": [],
   "new_high_risk": [],
   "counts": {
-    "new_companies": 6,
-    "new_people": 4,
-    "psc_added": 2,
+    "new_companies": 1,
+    "new_people": 0,
+    "psc_added": 0,
     "psc_removed": 0,
     "psc_changed": 0,
     "new_high_risk": 0
   },
-  "generated": "2026-11-27 17:33:41"
+  "generated": "2026-11-27 22:01:56"
 }

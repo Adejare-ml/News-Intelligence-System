@@ -1,0 +1,363 @@
+{
+  "edition": "20261127-12449",
+  "preview": false,
+  "built_at": "2026-11-27 17:33:59",
+  "date": "Friday 27 November 2026",
+  "subject": "AURA alert · Fri 27 Nov · Reps demand urgent repairs of failed East-West Road culverts",
+  "preheader": "Also: Coca-Cola HBC completes $2.6 billion acquisition of African bottler CCBA · 16 stories, 1 risk alert",
+  "since": "Thu 26 Nov, 18:53 Lagos",
+  "through_id": 12449,
+  "stats": {
+    "reports": 17,
+    "stories": 16,
+    "outlets": 6,
+    "risk_alerts": 1,
+    "public_money": 2,
+    "appointments": 2,
+    "ownership": 2
+  },
+  "nothing_in": [],
+  "overview": [
+    {
+      "text": "Coca-Cola HBC completed its $2.6 billion acquisition of a 75% stake in Coca-Cola Beverages Africa, following approval from Tanzania's Fair Competition Commission.",
+      "card": 2,
+      "outlet": "Nairametrics"
+    },
+    {
+      "text": "The Central Bank of Nigeria appointed Murtala Mohammed as acting managing director and CEO of Keystone Bank, replacing Hassan Imam.",
+      "card": 4,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "The CBN said depositors' funds at Keystone Bank are safe, The Guardian reported.",
+      "card": 5,
+      "outlet": "The Guardian"
+    },
+    {
+      "text": "Oando announced final terms of a N203.8 billion rights issue.",
+      "card": 6,
+      "outlet": "Premium Times"
+    }
+  ],
+  "insights": [],
+  "cards": [
+    {
+      "n": 1,
+      "theme": "Public money",
+      "event_type": "Procurement",
+      "flags": [
+        "Alert"
+      ],
+      "alert": true,
+      "risk": "AURA risk rating: High · 55/100",
+      "headline": "Reps demand urgent repairs of failed East-West Road culverts",
+      "byline": "Punch · Thu 26 Nov, 08:59 Lagos",
+      "outlet": "Punch",
+      "what_happened": "The House of Representatives has urged the Federal Ministry of Works to direct Rock Result Nigeria Limited to return to site and rehabilitate or reconstruct failed box culverts on the East-West Road, particularly at Iheke in Ahoada East Local Government Area of Rivers State. The House also called for an independent engineering assessment and technical supervision of the remedial works.",
+      "key_facts": [
+        "The House urged the Federal Ministry of Works to direct Rock Result Nigeria Limited to rehabilitate or reconstruct failed box culverts.",
+        "The failed culverts are located at Iheke in Ahoada East Local Government Area of Rivers State.",
+        "The House adopted the motion moved by Oboku Oforji at plenary on Wednesday."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: The motion raises questions about the quality and supervision of publicly funded road works, and calls for independent assessment of contractor performance. It also highlights re-award of the continuation contract to Setraco Nigeria Limited amid unfinished dualisation."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Federal Ministry of Works",
+        "Rock Result Nigeria Limited",
+        "Setraco Nigeria Limited",
+        "Oboku Oforji"
+      ],
+      "source": {
+        "outlet": "Punch",
+        "url": "https://punchng.com/reps-demand-urgent-repairs-of-failed-east-west-road-culverts/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Ownership & capital",
+      "event_type": "Acquisition",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 25/100",
+      "headline": "Coca-Cola HBC completes $2.6 billion acquisition of African bottler CCBA",
+      "byline": "Nairametrics · Fri 27 Nov, 13:18 Lagos",
+      "outlet": "Nairametrics",
+      "what_happened": "Coca-Cola HBC has completed its $2.6 billion acquisition of Coca-Cola Beverages Africa (CCBA), following regulatory approval from Tanzania's Fair Competition Commission. The deal gives Coca-Cola HBC control of a bottling business operating in 14 African countries and makes it the world's second-largest Coca-Cola bottler by volume.",
+      "key_facts": [
+        "Coca-Cola HBC acquired a 75% stake in CCBA from The Coca-Cola Company and Gutsche Family Investments for $2.6 billion.",
+        "Coca-Cola HBC issued 21,027,676 new ordinary shares to Gutsche Family Investments, representing 5.45% of its enlarged share capital.",
+        "CCBA recorded 2025 revenue of $3.69 billion, up 1.6% from $3.63 billion in 2024.",
+        "Coca-Cola HBC has reaffirmed plans to invest up to $1 billion in Nigeria over five years."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: The acquisition expands a major multinational bottler's operations across Africa, including Nigeria, and its planned Nigerian investment affects manufacturing capacity and employment in the country."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Coca-Cola HBC",
+        "Coca-Cola Beverages Africa",
+        "The Coca-Cola Company",
+        "Gutsche Family Investments",
+        "Nigerian Bottling Company"
+      ],
+      "source": {
+        "outlet": "Nairametrics",
+        "url": "https://nairametrics.com/2026/11/27/coca-cola-hbc-completes-2-6-billion-acquisition-of-african-bottler-ccba/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
+      "theme": "Ownership & capital",
+      "event_type": "Ownership Change",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 45/100",
+      "headline": "Coronation Insurance: understanding the ₦2.88 scheme of arrangement and the road ahead",
+      "byline": "Nairametrics · Fri 27 Nov, 16:36 Lagos",
+      "outlet": "Nairametrics",
+      "what_happened": "Coronation Insurance Plc's Managing Director/CEO, Olamide Olajolo, explained the company's Scheme of Arrangement, which sets a revised consideration of ₦2.88 per share for eligible minority shareholders. The Federal High Court sanctioned the Scheme on 10 November 2026 after the SEC lifted an administrative suspension, and implementation steps including settlement and delisting remain outstanding.",
+      "key_facts": [
+        "Revised Scheme Consideration is ₦2.88 per share, up from ₦0.78 approved by shareholders in December 2023.",
+        "SEC approval was received on 22 October 2026, and the Federal High Court sanctioned the Scheme on 10 November 2026.",
+        "Core Shareholders have deposited the funds for payment of the Scheme Consideration into an escrow account."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [
+        "Why it matters: The transaction transfers minority shares to Core Shareholders and leads to delisting from the Nigerian Exchange, so ownership of a listed insurer is changing. The article notes that an independent fairness assessment question was not directly answered, leaving the basis of the final price for minority holders…"
+      ],
+      "ownership_caveat": "Ownership details as reported by Nairametrics; not verified with CAC records.",
+      "named": [
+        "Coronation Insurance Plc",
+        "Coronation Capital (Mauritius) Limited",
+        "Coronation Registrars Limited",
+        "Securities and Exchange Commission",
+        "Nigerian Exchange"
+      ],
+      "source": {
+        "outlet": "Nairametrics",
+        "url": "https://nairametrics.com/2026/11/27/coronation-insurance-understanding-the-%e2%82%a62-88-scheme-of-arrangement-and-the-road-ahead/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 4,
+      "theme": "People",
+      "event_type": "Appointment",
+      "flags": [
+        "Developing"
+      ],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "CBN appoints acting managing director for Keystone Bank",
+      "byline": "Premium Times · Fri 27 Nov, 09:52 Lagos · latest of 2 reports from 2 outlets",
+      "outlet": "Premium Times",
+      "what_happened": "The Central Bank of Nigeria (CBN) has appointed an acting managing director for Keystone Bank.",
+      "key_facts": [
+        "Murtala Mohammed appointed Acting Managing Director and Chief Executive Officer of Keystone Bank Limited. (Nairametrics)",
+        "Murtala Mohammed replaces Hassan Imam. (Nairametrics)",
+        "Statement issued by CBN Director of Corporate Communications and Investor Relations Michael Akuka. (Nairametrics)"
+      ],
+      "timeline": [
+        "Thu 26 Nov, 22:03 · Nairametrics: “BREAKING: CBN appoints Murtala Mohammed as acting CEO of Keystone Bank”",
+        "Fri 27 Nov, 09:52 · Premium Times: “CBN appoints acting managing director for Keystone Bank” (lead report)"
+      ],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: A regulator installing an acting chief executive at a commercial bank signals leadership change at a financial institution under supervisory oversight, which bears on governance and public confidence in the sector."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Keystone Bank",
+        "Central Bank of Nigeria",
+        "Not named in article"
+      ],
+      "source": {
+        "outlet": "Premium Times",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcW1xV2V1bEtTcnBmS2NiMkwwaElFWGpuRTN4UmkyQlU5S3RVZndzdmVXNklvYUZoTEFMWlpFcmZzQnVjZ0JyQXBWTG9RMmxyTXhoMEpEX1BiSS1nZVV6OHZkTjFXSWt6VkYzdEh1LTQ5alNTdFJtTEhUSXZCZlFXVUpKVXRRVG5SN3NWazVPQURVOUhQRGZYbkVXamVvQVlJb05jZk9IMTVxSUNHUERUcWVkM1Z0bkRBSkV1T0hn?oc=5"
+      },
+      "also_reported": [
+        {
+          "outlet": "Nairametrics",
+          "url": "https://nairametrics.com/2026/11/26/cbn-appoints-murtala-mohammed-as-acting-ceo-of-keystone-bank/"
+        }
+      ],
+      "also_more": 0
+    },
+    {
+      "n": 5,
+      "theme": "People",
+      "event_type": "Appointment",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 35/100",
+      "headline": "CBN replaces Keystone Bank CEO, says depositors’ funds are safe",
+      "byline": "The Guardian · Thu 26 Nov, 22:28 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "The Central Bank of Nigeria (CBN) replaced the Chief Executive Officer of Keystone Bank and assured depositors that their funds are safe.",
+      "key_facts": [
+        "The CBN replaced the Keystone Bank CEO.",
+        "The CBN said depositors' funds are safe."
+      ],
+      "timeline": [],
+      "headline_only": true,
+      "analysis": [
+        "Why it matters: A regulator-driven change in the chief executive of a commercial bank bears on depositor confidence and on the stability of the banking sector."
+      ],
+      "ownership_caveat": "",
+      "named": [
+        "Keystone Bank",
+        "Central Bank of Nigeria",
+        "Not stated"
+      ],
+      "source": {
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxONTVZVWJLYUxJR2xKaG9ZZDFqU1QyUVQyYU13Y0JFYldOMFdDOGZsU0JSUl9KUEwyZjljX2tNcWJBRnEwX2ZyV3RrQVNWckZQUklQV1Z2UXBobVIwXzFwdko1WFlmOEJSUE5scjA0MEFHZk5CMzBDMjIzMmJIVFBzakluSXAtalFzUGpYU0pOWmhuUEVqb1pZMnZYWQ?oc=5"
+      },
+      "also_reported": [],
+      "also_more": 0
+    }
+  ],
+  "also": [
+    {
+      "n": 6,
+      "theme": "Other",
+      "text": "Oando has announced the final terms of a N203.8 billion rights issue.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYy1hdDNEWENNVkNzV2lrblVuNTBkRkNkYTFuU1lsS1FmbElOV09CTHVxalc1QlkyX044eWQ2UkI2bDRicnRBVF9rN0Q0REJZS1ltcEx2ZHM4SnhOd0NMdUJhc1JMNnhWNmg1ckw5N1dFMDZqRW9PRGNJMkFzMnhaTEQzMWJ5WDhaLWtKSXFaMU1jRE54Y1o3OFRLc0MzSG5DYXJjVVBWWnFITVY5dzRrdEhvXzQ0OTNaRHVlblBSMzBsQQ?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Regulation & enforcement",
+      "text": "The Nigerian Midstream and Downstream Petroleum Regulatory Authority (NMDPRA) has set a target of holding 30 to 45 days of fuel reserves.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWjJNa19RSHlRU0tfN0U0YkRJTjRZbUMxR1p4VFQtYndFa0NsOXFaZTU5aFltYlBSSTZyN1Vka2lsRkhQa2JMUjljeTc4T044UW1vemlacmRuYTBZMWF6M1RKNEpKdGJXQjB3VHNRdGVoRnl2WXpaWUtPa0FBT0laV0Z5OFhRVWRaelNPQ09feUtsV1FOVnRON0Vn?oc=5"
+    },
+    {
+      "n": 8,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Government has adopted a national e-pharmacy policy aimed at curbing drug misuse and self-medication.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc201VzQwZ0NNVTlQaVNjN1RKcS16M2pfZHhidUM5ZHNrQUUyUTkya0FiVWNUVXlPX19QZEl6em1wSHE2Ym40clR4Qi1TSzNnSzNLRzlmbmtNVGRDU1hXNmZ4YzV4T0N5cTAwQ3VpSXVIY1Y5RVpxdzVTM3ozQTV4MU9EbkU0dEMyMjV5Z1piT2dmY3lRUy1jWGFWUTRQRnNCZDdDMFVucDdVNFIydjJwa1ZyaUFhR3NQYnBIWTZuV2g1RmFHVWhIMktnM1hWam8?oc=5"
+    },
+    {
+      "n": 9,
+      "theme": "Other",
+      "text": "MTN is seeking a regional banking licence in Nigeria and financial services licences in Ghana and Rwanda, according to its CEO speaking to Semafor.",
+      "outlet": "Biztoc.com",
+      "url": "https://biztoc.com/x/0c03f7ea58d3f7ab"
+    },
+    {
+      "n": 10,
+      "theme": "Regulation & enforcement",
+      "text": "The Economic and Financial Crimes Commission (EFCC) has closed its prosecution case against former minister Agunloye, who is set to file a no-case submission.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcE9TSXNVN2xoX3dOTVh1RlBMMTRrYXJYVmMtaFRNYlRCRXNvYkZuaG15WXhpbjVxQXBuQjNMbWpZWVNabmxhMHgxOWpPMThHQ0MtdW1oVnFNZkk1X1JfNkNPZ1NSQWtGOXo3Z1VNMFRuaHFVUVhxYng1LTMzV3p2dEtVTUxyblp3S2FJVjNEblQ1NjFoZHBDVU9OenJzU2czT1RsanFjRGkyYTZXd1FydWdqaVJRMFdNclVvX2pRcmxHczlCTnVF?oc=5"
+    },
+    {
+      "n": 11,
+      "theme": "Regulation & enforcement",
+      "text": "The Delta State House of Assembly has passed a 2027 appropriation bill worth N1.272 trillion.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMHAwbFRtTTdVc0ZlZ0czNzVxRFBDR2RObEpNVXk1U2RmWFVYc3V6YzZoQ0g3NHBHdWdOdWxQZGZyU044M2xla09NWFJZWHVENXpzc1BqMHluenFySXZNS0g5eDhaQUkxckxlMkIyZ0lWUGlaSmVuZ05rUlE3TF9wTFNBRjA4OGlkNmZyd1p3aW5WaEtUd2w4YlRMTVppakJhQnQ2bk1Na3JFSmRGaGJiTVdlc1A0QQ?oc=5"
+    },
+    {
+      "n": 12,
+      "theme": "Public money",
+      "text": "The Nigeria Data Protection Commission trained Data Protection Compliance Organisations (DPCOs) in Lagos and emphasised effective compliance audits.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTV9fRUpYU3NRQkROVnpDb0JNaWw4SjZ1UGU5cmNxNTVRc0Z6VU15d2hRb1QyU0twTTZBRnpxZlN2T1Yxd1pHVU5weFNWckw5NEtoQ1Y5WFVaMG45dkN0R2ZHYkc5aEVZR25qTW1sUzc3QmVkbUdCM2p6SmNyeFpoYm9ySmszNTJ2azlNVGxUM3RzbWV0UUJ2QzNCTjBXQms3S3VBc2h4YzZGN054N1JWdTN1REpVOW96dVE?oc=5"
+    },
+    {
+      "n": 13,
+      "theme": "Regulation & enforcement",
+      "text": "The Lagos State taskforce moved into Magodo GRA, stating that residents cannot restrict public access to state-owned roads.",
+      "outlet": "The Eagle Online",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSW8wc192dEZ6cERPU1dIaVZ6WkwzM25qcWdVQnFpMFlsLXpHeDVyRmV6cExLZFhKRzhXZ2h5OGd1Yk9BUEUyNHA2YmNkNFZZZXE4bTNrQk9hMUJwRTZCZWpIdGxrUTNncW82aXQ4V3BsdzA0dUc3YzNYREY4dWVoRW9Hc1g3dWxFLWlRX3J0MGRacHhQMmRZc1M3X1A2d1FzejJVX2tmSnkyUDlhWWZkUlQ0Rjh5TWhvbHdsZzhJMlpDNkJhQ29xeg?oc=5"
+    },
+    {
+      "n": 14,
+      "theme": "Regulation & enforcement",
+      "text": "The Federal Competition and Consumer Protection Commission (FCCPC) has urged supermarkets to ensure fair pricing and product safety.",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQ2xiRDFUN2ZDTF9PT1FKYWJndDF0akV2em1hQTlIWC1ONGpDMlVJZmwwaEloTHFuVjQtbWdXT3l3V2dXcTRiN0NZUk1pa09DT0lfbGpIeWRDWFZzVE8xYTY2NGRhcS1hcWYwUHJWWGhIcGpTOU9XOGViZjRkT1pQZWFMRU1mYndpVzRDbXozcGpZQQ?oc=5"
+    },
+    {
+      "n": 15,
+      "theme": "Regulation & enforcement",
+      "text": "The National Biosafety Management Agency (NBMA) plans to launch surveillance of genetically modified organisms (GMOs) in supermarkets.",
+      "outlet": "Premium Times",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeXcxRG4xcGpONDNBQ2Ewd2Q3elItSzhyeEdFV2pqaXQ2aVBhQW9WYy1tam9YVGVCdnJHZ3lQMzUyU3FyR3lialBtaDgtbnZaNEZxckU3WnlvQUVkX1JkeXZXaUFmdzNsQlFNQnFNNmZDUEhXVnV2T3R1RzFMM0RfZUN3YzJPUGgxMzZCWmdVWWUwVDhySUlUMmZpRzlxUmtEZFRNcFBWMjFUaUUwNVlNaHpTQQ?oc=5"
+    }
+  ],
+  "also_more": 1,
+  "psc": [
+    {
+      "text": "Gutsche Family Investments reported as holding 5.45% of Coca-Cola HBC",
+      "outlet": "Nairametrics",
+      "date": "Fri 27 Nov",
+      "url": "https://nairametrics.com/2026/11/27/coca-cola-hbc-completes-2-6-billion-acquisition-of-african-bottler-ccba/",
+      "confidence": "Full article"
+    },
+    {
+      "text": "Coronation Capital (Mauritius) Limited reported to hold shares in Coronation Insurance Plc (stake not disclosed)",
+      "outlet": "Nairametrics",
+      "date": "Fri 27 Nov",
+      "url": "https://nairametrics.com/2026/11/27/coronation-insurance-understanding-the-%e2%82%a62-88-scheme-of-arrangement-and-the-road-ahead/",
+      "confidence": "Full article"
+    }
+  ],
+  "psc_more": 0,
+  "psc_keys": [
+    "coronation capital mauritius limited|coronation insurance|https://nairametrics.com/2026/11/27/coronation-insurance-understanding-the-%e2%82%a62-88-scheme-of-arrangement-and-the-road-ahead/",
+    "gutsche family investments|coca cola hbc|https://nairametrics.com/2026/11/27/coca-cola-hbc-completes-2-6-billion-acquisition-of-african-bottler-ccba/"
+  ],
+  "terms": [
+    {
+      "term": "PSC",
+      "meaning": "person with significant control: owns or controls 5% or more of a Nigerian company (CAMA 2020)"
+    },
+    {
+      "term": "EFCC",
+      "meaning": "Economic and Financial Crimes Commission"
+    },
+    {
+      "term": "CBN",
+      "meaning": "Central Bank of Nigeria"
+    },
+    {
+      "term": "SEC",
+      "meaning": "Securities and Exchange Commission"
+    },
+    {
+      "term": "NMDPRA",
+      "meaning": "Nigerian Midstream and Downstream Petroleum Regulatory Authority"
+    },
+    {
+      "term": "AURA risk rating",
+      "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
+    }
+  ],
+  "engines": {
+    "extraction": [
+      "claude"
+    ],
+    "digest": "claude"
+  },
+  "health": {
+    "overview_dropped": 1,
+    "insights_dropped": 2
+  },
+  "site": "https://auranews.pages.dev"
+}

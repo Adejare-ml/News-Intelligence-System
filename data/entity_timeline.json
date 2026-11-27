@@ -228,7 +228,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 83,
+      "total_mentions": 84,
       "points": [
         {
           "week": "2026-09-07",
@@ -298,8 +298,8 @@
         },
         {
           "week": "2026-11-23",
-          "mentions": 6,
-          "avg_risk": 25.8,
+          "mentions": 7,
+          "avg_risk": 24.3,
           "max_risk": 35
         }
       ]
@@ -806,6 +806,49 @@
       ]
     },
     {
+      "key": "communications commission",
+      "label": "Nigerian Communications Commission",
+      "total_mentions": 17,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 8,
+          "avg_risk": 13.8,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 4,
+          "avg_risk": 17.5,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 2,
+          "avg_risk": 37.5,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        }
+      ]
+    },
+    {
       "key": "midstream and downstream petroleum regulatory authority",
       "label": "Nigerian Midstream and Downstream Petroleum Regulatory Authority",
       "total_mentions": 17,
@@ -910,39 +953,45 @@
       ]
     },
     {
-      "key": "communications commission",
-      "label": "Nigerian Communications Commission",
-      "total_mentions": 16,
+      "key": "nnpc",
+      "label": "NNPC Limited",
+      "total_mentions": 15,
       "points": [
         {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
+          "week": "2026-09-14",
+          "mentions": 2,
+          "avg_risk": 15.0,
           "max_risk": 20
         },
         {
           "week": "2026-10-12",
-          "mentions": 8,
-          "avg_risk": 13.8,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-19",
           "mentions": 1,
           "avg_risk": 20.0,
           "max_risk": 20
         },
         {
-          "week": "2026-10-26",
-          "mentions": 4,
-          "avg_risk": 17.5,
-          "max_risk": 20
+          "week": "2026-11-02",
+          "mentions": 3,
+          "avg_risk": 28.3,
+          "max_risk": 35
         },
         {
           "week": "2026-11-09",
-          "mentions": 2,
-          "avg_risk": 37.5,
-          "max_risk": 40
+          "mentions": 5,
+          "avg_risk": 34.0,
+          "max_risk": 55
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 25
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -986,43 +1035,6 @@
           "mentions": 5,
           "avg_risk": 31.0,
           "max_risk": 75
-        }
-      ]
-    },
-    {
-      "key": "nnpc",
-      "label": "NNPC Limited",
-      "total_mentions": 14,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 3,
-          "avg_risk": 28.3,
-          "max_risk": 35
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 5,
-          "avg_risk": 34.0,
-          "max_risk": 55
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 25
         }
       ]
     },
@@ -2759,6 +2771,31 @@
           "mentions": 3,
           "avg_risk": 28.3,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "oando",
+      "label": "Oando Plc",
+      "total_mentions": 5,
+      "points": [
+        {
+          "week": "2026-10-26",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 25.0,
+          "max_risk": 25
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 3,
+          "avg_risk": 25.0,
+          "max_risk": 25
         }
       ]
     },
@@ -4554,31 +4591,6 @@
       ]
     },
     {
-      "key": "oando",
-      "label": "Oando Plc",
-      "total_mentions": 3,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
-        },
-        {
-          "week": "2026-11-23",
-          "mentions": 1,
-          "avg_risk": 25.0,
-          "max_risk": 25
-        }
-      ]
-    },
-    {
       "key": "office of the accountant general of the federation",
       "label": "Office of the Accountant General of the Federation",
       "total_mentions": 3,
@@ -4987,6 +4999,25 @@
           "mentions": 1,
           "avg_risk": 35.0,
           "max_risk": 35
+        }
+      ]
+    },
+    {
+      "key": "airtel africa",
+      "label": "Airtel Africa Plc",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
         }
       ]
     },
@@ -7000,20 +7031,7 @@
           "max_risk": 20
         }
       ]
-    },
-    {
-      "key": "transmission company of",
-      "label": "Transmission Company of Nigeria",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        }
-      ]
     }
   ],
-  "generated": "2026-11-27 17:33:59"
+  "generated": "2026-11-27 22:02:03"
 }
