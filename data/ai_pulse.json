@@ -1,33 +1,33 @@
 {
-  "generated": "2026-11-28 16:13:36",
+  "generated": "2026-11-28 17:08:25",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6548,
+      "likes": 6554,
       "downloads": 177012
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1647,
+      "likes": 1652,
       "downloads": 3621301
-    },
-    {
-      "id": "SulphurAI/Sulphur-3",
-      "url": "https://huggingface.co/SulphurAI/Sulphur-3",
-      "task": "",
-      "likes": 1416,
-      "downloads": 759937
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 684,
+      "likes": 685,
       "downloads": 473980
+    },
+    {
+      "id": "SulphurAI/Sulphur-3",
+      "url": "https://huggingface.co/SulphurAI/Sulphur-3",
+      "task": "",
+      "likes": 1419,
+      "downloads": 759937
     },
     {
       "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
@@ -40,14 +40,14 @@
       "id": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "task": "audio-to-audio",
-      "likes": 1023,
+      "likes": 1024,
       "downloads": 22810
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13791,
+      "likes": 13798,
       "downloads": 3088512
     },
     {
