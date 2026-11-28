@@ -12,20 +12,29 @@
     {
       "key": "exchange",
       "label": "Nigerian Exchange Limited",
-      "recent_avg": 32.5,
+      "recent_avg": 36.7,
       "previous_avg": 41.7,
-      "delta": -9.2,
-      "recent_mentions": 2,
+      "delta": -5.0,
+      "recent_mentions": 3,
       "previous_mentions": 3
     },
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "recent_avg": 24.3,
+      "recent_avg": 22.5,
       "previous_avg": 19.0,
-      "delta": 5.3,
-      "recent_mentions": 7,
+      "delta": 3.5,
+      "recent_mentions": 8,
       "previous_mentions": 5
+    },
+    {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission",
+      "recent_avg": 45.0,
+      "previous_avg": 41.7,
+      "delta": 3.3,
+      "recent_mentions": 2,
+      "previous_mentions": 3
     },
     {
       "key": "house of representatives",
@@ -37,30 +46,39 @@
       "previous_mentions": 2
     },
     {
-      "key": "coronation insurance",
-      "label": "Coronation Insurance Plc",
+      "key": "mutiu sunmonu",
+      "label": "Mutiu Sunmonu",
       "recent_avg": 50.0,
       "previous_avg": null,
       "delta": null,
       "recent_mentions": 2,
+      "previous_mentions": 0
+    },
+    {
+      "key": "coronation insurance",
+      "label": "Coronation Insurance Plc",
+      "recent_avg": 48.3,
+      "previous_avg": null,
+      "delta": null,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
       "key": "coronation registrars",
       "label": "Coronation Registrars Limited",
-      "recent_avg": 50.0,
+      "recent_avg": 48.3,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
       "key": "olamide olajolo",
       "label": "Olamide Olajolo",
-      "recent_avg": 50.0,
+      "recent_avg": 48.3,
       "previous_avg": null,
       "delta": null,
-      "recent_mentions": 2,
+      "recent_mentions": 3,
       "previous_mentions": 0
     },
     {
@@ -110,5 +128,5 @@
     }
   ],
   "window_days": 7,
-  "generated": "2026-11-28 04:45:57"
+  "generated": "2026-11-28 16:13:41"
 }

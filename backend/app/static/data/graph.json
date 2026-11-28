@@ -121,6 +121,24 @@
       "risk": "Critical"
     },
     {
+      "id": "4c7e8211e98f",
+      "label": "Central Bank of Nigeria",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "0ea00150bb02",
+      "label": "Securities and Exchange Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "cd76249f84cf",
+      "label": "Nigerian Exchange Limited",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "d29d3e8092c8",
       "label": "Pan Niger Delta Forum (PANDEF)",
       "type": "agency",
@@ -133,14 +151,8 @@
       "risk": "Low"
     },
     {
-      "id": "4c7e8211e98f",
-      "label": "Central Bank of Nigeria",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0ea00150bb02",
-      "label": "Securities and Exchange Commission",
+      "id": "2cdf9d9d97f2",
+      "label": "Chartered Institute of Bankers of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -187,12 +199,6 @@
       "risk": "Low"
     },
     {
-      "id": "09f60485afe1",
-      "label": "Nigerian Exchange",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "ae1ea59d48a0",
       "label": "Fair Competition Commission",
       "type": "agency",
@@ -235,9 +241,27 @@
       "risk": "Low"
     },
     {
-      "id": "1613f8dac921",
-      "label": "House of Representatives",
-      "type": "agency",
+      "id": "58c58351d674",
+      "label": "Olayemi Cardoso",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "61a6a1927678",
+      "label": "Mutiu Sunmonu",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "7d890603e2a1",
+      "label": "Coronation Insurance Plc",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "d1748e2f7de3",
+      "label": "Olamide Olajolo",
+      "type": "person",
       "risk": "Low"
     },
     {
@@ -267,18 +291,6 @@
     {
       "id": "38b03bbf0068",
       "label": "National Assembly",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "d1748e2f7de3",
-      "label": "Olamide Olajolo",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "7d890603e2a1",
-      "label": "Coronation Insurance Plc",
       "type": "company",
       "risk": "Low"
     },
@@ -325,6 +337,12 @@
       "risk": "Low"
     },
     {
+      "id": "1613f8dac921",
+      "label": "House of Representatives",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "8500a7305958",
       "label": "Anastassis G. David",
       "type": "person",
@@ -351,12 +369,6 @@
     {
       "id": "e48ed3d21b8d",
       "label": "Andy Odeh",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "61a6a1927678",
-      "label": "Mutiu Sunmonu",
       "type": "person",
       "risk": "Low"
     },
@@ -435,12 +447,6 @@
     {
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "58c58351d674",
-      "label": "Olayemi Cardoso",
       "type": "person",
       "risk": "Low"
     },
@@ -675,6 +681,24 @@
   ],
   "edges": [
     {
+      "id": "fd1604102e20",
+      "from": "58c58351d674",
+      "to": "4c7e8211e98f",
+      "label": "Appointed as Governor, Central Bank of Nigeria"
+    },
+    {
+      "id": "94499b1b85ad",
+      "from": "61a6a1927678",
+      "to": "7d890603e2a1",
+      "label": "Appointed as Chairman"
+    },
+    {
+      "id": "9802ab1659e2",
+      "from": "d1748e2f7de3",
+      "to": "7d890603e2a1",
+      "label": "Appointed as Managing Director and Chief Executive Officer"
+    },
+    {
       "id": "345d5a6cd082",
       "from": "22900912dcd4",
       "to": "cdea562756a4",
@@ -691,12 +715,6 @@
       "from": "dc8e63df7163",
       "to": "38b03bbf0068",
       "label": "Appointed as Senate Leader"
-    },
-    {
-      "id": "9802ab1659e2",
-      "from": "d1748e2f7de3",
-      "to": "7d890603e2a1",
-      "label": "Appointed as Managing Director/CEO"
     },
     {
       "id": "5eb3fef4ffbc",
@@ -745,12 +763,6 @@
       "from": "e48ed3d21b8d",
       "to": "f38bd75574f6",
       "label": "Appointed as Chief Corporate Communications Officer"
-    },
-    {
-      "id": "94499b1b85ad",
-      "from": "61a6a1927678",
-      "to": "7d890603e2a1",
-      "label": "Appointed as Chairman"
     },
     {
       "id": "ee6cd5370905",
@@ -805,12 +817,6 @@
       "from": "1a17418ea885",
       "to": "0c2be969618b",
       "label": "Appointed as President of Nigeria"
-    },
-    {
-      "id": "fd1604102e20",
-      "from": "58c58351d674",
-      "to": "4c7e8211e98f",
-      "label": "Appointed as CBN Governor"
     },
     {
       "id": "28310c0ed538",

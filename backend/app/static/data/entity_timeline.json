@@ -228,7 +228,7 @@
     {
       "key": "central bank of",
       "label": "Central Bank of Nigeria",
-      "total_mentions": 84,
+      "total_mentions": 85,
       "points": [
         {
           "week": "2026-09-07",
@@ -298,8 +298,8 @@
         },
         {
           "week": "2026-11-23",
-          "mentions": 7,
-          "avg_risk": 24.3,
+          "mentions": 8,
+          "avg_risk": 22.5,
           "max_risk": 35
         }
       ]
@@ -1217,6 +1217,49 @@
       ]
     },
     {
+      "key": "securities and exchange commission",
+      "label": "Securities and Exchange Commission, Nigeria",
+      "total_mentions": 12,
+      "points": [
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 2,
+          "avg_risk": 40.0,
+          "max_risk": 65
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 2,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
       "key": "international monetary fund",
       "label": "International Monetary Fund",
       "total_mentions": 11,
@@ -1353,49 +1396,6 @@
       ]
     },
     {
-      "key": "securities and exchange commission",
-      "label": "Securities and Exchange Commission, Nigeria",
-      "total_mentions": 11,
-      "points": [
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 45.0,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 2,
-          "avg_risk": 40.0,
-          "max_risk": 65
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 55
-        },
-        {
-          "week": "2026-11-23",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        }
-      ]
-    },
-    {
       "key": "socio economic rights and accountability project",
       "label": "Socio-Economic Rights and Accountability Project",
       "total_mentions": 11,
@@ -1440,6 +1440,37 @@
           "week": "2026-10-19",
           "mentions": 1,
           "avg_risk": 45.0,
+          "max_risk": 45
+        }
+      ]
+    },
+    {
+      "key": "exchange",
+      "label": "Nigerian Exchange Limited",
+      "total_mentions": 10,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 3,
+          "avg_risk": 20.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 40.0,
+          "max_risk": 40
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 3,
+          "avg_risk": 41.7,
+          "max_risk": 55
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 3,
+          "avg_risk": 36.7,
           "max_risk": 45
         }
       ]
@@ -1534,37 +1565,6 @@
           "mentions": 1,
           "avg_risk": 10.0,
           "max_risk": 10
-        }
-      ]
-    },
-    {
-      "key": "exchange",
-      "label": "Nigerian Exchange Limited",
-      "total_mentions": 9,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 3,
-          "avg_risk": 20.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 1,
-          "avg_risk": 40.0,
-          "max_risk": 40
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 3,
-          "avg_risk": 41.7,
-          "max_risk": 55
-        },
-        {
-          "week": "2026-11-23",
-          "mentions": 2,
-          "avg_risk": 32.5,
-          "max_risk": 45
         }
       ]
     },
@@ -1807,6 +1807,49 @@
           "mentions": 7,
           "avg_risk": 48.3,
           "max_risk": 78
+        }
+      ]
+    },
+    {
+      "key": "olayemi cardoso",
+      "label": "Olayemi Cardoso",
+      "total_mentions": 7,
+      "points": [
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-05",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 2,
+          "avg_risk": 15.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 1,
+          "avg_risk": 45.0,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-16",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 10.0,
+          "max_risk": 10
         }
       ]
     },
@@ -2223,43 +2266,6 @@
           "mentions": 1,
           "avg_risk": 8.0,
           "max_risk": 8
-        }
-      ]
-    },
-    {
-      "key": "olayemi cardoso",
-      "label": "Olayemi Cardoso",
-      "total_mentions": 6,
-      "points": [
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-05",
-          "mentions": 1,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-16",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
         }
       ]
     },
@@ -3997,6 +4003,32 @@
       ]
     },
     {
+      "key": "coronation insurance",
+      "label": "Coronation Insurance Plc",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 3,
+          "avg_risk": 48.3,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
+      "key": "coronation registrars",
+      "label": "Coronation Registrars Limited",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 3,
+          "avg_risk": 48.3,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "david umahi",
       "label": "David Umahi",
       "total_mentions": 3,
@@ -4679,6 +4711,19 @@
       ]
     },
     {
+      "key": "olamide olajolo",
+      "label": "Olamide Olajolo",
+      "total_mentions": 3,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 3,
+          "avg_risk": 48.3,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "revenue mobilisation allocation and fiscal commission",
       "label": "Revenue Mobilisation Allocation and Fiscal Commission",
       "total_mentions": 3,
@@ -5217,32 +5262,6 @@
           "mentions": 1,
           "avg_risk": 25.0,
           "max_risk": 25
-        }
-      ]
-    },
-    {
-      "key": "coronation insurance",
-      "label": "Coronation Insurance Plc",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-23",
-          "mentions": 2,
-          "avg_risk": 50.0,
-          "max_risk": 55
-        }
-      ]
-    },
-    {
-      "key": "coronation registrars",
-      "label": "Coronation Registrars Limited",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-23",
-          "mentions": 2,
-          "avg_risk": 50.0,
-          "max_risk": 55
         }
       ]
     },
@@ -6069,6 +6088,19 @@
       ]
     },
     {
+      "key": "mutiu sunmonu",
+      "label": "Mutiu Sunmonu",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-11-23",
+          "mentions": 2,
+          "avg_risk": 50.0,
+          "max_risk": 55
+        }
+      ]
+    },
+    {
       "key": "ndc",
       "label": "NDC",
       "total_mentions": 2,
@@ -6579,19 +6611,6 @@
       ]
     },
     {
-      "key": "olamide olajolo",
-      "label": "Olamide Olajolo",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-11-23",
-          "mentions": 2,
-          "avg_risk": 50.0,
-          "max_risk": 55
-        }
-      ]
-    },
-    {
       "key": "omatek ventures",
       "label": "Omatek Ventures Plc",
       "total_mentions": 2,
@@ -7018,20 +7037,7 @@
           "max_risk": 10
         }
       ]
-    },
-    {
-      "key": "toyin abraham",
-      "label": "Toyin Abraham",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 2,
-          "avg_risk": 15.0,
-          "max_risk": 20
-        }
-      ]
     }
   ],
-  "generated": "2026-11-28 04:45:57"
+  "generated": "2026-11-28 16:13:41"
 }

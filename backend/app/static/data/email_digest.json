@@ -1,15 +1,15 @@
 {
-  "edition": "20261128-12533-preview",
-  "preview": true,
-  "built_at": "2026-11-28 04:45:57",
+  "edition": "20261128-12552",
+  "preview": false,
+  "built_at": "2026-11-28 16:13:41",
   "date": "Saturday 28 November 2026",
-  "subject": "AURA · Sat 28 Nov · PANDEF opposes 20% cut from local content fund for new research agency",
-  "preheader": "Also: Oando closes at N39.90 after full-bid demand on rights issue announcement day · 9 stories, 0 risk alerts",
+  "subject": "AURA · Sat 28 Nov · CBN pushes market-led liquidity management with repo, swap markets",
+  "preheader": "11 stories, 0 risk alerts",
   "since": "Fri 27 Nov, 18:33 Lagos",
-  "through_id": 12533,
+  "through_id": 12552,
   "stats": {
-    "reports": 9,
-    "stories": 9,
+    "reports": 11,
+    "stories": 11,
     "outlets": 5,
     "risk_alerts": 0,
     "public_money": 0,
@@ -23,25 +23,109 @@
   ],
   "overview": [
     {
-      "text": "Oando has opened a rights issue, giving its shareholders the opportunity to participate in the next phase of the company's growth.",
-      "card": 1,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "PANDEF has urged National Assembly members to reconsider a funding provision in a bill to establish the National Council on Research, Science, Technology and Innovation.",
-      "card": 2,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "Oando Plc closed at N39.90 per share on Friday, November 27, 2026, up 9.92% on the day, after announcing the final terms of its N203.8 billion rights issue.",
+      "text": "Oando opened a rights issue for its shareholders, according to Premium Times.",
       "card": 3,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "PANDEF urged National Assembly members to reconsider a bill provision deducting 20 per cent of the Nigerian Content Development Fund to fund a proposed research council.",
+      "card": 4,
+      "outlet": "Premium Times"
+    },
+    {
+      "text": "Oando closed at N39.90 on Friday, up 9.92%, after announcing final terms of its N203.8 billion rights issue: one new share at N50 for every two held.",
+      "card": 5,
       "outlet": "Nairametrics"
+    },
+    {
+      "text": "The Central Bank of Nigeria plans a comprehensive regulatory rulebook in 2027, per BusinessDay.",
+      "card": 7,
+      "outlet": "BusinessDay"
     }
   ],
-  "insights": [],
+  "insights": [
+    {
+      "label": "What to watch",
+      "text": "With Oando's rights issue open at N50 per share, what timelines and terms will the company publish for qualifying shareholders?",
+      "cards": [
+        3,
+        5
+      ],
+      "outlets": [
+        "Premium Times",
+        "Nairametrics"
+      ]
+    }
+  ],
   "cards": [
     {
       "n": 1,
+      "theme": "Ownership & capital",
+      "event_type": "Restructuring",
+      "flags": [],
+      "alert": false,
+      "risk": "AURA risk rating: Medium · 45/100",
+      "headline": "NGX suspends trading in Coronation Insurance shares ahead of voluntary delisting",
+      "byline": "Nairametrics · Sat 28 Nov, 08:24 Lagos",
+      "outlet": "Nairametrics",
+      "what_happened": "The Nigerian Exchange (NGX) suspended trading in Coronation Insurance Plc shares on November 27, 2026, ahead of the company's voluntary delisting from the Daily Official List.",
+      "key_facts": [
+        "Final scheme consideration is N2.88 per share, a premium of approximately 25.22% over the last traded price of N2.30.",
+        "The SEC granted approval for the scheme on October 22, 2026; the Federal High Court sanctioned it on November 10, 2026."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Coronation Insurance Plc",
+        "Nigerian Exchange Limited",
+        "Securities and Exchange Commission",
+        "Coronation Registrars Limited",
+        "Mutiu Sunmonu"
+      ],
+      "source": {
+        "outlet": "Nairametrics",
+        "url": "https://nairametrics.com/2026/11/28/ngx-suspends-trading-in-coronation-insurance-shares-ahead-of-voluntary-delisting/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 2,
+      "theme": "Regulation & enforcement",
+      "event_type": "Policy",
+      "flags": [],
+      "alert": false,
+      "risk": "",
+      "headline": "CBN pushes market-led liquidity management with repo, swap markets",
+      "byline": "BusinessDay · Sat 28 Nov, 13:10 Lagos",
+      "outlet": "BusinessDay",
+      "what_happened": "The Central Bank of Nigeria plans to introduce interbank repo and overnight indexed swap markets in the first quarter of 2027 to deepen money markets and reduce reliance on the apex bank. Governor Olayemi Cardoso announced the plan at the 61st Annual Bankers' Dinner of the Chartered Institute of Bankers of Nigeria in Lagos.",
+      "key_facts": [
+        "CBN plans to launch interbank repo and overnight indexed swap markets in the first quarter of 2027.",
+        "Olayemi Cardoso, CBN governor, announced the plan at the 61st Annual Bankers' Dinner in Lagos.",
+        "Daily fixed-income market turnover averages N1.5 trillion, according to Cardoso.",
+        "Foreign exchange market turnover has at times exceeded $1 billion daily."
+      ],
+      "timeline": [],
+      "headline_only": false,
+      "analysis": [],
+      "ownership_caveat": "",
+      "named": [
+        "Central Bank of Nigeria",
+        "Chartered Institute of Bankers of Nigeria",
+        "Olayemi Cardoso"
+      ],
+      "source": {
+        "outlet": "BusinessDay",
+        "url": "https://businessday.ng/news/article/cbn-pushes-market-led-liquidity-management-with-repo-swap-markets/"
+      },
+      "also_reported": [],
+      "also_more": 0
+    },
+    {
+      "n": 3,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
@@ -69,7 +153,7 @@
       "also_more": 0
     },
     {
-      "n": 2,
+      "n": 4,
       "theme": "Regulation & enforcement",
       "event_type": "Policy",
       "flags": [],
@@ -103,7 +187,7 @@
       "also_more": 0
     },
     {
-      "n": 3,
+      "n": 5,
       "theme": "Ownership & capital",
       "event_type": "Restructuring",
       "flags": [],
@@ -134,88 +218,46 @@
       },
       "also_reported": [],
       "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "Other",
-      "event_type": "Other",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 25/100",
-      "headline": "NCC flags 1.58m fake IMEIs in nationwide crackdown on counterfeit phones",
-      "byline": "The Guardian · Fri 27 Nov, 19:39 Lagos",
-      "outlet": "The Guardian",
-      "what_happened": "The Nigerian Communications Commission (NCC) has flagged 1.58 million fake IMEI numbers in a nationwide crackdown on counterfeit phones. The action targets devices using counterfeit identifiers on Nigerian networks.",
-      "key_facts": [],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Nigerian Communications Commission"
-      ],
-      "source": {
-        "outlet": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZlB1TFNWc3FsRDM3bzVGdmQxYndIWFNpMG4wcElLaHUyTF9rXzV6a1JaRzcwWHJxX1BZOEp3RDFTU3NNaTFIYXVPZDhVVkRfUVF6WDlEOGZYY1JfaTBMWlE3WXdBSDRUclNoZU5qLVZFM2pNOWFIb1EwbDljQ3p1X0x2LWhRSlU0LVoyZmN2U0hFNXh6c2N1dXZXX0l0ZFh6Y0hqWlluNWJ3MVY0Z19QTlRhWGxPa3B5azZHM2F1Y1EtbUZRT0ZlUk1WZWFxOWdjb19jSDluOUhXclE?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "CBN plans new regulatory rulebook to strengthen banking oversight",
-      "byline": "BusinessDay · Fri 27 Nov, 21:18 Lagos",
-      "outlet": "BusinessDay",
-      "what_happened": "The Central Bank of Nigeria (CBN) plans to introduce a comprehensive regulatory rulebook in 2027 aimed at strengthening banking oversight. The article's text is truncated, so further details on the rulebook's scope are not available.",
-      "key_facts": [
-        "The Central Bank of Nigeria plans to introduce a comprehensive regulatory rulebook in 2027."
-      ],
-      "timeline": [],
-      "headline_only": true,
-      "analysis": [
-        "Why it matters: A new CBN rulebook could change compliance obligations for banks and their corporate shareholders, which affects ownership and governance transparency in the sector."
-      ],
-      "ownership_caveat": "",
-      "named": [
-        "Central Bank of Nigeria"
-      ],
-      "source": {
-        "outlet": "BusinessDay",
-        "url": "https://businessday.ng/business-economy/article/cbn-plans-new-regulatory-rulebook-to-strengthen-banking-oversight/"
-      },
-      "also_reported": [],
-      "also_more": 0
     }
   ],
   "also": [
     {
       "n": 6,
       "theme": "Other",
+      "text": "The Guardian reports: NCC flags 1.58m fake IMEIs in nationwide crackdown on counterfeit phones",
+      "outlet": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZlB1TFNWc3FsRDM3bzVGdmQxYndIWFNpMG4wcElLaHUyTF9rXzV6a1JaRzcwWHJxX1BZOEp3RDFTU3NNaTFIYXVPZDhVVkRfUVF6WDlEOGZYY1JfaTBMWlE3WXdBSDRUclNoZU5qLVZFM2pNOWFIb1EwbDljQ3p1X0x2LWhRSlU0LVoyZmN2U0hFNXh6c2N1dXZXX0l0ZFh6Y0hqWlluNWJ3MVY0Z19QTlRhWGxPa3B5azZHM2F1Y1EtbUZRT0ZlUk1WZWFxOWdjb19jSDluOUhXclE?oc=5"
+    },
+    {
+      "n": 7,
+      "theme": "Regulation & enforcement",
+      "text": "The Central Bank of Nigeria (CBN) plans to introduce a comprehensive regulatory rulebook in 2027 aimed at strengthening banking oversight.",
+      "outlet": "BusinessDay",
+      "url": "https://businessday.ng/business-economy/article/cbn-plans-new-regulatory-rulebook-to-strengthen-banking-oversight/"
+    },
+    {
+      "n": 8,
+      "theme": "Other",
       "text": "Airtel Africa has launched a share buyback to repurchase 1% of its issued share capital.",
       "outlet": "Premium Times",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTHd4NHh0Uy1Yd2lkcWFJeWY1UWVpcUp1R1gyYjhYc2R2cjdpY2l0Z05JclpsUlRCelZjZExQNkNnMFBWWWlLQk96cW96VnBmRXllOVYxQnJhbmR0X2dDY2ZFQnJFRFJWSENTS1JIY1U0Q1JxZDdGSGJ0bFNHeUpNaTJyUU5iMmphdGpPQnJ3b1VILU9HT1BXNERIbElSZ0NwZXRsRkRPR3EwQjZZVnE2ZUxrNGVoOGlESXVpOF9iUXJRbHFkOGZnT3RGZGhkaE8wNnc?oc=5"
     },
     {
-      "n": 7,
+      "n": 9,
       "theme": "Other",
       "text": "The Defence Headquarters, Barama Energy and NNPC Limited launched Abuja's first compressed natural gas (CNG) daughter station, according to a Guardian Nigeria headline.",
       "outlet": "The Guardian",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObldwZkltLV81NTkzNVE5VkVTR3ZLeWJ0ekpjbVhRT1JjT2dnM2xjWHFVb1g0dE1vbjQwOFV0WnF1ZGpDbUVvNnVONThxOWJUMVo5WjNjQlZTc2RoU3MtbnFlZlNQbkJFUXQ3ZDh1eThNOUNFNHJTN2tXZWFEazJVb0hOVEN6Y0RJekF2eUh5SHBmVUJhcElTbmZR?oc=5"
     },
     {
-      "n": 8,
+      "n": 10,
       "theme": "Regulation & enforcement",
       "text": "The Nigerian Electrical Regulatory Services Agency (NEMSA) has warned against substandard electrical installations as Nigeria expands its renewable energy sector.",
       "outlet": "Vanguard",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb29ocnJhY1JvWFAyc2l0WU5UWG5kbzB4dkRtd2hLeW5Kc0RvbldEMFpGeW11Q0dXeGt1Q2JNN2NuNzJRUFdLX3d3V2pEWjlpbkd2ZkpBVVdfNXBWZ2YtRUJGX1NmbzVjelUyQllacTRPYlJYaENnWGpETUYzWWJrWlRGM29McTAwdlZPSUcwZmFnZ0JCVXVDT1dQci01MUI5S0NfX2NPWmdWS1ZfOEpHcXBVZE4wbUpkMUHSAb8BQVVfeXFMTjlZSTQzRDdacEI1WW80RWo2b2xIbmRZWXhfN3hKZmtuTFEwSERHREpjREFGam5BQmVlUl9MVXhuLTV3a2g4bmZIM1NiaG04VmZWX3lDUzFRODVHTXNOY3FtS1kxR0VtbE9reUpVVTVmSWtRRk1fTVhlWU9sX296a1JOTGRCNG5vdm9WaDVmMFJ6ZHhlQmtNekpWN3lZYTREdTZiWXpJVWQ5NjZQVzhlLUxta0hTX1pWUGNBVVMyRkU?oc=5"
     },
     {
-      "n": 9,
+      "n": 11,
       "theme": "People",
       "text": "Reno Omokri has presented his Letter of Credence to Mexico and formally assumed duty as Nigeria's ambassador there.",
       "outlet": "Premium Times",
@@ -232,6 +274,14 @@
       "meaning": "Central Bank of Nigeria"
     },
     {
+      "term": "SEC",
+      "meaning": "Securities and Exchange Commission"
+    },
+    {
+      "term": "NGX",
+      "meaning": "Nigerian Exchange, the Lagos stock market"
+    },
+    {
       "term": "NNPC",
       "meaning": "Nigerian National Petroleum Company"
     },
@@ -244,11 +294,11 @@
     "extraction": [
       "claude"
     ],
-    "digest": ""
+    "digest": "claude"
   },
   "health": {
-    "overview_dropped": 0,
-    "insights_dropped": 0
+    "overview_dropped": 1,
+    "insights_dropped": 2
   },
   "site": "https://auranews.pages.dev"
 }
