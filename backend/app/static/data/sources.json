@@ -2,24 +2,24 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 3344,
-      "published": 1630,
-      "filtered": 1714,
+      "total": 3346,
+      "published": 1631,
+      "filtered": 1715,
       "accept_rate": 49,
       "avg_risk": 28.1,
       "engines": {
         "unknown": 963,
         "ollama": 581,
         "nvidia": 15,
-        "claude": 71
+        "claude": 72
       },
       "last_seen": "2026-11-28"
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2960,
+      "total": 2961,
       "published": 1070,
-      "filtered": 1890,
+      "filtered": 1891,
       "accept_rate": 36,
       "avg_risk": 30.3,
       "engines": {
@@ -146,16 +146,16 @@
     },
     {
       "source": "dailypost",
-      "total": 220,
+      "total": 222,
       "published": 46,
-      "filtered": 174,
+      "filtered": 176,
       "accept_rate": 21,
       "avg_risk": 26.5,
       "engines": {
         "unknown": 40,
         "ollama": 6
       },
-      "last_seen": "2026-11-27"
+      "last_seen": "2026-11-28"
     },
     {
       "source": "naijaonpoint_ng",
@@ -476,6 +476,18 @@
       "last_seen": "2026-11-26"
     },
     {
+      "source": "BusinessDay",
+      "total": 12,
+      "published": 6,
+      "filtered": 6,
+      "accept_rate": 50,
+      "avg_risk": 40.5,
+      "engines": {
+        "claude": 6
+      },
+      "last_seen": "2026-11-28"
+    },
+    {
       "source": "converseer",
       "total": 12,
       "published": 5,
@@ -486,18 +498,6 @@
         "unknown": 5
       },
       "last_seen": "2026-09-22"
-    },
-    {
-      "source": "BusinessDay",
-      "total": 11,
-      "published": 6,
-      "filtered": 5,
-      "accept_rate": 55,
-      "avg_risk": 40.5,
-      "engines": {
-        "claude": 6
-      },
-      "last_seen": "2026-11-28"
     },
     {
       "source": "nigerianeye",
@@ -2516,5 +2516,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-28 16:13:41"
+  "generated": "2026-11-28 17:08:30"
 }
