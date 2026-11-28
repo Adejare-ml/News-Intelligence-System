@@ -1,64 +1,69 @@
 {
-  "generated": "2026-11-27 22:01:58",
+  "generated": "2026-11-28 00:36:34",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6452,
+      "likes": 6463,
       "downloads": 155741
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1601,
+      "likes": 1611,
       "downloads": 3302340
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1365,
+      "likes": 1369,
       "downloads": 539421
     },
     {
       "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "task": "image-text-to-text",
-      "likes": 1031,
+      "likes": 1036,
       "downloads": 1059763
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 629,
+      "likes": 637,
       "downloads": 382546
     },
     {
       "id": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "task": "audio-to-audio",
-      "likes": 1011,
+      "likes": 1014,
       "downloads": 20510
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13720,
+      "likes": 13726,
       "downloads": 3080701
     },
     {
       "id": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
       "task": "image-to-text",
-      "likes": 354,
+      "likes": 356,
       "downloads": 626
     }
   ],
   "papers": [
+    {
+      "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+      "url": "https://huggingface.co/papers/2611.33885",
+      "upvotes": 0
+    },
     {
       "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
       "url": "https://huggingface.co/papers/2611.30025",
@@ -83,11 +88,6 @@
       "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
       "url": "https://huggingface.co/papers/2611.31516",
       "upvotes": 1
-    },
-    {
-      "title": "So Many Ways to Multiply 3times3 Matrices: A Large Dataset of Rank-23 Schemes",
-      "url": "https://huggingface.co/papers/2611.31155",
-      "upvotes": 0
     }
   ]
 }
