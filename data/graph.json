@@ -121,6 +121,18 @@
       "risk": "Critical"
     },
     {
+      "id": "d29d3e8092c8",
+      "label": "Pan Niger Delta Forum (PANDEF)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "5fc8f33a2245",
+      "label": "Nigerian Content Development and Monitoring Board (NCDMB)",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "4c7e8211e98f",
       "label": "Central Bank of Nigeria",
       "type": "agency",
@@ -229,18 +241,6 @@
       "risk": "Low"
     },
     {
-      "id": "ebba2aef82e9",
-      "label": "Nigerian National Petroleum Company",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "8e16dd9bbb58",
-      "label": "Federal Inland Revenue Service",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
       "id": "22900912dcd4",
       "label": "Reno Omokri",
       "type": "person",
@@ -249,6 +249,24 @@
     {
       "id": "cdea562756a4",
       "label": "Federal Republic of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
+      "id": "d00b5be768d6",
+      "label": "Godknows Igali",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "dc8e63df7163",
+      "label": "Opeyemi Bamidele",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "38b03bbf0068",
+      "label": "National Assembly",
       "type": "company",
       "risk": "Low"
     },
@@ -423,24 +441,6 @@
     {
       "id": "58c58351d674",
       "label": "Olayemi Cardoso",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "c4dd50a83302",
-      "label": "Sambo Dasuki",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "61593181343c",
-      "label": "Office of the National Security Adviser (ONSA)",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
-      "id": "e46c80167240",
-      "label": "Unnamed former Chief Operating Officer",
       "type": "person",
       "risk": "Low"
     },
@@ -681,6 +681,18 @@
       "label": "Appointed as Ambassador to Mexico"
     },
     {
+      "id": "fb16335dc53d",
+      "from": "d00b5be768d6",
+      "to": "d29d3e8092c8",
+      "label": "Appointed as National Chairman"
+    },
+    {
+      "id": "b1a75a7efe7a",
+      "from": "dc8e63df7163",
+      "to": "38b03bbf0068",
+      "label": "Appointed as Senate Leader"
+    },
+    {
       "id": "9802ab1659e2",
       "from": "d1748e2f7de3",
       "to": "7d890603e2a1",
@@ -799,12 +811,6 @@
       "from": "58c58351d674",
       "to": "4c7e8211e98f",
       "label": "Appointed as CBN Governor"
-    },
-    {
-      "id": "01056e9f0042",
-      "from": "c4dd50a83302",
-      "to": "61593181343c",
-      "label": "Appointed as National Security Adviser"
     },
     {
       "id": "28310c0ed538",

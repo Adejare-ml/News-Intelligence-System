@@ -1,60 +1,60 @@
 {
-  "generated": "2026-11-28 00:36:34",
+  "generated": "2026-11-28 04:45:49",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6463,
+      "likes": 6489,
       "downloads": 155741
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1611,
+      "likes": 1620,
       "downloads": 3302340
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1369,
+      "likes": 1378,
       "downloads": 539421
-    },
-    {
-      "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "task": "image-text-to-text",
-      "likes": 1036,
-      "downloads": 1059763
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 637,
+      "likes": 647,
       "downloads": 382546
+    },
+    {
+      "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
+      "task": "image-text-to-text",
+      "likes": 1045,
+      "downloads": 1059763
     },
     {
       "id": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "task": "audio-to-audio",
-      "likes": 1014,
+      "likes": 1016,
       "downloads": 20510
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13726,
+      "likes": 13735,
       "downloads": 3080701
     },
     {
       "id": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
       "task": "image-to-text",
-      "likes": 356,
+      "likes": 361,
       "downloads": 626
     }
   ],
