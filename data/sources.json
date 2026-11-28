@@ -2,9 +2,9 @@
   "sources": [
     {
       "source": "The Guardian Nigeria News",
-      "total": 3323,
+      "total": 3344,
       "published": 1630,
-      "filtered": 1693,
+      "filtered": 1714,
       "accept_rate": 49,
       "avg_risk": 28.1,
       "engines": {
@@ -17,9 +17,9 @@
     },
     {
       "source": "Premium Times Nigeria",
-      "total": 2953,
+      "total": 2960,
       "published": 1070,
-      "filtered": 1883,
+      "filtered": 1890,
       "accept_rate": 36,
       "avg_risk": 30.3,
       "engines": {
@@ -47,9 +47,9 @@
     },
     {
       "source": "The Punch",
-      "total": 786,
+      "total": 787,
       "published": 404,
-      "filtered": 382,
+      "filtered": 383,
       "accept_rate": 51,
       "avg_risk": 32.8,
       "engines": {
@@ -58,7 +58,7 @@
         "ollama": 279,
         "claude": 13
       },
-      "last_seen": "2026-11-26"
+      "last_seen": "2026-11-27"
     },
     {
       "source": "theeagleonline.com.ng",
@@ -76,9 +76,9 @@
     },
     {
       "source": "Vanguard News",
-      "total": 378,
+      "total": 383,
       "published": 171,
-      "filtered": 207,
+      "filtered": 212,
       "accept_rate": 45,
       "avg_risk": 26.5,
       "engines": {
@@ -87,7 +87,7 @@
         "nvidia": 5,
         "claude": 10
       },
-      "last_seen": "2026-11-27"
+      "last_seen": "2026-11-28"
     },
     {
       "source": "Vanguard",
@@ -104,6 +104,19 @@
       "last_seen": "2026-09-19"
     },
     {
+      "source": "The Eagle Online",
+      "total": 240,
+      "published": 41,
+      "filtered": 199,
+      "accept_rate": 17,
+      "avg_risk": 31.7,
+      "engines": {
+        "ollama": 29,
+        "claude": 12
+      },
+      "last_seen": "2026-11-28"
+    },
+    {
       "source": "sunnewsonline",
       "total": 240,
       "published": 67,
@@ -114,19 +127,6 @@
         "unknown": 50,
         "ollama": 15,
         "nvidia": 2
-      },
-      "last_seen": "2026-11-27"
-    },
-    {
-      "source": "The Eagle Online",
-      "total": 237,
-      "published": 41,
-      "filtered": 196,
-      "accept_rate": 17,
-      "avg_risk": 31.7,
-      "engines": {
-        "ollama": 29,
-        "claude": 12
       },
       "last_seen": "2026-11-27"
     },
@@ -242,30 +242,30 @@
     },
     {
       "source": "latestnigeriannews",
-      "total": 96,
+      "total": 98,
       "published": 17,
-      "filtered": 79,
-      "accept_rate": 18,
+      "filtered": 81,
+      "accept_rate": 17,
       "avg_risk": 27.8,
       "engines": {
         "unknown": 8,
         "ollama": 8,
         "claude": 1
       },
-      "last_seen": "2026-11-27"
+      "last_seen": "2026-11-28"
     },
     {
       "source": "Nairametrics",
-      "total": 58,
-      "published": 24,
-      "filtered": 34,
-      "accept_rate": 41,
-      "avg_risk": 32.2,
+      "total": 63,
+      "published": 25,
+      "filtered": 38,
+      "accept_rate": 40,
+      "avg_risk": 32.7,
       "engines": {
-        "claude": 19,
+        "claude": 20,
         "nvidia": 5
       },
-      "last_seen": "2026-11-27"
+      "last_seen": "2026-11-28"
     },
     {
       "source": "Voice of Nigeria",
@@ -488,6 +488,18 @@
       "last_seen": "2026-09-22"
     },
     {
+      "source": "BusinessDay",
+      "total": 11,
+      "published": 6,
+      "filtered": 5,
+      "accept_rate": 55,
+      "avg_risk": 40.5,
+      "engines": {
+        "claude": 6
+      },
+      "last_seen": "2026-11-28"
+    },
+    {
       "source": "nigerianeye",
       "total": 11,
       "published": 2,
@@ -536,18 +548,6 @@
         "ollama": 3
       },
       "last_seen": "2026-11-09"
-    },
-    {
-      "source": "BusinessDay",
-      "total": 10,
-      "published": 5,
-      "filtered": 5,
-      "accept_rate": 50,
-      "avg_risk": 46.6,
-      "engines": {
-        "claude": 5
-      },
-      "last_seen": "2026-11-27"
     },
     {
       "source": "thenationonlineng",
@@ -1640,6 +1640,16 @@
       "last_seen": "2026-07-21"
     },
     {
+      "source": "Dailytrust.com",
+      "total": 1,
+      "published": 0,
+      "filtered": 1,
+      "accept_rate": 0,
+      "avg_risk": null,
+      "engines": {},
+      "last_seen": "2026-11-27"
+    },
+    {
       "source": "Diariobitcoin.com",
       "total": 1,
       "published": 1,
@@ -2506,5 +2516,5 @@
       "last_seen": "2026-07-17"
     }
   ],
-  "generated": "2026-11-28 04:45:57"
+  "generated": "2026-11-28 16:13:41"
 }

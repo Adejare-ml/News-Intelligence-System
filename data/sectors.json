@@ -3,7 +3,7 @@
     {
       "industry": "General",
       "companies": 959,
-      "mentions": 1570,
+      "mentions": 1571,
       "risk": {
         "Low": 834,
         "Critical": 56,
@@ -100,6 +100,16 @@
       }
     },
     {
+      "industry": "Insurance",
+      "companies": 9,
+      "mentions": 12,
+      "risk": {
+        "High": 2,
+        "Low": 6,
+        "Medium": 1
+      }
+    },
+    {
       "industry": "Non-Profit/Legal Advocacy",
       "companies": 2,
       "mentions": 12,
@@ -114,16 +124,6 @@
       "mentions": 11,
       "risk": {
         "Low": 10
-      }
-    },
-    {
-      "industry": "Insurance",
-      "companies": 9,
-      "mentions": 11,
-      "risk": {
-        "High": 2,
-        "Low": 6,
-        "Medium": 1
       }
     },
     {
@@ -1067,5 +1067,5 @@
       }
     }
   ],
-  "generated": "2026-11-28 04:45:57"
+  "generated": "2026-11-28 16:13:41"
 }

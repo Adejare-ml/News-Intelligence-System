@@ -330,6 +330,10 @@
       "label": "MTN Group Foundation"
     },
     {
+      "key": "mutiu sunmonu",
+      "label": "Mutiu Sunmonu"
+    },
+    {
       "key": "nairobi securities exchange",
       "label": "Nairobi Securities Exchange"
     },
@@ -554,7 +558,7 @@
     {
       "a": "central bank of",
       "b": "olayemi cardoso",
-      "weight": 6
+      "weight": 7
     },
     {
       "a": "central bank of",
@@ -569,6 +573,11 @@
     {
       "a": "economic and financial crimes commission",
       "b": "federal bureau of investigation",
+      "weight": 5
+    },
+    {
+      "a": "exchange",
+      "b": "securities and exchange commission",
       "weight": 5
     },
     {
@@ -599,11 +608,6 @@
     {
       "a": "economic and financial crimes commission",
       "b": "ola olukoyede",
-      "weight": 4
-    },
-    {
-      "a": "exchange",
-      "b": "securities and exchange commission",
       "weight": 4
     },
     {
@@ -659,6 +663,21 @@
     {
       "a": "central bank of",
       "b": "national petroleum company",
+      "weight": 3
+    },
+    {
+      "a": "coronation insurance",
+      "b": "coronation registrars",
+      "weight": 3
+    },
+    {
+      "a": "coronation insurance",
+      "b": "olamide olajolo",
+      "weight": 3
+    },
+    {
+      "a": "coronation registrars",
+      "b": "olamide olajolo",
       "weight": 3
     },
     {
@@ -943,17 +962,32 @@
     },
     {
       "a": "coronation insurance",
-      "b": "coronation registrars",
+      "b": "exchange",
       "weight": 2
     },
     {
       "a": "coronation insurance",
-      "b": "olamide olajolo",
+      "b": "mutiu sunmonu",
+      "weight": 2
+    },
+    {
+      "a": "coronation insurance",
+      "b": "securities and exchange commission",
       "weight": 2
     },
     {
       "a": "coronation registrars",
-      "b": "olamide olajolo",
+      "b": "exchange",
+      "weight": 2
+    },
+    {
+      "a": "coronation registrars",
+      "b": "mutiu sunmonu",
+      "weight": 2
+    },
+    {
+      "a": "coronation registrars",
+      "b": "securities and exchange commission",
       "weight": 2
     },
     {
@@ -1049,6 +1083,11 @@
     {
       "a": "etranzact international",
       "b": "omatek ventures",
+      "weight": 2
+    },
+    {
+      "a": "exchange",
+      "b": "olamide olajolo",
       "weight": 2
     },
     {
@@ -1262,6 +1301,11 @@
       "weight": 2
     },
     {
+      "a": "mutiu sunmonu",
+      "b": "olamide olajolo",
+      "weight": 2
+    },
+    {
       "a": "nairobi securities exchange",
       "b": "ngx",
       "weight": 2
@@ -1294,6 +1338,11 @@
     {
       "a": "national youth service corps",
       "b": "nnaji",
+      "weight": 2
+    },
+    {
+      "a": "olamide olajolo",
+      "b": "securities and exchange commission",
       "weight": 2
     },
     {
@@ -1337,5 +1386,5 @@
       "weight": 2
     }
   ],
-  "generated": "2026-11-28 04:45:57"
+  "generated": "2026-11-28 16:13:41"
 }

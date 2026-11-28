@@ -6,7 +6,6 @@ Company or body · Logistics
 
 - Mentions tracked: 1
 - Holdings: 1
-- Recent stories: 1
 - Last seen: 18 Nov 2026
 
 ## Who is reported to control it
@@ -15,10 +14,6 @@ Company or body · Logistics
   Reported by [Nairametrics](https://nairametrics.com/2026/11/18/uac-completes-sale-of-43-stake-in-dp-world-logistics-to-tgi-group/), not verified with the CAC register.
 
 Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.
-
-## In the news
-
-- [UAC completes sale of 43% stake in DP World Logistics to TGI Group](https://nairametrics.com/2026/11/18/uac-completes-sale-of-43-stake-in-dp-world-logistics-to-tgi-group/) · Nairametrics · 18 Nov 2026
 
 ---
 

@@ -1,8 +1,20 @@
 {
   "window_days": 7,
-  "recent_articles": 52,
-  "previous_articles": 53,
+  "recent_articles": 54,
+  "previous_articles": 51,
   "rising": [
+    {
+      "term": "insurance",
+      "recent": 4,
+      "previous": 0,
+      "change": 4
+    },
+    {
+      "term": "cbn",
+      "recent": 7,
+      "previous": 4,
+      "change": 3
+    },
     {
       "term": "lagos",
       "recent": 4,
@@ -10,7 +22,13 @@
       "change": 3
     },
     {
-      "term": "insurance",
+      "term": "coronation",
+      "recent": 3,
+      "previous": 0,
+      "change": 3
+    },
+    {
+      "term": "coronation insurance",
       "recent": 3,
       "previous": 0,
       "change": 3
@@ -44,24 +62,6 @@
       "recent": 3,
       "previous": 0,
       "change": 3
-    },
-    {
-      "term": "rights issue",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
-    },
-    {
-      "term": "road",
-      "recent": 3,
-      "previous": 0,
-      "change": 3
-    },
-    {
-      "term": "cbn",
-      "recent": 6,
-      "previous": 4,
-      "change": 2
     }
   ],
   "falling": [
@@ -80,20 +80,14 @@
     {
       "term": "alleged",
       "recent": 0,
-      "previous": 5,
-      "change": -5
+      "previous": 4,
+      "change": -4
     },
     {
       "term": "livestock",
       "recent": 0,
       "previous": 4,
       "change": -4
-    },
-    {
-      "term": "company",
-      "recent": 0,
-      "previous": 3,
-      "change": -3
     },
     {
       "term": "deadline",
@@ -124,18 +118,24 @@
       "recent": 0,
       "previous": 3,
       "change": -3
+    },
+    {
+      "term": "pipeline",
+      "recent": 0,
+      "previous": 3,
+      "change": -3
     }
   ],
   "categories": [
     {
       "category": "Government",
-      "recent": 32,
-      "previous": 29
+      "recent": 33,
+      "previous": 28
     },
     {
       "category": "Company",
-      "recent": 15,
-      "previous": 21
+      "recent": 16,
+      "previous": 20
     },
     {
       "category": "Legal",
@@ -149,5 +149,5 @@
     }
   ],
   "social": [],
-  "generated": "2026-11-28 04:45:57"
+  "generated": "2026-11-28 16:13:41"
 }
