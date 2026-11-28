@@ -133,6 +133,18 @@
       "risk": "Low"
     },
     {
+      "id": "9ff00c51bfd3",
+      "label": "Nigeria Customs Service",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
+      "id": "dd0da2473579",
+      "label": "Federal Character Commission",
+      "type": "agency",
+      "risk": "Low"
+    },
+    {
       "id": "cd76249f84cf",
       "label": "Nigerian Exchange Limited",
       "type": "agency",
@@ -225,18 +237,6 @@
     {
       "id": "28f8dadd52f0",
       "label": "Nigerian Electrical Regulatory Services Agency",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0bcaaf453cd3",
-      "label": "Economic and Financial Crimes Commission",
-      "type": "agency",
-      "risk": "Low"
-    },
-    {
-      "id": "0c2be969618b",
-      "label": "Federal Government of Nigeria",
       "type": "agency",
       "risk": "Low"
     },
@@ -448,6 +448,12 @@
       "id": "1a17418ea885",
       "label": "Bola Tinubu",
       "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "0c2be969618b",
+      "label": "Federal Government of Nigeria",
+      "type": "company",
       "risk": "Low"
     },
     {

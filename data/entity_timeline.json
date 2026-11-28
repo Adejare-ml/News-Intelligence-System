@@ -537,6 +537,67 @@
       ]
     },
     {
+      "key": "customs service",
+      "label": "Nigeria Customs Service",
+      "total_mentions": 23,
+      "points": [
+        {
+          "week": "2026-09-14",
+          "mentions": 8,
+          "avg_risk": 37.5,
+          "max_risk": 75
+        },
+        {
+          "week": "2026-09-21",
+          "mentions": 1,
+          "avg_risk": 30.0,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-09-28",
+          "mentions": 2,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-10-12",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        },
+        {
+          "week": "2026-10-19",
+          "mentions": 4,
+          "avg_risk": 23.8,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-10-26",
+          "mentions": 3,
+          "avg_risk": 28.3,
+          "max_risk": 45
+        },
+        {
+          "week": "2026-11-02",
+          "mentions": 2,
+          "avg_risk": 22.5,
+          "max_risk": 30
+        },
+        {
+          "week": "2026-11-09",
+          "mentions": 1,
+          "avg_risk": 35.0,
+          "max_risk": 35
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "dangote refinery",
       "label": "Dangote Refinery",
       "total_mentions": 22,
@@ -588,61 +649,6 @@
           "mentions": 1,
           "avg_risk": 45.0,
           "max_risk": 45
-        }
-      ]
-    },
-    {
-      "key": "customs service",
-      "label": "Nigeria Customs Service",
-      "total_mentions": 22,
-      "points": [
-        {
-          "week": "2026-09-14",
-          "mentions": 8,
-          "avg_risk": 37.5,
-          "max_risk": 75
-        },
-        {
-          "week": "2026-09-21",
-          "mentions": 1,
-          "avg_risk": 30.0,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-09-28",
-          "mentions": 2,
-          "avg_risk": 20.0,
-          "max_risk": 20
-        },
-        {
-          "week": "2026-10-12",
-          "mentions": 1,
-          "avg_risk": 15.0,
-          "max_risk": 15
-        },
-        {
-          "week": "2026-10-19",
-          "mentions": 4,
-          "avg_risk": 23.8,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-10-26",
-          "mentions": 3,
-          "avg_risk": 28.3,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-02",
-          "mentions": 2,
-          "avg_risk": 22.5,
-          "max_risk": 30
-        },
-        {
-          "week": "2026-11-09",
-          "mentions": 1,
-          "avg_risk": 35.0,
-          "max_risk": 35
         }
       ]
     },
@@ -5438,6 +5444,25 @@
       ]
     },
     {
+      "key": "federal character commission",
+      "label": "Federal Character Commission",
+      "total_mentions": 2,
+      "points": [
+        {
+          "week": "2026-10-19",
+          "mentions": 1,
+          "avg_risk": 20.0,
+          "max_risk": 20
+        },
+        {
+          "week": "2026-11-23",
+          "mentions": 1,
+          "avg_risk": 15.0,
+          "max_risk": 15
+        }
+      ]
+    },
+    {
       "key": "federal ministry of finance",
       "label": "Federal Ministry of Finance",
       "total_mentions": 2,
@@ -7018,26 +7043,7 @@
           "max_risk": 15
         }
       ]
-    },
-    {
-      "key": "tin can port",
-      "label": "Tin Can Port",
-      "total_mentions": 2,
-      "points": [
-        {
-          "week": "2026-10-26",
-          "mentions": 1,
-          "avg_risk": 45.0,
-          "max_risk": 45
-        },
-        {
-          "week": "2026-11-23",
-          "mentions": 1,
-          "avg_risk": 10.0,
-          "max_risk": 10
-        }
-      ]
     }
   ],
-  "generated": "2026-11-28 16:13:41"
+  "generated": "2026-11-28 17:08:30"
 }

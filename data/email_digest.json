@@ -1,304 +1,81 @@
 {
-  "edition": "20261128-12552",
-  "preview": false,
-  "built_at": "2026-11-28 16:13:41",
+  "edition": "20261128-12595-preview",
+  "preview": true,
+  "built_at": "2026-11-28 17:08:30",
   "date": "Saturday 28 November 2026",
-  "subject": "AURA · Sat 28 Nov · CBN pushes market-led liquidity management with repo, swap markets",
-  "preheader": "11 stories, 0 risk alerts",
-  "since": "Fri 27 Nov, 18:33 Lagos",
-  "through_id": 12552,
+  "subject": "AURA · Sat 28 Nov · FCC lifts suspension of Customs recruitment training",
+  "preheader": "1 story, 0 risk alerts",
+  "since": "Sat 28 Nov, 17:13 Lagos",
+  "through_id": 12595,
   "stats": {
-    "reports": 11,
-    "stories": 11,
-    "outlets": 5,
+    "reports": 1,
+    "stories": 1,
+    "outlets": 1,
     "risk_alerts": 0,
     "public_money": 0,
-    "appointments": 1,
+    "appointments": 0,
     "ownership": 0
   },
   "nothing_in": [
     "risk alerts",
     "public-money decisions",
+    "appointments",
     "ownership and control reports"
   ],
   "overview": [
     {
-      "text": "Oando opened a rights issue for its shareholders, according to Premium Times.",
-      "card": 3,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "PANDEF urged National Assembly members to reconsider a bill provision deducting 20 per cent of the Nigerian Content Development Fund to fund a proposed research council.",
-      "card": 4,
-      "outlet": "Premium Times"
-    },
-    {
-      "text": "Oando closed at N39.90 on Friday, up 9.92%, after announcing final terms of its N203.8 billion rights issue: one new share at N50 for every two held.",
-      "card": 5,
-      "outlet": "Nairametrics"
-    },
-    {
-      "text": "The Central Bank of Nigeria plans a comprehensive regulatory rulebook in 2027, per BusinessDay.",
-      "card": 7,
-      "outlet": "BusinessDay"
+      "text": "The Federal Character Commission has lifted the suspension of the Nigeria Customs Service recruitment training, according to a Guardian Nigeria headline.",
+      "card": 1,
+      "outlet": "The Guardian"
     }
   ],
-  "insights": [
-    {
-      "label": "What to watch",
-      "text": "With Oando's rights issue open at N50 per share, what timelines and terms will the company publish for qualifying shareholders?",
-      "cards": [
-        3,
-        5
-      ],
-      "outlets": [
-        "Premium Times",
-        "Nairametrics"
-      ]
-    }
-  ],
+  "insights": [],
   "cards": [
     {
       "n": 1,
-      "theme": "Ownership & capital",
-      "event_type": "Restructuring",
-      "flags": [],
-      "alert": false,
-      "risk": "AURA risk rating: Medium · 45/100",
-      "headline": "NGX suspends trading in Coronation Insurance shares ahead of voluntary delisting",
-      "byline": "Nairametrics · Sat 28 Nov, 08:24 Lagos",
-      "outlet": "Nairametrics",
-      "what_happened": "The Nigerian Exchange (NGX) suspended trading in Coronation Insurance Plc shares on November 27, 2026, ahead of the company's voluntary delisting from the Daily Official List.",
-      "key_facts": [
-        "Final scheme consideration is N2.88 per share, a premium of approximately 25.22% over the last traded price of N2.30.",
-        "The SEC granted approval for the scheme on October 22, 2026; the Federal High Court sanctioned it on November 10, 2026."
-      ],
-      "timeline": [],
-      "headline_only": false,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Coronation Insurance Plc",
-        "Nigerian Exchange Limited",
-        "Securities and Exchange Commission",
-        "Coronation Registrars Limited",
-        "Mutiu Sunmonu"
-      ],
-      "source": {
-        "outlet": "Nairametrics",
-        "url": "https://nairametrics.com/2026/11/28/ngx-suspends-trading-in-coronation-insurance-shares-ahead-of-voluntary-delisting/"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 2,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "CBN pushes market-led liquidity management with repo, swap markets",
-      "byline": "BusinessDay · Sat 28 Nov, 13:10 Lagos",
-      "outlet": "BusinessDay",
-      "what_happened": "The Central Bank of Nigeria plans to introduce interbank repo and overnight indexed swap markets in the first quarter of 2027 to deepen money markets and reduce reliance on the apex bank. Governor Olayemi Cardoso announced the plan at the 61st Annual Bankers' Dinner of the Chartered Institute of Bankers of Nigeria in Lagos.",
-      "key_facts": [
-        "CBN plans to launch interbank repo and overnight indexed swap markets in the first quarter of 2027.",
-        "Olayemi Cardoso, CBN governor, announced the plan at the 61st Annual Bankers' Dinner in Lagos.",
-        "Daily fixed-income market turnover averages N1.5 trillion, according to Cardoso.",
-        "Foreign exchange market turnover has at times exceeded $1 billion daily."
-      ],
-      "timeline": [],
-      "headline_only": false,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Central Bank of Nigeria",
-        "Chartered Institute of Bankers of Nigeria",
-        "Olayemi Cardoso"
-      ],
-      "source": {
-        "outlet": "BusinessDay",
-        "url": "https://businessday.ng/news/article/cbn-pushes-market-led-liquidity-management-with-repo-swap-markets/"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 3,
       "theme": "Other",
       "event_type": "Other",
       "flags": [],
       "alert": false,
       "risk": "",
-      "headline": "Oando opens Rights Issue, offers shareholders opportunity to participate in next phase of growth",
-      "byline": "Premium Times · Fri 27 Nov, 18:28 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "Oando has opened a rights issue, giving its shareholders the opportunity to participate in the next phase of the company's growth. The offer was reported by Premium Times Nigeria. The article text provided contains only the headline and no further details on terms, amounts or timelines.",
-      "key_facts": [
-        "Oando has opened a rights issue for its shareholders."
-      ],
+      "headline": "FCC lifts suspension of Customs recruitment training",
+      "byline": "The Guardian · Sat 28 Nov, 18:00 Lagos",
+      "outlet": "The Guardian",
+      "what_happened": "The Federal Character Commission has lifted the suspension of the Nigeria Customs Service recruitment training, according to a Guardian Nigeria headline. The article text provided contains only the headline, so further details on the reasons and timeline are not available.",
+      "key_facts": [],
       "timeline": [],
       "headline_only": true,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Oando Plc"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPY1pwUnRHaWNyX1dNOUlEcFpjNFQ1V3IyU1kwNXU4ZmJOeXlZTTRxU05jQlRpalpUOU9WaFVCT0RtYy1SVktDakR5MDNOSF9GWkd6aDc4NVhsR1BGb3IwZDZUUlR3Zm80YXlmWG1ORjhSZU0tR1BXN3RqNFV5UVU5THJrT3RacjluMlJuLTdMVmZuajhvekNkQk1uSlZXY1ZFNGtXb2dTY3VkM25WUHJyNWRJaVVyZjNsbVl2cXNzWE1BdTByMDJnZGkyb0h5bjV6R3hrN055aW5LUjJuYWRYWA?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 4,
-      "theme": "Regulation & enforcement",
-      "event_type": "Policy",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "PANDEF opposes 20% cut from local content fund for new research agency",
-      "byline": "Premium Times · Sat 28 Nov, 05:22 Lagos",
-      "outlet": "Premium Times",
-      "what_happened": "PANDEF has urged National Assembly members to reconsider a funding provision in a bill to establish the National Council on Research, Science, Technology and Innovation. The bill proposes deducting 20 per cent of the Nigerian Content Development Fund as a primary funding source for the council.",
-      "key_facts": [
-        "Section 19(a) of the bill proposes deducting 20 per cent of the Nigerian Content Development Fund (NCDF) for the proposed research council.",
-        "The bill was read on the Senate floor on 13 October, passed second reading on 22 October, and scaled third reading on 19 November.",
-        "The bill is currently at the second reading stage in the House of Representatives.",
-        "Godknows Igali, national chairman of PANDEF, made the call at a press briefing in Abuja on Friday."
-      ],
-      "timeline": [],
-      "headline_only": false,
-      "analysis": [],
-      "ownership_caveat": "",
-      "named": [
-        "Pan Niger Delta Forum (PANDEF)",
-        "Nigerian Content Development and Monitoring Board (NCDMB)",
-        "Godknows Igali",
-        "Opeyemi Bamidele"
-      ],
-      "source": {
-        "outlet": "Premium Times",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSjh4WlNVZkMxaU5heGNWV0kwcjVHdTJ1TXpPSkFjV2dHOFY3MGNmZnFSQldFeVVwZUtyek9qVHRYY25VZExocnNkTlVqSU1MSVJEMjluQzljQ2VqMGJnV05aam5tZllXNVRqbW5ZX09IY1lUekFWYUpBTTMxVlRjWjhXUW1qOE9hT2xTXzRBMUIxdmVDWDVJcVdlS1JvV0FUYjd0NGdQNlNaRmpjeV9EN2I0Zmw5SHFjOXFqSllkdHVNQlNNeHc?oc=5"
-      },
-      "also_reported": [],
-      "also_more": 0
-    },
-    {
-      "n": 5,
-      "theme": "Ownership & capital",
-      "event_type": "Restructuring",
-      "flags": [],
-      "alert": false,
-      "risk": "",
-      "headline": "Oando closes at N39.90 after full-bid demand on rights issue announcement day",
-      "byline": "Nairametrics · Fri 27 Nov, 19:21 Lagos",
-      "outlet": "Nairametrics",
-      "what_happened": "Oando Plc closed at N39.90 per share on Friday, November 27, 2026, up 9.92% on the day, after announcing the final terms of its N203.8 billion rights issue. The company is offering 4.076 billion new ordinary shares at N50 per share, one new share for every two held by qualifying shareholders.",
-      "key_facts": [
-        "Oando closed at N39.90 per share on Friday, November 27, 2026, gaining N3.60 or 9.92% from N36.30.",
-        "Oando announced the final terms of its N203.8 billion rights issue on Friday following regulatory approvals.",
-        "The rights issue offers 4.076 billion new ordinary shares at N50 per share, one new share for every two existing shares.",
-        "Investors traded 17,364,939 Oando shares worth N691.87 million across 491 deals on Friday."
-      ],
-      "timeline": [],
-      "headline_only": false,
       "analysis": [
-        "Why it matters: The rights issue would increase Oando's share capital and shareholding base, and the proceeds are intended for upstream oil and gas investment, working capital and debt repayment. Shareholders face a gap between the N50 subscription price and the N39.90 market close when deciding whether to subscribe."
+        "Why it matters: The article covers a government agency's recruitment process rather than company ownership, so its relevance to corporate transparency is limited."
       ],
       "ownership_caveat": "",
       "named": [
-        "Oando Plc"
+        "Nigeria Customs Service",
+        "Federal Character Commission"
       ],
       "source": {
-        "outlet": "Nairametrics",
-        "url": "https://nairametrics.com/2026/11/27/oando-closes-at-n39-90-after-full-bid-demand-on-rights-issue-announcement-day/"
+        "outlet": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMVZNWHVOUzFucmU3ci1HUEt1RE9SQXBZRFpQa1FES0tTbGkyNzliMWE1NlRVZmQtWk9FbE9qTWZNQkJrVlVVT1pUSU5TM3J6UTdWblVTN1d4MW85WVpSTFBwaXBrZmFBMlhkUTFqOF9zWjRpdGFJLVdqcExiSFhpS3FzU08?oc=5"
       },
       "also_reported": [],
       "also_more": 0
     }
   ],
-  "also": [
-    {
-      "n": 6,
-      "theme": "Other",
-      "text": "The Guardian reports: NCC flags 1.58m fake IMEIs in nationwide crackdown on counterfeit phones",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQZlB1TFNWc3FsRDM3bzVGdmQxYndIWFNpMG4wcElLaHUyTF9rXzV6a1JaRzcwWHJxX1BZOEp3RDFTU3NNaTFIYXVPZDhVVkRfUVF6WDlEOGZYY1JfaTBMWlE3WXdBSDRUclNoZU5qLVZFM2pNOWFIb1EwbDljQ3p1X0x2LWhRSlU0LVoyZmN2U0hFNXh6c2N1dXZXX0l0ZFh6Y0hqWlluNWJ3MVY0Z19QTlRhWGxPa3B5azZHM2F1Y1EtbUZRT0ZlUk1WZWFxOWdjb19jSDluOUhXclE?oc=5"
-    },
-    {
-      "n": 7,
-      "theme": "Regulation & enforcement",
-      "text": "The Central Bank of Nigeria (CBN) plans to introduce a comprehensive regulatory rulebook in 2027 aimed at strengthening banking oversight.",
-      "outlet": "BusinessDay",
-      "url": "https://businessday.ng/business-economy/article/cbn-plans-new-regulatory-rulebook-to-strengthen-banking-oversight/"
-    },
-    {
-      "n": 8,
-      "theme": "Other",
-      "text": "Airtel Africa has launched a share buyback to repurchase 1% of its issued share capital.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTHd4NHh0Uy1Yd2lkcWFJeWY1UWVpcUp1R1gyYjhYc2R2cjdpY2l0Z05JclpsUlRCelZjZExQNkNnMFBWWWlLQk96cW96VnBmRXllOVYxQnJhbmR0X2dDY2ZFQnJFRFJWSENTS1JIY1U0Q1JxZDdGSGJ0bFNHeUpNaTJyUU5iMmphdGpPQnJ3b1VILU9HT1BXNERIbElSZ0NwZXRsRkRPR3EwQjZZVnE2ZUxrNGVoOGlESXVpOF9iUXJRbHFkOGZnT3RGZGhkaE8wNnc?oc=5"
-    },
-    {
-      "n": 9,
-      "theme": "Other",
-      "text": "The Defence Headquarters, Barama Energy and NNPC Limited launched Abuja's first compressed natural gas (CNG) daughter station, according to a Guardian Nigeria headline.",
-      "outlet": "The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObldwZkltLV81NTkzNVE5VkVTR3ZLeWJ0ekpjbVhRT1JjT2dnM2xjWHFVb1g0dE1vbjQwOFV0WnF1ZGpDbUVvNnVONThxOWJUMVo5WjNjQlZTc2RoU3MtbnFlZlNQbkJFUXQ3ZDh1eThNOUNFNHJTN2tXZWFEazJVb0hOVEN6Y0RJekF2eUh5SHBmVUJhcElTbmZR?oc=5"
-    },
-    {
-      "n": 10,
-      "theme": "Regulation & enforcement",
-      "text": "The Nigerian Electrical Regulatory Services Agency (NEMSA) has warned against substandard electrical installations as Nigeria expands its renewable energy sector.",
-      "outlet": "Vanguard",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPb29ocnJhY1JvWFAyc2l0WU5UWG5kbzB4dkRtd2hLeW5Kc0RvbldEMFpGeW11Q0dXeGt1Q2JNN2NuNzJRUFdLX3d3V2pEWjlpbkd2ZkpBVVdfNXBWZ2YtRUJGX1NmbzVjelUyQllacTRPYlJYaENnWGpETUYzWWJrWlRGM29McTAwdlZPSUcwZmFnZ0JCVXVDT1dQci01MUI5S0NfX2NPWmdWS1ZfOEpHcXBVZE4wbUpkMUHSAb8BQVVfeXFMTjlZSTQzRDdacEI1WW80RWo2b2xIbmRZWXhfN3hKZmtuTFEwSERHREpjREFGam5BQmVlUl9MVXhuLTV3a2g4bmZIM1NiaG04VmZWX3lDUzFRODVHTXNOY3FtS1kxR0VtbE9reUpVVTVmSWtRRk1fTVhlWU9sX296a1JOTGRCNG5vdm9WaDVmMFJ6ZHhlQmtNekpWN3lZYTREdTZiWXpJVWQ5NjZQVzhlLUxta0hTX1pWUGNBVVMyRkU?oc=5"
-    },
-    {
-      "n": 11,
-      "theme": "People",
-      "text": "Reno Omokri has presented his Letter of Credence to Mexico and formally assumed duty as Nigeria's ambassador there.",
-      "outlet": "Premium Times",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOekx3dlBsd0tkd2VnTUZvWE8xbTZlRU5wTXZTNTh5R3ZXWGpkTlh2OU11c1poSlJKV0xxMWpneHVGY2dncFJZelpTNGdqal9KTGROQ2poQjZhaFVUZ1F2bmdMVjFfUkpBQVRUU0M1eG92WnFGcFYtdFZieTNRaFQyZFdGVXNNLWNBLVBGblYtYkZYRlNJSlhnak9mQ2V4NTZMRzNqLUhrc1YyOEUwbUE2bmpQTlN3M0dDWlJtZnpId080UVJlT0hNLUhaa2lVdkR2NHc?oc=5"
-    }
-  ],
+  "also": [],
   "also_more": 0,
   "psc": [],
   "psc_more": 0,
   "psc_keys": [],
-  "terms": [
-    {
-      "term": "CBN",
-      "meaning": "Central Bank of Nigeria"
-    },
-    {
-      "term": "SEC",
-      "meaning": "Securities and Exchange Commission"
-    },
-    {
-      "term": "NGX",
-      "meaning": "Nigerian Exchange, the Lagos stock market"
-    },
-    {
-      "term": "NNPC",
-      "meaning": "Nigerian National Petroleum Company"
-    },
-    {
-      "term": "AURA risk rating",
-      "meaning": "a 0–100 model score of governance and compliance relevance; not a finding of wrongdoing, not a credit or investment rating"
-    }
-  ],
+  "terms": [],
   "engines": {
     "extraction": [
       "claude"
     ],
-    "digest": "claude"
+    "digest": ""
   },
   "health": {
-    "overview_dropped": 1,
-    "insights_dropped": 2
+    "overview_dropped": 0,
+    "insights_dropped": 0
   },
   "site": "https://auranews.pages.dev"
 }

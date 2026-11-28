@@ -6,13 +6,12 @@ Mentioned in 104 reports tracked by AURA.
 
 - Mentions tracked: 104
 - Holdings: 0
-- Recent stories: 2
+- Recent stories: 1
 - Last seen: 29 Oct 2026
 
 ## In the news
 
 - [Duke Oil: NNPC explains $2bn crude-for-petrol transactions](https://punchng.com/duke-oil-nnpc-explains-2bn-crude-for-petrol-transactions/) · The Punch · 24 Nov 2026
-- [CBN, NNPCL sign MoU to strengthen oil revenue management, boost FX reserves](https://news.google.com/rss/articles/CBMipwFBVV95cUxNaWxvYms1NFVOeW03NHpLcG5CZHBCVVZwMEJ0dlFJZXpRbnhVRS1LTUNfT3JuTk1LZkEtMy1ZRUFCMTFmLXlubzhMdFJMTXE3UThJZ3JuYTl6MXlDSkJ5MTg1RnpwWWRDbk5Idl9WaEZkeWdMVmpzaU13M3cySG92Ry0zSGxQQVlwelNEWlJRWGVJeTF3TnVXdC1vZ1QzazF0bzhOVGo2dw?oc=5) · The Eagle Online · 18 Nov 2026
 
 ## Appointments and departures
 

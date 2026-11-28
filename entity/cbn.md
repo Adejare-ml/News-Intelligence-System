@@ -6,7 +6,7 @@ Mentioned in 42 reports tracked by AURA.
 
 - Mentions tracked: 42
 - Holdings: 0
-- Recent stories: 8
+- Recent stories: 7
 - Last seen: 31 Jul 2026
 
 ## In the news
