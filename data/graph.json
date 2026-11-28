@@ -241,6 +241,18 @@
       "risk": "Low"
     },
     {
+      "id": "22900912dcd4",
+      "label": "Reno Omokri",
+      "type": "person",
+      "risk": "Low"
+    },
+    {
+      "id": "cdea562756a4",
+      "label": "Federal Republic of Nigeria",
+      "type": "company",
+      "risk": "Low"
+    },
+    {
       "id": "d1748e2f7de3",
       "label": "Olamide Olajolo",
       "type": "person",
@@ -433,18 +445,6 @@
       "risk": "Low"
     },
     {
-      "id": "0dbd4888a43e",
-      "label": "Peeyush Karnani",
-      "type": "person",
-      "risk": "Low"
-    },
-    {
-      "id": "1a29b473f3a6",
-      "label": "Sunbeth Agro HoldCo",
-      "type": "company",
-      "risk": "Low"
-    },
-    {
       "id": "7726be4beb32",
       "label": "Coronation Capital (Mauritius) Limited",
       "type": "psc",
@@ -461,6 +461,12 @@
       "label": "Duke Oil Company Incorporated",
       "type": "company",
       "risk": "Medium"
+    },
+    {
+      "id": "1a29b473f3a6",
+      "label": "Sunbeth Agro HoldCo",
+      "type": "psc",
+      "risk": "High"
     },
     {
       "id": "30a7ef8d2b51",
@@ -669,6 +675,12 @@
   ],
   "edges": [
     {
+      "id": "345d5a6cd082",
+      "from": "22900912dcd4",
+      "to": "cdea562756a4",
+      "label": "Appointed as Ambassador to Mexico"
+    },
+    {
       "id": "9802ab1659e2",
       "from": "d1748e2f7de3",
       "to": "7d890603e2a1",
@@ -793,12 +805,6 @@
       "from": "c4dd50a83302",
       "to": "61593181343c",
       "label": "Appointed as National Security Adviser"
-    },
-    {
-      "id": "0fde0536b7e1",
-      "from": "0dbd4888a43e",
-      "to": "1a29b473f3a6",
-      "label": "Appointed as Chief Strategy Officer, Sunbeth Agro HoldCo"
     },
     {
       "id": "28310c0ed538",
