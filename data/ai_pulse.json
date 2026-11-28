@@ -1,68 +1,68 @@
 {
-  "generated": "2026-11-28 04:45:49",
+  "generated": "2026-11-28 16:13:36",
   "models": [
     {
       "id": "thinkingmachines/Inkling-2-Mini",
       "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
       "task": "image-text-to-text",
-      "likes": 6489,
-      "downloads": 155741
+      "likes": 6548,
+      "downloads": 177012
     },
     {
       "id": "unsloth/Inkling-2-Mini-GGUF",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "task": "image-text-to-text",
-      "likes": 1620,
-      "downloads": 3302340
+      "likes": 1647,
+      "downloads": 3621301
     },
     {
       "id": "SulphurAI/Sulphur-3",
       "url": "https://huggingface.co/SulphurAI/Sulphur-3",
       "task": "",
-      "likes": 1378,
-      "downloads": 539421
+      "likes": 1416,
+      "downloads": 759937
     },
     {
       "id": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "task": "text-generation",
-      "likes": 647,
-      "downloads": 382546
+      "likes": 684,
+      "downloads": 473980
     },
     {
       "id": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "task": "image-text-to-text",
-      "likes": 1045,
-      "downloads": 1059763
+      "likes": 1064,
+      "downloads": 1297386
     },
     {
       "id": "inworld/voice-isolator",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "task": "audio-to-audio",
-      "likes": 1016,
-      "downloads": 20510
+      "likes": 1023,
+      "downloads": 22810
     },
     {
       "id": "Lightricks/LTX-2.5",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "task": "image-to-video",
-      "likes": 13735,
-      "downloads": 3080701
+      "likes": 13791,
+      "downloads": 3088512
     },
     {
       "id": "llamaindex/OCRia-nano-1",
       "url": "https://huggingface.co/llamaindex/OCRia-nano-1",
       "task": "image-to-text",
-      "likes": 361,
-      "downloads": 626
+      "likes": 381,
+      "downloads": 9982
     }
   ],
   "papers": [
     {
       "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
       "url": "https://huggingface.co/papers/2611.33885",
-      "upvotes": 0
+      "upvotes": 4
     },
     {
       "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
@@ -77,12 +77,12 @@
     {
       "title": "Markdown Is Not a Firewall: four coding agents, one rules file, four boundaries",
       "url": "https://huggingface.co/papers/2611.27112",
-      "upvotes": 0
+      "upvotes": 1
     },
     {
       "title": "Revisiting LLMs as Context Engineers",
       "url": "https://huggingface.co/papers/2611.30494",
-      "upvotes": 4
+      "upvotes": 5
     },
     {
       "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",

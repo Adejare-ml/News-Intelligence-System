@@ -6,7 +6,6 @@ Company or body · Animal Nutrition
 
 - Mentions tracked: 3
 - Holdings: 2
-- Recent stories: 1
 - Last seen: 18 Nov 2026
 
 ## Who is reported to control it
@@ -17,10 +16,6 @@ Company or body · Animal Nutrition
   Reported by [Nairametrics](https://nairametrics.com/2026/11/17/sunbeth-completes-n19-5-billion-acquisition-of-uacs-73-29-stake-in-livestock-feeds-reconstitutes-board/), not verified with the CAC register.
 
 Extracted from news reporting by a language model. Not a CAC filing; check the sources before relying on it.
-
-## In the news
-
-- [Sunbeth completes acquisition of controlling stake in Livestock Feeds Plc](https://www.premiumtimesng.com/promoted/926225-sunbeth-completes-acquisition-of-controlling-stake-in-livestock-feeds-plc.html) · Premium Times · 18 Nov 2026
 
 ## Appointments and departures
 
